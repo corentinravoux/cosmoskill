@@ -6,8 +6,10 @@ Snapshot: 2026-10-07
 Numbers carry [src], [sec] or [der]. Forecasts are labelled.
 
 ## 1. Live controversies
+<!-- key: live-controversies -->
 
 ### 1.1 Is the optical depth 0.06 or 0.09?
+<!-- key: is-the-optical-depth-0-06-or-0-09 -->
 
 The case for a high value. ΛCDM fitted to DESI BAO, the high-ℓ CMB and CMB lensing without low-ℓ
 polarisation gives τ = 0.090 ± 0.012; τ ~ 0.09 removes the preference for sub-minimal neutrino
@@ -39,6 +41,7 @@ same high-ℓ CMB and BAO data]. The sibling skills `cosmo-cmb`, `cosmo-neutrino
 `cosmo-dark-energy-modified-gravity` carry the parameter consequences.
 
 ### 1.2 When and how did reionisation end?
+<!-- key: when-and-how-did-reionisation-end -->
 
 - Late end. Dark gaps persist to z ≃ 5.3 [src: Zhu et al. 2021, arXiv:2109.06295]; forward
   models complete reionisation by z ~ 5.2 [src: Gaikwad et al. 2023, arXiv:2304.02038]; a 500
@@ -56,6 +59,7 @@ same high-ℓ CMB and BAO data]. The sibling skills `cosmo-cmb`, `cosmo-neutrino
   forest endpoint [src: Giovinazzo et al. 2026, arXiv:2607.22834].
 
 ### 1.3 Rapid or extended? Where is the midpoint?
+<!-- key: rapid-or-extended-where-is-the-midpoint -->
 
 | Statement | Value | Citation | Flag |
 |---|---|---|---|
@@ -75,6 +79,7 @@ intervals and a documented degeneracy with local absorbers [src: Huberty et al. 
 arXiv:2501.13899].
 
 ### 1.4 Which galaxies reionised the Universe?
+<!-- key: which-galaxies-reionised-the-universe -->
 
 - Too many photons: observed galaxies with JWST ξ_ion and low-z f_esc relations end reionisation
   too early [src: Muñoz et al. 2024, arXiv:2404.07250].
@@ -86,6 +91,7 @@ arXiv:2501.13899].
   sources, in a model-dependent analysis [src: arXiv:2504.09725].
 
 ### 1.5 The EDGES profile
+<!-- key: the-edges-profile -->
 
 Positions. The EDGES group has published its pipeline and raw data for scrutiny, calls the
 question an ongoing debate, and is building evidence-based validation tools [src: Murray et al.
@@ -99,6 +105,7 @@ not cover the whole EDGES band. Multi-wavelength constraints predict a trough be
 −68 mK, shallower than the 0.5 K of EDGES [src: Dhandha et al. 2025, arXiv:2508.13761].
 
 ### 1.6 HI intensity mapping: first auto-spectra and what they say
+<!-- key: hi-intensity-mapping-first-auto-spectra-and -->
 
 - CHIME's auto-spectrum disagrees with IllustrisTNG at 3.1–4.0σ on non-linear scales [src: CHIME
   Collaboration 2026, arXiv:2603.25680]. Whether this is HI astrophysics in the simulations or a
@@ -115,6 +122,7 @@ not cover the whole EDGES band. Multi-wavelength constraints predict a trough be
   measurement from intensity mapping was found in the searches run.
 
 ### 1.7 21 cm limits: avoidance, subtraction and statistics
+<!-- key: 21-cm-limits-avoidance-subtraction-and -->
 
 - Statistical foreground separation gains sensitivity (a factor ≳ 3 in simulations) but can
   suppress signal [src: Mertens et al. 2017, arXiv:1711.10834; Ceccotti et al. 2025,
@@ -126,6 +134,7 @@ not cover the whole EDGES band. Multi-wavelength constraints predict a trough be
   needed to compare them.
 
 ### 1.8 JWST abundances and ΛCDM
+<!-- key: jwst-abundances-and-lambdacdm -->
 
 No analysis read here finds a violation of the halo baryon limit by spectroscopically confirmed
 objects; models inside ΛCDM reproduce the luminosity functions to z = 14–17 with higher
@@ -134,6 +143,7 @@ arXiv:2609.03537]. The open question is astrophysical: why star formation is so 
 bursty at z > 10. `cosmo-tensions-anomalies` tracks this as a tension.
 
 ## 2. What the next data will decide
+<!-- key: what-the-next-data-will-decide -->
 
 | Question | Deciding data | Expectation | Citation | Flag |
 |---|---|---|---|---|
@@ -149,6 +159,7 @@ bursty at z > 10. `cosmo-tensions-anomalies` tracks this as a tension.
 | [CII] at z > 5 | CCAT Deep Spectroscopic Survey | shot-noise regime first (**forecast**) | Dev et al. 2026, arXiv:2607.20404 | [src] |
 
 ## 3. Misconceptions and stale claims
+<!-- key: misconceptions-and-stale-claims -->
 
 | Claim still seen | Status | Correcting paper |
 |---|---|---|
@@ -168,6 +179,7 @@ bursty at z > 10. `cosmo-tensions-anomalies` tracks this as a tension.
 | "MeerKLASS analyses are blinded." | "Blind" there means blind component separation. | arXiv:2302.07034 |
 
 ## Not verified
+<!-- key: not-verified -->
 
 - One 2026 paper that `cosmo-cmb` cites for reionisation data siding against a high τ
   (identifier 2601.09644 in its bibliography) was not read in this session and is not in this

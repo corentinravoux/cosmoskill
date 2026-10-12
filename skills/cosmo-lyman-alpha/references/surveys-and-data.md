@@ -6,6 +6,7 @@ Snapshot: 2026-10-07
 Flags: `[src]` read this session in the cited paper; `[der]` derived here; `[sec]` from a named secondary source. Forecasts are labelled.
 
 ## 1. Two regimes of data
+<!-- key: two-regimes-of-data -->
 
 Lyα forest data come in two regimes that are analysed differently and are rarely interchangeable.
 
@@ -16,6 +17,7 @@ Lyα forest data come in two regimes that are analysed differently and are rarel
 | Dense deep fields (Keck/LRIS, Magellan/IMACS) | R ~ 1000 (LATIS, arXiv:2510.08815 [src]), faint galaxies as background sources | 10²–10³ per deg² | Mpc-scale IGM tomography |
 
 ## 2. Past: SDSS-I/II, BOSS, eBOSS
+<!-- key: past-sdss-i-ii-boss-eboss -->
 
 | Release | Lyα content | Key Lyα papers | Flag |
 |---|---|---|---|
@@ -33,6 +35,7 @@ Lyα forest data come in two regimes that are analysed differently and are rarel
 Reanalyses of the final SDSS data that are still current: the full-shape AP measurement (arXiv:2209.13942), the 3D power spectrum from 205,012 spectra (arXiv:2403.08241), the small-scale P3D proof of principle at z = 2.2 and 2.4 (arXiv:2310.09116), the 1D bispectrum from 122,066 spectra (arXiv:2410.09150), the Stripe 82 tomographic map and void catalogue (arXiv:2004.01448) and the void–forest cross-correlation (arXiv:2203.11045) [src for all sample sizes, see `results.md`].
 
 ## 3. Current: DESI
+<!-- key: current-desi -->
 
 DESI began its 5-year main survey in May 2021 after a five-month Survey Validation that ended in May 2021 (arXiv:2503.14745, arXiv:2306.06308) [src].
 
@@ -50,6 +53,7 @@ Instrument facts that matter for the forest (arXiv:2503.14739, Sects. 2.4 and 6.
 Public-data status. EDR was released on 13 June 2023 and DR1 on 19 March 2025 [sec: DESI data-release page `data.desi.lbl.gov/doc/releases/`, fetched 2026-10-08]; the papers are arXiv:2306.06308 and arXiv:2503.14745. For DR2 only the cosmology chains and supporting products were released, on 6 October 2025, with the full DR2 to follow "in some months" [sec: DESI collaboration news page of that date, fetched 2026-10-08]; the release page listed no DR2 spectra when fetched. The DR1 P1D data vectors are on Zenodo (records 16943723 for QMLE and 17100543 for FFT; arXiv:2601.21432, Sect. 2.1) [src]. The EDR Lyα delta catalogue is a public value-added catalogue (arXiv:2306.06312) [src].
 
 ## 4. High-resolution and intermediate-resolution samples
+<!-- key: high-resolution-and-intermediate-resolution -->
 
 | Sample | Instrument | Content | Lyα use | Citation | Flag |
 |---|---|---|---|---|---|
@@ -66,6 +70,7 @@ Public-data status. EDR was released on 13 June 2023 and DR1 on 19 March 2025 [s
 A caution on combining high-resolution compilations: the KODIAQ-SQUAD P1D favours a significantly higher primordial amplitude than XQ-100 or eBOSS when fitted with PRIYA, "driven by the selection bias toward high-column density absorbers" of archival samples (arXiv:2509.18271) [src]. Archival HIRES/UVES samples were built from individual programmes that often targeted known absorbers; XQ-100 was a homogeneous legacy survey (arXiv:1607.08776) [src].
 
 ## 5. Tomography surveys
+<!-- key: tomography-surveys -->
 
 | Survey | Instrument | Area and depth | Sightlines | Map | Status | Citation | Flag |
 |---|---|---|---|---|---|---|---|
@@ -79,8 +84,10 @@ A caution on combining high-resolution compilations: the KODIAQ-SQUAD P1D favour
 The two regimes of tomography are distinct: deep-field maps at 2–4 h⁻¹Mpc over ≲ 2 deg² with galaxies as sources (CLAMATO, LATIS), and wide-area maps at 13–16 h⁻¹Mpc with quasars only (Stripe 82, WEAVE-QSO forecast). Void finding in the first regime was demonstrated in CLAMATO (arXiv:1710.02612); the void–forest RSD measurement was done in the second (arXiv:2203.11045).
 
 ## 6. Simulations, emulators and mock suites used as data products
+<!-- key: simulations-emulators-and-mock-suites-used-as -->
 
 ### 6.1 Hydrodynamical suites
+<!-- key: hydrodynamical-suites -->
 
 | Suite | Code | Size | Purpose | Citation | Flag |
 |---|---|---|---|---|---|
@@ -96,6 +103,7 @@ The two regimes of tomography are distinct: deep-field maps at 2–4 h⁻¹Mpc o
 | CAMELS (IllustrisTNG, SIMBA) | — | small boxes | simulation-based inference test for P1D; cross-model training bias of ~10% on σ_8 | arXiv:2603.13011 | [src] |
 
 ### 6.2 Fast mocks for 3D analyses
+<!-- key: fast-mocks-for-3d-analyses -->
 
 | Mock family | Method | Use | Citation | Flag |
 |---|---|---|---|---|
@@ -108,6 +116,7 @@ The two regimes of tomography are distinct: deep-field maps at 2–4 h⁻¹Mpc o
 | Lognormal 1D mocks | lognormal spectra for P1D | estimator validation (20 realisations of DR1) | arXiv:2509.13593 | [src] |
 
 ## 7. Planned and future
+<!-- key: planned-and-future -->
 
 | Facility | What is planned for the forest | Source | Flag |
 |---|---|---|---|
@@ -123,6 +132,7 @@ The two regimes of tomography are distinct: deep-field maps at 2–4 h⁻¹Mpc o
 The first-light dates recorded in the hub file `observational-cosmology/references/field-state-2026.md` (PFS 22 March 2025, 4MOST 18 October 2025) were not re-verified here [sec: hub file]; `cosmo-surveys-facilities` owns facility timelines.
 
 ## 8. Sample growth at a glance
+<!-- key: sample-growth-at-a-glance -->
 
 Forest sample used for the 3D auto-correlation, and the BAO precision it bought.
 
@@ -140,6 +150,7 @@ Forest sample used for the 3D auto-correlation, and the BAO precision it bought.
 P1D uses a quality-selected subset, so the counts are much smaller: 3,035 (SDSS), 13,821 (BOSS DR9), 43,751 (eBOSS DR14), and for DESI DR1 more than 300,000 Lyα quasars in the QMLE measurement at S/N > 1 but 62,807 in the cosmological analysis at S/N > 3 (arXiv:astro-ph/0405013, arXiv:1306.5896, arXiv:1812.03554, arXiv:2505.07974, arXiv:2601.21432) [src]. Quoting "DESI has ten times the eBOSS P1D sample" confuses these two numbers.
 
 ## 9. Where the public products are
+<!-- key: where-the-public-products-are -->
 
 | Product | Location as stated in the source | Citation | Flag |
 |---|---|---|---|
@@ -161,6 +172,7 @@ P1D uses a quality-selected subset, so the counts are much smaller: 3,035 (SDSS)
 | High-resolution P1D with covariance | electronic tables | arXiv:1709.07354 | [src] |
 
 ## 10. Not verified
+<!-- key: not-verified -->
 
 - The date on which the full DESI DR2 becomes public, and the timeline of DR3 Lyα analyses.
 - WEAVE-QSO current status: a web search returned project pages stating WEAVE first light in late 2022 and a QSO survey of about 350,000 forest quasars at R = 5000 (some at 20,000), but no data release or Lyα result was found, and those pages were not read directly; 4MOST Lyα-specific survey design; PFS IGM-tomography programme parameters (area, sightline density).

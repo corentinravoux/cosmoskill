@@ -8,8 +8,10 @@ CHIME, MeerKAT and SKA are in `cosmo-surveys-facilities`; this file holds what a
 cosmological analysis needs: which events, which catalogue, how complete.
 
 ## 1. Gravitational-wave detector runs and catalogues
+<!-- key: gravitational-wave-detector-runs-and-catalogues -->
 
 ### 1.1 Runs
+<!-- key: runs -->
 
 | Run | Dates (UTC) | Catalogue | Content | Source |
 |---|---|---|---|---|
@@ -31,6 +33,7 @@ about 250 candidates observed in real time [sec]. The O4c boundaries are inferre
 those two dates and were not read on a page that names O4c.
 
 ### 1.2 Three different "sizes" of GWTC-5.0
+<!-- key: three-different-sizes-of-gwtc-5-0 -->
 
 A count without its definition is the most common error with this catalogue.
 
@@ -48,6 +51,7 @@ below 0.25 yr⁻¹ (arXiv:2601.03257) [src]. For GWTC-3: 90 candidates, 47 used 
 cosmology (arXiv:2111.03604) [src].
 
 ### 1.3 Events that carry the cosmological information
+<!-- key: events-that-carry-the-cosmological-information -->
 
 | Event | Why it matters | Source |
 |---|---|---|
@@ -65,12 +69,14 @@ latest run (arXiv:2609.12053) [src]. Nine years after GW170817 there is still on
 siren.
 
 ### 1.4 Public data
+<!-- key: public-data -->
 
 Catalogue papers are arXiv:2111.03606 (GWTC-3), arXiv:2508.18082 (GWTC-4.0) and
 arXiv:2605.27225 (GWTC-5.0). The data-release location (GWOSC, Zenodo records of the
 cosmology papers) was not read this session; see "Not verified".
 
 ## 2. Galaxy catalogues used for dark sirens
+<!-- key: galaxy-catalogues-used-for-dark-sirens -->
 
 | Catalogue | Type | Completeness and depth as quoted | Used in | Source |
 |---|---|---|---|---|
@@ -97,6 +103,7 @@ galaxies, `M_i < −22.43`, if hosts live in haloes above `2 × 10^11 h⁻¹ M�
 are well localised (arXiv:2511.04786) [src].
 
 ### 2.1 Peculiar-velocity products applied to a siren host
+<!-- key: peculiar-velocity-products-applied-to-a-siren -->
 
 | Product | Used by | Source |
 |---|---|---|
@@ -110,8 +117,10 @@ Survey descriptions and the current state of these velocity data are in
 `cosmo-peculiar-velocities`.
 
 ## 3. Fast-radio-burst facilities and localised samples
+<!-- key: fast-radio-burst-facilities-and-localised -->
 
 ### 3.1 Facilities and catalogues
+<!-- key: facilities-and-catalogues -->
 
 | Facility / sample | Band, localisation | Sample | Status | Source |
 |---|---|---|---|---|
@@ -126,6 +135,7 @@ CHIME outrigger stations for VLBI localisation appear in 2025–2026 titles on a
 paper on them was read (see "Not verified").
 
 ### 3.2 Growth of the localised sample used for cosmology
+<!-- key: growth-of-the-localised-sample-used-for -->
 
 | Year of analysis | Localised bursts used | Source |
 |---|---|---|
@@ -146,6 +156,7 @@ heterogeneous union of surveys with different selection functions, which is why 
 survey-forward-modelling likelihood exists (physics file, §7.3).
 
 ### 3.3 Hosts
+<!-- key: hosts -->
 
 FRB hosts are not a fair sample of star-forming galaxies: Sharma et al. 2024
 (arXiv:2409.16964) find a deficit of low-mass hosts [src], while James et al. 2026
@@ -154,6 +165,7 @@ predicts [src]. The two statements use different samples and weighting; the host
 population model is part of the cosmological likelihood through `DM_host`.
 
 ## 4. Lensed transients
+<!-- key: lensed-transients -->
 
 | Object | Type, source redshift | Lens | Delay data | H0 paper |
 |---|---|---|---|---|
@@ -171,6 +183,7 @@ gravitational-wave event and no lensed FRB has produced a cosmological measureme
 literature on both is forecasts (open-questions file).
 
 ## 5. Planned: detector upgrades, third generation, LISA, radio
+<!-- key: planned-detector-upgrades-third-generation-lisa -->
 
 | Facility | What is planned | Cosmology case | Source |
 |---|---|---|---|
@@ -185,6 +198,7 @@ Status and dates of the Einstein Telescope, Cosmic Explorer and LISA projects (s
 decision, adoption, launch) were not read on official pages this session.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - Dates of O1, O2 and O3a, and the content of GWTC-1 and GWTC-2, were not read.
 - The O4c start and end are inferred, not read on a page naming O4c.

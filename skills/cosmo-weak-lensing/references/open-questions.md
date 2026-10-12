@@ -9,6 +9,7 @@ Flags: `[src]` read this session in the cited paper; `[sec]` from a named
 secondary source; `[der]` derived here.
 
 ## 1. Is the S8 tension resolved? Not uniformly
+<!-- key: is-the-s8-tension-resolved-not-uniformly -->
 
 The two final Stage-III analyses disagree about it.
 
@@ -62,6 +63,7 @@ arXiv:2609.31774) [src]. The first two use Stage-III data with the older
 redshift calibrations.
 
 ## 2. Photometric redshifts as the origin of the old low S8
+<!-- key: photometric-redshifts-as-the-origin-of-the-old -->
 
 The evidence that redshift calibration, not shear measurement, drove the
 earlier low values:
@@ -90,6 +92,7 @@ supported for KiDS by its own analysis and for HSC by clustering redshifts,
 and is not established for DES.
 
 ## 3. How strong is baryonic feedback?
+<!-- key: how-strong-is-baryonic-feedback -->
 
 - **Strong:** kSZ profiles and X-ray gas fractions; the X-ray baryonification
   analysis finds 6% suppression at k = 1 h/Mpc and 23% at k = 5 h/Mpc and
@@ -115,6 +118,7 @@ uncertainty the final-year cosmic-shear constraint "barely improves" on year 1
 (Robertson et al. 2026, arXiv:2602.21863) [src, **forecast**].
 
 ## 4. NLA or TATT?
+<!-- key: nla-or-tatt -->
 
 DES Y6 publishes both and reports that the Bayesian evidence prefers NLA; the
 S8 difference is about 1σ (arXiv:2602.10065) [src]. Euclid preparation work
@@ -130,6 +134,7 @@ arXiv:2507.11530) [src], and the DES Y3 blue-sample reanalysis exploits this
 (arXiv:2512.04209).
 
 ## 5. "Lensing is low"
+<!-- key: lensing-is-low -->
 
 The claim (Leauthaud et al. 2017, arXiv:1611.08606, from CMASS lenses and 250
 deg² of CFHTLenS and CS82 shear) is that galaxy–halo models fitted to BOSS
@@ -155,6 +160,7 @@ dependence of the lensing kernel (Heydenreich et al. 2025, arXiv:2508.05746)
 [src].
 
 ## 6. Method debates
+<!-- key: method-debates -->
 
 - **Statistic.** ξ±, COSEBIs, band powers and pseudo-Cℓ weight scales
   differently; UNIONS finds its configuration- and harmonic-space S8 only
@@ -176,6 +182,7 @@ dependence of the lensing kernel (Heydenreich et al. 2025, arXiv:2508.05746)
   arXiv:2610.03447) [src].
 
 ## 7. What the next data decide
+<!-- key: what-the-next-data-decide -->
 
 - Euclid DR1 cosmology products: mid-2027 at the earliest (ESA timeline, see
   `surveys-and-data.md`) [src]. Until then every cosmic-shear number is Stage
@@ -187,6 +194,7 @@ dependence of the lensing kernel (Heydenreich et al. 2025, arXiv:2508.05746)
   (arXiv:2605.13543) [src].
 
 ## 8. Stale claims and their corrections
+<!-- key: stale-claims-and-their-corrections -->
 
 | Claim still seen | Status | Correcting paper |
 |---|---|---|
@@ -201,6 +209,7 @@ dependence of the lensing kernel (Heydenreich et al. 2025, arXiv:2508.05746)
 | "Lensing prefers dynamical dark energy." | Lensing adds little to w0wa; KiDS-Legacy + CMB lensing gives B = 0.07 for w0waCDM. | arXiv:2512.11041, arXiv:2509.03582 |
 
 ## Not verified
+<!-- key: not-verified -->
 
 - Whether the HSC Y3 third-order result (arXiv:2508.14019) and the KiDS-1000
   clipped-shear result (arXiv:2608.07377) survive the 2025 redshift

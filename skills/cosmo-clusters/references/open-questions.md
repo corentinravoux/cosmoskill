@@ -4,6 +4,7 @@ Scope: live disagreements, method debates, forecasts and stale claims.
 Snapshot: 2026-10-07
 
 ## 1. Do clusters see a low S8, a high S8, or neither?
+<!-- key: do-clusters-see-a-low-s8-a-high-s8-or-neither -->
 
 Current ΛCDM values of S8 = σ8 (Ω_m/0.3)^0.5 from independent cluster samples (all [src] in `results.md`):
 
@@ -25,6 +26,7 @@ For orientation, the sibling skills give KiDS-Legacy cosmic shear at 0.815 +0.01
 There is therefore no single "cluster S8" and no cluster S8 tension in one direction. The summary is that the spread between cluster analyses, about ±0.05 [der: half the range 0.74–0.86, shear-selected sample excluded], exceeds the statistical error of the best of them, 0.01.
 
 ## 2. eRASS1: the outlier with the smallest error
+<!-- key: erass1-the-outlier-with-the-smallest-error -->
 
 - For: the largest sample (5259 clusters [src]), lensing calibration from three surveys, a selection function from simulated skies (arXiv:2402.08458, arXiv:2402.08457).
 - Against, from inside the collaboration: with one extra low-redshift degree of freedom in the growth, the same data give a growth index γ = 1.19 ± 0.21, in tension with 0.55, and S8 "recovers the value inferred by cosmic shear studies" [src] (Artis et al. 2024, arXiv:2410.09499). The high S8 and the suppressed late growth are the same feature of the data seen through two models.
@@ -32,6 +34,7 @@ There is therefore no single "cluster S8" and no cluster S8 tension in one direc
 - What would decide it: a deeper eROSITA sample with the same pipeline; an independent analysis of the public eRASS1 catalogue; SPT-3G counts over the 1279 clusters in common (arXiv:2607.01175).
 
 ## 3. The Planck mass bias: which number, and is there still a tension?
+<!-- key: the-planck-mass-bias-which-number-and-is-there -->
 
 | Statement | (1 − b) | Citation | Flag |
 |---|---|---|---|
@@ -46,6 +49,7 @@ Reading. The lensing values cluster at 0.70–0.75, between the simulation expec
 Still open: X-COP gas fractions exclude the low bias "at high significance, unless the most massive halos are missing a substantial fraction of their baryons" [src, arXiv:1805.00034]; whether the bias depends on mass and redshift (index −1.8 +0.5/−0.6 in redshift for ACT [src, arXiv:2512.18935]; α_SZ = 1.49 against 1.8 [src, arXiv:2112.03606]); and whether a redshift trend in (1 − b) is a property of clusters or of the lensing calibration at high redshift, where the lensing systematic grows to 10% at z = 0.95 [src, arXiv:2310.12213].
 
 ## 4. Has the optical selection problem been solved?
+<!-- key: has-the-optical-selection-problem-been-solved -->
 
 - Evidence that it has: DES Y3, with a cluster-based multiprobe data vector, finds S8 = 0.864 ± 0.035 and, with 3×2pt, 0.811 +0.022/−0.020 with a probability-to-exceed of 0.6 against Planck [src, arXiv:2503.13632]. The simulation-based reanalysis of DES Y1 moves Ω_m from 0.179 to 0.254 and σ8 to 0.826 [src, arXiv:2510.25706]. SDSS redMaPPer with HSC Y3 lensing gives 0.816 [src, arXiv:2309.13025].
 - Evidence that it has not: KiDS-1000 AMICO finds S8 = 0.74 ± 0.03 and Ω_m = 0.22 ± 0.02, 2.8σ from Planck [src, arXiv:2507.14285], with an explicit projection-effect term. The reanalysed DES Y1 is still 2.58σ from Planck, now through a low Ω_m [src, arXiv:2510.25706]. DES Y3 × SPT cross-matching finds redshift trends that the projection-effect simulations do not capture (arXiv:2502.12914). The same anisotropic-boost model gave 0.718 with SDSS lensing and 0.816 with HSC lensing (arXiv:2112.09059, arXiv:2309.13025).
@@ -53,16 +57,19 @@ Still open: X-COP gas fractions exclude the low bias "at high significance, unle
 - What decides it: DES Y6 clusters with 3×2pt (strategy in arXiv:2503.13631), Euclid DR1 with its CosmoPostProcess correction (arXiv:2605.02723), and SZ cross-matches at lower richness from SPT-3G.
 
 ## 5. Hydrostatic bias: are simulations and lensing in conflict?
+<!-- key: hydrostatic-bias-are-simulations-and-lensing-in -->
 
 Simulations give a median bias of 10–20% (arXiv:2409.07849); lensing of SZ-selected samples gives 25–30% against the XMM-based scale. Part of the gap is not hydrodynamics: the X-ray spectroscopic-like temperature alone gives 0.22 ± 0.01 in FLAMINGO where the SZ-weighted temperature gives −0.05 ± 0.01 [src, arXiv:2404.08539], and the Chandra–XMM calibration difference moves (1 − b) from 0.76 to 0.89 [src, arXiv:2402.04006]. Whether what remains requires new physics in the intracluster medium is open. Direct measurements of gas motions would settle it; no such result was fetched this session.
 
 ## 6. Splashback: a ΛCDM test or a selection test?
+<!-- key: splashback-a-lambdacdm-test-or-a-selection-test -->
 
 Optically selected clusters gave splashback radii smaller than N-body predictions, which the authors judged unlikely to come solely from dynamical friction or cluster-finding systematics (arXiv:1601.06063). SZ-selected clusters agree with simulations and redMaPPer clusters are about 2σ low in the same analysis [src, arXiv:1811.06081]; the 2026 KiDS-1000 AMICO measurement from lensing and from the cluster–galaxy correlation agrees with ΛCDM [src, arXiv:2602.07114]. The current reading is that the early discrepancy was selection. Open points: precision is 10–14% per stack, too coarse for the accretion-rate or modified-gravity tests proposed; and the 6.6σ assembly-bias signal of arXiv:1601.06063 rests on a split by mean projected member distance, whose sensitivity to projection effects was not checked this session (see "Not verified").
 
 Date-sorted leads not read (2025–2026, titles only): splashback of RASS-MCMF clusters with DES Y3; MaDCoWS2 splashback radii to z = 1.65; relation between accretion shocks and splashback radii.
 
 ## 7. Method debates
+<!-- key: method-debates -->
 
 - How much does clustering add? More than 300% in figure of merit for Euclid-like optical samples [arXiv:2510.13509, **forecast**], but 2–8% on σ(w) for future SZ samples with current mass-relation priors, vanishing if the priors tighten by a factor of two [arXiv:2510.14464, **forecast**]. The answer depends on the assumed external mass calibration; a forecast that does not state it is not usable.
 - Poisson, Gaussian or simulation-based likelihood (arXiv:2210.11093, arXiv:2602.11989).
@@ -73,6 +80,7 @@ Date-sorted leads not read (2025–2026, titles only): splashback of RASS-MCMF c
 - Early dark energy from eRASS1: f_EDE < 0.3 from counts alone; the 3.2σ preference (f_EDE = 0.10 +0.04/−0.03, H0 = 71.4 ± 1.4) appears only with CMB, BAO and CMB lensing, and uses the 0.1 < z < 0.45 subsample [src, arXiv:2609.07834].
 
 ## 8. What the next data will decide
+<!-- key: what-the-next-data-will-decide -->
 
 | Data | Status on 2026-10-07 | What it tests | Citation |
 |---|---|---|---|
@@ -86,6 +94,7 @@ Date-sorted leads not read (2025–2026, titles only): splashback of RASS-MCMF c
 | SPT-3G+ | receiver installation planned for early 2029 | high-redshift SZ clusters | arXiv:2608.20236 |
 
 ## 9. Forecasts
+<!-- key: forecasts -->
 
 Every row is a **forecast**.
 
@@ -101,6 +110,7 @@ Every row is a **forecast**.
 The Sartoris forecast of ΔΣm_ν = 0.01 (as written in the abstract, units of eV presumably) predates the DES Y1 lesson and assumes a mass calibration that no optical survey has yet demonstrated.
 
 ## 10. Misconceptions and stale claims
+<!-- key: misconceptions-and-stale-claims -->
 
 | Claim still met | Why it is wrong or stale | Correcting paper |
 |---|---|---|
@@ -121,6 +131,7 @@ The Sartoris forecast of ΔΣm_ν = 0.01 (as written in the abstract, units of e
 | "A blind analysis is a validated analysis." | DES Y1 was blind. | arXiv:2002.11124 |
 
 ## Not verified
+<!-- key: not-verified -->
 
 - Whether the member-distance split behind the 2016 cluster assembly-bias detection is contaminated by projection effects: the later literature on this was not fetched.
 - Any eROSITA cosmology from eRASS:4 or eRASS:5 depth, and the release plan of the German consortium: not found; not searched on collaboration pages.

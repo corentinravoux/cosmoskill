@@ -10,6 +10,7 @@ from a named secondary source; `[der]` derived here, derivation stated.
 Years attached to author names are arXiv submission years.
 
 ## 1. Observables and definitions
+<!-- key: observables-and-definitions -->
 
 The CMB is described by three Stokes fields on the sphere, T, Q and U. The
 temperature field is expanded in spherical harmonics, T(n) = Σ a_ℓm Y_ℓm(n),
@@ -44,6 +45,7 @@ Lewis & Challinor 2006, arXiv:astro-ph/0601594. For polarisation as a probe
 of new physics (birefringence, tensor modes): Komatsu 2022, arXiv:2202.13919.
 
 ### The six-parameter base model
+<!-- key: the-six-parameter-base-model -->
 
 Base ΛCDM is sampled as {Ω_b h², Ω_c h², θ, n_s, ln(10¹⁰A_s), τ}. The angular
 acoustic scale is θ* = r*/D_M(z*), the ratio of the comoving sound horizon at
@@ -66,6 +68,7 @@ of θ* "differs slightly" between CAMB and CLASS [src]. Compare 10⁴θ only
 between tables that use the same code definition.
 
 ## 2. What each feature constrains
+<!-- key: what-each-feature-constrains -->
 
 | Feature in the spectra | Parameter combination | Remark and source |
 |---|---|---|
@@ -99,6 +102,7 @@ Points worth holding precisely, all from the ACT DR6 paper (Louis et al.
   breaks it.
 
 ## 3. Gravitational lensing of the CMB
+<!-- key: gravitational-lensing-of-the-cmb -->
 
 Large-scale structure between us and last scattering deflects photons by
 the gradient of the lensing potential φ(n), an integral of the Weyl potential
@@ -113,6 +117,7 @@ adds power in the damping tail of TT, TE and EE; it converts E into B; and
 it correlates modes of different ℓ, which is what reconstruction exploits.
 
 ### Quadratic estimators
+<!-- key: quadratic-estimators -->
 
 For fixed φ the lensed CMB is statistically anisotropic,
 ⟨X̃(ℓ₁) Ỹ(ℓ₂)⟩ ∝ f_XY(ℓ₁, ℓ₂) φ(L) with L = ℓ₁ + ℓ₂ ≠ 0. The minimum-variance
@@ -158,6 +163,7 @@ dominated by polarisation information at L ≲ 600 [src]
 (arXiv:2608.31136).
 
 ### Three lensing amplitudes that must not be confused
+<!-- key: three-lensing-amplitudes-that-must-not-be -->
 
 | Symbol | What it rescales | Measured from |
 |---|---|---|
@@ -175,6 +181,7 @@ DR6, the P-ACT best fit for the three-experiment combination
 (arXiv:2504.20038), the CMB-SPA best fit for SPT-3G D1 (arXiv:2608.31136).
 
 ## 4. From time-ordered data to band powers
+<!-- key: from-time-ordered-data-to-band-powers -->
 
 Satellite pipelines (Planck) solve for maps with destriping and, for the
 latest reprocessings, with explicit templates for instrumental effects:
@@ -222,6 +229,7 @@ Ranges actually used in the 2025 likelihoods [src]:
 | Planck CamSpec (2019 reanalysis) | — | — | 80% | arXiv:1910.00483 |
 
 ## 5. Foregrounds and component separation
+<!-- key: foregrounds-and-component-separation -->
 
 Two strategies coexist.
 
@@ -258,6 +266,7 @@ inference, and release a CamSpec-NPIPE-lite likelihood for that reason
 [src].
 
 ## 6. Covariance and likelihood
+<!-- key: covariance-and-likelihood -->
 
 High ℓ. All three collaborations use a Gaussian likelihood in the band
 powers with a fixed fiducial covariance,
@@ -319,6 +328,7 @@ CMB-S4-like survey (forecast) and that default Boltzmann precision settings
 are insufficient [src]. SPT-3G D1 uses the ACT DR6 accuracy settings [src].
 
 ## 7. Extension parameters as actually defined
+<!-- key: extension-parameters-as-actually-defined -->
 
 - N_eff: ρ_rad = ρ_γ [1 + (7/8)(4/11)^(4/3) N_eff]. The standard-model value
   used by ACT DR6 and SPT-3G D1 is 3.044 (arXiv:2506.20707, arXiv:2503.14454); Planck 2018
@@ -333,6 +343,7 @@ are insufficient [src]. SPT-3G D1 uses the ACT DR6 accuracy settings [src].
 - Ω_K < 0 is a closed universe. A_L, A_2pt and A_recon: see Section 3.
 
 ## 8. Blinding practice
+<!-- key: blinding-practice -->
 
 Blinding is now standard for ground-based power-spectrum work and has not
 prevented post-unblinding changes; both must be reported together.
@@ -354,6 +365,7 @@ prevented post-unblinding changes; both must be reported together.
   unblinding [src] (arXiv:2304.05202).
 
 ## 9. Public codes and pipelines
+<!-- key: public-codes-and-pipelines -->
 
 | Code | Role | Reference |
 |---|---|---|
@@ -370,6 +382,7 @@ prevented post-unblinding changes; both must be reported together.
 | LensIt; MUSE | Iterative lensing reconstruction; hierarchical Bayesian lensing + unlensed EE | arXiv:1704.08230; arXiv:2112.09354 |
 
 ## 10. Conventions and community splits
+<!-- key: conventions-and-community-splits -->
 
 - Planck likelihood. Four high-ℓ products are in use (Plik PR3, CamSpec PR3,
   CamSpec PR4, HiLLiPoP PR4) and three low-ℓ EE products (the 2018 lowE,
@@ -391,6 +404,7 @@ prevented post-unblinding changes; both must be reported together.
   (arXiv:2503.14451); SPT-3G bands are 95, 150, 220 GHz (arXiv:2603.20163).
 
 ## Not verified
+<!-- key: not-verified -->
 
 - Which Planck likelihood each DESI paper adopts was not re-read; check the
   paper before comparing a DESI+CMB number with an ACT or SPT one.

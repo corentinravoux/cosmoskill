@@ -9,12 +9,14 @@ Flags: `[src]` read in the cited paper this session; `[sec]` from a named
 secondary source; `[der]` derived here.
 
 ## 1. Is the evidence for evolving dark energy a supernova systematic?
+<!-- key: is-the-evidence-for-evolving-dark-energy-a -->
 
 This is the question that drove the field from 2024 to 2026. The physics
 interpretation belongs to `cosmo-dark-energy-modified-gravity`; the
 supernova side is here.
 
 ### 1.1 The case that it was (2024–2025)
+<!-- key: the-case-that-it-was-2024-2025 -->
 
 - **Sample dependence.** With DESI DR1 BAO and CMB the preference for
   `w0waCDM` was 2.5, 3.5 or 3.9 sigma for Pantheon+, Union3 or DES-SN5YR
@@ -43,6 +45,7 @@ supernova side is here.
   result `[src]`.
 
 ### 1.2 The case that it was not
+<!-- key: the-case-that-it-was-not -->
 
 - Vincenzi et al. 2025 (arXiv:2501.06664) reproduce the 0.04 mag offset and
   split it: 43 % from DES improvements in intrinsic-scatter and host
@@ -55,6 +58,7 @@ supernova side is here.
   arXiv:2605.27221) `[src]`.
 
 ### 1.3 Where it stands in October 2026
+<!-- key: where-it-stands-in-october-2026 -->
 
 Both sides were partly right. Two real supernova systematics were found and
 fixed, and both reduced the *spread* between samples:
@@ -88,6 +92,7 @@ arXiv:2609.05053) `[src]`. What remains open:
   found; absence of critique after one month is not confirmation.
 
 ## 2. Is the host step dust, intrinsic, or a symptom of two populations?
+<!-- key: is-the-host-step-dust-intrinsic-or-a-symptom-of -->
 
 | Position | Evidence | Reference |
 |---|---|---|
@@ -115,6 +120,7 @@ arXiv:2112.04510) `[src]`. This is a single-group result; see
 `cosmo-distance-ladder-h0`.
 
 ## 3. Does progenitor age evolution bias the Hubble diagram?
+<!-- key: does-progenitor-age-evolution-bias-the-hubble -->
 
 - **Yes, strongly**: Lee et al. 2022 (arXiv:2107.06288); Son et al. 2025
   (arXiv:2510.13121), who conclude that SNe + BAO + CMB are > 9 sigma from
@@ -134,6 +140,7 @@ proxy as redshift increases — is legitimately open (Rigault et al. 2020,
 arXiv:1806.03849), and matters most for Roman at z > 1.
 
 ## 4. Which inference framework: BBC, hierarchical Bayes, or SBI?
+<!-- key: which-inference-framework-bbc-hierarchical -->
 
 - BBC separates standardisation, bias correction and cosmology; it is
   frequentist in its nuisance parameters (they are fitted, not
@@ -152,6 +159,7 @@ The decisive test is announced, not done: UNITY on the Unite sample
 Unite/DES-Dovekie mix data and method.
 
 ## 5. Is there a calibration floor?
+<!-- key: is-there-a-calibration-floor -->
 
 Current cross-calibration reaches the few-mmag level per band, but small
 shifts are amplified up to six-fold in distance (Popovic et al. 2025,
@@ -164,6 +172,7 @@ constraint from the supernovae themselves. Whether absolute flux standards
 (DA white dwarfs) can be pushed to the required level is not settled.
 
 ## 6. Tensions between analyses that a reader should know
+<!-- key: tensions-between-analyses-that-a-reader-should -->
 
 - **Unite vs its parents.** Unite prefers `Omega_m = 0.310`, lower than
   DES-Dovekie (0.330) and Pantheon+ (0.334), although it is built from them
@@ -183,6 +192,7 @@ constraint from the supernovae themselves. Whether absolute flux standards
   `cosmo-tensions-anomalies`.
 
 ## 7. What the next data will decide
+<!-- key: what-the-next-data-will-decide -->
 
 | Question | Data | Expectation | Source |
 |---|---|---|---|
@@ -195,6 +205,7 @@ constraint from the supernovae themselves. Whether absolute flux standards
 | BBC vs UNITY on identical data | Unite | Announced | arXiv:2609.05053 |
 
 ## 8. Misconceptions and stale claims
+<!-- key: misconceptions-and-stale-claims -->
 
 | Claim still seen | Status | Correction |
 |---|---|---|
@@ -216,6 +227,7 @@ constraint from the supernovae themselves. Whether absolute flux standards
 | "JLA / Pantheon are fine for a quick fit." | Obsolete | Superseded twice over in calibration, scatter model and covariance treatment (arXiv:2202.04077) |
 
 ## Not verified
+<!-- key: not-verified -->
 
 - Whether any published analysis combines DESI DR2 with Unite using exactly
   the DESI external data; and any DESI DR3 result.

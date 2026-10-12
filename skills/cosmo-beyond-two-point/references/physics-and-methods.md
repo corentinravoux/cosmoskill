@@ -7,8 +7,10 @@ Status lines use three levels: data, blinded or mock-validated; data, not
 blind; simulations only. The full status table is `results.md` §0.
 
 ## 1. Bispectrum, trispectrum and N-point functions
+<!-- key: bispectrum-trispectrum-and-n-point-functions -->
 
 ### 1.1 Definitions
+<!-- key: definitions -->
 
 The bispectrum is the Fourier-space three-point function,
 ⟨δ(k1) δ(k2) δ(k3)⟩ = (2π)³ δ_D(k1 + k2 + k3) B(k1, k2, k3); the trispectrum T
@@ -23,6 +25,7 @@ the non-local (equilateral, orthogonal) shapes of f_NL (Chudaykin, Ivanov &
 Philcox 2025, arXiv:2512.04266).
 
 ### 1.2 Estimators in use
+<!-- key: estimators-in-use -->
 
 | Estimator | What it does | Reference |
 |---|---|---|
@@ -35,6 +38,7 @@ Philcox 2025, arXiv:2512.04266).
 | Kurto spectra (composite-field spectra P_2×2, P_3×1) | Compress the parity-odd trispectrum to a low-dimensional vector so that the covariance can come directly from mocks | Gao et al. 2026, arXiv:2604.06021 |
 
 ### 1.3 Theory models
+<!-- key: theory-models -->
 
 - **Tree-level EFT bispectrum with one-loop power spectrum.** Used for DESI
   DR1 in arXiv:2610.01836; arXiv:2206.08327 describes its own earlier BOSS
@@ -61,6 +65,7 @@ Philcox 2025, arXiv:2512.04266).
   `open-questions.md` §1.
 
 ### 1.4 Covariance and likelihood
+<!-- key: covariance-and-likelihood -->
 
 The bispectrum data vector is long, so the number of mocks sets the binning:
 with 2048 MultiDark-Patchy mocks BOSS analyses kept about 116 triangles before
@@ -71,6 +76,7 @@ dominant risk: the parity-odd 4PCF significance depends on which mocks supply
 the noise model (see `systematics.md` §1.3).
 
 ### 1.5 Status
+<!-- key: status-5 -->
 
 Bispectrum (monopole, tree level or one loop): **data, mock-validated**, in
 BOSS and DESI DR1, including inside the DESI collaboration. Trispectrum full
@@ -78,11 +84,13 @@ shape: **simulations only**. Parity-odd 4PCF: **data, measured, no accepted
 detection**.
 
 ## 2. Cosmic voids
+<!-- key: cosmic-voids -->
 
 Reviews: Pisani et al. 2019 (arXiv:1903.05161); the void chapter of Moresco et
 al. 2022 (arXiv:2201.07241).
 
 ### 2.1 Void finders
+<!-- key: void-finders -->
 
 A void catalogue is defined by its finder; statistics from different finders
 are not interchangeable.
@@ -97,6 +105,7 @@ are not interchangeable.
 | Back-in-time void finder | Dynamical identification after optimal-transport reconstruction | Sartori et al. 2026, arXiv:2601.15378 |
 
 ### 2.2 Void size function (VSF)
+<!-- key: void-size-function-vsf -->
 
 The VSF is the comoving number density of voids per unit radius. The models in
 use descend from the excursion-set model of Sheth & van de Weygaert; current
@@ -109,6 +118,7 @@ arXiv:2501.07817). Void counts are treated as Poisson distributed; this was
 checked on simulations by Thiele et al. 2023 (arXiv:2307.07555).
 
 ### 2.3 Void–galaxy cross-correlation: AP and RSD
+<!-- key: void-galaxy-cross-correlation-ap-and-rsd -->
 
 The observable is the anisotropic cross-correlation ξ_vg(s, μ) between void
 centres and galaxies, compressed to multipoles. Two physical inputs:
@@ -140,6 +150,7 @@ factor (1 + z): 0.4367 × 1.57 = 0.686 [der, assuming the first is the proper
 distance]. From 2020 the reconstruction school quotes D_M/D_H.
 
 ### 2.4 Void lensing
+<!-- key: void-lensing -->
 
 The stacked tangential shear or CMB-lensing convergence around voids measures
 the matter profile and hence tests the bias and the mock predictions (Martin
@@ -147,6 +158,7 @@ et al. 2025, arXiv:2507.13450; Sartori et al. 2024, arXiv:2412.02761). It has
 produced detections and amplitude tests, not cosmological parameters.
 
 ### 2.5 Voids in Lyα tomography and the void–forest cross-correlation
+<!-- key: voids-in-lyalpha-tomography-and-the-void-forest -->
 
 A tomographic map is a Wiener-filter interpolation of the Lyα flux contrast
 between neighbouring sightlines; its resolution is set by the mean transverse
@@ -167,6 +179,7 @@ f/b: the forest β involves the velocity-gradient bias (see
 model of that bias. Thesis summary: Ravoux 2022, arXiv:2203.07886.
 
 ### 2.6 Voids with simulation-based inference
+<!-- key: voids-with-simulation-based-inference -->
 
 Thiele et al. 2023 (arXiv:2307.07555) combine the VSF, the void–galaxy cross
 power spectrum and the galaxy power spectrum of BOSS CMASS NGC in an implicit
@@ -174,6 +187,7 @@ likelihood analysis with HOD-populated approximate simulations including
 particle neutrinos.
 
 ### 2.7 Status
+<!-- key: status-4 -->
 
 Void–galaxy AP/RSD: **data, mock-validated** (SDSS MGS, BOSS, eBOSS); the
 abstracts read this session do not report a blinded analysis, and no DESI
@@ -182,6 +196,7 @@ Void lensing: **data, detection level**. Lyα–void: **data, first detection
 compared to simulations**, RSD parameter only.
 
 ## 3. Alternative clustering statistics: density split, kNN, wavelets, Minkowski functionals, marks
+<!-- key: alternative-clustering-statistics-density-split -->
 
 These statistics have no perturbative model on the scales where they gain
 information. All data applications so far use **simulation-based emulators**:
@@ -217,11 +232,13 @@ session. Multiplets: **data (DESI DR2 LRG), used for the galaxy–halo
 connection, not cosmology**.
 
 ## 4. Higher-order weak-lensing statistics
+<!-- key: higher-order-weak-lensing-statistics -->
 
 Two-point lensing (ξ±, COSEBIs, pseudo-Cℓ, shear and redshift calibration) is
 in `cosmo-weak-lensing`. This section covers what is added on top.
 
 ### 4.1 Statistics
+<!-- key: statistics -->
 
 | Statistic | Definition | Modelling | Data applications read this session |
 |---|---|---|---|
@@ -236,6 +253,7 @@ in `cosmo-weak-lensing`. This section covers what is added on top.
 | Peak steepness | Profile slope of lensing peaks, sensitive to halo profiles and feedback | Simulations | HSC Y1 (Li et al. 2026, arXiv:2608.24591) |
 
 ### 4.2 Inference practice
+<!-- key: inference-practice -->
 
 The ⟨M_ap³⟩ analyses use a conventional likelihood. The other statistics take
 their model from simulations, as an emulator or, in the DES Y3 2024–2026
@@ -256,6 +274,7 @@ the power spectrum with neural summaries built to add information beyond it
 (arXiv:2606.11309).
 
 ### 4.3 Status
+<!-- key: status-3 -->
 
 Higher-order lensing is the most mature beyond-two-point family on data:
 **survey data, collaboration analyses, systematics forward-modelled, validated
@@ -266,8 +285,10 @@ DES Y3 (Thomsen et al. 2025, arXiv:2511.04681); its cosmological result was
 not found.
 
 ## 5. Field-level inference
+<!-- key: field-level-inference -->
 
 ### 5.1 Three things called "field-level"
+<!-- key: three-things-called-field-level -->
 
 The term covers three different methods. A text that does not say which one
 it means cannot be checked.
@@ -293,6 +314,7 @@ it means cannot be checked.
    the network learned from the training simulations.
 
 ### 5.2 Forward-model families
+<!-- key: forward-model-families -->
 
 | Family | Gravity model | Tracer model | Applied to | Reference |
 |---|---|---|---|---|
@@ -306,6 +328,7 @@ it means cannot be checked.
 | BORG for f_NL^loc | structure-formation model and resolution varied as tests | bias + initial conditions + f_NL sampled jointly | Quijote halo catalogues, k_max ≈ 0.1 h Mpc⁻¹ | Andrews et al. 2026, arXiv:2603.20855 |
 
 ### 5.3 What the outputs are
+<!-- key: what-the-outputs-are -->
 
 The BORG runs on data read here deliver **fields** (initial conditions,
 density, velocity, with posterior uncertainty) and quote no cosmological
@@ -313,6 +336,7 @@ parameter. EFT-type runs vary σ8 or A, ω_cdm, H0 and deliver **parameter
 posteriors**, so far on simulations.
 
 ### 5.4 Status
+<!-- key: status-2 -->
 
 Forward-model inference: **reconstructions from survey data (2M++, BOSS,
 Quaia); cosmological parameters from simulations only**; no parameter
@@ -323,8 +347,10 @@ field-level likelihood: **survey data, collaboration result** for fσ8 from
 DESI DR1 peculiar velocities (`cosmo-peculiar-velocities`).
 
 ## 6. Simulation-based inference with learned summaries
+<!-- key: simulation-based-inference-with-learned -->
 
 ### 6.1 Method
+<!-- key: method -->
 
 Simulation-based (implicit-likelihood, likelihood-free) inference replaces the
 analytic likelihood by a neural density estimator, usually a normalising flow,
@@ -337,6 +363,7 @@ stability under changes of the density-estimator architecture
 (arXiv:2211.00660, arXiv:2310.15250).
 
 ### 6.2 SimBIG
+<!-- key: simbig -->
 
 SimBIG forward-models the BOSS CMASS sample from Quijote N-body simulations
 and a flexible halo occupation model with survey geometry and fibre collisions
@@ -349,14 +376,17 @@ CNN field-level summary (arXiv:2310.15256), wavelet scattering transform
 arXiv:2404.04228).
 
 ### 6.3 Status
+<!-- key: status -->
 
 **Survey data (BOSS CMASS subsample), mock challenge with changed forward
 models passed for some statistics and failed for others; no collaboration
 blinding.**
 
 ## 7. Blinding, codes and conventions
+<!-- key: blinding-codes-and-conventions -->
 
 ### 7.1 Blinding and validation practice
+<!-- key: blinding-and-validation-practice -->
 
 - Parameter-masked mock challenge: Beyond-2pt (arXiv:2405.02252), described in
   `surveys-and-data.md` §6. It blinds the *truth of a mock*, not survey data.
@@ -373,6 +403,7 @@ blinding.**
   (arXiv:2309.16541); 200 h⁻³Gpc³ for the trispectrum (arXiv:2610.08908).
 
 ### 7.2 Codes and public products named in the papers read
+<!-- key: codes-and-public-products-named-in-the-papers -->
 
 | Code or product | Purpose | Reference |
 |---|---|---|
@@ -386,6 +417,7 @@ blinding.**
 | Quijote, Gower Street, SimBIG mocks, Beyond-2pt mocks | Simulation suites and challenge data | arXiv:1909.05273, arXiv:2403.02314, arXiv:2211.00660, arXiv:2405.02252 |
 
 ### 7.3 Conventions that cause errors
+<!-- key: conventions-that-cause-errors -->
 
 - **D_A H/c against D_M/D_H** in void papers: proper or comoving D_A (§2.3).
 - **β** means f/b for galaxies around voids, and the forest RSD parameter in

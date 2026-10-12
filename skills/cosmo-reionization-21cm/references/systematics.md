@@ -8,6 +8,7 @@ mitigation, the validation test, and the paper a referee expects. Numbers carry 
 [der].
 
 ## 1. Optical depth from the CMB
+<!-- key: optical-depth-from-the-cmb -->
 
 **Large-scale polarisation systematics.** The Planck HFI low-ℓ maps carried residual large-scale
 contamination, dominated at the lowest multipoles by a "dipole distortion" effect that the 2018
@@ -34,6 +35,7 @@ Referee expects: the low-ℓ data named (Planck 2018 legacy, SRoll2, PR4), the r
 parametrisation, and whether τ is measured or imposed as a prior.
 
 ## 2. End of reionisation from quasar absorption
+<!-- key: end-of-reionisation-from-quasar-absorption -->
 
 **Definition dependence of dark statistics.** Dark-pixel limits depend on the binning scale and
 on the definition of "dark" [src: Davies et al. 2025, arXiv:2510.25829]. Dark-gap statistics
@@ -67,6 +69,7 @@ one remedy [src: Tohfa et al. 2026, arXiv:2602.03923]. The imprint of reionisati
 post-reionisation forest at z < 5 is a `cosmo-lyman-alpha` topic.
 
 ## 3. Damping wings
+<!-- key: damping-wings -->
 
 **Quasars.** Error sources: the stochastic distribution of neutral patches, the effect of the
 quasar's own ionising radiation (lifetime), the unknown intrinsic spectrum, and spectral noise
@@ -90,6 +93,7 @@ radii inferred from galaxies exceed analytic cosmic-average expectations by up t
 [src: Umeda et al. 2023, arXiv:2306.00487].
 
 ## 4. Lyα visibility
+<!-- key: lyalpha-visibility -->
 
 - Intrinsic line properties. The z ~ 5–6 lines are broader and more offset (median 258 km/s)
   than the z ~ 2 templates used before JWST, which raises the predicted transmission through
@@ -105,6 +109,7 @@ radii inferred from galaxies exceed analytic cosmic-average expectations by up t
   against 0.52 at z ~ 7) [src: Kundu et al. 2026, arXiv:2609.40363].
 
 ## 5. Kinetic SZ
+<!-- key: kinetic-sz -->
 
 - Component separation. The inferred SZ powers "are dependent on the detailed modeling of the
   thermal SZ–CIB correlation, and to a lesser extent on the assumed angular dependence of the SZ
@@ -118,6 +123,7 @@ radii inferred from galaxies exceed analytic cosmic-average expectations by up t
   with the Agora simulations [src: Raghunathan et al. 2024, arXiv:2403.02337].
 
 ## 6. 21 cm interferometry at z > 6
+<!-- key: 21-cm-interferometry-at-z-6 -->
 
 **Signal loss.** Foreground suppression can remove cosmological signal and produce upper limits
 that are too low. Two documented cases: GMRT, where a sliding spectral average subtracted from
@@ -158,6 +164,7 @@ Gaussian component is isolated without removing signal.
 **Wedge leakage.** Section 5.1 of `physics-and-methods.md`.
 
 ## 7. Global 21 cm signal
+<!-- key: global-21-cm-signal -->
 
 - Foreground-model degeneracy. The EDGES polynomial foreground fit implies unphysical foreground
   parameters, and other signal shapes fit the same data [src: Hills et al. 2018,
@@ -176,6 +183,7 @@ Gaussian component is isolated without removing signal.
   al. 2021, arXiv:2112.06778].
 
 ## 8. Post-reionisation HI intensity mapping
+<!-- key: post-reionisation-hi-intensity-mapping -->
 
 **Signal loss in blind foreground cleaning.** Aggressive cleaning biases the largest scales by
 more than 50%; a transfer function built by injecting mock signal into the data reconstructs the
@@ -208,6 +216,7 @@ bias of the optical tracer (Δv = −66 ± 20 km/s for eBOSS quasars) [src: CHIM
 by the beam, and needs forward modelling [src: arXiv:2606.25955, section 3].
 
 ## 9. Line-intensity mapping
+<!-- key: line-intensity-mapping -->
 
 - Filtering and transfer functions. Time-domain filtering that removes atmospheric 1/f noise
   also removes large-scale signal: the CCAT filter-and-bin transfer function is below 20% at k ≲
@@ -222,6 +231,7 @@ by the beam, and needs forward modelling [src: arXiv:2606.25955, section 3].
   [src: Kovetz et al. 2026, arXiv:2605.13967].
 
 ## 10. JWST abundances and the photon budget
+<!-- key: jwst-abundances-and-the-photon-budget -->
 
 - Candidate against confirmed. The baryon-budget argument was made with photometric candidates
   [src: Boylan-Kolchin 2022, arXiv:2208.01611]. Later work attributes the early excess stellar
@@ -238,6 +248,7 @@ by the beam, and needs forward modelling [src: arXiv:2606.25955, section 3].
   al. 2024, arXiv:2404.07250].
 
 ## Referee checklist
+<!-- key: referee-checklist -->
 
 1. τ: which low-ℓ likelihood; which reionisation parametrisation; measured or prior.
 2. x_HI values: volume- or mass-weighted; which topology simulation; upper limit, lower limit or
@@ -261,6 +272,7 @@ by the beam, and needs forward modelling [src: arXiv:2606.25955, section 3].
     halo baryon limit or to a galaxy-formation model.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - Ionospheric effects, polarisation leakage and RFI excision have dedicated sections in
   arXiv:1907.08211 that were not read; no size is quoted here.

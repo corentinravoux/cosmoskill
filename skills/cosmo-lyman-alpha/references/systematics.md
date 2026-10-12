@@ -8,8 +8,10 @@ Flags: `[src]` read this session in the cited paper (abstract unless a section i
 The effects are grouped by where they enter: (A) from the quasar and the spectrum to the delta field, (B) astrophysical contaminants of the absorption, (C) instrument and pipeline, (D) modelling of the two-point functions, (E) simulation and emulator systematics for P1D, (F) tomography.
 
 ## A. From spectrum to delta field
+<!-- key: from-spectrum-to-delta-field -->
 
 ### A1. Continuum fitting and the distortion of correlations
+<!-- key: a1-continuum-fitting-and-the-distortion-of -->
 
 - **Applies to:** both (3D: distortion of the correlation function; P1D: continuum-fitting bias).
 - **Mechanism.** The unabsorbed quasar continuum is not known pixel by pixel in low-S/N survey spectra. Survey pipelines fit, per forest, a template times a low-order function, which removes the mean and slope of δ along each line of sight. This suppresses large-scale radial modes and couples every pixel of a forest to every other one, distorting the measured correlation function.
@@ -20,6 +22,7 @@ The effects are grouped by where they enter: (A) from the quasar and the spectru
 - **Referee expects:** arXiv:1702.00176 for the method, arXiv:2506.15262 for its test, arXiv:2306.06312 for the DESI weighting scheme.
 
 ### A2. Mean transmission and the amplitude degeneracy
+<!-- key: a2-mean-transmission-and-the-amplitude -->
 
 - **Applies to:** P1D (amplitude inference); for the 3D correlations the continuum fit absorbs F̄(z).
 - **Mechanism.** The fitted continuum absorbs the mean transmitted flux F̄(z); δ is defined relative to the product C × F̄, so the absolute F̄(z) is not measured by the survey δ field. In P1D inference F̄ is nearly degenerate with the linear-power amplitude.
@@ -29,20 +32,24 @@ The effects are grouped by where they enter: (A) from the quasar and the spectru
 - **Referee expects:** a statement of which F̄ prior was used and the result without it.
 
 ### A3. Weighting of pixels
+<!-- key: a3-weighting-of-pixels -->
 
 - **Applies to:** 3D correlations.
 - **Mechanism.** Pixel weights combine pipeline noise and the intrinsic forest variance. A wrong balance loses precision and, if the variance model is wrong, biases covariance estimates.
 - **Size.** The DESI EDR weighting change improved the precision of the correlation function by more than 20% (arXiv:2306.06312) [src].
 
 ### A4. Blinding
+<!-- key: a4-blinding -->
 
 - **Applies to:** both.
 - **Practice.** DESI DR1 BAO was developed "on a blinded dataset" (arXiv:2404.03001) [src]; the DR1 full-shape variations "were first performed blinded" (arXiv:2509.15308) [src]; the DR2 full-shape validation "was completed prior to unblinding" with quantitative requirements defined beforehand (arXiv:2607.27411) [src]; the DR1 P1D cosmology kept "cosmological parameters blinded throughout the validation process" (arXiv:2601.21432) [src].
 - **Method paper.** A catalogue-level AP blinding scheme shifts each forest in wavelength after continuum fitting and changes QSO redshifts consistently; it moves the BAO peak as expected for ~5% changes in the matter content without changing posterior shapes. Metals and Lyβ limit it in the 1D correlation function (arXiv:2607.07875) [src].
 
 ## B. Astrophysical contaminants
+<!-- key: astrophysical-contaminants -->
 
 ### B1. High-column-density systems (DLAs, sub-DLAs, Lyman-limit systems)
+<!-- key: b1-high-column-density-systems-dlas-sub-dlas -->
 
 - **Applies to:** both.
 - **Mechanism.** Systems with log N_HI > 17 (LLS) up to log N_HI > 20.2–20.3 (DLA) add broad damped Voigt wings. They trace halos (higher bias) and their wings suppress radial modes, which imprints a scale-dependent bias on the forest power spectrum (arXiv:2506.13005, arXiv:1711.06275) [src]. The first BOSS 3D measurement already attributed a low β to HCDs and metals (arXiv:1104.5244) [src].
@@ -54,6 +61,7 @@ The effects are grouped by where they enter: (A) from the quasar and the spectru
 - **Validation.** Compare DLA-masking strategies on mocks and data (arXiv:2503.14741) [src]; fits with and without the HCD term; marginalisation over unidentified HCDs in the BAO error (already in arXiv:1702.00176 [src]).
 
 ### B2. Metal absorption
+<!-- key: b2-metal-absorption -->
 
 - **Applies to:** both (3D: displaced spurious peaks, Si II 1260 near the BAO scale; P1D: Si III and Si II oscillations and additive power).
 - **Mechanism.** Absorption by other transitions at different redshift appears at the same observed wavelength. In 3D it produces spurious correlations displaced along the line of sight by the wavelength ratio; in P1D it adds oscillations (Si III–Lyα) and a smooth additive power from metals redward lines.
@@ -64,6 +72,7 @@ The effects are grouped by where they enter: (A) from the quasar and the spectru
 - **Turned into signal.** The C IV forest × QSO correlation gives a 3.0% BAO measurement at z_eff = 1.92 in DESI DR2 (arXiv:2601.08103) [src]. The Si III–Lyα correlation is visible in the 1D bispectrum (arXiv:2410.09150) [src].
 
 ### B3. Broad absorption line quasars
+<!-- key: b3-broad-absorption-line-quasars -->
 
 - **Applies to:** both (quantified here for BAO; for P1D the BAL mask also enters through C4).
 - **Mechanism.** BAL troughs, blueshifted by up to ~0.1c, fall in the forest region and mimic absorption; BALs also perturb the quasar redshift.
@@ -71,6 +80,7 @@ The effects are grouped by where they enter: (A) from the quasar and the spectru
 - **Mitigation.** Mask the expected trough locations and keep the quasar: this "returns over 95% of the pathlength" lost by exclusion (arXiv:2111.09439) [src]. DESI DR1 baseline: mask all pixels associated with all BAL features in the forest region; alternative strategies and finder incompleteness do not change the BAO result (arXiv:2405.09737) [src].
 
 ### B4. Fluctuations of the ionising background and the proximity effect
+<!-- key: b4-fluctuations-of-the-ionising-background-and -->
 
 - **Applies to:** 3D correlations (large-scale shape, BAO and full shape).
 - **Mechanism.** The H I fraction depends on the local photo-ionisation rate; sources cluster, so Γ fluctuates on scales comparable to the mean free path. This makes b_δ and β scale dependent while keeping the product b_δ β fixed, and adds a shot-noise term from rare bright sources (Gontcho A Gontcho et al. 2014, arXiv:1404.7425) [src]. On scales beyond the mean free path the H I density anti-correlates with matter (Pontzen 2014, arXiv:1402.0506) [src].
@@ -79,6 +89,7 @@ The effects are grouped by where they enter: (A) from the quasar and the spectru
 - **At z > 5** the fluctuations are large: homogeneous-UVB models are excluded at z ≥ 5.4 (arXiv:2108.03699) [src].
 
 ### B5. Relics of patchy reionisation
+<!-- key: b5-relics-of-patchy-reionisation -->
 
 - **Applies to:** both (sizes given for the 3D power and for P1D).
 - **Mechanism.** Regions that reionised at different times keep different temperatures and pressure-smoothing for a long time, adding large-scale power correlated with the reionisation topology.
@@ -87,6 +98,7 @@ The effects are grouped by where they enter: (A) from the quasar and the spectru
 - **Opportunity.** The same relics carry dark-matter information on large scales (**forecast**, arXiv:2605.26518) [src].
 
 ### B6. Helium reionisation
+<!-- key: b6-helium-reionisation -->
 
 - **Applies to:** P1D.
 - **Mechanism.** He II reionisation at z ~ 3 heats the gas and flattens the temperature–density relation; patchy He II reionisation "imprints an excess in the 1D flux power spectrum on large scales" (arXiv:2306.05471) [src].
@@ -94,8 +106,10 @@ The effects are grouped by where they enter: (A) from the quasar and the spectru
 - **Consequence for P1D cosmology.** The thermal nuisance parameters are not smooth power laws through z ~ 3; PRIYA chains on eBOSS alone prefer a low level of He II heating and shift n_P when IGM temperature data are added (arXiv:2309.03943) [src].
 
 ## C. Instrument and pipeline
+<!-- key: instrument-and-pipeline -->
 
 ### C1. Spectral resolution
+<!-- key: c1-spectral-resolution -->
 
 - **Applies to:** P1D.
 - **Mechanism.** P1D is divided by the squared resolution window; an error δR/R on the resolution produces a k-dependent multiplicative error that grows as k².
@@ -104,6 +118,7 @@ The effects are grouped by where they enter: (A) from the quasar and the spectru
 - **Mitigation and validation.** Per-pixel resolution matrix from the pipeline, validated with 2D image simulations of raw DESI exposures processed through the pipeline (arXiv:2306.06316) [src]; restrict k_max; marginalise a resolution nuisance per redshift bin in the cosmological fit.
 
 ### C2. Noise power
+<!-- key: c2-noise-power -->
 
 - **Applies to:** P1D.
 - **Mechanism.** In low-S/N spectra the noise power is comparable to the signal at high k; a misestimated pipeline variance biases P1D additively.
@@ -112,6 +127,7 @@ The effects are grouped by where they enter: (A) from the quasar and the spectru
 - **Mitigation.** The cross-exposure estimator, which correlates independent exposures of the same quasar and "eliminates the need to model the pipeline noise" (arXiv:2505.07974; also used in the FFT measurement, arXiv:2505.09493) [src]; side-band calibration of the noise (arXiv:2306.06316) [src].
 
 ### C3. Correlated pipeline noise in 3D
+<!-- key: c3-correlated-pipeline-noise-in-3d -->
 
 - **Applies to:** 3D correlations.
 - **Mechanism.** Sky-background subtraction and spectro-photometric calibration use fibres of the same exposure and spectrograph, so their errors are correlated between quasars observed together.
@@ -119,6 +135,7 @@ The effects are grouped by where they enter: (A) from the quasar and the spectru
 - **Mitigation.** A simple model term for sky-subtraction and calibration noise, isolated with synthetic data (arXiv:2404.03003) [src]; in DR2 a single amplitude a_noise for noise correlated between fibres of the same focal-plane petal, measured at 10⁴ a_noise = 2.20 ± 0.15 (arXiv:2503.14739, Appendix A) [src]; in eBOSS, modelling of "instrumental correlations" was one of the main improvements of DR16 (arXiv:2007.08995) [src]. DESI has an atmospheric dispersion corrector and bench-mounted spectrographs in a climate-controlled room, which improve spectro-photometric calibration, sky subtraction and wavelength calibration relative to SDSS (arXiv:2503.14739, Sect. 6.3) [src].
 
 ### C4. Masking (sky lines, DLAs, BALs) in Fourier space
+<!-- key: c4-masking-sky-lines-dlas-bals-in-fourier-space -->
 
 - **Applies to:** P1D (FFT estimator).
 - **Mechanism.** Masked pixels convolve the FFT power with the mask window.
@@ -126,6 +143,7 @@ The effects are grouped by where they enter: (A) from the quasar and the spectru
 - **Mitigation.** Masking-bias correction for the FFT estimator derived from 20 synthetic realisations (arXiv:2509.13593) [src]; QMLE handles masks by construction (arXiv:2008.06421) [src]; high-resolution pipelines correct "the bias induced by masking missing data, DLAs, and metal absorption lines" (arXiv:1709.07354) [src].
 
 ### C5. Quasar redshift errors
+<!-- key: c5-quasar-redshift-errors -->
 
 - **Applies to:** 3D correlations (mainly the Lyα × QSO cross-correlation).
 - **Mechanism.** Broad emission lines give redshift errors of a few hundred km/s. Random errors smear the cross-correlation and the BAO peak radially; errors correlated with the emission-line shapes leak into the mean continuum and create a spurious correlation at small transverse separation (Youles et al. 2022, arXiv:2205.06648) [src]. A systematic offset shifts the cross-correlation along the line of sight.
@@ -135,8 +153,10 @@ The effects are grouped by where they enter: (A) from the quasar and the spectru
 - **Diagnostic.** The forest × galaxy cross-correlation measures redshift dispersion and offsets of galaxy samples (arXiv:2507.21852, arXiv:2509.07453) [src].
 
 ## D. Modelling of the 3D two-point functions
+<!-- key: modelling-of-the-3d-two-point-functions -->
 
 ### D1. Non-linear BAO broadening and shift
+<!-- key: d1-non-linear-bao-broadening-and-shift -->
 
 - **Applies to:** 3D correlations (BAO).
 - **Mechanism.** Non-linear growth and bulk flows damp the BAO feature anisotropically and shift its position at the sub-percent level.
@@ -146,6 +166,7 @@ The effects are grouped by where they enter: (A) from the quasar and the spectru
 - **Mocks.** Lognormal mocks do not broaden the peak; the DR1 validation named this as the top priority for the next mocks (arXiv:2404.03004) [src]; CoLoRe-QL (arXiv:2503.14741) and CoLoRe-2LPT (arXiv:2607.27412) address it [src]. In a hydrodynamical box (ACCEL², 640 h⁻¹Mpc) the BAO is clearly detected and its damping only marginally (arXiv:2407.04473) [src].
 
 ### D1b. Leakage of small scales through the distortion matrix
+<!-- key: d1b-leakage-of-small-scales-through-the -->
 
 - **Applies to:** 3D correlations (AP and full shape; BAO fit range).
 - **Mechanism.** The continuum-fit projection mixes line-of-sight separations; undistorted correlations at r_∥ < 10 h⁻¹Mpc contribute to the distorted correlation at all separations, including those kept by a scale cut.
@@ -154,6 +175,7 @@ The effects are grouped by where they enter: (A) from the quasar and the spectru
 - **Earlier symptom.** The broadband mismatch at 30–80 h⁻¹Mpc in the DR2 BAO fit was attributed to this effect (arXiv:2503.14739, Sect. 4.2) [src].
 
 ### D2. Small-scale non-linearity in full-shape fits
+<!-- key: d2-small-scale-non-linearity-in-full-shape-fits -->
 
 - **Applies to:** 3D correlations (full shape, P3D).
 - **Mechanism.** The linear (Kaiser-like) model with empirical non-linear corrections fails below a scale that depends on the statistic.
@@ -161,17 +183,20 @@ The effects are grouped by where they enter: (A) from the quasar and the spectru
 - **Warning.** "Phenomenological flux power spectrum models, based on modulations of the linear-theory power spectrum, fail at the field level even on quasi-linear scales" (arXiv:2606.26234) [src]. The Kaiser approximation for Lyα × QSO differs from N-body mock measurements at small scales (arXiv:2305.08899) [src].
 
 ### D3. Growth rate from the forest
+<!-- key: d3-growth-rate-from-the-forest -->
 
 - **Applies to:** 3D correlations (full shape).
 - **Finding.** fσ8 from the forest full shape fails validation: DESI DR1 measured it but did not use it "due to difficulties in its validation with mocks" (arXiv:2509.15308) [src]; in DR2 "mock studies reveal a significant bias in the inferred growth-rate parameter fσ8, leading us to exclude this measurement" (arXiv:2607.27411) [src]. Any text that quotes a Lyα fσ8 as a cosmological constraint contradicts the collaboration's own assessment.
 - **Reason, in brief.** The forest's velocity-gradient bias b_η is a free parameter not fixed by a conservation law as for galaxies, so β does not give f directly; f enters only through b_η f σ8 (parameter combinations as in arXiv:2607.27413) [src].
 
 ### D4. Covariance matrix
+<!-- key: d4-covariance-matrix -->
 
 - **Applies to:** 3D correlations.
 - **Practice.** Estimated from the data over HEALPix pixels, with the cross-covariance between the four correlation functions included since DESI (arXiv:2503.14739, Sects. 4 and 6.3) [src]; the DR2 baseline smooths it, and the multipole analysis shows that compressing to monopole and quadrupole gives a positive-definite covariance without smoothing, with finite-sample debiasing corrections (arXiv:2603.04281) [src]. Population tests on mocks check that BAO errors are well calibrated (arXiv:2404.03004, arXiv:2607.19619) [src]. eBOSS P3D used LyaCoLoRe mocks for the covariance (arXiv:2403.08241) [src].
 
 ## E. Simulation and emulator systematics for P1D inference
+<!-- key: simulation-and-emulator-systematics-for-p1d -->
 
 **Applies to:** P1D.
 
@@ -192,6 +217,7 @@ Emulator error is now part of the likelihood: in DESI DR1 it degrades the Δ²_�
 Thermal-history priors remain the dominant model dependence of WDM limits: 5.3 keV versus 3.5 keV with or without temperature jumps (arXiv:1702.01764) and 1.9 keV for deliberately cold histories (arXiv:1912.09397) [src]. Iršič et al. 2024 argue that this dependence has diminished thanks to independent thermal measurements and that the leading small-scale modelling systematics are now peculiar-velocity structure and inhomogeneous reionisation (arXiv:2309.04533) [src].
 
 ## F. Tomography-specific
+<!-- key: tomography-specific -->
 
 **Applies to:** neither the 3D correlations nor P1D: tomographic maps and void cross-correlations only.
 
@@ -201,12 +227,14 @@ Thermal-history priors remain the dominant model dependence of WDM limits: 5.3 k
 - **Breakdown of the transmission–density relation.** A galaxy protocluster at z = 2.30 shows no significant absorption in CLAMATO (arXiv:2303.07619) [src], and LATIS finds strong absorption without LBG overdensities (arXiv:2507.10949) [src]: tomographic maps are not unbiased density maps in the most extreme environments.
 
 ## Referee checklist for a Lyα results section
+<!-- key: referee-checklist-for-a-lyalpha-results-section -->
 
 The two lists are separate because the systematics differ; the "Applies to"
 tag of each subsection above says which list it feeds. Tomography (section F)
 is in neither.
 
 ### 3D correlations (BAO, AP, full shape)
+<!-- key: 3d-correlations-bao-ap-full-shape -->
 
 1. Which estimator (pair-count ξ, multipoles, P3D), and was it cross-checked against a second one?
 2. Continuum method and how its distortion is modelled (distortion matrix, mode marginalisation) (A1, D1b).
@@ -222,6 +250,7 @@ is in neither.
 12. No fσ8 claim from the forest unless the mock bias is addressed (D3).
 
 ### P1D
+<!-- key: p1d -->
 
 1. Which estimator (FFT, QMLE), and was it cross-checked against the other?
 2. Continuum method and its bias correction from synthetic spectra (A1).

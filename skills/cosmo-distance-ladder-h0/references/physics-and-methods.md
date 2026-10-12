@@ -11,6 +11,7 @@ secondary source; `[der]` derived here. Equations without a flag are textbook
 definitions.
 
 ## 1. What "H0" means in each route
+<!-- key: what-h0-means-in-each-route -->
 
 H0 is not one observable. Verde, Schöneberg & Gil-Marín (2023,
 arXiv:2311.13305) count more than a dozen H0's that agree only if the data are
@@ -37,8 +38,10 @@ the late-time expansion history (Efstathiou 2021, arXiv:2103.08723;
 Efstathiou 2026, arXiv:2607.29562) `[src]`.
 
 ## 2. The three-rung distance ladder
+<!-- key: the-three-rung-distance-ladder -->
 
 ### 2.1 Formalism (SH0ES)
+<!-- key: formalism-sh0es -->
 
 Taken from Section 2.1 of Riess et al. (2022, arXiv:2112.04510) `[src]`.
 
@@ -82,6 +85,7 @@ baseline has 3445 degrees of freedom, 42 calibrator SNe Ia in 37 hosts and 277
 Hubble-flow SNe at 0.0233 < z < 0.15 in late-type hosts `[src]`.
 
 ### 2.2 The Local Distance Network generalisation
+<!-- key: the-local-distance-network-generalisation -->
 
 The H0 Distance Network (H0DN; arXiv:2510.23823) replaces the single chain by
 a network: every geometric anchor, primary indicator and Hubble-flow tracer is
@@ -96,6 +100,7 @@ baseline chi^2 is 0.9879 per degree of freedom for 119 degrees of freedom
 level-2 Hubble-flow probes.
 
 ### 2.3 Geometric anchors
+<!-- key: geometric-anchors -->
 
 | Anchor | Method | Precision | Citation | Flag |
 |---|---|---|---|---|
@@ -111,6 +116,7 @@ ecliptic latitude; the Gaia team gives tentative correction formulae
 offset simultaneously with the period-luminosity relation.
 
 ### 2.4 Primary (stellar) indicators
+<!-- key: primary-stellar-indicators -->
 
 **Cepheids.** Period-luminosity (Leavitt) law; young, in star-forming discs;
 needs multi-epoch optical discovery plus NIR photometry. JWST resolves the
@@ -144,6 +150,7 @@ NGC 4258 and, since 2025, 41 Miras in 18 globular clusters with Gaia distances
 (Bhardwaj et al. 2025, arXiv:2507.10658) `[src]`.
 
 ### 2.5 Secondary indicators and the Hubble flow
+<!-- key: secondary-indicators-and-the-hubble-flow -->
 
 **SN Ia.** Standardised peak magnitudes with stretch, colour and host-mass
 corrections; see `cosmo-supernovae`. The Pantheon+ compilation (1701 light
@@ -166,6 +173,7 @@ ladder, through the tailored expanding-photosphere method with radiative
 transfer models (Vogl et al. 2025, arXiv:2411.04968) `[src]`.
 
 ### 2.6 Redshifts and peculiar velocities
+<!-- key: redshifts-and-peculiar-velocities -->
 
 The Hubble-flow sample is cut at z > 0.0233 to limit peculiar-velocity noise.
 Redshifts are replaced by group redshifts where available and corrected with a
@@ -182,6 +190,7 @@ arXiv:2505.10682) and marginalise (arXiv:2509.09665, arXiv:2609.29996). See
 `cosmo-peculiar-velocities` for the reconstruction methods.
 
 ### 2.7 Statistical model: priors and selection
+<!-- key: statistical-model-priors-and-selection -->
 
 A 2025-2026 line of work treats the ladder as a hierarchical Bayesian model in
 which each distance is a latent parameter. Two effects appear (Desmond et al.
@@ -203,6 +212,7 @@ terms rather than through the likelihood. This debate is open; see
 `open-questions.md`.
 
 ## 3. Megamasers
+<!-- key: megamasers -->
 
 Water masers at 22 GHz in a thin, nearly edge-on, sub-parsec Keplerian disc
 around a supermassive black hole. VLBI gives positions, line-of-sight
@@ -218,6 +228,7 @@ physical distance prior and a selection model (Stiskalek & Desmond 2026,
 arXiv:2609.17684) `[src]`.
 
 ## 4. Time-delay cosmography
+<!-- key: time-delay-cosmography -->
 
 Time delay between images i and j of a variable source:
 
@@ -254,6 +265,7 @@ cluster mass models; a lensed SN Ia adds absolute magnifications that break
 the degeneracy between models (Pascale et al. 2025, arXiv:2403.18902) `[src]`.
 
 ## 5. Standard sirens and cosmic chronometers (summary)
+<!-- key: standard-sirens-and-cosmic-chronometers-summary -->
 
 The GW amplitude gives the luminosity distance without a ladder; the redshift
 comes from a counterpart (bright siren: GW170817, Abbott et al. 2017,
@@ -267,6 +279,7 @@ stellar-population synthesis (Moresco 2024, arXiv:2412.01994). H0 follows only
 after extrapolating H(z) to z = 0 with a model or a reconstruction.
 
 ## 6. Early-Universe and inverse-ladder inference
+<!-- key: early-universe-and-inverse-ladder-inference -->
 
 **CMB.** The acoustic scale theta_* = r_* / D_M(z_*) is measured to 0.03%
 (100 theta_* = 1.0411 ± 0.0003) `[src]` (arXiv:1807.06209). Within flat LCDM,
@@ -306,6 +319,7 @@ arXiv:2107.10291). Details belong to `cosmo-tensions-anomalies` and
 `cosmo-dark-energy-modified-gravity`.
 
 ## 7. Blinding practice
+<!-- key: blinding-practice -->
 
 | Analysis | Blinding | Citation | Flag |
 |---|---|---|---|
@@ -321,6 +335,7 @@ set of about 70 analysis variants (arXiv:2112.04510) `[src]` and, since 2025,
 the independent H0DN software.
 
 ## 8. Public codes and data products
+<!-- key: public-codes-and-data-products -->
 
 | Product | What it is | Reference | Flag |
 |---|---|---|---|
@@ -336,6 +351,7 @@ Software names for lens modelling, light-curve fitting and Boltzmann codes are
 in `cosmo-software-ecosystem`; none was verified in this session.
 
 ## 9. Conventions and where the community is split
+<!-- key: conventions-and-where-the-community-is-split -->
 
 - H0 in km/s/Mpc; h = H0 / 100. Distances in the ladder are quoted as moduli;
   1% in distance is 0.0216 mag `[der]`, and the tension is about 0.18 mag
@@ -356,6 +372,7 @@ in `cosmo-software-ecosystem`; none was verified in this session.
 - Split 4: lens mass profiles assumed (power law) versus mass-sheet-free.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - The exact SH0ES Wesenheit coefficient R (0.386 is the value remembered; the
   section read gives only "about 0.4").

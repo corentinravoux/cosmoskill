@@ -1,11 +1,12 @@
 ---
 name: observational-cosmology
-description: Use when reviewing, planning, or fact-checking observational-cosmology content that spans several probes or whose probe is not yet clear — a manuscript chapter, a proposal, a tensions overview — and for notation and unit conventions, cross-probe field state, or to find which cosmo-* skill covers a topic.
+description: Use when reviewing, planning, or fact-checking observational-cosmology content that spans several probes or whose probe is not yet clear — a manuscript chapter, a proposal, a tensions overview — and for notation and unit conventions, cross-probe field state, to find which cosmo-* skill covers a topic, or to update the cosmo-* skills from the recent literature.
 ---
 
 # Observational cosmology working knowledge
 
 ## Which skill holds what
+<!-- key: which-skill-holds-what -->
 
 This skill is the hub of a suite. Each domain below is its own skill with
 dated results, provenance flags and a bibliography checked against arXiv.
@@ -36,11 +37,12 @@ its numbers supersede the digest in this hub.
 | Σm_ν bounds and their model dependence, negative effective mass, mass ordering, N_eff, BBN, laboratory limits; warm, fuzzy, interacting, self-interacting, decaying dark matter | `cosmo-neutrinos-dark-matter` |
 | w, w0wa, the DESI dark-energy evidence and its critiques, μ–Σ, growth index, EFT of dark energy, f(R), screening, E_G | `cosmo-dark-energy-modified-gravity` |
 
-How the suite is built, checked and refreshed:
-`references/suite-conventions.md`. Design documents and test logs are in the
+How the suite is built, checked and updated, with the update cycle step by
+step: `references/suite-conventions.md`. Design documents and test logs are in the
 `docs/` directory of the package repository.
 
 ## Hub files
+<!-- key: hub-files -->
 
 - `references/field-state-2026.md`: cross-probe digest and facility timeline.
   Each domain skill supersedes it for its own domain.
@@ -51,10 +53,49 @@ How the suite is built, checked and refreshed:
   "Systematics a referee checks".
 - `${CLAUDE_SKILL_DIR}/scripts/verify_sources.py <skill directory>`: checks
   every cited arXiv identifier of a skill against arXiv.
-- `${CLAUDE_SKILL_DIR}/scripts/fetch_abstracts.py <arXiv ids>`: prints what a
-  cited paper's abstract says.
+- `${CLAUDE_SKILL_DIR}/scripts/fetch_paper.py <arXiv id>`: reads a cited
+  paper: `--abstract`, `--outline`, `--section <title>`, `--grep <text>`.
+- `${CLAUDE_SKILL_DIR}/scripts/layers.py <skill>`: prints a researcher's
+  personal and project notes for a skill.
+
+## Choosing the level
+<!-- key: choosing-the-level -->
+
+Every skill of the suite answers at four depths. Start at the lowest that
+can answer, and go deeper only when it cannot.
+
+| Level | Read | It holds |
+|---|---|---|
+| L1 | the domain's `SKILL.md`, nothing else | headline values, where the domain stands, the list a referee checks, the errors that recur |
+| L2 | one reference file, chosen from the file map | every other value, the history of a number, the size of each systematic, methods, releases |
+| L3 | a dossier of `deep/` | how a result is derived and how to choose between methods. No skill has one yet: say so and answer at L2 |
+| L4 | the cited paper, at the place the number is given | the source itself |
+
+- **The lowest level that answers.** A value that is in the `SKILL.md` is an
+  L1 answer. An L1 answer does not open a reference file "to be safe".
+- **Levels stack.** L4 starts from the L2 entry, whose citation and flag say
+  where to look: `[src]` was read in the paper, `[sec]` came second-hand,
+  `[der]` was derived. Flags are in the reference files; the `SKILL.md`
+  bullets carry citations only.
+- **L4 is mandatory** before endorsing a number for a manuscript, a proposal
+  or a referee report. Read the paper with
+  `${CLAUDE_SKILL_DIR}/scripts/fetch_paper.py <arXiv id>` (abstract, outline,
+  one section, or the paragraphs containing a term), or with any tool that
+  gives the paper. If it cannot be read, say that L4 was required and not
+  done; a skill file is never the verification.
+- **Applying a formula.** With no dossier, a derivation is answered at L2
+  with the formula and its source. Working it out for the asker's numbers is
+  allowed and is labelled as derived.
+- **Which skill, when two fit.** The size or status of a tension across
+  probes: `cosmo-tensions-anomalies`. A date, a release or the status of an
+  instrument: `cosmo-surveys-facilities`. One probe's value or method: that
+  probe's skill. A statistical or coding question: the method skill, not the
+  probe that raised it.
+- **State the level.** End the answer with the line each skill gives:
+  `[cosmoskill L<level> · <layer> · <skill>/<file>#<key>]`.
 
 ## How to use this in review
+<!-- key: how-to-use-this-in-review -->
 
 1. **Date-check every claim.** Results move fast; a "latest" statement written in
    2025 is often stale. Cross-check numbers against the reference file, and if
@@ -68,67 +109,52 @@ How the suite is built, checked and refreshed:
    Fourier convention. Silent convention drift between chapters is the most
    common real error in a multi-topic manuscript.
 
-## Red flags when reviewing cosmology prose
+## Reviewing prose
+<!-- key: reviewing-prose -->
 
-- σ significances quoted without stating the model comparison and datasets.
-- fσ₈ compared across analyses without matching σ₈ normalisation or effective z.
-- "tension" language used for <3σ without a caveat.
-- Simulation-calibrated results presented without stating the simulation suite,
-  resolution, and the range of validity in k or scale.
-- Forecast numbers (Fisher) presented next to measurements without labelling.
+`references/review-rubric.md` holds the rubric for reviewing cosmology prose:
+red flags, conceptual slips that recur, how to avoid false positives, and how
+to calibrate a finding to the section it sits in. Load it when the task is a
+review.
 
-## Conceptual slips that recur in cosmology prose
+<!-- cosmoskill:block:start — generated by tools/sync_blocks.py, do not edit by hand -->
+## Levels and layers
+<!-- key: levels-and-layers -->
 
-Check these when reviewing a chapter; each is a real error, not a style point.
+Answer at the lowest level that answers the question, then stop.
 
-- **"Standard candle" for SNe Ia.** They are *standardisable*: the width–luminosity
-  and colour corrections are what make them usable, and an intrinsic scatter
-  remains afterwards. Same for "standard ruler" applied to BAO without saying the
-  ruler is calibrated by the sound horizon at the drag epoch.
-- **Which parameter a probe constrains.** The CMB constrains ωb and ωc (physical
-  densities) directly; Ωm and H₀ come out through θ*. Writing that the CMB
-  "measures Ωm" skips the step a referee will ask about.
-- **tSZ vs kSZ.** tSZ = inverse Compton off hot electrons, a spectral distortion
-  independent of cluster velocity; kSZ = Doppler from the cluster's bulk motion.
-  Only kSZ carries a peculiar velocity.
-- **ISW.** The effect is a *temperature* shift from a time-varying potential, not
-  a spectral distortion; it is sensitive to the decay of potentials, hence to Λ
-  and curvature.
-- **σ₈ vs S₈ vs fσ₈.** Distinct quantities with distinct degeneracy directions.
-  fσ₈ values at different z_eff are not comparable; S₈ carries an Ωm exponent
-  whose value (0.5) is a convention, not a measurement.
-- **Growth rate in modified gravity.** f is scale-dependent in f(R) and in most
-  screened models, so a single fσ₈(z) curve is an effective quantity at the
-  8 h⁻¹Mpc scale, not the ΛCDM growth rate.
-- **Tension significances.** Always name both endpoints and both datasets. A σ
-  computed against Planck 2018 differs from one computed against CMB-SPA.
-- **Model dependence of limits.** Σmν bounds, in particular, move by a factor of
-  a few between ΛCDM and w₀wₐCDM. Quote the model with the number.
-- **Forecast vs measurement.** Fisher forecasts and real constraints must be
-  visually and verbally distinguished when they appear in the same table.
+| Level | Read | Holds |
+|---|---|---|
+| L1 | this file only | the headline values, the state of the domain, the list a referee checks, the errors that recur |
+| L2 | one file of `references/` | what this file does not hold: other values, their history, the size of each systematic, methods, releases |
+| L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
+| L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-## Using the checklists without generating false positives
+Sizes, in thousands of tokens: L1 3k; conventions 1k; field-state-2026 2k; review-checklists 1k; review-rubric 1k; suite-conventions 2k.
 
-The lists above match on topic; a defect matches on *claim*. Before reporting an
-item, quote the sentence in the manuscript that commits the error. If no sentence
-can be quoted, there is no finding — the topic merely appears.
+- L2: when the file map names several files, search them for the term
+  before reading, and read only the passage.
+- L4 starts from the L2 entry: its citation and flag say where to look. Read
+  the paper with
+  `python3 "${CLAUDE_SKILL_DIR}/../observational-cosmology/scripts/fetch_paper.py" <arXiv id>`
+  (`--abstract`, `--outline`, `--section`, `--grep`), or with any tool that
+  gives the paper. If it cannot be read, say that L4 was required and not
+  done.
+- A formula of the skill may be applied to the asker's numbers; label the
+  result as derived.
 
-Two cases that look identical to a keyword search and are not:
-- a parameter named as something a probe is *sensitive to* (a table cell, a list
-  of constrained quantities) versus a numerical *bound* being asserted;
-- a fiducial value assumed for modelling (Σmν = 0.06 eV in a composition list)
-  versus a measurement being quoted.
-Neither of the first kind is a claim, and neither can be wrong.
+Local layers: if a directory `.cosmoskill/` exists in the working directory,
+in one of its parents, or in the home directory, or if `COSMOSKILL_HOME` is
+set, run
+`python3 "${CLAUDE_SKILL_DIR}/../observational-cosmology/scripts/layers.py" observational-cosmology`
+and read what it prints before answering. A note applies when its subject is
+the question's; you need not open the section it is attached to. Say which
+statements come from a local layer.
 
-## Calibrate the finding to the section's register
-
-An overview bullet, a methods section and a results section carry different
-burdens of proof. A tensions overview exists to convey which discrepancies are
-serious and roughly how serious; it does not owe the reader a mechanism, a
-second citation, or a significance quoted to two decimals. Before writing a
-finding, ask what the section is *for* — then propose the smallest change that
-fixes it. Often that is one qualifier, not a sentence.
-
-A number quoted faithfully from a review that was current when the author wrote
-is not an error. The only legitimate concern is whether it will still read as
-current at submission, and a hedge fixes that without a rewrite.
+End the answer with one line, `<file>` being `skill` for this file or the
+name of the reference file without extension:
+`[cosmoskill L<level> · <base, personal, project, or several joined by +> · observational-cosmology/<file>#<key>]`
+The key is the comment under the heading of the section used; leave `#<key>`
+out if you did not read that heading. At L4, put the paper and the place
+read instead: `arXiv:<id>, <abstract or section>`.
+<!-- cosmoskill:block:end -->

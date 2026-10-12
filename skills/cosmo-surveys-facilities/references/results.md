@@ -12,8 +12,10 @@ arXiv record [src], unless a page is named. This file has no cosmological
 parameter values: those are in the probe skills.
 
 ## 1. Chronology of data releases and milestones
+<!-- key: chronology-of-data-releases-and-milestones -->
 
 ### 1.1 Before 2020
+<!-- key: before-2020 -->
 
 | Date | Event | Source | Flag |
 |---|---|---|---|
@@ -39,6 +41,7 @@ parameter values: those are in the probe skills.
 | 13 December 2019 | eROSITA all-sky survey begins (the DR2 page gives 12 December as the first day of data) | arXiv:2010.03477; erosita.mpe.mpg.de/dr2 | [src] |
 
 ### 1.2 2020 to 2024
+<!-- key: 2020-to-2024 -->
 
 | Date | Event | Source | Flag |
 |---|---|---|---|
@@ -67,6 +70,7 @@ parameter values: those are in the probe skills.
 | December 2024 | CFHT Board recommends winding down MSE activities | web-search summary of a CASCA post | [sec: web] |
 
 ### 1.3 2025
+<!-- key: 2025 -->
 
 | Date | Event | Source | Flag |
 |---|---|---|---|
@@ -88,6 +92,7 @@ parameter values: those are in the probe skills.
 | Late 2025 | SPHEREx completes its first all-sky pass | web-search summary | [sec: web] |
 
 ### 1.4 2026 to the snapshot
+<!-- key: 2026-to-the-snapshot -->
 
 | Date | Event | Source | Flag |
 |---|---|---|---|
@@ -110,6 +115,7 @@ parameter values: those are in the probe skills.
 | 2026 (day not given) | Legacy Surveys DR11 current | legacysurvey.org | [src] |
 
 ## 2. What is public today
+<!-- key: what-is-public-today -->
 
 | Facility | Latest public release | Date | Access point | Not public | Flag |
 |---|---|---|---|---|---|
@@ -138,6 +144,7 @@ parameter values: those are in the probe skills.
 | LVK | GWTC-4.0 (O4a), GWTC-5.0 (through O4b) | August 2025; May 2026 | Gravitational Wave Open Science Center (address not checked) | data after O4b | [src] |
 
 ## 3. Upcoming milestones (all dates are announcements, not facts)
+<!-- key: upcoming-milestones-all-dates-are-announcements -->
 
 | When | Milestone | Source | Flag |
 |---|---|---|---|
@@ -167,6 +174,7 @@ parameter values: those are in the probe skills.
 | 2040s | MSE, if built | arXiv:2503.15553 | [src] |
 
 ## 4. How to read these tables
+<!-- key: how-to-read-these-tables -->
 
 - A release date is the day the archive opened, not the date of the first
   cosmology paper. DESI published DR1 BAO in April 2024 and opened DR1 on
@@ -188,6 +196,7 @@ parameter values: those are in the probe skills.
   `cosmo-weak-lensing` (31 August 2021) [sec: WL].
 
 ## Not verified
+<!-- key: not-verified -->
 
 - Release days of Legacy Surveys DR9, DR10 and DR11; KiDS DR5 release day;
   the HSC-SSP release after PDR3, if any.

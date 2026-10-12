@@ -13,6 +13,7 @@ contamination that the two maps do not share. They are fully exposed to anything
 which is the case for every extragalactic foreground.
 
 ## 1. Normalisation of the lensing map on the overlap region
+<!-- key: normalisation-of-the-lensing-map-on-the-overlap -->
 
 **Mechanism.** A quadratic lensing estimator applied to a masked sky returns a misnormalised
 convergence. The correction is a ratio of simulated spectra evaluated with the galaxy mask and
@@ -29,6 +30,7 @@ the residual normalisation uncertainty in the covariance (arXiv:2309.05659) [src
 arXiv:2309.05659 cited for the effect in cross-correlation.
 
 ## 2. Extragalactic foregrounds in the lensing reconstruction
+<!-- key: extragalactic-foregrounds-in-the-lensing -->
 
 **Mechanism.** tSZ clusters and CIB galaxies in the temperature map produce a lensing-like
 signal in the quadratic estimator. Because they trace the same structure as the galaxies, the
@@ -59,6 +61,7 @@ Planck PR4 analysis ran contamination and systematic null tests and finds "no ev
 contamination in the lensing maps" (Embil Villagra 2025, arXiv:2507.08798) [src].
 
 ## 3. CIB, dust and radio leakage in tSZ cross-correlations
+<!-- key: cib-dust-and-radio-leakage-in-tsz-cross -->
 
 **Mechanism.** A Compton-y map retains CIB and radio emission, and both correlate with any
 low-redshift tracer and with lensing. The sign differs: dusty and radio emission add positive
@@ -89,6 +92,7 @@ cross-spectra, with the CIB spectral parameters calibrated externally and margin
 result against the CIB spectral index and with radio sources masked.
 
 ## 4. Redshift distribution of photometric tracers
+<!-- key: redshift-distribution-of-photometric-tracers -->
 
 **Mechanism.** At fixed data, a tracer placed at lower redshift has a larger C_ℓ^gg and a smaller
 overlap with the lensing kernel, so the fit compensates by raising S_8 (arXiv:2309.05659) [src].
@@ -112,6 +116,7 @@ redshift error and sparseness as the data; the "lensing-is-low" void signal disa
 Buzzard templates are recalibrated with DESI spectra (Sartori 2026, arXiv:2605.19763) [src].
 
 ## 5. Magnification bias
+<!-- key: magnification-bias -->
 
 **Mechanism.** Lensing by foreground matter changes the observed number counts with a
 coefficient (5 s_μ − 2) and correlates directly with κ.
@@ -126,6 +131,7 @@ effect into a signal, with a finite-difference calibration of the slope, and ass
 error of ±0.050 on σ_8, larger than its statistical error of ±0.047 [src].
 
 ## 6. Bias model, scale cuts and projection effects
+<!-- key: bias-model-scale-cuts-and-projection-effects -->
 
 **Mechanism.** A flexible bias model has many weakly constrained parameters. Marginal means of
 cosmological parameters then shift away from the best fit ("volume effect"), in a direction that
@@ -151,6 +157,7 @@ sections "Volume effect estimation" and "Planck PR3 reanalysis") [src].
 vector; show a linear-theory fit on restricted scales (arXiv:2407.04607) [src]; fit N-body mocks.
 
 ## 7. Imaging systematics and large-scale power of the tracer
+<!-- key: imaging-systematics-and-large-scale-power-of -->
 
 **Mechanism.** Stellar density, depth and extinction modulate the observed galaxy density. The
 auto-spectrum gains spurious large-scale power. The cross-spectrum with κ is not protected
@@ -170,6 +177,7 @@ large-scale excess (Qin 2026, arXiv:2603.09457) [src].
 density, each of which is a subsection of arXiv:2407.04607 [src, section titles].
 
 ## 8. kSZ: the optical-depth degeneracy
+<!-- key: ksz-the-optical-depth-degeneracy -->
 
 **Mechanism.** Every kSZ statistic is a product of an electron column (τ, P_ge) and a velocity.
 Cosmology from the velocity needs τ; gas physics from τ needs the velocity.
@@ -191,6 +199,7 @@ simulations, or from machine learning trained on simulations (Gong 2025, arXiv:2
 f_NL analyses that use only the scale dependence and marginalise the amplitude [src].
 
 ## 9. kSZ: velocity reconstruction errors
+<!-- key: ksz-velocity-reconstruction-errors -->
 
 **Mechanism.** The stacking weight is a reconstructed velocity, correlated with the truth by a
 coefficient r < 1; the estimator divides by r.
@@ -212,6 +221,7 @@ consistent, with comparable statistical power (arXiv:2503.19870) [src].
 the simulation prediction as in the data (arXiv:2607.23339) [src].
 
 ## 10. kSZ: foregrounds and map systematics
+<!-- key: ksz-foregrounds-and-map-systematics -->
 
 **Mechanism.** tSZ, CIB and radio emission are correlated with the galaxies but not with the sign
 of their velocity, so a velocity-weighted stack cancels them on average. Quadratic velocity
@@ -238,6 +248,7 @@ arXiv:2101.08374; arXiv:2511.23417); frequency-difference nulls, 26 of them in H
 to 0.7σ channel by channel (arXiv:2609.17676) [src].
 
 ## 11. kSZ and tSZ: host haloes, satellites and miscentring
+<!-- key: ksz-and-tsz-host-haloes-satellites-and -->
 
 **Mechanism.** A stacked profile is an average over the halo-mass distribution of the sample,
 including satellites and miscentred galaxies. Comparing with a simulation requires the same
@@ -254,6 +265,7 @@ samples (Hadzhiyska 2025, arXiv:2507.14136) [src].
 under different treatments of mass and filtering; see `open-questions.md` §2.
 
 ## 12. Patchy screening: contamination by lensing
+<!-- key: patchy-screening-contamination-by-lensing -->
 
 The stacked screening estimator returns a ~4.1σ signal that exceeds what the kSZ-measured gas
 implies; N-body tests show that CMB lensing dominates it (Hadzhiyska 2025, arXiv:2506.17379)
@@ -262,6 +274,7 @@ implies; N-body tests show that CMB lensing dominates it (Hadzhiyska 2025, arXiv
 or an explicit subtraction.
 
 ## 13. ISW: cosmic variance, selection of structures and mocks
+<!-- key: isw-cosmic-variance-selection-of-structures-and -->
 
 **Mechanism.** The total signal-to-noise is a few, so the result is sensitive to the selection of
 structures and to choices made after looking at the data.
@@ -277,6 +290,7 @@ the stack. The cross-spectrum approach needs the tracer bias, redshift distribut
 magnification, with the same failure modes as §4–7.
 
 ## 14. Covariance and noise models
+<!-- key: covariance-and-noise-models -->
 
 - A cross-covariance between tomographic samples was missing in one blinded analysis until after
   unblinding (−0.3σ on S_8; arXiv:2309.05659) [src].
@@ -287,12 +301,14 @@ magnification, with the same failure modes as §4–7.
   2026, arXiv:2601.20551) [src].
 
 ## 15. Shared data
+<!-- key: shared-data -->
 
 ACT and Planck lensing maps, DESI Legacy targets and DESI spectroscopy recur across the papers of
 this domain (`surveys-and-data.md` §5). Agreement between two results built on the same maps
 tests the modelling, not the data.
 
 ## 16. What a referee checks in a results section
+<!-- key: what-a-referee-checks-in-a-results-section -->
 
 Lensing × galaxies:
 1. Which lensing maps (Planck PR3 or PR4, ACT DR4 or DR6, SPT-SZ or SPT-3G), and whether the

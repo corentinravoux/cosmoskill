@@ -10,11 +10,13 @@ Flags: `[src]` read this session in the cited paper; `[sec]` from a named
 secondary source; `[der]` derived here.
 
 ## 1. Is the `w0`–`wa` preference real? The critiques, one by one
+<!-- key: is-the-w0-wa-preference-real-the-critiques-one -->
 
 The collaboration numbers are in `results.md` Sections 1–3. Each subsection
 below gives the objection, the reply, and the status at the snapshot.
 
 ### 1.1 Supernova-sample dependence
+<!-- key: supernova-sample-dependence -->
 
 - **Objection.** Efstathiou 2024, arXiv:2408.07175: the DR1 evidence ran from
   ~3.9σ with DES5Y to ~2.5σ with Pantheon+; supernovae common to DES5Y and
@@ -39,6 +41,7 @@ below gives the objection, the reply, and the status at the snapshot.
   (`cosmo-supernovae`).
 
 ### 1.2 The low-redshift anchor
+<!-- key: the-low-redshift-anchor -->
 
 - Huang, Cai and Wang 2025, arXiv:2502.04212: within DESY5, the intercept of
   the magnitude–distance relation differs between the external low-redshift
@@ -66,6 +69,7 @@ below gives the objection, the reply, and the status at the snapshot.
   homogeneous low-redshift anchor; see `cosmo-supernovae` for DEBASS and ZTF.
 
 ### 1.3 Does the signal survive without supernovae?
+<!-- key: does-the-signal-survive-without-supernovae -->
 
 - DESI DR2 + CMB alone: 3.1σ; with only compressed early-universe CMB priors:
   2.4σ; DESI alone: 1.7σ (arXiv:2503.14738) [src].
@@ -86,6 +90,7 @@ below gives the objection, the reply, and the status at the snapshot.
   dark energy, shows no significant tension [src].
 
 ### 1.4 The CMB side: lensing, optical depth, and "negative neutrino mass"
+<!-- key: the-cmb-side-lensing-optical-depth-and-negative -->
 
 The same data mismatch appears in three guises depending on the extension
 fitted.
@@ -115,6 +120,7 @@ fitted.
   one of the three doors.
 
 ### 1.5 Priors and parameterisation
+<!-- key: priors-and-parameterisation -->
 
 - Cortês and Liddle 2024, arXiv:2404.08056: with a pivot, the evidence is
   "concentrated in the derivative of w rather than its mean offset from −1";
@@ -152,6 +158,7 @@ Section 5).
   BAO-only statement.
 
 ### 1.6 Physical versus effective models: phantom crossing
+<!-- key: physical-versus-effective-models-phantom -->
 
 - **The claim.** In CPL the best fit crosses `w = −1` near `z ≃ 0.4`
   (arXiv:2503.14738) [src]. Rippentrop, Ishak and Gonzalez 2026,
@@ -196,6 +203,7 @@ Section 5).
   inputs move.
 
 ### 1.7 Statistics of repeated looks
+<!-- key: statistics-of-repeated-looks -->
 
 Kim et al. (arXiv:2607.28918) point out that Wilks-based σ values are read as
 if the test were done once, while DR1, DR2, DR3 are successive looks at
@@ -204,8 +212,10 @@ test specification alongside σ [src]. No collaboration paper does so at the
 snapshot.
 
 ## 2. Modified gravity: live questions
+<!-- key: modified-gravity-live-questions -->
 
 ### 2.1 Is there any perturbation-level anomaly at all?
+<!-- key: is-there-any-perturbation-level-anomaly-at-all -->
 
 - **No, in collaboration analyses.** DESI DR1 full shape + CMB + DES Y3 +
   DESY5: `mu0 = 0.05 ± 0.22`, `Sigma0 = 0.008 ± 0.045`, binned parameters all
@@ -231,6 +241,7 @@ snapshot.
   session.
 
 ### 2.2 Does modified gravity explain the DESI signal?
+<!-- key: does-modified-gravity-explain-the-desi-signal -->
 
 - **For.** A stable phantom crossing needs more than a minimally coupled
   scalar; non-minimal coupling provides it (Ye et al. 2024, arXiv:2407.15832;
@@ -259,6 +270,7 @@ snapshot.
   paradigms [src].
 
 ### 2.3 What is left of scalar–tensor dark energy after GW170817
+<!-- key: what-is-left-of-scalar-tensor-dark-energy-after -->
 
 Settled: the luminal speed of gravitational waves at LIGO frequencies removes
 quartic and quintic Horndeski terms as drivers of acceleration (Ezquiaga and
@@ -271,6 +283,7 @@ is valid at the frequency of the gravitational-wave measurement (not re-read
 this session; see "Not verified").
 
 ### 2.4 Which `f(R)` bound is "the" bound
+<!-- key: which-f-r-bound-is-the-bound -->
 
 | Regime | Bound on `abs(f_R0)` | Source |
 |---|---|---|
@@ -287,6 +300,7 @@ are independent of galaxy-formation modelling. Both are correct statements
 about different assumptions; a paper should say which it relies on.
 
 ### 2.5 Is `E_G` still worth measuring?
+<!-- key: is-eg-still-worth-measuring -->
 
 For: it is model-agnostic and uses linear scales only (Leonard et al. 2025,
 arXiv:2511.19194) [src]. Against: its GR prediction needs `Omega_m,0` from
@@ -295,6 +309,7 @@ same data with a proper likelihood. Current practice is to publish both
 (arXiv:2507.16098; Zhang et al. 2026, arXiv:2604.24631) [src].
 
 ## 3. Method debates
+<!-- key: method-debates -->
 
 - **Frequentist versus Bayesian headline.** The collaborations quote `Delta
   chi2` → σ; critics quote evidences with theory priors (Toomey et al. 2025,
@@ -322,6 +337,7 @@ same data with a proper likelihood. Current practice is to publish both
   parents (Camilleri et al. 2026, arXiv:2609.05053) [src].
 
 ## 4. What the next data will decide
+<!-- key: what-the-next-data-will-decide -->
 
 | Question | Deciding data | Expected | Flag |
 |---|---|---|---|
@@ -339,6 +355,7 @@ systematics able to move `w0`–`wa` by several error ellipses in future
 compilations (Dhawan, Popovic and Goobar 2024, arXiv:2409.18668) [src].
 
 ## 5. Misconceptions and stale claims
+<!-- key: misconceptions-and-stale-claims -->
 
 | Claim still in circulation | Why it is wrong or stale | Corrected by |
 |---|---|---|
@@ -361,6 +378,7 @@ compilations (Dhawan, Popovic and Goobar 2024, arXiv:2409.18668) [src].
 | "Interacting dark energy / non-minimal coupling is detected at 3–5σ" | Re-description of the same background mismatch; lensing data pull to GR | arXiv:2606.00411 |
 
 ## 6. Not verified this session
+<!-- key: not-verified-this-session -->
 
 - The DESI DR1 full-shape value of the growth index γ, and any post-PR4 update
   of the Nguyen et al. growth-suppression result.

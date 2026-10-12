@@ -15,6 +15,7 @@ Scale to keep in mind: the SH0ES-Planck difference is 0.176 ± 0.035 mag in
 0.0216 mag `[der]`.
 
 ## 1. Cepheid crowding and blending
+<!-- key: cepheid-crowding-and-blending -->
 
 **Mechanism.** In HST NIR images of hosts tens of Mpc away a Cepheid sits on an
 unresolved background of red giants. If the statistical background correction
@@ -43,6 +44,7 @@ distance and local surface brightness.
 crowding as a candidate is stale. Cite arXiv:2401.04773 and arXiv:2509.01667.
 
 ## 2. Cepheid metallicity dependence
+<!-- key: cepheid-metallicity-dependence -->
 
 **Mechanism.** Metal-rich Cepheids are brighter at fixed period. Anchors and
 SN hosts have different mean abundances, so an error in the coefficient gamma
@@ -69,6 +71,7 @@ close and leaves distant quasars with negative parallaxes `[src]`.
 system; check the per-anchor H0 values agree (Section 4).
 
 ## 3. Gaia parallax zero point
+<!-- key: gaia-parallax-zero-point -->
 
 **Mechanism.** Gaia EDR3 parallaxes are offset by a few tens of microarcsec,
 depending on magnitude, colour and ecliptic latitude (Lindegren et al. 2021,
@@ -89,6 +92,7 @@ arXiv:2601.22215) `[src]`.
 **Next data.** Gaia DR4, 2 December 2026 (`surveys-and-data.md`).
 
 ## 4. Consistency of the geometric anchors
+<!-- key: consistency-of-the-geometric-anchors -->
 
 Each anchor alone must return the same H0. Values read this session:
 
@@ -118,6 +122,7 @@ enter every JWST H0 fully correlated. Comparisons that neglect the second term
 overstate disagreements `[src]` (arXiv:2408.11770).
 
 ## 5. Extinction law and the Wesenheit colour term
+<!-- key: extinction-law-and-the-wesenheit-colour-term -->
 
 **Mechanism.** The Wesenheit magnitude removes dust with a fixed R tied to a
 Milky-Way-like law (R_V ~ 3.1), while SN Ia colours often prefer R_V ~ 2 in
@@ -134,6 +139,7 @@ arXiv:2503.09702); a statistical sample of 5 to 10 hosts is announced.
 host only after subtracting intrinsic colours.
 
 ## 6. Statistical model: distance priors and selection
+<!-- key: statistical-model-distance-priors-and-selection -->
 
 **Mechanism.** Distances are latent parameters. A flat prior in modulus
 favours short distances; unmodelled sample selection has the opposite sign.
@@ -168,6 +174,7 @@ two-rung H0 from 71.8 to 77.0 `[src]` (Kenworthy et al. 2022,
 arXiv:2204.10866).
 
 ## 7. SN Ia standardisation between calibrators and the Hubble flow
+<!-- key: sn-ia-standardisation-between-calibrators-and -->
 
 **Mechanism.** Calibrators live in nearby star-forming hosts; the Hubble-flow
 sample must be matched in host type, survey and light-curve properties, or
@@ -198,6 +205,7 @@ across four optical compilations and NIR-only magnitudes (H band: 72.459 ±
 Light-curve models, calibration and host corrections: `cosmo-supernovae`.
 
 ## 8. Choice and size of the calibrator sample
+<!-- key: choice-and-size-of-the-calibrator-sample -->
 
 **Mechanism.** With 10 to 20 calibrators the mean SN Ia magnitude fluctuates
 by more than the systematic budget; which hosts were observed first matters.
@@ -213,6 +221,7 @@ HST Cepheids agree with JWST Cepheids, TRGB and JAGB at about 0.03 mag
 `[src]` (arXiv:2408.11770).
 
 ## 9. Peculiar velocities and the definition of the Hubble flow
+<!-- key: peculiar-velocities-and-the-definition-of-the -->
 
 **Three-rung ladder.** Flow corrections from 2M++ plus group redshifts raise
 H0 by about 0.4 relative to CMB-frame redshifts and leave a systematic of
@@ -234,6 +243,7 @@ simulation, with the selection of the sample in the likelihood
 (arXiv:2509.09665). Method details: `cosmo-peculiar-velocities`.
 
 ## 10. Local structure and sample variance
+<!-- key: local-structure-and-sample-variance -->
 
 **Size.** Sample variance of the local H0 in LCDM with the actual SN
 distribution is 0.31 `[src]` (Wu & Huterer 2017, arXiv:1706.09723); the
@@ -246,6 +256,7 @@ would need delta ~ -0.8 over a radius of ~150 Mpc `[src]` (arXiv:1706.09723).
 distances (arXiv:2506.10518). See `open-questions.md` for the void debate.
 
 ## 11. TRGB-specific effects
+<!-- key: trgb-specific-effects -->
 
 - **Tip detection.** Edge-detection responses are multi-peaked; the measured
   tip correlates with the contrast ratio of the field. Algorithm choices add
@@ -264,6 +275,7 @@ distances (arXiv:2506.10518). See `open-questions.md` for the void debate.
   volume is small and sample fluctuations are large (Section 8).
 
 ## 12. JAGB-specific effects
+<!-- key: jagb-specific-effects -->
 
 - Field-to-field variation of 0.11 ± 0.02 mag between two NGC 4258 fields in
   the CCHP analysis, also seen in SH0ES fields; the systematic of 2.0 in the
@@ -280,6 +292,7 @@ distances (arXiv:2506.10518). See `open-questions.md` for the void debate.
   `[src]` (arXiv:2502.05259).
 
 ## 13. Miras, SBF, Tully-Fisher, Fundamental Plane
+<!-- key: miras-sbf-tully-fisher-fundamental-plane -->
 
 - **Miras.** Two SN Ia hosts only; the error is dominated by the statistical
   uncertainty of the SN peak magnitude `[src]` (arXiv:2312.08423). Cluster
@@ -299,6 +312,7 @@ distances (arXiv:2506.10518). See `open-questions.md` for the void debate.
   than SN-based values `[src]` (arXiv:2409.14546).
 
 ## 14. Time-delay cosmography
+<!-- key: time-delay-cosmography -->
 
 - **Mass-sheet degeneracy.** H0 scales with 1 - kappa_E; models with few
   parameters (power laws) tie kappa_E to the measured profile curvature and
@@ -320,6 +334,7 @@ distances (arXiv:2506.10518). See `open-questions.md` for the void debate.
   the error for lensed SNe (arXiv:2403.18902, arXiv:2509.12301).
 
 ## 15. Megamasers, sirens, chronometers
+<!-- key: megamasers-sirens-chronometers -->
 
 - **Megamasers.** Six galaxies; the result depends on the velocity treatment
   at the 1 to 2 level and beyond (range 71.8 to 76.9 in 2020,
@@ -332,6 +347,7 @@ distances (arXiv:2506.10518). See `open-questions.md` for the void debate.
   `[src]` (arXiv:2511.02730).
 
 ## 16. The early-Universe side
+<!-- key: the-early-universe-side -->
 
 - The CMB value is a LCDM prediction; it moves in extended models
   (`cosmo-cmb`). Planck spectra prefer more lensing than LCDM predicts at
@@ -344,6 +360,7 @@ distances (arXiv:2506.10518). See `open-questions.md` for the void debate.
   (Schöneberg 2024, arXiv:2401.15054).
 
 ## 17. What a referee checks in a results section
+<!-- key: what-a-referee-checks-in-a-results-section -->
 
 1. Which anchors, and the H0 from each alone.
 2. Which SN compilation, redshift range and host cut define the Hubble flow;
@@ -364,6 +381,7 @@ distances (arXiv:2506.10518). See `open-questions.md` for the void debate.
 11. Blinding, and the list of variants run after unblinding.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - The redshift-Leavitt (time-dilation) bias and the stellar-association bias
   of Cepheids: abstracts were read (0.27% and 0.23% effects on H0) but the

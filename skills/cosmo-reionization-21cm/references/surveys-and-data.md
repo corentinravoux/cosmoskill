@@ -8,6 +8,7 @@ that were not read at source are left out and listed under "Not verified". Gener
 facts for CHIME, MeerKAT, SKA and SPHEREx also live in `cosmo-surveys-facilities`.
 
 ## 1. Global-signal experiments
+<!-- key: global-signal-experiments -->
 
 | Experiment | Band | What it published | Status on the snapshot date | Citation | Flag |
 |---|---|---|---|---|---|
@@ -21,8 +22,10 @@ of 2σ" [src: arXiv:2511.21289, introduction]; the SARAS paper's own wording is 
 arXiv:2112.06778].
 
 ## 2. Epoch-of-reionisation interferometers
+<!-- key: epoch-of-reionisation-interferometers -->
 
 ### Past
+<!-- key: past -->
 
 | Experiment | Outcome | Citation | Flag |
 |---|---|---|---|
@@ -30,6 +33,7 @@ arXiv:2112.06778].
 | PAPER (64-antenna configuration) | completed; original limits withdrawn for signal loss; final limits from a lossless re-analysis over z ~ 7.5–11 | Cheng et al. 2018, arXiv:1810.05175; Kolopanis et al. 2019, arXiv:1909.02085 | [src] |
 
 ### Current
+<!-- key: current-2 -->
 
 | Experiment | Configuration and data, as stated in the papers | Latest limits paper | Flag |
 |---|---|---|---|
@@ -51,8 +55,10 @@ Notes.
   upper limit.
 
 ## 3. Post-reionisation HI intensity-mapping instruments
+<!-- key: post-reionisation-hi-intensity-mapping -->
 
 ### Past and pathfinding
+<!-- key: past-and-pathfinding -->
 
 | Instrument | Data | Result type | Citation | Flag |
 |---|---|---|---|---|
@@ -60,6 +66,7 @@ Notes.
 | Parkes | HI intensity maps | stacking on galaxies | named in Cunnington et al. 2026, arXiv:2606.25955, section 3 | [sec] |
 
 ### Current
+<!-- key: current -->
 
 | Instrument | Mode | Data sets used in results | Citation | Flag |
 |---|---|---|---|---|
@@ -81,6 +88,7 @@ Notes.
   3].
 
 ### Under construction
+<!-- key: under-construction -->
 
 | Instrument | Design as stated | Status | Citation | Flag |
 |---|---|---|---|---|
@@ -97,6 +105,7 @@ found disagree between SKAO documents (AA* in 2028 on one page, 2029 in another)
 timeline page could not be opened; no date is given here.
 
 ## 4. Line-intensity mapping experiments (CO, [CII], Lyα)
+<!-- key: line-intensity-mapping-experiments-co-cii -->
 
 | Experiment | Line and redshift | Survey | Status | Citation | Flag |
 |---|---|---|---|---|---|
@@ -111,6 +120,7 @@ SPHEREx depth: 5σ of 19.5–19.9 AB mag over 0.75–3.8 μm and 17.8–18.8 AB 
 after the two-year survey [src: arXiv:2511.02985].
 
 ## 5. Quasar, galaxy and CMB data used for the reionisation history
+<!-- key: quasar-galaxy-and-cmb-data-used-for-the -->
 
 | Data set | Content | Used for | Citation | Flag |
 |---|---|---|---|---|
@@ -129,6 +139,7 @@ after the two-year survey [src: arXiv:2511.02985].
 | SPT + Herschel-SPIRE | 100 deg², 95/150/220 GHz at 4.5, 3 and 16 μK-arcmin, plus 600 and 857 GHz | kSZ trispectrum | Raghunathan et al. 2024, arXiv:2403.02337 | [src] |
 
 ## 6. Planned
+<!-- key: planned -->
 
 | What | Expectation (all **forecast** or schedule) | Citation | Flag |
 |---|---|---|---|
@@ -141,6 +152,7 @@ after the two-year survey [src: arXiv:2511.02985].
 | LOFAR 2.0, SKA-Low EoR surveys | listed as future | arXiv:2511.21289, introduction | [sec] |
 
 ## Not verified
+<!-- key: not-verified -->
 
 - CHIME, MeerKAT, HERA, LOFAR, MWA and NenuFAR hardware descriptions (element counts, apertures,
   sites) beyond what is quoted above were not read at source in this session. The MWA Phase III

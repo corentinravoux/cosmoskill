@@ -7,6 +7,7 @@ Scope: current measurements of the primordial scalar spectrum (n_s, running, bin
 Flags: `[src]` read this session in the cited paper; `[sec]` read in a secondary source, which is named; `[der]` derived here. All searches were run on 2026-10-09.
 
 ## 1. Scalar spectral index n_s
+<!-- key: scalar-spectral-index-ns -->
 
 All values are 68% intervals in flat ΛCDM with a power-law spectrum, pivot k_* = 0.05 Mpc⁻¹, unless the model column says otherwise.
 
@@ -33,6 +34,7 @@ Reading the table.
 - Planck's own n_s quoted above is the Plik PR3 value. Values from the PR4 likelihoods are in `cosmo-cmb`.
 
 ## 2. Running of the spectral index
+<!-- key: running-of-the-spectral-index -->
 
 Definition: ln P_R(k) = ln A_s + [n_s − 1 + ½ (dn_s/dln k) ln(k/k_*)] ln(k/k_*), with k_* = 0.05 Mpc⁻¹ (arXiv:2503.14454).
 
@@ -51,6 +53,7 @@ Running of the running from the same DESI DR1 P1D combination: β_s = −0.0006 
 P-ACT alone excludes dn_s/dln k = −0.010 at more than 3σ (arXiv:2503.14454) [src]. Planck alone prefers a slightly negative running and ACT a slightly positive one; the combination sits at zero within 1.2σ [der: 0.0062/0.0052]. Slow-roll inflation predicts |dn_s/dln k| of order (1 − n_s)², about 10⁻³ [der: (0.03)² ≈ 9 × 10⁻⁴, textbook scaling], five times below the present error. The P1D measurement itself is described in `cosmo-lyman-alpha`.
 
 ## 3. Binned primordial power spectrum
+<!-- key: binned-primordial-power-spectrum -->
 
 ACT DR6 reconstructs e^(−2τ) P_R(k) in 30 bins (4 at k = 10⁻⁴ to 10^(−2.5) Mpc⁻¹, then 26 logarithmic bins over 0.011 ≲ k ≲ 0.43 Mpc⁻¹), which adds 28 parameters to ΛCDM (arXiv:2503.14454) [src].
 
@@ -66,6 +69,7 @@ ACT DR6 reconstructs e^(−2τ) P_R(k) in 30 bins (4 at k = 10⁻⁴ to 10^(−2
 Planck alone has no two-sided posterior above k = 0.15 Mpc⁻¹; ACT has one up to 0.32 Mpc⁻¹ and a one-sided 95% limit to 0.43 Mpc⁻¹, a threefold extension of the constrained range. Neighbouring bins are correlated at 30–40%, and bins 6–9 near k = 0.01 Mpc⁻¹ are anti-correlated at up to 90% (arXiv:2503.14454) [src]. No bin departs from the power law. The Planck 2018 non-parametric reconstructions reached the same conclusion (arXiv:1807.06211).
 
 ## 4. Tensor-to-scalar ratio r
+<!-- key: tensor-to-scalar-ratio-r -->
 
 All limits are 95% upper limits. BICEP/Keck quotes r at k = 0.05 Mpc⁻¹; Planck 2018 quotes r at k = 0.002 Mpc⁻¹. With n_t = −r/8 the two differ negligibly at the present limit, but the subscript should be copied with the number.
 
@@ -96,10 +100,12 @@ Status at the snapshot.
 BK18 details [src, arXiv:2110.00483]: map depths 2.8, 2.8 and 8.8 μK·arcmin at 95, 150 and 220 GHz; effective area about 600 deg² at 95 GHz and about 400 deg² at 150 and 220 GHz; seven foreground parameters; no external prior on the dust spectral index; the 220 GHz maps reach a higher signal-to-noise on polarised dust than Planck 353 GHz.
 
 ### Slow-roll parameters and the r–n_s plane
+<!-- key: slow-roll-parameters-and-the-r-ns-plane -->
 
 With r = 16 ε_V and n_s − 1 = 2 η_V − 6 ε_V, P-ACT-LB + BK18 gives η_V = (−95 +23/−30) × 10⁻⁴ (68%) (arXiv:2503.14454) [src]. Planck 2018 concluded that concave potentials, V'' < 0, are favoured (arXiv:1807.06211). With the ACT-era n_s the Starobinsky R² model sits on the 2σ boundary of P-ACT-LB-BK18 for 50–60 e-folds, and power-law potentials closer to linear are accommodated (arXiv:2503.14454).
 
 ## 5. Primordial non-Gaussianity from the CMB bispectrum
+<!-- key: primordial-non-gaussianity-from-the-cmb -->
 
 All values are 68% intervals. The amplitudes f_NL^local, f_NL^equil and f_NL^ortho multiply the three standard bispectrum templates defined in `physics-and-methods.md`, section 5. Planck values are "statistical" errors from simulations, after subtraction of the lensing–ISW bispectrum.
 
@@ -124,8 +130,10 @@ Reading the table.
 - Beyond the three templates: a scan of "cosmological collider" templates, orthogonalised against the single-field shapes, in Planck data with the Modal pipeline peaks at 2.4σ for spin 0 after the look-elsewhere correction, and near 2σ for spins 1 and 2 (Suman et al. 2025, arXiv:2511.17500) [src]. A neural separable-basis method applied to Planck PR4 finds no detection for two strongly mixed collider models (Philcox, Zhong and Sirletti 2025, arXiv:2511.19179) [src].
 
 ## 6. Primordial non-Gaussianity from large-scale structure
+<!-- key: primordial-non-gaussianity-from-large-scale -->
 
 ### 6.1 Local shape from scale-dependent bias (power spectrum)
+<!-- key: local-shape-from-scale-dependent-bias-power -->
 
 Every entry constrains the product f_NL · b_φ. The column "p" gives the assumed response, b_φ = 2 δ_c (b_1 − p): p = 1 is the universal mass function, p = 1.6 the recent-merger value used for quasars (Slosar et al. 2008, arXiv:0805.3580). Values are 68% unless stated.
 
@@ -148,6 +156,7 @@ Every entry constrains the product f_NL · b_φ. The column "p" gives the assume
 The DESI DR1 result is 2.3 times more precise than the eBOSS one (arXiv:2411.17623) [src]. Adding the LRG × QSO cross-spectrum improves the DR1 error by about 9%; adding ELGs brings no clear gain (arXiv:2604.05213) [src]. No DESI DR2 f_NL measurement was found in the search of 2026-10-09.
 
 ### 6.2 Cross-correlations and other large-scale probes
+<!-- key: cross-correlations-and-other-large-scale-probes -->
 
 | f_NL^local | Data | Assumption | Citation | Flag |
 |---|---|---|---|---|
@@ -165,6 +174,7 @@ The DESI DR1 result is 2.3 times more precise than the eBOSS one (arXiv:2411.176
 The DESI quasar × Planck PR4 lensing result improves on the earlier Legacy Imaging Survey DR9 analysis by about 35% (arXiv:2512.17865) [src]. Details of the cross-correlation estimators are in `cosmo-cmb-lss-cross-correlations`.
 
 ### 6.3 Galaxy bispectrum
+<!-- key: galaxy-bispectrum -->
 
 | f_NL^local | f_NL^equil | f_NL^ortho | Data and model | Citation | Flag |
 |---|---|---|---|---|---|
@@ -178,10 +188,12 @@ The DESI quasar × Planck PR4 lensing result improves on the earlier Legacy Imag
 The BOSS sound-speed limit from the first row is c_s ≥ 0.013 at 95% (arXiv:2201.07238) [src], comparable to the WMAP 5-year one. The DESI DR1 P + B analysis is an external reanalysis of public data, not a DESI Collaboration result; its combination with the CMB is quoted by its authors as 18% tighter than the CMB alone (arXiv:2512.04266) [src]. Its f_NL^local = −0.1 ± 7.4 carries a b_φ assumption that the abstract does not state.
 
 ### 6.4 History of the local f_NL error from large-scale structure
+<!-- key: history-of-the-local-fnl-error-from-large-scale -->
 
 σ(f_NL^local) from scale-dependent bias went from about 25 (SDSS 2008; [der] half of the 95% interval −29 to +70 divided by 2) to 21 (eBOSS DR16), then to 9 (DESI DR1), against 5.1 for Planck. The comparison with Planck holds only for a fixed b_φ: for the same BOSS data the error ranges from 16 to 226 as the b_φ(b_1) relation is changed (arXiv:2205.05673), and from 19 to 165 between the 33% highest- and lowest-concentration halo populations (Lazeyras et al. 2023, arXiv:2209.07251) [src].
 
 ## 7. Isocurvature perturbations
+<!-- key: isocurvature-perturbations -->
 
 No isocurvature mode is detected. The ACT DR6 analysis follows the Planck parametrisation: power-law spectra P_RR, P_II, P_RI defined by their amplitudes at k_1 = 0.002 Mpc⁻¹ and k_2 = 0.1 Mpc⁻¹, written P^(1) and P^(2), sampled with uniform priors on the amplitudes at the two scales rather than on an amplitude and a tilt (arXiv:2503.14454, section 4.3). All limits below are one-tail 95% and all are read in that section [src]. The "Planck only" column is Planck as re-run by ACT, not the Planck Collaboration's own table.
 
@@ -203,6 +215,7 @@ Reading the table.
 - Adding SPT to Planck and ACT for axion-type CDI with red to blue tilts moderately improves the limit on the isocurvature spectral index and does not tighten the amplitude limits at fixed index (Petretti et al. 2026, arXiv:2606.11312) [src].
 
 ### Planck Collaboration limits (2018)
+<!-- key: planck-collaboration-limits-2018 -->
 
 Planck quotes the primordial isocurvature fraction β_iso(k) = P_II(k) / [P_RR(k) + P_II(k)] at k_low = 0.002, k_mid = 0.05 and k_high = 0.1 Mpc⁻¹, and the non-adiabatic fraction of the observed temperature variance, α_non-adi = 1 − (ΔT)²_RR / (ΔT)²_tot summed over ℓ = 2–2500. All limits are 95% from Planck TT,TE,EE + lowE + lensing and are read in arXiv:1807.06211, section 9 and conclusions [src].
 
@@ -219,6 +232,7 @@ Planck quotes the primordial isocurvature fraction β_iso(k) = P_II(k) / [P_RR(k
 The fully correlated limits are about 40 times stronger than the uncorrelated one because the cross-term P_RI is linear in the isocurvature amplitude (arXiv:1807.06211). Planck 2018 states that the polarisation data "provide a stringent test of the adiabaticity of the initial conditions" (abstract).
 
 ## 8. Spatial curvature
+<!-- key: spatial-curvature -->
 
 Convention: Ω_K = 1 − Ω_tot, so Ω_K < 0 is a closed universe (positive spatial curvature K) and Ω_K > 0 an open one (negative K). All values are 68% in ΛCDM + Ω_K unless the model column says otherwise.
 
@@ -249,6 +263,7 @@ Reading the table.
 - Late-time-only determinations (BAO, supernovae, time delays, chronometers, without the CMB power spectra) lean open in ΛCDM: "2σ evidence for an open universe" from DESI BAO + SNe Ia, rising above 3σ with the acoustic scale θ* and to 5σ with DES-SN5YR (Wang et al. 2025, arXiv:2512.19565) [src]; Ω_K = 0.049 ± 0.037 from DESI DR2 BAO, supernovae, lensing time delays and cosmic chronometers, a preference that vanishes in extensions of ΛCDM and that its author calls a model artefact (Wu 2026, arXiv:2604.23492) [src]. These are not independent of the w0wa discussion in `cosmo-dark-energy-modified-gravity`.
 
 ## 9. Primordial features
+<!-- key: primordial-features -->
 
 Template searches write P_R(k) = P_0(k) [1 + A_lin cos(ω_lin k + φ)] or [1 + A_log cos(ω_log ln(k/k_*) + φ)], with P_0 the power law. No search has found a feature with global significance above 3σ. All limits are 95%.
 
@@ -273,6 +288,7 @@ Reading the table.
 The model-independent side of this subject, the binned P(k), is in section 3.
 
 ## 10. Cosmic birefringence
+<!-- key: cosmic-birefringence -->
 
 Isotropic birefringence is a uniform rotation β of the plane of linear polarisation, which converts E into B and produces C_ℓ^EB = ½ sin(4β) (C_ℓ^EE − C_ℓ^BB). It is not a prediction of inflation; it is in this skill because it is measured with the same polarisation data as r and probes parity-violating light fields. All values are 68% and in degrees.
 
@@ -296,6 +312,7 @@ Reading the table.
 - **Forecast**: LiteBIRD would detect β = 0.3° at 5σ to 13σ depending on the pipeline, the best case corresponding to a total error of about 0.02° (de la Hoz et al. 2025, arXiv:2503.22322; computed for the pre-reformation mission) [src]. **Forecast**: SO, LiteBIRD and a CMB-S4-like experiment could reduce the present uncertainty by a factor of about 7 (arXiv:2507.16714) [src]. **Forecast**: with SO SATs calibrated to 0.08° by the wire grid, cross-experiment correlations would calibrate the SO LAT to 0.10° and Planck to 0.17° at about 145 GHz without assuming β = 0 (Rigouzzo et al. 2026, arXiv:2606.11300) [src].
 
 ## 11. History of the key numbers
+<!-- key: history-of-the-key-numbers -->
 
 A value in the left column must not be quoted as current.
 
@@ -313,6 +330,7 @@ A value in the left column must not be quoted as current.
 | c_s (95%) | > 0.011 (WMAP 5, arXiv:0905.3746) | ≥ 0.021 (Planck 2018, arXiv:1905.05697) | Planck equilateral and orthogonal limits |
 
 ## 12. Not verified
+<!-- key: not-verified -->
 
 - The Planck 2018 values of the running (−0.0041 ± 0.0067 is quoted through ACT) and of the running of the running were not read in the Planck paper.
 - Planck PR4 (HiLLiPoP, CamSpec) values of n_s were not read; they are in `cosmo-cmb`.

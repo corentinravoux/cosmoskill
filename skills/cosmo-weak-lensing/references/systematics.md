@@ -15,6 +15,7 @@ of the mean, n_i(z) → n_i(z − Δz_i) (the STEP convention: Heymans et al. 20
 arXiv:astro-ph/0506112).
 
 ## 1. Shear measurement bias (noise, model, selection)
+<!-- key: shear-measurement-bias-noise-model-selection -->
 
 **Mechanism.** Ellipticity is a non-linear function of noisy pixels, so its
 expectation is biased (noise bias); an assumed galaxy model that does not
@@ -62,6 +63,7 @@ survey's own shape-catalogue and image-simulation papers for m and its
 uncertainty.
 
 ## 2. Blending
+<!-- key: blending -->
 
 **Mechanism.** Overlapping galaxies are detected as one object or contaminate
 each other's light. When the blended galaxies are at different redshifts the
@@ -85,6 +87,7 @@ al. 2016, arXiv:1406.1506), impact on deep surveys (Nourbakhsh et al. 2022,
 arXiv:2112.07659).
 
 ## 3. PSF modelling and leakage
+<!-- key: psf-modelling-and-leakage -->
 
 **Mechanism.** The PSF both circularises (multiplicative) and imprints its
 ellipticity (additive) on galaxy shapes; errors in PSF size and ellipticity
@@ -113,6 +116,7 @@ effect seen in CFHTLenS; after cuts all three E/B statistics pass, minimum PTE
 = 0.18 (Daley et al. 2026, arXiv:2604.03227) [src].
 
 ## 4. Redshift distributions
+<!-- key: redshift-distributions -->
 
 **Mechanism.** The lensing kernel depends on the source n(z); an error in the
 mean redshift of a bin maps almost directly into the shear amplitude and hence
@@ -173,6 +177,7 @@ propagated (mean shifts, or an ensemble of n(z) realisations as in DES Y3/Y6).
 Review: Newman & Gruen 2022, arXiv:2206.13633.
 
 ## 5. Intrinsic alignments
+<!-- key: intrinsic-alignments -->
 
 **Mechanism.** Galaxy shapes align with the tidal field, adding
 intrinsic–intrinsic (II) and gravitational–intrinsic (GI) terms to the shear
@@ -223,6 +228,7 @@ measurements (KiDS-Legacy, arXiv:2503.19441); or select a low-alignment blue
 sample (arXiv:2512.04209).
 
 ## 6. Baryonic feedback
+<!-- key: baryonic-feedback -->
 
 **Mechanism.** AGN and stellar feedback move gas out of haloes and suppress
 the matter power spectrum. The OWLS AGN simulation predicted a decrease
@@ -292,6 +298,7 @@ these papers assumed; none of the three has been redone on KiDS-Legacy or DES
 Y6 as far as the searches of this session show.
 
 ## 7. Other effects a complete analysis treats
+<!-- key: other-effects-a-complete-analysis-treats -->
 
 | Effect | Standard treatment | Reference |
 |---|---|---|
@@ -304,6 +311,7 @@ Y6 as far as the searches of this session show.
 | Spatially varying depth | lens-sample weights and masks; variable-depth n(z) | Rodríguez-Monroy et al. 2025, arXiv:2509.07943 |
 
 ## 8. What a referee checks in a lensing results section
+<!-- key: what-a-referee-checks-in-a-lensing-results -->
 
 1. Which CMB data set the "tension" is measured against, and with which metric
    (S8 difference, full-parameter shift, PPD). References: arXiv:2602.12238
@@ -332,6 +340,7 @@ Y6 as far as the searches of this session show.
     statistic.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - Per-bin m and its uncertainty for DES Y3, HSC Y3 and KiDS-Legacy (in the
   bodies of the shape-catalogue papers; only the DES Y6 global value was

@@ -7,14 +7,17 @@ Snapshot: 2026-10-11
 Provenance of API facts: "installed" means the docstring or signature was read in the released package at the stated version (camb 2.0.4, pyccl 3.3.6, astropy 8.0.1, healpy 1.19.0, emcee 3.1.6, cosmoprimo 1.0.0). "checkout" means the source repository was read at the stated version or commit (CLASS v3.2.3, pypower 1.0.0, EFTCAMB commit of 2026-04-02; picca and flip at a development state, not a release, so their facts should be re-read in the release in use). "context7" means library documentation fetched through the context7 documentation service on 2026-10-11.
 
 ## 1. Boltzmann solvers and their modified-gravity forks
+<!-- key: boltzmann-solvers-and-their-modified-gravity -->
 
 ### 1.1 What the family computes
+<!-- key: what-the-family-computes -->
 
 An Einstein–Boltzmann solver integrates the linearised Einstein and Boltzmann equations for photons, baryons, cold dark matter, neutrinos and dark energy, and returns transfer functions, the CMB angular power spectra and the linear matter power spectrum.
 Every downstream code in this skill (facades, perturbation theory, emulators, likelihood frameworks) consumes its output.
 The two reference implementations are CAMB (Lewis, Challinor & Lasenby 2000, arXiv:astro-ph/9911177) and CLASS (Lesgourgues 2011, arXiv:1104.2932).
 
 ### 1.2 CAMB against CLASS
+<!-- key: camb-against-class -->
 
 | Aspect | CAMB | CLASS |
 |---|---|---|
@@ -32,6 +35,7 @@ The abstract states that essentially all of the new algorithms and code were dev
 The parameterised post-Friedmann prescription, which allows the equation of state to cross w = −1, is from Fang, Hu & Lewis 2008, arXiv:0808.3125; whether a w0wa run uses the fluid or the PPF model is a setting to state in a paper.
 
 ### 1.3 Non-linear corrections shipped with the solvers
+<!-- key: non-linear-corrections-shipped-with-the-solvers -->
 
 CAMB 2.0.4 exposes these `halofit_version` names: `original`, `bird`, `peacock`, `takahashi`, `mead` (alias `mead2016`), `halomodel`, `casarini`, `mead2015`, `mead2020`, `mead2020_feedback` [src: camb 2.0.4 installed].
 `takahashi` is the revised halofit of Takahashi et al. 2012, arXiv:1208.2701; `mead2020` and `mead2020_feedback` are HMcode-2020 without and with the baryonic-feedback model (arXiv:2009.01858).
@@ -40,6 +44,7 @@ cosmoprimo leaves `non_linear` empty by default and its docstring recommends "me
 Two analyses that both "use halofit" may therefore use different fitting functions; the accuracy of each is in `results.md`.
 
 ### 1.4 Modified-gravity forks
+<!-- key: modified-gravity-forks -->
 
 | Code | Base | Approach | What distinguishes it | Reference |
 |---|---|---|---|---|
@@ -55,6 +60,7 @@ Facades expose a subset: pyccl supports only the `MuSigmaMG` parameterisation [s
 The physics of these parameterisations and the survey results belong to the sibling `cosmo-dark-energy-modified-gravity`.
 
 ### 1.5 Differentiable and accelerated solvers
+<!-- key: differentiable-and-accelerated-solvers -->
 
 DISCO-EB is a JAX solver whose outputs are differentiable with respect to all inputs, with massive neutrinos and a parameterised dark-energy fluid (Hahn, List & Porqueres 2023, arXiv:2311.03291).
 SymBoltz.jl is "a symbolic-numeric, approximation-free and differentiable linear Einstein-Boltzmann solver" [src: repository description, `hersle/SymBoltz.jl`]; its Chebyshev interpolation in k and ℓ is described in Sletmoen 2026, arXiv:2608.24682.
@@ -62,6 +68,7 @@ class_sz is a C and Python code for cross-survey observables (halo model, LSS an
 Neural emulators that replace the solver altogether are in section 9.
 
 ## 2. Theory facades
+<!-- key: theory-facades -->
 
 A facade gives one interface over one or several Boltzmann engines and adds the derived quantities an analysis needs (distances in survey units, σ8, Limber integrals, halo model).
 
@@ -83,8 +90,10 @@ Points of difference:
 Conventions each survey adopts (fiducial cosmologies, σ8 against σ12, h⁻¹ units) are in the sibling `cosmo-theory-foundations`.
 
 ## 3. Samplers and inference frameworks
+<!-- key: samplers-and-inference-frameworks -->
 
 ### 3.1 Frameworks
+<!-- key: frameworks -->
 
 A framework couples a theory code, a set of likelihoods and a sampler, and manages the dependencies between them.
 
@@ -97,6 +106,7 @@ A framework couples a theory code, a set of likelihoods and a sampler, and manag
 | desilike | wrappers of velocileptors, pybird and FOLPS-nu | likelihoods for BAO and RSD analyses, Taylor-expansion and MLP emulators, ShapeFit; samplers and profilers provided; bindings to Cobaya, CosmoSIS and MontePython [src: repository README] | none |
 
 ### 3.2 Sampler families
+<!-- key: sampler-families -->
 
 | Family | Members | Needs gradients | Gives evidence | Note |
 |---|---|---|---|---|
@@ -116,6 +126,7 @@ Chains from any of these are post-processed with GetDist (arXiv:1910.13970), whi
 Convergence criteria, prior-volume effects and evidence interpretation belong to the sibling `cosmo-statistics-inference`.
 
 ## 4. Perturbation-theory codes
+<!-- key: perturbation-theory-codes -->
 
 All codes below compute the one-loop power spectrum of biased tracers in redshift space with counterterms and stochastic terms; they differ in the expansion, the infrared resummation and the parameter basis.
 The comparison below follows section 3.6 of Maus et al. 2024, arXiv:2404.07272 [src].
@@ -146,6 +157,7 @@ Recent additions, all aimed at gradient-based or faster inference:
 The equations (EFTofLSS counterterms, bias bases, Kaiser limit) are in `cosmo-theory-foundations`; the survey results obtained with these codes are in `cosmo-galaxy-clustering`.
 
 ## 5. Two-point and higher-order estimators
+<!-- key: two-point-and-higher-order-estimators -->
 
 | Family | Members | Method | When it is the right tool |
 |---|---|---|---|
@@ -167,6 +179,7 @@ Details read this session:
 Estimator definitions (Landy–Szalay, FKP, Yamamoto), windows and fibre-collision weights belong to `cosmo-galaxy-clustering`.
 
 ## 6. Lyman-alpha tools
+<!-- key: lyman-alpha-tools -->
 
 | Code | Role in an analysis | Method |
 |---|---|---|
@@ -182,6 +195,7 @@ The Lyα BAO pipeline as a whole is validated on 150 synthetic realisations of D
 The physics (continuum distortion, metals, DLAs) and the results belong to the sibling `cosmo-lyman-alpha`.
 
 ## 7. Lensing and sphere tools
+<!-- key: lensing-and-sphere-tools -->
 
 HEALPix (Górski et al. 2004, arXiv:astro-ph/0409513) is the equal-area iso-latitude pixelisation used for almost all full-sky CMB and LSS maps; `healpy` is its Python package.
 Its defaults (RING ordering, three iterations of the harmonic transform, ℓ_max = 3 N_side − 1) are in section 6 of `systematics.md`.
@@ -193,8 +207,10 @@ LensTools (Petri 2016, arXiv:1606.01903) is a simulation and feature-measurement
 Survey pipelines, shear calibration and the choice between ξ±, COSEBIs and pseudo-C_ℓ belong to the sibling `cosmo-weak-lensing`.
 
 ## 8. Differentiable and field-level codes
+<!-- key: differentiable-and-field-level-codes -->
 
 ### 8.1 flip
+<!-- key: flip -->
 
 flip (Ravoux et al. 2025, arXiv:2501.16852) fits the growth rate from velocity and density fields with a Gaussian likelihood whose covariance is computed from model power spectra.
 Its documentation describes three steps: build a data vector, compute a covariance, fit or forecast [src: flip docs `basicusage.md`].
@@ -210,6 +226,7 @@ The paper states that the framework includes the models previously described in 
 flip is "field-level" in the sense that the likelihood is written on the field values at the tracer positions; it does not sample initial conditions.
 
 ### 8.2 Forward-model field-level inference
+<!-- key: forward-model-field-level-inference -->
 
 BORG samples the three-dimensional initial density field with a physical forward model: second-order Lagrangian perturbation theory in Jasche & Wandelt 2012, arXiv:1203.3639, a particle-mesh model in Jasche & Lavaux 2018, arXiv:1806.11117, with Hamiltonian Monte Carlo inside a block-sampling scheme.
 Differentiable particle-mesh codes supply such forward models in JAX: pmwd uses the adjoint method with reverse time integration to keep memory low (Li et al. 2022, arXiv:2211.09958); DISCO-DJ supports forward- and reverse-mode differentiation with memory independent of the number of time steps and uses theory-informed integrators (List et al. 2025, arXiv:2510.05206); JaxPM is a JAX particle-mesh solver cited here by its repository; FlowPM is the earlier TensorFlow implementation (arXiv:2010.11847).
@@ -217,6 +234,7 @@ candl is a differentiable CMB power-spectrum likelihood (arXiv:2401.13433), whic
 The science done with these (BORG reconstructions, constrained simulations, field-level versus summary information) belongs to the siblings `cosmo-beyond-two-point` and `cosmo-simulations-mocks`.
 
 ## 9. Emulators
+<!-- key: emulators -->
 
 An emulator in this section replaces the Boltzmann or perturbation-theory call inside the likelihood; it leaves nuisance parameters and redshift distributions to the analytic part of the pipeline (arXiv:2106.03846).
 
@@ -233,6 +251,7 @@ An emulator inherits the precision settings, the neutrino model and the paramete
 Emulators of N-body outputs (non-linear P(k), halo statistics, baryonic suppression) are in the sibling `cosmo-simulations-mocks`.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - Whether cosmoprimo offers a differentiable (JAX) mode was not read.
 - The units returned by jax-cosmo and cloelib were not read.

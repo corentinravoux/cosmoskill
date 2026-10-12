@@ -5,6 +5,7 @@ Snapshot: 2026-10-07
 
 
 ## 1. Spectroscopic samples used for higher-order clustering
+<!-- key: spectroscopic-samples-used-for-higher-order -->
 
 Survey descriptions (instrument, footprint, release dates) are in
 `cosmo-galaxy-clustering`, file `references/surveys-and-data.md`. The rows
@@ -32,6 +33,7 @@ the number) and GLAM-Uchuu (N-body, 2000³ particles [src]; Philcox & Ereza
 (`systematics.md` §1.3).
 
 ## 2. Void catalogues and the data behind them
+<!-- key: void-catalogues-and-the-data-behind-them -->
 
 | Catalogue | Tracer and volume | Voids | Finder | Reference |
 |---|---|---|---|---|
@@ -60,6 +62,7 @@ Not found in searches this session: a DESI DR1 or DR2 void–galaxy AP/RSD
 cosmology paper. Treat its existence as unverified.
 
 ## 3. Simulation suites and mock challenges behind emulator-based statistics
+<!-- key: simulation-suites-and-mock-challenges-behind -->
 
 | Suite or challenge | Content | Used for | Reference |
 |---|---|---|---|
@@ -76,6 +79,7 @@ sample: BOSS DR12 CMASS in a narrow range (0.45 or 0.46 < z < 0.57 to 0.60,
 depending on the paper). No application to DESI data was found.
 
 ## 4. Lensing data sets used for higher-order statistics
+<!-- key: lensing-data-sets-used-for-higher-order -->
 
 Survey descriptions are in `cosmo-weak-lensing`. Used here:
 
@@ -94,6 +98,7 @@ DES Y6 (arXiv:2606.11309). No higher-order lensing cosmology from DES Y6,
 Euclid or Rubin was found this session.
 
 ## 5. Data used in field-level and simulation-based inference
+<!-- key: data-used-in-field-level-and-simulation-based -->
 
 | Data | Use | Reference |
 |---|---|---|
@@ -111,8 +116,10 @@ reconstruction maps are described as data products in their papers; locations
 were not checked this session.
 
 ## 6. Validation by mock challenge
+<!-- key: validation-by-mock-challenge -->
 
 ### 6.1 The Beyond-2pt challenge
+<!-- key: the-beyond-2pt-challenge -->
 
 Design, from §2 of arXiv:2405.02252. HOD galaxy mocks on N-body simulations in
 flat ΛCDM, without observational systematics, at three levels: real-space
@@ -159,6 +166,7 @@ What the challenge does and does not establish, in the paper's own terms:
   on their own model family.
 
 ### 6.2 Other validation standards
+<!-- key: other-validation-standards -->
 
 - **SimBIG mock challenge.** 1 500 test simulations built with a different
   N-body code, halo finder and occupation model from the training set; for the
@@ -173,6 +181,7 @@ What the challenge does and does not establish, in the paper's own terms:
   (arXiv:2501.01698).
 
 ## 7. Status today and what comes next
+<!-- key: status-today-and-what-comes-next -->
 
 | Item | Status at the snapshot | Source |
 |---|---|---|

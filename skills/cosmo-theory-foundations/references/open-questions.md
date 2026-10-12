@@ -3,6 +3,7 @@
 Snapshot: 2026-10-07
 
 ## 1. h⁻¹Mpc units and σ8 versus σ12
+<!-- key: h-1mpc-units-and-sigma8-versus-sigma12 -->
 
 **The proposal.** Sánchez 2020, arXiv:2002.07829, proposes "to abandon the traditional h⁻¹Mpc units in the analysis of new surveys" and to replace σ8 by σ12, the linear rms fluctuation in spheres of 12 Mpc. His own demonstration (ΛCDM, the same wide priors for all three data sets) [src]:
 
@@ -20,6 +21,7 @@ In (ω_m, σ12) "the constraints inferred from DES and Planck are in excellent a
 **2026 evidence for fσ12.** The Euclid Collaboration's study of simulated catalogues in non-standard cosmologies (Euclid Collaboration 2026, arXiv:2603.13148) reports that "across a wide range of models, the linear growth rate multiplied by the matter density within spheres of radius 12 Mpc, fs12, exhibits a notable robustness to the choice of cosmological template", extended to "scenarios with markedly distinct gravitational or dark energy dynamics"; it also warns that most of the scatter in inferred parameters appears already with the correct template, and that deviations are "often … much larger than error bars" [src, abstract]. So Euclid's template-fit work is moving to σ12 while DESI defines σ_s8 through r_d^fid: two different repairs of the same problem, and a compilation will have to carry both.
 
 ## 2. EFTofLSS priors, bias bases and projection effects
+<!-- key: eftoflss-priors-bias-bases-and-projection -->
 
 **The debate.** One-loop EFT fits carry seven to ten nuisance parameters per tracer (in the DESI DR1 baseline: b1, b2, b_s, with b3 fixed, three counterterms and three stochastic terms; Adame et al. 2024, arXiv:2411.12021). Several are weakly constrained, so the marginal posteriors of cosmological parameters depend on the nuisance priors and on the parameter basis in which those priors are flat or Gaussian.
 
@@ -39,6 +41,7 @@ In (ω_m, σ12) "the constraints inferred from DES and Planck are in excellent a
 **Counterterms as physics or as nuisance.** Ivanov, Simonović & Zaldarriaga relate the quadrupole counterterm to a velocity dispersion but stress that "the true amplitude (and even the sign) of the counterterms cannot be predicted" (arXiv:1909.05277). Chen & Aviles 2026 (arXiv:2609.35757) ask whether fingers of God can be resummed into a damping function and answer "potentially, but at the cost of significantly expanding the operator basis and promoting free coefficients to free functions" [src, abstract]. Informative priors on these terms, from simulations or HOD models, are therefore a modelling assumption about small-scale velocities, not a derivation.
 
 ## 3. Compressed versus full-modelling parameters
+<!-- key: compressed-versus-full-modelling-parameters -->
 
 Three routes from a measured P_ℓ(k) to cosmology coexist, and they do not return the same parameter (DESI DR1 full shape, Adame et al. 2024, arXiv:2411.12021, Sect. 4.2):
 
@@ -53,6 +56,7 @@ ShapeFit's own claim is that one extra effective parameter captures "the same am
 What remains open is interpretation, not agreement. A compressed fσ8 is model-independent only to first order: "at higher-order corrections, this is no longer exact" (arXiv:2411.12021). An fσ_s8 is not an fσ8 until rescaled by q_iso; a compilation plot that mixes BOSS/eBOSS fσ8, DESI fσ_s8 and peculiar-velocity fσ8 (the last obtained at z < 0.1 with a different treatment of the amplitude, see `cosmo-peculiar-velocities`) mixes three definitions. Brieden et al. 2022 (arXiv:2204.11868) is the model-agnostic reanalysis of BOSS + eBOSS with this compression: h = 0.6816 ± 0.0067, Ω_m = 0.3001 ± 0.0057, σ8 = 0.858 ± 0.036 in flat ΛCDM with a BBN prior and Lyα BAO [src, abstract]. That σ8 is higher than the 0.721 ± 0.043 obtained from BOSS with an EFT full-modelling fit by Ivanov, Simonović & Zaldarriaga (2020, arXiv:1909.05277, abstract) [src]: same survey family, different route and priors (section 2).
 
 ## 4. Non-linear prescriptions and baryons
+<!-- key: non-linear-prescriptions-and-baryons -->
 
 The two Stage-III lensing collaborations did not use the same non-linear matter spectrum, and the choice moves S8.
 
@@ -65,6 +69,7 @@ The quoted accuracies are of different kinds and should not be compared as if th
 The halo model itself remains a calibrated description, not a derivation. Its ingredients carry their own errors: the mass function is known to ≲5% at z = 0 and is not universal (its amplitude falls 20–50% from z = 0 to 2.5, Tinker et al. 2008, arXiv:0803.2706); the bias fit has ~6% scatter and depends on the halo definition at the 10% level (Tinker et al. 2010, arXiv:1001.3162); the transition between the one- and two-halo terms is the long-standing weak point, for which a model with haloes defined by orbiting particles reports ≈2% accuracy on the halo–mass correlation over 0.1–50 h⁻¹Mpc (Salazar et al. 2024, arXiv:2406.04054) [src, abstracts].
 
 ## 5. Neutrino treatment
+<!-- key: neutrino-treatment -->
 
 Analyses that are combined routinely do not treat neutrinos alike (each read at source, `surveys-and-data.md`):
 
@@ -83,6 +88,7 @@ Analyses that are combined routinely do not treat neutrinos alike (each read at 
 - The bounds on Σm_ν, the effective (negative) mass and the role of τ are in `cosmo-neutrinos-dark-matter`.
 
 ## 6. Relativistic effects: detectability
+<!-- key: relativistic-effects-detectability -->
 
 - The complete linear expression for the observed number counts exists in three independent derivations that agree: Yoo, Fitzpatrick & Zaldarriaga 2009 (arXiv:0907.0707), Bonvin & Durrer 2011 (arXiv:1105.5280) and Challinor & Lewis 2011 (arXiv:1105.5292). What is open is whether any term beyond density, RSD and magnification is detectable, and with which estimator.
 - Odd multipoles are already detected in BOSS DR12, but as a wide-angle and window effect of the end-point line of sight, not as a relativistic signal (Beutler, Castorina & Zhang 2019, arXiv:1810.05051).
@@ -91,6 +97,7 @@ Analyses that are combined routinely do not treat neutrinos alike (each read at 
 - A practical threshold from a full-sky calculation of density, velocity and ellipticity correlations: wide-angle corrections "become non-negligible for opening angles Θ ≳ 30°" (Mikura et al. 2026, arXiv:2608.19039) [src, abstract]. The peculiar-velocity case, where the samples are nearby and the angles large, is in `cosmo-peculiar-velocities`.
 
 ## 7. Which ruler: the sound horizon or the equality scale
+<!-- key: which-ruler-the-sound-horizon-or-the-equality -->
 
 BAO anchor distances to r_d, which is fixed by pre-recombination physics; the broadband turnover of P(k) is fixed by matter–radiation equality. Brieden, Gil-Marín & Verde 2023 (arXiv:2212.04522) measure H0 both ways from BOSS + eBOSS with a BBN prior, in ΛCDM [src, abstract]:
 
@@ -102,6 +109,7 @@ BAO anchor distances to r_d, which is fixed by pre-recombination physics; the br
 They call these "the tightest sound-horizon free H0 constraints from LSS data to date" and conclude that an extension of ΛCDM meant to solve the Hubble tension "needs to modify consistently not only the sound horizon scale physics, but also the matter-radiation equality scale". For this skill the point is definitional: the ShapeFit slope m and an EFT full-shape fit carry equality-scale information, a BAO fit does not, and a quoted "H0 from LSS" must say which ruler it used. Status of the Hubble tension: `cosmo-distance-ladder-h0`, `cosmo-tensions-anomalies`.
 
 ## 8. What the next data will decide
+<!-- key: what-the-next-data-will-decide -->
 
 - **Stage-IV precision removes the slack.** Approximations that were harmless at Stage III are not: Limber, neglected RSD in angular clustering and a poorer non-linear spectrum each bias Roman and Rubin 3×2pt by 1σ or more (arXiv:2606.23781, **forecast**); priors in Mpc/h shift full-shape posteriors by several σ on Stage-IV synthetic data (arXiv:2610.08751, **forecast** setting); relativistic and wide-angle terms shift f_NL by about 1σ for SPHEREx (arXiv:2608.18334, **forecast**).
 - **Amplitude parameter.** Euclid's preparation papers work with fσ12 (arXiv:2603.13148) and a σ12-based emulator exists (arXiv:2511.13826); DESI uses σ_s8. Whether the first Stage-IV cosmology releases quote σ8, σ12 or both will decide if compilations need a conversion layer. The release calendar is in `cosmo-surveys-facilities` and `cosmo-galaxy-clustering`.
@@ -109,6 +117,7 @@ They call these "the tightest sound-horizon free H0 constraints from LSS data to
 - **Halo-model and non-linear theory.** HMcode-2020's 2.5% and the emulators' ~1% (`cosmo-simulations-mocks`) are above what Stage-IV shear needs on k ~ 1 h/Mpc; baryonic feedback is the limiting uncertainty (`cosmo-weak-lensing`).
 
 ## 9. Misconceptions and stale claims
+<!-- key: misconceptions-and-stale-claims -->
 
 Each line gives the claim, then what the source read this session says.
 
@@ -141,6 +150,7 @@ Each line gives the claim, then what the source read this session says.
 Stale values to recognise: the S12 numbers of Sánchez 2020 (2018–2019 data); r_d = 147.49 ± 0.59 Mpc (Planck 2013, arXiv:1411.1074); the low σ8 of the first BOSS EFT fits (arXiv:1909.05277), superseded as described in `cosmo-galaxy-clustering`; β values with exponent 0.6 (arXiv:astro-ph/9708102).
 
 ## Not verified
+<!-- key: not-verified -->
 
 - Whether any collaboration has adopted σ12 for a data release: none of the analyses read does; a systematic search was not made.
 - The DES Y3 neutrino prior and the size of the S8 shift between fixed and marginalised Σm_ν: only the figure caption was read, not the numbers.

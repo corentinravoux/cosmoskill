@@ -7,8 +7,10 @@ Scope: the experiments and data releases behind primordial-physics constraints �
 General CMB instrument descriptions (Planck, ACT, SPT-3G, their likelihoods and release locations) are in `cosmo-cmb`; galaxy-survey descriptions are in `cosmo-galaxy-clustering` and `cosmo-surveys-facilities`. This file keeps what matters for primordial physics.
 
 ## 1. B-mode experiments
+<!-- key: b-mode-experiments -->
 
 ### Past and completed data sets
+<!-- key: past-and-completed-data-sets -->
 
 | Experiment / release | Sky and depth | Frequencies | Result for r | Citation | Flag |
 |---|---|---|---|---|---|
@@ -20,12 +22,14 @@ General CMB instrument descriptions (Planck, ACT, SPT-3G, their likelihoods and 
 | SPT-3G 2019–2020 BB | about 1500 deg² overlapping the BICEP/Keck patch; 9.3 and 6.7 μK·arcmin white noise at 95 and 150 GHz | 95, 150, 220 GHz | r < 0.25, σ(r) = 0.067 | arXiv:2505.02827 | [src] |
 
 ### Current
+<!-- key: current -->
 
 - **BICEP3 and BICEP Array (South Pole).** The collaboration is preparing a "BK24" release covering data from 2016 through 2024. For BICEP3 at 95 GHz over 2016–2024 the residual temperature-to-polarisation leakage after extended deprojection is equivalent to r = (1.12 ± 0.06) × 10⁻³, down from (4.5 ± 0.7) × 10⁻³ with the standard deprojection (arXiv:2608.25016) [src]; the paper calls these results preliminary. BICEP Array receivers at 150 and 220/270 GHz were characterised in the 2026 season and a 90/150 GHz receiver (BA4) is in integration, according to the titles of the August 2026 instrument papers returned by the arXiv search (not cited here individually).
 - **Simons Observatory (Atacama).** The original plan was three Small Aperture Telescopes (SATs) observing about 10% of the sky to 2 μK·arcmin, plus a Large Aperture Telescope on about 40% of the sky at 6 μK·arcmin, in six bands at 27, 39, 93, 145, 225 and 280 GHz with 60,000 bolometers, for a **forecast** σ(r) = 0.003 (Simons Observatory 2019, arXiv:1808.07445) [src]. The plan was enlarged: by 2027 six SATs, with 48,160 detectors in the 93 and 145 GHz channels, and a survey extended to 2035 (Simons Observatory 2025, arXiv:2512.15833) [src]. No SO measurement of r was found in the searches of 2026-10-09.
 - **SPT-3G (South Pole).** Besides the BB analysis above, SPT-3G supplies the delensing template for BICEP/Keck. A successor receiver, SPT-3G+, is planned for installation in early 2029 with 6,020 dichroic pixels (Natoli et al. 2026, arXiv:2608.20236; from the abstract snippet) [src].
 
 ### Planned
+<!-- key: planned -->
 
 | Experiment | Configuration | Target (all **forecasts**) | Citation | Flag |
 |---|---|---|---|---|
@@ -38,6 +42,7 @@ The LiteBIRD requirement was relaxed with the reformation: the pre-reformation l
 
 
 ## 2. CMB temperature and E-mode data (n_s, running, binned P(k), isocurvature, curvature, features)
+<!-- key: cmb-temperature-and-e-mode-data-ns-running -->
 
 Instrument descriptions, likelihood names and data locations are in `cosmo-cmb`. What matters here is which combination a primordial constraint is quoted for, because the named combinations differ in content.
 
@@ -58,12 +63,15 @@ P-ACT, CMB-SPA and "CMB-PAS" are three different products. The first truncates P
 **Forecast** for the scalar spectrum: SO-like and CMB-HD-like surveys would constrain e^(−2τ) P_R at k = 0.2 Mpc⁻¹ to 0.1%, and a CMB-HD-like survey would reach k = 30 Mpc⁻¹ to within a factor of ten (arXiv:2609.35964) [src].
 
 ## 3. Lyman-α forest data for the running
+<!-- key: lyman-alpha-forest-data-for-the-running -->
 
 The 1D flux power spectrum reaches k of order 1 Mpc⁻¹ and is the long lever arm for dn_s/dln k. Two generations exist: the eBOSS DR14 P1D, which with Planck gave dn_s/dln k = −0.010 ± 0.004 (arXiv:1911.09073, quoted through arXiv:2503.14454) [sec], and the DESI DR1 P1D, which with DESI BAO and Planck, ACT and SPT-3G gives 0.0014 ± 0.0041 (arXiv:2601.21432) [src]. The data and their systematics are described in `cosmo-lyman-alpha`.
 
 ## 4. Data used for primordial non-Gaussianity
+<!-- key: data-used-for-primordial-non-gaussianity -->
 
 ### CMB
+<!-- key: cmb -->
 
 | Data set | Content | Result | Citation | Flag |
 |---|---|---|---|---|
@@ -76,6 +84,7 @@ The 1D flux power spectrum reaches k of order 1 Mpc⁻¹ and is the long lever a
 No ground-based primary-CMB bispectrum measurement of f_NL (ACT, SPT) was found in the searches of 2026-10-09.
 
 ### Galaxy and quasar surveys
+<!-- key: galaxy-and-quasar-surveys -->
 
 | Survey / sample | Size and range | Statistic | Citation | Flag |
 |---|---|---|---|---|
@@ -94,8 +103,10 @@ No ground-based primary-CMB bispectrum measurement of f_NL (ACT, SPT) was found 
 DESI DR2 BAO uses more than 14 million galaxies and quasars from three years of operation (arXiv:2503.14738) [src]; no DR2 f_NL analysis was found. According to the `cosmo-galaxy-clustering` skill, DESI completed its planned survey in April 2026 and full-survey results are expected in 2027 [sec].
 
 ## 5. SPHEREx and Euclid
+<!-- key: spherex-and-euclid -->
 
 ### SPHEREx
+<!-- key: spherex -->
 
 SPHEREx is the only running experiment whose primary cosmology requirement is f_NL. Facts read in Bock et al. 2025, arXiv:2511.02985 (abstract and requirements section) [src]:
 
@@ -116,6 +127,7 @@ SPHEREx is the only running experiment whose primary cosmology requirement is f_
 The forecast behind Δf_NL < 0.5 assumes the universality relation for b_φ and leaves out the non-Gaussian part of the covariance and the power spectrum–bispectrum covariance; the mission paper states that these effects "might reduce the f_NL sensitivity by tens of percent" and that a multi-tracer analysis may improve it (arXiv:2511.02985) [src]. The original proposal described R = 40 spectra over 0.75–4.1 μm and R = 150 over 4.1–4.8 μm (Doré et al. 2014, arXiv:1412.4872) [src]; the flown instrument differs, so the 2014 numbers are superseded. No SPHEREx cosmology result was found in the searches of 2026-10-09.
 
 ### Euclid
+<!-- key: euclid -->
 
 All numbers are **forecasts** (Fisher) from Euclid Collaboration 2025, arXiv:2507.15819 [src]; "pessimistic (optimistic)" refers to the paper's two settings.
 
@@ -132,6 +144,7 @@ All numbers are **forecasts** (Fisher) from Euclid Collaboration 2025, arXiv:250
 According to the `cosmo-galaxy-clustering` skill, Euclid DR1 clustering products are expected in mid-2027 [sec].
 
 ## 6. Polarisation data used for birefringence
+<!-- key: polarisation-data-used-for-birefringence -->
 
 | Data | Role | Citation | Flag |
 |---|---|---|---|
@@ -145,6 +158,7 @@ According to the `cosmo-galaxy-clustering` skill, Euclid DR1 clustering products
 | ACT DR6 | anisotropic birefringence and screening | arXiv:2608.27458 | [src] |
 
 ## 7. What comes next
+<!-- key: what-comes-next -->
 
 | When | What | Decides | Source | Flag |
 |---|---|---|---|---|
@@ -157,6 +171,7 @@ According to the `cosmo-galaxy-clustering` skill, Euclid DR1 clustering products
 | JFY2036 (per `cosmo-cmb`) | LiteBIRD launch | **forecast** δr < 0.002; β = 0.3° at 5–13σ (pre-reformation design) | arXiv:2607.25285, arXiv:2503.22322 | [src] |
 
 ## 8. Not verified
+<!-- key: not-verified -->
 
 - LiteBIRD's pre-reformation requirement, usually quoted as δr < 0.001: not in the abstract of arXiv:2202.02773 and not read in its body.
 - LiteBIRD launch date after reformation: taken from the `cosmo-cmb` skill, not from arXiv:2607.25285.

@@ -11,6 +11,7 @@ derived here. Instrument facts, release dates and access points live in
 This file answers one question per tension: are the inputs independent?
 
 ## 1. H0
+<!-- key: h0 -->
 
 | Input | Enters | Shared with | Flag |
 |---|---|---|---|
@@ -38,6 +39,7 @@ Independence, in one sentence each.
   [sec: h0].
 
 ## 2. S8
+<!-- key: s8 -->
 
 | Probe | Data | Shared ingredients | Flag |
 |---|---|---|---|
@@ -70,6 +72,7 @@ What is shared.
   between probes [sec: wl, x].
 
 ## 3. CMB data combinations
+<!-- key: cmb-data-combinations -->
 
 Definitions as used by the collaborations [sec: cmb].
 
@@ -92,6 +95,7 @@ most of that range, CMB-SPA keeps it. The CMB–DESI discrepancy is smallest
 for P-ACT (1.6σ) and largest for SPT + ACT (3.7σ) [sec: cmb].
 
 ## 4. BAO, SN and the w0wa preference
+<!-- key: bao-sn-and-the-w0wa-preference -->
 
 | Input | Content | Shared ingredients | Flag |
 |---|---|---|---|
@@ -111,6 +115,7 @@ Hubble-flow intercept of the SH0ES ladder: one sample carries both the H0
 intercept and the low-redshift end of the w0wa fits.
 
 ## 5. Cosmic dipole catalogues
+<!-- key: cosmic-dipole-catalogues -->
 
 All rows [src], from the abstracts read on 2026-10-10 (`results.md` §7).
 
@@ -145,6 +150,7 @@ What is shared and what is not.
   footprint incompleteness (arXiv:2608.30914) [src].
 
 ## 6. Large-angle CMB maps
+<!-- key: large-angle-cmb-maps -->
 
 | Data | Use | Flag |
 |---|---|---|
@@ -165,6 +171,7 @@ incomplete understanding of the noise properties of the data"
 (arXiv:1906.02552, conclusions) [src].
 
 ## 7. JWST high-redshift samples
+<!-- key: jwst-high-redshift-samples -->
 
 | Sample | Type | Flag |
 |---|---|---|
@@ -176,6 +183,7 @@ incomplete understanding of the noise properties of the data"
 What is shared: the SED-fitting assumptions behind every stellar mass, and, for slitless samples, the contamination mode demonstrated by S1. JWST survey descriptions are not held in this suite; see `cosmo-reionization-21cm` for the reionisation side.
 
 ## 8. Shared ingredients across tensions
+<!-- key: shared-ingredients-across-tensions -->
 
 | Ingredient | Tensions it enters | Consequence |
 |---|---|---|
@@ -196,6 +204,7 @@ low-redshift amplitude spread, the quasar and radio count dipole, the CMB
 temperature sky at ℓ < 30).
 
 ## 9. Next data
+<!-- key: next-data -->
 
 Dates are those held by the siblings [sec]; none is a forecast of a result.
 
@@ -217,6 +226,7 @@ CMB-S4 was cancelled on 9 July 2025 [sec: cmb]; forecasts that rely on it
 longer describe a planned experiment.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - Sample sizes and flux cuts of NVSS, RACS-low and LoTSS-DR2 as used in the
   dipole papers (not in the abstracts read).

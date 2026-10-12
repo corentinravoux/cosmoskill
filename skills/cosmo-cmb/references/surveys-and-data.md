@@ -12,8 +12,10 @@ labelled **forecast**.
 ---
 
 ## 1. Past
+<!-- key: past -->
 
 ### WMAP
+<!-- key: wmap -->
 
 Nine-year final release, 2012. The WMAP-only fit and its combinations
 remain the Planck-independent large-scale anchor: ACT forms "W-ACT" from
@@ -23,6 +25,7 @@ nine-year parameter paper is Hinshaw et al. 2012 (arXiv:1212.5226), which
 reports a detection of tilt at 5σ and r < 0.13 with external data [src].
 
 ### Planck
+<!-- key: planck -->
 
 ESA satellite, launched 14 May 2009; scanned from 12 August 2009 to
 23 October 2013; nine bands from 30 to 857 GHz; all sky [src] (Planck
@@ -45,12 +48,14 @@ Going from PR3 to PR4 the extra constraining power comes from polarisation
 at all scales and from temperature above ℓ = 1500 [src] (arXiv:2510.09430).
 
 ### ACT DR4
+<!-- key: act-dr4 -->
 
 ACTPol data from 2013–2016 at 98 and 150 GHz; maps over more than
 17,000 deg², the deepest 600 deg² below 10 μK-arcmin; spectra from almost
 6000 deg² [src] (Aiola et al. 2020, arXiv:2007.07288). Superseded by DR6.
 
 ### SPT-3G 2018
+<!-- key: spt-3g-2018 -->
 
 A four-month, partial-focal-plane season on the 1500 deg² field. TT/TE/EE
 over 750 ≤ ℓ < 3000 in TT (Balkenhol et al. 2022, arXiv:2212.05642) and a
@@ -58,6 +63,7 @@ temperature-only lensing measurement over 50 < L < 2000 (Pan et al. 2023,
 arXiv:2308.11608) [src]. Superseded by D1.
 
 ### BICEP2 / Keck Array through 2018
+<!-- key: bicep2-keck-array-through-2018 -->
 
 Small-aperture refractors at the South Pole observing one deep patch.
 BK18 combines BICEP2, Keck Array and BICEP3 through the 2018 season:
@@ -67,8 +73,10 @@ Q/U depths of 2.8, 2.8 and 8.8 μK-arcmin at 95, 150 and 220 GHz over about
 BICEP/Keck constraint on r.
 
 ## 2. Current
+<!-- key: current -->
 
 ### ACT DR6 (final ACT cosmology release)
+<!-- key: act-dr6-final-act-cosmology-release -->
 
 | Item | Value | Source |
 |---|---|---|
@@ -89,6 +97,7 @@ DR6 data end in 2022 [src] (arXiv:2503.14451); DR6 is the last ACT
 power-spectrum release.
 
 ### SPT-3G
+<!-- key: spt-3g -->
 
 10 m telescope at the South Pole, third-generation camera, bands at 95, 150
 and 220 GHz.
@@ -116,6 +125,7 @@ dark energy and for a varying electron mass by factors above 90 and 190
 ΛCDM parameter precision (**forecast**) [src] (arXiv:2510.24669).
 
 ### BICEP3 and BICEP Array
+<!-- key: bicep3-and-bicep-array -->
 
 Operating at the South Pole. The next release will use data through 2024
 and is forecast to reach σ(r) ≈ 0.005 including delensing; the long-term
@@ -124,6 +134,7 @@ arXiv:2606.13942). Delensing will use SPT-3G lensing templates (Nakato et
 al. 2026, arXiv:2608.06343).
 
 ### CLASS
+<!-- key: class -->
 
 Large-angular-scale polarimeter array in the Atacama using a
 variable-delay polarisation modulator. The 90 GHz data through 2024
@@ -133,6 +144,7 @@ comparable to Planck at 100 and 143 GHz, and give the first ground-based
 arXiv:2501.11904).
 
 ### Simons Observatory (SO)
+<!-- key: simons-observatory-so -->
 
 Cerro Toco, Atacama, 5200 m [src] (Harrington et al. 2026,
 arXiv:2609.26938).
@@ -150,8 +162,10 @@ found in the searches of 2026-10-07; the 2026 SO papers found are
 instrument and commissioning papers.
 
 ## 3. Planned, and cancelled
+<!-- key: planned-and-cancelled -->
 
 ### CMB-S4 — cancelled
+<!-- key: cmb-s4-cancelled -->
 
 On 9 July 2025 DOE and NSF informed the project that they "have jointly
 decided that they can no longer support the CMB-S4 Project"; the project is
@@ -161,6 +175,7 @@ Book (Abazajian et al. 2016, arXiv:1610.02743). Any text that lists CMB-S4
 targets as upcoming measurements is stale.
 
 ### What replaces it in practice
+<!-- key: what-replaces-it-in-practice -->
 
 | Project | Plan | Target | Source |
 |---|---|---|---|
@@ -171,6 +186,7 @@ targets as upcoming measurements is stale.
 | SO enhanced LAT | 60% of sky, ten times Planck's map depth | light relics, neutrino mass with LSS, 30,000 clusters (**forecast**) | arXiv:2503.00636 [src] |
 
 ### LiteBIRD
+<!-- key: litebird -->
 
 JAXA-led satellite for large-scale B modes.
 
@@ -194,6 +210,7 @@ appears in older texts is the earlier design goal [sec] (stated as
 search results); the reformed requirement is δr < 0.002.
 
 ## 4. Where the data are
+<!-- key: where-the-data-are -->
 
 | Product | Location | Verified |
 |---|---|---|
@@ -204,6 +221,7 @@ search results); the reformed requirement is δr < 0.002.
 | CosmoPower emulators trained for SPT accuracy | cosmopower GitHub repository, `trained_models/SPT_high_accuracy` | [src] arXiv:2506.20707 |
 
 ## 5. Timeline in one view
+<!-- key: timeline-in-one-view -->
 
 | Date | Event | Source |
 |---|---|---|
@@ -222,6 +240,7 @@ search results); the reformed requirement is δr < 0.002.
 | 2026-08-31 | SPT-3G D1 quadratic-estimator lensing | arXiv:2608.31136 |
 
 ## Not verified
+<!-- key: not-verified -->
 
 - The Planck Legacy Archive URL and the exact content of each Planck public
   release were not checked this session.

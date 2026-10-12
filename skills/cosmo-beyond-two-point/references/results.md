@@ -5,6 +5,7 @@ Snapshot: 2026-10-07
 
 
 ## 0. Status of every statistic: data or simulations
+<!-- key: status-of-every-statistic-data-or-simulations -->
 
 "Validated" names the strongest test reported in the papers read this
 session. "Collab." marks a result published by the survey collaboration.
@@ -33,8 +34,10 @@ session. "Collab." marks a result published by the survey collaboration.
 | SBI of P + B | Yes: 10% of BOSS | SimBIG mock challenge; Beyond-2pt | No |
 
 ## 1. Bispectrum, trispectrum, parity-odd four-point function
+<!-- key: bispectrum-trispectrum-parity-odd-four-point -->
 
 ### 1.1 Bispectrum full shape — current values
+<!-- key: bispectrum-full-shape-current-values -->
 
 All rows are fits to survey data validated on mocks. "P+B" means power
 spectrum multipoles plus bispectrum monopole unless stated.
@@ -66,6 +69,7 @@ abstracts describe different data combinations, and the second is explicitly
 "DESI-only". Read the body before comparing them.
 
 ### 1.2 Primordial non-Gaussianity from the bispectrum
+<!-- key: primordial-non-gaussianity-from-the-bispectrum -->
 
 | Quantity | Value (68%) | Data | Citation | Flag |
 |---|---|---|---|---|
@@ -81,6 +85,7 @@ is in `cosmo-galaxy-clustering`. The f_NL^loc value
 inherits the b_φ assumption discussed in that skill.
 
 ### 1.3 Parity-odd four-point function
+<!-- key: parity-odd-four-point-function -->
 
 | Claim | Value | Data | Citation | Flag |
 |---|---|---|---|---|
@@ -100,6 +105,7 @@ DESI, but every test that removes the dependence on the mock noise model
 The current position is "no evidence for parity violation", not "detection".
 
 ### 1.4 History of the bispectrum numbers
+<!-- key: history-of-the-bispectrum-numbers -->
 
 - 2014: first BOSS (DR11 CMASS) measurement, f^0.43 σ8 = 0.582 ± 0.084 at
   z_eff = 0.57 [src] (arXiv:1407.5668); combined with the 2PCF it gave
@@ -122,8 +128,10 @@ The current position is "no evidence for parity violation", not "detection".
   (arXiv:2507.13433, arXiv:2610.01836).
 
 ## 2. Cosmic voids
+<!-- key: cosmic-voids -->
 
 ### 2.1 Void–galaxy cross-correlation, AP and RSD
+<!-- key: void-galaxy-cross-correlation-ap-and-rsd -->
 
 | Quantity | Value | Data, z | Method | Citation | Flag |
 |---|---|---|---|---|---|
@@ -144,6 +152,7 @@ The current position is "no evidence for parity violation", not "detection".
 | Ω_m, w | 0.391 +0.028/−0.021, −1.50 +0.43/−0.28 | same | wCDM | arXiv:2303.06143 | [src] |
 
 ### 2.2 Void size function
+<!-- key: void-size-function -->
 
 | Quantity | Value | Data | Model | Citation | Flag |
 |---|---|---|---|---|---|
@@ -153,6 +162,7 @@ The current position is "no evidence for parity violation", not "detection".
 | Σm_ν | < 0.43 eV (galaxy P alone), < 0.35 eV (P + VSF + void–galaxy P), 95% | BOSS CMASS NGC | implicit likelihood, k_max = 0.15 h Mpc⁻¹, Planck-inspired ΛCDM prior | arXiv:2307.07555 | [src] |
 
 ### 2.3 Void lensing
+<!-- key: void-lensing -->
 
 | Quantity | Value | Data | Citation | Flag |
 |---|---|---|---|---|
@@ -160,6 +170,7 @@ The current position is "no evidence for parity violation", not "detection".
 | CMB lensing amplitude A_κ | 1.016 ± 0.054 (14σ); void-in-void 0.944 ± 0.064, void-in-cloud 0.975 ± 0.060 (17σ) | DESI Legacy DR9 LRG voids × Planck 2018 lensing | arXiv:2412.02761 | [src] |
 
 ### 2.4 Lyα tomography voids
+<!-- key: lyalpha-tomography-voids -->
 
 | Quantity | Value | Data | Citation | Flag |
 |---|---|---|---|---|
@@ -171,6 +182,7 @@ Agreement with the sibling skill: `cosmo-lyman-alpha` quotes β = 1.21 ± 0.18,
 13 h⁻¹Mpc and 220 deg²; all three match the sources read here.
 
 ### 2.5 History and what is superseded
+<!-- key: history-and-what-is-superseded -->
 
 - The 2016 ellipticity test (Ω_m = 0.38 +0.18/−0.15) is superseded by the
   void–galaxy cross-correlation method, which fits the full ξ_vg(s, μ).
@@ -182,6 +194,7 @@ Agreement with the sibling skill: `cosmo-lyman-alpha` quotes β = 1.21 ± 0.18,
 - No void–galaxy cosmology from DESI was found; SDSS remains the reference.
 
 ## 3. Alternative clustering statistics on survey data
+<!-- key: alternative-clustering-statistics-on-survey-data -->
 
 All rows: BOSS DR12 CMASS, flat ΛCDM, emulator on AbacusSummit with an HOD
 galaxy model unless stated. None of the abstracts reports blinding of the data
@@ -222,6 +235,7 @@ DSC on CMASS likewise finds "signatures of environment-based assembly bias"
 (arXiv:2309.16541).
 
 ## 4. Higher-order weak lensing
+<!-- key: higher-order-weak-lensing -->
 
 All rows are fits to survey data. S8 = σ8 (Ω_m/0.3)^0.5 throughout.
 
@@ -264,8 +278,10 @@ DES Y3 SBI series superseded each other in constraining power, the hybrid
 analysis (arXiv:2606.11309) being the current reference.
 
 ## 5. Field-level inference
+<!-- key: field-level-inference -->
 
 ### 5.1 Information content, simulations only
+<!-- key: information-content-simulations-only -->
 
 | Setup | Result | Citation | Flag |
 |---|---|---|---|
@@ -277,6 +293,7 @@ analysis (arXiv:2606.11309) being the current reference.
 | Quijote halos, k_max ≈ 0.1 h Mpc⁻¹, BORG | σ(f_NL^loc) better by a factor of about 1.3 than P + B | arXiv:2603.20855 | [src] |
 
 ### 5.2 Reconstructions from survey data
+<!-- key: reconstructions-from-survey-data -->
 
 | Data | Result | Citation | Flag |
 |---|---|---|---|
@@ -288,6 +305,7 @@ analysis (arXiv:2606.11309) being the current reference.
 None of these quotes a cosmological parameter.
 
 ### 5.3 Neural field-level results on survey data
+<!-- key: neural-field-level-results-on-survey-data -->
 
 | Data | Result | Citation | Flag |
 |---|---|---|---|
@@ -295,6 +313,7 @@ None of these quotes a cosmological parameter.
 | BOSS CMASS subsample, SimBIG CNN | Ω_m = 0.267 +0.033/−0.029, σ8 = 0.762 +0.036/−0.035, H0 = 64.5 ± 3.8; σ8 2.65 times tighter than P_ℓ | arXiv:2310.15256 | [src] |
 
 ### 5.4 Gaussian field-level likelihood (flip)
+<!-- key: gaussian-field-level-likelihood-flip -->
 
 | Quantity | Value | Basis | Citation | Flag |
 |---|---|---|---|---|
@@ -306,6 +325,7 @@ The data result of this method, fσ8 from DESI DR1 peculiar velocities, is in
 skill quotes.
 
 ## 6. Simulation-based inference on galaxy clustering (SimBIG, BOSS CMASS subsample)
+<!-- key: simulation-based-inference-on-galaxy-clustering -->
 
 All rows: flat ΛCDM, k_max = 0.5 h Mpc⁻¹ unless stated, about 10% of the BOSS
 volume.

@@ -11,6 +11,7 @@ definitions (Bartelmann & Schneider 2001, arXiv:astro-ph/9912508; Kilbinger
 2015, arXiv:1411.0115; Mandelbaum 2018, arXiv:1710.03235) and carry no flag.
 
 ## 1. What is measured
+<!-- key: what-is-measured -->
 
 Light from a source at comoving distance χ_s is deflected by the tidal field
 of the matter along the line of sight. To first order the image distortion is
@@ -46,6 +47,7 @@ SPT/Planck: arXiv:2203.12440, arXiv:2206.10824; DES Y3 × Planck PR4:
 arXiv:2510.25596).
 
 ## 2. Estimators
+<!-- key: estimators -->
 
 Each galaxy has a measured ellipticity ε = ε1 + iε2 and a weight w. Around a
 direction joining two galaxies, the tangential and cross components are ε_t =
@@ -80,6 +82,7 @@ normalisation conventions of C1 differ between codes; check before comparing
 A_IA across papers.
 
 ## 3. Two-point statistics
+<!-- key: two-point-statistics -->
 
 | Statistic | Definition | Properties | Used by | Reference |
 |---|---|---|---|---|
@@ -100,6 +103,7 @@ tomographic bins with narrow kernels so that a cut in ℓ becomes a cut in k
 (first KiDS application: Gu et al. 2026, arXiv:2607.04384) [src].
 
 ## 4. Shape measurement
+<!-- key: shape-measurement -->
 
 See `systematics.md` sections 1–3. In brief: moments with PSF correction (KSB;
 Kaiser, Squires & Broadhurst 1995, arXiv:astro-ph/9411005), model fitting
@@ -113,6 +117,7 @@ on PSF model accuracy is set in Paulin-Henriksson et al. 2008
 (arXiv:0711.4886).
 
 ## 5. Theory model of a current analysis
+<!-- key: theory-model-of-a-current-analysis -->
 
 | Ingredient | Choices in use | References |
 |---|---|---|
@@ -133,6 +138,7 @@ to non-linear scales with an HOD on AbacusSummit (Lange et al. 2025,
 arXiv:2512.15962) [src].
 
 ## 6. Covariance and likelihood
+<!-- key: covariance-and-likelihood -->
 
 Stage-III analyses use an analytic covariance with three terms: Gaussian
 (including shape noise and the survey geometry), connected non-Gaussian
@@ -158,6 +164,7 @@ through a fast Gaussian-mixture metric Δ_PPD (Doux et al. 2026,
 arXiv:2610.03447) [src].
 
 ## 7. Blinding
+<!-- key: blinding -->
 
 All Stage-III collaborations blind. KiDS blinds at the shear-catalogue level
 (Kuijken et al. 2015, arXiv:1507.00738) [src]. DES developed a transformation
@@ -170,6 +177,7 @@ HSC shear-ratio analyses all state that they were conducted blind
 arXiv:2508.21681) [src].
 
 ## 8. Codes and pipelines
+<!-- key: codes-and-pipelines -->
 
 | Code | Purpose | Reference |
 |---|---|---|
@@ -185,6 +193,7 @@ arXiv:2508.21681) [src].
 | HMcode, BCemu, BACCO | non-linear and baryonic power spectra | arXiv:2009.01858, arXiv:2108.08863, arXiv:2011.15018 |
 
 ## 9. Conventions that split the community
+<!-- key: conventions-that-split-the-community -->
 
 - **Point estimate.** Marginal mean, marginal mode, or maximum a posteriori.
   KiDS-1000 warned that marginal S8 point estimates "are easily misinterpreted
@@ -206,6 +215,7 @@ arXiv:2508.21681) [src].
   quote the one the survey paper uses.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - Which Boltzmann code and non-linear prescription each of DES Y6, KiDS-Legacy
   and HSC Y3 uses in its fiducial run.

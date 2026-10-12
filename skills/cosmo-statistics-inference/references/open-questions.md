@@ -6,6 +6,7 @@ Snapshot: 2026-10-07
 Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named secondary source; `[der]` derived here, derivation stated.
 
 ## 1. Frequentist against Bayesian intervals in extended models
+<!-- key: frequentist-against-bayesian-intervals-in -->
 
 **The disagreement.** In ΛCDM, profile likelihoods and posteriors agree (Planck 2013, arXiv:1311.1657; DESI DR1 shifts below 1σ, arXiv:2508.11811). In extended models they do not: DESI DR1 full shape + BAO under w0waCDM gives shifts of 2.1σ to 6.6σ between the maximum likelihood and the posterior mean (arXiv:2508.11811) [src].
 
@@ -20,6 +21,7 @@ Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named 
 **State at the snapshot.** DESI publishes Bayesian headline numbers and a separate frequentist paper (arXiv:2508.11811); the neutrino paper quotes Bayesian, Feldman–Cousins and effective-mass statements side by side (arXiv:2503.14744). No collaboration has adopted a frequentist headline for an extended model.
 
 ## 2. Bayesian evidence against delta chi2 for dynamical dark energy
+<!-- key: bayesian-evidence-against-delta-chi2-for -->
 
 **The facts.** DESI quotes the preference for w0waCDM as a `Δχ²_MAP` converted to σ with two degrees of freedom, with `Δ(DIC)` as a companion: 3.1σ and −8.7 for DESI DR2 + CMB (arXiv:2503.14738) [src]. A nested-sampling evidence on the same combination gives `ln B = −0.57 ± 0.26`, mildly favouring ΛCDM (Ong, Yallup & Handley 2025, arXiv:2511.10631; extended to seven model extensions in arXiv:2603.05472) [src].
 
@@ -34,6 +36,7 @@ Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named 
 **What will decide.** A coherent signal grows as `Δχ² ∝` data volume and overtakes any fixed Ockham factor, so the two statistics converge when the effect is real; a data-set conflict does not behave this way. DESI full-survey BAO (expected 2027, per `cosmo-galaxy-clustering`) is the next test.
 
 ## 3. Which tension metric, and is "n sigma" meaningful
+<!-- key: which-tension-metric-and-is-n-sigma-meaningful -->
 
 **State of practice.** DES settled on a suite after the comparison of Lemos et al. 2021 (arXiv:2012.09554): parameter differences, eigentension and suspiciousness agree with each other on simulated and real data (about 2.3σ for DES Y1 against Planck), and the Bayes ratio does not, because of its prior-volume dependence [src]. DES Y6 quotes a full-space parameter difference, estimated with normalising flows, as the headline, with the S8 projection next to it, and uses `n_σ < 3` as its criterion for combining data sets (arXiv:2601.14559) [src]. KiDS-Legacy quotes 0.73σ against Planck in its abstract (arXiv:2503.19441); the metric behind it was not read here.
 
@@ -50,6 +53,7 @@ Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named 
 Cross-probe tension values belong to `cosmo-tensions-anomalies`; this file covers the metrics.
 
 ## 4. Simulation-based inference: validation and trust
+<!-- key: simulation-based-inference-validation-and-trust -->
 
 **Does simulation-based inference need fewer simulations than a covariance?** The early claim was O(10^3) simulations for typical problems (Alsing et al. 2019, arXiv:1903.00007). Homer et al. 2024 (arXiv:2412.02311) show that for the same number of simulations the posterior variance inflation is equal to or greater than the Dodelson–Schneider result of the Gaussian-likelihood route, and call the assumption of a smaller requirement "inaccurate"; they add that the method "knows that it does", in that the inflation appears in the posterior width rather than as hidden scatter [src]. KiDS-SBI used 18 000 realisations for a two-point analysis (arXiv:2404.15402).
 
@@ -62,6 +66,7 @@ Cross-probe tension values belong to `cosmo-tensions-anomalies`; this file cover
 **Trust threshold for a collaboration headline.** In every collaboration analysis read for this skill (DESI DR2, DES Y6, KiDS-Legacy, ACT DR6, SPT-3G D1) the headline cosmology comes from an explicit Gaussian likelihood; the simulation-based analyses of survey data (KiDS-SBI; the DES Y3 map-level analyses listed in `cosmo-beyond-two-point`) are companion results.
 
 ## 5. Priors on nuisance parameters in EFT full-shape fits
+<!-- key: priors-on-nuisance-parameters-in-eft-full-shape -->
 
 Four families of answer coexist in 2025–2026, and they do not return the same error bars.
 
@@ -75,6 +80,7 @@ Four families of answer coexist in 2025–2026, and they do not return the same 
 The size of the stake is documented in `cosmo-galaxy-clustering`: with simulation-based priors the full-shape σ8 moves well away from the value obtained with conservative priors. The physics of the models is there; the statistical point here is that "the full-shape constraint" on an extended model is not a single number until the nuisance prior is named.
 
 ## 6. Covariance: mocks, analytic, or neither
+<!-- key: covariance-mocks-analytic-or-neither -->
 
 **The trade.** Mocks contain survey realism (geometry, fibre assignment, imaging systematics, non-Gaussian terms) and pay for it with Wishart noise that scales with the data-vector length. Analytic covariances are noise-free and cheap to iterate, and pay with missing terms. The two errors are of different kinds: the first is quantified by known formulae (`results.md` §1.1), the second only by comparison with mocks.
 
@@ -90,6 +96,7 @@ The size of the stake is documented in `cosmo-galaxy-clustering`: with simulatio
 - Fully analytic cross-covariances between statistics of the same galaxies are becoming available (arXiv:2602.12343), which removes one of the reasons for mock-based joint covariances.
 
 ## 7. Emulators and differentiable pipelines in the likelihood
+<!-- key: emulators-and-differentiable-pipelines-in-the -->
 
 **What is settled.** Emulating a Boltzmann code is a solved engineering problem at current precision: errors below 0.4% and posterior differences below sampling noise (arXiv:2106.03846), and KiDS-Legacy runs its headline analysis on an emulated `P(k)` (arXiv:2503.19441) [src].
 
@@ -102,6 +109,7 @@ The size of the stake is documented in `cosmo-galaxy-clustering`: with simulatio
 - Emulating the likelihood or the posterior directly (learned proposals, flows for combining probes) puts a density estimator inside the inference; DES Y6 combines independent probes through normalising flows (arXiv:2601.14559) [src]. The accuracy of such flows for tension estimates is 0.2σ to 0.5σ (arXiv:2105.03324).
 
 ## 8. Blinding of extended-model results
+<!-- key: blinding-of-extended-model-results -->
 
 **The gap.** Blinding schemes are designed and validated for the baseline observable in the baseline model: the BAO peak position and RSD amplitude for DESI (arXiv:2404.07282), the 3×2pt data vector under ΛCDM and wCDM for DES (arXiv:1911.05929, arXiv:2601.14559). The results that attract most attention are extended-model fits and combinations with external data, which are usually run after the baseline is unblinded.
 
@@ -114,6 +122,7 @@ The size of the stake is documented in `cosmo-galaxy-clustering`: with simulatio
 - Tooling for Stage IV: data-vector blinding with encryption for Rubin (arXiv:2604.18111); a Lyα forest scheme for DESI (arXiv:2607.07875).
 
 ## 9. What the next data will decide
+<!-- key: what-the-next-data-will-decide -->
 
 | Question | What decides it | When (from the sibling skills) |
 |---|---|---|
@@ -126,6 +135,7 @@ The size of the stake is documented in `cosmo-galaxy-clustering`: with simulatio
 Forecast statements about the statistical reach of future surveys (figures of merit, σ(Σm_ν)) are in the probe skills and are Fisher-based unless stated otherwise; §10 of `physics-and-methods.md` lists what that implies.
 
 ## 10. Misconceptions and stale claims
+<!-- key: misconceptions-and-stale-claims -->
 
 | Claim that circulates | What is correct | Corrected by |
 |---|---|---|
@@ -151,6 +161,7 @@ Forecast statements about the statistical reach of future surveys (figures of me
 | "Three supernova samples confirm the result." | They share objects and calibration and give 2.8σ to 4.2σ with the same BAO and CMB; the spread is an analysis-choice effect. | arXiv:2503.14738; `cosmo-supernovae` |
 
 ## Not verified
+<!-- key: not-verified -->
 
 - Whether any 2025–2026 collaboration analysis uses the matching-prior t-distribution of arXiv:2108.10402 in production.
 - Which DESI DR2 extended-model combinations were fixed before unblinding.

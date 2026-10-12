@@ -16,6 +16,7 @@ its method column mixes fitting technique with observable — see §5 and §6.
 ---
 
 ## 1. Why there are exactly three indicators
+<!-- key: why-there-are-exactly-three-indicators -->
 
 A peculiar velocity needs a **redshift-independent distance**. Only three
 methods deliver them in bulk over cosmological volumes.
@@ -43,6 +44,7 @@ calibration rungs, not survey-scale velocity tracers.
 ---
 
 ## 2. Galaxy-scaling-relation surveys (TF / FP)
+<!-- key: galaxy-scaling-relation-surveys-tf-fp -->
 
 Chronological, following Turner §4.
 
@@ -72,6 +74,7 @@ Chronological, following Turner §4.
 ---
 
 ## 3. Supernova samples used for peculiar velocities
+<!-- key: supernova-samples-used-for-peculiar-velocities -->
 
 Two distinct uses, often confused:
 
@@ -95,6 +98,7 @@ independent data. State which low-z sample underlies a quoted fσ8.
 ---
 
 ## 4. Current and future
+<!-- key: current-and-future -->
 
 | Survey | Method | Expected N | z | Status |
 |---|---|---|---|---|
@@ -113,6 +117,7 @@ gives ~3 %.
 ---
 
 ## 5. Method families
+<!-- key: method-families -->
 
 Group peculiar-velocity results by **what the estimator does to the data before
 fitting**, not by what optimiser it runs afterwards. Almost every analysis
@@ -172,6 +177,7 @@ their own abstracts; take that wording over any review's classification.
 ---
 
 ## 6. Published fσ8 measurements from peculiar velocities
+<!-- key: published-fsigma8-measurements-from-peculiar -->
 
 Every value traced to its own paper (no row transcribed from a review), ordered
 by effective redshift. `lin` marks a result normalised to the **linear** σ8;
@@ -282,6 +288,7 @@ Discussion companion: `fsigma8-pv-compilation.md`.
 ---
 
 ## 7. Systematics, by indicator
+<!-- key: systematics-by-indicator -->
 
 **Common to all**
 - Malmquist / selection bias — homogeneous vs inhomogeneous; the single largest
@@ -308,6 +315,7 @@ which is circular if the same reconstruction is later used as the model.
 ---
 
 ## 8. Two live controversies
+<!-- key: two-live-controversies -->
 
 **FP disagrees with TF and SNe.** Stiskalek et al. (2026, MNRAS,
 arXiv:2509.20235) run the first consistent
@@ -328,6 +336,7 @@ as established.
 ---
 
 ## 9. Writing rules for PV sections
+<!-- key: writing-rules-for-pv-sections -->
 
 - Never write "the peculiar velocity survey X measures fσ8" without the
   **effective redshift** — the compilation above spans z_eff = 0 to 0.1 and the

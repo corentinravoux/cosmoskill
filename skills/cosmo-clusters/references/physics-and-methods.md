@@ -6,6 +6,7 @@ Snapshot: 2026-10-07
 Reviews to start from: Allen, Evrard & Mantz 2011 (arXiv:1103.4829) for the method as a whole and its pre-Planck results; Pratt et al. 2019 (arXiv:1902.10837) for the mass scale, the mass-estimation methods and their biases. No review of cluster cosmology dated after June 2025 was found in a date-sorted title search (2026-10-09).
 
 ## 1. What is measured and why it constrains cosmology
+<!-- key: what-is-measured-and-why-it-constrains-cosmology -->
 
 The number density of haloes above about 1e14 M_sun falls exponentially with mass, so the abundance of clusters as a function of mass and redshift responds steeply to the amplitude of matter fluctuations and to the matter density. Counts in a survey are
 
@@ -25,6 +26,7 @@ Four cluster probes are in use.
 The count degeneracy direction is flatter than the cosmic-shear one. Analyses quote the best-constrained combination with their own exponent: 0.3 with pivot 0.27 (Planck 2013, arXiv:1303.5080), 0.17 (Weighing the Giants, arXiv:1407.4516), 0.2 then 0.25 (SPT, arXiv:1812.01679, arXiv:2401.02075), 0.25 with pivot 0.33 (arXiv:1904.07887) [src]. The standard S8 = σ8 (Ω_m/0.3)^0.5 is usually quoted in addition and has a larger error: 0.029 against 0.016 for the optimal SPT combination [src, arXiv:2401.02075].
 
 ## 2. Mass definitions and conventions
+<!-- key: mass-definitions-and-conventions -->
 
 - Spherical-overdensity masses: M_Δ = (4π/3) Δ ρ_ref r_Δ³, with ρ_ref the critical density at the cluster redshift (suffix c) or the mean matter density (suffix m). X-ray and SZ work uses M500c; optical and lensing work M200m or M200c; relaxed-cluster f_gas work r2500 (arXiv:1402.6212).
 - Tinker et al. 2008 argue that spherical-overdensity masses are more directly linked to cluster observables than friends-of-friends masses (arXiv:0803.2706). Conversion between definitions requires a concentration model; Hu & Kravtsov 2003 give a fitting formula for it (arXiv:astro-ph/0203169).
@@ -34,6 +36,7 @@ The count degeneracy direction is flatter than the cosmic-shear one. Analyses qu
 - Hydrostatic bias in simulation papers is often written with the opposite sign, as a negative fractional offset of the hydrostatic mass (arXiv:2409.07849): b_HSE ≈ −0.2 there corresponds to (1 − b) ≈ 0.8 here.
 
 ## 3. Halo mass function and halo bias
+<!-- key: halo-mass-function-and-halo-bias -->
 
 The mass function is written dn/dM = f(σ) (ρ_m / M) d ln σ⁻¹/dM, with σ(M, z) the rms linear fluctuation in a top-hat enclosing M. "Universality" is the statement that f depends on cosmology and redshift only through σ.
 
@@ -49,6 +52,7 @@ Practice in current analyses, as far as the abstracts read state it: the KiDS-10
 Mass-function emulators and new prescriptions published between June 2025 and October 2026 were returned by a date-sorted search (titles: "Evolution mapping III: A new recipe for the halo mass function"; "Aletheia: Emulating the halo mass function with evolution mapping"; "CSST Cosmological Emulator II: Generalized Accurate Halo Mass Function Emulation"; "Emulation of the Halo Mass Function with Neural Networks"; "Euclid: Impact of halo mass-conversion model assumptions on galaxy cluster number-count analyses"). They are leads, not read and not cited.
 
 ## 4. Observables and observable–mass relations
+<!-- key: observables-and-observable-mass-relations -->
 
 | Selection | Detection observable | Mass proxy and calibration | Strength | Characteristic failure |
 |---|---|---|---|---|
@@ -65,6 +69,7 @@ X-ray hydrostatic mass: M(<r) = −(k T r / G μ m_p) (d ln ρ_gas/d ln r + d ln
 Scaling relations are modelled as power laws in mass and in E(z) or (1 + z), with lognormal intrinsic scatter and, in multi-observable analyses, correlated scatter between observables. DES Y3 × SPT cross-matching shows that a simple lognormal scatter is inadequate for richness (arXiv:2502.12914).
 
 ## 5. Count likelihoods and covariance
+<!-- key: count-likelihoods-and-covariance -->
 
 - Forward population model. The current standard is a Bayesian hierarchical model in which the survey observable (ξ, X-ray flux or count rate, richness) and the follow-up observables (shear profile, Y_X, velocity dispersion) are drawn from a joint scaling relation with correlated scatter, and the selection is applied to the detection observable. The SPT framework is described in Bocquet et al. 2024 (arXiv:2310.12213) and applied in arXiv:2401.02075; Mantz et al. 2010 (arXiv:0909.3098) is the statistical-methods paper for the X-ray samples.
 - Stacked versus individual lensing. SPT uses per-cluster shear profiles inside the population model (arXiv:2310.12213), and the Planck × DES analysis also works with shear profiles (arXiv:2509.02068). Richness-selected analyses (SDSS, DES Y1, KiDS AMICO) stack the lensing signal in bins of richness and redshift (arXiv:1805.00039, arXiv:2507.14285). Stacking is where the optical selection bias enters: the mean lensing profile of a richness-selected stack is not that of a mass-selected sample of the same mean mass.
@@ -74,6 +79,7 @@ Scaling relations are modelled as power laws in mass and in E(z) or (1 + z), wit
 - Simulation-based inference is entering the field: the XXL analysis with HSC lensing uses DELFI with 12 parameters and reports an extra 3% systematic from neural-network stochasticity [src, arXiv:2602.11989]; the reanalysis of DES Y1 uses a simulation-based forward model of the optical selection (arXiv:2510.25706).
 
 ## 6. Mass calibration
+<!-- key: mass-calibration -->
 
 | Method | Measures | Precision reached | Main limitation | Key references |
 |---|---|---|---|---|
@@ -88,6 +94,7 @@ Weak-lensing mass is not an unbiased estimator of spherical-overdensity mass. Fi
 The stacked-lensing model of McClintock et al. 2019 (arXiv:1805.00039) is the reference for richness-selected samples: ⟨M200m | λ, z⟩ = M0 (λ/40)^F ((1 + z)/1.35)^G, with M0 = [3.081 ± 0.075 (stat) ± 0.133 (sys)] × 1e14 M_sun, F = 1.356 ± 0.051 ± 0.008, G = −0.30 ± 0.30 ± 0.06 [src], from 4 × 3 bins at λ ≥ 20 and 0.2 ≤ z ≤ 0.65 and a semi-analytic covariance. It is also the calibration behind the DES Y1 result that failed (see `results.md`), which is why its systematics list matters more than its precision.
 
 ## 7. Clustering of clusters
+<!-- key: clustering-of-clusters -->
 
 Clusters are highly biased tracers: measured biases run from 2.95 ± 0.21 to 4.34 ± 0.62 for eRASS1 luminosity-limited samples [src, arXiv:2402.08460] and 5.30 ± 0.24 for SPT-3G clusters at 0.25 < z < 1.1 [src, arXiv:2610.08947]. On large scales P_cc(k) = b² P_m(k); since b(M) is predicted (section 3), the clustering amplitude measures the mean mass without any lensing or hydrostatic assumption.
 
@@ -98,10 +105,12 @@ What clustering adds, according to forecasts that differ in size: in Euclid-like
 The non-Gaussian mass function is constrained with the same count data: f_NL = 55 ± 125 from ACT DR6 [src, arXiv:2602.03917]. The method belongs to `cosmo-inflation-primordial`.
 
 ## 8. Gas-mass fraction
+<!-- key: gas-mass-fraction -->
 
 For the hottest, dynamically relaxed clusters the ratio of X-ray gas mass to total mass in a shell around r2500 is expected to be nearly constant in mass and redshift. The measured f_gas depends on the assumed distances roughly as d^1.5, so requiring a constant true f_gas constrains the expansion history, and its normalisation gives Ω_b/Ω_m once the gas depletion factor is taken from simulations (arXiv:0706.0033, arXiv:1402.6212). Sample selection is by morphology (the SPA criteria: 57 of 361 clusters pass [src, arXiv:1502.06020]); the hydrostatic mass at r2500 agrees with lensing, ratio 0.96 ± 9% (stat) ± 9% (sys) [src, arXiv:1509.02162]. This is a distance probe, independent of the mass function and of the count selection function.
 
 ## 9. Splashback radius and outer profiles
+<!-- key: splashback-radius-and-outer-profiles -->
 
 - Definition. The splashback radius is the apocentre of the first orbit of accreted matter; it appears as the radius where the logarithmic slope of the density profile is steepest. Diemer & Kravtsov 2014 (arXiv:1401.1216) show that profiles depart from NFW and Einasto forms beyond 0.5 R200m, that the steepest slope lies near R200m and reaches −4 or steeper for high peak height or accretion rate, and give a fitting formula accurate to better than 10% for r < 9 R_vir, 0 < z < 6 and M_vir > 1.7e10 M_sun/h [src].
 - First detection and the puzzle. More et al. 2016 (arXiv:1601.06063) detect the feature in the projected density of SDSS photometric galaxies around redMaPPer clusters and report a 6.6σ halo assembly-bias signal [src]; the measured splashback radii are smaller, and the assembly-bias signal stronger, than N-body expectations.
@@ -110,6 +119,7 @@ For the hottest, dynamically relaxed clusters the ratio of X-ray gas mass to tot
 - Profiles as a cosmological probe. The mean lensing profile of the infall region of clusters, compared with a simulation suite, gives Ω_m = 0.34 ± 0.06 and σ8 = 0.77 ± 0.04 with a preliminary UNIONS catalogue [src, arXiv:2501.09147].
 
 ## 10. Blinding practice
+<!-- key: blinding-practice -->
 
 | Analysis | Blinding as stated | Citation |
 |---|---|---|
@@ -122,6 +132,7 @@ For the hottest, dynamically relaxed clusters the ratio of X-ray gas mass to tot
 The DES Y1 case shows the limit of blinding: an analysis can be blind, pass its internal tests and still be wrong, because blinding protects against tuning and not against a missing term in the model. Blinding strategies of the eROSITA, SPT and Planck analyses were not read this session.
 
 ## 11. Public codes, catalogues and pipelines
+<!-- key: public-codes-catalogues-and-pipelines -->
 
 | Item | Purpose | Reference | Flag |
 |---|---|---|---|
@@ -136,6 +147,7 @@ The DES Y1 case shows the limit of blinding: an analysis can be blind, pass its 
 | PINOCCHIO | fast halo catalogues for covariance and likelihood tests | used in arXiv:2210.11093 | [sec] |
 
 ## 12. Where the community is split
+<!-- key: where-the-community-is-split -->
 
 - Reference mass scale: hydrostatic XMM (Planck), hydrostatic Chandra, or lensing only. The same counts give the same cosmology under any of them, but (1 − b) values are not comparable across references (arXiv:2402.04006).
 - Stacked lensing in richness bins against per-cluster lensing in a population model.
@@ -144,6 +156,7 @@ The DES Y1 case shows the limit of blinding: an analysis can be blind, pass its 
 - Constant against mass- and redshift-dependent mass bias (arXiv:2509.02068, arXiv:2512.18935).
 
 ## Not verified
+<!-- key: not-verified -->
 
 - Which mass function (Tinker 2008, Bocquet 2016, an emulator) each of eRASS1, SPT 2024, DES Y3 and KiDS AMICO adopts: not read in the paper bodies.
 - Reference papers of redMaPPer, MCMF, AMICO, PINOCCHIO and of general-purpose halo-model libraries: not fetched, so no identifier is given.

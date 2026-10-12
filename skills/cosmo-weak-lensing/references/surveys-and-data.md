@@ -9,6 +9,7 @@ Flags: `[src]` read this session in the cited paper or on the named official
 page; `[sec]` from a named secondary source; `[der]` derived.
 
 ## 0. Summary table of shear catalogues
+<!-- key: summary-table-of-shear-catalogues -->
 
 Numbers are those of the cited catalogue or cosmology abstract; "n_eff" follows
 each survey's own definition, so the column is indicative, not homogeneous.
@@ -33,8 +34,10 @@ shape-measurement method is given only where an abstract read this session
 names it.
 
 ## 1. Past and completed Stage-II / Stage-III surveys
+<!-- key: past-and-completed-stage-ii-stage-iii-surveys -->
 
 ### CFHTLenS
+<!-- key: cfhtlens -->
 
 CFHTLenS spans 154 deg² in five optical bands, with 4.2 million galaxies at
 0.2 < z < 1.3 in the 2D analysis and a median redshift of 0.70 in the
@@ -48,6 +51,7 @@ sees the same detector-scale additive pattern in COSEBI B modes
 (arXiv:2604.03227) [src].
 
 ### KiDS (VST/OmegaCAM + VISTA/VIKING), complete
+<!-- key: kids-vst-omegacam-vista-viking-complete -->
 
 | Release / analysis | Area | Key facts | Citation | Flag |
 |---|---|---|---|---|
@@ -72,6 +76,7 @@ arXiv:2410.06962), extensions (arXiv:2512.11041), second- plus third-order
 shear (arXiv:2606.12389), BNT k-cut (arXiv:2607.04384).
 
 ### DES (Blanco/DECam), complete
+<!-- key: des-blanco-decam-complete -->
 
 | Analysis | Area | Sources | Key facts | Citation | Flag |
 |---|---|---|---|---|---|
@@ -87,6 +92,7 @@ DES Y6 mean-redshift uncertainties per source bin are σ⟨z⟩ = 0.012, 0.008,
 (4) h⁻¹Mpc used with linear (non-linear) galaxy bias (arXiv:2601.15175) [src].
 
 ### DECADE (DECam, community and archival imaging)
+<!-- key: decade-decam-community-and-archival-imaging -->
 
 The DECADE project builds DES-like shear catalogues from DECam imaging outside
 the DES footprint: 107 million galaxies over 5,412 deg² in the northern
@@ -99,6 +105,7 @@ date by galaxy count and area; shear catalogues, data vectors and likelihoods
 are public (arXiv:2509.03582) [src].
 
 ### HSC-SSP (Subaru/Hyper Suprime-Cam)
+<!-- key: hsc-ssp-subaru-hyper-suprime-cam -->
 
 | Analysis | Key facts | Citation | Flag |
 |---|---|---|---|
@@ -107,6 +114,7 @@ are public (arXiv:2509.03582) [src].
 | HSC Y3 recalibrated | DESI clustering redshifts replace the wide Δz priors of the two highest bins | arXiv:2511.18134 | [src] |
 
 ### UNIONS (CFHT/MegaCam r band, northern sky)
+<!-- key: unions-cfht-megacam-r-band-northern-sky -->
 
 UNIONS-3500 is the first cosmic-shear catalogue of the survey: about 3500 deg²
 in r with median seeing 0.7 arcsec, 62 million galaxies, effective density
@@ -118,6 +126,7 @@ non-tomographic, in configuration space (arXiv:2605.13547) and harmonic space
 the north.
 
 ## 2. Spectroscopic partners (lenses and redshift calibration)
+<!-- key: spectroscopic-partners-lenses-and-redshift -->
 
 DESI has become the common calibration and lens sample of the Stage-III
 lensing surveys: more than 256 000 high-quality redshifts in the COSMOS and
@@ -129,6 +138,7 @@ et al. 2025, arXiv:2506.21677). BOSS and eBOSS galaxies and quasars are the
 clustering-redshift reference of DES Y6 (arXiv:2510.23565) [src].
 
 ## 3. Stage-IV: status today
+<!-- key: stage-iv-status-today -->
 
 | Facility | Status on 2026-10-07 | Source | Flag |
 |---|---|---|---|
@@ -137,6 +147,7 @@ clustering-redshift reference of DES Y6 (arXiv:2510.23565) [src].
 | Roman | Launched 30 August 2026 on a Falcon Heavy; in commissioning; first images expected in early 2027. Weak lensing comes from the High Latitude Imaging Survey; 3×2pt Fisher **forecasts** for it are in Cao et al. 2026 (arXiv:2601.00438); the earlier mission design report is Spergel et al. 2015 (arXiv:1503.03757). | NASA mission page (https://science.nasa.gov/mission/roman-space-telescope/, fetched 2026-10-07) for the date and status; press coverage for the vehicle and the first-image expectation | [src] date and status; [sec] vehicle and first images |
 
 ### Design documents and forecasts (all **forecast**)
+<!-- key: design-documents-and-forecasts-all-forecast -->
 
 | Survey | Document | What it gives | Flag |
 |---|---|---|---|
@@ -151,6 +162,7 @@ clustering-redshift reference of DES Y6 (arXiv:2510.23565) [src].
 | Roman | arXiv:2601.00438 | **forecast**: external priors on n_s, Ω_b, h improve the (σ8, Ωm) figure of merit by factors 1.2–3.5; factor-two changes in photo-z and shear-bias priors change it by ≲ 20% | [src] |
 
 ## 4. Public data locations
+<!-- key: public-data-locations -->
 
 | Data | Location | Flag |
 |---|---|---|
@@ -160,6 +172,7 @@ clustering-redshift reference of DES Y6 (arXiv:2510.23565) [src].
 | DECADE | shear catalogues, data vectors and likelihoods stated public in arXiv:2509.03582 | [src] |
 
 ## Not verified
+<!-- key: not-verified -->
 
 - Whether the UNIONS-3500 and KiDS-Legacy shear catalogues are public and where.
 - Sample sizes and area of the Rubin `ShearObject` catalogue.

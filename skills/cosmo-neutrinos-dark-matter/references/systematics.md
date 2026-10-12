@@ -6,6 +6,7 @@ Snapshot: 2026-10-07
 Flags: `[src]` read in the cited paper this session; `[sec]` taken from a named secondary source; `[der]` derived here, derivation stated.
 
 ## 0. How to read this file
+<!-- key: how-to-read-this-file -->
 
 Almost every number in this domain is an upper or lower limit, and a limit moves for two different reasons: the width of the posterior changes, or its peak shifts. Most of the entries below are shifts. A limit that tightened because the preferred value moved towards the excluded side is not a gain in sensitivity, and it is the first thing to check.
 
@@ -14,6 +15,7 @@ The instrumental systematics of the input data are not repeated here: beams, cal
 # Part A — neutrino mass and N_eff
 
 ## 1. The positivity prior and the three error bars
+<!-- key: the-positivity-prior-and-the-three-error-bars -->
 
 - **Mechanism.** The posterior of Σm_ν in ΛCDM peaks at the prior edge Σm_ν = 0. The 95% limit then measures how fast the likelihood falls from the edge, and the marginal error is that of a truncated distribution.
 - **Size.** For DESI DR2 BAO + CMB the same data give σ = 0.020 eV (Bayesian, Σm_ν > 0), σ = 0.043 eV (parabola fitted to the profile likelihood, minimum at −0.036 eV) and σ = 0.053 eV (posterior of the effective signed mass, 2.6 times the first) (Elbers et al. 2025, arXiv:2503.14744 [src]). A prior floor at the oscillation minimum raises the DR2 limit from 0.0642 eV to 0.105 eV (normal) or 0.135 eV (inverted); for DR1 the same change moved 0.072 eV to 0.113 eV (arXiv:2503.14744, arXiv:2404.03002 [src]).
@@ -22,6 +24,7 @@ The instrumental systematics of the input data are not repeated here: beams, cal
 - **Referee citation.** arXiv:2503.14744 §5; arXiv:2407.13831.
 
 ## 2. Optical depth τ
+<!-- key: optical-depth-tau -->
 
 - **Mechanism.** The primary CMB measures A_s e^(−2τ) precisely. A larger τ means a larger A_s and a larger predicted lensing amplitude, which leaves room for neutrino suppression; τ itself comes almost entirely from Planck large-scale polarisation (arXiv:2503.14744 §5.2.1 [src]). ACT and SPT take τ from Planck, so no current CMB + BAO neutrino limit is independent of it [sec: `cosmo-cmb`].
 - **Size, from the collaborations' own tests.**
@@ -42,6 +45,7 @@ The instrumental systematics of the input data are not repeated here: beams, cal
 - **Referee citation.** arXiv:2504.16932, arXiv:2504.21813, and the collaboration test used (arXiv:2503.14744 §5.2.1 or the ACT appendix).
 
 ## 3. Excess lensing-like smoothing and the choice of Planck likelihood
+<!-- key: excess-lensing-like-smoothing-and-the-choice-of -->
 
 - **Mechanism.** Planck temperature spectra show more peak smoothing than ΛCDM predicts, parameterised by A_lens. Neutrino mass reduces lensing, so excess smoothing pushes Σm_ν towards and below zero. DESI describes the related signature as an oscillatory feature in the small-scale temperature spectrum that ΛCDM with positive masses does not account for and that is degenerate with A_lens (arXiv:2503.14744 §5.2.1 [src]). A_lens rescales the smoothing of the spectra only; it is not the amplitude of the lensing reconstruction [sec: `cosmo-cmb`].
 - **Size.** With DESI DR2 BAO: Σm_ν < 0.0691 eV (PR3 plik), < 0.0642 eV (PR4 CamSpec), < 0.0774 eV (PR4 LoLLiPoP–HiLLiPoP). plik had A_lens > 1 at more than 2σ, CamSpec reduced it, and the L-H value is consistent with unity; CamSpec is nonetheless the tightest because it uses more PR4 data (arXiv:2503.14744 §4.4 [src]). The effective-mass tension is weaker with L-H but present with all three (§5.2.1 [src]). The A_lens values themselves (1.180 ± 0.065 for PR3 Plik, 1.039 ± 0.052 for PR4 HiLLiPoP, 1.007 ± 0.057 for ACT DR6) are in `cosmo-cmb` [sec].
@@ -51,6 +55,7 @@ The instrumental systematics of the input data are not repeated here: beams, cal
 - **Referee citation.** arXiv:2503.14744 §4.4; arXiv:2511.01967; arXiv:2607.24742.
 
 ## 4. The BAO data and the CMB–BAO mismatch
+<!-- key: the-bao-data-and-the-cmb-bao-mismatch -->
 
 - **Mechanism.** The tight limits are geometric. BAO fix Ω_m; the CMB fixes ω_b and ω_cdm; DESI distances are smaller than CMB data allow in ΛCDM with positive masses, a discrepancy in H0 r_d, and at fixed θ* a lower neutrino mass compensates it (arXiv:2503.14744 §5.2.1 [src]; Loverde & Weiner 2024, arXiv:2410.00090). With the effective mass fixed at −0.11 eV the CMB alone gives H0 = 68.96 ± 0.49 km/s/Mpc and matches DESI (arXiv:2503.14744 §5.2.1 [src]).
 - **Size.** Same CMB and lensing data, different distance data: < 0.089 eV with DESI DR1, < 0.13 eV with BOSS BAO, < 0.23 eV with supernovae and no BAO (arXiv:2503.14454 §6.1.1 [src]). ACT states that its exclusion of the inverted ordering "strongly depends on the use of DESI BAO data".
@@ -60,6 +65,7 @@ The instrumental systematics of the input data are not repeated here: beams, cal
 - **Referee citation.** arXiv:2503.14744 §5.2.1; arXiv:2410.00090.
 
 ## 5. The dark-energy model and the supernova sample
+<!-- key: the-dark-energy-model-and-the-supernova-sample -->
 
 - **Mechanism.** Neutrino mass and the late-time expansion history both change the distance to last scattering at fixed physical densities. A model that absorbs the BAO–CMB mismatch elsewhere releases the pressure on Σm_ν.
 - **Size.** DESI DR2 BAO + CMB: < 0.0642 eV (ΛCDM), < 0.0851 eV (wCDM), < 0.163 eV (w0waCDM). With supernovae the w0waCDM limit is 0.117, 0.139 or 0.129 eV for Pantheon+, Union3 or DESY5, while in wCDM supernovae tighten the limit to 0.0586–0.0653 eV (arXiv:2503.14744 Table 2 [src]). The effective mass in w0waCDM is 0.06 (+0.15/−0.10) eV (Elbers et al. 2024, arXiv:2407.10965 [src]).
@@ -68,6 +74,7 @@ The instrumental systematics of the input data are not repeated here: beams, cal
 - **Referee citation.** arXiv:2503.14744 Table 2; arXiv:2407.10965.
 
 ## 6. Full-shape analyses: nuisance priors and external reanalyses
+<!-- key: full-shape-analyses-nuisance-priors-and -->
 
 - **Mechanism.** The scale-dependent suppression is degenerate with galaxy bias and EFT counterterms; in extended models the marginal posterior depends on the prior volume of those parameters.
 - **Size.** In the DESI analysis the DR1 full shape adds almost no width (0.003 eV) (arXiv:2503.14744 [src]). The tightest published numbers, < 0.049 eV in ΛCDM and < 0.077 eV in w0waCDM, come from an external reanalysis that adds the bispectrum and cross-correlations (Ivanov et al. 2026, arXiv:2601.16165 [src]); its authors state the w0waCDM limit is 37% tighter than background data alone.
@@ -75,6 +82,7 @@ The instrumental systematics of the input data are not repeated here: beams, cal
 - **Referee citation.** arXiv:2503.14744 §2.8 and §5.1; arXiv:2601.16165.
 
 ## 7. Assumptions about the neutrino background itself
+<!-- key: assumptions-about-the-neutrino-background-itself -->
 
 - **Mechanism.** The conversion from energy density to mass assumes three species with a Fermi–Dirac distribution at the standard temperature, stable over the age of the Universe.
 - **Size.** Photon injection after neutrino decoupling changes the Planck + lensing + DESI limit from 0.0691 eV to 0.0652 eV (decay to photons only) or 0.0710 eV (photons and dark radiation); the shift is at most 0.004 eV for fixed splittings; a free neutrino-to-photon temperature ratio gives 0.0724 eV. The neutrino temperature and Σm_ν are positively correlated, so a lower radiation density worsens the tension (Figueroa, Sobotka & Erickcek 2026, arXiv:2609.15970 [src]). With N_eff free the DESI DR2 limit is 0.0741 eV with correlation 0.18 (arXiv:2503.14744 [src]); ACT finds 0.073 eV (arXiv:2503.14454 §6.1.1 [src]).
@@ -83,6 +91,7 @@ The instrumental systematics of the input data are not repeated here: beams, cal
 - **Referee citation.** arXiv:2609.15970.
 
 ## 8. Mass-ordering statements
+<!-- key: mass-ordering-statements -->
 
 - **Mechanism.** The Bayes factor between orderings is the ratio of prior volume left by an upper limit that sits between the two minimum masses; it depends on the prior measure on the masses as much as on the data.
 - **Size.** K = 10 for DESI DR2 + CMB + NuFIT 6.0 with the CamSpec likelihood, 6 with L-H and 8 with plik; Δχ² = 4.6 (arXiv:2503.14744 [src]). Other prior constructions give 46.5 (Jiang et al. 2024, arXiv:2407.18047) and more than 460 in ΛCDM or more than 40 in extensions, with the prior measure changing K by a factor of about 10 (Jimenez et al. 2026, arXiv:2606.18987) [src].
@@ -90,6 +99,7 @@ The instrumental systematics of the input data are not repeated here: beams, cal
 - **Validation.** The laboratory: JUNO with accelerator constraints favours normal ordering at ≥ 2.1σ, Bayes factor 10.18 (JUNO Collaboration 2026, arXiv:2609.37895 [src]).
 
 ## 9. N_eff
+<!-- key: neff -->
 
 | Systematic | Mechanism | Size | Citation | Flag |
 |---|---|---|---|---|
@@ -104,6 +114,7 @@ The instrumental systematics of the input data are not repeated here: beams, cal
 A low N_eff cannot be attributed to photon heating at late times: raising the photon energy density by the 12% (P-ACT) or 6% (P-ACT-LB) needed would produce spectral distortions μ = 0.16 or y = 0.03 (0.09 or 0.02), excluded by COBE/FIRAS; only injection at 2 × 10⁶ < z < 10⁹ escapes (arXiv:2503.14454 §6.1.1 [src]). Do not combine CMB and BAO for N_eff without stating their mutual consistency in ΛCDM + N_eff [sec: `cosmo-cmb`].
 
 ## 10. BBN inputs
+<!-- key: bbn-inputs -->
 
 - **Nuclear rates.** The baryon density from D/H depends on the deuterium-burning rates: ab-initio theoretical rates favour lower Ω_b h², experimental rates higher. Marginalising over rates gives Ω_b h² = 0.02218 ± 0.00055 (Schöneberg 2024, arXiv:2401.15054 [src]), four times the error of the 0.02236 ± 0.00014 obtained with BBN + CMB and N_ν = 3 (Yeh et al. 2026, arXiv:2601.22239 [src]) [der: 0.00055/0.00014].
 - **Helium.** The predicted Y_P = 0.24709 ± 0.00017 (Pitrou et al. 2018, arXiv:1801.08023) is far more precise than the measured 0.2458 ± 0.0013 (arXiv:2601.22239) [src]; N_ν from BBN is limited by the observational helium systematics, which this session did not research.
@@ -113,6 +124,7 @@ A low N_eff cannot be attributed to photon heating at late times: raising the ph
 # Part B — dark-matter properties
 
 ## 11. Lyman-α forest: the thermal history
+<!-- key: lyman-alpha-forest-the-thermal-history -->
 
 - **Mechanism.** Free streaming, thermal Doppler broadening and pressure smoothing all remove small-scale flux power; the last depends on the whole heating history, not on the temperature at the redshift observed [sec: `cosmo-lyman-alpha`].
 - **Size.** The same class of z > 4 high-resolution data gives, for a thermal relic:
@@ -133,6 +145,7 @@ A low N_eff cannot be attributed to photon heating at late times: raising the ph
 - **Referee citation.** arXiv:1912.09397 and arXiv:2309.04533 together.
 
 ## 12. From a cutoff scale to a particle mass
+<!-- key: from-a-cutoff-scale-to-a-particle-mass -->
 
 - **Production mechanism.** One data set: > 0.55 keV for a thermal relic, > 2.0 keV for a sterile neutrino (Viel et al. 2005, arXiv:astro-ph/0501562 [src]). The 7.1 keV sterile neutrino is excluded by structure formation only for lepton asymmetries L6 > 10 (Enzi et al. 2020, arXiv:2010.13802 [src]).
 - **Half-mode conversion.** M_hm = 10^7.8 M⊙ is quoted as 5.2 keV (Gilman et al. 2019, arXiv:1908.06983) and as 5.6 keV (Keeley et al. 2025, arXiv:2511.07765); 10^7.4 M⊙ as 6.5 keV (Gilman et al. 2025, arXiv:2511.07513) and as 7.4 keV (Nadler et al. 2021, arXiv:2101.07810) [src]. The difference is the transfer-function fit, the cosmology and M⊙ against M⊙/h. A 0.9 keV spread from the conversion alone is as large as the differences between probes [der: 7.4 − 6.5].
@@ -141,6 +154,7 @@ A low N_eff cannot be attributed to photon heating at late times: raising the ph
 - **Mitigation.** Compare limits in M_hm with one unit convention, or recompute the mass with one relation; state the criterion.
 
 ## 13. Milky Way satellite counts
+<!-- key: milky-way-satellite-counts -->
 
 Source for this section: the supplement of Nadler et al. 2020 (arXiv:2008.00022 [src]).
 
@@ -153,6 +167,7 @@ Source for this section: the supplement of Nadler et al. 2020 (arXiv:2008.00022 
 - **Referee citation.** arXiv:2008.00022 and the census papers it builds on, which this session did not fetch.
 
 ## 14. Strong-lensing flux ratios and arcs
+<!-- key: strong-lensing-flux-ratios-and-arcs -->
 
 Source for the priors: Gilman et al. 2025 §4.3 (arXiv:2511.07513 [src]).
 
@@ -165,6 +180,7 @@ Source for the priors: Gilman et al. 2025 §4.3 (arXiv:2511.07513 [src]).
 - **Referee citation.** arXiv:2511.07765, arXiv:2511.07513.
 
 ## 15. Stellar streams, luminosity functions, dwarf kinematics
+<!-- key: stellar-streams-luminosity-functions-dwarf -->
 
 | Probe | Dominant systematic | Size where quantified | Citation | Flag |
 |---|---|---|---|---|
@@ -176,12 +192,14 @@ Source for the priors: Gilman et al. 2025 §4.3 (arXiv:2511.07513 [src]).
 | One VLBI arc | a single lens; smooth-lens and source model | ≤ 4.4 × 10⁻²¹ eV excluded at 20:1 | Powell et al. 2023, arXiv:2302.10941 | [src] |
 
 ## 16. Combined small-scale limits
+<!-- key: combined-small-scale-limits -->
 
 - **Non-independence.** Joint limits reuse the same satellite census and earlier lensing posteriors. The 9.7 keV of Nadler et al. 2021 (arXiv:2101.07810) combines the satellite analysis with the 2019 eight-lens posterior and reports a 30% gain over either; it has not been redone with the JWST sample in a paper found here. The stream + satellite limit of 6.2 keV and the Lyα + lensing + satellite limit of 6.048 keV use overlapping satellite information (arXiv:1911.02663, arXiv:2010.13802 [src]).
 - **Shared theory.** The subhalo mass function and its tidal evolution enter satellites, streams and lensing alike; an error there is common-mode, and agreement between these three probes is weaker evidence than it looks. The Lyα forest (thermal history), the luminosity functions (star-formation efficiency) and dwarf kinematics have unrelated systematics.
 - **Mitigation.** Quote each probe's own limit next to the combination.
 
 ## 17. Interacting and self-interacting dark matter
+<!-- key: interacting-and-self-interacting-dark-matter -->
 
 - **Scale probed.** CMB limits and satellite limits on the same dark matter–baryon cross section differ by orders of magnitude because satellites probe smaller scales (Nadler et al. 2019, arXiv:1904.10000 [src]); state the probe with the cross section, and the velocity index n.
 - **Self-interaction, mergers.** The offset method depends more on how the centroids are measured than on the initial conditions, and early Bullet Cluster limits were overstated (Robertson, Massey & Eke 2016, arXiv:1605.04307 [src]). The ensemble offset is 5.8 ± 8.2 kpc (Harvey et al. 2015, arXiv:1503.07675 [src]).
@@ -189,12 +207,14 @@ Source for the priors: Gilman et al. 2025 §4.3 (arXiv:2511.07513 [src]).
 - **Velocity.** σ/m of 0.5 ± 0.2 cm²/g in groups and 0.19 ± 0.09 cm²/g in clusters refer to different velocities (Sagunski et al. 2020, arXiv:2006.12515 [src]); a limit without its velocity cannot be compared with another.
 
 ## 18. Sub-component axions, decays, the X-ray line
+<!-- key: sub-component-axions-decays-the-x-ray-line -->
 
 - **Axion hints from one data set.** A 2.7σ preference at 10⁻²⁶ eV in BOSS alone (Rogers et al. 2023, arXiv:2301.08361), a mild preference in the DESI luminous red galaxies that vanishes with the CMB (Verdiani et al. 2026, arXiv:2607.11876), and a 2.1σ preference at 10⁻²⁴·⁵ eV in ACT lensing driven by a few points (Laguë et al. 2026, arXiv:2606.06410) [src]. None survives combination; all depend on the non-linear model of the non-cold component.
 - **Decays.** Bayesian and profile-likelihood 68% regions differ strongly for two-body decays because of prior volume (Montandon et al. 2025, arXiv:2505.20193 [src]); the "best fit" lifetime of 120 Gyr with a 1.2% kick exists only with an S8 prior (Simon et al. 2022, arXiv:2203.07440 [src]).
 - **3.5 keV line.** The blank-sky exclusion depends on the background model: the limit relaxes by a factor of about 20, or by more than an order of magnitude, under the alternatives proposed in two comments (arXiv:2004.06170, arXiv:2004.06601, on Dessert, Rodd & Safdi 2018, arXiv:1812.06976 [src]).
 
 ## 19. What a referee checks in a results section
+<!-- key: what-a-referee-checks-in-a-results-section -->
 
 Neutrino mass and N_eff:
 
@@ -223,6 +243,7 @@ Dark matter:
 20. A hint from one data set is shown against the combination.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - Observational systematics of the primordial helium determination (LBT Y_p Project) were not researched.
 - The systematics of stream analyses beyond the abstract of arXiv:1911.02663 (baryonic perturbers, stream progenitor modelling) were not read.

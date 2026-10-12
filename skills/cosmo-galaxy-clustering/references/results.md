@@ -12,8 +12,10 @@ DESI full-shape data are still DR1 (November 2024). No DESI DR2 galaxy
 full-shape key paper was found in date-sorted searches up to 2026-10-07.
 
 ## 1. BAO distance ladder
+<!-- key: bao-distance-ladder -->
 
 ### 1.1 DESI DR2 (current)
+<!-- key: desi-dr2-current -->
 
 DESI Collaboration 2025, arXiv:2503.14738, distance table; Lyα row from DESI
 Collaboration 2025, arXiv:2503.14739. Systematic errors included. All [src].
@@ -55,6 +57,7 @@ consistent" with the baseline and finds no tracer-dependent systematics in
 (Sanders et al. 2026, arXiv:2608.27830). The abstract gives no numbers.
 
 ### 1.2 DESI DR1 (superseded by DR2)
+<!-- key: desi-dr1-superseded-by-dr2 -->
 
 DESI Collaboration 2024, arXiv:2404.03002, sample table. All [src].
 
@@ -75,6 +78,7 @@ most significant single DR1 detection is 9.1σ at z_eff = 0.93, a 0.86%
 measurement [src] (arXiv:2404.03000).
 
 ### 1.3 Pre-DESI measurements
+<!-- key: pre-desi-measurements -->
 
 | Survey, sample | z_eff | Measurement | Citation | Flag |
 |---|---|---|---|---|
@@ -98,6 +102,7 @@ w = −1.01 ± 0.06; in flat ΛCDM Ω_m = 0.310 ± 0.005 and
 H0 = 67.6 ± 0.5 km/s/Mpc [src] (Alam et al. 2017, arXiv:1607.03155).
 
 ## 2. ΛCDM parameters from BAO
+<!-- key: lambdacdm-parameters-from-bao -->
 
 Flat ΛCDM. "CMB" is the combination defined in each paper (Planck plus ACT
 lensing, with different likelihood versions in DR1 and DR2).
@@ -128,6 +133,7 @@ Consistency statements, flat ΛCDM [src]:
   (DESY5), supernovae preferring higher Ω_m (arXiv:2503.14738).
 
 ## 3. Full-shape constraints, flat ΛCDM
+<!-- key: full-shape-constraints-flat-lambdacdm -->
 
 Most use a BBN prior on ω_b (D'Amico et al. 2020 instead fix Ω_b/Ω_c); the
 n_s treatment differs and is stated.
@@ -171,8 +177,10 @@ Reading the table:
   in w0waCDM, where the shifts reach 2.1σ to 6.6σ [src] (arXiv:2508.11811).
 
 ## 4. Growth rate
+<!-- key: growth-rate -->
 
 ### 4.1 DESI DR1 ShapeFit (model-agnostic compression)
+<!-- key: desi-dr1-shapefit-model-agnostic-compression -->
 
 Adame et al. 2024, arXiv:2411.12021. Ratios from the ShapeFit results table
 (MAP values); absolute values from the appendix that lists the compressed data
@@ -196,6 +204,7 @@ There is no DESI DR2 fσ8 measurement from galaxy clustering as of the
 snapshot.
 
 ### 4.2 Earlier measurements
+<!-- key: earlier-measurements -->
 
 | Survey, sample | z_eff | fσ8 | Citation | Flag |
 |---|---|---|---|---|
@@ -208,8 +217,10 @@ The SDSS cosmology paper combines six fσ8 measurements [src]
 `cosmo-peculiar-velocities`.
 
 ## 5. Extended models (summary; interpretation in sibling skills)
+<!-- key: extended-models-summary-interpretation-in -->
 
 ### 5.1 w0waCDM preference over ΛCDM
+<!-- key: w0wacdm-preference-over-lambdacdm -->
 
 | Combination | DR1 BAO | DR2 BAO | DR2 BAO + Lyα AP | Flag |
 |---|---|---|---|---|
@@ -256,6 +267,7 @@ Full-shape side:
 The dark-energy interpretation is in `cosmo-dark-energy-modified-gravity`.
 
 ### 5.2 Other one-parameter extensions
+<!-- key: other-one-parameter-extensions -->
 
 | Quantity | Value | Dataset, model | Citation | Flag |
 |---|---|---|---|---|
@@ -275,6 +287,7 @@ Neutrino-mass interpretation: `cosmo-neutrinos-dark-matter`. Modified
 gravity: `cosmo-dark-energy-modified-gravity`.
 
 ### 5.3 H0 without the sound horizon
+<!-- key: h0-without-the-sound-horizon -->
 
 Rescaling the power spectrum to remove r_s information and relying on the
 equality scale, with uncalibrated DR1 BAO and θ_*, DESI DR1 gives
@@ -283,6 +296,7 @@ three choices of the external Ω_m information [src] (Zaborowski et al. 2025,
 arXiv:2510.19149).
 
 ## 6. Local primordial non-Gaussianity from scale-dependent bias (status)
+<!-- key: local-primordial-non-gaussianity-from-scale -->
 
 | Data | f_NL^loc (68%) | Assumption on b_φ | Citation | Flag |
 |---|---|---|---|---|
@@ -304,6 +318,7 @@ analysis used 1,631,716 LRGs (0.6 < z < 1.1) and 1,189,129 QSOs
 f_NL^equil = 719 ± 390, f_NL^orth = −200 ± 100 [src] (arXiv:2512.04266).
 
 ## 7. History of the key numbers
+<!-- key: history-of-the-key-numbers -->
 
 **BAO precision.**
 
@@ -339,6 +354,7 @@ DESI DR1 (2024); see Sect. 3.
 σ = 5.1 from Planck; see Sect. 6.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - The aggregate isotropic BAO precision of DESI DR2 (not in the abstract or
   the sections read).

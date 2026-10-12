@@ -16,8 +16,10 @@ disagreements about "how many sigma" in this field are disagreements about
 one of these four, not about data.
 
 ## 1. Tension metrics
+<!-- key: tension-metrics -->
 
 ### 1.1 Definitions
+<!-- key: definitions -->
 
 Read in Section 3.1 of Schöneberg et al. 2026 (arXiv:2607.13283) [src], which
 follows the notation of Raveri & Hu 2019 (arXiv:1806.04649):
@@ -47,6 +49,7 @@ sets; parameter-space metrics ask how significant the difference of the two
 posteriors is in the parameters both constrain [sec: stat].
 
 ### 1.2 Converting to "sigma"
+<!-- key: converting-to-sigma -->
 
 - A probability p is quoted as the two-sided Gaussian equivalent n with
   erfc(n / sqrt 2) = p, unless a paper says otherwise. The CatWISE dipole
@@ -61,6 +64,7 @@ posteriors is in the parameters both constrain [sec: stat].
   Section 7 gives the worked case.
 
 ### 1.3 Rules that decide most disputes
+<!-- key: rules-that-decide-most-disputes -->
 
 1. Name the reference. H0: 4.4σ to 7.1σ for the same local value across four
    early endpoints (`results.md` §1.2). S8: four CMB endpoints from 0.819 to
@@ -88,6 +92,7 @@ posteriors is in the parameters both constrain [sec: stat].
    likelihood can disagree on the same data (early dark energy, Section 11).
 
 ## 2. H0 tension
+<!-- key: h0-tension -->
 
 Definition. The difference between H0 from a calibrated local distance scale
 and H0 inferred in flat ΛCDM from data that fix the sound horizon r_d (CMB
@@ -118,6 +123,7 @@ Consequences of the construction.
   collaboration; the tables of `results.md` §1.2 follow that convention.
 
 ## 3. S8 tension
+<!-- key: s8-tension -->
 
 Definition. S8 ≡ σ8 (Ω_m / 0.3)^0.5 is the combination best constrained by
 cosmic shear. The tension is the difference between S8 from a low-redshift
@@ -144,6 +150,7 @@ CMB reference (Planck PR3, PR4, P-ACT, or the three-experiment combination);
 projected against full-space metric; ΛCDM against wCDM chains.
 
 ## 4. CMB internal: A_L, tau, CMB-BAO discrepancy
+<!-- key: cmb-internal-al-tau-cmb-bao-discrepancy -->
 
 A_L. A phenomenological factor that rescales the lensing potential power
 used to smooth the acoustic peaks of the TT, TE and EE spectra; A_L = 1 is
@@ -178,6 +185,7 @@ rephrasing of the marginal agreement of the two probes in ΛCDM"
 [sec: inf, de]. Five parameters respond to one mismatch.
 
 ## 5. Dynamical dark energy preference and negative neutrino mass
+<!-- key: dynamical-dark-energy-preference-and-negative -->
 
 w0wa. w(a) = w0 + wa (1 − a). The preference is the improvement of the
 best-fit χ² over ΛCDM, converted to σ with two degrees of freedom, with
@@ -196,6 +204,7 @@ ordering). The width of a posterior truncated at zero is not a sensitivity
 [sec: nu].
 
 ## 6. Cosmic dipole
+<!-- key: cosmic-dipole -->
 
 Kinematic expectation. An observer moving with velocity v = βc relative to
 the frame in which distant sources are isotropic sees a dipole in the number
@@ -246,6 +255,7 @@ because the intrinsic velocity of a source sample falls with its redshift
 not in `sources.tsv`).
 
 ## 7. Large-angle CMB anomalies
+<!-- key: large-angle-cmb-anomalies -->
 
 Each anomaly is a summary statistic of the temperature map whose observed
 value lies in the tail of its distribution over isotropic Gaussian ΛCDM
@@ -283,6 +293,7 @@ anomaly tests published in the literature and argues that 16 or even 50 is
 plausible [src].
 
 ## 8. Bulk flow
+<!-- key: bulk-flow -->
 
 The bulk flow is the volume average of the peculiar velocity field inside a
 window; it is estimated from radial peculiar velocities (log-distance
@@ -296,6 +307,7 @@ Definitions, estimators and their equations are in
 scales; they are related only if one posits a single coherent flow.
 
 ## 9. JWST high-redshift abundance
+<!-- key: jwst-high-redshift-abundance -->
 
 The argument of Boylan-Kolchin 2023 (arXiv:2208.01611) [src]: the stellar
 mass of a galaxy is limited by the baryons of its halo, M_* ≤ ε f_b M_halo
@@ -315,6 +327,7 @@ with a model of star-formation efficiency rather than with a hard bound
 (Prada et al. 2026, arXiv:2604.18683) [src].
 
 ## 10. Curvature, birefringence, parity-odd 4PCF
+<!-- key: curvature-birefringence-parity-odd-4pcf -->
 
 - Curvature: Ω_K = 1 − Ω_tot, so Ω_K < 0 is closed. From the CMB alone it is
   measured through lensing smoothing and the geometric degeneracy, which
@@ -332,6 +345,7 @@ with a model of star-formation efficiency rather than with a hard bound
 Details in `cosmo-inflation-primordial` and `cosmo-beyond-two-point`.
 
 ## 11. Theoretical resolutions of the H0 tension
+<!-- key: theoretical-resolutions-of-the-h0-tension -->
 
 Classification, following the H0 World Cup (arXiv:2607.13283) [src]:
 
@@ -379,6 +393,7 @@ The limits on early-time models.
 Results of the model comparisons are in `open-questions.md` §2.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - The defining integrals of S_1/2, R^TT, σ²_16 and S_QO and the amplitude of
   the dipolar modulation were not read; only the verbal definitions in the

@@ -6,6 +6,7 @@ Snapshot: 2026-10-07
 Citation years in this skill are arXiv submission years, as in `sources.tsv`; the journal year is often one later.
 
 ## 1. N-body methods and codes
+<!-- key: n-body-methods-and-codes -->
 
 The reference review of collisionless simulations is Angulo & Hahn 2021 (arXiv:2112.05165). It covers the equations and their link to general relativity, the discretisation of phase space (N-body, Lagrangian submanifold, Schrödinger–Poisson), force calculation (direct summation, mesh, tree), initial conditions, extensions (baryons, neutrinos, primordial non-Gaussianity, modified gravity), and the path to observables (structure finding, emulators, light-cones). Read its section list before writing a methods paragraph.
 
@@ -25,6 +26,7 @@ The GADGET-4 paper states that the code offers both a classic entropy-conserving
 **Variance suppression.** "Fixed and paired" simulations fix the initial mode amplitudes to the ensemble mean and run a second box with opposite phases; a fixed pair can be as precise on non-linear scales as an average over 50 traditional simulations, for P(k), the redshift-space multipoles, the halo mass function and the reduced bispectrum at z = 1 [src] (Angulo & Pontzen 2016, arXiv:1603.05253). The UNIT project found the two- and three-point statistics unbiased, the variance of two-point statistics greatly reduced, and the variance of three-point statistics not significantly reduced [src] (Chuang et al. 2018, arXiv:1811.02111). A fixed-amplitude box therefore cannot be used to estimate a covariance. Zel'dovich control variates are the other variance-reduction technique in production: Aemulus ν reports effective-volume gains of 10 to 10⁵ depending on the statistic [src] (DeRose et al. 2023, arXiv:2303.09762).
 
 ## 2. Initial conditions
+<!-- key: initial-conditions -->
 
 Initial conditions displace particles from a grid or glass with Lagrangian perturbation theory (LPT) at a starting redshift z_i. Three papers define current practice.
 
@@ -37,6 +39,7 @@ Baryons and dark matter have different transfer functions; MUSIC generalises to 
 Two flagship runs show how far practice is spread. FLAMINGO uses multi-fluid 3LPT initial conditions (monofonIC, modified for massive neutrinos) at z = 31, chosen "as late as possible to limit discreteness errors", in the N-body gauge, with partially fixed amplitudes (modes with (kL)² < 1025 set to the mean variance) and phases taken from Panphasia so that zoom resimulations are possible [src] (arXiv:2306.04024, section 2.4). Euclid Flagship 2 uses 1LPT at z = 99 [src] (arXiv:2405.13495, section 2.1).
 
 ## 3. Hydrodynamics and sub-grid models
+<!-- key: hydrodynamics-and-sub-grid-models -->
 
 Reviews: Vogelsberger et al. 2019 (arXiv:1909.07976) for methodology; Crain & van de Voort 2023 (arXiv:2309.17075) for what the galaxy-formation suites get right and where they disagree; Chisari et al. 2019 (arXiv:1905.06082) for the consequences for survey cosmology.
 
@@ -65,6 +68,7 @@ Reviews: Vogelsberger et al. 2019 (arXiv:1909.07976) for methodology; Crain & va
 These accuracies are all statements about reproducing simulations, not about the real Universe. Which point of the model space nature occupies is the open question (see `open-questions.md` §1.1), and its consequences for S8 are treated in `cosmo-weak-lensing` and `cosmo-cmb-lss-cross-correlations`.
 
 ## 4. Hydrodynamical simulations for the Lyα forest
+<!-- key: hydrodynamical-simulations-for-the-lyalpha -->
 
 The forest at 2 < z < 5 comes from gas near the mean density, so the simulation problem differs from galaxy formation: uniform resolution of low-density gas matters more than sub-grid physics, and the thermal and ionisation history of the intergalactic medium replaces feedback as the main nuisance. The analyses themselves (P1D, P3D, BAO, thermal state, dark-matter limits) are in `cosmo-lyman-alpha`.
 
@@ -100,6 +104,7 @@ Units differ between these emulators (Mpc⁻¹ for LaCE and ForestFlow, h/Mpc fo
 **Synthetic spectra for BAO analyses.** Lyα BAO mocks are not hydrodynamical. LyaCoLoRe turns Gaussian-random-field skewers into transmitted-flux skewers with fast approximations, recovers the BAO signal and literature-like bias parameters, and can add high-column-density systems and metals (Farr et al. 2019, arXiv:1912.02763). The date-sorted search of 2025–2026 found hybrid-EFT and field-level forward models validated on AbacusSummit with a painted forest and on Sherwood (titles seen: arXiv IDs not cited because the abstracts were not read in full).
 
 ## 5. Approximate methods and fast mocks
+<!-- key: approximate-methods-and-fast-mocks -->
 
 Approximate methods exist because a covariance matrix or a field-level inference needs hundreds to millions of forward evaluations, and a tree code cannot supply them. They fall into four families, ordered by decreasing cost.
 
@@ -129,6 +134,7 @@ Neutrinos in FastPM: Bayer et al. (2020) add neutrino particles with quasi-rando
 **Choosing between them.** The rule that the comparison papers support is: use the cheapest method whose error on the statistic you need is below your tolerance, and state the reference it was calibrated on. Methods calibrated on two-point statistics are not validated for the bispectrum (section 5 of `systematics.md`).
 
 ## 6. Galaxy–halo connection
+<!-- key: galaxy-halo-connection -->
 
 Review: Wechsler & Tinker 2018 (arXiv:1804.03097), which defines the galaxy–halo connection as the multivariate distribution of galaxy and halo properties. Its summary numbers: star-formation efficiency peaks in haloes near 10¹² M_⊙, where less than 20% of the baryons have turned into stars; the intrinsic scatter in stellar mass at fixed halo mass is below 0.2 dex above that mass [src].
 
@@ -150,6 +156,7 @@ The methods used to populate gravity-only simulations, from fewest to most assum
 **Resolution requirement.** Halo statistics are converged at 1% only above 500 particles per halo [src] (arXiv:1804.05865). HalfDome resolves haloes only above about 6 × 10¹² M_⊙/h [src] (arXiv:2407.17462): enough for LRG-like hosts, not for emission-line galaxies. Flagship 2 was sized to resolve 10¹¹ M_⊙/h haloes with m_p = 10⁹ M_⊙/h, that is, with about 100 particles [der: 10¹¹/10⁹ from arXiv:2405.13495 section 2.1], and applies halo-mass corrections for incompleteness and discreteness (section titles of arXiv:2405.13495; content not read).
 
 ## 7. Light-cones and survey realism
+<!-- key: light-cones-and-survey-realism -->
 
 A survey observes the past light-cone, not a snapshot. Four constructions are in use.
 
@@ -171,6 +178,7 @@ A survey observes the past light-cone, not a snapshot. Four constructions are in
 The DESI DR1 clustering of data and simulations agrees to within 2% in the inferred real-space overdensity field according to the DESI 2024 II abstract (read, outside the source list); the instrument and survey side of realism is in `cosmo-surveys-facilities` and `cosmo-galaxy-clustering`.
 
 ## 8. Emulators
+<!-- key: emulators -->
 
 An emulator interpolates a summary statistic between simulations run on a design in parameter space. The design choices that decide its accuracy:
 
@@ -184,6 +192,7 @@ An emulator interpolates a summary statistic between simulations run on a design
 The accuracy table is in `results.md` §2. Two rules for reading it. The quoted figure is measured against held-out simulations of the same suite, so it is an interpolation error; the simulation error (section 1 of `results.md`) and the baryonic effect add to it. And the range of validity in parameters matters as much as the range in k: w_a, neutrino mass and curvature are covered by some emulators and not by others, and the EuclidEmulator2 paper itself reports that adding w_a "significantly increases the complexity and expense" [src] (arXiv:2010.11288). How emulator error enters a likelihood is treated in `cosmo-statistics-inference`.
 
 ## 9. Constrained simulations and reconstructions of the local Universe
+<!-- key: constrained-simulations-and-reconstructions-of -->
 
 A constrained simulation is a realisation of the initial conditions chosen so that the evolved field reproduces an observed region. Unconstrained simulations can be compared with the data only statistically; constrained ones allow object-by-object comparison (named clusters, the Local Group, a void). Two families of methods exist, and they differ in what is treated as data and in what is sampled.
 
@@ -208,6 +217,7 @@ A constrained simulation is a realisation of the initial conditions chosen so th
 **9.5 What it is not.** The reconstructions assume a cosmology in the prior and in the forward model. A BORG field is a conditional reconstruction, not a parameter constraint; the distinction between sampled initial conditions, Gaussian field-level likelihoods (flip) and neural approaches is drawn in `cosmo-beyond-two-point`, and the use of reconstructed velocity fields for peculiar-velocity corrections in `cosmo-peculiar-velocities`.
 
 ## 10. Neutrino and modified-gravity simulations
+<!-- key: neutrino-and-modified-gravity-simulations -->
 
 **Massive neutrinos.** Three implementations appear in the suites read:
 - neutrinos as a second particle species, accurate up to the largest mass simulated (0.5 eV in Aemulus ν, arXiv:2303.09762);
@@ -222,6 +232,7 @@ The Euclid code comparison tested eleven full N-body implementations (not all in
 **Non-cold dark matter.** Warm dark matter runs are part of Sherwood (arXiv:1605.03462); fuzzy and self-interacting dark matter need dedicated solvers and are covered, with the limits they support, in `cosmo-neutrinos-dark-matter`.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - The Hoffman–Ribak constrained-realisation algorithm is named in section 9 as a textbook method; its original paper (1991) was not fetched and carries no identifier here.
 - Relativistic N-body methods (gevolution), GPU-native differentiable fast-multipole codes and other 2026 code releases were seen in the date-sorted search by title only.

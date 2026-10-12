@@ -7,6 +7,7 @@ Scope: the live controversies in observational primordial physics with both side
 Flags as in the other files. Numbers are repeated here only when the argument needs them; tables are in `results.md`.
 
 ## 1. Has n_s moved, and does it exclude Starobinsky-type inflation?
+<!-- key: has-ns-moved-and-does-it-exclude-starobinsky -->
 
 **The claim.** ACT DR6 combined with a truncated Planck, CMB lensing and DESI DR1 BAO gives n_s = 0.974 ± 0.003 in ΛCDM, and the Starobinsky R² model then sits on the 2σ boundary for 50–60 e-folds (arXiv:2503.14452, arXiv:2503.14454). The leading-order prediction n_s ≈ 1 − 2/N gives 0.960–0.967 for N = 50–60 [der], which is 2.3 to 4.7σ below 0.974 if the error 0.003 is taken at face value [der: (0.974 − 0.967)/0.003 and (0.974 − 0.960)/0.003]. A literature of "ACT-compatible" models followed: Higgs inflation with vector-like quark stabilisation (McDonald 2025, arXiv:2505.07488), extensions of the α-Starobinsky model (Shobcha et al. 2026, arXiv:2606.24131), polynomial and α-attractor variants reviewed by Kallosh and Linde (arXiv:2505.13646).
 
@@ -21,12 +22,14 @@ Flags as in the other files. Numbers are repeated here only when the argument ne
 **Where it stands.** Three numbers are in use for the same quantity: 0.965 (Planck 2018), 0.968 (CMB-SPA), 0.974 (P-ACT-LB). A statement that a model is excluded is a statement about one of them, in ΛCDM, for an assumed N. What will decide: whether the DESI–CMB distance tension survives the DESI full-survey BAO and the dark-energy debate (`cosmo-dark-energy-modified-gravity`), and the SO and SPT-3G small-scale spectra.
 
 ## 2. Running of the spectral index
+<!-- key: running-of-the-spectral-index -->
 
 - eBOSS Lyα P1D with Planck gave dn_s/dln k = −0.010 ± 0.004 (arXiv:1911.09073). P-ACT alone excludes that value at more than 3σ, and the DESI DR1 P1D with CMB and BAO gives 0.0014 ± 0.0041 (arXiv:2503.14454, arXiv:2601.21432). The negative running is superseded; the cause on the Lyα side is discussed in `cosmo-lyman-alpha`.
 - Planck prefers a slightly negative running, ACT alone a positive one at 1.5σ (0.034 ± 0.022) [der]; combined they give zero within 1.2σ (arXiv:2503.14454).
 - The slow-roll expectation, |α_s| of order 10⁻³, is five times below the present error. **Forecasts**: Euclid σ(α_s) = 0.004 (pessimistic) to 0.0015 (optimistic) (arXiv:2507.15819); SO-like and CMB-HD-like surveys tighten the binned spectrum at k = 0.2 Mpc⁻¹ from 0.5% to 0.1% (arXiv:2609.35964). A detection of slow-roll running is therefore not expected from the experiments now funded, unless the optimistic Euclid case is combined with a future CMB data set.
 
 ## 3. Tensor modes: how far can r be pushed, and by whom?
+<!-- key: tensor-modes-how-far-can-r-be-pushed-and-by-whom -->
 
 - **Current floor.** r < 0.036 from BK18, σ(r) = 0.009 (arXiv:2110.00483). No newer B-mode limit on inflationary r exists at the snapshot (search of 2026-10-09). SPT-3G's independent r < 0.25 confirms the method, not the depth (arXiv:2505.02827).
 - **The target.** For Starobinsky-type models r ≈ 12/N² is 0.003–0.005 [der, textbook formula]. Reaching it at 3σ needs σ(r) near 10⁻³.
@@ -36,6 +39,7 @@ Flags as in the other files. Numbers are repeated here only when the argument ne
 - **The Lyth bound** ties a detection at the current level to a super-Planckian field excursion (arXiv:hep-ph/9606387); a null result at r of order 10⁻³ would leave small-field models untouched.
 
 ## 4. Can large-scale structure overtake the CMB on f_NL?
+<!-- key: can-large-scale-structure-overtake-the-cmb-on -->
 
 **For.** DESI DR1 reaches σ(f_NL^local) = 9 from scale-dependent bias (arXiv:2411.17623); an external power spectrum + bispectrum reanalysis of DESI DR1 quotes −0.1 ± 7.4, and −0.0 ± 4.1 combined with the CMB, "the strongest bound on multi-field inflation yet obtained" (arXiv:2512.04266). SPHEREx is designed for Δf_NL < 0.5 (**forecast**, arXiv:2511.02985) and Euclid forecasts 2.2 (**forecast**, arXiv:2507.15819).
 
@@ -52,6 +56,7 @@ Flags as in the other files. Numbers are repeated here only when the argument ne
 **What decides.** DESI full-survey samples (2027), then SPHEREx; for both the limiting issue is b_φ and imaging systematics, not volume.
 
 ## 5. Spatial curvature: closed, flat or open?
+<!-- key: spatial-curvature-closed-flat-or-open -->
 
 - **Closed (2019–2020).** Planck 2018 spectra alone prefer Ω_K < 0 at more than 99% (arXiv:1807.06209, arXiv:1911.02087), in 2.5–3σ tension with lensing and BAO in the curved model (arXiv:1908.09139). Counter-position: with a different Planck likelihood the spectra are consistent with flatness and CMB + BAO give 0.0004 ± 0.0018 (arXiv:2002.06892). The preference is the A_L feature in another parameter (arXiv:1807.06209); its later history is in `cosmo-cmb`.
 - **Open (2025–2026).** DESI DR2 + CMB give Ω_K = +0.0023 ± 0.0011 (arXiv:2503.14738); low-redshift data alone are claimed to prefer an open universe at 2σ to 5σ depending on the supernova sample (arXiv:2512.19565). Counter-position: the preference exists only inside ΛCDM and vanishes when dark energy is allowed to evolve, so it is "an artifact of limited model flexibility" (arXiv:2604.23492); DESI's own w0waCDM + Ω_K fits are consistent with zero (arXiv:2503.14738).
@@ -59,6 +64,7 @@ Flags as in the other files. Numbers are repeated here only when the argument ne
 - **Judgment.** Both the 2019 closed hint and the 2025 open hint appear when two data sets that disagree in ΛCDM are forced into ΛCDM + Ω_K. Neither exceeds about 2σ in a combined fit. **Forecast**: Euclid σ(Ω_K) = 0.0044 (0.003) alone (arXiv:2507.15819), which does not improve on DESI + CMB.
 
 ## 6. Cosmic birefringence: a 4.8σ signal nobody claims
+<!-- key: cosmic-birefringence-a-4-8sigma-signal-nobody -->
 
 - **For.** Same sign and size in WMAP, Planck PR3, Planck PR4 and ACT DR6; no frequency dependence over 23–353 GHz; a joint ACT + Planck analysis at 0.277° ± 0.057° (arXiv:2205.13962, arXiv:2509.13654, arXiv:2608.06480).
 - **Against.** Each analysis rests on an assumption about either the Galactic EB or the instrument angles. β falls with larger masks in Planck PR4 (arXiv:2201.07682); ACT has "systematics … that are not understood" (arXiv:2509.13654); the joint 4.8σ takes the ACT priors at face value and falls to 3.5σ in the dust-robust variant (arXiv:2608.06480).
@@ -66,14 +72,17 @@ Flags as in the other files. Numbers are repeated here only when the argument ne
 - **Interpretation** (axion-like dark energy or dark matter, early dark energy) is reviewed by Komatsu (arXiv:2202.13919) and belongs to `cosmo-dark-energy-modified-gravity` and `cosmo-neutrinos-dark-matter`.
 
 ## 7. Primordial features: residual hints
+<!-- key: primordial-features-residual-hints -->
 
 Planck spectra contain a few frequencies with Δχ² ≈ −10 to −15, at most 2.6σ globally, weaker with PR4 (arXiv:2605.30236). The combination of Planck, ACT DR6 and DESI DR2 limits oscillation amplitudes to about 2% and the Bayesian evidence prefers no feature (arXiv:2606.28310). DESI DR1 clustering reaches 3% and shows that a fixed-cosmology search converts the DESI–Planck distance mismatch into a 3σ "feature" (arXiv:2610.10530). **Forecasts**: an order of magnitude from SO + LiteBIRD (arXiv:2605.30236) and from DESI and Euclid relative to BOSS (arXiv:1906.08758); Euclid measures an amplitude of 0.01 to about 20% (arXiv:2507.15819). The open method question is how to combine CMB and galaxy searches when their background cosmologies disagree.
 
 ## 8. Isocurvature
+<!-- key: isocurvature -->
 
 No hint. The open directions are small scales, where ACT improved the blue-tilted CDI limit by more than a factor of two (59 to 26 in units of 10⁻¹⁰ at k = 0.1 Mpc⁻¹; arXiv:2503.14454) and where adding SPT improves the tilt constraint moderately (arXiv:2606.11312), and the dependence of the limits on n_s and on the data combination. **Forecast**: Euclid would tighten blue-tilted isocurvature limits by an order of magnitude (arXiv:2507.15819).
 
 ## 9. Internal tensions between analyses
+<!-- key: internal-tensions-between-analyses -->
 
 | Quantity | Analysis A | Analysis B | Size | Status |
 |---|---|---|---|---|
@@ -92,6 +101,7 @@ No hint. The open directions are small scales, where ACT improved the blue-tilte
 No tension exists between B-mode analyses: all current r limits below 0.05 use the BICEP/Keck maps.
 
 ## 10. Method debates
+<!-- key: method-debates -->
 
 1. **Which n_s goes to model builders.** CMB + BAO in ΛCDM (the tightest; arXiv:2503.14452), CMB only (arXiv:2507.12459), or a posterior marginalised over late-time and neutrino extensions (arXiv:2607.28445, arXiv:2609.35964). The choice changes the verdict on the most-cited models.
 2. **Fixing or marginalising b_φ.** Fixed p per tracer (arXiv:2411.17623); narrow Gaussian priors on p (arXiv:2606.24651); simulation priors (arXiv:2602.12357); or reporting f_NL · b_φ only (arXiv:2205.05673).
@@ -103,6 +113,7 @@ No tension exists between B-mode analyses: all current r limits below 0.05 use t
 8. **Limit construction.** Bayesian with a flat prior on r against Feldman–Cousins (arXiv:2103.13334).
 
 ## 11. What the next data will decide
+<!-- key: what-the-next-data-will-decide -->
 
 | Question | Data | Expected (all **forecasts** unless marked) | Source |
 |---|---|---|---|
@@ -118,6 +129,7 @@ No tension exists between B-mode analyses: all current r limits below 0.05 use t
 Forecasts that cite CMB-S4 (for example the Euclid combinations in arXiv:2507.15819 and the "wishful CMB-Stage 4" of arXiv:2507.16714) describe an experiment that is no longer funded.
 
 ## 12. Misconceptions and stale claims
+<!-- key: misconceptions-and-stale-claims -->
 
 1. **"ACT measured n_s = 0.974."** ACT + truncated Planck give 0.9709 ± 0.0038; 0.974 needs CMB lensing and DESI BAO in ΛCDM; the CMB-only three-experiment value is 0.9679 ± 0.0033 (arXiv:2503.14452, arXiv:2506.20707, arXiv:2507.12459).
 2. **"Starobinsky inflation is ruled out."** On the 2σ boundary for one data combination in ΛCDM; allowed in extended models, with refined predictions for N⋆ ≳ 58, and with the CMB-only n_s (arXiv:2607.28445, arXiv:2609.35964, arXiv:2504.20757).
@@ -140,6 +152,7 @@ Forecasts that cite CMB-S4 (for example the Euclid combinations in arXiv:2507.15
 19. **Quoting an isocurvature limit as "less than a few per cent" without the mode.** Planck limits range from β_iso < 0.001 (fully correlated CDI) to 7.4% (NDI at k = 0.002 Mpc⁻¹) (arXiv:1807.06211).
 
 ## 13. Not verified
+<!-- key: not-verified -->
 
 - Whether a BK24 r result has been presented in talks; only arXiv was searched.
 - Any Simons Observatory measurement (first B-mode spectra, n_s) announced outside arXiv.

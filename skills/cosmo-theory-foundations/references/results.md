@@ -5,6 +5,7 @@ Snapshot: 2026-10-07
 Every number is the size of an approximation, a correction or a convention difference, with the range in which the cited paper states it. Flags: [src] read in the cited paper, [der] derived here with the derivation given. Cosmological parameter values belong to the sibling skills.
 
 ## 1. Summary table
+<!-- key: summary-table -->
 
 The numbers most often needed, each detailed in the section named.
 
@@ -24,6 +25,7 @@ The numbers most often needed, each detailed in the section named.
 | Wide-angle corrections | non-negligible beyond opening angles of ~30° | arXiv:2608.19039 [src] | 6 |
 
 ## 2. Sound-horizon fitting formulae
+<!-- key: sound-horizon-fitting-formulae -->
 
 | Formula or statement | Stated accuracy and range | Source, flag |
 |---|---|---|
@@ -58,6 +60,7 @@ Values of the ruler, to recognise which convention a number belongs to:
 θ_MC and θ_* differ by 0.00018 in 100θ, about 0.6 of the quoted error [der]: a prior written on one cannot be applied to the other.
 
 ## 3. Growth-rate and growth-index approximations
+<!-- key: growth-rate-and-growth-index-approximations -->
 
 Read in Linder 2005, arXiv:astro-ph/0507263, Sect. V.1 [src]. Accuracy of g(a) from Eqs. 16–17:
 
@@ -89,6 +92,7 @@ Read in Linder 2005, arXiv:astro-ph/0507263, Sect. V.1 [src]. Accuracy of g(a) f
 - DESI fiducial amplitude: σ8 = 0.811355, defined "excluding neutrinos" (arXiv:2411.12021) [src]; Planck 2018 quotes σ8 = 0.8111 ± 0.0060 for total matter (arXiv:1807.06209, Table 1) [src]. The two fields differ by roughly f_ν in amplitude (section 8), so equal numbers do not mean equal definitions.
 
 ## 4. Transfer-function and non-linear prescriptions
+<!-- key: transfer-function-and-non-linear-prescriptions -->
 
 Read in Eisenstein & Hu 1998, arXiv:astro-ph/9709112 [src]:
 
@@ -120,6 +124,7 @@ Halo-model ingredients [src, abstracts]: Tinker mass function calibrated to ≲5
 Reading rule: each figure is a fit error against one simulation set. Outside the calibrated range (w0wa far from −1, heavy neutrinos, z > 2–3, k > 10 h/Mpc) none is a bound. Aletheia is quoted in Mpc⁻¹, the others in h/Mpc: converting a k_max needs h. The N-body and emulator floor is in `cosmo-simulations-mocks`.
 
 ## 5. Limber approximation
+<!-- key: limber-approximation -->
 
 | Statement | Size | Source [src] |
 |---|---|---|
@@ -138,6 +143,7 @@ Reading rule: each figure is a fit error against one simulation set. Outside the
 The asymmetry to remember: for cosmic shear, with broad kernels, Limber has been safe for every survey analysed so far; for galaxy clustering in tomographic bins it is not, and DES Y3 already computed clustering without it (arXiv:2105.13548). Differentiable non-Limber codes now include RSD, magnification, f_NL, intrinsic alignments, CMB lensing and ISW (Chiarenza et al. 2026, arXiv:2609.01855).
 
 ## 6. Wide-angle and relativistic terms
+<!-- key: wide-angle-and-relativistic-terms -->
 
 | Statement | Size | Source [src, abstracts] |
 |---|---|---|
@@ -152,6 +158,7 @@ The asymmetry to remember: for cosmic shear, with broad kernels, Limber has been
 The sibling clustering skill does not list wide-angle terms among the BAO or RSD systematics; they matter for f_NL and dipole analyses and are on the referee list of `cosmo-peculiar-velocities`.
 
 ## 7. Perturbation theory and EFTofLSS validity ranges
+<!-- key: perturbation-theory-and-eftoflss-validity-ranges -->
 
 | Model or analysis | Range | Statement | Source [src] |
 |---|---|---|---|
@@ -175,6 +182,7 @@ The sibling clustering skill does not list wide-angle terms among the BAO or RSD
 A k_max is not a property of the theory alone: it depends on the tracer's bias and density, the redshift, the multipoles fitted and the nuisance priors.
 
 ## 8. Neutrino effects on σ8, growth and the power spectrum
+<!-- key: neutrino-effects-on-sigma8-growth-and-the-power -->
 
 | Statement | Size | Condition | Source [src] |
 |---|---|---|---|
@@ -190,6 +198,7 @@ A k_max is not a property of the theory alone: it depends on the tracer's bias a
 Worked example [der]: Σm_ν = 0.06 eV gives ω_ν = 0.06/93.14 = 0.00064; with ω_m = 0.143, f_ν = 0.0045; ΔP/P ≈ −3.6% on small linear scales at fixed ω_m. If neutrinos are unclustered at 8 h⁻¹Mpc, δ_m = (1 − f_ν) δ_cb there, so the total-matter σ8 is below the cb σ8 by about f_ν, 0.45%: the size of the Planck-versus-DESI definition difference, comparable to the 0.7% error on Planck's σ8.
 
 ## 9. History of the key approximations
+<!-- key: history-of-the-key-approximations -->
 
 What replaced what, so that a stale convention can be recognised.
 
@@ -209,6 +218,7 @@ What replaced what, so that a stale convention can be recognised.
 | Multipole estimator | plane-parallel, per-pair sums | Yamamoto with FFTs (2015–2017); wide-angle window (2019); optimal two-ℓ (2026) | odd multipoles appear | arXiv:astro-ph/0505115; arXiv:1810.05051; arXiv:2607.05513 |
 
 ## Not verified
+<!-- key: not-verified -->
 
 - The accuracy of DESI's power-law r_d formula against a Boltzmann code.
 - Any quantified size of the wide-angle correction to the BOSS or DESI quadrupole: only qualitative statements were read.

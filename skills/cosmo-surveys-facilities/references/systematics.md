@@ -10,8 +10,10 @@ does not replace the systematics files of the probe skills: it says which
 hardware or strategy choice creates the effect and where to read on.
 
 ## 1. Spectroscopic surveys
+<!-- key: spectroscopic-surveys -->
 
 ### 1.1 Fibre collisions and assignment incompleteness
+<!-- key: fibre-collisions-and-assignment-incompleteness -->
 
 - **Mechanism.** A fibre system cannot observe every target of a dense
   list. Plates forbid close neighbours; robotic positioners reach only a
@@ -33,6 +35,7 @@ hardware or strategy choice creates the effect and where to read on.
   `cosmo-peculiar-velocities` for the effect on low-redshift samples.
 
 ### 1.2 Redshift success and its dependence on the instrument
+<!-- key: redshift-success-and-its-dependence-on-the -->
 
 - **Mechanism.** The probability of a good redshift depends on exposure
   depth, fibre throughput, position in the focal plane and target
@@ -47,6 +50,7 @@ hardware or strategy choice creates the effect and where to read on.
 - **Where.** `cosmo-galaxy-clustering`.
 
 ### 1.3 Redshift accuracy
+<!-- key: redshift-accuracy -->
 
 - **Mechanism.** Broad or asymmetric lines (quasars), line misidentification
   and wavelength calibration shift redshifts coherently.
@@ -58,6 +62,7 @@ hardware or strategy choice creates the effect and where to read on.
   RSD), `cosmo-lyman-alpha` (quasar redshifts in the cross-correlation).
 
 ### 1.4 Target selection inherited from imaging
+<!-- key: target-selection-inherited-from-imaging -->
 
 - **Mechanism.** Spectroscopic targets are selected on imaging, so imaging
   depth, seeing, extinction and stellar density modulate the target density
@@ -71,6 +76,7 @@ hardware or strategy choice creates the effect and where to read on.
   f_NL measurement, which is the most exposed.
 
 ### 1.5 Hardware faults as selection effects
+<!-- key: hardware-faults-as-selection-effects -->
 
 A spectrograph misalignment stopped WEAVE from 16 September 2024 to July
 2025 (ING WHT page) [src]. Interruptions of this kind change the footprint
@@ -78,8 +84,10 @@ and the depth pattern a survey finally delivers, and design numbers do not
 anticipate them (`open-questions.md`, Sect. 1).
 
 ## 2. Imaging surveys
+<!-- key: imaging-surveys -->
 
 ### 2.1 Depth and seeing variations
+<!-- key: depth-and-seeing-variations -->
 
 - **Mechanism.** The limiting magnitude varies with exposure number, seeing,
   sky brightness and extinction; the galaxy density and the redshift
@@ -94,6 +102,7 @@ anticipate them (`open-questions.md`, Sect. 1).
   `cosmo-weak-lensing` (variable depth in n(z) and shear).
 
 ### 2.2 Photometric calibration
+<!-- key: photometric-calibration -->
 
 - **Mechanism.** Zero-point errors that vary over the sky create spurious
   large-scale clustering and bias colours, photometric redshifts and
@@ -114,6 +123,7 @@ anticipate them (`open-questions.md`, Sect. 1).
   (photo-z), `cosmo-galaxy-clustering` (target selection).
 
 ### 2.3 Point-spread function
+<!-- key: point-spread-function -->
 
 - **Mechanism.** PSF model errors leak into galaxy shapes; a broad band
   makes the PSF depend on the galaxy spectrum.
@@ -126,6 +136,7 @@ anticipate them (`open-questions.md`, Sect. 1).
 - **Where.** `cosmo-weak-lensing`.
 
 ### 2.4 Blending
+<!-- key: blending -->
 
 Deeper ground-based imaging loses sources to blending: the LSST **forecast**
 of the effective source density falls from about 37 to about 31 arcmin⁻²
@@ -134,6 +145,7 @@ arXiv:1305.0793) [src]. Blending also biases photometric redshifts and
 cluster lensing. Where: `cosmo-weak-lensing`, `cosmo-clusters`.
 
 ## 3. Slitless spectroscopy and spectrophotometry
+<!-- key: slitless-spectroscopy-and-spectrophotometry -->
 
 - **Mechanism.** Every source is dispersed, so spectra overlap, and a
   redshift often rests on a single emission line. Line misidentification
@@ -152,6 +164,7 @@ cluster lensing. Where: `cosmo-weak-lensing`, `cosmo-clusters`.
   completeness), `cosmo-inflation-primordial` (f_NL requirements).
 
 ## 4. CMB experiments
+<!-- key: cmb-experiments -->
 
 - **Beams.** The beam window multiplies every power spectrum; its
   uncertainty and its polarised sidelobes limit the damping tail and
@@ -173,6 +186,7 @@ cluster lensing. Where: `cosmo-weak-lensing`, `cosmo-clusters`.
   surveys).
 
 ## 5. Time-domain surveys
+<!-- key: time-domain-surveys -->
 
 - **Detector effects in photometry.** ZTF light curves carry a
   flux-dependent PSF distortion (the "pocket effect") that produces
@@ -193,6 +207,7 @@ cluster lensing. Where: `cosmo-weak-lensing`, `cosmo-clusters`.
   velocities; `cosmo-distance-ladder-h0` for the calibrator samples.
 
 ## 6. Radio
+<!-- key: radio -->
 
 - **Foregrounds and beam chromaticity.** Galactic and extragalactic
   foregrounds exceed the 21 cm signal by orders of magnitude; a
@@ -215,6 +230,7 @@ cluster lensing. Where: `cosmo-weak-lensing`, `cosmo-clusters`.
   surveys.
 
 ## 7. X-ray and gravitational waves
+<!-- key: x-ray-and-gravitational-waves -->
 
 - **eROSITA.** Cluster cosmology depends on a selection function built from
   simulated skies and on optical confirmation with Legacy Survey imaging
@@ -225,6 +241,7 @@ cluster lensing. Where: `cosmo-weak-lensing`, `cosmo-clusters`.
   function of a siren sample. Where: `cosmo-multimessenger`.
 
 ## 8. Referee checklist for a facility description
+<!-- key: referee-checklist-for-a-facility-description -->
 
 1. Is each number a design value or a delivered value, and from which
    release? (Area, number of objects, depth, number of passes.)
@@ -247,6 +264,7 @@ cluster lensing. Where: `cosmo-weak-lensing`, `cosmo-clusters`.
     slipped (`open-questions.md`, Sect. 4)?
 
 ## Not verified
+<!-- key: not-verified -->
 
 - SDSS and BOSS fibre-collision angular scales; DESI positioner patrol
   radius.

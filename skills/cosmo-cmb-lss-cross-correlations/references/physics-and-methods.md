@@ -8,6 +8,7 @@ derived here. Equations given without a flag are textbook definitions. CMB lensi
 itself (quadratic estimators, N0/N1 biases, the lensing auto-spectrum) belongs to `cosmo-cmb`.
 
 ## 1. Why cross-correlate
+<!-- key: why-cross-correlate -->
 
 A CMB secondary is a line-of-sight integral over all redshifts. Correlating it with a tracer of
 known redshift does three things:
@@ -28,8 +29,10 @@ imaging systematics) enters the cosmological result. Most of the history of this
 history of those nuisances (`results.md` §7).
 
 ## 2. CMB lensing × galaxies and quasars
+<!-- key: cmb-lensing-x-galaxies-and-quasars -->
 
 ### 2.1 Observables
+<!-- key: observables -->
 
 In the Limber approximation, as written in Sailer 2024 (arXiv:2407.04607, section "From 3D to
 2D") [src]:
@@ -54,6 +57,7 @@ magnification term is larger and the number-count slope is a calibrated input, p
 sample (Zhou 2023, arXiv:2309.06443) [src].
 
 ### 2.2 Theory models in current use
+<!-- key: theory-models-in-current-use -->
 
 | Model | Used by | Stated range |
 |---|---|---|
@@ -70,6 +74,7 @@ counterterms per bin) to a 30-dimensional posterior [src]. That is where project
 effects come from; see `systematics.md` §6.
 
 ### 2.3 What is quoted
+<!-- key: what-is-quoted -->
 
 - S_8 = σ_8(Ω_m/0.3)^0.5, the galaxy-lensing convention.
 - S_8^× or S_8^3x2pt = σ_8(Ω_m/0.3)^0.4, the best-constrained combination of the κ–galaxy data
@@ -86,6 +91,7 @@ The CMB lensing auto-spectrum itself constrains a combination with exponent 0.25
 lensing × tSZ, §4) circulate in this domain.
 
 ### 2.4 Lensing map normalisation in cross-correlation
+<!-- key: lensing-map-normalisation-in-cross-correlation -->
 
 A lensing reconstruction made on a masked sky is misnormalised. Auto-spectrum analyses correct
 this with Monte Carlo simulations; for a cross-correlation the correction is
@@ -100,6 +106,7 @@ omitted it; restoring it raised S_8 by 0.6σ for unWISE × Planck and by 0.015 f
 PR3 (arXiv:2309.05659, arXiv:2407.04607) [src].
 
 ### 2.5 Redshift distributions
+<!-- key: redshift-distributions -->
 
 Photometric tracers need dN/dz from outside. unWISE uses cross-correlation redshifts against
 spectroscopic samples; these depend on the fiducial cosmology assumed when measuring them, which
@@ -110,6 +117,7 @@ from Gaia BP/RP spectra improved with a k-nearest-neighbour model trained on SDS
 2023, arXiv:2306.17749) [src].
 
 ### 2.6 Derived tests
+<!-- key: derived-tests -->
 
 - **f_NL (local).** Scale-dependent bias Δb ∝ f_NL b_φ/k², with b_φ ∝ (b − p). Analyses quote
   p = 1 and p = 1.6 side by side (arXiv:2504.20992, arXiv:2512.17865) [src]. The κ–galaxy
@@ -130,8 +138,10 @@ from Gaia BP/RP spectra improved with a k-nearest-neighbour model trained on SDS
   A_κ (Sartori 2026, arXiv:2605.19763; Hang 2021, arXiv:2105.11936) [src].
 
 ## 3. Kinematic Sunyaev–Zel'dovich effect
+<!-- key: kinematic-sunyaev-zel-dovich-effect -->
 
 ### 3.1 Signal
+<!-- key: signal -->
 
 ΔT/T_CMB = −∫ dχ a σ_T n_e (v_e · n̂)/c. The signal has the blackbody spectrum of the CMB, so
 frequency information cannot isolate it, and it is odd in the line-of-sight velocity, so it
@@ -145,6 +155,7 @@ small-scale galaxy–electron spectrum P_ge(k_S), which is astrophysics, and the
 galaxy–velocity spectrum P_gv(k), which is cosmology [src].
 
 ### 3.2 Estimators
+<!-- key: estimators -->
 
 | Estimator | Needs | Returns | Reference |
 |---|---|---|---|
@@ -197,6 +208,7 @@ velocities (Gong 2026, arXiv:2609.36355) [src].
 marginalisation over the CMB lensing contribution to the same statistic (arXiv:2102.01068) [src].
 
 ### 3.3 From a kSZ profile to a feedback statement
+<!-- key: from-a-ksz-profile-to-a-feedback-statement -->
 
 1. Convert the stacked signal to an electron profile around galaxies (CAP or harmonic bandpowers).
 2. Assign host halo masses. The cross-spectrum "does not itself measure" them
@@ -215,6 +227,7 @@ arXiv:2009.05558) [src]. Stacked tSZ with a ȳ–τ̄ relation gives optical dep
 checked against the pairwise kSZ values (Moore 2026, arXiv:2609.08939) [src].
 
 ### 3.4 Cosmology from the large-scale velocity field
+<!-- key: cosmology-from-the-large-scale-velocity-field -->
 
 The reconstructed velocity traces the matter field without galaxy bias, so v × g cancels sample
 variance for the scale-dependent bias and constrains f_NL (arXiv:2511.15701, arXiv:2604.04867)
@@ -223,6 +236,7 @@ variance for the scale-dependent bias and constrains f_NL (arXiv:2511.15701, arX
 developed in `cosmo-peculiar-velocities`.
 
 ## 4. Thermal Sunyaev–Zel'dovich × LSS
+<!-- key: thermal-sunyaev-zel-dovich-x-lss -->
 
 y = (σ_T/m_e c²) ∫ P_e dl, with a known non-blackbody spectrum, so a Compton-y map can be built by
 component separation. The cross-correlations in use:
@@ -250,6 +264,7 @@ fitting the components at the level of the multi-frequency cross-spectra instead
 (Wayland 2026, arXiv:2609.31774; Zhao 2026, arXiv:2606.28099) [src].
 
 ## 5. Integrated Sachs–Wolfe effect
+<!-- key: integrated-sachs-wolfe-effect -->
 
 ΔT/T = 2 ∫ dη ∂Φ/∂η (in units with c = 1): a decaying potential, as under dark energy, leaves a
 positive correlation between temperature and overdensity on large angular scales. It is detectable
@@ -269,6 +284,7 @@ Three approaches:
    2015, arXiv:1502.01595) [src].
 
 ## 6. Cosmic infrared background
+<!-- key: cosmic-infrared-background -->
 
 The CIB is unresolved dusty-galaxy emission; it overlaps strongly in redshift with the CMB lensing
 kernel. Uses: a lensing tracer for delensing, co-added with galaxies and the internal
@@ -279,6 +295,7 @@ the principal contaminant of y-maps and of temperature-based lensing reconstruct
 (`systematics.md` §2–3).
 
 ## 7. Other secondaries
+<!-- key: other-secondaries -->
 
 | Effect | Physical origin | How it is extracted |
 |---|---|---|
@@ -288,6 +305,7 @@ the principal contaminant of y-maps and of temperature-based lensing reconstruct
 | Polarised SZ | scattering of the local CMB quadrupole ("remote quadrupole") | CMB–CMB–galaxy bispectrum (Krywonos 2026, arXiv:2607.16071) [src] |
 
 ## 8. Covariance, likelihood, point estimates
+<!-- key: covariance-likelihood-point-estimates -->
 
 - Bandpower likelihoods are Gaussian. arXiv:2309.05659 uses simulations for both the power
   spectrum recovery and the covariance, and marginalises an uncertainty on the lensing
@@ -304,6 +322,7 @@ the principal contaminant of y-maps and of temperature-based lensing reconstruct
   arXiv:2407.04607 always reports the best fit next to the mean for that reason [src].
 
 ## 9. Blinding
+<!-- key: blinding -->
 
 Blinded: unWISE × ACT DR6 (arXiv:2309.05659), DESI LRG × ACT DR6 (arXiv:2407.04606,
 arXiv:2407.04607), DES Y3 × ACT DR4 (Marques 2023, arXiv:2306.17268), E_G with ACT DR6 × BOSS
@@ -315,6 +334,7 @@ error by 5% [src]. The kSZ gas-profile papers read for this file do not state a 
 their abstracts; treat them as unblinded unless the paper says otherwise.
 
 ## 10. Codes and public products
+<!-- key: codes-and-public-products -->
 
 | Code or product | Purpose | Where stated |
 |---|---|---|
@@ -329,6 +349,7 @@ their abstracts; treat them as unblinded unless the paper says otherwise.
 | Quaia catalogue and selection function | zenodo.org/records/10403370 | arXiv:2306.17749 [src] |
 
 ## 11. Conventions and where the community is split
+<!-- key: conventions-and-where-the-community-is-split -->
 
 - **Exponent of the amplitude combination**: 0.5, 0.4, 0.25, 0.2 (§2.3, §4). Compare like with
   like or convert with the Ω_m posterior.

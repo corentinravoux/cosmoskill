@@ -6,6 +6,7 @@ Snapshot: 2026-10-07
 Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named secondary source; `[der]` derived here, derivation stated.
 
 ## 1. Noisy covariance from too few mocks
+<!-- key: noisy-covariance-from-too-few-mocks -->
 
 **Mechanism.** A covariance estimated from `n_s` mocks is a Wishart random matrix. Its inverse is biased high (errors too small), the bias growing with `n_d/n_s`, and `S` is singular for `n_d > n_s` (Hartlap et al. 2007, arXiv:astro-ph/0608064). Independently, the noise in the precision matrix scatters the best fit by a factor `1 + B (n_d − n_θ)` in variance (Dodelson & Schneider 2013, arXiv:1304.2593), and the width read from the likelihood is biased by yet another factor (Percival et al. 2014, arXiv:1312.4841).
 
@@ -20,6 +21,7 @@ Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named 
 **Cite.** arXiv:astro-ph/0608064, arXiv:1304.2593, arXiv:1212.4359, arXiv:1312.4841, arXiv:1511.05969, arXiv:2108.10402.
 
 ## 2. Jackknife and internal covariance estimates
+<!-- key: jackknife-and-internal-covariance-estimates -->
 
 **Mechanism.** Jackknife regions are not independent realisations: pairs straddle region boundaries, modes larger than a region are not sampled, and the number of regions bounds the rank of the matrix.
 
@@ -34,6 +36,7 @@ Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named 
 **Cite.** arXiv:0810.1885, arXiv:1508.00895, arXiv:2109.07071.
 
 ## 3. Analytic covariance: missing terms and cosmology dependence
+<!-- key: analytic-covariance-missing-terms-and-cosmology -->
 
 **Mechanism.** An analytic covariance is noise-free but only as good as its ingredients: the Gaussian term needs the survey geometry (the `f_sky` approximation fails for complex masks), the connected term needs a trispectrum model, the super-sample term needs the mask's large-scale variance (Takada & Hu 2013, arXiv:1302.6994), and the whole matrix is evaluated at one fiducial cosmology and one set of nuisance parameters.
 
@@ -46,6 +49,7 @@ Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named 
 **Cite.** arXiv:1302.6994, arXiv:2012.08568, arXiv:2411.12027, arXiv:1904.11070.
 
 ## 4. Non-Gaussian likelihood treated as Gaussian
+<!-- key: non-gaussian-likelihood-treated-as-gaussian -->
 
 **Mechanism.** Two-point estimators of a Gaussian field follow a Wishart (scaled χ²) distribution, which is skewed when few modes contribute; non-linear evolution, masks and counts-like statistics add further non-Gaussianity. A Gaussian with the right mean and covariance then has the wrong mode and the wrong tails.
 
@@ -60,6 +64,7 @@ Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named 
 **Cite.** arXiv:0801.0554, arXiv:1204.4724, arXiv:1707.04488, arXiv:1803.06348, arXiv:2012.06267.
 
 ## 5. Projection (prior-volume) effects
+<!-- key: projection-prior-volume-effects -->
 
 **Mechanism.** Marginalising over weakly constrained nuisance parameters weights each value of the parameter of interest by the volume of nuisance space compatible with it (`physics-and-methods.md` §6.1). The marginal mean moves away from the best fit without any change in goodness of fit.
 
@@ -76,6 +81,7 @@ Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named 
 **Cite.** arXiv:2208.05929, arXiv:2309.04468, arXiv:2508.11811, arXiv:2007.01844, arXiv:2203.16285.
 
 ## 6. Parameter boundaries and one-sided limits
+<!-- key: parameter-boundaries-and-one-sided-limits -->
 
 **Mechanism.** When the likelihood peaks at or beyond a physical boundary (Σm_ν ≥ 0, r ≥ 0, a fraction in [0, 1]), a Bayesian posterior truncated at the boundary gives an upper limit that tightens as the peak moves further into the unphysical region; the width of the truncated posterior is not the sensitivity of the experiment. On the frequentist side, the graphical `Δχ²` reading loses coverage near a boundary, and choosing between a limit and an interval after seeing the data ("flip-flopping") also breaks coverage (Feldman & Cousins 1998, arXiv:physics/9711021).
 
@@ -90,6 +96,7 @@ Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named 
 **Cite.** arXiv:physics/9711021, arXiv:1311.1657, arXiv:2408.07700, arXiv:2503.14744. Physics in `cosmo-neutrinos-dark-matter`.
 
 ## 7. Informative priors and prior-dependent evidence
+<!-- key: informative-priors-and-prior-dependent-evidence -->
 
 **Mechanism.** The evidence is the likelihood averaged over the prior, so it scales inversely with the prior volume of any parameter the data constrain. The Bayes ratio used as a tension metric scales the other way: "doubling the prior volume doubles the value of R" (Lemos et al. 2021, arXiv:2012.09554) [src]. A flat prior chosen "wide enough not to matter" for parameter estimation always matters for the evidence.
 
@@ -104,6 +111,7 @@ Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named 
 **Cite.** arXiv:0803.4089, arXiv:0802.3185, arXiv:1902.04029, arXiv:2012.09554.
 
 ## 8. Delta chi2 converted to sigma outside its range of validity
+<!-- key: delta-chi2-converted-to-sigma-outside-its-range -->
 
 **Mechanism.** The conversion of a `Δχ²` between nested models into "nσ" uses Wilks' theorem: under the simpler model, `Δχ²` follows a χ² distribution with as many degrees of freedom as extra parameters. It requires Gaussian asymptotics, the null model inside the parameter space of the alternative, and no parameter that is unidentified under the null.
 
@@ -116,6 +124,7 @@ Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named 
 **Cite.** arXiv:2503.14738 for the practice, arXiv:2408.07700 for the conditions.
 
 ## 9. Tension metric chosen after the fact, or misapplied to correlated data
+<!-- key: tension-metric-chosen-after-the-fact-or -->
 
 **Mechanism.** There are many metrics and many reference data sets; choosing among them after seeing the result selects the largest or the smallest figure. Separately, most metrics assume independent data sets and Gaussian posteriors.
 
@@ -132,6 +141,7 @@ Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named 
 **Cite.** arXiv:1806.04649, arXiv:1902.04029, arXiv:2012.09554, arXiv:2105.03324.
 
 ## 10. Unconverged or biased sampling
+<!-- key: unconverged-or-biased-sampling -->
 
 **Mechanism.** A chain that has not mixed, a nested-sampling run with too few live points or too short slice chains, or a proposal that misses a mode, gives intervals that are too narrow and an evidence that is wrong, without any error message.
 
@@ -146,6 +156,7 @@ Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named 
 **Cite.** arXiv:2202.08233, arXiv:1903.08008, arXiv:1111.4246.
 
 ## 11. Emulator error and extrapolation
+<!-- key: emulator-error-and-extrapolation -->
 
 **Mechanism.** The emulator prediction differs from the exact calculation by an interpolation error that varies with scale, redshift and position in parameter space, and grows towards the edge of the training design. If the error is not in the likelihood, it biases parameters; if the sampler leaves the design, the prediction is an extrapolation. For simulation emulators the training simulations add their own error.
 
@@ -160,6 +171,7 @@ Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named 
 **Cite.** arXiv:2106.03846, arXiv:2010.11288, arXiv:2205.11587.
 
 ## 12. Simulation-based inference: overconfidence and model misspecification
+<!-- key: simulation-based-inference-overconfidence-and -->
 
 **Mechanism.** The learned density is an approximation trained on a finite set of simulations from an imperfect simulator. Three separate failures: the density estimator is wrong although the simulator is right (too few simulations, poor training); the estimator is right on average but wrong at the parameter value of interest; the simulator cannot produce the observed data (misspecification).
 
@@ -174,6 +186,7 @@ Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named 
 **Cite.** arXiv:1903.00007, arXiv:1804.06788, arXiv:2110.06581, arXiv:2302.03026, arXiv:2412.02311.
 
 ## 13. Fisher forecasts beyond their validity
+<!-- key: fisher-forecasts-beyond-their-validity -->
 
 **Mechanism.** The Fisher matrix is the curvature of the log-likelihood at the fiducial point. It returns ellipses whatever the true posterior looks like, has no prior-volume term, and inherits every instability of the numerical derivatives.
 
@@ -188,6 +201,7 @@ Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named 
 **Cite.** arXiv:astro-ph/9603021, arXiv:1205.3984, arXiv:1910.09273.
 
 ## 14. Double counting and neglected cross-covariance when combining probes
+<!-- key: double-counting-and-neglected-cross-covariance -->
 
 **Mechanism.** Multiplying likelihoods assumes independence. Shared sky area, shared galaxies, shared calibrators, a shared prior, or two releases of the same survey violate it; the combined error is then too small and any tension between the two is misjudged.
 
@@ -202,6 +216,7 @@ Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named 
 **Cite.** arXiv:2012.08568, arXiv:2305.17173, arXiv:2602.12343.
 
 ## 15. Look-elsewhere effect and a posteriori statistics
+<!-- key: look-elsewhere-effect-and-a-posteriori -->
 
 **Mechanism.** A local significance is computed as if the test had been specified before the data were seen. When the feature, the bin, the model, the data combination or the statistic was chosen because it showed something, the probability of an equally striking result somewhere in the space of choices is larger by the trial factor (Gross & Vitells 2010, arXiv:1005.1891).
 
@@ -216,6 +231,7 @@ Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named 
 **Cite.** arXiv:1005.1891, arXiv:2007.13821.
 
 ## 16. Unblinding leaks and post-unblinding changes
+<!-- key: unblinding-leaks-and-post-unblinding-changes -->
 
 **Mechanism.** Confirmation bias acts through analysis choices made while seeing the result: scale cuts, priors, which systematic test to add, when to stop looking for errors. Blinding removes the result from view; it fails when the blinding can be undone, when it is lifted before the choices are frozen, or when choices change afterwards.
 
@@ -232,6 +248,7 @@ Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named 
 **Cite.** arXiv:1911.05929, arXiv:2006.10857, arXiv:2404.07282, arXiv:1910.08533.
 
 ## 17. What a referee checks in a results section
+<!-- key: what-a-referee-checks-in-a-results-section -->
 
 Covariance and likelihood
 
@@ -273,6 +290,7 @@ Blinding
 18. Level of blinding, the unblinding criteria, and the list of post-unblinding changes with their effect (§16).
 
 ## Not verified
+<!-- key: not-verified -->
 
 - No paper quantifying the effect of non-independent mocks (fixed-amplitude, paired, or shared initial conditions) on the Hartlap and Dodelson–Schneider corrections was read; the warning in §1 is a statement of the assumptions of arXiv:2108.10402.
 - The statement in §2 that a jackknife covariance lacks super-sample covariance is the standard argument and was not read in a cited paper this session.

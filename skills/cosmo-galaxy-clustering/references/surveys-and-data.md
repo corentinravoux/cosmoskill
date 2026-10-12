@@ -10,8 +10,10 @@ detail beyond what clustering analyses need belongs to
 `cosmo-surveys-facilities`.
 
 ## 1. Past surveys
+<!-- key: past-surveys -->
 
 ### 1.1 2dF Galaxy Redshift Survey (2dFGRS)
+<!-- key: 2df-galaxy-redshift-survey-2dfgrs -->
 
 - Instrument: 2dF multi-fibre spectrograph on the Anglo-Australian Telescope,
   400 objects at once over a 2° diameter field [src] (Colless et al. 2001,
@@ -25,6 +27,7 @@ detail beyond what clustering analyses need belongs to
   (arXiv:astro-ph/0501174).
 
 ### 1.2 6dF Galaxy Survey (6dFGS)
+<!-- key: 6df-galaxy-survey-6dfgs -->
 
 - Southern sky at |b| > 10°; 125,071 galaxies in the final catalogue, median
   redshift 0.053 [src] (Jones et al. 2009, arXiv:0903.5451).
@@ -34,6 +37,7 @@ detail beyond what clustering analyses need belongs to
   lowest DESI bin is BGS at z_eff = 0.295 [src] (arXiv:2503.14738).
 
 ### 1.3 WiggleZ
+<!-- key: wigglez -->
 
 - Redshift range 0.2 < z < 1. Reconstructed BAO distances at
   z = 0.44, 0.60, 0.73 with 4.8%, 4.5% and 3.4% precision [src] (Kazin et al.
@@ -41,6 +45,7 @@ detail beyond what clustering analyses need belongs to
 - Sample size and area were not read this session.
 
 ### 1.4 SDSS-I/II
+<!-- key: sdss-i-ii -->
 
 - LRG sample of the first BAO detection: 46,748 galaxies, 3816 deg²,
   0.16 < z < 0.47, 0.72 h⁻³ Gpc³ [src] (Eisenstein et al. 2005,
@@ -49,6 +54,7 @@ detail beyond what clustering analyses need belongs to
   mocks [src] (Ross et al. 2015, arXiv:1409.3242).
 
 ### 1.5 BOSS (SDSS-III)
+<!-- key: boss-sdss-iii -->
 
 - Final DR12 clustering sample: 1.2 million massive galaxies, effective area
   9329 deg², volume 18.7 Gpc³, 0.2 < z < 0.75, analysed in three overlapping
@@ -62,6 +68,7 @@ detail beyond what clustering analyses need belongs to
   standard test-bed for new estimators and EFT pipelines.
 
 ### 1.6 eBOSS (SDSS-IV)
+<!-- key: eboss-sdss-iv -->
 
 Final DR16 catalogues [src] (Ross et al. 2020, arXiv:2007.09000; Mohammad et
 al. 2020, arXiv:2007.09005):
@@ -81,8 +88,10 @@ mixed DESI + SDSS compilations [src] (DESI Collaboration 2025,
 arXiv:2503.14738).
 
 ## 2. Current surveys
+<!-- key: current-surveys -->
 
 ### 2.1 DESI
+<!-- key: desi -->
 
 **Instrument** [src] (DESI Collaboration 2022, arXiv:2205.10939): 4 m Mayall
 telescope, Kitt Peak; 3.2° diameter prime-focus corrector; 5020 robotic fibre
@@ -173,6 +182,7 @@ with further papers planned in 2026.
 | DR2 | March 2025 (arXiv:2503.14738, arXiv:2503.14739) | Lyα AP only, July 2026 (DESI Collaboration 2026, arXiv:2607.27410); no galaxy full-shape key paper found | none found |
 
 ### 2.2 Euclid (spectroscopic survey)
+<!-- key: euclid-spectroscopic-survey -->
 
 - Mission: optical imaging plus near-infrared imaging and slitless
   spectroscopy over about 14,000 deg² [src] (Euclid Collaboration: Mellier et
@@ -212,6 +222,7 @@ with further papers planned in 2026.
   snapshot.
 
 ### 2.3 Subaru Prime Focus Spectrograph (PFS)
+<!-- key: subaru-prime-focus-spectrograph-pfs -->
 
 - 8.2 m Subaru; 1.25 deg² field; 2386 science fibres; offered to the
   community since March 2025, with queue observing and "fibre hours" as the
@@ -223,6 +234,7 @@ with further papers planned in 2026.
 - No PFS clustering result was found as of the snapshot.
 
 ### 2.4 4MOST
+<!-- key: 4most -->
 
 - VISTA 4 m telescope, Paranal; about 2400 fibres over a 4.2 deg² field;
   first light in October 2025; verification, commissioning and survey
@@ -238,6 +250,7 @@ with further papers planned in 2026.
   observed at the time of that paper.
 
 ### 2.5 SPHEREx
+<!-- key: spherex -->
 
 - Launched 11 March 2025; all-sky spectral survey in 102 bands from 0.75 to
   5.0 μm at resolving power 35–130 in 6.2″ pixels; four all-sky passes over
@@ -247,6 +260,7 @@ with further papers planned in 2026.
   no redshift catalogue or clustering result was found as of the snapshot.
 
 ### 2.6 Nancy Grace Roman Space Telescope
+<!-- key: nancy-grace-roman-space-telescope -->
 
 - Launched 30 August 2026; in commissioning, en route to L2 at the snapshot
   date [src] (NASA Roman mission page, read 2026-10-07).
@@ -258,6 +272,7 @@ with further papers planned in 2026.
   Survey) was not read this session.
 
 ## 3. Planned
+<!-- key: planned -->
 
 - **DESI extension** (through 2028, to about 17,000 deg²): Sect. 2.1.
 - **Spec-S5**: two 4 m telescopes upgraded to 6 m wide-field facilities, each
@@ -268,6 +283,7 @@ with further papers planned in 2026.
 - **DESI final-survey BAO**: 2027 (Sect. 2.1).
 
 ## 4. Timeline
+<!-- key: timeline -->
 
 | Date | Event | Flag |
 |---|---|---|
@@ -290,6 +306,7 @@ with further papers planned in 2026.
 | June 2029; October 2031 | Euclid DR2; Euclid DR3 (planned, tentative) | [src] |
 
 ## 5. Practical notes on using the data
+<!-- key: practical-notes-on-using-the-data -->
 
 - DESI BAO likelihoods are distributed as means and covariances of
   (D_M/r_d, D_H/r_d) or D_V/r_d per bin; DR1 and DR2 must not be combined as
@@ -306,6 +323,7 @@ with further papers planned in 2026.
   are not the collaboration's.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - Public release date of the full DESI DR2 spectra and catalogues. The DESI
   announcement of 6 October 2025 says "in some months"; a web-search summary

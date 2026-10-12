@@ -9,6 +9,7 @@ Flags. `[src]`: read this session in the cited paper. `[sec: X]`: taken from the
 A "Gaussian difference" below is n = |a − b| / sqrt(σ_a² + σ_b²) with asymmetric errors symmetrised and the two measurements taken as independent. It is the crudest tension metric (see `physics-and-methods.md` §1) and is given only so that every row of a table shares one definition.
 
 ## 0. Summary of sizes at the snapshot
+<!-- key: summary-of-sizes-at-the-snapshot -->
 
 | Tension or anomaly | Current size | Depends most on | Section |
 |---|---|---|---|
@@ -29,8 +30,10 @@ A "Gaussian difference" below is n = |a − b| / sqrt(σ_a² + σ_b²) with asym
 | Parity-odd 4PCF | no detection | mocks, 8PCF bias | 11 |
 
 ## 1. H0 tension
+<!-- key: h0-tension -->
 
 ### 1.1 The two sides
+<!-- key: the-two-sides -->
 
 | Side | Value | Data | Citation | Flag |
 |---|---|---|---|---|
@@ -48,6 +51,7 @@ A "Gaussian difference" below is n = |a − b| / sqrt(σ_a² + σ_b²) with asym
 | Early + BAO | 68.43 ± 0.27 | P-ACT + CMB lensing + DESI DR2 BAO | arXiv:2503.14452 | [sec: cmb] |
 
 ### 1.2 Size, one definition for every cell
+<!-- key: size-one-definition-for-every-cell -->
 
 Gaussian difference [sec: h0, `results.md` §5, where the table is flagged `[der]`]:
 
@@ -64,6 +68,7 @@ Significances the papers themselves print [sec: h0]: 5.0σ for SH0ES 2022 agains
 The H0DN paper adopts 67.24 ± 0.35 for Planck + SPT + ACT, which is the first arXiv version of the CMB-SPA value; the second version reads 67.19 ± 0.38 [sec: cmb]. Both give 7.1σ against 73.50 ± 0.81 [der: (73.50 − 67.24) / sqrt(0.81² + 0.35²) = 7.09; (73.50 − 67.19) / sqrt(0.81² + 0.38²) = 7.05].
 
 ### 1.3 What moved it and when
+<!-- key: what-moved-it-and-when-3 -->
 
 | When | What changed | Effect on the tension | Citation | Flag |
 |---|---|---|---|---|
@@ -79,8 +84,10 @@ The H0DN paper adopts 67.24 ± 0.35 for Planck + SPT + ACT, which is the first a
 The central local value has stayed between 73.0 and 74.0 since 2016 while its error halved [sec: h0]; the growth of the significance from 5σ to 7σ is shared between the smaller local error and the tighter, lower CMB endpoint.
 
 ## 2. S8 tension
+<!-- key: s8-tension -->
 
 ### 2.1 Reference endpoints in use
+<!-- key: reference-endpoints-in-use -->
 
 | Endpoint | Value | Source | Flag |
 |---|---|---|---|
@@ -93,6 +100,7 @@ The central local value has stayed between 73.0 and 74.0 since 2016 while its er
 The four S8 endpoints span 0.819 to 0.836, a range larger than the error of the best lensing measurement (0.012). A quoted "tension with the CMB" is not comparable between papers unless the endpoint is the same: KiDS-Legacy compares with Planck alone, DES Y6 with Planck 2018 + ACT DR6 + SPT-3G DR1 [sec: wl].
 
 ### 2.2 S8 by probe, with one common derived difference
+<!-- key: s8-by-probe-with-one-common-derived-difference -->
 
 Columns "vs 0.836" and "vs 0.819" are Gaussian differences [der] against the combined-CMB endpoint (error 0.0125) and the Planck PR4 endpoint (error 0.014). A leading "+" means the probe lies above the endpoint.
 
@@ -117,6 +125,7 @@ Derivation check on the DES rows: the paper's own 2.0σ and 2.6σ are reproduced
 Further values held by siblings and not repeated with their IDs here: DES Y3 redMaPPer clusters 0.864 ± 0.035 and XXL 0.867 ± 0.063 (`cosmo-clusters`); DES Y3 shear × tSZ 0.811 (+0.015/−0.012), DESI DR1 quasars × Planck lensing 0.922 (+0.059/−0.073) (`cosmo-cmb-lss-cross-correlations`); third-order shear 0.806 (KiDS-Legacy), 0.780 (DES Y3), 0.736 ± 0.020 (HSC Y3 with the original redshift calibration) (`cosmo-beyond-two-point`, `cosmo-weak-lensing`); DESI DR1 full shape σ8 = 0.842 ± 0.034 against BOSS EFT 0.69–0.73 (`cosmo-galaxy-clustering`); TF + SN velocities S8 = 0.798 ± 0.035 (`cosmo-peculiar-velocities`) [all sec].
 
 ### 2.3 The internal spread is larger than the CMB tension
+<!-- key: the-internal-spread-is-larger-than-the-cmb -->
 
 | Pair | Gaussian difference | Flag |
 |---|---|---|
@@ -128,6 +137,7 @@ Further values held by siblings and not repeated with their IDs here: DES Y3 red
 No low-redshift probe is more than 3σ from the CMB except the tSZ cross-correlation and the KiDS cluster counts, while two cluster samples differ from each other by almost 4σ. "The S8 tension" in 2026 is therefore better described as a disagreement among low-redshift amplitude measurements with strong astrophysical modelling, in which cosmic shear has moved to within 1σ to 2.6σ of the CMB.
 
 ### 2.4 What moved it and when
+<!-- key: what-moved-it-and-when-2 -->
 
 | When | What changed | Effect | Citation | Flag |
 |---|---|---|---|---|
@@ -140,8 +150,10 @@ No low-redshift probe is more than 3σ from the CMB except the tSZ cross-correla
 | 2026 | DES Y6 | shear 0.798 (NLA); 3×2pt 0.789 ± 0.012; the tightest lensing result remains 2.6σ low in S8 | arXiv:2602.10065, arXiv:2601.14559 | [sec: wl] |
 
 ## 3. CMB lensing anomaly A_L and optical depth
+<!-- key: cmb-lensing-anomaly-al-and-optical-depth -->
 
 ### 3.1 Peak-smoothing amplitude
+<!-- key: peak-smoothing-amplitude -->
 
 All rows [sec: cmb, `results.md` §3]. Model: ΛCDM + A_L.
 
@@ -160,6 +172,7 @@ Lensing reconstructions show no excess: ACT DR6 + SPT-3G + Planck PR4 give a rec
 What moved it: PR4 reprocessing and likelihoods (2022–2023), then ACT DR6 and SPT-3G D1 (2025), which do not show the oscillatory TT residual at 1000 < ℓ < 2000 that drives the Planck value [sec: cmb]. It survives at about 2σ only in combinations that keep the full Planck TT range.
 
 ### 3.2 Optical depth
+<!-- key: optical-depth -->
 
 All rows [sec: cmb, `results.md` §5 and `open-questions.md` §1].
 
@@ -175,6 +188,7 @@ All rows [sec: cmb, `results.md` §5 and `open-questions.md` §1].
 Size: the BAO-preferred value is "3–5σ" from Planck low-ℓ polarisation according to arXiv:2504.16932 [sec: cmb]; against PR4, (0.090 − 0.058) / sqrt(0.012² + 0.006²) = 2.4σ [der]. Every Planck reprocessing from 2018 to 2023 lies in 0.051–0.063 with errors near 0.006 [sec: cmb]. The τ question is not an anomaly in a measurement; it is the statement that one parameter, measured by one instrument, would absorb the CMB–BAO mismatch if it were wrong by about 0.03.
 
 ## 4. CMB-DESI discrepancy within LCDM
+<!-- key: cmb-desi-discrepancy-within-lcdm -->
 
 All rows [sec: cmb, `results.md` §2]. The compared data are DESI DR2 BAO and the named CMB data, in ΛCDM.
 
@@ -194,8 +208,10 @@ The same mismatch is what four different extensions absorb (Sections 3.2, 5, 6 a
 What moved it: DESI DR1 to DR2 (smaller BAO errors, same direction); ACT DR6 and SPT-3G D1 in 2025 (higher Ω_m on the CMB side); the 2026 SPT-3G D1 lensing reconstruction, with which the curvature and w0wa preferences from CMB + DESI drop to about 2σ (arXiv:2608.31136) [sec: cmb].
 
 ## 5. Dynamical dark energy preference
+<!-- key: dynamical-dark-energy-preference -->
 
 ### 5.1 Frequentist significance by combination
+<!-- key: frequentist-significance-by-combination -->
 
 Significance is the conversion of Δχ²_MAP with two extra degrees of freedom [sec: de]. All rows [sec: de, `results.md` §1, §2, §9].
 
@@ -216,6 +232,7 @@ Significance is the conversion of Δχ²_MAP with two extra degrees of freedom [
 Pivot: for DESI + CMB + DESY5, w_p = −0.954 ± 0.024 at z_p = 0.31; the signal is a slope, not an offset, and w0waCDM lowers H0 rather than raising it [sec: de].
 
 ### 5.2 Bayesian evidence on the same data
+<!-- key: bayesian-evidence-on-the-same-data -->
 
 ln B = ln Z(w0wa) − ln Z(Λ); positive favours w0wa.
 
@@ -235,6 +252,7 @@ Two pairs of rows give different values for the same nominal quantity (DESY5: 4.
 Where the Bayesian preference comes from according to arXiv:2511.10631: a 2.95 ± 0.04σ tension between DESI DR2 and DES-SN5YR within ΛCDM, reduced to 1.96 ± 0.04σ with DES-Dovekie [sec: stat].
 
 ### 5.3 What moved it and when
+<!-- key: what-moved-it-and-when -->
 
 | Date | Event | Pantheon+ / Union3 / DES | Citation | Flag |
 |---|---|---|---|---|
@@ -249,6 +267,7 @@ Where the Bayesian preference comes from according to arXiv:2511.10631: a 2.95 �
 The spread between supernova samples (1.4σ in 2025) has closed; the three samples converge on 3.2–3.4σ.
 
 ## 6. Negative effective neutrino mass
+<!-- key: negative-effective-neutrino-mass -->
 
 All rows [sec: nu, `results.md` §1.4 and `open-questions.md` §1.1].
 
@@ -265,10 +284,12 @@ All rows [sec: nu, `results.md` §1.4 and `open-questions.md` §1.1].
 The tension vanishes in w0waCDM, where the mass returns to 0.06 (+0.15/−0.10) eV (arXiv:2407.10965), with free lensing amplitudes, or with τ ≈ 0.09 (arXiv:2504.16932, arXiv:2504.21813) [sec: nu, de]. What moved it: DESI DR1 (2024) created it; DR2 kept it at 3σ; no data release has removed it. It is not an independent anomaly (Section 4).
 
 ## 7. Cosmic dipole
+<!-- key: cosmic-dipole -->
 
 Reference endpoint: the CMB temperature dipole read as kinematic, v/c = 0.00123, v = 369 km/s (Planck Collaboration 2013, arXiv:1303.5087) [src], propagated to a number-count dipole with the Ellis & Baldwin 1984 formula (doi:10.1093/mnras/206.2.377; `physics-and-methods.md` §6). All rows [src], abstracts read on 2026-10-10.
 
 ### 7.1 Number-count dipoles against the kinematic expectation
+<!-- key: number-count-dipoles-against-the-kinematic -->
 
 | Result | Data | Method | Citation |
 |---|---|---|---|
@@ -284,6 +305,7 @@ Reference endpoint: the CMB temperature dipole read as kinematic, v/c = 0.00123,
 The review by the discovering group states that the discrepancy "now exceeds 5σ" (Secrest et al. 2025, arXiv:2505.23526) [src].
 
 ### 7.2 Measurements that agree with the CMB velocity
+<!-- key: measurements-that-agree-with-the-cmb-velocity -->
 
 | Result | Data | Citation | Flag |
 |---|---|---|---|
@@ -292,16 +314,19 @@ The review by the discovering group states that the discrepancy "now exceeds 5σ
 | Upper limits on the bulk flow at 200–2000 h⁻¹Mpc consistent with ΛCDM, in "strong tension" with a ~370 km/s flow at R ~ 1000 h⁻¹Mpc | kSZ velocity reconstruction, Planck × WISE×SuperCOSMOS and unWISE | arXiv:2605.12499 | [sec: pv] |
 
 ### 7.3 Supernova dipole
+<!-- key: supernova-dipole -->
 
 The dipole of the low-redshift Pantheon+SH0ES supernovae "does not agree with the one inferred from the velocity of the solar system as obtained from CMB data", which its authors read as bulk velocities; a monopole and a quadrupole of similar amplitude are also detected, the monopole only at very low redshift (Sorrenti, Durrer & Kunz 2024, arXiv:2403.17741) [src]. The sibling `cosmo-peculiar-velocities` holds the counter-evidence: zero-point dipoles in CF4 and Pantheon+ are better described by local flow structure than by anisotropic expansion (arXiv:2509.14997) [sec: pv].
 
 ### 7.4 Size, metric, endpoint, history
+<!-- key: size-metric-endpoint-history -->
 
 - Metric: p-value of the observed amplitude (and direction) under the null of a purely kinematic dipole with the CMB velocity, from mock skies; or a Bayesian evidence ratio. The endpoint depends on the sample through its count slope x and spectral index α, so each catalogue has its own expected amplitude.
 - Size at the snapshot: 3.3σ to 5.7σ for the CatWISE2020 quasars depending on whether a clustering dipole and mode coupling are simulated; 5.4σ for three radio surveys combined; one direct velocity measurement from redshifts and one from CMB aberration that agree with 370 km/s.
 - What moved it: 2020–2021, CatWISE (4.9σ); 2022, joint radio + quasar (5.1σ); 2023, Bayesian reanalysis (5.7σ); 2025, radio with overdispersion (5.4σ) and a clustering-aware reassessment (3.3–3.6σ); 2026, DESI redshift dipole consistent with the CMB.
 
 ## 8. Bulk flow
+<!-- key: bulk-flow -->
 
 All rows [sec: pv, `results.md` §3]. A bulk flow is defined only with its estimator, window and depth.
 
@@ -317,6 +342,7 @@ All rows [sec: pv, `results.md` §3]. A bulk flow is defined only with its estim
 Metric and endpoint: χ² of the three flow components against the ΛCDM velocity covariance for the same window. What moved it: the amplitude has not moved (387, 428 and 315 km/s in three analyses differ by less than 2σ); the quoted probability rose from 0.00021% to 0.11% when errors were calibrated on mocks (2023), and a shell analysis with the ΛCDM prediction computed for the actual positions reduced the full-range deviation to 2.3σ (2026) [sec: pv].
 
 ## 9. Large-angle CMB anomalies
+<!-- key: large-angle-cmb-anomalies -->
 
 Reference endpoint: Gaussian, statistically isotropic ΛCDM skies simulated with the instrument and mask of the data. Metric: the p-value (lower- or upper-tail probability) of a summary statistic among those simulations. All of these statistics were defined after the features were seen in WMAP or Planck temperature maps, so every p-value is a posteriori. All rows [src], abstracts read on 2026-10-10 unless a section is named.
 
@@ -338,6 +364,7 @@ Status in Planck PR4 and after. The temperature anomalies are present in PR4 at 
 What moved it: nothing in the temperature data; the Planck 2015 release "essentially corresponded to the limit of our ability to probe CMB anomalies with temperature fluctuations alone" (arXiv:1906.02552, conclusions) [src]. What changed is the accounting: a claimed joint 5σ (2023) against 2σ to 3σ after the look-elsewhere correction (2026), and the exclusion of the supervoid explanation of the Cold Spot by lensing (2023).
 
 ## 10. JWST high-redshift galaxy abundance
+<!-- key: jwst-high-redshift-galaxy-abundance -->
 
 Reference endpoint: the ΛCDM halo mass function times the cosmic baryon fraction, which bounds the stellar mass a halo can host. Metric: the comoving number density n(> M_*, z) or stellar mass density ρ_*(> M_*, z) of the observed galaxies against that bound, expressed as the required efficiency ε of converting baryons into stars; ε > 1 would contradict ΛCDM, ε below 1 is a statement about galaxy formation. All rows [src], abstracts read on 2026-10-10.
 
@@ -352,6 +379,7 @@ Reference endpoint: the ΛCDM halo mass function times the cosmic baryon fractio
 Size at the snapshot: no published spectroscopic sample requires ε > 1. The abundance question has become a galaxy-formation question (how efficiency, burstiness, dust, AGN light and the initial mass function evolve at z > 7) and is treated in `cosmo-reionization-21cm` for its bearing on reionisation. What moved it: 2022, photometric candidates at the ΛCDM limit; 2023–2024, spectroscopy (no tension in the FRESCO sample, with three objects needing about 50%); 2026, one of those three shown to be a lower-redshift interloper of the grism method, and an empirical ΛCDM model matching the UV statistics.
 
 ## 11. Curvature, birefringence, parity-odd 4PCF
+<!-- key: curvature-birefringence-parity-odd-4pcf -->
 
 | Quantity | Value | Data | Citation | Flag |
 |---|---|---|---|---|
@@ -371,6 +399,7 @@ Size at the snapshot: no published spectroscopic sample requires ε > 1. The abu
 Reading. The Planck-alone closed-universe preference (Di Valentino, Melchiorri & Silk 2019, arXiv:1911.02087, "more than 99%") is the A_L feature in another parameter and has followed A_L down; the 2025 open-side hint is the CMB–DESI mismatch in another parameter and vanishes when w0wa is free [sec: inf]. The birefringence significance is conditional on the ACT instrumental priors on the polarisation angle [sec: inf]. For the 4PCF the position is "no evidence for parity violation" [sec: b2p].
 
 ## 12. History: what moved each tension
+<!-- key: history-what-moved-each-tension -->
 
 | Tension | Peak quoted size | When | Size now | What moved it |
 |---|---|---|---|---|
@@ -391,6 +420,7 @@ Reading. The Planck-alone closed-universe preference (Di Valentino, Melchiorri &
 Sizes and dates in this table are from the sections above: [sec] from the siblings named there for the first ten rows, [src] for the last three.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - The Planck 2018 S8 with its error from the Planck paper itself; the two siblings give 0.834 ± 0.016 (as quoted in arXiv:2309.10034, `cosmo-cmb`) and a derived central value 0.831 (`cosmo-weak-lensing`).
 - The reconciliation of the two published Bayes factors for DESI DR2 + CMB + DES supernovae (Section 5.2).

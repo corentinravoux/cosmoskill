@@ -4,6 +4,7 @@ Scope: headline cosmological constraints from cluster samples, with model and pr
 Snapshot: 2026-10-07
 
 ## eROSITA eRASS1 (X-ray selected, weak-lensing calibrated)
+<!-- key: erosita-erass1-x-ray-selected-weak-lensing -->
 
 All rows use the eRASS1 cosmology sample of 5259 clusters over 12791 deg² [src] with weak-lensing mass calibration from DES Y3, KiDS-1000 and HSC (Ghirardini et al. 2024, arXiv:2402.08458).
 
@@ -29,6 +30,7 @@ Reading notes.
 - The EDE result of arXiv:2609.07834 uses only the 0.1 < z < 0.45 subsample and its 3.2σ preference appears only in the combination with CMB, BAO and CMB lensing.
 
 ## South Pole Telescope (SZ selected, weak-lensing calibrated)
+<!-- key: south-pole-telescope-sz-selected-weak-lensing -->
 
 | Quantity | Value | Model | Data | Citation | Flag |
 |---|---|---|---|---|---|
@@ -56,6 +58,7 @@ Superseded SPT values.
 Note the exponent: SPT quotes σ8 (Ω_m/0.3)^0.2 in 2019, ^0.25 in 2024 and the standard S8 with ^0.5 separately. The best-constrained combination has the small exponent; the S8 error (0.029) is nearly twice that of the optimal combination (0.016) [src, arXiv:2401.02075].
 
 ## Atacama Cosmology Telescope (SZ selected)
+<!-- key: atacama-cosmology-telescope-sz-selected -->
 
 No cosmological analysis of the ACT DR5 or DR6 cluster number counts with ΛCDM parameters as output was found as of 2026-10-07. What exists:
 
@@ -77,6 +80,7 @@ ACT weak-lensing mass calibration (the quantity 1 − b_SZ = M_SZ / M_WL, where 
 | mean M500c = (1.7 ± 0.4)e14 M_sun, 4.2σ detection | 677 MaDCoWS clusters, mean z = 1.08 | CMB lensing (ACT + Planck) | Madhavacheril et al. 2020, arXiv:2009.07772 | [src] |
 
 ## Planck SZ clusters and the mass-bias question
+<!-- key: planck-sz-clusters-and-the-mass-bias-question -->
 
 Definition used throughout: (1 − b) = M_SZ / M_true, where M_SZ is the mass obtained from the SZ signal through a scaling relation calibrated on X-ray hydrostatic masses. A smaller (1 − b) means heavier clusters and a higher σ8 from the same counts.
 
@@ -111,6 +115,7 @@ The Aymerich values of (1 − b) cannot be compared directly with the others: th
 The physical test of Aymerich et al. 2025 (arXiv:2509.08673): with the mass calibration fixed, the Planck cosmology sample would contain 498 clusters in the SPT best-fit cosmology and 1098 in the eROSITA one, against 439 observed [src]; fitting only the bias gives 0.790 ± 0.070 (SPT) and 0.630 ± 0.034 (eROSITA) [src]; the predicted tSZ power spectrum in the eROSITA cosmology is "two times higher at all scales" than the Planck measurement [src].
 
 ## X-ray selected samples before eROSITA
+<!-- key: x-ray-selected-samples-before-erosita -->
 
 | Quantity | Value | Model | Data | Citation | Flag |
 |---|---|---|---|---|---|
@@ -121,6 +126,7 @@ The physical test of Aymerich et al. 2025 (arXiv:2509.08673): with the mass cali
 | σ8 (Ω_m/0.3)^0.17; Ω_m; σ8 | 0.81 ± 0.03; 0.26 ± 0.03; 0.83 ± 0.04 | flat ΛCDM, minimal neutrino mass | RASS clusters + Chandra + Weighing the Giants lensing (mass scale to 8%) | Mantz et al. 2015, arXiv:1407.4516 | [src] |
 
 ## Gas-mass fraction of relaxed clusters (a distance and Ω_m probe, not a growth probe)
+<!-- key: gas-mass-fraction-of-relaxed-clusters-a -->
 
 | Quantity | Value | Model | Data | Citation | Flag |
 |---|---|---|---|---|---|
@@ -138,6 +144,7 @@ The physical test of Aymerich et al. 2025 (arXiv:2509.08673): with the mass cali
 The f_gas method uses only the hottest, most relaxed clusters (57 of 361, 16%, pass the SPA morphology test of Mantz et al. 2015, arXiv:1502.06020 [src]) and measures in a shell around r2500, where the X-ray hydrostatic mass agrees with lensing. It is immune to most of the selection-function problems of count experiments and depends instead on the gas depletion factor from simulations.
 
 ## Hydrostatic bias: what simulations and X-ray data say
+<!-- key: hydrostatic-bias-what-simulations-and-x-ray -->
 
 | Statement | Value | Source | Flag |
 |---|---|---|---|
@@ -149,6 +156,7 @@ The f_gas method uses only the hottest, most relaxed clusters (57 of 361, 16%, p
 The tension in one sentence: simulations and X-ray thermodynamics give 1 − b ≈ 0.8–0.9; lensing of SZ-selected samples gives 0.65–0.75 for the XMM-calibrated Planck scale; the Planck primary CMB with the Planck cluster model needs about 0.6 (0.61 ± 0.03 in arXiv:2403.19542 [src]). Part of the gap between the first two is X-ray temperature calibration (Chandra versus XMM), which is not a departure from hydrostatic equilibrium at all (arXiv:2402.04006).
 
 ## Optically selected samples (redMaPPer richness)
+<!-- key: optically-selected-samples-redmapper-richness -->
 
 | Quantity | Value | Model | Data | Citation | Flag |
 |---|---|---|---|---|---|
@@ -164,6 +172,7 @@ The tension in one sentence: simulations and X-ray thermodynamics give 1 − b �
 | Ω_m; σ8 | 0.254 +0.026/−0.020; 0.826 +0.030/−0.034; 2.58σ from Planck | flat ΛCDM, simulation-based forward model with counts-in-cylinders selection, miscentring and baryons | DES Y1 redMaPPer abundance + lensing | Salcedo et al. 2025, arXiv:2510.25706 | [src] |
 
 ### The DES Y1 lesson
+<!-- key: the-des-y1-lesson -->
 
 The DES Y1 cluster analysis was blind, internally consistent, and wrong: S8 = 0.65 ± 0.04 and Ω_m = 0.179 [src, arXiv:2002.11124]. What the collaboration and later work established:
 
@@ -177,6 +186,7 @@ The DES Y1 cluster analysis was blind, internally consistent, and wrong: S8 = 0.
 The mechanism: a richness-selected sample preferentially contains haloes embedded in line-of-sight structure (filaments, aligned triaxial haloes). Stacked lensing and clustering of such a sample are boosted anisotropically on large scales relative to a mass-selected sample of the same mean mass, so that the standard isotropic model infers the wrong mass.
 
 ## KiDS (AMICO), HSC, XXL, UNIONS
+<!-- key: kids-amico-hsc-xxl-unions -->
 
 | Quantity | Value | Model | Data | Citation | Flag |
 |---|---|---|---|---|---|
@@ -192,6 +202,7 @@ The HSC shear-selected sample is the only one whose selection "solely depends on
 
 
 ## Mass-calibration and profile measurements used as inputs
+<!-- key: mass-calibration-and-profile-measurements-used -->
 
 | Quantity | Value | Data | Citation | Flag |
 |---|---|---|---|---|
@@ -205,6 +216,7 @@ The HSC shear-selected sample is the only one whose selection "solely depends on
 | Splashback radius, lensing and cluster–galaxy correlation | consistent with ΛCDM; precision 14% (shear) and 10% (w_cg) per stack | 9049 AMICO KiDS-1000 clusters, 0.1 < z < 0.8, M200m in [0.4, 20] × 1e14 M_sun/h | Lesci et al. 2026, arXiv:2602.07114 | [src] |
 
 ## History of the cluster amplitude
+<!-- key: history-of-the-cluster-amplitude -->
 
 The table lists the amplitude each analysis quoted, in order of arXiv posting, so that a value met in a manuscript can be dated. The exponent of the combination changes from row to row; do not difference the rows.
 
@@ -238,12 +250,14 @@ The value S8 = 0.831 ± 0.020 of arXiv:2111.07491 combines SPT-SZ clusters with 
 Three patterns in the history. First, the optical samples moved upward when the lensing data or the selection model changed: SDSS from 0.718 to 0.816, DES from 0.65 to 0.864; for Planck the quoted difference from the CMB went from as much as 3.7σ (arXiv:1502.01597) to 1.6σ (arXiv:2509.02068). Second, the quoted errors did not shrink in proportion to sample size, because the mass calibration floor dominates. Third, the two smallest errors today, eRASS1 (0.01) and SPT + DES 3×2pt (0.013), bracket a difference of 0.064 [der: 0.86 − 0.796].
 
 ## Agreement with the sibling skills
+<!-- key: agreement-with-the-sibling-skills -->
 
 - `cosmo-weak-lensing` gives DES Y6 3×2pt S8 = 0.789 ± 0.012 and KiDS-Legacy cosmic shear 0.815 +0.016/−0.021 [sec]. The DES Y3 clusters + 3×2pt value above (0.811) uses the Y3 3×2pt data, not Y6; no cluster analysis with DES Y6 lensing was found.
 - `cosmo-cmb` gives σ8 = 0.8137 ± 0.0037 for the SPT + ACT + Planck primary CMB [sec]. The tension statements in the tables above are those of the cluster papers, most of them relative to Planck 2018, and are not recomputed against the newer CMB combination.
 - Neutrino-mass limits from clusters with the CMB (< 0.18 eV for SPT + Planck 2018, arXiv:2401.02075) are looser than the CMB + BAO limits of 0.064–0.089 eV quoted in `cosmo-cmb` [sec]; they are independent of BAO, which is their value.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - The σ8 or S8 of the 2009 Chandra Cluster Cosmology Project analysis (arXiv:0812.2720): only its dark-energy and neutrino results were read.
 - Cosmology from the ACT DR5 or DR6 counts, from SPT-3G five-year counts, from DES Y6 clusters and from Euclid DR1: searched for, not found as of 2026-10-07.

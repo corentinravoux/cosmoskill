@@ -12,6 +12,7 @@ the others. Flags as in `results.md`.
 ---
 
 ## 1. Is the bulk flow at 150–250 h⁻¹Mpc anomalous?
+<!-- key: is-the-bulk-flow-at-150-250-h-1mpc-anomalous -->
 
 **For an anomaly.**
 
@@ -64,6 +65,7 @@ which Nusser & Tully 2026 name as the missing test.
 ---
 
 ## 2. "Peculiar velocities grow faster in general relativity"
+<!-- key: peculiar-velocities-grow-faster-in-general -->
 
 - Claim: in the 1+3 covariant treatment the peculiar flux gravitates, giving linear growth v ∝ t in
   place of the Newtonian v ∝ t^(1/3), which "could explain the reported fast and deep bulk flows"
@@ -83,6 +85,7 @@ simulations find FLRW modelling adequate at z ≲ 0.2 (arXiv:2606.18437) [src].
 ---
 
 ## 3. Which distance indicator can be trusted?
+<!-- key: which-distance-indicator-can-be-trusted -->
 
 Two results point in opposite directions.
 
@@ -108,6 +111,7 @@ position-angle systematic of arXiv:2608.26459 contributes [src].
 ---
 
 ## 4. One dataset, three estimators: the DESI DR1 spread
+<!-- key: one-dataset-three-estimators-the-desi-dr1-spread -->
 
 0.391 (correlation functions), 0.440 (power spectra), 0.483 (field-level) on the same catalogue,
 consensus 0.4497 ± 0.0548 with correlations from 675 mocks [src: arXiv:2512.03229, arXiv:2512.03230,
@@ -135,6 +139,7 @@ arXiv:2512.03229 and as 0.446 in arXiv:2512.03230 [src].
 ---
 
 ## 5. The non-linear velocity model
+<!-- key: the-non-linear-velocity-model -->
 
 - The sinc damping is empirical and its scale is not agreed: ≈ 13 h⁻¹Mpc from N-body
   (arXiv:1312.1022), 6.75 from 2MTF data, 19–23 from SDSS PV mocks (values quoted in
@@ -154,6 +159,7 @@ arXiv:2512.03229 and as 0.446 in arXiv:2512.03230 [src].
 ---
 
 ## 6. Local H0 anisotropy and the local void
+<!-- key: local-h0-anisotropy-and-the-local-void -->
 
 - Dipoles in H0 from CF4 and Pantheon+ are detected at high odds as *zero-point* dipoles but are
   better described by flow structure (arXiv:2509.14997), and shrink once velocity corrections are
@@ -168,6 +174,7 @@ arXiv:2512.03229 and as 0.446 in arXiv:2512.03230 [src].
 ---
 
 ## 7. Does low-z growth support an S8 or growth tension?
+<!-- key: does-low-z-growth-support-an-s8-or-growth -->
 
 - Against: fσ8(z = 0.07) = 0.450 ± 0.055 equals the Planck ΛCDM prediction (DESI DR1); TF + SN S8 =
   0.798 ± 0.035 (arXiv:2509.20235); γ_L = 0.580 ± 0.110 (DESI) and γ ≈ 0.50–0.53 from SN velocities
@@ -180,6 +187,7 @@ arXiv:2512.03229 and as 0.446 in arXiv:2512.03230 [src].
 ---
 
 ## 8. Forecasts — all rows are forecasts, not measurements
+<!-- key: forecasts-all-rows-are-forecasts-not -->
 
 | Survey or combination | Forecast | Method | Citation | Flag |
 |---|---|---|---|---|
@@ -215,6 +223,7 @@ Reading the table.
 ---
 
 ## 9. What the next data decide
+<!-- key: what-the-next-data-decide -->
 
 | Question | Data | When |
 |---|---|---|
@@ -229,6 +238,7 @@ Reading the table.
 ---
 
 ## 10. Stale or wrong claims still in circulation
+<!-- key: stale-or-wrong-claims-still-in-circulation -->
 
 | Claim | Correction | Source |
 |---|---|---|
@@ -246,6 +256,7 @@ Reading the table.
 | "Forward model means non-linear dynamics" | See `pv-surveys.md` §5: the indicator is forward-modelled, the field is linear | `pv-surveys.md` |
 
 ## Not verified
+<!-- key: not-verified -->
 
 - Bulk-flow amplitudes of Peery et al. 2018 and Duangchan et al. 2025 (only the significances were
   read).

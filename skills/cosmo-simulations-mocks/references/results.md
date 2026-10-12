@@ -4,6 +4,7 @@ Scope: the numbers a referee needs — code-comparison agreement, emulator and f
 Snapshot: 2026-10-07
 
 ## 1. Code-comparison agreement levels
+<!-- key: code-comparison-agreement-levels -->
 
 | Comparison | Set-up | Agreement | Reference, flag |
 |---|---|---|---|
@@ -18,6 +19,7 @@ The two headline code-comparison numbers are not the same statement. Schneider e
 Requirements derived from the Euclid comparison [src] (arXiv:1503.05920): a box of at least 0.5 Gpc/h to avoid systematic finite-volume effects on P(k), and a particle mass of at most 10⁹ M_⊙/h for 1% precision on the matter power spectrum. Covering survey volumes at that resolution needs more than a trillion particles.
 
 ## 2. Emulator accuracy
+<!-- key: emulator-accuracy -->
 
 All figures are the authors' statements about agreement with simulations of the same kind (gravity-only unless stated).
 
@@ -40,6 +42,7 @@ MillenniumTNG compares its runs with these emulators as an external check (arXiv
 The gravity-only emulators are quoted at 1–3% while the baryonic response at k = 1 h/Mpc is 5–10% and uncertain by a factor of two (§4). Beyond k of a few tenths h/Mpc the error budget of a matter power spectrum prediction is set by baryons, not by the emulator.
 
 ## 3. Accuracy of approximate methods
+<!-- key: accuracy-of-approximate-methods -->
 
 | Method | Statistic | Accuracy | Range | Reference, flag |
 |---|---|---|---|---|
@@ -61,6 +64,7 @@ The gravity-only emulators are quoted at 1–3% while the baryonic response at k
 The 10% on parameter errors is the number to quote when a referee asks how well an approximate-mock covariance is known. It is of the same order as the finite-mock corrections (10% on the error bar for 100 data points and 1000 mocks, according to `cosmo-statistics-inference`), so both must be stated.
 
 ## 4. Baryonic suppression of the matter power spectrum
+<!-- key: baryonic-suppression-of-the-matter-power -->
 
 The quantity is the response R(k) = P_hydro(k) / P_gravity-only(k) of the total matter power spectrum.
 
@@ -89,6 +93,7 @@ The last two rows disagree on whether fiducial FLAMINGO is excluded. This is the
 What controls the suppression: the mean baryon fraction of groups predicts the z = 0 effect to 1% for k < 1 h/Mpc across OWLS, cosmo-OWLS and BAHAMAS [src] (arXiv:1906.00968), and to about the percent level for k ≲ 10 h/Mpc and z ≤ 3 across ANTILLES [src] (arXiv:2305.09710). Differences in group baryon fractions explain the quantitative disagreement between older predictions [src] (arXiv:1906.00968).
 
 ## 5. Mock counts used by surveys
+<!-- key: mock-counts-used-by-surveys -->
 
 | Analysis | Covariance source | Mock count | Reference, flag |
 |---|---|---|---|
@@ -104,6 +109,7 @@ Two points about these counts. The DESI BAO covariance is not a mock covariance:
 With N_mocks = 1000 and a data vector of 100 points the error bar inflates by 10%, with 400 points by 65%; this is the sibling skill's number (`cosmo-statistics-inference`, from arXiv IDs cited there) and it was not re-derived here [sec: cosmo-statistics-inference SKILL.md].
 
 ## 6. Lyα simulation accuracy
+<!-- key: lyalpha-simulation-accuracy -->
 
 | Statement | Number | Conditions | Reference, flag |
 |---|---|---|---|
@@ -121,6 +127,7 @@ With N_mocks = 1000 and a data vector of 100 points the error bar inflates by 10
 A 1% emulator error is an interpolation error inside the training set. It says nothing about physics absent from the simulations (patchy reionisation, AGN feedback), which the rows above show to be at the percent level or more.
 
 ## 7. Constrained simulations: quantified results
+<!-- key: constrained-simulations-quantified-results -->
 
 | Quantity | Value | Context | Reference, flag |
 |---|---|---|---|
@@ -143,6 +150,7 @@ The two local-density statements come from different inferences on overlapping d
 
 
 ## 8. History of the key numbers
+<!-- key: history-of-the-key-numbers -->
 
 Each line gives the sequence in time, so that a reader can tell which statement is the current one.
 
@@ -188,6 +196,7 @@ Each line gives the sequence in time, so that a reader can tell which statement 
 - 2026: Manticore-Deep over (4 Gpc/h)³ (arXiv:2606.10020); forward modelling from Cosmicflows-4 velocities (arXiv:2602.03699).
 
 ## Not verified
+<!-- key: not-verified -->
 
 - k and z limits of the Mira-Titan IV emulator (the abstract says "wide range").
 - Numerical accuracy of FastPM in the DESI code comparison (arXiv:2112.09138 abstract gives none).

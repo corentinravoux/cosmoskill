@@ -2,6 +2,17 @@
 
 # Part 1 — Roadmap for cosmoskill 2
 
+> **Scope decisions taken after this roadmap was written (2026-10-12).**
+> The package holds general knowledge with a checked link to each source; a
+> number is verified on demand by reading the linked paper. The claims table
+> and verification grades of phase 3 are dropped, with the re-reading
+> campaign they implied. The package is kept private for testing: no install
+> validation, no continuous integration, no lint for single-user content.
+> Kept from the tooling: the bibliography checker, the paper reader, the
+> layer script, and the three upkeep tools for section keys and level blocks.
+> Phases 1 and 2 are done. What remains of phase 3 is even coverage; phases 4
+> to 7 stand, without the parts that depended on claims.
+
 Tags: **[V]** verified this session (file read, command run, documentation page fetched); **[I]** inferred. Units: a *run* is one research agent (350–500k tokens); a *test* is one files-only run (about 200k); a *window* holds about five runs.
 
 ## 0. Findings that change the starting point

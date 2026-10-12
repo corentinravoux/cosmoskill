@@ -73,8 +73,9 @@ convenience; all are public:
   `astro-ph.CO` (add `astro-ph.GA`, `astro-ph.IM`, `astro-ph.HE`, `gr-qc` when
   relevant), with title, abstract and author prefixes and quoted phrases.
 - **The scripts of this package**:
-  `python3 skills/observational-cosmology/scripts/fetch_abstracts.py <ids>`
-  prints title, first author and abstract for arXiv identifiers.
+  `python3 skills/observational-cosmology/scripts/fetch_paper.py <id>` prints
+  a paper's abstract (`--abstract`, several identifiers allowed), its outline,
+  one section, or the paragraphs containing a term.
 - **Plain web access**: `https://arxiv.org/abs/<id>` for an abstract,
   `https://arxiv.org/list/astro-ph.CO/new` and date-sorted arXiv searches for
   recent work, the HTML rendering of a paper when you need one section of

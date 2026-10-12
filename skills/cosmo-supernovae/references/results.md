@@ -11,8 +11,10 @@ here. The model is stated in every row. Uncertainties are 68 % and include
 systematics unless stated.
 
 ## 1. Current SN-only constraints
+<!-- key: current-sn-only-constraints -->
 
 ### 1.1 Matter density, flat LCDM, SNe alone
+<!-- key: matter-density-flat-lcdm-sne-alone -->
 
 | Sample | Omega_m | N (SNe) | Status | Citation | Flag |
 |---|---|---|---|---|---|
@@ -35,6 +37,7 @@ driven by SNe at 0.023 <= z <= 0.85, not by the lowest-redshift bins
 `[src]`.
 
 ### 1.2 Dark-energy equation of state, SNe alone
+<!-- key: dark-energy-equation-of-state-sne-alone -->
 
 | Sample | Model | Constraint | Citation | Flag |
 |---|---|---|---|---|
@@ -57,6 +60,7 @@ DES-SN5YR also reports that SNe alone require acceleration (`q0 < 0` in
 LCDM) at more than 5 sigma `[src]` (arXiv:2401.02929).
 
 ## 2. Combined-probe dark-energy results in which the SN sample matters
+<!-- key: combined-probe-dark-energy-results-in-which-the -->
 
 All rows: flat `w0waCDM` with `w(a) = w0 + w_a (1 - a)`. "Significance" is
 the preference over flat LCDM. The statistic differs between rows (last
@@ -103,8 +107,10 @@ and Union3.1 with DESI DR2 and Planck, where the 2025 DESI paper had
 2.8–4.2 sigma.
 
 ## 3. History of the key numbers
+<!-- key: history-of-the-key-numbers -->
 
 ### 3.1 Evidence for evolving dark energy (SN + BAO + CMB, flat w0waCDM)
+<!-- key: evidence-for-evolving-dark-energy-sn-bao-cmb -->
 
 | Date | Combination | Pantheon+ | Union3(.1) | DES | Citation | Flag |
 |---|---|---|---|---|---|---|
@@ -120,6 +126,7 @@ The DES 3.2 sigma (DES analysis, CMB = Planck + ACT + SPT) and 3.4 sigma
 differ, not the supernovae.
 
 ### 3.2 Omega_m and w from successive compilations
+<!-- key: omegam-and-w-from-successive-compilations -->
 
 | Year | Sample | N | Result (model) | Citation | Flag |
 |---|---|---|---|---|---|
@@ -153,6 +160,7 @@ shift:
   arXiv:1510.05954).
 
 ### 3.3 The host-mass step
+<!-- key: the-host-mass-step -->
 
 | Year | Sample | Step (mag) | Note | Citation | Flag |
 |---|---|---|---|---|---|
@@ -176,6 +184,7 @@ relation in stretch is linear. A bare number without those four
 specifications is not interpretable.
 
 ## 4. Hubble constant from the SN Hubble flow (pointer)
+<!-- key: hubble-constant-from-the-sn-hubble-flow-pointer -->
 
 Detail belongs to `cosmo-distance-ladder-h0`. The SN-side numbers:
 
@@ -194,6 +203,7 @@ km/s/Mpc: the relative low-z/high-z distance scale and the calibrator/Hubble-
 flow tie are different systematics.
 
 ## 5. Other measurements from SN samples
+<!-- key: other-measurements-from-sn-samples -->
 
 | Quantity | Value | Dataset | Citation | Flag |
 |---|---|---|---|---|
@@ -206,6 +216,7 @@ flow tie are different systematics.
 | Non-standard models | 11 of 15 models "moderately preferred" over flat LCDM with external probes; none strongly | DES-SN5YR | Camilleri et al. 2024, arXiv:2406.05048 | `[src]` |
 
 ## Not verified
+<!-- key: not-verified -->
 
 - The Unite SN-only flat-wCDM and w0waCDM central values: the LaTeX source
   gives them through macros that the section reader did not expand; only the

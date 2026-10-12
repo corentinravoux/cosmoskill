@@ -13,6 +13,7 @@ from a named secondary source; `[der]` derived, derivation stated.
 ---
 
 ## 1. DESI DR1 Peculiar Velocity Survey (arXiv 2025-12-02)
+<!-- key: desi-dr1-peculiar-velocity-survey-arxiv-2025-12 -->
 
 Seven companion papers. The three fσ8 values and the consensus are in that table; the rows below
 are what it does not carry.
@@ -74,6 +75,7 @@ Reading notes.
 ---
 
 ## 2. Other measurements, mid-2025 to the snapshot
+<!-- key: other-measurements-mid-2025-to-the-snapshot -->
 
 Rows already in the fσ8 table of `pv-surveys.md` are marked "in table"; they are listed so the 2025–2026 picture is
 complete in one place, with the model each assumes.
@@ -110,6 +112,7 @@ Reading notes.
 ---
 
 ## 3. The bulk-flow record
+<!-- key: the-bulk-flow-record -->
 
 A bulk flow is only defined together with its **window** (top-hat sphere, Gaussian, the survey's own
 weights) and its **estimator**; the estimators and their defining equations are in
@@ -118,6 +121,7 @@ comparable, and the ΛCDM expectation must be computed for the same window. All 
 Galactic.
 
 ### 3a. Distance-indicator bulk flows
+<!-- key: distance-indicator-bulk-flows -->
 
 | Reference | Data | Estimator, window | Depth | Amplitude (km/s) | Direction (l, b) | Paper's verdict vs ΛCDM | Flag |
 |---|---|---|---|---|---|---|---|
@@ -148,6 +152,7 @@ Galactic.
 | Do et al. 2026, arXiv:2606.17142 | Hawai'i Supernova Flows SNe Ia, optical and NIR | two estimators × two distance estimators × two wavelength regimes | z ≲ 0.1 | ~100 to 400 depending on the choice | — | "all consistent with the predictions of ΛCDM" | [src] |
 
 ### 3b. Residual ("external") bulk flows from velocity–density comparison
+<!-- key: residual-external-bulk-flows-from-velocity -->
 
 These are a different quantity: the dipole left after subtracting the flow predicted from a
 redshift-survey density field, attributed to sources outside the survey volume. They are not
@@ -165,6 +170,7 @@ Carrick et al. also give the *predicted* flow of a 50 h⁻¹Mpc Gaussian window,
 km/s towards (268° ± 4°, 38° ± 6°), 10° from the CMB dipole [src: arXiv:1504.04627].
 
 ### 3c. kSZ bulk flows
+<!-- key: ksz-bulk-flows -->
 
 | Reference | Data | Result | Flag |
 |---|---|---|---|
@@ -173,6 +179,7 @@ km/s towards (268° ± 4°, 38° ± 6°), 10° from the CMB dipole [src: arXiv:1
 | Gandhi et al. 2026, arXiv:2605.12499 | kSZ velocity reconstruction, WISE×SuperCOSMOS and unWISE with Planck, six bins over 0.1 ≲ z ≲ 1.5 | upper limits at 200 ≲ R ≲ 2000 h⁻¹Mpc "fully consistent with the ΛCDM bulk flow expectation"; "strong tension" with reading the CatWISE quasar dipole as a ~370 km/s flow at R ~ 1000 h⁻¹Mpc | [src] |
 
 ### 3d. How to read the record
+<!-- key: how-to-read-the-record -->
 
 - **Every tension claim in the table comes from the minimum-variance estimator applied to a
   heterogeneous compilation** — the 2009–2010 composite, then CF3 and CF4 (arXiv:0809.4041,
@@ -202,6 +209,7 @@ km/s towards (268° ± 4°, 38° ± 6°), 10° from the CMB dipole [src: arXiv:1
 ---
 
 ## 4. Velocities from the kSZ effect (2025–2026)
+<!-- key: velocities-from-the-ksz-effect-2025-2026 -->
 
 The kSZ effect gives τ × v. Three estimators, with what each returns and what it is degenerate with:
 
@@ -251,6 +259,7 @@ velocity field") [src: arXiv:2506.21657, arXiv:2511.15701, arXiv:2604.04867].
 ---
 
 ## 5. Tests of gravity and scale dependence
+<!-- key: tests-of-gravity-and-scale-dependence -->
 
 | Test | Result | Data, method | Model | Citation | Flag |
 |---|---|---|---|---|---|
@@ -281,6 +290,7 @@ Reading notes.
 ---
 
 ## 6. History of the key numbers — what is superseded, and by what
+<!-- key: history-of-the-key-numbers-what-is-superseded -->
 
 | Quantity | Sequence | Status |
 |---|---|---|
@@ -294,6 +304,7 @@ Reading notes.
 | kSZ-velocity f_NL | −39 +40/−33 → −180 +61/−86 → 15.9 +34.6/−34.4 (§4) | DESI DR2 × ACT DR6 current |
 
 ## Not verified in this file
+<!-- key: not-verified-in-this-file -->
 
 - Amplitudes of the Peery et al. 2018 and Duangchan et al. 2025 bulk flows (only significances
   read).

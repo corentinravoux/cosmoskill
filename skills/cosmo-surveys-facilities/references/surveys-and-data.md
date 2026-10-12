@@ -15,14 +15,17 @@ analysis detail live in the probe skills; this file holds the hardware, the
 footprint, the releases and the calendar.
 
 ## 1. Spectroscopic facilities
+<!-- key: spectroscopic-facilities -->
 
 ### 1.1 Before SDSS-III
+<!-- key: before-sdss-iii -->
 
 2dFGRS, 6dFGS and WiggleZ (AAT and UK Schmidt fibre surveys) are described
 with their sample sizes in `cosmo-galaxy-clustering`
 (`references/surveys-and-data.md`, Sect. 1); they are closed archives.
 
 ### 1.2 SDSS-I to SDSS-V (2.5 m Sloan Foundation Telescope, Apache Point; 2.5 m du Pont, Las Campanas)
+<!-- key: sdss-i-to-sdss-v-2-5-m-sloan-foundation -->
 
 - **SDSS-I/II design**: imaging of π steradians above Galactic latitude about
   30° in five bands to g′ ≈ 23, and spectra of about one million galaxies and
@@ -59,6 +62,7 @@ with their sample sizes in `cosmo-galaxy-clustering`
   Collaboration 2026, arXiv:2607.26149). Access: `sdss.org/dr20`.
 
 ### 1.3 DESI (4 m Mayall, Kitt Peak) and DESI-II
+<!-- key: desi-4-m-mayall-kitt-peak-and-desi-ii -->
 
 - **Instrument**: 3.2° diameter corrector, 5020 fibre positioners in ten
   petals, ten three-arm spectrographs, 360–980 nm, R = 2000–5000
@@ -94,6 +98,7 @@ with their sample sizes in `cosmo-galaxy-clustering`
   paper was found.
 
 ### 1.4 Subaru PFS (8.2 m, Maunakea)
+<!-- key: subaru-pfs-8-2-m-maunakea -->
 
 2386 science fibres over 1.25 deg², offered to the community since March
 2025, queue-observed and allocated in "fibre hours"; reduced data are
@@ -107,6 +112,7 @@ cosmology **forecast** (ELGs at 0.8 < z < 2.4, 9.3 (Gpc/h)³) is in Takada et
 al. 2014 (arXiv:1206.0737) [sec: GC], which assumed 300 nights in total.
 
 ### 1.5 4MOST (4 m VISTA, Paranal)
+<!-- key: 4most-4-m-vista-paranal -->
 
 Field of view 4.2 deg²; 1624 fibres feed two low-resolution spectrographs
 (R ≈ 6500) and 812 fibres a high-resolution one (R ≈ 20,000) [src] (de Jong
@@ -124,6 +130,7 @@ data at AIP and ESO archives [src] (same page). Cosmology Redshift Survey:
 5.4 million redshifts over about 5700 deg² (arXiv:2510.02449) [sec: GC].
 
 ### 1.6 WEAVE (4.2 m William Herschel Telescope, La Palma)
+<!-- key: weave-4-2-m-william-herschel-telescope-la-palma -->
 
 2° prime-focus field, nearly 1000 fibres, 20 deployable mini-IFUs and one
 large IFU, dual-beam spectrograph covering 366–959 nm at R ≈ 5000 or two
@@ -138,6 +145,7 @@ not confirm that they did. Once commissioning ends, 70% of WHT time goes to
 the WEAVE surveys. No public data release date was found.
 
 ### 1.7 MOONS (8 m class VLT, Paranal)
+<!-- key: moons-8-m-class-vlt-paranal -->
 
 About 1000 fibres with individual robotic positioners, simultaneous
 0.64–1.8 μm coverage at low and high resolution [src] (Cirasuolo et al.
@@ -148,6 +156,7 @@ million objects over a ten-year design lifetime [src] (ESO announcement
 ann26007). No survey start date is given there.
 
 ### 1.8 Euclid NISP (space, L2) — slitless
+<!-- key: euclid-nisp-space-l2-slitless -->
 
 16 H2RG detectors at 0.3″ per pixel, field of view 0.57 deg²; slitless grism
 spectroscopy at R ≥ 450 over 950–2020 nm; line sensitivity about
@@ -159,6 +168,7 @@ arXiv:2405.13491.
 Releases and calendar: the Euclid entry of Sect. 2 and the tables of `results.md`.
 
 ### 1.9 Roman (2.4 m space telescope, L2) — slitless
+<!-- key: roman-2-4-m-space-telescope-l2-slitless -->
 
 2.4 m telescope, Wide Field Instrument field of 0.281 deg² for near-infrared
 imaging and slitless spectroscopy [src] (Akeson et al. 2019,
@@ -180,6 +190,7 @@ only, and a 19.2 deg² deep tier [sec: web]. The 2021 reference spectroscopic su
 is in arXiv:2110.01829 [sec: GC]; it predates the committee's definition.
 
 ### 1.10 SPHEREx (space, low-Earth orbit) — spectrophotometry
+<!-- key: spherex-space-low-earth-orbit-spectrophotometry -->
 
 Launched 11 March 2025; 102 bands from 0.75 to 5.0 μm at R = 35–130 in 6.2″
 pixels; four all-sky passes in two years (arXiv:2511.02985) [sec: GC]. The
@@ -188,6 +199,7 @@ released weekly at IRSA ("QR2" since October 2025) [sec: web]. No redshift
 catalogue is public.
 
 ### 1.11 Planned Stage-V spectroscopic facilities
+<!-- key: planned-stage-v-spectroscopic-facilities -->
 
 | Facility | Design | Status | Source |
 |---|---|---|---|
@@ -197,6 +209,7 @@ catalogue is public.
 | MSE | 2018: 11.25 m, 1.52 deg², 4332 spectra per exposure, R = 2500–40,000, replacing the 3.6 m CFHT. 2025: quad-mirror 11.5 m, more than 18,000 fibres, 1.5 deg², R = 7000 from 360 nm through H band and R = 40,000 (**design**) | "proposed to replace the Canada-France-Hawai'i Telescope in the 2040s"; a CFHT Board recommendation of December 2024 to wind down MSE activities is reported by a web summary [sec: web] | Hill et al. 2018, arXiv:1810.08695; Frinchaboy et al. 2025, arXiv:2503.15553 [src] |
 
 ## 2. Imaging surveys
+<!-- key: imaging-surveys -->
 
 | # | Survey | Telescope, camera, site | Footprint and depth | Releases and access | Status / next | Source |
 |---|---|---|---|---|---|---|
@@ -219,6 +232,7 @@ objects; DR1: about 1900 deg², observations from
 and `cosmo-weak-lensing` [sec: GC, WL].
 
 ## 3. CMB experiments
+<!-- key: cmb-experiments -->
 
 All rows are carried over from `cosmo-cmb` unless flagged otherwise; that
 skill holds the likelihoods, map depths per band and the data products.
@@ -234,6 +248,7 @@ skill holds the likelihoods, map depths per band and the data products.
 | LiteBIRD | JAXA satellite, L2 | after the 2024–2026 reformation: one 500 mm reflector, 12 bands 40–402 GHz, three-year survey, δr < 0.002 (**design**) | — | passed Mission Definition Review #2 on 26 June 2026; launch JFY2036 (was "late 2020s") | arXiv:2607.25285 [sec: CMB] |
 
 ## 4. Time-domain surveys
+<!-- key: time-domain-surveys -->
 
 The supernova samples themselves (DES-SN, SNLS, PS1, Foundation, DEBASS,
 compilations) are in `cosmo-supernovae`; this table holds the facilities.
@@ -247,6 +262,7 @@ compilations) are in `cosmo-supernovae`; this table holds the facilities.
 | Roman HLTDS | Sect. 1.9 | wide 18.3 deg² and deep 6.5 deg² tiers, filter subsets every five days over about two years [sec: SN] | none | commissioning | arXiv:2505.10574 [src] |
 
 ## 5. Radio facilities
+<!-- key: radio-facilities -->
 
 | Facility | Site and hardware | Survey and cosmology use | Status / next | Source |
 |---|---|---|---|---|
@@ -259,6 +275,7 @@ compilations) are in `cosmo-supernovae`; this table holds the facilities.
 | DSA-2000 | 2000 five-metre dishes, 0.7–2 GHz, 3.5″ resolution (**design**) | continuum "radio camera": sky above Dec −30° every four months for five years, more than a billion sources at 500 nJy/beam; about 10,000 localised FRBs per year (**forecast**) | proposed in 2019 "with a view to first light in 2026"; current status not verified | Hallinan et al. 2019, arXiv:1907.07648 [src] |
 
 ## 6. X-ray
+<!-- key: x-ray -->
 
 **eROSITA on SRG.** Launched 13 July 2019 from Baikonur; all-sky survey
 began 13 December 2019 with six-month scans, eight planned by the end of
@@ -277,6 +294,7 @@ eRASS1: 12,247 clusters and groups over 13,116 deg² (arXiv:2402.08452)
 surveys, not the eight planned; the reason was not read this session.
 
 ## 7. Gravitational-wave detectors
+<!-- key: gravitational-wave-detectors -->
 
 | Facility | Configuration | Data and catalogues | Status / next | Source |
 |---|---|---|---|---|
@@ -289,6 +307,7 @@ Standard-siren cosmology with these data is in `cosmo-multimessenger` and
 `cosmo-distance-ladder-h0`.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - Public release date of the DESI DR2 spectra; the definition, schedule and
   funding status of DESI-II.

@@ -9,6 +9,7 @@ in `cosmo-cmb`; this file records only what the cross-correlation papers state a
 they used. A cell left with "—" was not verified this session.
 
 ## 1. Reading guide
+<!-- key: reading-guide -->
 
 A cross-correlation has two data sets and its area is their overlap. Three numbers are therefore
 needed for each analysis and they are often confused: the CMB map area, the tracer area, and the
@@ -18,8 +19,10 @@ sample covers ~4143 deg² (Marques 2023, arXiv:2306.17268) [src]; SPT-3G D1 cove
 arXiv:2606.26223) [src].
 
 ## 2. CMB data products
+<!-- key: cmb-data-products -->
 
 ### 2.1 Past
+<!-- key: past -->
 
 | Product | Content as used | Used for | Citation | Flag |
 |---|---|---|---|---|
@@ -35,6 +38,7 @@ arXiv:2606.26223) [src].
 | SPT + Planck Compton-y maps | y maps built from SPT and Planck data; the SPT resolution gives access to the mean gas profile | galaxies × y | Sánchez 2022, arXiv:2210.08633 | [src] |
 
 ### 2.2 Current
+<!-- key: current -->
 
 | Product | Content | Public location | Citation | Flag |
 |---|---|---|---|---|
@@ -60,6 +64,7 @@ measurements [der, from the shared sky and signal]. See `cosmo-cmb` for the reco
 themselves.
 
 ### 2.3 Planned or starting
+<!-- key: planned-or-starting -->
 
 | Experiment | Status | Source | Flag |
 |---|---|---|---|
@@ -71,8 +76,10 @@ Many forecasts in this domain were written for CMB-S4 and should be reread with 
 (`open-questions.md` §9).
 
 ## 3. Large-scale-structure tracers
+<!-- key: large-scale-structure-tracers -->
 
 ### 3.1 Photometric and all-sky samples
+<!-- key: photometric-and-all-sky-samples -->
 
 | Sample | Size and selection | Redshift | Calibration of dN/dz | Citation | Flag |
 |---|---|---|---|---|---|
@@ -96,6 +103,7 @@ cross-correlation samples "will be made publicly available" together with LS DR9
 redshifts trained on DESI spectra (arXiv:2309.06443) [src]; the present location was not checked.
 
 ### 3.2 Spectroscopic samples
+<!-- key: spectroscopic-samples -->
 
 | Sample | Size as used | Redshift | Used for | Citation | Flag |
 |---|---|---|---|---|---|
@@ -118,6 +126,7 @@ catalogue is public at the snapshot date was not checked; see `cosmo-galaxy-clus
 `cosmo-surveys-facilities`.
 
 ### 3.3 Structure catalogues and external gas data
+<!-- key: structure-catalogues-and-external-gas-data -->
 
 | Data | Content | Citation | Flag |
 |---|---|---|---|
@@ -130,6 +139,7 @@ catalogue is public at the snapshot date was not checked; see `cosmo-galaxy-clus
 | ROSAT all-sky X-ray maps | shear × X-ray alongside shear × y | La Posta 2024, arXiv:2412.12081 | [src] |
 
 ## 4. Simulations that carry the interpretation
+<!-- key: simulations-that-carry-the-interpretation -->
 
 | Simulation | Role | Citation | Flag |
 |---|---|---|---|
@@ -147,6 +157,7 @@ A kSZ or tSZ "preference for strong feedback" is always relative to one of these
 families are described in `cosmo-simulations-mocks`.
 
 ## 5. Which data sets are shared between results
+<!-- key: which-data-sets-are-shared-between-results -->
 
 - unWISE: arXiv:2105.03421, arXiv:2309.05659, arXiv:2409.02109 (lensing); arXiv:2110.13959 (ISW);
   arXiv:2102.01068 (kSZ); arXiv:2606.28099 (tSZ); arXiv:2511.21949 (delensing tracer).
@@ -164,6 +175,7 @@ families are described in `cosmo-simulations-mocks`.
 Results inside one of these groups are correlated and cannot be averaged as independent.
 
 ## 6. What comes next
+<!-- key: what-comes-next -->
 
 - **DESI DR2 and later.** The DR1 BGS pairwise analysis expects "roughly a factor of two" better
   statistical precision with BGS DR2 (arXiv:2510.14135) [src, **forecast**]. Stacked kSZ with ACT,
@@ -185,6 +197,7 @@ Results inside one of these groups are correlated and cannot be averaged as inde
   `cosmo-cmb`.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - Release dates and public locations of the Planck PR4 lensing maps, the ACT DR6 component-
   separated maps, the SPT-3G D1 products and the DESI DR2 catalogues.

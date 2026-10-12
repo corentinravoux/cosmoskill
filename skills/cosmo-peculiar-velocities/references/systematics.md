@@ -15,6 +15,7 @@ arXiv:2512.03226 to arXiv:2512.03232.
 ---
 
 ## 1. Zero-point (monopole) calibration
+<!-- key: zero-point-monopole-calibration -->
 
 **Mechanism.** TF and FP relations are fitted "unanchored … under the assumption of zero bulk radial
 flow", i.e. ⟨η⟩ = 0 with no redshift evolution; the physical zero-point is fixed afterwards against
@@ -69,6 +70,7 @@ predicted by a density reconstruction [src: arXiv:2201.03112].
 ---
 
 ## 2. Malmquist bias and the distance prior
+<!-- key: malmquist-bias-and-the-distance-prior -->
 
 **Mechanism.** A distance with a log-normal error is combined with a non-uniform distribution of
 true distances: homogeneous Malmquist bias (more volume farther away) and inhomogeneous Malmquist
@@ -111,6 +113,7 @@ sample statistics are safe, single-object distances are not.
 ---
 
 ## 3. Selection in the distance indicator
+<!-- key: selection-in-the-distance-indicator -->
 
 **Mechanism.** Magnitude, surface-brightness, linewidth or signal-to-noise cuts correlate with the
 scatter of the relation, so the mean η of the selected sample is not zero and depends on redshift.
@@ -140,6 +143,7 @@ complete.
 ---
 
 ## 4. Environment-dependent residuals of the scaling relations
+<!-- key: environment-dependent-residuals-of-the-scaling -->
 
 **Mechanism.** If the residual of the TF or FP relation correlates with environment, the "velocity"
 field acquires a spurious correlation with density that no random-scatter model reproduces.
@@ -171,6 +175,7 @@ spectrum, in DESI DR1); environment terms in the relation; splitting by indicato
 ---
 
 ## 5. Non-linear velocities and the damping model
+<!-- key: non-linear-velocities-and-the-damping-model -->
 
 **Mechanism.** The empirical D_u = sinc(kσ_u) absorbs redshift-space displacement of the tracers and
 non-linear motions; σ_u is degenerate with fσ8.
@@ -199,6 +204,7 @@ arXiv:2512.03229].
 ---
 
 ## 6. Reconstruction systematics (velocity–density comparison)
+<!-- key: reconstruction-systematics-velocity-density -->
 
 - Bias of the method itself on 2M++-like mocks: fσ8 high by 1.04 ± 0.01; cosmic variance of the
   volume ~5 %; predicted-velocity error 170 km/s (Hollinger & Hudson 2024, arXiv:2312.03904) [src].
@@ -219,6 +225,7 @@ arXiv:2512.03229].
 ---
 
 ## 7. Wide-angle and geometry
+<!-- key: wide-angle-and-geometry -->
 
 Momentum statistics deviate strongly from the plane-parallel limit at low redshift ("deviations from
 the plane-parallel limit are large"), and "even multipoles in the cross-correlation between density
@@ -231,6 +238,7 @@ definition of ψ1, ψ2 themselves.
 ---
 
 ## 8. Sample variance, mocks and the covariance
+<!-- key: sample-variance-mocks-and-the-covariance -->
 
 - Low-z volumes are small: cosmic variance on fσ8 from the 2M++ volume is ~5 % [src:
   arXiv:2312.03904]; Dupuy et al. split their CF3 error into ±0.03 observational and ±0.11 cosmic
@@ -254,6 +262,7 @@ definition of ψ1, ψ2 themselves.
 ---
 
 ## 9. Model and convention systematics
+<!-- key: model-and-convention-systematics -->
 
 - Velocity estimator: v = cz − H0 D overestimates by ~100 km/s at z ~ 0.04 (arXiv:1405.0105) [src];
   the estimators that drop the "−1" term of the full expression underestimate velocities
@@ -269,6 +278,7 @@ definition of ψ1, ψ2 themselves.
 ---
 
 ## 10. What a referee checks in a results section
+<!-- key: what-a-referee-checks-in-a-results-section -->
 
 1. Is the fit in log-distance (or magnitude) space, and which velocity estimator
    was used if velocities appear?

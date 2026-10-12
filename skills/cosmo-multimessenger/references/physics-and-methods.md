@@ -7,8 +7,10 @@ Flags: `[src]` read this session in the cited paper; `[sec]` from a named second
 source; `[der]` derived here. Equations without a flag are textbook definitions.
 
 ## 1. Standard sirens: the observable
+<!-- key: standard-sirens-the-observable -->
 
 ### 1.1 What the waveform gives
+<!-- key: what-the-waveform-gives -->
 
 For a compact binary in the inspiral phase the two polarisation amplitudes are
 
@@ -44,6 +46,7 @@ Entry points: Palmese & Mastrogiovanni 2025 (arXiv:2502.00239) and Zhao, Zhu & L
 2026 (arXiv:2606.22390) for FRB cosmology. All four were read at abstract level only.
 
 ### 1.2 From distance to cosmology
+<!-- key: from-distance-to-cosmology -->
 
 ```
 d_L(z) = (1 + z) c  Int_0^z dz' / H(z')                 (flat background)
@@ -59,6 +62,7 @@ Mancarella et al. 2021 (arXiv:2112.05728) place the pivot at `z ≈ 0.8` for des
 sensitivity [src].
 
 ### 1.3 Four routes to the redshift
+<!-- key: four-routes-to-the-redshift -->
 
 | Route | Redshift information | Works for | First applied | Section |
 |---|---|---|---|---|
@@ -71,6 +75,7 @@ Current LVK analyses combine the second and third in one hierarchical likelihood
 multiply by the GW170817 bright-siren posterior (arXiv:2509.04348, arXiv:2605.27227).
 
 ### 1.4 Modified gravitational-wave propagation
+<!-- key: modified-gravitational-wave-propagation -->
 
 If the friction term of the tensor propagation equation differs from general
 relativity, the distance inferred from the GW amplitude differs from the electromagnetic
@@ -87,8 +92,10 @@ relativity biases the mass scales, H0 and the merger rate (arXiv:2112.05728) [sr
 Theory context belongs to `cosmo-dark-energy-modified-gravity`.
 
 ## 2. Bright sirens
+<!-- key: bright-sirens -->
 
 ### 2.1 Likelihood
+<!-- key: likelihood -->
 
 The LVC 2017 measurement (arXiv:1710.05835) is the template. With `x_GW` the strain
 data, `v_r` the measured recession velocity of the host group and `<v_p>` the estimated
@@ -116,6 +123,7 @@ p(H0 | x_GW, v_r, <v_p>) ∝ p(H0) / N_s(H0)
   skewed to high H0, so the two differ by several km/s/Mpc.
 
 ### 2.2 Breaking the inclination degeneracy with electromagnetic data
+<!-- key: breaking-the-inclination-degeneracy-with -->
 
 | Information | How it enters | Reference |
 |---|---|---|
@@ -130,6 +138,7 @@ ejecta; a viewing-angle bias above about 10° gives more than 3% on H0
 (arXiv:2006.02779) [src].
 
 ### 2.3 The recession velocity of the host
+<!-- key: the-recession-velocity-of-the-host -->
 
 At 40 Mpc the peculiar velocity is of order 10% of the recession velocity
 (arXiv:1710.05835, Methods) [src], so the velocity model is part of the estimator. The
@@ -156,8 +165,10 @@ gravitational-wave cosmology as an application. Velocity-field methods, bulk flo
 the growth-rate use of the same data are in `cosmo-peculiar-velocities`.
 
 ## 3. Dark sirens: galaxy-catalogue method
+<!-- key: dark-sirens-galaxy-catalogue-method -->
 
 ### 3.1 Principle
+<!-- key: principle -->
 
 Each galaxy in the three-dimensional localisation volume is a candidate host. The
 redshift prior along a line of sight `Ω` is
@@ -179,6 +190,7 @@ derivation and for the common errors (mismodelled selection, inconsistent priors
 produce a spurious bias.
 
 ### 3.2 Design choices that differ between analyses
+<!-- key: design-choices-that-differ-between-analyses -->
 
 | Choice | Options in use | References |
 |---|---|---|
@@ -196,6 +208,7 @@ arXiv:2603.20195, results file §2.2) multiplies single-event posteriors of the
 best-localised events inside a deep photometric footprint.
 
 ## 4. Dark sirens: spectral (population) method
+<!-- key: dark-sirens-spectral-population-method -->
 
 The detector measures `m_det = (1 + z) m_src`. If the source-frame mass spectrum has a
 feature at a known or self-calibrated scale, the observed position of that feature as a
@@ -220,6 +233,7 @@ The method assumes the features do not move with redshift, or that their motion 
 modelled. That assumption is the dominant systematic (systematics file, §5).
 
 ## 5. Hierarchical likelihood and selection function
+<!-- key: hierarchical-likelihood-and-selection-function -->
 
 All dark-siren analyses use the inhomogeneous-Poisson population likelihood
 
@@ -251,6 +265,7 @@ sirens:
   blinded (§8).
 
 ## 6. Siren × large-scale-structure cross-correlation
+<!-- key: siren-x-large-scale-structure-cross-correlation -->
 
 Sirens trace the matter field with a bias `b_GW`. Their angular positions in shells of
 `d_L` correlate with galaxies in shells of `z` only where the two shells overlap in
@@ -280,8 +295,10 @@ present on 2026-10-12]. How it is built was read in a development copy and is li
 under "Not verified".
 
 ## 7. Fast radio bursts: dispersion measure–redshift relation
+<!-- key: fast-radio-bursts-dispersion-measure-redshift -->
 
 ### 7.1 Budget
+<!-- key: budget -->
 
 ```
 DM_obs = DM_MW,ISM + DM_MW,halo + DM_cosmic(z) + DM_host / (1 + z)
@@ -297,6 +314,7 @@ Macquart et al. 2020 (arXiv:2005.13161). Earlier formulations: Deng & Zhang 2013
 distribution of `DM(z)` and its sensitivity to where halo baryons sit.
 
 ### 7.2 What is degenerate with what
+<!-- key: what-is-degenerate-with-what -->
 
 `<DM_cosmic> ∝ Ω_b H0 f_d`. Written with the physical baryon density,
 `<DM_cosmic> ∝ (Ω_b h²) f_d / h` [der: `Ω_b H0 = (Ω_b h²) × 100 / h`]. An H0 from FRBs
@@ -307,6 +325,7 @@ distances to break it without early-universe priors. A higher H0 predicts a lowe
 fixed `z`.
 
 ### 7.3 Scatter and the likelihood
+<!-- key: scatter-and-the-likelihood -->
 
 The scatter of `DM_cosmic` at fixed `z` is non-Gaussian, skewed to high DM by
 intersected haloes. Two descriptions are in use:
@@ -331,6 +350,7 @@ marginalises over the energy function and `DM_host` [src]. Unlocalised bursts al
 constrain H0 weakly through the shape of the DM distribution (arXiv:2604.03769).
 
 ### 7.4 Beyond the mean relation
+<!-- key: beyond-the-mean-relation -->
 
 - Foreground mapping: spectroscopy of galaxies in front of each burst separates the
   intergalactic and circumgalactic terms (FLIMFLAM, arXiv:2402.00505).
@@ -344,6 +364,7 @@ constrain H0 weakly through the shape of the DM distribution (arXiv:2604.03769).
   framework for uncertain associations is in arXiv:2609.04765.
 
 ## 8. Lensed transients and time-delay cosmography (pointer)
+<!-- key: lensed-transients-and-time-delay-cosmography -->
 
 ```
 Δt_ij = (D_Δt / c) [ φ(θ_i) − φ(θ_j) ] ,   D_Δt = (1 + z_d) D_d D_s / D_ds ∝ 1 / H0
@@ -370,6 +391,7 @@ standardisation: `cosmo-supernovae`. Lensed gravitational waves and lensed FRBs 
 no cosmological measurement yet.
 
 ## 9. Codes and pipelines
+<!-- key: codes-and-pipelines -->
 
 | Code | Purpose | Reference |
 |---|---|---|
@@ -383,6 +405,7 @@ no cosmological measurement yet.
 | `flip` | field-level covariance likelihood; `GWDensMesh` density vector for sirens | arXiv:2501.16852 |
 
 ## Conventions and community splits
+<!-- key: conventions-and-community-splits -->
 
 - H0 in km s⁻¹ Mpc⁻¹; `d_L` in Mpc (no `h`); DM in pc cm⁻³; viewing angle as inclination
   `i` (0°–180°) or as angle from the jet axis (0°–90°): 137° and 43° are one geometry.
@@ -394,6 +417,7 @@ no cosmological measurement yet.
 - FRB baryon fraction: `f_IGM` (excluding halo gas) or `f_d` (all diffuse ionised gas).
 
 ## Not verified
+<!-- key: not-verified -->
 
 - The original reference for the `(Xi_0, n)` parametrisation; Schutz (1986) itself.
 - The functional forms of the FullPop-4.0 and multi-peak mass models.

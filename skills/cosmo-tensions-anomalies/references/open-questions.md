@@ -7,8 +7,10 @@ Snapshot: 2026-10-07
 Flags as in `results.md`: `[src]` read this session in the cited paper; `[sec: X]` taken from the reference files of sibling skill X (abbreviations at the top of `results.md`); `[der]` derived here. "ID in sibling" means the paper is cited with its arXiv ID in that sibling and is not in this skill's `sources.tsv`.
 
 ## 1. Live controversies
+<!-- key: live-controversies -->
 
 ### 1.1 Is the local H0 73 or 70, and is the gap physics?
+<!-- key: is-the-local-h0-73-or-70-and-is-the-gap-physics -->
 
 **Side A.** SH0ES (73.18 ± 0.88, arXiv:2509.01667) and the community H0 Distance Network (73.50 ± 0.81, arXiv:2510.23823): removing Cepheids or TRGB has minimal effect; 5.0σ to 7.1σ from every early endpoint [sec: h0].
 
@@ -17,6 +19,7 @@ Flags as in `results.md`: `[src]` read this session in the cited paper; `[sec: X
 **Where it sits.** Not in stellar distances (the teams agree at about 0.03 mag) but in the SN Ia calibrator subsample, the SN compilation and the selection model of the hosts; the Milky Way step of the prior argument is settled in favour of SH0ES (arXiv:2603.09880), the extragalactic step is not [sec: h0]. Routes with errors below 2 km/s/Mpc split cleanly (ladder high; CMB, BAO + BBN, inverse ladder low); routes with errors of 3 to 5 (lenses, masers, sirens) are compatible with both [sec: h0]. Detail: `cosmo-distance-ladder-h0` `open-questions.md` §1–§4.
 
 ### 1.2 One Ω_m mismatch or five anomalies?
+<!-- key: one-omegam-mismatch-or-five-anomalies -->
 
 **The fact.** In ΛCDM, DESI DR2 BAO prefer Ω_m = 0.2975 ± 0.0086 and the CMB 0.3145 to 0.330 depending on the experiment; the discrepancy is 1.6σ to 3.7σ (`results.md` §4).
 
@@ -27,6 +30,7 @@ Flags as in `results.md`: `[src]` read this session in the cited paper; `[sec: X
 **What discriminates.** Each reading predicts something else: a high τ is contradicted by reionisation-history data (arXiv:2601.09644) [sec: cmb]; a lensing excess is contradicted by the reconstructions (arXiv:2608.31136) [sec: cmb]; evolving dark energy predicts a specific shape of D_M/D_H at z > 1 and does not help H0 [sec: de]. The honest statement at the snapshot is that the mismatch is real at 2–3σ, that its interpretation is not fixed, and that the listed extensions must not be counted as separate evidence.
 
 ### 1.3 Is there an S8 tension, and between what?
+<!-- key: is-there-an-s8-tension-and-between-what -->
 
 **Lensing against the CMB.** Reduced, not gone: KiDS-Legacy 0.73σ, DES Y6 cosmic shear 2.0σ, DES Y6 3×2pt 2.6σ in S8 and 1.8σ in full space (arXiv:2503.19441, arXiv:2602.10065, arXiv:2601.14559) [sec: wl]. A 2026 review of the probes exists (Pantos & Perivolaropoulos 2026, arXiv:2602.12238) [sec: wl].
 
@@ -37,6 +41,7 @@ Flags as in `results.md`: `[src]` read this session in the cited paper; `[sec: X
 **Open.** Whether DES Y6's 2.6σ survives a common analysis with KiDS-Legacy; whether eRASS1's high value and its γ = 1.19 ± 0.21 are a feature of the data or of the mass calibration; no Stage-IV lensing result exists [sec: wl, cl].
 
 ### 1.4 The number-count dipole: above 5σ or about 3σ?
+<!-- key: the-number-count-dipole-above-5sigma-or-about -->
 
 **For an anomaly.** CatWISE quasars at 4.9σ (arXiv:2009.14826) and 5.7σ in a Bayesian analysis (arXiv:2212.07733); radio galaxies and quasars jointly at 5.1σ with no shared objects (arXiv:2206.05624); three radio surveys at 5.4σ with overdispersion modelled (arXiv:2509.16732); a clustering analysis that finds no large-scale power other than the dipole (arXiv:2510.23769); the review of the discovering group concludes that the anomaly "poses a serious challenge to FLRW cosmology" (arXiv:2505.23526) [src].
 
@@ -47,6 +52,7 @@ Flags as in `results.md`: `[src]` read this session in the cited paper; `[sec: X
 **What decides.** Velocity measurements that do not count sources (redshift dipoles from DESI and later spectroscopic surveys, CMB aberration at higher precision); radio samples of order 10⁶ sources from SKA-era surveys; the joint kinematic + residual fits across catalogues with different count slopes (arXiv:2503.02470) [src].
 
 ### 1.5 Large-angle CMB anomalies: evidence or flukes?
+<!-- key: large-angle-cmb-anomalies-evidence-or-flukes -->
 
 **For.** Four statistics with little mutual correlation have a joint probability ≤ 3 × 10⁻⁸; the authors conclude "that the anomalies should not be dismissed as flukes within ΛCDM" (Jones et al. 2023, arXiv:2310.12859) [src]. The features persist from WMAP to Planck PR4 (arXiv:2406.11543), and the hemispherical asymmetry extends to ℓ ~ 2000 in PR4 (arXiv:2504.05597) [src].
 
@@ -55,24 +61,30 @@ Flags as in `results.md`: `[src]` read this session in the cited paper; `[sec: X
 **What decides.** Only independent modes: large-angle E-mode polarisation at the cosmic-variance limit, and three-dimensional tracers of the same scales. Even then Planck expects that detections above 3σ may remain difficult (arXiv:1906.02552) [src].
 
 ### 1.6 Is the Cosmicflows-4 bulk flow anomalous?
+<!-- key: is-the-cosmicflows-4-bulk-flow-anomalous -->
 
 For: 387 ± 28 km/s at 150 h⁻¹Mpc against an expectation of 139 (arXiv:2302.02028), amplitude confirmed with mock errors (arXiv:2306.11269). Against: a shell analysis with the ΛCDM prediction for the actual sample finds 2.3σ overall and a 3.4σ feature at 120–160 h⁻¹Mpc that falls to 1.6σ without 6dFGS (arXiv:2608.14265); a forward-modelled bulk-flow curve is "fully consistent" with ΛCDM (arXiv:2509.14997) [sec: pv]. Detail: `cosmo-peculiar-velocities` `open-questions.md` §1.
 
 ### 1.7 Is the A_L anomaly over?
+<!-- key: is-the-al-anomaly-over -->
 
 Yes for ground-based data and PR4 HiLLiPoP (≤ 1σ); not in combinations that keep Planck TT at ℓ > 1000 (CMB-SPA A_2pt = 1.079 ± 0.038, 2.1σ). SPT's position is that the Planck features "may not be cosmological" but that it "cannot make a definitive judgment" (arXiv:2506.20707) [sec: cmb]. The same feature still leaks into Ω_K, Σ0 and the neutrino mass when Planck PR3 is used [sec: cmb, de, inf].
 
 ### 1.8 Birefringence: a 4.8σ number nobody claims
+<!-- key: birefringence-a-4-8sigma-number-nobody-claims -->
 
 ACT + Planck jointly give β = 0.277° ± 0.057° (arXiv:2608.06480), and its authors claim no detection because the result is conditional on instrumental priors for the polarisation angle [sec: inf]. Decided by absolute angle calibration at the 0.1° level (`cosmo-inflation-primordial`).
 
 ### 1.9 JWST: is there anything left for cosmology?
+<!-- key: jwst-is-there-anything-left-for-cosmology -->
 
 For a residual problem: three FRESCO galaxies requiring about 50% of baryons in stars (arXiv:2309.02492), now two after one redshift revision (arXiv:2602.03030) [src; the count of two is derived from the two abstracts]. Against: an empirical ΛCDM model reproduces the UV luminosity functions to z = 14 with efficiencies of 2–3% (arXiv:2604.18683) [src]. No measurement at the snapshot requires more baryons than ΛCDM provides. The live questions are astrophysical.
 
 ## 2. Theoretical resolutions: status
+<!-- key: theoretical-resolutions-status -->
 
 ### 2.1 The 2026 systematic comparison
+<!-- key: the-2026-systematic-comparison -->
 
 The H0 World Cup (Schöneberg et al. 2026, arXiv:2607.13283, conclusions) [src] compares fourteen models on ACT DR6, SPT-3G D1, Planck, DESI DR2 BAO and Pantheon+, with frequentist and Bayesian tension and model-comparison metrics. In ΛCDM the baseline data give a discrepancy above 5.5σ in M_B.
 
@@ -86,6 +98,7 @@ The H0 World Cup (Schöneberg et al. 2026, arXiv:2607.13283, conclusions) [src] 
 Further statements of the same paper [src]: "no model fully resolves the Hubble tension in the full baseline analysis"; without ACT, most models of groups R, M and E reach 3–3.5σ and cold new early dark energy about 2.3σ, so "ACT data are therefore central"; adding CPL dark energy to an early-time model does not help reach the SH0ES calibration (w0, wa shift H0 downward) but models that ease the H0 tension reduce the preference for w0wa; running and running-of-running of the primordial spectrum bring radiation and varying-electron-mass models to 3–3.5σ; BBN constrains groups R, M and E with a dependence on the nuclear-rate code; the models "should be understood primarily as representative of phenomenological mechanisms rather than as complete fundamental theories". The predecessor is the H0 Olympics (Schöneberg et al. 2022, arXiv:2107.10291) [sec: h0].
 
 ### 2.2 Early dark energy: where the limits come from
+<!-- key: early-dark-energy-where-the-limits-come-from -->
 
 - Bayesian limits: f_EDE < 0.12 (SPT alone) and < 0.070 (SPT + ACT + Planck) at 95%, residual tension 3.6σ; with DESI, f_EDE = 0.055 (+0.024/−0.047) and 2.6σ, "driven by the CMB–DESI discrepancy in ΛCDM" (Khalife et al. 2025, arXiv:2507.23355) [sec: h0].
 - Profile likelihood: f_EDE = 0.09 ± 0.03 and H0 = 71.0 ± 1.1 with ACT DR6 + DESI DR2, residual tension about 2σ, with prior-volume effects in the Bayesian limits (Poulin et al. 2025, arXiv:2505.08051) [sec: h0]. Model class reviewed in Poulin, Smith & Karwal 2023 (arXiv:2302.09032) [sec: h0].
@@ -94,18 +107,22 @@ Further statements of the same paper [src]: "no model fully resolves the Hubble 
 - Side effects: higher S8 (arXiv:2607.13283) [src]; a structural limit on any model that only shrinks r_d (arXiv:2010.04158) [sec: h0].
 
 ### 2.3 Modified recombination
+<!-- key: modified-recombination -->
 
 A data-driven m_e(z) history resolves the tension with Planck + ACT and no longer does once DESI DR2 BAO are added, because "raising H0 by modifying recombination generically lowers Ω_m" (Lee & Zhou 2026, arXiv:2606.06495) [src]. SPT + ACT + Planck + DESI show mild preferences for modified recombination or a varying electron mass in a non-flat universe (arXiv:2506.20707) [sec: h0]; in the World Cup the varying-electron-mass model with curvature becomes competitive only with a neutrino-mass prior or the S8 constraint [src].
 
 ### 2.4 Late-time models
+<!-- key: late-time-models -->
 
 Three independent arguments say no: the ladder constrains M_B, not H0 (arXiv:2103.08723, arXiv:2607.29562); fitting SH0ES, DESI BAO and supernovae together needs a step in M_B at z ~ 0.01 or broken distance duality (arXiv:2602.06293) [sec: h0]; the shape of E(z) from unanchored supernovae and BAO allows ≲ 2% of the ≳ 8% needed, also when early-time physics is added (arXiv:2607.21244) [src]. The DESI w0wa preference lowers H0 [sec: de]. A local void is limited to under 70 Mpc (arXiv:2506.10518) [sec: h0].
 
 ### 2.5 What a viable resolution must pass
+<!-- key: what-a-viable-resolution-must-pass -->
 
 θ_* at 0.02%; the ACT DR6 and SPT-3G damping tail; DESI BAO in Ω_m and h r_d; the shape of uncalibrated supernovae; BBN abundances; S8 from lensing; an r_d-free H0 (69.0 ± 2.5 from energy densities, arXiv:2511.23432 [src], and the equality-scale values of 66.7 to 67.9 held in `cosmo-distance-ladder-h0`). At the snapshot no published model passes all of them and reaches 73.
 
 ## 3. What the next data will decide
+<!-- key: what-the-next-data-will-decide -->
 
 | Question | Deciding data | When | Flag |
 |---|---|---|---|
@@ -126,6 +143,7 @@ Three independent arguments say no: the ladder constrains M_B, not H0 (arXiv:210
 No forecast number is given in this table: the forecasts held by the siblings are for single probes and are labelled there.
 
 ## 4. Stale claims and their corrections
+<!-- key: stale-claims-and-their-corrections -->
 
 | Claim still in circulation | Why it is stale or wrong | Correcting paper | Flag |
 |---|---|---|---|
@@ -158,6 +176,7 @@ No forecast number is given in this table: the forecasts held by the siblings ar
 | "The CosmoVerse white paper gives the current status" | submitted April 2025: it predates SPT-3G D1, DES Y6, H0DN, the supernova recalibrations and the 2026 dipole and anomaly papers; use it as a map of models and probes | Di Valentino et al. 2025, arXiv:2504.01669 | [sec: wl; date src] |
 
 ## Not verified
+<!-- key: not-verified -->
 
 - Reviews of 2026 seen in a title search and not read: "The Hubble tension: A decade review" (Cai & Wang, cited in `cosmo-distance-ladder-h0`), "Hubble tension: a short review of theoretical explanations", "A Review on Resolving the Hubble Tension via Late-Universe Physics", "Dark Energy in the DESI Era: A Brief Review". Their contents are not represented here.
 - The body of the CosmoVerse white paper (arXiv:2504.01669) was not read this session; only its submission date and title were confirmed.

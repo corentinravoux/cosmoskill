@@ -9,6 +9,7 @@ Flags: `[src]` read in the cited paper this session; `[sec]` from a named
 secondary source; `[der]` derived here. Forecast rows say **forecast**.
 
 ## 1. How a cosmology sample is assembled
+<!-- key: how-a-cosmology-sample-is-assembled -->
 
 No single survey spans the redshift range. A "sample" is a high-redshift rolling
 survey plus a low-redshift **anchor** (z < 0.1) from other telescopes, put on a
@@ -31,6 +32,7 @@ facts follow and recur throughout the literature:
    (arXiv:2609.05053).
 
 ## 2. Past surveys
+<!-- key: past-surveys -->
 
 | Survey | Instrument / strategy | Sample and redshift | Notes | Reference |
 |---|---|---|---|---|
@@ -44,6 +46,7 @@ facts follow and recur throughout the literature:
 | DES-SN | DECam on the Blanco 4 m; ten ~3 deg² fields, griz; 8 shallow fields to r ~ 23.5 per visit and 2 deep fields to 24.5; 5 seasons `[src]` | > 20 000 candidates; 7000 host redshifts (OzDES); 1635 photometric SNe Ia at 0.10 < z < 1.13 `[src]` | Largest single-survey high-z sample | Vincenzi et al. 2024, arXiv:2401.02945 |
 
 ## 3. Compilations and their status
+<!-- key: compilations-and-their-status -->
 
 | Compilation | Year | Content | Method | Status on 2026-10-07 | Reference |
 |---|---|---|---|---|---|
@@ -82,6 +85,7 @@ Details worth remembering:
   > 0.03 mag `[src]`.
 
 ## 4. Current surveys and releases
+<!-- key: current-surveys-and-releases -->
 
 | Survey | Instrument / strategy | Release and size | Cosmology status | Reference |
 |---|---|---|---|---|
@@ -107,6 +111,7 @@ Roles of the new anchors:
   precedent of the 2024–2025 "low-z offset" debate.
 
 ## 5. Planned and starting facilities
+<!-- key: planned-and-starting-facilities -->
 
 | Facility | Status | SN programme | Numbers | Source |
 |---|---|---|---|---|
@@ -123,6 +128,7 @@ smooth in redshift, nearly degenerate with cosmology, and cannot be
 self-calibrated `[src]`.
 
 ## 6. Public data locations
+<!-- key: public-data-locations -->
 
 | Product | Location | Stated in |
 |---|---|---|
@@ -140,8 +146,10 @@ Anyone repeating that exercise after 2025 should use DES-Dovekie, Union3.1
 and either the corrected Pantheon+ or Unite.
 
 ## 7. Cross-check samples (not SN Ia light-curve standardisation)
+<!-- key: cross-check-samples-not-sn-ia-light-curve -->
 
 ### 7.1 Type II supernovae
+<!-- key: type-ii-supernovae -->
 
 | Method | Sample | Result (model) | Reference |
 |---|---|---|---|
@@ -153,6 +161,7 @@ These are `H0` cross-checks that replace SNe Ia in the ladder or bypass it;
 the interpretation belongs to `cosmo-distance-ladder-h0`.
 
 ### 7.2 Strongly lensed supernovae
+<!-- key: strongly-lensed-supernovae -->
 
 | Object | Type, redshift | H0 (km/s/Mpc) | Reference |
 |---|---|---|---|
@@ -167,6 +176,7 @@ discriminates between 67 and 73. Detail in `cosmo-distance-ladder-h0` and
 `cosmo-multimessenger`.
 
 ### 7.3 Siblings
+<!-- key: siblings -->
 
 Two or more SNe Ia in one host test standardisation without a cosmological
 model. DES: 8 galaxies with two likely SNe Ia; apart from stretch, siblings
@@ -181,6 +191,7 @@ arXiv:2406.01434). The two results pull in different directions on how much
 scatter is host-driven; the samples are small.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - The SNLS five-year cosmology sample: no publication was searched for or
   found in this session.

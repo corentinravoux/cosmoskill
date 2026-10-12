@@ -8,8 +8,10 @@ Flags: `[src]` read in the cited paper this session; `[sec]` taken from a named 
 The data side of each probe lives in a sibling skill: CMB spectra, lensing and τ in `cosmo-cmb`; BAO and full shape in `cosmo-galaxy-clustering`; the Lyα forest in `cosmo-lyman-alpha`. This file holds the particle-physics interpretation and the small-scale-structure probes that have no other home.
 
 ## 1. Massive neutrinos
+<!-- key: massive-neutrinos -->
 
 ### 1.1 Background relations
+<!-- key: background-relations -->
 
 The relations below are written as in Elbers et al. 2025 (arXiv:2503.14744 §3), the DESI DR2 neutrino paper. The standard review is Lesgourgues & Pastor 2006 (arXiv:astro-ph/0603494).
 
@@ -22,6 +24,7 @@ The relations below are written as in Elbers et al. 2025 (arXiv:2503.14744 §3),
 Neutrinos count as radiation when the sound horizon r_d is set and as matter when BAO are measured. That mismatch, not free streaming, is what BAO + CMB constrain.
 
 ### 1.2 The three channels
+<!-- key: the-three-channels -->
 
 | Channel | What is measured | Why it sees Σm_ν | Main degeneracy |
 |---|---|---|---|
@@ -38,6 +41,7 @@ Statements that need care:
 - Other CMB effects of Σm_ν without lensing reconstruction are the integrated Sachs–Wolfe effect, the lensing-induced smoothing of the peaks and the damping tail; the smoothing is the strongest (arXiv:2503.14744 §3.1).
 
 ### 1.3 Parameterisations of the mass spectrum
+<!-- key: parameterisations-of-the-mass-spectrum -->
 
 | Name | Definition | Used by | Consequence |
 |---|---|---|---|
@@ -49,6 +53,7 @@ Statements that need care:
 All numbers in the fourth column are from arXiv:2503.14744 §4.3. When Σm_ν is not varied, DESI fixes Σm_ν = 0.06 eV and N_eff = 3.044 (arXiv:2503.14744 Table 2 caption [src]); ACT fixes 0.06 eV "carried by a single massive species" as its baseline and uses three massive species when the mass is varied (arXiv:2503.14454 §6.1.1 [src]). The oscillation-based prior is strongly non-linear in the heavier masses; a prior linear in all three masses is an alternative that the DESI paper names and that changes Bayes factors (see `open-questions.md` §1.4).
 
 ### 1.4 Effective ("negative") neutrino mass: three different parameters
+<!-- key: effective-negative-neutrino-mass-three -->
 
 These are not the same quantity and their central values must not be compared directly.
 
@@ -59,6 +64,7 @@ These are not the same quantity and their central values must not be compared di
 The DESI paper states that evidence for negative values is to be read as unidentified systematics or as new physics possibly unrelated to neutrinos, not as negative-mass neutrinos (arXiv:2503.14744 §5.2). Graham, Green & Meyers 2025 (arXiv:2508.20999) separate two meanings of "negative mass": one describing the change in expansion history, the other describing enhanced lensing.
 
 ### 1.5 Statistical practice
+<!-- key: statistical-practice -->
 
 - **Bayesian with a positivity prior.** Standard for collaboration limits. The quoted σ(Σm_ν) = 0.020 eV for DESI DR2 + CMB is a property of the truncated posterior.
 - **Profile likelihood with Feldman–Cousins.** The profile in Σm_ν ≥ 0 is close to parabolic; it is extrapolated to a full parabola with minimum μ0 and width σ, and a 95% limit is built with the Feldman–Cousins prescription. DESI DR2 + CMB: μ0 = −0.036 eV, σ = 0.043 eV, limit 0.053 eV (arXiv:2503.14744 Table 3 [src]). The minimisation uses iminuit with 14 free parameters for BAO + CMB and 44 with the full shape.
@@ -69,11 +75,13 @@ The DESI paper states that evidence for negative values is to be read as unident
 - **Validation.** The DESI neutrino analysis includes a validation on mocks (arXiv:2503.14744 §2.8, section title read only).
 
 ### 1.6 Free-streaming signatures that are independent of the expansion rate
+<!-- key: free-streaming-signatures-that-are-independent -->
 
 - **Phase shift.** Free-streaming radiation travels faster than the sound speed of the plasma and shifts the phase of the acoustic oscillations; for adiabatic initial conditions no other standard parameter produces this (Bashinsky & Seljak 2003, arXiv:astro-ph/0310198). In BAO it is parameterised by an amplitude β_φ, equal to 1 for N_eff = 3.044 and 0 for no free-streaming species (arXiv:2503.14744 §4.2).
 - **Self-interacting neutrinos.** Delaying the onset of free streaming removes the phase shift; other parameters can compensate in the CMB (Kreisch, Cyr-Racine & Doré 2019, arXiv:1902.00534), which is why a phase-shift detection is model-dependent.
 
 ## 2. N_eff and light relics
+<!-- key: neff-and-light-relics -->
 
 - Standard-Model value: 3.044 (Froustey, Pitrou & Volpe 2020, arXiv:2008.01074 gives 3.0440; QED corrections in Bennett et al. 2019, arXiv:1911.04504).
 - What the CMB measures: the expansion rate before recombination through the damping tail relative to the acoustic scale, and the phase shift. The first is degenerate with the primordial helium fraction (arXiv:astro-ph/0310198); analyses either impose BBN consistency for Y_P or free it.
@@ -84,8 +92,10 @@ The DESI paper states that evidence for negative values is to be read as unident
 - Convention: BBN papers quote N_ν with baseline 3; CMB papers quote N_eff with baseline 3.044. The stated difference is N_eff − 3 = 0.044 (arXiv:2207.13133).
 
 ## 3. Dark-matter properties from small-scale structure
+<!-- key: dark-matter-properties-from-small-scale -->
 
 ### 3.1 What is constrained
+<!-- key: what-is-constrained -->
 
 All of the models below are tested through one of two effects: a cutoff in the linear matter power spectrum (fewer low-mass haloes), or a change in the internal structure of haloes.
 
@@ -100,6 +110,7 @@ All of the models below are tested through one of two effects: a cutoff in the l
 | Decaying | lifetime, fraction, kick velocity | late-time loss of matter or of small-scale power | — |
 
 ### 3.2 Half-mode scale and the keV conversion
+<!-- key: half-mode-scale-and-the-kev-conversion -->
 
 Limits are derived on the half-mode mass M_hm (or wavelength λ_hm) and then converted to a thermal-relic mass. Pairs read this session:
 
@@ -119,6 +130,7 @@ The same half-mode mass maps to different keV values in different papers (10^7.8
 A thermal-relic limit does not transfer to other models by matching the half-mode scale: for dark matter–neutrino scattering this mapping overestimates the constraint relative to dedicated simulations (Mosbech et al. 2026, arXiv:2607.15020). For ultralight fields produced with a field power spectrum peaked at a subhorizon wavenumber k*, the field free-streams like warm dark matter and the mass limit scales with k* (Nadler et al. 2026, arXiv:2605.15371).
 
 ### 3.3 The probes
+<!-- key: the-probes -->
 
 | Probe | Observable | Scales | What must be modelled |
 |---|---|---|---|
@@ -133,14 +145,17 @@ A thermal-relic limit does not transfer to other models by matching the half-mod
 | CMB and galaxy power spectra | TT/TE/EE, lensing, P(k) | sub-component axions, scattering, decays | non-linear model for the non-cold component (Rogers et al. 2023, arXiv:2301.08361) |
 
 ### 3.4 Self-interactions
+<!-- key: self-interactions -->
 
 The quantity is the cross section per unit mass σ/m in cm²/g at a characteristic relative velocity, which rises from dwarfs to clusters. Reviews: Tulin & Yu 2017 (arXiv:1705.02358), Adhikari et al. 2022 (arXiv:2207.10638). Velocity-dependent models are written with a normalisation σ0 and a velocity scale ω (as in Jia et al. 2026, arXiv:2601.17118). Haloes first form an isothermal core and can later undergo gravothermal core collapse, so one rotation curve can admit a core-growth and a core-collapse solution.
 
 ### 3.5 Decays
+<!-- key: decays -->
 
 Two models are in use (Simon et al. 2022, arXiv:2203.07440): a fraction f of the dark matter decaying to dark radiation with lifetime τ, constrained mainly by the CMB; and all of the dark matter decaying to dark radiation plus a massive warm daughter, with a fraction ε of the rest-mass energy going to radiation, proposed as a way to lower S8. The Boltzmann hierarchy for the first is derived in Poulin, Serpico & Lesgourgues 2016 (arXiv:1606.02073).
 
 ## 4. Codes named in the analyses read this session
+<!-- key: codes-named-in-the-analyses-read-this-session -->
 
 | Code | Use | Reference | Flag |
 |---|---|---|---|
@@ -156,6 +171,7 @@ Two models are in use (Simon et al. 2022, arXiv:2203.07440): a fraction f of the
 `cosmo-software-ecosystem` holds the general Boltzmann (CAMB), sampler (Cobaya) and emulator (EuclidEmulator2) references, and the fuzzy-dark-matter simulation codes; they are not repeated here.
 
 ## 5. Conventions and where the community is split
+<!-- key: conventions-and-where-the-community-is-split -->
 
 - **Limit level.** Neutrino-mass limits are 95%; KATRIN quotes 90% CL; lensing papers quote Bayes-factor 10:1 or posterior-odds 20:1 bounds next to 95% limits. Liu, Gong & Liao 2025 (arXiv:2512.01361) give both: 6.20 keV at 95% and 5.75 keV at 20:1.
 - **Units.** Σm_ν in eV or meV; warm-dark-matter mass in keV for a thermal relic; fuzzy-dark-matter mass in eV; Lyα wavenumbers in s/km; σ/m in cm²/g; dark matter–proton cross sections in cm².
@@ -165,6 +181,7 @@ Two models are in use (Simon et al. 2022, arXiv:2203.07440): a fraction f of the
 - **Blinding.** The CMB and BAO inputs are blinded by their collaborations (see `cosmo-cmb`, `cosmo-galaxy-clustering`). No blinding statement was read this session for any of the small-scale dark-matter analyses listed in §3.3.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - The numerical form of the warm-dark-matter transfer function and of the half-mode-mass to keV relation was not read at source; only the paired values in §3.2 were.
 - The fuzzy-dark-matter Jeans scale formula was not read at source.

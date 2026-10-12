@@ -6,8 +6,10 @@ Snapshot: 2026-10-07
 Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named secondary source; `[der]` derived here, derivation stated.
 
 ## 1. Covariance corrections for finite mock counts
+<!-- key: covariance-corrections-for-finite-mock-counts -->
 
 ### 1.1 Size of the corrections for typical mock counts
+<!-- key: size-of-the-corrections-for-typical-mock-counts -->
 
 All entries are `[der]`: computed here from the formulae read in arXiv:2108.10402 and arXiv:1312.4841 (see `physics-and-methods.md` §2.1), with `h = (n_s − 1)/(n_s − n_d − 2)`, `DS = 1 + B (n_d − n_θ)`, and `S'/S = (n_s − 1) DS / (n_s − n_d + n_θ − 1)`. The assumption is Gaussian data and independent mocks. The last column is the factor by which a naive parameter error (Gaussian likelihood with the uncorrected `S^-1`) must be multiplied.
 
@@ -28,6 +30,7 @@ All entries are `[der]`: computed here from the formulae read in arXiv:2108.1040
 Reading the table: the Hartlap factor and the Dodelson–Schneider factor are of similar size and both are needed; two different numbers answer "what does it cost". (i) Against a perfectly known covariance, the scatter of the best fit grows by the Dodelson–Schneider variance factor: 1.10 for 1000 mocks and 100 points, 1.65 for 400 points, that is 5% and 29% on the error bar. (ii) Against a posterior built naively on the raw sample covariance, the error bar must be widened by the last column, which contains the Hartlap term as well: 10% and 65%. The two happen to be numerically close (DS variance 1.100 and 1.653; total error-bar factor 1.100 and 1.647), which invites quoting one for the other. A short data vector (the `n_d = 13` row, chosen as an illustration) is unaffected; a long joint data vector is not.
 
 ### 1.2 Numbers stated in the papers
+<!-- key: numbers-stated-in-the-papers -->
 
 | Statement | Value | Source | Flag |
 |---|---|---|---|
@@ -44,6 +47,7 @@ Reading the table: the Hartlap factor and the Dodelson–Schneider factor are of
 | DESI 2024: analytic configuration-space covariance adequate for BAO; analytic Fourier-space covariance does not reproduce the mocks for full shape, hence a corrected mock covariance | qualitative | Forero-Sánchez et al. 2024, arXiv:2411.12027 | [src] |
 
 ### 1.3 Non-Gaussian likelihood and parameter-dependent covariance: documented sizes
+<!-- key: non-gaussian-likelihood-and-parameter-dependent -->
 
 | Case | Effect | Source | Flag |
 |---|---|---|---|
@@ -55,6 +59,7 @@ Reading the table: the Hartlap factor and the Dodelson–Schneider factor are of
 | CMB: validity of the Hamimeche–Lewis approximation | ℓ ≳ 30 | Hamimeche & Lewis 2008, arXiv:0801.0554 | [src] |
 
 ## 2. Projection (prior-volume) effects — documented shifts
+<!-- key: projection-prior-volume-effects-documented -->
 
 Shifts are between the posterior mean and the best fit (maximum likelihood or MAP), in units of the posterior σ, as each paper states them.
 
@@ -88,6 +93,7 @@ The DESI w0waCDM line is the largest documented projection effect in a collabora
 Cost of the mitigations: 320 000 mock catalogues from 10 000 HOD parameter sets on 32 boxes for the HOD-informed prior (Zhang et al. 2024, arXiv:2409.12937) [src]; 10 500 HOD mocks for the simulation-based prior of Ivanov et al. 2024 (arXiv:2402.13310), which shrinks the bias-parameter posterior volume by an order of magnitude and improves single-field f_NL constraints by about 40% [src]; analytic marginalisation cuts sampling time by a factor 3–10 (Hadzhiyska et al. 2023, arXiv:2301.11895) [src].
 
 ## 3. Profile likelihood against posterior on the same data
+<!-- key: profile-likelihood-against-posterior-on-the -->
 
 | Parameter, data, model | Frequentist | Bayesian | Source | Flag |
 |---|---|---|---|---|
@@ -105,8 +111,10 @@ Cost of the mitigations: 320 000 mock catalogues from 10 000 HOD parameter sets 
 Pattern: where the model is well constrained and no boundary is involved (ΛCDM, r with a flat prior), the two frameworks agree to a few per cent. They separate in three situations: a boundary (Σm_ν), a parameter that switches off a sector (f_EDE, an interaction cross-section), and many weakly constrained nuisance parameters (EFT full shape, §2).
 
 ## 4. Model comparison — evidence against delta chi2 on the same data
+<!-- key: model-comparison-evidence-against-delta-chi2-on -->
 
 ### 4.1 DESI DR2: Δχ², significance and ΔDIC for w0waCDM against ΛCDM
+<!-- key: desi-dr2-chi2-significance-and-dic-for-w0wacdm -->
 
 The Δχ² table of §7.1 of DESI Collaboration 2025 (arXiv:2503.14738), transcribed [src]. `Δχ²_MAP` is w0waCDM minus ΛCDM; the significance assumes 2 extra parameters; `Δ(DIC) = DIC_w0wa − DIC_ΛCDM`. The supernova rows use the compilations as they stood in March 2025 and are superseded for the supernova samples (see `cosmo-supernovae` and `cosmo-dark-energy-modified-gravity`); they are kept here because they are the reference case for the statistics.
 
@@ -128,6 +136,7 @@ The Δχ² table of §7.1 of DESI Collaboration 2025 (arXiv:2503.14738), transcr
 Checks `[der]`: every significance is reproduced by `p = exp(−abs(Δχ²)/2)` and the two-sided Gaussian equivalent. `Δ(DIC) − Δχ²_MAP` lies between 3.6 and 4.7 in every row, that is about twice the two extra parameters, as expected when both are constrained by the data.
 
 ### 4.2 The same data under the Bayesian evidence
+<!-- key: the-same-data-under-the-bayesian-evidence -->
 
 | Data, w0waCDM against ΛCDM | Δχ² route | Evidence route | Source | Flag |
 |---|---|---|---|---|
@@ -142,6 +151,7 @@ Where the Bayesian preference comes from, according to arXiv:2511.10631 [src]: a
 The lesson for a referee: for DESI + CMB the three in-sample statistics read 3.1σ, `Δ(DIC) = −8.7` ("strong" on DESI's own scale) and `ln B = −0.57` (mildly against). None of them is an error; they answer different questions with different treatment of the prior volume of `w0`, `wa`.
 
 ## 5. Tension metrics on the same data
+<!-- key: tension-metrics-on-the-same-data -->
 
 | Comparison, model | Metric | Value | Source | Flag |
 |---|---|---|---|---|
@@ -165,6 +175,7 @@ The lesson for a referee: for DESI + CMB the three in-sample statistics read 3.1
 Two readings of the table. First, the DES Y6 pair (1.8σ and 2.6σ on the same posteriors) shows that projecting on the best-measured combination raises the figure; the full-space number is the one that accounts for the look at several parameters. Second, the quoted lensing tensions do not share a reference: KiDS compares with Planck alone, DES Y6 with a three-experiment CMB combination (noted in `cosmo-weak-lensing`).
 
 ## 6. Samplers — documented accuracy and cost
+<!-- key: samplers-documented-accuracy-and-cost -->
 
 | Statement | Value | Source | Flag |
 |---|---|---|---|
@@ -177,6 +188,7 @@ Two readings of the table. First, the DES Y6 pair (1.8σ and 2.6σ on the same p
 | Analytic marginalisation of calibratable nuisance parameters | sampling time reduced by a factor 3–10 | arXiv:2301.11895 | [src] |
 
 ## 7. Emulator error budgets
+<!-- key: emulator-error-budgets -->
 
 | Emulator | Quantity | Stated accuracy | Range | Source | Flag |
 |---|---|---|---|---|---|
@@ -189,6 +201,7 @@ Two readings of the table. First, the DES Y6 pair (1.8σ and 2.6σ on the same p
 These are interpolation accuracies against the training-type calculation. They are not the accuracy of the prediction against the real Universe: a 1% dark-matter-only emulator says nothing about baryonic feedback at k of a few h/Mpc.
 
 ## 8. Simulation-based inference — coverage and validation outcomes
+<!-- key: simulation-based-inference-coverage-and -->
 
 | Analysis | Outcome | Source | Flag |
 |---|---|---|---|
@@ -204,6 +217,7 @@ These are interpolation accuracies against the training-type calculation. They a
 The KiDS-SBI value of S8 belongs to the KiDS-1000 data and calibration, superseded by KiDS-Legacy (see `cosmo-weak-lensing`); it is quoted here for the method.
 
 ## 9. Fisher forecasts against full posteriors
+<!-- key: fisher-forecasts-against-full-posteriors -->
 
 | Case | Fisher against sampled posterior | Source | Flag |
 |---|---|---|---|
@@ -215,6 +229,7 @@ The KiDS-SBI value of S8 belongs to the KiDS-1000 data and calibration, supersed
 The first line is the relevant one for w0wa from BAO and supernovae: the posterior is strongly non-elliptical along the `w0`–`wa` degeneracy, so a Fisher forecast of the figure of merit for geometrical probes alone is optimistic by a large factor.
 
 ## 10. Blinding — documented outcomes
+<!-- key: blinding-documented-outcomes -->
 
 | Statement | Value | Source | Flag |
 |---|---|---|---|
@@ -224,6 +239,7 @@ The first line is the relevant one for w0wa from BAO and supernovae: the posteri
 | Covariance blinding on KiDS-450 | the cosmic-shear tension with Planck "could easily be induced by a mischaracterization of correlations between ξ− at the highest redshift and all lower redshifts" (an illustration, with no direct evidence that the KiDS-450 covariance is biased) | Sellentin 2020, arXiv:1910.08533 | [src] |
 
 ## 11. Look-elsewhere corrections — documented cases
+<!-- key: look-elsewhere-corrections-documented-cases -->
 
 No collaboration analysis found in this session quotes a trial-factor-corrected global significance for a headline cosmological result. The documented cases are of the complementary kind: a local significance that changed when the analysis freedom was removed or the null was simulated.
 
@@ -237,8 +253,10 @@ No collaboration analysis found in this session quotes a trial-factor-corrected 
 | Phantom crossing within CPL | "preferred" | 3.2% of non-crossing mocks imitate it | [sec: `cosmo-dark-energy-modified-gravity` SKILL.md] | [sec] |
 
 ## 12. History of the key numbers
+<!-- key: history-of-the-key-numbers -->
 
 ### 12.1 Covariance corrections
+<!-- key: covariance-corrections -->
 
 | Year | Step | What it superseded | Source |
 |---|---|---|---|
@@ -253,6 +271,7 @@ No collaboration analysis found in this session quotes a trial-factor-corrected 
 A text that says "we apply the Hartlap correction" and nothing else is using the 2007 state of the art.
 
 ### 12.2 Significance of evolving dark energy, by statistic
+<!-- key: significance-of-evolving-dark-energy-by -->
 
 | Date | Data | Statistic | Value | Source |
 |---|---|---|---|---|
@@ -265,6 +284,7 @@ A text that says "we apply the Hartlap correction" and nothing else is using the
 The later frequentist values with recalibrated supernovae are in `cosmo-dark-energy-modified-gravity`; this table tracks the statistic, not the data.
 
 ### 12.3 Lensing against the CMB, by metric
+<!-- key: lensing-against-the-cmb-by-metric -->
 
 | Date | Comparison | Value | Metric | Source |
 |---|---|---|---|---|
@@ -278,6 +298,7 @@ The later frequentist values with recalibrated supernovae are in `cosmo-dark-ene
 The entries are not comparable with each other without the metric and the CMB reference; the S8 values behind them are in `cosmo-weak-lensing`.
 
 ### 12.4 CMB against DESI DR2 BAO in ΛCDM: three published figures
+<!-- key: cmb-against-desi-dr2-bao-in-lambdacdm-three -->
 
 | Quoted by | CMB data | Value | Space | Source | Flag |
 |---|---|---|---|---|---|
@@ -288,6 +309,7 @@ The entries are not comparable with each other without the metric and the CMB re
 Three numbers for what a text would call "the CMB–BAO tension", differing by CMB combination and by the subspace compared.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - The constant `A` of the Percival 2014 `m_1` factor was not transcribed (it is defined in the paper's eq. AB); the table of §1.1 uses the exact 2022 expression instead.
 - The Bayesian (MCMC) limits on the early-dark-energy fraction that the profile-likelihood papers argue against were not read; only the frequentist values are quoted.

@@ -13,6 +13,7 @@ depends on cosmology only through the low-redshift expansion (q0), which is
 stated where the source states it.
 
 ## 1. Local distance ladder: three-rung (geometry -> stars -> SN Ia)
+<!-- key: local-distance-ladder-three-rung-geometry-stars -->
 
 | Value | Dataset / route | Model dependence | Citation | Flag |
 |---|---|---|---|---|
@@ -44,6 +45,7 @@ the anchor NGC 4258 and many SN Ia calibrators. The CCHP total uncertainty is
 Li et al. (arXiv:2504.08921) quote the same result as 70.4 ± 1.9 `[src]`.
 
 ## 2. Local ladders that do not use SN Ia, or use only two rungs
+<!-- key: local-ladders-that-do-not-use-sn-ia-or-use-only -->
 
 | Value | Dataset / route | Citation | Flag |
 |---|---|---|---|
@@ -68,6 +70,7 @@ velocity field (field-to-field scatter 5.2 `[src]`), and its authors state that
 it cannot yet arbitrate the tension.
 
 ## 3. One-step routes, independent of the ladder and of the sound horizon
+<!-- key: one-step-routes-independent-of-the-ladder-and -->
 
 | Value | Dataset / route | Model | Citation | Flag |
 |---|---|---|---|---|
@@ -100,6 +103,7 @@ stellar-population modelling, dominates; current accuracy is about 5% at
 z ~ 0.5 `[src]` (Moresco 2024, arXiv:2412.01994).
 
 ## 4. Early-Universe and inverse-ladder values
+<!-- key: early-universe-and-inverse-ladder-values -->
 
 | Value | Dataset | Model | Citation | Flag |
 |---|---|---|---|---|
@@ -122,6 +126,7 @@ The BBN baryon density that feeds BAO + BBN is Omega_b h^2 = 0.02218 ± 0.00055
 `[src]` (Schöneberg 2024, arXiv:2401.15054).
 
 ## 5. Tension significance, computed uniformly
+<!-- key: tension-significance-computed-uniformly -->
 
 Derivation `[der]`: n = (H0_local - H0_early) / sqrt(sigma_local^2 +
 sigma_early^2), assuming Gaussian, uncorrelated errors in H0. Asymmetric
@@ -156,6 +161,7 @@ measurements gives a model-averaged 95% region 66.7 < H0 < 72.7 `[src]`
 (Hughes et al. 2025, arXiv:2511.19341).
 
 ## 6. Reanalyses of the SH0ES data that move H0
+<!-- key: reanalyses-of-the-sh0es-data-that-move-h0 -->
 
 These use the public SH0ES data with a different statistical or astrophysical
 model. None is a new measurement; each isolates one assumption.
@@ -169,6 +175,7 @@ model. None is a new measurement; each isolates one assumption.
 | 71.1 ± 1.4 | drop SN Ia; model selection and velocities (Section 2) | arXiv:2509.09665 | [src] |
 
 ## 7. History of the key numbers
+<!-- key: history-of-the-key-numbers -->
 
 Local ladder (SH0ES line):
 
@@ -205,6 +212,7 @@ CMB: 67.4 ± 0.5 (Planck 2018) to 67.19 ± 0.38 (SPT + ACT + Planck 2025). The
 ground-based SPT-3G value alone, 66.66 ± 0.60, is lower than Planck's.
 
 ## 8. Other quantities worth having at hand
+<!-- key: other-quantities-worth-having-at-hand -->
 
 | Quantity | Value | Citation | Flag |
 |---|---|---|---|
@@ -231,6 +239,7 @@ The ratio 111.8 / 98.5 = 1.135 `[der]` is the Coma version of the tension: it
 is larger than 73.5 / 67.4 because the DESI FP relation itself returns 76.5.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - The best-fit Cepheid slope b_W, metallicity term Z_W and SN Ia M_B^0 of the
   2022 SH0ES baseline: the LaTeX source stores them in macros that the section

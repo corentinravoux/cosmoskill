@@ -5,8 +5,10 @@ Snapshot: 2026-10-07
 
 
 ## 1. Bispectrum and N-point functions
+<!-- key: bispectrum-and-n-point-functions -->
 
 ### 1.1 Does the bispectrum raise or lower σ8, and by how much does it help?
+<!-- key: does-the-bispectrum-raise-or-lower-sigma8-and -->
 
 Three DESI DR1 pipelines agree that the bispectrum monopole tightens the
 amplitude, but not on the size of the gain: about 20% on ln(10¹⁰A_s)
@@ -21,6 +23,7 @@ data gave σ8 = 0.722 +0.032/−0.036 in the window-free P + B0 analysis
 abstracts do not reconcile them.
 
 ### 1.2 Simulation-based priors
+<!-- key: simulation-based-priors -->
 
 Priors on EFT parameters learned from HOD mocks sharpen constraints
 (arXiv:2507.00118; the f_NL^equil error falls from 390 to 230 in
@@ -31,6 +34,7 @@ the result then inherits the HOD family's assumptions; the sibling skill
 SKILL.md; not re-read at source here].
 
 ### 1.3 Parity violation
+<!-- key: parity-violation -->
 
 Side A: a parity-odd 4PCF excess at 7.1σ in BOSS CMASS (arXiv:2206.03625) and
 4–10σ in the DESI DR1 LRG auto analysis (arXiv:2508.09133); a BAO feature in
@@ -42,14 +46,17 @@ in cross-patch correlations (arXiv:2508.09133), in kurto spectra
 decides: DESI DR2 with larger sets of high-fidelity mocks.
 
 ### 1.4 Trispectrum
+<!-- key: trispectrum -->
 
 A full-shape trispectrum pipeline now exists and is validated on simulations
 (arXiv:2610.08908); the **forecast** gain for a DESI-like volume is up to 15%
 on ω_cdm. No data application yet.
 
 ## 2. Cosmic voids
+<!-- key: cosmic-voids -->
 
 ### 2.1 Are the void AP constraints as tight as quoted?
+<!-- key: are-the-void-ap-constraints-as-tight-as-quoted -->
 
 Side A: the void–galaxy cross-correlation gives D_M/D_H more precisely than BAO
 in the same data, a factor of about 3.5 in BOSS CMASS (arXiv:1904.01030), and
@@ -63,12 +70,14 @@ was found this session. What decides: a DESI analysis with the corrected
 model; none was found.
 
 ### 2.2 Calibrated or calibration-free
+<!-- key: calibrated-or-calibration-free -->
 
 The two BOSS results from one paper, f/b = 0.540 ± 0.091 and 0.347 ± 0.023,
 show how much of the constraining power can come from the mocks
 (arXiv:2007.07895). A referee should ask which is quoted.
 
 ### 2.3 The w < −1 pull
+<!-- key: the-w-1-pull -->
 
 Voids plus galaxies in SDSS give w = −1.50 +0.43/−0.28 and Ω_m = 0.391 in wCDM
 (arXiv:2303.06143); the VSF gives w = −1.1 ± 0.2 (arXiv:2212.03873) and
@@ -76,6 +85,7 @@ Voids plus galaxies in SDSS give w = −1.50 +0.43/−0.28 and Ω_m = 0.391 in w
 be cited as support for phantom dark energy.
 
 ### 2.4 Growth from the void–forest cross-correlation
+<!-- key: growth-from-the-void-forest-cross-correlation -->
 
 The first measurement gives the forest β around voids at z = 2.49
 (arXiv:2203.11045). Open: whether a growth-rate constraint can be extracted,
@@ -84,6 +94,7 @@ for fσ8 (recorded in `cosmo-lyman-alpha`). A void–Lyα RSD Letter by the same
 author is in preparation and is not citable.
 
 ### 2.5 Forecasts (all **forecast**)
+<!-- key: forecasts-all-forecast -->
 
 | Probe | Forecast | Reference |
 |---|---|---|
@@ -93,6 +104,7 @@ author is in preparation and is not citable.
 | Void lensing for Σm_ν; voids for ultra-light axions | simulation studies, no number read | Xu et al. 2026, arXiv:2603.09278; London et al. 2026, arXiv:2602.22990 |
 
 ### 2.6 Stale or fragile claims
+<!-- key: stale-or-fragile-claims -->
 
 - "Voids give a 1% AP measurement free of systematic errors": see §2.1.
 - "Void lensing is low": resolved for DESI Legacy LRG voids by matched mocks,
@@ -103,8 +115,10 @@ author is in preparation and is not citable.
   of magnitude above the ΛCDM expectation; treat as unconfirmed.
 
 ## 3. Alternative statistics and their validation
+<!-- key: alternative-statistics-and-their-validation -->
 
 ### 3.1 Are the factor 2–6 gains real?
+<!-- key: are-the-factor-2-6-gains-real -->
 
 Side A: three statistics on BOSS CMASS (DSC, WST, MFs) return σ8 and fσ8
 consistent with each other and with Planck, with errors 2–6 times smaller than
@@ -120,6 +134,7 @@ higher-order statistic (arXiv:2511.15354). Missing: a DESI application of any
 of them, and a blinded data analysis. Neither was found this session.
 
 ### 3.2 Which statistic?
+<!-- key: which-statistic -->
 
 No ranking exists. The Beyond-2pt paper declines to give one because priors,
 scale cuts and volumes differ (arXiv:2405.02252). For neutrino mass, the
@@ -127,6 +142,7 @@ marked power spectrum's advantage over P + B disappears at realistic tracer
 density (arXiv:2411.14377).
 
 ### 3.3 What a second round of the challenge needs
+<!-- key: what-a-second-round-of-the-challenge-needs -->
 
 Stated or implied by arXiv:2405.02252: observational systematics (the first
 round had none), non-HOD galaxy models, a test of error-bar calibration, and
@@ -134,8 +150,10 @@ field-level inference in redshift space with free cosmology (it took part only
 in real space with σ8 free).
 
 ## 4. Higher-order weak lensing
+<!-- key: higher-order-weak-lensing -->
 
 ### 4.1 Does third-order shear sharpen or reopen the S8 tension?
+<!-- key: does-third-order-shear-sharpen-or-reopen-the-s8 -->
 
 KiDS-Legacy 2+3-point: within 1σ of Planck (arXiv:2606.12389). DES Y3
 2+3-point: 2.3σ (arXiv:2508.14018). HSC Y3 2+3-point: 3.2σ, an increase over
@@ -146,6 +164,7 @@ since been revised (see `cosmo-weak-lensing`). No HSC Y3 2+3-point reanalysis
 with the revised redshifts was found.
 
 ### 4.2 How much information is there beyond two-point?
+<!-- key: how-much-information-is-there-beyond-two-point -->
 
 Data-based figures of merit: +80% to +111% for 2+3-point in the Ω_m–S8 plane
 (arXiv:2508.14019, arXiv:2508.14018), more than double in KiDS-Legacy
@@ -156,6 +175,7 @@ degeneracy; S8 itself improves modestly (about 25% in HSC Y1,
 arXiv:2409.01301).
 
 ### 4.3 Is the baryon robustness real?
+<!-- key: is-the-baryon-robustness-real -->
 
 HSC Y1 finds differences ≤ 0.5σ down to 2′, "or it is canceled by other
 scale-dependent systematics" (arXiv:2403.03807). That caveat is the open
@@ -163,13 +183,16 @@ question for Stage IV, where the statistical error will be several times
 smaller.
 
 ### 4.4 What the next data decide
+<!-- key: what-the-next-data-decide -->
 
 DES Y6 higher-order analyses are announced (arXiv:2606.11309). Stage-IV
 status and dates are in `cosmo-weak-lensing`.
 
 ## 5. Field-level inference
+<!-- key: field-level-inference -->
 
 ### 5.1 How much information lies beyond the power spectrum and bispectrum?
+<!-- key: how-much-information-lies-beyond-the-power -->
 
 Side A (LEFTfield group). On identical modes of simulated halos, sampling the
 initial conditions improves σ8 by factors 3.5–5.2 over a simulation-based
@@ -193,6 +216,7 @@ uses a Fisher forecast for P + B. Neither side has applied the method to
 survey data.
 
 ### 5.2 Has field-level inference delivered cosmology from data?
+<!-- key: has-field-level-inference-delivered-cosmology -->
 
 With sampled initial conditions: no parameter constraint was found; the data
 products are fields (arXiv:1806.11117, arXiv:1909.06396, arXiv:2505.10682,
@@ -202,12 +226,14 @@ compression: yes, on 10% of BOSS (arXiv:2310.15256). With a Gaussian
 likelihood: yes, for fσ8 from velocities (`cosmo-peculiar-velocities`).
 
 ### 5.3 Local-Universe implications
+<!-- key: local-universe-implications -->
 
 Manticore-Local finds "no evidence for a large local underdensity"
 (arXiv:2505.10682). This bears on local-void explanations of the Hubble
 tension, treated in `cosmo-distance-ladder-h0`.
 
 ### 5.4 Neural BAO reconstruction
+<!-- key: neural-bao-reconstruction -->
 
 LiFT claims an effective-volume gain of 1.2–2.0 on DESI DR1 LRGs
 (arXiv:2609.14862). Open: whether a collaboration will adopt a learned
@@ -216,6 +242,7 @@ compares with the 0.1–0.2% of standard reconstruction (figure from
 `cosmo-galaxy-clustering` [sec]).
 
 ## 6. Simulation-based inference
+<!-- key: simulation-based-inference -->
 
 - **Not yet on DESI.** No SBI analysis of DESI galaxy clustering was found in
   date-sorted searches. The SimBIG papers contain forecasts for DESI, PFS and
@@ -228,6 +255,7 @@ compares with the 0.1–0.2% of standard reconstruction (figure from
   agreed mitigation.
 
 ## 7. Misconceptions and stale claims
+<!-- key: misconceptions-and-stale-claims -->
 
 | Claim still seen | Correction | Reference |
 |---|---|---|
@@ -245,6 +273,7 @@ compares with the 0.1–0.2% of standard reconstruction (figure from
 | "The void–forest β = 1.21 is a growth-rate measurement" | It is the forest RSD parameter around voids | arXiv:2203.11045 |
 
 ## 8. What the next data will decide
+<!-- key: what-the-next-data-will-decide -->
 
 - DESI DR2 full shape with the bispectrum: whether the amplitude gain (4–26%
   depending on pipeline) converges between pipelines.
@@ -257,6 +286,7 @@ compares with the 0.1–0.2% of standard reconstruction (figure from
 - A second Beyond-2pt round with systematics and non-HOD galaxies.
 
 ## Not verified
+<!-- key: not-verified -->
 
 Items looked for and not found, or known to exist but not read this session.
 None of them should be asserted from this skill.

@@ -10,6 +10,7 @@ Flags: `[src]` read this session in the cited paper; `[sec]` from a named
 secondary source; `[der]` derived here. H0 in km/s/Mpc.
 
 ## 1. Is the local ladder value 73 or 70?
+<!-- key: is-the-local-ladder-value-73-or-70 -->
 
 **Position A (SH0ES, H0DN).** The Cepheid-SN Ia ladder gives 73.17 ± 0.86
 with four anchors (arXiv:2404.08038), 73.18 ± 0.88 with JWST Cepheids and 35
@@ -61,6 +62,7 @@ recalibration of Gaia (arXiv:2507.15936). No H0 value from the revised
 calibration was found in this session.
 
 ## 2. Does the statistical model of the ladder matter at the 2 to 3 level?
+<!-- key: does-the-statistical-model-of-the-ladder-matter -->
 
 Raised in 2025 (Desmond et al., arXiv:2511.03394): implicit flat priors on
 distance moduli bias H0 high; selection terms partly compensate; both should
@@ -91,6 +93,7 @@ is itself a prior. The Milky Way step is settled in favour of SH0ES by
 arXiv:2603.09880; the extragalactic step (Percival's parameter) is not.
 
 ## 3. Is the tension "ladder versus everything else"?
+<!-- key: is-the-tension-ladder-versus-everything-else -->
 
 **Claim.** Among 88 sound-horizon-free measurements, 30 ladder-based ones
 average 72.73 ± 0.39 and 58 others 69.37 ± 0.34, a 6.5 sigma split (3.9 sigma
@@ -120,6 +123,7 @@ masers, sirens) are compatible with both, and their central values have moved
 with modelling choices.
 
 ## 4. Megamasers: 73.9, 71.6 or 67?
+<!-- key: megamasers-73-9-71-6-or-67 -->
 
 The 2020 MCP value of 73.9 ± 3.0 used a fixed 250 km/s velocity noise and no
 flow correction (arXiv:2001.09213). Two 2026 reanalyses with
@@ -139,6 +143,7 @@ it. Do not cite megamasers as support for either camp without naming the
 analysis.
 
 ## 5. Time-delay cosmography after the mass-sheet reckoning
+<!-- key: time-delay-cosmography-after-the-mass-sheet -->
 
 Kochanek (2020, arXiv:1911.05083) argued that no lensing H0 is more accurate
 than ~10% because the convergence at the Einstein radius is unconstrained.
@@ -160,6 +165,7 @@ other lenses, all without profile assumptions (Birrer & Treu 2021,
 arXiv:2008.06157) `[src]`.
 
 ## 6. Coma and the Fundamental Plane
+<!-- key: coma-and-the-fundamental-plane -->
 
 The DESI FP relation fixes H0 times D_Coma. With D_Coma = 98.5 ± 2.2 Mpc from
 SNe Ia on the HST ladder, H0 = 76.5 ± 2.2; the Planck value requires
@@ -173,6 +179,7 @@ the FP's environmental dependence; the DESI DR1 follow-up with a group
 catalogue gives 73.7 ± 1.1 once calibrated on SH0ES SNe (arXiv:2512.03232).
 
 ## 7. A local void or outflow
+<!-- key: a-local-void-or-outflow -->
 
 **For.** Near-infrared luminosity density rises by ~1.5 beyond z ~ 0.07,
 suggesting a ~300 Mpc under-density (Keenan et al. 2013, arXiv:1304.2884)
@@ -202,6 +209,7 @@ distances and velocities at 100 to 300 Mpc (DESI PV, WALLABY); see
 `cosmo-peculiar-velocities`.
 
 ## 8. Theory status (summary; details in sibling skills)
+<!-- key: theory-status-summary-details-in-sibling-skills -->
 
 **Late-time fixes do not work, by construction.** The ladder constrains M_B;
 any smooth late-time change of H(z) is bounded by BAO + uncalibrated SNe
@@ -243,6 +251,7 @@ Model catalogues and rankings: arXiv:2107.10291 and arXiv:2504.01669; go to
 `cosmo-tensions-anomalies` and `cosmo-dark-energy-modified-gravity`.
 
 ## 9. Were the errors ever right?
+<!-- key: were-the-errors-ever-right -->
 
 A historical analysis of 163 H0 values from 1976 to 2019 finds a chi^2 of 580
 about the weighted mean and concludes that published errors are generically
@@ -255,6 +264,7 @@ leave-one-out variants and an independent community pipeline
 measurement.
 
 ## 10. What the next data will decide
+<!-- key: what-the-next-data-will-decide -->
 
 | Question | Data | When | Flag |
 |---|---|---|---|
@@ -266,6 +276,7 @@ measurement.
 | r_d-free early H0 | completed DESI + SO-like lensing: sigma(H0) ~ 0.67, **forecast** (arXiv:2509.16202) | late 2020s | [src] |
 
 ## 11. Stale or wrong claims that still circulate
+<!-- key: stale-or-wrong-claims-that-still-circulate -->
 
 | Claim | Why it is wrong or stale | Correcting paper |
 |---|---|---|
@@ -287,6 +298,7 @@ measurement.
 | "Standard sirens already weigh in." | 75.4 (+12.8/-9.1) from GWTC-4.0 | arXiv:2509.04348 |
 
 ## Not verified
+<!-- key: not-verified -->
 
 - An H0 value from the CCHP with the 2026 revised Milky Way Cepheid
   calibration; the CCHP JWST Cepheid result. A date-sorted arXiv search on

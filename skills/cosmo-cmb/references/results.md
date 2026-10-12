@@ -28,6 +28,7 @@ Data-set names used below, as defined by the papers themselves:
 ---
 
 ## 1. Base ΛCDM from the CMB alone
+<!-- key: base-lambdacdm-from-the-cmb-alone -->
 
 All rows of this table are from Table 1 of Camphuis et al. 2025
 (arXiv:2506.20707) [src]. Every column includes T&E spectra, a lensing
@@ -126,6 +127,7 @@ PR4 with lensing and BAO (6dF, SDSS DR7, DR16): H₀ = 67.81 ± 0.38,
 n_s = 0.9690 ± 0.0035, τ = 0.0605 ± 0.0059 [src] (arXiv:2309.10034).
 
 ## 2. CMB + DESI BAO in ΛCDM
+<!-- key: cmb-desi-bao-in-lambdacdm -->
 
 | Quantity | SPT-3G D1 + DESI DR2 | CMB-SPA + DESI DR2 | Source |
 |---|---|---|---|
@@ -157,6 +159,7 @@ CMB + DESI drops to about 2σ [src] (Omori et al. 2026, arXiv:2608.31136).
 Dark-energy conclusions belong to `cosmo-dark-energy-modified-gravity`.
 
 ## 3. Lensing amplitude in the spectra (A_L and relatives)
+<!-- key: lensing-amplitude-in-the-spectra-al-and -->
 
 | Value | Data and estimator | Model | Source | Flag |
 |---|---|---|---|---|
@@ -189,6 +192,7 @@ combinations that keep the full Planck TT range: the CMB-SPA A_2pt is
 consistent with ΛCDM at 1.6σ in the (A_2pt, A_recon) plane [src].
 
 ## 4. Lensing reconstruction
+<!-- key: lensing-reconstruction -->
 
 | Quantity | Value | Data | Source | Flag |
 |---|---|---|---|---|
@@ -218,6 +222,7 @@ and n_s. No CMB lensing reconstruction shows a low amplitude; cross-
 correlations with galaxies are covered in `cosmo-cmb-lss-cross-correlations`.
 
 ## 5. Optical depth τ
+<!-- key: optical-depth-tau -->
 
 | τ | Data | Source | Flag |
 |---|---|---|---|
@@ -241,6 +246,7 @@ polarisation plus BAO gives τ > 0.074 [src] (Jhaveri et al. 2026,
 arXiv:2606.20795).
 
 ## 6. Light relics and neutrino mass
+<!-- key: light-relics-and-neutrino-mass -->
 
 N_eff, with BBN consistency for Y_P; ΛCDM+N_eff; standard value 3.044.
 
@@ -294,6 +300,7 @@ second version quotes 0.089 eV. The INSPIRE record still showed 0.082 on
 2026-10-07 while the arXiv v2 text reads 0.089 [src].
 
 ## 7. Curvature
+<!-- key: curvature -->
 
 | Ω_K | Data | Source | Flag |
 |---|---|---|---|
@@ -306,6 +313,7 @@ second version quotes 0.089 eV. The INSPIRE record still showed 0.082 on
 | 0.014 (+0.023/−0.026), 95% | SPT-3G 2018 spectra + lensing | arXiv:2308.11608 | [src] |
 
 ## 8. Tensor modes and parity (status only)
+<!-- key: tensor-modes-and-parity-status-only -->
 
 | Quantity | Value | Data | Source | Flag |
 |---|---|---|---|---|
@@ -322,6 +330,7 @@ searches run on 2026-10-07. Inflation-model implications belong to
 `cosmo-inflation-primordial`.
 
 ## 9. Secondary anisotropy numbers quoted in primary-CMB papers
+<!-- key: secondary-anisotropy-numbers-quoted-in-primary -->
 
 | Quantity | Value | Source | Flag |
 |---|---|---|---|
@@ -335,6 +344,7 @@ the physics belongs to `cosmo-cmb-lss-cross-correlations` and
 `cosmo-reionization-21cm`.
 
 ## 10. History of the key numbers
+<!-- key: history-of-the-key-numbers -->
 
 H₀ from the CMB in ΛCDM:
 
@@ -373,6 +383,7 @@ What superseded what:
   (arXiv:2309.10034); the weak-lensing side is in `cosmo-weak-lensing`.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - The WMAP9 τ value and the Planck 2013 parameter values were not re-read
   and are not tabulated.

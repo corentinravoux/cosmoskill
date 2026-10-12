@@ -12,8 +12,10 @@ stated. "Significance" is the frequentist conversion of `Delta chi2_MAP` with
 two extra degrees of freedom unless stated.
 
 ## 1. The `w0`–`wa` evidence: DESI collaboration numbers
+<!-- key: the-w0-wa-evidence-desi-collaboration-numbers -->
 
 ### 1.1 DESI DR2 BAO (March 2025)
+<!-- key: desi-dr2-bao-march-2025 -->
 
 All rows are read from Section 7.1 and the table "Summary of the difference in
 the effective chi2_MAP" of DESI Collaboration 2025, arXiv:2503.14738. `Delta
@@ -65,6 +67,7 @@ abstract is named):
   (abstract).
 
 ### 1.2 DESI DR1 BAO (April 2024) — superseded by DR2
+<!-- key: desi-dr1-bao-april-2024-superseded-by-dr2 -->
 
 | Data combination | Result | Flag |
 |---|---|---|
@@ -79,6 +82,7 @@ objects in seven redshift bins over `0.1 < z < 4.2`; DR2 uses more than 14
 million (arXiv:2503.14738, abstract) [src].
 
 ### 1.3 DESI extended dark-energy analysis (DR2)
+<!-- key: desi-extended-dark-energy-analysis-dr2 -->
 
 Lodha et al. 2025, arXiv:2503.14743, table of `Delta chi2_MAP` and `Delta DIC`
 values [src]. Entries are `Delta DIC (Delta chi2)` relative to ΛCDM for DESI +
@@ -108,6 +112,7 @@ CMB + the named supernova sample. Negative favours the extended model.
   0.3)".
 
 ## 2. The `w0`–`wa` evidence after the 2025–2026 supernova revisions
+<!-- key: the-w0-wa-evidence-after-the-2025-2026 -->
 
 The 4.2σ of Section 1.1 is superseded. The supernova side is treated in depth
 in `cosmo-supernovae`; the rows below are the numbers this skill needs.
@@ -139,6 +144,7 @@ in `cosmo-supernovae`; the rows below are the numbers this skill needs.
   4.2σ now give 3.2 / 3.4 / 3.4σ (arXiv:2601.19424) [src].
 
 ## 3. DESI clustering beyond BAO
+<!-- key: desi-clustering-beyond-bao -->
 
 | Data | Model | Result | Source | Flag |
 |---|---|---|---|---|
@@ -154,6 +160,7 @@ The bispectrum "consistently weakens evidence for time-varying dark energy
 relative to power-spectrum-only analyses" (arXiv:2606.23936, abstract) [src].
 
 ## 4. Bayesian evidence for `w0wa` against Λ
+<!-- key: bayesian-evidence-for-w0wa-against-lambda -->
 
 `ln B = ln Z(w0wa) − ln Z(Λ)`, computed with PolyChord and anesthetic, same
 priors as the posterior analysis (Lodha et al. 2025, arXiv:2503.14743,
@@ -193,6 +200,7 @@ share.
   freedom in `w(z)` are allowed, corresponding to "≈ 3σ" [src].
 
 ## 5. Constant `w` and pre-DESI dynamical dark energy
+<!-- key: constant-w-and-pre-desi-dynamical-dark-energy -->
 
 | Quantity | Value | Data | Source | Flag |
 |---|---|---|---|---|
@@ -228,6 +236,7 @@ share.
   version uses before quoting 4.6σ.
 
 ## 6. Modified gravity: phenomenological parameters
+<!-- key: modified-gravity-phenomenological-parameters -->
 
 Convention in the rows below: general relativity is `mu0 = Sigma0 = 0`. Time
 dependence proportional to the dark-energy density, `mu(a) = 1 + mu0
@@ -267,6 +276,7 @@ Omega_DE(a)/Omega_DE,0` and the same for Σ (DES and DESI convention; see
   constraints towards GR" [src].
 
 ### Growth index
+<!-- key: growth-index -->
 
 | `gamma` | Data | Significance against 0.55 | Source | Flag |
 |---|---|---|---|---|
@@ -280,6 +290,7 @@ parameter. No DESI-collaboration value of γ was read this session (see "Not
 verified" in `open-questions.md`).
 
 ### Horndeski / EFT of dark energy
+<!-- key: horndeski-eft-of-dark-energy -->
 
 | Parameter | Value | Data | Source | Flag |
 |---|---|---|---|---|
@@ -296,6 +307,7 @@ The chance probability of the GW170817–GRB 170817A coincidence is `5.0 ×
 10^-8` (LIGO Scientific Collaboration et al. 2017, arXiv:1710.05834) [src].
 
 ## 7. Specific models and screening
+<!-- key: specific-models-and-screening -->
 
 | Model or quantity | Bound | Probe | Source | Flag |
 |---|---|---|---|---|
@@ -312,6 +324,7 @@ differ by three orders of magnitude and probe different regimes; quote the one
 that matches the claim.
 
 ## 8. `E_G` measurements
+<!-- key: eg-measurements -->
 
 | `E_G` | Redshift | Data | GR prediction quoted | Source | Flag |
 |---|---|---|---|---|---|
@@ -334,8 +347,10 @@ that matches the claim.
   [src].
 
 ## 9. History of the key numbers
+<!-- key: history-of-the-key-numbers -->
 
 ### 9.1 Significance of the `w0wa` preference (DESI BAO + CMB + supernovae)
+<!-- key: significance-of-the-w0wa-preference-desi-bao -->
 
 | Date | Release | Pantheon+ | Union3 | DES | Source |
 |---|---|---|---|---|---|
@@ -353,6 +368,7 @@ Union3.1). Still current: the DR2 BAO-only (1.7σ) and BAO + CMB (3.1σ) values,
 which do not involve supernovae.
 
 ### 9.2 Without supernovae or without CMB
+<!-- key: without-supernovae-or-without-cmb -->
 
 | Combination | DR1 | DR2 | Source |
 |---|---|---|---|
@@ -362,6 +378,7 @@ which do not involve supernovae.
 | DES Y6 all probes + DESI DR2 BAO, no CMB | — | 2.3σ | arXiv:2605.27221 [src] |
 
 ### 9.3 Modified gravity
+<!-- key: modified-gravity -->
 
 - `E_G` at CMASS: 0.243 ± 0.060 (2015, 2.6σ low) → 0.36 (+0.06/−0.05) (2024,
   consistent) (arXiv:1511.04457, arXiv:2401.12971) [src].

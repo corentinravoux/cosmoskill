@@ -1,0 +1,101 @@
+key	id	first_author	year	title	role
+AnguloHahn2022	2112.05165	Angulo	2021	Large-scale dark matter simulations	review
+HahnAbel2011	1103.6031	Hahn	2011	Multi-scale initial conditions for cosmological simulations	method
+Springel2021	2010.03567	Springel	2020	Simulating cosmic structure formation with the GADGET-4 code	code
+Crocce2006	astro-ph/0606505	Crocce	2006	Transients from Initial Conditions in Cosmological Simulations	systematics
+Schneider2016	1503.05920	Schneider	2015	Matter power spectrum and the challenge of percent accuracy	systematics
+Grove2022	2112.09138	Grove	2021	The DESI $N$-body Simulation Project I: Testing the Robustness of Simulations for the DESI Dark Time Survey	systematics
+Michaux2021	2008.09588	Michaux	2020	Accurate initial conditions for cosmological N-body simulations: Minimizing truncation and discreteness errors	method
+Maksimova2021	2110.11398	Maksimova	2021	AbacusSummit: A Massive Set of High-Accuracy, High-Resolution $N$-Body Simulations	data
+Potter2017	1609.08621	Potter	2016	PKDGRAV3: Beyond Trillion Particle Cosmological Simulations for the Next Era of Galaxy Surveys	code
+AnguloPontzen2016	1603.05253	Angulo	2016	Cosmological $N$-body simulations with suppressed variance	method
+Garrison2019	1810.02916	Garrison	2018	A High-Fidelity Realization of the Euclid Code Comparison $N$-body Simulation with Abacus	results
+Garrison2021	2110.11392	Garrison	2021	The $\texttt{Abacus}$ Cosmological $N$-body Code	code
+Chuang2019UNIT	1811.02111	Chuang	2018	UNIT project: Universe $N$-body simulations for the Investigation of Theoretical models from galaxy surveys	data
+Moran2023	2207.12345	Moran	2022	The Mira-Titan Universe IV. High Precision Power Spectrum Emulation	method
+VillaescusaNavarro2020	1909.05273	Villaescusa-Navarro	2019	The Quijote simulations	data
+EuclidEmulator2	2010.11288	Euclid Collaboration	2020	Euclid preparation: IX. EuclidEmulator2 -- Power spectrum emulation with massive neutrinos and self-consistent dark energy perturbations	method
+Heitmann2021	2006.01697	Heitmann	2020	The Last Journey. I. An Extreme-Scale Simulation on the Mira Supercomputer	data
+DeRose2023	2303.09762	DeRose	2023	Aemulus $ν$: Precise Predictions for Matter and Biased Tracer Power Spectra in the Presence of Neutrinos	data
+Heitmann2016	1508.02654	Heitmann	2015	The Mira-Titan Universe: Precision Predictions for Dark Energy Surveys	data
+Bayer2024	2407.17462	Bayer	2024	The HalfDome Multi-Survey Cosmological Simulations: N-body Simulations	data
+Nishimichi2026	2605.28581	Nishimichi	2026	GINKAKU: Scalable Cosmological Structure Formation Simulation Code and Post-processing Pipeline	code
+Angulo2021	2004.06245	Angulo	2020	The BACCO Simulation Project: Exploiting the full power of large-scale structure for cosmology	data
+Schaller2024	2305.13380	Schaller	2023	SWIFT: A modern highly-parallel gravity and smoothed particle hydrodynamics solver for astrophysical and cosmological applications	code
+Wells2026	2607.16059	Wells	2026	OpenCosmo: Community Portal and Analysis Framework for Flagship Cosmological Simulations	data
+Springel2005	astro-ph/0504097	Springel	2005	Simulating the joint evolution of quasars, galaxies and their large-scale distribution	data
+Nishimichi2019	1811.09504	Nishimichi	2018	Dark Quest. I. Fast and Accurate Emulation of Halo Clustering Statistics and Its Application to Galaxy Clustering	method
+Heitmann2019	1904.11970	Heitmann	2019	The Outer Rim Simulation: A Path to Many-Core Supercomputers	data
+Ishiyama2021	2007.14720	Ishiyama	2020	The Uchuu Simulations: Data Release 1 and Dark Matter Halo Concentrations	data
+DeRose2019	1804.05865	DeRose	2018	The Aemulus Project I: Numerical Simulations for Precision Cosmology	data
+Klypin2016	1411.4001	Klypin	2014	MultiDark simulations: the story of dark matter halo concentrations and density profiles	data
+EuclidFlagship2024	2405.13495	Euclid Collaboration	2024	Euclid. V. The Flagship galaxy mock catalogue: a comprehensive simulation for the Euclid mission	data
+Tokiwa2025	2511.20423	Tokiwa	2025	Impact of Simulation Box Size for Weak Lensing: Replication and Super-Sample Effects	systematics
+Pillepich2018	1703.02970	Pillepich	2017	Simulating Galaxy Formation with the IllustrisTNG Model	method
+Springel2018	1707.03397	Springel	2017	First results from the IllustrisTNG simulations: matter and galaxy clustering	results
+Nelson2019	1812.05609	Nelson	2018	The IllustrisTNG Simulations: Public Data Release	data
+CrainVoort2023	2309.17075	Crain	2023	Hydrodynamical simulations of the galaxy population: enduring successes and outstanding challenges	review
+McCarthy2017	1603.02702	McCarthy	2016	The BAHAMAS project: Calibrated hydrodynamical simulations for large-scale structure cosmology	data
+Schaye2023	2306.04024	Schaye	2023	The FLAMINGO project: cosmological hydrodynamical simulations for large-scale structure and galaxy cluster surveys	data
+Dave2019	1901.10203	Davé	2019	Simba: Cosmological Simulations with Black Hole Growth and Feedback	data
+Schaye2015	1407.7040	Schaye	2014	The EAGLE project: Simulating the evolution and assembly of galaxies and their environments	data
+Vogelsberger2020	1909.07976	Vogelsberger	2019	Cosmological Simulations of Galaxy Formation	review
+HernandezAguayo2023	2210.10059	Hernández-Aguayo	2022	The MillenniumTNG Project: High-precision predictions for matter clustering and halo statistics	data
+Pakmor2023	2210.10060	Pakmor	2022	The MillenniumTNG Project: The hydrodynamical full physics simulation and a first look at its galaxy clusters	data
+Kugel2023	2306.05492	Kugel	2023	FLAMINGO: Calibrating large cosmological hydrodynamical simulations with machine learning	method
+VillaescusaNavarro2021	2010.00619	Villaescusa-Navarro	2020	The CAMELS project: Cosmology and Astrophysics with MachinE Learning Simulations	data
+Dubois2014	1402.1165	Dubois	2014	Dancing in the dark: galactic properties trace spin swings along the cosmic web	data
+Mead2021	2009.01858	Mead	2020	HMcode-2020: Improved modelling of non-linear cosmological power spectra with baryonic feedback	method
+Chisari2019	1905.06082	Chisari	2019	Modelling baryonic feedback for survey cosmology	review
+Salcido2023	2305.09710	Salcido	2023	SP(k) -- A hydrodynamical simulation-based model for the impact of baryon physics on the non-linear matter power spectrum	method
+Bigwood2025	2510.15822	Bigwood	2025	The kinetic Sunyaev Zeldovich effect as a benchmark for AGN feedback models in hydrodynamical simulations: insights from DESI + ACT	results
+Siegel2025a	2509.10455	Siegel	2025	Joint X-ray, kinetic Sunyaev-Zeldovich, and weak lensing measurements: toward a consensus picture of efficient gas expulsion from groups and clusters	results
+Liu2026	2609.22466	Liu	2026	Model-Independent Measurement of Baryon Gas Fractions through Galaxy-Galaxy Lensing and the Kinematic Sunyaev-Zel'dovich Effect	results
+Bigwood2024	2404.06098	Bigwood	2024	Weak lensing combined with the kinetic Sunyaev Zel'dovich effect: A study of baryonic feedback	results
+vanDaalen2020	1906.00968	van Daalen	2019	Exploring the effects of galaxy formation on matter clustering through a library of simulation power spectra	results
+Schneider2025	2507.07892	Schneider	2025	Baryonification: An alternative to hydrodynamical simulations for cosmological studies	method
+vanDaalen2011	1104.1174	van Daalen	2011	The effects of galaxy formation on the matter power spectrum: A challenge for precision cosmology	results
+Arico2021	2011.15018	Aricò	2020	The BACCO Simulation Project: A baryonification emulator with Neural Networks	method
+Chisari2018	1801.08559	Chisari	2018	The impact of baryons on the matter power spectrum from the Horizon-AGN cosmological hydrodynamical simulation	results
+SchneiderTeyssier2015	1510.06034	Schneider	2015	A new method to quantify the effects of baryons on the matter power spectrum	method
+Schaller2025	2410.17109	Schaller	2024	The FLAMINGO project: Baryon effects on the matter power spectrum	results
+Siegel2025b	2512.02954	Siegel	2025	The suppression of the matter power spectrum: strong feedback from X-ray gas mass fractions, kSZ effect profiles, and galaxy-galaxy lensing	results
+Lukic2015	1406.6361	Lukić	2014	The Lyman-$α$ forest in optically-thin hydrodynamical simulations	systematics
+Bolton2017	1605.03462	Bolton	2016	The Sherwood simulation suite: overview and data comparisons with the Lyman-alpha forest at redshifts 2 < z < 5	data
+Puchwein2023	2207.13098	Puchwein	2022	The Sherwood-Relics simulations: overview and impact of patchy reionization and pressure smoothing on the intergalactic medium	data
+Chabanier2023	2207.05023	Chabanier	2022	Modeling the Lyman-$α$ forest with Eulerian and SPH hydrodynamical methods	systematics
+Bird2023	2306.05471	Bird	2023	PRIYA: A New Suite of Lyman-alpha Forest Simulations for Cosmology	data
+CabayolGarcia2023	2305.19064	Cabayol-Garcia	2023	A neural network emulator for the Lyman-$α$ 1D flux power spectrum	method
+ChavesMontero2024	2409.05682	Chaves-Montero	2024	ForestFlow: predicting the Lyman-$α$ forest clustering from linear to nonlinear scales	method
+Walther2025	2412.05372	Walther	2024	Emulating the Lyman-Alpha forest 1D power spectrum from cosmological simulations: New models and constraints from the eBOSS measurement	results
+Farr2020	1912.02763	Farr	2019	LyaCoLoRe: Synthetic Datasets for Current and Future Lyman-$α$ Forest BAO Surveys	method
+Chabanier2020	2002.02822	Chabanier	2020	The impact of AGN feedback on the 1D power spectra from the Ly$α$ forest using the Horizon-AGN suite of simulations	systematics
+Arinyo2015	1506.04519	Arinyo-i-Prats	2015	The Non-Linear Power Spectrum of the Lyman Alpha Forest	method
+Tassev2013	1301.0322	Tassev	2013	Solving Large Scale Structure in Ten Easy Steps with COLA	method
+Leclercq2020	2003.04925	Leclercq	2020	Perfectly parallel cosmological simulations using spatial comoving Lagrangian acceleration	method
+Feng2016	1603.00476	Feng	2016	FastPM: a new scheme for fast simulations of dark matter and halos	method
+Izard2016	1509.04685	Izard	2015	ICE-COLA: Towards fast and accurate synthetic galaxy catalogues optimizing a quasi $N$-body method	method
+Rampf2024	2409.19049	Rampf	2024	BullFrog: Multi-step perturbation theory as a time integrator for cosmological simulations	method
+Tessore2023	2302.01942	Tessore	2023	GLASS: Generator for Large Scale Structure	code
+Blot2019	1806.09497	Blot	2018	Comparing approximate methods for mock catalogues and covariance matrices II: Power spectrum multipoles	systematics
+Zhao2021	2007.08997	Zhao	2020	The completed SDSS-IV extended Baryon Oscillation Spectroscopic Survey: 1000 multi-tracer mock catalogues with redshift evolution and systematics for galaxies and quasars of the final data release	data
+ForeroSanchez2025	2411.12027	Forero-Sánchez	2024	Analytical and EZmock covariance validation for the DESI 2024 results	systematics
+MenaFernandez2025	2404.03008	Mena-Fernández	2024	HOD-Dependent Systematics for Luminous Red Galaxies in the DESI 2024 BAO Analysis	systematics
+Bautista2025	2512.03228	Bautista	2025	The DESI DR1 Peculiar Velocity Survey: Mock Catalog	data
+RuizHerrera2026	2607.27412	Ruiz-Herrera Bernal	2026	CoLoRe-2LPT: Lyman-$α$ mock catalogues for the validation of DESI cosmological analyses	data
+Stopyra2024	2304.09193	Stopyra	2023	Towards Accurate Field-Level Inference of Massive Cosmic Structures	systematics
+WechslerTinker2018	1804.03097	Wechsler	2018	The Connection between Galaxies and their Dark Matter Halos	review
+Hadzhiyska2020	1911.02610	Hadzhiyska	2019	Limitations to the "basic'' HOD model and beyond	systematics
+Findlay2024	2411.12023	Findlay	2024	Exploring HOD-dependent systematics for the DESI 2024 Full-Shape galaxy clustering analysis	systematics
+JascheWandelt2013	1203.3639	Jasche	2012	Bayesian physical reconstruction of initial conditions from large scale structure surveys	method
+JascheLavaux2019	1806.11117	Jasche	2018	Physical Bayesian modelling of the non-linear matter distribution: new insights into the Nearby Universe	method
+Sorce2016	1510.04900	Sorce	2015	Cosmicflows Constrained Local UniversE Simulations	data
+McAlpine2022	2202.04099	McAlpine	2022	SIBELIUS-DARK: a galaxy catalogue of the Local Volume from a constrained realisation simulation	data
+McAlpine2025	2505.10682	McAlpine	2025	The Manticore Project I: a digital twin of our cosmic neighbourhood from Bayesian field-level analysis	data
+McAlpine2026	2606.10020	McAlpine	2026	The Manticore Project II: Bayesian digital twins of cosmic structure across the SDSS and BOSS volumes	data
+Stiskalek2025	2502.00121	Stiskalek	2025	The Velocity Field Olympics: Assessing velocity field reconstructions with direct distance tracers	results
+Valade2026	2602.03699	Valade	2026	Constraining cosmological simulations with peculiar velocities: a forward-modeling approach	method
+Horowitz2019	1903.09049	Horowitz	2019	TARDIS Paper I: A Constrained Reconstruction Approach to Modeling the z~2.5 Cosmic Web Probed by Lyman-alpha Forest Tomography	method
+List2025	2510.05206	List	2025	DISCO-DJ II: a differentiable particle-mesh code for cosmology	code
+Adamek2023	2211.12457	Adamek	2022	Euclid: Modelling massive neutrinos in cosmology -- a code comparison	systematics
+Winther2015	1506.06384	Winther	2015	Modified Gravity N-body Code Comparison Project	systematics

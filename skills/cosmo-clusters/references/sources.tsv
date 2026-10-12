@@ -1,0 +1,101 @@
+key	id	first_author	year	title	role
+Ghirardini2024	2402.08458	Ghirardini	2024	The SRG/eROSITA all-sky survey: Cosmology constraints from cluster abundances in the western Galactic hemisphere	results
+Bulbul2024	2402.08452	Bulbul	2024	The SRG/eROSITA All-Sky Survey: The first catalog of galaxy clusters and groups in the Western Galactic Hemisphere	data
+Kluge2024	2402.08453	Kluge	2024	The SRG/eROSITA All-Sky Survey. Optical identification and properties of galaxy clusters and groups in the western galactic hemisphere	data
+Grandis2024	2402.08455	Grandis	2024	The SRG/eROSITA All-Sky Survey: Dark Energy Survey Year 3 Weak Gravitational Lensing by eRASS1 selected Galaxy Clusters	method
+Clerc2024	2402.08457	Clerc	2024	The SRG/eROSITA All-Sky Survey: X-ray selection function models for the eRASS1 galaxy cluster cosmology	systematics
+Artis2024fR	2402.08459	Artis	2024	The SRG-eROSITA All-Sky Survey : Constraints on f(R) Gravity from Cluster Abundance	results
+Seppi2024	2402.08460	Seppi	2024	The SRG/eROSITA All-Sky Survey: Tracing the Large-Scale Structure with a clustering study of galaxy clusters	results
+Artis2024growth	2410.09499	Artis	2024	The SRG/eROSITA All-Sky Survey : Constraints on the structure growth from cluster number counts	results
+Chiu2025	2504.01076	Chiu	2025	The SRG/eROSITA All-Sky Survey. The Weak-Lensing Mass Calibration and the Stellar Mass-to-Halo Mass Relation from the Hyper Suprime-Cam Subaru Strategic Program	method
+Strunk2026	2609.07834	Strunk	2026	The SRG/eROSITA All-Sky Survey: Early dark energy and Hubble constant from the cluster mass function	results
+Bocquet2019	1812.01679	Bocquet	2018	Cluster Cosmology Constraints from the 2500 deg$^2$ SPT-SZ Survey: Inclusion of Weak Gravitational Lensing Data from Magellan and the Hubble Space Telescope	results
+Bocquet2024I	2310.12213	Bocquet	2023	SPT Clusters with DES and HST Weak Lensing. I. Cluster Lensing and Bayesian Population Modeling of Multi-Wavelength Cluster Datasets	method
+Bocquet2024II	2401.02075	Bocquet	2024	SPT Clusters with DES and HST Weak Lensing. II. Cosmological Constraints from the Abundance of Massive Halos	results
+Bocquet2025	2412.07765	Bocquet	2024	Multiprobe Cosmology from the Abundance of SPT Clusters and DES Galaxy Clustering and Weak Lensing	results
+Bleem2024	2311.07512	Bleem	2023	Galaxy Clusters Discovered via the Thermal Sunyaev-Zel'dovich Effect in the 500-square-degree SPTpol Survey	data
+Kornoelje2025	2503.17271	Kornoelje	2025	The SPT-Deep Cluster Catalog: Sunyaev-Zel'dovich Selected Clusters from Combined SPT-3G and SPTpol Measurements over 100 Square Degrees	data
+Bleem2026	2607.01175	Bleem	2026	Galaxy Clusters Selected via the Sunyaev-Zel'dovich Effect in 5 year data from the SPT-3G Main Survey	data
+Martsen2026	2610.08947	Martsen	2026	Measuring the Clustering of tSZ-Selected Galaxy Clusters with SPT-3G	results
+Vogt2024	2409.13556	Vogt	2024	Constraints on $f(R)$ gravity from tSZE-selected SPT galaxy clusters and weak lensing mass calibration from DES and HST	results
+Chaubal2022	2111.07491	Chaubal	2021	Improving cosmological constraints from galaxy cluster number counts with CMB-cluster-lensing data: Results from the SPT-SZ survey and forecasts for the future	results
+Ansarinejad2024	2404.02153	Ansarinejad	2024	Mass calibration of DES Year-3 clusters via SPT-3G CMB cluster lensing	method
+Natoli2026	2608.20236	Natoli	2026	SPT-3G+: A Cosmic Microwave Background Experiment for the South Pole Telescope	forecast
+Costanzi2021	2010.13800	Costanzi	2020	Cosmological Constraints from DES Y1 Cluster Abundances and SPT Multi-wavelength data	results
+Hasselfield2013	1301.0816	Hasselfield	2013	The Atacama Cosmology Telescope: Sunyaev-Zel'dovich Selected Galaxy Clusters at 148 GHz from Three Seasons of Data	results
+Hilton2021	2009.11043	Hilton	2020	The Atacama Cosmology Telescope: A Catalog of > 4000 Sunyaev-Zel'dovich Galaxy Clusters	data
+ACT2025clusters	2507.21459	ACT-DES-HSC Collaboration	2025	The Atacama Cosmology Telescope: DR6 Sunyaev-Zel'dovich Selected Galaxy Clusters Catalog	data
+Lee2024	2403.19542	Lee	2024	Cosmological inference from combining Planck and ACT cluster counts	results
+Sarieddine2026	2602.03917	Sarieddine	2026	The Atacama Cosmology Telescope: Constraints on Local Non-Gaussianity from the ACT Cluster Catalog	results
+Robertson2024	2304.10219	Robertson	2023	ACT-DR5 Sunyaev-Zel'dovich Clusters: weak lensing mass calibration with KiDS	method
+Shin2025	2512.18935	Shin	2025	Weak Lensing Mass Calibration of the ACT DR5 Galaxy Clusters with the DES Year 3 Weak Lensing Data	method
+Madhavacheril2020	2009.07772	Madhavacheril	2020	The Atacama Cosmology Telescope: Weighing distant clusters with the most ancient light	method
+Aymerich2025b	2509.08673	Aymerich	2025	Implications of SPT and eROSITA cosmologies for Planck cluster number counts and t-SZ power spectrum	critique
+Planck2013XX	1303.5080	Planck Collaboration	2013	Planck 2013 results. XX. Cosmology from Sunyaev-Zeldovich cluster counts	results
+Planck2015XXIV	1502.01597	Planck Collaboration	2015	Planck 2015 results. XXIV. Cosmology from Sunyaev-Zeldovich cluster counts	results
+Planck2015XXVII	1502.01598	Planck Collaboration	2015	Planck 2015 results. XXVII. The Second Planck Catalogue of Sunyaev-Zeldovich Sources	data
+vonderLinden2014	1402.2670	von der Linden	2014	Robust Weak-lensing Mass Calibration of Planck Galaxy Clusters	critique
+Hoekstra2015	1502.01883	Hoekstra	2015	The Canadian Cluster Comparison Project: detailed study of systematics and updated weak lensing masses	method
+Zubeldia2019	1904.07887	Zubeldia	2019	Cosmological constraints from Planck galaxy clusters with CMB lensing mass bias calibration	results
+Salvati2022	2112.03606	Salvati	2021	Combining Planck and SPT cluster catalogs: cosmological analysis and impact on Planck scaling relation calibration	results
+Aymerich2024	2402.04006	Aymerich	2024	Cosmological constraints from the Chandra-Planck galaxy cluster sample	results
+Aymerich2025a	2509.02068	Aymerich	2025	Cosmological constraints from the Planck cluster catalogue with DES shear profiles and Chandra observations	results
+Lesci2023	2302.14074	Lesci	2023	Mass bias and cosmological constraints from Planck cluster clustering	results
+Zubeldia2024	2408.06189	Zubeldia	2024	The Planck SZiFi catalogues: a new set of Planck catalogues of Sunyaev-Zeldovich-detected galaxy clusters	data
+Umetsu2026	2606.24142	Umetsu	2026	CHEX-MATE: AMALGAM weak-lensing analysis of 41 Planck Sunyaev-Zel'dovich-selected galaxy clusters	method
+PlazasMalagon2026	2606.17984	Plazas Malagón	2026	Weak-lensing mass calibration of \emph{Planck} Sunyaev--Zel'dovich clusters with HSC-SSP Year~3	method
+Saxena2025	2505.23005	Saxena	2025	CHEX-MATE: The Impact of Triaxiality and Orientation on Planck SZ Cluster Selection and Weak Lensing Mass Measurements	systematics
+Vikhlinin2009	0812.2720	Vikhlinin	2008	Chandra Cluster Cosmology Project III: Cosmological Parameter Constraints	results
+Mantz2010I	0909.3098	Mantz	2009	The Observed Growth of Massive Galaxy Clusters I: Statistical Methods and Cosmological Constraints	method
+Mantz2015WtG	1407.4516	Mantz	2014	Weighing the Giants IV: Cosmology and Neutrino Mass	results
+Allen2008	0706.0033	Allen	2007	Improved constraints on dark energy from Chandra X-ray observations of the largest relaxed galaxy clusters	results
+Mantz2014	1402.6212	Mantz	2014	Cosmology and Astrophysics from Relaxed Galaxy Clusters II: Cosmological Constraints	results
+Mantz2015SPA	1502.06020	Mantz	2015	Cosmology and Astrophysics from Relaxed Galaxy Clusters I: Sample Selection	method
+Applegate2016	1509.02162	Applegate	2015	Cosmology and astrophysics from relaxed galaxy clusters - IV: Robustly calibrating hydrostatic masses with weak lensing	method
+Mantz2022	2111.09343	Mantz	2021	Cosmological Constraints from Gas Mass Fractions of Massive, Relaxed Galaxy Clusters	results
+Braspenning2025	2409.07849	Braspenning	2024	Hydrostatic mass bias for galaxy groups and clusters in the FLAMINGO simulations	systematics
+Kay2024	2404.08539	Kay	2024	Relativistic SZ temperatures and hydrostatic mass bias for massive clusters in the FLAMINGO simulations	systematics
+Eckert2019	1805.00034	Eckert	2018	Non-thermal pressure support in X-COP galaxy clusters	systematics
+Wicker2023	2204.12823	Wicker	2022	Constraining the mass and redshift evolution of the hydrostatic mass bias using the gas mass fraction in galaxy clusters	systematics
+Costanzi2019	1810.09456	Costanzi	2018	Dark Energy Survey Year 1 Results: Methods for Cluster Cosmology and Application to the SDSS	results
+DES2020clusters	2002.11124	DES Collaboration	2020	Dark Energy Survey Year 1 Results: Cosmological Constraints from Cluster Abundances and Weak Lensing	results
+To2021	2010.01138	To	2020	Dark Energy Survey Year 1 Results: Cosmological Constraints from Cluster Abundances, Weak Lensing, and Galaxy Correlations	results
+Park2023	2112.09059	Park	2021	Cluster cosmology with anisotropic boosts: Validation of a novel forward modeling analysis and application on SDSS redMaPPer clusters	results
+Sunayama2024	2309.13025	Sunayama	2023	Optical Cluster Cosmology with SDSS redMaPPer clusters and HSC-Y3 lensing measurements	results
+DES2025clusters	2503.13632	DES Collaboration	2025	Dark Energy Survey Year 3 Results: Cosmological Constraints from Cluster Abundances, Weak Lensing, and Galaxy Clustering	results
+To2025	2503.13631	To	2025	Dark Energy Survey: Modeling strategy for multiprobe cluster cosmology and validation for the Full Six-year Dataset	method
+Salcedo2025	2510.25706	Salcedo	2025	Cosmological Constraints from Dark Energy Survey Year 1 Cluster Lensing and Abundances with Simulation-based Forward-Modeling	results
+Grandis2021	2101.04984	Grandis	2021	Exploring the contamination of the DES-Y1 Cluster Sample with SPT-SZ selected clusters	systematics
+Grandis2025	2502.12914	Grandis	2025	Selection Function of Clusters in Dark Energy Survey Year 3 Data from Cross-Matching with South Pole Telescope Detections	systematics
+Myles2021	2011.07070	Myles	2020	Spectroscopic Quantification of Projection Effects in the SDSS redMaPPer Galaxy Cluster Catalogue	systematics
+Lesci2025	2507.14285	Lesci	2025	AMICO galaxy clusters in KiDS-1000: cosmological constraints and mass calibration from counts and weak lensing	results
+Maturi2025	2507.14338	Maturi	2025	AMICO galaxy clusters in KiDS-1000: cosmological sample	data
+Romanello2024	2310.12224	Romanello	2023	AMICO galaxy clusters in KiDS-DR3: Cosmological constraints from angular power spectrum and correlation function	results
+Chiu2024	2406.11970	Chiu	2024	Weak-Lensing Shear-Selected Galaxy Clusters from the Hyper Suprime-Cam Subaru Strategic Program: II. Cosmological Constraints from the Cluster Abundance	results
+Tam2026	2602.11989	Tam	2026	Simulation-Based Cosmological Mass Calibration of XXL Galaxy Clusters using HSC Weak Lensing	results
+Mpetha2025	2501.09147	Mpetha	2025	Cosmology from UNIONS weak lensing profiles of galaxy clusters	results
+EuclidQ1clusters	2503.19196	Euclid Collaboration	2025	Euclid Quick Data Release (Q1). First detections from the galaxy cluster workflow	data
+EuclidCPP2026	2605.02723	Euclid Collaboration	2026	Euclid preparation. CosmoPostProcess: A simulation calibrated framework for weak lensing selection bias in richness-selected galaxy clusters	systematics
+EuclidWLmass2024	2409.02783	Euclid Collaboration	2024	Euclid preparation: Determining the weak lensing mass accuracy and precision for galaxy clusters	systematics
+Fumagalli2025	2510.13509	Fumagalli	2025	Euclid: Exploring observational systematics in cluster cosmology -- a comprehensive analysis of cluster counts and clustering	systematics
+Allen2011	1103.4829	Allen	2011	Cosmological Parameters from Observations of Galaxy Clusters	review
+Pratt2019	1902.10837	Pratt	2019	The galaxy cluster mass scale and its impact on cosmological constraints from the cluster population	review
+Tinker2008	0803.2706	Tinker	2008	Toward a halo mass function for precision cosmology: the limits of universality	foundation
+Tinker2010	1001.3162	Tinker	2010	The Large Scale Bias of Dark Matter Halos: Numerical Calibration and Model Tests	foundation
+Bocquet2016	1502.07357	Bocquet	2015	Halo mass function: Baryon impact, fitting formulae and implications for cluster cosmology	systematics
+EuclidHMF2023	2208.02174	Euclid Collaboration	2022	Euclid preparation. XXIV. Calibration of the halo mass function in $\Lambda(\nu)$CDM cosmologies	method
+DiemerKravtsov2014	1401.1216	Diemer	2014	Dependence of the outer density profiles of halos on their mass accretion rate	foundation
+More2016	1601.06063	More	2016	Detection of the Splashback Radius and Halo Assembly bias of Massive Galaxy Clusters	results
+Shin2019	1811.06081	Shin	2018	Measurement of the Splashback Feature around SZ-selected Galaxy Clusters with DES, SPT and ACT	results
+Lesci2026	2602.07114	Lesci	2026	AMICO galaxy clusters in KiDS-1000: Splashback radius from weak lensing and cluster-galaxy correlation function	results
+McClintock2019	1805.00039	McClintock	2018	Dark Energy Survey Year 1 Results: Weak Lensing Mass Calibration of redMaPPer Galaxy Clusters	method
+BeckerKravtsov2011	1011.1681	Becker	2010	On the Accuracy of Weak Lensing Cluster Mass Reconstructions	systematics
+Sunayama2020	2002.03867	Sunayama	2020	The impact of projection effects on cluster observables: stacked lensing and projected clustering	systematics
+Wu2022	2203.05416	Wu	2022	Optical selection bias and projection effects in stacked galaxy cluster weak lensing	systematics
+HuKravtsov2003	astro-ph/0203169	Hu	2002	Sample Variance Considerations for Cluster Surveys	foundation
+Payerne2023	2210.11093	Payerne	2022	Testing the accuracy of likelihoods for cluster abundance cosmology	method
+Sartoris2016	1505.02165	Sartoris	2015	Next Generation Cosmology: Constraints from the Euclid Galaxy Cluster Survey	forecast
+Raghunathan2022	2107.10250	Raghunathan	2021	Constraining Cluster Virialization Mechanism and Cosmology using Thermal-SZ-selected clusters from Future CMB Surveys	forecast
+Zhang2019	1901.07119	Zhang	2019	Dark Energy Survey Year 1 Results: Calibration of Cluster Mis-centering in the redMaPPer Catalogs	systematics
+Ramel2026	2609.12158	Ramel	2026	Probabilistic characterization of blending with LSST and application to cluster lensing cosmology	systematics
+ZhanReichardt2025	2510.14464	Zhan	2025	Built-in precision: Improving cluster cosmology through the self-calibration of a galaxy cluster sample	forecast

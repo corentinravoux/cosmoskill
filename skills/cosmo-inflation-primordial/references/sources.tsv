@@ -1,0 +1,101 @@
+key	id	first_author	year	title	role
+Planck2018Inflation	1807.06211	Planck Collaboration	2018	Planck 2018 results. X. Constraints on inflation	results
+ACT2025LCDM	2503.14452	Louis	2025	The Atacama Cosmology Telescope: DR6 Power Spectra, Likelihoods and $Λ$CDM Parameters	results
+ACT2025Ext	2503.14454	Calabrese	2025	The Atacama Cosmology Telescope: DR6 Constraints on Extended Cosmological Models	results
+SPT2025D1	2506.20707	Camphuis	2025	SPT-3G D1: CMB temperature and polarization power spectra and cosmology from 2019 and 2020 observations of the SPT-3G Main field	results
+McDonald2025	2505.07488	McDonald	2025	Higgs Inflation with Vector-Like Quark Stabilisation and the ACT spectral index	critique
+Shobcha2026	2606.24131	Shobcha	2026	Minimal Extensions of the $α$-Starobinsky Model: Reconciling ACT DR6 and Reheating Constraints	critique
+Cheslog2026	2609.35964	Cheslog	2026	Current and Future Constraints on the Primordial Power Spectrum	results
+Chudaykin2026	2607.28445	Chudaykin	2026	Inflation, Open Universes, and Dark Energy	results
+PalanqueDelabrouille2020	1911.09073	Palanque-Delabrouille	2020	Hints, neutrino bounds and WDM constraints from SDSS DR14 Lyman-$α$ and Planck full-survey data	results
+ChavesMontero2026	2601.21432	Chaves-Montero	2026	Cosmological analysis of the DESI DR1 Lyman alpha 1D power spectrum	results
+Ferreira2025	2507.12459	Ferreira	2025	The BAO-CMB Tension and Implications for Inflation	critique
+BK18	2110.00483	BICEP/Keck Collaboration	2021	BICEP / Keck XIII: Improved Constraints on Primordial Gravitational Waves using Planck, WMAP, and BICEP/Keck Observations through the 2018 Observing Season	results
+Tristram2022	2112.07961	Tristram	2022	Improved limits on the tensor-to-scalar ratio using BICEP and Planck	results
+Tristram2021	2010.01139	Tristram	2021	Planck constraints on the tensor-to-scalar ratio	results
+BKP2015	1502.00612	BICEP2/Keck	2015	A Joint Analysis of BICEP2/Keck Array and Planck Data	results
+SPIDER2021	2103.13334	SPIDER Collaboration	2021	A Constraint on Primordial B-Modes from the First Flight of the SPIDER Balloon-Borne Telescope	results
+BKSPT2021	2011.08163	BICEP/Keck	2021	A Demonstration of Improved Constraints on Primordial Gravitational Waves with Delensing	method
+Zebrowski2025	2505.02827	Zebrowski	2025	Constraints on Inflationary Gravitational Waves with Two Years of SPT-3G Data	results
+Zebrowski2026	2601.20958	Zebrowski	2026	First constraints on causal sources of primordial gravitational waves from BICEP/Keck, SPTpol, SPT-3G, Planck and WMAP B-mode data	results
+BKXXI	2603.06812	BICEP/Keck Collaboration	2026	BICEP/Keck XXI: Constraints on Early-Universe Parity Violation from Multipole-Dependent Birefringence	results
+Elwood2026	2608.25016	Elwood	2026	Quantifying the systematic impact of differential beam response on the BICEP CMB polarization data from 2016 through 2024	systematics
+SO2019	1808.07445	The Simons Observatory Collaboration	2019	The Simons Observatory: Science goals and forecasts	forecast
+SO2025SAT	2512.15833	Simons Observatory Collaboration	2025	The Simons Observatory: forecasted constraints on primordial gravitational waves with the expanded array of Small Aperture Telescopes	forecast
+LiteBIRD2022	2202.02773	LiteBIRD Collaboration	2022	Probing Cosmic Inflation with the LiteBIRD Cosmic Microwave Background Polarization Survey	forecast
+LiteBIRD2026	2607.25285	LiteBIRD Collaboration	2026	LiteBIRD Mission Overview after Mission Reformation	forecast
+Natoli2026	2608.20236	Natoli	2026	SPT-3G+: A Cosmic Microwave Background Experiment for the South Pole Telescope	forecast
+Planck2018NG	1905.05697	Planck Collaboration	2019	Planck 2018 results. IX. Constraints on primordial non-Gaussianity	results
+Planck2015NG	1502.01592	Planck Collaboration	2015	Planck 2015 results. XVII. Constraints on primordial non-Gaussianity	results
+Jung2025	2504.00884	Jung	2025	Constraints on primordial non-Gaussianity from Planck PR4 data	results
+KomatsuSpergel2001	astro-ph/0005036	Komatsu	2000	Acoustic Signatures in the Primary Microwave Background Bispectrum	foundation
+Maldacena2003	astro-ph/0210603	Maldacena	2002	Non-Gaussian features of primordial fluctuations in single field inflationary models	foundation
+CreminelliZaldarriaga2004	astro-ph/0407059	Creminelli	2004	Single field consistency relation for the 3-point function	foundation
+Senatore2010	0905.3746	Senatore	2009	Non-Gaussianities in Single Field Inflation and their Optimal Limits from the WMAP 5-year Data	method
+Sarieddine2026	2602.03917	Sarieddine	2026	The Atacama Cosmology Telescope: Constraints on Local Non-Gaussianity from the ACT Cluster Catalog	results
+Suman2025	2511.17500	Suman	2025	How Significant are Cosmological Collider Signals in the Planck Data?	results
+Philcox2025	2511.19179	Philcox	2025	Separating the Inseparable: Constraining Arbitrary Primordial Bispectra with Cosmic Microwave Background Data	method
+Dalal2008	0710.4560	Dalal	2007	The imprints of primordial non-gaussianities on large-scale structure: scale dependent bias and abundance of virialized objects	foundation
+Slosar2008	0805.3580	Slosar	2008	Constraints on local primordial non-Gaussianity from large scale structure	results
+Castorina2019	1904.08859	Castorina	2019	Redshift-weighted constraints on primordial non-Gaussianity from the clustering of the eBOSS DR14 quasars in Fourier space	results
+Mueller2021	2106.13725	Mueller	2021	The clustering of galaxies in the completed SDSS-IV extended Baryon Oscillation Spectroscopic Survey: Primordial non-Gaussianity in Fourier Space	results
+Cagliari2023	2309.15814	Cagliari	2023	Optimal constraints on Primordial non-Gaussianity with the eBOSS DR16 quasars in Fourier space	results
+Barreira2022	2205.05673	Barreira	2022	Can we actually constrain $f_{\rm NL}$ using the scale-dependent bias effect? An illustration of the impact of galaxy bias uncertainties using the BOSS DR12 galaxy power spectrum	critique
+Lazeyras2023	2209.07251	Lazeyras	2022	Assembly bias in the local PNG halo bias and its implication for $f_{\rm NL}$ constraints	systematics
+Chaussidon2024	2411.17623	Chaussidon	2024	Constraining primordial non-Gaussianity with DESI 2024 LRG and QSO samples	results
+Fondi2026	2602.12357	Fondi	2026	Assembly bias and local Primordial non-Gaussianity from DESI DR1 Quasars	results
+RosadoMarin2026	2604.05213	Rosado-Marín	2026	Local primordial non-Gaussianity using cross-correlations of DESI tracers	results
+Brown2026	2606.24651	Brown	2026	Measuring local primordial non-Gaussianity from the clustering of DESI DR1 LRGs and QSOs	results
+Fabbian2025	2504.20992	Fabbian	2025	Constraints on primordial non-Gaussianity from Quaia	results
+Chiarenza2025	2512.17865	Chiarenza	2025	Constraining primordial non-Gaussianity from DESI DR1 quasars and Planck PR4 CMB Lensing	results
+Hotinli2025	2506.21657	Hotinli	2025	Velocity Reconstruction from KSZ: Measuring $f_{NL}$ with ACT and DESILS	results
+Chaussidon2026kSZ	2604.04867	Chaussidon	2026	Measurement of the galaxy-velocity power spectrum of DESI tracers with the kinematic Sunyaev-Zeldovich effect using DESI DR2 and ACT DR6	results
+Thornton2026	2605.03783	Thornton	2026	New constraints on primordial non-Gaussianity from large-scale cross-correlations of CMB lensing and the cosmic infrared background	results
+Cabass2022	2201.07238	Cabass	2022	Constraints on Single-Field Inflation from the BOSS Galaxy Survey	results
+DAmico2022	2201.11518	D'Amico	2022	Limits on primordial non-Gaussianities from BOSS galaxy-clustering data	results
+Chudaykin2025	2512.04266	Chudaykin	2025	Reanalyzing DESI DR1: 3. Constraints on Inflation from Galaxy Power Spectra & Bispectra	results
+MinamiKomatsu2020	2011.11254	Minami	2020	New Extraction of the Cosmic Birefringence from the Planck 2018 Polarization Data	results
+DiegoPalazuelos2022	2201.07682	Diego-Palazuelos	2022	Cosmic Birefringence from Planck Data Release 4	results
+EskiltKomatsu2022	2205.13962	Eskilt	2022	Improved Constraints on Cosmic Birefringence from the WMAP and Planck Cosmic Microwave Background Polarization Data	results
+Komatsu2022	2202.13919	Komatsu	2022	New physics from the polarised light of the cosmic microwave background	review
+Ballardini2025	2507.16714	Ballardini	2025	Planck constraints on the scale dependence of isotropic cosmic birefringence	results
+DiegoPalazuelos2025	2509.13654	Diego-Palazuelos	2025	Cosmic Birefringence from the Atacama Cosmology Telescope Data Release 6	results
+Eskilt2026	2608.06480	Eskilt	2026	Cosmic birefringence from a joint analysis of ACT and Planck	results
+Balkenhol2025	2510.07928	Balkenhol	2025	Probing Anisotropic Cosmic Birefringence with Foreground-Marginalised SPT B-mode Likelihoods	results
+Kramer2026	2608.27458	Kramer	2026	The Atacama Cosmology Telescope: Constraints on the anisotropic screening and birefringence effects with DR6	results
+delaHoz2025	2503.22322	de la Hoz	2025	LiteBIRD Science Goals and Forecasts: constraining isotropic cosmic birefringence	forecast
+Rigouzzo2026	2606.11300	Rigouzzo	2026	Calibration of CMB Polarisation Using Cross-Experiment Correlations	method
+Beutler2019	1906.08758	Beutler	2019	Primordial Features from Linear to Nonlinear Scales	results
+Chluba2015	1505.01834	Chluba	2015	Features and New Physical Scales in Primordial Observables: Theory and Observation	review
+Slosar2019	1903.09883	Slosar	2019	Scratches from the Past: Inflationary Archaeology through Features in the Power Spectrum of Primordial Fluctuations	review
+Raffaelli2026	2605.30236	Raffaelli	2026	Signals from the early Universe: a comprehensive search for primordial features in Planck CMB datasets	results
+Nerval2026	2606.28310	Nerval	2026	Constraining primordial oscillations and inflationary particle production with Planck, ACT DR6, and DESI DR2	results
+Chen2026	2610.10530	Chen	2026	Constraints on Primordial Oscillatory Features from the Power Spectrum and Bispectrum of Redshift-Space Galaxy Clustering in DESI DR1	results
+MartinezSomonte2026	2605.18615	Martínez-Somonte	2026	Primordial power spectrum reconstructions from BOSS + eBOSS	results
+Planck2018Params	1807.06209	Planck Collaboration	2018	Planck 2018 results. VI. Cosmological parameters	results
+DESI2025BAO	2503.14738	DESI Collaboration	2025	DESI DR2 Results II: Measurements of Baryon Acoustic Oscillations and Cosmological Constraints	results
+DiValentino2019	1911.02087	Di Valentino	2019	Planck evidence for a closed Universe and a possible crisis for cosmology	critique
+Handley2019	1908.09139	Handley	2019	Curvature tension: evidence for a closed universe	critique
+EfstathiouGratton2020	2002.06892	Efstathiou	2020	The evidence for a spatially flat Universe	critique
+Petretti2026	2606.11312	Petretti	2026	CMB Constraints on Pre-Inflationary Axion Dark Matter Isocurvature	results
+Wang2025	2512.19565	Wang	2025	Do low-redshift observations open the doors to an open universe?	critique
+Wu2026	2604.23492	Wu	2026	The open-Universe signal: A model artifact rather than genuine curvature	critique
+KalloshLinde2025	2505.13646	Kallosh	2025	On the Present Status of Inflationary Cosmology	review
+Drees2025	2504.20757	Drees	2025	Refined Predictions for Starobinsky Inflation and Post-inflationary Constraints in Light of ACT	critique
+Dorsch2026	2606.28502	Dorsch	2026	Reheating matters: Starobinsky inflation in light of joint CMB+BAO results and gravitational-wave forecasts	critique
+Liu2025	2508.00073	Liu	2025	The Simons Observatory: Assessing the Impact of Dust Complexity on the Recovery of Primordial $B$-modes	systematics
+Dachlythra2025	2503.01791	Dachlythra	2025	The Simons Observatory: Quantifying the impact of beam chromaticity on large-scale B-mode science	systematics
+Bock2025	2511.02985	Bock	2025	The SPHEREx Satellite Mission	data
+Dore2014	1412.4872	Doré	2014	Cosmology with the SPHEREX All-Sky Spectral Survey	forecast
+Euclid2025IC	2507.15819	Euclid Collaboration	2025	Euclid preparation: Expected constraints on initial conditions	forecast
+Saraf2024	2412.03078	Saraf	2024	Primordial non-Gaussianity systematics from redshift mismatch with SPHEREx	systematics
+SeljakZaldarriaga1997	astro-ph/9609169	Seljak	1996	Signature of Gravity Waves in Polarization of the Microwave Background	foundation
+Kamionkowski1997	astro-ph/9609132	Kamionkowski	1996	A Probe of Primordial Gravity Waves and Vorticity	foundation
+Lyth1997	hep-ph/9606387	Lyth	1996	What would we learn by detecting a gravitational wave signal in the cosmic microwave background anisotropy?	foundation
+KamionkowskiKovetz2016	1510.06042	Kamionkowski	2015	The Quest for B Modes from Inflationary Gravitational Waves	review
+Achucarro2022	2203.08128	Achúcarro	2022	Inflation: Theory and Observations	review
+Martin2014	1303.3787	Martin	2013	Encyclopaedia Inflationaris	code
+KSW2005	astro-ph/0305189	Komatsu	2003	Measuring primordial non-Gaussianity in the cosmic microwave background	method
+Bucher2000	astro-ph/9904231	Bucher	1999	The General Primordial Cosmic Perturbation	foundation
+Guth1981	doi:10.1103/PhysRevD.23.347	Guth	1981	The Inflationary Universe: A Possible Solution to the Horizon and Flatness Problems	foundation
+Starobinsky1980	doi:10.1016/0370-2693%2880%2990670-X	Starobinsky	1980	A New Type of Isotropic Cosmological Models Without Singularity	foundation

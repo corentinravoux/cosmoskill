@@ -1,0 +1,110 @@
+key	id	first_author	year	title	role
+Phillips1993	doi:10.1086/186970	Phillips	1993	The absolute magnitudes of Type IA supernovae	foundation
+Riess1998	astro-ph/9805201	Riess	1998	Observational Evidence from Supernovae for an Accelerating Universe and a Cosmological Constant	foundation
+Perlmutter1999	astro-ph/9812133	Perlmutter	1998	Measurements of Omega and Lambda from 42 High-Redshift Supernovae	foundation
+Kunz2007	astro-ph/0611004	Kunz	2006	Bayesian Estimation Applied to Multiple Species: Towards cosmology with a million supernovae	method
+Guy2007	astro-ph/0701828	Guy	2007	SALT2: using distant supernovae to improve the use of Type Ia supernovae as distance indicators	method
+Kessler2009	0908.4280	Kessler	2009	SNANA: A Public Software Package for Supernova Analysis	code
+Kelly2010	0912.0929	Kelly	2009	Hubble Residuals of Nearby Type Ia Supernovae Are Correlated with Host Galaxy Masses	systematics
+Sullivan2010	1003.5119	Sullivan	2010	The Dependence of Type Ia Supernova Luminosities on their Host Galaxies	systematics
+Davis2011	1012.2912	Davis	2010	The effect of peculiar velocities on supernova cosmology	systematics
+Conley2011	1104.1443	Conley	2011	Supernova Constraints and Systematic Uncertainties from the First 3 Years of the Supernova Legacy Survey	results
+Goobar2011	1102.1431	Goobar	2011	Supernova cosmology: legacy and future	review
+Kessler2013	1209.2482	Kessler	2012	Testing Models of Intrinsic Brightness Variations in Type Ia Supernovae, and their Impact on Measuring Cosmological Parameters	systematics
+Betoule2014	1401.4064	Betoule	2014	Improved Cosmological Constraints from a Joint Analysis of the SDSS-II and SNLS Supernova Samples	results
+Rubin2015	1507.01602	Rubin	2015	UNITY: Confronting Supernova Cosmology's Statistical and Systematic Uncertainties in a Unified Bayesian Framework	method
+Scolnic2015	1508.05361	Scolnic	2015	Supercal: Cross-Calibration of Multiple Photometric Systems to Improve Cosmological Measurements with Type Ia Supernovae	method
+Shariff2016	1510.05954	Shariff	2015	BAHAMAS: new SNIa analysis reveals inconsistencies with standard cosmology	method
+Kessler2017	1610.04677	Kessler	2016	Correcting Type Ia Supernova Distances for Selection Biases and Contamination in Photometrically Identified Samples	method
+Foley2018	1711.02474	Foley	2017	The Foundation Supernova Survey: Motivation, Design, Implementation, and First Data Release	data
+Scolnic2018	1710.00845	Scolnic	2017	The Complete Light-curve Sample of Spectroscopically Confirmed Type Ia Supernovae from Pan-STARRS1 and Cosmological Constraints from The Combined Pantheon Sample	results
+Jones2018b	1805.05911	Jones	2018	Should Type Ia Supernova Distances be Corrected for their Local Environments?	systematics
+Leibundgut2018	doi:10.1007/s11214-018-0491-8	Leibundgut	2018	Type Ia Supernova Cosmology	review
+Abbott2019	1811.02374	Abbott	2018	First Cosmology Results using Type Ia Supernovae from the Dark Energy Survey: Constraints on Cosmological Parameters	results
+Kessler2019	1811.02379	Kessler	2018	First Cosmology Results using Type Ia Supernova from the Dark Energy Survey: Simulations to Correct Supernova Distance Biases	method
+Hinton2019	1811.02381	Hinton	2018	Steve: A Hierarchical Bayesian Model for Supernova Cosmology	method
+Jones2019	1811.09286	Jones	2018	The Foundation Supernova Survey: Measuring Cosmological Parameters with Supernovae from a Single Telescope	results
+Moller2019	1901.06384	Möller	2019	SuperNNova: an open-source framework for Bayesian, Neural Network based supernova classification	code
+Davis2019	1907.12639	Davis	2019	Can redshift errors bias measurements of the Hubble Constant?	systematics
+Rose2020	2002.12382	Rose	2020	Evidence for Cosmic Acceleration is Robust to Observed Correlations Between Type Ia Supernova Luminosity and Stellar Age	critique
+Scolnic2020	2002.00974	Scolnic	2020	Supernova Siblings: Assessing the Consistency of Properties of Type Ia Supernovae that Share the Same Parent Galaxies	systematics
+Smith2020	2001.11294	Smith	2020	First Cosmology Results using Type Ia Supernovae from the Dark Energy Survey: The Effect of Host Galaxy Properties on Supernova Luminosity	systematics
+Rigault2020	1806.03849	Rigault	2018	Strong Dependence of Type Ia Supernova Standardization on the Local Specific Star Formation Rate	systematics
+Brout2021	2004.10206	Brout	2020	It's Dust: Solving the Mysteries of the Intrinsic Scatter and Host-Galaxy Dependence of Standardized Type Ia Supernova Brightnesses	method
+BroutHinton2021	2012.05900	Brout	2020	Binning is Sinning (Supernova Version): The Impact of Self-Calibration in Cosmological Analyses with Type Ia Supernovae	method
+Popovic2021	2102.01776	Popovic	2021	Improved Treatment of Host-Galaxy Correlations in Cosmological Analyses With Type Ia Supernovae	method
+Nicolas2021	2005.09441	Nicolas	2020	Redshift evolution of the underlying type Ia supernova stretch distribution	systematics
+Kenworthy2021	2104.07795	Kenworthy	2021	SALT3: An Improved Type Ia Supernova Model for Measuring Cosmic Distances	method
+Rose2021	2111.03081	Rose	2021	A Reference Survey for Supernova Cosmology with the Nancy Grace Roman Space Telescope	forecast
+Mandel2022	2008.07538	Mandel	2020	A Hierarchical Bayesian SED Model for Type Ia Supernovae in the Optical to Near-Infrared	method
+Brout2022cosmo	2202.04077	Brout	2022	The Pantheon+ Analysis: Cosmological Constraints	results
+Scolnic2022	2112.03863	Scolnic	2021	The Pantheon+ Analysis: The Full Dataset and Light-Curve Release	data
+Brout2022calib	2112.03864	Brout	2021	The Pantheon+ Analysis: SuperCal-Fragilistic Cross Calibration, Retrained SALT2 Light Curve Model, and Calibration Systematic Uncertainty	method
+Carr2022	2112.01471	Carr	2021	The Pantheon+ Analysis: Improving the Redshifts and Peculiar Velocities of Type Ia Supernovae Used in Cosmological Analyses	systematics
+Peterson2022	2110.03487	Peterson	2021	The Pantheon+ Analysis: Evaluating Peculiar Velocity Corrections in Cosmological Analyses with Nearby Type Ia Supernovae	systematics
+Riess2022	2112.04510	Riess	2021	A Comprehensive Measurement of the Local Value of the Hubble Constant with 1 km/s/Mpc Uncertainty from the Hubble Space Telescope and the SH0ES Team	results
+deJaeger2022	2203.08974	de Jaeger	2022	A 5% measurement of the Hubble constant from Type II supernovae	results
+Lee2022	2107.06288	Lee	2021	Evidence for strong progenitor age dependence of type Ia supernova luminosity standardization process	critique
+Wiseman2022	2207.05583	Wiseman	2022	A galaxy-driven model of type Ia supernova luminosity variations	systematics
+Popovic2023	2112.04456	Popovic	2021	The Pantheon+ Analysis: Forward-Modeling the Dust and Intrinsic Colour Distributions of Type Ia Supernovae, and Quantifying their Impact on Cosmological Inferences	method
+Brownsberger2023	2110.03486	Brownsberger	2021	The Pantheon+ Analysis: Dependence of Cosmological Constraints on Photometric-Zeropoint Uncertainties of Supernova Surveys	systematics
+Taylor2023	2301.10644	Taylor	2023	SALT2 Versus SALT3: Updated Model Surfaces and Their Impacts on Type Ia Supernova Cosmology	systematics
+Vincenzi2023	2111.10382	Vincenzi	2021	The Dark Energy Survey Supernova Program: Cosmological biases from supernova photometric classification	systematics
+Kessler2023	2306.05819	Kessler	2023	Binning is Sinning: Redemption for Hubble Diagram using Photometrically Classified Type Ia Supernovae	method
+Kelly2023	2305.06367	Kelly	2023	Constraints on the Hubble constant from Supernova Refsdal's reappearance	results
+Axelrod2023	doi:10.3847/1538-4357/acd333	Axelrod	2023	All-sky Faint DA White Dwarf Spectrophotometric Standards for Astrophysical Observatories: The Complete Sample	method
+Rubin2023	2311.12098	Rubin	2023	Union Through UNITY: Cosmology with 2,000 SNe Using a Unified Bayesian Framework	results
+DES2024	2401.02929	DES Collaboration	2024	The Dark Energy Survey: Cosmology Results With ~1500 New High-redshift Type Ia Supernovae Using The Full 5-year Dataset	results
+Vincenzi2024	2401.02945	Vincenzi	2024	The Dark Energy Survey Supernova Program: Cosmological Analysis and Systematic Uncertainties	systematics
+Sanchez2024	2406.05046	Sánchez	2024	The Dark Energy Survey Supernova Program: Light curves and 5-Year data release	data
+Qu2024	2307.13696	Qu	2023	The Dark Energy Survey Supernova Program: Cosmological Biases from Host Galaxy Mismatch of Type Ia Supernovae	systematics
+Camilleri2024	2406.05048	Camilleri	2024	The Dark Energy Survey Supernova Program: Investigating Beyond-ΛCDM	results
+Shah2024	2406.05047	Shah	2024	The Dark Energy Survey : Detection of weak lensing magnification of supernovae and constraints on dark matter haloes	results
+Grayling2024	2401.08755	Grayling	2024	Scalable hierarchical BayeSN inference: Investigating dependence of SN Ia host galaxy dust properties on stellar mass and redshift	systematics
+Suyu2024	2301.07729	Suyu	2023	Strong gravitational lensing and microlensing of supernovae	review
+DESI2024	2404.03002	DESI Collaboration	2024	DESI 2024 VI: Cosmological Constraints from the Measurements of Baryon Acoustic Oscillations	results
+Efstathiou2024	2408.07175	Efstathiou	2024	Evolving Dark Energy or Supernovae Systematics?	critique
+Notari2024	2411.11685	Notari	2024	BAO vs. SN evidence for evolving dark energy	critique
+Dhawan2024	2409.18668	Dhawan	2024	The axis of systematic bias in SN~Ia cosmology and implications for DESI 2024 results	critique
+Rigault2024	2409.04346	Rigault	2024	ZTF SN Ia DR2: Overview	data
+Ginolin2024a	2405.20965	Ginolin	2024	ZTF SN Ia DR2: Environmental dependencies of stretch and luminosity of a volume limited sample of 1,000 Type Ia Supernovae	systematics
+Ginolin2024b	2406.02072	Ginolin	2024	ZTF SN Ia DR2: Colour standardisation of Type Ia Supernovae and its dependence on environment	systematics
+Dhawan2024sib	2406.01434	Dhawan	2024	ZTF SN~Ia DR2: Cosmology-independent constraints on Type Ia supernova standardisation from supernova siblings	results
+Pierel2024	2411.11953	Pierel	2024	Testing for Intrinsic Type Ia Supernova Luminosity Evolution at z>2 with JWST	results
+Vogl2024	2411.04968	Vogl	2024	No rungs attached: A distance-ladder free determination of the Hubble constant through type II supernova spectral modelling	results
+Pascale2024	2403.18902	Pascale	2024	SN H0pe: The First Measurement of $H_0$ from a Multiply-Imaged Type Ia Supernova, Discovered by JWST	results
+DESI2025	2503.14738	DESI Collaboration	2025	DESI DR2 Results II: Measurements of Baryon Acoustic Oscillations and Cosmological Constraints	results
+Vincenzi2025	2501.06664	Vincenzi	2025	Comparing the DES-SN5YR and Pantheon+ SN cosmology analyses: Investigation based on "Evolving Dark Energy or Supernovae systematics?"	critique
+Huang2025	2502.04212	Huang	2025	The DESI DR1/DR2 evidence for dynamical dark energy is biased by low-redshift supernovae	critique
+Ravoux2025	2501.16852	Ravoux	2025	Generalized framework for likelihood-based field-level inference of growth rate from velocity and density fields	method
+Popovic2025cal	2506.05471	Popovic	2025	A Reassessment of the Pantheon+ and DES 5YR Calibration Uncertainties: Dovekie	method
+Kessler2025	2506.04402	Kessler	2025	Cosmology Constraints from Type Ia Supernova Simulations of the Nancy Grace Roman Space Telescope Strategy Recommended by the High Latitude Time Domain Survey Definition Committee	forecast
+Wojtak2025	2506.22150	Wojtak	2025	Stretch to stretch, dust to dust: lower-value local $H_{0}$ measurement from two-population modelling of type Ia supernovae	critique
+Acevedo2025	2508.10877	Acevedo	2025	The Dark Energy Bedrock All-Sky Supernova Program: Cross Calibration, Simulations, and Cosmology Forecasts	data
+Sherman2025	2508.10878	Sherman	2025	The Dark Energy Bedrock All-Sky Supernova Program: Motivation, Design, Implementation, and Preliminary Data Release	data
+Karchev2025	2508.15899	Karchev	2025	CIGaRS I: Combined simulation-based inference from type Ia supernovae and host photometry	method
+Lacroix2025	2509.04073	Lacroix	2025	ZTF SNe Ia DR2: Towards cosmology-grade ZTF supernova light curves using scene modeling photometry	systematics
+Ormondroyd2025	2509.13220	Ormondroyd	2025	Dynamic or Systematic? Bayesian model selection between dark energy and supernova biases	critique
+Pierel2025	2509.12301	Pierel	2025	Cosmology with supernova Encore in the strong lensing cluster MACS J0138-2155: Time delays & Hubble constant measurement	results
+Son2025	2510.13121	Son	2025	Strong Progenitor Age-bias in Supernova Cosmology. II. Alignment with DESI BAO and Signs of a Non-Accelerating Universe	critique
+Popovic2025des	2511.07517	Popovic	2025	The Dark Energy Survey Supernova Program: A Reanalysis Of Cosmology Results And Evidence For Evolving Dark Energy With An Updated Type Ia Supernova Calibration	results
+Mitra2025	2512.06319	Mitra	2025	A Fully Photometric Approach to Type Ia Supernova Cosmology in the LSST Era: Host Galaxy Redshifts and Supernova Classification	forecast
+Marlin2025	2512.21903	Marlin	2025	TITAN DR1: An Improved, Validated, and Systematically-Controlled Recalibration of ATLAS Photometry toward Type Ia Supernova Cosmology	data
+Wiseman2026	2601.13785	Wiseman	2026	Still Accelerating: Type Ia supernova cosmology is robust to host galaxy age evolution	critique
+Hoyt2026	2601.19424	Hoyt	2026	Union3.1: Reducing Systematics in Supernova Cosmology with Self-consistent Measurements of Host Galaxy Properties for 2000 Type Ia Supernovae	results
+Rubin2026	2601.19854	Rubin	2026	Banana Split: Improved Cosmological Constraints with Two Light-Curve-Shape and Color Populations Using Union3.1+UNITY1.8	results
+Boyd2026	2603.11165	Boyd	2026	FlowSN: Neural Simulation-Based Inference under Realistic Selection Effects applied to Supernova Cosmology	method
+Murakami2026	2604.16597	Murakami	2026	Old Universe, Young SNe Ia: A Statistical Analysis of Type Ia Supernova Progenitor Age from 6,983 TITAN Host Galaxies, and Implications for Cosmology	critique
+Anumba2026	2604.19746	Anumba	2026	Calibration-Induced Systematics in SALT3 Training and Their Impact on Dark Energy Constraints from Stage IV Supernova Surveys	forecast
+Truong2026	2604.18859	Truong	2026	Testing $Λ$CDM versus dynamical dark energy in one year: A DESI spectroscopic follow-up program for Rubin supernovae	forecast
+Ginolin2026	2605.06799	Ginolin	2026	On the origin of the environmental dependence of SN Ia magnitudes: A BayeSN view of the ZTF SN Ia DR2	systematics
+Chung2026	2605.21586	Chung	2026	Still non-accelerating: age-bias correction in supernova cosmology is robust to host-progenitor age mapping	critique
+DES2026	2605.27221	DES Collaboration	2026	Constraints on Dynamical Dark Energy from Multiple Probes in the Full Dark Energy Survey	results
+Wojtak2026	2606.17802	Wojtak	2026	Two-population model of type Ia supernovae and their associations with host galaxies in ZTF DR2	method
+Grayling2026	2606.19429	Grayling	2026	BayeSN $\times$ Dovekie: Joint Photometric Cross-calibration and SED Modelling of Type Ia Supernovae	method
+Popovic2026	2607.28725	Popovic	2026	A Simulation Based Inference Approach to Modelling of Type Ia Supernova Populations	method
+RoyChoudhury2026	2607.24443	Roy Choudhury	2026	Updated 1.1% Precision Values of the Hubble Constant with Corrected Pantheon+ and Dark Energy Survey (DES)-DOVEKIE Type Ia Supernovae	results
+Mortsell2026	2608.28430	Mörtsell	2026	Follow-up of SN 2025wny V: Lens Modelling and Cosmography of a Strongly Lensed Superluminous Supernova at $z = 2.015$ using Space Data	results
+Camilleri2026	2609.05053	Camilleri	2026	Supernovae Unite: Combining Pantheon+ and DES-SN5YR	results
+Lee2026	2609.05321	Lee	2026	Supernovae Unite: Host-Galaxy Mass Measurements of Type Ia Supernovae and Their Impact on Cosmology	systematics
+Holas2026	2609.39804	Holas	2026	An improved standardization framework for Type II-P supernovae using a hierarchical Bayesian approach	method

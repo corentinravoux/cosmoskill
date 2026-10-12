@@ -1,0 +1,64 @@
+---
+name: cosmo-tensions-anomalies
+description: Use when reviewing, planning or fact-checking a claim of cosmological tension or anomaly across probes — Hubble tension size and its endpoints, S8 tension, A_L lensing anomaly, optical depth tau, CMB versus DESI BAO discrepancy, w0wa preference, negative neutrino mass, cosmic dipole (radio, quasar, CatWISE, Ellis-Baldwin), bulk flow, large-angle CMB anomalies, cold spot, JWST too-massive galaxies, early dark energy, tension metrics, look-elsewhere, "n sigma" statements.
+---
+
+# Cosmological tensions and anomalies — expert reference
+
+Snapshot 2026-10-07. Numbers carry provenance flags ([src] / [sec] / [der]);
+re-verify against the cited paper before a number enters a manuscript. Most
+numbers here are [sec], taken from the probe skills that hold the source.
+
+## File map
+
+| Question | Load |
+|---|---|
+| Size of a tension today, its endpoints, what moved it | `references/results.md` |
+| Definitions, tension metrics, theory classes | `references/physics-and-methods.md` |
+| Are the inputs independent? What data come next? | `references/surveys-and-data.md` |
+| Mundane explanations: open, closed, operative; metric pitfalls; checklist | `references/systematics.md` |
+| Both sides of live disputes; status of H0 models; stale claims | `references/open-questions.md` |
+
+## What an expert holds in mind
+
+- H0: 4.4σ to 7.1σ for SH0ES (73.18 ± 0.88) and H0DN (73.50 ± 0.81) depending on the early endpoint; CCHP (70.39, total error 1.94) is within 2σ of each (arXiv:2509.01667, arXiv:2510.23823, arXiv:2408.06153).
+- The early side is not Planck alone: SPT-3G D1 66.66 ± 0.60, CMB-SPA 67.19 ± 0.38, DESI DR2 BAO + BBN 68.51 ± 0.58 (arXiv:2506.20707, arXiv:2503.14738).
+- Cosmic-shear S8 is 0.7σ (KiDS-Legacy) to 2.6σ (DES Y6 3×2pt; 1.8σ full space) from the CMB, whose own S8 spans 0.819–0.836 (arXiv:2503.19441, arXiv:2601.14559, arXiv:2309.10034).
+- Low-redshift amplitudes disagree with each other more than with the CMB: eRASS1 0.86 ± 0.01, KiDS clusters 0.74 ± 0.03, tSZ 0.72 ± 0.03 (arXiv:2402.08458, arXiv:2507.14285, arXiv:2605.11083).
+- CMB against DESI DR2 in ΛCDM: 1.6σ (P-ACT) to 3.7σ (SPT + ACT) (arXiv:2503.14452). Higher τ, w0wa, negative neutrino mass and Ω_K > 0 each absorb this one mismatch (arXiv:2504.16932, arXiv:2407.10965).
+- w0wa: 1.7σ DESI alone, 3.1σ with CMB, 3.0–3.4σ with recalibrated supernovae; 4.2σ is superseded (arXiv:2503.14738, arXiv:2601.19424). Evidence for DESI + CMB mildly favours Λ (arXiv:2511.10631).
+- A_L = 1.180 ± 0.065 is Planck PR3; PR4 and ground data give 1.0–1.04; CMB-SPA keeps 2σ (arXiv:2309.10034, arXiv:2506.20707).
+- Number-count dipole: 4.9–5.7σ for CatWISE, 5.4σ for three radio surveys, but 3.3–3.6σ with clustering-aware mocks; the DESI redshift dipole gives 358 (+55/−48) km/s (arXiv:2009.14826, arXiv:2509.16732, arXiv:2511.00822, arXiv:2608.30914).
+- CMB large-angle anomalies are a posteriori: a joint ≤ 3 × 10⁻⁸ becomes 2–3σ after a look-elsewhere correction; none is seen in polarisation (arXiv:2310.12859, arXiv:2602.10178, arXiv:1906.02552).
+- CF4 bulk flow: amplitude stable; significance 0.00021%, then 0.11%, then 2.3σ as the error model improved (arXiv:2302.02028, arXiv:2306.11269, arXiv:2608.14265).
+- JWST: no spectroscopic sample needs more baryons than ΛCDM supplies (arXiv:2309.02492, arXiv:2604.18683).
+- No model resolves H0: early dark energy leaves about 3σ and raises S8; radiation models fail on ACT DR6; late-time models gain ≲ 2% (arXiv:2607.13283, arXiv:2607.21244).
+- Every "nσ" needs two named inputs, a model, a metric and a subspace.
+
+## Systematics a referee checks
+
+- Release and likelihood of each input; which CMB combination.
+- Independence: shared anchor, supernovae, τ prior, calibration, shear catalogue, mocks.
+- Projected parameter or full space; point estimate; S8 exponent.
+- Null-model realism for anomalies: clustering, mask, selection, number of statistics tried.
+- Consistency in ΛCDM before combining data in an extension.
+- Past movers: redshift, mass and supernova calibration; mock errors; mass-sheet degeneracy.
+
+## Errors that recur
+
+- Quoting 4.4σ, 5σ or 4.2σ without date and endpoint.
+- Listing A_L, Ω_K, negative neutrino mass, τ and w0wa as separate anomalies.
+- "S8 ≈ 0.76", or "the S8 tension is resolved".
+- Counting SH0ES, CCHP and H0DN, three supernova samples, or five CatWISE papers as independent.
+- Calling a Δχ² preference Bayesian evidence.
+- "The dipole violates the cosmological principle at 5σ" without the mock-based reassessment.
+- "Evolving dark energy helps H0": it lowers it.
+- Citing the CosmoVerse white paper (arXiv:2504.01669) for current values; it predates most 2025–2026 results.
+
+## Related skills
+
+- `cosmo-distance-ladder-h0`, `cosmo-weak-lensing`, `cosmo-cmb`, `cosmo-dark-energy-modified-gravity`: the sourced numbers.
+- `cosmo-clusters`, `cosmo-cmb-lss-cross-correlations`, `cosmo-galaxy-clustering`, `cosmo-supernovae`, `cosmo-peculiar-velocities`: per-probe detail.
+- `cosmo-neutrinos-dark-matter`, `cosmo-inflation-primordial`, `cosmo-beyond-two-point`: neutrino mass; curvature, birefringence; parity.
+- `cosmo-statistics-inference`: theory of tension metrics.
+- `cosmo-reionization-21cm`, `cosmo-simulations-mocks`: τ astrophysics, JWST; constrained simulations.

@@ -1,0 +1,101 @@
+key	id	first_author	year	title	role
+Hogg1999	astro-ph/9905116	Hogg	1999	Distance measures in cosmology	foundation
+EisensteinHu1998	astro-ph/9709112	Eisenstein	1998	Baryonic Features in the Matter Transfer Function	foundation
+EisensteinHu1999	astro-ph/9710252	Eisenstein	1999	Power Spectra for Cold Dark Matter and its Variants	foundation
+Linder2005	astro-ph/0507263	Linder	2005	Cosmic Growth History and Expansion History	foundation
+LinderCahn2007	astro-ph/0701317	Linder	2007	Parameterized Beyond-Einstein Growth	foundation
+WangSteinhardt1998	astro-ph/9804015	Wang	1998	Cluster Abundance Constraints on Quintessence Models	foundation
+Sanchez2020	2002.07829	Sanchez	2020	Arguments against using $h^{-1}{\rm Mpc}$ units in observational cosmology	critique
+Croton2013	1308.4150	Croton	2013	Damn You, Little h! (or, Real-World Applications Of The Hubble Constant Using Observed And Simulated Data)	critique
+Brieden2022	2204.11868	Brieden	2022	Model-agnostic interpretation of 10 billion years of cosmic evolution traced by BOSS and eBOSS data	results
+Mead2015	1505.07833	Mead	2015	An accurate halo model for fitting non-linear cosmological power spectra and baryonic feedback models	method
+Tinker2010	1001.3162	Tinker	2010	The Large Scale Bias of Dark Matter Halos: Numerical Calibration and Model Tests	method
+Takahashi2012	1208.2701	Takahashi	2012	Revising the Halofit Model for the Nonlinear Matter Power Spectrum	method
+Smith2003	astro-ph/0207664	Smith	2003	Stable clustering, the halo model and nonlinear cosmological power spectra	method
+ShethTormen1999	astro-ph/9901122	Sheth	1999	Large scale bias and the peak background split	foundation
+NFW1997	astro-ph/9611107	Navarro	1997	A Universal Density Profile from Hierarchical Clustering	foundation
+Bird2012	1109.4416	Bird	2012	Massive Neutrinos and the Non-linear Matter Power Spectrum	method
+Asgari2023	2303.08752	Asgari	2023	The halo model for cosmology: a pedagogical review	review
+Tinker2008	0803.2706	Tinker	2008	Toward a halo mass function for precision cosmology: the limits of universality	method
+Zheng2005	astro-ph/0408564	Zheng	2005	Theoretical Models of the Halo Occupation Distribution: Separating Central and Satellite Galaxies	foundation
+CooraySheth2002	astro-ph/0206508	Cooray	2002	Halo Models of Large Scale Structure	review
+Bianchi2015	1505.05341	Bianchi	2015	Measuring line-of-sight dependent Fourier-space clustering using FFTs	method
+Wilson2017	1511.07799	Wilson	2017	Rapid modelling of the redshift-space power spectrum multipoles for a masked density field	method
+Yamamoto2006	astro-ph/0505115	Yamamoto	2006	A Measurement of the Quadrupole Power Spectrum in the Clustering of the 2dF QSO Survey	method
+Scoccimarro2004	astro-ph/0407214	Scoccimarro	2004	Redshift-Space Distortions, Pairwise Velocities and Nonlinearities	foundation
+PercivalWhite2009	0808.0003	Percival	2009	Testing cosmological structure formation using redshift-space distortions	foundation
+ReidWhite2011	1105.4165	Reid	2011	Towards an accurate model of the redshift space clustering of halos in the quasilinear regime	method
+Hand2017	1704.02357	Hand	2017	An optimal FFT-based anisotropic power spectrum estimator	method
+Fisher1995	astro-ph/9412081	Fisher	1995	On The Validity of the Streaming Model for the Redshift-Space Correlation Function in the Linear Regime	foundation
+FKP1994	astro-ph/9304022	Feldman	1994	Power Spectrum Analysis of Three-Dimensional Redshift Surveys	foundation
+PeacockDodds1994	astro-ph/9311057	Peacock	1994	Reconstructing the linear power spectrum of cosmological mass fluctuations	foundation
+TNS2010	1006.0699	Taruya	2010	Baryon Acoustic Oscillations in 2D: Modeling Redshift-space Power Spectrum from Perturbation Theory	method
+Scoccimarro2015	1506.02729	Scoccimarro	2015	Fast Estimators for Redshift-Space Clustering	method
+Hamilton1998	astro-ph/9708102	Hamilton	1998	Linear Redshift Distortions: A Review	review
+Brieden2021	2106.07641	Brieden	2021	ShapeFit: extracting the power spectrum shape information in galaxy surveys beyond BAO and RSD	method
+Maus2024	2404.07272	Maus	2024	A comparison of effective field theory models of redshift space galaxy power spectra for DESI 2024 and future surveys	method
+DAmico2020	1909.05271	D'Amico	2020	The Cosmological Analysis of the SDSS/BOSS data from the Effective Field Theory of Large-Scale Structure	results
+SenatoreZaldarriaga2015	1404.5954	Senatore	2015	The IR-resummed Effective Field Theory of Large Scale Structures	method
+Chudaykin2020	2004.10607	Chudaykin	2020	Non-linear perturbation theory extension of the Boltzmann code CLASS	code
+Ivanov2020	1909.05277	Ivanov	2020	Cosmological Parameters from the BOSS Galaxy Power Spectrum	results
+Chen2021	2012.04636	Chen	2021	Redshift-Space Distortions in Lagrangian Perturbation Theory	method
+Baumann2012	1004.2488	Baumann	2012	Cosmological Non-Linearities as an Effective Fluid	foundation
+Bernardeau2002	astro-ph/0112551	Bernardeau	2002	Large-Scale Structure of the Universe and Cosmological Perturbation Theory	review
+Carrasco2012	1206.2926	Carrasco	2012	The Effective Field Theory of Cosmological Large Scale Structures	foundation
+Blas2016	1605.02149	Blas	2016	Time-Sliced Perturbation Theory II: Baryon Acoustic Oscillations and Infrared Resummation	method
+Nishimichi2020	2003.08277	Nishimichi	2020	Blinded challenge for precision cosmology with large-scale structure: results from effective field theory for the redshift-space galaxy power spectrum	method
+Szalay1998	astro-ph/9712007	Szalay	1998	Redshift Space Distortions of the Correlation Function in Wide Angle Galaxy Surveys	foundation
+Lemos2017	1704.01054	Lemos	2017	The effect of Limber and flat-sky approximations on galaxy weak lensing	systematics
+Samushia2012	1102.1014	Samushia	2012	Interpreting large-scale redshift-space distortion measurements	systematics
+Yoo2009	0907.0707	Yoo	2009	New Perspective on Galaxy Clustering as a Cosmological Probe: General Relativistic Effects	foundation
+Kilbinger2017	1702.05301	Kilbinger	2017	Precision calculations of the cosmic shear power spectrum projection	systematics
+ChallinorLewis2011	1105.5292	Challinor	2011	The linear power spectrum of observed source number counts	foundation
+BonvinDurrer2011	1105.5280	Bonvin	2011	What galaxy surveys really measure	foundation
+CastorinaWhite2020	1911.08353	Castorina	2020	Wide angle effects for peculiar velocities	method
+Fang2020	1911.11947	Fang	2020	Beyond Limber: Efficient computation of angular power spectra for galaxy clustering and weak lensing	method
+CastorinaWhite2018	1709.09730	Castorina	2018	Beyond the plane-parallel approximation for redshift surveys	method
+Beutler2019	1810.05051	Beutler	2019	Interpreting measurements of the anisotropic galaxy power spectrum	method
+LoVerdeAfshordi2008	0809.5112	LoVerde	2008	Extended Limber Approximation	foundation
+Kitching2017	1611.04954	Kitching	2017	The Limits of Cosmic Shear	systematics
+Leonard2023	2212.04291	Leonard	2023	The N5K Challenge: Non-Limber Integration for LSST Cosmology	method
+Dalal2008	0710.4560	Dalal	2008	The imprints of primordial non-gaussianities on large-scale structure: scale dependent bias and abundance of virialized objects	foundation
+McDonaldRoy2009	0902.0991	McDonald	2009	Clustering of dark matter tracers: generalizing bias for the coming era of precision LSS	foundation
+VillaescusaNavarro2014	1311.0866	Villaescusa-Navarro	2014	Cosmology with massive neutrinos I: towards a realistic modeling of the relation between matter, haloes and galaxies	method
+Chisari2019	1812.05995	Chisari	2019	Core Cosmology Library: Precision Cosmological Predictions for LSST	code
+Baldauf2012	1201.4827	Baldauf	2012	Evidence for Quadratic Tidal Tensor Bias from the Halo Bispectrum	foundation
+Blas2011	1104.2933	Blas	2011	The Cosmic Linear Anisotropy Solving System (CLASS) II: Approximation schemes	code
+Lewis2000	astro-ph/9911177	Lewis	2000	Efficient Computation of CMB anisotropies in closed FRW models	code
+Mead2021	2009.01858	Mead	2021	HMcode-2020: Improved modelling of non-linear cosmological power spectra with baryonic feedback	method
+Castorina2014	1311.1212	Castorina	2014	Cosmology with massive neutrinos II: on the universality of the halo mass function and bias	method
+VillaescusaNavarro2018	1708.01154	Villaescusa-Navarro	2018	The imprint of neutrinos on clustering in redshift-space	method
+Gao2005	astro-ph/0506510	Gao	2005	The age dependence of halo clustering	foundation
+Assassi2014	1402.5916	Assassi	2014	Renormalized Halo Bias	foundation
+Desjacques2018	1611.09787	Desjacques	2018	Large-Scale Galaxy Bias	review
+LesgourguesPastor2006	astro-ph/0603494	Lesgourgues	2006	Massive neutrinos and cosmology	review
+Wright2025	2503.19441	Wright	2025	KiDS-Legacy: Cosmological constraints from cosmic shear with the complete Kilo-Degree Survey	results
+DESY6	2601.14559	DES Collaboration	2026	Dark Energy Survey Year 6 Results: Cosmological Constraints from Galaxy Clustering and Weak Lensing	results
+DESI2024V	2411.12021	Adame	2024	DESI 2024 V: Full-Shape Galaxy Clustering from Galaxies and Quasars	results
+PerezFernandez2024	2406.06085	Pérez-Fernández	2024	Fiducial-Cosmology-dependent systematics for the DESI 2024 BAO Analysis	systematics
+DESY3	2105.13549	DES Collaboration	2021	Dark Energy Survey Year 3 Results: Cosmological Constraints from Galaxy Clustering and Weak Lensing	results
+DESI2025BAO	2503.14738	DESI Collaboration	2025	DESI DR2 Results II: Measurements of Baryon Acoustic Oscillations and Cosmological Constraints	results
+Krause2021	2105.13548	Krause	2021	Dark Energy Survey Year 3 Results: Multi-Probe Modeling Strategy and Validation	method
+Aubourg2015	1411.1074	Aubourg	2015	Cosmological implications of baryon acoustic oscillation (BAO) measurements	results
+Planck2013XVI	1303.5076	Planck Collaboration	2013	Planck 2013 results. XVI. Cosmological parameters	results
+Louis2025	2503.14452	Louis	2025	The Atacama Cosmology Telescope: DR6 Power Spectra, Likelihoods and $Λ$CDM Parameters	results
+Planck2018VI	1807.06209	Planck Collaboration	2018	Planck 2018 results. VI. Cosmological parameters	results
+eBOSS2021	2007.08991	eBOSS Collaboration	2021	The Completed SDSS-IV extended Baryon Oscillation Spectroscopic Survey: Cosmological Implications from two Decades of Spectroscopic Surveys at the Apache Point observatory	results
+Salazar2024	2406.04054	Salazar	2024	Dynamics-based halo model for large scale structure	method
+Kaiser1987	doi:10.1093/mnras/227.1.1	Kaiser	1987	Clustering in real space and in redshift space	foundation
+Bonici2026	2607.02498	Bonici	2026	Alleviating prior dependencies for DESI DR1 clustering fits through reparameterization	critique
+Ivanov2026	2607.28314	Ivanov	2026	GGI Lectures on Large-Scale Structure Perturbation Theory (Effective Field Theory)	review
+Kobayashi2026	2610.08023	Kobayashi	2026	Fast and accurate differentiable code of the galaxy power spectrum based on Eulerian and Lagrangian one-loop perturbation theories	code
+Sailer2026	2607.05513	Sailer	2026	Optimal and exact wide-angle power spectrum estimation	method
+Lukens2026	2608.18334	Lukens	2026	PowerFull: fast and accurate computation of the relativistic angular galaxy power spectrum including local primordial non-Gaussianity	forecast
+Mikura2026	2608.19039	Mikura	2026	Dipolar power asymmetry in wide-angle correlations of galaxy density, velocity and ellipticity	method
+Zhang2026	2606.23781	Zhang	2026	Accurate modeling for 3$\times$2pt analyses in Roman and Rubin: a study of model approximations	forecast
+Chiarenza2026	2609.01855	Chiarenza	2026	Blast.jl: Differentiable Non-Limber Power Spectra for Joint Clustering, Shear, and CMB lensing Analyses	code
+Euclid2026nonstd	2603.13148	Euclid Collaboration	2026	Euclid preparation. Simulated galaxy catalogues for non-standard cosmological models	method
+Sanchez2025	2511.13826	Sanchez	2025	Aletheia: Emulating the non-linear matter power spectrum in the context of evolution mapping	method
+Brieden2023	2212.04522	Brieden	2022	A tale of two (or more) $h$'s	results
+Pezzotta2026	2610.08751	Pezzotta	2026	Mitigating prior-volume effects in galaxy clustering by adopting Mpc over Mpc/h units	critique
+ChenAviles2026	2609.35757	Chen	2026	Can Fingers of God be Resummed?	method

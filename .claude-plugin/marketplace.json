@@ -1,0 +1,13 @@
+{
+  "name": "cosmoskill",
+  "owner": {
+    "name": "Corentin Ravoux"
+  },
+  "plugins": [
+    {
+      "name": "cosmoskill",
+      "source": "./",
+      "description": "Observational-cosmology reference skills: a hub and 21 literature-grounded domain skills."
+    }
+  ]
+}

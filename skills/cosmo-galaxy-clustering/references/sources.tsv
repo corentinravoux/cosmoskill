@@ -1,0 +1,127 @@
+key	id	first_author	year	title	role
+Kaiser1987	doi:10.1093/mnras/227.1.1	Kaiser	1987	Clustering in real space and in redshift space	foundation
+AlcockPaczynski1979	doi:10.1038/281358a0	Alcock	1979	An evolution free test for non-zero cosmological constant	foundation
+LandySzalay1993	doi:10.1086/172900	Landy	1993	Bias and variance of angular correlation functions	method
+FKP1994	astro-ph/9304022	Feldman	1994	Power Spectrum Analysis of Three-Dimensional Redshift Surveys	method
+EisensteinHu1998	astro-ph/9709112	Eisenstein	1998	Baryonic Features in the Matter Transfer Function	foundation
+Colless2001	astro-ph/0106498	Colless	2001	The 2dF Galaxy Redshift Survey: Spectra and redshifts	data
+Zheng2005	astro-ph/0408564	Zheng	2005	Theoretical Models of the Halo Occupation Distribution: Separating Central and Satellite Galaxies	method
+Eisenstein2005	astro-ph/0501171	Eisenstein	2005	Detection of the Baryon Acoustic Peak in the Large-Scale Correlation Function of SDSS Luminous Red Galaxies	results
+Cole2005	astro-ph/0501174	Cole	2005	The 2dF Galaxy Redshift Survey: Power-spectrum analysis of the final dataset and cosmological implications	results
+Yamamoto2006	astro-ph/0505115	Yamamoto	2006	A Measurement of the Quadrupole Power Spectrum in the Clustering of the 2dF QSO Survey	method
+Eisenstein2007	astro-ph/0604362	Eisenstein	2007	Improving Cosmological Distance Measurements by Reconstruction of the Baryon Acoustic Peak	method
+Hartlap2007	astro-ph/0608064	Hartlap	2007	Why your model parameter confidences might be too optimistic -- unbiased estimation of the inverse covariance matrix	method
+Dalal2008	0710.4560	Dalal	2008	The imprints of primordial non-gaussianities on large-scale structure: scale dependent bias and abundance of virialized objects	foundation
+Slosar2008	0805.3580	Slosar	2008	Constraints on local primordial non-Gaussianity from large scale structure	foundation
+Jones2009	0903.5451	Jones	2009	The 6dF Galaxy Survey: Final Redshift Release (DR3) and Southern Large-Scale Structures	data
+Taruya2010	1006.0699	Taruya	2010	Baryon Acoustic Oscillations in 2D: Modeling Redshift-space Power Spectrum from Perturbation Theory	method
+Baumann2012	1004.2488	Baumann	2012	Cosmological Non-Linearities as an Effective Fluid	foundation
+Carrasco2012	1206.2926	Carrasco	2012	The Effective Field Theory of Cosmological Large Scale Structures	foundation
+Beutler2011	1106.3366	Beutler	2011	The 6dF Galaxy Survey: Baryon Acoustic Oscillations and the Local Hubble Constant	results
+Padmanabhan2012	1202.0090	Padmanabhan	2012	A 2% Distance to z=0.35 by Reconstructing Baryon Acoustic Oscillations - I : Methods and Application to the Sloan Digital Sky Survey	method
+Weinberg2013	1201.2434	Weinberg	2013	Observational Probes of Cosmic Acceleration	review
+Takada2014	1206.0737	Takada	2014	Extragalactic Science, Cosmology and Galactic Archaeology with the Subaru Prime Focus Spectrograph (PFS)	forecast
+Percival2014	1312.4841	Percival	2014	The Clustering of Galaxies in the SDSS-III Baryon Oscillation Spectroscopic Survey: Including covariance matrix errors	method
+Kazin2014	1401.0358	Kazin	2014	The WiggleZ Dark Energy Survey: Improved Distance Measurements to z = 1 with Reconstruction of the Baryonic Acoustic Feature	results
+Ross2015	1409.3242	Ross	2015	The Clustering of the SDSS DR7 Main Galaxy Sample I: A 4 per cent Distance Measure at z=0.15	results
+Chuang2015	1409.1124	Chuang	2015	EZmocks: extending the Zel'dovich approximation to generate mock galaxy catalogues with accurate clustering statistics	method
+Burden2015	1504.02591	Burden	2015	Reconstruction in Fourier space	method
+SellentinHeavens2016	1511.05969	Sellentin	2016	Parameter inference with estimated covariance matrices	method
+DESI2016	1611.00036	DESI Collaboration	2016	The DESI Experiment Part I: Science,Targeting, and Survey Design	data
+Desjacques2018	1611.09787	Desjacques	2018	Large-Scale Galaxy Bias	review
+Alam2017	1607.03155	Alam	2017	The clustering of galaxies in the completed SDSS-III Baryon Oscillation Spectroscopic Survey: cosmological analysis of the DR12 galaxy sample	results
+Ross2017	1607.03145	Ross	2017	The clustering of galaxies in the completed SDSS-III Baryon Oscillation Spectroscopic Survey: Observational systematics and baryon acoustic oscillations in the correlation function	systematics
+BianchiPercival2017	1703.02070	Bianchi	2017	Unbiased clustering estimation in the presence of missing observations	method
+Hand2017	1704.02357	Hand	2017	An optimal FFT-based anisotropic power spectrum estimator	method
+Planck2018Params	1807.06209	Planck Collaboration	2020	Planck 2018 results. VI. Cosmological parameters	results
+Planck2018PNG	1905.05697	Planck Collaboration	2020	Planck 2018 results. IX. Constraints on primordial non-Gaussianity	results
+Beutler2019	1810.05051	Beutler	2019	Interpreting measurements of the anisotropic galaxy power spectrum	method
+deMattia2019	1904.08851	de Mattia	2019	Integral constraints in spectroscopic surveys	method
+Philcox2020	1904.11070	Philcox	2020	RascalC: A Jackknife Approach to Estimating Single and Multi-Tracer Galaxy Covariance Matrices	code
+Ivanov2020	1909.05277	Ivanov	2020	Cosmological Parameters from the BOSS Galaxy Power Spectrum	results
+DAmico2020	1909.05271	D'Amico	2020	The Cosmological Analysis of the SDSS/BOSS data from the Effective Field Theory of Large-Scale Structure	results
+WadekarScoccimarro2020	1910.02914	Wadekar	2020	Galaxy Power Spectrum Multipoles Covariance in Perturbation Theory	method
+Euclid2020Forecast	1910.09273	Euclid Collaboration	2020	Euclid preparation: VII. Forecast validation for Euclid cosmological probes	forecast
+DAmico2021	2003.07956	D'Amico	2021	Limits on $w$CDM from the EFTofLSS with the PyBird code	code
+Chudaykin2020	2004.10607	Chudaykin	2020	Non-linear perturbation theory extension of the Boltzmann code CLASS	code
+Brieden2020	2006.10857	Brieden	2020	Blind Observers of the Sky	method
+Alam2021	2007.08991	eBOSS Collaboration	2021	The Completed SDSS-IV extended Baryon Oscillation Spectroscopic Survey: Cosmological Implications from two Decades of Spectroscopic Surveys at the Apache Point observatory	results
+Bautista2020	2007.08993	Bautista	2020	The Completed SDSS-IV extended Baryon Oscillation Spectroscopic Survey: measurement of the BAO and growth rate of structure of the luminous red galaxy sample from the anisotropic correlation function between redshifts 0.6 and 1	results
+Hou2020	2007.08998	Hou	2020	The Completed SDSS-IV extended Baryon Oscillation Spectroscopic Survey: BAO and RSD measurements from anisotropic clustering analysis of the Quasar Sample in configuration space between redshift 0.8 and 2.2	results
+Ross2020	2007.09000	Ross	2020	The Completed SDSS-IV extended Baryon Oscillation Spectroscopic Survey: Large-scale Structure Catalogs for Cosmological Analysis	data
+Mohammad2020	2007.09005	Mohammad	2020	The Completed SDSS-IV extended Baryon Oscillation Spectroscopic Survey: Pairwise-Inverse-Probability and Angular Correction for Fibre Collisions in Clustering Measurements	systematics
+Chen2021	2012.04636	Chen	2021	Redshift-Space Distortions in Lagrangian Perturbation Theory	code
+BeutlerMcDonald2021	2106.06324	Beutler	2021	Unified galaxy power spectrum measurements from 6dFGS, BOSS, and eBOSS	method
+Brieden2021	2106.07641	Brieden	2021	ShapeFit: extracting the power spectrum shape information in galaxy surveys beyond BAO and RSD	method
+Mueller2022	2106.13725	Mueller	2022	The clustering of galaxies in the completed SDSS-IV extended Baryon Oscillation Spectroscopic Survey: Primordial non-Gaussianity in Fourier Space	results
+Wang2022	2110.01829	Wang	2022	The High Latitude Spectroscopic Survey on the Nancy Grace Roman Space Telescope	forecast
+Chen2022	2110.05530	Chen	2022	A new analysis of galaxy 2-point functions in the BOSS survey, including full-shape information and post-reconstruction BAO	results
+Maksimova2021	2110.11398	Maksimova	2021	AbacusSummit: A Massive Set of High-Accuracy, High-Resolution $N$-Body Simulations	data
+Yuan2022	2110.11412	Yuan	2022	AbacusHOD: A highly efficient extended multi-tracer HOD framework and its application to BOSS and eBOSS data	code
+PhilcoxIvanov2022	2112.04515	Philcox	2022	The BOSS DR12 Full-Shape Cosmology: $\Lambda$CDM Constraints from the Large-Scale Galaxy Power Spectrum and Bispectrum Monopole	results
+Barreira2022	2205.05673	Barreira	2022	Can we actually constrain $f_{\rm NL}$ using the scale-dependent bias effect? An illustration of the impact of galaxy bias uncertainties using the BOSS DR12 galaxy power spectrum	critique
+DESI2022Instr	2205.10939	Abareshi	2022	Overview of the Instrumentation for the Dark Energy Spectroscopic Instrument	data
+Simon2023	2208.05929	Simon	2023	Consistency of effective field theory analyses of the BOSS power spectrum	critique
+Noriega2022	2208.02791	Noriega	2022	Fast computation of non-linear power spectrum in cosmologies with massive neutrinos	code
+Ivanov2022	2212.08488	Ivanov	2022	Effective Field Theory for Large Scale Structure	review
+DESI2023EDR	2306.06308	DESI Collaboration	2023	The Early Data Release of the Dark Energy Spectroscopic Instrument	data
+Holm2023	2309.04468	Holm	2023	Bayesian and frequentist investigation of prior effects in EFTofLSS analyses of full-shape BOSS and eBOSS data	critique
+Cagliari2024	2309.15814	Cagliari	2024	Optimal constraints on Primordial non-Gaussianity with the eBOSS DR16 quasars in Fourier space	results
+Schoneberg2024	2401.15054	Schöneberg	2024	The 2024 BBN baryon abundance update	method
+Chen2024	2402.14070	Chen	2024	Baryon Acoustic Oscillation Theory and Modelling Systematics for the DESI 2024 results	systematics
+DESI2024BAO	2404.03000	DESI Collaboration	2024	DESI 2024 III: Baryon Acoustic Oscillations from Galaxies and Quasars	results
+DESI2024BAOCosmo	2404.03002	DESI Collaboration	2024	DESI 2024 VI: Cosmological Constraints from the Measurements of Baryon Acoustic Oscillations	results
+Paillas2024	2404.03005	Paillas	2024	Optimal Reconstruction of Baryon Acoustic Oscillations for DESI 2024	systematics
+Rashkovetskyi2024	2404.03007	Rashkovetskyi	2024	Semi-analytical covariance matrices for two-point correlation function for DESI 2024 data	method
+MenaFernandez2024	2404.03008	Mena-Fernández	2024	HOD-Dependent Systematics for Luminous Red Galaxies in the DESI 2024 BAO Analysis	systematics
+GarciaQuintero2024	2404.03009	Garcia-Quintero	2024	HOD-Dependent Systematics in Emission Line Galaxies for the DESI 2024 BAO analysis	systematics
+Maus2024	2404.07272	Maus	2024	A comparison of effective field theory models of redshift space galaxy power spectra for DESI 2024 and future surveys	systematics
+Andrade2024	2404.07282	Andrade	2024	Validating the Galaxy and Quasar Catalog-Level Blinding Scheme for the DESI 2024 analysis	method
+Colgain2024	2404.08633	Colgáin	2024	Does DESI 2024 Confirm $\Lambda$CDM?	critique
+Euclid2025Overview	2405.13491	Euclid Collaboration	2025	Euclid. I. Overview of the Euclid mission	data
+Ross2025	2405.16593	Ross	2025	The Construction of Large-scale Structure Catalogs for the Dark Energy Spectroscopic Instrument	data
+Yu2024	2405.16657	Yu	2024	ELG Spectroscopic Systematics Analysis of the DESI Data Release 1	systematics
+Krolewski2024	2405.17208	Krolewski	2024	Impact and mitigation of spectroscopic systematics on DESI DR1 clustering measurements	systematics
+Pinon2024	2406.04804	Pinon	2024	Mitigation of DESI fiber assignment incompleteness effect on two-point clustering with small angular scale truncated estimators	systematics
+PerezFernandez2024	2406.06085	Pérez-Fernández	2024	Fiducial-Cosmology-dependent systematics for the DESI 2024 BAO Analysis	systematics
+DESI2024KP3	2411.12020	DESI Collaboration	2024	DESI 2024 II: Sample Definitions, Characteristics, and Two-point Clustering Statistics	data
+DESI2024FS	2411.12021	Adame	2024	DESI 2024 V: Full-Shape Galaxy Clustering from Galaxies and Quasars	results
+DESI2024FSCosmo	2411.12022	DESI Collaboration	2024	DESI 2024 VII: Cosmological Constraints from the Full-Shape Modeling of Clustering Measurements	results
+Findlay2024	2411.12023	Findlay	2024	Exploring HOD-dependent systematics for the DESI 2024 Full-Shape galaxy clustering analysis	systematics
+RosadoMarin2024	2411.12024	Rosado-Marín	2024	Mitigating Imaging Systematics for DESI 2024 Emission Line Galaxies and Beyond	systematics
+Bianchi2024	2411.12025	Bianchi	2024	Characterization of DESI fiber assignment incompleteness effect on 2-point clustering and mitigation methods for DR1 analysis	systematics
+ForeroSanchez2024	2411.12027	Forero-Sánchez	2024	Analytical and EZmock covariance validation for the DESI 2024 results	systematics
+Chaussidon2024	2411.17623	Chaussidon	2024	Constraining primordial non-Gaussianity with DESI 2024 LRG and QSO samples	results
+DESI2025BAO	2503.14738	DESI Collaboration	2025	DESI DR2 Results II: Measurements of Baryon Acoustic Oscillations and Cosmological Constraints	results
+DESI2025Lya	2503.14739	DESI Collaboration	2025	DESI DR2 Results I: Baryon Acoustic Oscillations from the Lyman Alpha Forest	results
+Andrade2025	2503.14742	Andrade	2025	Validation of the DESI DR2 Measurements of Baryon Acoustic Oscillations from Galaxies and Quasars	systematics
+DESI2025DR1	2503.14745	DESI Collaboration	2025	Data Release 1 of the Dark Energy Spectroscopic Instrument	data
+Euclid2025Q1	2503.15302	Euclid Collaboration	2025	Euclid Quick Data Release (Q1) -- Data release overview	data
+Colgain2025	2504.04417	Colgáin	2025	How much has DESI dark energy evolved since DR1?	critique
+Zhang2025	2504.10407	Zhang	2025	Enhancing DESI DR1 Full-Shape analyses using HOD-informed priors	results
+Sailer2025	2504.16932	Sailer	2025	Dispu$\tau$able: the high cost of a low optical depth	critique
+Efstathiou2025	2505.02658	Efstathiou	2025	Baryon Acoustic Oscillations from a Different Angle	critique
+Chudaykin2025a	2507.13433	Chudaykin	2025	Reanalyzing DESI DR1: 1. $\Lambda$CDM Constraints from the Power Spectrum and Bispectrum	results
+Morawetz2025	2508.11811	Morawetz	2025	Frequentist Cosmological Constraints from Full-Shape Clustering Measurements in DESI DR1	results
+Gsponer2025	2509.08057	Gsponer	2025	Fiducial-Cosmology-dependent systematics for the DESI 2024 Full-Shape Analysis	systematics
+Bandi2025	2510.02449	Bandi	2025	4MOST Cosmology Redshift Survey (CRS): Clustering Properties of CRS Bright Galaxy and Luminous Red Galaxy Target Catalogues	data
+Zaborowski2025	2510.19149	Zaborowski	2025	$H_0$ Without the Sound Horizon (or Supernovae): A 2% Measurement in DESI DR1	results
+Bock2025	2511.02985	Bock	2025	The SPHEREx Satellite Mission	data
+Monaco2025	2511.20856	Euclid Collaboration	2025	Euclid preparation. XCII. Controlling angular systematics in the Euclid spectroscopic galaxy sample	systematics
+Chudaykin2025c	2512.04266	Chudaykin	2025	Reanalyzing DESI DR1: 3. Constraints on Inflation from Galaxy Power Spectra & Bispectra	results
+Ivanov2026	2601.16165	Ivanov	2026	Reanalyzing DESI DR1: 4. Percent-Level Cosmological Constraints from Combined Probes and Robust Evidence for the Normal Neutrino Mass Hierarchy	results
+Maus2026	2602.12343	Maus	2026	An analytic approximation to the covariance between pre- and post-reconstruction galaxy two-point statistics	method
+Fondi2026	2602.12357	Fondi	2026	Assembly bias and local Primordial non-Gaussianity from DESI DR1 Quasars	results
+Chudaykin2026	2602.18554	Chudaykin	2026	Reanalyzing DESI DR1: 5. Cosmological Constraints with Simulation-Based Priors	results
+ForeroSanchez2026	2602.18761	Forero-Sánchez	2026	Cosmological constraints from a joint DESI DR1 Full-Shape and DR2 BAO	results
+Bayer2026	2603.15732	Bayer	2026	Field-Level Inference from Galaxies: BAO Reconstruction	method
+RosadoMarin2026	2604.05213	Rosado-Marín	2026	Local primordial non-Gaussianity using cross-correlations of DESI tracers	results
+Sarpa2026	2605.03446	Euclid Collaboration	2026	\textit{Euclid} preparation. Baryon acoustic oscillations extraction techniques: comparison and optimisation	forecast
+Tanaka2026	2606.14012	Tanaka	2026	Prime Focus Spectrograph on the Subaru Telescope: Overview of Science Operations	data
+ForeroSanchez2026B	2606.23936	Forero-Sánchez	2026	Cosmological constraints from the DESI DR1 Bispectrum Full-Shape and DR2 BAO	results
+Brown2026	2606.24651	Brown	2026	Measuring local primordial non-Gaussianity from the clustering of DESI DR1 LRGs and QSOs	results
+DESI2026LyaAP	2607.27410	DESI Collaboration	2026	DESI DR2 Results IV: Alcock-Paczy\'nski Measurements from the Lyman Alpha Forest and Cosmological Constraints	results
+Poppett2026	2608.07927	Poppett	2026	Spec-S5: A Next-Generation All-Sky Spectroscopic Facility Enabling Large-Scale Surveys for Cosmology and Astrophysics	data
+Sanders2026	2608.27830	Sanders	2026	A Unified Tracer Analysis of DESI DR2 Baryon Acoustic Oscillations	results
+Guandalin2026	2610.01836	Guandalin	2026	Cosmological inference from a joint DESI DR1 full-shape power spectrum and bispectrum analysis	results
+Hoyt2026	2601.19424	Hoyt	2026	Union3.1: Reducing Systematics in Supernova Cosmology with Self-consistent Measurements of Host Galaxy Properties for 2000 Type Ia Supernovae	results

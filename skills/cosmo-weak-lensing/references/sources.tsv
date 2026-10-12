@@ -1,0 +1,193 @@
+key	id	first_author	year	title	role
+Kaiser1994	astro-ph/9411005	Kaiser	1994	A Method for Weak Lensing Observations	foundation
+Bartelmann1999	astro-ph/9912508	Bartelmann	1999	Weak Gravitational Lensing	review
+Hivon2001	astro-ph/0105302	Hivon	2001	MASTER of the CMB Anisotropy Power Spectrum: A Fast Method for Statistical Analysis of Large and Complex CMB Data Sets	method
+Schneider2002	astro-ph/0206182	Schneider	2002	Analysis of two-point statistics of cosmic shear: I. Estimators and covariances	foundation
+Jain2003	astro-ph/0306046	Jain	2003	Cross-correlation Tomography: Measuring Dark Energy Evolution with Weak Lensing	foundation
+Jarvis2003	astro-ph/0307393	Jarvis	2003	The Skewness of the Aperture Mass Statistic	code
+Hirata2004	astro-ph/0406275	Hirata	2004	Intrinsic alignment-lensing interference as a contaminant of cosmic shear	foundation
+Heymans2005	astro-ph/0506112	Heymans	2005	The Shear TEsting Programme 1: Weak lensing analysis of simulated ground-based observations	systematics
+Hartlap2006	astro-ph/0608064	Hartlap	2006	Why your model parameter confidences might be too optimistic -- unbiased estimation of the inverse covariance matrix	method
+Bridle2007	0705.0166	Bridle	2007	Dark energy constraints from cosmic shear power spectra: impact of intrinsic alignments on photometric redshift requirements	foundation
+PaulinHenriksson2007	0711.4886	Paulin-Henriksson	2007	PSF calibration requirements for dark energy from cosmic shear	systematics
+Lima2008	0801.3822	Lima	2008	Estimating the Redshift Distribution of Faint Galaxy Samples	method
+Newman2008	0805.1409	Newman	2008	Calibrating Redshift Distributions Beyond Spectroscopic Limits with Cross-Correlations	foundation
+Ivezic2008	0805.2366	Ivezić	2008	LSST: from Science Drivers to Reference Design and Anticipated Data Products	data
+LoVerde2008	0809.5112	LoVerde	2008	Extended Limber Approximation	method
+Rowe2009	0904.3056	Rowe	2009	Improving PSF modelling for weak gravitational lensing using new methods in model selection	systematics
+Schneider2010	1002.2136	Schneider	2010	COSEBIs: Extracting the full E-/B-mode information from cosmic shear correlation functions	method
+vanDaalen2011	1104.1174	van Daalen	2011	The effects of galaxy formation on the matter power spectrum: A challenge for precision cosmology	foundation
+Laureijs2011	1110.3193	Laureijs	2011	Euclid Definition Study Report	data
+Takahashi2012	1208.2701	Takahashi	2012	Revising the Halofit Model for the Nonlinear Matter Power Spectrum	method
+Heymans2012	1210.0032	Heymans	2012	CFHTLenS: The Canada-France-Hawaii Telescope Lensing Survey	data
+Miller2012	1210.8201	Miller	2012	Bayesian Galaxy Shape Measurement for Weak Lensing Surveys - III. Application to the Canada-France-Hawaii Telescope Lensing Survey	method
+Kilbinger2012	1212.3338	Kilbinger	2012	CFHTLenS: Combined probe cosmological model comparison using 2D weak gravitational lensing	results
+Takada2013	1302.6994	Takada	2013	Power Spectrum Super-Sample Covariance	method
+Heymans2013	1303.1808	Heymans	2013	CFHTLenS tomographic weak lensing cosmological parameter constraints: Mitigating the impact of intrinsic galaxy alignments	results
+Menard2013	1303.4722	Ménard	2013	Clustering-based redshift estimation: method and application to data	method
+Sheldon2014	1403.7669	Sheldon	2014	An Implementation of Bayesian Lensing Shear Measurement	code
+Dawson2014	1406.1506	Dawson	2014	The Ellipticity Distribution of Ambiguously Blended Objects	systematics
+Troxel2014	1407.6990	Troxel	2014	The Intrinsic Alignment of Galaxies and its Impact on Weak Gravitational Lensing in an Era of Precision Cosmology	review
+Rowe2014	1407.7676	Rowe	2014	GalSim: The modular galaxy image simulation toolkit	code
+Zuntz2014	1409.3409	Zuntz	2014	CosmoSIS: modular cosmological parameter estimation	code
+Kilbinger2014	1411.0115	Kilbinger	2014	Cosmology with cosmic shear observations: a review	review
+Spergel2015	1503.03757	Spergel	2015	Wide-Field InfrarRed Survey Telescope-Astrophysics Focused Telescope Assets WFIRST-AFTA 2015 Report	data
+Joachimi2015	1504.05456	Joachimi	2015	Galaxy alignments: An overview	review
+Mead2015	1505.07833	Mead	2015	An accurate halo model for fitting non-linear cosmological power spectra and baryonic feedback models	code
+Kuijken2015	1507.00738	Kuijken	2015	Gravitational Lensing Analysis of the Kilo Degree Survey	data
+Jarvis2015	1507.05603	Jarvis	2015	The DES Science Verification Weak Lensing Shear Catalogues	data
+Masters2015	1509.03318	Masters	2015	Mapping the Galaxy Color-Redshift Relation: Optimal Photometric Redshift Calibration Strategies for Cosmology Surveys	method
+Schneider2015	1510.06034	Schneider	2015	A new method to quantify the effects of baryons on the matter power spectrum	method
+Sellentin2015	1511.05969	Sellentin	2015	Parameter inference with estimated covariance matrices	method
+Krause2016	1601.05779	Krause	2016	CosmoLike - Cosmological Likelihood Analyses for Photometric Galaxy Surveys	code
+Hildebrandt2016	1606.05338	Hildebrandt	2016	KiDS-450: Cosmological parameter constraints from tomographic weak gravitational lensing	results
+Leauthaud2016	1611.08606	Leauthaud	2016	Lensing is Low: Cosmology, Galaxy Formation, or New Physics?	critique
+Huff2017	1702.02600	Huff	2017	Metacalibration: Direct Self-Calibration of Biases in Shear Measurement	method
+Sheldon2017	1702.02601	Sheldon	2017	Practical Weak Lensing Shear Measurement with Metacalibration	method
+Kilbinger2017	1702.05301	Kilbinger	2017	Precision calculations of the cosmic shear power spectrum projection	method
+Mandelbaum2017	1705.06745	Mandelbaum	2017	The first-year shear catalog of the Subaru Hyper Suprime-Cam SSP Survey	data
+DES2017	1708.01530	DES Collaboration	2017	Dark Energy Survey Year 1 Results: Cosmological Constraints from Galaxy Clustering and Weak Lensing	results
+Zuntz2017	1708.01533	Zuntz	2017	Dark Energy Survey Year 1 Results: Weak Lensing Shape Catalogues	data
+Troxel2017	1708.01538	Troxel	2017	Dark Energy Survey Year 1 Results: Cosmological Constraints from Cosmic Shear	results
+Blazek2017	1708.09247	Blazek	2017	Beyond linear galaxy alignments	method
+Mandelbaum2017b	1710.03235	Mandelbaum	2017	Weak lensing for precision cosmology	review
+Planck2018	1807.06209	Planck Collaboration	2018	Planck 2018 results. VI. Cosmological parameters	results
+Huang2018	1809.01146	Huang	2018	Modeling baryonic physics in future weak lensing surveys	method
+LSSTDarkEnergyScience2018	1809.01669	The LSST Dark Energy Science Collaboration	2018	The LSST Dark Energy Science Collaboration (DESC) Science Requirements Document	forecast
+Hikage2018	1809.09148	Hikage	2018	Cosmology from cosmic shear power spectra with Subaru Hyper Suprime-Cam first-year data	results
+Alonso2018	1809.09603	Alonso	2018	A unified pseudo-$C_\ell$ framework	code
+Schneider2018	1810.08629	Schneider	2018	Quantifying baryon effects on the matter power spectrum and the weak lensing shear correlation	method
+Kannawadi2018	1812.03983	Kannawadi	2018	Towards emulating cosmic shear data: Revisiting the calibration of the shear measurements for the Kilo-Degree Survey	systematics
+Chisari2018	1812.05995	Chisari	2018	Core Cosmology Library: Precision Cosmological Predictions for LSST	code
+Hildebrandt2018	1812.06076	Hildebrandt	2018	KiDS+VIKING-450: Cosmic shear tomography with optical+infrared data	results
+Buchs2019	1901.05005	Buchs	2019	Phenotypic redshifts with self-organizing maps: A novel method to characterize redshift distributions of source galaxies for weak lensing	method
+vanDaalen2019	1906.00968	van Daalen	2019	Exploring the effects of galaxy formation on matter clustering through a library of simulation power spectra	method
+Hamana2019	1906.06041	Hamana	2019	Cosmological constraints from cosmic shear two-point correlation functions with HSC survey first-year data	results
+Wright2019	1909.09632	Wright	2019	Photometric Redshift Calibration with Self Organising Maps	method
+Asgari2019	1910.05336	Asgari	2019	KiDS+VIKING-450 and DES-Y1 combined: Mitigating baryon feedback uncertainty with COSEBIs	results
+Euclid2019	1910.09273	Euclid Collaboration	2019	Euclid preparation: VII. Forecast validation for Euclid cosmological probes	forecast
+Sheldon2019	1911.02505	Sheldon	2019	Mitigating Shear-dependent Object Detection Biases with Metacalibration	method
+Muir2019	1911.05929	Muir	2019	Blinding multi-probe cosmological experiments	method
+Fortuna2020	2003.02700	Fortuna	2020	The halo model as a versatile tool to predict intrinsic alignments	method
+Joachimi2020	2007.01844	Joachimi	2020	KiDS-1000 Methodology: Modelling and inference for joint weak gravitational lensing and spectroscopic galaxy clustering analysis	method
+Giblin2020	2007.01845	Giblin	2020	KiDS-1000 catalogue: Weak gravitational lensing shear measurements	data
+Busch2020	2007.01846	Busch	2020	Testing KiDS cross-correlation redshifts with simulations	method
+Heymans2020	2007.15632	Heymans	2020	KiDS-1000 Cosmology: Multi-probe weak gravitational lensing and spectroscopic galaxy clustering constraints	results
+Asgari2020	2007.15633	Asgari	2020	KiDS-1000 Cosmology: Cosmic shear constraints and comparison between two point statistics	results
+Hildebrandt2020	2007.15635	Hildebrandt	2020	KiDS-1000 catalogue: Redshift distributions and their calibration	method
+Mead2020	2009.01858	Mead	2020	HMcode-2020: Improved modelling of non-linear cosmological power spectra with baryonic feedback	code
+Euclid2020	2010.11288	Euclid Collaboration	2020	Euclid preparation: IX. EuclidEmulator2 -- Power spectrum emulation with massive neutrinos and self-consistent dark energy perturbations	code
+Gatti2020	2011.03408	Gatti	2020	Dark Energy Survey Year 3 Results: Weak Lensing Shape Catalogue	data
+Jarvis2020	2011.03409	Jarvis	2020	Dark Energy Survey Year 3 Results: Point-Spread Function Modeling	systematics
+Arico2020	2011.15018	Aricò	2020	The BACCO Simulation Project: A baryonification emulator with Neural Networks	code
+Myles2020	2012.08566	Myles	2020	Dark Energy Survey Year 3 Results: Redshift Calibration of the Weak Lensing Source Galaxies	method
+MacCrann2020	2012.08567	MacCrann	2020	DES Y3 results: Blending shear and redshift biases in image simulations	systematics
+Friedrich2020	2012.08568	Friedrich	2020	Dark Energy Survey Year 3 Results: Covariance Modelling and its Impact on Parameter Estimation and Quality of Fit	method
+Gatti2020b	2012.08569	Gatti	2020	Dark Energy Survey Year 3 Results: Clustering Redshifts -- Calibration of the Weak Lensing Source Redshift Distributions with redMaGiC and BOSS/eBOSS	method
+Prat2021	2105.13541	Prat	2021	Dark Energy Survey Year 3 Results: High-precision measurement and modeling of galaxy-galaxy lensing	data
+Sanchez2021	2105.13542	Sánchez	2021	Dark Energy Survey Year 3 Results: Exploiting small-scale information with lensing shear ratios	method
+Amon2021	2105.13543	Amon	2021	Dark Energy Survey Year 3 Results: Cosmology from Cosmic Shear and Robustness to Data Calibration	results
+Secco2021	2105.13544	Secco	2021	Dark Energy Survey Year 3 Results: Cosmology from Cosmic Shear and Robustness to Modeling Uncertainty	results
+Krause2021	2105.13548	Krause	2021	Dark Energy Survey Year 3 Results: Multi-Probe Modeling Strategy and Validation	method
+DES2021	2105.13549	DES Collaboration	2021	Dark Energy Survey Year 3 Results: Cosmological Constraints from Galaxy Clustering and Weak Lensing	results
+Li2021	2107.00136	Li	2021	The three-year shear catalog of the Subaru Hyper Suprime-Cam SSP Survey	data
+Giri2021	2108.08863	Giri	2021	Emulation of baryonic effects on the matter power spectrum and constraints from galaxy cluster data	code
+Leauthaud2021	2111.13805	Leauthaud	2021	Lensing Without Borders. I. A Blind Comparison of the Amplitude of Galaxy-Galaxy Lensing Between Independent Imaging Surveys	systematics
+Nourbakhsh2021	2112.07659	Nourbakhsh	2021	Galaxy blending effects in deep imaging cosmic shear probes of cosmology	systematics
+Amon2022	2202.07440	Amon	2022	Consistent lensing and clustering in a low-$S_8$ Universe with BOSS, DES Year 3, HSC Year 1 and KiDS-1000	results
+Abdalla2022	2203.06142	Abdalla	2022	Cosmology Intertwined: A Review of the Particle Physics, Astrophysics, and Cosmology Associated with the Cosmological Tensions and Anomalies	review
+Chang2022	2203.12440	Chang	2022	Joint analysis of DES Year 3 data and CMB lensing from SPT and Planck II: Cross-correlation measurements and cosmological constraints	results
+Chen2022	2206.08591	Chen	2022	Constraining the Baryonic Feedback with Cosmic Shear Using the DES Year-3 Small-Scale Measurements	results
+Abbott2022	2206.10824	Abbott	2022	Joint analysis of DES Year 3 data and CMB lensing from SPT and Planck III: Combined cosmological constraints	results
+Amon2022b	2206.11794	Amon	2022	A non-linear solution to the $S_8$ tension?	critique
+Newman2022	2206.13633	Newman	2022	Photometric Redshifts for Next-Generation Surveys	review
+DES2022	2207.05766	DES Collaboration	2022	Dark Energy Survey Year 3 Results: Constraints on extensions to $\Lambda$CDM with weak lensing and galaxy clustering	results
+Li2022	2208.10522	Li	2022	Analytical Weak-lensing Shear Responses of Galaxy Properties and Galaxy Detection	method
+ElvinPoole2022	2209.09782	Elvin-Poole	2022	Dark Energy Survey Year 3 results: Magnification modeling and impact on cosmological constraints from galaxy clustering and galaxy-galaxy lensing	systematics
+Li2022b	2210.07163	Li	2022	KiDS-Legacy calibration: unifying shear and redshift calibration with the SKiLLS multi-band image simulations	systematics
+Rau2022	2211.16516	Rau	2022	Weak Lensing Tomographic Redshift Distribution Inference for the Hyper Suprime-Cam Subaru Strategic Program three-year shape catalogue	method
+Samuroff2022	2212.11319	Samuroff	2022	The Dark Energy Survey Year 3 and eBOSS: constraining galaxy intrinsic alignments across luminosity and colour space	systematics
+Sheldon2023	2303.03947	Sheldon	2023	Metadetection Weak Lensing for the Vera C. Rubin Observatory	method
+Arico2023	2303.05537	Aricò	2023	DES Y3 cosmic shear down to small scales: constraints on cosmology and baryons	results
+Dalal2023	2304.00701	Dalal	2023	Hyper Suprime-Cam Year 3 Results: Cosmology from Cosmic Shear Power Spectra	results
+Li2023	2304.00702	Li	2023	Hyper Suprime-Cam Year 3 Results: Cosmology from Cosmic Shear Two-point Correlation Functions	results
+More2023	2304.00703	More	2023	Hyper Suprime-Cam Year 3 Results: Measurements of Clustering of SDSS-BOSS Galaxies, Galaxy-Galaxy Lensing and Cosmic Shear	data
+Miyatake2023	2304.00704	Miyatake	2023	Hyper Suprime-Cam Year 3 Results: Cosmology from Galaxy Clustering and Weak Lensing with HSC and SDSS using the Emulator Based Halo Model	results
+Sugiyama2023	2304.00705	Sugiyama	2023	Hyper Suprime-Cam Year 3 Results: Cosmology from Galaxy Clustering and Weak Lensing with HSC and SDSS using the Minimal Bias Model	results
+Madhavacheril2023	2304.05203	Madhavacheril	2023	The Atacama Cosmology Telescope: DR6 Gravitational Lensing Map and Cosmological Parameters	results
+Salcido2023	2305.09710	Salcido	2023	SP(k) -- A hydrodynamical simulation-based model for the impact of baryon physics on the non-linear matter power spectrum	method
+Preston2023	2305.09827	Preston	2023	A non-linear solution to the $S_8$ tension II: Analysis of DES Year 3 cosmic shear	critique
+DarkEnergySurveyandKiloDegreeSurvey2023	2305.17173	Dark Energy Survey and Kilo-Degree Survey Collaboration	2023	DES Y3 + KiDS-1000: Consistent cosmology combining cosmic shear surveys	results
+Schaye2023	2306.04024	Schaye	2023	The FLAMINGO project: cosmological hydrodynamical simulations for large-scale structure and galaxy cluster surveys	method
+McCarthy2023	2309.07959	McCarthy	2023	The FLAMINGO project: revisiting the $S_8$ tension and the role of baryonic physics	critique
+Lamman2023	2309.08605	Lamman	2023	The IA Guide: A Breakdown of Intrinsic Alignment Formalisms	review
+Bigwood2024	2404.06098	Bigwood	2024	Weak lensing combined with the kinetic Sunyaev Zel'dovich effect: A study of baryonic feedback	results
+Euclid2024	2405.13491	Euclid Collaboration	2024	Euclid. I. Overview of the Euclid mission	data
+Hadzhiyska2024	2407.07152	Hadzhiyska	2024	Evidence for large baryonic feedback at low and intermediate redshifts from kinematic Sunyaev-Zel'dovich observations with ACT and DESI photometric galaxies	results
+Reischke2024	2410.06962	Reischke	2024	KiDS-Legacy: Covariance validation and the unified OneCovariance framework for projected large-scale structure observables	code
+Yamamoto2025	2501.05665	Yamamoto	2025	Dark Energy Survey Year 6 Results: Cell-based Coadds and Metadetection Weak Lensing Shape Catalogue	data
+Anbajagane2025	2501.05683	Anbajagane	2025	Dark Energy Survey Year 6 Results: Synthetic-source Injection Across the Full Survey Using Balrog	systematics
+Bechtol2025	2501.05739	Bechtol	2025	Dark Energy Survey Year 6 Results: Photometric Data Set for Cosmology	data
+Schutt2025	2501.05781	Schutt	2025	Dark Energy Survey Year 6 Results: Point-spread Function Modeling	systematics
+Anbajagane2025b	2502.17674	Anbajagane	2025	The DECADE cosmic shear project I: A new weak lensing shape catalog of 107 million galaxies	data
+Anbajagane2025c	2502.17675	Anbajagane	2025	The DECADE cosmic shear project II: photometric redshift calibration of the source galaxy sample	method
+Anbajagane2025d	2502.17676	Anbajagane	2025	The DECADE cosmic shear project III: validation of analysis pipeline using spatially inhomogeneous data	method
+Anbajagane2025e	2502.17677	Anbajagane	2025	The DECADE cosmic shear project IV: cosmological constraints from 107 million galaxies across 5,400 deg$^2$ of the sky	results
+Louis2025	2503.14452	Louis	2025	The Atacama Cosmology Telescope: DR6 Power Spectra, Likelihoods and $\Lambda$CDM Parameters	results
+Euclid2025	2503.15302	Euclid Collaboration	2025	Euclid Quick Data Release (Q1) -- Data release overview	data
+Wright2025	2503.19439	Wright	2025	The fifth data release of the Kilo Degree Survey: Multi-epoch optical/NIR imaging covering wide and legacy-calibration fields	data
+Wright2025b	2503.19440	Wright	2025	KiDS-Legacy: Redshift distributions and their calibration	method
+Wright2025c	2503.19441	Wright	2025	KiDS-Legacy: Cosmological constraints from cosmic shear with the complete Kilo-Degree Survey	results
+Stolzner2025	2503.19442	Stölzner	2025	KiDS-Legacy: Consistency of cosmic shear measurements and joint cosmological constraints with external probes	results
+Guachalla2025	2503.19870	Guachalla	2025	Backlighting extended gas halos around luminous red galaxies: kinematic Sunyaev-Zel'dovich effect from DESI Y1 x ACT	results
+DiValentino2025	2504.01669	Di Valentino	2025	The CosmoVerse White Paper: Addressing observational tensions in cosmology with systematics and fundamental physics	review
+Pandey2025	2506.07432	Pandey	2025	Constraints on cosmology and baryonic feedback with joint analysis of Dark Energy Survey Year 3 lensing data and ACT DR6 thermal Sunyaev-Zel'dovich effect observations	results
+Camphuis2025	2506.20707	Camphuis	2025	SPT-3G D1: CMB temperature and polarization power spectra and cosmology from 2019 and 2020 observations of the SPT-3G Main field	results
+Heydenreich2025	2506.21677	Heydenreich	2025	Lensing Without Borders: Measurements of galaxy-galaxy lensing and projected galaxy clustering in DESI DR1	data
+Zhang2025	2507.01374	Zhang	2025	Forecasting the Impact of Source Galaxy Photometric Redshift Uncertainties on the LSST $3\times2$pt Analysis	forecast
+Siegel2025	2507.11530	Siegel	2025	Intrinsic alignment demographics for next-generation lensing: Revealing galaxy property trends with DESI Y1 direct measurements	systematics
+Roster2025	2508.02779	Roster	2025	Euclid: Photometric redshift calibration with self-organising maps	forecast
+Heydenreich2025b	2508.05746	Heydenreich	2025	Can dynamic dark energy explain the $S_8$ tension, the `lensing is low' effect, or strong baryon feedback?	critique
+Sugiyama2025	2508.14019	Sugiyama	2025	Cosmology from a joint analysis of second and third order shear statistics with Subaru Hyper Suprime-Cam Year 3 data	results
+Rana2025	2508.21681	Rana	2025	Hyper Suprime-Cam Y3 results: photo-$z$ bias calibration with lensing shear ratios and cosmological constraints from cosmic shear	results
+Anbajagane2025f	2509.03582	Anbajagane	2025	The Dark Energy Camera All Data Everywhere cosmic shear project V: Constraints on cosmology and astrophysics from 270 million galaxies across 13,000 deg$^2$ of the sky	results
+RodriguezMonroy2025	2509.07943	Rodríguez-Monroy	2025	Dark Energy Survey Year 6 Results: improved mitigation of spatially varying observational systematics with masking for the MagLim++ lens sample	systematics
+Broxterman2025	2509.08365	Broxterman	2025	Matter power spectrum reconstruction with KiDS-Legacy: Improved internal $\Lambda$CDM consistency and preference for strong baryonic feedback	results
+Yoon2025	2510.01122	Yoon	2025	KiDS-1000 cosmic shear reanalysis using MetaCalibration	results
+Euclid2025b	2510.09153	Euclid Collaboration	2025	Euclid preparation. XCVI. Cosmology Likelihood for Observables in Euclid (CLOE). 3. Inference and Forecasts	forecast
+Chisari2025	2510.15738	Chisari	2025	A rising tide: Intrinsic alignments since the turn of the millennium	review
+dAssignies2025	2510.23565	d'Assignies	2025	Dark Energy Survey Year 6 Results: Clustering-redshifts and importance sampling of Self-Organised-Maps $n(z)$ realizations for $3\times2$pt samples	method
+Yin2025	2510.23566	Yin	2025	Dark Energy Survey Year 6 Results: Redshift Calibration of the Weak Lensing Source Galaxies	method
+Lange2025	2510.25419	Lange	2025	A Unified Photometric Redshift Calibration for Weak Lensing Surveys using the Dark Energy Spectroscopic Instrument	method
+Xu2025	2510.25596	Xu	2025	Constraining baryonic feedback and cosmology from DES Y3 and Planck PR4 6$\times$2pt data. I. $\Lambda$CDM models	results
+deJanvry2025	2511.18134	de Janvry	2025	Cosmic Shear constraints from HSC Year 3 with clustering calibration of the tomographic redshift distributions from DESI	results
+Bigwood2025	2512.04209	Bigwood	2025	Confronting cosmic shear astrophysical uncertainties: DES Year 3 revisited	critique
+Reischke2025	2512.11041	Reischke	2025	KiDS-Legacy: Constraining dark energy, neutrino mass, and curvature	results
+Porredon2025	2512.15960	Porredon	2025	DESI-DR1 $3 \times 2$-pt analysis: consistent cosmology across weak lensing surveys	results
+Lange2025b	2512.15962	Lange	2025	Cosmological Constraints from Full-Scale Clustering and Galaxy-Galaxy Lensing with DESI DR1	results
+Blanco2025	2512.15964	Blanco	2025	The Power of DESI for Photometric Redshift Calibration: A Case Study with KiDS-1000	systematics
+Cao2026	2601.00438	Cao	2026	Fisher Forecasts for Cosmological Yields from $3\!\times\!2$pt Analysis of the Roman Space Telescope High Latitude Imaging Survey	forecast
+DES2026	2601.14559	DES Collaboration	2026	Dark Energy Survey Year 6 Results: Cosmological Constraints from Galaxy Clustering and Weak Lensing	results
+Legnani2026	2601.14833	Legnani	2026	Dark Energy Survey Year 6 Results: Magnification modeling and its impact on galaxy clustering and galaxy-galaxy lensing cosmology	systematics
+SanchezCid2026	2601.14859	Sanchez-Cid	2026	Dark Energy Survey Year 6 Results: Weak Lensing and Galaxy Clustering Cosmological Analysis Framework	method
+Giannini2026	2601.15175	Giannini	2026	Dark Energy Survey Year 6 Results: Galaxy-galaxy lensing	data
+DES2026b	2602.10065	DES Collaboration	2026	Dark Energy Survey Year 6 Results: Cosmological Constraints from Cosmic Shear	results
+Pantos2026	2602.12238	Pantos	2026	Status of the $S_8$ Tension: A 2026 Review of Probe Discrepancies	review
+Euclid2026	2602.16448	Euclid Collaboration	2026	Euclid preparation. CIV. Impact of galaxy intrinsic alignment modelling choices on Euclid 3x2pt cosmology	forecast
+Robertson2026	2602.21863	Robertson	2026	Impact and interplay of $\Lambda$CDM analysis choices for LSST cosmic shear	forecast
+VeraCRubinObservatory2026	2603.23786	Vera C Rubin Observatory Team	2026	The Vera C. Rubin Observatory Data Preview 1	data
+Chen2026	2603.28761	Chen	2026	Cosmic Shear in Effective Field Theory at Two-Loop Order: Revisiting $S_8$ in Dark Energy Survey Data	critique
+Euclid2026b	2604.00805	Euclid Collaboration	2026	Euclid preparation. Impact of redshift distribution uncertainties on the joint analysis of photometric galaxy clustering and weak gravitational lensing	forecast
+Daley2026	2604.03227	Daley	2026	UNIONS-3500 Weak Lensing: II. B-mode validation for cosmic shear	systematics
+Guerrini2026	2605.13543	Guerrini	2026	UNIONS-3500 Weak Lensing: IV. 2D cosmological constraints in harmonic space	results
+Goh2026	2605.13547	Goh	2026	UNIONS-3500 Weak Lensing: III. 2D Cosmological Constraints in Configuration Space	results
+HervasPeters2026	2605.13549	Hervas-Peters	2026	UNIONS-3500 Weak Lensing: I. A Galaxy Shape Catalogue in the Northern Sky	data
+Linke2026	2606.12389	Linke	2026	KiDS-Legacy: Joint analysis of second- and third-order cosmic shear	results
+Congedo2026	2606.20829	Congedo	2026	Euclid: Quick Data Release (Q1) -- LensMC shear measurement catalogue for cluster lensing science	data
+Campbell2026	2606.23651	Campbell	2026	Revisiting the 'Lensing is Low' Problem with UNIONS	results
+Gu2026	2607.04384	Gu	2026	KiDS-Legacy: The consistency test of the large-scale structure with Bernardeau-Nishimichi-Taruya transform	results
+Giblin2026	2608.07377	Giblin	2026	KiDS-1000: Improved constraints on cosmology, intrinsic alignments and baryonic feedback from clipped cosmic shear	results
+Hebert2026	2608.21688	Hébert	2026	Simulation Tests of PSF Modeling for Cosmic Shear with the Vera C. Rubin Observatory	systematics
+Bucko2026	2609.09144	Bucko	2026	Baryonification IV: Constraining baryonic feedback with X-ray gas fractions	results
+Wayland2026	2609.31774	Wayland	2026	Joint measurements of thermal Sunyaev-Zel'dovich and cosmic infrared background cross-correlations with cosmic shear	results
+Doux2026	2610.03447	Doux	2026	Dark Energy Survey Year 6 Results: fast and interpretable posterior predictive checks for correlated cosmic probes	method

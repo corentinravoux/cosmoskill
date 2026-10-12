@@ -1,0 +1,101 @@
+key	id	first_author	year	title	role
+Lewis2000	astro-ph/9911177	Lewis	1999	Efficient Computation of CMB anisotropies in closed FRW models	code
+Howlett2012	1201.3654	Howlett	2012	CMB power spectrum parameter degeneracies in the era of precision cosmology	systematics
+Lesgourgues2011I	1104.2932	Lesgourgues	2011	The Cosmic Linear Anisotropy Solving System (CLASS) I: Overview	code
+Blas2011	1104.2933	Blas	2011	The Cosmic Linear Anisotropy Solving System (CLASS) II: Approximation schemes	code
+Lesgourgues2011III	1104.2934	Lesgourgues	2011	The Cosmic Linear Anisotropy Solving System (CLASS) III: Comparision with CAMB for LambdaCDM	results
+Lesgourgues2011IV	1104.2935	Lesgourgues	2011	The Cosmic Linear Anisotropy Solving System (CLASS) IV: Efficient implementation of non-cold relics	method
+Hu2013	1312.5742	Hu	2013	Effective Field Theory of Cosmic Acceleration: an implementation in CAMB	code
+Hu2014	1405.3590	Hu	2014	EFTCAMB/EFTCosmoMC: Numerical Notes v3.0	code
+Zumalacarregui2016	1605.06102	Zumalacarregui	2016	hi_class: Horndeski in the Cosmic Linear Anisotropy Solving System	code
+Bellini2019	1909.01828	Bellini	2019	hi_class: Background Evolution, Initial Conditions and Approximation Schemes	code
+Zhao2008	0809.3791	Zhao	2008	Searching for modified growth patterns with tomographic surveys	foundation
+Hojjati2011	1106.4543	Hojjati	2011	Testing gravity with CAMB and CosmoMC	code
+Zucca2019	1901.05956	Zucca	2019	MGCAMB with massive neutrinos and dynamical dark energy	code
+Wang2023MG	2305.05667	Wang	2023	New MGCAMB tests of gravity with CosmoMC and Cobaya	code
+Bellini2017	1709.09135	Bellini	2017	A comparison of Einstein-Boltzmann solvers for testing General Relativity	results
+Hahn2023	2311.03291	Hahn	2023	DISCO-DJ I: a differentiable Einstein-Boltzmann solver for cosmology	code
+Mead2020	2009.01858	Mead	2020	HMcode-2020: Improved modelling of non-linear cosmological power spectra with baryonic feedback	method
+Takahashi2012	1208.2701	Takahashi	2012	Revising the Halofit Model for the Nonlinear Matter Power Spectrum	method
+Chisari2018	1812.05995	Chisari	2018	Core Cosmology Library: Precision Cosmological Predictions for LSST	code
+Leonard2022	2212.04291	Leonard	2022	The N5K Challenge: Non-Limber Integration for LSST Cosmology	results
+Astropy2013	1307.6212	Astropy Collaboration	2013	Astropy: A Community Python Package for Astronomy	code
+Astropy2022	2206.14220	Astropy Collaboration	2022	The Astropy Project: Sustaining and Growing a Community-oriented Open-source Project and the Latest Major Release (v5.0) of the Core Package	code
+Campagne2023	2302.05163	Campagne	2023	JAX-COSMO: An End-to-End Differentiable and GPU Accelerated Cosmology Library	code
+Torrado2020	2005.05290	Torrado	2020	Cobaya: Code for Bayesian Analysis of hierarchical physical models	code
+Audren2012	1210.7183	Audren	2012	Conservative Constraints on Early Cosmology: an illustration of the Monte Python cosmological parameter inference code	code
+Brinckmann2018	1804.07261	Brinckmann	2018	MontePython 3: boosted MCMC sampler and other features	code
+Zuntz2014	1409.3409	Zuntz	2014	CosmoSIS: modular cosmological parameter estimation	code
+Lewis2002	astro-ph/0205436	Lewis	2002	Cosmological parameters from CMB and other data: a Monte-Carlo approach	code
+Lewis2013	1304.4473	Lewis	2013	Efficient sampling of fast and slow cosmological parameters	method
+ForemanMackey2012	1202.3665	Foreman-Mackey	2012	emcee: The MCMC Hammer	code
+Speagle2019	1904.02180	Speagle	2019	dynesty: A Dynamic Nested Sampling Package for Estimating Bayesian Posteriors and Evidences	code
+Handley2015a	1502.01856	Handley	2015	PolyChord: nested sampling for cosmology	code
+Handley2015b	1506.00171	Handley	2015	PolyChord: next-generation nested sampling	code
+Feroz2008	0809.3437	Feroz	2008	MultiNest: an efficient and robust Bayesian inference tool for cosmology and particle physics	code
+Lange2023	2306.16923	Lange	2023	NAUTILUS: boosting Bayesian importance nested sampling with deep learning	code
+Karamanis2022	2207.05652	Karamanis	2022	Accelerating astronomical and cosmological inference with Preconditioned Monte Carlo	code
+Hoffman2011	1111.4246	Hoffman	2011	The No-U-Turn Sampler: Adaptively Setting Path Lengths in Hamiltonian Monte Carlo	method
+Phan2019	1912.11554	Phan	2019	Composable Effects for Flexible and Accelerated Probabilistic Programming in NumPyro	code
+Cabezas2024	2402.10797	Cabezas	2024	BlackJAX: Composable Bayesian inference in JAX	code
+Lewis2019	1910.13970	Lewis	2019	GetDist: a Python package for analysing Monte Carlo samples	code
+Lemos2022	2202.08233	Lemos	2022	Robust sampling for weak lensing and clustering analyses with the Dark Energy Survey	systematics
+Chen2020a	2005.00523	Chen	2020	Consistent Modeling of Velocity Statistics and Redshift-Space Distortions in One-Loop Perturbation Theory	code
+Chen2020b	2012.04636	Chen	2020	Redshift-Space Distortions in Lagrangian Perturbation Theory	code
+Chudaykin2020	2004.10607	Chudaykin	2020	Non-linear perturbation theory extension of the Boltzmann code CLASS	code
+DAmico2020	2003.07956	D'Amico	2020	Limits on $w$CDM from the EFTofLSS with the PyBird code	code
+Noriega2022	2208.02791	Noriega	2022	Fast computation of non-linear power spectrum in cosmologies with massive neutrinos	code
+McEwen2016	1603.04826	McEwen	2016	FAST-PT: a novel algorithm to calculate convolution integrals in cosmological perturbation theory	code
+Fang2016	1609.05978	Fang	2016	FAST-PT II: an algorithm to calculate convolution integrals of general tensor quantities in cosmological perturbation theory	code
+Maus2024cmp	2404.07272	Maus	2024	A comparison of effective field theory models of redshift space galaxy power spectra for DESI 2024 and future surveys	results
+Maus2024velo	2404.07312	Maus	2024	An analysis of parameter compression and full-modeling techniques with Velocileptors for DESI 2024 and beyond	results
+Lai2024	2404.07283	Lai	2024	A comparison between Shapefit compression and Full-Modelling method with PyBird for DESI 2024 and beyond	results
+Noriega2024	2404.07269	Noriega	2024	Comparing Compressed and Full-modeling Analyses with FOLPS: Implications for DESI 2024 and beyond	results
+RamirezSolano2024	2404.07268	Ramirez-Solano	2024	Full Modeling and Parameter Compression Methods in configuration space for DESI 2024 and beyond	results
+Bonici2025	2501.04639	Bonici	2025	Effort: a fast and differentiable emulator for the Effective Field Theory of the Large Scale Structure of the Universe	code
+Hand2017	1712.05834	Hand	2017	nbodykit: an open-source, massively parallel toolkit for large-scale structure	code
+Jarvis2003	astro-ph/0307393	Jarvis	2003	The Skewness of the Aperture Mass Statistic	code
+Alonso2018	1809.09603	Alonso	2018	A unified pseudo-$C_\ell$ framework	code
+Sinha2019	1911.03545	Sinha	2019	Corrfunc --- A Suite of Blazing Fast Correlation Functions on the CPU	code
+Wang2023Tri	2304.03643	Wang	2023	Triumvirate: A Python/C++ package for three-point clustering measurements	code
+duMasdesBourboux2020	2007.08995	du Mas des Bourboux	2020	The Completed SDSS-IV extended Baryon Oscillation Spectroscopic Survey: Baryon acoustic oscillations with Lyman-$α$ forests	results
+Pedersen2020	2011.15127	Pedersen	2020	An emulator for the Lyman-$α$ forest in beyond-$Λ$CDM cosmologies	code
+CabayolGarcia2023	2305.19064	Cabayol-Garcia	2023	A neural network emulator for the Lyman-$α$ 1D flux power spectrum	code
+Gorski2004	astro-ph/0409513	Gorski	2004	HEALPix -- a Framework for High Resolution Discretization, and Fast Analysis of Data Distributed on the Sphere	code
+Petri2016	1606.01903	Petri	2016	Mocking the Weak Lensing universe: the LensTools python computing package	code
+Ravoux2025	2501.16852	Ravoux	2025	Generalized framework for likelihood-based field-level inference of growth rate from velocity and density fields	code
+Jasche2012	1203.3639	Jasche	2012	Bayesian physical reconstruction of initial conditions from large scale structure surveys	code
+Jasche2018	1806.11117	Jasche	2018	Physical Bayesian modelling of the non-linear matter distribution: new insights into the Nearby Universe	code
+Li2022	2211.09958	Li	2022	pmwd: A Differentiable Cosmological Particle-Mesh $N$-body Library	code
+Modi2020	2010.11847	Modi	2020	FlowPM: Distributed TensorFlow Implementation of the FastPM Cosmological N-body Solver	code
+Balkenhol2024	2401.13433	Balkenhol	2024	candl: Cosmic Microwave Background Analysis with a Differentiable Likelihood	code
+SpurioMancini2021	2106.03846	Spurio Mancini	2021	COSMOPOWER: emulating cosmological power spectra for accelerated Bayesian inference from next-generation surveys	code
+Piras2023	2305.06347	Piras	2023	CosmoPower-JAX: high-dimensional Bayesian inference with differentiable cosmological emulators	code
+Bonici2023	2307.14339	Bonici	2023	Capse.jl: efficient and auto-differentiable CMB power spectra emulation	code
+Lewis2026	2607.14854	Lewis	2026	CAMB v2: cosmological power spectra for high-precision surveys	code
+Ye2026	2603.01662	Ye	2026	$\mathcal{H}$-EFTCAMB: A Cobaya-Integrated, Python-Wrapped Extension of EFTCAMB for Covariant Horndeski Gravity	code
+List2025	2510.05206	List	2025	DISCO-DJ II: a differentiable particle-mesh code for cosmology	code
+Bonici2026	2605.23839	Bonici	2026	cloelib: A Flexible Python Library for Computing Cosmological Observables in the Euclid Era	code
+Euclid2025CLOE	2510.09141	Euclid Collaboration	2025	Euclid preparation XCVII. Cosmology Likelihood for Observables in Euclid (CLOE). 4: Validation and performance	results
+Carreres2023	2303.01198	Carreres	2023	Growth-rate measurement with type-Ia supernovae using ZTF survey simulations	method
+Walther2024	2412.05372	Walther	2024	Emulating the Lyman-Alpha forest 1D power spectrum from cosmological simulations: New models and constraints from the eBOSS measurement	code
+ChavesMontero2024	2409.05682	Chaves-Montero	2024	ForestFlow: predicting the Lyman-$α$ forest clustering from linear to nonlinear scales	code
+Reeves2025	2507.20990	Reeves	2025	PyBird-JAX: Accelerated inference in large-scale structure with model-independent emulation of one-loop galaxy power spectra	code
+Kobayashi2026	2610.08023	Kobayashi	2026	Fast and accurate differentiable code of the galaxy power spectrum based on Eulerian and Lagrangian one-loop perturbation theories	code
+Harder2026	2610.03466	Harder	2026	A novel, fast, and accurate code for cosmological loop calculations	code
+Lovick2025	2509.13307	Lovick	2025	High-Dimensional Bayesian Model Comparison in Cosmology with GPU-accelerated Nested Sampling and Neural Emulators	method
+Nygaard2026	2606.04895	Nygaard	2026	Posterior sampling in the Age of Emulators	results
+Linde2024	2402.09778	Linde	2024	CLASS-OneLoop: Accurate and Unbiased Inference from Spectroscopic Galaxy Surveys	code
+Bolliet2023csz	2310.18482	Bolliet	2023	class_sz I: Overview	code
+Sakr2021	2112.14175	Sakr	2021	Cosmological Constraints on sub-horizon scales modified gravity theories with MGCLASS II	code
+Fang2008	0808.3125	Fang	2008	Crossing the Phantom Divide with Parameterized Post-Friedmann Dark Energy	method
+Lee2020	2007.14114	Lee	2020	HYREC-2: a highly accurate sub-millisecond recombination code	code
+Bennett2020	2012.02726	Bennett	2020	Towards a precision calculation of $N_{\rm eff}$ in the Standard Model II: Neutrino decoupling in the presence of flavour oscillations and finite-temperature QED	foundation
+Casas2023	2303.09451	Casas	2023	Euclid: Validation of the MontePython forecasting tools	results
+Bolliet2023emu	2303.01591	Bolliet	2023	High-accuracy emulators for observables in $Λ$CDM, $N_\mathrm{eff}$, $Σm_ν$, and $w$ cosmologies	code
+Jense2024	2405.07903	Jense	2024	A complete framework for cosmological emulation and inference with CosmoPower	code
+Sletmoen2026	2608.24682	Sletmoen	2026	Chebyshev interpolation in Einstein-Boltzmann codes	method
+Cuceu2024	2404.03004	Cuceu	2024	Validation of the DESI 2024 Ly$α$ forest BAO analysis using synthetic datasets	results
+Cuceu2022AP	2209.12931	Cuceu	2022	The Alcock-Paczyński effect from Lyman-$α$ forest correlations: Analysis validation with synthetic data	method
+Cuceu2025FS	2509.15308	Cuceu	2025	DESI DR1 Ly$α$ forest: 3D full-shape analysis and cosmological constraints	results
+Nishimichi2020	2003.08277	Nishimichi	2020	Blinded challenge for precision cosmology with large-scale structure: results from effective field theory for the redshift-space galaxy power spectrum	results

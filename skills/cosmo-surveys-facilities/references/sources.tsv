@@ -1,0 +1,103 @@
+key	id	first_author	year	title	role
+York2000	astro-ph/0006396	York	2000	The Sloan Digital Sky Survey: Technical Summary	data
+Dawson2013	1208.0022	Dawson	2013	The Baryon Oscillation Spectroscopic Survey of SDSS-III	data
+Dawson2016	1508.04473	Dawson	2016	The SDSS-IV extended Baryon Oscillation Spectroscopic Survey: Overview and Early Data	data
+Blanton2017	1703.00052	Blanton	2017	Sloan Digital Sky Survey IV: Mapping the Milky Way, Nearby Galaxies, and the Distant Universe	data
+Kollmeier2025	2507.06989	Kollmeier	2025	Sloan Digital Sky Survey-V: Pioneering Panoptic Spectroscopy	data
+SDSSDR17	2112.02026	Abdurro'uf	2021	The Seventeenth Data Release of the Sloan Digital Sky Surveys: Complete Release of MaNGA, MaStar and APOGEE-2 Data	data
+SDSSDR20	2607.26149	SDSS Collaboration	2026	The Twentieth Data Release of the Sloan Digital Sky Survey: First All-Sky BOSS Spectra, eROSITA-SDSS-V Mapper Coordinated Observations, and a Preview of the Local Volume Mapper	data
+DESI2022Instr	2205.10939	Abareshi	2022	Overview of the Instrumentation for the Dark Energy Spectroscopic Instrument	data
+DESI2023SV	2306.06307	DESI Collaboration	2023	Validation of the Scientific Program for the Dark Energy Spectroscopic Instrument	data
+Schlafly2023	2306.06309	Schlafly	2023	Survey Operations for the Dark Energy Spectroscopic Instrument	method
+DESI2024BAO	2404.03002	DESI Collaboration	2024	DESI 2024 VI: Cosmological Constraints from the Measurements of Baryon Acoustic Oscillations	results
+DESI2023EDR	2306.06308	DESI Collaboration	2023	The Early Data Release of the Dark Energy Spectroscopic Instrument	data
+DESI2025DR1	2503.14745	DESI Collaboration	2025	Data Release 1 of the Dark Energy Spectroscopic Instrument	data
+Schlegel2022	2209.03585	Schlegel	2022	A Spectroscopic Road Map for Cosmic Frontier: DESI, DESI-II, Stage-5	forecast
+Ebina2026	2606.24852	Ebina	2026	The 3D clustering of Lyman Alpha Emitters measured with DESI	results
+Tanaka2026	2606.14012	Tanaka	2026	Prime Focus Spectrograph on the Subaru Telescope: Overview of Science Operations	data
+Tamura2016	1608.01075	Tamura	2016	Prime Focus Spectrograph (PFS) for the Subaru Telescope: Overview, recent progress, and future perspectives	data
+Takada2014	1206.0737	Takada	2014	Extragalactic Science, Cosmology and Galactic Archaeology with the Subaru Prime Focus Spectrograph (PFS)	forecast
+deJong2019	1903.02464	de Jong	2019	4MOST: Project overview and information for the First Call for Proposals	data
+Bandi2025	2510.02449	Bandi	2025	4MOST Cosmology Redshift Survey (CRS): Clustering Properties of CRS Bright Galaxy and Luminous Red Galaxy Target Catalogues	data
+Jin2023	2212.03981	Jin	2023	The wide-field, multiplexed, spectroscopic facility WEAVE: Survey design, overview, and simulated implementation	data
+Cirasuolo2020	2009.00628	Cirasuolo	2020	MOONS: The New Multi-Object Spectrograph for the VLT	data
+Gonzalez2020	2009.00635	Gonzalez	2020	MOONS Surveys of the Milky Way and its Satellites	data
+EuclidNISP2024	2405.13493	Euclid Collaboration	2024	Euclid. III. The NISP Instrument	data
+Scaramella2022	2108.01201	Scaramella	2022	Euclid preparation: I. The Euclid Wide Survey	data
+Euclid2025Overview	2405.13491	Euclid Collaboration	2025	Euclid. I. Overview of the Euclid mission	data
+Akeson2019	1902.05569	Akeson	2019	The Wide Field Infrared Survey Telescope: 100 Hubbles for the 2020s	data
+ROTAC2025	2505.10574	Roman Observations Time Allocation Committee	2025	Roman Observations Time Allocation Committee: Final Report and Recommendations	data
+Wang2022	2110.01829	Wang	2022	The High Latitude Spectroscopic Survey on the Nancy Grace Roman Space Telescope	forecast
+Bock2025	2511.02985	Bock	2025	The SPHEREx Satellite Mission	data
+Cai2026	2605.10102	Cai	2026	From Large Telescopes to the MUltiplexed Survey Telescope (MUST)	review
+Poppett2026	2608.07927	Poppett	2026	Spec-S5: A Next-Generation All-Sky Spectroscopic Facility Enabling Large-Scale Surveys for Cosmology and Astrophysics	data
+Mainieri2024	2403.05398	Mainieri	2024	The Wide-field Spectroscopic Telescope (WST) Science White Paper	forecast
+Lee2026	2607.01150	Lee	2026	WST, the wide-field spectroscopic telescope: progress on the design of the instruments	data
+Hill2018	1810.08695	Hill	2018	The Maunakea Spectroscopic Explorer Book 2018	data
+Padmanabhan2008	astro-ph/0703454	Padmanabhan	2008	An Improved Photometric Calibration of the Sloan Digital Sky Survey Imaging Data	method
+Chambers2016	1612.05560	Chambers	2016	The Pan-STARRS1 Surveys	data
+Flaugher2015	1504.02900	Flaugher	2015	The Dark Energy Camera	data
+DESDR2	2101.05765	DES Collaboration	2021	The Dark Energy Survey Data Release 2	data
+Dey2019	1804.08657	Dey	2019	Overview of the DESI Legacy Imaging Surveys	data
+Wright2025DR5	2503.19439	Wright	2025	The fifth data release of the Kilo Degree Survey: Multi-epoch optical/NIR imaging covering wide and legacy-calibration fields	data
+Aihara2018	1704.05858	Aihara	2018	The Hyper Suprime-Cam SSP Survey: Overview and Survey Design	data
+Aihara2022	2108.13045	Aihara	2022	Third Data Release of the Hyper Suprime-Cam Subaru Strategic Program	data
+Gwyn2025	2503.13783	Gwyn	2025	UNIONS: The Ultraviolet Near-Infrared Optical Northern Survey	data
+Anbajagane2025f	2509.03582	Anbajagane	2025	The Dark Energy Camera All Data Everywhere cosmic shear project V: Constraints on cosmology and astrophysics from 270 million galaxies across 13,000 deg$^2$ of the sky	results
+Ivezic2008	0805.2366	Ivezić	2008	LSST: from Science Drivers to Reference Design and Anticipated Data Products	data
+VeraCRubinObservatory2026	2603.23786	Vera C Rubin Observatory Team	2026	The Vera C. Rubin Observatory Data Preview 1	data
+EuclidVIS2024	2405.13492	Euclid Collaboration	2024	Euclid. II. The VIS Instrument	data
+CSST2025	2507.04618	CSST Collaboration	2025	Introduction to the Chinese Space Station Survey Telescope (CSST)	review
+Planck2018I	1807.06205	Planck Collaboration	2018	Planck 2018 results. I. Overview and the cosmological legacy of Planck	data
+Naess2025	2503.14451	Naess	2025	The Atacama Cosmology Telescope: DR6 Maps	data
+Camphuis2025	2506.20707	Camphuis	2025	SPT-3G D1: CMB temperature and polarization power spectra and cosmology from 2019 and 2020 observations of the SPT-3G Main field	results
+Natoli2026	2608.20236	Natoli	2026	SPT-3G+: A Cosmic Microwave Background Experiment for the South Pole Telescope	forecast
+BK2021	2110.00483	Keck Collaboration	2021	BICEP / Keck XIII: Improved Constraints on Primordial Gravitational Waves using Planck, WMAP, and BICEP/Keck Observations through the 2018 Observing Season	results
+SO2018	1808.07445	The Simons Observatory Collaboration	2018	The Simons Observatory: Science goals and forecasts	forecast
+Harrington2026	2609.26938	Harrington	2026	The Simons Observatory: Commissioning of the Mid-Frequency Small Aperture Telescopes	data
+SO2025	2503.00636	The Simons Observatory Collaboration	2025	The Simons Observatory: Science Goals and Forecasts for the Enhanced Large Aperture Telescope	forecast
+LiteBIRD2026	2607.25285	LiteBIRD Collaboration	2026	LiteBIRD Mission Overview after Mission Reformation	forecast
+Bellm2019	1902.01932	Bellm	2019	The Zwicky Transient Facility: System Overview, Performance, and First Results	data
+Tonry2018	1802.00879	Tonry	2018	ATLAS: A High-Cadence All-Sky Survey System	data
+Jones2021	2010.09724	Jones	2021	The Young Supernova Experiment: Survey Goals, Overview, and Operations	data
+Lochner2022	2104.05676	Lochner	2022	The Impact of Observing Strategy on Cosmological Constraints with LSST	method
+CHIME2022	2201.07869	The CHIME Collaboration	2022	An Overview of CHIME, the Canadian Hydrogen Intensity Mapping Experiment	data
+CHIME2022Detection	2202.01242	CHIME Collaboration	2022	Detection of Cosmological 21 cm Emission with the Canadian Hydrogen Intensity Mapping Experiment	results
+CHORD2026	2607.09374	The CHORD Collaboration	2026	Overview of the Canadian Hydrogen Observatory and Radio Transient Detector (CHORD) Project	data
+Santos2017	1709.06099	Santos	2017	MeerKLASS: MeerKAT Large Area Synoptic Survey	forecast
+Cunnington2026	2606.25955	Cunnington	2026	Single-dish HI Intensity Mapping with the SKAO: Precursor Progress with MeerKAT's Large Area Synoptic Survey (MeerKLASS)	review
+Koribalski2020	2002.07311	Koribalski	2020	WALLABY -- An SKA Pathfinder HI Survey	data
+SKA2018	1811.02743	Square Kilometre Array Cosmology Science Working Group	2018	Cosmology with Phase 1 of the Square Kilometre Array; Red Book 2018: Technical specifications and performance forecasts	forecast
+Crichton2022	2109.13755	Crichton	2022	The Hydrogen Intensity and Real-time Analysis eXperiment: 256-Element Array Status and Overview	data
+Studer2026	2607.26972	Studer	2026	Dish Assembly Precision for HIRAX	systematics
+Hallinan2019	1907.07648	Hallinan	2019	The DSA-2000 -- A Radio Survey Camera	forecast
+Predehl2021	2010.03477	Predehl	2021	The eROSITA X-ray telescope on SRG	data
+Merloni2024	2401.17274	Merloni	2024	The SRG/eROSITA all-sky survey: First X-ray catalogues and data release of the western Galactic hemisphere	data
+RamosCeja2026	2607.27772	Ramos-Ceja	2026	The SRG/eROSITA All-Sky Survey DR2: Cumulative X-ray catalogues from the first three surveys and multi-wavelength counterparts in the western Galactic hemisphere	data
+GWTC4	2508.18082	The LIGO Scientific Collaboration	2025	GWTC-4.0: Updating the Gravitational-Wave Transient Catalog with Observations from the First Part of the Fourth LIGO-Virgo-KAGRA Observing Run	data
+GWTC5Pop	2605.27226	The LIGO Scientific Collaboration	2026	GWTC-5.0: Population Properties of Merging Compact Binaries	results
+ET2025	2503.12263	Abac	2025	The Science of the Einstein Telescope	forecast
+Datrier2025	2509.05430	Datrier	2025	Site Evaluation and Cost Estimation for Cosmic Explorer	method
+Colpi2024	2402.07571	Colpi	2024	LISA Definition Study Report	data
+Rigault2025	2409.04346	Rigault	2025	ZTF SN Ia DR2: Overview	data
+Bulbul2024	2402.08452	Bulbul	2024	The SRG/eROSITA All-Sky Survey: The first catalog of galaxy clusters and groups in the Western Galactic Hemisphere	data
+Winkler2026	2606.27882	Winkler	2026	On-sky Fibre-Target-Alignment of the 4MOST instrument: calibration and performance	method
+Frinchaboy2025	2503.15553	Frinchaboy	2025	The Future of Stellar Populations with the Maunakea Spectroscopic Explorer (MSE)	data
+DETF2006	astro-ph/0609591	Albrecht	2006	Report of the Dark Energy Task Force	foundation
+FKP1994	astro-ph/9304022	Feldman	1994	Power Spectrum Analysis of Three-Dimensional Redshift Surveys	foundation
+SeoEisenstein2007	astro-ph/0701079	Seo	2007	Improved forecasts for the baryon acoustic oscillations and cosmological distance scale	forecast
+FontRibera2014	1308.4164	Font-Ribera	2014	DESI and other dark energy experiments in the era of neutrino mass measurements	forecast
+Chang2013	1305.0793	Chang	2013	The Effective Number Density of Galaxies for Weak Lensing Measurements in the LSST Project	method
+BianchiPercival2017	1703.02070	Bianchi	2017	Unbiased clustering estimation in the presence of missing observations	method
+Bianchi2024	2411.12025	Bianchi	2024	Characterization of DESI fiber assignment incompleteness effect on 2-point clustering and mitigation methods for DR1 analysis	systematics
+Lasker2024	2404.03006	Lasker	2024	Production of Alternate Realizations of DESI Fiber Assignment for Unbiased Clustering Measurement in Data and Simulations	method
+Smith2019	1809.07355	Smith	2019	Correcting for Fibre Assignment Incompleteness in the DESI Bright Galaxy Survey	systematics
+Burke2018	1706.01542	Burke	2018	Forward Global Photometric Calibration of the Dark Energy Survey	method
+Knox1995	astro-ph/9504054	Knox	1995	Determination of Inflationary Observables by Cosmic Microwave Background Anisotropy Experiments	foundation
+Shaw2015	1401.2095	Shaw	2015	Coaxing Cosmic 21cm Fluctuations from the Polarized Sky using m-mode Analysis	method
+Ross2017	1607.03145	Ross	2017	The clustering of galaxies in the completed SDSS-III Baryon Oscillation Spectroscopic Survey: Observational systematics and baryon acoustic oscillations in the correlation function	systematics
+Lacroix2025	2509.04073	Lacroix	2025	ZTF SNe Ia DR2: Towards cosmology-grade ZTF supernova light curves using scene modeling photometry	systematics
+Euclid2025b	2510.09153	Euclid Collaboration	2025	Euclid preparation. XCVI. Cosmology Likelihood for Observables in Euclid (CLOE). 3. Inference and Forecasts	forecast
+DESI2025BAO	2503.14738	DESI Collaboration	2025	DESI DR2 Results II: Measurements of Baryon Acoustic Oscillations and Cosmological Constraints	results
+CHIME2025	2511.19620	CHIME Collaboration	2025	Detection of the Cosmological 21 cm Signal in Auto-correlation at z ~ 1 with the Canadian Hydrogen Intensity Mapping Experiment	results
+LVK2026GWTC5cosmo	2605.27227	LIGO Scientific Collaboration	2026	GWTC-5.0: Constraints on the Cosmic Expansion Rate and Modified Gravitational-wave Propagation	results

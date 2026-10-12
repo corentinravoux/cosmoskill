@@ -1,0 +1,101 @@
+key	id	first_author	year	title	role
+Hartlap2007	astro-ph/0608064	Hartlap	2006	Why your model parameter confidences might be too optimistic -- unbiased estimation of the inverse covariance matrix	foundation
+Taylor2013	1212.4359	Taylor	2012	Putting the Precision in Precision Cosmology: How accurate should your data covariance matrix be?	foundation
+Dodelson2013	1304.2593	Dodelson	2013	The Effect of Covariance Estimator Error on Cosmological Parameter Constraints	foundation
+Percival2014	1312.4841	Percival	2013	The Clustering of Galaxies in the SDSS-III Baryon Oscillation Spectroscopic Survey: Including covariance matrix errors	method
+Sellentin2016	1511.05969	Sellentin	2015	Parameter inference with estimated covariance matrices	method
+Percival2022	2108.10402	Percival	2021	Matching Bayesian and frequentist coverage probabilities when using an approximate data covariance matrix	method
+Norberg2009	0810.1885	Norberg	2008	Statistical Analysis of Galaxy Surveys - I. Robust error estimation for 2-point clustering statistics	systematics
+Friedrich2016	1508.00895	Friedrich	2015	Performance of internal Covariance Estimators for Cosmic Shear Correlation Functions	systematics
+Mohammad2022	2109.07071	Mohammad	2021	Creating Jackknife and Bootstrap estimates of the covariance matrix for the two-point correlation function	method
+Takada2013	1302.6994	Takada	2013	Power Spectrum Super-Sample Covariance	foundation
+Philcox2019RascalC	1904.11070	Philcox	2019	RascalC: A Jackknife Approach to Estimating Single and Multi-Tracer Galaxy Covariance Matrices	code
+ForeroSanchez2024	2411.12027	Forero-Sánchez	2024	Analytical and EZmock covariance validation for the DESI 2024 results	systematics
+Friedrich2021DESY3	2012.08568	Friedrich	2020	Dark Energy Survey Year 3 Results: Covariance Modelling and its Impact on Parameter Estimation and Quality of Fit	systematics
+Joachimi2021	2007.01844	Joachimi	2020	KiDS-1000 Methodology: Modelling and inference for joint weak gravitational lensing and spectroscopic galaxy clustering analysis	method
+Pope2008	0711.2509	Pope	2007	Shrinkage Estimation of the Power Spectrum Covariance Matrix	method
+Farina2026	2604.13851	Farina	2026	Denoising clustering covariance matrices with Rotational Invariant Estimators	method
+Nagura2026	2605.16186	Nagura	2026	Analytical method for computing the covariance matrix of cosmic shear two-point correlation function	method
+Lindholm2026	2603.10735	Lindholm	2026	Euclid: The linear-construction covariance and cosmology	method
+Hamimeche2008	0801.0554	Hamimeche	2008	Likelihood Analysis of CMB Temperature and Polarization Power Spectra	foundation
+Carron2013	1204.4724	Carron	2012	On the assumption of Gaussianity for cosmological two-point statistics and parameter dependent covariance matrices	foundation
+Eifler2009	0810.4254	Eifler	2008	Dependence of cosmic shear covariances on cosmology - Impact on parameter estimation	systematics
+Kodwani2019	1811.11584	Kodwani	2018	The effect on cosmological parameter estimation of a parameter dependent covariance matrix	systematics
+Sellentin2018	1707.04488	Sellentin	2017	On the insufficiency of arbitrarily precise covariance matrices: non-Gaussian weak lensing likelihoods	systematics
+Lin2020	1905.03779	Lin	2019	Non-Gaussianity in the Weak Lensing Correlation Function Likelihood -- Implications for Cosmological Parameter Biases	systematics
+Upham2021	2012.06267	Upham	2020	Sufficiency of a Gaussian power spectrum likelihood for accurate cosmology from upcoming weak lensing surveys	systematics
+Hahn2019	1803.06348	Hahn	2018	Likelihood Non-Gaussianity in Large-Scale Structure Analyses	systematics
+Hadzhiyska2023	2301.11895	Hadzhiyska	2023	Cosmology with 6 parameters in the Stage-IV era: efficient marginalisation over nuisance parameters	method
+Simon2023	2208.05929	Simon	2022	Consistency of effective field theory analyses of the BOSS power spectrum	systematics
+Carrilho2023	2207.14784	Carrilho	2022	Cosmology with the EFTofLSS and BOSS: dark energy constraints and a note on priors	results
+Morawetz2025	2508.11811	Morawetz	2025	Frequentist Cosmological Constraints from Full-Shape Clustering Measurements in DESI DR1	results
+Pezzotta2026	2610.08751	Pezzotta	2026	Mitigating prior-volume effects in galaxy clustering by adopting Mpc over Mpc/h units	method
+Herold2022	2112.12140	Herold	2021	New constraint on Early Dark Energy from Planck and BOSS data using the profile likelihood	results
+Straight2026	2603.25731	Straight	2026	CMB constraints on dark matter-proton scattering: investigating prior-volume effects using profile likelihoods	results
+DESKiDS2023	2305.17173	Dark Energy Survey	2023	DES Y3 + KiDS-1000: Consistent cosmology combining cosmic shear surveys	results
+GomezValent2022	2203.16285	Gómez-Valent	2022	A fast test to assess the impact of marginalization in Monte Carlo analyses, and its application to cosmology	method
+Zhang2024HOD	2409.12937	Zhang	2024	HOD-informed prior for EFT-based full-shape analyses of LSS	method
+Ivanov2024SBP	2402.13310	Ivanov	2024	Full-shape analysis with simulation-based priors: constraints on single field inflation from BOSS	method
+Tsedrik2025	2509.09562	Tsedrik	2025	The simple way to measure evolving dark energy without prior-volume effects	method
+Bonici2026	2607.02498	Bonici	2026	Alleviating prior dependencies for DESI DR1 clustering fits through reparameterization	method
+Herold2024	2408.07700	Herold	2024	Profile Likelihoods in Cosmology: When, Why and How illustrated with $\Lambda$CDM, Massive Neutrinos and Dark Energy	review
+FeldmanCousins1998	physics/9711021	Feldman	1997	A Unified Approach to the Classical Statistical Analysis of Small Signals	foundation
+Barua2025	2508.10633	Barua	2025	On frequentist confidence intervals in a non-Gaussian regime	method
+PlanckIntXVI	1311.1657	Planck Collaboration	2013	Planck intermediate results. XVI. Profile likelihoods for cosmological parameters	results
+Herold2023	2210.16296	Herold	2022	Resolving the Hubble tension with Early Dark Energy	results
+Campeti2022	2205.05617	Campeti	2022	New constraint on the tensor-to-scalar ratio from the $Planck$ and BICEP/Keck Array data using the profile likelihood	results
+Holm2023EFT	2309.04468	Holm	2023	Bayesian and frequentist investigation of prior effects in EFTofLSS analyses of full-shape BOSS and eBOSS data	results
+NaredoTuero2024	2407.13831	Naredo-Tuero	2024	Living at the Edge: A Critical Look at the Cosmological Neutrino Mass Bound	critique
+Elbers2025	2503.14744	Elbers	2025	Constraints on Neutrino Physics from DESI DR2 BAO and DR1 Full Shape	results
+Holm2023PROSPECT	2312.02972	Holm	2023	PROSPECT: A profile likelihood code for frequentist cosmological parameter inference	code
+Karwal2024	2401.14225	Karwal	2024	Procoli: Profiles of cosmological likelihoods	code
+Trotta2008	0803.4089	Trotta	2008	Bayes in the sky: Bayesian inference and model selection in cosmology	review
+Efstathiou2008	0802.3185	Efstathiou	2008	Limitations of Bayesian Evidence Applied to Cosmology	critique
+DESI2025BAO	2503.14738	DESI Collaboration	2025	DESI DR2 Results II: Measurements of Baryon Acoustic Oscillations and Cosmological Constraints	results
+Lodha2025	2503.14743	Lodha	2025	Extended Dark Energy analysis using DESI DR2 BAO measurements	results
+Ong2025	2511.10631	Ong	2025	A Bayesian Perspective on Evidence for Evolving Dark Energy	critique
+Ong2026	2603.05472	Ong	2026	The Bayesian view of DESI DR2 with unimpeded: Evidence and tension in a combined analysis with CMB and supernovae across cosmological models	critique
+Karim2026	2609.04334	Karim	2026	Model Predictive Scoring Shows Specific BAO Observations (not SNIa) Drives $w_0w_a$ Tension	method
+RaveriHu2019	1806.04649	Raveri	2018	Concordance and Discordance in Cosmology	method
+HandleyLemos2019	1902.04029	Handley	2019	Quantifying tensions in cosmological parameters: Interpreting the DES evidence ratio	method
+Lemos2021	2012.09554	Lemos	2020	Assessing tension metrics with Dark Energy Survey and Planck data	method
+RaveriDoux2021	2105.03324	Raveri	2021	Non-Gaussian estimates of tensions in cosmological parameters	method
+Charnock2017	1703.05959	Charnock	2017	Planck confronts large scale structure: methods to quantify discordance	method
+Doux2021	2011.03410	Doux	2020	Dark Energy Survey internal consistency tests of the joint cosmological probes analysis with posterior predictive distributions	method
+Doux2026	2610.03447	Doux	2026	Dark Energy Survey Year 6 Results: fast and interpretable posterior predictive checks for correlated cosmic probes	method
+DESY6_3x2	2601.14559	DES Collaboration	2026	Dark Energy Survey Year 6 Results: Cosmological Constraints from Galaxy Clustering and Weak Lensing	results
+Lemos2023Sampling	2202.08233	Lemos	2022	Robust sampling for weak lensing and clustering analyses with the Dark Energy Survey	method
+Torrado2021	2005.05290	Torrado	2020	Cobaya: Code for Bayesian Analysis of hierarchical physical models	code
+Handley2015	1506.00171	Handley	2015	PolyChord: next-generation nested sampling	code
+Lange2023	2306.16923	Lange	2023	NAUTILUS: boosting Bayesian importance nested sampling with deep learning	code
+Hoffman2014	1111.4246	Hoffman	2011	The No-U-Turn Sampler: Adaptively Setting Path Lengths in Hamiltonian Monte Carlo	foundation
+Vehtari2021	1903.08008	Vehtari	2019	Rank-normalization, folding, and localization: An improved $\widehat{R}$ for assessing convergence of MCMC	method
+Lovick2025	2509.13307	Lovick	2025	High-Dimensional Bayesian Model Comparison in Cosmology with GPU-accelerated Nested Sampling and Neural Emulators	method
+Muir2020	1911.05929	Muir	2019	Blinding multi-probe cosmological experiments	method
+Sellentin2020	1910.08533	Sellentin	2019	A blinding solution for inference from astronomical data	method
+Brieden2020	2006.10857	Brieden	2020	Blind Observers of the Sky	method
+Andrade2024	2404.07282	Andrade	2024	Validating the Galaxy and Quasar Catalog-Level Blinding Scheme for the DESI 2024 analysis	method
+PerezSanchez2026	2607.07875	Perez-Sanchez	2026	Alcock-Paczynski Blinding Scheme for the Ly-$\alpha$ Forest Analysis	method
+Loureiro2026	2604.18111	Loureiro	2026	Smokescreen: A Python package for data vector blinding and encryption in cosmological analyses	code
+Alsing2019	1903.00007	Alsing	2019	Fast likelihood-free cosmology with neural density estimators and active learning	method
+Talts2018	1804.06788	Talts	2018	Validating Bayesian Inference Algorithms with Simulation-Based Calibration	method
+Hermans2022	2110.06581	Hermans	2021	A Trust Crisis In Simulation-Based Inference? Your Posterior Approximations Can Be Unfaithful	critique
+Lemos2023TARP	2302.03026	Lemos	2023	Sampling-Based Accuracy Testing of Posterior Estimators for General Inference	method
+vonWietersheim2024	2404.15402	von Wietersheim-Kramsta	2024	KiDS-SBI: Simulation-based inference analysis of KiDS-1000 cosmic shear	results
+Homer2024	2412.02311	Homer	2024	Simulation-based inference has its own Dodelson-Schneider effect (but it knows that it does)	critique
+Alokda2026	2605.00980	Alokda	2026	Coverage is not enough: Frequentist tests of simulation-based inference for primordial non-Gaussianity	critique
+Vinciguerra2026	2607.17942	Vinciguerra	2026	Comparing explicit likelihood and likelihood-free simulation-based inference for weak lensing cosmic shear	method
+SpurioMancini2022	2106.03846	Spurio Mancini	2021	COSMOPOWER: emulating cosmological power spectra for accelerated Bayesian inference from next-generation surveys	code
+EuclidEmulator2	2010.11288	Euclid Collaboration	2020	Euclid preparation: IX. EuclidEmulator2 -- Power spectrum emulation with massive neutrinos and self-consistent dark energy perturbations	code
+Grandon2022	2205.11587	Grandón	2022	Bayesian error propagation for neural-net based parameter inference	method
+Tegmark1997	astro-ph/9603021	Tegmark	1996	Karhunen-Loeve eigenvalue problems in cosmology: how should we tackle large data sets?	foundation
+EuclidISTF2020	1910.09273	Euclid Collaboration	2019	Euclid preparation: VII. Forecast validation for Euclid cosmological probes	forecast
+Wolz2012	1205.3984	Wolz	2012	On the Validity of Cosmological Fisher Matrix Forecasts	critique
+Heavens2000	astro-ph/9911102	Heavens	1999	Massive Lossless Data Compression and Multiple Parameter Estimation from Galaxy Spectra	foundation
+AlsingWandelt2018	1712.00012	Alsing	2017	Generalized massive optimal data compression	method
+GrossVitells2010	1005.1891	Gross	2010	Trial factors for the look elsewhere effect in high energy physics	foundation
+BayerSeljak2020	2007.13821	Bayer	2020	The look-elsewhere effect from a unified Bayesian and frequentist perspective	method
+Maus2026	2602.12343	Maus	2026	An analytic approximation to the covariance between pre- and post-reconstruction galaxy two-point statistics	method
+Wright2025	2503.19441	Wright	2025	KiDS-Legacy: Cosmological constraints from cosmic shear with the complete Kilo-Degree Survey	results
+Louis2025	2503.14452	Louis	2025	The Atacama Cosmology Telescope: DR6 Power Spectra, Likelihoods and $\Lambda$CDM Parameters	results
+Camphuis2025	2506.20707	Camphuis	2025	SPT-3G D1: CMB temperature and polarization power spectra and cosmology from 2019 and 2020 observations of the SPT-3G Main field	results

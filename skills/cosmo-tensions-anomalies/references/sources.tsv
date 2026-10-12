@@ -1,0 +1,101 @@
+key	id	first_author	year	title	role
+H0DN2025	2510.23823	H0DN Collaboration	2025	The Local Distance Network: a community consensus report on the measurement of the Hubble constant at 1% precision	results
+Riess2025	2509.01667	Riess	2025	The Perfect Host: JWST Cepheid Observations in a Background-Free SN Ia Host Confirm No Bias in Hubble-Constant Measurements	results
+Riess2022	2112.04510	Riess	2021	A Comprehensive Measurement of the Local Value of the Hubble Constant with 1 km/s/Mpc Uncertainty from the Hubble Space Telescope and the SH0ES Team	results
+Freedman2024	2408.06153	Freedman	2024	Status Report on the Chicago-Carnegie Hubble Program (CCHP): Measurement of the Hubble Constant Using the Hubble and James Webb Space Telescopes	results
+TDCOSMO2025	2506.03023	TDCOSMO Collaboration	2025	TDCOSMO 2025: Cosmological constraints from strong lensing time delays	results
+Planck2018VI	1807.06209	Planck Collaboration	2018	Planck 2018 results. VI. Cosmological parameters	results
+Camphuis2025	2506.20707	Camphuis	2025	SPT-3G D1: CMB temperature and polarization power spectra and cosmology from 2019 and 2020 observations of the SPT-3G Main field	results
+Louis2025	2503.14452	Louis	2025	The Atacama Cosmology Telescope: DR6 Power Spectra, Likelihoods and $\Lambda$CDM Parameters	results
+DESI2025BAO	2503.14738	DESI Collaboration	2025	DESI DR2 Results II: Measurements of Baryon Acoustic Oscillations and Cosmological Constraints	results
+Efstathiou2021	2103.08723	Efstathiou	2021	To H0 or not to H0?	method
+Bansal2026	2602.06293	Bansal	2026	On the Difficulties with Late-Time Solutions for the Hubble Tension	critique
+Efstathiou2026	2607.29562	Efstathiou	2026	Late Time Dynamical Dark Energy and the CMB-Distance Ladder Tension	method
+Khalife2025	2507.23355	Khalife	2025	SPT-3G D1: Axion Early Dark Energy with CMB experiments and DESI	results
+Poulin2025	2505.08051	Poulin	2025	Impact of ACT DR6 and DESI DR2 for Early Dark Energy and the Hubble tension	results
+Calabrese2025	2503.14454	Calabrese	2025	The Atacama Cosmology Telescope: DR6 Constraints on Extended Cosmological Models	results
+Stiskalek2025b	2506.10518	Stiskalek	2025	Testing the local supervoid solution to the Hubble tension with direct distance tracers	results
+Kenworthy2019	1901.08681	Kenworthy	2019	The Local Perspective on the Hubble Tension: Local Structure Does Not Impact Measurement of the Hubble Constant	systematics
+Stiskalek2026a	2603.09880	Stiskalek	2026	Forward-modelling Milky Way Cepheids: selection effects and physical priors in the Gaia-HST calibration	systematics
+Hogas2026	2601.22215	Högås	2026	Physically-motivated priors in the local distance ladder significantly reduce the Hubble tension	critique
+Jedamzik2021	2010.04158	Jedamzik	2020	Why reducing the cosmic sound horizon alone can not fully resolve the Hubble tension	critique
+Wright2025	2503.19441	Wright	2025	KiDS-Legacy: Cosmological constraints from cosmic shear with the complete Kilo-Degree Survey	results
+DES2026b	2602.10065	DES Collaboration	2026	Dark Energy Survey Year 6 Results: Cosmological Constraints from Cosmic Shear	results
+DES2026Y6	2601.14559	DES Collaboration	2026	Dark Energy Survey Year 6 Results: Cosmological Constraints from Galaxy Clustering and Weak Lensing	results
+deJanvry2025	2511.18134	de Janvry	2025	Cosmic Shear constraints from HSC Year 3 with clustering calibration of the tomographic redshift distributions from DESI	results
+Tristram2023	2309.10034	Tristram	2023	Cosmological parameters derived from the final (PR4) Planck data release	results
+Pantos2026	2602.12238	Pantos	2026	Status of the $S_8$ Tension: A 2026 Review of Probe Discrepancies	review
+Ghirardini2024	2402.08458	Ghirardini	2024	The SRG/eROSITA all-sky survey: Cosmology constraints from cluster abundances in the western Galactic hemisphere	results
+Bocquet2024II	2401.02075	Bocquet	2024	SPT Clusters with DES and HST Weak Lensing. II. Cosmological Constraints from the Abundance of Massive Halos	results
+Lesci2025	2507.14285	Lesci	2025	AMICO galaxy clusters in KiDS-1000: cosmological constraints and mass calibration from counts and weak lensing	results
+Aymerich2025a	2509.02068	Aymerich	2025	Cosmological constraints from the Planck cluster catalogue with DES shear profiles and Chandra observations	results
+Farren2023	2309.05659	Farren	2023	The Atacama Cosmology Telescope: Cosmology from cross-correlations of unWISE galaxies and ACT DR6 CMB lensing	results
+Sailer2024	2407.04607	Sailer	2024	Cosmological constraints from the cross-correlation of DESI Luminous Red Galaxies with CMB lensing from Planck PR4 and ACT DR6	results
+Salcido2026	2605.11083	Salcido	2026	FLAMINGO: The thermal history of the Universe from tSZ effect cross-correlations and its dependencies on cosmology and baryon physics	results
+Bigwood2025	2512.04209	Bigwood	2025	Confronting cosmic shear astrophysical uncertainties: DES Year 3 revisited	critique
+Motloch2019	1912.06601	Motloch	2019	Lensing-like tensions in the Planck legacy release	critique
+Sailer2025	2504.16932	Sailer	2025	Dispu$\tau$able: the high cost of a low optical depth	critique
+Jhaveri2025	2504.21813	Jhaveri	2025	Turning a negative neutrino mass into a positive optical depth	critique
+Kageura2026	2601.09644	Kageura	2026	A New Constraint on the Optical Depth from the Reionization History Independent of CMB Large-Scale E-Mode Polarization	results
+Omori2026	2608.31136	Omori	2026	SPT-3G D1: Quadratic-Estimator CMB Lensing Reconstruction and Cosmology	results
+Cozzumbo2025	2511.01967	Cozzumbo	2025	A short blanket for cosmology: the CMB lensing anomaly behind the preference for a negative neutrino mass	critique
+Lodha2025	2503.14743	Lodha	2025	Extended Dark Energy analysis using DESI DR2 BAO measurements	results
+Popovic2025	2511.07517	Popovic	2025	The Dark Energy Survey Supernova Program: A Reanalysis Of Cosmology Results And Evidence For Evolving Dark Energy With An Updated Type Ia Supernova Calibration	results
+Hoyt2026	2601.19424	Hoyt	2026	Union3.1: Reducing Systematics in Supernova Cosmology with Self-consistent Measurements of Host Galaxy Properties for 2000 Type Ia Supernovae	results
+Camilleri2026	2609.05053	Camilleri	2026	Supernovae Unite: Combining Pantheon+ and DES-SN5YR	results
+DES2026DDE	2605.27221	DES Collaboration	2026	Constraints on Dynamical Dark Energy from Multiple Probes in the Full Dark Energy Survey	results
+ForeroSanchez2026	2606.23936	Forero-Sánchez	2026	Cosmological constraints from the DESI DR1 Bispectrum Full-Shape and DR2 BAO	results
+Ong2025	2511.10631	Ong	2025	A Bayesian Perspective on Evidence for Evolving Dark Energy	critique
+Elbers2025	2503.14744	Elbers	2025	Constraints on Neutrino Physics from DESI DR2 BAO and DR1 Full Shape	results
+Elbers2024	2407.10965	Elbers	2024	Negative neutrino masses as a mirage of dark energy	critique
+Watkins2023	2302.02028	Watkins	2023	Analyzing the Large-Scale Bulk Flow using CosmicFlows4: Increasing Tension with the Standard Cosmological Model	results
+Whitford2023	2306.11269	Whitford	2023	Evaluating bulk flow estimators for CosmicFlows-4 measurements	critique
+Nusser2026cf4	2608.14265	Nusser	2026	Cosmicflows-4 and the Cosmological Consistency of Large-Scale Motions	critique
+Stiskalek2025aniso	2509.14997	Stiskalek	2025	No evidence for local $H_0$ anisotropy from Tully--Fisher or supernova distances	results
+Gandhi2026	2605.12499	Gandhi	2026	Measuring cosmic bulk flow with kinetic Sunyaev-Zel'dovich velocity reconstruction	results
+DiValentino2019	1911.02087	Di Valentino	2019	Planck evidence for a closed Universe and a possible crisis for cosmology	critique
+Efstathiou2020	2002.06892	Efstathiou	2020	The evidence for a spatially flat Universe	critique
+Eskilt2026	2608.06480	Eskilt	2026	Cosmic birefringence from a joint analysis of ACT and Planck	results
+Hou2022	2206.03625	Hou	2022	Measurement of Parity-Odd Modes in the Large-Scale 4-Point Correlation Function of SDSS BOSS DR12 CMASS and LOWZ Galaxies	results
+Krolewski2024	2407.03397	Krolewski	2024	No evidence for parity violation in BOSS	critique
+Slepian2025	2508.09133	Slepian	2025	Measurement of Parity-Violating Modes of the Dark Energy Spectroscopic Instrument (DESI) Year 1 Luminous Red Galaxies' 4-Point Correlation Function	results
+Lemos2021	2012.09554	Lemos	2020	Assessing tension metrics with Dark Energy Survey and Planck data	method
+HandleyLemos2019	1902.04029	Handley	2019	Quantifying tensions in cosmological parameters: Interpreting the DES evidence ratio	method
+RaveriHu2019	1806.04649	Raveri	2018	Concordance and Discordance in Cosmology	method
+Charnock2017	1703.05959	Charnock	2017	Planck confronts large scale structure: methods to quantify discordance	method
+DiValentino2025	2504.01669	Di Valentino	2025	The CosmoVerse White Paper: Addressing observational tensions in cosmology with systematics and fundamental physics	review
+Schoneberg2022	2107.10291	Schöneberg	2021	The $H_0$ Olympics: A fair ranking of proposed models	review
+Poulin2023	2302.09032	Poulin	2023	The Ups and Downs of Early Dark Energy solutions to the Hubble tension: a review of models, hints and constraints circa 2023	review
+EllisBaldwin1984	doi:10.1093/mnras/206.2.377	Ellis	1984	On the expected anisotropy of radio source counts	foundation
+Planck2013XXVII	1303.5087	Planck Collaboration	2013	Planck 2013 results. XXVII. Doppler boosting of the CMB: Eppur si muove	results
+Secrest2021	2009.14826	Secrest	2020	A Test of the Cosmological Principle with Quasars	results
+Secrest2022	2206.05624	Secrest	2022	A Challenge to the Standard Cosmological Model	results
+Dam2023	2212.07733	Dam	2022	Testing the Cosmological Principle with CatWISE Quasars: A Bayesian Analysis of the Number-Count Dipole	results
+Siewert2021	2010.08366	Siewert	2020	The Cosmic Radio Dipole: Estimators and Frequency Dependence	results
+Wagenveld2025	2503.02470	Wagenveld	2025	The kinematic contribution to the cosmic number count dipole	results
+Bohme2025	2509.16732	Böhme	2025	Overdispersed radio source counts and excess radio dipole detection	results
+LandStrykowski2026	2607.25703	Land-Strykowski	2026	Simulation-based tension quantification of the cosmic dipole	method
+Bashir2025	2511.00822	Bashir	2025	The CatWISE2020 Quasar dipole: A Reassessment of the Cosmic Dipole Anomaly	critique
+Secrest2025	2505.23526	Secrest	2025	Colloquium: The Cosmic Dipole Anomaly	review
+WuXia2026	2608.30914	Wu	2026	Measuring peculiar velocity and tomographic redshift dipole with DESI DR1 catalogs	results
+Sorrenti2024	2403.17741	Sorrenti	2024	The low multipoles in the Pantheon+SH0ES data	results
+DalangBonvin2022	2111.03616	Dalang	2021	On the kinematic cosmic dipole tension	critique
+vonHausegger2024	2404.07929	von Hausegger	2024	The expected kinematic matter dipole is robust against source evolution	critique
+vonHausegger2025	2510.23769	von Hausegger	2025	Clustering properties of the CatWISE2020 quasar catalogue and their impact on the cosmic dipole anomaly	systematics
+Planck2018VII	1906.02552	Planck Collaboration	2019	Planck 2018 results. VII. Isotropy and Statistics of the CMB	results
+Schwarz2016	1510.07929	Schwarz	2015	CMB Anomalies after Planck	review
+Jones2023	2310.12859	Jones	2023	Strong Evidence Against a Statistically Isotropic Universe	results
+GuthNamjoo2026	2602.10178	Guth	2026	Statistical isotropy of the universe and the look-elsewhere effect	critique
+Billi2023	2312.09989	Billi	2023	The anomaly of the CMB power with the latest Planck data	results
+Jung2024	2406.11543	Jung	2024	Revisiting the large-scale CMB anomalies: The impact of the SZ signal from the Local Universe	systematics
+Owusu2023	2211.16139	Owusu	2022	The CMB cold spot under the lens: ruling out a supervoid interpretation	critique
+GimenoAmo2025	2504.05597	Gimeno-Amo	2025	Exploring Statistical Isotropy in Planck Data Release 4: Angular Clustering and Cosmological Parameter Variations Across the Sky	results
+Labbe2023	2207.12446	Labbe	2022	A population of red candidate massive galaxies ~600 Myr after the Big Bang	results
+BoylanKolchin2023	2208.01611	Boylan-Kolchin	2022	Stress Testing $Λ$CDM with High-redshift Galaxy Candidates	method
+Xiao2024	2309.02492	Xiao	2023	Accelerated Formation of Ultra-Massive Galaxies in the First Billion Years	results
+Xiao2026	2602.03030	Xiao	2026	From Grism to IFU: Revising the Redshift and Nature of the Massive Dusty Galaxy S1 with JWST and ALMA	critique
+Prada2026	2604.18683	Prada	2026	Galaxies at z > 10: ΛCDM predicts increased Star Formation Efficiency	results
+Schoneberg2026	2607.13283	Schöneberg	2026	The $H_0$ world cup. II. A comprehensive competition between proposed Hubble tension solutions	review
+Sabogal2026	2607.21244	Sabogal	2026	Hubble tension: the shape wall	critique
+LeeZhou2026	2606.06495	Lee	2026	What it takes to solve the Hubble tension through Modifications of Cosmological Recombination II: in light of ACT DR6 and DESI DR2	results
+Krolewski2025	2511.23432	Krolewski	2025	A measurement of $H_0$ from DESI DR1 using energy densities	results

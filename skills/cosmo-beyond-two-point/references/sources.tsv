@@ -1,0 +1,121 @@
+key	id	first_author	year	title	role
+Gil-Marin2014a	1407.5668	Gil-Marín	2014	The power spectrum and bispectrum of SDSS DR11 BOSS galaxies I: bias and gravity	results
+Gil-Marin2014b	1408.0027	Gil-Marín	2014	The power spectrum and bispectrum of SDSS DR11 BOSS galaxies II: cosmological interpretation	results
+Gil-Marin2016	1606.00439	Gil-Marín	2016	The clustering of galaxies in the SDSS-III Baryon Oscillation Spectroscopic Survey: RSD measurement from the power spectrum and bispectrum of the DR12 BOSS galaxies	results
+Pearson2017	1712.04970	Pearson	2017	A Detection of the Baryon Acoustic Oscillation Features in the SDSS BOSS DR12 Galaxy Bispectrum	results
+Gualdi2018	1806.02853	Gualdi	2018	Enhancing BOSS bispectrum cosmological constraints with maximal compression	method
+Gualdi2019	1901.00987	Gualdi	2019	Geometrical compression: a new method to enhance the BOSS galaxy bispectrum monopole constraints	method
+Philcox2021	2112.04515	Philcox	2021	The BOSS DR12 Full-Shape Cosmology: $\Lambda$CDM Constraints from the Large-Scale Galaxy Power Spectrum and Bispectrum Monopole	results
+DAmico2022	2206.08327	D'Amico	2022	The BOSS bispectrum analysis at one loop from the Effective Field Theory of Large-Scale Structure	results
+Ivanov2023	2302.04414	Ivanov	2023	Cosmology with the Galaxy Bispectrum Multipoles: Optimal Estimation and Application to BOSS Data	results
+NovellMasot2025	2503.09714	Novell-Masot	2025	Full-Shape analysis of the power spectrum and bispectrum of DESI DR1 LRG and QSO samples	results
+NovellMasot2026	2603.19356	Novell-Masot	2026	Cosmological constraints from the DESI DR1 joint power spectrum and bispectrum analysis	results
+ForeroSanchez2026	2606.23936	Forero-Sánchez	2026	Cosmological constraints from the DESI DR1 Bispectrum Full-Shape and DR2 BAO	results
+Chudaykin2025a	2507.13433	Chudaykin	2025	Reanalyzing DESI DR1: 1. $\Lambda$CDM Constraints from the Power Spectrum and Bispectrum	results
+Chudaykin2025c	2512.04266	Chudaykin	2025	Reanalyzing DESI DR1: 3. Constraints on Inflation from Galaxy Power Spectra & Bispectra	results
+Guandalin2026	2610.01836	Guandalin	2026	Cosmological inference from a joint DESI DR1 full-shape power spectrum and bispectrum analysis	results
+Bansal2026	2604.08895	Bansal	2026	FolpsD: combining EFT and phenomenological approaches for joint power spectrum and bispectrum analyses	code
+Bakx2025	2507.22110	Bakx	2025	One-Loop Galaxy Bispectrum: Consistent Theory, Efficient Analysis with COBRA, and Implications for Cosmological Parameters	method
+Chen2025SBP	2507.00118	Chen	2025	Constraining Dynamical Dark Energy from Galaxy Clustering with Simulation-Based Priors	method
+Tucci2026	2610.08908	Tucci	2026	Full-Shape Analysis of the Redshift-Space Galaxy Trispectrum in the EFTofLSS	method
+Hou2022	2206.03625	Hou	2022	Measurement of Parity-Odd Modes in the Large-Scale 4-Point Correlation Function of SDSS BOSS DR12 CMASS and LOWZ Galaxies	results
+Philcox2022	2206.04227	Philcox	2022	Probing Parity-Violation with the Four-Point Correlation Function of BOSS Galaxies	results
+Cabass2022	2210.16320	Cabass	2022	Colliding Ghosts: Constraining Inflation with the Parity-Odd Galaxy Four-Point Function	results
+Philcox2024	2401.09523	Philcox	2024	Could Sample Variance be Responsible for the Parity-Violating Signal Seen in the BOSS Galaxy Survey?	critique
+Krolewski2024	2407.03397	Krolewski	2024	No evidence for parity violation in BOSS	critique
+Adari2024	2405.04660	Adari	2024	Searching for Parity Violation in SDSS DR16 Lyman-α Forest Data	results
+Hou2024	2410.05230	Hou	2024	Can Baryon Acoustic Oscillations Illuminate the Parity-Violating Galaxy 4PCF?	method
+Slepian2025	2508.09133	Slepian	2025	Measurement of Parity-Violating Modes of the Dark Energy Spectroscopic Instrument (DESI) Year 1 Luminous Red Galaxies' 4-Point Correlation Function	results
+Gao2026	2604.06021	Gao	2026	Testing parity with composite-field spectra of BOSS and DESI luminous red galaxies	results
+Pisani2019	1903.05161	Pisani	2019	Cosmic voids: a novel probe to shed light on our Universe	review
+Moresco2022	2201.07241	Moresco	2022	Unveiling the Universe with Emerging Cosmological Probes	review
+Neyrinck2007	0712.3049	Neyrinck	2007	ZOBOV: a parameter-free void-finding algorithm	code
+Sutter2014	1406.1191	Sutter	2014	VIDE: The Void IDentification and Examination toolkit	code
+Mao2016	1602.06306	Mao	2016	Cosmic Voids in the SDSS DR12 BOSS Galaxy Sample: The Alcock-Paczynski Test	results
+Nadathur2019	1904.01030	Nadathur	2019	Beyond BAO: improving cosmological constraints from BOSS with measurement of the void-galaxy cross-correlation	results
+Hawken2019	1909.04394	Hawken	2019	Constraints on the growth of structure around cosmic voids in eBOSS DR14	results
+Hamaus2020	2007.07895	Hamaus	2020	Precision cosmology with voids in the final BOSS data	results
+Aubert2020	2007.09013	Aubert	2020	The Completed SDSS-IV Extended Baryon Oscillation Spectroscopic Survey: Growth rate of structure measurement from cosmic voids	results
+Nadathur2020	2008.06060	Nadathur	2020	The completed SDSS-IV extended Baryon Oscillation Spectroscopic Survey: geometry and growth from the anisotropic void-galaxy correlation function in the luminous red galaxy sample	results
+Woodfinden2022	2205.06258	Woodfinden	2022	Measurements of cosmic expansion and growth rate of structure from voids in the Sloan Digital Sky Survey between redshift 0.07 and 1.0	results
+Woodfinden2023	2303.06143	Woodfinden	2023	Cosmological measurements from void-galaxy and galaxy-galaxy clustering in the Sloan Digital Sky Survey	results
+Massara2022	2206.14120	Massara	2022	Velocity profiles of matter and biased tracers around voids	systematics
+Radinovic2024	2407.02699	Radinović	2024	Alcock-Paczyński effect on void-finding: Implications for void-galaxy cross-correlation modelling	systematics
+Radinovic2023	2302.05302	Radinović	2023	Euclid: Cosmology forecasts from the void-galaxy cross-correlation function with reconstruction	forecast
+Contarini2022	2205.11525	Contarini	2022	Euclid: Cosmological forecasts from the void size function	forecast
+Bonici2022	2206.14211	Bonici	2022	Euclid: Forecasts from the void-lensing cross-correlation	forecast
+Contarini2023	2212.03873	Contarini	2022	Cosmological constraints from the BOSS DR12 void size function	results
+Song2025	2501.07817	Song	2025	Cosmological Constraints using the Void Size Function Data from BOSS DR16	results
+Thiele2023	2307.07555	Thiele	2023	Neutrino mass constraint from an Implicit Likelihood Analysis of BOSS voids	results
+Rincon2024	2411.00148	Rincon	2024	DESIVAST: A Catalog of Low-Redshift Voids using Data from the DESI DR1 Bright Galaxy Survey	data
+Sartori2024	2412.02761	Sartori	2024	The imprint of cosmic voids from the DESI Legacy Survey DR9 LRGs in the Planck 2018 lensing map through spectroscopically calibrated mocks	results
+Sartori2026proc	2605.19763	Sartori	2026	CMB lensing imprints of cosmic voids in DESI Legacy Survey DR9 LRGs with photometric redshift calibration	results
+Sartori2026	2601.15378	Sartori	2026	The Back-in-time Void Finder: dynamical identification of cosmic voids through optimal transport reconstruction	method
+Martin2025	2507.13450	Martin	2025	Lensing the darkness: The matter density profile in cosmic voids from UNIONS	results
+Krolewski2017	1710.02612	Krolewski	2017	A Detection of $z$~2.3 Cosmic Voids from 3D Lyman-$\alpha$ Forest Tomography in the COSMOS Field	results
+Horowitz2021	2109.09660	Horowitz	2021	Second Data Release of the COSMOS Lyman-alpha Mapping and Tomographic Observation: The First 3D Maps of the Detailed Cosmic Web at 2.05<z<2.55	data
+Ravoux2020	2004.01448	Ravoux	2020	A tomographic map of the large-scale matter distribution using the eBOSS Stripe 82 Ly-$\alpha$ forest	data
+Ravoux2022	2203.11045	Ravoux	2022	First measurement of the correlation between cosmic voids and the Lyman-$\alpha$ forest	results
+Ravoux2022thesis	2203.07886	Ravoux	2022	Lyman-alpha forest tomography and cross-correlation with cosmic voids	results
+Xu2026	2603.09278	Xu	2026	Constraining Neutrino Mass with the Void Weak Lensing Effect	forecast
+London2026	2602.22990	London	2026	Cosmic voids as a probe of the nature of dark matter: simulations and galaxy survey forecasts	forecast
+Hansen2025	2506.08832	Hansen	2025	Evidence for a sign change of the ISW effect in the very recent universe? hot voids and cold overdensities at $z<0.03$	results
+Cuesta-Lazaro2023	2309.16539	Cuesta-Lazaro	2023	SUNBIRD: A simulation-based model for full-shape density-split clustering	method
+Paillas2023	2309.16541	Paillas	2023	Cosmological constraints from density-split clustering in the BOSS CMASS galaxy sample	results
+Banerjee2020	2007.13342	Banerjee	2020	Nearest Neighbor distributions: new statistical measures for cosmological clustering	method
+Banerjee2021	2102.01184	Banerjee	2021	Cosmological cross-correlations and nearest neighbor distributions	method
+Valogiannis2022	2204.13717	Valogiannis	2022	Going Beyond the Galaxy Power Spectrum: an Analysis of BOSS Data with Wavelet Scattering Transforms	results
+Valogiannis2023	2310.16116	Valogiannis	2023	Precise Cosmological Constraints from BOSS Galaxy Clustering with a Simulation-Based Emulator of the Wavelet Scattering Transform	results
+Regaldo2023	2310.15250	Régaldo-Saint Blancard	2023	Galaxy Clustering Analysis with SimBIG and the Wavelet Scattering Transform	results
+Appleby2021	2110.06109	Appleby	2021	Minkowski Functionals of SDSS-III BOSS : Hints of Possible Anisotropy in the Density Field?	results
+Liu2025	2501.01698	Liu	2025	Cosmological constraints from the Minkowski functionals of the BOSS CMASS galaxy sample	results
+Massara2020	2001.11024	Massara	2020	Using the Marked Power Spectrum to Detect the Signature of Neutrinos in Large-Scale Structure	forecast
+Philcox2020	2006.10055	Philcox	2020	What does the Marked Power Spectrum Measure? Insights from Perturbation Theory	method
+Marinucci2024	2411.14377	Marinucci	2024	The constraining power of the Marked Power Spectrum: an analytical study	forecast
+Wang2025	2511.15354	Wang	2025	Galaxy-Multiplet Clustering from DESI DR2	results
+deBelsunce2025	2510.23597	de Belsunce	2025	The Compressed 3D Lyman-Alpha Forest Bispectrum	method
+Villaescusa2019	1909.05273	Villaescusa-Navarro	2019	The Quijote simulations	data
+Krause2024	2405.02252	Beyond-2pt Collaboration	2024	A Parameter-Masked Mock Data Challenge for Beyond-Two-Point Galaxy Clustering Statistics	systematics
+Hahn2022	2211.00660	Hahn	2022	${\rm S{\scriptsize IM}BIG}$: Mock Challenge for a Forward Modeling Approach to Galaxy Clustering	method
+Chudaykin2026e	2602.18554	Chudaykin	2026	Reanalyzing DESI DR1: 5. Cosmological Constraints with Simulation-Based Priors	results
+Linke2026	2606.12389	Linke	2026	KiDS-Legacy: Joint analysis of second- and third-order cosmic shear	results
+Williamson2026	2606.11309	Williamson	2026	Dark Energy Survey Year 3 results: optimized $w$CDM simulation-based inference with weak lensing map-level hybrid statistics	results
+Gomes2025	2508.14018	Gomes	2025	Dark Energy Survey Year 3 Results: Cosmological constraints from second and third-order shear statistics	results
+Sugiyama2025	2508.14019	Sugiyama	2025	Cosmology from a joint analysis of second and third order shear statistics with Subaru Hyper Suprime-Cam Year 3 data	results
+Gatti2024	2405.10881	Gatti	2024	Dark Energy Survey Year 3 results: simulation-based cosmological inference with wavelet harmonics, scattering transforms, and moments of weak lensing mass maps II. Cosmological results	results
+Gatti2023	2310.17557	Gatti	2023	Dark Energy Survey Year 3 results: simulation-based cosmological inference with wavelet harmonics, scattering transforms, and moments of weak lensing mass maps I: validation on simulations	method
+Gatti2021	2110.10141	Gatti	2021	Dark Energy Survey Year 3 results: cosmology with moments of weak lensing mass maps	results
+Gatti2019	1911.05568	Gatti	2019	Dark Energy Survey Year 3 results: cosmology with moments of weak lensing mass maps -- validation on simulations	method
+Jeffrey2024	2403.02314	Jeffrey	2024	Dark Energy Survey Year 3 results: likelihood-free, simulation-based $w$CDM inference with neural compression of weak-lensing map statistics	results
+Prat2025	2506.13439	Prat	2025	Dark Energy Survey Year 3 results: $w$CDM cosmology from simulation-based inference with persistent homology on the sphere	results
+Thomsen2025	2511.04681	Thomsen	2025	Dark Energy Survey Year 3 results: Simulation-based $w$CDM inference from weak lensing and galaxy clustering maps with deep learning: Analysis design	method
+Novaes2024	2409.01301	Novaes	2024	Cosmology from HSC Y1 Weak Lensing with Combined Higher-Order Statistics and Simulation-based Inference	results
+Armijo2024	2410.00401	Armijo	2024	Cosmological constraints using Minkowski functionals from the first year data of the Hyper Suprime-Cam	results
+Cheng2024	2404.16085	Cheng	2024	Cosmological constraints from weak lensing scattering transform using HSC Y1 data	results
+Grandon2024	2403.03807	Grandón	2024	Impact of baryonic feedback on HSC Y1 weak lensing non-Gaussian statistics	systematics
+Lu2023	2301.01354	Lu	2023	Cosmological constraints from HSC survey first-year data using deep learning	results
+Liu2022peaks	2210.07853	Liu	2022	Cosmological Studies from HSC-SSP Tomographic Weak Lensing Peak Abundances	results
+Li2026	2608.24591	Li	2026	First application of weak lensing peak steepness statistics to HSC Y1 data: effectively probing halo density profiles	results
+Fluri2022	2201.07771	Fluri	2022	A Full $w$CDM Analysis of KiDS-1000 Weak Lensing Maps using Deep Learning	results
+Fluri2019	1906.03156	Fluri	2019	Cosmological constraints with deep learning from KiDS-450 weak lensing maps	results
+Martinet2017	1709.07678	Martinet	2017	KiDS-450: Cosmological Constraints from Weak Lensing Peak Statistics - II: Inference from Shear Peaks using N-body Simulations	results
+Jasche2012	1203.3639	Jasche	2012	Bayesian physical reconstruction of initial conditions from large scale structure surveys	foundation
+Jasche2018	1806.11117	Jasche	2018	Physical Bayesian modelling of the non-linear matter distribution: new insights into the Nearby Universe	results
+Lavaux2019	1909.06396	Lavaux	2019	Systematic-free inference of the cosmic matter density field from SDSS3-BOSS data	results
+McAlpine2025	2505.10682	McAlpine	2025	The Manticore Project I: a digital twin of our cosmic neighbourhood from Bayesian field-level analysis	results
+Andrews2026quaia	2602.02363	Andrews	2026	Reconstructing the largest scales of the Universe with field-level inference applied to the Quaia Quasar Catalogue	results
+Andrews2026fnl	2603.20855	Andrews	2026	Field-Level Inference of Primordial Non-Gaussianity with the Quijote Simulation Suite	method
+Nguyen2024	2403.03220	Nguyen	2024	How much information can be extracted from galaxy clustering at the field level?	method
+Spezzati2025	2507.05378	Spezzati	2025	Equivalence of the field-level inference and conventional analyses on large scales	critique
+Akitsu2025	2509.09673	Akitsu	2025	Cosmology inference with perturbative forward modeling at the field level: a comparison with joint power spectrum and bispectrum analyses	critique
+Stadler2026	2609.16719	Stadler	2026	Cosmological information from field-level analysis in redshift space	forecast
+Nikolac2026	2606.18227	Nikolac	2026	Field-level vs summaries: convergence of information in non-Gaussian density fields	method
+Porqueres2023	2304.04785	Porqueres	2023	Field-level inference of cosmic shear with intrinsic alignments and baryons	method
+Parker2026	2609.14862	Parker	2026	Field-Level Baryon Acoustic Oscillation Reconstruction of the DESI DR1 Luminous Red Galaxies with Linear Field Transformer (LiFT)	results
+Ravoux2025	2501.16852	Ravoux	2025	Generalized framework for likelihood-based field-level inference of growth rate from velocity and density fields	code
+Ravoux2026	2609.34508	Ravoux	2026	Field-level inference of growth rate from DESI BGS galaxy and ZTF supernova simulations	forecast
+Hahn2023B	2310.15243	Hahn	2023	${\rm S{\scriptsize IM}BIG}$: The First Cosmological Constraints from the Non-Linear Galaxy Bispectrum	results
+Hahn2023	2310.15246	Hahn	2023	${\rm S{\scriptsize IM}BIG}$: The First Cosmological Constraints from Non-Gaussian and Non-Linear Galaxy Clustering	results
+Lemos2023	2310.15256	Lemos	2023	SimBIG: Field-level Simulation-Based Inference of Galaxy Clustering	results
+Massara2024	2404.04228	Massara	2024	{\sc SimBIG}: Cosmological Constraints using Simulation-Based Inference of Galaxy Clustering with Marked Power Spectra	results
+Modi2023	2309.15071	Modi	2023	Sensitivity Analysis of Simulation-Based Inference for Galaxy Clustering	systematics

@@ -1,0 +1,102 @@
+key	id	first_author	year	title	role
+Pagano2019	1908.09856	Pagano	2019	Reionization optical depth determination from Planck HFI data with ten percent accuracy	results
+Planck2016XLVI	1605.02985	Planck Collaboration	2016	Planck intermediate results. XLVI. Reduction of large-scale systematic effects in HFI polarization maps and estimation of the reionization optical depth	results
+Planck2016XLVII	1605.03507	Planck Collaboration	2016	Planck intermediate results. XLVII. Planck constraints on reionization history	results
+deBelsunce2021	2103.14378	de Belsunce	2021	Inference of the optical depth to reionization from low multipole temperature and polarisation Planck data	results
+Sailer2025	2504.16932	Sailer	2025	Dispu$\tau$able: the high cost of a low optical depth	critique
+MonteroCamacho2026	2607.26373	Montero-Camacho	2026	No way ou$\tau$: Epoch of Reionization Observations Do not Support Large Values of the Optical Depth to Reionization	results
+Jhaveri2026	2606.20795	Jhaveri	2026	Raising the reionization optical depth with inflationary CMB features	critique
+Sierra2026	2608.01919	Sierra	2026	Boosting the optical depth to Thomson scattering with primordial black hole evaporation at high redshift	critique
+Upadhyay2026	2609.24989	Upadhyay	2026	Tangled $\tau$: Planck CMB Constraints on Flash Reionization	results
+Sullivan2026	2606.30903	Sullivan	2026	Cosmological Concordance in an Especially Opaque Universe: A Tentative Cosmological Detection of Physical Neutrino Mass in $\Lambda$CDM	critique
+Aggarwal2026	2606.19459	Aggarwal	2026	Fireworks at Cosmic Dawn: relieving BAO-CMB tensions with the Pop III.1 Flash	critique
+WangShan2026	2606.27903	Wang	2026	A hidden reionization prior biases cosmological inference	critique
+WangYN2026	2609.39923	Wang	2026	Raising the Optical Depth to Reionization with Dark Matter Decay	results
+Davies2025	2510.25829	Davies	2025	Updated dark pixel fraction constraints on reionization's end from the Lyman-series forests of XQR-30	results
+Gaikwad2023	2304.02038	Gaikwad	2023	Measuring the photo-ionization rate, neutral fraction and mean free path of HI ionizing photons at $4.9 \leq z \leq 6.0$ from a large sample of XShooter and ESI spectra	results
+Zhu2023	2308.04614	Zhu	2023	Probing Ultra-late Reionization: Direct Measurements of the Mean Free Path over $5<z<6$	results
+Zhu2022	2205.04569	Zhu	2022	Long Dark Gaps in the Ly$\beta$ Forest at $z<6$: Evidence of Ultra Late Reionization from XQR-30 Spectra	results
+Zhu2021	2109.06295	Zhu	2021	Chasing the Tail of Cosmic Reionization with Dark Gap Statistics in the Ly$\alpha$ Forest over $5 < z < 6$	results
+Zhu2024	2405.12275	Zhu	2024	Damping Wing-Like Features in the Stacked Ly$\alpha$ Forest: Potential Neutral Hydrogen Islands at $z<6$	results
+Spina2024	2405.12273	Spina	2024	Damping wings in the Lyman-α forest: a model-independent measurement of the neutral fraction at 5.4<z<6.1	results
+Davies2018	1802.06066	Davies	2018	Quantitative Constraints on the Reionization History from the IGM Damping Wing Signature in Two Quasars at z > 7	results
+Greig2024	2404.12585	Greig	2024	IGM damping wing constraints on the tail end of reionisation from the enlarged XQR-30 sample	results
+Umeda2023	2306.00487	Umeda	2023	JWST Measurements of Neutral Hydrogen Fractions and Ionized Bubble Sizes at $z=7-12$ Obtained with Ly$\alpha$ Damping Wing Absorptions in 27 Bright Continuum Galaxies	results
+Umeda2025	2504.04683	Umeda	2025	Probing the Cosmic Reionization History with JWST: Gunn-Peterson and Ly$\alpha$ Damping Wing Absorption at $4.5 < z < 13$	results
+Huberty2025	2501.13899	Huberty	2025	The Pitfalls of Using Lyman Alpha Damping Wings in High-z Galaxy Spectra to Measure the Intergalactic Neutral Hydrogen Fraction	systematics
+Hennawi2024	2406.12070	Hennawi	2024	Precisely Measuring the Cosmic Reionization History from IGM Damping Wings Towards Quasars	method
+Satyavolu2023	2311.06344	Satyavolu	2023	Robustness of direct measurements of the mean free path of ionizing photons in the epoch of reionization	systematics
+Davies2023	2312.08464	Davies	2023	Constraints on the Evolution of the Ionizing Background and Ionizing Photon Mean Free Path at the End of Reionization	critique
+Kundu2026	2609.40363	Kundu	2026	Probing the Reionization History and Bubble Sizes with JWST Lyman-$\alpha$ Fraction Measurements	results
+ZhuDIVER2026	2608.19311	Zhu	2026	Low Ly$\alpha$ Visibility in Galaxy Overdensities: Reionization Topology and Neutral-Fraction Ceilings from DIVER over $4.8<z<11$	results
+Giovinazzo2026	2607.22834	Giovinazzo	2026	Reionization driven by the few: the ionizing budget of galaxies at z=5-10 from JWST/NIRSpec	results
+Tohfa2026	2602.03923	Tohfa	2026	An emulator for the ionizing photon mean free path in ultra-high resolution simulations: the implications of mean free path measurements for the reionization history	results
+Zier2026	2605.15310	Zier	2026	Introducing the Lumina project: large-volume radiation-hydrodynamic simulations of the epochs of hydrogen and helium reionization	code
+Sailer2022	2205.11504	Sailer	2022	Optical depth to reionization from perturbative 21cm clustering	forecast
+Krywonos2026	2607.16071	Krywonos	2026	Constraints on the remote quadrupole field from the polarized Sunyaev Zel'dovich effect	results
+Reichardt2020	2002.06197	Reichardt	2020	An Improved Measurement of the Secondary Cosmic Microwave Background Anisotropies from the SPT-SZ + SPTpol Surveys	results
+Chaubal2026	2601.20551	Chaubal	2026	SPT-3G D1: A Measurement of Secondary Cosmic Microwave Background Anisotropy Power	results
+Beringue2025	2506.06274	Beringue	2025	The Atacama Cosmology Telescope: DR6 Power Spectrum Foreground Model and Validation	results
+Raghunathan2024	2403.02337	Raghunathan	2024	First Constraints on the Epoch of Reionization Using the non-Gaussianity of the Kinematic Sunyaev-Zel{'}dovich Effect from the South Pole Telescope and {\it Herschel}-SPIRE Observations	results
+Cain2025	2505.15899	Cain	2025	The CMB optical depth constrains the duration of reionization	critique
+Runnholm2025	2502.19174	Runnholm	2025	The JWST/PASSAGE Survey: Testing Reionization Histories with JWST's First Unbiased Survey for Lyman alpha Emitters at Redshifts 7.5-9.5	results
+PrietoLyon2025	2509.18302	Prieto-Lyon	2025	Lyman-alpha emission at the end of reionization: line strengths and profiles from MMT and JWST observations at z~5-6	results
+Bowman2018	1810.05912	Bowman	2018	An absorption profile centred at 78 megahertz in the sky-averaged spectrum	results
+Singh2021	2112.06778	Singh	2021	On the detection of a cosmic dawn signal in the radio background	results
+Hills2018	1805.01421	Hills	2018	Concerns about Modelling of the EDGES Data	critique
+Bradley2018	1810.09015	Bradley	2018	A Ground Plane Artifact that Induces an Absorption Profile in Averaged Spectra from Global 21-cm Measurements - with Possible Application to EDGES	critique
+SimsPober2019	1910.03165	Sims	2019	Testing for calibration systematics in the EDGES low-band data using Bayesian model selection	critique
+Bevins2022	2212.00464	Bevins	2022	Astrophysical Constraints from the SARAS3 non-detection of the Cosmic Dawn Sky-Averaged 21-cm Signal	results
+Murray2026	2605.16643	Murray	2026	The EDGES Analysis Pipeline: Description and Validation	code
+SimsBFCC2025	2506.20042	Sims	2025	A Bayesian approach to modelling spectrometer data chromaticity corrected using beam factors -- II. Model priors and posterior odds	method
+Dhandha2025	2508.13761	Dhandha	2025	Narrowing the discovery space of the cosmological 21-cm signal using multi-wavelength constraints	results
+HERA2025	2511.21289	The HERA Collaboration	2025	First Results from HERA Phase II	results
+HERA2022	2210.04912	The HERA Collaboration	2022	Improved Constraints on the 21 cm EoR Power Spectrum and the X-Ray Heating of the IGM with HERA Phase I Observations	results
+HERA2021	2108.02263	The HERA Collaboration	2021	First Results from HERA Phase I: Upper Limits on the Epoch of Reionization 21 cm Power Spectrum	results
+Mertens2025	2503.05576	Mertens	2025	Deeper multi-redshift upper limits on the Epoch of Reionization 21-cm signal power spectrum from LOFAR between z=8.3 and z=10.1	results
+Ceccotti2025	2504.18534	Ceccotti	2025	First upper limits on the 21-cm signal power spectrum of neutral hydrogen at $z=9.16$ from the LOFAR 3C196 field	results
+Ghara2025	2505.00373	Ghara	2025	Constraints on the state of the IGM at $z\sim 8-10$ using redshifted 21-cm observations with LOFAR	results
+Nunhokee2025	2505.09097	Nunhokee	2025	Limits on the 21 cm power spectrum at z=6.5-7.0 from MWA observations	results
+Trott2025	2508.04164	Trott	2025	Improved limits on the 21cm signal at z=6.5-7.0 with the MWA using Gaussian information	results
+Munshi2025	2507.10533	Munshi	2025	Improved upper limits on the 21-cm signal power spectrum at $z=17.0$ and $z=20.3$ from an optimal field observed with NenuFAR	results
+Kolopanis2019	1909.02085	Kolopanis	2019	A simplified, lossless re-analysis of PAPER-64	results
+Cheng2018	1810.05175	Cheng	2018	Characterizing Signal Loss in the 21 cm Reionization Power Spectrum: A Revised Study of PAPER-64	systematics
+Breitman2026	2606.00219	Breitman	2026	21cmEMUv3: a hybrid diffusion-LSTM emulator of 21cmFAST summary observables	code
+SimsJoint2025	2504.09725	Sims	2025	Rapid and Late Cosmic Reionization Driven by Massive Galaxies: a Joint Analysis of Constraints from 21-cm, Lyman Line & CMB Data Sets	results
+Masui2012	1208.0331	Masui	2012	Measurement of 21 cm brightness fluctuations at z ~ 0.8 in cross-correlation	results
+Wolz2021	2102.04946	Wolz	2021	HI constraints from the cross-correlation of eBOSS galaxies and Green Bank Telescope intensity maps	results
+Cunnington2022	2206.01579	Cunnington	2022	HI intensity mapping with MeerKAT: power spectrum detection in cross-correlation with WiggleZ galaxies	results
+CHIME2022	2202.01242	CHIME Collaboration	2022	Detection of Cosmological 21 cm Emission with the Canadian Hydrogen Intensity Mapping Experiment	results
+CHIME2023	2309.04404	CHIME Collaboration	2023	A Detection of Cosmological 21 cm Emission from CHIME in Cross-correlation with eBOSS Measurements of the Lyman-$\alpha$ Forest	results
+CHIME2025	2511.19620	CHIME Collaboration	2025	Detection of the Cosmological 21 cm Signal in Auto-correlation at z ~ 1 with the Canadian Hydrogen Intensity Mapping Experiment	results
+CHIME2026	2603.25680	CHIME Collaboration	2026	Interpretation of 21 cm Auto Power Spectrum Measurement at $z\sim 1$ by the Canadian Hydrogen Intensity Mapping Experiment	results
+MeerKLASS2026	2610.12158	MeerKLASS Collaboration	2026	HI intensity mapping with MeerKAT: A measurement of the 21-cm auto-spectrum on cosmological scales	results
+Cunnington2026	2606.25955	Cunnington	2026	Single-dish HI Intensity Mapping with the SKAO: Precursor Progress with MeerKAT's Large Area Synoptic Survey (MeerKLASS)	review
+Mazumder2026	2606.24730	Mazumder	2026	Interferometric HI Intensity Mapping of the Late Time Universe with SKA-Mid	review
+Wolz2026	2607.03259	Wolz	2026	Cosmology with HI Intensity Mapping	review
+CHORD2026	2607.09374	The CHORD Collaboration	2026	Overview of the Canadian Hydrogen Observatory and Radio Transient Detector (CHORD) Project	data
+Deng2026	2604.27465	Deng	2026	Foreground Mitigation and Power Spectrum Analysis for Tianlai Full-Sky 21 cm Survey Observation	results
+Studer2026	2607.26972	Studer	2026	Dish Assembly Precision for HIRAX	data
+Cleary2021	2111.05927	Cleary	2021	COMAP Early Science: I. Overview	results
+Stutzer2024	2406.07511	Stutzer	2024	COMAP Pathfinder -- Season 2 results II. Updated constraints on the CO(1-0) power spectrum	results
+Dunne2025	2510.23568	Dunne	2025	COMAP Pathfinder -- Season 2 results IV. A stack on eBOSS/DESI quasars	results
+Chiang2026	2602.02658	Chiang	2026	Cosmic CO and [CII] backgrounds and the fueling of star formation over 12 Gyr	results
+Kramer2026	2603.13218	Kramer	2026	Comparison of Cross-Correlation Methods for Line Intensity Mapping	method
+Yang2025	2511.09473	Yang	2025	TIME Commissioning Observations: I. Mapping Dust and Molecular Gas in the Sgr A Molecular Cloud Complex at the Galactic Center	data
+Dev2026	2607.20404	Dev	2026	Spectral Data-cube Cleaning for CCAT Deep Spectroscopic Survey. I. Effect of correlated noise and filtering on the power spectrum	forecast
+Kovetz2026	2605.13967	Kovetz	2026	When galaxies burst: enhanced shot-noise for line-intensity mapping in the JWST era	method
+Bock2025	2511.02985	Bock	2025	The SPHEREx Satellite Mission	data
+BoylanKolchin2022	2208.01611	Boylan-Kolchin	2022	Stress Testing $\Lambda$CDM with High-redshift Galaxy Candidates	foundation
+Prada2026	2604.18683	Prada	2026	Galaxies at z > 10: ΛCDM predicts increased Star Formation Efficiency	results
+Lagos2026	2609.03537	Lagos	2026	Bright star-forming galaxies naturally forming at z>10 in the Shark semi-analytic model	results
+Naidu2025	2505.11263	Naidu	2025	A Cosmic Miracle: A Remarkably Luminous Galaxy at $z_{\rm{spec}}=14.44$ Confirmed with JWST	results
+Munoz2024	2404.07250	Muñoz	2024	Reionization after JWST: a photon budget crisis?	critique
+Simmonds2024	2409.01286	Simmonds	2024	Ionising properties of galaxies in JADES for a stellar mass complete sample: resolving the cosmic ionising photon budget crisis at the Epoch of Reionisation	results
+Mesinger2010	1003.3878	Mesinger	2010	21cmFAST: A Fast, Semi-Numerical Simulation of the High-Redshift 21-cm Signal	code
+LiuShaw2019	1907.08211	Liu	2019	Data Analysis for Precision 21 cm Cosmology	review
+BernalKovetz2022	2206.15377	Bernal	2022	Line-Intensity Mapping: Theory Review	review
+Barry2016	1603.00607	Barry	2016	Calibration Requirements for Detecting the 21 cm Epoch of Reionization Power Spectrum and Implications for the SKA	systematics
+Mertens2017	1711.10834	Mertens	2017	Statistical 21-cm Signal Separation via Gaussian Process Regression Analysis	method
+Cunnington2023	2302.07034	Cunnington	2023	The foreground transfer function for HI intensity mapping signal reconstruction: MeerKLASS and precision cosmology applications	systematics
+Planck2018VI	1807.06209	Planck Collaboration	2018	Planck 2018 results. VI. Cosmological parameters	results
+PlanckNPIPE2020	2007.04997	Planck Collaboration	2020	Planck intermediate results. LVII. Joint Planck LFI and HFI data processing	data

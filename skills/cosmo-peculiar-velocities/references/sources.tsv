@@ -1,0 +1,151 @@
+key	id	first_author	year	title	role
+Turner2024	2411.19484	Turner	2024	Cosmology with Peculiar Velocity Surveys	review
+Ross2025	2512.03226	Ross	2025	The DESI DR1 Peculiar Velocity Survey: Fundamental Plane Catalogue	data
+Douglass2025	2512.03227	Douglass	2025	The DESI DR1 Peculiar Velocity Survey: The Tully-Fisher Distance Catalog	data
+Bautista2025	2512.03228	Bautista	2025	The DESI DR1 Peculiar Velocity Survey: Mock Catalog	method
+Lai2025	2512.03229	Lai	2025	The DESI DR1 Peculiar Velocity Survey: growth rate measurements from the maximum likelihood fields method	results
+Turner2025	2512.03230	Turner	2025	The DESI DR1 Peculiar Velocity Survey: growth rate measurements from galaxy and momentum correlation functions	results
+Qin2025	2512.03231	Qin	2025	The DESI DR1 peculiar velocity survey: growth rate measurements from the galaxy power spectrum	results
+Carr2025	2512.03232	Carr	2025	The DESI DR1 Peculiar Velocity Survey: global zero-point and $H_0$ constraints	results
+Chen2025	2508.00066	Chen	2025	Effective Theories of Redshift-Space Galaxy Peculiar Velocities	method
+Dumerchat2026emu	2602.03382	Dumerchat	2026	Emulating galaxy and peculiar velocity clustering on non-linear scales	forecast
+Dumerchat2026res	2602.23033	Dumerchat	2026	Correlated residuals in Tully-Fisher and Fundamental Plane relations and their impact on peculiar velocity measurements	systematics
+Ravoux2026	2609.34508	Ravoux	2026	Field-level inference of growth rate from DESI BGS galaxy and ZTF supernova simulations	forecast
+Rosselli2025	2507.00157	Rosselli	2025	Forecast for growth-rate measurement using peculiar velocities from LSST supernovae	forecast
+Watkins2025	2512.03168	Watkins	2025	The Origins of the Bulk flow	results
+Stiskalek2025	2509.20235	Stiskalek	2025	$S_8$ from peculiar velocities: agreement with Planck for Tully--Fisher and supernovae, tension for the fundamental plane	results
+Valade2026	2602.03699	Valade	2026	Constraining cosmological simulations with peculiar velocities: a forward-modeling approach	method
+Do2026	2606.17142	Do	2026	Hawai`i Supernova Flows: Bulk Flow Measurements using SNe Ia in the Optical and NIR	results
+Dixon2026	2606.14962	Dixon	2026	The Peculiar Growth of Structure: Validating $fσ_8$ Measurements from TITAN Type Ia Supernovae and the Uchuu Simulations	forecast
+Gandhi2026	2605.12499	Gandhi	2026	Measuring cosmic bulk flow with kinetic Sunyaev-Zel'dovich velocity reconstruction	results
+Nusser2026	2606.08593	Nusser	2026	Bayesian Reconstruction of the Local Universe from 2MRS: Testing the Gravitational Flow with Cosmicflows-4	method
+Hollinger2026	2603.09339	Hollinger	2026	Hidden Vela Supercluster Revealed by First Hybrid Redshift & Peculiar Velocity Reconstruction	results
+Dressler2026	2604.02470	Dressler	2026	Return to the Great Attractor: Strong Evidence for a Steradian-sized Flow Converging at $\sim$70 Mpc within the GA Supercluster and Aligned with the CMB Dipole	results
+Upadhyay2026	2603.06469	Upadhyay	2026	Unbiased Bayesian Inference of Peculiar Motions of Galaxies from Type Ia Supernovae Observations	method
+Nguyen2026	2606.18437	Nguyen	2026	Impact of inhomogeneous curvature on growth rate measurements from magnitude fluctuations	systematics
+Mayor2026	2606.26001	Mayor	2026	Cosmology with Tully-Fisher HI Galaxy Surveys	forecast
+Crisman2026	2604.06361	Crisman	2026	Joint Curvature and Growth Rate measurements with Supernova Peculiar Velocities and the CMB	results
+Wang2026	2604.08314	Wang	2026	The peculiar velocity correlation function of the Cosmicflows-4 catalog	results
+Franco2026	2605.00450	Franco	2026	Measuring $fσ_8$ and BAO scale in the Local Universe: a joint real and redshift space analysis from CosmicFlows-4++	results
+Nguyen2025	2510.07673	Nguyen	2025	Detection of supernova magnitude fluctuations induced by large-scale structure	results
+Amsellem2025	2512.08818	Amsellem	2025	Probing the environment around GW170817 with DESI: insights on galaxy group peculiar velocities for standard siren measurements	results
+Blake2025	2509.03101	Blake	2025	The role of peculiar velocity uncertainties in standard siren cosmology	method
+Clarkson2026	2603.14511	Clarkson	2026	Cosmological peculiar velocities in general relativity	critique
+Pasten2026	2601.21741	Pastén	2026	The reason peculiar velocities grow faster in general relativity than in Newtonian gravity	critique
+Gong2026ksz	2609.36355	Gong	2026	Probing Baryons with the Kinematic Sunyae Zel'dovich Effect and Machine Learning Derived Peculiar Velocities using DESI DR2 and ACT DR6	results
+Gong2026ml	2606.05047	Gong	2026	Full Nonlinear Velocity Reconstruction With Transformer and Ensemble Tree Machine Learning	method
+Lordet2026	2604.12714	Lordet	2026	Illuminating the Local Universe: Large-Scale Structure from ZTF Type Ia Supernovae	systematics
+Watkins2023	2302.02028	Watkins	2023	Analyzing the Large-Scale Bulk Flow using CosmicFlows4: Increasing Tension with the Standard Cosmological Model	results
+Whitford2023	2306.11269	Whitford	2023	Evaluating bulk flow estimators for CosmicFlows-4 measurements	critique
+Duangchan2025	2507.22236	Duangchan	2025	Prior-free cosmological parameter estimation of Cosmicflows-4	results
+Stiskalek2025aniso	2509.14997	Stiskalek	2025	No evidence for local $H_0$ anisotropy from Tully--Fisher or supernova distances	results
+Watkins2009	0809.4041	Watkins	2009	Consistently Large Cosmic Flows on Scales of 100 Mpc/h: a Challenge for the Standard LCDM Cosmology	method
+Feldman2010	0911.5516	Feldman	2010	Cosmic Flows on 100 Mpc/h Scales: Standardized Minimum Variance Bulk Flow, Shear and Octupole Moments	method
+Nusser2011	1101.1650	Nusser	2011	The cosmological bulk flow: consistency with $Λ$CDM and $z\approx 0$ constraints on $σ_8$ and $γ$	results
+Turnbull2012	1111.0631	Turnbull	2012	Cosmic flows in the nearby universe from Type Ia Supernovae	results
+Johnson2014	1404.3799	Johnson	2014	The 6dF Galaxy Velocity Survey: Cosmological constraints from the velocity power spectrum	results
+Hoffman2015	1503.05422	Hoffman	2015	Cosmic Bulk Flow and the Local Motion from Cosmicflows-2	results
+Patki2025	2510.27605	Patki	2025	Probing Gravity at Large Scales with kSZ-Reconstructed Velocities and CMB Lensing	forecast
+Ondaro2026	2607.23339	Ondaro-Mallea	2026	Interpreting the stacked kinetic SZ effect I: velocity reconstruction and non-linear velocity effects	systematics
+Peery2018	1808.07772	Peery	2018	Easily Interpretable Bulk Flows: Continuing Tension with the Standard Cosmological Model	method
+Qin2019bf	1811.00822	Qin	2019	Bulk flow and shear in the local Universe: 2MTF and COSMICFLOWS-3	results
+Qin2018	1804.05520	Qin	2018	Bulk flow in the combined 2MTF and 6dFGSv surveys	results
+Qin2021	2105.04800	Qin	2021	Gaussianization of peculiar velocities and bulk flow measurement	method
+Scrimgeour2016	1511.06930	Scrimgeour	2016	The 6dF Galaxy Survey: Bulk Flows on $50-70 h^{-1}$ Mpc scales	results
+Hong2014	1409.0287	Hong	2014	2MTF IV. A bulk flow measurement of the local Universe	results
+Nusser2014	1405.6271	Nusser	2014	An Inconsistency in standard Maximum Likelihood Estimation of Bulk Flows	critique
+Nusser2016	1508.03860	Nusser	2016	On methods of estimating cosmological bulk flows	method
+Feindt2013	1310.4184	Feindt	2013	Measuring cosmic bulk flows with Type Ia Supernovae from the Nearby Supernova Factory	results
+Lopes2024	2405.11077	Lopes	2024	Bulk Flow Motion Detection in the Local Universe with Pantheon$+$ Type Ia Supernovae	results
+Hellwing2018	1802.03391	Hellwing	2018	Uneven flows: On cosmic bulk flows, local observers, and gravity	systematics
+Kashlinsky2010	0910.4958	Kashlinsky	2010	A new measurement of the bulk flow of X-ray luminous clusters of galaxies	results
+Planck2014pv	1303.5090	Planck Collaboration	2014	Planck intermediate results. XIII. Constraints on peculiar velocities	results
+Springob2016	1511.04849	Springob	2016	2MTF V. Cosmography, Beta, and the residual bulk flow	results
+Carrick2015	1504.04627	Carrick	2015	Cosmological parameters from the comparison of peculiar velocities with predictions from the 2M++ density field	results
+Boruah2020	1912.09383	Boruah	2020	Cosmic flows in the nearby Universe: new peculiar velocities from SNe and cosmological constraints	results
+Said2020	2007.04993	Said	2020	Joint analysis of 6dFGS and SDSS peculiar velocities for the growth rate of cosmic structure and tests of gravity	results
+Ravoux2025	2501.16852	Ravoux	2025	Generalized framework for likelihood-based field-level inference of growth rate from velocity and density fields	code
+Koda2014	1312.1022	Koda	2014	Are peculiar velocity surveys competitive as a cosmological probe?	method
+Howlett2017fc	1609.08247	Howlett	2017	Cosmological Forecasts for Combined and Next Generation Peculiar Velocity Surveys	forecast
+Howlett2019	1906.02875	Howlett	2019	The Redshift-Space Momentum Power Spectrum I: Optimal Estimation From Peculiar Velocity Surveys	method
+Davis2014	1405.0105	Davis	2014	Deriving accurate peculiar velocities (even at high redshift)	method
+Watkins2015	1411.6665	Watkins	2015	An Unbiased Estimator of Peculiar Velocity with Gaussian Distributed Errors for Precision Cosmology	method
+Adams2017	1706.05205	Adams	2017	Improving constraints on the growth rate of structure by modelling the density-velocity cross-correlation in the 6dF Galaxy Survey	method
+Adams2020	2004.06399	Adams	2020	Joint growth rate measurements from redshift-space distortions and peculiar velocities in the 6dF Galaxy Survey	method
+Lai2023	2209.04166	Lai	2023	Using peculiar velocity surveys to constrain the growth rate of structure with the wide-angle effect	method
+Carreres2023	2303.01198	Carreres	2023	Growth-rate measurement with type-Ia supernovae using ZTF survey simulations	forecast
+Castorina2020	1911.08353	Castorina	2020	Wide angle effects for peculiar velocities	method
+Strauss1995	astro-ph/9502079	Strauss	1995	The density and peculiar velocity fields of nearby galaxies	review
+Hui2006	astro-ph/0512159	Hui	2006	Correlated Fluctuations in Luminosity Distance and the (Surprising) Importance of Peculiar Motion in Supernova Surveys	foundation
+Gordon2007	0705.1718	Gordon	2007	Cosmological Constraints from Type Ia Supernovae Peculiar Velocity Measurements	results
+Davis2011sn	1012.2912	Davis	2011	The effect of peculiar velocities on supernova cosmology	method
+Huterer2017	1611.09862	Huterer	2017	Testing $Λ$CDM at the lowest redshifts with SN Ia and galaxy velocities	results
+Lavaux2016	1512.04534	Lavaux	2016	Bayesian 3d velocity field reconstruction with VIRBIuS	code
+Pike2005	astro-ph/0511012	Pike	2005	Cosmological Parameters from the Comparison of the 2MASS Gravity Field with Peculiar Velocity Surveys	results
+Jasche2019	1806.11117	Jasche	2019	Physical Bayesian modelling of the non-linear matter distribution: new insights into the Nearby Universe	method
+Tully2023	2209.11238	Tully	2023	Cosmicflows-4	data
+Springob2014	1409.6161	Springob	2014	The 6dF Galaxy Survey: Peculiar Velocity Field and Cosmography	data
+Howlett2022	2201.03112	Howlett	2022	The Sloan Digital Sky Survey Peculiar Velocity Catalogue	data
+Tonegawa2024	2309.14457	Tonegawa	2024	The effects of non-linearity on the growth rate constraint from velocity correlation functions	systematics
+Turner2023	2207.03707	Turner	2023	A local measurement of the growth rate from peculiar velocities and galaxy clustering correlations in the 6dF Galaxy Survey	results
+Qin2019mom	1906.02874	Qin	2019	The Redshift Space Momentum Power Spectrum II: measuring the growth rate from the combined 2MTF and 6dFGSv surveys	results
+Qin2024	2411.09571	Qin	2024	The Redshift-Space Momentum Power Spectrum III: measuring the growth rate from the SDSSv survey using auto- and cross- power spectrum of the galaxy density and momentum fields	results
+Howlett2017	1706.05130	Howlett	2017	2MTF VI. Measuring the velocity power spectrum	results
+Hollinger2024	2312.03904	Hollinger	2024	Cosmological parameters estimated from velocity -- density comparisons: Calibrating 2M++	systematics
+Lilow2021	2102.07291	Lilow	2021	Constrained realizations of 2MRS density and peculiar velocity fields: growth rate and local flow	results
+Stahl2021	2105.05185	Stahl	2021	Peculiar-velocity cosmology with Types Ia and II supernovae	results
+Boubel2024	2301.12648	Boubel	2024	Large-scale motions and growth rate from forward-modelling Tully-Fisher peculiar velocities	results
+McAlpine2025	2505.10682	McAlpine	2025	The Manticore Project I: a digital twin of our cosmic neighbourhood from Bayesian field-level analysis	method
+Boruah2022	2111.15535	Boruah	2022	Reconstructing dark matter distribution with peculiar velocities: Bayesian forward modelling with corrections for inhomogeneous Malmquist bias	method
+Graziani2019	1901.01818	Graziani	2019	The peculiar velocity field up to $z \sim 0.05$ by forward-modeling Cosmicflows-3 data	method
+Kaiser1988	doi:10.1093/mnras/231.2.149	Kaiser	1988	Theoretical implications of deviations from Hubble flow	foundation
+Gorski1988	doi:10.1086/185255	Gorski	1988	On the pattern of perturbations of the Hubble flow	foundation
+Gorski1989	doi:10.1086/167771	Gorski	1989	Cosmological velocity correlations - Observations and model predictions	foundation
+Gallardo2026	2604.14327	Gallardo	2026	The Atacama Cosmology Telescope: A Test of the Gravitational Force Law on Cosmological Scales Using the Kinematic Sunyaev-Zeldovich Effect	results
+Chaussidon2026	2604.04867	Chaussidon	2026	Measurement of the galaxy-velocity power spectrum of DESI tracers with the kinematic Sunyaev-Zeldovich effect using DESI DR2 and ACT DR6	results
+Gong2025	2511.23417	Gong	2025	Detection of the Pairwise Kinematic Sunyaev-Zel'dovich Effect and Pairwise Velocity with DESI DR1 Galaxies and ACT DR6 and Planck CMB Data	results
+McCarthy2025	2511.15701	McCarthy	2025	The Atacama Cosmology Telescope: Cross-correlation of kSZ and continuity equation velocity reconstruction with photometric DESI LRGs	results
+Hadzhiyska2025	2510.14135	Hadzhiyska	2025	Probing cosmic velocities with the pairwise kinematic Sunyaev-Zel'dovich signal in DESI Bright Galaxy Sample DR1 and ACT DR6	results
+Li2025	2510.27227	Li	2025	First Cosmological Constraints from the Joint Analysis of Galaxy Clustering and the Kinetic Sunyaev-Zel'dovich Effect	results
+Tishue2025	2510.25821	Tishue	2025	The kSZ optical depth degeneracy and future constraints on local primordial non-Gaussianity	systematics
+Hotinli2025	2506.21657	Hotinli	2025	Velocity Reconstruction from KSZ: Measuring $f_{NL}$ with ACT and DESILS	results
+Lai2025qml	2506.21684	Lai	2025	KSZ Velocity Reconstruction with ACT and DESI-LS using a Tomographic QML Power Spectrum Estimator	results
+Lyall2024	2407.18684	Lyall	2024	Constraining modified gravity scenarios with the 6dFGS and SDSS galaxy peculiar velocity datasets	results
+Chuang2026	2602.04485	Chuang	2026	Large-scale halo velocity correlations and the impact of finite simulation volumes	systematics
+Seiler2016	1607.01837	Seiler	2016	Using measurements of the cosmic bulk flow to constrain $f(R)$ Gravity	results
+Courtois2025	2502.01308	Courtois	2025	In search for the Local Universe dynamical homogeneity scale with CF4++ peculiar velocities	data
+Nusser2026cf4	2608.14265	Nusser	2026	Cosmicflows-4 and the Cosmological Consistency of Large-Scale Motions	critique
+Mould2024	2406.10877	Mould	2024	WALLABY Pilot Survey: the Tully-Fisher relation in the NGC 4808, Vela and NGC 5044 fields	data
+Courtois2023w	2210.12498	Courtois	2023	WALLABY Pre-Pilot and Pilot Survey: the Tully Fisher Relation in Eridanus, Hydra, Norma and NGC4636 fields	data
+Peterson2024	2408.14560	Peterson	2024	Improving the Determination of Supernova Cosmological Redshifts by Using Galaxy Groups	method
+Salzano2025	2512.02526	Salzano	2025	Updates on dipolar anisotropy in local measurements of the Hubble constant from Cosmicflows-4	results
+Saulder2023	2302.13760	Saulder	2023	Target Selection for the DESI Peculiar Velocity Survey	forecast
+Said2025	2408.13842	Said	2025	DESI Peculiar Velocity Survey -- Fundamental Plane	data
+Carreres2025	2405.20409	Carreres	2025	ZTF SN Ia DR2: Peculiar velocities impact on the Hubble diagram	systematics
+Rigault2025	2409.04346	Rigault	2025	ZTF SN Ia DR2: Overview	data
+Kim2020	1911.09121	Kim	2020	Complementarity of Peculiar Velocity Surveys and Redshift Space Distortions for Testing Gravity	forecast
+Garcia2020	1905.00746	Garcia	2020	On the amount of peculiar velocity field information in supernovae from LSST and beyond	forecast
+Graziani2020	2001.09095	Graziani	2020	Peculiar velocity cosmology with type Ia supernovae	forecast
+Quartin2022	2111.05185	Quartin	2022	The 6x2pt method: supernova velocities meet multiple tracers	forecast
+Turner2024bias	2306.16664	Turner	2024	Biases in velocity reconstruction: investigating the effects on growth rate and expansion measurements in the local universe	systematics
+Whitford2022	2112.10302	Whitford	2022	Using peculiar velocity surveys to constrain neutrino masses	forecast
+Palmese2021	2005.04325	Palmese	2021	Probing gravity and growth of structure with gravitational waves and galaxies' peculiar velocity	forecast
+Siwakoti2026	2608.26459	Siwakoti	2026	Systematic uncertainties on DESI Tully-Fisher distances constrained with Integral Field Spectroscopy	systematics
+Douglass2025edr	2507.11765	Douglass	2025	DESI EDR: Calibrating the Tully-Fisher Relationship with the DESI Peculiar Velocity Survey	data
+Acevedo2025	2510.26731	Acevedo	2025	The Weighing Halos Accurately, Locally, and Efficiently with Supernovae (WHALES) Survey Overview and Initial Data Release	data
+Gallardo2025	2510.20715	Gallardo	2025	Iskay2: Signal Extraction of the Kinematic Sunyaev-Zel'dovich Effect Through The Pairwise Estimator. Pipeline and Validation	code
+Tsagas2026	2603.28377	Tsagas	2026	Cosmological peculiar velocities in general relativity?	critique
+Tsagas2025	2510.05340	Tsagas	2025	Large-scale peculiar velocities in the universe	review
+Stiskalek2025void	2506.10518	Stiskalek	2025	Testing the local supervoid solution to the Hubble tension with direct distance tracers	results
+Mazurenko2024	2311.17988	Mazurenko	2024	A simultaneous solution to the Hubble tension and observed bulk flow within 250 ${h^{-1}}$ Mpc	critique
+Heinesen2023	2305.16084	Heinesen	2023	Bulk flows in the local Universe and the importance of relativistic effects	systematics
+Davis2010	1011.3114	Davis	2010	Local Gravity versus Local Velocity: Solutions for $β$ and nonlinear bias	results
+Beutler2012	1204.4725	Beutler	2012	The 6dF Galaxy Survey: z \approx 0 measurement of the growth rate and sigma_8	results
+Ma2012	1205.4237	Ma	2012	A comparison of the galaxy peculiar velocity field with the PSCz gravity field-- A Bayesian hyper-parameter method	results
+Feix2015	1503.05945	Feix	2015	Growth rate of cosmological perturbations at z ~ 0.1 from a new observational test	results
+Achitouv2016	1606.03092	Achitouv	2016	Consistency of the growth rate in different environments with the 6dF Galaxy Survey: measurement of the void-galaxy and galaxy-galaxy correlation functions	results
+Feix2016	1612.07809	Feix	2016	Speed from light: growth rate and bulk flow at z ~ 0.1 from improved SDSS DR13 photometry	results
+Nusser2017	1703.05324	Nusser	2017	Velocity-Density Correlations from the cosmicflows-3 Distance Catalog and the 2MASS Redshift Survey	results
+Blake2018	1801.04969	Blake	2018	Power spectrum multipoles on the curved sky: an application to the 6-degree Field Galaxy Survey	results
+Dupuy2019	1901.03530	Dupuy	2019	An estimation of the Local growth rate from Cosmicflows-3 peculiar velocities	results
+Courtois2022	2211.16390	Courtois	2022	Gravity in the Local Universe : density and velocity fields using CosmicFlows-4	results

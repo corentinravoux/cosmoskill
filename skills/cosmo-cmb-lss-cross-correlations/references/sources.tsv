@@ -1,0 +1,102 @@
+key	id	first_author	year	title	role
+Krolewski2021	2105.03421	Krolewski	2021	Cosmological constraints from unWISE and Planck CMB lensing tomography	results
+Farren2023	2309.05659	Farren	2023	The Atacama Cosmology Telescope: Cosmology from cross-correlations of unWISE galaxies and ACT DR6 CMB lensing	results
+Farren2024	2409.02109	Farren	2024	The Atacama Cosmology Telescope: Multi-probe cosmology with unWISE galaxies and ACT DR6 CMB lensing	results
+Sailer2024	2407.04607	Sailer	2024	Cosmological constraints from the cross-correlation of DESI Luminous Red Galaxies with CMB lensing from Planck PR4 and ACT DR6	results
+Kim2024	2407.04606	Kim	2024	The Atacama Cosmology Telescope DR6 and DESI: Structure formation over cosmic time with a measurement of the cross-correlation of CMB Lensing and Luminous Red Galaxies	results
+Qu2024	2410.10808	Qu	2024	The Atacama Cosmology Telescope DR6 and DESI: Structure growth measurements from the cross-correlation of DESI Legacy Imaging galaxies and CMB lensing from ACT DR6 and Planck PR4	results
+Sailer2025	2503.24385	Sailer	2025	Evolution of structure growth during dark energy domination: Insights from the cross-correlation of DESI galaxies with CMB lensing and galaxy magnification	results
+White2021	2111.09898	White	2021	Cosmological constraints from the tomographic cross-correlation of DESI Luminous Red Galaxies and Planck CMB lensing	results
+StoreyFisher2023	2306.17749	Storey-Fisher	2023	Quaia, the Gaia-unWISE Quasar Catalog: An All-Sky Spectroscopic Quasar Sample	data
+Alonso2023	2306.17748	Alonso	2023	Constraining cosmology with the Gaia-unWISE Quasar Catalog and CMB lensing: structure growth	results
+Piccirilli2024	2402.05761	Piccirilli	2024	Growth history and quasar bias evolution at z < 3 from Quaia	results
+Alonso2024	2410.24134	Alonso	2024	Measurement of the power spectrum turnover scale from the cross-correlation between CMB lensing and Quaia	results
+Fabbian2025	2504.20992	Fabbian	2025	Constraints on primordial non-Gaussianity from Quaia	results
+EmbilVillagra2025	2507.08798	Embil Villagra	2025	The Atacama Cosmology Telescope: High-redshift measurement of structure growth from the cross-correlation of Quaia quasars and CMB lensing from ACT DR6 and $\textit{Planck}$ PR4	results
+deBelsunce2025	2506.22416	de Belsunce	2025	Cosmology from Planck CMB Lensing and DESI DR1 Quasar Tomography	results
+Chiarenza2025	2512.17865	Chiarenza	2025	Constraining primordial non-Gaussianity from DESI DR1 quasars and Planck PR4 CMB Lensing	results
+BermejoCliment2024	2412.10279	Bermejo-Climent	2024	Constraints on primordial non-Gaussianity from the cross-correlation of DESI Luminous Red Galaxies and $Planck$ CMB lensing	results
+Ouellette2026	2606.26223	Ouellette	2026	Cross-correlation of SPT-3G D1 CMB lensing and DES Y3 galaxy lensing	results
+Abbott2022	2206.10824	Abbott	2022	Joint analysis of DES Year 3 data and CMB lensing from SPT and Planck III: Combined cosmological constraints	results
+Chang2022	2203.12440	Chang	2022	Joint analysis of DES Year 3 data and CMB lensing from SPT and Planck II: Cross-correlation measurements and cosmological constraints	results
+Marques2023	2306.17268	Marques	2023	Cosmological constraints from the tomography of DES-Y3 galaxies with CMB lensing from ACT DR4	results
+Shaikh2023	2309.04412	Shaikh	2023	Cosmology from Cross-Correlation of ACT-DR4 CMB Lensing and DES-Y3 Cosmic Shear	results
+BaleatoLizancos2023	2301.10242	Baleato Lizancos	2023	Model independent variance cancellation in CMB lensing cross-correlations	method
+BaleatoLizancos2025	2507.03859	Baleato Lizancos	2025	A halo model of extragalactic contamination to CMB lensing, delensing, and cross-correlations	systematics
+Zhou2023	2309.06443	Zhou	2023	DESI luminous red galaxy samples for cross-correlations	data
+Wenzl2024	2405.12795	Wenzl	2024	The Atacama Cosmology Telescope: DR6 Gravitational Lensing and SDSS BOSS cross-correlation measurement and constraints on gravity with the $E_G$ statistic	results
+Rubiola2025	2510.09563	Rubiola	2025	Low-redshift constraints on structure growth from CMB lensing tomography	results
+Verdiani2025	2510.17796	Verdiani	2025	Cosmological constraints from the angular power spectrum and bispectrum of luminous red galaxies and CMB lensing	results
+Ivanov2026	2601.16165	Ivanov	2026	Reanalyzing DESI DR1: 4. Percent-Level Cosmological Constraints from Combined Probes and Robust Evidence for the Normal Neutrino Mass Hierarchy	results
+Xu2025	2510.25596	Xu	2025	Constraining baryonic feedback and cosmology from DES Y3 and Planck PR4 6$\times$2pt data. I. $Λ$CDM models	results
+Sartori2026	2605.19763	Sartori	2026	CMB lensing imprints of cosmic voids in DESI Legacy Survey DR9 LRGs with photometric redshift calibration	results
+Qin2026	2603.09457	Qin	2026	Exploring the $S_8$ Tension: Insights from the CatNorth 1.5-Million Quasar Candidates	results
+Sabogal2025	2505.24465	Sabogal	2025	Robust Evidence for Dynamical Dark Energy from DESI Galaxy-CMB Lensing Cross-Correlation and Geometric Probes	critique
+Smith2018	1810.13423	Smith	2018	KSZ tomography and the bispectrum	method
+Hand2012	1203.4219	Hand	2012	Evidence of Galaxy Cluster Motions with the Kinematic Sunyaev-Zel'dovich Effect	foundation
+Calafut2021	2101.08374	Calafut	2021	The Atacama Cosmology Telescope: Detection of the Pairwise Kinematic Sunyaev-Zel'dovich Effect with SDSS DR15 Galaxies	results
+Gong2025	2511.23417	Gong	2025	Detection of the Pairwise Kinematic Sunyaev-Zel'dovich Effect and Pairwise Velocity with DESI DR1 Galaxies and ACT DR6 and Planck CMB Data	results
+Hadzhiyska2025pairwise	2510.14135	Hadzhiyska	2025	Probing cosmic velocities with the pairwise kinematic Sunyaev-Zel'dovich signal in DESI Bright Galaxy Sample DR1 and ACT DR6	results
+Gong2026	2609.36355	Gong	2026	Probing Baryons with the Kinematic Sunyae Zel'dovich Effect and Machine Learning Derived Peculiar Velocities using DESI DR2 and ACT DR6	results
+Schaan2015	1510.06442	Schaan	2015	Evidence for the kinematic Sunyaev-Zeľdovich effect with ACTPol and velocity reconstruction from BOSS	foundation
+Schaan2020	2009.05557	Schaan	2020	The Atacama Cosmology Telescope: Combined kinematic and thermal Sunyaev-Zel'dovich measurements from BOSS CMASS and LOWZ halos	results
+MallabyKay2023	2305.06792	Mallaby-Kay	2023	The Kinematic Sunyaev-Zel'dovich Effect with ACT, DES, and BOSS: a Novel Hybrid Estimator	method
+Hadzhiyska2024	2407.07152	Hadzhiyska	2024	Evidence for large baryonic feedback at low and intermediate redshifts from kinematic Sunyaev-Zel'dovich observations with ACT and DESI photometric galaxies	results
+RiedGuachalla2025	2503.19870	Ried Guachalla	2025	Backlighting extended gas halos around luminous red galaxies: kinematic Sunyaev-Zel'dovich effect from DESI Y1 x ACT	results
+Qu2026	2604.19744	Qu	2026	Precision Kinematic Sunyaev--Zel'dovich Measurements Across Halo Mass and Redshift with DESI DR2 and ACT DR6: Part I. Luminous Red Galaxies	results
+Hadzhiyska2026	2604.19745	Hadzhiyska	2026	Precision Kinematic Sunyaev--Zel'dovich Measurements Across Halo Mass and Redshift with DESI DR2 and ACT DR6: Part II. Bright Galaxy Survey and Emission-Line Galaxies	results
+Hotinli2026Pge	2609.17676	Hotinli	2026	The galaxy-electron cross-spectrum with ACT, SPT-3G and DESILS LRGs	results
+Hill2016	1603.01608	Hill	2016	The Kinematic Sunyaev-Zel'dovich Effect with Projected Fields: A Novel Probe of the Baryon Distribution with Planck, WMAP, and WISE Data	foundation
+Kusiak2021	2102.01068	Kusiak	2021	Constraining the Baryon Abundance with the Kinematic Sunyaev-Zel'dovich Effect: Projected-Field Detection Using Planck, WMAP, and unWISE	results
+McCarthy2024	2410.06229	McCarthy	2024	The Atacama Cosmology Telescope: Large-scale velocity reconstruction with the kinematic Sunyaev--Zel'dovich effect and DESI LRGs	results
+Lai2025	2506.21684	Lai	2025	KSZ Velocity Reconstruction with ACT and DESI-LS using a Tomographic QML Power Spectrum Estimator	results
+McCarthy2025	2511.15701	McCarthy	2025	The Atacama Cosmology Telescope: Cross-correlation of kSZ and continuity equation velocity reconstruction with photometric DESI LRGs	results
+EmbilVillagra2026	2603.28746	Embil Villagra	2026	Estimation and mitigation of foregrounds in projected kSZ velocity reconstruction	systematics
+Chaussidon2026	2604.04867	Chaussidon	2026	Measurement of the galaxy-velocity power spectrum of DESI tracers with the kinematic Sunyaev-Zeldovich effect using DESI DR2 and ACT DR6	results
+Amodeo2020	2009.05558	Amodeo	2020	The Atacama Cosmology Telescope: Modeling the Gas Thermodynamics in BOSS CMASS galaxies from Kinematic and Thermal Sunyaev-Zel'dovich Measurements	results
+Hadzhiyska2025gas	2507.14136	Hadzhiyska	2025	Missing baryons recovered: a measurement of the gas fraction in galaxies and groups with the kinematic Sunyaev-Zel'dovich effect and CMB lensing	results
+Roper2025	2510.12553	Roper	2025	Mass dependence of halo baryon fractions from the kinetic Sunyaev-Zeldovich effect	results
+Bigwood2025	2510.15822	Bigwood	2025	The kinetic Sunyaev Zeldovich effect as a benchmark for AGN feedback models in hydrodynamical simulations: insights from DESI + ACT	results
+Siegel2025a	2509.10455	Siegel	2025	Joint X-ray, kinetic Sunyaev-Zeldovich, and weak lensing measurements: toward a consensus picture of efficient gas expulsion from groups and clusters	results
+Siegel2025b	2512.02954	Siegel	2025	The suppression of the matter power spectrum: strong feedback from X-ray gas mass fractions, kSZ effect profiles, and galaxy-galaxy lensing	results
+Bigwood2024	2404.06098	Bigwood	2024	Weak lensing combined with the kinetic Sunyaev Zel'dovich effect: A study of baryonic feedback	results
+Liu2026	2609.22466	Liu	2026	Model-Independent Measurement of Baryon Gas Fractions through Galaxy-Galaxy Lensing and the Kinematic Sunyaev-Zel'dovich Effect	results
+Sunseri2025	2505.20413	Sunseri	2025	Disentangling the Halo: Joint Model for Measurements of the Kinetic Sunyaev-Zeldovich Effect and Galaxy-Galaxy Lensing	systematics
+Hadzhiyska2025screening	2506.17379	Hadzhiyska	2025	Mapping the gas density with the kinematic Sunyaev-Zel'dovich and patchy screening effects: a self-consistent comparison	results
+Gallardo2026	2604.14327	Gallardo	2026	The Atacama Cosmology Telescope: A Test of the Gravitational Force Law on Cosmological Scales Using the Kinematic Sunyaev-Zeldovich Effect	results
+Chaubal2026	2601.20551	Chaubal	2026	SPT-3G D1: A Measurement of Secondary Cosmic Microwave Background Anisotropy Power	results
+Pandey2019	1904.13347	Pandey	2019	Constraints on the redshift evolution of astrophysical feedback with Sunyaev-Zeldovich effect cross-correlations	results
+Sanchez2022	2210.08633	Sánchez	2022	Mapping gas around massive galaxies: cross-correlation of DES Y3 galaxies and Compton-$y$-maps from SPT and Planck	results
+LaPosta2026	2603.04269	Posta	2026	Joint tomographic measurement of thermal Sunyaev Zeldovich and the cosmic infrared background	results
+Salcido2026	2605.11083	Salcido	2026	FLAMINGO: The thermal history of the Universe from tSZ effect cross-correlations and its dependencies on cosmology and baryon physics	results
+Zhao2026	2606.28099	Zhao	2026	Thermal Sunyaev-Zel'dovich cross-correlations with unWISE galaxies: disentangling radio contamination, dust properties, and electron pressure	systematics
+Moore2026	2609.08939	Moore	2026	Optical Depths from the Thermal Sunyaev-Zel'dovich Effect with ACT DR6 and DESI DR1 Spectroscopic Galaxies and Optically-Selected Clusters	results
+VanWaerbeke2013	1310.5721	Van Waerbeke	2013	Detection of warm and diffuse baryons in large scale structure from the cross-correlation of gravitational lensing and the thermal Sunyaev-Zeldovich effect	foundation
+Gatti2021	2108.01600	Gatti	2021	Cross-correlation of DES Y3 lensing and ACT/${\it Planck}$ thermal Sunyaev Zel'dovich Effect I: Measurements, systematics tests, and feedback model constraints	results
+Pandey2025	2506.07432	Pandey	2025	Constraints on cosmology and baryonic feedback with joint analysis of Dark Energy Survey Year 3 lensing data and ACT DR6 thermal Sunyaev-Zel'dovich effect observations	results
+Wayland2026	2609.31774	Wayland	2026	Joint measurements of thermal Sunyaev-Zel'dovich and cosmic infrared background cross-correlations with cosmic shear	results
+LaPosta2024	2412.12081	Posta	2024	$X+y$: insights on gas thermodynamics from the combination of X-ray and thermal Sunyaev-Zel'dovich data cross-correlated with cosmic shear	results
+McCarthy2023	2308.16260	McCarthy	2023	Cross-correlation of the thermal Sunyaev--Zel'dovich and CMB lensing signals in Planck PR4 data with robust CIB decontamination	results
+Planck2015XXI	1502.01595	Planck Collaboration	2015	Planck 2015 results. XXI. The integrated Sachs-Wolfe effect	results
+Stolzner2017	1710.03238	Stölzner	2017	An Updated Tomographic Analysis of the Integrated Sachs-Wolfe Effect and implications for Dark Energy	results
+Krolewski2021ISW	2110.13959	Krolewski	2021	The Integrated Sachs Wolfe effect: unWISE and Planck constraints on Dynamical Dark Energy	results
+GhodsiYengejeh2026	2607.22461	Ghodsi Yengejeh	2026	Probing dark energy evolution with Quaia quasars through the integrated Sachs-Wolfe effect	results
+Nadathur2016	1608.08638	Nadathur	2016	A detection of the integrated Sachs-Wolfe imprint of cosmic superstructures using a matched-filter approach	results
+Kovacs2018	1811.07812	Kovács	2018	More out of less: an excess integrated Sachs-Wolfe signal from supervoids mapped out by the Dark Energy Survey	results
+Kovacs2021	2107.13038	Kovács	2021	Evidence for a high-z ISW signal from supervoids in the distribution of eBOSS quasars	results
+Hang2021	2105.11936	Hang	2021	Stacked CMB lensing and ISW signals around superstructures in the DESI Legacy Survey	results
+Hansen2025	2506.08832	Hansen	2025	Evidence for a sign change of the ISW effect in the very recent universe? hot voids and cold overdensities at $z<0.03$	critique
+Troster2021	2109.04458	Tröster	2021	Joint constraints on cosmology and the impact of baryon feedback: combining KiDS-1000 lensing with the thermal Sunyaev-Zeldovich effect from Planck and ACT	results
+Chiang2020	2006.14650	Chiang	2020	The Cosmic Thermal History Probed by Sunyaev-Zeldovich Effect Tomography	results
+OndaroMallea2026	2607.23339	Ondaro-Mallea	2026	Interpreting the stacked kinetic SZ effect I: velocity reconstruction and non-linear velocity effects	systematics
+McCarthy2024FLAMINGO	2410.19905	McCarthy	2024	FLAMINGO: combining kinetic SZ effect and galaxy-galaxy lensing measurements to gauge the impact of feedback on large-scale structure	results
+Hotinli2026ML	2605.18938	Hotinli	2026	First detection of the moving lens effect with ACT and DESI LS	results
+Thornton2026	2605.03783	Thornton	2026	New constraints on primordial non-Gaussianity from large-scale cross-correlations of CMB lensing and the cosmic infrared background	results
+Hertig2025	2511.21949	Hertig	2025	The Atacama Cosmology Telescope: $B$-mode delensing with DR6 data and external tracers of large-scale structure	results
+Coulton2023	2307.01258	Coulton	2023	The Atacama Cosmology Telescope: High-resolution component-separated maps across one-third of the sky	data
+Madhavacheril2023	2304.05203	Madhavacheril	2023	The Atacama Cosmology Telescope: DR6 Gravitational Lensing Map and Cosmological Parameters	data
+MacCrann2023	2304.05196	MacCrann	2023	The Atacama Cosmology Telescope: Mitigating the impact of extragalactic foregrounds for the DR6 CMB lensing analysis	systematics
+Kramer2026	2608.27458	Kramer	2026	The Atacama Cosmology Telescope: Constraints on the anisotropic screening and birefringence effects with DR6	results
+Yang2026	2603.14494	Yang	2026	A measurement of gas rotation in galaxy groups via the kinetic Sunyaev-Zeldovich effect	results
+Krywonos2026	2607.16071	Krywonos	2026	Constraints on the remote quadrupole field from the polarized Sunyaev Zel'dovich effect	results
+Hotinli2025vrec	2506.21657	Hotinli	2025	Velocity Reconstruction from KSZ: Measuring $f_{NL}$ with ACT and DESILS	results

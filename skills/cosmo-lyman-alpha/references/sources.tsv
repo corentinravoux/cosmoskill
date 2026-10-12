@@ -1,0 +1,173 @@
+key	id	first_author	year	title	role
+GunnPeterson1965	doi:10.1086/148444	Gunn	1965	On the Density of Neutral Hydrogen in Intergalactic Space	foundation
+HuiGnedin1997	astro-ph/9612232	Hui	1997	Equation of State of the Photoionized Intergalactic Medium	foundation
+Croft1998	astro-ph/9708018	Croft	1998	Recovery of the Power Spectrum of Mass Fluctuations from Observations of the Lyman-alpha Forest	foundation
+Rauch1998	astro-ph/9806286	Rauch	1998	The Lyman Alpha Forest in the Spectra of QSOs	review
+Weinberg2003	astro-ph/0301186	Weinberg	2003	The Lyman-alpha Forest as a Cosmological Tool	review
+McDonald2003	astro-ph/0108064	McDonald	2003	Toward a Measurement of the Cosmological Geometry at z~2: Predicting Lyman-alpha Forest Correlation in Three Dimensions, and the Potential of Future Data Sets	foundation
+McDonald2006	astro-ph/0405013	McDonald	2006	The Lyman-alpha Forest Power Spectrum from the Sloan Digital Sky Survey	data
+McDonald2005	astro-ph/0407377	McDonald	2005	The Linear Theory Power Spectrum from the Lyman-alpha Forest in the Sloan Digital Sky Survey	results
+Seljak2005	astro-ph/0407372	Seljak	2005	Cosmological parameter analysis including SDSS Ly-alpha forest and galaxy bias: constraints on the primordial spectrum of fluctuations, neutrino mass, and dark energy	results
+McDonaldEisenstein2007	astro-ph/0607122	McDonald	2007	Dark energy and curvature from a future baryonic acoustic oscillation survey using the Lyman-alpha forest	forecast
+Meiksin2009	0711.3358	Meiksin	2009	The Physics of the Intergalactic Medium	review
+McQuinn2016	1512.00086	McQuinn	2016	The Evolution of the Intergalactic Medium	review
+ChavesMontero2026ML	2605.22489	Chaves-Montero	2026	Machine Learning Techniques for Astrophysics and Cosmology: Lyman-$α$ forest	review
+FaucherGiguere2008	0710.4522	Faucher-Giguere	2008	A Century of Cosmology: A Direct Precision Measurement of the Intergalactic Lyman-alpha Opacity at 2<z<4.2	results
+Becker2013	1208.2584	Becker	2013	A Refined Measurement of the Mean Transmitted Flux in the Ly-alpha Forest over 2 < z < 5 Using Composite Quasar Spectra	results
+BeckerBolton2013	1307.2259	Becker	2013	New Measurements of the Ionizing Ultraviolet Background over 2 < z < 5 and Implications for Hydrogen Reionization	results
+Turner2024	2405.06743	Turner	2024	New measurements of the Lyman-$α$ forest continuum and effective optical depth with LyCAN and DESI Y1 data	results
+Lee2012	1108.6080	Lee	2012	Mean-flux Regulated PCA Continuum Fitting of SDSS Lyman-alpha Forest Spectra	method
+HaardtMadau2012	1105.2039	Haardt	2012	Radiative transfer in a clumpy universe: IV. New synthesis models of the cosmic UV/X-ray background	method
+Puchwein2015	1410.1531	Puchwein	2015	The photoheating of the intergalactic medium in synthesis models of the UV background	method
+Onorbe2017	1607.04218	Oñorbe	2017	Self-Consistent Modeling of Reionization in Cosmological Hydrodynamical Simulations	method
+Slosar2011	1104.5244	Slosar	2011	The Lyman-alpha forest in three dimensions: measurements of large scale flux correlations from BOSS 1st-year data	results
+Busca2013	1211.2616	Busca	2013	Baryon Acoustic Oscillations in the Ly-α forest of BOSS quasars	results
+Slosar2013	1301.3459	Slosar	2013	Measurement of Baryon Acoustic Oscillations in the Lyman-alpha Forest Fluctuations in BOSS Data Release 9	results
+Kirkby2013	1301.3456	Kirkby	2013	Fitting Methods for Baryon Acoustic Oscillations in the Lyman-α Forest Fluctuations in BOSS Data Release 9	method
+FontRibera2014	1311.1767	Font-Ribera	2014	Quasar-Lyman $α$ Forest Cross-Correlation from BOSS DR11 : Baryon Acoustic Oscillations	results
+Delubac2015	1404.1801	Delubac	2015	Baryon Acoustic Oscillations in the Lyα forest of BOSS DR11 quasars	results
+Bautista2017	1702.00176	Bautista	2017	Measurement of BAO correlations at $z=2.3$ with SDSS DR12 \lya-Forests	results
+duMasdesBourboux2017	1708.02225	du Mas des Bourboux	2017	Baryon acoustic oscillations from the complete SDSS-III Ly$α$-quasar cross-correlation function at $z=2.4$	results
+deSainteAgathe2019	1904.03400	de Sainte Agathe	2019	Baryon acoustic oscillations at z = 2.34 from the correlations of Ly$α$ absorption in eBOSS DR14	results
+Blomqvist2019	1904.03430	Blomqvist	2019	Baryon acoustic oscillations from the cross-correlation of Ly$α$ absorption and quasars in eBOSS DR14	results
+duMasdesBourboux2020	2007.08995	du Mas des Bourboux	2020	The Completed SDSS-IV extended Baryon Oscillation Spectroscopic Survey: Baryon acoustic oscillations with Lyman-$α$ forests	results
+Cuceu2023val	2209.12931	Cuceu	2023	The Alcock-Paczyński effect from Lyman-$α$ forest correlations: Analysis validation with synthetic data	method
+Cuceu2023	2209.13942	Cuceu	2023	Constraints on the cosmic expansion rate at redshift 2.3 from the Lyman-$α$ forest	results
+RamirezPerez2024	2306.06312	Ramírez-Pérez	2024	The Lyman-$α$ forest catalog from the Dark Energy Spectroscopic Instrument Early Data Release	data
+Gordon2023	2308.10950	Gordon	2023	3D Correlations in the Lyman-$α$ Forest from Early DESI Data	results
+DESI2024IV	2404.03001	DESI Collaboration	2024	DESI 2024 IV: Baryon Acoustic Oscillations from the Lyman Alpha Forest	results
+DESI2024VI	2404.03002	DESI Collaboration	2024	DESI 2024 VI: Cosmological Constraints from the Measurements of Baryon Acoustic Oscillations	results
+Guy2025	2404.03003	Guy	2025	Characterization of contaminants in the Lyman-alpha forest auto-correlation with DESI	systematics
+Cuceu2025val	2404.03004	Cuceu	2025	Validation of the DESI 2024 Ly$α$ forest BAO analysis using synthetic datasets	method
+DESI2025DR2Lya	2503.14739	DESI Collaboration	2025	DESI DR2 Results I: Baryon Acoustic Oscillations from the Lyman Alpha Forest	results
+DESI2025DR2BAO	2503.14738	DESI Collaboration	2025	DESI DR2 Results II: Measurements of Baryon Acoustic Oscillations and Cosmological Constraints	results
+Brodzeller2025	2503.14740	Brodzeller	2025	Construction of the Damped Ly$α$ Absorber Catalog for DESI DR2 Ly$α$ BAO	systematics
+Casas2025	2503.14741	Casas	2025	Validation of the DESI DR2 Ly$α$ BAO analysis using synthetic datasets	method
+Cuceu2025FS	2509.15308	Cuceu	2025	DESI DR1 Ly$α$ forest: 3D full-shape analysis and cosmological constraints	results
+Karacayli2026mult	2603.04281	Karaçaylı	2026	DESI DR2 Baryon Acoustic Oscillations from the Lyman Alpha Forest Multipoles	results
+HerreraAlcantar2026	2607.19619	Herrera-Alcantar	2026	Probing the matter-dominated expansion with multi-redshift Lyman-$α$ BAO from DESI DR2	results
+PerezSanchez2026	2607.07875	Perez-Sanchez	2026	Alcock-Paczynski Blinding Scheme for the Ly-$α$ Forest Analysis	method
+DESI2026AP	2607.27410	DESI Collaboration	2026	DESI DR2 Results IV: Alcock-Paczyński Measurements from the Lyman Alpha Forest and Cosmological Constraints	results
+Herbold2026	2607.27411	Herbold	2026	Validation of the DESI DR2 Ly$α$ forest full-shape analysis	method
+RuizHerrera2026	2607.27412	Ruiz-Herrera Bernal	2026	CoLoRe-2LPT: Lyman-$α$ mock catalogues for the validation of DESI cosmological analyses	method
+ChavesMontero2026holo	2607.27413	Chaves-Montero	2026	Lyman-$α$ forest holography: 3D predictions from 1D measurements	results
+Bault2026	2601.08103	Bault	2026	Baryon Acoustic Oscillations from the C IV Forest with DESI DR2	results
+HerreraAlcantar2025LBG	2507.21852	Herrera-Alcantar	2025	The Lyman-$α$ Forest from LBGs: First 3D Correlation Measurement with DESI and Prospects for Cosmology	results
+Busca2025	2506.15262	Busca	2025	The effects of continuum fitting on Lyman-$α$ forest correlations	systematics
+Tan2025	2506.13005	Tan	2025	Modeling of the High Column Density systems in The Lyman-Alpha Forest	systematics
+Rogers2018	1711.06275	Rogers	2018	Correlations in the three-dimensional Lyman-alpha forest contaminated by high column density absorbers	systematics
+SoaresdaSilva2026	2609.19235	Soares da Silva	2026	Where the Forest Goes Dark: Halo-centered Characterization of High Column Density Systems with IllustrisTNG	systematics
+Chabanier2022DLA	2107.09612	Chabanier	2022	The Completed SDSS-IV extended Baryon Oscillation Spectroscopic Survey: The Damped Lyman-$α$ systems Catalog	data
+Ho2021	2103.10964	Ho	2021	Damped Lyman-alpha Absorbers from Sloan Digital Sky Survey DR16Q with Gaussian processes	data
+Ennesser2022	2111.09439	Ennesser	2022	The impact and mitigation of broad absorption line quasars in Lyman$-α$ forest correlations	systematics
+Martini2025	2405.09737	Martini	2025	Validation of the DESI 2024 Lyman Alpha Forest BAL Masking Strategy	systematics
+Youles2022	2205.06648	Youles	2022	The effect of quasar redshift errors on Lyman-$α$ forest correlation functions	systematics
+Bault2025	2402.18009	Bault	2025	Impact of Systematic Redshift Errors on the Cross-correlation of the Lyman-$α$ Forest with Quasars at Small Scales Using DESI Early Data	systematics
+Pontzen2014	1402.0506	Pontzen	2014	Scale-dependent bias in the BAO-scale intergalactic neutral hydrogen	systematics
+GontchoAGontcho2014	1404.7425	Gontcho A Gontcho	2014	On the effect of the ionising background on the Lyα forest autocorrelation function	systematics
+Hadzhiyska2023	2305.08899	Hadzhiyska	2023	Planting a Lyman alpha forest on AbacusSummit	method
+Hadzhiyska2025	2503.13442	Hadzhiyska	2025	Measuring and unbiasing the BAO shift in the Lyman-Alpha forest with AbacusSummit	systematics
+deBelsunce2025ACCEL	2412.06892	de Belsunce	2025	The ACCEL2 Project: Precision Measurements of EFT Parameters and BAO Peak Shifts for the Lyman-$α$ Forest	systematics
+Arinyo2015	1506.04519	Arinyo-i-Prats	2015	The Non-Linear Power Spectrum of the Lyman Alpha Forest	method
+Givans2022	2205.00962	Givans	2022	Non-linearities in the Lyman-$α$ forest and in its cross-correlation with dark matter halos	method
+Ivanov2024	2309.10133	Ivanov	2024	Don't miss the forest for the trees: the Lyman alpha forest power spectrum in effective field theory	method
+Ivanov2025	2405.13208	Ivanov	2025	Fundamental physics with the Lyman-alpha forest: constraints on the growth of structure and neutrino masses from SDSS with effective field theory	results
+deBelsunce2025field	2507.00284	de Belsunce	2025	Modeling the Cosmological Lyman-$α$ Forest at the Field Level	method
+deBelsunce2026	2606.26234	de Belsunce	2026	Lyman-Alpha Forest and its Cross-Correlation with High-Redshift Galaxies in Effective Field Theory at the Field Level	method
+Karacayli2026EFT	2604.09407	Karaçaylı	2026	Analytic compression of the effective field theory of the Lyman-alpha forest	forecast
+PalanqueDelabrouille2013	1306.5896	Palanque-Delabrouille	2013	The one-dimensional Ly-alpha forest power spectrum from BOSS	data
+Chabanier2019	1812.03554	Chabanier	2019	The one-dimensional power spectrum from the SDSS DR14 Ly$α$ forests	data
+Karacayli2020	2008.06421	Karaçaylı	2020	Optimal 1D Ly-$α$ Forest Power Spectrum Estimation I: DESI-Lite Spectra	method
+Karacayli2022	2108.10870	Karaçaylı	2022	Optimal 1D Ly$α$ Forest Power Spectrum Estimation -- II. KODIAQ, SQUAD & XQ-100	data
+Ravoux2023	2306.06311	Ravoux	2023	The Dark Energy Spectroscopic Instrument: One-dimensional power spectrum from first Lyman-$α$ forest samples with Fast Fourier Transform	data
+Karacayli2024	2306.06316	Karaçaylı	2024	Optimal 1D Ly$α$ Forest Power Spectrum Estimation -- III. DESI early data	data
+Ravoux2025	2505.09493	Ravoux	2025	DESI DR1 Lyα 1D power spectrum: The Fast Fourier Transform estimator measurement	data
+Karacayli2025	2505.07974	Karaçaylı	2025	DESI DR1 Ly$α$ 1D power spectrum: The optimal estimator measurement	data
+Karacayli2025val	2509.13593	Karaçaylı	2025	DESI DR1 Ly$α$ 1D power spectrum: Validation of estimators	systematics
+Walther2018	1709.07354	Walther	2018	A New Precision Measurement of the Small-Scale Line-of-Sight Power Spectrum of the Ly$α$ Forest	data
+Irsic2017XQ	1702.01761	Iršič	2017	The Lyman-alpha forest power spectrum from the XQ-100 Legacy Survey	data
+Boera2019	1809.06980	Boera	2019	Revealing reionization with the thermal history of the intergalactic medium: new constraints from the Lyman-$α$ flux power spectrum	data
+PalanqueDelabrouille2015a	1410.7244	Palanque-Delabrouille	2015	Constraint on neutrino masses from SDSS-III/BOSS Ly$α$ forest and other cosmological probes	results
+PalanqueDelabrouille2015b	1506.05976	Palanque-Delabrouille	2015	Neutrino masses and cosmology with Lyman-alpha forest power spectrum	results
+Yeche2017	1702.03314	Yeche	2017	Constraints on neutrino masses from Lyman-alpha forest power spectrum with BOSS and XQ-100	results
+PalanqueDelabrouille2020	1911.09073	Palanque-Delabrouille	2020	Hints, neutrino bounds and WDM constraints from SDSS DR14 Lyman-$α$ and Planck full-survey data	results
+Fernandez2024	2309.03943	Fernandez	2024	Cosmological Constraints from the eBOSS Lyman-$α$ Forest using the PRIYA Simulations	results
+Walther2025	2412.05372	Walther	2025	Emulating the Lyman-Alpha forest 1D power spectrum from cosmological simulations: New models and constraints from the eBOSS measurement	results
+ChavesMontero2026	2601.21432	Chaves-Montero	2026	Cosmological analysis of the DESI DR1 Lyman alpha 1D power spectrum	results
+Chebat2025	2507.12401	Chebat	2025	Cosmological neutrino mass: a frequentist overview in light of DESI	results
+RogersPoulin2025	2311.16377	Rogers	2025	$5 σ$ tension between Planck cosmic microwave background and eBOSS Lyman-alpha forest and constraints on physics beyond $Λ$CDM	critique
+Goldstein2023	2303.00746	Goldstein	2023	Canonical Hubble-Tension-Resolving Early Dark Energy Cosmologies are Inconsistent with the Lyman-$α$ Forest	results
+Ho2025	2509.18271	Ho	2025	Small-scale Lyman alpha forest cosmology with PRIYA: Constraints from XQ100 and KODIAQ-SQUAD one-dimensional flux power spectra	results
+Silva2026	2609.22581	Silva	2026	Hunting Thermal Relics in the DESI DR1 Ly$α$ Forest	results
+He2025	2503.15592	He	2025	Fresh Look at Neutrino Self-Interactions With the Lyman-$α$ Forest: Constraints from EFT and PRIYA Simulations	results
+Viel2013	1306.2314	Viel	2013	Warm Dark Matter as a solution to the small scale crisis: new constraints from high redshift Lyman-alpha forest data	results
+Baur2016	1512.01981	Baur	2016	Lyman-alpha Forests cool Warm Dark Matter	results
+Irsic2017WDM	1702.01764	Iršič	2017	New Constraints on the free-streaming of warm dark matter from intermediate and small scale Lyman-$α$ forest data	results
+Irsic2017FDM	1703.04683	Iršič	2017	First constraints on fuzzy dark matter from Lyman-$α$ forest data and hydrodynamical simulations	results
+Hui2017	1610.08297	Hui	2017	Ultralight scalars as cosmological dark matter	foundation
+Garzilli2021	1912.09397	Garzilli	2021	How to constrain warm dark matter with the Lyman $α$ forest	critique
+RogersPeiris2021	2007.12705	Rogers	2021	Strong bound on canonical ultra-light axion dark matter from the Lyman-alpha forest	results
+Villasenor2023	2209.14220	Villasenor	2023	New Constraints on Warm Dark Matter from the Lyman-$α$ Forest Power Spectrum	results
+Irsic2024	2309.04533	Iršič	2024	Unveiling Dark Matter free-streaming at the smallest scales with high redshift Lyman-alpha forest	results
+GarciaGallego2025	2504.06367	Garcia-Gallego	2025	Constraining Mixed Dark Matter models with high redshift Lyman-alpha forest data	results
+Liu2026	2606.06969	Liu	2026	Lyman-$α$ forest constraints on pure and mixed fuzzy dark matter	results
+Zhang2026	2605.26518	Zhang	2026	Unveiling the dark matter nature with reionization relics	forecast
+Walther2019	1808.04367	Walther	2019	New Constraints on IGM Thermal Evolution from the Lyα Forest Power Spectrum	results
+Gaikwad2020	2001.10018	Gaikwad	2020	Probing the thermal state of the intergalactic medium at $z>5$ with the transmission spikes in high-resolution Ly$α$ forest spectra	results
+Gaikwad2021	2009.00016	Gaikwad	2021	A consistent and robust measurement of the thermal state of the IGM at $2 \leq z \leq 4$ from a large sample of Ly$α$ forest spectra: Evidence for late and rapid HeII reionization	results
+Bosman2022	2108.03699	Bosman	2022	Hydrogen reionisation ends by $z=5.3$: Lyman-$α$ optical depth measured by the XQR-30 sample	results
+MonteroCamacho2019	1902.02892	Montero-Camacho	2019	Impact of inhomogeneous reionization on the Lyman-$α$ forest	systematics
+Molaro2022	2109.06897	Molaro	2022	The effect of inhomogeneous reionisation on the Lyman-$α$ forest power spectrum at redshift $z>4$: implications for thermal parameter recovery	systematics
+Irsic2026	2607.19938	Iršič	2026	Ringing of the Reionization: A first direct measurement of the intergalactic pressure smoothing scale at redshift z>4.2 as imprinted onto small-scale peculiar velocities in the Lyman-alpha forest	results
+GarciaGallego2025tau	2510.00107	Garcia-Gallego	2025	Constraints on the Thomson optical depth to the CMB from the Lyman-$α$ forest	results
+Almgren2013	1301.4498	Almgren	2013	Nyx: A Massively Parallel AMR Code for Computational Cosmology	code
+Lukic2015	1406.6361	Lukić	2015	The Lyman-$α$ forest in optically-thin hydrodynamical simulations	method
+Bolton2017	1605.03462	Bolton	2017	The Sherwood simulation suite: overview and data comparisons with the Lyman-alpha forest at redshifts 2 < z < 5	method
+Puchwein2023	2207.13098	Puchwein	2023	The Sherwood-Relics simulations: overview and impact of patchy reionization and pressure smoothing on the intergalactic medium	method
+Walther2021	2012.04008	Walther	2021	Simulating intergalactic gas for DESI-like small scale Lymanα forest observations	method
+Chabanier2023	2207.05023	Chabanier	2023	Modeling the Lyman-$α$ forest with Eulerian and SPH hydrodynamical methods	method
+Chabanier2024	2407.04473	Chabanier	2024	The ACCEL$^2$ project: simulating Lyman-$α$ forest in large-volume hydrodynamical simulations	method
+Bird2023	2306.05471	Bird	2023	PRIYA: A New Suite of Lyman-alpha Forest Simulations for Cosmology	method
+Pedersen2021	2011.15127	Pedersen	2021	An emulator for the Lyman-$α$ forest in beyond-$Λ$CDM cosmologies	method
+CabayolGarcia2023	2305.19064	Cabayol-Garcia	2023	A neural network emulator for the Lyman-$α$ 1D flux power spectrum	method
+ChavesMontero2025	2409.05682	Chaves-Montero	2025	ForestFlow: predicting the Lyman-$α$ forest clustering from linear to nonlinear scales	method
+Sinigaglia2026	2603.13011	Sinigaglia	2026	Simulation-based inference from the Lyman-alpha forest 1D power spectrum with CAMELS	method
+Farr2020	1912.02763	Farr	2020	LyaCoLoRe: Synthetic Datasets for Current and Future Lyman-$α$ Forest BAO Surveys	code
+Etourneau2024	2310.18996	Etourneau	2024	Mock data sets for the Eboss and DESI Lyman-$α$ forest surveys	code
+HerreraAlcantar2025	2401.00303	Herrera-Alcantar	2025	Synthetic spectra for Lyman-$α$ forest analysis in the Dark Energy Spectroscopic Instrument	code
+FontRibera2018	1710.11036	Font-Ribera	2018	How to estimate the 3D power spectrum of the Lyman-$α$ forest	method
+AbdulKarim2024	2310.09116	Abdul-Karim	2024	Measurement of the small-scale 3D Lyman-$α$ forest power spectrum	results
+deBelsunce2024	2403.08241	de Belsunce	2024	The 3D Lyman-$α$ Forest Power Spectrum from eBOSS DR16	results
+Karacayli2025P3D	2503.15619	Karaçaylı	2025	Light in the dark forest -- I. An efficient optimal estimator for 3D Lyman-alpha forest power spectrum	method
+Karacayli2025HMC	2506.08198	Karaçaylı	2025	Unified reconstruction of the Lyman-alpha power spectrum with Hamiltonian Monte Carlo	method
+delaCruz2025	2410.09150	de la Cruz	2025	First Ly$α$ 1D Bispectrum Measurement in eBOSS	results
+Karacayli2024lens	2405.14988	Karaçaylı	2024	CMB lensing and Ly$α$ forest cross bispectrum from DESI's first-year quasar sample	results
+Slosar2026	2609.36949	Slosar	2026	Weak Lensing Measurements from the Lyman-$α$ Forest	results
+Lee2014	1409.5632	Lee	2014	Lyman-alpha Forest Tomography from Background Galaxies: The First Megaparsec-Resolution Large-Scale Structure Map at z>2	results
+Lee2018	1710.02894	Lee	2018	First Data Release of the COSMOS Lyman-Alpha Mapping And Tomography Observations: 3D Lyman-$α$ Forest Tomography at 2.05 < z < 2.55	data
+Krolewski2018	1710.02612	Krolewski	2018	A Detection of $z$~2.3 Cosmic Voids from 3D Lyman-$α$ Forest Tomography in the COSMOS Field	results
+Horowitz2022	2109.09660	Horowitz	2022	Second Data Release of the COSMOS Lyman-alpha Mapping and Tomographic Observation: The First 3D Maps of the Detailed Cosmic Web at 2.05<z<2.55	data
+Newman2020	2002.10676	Newman	2020	LATIS: The Ly$α$ Tomography IMACS Survey	data
+Newman2025	2507.10949	Newman	2025	LATIS: Comparing Galaxy and IGM Tomography Maps as Tracers of Large-scale Structure and Protoclusters at $z \sim 2.5$	results
+Newman2025DR	2510.08815	Newman	2025	LATIS Data Release: $\sim4200$ Spectra of $z \sim 2-3$ Galaxies, Redshifts, and Intergalactic Medium Tomography Maps	data
+Ravoux2020	2004.01448	Ravoux	2020	A tomographic map of the large-scale matter distribution using the eBOSS Stripe 82 Ly-$α$ forest	results
+Ravoux2022	2203.11045	Ravoux	2022	First measurement of the correlation between cosmic voids and the Lyman-$α$ forest	results
+Kraljic2022	2201.02606	Kraljic	2022	Forecasts for WEAVE-QSO: 3D clustering and connectivity of critical points with Lyman-$α$ tomography	forecast
+Zhang2025	2509.07453	Zhang	2025	Cross-correlations between the CLAMATO Lyman-alpha forest and galaxies within the COSMOS field	results
+DESI2023EDR	2306.06308	DESI Collaboration	2023	The Early Data Release of the Dark Energy Spectroscopic Instrument	data
+DESI2025DR1	2503.14745	DESI Collaboration	2025	Data Release 1 of the Dark Energy Spectroscopic Instrument	data
+OMeara2017	1707.07905	O'Meara	2017	The Second Data Release of the KODIAQ Survey	data
+Lopez2016	1607.08776	Lopez	2016	XQ-100: A legacy survey of one hundred 3.5 < z < 4.5 quasars observed with VLT/XSHOOTER	data
+Pieri2016	1611.09388	Pieri	2016	WEAVE-QSO: A Massive Intergalactic Medium Survey for the William Herschel Telescope	forecast
+Takada2014	1206.0737	Takada	2014	Extragalactic Science, Cosmology and Galactic Archaeology with the Subaru Prime Focus Spectrograph (PFS)	forecast
+Schlegel2022	2209.03585	Schlegel	2022	A Spectroscopic Road Map for Cosmic Frontier: DESI, DESI-II, Stage-5	forecast
+Besuner2025	2503.07923	Besuner	2025	The Spectroscopic Stage-5 Experiment	forecast
+Zhao2024	2411.07970	Zhao	2024	MUltiplexed Survey Telescope (MUST) Science White Paper I: Overview of Large-Scale Structure Cosmology in the Era of Stage-V Spectroscopic Surveys	forecast
+Dong2023	2303.07619	Dong	2023	Observational Evidence for Large-Scale Gas Heating in a Galaxy Protocluster at z=2.30	results
+Horowitz2024	2403.17294	Horowitz	2024	Maximum A Posteriori Ly-alpha Estimator (MAPLE): Band-power and covariance estimation of the 3D Ly-alpha forest power spectrum	method
+deBelsunce2025HEFT	2512.13681	de Belsunce	2025	Bridging Simulations and EFT: A Hybrid Model of the Lyman-Alpha Forest Field	method
+Payerne2025	2410.08062	Payerne	2025	Selection of high-redshift Lyman-Break Galaxies from broadband and wide photometric surveys	method
+Irsic2026QSO	2609.16992	Iršič	2026	Lyman-$α$ forest 1D flux power spectrum constraints on QSO-assisted reionization models	results
+Fairbairn2025	2511.01612	Fairbairn	2025	Running of the spectral index: Reconciling the CMB with the Lyman-$α$ Forest	critique
+Lokken2025	2505.02904	Lokken	2025	Weighted FFT estimators for 1D and 3D correlations of the Lyman-$α$ forest	method
+Garza2026	2601.00767	Garza	2026	Dynamical Dark Energy Imprints in the Lyman-Alpha Forest	method

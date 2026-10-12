@@ -1,0 +1,94 @@
+---
+name: cosmo-galaxy-clustering
+description: Use when reviewing, planning or fact-checking spectroscopic galaxy or quasar clustering — BAO (D_M/r_d, D_H/r_d, D_V/r_d, reconstruction), RSD and fσ8, Alcock–Paczynski, full-shape, EFTofLSS or ShapeFit fits, f_NL from scale-dependent bias, Landy–Szalay or FKP/Yamamoto estimators, window functions, covariance, blinding, fibre collisions, PIP weights, imaging systematics, HOD — for 2dFGRS, 6dFGS, WiggleZ, BOSS, eBOSS, DESI DR1/DR2, Euclid, PFS, 4MOST, Roman, SPHEREx.
+---
+
+# Spectroscopic galaxy clustering — expert reference
+
+Snapshot 2026-10-07. Numbers carry provenance flags ([src] / [sec] / [der]);
+re-verify against the cited paper before a number enters a manuscript.
+
+## File map
+
+| Question | Load |
+|---|---|
+| Definitions, estimators, EFT/ShapeFit models, covariance, blinding, codes, conventions | `references/physics-and-methods.md` |
+| Instruments, samples, release dates, public data, status | `references/surveys-and-data.md` |
+| BAO tables, ΛCDM and full-shape parameters, fσ8, f_NL, history | `references/results.md` |
+| Systematic budgets, mitigations, referee checklist | `references/systematics.md` |
+| Controversies, method debates, next data, stale claims | `references/open-questions.md` |
+| Bibliography with roles | `references/sources.tsv` |
+
+## What an expert holds in mind
+
+- The latest DESI BAO is DR2 (arXiv:2503.14738); the latest DESI galaxy full
+  shape is still DR1 (arXiv:2411.12021). "DR1 FS + DR2 BAO" papers mix
+  releases (arXiv:2602.18761).
+- BAO measure D/r_d, not H0. DR2 + BBN gives H0 = 68.51 ± 0.58; DR2 alone
+  gives Ω_m = 0.2975 ± 0.0086 (arXiv:2503.14738).
+- DESI DR2 BAO versus CMB in ΛCDM is 2.3σ (arXiv:2503.14738). The 2026 Lyα
+  AP paper quotes its own before and after, 2.4σ and 2.2σ (arXiv:2607.27410).
+- The w0wa preference is 1.7σ for DESI BAO alone, 3.1σ with CMB, 2.8–4.2σ
+  with supernovae depending on the sample, as published (arXiv:2503.14738);
+  the 2025–2026 supernova recalibrations bring the last to 3.2–3.4σ
+  (arXiv:2601.19424; detail in `cosmo-supernovae`).
+- DESI clustering beyond BAO has not strengthened it: 1.4σ for DR1 FS + DR2
+  BAO without CMB (arXiv:2602.18761); the bispectrum weakens it
+  (arXiv:2606.23936).
+- DESI BAO errors are statistics-dominated: systematics add at most 9% to
+  the α_iso error (arXiv:2503.14738); DR1 budget 0.245% and 0.3%
+  (arXiv:2404.03000).
+- Full-shape posteriors in extended models are prior-dominated: shifts of up
+  to 6.6σ between best fit and posterior mean in w0waCDM (arXiv:2508.11811).
+  Always ask for the MAP.
+- σ8 from full shape: BOSS EFT gave 0.69–0.73 (arXiv:1909.05277,
+  arXiv:2112.04515); DESI DR1 gives 0.842 ± 0.034 (arXiv:2411.12022).
+  Simulation-based priors return 0.766 ± 0.015 (arXiv:2602.18554).
+- DESI DR1 "fσ8" points are fσ_s8 under r_d = r_d^fid, for display only
+  (arXiv:2411.12021).
+- f_NL from scale-dependent bias constrains f_NL·b_φ: DESI DR1 gives −3.6 ± 9
+  or +3.5 depending on the quasar assumption (arXiv:2411.17623); Planck has
+  σ = 5.1 (arXiv:1905.05697).
+- The SDSS–DESI difference at z ≈ 0.7 fell from about 3σ (DR1) to about 2.6σ
+  (DR2); the figure depends on an assumed correlation (arXiv:2503.14738).
+- DESI finished its planned survey in April 2026; full-survey results are
+  expected in 2027. Euclid DR1 clustering products: mid-2027.
+
+## Systematics a referee checks
+
+Theory and BAO modelling (0.1%/0.2%, arXiv:2402.14070); galaxy–halo
+connection (arXiv:2404.03008, arXiv:2411.12023); fiducial cosmology
+(arXiv:2406.06085); fibre assignment, θ-cut or PIP (arXiv:2406.04804,
+arXiv:2411.12025); imaging weights and integral constraints
+(arXiv:1904.08851); spectroscopic success (arXiv:2405.17208); covariance
+source and corrections (arXiv:astro-ph/0608064, arXiv:2411.12027); nuisance
+priors; blinding (arXiv:2404.07282). Details and checklist in
+`references/systematics.md`.
+
+## Errors that recur
+
+- Quoting "DESI prefers evolving dark energy at 4σ" without CMB and
+  supernova sample.
+- Comparing D_V/r_d with older r_s/D_V or D_A values without converting.
+- Treating DR1 and DR2 BAO, or DESI and SDSS bins, as independent.
+- Citing a DESI DR2 full-shape or fσ8 result: none exists at the snapshot.
+- Copying w0 = 0.49 from the abstract of arXiv:2602.18761; the table gives
+  −0.49.
+- Reading the DR1 BAO count (5.7 million) as the full-shape count
+  (4.7 million).
+- Calling BOSS-era low σ8 a current full-shape result.
+- Giving an f_NL limit without its b_φ assumption.
+
+## Related skills
+
+- `cosmo-lyman-alpha`: Lyα BAO, AP and P1D.
+- `cosmo-dark-energy-modified-gravity`: interpretation of w0wa, μ–Σ.
+- `cosmo-peculiar-velocities`: fσ8 at z < 0.1.
+- `cosmo-beyond-two-point`: bispectrum, voids, field-level inference.
+- `cosmo-inflation-primordial`: f_NL in depth.
+- `cosmo-neutrinos-dark-matter`, `cosmo-cmb`, `cosmo-distance-ladder-h0`,
+  `cosmo-supernovae`: the external data in every combination.
+- `cosmo-statistics-inference`, `cosmo-simulations-mocks`,
+  `cosmo-software-ecosystem`, `cosmo-surveys-facilities`,
+  `cosmo-theory-foundations`: methods shared across probes.
+- `observational-cosmology`: hub.

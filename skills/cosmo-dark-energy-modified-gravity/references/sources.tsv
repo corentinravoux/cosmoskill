@@ -1,0 +1,100 @@
+key	id	first_author	year	title	role
+Chevallier2001	gr-qc/0009008	Chevallier	2000	Accelerating Universes with Scaling Dark Matter	foundation
+Linder2003	astro-ph/0208512	Linder	2002	Exploring the Expansion History of the Universe	foundation
+CaldwellLinder2005	astro-ph/0505494	Caldwell	2005	The Limits of Quintessence	foundation
+Albrecht2006DETF	astro-ph/0609591	Albrecht	2006	Report of the Dark Energy Task Force	foundation
+Linder2005Growth	astro-ph/0507263	Linder	2005	Cosmic Growth History and Expansion History	foundation
+Linder2007Mirage	0708.0024	Linder	2007	The Mirage of w=-1	foundation
+Zhang2007EG	0704.1932	Zhang	2007	A discriminating probe of gravity at cosmological scales	foundation
+HuSawicki2007	0705.1158	Hu	2007	Models of f(R) Cosmic Acceleration that Evade Solar-System Tests	foundation
+KhouryWeltman2004	astro-ph/0309300	Khoury	2003	Chameleon Fields: Awaiting Surprises for Tests of Gravity in Space	foundation
+Gubitosi2013	1210.0201	Gubitosi	2012	The Effective Field Theory of Dark Energy	foundation
+BelliniSawicki2014	1404.3713	Bellini	2014	Maximal freedom at minimum cost: linear large-scale structure in general modifications of gravity	foundation
+LVC2017GRB	1710.05834	LIGO Scientific Collaboration	2017	Gravitational Waves and Gamma-rays from a Binary Neutron Star Merger: GW170817 and GRB 170817A	data
+Ezquiaga2017	1710.05901	Ezquiaga	2017	Dark Energy after GW170817: dead ends and the road ahead	results
+Creminelli2017	1710.05877	Creminelli	2017	Dark Energy after GW170817 and GRB170817A	results
+Baker2017	1710.06394	Baker	2017	Strong constraints on cosmological gravity from GW170817 and GRB 170817A	results
+Joyce2015	1407.0059	Joyce	2014	Beyond the Cosmological Standard Model	review
+Koyama2016	1504.04623	Koyama	2015	Cosmological Tests of Modified Gravity	review
+BurrageSakstein2018	1709.09071	Burrage	2017	Tests of Chameleon Gravity	review
+Brax2022	2201.10817	Brax	2022	Testing Screened Modified Gravity	review
+Ishak2019	1806.10122	Ishak	2018	Testing General Relativity in Cosmology	review
+Ferreira2019	1902.10503	Ferreira	2019	Cosmological Tests of Gravity	review
+HutererShafer2018	1709.01091	Huterer	2017	Dark energy two decades after: Observables, probes, consistency tests	review
+Li2026Review	2606.21826	Li	2026	Dark Energy in the DESI Era: A Brief Review of Evidence, Beyond-$Λ$CDM Interpretations, and Tensions	review
+Euclid2025Review	2512.09748	Euclid Collaboration	2025	Euclid preparation. Review of forecast constraints on dark energy and modified gravity	forecast
+Euclid2020IST	1910.09273	Euclid Collaboration	2019	Euclid preparation: VII. Forecast validation for Euclid cosmological probes	forecast
+Trotta2008	0803.4089	Trotta	2008	Bayes in the sky: Bayesian inference and model selection in cosmology	method
+Liddle2007	astro-ph/0701113	Liddle	2007	Information criteria for astrophysical model selection	method
+RaveriHu2019	1806.04649	Raveri	2018	Concordance and Discordance in Cosmology	method
+HandleyLemos2019	1902.04029	Handley	2019	Quantifying tensions in cosmological parameters: Interpreting the DES evidence ratio	method
+Zucca2019	1901.05956	Zucca	2019	MGCAMB with massive neutrinos and dynamical dark energy	code
+Wang2023MGCAMB	2305.05667	Wang	2023	New MGCAMB tests of gravity with CosmoMC and Cobaya	code
+Hu2014EFTCAMB	1312.5742	Hu	2013	Effective Field Theory of Cosmic Acceleration: an implementation in CAMB	code
+Zumalacarregui2017	1605.06102	Zumalacarregui	2016	hi_class: Horndeski in the Cosmic Linear Anisotropy Solving System	code
+GarciaQuintero2019	1908.00290	Garcia-Quintero	2019	ISiTGR: Testing deviations from GR at cosmological scales including dynamical dark energy, massive neutrinos, functional or binned parametrizations, and spatial curvature	code
+SakrMartinelli2022	2112.14175	Sakr	2021	Cosmological Constraints on sub-horizon scales modified gravity theories with MGCLASS II	code
+Srivastav2026	2606.18455	Srivastav	2026	CMBComp: A Simple and Accurate Compressed CMB Likelihood for Dark Energy, Curvature, and Massive Neutrinos	code
+Planck2018	1807.06209	Planck Collaboration	2018	Planck 2018 results. VI. Cosmological parameters	results
+Reyes2010	1003.2185	Reyes	2010	Confirmation of general relativity on large scales from weak lensing and galaxy velocities	results
+Pullen2016	1511.04457	Pullen	2015	Constraining Gravity at the Largest Scales through CMB Lensing and Galaxy Velocities	results
+Cataneo2015	1412.0133	Cataneo	2014	New constraints on $f(R)$ gravity from clusters of galaxies	results
+DesmondFerreira2020	2009.08743	Desmond	2020	Galaxy morphology rules out astrophysically relevant Hu-Sawicki $f(R)$ gravity	results
+Troester2021	2010.16416	Tröster	2020	KiDS-1000 Cosmology: constraints beyond flat $Λ$CDM	results
+DES2022Ext	2207.05766	DES Collaboration	2022	Dark Energy Survey Year 3 Results: Constraints on extensions to $Λ$CDM with weak lensing and galaxy clustering	results
+Nguyen2023	2302.01331	Nguyen	2023	Evidence for suppression of structure growth in the concordance cosmological model	results
+Wenzl2024	2401.12971	Wenzl	2024	Constraining gravity with a new precision $E_G$ estimator using Planck + SDSS BOSS	results
+DESI2024BAO	2404.03002	DESI Collaboration	2024	DESI 2024 VI: Cosmological Constraints from the Measurements of Baryon Acoustic Oscillations	results
+Calderon2024	2405.04216	Calderon	2024	DESI 2024: Reconstructing Dark Energy using Crossing Statistics with DESI DR1 BAO data	results
+Lodha2024	2405.13588	Lodha	2024	DESI 2024: Constraints on Physics-Focused Aspects of Dark Energy using DESI DR1 BAO Data	results
+Ishak2024	2411.12026	Ishak	2024	Modified Gravity Constraints from the Full Shape Modeling of Clustering Measurements from DESI 2024	results
+ChudaykinKunz2024	2407.02558	Chudaykin	2024	Modified gravity interpretation of the evolving dark energy in light of DESI data	results
+Ye2024	2407.15832	Ye	2024	Hints of Nonminimally Coupled Gravity in DESI 2024 Baryon Acoustic Oscillation Measurements	results
+Wolf2024	2408.17318	Wolf	2024	Scant evidence for thawing quintessence	critique
+WolfFerreira2023	2310.07482	Wolf	2023	Underdetermination of dark energy	critique
+CortesLiddle2024	2404.08056	Cortês	2024	Interpreting DESI's evidence for evolving dark energy	critique
+Patel2024	2407.06586	Patel	2024	The prior dependence of the DESI results	critique
+Efstathiou2024	2408.07175	Efstathiou	2024	Evolving Dark Energy or Supernovae Systematics?	critique
+Elbers2024	2407.10965	Elbers	2024	Negative neutrino masses as a mirage of dark energy	critique
+Dhawan2024	2409.18668	Dhawan	2024	The axis of systematic bias in SN~Ia cosmology and implications for DESI 2024 results	systematics
+Notari2024	2411.11685	Notari	2024	BAO vs. SN evidence for evolving dark energy	critique
+LewisChamberlain2024	2412.13894	Lewis	2024	Understanding acoustic scale observations: the one-sided fight against $Λ$	critique
+Vincenzi2025	2501.06664	Vincenzi	2025	Comparing the DES-SN5YR and Pantheon+ SN cosmology analyses: Investigation based on "Evolving Dark Energy or Supernovae systematics?"	systematics
+Huang2025	2502.04212	Huang	2025	The DESI DR1/DR2 evidence for dynamical dark energy is biased by low-redshift supernovae	critique
+DESI2025DR2BAO	2503.14738	DESI Collaboration	2025	DESI DR2 Results II: Measurements of Baryon Acoustic Oscillations and Cosmological Constraints	results
+Lodha2025	2503.14743	Lodha	2025	Extended Dark Energy analysis using DESI DR2 BAO measurements	results
+Calabrese2025	2503.14454	Calabrese	2025	The Atacama Cosmology Telescope: DR6 Constraints on Extended Cosmological Models	results
+PanYe2025	2503.19898	Pan	2025	Non-minimally coupled gravity constraints from DESI DR2 data	results
+Gu2025	2504.06118	Gu	2025	Dynamical Dark Energy in light of the DESI DR2 Baryonic Acoustic Oscillations Measurements	results
+Sailer2025	2504.16932	Sailer	2025	Dispu$τ$able: the high cost of a low optical depth	critique
+Jhaveri2025	2504.21813	Jhaveri	2025	Turning a negative neutrino mass into a positive optical depth	critique
+HeroldKarwal2025	2506.12004	Herold	2025	Bayesian and frequentist perspectives agree on dynamical dark energy	method
+Keeley2025	2506.15091	Keeley	2025	Could We Be Fooled about Phantom Crossing?	critique
+ChenIvanov2025	2507.00118	Chen	2025	Constraining Dynamical Dark Energy from Galaxy Clustering with Simulation-Based Priors	results
+Rauhut2025	2507.16098	Rauhut	2025	Testing gravitational physics by combining DESI DR1 and weak lensing datasets using the E_G estimator	results
+Morawetz2025	2508.11811	Morawetz	2025	Frequentist Cosmological Constraints from Full-Shape Clustering Measurements in DESI DR1	systematics
+Tsedrik2025	2509.09562	Tsedrik	2025	The simple way to measure evolving dark energy without prior-volume effects	method
+Toomey2025	2509.13318	Toomey	2025	How Theory-Informed Priors Affect DESI Evidence for Evolving Dark Energy	critique
+Popovic2025	2511.07517	Popovic	2025	The Dark Energy Survey Supernova Program: A Reanalysis Of Cosmology Results And Evidence For Evolving Dark Energy With An Updated Type Ia Supernova Calibration	results
+LuSimon2025	2511.10616	Lu	2025	New multiprobe analysis of modified gravity and evolving dark energy	results
+Leonard2025	2511.19194	Leonard	2025	Toward testing gravity with LSST using $E_G$	forecast
+Hogas2025	2512.14814	Högås	2025	Constraining Fifth Forces using the Local Distance Ladder: Implications for the Hubble Tension	results
+Shlivko2025	2512.20832	Shlivko	2025	Thawing Quintessence: Priors, evidence, and likely trajectories	results
+Li2026IDE	2601.07361	Li	2026	Robust Preference for Dark Sector Interactions	results
+DES2026Y6	2601.14559	DES Collaboration	2026	Dark Energy Survey Year 6 Results: Cosmological Constraints from Galaxy Clustering and Weak Lensing	results
+Hoyt2026	2601.19424	Hoyt	2026	Union3.1: Reducing Systematics in Supernova Cosmology with Self-consistent Measurements of Host Galaxy Properties for 2000 Type Ia Supernovae	results
+Du2026	2602.03110	Du	2026	Evidence for deviation in gravitational light deflection from general relativity at cosmological scales with KiDS-Legacy and CMB lensing	results
+ForeroSanchez2026FS	2602.18761	Forero-Sánchez	2026	Cosmological constraints from a joint DESI DR1 Full-Shape and DR2 BAO	results
+Pizzuti2026	2604.23631	Pizzuti	2026	CLASH-VLT: The Fifth Force in Chameleon Gravity from Joint Lensing and Kinematics Cluster Mass Profiles	results
+ZhangX2026	2604.24631	Zhang	2026	Measurement of the Weyl Potential Evolution and $E_G$ Statistic from KiDS-1000, BOSS and 2dFLenS	results
+Gonzalez2026	2604.26915	Gonzalez	2026	Testing Scale-Dependent Modified Gravity with DESI DR1	results
+DES2026DDE	2605.27221	DES Collaboration	2026	Constraints on Dynamical Dark Energy from Multiple Probes in the Full Dark Energy Survey	results
+Reboucas2026	2606.00411	Rebouças	2026	The sound of dynamical dark energy and modified gravity	results
+ForeroSanchez2026B	2606.23936	Forero-Sánchez	2026	Cosmological constraints from the DESI DR1 Bispectrum Full-Shape and DR2 BAO	results
+Zaldarriaga2026	2606.30527	Zaldarriaga	2026	Universal distance modes from DESI BAO and Type Ia supernovae: what do cosmological rulers actually measure?	critique
+Kim2026	2607.28918	Kim	2026	A Sequentially-Valid Reanalysis of DESI's Dynamical Dark Energy Signal	critique
+Rippentrop2026	2608.25278	Rippentrop	2026	The optimal redshift for dark energy II: application to cosmological data and the evidence for the phantom crossing of the CPL equation of state	results
+Camilleri2026	2609.05053	Camilleri	2026	Supernovae Unite: Combining Pantheon+ and DES-SN5YR	results
+Wen2026	2609.40176	Wen	2026	Is DESI Seeing Dynamical Dark Energy, or a Cosmic Glitch in Gravity?	results
+Wenzl2024ACT	2405.12795	Wenzl	2024	The Atacama Cosmology Telescope: DR6 Gravitational Lensing and SDSS BOSS cross-correlation measurement and constraints on gravity with the $E_G$ statistic	results
+Ong2025	2511.10631	Ong	2025	A Bayesian Perspective on Evidence for Evolving Dark Energy	critique

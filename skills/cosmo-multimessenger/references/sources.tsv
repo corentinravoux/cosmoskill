@@ -1,0 +1,126 @@
+key	id	first_author	year	title	role
+LVC2017H0	1710.05835	Abbott	2017	A gravitational-wave standard siren measurement of the Hubble constant	results
+HolzHughes2005	astro-ph/0504616	Holz	2005	Using gravitational-wave standard sirens	foundation
+Hotokezaka2018	1806.10596	Hotokezaka	2018	A Hubble constant measurement from superluminal motion of the jet in GW170817	results
+HowlettDavis2019	1909.00587	Howlett	2019	Standard Siren Speeds: Improving velocities in gravitational-wave measurements of $H_{0}$	systematics
+Mukherjee2019vel	1909.08627	Mukherjee	2019	Velocity correction for Hubble constant measurements from standard sirens	systematics
+Nicolaou2019	1909.09609	Nicolaou	2019	The Impact of Peculiar Velocities on the Estimation of the Hubble Constant from Gravitational Wave Standard Sirens	systematics
+BlakeTurner2025	2509.03101	Blake	2025	The role of peculiar velocity uncertainties in standard siren cosmology	systematics
+Palmese2023afterglow	2305.19914	Palmese	2023	A standard siren measurement of the Hubble constant using GW170817 and the latest observations of the electromagnetic counterpart afterglow	results
+Chen2017	1712.06531	Chen	2017	A 2 per cent Hubble constant measurement from standard sirens within 5 years	forecast
+Feeney2018	1802.03404	Feeney	2018	Prospects for resolving the Hubble constant tension with standard sirens	forecast
+Fishbach2018	1807.05667	Fishbach	2018	A standard siren measurement of the Hubble constant from GW170817 without the electromagnetic counterpart	results
+DES2019GW170814	1901.01540	DES Collaboration	2019	First measurement of the Hubble constant from a dark standard siren using the Dark Energy Survey galaxies and the LIGO/Virgo binary-black-hole merger GW170814	results
+LVC2019O2H0	1908.06060	LIGO Scientific Collaboration	2019	A gravitational-wave measurement of the Hubble constant following the second observing run of Advanced LIGO and Virgo	results
+LVK2021GWTC3cosmo	2111.03604	LIGO Scientific Collaboration	2021	Constraints on the cosmic expansion history from GWTC-3	results
+LVK2025GWTC4cosmo	2509.04348	LIGO Scientific Collaboration	2025	GWTC-4.0: Constraints on the Cosmic Expansion Rate and Modified Gravitational-wave Propagation	results
+LVK2026GWTC5pop	2605.27226	LIGO Scientific Collaboration	2026	GWTC-5.0: Population Properties of Merging Compact Binaries	data
+Dalya2021	2110.06184	Dálya	2021	GLADE+: An Extended Galaxy Catalogue for Multimessenger Searches with Advanced Gravitational-wave Detectors	data
+Palmese2021	2111.06445	Palmese	2021	A standard siren measurement of the Hubble constant using gravitational wave events from the first three LIGO/Virgo observing runs and the DESI Legacy Survey	results
+Gray2019	1908.06050	Gray	2019	Cosmological Inference using Gravitational Wave Standard Sirens: A Mock Data Challenge	method
+Gray2023	2308.02281	Gray	2023	Joint cosmological and gravitational-wave population inference using dark sirens and galaxy catalogues	method
+Cantiello2018	1801.06080	Cantiello	2018	A Precise Distance to the Host Galaxy of the Binary Neutron Star Merger GW170817 Using Surface Brightness Fluctuations	results
+Dietrich2020	2002.11355	Dietrich	2020	Multi-messenger constraints on the neutron-star equation of state and the Hubble constant	results
+Chen2020viewing	2006.02779	Chen	2020	Systematic uncertainty of standard sirens from the viewing angle of binary neutron star inspirals	systematics
+Mooley2018	1806.09693	Mooley	2018	Superluminal motion of a relativistic jet in the neutron star merger GW170817	data
+Mukherjee2020GW190521	2009.14199	Mukherjee	2020	First measurement of the Hubble parameter from bright binary black hole GW190521	results
+Chen2020GW190521	2009.14057	Chen	2020	A Standard Siren Cosmological Measurement from the Potential GW190521 Electromagnetic Counterpart ZTF19abanrhr	results
+Finke2021	2101.12660	Finke	2021	Cosmology with LIGO/Virgo dark sirens: Hubble parameter and modified gravitational wave propagation	method
+Mancarella2021	2112.05728	Mancarella	2021	Cosmology and modified gravitational wave propagation from binary black hole population models	results
+Karathanasis2022	2204.13495	Karathanasis	2022	Binary black holes population and cosmology in new lights: Signature of PISN mass and formation channel in GWTC-3	systematics
+Turski2023	2302.12037	Turski	2023	Impact of modelling galaxy redshift uncertainties on the gravitational-wave dark standard siren measurement of the Hubble constant	systematics
+DalangBaker2023	2310.08991	Dalang	2023	The clustering of dark sirens' invisible host galaxies	method
+Hanselman2024	2405.14818	Hanselman	2024	Gravitational-wave dark siren cosmology systematics from galaxy weighting	systematics
+Bom2024	2404.16092	Bom	2024	A dark standard siren measurement of the Hubble constant following LIGO/Virgo/KAGRA O4a and previous runs	results
+Mastrogiovanni2023icarogw	2305.17973	Mastrogiovanni	2023	ICAROGW: A python package for inference of astrophysical population properties of noisy, heterogeneous and incomplete observations	code
+Mastrogiovanni2021	2103.14663	Mastrogiovanni	2021	Cosmology in the dark: On the importance of source population models for gravitational-wave cosmology	systematics
+EzquiagaHolz2022	2202.08240	Ezquiaga	2022	Spectral sirens: cosmology from the full mass distribution of compact binaries	method
+Farr2019	1908.09084	Farr	2019	A Future Percent-Level Measurement of the Hubble Expansion at Redshift 0.8 With Advanced LIGO	forecast
+Taylor2011	1108.5161	Taylor	2011	Hubble without the Hubble: cosmology using advanced gravitational-wave detectors alone	foundation
+Mandel2018	1809.02063	Mandel	2018	Extracting distribution parameters from multiple uncertain observations with selection biases	method
+Pierra2023	2312.11627	Pierra	2023	A Study of Systematics on the Cosmological Inference of the Hubble Constant from Gravitational Wave Standard Sirens	systematics
+Gair2022	2212.08694	Gair	2022	The Hitchhiker's guide to the galaxy catalog approach for gravitational wave cosmology	method
+Borghi2023	2312.05302	Borghi	2023	Cosmology and Astrophysics with Standard Sirens and Galaxy Catalogs in View of Future Gravitational Wave Observations	code
+Alfradique2023	2310.13695	Alfradique	2023	A dark siren measurement of the Hubble constant using gravitational wave events from the first three LIGO/Virgo observing runs and DELVE	results
+Farah2024	2404.02210	Farah	2024	No need to know: astrophysics-free gravitational-wave cosmology	method
+Agarwal2024	2412.14244	Agarwal	2024	Blinded Mock Data Challenge for Gravitational-Wave Cosmology-I: Assessing the Robustness of Methods Using Binary Black Holes Mass Spectrum	systematics
+MaliEssick2024	2410.07416	Mali	2024	Striking a Chord with Spectral Sirens: multiple features in the compact binary population correlate with $H_0$	systematics
+Sun2020	2005.02531	Sun	2020	Characterization of systematic error in Advanced LIGO calibration	systematics
+Huang2022	2204.03614	Huang	2022	Impact of calibration uncertainties on Hubble constant measurements from gravitational-wave sources	systematics
+Oguri2016	1603.02356	Oguri	2016	Measuring the distance-redshift relation with the cross-correlation of gravitational wave standard sirens and galaxies	method
+Mukherjee2020xcorr	2007.02943	Mukherjee	2020	Accurate precision Cosmology with redshift unknown gravitational wave sources	method
+Mukherjee2022xcorr	2203.03643	Mukherjee	2022	Cross-correlating dark sirens and galaxies: constraints on $H_0$ from GWTC-3 of LIGO-Virgo-KAGRA	results
+Bera2020	2007.04271	Bera	2020	Incompleteness Matters Not: Inference of $H_0$ from BBH-galaxy cross-correlations	method
+deMatos2025	2512.15380	Matos	2025	First measurement of the Hubble constant from gravitational wave-galaxy cross-correlations	results
+LVK2025GWTC4	2508.18082	LIGO Scientific Collaboration	2025	GWTC-4.0: Updating the Gravitational-Wave Transient Catalog with Observations from the First Part of the Fourth LIGO-Virgo-KAGRA Observing Run	data
+LVK2021GWTC3	2111.03606	LIGO Scientific Collaboration	2021	GWTC-3: Compact Binary Coalescences Observed by LIGO and Virgo During the Second Part of the Third Observing Run	data
+PalmeseMastrogiovanni2025	2502.00239	Palmese	2025	Gravitational Wave Cosmology	review
+Chen2024nextgen	2402.03120	Chen	2024	Cosmography with next-generation gravitational wave detectors	forecast
+Ravoux2025	2501.16852	Ravoux	2025	Generalized framework for likelihood-based field-level inference of growth rate from velocity and density fields	code
+Carrick2015	1504.04627	Carrick	2015	Cosmological parameters from the comparison of peculiar velocities with predictions from the 2M++ density field	data
+Stiskalek2025	2502.00121	Stiskalek	2025	The Velocity Field Olympics: Assessing velocity field reconstructions with direct distance tracers	systematics
+DelPozzo2011	1108.1317	Pozzo	2011	Inference of the cosmological parameters from gravitational waves: application to second generation interferometers	foundation
+ChernoffFinn1993	gr-qc/9304020	Chernoff	1993	Gravitational Radiation, Inspiraling Binaries, and Cosmology	foundation
+Colombo2026	2609.12053	Colombo	2026	Reconsidering the role of bright and dark gravitational-wave standard sirens for cosmology	forecast
+Gray2026	2609.04991	Gray	2026	Expanding the scope of dark siren cosmology: Inferring the population properties of gravitational wave-hosting galaxies	results
+PalfiRaffai2026	2608.26307	Pálfi	2026	The Impact of Magnitude Uncertainties and K-corrections on Standard Siren Measurements of the Hubble Constant	systematics
+Tagliazucchi2026	2608.24992	Tagliazucchi	2026	Enhancing dark siren cosmology via Gaussian process reconstruction of incomplete galaxy catalogs	method
+DeLeo2026	2607.20413	Leo	2026	The road towards precision measurements of $H_0$ with bright sirens in the Einstein Telescope era	forecast
+Dang2026	2607.17284	Dang	2026	One Year and One Night to 1% in $\mathbf{H_0}$: Efficient Spectroscopic Strategy for Dark Siren Cosmology	forecast
+KumarTorresOrjuela2026	2607.03672	Kumar	2026	Hubble constant measurement with 13 bright standard sirens from binary black hole mergers inside active galactic nuclei	critique
+Yang2026	2606.30504	Yang	2026	Rapid Hubble constant inference from GW170817 using GPU-accelerated nested sampling: prior sensitivity and the limits of post-hoc reweighting	systematics
+Agapito2026	2605.20112	Agapito	2026	Gravitational-wave constraints on $H_0$ are robust to putative redshift evolution in the binary black hole mass spectrum at current sensitivity	systematics
+Gourdji2026	2605.11437	Gourdji	2026	Revisiting GW170817 at milliarcsecond scale: high-precision constraints on jet geometry and $H_0$	results
+Karathanasis2026	2604.26273	Karathanasis	2026	Blinded Mock Data Challenge: Is the Spectral Siren Technique Robust for Measuring the Hubble Constant?	systematics
+Laghi2026	2603.23612	Laghi	2026	Reducing cosmological degeneracies by combining multiple classes of LISA gravitational-wave standard sirens	forecast
+Alfradique2026	2603.20195	Alfradique	2026	Improved constraint on the Hubble constant from dark sirens with LIGO/Virgo/KAGRA O4a	results
+Scarpa2026	2603.15332	Scarpa	2026	Calibrating spectral siren cosmology with synthetic catalogs of binary black hole mergers	results
+Benetti2026	2602.14898	Benetti	2026	Tarnished by Tools: Cost of Systematics in Golden Dark Siren Cosmology	systematics
+McMahon2026	2602.04766	McMahon	2026	Measurement of the Hubble constant using the Dark Energy Survey Year 6 Gold galaxy catalogue and the fourth Gravitational-Wave Transient Catalogue	results
+AndradeOliveira2026	2601.04774	Andrade-Oliveira	2026	First measurement of the Hubble constant from a combined weak lensing and gravitational-wave standard siren analysis	results
+PierraPapadopoulos2026	2601.03257	Pierra	2026	Heavy Black-Holes Also Matter in Standard Siren Cosmology	results
+Borghi2025	2512.18369	Borghi	2025	Standard Sirens in 2040s: Probing the Cosmic Expansion History with Gravitational Waves and Spectroscopic Galaxy Surveys	forecast
+Amsellem2025	2512.08818	Amsellem	2025	Probing the environment around GW170817 with DESI: insights on galaxy group peculiar velocities for standard siren measurements	results
+Pierra2025	2511.11795	Pierra	2025	Non-Parametric Reconstruction of the Hubble Parameter from the Fourth Gravitational Wave Transient Catalog and DESI Baryonic Acoustic Oscillations	results
+VanWyngarden2025	2511.04786	VanWyngarden	2025	How Low Can You Go: Constraining the Effects of Catalog Incompleteness on Dark Siren Cosmology	systematics
+Pan2025	2510.19931	Pan	2025	Determining the Hubble Constant through Cross-Correlation of Galaxies and Gravitational Waves	forecast
+Xiong2026	2606.03634	Xiong	2026	Model-independent H0 from GWTC-4 standard sirens and TDCOSMO 2025 strong lensing time delays	results
+Zhao2026	2605.08595	Zhao	2026	Gravitational-wave standard sirens and application in cosmology	review
+LVK2026GWTC5cosmo	2605.27227	LIGO Scientific Collaboration	2026	GWTC-5.0: Constraints on the Cosmic Expansion Rate and Modified Gravitational-wave Propagation	results
+LVK2026GWTC5	2605.27225	LIGO Scientific Collaboration	2026	GWTC-5.0: Observations from the Second Part of the Fourth LIGO-Virgo-KAGRA Observing Run and Updates to the Gravitational-Wave Transient Catalog	data
+Liu2026	2609.25662	Liu	2026	Probing the Mass--Redshift Dependence of Binary Black Holes and its Implications for $H_0$ with GWTC-5.0	results
+Macquart2020	2005.13161	Macquart	2020	A census of baryons in the Universe from localized fast radio bursts	results
+James2022	2208.00819	James	2022	A measurement of Hubble's Constant using Fast Radio Bursts	results
+Hagstotz2021	2104.04538	Hagstotz	2021	A new measurement of the Hubble constant using Fast Radio Bursts	results
+Wu2021	2108.00581	Wu	2021	An 8\% Determination of the Hubble Constant from localized Fast Radio Bursts	results
+Connor2024	2409.16952	Connor	2024	A gas-rich cosmic web revealed by the partitioning of the missing baryons	results
+Baptista2023	2305.07022	Baptista	2023	Measuring the Variance of the Macquart Relation in z-DM Modeling	systematics
+Khrykin2024	2402.00505	Khrykin	2024	FLIMFLAM DR1: The First Constraints on the Cosmic Baryon Distribution from 8 FRB sightlines	results
+GlowackiLee2024	2410.24072	Glowacki	2024	Cosmology with Fast Radio Bursts	review
+CHIMEFRB2021	2106.04352	CHIME/FRB Collaboration	2021	The First CHIME/FRB Fast Radio Burst Catalog	data
+Law2023	2307.03344	Law	2023	Deep Synoptic Array Science: First FRB and Host Galaxy Catalog	data
+Sharma2024	2409.16964	Sharma	2024	Preferential Occurrence of Fast Radio Bursts in Massive Star-Forming Galaxies	systematics
+McQuinn2013	1309.4451	McQuinn	2013	Locating the "missing" baryons with extragalactic dispersion measure estimates	foundation
+DengZhang2013	1401.0059	Deng	2013	Cosmological implications of Fast Radio Burst / Gamma-Ray Burst Associations	foundation
+ProchaskaZheng2019	1901.11051	Prochaska	2019	Probing Galactic Halos with Fast Radio Bursts	systematics
+Connor2026DSA	2608.30943	Connor	2026	The DSA/Chronoscope fast radio burst survey: forecasts and science overview	forecast
+McCarty2026	2608.11296	McCarty	2026	A new measurement of the FRB DM-galaxy cross correlation and a first joint analysis with the kinematic SZ effect	results
+Wang2026review	2606.22390	Wang	2026	Fast Radio Burst Cosmology: Hubble Tension and Dark Energy	review
+Liu2026FRB	2604.03769	Liu	2026	Dispersion Measure Distribution of Unlocalized Fast Radio Bursts as a Probe of the Hubble Constant	results
+Kahinga2026	2602.23749	Kahinga	2026	Constraining the mass of the M31 ionized baryon Halo using CHIME/FRB Catalog 2	results
+Shirasaki2026	2601.21336	Shirasaki	2026	Cross-correlating galaxies and cosmic dispersion measures: Constraints on the gas-to-halo mass relation from 2MASS galaxies and 133 localized fast radio bursts	results
+Xu2025	2507.18946	Xu	2025	Refined Constraints on the Hubble Constant from Localized FRBs with Assessment of Systematic Effects	results
+Konietzka2025	2507.07090	Konietzka	2025	Ray-tracing Fast Radio Bursts Through IllustrisTNG: Cosmological Dispersion Measures from Redshift 0 to 5.5	systematics
+Liu2025fd	2506.03536	Liu	2025	Constraining the Baryon Fraction in Extragalactic Diffuse Ionized Gas with 124 Localized Fast Radio Bursts	results
+James2026	2609.04765	James	2026	Through a glass, darkly: a combined framework for estimating fast radio burst host galaxy and population properties in an era of uncertain host identification	method
+Hussaini2025	2506.04186	Hussaini	2025	A Correlation Between FRB Dispersion Measure and Foreground Large-Scale Structure	results
+JahnsSchindler2025	2508.14434	Jahns-Schindler	2025	Breaking the Baryon Density$\unicode{x2013}$Hubble Constant Degeneracy in Fast Radio Burst Applications with Associated Gravitational Waves	forecast
+CHIMEFRB2026	2601.09399	CHIME/FRB Collaboration	2026	The Second CHIME/FRB Catalog of Fast Radio Bursts	data
+Kelly2023	2305.06367	Kelly	2023	Constraints on the Hubble constant from Supernova Refsdal's reappearance	results
+Pascale2024	2403.18902	Pascale	2024	SN H0pe: The First Measurement of $H_0$ from a Multiply-Imaged Type Ia Supernova, Discovered by JWST	results
+TDCOSMO2025	2506.03023	TDCOSMO Collaboration	2025	TDCOSMO 2025: Cosmological constraints from strong lensing time delays	results
+ET2025	2503.12263	Abac	2025	The Science of the Einstein Telescope	forecast
+Pierel2025	2509.12301	Pierel	2025	Cosmology with supernova Encore in the strong lensing cluster MACS J0138-2155: Time delays & Hubble constant measurement	results
+LiuOguri2025	2509.09979	Liu	2025	The Hubble constant from the improved lens modeling of cluster-lensed supernova Refsdal with new spectroscopic redshifts and the Jackknife method	results
+Townsend2026	2608.28427	Townsend	2026	Follow-up of SN 2025wny IV: Photometric Time-delay Measurements of a Strongly Lensed Superluminous Supernova	results
+Dang2025	2512.21729	Dang	2025	Golden and Silver Dark Sirens for precise H0 measurement with HETDEX	forecast

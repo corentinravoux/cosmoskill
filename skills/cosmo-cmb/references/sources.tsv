@@ -1,0 +1,92 @@
+key	id	first_author	year	title	role
+HuDodelson2001	astro-ph/0110414	Hu	2001	Cosmic Microwave Background Anisotropies	review
+Zaldarriaga1996	astro-ph/9609170	Zaldarriaga	1996	An All-Sky Analysis of Polarization in the Microwave Background	foundation
+LewisChallinor2006	astro-ph/0601594	Lewis	2006	Weak Gravitational Lensing of the CMB	review
+HuOkamoto2001	astro-ph/0111606	Hu	2001	Mass Reconstruction with CMB Polarization	foundation
+Komatsu2022	2202.13919	Komatsu	2022	New physics from the polarised light of the cosmic microwave background	review
+Fixsen2009	0911.1955	Fixsen	2009	The Temperature of the Cosmic Microwave Background	foundation
+Calabrese2008	0803.2309	Calabrese	2008	Cosmic Microwave Weak lensing data as a test for the dark universe	foundation
+Hivon2001	astro-ph/0105302	Hivon	2001	MASTER of the CMB Anisotropy Power Spectrum: A Fast Method for Statistical Analysis of Large and Complex CMB Data Sets	method
+Hamimeche2008	0801.0554	Hamimeche	2008	Likelihood Analysis of CMB Temperature and Polarization Power Spectra	method
+Namikawa2012	1209.0091	Namikawa	2012	Bias-Hardened CMB Lensing	method
+Madhavacheril2018	1802.08230	Madhavacheril	2018	Mitigating Foreground Biases in CMB Lensing Reconstruction Using Cleaned Gradients	method
+Carron2017	1704.08230	Carron	2017	Maximum a posteriori CMB lensing reconstruction	method
+Millea2021	2112.09354	Millea	2021	MUSE: Marginal Unbiased Score Expansion and Application to CMB Lensing	method
+Dunkley2013	1301.0776	Dunkley	2013	The Atacama Cosmology Telescope: likelihood for small-scale CMB data	method
+Camphuis2022	2204.13721	Camphuis	2022	Accurate CMB covariance matrices: exact calculation and approximations	method
+Atkins2024	2412.07068	Atkins	2024	The Atacama Cosmology Telescope: Semi-Analytic Covariance Matrices for the DR6 CMB Power Spectra	method
+Lewis1999	astro-ph/9911177	Lewis	1999	Efficient Computation of CMB anisotropies in closed FRW models	code
+Blas2011	1104.2933	Blas	2011	The Cosmic Linear Anisotropy Solving System (CLASS) II: Approximation schemes	code
+Gorski2004	astro-ph/0409513	Gorski	2004	HEALPix -- a Framework for High Resolution Discretization, and Fast Analysis of Data Distributed on the Sphere	code
+Torrado2020	2005.05290	Torrado	2020	Cobaya: Code for Bayesian Analysis of hierarchical physical models	code
+Alonso2018	1809.09603	Alonso	2018	A unified pseudo-$C_\ell$ framework	code
+Balkenhol2024	2401.13433	Balkenhol	2024	candl: Cosmic Microwave Background Analysis with a Differentiable Likelihood	code
+SpurioMancini2021	2106.03846	Mancini	2021	COSMOPOWER: emulating cosmological power spectra for accelerated Bayesian inference from next-generation surveys	code
+AliHaimoud2010	1011.3758	Ali-Haïmoud	2010	HyRec: A fast and highly accurate primordial hydrogen and helium recombination code	code
+Planck2018I	1807.06205	Planck Collaboration	2018	Planck 2018 results. I. Overview and the cosmological legacy of Planck	data
+Planck2018VI	1807.06209	Planck Collaboration	2018	Planck 2018 results. VI. Cosmological parameters	results
+Planck2018V	1907.12875	Planck Collaboration	2019	Planck 2018 results. V. CMB power spectra and likelihoods	method
+Planck2018VIII	1807.06210	Planck Collaboration	2018	Planck 2018 results. VIII. Gravitational lensing	results
+PlanckNPIPE2020	2007.04997	Planck Collaboration	2020	Planck intermediate results. LVII. Joint Planck LFI and HFI data processing	data
+Efstathiou2019	1910.00483	Efstathiou	2019	A Detailed Description of the CamSpec Likelihood Pipeline and a Reanalysis of the Planck High Frequency Maps	method
+Rosenberg2022	2205.10869	Rosenberg	2022	CMB power spectra and cosmological parameters from Planck PR4 with CamSpec	results
+Tristram2023	2309.10034	Tristram	2023	Cosmological parameters derived from the final (PR4) Planck data release	results
+Delouis2019	1901.11386	Delouis	2019	SRoll2: an improved mapmaking approach to reduce large-scale systematic effects in the Planck High Frequency Instrument legacy maps	data
+Pagano2019	1908.09856	Pagano	2019	Reionization optical depth determination from Planck HFI data with ten percent accuracy	results
+deBelsunce2021	2103.14378	de Belsunce	2021	Inference of the optical depth to reionization from low multipole temperature and polarisation Planck data	results
+Carron2022	2206.07773	Carron	2022	CMB lensing from Planck PR4 maps	results
+PlanckIntLI2016	1608.02487	Planck Collaboration	2016	Planck intermediate results. LI. Features in the cosmic microwave background temperature power spectrum and shifts in cosmological parameters	critique
+Planck2015XIII	1502.01589	Planck Collaboration	2015	Planck 2015 results. XIII. Cosmological parameters	results
+Jense2025	2510.09430	Jense	2025	The choice of Planck CMB likelihood in cosmological analyses	method
+Hinshaw2012	1212.5226	Hinshaw	2012	Nine-Year Wilkinson Microwave Anisotropy Probe (WMAP) Observations: Cosmological Parameter Results	results
+Aiola2020	2007.07288	Aiola	2020	The Atacama Cosmology Telescope: DR4 Maps and Cosmological Parameters	results
+Naess2025	2503.14451	Naess	2025	The Atacama Cosmology Telescope: DR6 Maps	data
+Louis2025	2503.14452	Louis	2025	The Atacama Cosmology Telescope: DR6 Power Spectra, Likelihoods and $\Lambda$CDM Parameters	results
+Calabrese2025	2503.14454	Calabrese	2025	The Atacama Cosmology Telescope: DR6 Constraints on Extended Cosmological Models	results
+Qu2023	2304.05202	Qu	2023	The Atacama Cosmology Telescope: A Measurement of the DR6 CMB Lensing Power Spectrum and its Implications for Structure Growth	results
+MacCrann2023	2304.05196	MacCrann	2023	The Atacama Cosmology Telescope: Mitigating the impact of extragalactic foregrounds for the DR6 CMB lensing analysis	systematics
+Beringue2025	2506.06274	Beringue	2025	The Atacama Cosmology Telescope: DR6 Power Spectrum Foreground Model and Validation	systematics
+DiegoPalazuelos2025	2509.13654	Diego-Palazuelos	2025	Cosmic Birefringence from the Atacama Cosmology Telescope Data Release 6	results
+Balkenhol2022	2212.05642	Balkenhol	2022	A Measurement of the CMB Temperature Power Spectrum and Constraints on Cosmology from the SPT-3G 2018 TT/TE/EE Data Set	results
+Pan2023	2308.11608	Pan	2023	A Measurement of Gravitational Lensing of the Cosmic Microwave Background Using SPT-3G 2018 Data	results
+Ge2024	2411.06000	Ge	2024	Cosmology From CMB Lensing and Delensed EE Power Spectra Using 2019-2020 SPT-3G Polarization Data	results
+Camphuis2025	2506.20707	Camphuis	2025	SPT-3G D1: CMB temperature and polarization power spectra and cosmology from 2019 and 2020 observations of the SPT-3G Main field	results
+Quan2026	2603.20163	Quan	2026	SPT-3G D1: Maps of the millimeter-wave sky from 2019 and 2020 observations of the SPT-3G Main field	data
+Chaubal2026	2601.20551	Chaubal	2026	SPT-3G D1: A Measurement of Secondary Cosmic Microwave Background Anisotropy Power	results
+Omori2026	2608.31136	Omori	2026	SPT-3G D1: Quadratic-Estimator CMB Lensing Reconstruction and Cosmology	results
+Nakato2026	2608.06343	Nakato	2026	SPT-3G D1: Foreground-Robust Lensing Templates for Primordial Gravitational Wave Searches	method
+deHaan2026	2602.06334	de Haan	2026	Characterization of the Polarization Beam Response of SPT-3G Using Point Sources	systematics
+Vitrier2025	2510.24669	Vitrier	2025	Towards constraining cosmological parameters with SPT-3G observations of 25% of the sky	forecast
+Natoli2026	2608.20236	Natoli	2026	SPT-3G+: A Cosmic Microwave Background Experiment for the South Pole Telescope	forecast
+Qu2025	2504.20038	Qu	2025	Unified and consistent structure growth measurements from joint ACT, SPT and \textit{Planck} CMB lensing	results
+BK2021	2110.00483	Keck Collaboration	2021	BICEP / Keck XIII: Improved Constraints on Primordial Gravitational Waves using Planck, WMAP, and BICEP/Keck Observations through the 2018 Observing Season	results
+Tristram2021	2112.07961	Tristram	2021	Improved limits on the tensor-to-scalar ratio using BICEP and Planck	results
+BKP2015	1502.00612	BICEP2/Keck	2015	A Joint Analysis of BICEP2/Keck Array and Planck Data	results
+Verges2026	2606.13942	Vergès	2026	Controlling instrumental systematics for the BICEP inflation survey	systematics
+Li2025	2501.11904	Li	2025	A Measurement of the Largest-Scale CMB E-mode Polarization with CLASS	results
+SO2018	1808.07445	The Simons Observatory Collaboration	2018	The Simons Observatory: Science goals and forecasts	forecast
+SO2025	2503.00636	The Simons Observatory Collaboration	2025	The Simons Observatory: Science Goals and Forecasts for the Enhanced Large Aperture Telescope	forecast
+SOSAT2025	2512.15833	The Simons Observatory Collaboration	2025	The Simons Observatory: forecasted constraints on primordial gravitational waves with the expanded array of Small Aperture Telescopes	forecast
+Harrington2026	2609.26938	Harrington	2026	The Simons Observatory: Commissioning of the Mid-Frequency Small Aperture Telescopes	data
+CMBS42016	1610.02743	Abazajian	2016	CMB-S4 Science Book, First Edition	forecast
+LiteBIRD2022	2202.02773	LiteBIRD Collaboration	2022	Probing Cosmic Inflation with the LiteBIRD Cosmic Microwave Background Polarization Survey	forecast
+LiteBIRD2026	2607.25285	LiteBIRD Collaboration	2026	LiteBIRD Mission Overview after Mission Reformation	forecast
+Addison2015	1511.00055	Addison	2015	Quantifying discordance in the 2015 Planck CMB spectrum	critique
+Motloch2019	1912.06601	Motloch	2019	Lensing-like tensions in the Planck legacy release	critique
+DiValentino2019	1911.02087	Di Valentino	2019	Planck evidence for a closed Universe and a possible crisis for cosmology	critique
+Efstathiou2020	2002.06892	Efstathiou	2020	The evidence for a spatially flat Universe	critique
+deCruzPerez2026	2604.03756	Pérez	2026	Is the $w_0w_a$CDM cosmological parameterization evidence for dark energy dynamics partially caused by the excess smoothing of Planck PR4 CMB anisotropy data?	results
+Cozzumbo2025	2511.01967	Cozzumbo	2025	A short blanket for cosmology: the CMB lensing anomaly behind the preference for a negative neutrino mass	critique
+Sailer2025	2504.16932	Sailer	2025	Dispu$\tau$able: the high cost of a low optical depth	critique
+Jhaveri2025	2504.21813	Jhaveri	2025	Turning a negative neutrino mass into a positive optical depth	critique
+MonteroCamacho2026	2607.26373	Montero-Camacho	2026	No way ou$\tau$: Epoch of Reionization Observations Do not Support Large Values of the Optical Depth to Reionization	results
+Kageura2026	2601.09644	Kageura	2026	A New Constraint on the Optical Depth from the Reionization History Independent of CMB Large-Scale E-Mode Polarization	results
+Jhaveri2026	2606.20795	Jhaveri	2026	Raising the reionization optical depth with inflationary CMB features	critique
+Craig2024	2405.00836	Craig	2024	No $\nu$s is Good News	critique
+Green2024	2407.07878	Green	2024	The Cosmological Preference for Negative Neutrino Mass	critique
+DESI2025BAO	2503.14738	DESI Collaboration	2025	DESI DR2 Results II: Measurements of Baryon Acoustic Oscillations and Cosmological Constraints	results
+Elbers2025	2503.14744	Elbers	2025	Constraints on Neutrino Physics from DESI DR2 BAO and DR1 Full Shape	results
+Jeong2013	1309.2285	Jeong	2013	The effect of aberration on partial-sky measurements of the cosmic microwave background temperature power spectrum	systematics
+Manzotti2014	1401.7992	Manzotti	2014	Super-Sample CMB Lensing	systematics
+McCarthy2021	2103.05582	McCarthy	2021	Baryonic feedback biases on fundamental physics from lensed CMB power spectra	systematics
+Planck2018IV	1807.06208	Planck Collaboration	2018	Planck 2018 results. IV. Diffuse component separation	method

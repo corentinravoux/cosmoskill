@@ -6,8 +6,10 @@ Snapshot: 2026-10-07
 Flags: `[src]` read in the cited paper this session; `[sec]` taken from a named secondary source; `[der]` derived here. Forecasts are labelled **forecast**. Numbers without a flag in this file are repeated from `results.md`, where they carry one.
 
 ## 1. Neutrino mass
+<!-- key: neutrino-mass -->
 
 ### 1.1 Is cosmology in tension with the oscillation lower limit?
+<!-- key: is-cosmology-in-tension-with-the-oscillation -->
 
 **The claim.** In ΛCDM the data prefer less neutrino mass than oscillations allow. The DESI DR2 BAO + CMB limit is 0.0642 eV, just above the normal-ordering minimum of 0.059 eV; the Feldman–Cousins limit is 0.053 eV, below it; the effective signed mass is −0.101 (+0.047/−0.056) eV, 3σ from the minimum (Elbers et al. 2025, arXiv:2503.14744). Earlier: −160 ± 90 meV with the clustering-only extension on DR1 (Craig et al. 2024, arXiv:2405.00836), 2.8–3.3σ with the consistent extension (Elbers et al. 2024, arXiv:2407.10965), 2.5–5σ across metrics and data (Jiang et al. 2024, arXiv:2407.18047). The most probable value from ACT is also zero (Calabrese et al. 2025, arXiv:2503.14454 §6.1.1 [src]).
 
@@ -30,6 +32,7 @@ Flags: `[src]` read in the cited paper this session; `[sec]` taken from a named 
 **Where it stands.** The tension is 3σ at most, in one model (ΛCDM), with one τ. It is the same anomaly as the w0wa preference seen from another parameter, not an independent one; `cosmo-dark-energy-modified-gravity` holds the dark-energy side. Nothing in the data requires a statement about neutrinos beyond "Σm_ν is small in ΛCDM".
 
 ### 1.2 Which explanation, if the mismatch is real?
+<!-- key: which-explanation-if-the-mismatch-is-real -->
 
 | Explanation | What it predicts | Status | Citation |
 |---|---|---|---|
@@ -42,10 +45,12 @@ Flags: `[src]` read in the cited paper this session; `[sec]` taken from a named 
 A fit of an alternative model to the same BAO + CMB data is not new evidence: every row above removes the same Δχ².
 
 ### 1.3 Can the neutrino mass be bounded independently of dark energy?
+<!-- key: can-the-neutrino-mass-be-bounded-independently -->
 
 Qu et al. 2026 (arXiv:2607.24742) obtain Σm_ν < 0.152 eV with (w0, wa) marginalised, stable under binned and cubic w(a), and Σm_ν < 0.41 eV from the primary CMB with A_lens marginalised plus the lensing reconstruction, without late-time distances. Ivanov et al. (arXiv:2601.16165) reach 0.077 eV in w0waCDM with clustering shape information. The DESI w0waCDM limits are 0.117–0.163 eV. The open point is whether shape and lensing information can restore a limit below the inverted-ordering minimum of 0.10 eV in a general expansion history; at present only the external EFT analysis claims it.
 
 ### 1.4 Is the mass ordering decided?
+<!-- key: is-the-mass-ordering-decided -->
 
 - **Cosmology says "moderately" to "decisively", depending on the prior.** K = 10 (DESI DR2 + CMB + NuFIT 6.0; 6 with L-H, 8 with plik), Δχ² = 4.6; 46.5 with more data and another prior (arXiv:2407.18047); above 460 in ΛCDM and above 40 in extensions (Jimenez et al. 2026, arXiv:2606.18987), with a stated factor of about 10 from the prior measure alone; 3.5σ (ΛCDM) or 2.4σ (w0waCDM) in the EFT reanalysis (arXiv:2601.16165); "∼98% confidence" from P-ACT-LB (arXiv:2503.14454 [src]).
 - **Oscillations alone do not.** NuFIT 6.0 finds both orderings fit almost equally well; Δχ² = 6.1 for normal ordering only with the Super-Kamiokande atmospheric table (Esteban et al. 2024, arXiv:2410.05380).
@@ -53,10 +58,12 @@ Qu et al. 2026 (arXiv:2607.24742) obtain Σm_ν < 0.152 eV with (w0, wa) margina
 - **The caveats.** The cosmological preference exists only where the upper limit lies between 0.059 and 0.10 eV, which holds in ΛCDM and wCDM and fails in w0waCDM (limits 0.12–0.16 eV). ACT notes that it depends on the use of DESI BAO. A text may say that cosmology in ΛCDM and JUNO point the same way; it may not multiply the two Bayes factors without stating the model assumption.
 
 ### 1.5 Bayesian or frequentist?
+<!-- key: bayesian-or-frequentist -->
 
 The two agree on the limit (within 0.01 eV in DESI DR2, within about 10% in arXiv:2407.13831) and disagree on what to call the sensitivity (0.020 against 0.043 eV). The live question is presentational: whether collaboration papers should lead with a truncated-posterior limit. For decaying dark matter the two approaches disagree on the intervals themselves (Montandon et al. 2025, arXiv:2505.20193).
 
 ### 1.6 What will decide
+<!-- key: what-will-decide -->
 
 | Question | Deciding data | When | Flag |
 |---|---|---|---|
@@ -73,6 +80,7 @@ The two agree on the limit (within 0.01 eV in DESI DR2, within about 10% in arXi
 If KATRIN or a double-beta experiment measured a mass above the cosmological limit, the conflict would be with ΛCDM plus stable thermal neutrinos, not with cosmological data as such: the bounds assume long-lived neutrinos with a Fermi–Dirac distribution (arXiv:2503.14454 §6.1.1 [src]).
 
 ## 2. N_eff and light relics
+<!-- key: neff-and-light-relics -->
 
 - **Low or high?** CMB-only values lie below 3.044 (ACT 2.60 +0.21/−0.29, P-ACT 2.73 ± 0.14, CMB-SPA 2.82 ± 0.12), values with DESI BAO lie above (3.23 ± 0.18 with Planck, 3.53 ± 0.23 with SPT-3G D1) (arXiv:2503.14454; Camphuis et al. 2025, arXiv:2506.20707; arXiv:2503.14744). All CMB-only values are within 2σ of 3.044. The upward pull is the same BAO–CMB mismatch as in §1.
 - **Is the ACT damping-tail preference real?** ACT prefers less damping than the Planck best fit; SPT-3G D1 alone gives 3.18 (+0.29/−0.33). Late photon heating cannot produce a low N_eff without violating FIRAS (`systematics.md` §9). SPT-3G wide fields and SO decide [sec: `cosmo-cmb`].
@@ -82,26 +90,32 @@ If KATRIN or a double-beta experiment measured a mass above the cosmological lim
 - **Forecasts.** σ(N_eff) = 0.045 for the enhanced SO LAT (**forecast**, arXiv:2503.00636 [src]); ΔN_eff < 0.144 (95%) for Euclid + Planck (**forecast**, arXiv:2405.06047 [src]). The thresholds they are measured against: the minimum contribution of one additional thermalised species is 0.027 for a scalar and 0.095 for a spin-3/2 fermion (arXiv:2503.14454 §6.1.1 [src]). The SO forecast does not reach the scalar threshold at 2σ [der: 2 × 0.045 = 0.09 > 0.027].
 
 ## 3. Warm dark matter
+<!-- key: warm-dark-matter -->
 
 ### 3.1 How strong is the Lyα limit?
+<!-- key: how-strong-is-the-lyalpha-limit -->
 
 - **Strong side.** > 5.7 keV with thermal history and inhomogeneous reionisation marginalised (Iršič et al. 2023, arXiv:2309.04533); > 5.3 keV from earlier samples (Iršič et al. 2017, arXiv:1702.01764; Palanque-Delabrouille et al. 2019, arXiv:1911.09073).
 - **Cautious side.** > 3.1 keV, with the likelihood peaking at 4.5 keV, from a 1080-simulation grid of heating histories (Villasenor et al. 2022, arXiv:2209.14220); > 1.9 keV if the coldest histories are allowed (Garzilli et al. 2019, arXiv:1912.09397); no limit at all in the 2015 reanalysis with unconstrained histories (Garzilli, Boyarsky & Ruchayskiy 2015, arXiv:1510.07006).
 - **Reading.** The disagreement is about priors on the intergalactic medium, not about data. `cosmo-lyman-alpha` holds the thermal-state measurements that the strong side uses to narrow the prior.
 
 ### 3.2 Which number is "the" limit?
+<!-- key: which-number-is-the-limit -->
 
 Each probe now reports 6–7 keV: satellites 6.5 keV (Nadler et al. 2020, arXiv:2008.00022), lensing 5.6–7.4 keV depending on data and subhalo prior (Keeley et al. 2025, arXiv:2511.07765; Gilman et al. 2025, arXiv:2511.07513), Lyα 5.7 keV. The often-quoted 9.7 keV (Nadler et al. 2021, arXiv:2101.07810) is a 2021 combination that predates the JWST sample. Satellites, streams and lensing share the subhalo mass function and its tidal evolution (`systematics.md` §16); the N-body and semi-analytic predictions for the inner subhalo abundance differ by about 50% (arXiv:2511.07513 §4.3 [src]). A defensible summary is "thermal relics below about 5–6 keV are excluded by three probes with partly shared theory, and below about 2 keV even for the coldest thermal histories considered in the 2019 analysis".
 
 ### 3.3 Is warm dark matter still motivated?
+<!-- key: is-warm-dark-matter-still-motivated -->
 
 The original motivation was the small-scale "crisis" of cold dark matter (Bode, Ostriker & Turok 2000, arXiv:astro-ph/0010389; Viel et al. 2013, arXiv:1306.2314, whose title states it). This session did not research whether masses above 6 keV still affect any of the small-scale puzzles; that belongs to `cosmo-simulations-mocks` and is listed under "Not verified".
 
 ### 3.4 Sterile neutrinos and the 3.5 keV line
+<!-- key: sterile-neutrinos-and-the-3-5-kev-line -->
 
 The line was reported in a stack of 73 clusters (Bulbul et al. 2014, arXiv:1402.2301); a blank-sky analysis claimed to exclude the decaying-dark-matter origin (Dessert, Rodd & Safdi 2018, arXiv:1812.06976); two comments argue the limit is weaker by a factor of 20 or more (Abazajian 2020, arXiv:2004.06170; Boyarsky et al. 2020, arXiv:2004.06601), and the original authors maintained their result. Structure formation excludes the 7.1 keV candidate only for some lepton asymmetries (Enzi et al. 2020, arXiv:2010.13802). KATRIN will search for keV sterile neutrinos in the laboratory after its mass programme (arXiv:2601.00248 [src]). The status of the line in recent X-ray microcalorimeter data was not researched.
 
 ## 4. Fuzzy and ultralight dark matter
+<!-- key: fuzzy-and-ultralight-dark-matter -->
 
 - **An order of magnitude between Lyα analyses.** > 2 × 10⁻²⁰ eV (Rogers & Peiris 2020, arXiv:2007.12705), > 2–3.75 × 10⁻²¹ eV (Iršič et al. 2017, arXiv:1703.04683), > 1.9 × 10⁻²¹ eV (Liu, Gong & Zhou 2026, arXiv:2606.06969). The most recent is the weakest.
 - **Dwarf heating against everything else.** > 3 × 10⁻¹⁹ eV from the sizes and dispersions of Segue 1 and 2 (Dalal & Kravtsov 2022, arXiv:2203.05750) is one to two orders of magnitude above the other limits; the cosmology-independent Leo II limit is 2.2 × 10⁻²¹ eV (Zimmermann et al. 2024, arXiv:2405.20374). Whether the granule-heating argument holds for realistic dwarf histories is the open point.
@@ -110,6 +124,7 @@ The line was reported in a stack of 73 clusters (Bulbul et al. 2014, arXiv:1402.
 - **Hints at lower mass.** 2.7σ in BOSS at 10⁻²⁶ eV (Rogers et al. 2023, arXiv:2301.08361), a mild DESI preference that vanishes with the CMB (Verdiani et al. 2026, arXiv:2607.11876), 2.1σ in ACT lensing at 10⁻²⁴·⁵ eV (Laguë et al. 2026, arXiv:2606.06410). None is confirmed by a second data set; limits are below 1% of the dark matter at 10⁻³⁰–10⁻²⁸ eV and reach 0.3% of the matter density at 10⁻²⁹ eV. The original CMB + clustering limits are in Hložek et al. 2014 (arXiv:1410.2896).
 
 ## 5. Self-interacting dark matter
+<!-- key: self-interacting-dark-matter -->
 
 - **Constant cross section.** The value of order 1 cm²/g proposed for dwarf cores (Spergel & Steinhardt 1999, arXiv:astro-ph/9909386) is excluded on cluster scales: < 0.47 cm²/g from 72 mergers (Harvey et al. 2015, arXiv:1503.07675), < 0.35 cm²/g from relaxed clusters (Sagunski et al. 2020, arXiv:2006.12515), < 0.13 cm²/g from cluster strong lensing (Andrade et al. 2020, arXiv:2012.06611).
 - **Velocity dependence.** About 2 cm²/g on galaxy scales falling to 0.1 cm²/g in clusters fits dwarfs to clusters (Kaplinghat, Tulin & Yu 2015, arXiv:1508.03339); groups give 0.5 ± 0.2 cm²/g (arXiv:2006.12515). This is a consistent picture, not a detection: the galaxy-scale value rests on Jeans modelling with baryons.
@@ -117,6 +132,7 @@ The line was reported in a stack of 73 clusters (Bulbul et al. 2014, arXiv:1402.
 - **The Bullet Cluster number.** σ/m < 1.25 cm²/g is a 68% limit (Randall et al. 2007, arXiv:0704.0261), and resimulation shows the offset method was overinterpreted (Robertson, Massey & Eke 2016, arXiv:1605.04307).
 
 ## 6. Interacting and decaying dark matter
+<!-- key: interacting-and-decaying-dark-matter -->
 
 - **Dark matter–neutrino scattering.** Earlier hints of a non-zero interaction are stated to be excluded by dedicated Lyα simulations, u_νχ ≤ 1.5 × 10⁻⁸ (Mosbech et al. 2026, arXiv:2607.15020).
 - **Dark matter–baryon scattering.** CMB limits (Gluscevic & Boddy 2017, arXiv:1712.07133) are superseded on small scales by satellites (Nadler et al. 2019, arXiv:1904.10000; arXiv:2008.00022) and complemented by luminosity functions for velocity-dependent models (Lazare et al. 2025, arXiv:2510.10757).
@@ -124,6 +140,7 @@ The line was reported in a stack of 73 clusters (Bulbul et al. 2014, arXiv:1402.
 - **Decays and S8.** Decay to dark radiation is limited to a few percent of the dark matter (Poulin, Serpico & Lesgourgues 2016, arXiv:1606.02073; Simon et al. 2022, arXiv:2203.07440). The two-body decay proposed to lower S8 is preferred only with an S8 prior, and its intervals depend on the statistical method (arXiv:2505.20193). Whether an S8 tension remains to be explained is a question for `cosmo-weak-lensing`.
 
 ## 7. Method debates
+<!-- key: method-debates -->
 
 - **Limits or effective parameters.** Whether to publish a signed effective mass at all, given that three inequivalent definitions exist (`physics-and-methods.md` §1.4).
 - **Priors on masses.** Linear in Σm_ν, linear in the lightest mass, or logarithmic: the ordering Bayes factor changes by a factor of about 10 (arXiv:2606.18987).
@@ -132,6 +149,7 @@ The line was reported in a stack of 73 clusters (Bulbul et al. 2014, arXiv:1402.
 - **Collaboration or external.** External reanalyses of public DESI data now quote the tightest neutrino numbers (arXiv:2601.16165); they use different priors and extra statistics and are not interchangeable with the collaboration values.
 
 ## 8. Misconceptions and stale claims
+<!-- key: misconceptions-and-stale-claims -->
 
 | Claim still seen | Correction | Source |
 |---|---|---|
@@ -162,6 +180,7 @@ The line was reported in a stack of 73 clusters (Bulbul et al. 2014, arXiv:1402.
 Supporting references for rows above: the standard review of neutrino cosmology is Lesgourgues & Pastor 2006 (arXiv:astro-ph/0603494); the suppression argument goes back to Hu, Eisenstein & Tegmark 1997 (arXiv:astro-ph/9712057); the Boltzmann treatment of non-cold relics is Lesgourgues & Tram 2011 (arXiv:1104.2935). The mirror statement on the dark-energy side is in the DESI DR2 BAO paper (arXiv:2503.14738) and, for DR1, arXiv:2404.03002. SPT-3G D1 lensing gives the same limit as DESI DR1 did, 0.072 eV (Omori et al. 2026, arXiv:2608.31136). Primordial deuterium: Cooke, Pettini & Steidel 2017 (arXiv:1710.11129); helium prediction: Pitrou et al. 2018 (arXiv:1801.08023); epoch comparison: Yeh et al. 2022 (arXiv:2207.13133). Stream + Milky Way + M31 satellite limits: Liu, Gong & Liao 2025 (arXiv:2512.01361); ultraviolet luminosity function limit: Liu, Shan & Zhang 2024 (arXiv:2404.13596).
 
 ## 9. Not verified
+<!-- key: not-verified -->
 
 - Whether a KATRIN result from the complete data set, or a published LEGEND-200 limit, exists at the snapshot.
 - The 2.7σ positive Σm_ν in w0waCDM reported in the hub file from a joint DESI + CMB + DES analysis was not read here.

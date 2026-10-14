@@ -15,6 +15,7 @@ Flags as in `results.md`.
 ---
 
 ## 1. Past surveys — numbers as their own papers give them
+<!-- key: past-surveys-numbers-as-their-own-papers-give -->
 
 | Survey | Indicator | Sample | Sky / depth | Distance error | Reference | Flag |
 |---|---|---|---|---|---|---|
@@ -38,6 +39,7 @@ Notes.
 ---
 
 ## 2. Cosmicflows-4++ and its derivatives (2025–2026)
+<!-- key: cosmicflows-4-and-its-derivatives-2025-2026 -->
 
 | Release | Content | Reference | Flag |
 |---|---|---|---|
@@ -56,6 +58,7 @@ dynamical scale of homogeneity is not yet reached in the interval [200–300] Mp
 ---
 
 ## 3. DESI Peculiar Velocity Survey
+<!-- key: desi-peculiar-velocity-survey -->
 
 A secondary-target programme of DESI, FP and TF with one instrument and one photometric system
 (Legacy Surveys DR9).
@@ -107,6 +110,7 @@ scatter, but coherent with galaxy morphology.
 ---
 
 ## 4. Supernova samples used as velocity tracers
+<!-- key: supernova-samples-used-as-velocity-tracers -->
 
 Sample definitions, calibration and release status of the SN compilations are in `cosmo-supernovae`
 (`references/surveys-and-data.md`). Velocity-specific facts:
@@ -124,6 +128,7 @@ Sample definitions, calibration and release status of the SN compilations are in
 ---
 
 ## 5. HI Tully–Fisher surveys
+<!-- key: hi-tully-fisher-surveys -->
 
 | Survey | Content | Status | Reference | Flag |
 |---|---|---|---|---|
@@ -141,6 +146,7 @@ forecasts.
 ---
 
 ## 6. Next: 4HS, DESI DR2/DR3, Rubin, kSZ
+<!-- key: next-4hs-desi-dr2-dr3-rubin-ksz -->
 
 | Programme | What it adds | Status on the snapshot date | Flag |
 |---|---|---|---|
@@ -157,6 +163,7 @@ checking its status (see `pv-surveys.md`, §4).
 ---
 
 ## 7. Public codes and data products
+<!-- key: public-codes-and-data-products -->
 
 | Product | What | Reference | Flag |
 |---|---|---|---|
@@ -169,6 +176,7 @@ checking its status (see `pv-surveys.md`, §4).
 | CF4++ fields | catalogue and reconstructed density and velocity fields | arXiv:2502.01308 | [src] |
 
 ## Not verified in this file
+<!-- key: not-verified-in-this-file -->
 
 - 4HS sample sizes and footprint: taken from `pv-surveys.md`, not re-read.
 - ZTF "DR2.5": no release paper found; see `cosmo-supernovae`.

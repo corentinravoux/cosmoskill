@@ -9,8 +9,10 @@ named page, not read on the page), `[der]`. Every future date in this file
 is an announcement; label it **forecast** when it enters a text.
 
 ## 1. Schedule risks
+<!-- key: schedule-risks -->
 
 ### 1.1 Slips already on record
+<!-- key: slips-already-on-record -->
 
 A facility's past slips are the best available prior on its next date.
 
@@ -34,6 +36,7 @@ schedule in April 2026 [sec: GC], after running about 7% faster than
 forecast in dark time during its first 1.1 years (arXiv:2306.06309) [src].
 
 ### 1.2 Dates that carry cosmology in the next three years
+<!-- key: dates-that-carry-cosmology-in-the-next-three -->
 
 - **Euclid DR1.** DR1-Foundation on 12 November 2026 and the full DR1, with
   the clustering and lensing products, in mid-2027; the ESA page calls all
@@ -68,6 +71,7 @@ forecast in dark time during its first 1.1 years (arXiv:2306.06309) [src].
   or two L-shaped detectors) is open (arXiv:2503.12263) [src].
 
 ## 2. Cancelled, descoped or redefined projects
+<!-- key: cancelled-descoped-or-redefined-projects -->
 
 | Project | What changed | Consequence for a text | Flag |
 |---|---|---|---|
@@ -86,6 +90,7 @@ survey that will not exist. A forecast is tied to the design document it
 was computed for; cite that document next to the number.
 
 ## 3. Disagreements between sibling skills, settled at source
+<!-- key: disagreements-between-sibling-skills-settled-at -->
 
 The five sibling `surveys-and-data.md` files were read on 2026-10-09. They
 agree on every date they share. The differences are of flag, of rounding,
@@ -110,6 +115,7 @@ gives about 31,000 deg² of modelled sky on its front page and about
 22,731 deg² of joint all-band coverage on the DR11 page [src].
 
 ## 4. Stale claims that still circulate
+<!-- key: stale-claims-that-still-circulate -->
 
 Each line gives the claim, then the correction and where it was read.
 
@@ -167,6 +173,7 @@ Each line gives the claim, then the correction and where it was read.
     likelihoods built on it are current [sec: CMB].
 
 ## 5. Questions the next data will decide
+<!-- key: questions-the-next-data-will-decide -->
 
 - Whether DESI's completed survey and extension confirm the DR2 preference
   for evolving dark energy (2027): `cosmo-dark-energy-modified-gravity`.
@@ -185,6 +192,7 @@ Each line gives the claim, then the correction and where it was read.
   proposals [sec: GC], [src].
 
 ## Not verified
+<!-- key: not-verified -->
 
 - Whether the 4MOST main survey and the WEAVE multi-object surveys have
   started; the Roman survey start; Rubin DR1 date; DESI DR2 release date.

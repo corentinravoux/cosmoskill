@@ -7,6 +7,7 @@ Flags: `[src]` read this session in the cited paper; `[sec]` from a named second
 `[der]` derived here. Forecasts are marked **forecast**.
 
 ## 1. Is the amplitude of structure low at z < 1 in CMB lensing tomography?
+<!-- key: is-the-amplitude-of-structure-low-at-z-1-in-cmb -->
 
 **The numbers.** With the same ACT DR6 and Planck PR4 lensing maps:
 
@@ -53,6 +54,7 @@ independent imaging tracer at z < 0.6, and SPT-3G or Simons Observatory lensing 
 tracers. None was found in a date-sorted search on 2026-10-09.
 
 ## 2. How strong is baryonic feedback, as seen by the kSZ?
+<!-- key: how-strong-is-baryonic-feedback-as-seen-by-the -->
 
 **For strong feedback (gas pushed well beyond the virial radius).**
 - Stacked kSZ on DESI photometric LRGs at 13σ disfavours IllustrisTNG-like gas (Hadzhiyska 2024,
@@ -99,6 +101,7 @@ the stacking velocity estimator reproduced in the simulation, and that reports t
 and without a free amplitude.
 
 ## 3. Does the tSZ prefer a low S_8?
+<!-- key: does-the-tsz-prefer-a-low-s8 -->
 
 - Shear + shear × y on DES Y3 with ACT DR6: S_8 = 0.811 +0.015/−0.012, consistent with the
   primary CMB (arXiv:2506.07432) [src].
@@ -118,6 +121,7 @@ open. The same offset appears on the cluster side as the hydrostatic mass bias: 
 `cosmo-clusters`.
 
 ## 4. High-redshift growth and the Quaia contamination question
+<!-- key: high-redshift-growth-and-the-quaia -->
 
 - Quaia × Planck: σ_8 = 0.766 ± 0.034, low value driven by the z ≈ 2.1 bin, with "plausible
   arguments" for foreground contamination of the lensing map beyond z ~ 1.5 (Alonso 2023,
@@ -137,6 +141,7 @@ fixed to 3.3% by the lensing auto-spectrum minus the cross-correlations (Farren 
 arXiv:2409.02109) [src].
 
 ## 5. ISW from superstructures
+<!-- key: isw-from-superstructures -->
 
 Excess: A_ISW ≈ 5.2 ± 1.6 for DES + BOSS supervoids (Kovács 2018, arXiv:1811.07812), 3.6 ± 2.1
 at 0.8 < z < 1.2 and a sign change at z > 1.5 for eBOSS quasar supervoids (Kovács 2021,
@@ -155,6 +160,7 @@ field. Planck 2015 could not exclude an ISW origin for the stacked signal (Planc
 enough to explain the Quaia value (arXiv:2607.22461) [src].
 
 ## 6. Lensing imprint of voids
+<!-- key: lensing-imprint-of-voids -->
 
 Earlier work reported void lensing profiles below mock predictions. With DESI Legacy LRG voids
 and templates matched in sparseness and photometric-redshift error, A_κ = 1.016 ± 0.054 (Sartori
@@ -164,6 +170,7 @@ density peaks (arXiv:2105.11936) [src]. The discrepancy is now attributed to tem
 construction.
 
 ## 7. Primordial non-Gaussianity from cross-correlations
+<!-- key: primordial-non-gaussianity-from-cross -->
 
 | Probe | f_NL (local) | Reference |
 |---|---|---|
@@ -181,6 +188,7 @@ k < 0.004 Mpc⁻¹ (arXiv:2604.04867) [src]. None of these approaches the CMB bi
 `cosmo-inflation-primordial`.
 
 ## 8. Method debates
+<!-- key: method-debates -->
 
 - **Linear scale cuts or HEFT.** HEFT to k ≈ 0.6 h/Mpc extracts more signal and adds four nuisance
   parameters per bin; the two approaches agree on the LRG data (arXiv:2407.04607) [src]. The open
@@ -197,6 +205,7 @@ k < 0.004 Mpc⁻¹ (arXiv:2604.04867) [src]. None of these approaches the CMB bi
   (Ouellette 2026, arXiv:2606.26223) [src].
 
 ## 9. Forecasts
+<!-- key: forecasts -->
 
 Each row is a **forecast**, not a measurement.
 
@@ -212,6 +221,7 @@ Forecasts that assume CMB-S4 need rereading: the project lost DOE and NSF suppor
 [sec: `cosmo-cmb` SKILL.md].
 
 ## 10. Stale claims and misconceptions
+<!-- key: stale-claims-and-misconceptions -->
 
 1. *"CMB lensing tomography finds S_8 low at 2–3σ."* True of the 2021 analyses (arXiv:2105.03421:
    0.784 ± 0.015; arXiv:2111.09898: 0.73 ± 0.03). Both were reanalysed by their own groups and
@@ -246,6 +256,7 @@ Forecasts that assume CMB-S4 need rereading: the project lost DOE and NSF suppor
     (arXiv:2206.10824, arXiv:2203.12440) [src].
 
 ## 11. Disagreement with a sibling skill
+<!-- key: disagreement-with-a-sibling-skill -->
 
 `cosmo-peculiar-velocities` stated "b_v ≈ 0.3–0.45" for the kSZ velocity bias when this file was
 written; it was corrected on 2026-10-09 to 0.2–0.45, the span of the values below together with
@@ -257,6 +268,7 @@ range read at source this session is therefore 0.23–0.39 for LRG samples. Valu
 quasars were not read.
 
 ## 12. Not verified, and leads without a bibliography row
+<!-- key: not-verified-and-leads-without-a-bibliography -->
 
 The bibliography was capped at 100 rows. The following papers were returned by a search tool
 with their titles this session but have no row; their identifiers are given bare, and nothing in

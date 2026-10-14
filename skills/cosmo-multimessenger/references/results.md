@@ -10,6 +10,7 @@ intervals are 68% unless stated. Where the arXiv abstract and a journal version 
 differ, the arXiv abstract as served on 2026-10-10 is what is quoted.
 
 ## 1. Bright siren GW170817
+<!-- key: bright-siren-gw170817 -->
 
 One event, many values: the gravitational-wave data are the same in every row. What
 changes is the velocity of NGC 4993, the viewing-angle information and the priors.
@@ -66,8 +67,10 @@ The last row is the tightest siren number in the literature and is conditional o
 associations that the LVK analyses do not use.
 
 ## 2. Dark sirens and catalogue-level H0
+<!-- key: dark-sirens-and-catalogue-level-h0 -->
 
 ### 2.1 LVK collaboration results (flat ΛCDM)
+<!-- key: lvk-collaboration-results-flat-lambdacdm -->
 
 | Catalogue | Events used | H0 | What is combined | Reference | Flag |
 |---|---|---|---|---|---|
@@ -95,6 +98,7 @@ Notes.
   The result is consistent with both.
 
 ### 2.2 External analyses of the same catalogues
+<!-- key: external-analyses-of-the-same-catalogues -->
 
 | Data | Method | H0 | Reference |
 |---|---|---|---|
@@ -129,6 +133,7 @@ How to read the tight rows.
   [der: mean of the upper and lower errors of the rows above].
 
 ### 2.3 Modified gravitational-wave propagation
+<!-- key: modified-gravitational-wave-propagation -->
 
 | Data | `Xi_0` (1 in general relativity) | Reference |
 |---|---|---|
@@ -139,6 +144,7 @@ How to read the tight rows.
 | GWTC-5.0 | "no departures from GR"; value not in the abstract | arXiv:2605.27227 |
 
 ## 3. Siren × galaxy cross-correlation results
+<!-- key: siren-x-galaxy-cross-correlation-results -->
 
 | Data | Result | Reference |
 |---|---|---|
@@ -150,8 +156,10 @@ No cross-correlation analysis of GWTC-4.0 or GWTC-5.0 was found in the date-sort
 search of 2026-10-10.
 
 ## 4. Fast radio bursts: baryons and H0
+<!-- key: fast-radio-bursts-baryons-and-h0 -->
 
 ### 4.1 Baryon census
+<!-- key: baryon-census -->
 
 | Quantity | Value | Sample | Reference | Flag |
 |---|---|---|---|---|
@@ -172,6 +180,7 @@ and Liu et al. quote all diffuse gas. Macquart et al. state that their baryon de
 is consistent with the CMB and nucleosynthesis values.
 
 ### 4.2 Feedback from DM cross-correlations
+<!-- key: feedback-from-dm-cross-correlations -->
 
 | Result | Reference |
 |---|---|
@@ -185,6 +194,7 @@ different detection levels on different scales and tracers; they agree on strong
 feedback.
 
 ### 4.3 H0 from the dispersion measure–redshift relation
+<!-- key: h0-from-the-dispersion-measure-redshift-relation -->
 
 | H0 | Sample | Method | Reference | Flag |
 |---|---|---|---|---|
@@ -203,6 +213,7 @@ themselves. No FRB H0 is at present a competitive or independent arbiter of the
 tension.
 
 ## 5. Lensed transients and time delays (pointer)
+<!-- key: lensed-transients-and-time-delays-pointer -->
 
 | Object | H0 | Notes | Reference | Flag |
 |---|---|---|---|---|
@@ -223,8 +234,10 @@ The four supernovae are mutually consistent within their errors [der: comparison
 rows].
 
 ## 6. History of the key numbers
+<!-- key: history-of-the-key-numbers -->
 
 ### 6.1 LVK H0 with sirens
+<!-- key: lvk-h0-with-sirens -->
 
 | Year | Value | Status |
 |---|---|---|
@@ -242,6 +255,7 @@ within five years (arXiv:1712.06531) that assumed a steady supply of binary neut
 stars with counterparts.
 
 ### 6.2 GW170817 with electromagnetic inclination
+<!-- key: gw170817-with-electromagnetic-inclination -->
 
 68.9 (2018, arXiv:1806.10596) → 68.3 with BORG velocities (2019, arXiv:1909.08627) →
 64.8 with model-averaged velocities (2019, arXiv:1909.00587) → 66.2 with kilonova and
@@ -250,12 +264,14 @@ arXiv:2305.19914) → 65.5 with all VLBI data (2026, arXiv:2605.11437). None sup
 the others; they are alternative jet and velocity models.
 
 ### 6.3 FRB baryon density
+<!-- key: frb-baryon-density -->
 
 `Ω_b h70 = 0.051` with a 95% interval of +0.021/−0.025 (2020) → 0.051 ± 0.006 at 68%
 (2024) [src; arXiv:2005.13161, arXiv:2409.16952]. The central value did not move; for a
 Gaussian the 1σ error roughly halved [der: 0.023/2 ≈ 0.012 against 0.006].
 
 ### 6.4 Agreement with sibling skills
+<!-- key: agreement-with-sibling-skills -->
 
 - `cosmo-distance-ladder-h0`: TDCOSMO-2025 71.6 (+3.9/−3.3) — same value read here.
 - `cosmo-surveys-facilities`: O4 ended 18 November 2025 — confirmed by the LVK
@@ -264,6 +280,7 @@ Gaussian the 1σ error roughly halved [der: 0.023/2 ≈ 0.012 against 0.006].
   the addition that a six-month run IR1 is planned from November 2026.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - GWTC-5.0 spectral-only, catalogue-only and bright-only H0 values, and its `Xi_0`
   constraint (macros in the LaTeX source).

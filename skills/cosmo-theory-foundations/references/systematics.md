@@ -5,6 +5,7 @@ Snapshot: 2026-10-07
 Each subsection gives the mechanism, the size where a paper quantifies it, the standard mitigation, the test that reveals it, and the paper a referee expects. The formulae are in `physics-and-methods.md`; the per-analysis choices in `surveys-and-data.md`. A size flagged [der] is derived here from numbers read at source.
 
 ## 0. Sizes at a glance
+<!-- key: sizes-at-a-glance -->
 
 | Trap | Size | Flag | Section |
 |---|---|---|---|
@@ -27,6 +28,7 @@ Each subsection gives the mechanism, the size where a paper quantifies it, the s
 | Prior-volume projection, DESI DR1 full shape in w0waCDM | multi-σ in H0, w0, wa | [src] | 10 |
 
 ## 1. h units and the σ8 radius
+<!-- key: h-units-and-the-sigma8-radius -->
 
 - **Mechanism.** σ8 is defined in spheres of 8 h⁻¹Mpc, so its physical radius moves with h; a posterior on σ8 averages σ(R) over the radii allowed by the posterior on h (Sánchez 2020, arXiv:2002.07829, Eq. 6). Priors, scale cuts and nuisance parameters written in h⁻¹Mpc acquire the same hidden dependence.
 - **Size.** Over the KiDS-Legacy prior h ∈ [0.64, 0.82] (arXiv:2503.19441) the radius runs from 9.8 to 12.5 Mpc [der]. In Sánchez's comparison, DES and Planck are "in excellent agreement" in (ω_m, σ12) while the σ8 plane shows the familiar offset; S12 = 0.815 ± 0.013 (Planck) against 0.798 ± 0.043 (DES) [src]. For template fits, the error on fσ8 "derived under a fixed h" is "significantly underestimated" [src].
@@ -37,6 +39,7 @@ Each subsection gives the mechanism, the size where a paper quantifies it, the s
 - **Other h-unit quantities met in the papers read:** DES Y3's clustering cut R_min = 8 Mpc/h and point-mass prior 10^17 M_⊙/h (arXiv:2105.13548); DESI's counterterm prior of 12.5 h⁻²Mpc² and k range 0.02–0.20 h/Mpc (arXiv:2411.12021); Tinker masses in M_⊙/h.
 
 ## 2. Fiducial cosmology and the Alcock–Paczynski rescaling
+<!-- key: fiducial-cosmology-and-the-alcock-paczynski -->
 
 - **Mechanism.** Redshifts are turned into distances with a fixed catalogue cosmology; the model is distorted by q_∥ = D_H/D_H^fid, q_⊥ = D_M/D_M^fid, with a volume prefactor D²_A,fid H_true/(D²_A,true H_fid) (arXiv:1909.05277, appendix). A template fit adds a second fiducial dependence: the template shape, its one-loop terms and its amplitude.
 - **Size.** DESI assigns the fiducial cosmology a systematic on α_AP of 0.1% in DR1 and 0.18% in DR2, the increase coming from adding an evolving-dark-energy case to the test (arXiv:2503.14738; method in Pérez-Fernández et al. 2024, arXiv:2406.06085) [src]. In eBOSS, fσ8 built from the rescaled σ8 depends on the template at a level "significantly smaller than the statistical errors", with 2% marked as the reference deviation in its mock test (arXiv:2007.08991, Appendix A) [src].
@@ -46,6 +49,7 @@ Each subsection gives the mechanism, the size where a paper quantifies it, the s
 - **Cite.** arXiv:2406.06085; arXiv:2106.07641 (ShapeFit); arXiv:2007.08991.
 
 ## 3. r_d definition and code dependence
+<!-- key: rd-definition-and-code-dependence -->
 
 - **Mechanism.** Three different numbers are called "the sound horizon": r_* at last scattering, r_drag from a Boltzmann code, and the Eisenstein–Hu fitting-formula value.
 - **Size.** Fitting formula against CAMB: 2.75% (arXiv:1303.5076) [src]; conventions "differ at the 1-2% level" (arXiv:1411.1074) [src]; r_drag against r_*: 147.09 against 144.43 Mpc, 1.8% (arXiv:1807.06209) [src, ratio der]. Against these, DESI DR2 measures h r_d to 0.7% [der: 0.73/101.54].
@@ -56,6 +60,7 @@ Each subsection gives the mechanism, the size where a paper quantifies it, the s
 - **Cite.** arXiv:1411.1074; arXiv:astro-ph/9709112; arXiv:1303.5076, Sect. 5.2; Brieden, Gil-Marín & Verde 2023 (arXiv:2212.04522) for the power-law form.
 
 ## 4. Fourier and multipole normalisation
+<!-- key: fourier-and-multipole-normalisation -->
 
 - **Mechanism.** Factors that differ silently between codes: (2π)³ in P(k); the (2ℓ+1) of the multipoles; the i^ℓ of the Hankel pair; the sign of the Fourier exponent; P(k) against Δ²(k) = k³P/(2π²).
 - **Size.** Each is a factor, not a per cent: 5 on the quadrupole, 9 on the hexadecapole if (2ℓ+1) is dropped [der]; a sign on ξ_2 if i^ℓ is ignored ("a negative quadrupole" of ξ "corresponds to … a positive quadrupole" of P, arXiv:astro-ph/9708102) [src].
@@ -65,6 +70,7 @@ Each subsection gives the mechanism, the size where a paper quantifies it, the s
 - **Cite.** arXiv:astro-ph/9708102; arXiv:1909.05277 for the modern statement of both conventions.
 
 ## 5. Which matter field: cb versus total matter
+<!-- key: which-matter-field-cb-versus-total-matter -->
 
 - **Mechanism.** With massive neutrinos there are two matter fields. Haloes, bias and the redshift-space growth rate follow CDM+baryons; lensing and the Planck σ8 follow total matter.
 - **Size.** If neutrinos are unclustered at 8 h⁻¹Mpc, σ8 of total matter is below the cb value by about f_ν: 0.45% for Σm_ν = 0.06 eV [der, `results.md` section 8]. Planck defines σ8 on "total matter (baryons + CDM + massive neutrinos)" (arXiv:1303.5076); DESI DR1 full shape "excluding neutrinos" (arXiv:2411.12021) [src]. The neutrino effect on the cb growth rate is 0.3–2% over k = 0.01–0.5 h/Mpc for M_ν ≤ 0.15 eV (arXiv:1708.01154) [src].
@@ -74,6 +80,7 @@ Each subsection gives the mechanism, the size where a paper quantifies it, the s
 - **Cite.** arXiv:1311.1212; arXiv:1708.01154; arXiv:astro-ph/0603494.
 
 ## 6. Growth-rate approximations used outside their range
+<!-- key: growth-rate-approximations-used-outside-their -->
 
 - **Mechanism.** f = Ω_m(z)^γ with γ = 0.55 is a ΛCDM fit, used as if it were general relativity. Linder's own formula has γ = 0.55 + 0.05[1 + w(z=1)] (arXiv:astro-ph/0507263).
 - **Size.** Within its range the formula is good to 0.05–0.2% on the growth factor [src: abstract of arXiv:astro-ph/0507263; an earlier draft of this file read 0.05–0.5%, which the abstract does not support]; the exponent 0.6 of older work differs by 6% in f at Ω_m = 0.3 [der]; a DGP model and a quintessence model with the same expansion differ by 7% in growth today [src]. With neutrinos, growth is scale-dependent at the 0.3–2% level (arXiv:1708.01154), larger than the fit error.
@@ -83,6 +90,7 @@ Each subsection gives the mechanism, the size where a paper quantifies it, the s
 - **Cite.** arXiv:astro-ph/0507263; arXiv:astro-ph/0701317; values in `cosmo-dark-energy-modified-gravity`.
 
 ## 7. Non-linear prescription outside its calibration
+<!-- key: non-linear-prescription-outside-its-calibration -->
 
 - **Mechanism.** halofit and HMcode are fits to finite simulation sets; their quoted accuracies hold only within those sets.
 - **Size.** 5–10% (revised halofit), ≃5% (HMcode 2015), RMS 2.5% with a 16% worst case (HMcode-2020), each to k ~ 10 h/Mpc and z ≤ 2–3 [src, `results.md` section 4]. KiDS-Legacy reports that halofit "tends to overestimate power for lower values of S8, resulting in an underestimated S8 value", and that HMCode2020 gives "a slightly higher S8" than HMCode2015 (arXiv:2503.19441) [src]; Planck 2018 itself moved from Takahashi halofit to HMcode for CMB lensing (arXiv:1807.06209).
@@ -92,6 +100,7 @@ Each subsection gives the mechanism, the size where a paper quantifies it, the s
 - **Cite.** arXiv:1208.2701; arXiv:2009.01858; arXiv:1109.4416.
 
 ## 8. Limber and flat-sky approximations
+<!-- key: limber-and-flat-sky-approximations -->
 
 - **Mechanism.** Limber replaces two Bessel functions by a delta function; it fails when the radial kernels are narrow or barely overlap (arXiv:0809.5112). Writing k = ℓ/χ instead of (ℓ + 1/2)/χ degrades the error from O(1/ℓ²) to O(1/ℓ).
 - **Size.** Cosmic shear: >1% at ℓ < 40 with flat sky and Hankel approximations combined (arXiv:1611.04954); negligible for CFHTLenS-class parameters (arXiv:1702.05301; arXiv:1704.01054). Clustering: "significant biases" at LSST Y1 or DES Y6 precision (arXiv:1911.11947); 1σ to more than 2σ for Roman and Rubin (arXiv:2606.23781, **forecast**).
@@ -100,6 +109,7 @@ Each subsection gives the mechanism, the size where a paper quantifies it, the s
 - **Cite.** arXiv:0809.5112; arXiv:1911.11947.
 
 ## 9. Wide-angle, relativistic and line-of-sight definition
+<!-- key: wide-angle-relativistic-and-line-of-sight -->
 
 - **Mechanism.** The plane-parallel Kaiser formula assumes one line of sight per pair. FFT estimators take the direction to one galaxy; this generates odd multipoles that couple to the window (arXiv:1810.05051). On horizon scales the observed counts contain Doppler, potential and lensing terms (arXiv:1105.5280).
 - **Size.** Geometry, non-linearity and radial selection together change large-scale RSD "at the level of 20 per cent" in SDSS-II LRG mocks (arXiv:1102.1014) [src]; wide-angle corrections are "non-negligible for opening angles Θ ≳ 30°" (arXiv:2608.19039) [src]; neglecting relativistic and wide-angle terms shifts f_NL by about 1σ in a SPHEREx-like **forecast** (arXiv:2608.18334).
@@ -109,6 +119,7 @@ Each subsection gives the mechanism, the size where a paper quantifies it, the s
 - **Cite.** arXiv:astro-ph/9712007; arXiv:1709.09730; arXiv:1810.05051.
 
 ## 10. Bias-basis, counterterm and prior conventions
+<!-- key: bias-basis-counterterm-and-prior-conventions -->
 
 - **Mechanism.** The same physics is parametrised differently in each one-loop code; priors that are "wide" in one basis are informative in another; weakly constrained nuisance parameters shift marginal posteriors.
 - **Size of the convention differences.** Co-evolution tidal bias: −(2/7)(b1^E − 1) in velocileptors EPT, −(4/7)(b1^E − 1) in FOLPSν (arXiv:2404.07272, Eqs. 3.15–3.16) [src], a factor 2 in the number called tidal bias. Linear bias: Lagrangian b1 against Eulerian 1 + b1. Counterterms: k²P_Zel against k²P_lin; two multipole coefficients against three μ-dependent ones (arXiv:1909.05277).
@@ -118,6 +129,7 @@ Each subsection gives the mechanism, the size where a paper quantifies it, the s
 - **Cite.** arXiv:2404.07272; arXiv:2607.02498; arXiv:0902.0991; arXiv:1402.5916; statistical treatment in `cosmo-statistics-inference`.
 
 ## 11. Three worked cases
+<!-- key: three-worked-cases -->
 
 **Reading an old BAO number.** A 2010–2012 paper quotes r_s/D_V. Its r_s is the Eisenstein–Hu value. To compare with a Boltzmann-based model, either multiply the model r_drag by 1.0275 as Planck 2013 did, or divide the datum's r_s by it; then invert to D_V/r_d. If the paper quotes D_A/r_s, multiply by (1+z) for D_M. Skipping the first step is a 2.75% error, four times the 0.7% precision of DESI DR2 on h r_d [der].
 
@@ -126,6 +138,7 @@ Each subsection gives the mechanism, the size where a paper quantifies it, the s
 **Putting fσ8 points on one plot.** BOSS and eBOSS points are template-fit fσ8 with σ8 rescaled by α_iso (galaxies); DESI DR1 points are fσ_s8 under r_d = r_d^fid; Planck's prediction curve is [σ8^(vd)]²/σ8^(dd) for total matter; peculiar-velocity points come from a different estimator at z < 0.1. The plot is legitimate as a display with these caveats stated; a γ fit to it needs each point's definition, covariance and fiducial cosmology (`cosmo-peculiar-velocities`, `cosmo-dark-energy-modified-gravity`).
 
 ## 12. What a referee checks
+<!-- key: what-a-referee-checks -->
 
 1. Units: is every length, wavenumber, mass, prior width and scale cut in Mpc or in h⁻¹Mpc, and which h?
 2. σ8: field (total or cb), redshift, linear, and the h posterior or a σ12 next to it; for S8, the exponent (0.5, 0.58, 0.4 for S12).
@@ -144,6 +157,7 @@ Each subsection gives the mechanism, the size where a paper quantifies it, the s
 15. Code and version for the linear spectrum; whether a formula from a paper was re-derived or copied.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - No paper read this session quantifies the bias from a dropped AP volume prefactor or from a wrong multipole normalisation: these are stated as factors, not measured.
 - The size of the cb-versus-total σ8 difference is a derivation; a Boltzmann-code value was not read. Whether DESI's fiducial σ8 = 0.811355 is a cb or a total-matter number was not resolved.

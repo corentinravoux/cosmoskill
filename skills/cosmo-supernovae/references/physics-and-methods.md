@@ -8,6 +8,7 @@ Flags: `[src]` read in the cited paper this session; `[sec]` from a named
 secondary source; `[der]` derived here.
 
 ## 1. What is measured, and what it constrains
+<!-- key: what-is-measured-and-what-it-constrains -->
 
 A Type Ia supernova (SN Ia) analysis measures **relative** luminosity distances.
 The observable is the distance modulus
@@ -54,8 +55,10 @@ Leibundgut 2011 (arXiv:1102.1431); Leibundgut & Sullivan 2018
 (doi:10.1007/s11214-018-0491-8).
 
 ## 2. Standardisation
+<!-- key: standardisation -->
 
 ### 2.1 The Tripp relation as used today
+<!-- key: the-tripp-relation-as-used-today -->
 
 The width–luminosity relation goes back to Phillips 1993
 (doi:10.1086/186970). Current analyses use the SALT parameters and the Tripp
@@ -92,6 +95,7 @@ scatter models) Pantheon+ finds `gamma ~ 0.05` at 7 sigma `[src]`
 and bias correction as much as of the data.
 
 ### 2.2 Where the linear Tripp relation is known to fail
+<!-- key: where-the-linear-tripp-relation-is-known-to-fail -->
 
 - **Stretch is not linear.** ZTF DR2 (volume-limited, z < 0.06, nearly 1000
   SNe) rejects a single `alpha` at 13.4 sigma; a broken relation gives
@@ -112,6 +116,7 @@ and bias correction as much as of the data.
   and colour distributions and different standardisation relations.
 
 ### 2.3 Light-curve / SED models
+<!-- key: light-curve-sed-models -->
 
 | Model | Reference | Key facts |
 |---|---|---|
@@ -129,6 +134,7 @@ change of model plus the change of light-curve calibration shifts distances by
 photometry without retraining the model is not self-consistent.
 
 ## 3. Intrinsic scatter and dust models
+<!-- key: intrinsic-scatter-and-dust-models -->
 
 After standardisation the Hubble residual scatter is 0.15–0.18 mag in current
 samples (table above). How the unexplained part is modelled changes the bias
@@ -148,6 +154,7 @@ residual brightness step that is not explained by our dust model"
 (arXiv:2401.02945). It is non-zero at > 5 sigma in DES-SN5YR `[src]`.
 
 ## 4. Selection bias: BBC and BEAMS
+<!-- key: selection-bias-bbc-and-beams -->
 
 A flux-limited survey preferentially keeps bright, blue, slow-declining events
 near its limit. The standard treatment is "BEAMS with Bias Corrections" (BBC;
@@ -193,6 +200,7 @@ probability of being a SN Ia; `N` objects of mean purity `P` constrain like
 sum of BEAMS probabilities `[src]` (arXiv:2511.07517).
 
 ## 5. Hierarchical Bayesian and simulation-based alternatives
+<!-- key: hierarchical-bayesian-and-simulation-based -->
 
 | Framework | Reference | Notes |
 |---|---|---|
@@ -209,6 +217,7 @@ the field's main robustness test; UNITY on Unite is announced as future work
 (arXiv:2609.05053).
 
 ## 6. Photometric classification
+<!-- key: photometric-classification -->
 
 DES-SN5YR is the first flagship result with photometrically classified SNe
 and host-galaxy spectroscopic redshifts (DES Collaboration 2024,
@@ -232,6 +241,7 @@ Unite additionally applies a cut `P_Ia > 0.8` to the DES events `[src]`
 (arXiv:2609.05053).
 
 ## 7. Covariance and likelihood practice
+<!-- key: covariance-and-likelihood-practice -->
 
 The cosmology likelihood is Gaussian in distance-modulus residuals,
 
@@ -288,6 +298,7 @@ source of confusion:
   posterior carries a non-flat prior (see "Not verified").
 
 ## 8. Redshifts and peculiar-velocity corrections
+<!-- key: redshifts-and-peculiar-velocity-corrections -->
 
 The use of SNe as velocity tracers (growth rate, bulk flow) belongs to
 `cosmo-peculiar-velocities`; the likelihood framework for that is the one of
@@ -319,6 +330,7 @@ nuisance.
   `sqrt(1/6)`) is carried in the Unite budget `[src]`.
 
 ## 9. Calibration chain
+<!-- key: calibration-chain -->
 
 1. **Flux scale**: HST CALSPEC standards; a 2020 CALSPEC update changed the
    fundamental calibration by of order 1.5 % over 4000 Å `[src]`
@@ -341,6 +353,7 @@ nuisance.
    arXiv:2609.05053).
 
 ## 10. Blinding practice
+<!-- key: blinding-practice -->
 
 - JLA: the SNLS–SDSS inter-calibration was "performed blindly with respect to
   the cosmology analysis" (Betoule et al. 2014, arXiv:1401.4064).
@@ -363,6 +376,7 @@ A reanalysis of an already-unblinded sample (DES-Dovekie, Union3.1, Unite)
 cannot be blind in the same sense; DES-Dovekie first reproduces DES-SN5YR.
 
 ## 11. Public codes and pipelines
+<!-- key: public-codes-and-pipelines -->
 
 | Code | What it does | Reference |
 |---|---|---|
@@ -378,6 +392,7 @@ cannot be blind in the same sense; DES-Dovekie first reproduces DES-SN5YR.
 | CosmoSIS + Nautilus | Sampling and evidence in Unite | as used in arXiv:2609.05053 |
 
 ## 12. Conventions and where the community is split
+<!-- key: conventions-and-where-the-community-is-split -->
 
 - **Sample names.** "DES-SN5YR", "DESY5", "DES5Y": the same 2024 sample;
   "DES-Dovekie" (2025) supersedes it. "Union3.1" (2026) supersedes "Union3".
@@ -392,6 +407,7 @@ cannot be blind in the same sense; DES-Dovekie first reproduces DES-SN5YR.
 - BBC vs hierarchical vs SBI, and dust vs intrinsic step: `open-questions.md`.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - Tripp 1998 and Fitzpatrick 1999 are cited only through arXiv:2511.07517.
 - The non-flat prior of the public Union3 spline posterior comes from an

@@ -3,6 +3,7 @@
 Snapshot: 2026-10-07
 
 ## 1. Summary table
+<!-- key: summary-table -->
 
 This file is not a list of surveys (that is `cosmo-surveys-facilities`): it records, for the analyses whose numbers circulate most, which theory conventions they adopted. Every cell was read in the cited paper [src] unless it says "not read".
 
@@ -20,6 +21,7 @@ This file is not a list of surveys (that is `cosmo-surveys-facilities`): it reco
 Reading the table across: no two rows share all columns. The cells that most often invalidate a naive comparison are the field of σ8 (Planck total, DESI cb), the neutrino treatment (fixed against varied), and the non-linear model (halofit against HMCode2020).
 
 ## 2. Planck
+<!-- key: planck -->
 
 Read in Planck Collaboration 2013 (arXiv:1303.5076), Sect. 2 and 5.2. Planck 2018 keeps this parameter basis; what was read in the 2018 paper follows the table.
 
@@ -43,8 +45,10 @@ Read in Planck Collaboration 2013 (arXiv:1303.5076), Sect. 2 and 5.2. Planck 201
 - Growth: fσ8 ≡ [σ8^(vd)(z)]²/σ8^(dd)(z) (Eq. 27), with "d ln D/d ln a ≈ Ω_m^0.55(z)" for ΛCDM; F_AP(z) = D_M(z) H(z)/c (Eq. 28).
 
 ## 3. ACT
+<!-- key: act -->
 
 ### ACT DR6 power spectra and ΛCDM parameters (Louis et al. 2025, arXiv:2503.14452, Sect. 7.1, read in the LaTeX source)
+<!-- key: act-dr6-power-spectra-and-lambdacdm-parameters -->
 
 | Item | ACT DR6 choice [src] |
 |---|---|
@@ -58,6 +62,7 @@ Read in Planck Collaboration 2013 (arXiv:1303.5076), Sect. 2 and 5.2. Planck 201
 ACT shares the Planck basis (θ_MC, one massive state of 0.06 eV, σ8 and Ω_m derived), so the two can be combined without translating parameters. The value of N_eff adopted and the non-linear prescription are described in the companion extended-models paper, not read this session. Results are in `cosmo-cmb`.
 
 ## 4. BOSS and eBOSS
+<!-- key: boss-and-eboss -->
 
 Read in eBOSS Collaboration 2021, arXiv:2007.08991 [src], and in the descriptions of the BOSS-era method given by DESI (arXiv:2411.12021, Sect. 4.2) and by Planck 2013 (arXiv:1303.5076, Sect. 5.2).
 
@@ -75,8 +80,10 @@ Read in eBOSS Collaboration 2021, arXiv:2007.08991 [src], and in the description
 - EFT reanalyses of the same BOSS data (Ivanov, Simonović & Zaldarriaga 2020, arXiv:1909.05277; D'Amico et al. 2020, arXiv:1909.05271) vary the cosmology directly and are compared in `open-questions.md` section 2; Brieden, Gil-Marín & Verde 2022 (arXiv:2204.11868) is the ShapeFit reanalysis of BOSS + eBOSS.
 
 ## 5. DESI
+<!-- key: desi -->
 
 ### DESI DR2 BAO (DESI Collaboration 2025, arXiv:2503.14738), read in Sect. 3.1, 5 and 6 of the LaTeX source
+<!-- key: desi-dr2-bao-desi-collaboration-2025-arxiv-2503 -->
 
 - **Distances and units.** Separations are binned in h⁻¹Mpc (4 h⁻¹Mpc bins in s, 200 bins in μ over [−1, 1]) [src]; the fitted minimum scale is s_min = 60 h⁻¹Mpc (50 in DR1) [src]. The h⁻¹Mpc unit is that of the fiducial cosmology used to convert redshifts to distances; the published results are the dimensionless ratios D_M/r_d, D_H/r_d, D_V/r_d, which carry no h.
 - **Scaling parameters** (Sect. 3.1, eqs. labelled `alpha_defs` and `aisoap_defs`): α_∥ = D_H(z) r_d^fid / [D_H^fid(z) r_d]; α_⊥ = D_M(z) r_d^fid / [D_M^fid(z) r_d]; α_iso = (α_∥ α_⊥²)^(1/3); α_AP = α_∥/α_⊥; D_V(z) ≡ (z D_M(z)² D_H(z))^(1/3). The baseline sampling basis is (α_iso, α_AP), "less correlated".
@@ -91,6 +98,7 @@ Read in eBOSS Collaboration 2021, arXiv:2007.08991 [src], and in the description
 
 
 ### DESI DR1 full shape (Adame et al. 2024, arXiv:2411.12021), Sect. 4.2 read in the LaTeX source
+<!-- key: desi-dr1-full-shape-adame-et-al-2024-arxiv-2411 -->
 
 - **Catalogue cosmology and AP.** "We keep the cosmology used to convert redshifts to comoving distances fixed"; the model is distorted with q_∥ = k_∥/k'_∥ = D_H(z)/D_H^fid(z) and q_⊥ = k_⊥/k'_⊥ = D_M(z)/D_M^fid(z), D_H(z) ≡ c/H(z). In full modelling the q are derived; in the compressed approaches the α are fitted parameters.
 - **Compressed BAO parameters.** α_∥ = [D_H/r_d]/[D_H/r_d]^fid, α_⊥ = [D_M/r_d]/[D_M/r_d]^fid, α_iso ≡ (α_∥ α_⊥²)^(1/3) = [D_V/r_d]/[D_V/r_d]^fid, α_AP ≡ α_∥/α_⊥, D_V ≡ [z D_H D_M²]^(1/3).
@@ -111,8 +119,10 @@ Read in eBOSS Collaboration 2021, arXiv:2007.08991 [src], and in the description
 - **Field and fiducial values** (Sect. 3 and Appendix C) [src]: the fiducial cosmology is "the mean estimates of the Planck TT,TE,EE+lowE+lensing likelihood chains": Ω_c h² = 0.1200, Ω_b h² = 0.02237, σ8 = 0.811355, n_s = 0.9649, h = 0.6736, w0 = −1, wa = 0; footnote 3: "Throughout this paper we refer as σ8 to the amplitude of matter fluctuations excluding neutrinos". The fiducial r_d = 99.0792 Mpc/h; σ_s8 is "the amplitude of cold+baryon matter fluctuations smoothed in units of 8 Mpc/h of the fiducial cosmology". The counterterm prior is Gaussian, centred on zero, of width 12.5 h⁻²Mpc².
 
 ## 6. DES
+<!-- key: des -->
 
 ### DES Y3 3×2pt modelling (Krause et al. 2021, arXiv:2105.13548, Sect. II.B and III, read in the LaTeX source; results paper DES Collaboration 2021, arXiv:2105.13549)
+<!-- key: des-y3-3x2pt-modelling-krause-et-al-2021-arxiv -->
 
 | Item | DES Y3 baseline choice [src] |
 |---|---|
@@ -132,8 +142,10 @@ The stated deficiencies of the matter-spectrum model are the authors' own: no no
 Two further points from the same paper [src]: the clustering scale cut is R_min,w = 8 Mpc/h, an h-unit scale; and on projection effects the paper notes that they arise "when parameters of interest are not fully constrained by the data or are degenerate with other parameters that are prior informed", that they "decrease as the data's constraining power increases and are thus not a systematic bias".
 
 ## 7. KiDS
+<!-- key: kids -->
 
 ### KiDS-Legacy cosmic shear (Wright et al. 2025, arXiv:2503.19441, Sect. 2.2 and 5.1, read in the LaTeX source)
+<!-- key: kids-legacy-cosmic-shear-wright-et-al-2025 -->
 
 | Item | KiDS-Legacy choice [src] |
 |---|---|
@@ -155,6 +167,7 @@ Two convention points follow. The prior is flat in S8, not in A_s or σ8; the sa
 The abstract also quotes Σ8 ≡ σ8 (Ω_m/0.3)^α = 0.821 +0.014/−0.016 with α = 0.58 "optimised to match the revised degeneracy direction" [src]: a third exponent next to the 0.5 of S8 and the 0.4 of S12.
 
 ## 8. Boltzmann codes and their defaults
+<!-- key: boltzmann-codes-and-their-defaults -->
 
 What was read about the codes behind the analyses above; version-level defaults are in `cosmo-software-ecosystem`.
 
@@ -169,6 +182,7 @@ What was read about the codes behind the analyses above; version-level defaults 
 Three defaults a user must set rather than inherit: the neutrino mass splitting (one massive state or three degenerate), N_eff (3.046 or 3.044), and the field for which σ8 is returned (total matter or cb). None of the papers read here states the code version in the passages read.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - N_eff and the non-linear prescription of ACT DR6: stated in a companion paper that was not read.
 - Neutrino treatment of the DESI DR1 full-shape chains, and whether the DESI DR1 cosmology paper converts fσ_s8 with the eBOSS rescaling: not read.

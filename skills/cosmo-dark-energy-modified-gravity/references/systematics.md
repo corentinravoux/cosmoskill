@@ -11,6 +11,7 @@ Flags: `[src]` read this session in the cited paper; `[sec]` from a named
 secondary source; `[der]` derived here.
 
 ## 0. How to read this file
+<!-- key: how-to-read-this-file -->
 
 A dark-energy or modified-gravity claim is a statement about a combination of
 data sets. Its systematics are of three kinds:
@@ -27,6 +28,7 @@ systematic that removes about 1.5σ from this makes it unremarkable. Several
 candidates of that size are documented below.
 
 ## 1. Supernova relative calibration between low and high redshift
+<!-- key: supernova-relative-calibration-between-low-and -->
 
 - **Mechanism.** The `w0wa` signal from supernovae is a difference in distance
   modulus between the `z < 0.1` anchor sample, observed by many historical
@@ -61,6 +63,7 @@ candidates of that size are documented below.
   arXiv:2601.19424.
 
 ## 2. Non-independence of the supernova compilations
+<!-- key: non-independence-of-the-supernova-compilations -->
 
 - **Mechanism.** Pantheon+, Union3 and the DES samples share most of their
   low-redshift supernovae; 20% of the supernovae are common to Pantheon+ and
@@ -74,6 +77,7 @@ candidates of that size are documented below.
   joint constraint.
 
 ## 3. BAO: which bins carry the signal
+<!-- key: bao-which-bins-carry-the-signal -->
 
 - **Mechanism.** DESI BAO errors are statistics-dominated (sibling
   `cosmo-galaxy-clustering` [sec]), so the concern is not a known systematic
@@ -98,6 +102,7 @@ candidates of that size are documented below.
   `w0wa` best fit must be checked at `z = 2.33` as well as at `z < 1`.
 
 ## 4. The CMB input
+<!-- key: the-cmb-input -->
 
 - **Which information is used.** DESI + compressed (`theta_*`, `omega_b`,
   `omega_bc`) priors: 2.4σ; + primary CMB without lensing: 2.7σ; + lensing:
@@ -122,6 +127,7 @@ candidates of that size are documented below.
   sets.
 
 ## 5. Prior-volume (projection) effects
+<!-- key: prior-volume-projection-effects -->
 
 - **Mechanism.** When the data do not constrain all directions, marginal
   posteriors are pulled towards regions of large prior volume, away from the
@@ -152,6 +158,7 @@ candidates of that size are documented below.
   (arXiv:2604.26915) [src].
 
 ## 6. Priors on the dark-energy parameters themselves
+<!-- key: priors-on-the-dark-energy-parameters-themselves -->
 
 - **Mechanism.** Uniform priors on (`w0`, `wa`) give equal weight to regions
   no physical model populates; the Bayes factor scales inversely with the
@@ -173,6 +180,7 @@ candidates of that size are documented below.
   State which question is asked.
 
 ## 7. Parameterisation artefacts
+<!-- key: parameterisation-artefacts -->
 
 - CPL forces a crossing of −1 once `theta_*` and `Omega_m` are fixed and `w0 >
   −1` (arXiv:2503.14738) [src].
@@ -193,6 +201,7 @@ candidates of that size are documented below.
   arXiv:2503.14743).
 
 ## 8. Repeated looks and choice of test
+<!-- key: repeated-looks-and-choice-of-test -->
 
 - Wilks-based σ values assume one test. DESI has been tested against Λ at DR1
   and DR2 and will be again; with seven BAO bins and several supernova samples
@@ -206,6 +215,7 @@ candidates of that size are documented below.
   the prior ranges, and both a frequentist and a Bayesian number.
 
 ## 9. Combining data sets that disagree
+<!-- key: combining-data-sets-that-disagree -->
 
 - Under ΛCDM, DESI BAO and the CMB differ at 2.3σ (arXiv:2503.14738) [src];
   all DES probes and the CMB at 2.8σ (arXiv:2601.14559) [src]; under constant
@@ -228,6 +238,7 @@ candidates of that size are documented below.
   data-set mismatch, not of five discoveries.
 
 ## 10. Modified gravity: degeneracy with the CMB lensing amplitude
+<!-- key: modified-gravity-degeneracy-with-the-cmb -->
 
 - **Mechanism.** Σ rescales the lensing potential, so it absorbs any excess or
   deficit of lensing smoothing in the CMB power spectra, exactly as the
@@ -245,6 +256,7 @@ candidates of that size are documented below.
   history is in `cosmo-cmb`.
 
 ## 11. Modified gravity: dependence on the background and on the functional form
+<!-- key: modified-gravity-dependence-on-the-background -->
 
 - **Background.** In DESI DR1, `mu0` moves from 0.05 ± 0.22 (ΛCDM background)
   to −0.24 (+0.32/−0.28) (`w0wa` background) with the same data; Σ0 is stable
@@ -268,6 +280,7 @@ candidates of that size are documented below.
   explicitly (arXiv:2604.26915) [src].
 
 ## 12. Modified gravity: non-linear scales, bias and astrophysics
+<!-- key: modified-gravity-non-linear-scales-bias-and -->
 
 - **Non-linear modelling.** Weak-lensing tests are "limited by the absence of
   nonlinear predictions that are reliable at our required precision" (DES
@@ -297,6 +310,7 @@ candidates of that size are documented below.
   (Högås et al. 2025, arXiv:2512.14814) [src].
 
 ## 13. What a referee checks in a dark-energy or modified-gravity results section
+<!-- key: what-a-referee-checks-in-a-dark-energy-or -->
 
 1. Which supernova sample and which calibration version (pre- or post-Dovekie,
    Union3 or Union3.1, Pantheon+ with original or corrected host masses,

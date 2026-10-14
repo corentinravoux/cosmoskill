@@ -5,6 +5,7 @@ Scope: the core catalogue of the cosmology software an analyst meets: what each 
 Snapshot: 2026-10-11
 
 ## How to read the tables
+<!-- key: how-to-read-the-tables -->
 
 - **Repository** is the GitHub `owner/name`; the URL is `https://github.com/<owner>/<name>`. Every name below was returned by the GitHub API on 2026-10-11 [src: GitHub REST API].
 - **Licence** is the SPDX identifier the GitHub API reports, or the licence string of the PyPI record. "custom" means the repository has a licence file that GitHub does not classify; "none detected" means the API reports no licence file. Neither is a legal statement: read the file before redistributing.
@@ -13,6 +14,7 @@ Snapshot: 2026-10-11
 - A code without a paper is cited by its repository and has no row in `sources.tsv`.
 
 ## 1. Boltzmann solvers and modified-gravity forks
+<!-- key: boltzmann-solvers-and-modified-gravity-forks -->
 
 | Code | Computes | Reference | Repository | Language, interface | Licence | Release / activity | Users |
 |---|---|---|---|---|---|---|---|
@@ -29,6 +31,7 @@ Snapshot: 2026-10-11
 | halofit (Takahashi) | Revised halofit fitting formula for the non-linear matter power spectrum | Takahashi et al. 2012, arXiv:1208.2701 | shipped with CAMB (`halofit_version='takahashi'`) and pyccl (`matter_power_spectrum='halofit'`, the pyccl default) | — | — | — | — |
 
 ## 2. Theory facades
+<!-- key: theory-facades -->
 
 | Code | Computes | Reference | Repository | Language, interface | Licence | Release / activity | Users |
 |---|---|---|---|---|---|---|---|
@@ -39,8 +42,10 @@ Snapshot: 2026-10-11
 | cloelib | "Library of theoretical model predictions for photometric and spectroscopic large-scale structure observables" [src: repository description], with JAX automatic differentiation and interfaces to Boltzmann solvers | Bonici et al. 2026, arXiv:2605.23839; validation of the CLOE likelihood in Euclid Collaboration 2025, arXiv:2510.09141 | `cloe-org/cloelib` | Python (JAX) | MIT | last push 2026-10-12 | Euclid: intended reference theory code for its first cosmological release (arXiv:2605.23839) |
 
 ## 3. Samplers and inference frameworks
+<!-- key: samplers-and-inference-frameworks -->
 
 ### 3.1 Frameworks (theory code + likelihoods + samplers)
+<!-- key: frameworks-theory-code-likelihoods-samplers -->
 
 | Code | Computes | Reference | Repository | Language, interface | Licence | Release / activity | Users |
 |---|---|---|---|---|---|---|---|
@@ -51,6 +56,7 @@ Snapshot: 2026-10-11
 | desilike | "Cosmological Inference Framework Used by the Dark Energy Spectroscopic Instrument (DESI)" [src: repository description]: likelihoods for BAO and RSD analyses, wrappers of velocileptors, pybird and FOLPS-nu, Taylor-expansion and MLP emulators, ShapeFit, samplers and profile-likelihood tools, bindings to Cobaya, CosmoSIS and MontePython [src: repository README] | no paper and no citation request in the README; cite the repository | `cosmodesi/desilike` | Python, optional JAX | BSD-3-Clause | not on PyPI (`pip install git+https://github.com/cosmodesi/desilike`); no tagged release; last push 2026-10-09 | DESI |
 
 ### 3.2 Samplers
+<!-- key: samplers -->
 
 | Code | Method | Reference | Repository | Licence | Release / activity | Users |
 |---|---|---|---|---|---|---|
@@ -65,6 +71,7 @@ Snapshot: 2026-10-11
 | iminuit | Python front-end to MINUIT2 (minimisation, HESSE and MINOS errors) | no paper cited here | PyPI `iminuit` | — | iminuit 2.33.0, 2026-09-17 | minimiser of flip [src: flip docs, "Maximum likelihood (Minuit)"] and of Vega [src: Vega README] |
 
 ### 3.3 Chain analysis
+<!-- key: chain-analysis -->
 
 | Code | Computes | Reference | Repository | Release / activity |
 |---|---|---|---|---|
@@ -75,6 +82,7 @@ Other samplers with a PyPI record read this session, not researched further: `ul
 A JAX-based GPU nested-sampling framework is demonstrated in Lovick et al. 2025, arXiv:2509.13307, and a TensorFlow package of batched samplers for emulated likelihoods, BEST, in Nygaard et al. 2026, arXiv:2606.04895 (PyPI name `best-inference` according to the abstract; not queried).
 
 ## 4. Perturbation-theory codes
+<!-- key: perturbation-theory-codes -->
 
 | Code | Computes | Reference | Repository | Language | Licence | Release / activity | Users |
 |---|---|---|---|---|---|---|---|
@@ -93,6 +101,7 @@ The configuration-space counterpart for DESI DR1 (Gaussian streaming model with 
 The three Fourier-space codes are compared with each other in Maus et al. 2024, arXiv:2404.07272; an earlier blinded test of two EFT implementations is Nishimichi et al. 2020, arXiv:2003.08277, which the velocileptors README also asks users to cite.
 
 ## 5. Two-point and higher-order estimators
+<!-- key: two-point-and-higher-order-estimators -->
 
 | Code | Computes | Reference | Repository | Language | Licence | Release / activity | Users |
 |---|---|---|---|---|---|---|---|
@@ -106,6 +115,7 @@ The three Fourier-space codes are compared with each other in Maus et al. 2024, 
 | Triumvirate | Three-point correlation function and bispectrum multipoles in the tri-polar spherical-harmonic decomposition; two-point statistics for completeness | Wang, Beutler & Sugiyama 2023, arXiv:2304.03643 | `MikeSWang/Triumvirate` | C++ with Python interface | GPL-3.0 | Triumvirate 0.5.0, 2024-08-09 (Python ≥ 3.10); last push 2026-10-08 | — |
 
 ## 6. Lyman-alpha tools
+<!-- key: lyman-alpha-tools -->
 
 | Code | Computes | Reference | Repository | Language | Licence | Release / activity | Users |
 |---|---|---|---|---|---|---|---|
@@ -118,6 +128,7 @@ The three Fourier-space codes are compared with each other in Maus et al. 2024, 
 The picca README gives du Mas des Bourboux et al. 2020 as "the current reference" and states that picca v4.0 produced that measurement [src: picca README, checkout]. The picca facts in this file were read at version 9.21.0, in a development state of the repository, not a tagged release.
 
 ## 7. Lensing and sphere tools
+<!-- key: lensing-and-sphere-tools -->
 
 | Code | Computes | Reference | Repository | Language | Licence | Release / activity | Users |
 |---|---|---|---|---|---|---|---|
@@ -127,6 +138,7 @@ The picca README gives du Mas des Bourboux et al. 2020 as "the current reference
 Shear two-point functions are measured with TreeCorr (section 5) and pseudo-C_ℓ with NaMaster (section 5); CMB likelihood codes are in section 8 (candl) and in the sibling `cosmo-cmb`.
 
 ## 8. Differentiable and field-level codes
+<!-- key: differentiable-and-field-level-codes -->
 
 | Code | Computes | Reference | Repository | Language | Licence | Release / activity | Users |
 |---|---|---|---|---|---|---|---|
@@ -139,6 +151,7 @@ Shear two-point functions are measured with TreeCorr (section 5) and pseudo-C_�
 | candl | Differentiable CMB power-spectrum likelihood in JAX, shipped with SPT and ACT data | Balkenhol et al. 2024, arXiv:2401.13433 | `Lbalkenhol/candl` | Python (JAX) | MIT | candl-like 2.2.0, 2025-10-10; last push 2026-06-05 | — |
 
 ## 9. Emulators
+<!-- key: emulators -->
 
 Emulators of N-body and hydrodynamical quantities (halo mass function, non-linear P(k), baryonic suppression) belong to the sibling `cosmo-simulations-mocks`. The entries here replace a Boltzmann or perturbation-theory code inside an inference pipeline.
 
@@ -152,6 +165,7 @@ Emulators of N-body and hydrodynamical quantities (halo mass function, non-linea
 | LaCE | Lyα P1D (see section 6) | arXiv:2011.15127, arXiv:2305.19064 | `igmhub/LaCE` | Python | none detected | last push 2026-10-07 |
 
 ## 10. Installation names that differ from the code name
+<!-- key: installation-names-that-differ-from-the-code -->
 
 | Code | Import or package name | Where it installs from | Flag |
 |---|---|---|---|
@@ -169,6 +183,7 @@ Emulators of N-body and hydrodynamical quantities (halo mass function, non-linea
 | Vega | `vega` | wheel from GitHub Releases | [src: repository README] |
 
 ## Not verified
+<!-- key: not-verified -->
 
 - BORG: the repository address comes from web-search snippets of the Aquila consortium Git server; the live page, its licence and its language were not read.
 - The licences marked "custom" and "none detected" were not opened.

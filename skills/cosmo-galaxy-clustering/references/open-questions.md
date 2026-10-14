@@ -8,6 +8,7 @@ Flags: `[src]` read this session in the cited paper; `[sec]` from a named
 secondary source; `[der]` derived here. Forecasts are labelled.
 
 ## 1. Is the DESI BAO–CMB mismatch real, and what does it mean?
+<!-- key: is-the-desi-bao-cmb-mismatch-real-and-what-does -->
 
 **The facts.** In flat ΛCDM the DESI DR2 BAO and the CMB disagree at 2.3σ in
 the (Ω_m, h r_d) plane, up from 1.9σ in DR1, and at 2.0σ without CMB lensing
@@ -67,6 +68,7 @@ interpretation belongs to `cosmo-dark-energy-modified-gravity`; supernova
 sample dependence to `cosmo-supernovae`.
 
 ## 2. The LRG bins and the SDSS comparison
+<!-- key: the-lrg-bins-and-the-sdss-comparison -->
 
 DESI DR1 LRG2 (z = 0.71) gave D_M/r_d = 16.85 ± 0.32 against 17.86 ± 0.33 from
 SDSS at z = 0.70, about 3σ for an assumed correlation of 0.21 [src] (DESI
@@ -84,6 +86,7 @@ approximate correlation coefficient. What would settle it: the final DESI
 sample, with a still larger effective volume in this bin.
 
 ## 3. Prior-volume effects in full-shape analyses
+<!-- key: prior-volume-effects-in-full-shape-analyses -->
 
 **Problem.** One-loop EFT fits carry seven nuisance parameters per tracer in
 the DESI baseline (three bias, two counterterm, two stochastic) [src]
@@ -115,6 +118,7 @@ et al. 2023 both show that the effect shrinks with larger volumes or with CMB
 data. DESI DR2 and final full-shape analyses are the test.
 
 ## 4. The amplitude from full shape: was σ8 ever low?
+<!-- key: the-amplitude-from-full-shape-was-sigma8-ever -->
 
 BOSS EFT analyses gave σ8 = 0.721 ± 0.043 (Ivanov et al. 2020,
 arXiv:1909.05277), 0.692 (+0.035/−0.041) with free n_s (Philcox & Ivanov
@@ -135,6 +139,7 @@ amplitude from clustering alone is therefore prior- and model-dependent at
 the level of its quoted error. Lensing-side S8: `cosmo-weak-lensing`.
 
 ## 5. Mock or analytic covariance at DR2 and beyond
+<!-- key: mock-or-analytic-covariance-at-dr2-and-beyond -->
 
 DESI DR1 needed a rescaling of the EZmock covariance because fast fibre
 assignment in mocks underestimates the errors, and found the Fourier-space
@@ -149,6 +154,7 @@ covariance for the power spectrum with realistic fibre assignment, and for
 the bispectrum.
 
 ## 6. Fibre assignment at small scales
+<!-- key: fibre-assignment-at-small-scales -->
 
 The θ-cut throws away pairs below 0.05° and with them small-scale
 information; PIP weights recover it but need many alternative assignment
@@ -157,6 +163,7 @@ arXiv:2411.12025; Pinon et al. 2024, arXiv:2406.04804). Whether DESI DR2
 full-shape fits use PIP weights is not known at the snapshot.
 
 ## 7. f_NL from scale-dependent bias
+<!-- key: fnl-from-scale-dependent-bias -->
 
 - **The b_φ problem.** Constraints are on f_NL b_φ; marginalising over b_φ
   with wide priors is not conservative and biases the result [src] (Barreira
@@ -178,6 +185,7 @@ full-shape fits use PIP weights is not known at the snapshot.
 Full treatment: `cosmo-inflation-primordial`.
 
 ## 8. Under-used data
+<!-- key: under-used-data -->
 
 - BGS: the DR2 BAO analysis uses 1.19 million of more than 9.1 million BGS
   redshifts at 0.1 < z < 0.4, because the pipeline assumes a roughly constant
@@ -190,6 +198,7 @@ Full treatment: `cosmo-inflation-primordial`.
   al. 2026, arXiv:2610.01836). Detail: `cosmo-beyond-two-point`.
 
 ## 9. Reconstruction beyond the standard algorithm
+<!-- key: reconstruction-beyond-the-standard-algorithm -->
 
 Field-level and neural reconstructions promise 26% to 35% tighter BAO
 parameters on DESI-like LRG mocks (**mock result**, Bayer et al. 2026,
@@ -198,6 +207,7 @@ blinding of a forward-model reconstruction. No cosmological result from data
 with these methods was verified this session.
 
 ## 10. H0 from clustering, with and without r_d
+<!-- key: h0-from-clustering-with-and-without-rd -->
 
 BAO + BBN gives 68.51 ± 0.58 km/s/Mpc, 4.5σ from SH0ES, and assumes standard
 pre-recombination physics [src] (arXiv:2503.14738). The sound-horizon-free
@@ -207,6 +217,7 @@ r_d-based value. Agreement between the two routes is the clustering test of
 early-universe modifications of r_d. Detail: `cosmo-distance-ladder-h0`.
 
 ## 11. What the next data will decide
+<!-- key: what-the-next-data-will-decide -->
 
 | Data | When | Decides |
 |---|---|---|
@@ -229,6 +240,7 @@ early-universe modifications of r_d. Detail: `cosmo-distance-ladder-h0`.
   Blanchard et al. 2020, arXiv:1910.09273 (**forecast**; numbers not read).
 
 ## 12. Misconceptions and stale claims
+<!-- key: misconceptions-and-stale-claims -->
 
 1. **"DESI measures H0."** BAO measure D/r_d. H0 needs an r_d calibration
    (arXiv:2404.03002).
@@ -269,6 +281,7 @@ early-universe modifications of r_d. Detail: `cosmo-distance-ladder-h0`.
     products (see `surveys-and-data.md`).
 
 ## Not verified
+<!-- key: not-verified -->
 
 - Whether DESI DR2 full-shape fits will use PIP weights, the hexadecapole or
   a higher k_max.

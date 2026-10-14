@@ -8,6 +8,7 @@ Flags: `[src]` read this session in the cited paper or official page; `[sec]`
 taken from a named secondary source; `[der]` derived here, derivation stated.
 
 ## 1. What is measured and why it constrains cosmology
+<!-- key: what-is-measured-and-why-it-constrains-cosmology -->
 
 A redshift survey gives angular positions and redshifts. A fiducial cosmology
 turns them into comoving coordinates, and the two-point function of the
@@ -15,6 +16,7 @@ resulting overdensity field is measured in redshift space. Four pieces of
 information are extracted from it.
 
 ### 1.1 Baryon acoustic oscillations (standard ruler)
+<!-- key: baryon-acoustic-oscillations-standard-ruler -->
 
 The sound horizon at the baryon drag epoch,
 
@@ -60,6 +62,7 @@ of the joint (ω_b, N_eff) constraint at N_eff = 3.044, ω_b = 0.02198 ± 0.0005
 [src] (Adame et al. 2024, arXiv:2411.12021, Sect. 4.7).
 
 ### 1.2 Redshift-space distortions (growth)
+<!-- key: redshift-space-distortions-growth -->
 
 Peculiar velocities displace galaxies along the line of sight. In linear
 theory the redshift-space power spectrum is
@@ -76,6 +79,7 @@ phenomenological Kaiser-times-damping forms (Taruya et al. 2010,
 arXiv:1006.0699).
 
 ### 1.3 The Alcock–Paczynski effect
+<!-- key: the-alcock-paczynski-effect -->
 
 A wrong fiducial cosmology stretches separations differently along and across
 the line of sight (Alcock & Paczynski 1979, doi:10.1038/281358a0). Any feature
@@ -86,6 +90,7 @@ degenerate with RSD unless the RSD model is trusted. Ivanov et al. 2020
 becomes important in non-minimal models.
 
 ### 1.4 Broadband shape
+<!-- key: broadband-shape -->
 
 The turnover and slope of P(k) carry the matter–radiation equality scale
 (Ω_m h, i.e. ω_m once h is fixed), the baryon fraction and n_s. The first
@@ -96,6 +101,7 @@ Modern analyses either fit the full power spectrum with a perturbative model
 Sect. 3).
 
 ### 1.5 Scale-dependent bias from primordial non-Gaussianity (status only)
+<!-- key: scale-dependent-bias-from-primordial-non -->
 
 Local-type PNG adds a bias term growing as 1/k² on large scales (Dalal et al.
 2008, arXiv:0710.4560; Slosar et al. 2008, arXiv:0805.3580). The amplitude is
@@ -108,8 +114,10 @@ assumed b_φ(b_1) relation, the same BOSS data give σ(f_NL) between 16 and 226
 [src] (arXiv:2205.05673). Detail belongs to `cosmo-inflation-primordial`.
 
 ## 2. Estimators
+<!-- key: estimators -->
 
 ### 2.1 Configuration space
+<!-- key: configuration-space -->
 
 The standard estimator is
 
@@ -124,6 +132,7 @@ over [−1, 1], then projects onto Legendre multipoles; the BAO fit uses the
 monopole and quadrupole [src] (arXiv:2503.14738).
 
 ### 2.2 Fourier space
+<!-- key: fourier-space -->
 
 The weighted overdensity field F(r) ∝ w(r) [n_g(r) − α n_r(r)] with weights
 w = 1 / (1 + n̄(r) P_0) minimises the variance at the scale where P = P_0
@@ -139,6 +148,7 @@ terms, including odd multipoles (dipole, octopole), which couple to the window
 (Beutler, Castorina & Zhang 2019, arXiv:1810.05051).
 
 ### 2.3 Window function and integral constraints
+<!-- key: window-function-and-integral-constraints -->
 
 The measured power spectrum is the true one convolved with the survey window.
 Current practice is a window matrix W that maps theory multipoles to observed
@@ -156,6 +166,7 @@ constraint, which DESI models as a correction to the window for its f_NL
 analysis (arXiv:2411.17623).
 
 ### 2.4 Fibre-assignment weights
+<!-- key: fibre-assignment-weights -->
 
 Missing targets are clustered. The unbiased correction weights each observed
 pair by the inverse of its probability of being observed over many reruns of
@@ -169,6 +180,7 @@ window [src] (Pinon et al. 2024, arXiv:2406.04804; arXiv:2411.12021,
 Sect. 5.4). See `systematics.md`.
 
 ### 2.5 Reconstruction
+<!-- key: reconstruction -->
 
 Non-linear bulk flows smear the acoustic peak. Reconstruction estimates the
 displacement field from the smoothed galaxy density and moves galaxies and
@@ -192,6 +204,7 @@ one bias-weighted catalogue before reconstruction (Sanders et al. 2026,
 arXiv:2608.27830).
 
 ## 3. Theory models in current analyses
+<!-- key: theory-models-in-current-analyses -->
 
 | Model class | What is fitted | Range of validity as used | Reference |
 |---|---|---|---|
@@ -259,6 +272,7 @@ only serve for visualization purposes" and that cosmology must use fσ_s8
 5. Configuration or Fourier space; mock or analytic covariance (Sect. 4).
 
 ## 4. Covariance and likelihood
+<!-- key: covariance-and-likelihood -->
 
 **Mock-based.** The sample covariance of N_obs approximate mocks. DESI uses
 EZmocks (Chuang et al. 2015, arXiv:1409.1124), 1000 realisations for the DR1
@@ -308,6 +322,7 @@ imaging template, window-rotation parameter), so that they propagate to any
 model [src] (arXiv:2411.12021, Sect. 5.8).
 
 ## 5. Blinding
+<!-- key: blinding -->
 
 Catalogue-level blinding shifts galaxy positions along the line of sight in
 two steps: a geometric shift mimicking an AP distortion and a perturbative
@@ -328,6 +343,7 @@ data after seeing large χ² values, and documented it [src] (arXiv:2503.14738;
 Andrade et al. 2025, arXiv:2503.14742).
 
 ## 6. Public codes and pipelines
+<!-- key: public-codes-and-pipelines -->
 
 | Code | Role | Reference |
 |---|---|---|
@@ -346,6 +362,7 @@ Andrade et al. 2025, arXiv:2503.14742).
 API-level detail belongs to `cosmo-software-ecosystem`.
 
 ## 7. Halo occupation and bias, at analysis level
+<!-- key: halo-occupation-and-bias-at-analysis-level -->
 
 Mocks are populated with a halo occupation distribution that separates
 centrals and satellites (Zheng et al. 2005, arXiv:astro-ph/0408564). DESI
@@ -358,6 +375,7 @@ HOD is assumed: the perturbative bias expansion (arXiv:1611.09787) absorbs
 it, at the price of the nuisance parameters discussed in Sect. 3.
 
 ## 8. Conventions and units specific to the domain
+<!-- key: conventions-and-units-specific-to-the-domain -->
 
 - Distances and wavenumbers are in h⁻¹ Mpc and h Mpc⁻¹ in the fiducial
   cosmology; published BAO results are dimensionless ratios to r_d.
@@ -384,6 +402,7 @@ it, at the price of the nuisance parameters discussed in Sect. 3.
   that this accounts for the difference in counts is an inference [der].
 
 ## Not verified
+<!-- key: not-verified -->
 
 - The upper scale limit of the DESI BAO fit and the reconstruction smoothing
   scales per tracer.

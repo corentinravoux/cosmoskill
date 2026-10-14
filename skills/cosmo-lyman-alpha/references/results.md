@@ -6,6 +6,7 @@ Snapshot: 2026-10-07
 Flags: `[src]` read this session in the cited paper (abstract unless a section is named); `[der]` derived here, derivation given; `[sec]` from a named secondary source. Every parameter constraint states its model.
 
 ## 1. BAO and Alcock–Paczynski at z ≈ 2.3 — current values
+<!-- key: bao-and-alcock-paczynski-at-z-2-3-current-values -->
 
 All distances are in units of the drag-epoch sound horizon r_d. D_H = c/H(z); D_M is the transverse comoving distance. The Lyα BAO/AP measurements themselves are geometric and do not assume a dark-energy model; a fiducial cosmology enters only through the conversion of angles and redshifts to separations.
 
@@ -39,6 +40,7 @@ Sample sizes for DR2: forest measurements in "over 820,000" quasar spectra and p
 Consequences stated by the DESI DR2 AP paper (arXiv:2607.27410) [src]: the Lyα AP Ω_m is 1.4σ higher than the DESI BAO value; adding it moves the DESI-versus-CMB discrepancy in ΛCDM from 2.4σ to 2.2σ; with the joint DESI DR2 BAO + Lyα full-shape data, w0waCDM is preferred over ΛCDM at 2.7σ (DESI + CMB) and 3.2σ (with supernovae). For comparison, the DR2 BAO key paper quotes 3.1σ for DESI BAO + CMB and 2.8–4.2σ with supernovae depending on the sample (arXiv:2503.14738) [src]. The dark-energy interpretation belongs to `cosmo-dark-energy-modified-gravity`.
 
 ### 1.0 The DESI DR2 BAO fit in detail (paper body)
+<!-- key: the-desi-dr2-bao-fit-in-detail-paper-body -->
 
 All from arXiv:2503.14739, Sects. 2.4, 3, 4 and Appendix A [src].
 
@@ -66,6 +68,7 @@ All from arXiv:2503.14739, Sects. 2.4, 3, 4 and Appendix A [src].
 The paper warns that the nuisance parameters "approximately account for known physical effects … and [are] not [meant] to accurately measure these effects": b_α and β_α from this table are fit-range- and model-dependent and differ between auto-only and cross-only fits.
 
 ### 1.0b The DESI DR2 full-shape fit in detail (paper body)
+<!-- key: the-desi-dr2-full-shape-fit-in-detail-paper-body -->
 
 All from arXiv:2607.27410, Sects. 3 and 5 [src].
 
@@ -77,6 +80,7 @@ All from arXiv:2607.27410, Sects. 3 and 5 [src].
 - Position relative to models: "in excellent agreement with the ΛCDM prediction" from Planck, and "a roughly 2σ tension with the w0waCDM prediction" from CMB + DESI BAO.
 
 ### 1.1 Redshift-resolved Lyα BAO (DESI DR2, three bins)
+<!-- key: redshift-resolved-lyalpha-bao-desi-dr2-three -->
 
 Herrera-Alcantar et al. 2026 (arXiv:2607.19619) split the auto- and cross-correlation into three bins at z_eff = 2.13, 2.40, 2.81, with about 2.0–2.5% precision per bin in each direction and about 1.1–1.2% on the isotropic scale [src]. The abstract gives the end-point values:
 
@@ -89,6 +93,7 @@ Herrera-Alcantar et al. 2026 (arXiv:2607.19619) split the auto- and cross-correl
 Derived evolution parameters from the same paper [src]: H(z) ∝ (1+z)^n with n = 1.34 ± 0.16 (matter domination predicts 1.5); Lyα bias ∝ (1+z)^γ with γ_α = 3.05 ± 0.16; RSD parameter evolution γ_β = −0.97 ± 0.26; quasar bias γ_Q = 1.56 ± 0.23. Combining the three bins with DESI DR2 galaxy and quasar BAO improves curvature constraints by about 12% in ΛCDM+Ω_K. Validation used 400 synthetic data sets.
 
 ### 1.2 Other 3D results from DESI
+<!-- key: other-3d-results-from-desi -->
 
 | Result | Value | Citation | Flag |
 |---|---|---|---|
@@ -103,6 +108,7 @@ Derived evolution parameters from the same paper [src]: H(z) ∝ (1+z)^n with n 
 | Forest bias from P1D-level fit, DR1 QMLE | b_F(z) = (−0.218 ± 0.002) × ((1+z)/4)^(2.96 ± 0.06); FFT and QMLE values differ by 2.2σ | arXiv:2505.07974 | [src] |
 
 ## 2. History of the Lyα BAO measurement
+<!-- key: history-of-the-lyalpha-bao-measurement -->
 
 | Year | Data | Sample | Result | z | Distance to Planck ΛCDM as stated | Citation | Flag |
 |---|---|---|---|---|---|---|---|
@@ -130,6 +136,7 @@ What the history shows.
 - The eBOSS DR16 errors are statistical only (arXiv:2007.08995 [src]).
 
 ### 2.1 Alcock–Paczynski from the full shape — history
+<!-- key: alcock-paczynski-from-the-full-shape-history -->
 
 | Year | Data | Result | Scales | Citation | Flag |
 |---|---|---|---|---|---|
@@ -141,6 +148,7 @@ What the history shows.
 The Lyα-alone H_0 (with a BBN prior, flat ΛCDM) went 63.2 ± 2.5 (eBOSS) → 68.3 ± 1.6 (DESI DR1 full shape + DR2 BAO) → 66.5 ± 1.3 (DESI DR2). The eBOSS value was low at about 1.7σ from the DR1 value [der: (68.3 − 63.2)/sqrt(2.5² + 1.6²) = 1.7, treating them as independent; this is an upper bound on the significance if the two surveys share sky area and quasars].
 
 ## 3. The one-dimensional flux power spectrum — measurements
+<!-- key: the-one-dimensional-flux-power-spectrum -->
 
 | Year | Data | Sample | Redshift | k range | Estimator | Citation | Flag |
 |---|---|---|---|---|---|---|---|
@@ -172,8 +180,10 @@ Wavenumber ranges of the four DESI measurement papers, each in the unit its pape
 The two k_max conventions agree: 2.0 Å⁻¹ is 0.0260 s/km at z = 2.2 and 0.0422 s/km at z = 4.2 [der: 2.0 × 1215.67 × (1+z)/299 792.458], against 0.0255 and 0.0414 s/km for 0.5π/R_z, which is 0.5π/0.8 Å = 1.96 Å⁻¹ [der]. The difference between the upper redshift of the QMLE measurement paper (bins to 4.4 [der]) and the 4.2 quoted by the cosmology paper was not resolved here.
 
 ## 4. Cosmology from P1D
+<!-- key: cosmology-from-p1d -->
 
 ### 4.1 Compressed linear-power parameters at k = 0.009 s/km, z = 3
+<!-- key: compressed-linear-power-parameters-at-k-0-009-s -->
 
 The standard compression is the dimensionless linear power Δ²_L and its logarithmic slope n_eff at k_p = 0.009 s/km and z_p = 3 (McDonald et al. 2005, arXiv:astro-ph/0407377). Values are **not** directly comparable across rows without checking the definition (some works define the pivot in Mpc⁻¹ and use other symbols).
 
@@ -199,6 +209,7 @@ All rows [src: Table in Sect. 6.2 of arXiv:2601.21432]. The DESI DR1 slope error
 Reading of the table above. The DESI DR1 amplitude carries an 8.4% error and the slope 0.8% [der: 0.032/0.379, 0.019/2.309]. The eBOSS DR14 analyses disagree with each other on the amplitude depending on the emulator and on the treatment of the mean transmission: PRIYA finds a low amplitude and an "internal tension within the flux power spectrum data" (arXiv:2309.03943) [src]; Lyssa finds that the low amplitude "is driven by the correlation of this parameter with the mean transmission" and disappears with an external prior on it (arXiv:2412.05372) [src].
 
 ### 4.2 Parameters in extended models
+<!-- key: parameters-in-extended-models -->
 
 | Parameter | Value | Data combination | Model | Citation | Flag |
 |---|---|---|---|---|---|
@@ -230,6 +241,7 @@ The full table of the DESI DR1 P1D paper (arXiv:2601.21432, Sect. 7) [src], all 
 Also from Sect. 7.1 [src]: n_s = 0.9738 ± 0.0036 for CMB-SPA + DESI BAO + DESI P1D; P1D does not tighten A_s because it probes k ≃ 0.7 Mpc⁻¹, far from the pivot k_s = 0.05 Mpc⁻¹; the P1D posterior is too broad to tighten plain ΛCDM or w0waCDM parameters. Planck T&E + DESI P1D alone improves the Planck α_s error by a factor 1.46, and the (α_s, β_s) errors by factors 2.04 and 2.65. The paper states that its measurements "are compatible with Planck constraints within the ΛCDM model, while this is not the case for some of the previous eBOSS analyses".
 
 ### 4.3 History of P1D cosmology
+<!-- key: history-of-p1d-cosmology -->
 
 | Year | Statement | Data | Citation | Flag |
 |---|---|---|---|---|
@@ -249,6 +261,7 @@ The eBOSS-era hint of negative running (α_s = −0.010 ± 0.004) is **not** rep
 Complementarity of 1D and 3D: constraints on b_δ σ_8 and b_η f σ_8 from DESI P1D (through ForestFlow) and from DESI Lyα BAO-analysis correlations are of comparable power with different degeneracy directions (arXiv:2607.27413) [src].
 
 ## 5. Dark-matter free streaming
+<!-- key: dark-matter-free-streaming -->
 
 Thermal-relic warm dark matter lower limits on the particle mass. All are 95% (2σ) lower limits; the assumption about the IGM thermal history is part of the result.
 
@@ -278,6 +291,7 @@ The two most recent pure-FDM limits differ by a factor of ten (2 × 10⁻²⁰ v
 Forecast: reionisation-relic imprints on large scales would allow DESI-like Lyα data to reach m_WDM > 5.0 keV (95%), 7.1 keV with SKA 21 cm intensity mapping (**forecast**, arXiv:2605.26518) [src].
 
 ## 6. IGM thermal and ionisation state
+<!-- key: igm-thermal-and-ionisation-state -->
 
 | Quantity | Value | Redshift | Data / method | Citation | Flag |
 |---|---|---|---|---|---|
@@ -298,6 +312,7 @@ Forecast: reionisation-relic imprints on large scales would allow DESI-like Lyα
 Recent constraint from the high-z P1D on helium reionisation by faint quasars: a contribution from the JWST faint-QSO population (M_UV > −21.6) is excluded at 2σ if their spectra are hard enough to raise the temperature in He III regions by ΔT ≥ 2 × 10⁴ K (arXiv:2609.16992) [src].
 
 ## 7. Tomography, voids, and cross-correlations
+<!-- key: tomography-voids-and-cross-correlations -->
 
 | Result | Value | Citation | Flag |
 |---|---|---|---|
@@ -316,6 +331,7 @@ Recent constraint from the high-z P1D on helium reionisation by faint quasars: a
 | 1D bispectrum, eBOSS DR16 | 122,066 spectra, 12 bins z = 2.2–4.4 (first six usable), k up to 0.02 (km/s)⁻¹; Si III–Lyα correlation seen | arXiv:2410.09150 | [src] |
 
 ## 8. Not verified
+<!-- key: not-verified -->
 
 These items are needed for a complete table and were not read this session; do not quote them from memory.
 

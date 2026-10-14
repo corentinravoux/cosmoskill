@@ -5,6 +5,7 @@ Snapshot: 2026-10-07
 Formulae are in plain text with the equation number of the cited paper where one was read. "By count" means the number was obtained by counting equations in the LaTeX source; a back-quoted name is the LaTeX label when no number could be read. The hub file `observational-cosmology/references/conventions.md` holds the suite-wide notation and is not repeated here.
 
 ## 1. FLRW distances
+<!-- key: flrw-distances -->
 
 All formulae were read in Hogg 1999, arXiv:astro-ph/9905116 [src].
 
@@ -24,6 +25,7 @@ All formulae were read in Hogg 1999, arXiv:astro-ph/9905116 [src].
 - The symbol D_H means c/H0 in Hogg and c/H(z) in every BAO paper. The applied side (BAO tables, Alcock–Paczynski) is in `cosmo-galaxy-clustering`.
 
 ## 2. Parameter basis and derived parameters
+<!-- key: parameter-basis-and-derived-parameters -->
 
 Definitions of Planck Collaboration 2013, arXiv:1303.5076, Sect. 2 and Table 1 [src], inherited by the later Planck papers and by most large-scale-structure analyses.
 
@@ -53,14 +55,17 @@ Definitions of Planck Collaboration 2013, arXiv:1303.5076, Sect. 2 and Table 1 [
 - Ω_m, σ8 and S8 from a CMB chain are total-matter quantities with one 0.06 eV state. An analysis that varies Σm_ν or defines the amplitude on the CDM+baryon field is not quoting the same parameter (section 14).
 
 ## 3. Sound horizon: r_s, r_d, z_*, z_d and fitting formulae
+<!-- key: sound-horizon-rs-rd-z-zd-and-fitting-formulae -->
 
 ### 3.1 Two sound horizons, two epochs
+<!-- key: two-sound-horizons-two-epochs -->
 
 - The CMB acoustic scale uses r_* = r_s(z_*), with θ_* = r_*/D_A(z_*) (arXiv:1303.5076, Sect. 2.2.2). BAO use r_d ≡ r_s(z_drag): "Baryon velocities decouple from the photon dipole when Compton drag balances the gravitational force, which happens at τ_d ~ 1" (same section).
 - Eisenstein & Hu 1998 note that for Ω_b h² ≲ 0.03 the drag epoch "follows last scattering of the photons", so "the sound and Silk scales in the transfer function are larger than those in the CMB" (arXiv:astro-ph/9709112, Sect. 2.1). Hence r_d > r_*: 147.09 against 144.43 Mpc in Planck 2018, a 1.8% difference [der from the two values in section 2]. Converting a BAO measurement with r_* is an error of that size.
 - The drag redshift is quoted as z_d ≈ 1060 by DESI DR2 (arXiv:2503.14738, Sect. 1) and as "around a redshift z = 1020" by eBOSS (eBOSS Collaboration 2021, arXiv:2007.08991, Sect. 2) [src for both]; neither paper comments on the other value. DESI quotes z_* ≈ 1089.
 
 ### 3.2 r_d as BAO analyses define it
+<!-- key: rd-as-bao-analyses-define-it -->
 
 From Aubourg et al. 2015, arXiv:1411.1074, Sect. II.2 [src]:
 
@@ -73,6 +78,7 @@ From Aubourg et al. 2015, arXiv:1411.1074, Sect. II.2 [src]:
 The 1–2% between conventions is the Eisenstein–Hu fitting formula against the Boltzmann value. Planck 2013 (Sect. 5.2) records that the BAO groups of the time "use the approximate formulae of Eisenstein & Hu (1998) to compute z_drag and r_s(z_drag), though they fit power spectra computed with Boltzmann codes", and that "in CosmoMC we multiply the accurate numerical value of r_s(z_drag) by a constant factor of 1.0275 to match the Eisenstein-Hu approximation in the fiducial model" [src]. The BAO values used in that paper (6dFGS, SDSS DR7, WiggleZ, BOSS DR9) therefore carry an r_s 2.75% larger than the Boltzmann one.
 
 ### 3.3 The BAO distance combinations
+<!-- key: the-bao-distance-combinations -->
 
 From arXiv:1411.1074 [src]:
 
@@ -90,6 +96,7 @@ From arXiv:1411.1074 [src]:
 - The Friedmann equation used with these distances includes radiation and neutrinos (Eq. 8), with T_ν = T_CMB (4/11)^(1/3) g_c, g_c = (3.046/3)^(1/4), and Ω_m at z = 0 includes the neutrinos, "so that Ω_m + Ω_de + Ω_k ≡ 1".
 
 ### 3.4 The DESI DR2 form
+<!-- key: the-desi-dr2-form -->
 
 DESI Collaboration 2025, arXiv:2503.14738, Sect. 1, 3.1 and 6 [src]:
 
@@ -103,6 +110,7 @@ DESI Collaboration 2025, arXiv:2503.14738, Sect. 1, 3.1 and 6 [src]:
 Three points to hold. (i) The matter variable of Eq. 2 is ω_bc, not ω_m. (ii) The formula assumes "standard pre-recombination physics", and the DESI + BBN H0 inherits that. (iii) The pivot of Eq. 2 is N_eff = 3.04 while the standard value used in Sect. 4.1 is 3.044; the difference moves r_d by 0.013% [der: (3.044/3.04)^(−0.1) − 1]. The CMB counterpart is θ_*, measured to a "fractional error ~10⁻⁴". Inverse-distance-ladder uses are in `cosmo-distance-ladder-h0`.
 
 ## 4. Linear growth and its approximations
+<!-- key: linear-growth-and-its-approximations -->
 
 All equations from Linder 2005, arXiv:astro-ph/0507263 [src].
 
@@ -124,6 +132,7 @@ How analyses define fσ8 [src]:
 Measured γ and μ–Σ are in `cosmo-dark-energy-modified-gravity`; β = f/b and the velocity uses in `cosmo-peculiar-velocities`.
 
 ## 5. Transfer functions
+<!-- key: transfer-functions -->
 
 Definition (Eisenstein & Hu 1998, arXiv:astro-ph/9709112, Eq. 1) [src]: T(k) ≡ [δ(k, z=0)/δ(k, z=∞)] × [δ(0, z=∞)/δ(0, z=0)], synchronous or comoving gauge, so that T → 1 as k → 0; the power spectrum is the initial spectrum times T². Scales that shape T(k), same paper [src], Ω_0 the total matter density and Θ_2.7 the CMB temperature in units of 2.7 K:
 
@@ -146,6 +155,7 @@ Definition (Eisenstein & Hu 1998, arXiv:astro-ph/9709112, Eq. 1) [src]: T(k) ≡
 - Boltzmann codes: CAMB (Lewis, Challinor & Lasenby 2000, arXiv:astro-ph/9911177) and CLASS (Blas, Lesgourgues & Tram 2011, arXiv:1104.2933, whose three approximation schemes are tight coupling, an ultra-relativistic fluid approximation and a radiation-streaming approximation); DES Y3 found them "in excellent agreement at the level of accuracy of this analysis" (arXiv:2105.13548). Accuracy figures are in `results.md` section 4.
 
 ## 6. σ8, σ12 and the R = 8 h⁻¹Mpc definition
+<!-- key: sigma8-sigma12-and-the-r-8-h-1mpc-definition -->
 
 **Definition.** σ_R² = ∫ (dk/k) P_m(k) [3 j1(kR)/(kR)]² with R = 8 h⁻¹Mpc, linear theory, z = 0, total matter (arXiv:1303.5076, Eq. 9) [src]. Four choices are packed in the symbol: the radius and its unit, linear versus non-linear, the redshift, and the matter field. On the last one the two largest current data sets differ: Planck uses total matter; DESI DR1 full shape states "we refer as σ8 to the amplitude of matter fluctuations excluding neutrinos" (arXiv:2411.12021, footnote 3) [src].
 
@@ -159,6 +169,7 @@ Definition (Eisenstein & Hu 1998, arXiv:astro-ph/9709112, Eq. 1) [src]: T(k) ≡
 **What DESI does.** ShapeFit quotes fσ_s8, with σ_s8 tied to r_d^fid rather than to h; the definition is in `surveys-and-data.md` section 5. **Units.** Croton 2013 (arXiv:1308.4150) is the general reference on h in observed and simulated quantities; its abstract calls little h "an anachronism" and gives nine rules. Numbers are in `results.md` section 3; the community choice in `open-questions.md` section 1.
 
 ## 7. Fourier and multipole conventions
+<!-- key: fourier-and-multipole-conventions -->
 
 The reference that writes out the whole chain is Hamilton 1998, arXiv:astro-ph/9708102 [src]:
 
@@ -179,8 +190,10 @@ The reference that writes out the whole chain is Hamilton 1998, arXiv:astro-ph/9
 **Estimators** (equations as DESI uses them are in `cosmo-galaxy-clustering`). Weights: Feldman, Kaiser & Peacock 1994. Multipoles with a varying line of sight: Yamamoto et al. 2006 (arXiv:astro-ph/0505115). FFT implementations, which approximate "the LOS to each pair of galaxies by the LOS to one of them": Bianchi et al. 2015 (arXiv:1505.05341), Scoccimarro 2015 (arXiv:1506.02729), and Hand et al. 2017 (arXiv:1704.02357; 2ℓ+1 FFTs per multipole). Window convolution through the Hankel pair: Wilson et al. 2017 (arXiv:1511.07799); with wide-angle terms: Beutler, Castorina & Zhang 2019 (arXiv:1810.05051).
 
 ## 8. Redshift-space distortions: Kaiser, fingers of God, streaming models
+<!-- key: redshift-space-distortions-kaiser-fingers-of -->
 
 ### 8.1 Linear theory (Kaiser)
+<!-- key: linear-theory-kaiser -->
 
 From Hamilton 1998, arXiv:astro-ph/9708102 [src], plane-parallel limit:
 
@@ -190,6 +203,7 @@ From Hamilton 1998, arXiv:astro-ph/9708102 [src], plane-parallel limit:
 - Percival & White 2009 recast the anisotropy as a measurement of fσ8 "independent of galaxy bias", and note that RSD "probe non-relativistic velocities and therefore the temporal metric perturbations, while weak lensing tests the sum of the temporal and spatial metric perturbations" [src, abstract], the basis of the μ–Σ split.
 
 ### 8.2 Fingers of God: dispersion models
+<!-- key: fingers-of-god-dispersion-models -->
 
 Hamilton describes the standard model as "the result of convolving the linear redshift correlation function ξ^s_L with the line-of-sight component of a random isotropic pairwise velocity distribution f(v)" (Eq. 7.1), in Fourier space P^s(k) = f̂(kμ_k)(1 + β μ_k²)² P(k) (Eq. 7.2) [src]:
 
@@ -203,12 +217,14 @@ Hamilton describes the standard model as "the result of convolving the linear re
 - In the EFT the same physics is a counterterm (section 9). The velocity-survey analogue, the sinc damping D_u with σ_u, is in `cosmo-peculiar-velocities`.
 
 ### 8.3 Beyond Kaiser times damping
+<!-- key: beyond-kaiser-times-damping -->
 
 - Scoccimarro 2004: the exact mapping through the pairwise velocity distribution; the large-scale limit "differs from the Kaiser formula by terms that depend on Gaussian and non-Gaussian contributions to the velocity dispersion of large-scale flows".
 - Taruya, Nishimichi & Saito 2010 (arXiv:1006.0699, TNS): Kaiser terms with non-linear spectra plus correction terms from the density–velocity coupling, times a damping factor.
 - Lagrangian perturbation theory with resummed displacements and velocities, as in velocileptors: Chen et al. 2021 (arXiv:2012.04636), which also compares the moment expansion and the Gaussian streaming model.
 
 ### 8.4 Streaming models
+<!-- key: streaming-models -->
 
 The streaming model convolves the real-space correlation function with the pairwise line-of-sight velocity distribution. Fisher 1995 (arXiv:astro-ph/9412081) shows it "can be made consistent with linear theory provided that the model for the streaming has the functional form predicted by linear theory and that velocity distribution is chosen to be a Gaussian with the correct linear theory dispersion" [src, abstract]. The Gaussian form, as written by Reid & White 2011 (arXiv:1105.4165, Eq. 15, quoting Fisher's eq. 20) [src], with r_σ and r_π the separations across and along the line of sight, y the real-space line-of-sight separation, r² = r_σ² + y²:
 
@@ -217,6 +233,7 @@ The streaming model convolves the real-space correlation function with the pairw
 Its linear expansion (Eq. 16) is ξ^s_g = ξ^r_g(s) − d/dy[v12(r) y/r] + (1/2) d²/dy²[σ12²(y)], both derivatives at y = r_π: the infall term carries bf, the dispersion term f². Reid & White then promote v12 and σ12 to scale-dependent functions from perturbation theory, find that "the dominant correction to the Kaiser limit in this model scales like b³", and confirm "at the per cent level" that the real-space bias is the one that sets the pairwise infall. Here σ12 is again a pairwise dispersion, in length units.
 
 ## 9. Perturbation theory and EFTofLSS ingredients
+<!-- key: perturbation-theory-and-eftoflss-ingredients -->
 
 Read in Ivanov, Simonović & Zaldarriaga 2020, arXiv:1909.05277, Sect. 3.1 and appendix "Theory Model" [src]; this model became CLASS-PT (Chudaykin et al. 2020, arXiv:2004.10607).
 
@@ -243,6 +260,7 @@ Read in Ivanov, Simonović & Zaldarriaga 2020, arXiv:1909.05277, Sect. 3.1 and a
 **Origins.** The effective-fluid treatment of short modes is Baumann et al. 2012 (arXiv:1004.2488) and Carrasco, Hertzberg & Senatore 2012 (arXiv:1206.2926), who measured c_s² of order 10⁻⁶ [src, abstract]; standard perturbation theory is reviewed by Bernardeau et al. 2002 (arXiv:astro-ph/0112551); the companion first BOSS analysis is D'Amico et al. 2020 (arXiv:1909.05271); Ivanov 2026 (arXiv:2607.28314) is the lecture-note treatment.
 
 ## 10. Bias expansions
+<!-- key: bias-expansions -->
 
 **Eulerian basis of the first EFT analysis** (arXiv:1909.05277, Sect. 3.1) [src]: δ_g = b1 δ + (b2/2) δ² + b_G2 G2, with G2(k) = ∫ d³p/(2π)³ [(p·(k − p))²/(p² abs(k − p)²) − 1] δ_lin(p) δ_lin(k − p). One more operator, b_Γ3, enters the one-loop spectrum; operators non-local in time appear "only at fourth order".
 
@@ -259,6 +277,7 @@ Read in Ivanov, Simonović & Zaldarriaga 2020, arXiv:1909.05277, Sect. 3.1 and a
 **Other meanings of "bias".** Gravity alone generates a tidal term "even if this term is absent in the initial conditions"; it enters P(k) as a loop correction but the bispectrum at leading order (Baldauf et al. 2012, arXiv:1201.4827) [src, abstract]. DES Y3 uses P_δg,A(k, z) = b1(z) P_mA(k, z) with the non-linear matter spectrum (Krause et al. 2021, arXiv:2105.13548): a different object from the perturbative b1. Local f_NL gives a "strongly scale-dependent bias" (Dalal et al. 2008, arXiv:0710.4560; limits in `cosmo-inflation-primordial`). Assembly bias: at 10^11 M_⊙/h the oldest 10% of haloes are "more than 5 times more strongly correlated" than the youngest 10%, which "contradicts a fundamental assumption of the halo occupation distribution models" (Gao, Springel & White 2005, arXiv:astro-ph/0506510) [src, abstract]; the perturbative expansion absorbs it in its coefficients, HOD mocks do not (`cosmo-simulations-mocks`). The general reference is Desjacques, Jeong & Schmidt 2018 (arXiv:1611.09787).
 
 ## 11. Halo model
+<!-- key: halo-model -->
 
 Read in Asgari, Mead & Heymans 2023, arXiv:2303.08752, Sect. 2.1 [src]; equation numbers by count, checked against Eqs. 16–18 of the HTML text.
 
@@ -270,6 +289,7 @@ Read in Asgari, Mead & Heymans 2023, arXiv:2303.08752, Sect. 2.1 [src]; equation
 Ingredients and their defining papers: mass function and its non-universality (Tinker et al. 2008, arXiv:0803.2706), linear halo bias calibrated to normalise the bias of all matter to unity (Tinker et al. 2010, arXiv:1001.3162), the peak-background split linking the two (Sheth & Tormen 1999, arXiv:astro-ph/9901122), the universal profile (Navarro, Frenk & White 1997, arXiv:astro-ph/9611107), the central–satellite occupation (Zheng et al. 2005, arXiv:astro-ph/0408564: a step function for centrals plus a power law for satellites, Poisson satellites, M1 ≈ 14–18 M_min) [src, abstracts]. Conventions to state: the mass definition (spherical overdensity Δ times the background density in Tinker; friends-of-friends bias is ~10% lower than Δ = 200), masses in M_⊙/h, and, with massive neutrinos, the cb field in σ(M) (section 14). halofit (Smith et al. 2003, arXiv:astro-ph/0207664) and HMcode (Mead et al. 2015, arXiv:1505.07833; Mead et al. 2021, arXiv:2009.01858) are halo-model-inspired fits to simulations, not evaluations of these integrals. The older review is Cooray & Sheth 2002 (arXiv:astro-ph/0206508).
 
 ## 12. Limber approximation and angular power spectra
+<!-- key: limber-approximation-and-angular-power-spectra -->
 
 From LoVerde & Afshordi 2008, arXiv:0809.5112 [src]: fields with ⟨A(k1) B*(k2)⟩ = (2π)³ δ³(k1 − k2) P_AB(k1) (Eq. 3) projected as Ã(n̂) = ∫ dr F_A(r) A(r n̂) (Eq. 4).
 
@@ -288,6 +308,7 @@ As used today (Krause et al. 2021, arXiv:2105.13548, DES Y3) [src]:
 Kitching et al. 2017 (arXiv:1611.04954) list the three approximations usually made together in cosmic shear (flat sky, Limber as the "Bessel-to-delta function limit", Hankel transform) and the exact replacement, Wigner small-d matrices. Non-Limber codes are compared in Leonard et al. 2023 (arXiv:2212.04291). Sizes are in `results.md` section 5; lensing-specific projections in `cosmo-weak-lensing`.
 
 ## 13. Relativistic and wide-angle terms
+<!-- key: relativistic-and-wide-angle-terms -->
 
 **What a survey measures.** The observed number-count fluctuation in direction n at redshift z, linear order, Bardeen potentials Φ and Ψ (Bonvin & Durrer 2011, arXiv:1105.5280, Sect. II.B, `Dez`) [src]; ℋ = aH, r_S the comoving distance to the source, V the gauge-invariant velocity, dots conformal-time derivatives, Δ_Ω the angular Laplacian:
 
@@ -307,6 +328,7 @@ The expression has no galaxy bias, no magnification bias from a flux limit and n
 **Wide-angle effects** are distinct: they arise in the Kaiser term alone because the line of sight differs between the two galaxies of a pair. Szalay, Matsubara & Landy 1998 (arXiv:astro-ph/9712007) give the closed linear form for arbitrary geometry, which "in the limit of small angles … reduces to the plane-parallel approximation". Castorina & White 2018 (arXiv:1709.09730) compute the multipole signatures including "the terms generated by the galaxy selection function" (Hamilton's α(r) term of section 8.1); Beutler, Castorina & Zhang 2019 carry them through the window and show that tying the line of sight to one galaxy generates the odd multipoles ℓ = 1, 3. For velocities see Castorina & White 2020 (arXiv:1911.08353) and `cosmo-peculiar-velocities`. An analysis on large scales must state its pair line-of-sight definition and whether the induced dipole is modelled.
 
 ## 14. Massive neutrinos
+<!-- key: massive-neutrinos -->
 
 Read in Lesgourgues & Pastor 2006, arXiv:astro-ph/0603494, Sect. 4.5.6 and 4.6.1 [src].
 
@@ -323,6 +345,7 @@ Read in Lesgourgues & Pastor 2006, arXiv:astro-ph/0603494, Sect. 4.5.6 and 4.6.1
 **Which field: cb or total matter.** The halo mass function is more universal with σ²_cdm(M, z) than with the total-matter variance, and halo bias is "both more universal, and less scale- or k-dependent" against the CDM spectrum (Castorina et al. 2014, arXiv:1311.1212); the Tinker bias works "once the linear cold dark matter power spectrum is used" (Villaescusa-Navarro et al. 2014, arXiv:1311.0866); the momentum bias of haloes relative to CDM+baryons is 1, implying "a velocity bias between halos and total matter" (Villaescusa-Navarro et al. 2018, arXiv:1708.01154) [src, abstracts]. So bias, growth rate and the template of a clustering model belong to the cb field (DESI: "the linear cold dark matter + baryon power spectrum", and σ8 "excluding neutrinos"), Planck's σ8 is total matter, and lensing responds to total matter. Bounds on Σm_ν are in `cosmo-neutrinos-dark-matter`.
 
 ## 15. Codes
+<!-- key: codes -->
 
 Each with the paper read or cited above; installation and versions are in `cosmo-software-ecosystem`.
 
@@ -335,6 +358,7 @@ Each with the paper read or cited above; installation and versions are in `cosmo
 | Samplers and frameworks named in the analyses read | Cobaya (DESI, ACT), CosmoSIS (DES, KiDS), CosmoMC (Planck) |
 
 ## Not verified
+<!-- key: not-verified -->
 
 - Hogg's own equations for D_A, D_L, comoving volume and lookback time; Hogg's equation numbers beyond Eq. 7.
 - The accuracy of DESI's power-law r_d formula against a Boltzmann code, and the body of arXiv:2212.04522.

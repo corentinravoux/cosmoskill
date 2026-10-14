@@ -12,6 +12,7 @@ secondary source (a sibling skill or an official web page); `[der]` derived
 here.
 
 ## 1. What each probe contributes to a `w0wa` fit
+<!-- key: what-each-probe-contributes-to-a-w0wa-fit -->
 
 | Input | What it fixes | Why the fit needs it | Flag |
 |---|---|---|---|
@@ -28,6 +29,7 @@ statistical power of the data is achieved through the combination of the BAO,
 CMB and SNe datasets" (arXiv:2503.14738) [src].
 
 ## 2. Past data sets (superseded for dark energy, still cited)
+<!-- key: past-data-sets-superseded-for-dark-energy-still -->
 
 | Data set | Role in this domain | Key numbers | Source | Flag |
 |---|---|---|---|---|
@@ -43,8 +45,10 @@ CMB and SNe datasets" (arXiv:2503.14738) [src].
 | DES-SN5YR, Union3 (original releases) | supernova inputs of the 2024–2025 claims | superseded by DES-Dovekie and Union3.1 | arXiv:2511.07517, arXiv:2601.19424 | [src] |
 
 ## 3. Current data sets
+<!-- key: current-data-sets -->
 
 ### 3.1 BAO and clustering
+<!-- key: bao-and-clustering -->
 
 | Data set | Content | Status at snapshot | Source | Flag |
 |---|---|---|---|---|
@@ -61,6 +65,7 @@ No DESI DR2 full-shape cosmology exists at the snapshot (sibling
 `cosmo-galaxy-clustering`) [sec].
 
 ### 3.2 Supernovae
+<!-- key: supernovae -->
 
 | Sample | Content | Role | Source | Flag |
 |---|---|---|---|---|
@@ -73,6 +78,7 @@ All four share most of the `z < 0.1` anchor. The anchor, its surveys and its
 planned replacements are documented in `cosmo-supernovae`.
 
 ### 3.3 CMB
+<!-- key: cmb -->
 
 | Data | Use | Source | Flag |
 |---|---|---|---|
@@ -86,6 +92,7 @@ Combination names (P-ACT, CMB-SPA), their differences and the τ input are in
 `cosmo-cmb`.
 
 ### 3.4 Weak lensing and 3×2pt
+<!-- key: weak-lensing-and-3x2pt -->
 
 | Data set | Content | Dark-energy / gravity use | Source | Flag |
 |---|---|---|---|---|
@@ -100,6 +107,7 @@ the 3×2pt, shear, calibration and dynamical-dark-energy papers only) [src:
 arXiv listing].
 
 ### 3.5 Probes of screening
+<!-- key: probes-of-screening -->
 
 | Data | Used for | Source | Flag |
 |---|---|---|---|
@@ -109,6 +117,7 @@ arXiv listing].
 | DESI DR1 power spectrum, all tracers | scale-dependent growth, `f(R)` | Gonzalez et al. 2026, arXiv:2604.26915 | [src] |
 
 ## 4. Public products useful for reanalysis
+<!-- key: public-products-useful-for-reanalysis -->
 
 | Product | Location or reference | Flag |
 |---|---|---|
@@ -121,6 +130,7 @@ arXiv listing].
 | Supernova Hubble diagrams and covariances | `cosmo-supernovae` | [sec] |
 
 ## 5. What comes next
+<!-- key: what-comes-next -->
 
 | Data | When | What it decides | Source | Flag |
 |---|---|---|---|---|
@@ -154,6 +164,7 @@ Forecast statements read this session:
   `w'` and `wa` treated as equal at `a ≈ 1`].
 
 ## 6. Timeline of releases that changed the dark-energy picture
+<!-- key: timeline-of-releases-that-changed-the-dark -->
 
 | Date | Release | Effect | Source |
 |---|---|---|---|

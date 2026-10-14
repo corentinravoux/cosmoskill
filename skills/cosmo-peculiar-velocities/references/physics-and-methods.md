@@ -13,6 +13,7 @@ Equations are transcribed from the LaTeX source of the cited paper, read this se
 paper's notation: symbols differ between sections.
 
 ## 1. The observable: log-distance ratio, and the velocity estimators built on it
+<!-- key: the-observable-log-distance-ratio-and-the -->
 
 **What is measured.** A distance indicator gives a distance modulus or a physical size with an error
 that is Gaussian in the logarithm of the distance. The natural observable is the log-distance ratio
@@ -59,6 +60,7 @@ exp(−(κ σ_μ)²/2), κ = ln10/5 [src: arXiv:2604.08314, eq. "corrected_dista
 error [src: abstract].
 
 ## 2. Linear model of the density and velocity power spectra
+<!-- key: linear-model-of-the-density-and-velocity-power -->
 
 The model that every likelihood analysis descends from is Koda et al. 2014 (arXiv:1312.1022), who
 introduced a redshift-space damping of the velocity field that earlier work had set to 1:
@@ -94,6 +96,7 @@ level precision"; code `velocisaurus` [src]. Dumerchat et al. 2026 (arXiv:2602.0
 trained on AbacusSummit for the non-linear regime [src].
 
 ## 3. Field-level likelihood ("maximum-likelihood fields")
+<!-- key: field-level-likelihood-maximum-likelihood-fields -->
 
 **Principle.** The data vector S (gridded galaxy overdensities and log-distance ratios or
 velocities) is taken as Gaussian with zero mean and covariance C(Θ) = C_field(Θ) + C_obs; the
@@ -172,8 +175,10 @@ wide-angle likelihood-based field-level inference" while "varying the different 
 field configurations" [src: abstract].
 
 ## 4. Two-point statistics measured and then fitted
+<!-- key: two-point-statistics-measured-and-then-fitted -->
 
 ### 4a. Momentum power spectrum
+<!-- key: momentum-power-spectrum -->
 
 The radial momentum field is the density-weighted velocity, ρ(r) = [1 + δ_g(r)] v(r); its power
 spectrum is the velocity power spectrum plus three higher-order terms, ⟨uu⟩ + ⟨uδu⟩ + ⟨δuu⟩ + ⟨δuδu⟩
@@ -208,6 +213,7 @@ The *velocity* (not momentum) power spectrum was estimated directly by Howlett e
 (arXiv:1706.05130, 2MTF) [src: title].
 
 ### 4b. Velocity and momentum correlation functions
+<!-- key: velocity-and-momentum-correlation-functions -->
 
 The statistics go back to Gorski 1988 (doi:10.1086/185255) and Gorski et al. 1989
 (doi:10.1086/167771). The pair estimators of the parallel and perpendicular velocity correlations
@@ -238,6 +244,7 @@ mocks per `fsigma8-pv-compilation.md` [sec]), and finite mock volumes suppress l
 correlations (`systematics.md` §8).
 
 ### 4c. Supernova magnitude covariance
+<!-- key: supernova-magnitude-covariance -->
 
 The same signal written as a covariance of SN magnitude residuals: Hui & Greene 2006
 (arXiv:astro-ph/0512159; ignoring it underestimates a low-z anchor's zero-point error "by about a
@@ -247,6 +254,7 @@ al. 2017 (arXiv:1611.09862) and Crisman et al. 2026 (arXiv:2604.06361) [src: abs
 Its role as a *nuisance* in SN cosmology belongs to `cosmo-supernovae`.
 
 ## 5. Velocity–density comparison and forward models
+<!-- key: velocity-density-comparison-and-forward-models -->
 
 **Linear comparison.** The velocity field is predicted from a redshift-survey density field by
 linear theory and scaled by β = f/b; with σ8 of the galaxies measured in the same field this gives
@@ -279,6 +287,7 @@ a Transformer trained on AbacusSummit to predict the residual between true and l
 velocity; used for kSZ stacking (§7) [src].
 
 ## 6. Bulk-flow estimators
+<!-- key: bulk-flow-estimators -->
 
 **Two definitions that coincide only for a uniform field** (Nusser 2016, arXiv:1508.03860) [src:
 abstract]: the volume average of the 3D velocity,
@@ -339,6 +348,7 @@ of the constrained realisations (to R ~ 200 h⁻¹Mpc in Cosmicflows-2) [src]. A
 analytic errors "typically underestimated" [src]. The record is in `results.md` §3.
 
 ## 7. kSZ velocities, at the level relevant here
+<!-- key: ksz-velocities-at-the-level-relevant-here -->
 
 The kinematic Sunyaev–Zel'dovich effect measures the electron momentum along the line of sight: it
 gives **τ × v**, never v alone. Three estimators are in use — pairwise kSZ, velocity-weighted
@@ -350,6 +360,7 @@ measurable by kSZ alone; kSZ velocities constrain shapes (f_NL, the force-law in
 physics. Gas physics and the CMB side belong to `cosmo-cmb-lss-cross-correlations`.
 
 ## 8. Covariance, mocks, consensus, blinding practice and codes
+<!-- key: covariance-mocks-consensus-blinding-practice -->
 
 - **Field-level**: the covariance *is* the model; it is analytic, dense, N × N, and recomputed (or
   interpolated) for every non-linear parameter. Errors come from the posterior, and are checked
@@ -375,6 +386,7 @@ physics. Gas physics and the CMB side belong to `cosmo-cmb-lss-cross-correlation
   in `surveys-and-data.md` §7.
 
 ## 9. Conventions, units and where the community is split
+<!-- key: conventions-units-and-where-the-community-is -->
 
 - **flip units**: RA/Dec in radians, comoving distances in h⁻¹Mpc, velocities in km/s, k in h Mpc⁻¹
   (workspace `CLAUDE.md` §5); reference paper arXiv:2501.16852.

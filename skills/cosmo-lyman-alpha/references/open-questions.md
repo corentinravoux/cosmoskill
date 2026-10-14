@@ -6,6 +6,7 @@ Snapshot: 2026-10-07
 Flags: `[src]` read this session in the cited paper (abstract unless a section is named); `[der]` derived here; `[sec]` secondary.
 
 ## 1. Is the small-scale linear power from the forest consistent with the CMB?
+<!-- key: is-the-small-scale-linear-power-from-the-forest -->
 
 This is the central open question of P1D cosmology, and the answer depends on the data set and on the modelling.
 
@@ -34,6 +35,7 @@ So four analyses of one data vector give a low slope (original), a normal slope 
 **What decides it.** DESI DR2 P1D with a second emulator on the same data; a joint 1D + 3D fit (ForestFlow already predicts 3D clustering from P1D and reproduces the DESI BAO-analysis clustering, arXiv:2607.27413 [src]); and the P3D / P× measurements, whose estimators exist (arXiv:1710.11036, arXiv:2503.15619, arXiv:2403.17294) and whose small-scale version was demonstrated on eBOSS (arXiv:2310.09116) [src].
 
 ## 2. How strong is the warm-dark-matter limit, really?
+<!-- key: how-strong-is-the-warm-dark-matter-limit-really -->
 
 - **Strong side.** m_WDM > 5.7 keV (95%) from HIRES + UVES at z = 4.2–5.0 with k_max = 0.2 s/km, marginalised over thermal history and inhomogeneous reionisation (arXiv:2309.04533) [src]; > 5.3 keV from earlier XQ-100 + HIRES/MIKE (arXiv:1702.01764) and from eBOSS + XQ-100 (arXiv:1911.09073) [src].
 - **Cautious side.** > 3.1 keV with a weak preference for 4.5 keV from a 1080-simulation grid spanning photo-heating histories (arXiv:2209.14220) [src]; > 1.9 keV if cold reionisation histories are allowed, "demonstrating the level of systematic uncertainty of the Lyman-α forest method" (arXiv:1912.09397) [src]; the 5.3 keV limit of 2017 falls to 3.5 keV when temperature jumps are allowed (arXiv:1702.01764) [src]; the 5.7 keV limit falls to 4.1 keV when restricted to k_max < 0.1 s/km and earlier priors (arXiv:2309.04533) [src].
@@ -44,10 +46,12 @@ So four analyses of one data vector give a low slope (original), a normal slope 
 A manuscript should quote a WDM limit together with its thermal-history assumption and k_max. The particle-physics interpretation (sterile-neutrino production mechanisms, mixed models) is shared with `cosmo-neutrinos-dark-matter`.
 
 ## 3. Fuzzy dark matter: which limit is current?
+<!-- key: fuzzy-dark-matter-which-limit-is-current -->
 
 Published lower limits on a pure FDM mass span a factor of ~100: 2 × 10⁻²¹ eV (20 × 10⁻²², arXiv:1703.04683), 2 × 10⁻²⁰ eV (arXiv:2007.12705), and in 2026 1.9 × 10⁻²¹ eV from P1D at z = 4.2–5.0 with a new emulator (arXiv:2606.06969) [src]. The 2026 result is ten times weaker than the 2021 one; the abstracts do not explain the difference, and the reason (data set, k range, thermal priors, emulator) was not traced this session. All three exclude the canonical 10⁻²² eV mass as all of the dark matter; mixed models with f_FDM ≲ 0.1 at 10⁻²²–10⁻²³ eV remain allowed (arXiv:2606.06969) [src].
 
 ## 4. Growth rate from the forest
+<!-- key: growth-rate-from-the-forest -->
 
 fσ8 cannot at present be measured from the 3D forest: the DESI DR1 value 0.37 (+0.055/−0.065) ± 0.033 was withheld from inference (arXiv:2509.15308) and DR2 mocks show a significant bias (arXiv:2607.27411) [src]. Routes being explored:
 - field-level and EFT models that predict the full set of line-of-sight bias operators (arXiv:2309.10133, arXiv:2507.00284, arXiv:2606.26234) [src];
@@ -56,12 +60,14 @@ fσ8 cannot at present be measured from the 3D forest: the DESI DR1 value 0.37 (
 - cross-correlation with CMB lensing: the squeezed bispectrum between CMB lensing and P1D is detected at 4.8σ (arXiv:2405.14988), while direct lensing of the forest is not yet detected in DR1, A_L = 0.62 ± 0.33 (arXiv:2609.36949) [src].
 
 ## 5. BAO systematics at sub-percent precision
+<!-- key: bao-systematics-at-sub-percent-precision -->
 
 - **Non-linear shift.** The budget has already been revised once: 0.3% on each of α_∥, α_⊥ in the DR2 BAO paper, then 0.15% isotropic and 0.8% on the peak's AP in the DR2 full-shape paper (arXiv:2607.27410, Sect. 5.2) [src]. Two calculations give a few tenths of a percent with opposite radial sign: −0.2% radial, −0.3% transverse from EFT parameters fitted to ACCEL² (arXiv:2412.06892); +0.35% radial, ~0 transverse from AbacusSummit mocks through the DESI pipeline (arXiv:2503.13442) [src]. DESI DR2 carries a ~0.3% theory systematic for this (arXiv:2503.14739) [src]. With DR2 at 0.65% isotropic and future LBG surveys forecast at 0.4% (arXiv:2507.21852, **forecast**), the shift moves from negligible to a leading term.
 - **UV background fluctuations.** A linear radiative-transfer model predicts a peak shift up to 1.2% for source bias 3 (arXiv:1402.0506) [src]; current analyses marginalise a UV term in the broadband (arXiv:2607.27411) [src]. No paper read this session reports a measured BAO shift from this effect.
 - **Covariance.** Smoothed sub-sample covariance (baseline) versus unsmoothed covariance on compressed multipoles; the multipole analysis gives 0.93% isotropic precision against 0.65% for the baseline, with weaker nuisance constraints (arXiv:2603.04281, arXiv:2503.14739) [src].
 
 ## 6. Full-shape analyses: how far down in scale?
+<!-- key: full-shape-analyses-how-far-down-in-scale -->
 
 The AP gain comes from the broadband: a factor 2 (eBOSS, arXiv:2209.13942), 2.4 (DESI DR1, arXiv:2509.15308), 2 (DESI DR2, arXiv:2607.27410) over BAO alone [src]. The method debate is between
 - the linear-theory-based model with empirical HCD, metal, UV and non-linear terms and a scale cut or small-scale marginalisation (the DESI baseline, validated on CoLoRe-2LPT and AbacusSummit mocks, arXiv:2607.27411) [src];
@@ -75,10 +81,12 @@ One concrete lesson of DR2: the scale cut alone does not protect a full-shape fi
 Effect on cosmology worth tracking: the DR2 Lyα distances agree with the Planck ΛCDM prediction and sit about 2σ from the w0waCDM prediction of CMB + DESI BAO (arXiv:2607.27410, Sect. 5.3) [src] — the Lyα point pulls against the dynamical-dark-energy solution rather than with it. In numbers, the Lyα AP Ω_m = 0.325 ± 0.018 is 1.4σ above DESI BAO and nudges DESI toward the CMB (2.4σ → 2.2σ), slightly lowering the w0wa preference (arXiv:2607.27410) [src].
 
 ## 7. P3D and P×: from estimators to cosmology
+<!-- key: p3d-and-px-from-estimators-to-cosmology -->
 
 Estimators: cross-spectrum P×(k_∥, θ) (arXiv:1710.11036); weighted FFT estimators with a window matrix that forward-models masks and pixel weights, for P1D and extended to P× (arXiv:2505.02904); FFT-average small-scale P3D (arXiv:2310.09116); pair-count spectral estimator applied to eBOSS DR16 (arXiv:2403.08241); optimal estimator with window deconvolution and mode marginalisation, flat-sky so far (arXiv:2503.15619); MAP estimator (arXiv:2403.17294); unified HMC reconstruction of P3D from ξ, P1D and P× (arXiv:2506.08198) [src]. No DESI P3D or P× cosmological measurement was found in this session's searches. A forecast for the unified reconstruction gives the P3D monopole in 25 bins over 0.07–1.8 Mpc⁻¹ at 13% average precision for DESI-like data (**forecast**, arXiv:2506.08198) [src].
 
 ## 8. Thermal history and reionisation
+<!-- key: thermal-history-and-reionisation -->
 
 - T_0(z) from different statistics agrees on a peak near z ≈ 3 (arXiv:2009.00016) but the peak redshift and height differ between P1D-based (peak 14 000 K at z ~ 3.4, arXiv:1808.04367) and multi-statistic analyses (14 750 ± 1322 K at z ≈ 3) [src].
 - Late end of hydrogen reionisation (z ≤ 5.3, arXiv:2108.03699) means relic temperature fluctuations at z = 4–5, exactly where WDM limits are derived (arXiv:2109.06897) [src].
@@ -88,6 +96,7 @@ Estimators: cross-spectrum P×(k_∥, θ) (arXiv:1710.11036); weighted FFT estim
 - Dynamical dark energy consistent with the DESI constraints would tilt the flux power spectrum and raise IGM temperatures in hydrodynamical simulations (arXiv:2601.00767) [src]; the DESI DR1 P1D paper judges its own posterior too broad to measure the dark-energy equation of state (arXiv:2601.21432, Sect. 7) [src].
 
 ## 9. Tomography: what cosmology can it deliver?
+<!-- key: tomography-what-cosmology-can-it-deliver -->
 
 - Deep-field tomography has become a galaxy-environment and protocluster tool (LATIS, arXiv:2510.08815, arXiv:2507.10949) more than a cosmological one [src].
 - Discrepancies between tracers are unexplained: IGM-selected protocluster candidates without LBG overdensity in LATIS (arXiv:2507.10949) and a galaxy protocluster without forest absorption in CLAMATO (arXiv:2303.07619) [src].
@@ -95,6 +104,7 @@ Estimators: cross-spectrum P×(k_∥, θ) (arXiv:1710.11036); weighted FFT estim
 - LBG forests (first DESI measurement, arXiv:2507.21852) are the route to both dense tomography and high-z BAO in DESI-II and Stage-5 surveys [src].
 
 ## 10. Forecasts (all labelled)
+<!-- key: forecasts-all-labelled -->
 
 | Forecast | Value | Assumptions | Citation |
 |---|---|---|---|
@@ -108,6 +118,7 @@ Estimators: cross-spectrum P×(k_∥, θ) (arXiv:1710.11036); weighted FFT estim
 The 2007 forecast is worth keeping in view: a 1.4% target has become a 0.65% measurement (arXiv:2503.14739) [src].
 
 ## 10b. What the next data decide
+<!-- key: what-the-next-data-decide -->
 
 | Question | Deciding measurement | Status of the tool |
 |---|---|---|
@@ -121,6 +132,7 @@ The 2007 forecast is worth keeping in view: a 1.4% target has become a 0.65% mea
 | Are 3D small scales usable? | P× and P3D on DESI data | estimators ready (arXiv:1710.11036, arXiv:2505.02904, arXiv:2503.15619); no data measurement found |
 
 ## 11. Misconceptions and stale claims
+<!-- key: misconceptions-and-stale-claims -->
 
 | Claim still seen | Status | Correcting source |
 |---|---|---|
@@ -136,6 +148,7 @@ The 2007 forecast is worth keeping in view: a 1.4% target has become a 0.65% mea
 | "Lyα BAO needs quasars." | LBG forests give a consistent auto-correlation; C IV forest gives BAO at z = 1.92. | arXiv:2507.21852, arXiv:2601.08103 |
 
 ## 12. Internal tensions between analyses — quick list
+<!-- key: internal-tensions-between-analyses-quick-list -->
 
 - **Lyα bias from auto versus cross (DESI DR2).** b_α = −0.1488 ± 0.0020, β_α = 1.365 ± 0.032 from the auto-correlations alone; b_α = −0.099 ± 0.021, β_α = 1.98 ± 0.35 from the cross-correlations alone; combined −0.1352 ± 0.0073 and 1.445 ± 0.064 (arXiv:2503.14739, Appendix A) [src]. The paper treats these as nuisance parameters that are not expected to agree exactly.
 - **Bias from P1D-level fits versus 3D fits.** The QMLE fit b_F(z) = −0.218 × ((1+z)/4)^2.96 gives −0.127 at z = 2.33 [der: (3.33/4)^2.96 = 0.581], against −0.135 to −0.149 from the 3D fits above. The P1D-level model is called "simplistic" by its authors, and FFT and QMLE differ by 2.2σ in it (arXiv:2505.07974) [src].
@@ -147,6 +160,7 @@ The 2007 forecast is worth keeping in view: a 1.4% target has become a 0.65% mea
 - **Dark-matter bounds.** WDM from 1.9 to 5.7 keV and FDM from 1.9 × 10⁻²¹ to 2 × 10⁻²⁰ eV depending on data, k_max and thermal priors (§§2–3).
 
 ## 13. Not verified
+<!-- key: not-verified -->
 
 - Why the 2026 FDM limit is weaker than the 2021 one.
 - A like-for-like cosmological reanalysis of eBOSS DR14 with the DESI DR1 model.

@@ -11,8 +11,10 @@ The estimators, likelihoods and theory models of each probe are in the probe
 skills; this file is about the instrument and the survey design.
 
 ## 1. Etendue, multiplex and survey speed
+<!-- key: etendue-multiplex-and-survey-speed -->
 
 ### 1.1 Imaging
+<!-- key: imaging -->
 
 The etendue is the product AΩ of collecting area and field of view. At fixed
 image quality, sky background and throughput, the time needed to cover a
@@ -50,6 +52,7 @@ Three consequences that the table makes visible:
   stability of the point-spread function, none of which enter AΩ.
 
 ### 1.2 Multi-object spectroscopy
+<!-- key: multi-object-spectroscopy -->
 
 For fibre spectrographs the analogue is collecting area times the number of
 fibres, with the fibre density on the sky deciding how many passes a target
@@ -84,6 +87,7 @@ to cosmology, so they rank hardware, not surveys. What they show:
   fields suits deep, dense samples, not 14,000 deg² footprints.
 
 ### 1.3 Slitless spectroscopy
+<!-- key: slitless-spectroscopy -->
 
 Euclid NISP and the Roman grism take a spectrum of every source in the
 field, so there is no multiplex number and no fibre assignment. The
@@ -96,6 +100,7 @@ spectrophotometry of every pixel (arXiv:2511.02985) [sec: GC], giving
 redshifts of low precision for a very large sample.
 
 ## 2. Dark Energy Task Force stages and the figure of merit
+<!-- key: dark-energy-task-force-stages-and-the-figure-of -->
 
 The staging vocabulary (Stage II, III, IV) and the dark-energy figure of
 merit come from the Dark Energy Task Force report (Albrecht et al. 2006,
@@ -136,6 +141,7 @@ Rules for comparing figures of merit:
    designed (Sect. 4 of `results.md`).
 
 ## 3. Number density, nP and effective volume
+<!-- key: number-density-np-and-effective-volume -->
 
 For a tracer of mean density n̄ and power spectrum P(k), the shot-noise to
 sample-variance balance is set by n̄P. The Feldman–Kaiser–Peacock weight
@@ -174,8 +180,10 @@ intensity map has no discrete-object shot noise in the galaxy-survey sense;
 its noise is thermal and its limit is foreground removal (Sect. 8).
 
 ## 4. Imaging depth, effective source density and photometric redshifts
+<!-- key: imaging-depth-effective-source-density-and -->
 
 ### 4.1 Depth is quoted in incompatible ways
+<!-- key: depth-is-quoted-in-incompatible-ways -->
 
 | Survey | Quoted depth | Convention | Source |
 |---|---|---|---|
@@ -194,6 +202,7 @@ instrument: 26.2 and "> 24.5" are not in conflict. Never rank surveys by
 depth without converting to one convention.
 
 ### 4.2 Effective source density
+<!-- key: effective-source-density -->
 
 For weak lensing the survey power is set by area, shape noise and the
 effective number density n_eff of sources (Chang et al. 2013,
@@ -205,6 +214,7 @@ arcmin⁻² (DECADE 4.59, UNIONS 4.96, DES Y3 5.59, KiDS-1000 6.17, DES Y6
 the column is indicative; `cosmo-weak-lensing` gives the definitions.
 
 ### 4.3 Uniformity and calibration as specifications
+<!-- key: uniformity-and-calibration-as-specifications -->
 
 - Relative photometric calibration from overlaps ("ubercalibration"): about
   1% in griz over 8500 deg² for SDSS (Padmanabhan et al. 2008,
@@ -225,6 +235,7 @@ Photometric-redshift requirements (for example |Δ⟨z⟩| ≤ 0.002(1+z) per bi
 for Euclid) belong to `cosmo-weak-lensing`.
 
 ## 5. Completeness and fibre assignment
+<!-- key: completeness-and-fibre-assignment -->
 
 Three completeness factors multiply, and papers do not always say which one
 they quote: the fraction of the parent target list given a fibre
@@ -269,6 +280,7 @@ time and updates the target list the next morning, over 15,000 fields
 several programmes in one exposure (arXiv:2606.14012) [src].
 
 ## 6. Cadence and time-domain strategy
+<!-- key: cadence-and-time-domain-strategy -->
 
 | Survey | Cadence as specified | Source |
 |---|---|---|
@@ -292,6 +304,7 @@ arXiv:2104.05676) [src]. A cadence quoted from a design paper is a
 requirement, not what the scheduler delivered.
 
 ## 7. CMB sensitivity: map depth, resolution and sky fraction
+<!-- key: cmb-sensitivity-map-depth-resolution-and-sky -->
 
 A CMB survey is specified by map depth (μK-arcmin, in temperature or in
 Q/U), beam width, sky fraction and frequency coverage. With white noise of
@@ -316,6 +329,7 @@ primordial B modes. Hence the split into large-aperture telescopes (6 m and
 and the South Pole [sec: CMB]. Likelihood-level detail: `cosmo-cmb`.
 
 ## 8. Radio and gravitational-wave figures of merit
+<!-- key: radio-and-gravitational-wave-figures-of-merit -->
 
 **21 cm intensity mapping.** Two architectures are in use. Compact
 interferometers with redundant baselines (CHIME, CHORD, HIRAX) measure
@@ -344,6 +358,7 @@ the number of events with a redshift, by counterpart or statistically
 (`cosmo-multimessenger`).
 
 ## Not verified
+<!-- key: not-verified -->
 
 - The DETF stage definitions and the exact normalisation of the DETF figure
   of merit (only the abstract of arXiv:astro-ph/0609591 was read).

@@ -6,6 +6,7 @@ Snapshot: 2026-10-07
 Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named secondary source; `[der]` derived here, derivation stated.
 
 ## 1. Likelihoods and when the Gaussian approximation fails
+<!-- key: likelihoods-and-when-the-gaussian-approximation -->
 
 The default in large-scale-structure analyses is a multivariate Gaussian in the compressed statistic `d` (power spectrum, correlation function, multipoles): `−2 ln L = (d − m(θ))^T C^-1 (d − m(θ))` up to a constant, with `C` fixed in parameter space. It is an approximation in three distinct ways.
 
@@ -24,10 +25,12 @@ The default in large-scale-structure analyses is a multivariate Gaussian in the 
 Rules of judgment that follow. (i) The Gaussian form is safe when each element of the data vector averages many modes and the covariance is fixed; it fails first for low multipoles, large angular scales, small areas, sparse counts and one-point statistics. (ii) A parameter-dependent covariance is not "more correct" inside a Gaussian likelihood; either keep it fixed (and iterate), or use the exact distribution. (iii) When the likelihood is not known in closed form, the alternative is to learn it from simulations (§12).
 
 ## 2. Covariance estimation
+<!-- key: covariance-estimation -->
 
 Notation used below, following Percival et al. 2022 (arXiv:2108.10402): `n_s` simulations (mocks), `n_d` data points, `n_θ` fitted parameters, `S` the sample covariance of the mocks, `Σ` the true covariance. `S` is Wishart-distributed with `n_s − 1` degrees of freedom.
 
 ### 2.1 Sample covariance from mocks and its corrections
+<!-- key: sample-covariance-from-mocks-and-its-corrections -->
 
 | Step | Formula | Reference |
 |---|---|---|
@@ -47,12 +50,14 @@ Points of interpretation, all from arXiv:2108.10402 [src]:
 Requirements on the number of mocks (Taylor, Joachimi & Kitching 2013, arXiv:1212.4359) [src]: the fractional error on a parameter variance equals the fractional variance of the precision matrix; for a 5% error on a parameter error and `N_D << 100` data points, at least 200 realisations are needed; for `N_D >> 100`, `N_S > N_D` is required, with a fractional accuracy better than `sqrt(2/N_D)` on the covariance.
 
 ### 2.2 Internal estimates: jackknife and bootstrap
+<!-- key: internal-estimates-jackknife-and-bootstrap -->
 
 - Norberg et al. 2009 (arXiv:0810.1885) compared jackknife and bootstrap with external Monte-Carlo errors on N-body simulations: the standard bootstrap overestimates the variance of ξ(s) by about 40% on all scales probed; the jackknife returns the correct variance on large scales and overestimates it on small scales; a 2σ interval from an internal estimator "could correspond in practice to anything from 1-sigma to 3-sigma" [src].
 - Friedrich et al. 2016 (arXiv:1508.00895), for cosmic shear with log-normal simulations: the volume inside constant-likelihood contours in Ω_m–σ8 from internally estimated covariances is on average ≳ 85% of the true one, and the uncertainty on Σ8 ~ σ8 Ω_m^0.5 is about 90% of the true uncertainty (a forecast for the 5-year DES survey) [src].
 - Mohammad & Percival 2022 (arXiv:2109.07071) derive correction terms for delete-one jackknife and bootstrap of the two-point correlation function; tested on 1000 Quijote boxes of 1 (Gpc/h)³, the corrected estimators recover the amplitude and principal components to about 10%, the precision of the test [src].
 
 ### 2.3 Analytic and semi-analytic covariances
+<!-- key: analytic-and-semi-analytic-covariances -->
 
 - Gaussian (disconnected) term plus connected non-Gaussian (trispectrum) term plus super-sample covariance. The super-sample term is the response of the power spectrum to a background density mode larger than the survey; it "dominates the covariance of power spectrum estimators for modes much smaller than the survey" for a wide range of volumes (Takada & Hu 2013, arXiv:1302.6994) [src].
 - RascalC (Philcox et al. 2019, arXiv:1904.11070): configuration-space two-point covariance for arbitrary geometry, with non-Gaussianity approximated by a rescaling of the shot noise calibrated on the jackknife of the data; finely binned matrices in fewer than 100 CPU-hours [src]. It is the fiducial covariance of the DESI 2024 BAO analysis (Forero-Sánchez et al. 2024, arXiv:2411.12027) [src].
@@ -60,11 +65,13 @@ Requirements on the number of mocks (Taylor, Joachimi & Kitching 2013, arXiv:121
 - 2026 work: analytic Gaussian covariance of the cosmic-shear correlation function (Nagura et al. 2026, arXiv:2605.16186); the linear-construction covariance for Euclid cluster clustering, up to 20 times faster than the sample covariance (Lindholm et al. 2026, arXiv:2603.10735) [src, abstracts].
 
 ### 2.4 Shrinkage and denoising
+<!-- key: shrinkage-and-denoising -->
 
 - Linear shrinkage combines the empirical covariance with a model target to minimise the mean squared error (Pope & Szapudi 2008, arXiv:0711.2509) [src].
 - Non-linear shrinkage (NERCOME) and the Rotational Invariant Estimator were benchmarked for clustering in Farina et al. 2026 (arXiv:2604.13851): both reduce the stochastic shifts of the best fit due to the Dodelson–Schneider effect, but the uncertainties they return are probe-dependent; in configuration space both can give constraints that are too tight, with a bias growing with the data-vector size [src].
 
 ## 3. Data compression
+<!-- key: data-compression -->
 
 Compression reduces the data vector before the likelihood is evaluated. It matters for two reasons: the mock-count corrections of §2 scale with the length of the data vector, and density estimators in simulation-based inference work in low dimension.
 
@@ -80,6 +87,7 @@ Compression reduces the data vector before the likelihood is evaluated. It matte
 Costs and cautions. (i) Compression is optimal at the fiducial point only; far from it information is lost, never invented, so the result is conservative but can be biased if the fiducial model is poor: iterate. (ii) The compression needs a covariance and derivatives; if the covariance is noisy, the compressed statistic is noisy but the number of mocks needed scales with the compressed dimension (Percival et al. 2022, arXiv:2108.10402, have an appendix on compressing the data in this context). (iii) Compressed data hide model misfit: a goodness-of-fit test on `n` numbers for `n` parameters has no degrees of freedom left; keep a test on the uncompressed vector. (iv) A physical compression carries its model: a compressed CMB prior excludes lensing and late-time information by construction, which is why DESI + compressed CMB gives 2.4σ where DESI + full CMB gives 3.1σ for w0wa (arXiv:2503.14738) [src]. (v) Finite compression can degrade an explicit-likelihood analysis while leaving a learned likelihood nearly unaffected (arXiv:2607.17942) [src].
 
 ## 4. Blinding strategies
+<!-- key: blinding-strategies -->
 
 The purpose of blinding is "to hide an experiment's critical results ... until all decisions affecting its analysis have been finalised" (Muir et al. 2020, arXiv:1911.05929) [src]. The schemes differ by the level at which the data are altered.
 
@@ -98,8 +106,10 @@ DESI validated its scheme "on mocks, as well as on data by applying a second bli
 What a blinding scheme must satisfy, as stated across these papers: the shift is large compared with the statistical error; null and consistency tests keep their power on blinded data; the analysis pipeline behaves the same on blinded and unblinded data; accidental unblinding is hard; and the list of tests to pass before unblinding is written in advance.
 
 ## 5. Samplers and convergence
+<!-- key: samplers-and-convergence -->
 
 ### 5.1 The families
+<!-- key: the-families -->
 
 | Family | Principle | Gives the evidence | Needs gradients | Reference and cosmology use |
 |---|---|---|---|---|
@@ -110,20 +120,24 @@ What a blinding scheme must satisfy, as stated across these papers: the shift is
 | GPU nested sampling with neural emulators | vectorised likelihood on a GPU | yes | no | Lovick et al. 2025 (arXiv:2509.13307): Bayes factors for a 39-dimensional ΛCDM against w0wa shear analysis "in just 2 days on a single A100 GPU" [src]. |
 
 ### 5.2 Convergence criteria actually used
+<!-- key: convergence-criteria-actually-used -->
 
 - DESI DR2 (arXiv:2503.14738, §5) [src]: Metropolis–Hastings in Cobaya with CAMB; convergence when the Gelman–Rubin statistic satisfies `R − 1 < 0.01`, "or that the chains have an effective sample size of ≳ 10^3, whichever is longer"; summaries with `getdist`; mean and standard deviation for symmetric posteriors, the 68% minimal credible interval otherwise; limits at 68% except Σm_ν at 95%; best fit with `iminuit` started from the MAP of each chain.
 - The classical `R̂` has known flaws: it "will fail to correctly diagnose convergence failures when the chain has a heavy tail or when the variance varies across the chains"; the rank-normalised, folded `R̂` with quantile-based efficiency measures and rank plots is the recommended replacement (Vehtari et al. 2021, arXiv:1903.08008) [src].
 - For nested sampling the controls are the number of live points, the stopping tolerance and, in PolyChord, the number of slice-sampling repeats; arXiv:2202.08233 recommends separate settings for test runs and final chains.
 
 ### 5.3 What the comparisons found
+<!-- key: what-the-comparisons-found -->
 
 Lemos et al. 2023 (arXiv:2202.08233), with the full DES Y1 likelihood and a fast approximate one [src]: MultiNest "reports inconsistent estimates of the Bayesian evidence and somewhat narrower parameter credible intervals" than PolyChord; PolyChord agrees with Metropolis–Hastings; PolyChord "provides a good balance of speed and robustness". The DES Y3 + KiDS-1000 joint analysis lists samplers among the analysis choices it had to reconcile (arXiv:2305.17173).
 
 Finding the best fit is a separate problem from sampling. The MAP of a chain is a noisy estimate in 20 or more dimensions; DESI polishes it with `iminuit` (arXiv:2503.14738), the profile-likelihood codes use simulated annealing (arXiv:2401.14225).
 
 ## 6. Priors and projection effects
+<!-- key: priors-and-projection-effects -->
 
 ### 6.1 What a projection effect is
+<!-- key: what-a-projection-effect-is -->
 
 For parameters of interest `θ` and nuisance parameters `ν`, the marginal posterior is `P(θ) ∝ ∫ L(θ, ν) π(θ, ν) dν`, while the profile likelihood is `L_p(θ) = max_ν L(θ, ν)`. In the Laplace approximation around the conditional maximum `ν̂(θ)`,
 
@@ -134,6 +148,7 @@ where `H_νν` is the Hessian of `−ln(L π)` in the nuisance directions `[der:
 Synonyms in the literature: projection effect, prior-volume effect, marginalisation bias, volume effect.
 
 ### 6.2 Where it appears
+<!-- key: where-it-appears -->
 
 | Setting | Mechanism | Reference |
 |---|---|---|
@@ -144,6 +159,7 @@ Synonyms in the literature: projection effect, prior-volume effect, marginalisat
 | Cosmic shear, S8 | Skewed marginal and projection in a high-dimensional space; the marginal mean lies below the MAP | Joachimi et al. 2021, arXiv:2007.01844; DES & KiDS 2023, arXiv:2305.17173 |
 
 ### 6.3 Diagnostics and mitigations in use
+<!-- key: diagnostics-and-mitigations-in-use -->
 
 - Report the MAP (or best fit) next to the marginal mean and interval. KiDS-1000 proposed an alternative point estimate and credible interval because the standard S8 estimate from the marginal "is easily misinterpreted to be biased low" (arXiv:2007.01844) [src].
 - Fit a noiseless synthetic data vector at a known cosmology with the full pipeline and priors; the offset of the marginal from the input is the projection effect of that setup.
@@ -157,14 +173,17 @@ Synonyms in the literature: projection effect, prior-volume effect, marginalisat
 The Jeffreys prior is `π(θ) ∝ sqrt(det F(θ))` with `F` the Fisher matrix; it is invariant under reparameterisation, which is why it removes the volume factor that a flat prior in an arbitrary parameterisation introduces (textbook definition; its use for EFT coefficients is in arXiv:2607.02498).
 
 ## 7. Profile likelihoods and frequentist intervals
+<!-- key: profile-likelihoods-and-frequentist-intervals -->
 
 ### 7.1 Construction
+<!-- key: construction -->
 
 The profile likelihood of a parameter `θ` is `L_p(θ) = max_ν L(θ, ν)`, with all other parameters re-optimised at each fixed `θ`. The "graphical" interval is read from `Δχ²(θ) = −2 ln[L_p(θ)/L_max]`: `Δχ² = 1` for 68.3% and `3.84` for 95% in one dimension. This reading rests on Wilks' theorem, that is on the asymptotic limit of a large data set, a Gaussian estimator and a true value away from any boundary (Herold, Ferreira & Heinrich 2024, arXiv:2408.07700). It contains no prior and is invariant under reparameterisation.
 
 Feldman & Cousins 1998 (arXiv:physics/9711021) give a confidence-belt construction that unifies upper limits and two-sided intervals, avoids unphysical intervals for a Gaussian measurement with a bounded physical region, and removes the loss of coverage that occurs when the choice between a limit and an interval is made after seeing the data [src]. In cosmology it is the standard tool for the neutrino mass, where the best fit sits at or beyond `Σm_ν = 0`.
 
 ### 7.2 When the graphical construction can be trusted
+<!-- key: when-the-graphical-construction-can-be-trusted -->
 
 Herold et al. 2024 (arXiv:2408.07700) tested the assumptions with Planck 2018 `Plik_lite` data [src]:
 
@@ -177,6 +196,7 @@ Herold et al. 2024 (arXiv:2408.07700) tested the assumptions with Planck 2018 `P
 Barua et al. 2025 (arXiv:2508.10633) compare Wilks-based intervals, likelihood integration and Feldman–Cousins on non-Gaussian problems: agreement within 10% near the Gaussian regime, larger discrepancies outside it, and intervals that are too narrow when parameters are held fixed in the mock fits of the Feldman–Cousins construction [src].
 
 ### 7.3 Use in cosmology
+<!-- key: use-in-cosmology -->
 
 - Planck intermediate results XVI (arXiv:1311.1657): profile likelihoods of the 2013 likelihood with Minuit; "excellent" agreement with the Bayesian results in ΛCDM; for the neutrino mass the profile of the CMB-only combination has its minimum "well within the unphysical negative-mass region", regularised by adding CMB lensing [src].
 - Early dark energy: the profile likelihood removed the volume effect of the MCMC analysis (arXiv:2112.12140; Herold & Ferreira 2023, arXiv:2210.16296).
@@ -187,12 +207,15 @@ Barua et al. 2025 (arXiv:2508.10633) compare Wilks-based intervals, likelihood i
 Caveat stated by the practitioners themselves: the profile likelihood of BOSS "prefers extreme values of the EFT parameters" (arXiv:2309.04468) [src]. A best fit can sit where the nuisance parameters are unphysical; the prior that causes the projection effect is also what excludes that region.
 
 ### 7.4 Codes
+<!-- key: codes -->
 
 PROSPECT (Holm et al. 2023, arXiv:2312.02972; works with cobaya and MontePython), Procoli (Karwal et al. 2024, arXiv:2401.14225; simulated annealing, MontePython and CLASS), pinc (released with arXiv:2408.07700). The numerical difficulty is the optimiser: Boltzmann-code noise makes gradient minimisers unreliable, which is why simulated annealing and many restarts are used.
 
 ## 8. Model comparison
+<!-- key: model-comparison -->
 
 ### 8.1 The statistics in use
+<!-- key: the-statistics-in-use -->
 
 | Statistic | Definition (textbook) | Depends on the prior | In-sample | Typical use |
 |---|---|---|---|---|
@@ -208,6 +231,7 @@ PROSPECT (Holm et al. 2023, arXiv:2312.02972; works with cobaya and MontePython)
 The reference review for the Bayesian side is Trotta 2008 (arXiv:0803.4089), which covers the evidence, the effective model complexity and their computation.
 
 ### 8.2 The conversion DESI uses
+<!-- key: the-conversion-desi-uses -->
 
 DESI DR2 (DESI Collaboration 2025, arXiv:2503.14738) finds the best fit with `iminuit` started from the MAP of each chain, defines `Δχ²_MAP` as "twice the difference in the negative log posteriors at the maximum posterior points for each model", and converts it to "the corresponding (frequentist) significance levels given 2 extra free parameters" [src]. The conversion is `p = exp(−Δχ²/2)` for two degrees of freedom, then the two-sided Gaussian equivalent `[der]`; it reproduces the published column (`Δχ² = −12.5` gives 3.10σ, `−21.0` gives 4.19σ; full table in `results.md` §4).
 
@@ -224,12 +248,14 @@ Thresholds `[der, from the χ² survival function]`:
 Conditions for the conversion to hold: nested models, the simpler model in the interior of the larger one's parameter space, Gaussian asymptotics, no parameter that becomes unidentified under the null. `sqrt(Δχ²)` is the significance only for one extra parameter; applying it to w0wa would turn 3.1σ into 3.5σ `[der]`.
 
 ### 8.3 Why evidence and Δχ² can disagree
+<!-- key: why-evidence-and-chi2-can-disagree -->
 
 For a nested model with extra parameters whose prior width is much larger than the posterior width, the Bayes factor carries an Ockham factor of order (posterior width)/(prior width) per extra parameter. A `Δχ²` significance has no such factor. With the same data the two can therefore differ in sign: this is the Lindley paradox, and it is the situation of w0wa in 2025–2026 (`results.md` §4). Efstathiou 2008 (arXiv:0802.3185) made the argument with dark energy as the example: the evidence rests on "subjective judgements concerning the choice of model and priors", and for nested problems "Bayesian parameter estimation can be more informative than computing Bayesian Evidence for poorly motivated physical models" [src].
 
 The Jeffreys scale as used by DES for `log R`: above 2.3 strong, 1.2 to 2.3 substantial, −1.2 to 1.2 inconclusive, and symmetrically for tension (Lemos et al. 2021, arXiv:2012.09554, table 1) [src]. The same paper notes that "the boundaries in Jeffreys' scale are arbitrary, and they lack obvious interpretation as a statistical significance". DESI's rule of thumb for the information criterion: `Δ(DIC) < −5` "strong", `< −10` "decisive" (arXiv:2503.14738) [src].
 
 ## 9. Tension metrics
+<!-- key: tension-metrics -->
 
 Tension metrics answer one of two questions (Lemos et al. 2021, arXiv:2012.09554) [src]. Evidence-based methods ask whether the model can generate the data of both experiments with one set of parameters. Parameter-space methods ask how significant the difference between the two posteriors is, in the parameters both experiments constrain. All formulae below were read in §4 of that paper.
 
@@ -251,6 +277,7 @@ Codes: `tensiometer` (parameter differences, `Q_UDM`), `anesthetic` (suspiciousn
 Three rules. (i) A tension in one projected parameter and a tension in the full shared parameter space are different numbers, and the second can be smaller: DES Y6 3×2pt against the CMB is 2.6σ projected on S8 and 1.8σ in the full space (DES Collaboration 2026, arXiv:2601.14559) [src]. (ii) Metrics that assume independent data (`R`, `S`, parameter differences as a convolution) cannot be applied to correlated data sets; use the update form or a posterior predictive test. (iii) The metric and the reference data set are part of the result: a "2σ tension" without both is not reproducible.
 
 ## 10. Fisher forecasts
+<!-- key: fisher-forecasts -->
 
 The Fisher information matrix is `F_αβ = E[(∂ ln L/∂θ_α)(∂ ln L/∂θ_β)]`; by the Cramér–Rao theorem its inverse is a lower bound on the covariance of unbiased estimators (as recalled in arXiv:2108.10402) [src]. For Gaussian data with mean `μ(θ)` and covariance `C`,
 
@@ -271,6 +298,7 @@ Where it fails, with the documented sizes:
 Legitimate uses: survey design and relative comparisons, the choice of compression (§3), identification of well-measured modes before unblinding (the Karhunen–Loève modes of the tension metrics, §9), and fast marginalisation over linear nuisance parameters. A Fisher bias formula (first-order shift of the best fit from a systematic in the data vector) is the standard tool for setting requirements; it shares all the assumptions above.
 
 ## 11. Emulators
+<!-- key: emulators -->
 
 An emulator is a fast surrogate for an expensive theory prediction, trained on a design of exact evaluations. Two kinds must be kept apart.
 
@@ -286,8 +314,10 @@ Three ways to propagate it: add an emulator covariance to the data covariance; m
 Differentiable emulators make gradient-based samplers and Fisher matrices by automatic differentiation available (§5, §10). Probe-specific emulators and their error budgets are in the probe skills: Lyα flux statistics in `cosmo-lyman-alpha`, small-scale clustering in `cosmo-galaxy-clustering` and `cosmo-beyond-two-point`, baryonic feedback in `cosmo-weak-lensing`.
 
 ## 12. Simulation-based inference
+<!-- key: simulation-based-inference -->
 
 ### 12.1 What is learned
+<!-- key: what-is-learned -->
 
 Simulation-based inference (also called likelihood-free or implicit inference) replaces the analytic likelihood by a density learned from pairs (θ, d) drawn from the prior and the simulator. Three targets are in use: the likelihood `p(d given θ)` (neural likelihood estimation, then sampled with an ordinary sampler), the posterior `p(θ given d)` (neural posterior estimation, amortised over data), and the likelihood-to-evidence ratio (neural ratio estimation). The data are first compressed to a few summaries, by score compression (§3), a neural network, or hand-built statistics.
 
@@ -296,6 +326,7 @@ Reference for cosmology: Alsing et al. 2019 (arXiv:1903.00007), density-estimati
 What the simulator must contain is everything the likelihood would have contained: the signal model, noise, mask, selection, and every systematic with its prior. KiDS-SBI (von Wietersheim-Kramsta et al. 2024, arXiv:2404.15402) forward-models galaxy positions and shapes with shear and redshift calibration uncertainties, variable depth and point-spread-function anisotropy, on 18 000 realisations, with sequential neural likelihood estimation [src].
 
 ### 12.2 Validation tests
+<!-- key: validation-tests -->
 
 | Test | What it checks | Limitation | Reference |
 |---|---|---|---|
@@ -306,6 +337,7 @@ What the simulator must contain is everything the likelihood would have containe
 | Goodness of fit, out-of-distribution test | whether the observed summaries lie inside the support of the simulated ones | does not validate the posterior shape | arXiv:2404.15402 (a probability-to-exceed for the forward model) |
 
 ### 12.3 Known limits
+<!-- key: known-limits -->
 
 - Overconfidence. Hermans et al. 2022 (arXiv:2110.06581): all benchmarked algorithms (neural posterior, ratio and likelihood estimation, sequential variants, approximate Bayesian computation) "can yield overconfident posterior approximations"; ensembles of surrogates mitigate the issue [src].
 - Finite simulation budget. Homer, Friedrich & Gruen 2024 (arXiv:2412.02311): on a Gaussian linear model, simulation-based inference "suffers an inflation of posterior variance that is equal or greater than the analytical result in covariance estimation for Gaussian likelihoods for the same number of simulations"; "the assumption that SBI requires a smaller number of simulations than covariance estimation for a Gaussian likelihood analysis is inaccurate" [src].
@@ -314,10 +346,12 @@ What the simulator must contain is everything the likelihood would have containe
 - Prior edges. Training simulations drawn in a hard-edged uniform box give a density estimator that is least accurate near the boundary, which is where an upper or lower limit is read (the simulation suites and their boxes are in `cosmo-simulations-mocks`).
 
 ### 12.4 Explicit and implicit likelihoods are not rivals
+<!-- key: explicit-and-implicit-likelihoods-are-not-rivals -->
 
 Vinciguerra, Martinet & Gatti 2026 (arXiv:2607.17942) compare a Gaussian likelihood built from an emulator and a covariance with a learned likelihood on Euclid-like Gaussian mocks: the explicit route "becomes strongly miscalibrated under emulation inaccuracies or likelihood non-Gaussianity", the learned one stays calibrated, and the disagreement "largely vanishes once addressed" [src]. The calibration diagnostics developed for simulation-based inference apply equally to a classical likelihood pipeline, and few classical pipelines have been subjected to them.
 
 ## 13. Combining probes and correlated datasets
+<!-- key: combining-probes-and-correlated-datasets -->
 
 For independent data sets the joint likelihood is the product of the likelihoods. The work is in establishing independence, or in building the cross-covariance when it fails.
 
@@ -339,6 +373,7 @@ Technical routes for combining posteriors without re-running everything: importa
 Nuisance parameters when surveys are combined: common parameters (intrinsic alignments, baryonic feedback) should be shared only if the samples are comparable; the DES Y3 + KiDS-1000 analysis had to reconcile intrinsic-alignment models, baryon mitigation, priors, samplers and non-linear power-spectrum models before combining (arXiv:2305.17173) [src].
 
 ## 14. Look-elsewhere effect
+<!-- key: look-elsewhere-effect -->
 
 When a signal is searched for over a range (a mass, a scale, a frequency, a redshift bin, a set of models or data cuts), the probability of a fluctuation of given local significance somewhere in the range exceeds the local p-value. The trial factor is "the ratio between the probability of observing the excess at some fixed mass point, to the probability of observing it anywhere in the range" (Gross & Vitells 2010, arXiv:1005.1891) [src].
 
@@ -349,6 +384,7 @@ When a signal is searched for over a range (a mass, a scale, a frequency, a reds
 In cosmology the effect rarely appears as a scan over one parameter; it appears as analysis freedom. Typical forms: an oscillation frequency or feature scale in the primordial spectrum (`cosmo-inflation-primordial`); the choice of one redshift bin, one tracer or one multipole range as "the" anomaly (CMB large-angle anomalies, `cosmo-tensions-anomalies`); the choice among several external data sets (three supernova compilations giving 2.8σ, 3.8σ and 4.2σ with the same BAO and CMB, arXiv:2503.14738); the choice of parameterisation of `w(z)`; the choice of projection for a tension (§9); the choice of statistic after seeing which one shows a signal. The honest global significance requires either pre-registration (blinding with frozen choices) or a simulation of the whole search under the null.
 
 ## 15. Public codes
+<!-- key: public-codes -->
 
 Only codes whose reference paper, or a paper naming them, was read this session. The wider ecosystem (CosmoSIS, MontePython, CAMB, CLASS, Firecrown) is in `cosmo-software-ecosystem`.
 
@@ -370,6 +406,7 @@ Only codes whose reference paper, or a paper naming them, was read this session.
 | `getdist` | chain summaries and plots | named in arXiv:2503.14738 | most analyses |
 
 ## Not verified
+<!-- key: not-verified -->
 
 - The constant `A` in the Percival 2014 `m_1` factor, and the original Hartlap 2007 notation, were not transcribed from their papers; the Hartlap factor is quoted as written in arXiv:2108.10402.
 - The Friedrich & Eifler precision-matrix proposal is described only as summarised in arXiv:2108.10402.

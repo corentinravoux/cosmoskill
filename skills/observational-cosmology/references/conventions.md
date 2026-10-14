@@ -4,6 +4,7 @@ The most common real defect in a multi-topic cosmology manuscript is silent
 convention drift between chapters. Check these explicitly.
 
 ## Units and h-factors
+<!-- key: units-and-h-factors -->
 
 | Quantity | Common conventions | Trap |
 |---|---|---|
@@ -17,6 +18,7 @@ State the Fourier convention once, explicitly:
 P(k) defined via ⟨δ(k)δ*(k')⟩ = (2π)³ δ_D(k−k') P(k) is the usual LSS choice.
 
 ## Growth quantities
+<!-- key: growth-quantities -->
 
 - f = dlnD/dlna; growth index γ via f ≈ Ω_m(a)^γ.
 - **fσ₈** is what PV/RSD measure; σ₈ normalisation and effective redshift must
@@ -25,6 +27,7 @@ P(k) defined via ⟨δ(k)δ*(k')⟩ = (2π)³ δ_D(k−k') P(k) is the usual LSS
 - Growth-rate values quoted at different z_eff are not directly comparable.
 
 ## Redshift frames
+<!-- key: redshift-frames -->
 
 - Heliocentric vs CMB-frame redshift: matters at the 10⁻³ level — i.e. exactly
   the PV signal. State which is used and where the conversion happens.
@@ -33,6 +36,7 @@ P(k) defined via ⟨δ(k)δ*(k')⟩ = (2π)³ δ_D(k−k') P(k) is the usual LSS
   (1215.67 Å) — state whether vacuum or air wavelengths.
 
 ## Estimator definitions to pin down
+<!-- key: estimator-definitions-to-pin-down -->
 
 - **P1D**: FFT estimator vs optimal/quadratic estimator — different noise and
   resolution corrections; state which, and whether the two are cross-validated.
@@ -45,6 +49,7 @@ P(k) defined via ⟨δ(k)δ*(k')⟩ = (2π)³ δ_D(k−k') P(k) is the usual LSS
   and any Hartlap-type correction.
 
 ## Cosmology-dependence hygiene
+<!-- key: cosmology-dependence-hygiene -->
 
 State once, per analysis, the **fiducial cosmology** used for:
 - comoving distance conversion,
@@ -56,6 +61,7 @@ look for this; it is also the cleanest way to make a data-vs-model boundary
 visible.
 
 ## Acronym / naming consistency
+<!-- key: acronym-naming-consistency -->
 
 Lyman-α (not Lyman alpha / Ly-α mixed), ΛCDM, w₀wₐCDM, BAO, RSD, PV, TF/FP,
 DESI/eBOSS/SDSS-IV, ZTF, LSST (survey) vs Rubin (observatory) — pick one usage

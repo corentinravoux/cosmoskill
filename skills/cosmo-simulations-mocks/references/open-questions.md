@@ -4,8 +4,10 @@ Scope: live debates, internal tensions between suites, and stale claims with the
 Snapshot: 2026-10-07
 
 ## 1. Live debates
+<!-- key: live-debates -->
 
 ### 1.1 How strong is baryonic feedback, and which simulation variant is right?
+<!-- key: how-strong-is-baryonic-feedback-and-which -->
 
 **For strong feedback.**
 - DES Y3 lensing with ACT DR5 kSZ gives a mean feedback scenario more extreme than most hydrodynamical simulations (arXiv:2404.06098).
@@ -21,6 +23,7 @@ Snapshot: 2026-10-07
 **What it means for a reader.** "FLAMINGO" or "BAHAMAS" is not one prediction; the variant must be named. A cosmic-shear analysis that marginalises a baryon model with a simulation-based prior inherits the calibration data of that simulation. The lensing-side view of this debate, with the DES 6×2pt result that favours weak feedback, is in `cosmo-weak-lensing` and `cosmo-cmb-lss-cross-correlations`.
 
 ### 1.2 Is percent-level gravity-only accuracy still the bottleneck?
+<!-- key: is-percent-level-gravity-only-accuracy-still -->
 
 - Codes agree to 1% to k = 10 h/Mpc when tuned (arXiv:2112.09138, arXiv:2605.28581), and emulators reach 1% (arXiv:2010.11288).
 - The baryonic response at k = 1 h/Mpc is uncertain between 5% and 10% (arXiv:2512.02954).
@@ -28,12 +31,14 @@ Snapshot: 2026-10-07
 - The other: the gravity-only reference must stay well below the baryonic uncertainty so that the two do not become degenerate, and it still limits halo statistics (the halo mass function spread between resolutions was reduced to 1% only in 2026, arXiv:2605.28581).
 
 ### 1.3 Initial conditions: late 3LPT or early low order?
+<!-- key: initial-conditions-late-3lpt-or-early-low-order -->
 
 - The recommendation from controlled tests is to start late with 3LPT (arXiv:2008.09588), after 2LPT replaced Zel'dovich starts in 2006 (arXiv:astro-ph/0606505).
 - FLAMINGO follows it: multi-fluid 3LPT at z = 31, "as late as possible" (arXiv:2306.04024, section 2.4).
 - The Euclid Flagship 2 run started at z = 99 with 1LPT (arXiv:2405.13495, section 2.1). Its power-spectrum validation section was not read here; whether transients matter at its resolution and redshift range is a question to check in that paper, not to assume either way.
 
 ### 1.4 Is the HOD good enough for Stage-IV small-scale analyses?
+<!-- key: is-the-hod-good-enough-for-stage-iv-small-scale -->
 
 - The mass-only HOD fails by 15% against TNG300 (arXiv:1911.02610).
 - DESI treats the residual as a measured systematic: 0.19% on α_AP for BAO, a covariance term for the full shape, with shifts often above 20% of the statistical error (arXiv:2404.03008, arXiv:2411.12023).
@@ -41,18 +46,21 @@ Snapshot: 2026-10-07
 - Open: whether extended HODs span the space that hydrodynamical simulations and semi-analytic models occupy, and whether any hydrodynamical simulation is right about assembly bias.
 
 ### 1.5 Mock covariance or analytic covariance?
+<!-- key: mock-covariance-or-analytic-covariance -->
 
 - DESI DR1 answers differently for two statistics: analytic for the post-reconstruction correlation function, corrected mocks for the power spectrum (arXiv:2411.12027).
 - Approximate mocks reproduce parameter errors to 10% (arXiv:1806.09497), which is comparable with, or larger than, the finite-mock corrections.
 - Control-variate estimators that pair each mock with a Zel'dovich realisation were proposed in 2026 to cut the number of mocks needed (title and abstract read, outside the source list).
 
 ### 1.6 Is the local Universe underdense in the constrained simulations?
+<!-- key: is-the-local-universe-underdense-in-the -->
 
 - SIBELIUS-DARK finds a large-scale underdensity of about 5% within 200 Mpc and an unusually high number of very massive clusters (arXiv:2202.04099).
 - Manticore-Local finds no evidence for a large local underdensity (arXiv:2505.10682).
 - The two use different inference set-ups; neither abstract reconciles them. The question bears on local-void explanations of the Hubble tension, treated in `cosmo-distance-ladder-h0`.
 
 ### 1.7 How should a constrained simulation be validated?
+<!-- key: how-should-a-constrained-simulation-be-validated -->
 
 - Internal: posterior-predictive checks against ΛCDM statistics (arXiv:2505.10682, arXiv:2606.10020).
 - External: Bayesian evidence against direct distance tracers (arXiv:2502.00121); CMB lensing at 7.4σ and kSZ at 3.5σ (arXiv:2606.10020).
@@ -61,12 +69,14 @@ Snapshot: 2026-10-07
 - Open: velocity-based forward modelling claims to surpass the standard peculiar-velocity pipeline while stating that systematic biases remain (arXiv:2602.03699).
 
 ### 1.8 Which dynamics inside field-level inference?
+<!-- key: which-dynamics-inside-field-level-inference -->
 
 - LPT (arXiv:1203.3639), particle mesh (arXiv:1806.11117), COLA with posterior resimulation (arXiv:2304.09193), tiled sCOLA (arXiv:2003.04925), differentiable particle mesh with BullFrog steps (arXiv:2510.05206, arXiv:2409.19049), and neural field-level emulators (outside the source list) are all in use.
 - The trade is accuracy per gradient evaluation against memory; the adjoint formulation of DISCO-DJ removes the dependence of memory on the number of steps (arXiv:2510.05206).
 - Open: at what scale the choice of solver changes the inferred initial conditions rather than only the resimulated haloes.
 
 ### 1.9 Lyα simulations: which missing physics matters most?
+<!-- key: lyalpha-simulations-which-missing-physics -->
 
 - Candidates with quantified effects: AGN feedback (2% on σ_8, arXiv:2002.02822), patchy hydrogen and helium reionisation (arXiv:2207.13098, arXiv:2306.05471), the mean-flux degeneracy (arXiv:2412.05372), splicing (10%, arXiv:1406.6361), SPH density estimation (arXiv:2207.05023).
 - Emulators trained on suites with different physics give different amplitudes from the same data; the sibling `cosmo-lyman-alpha` records σ_8 = 0.733 and 0.841 from one eBOSS data vector.
@@ -74,18 +84,21 @@ Snapshot: 2026-10-07
 
 
 ### 1.10 Can a baryonified gravity-only run replace survey-volume hydrodynamics?
+<!-- key: can-a-baryonified-gravity-only-run-replace -->
 
 - For: the 2025 baryonification reproduces the P(k) suppression of FLAMINGO and TNG variants to 2% up to k = 5 h/Mpc, assigns gas pressure and temperature to particles, and compares well with a hydrodynamical run at map level by visual inspection (arXiv:2507.07892).
 - Against: the same paper states that further work is needed to quantify the accuracy at the level of observables; the method reproduces whatever profiles it is calibrated on and does not predict them.
 - The alternative is survey-volume hydrodynamics with on-the-fly light-cones: FLAMINGO at 2.8 Gpc and MillenniumTNG at 740 Mpc (arXiv:2306.04024, arXiv:2210.10060), at a cost that allows a dozen variants, not a parameter scan.
 
 ### 1.11 Are small-box training suites safe for machine-learning inference?
+<!-- key: are-small-box-training-suites-safe-for-machine -->
 
 - CAMELS spans cosmology and feedback with 25 Mpc/h boxes and two sub-grid families that give "significantly different" baryon fractions and baryonic effects on P(k); its authors read this as a need to marginalise over baryonic effects (arXiv:2010.00619).
 - Quijote spans seven parameters at fixed, coarse resolution (arXiv:1909.05273).
 - Open: whether a network trained on one sub-grid family is robust on another, and whether information measured on the matter field of such boxes survives in galaxies. The data-side evidence is in `cosmo-beyond-two-point`.
 
 ## 2. What the next data and simulations will decide
+<!-- key: what-the-next-data-and-simulations-will-decide -->
 
 - **Feedback strength.** DESI DR2 × ACT DR6 gas measurements are already in (arXiv:2609.22466); the resolution of the kSZ-versus-X-ray difference needs the next generation of simulations calibrated on eROSITA-era gas fractions, which the FLAMINGO and observational papers both call for (arXiv:2410.17109, arXiv:2509.10455).
 - **Stage-IV lensing.** A simulated LSST Year 1 analysis shows that multi-wavelength gas calibration can recover the small-scale power of cosmic shear (arXiv:2512.02954, **forecast**).
@@ -97,6 +110,7 @@ Snapshot: 2026-10-07
 
 
 ## 2b. Accuracy requirements for Stage-IV surveys, as stated in the sources
+<!-- key: accuracy-requirements-for-stage-iv-surveys-as -->
 
 These are the published statements against which a simulation is judged; they are requirements, not achievements.
 
@@ -114,6 +128,7 @@ These are the published statements against which a simulation is judged; they ar
 What is achieved against these: the gravity-only requirement is met by tuned codes and by one emulator; the baryonic part is not, by a wide margin (section 1.1); the Lyα requirement is met in boxes of about 100 Mpc/h and not in survey volumes; the Euclid mock meets its size requirement with a single realisation.
 
 ## 3. Misconceptions and stale claims
+<!-- key: misconceptions-and-stale-claims -->
 
 | Claim that circulates | What the sources say | Reference |
 |---|---|---|
@@ -140,6 +155,7 @@ What is achieved against these: the gravity-only requirement is met by tuned cod
 | "HalfDome resolves emission-line-galaxy hosts." | Minimum halo mass about 6 × 10¹² M_⊙/h; valid to k about 1 h/Mpc. | arXiv:2407.17462 |
 
 ## Not verified
+<!-- key: not-verified -->
 
 - The DES 6×2pt preference for weak feedback is quoted from the sibling skills, not from the paper.
 - Whether SIBELIUS-DARK and Manticore-Local start from related inferences: not read.

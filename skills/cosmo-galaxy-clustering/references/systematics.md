@@ -9,6 +9,7 @@ secondary source; `[der]` derived here. "σ_DR1" is the DESI DR1 statistical
 error on the parameter concerned.
 
 ## 0. Two budgets to keep apart
+<!-- key: two-budgets-to-keep-apart -->
 
 BAO and full shape have different systematics hierarchies. For the BAO scale
 the budget is quoted in per cent of α and is dominated by theory and the
@@ -56,6 +57,7 @@ A contribution counts as a systematic when it exceeds one fifth of the
 statistical error [src].
 
 ## 1. Non-linear evolution and BAO modelling
+<!-- key: non-linear-evolution-and-bao-modelling -->
 
 **Mechanism.** Mode coupling shifts and damps the acoustic feature; galaxy
 bias and RSD add anisotropic terms. Before reconstruction the shift of the
@@ -78,6 +80,7 @@ time: ±0.026 on D_H/r_d and ±0.12 on D_M/r_d [src] (DESI Collaboration 2025,
 arXiv:2503.14739).
 
 ## 2. Galaxy–halo connection
+<!-- key: galaxy-halo-connection -->
 
 **Mechanism.** The reconstruction and the template assume a bias model; the
 true small-scale occupation (satellite fraction, velocity bias, assembly
@@ -110,6 +113,7 @@ with the tidal field, baryon–dark-matter relative velocities, line-of-sight
 selection biases.
 
 ## 3. Fiducial cosmology
+<!-- key: fiducial-cosmology -->
 
 **Mechanism.** The catalogue is built with fiducial distances, the
 reconstruction with a fiducial growth rate and bias, and compressed analyses
@@ -131,6 +135,7 @@ cosmology is itself a w0wa cosmology; DESI added that test in DR2 and in the
 full-shape systematics paper.
 
 ## 4. Fibre assignment and fibre collisions
+<!-- key: fibre-assignment-and-fibre-collisions -->
 
 **Mechanism.** A fibre positioner cannot serve two close targets in one pass.
 In SDSS the limit is a 62″ collision radius [src] (Mohammad et al. 2020,
@@ -170,6 +175,7 @@ because of the large single-pass area and expected them to be usable for DR2
 [src] (arXiv:2411.12021).
 
 ## 5. Imaging systematics (target-density variations)
+<!-- key: imaging-systematics-target-density-variations -->
 
 **Mechanism.** Target density depends on depth, seeing, Galactic extinction
 and stellar density of the imaging used for selection. The spurious power is
@@ -209,6 +215,7 @@ simulated systematic trends impart no bias on BAO and have a minor effect on
 its uncertainty [src].
 
 ## 6. Spectroscopic systematics
+<!-- key: spectroscopic-systematics -->
 
 **Mechanism.** The redshift success rate varies with observing conditions and
 fibre; catastrophic redshifts displace a small fraction of objects radially;
@@ -236,6 +243,7 @@ of emission-line signal-to-noise (Euclid Collaboration: Monaco et al. 2025,
 arXiv:2511.20856).
 
 ## 7. Window, integral constraints and wide-angle terms
+<!-- key: window-integral-constraints-and-wide-angle-terms -->
 
 **Mechanism.** See `physics-and-methods.md` Sect. 2.3. Errors here act at
 low k: wrong normalisation, missing radial integral constraint when
@@ -255,6 +263,7 @@ model.
 decisive for f_NL.
 
 ## 8. Covariance
+<!-- key: covariance -->
 
 **Mechanism.** Approximate mocks miss part of the variance; a finite number
 of mocks biases the inverse covariance; analytic covariances miss
@@ -277,6 +286,7 @@ corrections (Hartlap et al. 2007, arXiv:astro-ph/0608064; Percival et al.
 al. 2024, arXiv:2411.12027); χ² distribution of mock fits.
 
 ## 9. Prior-volume (projection) effects
+<!-- key: prior-volume-projection-effects -->
 
 **Mechanism.** Marginalising over poorly constrained EFT parameters shifts
 the marginal posterior away from the best fit. It is a property of the
@@ -298,6 +308,7 @@ likelihoods alongside posteriors.
 priors; MAP shown with every marginal posterior.
 
 ## 10. Reconstruction choices
+<!-- key: reconstruction-choices -->
 
 Smoothing scale, RSD treatment, bias and growth-rate inputs, and algorithm.
 DESI finds the BAO constraints robust to all of them (Paillas et al. 2024,
@@ -305,6 +316,7 @@ arXiv:2404.03005) and carries no reconstruction term in its budget [src]
 (arXiv:2404.03000).
 
 ## 11. Cross-release and cross-survey correlations
+<!-- key: cross-release-and-cross-survey-correlations -->
 
 Overlapping samples are correlated. DESI estimates the correlation between
 power-spectrum estimates from overlapping samples with an effective-volume
@@ -315,6 +327,7 @@ ignored [src] (arXiv:2404.03002). Combining DR1 full shape with DR2 BAO
 requires a joint mock covariance (arXiv:2602.18761).
 
 ## 12. Confirmation bias
+<!-- key: confirmation-bias -->
 
 Mitigated by catalogue-level blinding (Andrade et al. 2024,
 arXiv:2404.07282); see `physics-and-methods.md` Sect. 5. A referee checks
@@ -323,6 +336,7 @@ after: DESI notes, for example, that its fibre-assignment BAO test was
 finalised after unblinding [src] (arXiv:2404.03000).
 
 ## 13. What a referee checks in a results section
+<!-- key: what-a-referee-checks-in-a-results-section -->
 
 1. Is the measurement stated as D/r_d (or α), with z_eff and its definition,
    and is the fiducial cosmology given?
@@ -350,6 +364,7 @@ finalised after unblinding [src] (arXiv:2404.03000).
     sample, which BBN prior.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - The DR2 tracer-specific HOD systematic values (stated to be in Sect. V B of
   arXiv:2503.14742; not read).

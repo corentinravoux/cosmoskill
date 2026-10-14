@@ -4,6 +4,7 @@ Scope: one table row per simulation suite or mock set — code, box, particle nu
 Snapshot: 2026-10-07
 
 ## 1. Gravity-only suites
+<!-- key: gravity-only-suites -->
 
 Units are those of the source: h⁻¹ where the paper uses it, none where it does not. "n/a" means the abstract read this session does not give the number; such cells are listed under "Not verified".
 
@@ -33,6 +34,7 @@ Units are those of the source: h⁻¹ where the paper uses it, none where it doe
 Reading the table: three kinds of suite exist and they are not interchangeable. Flagship runs (Outer Rim, Uchuu, Flagship 2, Frontier-E) give one cosmology at high resolution for survey mocks. Emulator grids (Aemulus, Mira-Titan, EuclidEmulator2, Dark Quest, the AbacusSummit grid) trade volume for coverage of parameter space. Ensemble suites (Quijote, the 1883 AbacusSummit small boxes) trade resolution for the number of realisations needed for covariances, Fisher derivatives and neural-network training.
 
 ## 2. Hydrodynamical suites (galaxy formation)
+<!-- key: hydrodynamical-suites-galaxy-formation -->
 
 | Suite | Code, solver | Box | Resolution | Variations | Calibrated to | Public | Reference, flag |
 |---|---|---|---|---|---|---|---|
@@ -51,6 +53,7 @@ Reading the table: three kinds of suite exist and they are not interchangeable. 
 CAMELS boxes are 25 Mpc/h: its own paper notes that the IllustrisTNG and SIMBA models give similar galaxy properties but significantly different halo baryon fractions and baryonic effects on P(k) [src] (arXiv:2010.00619). The FLAMINGO baryonic response is converged only for volumes above (200 Mpc)³ [src] (arXiv:2410.17109), so a P(k) suppression read from a CAMELS box carries a volume caveat.
 
 ## 3. Hydrodynamical suites for the Lyα forest
+<!-- key: hydrodynamical-suites-for-the-lyalpha-forest -->
 
 | Suite | Code | Box | Resolution | Parameter coverage | Used for | Reference, flag |
 |---|---|---|---|---|---|---|
@@ -69,6 +72,7 @@ The Lyssa cell size is 120 Mpc / 4096 = 29 kpc, about 20 kpc/h [der: from the bo
 Synthetic-spectrum sets for BAO (LyaCoLoRe, arXiv:1912.02763) are described in the methods file. The mock sets and counts used by the DESI Lyα BAO analyses are in `cosmo-lyman-alpha`; they were not re-read here.
 
 ## 4. Fast-mock sets used by surveys
+<!-- key: fast-mock-sets-used-by-surveys -->
 
 | Survey analysis | Mock set | Method | Count and volume | Calibrated on | Used for | Reference, flag |
 |---|---|---|---|---|---|---|
@@ -84,6 +88,7 @@ The Flagship 2 run started from 1LPT (Zel'dovich) initial conditions at z = 99, 
 DESI DR2 reference mocks built with subhalo abundance matching on Uchuu, the BOSS MultiDark-Patchy set, and the DES and Euclid covariance mocks are listed under "Not verified".
 
 ## 5. Constrained simulations of the local Universe
+<!-- key: constrained-simulations-of-the-local-universe -->
 
 | Project | Data constraining it | Inference method | Volume and resolution | Product | Headline statement | Reference, flag |
 |---|---|---|---|---|---|---|
@@ -99,6 +104,7 @@ DESI DR2 reference mocks built with subhalo abundance matching on Uchuu, the BOS
 Other projects whose abstracts were read this session but which lie outside the source list (cap reached): ELUCID (SDSS DR7 volume, 3072³ particles in 500 Mpc/h), HESTIA (Local Group zooms with magnetohydrodynamics in a 3–5 Mpc high-resolution region), SLOW (500 Mpc/h hydrodynamical run from Cosmicflows-2), the SIBELIUS Local Group study (more than 60,000 runs), a BORG-based Local Group inference, the BORG reconstruction of Quaia over (10 Gpc/h)³ at 39.1 Mpc/h, and CSiBORG-Manticore scored against Planck Compton-y maps. Their numbers are not used elsewhere in this skill.
 
 ## 6. Neutrino and modified-gravity suites
+<!-- key: neutrino-and-modified-gravity-suites -->
 
 | Suite or exercise | Content | Reference, flag |
 |---|---|---|
@@ -115,6 +121,7 @@ Other projects whose abstracts were read this session but which lie outside the 
 
 
 ## 7. Public access, status and what comes next
+<!-- key: public-access-status-and-what-comes-next -->
 
 **Where the data are, as stated in the papers read.**
 - AbacusSummit: public release with light-cones, particle subsamples and halo catalogues at 33 epochs (arXiv:2110.11398).
@@ -141,6 +148,7 @@ Other projects whose abstracts were read this session but which lie outside the 
 - The FLAMINGO authors call for a wider range of cosmology variations to confirm the weak cosmology dependence of the baryonic response (arXiv:2410.17109).
 
 ## Not verified
+<!-- key: not-verified -->
 
 - Codes of Millennium, Uchuu, Quijote, Aemulus, Dark Quest, BACCO, HalfDome, EAGLE, BAHAMAS, Sherwood and the EuclidEmulator2 training set: the abstracts do not name them and the paper bodies were not read.
 - Box sizes and particle numbers of Millennium, Dark Quest, Outer Rim (particle mass), Frontier-E, TNG50/TNG100/TNG300 (the 300 Mpc size of TNG300 is quoted in arXiv:1911.02610), EAGLE, BAHAMAS, ANTILLES, OWLS, Horizon-AGN, Sherwood-Relics, and the LaCE and ForestFlow training suites.

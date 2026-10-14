@@ -10,6 +10,7 @@ named; `[sec]` from a named secondary source; `[der]` derived here.
 Sample sizes are those of the cited analysis, not of the parent survey.
 
 ## 1. Past programmes (superseded as measurements, still cited)
+<!-- key: past-programmes-superseded-as-measurements -->
 
 | Programme | Instrument | Sample | Result | Citation | Flag |
 |---|---|---|---|---|---|
@@ -26,6 +27,7 @@ activity is reanalysis of the same six discs (arXiv:2609.17684,
 arXiv:2608.06247).
 
 ## 2. Geometric anchors (current)
+<!-- key: geometric-anchors-current -->
 
 | Anchor | Data | Size | Status | Citation | Flag |
 |---|---|---|---|---|---|
@@ -43,6 +45,7 @@ on 66 months of data; DR5, all mission data, not before the end of 2030.
 The parallaxes behind every H0 value in `results.md` are from EDR3 / DR3.
 
 ## 3. The Cepheid / TRGB / JAGB / Mira ladders (current)
+<!-- key: the-cepheid-trgb-jagb-mira-ladders-current -->
 
 | Programme | Telescope, filters | Sample | Anchors | Citation | Flag |
 |---|---|---|---|---|---|
@@ -67,6 +70,7 @@ Sample-size facts that decide arguments:
   alone give 74.1 `[src]` (arXiv:2504.08921).
 
 ## 4. Supernova samples for the third rung
+<!-- key: supernova-samples-for-the-third-rung -->
 
 | Sample | Size and range | Use | Citation | Flag |
 |---|---|---|---|---|
@@ -81,6 +85,7 @@ SN Ia photometric calibration, light-curve models and host corrections belong
 to `cosmo-supernovae`.
 
 ## 5. Routes without SN Ia
+<!-- key: routes-without-sn-ia -->
 
 | Data set | Size | Reach | Citation | Flag |
 |---|---|---|---|---|
@@ -99,6 +104,7 @@ H0, with a statistical error of 0.06 against a calibration systematic of 1.1
 `cosmo-peculiar-velocities`.
 
 ## 6. Lensing time delays
+<!-- key: lensing-time-delays -->
 
 | Sample | Content | Citation | Flag |
 |---|---|---|---|
@@ -116,6 +122,7 @@ announced as the next step `[src]` (arXiv:2608.27566); it had not appeared
 when this file was written.
 
 ## 7. Gravitational waves and chronometers (pointers)
+<!-- key: gravitational-waves-and-chronometers-pointers -->
 
 | Data | Content | Citation | Flag |
 |---|---|---|---|
@@ -129,6 +136,7 @@ GWTC-4.0 value as the latest collaboration result and check
 `cosmo-multimessenger`.
 
 ## 8. Early-Universe data
+<!-- key: early-universe-data -->
 
 | Data | Content | arXiv date | Citation | Flag |
 |---|---|---|---|---|
@@ -142,6 +150,7 @@ Survey descriptions and later releases are in `cosmo-cmb`,
 `cosmo-galaxy-clustering` and `cosmo-surveys-facilities`.
 
 ## 9. The community products
+<!-- key: the-community-products -->
 
 - **H0 Distance Network (H0DN).** A collaboration formed at an ISSI Bern
   workshop; members reviewed the data sets and voted indicators into a
@@ -157,6 +166,7 @@ Survey descriptions and later releases are in `cosmo-cmb`,
   community-wide programme.
 
 ## 10. What comes next
+<!-- key: what-comes-next -->
 
 | Item | Date or status | Expected effect | Source | Flag |
 |---|---|---|---|---|
@@ -176,6 +186,7 @@ covariance propagation and pre-specified selection criteria `[src]`
 (arXiv:2606.26831).
 
 ## Not verified
+<!-- key: not-verified -->
 
 - JWST and HST programme identifiers and cycle allocations of SH0ES, CCHP and
   the TRGB-SBF Project.

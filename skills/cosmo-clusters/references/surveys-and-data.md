@@ -4,6 +4,7 @@ Scope: cluster catalogues and the lensing data used to calibrate them, past, cur
 Snapshot: 2026-10-07
 
 ## eROSITA on SRG (X-ray, 0.2–2.3 keV detection band)
+<!-- key: erosita-on-srg-x-ray-0-2-2-3-kev-detection-band -->
 
 | Item | Value | Citation | Flag |
 |---|---|---|---|
@@ -20,6 +21,7 @@ Snapshot: 2026-10-07
 Status (2026-10): no cosmology from a deeper eROSITA stack was found in the date-sorted searches of this session; the 2025–2026 eROSITA cluster-cosmology papers found (for example arXiv:2609.07834) still use eRASS1.
 
 ## South Pole Telescope (SZ)
+<!-- key: south-pole-telescope-sz -->
 
 | Sample | Content | Citation | Flag |
 |---|---|---|---|
@@ -34,6 +36,7 @@ Status (2026-10): no cosmology from a deeper eROSITA stack was found in the date
 No cosmological analysis of the SPT-3G 5-year cluster counts was found as of 2026-10-07; the first cosmology-adjacent product is the clustering measurement of arXiv:2610.08947.
 
 ## Atacama Cosmology Telescope (SZ)
+<!-- key: atacama-cosmology-telescope-sz -->
 
 | Release | Content | Citation | Flag |
 |---|---|---|---|
@@ -44,6 +47,7 @@ No cosmological analysis of the SPT-3G 5-year cluster counts was found as of 202
 ACT observed from 2008 to 2022 [src, arXiv:2507.21459]; DR6 is the final cluster catalogue of the project in the sense that it uses "data obtained over the lifetime of the project".
 
 ## Planck (SZ, all sky)
+<!-- key: planck-sz-all-sky -->
 
 | Catalogue | Content | Citation | Flag |
 |---|---|---|---|
@@ -56,6 +60,7 @@ ACT observed from 2008 to 2022 [src, arXiv:2507.21459]; DR6 is the final cluster
 PSZ2 revealed "a population of low-redshift X-ray under-luminous clusters", almost absent from ROSAT-selected samples [src, arXiv:1502.01598]: the first large-scale evidence that X-ray and SZ selections do not pick the same population.
 
 ## Optical cluster catalogues
+<!-- key: optical-cluster-catalogues -->
 
 | Catalogue | Content | Citation | Flag |
 |---|---|---|---|
@@ -65,6 +70,7 @@ PSZ2 revealed "a population of low-redshift X-ray under-luminous clusters", almo
 | DES Y6 | model for clusters + 3×2pt validated on Cardinal mocks; no Y6 cluster cosmology found as of 2026-10-07 | To et al. 2025, arXiv:2503.13631 | [src] |
 
 ## KiDS, HSC, XXL, UNIONS, Euclid
+<!-- key: kids-hsc-xxl-unions-euclid -->
 
 | Catalogue | Content | Citation | Flag |
 |---|---|---|---|
@@ -78,6 +84,7 @@ PSZ2 revealed "a population of low-redshift X-ray under-luminous clusters", almo
 Euclid Q1 is a validation of the cluster workflow, not a cosmological sample. Euclid DR1 cluster cosmology is in preparation: the selection-bias correction framework (Euclid Collaboration 2026, arXiv:2605.02723), the lensing-mass accuracy study (Euclid Collaboration 2024, arXiv:2409.02783) and the counts + clustering systematics study (Fumagalli et al. 2025, arXiv:2510.13509) are the papers to cite for its methodology. For Euclid release dates see `cosmo-weak-lensing` and `cosmo-surveys-facilities`.
 
 ## X-ray samples before eROSITA
+<!-- key: x-ray-samples-before-erosita -->
 
 | Sample | Content | Citation | Flag |
 |---|---|---|---|
@@ -88,6 +95,7 @@ Euclid Q1 is a validation of the cluster workflow, not a cosmological sample. Eu
 | X-COP | 12 nearby clusters with XMM-Newton and Planck data | arXiv:1805.00034 | [src] |
 
 ## Lensing data sets used for mass calibration
+<!-- key: lensing-data-sets-used-for-mass-calibration -->
 
 | Lensing data | Calibrates | Size | Citation | Flag |
 |---|---|---|---|---|
@@ -110,6 +118,7 @@ Euclid Q1 is a validation of the cluster workflow, not a cosmological sample. Eu
 | SPT-3G CMB lensing | DES Y3 redMaPPer | 8865, 5391 and 4450 clusters in three samples | arXiv:2404.02153 | [src] |
 
 ## Simulations and mocks behind the calibrations
+<!-- key: simulations-and-mocks-behind-the-calibrations -->
 
 | Simulation | Used for | Citation | Flag |
 |---|---|---|---|
@@ -124,6 +133,7 @@ Euclid Q1 is a validation of the cluster workflow, not a cosmological sample. Eu
 | DESC DC2 and cosmoDC2 | blending in Rubin cluster lensing | arXiv:2609.12158 | [src] |
 
 ## Planned and upcoming
+<!-- key: planned-and-upcoming -->
 
 | Facility | What is known | Source | Flag |
 |---|---|---|---|
@@ -136,6 +146,7 @@ Euclid Q1 is a validation of the cluster workflow, not a cosmological sample. Eu
 | CMB-HD | **forecast** of three times the CMB-S4 cluster yield and ten times more clusters at z ≥ 2; a proposed experiment | arXiv:2107.10250 | [src] |
 
 ## Public data locations stated in the papers read
+<!-- key: public-data-locations-stated-in-the-papers-read -->
 
 - SPTpol 500d maps: SPT website and LAMBDA (arXiv:2311.07512).
 - ACT DR6 cluster candidate list, noise maps, masks and detection software: public with the catalogue paper (arXiv:2507.21459).
@@ -143,6 +154,7 @@ Euclid Q1 is a validation of the cluster workflow, not a cosmological sample. Eu
 - tSZ forecast products: GitHub, sriniraghunathan/tSZ_cluster_forecasts (arXiv:2107.10250).
 
 ## Not verified
+<!-- key: not-verified -->
 
 - Archive locations of the eRASS1, PSZ2, redMaPPer and AMICO catalogues: not read on the collaboration pages.
 - eROSITA data releases after eRASS1 and their dates.

@@ -7,6 +7,7 @@ Provenance flags as in the other files. Sizes are quoted from the cited abstract
 a section is named.
 
 ## 1. Peculiar velocity of the host (bright sirens)
+<!-- key: peculiar-velocity-of-the-host-bright-sirens -->
 
 **Mechanism.** At low redshift `c z_obs = H0 d + v_p`. The siren gives `d`; H0 needs
 the Hubble-flow part of the recession velocity, so `v_p` must be subtracted and its
@@ -72,6 +73,7 @@ spread; check the dependence on the fiducial cosmology used to build the reconst
 arXiv:2509.03101. Velocity-field methodology: `cosmo-peculiar-velocities`.
 
 ## 2. Inclination–distance degeneracy and electromagnetic viewing-angle priors
+<!-- key: inclination-distance-degeneracy-and -->
 
 **Mechanism.** The amplitude constrains a combination of `d_L` and `cos i`. External
 viewing-angle information removes most of the H0 error and replaces it by a model of
@@ -102,6 +104,7 @@ structures; re-sampling under each distance prior.
 arXiv:2605.11437.
 
 ## 3. Detector calibration and waveform systematics
+<!-- key: detector-calibration-and-waveform-systematics -->
 
 **Mechanism.** A strain-amplitude calibration error is a distance error of the same
 fractional size and is common to all events of a run. Waveform errors bias distance
@@ -129,6 +132,7 @@ from 43 to 62 between three models [src]).
 **Expected citations.** arXiv:2005.02531, arXiv:2204.03614.
 
 ## 4. Selection effects
+<!-- key: selection-effects -->
 
 **Mechanism.** Detection depends on `d_L`, masses and orientation; the population is
 defined in redshift and source-frame mass. The detectable fraction `ξ(Λ)` therefore
@@ -153,6 +157,7 @@ arXiv:2103.14663); probability–probability tests on injections.
 `cosmo-statistics-inference`.
 
 ## 5. Population (mass-spectrum) mis-specification
+<!-- key: population-mass-spectrum-mis-specification -->
 
 **Mechanism.** Without a counterpart the redshift information is `m_det / m_src`. Any
 error in the assumed source-frame spectrum, or any unmodelled change of that spectrum
@@ -190,6 +195,7 @@ arXiv:2609.12053), and on general-relativistic propagation (arXiv:2112.05728).
 arXiv:2202.08240.
 
 ## 6. Galaxy-catalogue completeness and host weighting
+<!-- key: galaxy-catalogue-completeness-and-host-weighting -->
 
 **Mechanism.** The catalogue is flux-limited. Beyond its completeness distance the
 redshift prior is the completion model, which carries no H0 information by itself and
@@ -225,6 +231,7 @@ randomised or rotated catalogue.
 arXiv:2310.08991.
 
 ## 7. Fast radio bursts: host and Milky Way dispersion, scatter, selection
+<!-- key: fast-radio-bursts-host-and-milky-way-dispersion -->
 
 **7.1 Host contribution.** Unknown per burst and broad: mean rest-frame 90 (+29/−19)
 pc cm⁻³ for FLIMFLAM, median 186 (+59/−48) pc cm⁻³ in the ASKAP analysis
@@ -269,6 +276,7 @@ unlocalised bursts added through a selection model.
 arXiv:2507.07090.
 
 ## 8. Lensed transients: lens model, microlensing, mass sheet (pointer)
+<!-- key: lensed-transients-lens-model-microlensing-mass -->
 
 - **Lens-model spread.** Cluster-lensed supernovae use seven or eight independent mass
   models; "the range of admissible H0 values predicted across the lens models limits
@@ -288,6 +296,7 @@ arXiv:2507.07090.
 Details for lensed quasars and kinematics: `cosmo-distance-ladder-h0`.
 
 ## 9. What a referee checks
+<!-- key: what-a-referee-checks -->
 
 Bright siren:
 
@@ -326,6 +335,7 @@ Lensed transient:
     treatment, Ω_m assumption.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - The calibration uncertainty of the O4 data was not read; the numbers above are for O3.
 - Weak-lensing magnification of siren distances (named in arXiv:astro-ph/0504616 for

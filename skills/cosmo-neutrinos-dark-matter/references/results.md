@@ -7,8 +7,10 @@ Flags: `[src]` read in the cited paper this session; `[sec]` taken from a named 
 All Σm_ν upper limits are 95% credible or confidence limits unless stated. "CMB" in DESI papers means Planck PR3 low-ℓ (SimAll, Commander) + PR4 CamSpec high-ℓ + Planck PR4 and ACT DR6 lensing (arXiv:2503.14744).
 
 ## 1. Sum of neutrino masses
+<!-- key: sum-of-neutrino-masses -->
 
 ### 1.1 Laboratory anchors
+<!-- key: laboratory-anchors -->
 
 | Quantity | Value | Source | Flag |
 |---|---|---|---|
@@ -26,6 +28,7 @@ All Σm_ν upper limits are 95% credible or confidence limits unless stated. "CM
 The three laboratory observables are different combinations of the masses: oscillations give splittings, KATRIN an incoherent sum weighted by electron-flavour mixing, double beta decay a coherent sum that exists only for Majorana neutrinos. None of them is Σm_ν. The KATRIN best-fit m_ν² is itself negative; this is a statistical statement about an endpoint fit, unrelated to the cosmological "negative mass" discussed below.
 
 ### 1.2 Cosmological upper limits, ΛCDM + Σm_ν (prior Σm_ν > 0, three degenerate states)
+<!-- key: cosmological-upper-limits-lambdacdm-sigmamnu -->
 
 | Dataset | Σm_ν (95%) | Citation | Flag |
 |---|---|---|---|
@@ -54,6 +57,7 @@ The three laboratory observables are different combinations of the masses: oscil
 Reading rule: the spread 0.049–0.089 eV among the CMB + DESI rows of this table is driven by the Planck high-ℓ likelihood, the lensing data, the BAO release and the supernova sample, not by a change in sensitivity. The Bayesian limit is tighter than its own marginalised error would suggest because the posterior peaks at the prior edge (arXiv:2503.14744 §5).
 
 ### 1.3 Dependence on the dark-energy model (DESI DR2 BAO + CMB, arXiv:2503.14744 Table 2, all [src])
+<!-- key: dependence-on-the-dark-energy-model-desi-dr2 -->
 
 | Model | Data | Σm_ν (95%) |
 |---|---|---|
@@ -76,6 +80,7 @@ Independent analyses in extended dark-energy models:
 | Sign-switching Λ_sCDM, DESI DR2 BAO + CMB + DES-Dovekie SNe | Σm_ν,eff = 0.055 ± 0.050 eV (68%), against −0.075 (+0.039/−0.053) eV in ΛCDM for the same data; transition redshift z† > 2.4 (95%) | Kıbrıs et al. 2026, arXiv:2605.21456 | [src] |
 
 ### 1.4 Effective (signed) neutrino mass and the tension with oscillations
+<!-- key: effective-signed-neutrino-mass-and-the-tension -->
 
 | Analysis | Data | Result (68%) | Stated tension | Citation | Flag |
 |---|---|---|---|---|---|
@@ -87,6 +92,7 @@ Independent analyses in extended dark-energy models:
 | Range across dataset combinations and tension metrics | CMB + DESI DR1 + background probes | — | 2.5σ to 5σ | Jiang et al. 2024, arXiv:2407.18047 | [src] |
 
 ### 1.5 The optical-depth route
+<!-- key: the-optical-depth-route -->
 
 | Result | Value | Citation | Flag |
 |---|---|---|---|
@@ -102,6 +108,7 @@ Independent analyses in extended dark-energy models:
 The τ values measured from Planck large-scale polarisation, and the evidence from reionisation data, are held in `cosmo-cmb` and `cosmo-reionization-21cm`; the high-τ numbers above are what the neutrino sector would need, not measurements of τ.
 
 ### 1.6 Mass ordering from cosmology
+<!-- key: mass-ordering-from-cosmology -->
 
 | Statement | Value | Citation | Flag |
 |---|---|---|---|
@@ -116,8 +123,10 @@ The τ values measured from Planck large-scale polarisation, and the evidence fr
 The Bayes factors 10, 46.5 and > 460 use the same class of data. The difference is the prior on the masses and the data combination; see `open-questions.md` §1.4.
 
 ## 2. N_eff, light relics and BBN
+<!-- key: neff-light-relics-and-bbn -->
 
 ### 2.1 Standard-Model value
+<!-- key: standard-model-value -->
 
 | Statement | Value | Citation | Flag |
 |---|---|---|---|
@@ -127,6 +136,7 @@ The Bayes factors 10, 46.5 and > 460 use the same class of data. The difference 
 The reference value used by DESI, ACT and SPT is 3.044 (arXiv:2503.14744, arXiv:2506.20707). A text quoting 3.046 is using the pre-2020 value, which is the one in Planck 2018 [sec: `cosmo-cmb`]; this session did not fetch the paper in which 3.046 originates.
 
 ### 2.2 Measurements (ΛCDM + N_eff, 68% unless stated)
+<!-- key: measurements-lambdacdm-neff-68-unless-stated -->
 
 | Dataset | N_eff | Citation | Flag |
 |---|---|---|---|
@@ -150,6 +160,7 @@ The reference value used by DESI, ACT and SPT is 3.044 (arXiv:2503.14744, arXiv:
 Every CMB-only value is within 2σ of 3.044 (arXiv:2506.20707 [src]). CMB-only values sit below 3.044 and values with DESI BAO sit above it: BAO prefer larger H0 r_d and smaller Ω_m, which N_eff absorbs (arXiv:2503.14744 §4.2). `cosmo-cmb` warns that in ΛCDM + N_eff the CMB and BAO disagree at more than 3σ for some CMB combinations, so the combined number should not be quoted without that caveat.
 
 ### 2.3 BAO phase shift
+<!-- key: bao-phase-shift -->
 
 | Statement | Value | Citation | Flag |
 |---|---|---|---|
@@ -159,6 +170,7 @@ Every CMB-only value is within 2σ of 3.044 (arXiv:2506.20707 [src]). CMB-only v
 The phase shift is produced by free-streaming radiation travelling faster than the plasma sound speed and cannot be mimicked by other standard parameters for adiabatic initial conditions (Bashinsky & Seljak 2003, arXiv:astro-ph/0310198). It is the only N_eff signature in BAO that does not pass through the expansion rate; on its own it gives no useful N_eff constraint yet (arXiv:2503.14744).
 
 ### 2.4 BBN
+<!-- key: bbn -->
 
 | Quantity | Value | Citation | Flag |
 |---|---|---|---|
@@ -175,10 +187,12 @@ The phase shift is produced by free-streaming radiation travelling faster than t
 The BBN baryon density depends on the deuterium-burning rates: ab-initio theoretical rates favour lower Ω_b h², experimentally determined rates higher (arXiv:2401.15054). A "BBN prior" in a BAO analysis therefore names a code and a rate set, not a single number; `cosmo-distance-ladder-h0` holds the BAO + BBN H0 results.
 
 ## 3. Warm dark matter (thermal-relic mass, 95% lower limits unless stated)
+<!-- key: warm-dark-matter-thermal-relic-mass-95-lower -->
 
 All limits are for a thermal relic making up all of the dark matter. A limit on another candidate (sterile neutrino, non-thermal production) needs a model-specific translation of the cutoff scale and is not obtained by quoting the same number.
 
 ### 3.1 Lyman-α forest
+<!-- key: lyman-alpha-forest -->
 
 | Data | m_WDM | Thermal-history assumption, k_max | Citation | Flag |
 |---|---|---|---|---|
@@ -196,6 +210,7 @@ All limits are for a thermal relic making up all of the dark matter. A limit on 
 The range 1.9–5.7 keV matches what `cosmo-lyman-alpha` quotes; that skill holds the data and emulator side.
 
 ### 3.2 Milky Way satellites, strong lensing, stellar streams, and combinations
+<!-- key: milky-way-satellites-strong-lensing-stellar -->
 
 | Probe | m_WDM | Notes | Citation | Flag |
 |---|---|---|---|---|
@@ -212,6 +227,7 @@ The range 1.9–5.7 keV matches what `cosmo-lyman-alpha` quotes; that skill hold
 Two JWST lensing numbers circulate (5.6/6.4 keV and 6.5/7.4 keV). They come from the same survey: the first uses flux ratios only, the second adds the lensed arcs. Each has two values because the subhalo-abundance prior differs.
 
 ### 3.3 Sterile-neutrino dark matter and the 3.5 keV line
+<!-- key: sterile-neutrino-dark-matter-and-the-3-5-kev -->
 
 | Statement | Citation | Flag |
 |---|---|---|
@@ -221,8 +237,10 @@ Two JWST lensing numbers circulate (5.6/6.4 keV and 6.5/7.4 keV). They come from
 | Structure-formation side: the 7.1 keV sterile neutrino is ruled out for lepton asymmetries L6 > 10 | arXiv:2010.13802 | [src] |
 
 ## 4. Fuzzy / ultralight dark matter
+<!-- key: fuzzy-ultralight-dark-matter -->
 
 ### 4.1 All of the dark matter (lower limits on the boson mass)
+<!-- key: all-of-the-dark-matter-lower-limits-on-the -->
 
 | Probe | Limit | Citation | Flag |
 |---|---|---|---|
@@ -240,6 +258,7 @@ Two JWST lensing numbers circulate (5.6/6.4 keV and 6.5/7.4 keV). They come from
 The Lyα lower limits differ by an order of magnitude (1.9 × 10⁻²¹ to 2 × 10⁻²⁰ eV) across analyses of comparable high-redshift data; the 2026 paper marginalises over intergalactic-medium parameters with its own emulator and is the weakest of the three.
 
 ### 4.2 Sub-component (upper limits on the axion fraction or density)
+<!-- key: sub-component-upper-limits-on-the-axion -->
 
 | Mass range | Limit (95%) | Data | Citation | Flag |
 |---|---|---|---|---|
@@ -252,6 +271,7 @@ The Lyα lower limits differ by an order of magnitude (1.9 × 10⁻²¹ to 2 × 
 Hints that did not survive combination: BOSS alone preferred axions at 2.7σ for m = 10⁻²⁶ eV (arXiv:2301.08361); the DESI luminous red galaxy sample shows a mild preference at the same mass that vanishes with CMB data (arXiv:2607.11876); ACT lensing shows a 2.1σ preference at 10⁻²⁴·⁵ eV driven by a few data points (arXiv:2606.06410).
 
 ## 5. Interacting dark matter (95% upper limits)
+<!-- key: interacting-dark-matter-95-upper-limits -->
 
 | Interaction | Limit | Data | Citation | Flag |
 |---|---|---|---|---|
@@ -266,6 +286,7 @@ Hints that did not survive combination: BOSS alone preferred axions at 2.7σ for
 The CMB limits and the satellite limits on the same cross section differ by orders of magnitude because the satellites probe smaller scales (arXiv:1904.10000). Mapping a warm-dark-matter mass limit onto an interacting model through the half-mode scale overestimates the constraint for dark matter–neutrino scattering (arXiv:2607.15020).
 
 ## 6. Self-interacting dark matter (cross section per unit mass)
+<!-- key: self-interacting-dark-matter-cross-section-per -->
 
 | System, relative velocity | Result | Citation | Flag |
 |---|---|---|---|
@@ -282,6 +303,7 @@ The CMB limits and the satellite limits on the same cross section differ by orde
 Reading rule: a velocity-independent cross section of order 1 cm²/g, the value originally invoked for dwarf cores, is disfavoured by groups and clusters; a cross section that falls with velocity is not (arXiv:2006.12515). A self-interaction limit is meaningless without the velocity at which it applies. Reviews: Tulin & Yu 2017, arXiv:1705.02358; Adhikari et al. 2022, arXiv:2207.10638.
 
 ## 7. Decaying dark matter, dark radiation and neutrino interactions (status level)
+<!-- key: decaying-dark-matter-dark-radiation-and -->
 
 | Model | Result | Data | Citation | Flag |
 |---|---|---|---|---|
@@ -296,8 +318,10 @@ Reading rule: a velocity-independent cross section of order 1 cm²/g, the value 
 | Light sterile neutrino, fully thermalised | strongly disfavoured without a local H0 prior; partially populated (Dodelson–Widrow-like or cooler) cases remain viable | Planck + DESI DR2 BAO + SNe | Ladeira et al. 2026, arXiv:2606.21518 | [src] |
 
 ## 8. History of the key numbers
+<!-- key: history-of-the-key-numbers -->
 
 ### 8.1 Σm_ν upper limit, ΛCDM, 95%
+<!-- key: sigmamnu-upper-limit-lambdacdm-95 -->
 
 | Year | Data | Limit | Citation | Flag | Status |
 |---|---|---|---|---|---|
@@ -312,6 +336,7 @@ Reading rule: a velocity-independent cross section of order 1 cm²/g, the value 
 The limit fell by a factor of about two between 2018 and 2025 while the effective-mass posterior width stayed near 0.05 eV (σ = 0.053 eV, arXiv:2503.14744). The tightening is mostly a shift of the preferred value towards and below zero, not a gain in sensitivity. Forecasts made before the data anticipated about 0.02 eV precision for DESI with Planck (Font-Ribera et al. 2013, arXiv:1308.4164, **forecast**); the Bayesian σ = 0.020 eV matches that number only because the prior boundary truncates the posterior.
 
 ### 8.2 N_eff
+<!-- key: neff -->
 
 | Year | Data | Value | Citation | Flag |
 |---|---|---|---|---|
@@ -324,18 +349,22 @@ The limit fell by a factor of about two between 2018 and 2025 while the effectiv
 | 2026 | DESI DR1 Lyα P1D + CMB + BAO | 3.02 ± 0.10 | arXiv:2601.21432 abstract | [src] |
 
 ### 8.3 Thermal-relic warm dark matter mass, Lyα forest
+<!-- key: thermal-relic-warm-dark-matter-mass-lyalpha -->
 
 2005: 0.55 keV (arXiv:astro-ph/0501562) → 2013: 3.3 keV (arXiv:1306.2314) → 2017: 5.3 keV, or 3.5 keV with a non-smooth thermal history (arXiv:1702.01764) → 2019: 1.9 keV for the coldest allowed histories (arXiv:1912.09397) → 2022: 3.1 keV (arXiv:2209.14220) → 2023: 5.7 keV, or 4.1 keV at k_max < 0.1 s/km (arXiv:2309.04533). All [src]. The sequence is not monotonic: the lower values are deliberate relaxations of the thermal-history prior, not older data.
 
 ### 8.4 Thermal-relic warm dark matter mass, strong-lensing flux ratios
+<!-- key: thermal-relic-warm-dark-matter-mass-strong -->
 
 2019: 5.2 keV, 8 lenses (arXiv:1908.06983) → 2025: 5.6 or 6.4 keV, 31 lenses with JWST (arXiv:2511.07765) → 2025–2026: 6.5 or 7.4 keV, 28 quads with arcs (arXiv:2511.07513, arXiv:2606.05277). All [src]. The 2021 joint lensing + satellites value of 9.7 keV (arXiv:2101.07810) used the 2019 lensing posterior and has not been redone with the JWST sample in any paper found this session.
 
 ### 8.5 Self-interaction cross section on cluster scales
+<!-- key: self-interaction-cross-section-on-cluster-scales -->
 
 2007: < 1.25 cm²/g at 68%, Bullet Cluster (arXiv:0704.0261) → 2015: < 0.47 cm²/g, 72 mergers (arXiv:1503.07675) → 2020: < 0.35 cm²/g, relaxed clusters (arXiv:2006.12515) → 2020: < 0.13 cm²/g, cluster strong lensing (arXiv:2012.06611). All [src]. The methods differ (merger offsets, Jeans modelling, lensing profiles), so the sequence is not a single improving measurement.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - The origin of the older Standard-Model value N_eff = 3.046 was not fetched.
 - The first JUNO oscillation paper (59 days of data) was seen only through citing abstracts; its arXiv ID was not retrieved. The 207-day paper in §1.1 supersedes it.

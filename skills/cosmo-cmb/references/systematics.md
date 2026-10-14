@@ -11,6 +11,7 @@ secondary source; `[der]` derived here.
 ---
 
 ## 1. Temperature beams and window functions
+<!-- key: temperature-beams-and-window-functions -->
 
 **Mechanism.** The measured spectrum is the sky spectrum times B_ℓ². A
 fractional beam error δB/B maps into 2δB/B on C_ℓ and grows with ℓ, where it
@@ -27,6 +28,7 @@ arXiv:2503.14452, App. A).
 to relative beam errors; consistency of parameters across arrays.
 
 ## 2. Polarised beams and temperature-to-polarisation leakage
+<!-- key: polarised-beams-and-temperature-to-polarisation -->
 
 **Mechanism.** Differential beam shape between orthogonal detectors and
 optical cross-polarisation leak T into Q/U. Because TT is much larger than
@@ -76,6 +78,7 @@ it was in place before unblinding, and the shift in parameters with and
 without it.
 
 ## 3. Absolute calibration and polarisation efficiency
+<!-- key: absolute-calibration-and-polarisation-efficiency -->
 
 **Mechanism.** A calibration error rescales C_ℓ and is degenerate with
 A_s e^(−2τ). A polarisation-efficiency error rescales TE by one power and EE
@@ -92,6 +95,7 @@ and H₀ [src] (arXiv:2503.14452, Sect. VIII.1).
 calibration and Planck's τ. Only the shape parameters are independent.
 
 ## 4. Time-domain filtering, transfer functions, ground and atmosphere
+<!-- key: time-domain-filtering-transfer-functions-ground -->
 
 **Mechanism.** Ground experiments suppress atmospheric and ground-
 synchronous signal by filtering, which removes sky modes and couples
@@ -118,6 +122,7 @@ PTE (0.05%) was in the elevation test, judged acceptable given the number
 of tests [src] (arXiv:2503.14452).
 
 ## 5. Large-scale polarisation systematics and τ
+<!-- key: large-scale-polarisation-systematics-and-tau -->
 
 **Mechanism.** The reionisation bump lies at ℓ ≲ 20, where 1/f noise,
 far-sidelobe pickup, ADC non-linearity and Galactic foregrounds are all
@@ -154,6 +159,7 @@ that ACT, SPT and DESI+CMB results all inherit it; cite Sailer et al. 2025
 (arXiv:2504.16932) when discussing what a τ shift would do.
 
 ## 6. Extragalactic foregrounds in temperature
+<!-- key: extragalactic-foregrounds-in-temperature -->
 
 **Mechanism.** Above ℓ ≈ 2000 the TT spectrum is dominated by the CIB,
 radio sources, tSZ and kSZ, which are correlated with each other (tSZ–CIB)
@@ -181,6 +187,7 @@ frequency spectra to expose foreground mis-modelling and notes a trend in
 hypothesis [src] (arXiv:2506.20707).
 
 ## 7. Galactic foregrounds and B modes
+<!-- key: galactic-foregrounds-and-b-modes -->
 
 **Mechanism.** Polarised dust and synchrotron exceed the primordial B-mode
 signal everywhere on the sky at the levels now probed.
@@ -204,6 +211,7 @@ power in simulations [src] (Nakato et al. 2026, arXiv:2608.06343).
 Details of r analyses belong to `cosmo-inflation-primordial`.
 
 ## 8. Foregrounds in lensing reconstruction
+<!-- key: foregrounds-in-lensing-reconstruction -->
 
 **Mechanism.** tSZ, CIB and point sources are non-Gaussian and correlated
 with the lensing field; they bias the temperature quadratic estimator
@@ -229,6 +237,7 @@ systematic uncertainties" and marginalises a foreground bias template in
 its parameter fits [src] (Pan et al. 2023, arXiv:2308.11608).
 
 ## 9. Lensing-related modelling of the primary spectra
+<!-- key: lensing-related-modelling-of-the-primary-spectra -->
 
 - **Non-linear growth and baryons.** At ℓ ≳ 3000 the lensed spectra depend
   on C_L^κκ at scales affected by non-linear evolution and feedback.
@@ -254,6 +263,7 @@ its parameter fits [src] (Pan et al. 2023, arXiv:2308.11608).
   (arXiv:2503.14452).
 
 ## 10. Covariance accuracy
+<!-- key: covariance-accuracy -->
 
 Analytic pseudo-C_ℓ covariances are approximate on small or inhomogeneous
 footprints. Earlier fast approximations are good to about 5% on the SPT-3G
@@ -265,6 +275,7 @@ analyses use simulation covariances with a Hartlap correction (792
 simulations for ACT DR6) [src] (Qu et al. 2023, arXiv:2304.05202).
 
 ## 11. Theory-code accuracy
+<!-- key: theory-code-accuracy -->
 
 Default Boltzmann precision settings are not sufficient for DR6-class data
 (arXiv:2103.05582). ACT DR6 and SPT-3G D1 share the same increased
@@ -275,6 +286,7 @@ BBN table (3.044 versus 3.046) must be made consistent [src]
 (arXiv:2503.14454).
 
 ## 12. Correlated data and common inputs when combining experiments
+<!-- key: correlated-data-and-common-inputs-when -->
 
 - ACT and Planck overlap on the sky. P-ACT avoids double counting by
   cutting Planck at ℓ < 1000 (TT) and ℓ < 600 (TE, EE) instead of modelling
@@ -294,6 +306,7 @@ BBN table (3.044 versus 3.046) must be made consistent [src]
   arXiv:1608.02487).
 
 ## 13. Post-unblinding changes
+<!-- key: post-unblinding-changes -->
 
 Both 2025 ground analyses changed their pipelines after unblinding: ACT
 raised the polarisation ℓ_min (arXiv:2503.14452, App. B); SPT added two
@@ -303,6 +316,7 @@ independent tests. A reader should treat the documented change log as
 part of the result.
 
 ## 14. Polarisation angle
+<!-- key: polarisation-angle -->
 
 A global angle miscalibration rotates E into B and generates EB and TB. It
 is degenerate with cosmic birefringence unless the angle is calibrated
@@ -315,6 +329,7 @@ systematics in the ACT data prevent strong cosmological conclusions [src]
 ---
 
 ## What a referee checks in a CMB results section
+<!-- key: what-a-referee-checks-in-a-cmb-results-section -->
 
 1. Which Planck likelihood (Plik PR3, CamSpec PR3/PR4, HiLLiPoP PR4) and
    which low-ℓ EE likelihood or τ prior; whether Planck was truncated when
@@ -340,6 +355,7 @@ systematics in the ACT data prevent strong cosmological conclusions [src]
     sky, shared calibration and shared τ.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - The NPIPE low-ℓ polarisation transfer function and its handling in
   LoLLiPoP were not read this session.

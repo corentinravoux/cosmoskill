@@ -9,6 +9,7 @@ should be re-checked against arXiv/ADS before it enters a manuscript. Numbers
 without a source below were not verified and must not be quoted.
 
 ## CMB
+<!-- key: cmb -->
 
 - **SPT-3G D1** (Camphuis et al., arXiv:2506.20707): TT/TE/EE from 4% of sky,
   deepest maps used in a CMB TT/TE/EE analysis; most precise lensed EE
@@ -23,6 +24,7 @@ without a source below were not verified and must not be quoted.
 - ACT DR6: lensing at 43σ; DR6 extended-model constraints in arXiv:2503.14454.
 
 ## H₀
+<!-- key: h0 -->
 
 - SH0ES: **H₀ = 73.17 ± 0.86** (HST, four anchors, arXiv:2404.08038) and
   **73.18 ± 0.88** adding JWST Cepheids and TRGB calibrations
@@ -34,6 +36,7 @@ without a source below were not verified and must not be quoted.
   without naming both endpoints is the most common error in tension prose.
 
 ## Dark energy
+<!-- key: dark-energy -->
 
 - DESI DR2 BAO + CMB + SN prefer evolving dark energy over ΛCDM; phantom in the
   past, quintessence-like today (Quintom-B).
@@ -52,6 +55,7 @@ without a source below were not verified and must not be quoted.
   it — which is what makes the growth-side cross-check informative.
 
 ## Neutrino mass
+<!-- key: neutrino-mass -->
 
 - ΛCDM: **Σmν < 0.064 eV (95%)**, σ(Σmν) ≈ 0.020 eV (DESI DR2 + Planck).
 - Feldman–Cousins limit 0.053 eV **breaches the oscillation floor**; with an
@@ -63,6 +67,7 @@ without a source below were not verified and must not be quoted.
   also argues for dynamical dark energy.
 
 ## Growth, S₈, weak lensing
+<!-- key: growth-s8-weak-lensing -->
 
 - S₈ has moved up, but "converged" is too strong *(2026-10-08)*.
   KiDS-Legacy cosmic shear: 0.815 (+0.016/−0.021), 0.73σ from Planck
@@ -80,6 +85,7 @@ without a source below were not verified and must not be quoted.
 - Clusters: eROSITA eRASS1, 5259 clusters, S₈ = 0.86 ± 0.01; SPT 0.795 ± 0.029.
 
 ## Peculiar velocities
+<!-- key: peculiar-velocities -->
 
 - DESI DR1 PV field-level: **fσ₈ = 0.483 (+0.080/−0.043) stat ± 0.018 sys**,
   BGS + FP + TF, 415 523 redshifts, 76 616 PVs (arXiv:2512.03229); consistent
@@ -92,6 +98,7 @@ without a source below were not verified and must not be quoted.
   excess as established.
 
 ## Lyman-α forest
+<!-- key: lyman-alpha-forest -->
 
 - DESI DR2 Lyα BAO at **0.65%** (arXiv:2503.14739); AP from the full shape at
   **1%** at z_eff = 2.33, twice as tight as BAO from the same data, giving
@@ -105,12 +112,14 @@ without a source below were not verified and must not be quoted.
 - ACCEL² supplies the large-volume hydrodynamical calibration.
 
 ## Isotropy
+<!-- key: isotropy -->
 
 - CatWISE quasar number-count dipole: amplitude **2.7×** the kinematic
   expectation, 4.9–5.7σ (arXiv:2212.07733). Contested on ecliptic-latitude
   selection grounds (arXiv:2511.00822).
 
 ## Facility timeline (verified 2026-08)
+<!-- key: facility-timeline-verified-2026-08 -->
 
 | Facility | Status |
 |---|---|

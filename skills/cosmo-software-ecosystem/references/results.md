@@ -8,8 +8,10 @@ Flags: `[src]` read this session in the cited paper (abstract unless a section i
 Every accuracy below holds for the configuration its paper tested (model, scales, precision settings). None is a property of "the code" in general.
 
 ## 1. Boltzmann solvers: CAMB against CLASS, and the modified-gravity forks
+<!-- key: boltzmann-solvers-camb-against-class-and-the -->
 
 ### 1.1 Agreement between CAMB and CLASS
+<!-- key: agreement-between-camb-and-class -->
 
 | Statement | Value | Conditions | Citation | Flag |
 |---|---|---|---|---|
@@ -20,6 +22,7 @@ Every accuracy below holds for the configuration its paper tested (model, scales
 | Precision settings both codes need for Euclid forecasts | established, not a single number | weak lensing, photometric and spectroscopic clustering Fisher forecasts | Casas et al. 2023, arXiv:2303.09451 | [src] |
 
 ### 1.2 CAMB v2 default accuracy (arXiv:2607.14854)
+<!-- key: camb-v2-default-accuracy-arxiv-2607-14854 -->
 
 | Statement | Value | Conditions | Flag |
 |---|---|---|---|
@@ -32,6 +35,7 @@ Every accuracy below holds for the configuration its paper tested (model, scales
 | Effect of the CLASS CMB source cutoff | 2.2 × 10⁻³ in the TT, EE, TE envelope at ℓ = 4000 | CLASS default cutoff against the high-k cutoff | [src, section 11] |
 
 ### 1.3 Timings quoted in the CAMB v2 paper
+<!-- key: timings-quoted-in-the-camb-v2-paper -->
 
 Four threads on "a typical laptop"; flat case: Planck-2018 ΛCDM with m_ν = 0.06 eV, lensed spectra to ℓ_max = 4000 (arXiv:2607.14854, table in section 11) [src].
 
@@ -53,6 +57,7 @@ The paper notes that the non-flat CLASS timings exclude hyperspherical-Bessel ta
 These timings come from the author of one of the two codes; the 2011 comparison (section 1.1) came from the author of the other and found the opposite ordering.
 
 ### 1.4 Modified-gravity and differentiable solvers
+<!-- key: modified-gravity-and-differentiable-solvers -->
 
 | Statement | Value | Conditions | Citation | Flag |
 |---|---|---|---|---|
@@ -64,6 +69,7 @@ These timings come from the author of one of the two codes; the 2011 comparison 
 | Chebyshev against cubic-spline interpolation in k and ℓ | 10⁻⁴–10⁻⁵ relative error with 50–80 points per variable, against about 10⁻⁴ with 200 points; a 2.5–4 times speed-up | typical CMB temperature spectrum, SymBoltz | Sletmoen 2026, arXiv:2608.24682 | [src] |
 
 ### 1.5 Ingredients inside the solvers
+<!-- key: ingredients-inside-the-solvers -->
 
 | Ingredient | Stated accuracy | Conditions | Citation | Flag |
 |---|---|---|---|---|
@@ -75,6 +81,7 @@ These timings come from the author of one of the two codes; the 2011 comparison 
 | Reionisation-heating convention in the linear P(k) | about 1 % at k ∼ 1 Mpc⁻¹ at z = 0; several tens of per cent by k ∼ 10–20 Mpc⁻¹ | switching on CAMB's optional homogeneous heating, T_reion = 10⁴ K, z_re = 7.7; "only indicative" | arXiv:2607.14854, section 14 | [src] |
 
 ## 2. Theory facades: validated accuracy
+<!-- key: theory-facades-validated-accuracy -->
 
 | Statement | Value | Conditions | Citation | Flag |
 |---|---|---|---|---|
@@ -86,6 +93,7 @@ These timings come from the author of one of the two codes; the 2011 comparison 
 The pyccl default for the non-Limber method is `non_limber_integration_method='FKEM'`, with `l_limber=-1` and `limber_max_error=0.01` [src: pyccl 3.3.6 installed, `angular_cl` signature].
 
 ## 3. Samplers: documented comparisons
+<!-- key: samplers-documented-comparisons -->
 
 | Statement | Value | Conditions | Citation | Flag |
 |---|---|---|---|---|
@@ -104,6 +112,7 @@ The pyccl default for the non-Limber method is `non_limber_integration_method='F
 The DES Y3 analyses adopted PolyChord as "a good balance of speed and robustness" (arXiv:2202.08233) [src]; DES Y6 and KiDS-Legacy use nautilus [sec: sibling skill `cosmo-statistics-inference`].
 
 ## 4. Perturbation-theory codes against each other
+<!-- key: perturbation-theory-codes-against-each-other -->
 
 | Statement | Value | Conditions | Citation | Flag |
 |---|---|---|---|---|
@@ -132,6 +141,7 @@ Timings stated by the papers:
 The conclusion of arXiv:2404.07272 also records the history behind the comparison: earlier EFT analyses of BOSS and eBOSS obtained σ8 constraints "in mild tension with one another", differences that "can usually be attributed to the settings of pipelines used and modeling choices" [src].
 
 ## 5. Estimators: accuracy and speed
+<!-- key: estimators-accuracy-and-speed -->
 
 | Statement | Value | Conditions | Citation | Flag |
 |---|---|---|---|---|
@@ -146,6 +156,7 @@ The conclusion of arXiv:2404.07272 also records the history behind the compariso
 No paper comparing pypower with nbodykit, or pycorr with TreeCorr, was found this session; see `Not verified`.
 
 ## 6. Emulators and differentiable codes: stated accuracy and speed-up
+<!-- key: emulators-and-differentiable-codes-stated -->
 
 | Emulator | Stated accuracy | Range | Speed | Citation | Flag |
 |---|---|---|---|---|---|
@@ -160,6 +171,7 @@ No paper comparing pypower with nbodykit, or pycorr with TreeCorr, was found thi
 | ForestFlow | 3 % for P3D and 1.5 % for P1D | to k = 5 Mpc⁻¹ and k∥ = 4 Mpc⁻¹; 30 fixed-and-paired simulations, z = 2 to 4.5 | — | arXiv:2409.05682 | [src] |
 
 ## 7. History of the numbers that changed
+<!-- key: history-of-the-numbers-that-changed -->
 
 | Quantity | Older value | Current value | Where each is still found | Flag |
 |---|---|---|---|---|
@@ -172,6 +184,7 @@ No paper comparing pypower with nbodykit, or pycorr with TreeCorr, was found thi
 | DES sampler | MultiNest (Y1) | PolyChord (Y3), nautilus (Y6) | arXiv:2202.08233; sibling `cosmo-statistics-inference` | [src], [sec] |
 
 ## Not verified
+<!-- key: not-verified -->
 
 - No quantitative cross-check between FFT power-spectrum estimators (pypower against nbodykit) or between pair counters (pycorr or Corrfunc against TreeCorr) was read.
 - The numerical accuracy table of the CCL paper (per-quantity tolerances) was not read; only the abstract statement is given.

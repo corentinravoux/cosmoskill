@@ -6,8 +6,10 @@ Snapshot: 2026-10-07
 Flags: `[src]` read this session in the cited paper (its abstract unless a section is named); `[sec]` from a named secondary source; `[der]` derived here, derivation stated. Every constraint assumes flat ΛCDM unless the row says otherwise. Years next to author names are arXiv submission years.
 
 ## 1. CMB lensing × galaxies and quasars
+<!-- key: cmb-lensing-x-galaxies-and-quasars -->
 
 ### 1.1 Amplitude of structure, by tracer
+<!-- key: amplitude-of-structure-by-tracer -->
 
 The quoted amplitude is not the same combination everywhere: read the "Quantity" column before comparing two rows. "+ BAO" means that a BAO-based prior was added to break the Ω_m–σ_8 degeneracy. "κ" is the CMB lensing convergence map.
 
@@ -55,6 +57,7 @@ The quoted amplitude is not the same combination everywhere: read the "Quantity"
 Detection significances. unWISE × Planck: S/N ≈ 80 for the three samples combined (arXiv:2105.03421) [src]. DESI LRG × ACT DR6: 38σ, and 50σ with Planck PR4 added (arXiv:2407.04606) [src]. DES Y3 × SPT-SZ + Planck: 23.9 with linear-bias scale cuts, 25.7 with non-linear bias (arXiv:2203.12440) [src]. DESI DR1 quasars × Planck PR4: 21.7 for the cross-spectrum and 27.2 for the quasar auto-spectrum (arXiv:2506.22416) [src]. DES Y3 shear × SPT-3G D1 polarisation-only lensing: ~14σ (arXiv:2606.26223) [src]. DES Y3 shear × ACT DR4: 7.1 (arXiv:2309.04412) [src]. DES Y3 MagLim × ACT DR4: 9.1σ, with a lensing map of ~436 deg² (arXiv:2306.17268) [src].
 
 ### 1.2 Growth at high redshift
+<!-- key: growth-at-high-redshift -->
 
 | Quantity | Value | Data | Citation | Flag |
 |---|---|---|---|---|
@@ -63,6 +66,7 @@ Detection significances. unWISE × Planck: S/N ≈ 80 for the three samples comb
 | integrated matter fluctuations above z = 2.4 | 3.3% constraint, consistent with the ΛCDM fit to the Planck primary CMB | ACT DR6 + Planck PR4 lensing auto + unWISE cross | arXiv:2409.02109 | [src] |
 
 ### 1.3 Other parameters extracted from the same spectra
+<!-- key: other-parameters-extracted-from-the-same-spectra -->
 
 | Quantity | Value | Data and model | Citation | Flag |
 |---|---|---|---|---|
@@ -83,6 +87,7 @@ Detection significances. unWISE × Planck: S/N ≈ 80 for the three samples comb
 The response parameter p sets the non-Gaussian bias through b_φ ∝ (b − p). An f_NL value quoted without its p cannot be compared with another: the same Quaia data give errors of ~19 for p = 1 and ~25 for p = 1.6 (arXiv:2504.20992) [src].
 
 ### 1.4 Lensing by voids
+<!-- key: lensing-by-voids -->
 
 | Quantity | Value | Data | Citation | Flag |
 |---|---|---|---|---|
@@ -91,10 +96,12 @@ The response parameter p sets the non-Gaussian bias through b_φ ∝ (b − p). 
 The same paper describes earlier reports as a "lensing-is-low" discrepancy between observed void imprints and mocks, and attributes it to the mismatch in photometric-redshift errors and sparseness between data and mocks.
 
 ## 2. Kinematic Sunyaev–Zel'dovich effect
+<!-- key: kinematic-sunyaev-zel-dovich-effect -->
 
 The kSZ measurements come in three estimator families that Smith 2018 (arXiv:1810.13423) showed to be special cases of one ⟨ggT⟩ bispectrum, with two observables: the small-scale galaxy–electron spectrum P_ge and the large-scale galaxy–velocity spectrum P_gv. The tables are split accordingly: gas (P_ge side) and velocities (P_gv side). See `physics-and-methods.md` §3 for the estimators.
 
 ### 2.1 Detections, by estimator
+<!-- key: detections-by-estimator -->
 
 | Estimator | CMB data | Tracer | Significance and sample | Citation | Flag |
 |---|---|---|---|---|---|
@@ -120,6 +127,7 @@ The kSZ measurements come in three estimator families that Smith 2018 (arXiv:181
 | Velocity reconstruction, spectroscopic | ACT DR6 | DESI DR2 LRG, ELG, QSO | v–g: 17.0σ (LRG), 8.3σ (ELG), 6.8σ (QSO); v–v: 3.1σ (LRG); cumulative 20.8σ | Chaussidon 2026, arXiv:2604.04867 | [src] |
 
 ### 2.2 Gas: what the kSZ profile says about baryons and feedback
+<!-- key: gas-what-the-ksz-profile-says-about-baryons-and -->
 
 | Statement | Number | Data | Citation | Flag |
 |---|---|---|---|---|
@@ -148,6 +156,7 @@ The kSZ measurements come in three estimator families that Smith 2018 (arXiv:181
 The ACT DR6 × DESI results favour gas that is more extended than in the Battaglia profile and in IllustrisTNG (arXiv:2407.07152, arXiv:2604.19744, arXiv:2604.04867) [src]. The counter-evidence is in `open-questions.md` §2.
 
 ### 2.3 Velocities: cosmology from the large-scale kSZ signal
+<!-- key: velocities-cosmology-from-the-large-scale-ksz -->
 
 | Quantity | Value | Data | Citation | Flag |
 |---|---|---|---|---|
@@ -161,6 +170,7 @@ The ACT DR6 × DESI results favour gas that is more extended than in the Battagl
 No fσ_8 value has been published from kSZ: the amplitude is degenerate with the optical depth (see `systematics.md` §8). The peculiar-velocity reading of these numbers is in `cosmo-peculiar-velocities`.
 
 ### 2.4 kSZ auto-power (no LSS tracer)
+<!-- key: ksz-auto-power-no-lss-tracer -->
 
 | Quantity | Value | Data | Citation | Flag |
 |---|---|---|---|---|
@@ -171,8 +181,10 @@ No fσ_8 value has been published from kSZ: the amplitude is degenerate with the
 The paper states that the inferred SZ powers depend on the modelling of the tSZ–CIB correlation.
 
 ## 3. Thermal Sunyaev–Zel'dovich × LSS
+<!-- key: thermal-sunyaev-zel-dovich-x-lss -->
 
 ### 3.1 tSZ × galaxy positions: bias-weighted pressure
+<!-- key: tsz-x-galaxy-positions-bias-weighted-pressure -->
 
 | Quantity | Value | Data | Citation | Flag |
 |---|---|---|---|---|
@@ -186,6 +198,7 @@ The paper states that the inferred SZ powers depend on the modelling of the tSZ�
 | Stacked tSZ, ~2′ disk | S/N > 38 (DESI DR1 LRG), 27 (BGS), 39 (eROMaPPer clusters) at 90 GHz | ACT DR6 + Planck | Moore 2026, arXiv:2609.08939 | [src] |
 
 ### 3.2 tSZ × lensing
+<!-- key: tsz-x-lensing-2 -->
 
 | Quantity | Value | Data | Citation | Flag |
 |---|---|---|---|---|
@@ -200,10 +213,12 @@ The paper states that the inferred SZ powers depend on the modelling of the tSZ�
 The S_8 values in this subsection do not agree with each other: 0.811 +0.015/−0.012 (arXiv:2506.07432) against 0.72 ± 0.03 (arXiv:2605.11083) and a "strongly disfavoured" Planck value (arXiv:2609.31774). See `open-questions.md` §3.
 
 ## 4. Integrated Sachs–Wolfe effect
+<!-- key: integrated-sachs-wolfe-effect -->
 
 A_ISW is the measured amplitude divided by the ΛCDM prediction. The two families of measurement, full cross-correlation and stacking on superstructures, are kept apart because they have disagreed.
 
 ### 4.1 Cross-correlation of temperature with LSS tracers
+<!-- key: cross-correlation-of-temperature-with-lss -->
 
 | Tracer | Result | Citation | Flag |
 |---|---|---|---|
@@ -213,6 +228,7 @@ A_ISW is the measured amplitude divided by the ΛCDM prediction. The two familie
 | Quaia quasars, tomographic, × Planck temperature | 2.8σ; A_ISW ≃ 1.69 ± 0.61 relative to Planck ΛCDM; the DESI-favoured w0wa models "do not account for" the excess | Ghodsi Yengejeh 2026, arXiv:2607.22461 | [src] |
 
 ### 4.2 Stacking on voids and superclusters
+<!-- key: stacking-on-voids-and-superclusters -->
 
 | Structures | Result | Citation | Flag |
 |---|---|---|---|
@@ -225,6 +241,7 @@ A_ISW is the measured amplitude divided by the ΛCDM prediction. The two familie
 The stacked CMB lensing signal of the same DESI Legacy superstructures agrees with mocks except in the highest-redshift density peaks, where the mock prediction is higher by a factor ~1.3 (arXiv:2105.11936) [src].
 
 ## 5. Cosmic infrared background
+<!-- key: cosmic-infrared-background -->
 
 The CIB appears in this domain in three roles: a high-redshift matter tracer correlated with CMB lensing, a probe of the star-formation history, and the main contaminant of tSZ and lensing cross-correlations (for the last, see `systematics.md` §3).
 
@@ -238,6 +255,7 @@ The CIB appears in this domain in three roles: a high-redshift matter tracer cor
 | Effective CIB dust parameters correlated with low-z unWISE galaxies | β_0 = 1.79 ± 0.29, T_0 = 22.0 ± 5.1 K (z̄ = 0.14); β_0 = 1.41 ± 0.13, T_0 = 28.0 ± 4.2 K (z̄ = 0.23) | unWISE × Planck PR4 | arXiv:2606.28099 | [src] |
 
 ## 6. Other secondaries (status)
+<!-- key: other-secondaries-status -->
 
 | Effect | Status | Number | Data | Citation | Flag |
 |---|---|---|---|---|---|
@@ -248,8 +266,10 @@ The CIB appears in this domain in three roles: a high-redshift matter tracer cor
 | Polarised SZ (remote quadrupole) | Not detected; expected S/N of order 1 | b_q = 1.02 ± 2.64; τ_rei = −0.01 ± 0.14 | Planck + ACT × unWISE and Planck CIB | Krywonos 2026, arXiv:2607.16071 | [src] |
 
 ## 7. History of the key numbers
+<!-- key: history-of-the-key-numbers -->
 
 ### 7.1 CMB lensing tomography
+<!-- key: cmb-lensing-tomography -->
 
 1. unWISE × Planck gave S_8 = 0.784 ± 0.015, 2.4σ below Planck (arXiv:2105.03421) [src]. The reanalysis with ACT DR6 lensing, additional spectroscopic redshift calibration, a more flexible model and blinding gave 0.810 ± 0.015 with ACT and Planck together, "fully consistent" with the primary CMB (arXiv:2309.05659) [src]. The 2021 value is superseded. Appendix "Reanalysis of the cross-correlation of Planck lensing and unWISE" of arXiv:2309.05659 itemises the shift for the Planck-only reanalysis: Monte Carlo lensing normalisation correction +0.6σ, modelling improvements −0.5σ, systematics weighting of the galaxies +0.4σ, additional spectroscopic data for the redshift distributions +0.8σ, PR4 instead of PR3 lensing +0.2σ, PCA-based dN/dz marginalisation −0.2σ with ~15% wider posteriors; total +1.3σ with ~15% wider posteriors [src, table in that appendix]. The redshift-distribution change is dominated by the Blue sample (0.74σ, against 0.14σ for Green) [src].
 2. DESI-targeting LRGs × Planck gave S_8 = 0.73 ± 0.03 (arXiv:2111.09898) [src]. The reanalysis with spectroscopically calibrated samples, PR4 and ACT DR6 lensing and HEFT gave 0.765 ± 0.023 (Planck) and 0.775 +0.019/−0.022 (ACT + Planck), described by its authors as "less discrepant with primary CMB measurements than previous DESI LRG cross Planck CMB lensing results" (arXiv:2407.04607) [src]. The 2021 value is superseded. Section "Planck PR3 reanalysis" of arXiv:2407.04607 quotes the earlier result as S_8 = 0.725 ± 0.030 with a best fit of 0.751, finds 0.762 ± 0.023 with the new sample and the same PR3 map, and attributes the ≃ 1σ shift of the mean to four changes: consistent neutrino masses in the power-spectrum emulator ΔS_8 = +0.017, the Monte Carlo normalisation correction of the PR3 cross-correlation +0.015, an informative prior tying the two counterterms that removes a "volume effect" +0.014, and the updated LRG sample −0.012 [src, that section]. Part of the old low value was therefore a projection effect: the 2021 mean sat ~1σ below its own best fit [src, section "Volume effect estimation"].
@@ -258,20 +278,24 @@ The CIB appears in this domain in three roles: a high-redshift matter tracer cor
 5. The LRG-based values remain the lowest of the current set: 0.765–0.776 for S_8 or S_8^× from the DESI LRG samples (arXiv:2407.04607, arXiv:2407.04606, arXiv:2510.17796), against 0.810–0.816 from unWISE (arXiv:2309.05659, arXiv:2409.02109) [src].
 
 ### 7.2 kSZ detections and their reading
+<!-- key: ksz-detections-and-their-reading -->
 
 1. Significance by estimator. Pairwise: evidence at p = 0.002 (arXiv:1203.4219), 5.4σ (arXiv:2101.08374), 9.3σ with DESI DR1 (arXiv:2511.23417). Velocity-weighted stacking: 3.3σ (arXiv:1510.06442), 6.5σ (arXiv:2009.05557), 13σ photometric (arXiv:2407.07152), ≈ 10 spectroscopic DESI Y1 (arXiv:2503.19870), 18σ DESI DR2 (arXiv:2604.19744). Velocity reconstruction: 3.8σ (arXiv:2410.06229), ~11σ (arXiv:2506.21684, arXiv:2511.15701, arXiv:2603.28746), 17σ for LRGs and 20.8σ cumulative with DESI DR2 (arXiv:2604.04867). All [src].
 2. Reading of the amplitude. The 2016 projected-field result, (f_b/0.158)(f_free/1.0) = 1.48 ± 0.19, was taken as showing that "baryons approximately trace the dark matter distribution down to ~Mpc scales" (arXiv:1603.01608) [src]. From 2020 the profile measurements show gas more extended than the dark matter (arXiv:2009.05557), and from 2024 the DESI-based measurements are read as evidence for strong feedback (arXiv:2407.07152 and the rows of §2.2) [src]. The two statements concern different scales and are not in conflict.
 3. The z ≈ 1.1 unWISE projected-field amplitude of 5.02 ± 1.01 (arXiv:2102.01068) is an unexplained excess that its authors could not attribute to foregrounds [src]; no later projected-field measurement was found this session.
 
 ### 7.3 tSZ × lensing
+<!-- key: tsz-x-lensing -->
 
 The first detection, CFHTLenS × Planck at 6σ (arXiv:1310.5721), was followed by KiDS-1000 × Planck + ACT (arXiv:2109.04458), DES Y3 × ACT + Planck at 21σ (arXiv:2108.01600) and the DES Y3 × ACT DR6 joint cosmology and feedback fit, also 21σ (arXiv:2506.07432) [src]. The interpretation has moved from "warm baryons trace the large-scale structure" (2013) to constraints on AGN feedback and, since 2025, to S_8 values that disagree with each other (§3.2).
 
 ### 7.4 ISW
+<!-- key: isw -->
 
 Planck 2015 combined detection 4σ (arXiv:1502.01595); tomographic five-catalogue analysis 4.7–5.0σ (arXiv:1710.03238); unWISE alone 3.2σ with A_ISW = 0.96 ± 0.30 (arXiv:2110.13959); Quaia alone 2.8σ with 1.69 ± 0.61 (arXiv:2607.22461) [src]. The supervoid excess reported from 2018 (arXiv:1811.07812) was not reproduced in the DESI Legacy analysis of 2021 (arXiv:2105.11936) [src].
 
 ## 8. Not verified
+<!-- key: not-verified -->
 
 - No value is given here for the tSZ–CIB correlation coefficient, the Planck all-sky y-map properties, or the first CIB × CMB lensing correlations: the papers were not read this session.
 - kSZ velocity-bias values for DESI ELGs and quasars (arXiv:2604.04867) were not read beyond the abstract and the LRG table.

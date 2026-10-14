@@ -7,8 +7,10 @@ Snapshot: 2026-10-11
 Dates are the last push to the GitHub repository (any branch) and the latest PyPI upload, read on 2026-10-11 and 2026-10-12 [src: GitHub REST API; PyPI JSON API]. A recent push shows activity, not a tested release; an old push shows a quiet repository, not a broken code.
 
 ## 1. Maintenance status at the repositories
+<!-- key: maintenance-status-at-the-repositories -->
 
 ### 1.1 Pushed within the three months before the snapshot
+<!-- key: pushed-within-the-three-months-before-the -->
 
 | Code | Last push | Latest tagged or indexed release |
 |---|---|---|
@@ -48,6 +50,7 @@ Dates are the last push to the GitHub repository (any branch) and the latest PyP
 | Capse.jl, Effort.jl | 2026-09-28, 2026-08-30 | not read |
 
 ### 1.2 Quieter repositories
+<!-- key: quieter-repositories -->
 
 | Code | Last push | Latest release | Reading |
 |---|---|---|---|
@@ -77,6 +80,7 @@ Dates are the last push to the GitHub repository (any branch) and the latest PyP
 | FlowPM (`modichirag/flowpm`) | 2021-04-25 | — | no push for more than five years |
 
 ## 2. Deprecated or superseded codes
+<!-- key: deprecated-or-superseded-codes -->
 
 | Older code or version | Successor | Evidence |
 |---|---|---|
@@ -95,8 +99,10 @@ Dates are the last push to the GitHub repository (any branch) and the latest PyP
 Not superseded, despite appearances: MontePython has no recent push, but MGCLASS II (arXiv:2112.14175) and the Euclid forecast validation (arXiv:2303.09451) rely on it, and desilike keeps a binding to it [src: desilike README].
 
 ## 3. Method debates
+<!-- key: method-debates -->
 
 ### 3.1 Exact fast codes, differentiable codes or emulators
+<!-- key: exact-fast-codes-differentiable-codes-or -->
 
 Three routes now compete to make full-shape and CMB inference fast.
 
@@ -108,6 +114,7 @@ What decides between them is the model space: an emulator is tied to its trainin
 No head-to-head study of the three routes on one likelihood was read this session.
 
 ### 3.2 Which sampler
+<!-- key: which-sampler -->
 
 - Nested sampling gives evidences but its accuracy depends on the implementation: the DES study found MultiNest unreliable for evidences and intervals where PolyChord was not (arXiv:2202.08233).
 - Gradient-based samplers are not automatically the fastest once likelihoods are emulated: on differentiable emulators NUTS needs the fewest samples but MALA and plain Metropolis–Hastings "remain highly competitive" by wall time (arXiv:2606.04895).
@@ -115,18 +122,21 @@ No head-to-head study of the three routes on one likelihood was read this sessio
 - nautilus and pocoMC both claim order-of-magnitude gains over classical nested samplers (arXiv:2306.16923, arXiv:2207.05652); each comparison was made by the authors of the faster code.
 
 ### 3.3 Eulerian or Lagrangian perturbation theory
+<!-- key: eulerian-or-lagrangian-perturbation-theory -->
 
 The DESI comparison concludes that velocileptors, PyBird and FOLPSν give consistent constraints for 0.02 < k ≲ 0.2 h Mpc⁻¹ once bias freedom and scale cuts are matched, and that remaining differences are of two-loop order (arXiv:2404.07272).
 The open points are practical: no direct mapping of bias parameters exists between all models, priors act differently in each basis, and prior-volume (projection) effects appear when the parameter space is opened beyond ΛCDM (arXiv:2404.07272, conclusion).
 The 2026 `neckar` paper reopens the question of numerical accuracy of infrared resummation in existing Eulerian implementations (arXiv:2610.03466).
 
 ### 3.4 Code written with AI agents
+<!-- key: code-written-with-ai-agents -->
 
 The CAMB v2 abstract states that "essentially all of the new algorithms and code were developed with LLMs or AI agents under human supervision", and the paper has a section "Agentic testing and tuning" (arXiv:2607.14854).
 Its accuracy claims rest on a deterministic validation harness, `camb.check_accuracy`, and on a fixed-reference regression suite (arXiv:2607.14854, section 9).
 How collaborations will treat such code in their validation requirements is not settled in anything read this session.
 
 ### 3.5 What the next releases will decide
+<!-- key: what-the-next-releases-will-decide -->
 
 - Euclid: cloelib "is intended to serve as the reference theory computation infrastructure for Euclid's first cosmological release" (arXiv:2605.23839); CLOE agrees with benchmark codes to better than 0.1 σ (arXiv:2510.09141).
 - pyccl and CAMB v2: pyccl 3.3.6 pins `AccuracyTarget` to the v1 behaviour; whether and when it adopts the v2 defaults, and by how much its validated predictions then move, is open.
@@ -134,6 +144,7 @@ How collaborations will treat such code in their validation requirements is not 
 - Which estimator and perturbation-theory codes the DESI DR2 full-shape analysis uses was not read.
 
 ## 4. Misconceptions
+<!-- key: misconceptions -->
 
 1. **"CAMB and CLASS agree to 0.01 %."** That figure is for concordance ΛCDM, a shared recombination history and tuned precision in 2011 (arXiv:1104.2934). At default settings and high ℓ the codes and versions differ at the per-cent level: CAMB v1.6.6 defaults are off by 1.5 % in TT at ℓ = 3000, and CLASS lensed spectra move by 1.8 % at ℓ = 4000 depending on the ℓ margin (arXiv:2607.14854).
 2. **"CLASS is faster than CAMB."** True in the 2011 comparison, by a factor of about 2.5 (arXiv:1104.2934); the 2026 CAMB v2 paper measures the opposite for lensed spectra to ℓ_max = 4000 (arXiv:2607.14854). Both statements come from the author of the faster code.
@@ -151,6 +162,7 @@ How collaborations will treat such code in their validation requirements is not 
 14. **"The repository URL in the paper is where the code lives."** CosmoSIS moved from Bitbucket to `cosmosis-developers/cosmosis`, hi_class to `hiclass-code/hi_class_public`, PolyChord from the CCPForge address of its papers to `PolyChord/PolyChordLite`, FAST-PT to `jablazek/FAST-PT` [src: GitHub API redirects; PyPI].
 
 ## Not verified
+<!-- key: not-verified -->
 
 - BORG: the public repository is reported at `git.aquila-consortium.org/Aquila-Consortium/borg_public` (release branch 2.1, initial import in 2023, extra modules under access control) [sec: web search snippets of that site, 2026-10-12]; the live repository was not opened.
 - Whether MontePython, CosmoPower or LensTools have newer development elsewhere than the repositories listed was not checked.

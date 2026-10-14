@@ -11,6 +11,7 @@ secondary source; `[der]` derived here. Forecasts are labelled **forecast**.
 ---
 
 ## 1. Is the Planck large-scale polarisation value of τ right?
+<!-- key: is-the-planck-large-scale-polarisation-value-of -->
 
 **Why it matters.** τ is the least well measured base parameter and every
 analysis that includes CMB data takes it from Planck low-ℓ EE. Sailer et
@@ -64,6 +65,7 @@ reionisation probes side with the measured value.
 Reionisation astrophysics belongs to `cosmo-reionization-21cm`.
 
 ## 2. The fate of the A_L anomaly
+<!-- key: the-fate-of-the-al-anomaly -->
 
 **History.** A_L was introduced in 2008 on WMAP5+ACBAR, which already
 showed a 2.5σ high value (Calabrese et al. 2008, arXiv:0803.2309) [src].
@@ -119,6 +121,7 @@ driver of the neutrino bound [src] (arXiv:2503.14454).
 A_L > 1 at 2.8σ" without naming the likelihood and release.
 
 ## 3. How large is the CMB–DESI discrepancy in ΛCDM?
+<!-- key: how-large-is-the-cmb-desi-discrepancy-in -->
 
 The quoted significance ranges from 1.6σ to 3.7σ depending on the CMB
 data set (`results.md`, Section 2). Two things drive the spread: ACT DR6
@@ -143,6 +146,7 @@ Interpretation belongs to `cosmo-dark-energy-modified-gravity` and
 `cosmo-tensions-anomalies`.
 
 ## 4. N_eff: ACT low, SPT at the standard value
+<!-- key: neff-act-low-spt-at-the-standard-value -->
 
 ACT DR6 alone gives 2.60 (+0.21/−0.29) and SPT-3G D1 alone 3.18
 (+0.29/−0.33); the combinations give 2.73–2.86 with errors of 0.12–0.14
@@ -158,6 +162,7 @@ damping-tail preference persists in SPT's wider fields and in SO.
 Light-relic model constraints belong to `cosmo-neutrinos-dark-matter`.
 
 ## 5. Neutrino mass from CMB + BAO
+<!-- key: neutrino-mass-from-cmb-bao -->
 
 Limits of 0.064–0.089 eV sit at or below the oscillation minimum, and
 analyses that allow an effective negative mass find a preference for it
@@ -170,6 +175,7 @@ with DESI [src] (arXiv:2608.31136). In w₀w_a CDM the limit relaxes to
 0.16 eV [src] (arXiv:2503.14738).
 
 ## 6. SPT-3G polarised beams
+<!-- key: spt-3g-polarised-beams -->
 
 The D1 cosmology relies on a sidelobe-depolarisation model introduced
 after unblinding and preferred at 5σ by the spectra within ΛCDM
@@ -184,6 +190,7 @@ SPT-3G release treats this, and whether n_s from SPT alone
 (0.951 ± 0.011) moves.
 
 ## 7. ACT versus Planck at the parameter level
+<!-- key: act-versus-planck-at-the-parameter-level -->
 
 ACT reports 1.6σ against PR3 and 2.5σ against NPIPE in the four shape
 parameters, with the shift most visible in Ω_b h²–Ω_c h² and Ω_b h²–H₀
@@ -193,6 +200,7 @@ is a fluctuation is open; a full ACT–Planck cross-covariance, which ACT
 left for future work, is the missing piece.
 
 ## 8. The upward drift of n_s
+<!-- key: the-upward-drift-of-ns -->
 
 Planck 2018: 0.965 ± 0.004. P-ACT: 0.9709 ± 0.0038. CMB-SPA:
 0.9679 ± 0.0033. With DESI: 0.974 ± 0.003 (P-ACT-LB) and 0.9726 ± 0.0028
@@ -203,6 +211,7 @@ CMB–BAO discrepancy. SPT-3G D1 alone gives a low and weak 0.951 ± 0.011.
 Consequences for inflation models belong to `cosmo-inflation-primordial`.
 
 ## 9. Which Planck likelihood
+<!-- key: which-planck-likelihood -->
 
 Jense et al. 2025 (arXiv:2510.09430) find that once ground data are added
 the choice of Planck maps and likelihood stops mattering for extended
@@ -213,6 +222,7 @@ reference for the PR4 cosmology [src]. No PR4-based CMB-SPA was found in
 the searches of 2026-10-07.
 
 ## 10. Cosmic birefringence (pointer)
+<!-- key: cosmic-birefringence-pointer -->
 
 ACT DR6 gives β = 0.215° ± 0.074°, same sign and similar size as earlier
 WMAP and Planck results, with the authors' caveat on unexplained
@@ -222,6 +232,7 @@ Treat as unconfirmed; details in `cosmo-inflation-primordial` and
 `cosmo-tensions-anomalies`.
 
 ## 11. Primordial B modes after the CMB-S4 cancellation
+<!-- key: primordial-b-modes-after-the-cmb-s4-cancellation -->
 
 Current limit: r < 0.036 (BK18) or < 0.032 with Planck PR4 and BAO. The
 published forecasts for what replaces CMB-S4:
@@ -242,6 +253,7 @@ complexity allows the "moderately complex" foreground assumption are the
 open technical questions.
 
 ## 12. What the next data decide
+<!-- key: what-the-next-data-decide -->
 
 | Question | Deciding data | When |
 |---|---|---|
@@ -257,6 +269,7 @@ above 90 and 190 (**forecast**) [src] (Vitrier et al. 2025,
 arXiv:2510.24669).
 
 ## 13. Misconceptions and stale claims
+<!-- key: misconceptions-and-stale-claims -->
 
 | Claim still seen | Correction | Source |
 |---|---|---|
@@ -278,6 +291,7 @@ arXiv:2510.24669).
 | "N_eff standard value 3.046" | 3.044 in ACT DR6 and SPT-3G D1; 3.046 in Planck 2018 | arXiv:2503.14454, arXiv:1807.06209 |
 
 ## Not verified
+<!-- key: not-verified -->
 
 - No Simons Observatory cosmology result was found; whether one appeared
   after the searches of 2026-10-07 should be checked before writing about

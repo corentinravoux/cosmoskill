@@ -6,6 +6,7 @@ Snapshot: 2026-10-07
 Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named secondary source; `[der]` derived here, derivation stated. Unless a row says otherwise, every entry of §1 is `[src]` from the paper named in its last column.
 
 ## 1. Summary table
+<!-- key: summary-table -->
 
 | Analysis | Likelihood and covariance | Blinding | Sampler and convergence | Point estimate quoted | Tension metric | Model comparison | Source |
 |---|---|---|---|---|---|---|---|
@@ -22,6 +23,7 @@ Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named 
 | Euclid preparation (forecast) | Fisher matrix, validated between independent codes | — | — | forecast | — | figure of merit | arXiv:1910.09273 |
 
 ## 2. DESI
+<!-- key: desi -->
 
 **Inference** (arXiv:2503.14738, §5) [src]. Cobaya with Metropolis–Hastings sampling and CAMB. BAO-only fits sample Ω_m and `h r_d`; with a BBN prior, H0 and ω_b; with the full CMB likelihood, the six base parameters with `θ_MC`. Convergence: Gelman–Rubin `R − 1 < 0.01`, or an effective sample size of ≳ 10^3, whichever takes longer. Summaries with `getdist`. The best fit and its χ² come from `iminuit` started at the MAP of each chain. For combinations with the DES Y3 3×2pt likelihood, the best fit uses the CosmoSIS implementation and the chains are combined as weighted `CombineHarvesterFlow` chains.
 
@@ -36,6 +38,7 @@ Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named 
 **External Bayesian reanalyses.** Evidence and tension grid with PolyChord (arXiv:2511.10631, arXiv:2603.05472); out-of-sample scoring (arXiv:2609.04334).
 
 ## 3. DES
+<!-- key: des -->
 
 **Year 6 3×2pt** (DES Collaboration 2026, arXiv:2601.14559, §4 and appendices) [src].
 
@@ -54,6 +57,7 @@ Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named 
 **Year 3 and earlier.** The method papers remain the references: covariance (arXiv:2012.08568), sampler comparison (arXiv:2202.08233), blinding (arXiv:1911.05929), tension metrics (arXiv:2012.09554), posterior predictive tests (arXiv:2011.03410), non-Gaussian parameter shifts (arXiv:2105.03324). The joint DES Y3 + KiDS-1000 analysis documents what must be harmonised before two surveys are combined (arXiv:2305.17173).
 
 ## 4. KiDS
+<!-- key: kids -->
 
 **KiDS-Legacy cosmic shear** (Wright et al. 2025, arXiv:2503.19441) [src].
 
@@ -70,10 +74,12 @@ Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named 
 **KiDS-1000.** Methodology paper with the covariance validation against more than 20 000 mocks, the revised degrees of freedom and the MAP + PJ-HPD estimator (arXiv:2007.01844); covariance blinding scheme (arXiv:1910.08533); simulation-based reanalysis (arXiv:2404.15402).
 
 ## 5. HSC
+<!-- key: hsc -->
 
 The statistical practice of the HSC Year 3 analyses was not read at source in this session. The S8 values, the recalibration with DESI clustering redshifts and the blinding level are in `cosmo-weak-lensing`. Listed under "Not verified".
 
 ## 6. ACT
+<!-- key: act -->
 
 **DR6 power spectra and ΛCDM parameters** (Louis et al. 2025, arXiv:2503.14452) [src].
 
@@ -85,16 +91,19 @@ The statistical practice of the HSC Year 3 analyses was not read at source in th
 - Consistency statement: ΛCDM parameters agree between P-ACT and DESI DR2 at 1.6σ.
 
 ## 7. SPT
+<!-- key: spt -->
 
 **SPT-3G D1** (Camphuis et al. 2025, arXiv:2506.20707) [src, abstract and summary section]. The maps and power spectra "have been validated through blind and unblind tests". Quoted consistency statements: H0 from SPT-3G alone is 6.2σ from SH0ES; the three-experiment CMB combination differs from DESI DR2 BAO at 2.8σ in ΛCDM, in the Ω_m–h r_d plane; "CMB data alone show no evidence for physics beyond ΛCDM", while CMB + BAO gives 2–3σ shifts in curvature, lensing amplitude or the dark-energy equation of state. The likelihood, covariance and sampler sections of the paper were not accessible through the section tool and are listed under "Not verified".
 
 ## 8. Planck
+<!-- key: planck -->
 
 - Likelihood form: at high multipoles, approximations of the Hamimeche–Lewis type are valid for ℓ ≳ 30; below that, exact or simulation-based low-ℓ likelihoods are needed (arXiv:0801.0554) [src for the general statement]. The Planck 2018 and PR4 likelihood products (Plik, CamSpec, HiLLiPoP, SRoll2) are described in `cosmo-cmb`.
 - Frequentist cross-check: Planck intermediate results XVI (arXiv:1311.1657) [src]: profile likelihoods with Minuit agree with the Bayesian results; Feldman–Cousins for the neutrino mass; frequentist limit Σm_ν < 0.26 eV (95% CL) from CMB + lensing + BAO in 2013.
 - The Planck likelihood remains the test bed for statistical method papers: profile-likelihood validity (arXiv:2408.07700, with `Plik_lite`), emulator validation (arXiv:2106.03846), prior-volume effects in extended models (arXiv:2203.16285, arXiv:2603.25731).
 
 ## 9. Euclid preparation
+<!-- key: euclid-preparation -->
 
 No Euclid cosmological inference exists at the snapshot (see `cosmo-weak-lensing` and `cosmo-galaxy-clustering` for release dates). The statistical groundwork that was read here:
 
@@ -107,6 +116,7 @@ No Euclid cosmological inference exists at the snapshot (see `cosmo-weak-lensing
 For Rubin LSST, the blinding tool is Smokescreen (arXiv:2604.18111) [src]; the inference framework is in `cosmo-software-ecosystem`.
 
 ## 10. Other analyses used as method references
+<!-- key: other-analyses-used-as-method-references -->
 
 | Analysis | Why it is cited | Source |
 |---|---|---|
@@ -116,6 +126,7 @@ For Rubin LSST, the blinding tool is Smokescreen (arXiv:2604.18111) [src]; the i
 | CFHTLenS and KiDS-450 | non-Gaussian likelihood diagnostics; covariance blinding | arXiv:1707.04488, arXiv:1910.08533 |
 
 ## 11. Convergence of practice, as seen in the 2025–2026 papers
+<!-- key: convergence-of-practice-as-seen-in-the-2025 -->
 
 - Sampler: both Stage-III lensing collaborations moved to Nautilus for their final analyses (arXiv:2601.14559, arXiv:2503.19441); the CMB and BAO analyses use Metropolis–Hastings in Cobaya with `R − 1 < 0.01` (arXiv:2503.14738, arXiv:2503.14452).
 - Covariance: analytic for lensing and 3×2pt (CosmoCov, OneCovariance), validated on mocks; analytic with Monte Carlo corrections for CMB spectra; semi-analytic for BAO; mock-based with corrections for full shape.
@@ -124,6 +135,7 @@ For Rubin LSST, the blinding tool is Smokescreen (arXiv:2604.18111) [src]; the i
 - Model comparison: `Δχ²` likelihood-ratio tests converted to σ are the collaboration standard (DESI with 2 degrees of freedom, DES with 1 for wCDM); evidences are computed mostly by external groups.
 
 ## 12. Priors side by side: DES Y6 3×2pt and KiDS-Legacy cosmic shear
+<!-- key: priors-side-by-side-des-y6-3x2pt-and-kids -->
 
 Both tables were read at source (arXiv:2601.14559, table of fiducial values and priors; arXiv:2503.19441, table of fiducial prior ranges) [src]. Brackets are flat priors.
 
@@ -145,6 +157,7 @@ Both tables were read at source (arXiv:2601.14559, table of fiducial values and 
 Consequences for comparison. The two surveys sample different amplitude parameters with flat priors (A_s against S8), so the implied prior on S8 differs; they treat the neutrino mass differently, which moves S8 at fixed data; and they handle baryons by cuts in one case and by marginalisation in the other. A difference between their S8 values is therefore not purely a difference between data sets. The joint DES Y3 + KiDS-1000 analysis exists because of this (arXiv:2305.17173); no equivalent joint analysis of DES Y6 and KiDS-Legacy was found in this session.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - HSC Year 3: covariance, sampler, blinding and tension metric were not read at source.
 - SPT-3G D1: likelihood form, covariance construction, sampler and the details of the blinding.

@@ -10,6 +10,7 @@ Flags: `[src]` read in the cited paper this session; `[sec]` from a named
 secondary source; `[der]` derived here.
 
 ## 0. The budget at a glance
+<!-- key: the-budget-at-a-glance -->
 
 SN cosmology is a *differential* measurement between low and high redshift.
 Any effect that changes brightness, colour or selection as a function of
@@ -32,6 +33,7 @@ DES-SN5YR alone was statistics-dominated, while the largest combined sample
 systematic part.
 
 ## 1. Photometric calibration and cross-calibration
+<!-- key: photometric-calibration-and-cross-calibration -->
 
 **Mechanism.** Each survey has its own zero points and filter transmissions.
 A relative zero-point error between the low-z anchor systems and the high-z
@@ -82,6 +84,7 @@ by a same-instrument sample (Foundation, DEBASS).
 requirements: Anumba et al. 2026 (arXiv:2604.19746).
 
 ## 2. Light-curve model training
+<!-- key: light-curve-model-training -->
 
 **Mechanism.** SALT is trained on the same SNe and calibration that are then
 fitted; errors in training spectra, in the rest-frame UV, or in the training
@@ -103,6 +106,7 @@ legacy data from training (done for SALT3.DOV, arXiv:2511.07517).
 **Cite.** arXiv:2104.07795, arXiv:2301.10644.
 
 ## 3. Selection bias (Malmquist) and its dependence on population models
+<!-- key: selection-bias-malmquist-and-its-dependence-on -->
 
 **Mechanism.** Near the flux limit, and under spectroscopic-selection
 limits, the sample is biased to bright, blue, slow-declining events; the
@@ -134,6 +138,7 @@ FlowSN) as an independent method.
 (arXiv:2102.01776), arXiv:2501.06664.
 
 ## 4. Intrinsic scatter and dust modelling
+<!-- key: intrinsic-scatter-and-dust-modelling -->
 
 **Mechanism.** The scatter model sets how colour is split between a
 luminosity-correlated intrinsic part and dust, hence the simulated bias for
@@ -162,6 +167,7 @@ by `Delta chi2 = 49.2`, the age model by 23.6 `[src]`, arXiv:2609.05053).
 **Cite.** arXiv:1209.2482, arXiv:2004.10206, arXiv:2112.04456.
 
 ## 5. Host-galaxy and environment dependence
+<!-- key: host-galaxy-and-environment-dependence -->
 
 **Mechanism.** Standardised brightness correlates with host stellar mass,
 local colour and local star formation. Since host demographics change with
@@ -210,6 +216,7 @@ arXiv:1806.03849, arXiv:2004.10206, Smith et al. 2020 (arXiv:2001.11294),
 arXiv:2601.19424.
 
 ## 6. Population evolution with redshift (progenitor age)
+<!-- key: population-evolution-with-redshift-progenitor -->
 
 **Mechanism.** If standardised luminosity depends on progenitor age and the
 mean age changes with look-back time faster than the host-mass step tracks,
@@ -247,6 +254,7 @@ the nuisance-evolution term to watch.
 arXiv:2604.16597.
 
 ## 7. Photometric classification and contamination
+<!-- key: photometric-classification-and-contamination -->
 
 **Mechanism.** Core-collapse and peculiar SNe Ia leak into a photometric
 sample with a redshift-dependent rate and a different magnitude
@@ -266,6 +274,7 @@ training sets; different core-collapse template libraries; a
 arXiv:1901.06384, arXiv:2111.10382.
 
 ## 8. Host association and redshift errors
+<!-- key: host-association-and-redshift-errors -->
 
 **Mechanism.** A wrong host gives a wrong redshift (differences up to 0.6)
 and wrong host properties; a systematic redshift offset shifts the whole
@@ -281,6 +290,7 @@ Redshift systematics of 10^-4 are not negligible for `H0` (Davis et al.
 **Cite.** arXiv:2307.13696, arXiv:2112.01471.
 
 ## 9. Peculiar velocities
+<!-- key: peculiar-velocities -->
 
 **Mechanism.** At z < 0.1 host motions of a few hundred km/s are a
 non-negligible, spatially correlated part of the redshift. They add scatter,
@@ -305,6 +315,7 @@ at 0.0233 in Unite); alternative flow models (integrated line-of-sight 2M++,
 **Cite.** arXiv:1012.2912, arXiv:2112.01471, arXiv:2110.03487.
 
 ## 10. Milky Way extinction
+<!-- key: milky-way-extinction -->
 
 **Mechanism.** Low-z SNe are all-sky; deep fields sit at low extinction. An
 error in the dust-map scale or colour law is differential in redshift.
@@ -322,6 +333,7 @@ until fixed in DES-Dovekie `[src]` (arXiv:2511.07517). Analyses built on
 SNANA simulations with dust-based scatter models before that fix inherit it.
 
 ## 11. Gravitational lensing
+<!-- key: gravitational-lensing -->
 
 **Mechanism.** Magnification adds skewed scatter growing with redshift and,
 with selection, a bias.
@@ -333,6 +345,7 @@ delensing term by default and finds the shift small and along the degeneracy
 `[src]` (arXiv:2609.05053).
 
 ## 12. Reference cosmology in bias corrections
+<!-- key: reference-cosmology-in-bias-corrections -->
 
 Size: sub-dominant to statistics even for `Delta Omega_m ~ 0.2` `[src]`
 (Camilleri et al. 2024, arXiv:2406.05048); one seventh of the statistical
@@ -341,6 +354,7 @@ arXiv:2401.02945. Matters for exotic models fitted to a public Hubble
 diagram.
 
 ## 13. Heterogeneity of the low-redshift anchor
+<!-- key: heterogeneity-of-the-low-redshift-anchor -->
 
 This is where Sections 1, 3, 5 and 9 compound. Evidence that it is the
 controlling systematic for dark energy:
@@ -365,6 +379,7 @@ Foundation for PS1), untargeted discovery (ZTF, ATLAS), consistent host
 masses.
 
 ## 14. What a referee checks in a results section
+<!-- key: what-a-referee-checks-in-a-results-section -->
 
 1. Which sample exactly: name, version (DES-SN5YR or DES-Dovekie; Union3 or
    Union3.1; Pantheon+ with which host masses), number of SNe, redshift
@@ -391,6 +406,7 @@ masses.
 10. Blinding: what was hidden, and what changed after unblinding.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - The group-level "SN Ia astrophysics" entry of DES-SN5YR Table 7 could not
   be read unambiguously from the HTML extraction and is not quoted.

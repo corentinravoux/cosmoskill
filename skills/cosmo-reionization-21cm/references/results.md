@@ -4,8 +4,10 @@ Scope: current headline measurements and the history of the key numbers.
 Snapshot: 2026-10-07
 
 ## 1. Reionisation history
+<!-- key: reionisation-history -->
 
 ### 1.1 Thomson optical depth τ
+<!-- key: thomson-optical-depth-tau -->
 
 All values are 68% intervals in flat ΛCDM with a tanh (near-instantaneous) reionisation unless stated. The sibling
 `cosmo-cmb` holds the likelihood-level discussion; this table records what was read at source for this skill.
@@ -35,6 +37,7 @@ arXiv:2504.16932]. Adding reionisation-era astrophysical data in place of the lo
 0.067 ± 0.011 [src: arXiv:2607.26373].
 
 ### 1.2 Attempts to raise τ, and their outcome
+<!-- key: attempts-to-raise-tau-and-their-outcome -->
 
 | Mechanism | Outcome | Citation | Flag |
 |---|---|---|---|
@@ -47,6 +50,7 @@ arXiv:2504.16932]. Adding reionisation-era astrophysical data in place of the lo
 | Non-monotonic history with a z ≳ 12 component | claimed necessary to fit Planck τ, patchy-kSZ limits and the Lyα endpoint together; relaxes Σm_ν < 0.39 eV (95%) | Wang & Shan 2026, arXiv:2606.27903 | [src] |
 
 ### 1.3 Neutral fraction against redshift
+<!-- key: neutral-fraction-against-redshift -->
 
 Volume-averaged ⟨x_HI⟩ unless noted. Limits from dark pixels are model-independent upper limits; damping-wing and
 Lyα-visibility values depend on a reionisation-topology model and on the assumed intrinsic spectrum.
@@ -73,6 +77,7 @@ Lyα-visibility values depend on a reionisation-topology model and on the assume
 | 5.2, 5.8, 6.7, 7.7, 9.8 | ceilings 0.36, 0.76, 0.74, 0.84, 1.0 | upper envelope of Lyα escape, 250 DIVER galaxies | Zhu et al. 2026, arXiv:2608.19311 | [src] |
 
 ### 1.4 End of reionisation from the Lyα forest
+<!-- key: end-of-reionisation-from-the-lyalpha-forest -->
 
 - Long dark gaps: the fraction of sightlines with a gap longer than 30 h⁻¹Mpc is F₃₀ ≃ 0.9, 0.6 and 0.15 at z = 6.0,
   5.8 and 5.6, and the last long gap persists to z ≃ 5.3 (55 quasars) [src: Zhu et al. 2021, arXiv:2109.06295].
@@ -98,6 +103,7 @@ Lyα-visibility values depend on a reionisation-topology model and on the assume
   agreement with Planck [src: Zier et al. 2026, arXiv:2605.15310].
 
 ### 1.5 Patchy kinetic SZ
+<!-- key: patchy-kinetic-sz -->
 
 The kSZ power at ℓ = 3000 is the sum of a late-time (homogeneous) part and a reionisation (patchy) part; the duration
 limit depends on the template assumed for the first. Definitions of "duration" differ between papers and must be
@@ -122,6 +128,7 @@ is then in ≈ 2σ tension with the SPT patchy-kSZ limits [src: Cain et al. 2025
 polarised SZ are covered in `cosmo-cmb-lss-cross-correlations`.
 
 ### 1.6 Lyα emitters as a reionisation probe
+<!-- key: lyalpha-emitters-as-a-reionisation-probe -->
 
 - JWST/NIRISS slitless (PASSAGE): four emitters at 7.5 ≤ z ≤ 9.5 in four pointings; the luminosity function drops by a
   factor ≲ 10 relative to post-reionisation, less than pre-JWST expectations, and the emitters are inferred to sit in
@@ -134,6 +141,7 @@ polarised SZ are covered in `cosmo-cmb-lss-cross-correlations`.
   arXiv:2608.19311).
 
 ## 2. 21 cm global signal
+<!-- key: 21-cm-global-signal -->
 
 | Statement | Value | Citation | Flag |
 |---|---|---|---|
@@ -155,6 +163,7 @@ simulations only [src: Sims et al. 2025, arXiv:2506.20042]. No new sky measureme
 EDGES-3 was returned by the date-sorted search of 2026-10-10.
 
 ## 3. 21 cm power-spectrum upper limits at z > 6
+<!-- key: 21-cm-power-spectrum-upper-limits-at-z-6 -->
 
 All entries are 2σ (95%) **upper limits** on Δ²₂₁(k); no interferometer has detected the cosmological 21 cm power
 spectrum at z > 6. Limits are quoted as the papers quote them, either as Δ² in mK² or as (Δ)² with Δ in mK.
@@ -207,6 +216,7 @@ What the limits exclude.
   that the inference is model-dependent [src: Sims et al. 2025, arXiv:2504.09725].
 
 ## 4. Post-reionisation HI intensity mapping
+<!-- key: post-reionisation-hi-intensity-mapping -->
 
 The measured quantity is a clustering amplitude, never Ω_HI alone: cross-correlations give Ω_HI b_HI r (r is the
 HI–galaxy correlation coefficient), auto-spectra give Ω_HI b_HI or an amplitude that includes redshift-space
@@ -245,6 +255,7 @@ Notes.
   no detection is claimed in the abstract [src: Deng et al. 2026, arXiv:2604.27465].
 
 ## 5. Line-intensity mapping (CO, [CII], Lyα)
+<!-- key: line-intensity-mapping-co-cii-lyalpha -->
 
 State of the field in one sentence: outside the 21 cm line, no three-dimensional line-intensity power spectrum has
 been detected; a 2026 methods paper states that "other lines that reveal large-scale structure or astrophysical
@@ -280,6 +291,7 @@ Notes.
   arXiv:2511.02985].
 
 ## 6. JWST early galaxies as a cosmological constraint
+<!-- key: jwst-early-galaxies-as-a-cosmological-constraint -->
 
 The cosmological question is narrow: does any observed abundance exceed what the ΛCDM halo mass function and the
 cosmic baryon fraction allow? The sibling `cosmo-tensions-anomalies` treats it as a tension; the entries below are
@@ -302,8 +314,10 @@ damping wing in MoM-z14 is reported as tentative evidence of local ionisation at
 neutral IGM [src: arXiv:2505.11263].
 
 ## 7. History of the key numbers
+<!-- key: history-of-the-key-numbers -->
 
 ### τ
+<!-- key: tau -->
 
 | Year | Value | What changed | Citation | Flag |
 |---|---|---|---|---|
@@ -318,6 +332,7 @@ None of the pre-2025 values is superseded in the sense of being wrong; they are 
 Planck HFI data. The value to quote depends on the likelihood named.
 
 ### Duration of reionisation from kSZ
+<!-- key: duration-of-reionisation-from-ksz -->
 
 | Year | Value | Citation | Flag |
 |---|---|---|---|
@@ -331,6 +346,7 @@ The 2020 central value Δz = 1.0 should no longer be quoted as a measurement: th
 and the current SPT statement is an upper limit.
 
 ### Neutral fraction near z = 7
+<!-- key: neutral-fraction-near-z-7 -->
 
 | Year | ⟨x_HI⟩ | Probe | Citation | Flag |
 |---|---|---|---|---|
@@ -342,6 +358,7 @@ and the current SPT statement is an upper limit.
 All four agree within their errors; the errors have not shrunk in eight years.
 
 ### 21 cm power-spectrum limits
+<!-- key: cm-power-spectrum-limits -->
 
 | Year | Milestone | Citation | Flag |
 |---|---|---|---|
@@ -355,6 +372,7 @@ The first HERA Phase II limit at z = 7.05 (1.78 × 10³ mK² at k = 0.70) is sha
 arXiv:2511.21289].
 
 ### HI intensity mapping
+<!-- key: hi-intensity-mapping -->
 
 | Year | Milestone | Citation | Flag |
 |---|---|---|---|
@@ -366,12 +384,14 @@ arXiv:2511.21289].
 | 2026 | auto-spectrum on cosmological scales at z = 0.42 (MeerKLASS, S/N 6.2) | arXiv:2610.12158 | [src] |
 
 ### Other lines
+<!-- key: other-lines -->
 
 COMAP: ⟨Tb⟩² < 49 μK² in 2021 [src: arXiv:2111.05927]; in 2024 a spectrum about ten times more sensitive, still
 consistent with zero [src: arXiv:2406.07511]. The mean CO and [CII] backgrounds were first detected in 2026 by
 tomographic cross-correlation, not by a line-intensity-mapping instrument [src: arXiv:2602.02658].
 
 ## Not verified
+<!-- key: not-verified -->
 
 - The Planck PR4 τ values of the original PR4 likelihood papers (two entries of the `cosmo-cmb` bibliography) were not
   read here; the PR4 row of section 1.1 is the tanh control fit of arXiv:2609.24989.

@@ -6,8 +6,10 @@ Snapshot: 2026-10-07 (suite date; literature searches run 2026-10-10)
 Provenance flags as in the other files; all H0 values in km s⁻¹ Mpc⁻¹.
 
 ## 1. Live controversies
+<!-- key: live-controversies -->
 
 ### 1.1 What does GW170817 say about H0?
+<!-- key: what-does-gw170817-say-about-h0 -->
 
 The gravitational-wave data alone give a 14% measurement that cannot separate 67 from
 73. Adding electromagnetic information on the viewing angle gives 4–7% errors, and
@@ -30,6 +32,7 @@ Underneath sits a prior question: the high-H0 tail of the GW-only posterior is a
 property of the distance prior, not of the data (arXiv:2606.30504) [src].
 
 ### 1.2 Is the catalogue-level H0 a measurement of galaxies or of black-hole astrophysics?
+<!-- key: is-the-catalogue-level-h0-a-measurement-of -->
 
 - The LVK position in each release: the mass spectrum drives the result
   (arXiv:2111.03604; arXiv:2605.27227 §4.1). In GWTC-3 only GW190814 was informative
@@ -49,6 +52,7 @@ gives it as a percentage improvement over the spectral-only posterior, different
 the two pipelines; the numbers are macros in the source and were not recovered.
 
 ### 1.3 Does the black-hole mass spectrum evolve with redshift, and does it matter yet?
+<!-- key: does-the-black-hole-mass-spectrum-evolve-with -->
 
 - It matters in principle: up to 3σ with 2000 events (arXiv:2312.11627); about 1.5σ in a
   blinded challenge at O4 sensitivity (arXiv:2412.14244); the second blinded challenge
@@ -66,6 +70,7 @@ Both sides agree that the answer changes with sensitivity. The practical rule to
 quote the shift between mass-model families as a systematic.
 
 ### 1.4 Binary black holes with claimed counterparts
+<!-- key: binary-black-holes-with-claimed-counterparts -->
 
 GW190521 with the flare ZTF19abanrhr gives H0 between 43 and 62 depending on the
 waveform (arXiv:2009.14199) and 48 (+24/−10) in wCDM (arXiv:2009.14057) [src]. A 2026
@@ -76,6 +81,7 @@ bright siren available" (arXiv:2605.27227 §4.1) [src]. A chance-coincidence ana
 the 13 associations was not read here.
 
 ### 1.5 Is the galaxy-catalogue method biased?
+<!-- key: is-the-galaxy-catalogue-method-biased -->
 
 A claimed bias on mock data (Trott & Huterer 2021) was answered by Gair et al. 2022
 (arXiv:2212.08694): unbiased when selection effects and priors are implemented
@@ -85,6 +91,7 @@ schemes (arXiv:2310.08991). The method is unbiased in principle and fragile in
 practice.
 
 ### 1.6 Where are the baryons, according to FRBs?
+<!-- key: where-are-the-baryons-according-to-frbs -->
 
 - `f_igm = 0.59 (+0.11/−0.10)` from eight sightlines with foreground mapping
   (arXiv:2402.00505); `f_IGM = 0.76 (+0.10/−0.11)` (arXiv:2409.16952); `≥ 0.69` at 95%
@@ -98,6 +105,7 @@ practice.
   not settled. See `cosmo-weak-lensing` and `cosmo-cmb-lss-cross-correlations`.
 
 ### 1.7 Can FRBs measure H0?
+<!-- key: can-frbs-measure-h0 -->
 
 Published values run from 62 to 85 (results file, §4.3). The 2.8% statistical error of
 Xu et al. 2025 is not the total error, by the authors' own list of systematics. The
@@ -107,6 +115,7 @@ not independent of early-universe physics unless something breaks the degeneracy
 (gravitational-wave distances, arXiv:2508.14434, **forecast**).
 
 ### 1.8 Lensed supernovae: low or high?
+<!-- key: lensed-supernovae-low-or-high -->
 
 Refsdal gives 64.8 to 66.6 (arXiv:2305.06367) and 66.0 ± 4.3 on re-modelling
 (arXiv:2509.09979); Encore 66.9 (+11.2/−8.1) (arXiv:2509.12301); H0pe 75.7 (+8.1/−5.5)
@@ -116,6 +125,7 @@ cluster mass models can be trusted at the level of their quoted spread; the gala
 scale system and the standard-candle magnification test are the two ways forward.
 
 ### 1.9 Are bright sirens still the main route?
+<!-- key: are-bright-sirens-still-the-main-route -->
 
 The 2017–2018 forecasts assumed tens of binary neutron stars with counterparts. None
 has followed GW170817, and the rate estimates have come down (arXiv:2609.12053). The
@@ -123,6 +133,7 @@ same paper argues that a few bright sirens remain essential because they break t
 H0–Ω_m degeneracy of dark sirens, or that dark sirens need an external Ω_m prior.
 
 ## 2. Method debates
+<!-- key: method-debates -->
 
 | Question | Positions | References |
 |---|---|---|
@@ -137,6 +148,7 @@ H0–Ω_m degeneracy of dark sirens, or that dark sirens need an external Ω_m p
 | Bright and dark sirens | independent posteriors multiplied; or one population model | arXiv:2609.12053 |
 
 ### 2.1 Tracer choice for a field-level siren H0
+<!-- key: tracer-choice-for-a-field-level-siren-h0 -->
 
 Which tracer field to compare with a siren field in `d_L` is not settled in the
 literature read here. What the cited papers establish:
@@ -156,6 +168,7 @@ Not verified here: the supernova sample sizes, the Manticore-Local depth and the
 Hamlet-PM comparison quoted in that report.
 
 ## 3. What the next data decide
+<!-- key: what-the-next-data-decide -->
 
 | Data | Expected | Decides |
 |---|---|---|
@@ -168,6 +181,7 @@ Hamlet-PM comparison quoted in that report.
 | Further galaxy-scale lensed supernovae | delays of days to weeks | lens-model dependence against cluster systems |
 
 ## 4. Forecasts
+<!-- key: forecasts -->
 
 Every row is a **forecast**, not a measurement.
 
@@ -209,6 +223,7 @@ Einstein Telescope science and configurations are in arXiv:2503.12263; that pape
 read at abstract level only and no cosmological number is taken from it.
 
 ## 5. Misconceptions and stale claims
+<!-- key: misconceptions-and-stale-claims -->
 
 | Claim | Why it is wrong or stale | Corrected by |
 |---|---|---|
@@ -234,6 +249,7 @@ read at abstract level only and no cosmological number is taken from it.
 | "Modified GW propagation is excluded." | `Xi_0 = 1.4 (+1.0/−0.4)` in GWTC-4.0: consistent with 1, weakly constrained. | arXiv:2509.04348 |
 
 ## Not verified
+<!-- key: not-verified -->
 
 - Lensed gravitational waves: LVK searches and their results were not read; only 2026
   forecast titles were seen.

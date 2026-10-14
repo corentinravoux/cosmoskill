@@ -5,13 +5,17 @@ working, citable knowledge of observational cosmology: one hub skill and
 twenty-one domain skills, each built from the literature, with a bibliography
 checked against arXiv.
 
+The package holds general knowledge of the field and links every statement to
+its source. It is not a database of verified numbers: when a number matters,
+the assistant reads it again in the linked paper.
+
 A skill here is a reference, not a tutorial. It is written for an assistant
 helping a cosmology researcher review a manuscript, plan an analysis or check
 a claim, and it answers three questions for its domain: what is the current
 number and where does it come from, what does a referee check, and which
 statements that still circulate are out of date.
 
-Version 0.2.0. Snapshot of the literature: October 2026.
+Version 0.3.0. Snapshot of the literature: October 2026.
 
 ## What is in it
 
@@ -20,7 +24,7 @@ cosmoskill/
 ├── skills/
 │   ├── observational-cosmology/   hub: which skill holds what, review rubric,
 │   │   ├── references/            conventions, cross-probe digest
-│   │   └── scripts/               verify_sources.py, fetch_abstracts.py
+│   │   └── scripts/               fetch_paper.py, layers.py, verify_sources.py
 │   └── cosmo-<domain>/            21 domain skills, same shape each
 │       ├── SKILL.md               when to use, file map, core facts, checklists
 │       └── references/
@@ -31,7 +35,7 @@ cosmoskill/
 │           ├── open-questions.md
 │           └── sources.tsv        the bibliography, machine-checked
 ├── docs/                          specification, roadmap, agent brief, history
-├── tools/                         lint and structure checks for maintainers
+├── tools/                         upkeep: section keys, level blocks
 ├── tests/
 └── .claude-plugin/                plugin and marketplace manifests
 ```
@@ -87,7 +91,37 @@ S=skills/observational-cosmology/scripts
 python3 $S/verify_sources.py skills/cosmo-lyman-alpha
 python3 $S/verify_sources.py skills/*/                 # all of them
 python3 $S/verify_sources.py --offline skills/*/       # no network
-python3 $S/fetch_abstracts.py 2503.14738 2607.27410    # read what a paper says
+python3 $S/fetch_paper.py 2503.14739 --abstract        # read what a paper says
+python3 $S/fetch_paper.py 2503.14739 --grep "8.632"    # find a number in its body
+```
+
+## Levels
+
+Every skill answers at the depth the question calls for, and says which:
+
+| Level | Read | For |
+|---|---|---|
+| L1 | the skill's `SKILL.md` | what a domain is, where it stands, what to watch for |
+| L2 | one reference file | a value, its source, a referee point |
+| L3 | a specialist dossier | how a result is obtained, which method to choose (none written yet) |
+| L4 | the cited paper | a number about to enter a manuscript |
+
+The rule is to answer at the lowest level that answers, and to end with a
+line such as `[cosmoskill L2 · base · cosmo-cmb/results#optical-depth]`. The
+last part is a section key: every section of every file carries one, as a
+comment under its heading, and keeps it when the heading is reworded.
+
+## Refining it for your own work
+
+The package is a base layer. You add to it without editing it, in a personal
+layer (`~/.cosmoskill/`) or a project layer (`.cosmoskill/` in a project): a
+profile saying which domains are yours and which conventions you use, and
+notes attached to sections of the package by their key. The skills read
+these layers and say when an answer draws on them. `docs/layers-v0.md`
+explains the format.
+
+```bash
+python3 skills/observational-cosmology/scripts/layers.py init
 ```
 
 ## What to trust, and how far
@@ -116,9 +150,8 @@ That leaves limits a user should know:
 
 Limits of this version in particular:
 
-- Two depths only: the facts in each `SKILL.md` and the reference files. No
-  specialist dossiers yet, and every question in a domain gets the same
-  material.
+- No specialist dossier (L3) is written yet: below the paper itself, the
+  deepest material is the reference files.
 - Depth is uneven across domains: 91 to 192 sources, for no principled
   reason. The first version was built for one researcher, and the domains
   nearest to that researcher's work are the deepest.
@@ -127,8 +160,8 @@ Limits of this version in particular:
 - Domains without a skill: instrument and data pipelines, photometry and
   photometric redshifts, the cosmic web, big-bang nucleosynthesis, the
   galaxy–halo connection, early-universe exotica, machine-learning methods.
-- No personal or project layer yet: the package cannot be refined without
-  editing it.
+- Local layers hold a profile and free-text notes only. A layer cannot yet
+  add or override a number with its own checked source.
 
 `docs/specs/` and `docs/plans/` hold the specification and the roadmap that
 address these.
@@ -177,15 +210,20 @@ appeared since the snapshot date, read it at source, add the result and move
 the superseded value to the history, add the bibliography rows, bump the
 date, run the checker. Never refresh from memory.
 
-## For maintainers
+## Updating
+
+The skills are meant to be refreshed every few months. The cycle is written
+out step by step in
+`skills/observational-cosmology/references/suite-conventions.md`, and asking
+the assistant to update a domain loads it. After editing a skill:
 
 ```bash
-python3 tools/lint_generic.py        # no machine path, no single-user reference
-python3 tools/check_structure.py     # names, descriptions, file maps, counts
+python3 tools/assign_keys.py     # give new sections their key
+python3 tools/sync_blocks.py     # regenerate the level block of each SKILL.md
+python3 skills/observational-cosmology/scripts/verify_sources.py skills/cosmo-<domain>
+python3 tools/check_keys.py --against <last release tag or commit>
 python3 -m unittest discover -s tests
 ```
-
-The same checks run on every push (`.github/workflows/check.yml`).
 
 ## Licence
 

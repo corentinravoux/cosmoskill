@@ -16,8 +16,10 @@ estimate (arXiv:2007.01844) [src]. A comparison at the 0.5σ level therefore
 needs the body of each paper.
 
 ## 1. Current headline measurements (2025–2026)
+<!-- key: current-headline-measurements-2025-2026 -->
 
 ### 1.1 Cosmic shear, Stage-III final analyses
+<!-- key: cosmic-shear-stage-iii-final-analyses -->
 
 | Dataset | S8 | Other | Model / choices | Citation | Flag |
 |---|---|---|---|---|---|
@@ -41,6 +43,7 @@ Bayesian evidence and that the choice of IA and baryon model can move S8 by up
 to 1σ (arXiv:2602.10065) [src].
 
 ### 1.2 3×2pt and multi-probe
+<!-- key: 3x2pt-and-multi-probe -->
 
 | Dataset | Result | Model | Citation | Flag |
 |---|---|---|---|---|
@@ -83,6 +86,7 @@ therefore does not drive the dynamical-dark-energy preference; see
 `cosmo-dark-energy-modified-gravity`.
 
 ### 1.3 Reanalyses that change the astrophysical model rather than the data
+<!-- key: reanalyses-that-change-the-astrophysical-model -->
 
 | Reanalysis | S8 | What changed | Citation | Flag |
 |---|---|---|---|---|
@@ -94,6 +98,7 @@ therefore does not drive the dynamical-dark-energy preference; see
 | KiDS-Legacy pseudo-Cℓ with BNT k-cut (k ≥ 0.33 Mpc⁻¹ removed) | 0.798 ± 0.045 | within 0.1σ of the fiducial band-power result; 0.717 +0.047/−0.046 when the Gaussian covariance is built from the observed data vector | Gu et al. 2026, arXiv:2607.04384 | [src] |
 
 ### 1.4 Beyond two-point (pointer to `cosmo-beyond-two-point`)
+<!-- key: beyond-two-point-pointer-to-cosmo-beyond-two -->
 
 | Dataset | Result | Citation | Flag |
 |---|---|---|---|
@@ -106,6 +111,7 @@ clustering-redshift recalibration of arXiv:2511.18134 [der: comparison of the
 two abstracts; the HSC abstract does not mention the recalibration].
 
 ### 1.5 Baryonic suppression measured from or for lensing
+<!-- key: baryonic-suppression-measured-from-or-for -->
 
 | Measurement | Value | Citation | Flag |
 |---|---|---|---|
@@ -118,6 +124,7 @@ The 6×2pt result (weak feedback) and the tSZ, kSZ, X-ray and KiDS P_m(k)
 results (strong feedback) are in open disagreement; see `open-questions.md`.
 
 ### 1.6 3×2pt with DESI lenses on the older shear catalogues
+<!-- key: 3x2pt-with-desi-lenses-on-the-older-shear -->
 
 | Lensing data | S8 | Citation | Flag |
 |---|---|---|---|
@@ -131,6 +138,7 @@ catalogue and the original HSC Y3 redshift calibration, so they are not a test
 of the 2025 recalibrations [der: from the data sets named in the abstract].
 
 ## 2. The CMB reference values
+<!-- key: the-cmb-reference-values -->
 
 | Reference | Value | Citation | Flag |
 |---|---|---|---|
@@ -153,6 +161,7 @@ as history: Abdalla et al. 2022 (arXiv:2203.06142) and the CosmoVerse white
 paper (Di Valentino et al. 2025, arXiv:2504.01669).
 
 ## 3. History of the key numbers
+<!-- key: history-of-the-key-numbers -->
 
 All rows: cosmic shear alone, flat ΛCDM, unless stated. "Tension" is the
 figure the paper itself quoted, against the CMB data set it named.
@@ -187,6 +196,7 @@ figure the paper itself quoted, against the CMB data set it named.
 | 2026 | UNIONS-3500 (non-tomographic) | ~3500 deg² | 0.831 +0.067/−0.078 (ξ±); 0.891 +0.057/−0.084 (Cℓ) | within 1σ of Planck | arXiv:2605.13547, arXiv:2605.13543 | [src] |
 
 ### What supersedes what
+<!-- key: what-supersedes-what -->
 
 - **KiDS:** KiDS-450 (0.745) → KV450 (0.737) → KiDS-1000 (0.759) → KiDS-Legacy
   (0.815). The last step is a +0.056 shift in the central value [der: 0.815 −
@@ -211,6 +221,7 @@ catalogue can differ: 0.780 (Cℓ) against 0.823 (ξ±) for Y1 [src:
 arXiv:1809.09148, arXiv:1906.06041].
 
 ## Not verified
+<!-- key: not-verified -->
 
 - The Planck 2018 S8 value with its uncertainty (body of arXiv:1807.06209, not
   read this session).

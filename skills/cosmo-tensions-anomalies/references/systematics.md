@@ -9,6 +9,7 @@ Flags as in `results.md`: `[src]` read this session in the cited paper; `[sec: X
 "Mundane" means: an explanation that leaves ΛCDM untouched — a systematic in one data set, an astrophysical nuisance, a statistical choice, or chance. Each row gives the mechanism, the size where a paper quantifies it, and the verdict at the snapshot: **closed** (tested and excluded as the explanation), **open** (quantified, not excluded), or **operative** (shown to have moved the number).
 
 ## 1. H0
+<!-- key: h0 -->
 
 | Explanation | Size | Verdict | Quantifying paper | Flag |
 |---|---|---|---|---|
@@ -28,6 +29,7 @@ Flags as in `results.md`: `[src]` read this session in the cited paper; `[sec: X
 The gap to close is 0.176 ± 0.035 mag (arXiv:2112.04510) [sec: h0]. No single quantified systematic above reaches half of it; the open rows (calibrator selection, extragalactic selection, single anchor) are the ones a referee should ask about.
 
 ## 2. S8
+<!-- key: s8 -->
 
 | Explanation | Size | Verdict | Quantifying paper | Flag |
 |---|---|---|---|---|
@@ -49,6 +51,7 @@ The gap to close is 0.176 ± 0.035 mag (arXiv:2112.04510) [sec: h0]. No single q
 The high eRASS1 value (0.86 ± 0.01) is the one S8 number for which no mundane downward correction has been published; its companion result, a growth index of 1.19 ± 0.21, shows that the same data prefer less low-redshift growth when given the freedom [sec: cl].
 
 ## 3. A_L, tau and the CMB-BAO discrepancy
+<!-- key: al-tau-and-the-cmb-bao-discrepancy -->
 
 | Explanation | Size | Verdict | Quantifying paper | Flag |
 |---|---|---|---|---|
@@ -62,6 +65,7 @@ The high eRASS1 value (0.86 ± 0.01) is the one S8 number for which no mundane d
 | CMB–BAO: chance | a 2–3σ difference between two data sets in one model | open; the simplest reading | — | — |
 
 ## 4. w0wa preference
+<!-- key: w0wa-preference -->
 
 | Explanation | Size | Verdict | Quantifying paper | Flag |
 |---|---|---|---|---|
@@ -77,6 +81,7 @@ The high eRASS1 value (0.86 ± 0.01) is the one S8 number for which no mundane d
 | Repeated looks at accumulating data | Wilks-based σ read as if the test were done once | open | ID in sibling | [sec: de] |
 
 ## 5. Cosmic dipole
+<!-- key: cosmic-dipole -->
 
 | Explanation | Size | Verdict | Quantifying paper | Flag |
 |---|---|---|---|---|
@@ -95,6 +100,7 @@ The high eRASS1 value (0.86 ± 0.01) is the one S8 number for which no mundane d
 What stays unexplained: two populations with no shared objects (radio galaxies and infrared quasars) both exceed the expectation, with directions near the CMB dipole (arXiv:2206.05624) [src]. What weakens the case: the quoted significance of the single strongest catalogue ranges from 3.3σ to 6.7σ with the null model, and the two measurements that determine the velocity without counting sources agree with 370 km/s.
 
 ## 6. Large-angle CMB anomalies
+<!-- key: large-angle-cmb-anomalies -->
 
 | Explanation | Size | Verdict | Quantifying paper | Flag |
 |---|---|---|---|---|
@@ -110,6 +116,7 @@ What stays unexplained: two populations with no shared objects (radio galaxies a
 The mundane explanation that cannot be excluded is cosmic variance: one sky, a handful of modes, statistics chosen after the fact. The only new information can come from large-angle polarisation and from three-dimensional tracers of the same modes.
 
 ## 7. Bulk flow
+<!-- key: bulk-flow -->
 
 All rows [sec: pv]; IDs for papers not listed in `results.md` §8 are in `cosmo-peculiar-velocities`.
 
@@ -122,6 +129,7 @@ All rows [sec: pv]; IDs for papers not listed in `results.md` §8 are in `cosmo-
 | Neglected relativistic terms of order vz | bias "toward larger values by ~10%" | operative, small |
 
 ## 8. JWST abundance
+<!-- key: jwst-abundance -->
 
 | Explanation | Size | Verdict | Quantifying paper | Flag |
 |---|---|---|---|---|
@@ -132,6 +140,7 @@ All rows [sec: pv]; IDs for papers not listed in `results.md` §8 are in `cosmo-
 | Cosmic variance of small fields, initial mass function, bursty star formation | not quantified in the papers read | open | — | — |
 
 ## 9. Tension-metric pitfalls
+<!-- key: tension-metric-pitfalls -->
 
 Worked cases. Each row is one data situation where two defensible computations give different answers.
 
@@ -158,6 +167,7 @@ Worked cases. Each row is one data situation where two defensible computations g
 General rules are in `physics-and-methods.md` §1.3; the statistical theory is in `cosmo-statistics-inference`.
 
 ## 10. What a referee checks
+<!-- key: what-a-referee-checks -->
 
 For any sentence of the form "X is in n σ tension with Y":
 
@@ -173,6 +183,7 @@ For any sentence of the form "X is in n σ tension with Y":
 10. For a proposed resolution: does it survive BAO (Ω_m), uncalibrated supernovae (shape), ACT DR6 (damping tail), S8 and BBN at once (`open-questions.md` §2)?
 
 ## Not verified
+<!-- key: not-verified -->
 
 - Galactic extinction, stellar contamination and photometric zero-point gradients as explanations of the CatWISE dipole: not covered by the abstracts read; the Colloquium review (arXiv:2505.23526) discusses systematics and was read in abstract only.
 - The size of cosmic-variance and initial-mass-function effects on the JWST number densities.

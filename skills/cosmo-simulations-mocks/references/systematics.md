@@ -4,6 +4,7 @@ Scope: where simulations and mocks stop being trustworthy — resolution, box si
 Snapshot: 2026-10-07
 
 ## 1. Resolution and box-size effects
+<!-- key: resolution-and-box-size-effects -->
 
 **Mechanism.** Finite particle mass suppresses small-scale power and makes low-mass halos unreliable; a finite box removes modes longer than L, which biases the growth of the modes that are kept (finite-volume effect) and removes their contribution to the covariance (super-sample covariance).
 
@@ -18,6 +19,7 @@ Snapshot: 2026-10-07
 **Validation test a referee expects.** A convergence test at fixed phases with at least one higher resolution, for the statistic actually used, on the scales actually used.
 
 ## 2. Initial-condition and time-stepping errors
+<!-- key: initial-condition-and-time-stepping-errors -->
 
 **Mechanism.** Truncated LPT leaves transients that decay slowly; particle discreteness adds errors that grow from early starts; coarse global time steps (the regime of fast particle-mesh codes) lose small-scale power.
 
@@ -26,6 +28,7 @@ Snapshot: 2026-10-07
 **Referee check.** The LPT order and starting redshift are stated; a simulation older than 2006 started with the Zel'dovich approximation is not a percent-level reference at z > 1.
 
 ## 3. Sub-grid model dependence
+<!-- key: sub-grid-model-dependence -->
 
 **Mechanism.** Feedback recipes are calibrated on a few observables; anything not calibrated is a prediction that differs between suites. Gas expelled from groups lowers the total matter power spectrum at k ≳ 0.3 h/Mpc.
 
@@ -43,6 +46,7 @@ Snapshot: 2026-10-07
 **Validation test a referee expects.** The analysis is repeated with at least two simulations that bracket the plausible range (not two runs of one sub-grid family), and the paper states which variant, not only which suite, was used.
 
 ## 4. HOD assumptions and assembly bias
+<!-- key: hod-assumptions-and-assembly-bias -->
 
 **Mechanism.** A mock galaxy catalogue is a gravity-only halo catalogue plus an occupation model. If occupation depends on halo properties other than mass that also correlate with clustering (assembly bias), or if satellites do not follow the assumed profile and velocity distribution, the mock clustering is wrong in a way that a mass-only HOD fit absorbs into its parameters.
 
@@ -59,6 +63,7 @@ Snapshot: 2026-10-07
 **What remains open.** All data analyses with density-split, wavelet and similar statistics use AbacusSummit with an HOD (`cosmo-beyond-two-point`); a 2026 paper titled "Bounding the Effect of HOD Assumptions on Small-Scale Clustering Constraints" was found by the date-sorted search and not read.
 
 ## 5. Covariance from approximate mocks
+<!-- key: covariance-from-approximate-mocks -->
 
 **Mechanism.** A sample covariance needs N_mocks much larger than the data-vector length, which forces approximate dynamics. The approximation changes the non-Gaussian part of the covariance (the trispectrum and super-sample terms), the shot noise through the bias or halo-assignment model, and the survey realism (fibre assignment, systematics weights).
 
@@ -74,6 +79,7 @@ Snapshot: 2026-10-07
 **Validation test a referee expects.** The calibration reference of the mocks, the number of mocks against the length of the data vector, the correction factors applied (see `cosmo-statistics-inference`), and a comparison with an independent covariance estimate.
 
 ## 6. Lyα-specific simulation limits
+<!-- key: lyalpha-specific-simulation-limits -->
 
 **Resolution and box size pull in opposite directions.** A cell of 20 kpc/h and a box above 40 Mpc/h are the minimum for 1% flux statistics [src] (arXiv:1406.6361); BAO and P3D on large scales need boxes far larger than hydrodynamics can afford at that resolution. The standard escapes are splicing, accurate to about 10% on P1D [src] (arXiv:1406.6361), and emulating a small set of bias and shape parameters that are then attached to linear theory (ForestFlow, arXiv:2409.05682).
 
@@ -90,6 +96,7 @@ Snapshot: 2026-10-07
 **Synthetic spectra are not hydrodynamical.** BAO mocks built from Gaussian or lognormal skewers reproduce the BAO signal and the linear biases (arXiv:1912.02763); they are not valid tests of small-scale or broadband physics. The sibling skill records that fσ8 from the forest fails mock validation.
 
 ## 7. Constrained-simulation limits
+<!-- key: constrained-simulation-limits -->
 
 **Constraint scale.** Information from the data reaches down to a scale set by tracer density, noise and the forward model: about 6 Mpc/h for 2LPT BORG on SDSS-like data [src] (arXiv:1203.3639), about 4 Mpc/h for Manticore-Deep [src] (arXiv:2606.10020), a few tens of megaparsecs for velocity-constrained realisations [src] (arXiv:1510.04900). Everything below it in a resimulation is a random draw. A claim about an individual galaxy-scale object in a constrained run is a claim about the prior.
 
@@ -107,6 +114,7 @@ Snapshot: 2026-10-07
 
 
 ## 8. Emulator and surrogate limits
+<!-- key: emulator-and-surrogate-limits -->
 
 **Mechanism.** An emulator returns a smooth interpolation with no warning when it is asked for a point its training set does not support, or for physics its simulations do not contain.
 
@@ -122,6 +130,7 @@ Snapshot: 2026-10-07
 **Referee check.** The emulator version, its parameter box, and the position of the best fit inside it.
 
 ## 9. Light-cone and survey-realism limits
+<!-- key: light-cone-and-survey-realism-limits -->
 
 - Pseudo-light-cones made of a few snapshots carry no redshift evolution inside a bin; the DESI DR1 EZmocks are built this way [src] (arXiv:2411.12027).
 - Box replication repeats structure along the line of sight and across the sky; Flagship 2 replicates a 3600 Mpc/h box to reach z = 3 over the full sky, while its galaxy catalogue covers one octant [src] (arXiv:2405.13495).
@@ -130,6 +139,7 @@ Snapshot: 2026-10-07
 - Synthetic Lyα spectra reproduce DESI statistics within 10%, not at the precision of the measurement [src] (arXiv:2607.27412).
 
 ## 10. Neutrino and modified-gravity simulation limits
+<!-- key: neutrino-and-modified-gravity-simulation-limits -->
 
 - Neutrino implementations agree at the sub-percent level on common initial data [src] (arXiv:2211.12457); the eleven N-body implementations compared are "not all independent".
 - Modified-gravity codes agree to 1% on the ratio to ΛCDM up to k about 5–10 h/Mpc for three models [src] (arXiv:1506.06384); the absolute spectrum carries the usual gravity-only error, and baryons are not included.
@@ -137,6 +147,7 @@ Snapshot: 2026-10-07
 - Emulators cover neutrino mass up to the largest value simulated (0.5 eV in Aemulus ν, arXiv:2303.09762).
 
 ## What a referee checks
+<!-- key: what-a-referee-checks -->
 
 For any paper that uses a simulation or a mock set:
 
@@ -155,6 +166,7 @@ For any paper that uses a simulation or a mock set:
 13. For any "simulation X is ruled out" statement: like-for-like selection (halo mass from lensing, satellites, miscentring), as in arXiv:2510.15822, and whether an amplitude was left free.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - Quantitative size of box-replication and super-sample effects on lensing statistics (arXiv:2511.20423, snippet only).
 - Halo-finder dependence (friends-of-friends, spherical overdensity, ROCKSTAR, CompaSO) and its effect on mocks: no source was read.

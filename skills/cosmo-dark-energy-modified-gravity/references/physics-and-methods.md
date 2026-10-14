@@ -11,6 +11,7 @@ secondary source; `[der]` derived here. Equations without a flag are textbook
 definitions.
 
 ## 1. What is measured
+<!-- key: what-is-measured -->
 
 Two classes of observable carry the information, and the whole field is
 organised around keeping them apart.
@@ -38,8 +39,10 @@ arXiv:1902.10503 (tests of gravity); Joyce et al. 2014, arXiv:1407.0059
 (theory beyond Λ).
 
 ## 2. Dark-energy equation of state
+<!-- key: dark-energy-equation-of-state -->
 
 ### 2.1 Definitions
+<!-- key: definitions -->
 
 - Equation of state `w = p/(rho c^2)`; Λ has `w = −1`.
 - Density evolution for general `w(a)`: `rho_DE(a)/rho_DE,0 = exp{3 ∫_a^1 [1 +
@@ -65,6 +68,7 @@ arXiv:1902.10503 (tests of gravity); Joyce et al. 2014, arXiv:1407.0059
   null energy condition.
 
 ### 2.2 Why CPL, and what it hides
+<!-- key: why-cpl-and-what-it-hides -->
 
 - Linder 2007, arXiv:0708.0024: the form `w0 + wa z/(1+z)` "is robust", while
   high-order polynomials and cutting off the high-redshift behaviour "can be
@@ -86,6 +90,7 @@ arXiv:1902.10503 (tests of gravity); Joyce et al. 2014, arXiv:1407.0059
   fundamental theory [src].
 
 ### 2.3 Physical classes used in current analyses
+<!-- key: physical-classes-used-in-current-analyses -->
 
 | Class | Definition | Parameters beyond Λ | Reference | Flag |
 |---|---|---|---|---|
@@ -109,6 +114,7 @@ arXiv:1902.10503 (tests of gravity); Joyce et al. 2014, arXiv:1407.0059
   potential.
 
 ### 2.4 Non-parametric and semi-parametric reconstructions
+<!-- key: non-parametric-and-semi-parametric -->
 
 | Method | Use in DESI analyses | Reference | Flag |
 |---|---|---|---|
@@ -120,6 +126,7 @@ arXiv:1902.10503 (tests of gravity); Joyce et al. 2014, arXiv:1407.0059
 | SVD of the distance data into measurable modes | DR2: tension concentrated in the `Omega_m h^2` mode | arXiv:2606.30527 | [src] |
 
 ### 2.5 The null-energy-condition bound on acoustic observables
+<!-- key: the-null-energy-condition-bound-on-acoustic -->
 
 Lewis and Chamberlain 2024, arXiv:2412.13894: for standard early-universe
 physics `theta_*` fixes the ratio of the sound horizon to the distance to last
@@ -132,6 +139,7 @@ interaction, modified gravity, a change of early-universe physics, or a
 systematic error.
 
 ## 3. How the `w0wa` analyses are run
+<!-- key: how-the-w0wa-analyses-are-run -->
 
 Reference implementation: DESI DR2 (arXiv:2503.14738, section "Cosmological
 Inference") [src].
@@ -163,8 +171,10 @@ arXiv:1312.5742) [src]. State the prescription used whenever a CMB likelihood
 with lensing or ISW is combined with a crossing `w(a)`.
 
 ## 4. Modified-gravity parameterisations
+<!-- key: modified-gravity-parameterisations -->
 
 ### 4.1 `mu`, `Sigma`, `eta`
+<!-- key: mu-sigma-eta -->
 
 Metric (conformal Newtonian gauge): `ds^2 = a^2 [−(1 + 2 Psi) dtau^2 + (1 − 2
 Phi) dx^2]`.
@@ -195,6 +205,7 @@ forces the modification to vanish at high redshift, so a constraint on `mu0`
 is a constraint at `z ≲ 1` only.
 
 ### 4.2 Growth index
+<!-- key: growth-index -->
 
 `f(a) ≡ dln D/dln a = Omega_m(a)^gamma`, introduced by Linder
 (arXiv:astro-ph/0507263) with a fitting formula for the linear growth
@@ -204,6 +215,7 @@ than GR at the same `Omega_m(a)`. One number, scale-independent by
 construction; it cannot represent `f(R)`-type scale-dependent growth.
 
 ### 4.3 Effective field theory of dark energy and Horndeski
+<!-- key: effective-field-theory-of-dark-energy-and -->
 
 - Gubitosi, Piazza and Vernizzi 2012, arXiv:1210.0201: a "universal
   description of dark energy and modified gravity that includes all
@@ -232,6 +244,7 @@ construction; it cannot represent `f(R)`-type scale-dependent growth.
   `Omega_0 = 0.012 (+0.001/−0.012)` [src].
 
 ### 4.4 Horndeski after GW170817
+<!-- key: horndeski-after-gw170817 -->
 
 GW170817 and GRB 170817A (arXiv:1710.05834) fixed the speed of gravitational
 waves to that of light: `abs(c_g/c − 1) ≤ 5 × 10^-16` (arXiv:1710.05901)
@@ -258,6 +271,7 @@ models survive, and the caveat about the frequency at which the bound applies,
 were not re-read this session (`open-questions.md`, "Not verified").
 
 ## 5. Screening
+<!-- key: screening -->
 
 A light scalar coupled to matter mediates a fifth force that Solar-System
 tests exclude unless it is suppressed locally. Reviews: arXiv:1407.0059;
@@ -291,6 +305,7 @@ environments behave differently from screened ones.
 | Laboratory and astrophysical searches | new tests "both in the laboratory and using astrophysical objects", and reinterpretation of existing data | arXiv:1709.09071 | [src] |
 
 ## 6. The `E_G` statistic
+<!-- key: the-eg-statistic -->
 
 Zhang et al. 2007, arXiv:0704.1932: an observable "whose expectation value is
 equal to the ratio of the Laplacian of the Newtonian potentials to the
@@ -316,6 +331,7 @@ Reference predictions: 0.401 ± 0.005 at `z = 0.555` and 0.452 ± 0.005 at `z =
   treatment of galaxy bias is required" (arXiv:2511.19194) [src].
 
 ## 7. Model comparison practice
+<!-- key: model-comparison-practice -->
 
 | Statistic | Definition | What it answers | Dependence on priors |
 |---|---|---|---|
@@ -355,6 +371,7 @@ prior-dependent, wider priors boosting the apparent agreement [src]. Details
 belong to `cosmo-statistics-inference`.
 
 ## 8. Blinding
+<!-- key: blinding -->
 
 - DESI BAO measurements are blinded: arXiv:2503.14738 has a dedicated
   subsection [src]; the sibling `cosmo-galaxy-clustering` describes the
@@ -368,6 +385,7 @@ belong to `cosmo-statistics-inference`.
   Independent reanalyses choose their combination knowing the answer.
 
 ## 9. Codes
+<!-- key: codes -->
 
 | Code | Purpose | Reference | Flag |
 |---|---|---|---|
@@ -381,6 +399,7 @@ belong to `cosmo-statistics-inference`.
 | Cobaya, CAMB, iminuit, getdist, PolyChord, anesthetic | sampling, theory, minimisation, plotting, evidence in the DESI analyses | named in arXiv:2503.14738 and arXiv:2503.14743 | [src] |
 
 ## 10. Conventions and where the community is split
+<!-- key: conventions-and-where-the-community-is-split -->
 
 - `wa` is defined with `(1 − a)`; older papers use `w' = dw/dz` at `z = 0` or
   `dw/dln a`. `w'` of Caldwell and Linder is the derivative in units of the

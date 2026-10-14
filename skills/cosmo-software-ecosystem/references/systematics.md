@@ -7,8 +7,10 @@ Snapshot: 2026-10-11
 Provenance: "installed" is a docstring or signature read in the released package at the stated version (camb 2.0.4, pyccl 3.3.6, astropy 8.0.1, healpy 1.19.0, emcee 3.1.6, cosmoprimo 1.0.0); "checkout" is the source repository read at the stated version (CLASS v3.2.3, pypower 1.0.0) or at a development state (picca, flip); "context7" is library documentation fetched on 2026-10-11. Defaults change between versions: re-read them for the version in use.
 
 ## 1. Units of k, P(k) and distances: which codes carry h
+<!-- key: units-of-k-p-k-and-distances-which-codes-carry-h -->
 
 ### 1.1 The table
+<!-- key: the-table -->
 
 | Code | k | P(k) | Distances | H(z) | Source |
 |---|---|---|---|---|---|
@@ -22,6 +24,7 @@ Provenance: "installed" is a docstring or signature read in the released package
 | velocileptors | not stated in the README: the output is in the units of the input `klin`, `plin` | same | — | — | repository README |
 
 ### 1.2 Traps that follow
+<!-- key: traps-that-follow -->
 
 - **Mixed conventions inside CAMB.** The same object takes `kmax` in Mpc⁻¹ in `set_matter_power` and returns k/h from `get_matter_power_spectrum`. For `maxkh` the docstring says to "check consistent with input params.Transfer.kmax", which is in the other unit [src: camb 2.0.4 installed].
 - **CLASS has two spellings of the same input.** `P_k_max_h/Mpc` and `P_k_max_1/Mpc` are different parameters; `sigma(R, z)` takes R in Mpc unless `h_units=True`, so σ8 is `sigma(8/h, z)` [src: CLASS v3.2.3 checkout].
@@ -35,8 +38,10 @@ Provenance: "installed" is a docstring or signature read in the released package
 - **CAMB σ8 arrays run backwards in redshift.** `get_sigma8` and `get_fsigma8` return values "in order of increasing time (decreasing redshift)" [src: camb 2.0.4 installed].
 
 ## 2. Neutrinos and the definition of the matter field
+<!-- key: neutrinos-and-the-definition-of-the-matter-field -->
 
 ### 2.1 Default neutrino sector
+<!-- key: default-neutrino-sector -->
 
 | Code | Default N_eff | Default masses | Hierarchy default | Source |
 |---|---|---|---|---|
@@ -56,6 +61,7 @@ Consequences:
 - The benchmark N_eff = 3.0440 ± 0.0002 is from arXiv:2012.02726; 3.046 survives in stored cosmologies such as astropy `Planck18`.
 
 ### 2.2 Which field σ8 and P(k) refer to
+<!-- key: which-field-sigma8-and-p-k-refer-to -->
 
 - CAMB: the default variable of `get_matter_power_spectrum` is `delta_tot` (total matter, with massive neutrinos); `delta_nonu` (CDM plus baryons) is a separate transfer variable [src: camb 2.0.4 installed, `model.transfer_names`].
 - CLASS: `pk` is total matter and `pk_cb` is CDM plus baryons; `sigma8()` and `sigma8_cb()` are separate methods [src: CLASS v3.2.3 checkout, `classy.pyx`].
@@ -64,6 +70,7 @@ Consequences:
 - Which of the two fields a galaxy-clustering model should be fed in a massive-neutrino cosmology is a theory question treated in the sibling `cosmo-theory-foundations`; the software check is which spectrum the pipeline actually requests from the engine.
 
 ### 2.3 Three definitions of fσ8
+<!-- key: three-definitions-of-fsigma8 -->
 
 | Code | Definition | Source |
 |---|---|---|
@@ -75,6 +82,7 @@ These agree in ΛCDM without massive neutrinos and differ once the growth is sca
 A peculiar-velocity fσ8 compared with a "Planck prediction" should say which of the three produced the prediction.
 
 ## 3. Default accuracy and non-linear settings of Boltzmann solvers
+<!-- key: default-accuracy-and-non-linear-settings-of -->
 
 | Setting | CAMB 2.0.4 default | Note |
 |---|---|---|
@@ -102,6 +110,7 @@ All rows [src: camb 2.0.4 installed].
 - **Dark energy across w = −1.** A w0wa model crossing the phantom divide needs the PPF prescription (arXiv:0808.3125). The default CAMB object is a fluid model; the CLASS example file sets `use_ppf = yes` and cosmoprimo defaults to `use_ppf=True`. State the model used.
 
 ## 4. Sampler defaults
+<!-- key: sampler-defaults -->
 
 | Sampler | Default | Value | Source |
 |---|---|---|---|
@@ -132,8 +141,10 @@ Traps:
 Convergence practice and what R − 1 = 0.01 does and does not guarantee are in the sibling `cosmo-statistics-inference`.
 
 ## 5. Estimator conventions
+<!-- key: estimator-conventions -->
 
 ### 5.1 pypower (`CatalogFFTPower`, version 1.0.0 checkout)
+<!-- key: pypower-catalogfftpower-version-1-0-0-checkout -->
 
 | Argument | Default | Note |
 |---|---|---|
@@ -151,6 +162,7 @@ All rows [src: pypower checkout, `fft_power.py`].
 The checkout read is a 2023 commit; the repository was last pushed on 2026-03-27 and may differ.
 
 ### 5.2 Others
+<!-- key: others -->
 
 - **pycorr.** The pair counter is Corrfunc, by default the `desi` branch of the cosmodesi fork [src: repository README], which is a different source from the Corrfunc release on PyPI (2.5.3).
 - **TreeCorr.** Defaults: metric `'Euclidean'`, `bin_type='Log'`, `var_method='shot'`, `flip_g1` and `flip_g2` False [src: TreeCorr 5.1 documentation via context7]. The default `bin_slop` is an approximation, not exact pair counting (see `results.md`, section 5). Shear sign conventions differ between catalogues; `flip_g2` is the switch.
@@ -160,6 +172,7 @@ The checkout read is a 2023 commit; the repository was last pushed on 2026-03-27
 - **Fourier convention.** None of the docstrings read this session states the Fourier convention; the pyccl `sigmaR` formula, σ_R² = (1/2π²) ∫ dk k² P(k) |W(kR)|², fixes the P(k) normalisation pyccl uses [src: pyccl 3.3.6 installed]. See `cosmo-theory-foundations` for the conventions.
 
 ## 6. Sphere and lensing conventions
+<!-- key: sphere-and-lensing-conventions -->
 
 All from healpy 1.19.0 installed docstrings [src].
 
@@ -179,6 +192,7 @@ All from healpy 1.19.0 installed docstrings [src].
 - pyccl correlation functions warn that "for scales smaller than ∼ 0.1°, the input power spectrum should be sampled to sufficiently high ℓ to ensure the Hankel transform is well-behaved" [src: pyccl 3.3.6 installed].
 
 ## 7. Documented cases where a default changed a published result
+<!-- key: documented-cases-where-a-default-changed-a -->
 
 1. **MultiNest in DES Y1.** Credible intervals were "somewhat narrower" and evidences inconsistent compared with PolyChord; DES Y3 changed its baseline sampler and published recommended settings for test and final chains (Lemos et al. 2022, arXiv:2202.08233).
 2. **CAMB v1 lensing cutoff.** The Planck-era default max(kη₀) = 10375 leaves 1.5 % errors in TT by ℓ = 3000 and Δχ² ≃ 6 × 10³ on an SO-like proxy (arXiv:2607.14854, section 9). A high-ℓ analysis run with untouched v1 defaults would carry this error; the paper notes that earlier work "established the boosted settings both codes need" for Stage-IV applications, so the check is whether a given analysis applied them.
@@ -194,6 +208,7 @@ Not software defaults but the same family of error:
 - **Stale index records.** `pypolychord` on PyPI is version 1.15.1 from 2019, while the repository released 1.22.2 on 2025-11-25 [src: PyPI; GitHub API].
 
 ## 8. What a referee checks
+<!-- key: what-a-referee-checks -->
 
 1. Code name, version and, for Boltzmann codes, the non-default precision settings; "CAMB" without a version is ambiguous across the v1 to v2 change.
 2. Units of every k and P(k) quoted, and whether h is in them; the value of h used for a conversion.
@@ -209,6 +224,7 @@ Not software defaults but the same family of error:
 12. For emulators: training code and its precision settings, parameter ranges, and a statement that the analysis stays inside them.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - How each flip power-spectrum engine converts units was not read in the source.
 - Whether CAMB's `get_matter_power_spectrum` output P is in (Mpc/h)³ was inferred from the parameter names, not read in a docstring.

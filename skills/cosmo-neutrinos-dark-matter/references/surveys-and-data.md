@@ -8,6 +8,7 @@ Flags: `[src]` read in the cited paper this session; `[sec]` taken from a named 
 This domain owns almost no data set of its own. The cosmological inputs are described in `cosmo-cmb`, `cosmo-galaxy-clustering`, `cosmo-lyman-alpha` and `cosmo-supernovae`; this file records which release enters which constraint, and describes in full only the laboratory experiments and the small-scale-structure samples that have no other home.
 
 ## 1. What each data set contributes
+<!-- key: what-each-data-set-contributes -->
 
 | Constraint | Data that carry it | Data that only break degeneracies | Home of the data description |
 |---|---|---|---|
@@ -22,6 +23,7 @@ This domain owns almost no data set of its own. The cosmological inputs are desc
 | Decays, dark radiation | CMB + BAO + supernovae + full shape | S8 priors from weak lensing | `cosmo-cmb`, `cosmo-weak-lensing` |
 
 ## 2. Past data sets (superseded for these questions, still cited)
+<!-- key: past-data-sets-superseded-for-these-questions -->
 
 | Data | Role at the time | What replaced it | Citation | Flag |
 |---|---|---|---|---|
@@ -33,8 +35,10 @@ This domain owns almost no data set of its own. The cosmological inputs are desc
 | Planck 2015-era CMB | strongly self-interacting neutrino mode | ACT DR6 + Planck: no evidence | arXiv:1902.00534, arXiv:2503.14454 | [src] |
 
 ## 3. Current data sets
+<!-- key: current-data-sets -->
 
 ### 3.1 Laboratory neutrino experiments
+<!-- key: laboratory-neutrino-experiments -->
 
 | Experiment / fit | What it measures | Current statement | Citation | Flag |
 |---|---|---|---|---|
@@ -54,6 +58,7 @@ Reading notes.
 - No KATRIN mass result later than the 259-day analysis, and no published LEGEND-200 limit, was read this session (see "Not verified").
 
 ### 3.2 CMB and large-scale structure inputs (described in sibling skills)
+<!-- key: cmb-and-large-scale-structure-inputs-described -->
 
 | Input | Release used in the neutrino and light-relic constraints | Note for this domain | Citation | Flag |
 |---|---|---|---|---|
@@ -69,6 +74,7 @@ Reading notes.
 ACT and SPT are calibrated on Planck and take τ from Planck low-ℓ polarisation, so their neutrino limits are not independent of Planck in amplitude [sec: `cosmo-cmb`]. DESI completed its planned survey in April 2026, and results from the full data set are expected in 2027 [sec: `cosmo-galaxy-clustering`].
 
 ### 3.3 Primordial abundances
+<!-- key: primordial-abundances -->
 
 | Data | Content | Citation | Flag |
 |---|---|---|---|
@@ -77,6 +83,7 @@ ACT and SPT are calibrated on Planck and take τ from Planck low-ℓ polarisatio
 | Rate compilations and codes | PRIMAT (weak-rate corrections); PRyMordial (rates marginalised) | Pitrou et al. 2018, arXiv:1801.08023; Schöneberg 2024, arXiv:2401.15054 | [src] |
 
 ### 3.4 Lyman-α forest samples used for dark-matter limits
+<!-- key: lyman-alpha-forest-samples-used-for-dark-matter -->
 
 The instruments, resolutions and reduction are described in `cosmo-lyman-alpha`. Only high-resolution spectra at z ≳ 4 reach the wavenumbers where a keV-scale cutoff appears.
 
@@ -92,6 +99,7 @@ The instruments, resolutions and reduction are described in `cosmo-lyman-alpha`.
 No DESI Collaboration warm- or fuzzy-dark-matter limit from the DR1 or DR2 P1D was found (see `results.md`, "Not verified").
 
 ### 3.5 Milky Way and Local Group
+<!-- key: milky-way-and-local-group -->
 
 | Sample | Content | Used for | Citation | Flag |
 |---|---|---|---|---|
@@ -103,6 +111,7 @@ No DESI Collaboration warm- or fuzzy-dark-matter limit from the DR1 or DR2 P1D w
 | Leo II | stellar kinematics | fuzzy dark matter > 2.2 × 10⁻²¹ eV | Zimmermann et al. 2024, arXiv:2405.20374 | [src] |
 
 ### 3.6 Strong lensing
+<!-- key: strong-lensing -->
 
 | Sample | Content | Used for | Citation | Flag |
 |---|---|---|---|---|
@@ -113,6 +122,7 @@ No DESI Collaboration warm- or fuzzy-dark-matter limit from the DR1 or DR2 P1D w
 | Extended-source lenses | joint with Lyα and satellites | m_WDM > 6.048 keV | Enzi et al. 2020, arXiv:2010.13802 | [src] |
 
 ### 3.7 High-redshift galaxies
+<!-- key: high-redshift-galaxies -->
 
 | Sample | Used for | Citation | Flag |
 |---|---|---|---|
@@ -120,6 +130,7 @@ No DESI Collaboration warm- or fuzzy-dark-matter limit from the DR1 or DR2 P1D w
 | HST ultraviolet luminosity functions, z ≈ 4–10, blank and lensed fields | dark matter–proton scattering with σ ∝ vⁿ | Lazare et al. 2025, arXiv:2510.10757 | [src] |
 
 ### 3.8 Clusters, groups and galaxies (self-interaction)
+<!-- key: clusters-groups-and-galaxies-self-interaction -->
 
 | Sample | Method | Citation | Flag |
 |---|---|---|---|
@@ -130,6 +141,7 @@ No DESI Collaboration warm- or fuzzy-dark-matter limit from the DR1 or DR2 P1D w
 | SPARC rotation curves | isothermal Jeans model with core collapse | Jia et al. 2026, arXiv:2601.17118 | [src] |
 
 ### 3.9 X-ray line searches (sterile-neutrino decay)
+<!-- key: x-ray-line-searches-sterile-neutrino-decay -->
 
 | Sample | Result | Citation | Flag |
 |---|---|---|---|
@@ -137,6 +149,7 @@ No DESI Collaboration warm- or fuzzy-dark-matter limit from the DR1 or DR2 P1D w
 | More than 30 Ms of XMM-Newton blank-sky exposure | no line; the limit is disputed by two technical comments | Dessert, Rodd & Safdi 2018, arXiv:1812.06976; arXiv:2004.06170; arXiv:2004.06601 | [src] |
 
 ## 4. Simulation suites behind the limits
+<!-- key: simulation-suites-behind-the-limits -->
 
 | Suite | Size and content | Used in | Flag |
 |---|---|---|---|
@@ -150,6 +163,7 @@ No DESI Collaboration warm- or fuzzy-dark-matter limit from the DR1 or DR2 P1D w
 The general simulation landscape is in `cosmo-simulations-mocks`; the Lyα emulators (LaCE, PRIYA, Sherwood-Relics) are in `cosmo-lyman-alpha`.
 
 ## 5. What comes next
+<!-- key: what-comes-next -->
 
 | Facility or data set | What it adds for this domain | Status and date | Source | Flag |
 |---|---|---|---|---|
@@ -171,6 +185,7 @@ Two forecasts need a correction before they are quoted. The Euclid 4σ figure as
 With σ(Σm_ν) = 0.03 eV, the normal-ordering minimum of 0.059 eV is a 2σ signal, and with 0.015 eV a 4σ signal [der: 0.059/0.03 and 0.059/0.015]. In this forecast a detection of the minimum mass at 3σ or more therefore needs LiteBIRD, the instrument designed to measure τ from large-scale polarisation [sec: `cosmo-cmb`]; the neutrino-mass programme and the τ debate cannot be separated (`systematics.md` §2).
 
 ## 6. Timeline of the releases that moved these numbers
+<!-- key: timeline-of-the-releases-that-moved-these -->
 
 | Date | Event | Effect | Source |
 |---|---|---|---|
@@ -190,6 +205,7 @@ With σ(Σm_ν) = 0.03 eV, the normal-ordering minimum of 0.059 eV is a 2σ sign
 The months are the arXiv submission months of the cited papers.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - Sample sizes, survey areas and satellite counts of the DES + Pan-STARRS1 census were not read this session.
 - No public-data location was read for any of the small-scale dark-matter samples.

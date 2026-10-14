@@ -12,6 +12,7 @@ product: a compilation meant to be loaded by code belongs in a data package
 with its own integrity tests.
 
 ## Provenance code — read this before quoting anything
+<!-- key: provenance-code-read-this-before-quoting -->
 
 | | meaning |
 |---|---|
@@ -33,6 +34,7 @@ assumes GR. Exclude them from a growth-index fit.
 ---
 
 ## 1. Measurements from data
+<!-- key: measurements-from-data -->
 
 **Scope: peculiar velocities only.** Four entries carried by Turner (2024)
 Table 1 are *not* here — they are redshift-space distortions of the 6dFGS
@@ -77,6 +79,7 @@ luminosity fluctuations (not a direct distance indicator).
 | 23 | Feix et al. 2017 | 0.48 ± 0.16 | ~0.1 | lum | SDSS DR13 | luminosity fluctuations, recalibrated photometry | arXiv:1612.07809; MNRAS 468, 1420 | **[src]** |
 
 ### Effective redshift genuinely absent — verified in the papers
+<!-- key: effective-redshift-genuinely-absent-verified-in -->
 
 These empty cells are not a gap in this file: the papers give no effective
 redshift. Reading them:
@@ -105,6 +108,7 @@ while the TFR and SN samples barely move.
 | Wang et al. 2026 | 0.569 +0.054/−0.060 | *local* growth rate, same paper — a different quantity from the row above, do not quote as "the" CF4 value | arXiv:2604.08314 | **[src]** |
 
 ### DESI DR1 Peculiar Velocity Survey (2025)
+<!-- key: desi-dr1-peculiar-velocity-survey-2025 -->
 
 Three estimators, **one dataset**: 415 523 redshifts + 76 616 PVs, z_eff = 0.07.
 These are not independent measurements and must never be averaged as if they were.
@@ -126,6 +130,7 @@ method systematics — larger than most individual quoted error bars.
 ---
 
 ## 2. Forecasts and simulation validation — NOT measurements
+<!-- key: forecasts-and-simulation-validation-not -->
 
 Keep these visually and verbally separate from §1. Mixing them is the most
 common error in PV review figures.
@@ -140,6 +145,7 @@ common error in PV review figures.
 ---
 
 ## 3. Excluded — bulk flow, not fσ8
+<!-- key: excluded-bulk-flow-not-fsigma8 -->
 
 Frequently cited alongside, measures a different quantity:
 Watkins et al. 2023 (arXiv:2302.02028, the
@@ -152,6 +158,7 @@ with ΛCDM).
 ---
 
 ## 4. Discrepancies found when going to source
+<!-- key: discrepancies-found-when-going-to-source -->
 
 **Five** of Turner's tabulated values that remain in scope do not match the source (a sixth, Beutler 2012, is out of scope — see §4a). Not errors on his
 part necessarily — a review may quote a different row of a paper's results table
@@ -171,6 +178,7 @@ correlation-function and power-spectrum analyses (0.402 +0.075/−0.077 and
 and 0.440 +0.080/−0.096. Cite the arXiv abstracts.
 
 ### 4a. Removed as out of scope
+<!-- key: removed-as-out-of-scope -->
 
 Present in Turner (2024) Table 1, absent here. All four are RSD of the 6dFGS
 redshift survey — no measured distances, therefore not peculiar velocities. The
@@ -186,6 +194,7 @@ two Achitouv values additionally share galaxies with each other.
 ---
 
 ## 4b. Linear vs non-linear σ8 — verified 2026-08-13
+<!-- key: linear-vs-non-linear-sigma8-verified-2026-08-13 -->
 
 Reading all 35 papers rather than their abstracts turned up a normalisation
 split that no review flags and that this file previously hid.
@@ -217,6 +226,7 @@ Column `sigma8_norm` in the data file records this per row.
 ---
 
 ## 5. What the compilation shows
+<!-- key: what-the-compilation-shows -->
 
 - **Range**: 0.31 to 0.51 over 0 < z_eff < 0.08, where ΛCDM predicts a nearly
   flat fσ8 ≈ 0.45 across that interval. The scatter is dominated by method and
@@ -234,6 +244,7 @@ Column `sigma8_norm` in the data file records this per row.
   Treating this table as independent points would be wrong.
 
 ## 6. Remaining gaps
+<!-- key: remaining-gaps -->
 
 Every value is now traced to its source and every row has an arXiv identifier.
 Hollinger & Hudson resolved to arXiv:2312.03904,

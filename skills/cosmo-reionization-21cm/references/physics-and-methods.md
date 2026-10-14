@@ -7,8 +7,10 @@ Numbers carry [src] (read in the cited paper this session), [sec] (taken from th
 secondary source) or [der] (derived here, derivation stated).
 
 ## 1. Reionisation observables
+<!-- key: reionisation-observables -->
 
 ### 1.1 Thomson optical depth
+<!-- key: thomson-optical-depth -->
 
 - Definition (textbook): τ is the line-of-sight integral of n_e σ_T from today to recombination.
   Free electrons after reionisation rescatter the CMB quadrupole and create the low-ℓ EE
@@ -33,6 +35,7 @@ secondary source) or [der] (derived here, derivation stated).
   Belsunce et al. 2021, arXiv:2103.14378]. Details belong to `cosmo-cmb`.
 
 ### 1.2 Lyman-series absorption in quasar spectra
+<!-- key: lyman-series-absorption-in-quasar-spectra -->
 
 - Logic of the dark-pixel fraction: "Any spectral region showing transmission must be highly
   ionized, while dark regions could be ionized or neutral", so the dark fraction is a nearly
@@ -60,6 +63,7 @@ secondary source) or [der] (derived here, derivation stated).
   2023, arXiv:2308.04614]. Units are proper Mpc.
 
 ### 1.3 Damping wings
+<!-- key: damping-wings -->
 
 - A neutral IGM in front of a source imprints Lyα damping-wing absorption redward of the line
   centre. In stacked forest spectra the wing extends more than 1000 km/s beyond a Gunn–Peterson
@@ -78,6 +82,7 @@ secondary source) or [der] (derived here, derivation stated).
   3 of `systematics.md`).
 
 ### 1.4 Lyα emission from galaxies
+<!-- key: lyalpha-emission-from-galaxies -->
 
 - Observable: the fraction X_Lyα of UV-selected galaxies with Lyα equivalent width above a
   threshold (25 Å or 10 Å in arXiv:2609.40363), or the Lyα luminosity function. Both fall when
@@ -88,6 +93,7 @@ secondary source) or [der] (derived here, derivation stated).
   arXiv:2609.40363].
 
 ### 1.5 Kinetic SZ
+<!-- key: kinetic-sz -->
 
 - The small-scale CMB temperature spectrum contains kSZ power from the late-time ionised
   Universe ("homogeneous") and from ionised bubbles during reionisation ("patchy"). Only the
@@ -102,6 +108,7 @@ secondary source) or [der] (derived here, derivation stated).
   arXiv:2403.02337].
 
 ### 1.6 Ionising-photon budget
+<!-- key: ionising-photon-budget -->
 
 - Bookkeeping (textbook): the ionising emissivity is the UV luminosity density times the
   ionising efficiency ξ_ion times the escape fraction f_esc, balanced against recombinations set
@@ -112,6 +119,7 @@ secondary source) or [der] (derived here, derivation stated).
   [src: Giovinazzo et al. 2026, arXiv:2607.22834].
 
 ## 2. The 21 cm signal
+<!-- key: the-21-cm-signal -->
 
 Equations in this section are quoted from the review of Liu & Shaw 2019, arXiv:1907.08211,
 section 2.1 [sec for the numbers].
@@ -144,6 +152,7 @@ section 2.1 [sec for the numbers].
   arXiv:2205.11504].
 
 ## 3. Post-reionisation HI intensity mapping
+<!-- key: post-reionisation-hi-intensity-mapping -->
 
 - After reionisation the residual neutral hydrogen (x_HI ~ 2%) sits in self-shielded gas inside
   haloes of ~10¹⁰–10¹³ M_⊙ and is seen in emission [sec: arXiv:1907.08211, section 2.4].
@@ -174,6 +183,7 @@ section 2.1 [sec for the numbers].
   galaxies, from which this template is adapted.
 
 ## 4. Line-intensity mapping in other lines
+<!-- key: line-intensity-mapping-in-other-lines -->
 
 - Review of record: Bernal & Kovetz 2022, arXiv:2206.15377 (target lines, modelling, statistics,
   synergies).
@@ -196,8 +206,10 @@ section 2.1 [sec for the numbers].
   background without a spectrometer [src: Chiang 2026, arXiv:2602.02658].
 
 ## 5. Estimators, covariance and likelihood practice
+<!-- key: estimators-covariance-and-likelihood-practice -->
 
 ### 5.1 The foreground wedge
+<!-- key: the-foreground-wedge -->
 
 - Foregrounds are spectrally smooth and should occupy the lowest k_∥ modes. An interferometer
   baseline of fixed length probes a k_⊥ that scales with frequency, so the Fourier transform
@@ -215,6 +227,7 @@ section 2.1 [sec for the numbers].
   arXiv:1711.10834].
 
 ### 5.2 Foreground removal
+<!-- key: foreground-removal -->
 
 | Method | Used by | Property to check | Citation |
 |---|---|---|---|
@@ -226,6 +239,7 @@ section 2.1 [sec for the numbers].
 | Polynomial or physical foreground + signal model | global-signal experiments | uniqueness of the fit; number of terms [src] | Hills et al. 2018, arXiv:1805.01421 |
 
 ### 5.3 Reporting conventions
+<!-- key: reporting-conventions -->
 
 - Upper limits on Δ² are 2σ and are quoted with the k and z of the most constraining bin. Papers
   add whether the remaining bins are consistent with thermal noise.
@@ -247,6 +261,7 @@ section 2.1 [sec for the numbers].
   are strongly asymmetric near the bounds.
 
 ## 6. Codes and simulations
+<!-- key: codes-and-simulations -->
 
 | Code or suite | Role | Reference | Flag |
 |---|---|---|---|
@@ -264,6 +279,7 @@ The sibling `cosmo-simulations-mocks` covers the simulation suites themselves;
 `cosmo-software-ecosystem` covers general inference tooling.
 
 ## 7. Conventions and traps specific to the domain
+<!-- key: conventions-and-traps-specific-to-the-domain -->
 
 - Δ² is quoted either in mK² (HERA: 457 mK²) or as a squared temperature (LOFAR: (68.7 mK)²).
   Square or take the root before comparing.
@@ -277,6 +293,7 @@ The sibling `cosmo-simulations-mocks` covers the simulation suites themselves;
   these constrain different parameter combinations.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - The numerical prefactor of the 21 cm brightness temperature (the often-quoted tens of mK) was
   not read at source; only the symbolic form above was.

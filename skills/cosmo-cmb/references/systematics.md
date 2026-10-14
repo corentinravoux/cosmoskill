@@ -3,7 +3,7 @@
 Scope: the systematic effects that decide whether a CMB power-spectrum or
 lensing result can be trusted, with mechanism, measured size, mitigation,
 validation test and the reference a referee expects.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-14
 
 Flags: `[src]` read this session in the cited paper; `[sec]` from a named
 secondary source; `[der]` derived here.
@@ -326,6 +326,148 @@ residual intensity-to-polarisation leakage, and states that unexplained
 systematics in the ACT data prevent strong cosmological conclusions [src]
 (Diego-Palazuelos & Komatsu 2025, arXiv:2509.13654).
 
+## 15. Nuisance priors and test sizes by analysis
+<!-- key: nuisance-priors-and-test-sizes-by-analysis -->
+
+Read in the paper bodies; one table per analysis. "Shift" is the change of
+the posterior mean in units of its σ, for the data combination named.
+
+### ACT DR6 power spectra (Louis et al. 2025, arXiv:2503.14452)
+<!-- key: act-dr6-power-spectra-louis-et-al-2025-arxiv -->
+
+| Item | Prior or size | Place |
+|---|---|---|
+| Foreground model | 15 parameters, 14 free (9 TT, 2 TE, 2 EE, one radio index common to all); β_p ≡ β_c; wide non-negative uniform priors on amplitudes | [src: Sect. VII.2, Table 3] |
+| Galactic dust amplitudes at ℓ = 500, 150 GHz (data) | Gaussian: TT 7.95 ± 0.32, TE 0.42 ± 0.03, EE 0.168 ± 0.017 μK², from Planck 353–143 GHz | [src: Table 3, Sect. VI.1.2] |
+| tSZ–CIB correlation ξ | uniform 0 ≤ ξ ≤ 0.2 on data | [src: Table 3] |
+| Dipole calibration (Planck) | 1 ± 0.003 | [src: Table 4] |
+| Per-array gain calibration | 1 ± 0.0016 to 1 ± 0.0024 (f090/f150), 1 ± 0.013 (PA4 f220); twice the measured error | [src: Sect. VI.1.5, Table 4] |
+| Polarisation efficiency, four array-bands | uniform 0.9 < p < 1.1 | [src: Sect. VII.2, Table 4] |
+| Bandpass shifts, five array-bands | Gaussian 0 ± 1.0 to 1.3 GHz, 0 ± 3.6 GHz for PA4 f220; measured with a Fourier-transform spectrometer | [src: Sect. VI.1.4, Table 4] |
+| Beam chromaticity | neglecting it shifts foreground parameters by up to 1σ; added after unblinding | [src: Sect. VI.1.4, App. B] |
+| tSZ shape α_tSZ | −0.6 ± 0.2 (P-ACT), non-zero at 3σ; the only foreground extension that moves cosmology at the 0.5σ level; 10% correlated with Ω_b h² and n_s | [src: Sect. VIII.6, Eq. 48] |
+| Free CIB SEDs (β_c ≠ β_p) | moves SZ amplitudes by about 1σ | [src: Sect. VIII.6, Table 7] |
+| Polarised dust slope free, or dust prior removed | n_s and Ω_b h² (ACT alone) shift by 0.2–0.3σ, others < 0.1σ | [src: Sect. VIII.6] |
+| f090 versus f150 parameters | largest single shifts 1.4σ (Ω_c h²), 1.3σ (n_s); 5-parameter PTE 50% (TT/TE/EE), 53% (TE/EE); 0.8% and 1.7% with the pre-unblinding settings | [src: Sect. VII.3.2, Eqs. 34–35] |
+| Post-unblinding changes | cosmology shifts come from the raised polarisation ℓ_min (mainly n_s) and α_tSZ; 4-pass maps and final covariance negligible | [src: App. B] |
+| Planck polarisation efficiency | Planck fixes it from TT in ΛCDM; freeing it does not broaden P-ACT EE posteriors | [src: App. G.3] |
+
+### SPT-3G D1 T&E (Camphuis et al. 2025, arXiv:2506.20707)
+<!-- key: spt-3g-d1-t-e-camphuis-et-al-2025-arxiv-2506 -->
+
+| Item | Prior or size | Place |
+|---|---|---|
+| External temperature calibration (to Planck) | N(1.0, 0.0036); posterior 1.0002 ± 0.0036 | [src: App. D, Table 9] |
+| Polarisation efficiency, relative calibrations | uniform U(0.8, 1.2) in the full likelihood; Gaussian "subset priors" from Planck (e.g. E_cal N(1.0, 0.0095)) only for subsets; posterior E_cal 1.0095 ± 0.0051 | [src: Table 9] |
+| Temperature beam | nine eigenmode amplitudes, standard-normal priors; broadening the priors ×100 shifts n_s by < 0.5σ, all others < 0.2σ; ×5 broadening < 0.1σ | [src: App. D] |
+| Quadrupolar T→P leakage ε₂ | Gaussian priors from maps: −0.0065 ± 0.0011 (95), −0.012 ± 0.0021 (150), −0.023 ± 0.0066 (220 GHz); left free, < 3σ from the map prior | [src: Table 9, App. D] |
+| Sidelobe polarisation fraction β_pol | uniform U(0, 1); posteriors 0.48 (+0.13/−0.12), 0.62 (+0.17/−0.15), 0.62 ± 0.15 at 95, 150, 220 GHz | [src: Table 9] |
+| Foregrounds | Galactic dust priors from Planck maps on the field; Poisson amplitudes U(0, 200) μK² per cross-frequency; CIB clustering index N(0.53, 0.1); Agora tSZ and kSZ templates (AGN heating 10⁸ K); tSZ–CIB and 95 GHz CIB clustering marginalised in the covariance | [src: Sect. V.2.2] |
+| Foreground variations (CIB prior, Agora CIB or CIB+tSZ templates, extended model) | all cosmological shifts < 0.2σ (Fisher estimate) | [src: App. E.2] |
+| Inter-frequency parameter tests | 15 tests, pass threshold PTE 0.05/15 = 0.0033; all pass | [src: Sect. VI.4, Table 2] |
+| Effect of the post-unblinding models | at unblinding TE parameters failed every consistency test with TT and EE; the Ω_b h² shift came from T→P leakage, the n_s shift from leakage and the sidelobe model | [src: App. B.4] |
+
+### Planck 2018 Plik high-ℓ likelihood (Planck Collaboration 2019, arXiv:1907.12875)
+<!-- key: planck-2018-plik-high-ell-likelihood-planck -->
+
+| Item | Prior or size | Place |
+|---|---|---|
+| Absolute map calibration y_cal | Gaussian 1 ± 0.0025 | [src: Table 16] |
+| TT inter-frequency calibration | c_100 = 1.0002 ± 0.0007, c_217 = 0.99805 ± 0.00065 | [src: Table 16] |
+| Polarisation efficiency (EE) | fixed corrections c_EE = 1.021, 0.966, 1.04 at 100, 143, 217 GHz, set from the TT ΛCDM best fit; they lower χ² by 50; the EE-versus-TE test of these corrections fails at 2σ | [src: Table 16, Sect. 5.2] |
+| Map-based versus spectrum-based efficiency model | minor in ΛCDM (Δχ² = 10); about 0.5σ on some parameters of extended models | [src: Sect. 5.2, Sect. 3.7] |
+| T→P beam leakage | fixed template, the dominant systematic in TE; with other processing it lowers TE χ² by about 74; TE inter-frequency PTE still 0.9% | [src: Sect. 3.4, Sect. 5.2] |
+| Foregrounds, TT | Poisson amplitudes [0, 400] μK²; CIB [0, 200]; tSZ, kSZ [0, 10] with joint prior D^kSZ + 1.6 D^tSZ = 9.5 ± 3 μK²; ξ ∈ [0, 1]; dust at ℓ = 200, e.g. 8.6 ± 2 (100) to 91.9 ± 20 μK² (217) | [src: Table 16] |
+| Foregrounds, TE and EE | TE dust Gaussian priors from 353 GHz (0.13 ± 0.042 to 1.938 ± 0.54 μK² at ℓ = 500); EE dust amplitudes fixed (0.040–0.70 μK²) | [src: Table 16] |
+| EE correlated-noise template | from FFP10; ignoring it biases ω_b by 0.25σ (EE alone) | [src: Sect. 5.2] |
+| Simulations | n_s bias 0.1σ (TT) from the Gaussian approximation at low ℓ; 0.16σ possible on n_s from TE alone | [src: Sect. 5.2] |
+| Lifting nuisance priors | ΛCDM shifts < 0.5σ (largest on ln 10¹⁰A_s); ΛCDM+A_L < 0.4σ; N_eff 1.1σ, which is 1.8σ_exp for a data subset | [src: Sect. 3.8] |
+| Plik versus CamSpec (TT,TE,EE) | most ΛCDM parameters within 0.5σ (TT alone 0.2σ); A_L differs by 0.7σ, Ω_K by 0.5σ; for Ω_K the Δχ² = 11 preference falls to 5.2 with spectrum-based efficiencies (CamSpec: 4.3) | [src: arXiv:1807.06209, Sect. 2.2.5] |
+
+### Planck PR4 CamSpec (Rosenberg et al. 2022, arXiv:2205.10869)
+<!-- key: planck-pr4-camspec-rosenberg-et-al-2022-arxiv -->
+
+| Item | What was done | Place |
+|---|---|---|
+| TT calibration | factor per spectrum relative to 143×143 over 50 ≤ ℓ ≤ 500 (cosmic variance removed by differencing), read as beam-transfer errors | [src: Sect. 3.4.1, Eq. 2] |
+| Effective polarisation efficiencies | one factor per TE or EE spectrum fitted to the CamSpec TT ΛCDM best fit and divided out before coaddition (spectrum-based); TE-predicted EE factors track the measured ones; overall c_TE, c_EE remain likelihood parameters | [src: Sect. 3.4.2, Eq. 3] |
+| T→P leakage from beam mismatch | QuickPol off-diagonal beam-matrix correction applied to TE, negligible for EE; checked with TE "triplets" sharing a polarisation map | [src: Sect. 3.4.3, Eq. 4] |
+
+### ACT DR6 lensing (Qu et al. 2023, arXiv:2304.05202; MacCrann et al. 2023, arXiv:2304.05196)
+<!-- key: act-dr6-lensing-qu-et-al-2023-arxiv-2304-05202 -->
+
+ΔA_lens over the baseline 40 ≤ L ≤ 763, MV estimator (polarisation-only
+MVPol in brackets); conservative models are upper limits.
+
+| Item | Size | Place |
+|---|---|---|
+| Miscalibration | 0.0043, 0.18σ (MVPol 0.09σ) | [src: 2304.05202, Table 3] |
+| Beam uncertainty | 0.0011, 0.05σ | [src: Table 3] |
+| T→P leakage, Uranus beam model / constant (conservative) | −0.01σ / −0.19σ (MVPol −0.18σ) | [src: Table 3] |
+| Polarisation efficiency lowered by 1σ, fully correlated | −0.0090, −0.37σ (MVPol −0.38σ) | [src: Table 3] |
+| Polarisation angle rotated by −0.16° | ≤ 0.01σ | [src: Table 3] |
+| Fiducial CMB spectra in the normalisation (ACT DR4+WMAP instead of Planck) | A_lens moves 0.23σ; spectrum uncertainty added to the lensing-alone covariance (+3% on band-power errors; σ(S₈^CMBL) 0.021 → 0.022) | [src: 2304.05202, Sect. V.10] |
+| Mean field | exceeds the signal near L ~ 20; one reason for L_min = 40 | [src: Sect. V.9] |
+| Extragalactic foregrounds, baseline (source and cluster subtraction + profile hardening) | ΔA_lens^MV −0.0042 (websky), −0.0009 (S10) against σ = 0.023, i.e. −0.18σ and −0.04σ; TT-only −0.31σ and −0.06σ; < 0.3σ up to L_max = 1300 | [src: 2304.05196, Sect. V.1, Table 1] |
+| CIB-deprojected variant with Planck | ΔA_lens^MV −0.0032 (websky), −0.0013 (S10) | [src: 2304.05196, Table 1] |
+| tSZ-deprojected + point-source hardening | MV error 0.041–0.042 instead of 0.023 | [src: 2304.05196, Table 1] |
+
+### Planck 2018 lensing (Planck Collaboration 2018, arXiv:1807.06210)
+<!-- key: planck-2018-lensing-planck-collaboration-2018 -->
+
+| Item | What was done or found | Place |
+|---|---|---|
+| CIB bias, temperature-only | 2% negative bias at 217 GHz on 8 ≤ L ≤ 400 from the LSS bispectrum; an order of magnitude smaller after SMICA cleaning; sub-percent with tSZ-deprojected SMICA weights; curl negligible | [src: Sect. 4.5, Fig. 23] |
+| Foreground simulations | residual extragalactic power is Gaussian in the baseline simulations; correlated non-Gaussian PSM simulations used as a test | [src: Sect. 4.5] |
+| N¹ | subtracted analytically in the FFP10 fiducial model, model dependence corrected perturbatively in the likelihood; realisation-dependent and simulation-based N¹ tested | [src: Sect. 4.8, Eq. 78] |
+
+### SPT-3G D1 lensing (Omori et al. 2026, arXiv:2608.31136)
+<!-- key: spt-3g-d1-lensing-omori-et-al-2026-arxiv-2608 -->
+
+| Item | What was done or found | Place |
+|---|---|---|
+| Foreground and instrument model | not subtracted as fixed biases: an emulator trained on Agora simulations and on pipeline reruns with varied instrumental parameters rescales the model band powers, sampled jointly with cosmology | [src: Sect. VI.2.3, Eq. 40] |
+| Foreground bias, baseline GMV | ≲ 10% of the signal at L ≤ 1000 from difference spectra; corrected GMV versus PP, cross-ILC and tSZ-deprojected PTE 0.80, 0.46, 0.06; a high-L trend tested by dropping the last two bins | [src: Sect. V.3.3] |
+| Temperature ℓ_max 3000 versus 3500 | consistent; extra foreground bias small against difference variance | [src: Sect. V.3.3] |
+| End-to-end Agora test, σ₈Ω_m^0.25 on 10 patches | mean z = −0.25 ± 0.32, χ² = 2.8/10 (patches not fully independent) | [src: Sect. VI.3.1] |
+| Post-unblinding change | polarised-beam normalisation moved from ℓ = 800 to a physical small-scale normalisation, changing P_cal | [src: Sect. V.4] |
+
+### Combined CMB analyses (SPT+ACT, CMB-SPA, ACT+SPT+Planck lensing)
+<!-- key: combined-cmb-analyses-spt-act-cmb-spa-act-spt -->
+
+| Item | What was done or found | Place |
+|---|---|---|
+| CMB-SPA composition | Planck PR3 Plik T&E + low-ℓ TT, Planck PR4 φφ, ACT DR6 (ACT-lite) with the P-ACT multipole cuts, SPT-3G D1 T&E + MUSE φφ; τ prior N(0.051, 0.006) | [src: arXiv:2506.20707, Sect. VII.1] |
+| Correlations | SPT assumed uncorrelated with ACT and Planck (small overlap); Planck–ACT correlation reduced by the P-ACT cuts, not modelled | [src: Sect. VII.1] |
+| SPT-3G D1 versus Planck, versus ACT DR6 (ΛCDM, five parameters) | 0.4σ and 1.1σ; without the amplitude A_s e^(−2τ): 0.4σ and 1.4σ | [src: Sect. VII.2.2] |
+| Joint lensing likelihood | Gaussian in ACT DR6, Planck PR4 and SPT-3G MUSE band powers; ACT–Planck cross-covariance from 480 FFP10 simulations on the ACT footprint; ACT–SPT ≲ 15% and Planck–SPT ≲ 10% correlation | [src: arXiv:2504.20038, Sect. III, App. VII.1] |
+
+### Large-scale polarisation and τ (Planck 2018 lowE, PR4 LoLLiPoP)
+<!-- key: large-scale-polarisation-and-tau-planck-2018 -->
+
+| Item | What was done or found | Place |
+|---|---|---|
+| lowE (SimAll) | 100×143 GHz QML cross-spectrum, ℓ = 2–29, maps cleaned with LFI 30 GHz and HFI 353 GHz templates; likelihood from 300 end-to-end simulations, off-diagonal correlations ignored | [src: arXiv:1807.06209, Sect. 2.2.3] |
+| lowE alone | τ = 0.0506 ± 0.0086 (with low-ℓ TT, other parameters fixed); half a sigma below the 2016 HFI value 0.055 ± 0.009, driven by removing the last 1000 scanning rings, higher simulation variance and the 30 GHz tracer | [src: Eq. 2, Sect. 2.2.3] |
+| Low-ℓ TE | excluded: excess variance at ℓ = 5 and ℓ = 18–19 not understood; TE to ℓ = 10 gives τ = 0.051 ± 0.015 | [src: Sect. 2.2.3] |
+| LFI 70 GHz alternative | τ = 0.063 ± 0.020 | [src: Sect. 2.2.3] |
+| SRoll2 EE likelihood (used by ACT DR6) | same SimAll-type construction on 100×143 EE, ℓ = 2–29, 500 signal maps per τ on a 101-point grid with 10⁹A_s e^(−2τ) = 1.875 fixed; τ = 0.0566 (+0.0053/−0.0062) on 50% of the sky; masks of 20–60% agree within 1σ (simulations: within 1.3σ); stable to ℓ_min = 5 | [src: arXiv:1908.09856, Sect. 4, Eqs. 2–3] |
+| PR4 LoLLiPoP | Commander-cleaned detset cross-spectra, QML at N_side 16 on 50% of the sky, corrected by the PR4 transfer function; Hamimeche–Lewis variable change adapted to cross-spectra; covariance from PR4 simulations with Sellentin–Heavens marginalisation; foreground model fixed in the simulations, so foreground-model error is not included | [src: arXiv:2309.10034, Sects. 3.1, 4] |
+
+### Planck PR4 HiLLiPoP V4.2 (Tristram et al. 2023, arXiv:2309.10034)
+<!-- key: planck-pr4-hillipop-v4-2-tristram-et-al-2023 -->
+
+| Item | Prior or size | Place |
+|---|---|---|
+| Absolute calibration A_Planck | N(1.0000, 0.0025), from the orbital dipole | [src: Sect. 5.3, Table 7] |
+| Five map inter-calibrations (143A fixed) | uniform [0.9, 1.1]; recovered 1.001–1.004 with σ 0.006–0.008 | [src: Sect. 8, Table 7] |
+| Polarisation efficiencies | fixed at 1, 1, 0.975 (100, 143, 217 GHz); fitted values 0.972–1.016 at ±0.010–0.014, the 217 GHz maps about 2σ from unity; fixing costs Δχ² = 36 for 29 758 points and does not move ΛCDM or foreground parameters | [src: Sect. 8, Eqs. 29–34] |
+| Beams and leakage | QuickPol window functions including leakage; beam uncertainty and sub-pixel effect neglected as small | [src: Sect. 5.3] |
+| Dust | rescalings c_dust^T, c_dust^P with prior 1.0 ± 0.1 (fit 1.08 ± 0.03, 1.20 ± 0.03); indices β^T = 1.51 ± 0.01, β^P = 1.59 ± 0.02 (Gaussian) | [src: Table 7] |
+| Extragalactic | radio, IR [0, 150]; CIB [0, 20]; tSZ, kSZ [0, 50] μK² at ℓ = 3000, 143 GHz; ξ ∈ [−1, 1]; β_CIB 1.75 ± 0.06; β_radio fixed −0.8 | [src: Table 7] |
+| Galactic mask (baseline XXL masks 20%, 30%, 45% at 100, 143, 217 GHz) | masking 5% or 10% more changes χ² by < 100 for 29 758 points | [src: Sect. 9] |
+| PR4 versus PR3 (TT,TE,EE) | Ω_c h² −1.0σ, n_s +0.75σ, H₀ +0.6σ, S₈ −0.9σ; errors 10–20% smaller; CamSpec PR4 agrees within 1σ | [src: Sect. 9, Table 4] |
+
 ---
 
 ## What a referee checks in a CMB results section
@@ -357,11 +499,15 @@ systematics in the ACT data prevent strong cosmological conclusions [src]
 ## Not verified
 <!-- key: not-verified -->
 
-- The NPIPE low-ℓ polarisation transfer function and its handling in
-  LoLLiPoP were not read this session.
-- The ACT DR6 beam paper and the SPT-3G D1 beam description were not read
-  directly; beam statements above come from the power-spectrum papers.
+- The NPIPE low-ℓ polarisation transfer function: LoLLiPoP corrects for
+  it (Section 15) [src: arXiv:2309.10034, Sect. 3.1]; its size was not
+  read.
+- The ACT DR6 beam paper was not read; ACT beam statements come from the
+  power-spectrum paper. The SPT-3G D1 beam treatment (nine eigenmodes from
+  AGN and Saturn observations) was read in arXiv:2506.20707, Sect. V.2.1;
+  the dedicated beam paper was not.
 - Atmospheric-noise characterisation at the South Pole (a 2026 BICEP/Keck
   paper exists) was not read.
-- Bandpass uncertainties: ACT DR6 samples five bandpass-shift parameters
-  [src] (arXiv:2503.14452); their priors and impact were not read.
+- Bandpass uncertainties: closed, priors now in Section 15 (ACT DR6). The
+  impact of the bandpass shifts on cosmological parameters alone was not
+  found stated separately.

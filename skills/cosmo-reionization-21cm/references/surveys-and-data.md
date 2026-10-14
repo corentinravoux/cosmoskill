@@ -1,7 +1,7 @@
 # Surveys and data — reionisation, 21 cm, line-intensity mapping
 
 Scope: experiments and data releases, past, current and planned.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-13
 
 Instrument facts here are those stated in the cited papers. Apertures, element counts and sites
 that were not read at source are left out and listed under "Not verified". General facility
@@ -12,6 +12,7 @@ facts for CHIME, MeerKAT, SKA and SPHEREx also live in `cosmo-surveys-facilities
 
 | Experiment | Band | What it published | Status on the snapshot date | Citation | Flag |
 |---|---|---|---|---|---|
+| EDGES (2010 result) | 100–200 MHz, all-sky spectrum | lower limit Δz > 0.06 on the duration of reionisation (95%) | first global-signal constraint | Bowman & Rogers 2010, arXiv:1209.1117 | [src] |
 | EDGES low-band | profile at 78 MHz | claimed absorption profile (2018) | raw data of earlier papers and the full calibration pipeline made public in May 2026 | Bowman et al. 2018, arXiv:1810.05912; Murray et al. 2026, arXiv:2605.16643 | [src] |
 | SARAS 3 | 55–85 MHz radiometer | non-detection; rejects the EDGES best-fit profile at 95.3% | the only direct test of EDGES | Singh et al. 2021, arXiv:2112.06778 | [src] |
 | LEDA, BIGHORNS, SARAS (earlier generations) | — | have published global-signal data | — | listed in HERA Collaboration 2025, arXiv:2511.21289, introduction | [sec] |
@@ -63,7 +64,8 @@ Notes.
 | Instrument | Data | Result type | Citation | Flag |
 |---|---|---|---|---|
 | Green Bank Telescope | 0.6 < z < 1; ~41 deg², 190 h (2012); 100 deg² (2021) | cross-correlation with WiggleZ and eBOSS | Masui et al. 2012, arXiv:1208.0331; Wolz et al. 2021, arXiv:2102.04946 | [src] |
-| Parkes | HI intensity maps | stacking on galaxies | named in Cunnington et al. 2026, arXiv:2606.25955, section 3 | [sec] |
+| Green Bank Telescope, first maps | z = 0.53–1.12 | stack on ~10⁴ DEEP2 galaxies, ~4σ; then auto-power as an upper bound (0.6 < z < 1, ~41 deg², 190 h) | Chang et al. 2010, arXiv:1007.3709; Switzer et al. 2013, arXiv:1304.3712 | [src] |
+| Parkes | 0.057 < z < 0.098, ~1300 deg² in two fields | cross-correlation with 2dF, 5.18σ; also stacking on galaxies | Anderson et al. 2018, arXiv:1710.00424; named in Cunnington et al. 2026, arXiv:2606.25955, section 3 | [src] |
 
 ### Current
 <!-- key: current -->
@@ -73,6 +75,7 @@ Notes.
 | CHIME | drift-scan interferometer | 102 nights stacked on eBOSS LRG, ELG, QSO (0.78 < z < 1.43); 88 days in 400–500 MHz × eBOSS Lyα forest (1.8 < z < 2.5); 94 nights in 608.2–707.8 MHz for the auto-spectrum (z = 1.01–1.34) | arXiv:2202.01242, arXiv:2309.04404, arXiv:2511.19620 | [src] |
 | MeerKAT (MeerKLASS) | 64 dishes in single-dish (total-power) mode, L-band | pilot: ~10 h, ~200 deg², 973–1015 MHz, × WiggleZ 11hr field (4031 galaxies); deep field (2021): ~40 h, 971.2–1023.6 MHz, × GAMA G23 (2269 galaxies), ~236 deg² for the auto-spectrum | Cunnington et al. 2022, arXiv:2206.01579; arXiv:2606.25955, section 3; MeerKLASS Collaboration 2026, arXiv:2610.12158 | [src] |
 | MeerKAT, interferometric mode | DEEP2 and MIGHTEE fields | small-scale HI power: tentative detection and upper limits | Mazumder et al. 2026, arXiv:2606.24730 | [src] |
+| MeerKAT, interferometric mode, L-band | z ≈ 0.32 and 0.44, foreground avoidance | auto-power on Mpc scales, 3.2–9.18σ depending on the flagging scheme | Paul et al. 2023, arXiv:2301.11943 | [src] |
 | Tianlai cylinder pathfinder | drift scan | 20 days, 714.4–781.7 MHz (z ≈ 0.82–0.99), drone-measured beam | Deng et al. 2026, arXiv:2604.27465 | [src] |
 
 Notes.
@@ -84,8 +87,8 @@ Notes.
   spectrum shows an oscillating systematic at the frequency of the MeerKAT primary-beam ripple
   [src: arXiv:2606.25955, section 3].
 - An HI auto-power detection with MeerKAT as an interferometer, on small non-linear scales,
-  preceded the single-dish one (Paul et al. 2023, not fetched) [sec: arXiv:2606.25955, section
-  3].
+  preceded the single-dish one [src: Paul et al. 2023, arXiv:2301.11943; sec: arXiv:2606.25955,
+  section 3].
 
 ### Under construction
 <!-- key: under-construction -->
@@ -109,6 +112,9 @@ timeline page could not be opened; no date is given here.
 
 | Experiment | Line and redshift | Survey | Status | Citation | Flag |
 |---|---|---|---|---|---|
+| COPSS (Sunyaev-Zel'dovich Array) | CO(1–0) at z = 2.3–3.3 | 19 fields, 0.7 deg², 27–35 GHz, k = 0.5–10 h Mpc⁻¹; observed 2013–2015 | completed; P_CO > 0 at 98.9% | Keating et al. 2016, arXiv:1605.03971 | [src] |
+| mmIME (ALMA ASPECS + Atacama Compact Array) | CO(2–1), (3–2), (4–3) at z ~ 1–5, 3 mm | Hubble Ultra Deep Field and COSMOS; ACA data from 2016–2018 | shot power detected, zero rejected at 99.99% | Keating et al. 2020, arXiv:2008.08087 | [src] |
+| Planck 545 GHz × SDSS | [CII] at z = 2–3.2 | cross-correlation with quasars and CMASS galaxies | excess compatible with [CII], not required by the data | Pullen et al. 2018, arXiv:1707.06172 | [src] |
 | COMAP Pathfinder | CO(1–0) at z = 2.4–3.4; fainter CO(2–1) from z = 6–8 | 12 deg² in a five-year campaign | Early Science from 13 months of data (2021); Season 2 with a threefold gain in map sensitivity (2024–2025) | Cleary et al. 2021, arXiv:2111.05927; Stutzer et al. 2024, arXiv:2406.07511; Dunne et al. 2025, arXiv:2510.23568 | [src] |
 | TIME | [CII] at reionisation redshifts, CO at lower z | — | commissioning run 2021–2022; Galactic-centre maps only | Yang et al. 2025, arXiv:2511.09473 | [src] |
 | CCAT / FYST, EoR-Spec | [CII] | Deep Spectroscopic Survey | not yet observing ("will conduct"); pipeline tested on end-to-end simulations | Dev et al. 2026, arXiv:2607.20404 | [src] |
@@ -124,6 +130,10 @@ after the two-year survey [src: arXiv:2511.02985].
 
 | Data set | Content | Used for | Citation | Flag |
 |---|---|---|---|---|
+| WMAP first-year polarisation | TE correlation at 23–94 GHz | first detection of the reionisation signature (τ = 0.17 ± 0.04) | Kogut et al. 2003, arXiv:astro-ph/0302213 | [src] |
+| SDSS z ~ 6 quasars | 19 quasars at 5.74 < z < 6.42 | Gunn–Peterson optical depth, dark gaps, H II region sizes | Fan et al. 2006, arXiv:astro-ph/0512082 | [src] |
+| SDSS, Gemini/GMOS (GGG), Keck/LRIS, ESI and X-Shooter stacks | 1800 quasars at z = 3.50–4.34; 163 quasars at z_em > 4.4; z ~ 5–6 samples | Lyman-continuum mean free path | Prochaska et al. 2009, arXiv:0910.0009; Worseck et al. 2014, arXiv:1402.4154; Becker et al. 2021, arXiv:2103.16610 | [src] |
+| XQR-30 + archival X-Shooter and ESI | 67 sightlines at z > 5.5 with S/N > 10 per ≤ 15 km/s pixel; XQR-30 itself is 30 quasars at z > 5.7 with S/N > 20 | mean Lyα transmission and τ_eff distributions over 4.9 < z < 6.1 | Bosman et al. 2022, arXiv:2108.03699 | [src] |
 | Planck low-ℓ polarisation | PR3 (2018 legacy), SRoll2 reprocessing of HFI, PR4 | τ | Planck Collaboration 2018, arXiv:1807.06209; Pagano et al. 2019, arXiv:1908.09856; Upadhyay et al. 2026, arXiv:2609.24989 | [src] |
 | XQR-30 (VLT/X-Shooter large programme), enlarged | 42 quasars at 5.8 ≲ z ≲ 6.6, high resolution and high signal-to-noise | τ_eff, dark gaps, dark pixels (34 quasars), damping wings (23 of 42 after quality control) | Greig et al. 2024, arXiv:2404.12585; Davies et al. 2025, arXiv:2510.25829 | [src] |
 | X-Shooter + Keck/ESI compilation | 55 quasars at z_em > 5.5 | Lyα dark gaps | Zhu et al. 2021, arXiv:2109.06295 | [src] |
@@ -161,6 +171,7 @@ after the two-year survey [src: arXiv:2511.02985].
   error.
 - BINGO, FAST and the Tianlai dish array appear only in forecast or pipeline papers seen in
   searches; no result or status is recorded.
-- CONCERTO, mmIME and COPSS results were not found in the searches run.
+- CONCERTO results were not found in the searches run; COPSS and mmIME are known from their
+  abstracts only.
 - Public data locations (archives, URLs) were not checked for any experiment except the
   statement that EDGES raw data are released with arXiv:2605.16643.

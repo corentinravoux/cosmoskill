@@ -56,7 +56,10 @@ step: `references/suite-conventions.md`. Design documents and test logs are in t
 - `${CLAUDE_SKILL_DIR}/scripts/fetch_paper.py <arXiv id>`: reads a cited
   paper: `--abstract`, `--outline`, `--section <title>`, `--grep <text>`.
 - `${CLAUDE_SKILL_DIR}/scripts/layers.py <skill>`: prints a researcher's
-  personal and project notes for a skill.
+  personal and project notes, papers and dossiers for a skill. To record
+  something for the researcher, when asked: `layers.py note <skill>
+  <file>#<key> <text>`, `layers.py source <skill> <arXiv id> --role <role>`,
+  `layers.py dossier <skill> <name>`; add `--project` for one project only.
 
 ## Choosing the level
 <!-- key: choosing-the-level -->
@@ -130,7 +133,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; conventions 1k; field-state-2026 2k; review-checklists 1k; review-rubric 1k; suite-conventions 2k.
+Sizes, in thousands of tokens: L1 4k; conventions 1k; field-state-2026 2k; review-checklists 1k; review-rubric 1k; suite-conventions 2k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

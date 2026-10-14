@@ -1,7 +1,7 @@
 # Lyman-alpha forest — open questions, tensions and stale claims
 
 Scope: live controversies with both sides cited, internal tensions between analyses, method debates, what the next data decide, labelled forecasts, and the misconceptions that still circulate.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-14
 
 Flags: `[src]` read this session in the cited paper (abstract unless a section is named); `[der]` derived here; `[sec]` secondary.
 
@@ -48,7 +48,7 @@ A manuscript should quote a WDM limit together with its thermal-history assumpti
 ## 3. Fuzzy dark matter: which limit is current?
 <!-- key: fuzzy-dark-matter-which-limit-is-current -->
 
-Published lower limits on a pure FDM mass span a factor of ~100: 2 × 10⁻²¹ eV (20 × 10⁻²², arXiv:1703.04683), 2 × 10⁻²⁰ eV (arXiv:2007.12705), and in 2026 1.9 × 10⁻²¹ eV from P1D at z = 4.2–5.0 with a new emulator (arXiv:2606.06969) [src]. The 2026 result is ten times weaker than the 2021 one; the abstracts do not explain the difference, and the reason (data set, k range, thermal priors, emulator) was not traced this session. All three exclude the canonical 10⁻²² eV mass as all of the dark matter; mixed models with f_FDM ≲ 0.1 at 10⁻²²–10⁻²³ eV remain allowed (arXiv:2606.06969) [src].
+Published lower limits on a pure FDM mass span a factor of ~100: 2 × 10⁻²¹ eV (20 × 10⁻²², arXiv:1703.04683), 2 × 10⁻²⁰ eV (arXiv:2007.12705), and in 2026 1.9 × 10⁻²¹ eV from P1D at z = 4.2–5.0 with a new emulator (arXiv:2606.06969) [src]. The 2026 result is ten times weaker than the 2021 one. Its authors attribute the difference to two choices: glass initial conditions for the gas in the 2021 work against offset dark-matter and gas grids in theirs, and a Gaussian-process emulator optimised for pure FDM in 2021 against their two-stage neural emulator built for the broader mixed-FDM space, "less optimized for the narrow PFDM posterior" (arXiv:2606.06969) [src: Sect. 4.1]. All three exclude the canonical 10⁻²² eV mass as all of the dark matter; mixed models with f_FDM ≲ 0.1 at 10⁻²²–10⁻²³ eV remain allowed (arXiv:2606.06969) [src].
 
 ## 4. Growth rate from the forest
 <!-- key: growth-rate-from-the-forest -->
@@ -162,7 +162,7 @@ The 2007 forecast is worth keeping in view: a 1.4% target has become a 0.65% mea
 ## 13. Not verified
 <!-- key: not-verified -->
 
-- Why the 2026 FDM limit is weaker than the 2021 one.
+- Closed 2026-10-14: the reason the 2026 FDM limit is weaker is now in §3 (authors' explanation, not an independent test).
 - A like-for-like cosmological reanalysis of eBOSS DR14 with the DESI DR1 model.
 - Any DESI DR2 P1D measurement or DESI P3D/P× measurement on data (none found by date-sorted search).
 - Any DESI-based tomographic map publication (none found by search).

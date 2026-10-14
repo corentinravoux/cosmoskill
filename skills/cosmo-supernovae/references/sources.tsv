@@ -108,3 +108,53 @@ Mortsell2026	2608.28430	Mörtsell	2026	Follow-up of SN 2025wny V: Lens Modelling
 Camilleri2026	2609.05053	Camilleri	2026	Supernovae Unite: Combining Pantheon+ and DES-SN5YR	results
 Lee2026	2609.05321	Lee	2026	Supernovae Unite: Host-Galaxy Mass Measurements of Type Ia Supernovae and Their Impact on Cosmology	systematics
 Holas2026	2609.39804	Holas	2026	An improved standardization framework for Type II-P supernovae using a hierarchical Bayesian approach	method
+Riess1996	astro-ph/9604143	Riess	1996	A Precise Distance Indicator: Type Ia Supernova Multicolor Light Curve Shapes	foundation
+Hamuy1996	astro-ph/9609059	Hamuy	1996	The Absolute Luminosities of the Calan/Tololo Type Ia Supernovae	foundation
+Perlmutter1997	astro-ph/9608192	Perlmutter	1996	Measurements of the Cosmological Parameters Omega and Lambda from the First 7 Supernovae at z >= 0.35	foundation
+Phillips1999	astro-ph/9907052	Phillips	1999	The Reddening-Free Decline Rate Versus Luminosity Relationship for Type Ia Supernovae	foundation
+Tripp1999	astro-ph/9904347	Tripp	1999	Determination of the Hubble Constant Using a Two-Parameter Luminosity Correction for Type Ia Supernovae	foundation
+Guy2005	astro-ph/0506583	Guy	2005	SALT: a Spectral Adaptive Light curve Template for Type Ia Supernovae	foundation
+Astier2006	astro-ph/0510447	Astier	2005	The Supernova Legacy Survey: Measurement of Omega_M, Omega_Lambda and w from the First Year Data Set	results
+Guy2010	1010.4743	Guy	2010	The Supernova Legacy Survey 3-year sample: Type Ia Supernovae photometric distances and cosmological constraints	results
+Lampeitl2010	1005.4687	Lampeitl	2010	The Effect of Host Galaxies on Type Ia Supernovae in the SDSS-II Supernova Survey	foundation
+March2011	1102.3237	March	2011	Improved constraints on cosmological parameters from SNIa data	foundation
+Hlozek2012	1111.5328	Hlozek	2011	Photometric Supernova Cosmology with BEAMS and SDSS-II	method
+ScolnicKessler2016	1603.01559	Scolnic	2016	Measuring Type Ia Supernova Populations of Stretch and Color and Predicting Distance Biases	method
+Mandel2009	0908.0536	Mandel	2009	Type Ia Supernova Light Curve Inference: Hierarchical Bayesian Analysis in the Near Infrared	foundation
+Marriner2011	1107.4631	Marriner	2011	A More General Model for the Intrinsic Scatter in Type Ia Supernova Distance Moduli	method
+Kessler2009sdss	0908.4274	Kessler	2009	First-year Sloan Digital Sky Survey-II (SDSS-II) Supernova Results: Hubble Diagram and Cosmological Parameters	results
+Kessler2010	1008.1024	Kessler	2010	Results from the Supernova Photometric Classification Challenge	foundation
+Lochner2016	1603.00882	Lochner	2016	Photometric Supernova Classification With Machine Learning	method
+Regnault2009	0908.3808	Regnault	2009	Photometric Calibration of the Supernova Legacy Survey Fields	foundation
+Betoule2013	1212.4864	Betoule	2012	Improved Photometric Calibration of the SNLS and the SDSS Supernova Surveys	method
+Bohlin2014	1406.1707	Bohlin	2014	Techniques and Review of Absolute Flux Calibration from the Ultraviolet to the Mid-Infrared	review
+Bohlin2020	2005.10945	Bohlin	2020	New Grids of Pure-Hydrogen White-Dwarf NLTE Model Atmospheres \newline and the HST/STIS Flux Calibration	method
+Fitzpatrick1999	astro-ph/9809387	Fitzpatrick	1998	Correcting for the Effects of Interstellar Extinction	foundation
+Schlafly2011	1012.4804	Schlafly	2010	Measuring Reddening with SDSS Stellar Spectra and Recalibrating SFD	method
+Carrick2015	1504.04627	Carrick	2015	Cosmological parameters from the comparison of peculiar velocities with predictions from the 2M++ density field	method
+Holz2005	astro-ph/0412173	Holz	2004	Safety in numbers: Gravitational Lensing Degradation of the Luminosity Distance-Redshift Relation	foundation
+Jonsson2010	1002.1374	Jonsson	2010	Constraining dark matter halo properties using lensed SNLS supernovae	method
+Hamuy2002	astro-ph/0201279	Hamuy	2002	Type II Supernovae as Standardized Candles	foundation
+Burns2020	2004.13069	Burns	2020	SN 2013aa and SN 2017cbv: Two Sibling Type Ia Supernovae in the spiral galaxy NGC 5643	results
+Sullivan2006	astro-ph/0605455	Sullivan	2006	Rates and properties of type Ia supernovae as a function of mass and star-formation in their host galaxies	foundation
+Jha2007	astro-ph/0612666	Jha	2006	Improved Distances to Type Ia Supernovae with Multicolor Light Curve Shapes: MLCS2k2	method
+Kowalski2008	0804.4142	Kowalski	2008	Improved Cosmological Constraints from New, Old and Combined Supernova Datasets	results
+Perrett2010	1006.2254	Perrett	2010	Real-time Analysis and Selection Biases in the Supernova Legacy Survey	foundation
+Burns2011	1010.4040	Burns	2010	The Carnegie Supernova Project: Light Curve Fitting with SNooPy	code
+Suzuki2012	1105.3470	Suzuki	2011	The Hubble Space Telescope Cluster Supernova Survey: V. Improving the Dark Energy Constraints Above z>1 and Building an Early-Type-Hosted Supernova Sample	results
+Rigault2013	1309.1182	Rigault	2013	Evidence of Environmental Dependencies of Type Ia Supernovae from the Nearby Supernova Factory indicated by Local Hα	systematics
+Kelly2015	1411.6009	Kelly	2014	Multiple Images of a Highly Magnified Supernova Formed by an Early-Type Cluster Galaxy Lens	data
+Goobar2017	1611.00014	Goobar	2016	iPTF16geu: A multiply imaged, gravitationally lensed type Ia supernova	data
+Roman2018	1706.07697	Roman	2017	Dependence of Type Ia supernova luminosities on their local environment	systematics
+Kang2020	1912.04903	Kang	2019	Early-type Host Galaxies of Type Ia Supernovae. II. Evidence for Luminosity Evolution in Supernova Cosmology	critique
+Thorp2021	2102.05678	Thorp	2021	Testing the Consistency of Dust Laws in SN Ia Host Galaxies: A BayeSN Examination of Foundation DR1	systematics
+Biswas2021	2103.16978	Biswas	2021	Two c's in a pod: Cosmology independent measurement of the Type Ia supernova colour-luminosity relation with a sibling pair	results
+Qu2021	2106.04370	Qu	2021	SCONE: Supernova Classification with a Convolutional Neural Network	code
+Moller2022	2201.11142	Möller	2022	The Dark Energy Survey 5-year photometrically identified Type Ia Supernovae	data
+Refsdal1964	doi:10.1093/mnras/128.4.307	Refsdal	1964	On the Possibility of Determining Hubble's Parameter and the Masses of Galaxies from the Gravitational Lens Effect	foundation
+Cardelli1989	doi:10.1086/167900	Cardelli	1989	The relationship between infrared, optical, and ultraviolet extinction	foundation
+Hinton2020	doi:10.21105/joss.02122	Hinton	2020	Pippin: A pipeline for supernova cosmology	code
+Aleo2023	2211.07128	Aleo	2022	The Young Supernova Experiment Data Release 1 (YSE DR1): Light Curves and Photometric Classification of 1975 Supernovae	data
+Kim2024	2412.14181	Kim	2024	Comments on the Union3 "Spline-Interpolated Distance Moduli" Model	critique
+Boyd2025	2412.08809	Boyd	2024	DAmodel: Hierarchical Bayesian Modelling of DA White Dwarfs for Spectrophotometric Calibration	method
+Kirshner1974	doi:10.1086/153123	Kirshner	1974	Distances to extragalactic supernovae	foundation

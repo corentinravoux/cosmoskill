@@ -1,7 +1,7 @@
 # Surveys and data — CMB × LSS cross-correlations
 
 Scope: the CMB maps and the large-scale-structure tracers that enter published cross-correlations, with areas, sample sizes, redshift ranges, public locations and status; then what comes next.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-13
 
 Flags: `[src]` read this session in the cited paper; `[sec]` from a named secondary source;
 `[der]` derived here. Instrument descriptions of the CMB experiments and their release history are
@@ -29,6 +29,7 @@ arXiv:2606.26223) [src].
 | WMAP + Planck foreground-cleaned temperature maps | combined cleaned maps; an "asymmetric" estimator combines differently cleaned maps | projected-field kSZ | Hill 2016, arXiv:1603.01608; Kusiak 2021, arXiv:2102.01068 | [src] |
 | Planck 2015 temperature, polarisation and lensing map | ISW cross-correlations, ISW map, ISW–lensing bispectrum | ISW | Planck Collaboration 2015, arXiv:1502.01595 | [src] |
 | Planck PR3 (2018) lensing map | first DESI-LRG and unWISE tomography; void lensing | κ × galaxies | White 2021, arXiv:2111.09898 (PR3 as identified in arXiv:2407.04607); Sartori 2026, arXiv:2605.19763 | [src] |
+| Planck y maps | 2013: first all-sky map, from the 100–857 GHz channels; 2015: from 30–857 GHz, delivered with masks and noise characterisation | tSZ × LSS | Planck Collaboration 2013, arXiv:1303.5081; Planck Collaboration 2015, arXiv:1502.01596 | [src] |
 | ACTPol, two seasons, 146 GHz | 660 deg² with BOSS CMASS | first velocity-weighted kSZ stack | Schaan 2015, arXiv:1510.06442 | [src] |
 | ACT DR4 lensing | ~436 deg² | DES Y3 MagLim × κ | arXiv:2306.17268 | [src] |
 | ACT DR4 + Planck lensing, tSZ-cleaned | — | DES Y3 shear × κ | Shaikh 2023, arXiv:2309.04412 | [src] |
@@ -42,7 +43,7 @@ arXiv:2606.26223) [src].
 
 | Product | Content | Public location | Citation | Flag |
 |---|---|---|---|---|
-| Planck PR4 (NPIPE) lensing maps | the Planck lensing map of almost every 2023–2026 analysis in `results.md` §1 | — | used in arXiv:2407.04607, arXiv:2506.22416, arXiv:2512.17865 | [src] |
+| Planck PR4 (NPIPE) lensing maps | the Planck lensing map of almost every 2023–2026 analysis in `results.md` §1; reconstruction signal-to-noise almost 20% above PR3, lensing amplitude 1.004 ± 0.024 relative to the Planck 2018 best fit (Carron 2022, arXiv:2206.07773) | — | used in arXiv:2407.04607, arXiv:2506.22416, arXiv:2512.17865 | [src] |
 | Planck PR4 frequency maps, nine bands | multi-frequency fits of tSZ, CIB and radio around galaxies | — | Zhao 2026, arXiv:2606.28099 | [src] |
 | Planck PR4 NILC Compton-y with CIB moment deprojection | y × κ | — | McCarthy 2023, arXiv:2308.16260 | [src] |
 | ACT DR6 lensing map | 9400 deg²; ACT data from 2017 to 2021 | LAMBDA, "ACT (AdvACT) DR6 Lensing Maps", version v1 dated 1 November 2023: κ alm, mask, filter, noise per mode; 400 simulated reconstructions at NERSC | Madhavacheril 2023, arXiv:2304.05203 | [src] for area and years; [sec: LAMBDA product page, read through a web search summary] for the release |

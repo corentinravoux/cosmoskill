@@ -47,11 +47,10 @@ of research that way. So:
    left, open leads. If you find this file when you start, you are resuming:
    read it and the existing files, keep what is there, and continue from the
    first subtopic not marked done. Delete it when the skill is complete.
-4. **Budget, hard caps.** At most 70 research tool calls for the domain and
-   at most 100 rows in `sources.tsv`. Prefer `get_abstract` to reading a
-   paper body; fetch a body section only for a number the abstract does not
-   give, and one section, never a whole paper. Count your calls in
-   `_progress.md`. When the budget is spent, stop researching, finish the
+4. **Budget, hard caps.** At most 90 research tool calls for the domain and
+   at most 120 rows in `sources.tsv`. Read abstracts for headline results;
+   read one body section, never a whole paper, for what section 2b asks.
+   Count your calls in `_progress.md`. When the budget is spent, stop researching, finish the
    files with what you have and list the rest under "Not verified". The
    caps stop you from adding; they are never a reason to delete a source or
    a result that is already verified and written. If inherited files already
@@ -98,6 +97,43 @@ Reviews are the fastest map of a domain: find one or two recent ones first
 (search `ti:review` or look in Annual Reviews, Living Reviews, Physics
 Reports), read their section list, then go to the primary papers for numbers.
 
+## 2b. Subtopics, sources and paper bodies
+
+The first build of this suite read abstracts almost only, searched recent
+work first and skipped the classic references. Three rules correct that.
+
+1. **Subtopics first, from the literature.** Before researching, take the
+   first- and second-level section titles of two reviews of the last five
+   years, add the working groups or key-project lists of the collaborations
+   active in the domain, merge duplicates, and keep between six and twelve
+   subtopics. Write them to `references/subtopics.tsv` (columns below) with
+   where each comes from. The list is the domain's, not yours and not the
+   requester's.
+2. **Sources by rule.** For every subtopic the bibliography holds at least:
+   the paper that fixes the definition or the method (`foundation`), one
+   review or method paper, the latest result of each collaboration active in
+   it, and one critique where a result is disputed. Find the foundation
+   papers through the reference lists of the reviews; read the abstract of
+   each before citing it.
+3. **Bodies where an abstract cannot carry the content.** In
+   `systematics.md`, the size of a systematic is read in the systematics
+   budget of the analysis (usually one table). In `physics-and-methods.md`,
+   what an analysis did (statistic, scale cuts, model, priors, covariance,
+   blinding) is read in its method section. Mark such a statement with the
+   place read, inside the flag: `[src: Table 3]`, `[src: Sect. 5.2]`,
+   `[src: Eq. 12]`. A plain `[src]` means the abstract.
+
+`references/subtopics.tsv`, tab-separated, one header line:
+
+```
+key	title	from	files	status
+shear-calibration	Shear calibration	Mandelbaum 2018 review, Sect. 4; KiDS and DES working groups	systematics.md; physics-and-methods.md	covered
+```
+
+`key` is lower case with hyphens and will not change; `from` names the
+review and section or the collaboration page; `files` lists the reference
+files that cover the subtopic; `status` is `covered`, `thin` or `missing`.
+
 ## 3. What to write
 
 Directory, relative to the repository root: `skills/cosmo-<domain>/`
@@ -110,6 +146,7 @@ references/results.md
 references/systematics.md
 references/open-questions.md
 references/sources.tsv
+references/subtopics.tsv
 ```
 
 ### Citation and provenance format (machine-checked)
@@ -138,7 +175,7 @@ Kaiser1987	doi:10.1093/mnras/227.1.1	Kaiser	1987	Clustering in real space and in
 first listed author, or the collaboration name if arXiv lists that).
 `title` is the exact arXiv title. `role` is one of `foundation`, `review`,
 `method`, `data`, `results`, `systematics`, `forecast`, `code`, `critique`.
-Aim for 50–90 sources, 100 at most: the papers an expert in the domain would expect to see.
+Aim for 70–110 sources, 120 at most: the papers an expert in the domain would expect to see, classic ones included.
 
 ### The five reference files
 
@@ -219,19 +256,30 @@ situations and keywords only, never summarises the content, and stays under
 `cosmo-inflation-primordial`, `cosmo-tensions-anomalies`,
 `cosmo-surveys-facilities`, `cosmo-statistics-inference`,
 `cosmo-simulations-mocks`, `cosmo-reionization-21cm`, `cosmo-multimessenger`,
-`cosmo-software-ecosystem`, `cosmo-theory-foundations`, and the hub
-`observational-cosmology`. Where your scope touches a sibling's, give the
+`cosmo-software-ecosystem`, `cosmo-theory-foundations`,
+`cosmo-data-pipelines`, `cosmo-photometry-photoz`, `cosmo-cosmic-web`,
+`cosmo-bbn`, `cosmo-galaxy-halo-connection`, `cosmo-early-universe-exotica`,
+`cosmo-machine-learning`, and the hub `observational-cosmology`. The scope of
+each of the last seven, and its boundary with the older skills, is in
+`docs/scopes-new-domains.md`. Where your scope touches a sibling's, give the
 essentials in two or three sentences and name the sibling.
 
 ## 4. Before you finish
 
-Run the checker and fix what it reports until it exits 0:
+Run the upkeep tools from the repository root, and fix what they report
+until all pass. The first gives every section its key (a comment under the
+heading: never write, rename or remove one by hand); the second writes the
+"Levels and layers" block at the end of `SKILL.md`, which you do not write
+yourself.
 
 ```bash
+python3 tools/assign_keys.py
+python3 tools/sync_blocks.py
 python3 skills/observational-cosmology/scripts/verify_sources.py skills/cosmo-<domain>
+python3 -m unittest discover -s tests
 ```
 
-It verifies each arXiv ID against the arXiv API (existence, title, first
+The checker verifies each arXiv ID against the arXiv API (existence, title, first
 author) and that prose citations and `sources.tsv` rows match one to one. A
 title or author mismatch means you wrote a row from memory: fetch the abstract
 and correct the row, or drop the citation.

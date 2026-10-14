@@ -100,3 +100,73 @@ Kramer2026	2608.27458	Kramer	2026	The Atacama Cosmology Telescope: Constraints o
 Yang2026	2603.14494	Yang	2026	A measurement of gas rotation in galaxy groups via the kinetic Sunyaev-Zeldovich effect	results
 Krywonos2026	2607.16071	Krywonos	2026	Constraints on the remote quadrupole field from the polarized Sunyaev Zel'dovich effect	results
 Hotinli2025vrec	2506.21657	Hotinli	2025	Velocity Reconstruction from KSZ: Measuring $f_{NL}$ with ACT and DESILS	results
+Hu2001	astro-ph/0111606	Hu	2001	Mass Reconstruction with CMB Polarization	foundation
+Okamoto2003	astro-ph/0301031	Okamoto	2003	CMB Lensing Reconstruction on the Full Sky	foundation
+Lewis2006	astro-ph/0601594	Lewis	2006	Weak Gravitational Lensing of the CMB	review
+Smith2007	0705.3980	Smith	2007	Detection of Gravitational Lensing in the Cosmic Microwave Background	foundation
+Hirata2008	0801.0644	Hirata	2008	Correlation of CMB with large-scale structure: II. Weak lensing	foundation
+Bleem2012	1203.4808	Bleem	2012	A Measurement of the Correlation of Galaxy Surveys with CMB Lensing Convergence Maps from the South Pole Telescope	foundation
+Sherwin2012	1207.4543	Sherwin	2012	The Atacama Cosmology Telescope: Cross-Correlation of CMB Lensing and Quasars	foundation
+Krolewski2019	1909.07412	Krolewski	2019	unWISE tomography of Planck CMB lensing	foundation
+Limber1953	doi:10.1086/145672	Limber	1953	The Analysis of Counts of the Extragalactic Nebulae in Terms of a Fluctuating Density Field.	foundation
+LoVerde2008	0809.5112	LoVerde	2008	Extended Limber Approximation	method
+Scranton2005	astro-ph/0504510	Scranton	2005	Detection of Cosmic Magnification with the Sloan Digital Sky Survey	foundation
+vonWietersheimKramsta2021	2101.05261	von Wietersheim-Kramsta	2021	Magnification bias in galaxy surveys with complex sample selection functions	method
+Hivon2001	astro-ph/0105302	Hivon	2001	MASTER of the CMB Anisotropy Power Spectrum: A Fast Method for Statistical Analysis of Large and Complex CMB Data Sets	method
+Alonso2018	1809.09603	Alonso	2018	A unified pseudo-$C_\ell$ framework	code
+Kokron2021	2101.11014	Kokron	2021	The cosmology dependence of galaxy clustering and lensing from a hybrid $N$-body-perturbation theory model	method
+Namikawa2012	1209.0091	Namikawa	2012	Bias-Hardened CMB Lensing	method
+Osborne2013	1310.7547	Osborne	2013	Extragalactic Foreground Contamination in Temperature-based CMB Lens Reconstruction	method
+vanEngelen2013	1310.7023	van Engelen	2013	CMB Lensing Power Spectrum Biases from Galaxies and Clusters using High-angular Resolution Temperature Maps	systematics
+Madhavacheril2018	1802.08230	Madhavacheril	2018	Mitigating Foreground Biases in CMB Lensing Reconstruction Using Cleaned Gradients	method
+Schaan2018	1804.06403	Schaan	2018	Foreground-immune CMB lensing with shear-only reconstruction	method
+Sailer2020	2007.04325	Sailer	2020	Lower bias, lower noise CMB lensing with foreground-hardened estimators	method
+Carron2022	2206.07773	Carron	2022	CMB lensing from Planck PR4 maps	data
+Zhang2007	0704.1932	Zhang	2007	A discriminating probe of gravity at cosmological scales	foundation
+Reyes2010	1003.2185	Reyes	2010	Confirmation of general relativity on large scales from weak lensing and galaxy velocities	foundation
+Pullen2014	1412.4454	Pullen	2014	Probing gravity at large scales through CMB lensing	method
+Pullen2015	1511.04457	Pullen	2015	Constraining Gravity at the Largest Scales through CMB Lensing and Galaxy Velocities	results
+Sunyaev1980	doi:10.1093/mnras/190.3.413	Sunyaev	1980	The velocity of clusters of galaxies relative to the microwave background. The possibility of its measurement	foundation
+Sunyaev1970	doi:10.1007/BF00653471	Sunyaev	1970	Small-scale fluctuations of relic radiation	foundation
+Birkinshaw1998	astro-ph/9808050	Birkinshaw	1998	The Sunyaev-Zel'dovich Effect	review
+Carlstrom2002	astro-ph/0208192	Carlstrom	2002	Cosmology with the Sunyaev-Zel'dovich Effect	review
+Mroczkowski2018	1811.02310	Mroczkowski	2018	Astrophysics with the Spatially and Spectrally Resolved Sunyaev-Zeldovich Effects: A Millimetre/Submillimetre Probe of the Warm and Hot Universe	review
+Ferreira1998	astro-ph/9812456	Ferreira	1998	Streaming velocities as a dynamical estimator of Omega	foundation
+Ho2009	0903.2845	Ho	2009	Finding the Missing Baryons Using CMB as a Backlight	foundation
+Dore2003	astro-ph/0309337	Doré	2003	Beyond the Damping Tail: Cross-Correlating the Kinetic Sunyaev-Zel'dovich Effect with Cosmic Shear	foundation
+DeDeo2005	astro-ph/0511060	DeDeo	2005	The kinetic Sunyaev-Zel'dovitch effect as a dark energy probe	foundation
+Ferraro2016	1605.02722	Ferraro	2016	The Kinematic Sunyaev-Zel'dovich Effect with Projected Fields II: prospects, challenges, and comparison with simulations	method
+Terrana2016	1610.06919	Terrana	2016	Analyzing the cosmic variance limit of remote dipole measurements of the cosmic microwave background using the large-scale kinetic Sunyaev Zel'dovich effect	foundation
+Deutsch2017	1707.08129	Deutsch	2017	Reconstruction of the remote dipole and quadrupole fields from the kinetic Sunyaev Zel'dovich and polarized Sunyaev Zel'dovich effects	foundation
+Cayuso2021	2111.11526	Cayuso	2021	Velocity reconstruction with the cosmic microwave background and galaxy surveys	method
+PlanckInt2015XXXVII	1504.03339	Planck Collaboration	2015	Planck intermediate results. XXXVII. Evidence of unbound gas from the kinetic Sunyaev-Zeldovich effect	results
+Battaglia2016	1607.02442	Battaglia	2016	The Tau of Galaxy Clusters	method
+Madhavacheril2019	1901.02418	Madhavacheril	2019	Cosmology with kSZ: breaking the optical depth degeneracy with Fast Radio Bursts	method
+Alonso2016	1604.01382	Alonso	2016	Reconstructing cosmic growth with kSZ observations in the era of Stage IV experiments	forecast
+Munchmeyer2018	1810.13424	Münchmeyer	2018	Constraining local non-Gaussianities with kSZ tomography	forecast
+Komatsu2002	astro-ph/0205468	Komatsu	2002	The Sunyaev-Zel'dovich angular power spectrum as a probe of cosmological parameters	foundation
+Arnaud2009	0910.1234	Arnaud	2009	The universal galaxy cluster pressure profile from a representative sample of nearby systems (REXCESS) and the Y_SZ-M_500 relation	foundation
+Battaglia2011	1109.3711	Battaglia	2011	On the Cluster Physics of Sunyaev-Zel'dovich Surveys II: Deconstructing the Thermal SZ Power Spectrum	method
+Planck2013XXI	1303.5081	Planck Collaboration	2013	Planck 2013 results. XXI. All-sky Compton parameter power spectrum and high-order statistics	foundation
+Planck2015XXII	1502.01596	Planck Collaboration	2015	Planck 2015 results. XXII. A map of the thermal Sunyaev-Zeldovich effect	data
+Planck2015XXIII	1509.06555	Planck Collaboration	2015	Planck 2015 results. XXIII. The thermal Sunyaev-Zeldovich effect--cosmic infrared background correlation	systematics
+Hill2013	1312.4525	Hill	2013	Detection of Thermal SZ -- CMB Lensing Cross-Correlation in Planck Nominal Mission Data	foundation
+Vikram2016	1608.04160	Vikram	2016	A Measurement of the Galaxy Group-Thermal Sunyaev-Zel'dovich Effect Cross-Correlation Function	foundation
+Sachs1967	doi:10.1086/148982	Sachs	1967	Perturbations of a Cosmological Model and Angular Variations of the Microwave Background	foundation
+Rees1968	doi:10.1038/217511a0	Rees	1968	Large-scale Density Inhomogeneities in the Universe	foundation
+Crittenden1995	astro-ph/9510072	Crittenden	1995	Looking for $\Lambda$ with the Rees-Sciama Effect	foundation
+Boughn2003	astro-ph/0305001	Boughn	2003	A correlation of the cosmic microwave sky with large scale structure	foundation
+Giannantonio2008	0801.4380	Giannantonio	2008	Combined analysis of the integrated Sachs-Wolfe effect and cosmological implications	results
+Ho2008	0801.0642	Ho	2008	Correlation of CMB with large-scale structure: I. ISW Tomography and Cosmological Implications	method
+Granett2008	0805.3695	Granett	2008	An Imprint of Super-Structures on the Microwave Background due to the Integrated Sachs-Wolfe Effect	foundation
+Nishizawa2014	1404.5102	Nishizawa	2014	Integrated Sachs Wolfe Effect and Rees Sciama Effect	review
+Song2002	astro-ph/0209001	Song	2002	The Far-Infrared Background Correlation with CMB Lensing	foundation
+Planck2013XVIII	1303.5078	Planck Collaboration	2013	Planck 2013 results. XVIII. Gravitational lensing-infrared background correlation	foundation
+Holder2013	1303.5048	Holder	2013	A CMB lensing mass map and its correlation with the cosmic infrared background	foundation
+Sherwin2015	1502.05356	Sherwin	2015	Delensing the CMB with the Cosmic Infrared Background	method
+Birkinshaw1983	doi:10.1038/302315a0	Birkinshaw	1983	A test for transverse motions of clusters of galaxies	foundation
+Hotinli2018	1812.03167	Hotinli	2018	Transverse Velocities with the Moving Lens Effect	foundation
+Yasini2018	1812.04241	Yasini	2018	Pairwise Transverse Velocity Measurement with the Rees-Sciama Effect	method
+Dvorkin2008	0812.1566	Dvorkin	2008	Reconstructing Patchy Reionization from the Cosmic Microwave Background	foundation
+Coulton2024	2401.13033	Coulton	2024	The Atacama Cosmology Telescope: A search for late-time anisotropic screening of the Cosmic Microwave Background	results
+Schutt2024	2401.13040	Schutt	2024	A new "temperature inversion" estimator to detect CMB patchy screening by large-scale structure	method

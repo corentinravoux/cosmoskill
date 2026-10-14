@@ -5,7 +5,7 @@ description: Use when reviewing, planning or fact-checking Type Ia supernova cos
 
 # Type Ia supernova cosmology — expert reference
 
-Snapshot 2026-10-07. Numbers carry provenance flags ([src] / [sec] / [der]);
+Snapshot 2026-10-13. Numbers carry provenance flags ([src] / [sec] / [der]);
 re-verify against the cited paper before a number enters a manuscript.
 
 ## File map
@@ -55,6 +55,8 @@ re-verify against the cited paper before a number enters a manuscript.
   different selection functions (arXiv:2501.06664).
 - Unbinned covariances cut the systematic error by ~1.5
   (arXiv:2012.05900); one-at-a-time budget rows do not add in quadrature.
+  Largest terms: redshift bias (Pantheon+), calibration and dust (DES),
+  `M_B` and peculiar velocities (Union3).
 - Only BBC and UNITY have produced cosmology from data; SBI results are on
   simulations (arXiv:2603.11165).
 
@@ -109,7 +111,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; open 5k; methods 8k; results 6k; surveys 6k; systematics 7k.
+Sizes, in thousands of tokens: L1 3k; open 5k; methods 12k; results 7k; surveys 6k; systematics 10k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

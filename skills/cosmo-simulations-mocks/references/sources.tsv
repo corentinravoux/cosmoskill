@@ -99,3 +99,117 @@ Horowitz2019	1903.09049	Horowitz	2019	TARDIS Paper I: A Constrained Reconstructi
 List2025	2510.05206	List	2025	DISCO-DJ II: a differentiable particle-mesh code for cosmology	code
 Adamek2023	2211.12457	Adamek	2022	Euclid: Modelling massive neutrinos in cosmology -- a code comparison	systematics
 Winther2015	1506.06384	Winther	2015	Modified Gravity N-body Code Comparison Project	systematics
+BarnesHut1986	doi:10.1038/324446a0	Barnes	1986	A hierarchical O(N log N) force-calculation algorithm	foundation
+Bagla2002	astro-ph/9911025	Bagla	1999	TreePM: A code for Cosmological N-Body Simulations	foundation
+Springel2001GADGET	astro-ph/0003162	Springel	2000	GADGET: A code for collisionless and gasdynamical cosmological simulations	code
+Springel2005GADGET2	astro-ph/0505010	Springel	2005	The cosmological simulation code GADGET-2	code
+Ishiyama2009	0910.0121	Ishiyama	2009	GreeM : Massively Parallel TreePM Code for Large Cosmological N-body Simulations	code
+Dehnen2002	astro-ph/0202512	Dehnen	2002	A Hierarchical O(N) Force Calculation Algorithm	foundation
+Teyssier2002	astro-ph/0111367	Teyssier	2001	Cosmological Hydrodynamics with Adaptive Mesh Refinement: a new high resolution code called RAMSES	code
+Habib2016	1410.2805	Habib	2014	HACC: Simulating Sky Surveys on State-of-the-Art Supercomputing Architectures	code
+Bouchet1995	astro-ph/9406013	Bouchet	1994	Perturbative Lagrangian Approach to Gravitational Instability	foundation
+Scoccimarro1998	astro-ph/9711187	Scoccimarro	1997	Transients from Initial Conditions: A Perturbative Analysis	foundation
+Jenkins2010	0910.0258	Jenkins	2009	Second-order Lagrangian perturbation theory initial conditions for resimulations	method
+Jenkins2013	1306.5968	Jenkins	2013	A new way of setting the phases for cosmological multi-scale Gaussian initial conditions	method
+White1994	astro-ph/9410043	White	1994	Formation and Evolution of Galaxies: Les Houches Lectures	foundation
+Garrison2016	1605.02333	Garrison	2016	Improving Initial Conditions for Cosmological $N$-Body Simulations	method
+Hahn2021	2008.09124	Hahn	2020	Higher-order initial conditions for mixed baryon-CDM simulations	method
+Pontzen2016	1511.04090	Pontzen	2015	Inverted initial conditions: exploring the growth of cosmic structure and voids	foundation
+VillaescusaNavarro2018	1806.01871	Villaescusa-Navarro	2018	Statistical properties of paired fixed fields	systematics
+Davis1985	doi:10.1086/163168	Davis	1985	The evolution of large-scale structure in a universe dominated by cold dark matter	foundation
+More2011	1103.0005	More	2011	The overdensity and masses of the friends-of-friends halos and universality of the halo mass function	systematics
+LaceyCole1994	astro-ph/9402069	Lacey	1994	Merger rates in hierarchical models of galaxy formation. II: Comparison with N-body simulations	foundation
+BryanNorman1998	astro-ph/9710107	Bryan	1997	Statistical Properties of X-ray Clusters: Analytic and Numerical Comparisons	foundation
+Springel2001SUBFIND	astro-ph/0012055	Springel	2000	Populating a cluster of galaxies - I. Results at z=0	foundation
+Behroozi2013	1110.4372	Behroozi	2011	The Rockstar Phase-Space Temporal Halo Finder and the Velocity Offsets of Cluster Cores	code
+Hadzhiyska2021CompaSO	2110.11408	Hadzhiyska	2021	\textsc{CompaSO}: A new halo finder for competitive assignment to spherical overdensities	code
+Knebe2011	1104.0949	Knebe	2011	Haloes gone MAD: The Halo-Finder Comparison Project	systematics
+PressSchechter1974	doi:10.1086/152650	Press	1974	Formation of Galaxies and Clusters of Galaxies by Self-Similar Gravitational Condensation	foundation
+Jenkins2001	astro-ph/0005260	Jenkins	2000	Mass function of dark matter halos	foundation
+Warren2006	astro-ph/0506395	Warren	2005	Precision Determination of the Mass Function of Dark Matter Halos	results
+Tinker2008	0803.2706	Tinker	2008	Toward a halo mass function for precision cosmology: the limits of universality	foundation
+NFW1997	astro-ph/9611107	Navarro	1996	A Universal Density Profile from Hierarchical Clustering	foundation
+Springel2010AREPO	0901.4107	Springel	2009	E pur si muove: Galiliean-invariant cosmological hydrodynamical simulations on a moving mesh	code
+Hopkins2015	1409.7395	Hopkins	2014	GIZMO: A New Class of Accurate, Mesh-Free Hydrodynamic Simulation Methods	code
+SpringelHernquist2003	astro-ph/0206393	Springel	2002	Cosmological SPH simulations: A hybrid multi-phase model for star formation	foundation
+Springel2005BH	astro-ph/0411108	Springel	2004	Modeling feedback from stars and black holes in galaxy mergers	foundation
+BoothSchaye2009	0904.2572	Booth	2009	Cosmological simulations of the growth of supermassive black holes and feedback from active galactic nuclei: method and tests	method
+DallaVecchia2012	1203.5667	Dalla Vecchia	2012	Simulating galactic outflows with thermal supernova feedback	method
+Schaye2010	0909.5196	Schaye	2009	The physics driving the cosmic star formation history	data
+LeBrun2014	1312.5462	Le Brun	2013	Towards a realistic population of simulated galaxy groups and clusters	data
+Vogelsberger2014	1405.2921	Vogelsberger	2014	Introducing the Illustris Project: Simulating the coevolution of dark and visible matter in the Universe	data
+Jing2006	astro-ph/0512426	Jing	2005	The influence of baryons on the clustering of matter and weak lensing surveys	foundation
+Rudd2008	astro-ph/0703741	Rudd	2007	Effects of Baryons and Dissipation on the Matter Power Spectrum	foundation
+Semboloni2011	1105.1075	Semboloni	2011	Quantifying the effect of baryon physics on weak lensing tomography	foundation
+Schneider2019	1810.08629	Schneider	2018	Quantifying baryon effects on the matter power spectrum and the weak lensing shear correlation	method
+Arico2020	1911.08471	Aricò	2019	Modelling the large scale structure of the Universe as a function of cosmology and baryonic physics	method
+Howlett2015	1506.03737	Howlett	2015	L-PICOLA: A parallel code for fast dark matter simulation	code
+Koda2016	1507.05329	Koda	2015	Fast and accurate mock catalogue generation for low-mass galaxies	method
+White2014QPM	1309.5532	White	2013	Mock galaxy catalogs using the quick particle mesh method	method
+Tassev2015	1502.07751	Tassev	2015	sCOLA: The N-body COLA Method Extended to the Spatial Domain	foundation
+Monaco2016	1605.07752	Monaco	2016	Approximate methods for the generation of dark matter halo catalogs in the age of precision cosmology	review
+ScoccimarroSheth2002	astro-ph/0106120	Scoccimarro	2001	PTHalos: A fast method for generating mock galaxy distributions	foundation
+Manera2013	1203.6609	Manera	2012	The clustering of galaxies in the SDSS-III Baryon Oscillation Spectroscopic Survey: a large sample of mock galaxy catalogues	data
+Monaco2002	astro-ph/0109323	Monaco	2001	PINOCCHIO: pinpointing orbit-crossing collapsed hierarchical objects in a linear density field	foundation
+Kitaura2014	1307.3285	Kitaura	2013	Modelling Baryon Acoustic Oscillations with Perturbation Theory and Stochastic Halo Biasing	foundation
+Kitaura2016	1509.06400	Kitaura	2015	The clustering of galaxies in the SDSS-III Baryon Oscillation Spectroscopic Survey: mock galaxy catalogues for the BOSS Final Data Release	data
+Chuang2015EZ	1409.1124	Chuang	2014	EZmocks: extending the Zel'dovich approximation to generate mock galaxy catalogues with accurate clustering statistics	foundation
+Avila2015	1412.5228	Avila	2014	HALOGEN: A tool for fast generation of mock halo catalogues	method
+Chuang2015nIFTy	1412.7729	Chuang	2014	nIFTy Cosmology: Galaxy/halo mock catalogue comparison project on clustering statistics	systematics
+ColesJones1991	doi:10.1093/mnras/248.1.1	Coles	1991	A lognormal model for the cosmological mass distribution	foundation
+Xavier2016	1602.08503	Xavier	2016	Improving lognormal models for cosmological fields	code
+Lippich2019	1806.09477	Lippich	2018	Comparing approximate methods for mock catalogues and covariance matrices I: correlation function	systematics
+Colavincenzo2019	1806.09499	Colavincenzo	2018	Comparing approximate methods for mock catalogues and covariance matrices III: Bispectrum	systematics
+PowerKnebe2006	astro-ph/0512281	Power	2005	The Impact of Box Size on the Properties of Dark Matter Haloes in Cosmological Simulations	systematics
+KlypinPrada2019	1809.03637	Klypin	2018	Effects of long-wavelength fluctuations in large galaxy surveys	systematics
+Heitmann2008	0706.1270	Heitmann	2007	The Cosmic Code Comparison Project	systematics
+Seljak2000	astro-ph/0001493	Seljak	2000	Analytic model for galaxy and dark matter clustering	foundation
+PeacockSmith2000	astro-ph/0005010	Peacock	2000	Halo occupation numbers and galaxy bias	foundation
+CooraySheth2002	astro-ph/0206508	Cooray	2002	Halo Models of Large Scale Structure	review
+BerlindWeinberg2002	astro-ph/0109001	Berlind	2001	The Halo Occupation Distribution: Towards an Empirical Determination of the Relation Between Galaxies and Mass	foundation
+Kravtsov2004	astro-ph/0308519	Kravtsov	2003	The Dark Side of the Halo Occupation Distribution	foundation
+Zheng2005	astro-ph/0408564	Zheng	2004	Theoretical Models of the Halo Occupation Distribution: Separating Central and Satellite Galaxies	foundation
+Zheng2007	astro-ph/0703457	Zheng	2007	Galaxy Evolution from Halo Occupation Distribution Modeling of DEEP2 and SDSS Galaxy Clustering	method
+ValeOstriker2004	astro-ph/0402500	Vale	2004	Linking halo mass to galaxy luminosity	foundation
+Conroy2006	astro-ph/0512234	Conroy	2005	Modeling Luminosity-Dependent Galaxy Clustering Through Cosmic Time	foundation
+Gao2005	astro-ph/0506510	Gao	2005	The age dependence of halo clustering	foundation
+Wechsler2006	astro-ph/0512416	Wechsler	2005	The Dependence of Halo Clustering on Halo Formation History, Concentration, and Occupation	foundation
+Croton2007	astro-ph/0605636	Croton	2006	Halo assembly bias and its effects on galaxy clustering	foundation
+Hearin2016	1512.03050	Hearin	2015	Introducing Decorated HODs: modeling assembly bias in the galaxy-halo connection	method
+Evrard2002	astro-ph/0110246	Evrard	2001	Galaxy Clusters in Hubble Volume Simulations: Cosmological Constraints from Sky Survey Populations	foundation
+Blaizot2005	astro-ph/0309305	Blaizot	2003	MoMaF : The Mock Map Facility	method
+KitzbichlerWhite2007	astro-ph/0609636	Kitzbichler	2006	The high redshift galaxy population in hierarchical galaxy formation models	method
+Merson2013	1206.4049	Merson	2012	Lightcone mock catalogues from semi-analytic models of galaxy formation - I. Construction and application to the BzK colour selection	method
+Fosalba2008	0711.1540	Fosalba	2007	The onion universe: all sky lightcone simulations in spherical shells	foundation
+Fosalba2015	1312.1707	Fosalba	2013	The MICE Grand Challenge Lightcone Simulation I: Dark matter clustering	data
+Smith2003	astro-ph/0207664	Smith	2002	Stable clustering, the halo model and nonlinear cosmological power spectra	foundation
+Takahashi2012	1208.2701	Takahashi	2012	Revising the Halofit Model for the Nonlinear Matter Power Spectrum	method
+Heitmann2006	astro-ph/0606154	Heitmann	2006	Cosmic Calibration	foundation
+Heitmann2010	0812.1052	Heitmann	2008	The Coyote Universe I: Precision Determination of the Nonlinear Matter Power Spectrum	foundation
+Heitmann2009	0902.0429	Heitmann	2009	The Coyote Universe II: Cosmological Models and Precision Emulation of the Nonlinear Matter Power Spectrum	method
+Lawrence2010	0912.4490	Lawrence	2009	The Coyote Universe III: Simulation Suite and Precision Emulator for the Nonlinear Matter Power Spectrum	method
+Lawrence2017	1705.03388	Lawrence	2017	The Mira-Titan Universe II: Matter Power Spectrum Emulation	method
+HoffmanRibak1991	doi:10.1086/186160	Hoffman	1991	Constrained realizations of Gaussian fields - A simple algorithm	foundation
+Zaroubi1995	astro-ph/9410080	Zaroubi	1994	Wiener Reconstruction of The Large Scale Structure	foundation
+Gottloeber2010	1005.2687	Gottloeber	2010	Constrained Local UniversE Simulations (CLUES)	review
+KitauraEnsslin2008	0705.0429	Kitaura	2007	Bayesian reconstruction of the cosmological large-scale structure: methodology, inverse algorithms and numerical optimization	foundation
+Jasche2010	0911.2498	Jasche	2009	Bayesian non-linear large scale structure inference of the Sloan Digital Sky Survey data release 7	method
+Kitaura2013	1203.4184	Kitaura	2012	The Initial Conditions of the Universe from Constrained Simulations	foundation
+Hess2013	1304.6565	Heß	2013	Simulating Structure Formation of the Local Universe	results
+Wang2014	1407.3451	Wang	2014	ELUCID - Exploring the Local Universe with reConstructed Initial Density field I: Hamiltonian Markov Chain Monte Carlo Method with Particle Mesh Dynamics	method
+Wang2016	1608.01763	Wang	2016	ELUCID - Exploring the Local Universe with reConstructed Initial Density field III: Constrained Simulation in the SDSS Volume	data
+LavauxJasche2016	1509.05040	Lavaux	2015	Unmasking the Masked Universe: the 2M++ catalogue through Bayesian eyes	results
+Brandbyge2008	0802.3700	Brandbyge	2008	The Effect of Thermal Neutrino Motion on the Non-linear Cosmological Matter Power Spectrum	foundation
+BrandbygeHannestad2009	0812.3149	Brandbyge	2008	Grid Based Linear Neutrino Perturbations in Cosmological N-body Simulations	foundation
+Viel2010	1003.2422	Viel	2010	The effect of neutrinos on the matter distribution as probed by the Intergalactic Medium	results
+AliHaimoudBird2013	1209.0461	Ali-Haïmoud	2012	An efficient implementation of massive neutrinos in non-linear structure formation simulations	foundation
+BanerjeeDalal2016	1606.06167	Banerjee	2016	Simulating nonlinear cosmological structure formation with massive neutrinos	method
+Elbers2021	2010.07321	Elbers	2020	An optimal nonlinear method for simulating relic neutrinos	foundation
+Bayer2021FastPM	2007.13394	Bayer	2020	A fast particle-mesh simulation of non-linear cosmological structure formation with massive neutrinos	method
+Castorina2015	1505.07148	Castorina	2015	DEMNUni: The clustering of large-scale structures in the presence of massive neutrinos	results
+HuSawicki2007	0705.1158	Hu	2007	Models of f(R) Cosmic Acceleration that Evade Solar-System Tests	foundation
+Oyaizu2008	0807.2449	Oyaizu	2008	Non-linear evolution of f(R) cosmologies I: methodology	foundation
+Schmidt2009	0905.0858	Schmidt	2009	Self-Consistent Cosmological Simulations of DGP Braneworld Gravity	foundation
+Li2012	1110.1379	Li	2011	ECOSMOG: An Efficient Code for Simulating Modified Gravity	code
+Puchwein2013	1305.2418	Puchwein	2013	Modified Gravity-GADGET: A new code for cosmological hydrodynamical simulations of modified gravity models	code
+Llinares2014	1307.6748	Llinares	2013	ISIS: a new N-body cosmological code with scalar fields based on RAMSES. Code presentation and application to the shapes of clusters	code

@@ -1,7 +1,7 @@
 # Open questions — CMB × LSS cross-correlations
 
 Scope: live disagreements with both sides cited, tensions between analyses of the same data, method debates, what the next data decide, forecasts, stale claims, and what was not verified.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-13
 
 Flags: `[src]` read this session in the cited paper; `[sec]` from a named secondary source;
 `[der]` derived here. Forecasts are marked **forecast**.
@@ -264,43 +264,48 @@ written; it was corrected on 2026-10-09 to 0.2–0.45, the span of the values be
 DR2 × ACT DR6 paper it cites gives b_v = 0.229 ± 0.022 (90 GHz) and 0.233 ± 0.020 (150 GHz) for
 LRGs in its joint fit (arXiv:2604.04867, table of LRG fits) [src]; the photometric analysis gives
 0.33 ± 0.03 (arXiv:2511.15701) and the QML analysis an amplitude A = 0.39 ± 0.04 (arXiv:2506.21684) [src]. The
-range read at source this session is therefore 0.23–0.39 for LRG samples. Values for ELGs and
-quasars were not read.
+range read at source this session is therefore 0.23–0.39 for LRG samples. Read on 2026-10-13
+in the same paper [src: Sect. 5.3, table]: ELGs 0.10 ± 0.03 (90 GHz) and 0.15 ± 0.03 (150 GHz),
+quasars 0.25 ± 0.06 and 0.21 ± 0.05. Across tracers the measured range is 0.10–0.39, so the lower
+end of the sibling's range does not cover the ELG values.
 
 ## 12. Not verified, and leads without a bibliography row
 <!-- key: not-verified-and-leads-without-a-bibliography -->
 
-The bibliography was capped at 100 rows. The following papers were returned by a search tool
-with their titles this session but have no row; their identifiers are given bare, and nothing in
-this skill relies on them.
+The bibliography was capped at 100 rows in the first build. The following papers were returned
+by a search tool with their titles but have no row; their identifiers are given bare, and
+nothing in this skill relies on them. Four former entries of this list now have a row and are
+cited where they belong (2026-10-13): Coulton 2024 (arXiv:2401.13033) and Schutt 2024
+(arXiv:2401.13040) in `physics-and-methods.md` §7, Carron 2022 (arXiv:2206.07773) in
+`surveys-and-data.md` §2.2, Münchmeyer 2018 (arXiv:1810.13424) in `physics-and-methods.md` §3.4. What the
+first build read in their abstracts stays valid: τ̄ < 0.033 arcmin² within a 6′ disk at 95% for
+the blue sample (Coulton); reconstruction signal-to-noise raised by almost 20% (Carron);
+**forecast** σ(f_NL) ~ 0.5 for CMB-S4 with LSST (Münchmeyer).
 
-- 2401.13033, Coulton et al., ACT search for late-time anisotropic screening with unWISE: null
-  result; abstract read (τ̄ < 0.033 arcmin² within a 6′ disk at 95% for the blue sample).
-- 2206.07773, Carron et al., CMB lensing from Planck PR4 maps: abstract read (reconstruction
-  signal-to-noise raised by almost 20%).
 - 1905.00426, Lenz et al., large-scale Planck CIB maps: abstract read (~25% of the sky,
   353–857 GHz).
 - 2510.27605, Patki et al., E_G-type statistic from kSZ velocities and CMB lensing: abstract
   read; **forecast** S/N ~ 20–55 for ACT or Simons Observatory with DESI.
-- 1810.13424, Münchmeyer et al., f_NL from kSZ tomography: abstract read; **forecast**
-  σ(f_NL) ~ 0.5 for CMB-S4 with LSST.
 - 2204.13436, Bahr-Kalus et al., ISW with the RACS radio survey: abstract read
   (A_ISW = 0.94 +0.42/−0.41).
 - 2209.07395, Carron et al., Planck ISW–lensing likelihood: abstract read.
 - 2503.00636 and 1808.07445, Simons Observatory science goals and forecasts: titles only.
 - 2609.04133 (moving-lens modelling), 2506.17217 (bias-hardened screening estimators),
-  2401.13040 (temperature-inversion screening estimator), 2510.20715 (Iskay2 pairwise pipeline),
+  2510.20715 (Iskay2 pairwise pipeline),
   2507.07346 (CLASS_SZ II), 2608.04868 (kSZ × CMB lensing for reionisation), 2609.09144
   (baryonification with X-ray gas fractions), 2512.04209 (DES Y3 revisited): titles only.
 
 Not verified at all:
 
-- The kSZ velocity bias for DESI ELGs and quasars, and the per-tracer f_NL values of
-  arXiv:2604.04867 beyond its abstract and LRG table.
-- The Sunyaev–Zel'dovich results of Planck 2015 on the tSZ–CIB correlation and the Planck y-map
-  papers; the first CIB × CMB lensing detections.
+- Closed on 2026-10-13: the kSZ velocity bias and f_NL of DESI ELGs and quasars
+  (`results.md` §2.2, §2.3); the first CIB × CMB lensing detections (`results.md` §7.5).
+- The value of the tSZ–CIB correlation coefficient, and the bodies of the Planck y-map and
+  tSZ–CIB papers (abstracts only).
 - Whether any DES Y6, Euclid, HSC or KiDS-Legacy × CMB lensing cosmology exists outside arXiv
   listings searched with the terms recorded in this skill's research log.
-- Blinding status of the kSZ gas-profile analyses.
+- Blinding of the kSZ gas-profile analyses: a text search finds no blinding statement in three
+  of them (`physics-and-methods.md` §9); the others were not searched.
+- A size for miscentring in a kSZ or tSZ stack; the expected ISW signal-to-noise of the Planck
+  2015 and five-catalogue analyses; the body of the CMB lensing × y analysis (arXiv:2308.16260).
 - The definition of the tension metric behind each "σ from Planck" quoted in §1, and which Planck
   likelihood each uses.

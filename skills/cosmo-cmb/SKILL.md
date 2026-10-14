@@ -5,7 +5,7 @@ description: Use when reviewing, fact-checking or planning text or analysis on C
 
 # CMB anisotropies and lensing — expert reference
 
-Snapshot 2026-10-07. Numbers carry provenance flags ([src] / [sec] / [der]);
+Snapshot 2026-10-14. Numbers carry provenance flags ([src] / [sec] / [der]);
 re-verify against the cited paper before a number enters a manuscript.
 
 ## File map
@@ -16,7 +16,7 @@ re-verify against the cited paper before a number enters a manuscript.
 | What a feature constrains, estimators, likelihoods, codes, conventions | `references/physics-and-methods.md` |
 | Instruments, releases, data locations, status, what comes next | `references/surveys-and-data.md` |
 | Current parameter values, lensing, τ, N_eff, Σm_ν, history of each number | `references/results.md` |
-| Beams, leakage, calibration, foregrounds, τ systematics, referee checklist | `references/systematics.md` |
+| Beams, leakage, calibration, foregrounds, τ systematics, nuisance priors per analysis, referee checklist | `references/systematics.md` |
 | τ debate, A_L fate, CMB–DESI discrepancy, forecasts, stale claims | `references/open-questions.md` |
 | Bibliography with roles | `references/sources.tsv` |
 
@@ -108,7 +108,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; open 5k; methods 7k; results 7k; surveys 5k; systematics 6k.
+Sizes, in thousands of tokens: L1 2k; open 5k; methods 10k; results 7k; surveys 5k; systematics 11k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

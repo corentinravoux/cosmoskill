@@ -115,14 +115,22 @@ comment under its heading, and keeps it when the heading is reworded.
 
 The package is a base layer. You add to it without editing it, in a personal
 layer (`~/.cosmoskill/`) or a project layer (`.cosmoskill/` in a project): a
-profile saying which domains are yours and which conventions you use, and
-notes attached to sections of the package by their key. The skills read
-these layers and say when an answer draws on them. `docs/layers-v0.md`
-explains the format.
+profile saying which domains are yours and which conventions you use, notes
+attached to sections of the package by their key, your own papers, and your
+own dossiers on the subjects you know in depth. The skills read these layers
+and say when an answer draws on them. `docs/layers.md` explains the format.
 
 ```bash
-python3 skills/observational-cosmology/scripts/layers.py init
+L=skills/observational-cosmology/scripts/layers.py
+python3 $L init
+python3 $L note cosmo-lyman-alpha results#cosmology-from-p1d "quote the mean-flux prior with the value"
+python3 $L source cosmo-lyman-alpha <arXiv id> --role method    # row taken from arXiv
+python3 $L dossier cosmo-lyman-alpha qmle-window                # template to fill
+python3 $L check                                                # after updating the package
 ```
+
+In a conversation the assistant runs these for you: "note for my Lyα work
+that ...", "add this paper to my layer".
 
 ## What to trust, and how far
 
@@ -160,8 +168,8 @@ Limits of this version in particular:
 - Domains without a skill: instrument and data pipelines, photometry and
   photometric redshifts, the cosmic web, big-bang nucleosynthesis, the
   galaxy–halo connection, early-universe exotica, machine-learning methods.
-- Local layers hold a profile and free-text notes only. A layer cannot yet
-  add or override a number with its own checked source.
+- A local layer adds notes, papers and dossiers. It cannot replace a value
+  of the package, and nothing in it is promoted to the package.
 
 `docs/specs/` and `docs/plans/` hold the specification and the roadmap that
 address these.

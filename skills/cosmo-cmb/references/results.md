@@ -3,7 +3,7 @@
 Scope: headline parameter constraints from Planck, ACT and SPT-3G spectra and
 lensing, alone and combined, with the model stated for each; then the history
 of the key numbers so that superseded values can be recognised.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-14
 
 Flags: `[src]` read this session in the cited paper; `[sec]` taken from the
 named secondary source; `[der]` derived here. Errors are 68% and limits 95%
@@ -166,7 +166,7 @@ Dark-energy conclusions belong to `cosmo-dark-energy-modified-gravity`.
 | A_L = 1.180 ± 0.065 (2.7σ) | Planck PR3 Plik TT,TE,EE+lowE | ΛCDM+A_L | arXiv:1807.06209 | [src] |
 | A_L = 1.142 ± 0.066 (2.1σ) | same, spectrum-based polarisation-efficiency corrections | ΛCDM+A_L | arXiv:1807.06209 | [src] |
 | A_L differs from 1 at ≤ 2.2σ | CamSpec PR3, 80% sky | ΛCDM+A_L | Efstathiou & Gratton 2019, arXiv:1910.00483 | [src] |
-| A_L = 1.095 ± 0.056 (1.7σ) | CamSpec PR4 | ΛCDM+A_L | Rosenberg et al. 2022, arXiv:2205.10869, as quoted in arXiv:2503.14452 | [sec] |
+| A_L = 1.095 ± 0.056 (1.7σ) | CamSpec PR4 TTTEEE | ΛCDM+A_L | Rosenberg et al. 2022, arXiv:2205.10869, Table 6 (1.7σ as quoted in arXiv:2503.14452) | [src: Table 6] |
 | A_L = 1.039 ± 0.052 | HiLLiPoP PR4 TTTEEE | ΛCDM+A_L | arXiv:2309.10034 | [src] |
 | A_L = 1.037 ± 0.037 | HiLLiPoP PR4 TTTEEE + PR4 lensing | ΛCDM+A_L | arXiv:2309.10034 | [src] |
 | A_lens = 1.01 ± 0.11 | ACT DR4 | ΛCDM+A_lens | Aiola et al. 2020, arXiv:2007.07288, as quoted in arXiv:2503.14452 | [sec] |
@@ -306,7 +306,7 @@ second version quotes 0.089 eV. The INSPIRE record still showed 0.082 on
 |---|---|---|---|
 | −0.0027 (+0.0039/−0.0038) | WMAP9 + external | arXiv:1212.5226 | [src] |
 | −0.044 (+0.018/−0.015) | Planck PR3 Plik, spectra only | Planck 2018, as quoted in arXiv:2309.10034 | [sec] |
-| −0.025 (+0.013/−0.010) | CamSpec PR4, spectra only | Rosenberg et al. 2022, as quoted in arXiv:2309.10034 | [sec] |
+| −0.025 (+0.013/−0.010) | CamSpec PR4 TTTEEE, spectra only | Rosenberg et al. 2022, arXiv:2205.10869, Table 6 | [src: Table 6] |
 | −0.012 ± 0.010 | HiLLiPoP PR4 TTTEEE | arXiv:2309.10034 | [src] |
 | 0.001 ± 0.002 | Planck 2018 + BAO | arXiv:1807.06209 | [src] |
 | 0.0004 ± 0.0018 | Planck (CamSpec) + BAO | Efstathiou & Gratton 2020, arXiv:2002.06892 | [src] |
@@ -387,8 +387,8 @@ What superseded what:
 
 - The WMAP9 τ value and the Planck 2013 parameter values were not re-read
   and are not tabulated.
-- Rosenberg et al. 2022 numbers are quoted through ACT DR6 and Tristram et
-  al. 2023, not from the paper's own tables.
+- Rosenberg et al. 2022: A_L and Ω_K now read in its Table 6; its other
+  numbers are still quoted through ACT DR6 and Tristram et al. 2023.
 - The SH0ES value against which SPT quotes 6.2σ and 6.4σ was read only as
   quoted by ACT DR6 (73.17 ± 0.86 km/s/Mpc [sec], arXiv:2503.14452); see
   `cosmo-distance-ladder-h0`.

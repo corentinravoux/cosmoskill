@@ -119,3 +119,101 @@ Hahn2023	2310.15246	Hahn	2023	${\rm S{\scriptsize IM}BIG}$: The First Cosmologic
 Lemos2023	2310.15256	Lemos	2023	SimBIG: Field-level Simulation-Based Inference of Galaxy Clustering	results
 Massara2024	2404.04228	Massara	2024	{\sc SimBIG}: Cosmological Constraints using Simulation-Based Inference of Galaxy Clustering with Marked Power Spectra	results
 Modi2023	2309.15071	Modi	2023	Sensitivity Analysis of Simulation-Based Inference for Galaxy Clustering	systematics
+Scoccimarro1997	astro-ph/9704075	Scoccimarro	1997	Non-Linear Evolution of the Bispectrum of Cosmological Perturbations	foundation
+Matarrese1997	astro-ph/9706059	Matarrese	1997	Large-scale bias in the Universe: bispectrum method	foundation
+Scoccimarro1998	astro-ph/9808305	Scoccimarro	1998	The Bispectrum as a Signature of Gravitational Instability in Redshift-Space	foundation
+Scoccimarro2000a	astro-ph/0004086	Scoccimarro	2000	The Bispectrum: From Theory to Observations	foundation
+Scoccimarro2000b	astro-ph/0004087	Scoccimarro	2000	The Bispectrum of IRAS Galaxies	results
+Verde2001	astro-ph/0112161	Verde	2001	The 2dF Galaxy Redshift Survey: The bias of galaxies and the density of the Universe	results
+Sefusatti2006	astro-ph/0604505	Sefusatti	2006	Cosmology and the Bispectrum	forecast
+Bernardeau2001	astro-ph/0112551	Bernardeau	2001	Large-Scale Structure of the Universe and Cosmological Perturbation Theory	review
+Scoccimarro2015	1506.02729	Scoccimarro	2015	Fast Estimators for Redshift-Space Clustering	method
+Sefusatti2015	1512.07295	Sefusatti	2015	Accurate Estimators of Correlation Functions in Fourier Space	method
+Slepian2015	1506.02040	Slepian	2015	Computing the Three-Point Correlation Function of Galaxies in $\mathcal{O}(N^2)$ Time	method
+Heavens1999	astro-ph/9911102	Heavens	1999	Massive Lossless Data Compression and Multiple Parameter Estimation from Galaxy Spectra	foundation
+Sugiyama2018	1803.02132	Sugiyama	2018	A complete FFT-based decomposition formalism for the redshift-space bispectrum	method
+Baldauf2014	1406.4135	Baldauf	2014	The Bispectrum in the Effective Field Theory of Large Scale Structure	foundation
+Angulo2014	1406.4143	Angulo	2014	The One-Loop Matter Bispectrum in the Effective Field Theory of Large Scale Structures	foundation
+Ivanov2021	2110.10161	Ivanov	2021	Precision analysis of the redshift-space galaxy bispectrum	method
+Philcox2022B	2206.02800	Philcox	2022	Cosmology with the Redshift-Space Galaxy Bispectrum Monopole at One-Loop Order	method
+Verde2001tri	astro-ph/0101143	Verde	2001	On the trispectrum as a gaussian test for cosmology	foundation
+Gualdi2021	2104.03976	Gualdi	2021	Joint analysis of anisotropic power spectrum, bispectrum and trispectrum: application to N-body simulations	method
+Cahn2020	2010.14418	Cahn	2020	Isotropic N-Point Basis Functions and Their Properties	foundation
+Philcox2021encore	2105.08722	Philcox	2021	ENCORE: An $\mathcal{O}(N_{\rm g}^2)$ Estimator for Galaxy $N$-Point Correlation Functions	method
+Philcox2021fourpt	2108.01670	Philcox	2021	A First Detection of the Connected 4-Point Correlation Function of Galaxies Using the BOSS CMASS Sample	results
+Cahn2021	2110.12004	Cahn	2021	A Test for Cosmological Parity Violation Using the 3D Distribution of Galaxies	foundation
+Sheth2003	astro-ph/0311260	Sheth	2003	A hierarchy of voids: Much ado about nothing	foundation
+Jennings2013	1304.6087	Jennings	2013	The abundance of voids and the excursion set formalism	foundation
+Ryden1995	astro-ph/9506028	Ryden	1995	Measuring q_0 from the Distortion of Voids in Redshift Space	foundation
+Lavaux2011	1110.0345	Lavaux	2011	Precision cosmography with stacked voids	foundation
+Padilla2005	astro-ph/0508297	Padilla	2005	Spatial and Dynamical Properties of Voids in a LCDM Universe	foundation
+Paz2013	1306.5799	Paz	2013	Clues on void evolution II: Measuring density and velocity profiles on SDSS galaxy redshift space distortions	method
+Hamaus2015	1507.04363	Hamaus	2015	Probing cosmology and gravity with redshift-space distortions around voids	method
+Cai2016	1603.05184	Cai	2016	Redshift-space distortions around voids	method
+Hamaus2016	1602.01784	Hamaus	2016	Constraints on Cosmology and Gravity from the Dynamics of Voids	results
+Nadathur2017	1712.07575	Nadathur	2017	An accurate linear model for redshift space distortions in the void-galaxy correlation function	method
+Nadathur2018	1805.09349	Nadathur	2018	A Zeldovich reconstruction method for measuring redshift space distortions using cosmic voids	method
+Hoyle2001	astro-ph/0109357	Hoyle	2001	Voids in the PSCz Survey and the Updated Zwicky Catalog	foundation
+Platen2007	0706.2788	Platen	2007	A Cosmic Watershed: the WVF Void Detection Technique	foundation
+Colberg2008	0803.0918	Colberg	2008	The Aspen--Amsterdam Void Finder Comparison Project	review
+Hamaus2014	1403.5499	Hamaus	2014	Universal Density Profile for Cosmic Voids	method
+Friedrich2017	1710.05162	Friedrich	2017	Density split statistics: joint model of counts and lensing in cells	foundation
+Gruen2017	1710.05045	Gruen	2017	Density split statistics: Cosmological constraints from counts and lensing in cells in DES Y1 and SDSS data	results
+Paillas2021	2101.09854	Paillas	2021	Redshift-space distortions with split densities	foundation
+Mallat2011	1101.2286	Mallat	2011	Group Invariant Scattering	foundation
+Bruna2012	1203.1513	Bruna	2012	Invariant Scattering Convolution Networks	foundation
+Cheng2020	2006.08561	Cheng	2020	A new approach to observational cosmology using the scattering transform	method
+Valogiannis2021	2108.07821	Valogiannis	2021	Towards an Optimal Estimation of Cosmological Parameters with the Wavelet Scattering Transform	forecast
+Allys2020	2006.06298	Allys	2020	New Interpretable Statistics for Large Scale Structure Analysis and Generation	method
+Mecke1993	astro-ph/9312028	Mecke	1993	Robust Morphological Measures for Large-Scale Structure in the Universe	foundation
+Schmalzing1997	astro-ph/9702130	Schmalzing	1997	Beyond genus statistics: a unifying approach to the morphology of cosmic structure	foundation
+Matsubara2000	astro-ph/0006269	Matsubara	2000	Statistics of smoothed cosmic fields in perturbation theory I: Formulation and useful formulas in second-order perturbation theory	foundation
+Hikage2003	astro-ph/0304455	Hikage	2003	Minkowski Functionals of SDSS galaxies I : Analysis of Excursion Sets	results
+Beisbart2000	astro-ph/0003358	Beisbart	2000	Luminosity- and morphology-dependent clustering of galaxies	foundation
+Sheth2005	astro-ph/0511772	Sheth	2005	The halo-model description of marked statistics	foundation
+White2016	1609.08632	White	2016	A marked correlation function for constraining modified gravity models	foundation
+Schneider1996	astro-ph/9601039	Schneider	1996	Detection of (dark) matter concentrations via weak gravitational lensing	foundation
+Schneider1997	astro-ph/9708143	Schneider	1997	A new measure for cosmic shear	foundation
+Jain1999	astro-ph/9910459	Jain	1999	Statistics of Dark Matter Halos from Gravitational Lensing	foundation
+Kratochvil2009	0907.0486	Kratochvil	2009	Probing Cosmology with Weak Lensing Peak Counts	foundation
+Dietrich2009	0906.3512	Dietrich	2009	Cosmology with the shear-peak statistics	foundation
+Liu2014peaks	1412.0757	Liu	2014	Cosmology Constraints from the Weak Lensing Peak Counts and the Power Spectrum in CFHTLenS	results
+Kacprzak2016	1603.05040	Kacprzak	2016	Cosmology constraints from shear peak statistics in Dark Energy Survey Science Verification data	results
+Bernardeau1996	astro-ph/9609122	Bernardeau	1996	Weak Lensing Statistics as a Probe of Omega and Power Spectrum	foundation
+Schneider2002	astro-ph/0207454	Schneider	2002	The three-point correlation function of cosmic shear: I. The natural components	foundation
+Schneider2003	astro-ph/0308328	Schneider	2003	The three-point correlation function of cosmic shear. II: Relation to the bispectrum of the projected mass density and generalized third-order aperture measures	foundation
+Jarvis2003	astro-ph/0307393	Jarvis	2003	The Skewness of the Aperture Mass Statistic	foundation
+Takada2003	astro-ph/0310125	Takada	2003	Cosmological parameters from lensing power spectrum and bispectrum tomography	forecast
+Fu2014	1404.5469	Fu	2014	CFHTLenS: Cosmological constraints from a combination of cosmic shear two-point and three-point correlations	results
+Heydenreich2022	2208.11686	Heydenreich	2022	A roadmap to cosmological parameter analysis with third-order shear statistics I: Modelling and validation	method
+Barthelemy2019	1909.02615	Barthelemy	2019	Game of cones: A nulling strategy for modelling lensing convergence in cones with large deviation theory	method
+Boyle2020	2012.07771	Boyle	2020	Nuw CDM cosmology from the weak lensing convergence PDF	forecast
+Liu2018pdf	1809.10747	Liu	2018	Constraining neutrino mass with tomographic weak lensing one-point probability distribution function and power spectrum	forecast
+Kitaura2007	0705.0429	Kitaura	2007	Bayesian reconstruction of the cosmological large-scale structure: methodology, inverse algorithms and numerical optimization	foundation
+Jasche2009	0911.2496	Jasche	2009	Fast Hamiltonian sampling for large scale structure inference	foundation
+Kitaura2012	1203.4184	Kitaura	2012	The Initial Conditions of the Universe from Constrained Simulations	foundation
+Wang2013	1301.1348	Wang	2013	Reconstructing the Initial Density Field of the Local Universe: Method and Test with Mock Catalogs	foundation
+Seljak2017	1706.06645	Seljak	2017	Towards optimal extraction of cosmological information from nonlinear data	method
+Schmidt2018	1808.02002	Schmidt	2018	A rigorous EFT-based forward model for large-scale structure	foundation
+Duane1987	doi:10.1016/0370-2693%2887%2991197-X	Duane	1987	Hybrid Monte Carlo	foundation
+Alcock1979	doi:10.1038/281358a0	Alcock	1979	An evolution free test for non-zero cosmological constant	foundation
+Cranmer2019	1911.01429	Cranmer	2019	The frontier of simulation-based inference	review
+Akeret2015	1504.07245	Akeret	2015	Approximate Bayesian Computation for Forward Modeling in Cosmology	method
+Papamakarios2016	1605.06376	Papamakarios	2016	Fast $ε$-free Inference of Simulation Models with Bayesian Conditional Density Estimation	foundation
+Alsing2017	1712.00012	Alsing	2017	Generalized massive optimal data compression	foundation
+Alsing2018	1801.01497	Alsing	2018	Massive optimal data compression and density estimation for scalable, likelihood-free inference in cosmology	foundation
+Alsing2019	1903.00007	Alsing	2019	Fast likelihood-free cosmology with neural density estimators and active learning	method
+Charnock2018	1802.03537	Charnock	2018	Automatic physical inference with information maximising neural networks	foundation
+Ravanbakhsh2017	1711.02033	Ravanbakhsh	2017	Estimating Cosmological Parameters from the Dark Matter Distribution	foundation
+Talts2018	1804.06788	Talts	2018	Validating Bayesian Inference Algorithms with Simulation-Based Calibration	method
+Lemos2023tarp	2302.03026	Lemos	2023	Sampling-Based Accuracy Testing of Posterior Estimators for General Inference	method
+Hahn2022P	2211.00723	Hahn	2022	${\rm S{\scriptsize IM}BIG}$: A Forward Modeling Approach To Analyzing Galaxy Clustering	results
+Maksimova2021	2110.11398	Maksimova	2021	AbacusSummit: A Massive Set of High-Accuracy, High-Resolution $N$-Body Simulations	data
+Kacprzak2022	2209.04662	Kacprzak	2022	CosmoGridV1: a simulated $w$CDM theory prediction for map-level cosmological inference	data
+Nishimichi2020	2003.08277	Nishimichi	2020	Blinded challenge for precision cosmology with large-scale structure: results from effective field theory for the redshift-space galaxy power spectrum	method
+Zuercher2021	2110.10135	Zürcher	2021	Dark Energy Survey Year 3 results: Cosmology with peaks using an emulator approach	results
+Thiele2023pdf	2304.05928	Thiele	2023	Cosmological constraints from HSC Y1 lensing convergence PDF	results
+Marques2023	2308.10866	Marques	2023	Cosmology from weak lensing peaks and minima with Subaru Hyper Suprime-Cam survey first-year data	results
+Burger2023	2309.08602	Burger	2023	KiDS-1000 cosmology: Combined second- and third-order shear statistics	results
+Euclid2023howls	2301.12890	Euclid Collaboration	2023	Euclid Preparation. XXVIII. Forecasts for ten different higher-order weak lensing statistics	forecast
+Burger2022	2208.02171	Burger	2022	KiDS-1000 Cosmology: Constraints from density split statistics	results

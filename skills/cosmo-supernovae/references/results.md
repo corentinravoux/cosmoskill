@@ -3,7 +3,7 @@
 Scope: current headline measurements from SN Ia Hubble diagrams, alone and in
 combination, then the history of the key numbers so that superseded values can
 be recognised.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-13
 
 Flags: `[src]` read in the cited paper this session (abstract unless a table
 or section is named); `[sec]` from a named secondary source; `[der]` derived
@@ -20,8 +20,8 @@ systematics unless stated.
 |---|---|---|---|---|---|
 | Unite | 0.310 (+0.012/-0.011) | 2884 | Current | Camilleri et al. 2026, arXiv:2609.05053 | `[src]` |
 | Unite, z > 0.1 only | 0.290 ± 0.015 | 2884 − 687 | Robustness variant | arXiv:2609.05053 Sec. 9.1 | `[src]` |
-| DES-Dovekie | 0.330 ± 0.015 | ~1600 DES + ~200 low-z | Current | Popovic et al. 2025, arXiv:2511.07517 | `[src]` |
-| Union3.1 + UNITY1.5 | 0.344 (+0.026/-0.025) | ~2000 | Current | Hoyt et al. 2026, arXiv:2601.19424 | `[src]` |
+| DES-Dovekie | 0.330 ± 0.015 | 1623 DES + 197 low-z (Sect. 8.2) | Current | Popovic et al. 2025, arXiv:2511.07517 | `[src]` |
+| Union3.1 + UNITY1.7 (outlier-prior fix, fitted step location); the same UNITY1.7 on Union3 gives 0.352 (+0.026/-0.025) | 0.344 (+0.026/-0.025) | ~2000 | Current | Hoyt et al. 2026, arXiv:2601.19424 | `[src: Table 3]` |
 | Union3.1 + UNITY1.8 (two populations) | 0.334 (+0.025/-0.024) | ~2000 | Current, alternative model | Rubin et al. 2026, arXiv:2601.19854 | `[src]` |
 | Pantheon+ | 0.334 ± 0.018 | 1550 | Published 2022; host masses and calibration since revised | Brout et al. 2022, arXiv:2202.04077 | `[src]` |
 | DES-SN5YR | 0.352 ± 0.017 | 1829 (1635 DES + 194 low-z; total as printed in Sect. 2.1) | **Superseded** by DES-Dovekie (shift −0.022) | DES Collaboration 2024, arXiv:2401.02929 | `[src]` |
@@ -47,8 +47,8 @@ driven by SNe at 0.023 <= z <= 0.85, not by the lowest-redshift bins
 | DES-SN5YR | flat w0waCDM | `(Omega_m, w0, w_a) = (0.495 (+0.033/-0.043), -0.36 (+0.36/-0.30), -8.8 (+3.7/-4.5))` | arXiv:2401.02929 | `[src]` |
 | DES-Dovekie | flat wCDM | `(Omega_m, w) = (0.263 (+0.064/-0.078), -0.838 (+0.130/-0.142))`; `q0 = -0.423 (+0.063/-0.073)` | arXiv:2511.07517 Sec. 10 | `[src]` |
 | DES-Dovekie | flat w0waCDM | `(w0, w_a) = (-0.50 (+0.35/-0.27), -7.5 (+3.6/-4.5))`, widened priors; at the pivot `z_p = 0.52`, `w_p = -1.01 ± 0.13` | arXiv:2511.07517 Sec. 10 | `[src]` |
-| Unite | flat wCDM | about 2 sigma from `w = -1` (toward `w > -1`); `Q_H(z=0.2) = -0.418 ± 0.021` | arXiv:2609.05053 Sec. 7 | `[src]` |
-| Unite | flat w0waCDM | consistent with `w_a = 0`; `w0 > -1` preferred at about 2 sigma | arXiv:2609.05053 Secs. 7, 10 | `[src]` |
+| Unite | flat wCDM | `(Omega_m, w) = (0.197 (+0.056/-0.054), -0.764 (+0.078/-0.096))`, about 2 sigma from `w = -1`; `Q_H(z=0.2) = -0.418 ± 0.021` | arXiv:2609.05053 | `[src: Sect. 7.0.3]` |
+| Unite | flat w0waCDM | `(Omega_m, w0, w_a) = (0.297 (+0.086/-0.141), -0.779 (+0.099/-0.098), -0.86 (+1.01/-1.78))`: consistent with `w_a = 0`, `w0 > -1` preferred | arXiv:2609.05053 | `[src: Sect. 7.0.4]` |
 
 SNe alone do not detect evolving dark energy in any current sample. The
 extreme SN-only `w_a` values are a volume effect of an unconstrained
@@ -132,7 +132,13 @@ differ, not the supernovae.
 |---|---|---|---|---|---|
 | 1998 | High-Z Team | 16 + 34 | `Omega_Lambda > 0` at 7 and 9 sigma for two light-curve fitters (flat prior); 3.0 and 4.0 sigma with no prior other than `Omega_m > 0` | Riess et al. 1998, arXiv:astro-ph/9805201 | `[src]` |
 | 1999 | SCP | 42 + Calán/Tololo | `Omega_m = 0.28 (+0.09/-0.08) stat (+0.05/-0.04) sys` (flat) | Perlmutter et al. 1999, arXiv:astro-ph/9812133 | `[src]` |
+| 1997 | SCP, first seven at z = 0.35–0.46 | 7 | `Omega_m = 0.94 (+0.34/-0.28)` (flat): no acceleration; reversed by the 42-SN sample | Perlmutter et al. 1997, arXiv:astro-ph/9608192 | `[src]` |
+| 2006 | SNLS first year | 71 | `Omega_m = 0.263 ± 0.042 stat ± 0.032 sys` (flat LCDM); `w = -1.023 ± 0.090 stat ± 0.054 sys` with SDSS BAO (flat wCDM) | Astier et al. 2006, arXiv:astro-ph/0510447 | `[src]` |
+| 2009 | SDSS-II first year + ESSENCE, SNLS, HST, nearby; with BAO and CMB | 288 (103 new at 0.04 < z < 0.42) | `w = -0.76 ± 0.07 stat ± 0.11 sys` with MLCS2k2 but `-0.96 ± 0.06 ± 0.12` with SALT-II (flat wCDM): the fitter was the systematic, traced to the rest-frame UV model and the colour treatment | Kessler et al. 2009, arXiv:0908.4274 | `[src]` |
+| 2010 | SNLS3, SNLS SNe alone | 231 | `Omega_m = 0.211 ± 0.034 stat ± 0.069 sys` (flat LCDM); calibration dominates, then light-curve fitters (0.026) | Guy et al. 2010, arXiv:1010.4743 | `[src]` |
+| 2008 | Union | 307 of 414 | `Omega_Lambda = 0.713 (+0.027/-0.029) stat (+0.036/-0.039) sys` (flat LCDM); `w = -0.969 (+0.059/-0.063) stat (+0.063/-0.066) sys` with BAO and CMB; one blind procedure for all subsamples | Kowalski et al. 2008, arXiv:0804.4142 | `[src]` |
 | 2011 | SNLS3 joint | 472 | `w = -0.91 (+0.16/-0.20) stat (+0.07/-0.14) sys` (flat wCDM, SNe only) | Conley et al. 2011, arXiv:1104.1443 | `[src]` |
+| 2012 | Union lineage: world sample plus HST Cluster Supernova Survey | 14 of 20 new HST SNe (found at 0.623 < z < 1.415) pass the cuts | `Omega_Lambda = 0.724 (+0.015/-0.016)` (LCDM); `w = -0.985 (+0.071/-0.077)` (flat wCDM); applies the then recently identified host-mass correction | Suzuki et al. 2012, arXiv:1105.3470 | `[src]` |
 | 2014 | JLA | 740 | `Omega_m = 0.295 ± 0.034` (flat LCDM, SNe); `w = -1.018 ± 0.057` with CMB; 1.8 sigma from SNLS3, "due primarily to improvements in the SNLS photometric calibration" | Betoule et al. 2014, arXiv:1401.4064 | `[src]` |
 | 2018 | Pantheon | 1048 | With Planck 2015: `Omega_m = 0.307 ± 0.012`, `w = -1.026 ± 0.041` (wCDM); with BAO and local `H0` added: `w0 = -1.007 ± 0.089`, `w_a = -0.222 ± 0.407` | Scolnic et al. 2018, arXiv:1710.00845 | `[src]` |
 | 2019 | DES-SN3YR | 329 | `Omega_m = 0.331 ± 0.038` (flat LCDM); `w = -0.978 ± 0.059` with CMB | Abbott et al. (DES) 2019, arXiv:1811.02374 | `[src]` |
@@ -164,12 +170,17 @@ shift:
 
 | Year | Sample | Step (mag) | Note | Citation | Flag |
 |---|---|---|---|---|---|
+| 2006 | SNLS, 124 SNe | no step measured: the SN Ia rate depends on host mass and star-formation rate; a rate set by mass alone is excluded at 99 % | The two-component picture behind later environment tracers | Sullivan et al. 2006, arXiv:astro-ph/0605455 | `[src]` |
 | 2010 | 70 low-z SNe | ~10 % brighter in massive hosts, ~2.5 sigma | Discovery | Kelly et al. 2010, arXiv:0912.0929 | `[src]` |
 | 2010 | SNLS | 0.08, ~4.0 sigma | Two-`M` correction proposed | Sullivan et al. 2010, arXiv:1003.5119 | `[src]` |
+| 2010 | SDSS-II | ~0.1 brighter in passive than in star-forming hosts, 2–3 sigma; expressed through stellar mass at > 4 sigma | Cited with the two papers above as the origin of the step (arXiv:2511.07517 Sect. 3.1) | Lampeitl et al. 2010, arXiv:1005.4687 | `[src]` |
+| 2013 | SNfactory, 89 SNe | 0.094 ± 0.031 fainter with local Hα emission than without | "First direct study of the local environment" for a large sample | Rigault et al. 2013, arXiv:1309.1182 | `[src]` |
+| 2018 | 882 SNe at 0.01 < z < 1 | local `U−V` colour step as significant as the largest mass step | Local colour as third standardisation variable | Roman et al. 2018, arXiv:1706.07697 | `[src]` |
 | 2018 | 273 SNe at z < 0.1 | 0.06 global; local step larger in untargeted surveys by 0.071 ± 0.036 | Local vs global | Jones et al. 2018, arXiv:1805.05911 | `[src]` |
 | 2020 | SNfactory | 0.163 ± 0.029 in local sSFR (5.7 sigma); 0.119 ± 0.032 in mass on the same SNe | Strongest environmental step to that date | Rigault et al. 2020, arXiv:1806.03849 | `[src]` |
 | 2020 | DES-SN3YR | 0.040 ± 0.019 (5D) or 0.066 ± 0.020 (1D bias correction) | Method dependence | Smith et al. 2020, arXiv:2001.11294 | `[src]` |
 | 2021 | ~1450 SNe | Step explained by host-dependent dust | Dust model | Brout & Scolnic 2021, arXiv:2004.10206 | `[src]` |
+| 2021 | Foundation DR1, BayeSN (157 SNe) | no step quoted; `R_V = 2.84 ± 0.31` (low mass) and `2.58 ± 0.23` (high mass), consistent | Against a dust-law difference; RMS 0.13 mag vs 0.16 with SALT2 | Thorp et al. 2021, arXiv:2102.05678 | `[src]` |
 | 2021 | ~1600 SNe, dust-based BBC | 0.017 ± 0.008 residual | | Popovic et al. 2021, arXiv:2102.01776 | `[src]` |
 | 2024 | DES-SN5YR | 0.038 ± 0.007 residual after dust model | > 5 sigma | Vincenzi et al. 2024, arXiv:2401.02945 | `[src]` |
 | 2024 | 475 SNe, BayeSN | intrinsic step −0.049 ± 0.016 (3.1 sigma) alongside a ~2 sigma `R_V` difference | Sign convention of that paper | Grayling et al. 2024, arXiv:2401.08755 | `[src]` |
@@ -213,16 +224,13 @@ flow tie are different systematics.
 | Redshift evolution of the mass step | `-0.028 ± 0.034 mag per unit z`; changes `w` by < 0.01 | DES SN | Wiseman et al. 2026, arXiv:2601.13785 | `[src]` |
 | Progenitor-age redshift bias | `Delta HR = -0.007 (+0.012/-0.014) mag` maximum | 6983 TITAN hosts | Murakami et al. 2026, arXiv:2604.16597 | `[src]` |
 | SN Ia distance at z = 2.15 | ~0.1 sigma from LCDM | SN 2023aeax, JWST | Pierel et al. 2024, arXiv:2411.11953 | `[src]` |
+| Shift of `w` when one analysis step is left out (flat wCDM, SNe only, statistical errors only; not part of the budget) | no bias correction and no BEAMS −1.024; a cut `P_Ia > 0.5` in place of BEAMS −0.033; no Milky Way extinction correction +0.185; deep and shallow fields bias-corrected together −0.136; `gamma` forced to 0 −0.113. Subsamples: only hosts above `10^10 M_sun` −0.071 (scatter over 25 simulations 0.081), only below +0.138 (0.213) | DES-SN5YR | arXiv:2401.02945 | `[src: Table 11]` |
+| Coverage of the BBC contours | Bayesian contours agree with approximate Neyman intervals at the > 95 % level over 150 simulated samples (Armstrong et al., as reported) | DES-SN5YR | arXiv:2401.02945 | `[sec: Sect. VII.2]` |
 | Non-standard models | 11 of 15 models "moderately preferred" over flat LCDM with external probes; none strongly | DES-SN5YR | Camilleri et al. 2024, arXiv:2406.05048 | `[src]` |
 
 ## Not verified
 <!-- key: not-verified -->
 
-- The Unite SN-only flat-wCDM and w0waCDM central values: the LaTeX source
-  gives them through macros that the section reader did not expand; only the
-  qualitative statements and `Q_H` are quoted above.
-- JLA sample size (740) is taken from the BAHAMAS abstract, not from the JLA
-  paper, whose abstract uses a macro for the count.
 - No Pantheon+-only or Union3.1-only `w0waCDM` numbers with DESI DR2 after
   the host-mass correction beyond the significances quoted by Hoyt et al.
 - The effective DESI-era significance for Unite with exactly the DESI DR2

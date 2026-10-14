@@ -125,3 +125,23 @@ Poppett2026	2608.07927	Poppett	2026	Spec-S5: A Next-Generation All-Sky Spectrosc
 Sanders2026	2608.27830	Sanders	2026	A Unified Tracer Analysis of DESI DR2 Baryon Acoustic Oscillations	results
 Guandalin2026	2610.01836	Guandalin	2026	Cosmological inference from a joint DESI DR1 full-shape power spectrum and bispectrum analysis	results
 Hoyt2026	2601.19424	Hoyt	2026	Union3.1: Reducing Systematics in Supernova Cosmology with Self-consistent Measurements of Host Galaxy Properties for 2000 Type Ia Supernovae	results
+PeeblesYu1970	doi:10.1086/150713	Peebles	1970	Primeval Adiabatic Perturbation in an Expanding Universe	foundation
+SunyaevZeldovich1970	doi:10.1007/BF00653471	Sunyaev	1970	Small-scale fluctuations of relic radiation	foundation
+BlakeGlazebrook2003	astro-ph/0301632	Blake	2003	Probing dark energy using baryonic oscillations in the galaxy power spectrum as a cosmological ruler	foundation
+SeoEisenstein2003	astro-ph/0307460	Seo	2003	Probing Dark Energy with Baryonic Acoustic Oscillations from Future Large Galaxy Redshift Surveys	foundation
+Eisenstein2006	astro-ph/0604361	Eisenstein	2006	On the Robustness of the Acoustic Scale in the Low-Redshift Clustering of Matter	foundation
+PadmanabhanWhite2008	0804.0799	Padmanabhan	2008	Constraining Anisotropic Baryon Oscillations	method
+BassettHlozek2009	0910.5224	Bassett	2009	Baryon Acoustic Oscillations	review
+Hamilton1997	astro-ph/9708102	Hamilton	1997	Linear Redshift Distortions: A Review	review
+Scoccimarro2004	astro-ph/0407214	Scoccimarro	2004	Redshift-Space Distortions, Pairwise Velocities and Nonlinearities	foundation
+Ballinger1996	astro-ph/9605017	Ballinger	1996	Measuring the cosmological constant with redshift surveys	foundation
+MatarreseVerde2008	0801.4826	Matarrese	2008	The effect of primordial non-Gaussianity on halo bias	foundation
+Bianchi2015	1505.05341	Bianchi	2015	Measuring line-of-sight dependent Fourier-space clustering using FFTs	method
+Scoccimarro2015	1506.02729	Scoccimarro	2015	Fast Estimators for Redshift-Space Clustering	method
+Wilson2015	1511.07799	Wilson	2015	Rapid modelling of the redshift-space power spectrum multipoles for a masked density field	method
+Guo2011	1111.6598	Guo	2011	A New Method to Correct for Fiber Collisions in Galaxy Two-Point Statistics	method
+Hahn2016	1609.01714	Hahn	2016	The Effect of Fiber Collisions on the Galaxy Power Spectrum Multipole	method
+McDonaldRoy2009	0902.0991	McDonald	2009	Clustering of dark matter tracers: generalizing bias for the coming era of precision LSS	foundation
+Senatore2014	1406.7843	Senatore	2014	Bias in the Effective Field Theory of Large Scale Structures	foundation
+Perko2016	1610.09321	Perko	2016	Biased Tracers in Redshift Space in the EFT of Large-Scale Structure	foundation
+DodelsonSchneider2013	1304.2593	Dodelson	2013	The Effect of Covariance Estimator Error on Cosmological Parameter Constraints	method

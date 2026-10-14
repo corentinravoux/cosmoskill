@@ -1,7 +1,7 @@
 # Results — statistics beyond the two-point function
 
 Scope: headline constraints from each statistic, with an explicit status column: survey data with blinding or mock challenge, survey data without, or simulations only.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-13
 
 
 ## 0. Status of every statistic: data or simulations
@@ -49,12 +49,15 @@ spectrum multipoles plus bispectrum monopole unless stated.
 | Σm_ν | < 0.1 eV (95%) | same | ΛCDM + Σm_ν | arXiv:2603.19356 | [src] |
 | Gain on ln(10¹⁰A_s) from B | about 20% smaller error | same | ΛCDM | arXiv:2603.19356 | [src] |
 | Shift of σ8, S8 when adding B | +1.1σ, +1.2σ; errors smaller by 26%, 28% | DESI DR1 FS (P+B, LRG bispectrum) + DR2 BAO | ΛCDM | arXiv:2606.23936 | [src] |
+| Ω_m, σ8, h, S8 | 0.3085 ± 0.0085, 0.868 ± 0.025, 0.6841 ± 0.0059, 0.880 ± 0.026; S8 about 3σ above DES Y6 and within about 1σ of CMB-only values, per the paper | same, with BBN and a wide n_s prior | ΛCDM | arXiv:2606.23936 | [src: Eq. 18, Sect. 4.2.1] |
 | w0wa preference | 2.8σ with CMB; 1.6σ with DES-Dovekie SNe; 3.1σ with both; within 1σ of Λ for DESI alone | same | w0waCDM | arXiv:2606.23936 | [src] |
 | Σm_ν | 0.26 ± 0.17 eV, < 0.57 eV (95%) | same, DESI only | ΛCDM + Σm_ν | arXiv:2606.23936 | [src] |
 | μ0 | 0.12 ± 0.49 | same, DESI only | modified gravity (μ0) | arXiv:2606.23936 | [src] |
 | Ω_m, H0, σ8 | 0.284 ± 0.011, 70.7 ± 1.1, 0.811 ± 0.030 | DESI DR1 P_ℓ + B0, independent pipeline | ΛCDM, priors on ω_b and n_s | arXiv:2507.13433 | [src] |
 | Ω_m, H0, σ8 | 0.296 ± 0.007, 68.8 ± 0.6, 0.818 ± 0.029 | same + DESI DR2 BAO | ΛCDM | arXiv:2507.13433 | [src] |
 | Gain on ω_cdm and amplitude from B0 | 15% and 10% (combined LRG); 6% and 4% (all tracers) | DESI DR1 LRG ×3 + QSO | ΛCDM, tree-level B | arXiv:2610.01836 | [src] |
+| Gain on σ8 from B_000, same pipeline | 5% (combined LRG), 1% (all tracers); 2–14% per LRG bin | same, k_max = 0.20 h Mpc⁻¹ | ΛCDM | arXiv:2610.01836 | [src: Table 3] |
+| Gain on ω_cdm, Ω_m, σ8 from B_0 | 11%, 8%, 10%; Ω_m moves up by 0.8σ | DESI DR1 six tracers, B at k < 0.08 h Mpc⁻¹ | ΛCDM | arXiv:2507.13433 | [src: Sect. VI.1] |
 | f/f^fid per LRG bin | 0.888 +0.186/−0.089, 0.977 +0.182/−0.220, 1.030 +0.368/−0.085 | DESI DR1 LRG P+B | ShapeFit, Planck fiducial | arXiv:2503.09714 | [src] |
 | Cumulative precision | 10.1% on f, 8.4% on σ_s8; σ(α_iso) = 0.9%, σ(α_AP) = 2.3%, σ(fσ_s8) = 5.1% | DESI DR1 LRG + QSO P+B | ShapeFit | arXiv:2503.09714 | [src] |
 | σ8, h, Ω_m | 0.794 ± 0.037, 0.692 ± 0.011, 0.311 ± 0.010 | BOSS DR12, one-loop B0 + tree B2 | ΛCDM, n_s fixed, BBN prior | arXiv:2206.08327 | [src] |
@@ -95,8 +98,9 @@ inherits the b_φ assumption discussed in that skill.
 | Noise from GLAM-Uchuu N-body mocks | 1.4σ baseline (was > 3.5σ with Patchy, same cuts) | BOSS CMASS + LOWZ | arXiv:2401.09523 | [src] |
 | χ²_× and χ²_null statistics | parity signal 0–2.5σ; parity-even 8PCF bias term ≈ 6σ | BOSS | Krolewski et al. 2024, arXiv:2407.03397 | [src] |
 | Lyα forest 4PCF | no evidence with bootstrap covariance | SDSS DR16 | arXiv:2405.04660 | [src] |
-| DESI DR1 LRG, auto | 4–10σ excess over mocks | DESI DR1 | arXiv:2508.09133 | [src] |
-| DESI DR1 LRG, cross between patches | no detection; in significant tension with the auto result | DESI DR1 | arXiv:2508.09133 | [src] |
+| Connected parity-even 4PCF (for reference) | 8.1σ; 4.7σ with sides above 14 h⁻¹Mpc | BOSS CMASS | arXiv:2108.01670 | [src] |
+| DESI DR1 LRG, auto | 4–10σ excess over mocks (abstract); in the body 11.4σ (NGC) and 7.0σ (SGC) against 25 Abacus mocks, 6.6σ and 5.7σ against 1000 EZmocks | DESI DR1 | arXiv:2508.09133 | [src: Sect. V.2] |
+| DESI DR1 LRG, cross between patches | no detection (−1.0σ NGC, −0.8σ SGC); in significant tension with the auto result | DESI DR1 | arXiv:2508.09133 | [src: Sect. V.4] |
 | Kurto spectra | no evidence in BOSS DR12 or DESI DR1 | BOSS, DESI | arXiv:2604.06021 | [src] |
 
 Reading: the auto-correlation excess is real as a number and is reproduced in
@@ -250,6 +254,10 @@ All rows are fits to survey data. S8 = σ8 (Ω_m/0.3)^0.5 throughout.
 | DES Y3 | SBI: power spectrum + CNN map-level | 0.804 +0.025/−0.017 | Ω_m = 0.283 +0.020/−0.027; w < −0.80 (68%), prior −1 < w < −1/3 | wCDM | arXiv:2403.02314 | [src] |
 | DES Y3 | SBI: Betti numbers + second moments | 0.821 ± 0.018 | Ω_m = 0.304 ± 0.037; 70% tighter than two-point in the plane | wCDM | arXiv:2506.13439 | [src] |
 | DES Y3 | SBI: hybrid statistics (seven summaries) | 0.808 ± 0.017 | Ω_m = 0.325 ± 0.024; w < −0.766 (68%); FoM(Ω_m, S8, w) +60% over previous best, almost ×3 over two-point | wCDM | arXiv:2606.11309 | [src] |
+| DES Y3 | Peaks + C_ℓ, Gaussian-process emulator | 0.797 +0.015/−0.013 | about 38% tighter than C_ℓ alone; 1.5σ below Planck 2018 | ΛCDM | Zürcher et al. 2021, arXiv:2110.10135 | [src] |
+| HSC Y1 | Peaks + minima + power spectrum | 0.810 +0.022/−0.026 | 35% tighter than the power spectrum alone | ΛCDM | Marques et al. 2023, arXiv:2308.10866 | [src] |
+| HSC Y1 | Convergence PDF + power spectrum | 0.798 +0.029/−0.042 | PDF alone 0.860 +0.066/−0.109; PDF improves the power-spectrum constraint by about 10% | ΛCDM | Thiele et al. 2023, arXiv:2304.05928 | [src] |
+| KiDS-1000 | Density split statistics (shear around foreground-density quantiles) | 0.74 +0.03/−0.02 | Ω_m = 0.28 ± 0.02; b = 1.32 +0.12/−0.10 | ΛCDM | Burger et al. 2022, arXiv:2208.02171 | [src] |
 | HSC Y1 | SBI: power spectrum + PDF + peaks + minima + MFs | 0.804 +0.041/−0.040 | Ω_m = 0.344 +0.083/−0.090; power spectrum alone 0.766 +0.054/−0.056 | ΛCDM | arXiv:2409.01301 | [src] |
 
 Reading the table.
@@ -266,12 +274,27 @@ Reading the table.
   should be read as provisional. This inference about ordering is [der] from
   the two arXiv dates; the paper itself was not checked for the redshift
   calibration it uses.
+  Checked on 2026-10-13: the paper uses the HSC Y3 redshift distributions
+  that combine three photo-z codes with CAMIRA-LRG clustering redshifts, with
+  Gaussian priors of about 2% on the shifts of bins 1 and 2 and a flat prior
+  between −1 and 1 on those of bins 3 and 4, "to allow the self-calibration
+  of the residual photo-z bias" [src: Sect. II.1.2, IV.2.2 of
+  arXiv:2508.14019]. It does not use DESI clustering redshifts; the high-z
+  bins are self-calibrated, as in the HSC Y3 two-point analyses it cites.
 - The KiDS-Legacy 2+3-point S8 (0.806 +0.025/−0.023) is not tighter in S8
   than the KiDS-Legacy two-point value quoted in `cosmo-weak-lensing`
   (0.815 +0.016/−0.021 [sec]); the gain is in Ω_m and in the figure of merit,
   and the two analyses differ in IA and baryon modelling (arXiv:2606.12389).
 
-History. KiDS-450 peaks (arXiv:1709.07678) and the KiDS-450 CNN
+**Forecast** for Euclid (HOWLS, arXiv:2301.12890): on common non-tomographic
+mocks without systematics, each of ten higher-order statistics beats the
+two-point functions by about a factor two on (Ω_m, σ8), and their
+combination by 4.5 [src]. The first KiDS-1000 2+3-point analysis is Burger
+et al. 2023 (arXiv:2309.08602), restricted to equal aperture radii; its
+values were not read.
+
+History. CFHTLenS peaks and 2+3-point (arXiv:1412.0757, arXiv:1404.5469)
+and DES SV peaks (arXiv:1603.05040) came first. KiDS-450 peaks (arXiv:1709.07678) and the KiDS-450 CNN
 (arXiv:1906.03156) were the first data applications; DES Y3 moments
 (arXiv:2110.10141) the first Stage-III collaboration result; the 2024–2026
 DES Y3 SBI series superseded each other in constraining power, the hybrid
@@ -337,10 +360,12 @@ volume.
 | Bispectrum + CNN | — | — | — | 1.6, 1.5, 1.7, 1.2, 2.3× on Ω_b, h, n_s, Ω_m, σ8 | arXiv:2310.15246 | [src] |
 | Marked power spectrum | 0.273 +0.040/−0.030 | 0.777 +0.077/−0.071 | — | up to 1.2× on σ8 against a perturbative P analysis; none on other parameters | arXiv:2404.04228 | [src] |
 | Wavelet scattering transform | — | not robust at k_max = 0.5 | posterior depends on flow architecture | "seemingly improved"; authors raise concerns | arXiv:2310.15250 | [src] |
+| Wavelet scattering transform, values (CMASS SGC) | 0.28 ± 0.04 (full); 0.25 ± 0.03 (scales k ≳ 0.3 removed) | 0.84 ± 0.03 (full); 0.75 ± 0.05 (cut) | h = 0.73 ± 0.06, n_s = 1.05 ± 0.06 (full) | SimBIG P_ℓ on the same data: σ8 = 0.81 ± 0.07 | arXiv:2310.15250 | [src: Table 2] |
 
 Reading. The gains are quoted against the SimBIG power-spectrum analysis of
-the same subsample, whose mock challenge found it "unbiased, but conservative"
-(arXiv:2211.00660); a gain over a conservative baseline is an upper estimate
+the same subsample (Hahn et al. 2022, arXiv:2211.00723: σ8 27% more precise
+than standard analyses, P_ℓ to k_max = 0.5 h Mpc⁻¹ [src]), whose mock
+challenge found it "unbiased, but conservative" (arXiv:2211.00660); a gain over a conservative baseline is an upper estimate
 of the gain over an optimal one. On data, the marked power spectrum gave 1.2×
 on σ8 where the matter-field Fisher forecast promised more than 2× on all
 parameters (§3).

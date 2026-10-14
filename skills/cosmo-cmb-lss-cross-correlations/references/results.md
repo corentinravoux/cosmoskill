@@ -1,7 +1,7 @@
 # Results — CMB × LSS cross-correlations
 
 Scope: current headline measurements from CMB lensing × galaxies and quasars, kSZ, tSZ × LSS, ISW, CIB and the other secondaries, then the history of the key numbers.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-13
 
 Flags: `[src]` read this session in the cited paper (its abstract unless a section is named); `[sec]` from a named secondary source; `[der]` derived here, derivation stated. Every constraint assumes flat ΛCDM unless the row says otherwise. Years next to author names are arXiv submission years.
 
@@ -141,6 +141,7 @@ The kSZ measurements come in three estimator families that Smith 2018 (arXiv:181
 | Amplitude relative to a halo-model prediction | A = 0.39 ± 0.04 | ACT DR6 × DESI Legacy, velocity reconstruction | arXiv:2506.21684 | [src] |
 | kSZ velocity bias b_v (an analogous amplitude; defined in `physics-and-methods.md` §3.2) | 0.339 ± 0.034 (cross); 0.26 +0.11/−0.05 (auto); 0.33 ± 0.03 (combined) | ACT DR6 × DESI Legacy LRG | arXiv:2511.15701 | [src] |
 | kSZ velocity bias b_v, spectroscopic LRGs, joint v–g and v–v fit | 0.229 ± 0.022 (90 GHz); 0.233 ± 0.020 (150 GHz); best fits 0.233 and 0.237 | ACT DR6 × DESI DR2 LRG | arXiv:2604.04867, table of LRG fits | [src] |
+| kSZ velocity bias b_v, ELGs (z_eff = 1.170) and quasars (z_eff = 1.667), v–g only | ELG 0.102 ± 0.027 (90 GHz), 0.153 ± 0.026 (150 GHz); QSO 0.252 ± 0.056, 0.206 ± 0.047 | ACT DR6 × DESI DR2 | arXiv:2604.04867 | [src: Sect. 5.3, table] |
 | Mean halo masses, lensing-calibrated | log(M_halo/(M⊙/h)) ≈ 13.18 (Main LRG), 13.03 (Extended LRG), 13.02 (BGS) | DESI samples × ACT DR6 κ | Hadzhiyska 2025, arXiv:2507.14136 | [src] |
 | Gas fractions against TNG300 | lower at fixed radius by ≳ 4σ; all baryons recovered at 2–3 virial radii | same, with the kSZ profiles | arXiv:2507.14136 | [src] |
 | Baryon fraction within the virial radius, low-mass groups (10^12.5–10^14 h⁻¹M⊙) | 0.21 ± 0.06 of the universal fraction | DESI Legacy groups × ACT, AbacusSummit forward model | Roper 2025, arXiv:2510.12553 | [src] |
@@ -163,6 +164,7 @@ The ACT DR6 × DESI results favour gas that is more extended than in the Battagl
 | f_NL (local) from v–g | −180 +61/−86 (67%); consistent with zero at 95% | ACT DR6 × DESI Legacy LRG, photometric | arXiv:2511.15701 | [src] |
 | f_NL (local) from v–g and v–v | 15.9 +34.6/−34.4 (68%) | ACT DR6 × DESI DR2 LRG, ELG, QSO | arXiv:2604.04867 | [src] |
 | f_NL (local), LRGs only, v–g and v–v | mean 11.7, −43.5/+43.4; best fit 8.5 | ACT DR6 × DESI DR2 LRG | arXiv:2604.04867, table of LRG fits | [src] |
+| f_NL (local) per tracer, v–g dipole | ELG 207, −221/+225 (b_φ near zero because b_1 is close to 1); QSO 1.09, −58.4/+57.7 | ACT DR6 × DESI DR2 | arXiv:2604.04867 | [src: Sect. 5.3, table] |
 | Force-law index n in g ∝ 1/rⁿ, 30–230 Mpc | 2.1 ± 0.3 | ACT × SDSS pairwise kSZ | Gallardo 2026, arXiv:2604.14327 | [src] |
 | Per-mode noise of the kSZ velocity field against the galaxy auto-spectrum | lower at k < 0.004 Mpc⁻¹ | ACT DR6 × DESI DR2 | arXiv:2604.04867 | [src] |
 | H_0 f σ_8² | constrained only if τ̄ and bias are supplied externally; proof of concept | DESI DR1 BGS × ACT DR6 pairwise | arXiv:2510.14135 | [src] |
@@ -280,24 +282,29 @@ The CIB appears in this domain in three roles: a high-redshift matter tracer cor
 ### 7.2 kSZ detections and their reading
 <!-- key: ksz-detections-and-their-reading -->
 
-1. Significance by estimator. Pairwise: evidence at p = 0.002 (arXiv:1203.4219), 5.4σ (arXiv:2101.08374), 9.3σ with DESI DR1 (arXiv:2511.23417). Velocity-weighted stacking: 3.3σ (arXiv:1510.06442), 6.5σ (arXiv:2009.05557), 13σ photometric (arXiv:2407.07152), ≈ 10 spectroscopic DESI Y1 (arXiv:2503.19870), 18σ DESI DR2 (arXiv:2604.19744). Velocity reconstruction: 3.8σ (arXiv:2410.06229), ~11σ (arXiv:2506.21684, arXiv:2511.15701, arXiv:2603.28746), 17σ for LRGs and 20.8σ cumulative with DESI DR2 (arXiv:2604.04867). All [src].
+1. Significance by estimator. Pairwise: evidence at p = 0.002 (arXiv:1203.4219), 5.4σ (arXiv:2101.08374), 9.3σ with DESI DR1 (arXiv:2511.23417). Velocity-weighted stacking: 3.3σ (arXiv:1510.06442), 6.5σ (arXiv:2009.05557), 13σ photometric (arXiv:2407.07152), ≈ 10 spectroscopic DESI Y1 (arXiv:2503.19870), 18σ DESI DR2 (arXiv:2604.19744). Velocity reconstruction: 3.8σ (arXiv:2410.06229), ~11σ (arXiv:2506.21684, arXiv:2511.15701, arXiv:2603.28746), 17σ for LRGs and 20.8σ cumulative with DESI DR2 (arXiv:2604.04867). All [src]. Before these, Planck gave 1.8–2.5σ for the pairwise momentum around SDSS central galaxies at z ≈ 0.1 (arXiv:1504.03339) [src].
 2. Reading of the amplitude. The 2016 projected-field result, (f_b/0.158)(f_free/1.0) = 1.48 ± 0.19, was taken as showing that "baryons approximately trace the dark matter distribution down to ~Mpc scales" (arXiv:1603.01608) [src]. From 2020 the profile measurements show gas more extended than the dark matter (arXiv:2009.05557), and from 2024 the DESI-based measurements are read as evidence for strong feedback (arXiv:2407.07152 and the rows of §2.2) [src]. The two statements concern different scales and are not in conflict.
 3. The z ≈ 1.1 unWISE projected-field amplitude of 5.02 ± 1.01 (arXiv:2102.01068) is an unexplained excess that its authors could not attribute to foregrounds [src]; no later projected-field measurement was found this session.
 
 ### 7.3 tSZ × lensing
 <!-- key: tsz-x-lensing -->
 
-The first detection, CFHTLenS × Planck at 6σ (arXiv:1310.5721), was followed by KiDS-1000 × Planck + ACT (arXiv:2109.04458), DES Y3 × ACT + Planck at 21σ (arXiv:2108.01600) and the DES Y3 × ACT DR6 joint cosmology and feedback fit, also 21σ (arXiv:2506.07432) [src]. The interpretation has moved from "warm baryons trace the large-scale structure" (2013) to constraints on AGN feedback and, since 2025, to S_8 values that disagree with each other (§3.2).
+The first detection, CFHTLenS × Planck at 6σ (arXiv:1310.5721), was followed by KiDS-1000 × Planck + ACT (arXiv:2109.04458), DES Y3 × ACT + Planck at 21σ (arXiv:2108.01600) and the DES Y3 × ACT DR6 joint cosmology and feedback fit, also 21σ (arXiv:2506.07432) [src]. The CMB-lensing version was first detected at 6.2σ in Planck data, with σ_8(Ω_m/0.282)^0.26 = 0.824 ± 0.029 (Hill 2013, arXiv:1312.4525) [src]. The interpretation has moved from "warm baryons trace the large-scale structure" (2013) to constraints on AGN feedback and, since 2025, to S_8 values that disagree with each other (§3.2).
 
 ### 7.4 ISW
 <!-- key: isw -->
 
-Planck 2015 combined detection 4σ (arXiv:1502.01595); tomographic five-catalogue analysis 4.7–5.0σ (arXiv:1710.03238); unWISE alone 3.2σ with A_ISW = 0.96 ± 0.30 (arXiv:2110.13959); Quaia alone 2.8σ with 1.69 ± 0.61 (arXiv:2607.22461) [src]. The supervoid excess reported from 2018 (arXiv:1811.07812) was not reproduced in the DESI Legacy analysis of 2021 (arXiv:2105.11936) [src].
+First reported correlations 2–3σ with the X-ray background and NVSS (Boughn 2003, arXiv:astro-ph/0305001); WMAP-era combination ~4.5σ (Giannantonio 2008, arXiv:0801.4380); Planck 2015 combined detection 4σ (arXiv:1502.01595); tomographic five-catalogue analysis 4.7–5.0σ (arXiv:1710.03238); unWISE alone 3.2σ with A_ISW = 0.96 ± 0.30 (arXiv:2110.13959); Quaia alone 2.8σ with 1.69 ± 0.61 (arXiv:2607.22461) [src]. The supervoid excess reported from 2018 (arXiv:1811.07812) was not reproduced in the DESI Legacy analysis of 2021 (arXiv:2105.11936) [src]. The stacking signal itself goes back to 9.6 ± 2.2 μK on SDSS LRG superstructures (Granett 2008, arXiv:0805.3695) [src].
+
+### 7.5 E_G and CIB × lensing
+<!-- key: eg-and-cib-x-lensing -->
+
+E_G: 0.39 ± 0.06 from galaxy–galaxy lensing (Reyes 2010, arXiv:1003.2185); 0.243 ± 0.060 (stat) ± 0.013 (sys) at z = 0.57 from Planck lensing × CMASS, 2.6σ below GR (Pullen 2015, arXiv:1511.04457); 0.34 ± 0.05 at z_eff = 0.555 with ACT DR6 + Planck PR4, consistent with GR (arXiv:2405.12795) [src]. The 2015 deficit is not seen in the ACT DR6 analysis. CIB × CMB lensing: first detections in 2013, Planck with a peak of 42σ at 545 GHz and a correlation up to 80% (arXiv:1303.5078), SPT × Herschel at 6.7–8.8σ per band (arXiv:1303.5048) [src].
 
 ## 8. Not verified
 <!-- key: not-verified -->
 
-- No value is given here for the tSZ–CIB correlation coefficient, the Planck all-sky y-map properties, or the first CIB × CMB lensing correlations: the papers were not read this session.
-- kSZ velocity-bias values for DESI ELGs and quasars (arXiv:2604.04867) were not read beyond the abstract and the LRG table.
+- No value is given here for the tSZ–CIB correlation coefficient. The abstracts of the Planck y-map papers (arXiv:1303.5081, arXiv:1502.01596), of the tSZ–CIB paper (arXiv:1509.06555) and of the first CIB × CMB lensing detections were read on 2026-10-13 (§7.5; `physics-and-methods.md` §4, §6); their bodies were not.
+- Closed on 2026-10-13: the kSZ velocity-bias and f_NL values for DESI ELGs and quasars (arXiv:2604.04867) are now in §2.2 and §2.3.
 - The Planck release behind the lensing map of arXiv:2105.03421 and arXiv:2111.09898 is not stated in their abstracts; arXiv:2309.05659 and arXiv:2407.04607 identify both as PR3 [src, appendix and section named in §7.1].
 - Significances quoted "from Planck" use each paper's own metric and Planck likelihood; they were not homogenised.

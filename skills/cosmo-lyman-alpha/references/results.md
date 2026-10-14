@@ -1,7 +1,7 @@
 # Lyman-alpha forest — current measurements and their history
 
 Scope: headline numbers from the Lyα forest (BAO, Alcock–Paczynski, P1D compressed parameters, dark-matter and neutrino bounds, IGM thermal state, tomography), with what supersedes what.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-14
 
 Flags: `[src]` read this session in the cited paper (abstract unless a section is named); `[der]` derived here, derivation given; `[sec]` from a named secondary source. Every parameter constraint states its model.
 
@@ -90,6 +90,8 @@ Herrera-Alcantar et al. 2026 (arXiv:2607.19619) split the auto- and cross-correl
 | D_M/D_H | 3.96 ± 0.15 | 5.63 (+0.22/−0.24) | [src] |
 | D_H/r_d | 9.40 ± 0.20 | 7.22 ± 0.17 | [src] |
 
+Full table of the paper (arXiv:2607.19619) [src: Sect. 5.1, Table 2]: D_M/r_d = 37.21 ± 0.82, 40.64 ± 0.99, 40.61 (+0.94/−1.1); D_H/r_d = 9.40 ± 0.20, 8.28 ± 0.17, 7.22 ± 0.17; ρ = −0.469, −0.467, −0.490; D_V/r_d = 30.26 ± 0.39, 32.02 ± 0.46, 32.22 ± 0.47; D_M/D_H = 3.96 ± 0.15, 4.91 ± 0.19, 5.63 (+0.22/−0.24) at z_eff = 2.13, 2.40, 2.81.
+
 Derived evolution parameters from the same paper [src]: H(z) ∝ (1+z)^n with n = 1.34 ± 0.16 (matter domination predicts 1.5); Lyα bias ∝ (1+z)^γ with γ_α = 3.05 ± 0.16; RSD parameter evolution γ_β = −0.97 ± 0.26; quasar bias γ_Q = 1.56 ± 0.23. Combining the three bins with DESI DR2 galaxy and quasar BAO improves curvature constraints by about 12% in ΛCDM+Ω_K. Validation used 400 synthetic data sets.
 
 ### 1.2 Other 3D results from DESI
@@ -134,6 +136,7 @@ What the history shows.
 - D_M/r_d moved up from 35.7–37.5 (SDSS, 2017–2020) to 38.99 (DESI DR2). D_H/r_d moved down from about 9.0 to 8.63. Both DESI DR2 errors are about half the eBOSS DR16 ones [der: 0.098/0.19, 0.52/1.1].
 - DESI DR2 is the first Lyα BAO analysis to carry a theoretical systematic term, motivated by studies of the BAO shift from non-linear growth (arXiv:2503.14739 [src]; the shift studies are arXiv:2412.06892 and arXiv:2503.13442).
 - The eBOSS DR16 errors are statistical only (arXiv:2007.08995 [src]).
+- Correlations and bias parameters of the two previous releases, read in the bodies. DESI DR1 combined fit: α_⊥ = 1.013 ± 0.024, α_∥ = 0.989 ± 0.020, ρ = −0.48, b_α = −0.1078 (+0.0045/−0.0054), β_α = 1.743 (+0.074/−0.100), 17 parameters, χ² = 9624.36 for 9540 bins, p = 0.23 (arXiv:2404.03001 [src: Sect. 5, Table 3; Appendix B, Table 5]). eBOSS DR16 combined fit at z_eff = 2.334: D_H/r_d = 8.99 (+0.20/−0.19), D_M/r_d = 37.5 (+1.2/−1.1), ρ = −0.45 (auto alone −0.49, cross alone −0.43); errors from a χ² scan calibrated by 1000 fast Monte Carlo realisations because the α errors are non-Gaussian; the Lyα bias is quoted as the velocity-gradient bias b_η,Lyα = −0.2014 ± 0.0032 with β_Lyα = 1.669 ± 0.071; fit range 10 < r < 180 h⁻¹Mpc, 19 parameters in the combined fit (arXiv:2007.08995 [src: Sect. VI.1, Table 6; Sect. VI.2, Eqs. 41–43, Table 7]).
 
 ### 2.1 Alcock–Paczynski from the full shape — history
 <!-- key: alcock-paczynski-from-the-full-shape-history -->
@@ -143,7 +146,7 @@ What the history shows.
 | 2023 | eBOSS DR16 mocks | validation: full-shape fit could give ~2% on D_M/D_H where BAO gives 4%; r_min = 25 h⁻¹Mpc chosen | — | arXiv:2209.12931 | [src] |
 | 2023 | eBOSS DR16 data | Ω_m = 0.36 (+0.03/−0.04) (flat ΛCDM, Lyα alone); H_0 = 63.2 ± 2.5 with BBN; with other SDSS tracers H_0 = 67.2 ± 0.9 and w = −0.90 ± 0.12; a factor of two tighter than BAO | 25 < r < 180 h⁻¹Mpc | arXiv:2209.13942 | [src] |
 | 2025 | DESI DR1 | D_M/D_H = 4.525 ± 0.071 (1.6% [der: 0.071/4.525]) | — | arXiv:2509.15308 | [src] |
-| 2026 | DESI DR2 | D_M/D_H = 4.572 ± 0.046 (1.0%); Ω_m = 0.325 ± 0.018; H_0 = 66.5 ± 1.3 with BBN | small scales (< 10 h⁻¹Mpc) analytically marginalised (arXiv:2607.27411) | arXiv:2607.27410 | [src] |
+| 2026 | DESI DR2 | D_M/D_H = 4.572 ± 0.046 (1.0%); Ω_m = 0.325 ± 0.018; H_0 = 66.5 ± 1.3 with BBN | undistorted model below r_min = 30 (auto) / 40 h⁻¹Mpc (cross) analytically marginalised (arXiv:2607.27411 [src: Sect. III.4]) | arXiv:2607.27410 | [src] |
 
 The Lyα-alone H_0 (with a BBN prior, flat ΛCDM) went 63.2 ± 2.5 (eBOSS) → 68.3 ± 1.6 (DESI DR1 full shape + DR2 BAO) → 66.5 ± 1.3 (DESI DR2). The eBOSS value was low at about 1.7σ from the DR1 value [der: (68.3 − 63.2)/sqrt(2.5² + 1.6²) = 1.7, treating them as independent; this is an upper bound on the significance if the two surveys share sky area and quasars].
 
@@ -246,7 +249,9 @@ Also from Sect. 7.1 [src]: n_s = 0.9738 ± 0.0036 for CMB-SPA + DESI BAO + DESI 
 | Year | Statement | Data | Citation | Flag |
 |---|---|---|---|---|
 | 2005 | n_s = 0.98 ± 0.02; dn/dlnk = −0.003 ± 0.010; σ_8 = 0.90 ± 0.03; Σm_ν < 0.42 eV (95%) | SDSS Lyα + WMAP (+ galaxies, SNe) | arXiv:astro-ph/0407372 | [src] |
+| 2006 | σ_8 = 0.85 ± 0.02 (0.80 ± 0.03 without Lyα); ~2σ amplitude tension with WMAP3; n_s = 0.965 ± 0.012; dn/dlnk = −(1.5 ± 1.2) × 10⁻² | SDSS + high-resolution Lyα + WMAP3 + SNe + galaxies | arXiv:astro-ph/0604335 | [src] |
 | 2013 | σ_8 = 0.83 ± 0.03, n_s = 0.97 ± 0.02 | BOSS DR9 P1D + H_0 prior | arXiv:1306.5896 | [src] |
+| 1999 | first forest neutrino-mass limit: m_ν < 5.5 eV for all Ω_m (95%), tighter for 0.2 < Ω_m < 0.5, with hydrodynamical simulations including massive neutrinos | Lyα P(k) measurement + other constraints | arXiv:astro-ph/9903335 | [src] |
 | 2015 | Σm_ν < 1.1 eV (Lyα alone); < 0.15 eV with CMB; < 0.14 eV adding BAO (95%) | BOSS DR9 P1D | arXiv:1410.7244 | [src] |
 | 2015 | Σm_ν < 0.12 eV (95%) with Planck 2015; weak tension on n_s, absorbed by running | BOSS DR9 P1D | arXiv:1506.05976 | [src] |
 | 2017 | Σm_ν < 0.8 eV (Lyα alone); < 0.14 eV with CMB | BOSS + XQ-100 | arXiv:1702.03314 | [src] |
@@ -267,6 +272,8 @@ Thermal-relic warm dark matter lower limits on the particle mass. All are 95% (2
 
 | Year | m_WDM limit | Data | Thermal-history assumption | Citation | Flag |
 |---|---|---|---|---|---|
+| 2000 | > 750 eV | artificial spectra from collisionless N-body WDM simulations | robust to reasonable T_0 uncertainties as stated | arXiv:astro-ph/0005095 | [src] |
+| 2005 | > 550 eV (thermal relic); > 2.0 keV (sterile neutrino), 2σ | Kim et al. 2004 + Croft et al. 2002 high-resolution data + WMAP | — | arXiv:astro-ph/0501562 | [src] |
 | 2013 | > 3.3 keV | 25 HIRES/MIKE QSOs at z > 4 | physically motivated histories, conservative errors | arXiv:1306.2314 | [src] |
 | 2016 | > 4.09 keV (Lyα alone); > 2.96 keV with Planck (n_s shift) | BOSS DR9 P1D | — | arXiv:1512.01981 | [src] |
 | 2017 | > 4.17 keV (BOSS + XQ-100); > 4.65 keV adding HIRES/MIKE z = 4.2, 4.6 | BOSS + XQ-100 (+ HIRES/MIKE) | — | arXiv:1702.03314 | [src] |
@@ -296,6 +303,7 @@ Forecast: reionisation-relic imprints on large scales would allow DESI-like Lyα
 | Quantity | Value | Redshift | Data / method | Citation | Flag |
 |---|---|---|---|---|---|
 | T_0 | ~6000 K → peak 14 000 K → ~7000 K | z = 5.4 → 3.4 → 1.8 | P1D (BOSS + HIRES/UVES), ~70 simulations | arXiv:1808.04367 | [src] |
+| T at the optimal overdensity, curvature statistic | median 2σ statistical error 8%, comparable systematic from unknown Jeans smoothing; T_0 must rise toward z ~ 3 (extended He II reionisation) | 2.0 < z < 4.8 | 61 high-resolution spectra | arXiv:1008.2622 | [src] |
 | T_0 at the He II peak | 14 750 ± 1322 K | z ≈ 3 | 103 high-resolution spectra, four statistics combined | arXiv:2009.00016 | [src] |
 | γ at the He II minimum | 1.225 ± 0.120 | z ≈ 3 | same | arXiv:2009.00016 | [src] |
 | T_0 | 11 000 ± 1600, 10 500 ± 2100, 12 000 ± 2200 K | z = 5.4, 5.6, 5.8 | widths of transmission spikes, 5 spectra | arXiv:2001.10018 | [src] |
@@ -335,7 +343,6 @@ Recent constraint from the high-z P1D on helium reionisation by faint quasars: a
 
 These items are needed for a complete table and were not read this session; do not quote them from memory.
 
-- The D_H–D_M correlation coefficient of the DESI DR1 and eBOSS DR16 Lyα BAO results.
-- The best-fit Lyα bias b and RSD parameter β of the DESI DR1 and eBOSS DR16 3D fits.
-- The central redshift bin of the three-bin DR2 BAO analysis (only the end points are in the abstract).
+- Closed 2026-10-14: the D_H–D_M correlation and the b, β of the DESI DR1 and eBOSS DR16 fits are now in §2 (paper bodies).
+- Closed 2026-10-14: the central bin of the three-bin DR2 BAO analysis is now in §1.1.
 - The numerical Planck-predicted values of Δ²_★ and n_★ (the paper states full consistency with Planck 2018 without the numbers being read here).

@@ -56,7 +56,7 @@ each value and its provenance).
   prior on the velocity correlations (arXiv:1508.03860).
 - No fσ8 from ZTF data exists; only simulations — 19 % alone, 10 % with DESI DR3
   BGS (arXiv:2303.01198, arXiv:2609.34508). No DESI DR2 PV paper either.
-- kSZ gives τ × v; b_v ≈ 0.2–0.45, so it constrains f_NL, not fσ8
+- kSZ gives τ × v; b_v ≈ 0.1–0.45 by tracer, so it constrains f_NL, not fσ8
   (arXiv:2604.04867, arXiv:2511.15701).
 - γ_L = 0.580 ± 0.110 from DESI DR1 PV + full shape (arXiv:2512.03231).
 

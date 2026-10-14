@@ -2,7 +2,7 @@
 
 Scope: what spectroscopic galaxy and quasar clustering measures, the
 estimators, the theory models in current use, covariance, blinding, codes and
-conventions. Snapshot: 2026-10-07.
+conventions. Snapshot: 2026-10-14.
 
 Flags: `[src]` read this session in the cited paper or official page; `[sec]`
 taken from a named secondary source; `[der]` derived here, derivation stated.
@@ -22,7 +22,16 @@ The sound horizon at the baryon drag epoch,
 
     r_d = ∫_{z_d}^∞ c_s(z) / H(z) dz ,   c_s = c / sqrt(3 (1 + 3ρ_b / 4ρ_γ)) ,
 
-is imprinted as a preferred comoving separation. In the standard model the
+is imprinted as a preferred comoving separation (acoustic oscillations of
+the pre-recombination baryon–photon fluid: Peebles & Yu 1970,
+doi:10.1086/150713; Sunyaev & Zel'dovich 1970, doi:10.1007/BF00653471; as
+cited for this in arXiv:2404.03000, Sect. 1 [sec]). Its use as a standard
+ruler for dark energy: Blake & Glazebrook 2003, arXiv:astro-ph/0301632;
+Seo & Eisenstein 2003, arXiv:astro-ph/0307460. First detections: Eisenstein
+et al. 2005, arXiv:astro-ph/0501171; Cole et al. 2005,
+arXiv:astro-ph/0501174. Review: Bassett & Hlozek 2009, arXiv:0910.5224.
+The monopole fixes the dilation D_A²/H and the quadrupole the "warping"
+D_A H (Padmanabhan & White 2008, arXiv:0804.0799) [src]. In the standard model the
 drag epoch is at z_d ≈ 1060 [src], slightly later than photon decoupling at
 z_* ≈ 1090 [src] (DESI Collaboration 2024, arXiv:2404.03002, Sect. 2.1). For
 standard early-time physics DESI uses the approximation
@@ -76,7 +85,11 @@ general relativity f(z) ≈ Ω_m(z)^γ with γ = 0.55 [src] (arXiv:2411.12021,
 Sect. 7.1). The pre-EFT generation of non-linear RSD templates is represented
 by the TNS model, which adds the density–velocity coupling terms missing from
 phenomenological Kaiser-times-damping forms (Taruya et al. 2010,
-arXiv:1006.0699).
+arXiv:1006.0699). Its motivation: the pairwise-velocity PDF is strongly
+non-Gaussian on all scales and a common streaming ansatz implies an
+unphysical one (Scoccimarro 2004, arXiv:astro-ph/0407214) [src]. Review of
+linear RSD and of early β measurements: Hamilton 1997,
+arXiv:astro-ph/9708102.
 
 ### 1.3 The Alcock–Paczynski effect
 <!-- key: the-alcock-paczynski-effect -->
@@ -85,7 +98,9 @@ A wrong fiducial cosmology stretches separations differently along and across
 the line of sight (Alcock & Paczynski 1979, doi:10.1038/281358a0). Any feature
 of known intrinsic isotropy measures F_AP = D_M / D_H. BAO give it through
 α_AP; full-shape fits give it from the whole anisotropic broadband, where it is
-degenerate with RSD unless the RSD model is trusted. Ivanov et al. 2020
+degenerate with RSD unless the RSD model is trusted; that the geometric
+flattening mimics an RSD β was shown by Ballinger, Peacock & Heavens 1996
+(arXiv:astro-ph/9605017) [src]. Ivanov et al. 2020
 (arXiv:1909.05277) argue that the AP contribution is marginal in ΛCDM but
 becomes important in non-minimal models.
 
@@ -104,7 +119,8 @@ Sect. 3).
 <!-- key: scale-dependent-bias-from-primordial-non -->
 
 Local-type PNG adds a bias term growing as 1/k² on large scales (Dalal et al.
-2008, arXiv:0710.4560; Slosar et al. 2008, arXiv:0805.3580). The amplitude is
+2008, arXiv:0710.4560; Matarrese & Verde 2008, arXiv:0801.4826; Slosar et
+al. 2008, arXiv:0805.3580). The amplitude is
 proportional to f_NL b_φ, and b_φ is not measured by the two-point function:
 the common assumption is b_φ = 2 δ_c (b_1 − p), with p = 1 for the universal
 mass function and p = 1.6 for a recent-merger population, the usual choice
@@ -141,7 +157,9 @@ that varies across the survey, the multipoles are estimated by assigning to
 each pair the line of sight of one of its members (Yamamoto et al. 2006,
 arXiv:astro-ph/0505115). That choice makes the estimator a sum of FFTs; the
 spherical-harmonic implementation needs 2ℓ + 1 FFTs for multipole ℓ [src]
-(Hand et al. 2017, arXiv:1704.02357).
+(Hand et al. 2017, arXiv:1704.02357), after the FFT-based estimators of
+Bianchi et al. 2015 (arXiv:1505.05341) and Scoccimarro 2015
+(arXiv:1506.02729, monopole to hexadecapole and the bispectrum) [src].
 
 The single-galaxy line of sight breaks pair symmetry and generates wide-angle
 terms, including odd multipoles (dipole, octopole), which couple to the window
@@ -153,7 +171,9 @@ terms, including odd multipoles (dipole, octopole), which couple to the window
 The measured power spectrum is the true one convolved with the survey window.
 Current practice is a window matrix W that maps theory multipoles to observed
 ones, P_obs = W · P_theory, with wide-angle terms included (Beutler &
-McDonald 2021, arXiv:2106.06324). The same paper shows that deconvolved
+McDonald 2021, arXiv:2106.06324). The fast forward model of masked
+multipoles through Hankel transforms of the window multipoles is Wilson et
+al. 2015 (arXiv:1511.07799) [src]. The same paper shows that deconvolved
 multipoles give the same BAO likelihood as the standard analysis for BOSS.
 
 Because the mean density, and usually the radial selection function, are
@@ -168,7 +188,11 @@ analysis (arXiv:2411.17623).
 ### 2.4 Fibre-assignment weights
 <!-- key: fibre-assignment-weights -->
 
-Missing targets are clustered. The unbiased correction weights each observed
+Missing targets are clustered. Earlier SDSS-era corrections used tile
+overlaps to measure the collided population (Guo, Zehavi & Zheng 2011,
+arXiv:1111.6598) [src]; in mock catalogues fibre collisions bias P_0 and P_2
+beyond sample variance at k ≳ 0.1 h Mpc⁻¹ (Hahn et al. 2016,
+arXiv:1609.01714) [src]. The unbiased correction weights each observed
 pair by the inverse of its probability of being observed over many reruns of
 the targeting algorithm (pairwise inverse probability, PIP), provided every
 pair has non-zero probability (Bianchi & Percival 2017, arXiv:1703.02070);
@@ -184,12 +208,24 @@ Sect. 5.4). See `systematics.md`.
 
 Non-linear bulk flows smear the acoustic peak. Reconstruction estimates the
 displacement field from the smoothed galaxy density and moves galaxies and
-randoms back (Eisenstein et al. 2007, arXiv:astro-ph/0604362). Its first
+randoms back (Eisenstein et al. 2007, arXiv:astro-ph/0604362); the dominant
+non-linear effect it targets is the differential motion of pairs 150 Mpc
+apart (Eisenstein, Seo & White 2006, arXiv:astro-ph/0604361) [src]. Its first
 application to data reduced the non-linear smoothing scale from 8.1 to
 4.4 h⁻¹ Mpc and gave a 1.9% distance to z = 0.35 [src] (arXiv:1202.0090).
 DESI uses the iterative FFT algorithm of Burden et al. 2015
 (arXiv:1504.02591) as implemented in `pyrecon`, with settings fixed in
-Paillas et al. 2024 (arXiv:2404.03005) [src] (arXiv:2503.14738).
+Paillas et al. 2024 (arXiv:2404.03005) [src] (arXiv:2503.14738). DR1
+details [src: arXiv:2404.03000, Sect. 4.2, Table 4]: RecSym convention
+(randoms shifted with the same redshift-space displacement, RSD kept),
+instead of the RecIso of BOSS and eBOSS; the IFFT variant iterates on the
+mesh density, not on particle positions as in eBOSS; Gaussian smoothing
+Σ_sm = 15 h⁻¹ Mpc for BGS, LRG and ELG and 30 h⁻¹ Mpc for QSO, with assumed
+(b, f) = (1.5, 0.68) BGS, (2.0, 0.83) LRG, (1.2, 0.90) ELG, (2.1, 0.93) QSO.
+DR2 keeps these settings, with a 4 h⁻¹ Mpc mesh cell, f = 0.69 for BGS and
+(b, f) = (1.6, 0.86) for the combined LRG+ELG bin; the displacement is
+D(k) = −(i k/k²) S(k) δ_g(k) / [b (1 + β μ²)] in the plane-parallel limit
+[src: arXiv:2503.14742, Sect. IV.2, Eq. 13, Table 2].
 Reconstruction also removes most of the small non-linear shift of the BAO
 scale, which is below 0.3% before reconstruction [src] (arXiv:2404.03002,
 Sect. 2.3). On Euclid-like mocks reconstruction raises the figure of merit on
@@ -213,13 +249,39 @@ arXiv:2608.27830).
 | ShapeFit | α_iso, α_AP, fσ_s8, slope m | same scales as full modelling | Brieden et al. 2021, arXiv:2106.07641 |
 | Full modelling (EFT) | cosmological parameters directly, one-loop EFT with bias, counterterms, stochastic terms | DESI DR1: 0.02 < k < 0.20 h Mpc⁻¹, ℓ = 0, 2 [src] | arXiv:2411.12021 |
 
-Only the lower scale cut of the DESI BAO fit was read this session; the upper
-limit is not given here.
+**DESI DR1 BAO template** (DESI Collaboration 2024, arXiv:2404.03000)
+[src: Sect. 4.3–4.4, Eqs. 5–16, Tables 5–6]:
+
+- P(k, μ) = B(k, μ) P_nw(k) + C(k, μ) P_w(k) + D(k) (Eq. 5). Only the wiggle
+  term is dilated, by α_iso and α_AP (Eqs. 6–7); the smooth term is evaluated
+  at the observed coordinates so that no broadband information leaks in.
+- B = (b_1 + f μ² [1 − s(k)])² F_fog, F_fog = (1 + k²μ²Σ_s²/2)⁻² (Eq. 9);
+  s(k) = 0 for RecSym. C = (b_1 + f μ² [1 − s(k)])² exp[−k²(μ²Σ_∥² +
+  (1 − μ²)Σ_⊥²)/2] (Eq. 10).
+- Broadband D_ℓ(k): cubic-spline basis of width Δ = 2π/r_d ≈ 0.06 h Mpc⁻¹
+  (Eq. 11), replacing the polynomials of SDSS analyses; in ξ, the transformed
+  spline terms plus b_ℓ,0 + b_ℓ,2 (s k_min/2π)² (Eqs. 14–16).
+- Priors: α_iso, α_AP flat in [0.8, 1.2]; Gaussian on Σ_⊥ (σ = 1), Σ_∥ (σ = 2)
+  and Σ_s = 2 ± 2 h⁻¹ Mpc; post-reconstruction centres Σ_⊥ = 3.0 and
+  Σ_∥ = 6.0 (8.0 for BGS); flat b_1 and dβ = f/f_fid ∈ [0.7, 1.3].
+- Ranges: 0.02 < k < 0.30 h Mpc⁻¹ in bins of 0.005; 48 < s < 152 h⁻¹ Mpc
+  (bin edges) in bins of 4. Free parameters: 7 (1D) or 13 (2D) in ξ, 15 or 25
+  in P(k).
+- 2D (ℓ = 0, 2) fits for LRG and ELG2; monopole-only fits for BGS, ELG1 and
+  QSO in DR1. Baseline code desilike with emcee; Barry as independent check.
+- DR2 raised s_min to 60 h⁻¹ Mpc after χ² on blinded data exceeded the mock
+  range at s_min = 50, BAO values unchanged; fits ELG1 and QSO in 2D; keeps
+  BGS 1D; BGS cut moved to M_r < −21.35 (+17% effective volume)
+  [src: arXiv:2503.14742, Sect. V.1].
 
 **EFT of large-scale structure.** The framework is that of Baumann et al.
 2012 (arXiv:1004.2488) and Carrasco et al. 2012 (arXiv:1206.2926); the first
 applications to BOSS were Ivanov et al. 2020 (arXiv:1909.05277) and D'Amico et
-al. 2020 (arXiv:1909.05271). Reviews: Ivanov 2022 (arXiv:2212.08488) for the
+al. 2020 (arXiv:1909.05271). The bias expansion with tidal and velocity
+terms is McDonald & Roy 2009 (arXiv:0902.0991), its EFT form Senatore 2014
+(arXiv:1406.7843), and the first one-loop EFT power spectrum of biased
+tracers in redshift space Perko et al. 2016 (arXiv:1610.09321) [src].
+Reviews: Ivanov 2022 (arXiv:2212.08488) for the
 EFT, Desjacques et al. 2018 (arXiv:1611.09787) for the bias expansion,
 Weinberg et al. 2013 (arXiv:1201.2434) for BAO and RSD as dark-energy probes.
 
@@ -230,7 +292,22 @@ Weinberg et al. 2013 (arXiv:1201.2434) for BAO and RSD as dark-energy probes.
   and PyBird (D'Amico et al. 2021, arXiv:2003.07956) as cross-checks;
 - bias basis (1 + b_1) σ8, b_2 σ8², b_s σ8², with b_3 = 0; flat prior on the
   first, wide Gaussian priors on the others; Gaussian priors on counterterms
-  (α_0, α_2) and stochastic terms (SN_0, SN_2);
+  (α_0, α_2) and stochastic terms (SN_0, SN_2). Priors [src: Sect. 4.7,
+  Table 4]: (1 + b_1)σ8 ~ U[0, 3]; b_2σ8², b_sσ8² ~ N(0, 5²) (Lagrangian
+  basis); α_0, α_2 ~ N(0, 12.5²) h⁻² Mpc², i.e. 50% of the linear signal at
+  k_max; SN_0 ~ N(0, 2²)/n̄_g; SN_2 ~ N(0, 5²) f_sat σ²_1eff/n̄_g. b_s is
+  kept independent of b_1 (no co-evolution assumed); b_3 is fixed because it
+  is degenerate with the counterterms;
+- cosmology priors [src: Table 4]: ω_cdm U[0.01, 0.99], h U[0.2, 1],
+  ln(10¹⁰A_s) U[1.61, 3.91], n_s N(0.9649, 0.042²), ω_b N(0.02218,
+  0.00055²) (the DESI-alone runs used 0.02198 ± 0.00053); ShapeFit
+  parameters α_iso, α_AP U[0.8, 1.2], f/f_fid U[0, 2], m U[−0.8, 0.8];
+- k_min = 0.02 h Mpc⁻¹ is set by trust in the imaging correction; moving
+  k_max changes neither peak nor errors, so the mildly non-linear scales add
+  little [src: Sect. 4.7];
+- sampling: a fourth-order Taylor emulator with NUTS on mocks only; on data,
+  no emulator (Cobaya MCMC) or emulator chains re-evaluated with the full
+  model at every point [src: Sect. 4.7];
 - monopole and quadrupole only: the hexadecapole was left out because it
   increases prior-weight effects for little gain;
 - covariance from 1000 EZmocks, rescaled (Sect. 4);
@@ -245,7 +322,15 @@ is the code behind the independent "East-coast" analyses.
 **ShapeFit.** The classic compression is extended by one parameter, the slope
 m of the linear power spectrum at a pivot, which captures the shape
 information that full modelling uses, in a model-independent way
-(arXiv:2106.07641). The growth parameter it returns is fσ_s8, the amplitude
+(arXiv:2106.07641). As DESI writes it [src: arXiv:2411.12021, Sect. 4.2.3,
+Eq. 10]: P'_lin(k) = P^fid_lin(k) exp{(m/a) tanh[a ln(k/k_p)] + n ln(k/k_p)},
+with k_p = π/r_d^fid ≈ 0.03 h Mpc⁻¹ and a = 0.6; m is the maximum slope at
+the pivot, near the equality scale; DESI varies m with n fixed and reads m as
+m + n. Model behind it [src: Sect. 4.3.1]: velocileptors one-loop LPT with
+IR resummation, or its EPT module with wiggle/no-wiggle resummation; bias
+b_1, b_2, b_s, b_3, three counterterms and three stochastic terms; Eulerian
+biases sampled as reparametrisations of Lagrangian ones so that priors are
+centred on zero Lagrangian bias. The growth parameter it returns is fσ_s8, the amplitude
 at 8 h⁻¹ Mpc in the template units; it equals fσ8 only if r_d = r_d^fid
 [src] (arXiv:2411.12021, Sect. 7.1). DESI states that its fσ8 values "should
 only serve for visualization purposes" and that cosmology must use fσ_s8
@@ -287,7 +372,9 @@ biased; the unbiased estimator multiplies it by
 
 (Hartlap et al. 2007, arXiv:astro-ph/0608064). The propagation of the
 covariance noise to parameter errors adds a further factor (Percival et al.
-2014, arXiv:1312.4841): even 600 mocks can inflate errors by about 20% [src].
+2014, arXiv:1312.4841): even 600 mocks can inflate errors by about 20% [src];
+Dodelson & Schneider 2013 (arXiv:1304.2593) give the variance inflation as
+a factor of order 1 + N_b/N_s [src].
 The exact treatment marginalises over the true covariance and gives a
 multivariate t-distribution (Sellentin & Heavens 2016, arXiv:1511.05969).
 DESI DR1 applied Hartlap and Percival factors and kept a Gaussian likelihood
@@ -299,7 +386,11 @@ jackknife to mimic non-Gaussian terms (Philcox et al. 2020, arXiv:1904.11070);
 on DESI DR1 mocks the projected BAO errors agree with mock covariances to
 within 8% [src] (Rashkovetskyi et al. 2024, arXiv:2404.03007). It is the
 fiducial covariance of the DESI DR1 and DR2 BAO analyses [src]
-(arXiv:2503.14738). For the power spectrum the perturbative calculation is
+(arXiv:2503.14738). DR2 BAO uses analytic covariances only: RascalC in
+configuration space (two-point and disconnected four-point terms, shot-noise
+rescaling calibrated on the data jackknife) and the Gaussian term from
+TheCov in Fourier space, both computed from the data and fixed before
+unblinding [src: arXiv:2503.14742, Sect. IV.4]. For the power spectrum the perturbative calculation is
 Wadekar & Scoccimarro 2020 (arXiv:1910.02914); in DESI DR1 the Fourier-space
 analytic covariance did not reproduce the mock results for full-shape fits,
 which motivated a corrected mock covariance [src] (Forero-Sánchez et al.
@@ -335,6 +426,22 @@ BAO, DR1 full-shape and DR1 f_NL analyses were all blinded at catalogue level
 arXiv:2411.17623). For DR2 the same prescription was reused with a new seed,
 and the true catalogues were first processed in December 2024 [src]
 (arXiv:2503.14738).
+
+DESI DR1 scheme, as run [src: arXiv:2404.03000, Sect. 2.3;
+arXiv:2411.12021, Sect. 2.3]:
+
+| Step | What was done |
+|---|---|
+| Hidden cosmology | (w0, wa, f_NL) drawn from a pre-defined list, stored so as to stay fixed across catalogue versions and never revealed |
+| BAO/AP blind | redshifts shifted coherently by the difference between the drawn (w0, wa) and Λ; α_iso kept within 3% of fiducial for 0.4 < z < 2.1 |
+| RSD blind | density-dependent redshift shifts; shift of f chosen to compensate the change of the monopole, f kept within 10% |
+| f_NL blind | weights mimicking scale-dependent bias, −15 < f_NL < 15, merged with the imaging weight so that omitting it cannot go unnoticed; no effect on BAO |
+| Lyα | a different scheme (see `cosmo-lyman-alpha`) |
+| After unblinding (BAO) | a random-weight error was found and fixed: largest shift −0.7σ in α_AP for LRG at 0.4 < z < 0.6, all others below 0.5σ; only the covariance choice and the LRG+ELG combined bin were changed after unblinding, both decided before |
+
+The DR1 full-shape analysis was the first blinded full-shape analysis of a
+galaxy redshift survey, using the same blind catalogues as DR1 BAO [src:
+arXiv:2411.12021, Sect. 2.3].
 
 A referee expects, before unblinding: fixed scale cuts and priors, a frozen
 systematic budget, mock-recovery tests, and data-split consistency on the
@@ -390,7 +497,8 @@ it, at the price of the nuisance parameters discussed in Sect. 3.
 - "D_A" in BOSS-era papers is sometimes the comoving angular diameter
   distance D_M; check the definition before comparing.
 - fσ8 versus fσ_s8 (Sect. 3).
-- z_eff is a convention; DESI defines it in arXiv:2404.03000, and
+- z_eff is a convention; DESI weights by the squared weighted random density
+  (arXiv:2404.03000, Sect. 2.2) [src], and
   small changes are inconsequential if the α-to-distance conversion is done
   at the same redshift [src] (arXiv:2503.14738).
 - "DESI" in a DR2-era parameter table means BAO only; "DESI (FS+BAO)" is the
@@ -404,8 +512,8 @@ it, at the price of the nuisance parameters discussed in Sect. 3.
 ## Not verified
 <!-- key: not-verified -->
 
-- The upper scale limit of the DESI BAO fit and the reconstruction smoothing
-  scales per tracer.
 - Reference papers for pycorr, pypower, pyrecon and desilike (none found;
   the DESI papers cite repositories).
-- The FKP P_0 values adopted per DESI tracer.
+- The FKP P_0 values per DESI tracer. Read only: P_0(k = 0.14) used for
+  V_eff in DR1, ≈ 9.2, 8.9, 8.4, 2.6, 5.9, 2.9, 5.0 × 10³ (unit not printed) for BGS,
+  LRG1–2, LRG3, ELG1, LRG3+ELG1, ELG2, QSO [src: arXiv:2404.03000, Table 2].

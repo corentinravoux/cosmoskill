@@ -3,7 +3,7 @@
 Scope: headline values of the Hubble constant from the local distance ladder,
 from ladder-independent routes, and from the early-Universe / inverse-ladder
 side, plus derived tension significances.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-13
 
 All H0 values are in km/s/Mpc. Flags: `[src]` read this session in the cited
 paper (abstract unless a section is named); `[sec]` taken from a secondary
@@ -223,7 +223,11 @@ ground-based SPT-3G value alone, 66.66 ± 0.60, is lower than Planck's.
 | NGC 4258 distance, independent refit | 7.558 ± 0.073 (stat) Mpc | arXiv:2609.17684 | [src] |
 | NGC 4258 modulus and total error | 29.397; 1.5% in distance, 0.032 mag | from 7.576 Mpc, errors in quadrature | [der] |
 | Anchor moduli adopted by H0DN | LMC 18.477 ± 0.024; SMC 18.977 ± 0.032; NGC 4258 29.397 ± 0.032 | arXiv:2510.23823 | [src] |
-| Cepheid metallicity term gamma | -0.234 ± 0.052 mag/dex | arXiv:2404.08038 | [src] |
+| Cepheid metallicity term gamma | -0.234 ± 0.052 mag/dex on [Fe/H] (MW, LMC, SMC intercepts); -0.190 ± 0.047 on [O/H] in the global fit | arXiv:2404.08038, Sect. IV.3 and V | [src: Sect. IV.3, V] |
+| SH0ES 2022 best fit | b_W = -3.299 ± 0.015 mag/dex; Z_W = -0.217 ± 0.046 mag/dex; M_H,1^W = -5.894 ± 0.017 mag; M_B^0 = -19.253 ± 0.027 mag; chi^2/dof = 1.03 | arXiv:2112.04510, Sect. 5 | [src: Sect. 5] |
+| Gaia EDR3 residual offset (75 field Cepheids) | -14 ± 6 microarcsec; M_H,1^W = -5.915 ± 0.022 mag | arXiv:2012.08534, Sect. III.1 | [src: Sect. III.1] |
+| TRGB M_F814W (CCHP, NGC 4258) | -4.050 ± 0.028 (stat) ± 0.048 (sys) mag | Jang et al. 2021, arXiv:2008.04181 | [src] |
+| JAGB M_J (LMC + SMC) | -6.20 ± 0.01 (stat) ± 0.04 (sys) mag | Madore & Freedman 2020, arXiv:2005.10792 | [src] |
 | Gaia EDR3 residual parallax offset (cluster Cepheids) | -3 ± 4 microarcsec | arXiv:2208.01045 | [src] |
 | Cepheid M_H,1^W (P = 10 d, solar) | -5.902 ± 0.025 mag (with offset fitted) | arXiv:2208.01045 | [src] |
 | TRGB M_F814W (NGC 4258) | -4.01 ± 0.04 mag | arXiv:1908.05625 | [src] |
@@ -241,9 +245,6 @@ is larger than 73.5 / 67.4 because the DESI FP relation itself returns 76.5.
 ## Not verified
 <!-- key: not-verified -->
 
-- The best-fit Cepheid slope b_W, metallicity term Z_W and SN Ia M_B^0 of the
-  2022 SH0ES baseline: the LaTeX source stores them in macros that the section
-  reader did not expand.
 - An H0 value from cosmic chronometers: no abstract read this session quotes
   one.
 - A CCHP Cepheid-based or combined (TRGB + JAGB + Cepheid) H0 later than

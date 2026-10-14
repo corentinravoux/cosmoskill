@@ -1,7 +1,7 @@
 # Surveys and data — statistics beyond the two-point function
 
 Scope: the data sets, void catalogues, simulation suites and mock challenges on which beyond-two-point analyses have been run or validated.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-13
 
 
 ## 1. Spectroscopic samples used for higher-order clustering
@@ -77,6 +77,15 @@ is cited here only through the analyses that use it.
 All survey-data applications of DSC, WST and MFs read this session use one
 sample: BOSS DR12 CMASS in a narrow range (0.45 or 0.46 < z < 0.57 to 0.60,
 depending on the paper). No application to DESI data was found.
+
+Reference papers of the suites (abstracts read 2026-10-13). AbacusSummit:
+139 boxes of 2 h⁻¹Gpc at particle mass 2 × 10⁹ h⁻¹M_⊙ over 97 cosmologies,
+plus 1883 boxes of 500 h⁻¹Mpc for covariances [src] (Maksimova et al. 2021,
+arXiv:2110.11398). CosmoGridV1: 2500 wCDM grid points with 7 PKDGRAV3
+simulations each, 200 at the fiducial cosmology, with a shell-based baryon
+correction [src] (Kacprzak et al. 2022, arXiv:2209.04662). PT Challenge:
+blinded BOSS-like mocks of a hundred times the BOSS volume [src] (Nishimichi
+et al. 2020, arXiv:2003.08277).
 
 ## 4. Lensing data sets used for higher-order statistics
 <!-- key: lensing-data-sets-used-for-higher-order -->

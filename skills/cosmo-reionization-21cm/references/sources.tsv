@@ -100,3 +100,69 @@ Mertens2017	1711.10834	Mertens	2017	Statistical 21-cm Signal Separation via Gaus
 Cunnington2023	2302.07034	Cunnington	2023	The foreground transfer function for HI intensity mapping signal reconstruction: MeerKLASS and precision cosmology applications	systematics
 Planck2018VI	1807.06209	Planck Collaboration	2018	Planck 2018 results. VI. Cosmological parameters	results
 PlanckNPIPE2020	2007.04997	Planck Collaboration	2020	Planck intermediate results. LVII. Joint Planck LFI and HFI data processing	data
+GunnPeterson1965	doi:10.1086/148444	Gunn	1965	On the Density of Neutral Hydrogen in Intergalactic Space.	foundation
+Wouthuysen1952	doi:10.1086/106661	Wouthuysen	1952	On the excitation mechanism of the 21-cm (radio-frequency) interstellar hydrogen emission line.	foundation
+Field1958	doi:10.1109/JRPROC.1958.286741	Field	1958	Excitation of the Hydrogen 21-CM Line	foundation
+BeckerRH2001	astro-ph/0108097	Becker	2001	Evidence for Reionization at z ~ 6: Detection of a Gunn-Peterson Trough in a z=6.28 Quasar	foundation
+Fan2006	astro-ph/0512082	Fan	2006	Constraining the Evolution of the Ionizing Background and the Epoch of Reionization with z ~ 6 Quasars II: A Sample of 19 Quasars	foundation
+BeckerG2015	1407.4850	Becker	2015	Evidence of patchy hydrogen reionization from an extreme Ly$\alpha$ trough below redshift six	results
+Bosman2022	2108.03699	Bosman	2022	Hydrogen reionisation ends by $z=5.3$: Lyman-$\alpha$ optical depth measured by the XQR-30 sample	results
+Kulkarni2019	1809.06374	Kulkarni	2019	Large Lyman-alpha opacity fluctuations and low CMB tau in models of late reionization with large islands of neutral hydrogen extending to z<5.5	method
+KeatingL2020	1905.12640	Keating	2020	Long troughs in the Lyman-$\alpha$ forest below redshift 6 due to islands of neutral hydrogen	method
+Zaldarriaga1997	astro-ph/9608050	Zaldarriaga	1997	Polarization of the Microwave Background in Reionized Models	foundation
+Kogut2003	astro-ph/0302213	Kogut	2003	Wilkinson Microwave Anisotropy Probe (WMAP) First Year Observations: TE Polarization	foundation
+Lewis2008	0804.3865	Lewis	2008	Cosmological parameters from WMAP 5-year temperature maps	method
+HuHolder2003	astro-ph/0303400	Hu	2003	Model-Independent Reionization Observables in the CMB	method
+Tristram2024	2309.10034	Tristram	2024	Cosmological parameters derived from the final (PR4) Planck data release	results
+MiraldaEscude1998	astro-ph/9708253	Miralda-Escude	1998	Reionization of the Intergalactic Medium and the Damping Wing of the Gunn-Peterson Trough	foundation
+Mortlock2011	1106.6088	Mortlock	2011	A luminous quasar at a redshift of z = 7.085	foundation
+Banados2018	1712.01860	Bañados	2018	An 800-million-solar-mass black hole in a significantly neutral Universe at redshift 7.5	results
+DaviesPCA2018	1801.07679	Davies	2018	Predicting Quasar Continua Near Lyman-$\alpha$ with Principal Component Analysis	method
+Stark2010	1003.5244	Stark	2010	Keck Spectroscopy of Faint 3<z<7 Lyman Break Galaxies: - I. New constraints on cosmic reionisation from the luminosity and redshift-dependent fraction of Lyman-alpha emission	foundation
+Mason2018	1709.05356	Mason	2018	The Universe is Reionizing at z~7: Bayesian Inference of the IGM Neutral Fraction Using Ly$\alpha$ Emission from Galaxies	method
+MalhotraRhoads2004	astro-ph/0407408	Malhotra	2004	Luminosity functions of Lyman-alpha emitters at z=6.5, and z=5.7: evidence against reionization at z=6	foundation
+Mesinger2010dark	0910.4161	Mesinger	2010	Was reionization complete by z ~ 5-6?	foundation
+McGreer2011	1101.3314	McGreer	2011	The first (nearly) model-independent constraint on the neutral hydrogen fraction at z~5--6	foundation
+McGreer2015	1411.5375	McGreer	2015	Model-independent evidence in favor of an end to reionization by z~6	results
+Madau1999	astro-ph/9809058	Madau	1999	Radiative Transfer in a Clumpy Universe: III. The Nature of Cosmological Ionizing Sources	foundation
+Robertson2015	1502.02024	Robertson	2015	Cosmic Reionization and Early Star-Forming Galaxies: A Joint Analysis of New Constraints from Planck and Hubble Space Telescope	results
+Pawlik2009	0807.3963	Pawlik	2009	Keeping the Universe ionised: Photo-heating and the clumping factor of the high-redshift intergalactic medium	method
+Prochaska2009	0910.0009	Prochaska	2009	A Direct Measurement of the IGM Opacity to HI Ionizing Photons	foundation
+Worseck2014	1402.4154	Worseck	2014	The Giant Gemini GMOS survey of z>4.4 quasars - I. Measuring the mean free path across cosmic time	results
+BeckerG2021	2103.16610	Becker	2021	The mean free path of ionizing photons at 5 < z < 6: evidence for rapid evolution near reionization	results
+GruzinovHu1998	astro-ph/9803188	Gruzinov	1998	Secondary CMB anisotropies in a universe reionized in patches	foundation
+Knox1998	astro-ph/9805012	Knox	1998	The Impact of Inhomogeneous Reionization on Cosmic Microwave Background Anisotropy	foundation
+Zahn2012	1111.6386	Zahn	2012	Cosmic microwave background constraints on the duration and timing of reionization from the South Pole Telescope	results
+Battaglia2013	1211.2832	Battaglia	2013	Reionization on Large Scales III: Predictions for Low-ell Cosmic Microwave Background Polarization and High-ell Kinetic Sunyaev-Zel'dovich Observables	method
+SmithFerraro2017	1607.01769	Smith	2017	Detecting patchy reionization in the CMB	method
+Madau1997	astro-ph/9608010	Madau	1997	21-cm Tomography of the Intergalactic Medium at High Redshift	foundation
+Furlanetto2006	astro-ph/0608032	Furlanetto	2006	Cosmology at Low Frequencies: The 21 cm Transition and the High-Redshift Universe	review
+PritchardLoeb2012	1109.6012	Pritchard	2012	21-cm cosmology	review
+Hirata2006	astro-ph/0507102	Hirata	2006	Wouthuysen-Field coupling strength and application to high-redshift 21 cm radiation	method
+Shaver1999	astro-ph/9901320	Shaver	1999	Can the reionization epoch be detected as a global signature in the cosmic background?	foundation
+PritchardLoeb2010	1005.4057	Pritchard	2010	Constraining the unexplored period between reionization and the dark ages with observations of the global 21 cm signal	method
+BowmanRogers2010	1209.1117	Bowman	2010	A lower limit of dz > 0.06 for the duration of the reionization epoch	results
+Datta2010	1005.4071	Datta	2010	Bright Source Subtraction Requirements For Redshifted 21 cm Measurements	foundation
+Parsons2012	1204.4749	Parsons	2012	A Per-Baseline, Delay-Spectrum Technique for Accessing the 21cm Cosmic Reionization Signature	foundation
+Morales2012	1202.3830	Morales	2012	Four Fundamental Foreground Power Spectrum Shapes for 21 cm Cosmology Observations	foundation
+LiuParsonsTrott2014	1404.2596	Liu	2014	The Epoch of Reionization Window: I. Mathematical Formalism	method
+MoralesHewitt2004	astro-ph/0312437	Morales	2004	Toward Epoch of Reionization Measurements with Wide-Field Radio Observations	foundation
+Zaldarriaga2004	astro-ph/0311514	Zaldarriaga	2004	21 Centimeter Fluctuations from Cosmic Gas at High Redshifts	foundation
+Furlanetto2004	astro-ph/0403697	Furlanetto	2004	The Growth of HII Regions During Reionization	foundation
+MesingerFurlanetto2007	0704.0946	Mesinger	2007	Efficient Simulations of Early Structure Formation and Reionization	foundation
+Chang2008	0709.3672	Chang	2008	Baryon Acoustic Oscillation Intensity Mapping as a Test of Dark Energy	foundation
+Chang2010	1007.3709	Chang	2010	Hydrogen 21-cm Intensity Mapping at redshift 0.8	foundation
+Switzer2013	1304.3712	Switzer	2013	Determination of z~0.8 neutral hydrogen fluctuations using the 21 cm intensity mapping auto-correlation	results
+Paul2023	2301.11943	Paul	2023	A direct detection of neutral hydrogen intensity mapping on Mpc scales at $z\approx 0.32$ and $z\approx 0.44$	results
+Anderson2018	1710.00424	Anderson	2018	Lack of clustering in low-redshift 21-cm intensity maps cross-correlated with 2dF galaxy densities	results
+Righi2008	0805.2174	Righi	2008	Carbon monoxide line emission as a CMB foreground: tomography of the star-forming universe with different spectral resolutions	foundation
+Lidz2011	1104.4800	Lidz	2011	Intensity Mapping with Carbon Monoxide Emission Lines and the Redshifted 21 cm Line	foundation
+Gong2012	1107.3553	Gong	2012	Intensity Mapping of the [CII] Fine Structure Line during the Epoch of Reionization	foundation
+Kovetz2017	1709.09066	Kovetz	2017	Line-Intensity Mapping: 2017 Status Report	review
+KeatingCOPSS2016	1605.03971	Keating	2016	COPSS II: The Molecular Gas Content of Ten Million Cubic Megaparsecs at $z\sim3$	results
+KeatingmmIME2020	2008.08087	Keating	2020	An Intensity Mapping Detection of Aggregate CO Line Emission at 3 mm	results
+Pullen2018	1707.06172	Pullen	2018	Search for CII Emission on Cosmological Scales at Redshift Z~2.6	results
+FanReview2023	2212.06907	Fan	2023	Quasars and the Intergalactic Medium at Cosmic Dawn	review
+Ali2015	1502.06016	Ali	2015	PAPER-64 Constraints on Reionization: The 21cm Power Spectrum at z=8.4	results
+Mertens2020	2002.07196	Mertens	2020	Improved upper limits on the 21-cm signal power spectrum of neutral hydrogen at $\boldsymbol{z \approx 9.1}$ from LOFAR	results
+Trott2020	2002.02575	Trott	2020	Deep multi-redshift limits on Epoch of Reionisation 21cm Power Spectra from Four Seasons of Murchison Widefield Array Observations	results

@@ -5,7 +5,7 @@ description: Use when reviewing, planning or fact-checking statistics beyond the
 
 # Beyond two-point statistics — expert reference
 
-Snapshot 2026-10-07. Numbers carry provenance flags ([src] / [sec] / [der]);
+Snapshot 2026-10-13. Numbers carry provenance flags ([src] / [sec] / [der]);
 re-verify against the cited paper before a number enters a manuscript.
 
 ## File map
@@ -24,9 +24,9 @@ re-verify against the cited paper before a number enters a manuscript.
 <!-- key: what-an-expert-holds-in-mind -->
 
 - The DESI bispectrum is DR1 only. It tightens the amplitude, raises σ8 by 1.1σ and weakens the w0wa preference: 2.8σ with CMB, 3.1σ with CMB and DES-Dovekie (arXiv:2606.23936).
-- The gain from B0 depends on the pipeline: 4–10% (arXiv:2610.01836), about 10% (arXiv:2507.13433), 20–26% (arXiv:2603.19356, arXiv:2606.23936).
+- The gain from B0 depends on the pipeline and the baseline: 4–10% (arXiv:2610.01836), about 10% (arXiv:2507.13433), 20–26% (arXiv:2603.19356, arXiv:2606.23936); the 26% is not at fixed power-spectrum data vector.
 - Parity-odd 4PCF: 7.1σ in BOSS against Patchy mocks (arXiv:2206.03625), 1.4σ with N-body mocks (arXiv:2401.09523); in DESI DR1 the auto analysis gives 4–10σ and the cross-patch analysis nothing (arXiv:2508.09133). No detection.
-- Void–galaxy AP/RSD has no DESI result; the reference is SDSS, Ω_m = 0.337 +0.026/−0.029 (arXiv:2205.06258). Finder response to AP and velocity-profile mismatch were quantified afterwards (arXiv:2407.02699, arXiv:2206.14120).
+- Void–galaxy AP/RSD has no DESI result; the reference is SDSS, Ω_m = 0.337 +0.026/−0.029 (arXiv:2205.06258). Finder response to AP and velocity-profile mismatch were quantified afterwards (arXiv:2407.02699, arXiv:2206.14120); the SDSS budgets cover the first through their fiducial-cosmology term.
 - Mock calibration moves the BOSS void f/b from 0.540 ± 0.091 to 0.347 ± 0.023 (arXiv:2007.07895).
 - Void–forest correlation: 8σ, β = 1.21 ± 0.18 at z = 2.49; this is the forest β, not f/b (arXiv:2203.11045).
 - Density split, wavelet scattering and Minkowski functionals on data all use BOSS CMASS, AbacusSummit and an HOD: σ8 = 0.792 ± 0.034 and 0.783 ± 0.026 (arXiv:2309.16541, arXiv:2501.01698). Their agreement is not independent confirmation.
@@ -81,7 +81,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; open 5k; methods 9k; results 8k; surveys 4k; systematics 6k.
+Sizes, in thousands of tokens: L1 2k; open 6k; methods 19k; results 9k; surveys 4k; systematics 12k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

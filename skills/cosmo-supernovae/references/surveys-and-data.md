@@ -3,7 +3,7 @@
 Scope: every SN survey, compilation and data release that matters for the
 Hubble diagram, in the order past, current, planned; plus the non-Ia and
 lensed cross-check samples.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-13
 
 Flags: `[src]` read in the cited paper this session; `[sec]` from a named
 secondary source; `[der]` derived here. Forecast rows say **forecast**.
@@ -39,7 +39,7 @@ facts follow and recur throughout the literature:
 | High-Z Supernova Search Team | Multi-telescope search and follow-up | 16 high-z (10 new at 0.16 < z < 0.62) + 34 nearby `[src]` | Discovery of acceleration | Riess et al. 1998, arXiv:astro-ph/9805201 |
 | Supernova Cosmology Project | Multi-telescope; low-z from Calán/Tololo | 42 SNe at 0.18 < z < 0.83 `[src]` | Discovery of acceleration | Perlmutter et al. 1999, arXiv:astro-ph/9812133 |
 | SNLS | CFHT MegaCam, four 1 deg² fields, 4 bands (as described for the SNLS samples) | 3-year joint sample: 472 SNe = 123 low-z + 93 SDSS + 242 SNLS + 14 HST `[src]` | Introduced the systematics covariance matrix; calibration-dominated | Conley et al. 2011, arXiv:1104.1443 |
-| SDSS-II SN + SNLS (JLA) | SDSS 2.5 m (0.05 < z < 0.4) + SNLS (0.2 < z < 1) + low-z | 740 SNe `[sec, count from arXiv:1510.05954]` | Joint recalibration, SALT2 retrained | Betoule et al. 2014, arXiv:1401.4064 |
+| SDSS-II SN + SNLS (JLA) | SDSS 2.5 m (0.05 < z < 0.4) + SNLS (0.2 < z < 1) + low-z | 740 SNe, 613 of them from SDSS-II and SNLS `[src: Sects. 2, 3.1]` | Joint recalibration, SALT2 retrained | Betoule et al. 2014, arXiv:1401.4064 |
 | Pan-STARRS1 Medium Deep | PS1 1.8 m, griz | 365 spectroscopically confirmed; 279 used at 0.03 < z < 0.68 `[src]` | Core of Pantheon | arXiv:1710.00845 |
 | Foundation | PS1, griz, untargeted follow-up of z < 0.1 SNe | DR1: 225 SNe, 180 pass cosmology cuts; intrinsic scatter 0.111 mag `[src]` | First low-z sample on a well-calibrated survey system | Foley et al. 2018, arXiv:1711.02474 |
 | CfA3, CfA4, CSP-I | Dedicated low-z follow-up of mostly targeted discoveries | Together with Foundation: 194 SNe at 0.025 < z < 0.1 in the DES-SN5YR anchor `[src]` | The "historical low-z" set | as listed in arXiv:2609.05053 |
@@ -50,14 +50,15 @@ facts follow and recur throughout the literature:
 
 | Compilation | Year | Content | Method | Status on 2026-10-07 | Reference |
 |---|---|---|---|---|---|
+| Union and its 2012 extension | 2008, 2012 | 414 SNe reduced to 307 by cuts `[src]`; the 2012 analysis adds 14 HST cluster SNe, ten beyond z = 1 `[src]` | One blind procedure for heterogeneous subsamples, with outlier rejection | Superseded; ancestors of Union3 | Kowalski et al. 2008, arXiv:0804.4142; Suzuki et al. 2012, arXiv:1105.3470 |
 | JLA | 2014 | 740 SNe, SDSS-II + SNLS3 + low-z + HST | SALT2, binned-smoothed covariance | Superseded | arXiv:1401.4064 |
 | Pantheon | 2018 | 1048 SNe, 0.01 < z < 2.3 `[src]` | SALT2 + BBC, Supercal | Superseded by Pantheon+ | arXiv:1710.00845 |
 | DES-SN3YR | 2019 | 207 DES (spectroscopic) + 122 low-z = 329 `[src]` | SALT2 + BBC | Superseded | Abbott et al. (DES) 2019, arXiv:1811.02374 |
 | Pantheon+ | 2022 | 1701 light curves of 1550 SNe from 18 surveys, 0.001 < z < 2.26 `[src]`; includes the SH0ES calibrators | SALT2 (retrained), BBC, Fragilistic, unbinned covariance | Still the standard for distance-ladder `H0`; its host masses and calibration are updated in Unite | Scolnic et al. 2022, arXiv:2112.03863; Brout et al. 2022, arXiv:2202.04077 |
 | Union3 | 2023 | 2087 SNe from 24 datasets `[src]` | SALT3 + UNITY1.5 | Superseded by Union3.1 | Rubin et al. 2023, arXiv:2311.12098 |
 | DES-SN5YR (= DESY5) | 2024 | 1635 DES photometric (0.10 < z < 1.13) + 194 low-z (0.025 < z < 0.10), "for a total of 1829 SNe" (Sect. 2.1) `[src]` | SALT3 + BBC, SuperNNova, BEAMS | Superseded by DES-Dovekie | DES Collaboration 2024, arXiv:2401.02929 |
-| DES-Dovekie | 2025 | ~1600 DES + ~200 low-z; effective N = 1684 `[src]` | Dovekie calibration, SALT3.DOV, corrected colour-law implementation | Current DES SN sample | Popovic et al. 2025, arXiv:2511.07517 |
-| Union3.1 | 2026 | ~2000 SNe of Union3 with host properties remeasured from DESI Legacy Imaging Surveys photometry with Prospector `[src]` | UNITY1.5; two-population variant UNITY1.8 | Current Union sample | Hoyt et al. 2026, arXiv:2601.19424; Rubin et al. 2026, arXiv:2601.19854 |
+| DES-Dovekie | 2025 | 1623 DES + 197 low-z = 1820 `[src: Sect. 8.2, Table 5]`; effective N = 1684 `[src]` | Dovekie calibration, SALT3.DOV, corrected colour-law implementation | Current DES SN sample | Popovic et al. 2025, arXiv:2511.07517 |
+| Union3.1 | 2026 | ~2000 SNe of Union3 with host properties remeasured from DESI Legacy Imaging Surveys photometry with Prospector `[src]` | UNITY1.7 `[src: arXiv:2601.19424 Sect. VI]`; two-population variant UNITY1.8 | Current Union sample | Hoyt et al. 2026, arXiv:2601.19424; Rubin et al. 2026, arXiv:2601.19854 |
 | Unite | 2026 | 2884 likely SNe Ia: Pantheon+ plus DES, Dovekie calibration, host masses remeasured for > 98 % `[src]` | SALT3 + BBC; delensing term by default | Newest and largest; arXiv v2 of September 2026, journal status not checked | arXiv:2609.05053; Lee et al. 2026, arXiv:2609.05321 |
 
 Details worth remembering:
@@ -93,7 +94,7 @@ Details worth remembering:
 | ZTF scene-modelling reprocessing | Scene-modelling photometry | Stellar repeatability better than 1 %; a flux-dependent PSF distortion ("pocket effect") gives non-linearities of a few percent and affects all ZTF light-curve releases; SMP vs forced photometry: colour shift 10 mmag, absolute calibration shift 90 mmag `[src]` | Reprocessing "in progress" in September 2025. No DR2.5 release paper was found by arXiv and INSPIRE title and abstract searches on 2026-10-07 | Lacroix et al. 2025, arXiv:2509.04073 |
 | DEBASS | DECam imaging of low-z SNe, WiFeS host spectroscopy; same instrument as DES | > 400 spectroscopically confirmed SNe Ia at 0.01 < z < 0.08 (2021 to mid-2025); early release of 77 SNe in the DES footprint; MAD of residuals ~0.10 mag before bias corrections `[src]` | Preliminary; intended to replace the historical DES anchor | Sherman et al. 2025, arXiv:2508.10878; Acevedo et al. 2025, arXiv:2508.10877 |
 | TITAN (ATLAS) | Four ATLAS telescopes, all sky | > 10 000 spectroscopically confirmed SNe Ia observed by ATLAS, "thousands" cosmology-grade; calibration paper finds initial offsets ~40 mmag vs DES Y6 stars, reduced to an estimated 5–10 mmag systematic `[src]` | Calibration and host papers out; no Hubble-diagram cosmology found in this session's searches | Marlin et al. 2025, arXiv:2512.21903; Murakami et al. 2026, arXiv:2604.16597 |
-| Young Supernova Experiment | PS1 + ZTF | Named by the Unite authors among the low-z samples "expected to produce new low-z results in the near future" `[sec, arXiv:2609.05053]` | Not verified further | — |
+| Young Supernova Experiment | PS1 griz + ZTF gr | DR1: 1975 transients observed from 24 November 2019 to 20 December 2021, redshifts to ~0.5; a photometric classifier labels 1048 of 1483 unclassified events as SNe Ia `[src]`. Named by the Unite authors among the low-z samples "expected to produce new low-z results in the near future" `[sec, arXiv:2609.05053]` | No cosmology sample found | Aleo et al. 2023, arXiv:2211.07128 |
 | JWST high-z SNe Ia | NIRCam / NIRSpec | Spectroscopically confirmed SNe Ia at z > 2: SN 2023adsy and SN 2023aeax (z = 2.15); the latter's distance agrees with LCDM at ~0.1 sigma; "no definitive evolution" `[src]` | Evolution test, not a cosmology sample | Pierel et al. 2024, arXiv:2411.11953 |
 
 Roles of the new anchors:
@@ -157,6 +158,14 @@ and either the corrected Pantheon+ or Unite.
 | Tailored expanding photosphere method (radiative-transfer emulator), no distance ladder | 10 SNe II at 0.01 < z < 0.04, literature data | `H0 = 74.9 ± 1.9 km/s/Mpc` (stat) `[src]` | Vogl et al. 2024, arXiv:2411.04968 |
 | Hierarchical Bayesian SCM with an H-alpha term, SNfactory spectrophotometry | Hubble-flow SNe II-P | Scatter reduced from 0.28 to 0.18 mag; `H0 = 70.6 (+4.5/-4.3) km/s/Mpc` (stat only) `[src]` | Holas et al. 2026, arXiv:2609.39804 |
 
+The standardised candle method goes back to Hamuy & Pinto 2002
+(arXiv:astro-ph/0201279): plateau luminosity correlates with ejecta
+velocity, which cuts the Hubble-diagram scatter from ~1 mag to 0.4 (V) and
+0.3 (I) mag, and to 0.2 mag for eight objects in the Hubble flow `[src]`.
+The expanding photosphere method, which needs no calibrator, goes back to
+Kirshner & Kwan 1974 (doi:10.1086/153123), who assumed blackbody emission
+for two SNe; dilution factors from non-LTE models came later
+`[sec, arXiv:2411.04968 Sect. 1]`.
 These are `H0` cross-checks that replace SNe Ia in the ladder or bypass it;
 the interpretation belongs to `cosmo-distance-ladder-h0`.
 
@@ -170,6 +179,13 @@ the interpretation belongs to `cosmo-distance-ladder-h0`.
 | SN Encore | SN Ia, z = 1.95, cluster lens, JWST | `66.9 (+11.2/-8.1)` `[src]`; a second lensed SN ("Requiem") in the same host has a further image expected within a few years | Pierel et al. 2025, arXiv:2509.12301 |
 | SN 2025wny | Superluminous SN-I, z = 2.015, galaxy-scale lens | `66.7 (+7.6/-6.3)` for isothermal profiles; `70.8 (+8.2/-6.1)` with free density slopes `[src]` | Mörtsell et al. 2026, arXiv:2608.28430 |
 
+Discovery papers: four images of one supernova around a z = 0.54 galaxy of
+the cluster MACS J1149.6+2223, host at z = 1.49, a later appearance
+elsewhere in the cluster predicted (Kelly et al. 2015,
+arXiv:1411.6009, which credits the idea to Refsdal 1964,
+doi:10.1093/mnras/128.4.307 `[sec]`); iPTF16geu, a multiply imaged SN Ia
+at z = 0.409, four images, magnified more than fifty times by a galaxy
+(Goobar et al. 2017, arXiv:1611.00014) `[src]`.
 Review: Suyu et al. 2024 (arXiv:2301.07729). All four values assume flat
 LCDM-like distance ratios and are dominated by lens-model uncertainty; none
 discriminates between 67 and 73. Detail in `cosmo-distance-ladder-h0` and
@@ -179,7 +195,11 @@ discriminates between 67 and 73. Detail in `cosmo-distance-ladder-h0` and
 <!-- key: siblings -->
 
 Two or more SNe Ia in one host test standardisation without a cosmological
-model. DES: 8 galaxies with two likely SNe Ia; apart from stretch, siblings
+model. Burns et al. 2020 (arXiv:2004.13069), from 12 galaxies hosting two or
+more SNe Ia, find distances consistent to 3 % once observational errors are
+accounted for `[src]`. One ZTF pair 0.6 kpc apart, differing by 2 mag at
+peak, gives `beta = 3.5 ± 0.3` independently of cosmology and of selection
+`[src]` (Biswas et al. 2021, arXiv:2103.16978). DES: 8 galaxies with two likely SNe Ia; apart from stretch, siblings
 agree no better than random pairs, and at 2.8 sigma at least half of the
 intrinsic scatter does not come from shared host properties `[src]` (Scolnic
 et al. 2020, arXiv:2002.00974). ZTF DR2: 25 pairs give `alpha = 0.218 ±

@@ -1,6 +1,6 @@
 # results — cosmo-inflation-primordial
 
-Snapshot: 2026-10-07
+Snapshot: 2026-10-14
 
 Scope: current measurements of the primordial scalar spectrum (n_s, running, binned P(k)), the tensor-to-scalar ratio, primordial non-Gaussianity, isocurvature, spatial curvature, primordial features and cosmic birefringence, with the history of each number.
 
@@ -41,6 +41,7 @@ Definition: ln P_R(k) = ln A_s + [n_s − 1 + ½ (dn_s/dln k) ln(k/k_*)] ln(k/k_
 | dn_s/dln k | Data | Citation | Flag |
 |---|---|---|---|
 | −0.0041 ± 0.0067 | Planck 2018 CMB + lensing + BAO | arXiv:1807.06211, as quoted in arXiv:2503.14454 section 4.1 | [sec] |
+| −0.0045 ± 0.0067 | Planck 2018 TT,TE,EE + lowE + lensing (no BAO); with running of running free: 0.002 ± 0.010 and d²n_s/dln k² = 0.010 ± 0.013 (TT alone 0.013 ± 0.012 and 0.022 ± 0.012) | arXiv:1807.06211 [src: Sect. 3.3, Eqs. 15–18] | [src] |
 | 0.034 ± 0.022 | ACT DR6 alone | arXiv:2503.14454 | [src] |
 | 0.0060 ± 0.0055 | P-ACT | arXiv:2503.14454 | [src] |
 | 0.0062 ± 0.0052 | P-ACT-LB | arXiv:2503.14454 (abstract and section 4.1) | [src] |
@@ -143,7 +144,7 @@ Every entry constrains the product f_NL · b_φ. The column "p" gives the assume
 | −31 to +70 (95%) | same | 1.6 for quasars | arXiv:0805.3580 | [src] |
 | −51 to +21 (95%) | eBOSS DR14 quasars, redshift-weighted P(k) | 1 | Castorina et al. 2019, arXiv:1904.08859 | [src] |
 | −81 to +26 (95%) | same | lower response | arXiv:1904.08859 | [src] |
-| −12 ± 21 | eBOSS DR16, 343,708 quasars, 0.8 < z < 2.2, 4808 deg² | (not in abstract) | Mueller et al. 2021, arXiv:2106.13725 | [src] |
+| −12 ± 21 | eBOSS DR16, 343,708 quasars, 0.8 < z < 2.2, 4808 deg² | 1.6 (default); p = 1 gives −18 to 11 at 68% [src: Sect. 8.1] | Mueller et al. 2021, arXiv:2106.13725 | [src] |
 | −4 to +27 | eBOSS DR16 quasars, optimal weights | 1 | Cagliari et al. 2023, arXiv:2309.15814 | [src] |
 | −23 to +21 | same | lower response | arXiv:2309.15814 | [src] |
 | 16 ± 16 down to 230 ± 226 | BOSS DR12 galaxies, one data vector, different b_φ(b_1) relations | varied | Barreira 2022, arXiv:2205.05673 | [src] |
@@ -332,9 +333,9 @@ A value in the left column must not be quoted as current.
 ## 12. Not verified
 <!-- key: not-verified -->
 
-- The Planck 2018 values of the running (−0.0041 ± 0.0067 is quoted through ACT) and of the running of the running were not read in the Planck paper.
+- The Planck 2018 running with BAO (−0.0041 ± 0.0067, quoted through ACT) was not read in the Planck paper; the value without BAO and the running of the running were read (section 2).
 - Planck PR4 (HiLLiPoP, CamSpec) values of n_s were not read; they are in `cosmo-cmb`.
-- The b_φ assumption behind f_NL^local = −0.1 ± 7.4 in arXiv:2512.04266 and behind the eBOSS DR16 value −12 ± 21 was not read in the papers.
+- The b_φ assumption behind f_NL^local = −0.1 ± 7.4 in arXiv:2512.04266 was not read in the paper (the eBOSS DR16 one, p = 1.6, was).
 - ACT limits on fully correlated isocurvature and on the isocurvature spectral index were not read.
 - SPT-3G D1 constraints on Ω_K, on the running and on isocurvature were not found in a search of the paper source (arXiv:2506.20707) and are not given.
 - Planck 2018 feature-amplitude limits (per template) were not read; only the abstract statement is used.

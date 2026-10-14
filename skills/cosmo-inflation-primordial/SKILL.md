@@ -5,7 +5,7 @@ description: Use when reviewing, planning or fact-checking inflation and primord
 
 # Inflation and primordial physics — expert reference
 
-Snapshot 2026-10-07. Numbers carry provenance flags ([src] / [sec] / [der]);
+Snapshot 2026-10-14. Numbers carry provenance flags ([src] / [sec] / [der]);
 re-verify against the cited paper before a number enters a manuscript.
 
 ## File map
@@ -28,7 +28,7 @@ re-verify against the cited paper before a number enters a manuscript.
 - Starobinsky inflation sits on the 2σ edge of P-ACT-LB + BK18 for N = 50–60, in ΛCDM (arXiv:2503.14454); refined predictions stay within 2σ for N ≳ 58 (arXiv:2504.20757).
 - Running: 0.0062 ± 0.0052 (arXiv:2503.14454). The eBOSS Lyα value −0.010 ± 0.004 is superseded (arXiv:2601.21432).
 - r_0.05 < 0.036 at 95%, σ(r) = 0.009 (BK18, arXiv:2110.00483) is still the tightest B-mode limit; SPT-3G's independent r < 0.25 is not competitive (arXiv:2505.02827); 0.032 (arXiv:2112.07961) and 0.038 (ACT) reuse it.
-- Forecasts: SO with six SATs, σ(r) = 1.2 × 10⁻³ (arXiv:2512.15833); LiteBIRD after reformation, δr < 0.002 (arXiv:2607.25285).
+- Forecasts: SO with six SATs, σ(r) = 1.2 × 10⁻³ with 70% delensing, 1.4 × 10⁻³ at 50% (arXiv:2512.15833); LiteBIRD after reformation, δr < 0.002 (arXiv:2607.25285).
 - CMB f_NL: local −0.9 ± 5.1, equilateral −26 ± 47, orthogonal −38 ± 24 (Planck 2018, arXiv:1905.05697); PR4 gives −0.1 ± 5.0, 6 ± 46, −8 ± 21 (arXiv:2504.00884).
 - Galaxy surveys measure f_NL·b_φ. DESI DR1: −3.6 ± 9 (p = 1.6 for quasars) or +3.5 (p = 1) (arXiv:2411.17623); one BOSS data vector gives σ from 16 to 226 (arXiv:2205.05673). The ±4.1 "CMB + DESI" figure is an external bispectrum reanalysis (arXiv:2512.04266).
 - SPHEREx launched 11 March 2025; Δf_NL < 0.5 is a requirement assuming universality (arXiv:2511.02985). Euclid forecasts 2.2 (arXiv:2507.15819).
@@ -41,8 +41,8 @@ re-verify against the cited paper before a number enters a manuscript.
 <!-- key: systematics-a-referee-checks -->
 
 - n_s: CMB combination, arXiv version, BAO, model.
-- r: dust complexity (bias up to 0.03, arXiv:2508.00073), beam leakage (10⁻³, arXiv:2608.25016), delensing, ℓ_knee.
-- CMB f_NL: lensing–ISW subtraction, simulations.
+- r: dust complexity (bias up to 0.03, arXiv:2508.00073), beam leakage (10⁻³, arXiv:2608.25016), point sources (1–3 × 10⁻³, arXiv:2110.00483), delensing, ℓ_knee.
+- CMB f_NL: lensing–ISW subtraction (+5 on local), simulations.
 - Galaxy f_NL: b_φ prior, imaging weights, integral constraints; bispectrum bias priors.
 - Ω_K: likelihood, discordant data, dark-energy model.
 - Features: global significance, varied cosmology.
@@ -85,7 +85,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; open 7k; methods 8k; results 12k; surveys 5k; systematics 6k.
+Sizes, in thousands of tokens: L1 2k; open 7k; methods 11k; results 12k; surveys 5k; systematics 12k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

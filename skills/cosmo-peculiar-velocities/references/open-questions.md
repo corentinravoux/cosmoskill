@@ -2,7 +2,7 @@
 
 Scope: live controversies with both sides cited, internal tensions between analyses of the same
 data, method debates, forecasts (labelled), what the next data decide, and the stale claims that
-still circulate. Snapshot: 2026-10-07
+still circulate. Snapshot: 2026-10-14
 
 Two controversies are already summarised in
 `pv-surveys.md`
@@ -258,8 +258,8 @@ Reading the table.
 ## Not verified
 <!-- key: not-verified -->
 
-- Bulk-flow amplitudes of Peery et al. 2018 and Duangchan et al. 2025 (only the significances were
-  read).
+- Bulk-flow amplitude of Duangchan et al. 2025 (only the significance was read); Peery et al. 2018:
+  282 km/s at 150 h⁻¹Mpc, r⁻² weights, 2.2 % probability in ΛCDM [src: arXiv:1808.07772, Table 1].
 - Whether a published rebuttal to Nusser & Tully 2026 or to Whitford et al. 2023 by the MV authors
   exists beyond arXiv:2512.03168.
 - Any Taipan status after the note in `pv-surveys.md`.

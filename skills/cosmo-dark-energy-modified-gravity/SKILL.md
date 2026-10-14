@@ -5,7 +5,7 @@ description: Use when reviewing, planning or fact-checking dark-energy or modifi
 
 # Dark energy and modified gravity — expert reference
 
-Snapshot 2026-10-07. Numbers carry provenance flags ([src] / [sec] / [der]);
+Snapshot 2026-10-14. Numbers carry provenance flags ([src] / [sec] / [der]);
 re-verify against the cited paper before a number enters a manuscript.
 
 ## File map
@@ -35,8 +35,8 @@ re-verify against the cited paper before a number enters a manuscript.
   `z_p = 0.31` (arXiv:2503.14738, arXiv:2404.08056).
 - Statistics can disagree in sign: Pantheon+ with DR2 gives 2.8σ but
   `ln B = −0.66 ± 0.44` (arXiv:2503.14743).
-- Compressed CMB priors give 2.4σ; lensing adds the rest
-  (arXiv:2503.14738). `tau ~ 0.09` would leave ≃1.5σ (arXiv:2504.16932).
+- Compressed CMB priors give 2.4σ, primary CMB 2.7σ, lensing 3.1σ
+  (arXiv:2503.14738). A `tau = 0.09` prior leaves 1.4σ (arXiv:2504.16932).
 - The BAO + CMB tension lies in directions that violate the null energy
   condition (arXiv:2412.13894). Thawing models beat Λ only with supernovae
   and lose to CPL (arXiv:2503.14743, arXiv:2512.20832).
@@ -110,7 +110,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; open 8k; methods 8k; results 8k; surveys 4k; systematics 6k.
+Sizes, in thousands of tokens: L1 2k; open 8k; methods 11k; results 10k; surveys 4k; systematics 10k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

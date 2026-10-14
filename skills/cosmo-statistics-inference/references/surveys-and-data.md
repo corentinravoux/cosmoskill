@@ -1,7 +1,7 @@
 # Statistics and inference — how each collaboration does it
 
 Scope: the statistical practice (likelihood, covariance, blinding, sampler, point estimate, tension metric, model comparison) of the major collaborations in their latest analyses, with citations. The measurements themselves are in the probe skills.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-14
 
 Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named secondary source; `[der]` derived here, derivation stated. Unless a row says otherwise, every entry of §1 is `[src]` from the paper named in its last column.
 
@@ -31,7 +31,7 @@ Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named 
 
 **Blinding** [src]. Catalogue level, "using the same prescription as was applied to DR1" (Andrade et al. 2024, arXiv:2404.07282, built on Brieden et al. 2020, arXiv:2006.10857) "but with a new random seed"; validation tests on blinded catalogues; "once these tests were passed and the pipeline frozen, the blinding was removed" in December 2024. A Lyα-specific Alcock–Paczynski blinding was published in 2026 (arXiv:2607.07875).
 
-**Covariance** (DESI 2024, arXiv:2411.12027) [src]. The analytic configuration-space covariance (RascalC, arXiv:1904.11070) is the fiducial choice for BAO because it adapts to the measured clustering; the analytic Fourier-space covariance failed the comparison for full shape, "which motivates the use of a corrected mock covariance" from EZmocks. The form of the correction was not read here. For joint full shape and post-reconstruction BAO, an analytic cross-covariance was validated in 2026 (arXiv:2602.12343).
+**Covariance** (DESI 2024, arXiv:2411.12027) [src]. The analytic configuration-space covariance (RascalC, arXiv:1904.11070) is the fiducial choice for BAO because it adapts to the measured clustering; the analytic Fourier-space covariance failed the comparison for full shape, "which motivates the use of a corrected mock covariance" from EZmocks. The DR1 full-shape paper gives it: every element of the 1000-EZmock covariance is rescaled by a tracer-dependent factor calibrated on the data-tuned RascalC matrix, then the Hartlap and Percival 2014 factors are applied (arXiv:2411.12021) [src: Sects. 5.7–5.8]. For joint full shape and post-reconstruction BAO, an analytic cross-covariance was validated in 2026 (arXiv:2602.12343).
 
 **Frequentist companions.** A profile-likelihood analysis of DR1 full shape (arXiv:2508.11811), a Feldman–Cousins limit and an effective-mass analysis for neutrinos (arXiv:2503.14744), and a reparameterisation and Jeffreys-prior reanalysis (arXiv:2607.02498). DESI is the collaboration that has gone furthest in publishing both statistical frameworks on the same data.
 
@@ -163,6 +163,6 @@ Consequences for comparison. The two surveys sample different amplitude paramete
 - SPT-3G D1: likelihood form, covariance construction, sampler and the details of the blinding.
 - Planck 2018 and PR4 likelihood papers: not fetched; only the 2013 profile-likelihood paper and the Hamimeche–Lewis method paper were read.
 - KiDS-Legacy: the metric behind the quoted 0.73σ, and the content of the companion consistency paper.
-- DESI DR2: the tension metric used for the BAO-against-CMB comparison, the covariance used for DR2 (the statements above are for the 2024 analysis), and the form of the mock-covariance correction for full shape.
+- DESI DR2: the tension metric used for the BAO-against-CMB comparison and the covariance used for DR2 (the statements above are for the 2024 analysis).
 - DES Y6: the cosmic-shear and 2×2pt companion papers and the methods paper were not read; the statements above come from the 3×2pt paper.
 - Euclid: no Euclid Collaboration paper on the inference pipeline, likelihood code or blinding strategy was fetched.

@@ -31,7 +31,7 @@ Read first: hub file `observational-cosmology/references/conventions.md`.
 - θ_MC is a CosmoMC approximation to θ_*, not the acoustic angle (arXiv:1303.5076).
 - σ8: 8 h⁻¹Mpc, linear, z = 0. Planck uses total matter (arXiv:1303.5076); DESI DR1 full shape "excluding neutrinos" (arXiv:2411.12021).
 - The radius moves with h; σ12 removes this, and a template fit measures fσ12 (arXiv:2002.07829). DESI quotes fσ_s8 tied to r_d^fid; eBOSS rescaled σ8 by α_iso (arXiv:2007.08991).
-- γ = 0.55 is the ΛCDM value: γ = 0.55 + 0.05[1 + w(z=1)], good to 0.05–0.2% on the growth factor (arXiv:astro-ph/0507263, abstract). Neutrinos make growth scale-dependent at 0.3–2% (arXiv:1708.01154).
+- γ = 0.55 is the ΛCDM value: γ = 0.55 + 0.05[1 + w(z=1)], good to 0.05% on the growth factor for Λ, up to 0.4–0.5% for w = −0.5 or −1.5 (arXiv:astro-ph/0507263, Sect. V.1). Neutrinos make growth scale-dependent at 0.3–2% (arXiv:1708.01154).
 - Multipoles carry (2ℓ+1), the Hankel pair i^ℓ; Kaiser multipoles are 1 + 2β/3 + β²/5, 4β/3 + 4β²/7, 8β²/35 (arXiv:astro-ph/9708102).
 - The fingers-of-God σ is a pairwise dispersion, √2 above the single-galaxy one (arXiv:astro-ph/9708102); in the EFT it is a counterterm whose amplitude and sign cannot be predicted (arXiv:1909.05277).
 - Bias bases differ: co-evolution tidal bias is −2/7 or −4/7 times (b1 − 1); Lagrangian b1 is Eulerian b1 − 1 (arXiv:2404.07272).

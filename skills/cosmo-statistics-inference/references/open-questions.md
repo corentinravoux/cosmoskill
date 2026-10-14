@@ -1,7 +1,7 @@
 # Statistics and inference — live method debates and misconceptions
 
 Scope: the method debates that are open in 2025–2026, with both sides cited, what would settle them, and the misconceptions that still circulate.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-14
 
 Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named secondary source; `[der]` derived here, derivation stated.
 
@@ -89,7 +89,7 @@ The size of the stake is documented in `cosmo-galaxy-clustering`: with simulatio
 **Open points.**
 
 - Longer data vectors. Joint multi-tracer full shape with bispectrum, or 3×2pt with many tomographic bins, pushes `n_d` into the hundreds or thousands; with 1000 mocks the error inflation reaches tens of per cent (`results.md` §1.1). Compression, denoising and analytic covariances are the three exits, and each has a known failure: compression at a wrong fiducial point, denoised matrices with too-small errors in configuration space (arXiv:2604.13851), analytic matrices without survey realism.
-- Which correction. The 2022 matching-prior posterior (arXiv:2108.10402) is the most complete treatment; whether current survey pipelines use it, the 2014 factors, or the Hartlap factor alone was not established here for the 2025–2026 analyses.
+- Which correction. The 2022 matching-prior posterior (arXiv:2108.10402) is the most complete treatment. DESI DR1 full shape applies the Hartlap and Percival 2014 factors to 1000 EZmocks inside a Gaussian likelihood, judging the Sellentin–Heavens difference "not significant" at that mock count (arXiv:2411.12021) [src: Sect. 5.8]; the choice in the other 2025–2026 analyses was not established here.
 - Tails. A Hartlap-corrected Gaussian underestimates tail probabilities relative to the t-distribution (arXiv:2108.10402); tension statements live in the tails.
 - Cosmology dependence. Fixed (and iterated) covariance is the rule for Gaussian likelihoods (arXiv:1204.4724); KiDS-SBI finds that letting the forward model carry the cosmology dependence widens the constraints (arXiv:2404.15402). Both statements are correct; they concern different likelihoods.
 - Simulation-based inference does not remove the problem (arXiv:2412.02311).
@@ -163,7 +163,7 @@ Forecast statements about the statistical reach of future surveys (figures of me
 ## Not verified
 <!-- key: not-verified -->
 
-- Whether any 2025–2026 collaboration analysis uses the matching-prior t-distribution of arXiv:2108.10402 in production.
+- Whether any 2025–2026 collaboration analysis uses the matching-prior t-distribution of arXiv:2108.10402 in production (DESI DR1 full shape does not: Hartlap and Percival 2014 factors, arXiv:2411.12021).
 - Which DESI DR2 extended-model combinations were fixed before unblinding.
 - The reply of the DESI collaboration to the Bayesian-evidence reanalyses, and any reconciliation between arXiv:2511.10631 (the supernova sample drives the preference) and arXiv:2609.04334 (one BAO block drives it).
 - Later papers on the early-dark-energy profile likelihood with ACT DR6 or SPT-3G data were not searched.

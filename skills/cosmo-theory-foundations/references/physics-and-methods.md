@@ -7,7 +7,7 @@ Formulae are in plain text with the equation number of the cited paper where one
 ## 1. FLRW distances
 <!-- key: flrw-distances -->
 
-All formulae were read in Hogg 1999, arXiv:astro-ph/9905116 [src].
+All formulae were read in Hogg 1999, arXiv:astro-ph/9905116; the equation numbers were re-read in its HTML rendering on 2026-10-14 [src: Eqs. 2–30].
 
 | Quantity | Definition as written | Where | Note |
 |---|---|---|---|
@@ -15,19 +15,24 @@ All formulae were read in Hogg 1999, arXiv:astro-ph/9905116 [src].
 | Hubble time | t_H ≡ 1/H0 = 9.78 × 10^9 h⁻¹ yr [src] | Eq. 3 | |
 | Hubble distance | D_H ≡ c/H0 = 3000 h⁻¹ Mpc [src] (rounded) | Eq. 4 | today's value; BAO papers write D_H(z) ≡ c/H(z) |
 | Density parameters | Ω_M ≡ 8πGρ0/(3H0²); Ω_Λ ≡ Λc²/(3H0²); Ω_M + Ω_Λ + Ω_k = 1 | Eqs. 5–7 | **Ω_k > 0 is the open (sinh) case** |
-| Expansion function | E(z) ≡ sqrt[Ω_M(1+z)³ + Ω_k(1+z)² + Ω_Λ]; H(z) = H0 E(z) | "Comoving distance (line-of-sight)" | matter, curvature and Λ only |
-| Line-of-sight comoving distance | D_C = D_H ∫₀^z dz'/E(z') | same section | "the fundamental distance measure in cosmography" |
-| Transverse comoving distance | D_M = D_H Ω_k^(−1/2) sinh[Ω_k^(1/2) D_C/D_H] for Ω_k > 0; D_C for Ω_k = 0; D_H abs(Ω_k)^(−1/2) sin[abs(Ω_k)^(1/2) D_C/D_H] for Ω_k < 0 | "Comoving distance (transverse)" | equals the proper-motion distance |
+| Expansion function | E(z) ≡ sqrt[Ω_M(1+z)³ + Ω_k(1+z)² + Ω_Λ]; H(z) = H0 E(z) | Eq. 14 | matter, curvature and Λ only |
+| Line-of-sight comoving distance | D_C = D_H ∫₀^z dz'/E(z') | Eq. 15 | "the fundamental distance measure in cosmography" |
+| Transverse comoving distance | D_M = D_H Ω_k^(−1/2) sinh[Ω_k^(1/2) D_C/D_H] for Ω_k > 0; D_C for Ω_k = 0; D_H abs(Ω_k)^(−1/2) sin[abs(Ω_k)^(1/2) D_C/D_H] for Ω_k < 0 | Eq. 16 | equals the proper-motion distance |
+| Angular diameter distance | D_A = D_M/(1+z) | Eq. 18 | physical, not comoving; Planck's θ_* uses the comoving one (section 2) |
+| Luminosity distance | D_L = (1+z) D_M = (1+z)² D_A | Eq. 21 | |
+| Comoving volume element | dV_C = D_H (1+z)² D_A² dΩ dz/E(z) | Eq. 28 | |
+| Lookback time | t_L = t_H ∫₀^z dz'/[(1+z')E(z')] | Eq. 30 | |
+| Peculiar velocity from redshift | v_pec = c (z_obs − z_cos)/(1+z) | Eq. 10 | |
 
 - E(z) as written has no radiation, no massive neutrinos and no w ≠ −1; every r_d or θ_* calculation needs the fuller form (section 3.4).
 - Hogg warns that Peebles calls D_M the "angular size distance", which is not the angular diameter distance, and that calling D_M a "proper distance" is wrong: it is a proper distance divided by a ratio of scale factors.
-- D_L = (1+z) D_M was read in DESI Collaboration 2025 (arXiv:2503.14738, Sect. 1) and in Aubourg et al. 2015 (arXiv:1411.1074, Sect. II.1); the factor (1+z)² between D_A² and D_M² appears in Planck's D_V (section 3.3). Hogg's own sections on D_A and D_L were not opened.
+- D_L = (1+z) D_M was read in DESI Collaboration 2025 (arXiv:2503.14738, Sect. 1) and in Aubourg et al. 2015 (arXiv:1411.1074, Sect. II.1); the factor (1+z)² between D_A² and D_M² appears in Planck's D_V (section 3.3). Hogg's D_A (Eq. 18) is the physical angular diameter distance: the "D_A" of a CMB paper that calls it comoving (Planck 2013, θ_*) is Hogg's D_M.
 - The symbol D_H means c/H0 in Hogg and c/H(z) in every BAO paper. The applied side (BAO tables, Alcock–Paczynski) is in `cosmo-galaxy-clustering`.
 
 ## 2. Parameter basis and derived parameters
 <!-- key: parameter-basis-and-derived-parameters -->
 
-Definitions of Planck Collaboration 2013, arXiv:1303.5076, Sect. 2 and Table 1 [src], inherited by the later Planck papers and by most large-scale-structure analyses.
+Definitions of Planck Collaboration 2013, arXiv:1303.5076, Sect. 2 and Table 1 [src]; every equation number in the "Where" column re-read in the HTML rendering on 2026-10-14 [src: Eqs. 1–9], inherited by the later Planck papers and by most large-scale-structure analyses.
 
 | Symbol | Definition as written | Where | Trap |
 |---|---|---|---|
@@ -39,7 +44,9 @@ Definitions of Planck Collaboration 2013, arXiv:1303.5076, Sect. 2 and Table 1 [
 | Ω_m | "Matter density (inc. massive neutrinos) today divided by the critical density" | Table 1 | Ω_c + Ω_b does not include ν |
 | H0 | derived, in km/s/Mpc, prior [20, 100] | Table 1 | the CMB samples θ, not H0 |
 | z_eq | "Redshift of matter-radiation equality (massless neutrinos)" | Table 1 | computed as if neutrinos were massless |
-| z_* | optical depth to z_* equals one, recombination only | Eq. 5 | not the visibility peak |
+| z_* | optical depth τ(η) ≡ ∫_η0^η τ̇ dη' equals one at z_*, recombination only | Eq. 5 | not the visibility peak |
+| Dark-energy equation of state | w(a) ≡ p/ρ = w0 + (1 − a) wa | Eq. 4 | same form as DESI Eq. 9 |
+| Tensor spectrum | P_t(k) = A_t (k/k_0)^(n_t) | Eq. 3 | |
 | r_s(z) | ∫₀^η(z) dη'/sqrt[3(1+R)], R ≡ 3ρ_b/(4ρ_γ) | Eq. 6 | |
 | θ_* | r_s(z_*)/D_A(z_*), D_A the comoving angular diameter distance | Sect. 2.2.2 | |
 | θ_MC | "an approximation to θ_* that is used in CosmoMC and is based on fitting formulae given in Hu & Sugiyama (1996)" | Sect. 2.2.2 | a sampling variable, not θ_* |
@@ -49,6 +56,7 @@ Definitions of Planck Collaboration 2013, arXiv:1303.5076, Sect. 2 and Table 1 [
 | σ8 | "the rms fluctuation in total matter (baryons + CDM + massive neutrinos) in 8 h⁻¹ Mpc spheres at z = 0, computed in linear theory" | Sect. 2.2.2 | total matter; DESI uses cb (section 6) |
 | σ_R | σ_R² = ∫ (dk/k) P_m(k) [3 j1(kR)/(kR)]², P_m dimensionless | Eq. 9 | top-hat window |
 | Ω_m h³ | "a well-determined combination orthogonal to the acoustic scale degeneracy in flat models" | Sect. 2.2.2 | the CMB degeneracy direction in DESI DR2 Sect. 6 |
+| Acoustic-scale degeneracy, Planck 2013 values | θ_* = (1.04148 ± 0.00066) × 10⁻²; Ω_m h^3.2 (Ω_b h²)^(−0.54) = 0.695 ± 0.002; Ω_m h³ = 0.0959 ± 0.0006 | Eqs. 10–12 | 2013 data; Eq. 11 carries the ω_b dependence, Eq. 12 is the simpler combination |
 
 - The sampled parameters are ω_b, ω_c, θ_MC, τ, n_s, ln(10^10 A_s); DESI DR2 (arXiv:2503.14738, Sect. 5) and ACT DR6 (arXiv:2503.14452) keep the same six. H0, Ω_m, σ8 are derived, so a "Planck prior on H0" is model-dependent by construction.
 - Planck 2018 values that show the size of the distinctions (Planck Collaboration 2018, arXiv:1807.06209, Tables 1 and 2, TT,TE,EE+lowE+lensing) [src]: 100 θ_MC = 1.04092 ± 0.00031 against 100 θ_* = 1.04110 ± 0.00031; r_* = 144.43 ± 0.26 Mpc against r_drag = 147.09 ± 0.26 Mpc; z_* = 1089.92 ± 0.25. The same paper defines S8 ≡ σ8 (Ω_m/0.3)^0.5.
@@ -67,57 +75,58 @@ Definitions of Planck Collaboration 2013, arXiv:1303.5076, Sect. 2 and Table 1 [
 ### 3.2 r_d as BAO analyses define it
 <!-- key: rd-as-bao-analyses-define-it -->
 
-From Aubourg et al. 2015, arXiv:1411.1074, Sect. II.2 [src]:
+From Aubourg et al. 2015, arXiv:1411.1074, Sect. II.2, equation numbers re-read 2026-10-14 [src]:
 
-- r_d = ∫_{z_d}^∞ c_s(z)/H(z) dz (Eq. 10), with c_s(z) = 3^(−1/2) c [1 + (3/4) ρ_b(z)/ρ_γ(z)]^(−1/2). eBOSS (Eq. 13) and DESI DR2 (Eq. 1) write the same integral.
+- r_d = ∫_{z_d}^∞ c_s(z)/H(z) dz [src: Eq. 10], with c_s(z) = 3^(−1/2) c [1 + (3/4) ρ_b(z)/ρ_γ(z)]^(−1/2). eBOSS (Eq. 13) and DESI DR2 (Eq. 1) write the same integral.
 - "There are different conventions in use for defining r_d, which differ at the 1-2% level, but ratios of r_d for different cosmologies are independent of the convention provided one is consistent throughout." The paper adopts "the CAMB convention".
-- Calibrated approximation (Eq. 16): r_d ≈ 55.154 exp[−72.3 (ω_ν + 0.0006)²] / (ω_cb^0.25351 ω_b^0.12807) Mpc, "accurate to 0.021%" for N_eff = 3.046, Σm_ν < 0.6 eV and ω_b, ω_cb within 3σ of Planck [src].
-- With free relativistic species (Eq. 17): r_d ≈ 56.067 exp[−49.7 (ω_ν + 0.002)²] / {ω_cb^0.2436 ω_b^0.128876 [1 + (N_eff − 3.046)/30.60]} Mpc, "accurate to 0.119%" for 0 < Σm_ν < 0.6 eV and 3 < N_eff < 5 [src].
+- Calibrated approximation: r_d ≈ 55.154 exp[−72.3 (ω_ν + 0.0006)²] / (ω_cb^0.25351 ω_b^0.12807) Mpc [src: Eq. 16], "accurate to 0.021%" for N_eff = 3.046, Σm_ν < 0.6 eV and ω_b, ω_cb within 3σ of Planck; it "supersedes a somewhat less accurate (but still sufficiently accurate) approximation" of an earlier paper (its eq. 55) [src: Sect. II.2].
+- With free relativistic species: r_d ≈ 56.067 exp[−49.7 (ω_ν + 0.002)²] / {ω_cb^0.2436 ω_b^0.128876 [1 + (N_eff − 3.046)/30.60]} Mpc [src: Eq. 17], "accurate to 0.119%" for 0 < Σm_ν < 0.6 eV and 3 < N_eff < 5 [src]. The CMB constrains ω_cb, not ω_cb + ω_ν, "because neutrinos remain relativistic at recombination" [src: Sect. II.2].
 - ω_ν = 0.0107 (Σm_ν/1.0 eV) [src]; the paper's default, 0.06 eV in one massive state, gives ω_ν = 6.45 × 10⁻⁴ [src].
 
-The 1–2% between conventions is the Eisenstein–Hu fitting formula against the Boltzmann value. Planck 2013 (Sect. 5.2) records that the BAO groups of the time "use the approximate formulae of Eisenstein & Hu (1998) to compute z_drag and r_s(z_drag), though they fit power spectra computed with Boltzmann codes", and that "in CosmoMC we multiply the accurate numerical value of r_s(z_drag) by a constant factor of 1.0275 to match the Eisenstein-Hu approximation in the fiducial model" [src]. The BAO values used in that paper (6dFGS, SDSS DR7, WiggleZ, BOSS DR9) therefore carry an r_s 2.75% larger than the Boltzmann one.
+Aubourg et al. do not name the conventions behind the 1–2% [src: Sect. II.2]; the documented case is the Eisenstein–Hu fitting formula against the Boltzmann value. Planck 2013 (Sect. 5.2) records that the BAO groups of the time "use the approximate formulae of Eisenstein & Hu (1998) to compute z_drag and r_s(z_drag), though they fit power spectra computed with Boltzmann codes", and that "in CosmoMC we multiply the accurate numerical value of r_s(z_drag) by a constant factor of 1.0275 to match the Eisenstein-Hu approximation in the fiducial model" [src]. The BAO values used in that paper (6dFGS, SDSS DR7, WiggleZ, BOSS DR9) therefore carry an r_s 2.75% larger than the Boltzmann one.
 
 ### 3.3 The BAO distance combinations
 <!-- key: the-bao-distance-combinations -->
 
-From arXiv:1411.1074 [src]:
+From arXiv:1411.1074, every number in the Eq. column re-read in the rendering [src: Eqs. 5–15]:
 
 | Quantity | Definition | Eq. |
 |---|---|---|
 | D_C(z) | (c/H0) ∫₀^z dz' H0/H(z') | 6 |
+| D_M, small curvature | ≈ D_C(z)[1 + (1/6) Ω_k (D_C/(c/H0))²] | 5 |
 | D_M(z) | (c/H0) S_k(D_C/(c/H0)); S_k(x) = sin(sqrt(−Ω_k) x)/sqrt(−Ω_k) for Ω_k < 0, sinh(sqrt(Ω_k) x)/sqrt(Ω_k) for Ω_k > 0, x for Ω_k = 0 | 5, 7 |
 | D_H(z) | c/H(z) | 12 |
 | D_V(z) | [z D_H(z) D_M²(z)]^(1/3) | 14 |
 | α_⊥, α_∥ | D_M/r_d = α_⊥ D_M,fid/r_d,fid; D_H/r_d = α_∥ D_H,fid/r_d,fid | 11, 13 |
 | α (isotropic) | D_V/r_d = α D_V,fid/r_d,fid | 15 |
 
-- The paper warns that "some of the referenced papers quote values of D_A/r_d rather than D_M/r_d, differing by a factor (1+z)". Older work quotes the inverse ratio: Planck 2013 writes d_z = r_s(z_drag)/D_V(z) with D_V(z) = [(1+z)² D_A²(z) cz/H(z)]^(1/3) (arXiv:1303.5076, Eqs. 50–51) [src], the same D_V; WiggleZ used A(z) = D_V(z) sqrt(Ω_m H0²)/(cz) (Eq. 54).
+- The paper warns that "some of the referenced papers quote values of D_A/r_d rather than D_M/r_d, differing by a factor (1+z)". Older work quotes the inverse ratio: Planck 2013 writes d_z = r_s(z_drag)/D_V(z) with D_V(z) = [(1+z)² D_A²(z) cz/H(z)]^(1/3) (arXiv:1303.5076) [src: Eqs. 50–51], the same D_V with the physical D_A; WiggleZ used A(z) = D_V(z) sqrt(Ω_m H0²)/(cz) [src: Eq. 54].
 - The effective redshift of a BAO point "can be treated as exact" because the measurement is a ratio to the fiducial model (arXiv:1411.1074).
 - The Friedmann equation used with these distances includes radiation and neutrinos (Eq. 8), with T_ν = T_CMB (4/11)^(1/3) g_c, g_c = (3.046/3)^(1/4), and Ω_m at z = 0 includes the neutrinos, "so that Ω_m + Ω_de + Ω_k ≡ 1".
 
 ### 3.4 The DESI DR2 form
 <!-- key: the-desi-dr2-form -->
 
-DESI Collaboration 2025, arXiv:2503.14738, Sect. 1, 3.1 and 6 [src]:
+DESI Collaboration 2025, arXiv:2503.14738, Sect. 1, 3.1 and 6; every equation number below re-read in the rendering on 2026-10-14 [src]:
 
-- Eq. 2: r_d = 147.05 Mpc × (ω_b/0.02236)^(−0.13) (ω_bc/0.1432)^(−0.23) (N_eff/3.04)^(−0.1), "scaled to the best-fit values from Planck" and to "three neutrino species that are fully relativistic at z > z_d"; ω_bc ≡ (Ω_b + Ω_cdm) h². The formula is credited to Brieden, Gil-Marín & Verde 2023 (arXiv:2212.04522, whose abstract was read; its body, and so the formula's accuracy against a Boltzmann code, was not).
-- Eq. 3: D_M(z) = [c/(H0 sqrt(Ω_K))] sinh[sqrt(Ω_K) ∫₀^z dz' H0/H(z')]; Eq. 5: D_H(z) = c/H(z); D_V(z) ≡ [z D_M(z)² D_H(z)]^(1/3).
-- Eq. 6: H(z)/H0 = [Ω_bc(1+z)³ + Ω_γ(1+z)⁴ + Ω_K(1+z)² + Ω_ν ρ_ν(z)/ρ_ν,0 + Ω_DE ρ_DE(z)/ρ_DE,0]^(1/2); Ω_m "includes neutrinos when they are non-relativistic"; the neutrino density turns from (1+z)³ to (1+z)⁴ at (1+z) ~ m_ν/(5 × 10⁻⁴ eV). Eq. 7: Ω_ν h² = Σm_ν/(93.14 eV).
-- Eqs. 8–10: ρ_DE(z)/ρ_DE,0 = exp{3 ∫₀^z [1 + w(z')] dz'/(1+z')}; w(a) = w0 + wa(1 − a); ρ_DE(a)/ρ_DE,0 = a^(−3(1+w0+wa)) e^(−3wa(1−a)).
-- Eq. 11: α_∥ = D_H(z) r_d^fid/[D_H^fid(z) r_d], α_⊥ = D_M(z) r_d^fid/[D_M^fid(z) r_d]; Eq. 12: α_iso = (α_∥ α_⊥²)^(1/3), α_AP = α_∥/α_⊥, the sampled basis because "less correlated".
-- Eq. 17: a BAO-only fit samples Ω_m and h r_d and gives Ω_m = 0.2975 ± 0.0086, h r_d = (101.54 ± 0.73) Mpc, correlation −0.92 [src]. BAO alone give no H0: "an uncalibrated ruler" (Sect. 4.1).
+- Eq. 2: r_d = 147.05 Mpc × (ω_b/0.02236)^(−0.13) (ω_bc/0.1432)^(−0.23) (N_eff/3.04)^(−0.1), "scaled to the best-fit values from Planck" and to "three neutrino species that are fully relativistic at z > z_d"; ω_bc ≡ (Ω_b + Ω_cdm) h² [src: Eq. 2]. With CMB ω_b and ω_bc it gives "a 0.2% determination of r_d" for N_eff = 3.04 [src: Sect. 1]; Eq. 1 is the integral r_d = ∫_{z_d}^∞ c_s(z)/H(z) dz [src: Eq. 1]. DESI cites it to a reference list entry; the same power law is Eq. 4 of Brieden, Gil-Marín & Verde 2023 (arXiv:2212.04522), written there with Ω_m h² in place of ω_bc and attributed to "eq. 2.4" of Schöneberg et al. 2022 [src: Sect. 3.1]. In the HTML rendering of Schöneberg et al. 2022 (arXiv:2209.14330, Sect. 2.1.1) the numerical scaling reads H0 r_s ∝ Ω_m^(−0.23) h^(+0.52) N_eff^(−0.1) (Ω_b h²)^(−0.11) [src: Eq. 4], from numerical calculations near the Planck best fit; its footnote obtains Ω_m^(−0.23) h^(0.54) (Ω_b h²)^(−0.13) by power-law expansion of an analytic sound-horizon formula, "within the accuracy of the numerical formula" [src: Sect. 2.1.1, footnote 3]. DESI's exponents (−0.13 on ω_b, −0.23 on ω_bc, h-free) are those of the footnote version [der: Ω_m^(−0.23) h^(0.54)/h = (Ω_m h²)^(−0.23)]. Neither paper states the accuracy against a Boltzmann code in the passages read.
+- D_M(z) = [c/(H0 sqrt(Ω_K))] sinh[sqrt(Ω_K) ∫₀^z dz' H0/H(z')] [src: Eq. 3], its flat limit [src: Eq. 4]; D_H(z) = c/H(z) [src: Eq. 5]; D_V(z) ≡ [z D_M(z)² D_H(z)]^(1/3), unnumbered [src: Sect. 3.1]; D_L(z) = (1+z) D_M(z) [src: Sect. 1].
+- H(z)/H0 = [Ω_bc(1+z)³ + Ω_γ(1+z)⁴ + Ω_K(1+z)² + Ω_ν ρ_ν(z)/ρ_ν,0 + Ω_DE ρ_DE(z)/ρ_DE,0]^(1/2); Ω_m "includes neutrinos when they are non-relativistic"; the neutrino density turns from (1+z)³ to (1+z)⁴ at (1+z) ~ m_ν/(5 × 10⁻⁴ eV) [src: Eq. 6]. Ω_ν h² = Σm_ν/(93.14 eV) [src: Eq. 7].
+- ρ_DE(z)/ρ_DE,0 = exp{3 ∫₀^z [1 + w(z')] dz'/(1+z')} [src: Eq. 8]; w(a) = w0 + wa(1 − a) [src: Eq. 9]; ρ_DE(a)/ρ_DE,0 = a^(−3(1+w0+wa)) e^(−3wa(1−a)) [src: Eq. 10].
+- α_∥ = D_H(z) r_d^fid/[D_H^fid(z) r_d], α_⊥ = D_M(z) r_d^fid/[D_M^fid(z) r_d] [src: Eq. 11]; α_iso = (α_∥ α_⊥²)^(1/3), α_AP = α_∥/α_⊥ [src: Eq. 12], the sampled basis because "less correlated".
+- A BAO-only fit samples Ω_m and h r_d and gives Ω_m = 0.2975 ± 0.0086, h r_d = (101.54 ± 0.73) Mpc [src: Eq. 17], correlation −0.92 [src]. The CMB prior DESI uses is 100θ_* = 1.04110 ± 0.00053 [src: Eq. 16], wider than Planck's own ± 0.00031 on the same quantity; the BBN prior is ω_b = 0.02218 ± 0.00055 [src: Eq. 14]. BAO alone give no H0: "an uncalibrated ruler" (Sect. 4.1).
 
 Three points to hold. (i) The matter variable of Eq. 2 is ω_bc, not ω_m. (ii) The formula assumes "standard pre-recombination physics", and the DESI + BBN H0 inherits that. (iii) The pivot of Eq. 2 is N_eff = 3.04 while the standard value used in Sect. 4.1 is 3.044; the difference moves r_d by 0.013% [der: (3.044/3.04)^(−0.1) − 1]. The CMB counterpart is θ_*, measured to a "fractional error ~10⁻⁴". Inverse-distance-ladder uses are in `cosmo-distance-ladder-h0`.
 
 ## 4. Linear growth and its approximations
 <!-- key: linear-growth-and-its-approximations -->
 
-All equations from Linder 2005, arXiv:astro-ph/0507263 [src].
+All equations from Linder 2005, arXiv:astro-ph/0507263; equation numbers re-read in the HTML rendering on 2026-10-14 [src: Eqs. 7–18].
 
-- Growth equation in general relativity, every other component smooth (Eq. 7): δ̈ + 2H δ̇ − 4πG ρ_m δ = 0. With g ≡ δ/a and primes for d/d ln a (Eq. 11): g'' + [5/2 − (1/2)(ln Ω_m(a))'] g' + [3/2 − (1/2)(ln Ω_m(a))' − (3/2) G Ω_m(a)] g = 0; an equivalent form (Eq. 10) is g'' + [5/2 − (3/2) w(a) Ω_w(a)] g' + (3/2)[1 − w(a)] G Ω_w(a) g = 0, G in units of Newton's constant.
+- Growth equation in general relativity, every other component smooth: δ̈ + 2H δ̇ − 4πG ρ_m δ = 0 [src: Eq. 7]. With g ≡ δ/a and primes for d/d ln a [src: Eq. 11]: g'' + [5/2 − (1/2)(ln Ω_m(a))'] g' + [3/2 − (1/2)(ln Ω_m(a))' − (3/2) G Ω_m(a)] g = 0; an equivalent form (Eq. 10) is g'' + [5/2 − (3/2) w(a) Ω_w(a)] g' + (3/2)[1 − w(a)] G Ω_w(a) g = 0, G in units of Newton's constant.
 - "Within general relativity the linear theory growth factor depends purely on the expansion history": this is what makes growth a test of gravity. It holds for smooth dark energy and scale-independent growth; massive neutrinos break it (section 14).
-- Growth index (Eq. 16): g(a) = exp{∫₀^a d ln a [Ω_m(a)^γ − 1]}, Ω_m(a) = Ω_m a⁻³/(H/H0)²; hence f ≡ d ln δ/d ln a = Ω_m(a)^γ [der: f = 1 + d ln g/d ln a].
-- γ = 0.55 + 0.05[1 + w(z=1)] (Eq. 17); for w < −1, γ = 0.55 + 0.02[1 + w(z=1)] (Eq. 18). So 0.55 is the ΛCDM value, not a constant of general relativity. γ is "the growth index, encompassing deviations in the theoretical framework"; Linder & Cahn 2007 (arXiv:astro-ph/0701317) show it is "restricted to a very narrow range" for dark energy in general relativity and extend it to DGP, scalar–tensor and time-varying gravity.
+- Growth index: g(a) = exp{∫₀^a d ln a [Ω_m(a)^γ − 1]} [src: Eq. 16], Ω_m(a) = Ω_m a⁻³/(H/H0)²; hence f ≡ d ln δ/d ln a = Ω_m(a)^γ [der: f = 1 + d ln g/d ln a].
+- γ = 0.55 + 0.05[1 + w(z=1)] [src: Eq. 17]; for w < −1, γ = 0.55 + 0.02[1 + w(z=1)] [src: Eq. 18]. Linder states that the formula's "primary purpose is not a fit as such (the exact solution requires only solving a second order differential equation)" but physical intuition and a parametrisation of modified growth [src: Sect. V.1]. So 0.55 is the ΛCDM value, not a constant of general relativity. γ is "the growth index, encompassing deviations in the theoretical framework"; Linder & Cahn 2007 (arXiv:astro-ph/0701317) show it is "restricted to a very narrow range" for dark energy in general relativity and extend it to DGP, scalar–tensor and time-varying gravity.
 
 Three things the formula is not. (i) It uses Ω_m(a) at the epoch considered, not Ω_m today. (ii) It assumes scale-independent growth. (iii) It is not the older f ≈ Ω^0.6 of the pre-2000 literature (β ≈ Ω_0^0.6/b in Hamilton 1998, arXiv:astro-ph/9708102; Peacock & Dodds 1994, arXiv:astro-ph/9311057; Fisher 1995, arXiv:astro-ph/9412081): the two exponents differ by Ω_m^0.05, 6% at Ω_m = 0.3 [der: 0.3^0.05 = 0.942].
 
@@ -134,7 +143,7 @@ Measured γ and μ–Σ are in `cosmo-dark-energy-modified-gravity`; β = f/b an
 ## 5. Transfer functions
 <!-- key: transfer-functions -->
 
-Definition (Eisenstein & Hu 1998, arXiv:astro-ph/9709112, Eq. 1) [src]: T(k) ≡ [δ(k, z=0)/δ(k, z=∞)] × [δ(0, z=∞)/δ(0, z=0)], synchronous or comoving gauge, so that T → 1 as k → 0; the power spectrum is the initial spectrum times T². Scales that shape T(k), same paper [src], Ω_0 the total matter density and Θ_2.7 the CMB temperature in units of 2.7 K:
+Definition (Eisenstein & Hu 1998, arXiv:astro-ph/9709112) [src: Eq. 1]: T(k) ≡ [δ(k, z=0)/δ(k, z=∞)] × [δ(0, z=∞)/δ(0, z=0)], synchronous or comoving gauge, so that T → 1 as k → 0; the power spectrum is the initial spectrum times T². Scales that shape T(k), same paper, every number in the Eq. column re-read in the HTML rendering on 2026-10-14 [src: Eqs. 2–7, 25, 26, 29], Ω_0 the total matter density and Θ_2.7 the CMB temperature in units of 2.7 K:
 
 | Scale | Fitting formula as written | Eq. |
 |---|---|---|
@@ -145,11 +154,12 @@ Definition (Eisenstein & Hu 1998, arXiv:astro-ph/9709112, Eq. 1) [src]: T(k) ≡
 | Sound horizon at the drag epoch | s = ∫₀^t(z_d) c_s (1+z) dt = [2/(3 k_eq)] sqrt(6/R_eq) ln{[sqrt(1+R_d) + sqrt(R_d+R_eq)]/[1 + sqrt(R_eq)]}, c_s = 1/sqrt[3(1+R)] | 6 |
 | Silk damping | k_Silk = 1.6 (Ω_b h²)^0.52 (Ω_0 h²)^0.73 [1 + (10.4 Ω_0 h²)^(−0.95)] Mpc⁻¹ | 7 |
 | First acoustic peak | k_peak = [5π/(2s)] (1 + 0.217 Ω_0 h²) | 25 |
-| Sound horizon, short form | s = 44.5 ln(9.83/Ω_0 h²)/sqrt[1 + 10 (Ω_b h²)^(3/4)] Mpc | 26 |
+| Sound horizon, short form | s = 44.5 ln(9.83/Ω_0 h²)/sqrt[1 + 10 (Ω_b h²)^(3/4)] Mpc, "∼2%" for Ω_b h² ≳ 0.0125 and 0.025 ≲ Ω_0 h² ≲ 0.5 | 26 |
+| CDM + baryon split | T(k) = (Ω_b/Ω_0) T_b(k) + (Ω_c/Ω_0) T_c(k) | 8, 16 |
 | Zero-baryon shape | T_0(q) = L_0/(L_0 + C_0 q²), L_0 = ln(2e + 1.8 q), C_0 = 14.2 + 731/(1 + 62.5 q) | 29 |
 
 - These lengths are in Mpc, not h⁻¹Mpc: the physics depends on Ω_0 h² and Ω_b h². z_d was "reduced by a factor of 0.96" from the Hu & Sugiyama 1996 value "on phenomenological grounds", and k_Silk carries a ±20% phenomenological correction: fits to 1990s recombination codes. A modern analysis takes z_d and r_d from a Boltzmann code (section 3).
-- Above the sound horizon the shape follows Γ_0 ≡ Ω_0 h; below it baryons suppress power and "the transition around the sound horizon cannot be fit by a single Γ" (Sect. 4.2). The Γ-era phenomenology (Peacock & Dodds 1994; Feldman, Kaiser & Peacock 1994, arXiv:astro-ph/9304022, both fitting Ωh) is why old "shape parameter" values cannot be read as Ω_m h. Eq. 29 replaces the BBKS formula, which the paper says "fits neither the exact small-scale solution" nor has the quadratic small-k behaviour that causality requires.
+- Above the sound horizon the shape follows Γ_0 ≡ Ω_0 h; below it baryons suppress power and "the transition around the sound horizon cannot be fit by a single Γ" (Sect. 4.2). The Γ-era phenomenology (Peacock & Dodds 1994; Feldman, Kaiser & Peacock 1994, arXiv:astro-ph/9304022, both fitting Ωh) is why old "shape parameter" values cannot be read as Ω_m h. Eq. 29 agrees with numerical calculations "to 1% through the CMB and large-scale structure regimes"; of its coefficients 1.8 and 14.2 are "derived theoretically" and 731 is fitted [src: Sect. 4.2]. It replaces the BBKS formula, which the paper says "fits neither the exact small-scale solution" nor has the quadratic small-k behaviour that causality requires.
 - Massive neutrinos: Eisenstein & Hu 1999 (arXiv:astro-ph/9710252), a function of k, time and six parameters including the massive-neutrino density and the number of degenerate species.
 - The modern descendant of Γ is the ShapeFit slope m, defined at k_p = π/r_d^fid ≃ 0.03 h^fid Mpc⁻¹, "approximately at the matter-radiation equality scale" (arXiv:2411.12021, Sect. 4.2.3; `surveys-and-data.md` section 5).
 - Boltzmann codes: CAMB (Lewis, Challinor & Lasenby 2000, arXiv:astro-ph/9911177) and CLASS (Blas, Lesgourgues & Tram 2011, arXiv:1104.2933, whose three approximation schemes are tight coupling, an ultra-relativistic fluid approximation and a radiation-streaming approximation); DES Y3 found them "in excellent agreement at the level of accuracy of this analysis" (arXiv:2105.13548). Accuracy figures are in `results.md` section 4.
@@ -161,17 +171,17 @@ Definition (Eisenstein & Hu 1998, arXiv:astro-ph/9709112, Eq. 1) [src]: T(k) ≡
 
 **The h problem** (Sánchez 2020, arXiv:2002.07829) [src]:
 
-- "When h varies, σ8 changes due to two effects: i) the change in the amplitude of P(k) itself, and ii) the change in the reference scale R = 8 h⁻¹ Mpc, which corresponds to a different scale in Mpc for different values of h." A posterior on σ8 is an average over the scales allowed by the posterior on h (Eq. 6): σ8 = ∫ σ(R = (8/h) Mpc | h) P(h) dh.
+- "When h varies, σ8 changes due to two effects: i) the change in the amplitude of P(k) itself, and ii) the change in the reference scale R = 8 h⁻¹ Mpc, which corresponds to a different scale in Mpc for different values of h." A posterior on σ8 is an average over the scales allowed by the posterior on h: σ8 = ∫ σ(R = (8/h) Mpc | h) P(h) dh [src: Eq. 6].
 - Proposal: σ12, "the rms linear theory variance at R = 12 Mpc"; for h ≃ 0.67, 8 h⁻¹Mpc ≃ 12 Mpc. Models with the same ω_b, ω_c, ω_ν, n_s and σ12 have identical linear P(k) in Mpc units whatever h, and their halofit spectra agree to "a few percent at high k". Companion lensing parameter: S12 = σ12 (ω_m/0.14)^0.4.
-- RSD (Eq. 7): P_g(k, μ, z) = [bσ8(z) + fσ8(z) μ²]² P(k, z)/σ8²(z). Quoting fσ8 needs P/σ8² to depend on shape only (the argument of Percival & White 2009, arXiv:0808.0003, whose abstract says the anisotropy "provides a constraint on the derivative of the linear growth rate through f.sigma_8"); but that ratio depends on h, while P/σ12² does not. Hence "fσ12 is the most relevant quantity to describe RSD".
-- What does not change: "Using h⁻¹ Mpc units or simply Mpc would lead to identical parameter constraints" if h is carried through the Alcock–Paczynski factors q_∥ = H'(z_m)/H(z_m), q_⊥ = D_M(z_m)/D'_M(z_m) (Eqs. 4–5, primes fiducial).
+- RSD: P_g(k, μ, z) = [bσ8(z) + fσ8(z) μ²]² P(k, z)/σ8²(z) [src: Eq. 7]. Quoting fσ8 needs P/σ8² to depend on shape only (the argument of Percival & White 2009, arXiv:0808.0003, whose abstract says the anisotropy "provides a constraint on the derivative of the linear growth rate through f.sigma_8"); but that ratio depends on h, while P/σ12² does not. Hence "fσ12 is the most relevant quantity to describe RSD".
+- What does not change: "Using h⁻¹ Mpc units or simply Mpc would lead to identical parameter constraints" if h is carried through the Alcock–Paczynski factors q_∥ = H'(z_m)/H(z_m), q_⊥ = D_M(z_m)/D'_M(z_m), primes fiducial, which rescale s_∥ = q_∥ s'_∥ and s_⊥ = q_⊥ s'_⊥ [src: Eqs. 2–5]. The illustrative spectra of the paper vary h at fixed ω_b, ω_c, ω_ν, A_s, n_s, computed with CAMB [src: Sect. III].
 
 **What DESI does.** ShapeFit quotes fσ_s8, with σ_s8 tied to r_d^fid rather than to h; the definition is in `surveys-and-data.md` section 5. **Units.** Croton 2013 (arXiv:1308.4150) is the general reference on h in observed and simulated quantities; its abstract calls little h "an anachronism" and gives nine rules. Numbers are in `results.md` section 3; the community choice in `open-questions.md` section 1.
 
 ## 7. Fourier and multipole conventions
 <!-- key: fourier-and-multipole-conventions -->
 
-The reference that writes out the whole chain is Hamilton 1998, arXiv:astro-ph/9708102 [src]:
+The reference that writes out the whole chain is Hamilton 1998, arXiv:astro-ph/9708102; Eqs. 3.3, 3.5 and 5.10 re-read in the HTML rendering on 2026-10-14 [src: Eqs. 3.3, 3.5, 5.10], Eqs. 5.5 and 5.9 not re-located [src]:
 
 | Object | Convention | Eq. |
 |---|---|---|
@@ -198,8 +208,8 @@ The reference that writes out the whole chain is Hamilton 1998, arXiv:astro-ph/9
 From Hamilton 1998, arXiv:astro-ph/9708102 [src], plane-parallel limit:
 
 - δ̂^s(k) = (1 + β μ_k²) δ̂(k) (Eq. 4.35) and P^s(k) = (1 + β μ_k²)² P(k) (Eq. 4.36), "an elegant formula first pointed out by Kaiser (1987, eq. [3.5])" (Kaiser 1987, doi:10.1093/mnras/227.1.1 [sec: via Hamilton]). β is the growth rate over the linear bias; P(k) is the real-space spectrum of the tracer. In today's notation, P_g(k, μ) = (b1 + f μ²)² P_lin(k) (arXiv:1909.05277, Sect. 3.1).
-- Multipoles (Eq. 5.7): P^s_0 = (1 + (2/3)β + (1/5)β²) P; P^s_2 = ((4/3)β + (4/7)β²) P; P^s_4 = (8/35)β² P. The monopole boost (Eq. 5.1) runs from 1 to 28/15 for β from 0 to 1; the ratio P^s_2/P^s_0 (Eq. 5.8) is the classic β estimator; the hexadecapole is "≲ 0.1 of the monopole and quadrupole harmonics for β ≤ 1".
-- The general radial operator is S = 1 + β (∂²/∂r² + α(r) ∂/(r ∂r)) ∇⁻² with α(r) ≡ ∂ ln[r² n̄(r)]/∂ ln r (Eqs. 4.23–4.24): the α term depends on the selection function, is absent from the plane-parallel formula, and holds in the CMB rest frame.
+- Multipoles: P^s_0 = (1 + (2/3)β + (1/5)β²) P; P^s_2 = ((4/3)β + (4/7)β²) P; P^s_4 = (8/35)β² P [src: Eq. 5.7]. The monopole boost P^s/P = 1 + (2/3)β + (1/5)β² [src: Eq. 5.1] runs from 1 to 28/15 for β from 0 to 1; the ratio P^s_2/P^s_0 = [(4/3)β + (4/7)β²]/[1 + (2/3)β + (1/5)β²] [src: Eq. 5.8] is the classic β estimator, and in configuration space the same ratio is ξ^s_2/(ξ^s_0 − ξ̄^s_0), with ξ̄ the volume-averaged monopole [src: Eq. 8.1]; the hexadecapole is "≲ 0.1 of the monopole and quadrupole harmonics for β ≤ 1".
+- The general radial operator is S = 1 + β (∂²/∂r² + α(r) ∂/(r ∂r)) ∇⁻² with α(r) ≡ ∂ ln[r² n̄(r)]/∂ ln r [src: Eq. 4.24; Eq. 4.23 not re-located]: the α term depends on the selection function, is absent from the plane-parallel formula, and holds in the CMB rest frame.
 - Percival & White 2009 recast the anisotropy as a measurement of fσ8 "independent of galaxy bias", and note that RSD "probe non-relativistic velocities and therefore the temporal metric perturbations, while weak lensing tests the sum of the temporal and spatial metric perturbations" [src, abstract], the basis of the μ–Σ split.
 
 ### 8.2 Fingers of God: dispersion models
@@ -209,8 +219,8 @@ Hamilton describes the standard model as "the result of convolving the linear re
 
 | Pairwise velocity distribution | Damping factor | Eq. |
 |---|---|---|
-| Gaussian, f(v) = [(2π)^(1/2) σ]⁻¹ exp[−(v/σ)²/2] | exp[−(σ k μ)²/2] | 7.3 |
-| Exponential, f(v) = (2^(1/2) σ)⁻¹ exp(−2^(1/2) abs(v)/σ) | 1/[1 + (1/2)(σ k μ)²] | 7.4 |
+| Gaussian, f(v) = [(2π)^(1/2) σ]⁻¹ exp[−(v/σ)²/2] | exp[−(σ k μ)²/2] [src: Eq. 7.3] | 7.3 |
+| Exponential, f(v) = (2^(1/2) σ)⁻¹ exp(−2^(1/2) abs(v)/σ) | 1/[1 + (1/2)(σ k μ)²] [src: Eq. 7.4] | 7.4 |
 
 - This σ is a one-dimensional pairwise dispersion, "2^(1/2) larger than a random 1-dimensional single-point (galaxy) dispersion, and 3^(1/2) smaller than a 3-dimensional pairwise dispersion" [src]. A model written with the single-galaxy σ_1 has exp[−(σ_1 k μ)²] with no factor 1/2 [der]. In products with k the dispersion is a length (velocity over the Hubble rate). Check which σ a paper fits before comparing values.
 - Hamilton calls the approach "phenomenological rather than based on any rigorous theory". Scoccimarro 2004 (arXiv:astro-ph/0407214) shows the pairwise velocity distribution "is strongly non-Gaussian at all scales" and that the usual ansatz "gives rise to an unphysical distribution of pairwise velocities" [src, abstract]. Chen & Aviles 2026 (arXiv:2609.35757) find that such damping functions are "the mean-field limit of the single-particle characteristic function" of small-scale velocities and that the environmental dependence "generates equally large corrections that break the simple damping form"; a rigorous resummation is possible only "at the cost of significantly expanding the operator basis and promoting free coefficients to free functions" [src, abstract].
@@ -338,6 +348,8 @@ Read in Lesgourgues & Pastor 2006, arXiv:astro-ph/0603494, Sect. 4.5.6 and 4.6.1
 - a_eq = ω_r/(ω_b + ω_cdm), ω_r computed "assuming that all neutrinos would remain massless"; at fixed ω_m, a_eq grows as (1 − f_ν)⁻¹.
 - The −8 f_ν holds for fixed ω_m with ω_cdm reduced; the paper's next figure fixes ω_b and ω_cdm and shifts h or Ω_Λ instead. A quoted suppression needs that statement.
 
+Free-streaming scale of one species, as written by Pezzotta et al. 2025 (arXiv:2503.16160): λ_s(z) = 2π sqrt(2/3) c_ν(z)/H(z) ≃ 7.7 sqrt[ω_m(z)/(ω_m,0 (1+z))] (1 eV/m_ν) Mpc [src: Eq. 8]; the suppression factor S(k) ≡ P(k)/P_⋆(k) is taken against a cosmology with ω_c,⋆ = ω_c + ω_ν and no massive neutrinos, i.e. at fixed total matter [src: Eq. 7].
+
 **Three constants for one conversion**, each read at source: 93.2 eV (Lesgourgues & Pastor 2006), 93.04 eV (arXiv:1303.5076), 93.14 eV (arXiv:2503.14738, Eq. 7); Aubourg et al. write ω_ν = 0.0107 Σm_ν/eV, i.e. 93.5 eV [der]. The spread is 0.5% [der].
 
 **Mass splitting actually used** (see `surveys-and-data.md`): one massive state of 0.06 eV plus two massless (Planck, ACT DR6, DESI with Σm_ν fixed); three degenerate states (DESI with Σm_ν varied); Σm_ν fixed to 0.06 eV (KiDS-Legacy).
@@ -360,7 +372,6 @@ Each with the paper read or cited above; installation and versions are in `cosmo
 ## Not verified
 <!-- key: not-verified -->
 
-- Hogg's own equations for D_A, D_L, comoving volume and lookback time; Hogg's equation numbers beyond Eq. 7.
 - The accuracy of DESI's power-law r_d formula against a Boltzmann code, and the body of arXiv:2212.04522.
 - Why eBOSS quotes z_d ≈ 1020 and DESI ≈ 1060.
 - Growth approximations of Lahav et al. 1991 and Carroll, Press & Turner 1992, and the BBKS formula itself: not on arXiv, not read, not written.

@@ -1,7 +1,7 @@
 # Surveys and facilities — open questions, schedule risks and stale claims
 
 Scope: schedule risks with the evidence for each slip, cancelled or descoped projects, the points where sibling skills differ and how each was settled at source, and the stale facility claims that still circulate.
-Snapshot: 2026-10-07 (web pages fetched 2026-10-09 unless another date is given)
+Snapshot: 2026-10-14 (web pages fetched 2026-10-09 unless another date is given)
 
 Flags as in `surveys-and-data.md`: `[src]`, `[sec: GC|WL|CMB|SN|CL]` (carried
 over from the named sibling skill), `[sec: web]` (web-search summary of the
@@ -19,6 +19,7 @@ A facility's past slips are the best available prior on its next date.
 | Facility | Earlier statement | What happened | Flag |
 |---|---|---|---|
 | Rubin LSST | design paper: "will begin regular survey operations by 2022" (arXiv:0805.2366) | ten-year survey began 30 June 2026 | [src]; start date [sec: WL] |
+| Euclid | launch "foreseen" in 2019 (Red Book, Laureijs et al. 2011, arXiv:1110.3193) | launched 1 July 2023 (ESA Euclid timeline) | [src] |
 | Roman | "on schedule for launch in 2025" (Akeson et al. 2019, arXiv:1902.05569) | launched 30 August 2026 (NASA mission page) | [src] |
 | WEAVE | "will see first light in late 2022" (Jin et al. 2023, arXiv:2212.03981) | large-IFU surveys from October 2023; ten-month stand-down from September 2024; multi-object surveys "expected to start ~ April 2026" and not confirmed (ING WHT page) | [src] |
 | 4MOST | full operations expected in Q1 2026, then first half of 2026, then June, then August 2026 | first light 18 October 2025; main survey "imminent" on 15 June 2026; the project page still reads "Q2 2026" in October 2026 | successive forecasts [sec: web]; first light [sec: GC]; June and October wording [src] |
@@ -79,7 +80,7 @@ forecast in dark time during its first 1.1 years (arXiv:2306.06309) [src].
 | LiteBIRD | reformation 2024–2026: one telescope instead of three, 12 bands instead of 15, requirement δr < 0.002 instead of the earlier 0.001 goal, launch JFY2036 | quote the 2026 overview (arXiv:2607.25285), not the 2022 design | [sec: CMB] |
 | MSE | the 2018 design (11.25 m, 4332 fibres) was replaced by an 11.5 m quad-mirror concept with more than 18,000 fibres, "proposed to replace the Canada-France-Hawai'i Telescope in the 2040s" (arXiv:2503.15553) [src]; a CFHT Board recommendation of December 2024 to wind down MSE activities is reported [sec: web] | not a facility of the 2030s; not funded as far as read | as given |
 | eROSITA | fewer all-sky passes than designed (Sect. 1.1); half-sky public data | forecasts based on eight passes (for example cluster counts) do not describe the data | [src] |
-| KiDS | designed for 1500 deg² (abstract of the 2013 KiDS overview by de Jong et al., read this session), completed at 1347 deg² | quote 1347 deg² | [sec: WL] |
+| KiDS | designed for 1500 deg² (de Jong et al. 2012, arXiv:1206.1254), completed at 1347 deg² because ESO stopped the companion VIKING survey at about 90% of its area and KiDS was truncated to match (arXiv:2503.19439) | quote 1347 deg² | [sec: WL]; [src]; [src: Sect. 3.1.1] |
 | HSC-SSP | Deep and UltraDeep layers reached about 80% of the planned integration and "are considered done" (arXiv:2108.13045) | depth of the deep layers is below the 2018 design | [src] |
 | Roman spectroscopic survey | the 2021 reference survey of 2000 deg² (arXiv:2110.01829) [sec: GC] was superseded by the community-defined High Latitude Wide Area Survey: more than 5000 deg² in total, of which about 2500 deg² with spectroscopy (NASA page) [src] | forecasts based on the 2000 deg² HLSS are for a different survey | as given |
 | DESI | extended, not descoped: more than 47 million redshifts against a goal of 34 million, footprint to about 17,000 deg² by 2028 | the "14,000 deg², 35–40 million" description is the 2016–2022 design | [sec: GC] |
@@ -102,7 +103,7 @@ or of definition:
 | Euclid DR2 date | `cosmo-galaxy-clustering` and `cosmo-weak-lensing`: June 2029 (ESA), with IPAC giving March 2029 | ESA timeline re-fetched: "June 2029" [src] | June 2029, tentative |
 | Rubin survey start | `cosmo-weak-lensing`: 30 June 2026 flagged [src]; `cosmo-supernovae` and `cosmo-clusters`: same date flagged [sec] | not re-fetched; the DP2 page and RTN-011 v9.1 are consistent with a survey under way [src] | same date; the difference is provenance only |
 | Roman launch | all three siblings: 30 August 2026, with different flags | NASA mission page: "Launch: August 30, 2026" [src] | confirmed |
-| Euclid survey area | "about 14,000 deg²" in both siblings | 14,000 deg² in the NISP and VIS papers; 14,500 deg² for the pre-launch reference survey and "roughly 15,000" in the same abstract (arXiv:2108.01201) [src] | 14,000 deg² for the mission; the others are pre-launch planning numbers |
+| Euclid survey area | "about 14,000 deg²" in both siblings | 14,000 deg² in the NISP and VIS papers; 14,500 deg² for the pre-launch reference survey and "roughly 15,000" in the same abstract (arXiv:2108.01201) [src]; the VIS paper body also writes "6 years ... to observe 15 000 deg²" (arXiv:2405.13492) [src: Sect. 2.2] and the NISP body "∼14 000 deg²" (arXiv:2405.13493) [src: Sect. 2] | 14,000 deg² for the mission; the others are pre-launch planning numbers |
 | DESI footprint | `cosmo-galaxy-clustering` quotes both "expected final 14,200 deg²" (arXiv:2404.03002) and "from 14,000 to about 17,000 deg²" (Berkeley Lab) | the Survey Validation and operations papers say 14,000 deg² [src] | 14,000 is the design round number, 14,200 the tiled footprint; no conflict |
 | HSC Y3 shear area | `cosmo-weak-lensing`: 433.48 deg² (paper) and 434 deg² (web summary) | not re-read | rounding |
 | KiDS-Legacy calibration fields | `cosmo-weak-lensing`: 23 deg² in one abstract, 27 deg² in another | not resolved there or here | open; quote each with its paper |
@@ -157,7 +158,8 @@ Each line gives the claim, then the correction and where it was read.
     Sect. 2.
 14. "CSST launches in 2023" (or 2025, 2026). 2027 at the earliest [src],
     [sec: web].
-15. "KiDS covers 1500 deg²." 1347 deg² [sec: WL].
+15. "KiDS covers 1500 deg²." 1347 deg² [sec: WL]; [src: Sect. 3.1.1 of
+    arXiv:2503.19439].
 16. "The Legacy Surveys cover 14,000 deg² in grz." That is the original
     design; DR11 covers about 22,700 deg² and adds i in the south [src].
 17. "The Simons Observatory has three small telescopes and forecasts
@@ -197,8 +199,9 @@ Each line gives the claim, then the correction and where it was read.
 - Whether the 4MOST main survey and the WEAVE multi-object surveys have
   started; the Roman survey start; Rubin DR1 date; DESI DR2 release date.
 - The CFHT Board statement on MSE and the Spec-S5 funding status.
-- The cause of the shortened eROSITA survey and the status of the Russian
-  half of the data.
+- The cause of the shortened eROSITA survey (not in the sections of
+  arXiv:2010.03477 and arXiv:2607.27772 read) and the status of the
+  Russian half of the data.
 - ZTF funding after 2026; the O5 start date; LIGO-India.
 - The current SKAO schedule (the version seen is of February 2025).
 - The Simons Observatory first-light discrepancy and any 2026 data-release

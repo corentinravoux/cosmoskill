@@ -1,7 +1,7 @@
 # Statistics and inference — quantified facts a referee needs
 
 Scope: sizes of covariance corrections, documented projection-effect shifts, documented differences between tension metrics and model-comparison statistics on the same data, emulator error budgets, sampler and coverage-test outcomes.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-14
 
 Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named secondary source; `[der]` derived here, derivation stated.
 
@@ -36,6 +36,8 @@ Reading the table: the Hartlap factor and the Dodelson–Schneider factor are of
 |---|---|---|---|
 | BOSS: error increase when the covariance comes from 600 mocks, "depending on how the cosmological parameters of interest are measured" | ~20% | Percival et al. 2014, arXiv:1312.4841 (abstract) | [src] |
 | Parameter variance increase from a simulation covariance | factor of order `1 + N_b/N_s` | Dodelson & Schneider 2013, arXiv:1304.2593 | [src] |
+| Best-fit-scatter term, "fractional increase in variance" (not error bar; Hartlap term excluded): BOSS 600 mocks, 41 bins; DLS 1000, 60; CFHTLenS 184, 24 | 7%; 6%; 13% | arXiv:1304.2593 | [src: Table 1] |
+| DESI DR1 full shape: 1000 EZmocks per tracer and redshift bin, Hartlap and Percival 2014 factors, plus a larger tracer-dependent rescaling for mock realism | ~20% Fourier-space EZmock–analytic mismatch with realistic fibre assignment | DESI Collaboration 2024, arXiv:2411.12021 | [src: Sects. 5.7–5.8] |
 | Realisations needed for a 5% error on a parameter error, `N_D << 100` | ≥ 200 | Taylor et al. 2013, arXiv:1212.4359 | [src] |
 | Standard bootstrap, variance of ξ(s), 1–25 Mpc/h | overestimated by ~40% | Norberg et al. 2009, arXiv:0810.1885 | [src] |
 | Internal covariance, Ω_m–σ8 contour volume against truth (DES 5-year forecast) | ≳ 85% | Friedrich et al. 2016, arXiv:1508.00895 | [src] |
@@ -159,6 +161,8 @@ The lesson for a referee: for DESI + CMB the three in-sample statistics read 3.1
 | Same | Bayes ratio | "inconsistent with the rest due to its dependence on the prior volume" | arXiv:2012.09554 | [src] |
 | Same | Bayes ratio with narrower priors | drops below unity; "DES and Planck are, in a Bayesian sense, incompatible under ΛCDM" | Handley & Lemos 2019, arXiv:1902.04029 | [src] |
 | Planck against SH0ES, DES Y1, SDSS BAO | suspiciousness | strong, moderate, no tension | arXiv:1902.04029 | [src] |
+| Simulated DES Y1 against Planck, Ω_m shifted by 1.5 marginal σ (a-priori 2.3σ), ΛCDM | Bayes ratio; eigentension; GoF loss; parameter difference (MCMC/update); suspiciousness | `log R = −0.4 ± 0.6` ("no evidence"); 3.3σ; 3.0σ; 2.8σ/2.7σ; 2.9 ± 0.4σ | Lemos et al. 2021, arXiv:2012.09554 | [src: Table 3] |
+| Same, Ω_m shifted by 2 marginal σ (a-priori 3.8σ) | same order | `log R = −4.8 ± 0.6`; 4.1σ; 3.9σ; 3.4σ/3.6σ; 4.1 ± 0.6σ | arXiv:2012.09554 | [src: Table 3] |
 | Toy case: two equal Gaussians 3σ apart | Bayes ratio, flat prior [−10, 10] against [−200, 200] | `R << 1` against `R > 1` | arXiv:2012.09554, figure 4 | [src] |
 | DES Y6 3×2pt against Planck 2018 + ACT DR6 + SPT-3G DR1, ΛCDM | full-space parameter difference | 1.8σ | DES Collaboration 2026, arXiv:2601.14559 | [src] |
 | Same | projected on S8 | 2.6σ | arXiv:2601.14559 | [src] |
@@ -317,4 +321,4 @@ Three numbers for what a text would call "the CMB–BAO tension", differing by C
 - No quantified emulator error budget for a Lyα, HOD or baryonic-feedback emulator was collected here; see the probe skills.
 - No trial-factor-corrected global significance for a cosmological anomaly was found; §11 lists spreads between analysis choices instead.
 - The number of simulations needed for simulation-based inference as a function of summary dimension (beyond the statements of arXiv:1903.00007 and arXiv:2412.02311) was not quantified.
-- Hartlap-type factors actually applied in DESI DR1 or DR2 (number of EZmocks, data-vector length) were not read; §1.1 gives generic cases.
+- DESI DR1 full shape uses 1000 EZmocks with Hartlap and Percival 2014 factors (§1.2); the data-vector length per tracer and the DR2 practice were not read, so §1.1 gives generic cases.

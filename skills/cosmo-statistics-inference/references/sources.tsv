@@ -99,3 +99,21 @@ Maus2026	2602.12343	Maus	2026	An analytic approximation to the covariance betwee
 Wright2025	2503.19441	Wright	2025	KiDS-Legacy: Cosmological constraints from cosmic shear with the complete Kilo-Degree Survey	results
 Louis2025	2503.14452	Louis	2025	The Atacama Cosmology Telescope: DR6 Power Spectra, Likelihoods and $\Lambda$CDM Parameters	results
 Camphuis2025	2506.20707	Camphuis	2025	SPT-3G D1: CMB temperature and polarization power spectra and cosmology from 2019 and 2020 observations of the SPT-3G Main field	results
+Lewis2013	1304.4473	Lewis	2013	Efficient sampling of fast and slow cosmological parameters	method
+DESI2024FS	2411.12021	Adame	2024	DESI 2024 V: Full-Shape Galaxy Clustering from Galaxies and Quasars	results
+Trotta2017	1701.01467	Trotta	2017	Bayesian Methods in Cosmology	review
+Verde2010	0911.3105	Verde	2009	Statistical methods in cosmology	review
+Heavens2009	0906.0664	Heavens	2009	Statistical techniques in cosmology	review
+Cranmer2020	1911.01429	Cranmer	2019	The frontier of simulation-based inference	review
+Hamilton2006	astro-ph/0511416	Hamilton	2005	On measuring the covariance matrix of the nonlinear power spectrum from simulations	foundation
+Vogeley1996	astro-ph/9601185	Vogeley	1996	Eigenmode Analysis of Galaxy Redshift Surveys I. Theory and Methods	foundation
+KleinRoodman2005	doi:10.1146/annurev.nucl.55.090704.151521	Klein	2005	Blind analysis in nuclear and particle physics	foundation
+Metropolis1953	doi:10.1063/1.1699114	Metropolis	1953	Equation of State Calculations by Fast Computing Machines	foundation
+LewisBridle2002	astro-ph/0205436	Lewis	2002	Cosmological parameters from CMB and other data: a Monte-Carlo approach	code
+Skilling2006	doi:10.1214/06-BA127	Skilling	2006	Nested sampling for general Bayesian computation	foundation
+Feroz2009	0809.3437	Feroz	2008	MultiNest: an efficient and robust Bayesian inference tool for cosmology and particle physics	code
+Neal2011	1206.1901	Neal	2012	MCMC using Hamiltonian dynamics	foundation
+ForemanMackey2013	1202.3665	Foreman-Mackey	2012	emcee: The MCMC Hammer	code
+GelmanRubin1992	doi:10.1214/ss/1177011136	Gelman	1992	Inference from Iterative Simulation Using Multiple Sequences	foundation
+Papamakarios2016	1605.06376	Papamakarios	2016	Fast $ε$-free Inference of Simulation Models with Bayesian Conditional Density Estimation	foundation
+Alsing2018	1801.01497	Alsing	2018	Massive optimal data compression and density estimation for scalable, likelihood-free inference in cosmology	method

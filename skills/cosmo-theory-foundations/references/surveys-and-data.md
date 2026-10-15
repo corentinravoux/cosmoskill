@@ -1,6 +1,6 @@
 # Theory foundations — which convention each major analysis adopts, read at source
 
-Snapshot: 2026-10-07
+Snapshot: 2026-10-15
 
 ## 1. Summary table
 <!-- key: summary-table -->
@@ -11,11 +11,13 @@ This file is not a list of surveys (that is `cosmo-surveys-facilities`): it reco
 |---|---|---|---|---|---|---|
 | Planck 2013, arXiv:1303.5076 | Mpc and Mpc⁻¹ for scales and pivots; σ8 radius 8 h⁻¹Mpc | σ8, total matter, linear, z = 0 | one state of 0.06 eV | 3.046 | not read | θ_MC sampled; r_drag from CAMB × 1.0275 for old BAO |
 | Planck 2018, arXiv:1807.06209 | same | σ8 total matter; S8 ≡ σ8 (Ω_m/0.3)^0.5 | "two massless states and a single massive neutrino of mass 0.06 eV" | 3.046 | HMcode (2015 version) replacing Takahashi halofit | θ_MC sampled; θ_*, r_*, r_drag derived |
-| ACT DR6, arXiv:2503.14452 | km/s/Mpc for H0 | σ8 derived | 0.06 eV in one massive state | not read | "non-linear matter power spectrum modeling" in CAMB, version not read | θ_MC sampled |
+| ACT DR6, arXiv:2503.14452; extended models arXiv:2503.14454 | km/s/Mpc for H0 | σ8 derived; S8 ≡ σ8 sqrt(Ω_m/0.3) | 0.06 eV in one massive state; three massive states when Σm_ν varies | 3.044 (extended-models paper) | latest HMcode, dark matter only, no baryonic feedback (extended-models paper) | θ_MC sampled |
+| BOSS DR12, arXiv:1607.03155 | Mpc for quoted distances, scaled by r_d,fid = 147.78 Mpc | fσ8, σ8 on 8 h⁻¹Mpc | not read | not read | not read | D_M × r_d,fid/r_d, H × r_d/r_d,fid, F_AP; α, ε internally |
 | eBOSS 2021, arXiv:2007.08991 | h⁻¹Mpc | fσ8, σ8 on 8 h⁻¹Mpc; f = ∂ln σ8/∂ln a | not read | not read | per-tracer templates (not read) | D_M/r_d, D_H/r_d, D_V/r_d; z_d "around 1020" |
 | DESI DR1 full shape, arXiv:2411.12021 | h⁻¹Mpc of the fiducial cosmology | σ8 "excluding neutrinos" (cb); fσ_s8 in ShapeFit | not read for the chains | 3.044 | one-loop EFT (velocileptors), k < 0.20 h/Mpc | q_∥, q_⊥ against the catalogue cosmology |
 | DESI DR2 BAO, arXiv:2503.14738 | h⁻¹Mpc for separations; results as ratios to r_d | none (geometry only) | 0.06 eV, one massive state when fixed; three degenerate when varied | 3.044 (3.04 as pivot of the r_d formula) | BAO template with broadband marginalised | α_iso, α_AP; h r_d sampled without calibration |
-| DES Y3 3×2pt, arXiv:2105.13548 | h units (M_⊙/h, R_min = 8 Mpc/h) | S8 in the results paper (DES Collaboration 2021, arXiv:2105.13549, not re-read) | varied in the DES chains [sec: DESI DR2 Sect. 5 fixes Σm_ν to 0.06 eV as an exception to the DES priors]; halofit with the Bird correction | not read | Takahashi halofit, gravity only, scale cuts | Limber for shear, non-Limber for clustering |
+| DES Y3 3×2pt, arXiv:2105.13548 | h units (M_⊙/h, R_min = 8 Mpc/h) | S8 in the results paper (DES Collaboration 2021, arXiv:2105.13549, not re-read) | Ω_ν h² varied, flat 10³ Ω_ν h² ∈ (0.60, 6.44) (arXiv:2105.13549, Table 1), i.e. Σm_ν ≈ 0.056–0.60 eV [der: × 93.14 eV]; halofit with the Bird correction | not read | Takahashi halofit, gravity only, scale cuts | Limber for shear, non-Limber for clustering |
+| DES Y6 3×2pt, arXiv:2601.14559 | Mpc/h for σ8 | S8 = σ8 (Ω_m/0.3)^0.5 | Σm_ν varied, flat [0.06, 0.6] eV | not found | HMCode2020, Θ_AGN = 7.7 fixed, scale cuts | Limber for shear and galaxy–galaxy lensing, non-Limber for clustering |
 | KiDS-Legacy, arXiv:2503.19441 | h/Mpc; θ in arcmin | S8 sampled directly; Σ8 with α = 0.58 | fixed, Σm_ν = 0.06 eV | not read | HMCode2020 with free T_AGN | — |
 
 Reading the table across: no two rows share all columns. The cells that most often invalidate a naive comparison are the field of σ8 (Planck total, DESI cb), the neutrino treatment (fixed against varied), and the non-linear model (halofit against HMCode2020).
@@ -59,7 +61,17 @@ Read in Planck Collaboration 2013 (arXiv:1303.5076), Sect. 2 and 5.2. Planck 201
 | Code | Cobaya calling CAMB, with accuracy settings tuned to the ACT multipole range, "high-precision recombination calculations and non-linear matter power spectrum modeling" |
 | Lensing consistency parameter | A_lens rescales the lensing potential spectrum: C_ℓ^ψ → A_lens C_ℓ^ψ |
 
-ACT shares the Planck basis (θ_MC, one massive state of 0.06 eV, σ8 and Ω_m derived), so the two can be combined without translating parameters. The value of N_eff adopted and the non-linear prescription are described in the companion extended-models paper, not read this session. Results are in `cosmo-cmb`.
+ACT shares the Planck basis (θ_MC, one massive state of 0.06 eV, σ8 and Ω_m derived), so the two can be combined without translating parameters. Results are in `cosmo-cmb`.
+
+### ACT DR6 extended models (Calabrese et al. 2025, arXiv:2503.14454)
+<!-- key: act-dr6-extended-models-calabrese-et-al-2025 -->
+
+Read in Sect. III of the HTML rendering on 2026-10-15.
+
+- **Neutrinos.** Where neutrino physics is not varied: "one massive and two massless particles, with total mass Σm_ν = 0.06 eV and effective number of neutrino species N_eff = 3.044"; where Σm_ν is free, "three massive eigenstates (zero massless)", following Planck and the ACT DR6 lensing analyses [src: Sect. III]. N_eff = 3.044 against Planck's 3.046: the same model, different constants.
+- **Pivot and amplitude.** A_s and n_s at k_* = 0.05 Mpc⁻¹; S8 ≡ σ8 sqrt(Ω_m/0.3) [src: Sect. III].
+- **Non-linear model.** "the latest version of HMcode … (rather than Halofit)", dark matter only, "with no baryonic feedback corrections", because "at ACT DR6 precision, the impact of non-linear corrections to CMB lensing are non-negligible even in the primary CMB power spectra"; HMcode is "not guaranteed to give accurate results" for models that alter late-time growth [src: Sect. III].
+- **Recombination and BBN.** HyRec (in CLASS) or CosmoRec (in CAMB) instead of Recfast, whose fudge parameters "are no longer sufficient for ACT DR6 sensitivity"; the PRIMAT BBN table assumes N_eff = 3.044 while the CLASS BBN module assumes 3.046, a difference the authors correct for [src: Sect. III].
 
 ## 4. BOSS and eBOSS
 <!-- key: boss-and-eboss -->
@@ -75,7 +87,8 @@ Read in eBOSS Collaboration 2021, arXiv:2007.08991 [src], and in the description
 | Early BAO (to about 2013) | r_s from the Eisenstein–Hu fitting formulae, with spectra from Boltzmann codes; Planck applied the factor 1.0275 |
 | Own verdict | "This analysis of the clustering might not be the best approach for future surveys including DESI and Euclid … it may be best to directly fit models to the two-point multipoles without an intermediate data compression step" |
 
-- The rescaling of σ8 by α_iso is the BOSS/eBOSS answer to the 8 h⁻¹Mpc problem of Sánchez 2020 (arXiv:2002.07829); DESI's σ_s8 (section 5) is its formal successor. According to the second pass of this build, the rescaling was applied to the galaxy samples and not to the MGS and quasar points [sec: reading of Appendix A by the second writer, not re-read].
+- The rescaling of σ8 by α_iso is the BOSS/eBOSS answer to the 8 h⁻¹Mpc problem of Sánchez 2020 (arXiv:2002.07829); DESI's σ_s8 (section 5) is its formal successor. For the MGS and eBOSS quasar measurements the template is not rescaled before normalisation, because there "the contribution to the systematic error from the fiducial cosmology is significantly reduced compared to other contributions"; this gives "slightly larger estimates of the systematic error" [src: App. A, re-read in the HTML rendering on 2026-10-15]. The paper also warns never to mix bases in the dilation parameters, for example "r_d/r_d^fid in Mpc and D_M^fid/D_M in h⁻¹Mpc", which would hide the h/h^fid dependence; and that interpreting template-fit dilations through r_d alone "should be considered an approximation" [src: App. A]. Without rescaling, σ8 is fixed in the template's units and the fit picks up a further h/h^fid dependence and "a larger systematic error contribution" [src: App. A].
+- **BOSS DR12 consensus** (Alam et al. 2017, arXiv:1607.03155, Sect. 1, 3.2 and 8.2, read in the HTML rendering on 2026-10-15) [src]: r_d = ∫_{z_d}^∞ c_s(z)/H(z) dz [src: Eq. 1]; α_⊥ = D_M r_d,fid/(D_M^fid r_d), α_∥ = H^fid r_d,fid/(H r_d) [src: Eq. 11]; α = α_⊥^(2/3) α_∥^(1/3) and a warping ε with ε + 1 = (α_∥/α_⊥)^(1/3) [src: Eq. 12]; D_V = [D_M² cz/H]^(1/3), F_AP = D_M H/c [src: Eqs. 13–14]. Results are quoted "in physical units" as D_M × (r_d,fid/r_d) in Mpc and H × (r_d/r_d,fid), with r_d,fid = 147.78 Mpc in the fiducial cosmology (Ω_m = 0.31), plus fσ8; the r_d scalings are referred to Aubourg et al. 2015, and the 0.2% Planck uncertainty on r_d in ΛCDM is called negligible [src: Sect. 3.2, 8.2]. A BOSS "D_M" is therefore D_M/r_d times 147.78 Mpc, not a distance independent of r_d [der]; ε is a fourth anisotropy variable next to α_AP, F_AP and q_∥/q_⊥.
 - An earlier example of what the fiducial choices do: Samushia, Percival & Raccanelli 2012 (arXiv:1102.1014) fit SDSS-II LRGs with the background fixed to ΛCDM under WMAP + SN priors and quote f(z)σ8(z) at z = 0.25 and 0.37; the "fσ8" is conditional on that background.
 - EFT reanalyses of the same BOSS data (Ivanov, Simonović & Zaldarriaga 2020, arXiv:1909.05277; D'Amico et al. 2020, arXiv:1909.05271) vary the cosmology directly and are compared in `open-questions.md` section 2; Brieden, Gil-Marín & Verde 2022 (arXiv:2204.11868) is the ShapeFit reanalysis of BOSS + eBOSS.
 
@@ -136,7 +149,11 @@ Read in eBOSS Collaboration 2021, arXiv:2007.08991 [src], and in the description
 | Small-scale galaxy–galaxy lensing | point-mass marginalisation, σ(B) = 10¹⁷ M_⊙/h |
 | Units | masses in M_⊙/h and M_⊙ h⁻² Mpc² (IA normalisation): h units throughout |
 
-The stated deficiencies of the matter-spectrum model are the authors' own: no non-gravitational physics, and "finite accuracy in representing the true gravity-only power spectrum", checked against emulators in their stress tests. The DES Y6 3×2pt analysis is DES Collaboration 2026, arXiv:2601.14559; its modelling choices were not re-read this session (see "Not verified"), and its S8 results are in `cosmo-weak-lensing`.
+The stated deficiencies of the matter-spectrum model are the authors' own: no non-gravitational physics, and "finite accuracy in representing the true gravity-only power spectrum", checked against emulators in their stress tests. The DES Y6 3×2pt analysis is DES Collaboration 2026, arXiv:2601.14559; its S8 results are in `cosmo-weak-lensing`.
+
+**DES Y3 parameters** (DES Collaboration 2021, arXiv:2105.13549, Sect. IV.2 and Table 1, read in the HTML rendering on 2026-10-15) [src]: flat ΛCDM with six free parameters Ω_m, Ω_b, h, A_s, n_s and Ω_ν h² (the "sum of the three neutrino masses as a free parameter", effect on P(k) through the Bird et al. fitting function), flat prior 10³ Ω_ν h² ∈ (0.60, 6.44); priors on weakly constrained parameters span about five times the 68% interval of external constraints; σ8 "the RMS amplitude of mass on scales of 8 h⁻¹ Mpc in linear theory" at z = 0; lens magnification coefficients calibrated from the data and fixed. DESI DR2 Sect. 5 fixes Σm_ν to 0.06 eV as an exception to the DES priors when it uses DES data [sec: DESI DR2, not re-read].
+
+**DES Y6 changes** (arXiv:2601.14559, Sect. IV.1 and IV.4, read in the HTML rendering on 2026-10-15) [src]: six free ΛCDM parameters A_s, Ω_m, h, Ω_b, n_s and Σm_ν, with a top-hat prior Σm_ν ∈ [0.06, 0.6] eV in all chains [src: Table 3, Fig. 13]; σ8 "the RMS of linear fluctuations at scales of 8 Mpc/h", S8 = σ8 (Ω_m/0.3)^0.5; linear spectrum from CAMB, non-linear from **HMCode2020** (Takahashi halofit in Y3) with Θ_AGN = log10(T_AGN/K) fixed to 7.7 and scale cuts against baryons, other Θ_AGN values moving the cosmology by <0.3σ; Limber for galaxy–galaxy lensing and shear, non-Limber clustering with the linear/non-linear growth split; linear bias b1 per lens bin, with a b2 variant; Nautilus sampling, and only parameters "not shifted significantly by prior-volume effects" quoted [src: Sect. IV.1, IV.4]. N_eff was not found in the passages read.
 
 
 Two further points from the same paper [src]: the clustering scale cut is R_min,w = 8 Mpc/h, an h-unit scale; and on projection effects the paper notes that they arise "when parameters of interest are not fully constrained by the data or are degenerate with other parameters that are prior informed", that they "decrease as the data's constraining power increases and are thus not a systematic bias".
@@ -184,9 +201,7 @@ Three defaults a user must set rather than inherit: the neutrino mass splitting 
 ## Not verified
 <!-- key: not-verified -->
 
-- N_eff and the non-linear prescription of ACT DR6: stated in a companion paper that was not read.
 - Neutrino treatment of the DESI DR1 full-shape chains, and whether the DESI DR1 cosmology paper converts fσ_s8 with the eBOSS rescaling: not read.
-- DES Y3 neutrino prior and N_eff, and all DES Y6 modelling choices (DES Collaboration 2026, arXiv:2601.14559): not read; the Y6 results are in `cosmo-weak-lensing`.
-- BOSS DR12 consensus conventions were not read in the BOSS papers themselves, only through eBOSS, DESI and Planck.
-- The MGS and quasar exception to the eBOSS σ8 rescaling comes from the second writer's reading and was not re-read.
+- N_eff in DES Y3 and Y6 (not found in the passages read).
+- Neutrino treatment, N_eff and template of the BOSS DR12 consensus fits (not in the sections read).
 - Code versions of CAMB, CLASS and HMcode in each analysis.

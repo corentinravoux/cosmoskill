@@ -36,6 +36,8 @@ its numbers supersede the digest in this hub.
 | Codes: Boltzmann solvers and forks, theory façades, samplers, perturbation-theory codes, estimators, Lyα and lensing tools, field-level codes; default units and settings, code agreement, maintenance status | `cosmo-software-ecosystem` |
 | Σm_ν bounds and their model dependence, negative effective mass, mass ordering, N_eff, BBN, laboratory limits; warm, fuzzy, interacting, self-interacting, decaying dark matter | `cosmo-neutrinos-dark-matter` |
 | w, w0wa, the DESI dark-energy evidence and its critiques, μ–Σ, growth index, EFT of dark energy, f(R), screening, E_G | `cosmo-dark-energy-modified-gravity` |
+| Photometric calibration and standards, dust maps, photo-z by templates and machine learning, n(z) calibration (SOM, clustering redshifts, forward models), p(z) storage, spectroscopic training samples, requirements | `cosmo-photometry-photoz` |
+| Galaxy–halo connection: HOD, SHAM, CLF, stellar-to-halo mass relation, assembly bias, satellite kinematics, "lensing is low", halo definitions, mass function, halo bias and concentration, halo model | `cosmo-galaxy-halo-connection` |
 
 How the suite is built, checked and updated, with the update cycle step by
 step: `references/suite-conventions.md`. Design documents and test logs are in the

@@ -2,7 +2,7 @@
 
 Scope: headline cosmic-shear, galaxy–galaxy-lensing, 3×2pt and 6×2pt
 measurements, with the model assumed, and the history of the S8 number.
-Snapshot: 2026-10-12
+Snapshot: 2026-10-16
 
 Flags: `[src]` read this session in the abstract or body of the cited paper;
 `[sec]` taken from a named secondary source; `[der]` derived here, derivation
@@ -30,7 +30,7 @@ value read in the body of the paper.
 
 | Dataset | S8 | Other | Model / choices | Citation | Flag |
 |---|---|---|---|---|---|
-| KiDS-Legacy (KiDS DR5, 1347 deg², nine bands, sources to z_B ≤ 2.0) | 0.815 +0.016/−0.021 | Σ8 = σ8(Ωm/0.3)^0.58 = 0.821 +0.014/−0.016; 0.73σ from Planck Legacy | flat ΛCDM; IA model depending on halo mass and spectral type; baryon feedback marginalised | Wright et al. 2025, arXiv:2503.19441 | [src] |
+| KiDS-Legacy (KiDS DR5, 1347 deg², nine bands, sources to z_B ≤ 2.0) | 0.815 +0.016/−0.021 | Σ8 = σ8(Ωm/0.3)^0.58 = 0.821 +0.014/−0.016; 0.73σ from Planck Legacy in Σ8, 0.76σ in S8 [src: Sect. 7] | flat ΛCDM; IA model depending on halo mass and spectral type; baryon feedback marginalised | Wright et al. 2025, arXiv:2503.19441 | [src] |
 | DES Y6 (≈140 million galaxies, 8.29 arcmin⁻², four bins, S/N = 83) | 0.798 +0.014/−0.015 | 1.8% precision; 2.0σ from CMB in S8, 1.1σ in full parameter space | flat ΛCDM, NLA; small scales removed for baryons | DES Collaboration 2026, arXiv:2602.10065 | [src] |
 | DES Y6, same data | 0.783 +0.019/−0.015 | 2.5% precision; 2.3σ from CMB in S8, 1.7σ in full parameter space | flat ΛCDM, TATT | arXiv:2602.10065 | [src] |
 | HSC Y3 real space, DESI clustering-redshift recalibration | 0.804 +0.019/−0.018 | error reduced by a factor 1.8 relative to the original | flat ΛCDM, HSC Y3 ξ± with new Δz priors | Choppin de Janvry et al. 2025, arXiv:2511.18134 | [src] |
@@ -234,7 +234,7 @@ figure the paper itself quoted, against the CMB data set it named.
 | 2023 | HSC Y3 3×2pt, minimal bias | same, large scales | 0.775 +0.043/−0.038 | consistent with Planck 2018 | Sugiyama et al. 2023, arXiv:2304.00705 | [src] |
 | 2023 | DES Y3 + KiDS-1000 joint | — | 0.790 +0.018/−0.014 (mean); MAP 0.801 | 1.7σ from Planck | DES & KiDS Collaborations 2023, arXiv:2305.17173 | [src] |
 | 2025 | DECADE (northern Galactic cap) | 5412 deg², 107 million galaxies, 4.59 arcmin⁻² | 0.791 +0.027/−0.032; "combined measurements" over ≈10,000 deg²: 0.791 ± 0.023 (the area matches DECADE + DES Y3, 5412 + 4143 deg² [der]) | consistent with CMB | Anbajagane et al. 2025, arXiv:2502.17677; catalogue arXiv:2502.17674 | [src] |
-| 2025 | KiDS-Legacy | 1347 deg² | 0.815 +0.016/−0.021 | 0.73σ from Planck Legacy | arXiv:2503.19441 | [src] |
+| 2025 | KiDS-Legacy | 1347 deg² | 0.815 +0.016/−0.021 | 0.73σ (Σ8), 0.76σ (S8) from Planck Legacy | arXiv:2503.19441 | [src] |
 | 2025 | DECADE + DES Y3 (both caps) | 13,000 deg², 270 million galaxies | 0.805 ± 0.019 | 1.9σ from Planck | arXiv:2509.03582 | [src] |
 | 2025 | HSC Y3 with DESI clustering redshifts | 416 deg² | 0.804 +0.019/−0.018 | "towards Planck" | arXiv:2511.18134 | [src] |
 | 2026 | DES Y6 cosmic shear | 140 million galaxies | 0.798 +0.014/−0.015 (NLA); 0.783 +0.019/−0.015 (TATT) | 2.0σ; 2.3σ from Planck + ACT + SPT | arXiv:2602.10065 | [src] |

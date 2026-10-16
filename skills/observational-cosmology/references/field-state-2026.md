@@ -70,7 +70,7 @@ without a source below were not verified and must not be quoted.
 <!-- key: growth-s8-weak-lensing -->
 
 - S₈ has moved up, but "converged" is too strong *(2026-10-08)*.
-  KiDS-Legacy cosmic shear: 0.815 (+0.016/−0.021), 0.73σ from Planck
+  KiDS-Legacy cosmic shear: 0.815 (+0.016/−0.021), 0.76σ from Planck in S8, 0.73σ in Σ8
   (arXiv:2503.19441). HSC Y3 with DESI clustering redshifts:
   0.804 (+0.019/−0.018), up from 0.769 (arXiv:2511.18134). DES Y6 3×2pt:
   0.789 ± 0.012, which is 1.8σ from the CMB in the full parameter space and

@@ -1,7 +1,7 @@
 # Statistics and inference — quantified facts a referee needs
 
 Scope: sizes of covariance corrections, documented projection-effect shifts, documented differences between tension metrics and model-comparison statistics on the same data, emulator error budgets, sampler and coverage-test outcomes.
-Snapshot: 2026-10-14
+Snapshot: 2026-10-16
 
 Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named secondary source; `[der]` derived here, derivation stated.
 
@@ -173,7 +173,7 @@ The lesson for a referee: for DESI + CMB the three in-sample statistics read 3.1
 | DESI DR2 against DES-SN5YR, ΛCDM | five metrics, combined statement | 2.95 ± 0.04σ; 1.96 ± 0.04σ with DES-Dovekie | Ong et al. 2025, arXiv:2511.10631 | [src] |
 | DES Y1 internal consistency | posterior predictive p-value | 0.046; 0.10 after removing about 1.5% of the data vector | Doux et al. 2021, arXiv:2011.03410 | [src] |
 | Accuracy of non-Gaussian parameter-shift estimators | benchmark | within 0.2σ generally, 0.5σ in difficult cases | Raveri & Doux 2021, arXiv:2105.03324 | [src] |
-| KiDS-Legacy cosmic shear against Planck | as quoted in the abstract; the metric was not read | 0.73σ | Wright et al. 2025, arXiv:2503.19441 | [src] |
+| KiDS-Legacy cosmic shear against Planck | Hellinger distance: 0.73σ in Σ8 (the abstract's figure), 0.76σ in S8 [src: Sect. 7] | 0.73σ / 0.76σ | Wright et al. 2025, arXiv:2503.19441 | [src] |
 | CMB against DESI DR2 BAO, ΛCDM | as quoted by each collaboration | 1.6σ (P-ACT), 2.8σ (SPT-3G + ACT + Planck, Ω_m–h r_d plane) | arXiv:2503.14452, arXiv:2506.20707 | [src] |
 
 Two readings of the table. First, the DES Y6 pair (1.8σ and 2.6σ on the same posteriors) shows that projecting on the best-measured combination raises the figure; the full-space number is the one that accounts for the look at several parameters. Second, the quoted lensing tensions do not share a reference: KiDS compares with Planck alone, DES Y6 with a three-experiment CMB combination (noted in `cosmo-weak-lensing`).
@@ -296,7 +296,7 @@ The later frequentist values with recalibrated supernovae are in `cosmo-dark-ene
 | 2020 | DES Y1 3×2pt against Planck | ~2.3σ | parameter differences, suspiciousness, eigentension | arXiv:2012.09554 |
 | 2023 | DES Y3 + KiDS-1000 shear against Planck | 1.7σ | as quoted | arXiv:2305.17173 |
 | 2024 | KiDS-1000 SBI against CMB | 2.9σ | as quoted | arXiv:2404.15402 |
-| 2025 | KiDS-Legacy against Planck | 0.73σ | as quoted | arXiv:2503.19441 |
+| 2025 | KiDS-Legacy against Planck | 0.73σ (Σ8), 0.76σ (S8) | Hellinger distance, Sect. 7 | arXiv:2503.19441 |
 | 2026 | DES Y6 3×2pt against Planck + ACT + SPT | 1.8σ full space, 2.6σ in S8 | parameter difference, normalising flows | arXiv:2601.14559 |
 
 The entries are not comparable with each other without the metric and the CMB reference; the S8 values behind them are in `cosmo-weak-lensing`.

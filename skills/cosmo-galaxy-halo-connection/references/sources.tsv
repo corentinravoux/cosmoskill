@@ -1,0 +1,118 @@
+key	id	first_author	year	title	role
+WechslerTinker2018	1804.03097	Wechsler	2018	The Connection between Galaxies and their Dark Matter Halos	review
+Asgari2023	2303.08752	Asgari	2023	The halo model for cosmology: a pedagogical review	review
+BryanNorman1998	astro-ph/9710107	Bryan	1997	Statistical Properties of X-ray Clusters: Analytic and Numerical Comparisons	foundation
+White2001	astro-ph/0011495	White	2000	The mass of a halo	foundation
+Diemer2013	1207.0816	Diemer	2012	The pseudo-evolution of halo mass	method
+DiemerKravtsov2014	1401.1216	Diemer	2014	Dependence of the outer density profiles of halos on their mass accretion rate	foundation
+More2015	1504.05591	More	2015	The splashback radius as a physical halo boundary and the growth of halo mass	foundation
+Knebe2011	1104.0949	Knebe	2011	Haloes gone MAD: The Halo-Finder Comparison Project	method
+Tinker2008	0803.2706	Tinker	2008	Toward a halo mass function for precision cosmology: the limits of universality	foundation
+ShethMoTormen2001	astro-ph/9907024	Sheth	1999	Ellipsoidal collapse and an improved model for the number and spatial distribution of dark matter haloes	foundation
+Jenkins2001	astro-ph/0005260	Jenkins	2000	Mass function of dark matter halos	foundation
+Despali2016	1507.05627	Despali	2015	The universality of the virial halo mass function and models for non-universality of other halo definitions	method
+Bocquet2016	1502.07357	Bocquet	2015	Halo mass function: Baryon impact, fitting formulae and implications for cluster cosmology	method
+McClintock2019	1804.05866	McClintock	2018	The Aemulus Project II: Emulating the Halo Mass Function	method
+Nishimichi2019	1811.09504	Nishimichi	2018	Dark Quest. I. Fast and Accurate Emulation of Halo Clustering Statistics and Its Application to Galaxy Clustering	method
+Castro2023	2208.02174	Euclid Collaboration	2022	Euclid preparation. XXIV. Calibration of the halo mass function in $Λ(ν)$CDM cosmologies	method
+FernandezGarcia2025	2512.05847	Fernández-García	2025	A redshift-independent theoretical halo mass function validated with Uchuu simulations	results
+Zheng2026	2607.05505	Zheng	2026	The dark matter halo mass function in the $Λ\mathrm{CDM}$ cosmology at all times and over all scales -- from planetary to galaxy cluster masses	results
+Fiorilli2026	2609.10665	Fiorilli	2026	Aletheia: Emulating the halo mass function with evolution mapping	code
+MoWhite1996	astro-ph/9512127	Mo	1995	An analytic model for the spatial clustering of dark matter haloes	foundation
+ShethTormen1999	astro-ph/9901122	Sheth	1999	Large scale bias and the peak background split	foundation
+Tinker2010	1001.3162	Tinker	2010	The Large Scale Bias of Dark Matter Halos: Numerical Calibration and Model Tests	foundation
+NFW1997	astro-ph/9611107	Navarro	1996	A Universal Density Profile from Hierarchical Clustering	foundation
+Navarro2004	astro-ph/0311231	Navarro	2003	The Inner Structure of LambdaCDM Halos III: Universality and Asymptotic Slopes	foundation
+Child2018	1804.10199	Child	2018	Halo Profiles and the Concentration-Mass Relation for a ΛCDM Universe	method
+Bullock2001	astro-ph/9908159	Bullock	1999	Profiles of dark haloes: evolution, scatter, and environment	foundation
+Duffy2008	0804.2486	Duffy	2008	Dark matter halo concentrations in the Wilkinson Microwave Anisotropy Probe year 5 cosmology	method
+Ludlow2016	1601.02624	Ludlow	2016	The Mass-Concentration-Redshift Relation of Cold and Warm Dark Matter Halos	method
+DiemerJoyce2019	1809.07326	Diemer	2018	An accurate physical model for halo concentrations	method
+Delgado2026	2610.03544	Delgado	2026	Baryonic Imprints on DM Halos: the concentration-mass relation and its dependence on 28 model parameters in the CAMELS suite	results
+Diemer2018	1712.04512	Diemer	2017	COLOSSUS: A python toolkit for cosmology, large-scale structure, and dark matter halos	code
+Seljak2000	astro-ph/0001493	Seljak	2000	Analytic model for galaxy and dark matter clustering	foundation
+MaFry2000	astro-ph/0003343	Ma	2000	Deriving the Nonlinear Cosmological Power Spectrum and Bispectrum from Analytic Dark Matter Halo Profiles and Mass Functions	foundation
+PeacockSmith2000	astro-ph/0005010	Peacock	2000	Halo occupation numbers and galaxy bias	foundation
+CooraySheth2002	astro-ph/0206508	Cooray	2002	Halo Models of Large Scale Structure	review
+MeadVerde2021	2011.08858	Mead	2020	Including beyond-linear halo bias in halo models	method
+vandenBosch2013	1206.6890	van den Bosch	2012	Cosmological Constraints from a Combination of Galaxy Clustering and Lensing -- I. Theoretical Framework	method
+BerlindWeinberg2002	astro-ph/0109001	Berlind	2001	The Halo Occupation Distribution: Towards an Empirical Determination of the Relation Between Galaxies and Mass	foundation
+Kravtsov2004	astro-ph/0308519	Kravtsov	2003	The Dark Side of the Halo Occupation Distribution	foundation
+Zheng2005	astro-ph/0408564	Zheng	2004	Theoretical Models of the Halo Occupation Distribution: Separating Central and Satellite Galaxies	foundation
+Avila2020	2007.09012	Avila	2020	The Completed SDSS-IV extended Baryon Oscillation Spectroscopic Survey: exploring the Halo Occupation Distribution model for Emission Line Galaxies	results
+Rocher2023	2306.06319	Rocher	2023	The DESI One-Percent survey: exploring the Halo Occupation Distribution of Emission Line Galaxies with AbacusSummit simulations	results
+Yuan2024	2306.06314	Yuan	2023	The DESI One-Percent Survey: Exploring the Halo Occupation Distribution of Luminous Red Galaxies and Quasi-Stellar Objects with AbacusSummit	results
+Alam2020	1910.05095	Alam	2019	Multi-tracer extension of the halo model: probing quenching and conformity in eBOSS	results
+Yang2003	astro-ph/0207019	Yang	2002	Constraining Galaxy Formation and Cosmology with the Conditional Luminosity Function of Galaxies	foundation
+Cacciato2009	0807.4932	Cacciato	2008	Galaxy Clustering & Galaxy-Galaxy Lensing: A Promising Union to Constrain Cosmological Parameters	method
+ZuMandelbaum2015	1505.02781	Zu	2015	Mapping stellar content to dark matter halos using galaxy clustering and galaxy-galaxy lensing in the SDSS DR7	results
+Zehavi2011	1005.2413	Zehavi	2010	Galaxy Clustering in the Completed SDSS Redshift Survey: The Dependence on Color and Luminosity	results
+White2011	1010.4915	White	2010	The clustering of massive galaxies at z~0.5 from the first semester of BOSS data	results
+Zhai2017	1607.05383	Zhai	2016	The clustering of luminous red galaxies at z $\sim$ 0.7 from eBOSS and BOSS data	results
+Cacciato2013	1207.0503	Cacciato	2012	Cosmological Constraints from a Combination of Galaxy Clustering and Lensing -- III. Application to SDSS Data	results
+ValeOstriker2004	astro-ph/0402500	Vale	2004	Linking halo mass to galaxy luminosity	foundation
+Conroy2006	astro-ph/0512234	Conroy	2005	Modeling Luminosity-Dependent Galaxy Clustering Through Cosmic Time	foundation
+Behroozi2010	1001.0015	Behroozi	2010	A Comprehensive Analysis of Uncertainties Affecting the Stellar Mass - Halo Mass Relation for 0<z<4	method
+Reddick2013	1207.2160	Reddick	2012	The Connection between Galaxies and Dark Matter Structures in the Local Universe	results
+Lehmann2017	1510.05651	Lehmann	2015	The Concentration Dependence of the Galaxy-Halo Connection: Modeling Assembly Bias with Abundance Matching	method
+Moster2010	0903.4682	Moster	2009	Constraints on the relationship between stellar mass and halo mass at low and high redshift	foundation
+Moster2013	1205.5807	Moster	2012	Galactic star formation and accretion histories from matching galaxies to dark matter haloes	method
+Behroozi2013	1207.6105	Behroozi	2012	The Average Star Formation Histories of Galaxies in Dark Matter Halos from z=0-8	method
+Leauthaud2012	1104.0928	Leauthaud	2011	New constraints on the evolution of the stellar-to-dark matter connection: a combined analysis of galaxy-galaxy lensing, clustering, and stellar mass functions from z=0.2 to z=1	results
+Zacharegkas2025	2506.22367	Zacharegkas	2025	Constraining the Stellar-to-Halo Mass Relation with Galaxy Clustering and Weak Lensing from DES Year 3 Data	results
+Kravtsov2018	1401.7329	Kravtsov	2014	Stellar mass -- halo mass relation and star formation efficiency in high-mass halos	results
+Shuntov2022	2203.10895	Shuntov	2022	COSMOS2020: The cosmic evolution of the stellar-to-halo mass relation for central and satellite galaxies up to z~5	results
+Shao2026	2609.04351	Shao	2026	Extending the Stellar-to-Halo Mass Relation to Dwarf Galaxies with DESI DR1	results
+Xu2026	2603.29331	Xu	2026	PAC in DESI. II. Galaxy-halo connection into the $10^{6}{\rm M}_{\odot}$ frontier	results
+Stylianou2026	2610.19030	Stylianou	2026	The connection between massive galaxies and their dark matter haloes from $z=0.25$ to $z \sim 4$ from the combined COSMOS, XMM-LSS and ECDF-S fields	results
+HearinWatson2013	1304.5557	Hearin	2013	The Dark Side of Galaxy Color	method
+Moster2018	1705.05373	Moster	2017	EMERGE - An empirical model for the formation of galaxies since $z\sim10$	method
+Behroozi2019	1806.07893	Behroozi	2018	UniverseMachine: The Correlation between Galaxy Growth and Dark Matter Halo Assembly from z=0-10	method
+SomervilleDave2015	1412.2712	Somerville	2014	Physical Models of Galaxy Formation in a Cosmological Framework	review
+Henriques2015	1410.0365	Henriques	2014	Galaxy formation in the Planck Cosmology - I. Matching the observed evolution of star formation rates, colours and stellar masses	method
+Lacey2016	1509.08473	Lacey	2015	A unified multi-wavelength model of galaxy formation	method
+Lagos2018	1807.11180	Lagos	2018	Shark: introducing an open source, free and flexible semi-analytic model of galaxy formation	code
+Knebe2015	1505.04607	Knebe	2015	nIFTy Cosmology: Comparison of Galaxy Formation Models	critique
+CrainvandeVoort2023	2309.17075	Crain	2023	Hydrodynamical simulations of the galaxy population: enduring successes and outstanding challenges	review
+Yuan2022TNG	2202.12911	Yuan	2022	Illustrating galaxy-halo connection in the DESI era with IllustrisTNG	results
+Gao2005	astro-ph/0506510	Gao	2005	The age dependence of halo clustering	foundation
+Wechsler2006	astro-ph/0512416	Wechsler	2005	The Dependence of Halo Clustering on Halo Formation History, Concentration, and Occupation	foundation
+Villarreal2017	1705.04327	Villarreal	2017	The Immitigable Nature of Assembly Bias: The Impact of Halo Definition on Assembly Bias	method
+Mansfield2019	1902.00030	Mansfield	2019	The Three Causes of Low-Mass Assembly Bias	method
+Croton2007	astro-ph/0605636	Croton	2006	Halo assembly bias and its effects on galaxy clustering	foundation
+Zentner2014	1311.1818	Zentner	2013	Galaxy Assembly Bias: A Significant Source of Systematic Error in the Galaxy-Halo Relationship	systematics
+Hearin2016	1512.03050	Hearin	2015	Introducing Decorated HODs: modeling assembly bias in the galaxy-halo connection	method
+Yuan2021	2010.04182	Yuan	2020	Evidence for galaxy assembly bias in BOSS CMASS redshift-space galaxy correlation function	results
+Zentner2019	1606.07817	Zentner	2016	Constraints on Assembly Bias from Galaxy Clustering	results
+Shao2025	2510.20896	Shao	2025	Direct Measurement of Galaxy Assembly Bias using DESI DR1 Data	results
+Rodriguez2025	2511.19607	Rodriguez	2025	Connecting clustering and the cosmic web:Observational constraints on secondary halo bias	results
+Miyatake2016	1506.06135	Miyatake	2015	Evidence of Halo Assembly Bias in Massive Clusters	results
+Zu2017	1611.00366	Zu	2016	On the Level of Cluster Assembly Bias in SDSS	critique
+Sunayama2019	1905.07557	Sunayama	2019	On the measurements of assembly bias and splashback radius using optically selected galaxy clusters	critique
+Busch2017	1702.01682	Busch	2017	Assembly Bias and Splashback in Galaxy Clusters	critique
+Kakos2024	2403.01393	Kakos	2024	Star-forming and Quiescent Central Galaxies Cluster Similarly: Implications for the Galaxy-Halo Connection	results
+Paquereau2026	2606.31978	Paquereau	2026	COSMOS-Web: does halo mass alone shape the clustering of star-forming and quiescent galaxies?	results
+Weinmann2006	astro-ph/0509147	Weinmann	2005	Properties of Galaxy Groups in the SDSS: I.-- The Dependence of Colour, Star Formation, and Morphology on Halo Mass	foundation
+Kauffmann2013	1209.3306	Kauffmann	2012	A Re-examination of Galactic Conformity and a Comparison with Semi-analytic Models of Galaxy Formation	results
+Yang2007	0707.4640	Yang	2007	Galaxy Groups in the SDSS DR4: I. The Catalogue and Basic Properties	data
+Williams2026	2610.20919	Williams	2026	Self Calibrated Galaxy Groups from the DESI DR1 Bright Galaxy Survey	data
+More2011	1003.3203	More	2010	Satellite Kinematics III: Halo Masses of Central Galaxies in SDSS	results
+Mitra2024	2409.03105	Mitra	2024	BASILISK II. Improved Constraints on the Galaxy-Halo Connection from Satellite Kinematics in SDSS	method
+Mitra2025	2512.14889	Mitra	2025	BASILISK IV. No $S_8$ Tension with Satellite Kinematics	results
+Guo2015	1407.4811	Guo	2014	Velocity Bias from the Small Scale Clustering of SDSS-III BOSS Galaxies	results
+Leauthaud2017	1611.08606	Leauthaud	2016	Lensing is Low: Cosmology, Galaxy Formation, or New Physics?	results
+Lange2021	2011.02377	Lange	2020	On the halo-mass and radial scale dependence of the lensing is low effect	results
+Amon2023	2202.07440	Amon	2022	Consistent lensing and clustering in a low-$S_8$ Universe with BOSS, DES Year 3, HSC Year 1 and KiDS-1000	results
+Zu2021	2010.01143	Zu	2020	On the "Lensing is Low" of BOSS Galaxies	critique
+ChavesMontero2023	2211.01744	Chaves-Montero	2022	The galaxy formation origin of the lensing is low problem	critique
+Contreras2023	2305.09637	Contreras	2023	Consistent clustering and lensing of SDSS-III BOSS galaxies with an extended abundance matching formalism	critique
+Luo2025	2502.09404	Luo	2025	Photometric Objects Around Cosmic Webs (PAC) Delineated in a Spectroscopic Survey. VIII. Revisiting the Lensing is Low Effect	results
+Campbell2026	2606.23651	Campbell	2026	Revisiting the 'Lensing is Low' Problem with UNIONS	results
+Heydenreich2025	2508.05746	Heydenreich	2025	Can dynamic dark energy explain the $S_8$ tension, the `lensing is low' effect, or strong baryon feedback?	critique
+Mandelbaum2013	1207.1120	Mandelbaum	2012	Cosmological parameter constraints from galaxy-galaxy lensing and galaxy clustering with the SDSS DR7	results
+Miyatake2022	2111.02419	Miyatake	2021	Cosmological inference from the emulator based halo model II: Joint analysis of galaxy-galaxy weak lensing and galaxy clustering from HSC-Y1 and SDSS	results
+Dvornik2023	2210.03110	Dvornik	2022	KiDS-1000: Combined halo-model cosmology constraints from galaxy abundance, galaxy clustering and galaxy-galaxy lensing	results
+Mahony2025	2507.01601	Mahony	2025	Cosmological constraints from galaxy clustering and galaxy-galaxy lensing with extended SubHalo Abundance Matching	results
+Lange2025	2512.15962	Lange	2025	Cosmological Constraints from Full-Scale Clustering and Galaxy-Galaxy Lensing with DESI DR1	results
+Chen2024	2407.04795	Chen	2024	Not all lensing is low: An analysis of DESI$\times$DES using the Lagrangian Effective Theory of LSS	results
+Sinha2018	1708.04892	Sinha	2017	Towards Accurate Modelling of Galaxy Clustering on Small Scales: Testing the Standard $Λ\mathrm{CDM}$ + Halo Model	critique

@@ -60,8 +60,8 @@ Hou2022	2206.03625	Hou	2022	Measurement of Parity-Odd Modes in the Large-Scale 4
 Krolewski2024	2407.03397	Krolewski	2024	No evidence for parity violation in BOSS	critique
 Slepian2025	2508.09133	Slepian	2025	Measurement of Parity-Violating Modes of the Dark Energy Spectroscopic Instrument (DESI) Year 1 Luminous Red Galaxies' 4-Point Correlation Function	results
 Lemos2021	2012.09554	Lemos	2020	Assessing tension metrics with Dark Energy Survey and Planck data	method
-HandleyLemos2019	1902.04029	Handley	2019	Quantifying tensions in cosmological parameters: Interpreting the DES evidence ratio	method
-RaveriHu2019	1806.04649	Raveri	2018	Concordance and Discordance in Cosmology	method
+HandleyLemos2019	1902.04029	Handley	2019	Quantifying tensions in cosmological parameters: Interpreting the DES evidence ratio	foundation
+RaveriHu2019	1806.04649	Raveri	2018	Concordance and Discordance in Cosmology	foundation
 Charnock2017	1703.05959	Charnock	2017	Planck confronts large scale structure: methods to quantify discordance	method
 DiValentino2025	2504.01669	Di Valentino	2025	The CosmoVerse White Paper: Addressing observational tensions in cosmology with systematics and fundamental physics	review
 Schoneberg2022	2107.10291	Schöneberg	2021	The $H_0$ Olympics: A fair ranking of proposed models	review
@@ -99,3 +99,9 @@ Schoneberg2026	2607.13283	Schöneberg	2026	The $H_0$ world cup. II. A comprehens
 Sabogal2026	2607.21244	Sabogal	2026	Hubble tension: the shape wall	critique
 LeeZhou2026	2606.06495	Lee	2026	What it takes to solve the Hubble tension through Modifications of Cosmological Recombination II: in light of ACT DR6 and DESI DR2	results
 Krolewski2025	2511.23432	Krolewski	2025	A measurement of $H_0$ from DESI DR1 using energy densities	results
+Marshall2006	astro-ph/0412535	Marshall	2004	Bayesian evidence as a tool for comparing datasets	foundation
+ParkRozo2019	1907.05798	Park	2019	Concordance Cosmology?	foundation
+LinIshak2017	1705.05303	Lin	2017	Cosmological discordances: a new measure, marginalization effects, and application to geometry vs growth current data sets	foundation
+Raveri2020	1912.04880	Raveri	2019	Quantifying concordance of correlated cosmological data sets	method
+RaveriDoux2021	2105.03324	Raveri	2021	Non-Gaussian estimates of tensions in cosmological parameters	method
+Bevins2024	2407.15478	Bevins	2024	Calibrating Bayesian Tension Statistics using Neural Ratio Estimation	method

@@ -2,7 +2,7 @@
 
 Scope: which data sets enter each tension and what is shared between them.
 
-Snapshot: 2026-10-07
+Snapshot: 2026-10-16
 
 Flags as in `results.md`: `[src]` read this session in the cited paper;
 `[sec: X]` taken from the reference files of sibling skill X; `[der]`
@@ -187,7 +187,7 @@ What is shared: the SED-fitting assumptions behind every stellar mass, and, for 
 
 | Ingredient | Tensions it enters | Consequence |
 |---|---|---|
-| Planck low-ℓ EE (τ) | CMB–BAO discrepancy, w0wa, neutrino mass, n_s, S8 reference through A_s | a "single-point failure" in the words of arXiv:2504.16932 [sec: cmb]; τ ≈ 0.09 would reduce the w0wa preference to about 1.5σ and remove the neutrino tension |
+| Planck low-ℓ EE (τ) | CMB–BAO discrepancy, w0wa, neutrino mass, n_s, S8 reference through A_s | a "single-point failure" in the words of arXiv:2504.16932 [sec: cmb]; a τ = 0.09 prior reduces the w0wa preference to 1.4σ and brings the effective neutrino mass to 0.01 ± 0.06 eV, 0.9σ from the normal-ordering minimum (arXiv:2504.16932) [src: Sect. III.1, III.2] |
 | Planck high-ℓ TT smoothing | A_L, Ω_K < 0, Σ0 in modified-gravity fits, part of the neutrino-mass preference | one feature, four parameters [sec: cmb, inf, de] |
 | Ω_m mismatch between DESI BAO (0.2975 ± 0.0086) and the CMB (0.3175 ± 0.0055 for CMB-SPA) | CMB–BAO discrepancy, w0wa, negative neutrino mass, Ω_K > 0, the rise of n_s in CMB + BAO fits, the limit on modified-recombination models | one mismatch read in six ways [sec: cmb, de, nu, inf; arXiv:2606.06495 src] |
 | Low-redshift supernovae (z < 0.1) | H0 intercept, w0wa, supernova dipole | the same objects anchor the ladder and tilt the dark-energy fit [sec: h0, de] |

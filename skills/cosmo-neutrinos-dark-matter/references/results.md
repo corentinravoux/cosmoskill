@@ -1,7 +1,7 @@
 # Results — neutrino mass, light relics and dark-matter properties from cosmological data
 
 Scope: current headline constraints with dataset, model and provenance, then the history of each key number.
-Snapshot: 2026-10-14
+Snapshot: 2026-10-16
 
 Flags: `[src]` read in the cited paper this session; `[sec]` taken from a named secondary source; `[der]` derived here, derivation stated.
 All Σm_ν upper limits are 95% credible or confidence limits unless stated. "CMB" in DESI papers means Planck PR3 low-ℓ (SimAll, Commander) + PR4 CamSpec high-ℓ + Planck PR4 and ACT DR6 lensing (arXiv:2503.14744).
@@ -99,7 +99,7 @@ Independent analyses in extended dark-energy models:
 |---|---|---|---|
 | τ preferred by DESI BAO + high-ℓ CMB + CMB lensing in ΛCDM, no low-ℓ EE | 0.090 ± 0.012, 3–5σ from Planck low-ℓ polarisation | Sailer et al. 2025, arXiv:2504.16932 | [src] |
 | Same question, independent analysis | τ = 0.091 ± 0.011; neutrino tension at Σm_ν = 0.06 eV removed; w0wa preference below 95% CL | Jhaveri, Karwal & Hu 2025, arXiv:2504.21813 | [src] |
-| With τ ≈ 0.09 | w0wa preference falls from about 3σ to about 1.5σ; n_s = 0.968 ± 0.004, H0 = 67.94 ± 0.44 km/s/Mpc | arXiv:2504.16932 | [src] |
+| With τ ≈ 0.09 | w0wa preference falls from about 3σ to 1.4σ (Δχ²_MAP = −3.82) [src: Sect. III.2]; n_s = 0.968 ± 0.004, H0 = 67.94 ± 0.44 km/s/Mpc | arXiv:2504.16932 | [src] |
 | DESI DR2 BAO + CMB, τ fixed at 0.067 or 0.074 (about 2σ or 3σ above the baseline 0.054 ± 0.007) | tension of Σm_ν,eff with oscillations remains at 2.3σ or 1.7σ; without large-scale polarisation the tension "could be explained as a ∼2σ statistical fluctuation" | arXiv:2503.14744 §5.2.1 | [src] |
 | P-ACT-LB with the SRoll2 error doubled, prior τ = 0.057 ± 0.012 | Σm_ν < 0.10 eV | arXiv:2503.14454 appendix on DESI DR2 and τ | [src] |
 | P-ACT-LB without SRoll2 (τ from lensing in the spectra) | Σm_ν < 0.19 eV | same | [src] |

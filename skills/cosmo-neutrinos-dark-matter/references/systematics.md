@@ -1,7 +1,7 @@
 # Systematics — neutrino mass, light relics and dark-matter properties from structure
 
 Scope: what can move or fake each bound in `results.md`: the mechanism, its measured size, the standard mitigation, the validation test, and the paper a referee expects cited. Ends with the referee checklist.
-Snapshot: 2026-10-14
+Snapshot: 2026-10-16
 
 Flags: `[src]` read in the cited paper this session; `[sec]` taken from a named secondary source; `[der]` derived here, derivation stated.
 
@@ -87,7 +87,7 @@ The SN samples are not independent: the DESY5 low-redshift (z < 0.1) sample come
 | Same, large-scale polarisation excluded | tension "could be explained as a ∼2σ statistical fluctuation" | arXiv:2503.14744 §5.2.1 | [src] |
 | P-ACT-LB, prior widened to τ = 0.057 ± 0.012 | Σm_ν < 0.089 eV becomes < 0.10 eV: "minimal impact" | Calabrese et al. 2025, arXiv:2503.14454 appendix | [src] |
 | P-ACT-LB, SRoll2 removed | Σm_ν < 0.19 eV; τ = 0.081 ± 0.016 is then measured from lensing in the spectra | arXiv:2503.14454 appendix | [src] |
-| No low-ℓ EE, DESI BAO + high-ℓ CMB + lensing | τ = 0.090 ± 0.012; w0wa preference from about 3σ to about 1.5σ | Sailer et al. 2025, arXiv:2504.16932 | [src] |
+| No low-ℓ EE, DESI BAO + high-ℓ CMB + lensing | τ = 0.090 ± 0.012; w0wa preference from about 3σ to 1.4σ (Δχ²_MAP = −3.82) [src: Sect. III.2] | Sailer et al. 2025, arXiv:2504.16932 | [src] |
 | No low-ℓ EE, no lensing constraints | τ = 0.091 ± 0.011; neutrino tension at 0.06 eV removed | Jhaveri, Karwal & Hu 2025, arXiv:2504.21813 | [src] |
 | Imposed prior τ = 0.11 ± 0.006 | Σm_ν = 0.10 (+0.04/−0.05) eV | Sullivan, de Belsunce & Ivanov 2026, arXiv:2606.30903 | [src] |
 

@@ -87,7 +87,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; open 7k; methods 15k; results 7k; surveys 7k; systematics 7k.
+Sizes, in thousands of tokens: L1 2k; open 7k; methods 18k; results 7k; surveys 9k; systematics 9k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

@@ -3,7 +3,7 @@
 Scope: live controversies in cosmic shear and galaxy–galaxy lensing, with both
 sides cited; what the next data decide; claims that still circulate and the
 papers that correct them.
-Snapshot: 2026-10-12
+Snapshot: 2026-10-16
 
 Flags: `[src]` read this session in the cited paper; `[sec]` from a named
 secondary source; `[der]` derived here. A flag that names a place, as in
@@ -14,8 +14,8 @@ secondary source; `[der]` derived here. A flag that names a place, as in
 
 The two final Stage-III analyses disagree about it.
 
-- **KiDS-Legacy says yes.** S8 = 0.815 +0.016/−0.021, 0.73σ from Planck
-  Legacy; the paper attributes the rise relative to earlier KiDS results
+- **KiDS-Legacy says yes.** S8 = 0.815 +0.016/−0.021, 0.76σ from Planck
+  Legacy in S8 (0.73σ in Σ8; arXiv:2503.19441, Sect. 7); the paper attributes the rise relative to earlier KiDS results
   mainly to improved redshift-distribution estimation and calibration, plus
   new area and improved image reduction (Wright et al. 2025, arXiv:2503.19441)
   [src]. The joint second- and third-order analysis reports "no evidence for

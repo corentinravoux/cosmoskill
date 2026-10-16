@@ -1,0 +1,111 @@
+key	id	first_author	year	title	role
+NewmanGruen2022	2206.13633	Newman	2022	Photometric Redshifts for Next-Generation Surveys	review
+TortorelliGrun2026	2605.06790	Tortorelli	2026	Machine Learning Techniques for Astrophysics and Cosmology: Photometric Redshifts	review
+Padmanabhan2008	astro-ph/0703454	Padmanabhan	2007	An Improved Photometric Calibration of the Sloan Digital Sky Survey Imaging Data	foundation
+Schlafly2012	1201.2208	Schlafly	2012	Photometric Calibration of the First 1.5 Years of the Pan-STARRS1 Survey	method
+Wittman2012	1111.2058	Wittman	2011	Ubercalibration of the Deep Lens Survey	method
+Burke2018	1706.01542	Burke	2017	Forward Global Photometric Calibration of the Dark Energy Survey	method
+Rykoff2023	2305.01695	Rykoff	2023	The Dark Energy Survey Six-Year Calibration Star Catalog	data
+StubbsTonry2006	astro-ph/0604285	Stubbs	2006	Toward 1% Photometry: End-to-end Calibration of Astronomical Telescopes and Detectors	foundation
+Amouroux2026	2606.31822	Amouroux	2026	Early Telescope Throughput Results from the Collimated Beam Projector at the Vera C. Rubin Observatory	method
+Sommer2025	2511.00182	Sommer	2025	StarDICE IV: correcting visible photometry from atmospheric gray extinction using thermal infrared observations	method
+BohlinLandolt2015	1502.01754	Bohlin	2015	The CALSPEC Stars P177D and P330E	data
+BohlinDeustua2019	1903.11985	Bohlin	2019	CALSPEC: WFC3 IR Grism Spectrophotometry	data
+Bohlin2014	1403.6861	Bohlin	2014	HST CALSPEC Flux Standards: Sirius (and Vega)	data
+Montegriffo2022	2206.06215	Gaia Collaboration	2022	Gaia Data Release 3: The Galaxy in your preferred colours. Synthetic photometry from Gaia low-resolution spectra	data
+Xiao2023JPLUS	2309.11225	Xiao	2023	J-PLUS: Photometric Re-calibration with the Stellar Color Regression Method and an Improved Gaia XP Synthetic Photometry Method	method
+Xiao2023SPLUS	2309.11533	Xiao	2023	S-PLUS: Photometric Re-calibration with the Stellar Color Regression Method and an Improved Gaia XP Synthetic Photometry Method	method
+Xiao2026	2601.05486	Xiao	2026	A Large and Precise All-Sky Photometric Standard Star Dataset Across More Than 200 Passbands	data
+Zhou2026	2606.11587	Zhou	2026	Recalibration of SDSS photometric zero-points based on the InfraRed Flux Method temperature scale	method
+Dey2019	1804.08657	Dey	2018	Overview of the DESI Legacy Imaging Surveys	data
+Li2016	1601.00117	Li	2016	Assessment of Systematic Chromatic Errors that Impact Sub-1% Photometric Precision in Large-Area Sky Surveys	systematics
+Schlegel1998	astro-ph/9710327	Schlegel	1997	Maps of Dust IR Emission for Use in Estimation of Reddening and CMBR Foregrounds	foundation
+SchlaflyFinkbeiner2011	1012.4804	Schlafly	2010	Measuring Reddening with SDSS Stellar Spectra and Recalibrating SFD	method
+Chiang2023	2306.03926	Chiang	2023	Corrected SFD: A More Accurate Galactic Dust Map with Minimal Extragalactic Contamination	method
+ChiangMenard2019	1808.03294	Chiang	2018	Extragalactic Imprints in Galactic Dust Maps	systematics
+Zhou2024	2409.05140	Zhou	2024	Stellar reddening map from DESI imaging and spectroscopy	data
+Bolzonella2000	astro-ph/0003380	Bolzonella	2000	Photometric Redshifts based on standard SED fitting procedures	foundation
+Benitez2000	astro-ph/9811189	Benitez	1998	Bayesian photometric redshift estimation	foundation
+Ilbert2006	astro-ph/0603217	Ilbert	2006	Accurate photometric redshifts for the CFHT Legacy Survey calibrated using the VIMOS VLT Deep Survey	method
+Brammer2008	0807.1533	Brammer	2008	EAZY: A Fast, Public Photometric Redshift Code	code
+CollisterLahav2004	astro-ph/0311058	Collister	2003	ANNz: estimating photometric redshifts using artificial neural networks	foundation
+CarrascoKind2013	1303.7269	Carrasco Kind	2013	TPZ : Photometric redshift PDFs and ancillary information by using prediction trees and random forests	code
+DeVicente2016	1511.07623	De Vicente	2015	DNF - Galaxy photometric redshift by Directional Neighbourhood Fitting	code
+Almosallam2016	1604.03593	Almosallam	2016	GPz: Non-stationary sparse Gaussian processes for heteroscedastic uncertainty estimation in photometric redshifts	code
+Pasquet2019	1806.06607	Pasquet	2018	Photometric redshifts from SDSS images using a Convolutional Neural Network	method
+Treyer2025	2512.11700	Treyer	2025	The Domain Adaptation problem in photometric redshift estimation: a solution applied to the HSC Survey	method
+Ashmead2025	2512.09032	Ashmead	2025	Optimizing Photometric Redshift Training Sets I: Efficient Compression of the Galaxy Color-Redshift Relation with UMAP	method
+Crafford2026	2601.10797	Crafford	2026	Diagnosing the Effects of Spectroscopic Training Set Imperfection on Photometric Redshift Performance	systematics
+Puebla2026	2607.07771	Puebla	2026	Infrared-enhanced Photometric Redshifts for the Dark Energy Survey Y6 Gold catalogue	results
+Zhang2025RAIL	2510.07370	Zhang	2025	Photometric Redshift Estimation for Rubin Observatory Data Preview 1 with Redshift Assessment Infrastructure Layers (RAIL)	results
+Dey2026	2604.06143	Dey	2026	Deep Spectroscopy with DESI for Photometric Redshift Training and Calibration	data
+Wittje2026	2606.25812	Wittje	2026	The PAU Survey and Euclid: Analysing photometric redshifts from realistically simulated narrow-band photometry with Flagship 2	results
+Li2026	2610.00999	Li	2026	Weak-Lensing Shear Response for Photometric Redshift-Based Tomographic Binning	systematics
+MalzHogg2020	2007.12178	Malz	2020	How to obtain the redshift distribution from probabilistic redshift estimates	method
+Leistedt2016	1602.05960	Leistedt	2016	Hierarchical Bayesian inference of galaxy redshift distributions from photometric surveys	foundation
+SanchezBernstein2019	1807.11873	Sánchez	2018	Redshift inference from the combination of galaxy colors and clustering in a hierarchical Bayesian model	method
+Alarcon2020	1910.07127	Alarcon	2019	Redshift inference from the combination of galaxy colors and clustering in a hierarchical Bayesian model $-$ Application to realistic $N$-body simulations	method
+Alsing2023	2207.05819	Alsing	2022	Forward modeling of galaxy populations for cosmological redshift distribution inference	method
+Alsing2024	2402.00935	Alsing	2024	pop-cosmos: A comprehensive picture of the galaxy population from COSMOS data	method
+Halder2026	2602.03930	Halder	2026	pop-cosmos: Redshifts and physical properties of KiDS-1000 galaxies	results
+Fischbacher2024	2412.08701	Fischbacher	2024	GalSBI: Phenomenological galaxy population model for cosmology using simulation-based inference	method
+Fischbacher2024code	2412.08722	Fischbacher	2024	galsbi: A Python package for the GalSBI galaxy population model	code
+Tortorelli2025	2505.21610	Tortorelli	2025	GalSBI-SPS: a stellar population synthesis-based galaxy population model for cosmology and galaxy evolution applications	method
+Fischbacher2026	2606.23783	Fischbacher	2026	GalSBI: Forward Modelling Galaxy Clustering and Population	method
+Frediani2026	2609.26594	Frediani	2026	Data-driven Galaxy Population Prior for Photometric Redshifts	method
+Lima2008	0801.3822	Lima	2008	Estimating the Redshift Distribution of Faint Galaxy Samples	foundation
+Masters2015	1509.03318	Masters	2015	Mapping the Galaxy Color-Redshift Relation: Optimal Photometric Redshift Calibration Strategies for Cosmology Surveys	foundation
+Wright2020	1909.09632	Wright	2019	Photometric Redshift Calibration with Self Organising Maps	method
+Buchs2019	1901.05005	Buchs	2019	Phenotypic redshifts with self-organizing maps: A novel method to characterize redshift distributions of source galaxies for weak lensing	method
+Myles2021	2012.08566	Myles	2020	Dark Energy Survey Year 3 Results: Redshift Calibration of the Weak Lensing Source Galaxies	results
+Yin2025	2510.23566	Yin	2025	Dark Energy Survey Year 6 Results: Redshift Calibration of the Weak Lensing Source Galaxies	results
+Wright2025	2503.19440	Wright	2025	KiDS-Legacy: Redshift distributions and their calibration	results
+Rau2023	2211.16516	Rau	2022	Weak Lensing Tomographic Redshift Distribution Inference for the Hyper Suprime-Cam Subaru Strategic Program three-year shape catalogue	results
+Roster2025	2508.02779	Roster	2025	Euclid: Photometric redshift calibration with self-organising maps	method
+Kang2026	2601.02005	Kang	2026	Euclid: Improving redshift distribution reconstruction using a deep-to-wide transfer function	method
+Naidoo2023	2208.10503	Naidoo	2022	Euclid: Calibrating photometric redshifts with spectroscopic cross-correlations	method
+dAssignies2025Euclid	2505.10416	d'Assignies	2025	Euclid: Photometric redshift calibration with the clustering redshifts technique	method
+Paltani2024	2310.14716	Euclid Collaboration	2023	Euclid preparation. XXXI. The effect of the variations in photometric passbands on photometric-redshift accuracy	systematics
+Tucci2025	2503.15306	Euclid Collaboration	2025	Euclid Quick Data Release (Q1). Photometric redshifts and physical properties of galaxies through the PHZ processing function	results
+Newman2008	0805.1409	Newman	2008	Calibrating Redshift Distributions Beyond Spectroscopic Limits with Cross-Correlations	foundation
+Menard2013	1303.4722	Ménard	2013	Clustering-based redshift estimation: method and application to data	foundation
+vandenBusch2020	2007.01846	van den Busch	2020	Testing KiDS cross-correlation redshifts with simulations	method
+Gatti2022	2012.08569	Gatti	2020	Dark Energy Survey Year 3 Results: Clustering Redshifts -- Calibration of the Weak Lensing Source Redshift Distributions with redMaGiC and BOSS/eBOSS	results
+dAssignies2025DES	2510.23565	d'Assignies	2025	Dark Energy Survey Year 6 Results: Clustering-redshifts and importance sampling of Self-Organised-Maps $n(z)$ realizations for $3\times2$pt samples	results
+Blanco2025	2512.15964	Blanco	2025	The Power of DESI for Photometric Redshift Calibration: A Case Study with KiDS-1000	results
+Lange2025	2510.25419	Lange	2025	A Unified Photometric Redshift Calibration for Weak Lensing Surveys using the Dark Energy Spectroscopic Instrument	results
+JainTaylor2003	astro-ph/0306046	Jain	2003	Cross-correlation Tomography: Measuring Dark Energy Evolution with Weak Lensing	foundation
+Sanchez2022	2105.13542	Sánchez	2021	Dark Energy Survey Year 3 Results: Exploiting small-scale information with lensing shear ratios	method
+CarrascoKind2014	1404.6442	Carrasco Kind	2014	Sparse Representation of Photometric Redshift PDFs: Preparing for Petascale Astronomy	method
+Malz2018	1806.00014	Malz	2018	Approximating photo-$z$ PDFs for large surveys	code
+Schmidt2020	2001.03621	Schmidt	2020	Evaluation of probabilistic photometric redshift estimation approaches for The Rubin Observatory Legacy Survey of Space and Time (LSST)	results
+Desprez2020	2009.12112	Euclid Collaboration	2020	Euclid preparation: X. The Euclid photometric-redshift challenge	results
+Hildebrandt2010	1008.0658	Hildebrandt	2010	PHAT: PHoto-z Accuracy Testing	results
+Dahlen2013	1308.5353	Dahlen	2013	A Critical Assessment of Photometric Redshift Methods: A CANDELS Investigation	results
+DESCSRD2018	1809.01669	The LSST Dark Energy Science Collaboration	2018	The LSST Dark Energy Science Collaboration (DESC) Science Requirements Document	forecast
+RAIL2025	2505.02928	The RAIL Team	2025	Redshift Assessment Infrastructure Layers (RAIL): Rubin-era photometric redshift stress-testing and at-scale production	code
+Masters2017	1704.06665	Masters	2017	The Complete Calibration of the Color-Redshift Relation (C3R2) Survey: Survey Overview and Data Release 1	data
+Stanford2021	2106.11367	Euclid Collaboration	2021	Euclid Preparation: XIV. The Complete Calibration of the Color-Redshift Relation (C3R2) Survey: Data Release 3	data
+McCullough2024	2309.13109	McCullough	2023	DESI Complete Calibration of the Color-Redshift Relation (DC3R2): Results from early DESI data	data
+Newman2013	1309.5384	Newman	2013	Spectroscopic Needs for Imaging Dark Energy Experiments: Photometric Redshift Training and Calibration	review
+Hartley2020	2003.10454	Hartley	2020	The impact of spectroscopic incompleteness in direct calibration of redshift distributions for weak lensing surveys	systematics
+GruenBrimioulle2017	1610.01160	Gruen	2016	Selection biases in empirical p(z) methods for weak lensing	systematics
+Weaver2022	2110.13923	Weaver	2021	COSMOS2020: A panchromatic view of the Universe to $z\sim10$ from two complementary catalogs	data
+Shuntov2025	2506.03243	Shuntov	2025	COSMOS2025: The COSMOS-Web galaxy catalog of photometry, morphology, redshifts, and physical parameters from JWST, HST, and ground-based imaging	data
+Marti2014	1402.3220	Martí	2014	Precise photometric redshifts with a narrow-band filter set: The PAU Survey at the William Herschel Telescope	forecast
+Eriksen2019	1809.04375	Eriksen	2018	The PAU Survey: Early demonstration of photometric redshift performance in the COSMOS field	results
+NavarroGirones2023	2312.07581	Navarro-Gironés	2023	The PAU Survey: Photometric redshift estimation in deep wide fields	results
+Feder2023	2312.04636	Feder	2023	The Universe SPHEREx Will See: Empirically Based Galaxy Simulations and Redshift Predictions	forecast
+Huai2025	2510.01410	Huai	2025	Simulating Spectral Confusion in SPHEREx Photometry and Redshifts	systematics
+Leistedt2026	2602.03935	Leistedt	2026	pop-cosmos: Forward modeling KiDS-1000 redshift distributions using realistic galaxy populations	results
+Kyriacou2026	2605.15078	Kyriacou	2026	KiDS+VIKING-450 cosmology with Bayesian hierarchical model redshift distributions	results
+Hang2026	2601.16962	Hang	2026	Calibrating redshift distributions at $z>2$ with Lyman-$α$ forest cross-correlations	forecast
+Chiang2026	2608.03415	Chiang	2026	Tomographer: End-to-end Redshift Distribution Estimation for Source Catalogs and Intensity Maps	code
+RuizZapatero2026	2604.24425	Ruiz-Zapatero	2026	Propagating data-driven galaxy redshift distribution uncertainties in 3$\times$2-pt analyses	method
+Bertmann2026	2604.00805	Euclid Collaboration	2026	Euclid preparation. Impact of redshift distribution uncertainties on the joint analysis of photometric galaxy clustering and weak gravitational lensing	forecast
+Zhang2026	2609.15542	Zhang	2026	Anisotropic redshift distributions in photometric galaxy clustering and their cosmological impact	systematics
+Duncan2022	2203.01949	Duncan	2022	All-purpose, all-sky photometric redshifts for the Legacy Imaging Surveys Data Release 8	data
+Tanaka2018	1704.05988	Tanaka	2017	Photometric Redshifts for Hyper Suprime-Cam Subaru Strategic Program Data Release 1	data
+Nishizawa2020	2003.01511	Nishizawa	2020	Photometric Redshifts for the Hyper Suprime-Cam Subaru Strategic Program Data Release 2	data
+Giannini2025	2509.07964	Giannini	2025	Dark Energy Survey Year 6 Results: Redshift Calibration of the MagLim++ Lens Sample	results
+Saulder2025	2501.10759	Saulder	2025	Studying baryon acoustic oscillations using photometric redshifts from the DESI Legacy Imaging survey DR9	systematics

@@ -3,7 +3,7 @@
 Scope: current headline constraints on the dark-energy equation of state and
 on modified-gravity parameters, with the history of the key numbers.
 
-Snapshot: 2026-10-07
+Snapshot: 2026-10-14
 
 Flags: `[src]` read this session in the cited paper; `[sec]` taken from a
 named secondary source; `[der]` derived here, derivation stated.
@@ -17,9 +17,11 @@ two extra degrees of freedom unless stated.
 ### 1.1 DESI DR2 BAO (March 2025)
 <!-- key: desi-dr2-bao-march-2025 -->
 
-All rows are read from Section 7.1 and the table "Summary of the difference in
-the effective chi2_MAP" of DESI Collaboration 2025, arXiv:2503.14738. `Delta
-chi2_MAP` is `w0waCDM` minus `LCDM`; `Delta DIC = DIC(w0wa) - DIC(LCDM)`.
+All rows are read from Section VII.1 (Eqs. 23–28) and Table 6 of DESI
+Collaboration 2025, arXiv:2503.14738 [src: Table 6]. `Delta chi2_MAP` is
+`w0waCDM` minus `LCDM`; `Delta DIC = DIC(w0wa) - DIC(LCDM)`. Priors: flat
+`w0` in [−3, 1], `wa` in [−3, 2], with `w0 + wa < 0` (arXiv:2404.03002)
+[src: Table 2]. How each number was computed: `systematics.md` Section 14.1.
 
 | Data combination | `w0` | `wa` | `Delta chi2_MAP` | Significance | `Delta DIC` | Flag |
 |---|---|---|---|---|---|---|
@@ -84,8 +86,8 @@ million (arXiv:2503.14738, abstract) [src].
 ### 1.3 DESI extended dark-energy analysis (DR2)
 <!-- key: desi-extended-dark-energy-analysis-dr2 -->
 
-Lodha et al. 2025, arXiv:2503.14743, table of `Delta chi2_MAP` and `Delta DIC`
-values [src]. Entries are `Delta DIC (Delta chi2)` relative to ΛCDM for DESI +
+Lodha et al. 2025, arXiv:2503.14743, Table 3 of `Delta chi2_MAP` and `Delta DIC`
+values [src: Table 3; Sect. VI.1]. Entries are `Delta DIC (Delta chi2)` relative to ΛCDM for DESI +
 CMB + the named supernova sample. Negative favours the extended model.
 
 | Dark-energy class | + Pantheon+ | + Union3 | + DESY5 |
@@ -143,6 +145,52 @@ in `cosmo-supernovae`; the rows below are the numbers this skill needs.
 - The convergence is the result: three supernova samples that gave 2.8 / 3.8 /
   4.2σ now give 3.2 / 3.4 / 3.4σ (arXiv:2601.19424) [src].
 
+### 2.1 How each reanalysis computed its significance
+<!-- key: how-each-reanalysis-computed-its-significance -->
+
+**DES-Dovekie (Popovic et al. 2025, arXiv:2511.07517).**
+
+| Aspect | What the paper does | Place |
+|---|---|---|
+| Data | DES-Dovekie SNe; CMB = Planck simall + Commander (`l < 30`), Plik-lite, ACT DR6-lite, SPT-3G (candl), ACT + Planck + SPT-3G lensing; DESI DR2 BAO | [src: Sect. 4.2] |
+| Frequentist | `Delta chi2_ML` between maximum likelihoods, Wilks with 2 d.o.f., p-value converted to two-sided σ | [src: Sect. 4.3, Eq. 10] |
+| Bayesian | `Delta log Z` from Nautilus, error ~0.2; Trotta 2008 scale (<1 inconclusive, 1–2.5 weak, 2.5–5 moderate, >5 strong); negative favours the extension | [src: Sect. 4.3; Sect. 10.6] |
+| Priors (evidence) | `w0` U(−3, −0.4), `wa` U(−3, 2), `w0 + wa < 0`, `Omega_m` (0.1, 0.5), `H0` (0.55, 0.91) in units of 100, `Omega_k` (−0.15, 0.15), τ (0.01, 0.2) | [src: Sect. 4.3] |
+| Headline | SN + CMB + BAO: `Delta chi2 = −13.5`, 3.2σ; `Delta log Z = −1.7` (odds 5:1, weak); `w0 = −0.803 ± 0.054`, `wa = −0.72 ± 0.21` | [src: Table 11; Table 10] |
+| Sub-combinations | BAO + CMB: evidence weak; SN + CMB: `log Z` moderately favours ΛCDM (−1144.4 vs −1147.0); constant `w` "moderately not preferred" (+4.0) | [src: Sect. 10.6; Table 10] |
+| Change from DES-SN5YR | evidence lower by `Delta log Z` 3.5, "strong to weak"; low-redshift SNe less dim relative to mid-redshift, from SALT retraining and the DES g-band definition | [src: Sect. 11.4] |
+| CMB likelihood and τ | removing SPT and ACT, or replacing simall by an SRoll2 τ prior, lowers the preference by 0.2–0.7σ, up to `delta log Z ~ 3.0` | [src: Sect. 11.4] |
+
+**Union3.1 and corrected Pantheon+ (Hoyt et al. 2026, arXiv:2601.19424).**
+
+| Aspect | What the paper does | Place |
+|---|---|---|
+| Method | reruns the DESI DR2 baseline exactly (Commander, simall, CamSpec NPIPE, Planck + ACT DR6 lensing, DESI DR2 BAO, Cobaya, `R − 1 < 0.01`), so only the SNe change; σ from `Delta chi2` as in DESI | [src: Sect. VII] |
+| `Delta chi2` (σ) | Union3.1 −14.4 (3.4); UNITY1.8 −14.0 (3.3); Pantheon+ corrected −13.2 (3.2); DES-Dovekie −14.3 (3.4); originals −17.4 / −10.7 / −21.0 | [src: Table 4] |
+| SN-only `Omega_m` (flat ΛCDM) | Union3.1 0.344 ± 0.026, Pantheon+ corrected 0.342 (+0.017/−0.020), Dovekie 0.330 ± 0.015; the spread halved | [src: Table 4] |
+| Why Dovekie reads 3.4σ here, 3.2σ in its own paper | different CMB data; with its own CMB choices Popovic et al. found 4.0σ for the original DES-SN5YR against DESI's 4.2σ | [src: Table 4, note b] |
+| Overlap | Union and Pantheon+ share over 75% of their SNe | [src: Sect. VII] |
+
+**Unite (Camilleri et al. 2026, arXiv:2609.05053).**
+
+| Aspect | What the paper does | Place |
+|---|---|---|
+| Data | Unite SNe; CMB as DES-Dovekie (Plik-lite + simall + Commander, ACT DR6-lite, SPT-3G, ACT + Planck and SPT-3G lensing); DES and DESI BAO | [src: Sect. 2.4.2] |
+| Statistic | both `Delta chi2_ML` and `Delta chi2_MAP`, Wilks with 1 or 2 d.o.f., two-sided σ; `Delta log Z` from Nautilus on the Trotta 2008 scale | [src: Sect. 8.2, Eqs. 11–12] |
+| Headline | `w0wa`: 3.3σ (MAP), 3.1σ (ML); no combination "strongly" favours a model beyond flat ΛCDM in evidence; curvature 2.6σ (MAP), 2.4σ (ML) | [src: Sect. 8.2] |
+| SN alone | Unite's 2σ contour touches (−1, 0), towards larger `w0`, with `wa` consistent with zero; projection effects along the SN degeneracy noted | [src: Sect. 8.2] |
+| `z < 0.1` cut | 687 SNe (24%): the only cut that moves the best fit substantially, by ~2σ; flat ΛCDM without them `Omega_m = 0.290 ± 0.015`; cuts at `z > 0.0233` or `z < 0.85` do not | [src: Sect. 9.1; Sect. 10.3] |
+
+**DES Y6 all probes (DES Collaboration 2026, arXiv:2605.27221).**
+
+| Aspect | What the paper does | Place |
+|---|---|---|
+| Data | DES Y6 3×2pt, DES-Dovekie SNe, DES Y6 BAO; DESI DR2 BAO; Planck PR3 + ACT DR6 + SPT-3G D1 primary CMB, no CMB lensing (cross-covariance with 3×2pt not modelled) | [src: Sect. II.2] |
+| Statistic | Bayesian "distance to ΛCDM": posterior mass inside the contour through (−1, 0), in Gaussian σ; `Delta chi2_MAP` σ alongside, closely matching; Nautilus; FoM `= 1/sqrt(det Cov(w0, wa))` | [src: Sect. III, Table 1] |
+| Distance (σ) / `Delta chi2` (σ) / FoM | 3×2pt 1.0/1.0/6; SN + DES BAO 1.5/1.6/11; all DES 2.2/2.0/48; 3×2pt + DESI BAO 1.7/1.5/32; CMB + DESI BAO 2.9/2.9/61; all except CMB 2.3/2.2/110; all except 3×2pt 3.2/3.3/202; all except SN 2.6/2.5/66; all except BAO 2.4/2.4/96; all except DESI 2.8/2.8/102; all 3.0/3.0/222 | [src: Table 1] |
+| Neutrino mass free | `Sum m_nu > 0.06 eV`: all data 3.4σ, `w0 = −0.80 ± 0.06`, `wa = −0.74 (+0.25/−0.21)`, `Sum m_nu < 0.18 eV` | [src: Sect. III] |
+| Analysis choices | IA model, free baryon feedback, the excluded lens bin: shifts ≤ 0.1σ in `w0`, `wa`, distance to ΛCDM within ±0.3σ | [src: Sect. III] |
+
 ## 3. DESI clustering beyond BAO
 <!-- key: desi-clustering-beyond-bao -->
 
@@ -163,8 +211,11 @@ relative to power-spectrum-only analyses" (arXiv:2606.23936, abstract) [src].
 <!-- key: bayesian-evidence-for-w0wa-against-lambda -->
 
 `ln B = ln Z(w0wa) − ln Z(Λ)`, computed with PolyChord and anesthetic, same
-priors as the posterior analysis (Lodha et al. 2025, arXiv:2503.14743,
-appendix "Bayesian Model Comparison") [src]. Positive favours `w0wa`.
+priors as the posterior analysis (flat `w0` in [−3, 1], `wa` in [−3, 2], `w0 +
+wa < 0`, τ in [0.01, 0.8]; CAMB, with `H0` sampled instead of `theta_MC`);
+`ln Z = <ln L>_P − <ln(P/pi)>_P` (Lodha et al. 2025, arXiv:2503.14743) [src:
+App. A, Eq. 21, Table 4; Sect. II, Table 1]. Positive favours `w0wa`. DR1
+values were recomputed with the DR2 priors and pipeline [src: App. A].
 
 | DESI BAO + CMB + | Pantheon+ | Union3 | DESY5 |
 |---|---|---|---|
@@ -175,9 +226,8 @@ appendix "Bayesian Model Comparison") [src]. Positive favours `w0wa`.
 
 An independent nested-sampling analysis of the same data gives different
 numbers: `ln B = −0.57 ± 0.26` for DESI DR2 + Planck, `+3.32 ± 0.27` adding
-DES-SN5YR and `−0.30 ± 0.19` adding DES-Dovekie [src] (arXiv:2511.10631,
-abstract for the first; the other two as tabulated in
-`cosmo-statistics-inference`). A Bayes factor scales with the prior volume, so
+DES-SN5YR and `−0.30 ± 0.19` adding DES-Dovekie (arXiv:2511.10631) [src:
+Table 1; Sect. III]; card in `systematics.md` Section 14.6. A Bayes factor scales with the prior volume, so
 values from analyses with different priors are not comparable row by row; the
 sign and the ordering between supernova samples are what the two analyses
 share.
@@ -250,6 +300,9 @@ Omega_DE(a)/Omega_DE,0` and the same for Σ (DES and DESI convention; see
 | Same | `w0wa` | −0.24 (+0.32/−0.28) | 0.006 ± 0.043 | arXiv:2411.12026 | [src] |
 | DESI DR1 P + LRG bispectrum + DR2 BAO, DESI only | ΛCDM | 0.12 ± 0.49 | — | arXiv:2606.23936 | [src] |
 | DES Y3 3×2pt alone | ΛCDM | — | 0.6 (+0.4/−0.5) | arXiv:2207.05766 | [src] |
+| Planck 2018 TT,TE,EE + lowE, no CMB lensing; (μ, η) form, values quoted as `mu0 − 1`, `Sigma0 − 1` | ΛCDM | 0.12 (+0.29/−0.51) | 0.27 (+0.15/−0.13) | arXiv:1807.06209 | [src: Table 7] |
+| Planck 2018 + lensing; + BAO/RSD + DES WL | ΛCDM | 0.10 (+0.30/−0.42); −0.07 (+0.19/−0.32) | 0.100 ± 0.093; 0.018 (+0.059/−0.048) | arXiv:1807.06209 | [src: Table 7] |
+| Planck PR3 no lensing, refit by DESI with ISiTGR | ΛCDM | −0.66 (+1.5/−0.83) | 0.47 (+0.16/−0.22) | arXiv:2411.12026 | [src: Table 2] |
 | DES Y3 3×2pt + external data of 2022 | ΛCDM | 0.08 (+0.21/−0.19) | 0.04 ± 0.05 | arXiv:2207.05766 | [src] |
 | KiDS-Legacy + CMB (Planck, ACT, SPT) + DESI DR2 BAO + DES-Dovekie | ΛCDM | 0.21 ± 0.21 | 0.149 ± 0.051 (3.0σ from GR) | Du et al. 2026, arXiv:2602.03110 | [src] |
 | Same | `w0wa` | — | 2.2σ from GR | arXiv:2602.03110 | [src] |
@@ -282,6 +335,13 @@ Omega_DE(a)/Omega_DE,0` and the same for Σ (DES and DESI convention; see
 |---|---|---|---|---|
 | 0.633 (+0.025/−0.024) | Planck + weak lensing + clustering + velocities | 3.7σ | Nguyen, Huterer and Wen 2023, arXiv:2302.01331 | [src] |
 | 0.639 (+0.024/−0.025) | `f sigma8` + Planck | 4.2σ | arXiv:2302.01331 | [src] |
+
+Where the `chi2` gain comes from (best fit with free γ minus γ = 0.55): Planck
+2018 TT,TE,EE alone −8.5, mostly high-ℓ (−7.0); Planck with lensing −2.8, the
+lensing reconstruction itself worsening by +1.4; Planck + `f sigma8` −13.6, of
+which −8.3 from `f sigma8`; all data −13.2 (arXiv:2302.01331) [src: App. B,
+Table 2]. Non-linear scales use HMCode-2020 with `D(a) → D(gamma, a)` [src:
+App. C].
 
 The same abstract notes that in Planck data the suppressed growth "offsets the
 preference for nonzero curvature and fits the data equally well" [src]: the

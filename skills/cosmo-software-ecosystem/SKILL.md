@@ -5,7 +5,7 @@ description: Use when choosing, citing, comparing or debugging a cosmology code,
 
 # Cosmology software ecosystem — expert reference
 
-Snapshot 2026-10-11. Numbers carry provenance flags ([src] / [sec] / [der]);
+Snapshot 2026-10-14. Numbers carry provenance flags ([src] / [sec] / [der]);
 re-verify against the cited paper before a number enters a manuscript.
 Defaults were read in named versions (camb 2.0.4, pyccl 3.3.6, cosmoprimo 1.0.0,
 CLASS 3.2.3, healpy 1.19.0); re-read them for the version in use.
@@ -18,7 +18,7 @@ CLASS 3.2.3, healpy 1.19.0); re-read them for the version in use.
 | What a code computes, its paper, repository, licence, release, users | `references/surveys-and-data.md` |
 | How the members of a code family differ in method | `references/physics-and-methods.md` |
 | Agreement between codes, stated accuracies, timings | `references/results.md` |
-| Units, conventions and defaults that trap users; referee checklist | `references/systematics.md` |
+| Units, conventions and defaults that trap users; code comparisons read in paper bodies; referee checklist | `references/systematics.md` |
 | Maintenance status, superseded codes, debates, misconceptions | `references/open-questions.md` |
 
 ## What an expert holds in mind
@@ -33,7 +33,7 @@ CLASS 3.2.3, healpy 1.19.0); re-read them for the version in use.
 - "Halofit" is eleven options in CAMB; the default is HMcode-2020 (arXiv:2009.01858), in pyccl Takahashi (arXiv:1208.2701).
 - H-EFTCAMB is the official successor of EFTCAMB (arXiv:2603.01662); modified-gravity solvers agree at sub-per-cent level (arXiv:1709.09135).
 - velocileptors, PyBird and FOLPSν agree to k_max ≃ 0.25 h Mpc⁻¹ at 8 (h⁻¹ Gpc)³ precision once bias freedom is matched (arXiv:2404.07272).
-- MultiNest gave narrower intervals and inconsistent evidences on DES Y1; DES Y3 moved to PolyChord (arXiv:2202.08233).
+- MultiNest at standard settings gave Ω_m intervals about 10 % narrower than PolyChord (S8 less so) and unreliable evidences on DES Y1; DES Y3 moved to PolyChord (arXiv:2202.08233).
 - Cobaya's MCMC is a translation of CosmoMC, whose repository has been quiet since 2022; desilike binds to Cobaya, CosmoSIS and MontePython.
 - picca measures, Vega models and fits (arXiv:2007.08995, arXiv:2509.15308).
 - flip (arXiv:2501.16852): radians, Mpc h⁻¹, km/s, h Mpc⁻¹; engines classy, cosmoprimo, pyccl; cite also arXiv:2303.01198.
@@ -88,7 +88,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; open 5k; methods 9k; results 7k; surveys 11k; systematics 8k.
+Sizes, in thousands of tokens: L1 2k; open 5k; methods 14k; results 7k; surveys 11k; systematics 12k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

@@ -2,7 +2,7 @@
 
 Scope: how each tension or anomaly is defined and computed, and the tension metrics.
 
-Snapshot: 2026-10-07
+Snapshot: 2026-10-16
 
 Flags as in `results.md`: `[src]` read this session in the cited paper;
 `[sec: X]` taken from the reference files of sibling skill X (abbreviations
@@ -26,23 +26,36 @@ follows the notation of Raveri & Hu 2019 (arXiv:1806.04649):
 
 | Metric | Definition | What it uses | Weakness |
 |---|---|---|---|
-| Gaussian tension (Q_DM) | Δ_Gauss = sqrt[(μ_A − μ_B)ᵀ (C_A + C_B)⁻¹ (μ_A − μ_B)]; for one parameter, abs(μ_A − μ_B) / sqrt(σ_A² + σ_B²) | first two moments of each posterior | "typically fails to capture cases with non-Gaussian posteriors"; assumes independent data |
-| Difference of maximum a posteriori (Q_DMAP), the goodness-of-fit loss | Δ_DMAP = sqrt(χ²_min,A+B − χ²_min,A − χ²_min,B) | best-fit likelihoods only | needs reliable minimisation; no penalty for extra parameters |
-| Parameter shift | p(Δθ) = ∫ p_A(θ) p_B(θ − Δθ) dθ; probability that a shift is required = ∫ p(Δθ) dΔθ over the region where p(Δθ) > p(0); Δ_shift = sqrt(2) erf⁻¹ of that probability | full posteriors | "can be affected by posterior-volume and projection effects that are absent in the likelihood-based metric" |
+| Gaussian tension (Q_DM) | Δ_Gauss = sqrt[(μ_A − μ_B)ᵀ (C_A + C_B)⁻¹ (μ_A − μ_B)] [src: Eq. 16]; for one parameter, abs(μ_A − μ_B) / sqrt(σ_A² + σ_B²) | first two moments of each posterior | "typically fails to capture cases with non-Gaussian posteriors"; assumes independent data |
+| Difference of maximum a posteriori (Q_DMAP), the goodness-of-fit loss | Δ_DMAP = sqrt(χ²_min,A+B − χ²_min,A − χ²_min,B) [src: Eq. 17] | best-fit likelihoods only | needs reliable minimisation; no penalty for extra parameters |
+| Parameter shift | p(Δθ) = ∫ p_A(θ) p_B(θ − Δθ) dθ; probability that a shift is required = ∫ p(Δθ) dΔθ over the region where p(Δθ) > p(0); Δ_shift = sqrt(2) erf⁻¹ of that probability [src: Eqs. 18–20] | full posteriors | "can be affected by posterior-volume and projection effects that are absent in the likelihood-based metric" |
 
 For Gaussian posteriors the three coincide [src]. The parameter-shift
-integral is computed with the `tensiometer` package [src].
+integral is computed with the `tensiometer` package [src]. A model advances
+in that comparison only with −ΔAIC > 10 or ln BF > 3 on the combined fit
+with the M_B prior (arXiv:2607.13283) [src: Sect. III.3].
 
-From Lemos et al. 2021 (arXiv:2012.09554) and Handley & Lemos 2019
-(arXiv:1902.04029), as transcribed in `cosmo-statistics-inference` [sec:
-stat]:
+As defined in the body of Lemos et al. 2021 (arXiv:2012.09554) [src: Sect.
+4], each with its defining paper:
 
-| Metric | Definition | Behaviour |
-|---|---|---|
-| Bayes (evidence) ratio | R = Z_AB / (Z_A Z_B) | proportional to the prior volume for a flat prior: "doubling the prior volume doubles the value of R"; read on the Jeffreys scale |
-| Suspiciousness | log S = log R − log I, with I the information ratio | prior-volume independent; χ²-distributed for Gaussian posteriors, which gives a tension probability |
-| Eigentension | difference restricted to the well-measured eigenmodes of one experiment | defined in arXiv:2012.09554 |
-| Update form (Q_UDM) | parameter difference between A and A + B | for correlated or nested data (arXiv:1806.04649) |
+| Metric | Definition (equation of arXiv:2012.09554) | Defining paper | Behaviour |
+|---|---|---|---|
+| Bayes (evidence) ratio | R ≡ Z_AB / (Z_A Z_B) (Eq. 5) = P(A\|B)/P(A) (Eq. 8) = ∫ P_A P_B / Π dθ (Eq. 9) | Marshall, Rajguru & Slosar 2006, arXiv:astro-ph/0412535 | global and symmetric; for a flat prior "doubling the prior volume doubles the value of R"; read on the Jeffreys scale (log R < −2.3 strong tension, −1.2 to 1.2 inconclusive, Table 2), whose boundaries "lack obvious interpretation as a statistical significance" |
+| Suspiciousness | log S = log R − log I (Eq. 12), log I = D_A + D_B − D_AB with D the Kullback–Leibler divergence (Eqs. 10, 11) | Handley & Lemos 2019, arXiv:1902.04029 | prior-volume independent; for Gaussian posteriors χ²_d-distributed, d the Bayesian model dimensionality (Eq. 13), which gives a tension probability |
+| Parameter difference (shift) | P(Δθ) = ∫ P_A(θ) P_B(θ − Δθ) dθ (Eq. 14); Δ = ∫ over P(Δθ) > P(0) (Eq. 15), invariant under reparametrisation; Monte Carlo with a Gaussian KDE | Raveri & Hu 2019, arXiv:1806.04649 [src: Eqs. 37–39]; Monte Carlo form cited to Raveri et al. 2020 (Raveri, Zacharegkas & Hu, arXiv:1912.04880, estimators for correlated data sets [src: abstract]) | for uncorrelated data sets only; normalising-flow estimators for many dimensions agree with the true tension to 0.2σ or better, 0.5σ in difficult cases (Raveri & Doux 2021, arXiv:2105.03324) [src: abstract] |
+| Difference in means, update form | Q_DM = Δθ̄ᵀ C⁻¹ Δθ̄ with C = C_p1 + C_p2 for uninformative priors (Eqs. 45, 49 of arXiv:1806.04649); Q_UDM = (θ̂_A+B − θ̂_A)ᵀ (C_A − C_A+B)⁻¹ (θ̂_A+B − θ̂_A) (Eq. 16), χ² with rank(C_A − C_A+B) degrees of freedom, computed over KL modes with 0.2 < λ − 1 < 100 (Eq. 17) | Raveri & Hu 2019, arXiv:1806.04649 [src: Eqs. 49, 50] | for nested or correlated data; in non-update form with uninformative priors equivalent to the index of inconsistency (Lin & Ishak 2017, arXiv:1705.05303) |
+| Goodness-of-fit loss | Q_DMAP = 2 ln L_A(θ_pA) + 2 ln L_B(θ_pB) − 2 ln L_A+B(θ_pA+B) (Eq. 19), χ² with ΔN_eff = N_eff^A + N_eff^B − N_eff^A+B degrees of freedom, N_eff = N − tr[C_Π⁻¹ C_p] (Eqs. 20, 21) | Raveri & Hu 2019, arXiv:1806.04649 | needs Gaussianity in data and parameter space |
+| Eigentension | compare the two posteriors along the eigenvectors of one experiment's covariance whose prior-to-posterior variance ratio exceeds 10² (for DES Y1: e = σ8 Ω_m^0.57, ratio 2665, Eq. 22), then integrate the KDE of the difference inside the contour through the origin | Park & Rozo 2019, arXiv:1907.05798 | the threshold is ad hoc but fixed a priori on a noiseless data vector |
+
+On simulated DES Y1 data shifted from Planck, the parameter-space metrics,
+goodness-of-fit loss and suspiciousness track one another to within about
+1σ, while log R stays in "strong agreement" up to an a-priori 1D tension of
+about 1σ and turns to "strong tension" only near 4σ (arXiv:2012.09554) [src:
+table in Sect. 4.6]. Two calibrations of R exist: by the other metrics on
+simulations (arXiv:2012.09554) [src: Sect. 4.1], or against the distribution
+of log R over matched simulations with neural ratio estimation (Bevins,
+Handley & Gessey-Jones 2024, arXiv:2407.15478) [src: abstract], the method
+used for the dipole in arXiv:2607.25703 [src: Sect. 2.3, Eq. 6].
 
 Evidence-based metrics ask whether one parameter set can generate both data
 sets; parameter-space metrics ask how significant the difference of the two
@@ -57,7 +70,9 @@ posteriors is in the parameters both constrain [sec: stat].
   one-sided" (Secrest et al. 2021, arXiv:2009.14826) [src].
 - A model-preference significance is not a tension. DESI converts Δχ²_MAP
   between w0waCDM and ΛCDM with two extra degrees of freedom: p = exp(−abs
-  Δχ² / 2), so −12.5 gives 3.1σ [sec: stat]. sqrt(abs Δχ²) is the conversion
+  Δχ² / 2), so −12.5 gives 3.1σ [sec: stat]; DESI's table states the
+  conversion as the significance "given 2 extra free parameters"
+  (arXiv:2503.14738) [src: Table 6]. sqrt(abs Δχ²) is the conversion
   for one degree of freedom only.
 - A local significance becomes a global one after dividing out the number of
   equivalent tests. For N independent looks p_global ≈ N p_local [sec: stat].
@@ -70,8 +85,9 @@ posteriors is in the parameters both constrain [sec: stat].
    early endpoints (`results.md` §1.2). S8: four CMB endpoints from 0.819 to
    0.836 (`results.md` §2.1). CMB against DESI: 1.6σ to 3.7σ across CMB data
    sets (`results.md` §4).
-2. Name the subspace. DES Y6 3×2pt against the CMB is 2.6σ projected on S8
-   and 1.8σ in the full shared space (arXiv:2601.14559) [sec: wl, stat]. The
+2. Name the subspace. DES Y6 3×2pt against the CMB is 2.6σ projected on S8,
+   2.2σ in the S8–Ω_m plane and 1.8σ in the full shared space
+   (arXiv:2601.14559) [src: Sect. V.2]. The
    projected number is larger because S8 was chosen as the best-measured,
    most discrepant direction.
 3. Compare the quantity that is measured. The ladder measures the SN Ia
@@ -85,8 +101,9 @@ posteriors is in the parameters both constrain [sec: stat].
    are calibrated on Planck and take τ from it; supernova compilations share
    their low-redshift objects; DESI DR1 and DR2 overlap [sec: cmb, de, stat].
 5. Fix metric, subspace and reference before unblinding. DES Y6 uses
-   n_σ < 3 in a full-space parameter difference as its criterion for
-   combining data sets [sec: stat].
+   n_σ ≡ sqrt(2) erf⁻¹(Δ) < 3, with Δ the parameter-shift probability
+   estimated with normalising flows in tensiometer, as its criterion for
+   combining data sets (arXiv:2601.14559) [src: Sect. IV.6, Eqs. 17–19].
 6. A posterior mean is not a best fit. In extended models the two differ
    through prior-volume effects, which is why a Bayesian limit and a profile
    likelihood can disagree on the same data (early dark energy, Section 11).
@@ -141,8 +158,9 @@ How each side is computed [sec: wl, x, cl].
 - Clusters: counts above a mass-proxy threshold with a lensing mass
   calibration; the best-measured combination has an exponent of 0.2 to 0.3.
 - tSZ cross-correlations: the bias-weighted electron pressure ⟨b P_e⟩(z),
-  which scales roughly as S8³ in the FLAMINGO simulations (Salcido et al.
-  2026, arXiv:2605.11083) and is therefore sensitive to S8 and to the gas
+  which scales as S8^ε(z) with ε ≈ 3 over 0.1 ≤ z ≤ 1 in the FLAMINGO
+  simulations and is boosted by feedback (Salcido et al. 2026,
+  arXiv:2605.11083) [src], and is therefore sensitive to S8 and to the gas
   model in the same measurement.
 
 Conventions that break comparisons: the exponent; the point estimate; the
@@ -169,9 +187,12 @@ arXiv:2506.20707), so τ is degenerate with A_s and hence with the lensing
 amplitude.
 
 CMB–BAO discrepancy. Computed in ΛCDM in the plane of the two parameters BAO
-measure, Ω_m and h r_d, as the parameter-difference significance between the
-CMB posterior and the DESI posterior (arXiv:2506.20707; arXiv:2503.14738)
-[sec: cmb]. Its size depends on the CMB data set because the experiments
+measure, Ω_m and h r_d: DESI uses the Gaussian difference χ² = (p_A −
+p_B)ᵀ(Cov_A + Cov_B)⁻¹(p_A − p_B) of the two posteriors, converted through
+its probability to exceed (arXiv:2503.14738) [src: Eq. 18]; SPT quotes the
+same two-parameter difference "accounting for the correlations between the
+two parameters" as a one-dimensional Gaussian fluctuation (arXiv:2506.20707)
+[src: Sect. VII.3]. Its size depends on the CMB data set because the experiments
 differ in Ω_m.
 
 Why one mismatch has several names. The CMB-inferred τ is anti-correlated
@@ -191,7 +212,8 @@ w0wa. w(a) = w0 + wa (1 − a). The preference is the improvement of the
 best-fit χ² over ΛCDM, converted to σ with two degrees of freedom, with
 ΔDIC as a companion and ln B from nested sampling as the Bayesian statistic
 [sec: de, stat]. The three answer different questions: for DESI DR2 + CMB
-they read 3.1σ, ΔDIC = −8.7 and ln B = −0.57 ± 0.26 [sec: stat]. The
+they read 3.1σ, ΔDIC = −8.7 (arXiv:2503.14738) [src: Table 6] and ln B =
+−0.57 ± 0.26 (arXiv:2511.10631) [src: Table 1]. The
 preference is carried by a slope: at the pivot redshift the equation of
 state is within about 2σ of −1 [sec: de].
 
@@ -211,7 +233,7 @@ the frame in which distant sources are isotropic sees a dipole in the number
 counts of a flux-limited sample, through aberration and Doppler boosting.
 For sources with spectra S ∝ ν^(−α) and integral counts N(> S) ∝ S^(−x) the
 amplitude is D_kin = [2 + x(1 + α)] β (Ellis & Baldwin 1984,
-doi:10.1093/mnras/206.2.377). With the CMB dipole read as kinematic, β =
+doi:10.1093/mnras/206.2.377; as written in Eq. 1 of arXiv:2009.14826 [src]). With the CMB dipole read as kinematic, β =
 0.00123 (v = 369 km/s; arXiv:1303.5087) [src]. Because x and α are
 properties of the sample, each catalogue has its own D_kin, and the test is
 the ratio D_obs / D_kin together with the direction.
@@ -263,10 +285,10 @@ simulations. The statistics named in the papers read this session [src]:
 
 | Anomaly | Statistic as named | Source |
 |---|---|---|
-| Lack of large-angle correlation | S_1/2, "the low level of large-angle temperature correlations" | arXiv:2310.12859 |
-| Odd-parity preference | R^TT, "the excess power in odd versus even low-ℓ multipoles" | arXiv:2310.12859 |
-| Hemispherical variance asymmetry | σ²_16, the "(low) variance of large-scale temperature anisotropies in the ecliptic north, but not the south" | arXiv:2310.12859 |
-| Quadrupole–octopole alignment | S_QO, "alignment and planarity of the quadrupole and octopole" | arXiv:2310.12859 |
+| Lack of large-angle correlation | S_1/2 ≡ ∫_{−1}^{1/2} [C(θ)]² d(cos θ), separations 60°–180°, masked sky, pseudo-C_ℓ to ℓ = 40; small because the ℓ = 2–5 contributions cancel those of higher ℓ, not because low-ℓ power is low (only C_2 is) [src: Eq. 7, 8] | arXiv:2310.12859 |
+| Odd-parity preference | R^TT ≡ D_+(ℓ_max)/D_−(ℓ_max), with D_± the mean of ℓ(ℓ+1)C_ℓ/2π over even or odd ℓ; ℓ_max = 27, unmasked N_side = 64 sky [src: Eq. 9, 10] | arXiv:2310.12859 |
+| Hemispherical variance asymmetry | σ²_16 ≡ mean of (T − T̄)² over the masked northern-ecliptic pixels of an N_side = 16 map; Planck 2013 found p ∼ 0.1% north, ∼ 45% south [src: Eq. 11] | arXiv:2310.12859 |
+| Quadrupole–octopole alignment | S_QO ≡ (1/3) Σ |w^(2;1,2) · w^(3;i,j)|, with w the cross products of multipole vectors [src: Eq. 12, 13] | arXiv:2310.12859 |
 | Hemispherical power asymmetry, dipolar modulation | variance-asymmetry estimators and ℓ to ℓ ± 1 mode coupling; angular clustering of local bandpower directions | arXiv:1906.02552; arXiv:2504.05597 |
 | Lack of power | lower-tail probability of the low-ℓ variance, in temperature alone or jointly with polarisation | arXiv:2312.09989 |
 | Cold Spot | "an unexpected cold ~10° region with p-value ≲ 0.01 in standard ΛCDM" | arXiv:2211.16139 |
@@ -287,10 +309,13 @@ tests as null-hypothesis tests and does not combine them (arXiv:1906.02552)
 
 How the look-elsewhere correction of arXiv:2602.10178 works: assume N
 independent tests, select the four smallest p-values, and ask how often
-their product is as small as observed; then reduce the effective N to
-account for the measured correlation among the four. The paper lists the
-anomaly tests published in the literature and argues that 16 or even 50 is
-plausible [src].
+their product is as small as observed; under the null each p-value is
+uniform, so the density of the product follows in closed form [src: Sect.
+II, Eqs. 1–11]; then raise N to account for the measured correlation among
+the four (10 and 27 independent tests become 16 and 50). The paper lists 17
+anomaly tests published in the literature, several with free parameters,
+and argues that unreported null tests make 16 to 50 plausible [src: Sect.
+IV, V].
 
 ## 8. Bulk flow
 <!-- key: bulk-flow -->
@@ -309,10 +334,11 @@ scales; they are related only if one posits a single coherent flow.
 ## 9. JWST high-redshift abundance
 <!-- key: jwst-high-redshift-abundance -->
 
-The argument of Boylan-Kolchin 2023 (arXiv:2208.01611) [src]: the stellar
-mass of a galaxy is limited by the baryons of its halo, M_* ≤ ε f_b M_halo
-with f_b the cosmic baryon fraction and ε ≤ 1 the fraction converted into
-stars. The halo mass function therefore gives an upper limit on the
+The argument of Boylan-Kolchin 2023 (arXiv:2208.01611) [src: Sect. 2]: the stellar
+mass of a galaxy is limited by the baryons of its halo, M_* = ε f_b M_halo
+with f_b = Ω_b/Ω_m = 0.156 (Planck 2018) and ε ≤ 1 the fraction converted into
+stars; with the Sheth–Tormen mass function this gives n_gal(> M_*) ≤
+n_halo(> M_*/f_b) and ρ_*(> M_*) ≤ f_b ρ_m(> M_*/f_b) [src: Eqs. 1–5]. The halo mass function therefore gives an upper limit on the
 cumulative number density n(> M_*, z) and stellar mass density ρ_*(> M_*,
 z). A measured density above the ε = 1 curve contradicts ΛCDM; one below
 it constrains ε.
@@ -395,13 +421,11 @@ Results of the model comparisons are in `open-questions.md` §2.
 ## Not verified
 <!-- key: not-verified -->
 
-- The defining integrals of S_1/2, R^TT, σ²_16 and S_QO and the amplitude of
-  the dipolar modulation were not read; only the verbal definitions in the
-  abstract of arXiv:2310.12859 are given.
-- The exact χ² combination of the suspiciousness and the eigentension
-  definition (sibling `cosmo-statistics-inference` did not transcribe them
-  either).
-- The values of x and α and the resulting D_kin for each catalogue (NVSS,
-  RACS, LoTSS, CatWISE): not read at source.
+- The amplitude of the dipolar modulation was not read (the definitions of
+  S_1/2, R^TT, σ²_16 and S_QO are now in §7, from the body of
+  arXiv:2310.12859).
+- The values of x and α and the resulting D_kin for NVSS, RACS and LoTSS:
+  not read at source. For CatWISE, the mean spectral index is 1.26 and the
+  expected amplitude ∼0.007 (arXiv:2009.14826) [src: Sect. II, IV].
 - The Thomson-scattering physics behind A_L as originally defined (the
   defining paper is cited in `cosmo-cmb`, not here).

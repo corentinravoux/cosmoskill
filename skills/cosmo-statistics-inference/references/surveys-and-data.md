@@ -1,7 +1,7 @@
 # Statistics and inference — how each collaboration does it
 
 Scope: the statistical practice (likelihood, covariance, blinding, sampler, point estimate, tension metric, model comparison) of the major collaborations in their latest analyses, with citations. The measurements themselves are in the probe skills.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-14
 
 Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named secondary source; `[der]` derived here, derivation stated. Unless a row says otherwise, every entry of §1 is `[src]` from the paper named in its last column.
 
@@ -15,7 +15,7 @@ Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named 
 | DESI DR2 neutrinos (2025) | BAO + CMB | as DR2 | as DR2 | Bayesian 95% limit, Feldman–Cousins 95% limit, effective mass allowed negative | tension with oscillation lower limits by frequentist and Bayesian methods | — | arXiv:2503.14744 |
 | DES Y6 3×2pt (2026) | Gaussian; analytic CosmoCov covariance with Gaussian and non-Gaussian terms, recomputed at the blind MAP cosmology | three levels: shear catalogue, data vector, cosmology | Nautilus, 10 000 live points, 16 networks; MAP by Powell optimiser from the 20 best samples | marginal posterior; MAP and projected joint highest posterior density (PJ-HPD) shown to flag volume effects | parameter-difference probability with normalising flows (`tensiometer`), `n_σ = sqrt(2) erf^-1(Δ)`; data sets combined only if `n_σ < 3` | for wCDM: posterior of `w`, and `Δχ²` likelihood-ratio test with 1 degree of freedom | arXiv:2601.14559 |
 | DES Y3 3×2pt (2021–2023) | Gaussian; analytic halo-model covariance (arXiv:2012.08568) | data-vector transformation (arXiv:1911.05929) | PolyChord, after the comparison of arXiv:2202.08233 | — | suite of arXiv:2012.09554; posterior predictive tests (arXiv:2011.03410) | — | papers cited in the row |
-| KiDS-Legacy cosmic shear (2025) | Gaussian; analytic OneCovariance (Gaussian, non-Gaussian, super-sample, shear-calibration terms), tested against GLASS mocks | three shape catalogues, one true, the others shifted by up to ±2σ in S8 | Nautilus inside CosmoSIS; MAP by adaptive Nelder–Mead | three in parallel: marginal mean ± σ; marginal mode + highest posterior density interval (headline); MAP + PJ-HPD | 0.73σ against Planck (metric not read at source here) | — | arXiv:2503.19441 |
+| KiDS-Legacy cosmic shear (2025) | Gaussian; analytic OneCovariance (Gaussian, non-Gaussian, super-sample, shear-calibration terms), tested against GLASS mocks | three shape catalogues, one true, the others shifted by up to ±2σ in S8 | Nautilus inside CosmoSIS; MAP by adaptive Nelder–Mead | three in parallel: marginal mean ± σ; marginal mode + highest posterior density interval (headline); MAP + PJ-HPD | 0.73σ against Planck: Hellinger distance between marginal Σ8 distributions [src: Sects. 6–7] | — | arXiv:2503.19441 |
 | KiDS-1000 SBI (2024) | learned likelihood, 18 000 forward simulations | — | sequential neural likelihood estimation | marginal mean | — | — | arXiv:2404.15402 |
 | ACT DR6 power spectra (2025) | multi-frequency likelihood and a foreground-marginalised CMB-only likelihood; analytic pseudo-spectrum covariance with a Monte Carlo correction from 1640 simulations, plus beam, leakage-beam and non-Gaussian lensing terms | two phases, with pre-registered criteria and dated unblinding | Cobaya MCMC, `R − 1 < 0.01` | marginal posterior | ΛCDM parameters of P-ACT and DESI DR2 agree at 1.6σ | — | arXiv:2503.14452 |
 | SPT-3G D1 T/TE/EE (2025) | not read at source here | maps and spectra "validated through blind and unblind tests" | not read at source here | marginal posterior | 2.8σ between CMB (SPT + ACT + Planck) and DESI DR2 BAO in ΛCDM, in the Ω_m–h r_d plane | "CMB data alone show no evidence for physics beyond ΛCDM" | arXiv:2506.20707 |
@@ -31,7 +31,7 @@ Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named 
 
 **Blinding** [src]. Catalogue level, "using the same prescription as was applied to DR1" (Andrade et al. 2024, arXiv:2404.07282, built on Brieden et al. 2020, arXiv:2006.10857) "but with a new random seed"; validation tests on blinded catalogues; "once these tests were passed and the pipeline frozen, the blinding was removed" in December 2024. A Lyα-specific Alcock–Paczynski blinding was published in 2026 (arXiv:2607.07875).
 
-**Covariance** (DESI 2024, arXiv:2411.12027) [src]. The analytic configuration-space covariance (RascalC, arXiv:1904.11070) is the fiducial choice for BAO because it adapts to the measured clustering; the analytic Fourier-space covariance failed the comparison for full shape, "which motivates the use of a corrected mock covariance" from EZmocks. The form of the correction was not read here. For joint full shape and post-reconstruction BAO, an analytic cross-covariance was validated in 2026 (arXiv:2602.12343).
+**Covariance** (DESI 2024, arXiv:2411.12027) [src]. The analytic configuration-space covariance (RascalC, arXiv:1904.11070) is the fiducial choice for BAO because it adapts to the measured clustering; the analytic Fourier-space covariance failed the comparison for full shape, "which motivates the use of a corrected mock covariance" from EZmocks. The DR1 full-shape paper gives it: every element of the 1000-EZmock covariance is rescaled by a tracer-dependent factor calibrated on the data-tuned RascalC matrix, then the Hartlap and Percival 2014 factors are applied (arXiv:2411.12021) [src: Sects. 5.7–5.8]. For joint full shape and post-reconstruction BAO, an analytic cross-covariance was validated in 2026 (arXiv:2602.12343).
 
 **Frequentist companions.** A profile-likelihood analysis of DR1 full shape (arXiv:2508.11811), a Feldman–Cousins limit and an effective-mass analysis for neutrinos (arXiv:2503.14744), and a reparameterisation and Jeffreys-prior reanalysis (arXiv:2607.02498). DESI is the collaboration that has gone furthest in publishing both statistical frameworks on the same data.
 
@@ -162,7 +162,7 @@ Consequences for comparison. The two surveys sample different amplitude paramete
 - HSC Year 3: covariance, sampler, blinding and tension metric were not read at source.
 - SPT-3G D1: likelihood form, covariance construction, sampler and the details of the blinding.
 - Planck 2018 and PR4 likelihood papers: not fetched; only the 2013 profile-likelihood paper and the Hamimeche–Lewis method paper were read.
-- KiDS-Legacy: the metric behind the quoted 0.73σ, and the content of the companion consistency paper.
-- DESI DR2: the tension metric used for the BAO-against-CMB comparison, the covariance used for DR2 (the statements above are for the 2024 analysis), and the form of the mock-covariance correction for full shape.
+- KiDS-Legacy: the content of the companion consistency paper.
+- DESI DR2: the tension metric used for the BAO-against-CMB comparison and the covariance used for DR2 (the statements above are for the 2024 analysis).
 - DES Y6: the cosmic-shear and 2×2pt companion papers and the methods paper were not read; the statements above come from the 3×2pt paper.
 - Euclid: no Euclid Collaboration paper on the inference pipeline, likelihood code or blinding strategy was fetched.

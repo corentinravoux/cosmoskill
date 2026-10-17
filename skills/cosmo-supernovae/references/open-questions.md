@@ -3,7 +3,7 @@
 Scope: live controversies with both sides cited, internal tensions between
 analyses, method debates, what the next data will decide (forecasts labelled),
 and the misconceptions that still circulate with the paper that corrects each.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-13
 
 Flags: `[src]` read in the cited paper this session; `[sec]` from a named
 secondary source; `[der]` derived here.
@@ -99,6 +99,7 @@ arXiv:2609.05053) `[src]`. What remains open:
 | Dust: host-dependent `R_V` and reddening explain the step and the colour-dependent scatter | 11 sigma colour dependence of scatter; step dependence on colour at 4.5 sigma `[src]` | Brout & Scolnic 2021, arXiv:2004.10206 |
 | Mostly intrinsic | ZTF volume-limited: no evolution of the step with colour; reddening above `c >= 0.2` is dust but the step is not `[src]` | Ginolin et al. 2024, arXiv:2406.02072 |
 | Intrinsic, confirmed with a dust-aware SED model | Step `0.103 ± 0.018 mag` with dust fitted jointly; mean `R_V` equal across environments within 0.2 `[src]` | Ginolin et al. 2026, arXiv:2605.06799 |
+| No dust-law difference | `R_V = 2.84 ± 0.31` in low-mass and `2.58 ± 0.23` in high-mass hosts of 157 Foundation SNe `[src]` | Thorp et al. 2021, arXiv:2102.05678 |
 | Both | Intrinsic step at 3.1 sigma together with a ~2 sigma `R_V` difference `[src]` | Grayling et al. 2024, arXiv:2401.08755 |
 | Two populations; the step is redundant | Low-stretch population brighter by `0.14 ± 0.03 mag` at `x1 = 0`, steeper `alpha` by `0.064 ± 0.023`, different `R_B` (3.89 ± 0.29 vs 3.08 ± 0.08) `[src]` | Wojtak et al. 2026, arXiv:2606.17802 |
 | Two populations inside a cosmology analysis | Residual mass step consistent with zero for unreddened SNe; errors on cosmology shrink `[src]` | Rubin et al. 2026, arXiv:2601.19854 |
@@ -122,7 +123,9 @@ arXiv:2112.04510) `[src]`. This is a single-group result; see
 ## 3. Does progenitor age evolution bias the Hubble diagram?
 <!-- key: does-progenitor-age-evolution-bias-the-hubble -->
 
-- **Yes, strongly**: Lee et al. 2022 (arXiv:2107.06288); Son et al. 2025
+- **Yes, strongly**: Kang et al. 2020 (arXiv:1912.04903), a correlation of
+  standardised luminosity with population age in early-type hosts at 99.5 %
+  confidence `[src]`; Lee et al. 2022 (arXiv:2107.06288); Son et al. 2025
   (arXiv:2510.13121), who conclude that SNe + BAO + CMB are > 9 sigma from
   LCDM and that the universe is not currently accelerating; Chung et al.
   2026 (arXiv:2605.21586) defend the correction against the rebuttal.
@@ -232,8 +235,6 @@ constraint from the supernovae themselves. Whether absolute flux standards
 - Whether any published analysis combines DESI DR2 with Unite using exactly
   the DESI external data; and any DESI DR3 result.
 - Responses to the Unite and Union3.1 papers after September 2026.
-- The 2019–2020 exchange preceding Rose et al. 2020 (the original claim paper
-  was read in abstract only and is not listed in `sources.tsv`).
 - Claims of anisotropy or dipoles in SN samples (several 2025–2026 preprints
   appeared in searches) are outside this file; see
   `cosmo-tensions-anomalies`.

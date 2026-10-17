@@ -2,7 +2,7 @@
 
 Scope: what a supernova Hubble diagram measures, how distances are standardised,
 bias-corrected and turned into a likelihood, and which codes do it.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-13
 
 Flags: `[src]` read in the cited paper this session; `[sec]` from a named
 secondary source; `[der]` derived here.
@@ -61,9 +61,18 @@ Leibundgut 2011 (arXiv:1102.1431); Leibundgut & Sullivan 2018
 <!-- key: the-tripp-relation-as-used-today -->
 
 The width–luminosity relation goes back to Phillips 1993
-(doi:10.1086/186970). Current analyses use the SALT parameters and the Tripp
-estimator (Tripp 1998, as cited by arXiv:2511.07517), written in DES-Dovekie
-as
+(doi:10.1086/186970). Hamuy et al. 1996 (arXiv:astro-ph/9609059) confirmed
+it on 29 Calán/Tololo SNe, with a scatter of 0.13–0.17 mag depending on the
+band `[src]`. The multicolour light-curve shape method was trained on nine
+SNe and gave 0.12 mag dispersion on twenty others (Riess, Press & Kirshner
+1996, arXiv:astro-ph/9604143); the width–luminosity correction narrowed the
+peak-magnitude dispersion of the first seven high-redshift SNe from 0.27 to
+0.19 mag (Perlmutter et al. 1997, arXiv:astro-ph/9608192) `[src]`. Colour
+entered as a reddening estimate from late-time `B−V` (Phillips et al. 1999,
+arXiv:astro-ph/9907052) and as a second luminosity parameter beside the
+decline rate, fitted jointly (Tripp & Branch 1999, arXiv:astro-ph/9904347). Current analyses use the SALT parameters and
+the Tripp estimator (Tripp 1998, as cited by arXiv:2511.07517), written in
+DES-Dovekie as
 
     mu = m_B + alpha * x1 - beta * c - M_0 - Delta_mu_bias - delta_host
 
@@ -73,9 +82,28 @@ with `m_B = 10.635 - 2.5 log10(x0)` `[src]`, `x1` the stretch, `c` the colour,
 
     delta_host = gamma * [1 + exp((M_star - S)/tau)]^-1 - gamma/2
 
-with step location `S = 10^10 M_sun` in the baseline `[src]`
+with step location `S = 10^10 M_sun` in the baseline `[src: Eqs. 1–2]`
 (arXiv:2511.07517). Sign convention trap: with this definition a positive
 `gamma` means SNe in high-mass hosts are brighter after standardisation.
+
+The same relation as the other analyses print it:
+
+| Analysis | Equation as printed | Place |
+|---|---|---|
+| JLA | `mu = m_B* − (M_B − alpha X1 + beta C)`, with `M_B = M_B^1` below a host mass of `10^10 M_sun` and `M_B^1 + Delta_M` above; the two-parameter description is referred to Tripp 1998 | arXiv:1401.4064 `[src: Eqs. 4–5]` |
+| Pantheon+ | `mu = m_B + alpha x1 − beta c − M − delta_bias + delta_host`, `m_B ≡ −2.5 log10(x0)`, same sigmoid `delta_host`; a footnote says earlier papers wrote `+delta_bias` | arXiv:2202.04077 `[src: Eqs. 1–2]` |
+| DES-SN5YR | `mu_obs = m_x + alpha x1 − beta c + gamma G_host − M − Delta_mu_bias`, `G_host = +1/2` if `P > P_step`, `−1/2` otherwise; `P` is stellar mass (step at `10^10 M_sun`) or rest-frame `u−r` (step at 1) | arXiv:2401.02945 `[src: Eqs. 1–2]` |
+| UNITY1.5 (Union3) | `m_B^model = −alpha x1^true + beta_B c_B^true + [beta_RL (1 − P) + beta_RH P] c_R^true − delta(0) P + M_B + mu(z)`, `P` the probability that the host behaves as a high-mass low-redshift host; latent `x1^true`, `c_B^true` (Gaussian core), `c_R^true` (exponential red tail) are marginalised for every SN | arXiv:2311.12098 `[src: Eq. 5, Sect. IV.1.1]` |
+| Distance error (BBC) | `sigma_mu^2 = f(z, c, M_star) sigma_meas^2 + sigma_floor^2(z, c, M_star) + sigma_lens^2 + sigma_z^2 + sigma_vpec^2`, `sigma_floor^2 = sigma_scat^2(z, c, M_star) + sigma_gray^2`; `sigma_gray` is fitted so that the reduced `chi2` is 1 and is zero if the simulated scatter model is right | arXiv:2202.04077 `[src: Eqs. 3–4]`; arXiv:2401.02945 `[src: Eqs. 8–9]` |
+
+The `delta_host` term enters Pantheon+ Eq. 1 with `+` and DES-Dovekie Eq. 1
+with `−`, for the same sigmoid: check the release before applying a step by
+hand. `alpha`, `beta`, `gamma` are fitted independently of cosmology, in 20
+logarithmic redshift bins whose offsets absorb it and serve this fit only
+`[src: Sect. III.3]` (arXiv:2401.02945), after Marriner et al. 2011
+(arXiv:1107.4631), who replaced the single scatter parameter by a covariance
+matrix and found `beta = 3.19 (+0.14/−0.24)` on SDSS-II, excluding the Milky
+Way dust value 4.1 at 98 % `[src]`.
 
 Measured nuisance parameters (BBC fits; error on last digit in parentheses):
 
@@ -120,10 +148,12 @@ and bias correction as much as of the data.
 
 | Model | Reference | Key facts |
 |---|---|---|
-| SALT2 | Guy et al. 2007, arXiv:astro-ph/0701828 | Empirical spectral sequence with a colour law; rest-frame 2500–8000 Å `[src]`. Retrained for Pantheon+ with the Fragilistic calibration (arXiv:2112.03864). |
+| SALT | Guy et al. 2005, arXiv:astro-ph/0506583 | First version: luminosity modelled against phase, wavelength, one shape and one colour parameter, trained on nearby SNe; distances from rest-frame U and B alone with 0.16 ± 0.05 mag dispersion `[src]`. |
+| SALT2 | Guy et al. 2007, arXiv:astro-ph/0701828 | Flux model `F(p, lambda) = x0 [M0(p, lambda) + x1 M1(p, lambda) + ...] exp[c CL(lambda)]`, with `p` the phase, `M0` the mean spectral sequence, `M1` its first variation, `CL` the mean colour law and `c = (B−V)_max − <B−V>`; equivalent to a principal-component decomposition apart from the colour term `[src: Eq. 1, Sect. 2]`. Rest-frame 2500–8000 Å `[src]`. Retrained for Pantheon+ with the Fragilistic calibration (arXiv:2112.03864). |
 | SALT3 (K21) | Kenworthy et al. 2021, arXiv:2104.07795 | Trained on 1083 SNe with 1207 spectra; 2000–11000 Å; public training code (SALTshaker); SALT2.4 vs SALT3.K21 distance shift between low and high z of 2 ± 14 mmag `[src]`. |
 | SALT3.DES5YR | Taylor et al. 2023, arXiv:2301.10644 | SALT2 and SALT3 trained on the same 1083 SNe; model-choice systematic `Delta w = +0.001 ± 0.005` (SN+CMB) `[src]`. |
 | SALT3.DOV | arXiv:2506.05471, arXiv:2511.07517 | Retrained on the Dovekie calibration, with many legacy-survey SNe cut from the training sample. |
+| MLCS2k2, SNooPy | Jha et al. 2007, arXiv:astro-ph/0612666; Burns et al. 2011, arXiv:1010.4040 | Non-SALT fitters. MLCS2k2: 133 nearby SNe, intrinsic dispersion below 7 % in distance, separate intrinsic colour and dust `[src]`. SNooPy: uBVgriYJH templates from 24 CSP SNe `[src]`. |
 | BayeSN | Mandel et al. 2022, arXiv:2008.07538 | Hierarchical Bayesian SED model, optical to NIR (0.35–1.8 µm), dust and intrinsic components separated; trained on 79 SNe; total Hubble RMS 0.10 mag with NIR vs 0.14 mag for SALT2/SNooPy on the same sample `[src]`. |
 | BayeSN G26 | Grayling et al. 2026, arXiv:2606.19429 | Trained on the SALT cosmology training sample with cross-calibration parameters inside the training; on DES-SN5YR at z < 0.7, sigma_NMAD 0.164 mag vs 0.185 mag for SALT3.Dovekie, without bias corrections `[src]`. Described by its authors as a step toward an end-to-end BayeSN cosmology analysis, not yet one. |
 
@@ -164,6 +194,9 @@ al. 2009, arXiv:0908.4280):
 1. Simulate the survey at catalogue level (cadence, PSF, sky noise, zero
    points, detection and spectroscopic-selection efficiency; Kessler et al.
    2019, arXiv:1811.02379) with an assumed population and scatter model.
+   The parent stretch and colour populations are themselves fitted: Scolnic
+   & Kessler 2016 (arXiv:1603.01559) found Hubble-residual biases up to 0.3
+   mag against colour (10 sigma) in 920 SNe when they are ignored `[src]`.
 2. Fit the simulated light curves exactly as the data, and compute
 
        Delta_mu_bias = m_B + alpha_true x1 - beta_true c - M0_true - mu_true
@@ -176,6 +209,9 @@ al. 2009, arXiv:0908.4280):
    cosmology.
 4. Fit cosmology to the bias-corrected Hubble diagram with a covariance matrix.
 
+Simulated selection corrections predate BBC: for SNLS3, Perrett et al. 2010
+(arXiv:1006.2254) found Malmquist and spectroscopic-sampling effects from
+z ~ 0.6, with a clear shift of the mean magnitude above z = 0.75 `[src]`.
 Sizes: redshift-binned distance biases reach 0.05 mag across the low-z and
 DES-SN samples, and up to 0.4 mag for individual events of extreme colour
 `[src]` (arXiv:1811.02379). BBC recovered `alpha` and `beta` to 1% and gave a
@@ -187,25 +223,60 @@ depends on the correction: DES-SN3YR finds `gamma = 0.040 ± 0.019` (5D) but
 `0.066 ± 0.020` (1D) on the same data `[src]` (Smith et al. 2020,
 arXiv:2001.11294).
 
-Bias corrections assume a reference cosmology. Camilleri et al. 2024
-(arXiv:2406.05048) show that a reference `Omega_m` wrong by ~0.2 gives a bias
-below the statistical error, directed along the SN degeneracy, and give a
-procedure to reduce it; this is the paper to cite when fitting non-standard
-models to a public bias-corrected Hubble diagram.
+In the original BBC each fitted parameter is corrected, `mu* = (m_B − d_mB) +
+alpha (x1 − d_x1) − beta (c − d_c) − M0`, by interpolation in
+`{z, x1, c, alpha, beta}` over 500 000 simulated events (cells of 0.05, 0.50,
+0.05 in `z`, `x1`, `c`); the event likelihood adds a contaminant term with a
+free scale `S_CC` `[src: Eqs. 6 and 11, Sect. V.2]` (arXiv:1610.04677). The
+bias term as printed for the 4D scheme is `Delta_mu_bias = m_x + alpha_true x1
+− beta_true c + gamma_true G_host + M_B_true − mu_true` `[src: Eq. 7]`
+(arXiv:2401.02945); with a dust-based simulation `beta_true` is not defined
+and an effective value is assumed. A wrong (intrinsic) `beta` was used there
+in Pantheon+ and corrected before DES-SN5YR `[src: Sect. 4.5]` (arXiv:2609.05053).
+
+Bias corrections assume a reference cosmology: with `w_ref = −1` the `w` bias
+is −0.003(4), −0.017(4), −0.044(4) for true `w` = −1, −0.9, −0.8
+`[src: Table 4]` (arXiv:1610.04677). Camilleri et al. 2024 (arXiv:2406.05048)
+show that a reference `Omega_m` wrong by ~0.2 gives a bias below the
+statistical error, directed along the SN degeneracy, and give a procedure to
+reduce it; this is the paper to cite when fitting non-standard models to a
+public bias-corrected Hubble diagram.
 
 **BEAMS** (Kunz, Bassett & Hlozek 2007, arXiv:astro-ph/0611004) replaces a
 hard classification by a mixture likelihood weighted by each object's
 probability of being a SN Ia; `N` objects of mean purity `P` constrain like
-`N P` confirmed SNe Ia. The effective DES-Dovekie sample size is 1684, the
-sum of BEAMS probabilities `[src]` (arXiv:2511.07517).
+`N P` confirmed SNe Ia. Applied to data: 792 SDSS-II photometric SNe
+with host redshifts, contour area in (`Omega_m`, `Omega_Lambda`) three times
+smaller than with the 297 confirmed ones `[src]` (Hlozek et al. 2012,
+arXiv:1111.5328). The effective DES-Dovekie sample size is 1684, the
+sum of BEAMS probabilities `[src]` (arXiv:2511.07517). In DES the
+likelihood is `prod_i (L_Ia,i + L_CC,i)` with `L_Ia = P_Ia D_Ia` and `L_CC =
+(1 − P_Ia) D_CC`, the contaminant term `D_CC` being taken from core-collapse
+simulations `[src: Eqs. 3–5]` (arXiv:2401.02945).
+
+### 4.1 What each main analysis did
+<!-- key: what-each-main-analysis-did -->
+
+| | Pantheon+ (arXiv:2202.04077) | DES-SN5YR (arXiv:2401.02945) | DES-Dovekie (arXiv:2511.07517) | Union3 and Union3.1 (arXiv:2311.12098; arXiv:2601.19424) | Unite (arXiv:2609.05053) |
+|---|---|---|---|---|---|
+| Light-curve model | SALT2-B22, retrained on Fragilistic, fitted in SNANA `[src: Sect. II.1]` | SALT3.DES5YR: K21 training set, Fragilistic, observer-frame U band removed `[src: arXiv:2609.05053 Sect. 4.2]` | SALT3.DOV, retrained on Dovekie with many legacy-survey SNe cut `[src: Sect. 3.1]` | SALT3, Taylor et al. version, in SNCosmo `[src: Sect. III.1]` | SALT3.UNITE: K21 training set without U band, Dovekie calibration `[src: Sect. 4.2]` |
+| Sample | 1701 light curves of 1550 SNe, 0.001 < z < 2.26 `[src]` | 3868 → 1829 (194 low-z + 1635 DES; 1499 DES with `P_Ia > 0.5`) `[src: Table 4]` | 3991 → 1820 (197 low-z + 1623 DES) `[src: Table 5]` | 2711 → 2087 `[src: Table 1]` | 5271 → 2884 `[src: Table 3]` |
+| Cuts | an epoch before 5 rest-frame days after peak, peak-date error < 2 d, `abs(x1) < 3`, `abs(c) < 0.3`, `sigma_x1 < 1.5`, valid bias correction (10 light curves lost), present in all 40 systematic variants (60 lost), Chauvenet `[src: arXiv:2112.03863 Sect. II.2]`; 151 SNe observed by several surveys, all but one at z < 0.1, agree to 0.102 mag against 0.218 ± 0.011 for random pairs `[src: arXiv:2112.03863 Sect. III.2]` | `abs(x1) < 3`, `abs(c) < 0.3`, `sigma_x1 < 1`, `sigma_tpeak < 2 d`, fit probability > 0.001, detected host with its own redshift, Chauvenet, valid bias correction, common to all variants `[src: Table 4]` | same with `sigma_x1 < 1.15` `[src: Table 5]` | five points in two filters, `abs(x1) + sigma_x1 < 5`, `abs(c) < 0.3`, `sigma_c < 0.2`, Milky Way `E(B−V) < 0.3`, known peculiar events out `[src: Sect. III.2.3]` | DES-SN5YR cuts with `sigma_x1 < 1.15`, Milky Way `E(B−V) < 0.2`, `P_Ia(SCONE) > 0.8` `[src: Table 3]` |
+| Low redshift | no cut in the sample; `z > 0.01` in cosmology fits without SH0ES `[src: Fig. 16 caption]`; `sigma_vpec = 240 km/s` `[src: Sect. III.1.3]` | CfA3, CfA4, CSP DR3, Foundation at `z > 0.025`; 1 % error floor on their photometry (2 % for Foundation z band) `[src: Sect. II.2]` | same samples, `z > 0.025` `[src: Sect. 2.2]` | `z_CMB > 0.01`; linear-theory velocity covariance at `z_CMB < 0.1` sampled with the rest `[src: Table 1, Sect. IV.4.5]` | no redshift cut `[src: Table 3]`; the volumetric redshift bias at z < 0.01 is modelled in the bias correction, and a cut at 0.01 changes nothing `[src: Sect. C.2]` |
+| Selection bias | BBC: 4D cells for BS21/P21, 7D for G10/C11 `[src: Table 5]` | BBC4D in `{z, x1, c, log M_star}`, `beta_true = 2.87` `[src: Sect. III.4]` | BBC4D `[src: Eq. 3]` | no correction term: error-function selection in observer-frame magnitude, survey depths marginalised `[src: Sect. IV.5]` | BBC version 4 `[src: Sect. 4.5]` |
+| Scatter model | BS21 dust parameters; `x1` populations of Popovic et al. 2021 `[src: Sect. III.3.2]` | BS21 framework with forward-modelled parameters (P21, later called P23) `[src: arXiv:2609.05053 Sect. 4.3]` | P23 `[src: Sect. 3.2]` | per-dataset unexplained dispersion, shared between `m_B`, `x1`, `c` by sampled fractions `[src: Sect. IV.3]` | P23, not refitted `[src: Sect. 4.3]` |
+| Non-Ia | none: probability set to 0 `[src: Sect. II.1]` | BEAMS with SuperNNova `[src: Sect. III.3]` | as DES-SN5YR | outlier mixture, fitted fraction `[src: Sect. IV.6]` | probability cut, no BEAMS variants `[src: Sect. 4.9]` |
+| Covariance | `C_stat` with off-diagonal terms for duplicated SNe `[src: Eq. 5]` plus unbinned `C_syst` `[src: Eq. 7]` | diagonal `C_stat` plus unbinned `C_syst = sum_S Delta_mu_S^i Delta_mu_S^j W_S^2` `[src: Eq. 11]` | as DES-SN5YR | none: calibration, selection and population parameters are sampled; UNITY1.7 in Union3.1 fixes an outlier prior and fits the step location, `10.115 (+0.044/−0.053)` `[src: arXiv:2601.19424 Sect. VI, Table 3]` | `C_stat` with duplicates; lensing term from a per-SN estimator `[src: Sect. 4.9]` |
+| Validation and blinding | binned residuals hidden and chains shifted `[src: Sect. II.3]`; 20 simulated samples give `w = −1.012 ± 0.011` (BS21) and `−0.983 ± 0.015` (G10) for input −1 `[src: Sect. III.3.4]` | 25 simulated samples; results unblinded in arXiv:2401.02929 `[src: Sect. VII.1]` | reproduce DES-SN5YR with the old errors restored; 25 simulations; data–simulation reduced `chi2` in 0.7–3.0 `[src: Sect. 6.3]` | per-sample magnitudes at fixed cosmology; 100 simulated realisations `[src: Sect. IV.7.1]` | 25 simulations: `Omega_m` bias `0.002 ± 0.002` (flat LCDM), `w` bias `0.01 ± 0.03`; four changes after unblinding, largest shift 0.3 sigma `[src: Sect. 5.2]` |
 
 ## 5. Hierarchical Bayesian and simulation-based alternatives
 <!-- key: hierarchical-bayesian-and-simulation-based -->
 
 | Framework | Reference | Notes |
 |---|---|---|
+| Hierarchical model on SALT-II fits | March et al. 2011, arXiv:1102.3237 | On simulations: tighter constraints than the `chi2` method more than 90 % of the time, statistical bias reduced by a factor 2–3, and a posterior for the intrinsic dispersion (`0.13 ± 0.01 mag` on the data of the time) `[src]`. An earlier hierarchical framework, for near-infrared light curves with Gibbs sampling, is Mandel et al. 2009 (arXiv:0908.0536): intrinsic `sigma(M_H) = 0.11 ± 0.03 mag` `[src]`. |
 | BAHAMAS | Shariff et al. 2016, arXiv:1510.05954 | Hierarchical model on SALT2 parameters. On the 740 JLA SNe with Planck it gave `Omega_m = 0.399 ± 0.027` and `w = -0.910 ± 0.045` (flat wCDM), 2.8 sigma and 1.6 sigma from the standard analysis, a mass step of 0.055 ± 0.022 mag and `sigma_res = 0.104 ± 0.005` `[src]`. No selection-effect modelling at that stage. |
-| UNITY | Rubin et al. 2015, arXiv:1507.01602; UNITY1.5 in arXiv:2311.12098; UNITY1.8 in arXiv:2601.19854 | Outliers, selection effects, non-linear standardisation, unexplained dispersion and calibration in one posterior. Separate `beta` for blue SNe and for red SNe in low- and high-mass hosts. Used for Union3 and Union3.1. |
+| UNITY | Rubin et al. 2015, arXiv:1507.01602; UNITY1.5 in arXiv:2311.12098; UNITY1.8 in arXiv:2601.19854 | Outliers, selection effects, non-linear standardisation, unexplained dispersion and calibration in one posterior. Separate `beta` for blue SNe and for red SNe in low- and high-mass hosts. Used for Union3 (UNITY1.5) and Union3.1 (UNITY1.7 `[src: arXiv:2601.19424 Sect. VI]`). |
 | Steve | Hinton et al. 2019, arXiv:1811.02381 | Hierarchical model with simulation-characterised selection; `w` bias below 0.03 on average on 60 000 simulated SNe, dependent on the intrinsic-scatter model `[src]`. Cross-check in DES-SN3YR. |
 | Two-population BHM | arXiv:2606.17802 | SALT2 parameters plus host mass and colour as a mixture of two SN and two host populations. |
 | FlowSN | Boyd et al. 2026, arXiv:2603.11165 | Normalising flow learns the selected-SN likelihood from simulations, used inside a hierarchical model with HMC; on LSST-like SNANA simulations the `w0` posterior is an order of magnitude less biased than "conventional techniques" `[src]`. Simulation result only. |
@@ -223,6 +294,12 @@ DES-SN5YR is the first flagship result with photometrically classified SNe
 and host-galaxy spectroscopic redshifts (DES Collaboration 2024,
 arXiv:2401.02929). Ingredients:
 
+- **Benchmark**: the Supernova Photometric Classification Challenge, a
+  simulated DES-like mix of Ia, Ibc and II with a confirmed training subset;
+  13 entries from 10 groups, all performing better on the training subset
+  than on the unconfirmed sample `[src]` (Kessler et al. 2010,
+  arXiv:1008.1024). Lochner et al. 2016 (arXiv:1603.00882) compared feature
+  extractions and learning algorithms on it.
 - **SuperNNova** (Möller & de Boissière 2019, arXiv:1901.06384): recurrent
   network on light curves; Ia vs non-Ia accuracy 96.92 ± 0.09 % without
   redshift and 99.55 ± 0.06 % with redshift on simulations `[src]`.
@@ -237,8 +314,13 @@ arXiv:2401.02929). Ingredients:
   of simulated SNe, giving `Delta w = 0.0013 ± 0.0026` (Qu et al. 2024,
   arXiv:2307.13696) `[src]`.
 
-Unite additionally applies a cut `P_Ia > 0.8` to the DES events `[src]`
-(arXiv:2609.05053).
+The DES photometric sample itself (SuperNNova ensembles, more than 98 %
+accuracy on simulations): 1863 SNe Ia, 1484 cosmology-grade at 0.07 < z <
+1.14 `[src]` (Möller et al. 2022, arXiv:2201.11142). Unite additionally
+applies a cut `P_Ia > 0.8` to the DES events, with probabilities from SCONE
+`[src: Table 3]` (arXiv:2609.05053), a convolutional network on
+wavelength–time flux images that needs no redshift (Qu et al. 2021,
+arXiv:2106.04370).
 
 ## 7. Covariance and likelihood practice
 <!-- key: covariance-and-likelihood-practice -->
@@ -253,8 +335,15 @@ offset `M` (equivalently `H0`) marginalised.
 - `C_stat` is diagonal apart from duplicated SNe (same SN observed by several
   surveys) and includes light-curve fit errors, a lensing term
   (`sigma_lens = 0.055 z` in Pantheon+), a redshift term and a
-  peculiar-velocity term (`sigma_vpec = 240 km/s` in Pantheon+) `[src]`
-  (Brout et al. 2022, arXiv:2202.04077).
+  peculiar-velocity term (`sigma_vpec = 240 km/s` in Pantheon+)
+  `[src: Eqs. 3 and 5, Sect. III.1.3]` (Brout et al. 2022, arXiv:2202.04077).
+  The `0.055 z` term is attributed to Jönsson et al. 2010 (arXiv:1002.1374)
+  `[sec, arXiv:2202.04077 Sect. II.1]`; Holz & Linder 2005
+  (arXiv:astro-ph/0412173) showed that lensing cuts the effective number of
+  SNe threefold at z = 1.5 for a 10 % intrinsic flux dispersion `[src]`.
+  Unite replaces `0.055 z` by the error of a per-SN lensing estimator, and
+  notes that the simulated lensing distributions used before had a scatter
+  about 30 % too low `[src: Sects. 4.7, 4.9]` (arXiv:2609.05053).
 - `C_syst` follows Conley et al. 2011 (arXiv:1104.1443), who introduced the
   systematics covariance matrix including the effect of systematics on the
   light-curve model. For each systematic `psi` the whole analysis is rerun and
@@ -295,7 +384,9 @@ source of confusion:
   Never compare FoM values across papers without checking which one is meant.
 - Compressed products are not likelihood-equivalent to the full sample unless
   shown to be; the public Union3 "spline-interpolated distance moduli"
-  posterior carries a non-flat prior (see "Not verified").
+  posterior carries a prior with structure in `Omega_m`–`w0`–`w_a`; with a
+  flat prior it shifts, not significantly, and the effect on the DESI 2024
+  fits is "inconsequential" `[src]` (Kim 2024, arXiv:2412.14181).
 
 ## 8. Redshifts and peculiar-velocity corrections
 <!-- key: redshifts-and-peculiar-velocity-corrections -->
@@ -314,7 +405,9 @@ nuisance.
   km/s/Mpc` and `Delta w = -0.001` `[src]`.
 - **Flow model.** Peterson et al. 2022 (arXiv:2110.03487), with 584 low-z
   SNe, find the best reduction of Hubble scatter from combining
-  coherent-flow corrections (2M++ based) with galaxy-group averaging (0.167
+  coherent-flow corrections (2M++ based: Carrick et al. 2015,
+  arXiv:1504.04627, density field within 200 Mpc/h and an external bulk flow
+  of `159 ± 23 km/s`) with galaxy-group averaging (0.167
   to 0.157 mag relative scatter); the correction raises `H0` by ~0.4 km/s/Mpc
   relative to raw CMB-frame redshifts; residual systematics are 0.06–0.11
   km/s/Mpc in `H0` and 0.02–0.03 in `w` `[src]`.
@@ -336,7 +429,16 @@ nuisance.
    fundamental calibration by of order 1.5 % over 4000 Å `[src]`
    (arXiv:2112.03864). The CALSPEC uncertainty carried in DES-SN5YR and
    Unite is 5 mmag per 7000 Å `[src]` (arXiv:2401.02945; arXiv:2609.05053).
-2. **Per-survey tertiary stars** observed with each SN instrument.
+   CALSPEC rests on pure-hydrogen white-dwarf models; relative fluxes of the
+   primary standards are accurate to 1 % from the visible to 2.5 µm (Bohlin
+   et al. 2014, arXiv:1406.1707), and the 2020 models of G191-B2B, GD153
+   and GD71 agree to 1 % from 1500 Å to 30 µm (Bohlin et al. 2020,
+   arXiv:2005.10945) `[src]`.
+2. **Per-survey tertiary stars** observed with each SN instrument. Worked
+   examples: the SNLS calibration (Regnault et al. 2009, arXiv:0908.3808:
+   response maps from dithered stellar fields, position-dependent passbands)
+   and its joint SNLS–SDSS version with three transfer paths from the HST
+   standards (Betoule et al. 2013, arXiv:1212.4864).
 3. **Cross-calibration** of all systems against a uniform all-sky stellar
    catalogue: Supercal (Scolnic et al. 2015, arXiv:1508.05361) used
    Pan-STARRS1; Fragilistic (arXiv:2112.03864) solves 25 systems and 105
@@ -346,7 +448,8 @@ nuisance.
    for the first time, and adding faint DA white dwarfs as an absolute tie.
 4. **DA white-dwarf network**: faint all-sky DA white dwarfs with modelled
    SEDs tied to the CALSPEC primaries (Axelrod et al. 2023,
-   doi:10.3847/1538-4357/acd333).
+   doi:10.3847/1538-4357/acd333); 32 are modelled jointly with three CALSPEC
+   stars to < 0.004 mag RMS `[src]` (Boyd et al. 2025, arXiv:2412.08809).
 5. **Propagation**: calibration variants are propagated *simultaneously*
    through model retraining and light-curve fitting (10 covariance
    realisations of SALT3 surfaces and zero points in Unite `[src]`,
@@ -357,6 +460,9 @@ nuisance.
 
 - JLA: the SNLS–SDSS inter-calibration was "performed blindly with respect to
   the cosmology analysis" (Betoule et al. 2014, arXiv:1401.4064).
+- Pantheon+: the binned distance residuals from BBC were hidden and the
+  CosmoSIS chains shifted by unknown values `[src: Sect. II.3]`
+  (arXiv:2202.04077).
 - UNITY was validated on simulations before being run on data (arXiv:1507.01602).
 - Union3: per-sample absolute magnitudes were fitted with the cosmology fixed
   to flat LCDM (`Omega_m = 0.3`) and the per-sample differences removed, so
@@ -381,6 +487,7 @@ cannot be blind in the same sense; DES-Dovekie first reproduces DES-SN5YR.
 | Code | What it does | Reference |
 |---|---|---|
 | SNANA | Survey simulation, light-curve fitting, BBC, fast cosmology fitter (`wfit`) | arXiv:0908.4280; arXiv:1610.04677 |
+| Pippin | "A pipeline for supernova cosmology" (title confirmed on Crossref; paper not read); the pipeline manager named in arXiv:2511.07517 | Hinton & Brout 2020, doi:10.21105/joss.02122 `[sec, reference list of arXiv:2202.04077]` |
 | SALTshaker / SALT3 | Public SALT training code and model; integrated in sncosmo and SNANA | arXiv:2104.07795 |
 | BayeSN | GPU hierarchical SED model, <https://github.com/bayesn/bayesn> | arXiv:2008.07538; Grayling et al. 2024, arXiv:2401.08755 |
 | UNITY | Unified Bayesian framework (released with Union3) | arXiv:1507.01602; arXiv:2311.12098 |
@@ -409,8 +516,5 @@ cannot be blind in the same sense; DES-Dovekie first reproduces DES-SN5YR.
 ## Not verified
 <!-- key: not-verified -->
 
-- Tripp 1998 and Fitzpatrick 1999 are cited only through arXiv:2511.07517.
-- The non-flat prior of the public Union3 spline posterior comes from an
-  abstract read this session (A. G. Kim 2024), not listed in `sources.tsv`.
-- Pippin (DES pipeline manager, named in arXiv:2511.07517): paper not fetched.
-- The low-redshift cut of the Pantheon+ cosmology fit was not located.
+- Tripp 1998 (A&A 331, 815) has no arXiv version and no DOI on Crossref; it
+  is cited through arXiv:2511.07517, and Tripp & Branch 1999 was read instead.

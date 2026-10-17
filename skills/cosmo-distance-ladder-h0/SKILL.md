@@ -5,7 +5,7 @@ description: Use when reviewing, planning or fact-checking Hubble-constant work 
 
 # Distance ladder and H0 — expert reference
 
-Snapshot 2026-10-07. Numbers carry provenance flags ([src] / [sec] / [der]);
+Snapshot 2026-10-13. Numbers carry provenance flags ([src] / [sec] / [der]);
 re-verify against the cited paper before a number enters a manuscript.
 
 ## File map
@@ -16,7 +16,7 @@ re-verify against the cited paper before a number enters a manuscript.
 | Formalism, anchors, indicators, masers, time delays, inverse ladder, priors, selection, blinding | `references/physics-and-methods.md` |
 | Programmes, samples, release dates | `references/surveys-and-data.md` |
 | H0 by route, tension table, reanalyses, history | `references/results.md` |
-| Each systematic; referee checklist | `references/systematics.md` |
+| Each systematic; error budgets term by term; referee checklist | `references/systematics.md` |
 | Controversies, forecasts, stale claims | `references/open-questions.md` |
 | Bibliography | `references/sources.tsv` |
 
@@ -107,7 +107,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; open 6k; methods 6k; results 7k; surveys 4k; systematics 7k.
+Sizes, in thousands of tokens: L1 2k; open 6k; methods 10k; results 7k; surveys 4k; systematics 11k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

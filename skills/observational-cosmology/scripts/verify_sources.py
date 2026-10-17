@@ -200,7 +200,12 @@ def check_skill(skill: Path, offline: bool) -> list[str]:
 
     if offline or not row_arxiv:
         return problems
+    return problems + compare_with_arxiv(row_arxiv, sources)
 
+
+def compare_with_arxiv(row_arxiv: dict[str, dict], sources: Path) -> list[str]:
+    """Compare rows, given as {arXiv id: row}, with what arXiv lists."""
+    problems: list[str] = []
     found = fetch(sorted(row_arxiv))
     for ident, row in sorted(row_arxiv.items()):
         where = f"{sources}:{row['_line']}"

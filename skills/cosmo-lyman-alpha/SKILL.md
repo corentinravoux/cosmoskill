@@ -5,7 +5,7 @@ description: Use when reviewing, planning or fact-checking Lyman-alpha forest wo
 
 # Lyman-alpha forest — expert reference
 
-Snapshot 2026-10-07. Numbers carry provenance flags ([src] / [sec] / [der]);
+Snapshot 2026-10-14. Numbers carry provenance flags ([src] / [sec] / [der]);
 re-verify against the cited paper before a number enters a manuscript.
 
 ## File map
@@ -19,15 +19,18 @@ re-verify against the cited paper before a number enters a manuscript.
 | Each systematic: size, mitigation, validation; referee checklist | `references/systematics.md` |
 | Tensions, method debates, forecasts, stale claims | `references/open-questions.md` |
 | Bibliography with roles | `references/sources.tsv` |
+| Continuum fit and distortion matrix: procedure, alternatives | `deep/continuum-distortion.md` |
+| P1D estimation (FFT, QMLE): corrections, validation | `deep/p1d-estimation.md` |
+| Emulator-based P1D inference: construction, validation | `deep/p1d-emulators.md` |
 
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
 
 - Current BAO: DESI DR2, D_H/r_d = 8.632 ± 0.101, D_M/r_d = 38.99 ± 0.53 (stat + sys), ρ = −0.431, z_eff = 2.33 (arXiv:2503.14739).
-- Current best distances come from the DR2 full shape: D_M/D_H = 4.572 ± 0.046, D_H/r_d = 8.600 ± 0.066, D_M/r_d = 39.32 ± 0.33, ρ = +0.225 (arXiv:2607.27410). They agree with Planck ΛCDM and sit about 2σ from the CMB + BAO w0waCDM prediction.
-- The Lyα BAO carries a theory systematic for the non-linear shift: 0.3% per direction in the BAO paper, revised to 0.15% (isotropic) and 0.8% (peak AP) in the full-shape paper. Studies disagree on the sign (arXiv:2412.06892, arXiv:2503.13442).
+- Best distances, DR2 full shape: D_M/D_H = 4.572 ± 0.046, D_H/r_d = 8.600 ± 0.066, D_M/r_d = 39.32 ± 0.33, ρ = +0.225 (arXiv:2607.27410); agree with Planck ΛCDM, ~2σ from the CMB + BAO w0waCDM prediction.
+- Non-linear BAO-shift systematic: 0.3% per direction (BAO paper), revised to 0.15% isotropic and 0.8% peak AP (full shape); studies disagree on its sign (arXiv:2412.06892, arXiv:2503.13442).
 - fσ8 from the forest fails mock validation and is excluded in DR1 and DR2 (arXiv:2509.15308, arXiv:2607.27411). β is b_η f / b_δ, not f/b.
-- The continuum fit removes the mean and slope of δ per forest and absorbs F̄(z); models are distorted with the distortion matrix (arXiv:1702.00176, arXiv:2506.15262). The distortion leaks r_∥ < 10 h⁻¹Mpc into all scales and biases AP at the percent level unless marginalised (arXiv:2607.27410).
+- The continuum fit removes the mean and slope of δ per forest and absorbs F̄(z); models are distorted with the distortion matrix (arXiv:1702.00176, arXiv:2506.15262). It leaks r_∥ < 10 h⁻¹Mpc into all scales: percent-level AP bias unless marginalised (arXiv:2607.27410).
 - DESI DR1 P1D cosmology: Δ²_★ = 0.379 ± 0.032, n_★ = −2.309 ± 0.019 at 0.009 s/km, z = 3, from 62,807 spectra with S/N > 3, consistent with Planck (arXiv:2601.21432).
 - The DR1 slope error is three times the eBOSS one: LLS, Si II–Si II and emulator errors are now marginalised.
 - Running: eBOSS-era α_s = −0.010 ± 0.004 (arXiv:1911.09073); DESI DR1 + CMB + BAO gives 0.0014 ± 0.0041. The "5σ" tension claims use eBOSS likelihoods (arXiv:2311.16377, arXiv:2511.01612).
@@ -50,8 +53,8 @@ Continuum distortion and its small-scale leakage; mean-flux prior; DLA finder pu
 - Quoting a WDM or FDM limit without its thermal-history assumption and k_max.
 - Stating that the forest alone constrains Σm_ν: alone about 1 eV; DESI DR1 P1D moves CMB + BAO from 55.1 to 53.7 meV.
 - Mixing D_A with D_M, or the DR2 BAO-only and full-shape distance pairs (opposite-sign correlations).
-- Confusing the DESI P1D sample sizes: more than 300,000 quasars measured, 62,807 used for cosmology.
-- Treating b_α and β_α from BAO fits as measurements; they are nuisance parameters.
+- Confusing DESI P1D sample sizes: >300,000 quasars measured, 62,807 used for cosmology.
+- Treating b_α, β_α from BAO fits as measurements (nuisance parameters).
 
 ## Related skills
 <!-- key: related-skills -->
@@ -73,10 +76,10 @@ Answer at the lowest level that answers the question, then stop.
 |---|---|---|
 | L1 | this file only | the headline values, the state of the domain, the list a referee checks, the errors that recur |
 | L2 | one file of `references/` | what this file does not hold: other values, their history, the size of each systematic, methods, releases |
-| L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
+| L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; open 7k; methods 11k; results 12k; surveys 7k; systematics 11k.
+Sizes, in thousands of tokens: L1 2k; open 7k; methods 14k; results 13k; surveys 7k; systematics 16k; deep/continuum-distortion 7k; deep/p1d-emulators 8k; deep/p1d-estimation 7k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

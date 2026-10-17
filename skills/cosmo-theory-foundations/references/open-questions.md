@@ -1,6 +1,6 @@
 # Theory foundations — where the community is split on a convention or a model, and misconceptions
 
-Snapshot: 2026-10-07
+Snapshot: 2026-10-15
 
 ## 1. h⁻¹Mpc units and σ8 versus σ12
 <!-- key: h-1mpc-units-and-sigma8-versus-sigma12 -->
@@ -153,7 +153,7 @@ Stale values to recognise: the S12 numbers of Sánchez 2020 (2018–2019 data); 
 <!-- key: not-verified -->
 
 - Whether any collaboration has adopted σ12 for a data release: none of the analyses read does; a systematic search was not made.
-- The DES Y3 neutrino prior and the size of the S8 shift between fixed and marginalised Σm_ν: only the figure caption was read, not the numbers.
+- The size of the DES Y3 S8 shift between fixed and marginalised Σm_ν: only the figure caption was read, not the numbers. The prior itself is now read: flat 10³ Ω_ν h² ∈ (0.60, 6.44) (arXiv:2105.13549, Table 1) [src]; `surveys-and-data.md` section 6.
 - Whether the Pezzotta et al. Mpc-prior result holds on DESI data: the paper uses synthetic data, and no application to data was found.
 - Independent confirmations of the Brieden et al. equality-scale H0 with DESI data: found among recent titles by the second pass of this build but not read, and not cited here.
 - The 11.9 Mpc in the misconception table uses h = 0.674 [der: 8/0.674]; any other h gives another radius, which is the point.

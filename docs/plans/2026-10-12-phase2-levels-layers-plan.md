@@ -13,7 +13,7 @@ agent. One files-only test run at the end.
 | 3 | `tools/templates/fixed-block.md`, `tools/sync_blocks.py` | one generated "Levels and layers" block at the end of every `SKILL.md`, with the measured size of each level; `--check` fails on a stale block |
 | 4 | hub `SKILL.md` | the level rules in full: how a question maps to a level, when to escalate, the answer footer |
 | 5 | `skills/observational-cosmology/scripts/layers.py` | finds the project layer (`./.cosmoskill/`, searched upward) and the personal layer (`$COSMOSKILL_HOME`, default `~/.cosmoskill/`), prints profile and notes for a skill; `init`, `check` |
-| 6 | `docs/layers-v0.md` | format of `profile.md` and `notes.md`, and what v0 does not do |
+| 6 | `docs/layers.md` | format of `profile.md` and `notes.md`, and what v0 does not do |
 | 7 | `tests/` | unit tests for 1, 2, 3, 5, each with a case that fails |
 | 8 | `docs/tests/levels/questions.md` | questions from four viewpoints, each with expected level and file |
 | 9 | — | dropped: the checks are run by hand in the update cycle; the package is kept private for testing, without continuous integration |

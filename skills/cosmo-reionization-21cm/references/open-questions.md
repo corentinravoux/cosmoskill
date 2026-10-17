@@ -1,7 +1,7 @@
 # Open questions — reionisation, 21 cm, line-intensity mapping
 
 Scope: live controversies, method debates, forecasts and stale claims.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-13
 
 Numbers carry [src], [sec] or [der]. Forecasts are labelled.
 
@@ -53,6 +53,10 @@ same high-ℓ CMB and BAO data]. The sibling skills `cosmo-cmb`, `cosmo-neutrino
   arXiv:2405.12275], described by their authors as unequivocal and robust evidence of islands.
   The dark-pixel limits (≤ 0.078 at z = 5.48 [der: 0.030 + 0.048]) leave room for an extended
   "soft landing" to z ~ 5.4 [src: Davies et al. 2025, arXiv:2510.25829].
+- The mean free path at z = 5.93 depends on the proximity model by a factor of five [der:
+  1.53/0.30]: 1.53, 0.81 or 0.30 pMpc for an opacity exponent ξ = 0.33, 0.67 or 1.00 [src: Zhu
+  et al. 2023, arXiv:2308.04614, Table 2]; an independent stack gives 0.75 (+0.65/−0.45) pMpc [src: Becker
+  et al. 2021, arXiv:2103.16610].
 - An awkward corollary: the ionising emissivity must fall by a factor 2–3 between z = 6 and 4.8
   [src: Tohfa et al. 2026, arXiv:2602.03923].
 - The photon-budget estimate from JWST spectra ends reionisation at z ~ 5.8, earlier than the
@@ -101,7 +105,12 @@ origin [src: Bradley et al. 2018, arXiv:1810.09015] and weak Bayesian evidence o
 terms are modelled [src: Sims & Pober 2019, arXiv:1910.03165]. SARAS 3 rejects the best-fit
 profile at 95.3% [src: Singh et al. 2021, arXiv:2112.06778]. Note that 95.3% is about 2σ: the
 profile is disfavoured, not excluded at high significance, and the SARAS band (55–85 MHz) does
-not cover the whole EDGES band. Multi-wavelength constraints predict a trough between −201 and
+not cover the whole EDGES band. The depth itself depends on the beam correction: 370 mK
+without it and up to 670 mK with one simulated beam model, in the original cross-checks
+[src: arXiv:1910.03165, Sect. 2.1.3]; in the 2026 open re-processing, choices in the beam
+factor move the foreground residuals by "a couple of mK" to just under 20 mK [src:
+arXiv:2605.16643, Sect. VIII.3].
+Multi-wavelength constraints predict a trough between −201 and
 −68 mK, shallower than the 0.5 K of EDGES [src: Dhandha et al. 2025, arXiv:2508.13761].
 
 ### 1.6 HI intensity mapping: first auto-spectra and what they say
@@ -116,7 +125,11 @@ not cover the whole EDGES band. Multi-wavelength constraints predict a trough be
   for any r ≤ 1 within the errors [der: 0.86/1.271 ≈ 0.68, with a 1σ range that includes 1].
 - Method debate: correct the foreground-cleaning signal loss with a transfer function [src:
   Cunnington et al. 2023, arXiv:2302.07034] or marginalise it in the likelihood [src:
-  arXiv:2610.12158].
+  arXiv:2610.12158]. The argument for the second: cleaning also mixes modes, and a transfer
+  function, "numerically equivalent to a renormalisation of the power spectrum estimator",
+  can then bias the correlations between k bins on large scales [src: arXiv:2610.12158, Sect.
+  11.4]. CHIME takes a third route and applies its stored filter to the simulations [src:
+  arXiv:2511.19620, Sect. III.2.3].
 - Single-dish against interferometric designs for BAO-scale work: single-dish reaches the large
   scales but has a ~30 Mpc beam; interferometers lose low k_∥ to foreground filtering. No BAO
   measurement from intensity mapping was found in the searches run.
@@ -132,6 +145,12 @@ not cover the whole EDGES band. Multi-wavelength constraints predict a trough be
   holds for a patchy reionisation signal, and what a signal-injection test returns.
 - Deepest limits come from different k: 0.076 (LOFAR), 0.18 (MWA), 0.34 (HERA) h/Mpc. A model is
   needed to compare them.
+- Sizes of the two risks differ by orders of magnitude in the record: an avoidance pipeline
+  corrects 5.5–7.2% of power for loss [src: arXiv:2210.04912, Table 2], while the one
+  retracted limit had loss "underestimated by a factor of > 1000" under empirical covariance
+  weighting [src: Cheng et al. 2018, arXiv:1810.05175, Sect. V]. Injection into the real data,
+  as LOFAR does with 100 signals per redshift [src: arXiv:2503.05576, Sect. 5.3], is the test
+  to ask for.
 
 ### 1.8 JWST abundances and ΛCDM
 <!-- key: jwst-abundances-and-lambdacdm -->
@@ -184,8 +203,8 @@ bursty at z > 10. `cosmo-tensions-anomalies` tracks this as a tension.
 - One 2026 paper that `cosmo-cmb` cites for reionisation data siding against a high τ
   (identifier 2601.09644 in its bibliography) was not read in this session and is not in this
   bibliography.
-- The value of the withdrawn PAPER-64 limit and the WMAP-era and Planck-2015 τ values were not
-  read at source.
+- The Planck 2015 τ value is known here only as quoted by arXiv:1502.02024 (0.066 ± 0.012);
+  the WMAP nine-year value was not read.
 - Frequency coverage of the full EDGES profile against the SARAS 3 band: only the SARAS band
   (55–85 MHz) and the EDGES centre (78 MHz) and width (19 MHz) were read; the statement in 1.5
   that SARAS does not cover the whole EDGES band is an inference from those numbers [der: 78 ±

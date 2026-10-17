@@ -1,7 +1,7 @@
 # Surveys and facilities — how a survey is specified and compared
 
 Scope: the quantities used to specify and compare cosmological surveys (etendue, figure of merit, number density and nP, depth, completeness, fibre assignment, cadence), with the reference papers and the conventions that make published numbers non-comparable.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-14
 
 Flags as in `surveys-and-data.md`: `[src]` read this session in the cited
 paper or page; `[sec: GC|WL|CMB|SN|CL]` carried over from the named sibling
@@ -24,22 +24,24 @@ brightness, wavelength, detector efficiency and duty cycle.
 
 | Facility | Aperture used | Field | AΩ | Flag |
 |---|---|---|---|---|
-| Rubin (Simonyi) | 6.5 m effective (8.4 m primary) | 9.6 deg² | 319 m² deg² | inputs [src] arXiv:0805.2366; product [der] |
+| Rubin (Simonyi) | 6.5 m effective (8.4 m primary) | 9.6 deg² | 319 m² deg² | inputs [src] arXiv:0805.2366; product [der], and stated as 319 m² deg² in its Table 1 [src: Table 1] |
+| HSC on Subaru | 8.2 m | 1.5° diameter, 1.77 deg² as a full disc | 93 m² deg² | inputs [src: Table 1] arXiv:1704.05858; product [der]; the paper calls HSC's étendue "the largest of all existing wide-field optical imaging cameras" before LSST [src: Sect. 2] |
 | ZTF (Palomar 48-inch) | 1.22 m | 47 deg² | 55 m² deg² | inputs [src] arXiv:1902.01932; product [der] |
-| DECam on Blanco | 4 m | 2.2° diameter, 3.8 deg² | 48 m² deg² | inputs [src] arXiv:1504.02900; product [der] |
+| DECam on Blanco | 4 m | 2.2° diameter (3.8 deg² as a full disc [der]); "3 sq. deg." stated as the field of view [src: Sect. I] | 38 m² deg² with 3 deg² (48 with the full disc) | inputs [src] arXiv:1504.02900; product [der] |
 | CSST | 2 m | about 1.1 deg² | 3.5 m² deg² | inputs [src] arXiv:2507.04618; product [der] |
 | Roman WFI | 2.4 m | 0.281 deg² | 1.3 m² deg² | inputs [src] arXiv:1902.05569; product [der] |
+| Euclid NISP | 1.20 m | 0.57 deg² | 0.64 m² deg² | inputs [src: Sect. 2] arXiv:2405.13493; product [der] |
+| Euclid VIS | 1.20 m | 0.54 deg² | 0.61 m² deg² | aperture [src: Sect. 2] arXiv:2405.13493, field [src] arXiv:2405.13492; product [der] |
 
 Assumption for every [der] product: unobstructed circular aperture of the
 quoted diameter, A = π(D/2)². For Rubin the paper itself supplies the
 effective diameter; with the full 8.4 m the product would be 532 m² deg²,
-which is not the number to quote. Euclid VIS (0.54 deg², arXiv:2405.13492)
-and NISP (0.57 deg², arXiv:2405.13493) are left out because the telescope
-aperture was not read this session.
+which is not the number to quote.
 
 Three consequences that the table makes visible:
 
-- Rubin's etendue is about six times that of DECam or ZTF [der], which is
+- Rubin's etendue is about six times that of ZTF and six to eight times
+  that of DECam, depending on the DECam field adopted [der], which is
   why it can revisit 18,000 deg² about 800 times in ten years
   (arXiv:0805.2366) [src].
 - ZTF matches DECam in etendue with a telescope of one tenth the area [der]:
@@ -61,11 +63,11 @@ class needs.
 | Facility | Aperture | Field | Fibres | Fibres per deg² | A × N_fibre [m²] | Flag for inputs |
 |---|---|---|---|---|---|---|
 | SDSS-V | 2.5 m | — | 500 per site | — | 2.5 × 10³ | [src] arXiv:2507.06989 |
-| WEAVE | 4.2 m | 2° diameter, 3.1 deg² | nearly 1000 | about 320 | 1.4 × 10⁴ | [src] arXiv:2212.03981 |
+| WEAVE | 4.2 m | 2° diameter, 3.1 deg² | 960 (MOS-A) | about 310 | 1.3 × 10⁴ | [src: Table 2] arXiv:2212.03981 |
 | 4MOST | 4 m class | 4.2 deg² | 2436 | 580 | 3.1 × 10⁴ | [src] arXiv:1903.02464, arXiv:2606.27882 |
 | MOONS | 8 m class | 25′ diameter, 0.14 deg² | about 1000 | about 7300 | 5.0 × 10⁴ | [src] arXiv:2009.00628, arXiv:2009.00635 |
-| DESI | 4 m | 3.2° diameter, 8.0 deg² | 5020 | 624 | 6.3 × 10⁴ | [sec: GC] arXiv:2205.10939 |
-| PFS | 8.2 m | 1.25 deg² | 2386 | 1909 | 1.3 × 10⁵ | [sec: GC] arXiv:2606.14012 |
+| DESI | 4 m | 3.2° diameter, 8.0 deg² (requirement ≥ 7.65 deg²) | 5020 | 624 (requirement < 700) | 6.3 × 10⁴ | [src: abstract, Table 4] arXiv:2205.10939 |
+| PFS | 8.2 m | 1.25 deg² | 2386 | 1909 | 1.3 × 10⁵ | [src: abstract, Sect. 2] arXiv:2606.14012 |
 | Spec-S5 (**design**) | 6 m, two telescopes | — | 13,000 each | — | 3.7 × 10⁵ each | [sec: GC] arXiv:2608.07927 |
 | MUST (**design**) | 6.5 m | about 5 deg² | more than 20,000 | 4000 | 6.6 × 10⁵ | [src] arXiv:2605.10102 |
 | MSE (**design**, 2025) | 11.5 m | 1.5 deg² | more than 18,000 | 12,000 | 1.9 × 10⁶ | [src] arXiv:2503.15553 |
@@ -188,13 +190,16 @@ its noise is thermal and its limit is foreground removal (Sect. 8).
 | Survey | Quoted depth | Convention | Source |
 |---|---|---|---|
 | DES DR2 | g 24.7, r 24.4, i 23.8, z 23.1, Y 21.7 | S/N = 10, 1.95″ diameter aperture, coadd | arXiv:2101.05765 [src] |
+| Legacy Surveys (DESI requirement) | g 24.0, r 23.4, z 22.5 | optimal-extraction depth of an exponential galaxy, 0.45″ half-light radius | arXiv:1804.08657 [src: App. A] |
 | UNIONS | u 23.7, g 24.5, r 24.2, i 23.8, z 23.3 | 10σ point source, 2″ aperture | arXiv:2503.13783 [src] |
-| HSC-SSP Wide | r ≈ 26 | 5σ point source | arXiv:1704.05858 [src] |
+| HSC-SSP Wide | r ≈ 26; per band g 26.5, r 26.1, i 25.9, z 25.1, y 24.4 | 5σ point source (abstract), **design** | arXiv:1704.05858 [src; Table 2 per band] |
 | Pan-STARRS1 3π | g 23.3, r 23.2, i 23.1, z 22.3, y 21.4 | 5σ point source, stack | arXiv:1612.05560 [src] |
-| Rubin | r ≈ 24.5 single visit, r ≈ 27.5 coadd | 5σ point source, **design** | arXiv:0805.2366 [src] |
+| Rubin | r ≈ 24.5 single visit, r ≈ 27.5 coadd; per band ugrizy single visit 23.9, 25.0, 24.7, 24.0, 23.3, 22.1 and coadd 26.1, 27.4, 27.5, 26.8, 26.1, 24.9 | 5σ point source, zenith, **design** (about 0.2 mag lost at realistic airmass) | arXiv:0805.2366 [src: Table 1] |
 | Euclid VIS | m_AB > 24.5 | S/N > 10, extended source, single broad band | arXiv:2405.13492 [src] |
 | Euclid reference survey | 26.2 visible, 24.5 near-infrared | 5σ point source, pre-launch **design** | arXiv:2108.01201 [src] |
 | CSST | g ≈ 26 | 5σ point source, **design** | arXiv:2507.04618 [src] |
+| Euclid NISP | Y_E 24.6, J_E 24.6, H_E 24.5 (requirement 24.0) | 5σ point source, model fit, initial in-flight | arXiv:2405.13493 [src: Table 5, Sect. 2] |
+| Roman HLWAS medium tier | 26.5 in Y, J, H | 5σ point source, about 600 s, **design** | arXiv:2505.10574 [src: Sect. II] |
 
 A 5σ point-source limit and a 10σ extended-source limit in the same data
 differ by more than a magnitude. The two Euclid rows describe the same
@@ -249,7 +254,8 @@ Hardware sets the pattern of what is missed:
 
 - Plates with drilled holes (SDSS, BOSS, eBOSS): a minimum separation between
   neighbouring fibres, the "close-pair issue" (Bianchi & Percival 2017,
-  arXiv:1703.02070) [src].
+  arXiv:1703.02070) [src]; 62″ for BOSS (arXiv:1208.0022)
+  [src: Sect. III.1].
 - Robotic positioners with a finite patrol radius (DESI): each fibre reaches
   only a small disc, so the constraint is the number of targets per patrol
   area (Lasker et al. 2024, arXiv:2404.03006) [src].
@@ -288,7 +294,7 @@ several programmes in one exposure (arXiv:2606.14012) [src].
 | ZTF | 47 deg² per exposure, 8 s readout | arXiv:1902.01932 [src] |
 | YSE | about 750 deg² every three days in griz (2020) | arXiv:2010.09724 [src] |
 | Rubin | pairs of 15 s exposures, two visits per pointing per night; 10,000 deg² in one filter in three nights (**design**) | arXiv:0805.2366 [src] |
-| Roman HLTDS | filter subsets every five days | [sec: SN] |
+| Roman HLTDS | about five-day cadence for two years, wide tier about 18 deg², deep tier about 6.5 deg² | arXiv:2505.10574 [src: Sect. II] |
 | Euclid | step-and-stare, four dithered frames per wide-survey pointing | arXiv:2108.01201 [src] |
 | SPHEREx | four all-sky passes in two years | [sec: GC] |
 | eROSITA | one all-sky pass every six months | arXiv:2010.03477 [src] |
@@ -320,7 +326,12 @@ uncertainties on n_s and r scale roughly with the beam size.
 
 Depths of the current maps, to fix orders of magnitude [sec: CMB]: ACT DR6
 has a median of 10 μK-arcmin over 19,000 deg²; SPT-3G D1 reaches 4.4
-μK-arcmin in intensity at 150 GHz over 1500 deg²; BK18 reaches 2.8
+μK-arcmin in intensity at 150 GHz over 1500 deg² (white-noise floors 5.4,
+4.4, 16.2 μK-arcmin in T and 8.4, 6.6, 25.8 in polarisation at 95, 150,
+220 GHz; coadded 3.3 and 5.1; atmosphere dominates T noise on large
+scales; arXiv:2506.20707 [src: Sect. IV.5]); Planck's white-noise levels
+are 0.55 μK_CMB deg in T at 143 GHz, about 33 μK-arcmin [der: × 60]
+(arXiv:1807.06205 [src: Table 4]); BK18 reaches 2.8
 μK-arcmin in Q/U at 95 and 150 GHz over about 400–600 deg². Depth and area
 trade at fixed detector-years; the sample-variance term favours area for
 lensing and damping-tail science and depth on a small clean patch for
@@ -353,7 +364,11 @@ sensitivity per channel and resolution (WALLABY: about 1.6 mJy per beam per
 candidates above a stated threshold and the localisation, not a depth. The
 catalogue grew from 90 candidates (GWTC-3.0) to 218 (GWTC-4.0, threshold
 p_astro ≥ 0.5; arXiv:2508.18082) [src], with 267 mergers in the GWTC-5.0
-population analysis (arXiv:2605.27226) [src]. For cosmology what counts is
+population analysis (arXiv:2605.27226) [src]. The population sample uses a
+different threshold, false-alarm rate < 1 yr⁻¹ (< 0.25 yr⁻¹ with a neutron
+star); O4b added 104 binary black holes and two O4a sources were added on
+reanalysis, from 161 to 267, with no new NSBH or BNS [src: Sect. I,
+II.1]. A candidate count is meaningless without its threshold. For cosmology what counts is
 the number of events with a redshift, by counterpart or statistically
 (`cosmo-multimessenger`).
 
@@ -363,10 +378,11 @@ the number of events with a redshift, by counterpart or statistically
 - The DETF stage definitions and the exact normalisation of the DETF figure
   of merit (only the abstract of arXiv:astro-ph/0609591 was read).
 - Telescope obstruction and throughput for every entry of the etendue and
-  multiplex tables; the Euclid and HSC apertures and the HSC field of view
-  were not read, so both are absent from Table 1.1.
-- The SDSS fibre-collision angular scales (plate hardware limits) and the
-  DESI patrol radius in millimetres or arcseconds.
+  multiplex tables. (Euclid and HSC fields and apertures: closed,
+  Sect. 1.1.)
+- The SDSS-I/II fibre-collision angular scale. (BOSS: closed, 62″,
+  arXiv:1208.0022 Sect. III.1; DESI patrol disc: closed, 12 mm diameter,
+  arXiv:2205.10939 Sect. V.2.)
 - The third n_eff value of arXiv:1305.0793 (after masking), cut off in the
   abstract text retrieved.
 - Rubin's delivered cadence since 30 June 2026, and the adopted baseline

@@ -1,28 +1,53 @@
 key	id	first_author	year	title	role
+Kaiser1992	doi:10.1086/171151	Kaiser	1992	Weak gravitational lensing of distant galaxies	foundation
 Kaiser1994	astro-ph/9411005	Kaiser	1994	A Method for Weak Lensing Observations	foundation
+Brainerd1995	astro-ph/9503073	Brainerd	1995	MEASURING GALAXY MASSES USING GALAXY-GALAXY GRAVITATIONAL LENSING	foundation
+Kaiser1996	astro-ph/9610120	Kaiser	1996	Weak Lensing and Cosmology	foundation
+Schneider1997	astro-ph/9708143	Schneider	1997	A new measure for cosmic shear	foundation
+Hu1999	astro-ph/9904153	Hu	1999	Power Spectrum Tomography with Weak Lensing	foundation
 Bartelmann1999	astro-ph/9912508	Bartelmann	1999	Weak Gravitational Lensing	review
+Heavens2000	astro-ph/0005269	Heavens	2000	Intrinsic Correlation of Galaxy Shapes: Implications for Weak Lensing Measurements	foundation
+Catelan2000	astro-ph/0005470	Catelan	2000	Intrinsic and Extrinsic Galaxy Alignment	foundation
+Cooray2000	astro-ph/0012087	Cooray	2000	Power Spectrum Covariance of Weak Gravitational Lensing	foundation
+Crittenden2000	astro-ph/0012336	Crittenden	2000	Discriminating weak lensing from intrinsic spin correlations using the curl-gradient decomposition	foundation
 Hivon2001	astro-ph/0105302	Hivon	2001	MASTER of the CMB Anisotropy Power Spectrum: A Fast Method for Statistical Analysis of Large and Complex CMB Data Sets	method
+Bernstein2001	astro-ph/0107431	Bernstein	2001	Shapes and Shears, Stars and Smears: Optimal Measurements for Weak Lensing	foundation
 Schneider2002	astro-ph/0206182	Schneider	2002	Analysis of two-point statistics of cosmic shear: I. Estimators and covariances	foundation
+Smith2002	astro-ph/0207664	Smith	2002	Stable clustering, the halo model and nonlinear cosmological power spectra	method
 Jain2003	astro-ph/0306046	Jain	2003	Cross-correlation Tomography: Measuring Dark Energy Evolution with Weak Lensing	foundation
 Jarvis2003	astro-ph/0307393	Jarvis	2003	The Skewness of the Aperture Mass Statistic	code
+Hu2003	astro-ph/0312395	Hu	2003	Joint Galaxy-Lensing Observables and the Dark Energy	foundation
+White2004	astro-ph/0405593	White	2004	Baryons and weak lensing power spectra	foundation
 Hirata2004	astro-ph/0406275	Hirata	2004	Intrinsic alignment-lensing interference as a contaminant of cosmic shear	foundation
+Huterer2005	astro-ph/0506030	Huterer	2005	Systematic Errors in Future Weak Lensing Surveys: Requirements and Prospects for Self-Calibration	foundation
 Heymans2005	astro-ph/0506112	Heymans	2005	The Shear TEsting Programme 1: Weak lensing analysis of simulated ground-based observations	systematics
 Hartlap2006	astro-ph/0608064	Hartlap	2006	Why your model parameter confidences might be too optimistic -- unbiased estimation of the inverse covariance matrix	method
 Bridle2007	0705.0166	Bridle	2007	Dark energy constraints from cosmic shear power spectra: impact of intrinsic alignments on photometric redshift requirements	foundation
+Joachimi2007	0708.0387	Joachimi	2007	Analysis of two-point statistics of cosmic shear: III. Covariances of shear measures made easy	method
+Miller2007	0708.2340	Miller	2007	Bayesian Galaxy Shape Measurement for Weak Lensing Surveys -I. Methodology and a Fast Fitting Algorithm	method
 PaulinHenriksson2007	0711.4886	Paulin-Henriksson	2007	PSF calibration requirements for dark energy from cosmic shear	systematics
 Lima2008	0801.3822	Lima	2008	Estimating the Redshift Distribution of Faint Galaxy Samples	method
 Newman2008	0805.1409	Newman	2008	Calibrating Redshift Distributions Beyond Spectroscopic Limits with Cross-Correlations	foundation
 Ivezic2008	0805.2366	Ivezić	2008	LSST: from Science Drivers to Reference Design and Anticipated Data Products	data
+Bernstein2008	0808.3400	Bernstein	2008	Comprehensive Two-Point Analyses of Weak Gravitational Lensing Surveys	method
 LoVerde2008	0809.5112	LoVerde	2008	Extended Limber Approximation	method
+Schneider2009	0903.3870	Schneider	2009	A halo model for intrinsic alignments of galaxy ellipticities	method
 Rowe2009	0904.3056	Rowe	2009	Improving PSF modelling for weak gravitational lensing using new methods in model selection	systematics
+Joachimi2009	0911.2454	Joachimi	2009	Simultaneous measurement of cosmology and intrinsic alignments using joint cosmic shear and galaxy number density correlations	method
 Schneider2010	1002.2136	Schneider	2010	COSEBIs: Extracting the full E-/B-mode information from cosmic shear correlation functions	method
+Joachimi2010	1008.3491	Joachimi	2010	Constraints on intrinsic alignment contamination of weak lensing surveys using the MegaZ-LRG sample	systematics
 vanDaalen2011	1104.1174	van Daalen	2011	The effects of galaxy formation on the matter power spectrum: A challenge for precision cosmology	foundation
+Semboloni2011	1105.1075	Semboloni	2011	Quantifying the effect of baryon physics on weak lensing tomography	systematics
 Laureijs2011	1110.3193	Laureijs	2011	Euclid Definition Study Report	data
+Asgari2012	1201.2669	Asgari	2012	Cosmic Shear Tomography and Efficient Data Compression using COSEBIs	method
+Refregier2012	1203.5050	Refregier	2012	Noise bias in weak lensing shape measurements	systematics
 Takahashi2012	1208.2701	Takahashi	2012	Revising the Halofit Model for the Nonlinear Matter Power Spectrum	method
 Heymans2012	1210.0032	Heymans	2012	CFHTLenS: The Canada-France-Hawaii Telescope Lensing Survey	data
+Massey2012	1210.7690	Massey	2012	Origins of weak lensing systematics, and requirements on future instrumentation (or knowledge of instrumentation)	systematics
 Miller2012	1210.8201	Miller	2012	Bayesian Galaxy Shape Measurement for Weak Lensing Surveys - III. Application to the Canada-France-Hawaii Telescope Lensing Survey	method
 Kilbinger2012	1212.3338	Kilbinger	2012	CFHTLenS: Combined probe cosmological model comparison using 2D weak gravitational lensing	results
 Takada2013	1302.6994	Takada	2013	Power Spectrum Super-Sample Covariance	method
+Schmidt2013	1303.0292	Schmidt	2013	Recovering Redshift Distributions with Cross-Correlations: Pushing The Boundaries	method
 Heymans2013	1303.1808	Heymans	2013	CFHTLenS tomographic weak lensing cosmological parameter constraints: Mitigating the impact of intrinsic galaxy alignments	results
 Menard2013	1303.4722	Ménard	2013	Clustering-based redshift estimation: method and application to data	method
 Sheldon2014	1403.7669	Sheldon	2014	An Implementation of Bayesian Lensing Shear Measurement	code
@@ -31,20 +56,24 @@ Troxel2014	1407.6990	Troxel	2014	The Intrinsic Alignment of Galaxies and its Imp
 Rowe2014	1407.7676	Rowe	2014	GalSim: The modular galaxy image simulation toolkit	code
 Zuntz2014	1409.3409	Zuntz	2014	CosmoSIS: modular cosmological parameter estimation	code
 Kilbinger2014	1411.0115	Kilbinger	2014	Cosmology with cosmic shear observations: a review	review
+Becker2014	1412.3851	Becker	2014	Fourier Band-Power E/B-mode Estimators for Cosmic Shear	method
 Spergel2015	1503.03757	Spergel	2015	Wide-Field InfrarRed Survey Telescope-Astrophysics Focused Telescope Assets WFIRST-AFTA 2015 Report	data
 Joachimi2015	1504.05456	Joachimi	2015	Galaxy alignments: An overview	review
 Mead2015	1505.07833	Mead	2015	An accurate halo model for fitting non-linear cosmological power spectra and baryonic feedback models	code
+Handley2015	1506.00171	Handley	2015	PolyChord: next-generation nested sampling	code
 Kuijken2015	1507.00738	Kuijken	2015	Gravitational Lensing Analysis of the Kilo Degree Survey	data
 Jarvis2015	1507.05603	Jarvis	2015	The DES Science Verification Weak Lensing Shear Catalogues	data
 Masters2015	1509.03318	Masters	2015	Mapping the Galaxy Color-Redshift Relation: Optimal Photometric Redshift Calibration Strategies for Cosmology Surveys	method
 Schneider2015	1510.06034	Schneider	2015	A new method to quantify the effects of baryons on the matter power spectrum	method
 Sellentin2015	1511.05969	Sellentin	2015	Parameter inference with estimated covariance matrices	method
 Krause2016	1601.05779	Krause	2016	CosmoLike - Cosmological Likelihood Analyses for Photometric Galaxy Surveys	code
+McCarthy2016	1603.02702	McCarthy	2016	The BAHAMAS project: Calibrated hydrodynamical simulations for large-scale structure cosmology	method
 Hildebrandt2016	1606.05338	Hildebrandt	2016	KiDS-450: Cosmological parameter constraints from tomographic weak gravitational lensing	results
 Leauthaud2016	1611.08606	Leauthaud	2016	Lensing is Low: Cosmology, Galaxy Formation, or New Physics?	critique
 Huff2017	1702.02600	Huff	2017	Metacalibration: Direct Self-Calibration of Biases in Shear Measurement	method
 Sheldon2017	1702.02601	Sheldon	2017	Practical Weak Lensing Shear Measurement with Metacalibration	method
 Kilbinger2017	1702.05301	Kilbinger	2017	Precision calculations of the cosmic shear power spectrum projection	method
+Lemos2017	1704.01054	Lemos	2017	The effect of Limber and flat-sky approximations on galaxy weak lensing	method
 Mandelbaum2017	1705.06745	Mandelbaum	2017	The first-year shear catalog of the Subaru Hyper Suprime-Cam SSP Survey	data
 DES2017	1708.01530	DES Collaboration	2017	Dark Energy Survey Year 1 Results: Cosmological Constraints from Galaxy Clustering and Weak Lensing	results
 Zuntz2017	1708.01533	Zuntz	2017	Dark Energy Survey Year 1 Results: Weak Lensing Shape Catalogues	data
@@ -69,6 +98,7 @@ Euclid2019	1910.09273	Euclid Collaboration	2019	Euclid preparation: VII. Forecas
 Sheldon2019	1911.02505	Sheldon	2019	Mitigating Shear-dependent Object Detection Biases with Metacalibration	method
 Muir2019	1911.05929	Muir	2019	Blinding multi-probe cosmological experiments	method
 Fortuna2020	2003.02700	Fortuna	2020	The halo model as a versatile tool to predict intrinsic alignments	method
+Fang2020	2004.04833	Fang	2020	2D-FFTLog: Efficient computation of real space covariance matrices for galaxy clustering and weak lensing	code
 Joachimi2020	2007.01844	Joachimi	2020	KiDS-1000 Methodology: Modelling and inference for joint weak gravitational lensing and spectroscopic galaxy clustering analysis	method
 Giblin2020	2007.01845	Giblin	2020	KiDS-1000 catalogue: Weak gravitational lensing shear measurements	data
 Busch2020	2007.01846	Busch	2020	Testing KiDS cross-correlation redshifts with simulations	method
@@ -95,6 +125,7 @@ Giri2021	2108.08863	Giri	2021	Emulation of baryonic effects on the matter power 
 Leauthaud2021	2111.13805	Leauthaud	2021	Lensing Without Borders. I. A Blind Comparison of the Amplitude of Galaxy-Galaxy Lensing Between Independent Imaging Surveys	systematics
 Nourbakhsh2021	2112.07659	Nourbakhsh	2021	Galaxy blending effects in deep imaging cosmic shear probes of cosmology	systematics
 Amon2022	2202.07440	Amon	2022	Consistent lensing and clustering in a low-$S_8$ Universe with BOSS, DES Year 3, HSC Year 1 and KiDS-1000	results
+Lemos2022	2202.08233	Lemos	2022	Robust sampling for weak lensing and clustering analyses with the Dark Energy Survey	method
 Abdalla2022	2203.06142	Abdalla	2022	Cosmology Intertwined: A Review of the Particle Physics, Astrophysics, and Cosmology Associated with the Cosmological Tensions and Anomalies	review
 Chang2022	2203.12440	Chang	2022	Joint analysis of DES Year 3 data and CMB lensing from SPT and Planck II: Cross-correlation measurements and cosmological constraints	results
 Chen2022	2206.08591	Chen	2022	Constraining the Baryonic Feedback with Cosmic Shear Using the DES Year-3 Small-Scale Measurements	results
@@ -119,6 +150,7 @@ Salcido2023	2305.09710	Salcido	2023	SP(k) -- A hydrodynamical simulation-based m
 Preston2023	2305.09827	Preston	2023	A non-linear solution to the $S_8$ tension II: Analysis of DES Year 3 cosmic shear	critique
 DarkEnergySurveyandKiloDegreeSurvey2023	2305.17173	Dark Energy Survey and Kilo-Degree Survey Collaboration	2023	DES Y3 + KiDS-1000: Consistent cosmology combining cosmic shear surveys	results
 Schaye2023	2306.04024	Schaye	2023	The FLAMINGO project: cosmological hydrodynamical simulations for large-scale structure and galaxy cluster surveys	method
+Lange2023	2306.16923	Lange	2023	NAUTILUS: boosting Bayesian importance nested sampling with deep learning	code
 McCarthy2023	2309.07959	McCarthy	2023	The FLAMINGO project: revisiting the $S_8$ tension and the role of baryonic physics	critique
 Lamman2023	2309.08605	Lamman	2023	The IA Guide: A Breakdown of Intrinsic Alignment Formalisms	review
 Bigwood2024	2404.06098	Bigwood	2024	Weak lensing combined with the kinetic Sunyaev Zel'dovich effect: A study of baryonic feedback	results
@@ -191,3 +223,11 @@ Hebert2026	2608.21688	Hébert	2026	Simulation Tests of PSF Modeling for Cosmic S
 Bucko2026	2609.09144	Bucko	2026	Baryonification IV: Constraining baryonic feedback with X-ray gas fractions	results
 Wayland2026	2609.31774	Wayland	2026	Joint measurements of thermal Sunyaev-Zel'dovich and cosmic infrared background cross-correlations with cosmic shear	results
 Doux2026	2610.03447	Doux	2026	Dark Energy Survey Year 6 Results: fast and interpretable posterior predictive checks for correlated cosmic probes	method
+Liaudat2023	2306.07996	Liaudat	2023	Point spread function modelling for astronomical telescopes: a review focused on weak gravitational lensing studies	review
+Euclid2019b	1902.00044	Euclid Collaboration	2019	Euclid preparation: IV. Impact of undetected galaxies on weak-lensing shear measurements	systematics
+Euclid2026c	2604.26684	Euclid Collaboration	2026	Euclid preparation. Refining input galaxy shape distributions for shear calibration simulations	critique
+Jansen2024	2401.08239	Jansen	2024	Euclid: Improving the efficiency of weak lensing shear bias calibration. Pixel noise cancellation and the response method on trial	method
+Fortuna2024	2409.15416	Fortuna	2024	KiDS-1000: Weak lensing and intrinsic alignment around luminous red galaxies	data
+Samuroff2024	2402.15573	Samuroff	2024	Joint constraints from cosmic shear, galaxy-galaxy lensing and galaxy clustering: internal tension as an indicator of intrinsic alignment modelling error	critique
+Campos2022	2211.02800	Campos	2022	An empirical approach to model selection: weak lensing and intrinsic alignments	method
+Euclid2026d	2601.07784	Euclid Collaboration	2026	Euclid preparation. Testing analytic models of galaxy intrinsic alignments in the Euclid Flagship simulation	systematics

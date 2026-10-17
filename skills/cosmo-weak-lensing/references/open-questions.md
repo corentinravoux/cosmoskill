@@ -3,18 +3,19 @@
 Scope: live controversies in cosmic shear and galaxy–galaxy lensing, with both
 sides cited; what the next data decide; claims that still circulate and the
 papers that correct them.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-16
 
 Flags: `[src]` read this session in the cited paper; `[sec]` from a named
-secondary source; `[der]` derived here.
+secondary source; `[der]` derived here. A flag that names a place, as in
+`[src: Sect. V.2]`, marks a statement read in the body of the paper.
 
 ## 1. Is the S8 tension resolved? Not uniformly
 <!-- key: is-the-s8-tension-resolved-not-uniformly -->
 
 The two final Stage-III analyses disagree about it.
 
-- **KiDS-Legacy says yes.** S8 = 0.815 +0.016/−0.021, 0.73σ from Planck
-  Legacy; the paper attributes the rise relative to earlier KiDS results
+- **KiDS-Legacy says yes.** S8 = 0.815 +0.016/−0.021, 0.76σ from Planck
+  Legacy in S8 (0.73σ in Σ8; arXiv:2503.19441, Sect. 7); the paper attributes the rise relative to earlier KiDS results
   mainly to improved redshift-distribution estimation and calibration, plus
   new area and improved image reduction (Wright et al. 2025, arXiv:2503.19441)
   [src]. The joint second- and third-order analysis reports "no evidence for
@@ -36,10 +37,16 @@ Three facts keep this from being a clean contradiction between the two surveys.
    0.804 (HSC Y3 recalibrated, arXiv:2511.18134), 0.805 (DECADE + DES Y3,
    arXiv:2509.03582) [src each]. The difference in quoted tension comes
    largely from the error bars and from the CMB reference: DES compares with
-   Planck 2018 + ACT DR6 + SPT-3G DR1, whose S8 is higher and tighter than
-   Planck alone, KiDS-Legacy with Planck alone.
-2. The DES Y6 number depends on the IA model at the 1σ level (0.798 NLA vs
-   0.783 TATT), and the paper says so (arXiv:2602.10065) [src].
+   Planck 2018 + ACT DR6 + SPT-3G DR1, KiDS-Legacy with Planck alone. The
+   two references have the same centre and different widths: 0.836
+   +0.012/−0.013 for DES (arXiv:2601.14559) [src: Table 4] against 0.834 ±
+   0.016 for KiDS-Legacy (arXiv:2503.19441) [src: Sect. 7]. Against Planck
+   2018 alone the DES Y6 3×2pt full-parameter difference is 1.0σ, down from
+   1.5σ in Y3 (arXiv:2601.14559) [src: Sect. V.2].
+2. The DES Y6 number depends on the IA model (0.798 NLA vs 0.783 TATT), and
+   the paper says so (arXiv:2602.10065) [src]: the two fiducial posteriors
+   differ by 0.6σ, and across all the variants tried the result moves at
+   about the 1σ level in the S8–Ωm plane [src: Sect. VII.3.1].
 3. A reanalysis of DES Y3 with externally calibrated IA and baryon models
    moves S8 up by 1.5σ to 0.832 +0.013/−0.017 (Bigwood et al. 2025,
    arXiv:2512.04209) [src]; the DES Y3 shear × tSZ analysis gives 0.811
@@ -107,7 +114,13 @@ and is not established for DES.
   4.7–5.9σ (arXiv:2510.25596) [src]. The KiDS-Legacy BNT k-cut analysis finds
   "no significant bias from nonlinear astrophysical feedback at the precision
   of KiDS-Legacy" (Gu et al. 2026, arXiv:2607.04384) [src], which bounds the
-  effect on S8, not the feedback strength.
+  effect on S8, not the feedback strength. KiDS-Legacy itself bounds
+  log₁₀(T_AGN/K) ≤ 7.71 at 68% once the cosmology is fixed to Planck, and
+  reads it as little evidence for significant feedback (arXiv:2503.19441)
+  [src: Sect. 6]; but the HSC Y3 fit with DESI redshifts puts its HMCode 2016
+  amplitude at 2.075 +0.243/−0.128, at the end of its prior [2, 3.13]
+  farthest from the dark-matter-only value 3.13 (arXiv:2511.18134) [src:
+  Table 1 of the ar5iv rendering].
 
 The dispute matters for Stage IV because the scale-cut strategy saturates:
 DECADE finds a residual 0.3σ bias in (S8, Ωm) from current scale cuts and
@@ -115,13 +128,28 @@ DECADE finds a residual 0.3σ bias in (S8, Ωm) from current scale cuts and
 the small scales only self-calibrate the model (arXiv:2509.03582) [src]. A
 forecast for LSST finds that with present baryon and redshift-calibration
 uncertainty the final-year cosmic-shear constraint "barely improves" on year 1
-(Robertson et al. 2026, arXiv:2602.21863) [src, **forecast**].
+(Robertson et al. 2026, arXiv:2602.21863) [src, **forecast**]. DES Y6 gives
+the size of what is left on the table: with a perfect small-scale model the
+S8 error would fall from 0.015 to 0.009, and its cuts would still bias S8 low
+by 0.7σ if feedback were as strong as in Illustris (arXiv:2602.10065) [src:
+Sect. VI.3, IV.3]. With gas-calibrated priors instead of cuts the DES Y3 blue
+sample finds a suppression stronger than FLAMINGO by 2.2σ and BAHAMAS by 1.5σ
+at k = 2 h/Mpc (arXiv:2512.04209) [src: Sect. IV].
 
 ## 4. NLA or TATT?
 <!-- key: nla-or-tatt -->
 
-DES Y6 publishes both and reports that the Bayesian evidence prefers NLA; the
-S8 difference is about 1σ (arXiv:2602.10065) [src]. Euclid preparation work
+DES Y6 publishes both and reports that the Bayesian evidence prefers NLA
+(arXiv:2602.10065) [src]. In the body the S8 difference is 0.6σ, the evidence
+ratio Z_NLA/Z_TATT = 16.9 ± 0.2, "strong" but changing by a factor 2 when the
+priors on A₂ and η₂ are scaled by √2, and fifteen model variants span S8 =
+0.773 to 0.802 [src: Sect. VII.3.1, Table 4]. DES Y3 had found the model
+without alignments weakly preferred (arXiv:2105.13544) [src: Sect. VI.3.2],
+and HSC Y3 no significant detection of the amplitude (arXiv:2304.00702) [src:
+Sect. V.3.2]. In the DES Y3 + KiDS-1000 joint fit the two surveys' amplitudes
+move apart, to −0.02 and 1.04, which the paper takes as a sign that the
+parameter may absorb more than alignments (arXiv:2305.17173) [src: Sect.
+3.3]. Euclid preparation work
 recommends a redshift-dependent TATT ("zTATT") for DR1 3×2pt as the most
 flexible choice with constraining power similar to simpler models (Euclid
 Collaboration 2026, arXiv:2602.16448) [src, **forecast**-type synthetic
@@ -201,7 +229,7 @@ dependence of the lensing kernel (Heydenreich et al. 2025, arXiv:2508.05746)
 | "Weak lensing is in 2–3σ tension with Planck (S8 ≈ 0.76)." | Superseded for KiDS by KiDS-Legacy (0.815) and for HSC by the DESI recalibration (0.804). | arXiv:2503.19441, arXiv:2511.18134 |
 | "The S8 tension is resolved." | Overstated: DES Y6 3×2pt is 2.6σ from the combined CMB in S8. | arXiv:2601.14559 |
 | "The low S8 came from shear calibration." | Not supported: metacalibration on KiDS-1000 gives the same S8. | arXiv:2510.01122 |
-| "HSC Y3 recalibrated: S8 = 0.805 ± 0.018." | The abstract value is 0.804 +0.019/−0.018. | arXiv:2511.18134 |
+| "HSC Y3 recalibrated: S8 = 0.805 ± 0.018." | That is the abstract and Table 1 of an earlier version, still served by the ar5iv rendering; the current arXiv abstract gives 0.804 +0.019/−0.018 [src: both read 2026-10-12]. | arXiv:2511.18134 |
 | "Euclid DR1 in late 2026 will settle it." | November 2026 is DR1-Foundation only; lensing products follow in mid-2027. | ESA DR1 timeline (15 June 2026) |
 | "DES Y3 cosmic shear: S8 = 0.772 +0.018/−0.017" quoted as the DES Y3 result. | That is the ΛCDM-optimised scale-cut variant; the fiducial value is 0.759 +0.025/−0.023. | arXiv:2105.13543 |
 | "DES Y3 3×2pt: S8 = 0.779 +0.014/−0.015." | The abstract value is 0.776 ± 0.017; the other figure was not found in any abstract read this session. | arXiv:2105.13549 |
@@ -214,8 +242,8 @@ dependence of the lensing kernel (Heydenreich et al. 2025, arXiv:2508.05746)
 - Whether the HSC Y3 third-order result (arXiv:2508.14019) and the KiDS-1000
   clipped-shear result (arXiv:2608.07377) survive the 2025 redshift
   recalibrations: no reanalysis found.
-- The exact Planck + ACT + SPT S8 value used by DES Y6 (in the body of
-  arXiv:2601.14559); the 0.836 quoted here is from the review
-  arXiv:2602.12238.
+- Why DES Y6 galaxy clustering plus galaxy–galaxy lensing alone gives S8 =
+  0.743 ± 0.023 while cosmic shear gives 0.783 (arXiv:2601.14559, Table 4):
+  the internal-consistency discussion of that paper was not read.
 - Any HSC full-survey (beyond Y3) cosmic-shear cosmology: none found in the
   date-sorted searches.

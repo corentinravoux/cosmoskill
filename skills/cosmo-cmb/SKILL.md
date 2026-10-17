@@ -5,7 +5,7 @@ description: Use when reviewing, fact-checking or planning text or analysis on C
 
 # CMB anisotropies and lensing — expert reference
 
-Snapshot 2026-10-07. Numbers carry provenance flags ([src] / [sec] / [der]);
+Snapshot 2026-10-14. Numbers carry provenance flags ([src] / [sec] / [der]);
 re-verify against the cited paper before a number enters a manuscript.
 
 ## File map
@@ -14,21 +14,24 @@ re-verify against the cited paper before a number enters a manuscript.
 | Question | Load |
 |---|---|
 | What a feature constrains, estimators, likelihoods, codes, conventions | `references/physics-and-methods.md` |
-| Instruments, releases, data locations, status, what comes next | `references/surveys-and-data.md` |
+| Instruments, releases, data locations, status, next steps | `references/surveys-and-data.md` |
 | Current parameter values, lensing, τ, N_eff, Σm_ν, history of each number | `references/results.md` |
-| Beams, leakage, calibration, foregrounds, τ systematics, referee checklist | `references/systematics.md` |
+| Beams, leakage, calibration, foregrounds, τ systematics, per-analysis nuisance priors, referee checklist | `references/systematics.md` |
 | τ debate, A_L fate, CMB–DESI discrepancy, forecasts, stale claims | `references/open-questions.md` |
 | Bibliography with roles | `references/sources.tsv` |
+| High-ℓ likelihood construction: splits, masks, cuts, foregrounds, lite | `deep/high-ell-likelihoods.md` |
+| Lensing reconstruction: estimators, biases, null tests | `deep/lensing-reconstruction.md` |
+| Low-ℓ EE likelihoods, τ: cleaning, QML, SimAll, LoLLiPoP | `deep/low-ell-polarisation-tau.md` |
 
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
 
-- SPT+ACT now matches Planck on H₀ and σ₈; CMB-SPA gives H₀ = 67.19 ± 0.38,
+- SPT+ACT matches Planck on H₀ and σ₈; CMB-SPA gives H₀ = 67.19 ± 0.38,
   σ₈ = 0.8137 ± 0.0037 in ΛCDM (arXiv:2506.20707, second version).
 - P-ACT (ACT DR6 + Planck truncated at ℓ < 1000 TT, ℓ < 600 TE/EE;
   H₀ = 67.62 ± 0.50, n_s = 0.9709 ± 0.0038) is not CMB-SPA
   (arXiv:2503.14452).
-- ACT and SPT are calibrated on Planck and take τ from Planck low-ℓ
+- ACT and SPT calibrate on Planck and take τ from Planck low-ℓ
   polarisation; only shape parameters are independent (arXiv:2504.16932).
 - τ from Planck reprocessings lies in 0.051–0.063 with σ ≈ 0.006
   (arXiv:2007.04997, arXiv:1908.09856, arXiv:2309.10034). CMB + DESI
@@ -40,7 +43,7 @@ re-verify against the cited paper before a number enters a manuscript.
   still 1.079 ± 0.038.
 - A_L rescales peak smoothing only; it is not the reconstruction amplitude
   (arXiv:0803.2309).
-- Lensing reconstructions match the primary-CMB prediction: ACT DR6
+- Lensing reconstructions match primary-CMB predictions: ACT DR6
   1.013 ± 0.023 (arXiv:2304.05202), ACT+SPT+Planck 1.025 ± 0.017
   (arXiv:2504.20038), SPT-3G D1 at 2% (arXiv:2608.31136).
 - The CMB–DESI DR2 distance in ΛCDM is 1.6σ (P-ACT), 2.8σ (CMB-SPA) or
@@ -51,19 +54,19 @@ re-verify against the cited paper before a number enters a manuscript.
 - Σm_ν limits of 0.064–0.089 eV are CMB + BAO in ΛCDM and move with τ and
   the lensing data (arXiv:2503.14744, arXiv:2608.31136); the CMB alone
   gives < 0.26 eV (arXiv:1807.06209).
-- r < 0.036 (BK18, arXiv:2110.00483) is still the latest BICEP/Keck limit.
+- r < 0.036 (BK18, arXiv:2110.00483) remains the latest BICEP/Keck limit.
 - CMB-S4 lost DOE and NSF support on 9 July 2025. LiteBIRD was reformed to
   one telescope, 12 bands, launch JFY2036 (arXiv:2607.25285).
 - ACT DR6 and SPT-3G D1 were blinded and both changed after unblinding.
-- Check the arXiv version: CMB-SPA H₀ and the ACT Σm_ν limit both changed.
+- Check the arXiv version: CMB-SPA H₀ and the ACT Σm_ν limit changed.
 
 ## Systematics a referee checks
 <!-- key: systematics-a-referee-checks -->
 
 - Planck likelihood, low-ℓ EE likelihood or τ prior, Planck truncation.
 - Temperature-to-polarisation leakage and polarised beams: 1.7σ on Ω_b h²
-  in ACT if ignored; SPT's sidelobe model is not confirmed by a direct
-  measurement (arXiv:2602.06334).
+  in ACT if ignored; SPT's sidelobe model lacks direct confirmation
+  (arXiv:2602.06334).
 - Polarisation efficiency and calibration to Planck.
 - Foreground-template and frequency-split robustness (arXiv:2506.06274).
 - Lensing foreground bias and estimator choice (arXiv:2304.05196).
@@ -76,7 +79,7 @@ re-verify against the cited paper before a number enters a manuscript.
 
 - Quoting "the Planck value" for H₀, A_L or Ω_K without release and
   likelihood.
-- Calling the A_L anomaly either "2.8σ" or "resolved".
+- Calling the A_L anomaly "2.8σ" or "resolved".
 - Comparing θ_MC, θ* and the CLASS θ_s across tables.
 - Comparing σ₈(Ω_m/0.3)^0.25 from CMB lensing with galaxy-lensing S₈.
 - Treating ACT, SPT and Planck amplitudes (A_s, σ₈) as independent.
@@ -105,10 +108,10 @@ Answer at the lowest level that answers the question, then stop.
 |---|---|---|
 | L1 | this file only | the headline values, the state of the domain, the list a referee checks, the errors that recur |
 | L2 | one file of `references/` | what this file does not hold: other values, their history, the size of each systematic, methods, releases |
-| L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
+| L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; open 5k; methods 7k; results 7k; surveys 5k; systematics 6k.
+Sizes, in thousands of tokens: L1 2k; open 5k; methods 10k; results 7k; surveys 5k; systematics 11k; deep/high-ell-likelihoods 8k; deep/lensing-reconstruction 9k; deep/low-ell-polarisation-tau 7k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

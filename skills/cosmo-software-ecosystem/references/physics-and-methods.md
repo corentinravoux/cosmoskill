@@ -2,7 +2,7 @@
 
 Scope: what each family of cosmology codes computes, the method each member uses, and the differences that matter when choosing or comparing them.
 
-Snapshot: 2026-10-11
+Snapshot: 2026-10-14
 
 Provenance of API facts: "installed" means the docstring or signature was read in the released package at the stated version (camb 2.0.4, pyccl 3.3.6, astropy 8.0.1, healpy 1.19.0, emcee 3.1.6, cosmoprimo 1.0.0). "checkout" means the source repository was read at the stated version or commit (CLASS v3.2.3, pypower 1.0.0, EFTCAMB commit of 2026-04-02; picca and flip at a development state, not a release, so their facts should be re-read in the release in use). "context7" means library documentation fetched through the context7 documentation service on 2026-10-11.
 
@@ -15,6 +15,22 @@ Provenance of API facts: "installed" means the docstring or signature was read i
 An Einstein–Boltzmann solver integrates the linearised Einstein and Boltzmann equations for photons, baryons, cold dark matter, neutrinos and dark energy, and returns transfer functions, the CMB angular power spectra and the linear matter power spectrum.
 Every downstream code in this skill (facades, perturbation theory, emulators, likelihood frameworks) consumes its output.
 The two reference implementations are CAMB (Lewis, Challinor & Lasenby 2000, arXiv:astro-ph/9911177) and CLASS (Lesgourgues 2011, arXiv:1104.2932).
+
+Foundations of the family:
+
+- **Line-of-sight integration** (Seljak & Zaldarriaga 1996, arXiv:astro-ph/9603033): the temperature anisotropy is a time integral of a model-independent geometrical term (radial eigenfunctions, precomputable) times a source term built from photon, baryon and metric perturbations; the source varies slowly with wavenumber and is evaluated at few points, which is where the speed-up comes from [src]. CAMB implements this method and extended it to closed models (arXiv:astro-ph/9911177) [src].
+- **Equations and gauges** (Ma & Bertschinger 1995, arXiv:astro-ph/9506072): linear scalar perturbations of CDM, baryons, photons, massless and massive neutrinos in the synchronous and conformal Newtonian gauges, with a phase-space treatment of neutrinos and isentropic super-horizon initial conditions [src].
+
+Conventions read in the code papers:
+
+| Aspect | CAMB v2 | CLASS |
+|---|---|---|
+| Units and time | conformal time, megaparsec units [src: arXiv:2607.14854, Sect. II] | — |
+| Gauge | covariant equations in the zero-acceleration (CDM) frame, "equivalent to the synchronous gauge"; `camb.symbolic` projects them into Newtonian or synchronous gauge and maps each symbol to a code variable [src: arXiv:2607.14854, Sect. II] | — |
+| Lensed spectra | all-sky correlation-function method | same method as CAMB, different numerical implementation based on quadrature weights [src: arXiv:1104.2934, Sect. 2.2] |
+| Precision control | boost hierarchy: `AccuracyBoost`, `lSampleBoost`, `lAccuracyBoost`, sub-boosts, and `lens_potential_accuracy` [src: arXiv:2607.14854, App. C] | separate precision file (`cl_ref.pre`, `pk_ref.pre`, `cl_permille.pre`, …) passed after the parameter file; parameters declared in `include/common.h` [src: arXiv:1104.2934, Sect. 2, 3]; all accuracy parameters sit in one "precision structure", none hard-coded locally, initialised in the input module and overwritten by a `.pre` file; default values of input parameters are "defined in the input module" [src: arXiv:1104.2932, Sect. 2.2, 2.3] |
+| Reionisation | tanh in y = (1+z)^{3/2}, z_re obtained from τ by a root find [src: arXiv:2607.14854, Sect. V.3] | — |
+| Massive neutrinos | one eigenstate with 0.06 eV by default; sparse momentum quadrature (three points by default) [src: arXiv:2607.14854, Sect. VI] | non-cold relics with automatic momentum sampling (arXiv:1104.2935) |
 
 ### 1.2 CAMB against CLASS
 <!-- key: camb-against-class -->
@@ -74,7 +90,7 @@ A facade gives one interface over one or several Boltzmann engines and adds the 
 
 | Facade | Engines | Scope | Units it returns | Differentiable |
 |---|---|---|---|---|
-| cosmoprimo | `class` (through `pyclass`), `camb`, `eisenstein_hu`, `eisenstein_hu_nowiggle`, `bbks` | background, thermodynamics, primordial, transfer, harmonic, Fourier | distances in Mpc/h, P(k) in (Mpc/h)³, H(z) in km/s/Mpc [src: cosmoprimo 1.0.0 installed] | no (not verified) |
+| cosmoprimo | `class` (through `pyclass`), `camb`, `eisenstein_hu`, `eisenstein_hu_nowiggle`, `bbks` | background, thermodynamics, primordial, transfer, harmonic, Fourier | distances in Mpc/h, P(k) in (Mpc/h)³, H(z) in km/s/Mpc [src: cosmoprimo 1.0.0 installed] | partly: "Most of cosmoprimo, apart from Boltzmann solvers, is JAX-friendly", with `jax.jacfwd` examples on the `bbks` and `capse` engines [sec: web https://github.com/cosmodesi/cosmoprimo README, read 2026-10-14] |
 | pyccl | `boltzmann_camb` (default), other transfer functions and emulators | distances, growth, P(k), halo model, angular spectra with Limber or the non-Limber FKEM method, correlation functions | k in Mpc⁻¹, P(k) in Mpc³, distances in Mpc [src: pyccl 3.3.6 installed] | no |
 | astropy.cosmology | none (analytic FLRW) | background only | `Quantity` objects in Mpc and km/s/Mpc [src: astropy 8.0.1 installed] | no |
 | jax-cosmo | Eisenstein–Hu transfer function, halofit | background, P(k), Limber angular spectra for lensing and clustering (arXiv:2302.05163) | not read | yes (JAX) |
@@ -84,6 +100,8 @@ Points of difference:
 
 - cosmoprimo carries the DESI fiducial cosmology: `fiducial.DESI()` is the AbacusSummit base cosmology c000, described in its docstring as "Planck2018, base_plikHM_TTTEEE_lowl_lowE_lensing mean", with default engine `class` [src: cosmoprimo 1.0.0 installed].
 - pyccl was built around a validation suite: each predicted quantity has a documented numerical accuracy established against independent codes (Chisari et al. 2018, arXiv:1812.05995). Its non-Limber method is FKEM, the fastest method within the required accuracy in the N5K challenge (Leonard et al. 2022, arXiv:2212.04291).
+- What CCL validates is numerical accuracy only; physical accuracy of each model is discussed separately. The accuracy metric is a fractional difference for background quantities and, for C_ℓ, |ΔC_ℓ|/σ_ℓ with the full-sky cosmic-variance error σ_ℓ² = (C_ℓ^aa C_ℓ^bb + (C_ℓ^ab)²)/(2ℓ + 1), required below 0.1; the validation C_ℓ used the BBKS spectrum, and RSD and magnification were "not currently validated" in the 2018 paper (arXiv:1812.05995) [src: Sect. IV, IV.5, Eq. 95–96]. Values are in `systematics.md`, section 9.
+- The N5K challenge fixed the accuracy and compared run time: the LSST Y10 3x2pt data vector to Δχ² ≈ 0.2 on ℓ ≤ 200, on 64 cores of one node. FKEM took 0.437 s, the matter method 2.00 s, Levin 4.53 s, against 0.0445 s for CCL's Limber calculation; cosmology-independent precomputations were excluded (arXiv:2212.04291) [src: Sect. 5.1].
 - astropy.cosmology solves no perturbations: it has no P(k) and no σ8 calculation; the `sigma8` and `n` entries of `Planck18.meta` are stored metadata [src: astropy 8.0.1 installed].
 - flip computes its model power spectra through any of three engines, `class_engine`, `cosmoprimo_engine` and `pyccl_engine` [src: flip docs `power_spectra.md`], so the unit conversions of section 1 of `systematics.md` apply at that boundary.
 
@@ -120,6 +138,20 @@ A framework couples a theory code, a set of likelihoods and a sampler, and manag
 | Hamiltonian Monte Carlo, NUTS | NumPyro (arXiv:1912.11554), BlackJAX (arXiv:2402.10797); algorithm in arXiv:1111.4246 | yes | no | requires a differentiable likelihood: JAX theory code or emulator |
 | GPU nested sampling | JAX-based framework of Lovick et al. 2025, arXiv:2509.13307 | no | yes | pairs with neural emulators |
 
+Foundations: nested sampling is Skilling 2006, doi:10.1214/06-BA127 (the evidence is "the prime result of the computation", posterior samples "an optional by-product", sampling within a hard likelihood constraint) [src]; the affine-invariant ensemble move of emcee is Goodman & Weare 2010, doi:10.2140/camcos.2010.5.65 (MCMC "whose performance is unaffected by affine tranformations of space") [src]; Hamiltonian Monte Carlo is reviewed in Neal 2012, arXiv:1206.1901 (distant proposals from volume-preserving Hamiltonian dynamics with auxiliary momentum variables) [src]; NUTS adapts the HMC path length (arXiv:1111.4246).
+
+What the code papers say about their algorithms and tuning:
+
+| Code | Algorithm and tuning read in the body | Place |
+|---|---|---|
+| Cobaya | Metropolis–Hastings "translated from CosmoMC", with oversampling of fast parameters or dragging; automatic blocking that measures the cost of each block and sorts slow before fast blocks with a lower-triangular affine transformation; convergence by a modified Gelman–Rubin R − 1 over parallel chains or over the latest chunks of one chain, optionally also on confidence limits; PolyChord wrapper that uses the same speed blocking; scipy and Py-BOBYQA minimisers; importance reweighting | arXiv:2005.05290 [src: Sect. IV.3; App. A] |
+| MontePython 3 | Metropolis–Hastings with a fast–slow scheme; `--update` (on by default in v3) updates the proposal covariance, starting when max(R − 1) over the second half of the chains falls below 3 and stopping below 0.4, and works with or without MPI; `--superupdate` adapts the jumping factor from the default 2.4 towards an acceptance rate ≃ 0.25; normal and inverted hierarchies are sampled through `M_tot_NH` or `M_tot_IH`, individual masses solved from the measured splittings and passed to CLASS | arXiv:1804.07261 [src: Sect. 2.3, 2.4; App. A.1] |
+| CosmoSIS | every module reads from and writes to a DataBlock, which stores scalars, arrays and strings but "explicitly cannot store arbitrary structured information"; configuration in extended ini files; a "sampler" is anything that proposes parameter sets (test, grid, maximum likelihood, MCMC, emcee, nested); MPI process-level "Pool" parallelism, because thread parallelism at the sampler level is impossible when codes such as camb "are not thread-safe" | arXiv:1409.3409 [src: Sect. 4.3, 4.4, 4.5] |
+| emcee | stretch move Y = X_j + Z[X_k − X_j], with g(z) ∝ 1/√z on [1/a, a], a = 2, and acceptance probability min(1, Z^{N−1} p(Y)/p(X_k)); "autocorrelation time is the best indicator of MCMC performance"; acceptance fraction "should be in the 0.2 to 0.5 range"; a = 2 "is good in essentially all situations" | arXiv:1202.3665 [src: Sect. II, Eq. 7–10; Sect. IV] |
+| PolyChord | `n_live` is a resolution parameter: run time ∝ n_live, evidence error ∝ n_live^{−1/2}; `n_repeats` is the slice-chain length: too low gives correlated live points and unreliable evidences, while posteriors "remain accurate"; ∼ 3 × n_dims is typically sufficient, more for curving degeneracies | arXiv:1506.00171 [src: Sect. 5.7] |
+| dynesty | dynamic allocation of live points; bounds (unit cube, single and multiple ellipsoids, balls, cubes) and samplers (uniform, random walks, multivariate and Hamiltonian slice); the posterior is "entirely a by-product" of standard nested sampling, which needs a prior transform to the unit cube | arXiv:1904.02180 [src: Sect. 2.7, 4] |
+| nautilus | importance nested sampling with an exploration and a sampling phase and neural-network bounds; the authors recommend discarding exploration-phase points for publications, since "not doing so may result in percent-level biases on the posterior and evidence estimates", and checking robustness to the number of live points; on a seven-parameter galaxy–halo fit it needed about 80 000 likelihood calls, against 3–10 × 10⁶ reported with emcee in the original analysis | arXiv:2306.16923 [src: Sect. 4.6, 5.4] |
+
 NumPyro is a probabilistic programming language: the model is written with sampling statements and the library derives the log-density.
 BlackJAX is a library of kernels working "directly with the (un-normalized) target log density function" (arXiv:2402.10797): the user supplies the log-posterior.
 Chains from any of these are post-processed with GetDist (arXiv:1910.13970), which estimates marginal densities by kernel density estimation with boundary correction.
@@ -139,6 +171,18 @@ The comparison below follows section 3.6 of Maus et al. 2024, arXiv:2404.07272 [
 | FOLPSν | Eulerian with kernels beyond Einstein–de Sitter | wiggle / no-wiggle split | k²P_lin | scale-dependent growth from massive neutrinos kept in the kernels (arXiv:2208.02791) |
 | CLASS-PT | Eulerian, inside CLASS | infrared resummation | full set, with Alcock–Paczynski | arXiv:2004.10607 |
 | CLASS-OneLoop | Eulerian moment expansion, inside CLASS | infrared resummation | full set; loops by direct integration or FFT; fast–slow parameter decomposition | Linde et al. 2024, arXiv:2402.09778 |
+
+Foundation of the fast loop codes: FFTLog, "a code for taking the fast Fourier or Hankel transform of a periodic sequence of logarithmically spaced points", is the appendix of Hamilton 2000, arXiv:astro-ph/9905191 [src]. CLASS-PT, FOLPSν, FAST-PT and `neckar` evaluate loop integrals with it; pyccl uses it for Hankel transforms (section 7).
+
+What the code papers say about method, accuracy and validity:
+
+| Code | Method, accuracy and validity read in the body | Place |
+|---|---|---|
+| CLASS-PT | FFTLog decomposition of the loop integrals into precomputed matrices; default N_FFTLog = 256 gives ∼ 0.1 % on the one-loop term for k ≲ 0.2 h Mpc⁻¹, the "fast mode" N_FFTLog = 128 ∼ 1 % at four times the speed, and the authors encourage the fast mode for practical use; redshift-space multipoles with IR resummation take 1.3 s (default) or 0.3 s (fast); massive neutrinos through the "cb" linear spectrum, the default input (flag `cb=No` for total matter), with EdS kernels; not to be used for k ≳ 3 h Mpc⁻¹, and justified for k < k_NL(z) = 0.45 D(z)^{−4/3.3} h Mpc⁻¹; wiggly/non-wiggly frequency cuts untested far from Planck-like models | arXiv:2004.10607 [src: Sect. 4.1.3, 4.5, 5.2, 5.3, Eq. 5.2] |
+| PyBird | standalone Python 3 code whose input is a linear P(k) "from any Boltzmann code"; FFTLog for the one-loop terms and for a fast IR resummation written as the non-resummed spectrum plus IR corrections; can return spectra for given EFT parameters or independently of them (for partial marginalisation or Taylor expansion around a fiducial cosmology); "runs in less than a second on a laptop"; shipped with a MontePython 3 integration | arXiv:2003.07956 [src: Sect. 4, 4.1] |
+| velocileptors (LPT) | angular integrals reduced to sums of spherical Bessel functions evaluated by FFTLog, one transform per k, n < 10 terms typically sufficient; validated on halo samples at z = 0.8 in 4 × (4 h⁻¹ Gpc)³ of simulations, with linear displacements resummed up to k_IR = 0.2 h Mpc⁻¹ and fits for k < 0.2 h Mpc⁻¹ "well within the few-percent systematics expected from the N-body data" | arXiv:2012.04636 [src: Sect. 4, Eq. 7–8; Sect. 5.1] |
+| FOLPSν | input: linear matter or cb spectrum plus Ω_m, h, M_ν and nuisance parameters {b₁, b₂, b_s², b₃nl, α₀, α₂, α₄, c̃, α₀^shot, α₂^shot}; computes its own no-wiggle spectrum and f₀ (neglecting relativistic species), with G₁(k) = f(k)/f₀ from the Eisenstein–Hu approximation; switch between fk and EdS kernels; FFTLog on N points over 10⁻⁷ < k < 100 h Mpc⁻¹, with N = 128 giving at most ∼ 0.1 % (monopole, quadrupole) and ∼ 0.2 % (hexadecapole) up to k = 0.35 h Mpc⁻¹ against direct integration; validated on Quijote halos with M_ν = 0.1 and 0.4 eV, 100 (h⁻¹ Gpc)³ in total | arXiv:2208.02791 [src: Sect. 5, 6] |
+| FAST-PT | P₂₂- and P₁₃-type convolutions by FFT on log-spaced k; a 3000-point grid from k = 10⁻⁴ to 10² with 500 zeros of padding at each end takes ∼ 0.02 s on a laptop; users should sample on a wider grid than needed and trim, to avoid wrapping; agreement "to high precision" with a 2D grid integration, residual noise coming from the input CAMB spectrum | arXiv:1603.04826 [src: Sect. 3.1] |
 
 Counterterms in k²P_Zel and in k²P_lin differ at high k by terms that are formally of two-loop order (arXiv:2404.07272, section 3.6).
 The dependence on the wiggle / no-wiggle decomposition is small for the final sum, according to the same section.
@@ -176,6 +220,12 @@ Details read this session:
 - nbodykit also contains friends-of-friends, HOD population and FastPM (arXiv:1712.05834); those belong to `cosmo-simulations-mocks`.
 - NaMaster handles any pair of spin-0 or spin-2 fields, contaminated by an arbitrary number of linear systematics, with E- or B-mode purification, on the sphere or in the flat sky (arXiv:1809.09603).
 
+Methods read in the code papers:
+
+- **Pair counting (Corrfunc).** The code computes weighted pair-separation histograms; the estimators are built from them, the natural estimator 1 + ξ = DD/RR and the Landy–Szalay estimator, which "also uses an additional DR term" [sec: arXiv:1911.03545, Sect. 2.1]. Speed comes from gridding the particles in cells of size set by R_max (or θ_max for angular functions), sub-dividing cells, associating cell pairs, exploiting autocorrelation symmetry, sorting for early exit, explicit SIMD vectorisation and OpenMP (arXiv:1911.03545) [src: Sect. 4]. Against TreeCorr 3.3.6 with `bin_slop` disabled the pair counts "exactly agreed", Corrfunc being 1.9–5.7 times faster on one thread [src: Sect. 6.5].
+- **Tree pair counting (TreeCorr's algorithm).** Brute force is O(N²) for two-point and O(N³) for three-point functions; two cells of radii s₁, s₂ at separation d_c are treated as one pair when (s₁ + s₂)/d_c < b, with b = Δ ln d the bin size, so that any pair is "wrong by at most one bin", reducing the cost from O(N₁N₂) to O(N₁ + N₂) for those cells (Jarvis, Bernstein & Jain 2003, arXiv:astro-ph/0307393) [src: Sect. 4.1, Eq. 62–63]. This is the approximation that `bin_slop` controls; exact counts need it disabled (section 5.2 of `systematics.md`).
+- **Pseudo-C_ℓ (NaMaster).** The method descends from MASTER, Hivon et al. 2002, arXiv:astro-ph/0105302, a "Monte Carlo Apodised Spherical Transform EstimatoR" devised for Boomerang [src]. NaMaster describes the pseudo-C_ℓ estimator as a quadratic estimator whose data covariance is assumed diagonal in real space, which brings the cost from O(N_pix³) to O(N_pix^{3/2}) at the expense of optimality, small for non-steep spectra and on small scales; masks are treated as regions of infinite noise; contaminant templates are deprojected under a linear contamination model, and a template must not itself contain signal (arXiv:1809.09603) [src: Sect. 2.1.1, 2.2, 5].
+
 Estimator definitions (Landy–Szalay, FKP, Yamamoto), windows and fibre-collision weights belong to `cosmo-galaxy-clustering`.
 
 ## 6. Lyman-alpha tools
@@ -192,6 +242,11 @@ Estimator definitions (Landy–Szalay, FKP, Yamamoto), windows and fibre-collisi
 The picca README states that its tools serve both eBOSS and DESI, that "Picca v4.0 was used in du Mas des Bourboux et al. (2020)", and that model computation and fitting are done with Vega; the older `fitter2` remains for some tasks [src: picca README, checkout].
 LaCE and lym1d differ in training simulations and in parameterisation: LaCE emulates as a function of the linear power spectrum at the redshift of interest, which lets it predict extended models not in the training set (arXiv:2011.15127).
 The Lyα BAO pipeline as a whole is validated on 150 synthetic realisations of DESI DR1 in Cuceu et al. 2024, arXiv:2404.03004.
+
+Read in the bodies:
+
+- **picca in the eBOSS DR16 paper.** "Package for Igm Cosmological-Correlations Analyses": modules to estimate the Lyα forest signal, compute auto- and cross-correlations and their covariance, and fit them "using an input matter power spectrum"; the no-BAO (smooth) template is built from the CAMB linear spectrum by the side-band technique implemented in picca, using nbodykit, and P_peak = P_L − P_sm (arXiv:2007.08995) [src: Sect. I, IV.1]. The fitting described there is the pre-Vega `fitter2` stage.
+- **LaCE parameterisation and units.** P1D is emulated as a function of the amplitude Δ²_p = k³P_lin and slope n_p of the CDM-plus-baryon linear spectrum (neutrino clustering excluded) at the pivot k_p = 0.7 Mpc⁻¹, fitted with a second-order log polynomial over 0.5 k_p < k < 2 k_p of a CAMB spectrum; no growth or expansion parameters, justified by Ω_m(z = 2) ≈ 0.91 (arXiv:2011.15127) [src: Sect. 2.1, Eq. 1–2]. The pivot is in Mpc⁻¹, not h Mpc⁻¹. Training set: 30 MP-Gadget simulations, L = 67.5 Mpc, 768³ CDM and baryon particles, with the QuickLymanAlpha option; validation by leave-one-simulation-out tests against the 1 % band and BOSS P1D errors [src: Sect. 3, 4.1].
 The physics (continuum distortion, metals, DLAs) and the results belong to the sibling `cosmo-lyman-alpha`.
 
 ## 7. Lensing and sphere tools
@@ -225,11 +280,23 @@ Its documentation describes three steps: build a data vector, compute a covarian
 The paper states that the framework includes the models previously described in the literature and adds a new covariance model with wide-angle corrections (arXiv:2501.16852).
 flip is "field-level" in the sense that the likelihood is written on the field values at the tracer positions; it does not sample initial conditions.
 
+Read in the paper body (arXiv:2501.16852):
+
+- Velocity estimators: direct velocities for simulations, a log-distance-ratio estimator for Tully–Fisher and Fundamental Plane, and SN Ia estimators, with four options for the redshift dependence J(p_i) (Watkins, low-z, higher-order Hubble law with q₀ and j₀, full with D(z) and H(z)/h) [src: Sect. 3.2, Table 2].
+- Model comparison set-up: P_mm, P_mθ, P_θθ from the Bel et al. damping model with CLASS and non-linear halofit, k ∈ [0.0005, 1.0] h Mpc⁻¹, AbacusSummit cosmology, nearest-grid-point window correction with L = 10 h⁻¹ Mpc [src: Sect. 4.3].
+- Numerics: some M terms (AB20, RC25) are proportional to (kσ_g)^{−9} or (kσ_g)^{−10} and suffer catastrophic cancellation in numpy at small kσ_g; flip evaluates them in arbitrary precision with mpmath [src: App. D].
+- The Fisher module is the fast alternative to the likelihood, whose cost is dominated by covariance inversion [src: Sect. 5].
+
 ### 8.2 Forward-model field-level inference
 <!-- key: forward-model-field-level-inference -->
 
 BORG samples the three-dimensional initial density field with a physical forward model: second-order Lagrangian perturbation theory in Jasche & Wandelt 2012, arXiv:1203.3639, a particle-mesh model in Jasche & Lavaux 2018, arXiv:1806.11117, with Hamiltonian Monte Carlo inside a block-sampling scheme.
 Differentiable particle-mesh codes supply such forward models in JAX: pmwd uses the adjoint method with reverse time integration to keep memory low (Li et al. 2022, arXiv:2211.09958); DISCO-DJ supports forward- and reverse-mode differentiation with memory independent of the number of time steps and uses theory-informed integrators (List et al. 2025, arXiv:2510.05206); JaxPM is a JAX particle-mesh solver cited here by its repository; FlowPM is the earlier TensorFlow implementation (arXiv:2010.11847).
+Read in the bodies:
+
+- **BORG (2018).** The posterior has a Gaussian prior on the initial density field at a = 10⁻³ and a Poisson likelihood for galaxy counts at a = 1, linked by 2LPT or a particle-mesh model; galaxies follow the four-parameter local non-linear bias n_g = N̄(1+δ)^β exp[−ρ_g(1+δ)^{−ε_g}] multiplied by the survey response; robustness to model misspecification is obtained by raising the Poisson likelihood to a power between 0 and 1 (tempering); gradients come from a tangent-adjoint model of the PM code (arXiv:1806.11117) [src: Sect. 2.1, 3.4, 3.5, Eq. 19–20; App. C]. DFT conventions are in its Appendix A.
+- **pmwd.** Automatic differentiation must store the whole forward history, so memory limits differentiable simulations; pmwd uses the adjoint method with reverse time integration to reconstruct the history, on JAX and GPUs. It places itself after BORG and ELUCID (analytic derivatives) and FastPM and FlowPM (automatic differentiation through vmad and TensorFlow) (arXiv:2211.09958) [src: Summary; Statement of Need].
+
 candl is a differentiable CMB power-spectrum likelihood (arXiv:2401.13433), which makes Fisher matrices exact and NUTS sampling possible for CMB data.
 The science done with these (BORG reconstructions, constrained simulations, field-level versus summary information) belongs to the siblings `cosmo-beyond-two-point` and `cosmo-simulations-mocks`.
 
@@ -248,12 +315,22 @@ An emulator in this section replaces the Boltzmann or perturbation-theory call i
 | LaCE, lym1d, ForestFlow | Lyα P1D and P3D | hydrodynamical simulations | section 6 |
 
 An emulator inherits the precision settings, the neutrino model and the parameter ranges of its training set; outside them it extrapolates silently.
+
+Read in the bodies:
+
+- **CosmoPower (2021).** P(k) is emulated as a linear spectrum times a non-linear correction (HMcode with free c_min and η₀), two separate networks, at 420 k values over [10⁻⁵, 10] Mpc⁻¹ with z ∈ [0, 5] as an input; ∼ 1.8 × 10⁵ training and ∼ 2 × 10⁴ test spectra; 99 % of test spectra within 0.1 % (linear) and 0.4 % (non-linear correction), the error rising above k ≳ 1 Mpc⁻¹; the non-linear part was computed to k_max = 100 Mpc⁻¹ for stability though used to 10 Mpc⁻¹ (arXiv:2106.03846) [src: Sect. 3.2, Eq. 9]. CMB: direct network for TT and EE, PCA plus network for TE (zero crossings) and C_ℓ^φφ [src: Sect. 4.1]. The Planck 2018 plik-lite validation ran in about 10 s on one GPU against ∼ 1.2 × 10⁵ s on 80 CPU cores with CLASS [src: Sect. 4.2].
+- **High-accuracy CosmoPower emulators (2023).** Reference: camb v1.3.6 with `lens_potential_accuracy=8`, `lens_margin=2050`, `AccuracyBoost = lSampleBoost = lAccuracyBoost = 2`, `DoLateRadTruncation=False`, `kmax=10`, `k_per_logint=130`, ℓ_max = 11000, HMcode with c_min = 3.13 and η₀ = 0.603; training data from class v2.9.4 with three changed parameters, `accurate_lensing: 1`, `k_max_tau0_over_l_max: 15.`, `perturb_sampling_stepsize: 0.05`, about one minute per sample; one emulator call (TT, TE, EE, linear and non-linear P(k), derived parameters) ≈ 60 ms, a factor 1000 speed-up (arXiv:2303.01591) [src: Sect. 3, 4].
 Emulators of N-body outputs (non-linear P(k), halo statistics, baryonic suppression) are in the sibling `cosmo-simulations-mocks`.
 
 ## Not verified
 <!-- key: not-verified -->
 
-- Whether cosmoprimo offers a differentiable (JAX) mode was not read.
+- Which cosmoprimo functions are differentiable beyond the two README examples was not read.
 - The units returned by jax-cosmo and cloelib were not read.
 - The Vega README gives its first reference as a DOI (10.1093/mnras/stad1546, "Cuceu et al. 2022"); its identification with arXiv:2209.12931 rests on author, year and subject and was not checked against the journal record.
+- The Landy–Szalay paper (Landy & Szalay 1993, "Bias and variance of angular correlation functions", title and DOI confirmed on Crossref) could not be read: Crossref holds no abstract and the ADS page was blocked; it is named here only through the Corrfunc paper, and has no row in `sources.tsv`.
+- DISCO-DJ II (arXiv:2510.05206) has no usable HTML rendering; its body was not read.
+- arXiv:2607.14854 was read in an HTML rendering titled "CAMB 2", an earlier version than the current abstract ("CAMB v2"); section and appendix numbers quoted here (Sect. II–XI, App. B–C) may differ in the current version.
+- The recommended sampler settings of Lemos et al. 2022 (their Table 3) did not render and were not read.
+- No body was read for hi_class, EFTCAMB, MGCAMB, jax-cosmo, cloelib, Capse.jl, ForestFlow or Vega in this pass.
 - CLASS code defaults were read in `explanatory.ini` of v3.2.3, a 2024 checkout; the current release is classy 3.4.1.0 and was not read.

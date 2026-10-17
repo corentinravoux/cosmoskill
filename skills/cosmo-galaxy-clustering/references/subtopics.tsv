@@ -1,0 +1,13 @@
+key	title	from	files	status
+bao-reconstruction-fitting	BAO measurement: reconstruction and template fitting	Huterer 2023 review (arXiv:2212.05003), Sect. 3.1; DESI DR1 BAO key paper (arXiv:2404.03000) and DR2 BAO working group (arXiv:2503.14742)	physics-and-methods.md; systematics.md; results.md; deep/bao-reconstruction-fitting.md	covered
+rsd-growth	Redshift-space distortions and the growth rate fσ8	Huterer 2023, Sect. 3.1, 3.7 and 4.1–4.2; Ivanov 2022 review (arXiv:2212.08488), Sect. 7 (redshift-space distortions)	physics-and-methods.md; results.md	covered
+full-shape-modelling	Full-shape modelling: one-loop EFT, IR resummation, counterterms and stochastic terms, full modelling versus compression (ShapeFit)	Ivanov 2022, Sects. 4–6; DESI DR1 full-shape key paper (arXiv:2411.12021)	physics-and-methods.md; systematics.md; open-questions.md; results.md; deep/full-shape-modelling.md	covered
+galaxy-bias	Galaxy bias expansion and the galaxy–halo connection at analysis level	Ivanov 2022, Sect. 7 (galaxies in the EFT); Euclid overview (arXiv:2405.13491), Sect. 2.1	physics-and-methods.md; systematics.md	covered
+estimators-window	Two-point estimators, window functions, wide-angle terms and integral constraints	DESI 2024 II (arXiv:2411.12020), Sect. 10.1; Huterer 2023, Sect. 3.1	physics-and-methods.md; systematics.md; deep/estimators-window.md	covered
+covariance	Covariance matrices for clustering: mocks, analytic and hybrid, noise corrections	DESI 2024 II, Sects. 10.2 and 11	physics-and-methods.md; systematics.md; open-questions.md	covered
+fibre-assignment	Fibre assignment, completeness and pairwise weights	DESI 2024 II, Sect. 5	physics-and-methods.md; systematics.md; open-questions.md	covered
+imaging-systematics	Imaging systematics: veto masks and target-density weights	DESI 2024 II, Sects. 4.3 and 6	systematics.md	covered
+spectroscopic-systematics	Spectroscopic systematics: redshift failures, redshift errors, catastrophic redshifts	DESI 2024 II, Sect. 7	systematics.md	covered
+blinding	Catalogue-level blinding	DESI 2024 II, Sect. 2.4	physics-and-methods.md; systematics.md	covered
+primordial-non-gaussianity	Local primordial non-Gaussianity from scale-dependent bias	Euclid overview, Sect. 2.1; DESI DR1 f_NL analysis (arXiv:2411.17623)	physics-and-methods.md; results.md; systematics.md; open-questions.md	thin
+cosmological-interpretation	Geometry versus growth: combining BAO and RSD with external data	Huterer 2023, Sects. 3.6, 4.2–4.3; DESI DR2 cosmology results (arXiv:2503.14738)	results.md; open-questions.md	covered

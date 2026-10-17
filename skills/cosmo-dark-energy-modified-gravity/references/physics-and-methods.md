@@ -4,7 +4,7 @@ Scope: how the equation of state of dark energy and departures from general
 relativity are parameterised, measured and compared with Λ; the models,
 estimators, statistics and codes in current use.
 
-Snapshot: 2026-10-07
+Snapshot: 2026-10-14
 
 Flags: `[src]` read this session in the cited paper; `[sec]` from a named
 secondary source; `[der]` derived here. Equations without a flag are textbook
@@ -55,14 +55,18 @@ arXiv:1902.10503 (tests of gravity); Joyce et al. 2014, arXiv:1407.0059
 - **Pivot.** `w_p = w0 + wa (1 − a_p)`, with `a_p` chosen so that `w_p` and
   `wa` are uncorrelated for the data set at hand. `z_p` depends on the data:
   0.53 for DESI DR2 + CMB, 0.31 with DESY5 added (arXiv:2503.14738) [src];
-  0.24 for DES Y3 alone (arXiv:2207.05766) [src].
+  0.24 for DES Y3 alone (arXiv:2207.05766) [src]. DES Y6 defines `z_p` by
+  `Cov(w_p, wa) = 0` after Huterer and Turner 2001, arXiv:astro-ph/0012510
+  [src: arXiv:2605.27221, Sect. III].
 - **Figure of merit.** The Dark Energy Task Force (Albrecht et al. 2006,
   arXiv:astro-ph/0609591) defined progress through the inverse area of the
   error ellipse in the `w0`–`wa` plane, equivalently `1/[sigma(w_p)
   sigma(wa)]` up to a constant. Definitions differ by constant factors between
   papers (the sibling `cosmo-supernovae` records a factor 19.4 between two
   conventions [sec]); compare only values computed the same way. Unite quotes
-  315 (arXiv:2609.05053) [src].
+  315 (arXiv:2609.05053) [src]. DES Y6 uses `FoM = 1/sqrt(det Cov(w0, wa))`
+  [src: arXiv:2605.27221, Sect. III], the form Wang 2008, arXiv:0803.4295,
+  proposes for minimally correlated parameters [src].
 - **Phantom divide.** `w = −1`. `w < −1` means a dark-energy density that
   grows with time and, for a single non-interacting fluid, a violation of the
   null energy condition.
@@ -94,14 +98,20 @@ arXiv:1902.10503 (tests of gravity); Joyce et al. 2014, arXiv:1407.0059
 
 | Class | Definition | Parameters beyond Λ | Reference | Flag |
 |---|---|---|---|---|
-| Thawing | scalar field frozen at `w = −1` by Hubble friction until recently, now rolling: `w` rises from −1 | 1 (calibrated) or 2 (algebraic, enforces `w ≥ −1`) | Caldwell and Linder 2005, arXiv:astro-ph/0505494; Lodha et al. 2024, arXiv:2405.13588 | [src] |
-| Freezing | field slowing as it rolls: `w` falls towards −1 | — | arXiv:astro-ph/0505494 | [src] |
-| Emergent | dark energy "comes into being recently, as in phase transition models" | 1 | arXiv:2405.13588 | [src] |
-| Mirage | distance to last scattering close to Λ despite dynamics | 1 | arXiv:0708.0024, arXiv:2405.13588 | [src] |
+| Thawing | scalar field frozen at `w = −1` by Hubble friction until `m_phi ~ H`, now rolling: `w` rises from −1. Calibrated: `wa ≈ −1.58 (1 + w0)` (can cross −1, built to match `H(z)` and distances, not `w(z)`); algebraic: `1 + w(a) = (1 + w0) a^p [(1 + b)/(1 + b a^-3)]^(1 − p/3)`, `b = 0.5`, keeps `w ≥ −1`; `p` hits its prior bound 30 | 1 (calibrated) or 2 (algebraic) | Caldwell and Linder 2005, arXiv:astro-ph/0505494; Lodha et al. 2024, arXiv:2405.13588; arXiv:2503.14743 | [src]; [src: Sect. VI.1, Eqs. 14–15] |
+| Freezing | field slowing as it rolls: `w` falls towards −1; `wa > 0`, "not favored by observations" | — | arXiv:astro-ph/0505494; arXiv:2503.14743 | [src]; [src: Sect. VI.1] |
+| Emergent | dark energy "comes into being recently, as in phase transition models"; `w(z) = −1 − Delta/(3 ln 10) [1 + tanh(Delta log10((1 + z)/(1 + z_t)))]` | 1 | arXiv:2405.13588; arXiv:2503.14743 | [src]; [src: Sect. VI.2, Eq. 17] |
+| Mirage | distance to last scattering close to Λ despite dynamics; `wa ≈ −3.66 (1 + w0)` | 1 | arXiv:0708.0024, arXiv:2405.13588; arXiv:2503.14743 | [src]; [src: Sect. VI.3, Eq. 18] |
 | Padé-`w` | phenomenological thawing trajectories with theory-motivated priors | not read | Shlivko 2025, arXiv:2512.20832 | [src] |
 | Quintom / non-minimal coupling | effective `w` crossing −1 through several degrees of freedom or a coupling to gravity | model-dependent | arXiv:2407.15832 | [src] |
 | Interacting dark energy | energy exchange between dark matter and dark energy (coupled quintessence, coupled fluid) | same number as CPL in the cited comparison | Li et al. 2026, arXiv:2601.07361 | [src] |
 
+- Origins: rolling scalar fields (Ratra and Peebles 1988,
+  doi:10.1103/PhysRevD.37.3406; Wetterich 1988,
+  doi:10.1016/0550-3213%2888%2990193-9; titles and dates read on Crossref); a
+  component with general `w` that "develops fluctuations" (Caldwell, Dave and
+  Steinhardt 1998, arXiv:astro-ph/9708069) [src]. Slow-roll thawing fields
+  converge to a unique `w(a)` (Scherrer and Sen 2008, arXiv:0712.3450) [src].
 - Caldwell and Linder showed that the simplest scalar-field models occupy
   narrow regions of the `w`–`w'` plane and set the target resolution
   `sigma(w') ≈ (1 + w)` [src].
@@ -165,7 +175,12 @@ Inference") [src].
 
 **Perturbations of dark energy.** When `w(a)` crosses −1 a single perfect
 fluid has divergent perturbations, so Boltzmann codes need a prescription for
-the crossing. EFTCAMB "handles phantom-divide crossing models" and evolves the
+the crossing. A single scalar field cannot cross; the parameterised
+post-Friedmann (PPF) description handles multi-field crossing models (Fang, Hu
+and Lewis 2008, arXiv:0808.3125) [src] and is what DESI uses
+(arXiv:2404.03002) [src: Sect. on `w0waCDM`]. In the EFT of quintessence
+crossing has no general pathology, but the `w < −1` side needs a sound speed
+near zero (Creminelli et al. 2009, arXiv:0811.0827) [src]. EFTCAMB "handles phantom-divide crossing models" and evolves the
 full linear dynamics without a quasi-static approximation (Hu et al. 2013,
 arXiv:1312.5742) [src]. State the prescription used whenever a CMB likelihood
 with lensing or ISW is combined with a crossing `w(a)`.
@@ -187,6 +202,14 @@ Phi) dx^2]`.
 - `eta = Phi/Psi` — gravitational slip; `Sigma = mu (1 + eta)/2`.
 - General relativity with negligible anisotropic stress: `mu = Sigma = eta =
   1`.
+- Origins of the parameterisation: Amendola, Kunz and Sapone 2008,
+  arXiv:0704.2421 (growth, anisotropic stress, modified Poisson equation);
+  Jain and Zhang 2008, arXiv:0709.2375; Bertschinger and Zukin 2008,
+  arXiv:0801.2431 (scale-independent on super-horizon, scale-dependent on
+  sub-horizon scales); Zhao et al. 2009, arXiv:0809.3791 (time- and
+  scale-dependent effective `G` and slip) [src]. Pogosian and Silvestri 2016,
+  arXiv:1606.05339, map Horndeski theories onto Σ and μ [src]; Planck 2015 XIV,
+  arXiv:1502.01590, is the first Planck analysis of these functions [src].
 
 Functional forms in use:
 
@@ -210,7 +233,9 @@ is a constraint at `z ≲ 1` only.
 `f(a) ≡ dln D/dln a = Omega_m(a)^gamma`, introduced by Linder
 (arXiv:astro-ph/0507263) with a fitting formula for the linear growth
 "accurate to 0.05–0.2%" [src]. General relativity with flat ΛCDM gives
-`gamma = 0.55` (arXiv:2302.01331) [src]. `gamma > 0.55` means slower growth
+`gamma = 0.55` (arXiv:2302.01331) [src]. Linder and Cahn 2007,
+arXiv:astro-ph/0701317, make γ the parameter that separates growth from
+expansion: narrow range for GR dark energy, distinct values beyond GR [src]. `gamma > 0.55` means slower growth
 than GR at the same `Omega_m(a)`. One number, scale-independent by
 construction; it cannot represent `f(R)`-type scale-dependent growth.
 
@@ -222,6 +247,13 @@ construction; it cannot represent `f(R)`-type scale-dependent growth.
   single-field models", written as the most general unitary-gauge action; "the
   background evolution depends on only three operators", the others start at
   quadratic order in perturbations [src].
+- Gleyzes et al. 2013, arXiv:1304.4840: a minimal EFT description of
+  single-field dark energy built from operators with at most two derivatives
+  in the equations of motion [src]. Horndeski theory: Horndeski 1974,
+  doi:10.1007/BF01807638 (title, author, year read on Crossref); its
+  rediscovery as generalised Galileons, the most general scalar theories with
+  second-order equations of motion (Deffayet et al. 2011, arXiv:1103.3260)
+  [src].
 - Bellini and Sawicki 2014, arXiv:1404.3713: for one universally coupled
   scalar field (Horndeski), all linear cosmology is compressed "into five
   independent and arbitrary functions of time only and one constant": the
@@ -267,8 +299,68 @@ Horndeski theory as a whole "includes general relativity and many known
 modified gravity theories such as generalized Galileons, f(R) and Brans-Dicke"
 (arXiv:2407.15832) [src]. The non-minimal-coupling models proposed for the
 DESI signal (Section 2.3) are built inside the surviving subclass. Which named
-models survive, and the caveat about the frequency at which the bound applies,
-were not re-read this session (`open-questions.md`, "Not verified").
+models survive was not re-read (`open-questions.md`, "Not verified"). The
+bound holds at `z ≃ 0` only (arXiv:2411.12026) [src: Sect. 4.2, footnote 13].
+The frequency caveat: LIGO energies lie close
+to the strong-coupling cutoff of many dark-energy models, where the low-energy
+`c_g ≠ c` prediction need not hold (de Rham and Melville 2018,
+arXiv:1806.09417) [src].
+
+### 4.5 What the main modified-gravity analyses did
+<!-- key: what-the-main-modified-gravity-analyses-did -->
+
+**DESI DR1 full shape (Ishak et al. 2024, arXiv:2411.12026).**
+
+| Aspect | What was done | Place |
+|---|---|---|
+| Equations | metric Eq. 1; `k^2 Psi = −4 pi G a^2 mu Sum rho_i Delta_i` (Eq. 2); `eta ≈ Phi/Psi` (Eq. 3); `k^2 (Phi + Psi) = −8 pi G a^2 Sigma Sum rho_i Delta_i` (Eq. 4); `Sigma = mu (eta + 1)/2` (Eq. 5) | [src: Sect. 3.1] |
+| μ–Σ form | `mu(a,k) = 1 + mu0 [Omega_DE(a)/Omega_Lambda] [1 + c1 (lambda H/k)^2]/[1 + (lambda H/k)^2]`, Σ likewise with `Sigma0`, `c2` (Eqs. 6–7); `lambda = 0`, `c1 = c2 = 1` gives time-only; GR is `mu0 = Sigma0 = 0`; hard prior `mu0 < 2 Sigma0 + 1` against numerical failures of the CAMB-based codes | [src: Sect. 3.2] |
+| μ–η form | `mu(a) = 1 + E11 Omega_DE(a)`, `eta(a) = 1 + E22 Omega_DE(a)` (Eqs. 8–9), quoted as `mu0`, `eta0` at `a = 1` | [src: Sect. 3.2] |
+| EFT basis | unitary-gauge action (Eq. 19); `Omega(a) = Omega_0 a^{s_0}`, `gamma_i = 0` (Eq. 23); `alpha_M = [a/(Omega + 1)] dOmega/da` (Eq. 24); higher spatial derivatives removed by `m_2 = 0`, `2 gamma_5 = gamma_3 = −gamma_4` (Eq. 21) | [src: Sect. 4.1] |
+| α basis | `alpha_i = c_i Omega_DE(a)` (Eq. 31); `alpha_T = 0`, `c_K = 10^-2` fixed; three classes: `alpha_M` and `alpha_B` free, no braiding, no slip (`alpha_B = −2 alpha_M`); ghost-free `alpha_K + (3/2) alpha_B^2 > 0`, `c_s^2 > 0` | [src: Sect. 4.2] |
+| Codes | ISiTGR (on CAMB) for μ–Σ, μ–η and binned forms; EFTCAMB for the EFT basis; mochi_class (hi_class branch) for the α basis; Cobaya, desilike, velocileptors | [src: Sect. 2.3] |
+| Scale cuts and non-linearity | parameterisations defined at linear order; DESI FS scale cuts keep one-loop terms small; EdS kernels checked against fkpt full MG kernels at `mu0 = 0.5`, `z = 0.3`: monopole < 1% for `k < 0.12 h/Mpc`, < 2% for `k < 0.25`; quadrupole < 2.4% for `k < 0.10`, < 3.6% at 0.20; DES Y3 3×2pt restricted to the linear scale cuts of the DES MG paper | [src: Sect. 2.3; Sect. 3.1] |
+| Screening | not modelled: unspecified non-linear MG terms are assumed negligible | [src: Sect. 2.3] |
+| Priors and projection | EFT nuisance priors widened ×3 in tests: `mu0` shift well below 1σ; MAP and mean of `mu0`, `Sigma0` within 1σ for the baseline combination | [src: Sect. 2.3; App. C] |
+| CMB likelihood | CMB without lensing: Σ0 from PR3 0.47 (+0.16/−0.22) (with `mu0 = −0.66 (+1.5/−0.83)`), in tension with GR, "well-above" 3σ once DESI is added; CamSpec puts GR inside 95%; LoLLiPoP + HiLLiPoP closer still; adding CMB lensing makes the discordance insignificant for all three | [src: Sect. 3.2.1, Table 2] |
+| GW speed caveat | `alpha_T ≲ 10^-15` applies only at `z ≃ 0`; a past `alpha_T(z) ≠ 0` is allowed in principle | [src: Sect. 4.2, footnote 13] |
+
+**DES Y3 3×2pt (DES Collaboration 2022, arXiv:2207.05766).**
+
+| Aspect | What was done | Place |
+|---|---|---|
+| Equations | `k^2 Psi = −4 pi G a^2 [1 + mu(a,k)](rho delta + 3(rho + P) sigma)`, `k^2 Phi = −4 pi G a^2 [1 + Sigma(a,k)](2 rho delta + 3(rho + P) sigma)` (Eq. 20): here μ, Σ are the departures (GR: 0) and `Phi` is the Weyl potential, unlike the DESI notation | [src: Sect. III.5] |
+| Time dependence | `Sigma = Sigma0 Omega_Lambda(a)/Omega_Lambda,0`, `mu = mu0 Omega_Lambda(a)/Omega_Lambda,0` (Eq. 21), no scale dependence | [src: Sect. III.5] |
+| Code and non-linear treatment | MGCAMB v3.0 for linear `P_PhiPhi`, `P_Phidelta` in CosmoSIS; non-linear spectra by multiplying with the Halofit ratio `P_NL/P_L` of the matter spectrum (Eq. 23); NLA intrinsic alignments with the Weyl spectrum (Eq. 25), TATT not used | [src: Sect. III.5] |
+| Scale cuts | "linear" cuts: remove the data point contributing most to the non-linear-minus-linear `Delta chi2` until `Delta chi2 < 1` (procedure of the Planck 2015 analysis), leaving 256 of 462 3×2pt points | [src: Sect. II.4, Table 1] |
+| Prior | `mu0 < 2 Sigma0 + 1` excluded because the CAMB integrator fails there (Eq. 26) | [src: Sect. III.5] |
+| Screening | none; the parameterisation is "defined only in linear theory" | [src: Sect. III.5] |
+
+**KiDS-1000 `f(R)` (Tröster et al. 2020, arXiv:2010.16416).**
+
+| Aspect | What was done | Place |
+|---|---|---|
+| Model | Hu–Sawicki; Compton wavelength today `lambda_C0 ≈ 42 sqrt[(1/(4 − 3 Omega_m)) abs(f_R0)/10^-4] h^-1 Mpc` (Eq. 14); force enhanced by 1/3 below `lambda_C0`; background fixed to `w = −1` since deviations are O(`abs(f_R0)`) | [src: Sect. 3.4] |
+| Non-linear model and screening | ReACT reaction method on top of HMcode, which carries the chameleon screening of the non-linear regime; galaxy bias in MG not available, so cosmic shear only | [src: Sect. 3.4; Sect. 4.6] |
+| Prior and result | `log10 abs(f_R0)` uniform in (−8, −2): unconstrained; earlier cosmic-shear bounds of < −4 did not marginalise over cosmological or nuisance parameters | [src: Sect. 4.6] |
+
+**DESI DR1 scale-dependent MG and `f(R)` (Gonzalez et al. 2026, arXiv:2604.26915).**
+
+| Aspect | What was done | Place |
+|---|---|---|
+| Growth equation | `D'' + 2H D' − (3/2) H^2 Omega_m(a) [1 + 2 beta^2 k^2/(k^2 + m_phi^2 a^2)] D = 0` (Eq. 9): ΛCDM for `k → 0`, gravity × `(1 + 2 beta^2)` for `k > a m_phi`; scale-dependent `f(k,t)` (Eq. 8) | [src: Sect. 2] |
+| Perturbation theory | fkpt one-loop kernels carrying `D_+(k,t)` and `f(k,t)`; EFT counterterms, IR resummation, bias `b1, b2, b_s`, `b_3nl` fixed to co-evolution; linear power spectrum by rescaling the ΛCDM one with the MG growth (Eq. 10) | [src: Sect. 2, Eqs. 10–13] |
+| `f(R)` map | Hu–Sawicki `f(R) = −M^2 c1 (R/M^2)^n/[c2 (R/M^2)^n + 1]` (Eq. 14), `M^2 = H0^2 Omega_m`, `c1/c2 = 6 Omega_Lambda/Omega_m`; baseline `n = 1` | [src: Sect. 2] |
+| Screening | linearised Yukawa description, screening neglected; justified by staying at `k_max = 0.17 h/Mpc`, where screening is degenerate with the EFT counterterms | [src: Sect. 1; Sect. 2] |
+| Priors | flat `abs(f_R0)` in [0, 10^-4] (a log prior shifts results low); nuisances reparameterised as `b1 sigma8`, `b2 sigma8^2`, `b_s2 sigma8^2`, per redshift bin; linear parameters marginalised analytically | [src: Sect. 4.1, Eqs. 20–21] |
+
+**Planck 2018 (Planck Collaboration 2018, arXiv:1807.06209).**
+
+| Aspect | What was done | Place |
+|---|---|---|
+| Equations | `k^2 Psi = −mu 4 pi G a^2 [rho Delta + 3(rho + P) sigma]` (Eq. 50); slip `eta ≈ Phi/Psi` (Eq. 52); `k^2 (Phi + Psi) = −Sigma 4 pi G a^2 [2 rho Delta − 3(rho + P) sigma]` (Eq. 53); GR is `mu = eta = Sigma = 1` | [src: Sect. 7.4.2] |
+| Time dependence | `mu(z) = 1 + E11 Omega_DE(z)`, `eta(z) = 1 + E21 Omega_DE(z)` (Eq. 54), reported as `mu0 − 1`, `Sigma0 − 1` | [src: Sect. 7.4.2] |
+| Lensing | the preference for `Sigma0 > 1` "is therefore largely another reflection of the preference for `A_L > 1`"; CMB lensing reconstruction pulls back to ΛCDM; CamSpec shifts the result by ~0.2σ towards consistency | [src: Sect. 7.4.2, Fig. 32] |
 
 ## 5. Screening
 <!-- key: screening -->
@@ -276,14 +368,16 @@ were not re-read this session (`open-questions.md`, "Not verified").
 A light scalar coupled to matter mediates a fifth force that Solar-System
 tests exclude unless it is suppressed locally. Reviews: arXiv:1407.0059;
 Burrage and Sakstein 2017, arXiv:1709.09071; Brax et al. 2022,
-arXiv:2201.10817; arXiv:1504.04623.
+arXiv:2201.10817; arXiv:1504.04623; Clifton et al. 2012, arXiv:1106.2476.
+`f(R)` reviews: Sotiriou and Faraoni 2010, arXiv:0805.1726; De Felice and
+Tsujikawa 2010, arXiv:1002.4928.
 
 | Mechanism | Principle | Canonical reference | Flag |
 |---|---|---|---|
 | Chameleon | the scalar mass depends on the local matter density: heavy where the density is high, "essentially free" where it is low | Khoury and Weltman 2003, arXiv:astro-ph/0309300 | [src] |
 | `f(R)` (Hu–Sawicki) | a chameleon in disguise; the scalar degree of freedom is locked to the GR value "across more than 25 orders of magnitude in density"; requires the galactic halo to keep the galaxy at high curvature | Hu and Sawicki 2007, arXiv:0705.1158 | [src] |
-| Symmetron | coupling switched off in dense regions by symmetry restoration | named with chameleons in the abstract of arXiv:1709.09071 | textbook mechanism |
-| Vainshtein | derivative self-interactions suppress the force inside a radius around a source (Galileons, DGP-like models) | review: arXiv:1407.0059 | textbook mechanism |
+| Symmetron | in dense regions the field sits at `phi = 0`, where its coupling to matter vanishes (local symmetry restoration) | Hinterbichler and Khoury 2010, arXiv:1001.4525 | [src] |
+| Vainshtein | derivative self-interactions suppress the force inside a radius around a source (Galileons, DGP-like models) | DGP: Dvali, Gabadadze and Porrati 2000, arXiv:hep-th/0005016; Galileon as the 4D effective theory of DGP: Nicolis, Rattazzi and Trincherini 2009, arXiv:0811.2197; review arXiv:1407.0059 | [src] for the two models; mechanism textbook |
 
 The Hu–Sawicki model is specified by the background field value `f_R0` (and an
 index `n`); smaller `abs(f_R0)` means a shorter-range force and closer
@@ -314,9 +408,11 @@ peculiar velocity divergence" [src]. In practice
 `E_G(l or R) = [lensing–galaxy cross-correlation] / [beta × galaxy
 auto-correlation]`, with `beta = f/b`,
 
-so that the linear bias and `sigma8` cancel (arXiv:1511.04457) [src]. In
-general relativity `E_G = Omega_m,0 / f(z)` on linear scales,
-scale-independent; in terms of Section 4.1 it measures `Sigma Omega_m,0 / f`.
+so that the linear bias and `sigma8` cancel (arXiv:1511.04457) [src]. Written
+as Wenzl et al. 2024 do: `E_G(k,z) ≡ [nabla^2 (psi − phi)/(3 H0^2 (1 + z)
+theta)]_k` (Eq. 5, after Zhang et al. 2007); GR gives `E_G = Omega_m,0/f(z)`
+(Eq. 6), scale-independent on linear scales; with modified gravity `E_G =
+Omega_m,0 Sigma(k,z)/f(k,z)` (Eq. 7) (arXiv:2401.12971) [src: Sect. III].
 Reference predictions: 0.401 ± 0.005 at `z = 0.555` and 0.452 ± 0.005 at `z =
 0.316` for `Omega_m,0` from Planck + SDSS BAO (arXiv:2401.12971) [src].
 
@@ -395,6 +491,7 @@ belong to `cosmo-statistics-inference`.
 | EFTCAMB | EFT of dark energy in CAMB; full linear dynamics, stability checks, phantom crossing | arXiv:1312.5742 | [src] |
 | hi_class | Horndeski gravity in CLASS: quintessence, Brans–Dicke, `f(R)`, covariant Galileons | Zumalacárregui et al. 2016, arXiv:1605.06102 | [src] |
 | CMBComp | compressed CMB likelihoods for late-time extensions | arXiv:2606.18455 | [src] |
+| ReACT | non-linear `P(k)` beyond ΛCDM by the halo-model reaction (DGP, `f(R)`, `w0wa`) | Bose et al. 2020, arXiv:2005.12184; method: Cataneo et al. 2019, arXiv:1812.05594 | [src] |
 | DEslider | visualisation of supernova systematics in the `w0`–`wa` plane | arXiv:2409.18668 | [src] |
 | Cobaya, CAMB, iminuit, getdist, PolyChord, anesthetic | sampling, theory, minimisation, plotting, evidence in the DESI analyses | named in arXiv:2503.14738 and arXiv:2503.14743 | [src] |
 

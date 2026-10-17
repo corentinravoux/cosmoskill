@@ -4,7 +4,7 @@ Scope: live controversies about the dynamical-dark-energy signal and about
 tests of gravity, with both sides cited; what the next data decide; stale
 claims.
 
-Snapshot: 2026-10-07
+Snapshot: 2026-10-14
 
 Flags: `[src]` read this session in the cited paper; `[sec]` from a named
 secondary source; `[der]` derived here.
@@ -62,9 +62,9 @@ below gives the objection, the reply, and the status at the snapshot.
   compilations.
 - The collaboration test: removing `z < 0.1` supernovae from DESY5 enlarges
   the errors much more than it moves the best fit (arXiv:2503.14738, figure on
-  data-selection robustness) [src]. For Unite, the sibling `cosmo-supernovae`
-  reports that the same cut moves the result by about 2σ (arXiv:2609.05053)
-  [sec].
+  data-selection robustness) [src]. For Unite the same cut removes 687 SNe
+  (24%) and moves the best fit by ~2σ, the only cut that does
+  (arXiv:2609.05053) [src: Sect. 9.1].
 - **Status.** Open. No dark-energy analysis at the snapshot uses a modern,
   homogeneous low-redshift anchor; see `cosmo-supernovae` for DEBASS and ZTF.
 
@@ -105,7 +105,8 @@ fitted.
   constraints gives `tau = 0.091 ± 0.011` in ΛCDM and brings the `w0`–`wa`
   preference below 95% CL [src].
 - Sailer et al. 2025, arXiv:2504.16932: DESI versus CMB is 2.2σ in ΛCDM; `tau
-  ~ 0.09` reduces the evolving-dark-energy preference from ≃3σ to ≃1.5σ;
+  ~ 0.09` reduces the evolving-dark-energy preference from ≃3σ to ≃1.5σ
+  (body: 2.8σ at `tau = 0.06`, 1.4σ at 0.09, [src: Sect. III.2]);
   DESI + high-ℓ CMB + lensing gives `tau = 0.090 ± 0.012`, in ≃3–5σ tension
   with Planck low-ℓ polarisation; τ from Planck is a "single-point failure"
   for analyses that include the CMB [src].
@@ -382,18 +383,10 @@ compilations (Dhawan, Popovic and Goobar 2024, arXiv:2409.18668) [src].
 
 - The DESI DR1 full-shape value of the growth index γ, and any post-PR4 update
   of the Nguyen et al. growth-suppression result.
-- Numerical Planck 2018 values of μ0 and Σ0; only their qualitative status
-  (tension in PR3, removed with PR4 likelihoods) was read, in
-  arXiv:2411.12026.
-- The prior ranges on `w0` and `wa` in the DESI analyses beyond the `wa > −3`
-  edge.
-- The definitions of the calibrated-thawing, emergent and mirage one-parameter
-  relations (the equations are in arXiv:2405.13588 and arXiv:2503.14743; only
-  their names, parameter counts and fit statistics were read).
 - Thresholds of the Jeffreys scale as used by each paper; only the DESI
   wording ("moderate ≤ 2.5", "strong ≤ 5") was read.
-- Which named Horndeski models survive GW170817, and the argument that the
-  cosmological EFT may not apply at LIGO frequencies.
+- Which named Horndeski models survive GW170817 (the LIGO-frequency caveat is
+  now read: arXiv:1806.09417, `physics-and-methods.md` Section 4.4).
 - Vainshtein-screened model constraints (nDGP, Galileons): no number was read.
 - Early dark energy, which belongs to `cosmo-tensions-anomalies` and
   `cosmo-distance-ladder-h0`, was not researched.
@@ -404,6 +397,12 @@ compilations (Dhawan, Popovic and Goobar 2024, arXiv:2409.18668) [src].
 - Euclid and DESI release dates come from web pages returned by a search, not
   from collaboration papers.
 - The abstract of arXiv:2511.07517 was first read through a summarising fetch
-  and then verbatim through the arXiv API; the Unite sensitivity to the `z <
-  0.1` cut is quoted from the sibling `cosmo-supernovae`, not from
-  arXiv:2609.05053 itself.
+  and then verbatim through the arXiv API.
+- Closed on 2026-10-14 from paper bodies: DESI prior ranges (arXiv:2404.03002,
+  Table 2); calibrated-thawing, algebraic-thawing, emergent and mirage
+  equations (arXiv:2503.14743, Eqs. 14, 15, 17, 18); Planck 2018 μ0, Σ0
+  (arXiv:1807.06209, Table 7, in `results.md` Section 6); Unite `z < 0.1` cut
+  (arXiv:2609.05053, Sect. 9.1).
+- Still from abstracts only: the low-redshift test of
+  arXiv:2502.04212 and the τ result of arXiv:2504.21813 (the γ `chi2`
+  budget of arXiv:2302.01331 is now read, `results.md` Section 6).

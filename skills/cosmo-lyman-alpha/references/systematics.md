@@ -1,7 +1,7 @@
 # Lyman-alpha forest — systematics
 
 Scope: the canonical systematic effects of Lyα forest analyses (3D correlations and BAO/AP, P1D, tomography), each with mechanism, measured size where a paper quantifies it, standard mitigation, validation test and the reference a referee expects.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-14
 
 Flags: `[src]` read this session in the cited paper (abstract unless a section is named); `[der]` derived here; `[sec]` secondary.
 
@@ -52,7 +52,7 @@ The effects are grouped by where they enter: (A) from the quasar and the spectru
 <!-- key: b1-high-column-density-systems-dlas-sub-dlas -->
 
 - **Applies to:** both.
-- **Mechanism.** Systems with log N_HI > 17 (LLS) up to log N_HI > 20.2–20.3 (DLA) add broad damped Voigt wings. They trace halos (higher bias) and their wings suppress radial modes, which imprints a scale-dependent bias on the forest power spectrum (arXiv:2506.13005, arXiv:1711.06275) [src]. The first BOSS 3D measurement already attributed a low β to HCDs and metals (arXiv:1104.5244) [src].
+- **Mechanism.** Systems with log N_HI > 17 (LLS) up to log N_HI > 20.2–20.3 (DLA) add broad damped Voigt wings. They trace halos (higher bias) and their wings suppress radial modes, which imprints a scale-dependent bias on the forest power spectrum (arXiv:2506.13005, arXiv:1711.06275) [src]. The first BOSS 3D measurement already attributed a low β to HCDs and metals (arXiv:1104.5244) [src]. Foundations: in P1D, damping wings add large-scale power and ignoring them underestimates the slope of the linear power (McDonald et al. 2005, arXiv:astro-ph/0407378) [src]; in 3D, HCDs add noise, raise the measured density bias and lower β_α, with correction formulae in terms of the mean effective optical depth and host-halo bias of the HCDs (Font-Ribera & Miralda-Escudé 2012, arXiv:1205.2018) [src].
 - **Mitigation.** (i) Identify and mask DLAs, and correct the wings: CNN catalogue for eBOSS DR16 (arXiv:2107.09612), Gaussian-process catalogue for DR16Q (arXiv:2103.10964), and for DESI DR2 a combination of a template-fitting "DLA Toolkit", a CNN and a GP finder (arXiv:2503.14740) [src]. (ii) Model the unmasked remainder in the correlation function: the Voigt model (linearly biased HCDs convolved with Voigt profiles, integrated over the column-density distribution) of Rogers et al. 2018, recommended over top-hat approximations and valid to |k| < 1 h/Mpc (arXiv:1711.06275) [src]; tested on DESI-type mocks by Tan et al. 2025, who find it performs comparably to the ad hoc models of published analyses and stress that the HCD content and bias of real data are uncertain (arXiv:2506.13005) [src].
 - **Size of finder imperfection.** DESI DR2 combined catalogue: about 85% pure and 79% complete for log N_HI > 20.3 in S/N > 2 spectra without BALs; the Toolkit alone 80% pure, 79% complete (arXiv:2503.14740) [src]. eBOSS DR16 CNN: > 90% completeness and purity for 20.1 ≤ log N_HI ≤ 22 in bright forests (arXiv:2107.09612) [src].
 - **For P1D (DESI DR1).** Marginalising over LLS contamination inflates the errors on the compressed parameters by about 50%; the LLS parameters are strongly correlated with (Δ²_★, n_★), and the paper calls it "concerning that possible small deviations from the assumed functional form for LLS contamination could induce noticeable variations in the inferred parameters"; external priors on the LLS abundance would help (arXiv:2601.21432, Sects. 6.2 and 8) [src]. DLAs are identified by three finders, then modelled and masked (same paper, Sect. 2.1) [src].
@@ -86,6 +86,7 @@ The effects are grouped by where they enter: (A) from the quasar and the spectru
 - **Mechanism.** The H I fraction depends on the local photo-ionisation rate; sources cluster, so Γ fluctuates on scales comparable to the mean free path. This makes b_δ and β scale dependent while keeping the product b_δ β fixed, and adds a shot-noise term from rare bright sources (Gontcho A Gontcho et al. 2014, arXiv:1404.7425) [src]. On scales beyond the mean free path the H I density anti-correlates with matter (Pontzen 2014, arXiv:1402.0506) [src].
 - **Size.** Distortion of the correlation-function shape around the BAO peak, with the peak position shifting "only by 1.2 percent for a mean source bias of b_j = 3" in a linear radiative-transfer calculation (arXiv:1402.0506) [src]. This number predates DESI precision (0.65% isotropic) and is an upper-end model, not a measured shift.
 - **Mitigation.** A UV-fluctuation term in the 3D model; BOSS DR12 marginalised over it (arXiv:1702.00176) [src]; the DESI DR2 full-shape analysis marginalises over the impact of UV background fluctuations (arXiv:2607.27411) [src].
+- **Detected in DR2.** During the DR2 full-shape validation the scale-dependent UV bias was detected at ~3σ to ~5σ depending on the model setup and added to the baseline; b_Γ = 0.143 ± 0.047 at z_eff = 2.33 against a prediction of ≃ 0.13 at z = 2.25 from arXiv:1404.7425; it improves the fit but does not change AP significantly; source shot noise and He II reionisation terms gave no significant improvement (arXiv:2607.27410 [src: Sect. III.4]; arXiv:2607.27411 [src: Sect. III.4]). It does destabilise fσ8 (G7).
 - **At z > 5** the fluctuations are large: homogeneous-UVB models are excluded at z ≥ 5.4 (arXiv:2108.03699) [src].
 
 ### B5. Relics of patchy reionisation
@@ -179,7 +180,7 @@ The effects are grouped by where they enter: (A) from the quasar and the spectru
 
 - **Applies to:** 3D correlations (full shape, P3D).
 - **Mechanism.** The linear (Kaiser-like) model with empirical non-linear corrections fails below a scale that depends on the statistic.
-- **Practice.** eBOSS full shape used r_min = 25 h⁻¹Mpc (arXiv:2209.12931) [src]; DESI DR2 analytically marginalises scales < 10 h⁻¹Mpc and uses P1D-informed priors on non-linear clustering from ForestFlow (arXiv:2607.27411, arXiv:2607.27413) [src]. The Arinyo-i-Prats et al. fitting function describes hydrodynamical P3D to better than 5% up to k = 10 h/Mpc (arXiv:2205.00962) [src]; the one-loop EFT to below 2% up to k = 2 h/Mpc in ACCEL² (arXiv:2412.06892) and sub-percent to k = 3 h/Mpc at z = 2.8 in Sherwood (arXiv:2309.10133) [src].
+- **Practice.** eBOSS full shape used r_min = 25 h⁻¹Mpc (arXiv:2209.12931) [src]; DESI DR2 analytically marginalises the undistorted model below r_min = 30 (auto) and 40 h⁻¹Mpc (cross) and fixes the Arinyo non-linear parameters to ForestFlow values calibrated on the DESI DR1 P1D (arXiv:2607.27411 [src: Sects. III.4, III.5]; arXiv:2607.27413) [src]. The Arinyo-i-Prats et al. fitting function describes hydrodynamical P3D to better than 5% up to k = 10 h/Mpc (arXiv:2205.00962) [src]; the one-loop EFT to below 2% up to k = 2 h/Mpc in ACCEL² (arXiv:2412.06892) and sub-percent to k = 3 h/Mpc at z = 2.8 in Sherwood (arXiv:2309.10133) [src].
 - **Warning.** "Phenomenological flux power spectrum models, based on modulations of the linear-theory power spectrum, fail at the field level even on quasi-linear scales" (arXiv:2606.26234) [src]. The Kaiser approximation for Lyα × QSO differs from N-body mock measurements at small scales (arXiv:2305.08899) [src].
 
 ### D3. Growth rate from the forest
@@ -226,6 +227,126 @@ Thermal-history priors remain the dominant model dependence of WDM limits: 5.3 k
 - **The tomographic effect in void cross-correlations.** Because pixels lie along parallel lines of sight, the void–forest cross-correlation has an anisotropy of purely geometric origin that the RSD model has to include (arXiv:2203.11045) [src].
 - **Breakdown of the transmission–density relation.** A galaxy protocluster at z = 2.30 shows no significant absorption in CLAMATO (arXiv:2303.07619) [src], and LATIS finds strong absorption without LBG overdensities (arXiv:2507.10949) [src]: tomographic maps are not unbiased density maps in the most extreme environments.
 
+## G. Systematic budgets of the main analyses (paper bodies)
+<!-- key: systematic-budgets-of-the-main-analyses-paper -->
+
+One table per analysis; each entry gives the place read. "σ/3" is the DESI threshold: a shift below a third of the statistical error of the data set needs no further action.
+
+### G1. DESI DR2 Lyα BAO (arXiv:2503.14739; mocks arXiv:2503.14741)
+<!-- key: g1-desi-dr2-lyalpha-bao-arxiv-2503-14739-mocks -->
+
+| Item | Size or practice | Place read |
+|---|---|---|
+| Validation threshold | recover α_∥ = α_⊥ = 1 within σ_DR2/3, i.e. 0.0038 (α_∥) and 0.0045 (α_⊥); larger biases "must be investigated, corrected, or incorporated into the systematic errors" | arXiv:2503.14741 [src: Sect. IV.1, Fig. 6 caption] |
+| Mock suite | 300 CoLoRe-QL (input power with smoothed BAO peak, mimicking non-linear broadening) + 100 Saclay mocks; DR1 used 100 LyaCoLoRe + 50 Saclay | arXiv:2503.14739 [src: Sect. V.1] |
+| Bias on stacked mocks, Δα_∥ | −0.0042 ± 0.0006 (CoLoRe-QL), −0.0074 ± 0.0010 (Saclay), −0.0052 ± 0.0005 (combined 400), "near the threshold" | arXiv:2503.14741 [src: Table 1] |
+| Bias on stacked mocks, Δα_⊥ | 0.0005 ± 0.0008, 0.0031 ± 0.0012, 0.0012 ± 0.0006 (same order) | arXiv:2503.14741 [src: Table 1] |
+| Bias on α_iso = α_⊥^(9/20) α_∥^(11/20) and φ = α_⊥/α_∥ | −0.0023 ± 0.0003 and 0.0065 ± 0.0010 (combined) | arXiv:2503.14741 [src: Table 1] |
+| Origin of the α_∥ bias | quasar redshift errors smear the weak broad emission lines of the mean continuum during continuum fitting, creating spurious correlations; absent in raw mocks without continuum fitting and much reduced when redshift errors are added after continuum fitting; the mock implementation is "the most extreme version of this effect" | arXiv:2503.14739 [src: Sect. V.1]; arXiv:2503.14741 [src: Sect. IV.1] |
+| Per-mock fits | 400 individual fits: residuals Δα/σ_α consistent with a unit Gaussian; χ² distribution higher than expected, attributed to the model at small scales, not to the covariance (better than with the DR1 mocks) | arXiv:2503.14741 [src: Sect. IV.2, Figs. 7–8] |
+| Close-pair test | removing quasar–pixel pairs with θ < 20 arcmin and Δv < 4000 km/s mitigates the mock bias; on data the shift is within σ/3 | arXiv:2503.14739 [src: Sects. V.1, V.2] |
+| Data splits | auto vs cross, region A vs B, North vs South imaging, high vs low S/N (split at S/N = 4.25 in 1420–1480 Å, chosen for equal BAO errors): all consistent | arXiv:2503.14739 [src: Sect. V.2, Fig. 10] |
+| Analysis variations | DR1 configuration (r_min = 10), broadband polynomials, close-pair removal, free non-linear broadening instead of the LPT value: all shifts < σ/3; tests passed before unblinding and rerun after | arXiv:2503.14739 [src: Sect. V.2, Fig. 11] |
+| Theory systematic added | 0.3% on each of α_∥, α_⊥ (non-linear shift; see D1) | arXiv:2503.14739 [src: Sect. VI.1] |
+| Further variations (App. B) | estimation of δ (no C III recalibration, η_pip = 1, η_LSS = 3.5, 2.4 Å pixels); data cuts (λ_obs, λ_RF, z_QSO < 3.78, > 50 pixels, DLA mask only at S/N_red > 3, weak BALs only, no sharp-line mask); distortion matrix (to 200 h⁻¹Mpc, 2% of data, 4 h⁻¹Mpc bins, no redshift evolution); rebinning of δ: all within σ/3 except "only quasar targets", whose shift matches its larger change of sample size | arXiv:2503.14739 [src: App. B, Fig. 13] |
+
+### G2. DESI DR1 Lyα BAO (arXiv:2404.03001)
+<!-- key: g2-desi-dr1-lyalpha-bao-arxiv-2404-03001 -->
+
+| Item | Size or practice | Place read |
+|---|---|---|
+| Blinding | correlation functions blinded by an additive correction mimicking a BAO shift; catalogue-level blinding rejected because sky lines and absorption lines close to Lyα made it hard to apply robustly | [src: Sect. 6.1] |
+| Mock threshold | stacked-mock bias below one third of the blinded statistical error, ~0.005 (α_∥) and ~0.007 (α_⊥) | [src: Sect. 6.2.3] |
+| Largest mock offset | Δα_∥ = −0.003 ± 0.0014, Δα_⊥ = +0.004 ± 0.0018 (100 LyaCoLoRe mocks); the two mock suites differ at the same level, so no correction | [src: Sect. 6.5] |
+| Systematic adopted | a conservative 0.5% would raise the total α_∥ (α_⊥) error by 3% (2%) in quadrature; judged negligible, so **only statistical errors are reported** | [src: Sect. 6.5] |
+| Broadband terms | move the best fit by less than a tenth of the statistical error | [src: Sect. 6.5] |
+| Shifts beyond σ/3 | "only quasar targets" and "weak BALs" (data 11% and 8% less constraining, expected fluctuations 0.28σ and 0.33σ); an alternative quasar-redshift estimator masking λ < Lyα (rms Δz 443 km/s above z = 2, ~4.2 h⁻¹Mpc in pair separations, 2% of pixels moved across the rest-frame cuts) gives Δα_∥ = 0.001, Δα_⊥ = −0.013, against bootstrap fluctuations of 0.007 and 0.009 (1000 HEALPix bootstraps): judged statistical | [src: Appendix E] |
+| Cross-covariance between the four functions | ignoring it underestimates the BAO errors by 10% | [src: Sect. 3.3] |
+| Covariance validation | per mock, compressed BAO residual δ_α/σ_α with δ_α = (∂M ᵀC⁻¹∂M)⁻¹ ∂M ᵀC⁻¹ R and σ_α = (∂M ᵀC⁻¹∂M)^(−1/2) (Eqs. 14–15): rms 0.96 ± 0.05 (α_∥), 0.99 ± 0.06 (α_⊥) on LyaCoLoRe, 1.07 ± 0.07, 1.03 ± 0.07 on Saclay; 10% larger without the cross-covariance | [src: Sect. 6.2.2] |
+| Error calibration | data BAO errors larger than in the DR1 mocks, which lack non-linear broadening of the peak; checked with 1000 Monte Carlo realisations of the data covariance | [src: Sect. 6.2.4, Fig. 9] |
+| Priors on contaminants (Table 5) | informative only for b_CIV(eff) ~ N(−24.3, 1.5) ×10⁻³ and β_HCD ~ N(0.5, 0.09); all others uniform; best fits ×10³: Si II(1190) −4.50 ± 0.64, Si II(1193) −3.05 ± 0.63, Si II(1260) −4.02 ± 0.62, Si III(1207) −9.79 ± 0.68; b_HCD = −0.0563 (+0.0045/−0.0036), L_HCD = 6.51 h⁻¹Mpc; Δr_∥ = 0.066 ± 0.058 h⁻¹Mpc, σ_z = 3.67 ± 0.14 h⁻¹Mpc; ξ_0^TP = 0.395 ± 0.051; 10⁴ a_noise = 3.54 ± 0.16 | [src: Appendix B, Table 5] |
+| Correlation with nuisance parameters | BAO parameters "not strongly correlated with any of the nuisance parameters" | [src: Appendix B, Fig. 14] |
+
+### G3. eBOSS DR16 Lyα BAO (arXiv:2007.08995)
+<!-- key: g3-eboss-dr16-lyalpha-bao-arxiv-2007-08995 -->
+
+| Item | Size or practice | Place read |
+|---|---|---|
+| Mock validation design | 10 realisations of four contamination levels (raw; + continuum + noise; + metals; + HCDs + quasar redshift errors) for each of the four correlation functions; 90 more for two levels, to test biases ten times below the statistical error | [src: Sect. V.4] |
+| Mean α on mocks, all four functions combined | raw 1.009 / 0.995; + continuum + noise 1.005 / 0.992; + metals 1.010 / 0.989; + HCDs + σ_v 1.005 / 0.998 (α_∥ / α_⊥, mean σ 0.019 / 0.023 at the last level) | [src: Table 4] |
+| β_Lyα on mocks | 1.628 (raw) → 1.553 (+ continuum + noise) → 1.464 (+ HCDs + σ_v): contaminants bias β, not α | [src: Table 4] |
+| ρ(α_∥, α_⊥) on mocks | −0.572 (auto), −0.470 (cross), −0.615 (auto Lyβ), −0.347 (cross Lyβ); zero between different functions | [src: Table 5] |
+| HCD masking | DLAs with log N_HI > 20.3 masked in data; in mocks, input HCDs above 20.3 corrected and pixels with > 20% absorption masked; detected versus input DLA parameters give "nearly identical results" | [src: Sect. V.4] |
+| Alternative analyses | BAO stable once metals are in the model, also with broadband polynomials; bias parameters change with HCD and broadband terms; other quasar-redshift estimators move the cross-correlation BAO by ≤ 0.5σ; distortion matrix to 300 h⁻¹Mpc or on a finer grid has no important effect; only the two-redshift-bin split differs by ~1σ, as expected for independent samples | [src: Appendix D] |
+| Errors reported | statistical only (abstract; see `results.md`) | [src] |
+
+### G4. DESI DR1 P1D, FFT estimator (arXiv:2505.09493)
+<!-- key: g4-desi-dr1-p1d-fft-estimator-arxiv-2505-09493 -->
+
+Budget per (k, z) bin, all terms added in quadrature; P1D is then "dominated by systematic errors for most redshifts and wavenumbers", the statistical errors having dropped by a factor 2.6–3 relative to EDR [src: Sect. 6.2, Fig. 11].
+
+| Term | Treatment and size | Place read |
+|---|---|---|
+| Noise level | removed from the budget: the cross-exposure estimator measures the noise from the data | [src: Sect. 6.2] |
+| Resolution damping | σ = 2 k² Δλ σ_Δλ P1D, with a conservative 1% absolute error on the effective resolution Δλ (PSF stability) | [src: Sect. 6.2] |
+| Resolution correction | multiplicative correction A_res from image simulations; error 30% of |A_res − 1| | [src: Sect. 6.2] |
+| Metals | side-band (SB1) power subtracted via a fit; error equal to the statistical error of the side-band power | [src: Sect. 6.2] |
+| Continuum fitting | multiplicative correction A_cont from DR1-like mocks; 30% relative error | [src: Sect. 6.2] |
+| Masking (DLA, BAL with AI > 0, sky lines) | multiplicative corrections A_dla, A_bal, A_line; 30% relative error, 6% for BAL masking | [src: Sect. 6.2] |
+| Undetected DLAs | ratio of masked to unmasked P1D fitted with the Rogers et al. 2018 form; 20% finder incompleteness assumed | [src: Sect. 6.2] |
+| Undetected BALs | same method, 15% incompleteness | [src: Sect. 6.2] |
+| Why 30% | the standard deviation of a uniform 0–100% shift of a correction; called "very conservative"; mock-to-mock scatter judged too small | [src: Sect. 6.2] |
+| Correlations between k bins | not modelled in the measurement paper; deferred to the inference | [src: Sect. 6.2] |
+
+### G5. DESI DR1 P1D, optimal (QMLE) estimator (arXiv:2505.07974)
+<!-- key: g5-desi-dr1-p1d-optimal-qmle-estimator-arxiv -->
+
+Five major systematics, budget shown per redshift bin after the continuum correction [src: Sect. 4.4, Fig. 4].
+
+| Term | Treatment and size | Place read |
+|---|---|---|
+| DLAs | largest systematic on large scales; catalogue completeness and purity ~85%; error from a fit (Eq. 7) to the ratio of unmasked to masked P1D; a high-confidence catalogue gives results "entirely consistent" with the baseline | [src: Sect. 4.4.1, Fig. 5] |
+| BALs | catalogue completeness ~80% at S/N > 2.5; unmasked-BAL effect ten times smaller than for DLAs; error for 20% incompleteness | [src: Sect. 4.4.2] |
+| Continuum fitting | ≲ 1% bias on all scales, detected only on the stack of 20 DR1 mocks up to z = 3.8; corrected, 30% of the correction kept as a correlated error; tabulated as 10³ b_cont = a + b x with x = k/(0.009 s/km), e.g. 6.768 − 0.699x (z = 2.2), 6.206 − 0.101x (z = 3.0), 10.825 + 0.172x (z = 3.6), 7.599 − 0.059x (z = 3.8) | [src: Sect. 4.4.3; App. B, Table 3] |
+| Resolution | image simulations of ~675,000 z > 2.3 quasars (150 tiles) find resolution biases b_res ≈ 1.5%, dominating at k ≳ 0.01 s/km; error b_res × 2k²R_z² P1D; for a fit, a free b_res with Gaussian prior σ = 1.5% | [src: Sect. 4.4.4] |
+| Noise | pipeline-variance calibration errors that differ between CCD amplifiers; budget from 20 one-amplifier-removed jackknifes; a feature at k = 0.009 s/km follows a fixed 9.6 Å oscillation traced to CCD zero images | [src: Sect. 4.4.5, Fig. 6] |
+| Cross-exposure version (xQMLE) | all terms except noise | [src: Fig. 4 caption] |
+
+### G6. DESI DR1 Lyα full shape (arXiv:2509.15308)
+<!-- key: g6-desi-dr1-lyalpha-full-shape-arxiv-2509-15308 -->
+
+| Item | Size or practice | Place read |
+|---|---|---|
+| Blinding | random offsets added to φ_s and f inside the likelihood (σ = 0.02 from eBOSS for φ_s; forecast σ_f = 0.14); actual offsets −0.020 and +0.02; baseline choices and validation fixed blind | [src: Sect. II.4] |
+| Mocks | the DR1 BAO suite: 100 LyaCoLoRe + 50 Saclay lognormal mocks; mock model drops sky residuals, C IV, transverse proximity and BAO broadening (absent from the mocks) and adds two smoothing parameters | [src: Sect. IV.1] |
+| Scale cuts from mocks | scales below 20 h⁻¹Mpc bias φ_f by more than 2σ in both suites; fσ8 biased with cross-correlation scales below 35 h⁻¹Mpc (LyaCoLoRe); Saclay mocks consistent at 2σ only with both functions above 50 h⁻¹Mpc, through larger errors rather than a smaller shift | [src: Sect. IV.1] |
+| Decision | taken before unblinding: only AP fully validated; fσ8 shown but not used, because the two mock suites disagree and the RSD of the cross-correlation relies on the auto-correlation calibration | [src: Sects. II.4, V] |
+
+### G7. DESI DR2 Lyα full shape (arXiv:2607.27411, arXiv:2607.27410)
+<!-- key: g7-desi-dr2-lyalpha-full-shape-arxiv-2607-27411 -->
+
+| Item | Size or practice | Place read |
+|---|---|---|
+| Mocks | 400 CoLoRe-2LPT realisations (stack); AbacusSummit mocks as a cross-check; mocks lack UV fluctuations, C IV, sky residuals and proximity effect, so these terms are removed from the mock model | arXiv:2607.27411 [src: Sect. IV.2] |
+| Threshold | one third of the DR2 statistical error, ~0.38% on φ_s for the adopted cuts | arXiv:2607.27411 [src: Sect. IV.2] |
+| Scale cuts | φ_s within threshold for r_min ≥ 25 h⁻¹Mpc (auto) and ≥ 40 h⁻¹Mpc (cross) on CoLoRe-2LPT; AbacusSummit converges for r_min ≥ 30 jointly; adopted 30 (auto) and 40 (cross) | arXiv:2607.27411 [src: Sect. IV.2, Fig. 2] |
+| Kaiser vs Arinyo small-scale terms | no significant difference on mocks; Arinyo q_1 consistent with zero | arXiv:2607.27411 [src: Sect. IV.2] |
+| Mock biases | α_p and φ_s consistent with truth; φ_p biased by 0.6% at ~5σ on the stack, same sign and size as AbacusSummit, within threshold | arXiv:2607.27411 [src: Sect. VI.1] |
+| fσ8 | 10% bias at ≫ 5σ on mocks, not removed by any reasonable model or scale-cut change; data error from the fitter ~40% larger than mock errors; unstable under modelling of α_s, proximity effect and UV fluctuations → de-scoped | arXiv:2607.27411 [src: Sects. IV.3, VI.1, App. C.1] |
+| Population test | pulls of α_p, φ_p, φ_s close to a unit Gaussian (φ_p slightly shifted); fitter (Gaussian-approximated) errors slightly underestimate the RMS of best fits | arXiv:2607.27411 [src: Sect. IV.3, Fig. 6] |
+| Consequence for the BAO budget | the non-linear shift is mainly anisotropic, so the full-shape paper replaces the isotropic 0.3% by Δα_p = 0.15% and Δφ_p = 0.8% (see D1) | arXiv:2607.27411 [src: Sect. VI.1]; arXiv:2607.27410 [src: Sect. 5.2] |
+
+### G8. DESI DR1 P1D cosmology (arXiv:2601.21432)
+<!-- key: g8-desi-dr1-p1d-cosmology-arxiv-2601-21432 -->
+
+Contaminants are modelled multiplicatively on the emulator's Lyα-only P1D: P1D^cont = [(1 + C_Lyα–SiIII + C_Lyα–SiII + C_SiII–SiIII) C_HCD P1D^emu + C_SiII–SiII] C_res (Eq. 13); per redshift 8 metal, 5 HCD, 1 resolution and 6 emulator parameters, 20 in all; the model is evaluated on a k grid eight times finer and rebinned so that metal oscillations are not smoothed [src: Sect. 4.4].
+
+| Term | Model and size | Place read |
+|---|---|---|
+| HCDs | four classes after Rogers et al. 2018 (LLS 1.6 × 10¹⁷–10¹⁹, sub-DLA 10¹⁹–2 × 10²⁰, small DLA 2 × 10²⁰–10²¹, large DLA > 10²¹ cm⁻²); C_HCD = 1 + f_norm + Σ f_i [a_i(z) e^(b_i(z) k_∥) − 1]⁻² with a, b fixed to Rogers et al. and f_i free; the DESI finder is ≃ 70% complete above 2 × 10²⁰ cm⁻² at S/N > 2, so LLSs, sub-DLAs and missed DLAs remain | [src: Sect. 4.2, Eq. 11] |
+| Resolution | marginalised instead of put in the covariance: C_res = 1 + 2 f_res R_z² k_∥², one f_res per redshift (to absorb e.g. the blue–red channel transition), expected bias a few per cent | [src: Sect. 4.3, Eq. 12] |
+| Effect on the errors | LLS, Si II–Si II and emulator errors inflate the compressed-parameter errors by ~50%, 20%, 25% (see B1, B2, E) | [src: Sects. 6.2, 8] |
+
 ## Referee checklist for a Lyα results section
 <!-- key: referee-checklist-for-a-lyalpha-results-section -->
 
@@ -264,3 +385,10 @@ is in neither.
 10. Validation on synthetic spectra and image simulations, with the number of realisations.
 11. Blinding: what was blinded and when it was lifted (A4).
 12. For P1D cosmology: emulator, simulation suite, thermal-history parameterisation and priors, and whether the result holds with a second emulator (E).
+
+## Not verified
+<!-- key: not-verified -->
+
+- Per-redshift numerical systematic budgets of the DESI DR1 P1D measurements: both papers show them as figures (FFT Fig. 11, QMLE Fig. 4), not tables; only the rules and the continuum-bias table were read.
+- The blinding method of the DESI DR2 BAO analysis (the paper states that tests were passed before unblinding but the method was not found in the passages read).
+- The Lorentzian form of the cross-correlation damping X_NL as an equation (not rendered in the DR1 full-shape HTML).

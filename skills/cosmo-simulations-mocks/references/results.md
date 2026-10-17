@@ -1,20 +1,22 @@
 # Quantified results — cosmological simulations and mocks
 
 Scope: the numbers a referee needs — code-comparison agreement, emulator and fast-method accuracy with k and z range, baryonic suppression of P(k) per suite, mock counts used by surveys.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-13
 
 ## 1. Code-comparison agreement levels
 <!-- key: code-comparison-agreement-levels -->
 
 | Comparison | Set-up | Agreement | Reference, flag |
 |---|---|---|---|
-| RAMSES, PKDGRAV3, GADGET-3 (Euclid code comparison) | one set of initial conditions, standard run parameters | P(k) within 1% at k ≤ 1 h/Mpc and within 3% at k ≤ 10 h/Mpc; reduced bispectra within less than 1% at k ≤ 2 h/Mpc | Schneider et al. 2015, arXiv:1503.05920 [src] |
+| Ten codes (Cosmic Code Comparison Project) | common initial conditions in small boxes | P(k) and mass function at the 10% level over wide ranges | Heitmann et al. 2007, arXiv:0706.1270 [src] |
+| RAMSES, PKDGRAV3, GADGET-3 (Euclid code comparison) | one set of initial conditions (2LPT at z = 49), L = 500 Mpc/h, 2048³ particles, standard run parameters | P(k) within 1% at k ≤ 1 h/Mpc at z = 0 to 3.8, and within 3% at k ≤ 10 h/Mpc for z ≤ 1 (about 5% at z = 2, 10% at z = 3.8); largest scales within about 0.4%; reduced bispectra within less than 1% at k ≤ 2 h/Mpc | Schneider et al. 2015, arXiv:1503.05920 [src: Sects. 2.1 and 2.3, Fig. 1; bispectrum from the abstract] |
+| GADGET-4, PKDGRAV3, Abacus, RAMSES on the Euclid comparison box | reruns by the code authors | P(k) within 0.4% up to k about 2 h/Mpc and 2% up to k about 10 h/Mpc at z = 0; stacked profiles of the 25 most massive haloes within a percent down to 10 kpc/h | [sec: arXiv:2112.05165, Sect. 8.5 and Fig. 24, after Springel et al. 2020] |
 | Abacus on the same initial conditions | 2048³ particles, 500 Mpc/h, m_p = 1.2 × 10⁹ M_⊙/h, 10 kpc/h spline softening | good agreement with RAMSES and PKDGRAV3, "less so" with GADGET-3; halving the time step changes P(k) by less than 0.3% at k < 10 h/Mpc; linear theory reproduced to better than 0.01% on large scales | Garrison et al. 2018, arXiv:1810.02916 [src] |
-| Abacus, GADGET, SWIFT (DESI N-body project) | matched phases; particle masses 6.25 × 10⁸, 2.11 × 10⁹ and 5.00 × 10⁹ M_⊙/h | matter P(k) within 1% for k ≤ 10 h/Mpc; code differences in halo clustering below the DESI statistical error for s > 20 Mpc/h in redshift space; 2.1 × 10⁹ M_⊙/h is converged for halo clustering at these scales | Grove et al. 2021, arXiv:2112.09138 [src] |
+| Abacus, GADGET, SWIFT (DESI N-body project) | matched phases from z = 199; 1296³, 1728³ and 2592³ particles, particle masses 6.25 × 10⁸, 2.11 × 10⁹ and 5.00 × 10⁹ M_⊙/h; compared at z = 1 and z = 2 | matter P(k) within 1% for k ≤ 10 h/Mpc (0.1% at k < 0.1 h/Mpc); between resolutions of one code 1% at k = 2 and 4% at k = 10 h/Mpc; mass functions within 1% for 10¹²–10¹³·⁵ M_⊙/h; code differences in halo clustering below the DESI statistical error for s > 20 Mpc/h in redshift space (year-5 error; year-1 error above 10 Mpc/h); 2.1 × 10⁹ M_⊙/h is converged for halo clustering at these scales | Grove et al. 2021, arXiv:2112.09138 [src: Sects. 3.2, 4.2 and 5.2] |
 | GINKAKU against GADGET, PKDGRAV3, RAMSES | shared initial conditions | differences in the non-linear P(k) below about 1% after tuning accuracy parameters; inter-resolution spread of the halo mass function reduced to about 1% by the post-processing pipeline | Nishimichi et al. 2026, arXiv:2605.28581 [src] |
 | Aemulus internal convergence | 1.05 Gpc/h boxes, 3.51 × 10¹⁰ M_⊙/h | statistics converged to 1% (2%) for halos with more than 500 (200) particles, for r > 200 kpc/h or k about 3 h/Mpc, z ≤ 1 | DeRose et al. 2018, arXiv:1804.05865 [src] |
 
-The two headline code-comparison numbers are not the same statement. Schneider et al. 2015 (1% to k = 1, 3% to k = 10) compared three codes at "standard run parameters"; Grove et al. 2021 (1% to k = 10) compared three other codes with settings chosen for DESI. The improvement between them reflects tuned accuracy parameters as much as better codes, as the GINKAKU paper states explicitly.
+Sizes with their conditions are in `systematics.md` §2. The two headline code-comparison numbers are not the same statement. Schneider et al. 2015 (1% to k = 1, 3% to k = 10) compared three codes at "standard run parameters"; Grove et al. 2021 (1% to k = 10) compared three other codes with settings chosen for DESI. The improvement between them reflects tuned accuracy parameters as much as better codes, as the GINKAKU paper states explicitly.
 
 Requirements derived from the Euclid comparison [src] (arXiv:1503.05920): a box of at least 0.5 Gpc/h to avoid systematic finite-volume effects on P(k), and a particle mass of at most 10⁹ M_⊙/h for 1% precision on the matter power spectrum. Covering survey volumes at that resolution needs more than a trillion particles.
 
@@ -25,8 +27,8 @@ All figures are the authors' statements about agreement with simulations of the 
 
 | Emulator | Quantity | Accuracy | k range | z range | Parameters | Reference, flag |
 |---|---|---|---|---|---|---|
-| EuclidEmulator2 | non-linear correction to the matter power spectrum | 1% or better | 0.01–10 h/Mpc | z ≤ 3 | eight: w0waCDM + Σm_ν | arXiv:2010.11288 [src] |
-| Mira-Titan IV emulator | matter power spectrum | 2–3% | "wide range" (limits not in the abstract) | n/a | eight: {ω_m, ω_b, σ_8, h, n_s, w_0, w_a, ω_ν} | arXiv:2207.12345 [src] |
+| EuclidEmulator2 | non-linear correction to the matter power spectrum | 1% or better, measured on three validation cosmologies inside the ellipsoid inscribed in the parameter box [src: Sect. 8.2.1] | 0.01–10 h/Mpc | z ≤ 3 | eight: w0waCDM + Σm_ν | arXiv:2010.11288 [src] |
+| Mira-Titan IV emulator | matter power spectrum | 2–3% (abstract); better than 2% on five of six test models outside the design, 2.48% for the one at the edge of the dark-energy region [src: Sect. 4.1] | "wide range" (limits not in the abstract) | 0 ≤ z ≤ 2.02 [src: Sect. 2.1] | eight: {ω_m, ω_b, σ_8, h, n_s, w_0, w_a, ω_ν} | arXiv:2207.12345 [src] |
 | BACCO | matter power spectrum | 2% in ΛCDM, 3% with dynamical dark energy and neutrinos | 0.01–5 h/Mpc | 0 < z < 1.5 | eight | arXiv:2004.06245 [src] |
 | Aemulus ν | matter power spectrum and hybrid-EFT spectra | ≤ 1% for k ≤ 1 h/Mpc; ≤ 2% for k ≤ 4 h/Mpc (matter) | as stated | 0 ≤ z ≤ 3 | wνCDM | arXiv:2303.09762 [src] |
 | Dark Emulator | halo–matter cross-correlation; halo auto-correlation | better than 2%; better than 4% (CMASS-like haloes) | configuration space | 0–1.48 | flat wCDM, 101 models | arXiv:1811.09504 [src] |
@@ -37,7 +39,7 @@ All figures are the authors' statements about agreement with simulations of the 
 | Baryonification, 2+1 parameters | baryonic response of FLAMINGO and TNG | better than 2.5% | survey-relevant scales | survey-relevant redshifts | 3 | arXiv:2507.07892 [src] |
 | LaCE, ForestFlow, PRIYA, Lyssa | Lyα P1D and P3D | see §6 | | | | |
 
-MillenniumTNG compares its runs with these emulators as an external check (arXiv:2210.10059; no number in the abstract). EuclidEmulator2 passed a blind test against Flagship v2.0 [src] (arXiv:2010.11288).
+Emulators against each other: EuclidEmulator2 and BACCO within about 1% at the Euclid reference cosmology and mostly within 3% over 47 cosmologies at z = 0; EuclidEmulator2 and the Mira-Titan II emulator with a scatter of about 5% over 84 cosmologies [src: Sects. 8.2.5 and 8.2.6 of arXiv:2010.11288]; EuclidEmulator2 within about 3% of a Mira-Titan ΛCDM simulation [src: Sect. 4.2.2 of arXiv:2207.12345]. MillenniumTNG compares its runs with these emulators as an external check (arXiv:2210.10059; no number in the abstract). EuclidEmulator2 passed a blind test against Flagship v2.0 [src] (arXiv:2010.11288).
 
 The gravity-only emulators are quoted at 1–3% while the baryonic response at k = 1 h/Mpc is 5–10% and uncertain by a factor of two (§4). Beyond k of a few tenths h/Mpc the error budget of a matter power spectrum prediction is set by baryons, not by the emulator.
 
@@ -59,9 +61,19 @@ The gravity-only emulators are quoted at 1–3% while the baryonic response at k
 | EZmocks for eBOSS | two-point statistics of data against mocks | within 1σ | down to a few Mpc/h; up to k = 0.3 h/Mpc; cross-correlations discrepant in Fourier space above 0.15 h/Mpc | arXiv:2007.08997 [src] |
 | GLASS | two-point statistics of clustering and lensing | percent level | full-sky shells | arXiv:2302.01942 [src] |
 | CoLoRe-2LPT | Lyα bias, β, mean flux, P1D | within 10% of the DESI measurement; quasar linear bias within 5% | z > 2 | arXiv:2607.27412 [src] |
-| FastPM against Abacus, GADGET, SWIFT | included in the DESI comparison | see arXiv:2112.09138 (numbers for FastPM not in the abstract) | — | arXiv:2112.09138 |
+| FastPM against Abacus, GADGET, SWIFT | matter P(k) | departs at the 1% level | k > 0.5 h/Mpc, z = 1 and 2; force-mesh factor 2, 46 steps | arXiv:2112.09138 [src: Sects. 3.1.4 and 5.2] |
+| EZmocks, original method | halo P(k) and ξ against N-body; bispectrum | 1%; 20% | k ≤ 0.55 h/Mpc, r ≥ 10 Mpc/h | arXiv:1409.1124 [src] |
+| PATCHY | halo P(k), real and redshift space | about 2% | k ≲ 1 h/Mpc, z = 0.577, CMASS-like density | arXiv:1307.3285 [src] |
+| L-PICOLA | matter P(k); reduced bispectrum | 2%; 5% | z = 0, BAO and RSD scales | arXiv:1506.03737 [src] |
+| COLA, 10 steps (WiggleZ mocks) | velocity power spectrum | no systematic error for k < 0.15 h/Mpc; 3% for k < 0.2 h/Mpc | 10¹² M_⊙ haloes | arXiv:1507.05329 [src] |
+| PINOCCHIO | halo mass function | better than 10% | haloes of at least 30–50 particles | arXiv:astro-ph/0109323 [src] |
+| nIFTy comparison | quadrupole of ξ and P(k) | 1% only for the semi-N-body method | r < 25 Mpc/h, k > 0.15 h/Mpc | arXiv:1412.7729 [src] |
+| Seven approximate methods, correlation-function covariance | parameter errors | within 5% (lower mass threshold), 10% (higher); up to 20% depending on how the halo sample is matched | z = 1 | Lippich et al. 2018, arXiv:1806.09477 [src] |
+| Same, power-spectrum covariance, body | parameter errors | 5% for most methods on cosmological parameters; 10% for all but lognormal; test resolution 4–5% | periodic boxes, z = 1, 300 mocks per method | arXiv:1806.09497 [src: Sect. 6] |
+| Same, bispectrum covariance | errors on bias parameters | within 10% except methods calibrated on two-point statistics only | — | Colavincenzo et al. 2018, arXiv:1806.09499 [src] |
+| DESI DR1 EZmock covariance against a data-tuned analytic one | variance | too small by 10–40% depending on the sample; corrected by rescaling | configuration space | arXiv:2411.12027 [src: Sect. 4] |
 
-The 10% on parameter errors is the number to quote when a referee asks how well an approximate-mock covariance is known. It is of the same order as the finite-mock corrections (10% on the error bar for 100 data points and 1000 mocks, according to `cosmo-statistics-inference`), so both must be stated.
+The 10% on parameter errors is the number to quote when a referee asks how well an approximate-mock covariance is known in a periodic box; on a real survey the one measured case, DESI DR1, needed a rescaling of 10 to 40% (last row). It is of the same order as the finite-mock corrections (10% on the error bar for 100 data points and 1000 mocks, according to `cosmo-statistics-inference`), so both must be stated.
 
 ## 4. Baryonic suppression of the matter power spectrum
 <!-- key: baryonic-suppression-of-the-matter-power -->
@@ -71,6 +83,10 @@ The quantity is the response R(k) = P_hydro(k) / P_gravity-only(k) of the total 
 | Simulation or data | Suppression | Scale | Reference, flag |
 |---|---|---|---|
 | OWLS AGN run | 1% at k about 0.3, 10% at k about 1, 30% at k about 10 h/Mpc; cooling raises power only for k > 70 h/Mpc | z = 0 | van Daalen et al. 2011, arXiv:1104.1174 [src] |
+| Non-radiative and cooling-plus-star-formation runs, no AGN | suppression of at most 1% at 1 < k < 10 h/Mpc; boost of 2% and 10% at k about 20 h/Mpc | not stated | Jing et al. 2005, arXiv:astro-ph/0512426 [src] |
+| Homogenised comparison of BAHAMAS, OWLS AGN, EAGLE, Illustris, TNG100, TNG300, Horizon-AGN | all suppress over 1 < k < 20 h/Mpc, by 10–30% at k = 10 h/Mpc; cross-over between k = 20 and 100 h/Mpc | z = 0 | van Daalen et al. 2019, arXiv:1906.00968 [src: Sect. 3.8, Fig. 14] |
+| FLAMINGO, where the minimum sits | k = 8–10 h/Mpc at z = 0 for all gas-fraction variations; k = 6 h/Mpc at z = 2 for the fiducial model | z = 0–2 | arXiv:2410.17109 [src: Sects. 3.2 and 4.1.1] |
+| CAMELS Latin hypercubes | P_hydro/P_Nbody reaches about 50% at k about 10 h/Mpc in strong-feedback runs | z = 0, 25 Mpc/h boxes | arXiv:2010.00619 [src: Sect. IV.1.3] |
 | Horizon-AGN | less than 15% at k about 10 h/Mpc; smaller than other simulations, read by the authors as AGN feedback that is not strong enough | z = 0 | Chisari et al. 2018, arXiv:1801.08559 [src] |
 | IllustrisTNG | total matter power damped by up to 20% on scales up to k about 10 h/Mpc | redshift not stated in the abstract | Springel et al. 2017, arXiv:1707.03397 [src] |
 | FLAMINGO (suite paper) | halo mass function and matter power spectrum suppressed by up to about 20% | hydrodynamical against dark-matter-only | Schaye et al. 2023, arXiv:2306.04024 [src] |
@@ -90,7 +106,7 @@ How the suites compare with gas observations, 2024–2026:
 
 The last two rows disagree on whether fiducial FLAMINGO is excluded. This is the live debate recorded in `open-questions.md` §1.1; the sibling skills `cosmo-weak-lensing` and `cosmo-cmb-lss-cross-correlations` quote the same four papers with the same numbers.
 
-What controls the suppression: the mean baryon fraction of groups predicts the z = 0 effect to 1% for k < 1 h/Mpc across OWLS, cosmo-OWLS and BAHAMAS [src] (arXiv:1906.00968), and to about the percent level for k ≲ 10 h/Mpc and z ≤ 3 across ANTILLES [src] (arXiv:2305.09710). Differences in group baryon fractions explain the quantitative disagreement between older predictions [src] (arXiv:1906.00968).
+What controls the suppression: the mean baryon fraction of groups predicts the z = 0 effect to 1% for k < 1 h/Mpc across OWLS, cosmo-OWLS and BAHAMAS [src] (arXiv:1906.00968; the fitted relation and its limits are in `systematics.md` §3), and to about the percent level for k ≲ 10 h/Mpc and z ≤ 3 across ANTILLES [src] (arXiv:2305.09710). Differences in group baryon fractions explain the quantitative disagreement between older predictions [src] (arXiv:1906.00968).
 
 ## 5. Mock counts used by surveys
 <!-- key: mock-counts-used-by-surveys -->
@@ -155,6 +171,7 @@ The two local-density statements come from different inferences on overlapping d
 Each line gives the sequence in time, so that a reader can tell which statement is the current one.
 
 **Agreement between N-body codes on the matter power spectrum.**
+- 2008: 10% between ten codes (arXiv:0706.1270); differences of more than 10% at k about 10 h/Mpc between mesh and tree codes, as recalled in arXiv:1503.05920, Sect. 2.3.
 - 2016: 1% to k = 1 h/Mpc and 3% to k = 10 h/Mpc, three codes at standard settings (arXiv:1503.05920).
 - 2019: Abacus on the same initial conditions; time-step convergence below 0.3% to k = 10 h/Mpc (arXiv:1810.02916).
 - 2022: 1% to k = 10 h/Mpc for Abacus, GADGET and SWIFT with DESI settings (arXiv:2112.09138). This is the figure to quote today, with its condition.
@@ -169,11 +186,15 @@ Each line gives the sequence in time, so that a reader can tell which statement 
 - 2025: data-driven 10 ± 2% from kSZ and eROSITA, against 5 ± 4% from the older X-ray sample (arXiv:2512.02954). Current, and disputed (arXiv:2609.22466).
 
 **Gravity-only emulator accuracy.**
+- 2003–2012: fitting functions, HALOFIT (arXiv:astro-ph/0207664) and its revision at 5% for k ≤ 1 h/Mpc and 10% for 1 ≤ k ≤ 10 h/Mpc (arXiv:1208.2701).
+- 2009–2010: Coyote emulator, 1% to k about 1 h/Mpc over wCDM (arXiv:0912.4490).
+- 2017: Mira-Titan II, about 4% over eight parameters (arXiv:1705.03388).
 - 2019–2021: 2–4% for halo statistics (arXiv:1811.09504); 2–3% for BACCO to k = 5 h/Mpc (arXiv:2004.06245); 1% for EuclidEmulator2 to k = 10 h/Mpc (arXiv:2010.11288).
 - 2023: 2–3% for the final Mira-Titan emulator over eight parameters (arXiv:2207.12345); 1% to k = 1 h/Mpc for Aemulus ν (arXiv:2303.09762).
 - 2026: a nine-parameter emulator of the Dark Quest II programme reports sub-percent accuracy to the particle Nyquist scale (abstract read; outside the source list).
 
 **Covariance mocks for spectroscopic surveys.**
+- BOSS DR9: 600 PTHalos mocks (arXiv:1203.6609). BOSS DR12: 12,288 MultiDark-Patchy light-cones (arXiv:1509.06400).
 - eBOSS DR16: 1000 EZmocks per tracer (arXiv:2007.08997).
 - DESI DR1: 1000 EZmocks per Galactic cap, used directly for the full shape and as validation of an analytic covariance for BAO (arXiv:2411.12027).
 - DESI DR1 peculiar velocities: 675 (arXiv:2512.03228).
@@ -198,11 +219,10 @@ Each line gives the sequence in time, so that a reader can tell which statement 
 ## Not verified
 <!-- key: not-verified -->
 
-- k and z limits of the Mira-Titan IV emulator (the abstract says "wide range").
-- Numerical accuracy of FastPM in the DESI code comparison (arXiv:2112.09138 abstract gives none).
-- Mock counts behind the DES and Euclid covariances, and the DES choice of an analytic covariance: a DES Y3 covariance paper was read this session but lies outside the source list; see `cosmo-weak-lensing` and `cosmo-statistics-inference`.
-- The BOSS MultiDark-Patchy count (12,288 DR12 light-cones in the abstract read) is outside the source list.
+- k limits of the Mira-Titan IV emulator: not found in the sections read (the abstract says "wide range"); its redshift range is now in §2.
+- Mock counts behind the DES and Euclid covariances, and the DES choice of an analytic covariance: a DES Y3 covariance paper was read during the first build but lies outside the source list; see `cosmo-weak-lensing` and `cosmo-statistics-inference`.
 - Number of CoLoRe-2LPT realisations used for DESI DR2.
 - Quantitative results of arXiv:2511.20423 on box replication.
 - The sub-percent figure of the 2026 Dark Quest II emulator, the 2% of a 2025 COLA-based w0wa emulator against EuclidEmulator2, and the percent-level field-level emulator inside BORG were read in abstracts of papers outside the source list.
-- Baryonic suppression in EAGLE, BAHAMAS, SIMBA and MillenniumTNG individually: no number was read at source for these four.
+- Baryonic suppression at k = 1 h/Mpc in EAGLE, BAHAMAS, SIMBA and MillenniumTNG individually: only their ordering was read (arXiv:2306.04024, Sect. 8; arXiv:1906.00968, Sect. 3.8), not a number for each.
+- The per-sample values of the DESI DR1 covariance rescaling (the paper refers to two companion papers for them).

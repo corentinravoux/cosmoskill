@@ -3,7 +3,7 @@
 Scope: what the CMB temperature and polarisation spectra and the lensing
 reconstruction measure, the estimators and likelihoods used by Planck, ACT and
 SPT-3G, the codes, and the conventions that differ between collaborations.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-14
 
 Provenance flags: `[src]` read this session in the cited paper; `[sec]` taken
 from a named secondary source; `[der]` derived here, derivation stated.
@@ -16,7 +16,11 @@ The CMB is described by three Stokes fields on the sphere, T, Q and U. The
 temperature field is expanded in spherical harmonics, T(n) = Σ a_ℓm Y_ℓm(n),
 and the spin-2 combination Q ± iU is expanded in spin-weighted harmonics and
 rotated into the scalar E and pseudo-scalar B fields (Zaldarriaga & Seljak
-1996, arXiv:astro-ph/9609170). For statistically isotropic Gaussian fields
+1996, arXiv:astro-ph/9609170). The equivalent tensor-harmonic formalism is
+Kamionkowski et al. 1996 (arXiv:astro-ph/9611125), who note that for
+scalar perturbations one of the four sets of multipole moments vanishes
+identically, which allows a clean determination of vector and tensor
+contributions [src]. For statistically isotropic Gaussian fields
 all information is in the angular power spectra
 
     ⟨a^X_ℓm a^Y*_ℓ'm'⟩ = δ_ℓℓ' δ_mm' C_ℓ^XY ,   X, Y ∈ {T, E, B}.
@@ -40,7 +44,8 @@ calibrators of satellite data, and ground experiments inherit them by
 cross-calibrating against Planck maps on their own footprint (Louis et al.
 2025, arXiv:2503.14452; Camphuis et al. 2025, arXiv:2506.20707).
 
-Standard review: Hu & Dodelson 2001, arXiv:astro-ph/0110414. For lensing:
+Reviews: Hu & Dodelson 2001, arXiv:astro-ph/0110414; Challinor & Peiris
+2009, arXiv:0903.5158 (lecture notes, incl. reionisation secondaries). For lensing:
 Lewis & Challinor 2006, arXiv:astro-ph/0601594. For polarisation as a probe
 of new physics (birefringence, tensor modes): Komatsu 2022, arXiv:2202.13919.
 
@@ -81,6 +86,22 @@ between tables that use the same code definition.
 | Reconstructed C_L^φφ | σ₈ Ω_m^0.25 | The "four-point" lensing signature |
 | Tilt across the whole range | n_s | Needs lever arm; degenerate with Ω_b h² on restricted ranges |
 
+Foundations of the table [src, abstracts]. The peaks are driven acoustic
+oscillations of the photon–baryon fluid, and an analytic treatment
+reproduces the spectra to 5–10% on all scales (Hu & Sugiyama 1994,
+arXiv:astro-ph/9407093); baryon drag produces the alternating peak heights,
+and the acoustic amplitudes and diffusion damping lengths are set by the
+cosmological parameters (Hu & Sugiyama 1995, arXiv:astro-ph/9510117). The
+linear Boltzmann hierarchy for all species in the synchronous and
+conformal Newtonian gauges, with a phase-space treatment of photons and
+neutrinos, is Ma & Bertschinger 1995 (arXiv:astro-ph/9506072); the
+line-of-sight integration that makes spectra fast to compute, a geometric
+term times a source term, is Seljak & Zaldarriaga 1996
+(arXiv:astro-ph/9603033). Reionisation creates new peaks in the
+polarisation spectrum whose position scales as the square root of the
+reionisation redshift and whose amplitude is proportional to τ (Zaldarriaga
+1996, arXiv:astro-ph/9608050).
+
 Points worth holding precisely, all from the ACT DR6 paper (Louis et al.
 2025, arXiv:2503.14452) [src]:
 
@@ -115,6 +136,11 @@ lensing multipoles.
 Lensing has three observable consequences: it smooths the acoustic peaks and
 adds power in the damping tail of TT, TE and EE; it converts E into B; and
 it correlates modes of different ℓ, which is what reconstruction exploits.
+The first two were computed in the power-spectrum approach by Seljak 1995
+(arXiv:astro-ph/9505109): lensing redistributes power and smooths sharp
+features [src]. For polarisation the smoothing is larger because the peaks
+are narrower, up to 10% at ℓ < 1000, and lensing generates B modes from
+pure E (Zaldarriaga & Seljak 1998, arXiv:astro-ph/9803150) [src].
 
 ### Quadratic estimators
 <!-- key: quadratic-estimators -->
@@ -131,6 +157,18 @@ biases that must be subtracted:
 
     ⟨|φ̂_L|²⟩ = C_L^φφ + N_L^(0) + N_L^(1) + foreground and MC terms.
 
+The full-sky minimum-variance estimators for T and polarisation, with
+real-space products in place of harmonic convolutions, are Okamoto & Hu
+2003 (arXiv:astro-ph/0301031) [src]. Kesden et al. 2003
+(arXiv:astro-ph/0302536), the reference ACT gives for N¹ [sec:
+arXiv:2304.05202, Sect. V.9], show that the naive power estimator is
+biased upwards and give an iterative scheme to remove the bias [src].
+Hanson et al. 2010 (arXiv:1008.4403) find the Okamoto–Hu temperature
+estimator biased by 15% at L < 250 from beyond-gradient terms [src];
+Planck 2018 uses lensed fiducial spectra in the filter so the estimator is
+nearly unbiased non-perturbatively, citing that work [src:
+arXiv:1807.06210, Sect. 2.1].
+
 N⁰ is the disconnected (Gaussian) term, N¹ the connected term proportional
 to C^φφ itself, and the mean field is the response to the mask and to
 anisotropic noise. The ACT DR6 pipeline is the current reference
@@ -143,6 +181,16 @@ comes from pairs of simulations sharing a lensing field; the covariance
 uses 792 simulations with a Hartlap correction; the baseline range
 40 < L < 763 was fixed before unblinding and an extended range 40 < L < 1300
 gives a consistent amplitude.
+
+Reconstruction pipelines as run, read in the method sections:
+
+| Step | ACT DR6 (arXiv:2304.05202, 2304.05196) | Planck 2018 (arXiv:1807.06210) | SPT-3G D1 (arXiv:2608.31136) |
+|---|---|---|---|
+| Input and filter | inverse-variance coadd of f090, f150; diagonal harmonic filter with C_l^tot = C_l^cmb + N_l^coadd [src: 2304.05196, Sect. V.1] | Wiener filter X^WF = C^fid 𝒯† Cov⁻¹ X^dat, Cov = 𝒯 C^fid 𝒯† + N, diagonal pixel noise, conjugate gradient; T and P filtered separately (+3% noise at L ≤ 400); 100 ≤ ℓ ≤ 2048 [src: Sect. 2.1, Eqs. 1–2] | C⁻¹-filtered maps; GMV is the baseline [src: Sect. V.3.3] |
+| Estimator | cross-split estimator, profile-hardened MV [src: 2304.05196, Sect. V.1] | Carron & Lewis 2017 spin-1 displacement, split into gradient and curl; T-only, P-only, MV rather than the five Okamoto–Hu pairs; lensed fiducial spectra make it nearly unbiased non-perturbatively [src: Sect. 2.1, Eqs. 3–6] | GMV, with profile-hardened, cross-ILC and tSZ-deprojected variants as checks [src: Sect. V.3.3] |
+| Mean field and normalisation | mean field exceeds the signal near L ~ 20, one reason for L_min = 40; normalisation is the inverse response for fiducial spectra (Planck 2015 TT,TE,EE with updated τ); φ is biased by the ratio of fiducial to true response [src: Sects. V.9–V.10] | mean field (map-level signal of mask, noise and anisotropies) subtracted, then normalisation [src: Sect. 2.1] | κ̂ = ½ L(L+1)(φ̄_LM − φ̄_LM^MF)/R̃_L^αφ, mean field over 498 simulations [src: Eqs. 23–24] |
+| Bias subtraction | Ĉ_L^φφ,× = C_L^φ̂φ̂,× − ΔC_L^Gauss − ΔC_L^N1 − ΔC_L^MC: RDN0, N¹ by the Story et al. procedure, additive MC term from 480 simulations [src: Eq. 39] | — | Ĉ_L^κκ = C_L^κ̂κ̂ − N_L^(0) − N_L^(1); N⁰ from pairs of independent realisations, N¹ from a second CMB set lensed by the same φ, RDN0 on data [src: Eqs. 25–27] |
+| Blinding | baseline L range fixed before unblinding [src] | — | band powers against theory only after simulation-mean, curl, unlensed and ℓ-range tests; parameters after alternate-cosmology and Agora tests and a CMB/BAO consistency check [src: Sect. V.4] |
 
 Variants in use:
 
@@ -211,7 +259,16 @@ relation (Hivon et al. 2001, arXiv:astro-ph/0105302)
 links the masked-sky pseudo-spectrum to the true one through the
 mode-coupling matrix M (from the mask), the filter transfer function F and
 the beam B. A general public implementation with E/B purification is
-NaMaster (Alonso et al. 2018, arXiv:1809.09603). ACT publishes its pipeline
+NaMaster (Alonso et al. 2018, arXiv:1809.09603). Where the pixel count is
+small (low ℓ) the quadratic maximum-likelihood (QML) estimator is used
+instead: Tegmark 1996 (arXiv:astro-ph/9611174) introduced it as unbeatable
+in variance, quadratic, applicable to any geometry and scaling as n² in
+pixels [src]; Bond, Jaffe & Knox 1997 (arXiv:astro-ph/9708203) showed that
+the iterated minimum-variance quadratic estimator converges to the
+maximum-likelihood C_ℓ [src]; Tegmark & de Oliveira-Costa 2000
+(arXiv:astro-ph/0012120) extended it to polarisation with E/B
+disentangling on a cut sky [src]. The PR4 large-scale spectra use a
+cross-spectrum QML variant at N_side 16 [src: arXiv:2309.10034, Sect. 3.1]. ACT publishes its pipeline
 as PSpipe [src] (arXiv:2503.14452). SPT-3G D1 uses HEALPix maps
 (Górski et al. 2004, arXiv:astro-ph/0409513), bins in Δℓ = 50 and debiases
 for pixel window, transfer function and temperature beam, while the
@@ -225,7 +282,8 @@ Ranges actually used in the 2025 likelihoods [src]:
 | ACT DR6 | ℓ_min 600–1000 by array-band, ℓ_max 8500 | same ℓ_min after unblinding (500 before) | 10,000 deg² of 19,000 deg² mapped | arXiv:2503.14452 |
 | SPT-3G D1 | 400–3000 | 400–4000 | 4% of the sky | arXiv:2506.20707 |
 | Planck in P-ACT | ℓ < 1000 | ℓ < 600 | PR3 likelihood masks | arXiv:2503.14452 |
-| Planck PR4 HiLLiPoP | extended range | extended range | up to 75% | arXiv:2309.10034 |
+| Planck 2018 Plik | 30–1197 (100), 30–1996 (143), 30–2508 (143×217, 217); no 100×143, 100×217 | 30–999 with 100 GHz, 505–999 or 505–1996 with 217 GHz, 30–1996 (143) [src: Table 13] | half-mission cross-spectra | arXiv:1907.12875, Sect. 3.2.4 |
+| Planck PR4 HiLLiPoP | 30–1500 with 100 GHz (250–1500 for 100×217), 50–2000 (143), 250–2500 (143×217, 217) | TE 30–2000, EE 30–2000 (EE 100×100: 100–1200) [src: Table 1] | up to 75%; 29 758 multipoles | arXiv:2309.10034, Sect. 3.2.3 |
 | Planck CamSpec (2019 reanalysis) | — | — | 80% | arXiv:1910.00483 |
 
 ## 5. Foregrounds and component separation
@@ -251,7 +309,15 @@ and CIB maps, for low-ℓ polarisation and for B-mode searches. Planck 2018
 used Commander, NILC, SEVEM and SMICA for the CMB and Commander, GNILC and
 SMICA for the astrophysical components, and measured mean polarised
 spectral indices β_d = 1.55 ± 0.05 for dust and β_s = −3.1 ± 0.1 for
-synchrotron [src] (Planck Collaboration 2018, arXiv:1807.06208). For primordial B modes, BICEP/Keck fits a seven-parameter
+synchrotron [src] (Planck Collaboration 2018, arXiv:1807.06208). The four
+pipelines descend from four method papers [src, abstracts]: a blind
+internal linear combination by harmonic band (Tegmark et al. 2003,
+arXiv:astro-ph/0302496); SMICA, spectral matching of a multi-component
+model to multi-detector spectra (Delabrouille et al. 2002,
+arXiv:astro-ph/0211504); NILC, a minimum-variance constrained linear
+combination on needlets (Delabrouille et al. 2008, arXiv:0807.0773); and
+Commander, joint Bayesian component separation and C_ℓ estimation by Gibbs
+sampling (Eriksen et al. 2007, arXiv:0709.1058). For primordial B modes, BICEP/Keck fits a seven-parameter
 dust + synchrotron model to all auto- and cross-spectra between its bands
 and WMAP and Planck maps from 23 to 353 GHz [src] (BICEP/Keck 2021,
 arXiv:2110.00483).
@@ -273,6 +339,17 @@ powers with a fixed fiducial covariance,
 
     −2 ln L = (D̂ − D^th)ᵀ Σ⁻¹ (D̂ − D^th) + const.
 
+Plik writes it as −ln L(Ĉ|C(θ)) = ½ [Ĉ − C(θ)]ᵀ Σ⁻¹ [Ĉ − C(θ)] + const.
+over all relevant cross-frequency spectra of the 100, 143 and 217 GHz
+channels, with Σ for a fiducial model including foregrounds, MASTER-type
+treatment of the Galactic mask, a Monte Carlo correction for point-source
+masks and a heuristic one for anisotropic noise, foregrounds treated as
+Gaussian; the Gaussian shape biases n_s by about 0.1σ through
+30 ≤ ℓ < 100 [src: arXiv:1907.12875, Sect. 3.1, Eq. 20]. HiLLiPoP uses the
+same form per detset cross-spectrum (Eq. 7) and drops ln|Σ| for a fixed
+covariance; it expects χ² with mean n_ℓ − n_p and variance 2(n_ℓ − n_p)
+[src: arXiv:2309.10034, Sect. 5.1, Eq. 7].
+
 The covariance is semi-analytic, corrected with simulations. Camphuis et al.
 2022 (arXiv:2204.13721) give the exact calculation for small footprints and
 find that earlier fast approximations are accurate to about 5% on the SPT-3G
@@ -281,12 +358,33 @@ al. 2024 (arXiv:2412.07068) find their analytic ACT DR6 prescription within
 3% of Monte Carlo, against about 16% for the simpler earlier prescription,
 and 1% after a simulation-based correction [src].
 
+Covariance construction as run:
+
+| Analysis | Construction | Place |
+|---|---|---|
+| ACT DR6 | (1) analytic pseudo-D_ℓ Gaussian term, homogeneous noise; (2) Monte Carlo correction from 1640 simulations for striped noise and the ground filter; (3) beam term ∝ D_ℓ D_ℓ ⟨δB δB/B B⟩ from Uranus, arrays uncorrelated; (4) leakage-beam term from 10 000 simulated leakage beams, +50% on TE errors at ℓ < 800, which motivated the polarisation ℓ cut; (5) non-Gaussian lensing terms incl. super-sample variance; (6) tSZ (halo model) and Poisson-source trispectra. Terms 5–6 change parameter errors by < 10% | [src: arXiv:2503.14452, Sect. III.4] |
+| ACT DR6 leakage | Ẽ_ℓm = E_ℓm + γ_ℓ,TE T_ℓm, B̃_ℓm = B_ℓm + γ_ℓ,TB T_ℓm; induced ΔD_ℓ from the best fit subtracted from the spectra | [src: Eqs. 1–2, Sect. III.3.2] |
+| SPT-3G D1 | semi-analytic covariance of the pseudo-spectra with mask-coupling kernels of the border-only apodised mask, debiased like the spectra; signal at the best fit; isotropic noise, no anisotropic correction | [src: arXiv:2506.20707, Sect. IV.6, Eqs. 31–33] |
+| SPT-3G D1 model operators | super-sample lensing [S(κ)C]_ℓ = C_ℓ − (∂ℓ²C_ℓ/∂ln ℓ) κ/ℓ², κ ~ N(0, 0.00045); aberration [A C]_ℓ = C_ℓ − β_ab ℓ ∂C_ℓ/∂ℓ, β_ab = −0.0004826, CMB only; nine beam eigenmodes; polarised-beam ratio B^T/B^P(β_pol); quadrupolar leakage. Beam errors are parameters here, covariance terms in Planck and ACT | [src: Sect. V.2.1, Eqs. 41–45] |
+
 Low ℓ. At ℓ < 30 the likelihood is non-Gaussian and noise is correlated.
 Planck 2018 uses a simulation-based EE likelihood built on the 100×143 GHz
 cross-spectrum, labelled "lowE" (arXiv:1907.12875, arXiv:1807.06209). Alternatives tested on SRoll2 maps
 include a maximum-entropy approximation (momento) and a density-estimation
 scheme (de Belsunce et al. 2021, arXiv:2103.14378). The analytic form for
 correlated T and E on a cut sky is Hamimeche & Lewis 2008 (arXiv:0801.0554).
+
+Planck low-ℓ polarisation likelihoods as run [src]. lowE (SimAll, PR3):
+QML cross-spectrum of the cleaned 100 and 143 GHz maps, ℓ = 2–29, EE only,
+each C_ℓ given an empirical distribution from 300 end-to-end simulations,
+ℓ-to-ℓ correlations ignored; low-ℓ TT uses the Commander Blackwell–Rao
+likelihood (arXiv:1807.06209, Sect. 2.2.3). LoLLiPoP (PR4): Commander-
+cleaned detset cross-spectra, ℓ = 2–30, Hamimeche–Lewis variable change
+adapted to cross-spectra as in Mangilli et al. 2015 (arXiv:1503.01347;
+cross-spectra remove noise bias [src]):
+X_ℓ = √(C_ℓ^f + O_ℓ) g[(C̃_ℓ + O_ℓ)/(C_ℓ + O_ℓ)] √(C_ℓ^f + O_ℓ),
+g(x) = √(2(x − ln x − 1)), −2 ln P = Σ X_ℓᵀ M⁻¹_ℓℓ' X_ℓ', offsets from the
+noise variance ΔC_ℓ ≡ √(2/(2ℓ+1)) O_ℓ (arXiv:2309.10034, Eqs. 4–6).
 
 The τ input. Ground experiments cannot measure τ and every current analysis
 takes it from Planck large-scale polarisation, in one of three ways [src]:
@@ -335,7 +433,14 @@ are insufficient [src]. SPT-3G D1 uses the ACT DR6 accuracy settings [src].
   used 3.046 (arXiv:1807.06209). ACT notes it had to correct for this small
   difference between its BBN table and CLASS [src]. Constraints quoted with
   "BBN consistency" tie Y_P to (Ω_b h², N_eff); those with Y_P free are
-  weaker and should not be compared with them.
+  weaker and should not be compared with them. Physics [src, abstracts]:
+  the WMAP+SPT N_eff constraint came almost entirely from the expansion
+  rate changing the ratio of the photon diffusion scale to the sound
+  horizon, with little from the early ISW effect (Hou et al. 2011,
+  arXiv:1104.2333); free-streaming neutrinos also shift the phase of the
+  acoustic oscillations (Bashinsky & Seljak 2003, arXiv:astro-ph/0310198),
+  first detected in the CMB temperature spectrum by Follin et al. 2015
+  (arXiv:1503.07863).
 - Σm_ν: base ΛCDM fixes one massive eigenstate with 0.06 eV. When the mass
   is varied, Planck, ACT and DESI use three degenerate states
   (arXiv:2503.14454, arXiv:2503.14744). Limits are 95% one-sided and depend
@@ -408,7 +513,8 @@ prevented post-unblinding changes; both must be reported together.
 
 - Which Planck likelihood each DESI paper adopts was not re-read; check the
   paper before comparing a DESI+CMB number with an ACT or SPT one.
-- Not re-read this session and therefore not quoted: the multipole ranges
-  of the Planck 2018 Plik likelihood; the low-ℓ polarisation transfer
-  function of NPIPE maps; whether Planck analyses were blinded; the
-  redshift of last scattering and the rms lensing deflection.
+- Not re-read this session and therefore not quoted: whether Planck
+  analyses were blinded; the redshift of last scattering and the rms
+  lensing deflection. Plik ranges: closed (Section 4).
+- Silk 1968, "Cosmic Black-Body Radiation and Galaxy Formation" (ApJ;
+  confirmed on Crossref), is not cited for damping: no abstract readable.

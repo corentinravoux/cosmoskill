@@ -99,3 +99,10 @@ Cuceu2024	2404.03004	Cuceu	2024	Validation of the DESI 2024 Ly$α$ forest BAO an
 Cuceu2022AP	2209.12931	Cuceu	2022	The Alcock-Paczyński effect from Lyman-$α$ forest correlations: Analysis validation with synthetic data	method
 Cuceu2025FS	2509.15308	Cuceu	2025	DESI DR1 Ly$α$ forest: 3D full-shape analysis and cosmological constraints	results
 Nishimichi2020	2003.08277	Nishimichi	2020	Blinded challenge for precision cosmology with large-scale structure: results from effective field theory for the redshift-space galaxy power spectrum	results
+SeljakZaldarriaga1996	astro-ph/9603033	Seljak	1996	A Line of Sight Approach to Cosmic Microwave Background Anisotropies	foundation
+MaBertschinger1995	astro-ph/9506072	Ma	1995	Cosmological Perturbation Theory in the Synchronous and Conformal Newtonian Gauges	foundation
+Skilling2006	doi:10.1214/06-BA127	Skilling	2006	Nested sampling for general Bayesian computation	foundation
+GoodmanWeare2010	doi:10.2140/camcos.2010.5.65	Goodman	2010	Ensemble samplers with affine invariance	foundation
+Neal2012	1206.1901	Neal	2012	MCMC using Hamiltonian dynamics	method
+Hamilton2000	astro-ph/9905191	Hamilton	1999	Uncorrelated Modes of the Nonlinear Power Spectrum	foundation
+Hivon2002	astro-ph/0105302	Hivon	2001	MASTER of the CMB Anisotropy Power Spectrum: A Fast Method for Statistical Analysis of Large and Complex CMB Data Sets	foundation

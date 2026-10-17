@@ -5,7 +5,7 @@ description: Use when reviewing, planning or fact-checking direct peculiar-veloc
 
 # Peculiar velocities — expert reference
 
-Snapshot 2026-10-07. Numbers carry provenance flags ([src] / [sec] / [der]);
+Snapshot 2026-10-14. Numbers carry provenance flags ([src] / [sec] / [der]);
 re-verify against the cited paper before a number enters a manuscript.
 
 Read first: `references/pv-surveys.md` (indicators, surveys, method families,
@@ -34,14 +34,15 @@ each value and its provenance).
   pairwise difference is 1.1σ in mock units (arXiv:2512.03228, arXiv:2512.03230).
 - That measurement is FP: 73 686 FP against 2 929 TF velocities; TF at z > 0.05
   was discarded for an unexplained excess correlation (arXiv:2512.03230).
-- The field-level fit fixes σ_u; the cost is ±0.018 on fσ8, ~30 % of the
-  statistical error (arXiv:2512.03229). σ_u ranges from 6.75 to 19–23 h⁻¹Mpc
-  across analyses, 13 from N-body (arXiv:1312.1022, arXiv:2303.01198).
+- The field-level fit fixes σ_u = 16 h⁻¹Mpc (±0.018 on fσ8) and inflates its
+  Hessian errors ×1.64 to the mock scatter (arXiv:2512.03229). σ_u spans 6.75
+  to 19–23 h⁻¹Mpc, 13 from N-body (arXiv:1312.1022, arXiv:2303.01198).
 - The sinc damping D_u is an empirical fit valid to k ≤ 0.2 h Mpc⁻¹
   (arXiv:1312.1022); EFT and emulator replacements exist (arXiv:2508.00066,
   arXiv:2602.03382).
-- Fit in log-distance, never in velocity; v = cz − H0 d is ~100 km/s wrong at
-  z ~ 0.04 (arXiv:1404.3799, arXiv:1405.0105).
+- Errors are Gaussian in η, not in v (arXiv:1404.3799); the DESI momentum
+  spectrum still converts η to v first (arXiv:2512.03231). v = cz − H0 d is
+  ~100 km/s wrong at z ~ 0.04 (arXiv:1405.0105).
 - Zero-point: DESI DR1 η_zp = 0.139 ± 0.007, tied to SH0ES/Pantheon+ SNe through
   groups; fully correlated across the sample (arXiv:2512.03232).
 - FP is the indicator most exposed to the Malmquist treatment: S8 shifts of
@@ -56,7 +57,7 @@ each value and its provenance).
   prior on the velocity correlations (arXiv:1508.03860).
 - No fσ8 from ZTF data exists; only simulations — 19 % alone, 10 % with DESI DR3
   BGS (arXiv:2303.01198, arXiv:2609.34508). No DESI DR2 PV paper either.
-- kSZ gives τ × v; b_v ≈ 0.2–0.45, so it constrains f_NL, not fσ8
+- kSZ gives τ × v; b_v ≈ 0.1–0.45 by tracer, so it constrains f_NL, not fσ8
   (arXiv:2604.04867, arXiv:2511.15701).
 - γ_L = 0.580 ± 0.110 from DESI DR1 PV + full shape (arXiv:2512.03231).
 
@@ -109,7 +110,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; fsigma8-pv-compilation 5k; open 6k; methods 8k; pv-surveys 7k; results 9k; surveys 4k; systematics 6k.
+Sizes, in thousands of tokens: L1 3k; fsigma8-pv-compilation 5k; open 6k; methods 10k; pv-surveys 7k; results 9k; surveys 4k; systematics 11k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

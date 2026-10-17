@@ -1,0 +1,108 @@
+key	id	first_author	year	title	role
+Guy2023	2209.14482	Guy	2022	The Spectroscopic Data Processing Pipeline for the Dark Energy Spectroscopic Instrument	method
+Myers2023	2208.08518	Myers	2022	The Target-selection Pipeline for the Dark Energy Spectroscopic Instrument	method
+Reid2016	1509.06529	Reid	2015	SDSS-III Baryon Oscillation Spectroscopic Survey Data Release 12: galaxy target selection and large scale structure catalogues	data
+Prakash2016	1508.04478	Prakash	2015	The SDSS-IV extended Baryonic Oscillation Spectroscopic Survey: Luminous Red Galaxy Target Selection	method
+Myers2015	1508.04472	Myers	2015	The SDSS-IV extended Baryon Oscillation Spectroscopic Survey: Quasar Target Selection	method
+Raichoor2017	1704.00338	Raichoor	2017	The SDSS-IV Extended Baryon Oscillation Spectroscopic Survey: final Emission Line Galaxy Target Selection	method
+Hahn2023	2208.08512	Hahn	2022	DESI Bright Galaxy Survey: Final Target Selection, Design, and Validation	method
+Zhou2023	2208.08515	Zhou	2022	Target Selection and Validation of DESI Luminous Red Galaxies	method
+Raichoor2023	2208.08513	Raichoor	2022	Target Selection and Validation of DESI Emission Line Galaxies	method
+Chaussidon2023	2208.08511	Chaussidon	2022	Target Selection and Validation of DESI Quasars	method
+Bandi2025	2510.02449	Bandi	2025	4MOST Cosmology Redshift Survey (CRS): Clustering Properties of CRS Bright Galaxy and Luminous Red Galaxy Target Catalogues	data
+ChoppinDeJanvry2026	2608.10080	Choppin de Janvry	2026	Lyman Break Galaxy selection and redshift measurement with supervised contrastive learning	method
+Blanton2003	astro-ph/0105535	Blanton	2001	An Efficient Algorithm for Positioning Tiles in the Sloan Digital Sky Survey	foundation
+Morales2012	1103.0988	Morales	2011	Fiber Assignment in Next-generation Wide-field Spectrographs	method
+Hughes2022	2209.01145	Hughes	2022	Optimisation of the WEAVE target assignment algorithm	method
+Kwon2026	2601.02795	Kwon	2026	A New Collision Avoidance Fiber Assignment Algorithm for Robotic Fiber Positioners in Multi-Object Spectroscopy	method
+Sunayama2020	1912.06583	Sunayama	2019	Mitigating the impact of fiber assignment on clustering measurements from deep galaxy redshift surveys	systematics
+Makiya2021	2110.04883	Makiya	2021	Mitigating the impact of fiber assignment on the measurement of galaxy-lensing cross correlation	systematics
+BianchiPercival2017	1703.02070	Bianchi	2017	Unbiased clustering estimation in the presence of missing observations	foundation
+Bianchi2018	1805.00951	Bianchi	2018	Unbiased clustering estimates with the DESI fibre assignment	method
+Burden2017	1611.04635	Burden	2016	Mitigating the Impact of the DESI Fiber Assignment on Galaxy Clustering	method
+Lasker2024	2404.03006	Lasker	2024	Production of Alternate Realizations of DESI Fiber Assignment for Unbiased Clustering Measurement in Data and Simulations	method
+Schlafly2023	2306.06309	Schlafly	2023	Survey Operations for the Dark Energy Spectroscopic Instrument	method
+Horne1986	doi:10.1086/131801	Horne	1986	An optimal extraction algorithm for CCD spectroscopy	foundation
+BoltonSchlegel2010	0911.2689	Bolton	2009	Spectro-Perfectionism: An Algorithmic Framework for Photon Noise-Limited Extraction of Optical Fiber Spectroscopy	foundation
+Kelson2003	astro-ph/0303507	Kelson	2003	Optimal Techniques in Two-dimensional Spectroscopy: Background Subtraction for the 21st Century	foundation
+SharpParkinson2010	1007.0648	Sharp	2010	Sky subtraction at the Poisson limit with fibre-optic multi-object spectroscopy	method
+Rodrigues2016	1609.06142	Rodrigues	2016	On-sky tests of sky-subtraction methods for fiber-fed spectrographs	method
+Kolganov2023	2312.06761	Kolganov	2023	Non-negative matrix factorization approach to sky subtraction for optical spectroscopy	method
+Bai2017	1705.02079	Bai	2017	Sky Subtraction for LAMOST	method
+Bolton2012	1207.7326	Bolton	2012	Spectral Classification and Redshift Measurement for the SDSS-III Baryon Oscillation Spectroscopic Survey	method
+Hutchinson2016	1607.02432	Hutchinson	2016	Redshift Measurement and Spectral Classification for eBOSS Galaxies with the Redmonster Software	method
+DESI2025DR1	2503.14745	DESI Collaboration	2025	Data Release 1 of the Dark Energy Spectroscopic Instrument	data
+Anand2024	2405.19288	Anand	2024	Archetype-Based Redshift Estimation for the Dark Energy Spectroscopic Instrument Survey	method
+Brodzeller2023	2305.10426	Brodzeller	2023	Performance of the Quasar Spectral Templates for the Dark Energy Spectroscopic Instrument	method
+Baldry2014	1404.2626	Baldry	2014	Galaxy And Mass Assembly (GAMA): autoz spectral redshift measurements, confidence and errors	method
+BuscaBalland2018	1808.09955	Busca	2018	QuasarNET: Human-level spectral classification and redshifting with Deep Neural Networks	method
+Euclid2025SIR	2503.15307	Euclid Collaboration	2025	Euclid Quick Data Release (Q1): From spectrograms to spectra: the SIR spectroscopic Processing Function	method
+Euclid2025SPE	2503.15308	Euclid Collaboration	2025	Euclid Quick Data Release (Q1) -- Characteristics and limitations of the spectroscopic measurements	results
+Lan2023	2208.08516	Lan	2022	The DESI Survey Validation: Results from Visual Inspection of Bright Galaxies, Luminous Red Galaxies, and Emission Line Galaxies	results
+Alexander2023	2208.08517	Alexander	2022	The DESI Survey Validation: Results from Visual Inspection of the Quasar Survey Spectra	results
+Lyke2020	2007.09001	Lyke	2020	The Sloan Digital Sky Survey Quasar Catalog: Sixteenth Data Release	data
+Euclid2026Contam	2606.24697	Euclid Collaboration	2026	Euclid preparation. First investigation of the impact of cross-contamination on spectroscopic redshift measurements with pixel-level simulations	systematics
+Rubin2026DP1	2603.23786	Vera C Rubin Observatory Team	2026	The Vera C. Rubin Observatory Data Preview 1	data
+Bosch2018	1705.06766	Bosch	2017	The Hyper Suprime-Cam Software Pipeline	method
+Morganson2018	1801.03177	Morganson	2018	The Dark Energy Survey Image Processing Pipeline	method
+Kuijken2019	1902.11265	Kuijken	2019	The fourth data release of the Kilo-Degree Survey: ugri imaging and nine-band optical-IR photometry over 1000 square degrees	data
+Wright2025	2503.19439	Wright	2025	The fifth data release of the Kilo Degree Survey: Multi-epoch optical/NIR imaging covering wide and legacy-calibration fields	data
+Juric2017	1512.07914	Jurić	2015	The LSST Data Management System	method
+Antilogus2014	1402.0725	Antilogus	2014	The brighter-fatter effect and pixel correlations in CCD sensors	foundation
+Gruen2015	1501.02802	Gruen	2015	Characterization and correction of charge-induced pixel shifts in DECam	method
+Bernstein2017	1703.01679	Bernstein	2017	Astrometric calibration and performance of the Dark Energy Camera	method
+Euclid2025VIS	2503.15303	Euclid Collaboration	2025	Euclid Quick Data Release (Q1): VIS processing and data products	method
+SevillaNoarbe2021	2011.03407	Sevilla-Noarbe	2020	Dark Energy Survey Year 3 Results: Photometric Data Set for Cosmology	data
+Liaudat2023	2306.07996	Liaudat	2023	Point spread function modelling for astronomical telescopes: a review focused on weak gravitational lensing studies	review
+Jarvis2021	2011.03409	Jarvis	2020	Dark Energy Survey Year 3 Results: Point-Spread Function Modeling	method
+Schutt2025	2501.05781	Schutt	2025	Dark Energy Survey Year 6 Results: Point-spread Function Modeling	method
+ZackayOfek2017a	1512.06872	Zackay	2015	How to coadd images? I. Optimal source detection and photometry using ensembles of images	foundation
+ZackayOfek2017b	1512.06879	Zackay	2015	How to coadd images? II. A coaddition image that is optimal for any purpose in the background dominated noise limit	foundation
+BertinArnouts1996	doi:10.1051/aas:1996164	Bertin	1996	SExtractor: Software for source extraction	foundation
+Melchior2018	1802.10157	Melchior	2018	SCARLET: Source separation in multi-band images by Constrained Matrix Factorization	method
+Dey2019	1804.08657	Dey	2018	Overview of the DESI Legacy Imaging Surveys	data
+Yadav2026	2610.10986	Yadav	2026	DeepDISC on LSST Data Preview 1: Scene-Level Detection, Deblending, and Star/Galaxy Classification in the ECDFS and EDFS Fields	method
+Mendoza2026	2601.03422	Mendoza	2026	Simulation-Based Inference for Probabilistic Galaxy Detection and Deblending	method
+Berres2026	2607.28475	Berres	2026	DB-Bench: Benchmarking Deblenders for LSST DESC Using the Blending ToolKit	systematics
+Sanchez2021	2103.02078	Sanchez	2021	Effects of overlapping sources on cosmic shear estimation: Statistical sensitivity and pixel-noise bias	systematics
+Tegmark1997	astro-ph/9611130	Tegmark	1996	How to make maps from CMB data without losing information	foundation
+Biquard2024	2405.10239	Biquard	2024	An introduction to map-making for CMB experiments	review
+Keihanen2005	astro-ph/0412517	Keihanen	2004	Madam - a map-making method for CMB experiments	method
+Keihanen2020	2011.06024	Keihänen	2020	BeyondPlanck II. CMB map-making through Gibbs sampling	method
+Delouis2019	1901.11386	Delouis	2019	SRoll2: an improved mapmaking approach to reduce large-scale systematic effects in the Planck High Frequency Instrument legacy maps	method
+Naess2025	2503.14451	Naess	2025	The Atacama Cosmology Telescope: DR6 Maps	data
+Quan2026	2603.20163	Quan	2026	SPT-3G D1: Maps of the millimeter-wave sky from 2019 and 2020 observations of the SPT-3G Main field	data
+Poletti2017	1608.01624	Poletti	2016	Making maps of Cosmic Microwave Background polarization for B-mode studies: the POLARBEAR example	method
+Sohn2026	2606.31720	Sohn	2026	Robust CMB polarisation mapmaking with a rotating half-wave plate	method
+Planck2018III	1807.06207	Planck Collaboration	2018	Planck 2018 results. III. High Frequency Instrument data processing and frequency maps	data
+Planck2018II	1807.06206	Planck Collaboration	2018	Planck 2018 results. II. Low Frequency Instrument data processing	data
+PlanckNPIPE2020	2007.04997	Planck Collaboration	2020	Planck intermediate results. LVII. Joint Planck LFI and HFI data processing	data
+Planck2018IV	1807.06208	Planck Collaboration	2018	Planck 2018 results. IV. Diffuse component separation	results
+NaessLouis2023	2210.02243	Naess	2022	Large-scale power loss in ground-based CMB mapmaking	systematics
+Ross2025	2405.16593	Ross	2024	The Construction of Large-scale Structure Catalogs for the Dark Energy Spectroscopic Instrument	method
+Swanson2008	0711.4352	Swanson	2007	Methods for Rapidly Processing Angular Masks of Next-Generation Galaxy Surveys	method
+Euclid2025Angular	2511.20856	Euclid Collaboration	2025	Euclid preparation. XCII. Controlling angular systematics in the Euclid spectroscopic galaxy sample	systematics
+Suchyta2016	1507.08336	Suchyta	2015	No galaxy left behind: accurate measurements with the faintest objects in the Dark Energy Survey	method
+FKP1994	astro-ph/9304022	Feldman	1993	Power Spectrum Analysis of Three-Dimensional Redshift Surveys	foundation
+Ross2020	2007.09000	Ross	2020	The Completed SDSS-IV extended Baryon Oscillation Spectroscopic Survey: Large-scale Structure Catalogs for Cosmological Analysis	data
+Leistedt2016	1507.05647	Leistedt	2015	Mapping and simulating systematics due to spatially-varying observing conditions in DES Science Verification data	method
+Elsner2016	1509.08933	Elsner	2015	Unbiased methods for removing systematics from galaxy clustering measurements	method
+WeaverdyckHuterer2021	2007.14499	Weaverdyck	2020	Mitigating contamination in LSS surveys: a comparison of methods	method
+Rezaie2020	1907.11355	Rezaie	2019	Improving Galaxy Clustering Measurements with Deep Learning: analysis of the DECaLS DR7 data	method
+RodriguezMonroy2022	2105.13540	Rodríguez-Monroy	2021	Dark Energy Survey Year 3 Results: Galaxy clustering and systematics treatment for lens galaxy samples	systematics
+Kong2020	2007.08992	Kong	2020	Removing Imaging Systematics from Galaxy Clustering Measurements with Obiwan : Application to the SDSS-IV extended Baryon Oscillation Spectroscopic Survey Emission Line Galaxy Sample	method
+Everett2022	2012.12825	Everett	2020	Dark Energy Survey Year 3 Results: Measuring the Survey Transfer Function with Balrog	method
+Anbajagane2025	2501.05683	Anbajagane	2025	Dark Energy Survey Year 6 Results: Synthetic-source Injection Across the Full Survey Using Balrog	method
+Hagen2026	2606.18581	Hagen	2026	DESI Data Release 2 ELGs: Property-dependent subsamples, imaging systematics, and clustering	systematics
+Zhang2026	2609.15542	Zhang	2026	Anisotropic redshift distributions in photometric galaxy clustering and their cosmological impact	systematics
+DESI2023EDR	2306.06308	DESI Collaboration	2023	The Early Data Release of the Dark Energy Spectroscopic Instrument	data
+DES2021DR2	2101.05765	DES Collaboration	2021	The Dark Energy Survey Data Release 2	data
+Aihara2022	2108.13045	Aihara	2021	Third Data Release of the Hyper Suprime-Cam Subaru Strategic Program	data
+SDSS2022DR17	2112.02026	Abdurro'uf	2021	The Seventeenth Data Release of the Sloan Digital Sky Surveys: Complete Release of MaNGA, MaStar and APOGEE-2 Data	data
+Brieden2020	2006.10857	Brieden	2020	Blind Observers of the Sky	method
+Bechtol2025	2501.05739	Bechtol	2025	Dark Energy Survey Year 6 Results: Photometric Data Set for Cosmology	data
+Euclid2025Q1	2503.15302	Euclid Collaboration	2025	Euclid Quick Data Release (Q1) -- Data release overview	data
+Richard2019	1903.02474	Richard	2019	4MOST Consortium Survey 8: Cosmology Redshift Survey (CRS)	forecast
+Takada2014	1206.0737	Takada	2012	Extragalactic Science, Cosmology and Galactic Archaeology with the Subaru Prime Focus Spectrograph (PFS)	forecast
+Guan2024	2406.10905	Guan	2024	Simons Observatory: Observatory Scheduler and Automated Data Processing	method
+HerviasCaimapo2025	2502.00946	Hervías-Caimapo	2025	The Simons Observatory: Validation of reconstructed power spectra from simulated filtered maps for the Small Aperture Telescope survey	method

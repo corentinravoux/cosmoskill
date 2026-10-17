@@ -1,0 +1,12 @@
+key	title	from	files	status
+emulators	Emulators of summary statistics and their error budgets	Huertas-Company & Lanusse 2022 review, Sect. 4.1; Dvorkin et al. 2022 Snowmass white paper, Sect. 4	physics-and-methods.md; results.md; systematics.md	covered
+neural-compression-field-level	Neural compression and field-level networks	Huertas-Company & Lanusse 2022, Sect. 6.2.1; Dvorkin et al. 2022, Sect. 2.1	physics-and-methods.md; results.md; open-questions.md	covered
+neural-density-estimation	Neural posterior, likelihood and ratio estimation	Dvorkin et al. 2022, Sect. 7; Cranmer et al. 2020 review	physics-and-methods.md; results.md; systematics.md	covered
+generative-models	Generative models of fields, images and catalogues	Huertas-Company & Lanusse 2022, Sect. 3.4, 4.2.3 and 6.1.2	physics-and-methods.md; results.md	covered
+learned-simulation-corrections	Learned N-body emulation, corrections of fast simulations and baryon painting	Huertas-Company & Lanusse 2022, Sect. 6.1; Dvorkin et al. 2022, Sect. 4	physics-and-methods.md; results.md	covered
+classification	Classification of transients, spectra and strong lenses	Huertas-Company & Lanusse 2022, Sect. 3.1; Dvorkin et al. 2022, Sect. 2.2; PLAsTiCC and ELAsTiCC challenge papers	physics-and-methods.md; surveys-and-data.md; results.md; systematics.md	covered
+anomaly-detection	Anomaly and outlier detection	Huertas-Company & Lanusse 2022, Sect. 5.2	physics-and-methods.md; results.md	covered
+training-sets-benchmarks	Training sets, benchmark suites and data challenges	Huertas-Company & Lanusse 2022, Sect. 7.3.5; Dvorkin et al. 2022, Sect. 3-4; CAMELS, Quijote, PLAsTiCC, ELAsTiCC, Beyond-2pt, FAIR Universe challenge papers; LSST DESC AI/ML white paper (arXiv:2601.14235)	surveys-and-data.md; results.md	covered
+robustness-misspecification	Robustness to model misspecification and to the training simulator	Huertas-Company & Lanusse 2022, Sect. 7.3.4; Dvorkin et al. 2022, Sect. 7	systematics.md; results.md; open-questions.md	covered
+interpretability	Interpretability and symbolic regression	Huertas-Company & Lanusse 2022, Sect. 5.3 and 7.3.3	physics-and-methods.md; open-questions.md	covered
+uncertainty-reproducibility	Uncertainty quantification and reproducibility practice	Huertas-Company & Lanusse 2022, Sect. 7.3.2; Dvorkin et al. 2022, Sect. 7 and 10	systematics.md; open-questions.md	covered

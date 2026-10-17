@@ -1,7 +1,7 @@
 # Open questions and misconceptions — cosmological simulations and mocks
 
 Scope: live debates, internal tensions between suites, and stale claims with the paper that corrects each.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-16
 
 ## 1. Live debates
 <!-- key: live-debates -->
@@ -35,7 +35,8 @@ Snapshot: 2026-10-07
 
 - The recommendation from controlled tests is to start late with 3LPT (arXiv:2008.09588), after 2LPT replaced Zel'dovich starts in 2006 (arXiv:astro-ph/0606505).
 - FLAMINGO follows it: multi-fluid 3LPT at z = 31, "as late as possible" (arXiv:2306.04024, section 2.4).
-- The Euclid Flagship 2 run started at z = 99 with 1LPT (arXiv:2405.13495, section 2.1). Its power-spectrum validation section was not read here; whether transients matter at its resolution and redshift range is a question to check in that paper, not to assume either way.
+- The Euclid Flagship 2 run started at z = 99 with 1LPT (arXiv:2405.13495, section 2.1). Its validation section rests on the code comparisons (1% between codes to k = 10 h/Mpc), on the 10⁹ M_⊙/h requirement and on a comparison of the measured P(k) with EuclidEmulator2 and BACCO, with HALOFIT and HMcode-2020 deviating by up to ±5% at k > 0.1 h/Mpc; it contains no test of the starting redshift or of the LPT order [src: Sect. 2.2 of arXiv:2405.13495].
+- What the controlled tests say about such a start: with 1024³ particles in 512 Mpc/h, a Zel'dovich start needs z_i ≳ 200 for percent accuracy on P(k) at z = 0 [src: Sect. 3.1 of arXiv:1503.05920]; with 1024³ in 1 Gpc/h, Zel'dovich starts at z = 49 to 199 are accurate only to about a tenth of the particle Nyquist wavenumber, and the authors estimate a 4% deficit at k about 4 h/Mpc for runs started at z = 200 with the Zel'dovich approximation, among which they count the runs of the first EuclidEmulator, and 1.5% for the BACCO runs started at z = 49 with 2LPT [src: Sect. 5.2.2 of arXiv:2008.09588]. The EuclidEmulator2 training runs also use first-order LPT, at z = 99 [src: Sect. 3.3 of arXiv:2010.11288]. These estimates are made at a mass resolution 80 times coarser than Flagship 2 [der: 8.04 × 10¹⁰ against 10⁹ M_⊙/h] and are not measurements on it; the dependence on resolution goes towards earlier optimal starts at higher resolution [src: Sect. 6 of arXiv:2008.09588]. No paper read here measures the transient of the Flagship 2 run itself.
 
 ### 1.4 Is the HOD good enough for Stage-IV small-scale analyses?
 <!-- key: is-the-hod-good-enough-for-stage-iv-small-scale -->
@@ -50,6 +51,7 @@ Snapshot: 2026-10-07
 
 - DESI DR1 answers differently for two statistics: analytic for the post-reconstruction correlation function, corrected mocks for the power spectrum (arXiv:2411.12027).
 - Approximate mocks reproduce parameter errors to 10% (arXiv:1806.09497), which is comparable with, or larger than, the finite-mock corrections.
+- That 10% is measured in periodic boxes at z = 1, where a Gaussian covariance with a non-linear spectrum does as well as the mocks [src: Sect. 6 of arXiv:1806.09497]. On the DESI DR1 survey geometry the EZmock covariance gave BAO uncertainties about 10% smaller than a data-tuned analytic covariance and was rescaled by 10 to 40% for the full-shape analysis, while the analytic Fourier-space covariance differed from the mock one by about 10% element by element [src: Sects. 4 and 5 of arXiv:2411.12027]. Neither estimate is a reference for the other; the open question is which one is closer to the truth for a fibre-assigned survey.
 - Control-variate estimators that pair each mock with a Zel'dovich realisation were proposed in 2026 to cut the number of mocks needed (title and abstract read, outside the source list).
 
 ### 1.6 Is the local Universe underdense in the constrained simulations?
@@ -134,9 +136,13 @@ What is achieved against these: the gravity-only requirement is met by tuned cod
 |---|---|---|
 | "N-body codes agree to 1%." | To k = 1 h/Mpc at standard settings, 3% to k = 10; 1% to k = 10 only with tuned accuracy parameters. | arXiv:1503.05920, arXiv:2112.09138, arXiv:2605.28581 |
 | "Baryons add small-scale power through cooling." | They remove power for 0.3 < k < 10s of h/Mpc; cooling dominates only above k about 70 h/Mpc. | arXiv:1104.1174 |
+| "The group gas fraction fixes the baryonic suppression." | It predicts P_hydro/P_DMO to about 0.01 at k ≤ 1–2 h/Mpc; the shape differs between thermal and jet feedback at fixed gas fraction, BAHAMAS and FLAMINGO differ at nearly equal gas fractions, and a one-parameter model built on one suite does not reproduce another. | arXiv:1906.00968, arXiv:2306.04024, arXiv:2410.17109 |
+| "Responses from 100 Mpc boxes (EAGLE, Illustris, SIMBA, Horizon-AGN) are as good as any." | The response converges to 1% only above (200 Mpc)³; smaller boxes probably overestimate it at k < 4 h/Mpc. | arXiv:2410.17109 |
+| "Zel'dovich initial conditions are fine if the start is early enough." | Even from z = 199 they are accurate only to an eighth of the particle Nyquist wavenumber at z = 0, at the resolution tested. | arXiv:2008.09588 |
+| "Friends-of-friends haloes enclose 180 times the mean density." | The boundary is at 81.62 times the mean for b = 0.2 and the enclosed overdensity depends on concentration. | arXiv:1103.0005 |
 | "Hydrodynamical simulations predict the suppression." | They are calibrated; the suppression follows the group gas fraction they were tuned to, and suites differ by a factor of two. | arXiv:1906.00968, arXiv:2512.02954 |
 | "FLAMINGO is ruled out by kSZ" / "FLAMINGO fits the kSZ". | The fiducial variant is more than 8σ from one kSZ and X-ray analysis and tracks another kSZ-to-lensing measurement; strong-feedback variants fit the first. | arXiv:2509.10455, arXiv:2609.22466 |
-| "CAMELS gives the baryonic effect on P(k)." | Its boxes are 25 Mpc/h; the response converges only above (200 Mpc)³. CAMELS is a training set. | arXiv:2010.00619, arXiv:2410.17109 |
+| "CAMELS gives the baryonic effect on P(k)." | Its first-generation boxes are 25 Mpc/h, the second generation's 50 Mpc/h (1,192 runs; arXiv:2606.10038); the response converges only above (200 Mpc)³. CAMELS is a training set. | arXiv:2010.00619, arXiv:2410.17109, arXiv:2606.10038 |
 | "The emulator is accurate to 1%, so theory error is 1%." | 1% is interpolation error against gravity-only runs; add the code-to-code and baryonic terms. | arXiv:2010.11288; `cosmo-statistics-inference` |
 | "Fixed-and-paired simulations give better covariances." | They suppress variance; they cannot estimate it. Three-point variance is not even reduced. | arXiv:1603.05253, arXiv:1811.02111 |
 | "Start the simulation as early as possible." | Early starts amplify discreteness errors; start late with 3LPT. | arXiv:2008.09588 |
@@ -162,6 +168,6 @@ What is achieved against these: the gravity-only requirement is met by tuned cod
 - Amon & Efstathiou's proposal that a stronger non-linear suppression reconciles lensing with Planck was read in abstract and lies outside the source list.
 - Forecasts for simulation needs of Stage-V surveys: not researched.
 - GPU and differentiable code releases of 2026, neural field-level emulators, generative light-cone models: titles seen, not read.
-- Halo-finder, ray-tracing and intrinsic-alignment modelling in simulations: not researched.
-- The power-spectrum validation of the Flagship 2 run (section 2.2 of arXiv:2405.13495) was not read; no statement is made here on the size of its 1LPT transients.
+- Ray-tracing and intrinsic-alignment modelling in simulations: not researched. Halo finders are now in `physics-and-methods.md` §11, from abstracts.
+- The size of the 1LPT transient in the Flagship 2 run itself: section 2.2 of arXiv:2405.13495 was read and contains no such test.
 - Whether the DESI w0wa-preferred region lies inside the parameter boxes of EuclidEmulator2, Mira-Titan IV and BACCO was not checked against their tables.

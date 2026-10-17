@@ -1,7 +1,7 @@
 # Results — neutrino mass, light relics and dark-matter properties from cosmological data
 
 Scope: current headline constraints with dataset, model and provenance, then the history of each key number.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-16
 
 Flags: `[src]` read in the cited paper this session; `[sec]` taken from a named secondary source; `[der]` derived here, derivation stated.
 All Σm_ν upper limits are 95% credible or confidence limits unless stated. "CMB" in DESI papers means Planck PR3 low-ℓ (SimAll, Commander) + PR4 CamSpec high-ℓ + Planck PR4 and ACT DR6 lensing (arXiv:2503.14744).
@@ -41,7 +41,7 @@ The three laboratory observables are different combinations of the masses: oscil
 | DESI DR2 BAO + CMB + Pantheon+ / Union3 / DESY5 | < 0.0704 / 0.0674 / 0.0744 eV | arXiv:2503.14744 Table 2 | [src] |
 | DESI DR2 BAO + CMB, Feldman–Cousins (profile likelihood) | < 0.053 eV; parabola minimum μ0 = −0.036 eV, σ = 0.043 eV | arXiv:2503.14744 Table 3 | [src] |
 | DESI DR1 (FS+BAO) + BBN + loose n_s prior, no CMB amplitude | < 0.373 eV (Feldman–Cousins), σ = 0.200 eV | arXiv:2503.14744 Table 3 | [src] |
-| P-ACT-LB (ACT DR6 + Planck + lensing + DESI Year-1 BAO), three massive species | < 0.089 eV | Calabrese et al. 2025, arXiv:2503.14454 §6.1.1 of the revised source; the abstract returned by arXiv on 2026-10-09 still reads 0.082 eV | [src] |
+| P-ACT-LB (ACT DR6 + Planck + lensing + DESI Year-1 BAO), three massive species | < 0.089 eV | Calabrese et al. 2025, arXiv:2503.14454 §6.1.1 of the revised source, Eq. 33; the abstract returned by the arXiv API (re-checked 2026-10-14) still reads 0.082 eV, while the abstract of the HTML rendering reads 0.089 eV | [src] |
 | W-ACT-LB (WMAP in place of Planck) | < 0.088 eV | arXiv:2503.14454 §6.1.1 | [src] |
 | P-ACT + lensing + BOSS BAO in place of DESI | < 0.13 eV | arXiv:2503.14454 §6.1.1 | [src] |
 | P-ACT + lensing + supernovae, no BAO | < 0.23 eV | arXiv:2503.14454 §6.1.1 | [src] |
@@ -49,6 +49,7 @@ The three laboratory observables are different combinations of the masses: oscil
 | Planck + Planck and ACT lensing + DESI BAO, standard thermal history (independent analysis) | < 0.0691 eV | Figueroa, Sobotka & Erickcek 2026, arXiv:2609.15970 abstract | [src] |
 | Same, neutrino-to-photon temperature ratio free | < 0.0724 eV | arXiv:2609.15970 abstract | [src] |
 | SPT-3G D1 lensing + CMB + BAO | < 0.072 eV | Omori et al. 2026, arXiv:2608.31136 abstract | [src] |
+| SPT-3G D1 + DESI DR2 BAO; CMB-SPA + DESI DR2 (τ prior 0.051 ± 0.006) | < 0.081 eV; < 0.055 eV; the latter "appears to rule out" normal and inverted orderings at 96.6% and 99.9%, Δχ² = 5.1 (2.3σ) against the normal-ordering minimum | Camphuis et al. 2025, arXiv:2506.20707 Sect. VII.4.6, Eqs. 105–106 | [src] |
 | Planck + CMB lensing + DESI DR2 BAO (Qu et al. restatement) | < 0.056 eV | arXiv:2607.24742 abstract | [src] |
 | DESI DR1 full shape + bispectrum + cross-correlations + DESI BAO + CMB + SNe (EFT reanalysis, not a DESI Collaboration result) | < 0.049 eV | Ivanov et al. 2026, arXiv:2601.16165 abstract | [src] |
 | Planck + DESI BAO (2024 release) + SNe Ia + gamma-ray bursts + cosmic chronometers + galaxy-cluster distances (external analysis; each added background probe tightens the limit through a higher H0) | < 0.043 eV (2σ) | Wang et al. 2024, arXiv:2405.03368 abstract | [src] |
@@ -98,7 +99,7 @@ Independent analyses in extended dark-energy models:
 |---|---|---|---|
 | τ preferred by DESI BAO + high-ℓ CMB + CMB lensing in ΛCDM, no low-ℓ EE | 0.090 ± 0.012, 3–5σ from Planck low-ℓ polarisation | Sailer et al. 2025, arXiv:2504.16932 | [src] |
 | Same question, independent analysis | τ = 0.091 ± 0.011; neutrino tension at Σm_ν = 0.06 eV removed; w0wa preference below 95% CL | Jhaveri, Karwal & Hu 2025, arXiv:2504.21813 | [src] |
-| With τ ≈ 0.09 | w0wa preference falls from about 3σ to about 1.5σ; n_s = 0.968 ± 0.004, H0 = 67.94 ± 0.44 km/s/Mpc | arXiv:2504.16932 | [src] |
+| With τ ≈ 0.09 | w0wa preference falls from about 3σ to 1.4σ (Δχ²_MAP = −3.82) [src: Sect. III.2]; n_s = 0.968 ± 0.004, H0 = 67.94 ± 0.44 km/s/Mpc | arXiv:2504.16932 | [src] |
 | DESI DR2 BAO + CMB, τ fixed at 0.067 or 0.074 (about 2σ or 3σ above the baseline 0.054 ± 0.007) | tension of Σm_ν,eff with oscillations remains at 2.3σ or 1.7σ; without large-scale polarisation the tension "could be explained as a ∼2σ statistical fluctuation" | arXiv:2503.14744 §5.2.1 | [src] |
 | P-ACT-LB with the SRoll2 error doubled, prior τ = 0.057 ± 0.012 | Σm_ν < 0.10 eV | arXiv:2503.14454 appendix on DESI DR2 and τ | [src] |
 | P-ACT-LB without SRoll2 (τ from lensing in the spectra) | Σm_ν < 0.19 eV | same | [src] |
@@ -133,7 +134,7 @@ The Bayes factors 10, 46.5 and > 460 use the same class of data. The difference 
 | N_eff with full collision term, flavour oscillations and QED plasma corrections | 3.0440 | Froustey, Pitrou & Volpe 2020, arXiv:2008.01074 | [src] |
 | Finite-temperature QED: O(e²) correction δN_eff ≃ +0.010, O(e³) ≃ −0.001; expected to move 3.044 to 3.043 | — | Bennett et al. 2019, arXiv:1911.04504 | [src] |
 
-The reference value used by DESI, ACT and SPT is 3.044 (arXiv:2503.14744, arXiv:2506.20707). A text quoting 3.046 is using the pre-2020 value, which is the one in Planck 2018 [sec: `cosmo-cmb`]; this session did not fetch the paper in which 3.046 originates.
+The reference value used by DESI, ACT and SPT is 3.044 (arXiv:2503.14744, arXiv:2506.20707). A text quoting 3.046 is using the pre-2020 value, which is the one in Planck 2018 (arXiv:1807.06209 Sect. 7.5.2 [src]). It comes from Mangano 2005 (arXiv:hep-ph/0506164 [src]), who obtained N_eff = 3.046 with three-flavour oscillations in the decoupling calculation.
 
 ### 2.2 Measurements (ΛCDM + N_eff, 68% unless stated)
 <!-- key: measurements-lambdacdm-neff-68-unless-stated -->
@@ -366,7 +367,6 @@ The limit fell by a factor of about two between 2018 and 2025 while the effectiv
 ## Not verified
 <!-- key: not-verified -->
 
-- The origin of the older Standard-Model value N_eff = 3.046 was not fetched.
 - The first JUNO oscillation paper (59 days of data) was seen only through citing abstracts; its arXiv ID was not retrieved. The 207-day paper in §1.1 supersedes it.
 - LEGEND-200 first results on ⁷⁶Ge exist as 2025 conference proceedings found in a search; they were not read and no number is quoted.
 - No KATRIN neutrino-mass result later than the 259-day analysis was found in an arXiv title search from June 2025; whether the final-data-set result has appeared elsewhere was not checked.

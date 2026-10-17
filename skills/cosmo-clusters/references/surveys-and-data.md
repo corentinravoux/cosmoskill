@@ -1,7 +1,7 @@
 # Galaxy-cluster cosmology — surveys and data
 
 Scope: cluster catalogues and the lensing data used to calibrate them, past, current and planned.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-14
 
 ## eROSITA on SRG (X-ray, 0.2–2.3 keV detection band)
 <!-- key: erosita-on-srg-x-ray-0-2-2-3-kev-detection-band -->
@@ -107,7 +107,7 @@ Euclid Q1 is a validation of the cluster workflow, not a cosmological sample. Eu
 | DES Y3, KiDS-1000, HSC | eRASS1 | HSC: 124 clusters and groups | arXiv:2402.08455, arXiv:2504.01076 | [src] |
 | KiDS | ACT DR5 | 157 clusters at > 5σ | arXiv:2304.10219 | [src] |
 | DES Y3 | ACT DR5 | 443 clusters | arXiv:2512.18935 | [src] |
-| DES shear profiles | Planck PSZ2 cosmology sample | not read | arXiv:2509.02068 | [src] |
+| DES shear profiles | Planck PSZ2 cosmology sample | 93 clusters in the DES Y3 footprint | arXiv:2509.02068 | [src: Sect. 2.3] |
 | HSC-SSP Y3 | Planck | 19 clusters, z_eff ≈ 0.24 | arXiv:2606.17984 | [src] |
 | Subaru and CFHT (CHEX-MATE) | Planck | 41 clusters at 0.11 ≤ z ≤ 0.55 | arXiv:2606.24142 | [src] |
 | HSC Y3 | SDSS redMaPPer; XXL C1 | 86 XXL clusters | arXiv:2309.13025, arXiv:2602.11989 | [src] |
@@ -160,4 +160,3 @@ Euclid Q1 is a validation of the cluster workflow, not a cosmological sample. Eu
 - eROSITA data releases after eRASS1 and their dates.
 - Simons Observatory cluster survey status and expected yield.
 - The eRASS1 supercluster catalogue, the eROSITA–Chandra–XMM temperature cross-calibration, the ACT DR5 MCMF catalogue, the 2026 Planck SZ meta-catalogue and the 2026 optically confirmed HSC shear-selected sample exist (titles seen by the first pass of this research) but were not read, and are not cited.
-- Number of clusters with DES shear profiles in the Planck × DES analysis.

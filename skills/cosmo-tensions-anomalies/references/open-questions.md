@@ -2,7 +2,7 @@
 
 Scope: what the next data will decide, and stale tension claims that still circulate with the paper that corrects each.
 
-Snapshot: 2026-10-07
+Snapshot: 2026-10-16
 
 Flags as in `results.md`: `[src]` read this session in the cited paper; `[sec: X]` taken from the reference files of sibling skill X (abbreviations at the top of `results.md`); `[der]` derived here. "ID in sibling" means the paper is cited with its arXiv ID in that sibling and is not in this skill's `sources.tsv`.
 
@@ -32,7 +32,7 @@ Flags as in `results.md`: `[src]` read this session in the cited paper; `[sec: X
 ### 1.3 Is there an S8 tension, and between what?
 <!-- key: is-there-an-s8-tension-and-between-what -->
 
-**Lensing against the CMB.** Reduced, not gone: KiDS-Legacy 0.73σ, DES Y6 cosmic shear 2.0σ, DES Y6 3×2pt 2.6σ in S8 and 1.8σ in full space (arXiv:2503.19441, arXiv:2602.10065, arXiv:2601.14559) [sec: wl]. A 2026 review of the probes exists (Pantos & Perivolaropoulos 2026, arXiv:2602.12238) [sec: wl].
+**Lensing against the CMB.** Reduced, not gone: KiDS-Legacy 0.76σ in S8 and 0.73σ in Σ8 against Planck alone, DES Y6 cosmic shear 2.0σ in S8 (NLA), DES Y6 3×2pt 2.6σ in S8 and 1.8σ in full space against Planck + ACT + SPT, 1.0σ in full space against Planck 2018 alone (arXiv:2503.19441 [src: Sect. 7], arXiv:2602.10065 [src: Sect. VI.2.1], arXiv:2601.14559 [src: Sect. V.2]). A 2026 review of the probes exists (Pantos & Perivolaropoulos 2026, arXiv:2602.12238) [sec: wl].
 
 **Among low-redshift probes.** eRASS1 clusters at 0.86 ± 0.01 against KiDS AMICO clusters at 0.74 ± 0.03 and a tSZ cross-correlation at 0.72 ± 0.03: differences of 3.8σ and 4.4σ [der, `results.md` §2.3]. The cluster values rest on lensing mass calibrations from the shear surveys, and the tSZ value on one simulation suite's gas model (`surveys-and-data.md` §2).
 
@@ -68,7 +68,7 @@ For: 387 ± 28 km/s at 150 h⁻¹Mpc against an expectation of 139 (arXiv:2302.0
 ### 1.7 Is the A_L anomaly over?
 <!-- key: is-the-al-anomaly-over -->
 
-Yes for ground-based data and PR4 HiLLiPoP (≤ 1σ); not in combinations that keep Planck TT at ℓ > 1000 (CMB-SPA A_2pt = 1.079 ± 0.038, 2.1σ). SPT's position is that the Planck features "may not be cosmological" but that it "cannot make a definitive judgment" (arXiv:2506.20707) [sec: cmb]. The same feature still leaks into Ω_K, Σ0 and the neutrino mass when Planck PR3 is used [sec: cmb, de, inf].
+Yes for ground-based data and PR4 HiLLiPoP (≤ 1σ); not in combinations that keep Planck TT at ℓ > 1000 (CMB-SPA A_2pt = 1.079 ± 0.038, 2.1σ in one parameter [der]; 1.6σ from ΛCDM in the (A_2pt, A_recon) plane, arXiv:2506.20707 [src: Sect. VII.2.3]). SPT's position is that the Planck features "may not be cosmological" but that it "cannot make a definitive judgment" (arXiv:2506.20707) [sec: cmb]. The same feature still leaks into Ω_K, Σ0 and the neutrino mass when Planck PR3 is used [sec: cmb, de, inf].
 
 ### 1.8 Birefringence: a 4.8σ number nobody claims
 <!-- key: birefringence-a-4-8sigma-number-nobody-claims -->
@@ -94,6 +94,8 @@ The H0 World Cup (Schöneberg et al. 2026, arXiv:2607.13283, conclusions) [src] 
 | Modified recombination (group M), best model | about 4σ | moderate | ACT DR6; lowers Ω_m against late-time data |
 | Extra radiation (group R), best model | about 4.5σ | little or none | ACT DR6 damping tail; no longer competitive, unlike in the 2021 comparison |
 | Late-time and mixed models (groups L, E + L) | not significantly reduced | none | BAO and uncalibrated supernovae |
+
+Read in the body (baseline CMB + BAO + SN, reference ΛCDM with free Σm_ν) [src: Sect. IV.2]: axion early dark energy has −ΔAIC = 23.4, Δ_DMAP = 2.5σ and ln BF ≃ 10.5, the largest of the competition; cold new early dark energy reaches Δ_shift ≈ Δ_Gauss ≈ 2.8σ with ln BF ≈ 3; varying electron mass about 4σ, −ΔAIC = 12.6, ln BF ≈ 3.5; the four-parameter recombination history −ΔAIC = 9.8 but tensions above 5σ and ln BF ≈ 0; WZDR about 4.5σ, −ΔAIC ≃ 8, ln BF ≈ 1.8; the sign-switching cosmological constant ΔAIC ≃ −3.6, ln BF ≈ 0.92, tension above 5σ. The weaker showing of groups M, E + L and R than in earlier comparisons is attributed to ACT's higher damping-tail amplitude. In ΛCDM the same data give Σm_ν < 66 meV (95%), relaxed to < 120 meV without the SRoll2 EE likelihood.
 
 Further statements of the same paper [src]: "no model fully resolves the Hubble tension in the full baseline analysis"; without ACT, most models of groups R, M and E reach 3–3.5σ and cold new early dark energy about 2.3σ, so "ACT data are therefore central"; adding CPL dark energy to an early-time model does not help reach the SH0ES calibration (w0, wa shift H0 downward) but models that ease the H0 tension reduce the preference for w0wa; running and running-of-running of the primordial spectrum bring radiation and varying-electron-mass models to 3–3.5σ; BBN constrains groups R, M and E with a dependence on the nuclear-rate code; the models "should be understood primarily as representative of phenomenological mechanisms rather than as complete fundamental theories". The predecessor is the H0 Olympics (Schöneberg et al. 2022, arXiv:2107.10291) [sec: h0].
 
@@ -181,6 +183,6 @@ No forecast number is given in this table: the forecasts held by the siblings ar
 - Reviews of 2026 seen in a title search and not read: "The Hubble tension: A decade review" (Cai & Wang, cited in `cosmo-distance-ladder-h0`), "Hubble tension: a short review of theoretical explanations", "A Review on Resolving the Hubble Tension via Late-Universe Physics", "Dark Energy in the DESI Era: A Brief Review". Their contents are not represented here.
 - The body of the CosmoVerse white paper (arXiv:2504.01669) was not read this session; only its submission date and title were confirmed.
 - Whether a successor to the CosmoVerse white paper has been issued: none was found in a date-sorted title search (from 2025-04-01) on 2026-10-10; the search matched title words only.
-- The H0 World Cup tables (per-model residual tensions and Bayes factors): only the conclusions and the metrics section were read; the per-group figures above are the rounded values of the conclusions.
+- The H0 World Cup tables themselves (Tables 2–6): the per-model figures of §2.1 are those of the text of Sect. IV.2, not the table cells.
 - Claims of redshift-dependent ("running") H0, of anisotropic acceleration from supernovae, and of a decelerating universe after age corrections: seen in searches (2024–2026 preprints by one group) and not assessed; the rebuttals of the age-bias claim are cited in `cosmo-supernovae`.
 - A number-count dipole from Euclid, Rubin or SPHEREx data: none found.

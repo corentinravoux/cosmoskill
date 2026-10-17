@@ -5,7 +5,7 @@ description: Use when reviewing, planning or fact-checking reionisation or 21 cm
 
 # Reionisation, 21 cm and line-intensity mapping — expert reference
 
-Snapshot 2026-10-07. Numbers carry provenance flags ([src] / [sec] / [der]);
+Snapshot 2026-10-13. Numbers carry provenance flags ([src] / [sec] / [der]);
 re-verify against the cited paper before a number enters a manuscript.
 
 ## File map
@@ -23,17 +23,17 @@ re-verify against the cited paper before a number enters a manuscript.
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
 
-- Planck low-ℓ polarisation gives τ = 0.051–0.063, σ ≈ 0.006 (arXiv:1807.06209, arXiv:1908.09856, arXiv:2103.14378; the lowest, 0.051 ± 0.006 from NPIPE, arXiv:2007.04997, is tabulated in `cosmo-cmb`). The value 0.090 ± 0.012 is CMB + DESI without low-ℓ EE, not a measurement (arXiv:2504.16932).
+- Planck low-ℓ polarisation gives τ = 0.051–0.063, σ ≈ 0.005–0.009 (arXiv:1807.06209, arXiv:1908.09856, arXiv:2103.14378; lowest, 0.051 ± 0.006 from NPIPE, arXiv:2007.04997, in `cosmo-cmb`). The value 0.090 ± 0.012 is CMB + DESI without low-ℓ EE, not a measurement (arXiv:2504.16932).
 - Reionisation probes in place of low-ℓ EE give τ = 0.067 ± 0.011 (arXiv:2607.26373). τ = 0.09 sits ≈ 2σ from SPT patchy-kSZ limits (arXiv:2505.15899); exotic ionisation adds ≤ 0.008 (arXiv:2608.01919).
 - Reionisation ends late: dark gaps persist to z ≃ 5.3 (arXiv:2109.06295); x_HI = 0.19 ± 0.07 at z = 5.6 (arXiv:2405.12273). Background fluctuations remain an alternative (arXiv:2312.08464).
 - The mean free path falls from 9.33 to 0.81 proper Mpc over z = 5.08–5.93 (arXiv:2308.04614).
 - At z ~ 7 every probe gives x_HI ≈ 0.4–0.65 with errors of 0.2–0.4 (arXiv:1802.06066, arXiv:2504.04683, arXiv:2609.40363).
 - kSZ: SPT-3G D1 finds D_3000 = 1.75 ± 0.86 μK² and Δz(25–75%) < 3.8 (arXiv:2601.20551); ACT gives Δz < 4.4 (arXiv:2506.06274). "Δz = 1.0" is superseded (arXiv:2002.06197).
-- EDGES (78 MHz, 0.5 K; arXiv:1810.05912) is unconfirmed; SARAS 3 rejects its profile at 95.3% (arXiv:2112.06778). EDGES data are public since 2026 (arXiv:2605.16643).
+- EDGES (78 MHz, 0.5 K; arXiv:1810.05912) is unconfirmed; SARAS 3 rejects its profile at 95.3% (arXiv:2112.06778); its depth moves from 370 to 670 mK with the beam correction (arXiv:1910.03165). EDGES data are public since 2026 (arXiv:2605.16643).
 - No 21 cm power spectrum is detected at z > 6. Deepest 2σ limits: HERA Phase I 457 mK² (z = 7.9, k = 0.34 h/Mpc; arXiv:2210.04912), MWA (23.0 mK)² east–west and (21.7 mK)² = 470 mK² north–south (z = 6.5; arXiv:2508.04164), LOFAR (54.3 mK)² (z = 9.1; arXiv:2503.05576), NenuFAR 4.6 × 10⁵ mK² (z = 20.3; arXiv:2507.10533). HERA Phase II is limited by mutual coupling (arXiv:2511.21289).
 - HI intensity mapping has auto-spectra: CHIME, 12.5σ at z ~ 1 (arXiv:2511.19620); MeerKLASS, S/N 6.2 at z = 0.42 (arXiv:2610.12158). No BAO.
 - An amplitude is Ω_HI b_HI r (cross), Ω_HI b_HI (auto) or CHIME's A_HI, never Ω_HI (arXiv:1208.0331, arXiv:2202.01242).
-- No other line has a detected 3D power spectrum. COMAP sets limits (arXiv:2406.07511); mean CO (7σ) and [CII] (3σ) backgrounds come from tomographic cross-correlation (arXiv:2602.02658).
+- No other line is detected on clustering scales: COMAP sets limits (arXiv:2406.07511); COPSS and mmIME see CO shot noise (arXiv:1605.03971, arXiv:2008.08087); mean CO (7σ) and [CII] (3σ) backgrounds come from tomographic cross-correlation (arXiv:2602.02658).
 - JWST: the baryon-limit argument used photometric candidates (arXiv:2208.01611); ΛCDM models fit luminosity functions to z = 14 (arXiv:2604.18683). The photon-budget excess (arXiv:2404.07250) shrinks with mass-complete samples (arXiv:2409.01286).
 
 ## Systematics a referee checks
@@ -80,7 +80,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; open 5k; methods 7k; results 11k; surveys 4k; systematics 6k.
+Sizes, in thousands of tokens: L1 2k; open 5k; methods 13k; results 13k; surveys 5k; systematics 11k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

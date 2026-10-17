@@ -2,7 +2,7 @@
 
 Scope: what the fσ8 compilation does not hold — the non-fσ8 output of the DESI DR1 peculiar-velocity
 release, the growth, gravity and flow results found in date-sorted searches from mid-2025 to the
-snapshot, and the bulk-flow record with its estimators. Snapshot: 2026-10-07
+snapshot, and the bulk-flow record with its estimators. Snapshot: 2026-10-14
 
 **The historical fσ8 table is not repeated here.** It lives, row by row and traced to source, in
 `pv-surveys.md` (§6) and is discussed in `fsigma8-pv-compilation.md`; nothing here duplicates it.
@@ -58,6 +58,10 @@ Reading notes.
   (maximum-likelihood fields) on the same catalogue; the field-level and correlation-function
   abstracts call the other analyses consistent within 1σ [src: arXiv:2512.03229, arXiv:2512.03230,
   arXiv:2512.03231].
+- The correlation-function paper quotes its companions as 0.482 +0.049/−0.026 (field-level, before
+  the ×1.64 error inflation of arXiv:2512.03229 Sect. 5) and 0.443 +0.113/−0.070 (power spectra),
+  not the abstract values above, which were re-read on arXiv on 2026-10-14 [src: arXiv:2512.03230,
+  Sect. 4.3.5; abstracts of arXiv:2512.03229, arXiv:2512.03231]. Quote the abstracts.
 - In mock units the largest pairwise difference, field-level minus correlation functions = 0.092, is
   1.1σ; the other two are 0.7σ and 0.6σ [der: σ_diff² = σ_a² + σ_b² − 2ρσ_aσ_b with the mock
   scatters and correlations of the table above, giving 0.085, 0.063, 0.082]. The spread is therefore
@@ -137,7 +141,7 @@ Galactic.
 | same | same | same | 70 h⁻¹Mpc | 243 ± 58 | same | consistent | [src] |
 | Qin et al. 2018, arXiv:1804.05520 | 2MTF + 6dFGSv, 10 904 galaxies | ηMLE (log-distance likelihood) | 40 h⁻¹Mpc | 288 ± 24 | (296° ± 6°, 21° ± 5°) | consistent | [src] |
 | Qin et al. 2019, arXiv:1811.00822 | 2MTF + CF3 | ηMLE | 37 h⁻¹Mpc | 259 ± 15 | (300° ± 4°, 23° ± 3°) | consistent; shear 1.7 ± 0.4 h km/s/Mpc | [src] |
-| Peery, Watkins & Feldman 2018, arXiv:1808.07772 | CF3 | improved MV, top-hat, H0-independent | 150 h⁻¹Mpc | (amplitude in body) | — | ~2 % chance of a flow this large | [src] |
+| Peery, Watkins & Feldman 2018, arXiv:1808.07772 | CF3 | improved MV, top-hat, H0-independent | 150 h⁻¹Mpc | 282 km/s (r⁻² weights; 252 with Gaussian weights) | — | ΛCDM expectation 128 (166); χ²(3 dof) = 9.59 (6.92), probability 2.2 % (7.4 %) | [src: Table 1] |
 | Qin 2021, arXiv:2105.04800 | 2MTF | estimator on Gaussianised velocities | 30 h⁻¹Mpc | 332 ± 27 | (293° ± 5°, 13° ± 4°) | consistent | [src] |
 | Watkins et al. 2023, arXiv:2302.02028 | CF4 | MV, top-hat | 150 h⁻¹Mpc | 387 ± 28 (ΛCDM expectation 139) | (297° ± 4°, −6° ± 3°) | χ² = 19.34 for 3 d.o.f., probability 0.023 % | [src: Table 1] |
 | same | same | same | 200 h⁻¹Mpc | 419 ± 36 (ΛCDM expectation 120) | (298° ± 5°, −8° ± 4°) | χ² = 29.13 for 3 d.o.f., probability 0.00021 % | [src: Table 1] |
@@ -306,8 +310,8 @@ Reading notes.
 ## Not verified in this file
 <!-- key: not-verified-in-this-file -->
 
-- Amplitudes of the Peery et al. 2018 and Duangchan et al. 2025 bulk flows (only significances
-  read).
+- Amplitude of the Duangchan et al. 2025 bulk flow (abstract gives only a 3σ tension at ~140 and
+  240 h⁻¹Mpc); the Peery et al. 2018 amplitude is now in §3a.
 - The estimator behind the Courtois et al. 2025 bulk flow (abstract only).
 - Any DESI DR2 peculiar-velocity result: none found up to 2026-10-08.
 - fσ8 values of the table in `pv-surveys.md` were not re-read this session except those quoted above from

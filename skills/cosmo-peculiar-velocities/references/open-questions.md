@@ -2,7 +2,7 @@
 
 Scope: live controversies with both sides cited, internal tensions between analyses of the same
 data, method debates, forecasts (labelled), what the next data decide, and the stale claims that
-still circulate. Snapshot: 2026-10-07
+still circulate. Snapshot: 2026-10-14
 
 Two controversies are already summarised in
 `pv-surveys.md`
@@ -250,7 +250,7 @@ Reading the table.
 | "v = cz − H0 d" for velocities at z > 0.03 | ~100 km/s too high at z ~ 0.04; use the log-distance estimators | arXiv:1405.0105, arXiv:1411.6665 |
 | "The zero-point does not matter for growth" | Negligible for the velocity power spectrum, decisive for β and residual flows (250 → 150 km/s in 2MTF) | arXiv:1609.08247, arXiv:1511.04849 |
 | "ZTF has measured fσ8" | Only simulations and forecasts are published | arXiv:2303.01198, arXiv:2609.34508 |
-| "kSZ measures the velocity field amplitude" | It measures τ × v; b_v ≈ 0.2–0.45 against halo-model profiles, depending on sample and fiducial model | arXiv:2511.15701, arXiv:2506.21657, arXiv:2604.04867 |
+| "kSZ measures the velocity field amplitude" | It measures τ × v; b_v ≈ 0.1–0.45 against halo-model profiles, depending on sample and fiducial model (0.10–0.15 for DESI DR2 emission-line galaxies, 0.2–0.45 for luminous red galaxies; values in `cosmo-cmb-lss-cross-correlations`, `results.md`) | arXiv:2511.15701, arXiv:2506.21657, arXiv:2604.04867 |
 | "GR predicts faster growth of peculiar velocities than Newtonian theory" | Disputed; the standard result is recovered when the covariant system is solved consistently | arXiv:2603.14511 |
 | "The Franco et al. CF4++ fσ8 is a velocity measurement" | It is a real- vs redshift-space clustering ratio | arXiv:2605.00450 |
 | "Forward model means non-linear dynamics" | See `pv-surveys.md` §5: the indicator is forward-modelled, the field is linear | `pv-surveys.md` |
@@ -258,8 +258,8 @@ Reading the table.
 ## Not verified
 <!-- key: not-verified -->
 
-- Bulk-flow amplitudes of Peery et al. 2018 and Duangchan et al. 2025 (only the significances were
-  read).
+- Bulk-flow amplitude of Duangchan et al. 2025 (only the significance was read); Peery et al. 2018:
+  282 km/s at 150 h⁻¹Mpc, r⁻² weights, 2.2 % probability in ΛCDM [src: arXiv:1808.07772, Table 1].
 - Whether a published rebuttal to Nusser & Tully 2026 or to Whitford et al. 2023 by the MV authors
   exists beyond arXiv:2512.03168.
 - Any Taipan status after the note in `pv-surveys.md`.

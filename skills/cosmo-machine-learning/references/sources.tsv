@@ -1,0 +1,124 @@
+key	id	first_author	year	title	role
+HuertasCompany2022	2210.01813	Huertas-Company	2022	The DAWES review 10: The impact of deep learning for the analysis of galaxy surveys	review
+Dvorkin2022	2203.08056	Dvorkin	2022	Machine Learning and Cosmology	review
+Cranmer2020	1911.01429	Cranmer	2019	The frontier of simulation-based inference	review
+Hermans2022	2110.06581	Hermans	2021	A Trust Crisis In Simulation-Based Inference? Your Posterior Approximations Can Be Unfaithful	critique
+Heitmann2009	0902.0429	Heitmann	2009	The Coyote Universe II: Cosmological Models and Precision Emulation of the Nonlinear Matter Power Spectrum	foundation
+SpurioMancini2022	2106.03846	Spurio Mancini	2021	COSMOPOWER: emulating cosmological power spectra for accelerated Bayesian inference from next-generation surveys	method
+Nygaard2022	2205.15726	Nygaard	2022	CONNECT: A neural network based framework for emulating cosmological observables and cosmological parameter inference	method
+Yang2025	2507.07184	Yang	2025	Design and optimization of neural networks for multifidelity cosmological emulation	method
+Tanaka2026	2605.28596	Tanaka	2026	Dark Quest II: A Wide-Coverage Neural Network Emulator of the Nonlinear Matter Power Spectrum Across Extended Cosmologies	method
+Reeves2025	2507.20990	Reeves	2025	PyBird-JAX: Accelerated inference in large-scale structure with model-independent emulation of one-loop galaxy power spectra	code
+Adamo2026	2603.16003	Adamo	2026	Emulation of SPHEREx Galaxy Power Spectra I: Neural Network Details and Optimization	method
+Vokrouhlicky2026	2606.07745	Vokrouhlicky	2026	CMBolic: Symbolic emulators for the Cosmic Microwave Background. I. Lensing	method
+Grandon2022	2205.11587	Grandón	2022	Bayesian error propagation for neural-net based parameter inference	method
+Alsing2018	1712.00012	Alsing	2017	Generalized massive optimal data compression	foundation
+Charnock2018	1802.03537	Charnock	2018	Automatic physical inference with information maximising neural networks	foundation
+Jeffrey2021	2009.08459	Jeffrey	2020	Likelihood-free inference with neural compression of DES SV weak lensing map statistics	method
+Lanzieri2024	2407.10877	Lanzieri	2024	Optimal Neural Summarisation for Full-Field Weak Lensing Cosmological Implicit Inference	method
+Makinen2021	2107.07405	Makinen	2021	Lossless, Scalable Implicit Likelihood Inference for Cosmological Fields	method
+Ravanbakhsh2017	1711.02033	Ravanbakhsh	2017	Estimating Cosmological Parameters from the Dark Matter Distribution	foundation
+Gupta2018	1802.01212	Gupta	2018	Non-Gaussian information from weak lensing data via deep learning	foundation
+Fluri2022	2201.07771	Fluri	2022	A Full $w$CDM Analysis of KiDS-1000 Weak Lensing Maps using Deep Learning	results
+Lu2023	2301.01354	Lu	2023	Cosmological constraints from HSC survey first-year data using deep learning	results
+Jeffrey2024	2403.02314	Jeffrey	2024	Dark Energy Survey Year 3 results: likelihood-free, simulation-based $w$CDM inference with neural compression of weak-lensing map statistics	results
+VillaescusaNavarro2021b	2109.10360	Villaescusa-Navarro	2021	Robust marginalization of baryonic effects for cosmological inference at the field level	method
+Pietschke2026	2608.26354	Pietschke	2026	Cross-simulator transfer with foundation model summaries: Towards robust SKA-era reionization inference	method
+SaezCasares2026	2610.19891	Sáez-Casares	2026	Low-cost neural summaries for cosmological inference: an ensemble of convolutional neural networks trained on approximate simulations	method
+Saoulis2026	2606.23346	Saoulis	2026	Field-level weak lensing cosmology with $60$ simulations using multifidelity simulation-based inference	method
+Papamakarios2016	1605.06376	Papamakarios	2016	Fast $ε$-free Inference of Simulation Models with Bayesian Conditional Density Estimation	foundation
+Greenberg2019	1905.07488	Greenberg	2019	Automatic Posterior Transformation for Likelihood-Free Inference	foundation
+Papamakarios2019	1805.07226	Papamakarios	2018	Sequential Neural Likelihood: Fast Likelihood-free Inference with Autoregressive Flows	foundation
+Alsing2019	1903.00007	Alsing	2019	Fast likelihood-free cosmology with neural density estimators and active learning	method
+Hermans2020	1903.04057	Hermans	2019	Likelihood-free MCMC with Amortized Approximate Ratio Estimators	foundation
+Miller2021	2107.01214	Miller	2021	Truncated Marginal Neural Ratio Estimation	method
+Rezende2015	1505.05770	Rezende	2015	Variational Inference with Normalizing Flows	foundation
+Papamakarios2017	1705.07057	Papamakarios	2017	Masked Autoregressive Flow for Density Estimation	foundation
+Dax2023	2305.17161	Dax	2023	Flow Matching for Scalable Simulation-Based Inference	method
+vonWietersheimKramsta2024	2404.15402	von Wietersheim-Kramsta	2024	KiDS-SBI: Simulation-based inference analysis of KiDS-1000 cosmic shear	results
+Lueckmann2021	2101.04653	Lueckmann	2021	Benchmarking Simulation-Based Inference	review
+Wernersson2026	2609.24946	Wernersson	2026	Merlin: Fast and flexible 3x2pt cosmology with simulation-based inference	method
+TejeroCantero2020	2007.09114	Tejero-Cantero	2020	SBI -- A toolkit for simulation-based inference	code
+Popovic2026	2607.28725	Popovic	2026	A Simulation Based Inference Approach to Modelling of Type Ia Supernova Populations	results
+Duivenvoorden2025	2512.16869	Duivenvoorden	2025	Robust CMB B-mode analysis with Needlet-ILC and simulation-based inference	method
+Jarugula2026	2608.23534	Jarugula	2026	Strong Lensing Cosmology with Population-level Calibrated Neural Ratio Estimation	method
+Goodfellow2014	1406.2661	Goodfellow	2014	Generative Adversarial Networks	foundation
+Rodriguez2018	1801.09070	Rodriguez	2018	Fast cosmic web simulations with generative adversarial networks	method
+Lanusse2021	2008.03833	Lanusse	2020	Deep Generative Models for Galaxy Image Simulations	method
+Ho2020	2006.11239	Ho	2020	Denoising Diffusion Probabilistic Models	foundation
+Mudur2022	2211.12444	Mudur	2022	Can denoising diffusion probabilistic models generate realistic astrophysical fields?	method
+CuestaLazaro2023	2311.17141	Cuesta-Lazaro	2023	A point cloud approach to generative modeling for galaxy surveys at the field level	method
+Moriwaki2026	2607.19808	Moriwaki	2026	From Dark Matter to Galaxies: Halo-Free Mock Generation via Conditional Point-Cloud Diffusion	method
+Mishra2026	2601.14377	Mishra	2026	Cosmo-FOLD: Fast generation and upscaling of field-level cosmological maps with overlap latent diffusion	method
+Li2026	2605.23114	Li	2026	Increasing the Precision of Surrogate Models for Weak Lensing Mass Maps with Flow Matching	method
+Boruah2025	2511.14667	Boruah	2025	High-resolution weak lensing mass mapping from DES-Y3 data using diffusion-based prior	results
+Doeser2026	2606.10023	Doeser	2026	Learning the Universe: Posterior Reliability of Neural Generative Models in High-Dimensional Field-Level Inference of Cosmic Initial Conditions	critique
+He2019	1811.06533	He	2018	Learning to Predict the Cosmological Structure Formation	foundation
+Jamieson2023	2206.04594	Jamieson	2022	Field Level Neural Network Emulator for Cosmological N-body Simulations	method
+Kaushal2022	2111.02441	Kaushal	2021	NECOLA: Towards a Universal Field-level Cosmological Emulator	method
+OrjuelaQuintana2026	2604.19613	Orjuela-Quintana	2026	MG-NECOLA: A Field-Level Emulator for $f(R)$ Gravity and Massive Neutrino Cosmologies	method
+Lanzieri2022	2207.05509	Lanzieri	2022	Hybrid Physical-Neural ODEs for Fast N-body Simulations	method
+Dai2021	2010.02926	Dai	2020	Learning effective physical laws for generating cosmological hydrodynamics with Lagrangian Deep Learning	method
+Jacobus2026	2607.27320	Jacobus	2026	Emulating Cosmic Structure Formation with a Lagrangian Neural Cellular Automaton	method
+Li2021	2010.06608	Li	2020	AI-assisted super-resolution cosmological simulations	method
+Troster2019	1903.12173	Tröster	2019	Painting with baryons: augmenting N-body simulations with gas using deep generative models	method
+Lee2026	2609.10709	Lee	2026	BIND (Baryonic INpainting with Deep learning): A Field-level Emulator for Galaxy Groups and Clusters	method
+Kessler2019	1903.11756	Kessler	2019	Models and Simulations for the Photometric LSST Astronomical Time Series Classification Challenge (PLAsTiCC)	data
+Hlozek2023	2012.12392	Hložek	2020	Results of the Photometric LSST Astronomical Time-series Classification Challenge (PLAsTiCC)	results
+Boone2019	1907.04690	Boone	2019	Avocado: Photometric Classification of Astronomical Transients with Gaussian Process Augmentation	method
+Moller2020	1901.06384	Möller	2019	SuperNNova: an open-source framework for Bayesian, Neural Network based supernova classification	method
+Qu2021	2106.04370	Qu	2021	SCONE: Supernova Classification with a Convolutional Neural Network	method
+Shah2025	2501.01496	Shah	2025	ORACLE: A Real-Time, Hierarchical, Deep-Learning Photometric Classifier for the LSST	method
+Fraga2024	2404.08798	Fraga	2024	Transient Classifiers for Fink: Benchmarks for LSST	method
+Muthukrishna2019	1903.02557	Muthukrishna	2019	DASH: Deep Learning for the Automated Spectral Classification of Supernovae and their Hosts	method
+Busca2018	1808.09955	Busca	2018	QuasarNET: Human-level spectral classification and redshifting with Deep Neural Networks	method
+Metcalf2019	1802.03609	Metcalf	2018	The Strong Gravitational Lens Finding Challenge	data
+Mitra2025	2512.06319	Mitra	2025	A Fully Photometric Approach to Type Ia Supernova Cosmology in the LSST Era: Host Galaxy Redshifts and Supernova Classification	forecast
+Baron2017	1611.07526	Baron	2016	The weirdest SDSS galaxies: results from an outlier detection algorithm	method
+Villar2021	2103.12102	Villar	2021	A Deep Learning Approach for Active Anomaly Detection of Extragalactic Transients	method
+Liang2023	2307.07664	Liang	2023	Outlier Detection in the DESI Bright Galaxy Survey	results
+Muthukrishna2022	2111.00036	Muthukrishna	2021	Real-Time Detection of Anomalies in Large-Scale Transient Surveys	method
+Ishida2021	1909.13260	Ishida	2019	Active Anomaly Detection for time-domain discoveries	method
+Lochner2021	2010.11202	Lochner	2020	Astronomaly: Personalised Active Anomaly Detection in Astronomical Data	code
+Pruzhinskaya2026	2603.29511	Pruzhinskaya	2026	Anomaly detection in Fink. I. Discovery, follow-up, and classification of unusual sources	results
+Sreejith2026	2609.36096	Sreejith	2026	Comparing Active Anomaly Detection Frameworks: From Light Curves to Images	method
+Akhmetzhanova2025	2508.05744	Akhmetzhanova	2025	Detecting Model Misspecification in Cosmology with Scale-Dependent Normalizing Flows	method
+VillaescusaNavarro2020	1909.05273	Villaescusa-Navarro	2019	The Quijote simulations	data
+VillaescusaNavarro2021	2010.00619	Villaescusa-Navarro	2020	The CAMELS project: Cosmology and Astrophysics with MachinE Learning Simulations	data
+VillaescusaNavarro2022	2109.10915	Villaescusa-Navarro	2021	The CAMELS Multifield Dataset: Learning the Universe's Fundamental Parameters with Artificial Intelligence	data
+Nagamine2026	2609.23982	Nagamine	2026	The CAMELS-CROCODILE Simulation Suite: A New Cosmology--Astrophysics Playground for Machine Learning	data
+Kacprzak2023	2209.04662	Kacprzak	2022	CosmoGridV1: a simulated $w$CDM theory prediction for map-level cosmological inference	data
+Beyond2pt2024	2405.02252	Beyond-2pt Collaboration	2024	A Parameter-Masked Mock Data Challenge for Beyond-Two-Point Galaxy Clustering Statistics	data
+Dai2026	2604.14451	Dai	2026	FAIR Universe Weak Lensing ML Uncertainty Challenge: Handling Uncertainties and Distribution Shifts for Precision Cosmology	data
+DESC2026	2601.14235	LSST Dark Energy Science Collaboration	2026	Opportunities in AI/ML for the Rubin LSST Dark Energy Science Collaboration	review
+Thomsen2025	2511.04681	Thomsen	2025	Dark Energy Survey Year 3 results: Simulation-based $w$CDM inference from weak lensing and galaxy clustering maps with deep learning: Analysis design	forecast
+Sinigaglia2026	2603.13011	Sinigaglia	2026	Simulation-based inference from the Lyman-alpha forest 1D power spectrum with CAMELS	critique
+VillaescusaNavarro2022b	2201.02202	Villaescusa-Navarro	2022	Cosmology with one galaxy?	method
+Echeverri2023	2304.06084	Echeverri	2023	Cosmology with one galaxy? -- The ASTRID model and robustness	critique
+Shao2023	2209.06843	Shao	2022	Robust field-level inference with dark matter halos	method
+deSanti2023	2302.14101	de Santi	2023	Robust Field-level Likelihood-free Inference with Galaxies	method
+deSanti2023b	2310.15234	de Santi	2023	Field-level simulation-based inference with galaxy catalogs: the impact of systematic effects	systematics
+RegaldoSaintBlancard2024	2310.15250	Régaldo-Saint Blancard	2023	Galaxy Clustering Analysis with SimBIG and the Wavelet Scattering Transform	critique
+Roncoli2023	2311.01588	Roncoli	2023	Domain Adaptive Graph Neural Networks for Constraining Cosmological Parameters Across Multiple Data Sets	method
+Ward2022	2210.06564	Ward	2022	Robust Neural Posterior Estimation and Statistical Model Criticism	method
+Schmitt2023	2112.08866	Schmitt	2021	Detecting Model Misspecification in Amortized Bayesian Inference with Neural Networks	method
+Huang2023	2305.15871	Huang	2023	Learning Robust Statistics for Simulation-based Inference under Model Misspecification	method
+ZorrillaMatilla2020	2007.06529	Zorrilla Matilla	2020	Interpreting deep learning models for weak lensing	method
+Ocampo2026	2604.05290	Ocampo	2026	Explaining Neural Networks on the Sky: Machine Learning Interpretability for Cosmic Microwave Background Maps	method
+Semenzato2026	2606.11295	Semenzato	2026	Interpretable Neural Marked Statistics for Cosmological Inference	method
+Cranmer2020b	2006.11287	Cranmer	2020	Discovering Symbolic Models from Deep Learning with Inductive Biases	foundation
+Cranmer2023	2305.01582	Cranmer	2023	Interpretable Machine Learning for Science with PySR and SymbolicRegression.jl	code
+Bartlett2022	2211.11461	Bartlett	2022	Exhaustive Symbolic Regression	method
+Bartlett2024	2311.15865	Bartlett	2023	A precise symbolic emulator of the linear matter power spectrum	method
+Thiele2026	2605.10719	Thiele	2026	Machine Learning Techniques for Astrophysics and Cosmology: Simulation-Based Inference	review
+Ho2024	2402.05137	Ho	2024	LtU-ILI: An All-in-One Framework for Implicit Inference in Astrophysics and Cosmology	code
+Lakshminarayanan2017	1612.01474	Lakshminarayanan	2016	Simple and Scalable Predictive Uncertainty Estimation using Deep Ensembles	foundation
+Delaunoy2022	2208.13624	Delaunoy	2022	Towards Reliable Simulation-Based Inference with Balanced Neural Ratio Estimation	method
+Sasli2026	2607.08044	Sasli	2026	Catching Disguised Transients with ASTRANet: Anomaly-Aware Spectroscopic Classification and Conformal Calibration	method
+Genel2026	2606.10038	Genel	2026	Learning the Universe with the 2nd Generation of CAMELS: Varying 35 parameters of the IllustrisTNG model in (50Mpc/h)^3 boxes	data
+Shirasaki2026	2605.12877	Shirasaki	2026	Machine-learning applications for weak-lensing cosmology	review
+ChavesMontero2026	2605.22489	Chaves-Montero	2026	Machine Learning Techniques for Astrophysics and Cosmology: Lyman-$α$ forest	review
+Euclid2025arcs	2511.03064	Euclid Collaboration	2025	Euclid Quick Data Release (Q1). Searching for giant gravitational arcs in galaxy clusters with mask region-based convolutional neural networks	results
+Williamson2026	2606.11309	Williamson	2026	Dark Energy Survey Year 3 results: optimized $w$CDM simulation-based inference with weak lensing map-level hybrid statistics	results
+Borrett2026	2604.09621	Borrett	2026	Competing with AI Scientists: Agent-Driven Approach to Astrophysics Research	results
+Freeburn2025	2507.22864	Freeburn	2025	Identification and photometric classification of extragalactic transients in the Vera C. Rubin Observatory's Data Preview 1	results

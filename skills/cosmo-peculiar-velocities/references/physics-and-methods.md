@@ -2,7 +2,7 @@
 
 Scope: the observables, estimators, covariance models and likelihoods used in direct
 peculiar-velocity cosmology, with the equations as the cited papers write them, their range of
-validity, and the public codes. Snapshot: 2026-10-07
+validity, and the public codes. Snapshot: 2026-10-14
 
 Not repeated here: the indicators, the surveys and the four **method families** with the
 classification of every published fσ8, which are in
@@ -24,7 +24,23 @@ with D the comoving radial distance, z_obs the observed and z_cos the cosmologic
 et al. 2025, arXiv:2501.16852, §3.2) [src]. Johnson et al. 2014 (arXiv:1404.3799) state the reason
 it must be used: the intrinsic scatter of the FP and TF relations "is only Gaussian in logarithmic
 distance units; wrongly assuming it is Gaussian in linear (velocity) units can bias cosmological
-constraints" [src: abstract].
+constraints" [src: abstract]. The DESI DR1 form, η ≡ log10[D(z_obs)/D(z_H)] = α v_p with
+α(z_obs) = (1 + z_obs) / [ln(10) D(z_obs) H(z_obs)], follows Johnson et al. 2014 and Adams & Blake
+2017 (derivation in their App. B); FP velocity errors are log-normal because the magnitude offsets
+from the plane are Gaussian (Springob et al. 2014, App. A) [src: arXiv:2512.03230, eqs. 18–20,
+Sect. 3.2.1].
+
+**Where the indicators come from.** Faber & Jackson 1976 (doi:10.1086/154215): velocity dispersion
+correlates with absolute magnitude, ellipticals are "close to being a one-parameter family" [src:
+abstract]. Dressler et al. 1987 (doi:10.1086/164947): 97 ellipticals in six clusters lie on a plane
+L ∝ σ^{8/3} Σe^{−3/5}; the D_n–σ relation gives distances with rms ≲ 25 % per galaxy, ≲ 10 % per rich
+cluster [src: abstract]. Djorgovski & Davis 1987 (doi:10.1086/164948) name the "fundamental plane"
+and propose it as an improved distance indicator [src: abstract]. The TF relation is Tully & Fisher
+1977 (A&A 54, 661; no DOI or arXiv record found), cited here through Turner 2024 [sec:
+arXiv:2411.19484, Sect. 3.1, which quotes 0.35–0.40 mag TF scatter and ~0.1 dex FP scatter, both
+~20 % in distance]. Nusser & Davis 1994 (arXiv:astro-ph/9407100) fit the **inverse** TF relation
+with a parametrised velocity field: free of Malmquist bias without multi-streaming, if no selection
+is made on the circular velocities [src: abstract].
 
 **Redshift composition.** Redshifts multiply, they do not add: (1 + z) = (1 + z̄)(1 + z_p) (Davis &
 Scrimgeour 2014, arXiv:1405.0105, their eq. for the total redshift) [src]. The classic approximation
@@ -62,7 +78,9 @@ error [src: abstract].
 ## 2. Linear model of the density and velocity power spectra
 <!-- key: linear-model-of-the-density-and-velocity-power -->
 
-The model that every likelihood analysis descends from is Koda et al. 2014 (arXiv:1312.1022), who
+The redshift-space terms descend from Kaiser 1987 (doi:10.1093/mnras/227.1.1): peculiar velocities
+give the large-scale power spectrum "a quadrupole anisotropy, providing a way to estimate Ω" [src:
+abstract]. The model that every likelihood analysis descends from is Koda et al. 2014 (arXiv:1312.1022), who
 introduced a redshift-space damping of the velocity field that earlier work had set to 1:
 
     P^s_gg(k, μ) = (1 + 2 r_g β μ² + β² μ⁴) D_g² b² P_mm(k)
@@ -103,7 +121,12 @@ velocities) is taken as Gaussian with zero mean and covariance C(Θ) = C_field(�
 likelihood is maximised or sampled, and no summary statistic is measured. Origin: Johnson et al.
 2014 (arXiv:1404.3799, velocity only, fσ8(k)); Adams & Blake 2017 (arXiv:1706.05205, first
 density–velocity cross-covariance); Adams & Blake 2020 (arXiv:2004.06399, RSD in the density term)
-[src: abstracts].
+[src: abstracts]. Earlier roots: Jaffe & Kaiser 1994 (arXiv:astro-ph/9408046), a likelihood of
+velocity data for a P(k) parametrised by (σ8, Γ), applied to Lauer & Postman clusters and to SNe Ia;
+Abate et al. 2008 (arXiv:0802.1935), the full velocity covariance averaged in grid cells, which
+"reduces the number of data points and smooths out nonlinearities", with < 3 % bias on σ8 for a
+6dFGSv-like survey [src: abstracts]. Johnson et al. 2014 grid with the Abate et al. scheme [src:
+arXiv:1404.3799, Sect. 3.5].
 
 **Covariance from the power spectrum.** For two fields a, b at positions r1, r2,
 
@@ -162,9 +185,9 @@ arXiv:1404.3799, abstract].
   ∂fσ8/∂σ_u · δσ_u = 0.018, "around 30 % of the statistical uncertainty"; sampling it would need
   covariances pre-computed on a σ_u grid, and "fixing σ_u already requires around ~140 GB of
   memory".
-- Cells with δ_g > 10 are removed as ones "that our quasi-linear theory cannot accurately model" (41
-  of 2 023 cells, about 2 %, in the configuration of its appendix), and a 4σ cut on η removes
-  outliers.
+- Cells with δ_g > 10 are removed as ones "that our quasi-linear theory cannot accurately model" (6
+  of ~6 000 cells on the 20 h⁻¹Mpc grid; the 41 of 2 023 cells, about 2 %, is the δ_g > 2 cut of the
+  30 h⁻¹Mpc variant) [src: App. B], and a 4σ cut on η removes outliers.
 - The likelihood is "a combination of a Gaussian and a non-Gaussian part, arising from marginalising
   over the zero-point", which makes the posterior of small samples asymmetric.
 - The algorithm was rewritten in JAX for the DR1 sample size [src: abstract].
@@ -183,7 +206,11 @@ field configurations" [src: abstract].
 The radial momentum field is the density-weighted velocity, ρ(r) = [1 + δ_g(r)] v(r); its power
 spectrum is the velocity power spectrum plus three higher-order terms, ⟨uu⟩ + ⟨uδu⟩ + ⟨δuu⟩ + ⟨δuδu⟩
 (Howlett 2019, arXiv:1906.02875, eq. "mom") [src]. It is used because it needs no volume weighting
-of a sparsely sampled velocity field. Estimator:
+of a sparsely sampled velocity field. The statistic was introduced by Park 2000
+(arXiv:astro-ph/0012066: momentum field "equal to the velocity field in the linear regime", radial
+part with ~1/3 of the total power, applied to Mark III) and measured on SFI by Park & Park 2005
+(arXiv:astro-ph/0509740: β_S = 0.49 +0.08/−0.05 over 0.026 ≲ k ≲ 0.157 h Mpc⁻¹) [src: abstracts];
+Howlett 2019 revisits these "two key references" [src: arXiv:1906.02875, Sect. 1]. Estimator:
 
     F^p(r)        = w(r) n_g(r) u(r) / A
     P̂^p_ℓ(k)     = |F^p_ℓ(k)|² − N^p_ℓ(k)
@@ -201,6 +228,12 @@ samples. Linear limit:
 + 6dFGSv); Qin et al. 2024 (arXiv:2411.09571, adds the density–momentum **cross** spectrum on SDSS
 PV); Qin et al. 2025 (arXiv:2512.03231, DESI DR1, generalised to density and momentum from distinct
 surveys) [src: titles and abstracts].
+
+Unlike the correlation-function and field-level analyses, the DESI DR1 power spectra convert η to a
+velocity first, v = c z_mod ln10 η / (1 + z_mod) with the Watkins–Feldman z_mod, and take ⟨v²⟩ =
+(ln10 c z σ_η / (1 + z))² + 300² km² s⁻² in the shot noise; p ≡ (1 + δ)v (eq. 2) is preferred
+because velocities are only sampled where galaxies are [src: arXiv:2512.03231, eqs. 2, 57–59,
+Sect. 3.1, App. A].
 
 DESI DR1 configuration (arXiv:2512.03231) [src: conclusions]: data vector [P^δ_0, P^δ_2, P^p_0,
 P^δp_1]; free parameters [fσ8, b1σ8, b2σ8, σ²_vT, σ²_vS]; models validated on mocks to k_max = 0.3 h
@@ -232,6 +265,11 @@ survey-geometry-dependent mixtures, ψ1(r) = A(r) Ψ∥ + [1 − A(r)] Ψ⊥ and
 Ψ⊥ [src: Turner et al. 2025, arXiv:2512.03230, §3], so **the model must be built with the survey's
 own A(r), B(r)**; two surveys' ψ1 are not comparable.
 
+DESI DR1 writes them directly in η (arXiv:2512.03230, eqs. 23–25) [src: Sect. 3.2.3]:
+ψ̂1 = Σ W_a W_b η_a η_b cos θ_ab / Σ W_a W_b cos² θ_ab and ψ̂2 = Σ W_a W_b η_a η_b cos θ_a cos θ_b
+/ Σ W_a W_b cos θ_a cos θ_b cos θ_ab over data–data pairs, rescaled to velocity units by α_vv(r) =
+Σ W_a W_b / Σ W_a W_b α_a α_b; 6 h⁻¹Mpc bins over 0–150 h⁻¹Mpc (pycorr, crosscorr).
+
 DESI DR1 configuration (arXiv:2512.03230) [src: body]: five statistics ψ1, ψ2, ξ⁰_gg, ξ²_gg, ξ¹_gu
 in 6 h⁻¹Mpc bins; fit range 24–120 h⁻¹Mpc (16 bins each, 80 × 80 covariance from all 675 mocks);
 model from density and momentum power spectra at 1-loop Eulerian perturbation theory. The lower
@@ -251,7 +289,9 @@ The same signal written as a covariance of SN magnitude residuals: Hui & Greene 
 factor of 2"); first detection, σ8 = 0.79 ± 0.22, by Gordon, Land & Slosar 2007 (arXiv:0705.1718);
 standard Hubble-diagram treatment in Davis et al. 2011 (arXiv:1012.2912); growth fits in Huterer et
 al. 2017 (arXiv:1611.09862) and Crisman et al. 2026 (arXiv:2604.06361) [src: abstracts and titles].
-Its role as a *nuisance* in SN cosmology belongs to `cosmo-supernovae`.
+SNe Ia as velocity tracers go back to Riess, Press & Kirshner 1994 (arXiv:astro-ph/9412017): 13
+SNe at an effective 7 000 km/s, ~5 % distances, Local Group motion 600 ± 350 km/s consistent with
+the CMB dipole [src: abstract]. Its role as a *nuisance* in SN cosmology belongs to `cosmo-supernovae`.
 
 ## 5. Velocity–density comparison and forward models
 <!-- key: velocity-density-comparison-and-forward-models -->
@@ -263,7 +303,13 @@ fσ8 normalised to the **linear** σ8. Reference analyses: Pike & Hudson 2005
 σ8,lin = 0.401 ± 0.024), Boruah, Hudson & Lavaux 2020 (arXiv:1912.09383), Said et al. 2020
 (arXiv:2007.04993: β = 0.341 ± 0.024 from 15 894 FP galaxies), Stahl et al. 2021 (arXiv:2105.05185),
 Lilow & Nusser 2021 (arXiv:2102.07291), Boubel et al. 2024 (arXiv:2301.12648) [src: abstracts].
-Classical formalism, including Malmquist bias: Strauss & Willick 1995 (arXiv:astro-ph/9502079).
+Classical formalism, including Malmquist bias: Strauss & Willick 1995 (arXiv:astro-ph/9502079);
+review of that era: Dekel 1994 (arXiv:astro-ph/9401022, sections on measuring velocities, predicted
+motions from the galaxy distribution, and Ω) [src: abstract]. The reverse route, the 3D velocity
+and mass fields reconstructed from radial velocities alone under a no-vorticity assumption, is POTENT:
+Bertschinger & Dekel 1989 (doi:10.1086/185348) and the method paper Dekel, Bertschinger & Faber 1990
+(doi:10.1086/169418), which smooths with a tensor window and explores Malmquist bias with Monte Carlo
+simulations [src: abstracts].
 
 **Calibration of the method on mocks.** Hollinger & Hudson 2024 (arXiv:2312.03904) and Dixon et al.
 2026 (arXiv:2606.14962); numbers in `systematics.md` §6.
@@ -288,6 +334,11 @@ velocity; used for kSZ stacking (§7) [src].
 
 ## 6. Bulk-flow estimators
 <!-- key: bulk-flow-estimators -->
+
+**Origin.** Lynden-Bell et al. 1988 (doi:10.1086/166066): the motions of 400 ellipticals are fitted
+better by infall onto a "great attractor" at 4 350 ± 350 km/s than by a bulk motion, which was
+itself better than pure Hubble flow in the CMB frame; streaming at the Sun 570 ± 60 km/s [src:
+abstract]. Flow models and bulk flows have been compared since.
 
 **Two definitions that coincide only for a uniform field** (Nusser 2016, arXiv:1508.03860) [src:
 abstract]: the volume average of the 3D velocity,
@@ -365,7 +416,9 @@ physics. Gas physics and the CMB side belong to `cosmo-cmb-lss-cross-correlation
 - **Field-level**: the covariance *is* the model; it is analytic, dense, N × N, and recomputed (or
   interpolated) for every non-linear parameter. Errors come from the posterior, and are checked
   against mock scatter: on DESI DR1 FP mocks the mean posterior error (0.064) matches the scatter of
-  best fits (0.063) [src: arXiv:2512.03229, §4].
+  best fits (0.063) [src: arXiv:2512.03229, §4], but with density + velocity the mean error (0.036)
+  is below the scatter (0.059), and the data error was inflated by 1.64 [src: arXiv:2512.03229,
+  Table 1, Sect. 4.4.2].
 - **Two-point**: covariance from mocks (675 for DESI DR1, 2 048 for SDSS PV, 100 with a Hartlap
   factor in arXiv:2604.08314), or the Gaussian analytic form for the momentum spectrum (§4a).
 - **Mocks** must reproduce the density sample, each distance indicator with its scatter and
@@ -382,6 +435,19 @@ physics. Gas physics and the CMB side belong to `cosmo-cmb-lss-cross-correlation
   of the sources, this session]. Sample cuts made after seeing the statistic (TF at z > 0.05, the k
   ≤ 0.1 momentum cut, the FP group correction) are documented as such. For the blinding standards of
   DESI clustering analyses see `cosmo-galaxy-clustering`.
+- **What each main analysis did** (priors and systematic terms in `systematics.md` §9b; none
+  describes a blinding step):
+
+| Analysis | Data | Scales | Model, nuisances | Covariance, likelihood |
+|---|---|---|---|---|
+| DESI DR1 field-level, arXiv:2512.03229 | 415 523 BGS z + 76 616 η, 0.01 < z < 0.1 | 20 h⁻¹Mpc grid, δ_g ≤ 10 | linear + RSD, wide-angle; fσ8, bσ8, b_add σ8, σ_v, σ_g; σ_u = 16 fixed | analytic; zero-point marginalised (eq. 32); error × 1.64 from mocks [src: Sect. 4.1, 4.4.2] |
+| DESI DR1 correlation functions, arXiv:2512.03230 | same, 76 615 η | 24–120 h⁻¹Mpc, 6 h⁻¹Mpc bins | 1-loop; fσ8, b1σ8, b2σ8, σ²_vT, σ²_vS | 675 mocks, Hartlap, emcee [src: Sect. 3.3] |
+| DESI DR1 power spectra, arXiv:2512.03231 | same | P^δ, P^δp to k = 0.3; P^p to 0.1 h Mpc⁻¹ | 1-loop, the same five parameters | 675 mocks, Sellentin–Heavens (eq. 54) [src: Sect. 5.1, 6.1] |
+| SDSS PV field-level, arXiv:2209.04166 | 34 059 FP, 7 016 deg², z < 0.1 | k_max = 0.15, δ_g ≤ 20; 30 h⁻¹Mpc grid on mocks without Taylor expansion | as DESI, σ_u = 22 fixed | analytic, zero-point marginalised [src: Sect. 2.1, 4.1.2, Fig. 11] |
+| SDSS PV power spectra, arXiv:2411.09571 | same | not read | 1-loop; fσ8, b1σ8, b2σ8, b3nlσ8, σ²_v | 2 048 mocks, Box–Cox, Sellentin–Heavens [src: Sect. V.1] |
+| 6dFGSv field-level, arXiv:1404.3799 | 8 896 FP, cz < 16 120 km/s | gridded (Abate et al. 2008) | velocity only; zero-point marginalised (eq. 32) | analytic [src: Sect. 2.1, 3.5, 3.6] |
+| 6dFGS RSD + PV, arXiv:2004.06399 | 6dFGS redshifts + 6dFGSv | k_max fixed (systematic term) | + α_b for redshift-dependent bias | analytic; fixed-parameter systematics by finite difference [src: Sect. 5.1.1] |
+
 - **Codes**: `flip`, `velocisaurus`, Galaxy_Power_Spectrum, Gacomb, VIRBIUS, Iskay2, with references
   in `surveys-and-data.md` §7.
 
@@ -408,3 +474,12 @@ physics. Gas physics and the CMB side belong to `cosmo-cmb-lss-cross-correlation
   likelihood with a model covariance (Johnson, Adams, Lai, Ravoux et al.) — DESI runs both;
   empirical damping against EFT or emulators (§2); the density as data in the fit against a fixed
   external reconstruction, with opposite exposure to sample variance and to bias modelling.
+
+## Not verified in this file
+<!-- key: not-verified-in-this-file -->
+
+- Tully & Fisher 1977 (A&A 54, 661): no DOI or arXiv record found and abstract not read; cited only
+  through Turner 2024.
+- The scale range of the SDSS PV power-spectrum fit (arXiv:2411.09571) and the k_max of the 6dFGS
+  joint fit (arXiv:2004.06399).
+- Malmquist 1920 and the earliest inhomogeneous-Malmquist treatments: no identifier found this pass.

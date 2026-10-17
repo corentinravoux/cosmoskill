@@ -5,7 +5,7 @@ description: Use when reviewing, planning or fact-checking multi-messenger cosmo
 
 # Multi-messenger cosmology — expert reference
 
-Snapshot 2026-10-07. Numbers carry provenance flags ([src] / [sec] / [der]);
+Snapshot 2026-10-13. Numbers carry provenance flags ([src] / [sec] / [der]);
 re-verify against the cited paper before a number enters a manuscript.
 
 ## File map
@@ -52,7 +52,8 @@ re-verify against the cited paper before a number enters a manuscript.
   November 2026; O5 has no date.
 - FRBs: DM ∝ Ω_b h² f_d / h. Ω_b h70 = 0.051 ± 0.006, f_IGM = 0.76
   (arXiv:2409.16952). H0 ranges from 62.3 to 85.3 (arXiv:2104.04538,
-  arXiv:2305.07022); 71.28 (+1.90/−2.08) is statistical only (arXiv:2507.18946).
+  arXiv:2305.07022); 71.28 (+1.90/−2.08) is statistical only (arXiv:2507.18946):
+  host model, Galactic halo and scatter parameter each move it by about 3σ.
 - Lensed supernovae: Refsdal 64.8–66.6 (arXiv:2305.06367), H0pe 75.7
   (arXiv:2403.18902), Encore 66.9 (arXiv:2509.12301), SN 2025wny 70.8
   (arXiv:2608.28427).
@@ -68,7 +69,8 @@ and H0 priors (arXiv:2606.30504), MAP or median. Dark: population fixed or
 inferred, second mass-model family, evolution, spectral-only result shown,
 catalogue completeness, completion, weighting band, photo-z, selection
 injections, pipeline, Ω_m prior. FRB: Ω_b h² prior, f_d, Galactic and host DM,
-p(DM|z) form, selection. Lensed: lens models, blinding, microlensing. Details:
+p(DM|z) form, selection. Lensed: lens models and weights, mass sheet, blinding,
+microlensing. Details:
 `references/systematics.md` §9.
 
 ## Errors that recur
@@ -113,7 +115,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; open 6k; methods 8k; results 6k; surveys 5k; systematics 7k.
+Sizes, in thousands of tokens: L1 2k; open 6k; methods 12k; results 7k; surveys 5k; systematics 13k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

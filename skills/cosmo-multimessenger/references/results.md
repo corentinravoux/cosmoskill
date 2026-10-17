@@ -1,7 +1,7 @@
 # Results — headline measurements
 
 Scope: current values of H0 and related parameters from standard sirens, fast radio bursts and lensed transients, the model each assumes, and the history that tells which values are superseded.
-Snapshot: 2026-10-07 (suite date; literature searches run 2026-10-10)
+Snapshot: 2026-10-13 (deepening pass, 12–13 October; first build 2026-10-07, searches 2026-10-10)
 
 All H0 values are in km s⁻¹ Mpc⁻¹. Every value below was read this session in the
 abstract of the cited paper unless a section is named. "MAP" is maximum a posteriori
@@ -17,7 +17,7 @@ changes is the velocity of NGC 4993, the viewing-angle information and the prior
 
 | H0 | Statistic | Extra information beyond GW + host redshift | Velocity treatment | Reference | Flag |
 |---|---|---|---|---|---|
-| 70.0 (+12.0/−8.0) | MAP, flat prior | none | 6dFGSv kernel, 150 km/s error | arXiv:1710.05835 | [src] |
+| 70.0 (+12.0/−8.0) | MAP, flat-in-log prior [src: Methods]; the median with symmetric interval is 74.0 (+16.0/−8.0) [src: Extended Data Table 1] | none | 6dFGSv kernel, 150 km/s error | arXiv:1710.05835 | [src] |
 | 68.7 (+17.5/−8.3) | highest-density interval, flat-in-log prior | none (GW170817-only value in the O2 paper) | — | arXiv:1908.06060 | [src] |
 | 76 (+19/−13) | — | none; re-derived from public data | — | arXiv:1807.05667 | [src] |
 | 68.9 (+4.7/−4.6) | — | VLBI superluminal motion and light curve | — | arXiv:1806.10596 | [src] |
@@ -88,8 +88,23 @@ Notes.
   first two; src for the third, arXiv:2305.19914].
 - The spectral-only and catalogue-only GWTC-5.0 posteriors are "now tighter than" the
   GW170817 bright-siren posterior, and the dark-siren analysis "excludes the tail of
-  high H0 values" of the bright siren (arXiv:2605.27227 §4.1) [src]. Their numerical
-  values are LaTeX macros in the source and were not recovered.
+  high H0 values" of the bright siren (arXiv:2605.27227 §4.1) [src]. The values, read
+  in the HTML rendering on 2026-10-12 [src: Sect. IV.1, Table 3]: spectral only 70.1
+  (+15.1/−13.3); dark sirens with DES `r` band and luminosity weighting 68.8
+  (+14.2/−13.2); GW170817 as bright siren, recomputed with the same population and
+  injections, 79.1 (+27.6/−12.4); combined 71.7 (+9.4/−7.5), 90%: (+17.7/−11.4). With
+  the other mass models the combined value is 73.1 (+12.3/−8.6) (multi-peak, BBH only)
+  and 72.3 (+9.0/−7.4) (FullPop 3 Peaks, mildly preferred by the Bayes factors but not
+  adopted, for continuity with GWTC-4.0). All with `Ω_m = 0.3065` fixed and H0 on
+  U(10, 200).
+- The galaxy catalogue improves the GWTC-5.0 spectral constraint by 3.5% (DES) or 2.8%
+  (GLADE+); against GWTC-4.0 the spectral result improved by 14.6% and the GLADE+
+  dark-siren result by 13.2% (arXiv:2605.27227) [src: Sect. IV.1, V.1].
+- GWTC-4.0 in two versions: the body read on 2026-10-12 (ar5iv rendering) gives 76.6
+  (+13.0/−9.5) combined, 81.6 (+21.5/−15.9) dark only, 76.4 (+23.0/−18.1) spectral only
+  and 78.4 (+25.7/−12.0) for GW170817 [src: Sect. IV.1], while the table above quotes
+  the arXiv abstract read on 2026-10-10. The rendering is of an earlier version of the
+  paper; quote the version you cite.
 - The GWTC-3 improvements were 17% (spectral) and 42% (catalogue) over GWTC-1 [src].
 - In every release the collaboration states that the mass-spectrum features, not the
   galaxy catalogue, drive the constraint (systematics file, §5).
@@ -141,7 +156,8 @@ How to read the tight rows.
 | GWTC-2, if ZTF19abanrhr is the GW190521 counterpart | 1.8 (+0.9/−0.6) | arXiv:2101.12660 |
 | GWTC-3 spectral | 1.2 ± 0.7 (flat prior); 1.0 (+0.4/−0.8) (prior uniform in log) | arXiv:2112.05728 |
 | GWTC-4.0 | 1.4 (+1.0/−0.4); 90%: (+2.8/−0.6) | arXiv:2509.04348 |
-| GWTC-5.0 | "no departures from GR"; value not in the abstract | arXiv:2605.27227 |
+| GWTC-5.0, spectral, FullPop-4.0 | 1.1 (+0.6/−0.3) with H0 on U(10, 120); 1.0 (+0.3/−0.2) with H0 on U(65, 77); `c_M` = −0.4 (+1.6/−1.3) and −0.1 (+1.0/−0.8) [src: Sect. IV.2]; 35.7% and 50% tighter than GWTC-4.0 [src: Sect. V.1] | arXiv:2605.27227 |
+| GWTC-4.0, as printed in the ar5iv rendering (earlier version) | 1.2 (+0.8/−0.4); 90%: (+2.4/−0.5) [src: abstract of that rendering] | arXiv:2509.04348 |
 
 ## 3. Siren × galaxy cross-correlation results
 <!-- key: siren-x-galaxy-cross-correlation-results -->
@@ -282,12 +298,15 @@ Gaussian the 1σ error roughly halved [der: 0.023/2 ≈ 0.012 against 0.006].
 ## Not verified
 <!-- key: not-verified -->
 
-- GWTC-5.0 spectral-only, catalogue-only and bright-only H0 values, and its `Xi_0`
-  constraint (macros in the LaTeX source).
+- Closed on 2026-10-12: the GWTC-5.0 spectral-only, catalogue-only and bright-only H0
+  values and its `Xi_0` constraint are now in §2.1 and §2.3. Still open: which version
+  of arXiv:2509.04348 the journal printed.
 - Whether the arXiv abstracts of arXiv:2509.04348, arXiv:2111.03604, arXiv:1806.10596,
   arXiv:2108.00581 and arXiv:2403.18902 carry the same numbers as their journal
   versions. Values different from those above circulate for each of these papers;
   quote the version you cite.
-- The matter-density prior of each lensed-supernova analysis.
+- The matter-density prior of each lensed-supernova analysis. Read on 2026-10-13 for
+  SN Refsdal only: delays predicted at H0 = 70 and Ω_M = 0.3 and rescaled, with an
+  effect of varying Ω_M of at most about 0.7 (arXiv:2305.06367) [src: Supplementary].
 - The Ω_m and `w0` constraints from sirens beyond those in the GW190521 rows.
 - H0 values from SN Zwicky or iPTF16geu, if any exist.

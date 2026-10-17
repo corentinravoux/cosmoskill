@@ -1,0 +1,13 @@
+key	title	from	files	status
+likelihood-form	Likelihood form and the Gaussian assumption	KiDS-1000 methodology (Joachimi et al. 2021), Sect. 6.2; Herold et al. 2024, Sect. III.1	physics-and-methods.md; systematics.md; results.md	covered
+covariance-estimation	Covariance estimation: mock, analytic and internal, with finite-sample corrections	KiDS-1000 methodology, Sect. 5 and Apps. D-E; DESI, DES and ACT covariance papers	physics-and-methods.md; results.md; systematics.md; surveys-and-data.md; open-questions.md; deep/covariance-estimation.md	covered
+samplers-convergence	Sampling algorithms, convergence and choice of sampler	CosmoVerse White Paper (Di Valentino et al. 2025), Sects. 3.1.1-3.1.5	physics-and-methods.md; results.md; systematics.md	covered
+priors-projection-effects	Prior dependence and projection (prior-volume) effects	CosmoVerse White Paper, Sect. 3.1.6; KiDS-1000 methodology, Sect. 6.4 (reporting parameter constraints)	physics-and-methods.md; results.md; systematics.md; open-questions.md	covered
+profile-likelihoods	Profile likelihoods, frequentist intervals and physical boundaries	CosmoVerse White Paper, Sect. 3.6; Herold et al. 2024, Sects. II-III	physics-and-methods.md; results.md; systematics.md; open-questions.md; deep/profile-likelihoods.md	covered
+model-comparison	Model comparison: evidence, information criteria, likelihood-ratio significance	CosmoVerse White Paper, Sect. 3.1.7	physics-and-methods.md; results.md; systematics.md; open-questions.md	covered
+tension-metrics	Tension metrics between data sets	CosmoVerse White Paper, Sect. 3.1.8; DES tension-metric suite (Lemos et al. 2021)	physics-and-methods.md; results.md; systematics.md; open-questions.md; deep/tension-metrics.md	covered
+goodness-of-fit	Goodness of fit, effective degrees of freedom and posterior predictive tests	KiDS-1000 methodology, Sect. 6.3; DES posterior predictive tests	physics-and-methods.md; surveys-and-data.md; systematics.md	thin
+blinding	Confirmation bias and blinding	CosmoVerse White Paper, Sect. 2.2.1.e; DESI, DES, KiDS and ACT blinding papers	physics-and-methods.md; results.md; systematics.md; surveys-and-data.md; open-questions.md	covered
+pipeline-validation	Validation of the inference pipeline on synthetic data	KiDS-1000 methodology, Sect. 7	systematics.md; results.md	thin
+simulation-based-inference	Machine-learning and simulation-based inference, with its validation	CosmoVerse White Paper, Sects. 3.2 and 3.5	physics-and-methods.md; results.md; systematics.md; open-questions.md	covered
+reconstruction-methods	Parametric and non-parametric reconstructions (Gaussian processes, cosmography)	CosmoVerse White Paper, Sect. 3.3		missing

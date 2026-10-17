@@ -1,7 +1,7 @@
 # Statistics and inference — quantified facts a referee needs
 
 Scope: sizes of covariance corrections, documented projection-effect shifts, documented differences between tension metrics and model-comparison statistics on the same data, emulator error budgets, sampler and coverage-test outcomes.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-16
 
 Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named secondary source; `[der]` derived here, derivation stated.
 
@@ -36,6 +36,8 @@ Reading the table: the Hartlap factor and the Dodelson–Schneider factor are of
 |---|---|---|---|
 | BOSS: error increase when the covariance comes from 600 mocks, "depending on how the cosmological parameters of interest are measured" | ~20% | Percival et al. 2014, arXiv:1312.4841 (abstract) | [src] |
 | Parameter variance increase from a simulation covariance | factor of order `1 + N_b/N_s` | Dodelson & Schneider 2013, arXiv:1304.2593 | [src] |
+| Best-fit-scatter term, "fractional increase in variance" (not error bar; Hartlap term excluded): BOSS 600 mocks, 41 bins; DLS 1000, 60; CFHTLenS 184, 24 | 7%; 6%; 13% | arXiv:1304.2593 | [src: Table 1] |
+| DESI DR1 full shape: 1000 EZmocks per tracer and redshift bin, Hartlap and Percival 2014 factors, plus a larger tracer-dependent rescaling for mock realism | ~20% Fourier-space EZmock–analytic mismatch with realistic fibre assignment | DESI Collaboration 2024, arXiv:2411.12021 | [src: Sects. 5.7–5.8] |
 | Realisations needed for a 5% error on a parameter error, `N_D << 100` | ≥ 200 | Taylor et al. 2013, arXiv:1212.4359 | [src] |
 | Standard bootstrap, variance of ξ(s), 1–25 Mpc/h | overestimated by ~40% | Norberg et al. 2009, arXiv:0810.1885 | [src] |
 | Internal covariance, Ω_m–σ8 contour volume against truth (DES 5-year forecast) | ≳ 85% | Friedrich et al. 2016, arXiv:1508.00895 | [src] |
@@ -159,6 +161,8 @@ The lesson for a referee: for DESI + CMB the three in-sample statistics read 3.1
 | Same | Bayes ratio | "inconsistent with the rest due to its dependence on the prior volume" | arXiv:2012.09554 | [src] |
 | Same | Bayes ratio with narrower priors | drops below unity; "DES and Planck are, in a Bayesian sense, incompatible under ΛCDM" | Handley & Lemos 2019, arXiv:1902.04029 | [src] |
 | Planck against SH0ES, DES Y1, SDSS BAO | suspiciousness | strong, moderate, no tension | arXiv:1902.04029 | [src] |
+| Simulated DES Y1 against Planck, Ω_m shifted by 1.5 marginal σ (a-priori 2.3σ), ΛCDM | Bayes ratio; eigentension; GoF loss; parameter difference (MCMC/update); suspiciousness | `log R = −0.4 ± 0.6` ("no evidence"); 3.3σ; 3.0σ; 2.8σ/2.7σ; 2.9 ± 0.4σ | Lemos et al. 2021, arXiv:2012.09554 | [src: Table 3] |
+| Same, Ω_m shifted by 2 marginal σ (a-priori 3.8σ) | same order | `log R = −4.8 ± 0.6`; 4.1σ; 3.9σ; 3.4σ/3.6σ; 4.1 ± 0.6σ | arXiv:2012.09554 | [src: Table 3] |
 | Toy case: two equal Gaussians 3σ apart | Bayes ratio, flat prior [−10, 10] against [−200, 200] | `R << 1` against `R > 1` | arXiv:2012.09554, figure 4 | [src] |
 | DES Y6 3×2pt against Planck 2018 + ACT DR6 + SPT-3G DR1, ΛCDM | full-space parameter difference | 1.8σ | DES Collaboration 2026, arXiv:2601.14559 | [src] |
 | Same | projected on S8 | 2.6σ | arXiv:2601.14559 | [src] |
@@ -169,7 +173,7 @@ The lesson for a referee: for DESI + CMB the three in-sample statistics read 3.1
 | DESI DR2 against DES-SN5YR, ΛCDM | five metrics, combined statement | 2.95 ± 0.04σ; 1.96 ± 0.04σ with DES-Dovekie | Ong et al. 2025, arXiv:2511.10631 | [src] |
 | DES Y1 internal consistency | posterior predictive p-value | 0.046; 0.10 after removing about 1.5% of the data vector | Doux et al. 2021, arXiv:2011.03410 | [src] |
 | Accuracy of non-Gaussian parameter-shift estimators | benchmark | within 0.2σ generally, 0.5σ in difficult cases | Raveri & Doux 2021, arXiv:2105.03324 | [src] |
-| KiDS-Legacy cosmic shear against Planck | as quoted in the abstract; the metric was not read | 0.73σ | Wright et al. 2025, arXiv:2503.19441 | [src] |
+| KiDS-Legacy cosmic shear against Planck | Hellinger distance: 0.73σ in Σ8 (the abstract's figure), 0.76σ in S8 [src: Sect. 7] | 0.73σ / 0.76σ | Wright et al. 2025, arXiv:2503.19441 | [src] |
 | CMB against DESI DR2 BAO, ΛCDM | as quoted by each collaboration | 1.6σ (P-ACT), 2.8σ (SPT-3G + ACT + Planck, Ω_m–h r_d plane) | arXiv:2503.14452, arXiv:2506.20707 | [src] |
 
 Two readings of the table. First, the DES Y6 pair (1.8σ and 2.6σ on the same posteriors) shows that projecting on the best-measured combination raises the figure; the full-space number is the one that accounts for the look at several parameters. Second, the quoted lensing tensions do not share a reference: KiDS compares with Planck alone, DES Y6 with a three-experiment CMB combination (noted in `cosmo-weak-lensing`).
@@ -292,7 +296,7 @@ The later frequentist values with recalibrated supernovae are in `cosmo-dark-ene
 | 2020 | DES Y1 3×2pt against Planck | ~2.3σ | parameter differences, suspiciousness, eigentension | arXiv:2012.09554 |
 | 2023 | DES Y3 + KiDS-1000 shear against Planck | 1.7σ | as quoted | arXiv:2305.17173 |
 | 2024 | KiDS-1000 SBI against CMB | 2.9σ | as quoted | arXiv:2404.15402 |
-| 2025 | KiDS-Legacy against Planck | 0.73σ | as quoted | arXiv:2503.19441 |
+| 2025 | KiDS-Legacy against Planck | 0.73σ (Σ8), 0.76σ (S8) | Hellinger distance, Sect. 7 | arXiv:2503.19441 |
 | 2026 | DES Y6 3×2pt against Planck + ACT + SPT | 1.8σ full space, 2.6σ in S8 | parameter difference, normalising flows | arXiv:2601.14559 |
 
 The entries are not comparable with each other without the metric and the CMB reference; the S8 values behind them are in `cosmo-weak-lensing`.
@@ -302,11 +306,11 @@ The entries are not comparable with each other without the metric and the CMB re
 
 | Quoted by | CMB data | Value | Space | Source | Flag |
 |---|---|---|---|---|---|
-| ACT | P-ACT | 1.6σ | ΛCDM parameters | arXiv:2503.14452 | [src] |
+| ACT | P-ACT | 1.6σ | Ω_m–h r_d plane, Gaussian separation in 2D | arXiv:2503.14452 | [src: App. H] |
 | SPT | SPT-3G + ACT DR6 + Planck | 2.8σ | Ω_m–h r_d plane | arXiv:2506.20707 | [src] |
 | DESI | CMB as defined in the DESI paper | 2.3σ | — | [sec: `cosmo-galaxy-clustering` SKILL.md, citing arXiv:2503.14738] | [sec] |
 
-Three numbers for what a text would call "the CMB–BAO tension", differing by CMB combination and by the subspace compared.
+Three numbers for what a text would call "the CMB–BAO tension". The ACT and SPT figures are computed in the same Ω_m–h r_d plane and differ by CMB combination (ACT-L alone against DESI DR2 is 2.8σ, arXiv:2503.14452 [src: App. H]); the space behind the DESI figure was not read.
 
 ## Not verified
 <!-- key: not-verified -->
@@ -317,4 +321,4 @@ Three numbers for what a text would call "the CMB–BAO tension", differing by C
 - No quantified emulator error budget for a Lyα, HOD or baryonic-feedback emulator was collected here; see the probe skills.
 - No trial-factor-corrected global significance for a cosmological anomaly was found; §11 lists spreads between analysis choices instead.
 - The number of simulations needed for simulation-based inference as a function of summary dimension (beyond the statements of arXiv:1903.00007 and arXiv:2412.02311) was not quantified.
-- Hartlap-type factors actually applied in DESI DR1 or DR2 (number of EZmocks, data-vector length) were not read; §1.1 gives generic cases.
+- DESI DR1 full shape uses 1000 EZmocks with Hartlap and Percival 2014 factors (§1.2); the data-vector length per tracer and the DR2 practice were not read, so §1.1 gives generic cases.

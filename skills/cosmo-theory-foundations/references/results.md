@@ -1,6 +1,6 @@
 # Theory foundations — quantified accuracy of the standard approximations
 
-Snapshot: 2026-10-07
+Snapshot: 2026-10-15
 
 Every number is the size of an approximation, a correction or a convention difference, with the range in which the cited paper states it. Flags: [src] read in the cited paper, [der] derived here with the derivation given. Cosmological parameter values belong to the sibling skills.
 
@@ -220,8 +220,8 @@ What replaced what, so that a stale convention can be recognised.
 ## Not verified
 <!-- key: not-verified -->
 
-- The accuracy of DESI's power-law r_d formula against a Boltzmann code.
-- Any quantified size of the wide-angle correction to the BOSS or DESI quadrupole: only qualitative statements were read.
+- The accuracy of DESI's power-law r_d formula against a Boltzmann code: not stated in arXiv:2209.14330 or arXiv:2212.04522, whose bodies were searched on 2026-10-15 (`systematics.md` section 3).
+- The size of the wide-angle correction for DESI. For BOSS DR12 it is now read: window and wide-angle terms reach "up to 5% of the measurement uncertainties in the even multipoles" and dominate the odd ones (Beutler, Castorina & Zhang 2019, arXiv:1810.05051) [src: Sect. 4]; details in `systematics.md` section 9.
 - The size of the difference between cb and total-matter σ8 from a Boltzmann code: the 0.45% above is a derivation under a stated assumption.
 - The accuracy of θ_MC as an approximation of θ_* beyond the one Planck 2018 pair of values.
 - Planck 2018's remark on a systematic uncertainty of about 0.5σ, reported by the second pass of this build, could not be located again and is not used.

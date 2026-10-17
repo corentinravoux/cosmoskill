@@ -2,7 +2,7 @@
 
 Scope: which codes are actively maintained, which are deprecated or superseded and by what, method debates between code families, and the misconceptions about codes that still circulate.
 
-Snapshot: 2026-10-11
+Snapshot: 2026-10-14
 
 Dates are the last push to the GitHub repository (any branch) and the latest PyPI upload, read on 2026-10-11 and 2026-10-12 [src: GitHub REST API; PyPI JSON API]. A recent push shows activity, not a tested release; an old push shows a quiet repository, not a broken code.
 
@@ -132,7 +132,7 @@ The 2026 `neckar` paper reopens the question of numerical accuracy of infrared r
 <!-- key: code-written-with-ai-agents -->
 
 The CAMB v2 abstract states that "essentially all of the new algorithms and code were developed with LLMs or AI agents under human supervision", and the paper has a section "Agentic testing and tuning" (arXiv:2607.14854).
-Its accuracy claims rest on a deterministic validation harness, `camb.check_accuracy`, and on a fixed-reference regression suite (arXiv:2607.14854, section 9).
+Its accuracy claims rest on a deterministic validation harness, `camb.check_accuracy`, and on a fixed-reference regression suite (arXiv:2607.14854) [src: Sect. IX].
 How collaborations will treat such code in their validation requirements is not settled in anything read this session.
 
 ### 3.5 What the next releases will decide
@@ -148,7 +148,7 @@ How collaborations will treat such code in their validation requirements is not 
 
 1. **"CAMB and CLASS agree to 0.01 %."** That figure is for concordance ΛCDM, a shared recombination history and tuned precision in 2011 (arXiv:1104.2934). At default settings and high ℓ the codes and versions differ at the per-cent level: CAMB v1.6.6 defaults are off by 1.5 % in TT at ℓ = 3000, and CLASS lensed spectra move by 1.8 % at ℓ = 4000 depending on the ℓ margin (arXiv:2607.14854).
 2. **"CLASS is faster than CAMB."** True in the 2011 comparison, by a factor of about 2.5 (arXiv:1104.2934); the 2026 CAMB v2 paper measures the opposite for lensed spectra to ℓ_max = 4000 (arXiv:2607.14854). Both statements come from the author of the faster code.
-3. **"The linear power spectrum is unambiguous."** At k above about 1 Mpc⁻¹ it depends on the reionisation-heating convention (arXiv:2607.14854, section 14), and in massive-neutrino cosmologies on whether the total-matter or the CDM-plus-baryon field is meant.
+3. **"The linear power spectrum is unambiguous."** At k above about 1 Mpc⁻¹ it depends on the reionisation-heating convention (arXiv:2607.14854, App. B), and in massive-neutrino cosmologies on whether the total-matter or the CDM-plus-baryon field is meant.
 4. **"Halofit" names one model.** CAMB 2.0.4 lists eleven `halofit_version` names, including three HMcode generations [src: installed].
 5. **"`FlatLambdaCDM(H0=70, Om0=0.3)` is a realistic cosmology."** Its defaults are `Tcmb0 = 0 K` and `m_nu = 0`, so it has no radiation and no neutrinos [src: astropy 8.0.1 installed].
 6. **"astropy `Planck18` is the CMB-only Planck cosmology."** Its metadata give the source as Planck 2018 Paper VI, Table 2, "TT, TE, EE + lowE + lensing + BAO" [src: astropy 8.0.1 installed]. cosmoprimo's `DESI()` fiducial is instead the "base_plikHM_TTTEEE_lowl_lowE_lensing mean" of AbacusSummit c000 [src: cosmoprimo 1.0.0 installed]. The two "Planck 2018" cosmologies are not the same.

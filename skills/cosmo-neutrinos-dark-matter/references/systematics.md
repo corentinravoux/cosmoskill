@@ -1,7 +1,7 @@
 # Systematics — neutrino mass, light relics and dark-matter properties from structure
 
 Scope: what can move or fake each bound in `results.md`: the mechanism, its measured size, the standard mitigation, the validation test, and the paper a referee expects cited. Ends with the referee checklist.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-16
 
 Flags: `[src]` read in the cited paper this session; `[sec]` taken from a named secondary source; `[der]` derived here, derivation stated.
 
@@ -13,6 +13,58 @@ Almost every number in this domain is an upper or lower limit, and a limit moves
 The instrumental systematics of the input data are not repeated here: beams, calibration, foregrounds and low-ℓ polarisation in `cosmo-cmb`; BAO and full-shape systematics in `cosmo-galaxy-clustering`; continuum, resolution, noise and metals in `cosmo-lyman-alpha`. Part A covers the neutrino and light-relic bounds, Part B the dark-matter bounds.
 
 # Part A — neutrino mass and N_eff
+
+## Neutrino budgets by analysis, read in paper bodies
+<!-- key: neutrino-budgets-by-analysis-read-in-paper -->
+
+One table per analysis; the subsections below discuss each systematic across analyses. All limits 95%, ΛCDM + Σm_ν with Σm_ν > 0 unless stated.
+
+**DESI DR2 BAO + CMB (Elbers et al. 2025, arXiv:2503.14744; baseline < 0.0642 eV, PR4 CamSpec)**
+
+| Change | Effect on Σm_ν | Place |
+|---|---|---|
+| High-ℓ likelihood PR3 plik / PR4 L-H | < 0.0691 / < 0.0774 eV; L-H stays broader with the oscillation splittings imposed | [src: Sect. IV.4] |
+| Other ΛCDM differences between likelihoods (lower ω_b in CamSpec and L-H; weaker A_s–τ degeneracy in L-H) | "do not appear to be directly responsible" for the offsets; A_lens is the candidate driver | [src: Sect. IV.4] |
+| Add Pantheon+ / Union3 / DESY5, ΛCDM | < 0.0704 / 0.0674 / 0.0744 eV, with higher Ω_m and lower H0; in ΛCDM the CMB-likelihood offsets dominate over the SN choice | [src: Sect. IV.5] |
+| Same in w0waCDM, CamSpec | < 0.117 / 0.139 / 0.129 eV; here the SN choice dominates: with DESY5, < 0.129 (plik), 0.133 (CamSpec), 0.148 eV (L-H) | [src: Sect. IV.5] |
+| wCDM + SNe | < 0.0653 / 0.0649 / 0.0586 eV | [src: Sect. IV.5] |
+| N_eff free | < 0.0741 eV, +15%, correlation 0.18 | [src: Sect. IV.2, Eq. 19] |
+| Oscillation prior instead of Σm_ν > 0 | < 0.101 eV (NO), < 0.133 eV (IO) | [src: Sect. IV.3, Eqs. 25, 27] |
+| Effective mass, no boundary | −0.101 (+0.047/−0.056) eV (68%), 3.0σ below 0.059 eV as probability to exceed; CMB alone −0.11 (+0.12/−0.14) eV | [src: Sect. V.2, Eqs. 31–32] |
+
+The SN samples are not independent: the DESY5 low-redshift (z < 0.1) sample comes from the legacy catalogues used by the others, and Pantheon+ and Union3 share a large fraction of supernovae [src: arXiv:2503.14744 Sect. IV.5].
+
+**ACT DR6 (Calabrese et al. 2025, arXiv:2503.14454; P-ACT-LB < 0.089 eV)**
+
+| Change | Effect | Place |
+|---|---|---|
+| WMAP in place of Planck (W-ACT-LB) | < 0.088 eV | [src: Sect. VI.1.1, Eq. 33] |
+| BOSS BAO in place of DESI Year-1; no BAO, with SNe | < 0.13 eV; < 0.23 eV | [src: Sect. VI.1.1] |
+| τ prior widened / SRoll2 removed | < 0.10 eV / < 0.19 eV | [src: Appendix G.2] |
+| N_eff free | < 0.073 eV | [src: Sect. VI.1.1] |
+| Theory settings at the ΛCDM best fit: Recfast against HyRec / CosmoRec | Δχ² = 0.37 / 0.49, up to O(100) away from the best fit, mostly TT at ℓ ≈ 2000; posteriors not shifted | [src: Appendix A] |
+| Halofit against HMcode 2020; dark matter only against dark matter + baryons; stronger feedback | Δχ² = 0.09; 0.20; 0.39 | [src: Appendix A] |
+
+**SPT-3G D1 (Camphuis et al. 2025, arXiv:2506.20707)**
+
+| Change | Effect | Place |
+|---|---|---|
+| τ | not measured: Gaussian prior N(0.051, 0.006) from Planck; the paper notes that τ ≈ 0.09 would reconcile CMB and DESI and "regularize neutrino mass constraints" | [src: Sects. VII.1, VII.3] |
+| CMB only: SPT-3G D1 / SPT+ACT / CMB-SPA | < 0.77 / 0.58 / 0.19 eV (Planck alone < 0.25 eV) | [src: Eqs. 102–104] |
+| Add DESI | < 0.081 eV (SPT-3G D1), < 0.055 eV (CMB-SPA); SPT+ACT + DESI not combined (> 3σ apart in Ω_m–h r_d) | [src: Eqs. 105–106] |
+| Planck at ℓ > 1000 in place of ACT | "would likely find an even tighter upper limit" because of the Planck TT lensing excess; CMB-SPA called conservative | [src: Sect. VII.4.6] |
+| CMB–DESI distance in ΛCDM | 2.5σ (SPT), 3.1σ (ACT DR6 alone with ACT lensing), 2.7σ with Planck lensing and another τ prior, 3.7σ (SPT+ACT), 3.0σ (SPT+Planck), 2.8σ (CMB-SPA) | [src: Sect. VII.3] |
+
+**Planck 2018 (arXiv:1807.06209)**
+
+| Change | Effect | Place |
+|---|---|---|
+| TT+lowE → TT,TE,EE+lowE | < 0.54 → < 0.26 eV | [src: Eqs. 56a–b] |
+| Add lensing reconstruction | < 0.44 eV (TT), < 0.24 eV (TT,TE,EE) | [src: Eqs. 57a–b] |
+| CamSpec in place of Plik | < 0.38 eV, < 0.27 eV with lensing: weaker because CamSpec prefers less A_L, and "for small masses the constraint is largely determined by the lensing effect" | [src: Eqs. 58a–b, Sect. 7.5.1] |
+| Lensing reconstruction + BAO + θ_MC only | < 0.60 eV, almost independent of the A_L excess in the spectra | [src: Eq. 59] |
+| TT+lowE + BAO, no lensing | < 0.16 eV | [src: Eq. 60a] |
+| Low-ℓ polarisation history | TT-only limit 0.72 eV (2015, lowP) → 0.59 eV (SimLow) → 0.54 eV (lowE): a tighter τ restricts A_s through C_ℓ ∝ A_s e^(−2τ) | [src: Sect. 7.5.1] |
 
 ## 1. The positivity prior and the three error bars
 <!-- key: the-positivity-prior-and-the-three-error-bars -->
@@ -35,7 +87,7 @@ The instrumental systematics of the input data are not repeated here: beams, cal
 | Same, large-scale polarisation excluded | tension "could be explained as a ∼2σ statistical fluctuation" | arXiv:2503.14744 §5.2.1 | [src] |
 | P-ACT-LB, prior widened to τ = 0.057 ± 0.012 | Σm_ν < 0.089 eV becomes < 0.10 eV: "minimal impact" | Calabrese et al. 2025, arXiv:2503.14454 appendix | [src] |
 | P-ACT-LB, SRoll2 removed | Σm_ν < 0.19 eV; τ = 0.081 ± 0.016 is then measured from lensing in the spectra | arXiv:2503.14454 appendix | [src] |
-| No low-ℓ EE, DESI BAO + high-ℓ CMB + lensing | τ = 0.090 ± 0.012; w0wa preference from about 3σ to about 1.5σ | Sailer et al. 2025, arXiv:2504.16932 | [src] |
+| No low-ℓ EE, DESI BAO + high-ℓ CMB + lensing | τ = 0.090 ± 0.012; w0wa preference from about 3σ to 1.4σ (Δχ²_MAP = −3.82) [src: Sect. III.2] | Sailer et al. 2025, arXiv:2504.16932 | [src] |
 | No low-ℓ EE, no lensing constraints | τ = 0.091 ± 0.011; neutrino tension at 0.06 eV removed | Jhaveri, Karwal & Hu 2025, arXiv:2504.21813 | [src] |
 | Imposed prior τ = 0.11 ± 0.006 | Σm_ν = 0.10 (+0.04/−0.05) eV | Sullivan, de Belsunce & Ivanov 2026, arXiv:2606.30903 | [src] |
 
@@ -123,6 +175,60 @@ A low N_eff cannot be attributed to photon heating at late times: raising the ph
 
 # Part B — dark-matter properties
 
+## Dark-matter budgets by analysis, read in paper bodies
+<!-- key: dark-matter-budgets-by-analysis-read-in-paper -->
+
+**Lyα forest, HIRES + UVES, z = 4.2–5.0 (Iršič et al. 2023, arXiv:2309.04533; baseline m_WDM > 5.7 keV, 95%)**
+
+| Change | Effect | Place |
+|---|---|---|
+| Thermal model | 12 thermal histories (end of reionisation z = 5.35–7.41; T0(z = 4.6) ≈ 6400–14600 K) crossed with m_WDM = 2, 3, 4 keV, σ8 and n_s: 144 Sherwood simulations, linear-interpolation emulator (error ≤ 1.2% at high k and z) | [src: Sect. III, Table 1, Sect. III.1] |
+| Simulation-envelope thermal prior → Gaussian T0 prior (1000 K) from independent measurements | > 5.85 keV; 3σ and 5σ exclusions 3.75 and 3.21 keV (baseline 3.73 and 3.18 keV) | [src: Sects. IV.2, IV.4] |
+| k_max = 0.2 → < 0.1 s/km, same thermal treatment | > 4.09 keV; u0 (pressure smoothing) no longer constrained; earlier HIRES/MIKE with k_max = 0.088 s/km and a wide thermal prior gave about 2.1 keV | [src: Sect. IV.9] |
+| Inhomogeneous reionisation | tabulated Sherwood-Relics correction applied; large-scale enhancement lies at k < 5 × 10⁻³ s/km, outside the data; small-scale thermal and pressure effects may cancel | [src: Sect. IV.7] |
+| Goodness of fit | χ² = 40.7 for 34 d.o.f.; 20.4 for 20 at k < 0.1 s/km; all three redshift bins lie above the model at k > 0.1 s/km, "a possible shortcoming of the model on the smallest scales" | [src: Sect. IV.2] |
+
+**Lyα forest, Boera et al. spectra, 4.2 ≤ z ≤ 5.0 (Villasenor et al. 2022, arXiv:2209.14220; > 3.1 keV, 95%)**
+
+| Item | What was done or found | Place |
+|---|---|---|
+| Thermal-history family | 1080 simulations (25 h⁻¹ Mpc, 2 × 1024³) over m_WDM and three transformations of a fiducial UV background: Γ_i(z) → β Γ_i(z − Δz), 𝓗_i(z) → β α_E 𝓗_i(z − Δz); β sets the mean flux, α_E the temperature, Δz the timing of reionisation (about 200 Myr span) | [src: Sect. 3.3] |
+| Helium | He II photorates fixed: He II reheating matters only at z < 4 | [src: Sect. 3.3] |
+| Uniform UV background replaced by a patchy-reionisation correction (10–15% small-scale suppression at k ≈ 0.1 s/km) | limit > 3.8 keV, peak 7.1 keV, ΛCDM inside the 95% interval; but χ² rises from 38.3 to 46.4, so the uniform case is kept as the main result | [src: Sect. 5.6] |
+| Baseline peak | maximum likelihood at 4.5 keV, χ² = 38.3, against 40.9 for the ΛCDM best fit | [src: Sect. 5.6] |
+
+Both Lyα analyses correct for inhomogeneous reionisation with different simulation-based prescriptions; here the correction moves the likelihood to higher masses and worsens the fit. Compare §11.
+
+**Strong lensing, JWST, 28 quads with arcs (Gilman et al. 2025, arXiv:2511.07513)**
+
+| Change | Effect on m_hm (Bayes factor 10:1) | Place |
+|---|---|---|
+| Σ_sub prior log-uniform over a factor 100 | m_hm < 10^8.6 M⊙ (about 3.0 keV with Eq. 18 [der]) | [src: Sect. VII] |
+| Σ_sub prior from Galacticus / N-body | < 10^7.4 / 10^7.2 M⊙ (6.5 / 7.4 keV) | [src: Sect. VI.2] |
+| Arcs omitted | 0.4–0.5 dex weaker | [src: Sect. VI.2] |
+| Subhalo structure evaluated at infall rather than z = 0 | subhaloes denser by a factor 10–200; changes the meaning of Σ_sub relative to earlier work | [src: Sect. VII.1] |
+| Source size | Gaussian emission region, FWHM uniform in 1–10 pc (warm dust) or 20–80 pc (narrow-line region) | [src: Sect. V.4] |
+| Macromodel | elliptical power law + external shear + m = 1, 3, 4 multipoles with free amplitudes and orientations; luminous satellites as SIS; earlier WDM lensing studies had no or fewer angular degrees of freedom | [src: Sects. V.1, VII.1, Table 2] |
+| Prior on m_hm | log10 m_hm uniform on [4, 10] | [src: Sect. III table] |
+
+**Lensing flux ratios + Milky Way satellites, joint (Nadler et al. 2021, arXiv:2101.07810; > 9.7 keV, 95%)**
+
+| Change | M_hm limit (95% / 20:1) | m_WDM (95% / 20:1) | Place |
+|---|---|---|---|
+| Fiducial: baryonic subhalo disruption equally efficient in the Milky Way and in lenses (q = 1) | 10^7.0 / 10^7.4 M⊙ | 9.7 / 7.4 keV | [src: Sect. 6.1 table] |
+| Disruption twice as efficient in the Milky Way (q = 0.5) / in lenses (q = 2) | 10^7.1 / 10^7.6; 10^6.9 / 10^7.3 M⊙ | 9.1 / 6.4; 10.4 / 7.9 keV | [src: Sect. 6.1 table] |
+| Product of the one-dimensional M_hm posteriors instead of the joint (Σ_sub, M_hm) combination | 10^7.2 / 10^7.7 M⊙ | 8.4 / 6.0 keV | [src: Sect. 6.1 table] |
+| Criterion | 95% limits depend on the arbitrary lower edge of the M_hm prior; 20:1 likelihood ratios less so; log prior on M_hm adopted | — | [src: Sect. 6.1] |
+
+**Stellar streams GD-1 and Pal 5 (Banik et al. 2019, arXiv:1911.02663; > 3.6 keV)**
+
+| Change | Effect | Place |
+|---|---|---|
+| GD-1 alone | > 4.6 keV; Pal 5 has a weak preference for small masses | [src: Sect. 4.1] |
+| Inner-Galaxy WDM subhalo suppression | for 3.3 keV, simulations with tides find subhaloes 3 times (10⁷–10⁸ M⊙) and 1.75 times (10⁸–10⁹ M⊙) more abundant than the standard fit; refitted as γ = 1.5, β = 0.7 instead of 2.7, 0.99 | [src: Sect. 3.1] |
+| Amplitude and survival fraction | fully degenerate with streams alone; marginalised; slope varied in [−1.95, −1.85] | [src: Sect. 4.1] |
+| Posterior shape | plateaus above about 10 keV | [src: Sect. 4.1] |
+
 ## 11. Lyman-α forest: the thermal history
 <!-- key: lyman-alpha-forest-the-thermal-history -->
 
@@ -165,6 +271,17 @@ Source for this section: the supplement of Nadler et al. 2020 (arXiv:2008.00022 
 - **Selection.** Detection probabilities as a function of luminosity, size, distance and sky position enter a Poisson likelihood in surface-brightness bins.
 - **Validation.** Consistency of the inferred galaxy–halo connection with hydrodynamical simulations; the joint Milky Way + M31 analysis gives 6.20 keV against 6.5 keV for the Milky Way alone (arXiv:2512.01361, arXiv:2008.00022 [src]).
 - **Referee citation.** arXiv:2008.00022 and the census papers it builds on, which this session did not fetch.
+
+**Milky Way + M31 satellites (Liu, Gong & Liao 2025, arXiv:2512.01361; > 6.20 keV, 95%)**
+
+| Item | What was done or found | Place |
+|---|---|---|
+| Hosts | 45 dark-matter-only Milky Way-mass zoom-ins (1.18–1.57 × 10¹² M⊙), subhaloes resolved to V_max ≈ 9 km/s, V_peak > 10 km/s; two Milky Way analogues (1.26, 1.57 × 10¹²) and two M31 hosts (1.19, 1.35 × 10¹²) | [src: Sect. IV.2] |
+| Completeness | DES and PS1 detection probabilities from machine-learning classifiers in M_V, distance, r_1/2 and sky position; satellites within 300 kpc and r_1/2 > 10 pc; M31 from PAndAS with an analytic selection function, 30–300 kpc, r_1/2 > 63 pc; 58 satellites in all | [src: Sect. III] |
+| Disruption | one parameter 𝓑 for baryonic subhalo disruption among eight galaxy–halo parameters | [src: Sect. IV.3] |
+| M31 mass prior | the larger prior gives > 6.07 keV (5.61 keV at 20:1), against 6.20 (5.75) | [src: Sect. V.2, Eqs. 20–21] |
+| Gain from M31 | few percent; about 10% overall relative to the Milky Way alone, which the paper quotes as 5.9 keV from an earlier Nadler et al. analysis | [src: Sect. V.2]; [sec] for 5.9 keV |
+| Criterion | M_hm < 3.23 × 10⁷ M⊙ (95%) and < 4.23 × 10⁷ M⊙ (20:1) | [src: Sect. V.2] |
 
 ## 14. Strong-lensing flux ratios and arcs
 <!-- key: strong-lensing-flux-ratios-and-arcs -->
@@ -246,7 +363,9 @@ Dark matter:
 <!-- key: not-verified -->
 
 - Observational systematics of the primordial helium determination (LBT Y_p Project) were not researched.
-- The systematics of stream analyses beyond the abstract of arXiv:1911.02663 (baryonic perturbers, stream progenitor modelling) were not read.
+- Stream analyses: Sects. 3.1 and 4.1 of arXiv:1911.02663 were read (Part B budget table); its treatment of baryonic substructures (Sect. 2.3) and stream progenitor modelling were not.
+- The effect on the limit of the alternative inner-Galaxy subhalo suppression (γ = 1.5, β = 0.7) in arXiv:1911.02663 was not read.
+- Effect of the source-size and multipole priors on the JWST limits: priors read (arXiv:2511.07513 Sects. V.1, V.4), no ablation found in the sections read.
 - Blinding practice of the small-scale dark-matter analyses was not read.
 - The decomposition of the neutrino bound that ACT cites for the statement that excess smoothing is not the primary driver was not fetched; the statement is quoted from ACT.
 - The effect of the 2025–2026 supernova recalibrations on the w0waCDM neutrino limits was not found in any paper read here.

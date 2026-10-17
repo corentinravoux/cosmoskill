@@ -90,3 +90,32 @@ Jeong2013	1309.2285	Jeong	2013	The effect of aberration on partial-sky measureme
 Manzotti2014	1401.7992	Manzotti	2014	Super-Sample CMB Lensing	systematics
 McCarthy2021	2103.05582	McCarthy	2021	Baryonic feedback biases on fundamental physics from lensed CMB power spectra	systematics
 Planck2018IV	1807.06208	Planck Collaboration	2018	Planck 2018 results. IV. Diffuse component separation	method
+HuSugiyama1994	astro-ph/9407093	Hu	1994	Anisotropies in the Cosmic Microwave Background: An Analytic Approach	foundation
+HuSugiyama1995	astro-ph/9510117	Hu	1995	Small Scale Cosmological Perturbations: An Analytic Approach	foundation
+MaBertschinger1995	astro-ph/9506072	Ma	1995	Cosmological Perturbation Theory in the Synchronous and Conformal Newtonian Gauges	foundation
+SeljakZaldarriaga1996	astro-ph/9603033	Seljak	1996	A Line of Sight Approach to Cosmic Microwave Background Anisotropies	method
+Kamionkowski1996	astro-ph/9611125	Kamionkowski	1996	Statistics of Cosmic Microwave Background Polarization	foundation
+Zaldarriaga1996reion	astro-ph/9608050	Zaldarriaga	1996	Polarization of the Microwave Background in Reionized Models	foundation
+Seljak1995	astro-ph/9505109	Seljak	1995	GRAVITATIONAL LENSING EFFECT ON COSMIC MICROWAVE BACKGROUND ANISOTROPIES: A POWER SPECTRUM APPROACH	foundation
+ZaldarriagaSeljak1998	astro-ph/9803150	Zaldarriaga	1998	Gravitational Lensing Effect on Cosmic Microwave Background Polarization	foundation
+OkamotoHu2003	astro-ph/0301031	Okamoto	2003	CMB Lensing Reconstruction on the Full Sky	method
+Kesden2003	astro-ph/0302536	Kesden	2003	Lensing Reconstruction with CMB Temperature and Polarization	method
+Hanson2010	1008.4403	Hanson	2010	CMB temperature lensing power reconstruction	method
+Tegmark2003ILC	astro-ph/0302496	Tegmark	2003	A high resolution foreground cleaned CMB map from WMAP	method
+Eriksen2007	0709.1058	Eriksen	2007	Joint Bayesian component separation and CMB power spectrum estimation	method
+Delabrouille2002	astro-ph/0211504	Delabrouille	2002	Multi-Detector Multi-Component spectral matching and applications for CMB data analysis	method
+Delabrouille2008	0807.0773	Delabrouille	2008	A full sky, low foreground, high resolution CMB map from WMAP	method
+Tegmark1996	astro-ph/9611174	Tegmark	1996	How to measure CMB power spectra without losing information	foundation
+Bond1997	astro-ph/9708203	Bond	1997	Estimating the Power Spectrum of the Cosmic Microwave Background	foundation
+TegmarkdeOliveiraCosta2000	astro-ph/0012120	Tegmark	2000	How to measure CMB polarization power spectra without losing information	method
+Mangilli2015	1503.01347	Mangilli	2015	Large-scale CMB temperature and polarization cross-spectra likelihoods	method
+Hou2011	1104.2333	Hou	2011	How Massless Neutrinos Affect the Cosmic Microwave Background Damping Tail	foundation
+BashinskySeljak2003	astro-ph/0310198	Bashinsky	2003	Signatures of Relativistic Neutrinos in CMB Anisotropy and Matter Clustering	foundation
+Follin2015	1503.07863	Follin	2015	A First Detection of the Acoustic Oscillation Phase Shift Expected from the Cosmic Neutrino Background	results
+ChallinorPeiris2009	0903.5158	Challinor	2009	Lecture notes on the physics of cosmic microwave background anisotropies	review
+Maniyar2021	2101.12193	Maniyar	2021	Quadratic estimators for CMB weak lensing	method
+Madhavacheril2020	2011.02475	Madhavacheril	2020	CMB lensing power spectrum estimation without instrument noise bias	method
+Bohm2016	1605.01392	Böhm	2016	Bias to CMB lensing measurements from the bispectrum of large-scale structure	critique
+Sailer2020	2007.04325	Sailer	2020	Lower bias, lower noise CMB lensing with foreground-hardened estimators	method
+Vanneste2018	1807.02484	Vanneste	2018	Quadratic estimator for CMB cross-correlation	method
+Chang2022	2203.07638	Chang	2022	Snowmass2021 Cosmic Frontier: Cosmic Microwave Background Measurements White Paper	review

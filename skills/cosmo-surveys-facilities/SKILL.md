@@ -5,7 +5,7 @@ description: Use when checking, citing or planning around a survey or facility f
 
 # Surveys and facilities — expert reference
 
-Snapshot 2026-10-07. Numbers carry provenance flags ([src] / [sec] / [der]);
+Snapshot 2026-10-14. Numbers carry provenance flags ([src] / [sec] / [der]);
 re-verify against the cited paper before a number enters a manuscript.
 Facts flagged `[sec: GC|WL|CMB|SN|CL]` come from the named sibling skill.
 
@@ -62,7 +62,8 @@ Facts flagged `[sec: GC|WL|CMB|SN|CL]` come from the named sibling skill.
 
 - Fibre-assignment incompleteness and its correction (PIP weights, θ-cut):
   arXiv:1703.02070, arXiv:2411.12025.
-- Redshift success by tracer and its focal-plane dependence.
+- Redshift success by tracer and its focal-plane dependence, against the
+  design requirement (DESI: > 90–95% per pointing, arXiv:2205.10939).
 - Imaging depth variations and the north/south photometric boundary of the
   targeting imaging.
 - Photometric calibration uniformity (arXiv:astro-ph/0703454,
@@ -78,6 +79,7 @@ Facts flagged `[sec: GC|WL|CMB|SN|CL]` come from the named sibling skill.
   the plan.
 - Calling DESI DR2 or Euclid DR1 public.
 - Comparing depths across surveys without the S/N and aperture convention.
+- Quoting a GW candidate count without its threshold (arXiv:2605.27226).
 - Comparing figures of merit computed with different priors.
 - Treating ZTF SN Ia DR2 as a cosmology sample (arXiv:2409.04346).
 - Using a pre-2026 start date for Rubin, Roman, 4MOST, MOONS or CSST.
@@ -107,7 +109,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; open 5k; methods 7k; results 5k; surveys 10k; systematics 5k.
+Sizes, in thousands of tokens: L1 2k; open 5k; methods 7k; results 5k; surveys 13k; systematics 7k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

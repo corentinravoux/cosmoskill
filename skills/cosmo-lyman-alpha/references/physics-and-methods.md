@@ -1,7 +1,7 @@
 # Lyman-alpha forest — physics, observables, estimators and models
 
 Scope: what the forest measures and why it constrains cosmology; the delta field; the 1D and 3D two-point statistics and their estimators; the theory models and simulations in current use; covariance, likelihood and blinding practice; codes; conventions and units.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-14
 
 Flags: `[src]` read this session in the cited paper (abstract unless a section is named); `[der]` derived here; `[sec]` secondary. Equations given without a flag are definitions.
 
@@ -26,7 +26,7 @@ shown by Hui & Gnedin 1997 to hold for Δ < 5 after uniform reionisation, with a
 
     τ ∝ Δ^(2 − 0.7(γ − 1)) / Γ_HI      (before redshift-space effects)
 
-to which peculiar-velocity gradients and thermal broadening are applied along the line of sight. This "tight correlation between the Lyα optical depth and the underlying matter density" is what makes the forest a tracer of the density field (Croft et al. 1998, arXiv:astro-ph/9708018) [src]. The FGPA is the engine of every fast mock: Gaussian or lognormal fields (arXiv:1912.02763, arXiv:2310.18996), 2LPT fields (arXiv:2607.27412) and N-body fields calibrated on a hydrodynamical simulation (arXiv:2305.08899) [src].
+to which peculiar-velocity gradients and thermal broadening are applied along the line of sight. This "tight correlation between the Lyα optical depth and the underlying matter density" is what makes the forest a tracer of the density field (Croft et al. 1998, arXiv:astro-ph/9708018) [src]. The picture comes from the first hydrodynamical simulations of the forest in CDM: low-column lines (N_HI ≤ 10¹⁴ cm⁻²) arise in pancake-like regions of overdensity 3–30 re-expanding at about the Hubble velocity (Cen et al. 1994, arXiv:astro-ph/9409017) [src]; the column-density distribution is reproduced within a factor ~2 from 10¹⁴ to 10²² cm⁻², with most low-column absorption in large flattened structures (Hernquist et al. 1996, arXiv:astro-ph/9509105) [src]; the photoionised gas collapses into sheets and filaments ~1 h⁻¹Mpc long and 50–100 h⁻¹kpc thick (Miralda-Escudé et al. 1996, arXiv:astro-ph/9511013) [src]. An earlier semi-analytic route modelled the baryon density as a lognormal random field to follow the mildly non-linear IGM at z ~ 3 (Bi & Davidsen 1997, arXiv:astro-ph/9611062) [src]. The FGPA is the engine of every fast mock: Gaussian or lognormal fields (arXiv:1912.02763, arXiv:2310.18996), 2LPT fields (arXiv:2607.27412) and N-body fields calibrated on a hydrodynamical simulation (arXiv:2305.08899) [src].
 
 Where it fails: around galaxies and quasars (proximity, feedback); in gas heated in protoclusters, where a galaxy overdensity shows no excess absorption (arXiv:2303.07619) [src]; wherever Γ_HI or T fluctuate on large scales (after reionisation, arXiv:2207.13098; from clustered sources, arXiv:1404.7425) [src].
 
@@ -41,7 +41,7 @@ Small-scale power in F is erased by three effects that must be separated to extr
 | Pressure (Jeans) smoothing | the integrated thermal history, i.e. when and how much the gas was heated | three dimensions |
 | Free streaming of dark matter (WDM, FDM) | particle mass | three dimensions, in the matter field itself |
 
-The high-z P1D is "highly sensitive to both the instantaneous temperature of the IGM and the total energy injected per unit mass during and after reionization" (arXiv:1809.06980) [src]; the pressure smoothing scale depends on the details of hydrogen and helium reionisation (arXiv:1607.04218) [src]; WDM suppression saturates at k ≳ 0.1 s/km because of peculiar-velocity smearing (arXiv:2209.14220) [src]. The non-linear flux power "has a generic shape determined by a transition scale from linear to non-linear anisotropy, and a Jeans scale below which the power drops rapidly" (arXiv:1506.04519) [src].
+Gnedin & Hui 1998 introduced Hydro-PM, a particle-mesh solver with an effective pressure potential computed from the tight density–pressure relation of low-density gas, as a fast substitute for hydrodynamics (arXiv:astro-ph/9706219) [src]. The temperature–density relation was first measured from the lower cut-off of line widths versus column density in nine high-resolution spectra over z = 2.0–4.5: T at mean density peaks near z ~ 3 and the gas becomes nearly isothermal, read as He II reionisation (Schaye et al. 2000, arXiv:astro-ph/9912432) [src]. The high-z P1D is "highly sensitive to both the instantaneous temperature of the IGM and the total energy injected per unit mass during and after reionization" (arXiv:1809.06980) [src]; the pressure smoothing scale depends on the details of hydrogen and helium reionisation (arXiv:1607.04218) [src]; WDM suppression saturates at k ≳ 0.1 s/km because of peculiar-velocity smearing (arXiv:2209.14220) [src]. The non-linear flux power "has a generic shape determined by a transition scale from linear to non-linear anisotropy, and a Jeans scale below which the power drops rapidly" (arXiv:1506.04519) [src].
 
 ### 1.4 Why it constrains cosmology
 <!-- key: why-it-constrains-cosmology -->
@@ -64,7 +64,7 @@ with f the observed flux, C_q the unabsorbed continuum of quasar q and F̄(z) th
 
 C̄(λ_rf), a_q and b_q are solved by maximum likelihood, with weights that combine the (re-calibrated) pipeline noise and the intrinsic forest variance; the procedure is documented in Ramírez-Pérez et al. 2024 (arXiv:2306.06312). The polynomial absorbs quasar luminosity and spectral diversity **and** the redshift evolution of F̄(z), so the survey δ field carries no absolute mean-flux information.
 
-Because the fit "effectively subtracts the mean δ and the first moment of each forest", the measured field is δ̃_i = η_ik δ_k, with η a projector acting within each forest. The same operation is applied to the model through the distortion matrix D_MN, a linear relation between distorted and undistorted correlation functions in bins M and N (introduced in BOSS DR12, arXiv:1702.00176; tested in arXiv:2506.15262) [src]. In DR2 the distortion matrix includes the redshift evolution of the clustering as ((1+z_k)(1+z_p)/(1+z_ref)²)^(γ_α − 1), the model is computed on 2 h⁻¹Mpc bins (data: 4 h⁻¹Mpc) and extended to 300 h⁻¹Mpc along r_∥ (arXiv:2503.14739, Sect. 3.1) [src].
+That the continuum fit makes each δ depend on the true fluctuations of the other pixels of the forest was discussed in the first BOSS 3D measurement (arXiv:1104.5244) and in the first BOSS DLA × forest cross-correlation [sec: both as cited in arXiv:2404.03001, Sect. 3.1, refs. 8 and 76]. Because the fit "effectively subtracts the mean δ and the first moment of each forest", the measured field is δ̃_i = η_ik δ_k, with η a projector acting within each forest. The same operation is applied to the model through the distortion matrix D_MN, a linear relation between distorted and undistorted correlation functions in bins M and N (introduced in BOSS DR12, arXiv:1702.00176; tested in arXiv:2506.15262) [src]. In DR2 the distortion matrix includes the redshift evolution of the clustering as ((1+z_k)(1+z_p)/(1+z_ref)²)^(γ_α − 1), the model is computed on 2 h⁻¹Mpc bins (data: 4 h⁻¹Mpc) and extended to 300 h⁻¹Mpc along r_∥ (arXiv:2503.14739, Sect. 3.1) [src].
 
 DESI specifics (arXiv:2503.14739, Sect. 2.4) [src]: observed range 3600–5772 Å; rest-frame region A 1040–1205 Å and region B 920–1020 Å, correlated separately; masks for cosmic rays, BAL locations and DLA cores; forests shorter than 120 Å discarded; the C III region 1600–1850 Å is used to derive a spectro-photometric correction (peaking at 5% at 3650 Å) and a 1.5% correction to the noise variance.
 
@@ -94,7 +94,7 @@ The pipeline used from eBOSS DR16 to DESI is `picca`, public since arXiv:2007.08
 ### 3.1 Definition and relation to 3D
 <!-- key: definition-and-relation-to-3d -->
 
-P1D is the power spectrum of δ_F along the line of sight, in redshift bins. It is a projection of the 3D flux power:
+P1D is the power spectrum of δ_F along the line of sight, in redshift bins. Early measurements: Croft et al. 1998 inferred the linear power from the flux power (arXiv:astro-ph/9708018); McDonald et al. 2000 tabulated the flux PDF, power spectrum and correlation function with full covariances from eight high-resolution spectra at z = 2.41, 3.00, 3.89 (arXiv:astro-ph/9911196) [src]; Croft et al. 2002 used 30 HIRES + 23 LRIS spectra and found Δ²(k_p) = 0.74 (+0.20/−0.16) at k_p = 0.03 (km/s)⁻¹, ⟨z⟩ = 2.72, with a power-law slope −2.43 ± 0.06 (arXiv:astro-ph/0012324) [src]. It is a projection of the 3D flux power:
 
     P_1D(k_∥) = (1/2π) ∫_{k_∥}^{∞} P_3D(k, μ = k_∥/k) k dk
 
@@ -111,6 +111,11 @@ so every k_∥ receives 3D power from all smaller scales; this is why P1D at mod
 | Forward-modelled (high resolution) | mock spectra with the data's noise, resolution and masks; emulator; MCMC | consistent treatment of masks | tied to the simulation grid | arXiv:1709.07354 |
 
 Two-estimator practice dates from BOSS DR9, where a Fourier-transform and a maximum-likelihood method agreed over 12 redshift bins (arXiv:1306.5896) [src]. In DESI both estimators are run on every data set (EDR: arXiv:2306.06311 and arXiv:2306.06316; DR1: arXiv:2505.09493 and arXiv:2505.07974) with a joint validation paper (arXiv:2509.13593) [src].
+
+The two DR1 estimators as written in their papers:
+
+- **FFT** (arXiv:2505.09493) [src: Sect. 3.2, Eqs. 6–7]. P1D,α is defined to include the Lyα × Si II(1190, 1193) and Lyα × Si III(1206.5) cross terms (Eq. 6), modelled later at inference. Each forest is cut into three sub-forests of L_sub = 43.3 Å rest frame (Δz ≤ 0.2 each, which sets the redshift binning and k_min = 0.0468 Å⁻¹); each sub-forest is treated as an independent realisation and correlations between sub-forests and between redshift bins are neglected. Estimator: P1D,α(A, z) = ⟨(P_raw,s − P_noise,s)/R_s²⟩ − P_metals (Eq. 7), with R_s the Fourier transform of the pipeline resolution matrix and P_metals the side-band power.
+- **QMLE** (arXiv:2505.07974) [src: Sect. 3.2, Eqs. 3–6]. Real-space estimator, "not biased by gaps in the spectra"; per-quasar band powers p_q and Fisher matrices F_q combined as p = C_tot Σ F_q p_q with C_tot⁻¹ = Σ F_q, which deconvolves masking, continuum marginalisation and redshift interpolation. Deviations are estimated around a fiducial k P_fid/π = A (k/k_0)^(3+n+α ln k/k_0) / (1+(k/k_1)²) × ((1+z)/(1+z_0))^(B+β ln k/k_0), k_0 = 0.009 s/km, z_0 = 3 (Eq. 3); one iteration; spectra longer than 350 pixels split in two, segments shorter than 40 pixels dropped. The cross-exposure version (xQMLE) correlates different exposures m ≠ n of the same quasar, removing the noise term (Eqs. 4–6). Covariance: Poisson bootstrap over quasars with fixed Fisher matrix, then regularised by smoothing and by enforcing C_bootstrap ≥ C_Gaussian [src: Sect. 3.2.2]. Code: `lyspeq`.
 
 DESI DR1 innovations: a cross-exposure estimator that removes the need to model pipeline noise; a covariance-matrix estimator for the FFT measurement; data splits (arXiv:2505.09493, arXiv:2505.07974) [src]. Validation: 20 synthetic realisations for masking and continuum corrections, Kolmogorov–Smirnov tests of the estimators and covariances, and CCD image simulations of 675,000 quasars for resolution (arXiv:2509.13593) [src].
 
@@ -131,11 +136,20 @@ The 1D bispectrum was first measured robustly on eBOSS DR16 with an FFT estimato
 <!-- key: estimators -->
 
 - **Auto-correlation** ξ(r_∥, r_⊥): weighted average of δ_i δ_j over pixel pairs from different lines of sight, binned in separation along and across the line of sight computed with a fiducial cosmology.
-- **Cross-correlation** with quasars: weighted average of δ_i over quasar–pixel pairs; no random catalogue is needed because δ has zero mean by construction. First BAO measurement in arXiv:1311.1767 [src].
+- **Cross-correlation** with quasars: weighted average of δ_i over quasar–pixel pairs; no random catalogue is needed because δ has zero mean by construction. First measured on ~60,000 BOSS DR9 spectra, detected to 80 h⁻¹Mpc and fitted by linear theory above 15 h⁻¹Mpc, giving b_q = 3.64 (+0.13/−0.15) at z = 2.38 (Font-Ribera et al. 2013, arXiv:1303.1937) [src]. First BAO measurement in arXiv:1311.1767 [src].
 - **Legendre multipoles** of both, as an alternative compression that gives a positive-definite covariance without smoothing (arXiv:2603.04281) [src].
 - Fast pair-counting codes for two- and three-point functions exist outside the collaboration pipeline (Lya2pcf, found by search this session; not cited as a source).
 
 The auto- and cross-correlations are complementary "because of the quite different impact of redshift-space distortion on the two measurements" (arXiv:1404.1801) [src].
+
+As written in DESI DR1 (arXiv:2404.03001) [src: Sects. 3.1–3.3, Eqs. 5–10]:
+
+    r_∥ = [D_C(z_i) − D_C(z_j)] cos(θ_ij/2),   r_⊥ = [D_M(z_i) + D_M(z_j)] sin(θ_ij/2)                      (Eq. 5)
+    w_q(λ) = ((1+z_λ)/(1+z_0))^(γ_α − 1) [ η_pip (σ_pip,q / F̄C_q)² + η_LSS σ²_LSS(λ) ]⁻¹                 (Eq. 6)
+    η^cont_ij = δ^K_ij − w_j/Σ_k w_k − w_j Λ_i Λ_j / Σ_k w_k Λ_k²                                         (Eq. 7)
+    ξ_M = Σ_{(i,j)∈M} w_i w_j δ̃_i δ̃_j / Σ w_i w_j  (auto, Eq. 9);   ξ_M = Σ w_i w^Q_j δ̃_i / Σ w_i w^Q_j  (cross, Eq. 10)
+
+with γ_α = 2.9 and η_LSS = 7.5 (a simple S/N-dependent weighting of sightlines that performs nearly as well as the minimum-variance quadratic estimator was proposed by McQuinn & White 2011, who also showed that survey sensitivity to 3D forest correlations is set by one number, a noise-weighted source density, arXiv:1102.1752 [src]) (chosen to minimise the auto-correlation covariance for 0.8 Å pixels; it down-weights high-S/N pixels whose information is correlated); the estimator is stated to be sub-optimal. The model is distorted by ξ_M = Σ_N D_MN ξ′_N, with D built from the same η (Sect. 4.3). Covariance: correlations measured in 1028 HEALPix pixels (NSIDE = 16, ~(250 h⁻¹Mpc)² at z ~ 2.3), covariance from their scatter, then smoothed by replacing every off-diagonal correlation coefficient by the average over bins with the same |Δr_∥| and |Δr_⊥|; the cross-covariance of the four functions is included for the first time (Sect. 3.3).
 
 ### 4.2 The model
 <!-- key: the-model -->
@@ -144,7 +158,7 @@ On large scales the flux power is a Kaiser-like form with two bias parameters,
 
     P_F(k, μ) = b_F² (1 + β_F μ²)² P_L(k) × D_NL(k, μ),     b_F β_F = b_η f
 
-where b_F ≡ b_δ is the density bias (negative: more matter, less flux), b_η the bias with respect to the line-of-sight velocity gradient, f the growth rate, and D_NL a non-linear correction. Unlike for galaxies, β_F is not f/b: b_η is an independent parameter (bias parameters computed from simulations in arXiv:astro-ph/0108064 and arXiv:1506.04519) [src]. The first measurement gave 0.16 < b < 0.24 (in absolute value), 0.44 < β < 1.20 and b(1+β) = 0.336 ± 0.012 at z = 2.25 (arXiv:1104.5244) [src]. The bias evolves steeply, ∝ (1+z)^γ with γ_α = 3.05 ± 0.16 (arXiv:2607.19619) or 2.96 ± 0.06 (arXiv:2505.07974) [src].
+where b_F ≡ b_δ is the density bias (negative: more matter, less flux), b_η the bias with respect to the line-of-sight velocity gradient, f the growth rate, and D_NL a non-linear correction. The redshift-space form is that of Kaiser 1987 (doi:10.1093/mnras/227.1.1, title and year confirmed on Crossref; the DESI papers cite it for this term). Unlike for galaxies, β_F is not f/b: b_η is an independent parameter (bias parameters computed from simulations in arXiv:astro-ph/0108064 and arXiv:1506.04519) [src]. Seljak 2012 derived the large-scale density bias and the velocity bias of any non-linear local transformation of the density field from its one-point PDF and applied it to the forest's ionisation-equilibrium model (arXiv:1201.0594) [src]. The first measurement gave 0.16 < b < 0.24 (in absolute value), 0.44 < β < 1.20 and b(1+β) = 0.336 ± 0.012 at z = 2.25 (arXiv:1104.5244) [src]. The bias evolves steeply, ∝ (1+z)^γ with γ_α = 3.05 ± 0.16 (arXiv:2607.19619) or 2.96 ± 0.06 (arXiv:2505.07974) [src].
 
 Components of the fitted model in current analyses, each documented in a dedicated paper:
 
@@ -159,6 +173,10 @@ Components of the fitted model in current analyses, each documented in a dedicat
 | Correlated sky-subtraction and calibration noise | excess at zero line-of-sight separation | arXiv:2404.03003 |
 | Non-linear correction D_NL | fitting function of Arinyo-i-Prats et al., valid to k = 10 h/Mpc at < 5% | arXiv:1506.04519, arXiv:2205.00962 |
 | Broadband polynomials (optional) | test of robustness of BAO to the smooth model | arXiv:1904.03400 |
+
+How DESI DR1 wrote the contaminant terms (arXiv:2404.03001) [src: Sects. 4.1, 4.5–4.9]: linear Kaiser model with b_F, β_F for the forest and β_Q = f/b_Q for quasars (β_F independent); peak–smooth split with (α_⊥, α_∥) on the peak only and Gaussian smoothing of the peak for non-linear broadening; correlated noise ξ_cont = a_noise δ^K(r_∥) f(r_⊥), with f the fraction of same-petal pairs, zero beyond 110 h⁻¹Mpc (Eq. 13); unmasked HCDs as a scale-dependent bias b′_α = b_α + b_HCD F_HCD(k_∥), F_HCD from the Fourier transform of Voigt profiles, and the same form for β; redshift errors and quasar velocities as a Lorentzian damping σ_z plus a shift Δr_∥ (σ_z = 3.67 ± 0.14 h⁻¹Mpc against 6.86 ± 0.27 in eBOSS DR16, attributed to new Redrock templates); transverse proximity effect with isotropic quasar radiation, λ_UV = 300 h⁻¹Mpc and amplitude ξ_0^TP; a multiplicative non-linear and thermal correction to the auto-power from hydrodynamical simulations, needed for the 10 h⁻¹Mpc cut. Priors are uniform except b_CIV(eff) and β_HCD (see `systematics.md` G2).
+
+eBOSS DR16 (arXiv:2007.08995) [src: Sects. VI.1, VI.2, App. E]: fits over 10 < r < 180 h⁻¹Mpc, μ ∈ [0, 1] (auto) and [−1, 1] (cross); auto model = Kaiser + correlated sky residuals + metals + HCDs (15 parameters for the two autos), cross model with β_QSO fixed from f/b_QSO unless auto and cross are fitted together (19 parameters); minimiser iminuit; BAO errors from a profiled χ² scan over (α_∥, α_⊥), mapped to confidence levels with fast Monte Carlo realisations, cross-checked against PolyChord marginalisation with flat priors; broadband-polynomial fits run with and without Gaussian "physical priors" on (b, β, b_HCD).
 
 The EDR analysis used a 13-parameter model "based on linear perturbation theory" (arXiv:2308.10950) [src]; the DR2 BAO fit has 17 parameters (arXiv:2503.14739) [src]. The fitter used by DESI is `Vega` (`github.com/andreicuceu/vega`, cited as a package, not a paper, in arXiv:2503.14739), with a Gaussian likelihood sampled by PolyChord [src]; BOSS DR9–DR11 used `baofit` (arXiv:1301.3456, arXiv:1311.1767) [src].
 
@@ -182,9 +200,18 @@ Separations are computed from angles and redshifts with the fiducial cosmology, 
 
 and, because the template is still split into peak and smooth components, fits two pairs: (φ_p, α_p) for the BAO peak, with α_p = [sqrt(D_M D_H)/r_d]/[…]_fid, and (φ_s, α_s) for the broadband. φ_s is the new cosmological information; α_s (related to the equality scale) is weak and contaminated and is marginalised (arXiv:2607.27410, Sect. 3.1) [src]. A BAO-only analysis rescales the peak only and keeps the smooth component's coordinates fixed.
 
+The full-shape model as written in DESI DR1 (arXiv:2509.15308) [src: Sects. II.2, III, Eqs. 4–8], implemented in `Vega`: a CAMB template at z_eff = 2.33 split into peak and smooth parts that are processed separately and summed at the end;
+
+    P_F(k) = b′_F² (1 + β′_F μ_k²)² G(k) F_NL(k) P_fid(k)                         (Eq. 4)
+    P_F×Q(k) = b′_F (1 + β′_F μ_k²)(b_Q + f μ_k²) G(k) X_NL(k) P_fid(k)            (Eq. 5)
+    b′_F = b_F + b_HCD F_HCD(k_∥),   b′_F β′_F = b_F β_F + b_HCD β_HCD F_HCD(k_∥),   F_HCD = exp(−L_HCD k_∥)   (Eqs. 6–7)
+    F_NL = exp{ q_1 Δ²(k) [1 − (k/k_v)^(a_v) μ_k^(b_v)] − (k/k_p)² },   Δ²(k) = k³ P_fid/(2π²)   (Eq. 8, Arinyo-i-Prats et al.)
+
+G is the Fourier transform of the 4 h⁻¹Mpc top-hat bin; β_F = b_η,F f/b_F, so f is degenerate with b_η,F in the auto-correlation and β_F is marginalised; DLAs with log N_HI > 20.3 are masked only in spectra with S/N > 3, weaker or undetected HCDs are modelled; X_NL is a Lorentzian damping with free σ_z for redshift errors and quasar non-linear velocities (a Gaussian is a validation variant). Fit range: r_max = 180 h⁻¹Mpc; r_min = 25 h⁻¹Mpc for the auto (as in eBOSS) and 40 h⁻¹Mpc for the cross, "for which there is no equivalent" non-linear model; cuts in isotropic separation; 9188 points, χ² = 9145.1 for 9163 dof (PTE 0.55); adjacent bins correlate at ~0.5.
+
 Why AP is separable from RSD in the forest: the two anisotropies are degenerate when their functional forms coincide, which is the case for β → 0; the response of a Kaiser model to φ_s departs from the response to β as β grows, so the large β of the forest (about 1.2, against about 0.4 for galaxies) makes the broadband AP measurable (arXiv:2607.27410, Sect. 3.1.2) [src].
 
-Small-scale marginalisation (arXiv:2607.27410, Sect. 3.3) [src]: the distortion matrix mixes information along the line of sight, so correlations at r_∥ < 10 h⁻¹Mpc in the undistorted model leak into all scales of the distorted one, and a cut r > r_min does not remove sensitivity to r < r_min; ignored, this "could lead to percent-level biases in Lyα AP constraints". The remedy adds one free amplitude per small-scale bin of the undistorted model, each multiplying a linear template propagated through the distortion matrix, and marginalises them analytically by a covariance update C̃ = C + Δ̂ S Δ̂ᵀ. All data down to zero separation stay in the χ², so no degrees of freedom are gained or lost. Validation on eBOSS mocks set r_min = 25 h⁻¹Mpc (arXiv:2209.12931) [src]. The DESI DR2 analysis instead marginalises analytically over scales below 10 h⁻¹Mpc and over UV-background fluctuations, with priors on non-linear clustering derived from the DESI P1D through ForestFlow (arXiv:2607.27411, arXiv:2607.27413) [src]. The growth-rate parameter is not recovered without bias on mocks and is excluded (arXiv:2607.27411) [src].
+Small-scale marginalisation (arXiv:2607.27410, Sect. 3.3) [src]: the distortion matrix mixes information along the line of sight, so correlations at r_∥ < 10 h⁻¹Mpc in the undistorted model leak into all scales of the distorted one, and a cut r > r_min does not remove sensitivity to r < r_min; ignored, this "could lead to percent-level biases in Lyα AP constraints". The remedy adds one free amplitude per small-scale bin of the undistorted model, each multiplying a linear template propagated through the distortion matrix, and marginalises them analytically by a covariance update C̃ = C + Δ̂ S Δ̂ᵀ. All data down to zero separation stay in the χ², so no degrees of freedom are gained or lost. Validation on eBOSS mocks set r_min = 25 h⁻¹Mpc (arXiv:2209.12931) [src]. The DESI DR2 analysis marginalises analytically over the undistorted model at r < r_min, with r_min = 30 h⁻¹Mpc (auto) and 40 h⁻¹Mpc (cross), and fits 30 < r < 200 and 40 < r < 200 h⁻¹Mpc (arXiv:2607.27411 [src: Sects. III.4, III.5]; arXiv:2607.27410 [src: Sect. III.3, App. A]); the validation abstract's "small scales (< 10 h⁻¹Mpc)" names the leaking scales, not the marginalised range. In the baseline the Arinyo non-linear parameters are fixed to values calibrated with ForestFlow on the DESI DR1 P1D, with variations tested (arXiv:2607.27411 [src: Sect. III.5]; arXiv:2607.27413). UV-background fluctuations enter as a scale-dependent bias b_F(k) = b_δ + b_Γ (b_s − b_a) W(k/κ_0)/(1 + b′_a W(k/κ_0)), W(s) = arctan(s)/s, with (b_s − b_a) = 1, b′_a = −2/3, λ_0 = 1/κ_0 = 300 h⁻¹Mpc fixed and b_Γ free (arXiv:2607.27410 [src: Sect. III.4, Eq. 19], following arXiv:1404.7425). The growth-rate parameter is not recovered without bias on mocks and is excluded (arXiv:2607.27411) [src].
 
 ### 4.4 P3D and the cross-spectrum P×
 <!-- key: p3d-and-the-cross-spectrum-px -->
@@ -207,6 +234,7 @@ The convergence facts that govern fits of this model to simulation boxes are in 
 ## 5. Tomography and voids
 <!-- key: tomography-and-voids -->
 
+- **Origins.** Bayesian inversion of networks of adjacent low-resolution sightlines, by a constrained Gaussian random field (Wiener) approach or a non-linear deconvolution, to recover the 3D topology of the IGM (Pichon et al. 2001, arXiv:astro-ph/0105196) [src]; topology of the Wiener-interpolated field tested on hydrodynamical simulations through power spectrum, PDF, Euler characteristic and critical points (Caucci et al. 2008, arXiv:0801.4335) [src]; requirements for galaxy-based tomography at z = 2.25: 360, 1200, 3300 sightlines per deg² at g = 24.0, 24.5, 25.0, i.e. transverse separations of 3.6, 1.9, 1.2 h⁻¹Mpc that roughly set the reconstruction scale, with S/N = 4 per Å sufficient (Lee et al. 2014, arXiv:1309.1477) [src].
 - **Reconstruction.** Wiener filtering of the pixel δ values into a 3D map; the achievable resolution is set by the mean transverse sightline separation (2.5 h⁻¹Mpc in CLAMATO, arXiv:1710.02894; 13 h⁻¹Mpc in Stripe 82, arXiv:2004.01448) [src]. CLAMATO DR2 adds a forward-modelled matter field from a joint galaxy + forest likelihood (arXiv:2109.09660) [src].
 - **Voids.** Spherical-overdensity finder calibrated on hydrodynamical simulations (arXiv:1710.02612) [src]; void and protocluster-candidate catalogues from the Stripe 82 map, with performance assessed on simulated eBOSS observations (arXiv:2004.01448) [src].
 - **Void–forest cross-correlation.** Stack the δ field around void centres as a function of (r_∥, r_⊥); the quadrupole measures RSD from flows out of voids, with a linear model that includes the tomographic effect of pixels lying along parallel lines of sight; β = 1.21 ± 0.18 at z = 2.49 (arXiv:2203.11045) [src]. The broader void literature belongs to `cosmo-beyond-two-point`.
@@ -238,6 +266,8 @@ Simulations use spatially uniform photo-ionisation and photo-heating rates from 
 | Lyssa / lym1d | 18 Nyx runs | cosmology + thermal | P1D, percent-level agreement with a previous emulator | arXiv:2412.05372 | [src] |
 | Nyx GP emulator study | Nyx grid | — | end-to-end inference on mock eBOSS/DESI data; adaptive sampling advocated over a fixed Latin hypercube | arXiv:2012.04008 | [src] |
 
+Precursors: a first-order Taylor expansion of the flux power around a best-guess model from a coarse grid of GADGET-2 hydrodynamical simulations, applied to SDSS P1D (Viel & Haehnelt 2006, arXiv:astro-ph/0508177) [src]; the first Gaussian-process emulator with Latin-hypercube sampling, from 21 small simulations, typical accuracy 1.5% and worst case 4% against a BOSS DR9 statistical error of 3–5% at z < 3, with an estimate of its own error (Bird et al. 2019, arXiv:1812.04654) [src].
+
 Two philosophies coexist: emulate as a function of **cosmological parameters** (PRIYA, Lyssa), or as a function of the **linear power amplitude and slope at the redshift and scale probed** (LaCE, ForestFlow), which lets one emulator serve extended models whose linear power is described by an amplitude and slope; the latter is stated not to cover "models with sharp features in the linear power, such as warm or light axion dark matter" (arXiv:2011.15127) [src].
 
 ### 6.4 Perturbative models
@@ -259,7 +289,7 @@ One-loop EFT of the flux field, equivalent to a line-of-sight-dependent bias exp
 
 - 3D: covariance from the data (see `systematics.md` D4), Gaussian likelihood on the binned correlation functions, validation on 150 (DR1) and 400 (DR2) mock realisations (arXiv:2404.03004, arXiv:2503.14741) [src].
 - P1D: estimator-level covariance, validated on synthetic realisations (arXiv:2509.13593) [src].
-- Blinding: applied to DESI Lyα BAO from DR1 (arXiv:2404.03001), to the full-shape analyses (arXiv:2509.15308, arXiv:2607.27411) and to the P1D cosmology (arXiv:2601.21432) [src]; an AP-based catalogue-level scheme is described in arXiv:2607.07875 [src].
+- Blinding: applied to DESI Lyα BAO from DR1 (arXiv:2404.03001), to the full-shape analyses (arXiv:2509.15308, arXiv:2607.27411) and to the P1D cosmology (arXiv:2601.21432) [src]; an AP-based catalogue-level scheme is described in arXiv:2607.07875 [src]. How: DESI DR1 BAO blinded the measured correlation functions with an additive term mimicking a BAO shift, because sky lines and absorption lines close to Lyα made catalogue-level blinding hard (arXiv:2404.03001 [src: Sect. 6.1]); the DR1 full shape added fixed random offsets to φ_s and f inside the likelihood (arXiv:2509.15308 [src: Sect. II.4]); in all cases the σ/3 criterion on mocks, data splits and analysis variations was passed before unblinding (`systematics.md` G1–G7).
 
 ## 9. Codes
 <!-- key: codes -->
@@ -296,7 +326,6 @@ The methods of arXiv:2004.01448 (tomography and void finding), arXiv:2203.11045 
 ## 11. Not verified
 <!-- key: not-verified -->
 
-- The explicit form of the pixel weights (the variance model with its η, σ_LSS, ε terms) and of the projector η_ik (Eq. 3.3 of the DR1 paper).
-- The smoothing applied to the 3D covariance matrix in DESI DR1/DR2 as written in the DR1 paper body.
+- Closed 2026-10-14: pixel weights, projector η and covariance smoothing are now in §4.1 from arXiv:2404.03001 (Eqs. 6, 7; Sect. 3.3). Still open: the form of the pipeline-noise rescaling η_pip(λ) and of σ²_LSS(λ).
 - A reference paper for `Vega` itself, and for `picca` beyond the release statement.
 - The SPH codes behind Sherwood and the LaCE training set (not stated in the abstracts read).

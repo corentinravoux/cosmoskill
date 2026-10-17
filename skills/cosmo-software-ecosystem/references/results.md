@@ -2,7 +2,7 @@
 
 Scope: documented agreement between codes (Boltzmann solvers, perturbation-theory codes, estimators, samplers), accuracies the reference papers state, and benchmark timings where a paper gives them.
 
-Snapshot: 2026-10-11
+Snapshot: 2026-10-14
 
 Flags: `[src]` read this session in the cited paper (abstract unless a section is named), in an installed package or at a repository; `[sec]` taken from a secondary source that is named; `[der]` derived, with the derivation stated.
 Every accuracy below holds for the configuration its paper tested (model, scales, precision settings). None is a property of "the code" in general.
@@ -17,7 +17,8 @@ Every accuracy below holds for the configuration its paper tested (model, scales
 |---|---|---|---|---|
 | Lensed CMB and matter power spectra computed by the two codes agree | 0.01 % | concordance cosmology, a given recombination history, after "a few tiny changes in CAMB" | Lesgourgues 2011, arXiv:1104.2934 | [src] |
 | Speed at fixed precision, lensed CMB spectra of a ΛCDM model | CLASS about 2.5 times faster than CAMB | 2011 versions of both codes | arXiv:1104.2934 | [src] |
-| Same agreement as summarised fifteen years later | "at the ∼10⁻⁴ level for flat ΛCDM" | "with matched physical assumptions and strongly boosted settings" | Lewis 2026, arXiv:2607.14854, section 9 | [src] |
+| Residual between the two reference calculations | lensed TT 0.01 % for 2 ≤ ℓ ≤ 3000 (except ℓ = 18), EE 0.02 % for ℓ ≥ 40; Δχ² = 0.027 on a simplified Planck likelihood | CAMB `nthermo` raised from 10 000 to 100 000 and boosts at 3; details in `systematics.md`, section 9 | arXiv:1104.2934 | [src: Sect. 2.2, 4] |
+| Same agreement as summarised fifteen years later | "at the ∼10⁻⁴ level for flat ΛCDM" | "with matched physical assumptions and strongly boosted settings" | Lewis 2026, arXiv:2607.14854 | [src: Sect. IX] |
 | Cost of one massive neutrino | CLASS 1.5 times slower; "about 5 times in other codes" | fixed accuracy requirements, 2011 | Lesgourgues & Tram 2011, arXiv:1104.2935 | [src] |
 | Precision settings both codes need for Euclid forecasts | established, not a single number | weak lensing, photometric and spectroscopic clustering Fisher forecasts | Casas et al. 2023, arXiv:2303.09451 | [src] |
 
@@ -26,18 +27,19 @@ Every accuracy below holds for the configuration its paper tested (model, scales
 
 | Statement | Value | Conditions | Flag |
 |---|---|---|---|
-| Design target of the unboosted defaults | 10⁻³ pointwise agreement with a boosted reference, for interior lensed CMB spectra and quasi-linear matter power; looser at spectrum ends, in the high-ℓ tail and in the non-linear regime | harness `camb.check_accuracy`, grid of more than a hundred parameter files (curvature, neutrino hierarchies, N_eff, dynamical dark energy, tensors) | [src, section 9] |
-| Likelihood-level size of the default error | median Δχ² ≃ 0.4, maximum ≃ 1.0 | SO-like Gaussian proxy over 2 ≤ ℓ ≤ min(4000, ℓ_max), about one hundred CMB models | [src, section 9] |
-| CAMB v1.6.6 with the same high-k lensing support (`lens_potential_accuracy=5`) | below 10⁻³ up to ℓ ∼ 1900; 2.6 % in TT, 1.1 % in EE and 14 % in lensed BB at ℓ = 4000; Δχ² ≃ 10² | flat ΛCDM, ℓ_max = 4000, against the boosted reference | [src, section 9] |
-| CAMB v1.6.6 with its historical default lensing cutoff, max(kη₀) = 10375 | 1.5 % error in TT by ℓ = 3000; Δχ² ≃ 6 × 10³ | same model and proxy | [src, section 9] |
-| Current default lensing source range | max(kη₀) = 90000, or k_max = 6.36 Mpc⁻¹ | Planck-2018 ΛCDM model, lensed spectra to ℓ_max = 4000 | [src, section 11] |
-| Edge effect in CLASS lensed spectra | 1.8 × 10⁻² at ℓ = 4000 when stopping at ℓ = 4000 instead of computing to 6000 and truncating | CLASS v3.3.4, `cl_permille` settings | [src, section 11] |
-| Effect of the CLASS CMB source cutoff | 2.2 × 10⁻³ in the TT, EE, TE envelope at ℓ = 4000 | CLASS default cutoff against the high-k cutoff | [src, section 11] |
+| Design target of the unboosted defaults | 10⁻³ pointwise agreement with a boosted reference, for interior lensed CMB spectra and quasi-linear matter power; looser at spectrum ends, in the high-ℓ tail and in the non-linear regime | harness `camb.check_accuracy`, grid of more than a hundred parameter files (curvature, neutrino hierarchies, N_eff, dynamical dark energy, tensors) | [src: Sect. IX] |
+| Likelihood-level size of the default error | median Δχ² ≃ 0.4, maximum ≃ 1.0 | SO-like Gaussian proxy over 2 ≤ ℓ ≤ min(4000, ℓ_max), about one hundred CMB models | [src: Sect. IX] |
+| CAMB v1.6.6 with the same high-k lensing support (`lens_potential_accuracy=5`) | below 10⁻³ up to ℓ ∼ 1900; 2.6 % in TT, 1.1 % in EE and 14 % in lensed BB at ℓ = 4000; Δχ² ≃ 10² | flat ΛCDM, ℓ_max = 4000, against the boosted reference | [src: Sect. IX] |
+| CAMB v1.6.6 with its historical default lensing cutoff, max(kη₀) = 10375 | 1.5 % error in TT by ℓ = 3000; Δχ² ≃ 6 × 10³ | same model and proxy | [src: Sect. IX] |
+| Current default lensing source range | max(kη₀) = 90000, or k_max = 6.36 Mpc⁻¹ | Planck-2018 ΛCDM model, lensed spectra to ℓ_max = 4000 | [src: Sect. XI] |
+| Edge effect in CLASS lensed spectra | 1.8 × 10⁻² at ℓ = 4000 when stopping at ℓ = 4000 instead of computing to 6000 and truncating | CLASS v3.3.4, `cl_permille` settings | [src: Sect. XI] |
+| Validated acceptance tolerances of the defaults (maximum, not RMS, fractional error) | lensed TT, EE: 3 × 10⁻³ (2 ≤ ℓ < 600), 10⁻³ (600 ≤ ℓ < 3500), 3 × 10⁻³ (3500 ≤ ℓ < 6000), 2 × 10⁻² (ℓ ≥ 6000); C_L^φφ: 5 × 10⁻³ (5 ≤ L < 2500), 10⁻² (2500 ≤ L < 4000); BB: 5 × 10⁻³ (ℓ < 1000), 10⁻² (1000 ≤ ℓ < 6000); linear P(k): 10⁻³ for 5 × 10⁻³ < k < 2 h Mpc⁻¹, 3 × 10⁻³ outside; non-linear P(k): 10⁻² above 10 h Mpc⁻¹ | against a reference with doubled boosts; matter-power values hold with `Transfer.high_precision` set | [src: App. C, Table 2] |
+| Effect of the CLASS CMB source cutoff | 2.2 × 10⁻³ in the TT, EE, TE envelope at ℓ = 4000 | CLASS default cutoff against the high-k cutoff | [src: Sect. XI] |
 
 ### 1.3 Timings quoted in the CAMB v2 paper
 <!-- key: timings-quoted-in-the-camb-v2-paper -->
 
-Four threads on "a typical laptop"; flat case: Planck-2018 ΛCDM with m_ν = 0.06 eV, lensed spectra to ℓ_max = 4000 (arXiv:2607.14854, table in section 11) [src].
+Four threads on "a typical laptop"; flat case: Planck-2018 ΛCDM with m_ν = 0.06 eV, lensed spectra to ℓ_max = 4000 (arXiv:2607.14854) [src: Sect. XI, Table 1].
 
 | Case | CPU [s] | Wall [s] |
 |---|---|---|
@@ -78,7 +80,7 @@ These timings come from the author of one of the two codes; the 2011 comparison 
 | HMcode-2020 feedback response | matched at the < 1 % level | z < 1, k < 20 h Mpc⁻¹, against hydrodynamical simulations | arXiv:2009.01858 | [src] |
 | Takahashi halofit | 5 % for k ≤ 1 h Mpc⁻¹ (the abstract goes on to a looser figure at smaller scales, not read) | fitted over k ≤ 30 h Mpc⁻¹, 0 ≤ z ≤ 10, 16 models around WMAP best fits | arXiv:1208.2701 | [src] |
 | Standard-model N_eff | 3.0440 ± 0.0002 | flavour oscillations, finite-temperature QED to O(e³), full collision integral | Bennett et al. 2020, arXiv:2012.02726 | [src] |
-| Reionisation-heating convention in the linear P(k) | about 1 % at k ∼ 1 Mpc⁻¹ at z = 0; several tens of per cent by k ∼ 10–20 Mpc⁻¹ | switching on CAMB's optional homogeneous heating, T_reion = 10⁴ K, z_re = 7.7; "only indicative" | arXiv:2607.14854, section 14 | [src] |
+| Reionisation-heating convention in the linear P(k) | about 1 % at k ∼ 1 Mpc⁻¹ at z = 0; several tens of per cent by k ∼ 10–20 Mpc⁻¹ | switching on CAMB's optional homogeneous heating, T_reion = 10⁴ K, z_re = 7.7; "only indicative" | arXiv:2607.14854 | [src: App. B] |
 
 ## 2. Theory facades: validated accuracy
 <!-- key: theory-facades-validated-accuracy -->
@@ -87,6 +89,8 @@ These timings come from the author of one of the two codes; the 2011 comparison 
 |---|---|---|---|---|
 | CCL correlation-function predictions | "within a fraction of the expected statistical uncertainty of the observables" | clustering, galaxy–galaxy lensing and cosmic shear, models and scales of interest to LSST | arXiv:1812.05995 | [src] |
 | Non-Limber angular spectra, N5K challenge | FKEM (CosmoLike) "produces the fastest run time within the required accuracy by a considerable margin" | fiducial 3x2pt LSST Year 10 scenario; three methods compared (FKEM, Levin, matter) | arXiv:2212.04291 | [src] |
+| CCL per-quantity numerical accuracy (2018) | distances 5 × 10⁻⁷; growth 6 × 10⁻⁶; CLASS-based P(k) ∼ 10⁻³; C_ℓ below 0.1 of the cosmic-variance error for 2 ≤ ℓ ≤ 3000; angular correlation functions 0.5 σ_LSST | against independent benchmarks; full list in `systematics.md`, section 9 | arXiv:1812.05995 | [src: Table 2] |
+| N5K run times at Δχ² ≈ 0.2 on ℓ ≤ 200 | FKEM 0.437 s, matter 2.00 s, Levin 4.53 s; Limber in CCL 0.0445 s | LSST Y10 3x2pt, 64 cores on one node | arXiv:2212.04291 | [src: Sect. 5.1] |
 | CLOE against benchmark codes | "all the summary statistics of interest always differ less than 0.1 σ from the chosen benchmark" | Euclid photometric and spectroscopic observables | Euclid Collaboration 2025, arXiv:2510.09141 | [src] |
 | jax-cosmo | no accuracy figure in the abstract | — | arXiv:2302.05163 | — |
 
@@ -153,7 +157,9 @@ The conclusion of arXiv:2404.07272 also records the history behind the compariso
 | Lyα BAO pipeline (picca + Vega) on mocks | model "able to recover unbiased measurements of the BAO position" | 150 synthetic realisations of DESI DR1 | Cuceu et al. 2024, arXiv:2404.03004 | [src] |
 | Lyα full-shape fit on mocks | unbiased D_M/D_H(z_eff) with r_min = 25 h⁻¹ Mpc | one hundred eBOSS synthetic data sets | Cuceu et al. 2022, arXiv:2209.12931 | [src] |
 
-No paper comparing pypower with nbodykit, or pycorr with TreeCorr, was found this session; see `Not verified`.
+| Corrfunc against TreeCorr 3.3.6 | identical pair counts with TreeCorr's `bin_slop` disabled; Corrfunc 1.9–5.7 times faster single-threaded | benchmark in the Corrfunc paper, by its authors | arXiv:1911.03545 | [src: Sect. 6.5] |
+
+No paper comparing pypower with nbodykit, or pycorr (the Corrfunc wrapper) with TreeCorr, was found this session; see `Not verified`.
 
 ## 6. Emulators and differentiable codes: stated accuracy and speed-up
 <!-- key: emulators-and-differentiable-codes-stated -->
@@ -176,7 +182,7 @@ No paper comparing pypower with nbodykit, or pycorr with TreeCorr, was found thi
 | Quantity | Older value | Current value | Where each is still found | Flag |
 |---|---|---|---|---|
 | Default N_eff | 3.046 | 3.044 | 3.044 in camb 2.0.4 (`nnu`), pyccl 3.3.6 (`Neff`), cosmoprimo 1.0.0 (`N_eff`) and CLASS v3.2.3 (`N_ur` in `explanatory.ini`); 3.046 in astropy `Planck15` and `Planck18`; 3.04 is the default of astropy `FlatLambdaCDM` | [src: installed packages and checkout] |
-| CAMB lensing source cutoff | max(kη₀) = 10375 (v1.x default, "tuned for Planck-era requirements") | max(kη₀) = 90000 (v2 default) | arXiv:2607.14854, sections 9 and 11 | [src] |
+| CAMB lensing source cutoff | max(kη₀) = 10375 (v1.x default, "tuned for Planck-era requirements") | max(kη₀) = 90000 (v2 default) | arXiv:2607.14854 | [src: Sect. IX, XI] |
 | CAMB `lens_potential_accuracy` | 0 "to reproduce the previous low-accuracy default" | `None`, meaning max(4, (ℓ_max − 1500)/500) | camb 2.0.4 `set_for_lmax` docstring | [src: installed] |
 | CAMB against CLASS speed | CLASS about 2.5 times faster (2011) | CAMB v2 default 1.1 s against 4.3 s wall for CLASS default (2026, four threads, ℓ_max = 4000) | arXiv:1104.2934; arXiv:2607.14854 | [src] |
 | HMcode | 2015 and 2016 versions | `mead2020` is the CAMB default version | camb 2.0.4 | [src: installed] |
@@ -186,8 +192,7 @@ No paper comparing pypower with nbodykit, or pycorr with TreeCorr, was found thi
 ## Not verified
 <!-- key: not-verified -->
 
-- No quantitative cross-check between FFT power-spectrum estimators (pypower against nbodykit) or between pair counters (pycorr or Corrfunc against TreeCorr) was read.
-- The numerical accuracy table of the CCL paper (per-quantity tolerances) was not read; only the abstract statement is given.
+- No quantitative cross-check between FFT power-spectrum estimators (pypower against nbodykit) was read; for pair counters only the Corrfunc–TreeCorr benchmark of arXiv:1911.03545 (Sect. 6.5) was read, not a pycorr-specific one.
 - The second half of the Takahashi halofit accuracy sentence was truncated in the text read.
-- The CAMB v2 tolerance table (its appendix "Accuracy parameters") was not read.
 - No accuracy figure was read for desilike's Taylor or MLP emulators.
+- Places in arXiv:2607.14854 (Sect. IX, XI, App. B, C, Table 1, Table 2) were read in an HTML rendering of an earlier version titled "CAMB 2"; the current version may number them differently.

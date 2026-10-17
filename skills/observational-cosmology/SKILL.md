@@ -36,6 +36,13 @@ its numbers supersede the digest in this hub.
 | Codes: Boltzmann solvers and forks, theory façades, samplers, perturbation-theory codes, estimators, Lyα and lensing tools, field-level codes; default units and settings, code agreement, maintenance status | `cosmo-software-ecosystem` |
 | Σm_ν bounds and their model dependence, negative effective mass, mass ordering, N_eff, BBN, laboratory limits; warm, fuzzy, interacting, self-interacting, decaying dark matter | `cosmo-neutrinos-dark-matter` |
 | w, w0wa, the DESI dark-energy evidence and its critiques, μ–Σ, growth index, EFT of dark energy, f(R), screening, E_G | `cosmo-dark-energy-modified-gravity` |
+| Photometric calibration and standards, dust maps, photo-z by templates and machine learning, n(z) calibration (SOM, clustering redshifts, forward models), p(z) storage, spectroscopic training samples, requirements | `cosmo-photometry-photoz` |
+| Galaxy–halo connection: HOD, SHAM, CLF, stellar-to-halo mass relation, assembly bias, satellite kinematics, "lensing is low", halo definitions, mass function, halo bias and concentration, halo model | `cosmo-galaxy-halo-connection` |
+| Data pipelines: target selection, fibre assignment, spectral extraction, sky subtraction, redshift fitting and success rates, imaging pipelines (PSF, deblending, co-addition, injection), CMB map-making and transfer functions, masks and randoms, data-release validation | `cosmo-data-pipelines` |
+| Big-bang nucleosynthesis: primordial D, ⁴He, ³He, ⁷Li and their measurement, nuclear rates (d(p,γ)³He), neutron lifetime, BBN codes and their agreement, Ω_b h² from BBN as a prior, lithium problem, N_eff and new physics from BBN | `cosmo-bbn` |
+| Machine learning as a method: emulators and their error budgets, neural compression, field-level networks, neural posterior/likelihood/ratio estimation, generative models, learned simulation corrections, transient and spectral classification, anomaly detection, benchmark suites, robustness to the training simulator | `cosmo-machine-learning` |
+| Cosmic web as an object: T-web/V-web/NEXUS/DisPerSE classification, filaments, walls, nodes, voids as structures, environment dependence of galaxies, spin and shape alignments, filament gas and missing baryons (X-ray, tSZ, FRBs), protoclusters, web reconstructions | `cosmo-cosmic-web` |
+| Early-Universe physics beyond the standard history: PTA and LVK stochastic backgrounds, primordial black holes, cosmic strings and defects, phase transitions, early dark energy and modified recombination (physics and limits), varying constants, primordial magnetic fields, axion-like particles, CMB spectral distortions, dark-ages energy injection | `cosmo-early-universe-exotica` |
 
 How the suite is built, checked and updated, with the update cycle step by
 step: `references/suite-conventions.md`. Design documents and test logs are in the
@@ -56,7 +63,10 @@ step: `references/suite-conventions.md`. Design documents and test logs are in t
 - `${CLAUDE_SKILL_DIR}/scripts/fetch_paper.py <arXiv id>`: reads a cited
   paper: `--abstract`, `--outline`, `--section <title>`, `--grep <text>`.
 - `${CLAUDE_SKILL_DIR}/scripts/layers.py <skill>`: prints a researcher's
-  personal and project notes for a skill.
+  personal and project notes, papers and dossiers for a skill. To record
+  something for the researcher, when asked: `layers.py note <skill>
+  <file>#<key> <text>`, `layers.py source <skill> <arXiv id> --role <role>`,
+  `layers.py dossier <skill> <name>`; add `--project` for one project only.
 
 ## Choosing the level
 <!-- key: choosing-the-level -->
@@ -68,7 +78,7 @@ can answer, and go deeper only when it cannot.
 |---|---|---|
 | L1 | the domain's `SKILL.md`, nothing else | headline values, where the domain stands, the list a referee checks, the errors that recur |
 | L2 | one reference file, chosen from the file map | every other value, the history of a number, the size of each systematic, methods, releases |
-| L3 | a dossier of `deep/` | how a result is derived and how to choose between methods. No skill has one yet: say so and answer at L2 |
+| L3 | a dossier of `deep/` | how a result is derived and how to choose between methods. Five skills have dossiers so far, listed in their file maps: `cosmo-galaxy-clustering`, `cosmo-statistics-inference`, `cosmo-cmb`, `cosmo-lyman-alpha`, `cosmo-weak-lensing`; elsewhere say so and answer at L2 |
 | L4 | the cited paper, at the place the number is given | the source itself |
 
 - **The lowest level that answers.** A value that is in the `SKILL.md` is an
@@ -130,7 +140,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; conventions 1k; field-state-2026 2k; review-checklists 1k; review-rubric 1k; suite-conventions 2k.
+Sizes, in thousands of tokens: L1 4k; conventions 1k; field-state-2026 2k; review-checklists 1k; review-rubric 1k; suite-conventions 2k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

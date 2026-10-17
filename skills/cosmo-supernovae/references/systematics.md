@@ -4,7 +4,7 @@ Scope: the canonical systematic effects of an SN Ia Hubble-diagram analysis,
 one subsection each: mechanism, quantified size, standard mitigation,
 validation test, and the paper a referee expects cited. Ends with a referee
 checklist.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-13
 
 Flags: `[src]` read in the cited paper this session; `[sec]` from a named
 secondary source; `[der]` derived here.
@@ -19,7 +19,8 @@ onto `Omega_m` and `w`. A constant offset does not: it is absorbed by `M`.
 
 | Analysis | Quantity | Statistical | Systematic | Largest groups | Source |
 |---|---|---|---|---|---|
-| Pantheon+ | `sigma_w`, flat wCDM | — | 0.019 (unbinned); calibration 0.013 | Calibration; scatter model | arXiv:2202.04077; arXiv:2112.03864 `[src]` |
+| JLA (2014) | `sigma(Omega_m)`, flat LCDM, SNe only | 0.0241 (51.6 % of the variance) | calibration 0.0203; Milky Way extinction 0.0072; light-curve model 0.0069; bias corrections 0.0040; host relation 0.0038; contamination 0.0008; peculiar velocities 0.0007 | Calibration (36.7 % of the variance); with the SNLS3 calibration errors the total would be 15 % larger | Betoule et al. 2014, arXiv:1401.4064 `[src: Sect. 6.2 and its table]` |
+| Pantheon+ | `sigma_w`, flat wCDM, with Planck | about 0.03 (table note); systematic/statistical ratio 0.79 | 0.019 (unbinned); calibration 0.013 in arXiv:2112.03864 | Redshift bias 0.011; calibration through training and fitting 0.009; SALT2 method 0.008; Milky Way `E(B−V)` 0.008. Scatter model and populations are negligible when unbinned | arXiv:2202.04077 `[src: Table 4, Sect. IV.5]`; arXiv:2112.03864 `[src]` |
 | DES-SN5YR | `sigma_w`, flat wCDM, SNe only | 0.132 | 0.076 (total 0.152) | "SALT3 + calibration" 0.052; dust-model variants 0.019–0.027 each | arXiv:2401.02945 Table 7 `[src]` |
 | DES-SN5YR + CMB prior | `sigma_w` | 0.032 | 0.019 (total 0.036) | same | arXiv:2401.02945 `[src]` |
 | DES-Dovekie | `sigma_w`, SNe only | — | photometric group 0.075 (was 0.057 after the weighting error); SALT3 + calibration 0.066; dust group 0.101, "the largest", about twice calibration | Astrophysics, then calibration | arXiv:2511.07517 Sec. 9 `[src]` |
@@ -31,6 +32,107 @@ add in quadrature to the total; correlations cancel in the full covariance
 DES-SN5YR alone was statistics-dominated, while the largest combined sample
 (Unite) is at parity, with calibration and SN astrophysics sharing the
 systematic part.
+
+### 0.1 Pantheon+ (Brout et al. 2022, arXiv:2202.04077)
+<!-- key: pantheon-brout-et-al-2022-arxiv-2202-04077 -->
+
+Flat wCDM, with Planck 2018; each term alone, `sigma_w = sqrt(sigma_tot^2 -
+sigma_stat^2)` `[src: Eq. 17, Table 4]`; "binned": same budget in 20 redshift
+bins `[src: Table 6]`. No contamination term: spectroscopic sample `[src: Sect. II.1]`.
+
+| Term (baseline → variant, prior scaling) | sigma_w | Delta w | binned |
+|---|---|---|---|
+| All systematics | 0.019 (0.79 of statistical) | −0.009 | 0.029 |
+| SALT2 training + light-curve fit: Fragilistic best fit → 10 covariance realisations, 1/3 each | 0.009 | 0.000 | 0.019 |
+| SALT2 method: SALT2-B22 → JLA surface, 1/3 | 0.008 | +0.003 | 0.009 |
+| CSP tertiary stars / HST CALSPEC 2020 update → 5 mmag per 7000 Å | 0.003 / 0.003 | −0.003 / −0.006 | 0.005 / 0.002 |
+| Peculiar-velocity map: 2M++ → 2M++ line-of-sight integrated and 2MRS | 0.002 | +0.005 | not run |
+| Redshift bias: none → coherent `10^-4` shift (row label; Sect. III.1.2 says `+4 × 10^-5`) | 0.011 | +0.015 | 0.012 |
+| Intrinsic scatter: BS21 dust model → G10 and C11 | 0.002 | −0.003 | 0.009 |
+| Milky Way `E(B−V)` 4 % scaling (5 % in Sect. III.2.3) / colour law Fitzpatrick 1999 → Cardelli et al. 1989, 1/3 | 0.008 / 0.006 | −0.010 / −0.006 | 0.012 / 0.007 |
+| Mass-step location `10^10` → `10^10.2 M_sun` / selection efficiency (exposure time +20 %) / populations (BS21 → 3 P21 sets) | 0.001 / 0.004 / 0.000 | 0.000 / +0.001 / +0.003 | 0.001 / 0.008 / 0.011 |
+
+Redshift-only terms do not shrink when unbinned `[src: Appendix B]`. `H0`
+(flat LCDM, with SH0ES): SN part of the error 0.7 km/s/Mpc, of which
+systematic 0.29 `[src: Sect. IV.5]`.
+
+### 0.2 DES-SN5YR and DES-Dovekie (arXiv:2401.02945; arXiv:2511.07517)
+<!-- key: des-sn5yr-and-des-dovekie-arxiv-2401-02945 -->
+
+Flat wCDM, SNe only, no CMB prior. `sigma_w`: the term alone against statistics
+only ("leave-one-out"); `delta w`: shift with it alone ("add-one-in"). Bold rows
+are sums of their components `[src: Table 7 of each; arXiv:2401.02945 Sect. VII.1; arXiv:2511.07517 Sect. 9]`.
+
+| Term | 5YR sigma_w | 5YR delta w | Dovekie sigma_w | Dovekie delta w |
+|---|---|---|---|---|
+| Total / statistical / systematic | 0.152 / 0.132 / 0.076 | −0.032 (total) | 0.142 / 0.11 / not printed | |
+| **Calibration and light-curve model**: SALT3 + calibration / HST CALSPEC (5 mmag per 7000 Å) | 0.057: 0.052 / 0.006 | −0.036 / +0.002 | 0.075: 0.066 / 0.009 | −0.073 / −0.001 |
+| **SN Ia astrophysics** | 0.133 | | 0.124 | |
+| Dust population 1 / 2 / 3 | 0.019 / 0.024 / 0.020 | −0.010 / +0.003 / −0.004 | 0.006 / 0.021 / 0.025 | +0.001 / −0.004 / −0.009 |
+| Dust split on host `u−r` colour / dust model as in BS21 / SN-age model (W22) | 0.000 / 0.027 / 0.000 | +0.048 / −0.006 / +0.048 | 0.0 / 0.029 / 0.02 | +0.029 / −0.007 / −0.008 |
+| `alpha` / `beta` / `gamma` evolution | 0.020 / 0.000 / 0.011 | −0.008 / −0.007 / −0.001 | 0.013 / 0.0 / 0.003 | −0.002 / −0.001 / 0.0 |
+| Mass-step location / `sigma_int` modelling | 0.000 / 0.013 | −0.002 / −0.002 | 0.0 / 0.007 | 0.0 / 0.0 |
+| **Milky Way extinction**: 5 % scaling / Cardelli colour law (weight 1/3) | 0.034: 0.020 / 0.014 | −0.011 / −0.003 | 0.041: 0.024 / 0.017 | −0.011 / −0.006 |
+| **Survey modelling**: shallower host catalogue / shifted spectroscopic-redshift efficiency | 0.015: 0.009 / 0.005 | +0.002 / +0.002 | 0.002: 0.0 / 0.002 | +0.006 / 0.0 |
+| **Contamination**: SCONE / SNIRF / SuperNNova retrained / core-collapse prior | 0.028: 0.006 / 0.013 / 0.006 / 0.003 | 0.000 / −0.003 / 0.000 / 0.000 | 0.018: 0.003 / 0.002 / 0.01 / 0.003 | 0.0 / 0.0 / −0.001 / −0.001 |
+| **Redshift**: shift `4 × 10^-5` / peculiar velocities | 0.037: 0.012 / 0.025 | +0.002 / −0.012 | 0.040: 0.011 / 0.029 | 0.0 / −0.016 |
+
+- DES-SN5YR: G10 and C11 are left out, disfavoured by the data (`Delta chi2
+  = 102` for G10); only `alpha` evolution is favoured (`−7 ± 2`)
+  `[src: Sect. VII.1.1]`. Host mismatch neglected: 7 of 1635 hosts differ
+  between two catalogues `[src: Sect. VI.4.1]`.
+- DES-Dovekie: `sigma_w(dust) = 0.101` `[src: Sect. 9.2.1]` sums six dust rows;
+  total systematic `sqrt(0.142^2 − 0.11^2) = 0.090` `[der]`. Calibration: 9 SALT
+  surfaces from the cross-calibration covariance, weight `1/sqrt(9)` each `[src: Sect. 7.1]`.
+
+### 0.3 Union3 and Union3.1 (arXiv:2311.12098; arXiv:2601.19424)
+<!-- key: union3-and-union3-1-arxiv-2311-12098-arxiv-2601 -->
+
+UNITY samples every nuisance parameter; "impact" = `Cov(cosmological
+parameter, parameter) / sigma_parameter` `[src: Eq. 21]`, quadrature sum slightly
+above the total `[src: Sect. V.1]`. Columns: flat-LCDM `Omega_m`, SNe alone `[src: Table 3]`; `w_a` with BAO and CMB `[src: Table 4]`.
+
+| Term | on Omega_m | on w_a |
+|---|---|---|
+| Absolute magnitude `M_B` (weight of the nearby sample) / peculiar-velocity correlations | 0.0114 / 0.0063 | 0.1321 / 0.1271 |
+| SALT calibration / selection effects | 0.0093 / 0.0079 | 0.0673 / 0.0567 |
+| Instrument zero points / passbands / Landolt–Smith–PS1 tie / white-dwarf SED model | 0.0072 / 0.0054 / 0.0046 / 0.0058 | 0.0467 / 0.0572 / 0.0502 / 0.0259 |
+| Intergalactic dust / Milky Way extinction | 0.0095 / 0.0046 | 0.0354 / 0.0274 |
+| Host step at z = 0 / at z = ∞ | 0.0047 / 0.0063 | 0.0393 / 0.0587 |
+| Colour population / `x1` population | 0.0058 / 0.0027 | 0.0441 / 0.0216 |
+| `beta_R` (mean of two host classes) / `beta_B` / `Delta beta_R` / `alpha` | 0.0054 / 0.0041 / 0.0016 / 0.0020 | 0.0383 / 0.0180 / 0.0110 / 0.0192 |
+| Unexplained scatter / outlier model | 0.0050 / 0.0055 | 0.0366 / 0.0246 |
+| Weak-lensing bias / redshift calibration / electron scattering | 0.0013 / 0.0006 / 0.0004 | 0.0001 / 0.0118 / 0.0004 |
+
+`M_B` and peculiar velocities carry 0.274 + 0.253 of the `w_a` variance
+`[src: Table 4]`. Contamination: outlier mixture, fitted fraction `0.031
+(+0.010/−0.011)` `[src: Sect. IV.6]`. Union3.1 prints no budget; it assigns
+`Omega_m` biases of about +0.4 sigma (Union3) and −0.6 sigma (Pantheon+) to
+inconsistent host masses `[src: arXiv:2601.19424 Sect. VIII]`.
+
+### 0.4 Unite (Camilleri et al. 2026, arXiv:2609.05053)
+<!-- key: unite-camilleri-et-al-2026-arxiv-2609-05053 -->
+
+Flat wCDM, SNe only, on `Q_H(z = 0.2)`; each term alone, `sigma = sqrt(sigma_tot^2 − sigma_stat^2)`
+`[src: Eq. 10, Table 6]`; budgets on `Omega_m` and `w` are figures only `[src: Appendix A]`.
+
+| Term (variant, weight) | sigma_QH | Delta Q_H |
+|---|---|---|
+| Total systematic (equal to statistical) | 0.015 | −0.019 |
+| SALT3 + calibration (10 realisations) / HST CALSPEC | 0.008 / 0.000 | −0.009 / 0.000 |
+| BS21 dust parameters / P23 dust population 1 / 2 / 3 | 0.003 / 0.001 / 0.003 / 0.001 | −0.003 / 0.000 / −0.002 / −0.001 |
+| SN-age model / `sigma_int` modelling / initial `alpha`, `beta` | 0.001 / 0.002 / 0.001 | −0.001 / +0.001 / 0.000 |
+| `alpha` / `beta` / `gamma` evolution | 0.000 / 0.005 / 0.001 | +0.001 / −0.016 / 0.000 |
+| Mass-step location `10^10.2` / host-mass uncertainties (10 realisations) | 0.000 / 0.000 | −0.004 / −0.004 |
+| Milky Way 5 % scaling / colour law | 0.003 / 0.004 | 0.000 / −0.002 |
+| Shallower host catalogue / ±0.2 mag shift of spectroscopic efficiency | 0.003 / 0.002 | +0.012 / +0.001 |
+| Peculiar velocities / redshift shift `10^-4` weighted 1/6 | 0.002 / 0.005 | +0.002 / +0.001 |
+| Duplicate SNe (off-diagonal statistical terms) | 0.003 | 0.005 `[src: Sect. 5.2]` |
+
+No contamination row: a cut `P_Ia(SCONE) > 0.8` replaces the BEAMS variants
+`[src: Sect. 4.9]`. `alpha` and `beta` evolve at ~3 sigma (`alpha_1 = 0.03 ±
+0.01`, `beta_1 = 0.3 ± 0.1`); a step at `10^10.2 M_sun` is preferred by `Delta
+chi2 = −8.4`; host-mass errors add ~10 % to the systematic on `w` `[src: Sect. 6.2]`.
 
 ## 1. Photometric calibration and cross-calibration
 <!-- key: photometric-calibration-and-cross-calibration -->
@@ -58,16 +160,19 @@ fits and through the training of the light-curve model on the same data.
   training; the recalibration gives `d mu/dz = 0.025` and
   `Delta Omega_m ~ 0.01`; the Pantheon+ calibration systematic improves by a
   factor 1.5 with the white-dwarf tie `[src]` (Popovic et al. 2025,
-  arXiv:2506.05471).
+  arXiv:2506.05471). Zero-point errors: 2–5 mmag for PS1, DES, SDSS, SNLS,
+  10–12 mmag for CfA3, CfA4, CSP `[src: Table 3]`; mean distance changes per
+  survey from −0.035 (SNLS) to +0.030 mag (CfA4) `[src: Table 7]`.
 - Realised effect: DES-SN5YR → DES-Dovekie, `Delta Omega_m = -0.022` and
   4.2 → 3.2 sigma for evolving dark energy with DESI DR2 and CMB `[src]`
   (arXiv:2511.07517).
 - New anchors: ATLAS forced photometry starts ~40 mmag from DES Y6 stars and
   needs filter shifts at the ~30 mmag level, reaching 5–10 mmag after
   recalibration `[src]` (Marlin et al. 2025, arXiv:2512.21903); ZTF has a
-  flux-dependent PSF effect giving percent-level non-linearity and a 90 mmag
-  shift in absolute calibration between photometry pipelines `[src]`
-  (Lacroix et al. 2025, arXiv:2509.04073).
+  flux-dependent PSF effect giving non-linearities of 1 to 7 % in PSF fluxes,
+  against a 0.1 % accuracy target `[src: Sect. 6.2]`, and a 90 mmag shift in
+  absolute calibration between photometry pipelines `[src]` (Lacroix et al.
+  2025, arXiv:2509.04073).
 
 **Mitigation.** Cross-calibrate all systems on common all-sky stars (PS1,
 Gaia), fit filter shifts, tie to DA white dwarfs (Axelrod et al. 2023,
@@ -125,7 +230,8 @@ Malmquist bias corrections".
 distances in two analyses if their selection functions differ. Vincenzi et
 al. 2025 (arXiv:2501.06664) attribute 38 % of the ~0.04 mag
 Pantheon+/DES-SN5YR offset on common objects to exactly this, and 43 % to
-DES improvements in scatter and host modelling `[src]`. Object-by-object
+DES improvements in scatter and host modelling `[src]`: −0.042 → −0.024 mag
+(modelling) → −0.008 mag (selection) `[src: Sect. 6]`. Object-by-object
 comparison of bias-corrected distance moduli across compilations is not a
 valid null test unless the selection functions match.
 
@@ -262,7 +368,7 @@ distribution.
 
 **Size.** `w` bias < 0.008, `sigma_w,syst <= 0.004` for DES `[src]`
 (Vincenzi et al. 2023, arXiv:2111.10382); classification is less than 10 %
-of the DES-SN5YR systematic budget `[src]` (arXiv:2401.02945); the
+of the DES-SN5YR systematic budget, 9 % `[src: Sect. VII.1.5]` (arXiv:2401.02945); the
 alternative-training systematic is 0.010 in DES-Dovekie `[src]`
 (arXiv:2511.07517).
 
@@ -302,8 +408,9 @@ arXiv:1012.2912). After optimal flow and group corrections: 0.02–0.03 in
 `w`, 0.06–0.11 km/s/Mpc in `H0` `[src]` (Peterson et al. 2022,
 arXiv:2110.03487). In DES-Dovekie the redshift group grew slightly,
 "driven by an increased uncertainty from the peculiar velocities" `[src]`
-(arXiv:2511.07517). At z < 0.01 a volumetric (Eddington-type) redshift bias
-appears in the Pantheon+ residuals (arXiv:2202.04077; arXiv:2609.05053).
+(arXiv:2511.07517). At z < 0.008 the mean Pantheon+ residual is positive by
+~5 % at ~2 sigma, a volumetric (Eddington-type) redshift bias, ~2 mmag on the
+low-z mean `[src: Sect. IV.2.2]` (arXiv:2202.04077); Unite models it in the bias correction `[src: Sect. C.2]` (arXiv:2609.05053).
 
 **Mitigation.** 2M++-based corrections with group assignment; a velocity
 floor (240 km/s in Pantheon+); a low-redshift cut (z > 0.025 in DES; tested
@@ -321,8 +428,9 @@ at 0.0233 in Unite); alternative flow models (integrated line-of-sight 2M++,
 error in the dust-map scale or colour law is differential in redshift.
 
 **Size and treatment.** Unite carries a 5 % scaling of the Schlafly &
-Finkbeiner map and a colour-law variant (`R_V = 3.0`, Cardelli law, against
-`R_V = 3.1`, Fitzpatrick 1999) `[src]` (arXiv:2609.05053). Dhawan et al.
+Finkbeiner 2011 map (arXiv:1012.4804) and a colour-law variant (`R_V = 3.0`,
+Cardelli et al. 1989, doi:10.1086/167900, against `R_V = 3.1`, Fitzpatrick
+1999, arXiv:astro-ph/9809387, preferred by the map paper) `[src]` (arXiv:2609.05053). Dhawan et al.
 2024 (arXiv:2409.18668) show that a change of Milky Way dust law can shift
 `w0`–`w_a` by an amount comparable to the DESI 2024 deviation.
 
@@ -408,9 +516,5 @@ masses.
 ## Not verified
 <!-- key: not-verified -->
 
-- The group-level "SN Ia astrophysics" entry of DES-SN5YR Table 7 could not
-  be read unambiguously from the HTML extraction and is not quoted.
-- Boyd et al. 2025 (the DA white-dwarf observations used by Dovekie): arXiv
-  ID not found; cited only through arXiv:2506.05471.
-- CALSPEC 2020, Fitzpatrick 1999 and Cardelli 1989 papers were not fetched.
+- Cardelli et al. 1989: title, authors and year confirmed on Crossref; not read.
 - Chromatic (SED-dependent) photometric corrections: not developed here.

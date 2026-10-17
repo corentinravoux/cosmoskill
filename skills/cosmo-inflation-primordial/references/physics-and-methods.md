@@ -1,6 +1,6 @@
 # physics-and-methods — cosmo-inflation-primordial
 
-Snapshot: 2026-10-07
+Snapshot: 2026-10-14
 
 Scope: what the primordial observables are, how each is estimated from CMB and large-scale-structure data, which models are fitted, how likelihoods, covariances and blinding are handled, the public codes, and the conventions on which papers differ.
 
@@ -9,7 +9,7 @@ Flags: `[src]` read this session in the cited paper; `[sec]` read in a named sec
 ## 1. What is measured and why it constrains the early Universe
 <!-- key: what-is-measured-and-why-it-constrains-the -->
 
-Inflation (Guth 1981, doi:10.1103/PhysRevD.23.347; Starobinsky 1980, doi:10.1016/0370-2693%2880%2990670-X — the parentheses of this DOI are percent-encoded) makes five generic statements that data can test. The simplest single-field slow-roll models predict perturbations that are adiabatic, nearly Gaussian, nearly but not exactly scale-invariant, on a spatially flat background, with a stochastic background of tensor modes whose amplitude measures the energy scale. Each statement maps to an observable.
+Inflation (Guth 1981, doi:10.1103/PhysRevD.23.347; Starobinsky 1980, doi:10.1016/0370-2693%2880%2990670-X — the parentheses of this DOI are percent-encoded) makes five generic statements that data can test. The slow-roll "new inflationary universe" scenario followed (Linde 1982, doi:10.1016/0370-2693%2882%2991219-9; Albrecht 1982, doi:10.1103/PhysRevLett.48.1220). The generation of density perturbations in that scenario was worked out in 1982–1983 by Hawking (doi:10.1016/0370-2693%2882%2990373-2), Starobinsky (doi:10.1016/0370-2693%2882%2990541-X), Guth ("Fluctuations in the New Inflationary Universe", doi:10.1103/PhysRevLett.49.1110) and Bardeen ("almost scale-free density perturbations", doi:10.1103/PhysRevD.28.679); Mukhanov 1992 is the standard review of the theory of cosmological perturbations (doi:10.1016/0370-1573%2892%2990044-Z). Titles, first authors and years of these six were confirmed on Crossref; their content was not read this session. The simplest single-field slow-roll models predict perturbations that are adiabatic, nearly Gaussian, nearly but not exactly scale-invariant, on a spatially flat background, with a stochastic background of tensor modes whose amplitude measures the energy scale. Each statement maps to an observable.
 
 | Statement | Observable | Probe | Current status (see `results.md`) |
 |---|---|---|---|
@@ -31,12 +31,14 @@ Reviews to start from: Achúcarro et al. 2022 (Snowmass white paper covering gra
 
 ln P_R(k) = ln A_s + (n_s − 1) ln(k/k_*) + ½ α_s ln²(k/k_*) + (1/6) β_s ln³(k/k_*), with α_s = dn_s/dln k and β_s the running of the running. Current CMB papers use the pivot k_* = 0.05 Mpc⁻¹ (arXiv:2503.14454). The pivot matters for n_s as soon as α_s is free.
 
+As Planck 2018 writes it (arXiv:1807.06211) [src: Sect. 2.1, Eqs. 3–5, Table 1]: ln P_R(k) = ln A_s + (n_s − 1) ln(k/k_*) ≡ ln P_0(k) (Eq. 3); the running and running of running are added as ½ (dn_s/dln k) ln²(k/k_*) + (1/6)(d²n_s/dln k²) ln³(k/k_*) (Eq. 4, where the paper's typesetting reads "d ln n_s"); the tensor spectrum is ln P_t(k) = ln(r A_s) + n_t ln(k/k_*) (Eq. 5). All primordial quantities are at k_* = 0.05 Mpc⁻¹, and r is also quoted as r_0.002 for comparison with earlier work. Observable scales span 10⁻⁴ ≲ k ≲ 10⁻¹ Mpc⁻¹.
+
 ### Slow-roll dictionary (textbook)
 <!-- key: slow-roll-dictionary-textbook -->
 
-With ε_V = (M_Pl²/2)(V′/V)² and η_V = M_Pl² V″/V: n_s − 1 = 2η_V − 6ε_V, r = 16 ε_V, n_t = −r/8 (the single-field consistency relation), and α_s is second order in slow roll. ACT reports η_V = (−95 +23/−30) × 10⁻⁴ (arXiv:2503.14454) [src]. A model is compared with data through its predictions as a function of the number of e-folds N between horizon exit of the pivot scale and the end of inflation; N depends on reheating, which is why reheating enters every model comparison (section 1 of `open-questions.md`).
+With ε_V = (M_Pl²/2)(V′/V)² and η_V = M_Pl² V″/V: n_s − 1 = 2η_V − 6ε_V, r = 16 ε_V, n_t = −r/8 (the single-field consistency relation), and α_s is second order in slow roll. Planck 2018 defines the potential parameters ε_V, η_V, ξ²_V, ϖ³_V and the Hubble-flow parameters ε_1 = −Ḣ/H², ε_(n+1) = ε̇_n/(H ε_n) (arXiv:1807.06211) [src: Table 1]; it imposes n_t = −r/8, "the case for slow-roll inflation driven by a single scalar field with a canonical kinetic term", and tests its relaxation with r at two scales (r_0.002, r_0.02): the relation is compatible with Planck + BK15, but n_t ≃ 2 with r_0.01 ≃ 0.05 stays inside 68% [src: Sects. 3.5–3.6]. First-order HFF constraints, TT,TE,EE + lowE + lensing (+ BK15): ε_1 < 0.0063 (0.0039) at 95%, ε_2 = 0.030 +0.007/−0.005 (0.031 ± 0.005); η_V = −0.010 +0.004/−0.008 (−0.012 +0.004/−0.005) [src: Sect. 4.1, Eqs. 37–40]. For R² inflation the 95% range 49 < N_* < 59 is compatible with the basic prediction N_* = 54 [src: Sect. 4.2]. ACT reports η_V = (−95 +23/−30) × 10⁻⁴ (arXiv:2503.14454) [src]; ACT writes these definitions and relations as its Eqs. 7–8, sets n_t = −r/8, varies r in [0, 1] with BK18 B modes, and gets η_V for P-ACT-LB-BK18 at 68% (Eq. 9) [src: Sect. IV.4]. A model is compared with data through its predictions as a function of the number of e-folds N between horizon exit of the pivot scale and the end of inflation; N depends on reheating, which is why reheating enters every model comparison (section 1 of `open-questions.md`).
 
-For Starobinsky R² inflation, Higgs inflation and the α-attractors, the leading-order formulas are n_s ≈ 1 − 2/N and r ≈ 12α/N² (textbook; α = 1 for Starobinsky). They give n_s = 0.960 and 0.967 for N = 50 and 60, and r = 0.0048 and 0.0033 [der: direct evaluation; the formulas were not read in a paper this session]. Refined predictions beyond these approximations exist and shift the comparison with data (Drees and Xu 2025, arXiv:2504.20757).
+For Starobinsky R² inflation, Higgs inflation and the α-attractors, the leading-order formulas are n_s ≈ 1 − 2/N and r ≈ 12α/N² (α = 1 for Starobinsky): the superconformal α-attractors of Kallosh et al. 2013 converge to n_s = 1 − 2/N, r = 12α/N² at small α (large curvature of the Kähler manifold) and to chaotic-inflation predictions at large α (arXiv:1311.0472) [src]; the α = 1 class was introduced as a universality class of conformal inflation (Kallosh et al. 2013, arXiv:1306.5220). Higgs inflation needs a non-minimal coupling of the Higgs to gravity and no new particle (Bezrukov and Shaposhnikov 2008, arXiv:0710.3755). The formulas give n_s = 0.960 and 0.967 for N = 50 and 60, and r = 0.0048 and 0.0033 [der: direct evaluation of the formulas of arXiv:1311.0472]. Refined predictions beyond these approximations exist and shift the comparison with data (Drees and Xu 2025, arXiv:2504.20757).
 
 The library ASPIC computes reheating-consistent predictions for 118 single-field models (Martin, Ringeval and Vennin 2014, arXiv:1303.3787) [src].
 
@@ -63,7 +65,7 @@ The 1D flux power spectrum constrains the amplitude and slope of the linear spec
 ### Observable (textbook, with the founding papers)
 <!-- key: observable-textbook-with-the-founding-papers -->
 
-CMB linear polarisation decomposes into a curl-free E component and a curl B component. Scalar perturbations produce no B modes at linear order, tensor perturbations do, so B modes are not limited by the scalar cosmic variance (Seljak and Zaldarriaga 1997, arXiv:astro-ph/9609169; Kamionkowski, Kosowsky and Stebbins 1997, arXiv:astro-ph/9609132). The tensor-to-scalar ratio is r = P_t(k_*)/P_R(k_*). The primordial BB spectrum has a bump at degree scales from recombination and one at the largest angular scales from reionisation; ground-based experiments target the first, satellites both (arXiv:1510.06042; the LiteBIRD requirements are specified over both the reionisation and the recombination multipole ranges, arXiv:2607.25285).
+CMB linear polarisation decomposes into a curl-free E component and a curl B component. Scalar perturbations produce no B modes at linear order, tensor perturbations do, so B modes are not limited by the scalar cosmic variance (Seljak and Zaldarriaga 1997, arXiv:astro-ph/9609169; Kamionkowski, Kosowsky and Stebbins 1997, arXiv:astro-ph/9609132). The tensor-to-scalar ratio is r = P_t(k_*)/P_R(k_*). Graviton creation during inflation (Rubakov 1982, doi:10.1016/0370-2693%2882%2990641-4) and its constraints on inflationary models (Abbott 1984, doi:10.1016/0550-3213%2884%2990329-8) are the classic tensor references; both were confirmed on Crossref, not read. The primordial BB spectrum has a bump at degree scales from recombination and one at the largest angular scales from reionisation; ground-based experiments target the first, satellites both (arXiv:1510.06042; the LiteBIRD requirements are specified over both the reionisation and the recombination multipole ranges, arXiv:2607.25285).
 
 What a detection would mean: observable tensor modes require an inflaton excursion of at least the Planck scale and, for the signal levels discussed in 1996, V^(1/4) = (2–4) × 10¹⁶ GeV (Lyth 1997, arXiv:hep-ph/9606387) [src]. This "Lyth bound" is why r separates large-field from small-field models.
 
@@ -79,15 +81,19 @@ What a detection would mean: observable tensor modes require an inflaton excursi
 
 The BK18 analysis fits a multi-component parametric model to all auto- and cross-spectra between the BICEP/Keck maps at 95, 150 and 220 GHz and the WMAP and Planck maps, with seven foreground parameters and no external prior on the dust spectral index; the 220 GHz maps constrain polarised dust better than Planck 353 GHz does in that patch (arXiv:2110.00483) [src]. Cosmological parameters other than r are fixed. Tristram et al. 2022 instead free all six ΛCDM parameters and add Planck PR4 and BAO (arXiv:2112.07961).
 
+What BK18 did, as read (arXiv:2110.00483) [src: main text, likelihood paragraph; App. D]: Hamimeche–Lewis likelihood (an approximation for correlated Gaussian fields on part of the sky that keeps the non-Gaussian form of the likelihood; arXiv:0801.0554) on 66 BB auto- and cross-spectra between BICEP/Keck, WMAP and Planck maps, nine bandpowers each over 20 < ℓ < 330; eight-parameter model (lensed ΛCDM + r + dust + synchrotron + noise) sampled with CosmoMC; bandpower covariance from 499 signal + noise simulations with signal–noise and BICEP/Keck–WMAP/Planck noise cross-terms set to zero; r at 0.05 Mpc⁻¹ with n_t = 0; lensing BB fixed to Planck 2018. Goodness of fit: χ² = 541.6 for 594 bandpowers, PTE 0.94 against simulations. The model parameters and priors are tabulated in `systematics.md`, section B9. SPT-3G 2019–2020 BB uses a BK18-like eight-component model on 95, 150 and 220 GHz spectra with the BK18 mask (f_sky = 0.010) or its own 1500 deg² mask (f_sky = 0.037) (arXiv:2505.02827) [src: Sects. IV.3, VI.1].
+
 ### Delensing
 <!-- key: delensing -->
+
+Foundations (abstracts read): lensing converts E into B and sets a floor; Knox et al. 2002 put the detectability limit, with lensing subtracted, at an energy scale of inflation of 3.2 × 10¹⁵ GeV (arXiv:astro-ph/0202286) [src]; Kesden et al. 2002 showed that higher-order correlations map the lensing and subtract its B modes, with arcminute resolution needed and a floor near 10¹⁵ GeV (arXiv:astro-ph/0202434) [src].
 
 A lensing B-mode template is built from an estimate of the polarised CMB and a tracer of the projected mass (the Planck CIB map in the first demonstration), and enters the likelihood as an extra map. On BK14 data it reduced σ(r) from 0.024 to 0.022, about 10%, against 26% for a perfect template (arXiv:2011.08163) [src]. The SO forecast assumes 70% of the lensing B-mode power removed (arXiv:2512.15833) [src].
 
 ### Component separation for the next generation
 <!-- key: component-separation-for-the-next-generation -->
 
-SO uses a cross-spectrum parametric pipeline (BBPower) with a moment expansion to describe spatial variation of the dust spectral index (Liu et al. 2025, arXiv:2508.00073; Dachlythra et al. 2025, arXiv:2503.01791). Time-domain simulations with beam convolution are made with beamconv (arXiv:2503.01791).
+The moment expansion was introduced by Chluba et al. 2017: spatial and line-of-sight averaging of emitting volumes distorts the foreground SED, which adds parameters to be measured or modelled (arXiv:1701.00274) [src]. SO uses a cross-spectrum parametric pipeline (BBPower) with a moment expansion to describe spatial variation of the dust spectral index (Liu et al. 2025, arXiv:2508.00073; Dachlythra et al. 2025, arXiv:2503.01791). Time-domain simulations with beam convolution are made with beamconv (arXiv:2503.01791).
 
 ### Quoting a limit
 <!-- key: quoting-a-limit -->
@@ -97,11 +103,11 @@ Limits on r are 95% upper limits from a posterior with a flat prior on r ≥ 0 u
 ## 4. Cosmic birefringence
 <!-- key: cosmic-birefringence -->
 
-A uniform rotation β of the polarisation plane between emission and observation mixes E and B: C_ℓ^EB = ½ sin(4β)(C_ℓ^EE − C_ℓ^BB), and similarly C_ℓ^TB = sin(2β) C_ℓ^TE (textbook). A miscalibration α of the detector polarisation angle produces the same signature, so EB alone measures α + β.
+A uniform rotation β of the polarisation plane between emission and observation mixes E and B: C_ℓ^EB = ½ sin(4β)(C_ℓ^EE − C_ℓ^BB), and similarly C_ℓ^TB = sin(2β) C_ℓ^TE (textbook). A miscalibration α of the detector polarisation angle produces the same signature, so EB alone measures α + β. The Lorentz- and parity-violating modification of electrodynamics behind the effect was bounded by Carroll 1990 (doi:10.1103/PhysRevD.41.1231; confirmed on Crossref, not read). Foundations (abstracts read): Lue et al. 1999 showed that parity-violating interactions leave a signature in CMB temperature and polarisation maps (arXiv:astro-ph/9812088); Feng et al. 2006 searched WMAP and BOOMERANG B03 data for a Chern–Simons rotation and found Δα = −6.0° ± 4.0° (1σ) (arXiv:astro-ph/0601095) [src]; Keating et al. 2013 argued that man-made calibrators are deficient for the angle precision B-mode searches need and proposed self-calibration (arXiv:1211.5734).
 
 Three ways to break the degeneracy are in use:
 
-1. Galactic foregrounds as a calibrator: the foreground emission is rotated by α only, the CMB by α + β, and their different multipole dependence separates the two (Minami and Komatsu 2020, arXiv:2011.11254). Weakness: any intrinsic EB of dust biases the result (arXiv:2201.07682).
+1. Galactic foregrounds as a calibrator: the foreground emission is rotated by α only, the CMB by α + β, and their different multipole dependence separates the two; the method uses the observed EE − BB difference and needs no prior on the foreground EE and BB spectra (method: Minami et al. 2019, arXiv:1904.12440 [src]; first application: Minami and Komatsu 2020, arXiv:2011.11254). Weakness: any intrinsic EB of dust biases the result (arXiv:2201.07682).
 2. Instrument-model priors on α: ACT uses priors from its optics model and marginalises over residual intensity-to-polarisation leakage (Diego-Palazuelos and Komatsu 2025, arXiv:2509.13654).
 3. Hardware or cross-experiment calibration: a wire grid for the SO SATs, transferred to other experiments through cross-spectra (Rigouzzo et al. 2026, arXiv:2606.11300).
 
@@ -115,6 +121,14 @@ An experiment that calibrates its angle by nulling EB cannot measure a constant 
 
 Local type: Φ(x) = φ(x) + f_NL^local [φ²(x) − ⟨φ²⟩], with φ Gaussian and Φ the primordial (Bardeen) potential; the bispectrum peaks in squeezed triangles (Komatsu and Spergel 2001, arXiv:astro-ph/0005036). Equilateral and orthogonal templates describe single-field models with derivative interactions; the pair spans the cubic operators of the effective field theory of inflation and maps to the sound speed c_s (Senatore, Smith and Zaldarriaga 2010, arXiv:0905.3746).
 
+As Planck 2018 writes them (arXiv:1905.05697) [src: Sects. 2.1–2.2, Eqs. 1–3]: Φ ≡ (3/5) ζ on super-horizon scales, with ζ the comoving curvature perturbation, and P_Φ(k) = A/k^(4−n_s). Then
+
+- B_Φ^local(k_1, k_2, k_3) = 2 f_NL^local [P_Φ(k_1) P_Φ(k_2) + P_Φ(k_1) P_Φ(k_3) + P_Φ(k_2) P_Φ(k_3)] = 2A² f_NL^local [1/(k_1^(4−n_s) k_2^(4−n_s)) + cycl.] (Eq. 3), peaking for k_1 ≪ k_2 ≈ k_3;
+- B_Φ^equil = 6A² f_NL^equil {−1/(k_1^(4−n_s) k_2^(4−n_s)) − 2 perms. − 2/(k_1 k_2 k_3)^(2(4−n_s)/3) + [1/(k_1^((4−n_s)/3) k_2^(2(4−n_s)/3) k_3^(4−n_s)) + 5 perms.]} (Eq. 1);
+- B_Φ^ortho has the same structure with coefficients −3, −8 and +3 (Eq. 2).
+
+The templates are taken from Creminelli et al. 2006, Chen et al. 2007 and Senatore et al. 2010 (as cited there). Foundations, abstracts read: Babich et al. 2004 sorted models into two nearly orthogonal classes, non-Gaussianity generated at horizon crossing (equilateral) and generated outside the horizon (squeezed, local) (arXiv:astro-ph/0405356); Creminelli et al. 2006 introduced the factorisable equilateral template and showed that with a mask or inhomogeneous noise the optimal estimator needs a term linear in the data, giving −366 < f_NL^equil < 238 (95%) from WMAP (arXiv:astro-ph/0509029) [src]; Chen et al. 2007 showed that for P(X, φ) Lagrangians the bispectrum is fixed by five parameters and grows at small sound speed (arXiv:hep-th/0605045); the effective field theory of inflation (Cheung et al. 2008, arXiv:0709.0293) is the framework in which the equilateral–orthogonal basis is defined. DBI inflation gives f_NL^equil ∝ c_s⁻² for c_s ≪ 1; in the quadratic curvaton f_NL^local = 5/(4r_D) − 5r_D/6 − 5/3 [src: Sects. 2.1–2.2]. The general definition f_NL(k_1, k_2, k_3) = B_Φ/(2[P_Φ(k_1)P_Φ(k_2) + 2 perms.]) is used for scale-dependent (running) non-Gaussianity [src: Sect. 2.4.1].
+
 What the shapes test:
 
 - Single-field slow-roll inflation predicts a local bispectrum fixed by the tilt, of order (1 − n_s) (Maldacena 2003, arXiv:astro-ph/0210603), and the squeezed limit is fixed for any single-field model whatever the Lagrangian (Creminelli and Zaldarriaga 2004, arXiv:astro-ph/0407059). A detection of |f_NL^local| of order one would rule out all single-field models. The SPHEREx mission paper summarises the target as |f_NL^local| < 10⁻² for single-field and about 1 for multi-field models (arXiv:2511.02985) [src].
@@ -125,18 +139,23 @@ What the shapes test:
 <!-- key: cmb-bispectrum-estimators -->
 
 - KSW: a cubic statistic that reduces the cost from N^2.5 to N^1.5 operations for separable templates (Komatsu, Spergel and Wandelt 2005, arXiv:astro-ph/0305189) [src].
+- Linear term: needed for optimality with a mask or anisotropic noise (Creminelli et al. 2006, arXiv:astro-ph/0509029); WMAP 3-year gave −36 < f_NL^local < 100 and −256 < f_NL^equil < 332 at 95% (arXiv:astro-ph/0610600) [src].
+- Binned estimator: binning in harmonic space generalises KSW with adjustable weights against foregrounds (Bucher et al. 2010, arXiv:0911.1642). Modal estimator: expansion of non-separable bispectra on separable polynomial modes (Fergusson et al. 2010, arXiv:0912.5516).
 - Planck uses three estimators in parallel, separable template fitting (KSW), binned and modal, and requires agreement (arXiv:1502.01592, arXiv:1905.05697). PR4 was analysed with the binned and the integrated-bispectrum estimators (arXiv:2504.00884).
 - Errors and the linear correction term come from simulations (600 for PR4, arXiv:2504.00884). The lensing–ISW bispectrum and point-source bispectra are fitted jointly or subtracted.
+- Planck 2018 set-up (arXiv:1905.05697) [src: Sects. 3.2.1–3.2.2]: SMICA, SEVEM, NILC and Commander maps, 5 arcmin beam; common masks with f_sky = 0.779 (T) and 0.781 (E), diffusively inpainted (2000 iterations); T over 2 ≤ ℓ ≤ 2000 (KSW, modal) or 2500 (binned); E over 4 ≤ ℓ ≤ 1500 (2000 binned), ℓ = 2, 3 removed because they biased local f_NL in simulations; 300 FFP10 noise realisations (160 for modal) for errors and linear terms; a 3% (T, ℓ ≈ 2000) and percent-level (E) noise mismatch between FFP10 and data is shown to be harmless; templates and lensing bias from CAMB at the Planck 2018 best fit. Final numbers: KSW on SMICA with the predicted lensing bias subtracted [src: Sect. 5.1].
 - Non-separable models: modal decompositions (the Modal pipeline, arXiv:2511.17500) or a learned separable basis in the PolySpec code, with model bispectra computed by CosmoFlow (Philcox, Zhong and Sirletti 2025, arXiv:2511.19179).
 
 ### Scale-dependent bias (large-scale structure)
 <!-- key: scale-dependent-bias-large-scale-structure -->
 
-Local non-Gaussianity couples long and short modes and adds a term to the bias of any tracer that grows as 1/k² on large scales (Dalal et al. 2008, arXiv:0710.4560; Slosar et al. 2008, arXiv:0805.3580). In the standard form (textbook):
+Local non-Gaussianity couples long and short modes and adds a term to the bias of any tracer that grows as 1/k² on large scales (Dalal et al. 2008, arXiv:0710.4560; Slosar et al. 2008, arXiv:0805.3580); Matarrese et al. 2008 derived it analytically from the clustering of high peaks at large separation (arXiv:0801.4826). In the standard form (textbook):
 
 Δb(k, z) = b_φ f_NL / α(k, z), with α(k, z) = 2 c² k² T(k) D(z) / (3 Ω_m H_0²), and b_φ = 2 δ_c (b_1 − p),
 
 where δ_c ≈ 1.686 is the spherical-collapse threshold, T(k) the transfer function and D(z) the growth factor normalised to the scale factor in matter domination. The data constrain the product f_NL · b_φ only (Barreira 2022, arXiv:2205.05673).
+
+As DESI DR1 writes it (arXiv:2411.17623) [src: Sect. 2, Eqs. 2–4, 7]: P(k, z) = [b_1(z) + b_Φ(z) f_NL^loc / T_Φ→δ(k, z)]² P_lin(k, z), with T_Φ→δ = (P_lin/P_Φ)^(1/2), P_Φ(k) = (9/25)(2π²/k³) A_s (k/k_pivot)^(n_s−1), k_pivot = 0.05 Mpc⁻¹, Φ normalised to (3/5)R, so that T_Φ→δ ∝ k² T(k); and b_Φ = 2δ_c (b_1 − p) with δ_c = 1.686.
 
 The parameter p encodes the response of the tracer: p = 1 for a universal mass function, p = 1.6 for objects that live in recent mergers (derived with extended Press–Schechter for quasars, arXiv:0805.3580), about 1.4 for DESI-like quasars selected in IllustrisTNG (Fondi et al. 2026, arXiv:2602.12357). Assembly bias changes b_φ at fixed b_1 and can change its sign (Lazeyras et al. 2023, arXiv:2209.07251).
 
@@ -171,12 +190,12 @@ Theory codes: ACT uses CLASS, and notes that the HMCode non-linear correction ca
 ## 7. Spatial curvature
 <!-- key: spatial-curvature -->
 
-The primary CMB fixes the angular acoustic scale and leaves a geometric degeneracy between Ω_K, Ω_m and H_0. It is broken weakly by CMB lensing, both through the smoothing of the peaks and through the lensing reconstruction, and strongly by BAO (arXiv:1807.06209). Because closed models predict more lensing, a preference for extra peak smoothing (A_L > 1) appears as a preference for Ω_K < 0 (arXiv:1807.06209, arXiv:1911.02087). Late-time-only determinations use BAO with supernovae, lensing time delays or cosmic chronometers and depend on the dark-energy model assumed (arXiv:2512.19565, arXiv:2604.23492).
+The primary CMB fixes the angular acoustic scale and leaves a geometric degeneracy between Ω_K, Ω_m and H_0 (degeneracies among CMB parameters analysed by Efstathiou et al. 1999, arXiv:astro-ph/9807103, who also showed that a Fisher matrix can overestimate the errors). It is broken weakly by CMB lensing, both through the smoothing of the peaks and through the lensing reconstruction, and strongly by BAO (arXiv:1807.06209). Because closed models predict more lensing, a preference for extra peak smoothing (A_L > 1) appears as a preference for Ω_K < 0 (arXiv:1807.06209, arXiv:1911.02087). Late-time-only determinations use BAO with supernovae, lensing time delays or cosmic chronometers and depend on the dark-energy model assumed (arXiv:2512.19565, arXiv:2604.23492).
 
 ## 8. Primordial features
 <!-- key: primordial-features -->
 
-Templates multiply the power-law spectrum by 1 + A cos(ω k + φ) (linear) or 1 + A cos(ω ln(k/k_*) + φ) (logarithmic), with variants for localised features and for particle production (arXiv:1505.01834, arXiv:2606.28310). Method points:
+Templates multiply the power-law spectrum by 1 + A cos(ω k + φ) (linear) or 1 + A cos(ω ln(k/k_*) + φ) (logarithmic), with variants for localised features and for particle production (arXiv:1505.01834, arXiv:2606.28310). The two classic origins (abstracts read): a sharp step in the inflaton potential produces localised k-dependent oscillations whose amplitude and extent depend on the size and gradient of the step (Adams et al. 2001, arXiv:astro-ph/0102236); periodic instanton modulations in axion monodromy inflation produce resonant, logarithmically spaced oscillations (Flauger et al. 2010, arXiv:0907.2916). Method points:
 
 - The posterior in frequency is multimodal. Nested or sequential Monte Carlo samplers are used; Nerval et al. integrate the pocoMC sampler into Cobaya (arXiv:2606.28310).
 - Rapid oscillations are erased by binning, so CMB searches use unbinned likelihoods (arXiv:2605.30236).
@@ -189,13 +208,13 @@ Templates multiply the power-law spectrum by 1 + A cos(ω k + φ) (linear) or 1 
 
 | Analysis | Covariance and likelihood | Blinding | Citation |
 |---|---|---|---|
-| BICEP/Keck r | parametric multi-component likelihood on all auto- and cross-spectra; extended to accept a lensing template (covariance construction not read this session) | not read this session | arXiv:2110.00483, arXiv:2011.08163 |
+| BICEP/Keck r | Hamimeche–Lewis likelihood on 66 BB spectra, 20 < ℓ < 330; covariance from 499 signal + noise simulations [src: BK18 main text]; extended to accept a lensing template | not read this session | arXiv:2110.00483, arXiv:2011.08163 |
 | SPT-3G BB | foreground-marginalised "CMB-lite" compression, public | not read | arXiv:2510.07928 |
 | Planck f_NL | simulation-based errors; three estimators cross-validated; stability across component-separation methods | not stated in the abstracts | arXiv:1905.05697 |
-| DESI DR1 f_NL | mock-based covariance; window with radial and angular integral constraints | blinded, "for the first time in this kind of analysis" | arXiv:2411.17623 |
-| eBOSS DR16 f_NL | EZmock catalogues reproducing the target selection | not stated | arXiv:2106.13725 |
+| DESI DR1 f_NL | covariance from 1000 EZmocks; window with radial and angular integral constraints; P_0 + P_2, k = 0.003 (QSO) or 0.006 (LRG) to 0.08 h Mpc⁻¹ [src: Sects. 3.3, 4.2.1] | blinded, "for the first time in this kind of analysis": catalogue-level weights add f_NL^blind ∈ [−15, 15], built with p = 1, multiplied into the completeness weights [src: Sect. 3.1.3, Eq. 9] | arXiv:2411.17623 |
+| eBOSS DR16 f_NL | EZmock catalogues reproducing the target selection; monopole to k = 0.121 h Mpc⁻¹, NGC and SGC nuisances [src: Table 1] | not stated | arXiv:2106.13725 |
 | ACT DR6 and SPT-3G D1 power spectra | see `cosmo-cmb` | both blinded, both changed after unblinding, per the `cosmo-cmb` skill [sec] | arXiv:2503.14452, arXiv:2506.20707 |
-| Birefringence | Gaussian likelihood on EB (and TB) bandpowers with α and β sampled jointly | not stated | arXiv:2011.11254, arXiv:2509.13654 |
+| Birefringence | Gaussian likelihood on EB (and TB) bandpowers with α and β sampled jointly; ACT DR6: five array-bands, Gaussian optics priors on each α_i, full bin-to-bin covariance from the DR6 release, iterative semi-analytic posterior in the small-angle limit [src: arXiv:2509.13654, Sect. III, Eqs. 1–3] | not stated | arXiv:2011.11254, arXiv:2509.13654 |
 
 Significances in this domain are usually conditional: on the b_φ relation (f_NL from large-scale structure), on instrumental priors (birefringence), on a fixed cosmology (features), on the model (n_s, Ω_K). `systematics.md` lists the condition for each.
 
@@ -231,7 +250,6 @@ Significances in this domain are usually conditional: on the b_φ relation (f_NL
 <!-- key: not-verified -->
 
 - The conversion between the "LSS" and "CMB" conventions for f_NL.
-- The explicit form of the equilateral and orthogonal templates and the map from (f_NL^equil, f_NL^ortho) to (c_s, c̃_3): not read, only the resulting c_s limits.
-- BICEP/Keck blinding and covariance practice: described from general knowledge of the abstracts, not from the methods sections.
+- The map from (f_NL^equil, f_NL^ortho) to (c_s, c̃_3): not read, only the resulting c_s limits (the templates themselves are now in section 5).
+- BICEP/Keck blinding practice: not read (the BK18 covariance construction now is, section 3).
 - The multipoles of the recombination and reionisation bumps and the relation between r and the energy scale of inflation: standard, but no number was read this session, so none is given.
-- The leading-order formulas n_s ≈ 1 − 2/N and r ≈ 12α/N² are textbook; they were not read in a cited paper this session.

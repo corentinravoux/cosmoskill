@@ -1,7 +1,7 @@
 # Results — reionisation, 21 cm, line-intensity mapping
 
 Scope: current headline measurements and the history of the key numbers.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-13
 
 ## 1. Reionisation history
 <!-- key: reionisation-history -->
@@ -62,6 +62,9 @@ Lyα-visibility values depend on a reionisation-topology model and on the assume
 | 5.831 | ≤ 0.191 + 0.056 | same | arXiv:2510.25829 | [src] |
 | 6.043 | ≤ 0.199 + 0.087 | same | arXiv:2510.25829 | [src] |
 | 5.55, 5.75, 5.95 | ≤ 0.05, 0.17, 0.29 | Lyβ dark-gap lengths, 42 quasars | Zhu et al. 2022, arXiv:2205.04569 | [src] |
+| 5–5.5; ~6.1 | < 0.2; < 0.8 (< 0.5 from two deep spectra) | dark pixels, Lyα + Lyβ, 13 Keck/ESI quasars; first application of the method | McGreer, Mesinger & Fan 2011, arXiv:1101.3314 | [src] |
+| 5.6; 5.9 | ≤ 0.04 + 0.05; ≤ 0.06 + 0.05 (1σ) | dark pixels, 22 quasars | McGreer, Mesinger & D'Odorico 2015, arXiv:1411.5375 | [src] |
+| ~6.2 | 0.01–0.04 (mass-averaged) | Gunn–Peterson optical depth and H II region sizes, 19 SDSS quasars | Fan et al. 2006, arXiv:astro-ph/0512082 | [src] |
 | 5.6 | 0.19 ± 0.07 (1σ), (+0.11/−0.16 at 2σ) | stacked damping wing next to Gunn–Peterson troughs | Spina et al. 2024, arXiv:2405.12273 | [src] |
 | 5.9 | < 0.44 | same | arXiv:2405.12273 | [src] |
 | 5.8 | ≥ 0.061 ± 0.039 | stacked damping wing at edges of Lyβ dark gaps | Zhu et al. 2024, arXiv:2405.12275 | [src] |
@@ -70,6 +73,9 @@ Lyα-visibility values depend on a reionisation-topology model and on the assume
 | 6.35 | 0.29 (+0.14/−0.13) | same | arXiv:2404.12585 | [src] |
 | 7.09 | 0.48 ± 0.26 | damping wing, ULAS J1120+0641, marginalised over quasar lifetime 10³–10⁸ yr | Davies et al. 2018, arXiv:1802.06066 | [src] |
 | 7.54 | 0.60 (+0.20/−0.23) | damping wing, ULAS J1342+0928 | arXiv:1802.06066 | [src] |
+| 7.085 | > 0.1 | near-zone transmission profile of ULAS J1120+0641 (near zone 1.9 Mpc), discovery paper | Mortlock et al. 2011, arXiv:1106.6088 | [src] |
+| 7.54 | > 0.33 (68%), > 0.11 (95%), most conservative analysis | damping wing of ULAS J1342+0928, discovery paper | Bañados et al. 2018, arXiv:1712.01860 | [src] |
+| ~7 | 0.59 (+0.11/−0.15) | Lyα equivalent widths of Lyman-break galaxies, pre-JWST sample, Bayesian framework | Mason et al. 2018, arXiv:1709.05356 | [src] |
 | 7.12 → 9.91 | 0.53 (+0.18/−0.47) → 0.92 (+0.08/−0.10) | galaxy damping wings, 27 JWST/NIRSpec galaxies, 4 stacks | Umeda et al. 2023, arXiv:2306.00487 | [src] |
 | ~5, 6, 7, 9, 10 | 0.00 (+0.12/−0.00), 0.25 (+0.10/−0.20), 0.65 (+0.27/−0.35), 1.00 (+0.00/−0.20), 1.00 (+0.00/−0.40) | 581 JWST/NIRSpec galaxies, Gunn–Peterson + damping wing | Umeda et al. 2025, arXiv:2504.04683 | [src] |
 | ~7, 8, 11 | 0.38 (+0.14/−0.38), 0.57 (+0.23/−0.57), 0.93 (+0.05/−0.17) (mass-weighted; EW > 25 Å) | JWST Lyα-emitter fractions against THESAN and a semi-analytic model | Kundu, Lidz & Sun 2026, arXiv:2609.40363 | [src] |
@@ -79,6 +85,22 @@ Lyα-visibility values depend on a reionisation-topology model and on the assume
 ### 1.4 End of reionisation from the Lyα forest
 <!-- key: end-of-reionisation-from-the-lyalpha-forest -->
 
+- History. First complete Gunn–Peterson trough, at z = 6.28: transmitted flux 0.0038 ± 0.0026 of the continuum over
+  5.95 < z_abs < 6.16, and τ_eff > 20 from the Lyβ break [src: Becker et al. 2001, arXiv:astro-ph/0108097]. In 19 SDSS
+  quasars at 5.74 < z < 6.42 the optical depth steepens from (1 + z)^4.3 to (1 + z)^(>11) above z = 5.7 and dark gaps
+  with τ > 3.5 lengthen from < 10 to > 80 comoving Mpc [src: Fan et al. 2006, arXiv:astro-ph/0512082]. A trough ~110
+  h⁻¹Mpc long with τ_eff ≳ 7 reaches down to z ≃ 5.5 towards ULAS J0148+0600 [src: Becker et al. 2015, arXiv:1407.4850].
+- XQR-30 mean Lyα transmission (67 sightlines): 0.1222 (+0.0046/−0.0054) at z = 5.2, 0.0447 (+0.0033/−0.0036) at z =
+  5.6, 0.0089 (+0.0033/−0.0029) at z = 6.0, in Δz = 0.1 bins [src: Bosman et al. 2022, arXiv:2108.03699, Table 4]. A
+  homogeneous ionising background fits at z ≤ 5.2, is in 2.5σ tension at z = 5.3 and is excluded at > 3.5σ at z ≥ 5.4
+  [src: arXiv:2108.03699]. Radiative-transfer models ending reionisation at z = 5.2–5.3, with 50% of the volume ionised
+  at z = 7, reproduce the scatter and the long troughs [src: Kulkarni et al. 2019, arXiv:1809.06374; Keating et al.
+  2020, arXiv:1905.12640].
+- Mean free path before the measurements below: (48.4 ± 2.1) − (38.0 ± 5.3)(z − 3.6) h⁻¹ proper Mpc over z = 3.6–4.3
+  from 1800 SDSS quasars [src: Prochaska, Worseck & O'Meara 2009, arXiv:0910.0009]; 22.2 ± 2.3, 15.1 ± 1.8 and 10.3 ±
+  1.6 h₇₀⁻¹ proper Mpc at z = 4.56, 4.86 and 5.16, a power law of index −5.4 ± 0.4 over z = 2.3–5.5 [src: Worseck et al.
+  2014, arXiv:1402.4154]; 9.09 (+1.62/−1.28) pMpc at z = 5.1 and 0.75 (+0.65/−0.45) pMpc at z = 6.0 [src: Becker et al.
+  2021, arXiv:2103.16610].
 - Long dark gaps: the fraction of sightlines with a gap longer than 30 h⁻¹Mpc is F₃₀ ≃ 0.9, 0.6 and 0.15 at z = 6.0,
   5.8 and 5.6, and the last long gap persists to z ≃ 5.3 (55 quasars) [src: Zhu et al. 2021, arXiv:2109.06295].
 - Forward-modelled τ_eff distributions in 12 bins over 4.85 < z < 6.05 are "consistent with a model in which
@@ -111,6 +133,7 @@ quoted.
 
 | Quantity | Value | Data | Citation | Flag |
 |---|---|---|---|---|
+| D_3000^patchy kSZ | ≤ 2.1 μK² (95%), Δz ≤ 4.4; ≤ 4.9 μK², Δz ≤ 7.9 with a free tSZ–CIB correlation | SPT, first limit | Zahn et al. 2012, arXiv:1111.6386 | [src] |
 | D_3000^kSZ | 3.0 ± 1.0 μK² (first ≥ 3σ kSZ power) | SPT-SZ 2540 deg² + SPTpol 500 deg² | Reichardt et al. 2020, arXiv:2002.06197 | [src] |
 | Δz_re | 1.0 (+1.6/−0.7); < 4.1 at 95% | same, with the tSZ bispectrum prior | arXiv:2002.06197 | [src] |
 | D_3000^kSZ | 1.75 ± 0.86 μK² (free angular shapes) | SPT-3G D1, 1646 deg², two years, 95/150/220 GHz | Chaubal et al. 2026, arXiv:2601.20551 | [src] |
@@ -145,9 +168,11 @@ polarised SZ are covered in `cosmo-cmb-lss-cross-correlations`.
 
 | Statement | Value | Citation | Flag |
 |---|---|---|---|
+| First global-signal result | all-sky spectrum over 100–200 MHz (6 < z < 13) excludes a reionisation faster than Δz < 0.06 at 95% | Bowman & Rogers 2010, arXiv:1209.1117 | [src] |
 | EDGES low-band claimed detection | flattened absorption profile centred at 78 MHz, FWHM 19 MHz, amplitude 0.5 K, "more than a factor of two greater than the largest predictions" | Bowman et al. 2018, arXiv:1810.05912 | [src] |
 | EDGES timing inference | stars had produced a Lyα background by 180 Myr after the Big Bang; gas heated above the radiation temperature less than 100 Myr later | arXiv:1810.05912 | [src] |
 | SARAS 3 non-confirmation | radiometer spectrum in 55–85 MHz; the EDGES best-fitting profile "is rejected with 95.3% confidence" and is "not of astrophysical origin" | Singh et al. 2021, arXiv:2112.06778 | [src] |
+| Beam-correction cross-check | fitted trough depth between 370 mK (no beam correction) and 670 mK (one simulated beam model) | Sims & Pober 2019, arXiv:1910.03165, Sect. 2.1.3 | [src] |
 | Foreground-model critique | the EDGES fit implies unphysical foreground parameters and is not unique | Hills et al. 2018, arXiv:1805.01421 | [src] |
 | Ground-plane resonance alternative | 2-term foreground + three cavity-mode resonances: rms residual 20.8 mK (11 parameters) against 24.5 mK (9 parameters) for the EDGES 5-term foreground + flattened Gaussian | Bradley et al. 2018, arXiv:1810.09015 | [src] |
 | Bayesian re-analysis with calibration systematics | models with a noise model and calibration-error terms are decisively preferred; those with a signal favour an amplitude A < 209 mK; no strong evidence for a signal over no signal | Sims & Pober 2019, arXiv:1910.03165 | [src] |
@@ -187,6 +212,9 @@ spectrum at z > 6. Limits are quoted as the papers quote them, either as Δ² in
 | NenuFAR | 20.3 | 4.6 × 10⁵ mK² | 0.038 | 26.1 h | Munshi et al. 2025, arXiv:2507.10533 | [src] |
 | NenuFAR | 17.0 | 5.0 × 10⁶ mK² | 0.041 | 23.6 h | arXiv:2507.10533 | [src] |
 | PAPER-64 (re-analysis) | 7.48–10.87 | (300), (380), (200), (280), (1900), (1500) mK squared at z = 7.48, 8.13, 8.37, 8.68, 9.93, 10.87 | — | — | Kolopanis et al. 2019, arXiv:1909.02085 | [src] |
+| LOFAR (2020, superseded) | ≈ 9.1 | (73 mK)² | 0.075 | 141 h | Mertens et al. 2020, arXiv:2002.07196 | [src] |
+| MWA (2020, superseded) | 6.5 | (43 mK)² = 1.8 × 10³ mK² | 0.14 | 110 h | Trott et al. 2020, arXiv:2002.02575 | [src] |
+| PAPER-64 (2015, **retracted**) | 8.4 | (22.4 mK)² | 0.15–0.5 | 135 days | Ali et al. 2015, arXiv:1502.06016 | [src] |
 
 Notes on the table.
 
@@ -196,7 +224,8 @@ Notes on the table.
 - LOFAR 2025 is a reprocessing of comparable data to the earlier LOFAR limits with a 2 to 4-fold improvement; the
   residual excess is attributed to distant-source foregrounds, beam-model errors and low-level RFI [src:
   arXiv:2503.05576].
-- HERA Phase II covers 50–250 MHz (abstract; 47–234 MHz in the paper's introduction) and reports eight bands over 5.6 ≤ z ≤ 24.4; mutual coupling "has become our
+- HERA Phase II covers 50–250 MHz (abstract; 47–234 MHz in the paper's introduction) and reports eight bands over 5.6
+≤ z ≤ 24.4; mutual coupling "has become our
   dominant systematic" and costs the modes k = 0.35–0.55 relative to Phase I [src: arXiv:2511.21289].
 - The NenuFAR limit at z = 20.3 is more than an order of magnitude deeper than earlier Cosmic Dawn limits and starts
   to exclude only models stronger than the EDGES profile; an order of magnitude more is needed to test
@@ -224,6 +253,10 @@ distortions. No BAO, growth-rate or dark-energy measurement from 21 cm intensity
 
 | Measurement | Value | z | Scales | Data | Citation | Flag |
 |---|---|---|---|---|---|---|
+| Stacking, GBT × DEEP2 (first detection) | ~4σ | 0.53–1.12 | — | ~10⁴ galaxies | Chang et al. 2010, arXiv:1007.3709 | [src] |
+| GBT auto-power (upper bound) with WiggleZ cross-power (lower bound) | Ω_HI b_HI = 0.62 (+0.23/−0.15) × 10⁻³, 9% calibration systematic | ~0.8 | — | ~41 deg², 190 h | Switzer et al. 2013, arXiv:1304.3712 | [src] |
+| Cross-correlation, Parkes × 2dF | 5.18σ; cross-power more than 6 times below expectation at k ~ 1.5 h/Mpc (14.8σ) | 0.057–0.098 | — | ~1300 deg² | Anderson et al. 2018, arXiv:1710.00424 | [src] |
+| Auto-power, MeerKAT interferometric mode, foreground avoidance | 3.2σ and 3.5σ (baseline flagging); 5.9σ and 9.18σ (power-spectrum-based flagging) | 0.32 and 0.44 | Mpc scales | L-band | Paul et al. 2023, arXiv:2301.11943 | [src] |
 | Cross-correlation, GBT × WiggleZ | Ω_HI b_HI r = [0.43 ± 0.07 (stat) ± 0.04 (sys)] × 10⁻³ | 0.6–1 (~0.8) | — | ~41 deg², 190 h | Masui et al. 2012, arXiv:1208.0331 | [src] |
 | Cross-correlation, GBT × WiggleZ | [0.58 ± 0.09 ± 0.05] × 10⁻³ | ≃ 0.8 | k_eff = 0.31 h/Mpc | 100 deg² | Wolz et al. 2021, arXiv:2102.04946 | [src] |
 | Cross-correlation, GBT × eBOSS ELG | [0.40 ± 0.09 ± 0.04] × 10⁻³ | ≃ 0.8 | 0.31 | same | arXiv:2102.04946 | [src] |
@@ -242,7 +275,8 @@ Notes.
 - Interpretation of the CHIME auto-spectrum: the amplitude parameter is A²_HI ≡ 10⁶ Ω²_HI (b²_HI + ⟨fμ²⟩)², and the
   measurement disagrees with IllustrisTNG at 3.1σ (TNG100) and 4.0σ (TNG300), attributed to non-linear redshift-space
   clustering of HI in the simulations and not to the total HI abundance [src: CHIME Collaboration 2026,
-  arXiv:2603.25680]. The value of A_HI is not in the abstract and is not reproduced here.
+  arXiv:2603.25680]. The detection paper quotes A²_HI = 3.55 (+0.96/−1.32) (stat) ± 0.61 (sys)
+  for the full band, with ⟨fμ²⟩ = 0.761 [src: arXiv:2511.19620, Sect. VI.2.3].
 - The CHIME stacking analysis is also sensitive to the tracer redshift bias and finds Δv = −66 ± 20 km/s for the eBOSS
   quasars [src: arXiv:2202.01242].
 - The MeerKLASS auto-spectrum was posted on 2026-10-08. The subset auto-spectra still show excess power from
@@ -258,12 +292,17 @@ Notes.
 <!-- key: line-intensity-mapping-co-cii-lyalpha -->
 
 State of the field in one sentence: outside the 21 cm line, no three-dimensional line-intensity power spectrum has
-been detected; a 2026 methods paper states that "other lines that reveal large-scale structure or astrophysical
-processes remain undetected" [src: Kramer et al. 2026, arXiv:2603.13218]. The detections that exist are of the mean
-background by tomographic cross-correlation of broadband maps.
+been detected on clustering scales; a 2026 methods paper states that "other lines that reveal large-scale structure or
+astrophysical processes remain undetected" [src: Kramer et al. 2026, arXiv:2603.13218]. What exists is CO shot-noise
+power from small interferometric fields (COPSS, P_CO > 0 at 98.9%; mmIME, zero power rejected at 99.99%; rows below)
+and the mean background by tomographic cross-correlation of broadband maps. COMAP Season 2 quotes ten times the
+sensitivity of COPSS and a spectrum consistent with zero on larger scales [src: arXiv:2406.07511, Sect. 5.4 and abstract].
 
 | Quantity | Value | Line, z | Data | Citation | Flag |
 |---|---|---|---|---|---|
+| P_CO (shot-noise scales) | (3.0 ± 1.3) × 10³ μK² (h⁻¹Mpc)³ (68%); P_CO > 0 at 98.9% | CO(1–0), z = 2.3–3.3, k = 0.5–10 h/Mpc | COPSS, SZA, 19 fields, 0.7 deg², 27–35 GHz | Keating et al. 2016, arXiv:1605.03971 | [src] |
+| Shot power at 100 GHz | 770 ± 210 μK² Hz sr; zero power rejected at 99.99%; ρ_H2 ~ 10⁸ M_⊙ Mpc⁻³ at z = 1–3 | CO(2–1), (3–2), (4–3) at z ~ 1–5 | mmIME: ALMA ASPECS + ACA in COSMOS, 3 mm | Keating et al. 2020, arXiv:2008.08087 | [src] |
+| [CII] intensity (cross-correlation search) | I_ν = 6.6 (+5.0/−4.8) × 10⁴ Jy/sr (95%); a CIB + SZ model without [CII] is equally plausible (BIC) | [CII], z = 2–3.2 | Planck 545 GHz × SDSS quasars and CMASS | Pullen et al. 2018, arXiv:1707.06172 | [src] |
 | P_CO(k) | −2.7 ± 1.7 × 10⁴ μK² Mpc³ over k = 0.051–0.62 Mpc⁻¹ | CO(1–0), z = 2.4–3.4 | COMAP Pathfinder, first 13 months | Cleary et al. 2021, arXiv:2111.05927 | [src] |
 | ⟨Tb⟩² | < 49 μK² | same | same | arXiv:2111.05927 | [src] |
 | k P_CO(k) | < 2400–4900 μK² Mpc² (95%) in each of the six deepest bins, 0.09 < k < 0.73 Mpc⁻¹ | CO(1–0), z = 2.4–3.4 | COMAP Season 2 (two seasons), feed-group pseudo cross-spectrum | Stutzer et al. 2024, arXiv:2406.07511 | [src] |
@@ -321,6 +360,8 @@ neutral IGM [src: arXiv:2505.11263].
 
 | Year | Value | What changed | Citation | Flag |
 |---|---|---|---|---|
+| 2003 | 0.17 ± 0.04 | WMAP first-year TE excess at θ > 10°; 11 < z_r < 30 (95%) | Kogut et al. 2003, arXiv:astro-ph/0302213 | [src] |
+| 2015 | 0.066 ± 0.012 | Planck 2015, as quoted by a reionisation-budget paper that matched it with galaxies over 6 ≲ z ≲ 10 | Robertson et al. 2015, arXiv:1502.02024 | [sec] |
 | 2016 | 0.055 ± 0.009 (EE only); 0.058 ± 0.012 (with TT) | first use of HFI low-ℓ polarisation; "reducing significantly the central value and uncertainty" relative to earlier data | arXiv:1605.02985, arXiv:1605.03507 | [src] |
 | 2018 | 0.054 ± 0.007 | Planck legacy release | arXiv:1807.06209 | [src] |
 | 2019 | 0.0566 (+0.0053/−0.0062); 0.059 ± 0.006 with TT and high-ℓ | SRoll2 map-making removes the dipole-distortion residual; uncertainty down ~40% | arXiv:1908.09856 | [src] |
@@ -336,6 +377,7 @@ Planck HFI data. The value to quote depends on the likelihood named.
 
 | Year | Value | Citation | Flag |
 |---|---|---|---|
+| 2012 | patchy D_3000 ≤ 2.1 μK², Δz ≤ 4.4 (95%); Δz ≤ 7.9 with a free tSZ–CIB correlation | arXiv:1111.6386 | [src] |
 | 2016 | Δz < 2.8 (symmetric model, Planck + ACT/SPT kSZ amplitude) | arXiv:1605.03507 | [src] |
 | 2020 | Δz = 1.0 (+1.6/−0.7), < 4.1 (95%); D_3000^kSZ = 3.0 ± 1.0 μK² | arXiv:2002.06197 | [src] |
 | 2024 | Δz_re,50 < 4.5 (95%), trispectrum | arXiv:2403.02337 | [src] |
@@ -362,6 +404,7 @@ All four agree within their errors; the errors have not shrunk in eight years.
 
 | Year | Milestone | Citation | Flag |
 |---|---|---|---|
+| 2015 | PAPER-64: (22.4 mK)² at z = 8.4, later retracted | arXiv:1502.06016 | [src] |
 | 2018–2019 | PAPER-64 limits withdrawn and replaced: (200 mK)² at z = 8.37 is the best of the re-analysis | arXiv:1810.05175, arXiv:1909.02085 | [src] |
 | 2021 | HERA Phase I, 18 nights: (30.76 mK)² at z = 7.9, an order of magnitude deeper than before at that redshift | arXiv:2108.02263 | [src] |
 | 2022 | HERA Phase I, 94 nights: 457 mK² at z = 7.9, a factor 2.1 better at that redshift (2.6 at z = 10.4) | arXiv:2210.04912 | [src] |
@@ -376,16 +419,19 @@ arXiv:2511.21289].
 
 | Year | Milestone | Citation | Flag |
 |---|---|---|---|
+| 2010 | first detection: GBT stack on DEEP2 galaxies, ~4σ | arXiv:1007.3709 | [src] |
 | 2012 | GBT × WiggleZ cross-correlation at z ~ 0.8 | arXiv:1208.0331 | [src] |
+| 2013 | GBT auto-power as an upper bound; Ω_HI b_HI = 0.62 (+0.23/−0.15) × 10⁻³ | arXiv:1304.3712 | [src] |
 | 2021 | GBT × eBOSS and WiggleZ, three galaxy samples | arXiv:2102.04946 | [src] |
 | 2022 | first interferometric detection (CHIME stacking); first multi-dish single-dish-mode detection (MeerKAT × WiggleZ, 7.7σ) | arXiv:2202.01242, arXiv:2206.01579 | [src] |
-| 2023 | highest-redshift detection, z = 2.3 (CHIME × Lyα forest, 9σ) | arXiv:2309.04404 | [src] |
+| 2023 | highest-redshift detection, z = 2.3 (CHIME × Lyα forest, 9σ); first auto-power without a galaxy catalogue (MeerKAT interferometric, z ≈ 0.32 and 0.44, Mpc scales) | arXiv:2309.04404, arXiv:2301.11943 | [src] |
 | 2025 | first auto-power detection at z ~ 1 (CHIME, 12.5σ) | arXiv:2511.19620 | [src] |
 | 2026 | auto-spectrum on cosmological scales at z = 0.42 (MeerKLASS, S/N 6.2) | arXiv:2610.12158 | [src] |
 
 ### Other lines
 <!-- key: other-lines -->
 
+CO shot-noise power was reported by COPSS in 2016 and mmIME in 2020 [src: arXiv:1605.03971, arXiv:2008.08087].
 COMAP: ⟨Tb⟩² < 49 μK² in 2021 [src: arXiv:2111.05927]; in 2024 a spectrum about ten times more sensitive, still
 consistent with zero [src: arXiv:2406.07511]. The mean CO and [CII] backgrounds were first detected in 2026 by
 tomographic cross-correlation, not by a line-intensity-mapping instrument [src: arXiv:2602.02658].
@@ -395,14 +441,13 @@ tomographic cross-correlation, not by a line-intensity-mapping instrument [src: 
 
 - The Planck PR4 τ values of the original PR4 likelihood papers (two entries of the `cosmo-cmb` bibliography) were not
   read here; the PR4 row of section 1.1 is the tanh control fit of arXiv:2609.24989.
-- The XQR-30 mean-flux measurement that first placed the end of reionisation at z ≈ 5.3 (Bosman et al. 2022), the
-  earlier mean-free-path measurement (Becker et al. 2021) and the late-reionisation model papers (Kulkarni et al.
-  2019, Keating et al. 2020) are expected references that were not fetched; the z ≈ 5.3 statement here rests on
-  arXiv:2109.06295, arXiv:2405.12273 and arXiv:2304.02038.
-- The earlier LOFAR (2020) and MWA (2020) limits that the 2025 papers improve on were not read.
-- The value of A_HI from the CHIME auto-spectrum is in the body of arXiv:2603.25680 and was not read.
-- The MeerKAT interferometric auto-power detection (Paul et al. 2023) is known here only through arXiv:2606.25955.
-- Pre-JWST Lyα-emitter-fraction inferences of x_HI at z ~ 7–8 were not fetched.
-- No result was found for: EDGES high-band or EDGES-3, REACH, MIST, PRIZM, LEDA sky measurements after 2022; CONCERTO,
-  mmIME, COPSS; Lyα intensity mapping; SPHEREx intensity mapping.
+- The late-reionisation model papers (arXiv:1809.06374, arXiv:1905.12640), the earlier mean-free-path papers and the
+  2020 LOFAR and MWA limits were read as abstracts only.
+- The Planck 2015 value τ = 0.066 ± 0.012 is quoted from arXiv:1502.02024, not from the Planck paper.
+- The derivation of A²_HI in the body of arXiv:2603.25680 was not read; the value in section 4 is the one quoted
+  from it by arXiv:2511.19620.
+- The MeerKAT interferometric auto-power detection (arXiv:2301.11943) was read as an abstract only.
+- Pre-JWST Lyα-emitter-fraction inferences of x_HI other than arXiv:1709.05356 were not fetched.
+- No result was found for: EDGES high-band or EDGES-3, REACH, MIST, PRIZM, LEDA sky measurements after 2022; CONCERTO;
+  Lyα intensity mapping; SPHEREx intensity mapping.
 

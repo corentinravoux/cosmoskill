@@ -73,7 +73,7 @@ Could not confirm: the unit behind "1% of the context window"; whether symlinked
 **Work packages, all no research agent.**
 - 2.1 Keys: `<!-- key: skill:file:slug -->` under each `##` and `###`; `tools/assign_keys.py`; `tools/check_keys.py --against <tag>`; `references/retired-keys.tsv`.
 - 2.2 Level rules in the hub; `tools/templates/fixed-block.md`; `tools/sync_blocks.py` writes it between markers; a "Levels" table per `SKILL.md` with measured tokens (`tools/measure_levels.py`).
-- 2.3 `skills/observational-cosmology/scripts/layers.py`; `docs/layers-v0.md` (formats of `profile.md`, `notes.md`).
+- 2.3 `skills/observational-cosmology/scripts/layers.py`; `docs/layers.md` (formats of `profile.md`, `notes.md`).
 - 2.4 Shortened descriptions.
 - 2.5 Question sets `docs/tests/levels/questions-<viewpoint>.md` from four viewpoints (outsider, same-probe analyst, other-probe analyst, referee), each question with expected level, file and token ceiling, written from the files.
 - 2.6 Tests (3).

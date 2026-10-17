@@ -3,7 +3,7 @@
 Scope: the imaging surveys used for cosmic shear and galaxy–galaxy lensing,
 past, current and planned, with the numbers a referee checks (area, source
 density, depth, redshift bins) and where the data are.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-12
 
 Flags: `[src]` read this session in the cited paper or on the named official
 page; `[sec]` from a named secondary source; `[der]` derived.
@@ -24,14 +24,19 @@ each survey's own definition, so the column is indicative, not homogeneous.
 | DES Y3 | 4143 | 100,204,026 | 5.59 (σ_e = 0.261) | metacalibration | arXiv:2011.03408 | [src] |
 | HSC Y3 | 433.48 catalogue; 416 cosmology | >25 million | 19.9 catalogue; 15 cosmology | — | arXiv:2107.00136, arXiv:2304.00702 | [src] |
 | DECADE (north cap) | 5412 | 107 million | 4.59 | metacalibration | arXiv:2502.17674 | [src] |
-| KiDS-Legacy | 1347 | — | — | lensfit, calibrated on the SKiLLS multi-band image simulations | arXiv:2503.19441, arXiv:2210.07163 | [src] |
+| KiDS-Legacy | 1347 (effective 967.4 for the gold sample) | 40,894,394 gold-selected sources in six bins of 6.0 to 7.4 million | 8.79 (σ_ε = 0.28) | lensfit, calibrated on the SKiLLS multi-band image simulations | arXiv:2503.19441, arXiv:2210.07163 | [src: Table 1 of arXiv:2503.19441] |
 | DES Y6 | 4422 | 151,922,791 catalogue; ≈140 million cosmology | 8.22 catalogue; 8.29 cosmology (σ_e = 0.29) | metadetection | arXiv:2501.05665, arXiv:2602.10065 | [src] |
 | DECADE + DES Y3 | 13,000 | 270 million | — | — | arXiv:2509.03582 | [src] |
 | UNIONS-3500 | ~3500 (2894 used for B modes) | 62 million | 4.96 (σ_ε = 0.27) | — | arXiv:2605.13549, arXiv:2604.03227 | [src] |
 
 Dashes mark quantities not stated in the abstracts read this session. The
 shape-measurement method is given only where an abstract read this session
-names it.
+names it. Read in the bodies on 2026-10-12: HSC Y3 shapes come from the
+reGauss estimator (arXiv:2304.00702) [src: Sect. IV.5]; the DES Y3 bins hold
+24.9 to 25.3 million galaxies each at n_eff ≈ 1.46–1.48 arcmin⁻²
+(arXiv:2105.13543) [src: Table 1]; the KiDS-Legacy redshift calibration
+sample KiDZ has 126,085 sources from 22 spectroscopic samples
+(arXiv:2503.19440) [src: Sect. 2.1].
 
 ## 1. Past and completed Stage-II / Stage-III surveys
 <!-- key: past-and-completed-stage-ii-stage-iii-surveys -->

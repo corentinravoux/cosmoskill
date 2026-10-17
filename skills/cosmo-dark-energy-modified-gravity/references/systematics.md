@@ -5,7 +5,7 @@ the level of the combined analysis; the probe-level systematics are in the
 sibling skills and are summarised only where they decide the dark-energy
 result.
 
-Snapshot: 2026-10-07
+Snapshot: 2026-10-14
 
 Flags: `[src]` read this session in the cited paper; `[sec]` from a named
 secondary source; `[der]` derived here.
@@ -54,7 +54,8 @@ candidates of that size are documented below.
   `cosmo-supernovae`.
 - **Validation test.** Drop `z < 0.1` supernovae and refit: the DESI DR2 test
   shows much larger errors and a small shift of the best fit
-  (arXiv:2503.14738) [src]. Marginalise over a free magnitude offset between
+  (arXiv:2503.14738) [src: Fig. 14]; in Unite the same cut (687 SNe, 24%) moves
+  the best fit by ~2σ (arXiv:2609.05053) [src: Sect. 9.1]. Marginalise over a free magnitude offset between
   the low- and high-redshift subsamples (Notari, Redi and Tesi 2024,
   arXiv:2411.11685) [src]. Compare intercepts of the magnitude–distance
   relation between subsamples (Huang, Cai and Wang 2025, arXiv:2502.04212)
@@ -90,9 +91,9 @@ candidates of that size are documented below.
   without it the e-value falls from 33.97 to 0.49 (Kim, Mota and Tamosiunas
   2026, arXiv:2607.28918) [src].
 - **Counter-evidence.** The DR2 measurements are "consistent with DESI DR1 and
-  SDSS" (arXiv:2503.14738, abstract) [src]; the sibling
-  `cosmo-galaxy-clustering` gives the SDSS–DESI difference at `z ≈ 0.7` as
-  about 2.6σ in DR2 [sec].
+  SDSS" (arXiv:2503.14738, abstract) [src]; the LRG2–eBOSS difference at
+  `z ≈ 0.7` fell from 3σ (DR1) to ~2.6σ (DR2, correlation 0.57 assumed)
+  [src: Sect. III.3.2]. Card in Section 14.1.
 - **Validation test.** Leave-one-bin-out fits; replacement of DESI bins by
   SDSS; consistency of `D_M/D_H` (which is independent of `r_d`) with the
   fitted model.
@@ -113,9 +114,14 @@ candidates of that size are documented below.
   modified gravity the choice matters much more (Section 10).
 - **Which experiment.** The ΛCDM distance between CMB and DESI DR2 is 1.6σ,
   2.8σ or 3.7σ for P-ACT, CMB-SPA and SPT+ACT (sibling `cosmo-cmb` [sec]).
+  With P-ACT the DR2 `w0wa` preference is 2.4σ with or without Pantheon+
+  (arXiv:2503.14454) [src: App. G.1]; removing SPT and ACT or replacing simall
+  by an SRoll2 τ prior lowers the DES-Dovekie preference by 0.2–0.7σ
+  (arXiv:2511.07517) [src: Sect. 11.4]. Cards: Sections 14.1, 14.3, 14.7.
 - **Optical depth.** τ is taken from Planck low-ℓ polarisation in essentially
   every analysis. `tau ~ 0.09` reduces the `w0wa` preference from ≃3σ to ≃1.5σ
-  (Sailer et al. 2025, arXiv:2504.16932) [src]; dropping the lensing and low-ℓ
+  (Sailer et al. 2025, arXiv:2504.16932) [src]; in the body, a `tau = 0.09 ±
+  0.006` prior gives `Delta chi2_MAP = −3.82`, 1.4σ [src: Sect. III.2]; dropping the lensing and low-ℓ
   polarisation constraints brings the preference below 95% CL (Jhaveri, Karwal
   and Hu 2025, arXiv:2504.21813) [src].
 - **Compression accuracy.** Compressed likelihoods are validated per model
@@ -339,3 +345,121 @@ candidates of that size are documented below.
     the posterior is prior-bounded.
 13. No claim that an alternative model "explains DESI" without a
     perturbation-level prediction that distinguishes it from CPL.
+
+## 14. How the evidence was computed, analysis by analysis
+<!-- key: how-the-evidence-was-computed-analysis-by -->
+
+One card per analysis, read in the paper body. "Place" is where it was read.
+
+### 14.1 DESI DR2 BAO (DESI Collaboration 2025, arXiv:2503.14738)
+<!-- key: desi-dr2-bao-desi-collaboration-2025-arxiv-2503 -->
+
+| Aspect | What the paper does | Place |
+|---|---|---|
+| Statistic | `Delta chi2_MAP` = twice the difference of the negative log posterior at the two MAP points (iminuit started from the chain MAP), so non-uniform priors count; converted to a "(frequentist) significance" for 2 extra parameters; `Delta DIC` alongside, `< −5` "strong", `< −10` "decisive" | [src: Sect. V; Table 6] |
+| Priors | flat `w0` in [−3, 1], `wa` in [−3, 2], plus `w0 + wa < 0` to keep high-redshift matter domination; DR2 reuses the DR1 ranges | [src: Sect. V]; arXiv:2404.03002 [src: Table 2; Sect. on `w0waCDM`] |
+| Posterior summaries | mean ± s.d., or 68% minimal credible interval; BAO alone and BAO + CMB priors are cut by `wa > −3` | [src: Sect. V; Sect. VII.1] |
+| Dark-energy perturbations | parametrised post-Friedmann treatment for `w` crossing −1 (stated in DR1) | arXiv:2404.03002 [src: Sect. on `w0waCDM`] |
+| CMB | baseline: Planck simall + Commander (`l < 30`) + CamSpec PR4 (`l ≥ 30`) + Planck and ACT DR6 lensing (likelihood v1.2); τ is a sampled parameter | [src: Sect. IV.2; Sect. V] |
+| CMB information content | compressed (θ*, ω_b, ω_bc) prior 2.4σ, + primary CMB 2.7σ, + lensing 3.1σ; the posteriors barely move, the `Delta chi2` does, "driven primarily by the inclusion of CMB lensing" | [src: Table 6; Sect. VII.1; App. A] |
+| CMB likelihood | CamSpec and Plik "remarkably consistent"; LoLLiPoP + HiLLiPoP shifts the `w0`–`wa` posterior at the 0.1σ level, less once supernovae are added | [src: App. A, Fig. 18] |
+| Supernova sample | `Delta chi2` −10.7 / −17.4 / −21.0 with Pantheon+ / Union3 / DESY5; DESY5 at `z < 0.1` sits 0.03 mag above Planck ΛCDM and 0.04 mag above the DESI ΛCDM fits; Pantheon+ only 0.01 mag, so it "does not strengthen the preference" beyond DESI + CMB | [src: Table 6; Sect. VII.2] |
+| Low-redshift cut | DESY5 without `z < 0.1`: much larger errors, small shift of the best fit | [src: Fig. 14 caption] |
+| Redshift bins | DR1–DR2 largest differences 1.56σ in `alpha_iso` (LRG3 + ELG1) and 1.93σ in `alpha_AP` (LRG2), KS p = 0.40; per-bin ΛCDM fits differ by at most 1.8σ (LRG1 vs LRG3 + ELG1); joint `chi2/dof = 10.2/11`. No leave-one-bin-out `w0wa` fit was found in the paper | [src: Sect. III.3.1] |
+| SDSS comparison at `z ≈ 0.7` | LRG2 vs eBOSS: 3σ in DR1, ~2.6σ in DR2 with correlation 0.57, 1.9σ assuming none; 2.3σ / 1.5σ against the DESI reanalysis of SDSS | [src: Sect. III.3.2] |
+| BAO systematic correlations | theory systematics of 0.1% (`alpha_iso`) and 0.2% (`alpha_AP`) correlated at 0.5 across bins: "no detectable effect" | [src: App. B] |
+| Constant `w` | best `wCDM` for DESI + CMB + DESY5 (`w = −0.971`) does only slightly better than Planck ΛCDM; `w0wa` wins mainly in `alpha_parallel` | [src: Sect. VII.2] |
+
+### 14.2 Profile likelihood: Herold and Karwal 2025 (arXiv:2506.12004)
+<!-- key: profile-likelihood-herold-and-karwal-2025-arxiv -->
+
+| Aspect | What the paper does | Place |
+|---|---|---|
+| Data | DESI DR2 BAO; Planck PR3 TT, TE, EE + ACT DR6 + Planck PR4 lensing; Pantheon+ or DES Y5 (pre-Dovekie); no Union3 | [src: Sect. II] |
+| Codes | CLASS + HMCode; MontePython; profiles with `pinc` (simulated annealing), cross-checked with Procoli; `Sum m_nu = 0.06 eV` as three degenerate masses (DESI: one massive) | [src: Sect. II] |
+| Priors (Bayesian side) | flat `w0` in [−3, 1], `w0 + wa` in [−5, 0]; `R − 1 < 0.05` | [src: Sect. II] |
+| Statistic | `Delta chi2(theta) = −2 ln[L(theta, conditional MLE)/L(global MLE)]`; 68% and 95% intervals from `Delta chi2 = 1, 4` (graphical method), coverage asymptotic only | [src: Sect. II, Eq. 2] |
+| Result | posterior means within 0.2σ of the MLE for `w0`, `wa` in every combination; 1σ errors agree within 8%, 2σ within 10%; profiles parabolic within 1σ, not beyond, so 95% coverage "may be uncertain" | [src: Sect. III] |
+| Without CMB | DESI alone and DESI + SN profiles parabolic within 1σ, "significantly" non-parabolic at 2σ; DESI-alone Bayesian `w0` 0.6σ higher and intervals 40% wider than DESI's, attributed to the prior | [src: Sect. III; App. B] |
+| `H0` | CMB + DESI: 68.5 ± 0.3 (ΛCDM) vs 64.1 ± 2.0 (CPL); + Pantheon+: 68.3 ± 0.3 vs 67.6 ± 0.6 km/s/Mpc | [src: Sect. III] |
+
+### 14.3 Optical depth: Sailer et al. 2025 (arXiv:2504.16932)
+<!-- key: optical-depth-sailer-et-al-2025-arxiv-2504-16932 -->
+
+| Aspect | What the paper does | Place |
+|---|---|---|
+| Data | DESI DR2 BAO; Planck PR4 CamSpec high-ℓ TT, TE, EE; PR4 + ACT DR6 lensing; Planck low-ℓ replaced by a Gaussian τ prior, 0.06 or 0.09, `sigma = 0.006`; no ACT primary spectra | [src: Sect. II] |
+| `w0wa` with `tau = 0.06` | `Delta chi2_MAP = −10.75`, 2.8σ (DESI with Planck low-ℓ: 3.1σ) | [src: Sect. III.2] |
+| `w0wa` with `tau = 0.09` | `Delta chi2_MAP = −3.82`, 1.4σ (the abstract rounds to ≃1.5σ); best fit (`w0`, `wa`) moves from (−0.5, −1.5) to (−0.8, −0.6) | [src: Sect. III.2] |
+| τ preferred without low-ℓ polarisation | uniform τ in [0.02, 0.20]: `0.090 ± 0.012` (ΛCDM), `0.095 ± 0.014` (ΛCDM + `Sum m_nu ≥ 0.06 eV`), ~3σ from the value with large-scale polarisation | [src: Sect. IV, Eq. 2] |
+| Statistic | `Delta chi2_MAP` converted for 2 parameters, as DESI | [src: Sect. III.2] |
+
+### 14.4 Low-redshift supernova offset: Efstathiou 2024 (arXiv:2408.07175)
+<!-- key: low-redshift-supernova-offset-efstathiou-2024 -->
+
+| Aspect | What the paper does | Place |
+|---|---|---|
+| Common DES SNe | 145 of the 203 DES Y3 SNe of Pantheon+ are in DES5Y; mean `m_Pan − m_DES = −0.012` mag, dispersion 0.067 mag | [src: Sect. 3] |
+| Common low-redshift SNe | 118 Foundation SNe in both: offset `−0.051 ± 0.007` mag; CfA and CSP subsamples offset by ~0.04–0.05 mag relative to the distant DES SNe | [src: Sect. 3, Table 1] |
+| Test | subtract 0.04 mag from the DES5Y low-redshift subsamples: ΛCDM `Omega_m` "in near perfect agreement" with Planck; freeing `w0`, `wa` gains only `Delta chi2 = 2.5` | [src: Sect. 3] |
+| Requirement stated | low- and high-redshift photometry consistent "substantially better than 0.04 magnitudes" | [src: Sect. 3] |
+
+### 14.5 Which bin: Kim, Mota and Tamosiunas 2026 (arXiv:2607.28918)
+<!-- key: which-bin-kim-mota-and-tamosiunas-2026-arxiv -->
+
+| Aspect | What the paper does | Place |
+|---|---|---|
+| Data and model | DESI DR1 (12 points) then DR2 (13 points, 7 bins) BAO only; background fixed to Planck 2018 (`h = 0.6766`, `Omega_m = 0.3111`, `r_d = 147.05` Mpc), only `w0`, `wa` free; BAO-only MLE (−0.856, −0.430). The e-values depend strongly on which Planck column is fixed | [src: Sect. 3] |
+| Statistic | anytime-valid e-process (mixture over a pre-specified prior); no σ conversion | [src: Sect. 2; App. B.1] |
+| Leave-one-bin-out | LRG2 (`z_eff = 0.706`) carries 78.6% of the summed leave-one-out evidence (91% with LRG3 + ELG1); without LRG2 the LOO average falls from 10.17 to 2.54 and the running mixture from 33.97 to 0.49; per-bin best fits stay in `w0` [−0.88, −0.82], `wa` [−0.60, −0.33] | [src: Sect. 4.2, Table 2] |
+| Look-elsewhere | per-bin product 4.46 and mean 1.52, both below the threshold of 20 | [src: Sect. 4.2, Table 2] |
+| Smooth or local? | a smooth `w0wa` truth puts the observed share in LRG2 in 3.2% of bootstrap realisations, ΛCDM never concentrates 75% in one bin | [src: Sect. 4.2] |
+| Prior dependence | MLE 4.06 Fisher-σ from ΛCDM; rejection survives tight specifications, fails for wide boxes (Occam dilution); thawing band `wa` in [−3(1 + w0), −(1 + w0)] gives ≈ 1.1 × 10^3, freezing region 14.8 | [src: Sect. 4.3] |
+
+### 14.6 Bayesian reanalysis: Ong et al. 2025 (arXiv:2511.10631)
+<!-- key: bayesian-reanalysis-ong-et-al-2025-arxiv-2511 -->
+
+| Aspect | What the paper does | Place |
+|---|---|---|
+| Method | PolyChord in Cobaya with CAMB; DESI priors `w0` in [−3, 1], `wa` in [−3, 2]; CMB = Planck with CamSpec; `ln B` converted to an upper bound on σ through the Bayes-factor bound on the p-value, only when `ln B > 0` | [src: Sect. II] |
+| `ln B` (positive favours `w0wa`) | DESI DR2 −1.47 ± 0.11; + CMB without lensing −0.38 ± 0.25; + CMB −0.57 ± 0.26; + Pantheon+ −2.77; + Union3 +0.25 (≤ 1.39σ); + DES-SN5YR +1.56 (≤ 2.33σ); + DES-Dovekie −1.63; + CMB + Pantheon+ −1.70 ± 0.26; + CMB + DES-SN5YR +3.32 ± 0.27 (≤ 3.07σ); + CMB + DES-Dovekie −0.30 ± 0.19 | [src: Table 1; Sect. III] |
+| Consistency under ΛCDM | DESI DR2 vs DES-SN5YR: 2.95σ, suspiciousness `log S = −3.83`, low-dimensional conflict; 1.56σ in `w0wa`; with DES-Dovekie 1.96σ | [src: Sect. III] |
+
+### 14.7 CMB experiment: ACT DR6 (Calabrese et al. 2025, arXiv:2503.14454)
+<!-- key: cmb-experiment-act-dr6-calabrese-et-al-2025 -->
+
+| Aspect | What the paper does | Place |
+|---|---|---|
+| Data | P-ACT (ACT DR6 + Planck legacy spectra) + Planck and ACT lensing + DESI BAO ("LB"), + Pantheon+ ("S") for late-time models | [src: Fig. 1 caption] |
+| `w0wa`, DESI DR1 | P-ACT-LBS: `Delta chi2 = −7.0` (2.2σ) at the MAP, against −8.7 (2.5σ) with Planck in DESI DR1; with BOSS BAO instead of DESI, consistent with Λ | [src: Sect. VII.2, footnote 37] |
+| `w0wa`, DESI DR2 | 2.4σ with or without Pantheon+; lower than with Planck NPIPE because P-ACT measures a slightly lower matter fraction | [src: App. G.1] |
+| τ | doubling the SRoll2 error (`tau = 0.057 ± 0.012`) has no impact; the prior centre must move to `tau ≈ 0.07` to reduce the evidence | [src: App. G.2] |
+
+### 14.8 Which bin, DR1: Chudaykin and Kunz 2024 (arXiv:2407.02558)
+<!-- key: which-bin-dr1-chudaykin-and-kunz-2024-arxiv -->
+
+| Aspect | What the paper does | Place |
+|---|---|---|
+| Data | Planck PR3 Plik + Commander + SimAll, PR4 + ACT DR6 lensing; DESI DR1 BAO; Pantheon+; MontePython | [src: Sect. II.3] |
+| Baseline | CMB + DESI + SN: `w0 = −0.821 ± 0.065`, `wa = −0.76 (+0.31/−0.26)`, `Delta chi2 = −8.8`, 2.4σ (likelihood-ratio test, 2 d.o.f.) | [src: Sect. III.1, Eq. 1] |
+| SDSS at `z < 0.8` | `w0 = −0.891 ± 0.062`, `wa = −0.39 (+0.27/−0.23)`, `Delta chi2 = −3.0`: "no significant evidence" | [src: Sect. III.1, Eq. 2] |
+| Per-bin `Delta chi2` (`w0wa` − ΛCDM) | all DESI −3.8, of which LRG2 −3.3, LRG1 −1.8; LRG3 + ELG1, ELG2 and Lyα favour ΛCDM by +1.4 together; LRG1 (`chi2 = 5.6`) is fitted badly by either model | [src: Sect. III.1] |
+
+### 14.9 Split supernova likelihood: Notari, Redi and Tesi 2024 (arXiv:2411.11685)
+<!-- key: split-supernova-likelihood-notari-redi-and-tesi -->
+
+| Aspect | What the paper does | Place |
+|---|---|---|
+| DES5Y composition | `z < 0.1`: 197 SNe, all but 3 from historical samples (118 Foundation); `z > 0.1`: 1632, all DES | [src: Sect. 4.2, table] |
+| Offset | common DES5Y–Pantheon+ SNe: `<Delta mu>(z < 0.1) − <Delta mu>(z > 0.1) = 0.045` in DES5Y | [src: Sect. 4.2] |
+| Test | free magnitude offset `delta M` for `z < 0.1` (Eq. 8); with Planck 2018 + DESI DR1 in `w0wa`: `delta M = 0.037 ± 0.017` and ΛCDM disfavoured at 1.7σ only | [src: Sect. 4.2, Eqs. 8–9] |
+
+### 14.10 Full-shape profile likelihood: Morawetz et al. 2025 (arXiv:2508.11811)
+<!-- key: full-shape-profile-likelihood-morawetz-et-al -->
+
+| Aspect | What the paper does | Place |
+|---|---|---|
+| Statistic | 1D and 2D profile likelihoods; intervals from `Delta chi2 < 1 (4)` in 1D, `< 2.30 (6.17)` in 2D; compared with posterior means and MAP | [src: Sect. 3.3, Eqs. 2–3] |
+| `w0wa`, DESI FS + BAO + BBN + `n_s10` | profile: `w0 = −0.16 (+0.10/−0.50)`, `wa = −3.0 (+1.7)`, `Omega_m = 0.378`, `H0 = 63.7`; MLE–posterior-mean shifts 2.1σ to 6.6σ | [src: Sect. 4.2, Eq. 7] |
+| `w0wa`, + CMB + Union3 | profile `w0 = −0.634 ± 0.100`, `wa = −1.39 (+0.38/−0.41)`; shifts 0.2–1.0σ | [src: Sect. 4.2, Eq. 8] |
+| FS versus BAO | frequentist constraints agree between FS-only and FS + BAO fits, whereas Bayesian ones differ significantly; the paper reads the Bayesian `w0wa` constraints as prior-sensitive | [src: Sect. 4.2] |

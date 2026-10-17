@@ -1,7 +1,7 @@
 # Surveys and data — gravitational-wave detectors and catalogues, galaxy catalogues, FRB facilities, lensed-transient samples
 
 Scope: every detector run, catalogue and sample that enters multi-messenger cosmology, past to planned, with status at the snapshot date.
-Snapshot: 2026-10-07 (suite date; literature searches run 2026-10-10)
+Snapshot: 2026-10-13 (deepening pass, 12–13 October; first build 2026-10-07, searches 2026-10-10)
 
 Provenance flags as in the other files. Instrument descriptions of LIGO–Virgo–KAGRA,
 CHIME, MeerKAT and SKA are in `cosmo-surveys-facilities`; this file holds what a
@@ -169,7 +169,7 @@ population model is part of the cosmological likelihood through `DM_host`.
 
 | Object | Type, source redshift | Lens | Delay data | H0 paper |
 |---|---|---|---|---|
-| SN Refsdal | multiply imaged supernova; reappearance observed in 2015 as predicted [src] | massive galaxy cluster | reappearance delay | arXiv:2305.06367, arXiv:2509.09979 |
+| SN Refsdal | multiply imaged supernova; reappearance observed in 2015 as predicted [src] | massive galaxy cluster, MACS J1149 [src: arXiv:2305.06367, Supplementary] | reappearance delay | arXiv:2305.06367, arXiv:2509.09979 |
 | SN H0pe | Type Ia, `z = 1.78`, three images [src] | cluster PLCK G165.7+67.0, `z = 0.35` [src] | JWST photometry and spectroscopy, two relative delays [src] | arXiv:2403.18902 |
 | SN Encore | Type Ia, `z = 1.95` [src] | cluster MACS J0138.0−2155 [src] | `Δt = −39.8 (+3.9/−3.3)` days [src] | arXiv:2509.12301 |
 | SN Requiem | sibling of Encore in the same host; a fourth image is expected within a few years [src] | same cluster | pending | arXiv:2509.12301 |
@@ -212,5 +212,5 @@ decision, adoption, launch) were not read on official pages this session.
   not researched. CHORD's schedule is in `cosmo-surveys-facilities`.
 - SN Zwicky and iPTF16geu (galaxy-scale lensed Type Ia supernovae with short delays)
   were not fetched.
-- The name of the cluster lensing SN Refsdal is not in the abstracts read.
+- Closed on 2026-10-13: the cluster lensing SN Refsdal is MACS J1149 (§4).
 - Einstein Telescope, Cosmic Explorer and LISA project milestones.

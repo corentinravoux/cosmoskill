@@ -5,7 +5,7 @@ description: Use when choosing, citing, comparing or debugging a cosmology code,
 
 # Cosmology software ecosystem — expert reference
 
-Snapshot 2026-10-14. Numbers carry provenance flags ([src] / [sec] / [der]);
+Snapshot 2026-10-14. Numbers carry provenance flags ([src], [sec], [der]);
 re-verify against the cited paper before a number enters a manuscript.
 Defaults were read in named versions (camb 2.0.4, pyccl 3.3.6, cosmoprimo 1.0.0,
 CLASS 3.2.3, healpy 1.19.0); re-read them for the version in use.
@@ -15,11 +15,14 @@ CLASS 3.2.3, healpy 1.19.0); re-read them for the version in use.
 
 | Question | Load |
 |---|---|
-| What a code computes, its paper, repository, licence, release, users | `references/surveys-and-data.md` |
-| How the members of a code family differ in method | `references/physics-and-methods.md` |
-| Agreement between codes, stated accuracies, timings | `references/results.md` |
-| Units, conventions and defaults that trap users; code comparisons read in paper bodies; referee checklist | `references/systematics.md` |
-| Maintenance status, superseded codes, debates, misconceptions | `references/open-questions.md` |
+| What a code computes; paper, repository, licence | `references/surveys-and-data.md` |
+| How members of a code family differ | `references/physics-and-methods.md` |
+| Code agreement, accuracies, timings | `references/results.md` |
+| Units and defaults that trap users; code comparisons; referee checklist | `references/systematics.md` |
+| Maintenance, superseded codes, debates, misconceptions | `references/open-questions.md` |
+| Modified-gravity solver set-up | `deep/modified-gravity-solvers.md` |
+| Sampler settings and validation | `deep/samplers-frameworks.md` |
+| Estimator numerics (FFT, pairs, pseudo-C_ℓ) | `deep/estimator-codes.md` |
 
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
@@ -85,10 +88,10 @@ Answer at the lowest level that answers the question, then stop.
 |---|---|---|
 | L1 | this file only | the headline values, the state of the domain, the list a referee checks, the errors that recur |
 | L2 | one file of `references/` | what this file does not hold: other values, their history, the size of each systematic, methods, releases |
-| L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
+| L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; open 5k; methods 14k; results 7k; surveys 11k; systematics 12k.
+Sizes, in thousands of tokens: L1 2k; open 5k; methods 14k; results 7k; surveys 11k; systematics 12k; deep/estimator-codes 6k; deep/modified-gravity-solvers 8k; deep/samplers-frameworks 6k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

@@ -28,6 +28,7 @@ All values are 68% intervals in flat ΛCDM with a power-law spectrum, pivot k_* 
 
 Reading the table.
 
+- ACT DR6 on its own (without Planck, lensing or BAO), and its rerun by SPT, are not in this table: their n_s values are in `cosmo-cmb`, `results.md` (sections on base ΛCDM from the CMB alone), which owns the per-experiment CMB parameters.
 - The "ACT n_s shift" is two steps. Adding ACT DR6 to a truncated Planck moves n_s from 0.9649 to 0.9709, that is by +0.0060 [der: difference of the two rows], because the small-scale data break the n_s–Ω_b h² degeneracy: the two parameters are positively correlated in Planck and anti-correlated in ACT (arXiv:2503.14452). Adding CMB lensing and DESI BAO moves it again to 0.974.
 - The CMB-only combination of all three experiments, CMB-SPA, gives 0.9679 ± 0.0033, which is 9.9σ from scale invariance (9.8σ in the conclusions of the same version) and lower than P-ACT-LB (arXiv:2506.20707). The high value 0.974 therefore belongs to CMB + DESI BAO in ΛCDM, not to the CMB alone.
 - Because CMB and DESI BAO disagree in ΛCDM (2.8σ for CMB-SPA against DESI DR2, arXiv:2506.20707), forcing them into one ΛCDM fit pulls Ω_m h² down and n_s up. Any extension that absorbs that disagreement (curvature, evolving dark energy) brings n_s back to 0.967–0.972 (arXiv:2607.28445). Ferreira et al. 2025, arXiv:2507.12459 made this point explicitly: see `open-questions.md`, section 1.

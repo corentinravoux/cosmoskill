@@ -134,7 +134,7 @@ Reading rule: each figure is a fit error against one simulation set. Outside the
 | Where it fails | ν ≳ r̄/max[σ_A, σ_B] needed; for separated kernels ν ≳ r̄(r_A − r_B)/(σ_A σ_B): narrow bins and bins with small overlap | arXiv:0809.5112, body |
 | Flat sky + Limber + Hankel together, cosmic shear | >1% power suppression at ℓ < 40; at least 11% of the systematic budget of a Euclid-like analysis | Kitching et al. 2017, arXiv:1611.04954 |
 | Spherical second-order Limber, cosmic shear | sub-per-cent for ℓ > 3; an order of magnitude below cosmic variance at all ℓ | Kilbinger et al. 2017, arXiv:1702.05301 |
-| Flat-sky Hankel transform to ξ± | below 2% against the spherical transform | arXiv:1702.05301 |
+| Flat-sky Hankel transform to ξ± | below 2% against the spherical transform (abstract); the body gives better than 5% for ξ+ and 0.2% for ξ− [src: Sect. 4.2] | arXiv:1702.05301 |
 | Effect on CFHTLenS-class parameters | negligible; does not explain the lensing–Planck difference | arXiv:1702.05301; Lemos, Challinor & Efstathiou 2017, arXiv:1704.01054 |
 | Limber for clustering, LSST Y1 or DES Y6 class | "may cause significant biases" | Fang et al. 2020, arXiv:1911.11947 |
 | First-order Limber, LSST Y10 3×2pt (**forecast**) | insufficient at ℓ = 200–1000; second-order suffices there with a non-Limber method below | Leonard et al. 2023, arXiv:2212.04291 |

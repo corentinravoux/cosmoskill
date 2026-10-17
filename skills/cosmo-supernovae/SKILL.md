@@ -18,6 +18,9 @@ re-verify against the cited paper before a number enters a manuscript.
 | Current `Omega_m`, `w`, `w0`–`w_a` per sample; history; mass-step history | `references/results.md` |
 | Size, mitigation and test of each systematic; referee checklist | `references/systematics.md` |
 | Controversies, method debates, forecasts, stale claims | `references/open-questions.md` |
+| How the dust/scatter model is fitted, simulated, propagated; which model | `deep/dust-intrinsic-scatter.md` |
+| How SALT is trained and fitted; training-calibration errors; SALT or BayeSN | `deep/light-curve-models.md` |
+| How bias-correction simulations and BBC are built and validated; alternatives | `deep/selection-bias-corrections.md` |
 | Bibliography | `references/sources.tsv` |
 
 ## What an expert holds in mind
@@ -108,10 +111,10 @@ Answer at the lowest level that answers the question, then stop.
 |---|---|---|
 | L1 | this file only | the headline values, the state of the domain, the list a referee checks, the errors that recur |
 | L2 | one file of `references/` | what this file does not hold: other values, their history, the size of each systematic, methods, releases |
-| L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
+| L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 5k; methods 12k; results 7k; surveys 6k; systematics 10k.
+Sizes, in thousands of tokens: L1 3k; open 5k; methods 12k; results 7k; surveys 6k; systematics 10k; deep/dust-intrinsic-scatter 8k; deep/light-curve-models 7k; deep/selection-bias-corrections 7k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

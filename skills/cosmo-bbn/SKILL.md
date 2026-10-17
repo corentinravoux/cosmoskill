@@ -18,13 +18,16 @@ re-verify against the cited paper before a number enters a manuscript.
 | Abundance values, predictions, Ω_b h² from BBN, N_ν and new-physics limits, code comparison, what superseded what | `references/results.md` |
 | Size of each abundance, rate, τ_n and code systematic; referee checklist | `references/systematics.md` |
 | Deuterium tension, d(p,γ) dispute, τ_n anomaly, lithium, helium spread, Hubble tension, forecasts, stale claims | `references/open-questions.md` |
+| How a D/H value is fitted and combined: selection, continuum, blinding, error, sample mean | `deep/deuterium.md` |
+| How Y_P is fitted per H II region and extrapolated; LBT vs EMPRESS vs Izotov methods | `deep/helium-4.md` |
+| How a d(p,γ) or d+d rate is built from S-factor data; GP, polynomial, ab-initio fits | `deep/nuclear-reaction-rates.md` |
 | Title, first author, year of a cited paper | `references/sources.tsv` |
 
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
 
 - (D/H)_P = (2.527 ± 0.030) × 10⁻⁵ from seven absorbers (arXiv:1710.11129);
-  (2.533 ± 0.024) × 10⁻⁵ with an eighth (arXiv:2401.12797).
+  (2.533 ± 0.024) × 10⁻⁵ from all 17 literature values (arXiv:2401.12797).
 - The BBN prediction error on D/H now exceeds the observational one; the
   deuterium-burning rates set it (arXiv:2011.13874, arXiv:2604.16600).
 - Light-element Ω_b h² depends on the rate philosophy: 0.02236 ± 0.00034
@@ -55,7 +58,7 @@ re-verify against the cited paper before a number enters a manuscript.
 ## Systematics a referee checks
 <!-- key: systematics-a-referee-checks -->
 
-1. D/H sample (7, 8 or 13 systems), continuum and interloper treatment.
+1. D/H sample (7, 9, 13 or 17 systems), continuum and interloper treatment.
 2. Y_P sample, weighted average or regression, emissivities, He I 10830.
 3. Spite-plateau T_eff scale and depletion assumptions.
 4. d(p,γ)³He, d(d,n)³He, d(d,p)t evaluation; rates marginalised or not.
@@ -99,10 +102,10 @@ Answer at the lowest level that answers the question, then stop.
 |---|---|---|
 | L1 | this file only | the headline values, the state of the domain, the list a referee checks, the errors that recur |
 | L2 | one file of `references/` | what this file does not hold: other values, their history, the size of each systematic, methods, releases |
-| L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
+| L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; open 3k; methods 5k; results 6k; surveys 4k; systematics 4k.
+Sizes, in thousands of tokens: L1 2k; open 3k; methods 5k; results 6k; surveys 4k; systematics 4k; deep/deuterium 7k; deep/helium-4 6k; deep/nuclear-reaction-rates 6k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

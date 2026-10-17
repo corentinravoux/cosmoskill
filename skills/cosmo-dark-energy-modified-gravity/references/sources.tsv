@@ -125,3 +125,21 @@ SotiriouFaraoni2010	0805.1726	Sotiriou	2008	f(R) Theories Of Gravity	review
 DeFeliceTsujikawa2010	1002.4928	De Felice	2010	f(R) theories	review
 Bose2020ReACT	2005.12184	Bose	2020	On the road to percent accuracy IV: ReACT -- computing the non-linear power spectrum beyond $Λ$CDM	code
 Cataneo2019	1812.05594	Cataneo	2018	On the road to percent accuracy: nonlinear reaction of the matter power spectrum to dark energy and modified gravity	method
+HutererStarkman2003	astro-ph/0207517	Huterer	2002	Parameterization of Dark-Energy Properties: a Principal-Component Approach	foundation
+Crittenden2012	1112.1693	Crittenden	2011	Fables of reconstruction: controlling bias in the dark energy equation of state	method
+Raveri2017	1703.05297	Raveri	2017	Priors on the effective Dark Energy equation of state in scalar-tensor theories	method
+Shafieloo2012	1202.4808	Shafieloo	2012	Crossing Statistic: Bayesian interpretation, model selection and resolving dark energy parametrization problem	method
+Bag2026	2605.27230	Bag	2026	$w_0$-probe: A new diagnostic of dark energy based on $Om$	method
+Amendola2000	astro-ph/9908023	Amendola	1999	Coupled Quintessence	foundation
+Kunz2007	astro-ph/0702615	Kunz	2007	The dark degeneracy: On the number and nature of dark components	foundation
+Valiviita2008	0804.0232	Valiviita	2008	Large-scale instability in interacting dark energy and dark matter fluids	method
+Gavela2009	0901.1611	Gavela	2009	Dark coupling	method
+LiZhang2014ePPF	1404.5220	Li	2014	Parametrized Post-Friedmann Framework for Interacting Dark Energy	method
+LiZhang2023IDECAMB	2306.01593	Li	2023	IDECAMB: an implementation of interacting dark energy cosmology in CAMB	code
+vonMarttens2019	1911.02618	von Marttens	2019	Dark degeneracy I: Dynamical or interacting dark energy?	method
+LiZhang2025	2506.18477	Li	2025	Cosmic sign-reversal: non-parametric reconstruction of interacting dark energy with DESI DR2	results
+Zhai2026	2606.11368	Zhai	2026	Non-linear Structure Formation in Planck+DESI Favoured Interacting Dark Energy Cosmologies	critique
+Winther2015	1506.06384	Winther	2015	Modified Gravity N-body Code Comparison Project	method
+EuclidBose2023	2311.13529	Euclid Collaboration	2023	Euclid preparation. Modelling spectroscopic clustering on mildly nonlinear scales in beyond-$Λ$CDM models	method
+EuclidAdamek2024	2409.03522	Euclid Collaboration	2024	Euclid preparation. Simulations and nonlinearities beyond $Λ$CDM. 1. Numerical methods and validation	method
+EuclidKoyama2024	2409.03524	Euclid Collaboration	2024	Euclid preparation LXXI. Simulations and nonlinearities beyond $\mathsfΛ$CDM. 3. Constraints on $f(R)$ models from the photometric primary probes	systematics

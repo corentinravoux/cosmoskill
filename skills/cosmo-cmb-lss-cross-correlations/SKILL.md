@@ -18,6 +18,9 @@ re-verify against the cited paper before a number enters a manuscript.
 | Size of a systematic; referee checklist | `references/systematics.md` |
 | Limber kernels, kSZ estimators, b_v, models, blinding, codes, conventions | `references/physics-and-methods.md` |
 | Lensing maps, tracers, sample sizes, shared data, status | `references/surveys-and-data.md` |
+| Running kSZ velocity reconstruction: filters, estimator, surrogates, fit | `deep/ksz-velocity-reconstruction.md` |
+| Turning galaxy × y or shear × y into ⟨bP_e⟩, gas model, S8 | `deep/tsz-cross-correlations.md` |
+| Building CIB × lensing for f_NL or delensing: maps, dust, model, priors | `deep/cib-cross-correlations.md` |
 | Bibliography | `references/sources.tsv` |
 
 ## What an expert holds in mind
@@ -85,10 +88,10 @@ Answer at the lowest level that answers the question, then stop.
 |---|---|---|
 | L1 | this file only | the headline values, the state of the domain, the list a referee checks, the errors that recur |
 | L2 | one file of `references/` | what this file does not hold: other values, their history, the size of each systematic, methods, releases |
-| L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
+| L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; open 6k; methods 12k; results 12k; surveys 5k; systematics 11k.
+Sizes, in thousands of tokens: L1 3k; open 6k; methods 12k; results 12k; surveys 5k; systematics 11k; deep/cib-cross-correlations 6k; deep/ksz-velocity-reconstruction 8k; deep/tsz-cross-correlations 7k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

@@ -166,3 +166,26 @@ FanReview2023	2212.06907	Fan	2023	Quasars and the Intergalactic Medium at Cosmic
 Ali2015	1502.06016	Ali	2015	PAPER-64 Constraints on Reionization: The 21cm Power Spectrum at z=8.4	results
 Mertens2020	2002.07196	Mertens	2020	Improved upper limits on the 21-cm signal power spectrum of neutral hydrogen at $\boldsymbol{z \approx 9.1}$ from LOFAR	results
 Trott2020	2002.02575	Trott	2020	Deep multi-redshift limits on Epoch of Reionisation 21cm Power Spectra from Four Seasons of Murchison Widefield Array Observations	results
+Acharya2026	2606.27858	Acharya	2026	Inferring Cosmology and Astrophysics from the High-redshift 21cm Signal with SKA-Low	review
+GnedinMadau2022	2208.02260	Gnedin	2022	Modeling Cosmic Reionization	review
+HERA2021theory	2108.07282	HERA Collaboration	2021	HERA Phase I Limits on the Cosmic 21-cm Signal: Constraints on Astrophysics and Cosmology During the Epoch of Reionization	method
+Breitman2024	2309.05697	Breitman	2024	21cmEMU: an emulator of 21cmFAST summary observables	code
+Prelogovic2023	2305.03074	Prelogović	2023	Exploring the likelihood of the 21-cm power spectrum with simulation-based inference	critique
+Lazare2023	2307.15577	Lazare	2023	HERA bound on x-ray luminosity when accounting for population III stars	critique
+GreigMesinger2015	1501.06576	Greig	2015	21CMMC: an MCMC analysis tool enabling astrophysical parameter studies of the cosmic 21 cm signal	foundation
+Park2019	1809.08995	Park	2019	Inferring the astrophysics of reionization and cosmic dawn from galaxy luminosity functions and the 21-cm signal	foundation
+Chakraborty2026	2606.30947	Chakraborty	2026	Square Kilometer Array Synergies for the Epoch of Reionization and Cosmic Dawn	review
+TangM2024	2408.01507	Tang	2024	JWST/NIRSpec Observations of Ly$\alpha$ Emission in Star Forming Galaxies at $6.5\lesssim z\lesssim13$	results
+ChenZ2025	2505.24080	Chen	2025	The Impact of Galaxy Overdensities and Ionized Bubbles on Ly$\alpha$ Emission at $z\sim7.0-8.5$	results
+Li2016	1503.08833	Li	2016	Connecting CO Intensity Mapping to Molecular Gas and Star Formation in the Epoch of Galaxy Assembly	foundation
+Breysse2017	1609.01728	Breysse	2017	Insights from probability distribution functions of intensity maps	method
+LidzTaylor2016	1604.05737	Lidz	2016	On Removing Interloper Contamination from Intensity Mapping Power Spectrum Measurements	method
+Chung2024	2406.07512	Chung	2024	COMAP Pathfinder -- Season 2 results III. Implications for cosmic molecular gas content at "Cosmic Half-past Eleven"	results
+Breysse2022	2209.01223	Breysse	2022	Breaking the intensity-bias degeneracy in line intensity mapping	method
+SatoPolito2022	2202.02330	Sato-Polito	2022	Analytical covariance between voxel intensity distributions and line-intensity mapping power spectra	method
+Ambrose2026	2606.10005	Ambrose	2026	On Cross-Correlating Line Intensity Maps from SPHEREx during Reionization	forecast
+Clarke2026	2606.17210	Clarke	2026	Testing masking effectiveness using multi-line image cubes based on COSMOS2020 for [CII] line intensity mapping at $z_{[CII]} > 3.5$	critique
+Pamuk2026	2609.04488	Pamuk	2026	The Super-Sample Covariance of Line-Intensity Mapping Power Spectrum	systematics
+Bag2026SKA	2606.24724	Bag	2026	Imaging the 21-cm Signal from the Cosmic Dawn & Epoch of Reionization and the Connection with the Global Signal	review
+SKAEoR2026	2606.26435	EoR/CD Science Working Group	2026	Overview of 21cm Experiments at high redshift with SKAO	review
+Bull2026SKA	2607.01048	Bull	2026	Foreground Characterization and Mitigation in the Observations of the CD/EoR with the SKA	review

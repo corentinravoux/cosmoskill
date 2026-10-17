@@ -131,3 +131,20 @@ Mukhanov1992	doi:10.1016/0370-1573%2892%2990044-Z	Mukhanov	1992	Theory of cosmol
 Rubakov1982	doi:10.1016/0370-2693%2882%2990641-4	Rubakov	1982	Graviton creation in the inflationary universe and the grand unification scale	foundation
 Abbott1984	doi:10.1016/0550-3213%2884%2990329-8	Abbott	1984	Constraints on generalized inflationary cosmologies	foundation
 Carroll1990	doi:10.1103/PhysRevD.41.1231	Carroll	1990	Limits on a Lorentz- and parity-violating modification of electrodynamics	foundation
+Wolz2023	2302.04276	Wolz	2023	The Simons Observatory: pipeline comparison and validation for large-scale B-modes	method
+Azzoni2020	2011.11575	Azzoni	2020	A minimal power-spectrum-based moment expansion for CMB B-mode searches	method
+Mustafa2026	2603.11026	Mustafa	2026	Blind mitigation of foreground-induced biases on primordial $B$ modes for ground-based CMB experiments	method
+Vacher2024	2411.11649	Vacher	2024	How bad could it be? Modelling the 3D complexity of the polarised dust signal using moment expansion	critique
+Galloni2026	2610.18036	Galloni	2026	Validation of harmonic-space likelihood methods for LiteBIRD B-mode polarisation analysis	method
+Namikawa2021	2110.09730	Namikawa	2021	The Simons Observatory: Constraining inflationary gravitational waves with multi-tracer B-mode delensing	method
+Hertig2024	2405.01621	Hertig	2024	The Simons Observatory: Combining cross-spectral foreground cleaning with multitracer $B$-mode delensing for improved constraints on inflation	method
+BaleatoLizancos2020bias	2007.01622	Baleato Lizancos	2020	Impact of internal-delensing biases on searches for primordial B-modes of CMB polarisation	method
+BaleatoLizancos2020template	2010.14286	Baleato Lizancos	2020	Limitations of CMB B-mode template delensing	method
+Hertig2025	2511.21949	Hertig	2025	The Atacama Cosmology Telescope: $B$-mode delensing with DR6 data and external tracers of large-scale structure	results
+Belkner2023	2310.06729	Belkner	2023	CMB-S4: Iterative Internal Delensing and $r$ Constraints	forecast
+BaleatoLizancos2021	2102.01045	Baleato Lizancos	2021	Delensing the CMB with the cosmic infrared background: the impact of foregrounds	critique
+Wang2025delens	2507.04666	Wang	2025	Delensing CMB B-modes using galaxy surveys: the effect of galaxy bias and matter clustering non-linearities	critique
+Cabass2022multi	2204.01781	Cabass	2022	Constraints on Multi-Field Inflation from the BOSS Galaxy Survey	results
+Philcox2021	2107.06287	Philcox	2021	Cosmology Without Window Functions: Cubic Estimators for the Galaxy Bispectrum	method
+Ivanov2024	2402.13310	Ivanov	2024	Full-shape analysis with simulation-based priors: constraints on single field inflation from BOSS	method
+Bakx2025	2507.22110	Bakx	2025	One-Loop Galaxy Bispectrum: Consistent Theory, Efficient Analysis with COBRA, and Implications for Cosmological Parameters	critique

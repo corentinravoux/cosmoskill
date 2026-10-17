@@ -401,8 +401,10 @@ physical space, so the correlation is maximal on the true `d_L(z)` relation.
   galaxy redshifts and siren luminosity distances; H0 follows from the position of the
   peak, and the same measurement bounds the gravitational-wave bias [src]. First
   detection on data: de Matos et al. 2025 (arXiv:2512.15380).
-- Joint analysis with a 3×2pt data vector: Andrade-Oliveira et al. 2026
-  (arXiv:2601.04774).
+- Not a cross-correlation, though sometimes listed with them: Andrade-Oliveira et al. 2026
+  (arXiv:2601.04774) multiply the DES Y3 3×2pt posterior by the LVK spectral-siren posterior,
+  assuming independence, and chose spectral rather than catalogue sirens to avoid a covariance
+  through shared galaxy catalogues [src: Sect. 3.4].
 - Requirements for a percent-level H0 (forecast): `σ_dL = 0.1 d_L`, at least 5000 dark
   sirens and good localisation (arXiv:2510.19931) [src].
 

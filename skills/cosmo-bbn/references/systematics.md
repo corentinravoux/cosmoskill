@@ -191,7 +191,7 @@ body read; `[sec]` named secondary source; `[der]` derived here.
 ## 8. Referee checklist
 <!-- key: referee-checklist -->
 
-1. D/H: which systems, which compilation (7, 8 or 13 systems), and the
+1. D/H: which systems, which compilation (7, 9, 13 or 17 systems), and the
    continuum, interloper and component-structure treatment.
 2. Y_P: which group and sample; weighted average or regression; intrinsic
    scatter; emissivities; He I 10830 used.

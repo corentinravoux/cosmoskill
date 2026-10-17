@@ -214,3 +214,20 @@ Li2012	1110.1379	Li	2011	ECOSMOG: An Efficient Code for Simulating Modified Grav
 Puchwein2013	1305.2418	Puchwein	2013	Modified Gravity-GADGET: A new code for cosmological hydrodynamical simulations of modified gravity models	code
 Llinares2014	1307.6748	Llinares	2013	ISIS: a new N-body cosmological code with scalar fields based on RAMSES. Code presentation and application to the shapes of clusters	code
 Genel2026	2606.10038	Genel	2026	Learning the Universe with the 2nd Generation of CAMELS: Varying 35 parameters of the IllustrisTNG model in (50Mpc/h)^3 boxes	data
+Variu2023	2307.14197	Variu	2023	DESI Mock Challenge: Constructing DESI galaxy catalogues based on FastPM simulations	method
+Hadzhiyska2026	2605.28817	Hadzhiyska	2026	Fewer simulations, sharper covariances: Reducing mock covariance noise with Zeldovich approximation control variates	method
+Sinigaglia2025	2509.15890	Sinigaglia	2025	Fast and accurate Gaia-unWISE quasar mock catalogs from LPT and Eulerian bias	data
+FernandezGarcia2025	2507.01593	Fernández-García	2025	DESI DR2 reference mocks: clustering results from Uchuu-BGS and LRG	data
+Vaisakh2026	2606.28559	Vaisakh	2026	DESI DR2 Reference Mocks: Clustering results from UCHUU ELGs and QSOs	data
+Hadzhiyska2021LC	2110.11413	Hadzhiyska	2021	The halo light cone catalogues of AbacusSummit	data
+Hadzhiyska2023LC	2305.11935	Hadzhiyska	2023	Synthetic light cone catalogues of modern redshift and weak lensing surveys with AbacusSummit	data
+Ferlito2024	2406.08540	Ferlito	2024	Ray-tracing vs. Born approximation in full-sky weak lensing simulations of the MillenniumTNG project	method
+Petri2017	1612.00852	Petri	2016	On the validity of the Born approximation for beyond-Gaussian weak lensing observables	critique
+Takahashi2017	1706.01472	Takahashi	2017	Full-sky Gravitational Lensing Simulation for Large-area Galaxy Surveys and Cosmic Microwave Background Experiments	data
+CarlsonWhite2010	1003.3178	Carlson	2010	Embedding realistic surveys in simulations through volume remapping	method
+Becker2013	1210.3069	Becker	2012	CALCLENS: Weak Lensing Simulations for Large-area Sky Surveys and Second-order Effects in Cosmic Shear Power Spectra	code
+Crain2015	1501.01311	Crain	2015	The EAGLE simulations of galaxy formation: calibration of subgrid physics and model variations	method
+Pillepich2018b	1707.03406	Pillepich	2017	First results from the IllustrisTNG simulations: the stellar mass content of groups and clusters of galaxies	results
+Jo2022	2211.16461	Jo	2022	Calibrating cosmological simulations with implicit likelihood inference using galaxy growth observables	method
+Braspenning2024	2409.07849	Braspenning	2024	Hydrostatic mass bias for galaxy groups and clusters in the FLAMINGO simulations	critique
+Khalil2026	2608.17735	Khalil	2026	eROSITA cosmology with galaxy groups: Hot gas budget out to the virial radius	critique

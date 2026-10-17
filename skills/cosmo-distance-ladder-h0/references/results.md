@@ -3,7 +3,7 @@
 Scope: headline values of the Hubble constant from the local distance ladder,
 from ladder-independent routes, and from the early-Universe / inverse-ladder
 side, plus derived tension significances.
-Snapshot: 2026-10-13
+Snapshot: 2026-10-17
 
 All H0 values are in km/s/Mpc. Flags: `[src]` read this session in the cited
 paper (abstract unless a section is named); `[sec]` taken from a secondary
@@ -78,7 +78,7 @@ it cannot yet arbitrate the tension.
 | 73.2 (+4.8/-4.7) | single lens SDSSJ1433+6007, resolved kinematics, lambda_int free (1.12 +0.05/-0.06) | flat LCDM, Omega_m prior from DESI DR2 | Sheu et al. 2026, arXiv:2604.14145 | [src] |
 | 73.5 (+2.7/-2.8) x lambda_int | three lenses with JWST imaging, lambda_int fixed to 1 (not a final H0) | flat LCDM | Williams et al. 2026, arXiv:2608.27566 | [src] |
 | 74.5 (+5.6/-6.1) | TDCOSMO 7 lenses, kinematics-only MST constraint | flat LCDM | Birrer et al. 2020, arXiv:2007.02941 | [src] |
-| 67.4 (+4.1/-3.2) | TDCOSMO + 33 SLACS lenses, same-population assumption | flat LCDM | arXiv:2007.02941 | [src] |
+| 67.4 (+4.1/-3.2) | TDCOSMO + 33 SLACS lenses, same-population assumption; withdrawn: TDCOSMO 2025 finds the SDSS-SLACS dispersions unsuited for cosmography and says this result "should not be considered as valid anymore" (arXiv:2506.03023, Sect. 10.1.2) | flat LCDM | arXiv:2007.02941 | [src] |
 | 73.3 (+1.7/-1.8) | H0LiCOW 6 lenses, power-law or composite profiles assumed | flat LCDM | Wong et al. 2020, arXiv:1907.04869 | [src] |
 | 64.8 (+4.4/-4.3); 66.6 (+4.1/-3.3) | SN Refsdal, 8 cluster models; 2 best models | flat LCDM | Kelly et al. 2023, arXiv:2305.06367 | [src] |
 | 75.7 (+8.1/-5.5) | SN H0pe (lensed SN Ia), models weighted by magnifications | flat LCDM | Pascale et al. 2025, arXiv:2403.18902 | [src] |

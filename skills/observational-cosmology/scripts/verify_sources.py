@@ -97,10 +97,11 @@ def read_sources(path: Path) -> tuple[list[dict], list[str]]:
 
 
 def cited_ids(skill: Path) -> tuple[dict[str, set[str]], dict[str, set[str]]]:
-    """Return ({arxiv_id: files}, {doi: files}) cited in the skill's Markdown."""
+    """Return ({arxiv_id: files}, {doi: files}) cited in the skill's Markdown
+    files and in its subtopic list, whose `from` column names reviews."""
     arxiv: dict[str, set[str]] = {}
     doi: dict[str, set[str]] = {}
-    for md in sorted(skill.rglob("*.md")):
+    for md in sorted(skill.rglob("*.md")) + sorted(skill.glob("references/subtopics.tsv")):
         text = md.read_text(encoding="utf-8")
         name = str(md.relative_to(skill))
         for match in ARXIV_CITE.finditer(text):

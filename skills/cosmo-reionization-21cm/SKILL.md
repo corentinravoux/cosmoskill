@@ -18,6 +18,9 @@ re-verify against the cited paper before a number enters a manuscript.
 | Experiments, data sets, status, what comes next | `references/surveys-and-data.md` |
 | Signal loss, calibration, continuum, local absorbers; referee checklist | `references/systematics.md` |
 | τ = 0.06 or 0.09, late reionisation, EDGES, forecasts, stale claims | `references/open-questions.md` |
+| How a 21 cm limit becomes an astrophysical constraint: likelihood, models, priors, emulators, samplers | `deep/eor-inference-modelling.md` |
+| How x_HI is inferred from Lyα equivalent widths: measurement, baseline, transmission model, likelihood | `deep/lya-emitters.md` |
+| How a CO, [CII] or Hα map becomes a limit on L(M_h) or ρ_H2: estimators, stacking, VID, interlopers, nulls | `deep/line-intensity-mapping.md` |
 | Bibliography with roles | `references/sources.tsv` |
 
 ## What an expert holds in mind
@@ -77,10 +80,10 @@ Answer at the lowest level that answers the question, then stop.
 |---|---|---|
 | L1 | this file only | the headline values, the state of the domain, the list a referee checks, the errors that recur |
 | L2 | one file of `references/` | what this file does not hold: other values, their history, the size of each systematic, methods, releases |
-| L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
+| L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; open 5k; methods 13k; results 13k; surveys 5k; systematics 11k.
+Sizes, in thousands of tokens: L1 3k; open 5k; methods 13k; results 13k; surveys 5k; systematics 11k; deep/eor-inference-modelling 8k; deep/line-intensity-mapping 8k; deep/lya-emitters 6k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

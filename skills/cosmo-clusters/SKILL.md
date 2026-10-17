@@ -19,6 +19,9 @@ re-verify against the cited paper before a number enters a manuscript.
 | Mass function, mass definitions, likelihoods, lensing calibration, splashback, codes | `references/physics-and-methods.md` |
 | Catalogue sizes, areas, lensing data, simulations, status | `references/surveys-and-data.md` |
 | Title, first author, year of a cited paper | `references/sources.tsv` |
+| SZ detection, ξ–ζ and optimisation bias, completeness, purity | `deep/sz-selection-function.md` |
+| Building and validating an X-ray selection function | `deep/x-ray-selection-function.md` |
+| Measuring and modelling cluster clustering | `deep/cluster-clustering.md` |
 
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
@@ -85,10 +88,10 @@ Answer at the lowest level that answers the question, then stop.
 |---|---|---|
 | L1 | this file only | the headline values, the state of the domain, the list a referee checks, the errors that recur |
 | L2 | one file of `references/` | what this file does not hold: other values, their history, the size of each systematic, methods, releases |
-| L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
+| L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; open 5k; methods 11k; results 10k; surveys 4k; systematics 11k.
+Sizes, in thousands of tokens: L1 2k; open 5k; methods 11k; results 10k; surveys 4k; systematics 11k; deep/cluster-clustering 7k; deep/sz-selection-function 7k; deep/x-ray-selection-function 6k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

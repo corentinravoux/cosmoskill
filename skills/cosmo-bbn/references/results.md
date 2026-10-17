@@ -14,7 +14,7 @@ Flags: `[src]` abstract read this session; `[src: Sect. n]`, `[src: Eq. n]`,
 | Quantity | Value | Data | Citation | Flag |
 |---|---|---|---|---|
 | (D/H)_P, precision sample | log₁₀(D/H)_P = −4.5974 ± 0.0052; 10⁵ (D/H)_P = 2.527 ± 0.030 | seven homogeneously analysed absorbers (Keck/HIRES, VLT/UVES) | Cooke, Pettini & Steidel 2018, arXiv:1710.11129 | [src: Sect. V.1, Eq. 9–10] |
-| (D/H)_P, all prior measurements plus J1332+0052 | (2.533 ± 0.024) × 10⁻⁵; 5% more precise than before; ~2.2σ moderate tension with the Standard-Model expectation | eight-system compilation | Kislitsyn et al. 2024, arXiv:2401.12797 | [src] |
+| (D/H)_P, all prior measurements plus J1332+0052 | (2.533 ± 0.024) × 10⁻⁵; 5% more precise than before; ~2.2σ moderate tension with the Standard-Model expectation; the nine systems meeting the Cooke et al. 2014 criteria give (2.501 ± 0.028) × 10⁻⁵, ≈ 1.4σ | weighted mean of all 17 literature values | Kislitsyn et al. 2024, arXiv:2401.12797 | [src; Sect. 4.1, Table 4, Eqs. 2–3] |
 | J1332+0052 sub-DLA, z_abs = 3.42 | log(D I/H I) = −4.622 ± 0.014 (0.008 dex statistical, 0.012 dex systematic); [O/H] = −1.71 ± 0.02; log N(H I) = 19.304 ± 0.004 | VLT/UVES + Keck/HIRES | arXiv:2401.12797 | [src] |
 | Q1243+307, z_abs = 2.52564 | log₁₀(D/H) = −4.622 ± 0.015 from eight D I lines; [O/H] = −2.769 ± 0.028 | Keck/HIRES archival + new | arXiv:1710.11129 | [src] |
 | PKS1937−101, z ≈ 3.572 | (2.638 ± 0.128) × 10⁻⁵ ESPRESSO alone; (2.608 ± 0.102) × 10⁻⁵ with UVES | VLT/ESPRESSO | Guarneri et al. 2024, arXiv:2402.05586 | [src] |
@@ -221,7 +221,7 @@ split follows the rate treatment, not the code as software.
 | Quantity | Earlier | Later | Citation | Flag |
 |---|---|---|---|---|
 | (D/H)_P | Cooke et al. earlier six-system mean | seven systems, 2.527 ± 0.030 (2018) | arXiv:1710.11129 | [src: Sect. V.1] |
-| (D/H)_P | 2.527 ± 0.030 | eight systems, 2.533 ± 0.024 (2024) | arXiv:2401.12797 | [src] |
+| (D/H)_P | 2.527 ± 0.030 | all 17 literature values, 2.533 ± 0.024; nine criteria-meeting systems, 2.501 ± 0.028 (2024) | arXiv:2401.12797 | [src: Sect. 4.1, Eqs. 2–3] |
 | Y_P from the HeBCD sample with He I 10830 | 0.2551 ± 0.0022 (Izotov et al. 2014) | 0.2449 ± 0.0040 (Aver et al. 2015, re-analysis of the Izotov, Thuan & Stasinska 2007 data with the 2014 He I 10830 observations) | arXiv:1408.6953; arXiv:1503.08146 | [src] |
 | Y_P (LBT team) | 0.2449 ± 0.0040 (2015) | 0.2458 ± 0.0013 (2026, new LBT data) | arXiv:1503.08146; arXiv:2601.22238 | [src] |
 | Y_P (EMPRESS) | 0.2370 (+0.0034/−0.0033) (2022) | 0.2402 ± 0.0040 (2025) | arXiv:2203.09617; arXiv:2506.24050 | [src] |

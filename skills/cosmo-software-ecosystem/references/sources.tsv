@@ -106,3 +106,16 @@ GoodmanWeare2010	doi:10.2140/camcos.2010.5.65	Goodman	2010	Ensemble samplers wit
 Neal2012	1206.1901	Neal	2012	MCMC using Hamiltonian dynamics	method
 Hamilton2000	astro-ph/9905191	Hamilton	1999	Uncorrelated Modes of the Nonlinear Power Spectrum	foundation
 Hivon2002	astro-ph/0105302	Hivon	2001	MASTER of the CMB Anisotropy Power Spectrum: A Fast Method for Statistical Analysis of Large and Complex CMB Data Sets	foundation
+Sawicki2015	1503.06831	Sawicki	2015	Limits of Quasi-Static Approximation in Modified-Gravity Cosmologies	critique
+Cataneo2024	2407.11968	Cataneo	2024	mochi_class: Modelling Optimisation to Compute Horndeski In class	code
+Ashton2022	2205.15570	Ashton	2022	Nested sampling for physical scientists	review
+Mootoovaloo2024	2406.04725	Mootoovaloo	2024	Assessment of Gradient-Based Samplers in Standard Cosmological Likelihoods	method
+Wright2025	2503.19441	Wright	2025	KiDS-Legacy: Cosmological constraints from cosmic shear with the complete Kilo-Degree Survey	results
+Sefusatti2015	1512.07295	Sefusatti	2015	Accurate Estimators of Correlation Functions in Fourier Space	method
+Wang2024FFT	2403.13561	Wang	2024	Accurate Power Spectrum Estimation toward Nyquist limit	critique
+Nicola2021	2010.09717	Nicola	2020	Cosmic shear power spectra in practice	method
+Hall2025	2501.08718	Hall	2025	Pixelization effects in cosmic shear angular power spectra	critique
+Cornish2025	2510.19912	Cornish	2025	Systematics mitigation for catalogue-based angular power spectra	method
+Amon2021	2105.13543	Amon	2021	Dark Energy Survey Year 3 Results: Cosmology from Cosmic Shear and Robustness to Data Calibration	results
+RodriguezMonroy2021	2105.13540	Rodríguez-Monroy	2021	Dark Energy Survey Year 3 Results: Galaxy clustering and systematics treatment for lens galaxy samples	systematics
+Alvarez2022	2203.07347	Alvarez	2022	Snowmass2021 Computational Frontier White Paper: Cosmological Simulations and Modeling	review

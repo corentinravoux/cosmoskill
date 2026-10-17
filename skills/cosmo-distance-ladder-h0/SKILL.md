@@ -19,6 +19,9 @@ re-verify against the cited paper before a number enters a manuscript.
 | Each systematic; error budgets term by term; referee checklist | `references/systematics.md` |
 | Controversies, forecasts, stale claims | `references/open-questions.md` |
 | Bibliography | `references/sources.tsv` |
+| TRGB tip measurement; CCHP, EDD, CATS choices | `deep/trgb.md` |
+| Maser disc fits to H0; why 2026 analyses differ | `deep/megamasers.md` |
+| Lensing H0: delays, κ_ext, kinematics, λ_int | `deep/time-delay-cosmography.md` |
 
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
@@ -104,10 +107,10 @@ Answer at the lowest level that answers the question, then stop.
 |---|---|---|
 | L1 | this file only | the headline values, the state of the domain, the list a referee checks, the errors that recur |
 | L2 | one file of `references/` | what this file does not hold: other values, their history, the size of each systematic, methods, releases |
-| L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
+| L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; open 6k; methods 10k; results 7k; surveys 4k; systematics 11k.
+Sizes, in thousands of tokens: L1 2k; open 6k; methods 10k; results 7k; surveys 4k; systematics 11k; deep/megamasers 6k; deep/time-delay-cosmography 6k; deep/trgb 6k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

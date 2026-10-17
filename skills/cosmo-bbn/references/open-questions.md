@@ -16,7 +16,7 @@ current predictions: ≃1.8σ with PRIMAT (Pitrou et al. 2021,
 arXiv:2011.11320) [src]; 1.70σ with Gaussian-process rates at the Planck
 baryon density and 1.98σ with Planck + ACT DR6 + SPT-3G D1 (Launders,
 Giovanetti & Liu 2026, arXiv:2604.16600) [src]; ~2.2σ against the
-eight-system mean (Kislitsyn et al. 2024, arXiv:2401.12797) [src]; "~2σ"
+mean of all 17 literature values, ~1.4σ for the nine systems meeting the Cooke et al. 2014 criteria (Kislitsyn et al. 2024, arXiv:2401.12797) [src: Sect. 4.1]; "~2σ"
 per Poulin et al. 2026 (arXiv:2607.20635) [src].
 
 **Other side.** With data-driven rate fits the same data are concordant:

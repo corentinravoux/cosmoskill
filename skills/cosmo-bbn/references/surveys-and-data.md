@@ -14,7 +14,7 @@ body read; `[sec]` named secondary source; `[der]` derived here.
 | Programme | Instrument | What it delivered | Citation | Flag |
 |---|---|---|---|---|
 | Precision sample (Cooke, Pettini, Steidel and collaborators) | Keck/HIRES, VLT/UVES | seven systems analysed homogeneously, one percent (D/H)_P | arXiv:1710.11129 | [src] |
-| Ioffe / Balashev group with Murphy, Ledoux, Noterdaeme | VLT/UVES, Keck/HIRES | J1332+0052 sub-DLA at z = 3.42; eight-system mean | arXiv:2401.12797 | [src] |
+| Ioffe / Balashev group with Murphy, Ledoux, Noterdaeme | VLT/UVES, Keck/HIRES | J1332+0052 sub-DLA at z = 3.42; mean of all 17 literature values (Sect. 4.1) | arXiv:2401.12797 | [src] |
 | ESPRESSO fundamental-physics programme (Guarneri, Pasquini, Molaro, Murphy and others) | VLT/ESPRESSO | PKS1937−101 at z ≈ 3.572 | arXiv:2402.05586 | [src] |
 | Swinburne / Webb group (Zavarygin, Webb, Riemer-Sørensen, Dumont) | Keck/HIRES | Q1009+2956 re-analysis; 13-system compilation | arXiv:1706.09512, arXiv:1801.04704 | [src] |
 

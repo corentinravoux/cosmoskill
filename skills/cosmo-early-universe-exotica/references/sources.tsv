@@ -1,0 +1,98 @@
+key	id	first_author	year	title	role
+LISACosWG2022	2204.05434	Auclair	2022	Cosmology with the Laser Interferometer Space Antenna	review
+Carr2026	2601.06024	Carr	2026	Primordial black holes: constraints, potential evidence and prospects	review
+HellingsDowns1983	doi:10.1086/183954	Hellings	1983	Upper limits on the isotropic gravitational radiation background from pulsar timing analysis	foundation
+Phinney2001	astro-ph/0108028	Phinney	2001	A Practical theorem on gravitational wave backgrounds	foundation
+AllenRomano1999	gr-qc/9710117	Allen	1997	Detecting a stochastic background of gravitational radiation: Signal processing strategies and sensitivities	method
+Allen2022	2205.05637	Allen	2022	Variance of the Hellings-Downs correlation	method
+NANOGrav2023GWB	2306.16213	Agazie	2023	The NANOGrav 15 yr Data Set: Evidence for a Gravitational-wave Background	results
+NANOGrav2023NP	2306.16219	Afzal	2023	The NANOGrav 15 yr Data Set: Search for Signals from New Physics	results
+NANOGrav2023SMBHB	2306.16220	Agazie	2023	The NANOGrav 15 yr Data Set: Constraints on Supermassive Black Hole Binaries from the Gravitational-wave Background	results
+EPTA2023GWB	2306.16214	Antoniadis	2023	The second data release from the European Pulsar Timing Array - III. Search for gravitational wave signals	results
+EPTA2023Impl	2306.16227	Antoniadis	2023	The second data release from the European Pulsar Timing Array - IV. Implications for massive black holes, dark matter, and the early Universe	results
+PPTA2023GWB	2306.16215	Reardon	2023	Search for an Isotropic Gravitational-wave Background with the Parkes Pulsar Timing Array	results
+CPTA2023GWB	2306.16216	Xu	2023	Searching for the Nano-Hertz Stochastic Gravitational Wave Background with the Chinese Pulsar Timing Array Data Release I	results
+IPTA2023Comp	2309.00693	International Pulsar Timing Array	2023	Comparing Recent Pulsar Timing Array Results on the Nanohertz Stochastic Gravitational-wave Background	results
+MPTA2024	2412.01153	Miles	2024	The MeerKAT Pulsar Timing Array: the first search for gravitational waves with the MeerKAT radio telescope	results
+InPTA2026	2608.02808	Tahbildar	2026	The Indian Pulsar Timing Array Data Release 2: III. Search for a Stochastic Gravitational Wave Background	results
+Yu2025FivePTA	2512.08666	Yu	2025	Stochastic gravitational-wave background search using data from five pulsar timing arrays	results
+SatoPolito2023	2312.06756	Sato-Polito	2023	Where are NANOGrav's big black holes?	critique
+LVK2021O3	2101.12130	LIGO Scientific	2021	Upper limits on the isotropic gravitational-wave background from Advanced LIGO and Advanced Virgo's third observing run	results
+LVK2025O4a	2508.20721	LIGO Scientific	2025	Upper limits on the isotropic gravitational-wave background from the first part of LIGO, Virgo, and KAGRA's fourth observing run	results
+LVK2026	2608.23477	LIGO Scientific	2026	Updated Upper Limits on the Isotropic Gravitational-Wave Background from LIGO, Virgo, and KAGRA Data through April 2025	results
+Kamionkowski1994	astro-ph/9310044	Kamionkowski	1993	Gravitational radiation from first order phase transitions	foundation
+Hindmarsh2014	1304.2433	Hindmarsh	2013	Gravitational waves from the sound of a first order phase transition	foundation
+Caprini2016	1512.06239	Caprini	2015	Science with the space-based interferometer eLISA. II: Gravitational waves from cosmological phase transitions	method
+Caprini2020	1910.13125	Caprini	2019	Detecting gravitational waves from cosmological phase transitions with LISA: an update	method
+Caprini2024	2403.03723	Caprini	2024	Gravitational waves from first-order phase transitions in LISA: reconstruction pipeline and physics interpretation	forecast
+Bringmann2023	2306.09411	Bringmann	2023	Does NANOGrav observe a dark sector phase transition?	critique
+Kibble1976	doi:10.1088/0305-4470/9/8/029	Kibble	1976	Topology of cosmic domains and strings	foundation
+Planck2013Strings	1303.5085	Planck Collaboration	2013	Planck 2013 results. XXV. Searches for cosmic strings and other topological defects	results
+BlancoPillado2014	1309.6637	Blanco-Pillado	2013	The number of cosmic string loops	method
+LVK2021Strings	2101.12248	LIGO Scientific	2021	Constraints on Cosmic Strings Using Data from the Third Advanced LIGO-Virgo Observing Run	results
+Buchmuller2020	2009.10649	Buchmuller	2020	From NANOGrav to LIGO with metastable cosmic strings	results
+CarrHawking1974	doi:10.1093/mnras/168.2.399	Carr	1974	Black Holes in the Early Universe	foundation
+Hawking1974	doi:10.1038/248030a0	Hawking	1974	Black hole explosions?	foundation
+Bird2016	1603.00464	Bird	2016	Did LIGO detect dark matter?	foundation
+Sasaki2016	1603.08338	Sasaki	2016	Primordial Black Hole Scenario for the Gravitational-Wave Event GW150914	foundation
+Niikura2019HSC	1701.02151	Niikura	2017	Microlensing constraints on primordial black holes with Subaru/HSC Andromeda observations	results
+Niikura2019OGLE	1901.07120	Niikura	2019	Constraints on Earth-mass primordial black holes from OGLE 5-year microlensing events	results
+Mroz2024LMC	2403.02386	Mróz	2024	No massive black holes in the Milky Way halo	results
+Mroz2024HC	2410.06251	Mróz	2024	Limits on Planetary-mass Primordial Black Holes from the OGLE High-cadence Survey of the Magellanic Clouds	results
+Hawkins2025	2509.05400	Hawkins	2025	A critical analysis of the recent OGLE limits on stellar mass primordial black holes in the halo of the Milky Way	critique
+EROS2007	astro-ph/0607207	Tisserand	2006	Limits on the Macho Content of the Galactic Halo from the EROS-2 Survey of the Magellanic Clouds	results
+LVK2021SSM	2109.12197	LIGO Scientific	2021	Search for Subsolar-Mass Binaries in the First Half of Advanced LIGO's and Advanced Virgo's Third Observing Run	results
+AndresCarcasona2024	2405.05732	Andrés-Carcasona	2024	Constraints on primordial black holes from LIGO-Virgo-KAGRA O3 events	results
+Serpico2020	2002.10771	Serpico	2020	Cosmic microwave background bounds on primordial black holes including dark matter halo accretion	results
+Ananda2007	gr-qc/0612013	Ananda	2006	The Cosmological gravitational wave background from primordial density perturbations	foundation
+KohriTerada2018	1804.08577	Kohri	2018	Semianalytic calculation of gravitational wave spectrum nonlinearly induced from primordial curvature perturbations	method
+Franciolini2023	2306.17149	Franciolini	2023	Recent Gravitational Wave Observation by Pulsar Timing Arrays and Primordial Black Holes: The Importance of Non-Gaussianities	critique
+Iovino2024	2412.06764	Iovino	2024	How well do we know the scalar-induced gravitational waves?	critique
+Poulin2019	1811.04083	Poulin	2018	Early Dark Energy Can Resolve The Hubble Tension	foundation
+Hill2020	2003.07355	Hill	2020	Early dark energy does not restore cosmological concordance	critique
+Herold2022	2112.12140	Herold	2021	New Constraint on Early Dark Energy from Planck and BOSS Data Using the Profile Likelihood	method
+Poulin2023	2302.09032	Poulin	2023	The Ups and Downs of Early Dark Energy solutions to the Hubble tension: A review of models, hints and constraints circa 2023	review
+ACT2025Ext	2503.14454	Calabrese	2025	The Atacama Cosmology Telescope: DR6 Constraints on Extended Cosmological Models	results
+Khalife2025	2507.23355	Khalife	2025	SPT-3G D1: Axion early dark energy with CMB experiments and DESI observations	results
+Poulin2025	2505.08051	Poulin	2025	Impact of ACT DR6 and DESI DR2 for early dark energy and the Hubble tension	results
+Toda2025	2508.09025	Toda	2025	Constraints on the varying electron mass and early dark energy in light of ACT DR6 and DESI DR2 and the implications for inflation	results
+Planck2015Constants	1406.7482	Ade	2014	Planck intermediate results - XXIV. Constraints on variations in fundamental constants	results
+HartChluba2020	1912.03986	Hart	2019	Updated fundamental constant constraints from Planck 2018 data and possible relations to the Hubble tension	results
+Sekiguchi2021	2007.03381	Sekiguchi	2020	Early recombination as a solution to the $H_0$ tension	foundation
+Lee2026	2606.06495	Lee	2026	What it takes to solve the Hubble tension through Modifications of Cosmological Recombination II: in light of ACT DR6 and DESI DR2	critique
+Murphy2022	2112.05819	Murphy	2021	Fundamental physics with ESPRESSO: Precise limit on variations in the fine-structure constant towards the bright quasar HE 0515-4414	results
+ZeldovichSunyaev1969	doi:10.1007/BF00661821	Zeldovich	1969	The interaction of matter and radiation in a hot-model universe	foundation
+ChlubaSunyaev2012	1109.6552	Chluba	2011	The evolution of CMB spectral distortions in the early Universe	method
+Chluba2019Voyage	1909.01593	Chluba	2019	New horizons in cosmology with spectral distortions of the cosmic microwave background	review
+Chluba2025	2502.05188	Chluba	2025	The Cosmic Microwave Background: Spectral Distortions	review
+Cyr2026	2609.16194	Cyr	2026	Peering Beyond the Veil of Last Scattering: A View of the Universe with CMB Spectral Distortions	review
+Fixsen1996	astro-ph/9605054	Fixsen	1996	The Cosmic Microwave Background spectrum from the full COBE FIRAS data set	data
+BianchiniFabbian2022	2206.02762	Bianchini	2022	CMB spectral distortions revisited: A new take on $\mu$ distortions and primordial non-Gaussianities from FIRAS data	results
+Kogut2011	1105.2044	Kogut	2011	The Primordial Inflation Explorer (PIXIE): A Nulling Polarimeter for Cosmic Microwave Background Observations	data
+Kogut2024	2405.20403	Kogut	2024	The Primordial Inflation Explorer (PIXIE): mission design and science goals	forecast
+Maffei2021	2111.00246	Maffei	2021	BISOU: A balloon project to measure the CMB spectral distortions	forecast
+AlonsoArias2021	2111.15364	Alonso-Arias	2021	The optical system of the Tenerife Microwave Spectrometer: a window for observing the 10-20 GHz sky spectra	data
+Manzan2024	2406.09349	Manzan	2024	Measuring the CMB spectral distortions with COSMO: the multi-mode antenna system	data
+ChenKamionkowski2004	astro-ph/0310473	Chen	2003	Particle decays during the cosmic dark ages	foundation
+Planck2018VI	1807.06209	Planck Collaboration	2018	Planck 2018 results. VI. Cosmological parameters	results
+Slatyer2016	1506.03811	Slatyer	2015	Indirect dark matter signatures in the cosmic dark ages. I. Generalizing the bound on s-wave dark matter annihilation from Planck results	method
+Slatyer2017	1610.06933	Slatyer	2016	General Constraints on Dark Matter Decay from the Cosmic Microwave Background	method
+DarkHistory2019	1904.09296	Liu	2019	Code package for calculating modified cosmic ionization and thermal histories with dark matter and other exotic energy injections	code
+Liu2023	2303.07370	Liu	2023	Exotic energy injection in the early Universe. II. CMB spectral distortions and constraints on light dark matter	results
+DurrerNeronov2013	1303.7121	Durrer	2013	Cosmological Magnetic Fields: Their Generation, Evolution and Observation	review
+Planck2015PMF	1502.01594	Planck Collaboration	2015	Planck 2015 results. XIX. Constraints on primordial magnetic fields	results
+Paoletti2022	2204.06302	Paoletti	2022	Constraints on primordial magnetic fields from their impact on the ionization history with Planck 2018	results
+JedamzikPogosian2020	2004.09487	Jedamzik	2020	Relieving the Hubble tension with primordial magnetic fields	foundation
+Jedamzik2025	2503.09599	Jedamzik	2025	Hints of primordial magnetic fields at recombination and implications for the Hubble tension	results
+NeronovVovk2010	1006.3504	Neronov	2010	Evidence for strong extragalactic magnetic fields from Fermi observations of TeV blazars	foundation
+HESS2023IGMF	2306.05132	H.E.S.S.	2023	Constraints on the Intergalactic Magnetic Field Using Fermi-LAT and H.E.S.S. Blazar Observations	results
+Pavicevic2025	2501.06299	Pavičević	2025	Constraints on Primordial Magnetic Fields from the Lyman-$\alpha$ Forest	results
+NANOGrav2023Noise	2306.16218	Agazie	2023	The NANOGrav 15 yr Data Set: Detector Characterization and Noise Budget	systematics
+Marsh2016	1510.07633	Marsh	2015	Axion Cosmology	review
+Baumann2016	1604.08614	Baumann	2016	New Target for Cosmic Axion Searches	forecast
+Mirizzi2005	astro-ph/0506078	Mirizzi	2005	Photon-axion conversion as a mechanism for supernova dimming: Limits from CMB spectral distortion	results
+PTArcade2023	2306.16377	Mitridate	2023	PTArcade	code
+Colpi2024	2402.07571	Colpi	2024	LISA Definition Study Report	data
+Iraci2025	2510.04639	Iraci	2025	Combining the second data release of the European Pulsar Timing Array with low-frequency pulsar data	systematics
+InPTA2025Noise	2512.20455	Nobleson	2025	The indian pulsar timing array data release 2: II. Customised single-pulsar noise analysis and noise budget	systematics
+Tagliazucchi2023	2310.08527	Tagliazucchi	2023	Quest for CMB spectral distortions to probe the scalar-induced gravitational wave background interpretation of pulsar timing array data	forecast

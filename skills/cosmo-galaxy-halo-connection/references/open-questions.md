@@ -32,10 +32,16 @@ With DES Y3, HSC Y1 and KiDS-1000 the lensing/clustering ratio is A = 0.79 ±
 - Abundance matching calibrated with PAC cross-correlations reproduces CMASS
   lensing with S8 = 0.8294 ± 0.0110 (HSC) (arXiv:2502.09404) [src].
 - UNIONS lensing finds no significant effect for CMASS and stresses that large
-  scales, not only small ones, decide it (arXiv:2606.23651) [src].
+  scales, not only small ones, decide it (arXiv:2606.23651) [src]: the Planck
+  HOD over-predicts ΔΣ by only ~7% after shear-bias correction, yet its joint
+  fits sit at S8 = 0.743, set by the large-scale GGL [src: Sect. 7.1, 7.3].
 
 **Cosmology side.** Lower S8 reconciles the measurements (arXiv:1611.08606,
-arXiv:2202.07440) [src]; dynamical dark energy of the DESI kind lowers GGL
+arXiv:2202.07440) [src]; but above 5.25 h⁻¹Mpc the Planck and Lensing
+predictions differ by at most ~2σ, so "no compelling evidence" exists on
+linear scales and the inconsistency is driven by small scales, where the
+f_conc treatment of baryons misses the scale dependence of kSZ-based
+estimates [src: Sect. 8 of arXiv:2202.07440]; dynamical dark energy of the DESI kind lowers GGL
 relative to clustering by up to 7% through distances (arXiv:2508.05746) [src].
 
 **Where it stands.** Recent simulation-based fits with assembly bias give S8 =
@@ -44,9 +50,13 @@ HSC) at CMB-fixed other parameters (arXiv:2512.15962) [src]; KiDS-1000
 halo-model S8 = 0.773 (+0.028, −0.030) (arXiv:2210.03110) [src]; GAMA × KiDS
 SHAMe S8 = 0.793, 1.7σ from Planck (arXiv:2507.01601) [src]; satellite
 kinematics S8 = 0.81 ± 0.05 with "no indication of S8 tension"
-(arXiv:2512.14889) [src]. The values cluster near 0.79–0.81 [der: range of the
-central values just listed], between the low lensing cosmology (0.76) and
-Planck (0.83) used by Amon et al. The effect is therefore no longer one number:
+(arXiv:2512.14889) [src]; HSC-Y3 × SDSS halo-model 3×2pt S8 = 0.763
+(+0.040, −0.036) (arXiv:2304.00704) [src]; UNIONS × CMASS joint HOD +
+cosmology fits S8 = 0.743 (arXiv:2606.23651) [src: Sect. 7.3]. The central
+values span 0.74–0.81 [der: range of the values just listed; corrected
+2026-10-16 from "0.79–0.81", which omitted KiDS-1000 and the HSC-Y3 and
+UNIONS fits], between and below the low lensing cosmology (0.76) and Planck
+(0.83) used by Amon et al. The effect is therefore no longer one number:
 its size depends on the galaxy–halo model, the scales and the source survey
 (KiDS small-scale LOWZ lensing is "much lower" than HSC and DES in
 arXiv:2502.09404) [src].
@@ -58,8 +68,12 @@ arXiv:2502.09404) [src].
 |---|---|
 | SDSS DR7 clustering favours strong central assembly bias for M_r < −20 and −20.5 (arXiv:1606.07817) [src] | DESI One-Percent LRG, QSO and ELG fits find no evidence (arXiv:2306.06314, arXiv:2306.06319) [src] |
 | BOSS CMASS redshift-space 2PCF prefers positive environment-based assembly bias at 3–5σ and rejects the standard HOD (arXiv:2010.04182) [src] | DESI DR1 BGS direct HOD vs density: Q_sat = 0.05 ± 0.14, "in tension with many empirical galaxy formation models" (arXiv:2510.20896) [src] |
+| GAMA × KiDS-1000 SHAMe finds strong central and satellite assembly bias (arXiv:2507.01601) [src: Sect. 5.3]; DESI DR2 LRG multiplets are fitted only with environment-based secondary bias (arXiv:2511.15354) [src: Sect. 6.2] | HSC-Y3 × SDSS: S8 unchanged between (2, 3) and (8, 12) h⁻¹Mpc cuts, no assembly-bias signature (arXiv:2304.00704) [src: Sect. VI.2] |
 | Hydrodynamical simulations predict it for DESI-like tracers (arXiv:2202.12911) [src] | Basilisk is designed to be insensitive to it rather than to measure it (arXiv:2409.03105) [src] |
 
+Part of the split is statistical: the DESI One-Percent LRG sample is ~10
+times smaller than CMASS, which would reduce the CMASS assembly-bias signal
+to < 1σ (arXiv:2306.06314) [src: Sect. 6.1].
 The halo-level signal is detected with groups split by central colour or local
 overdensity (b_relative 0.7–1.4, arXiv:2511.19607) [src]; the galaxy-level
 signal remains sample- and estimator-dependent. Detections from redshift-space
@@ -72,7 +86,11 @@ with 4.4σ in clustering (arXiv:1506.06135) [src] is attributed to projection
 effects: 1.02 ± 0.14 with a projection-robust estimator (arXiv:1611.00366),
 signal present in mocks with assembly bias erased (arXiv:1905.07557), "not
 reflected in the three-dimensional distribution of matter" (arXiv:1702.01682)
-[src].
+[src]. The 1.24 ± 0.02 ceiling is the bias ratio of mock clusters split by
+3D dark-matter concentration (auto-correlations above 10 h⁻¹Mpc, matched to
+the redMaPPer number density); a membership-distance split retains ~60% less,
+1.10 ± 0.02, itself an upper limit; the earlier measurements exceeded 1.24 by
+1.5σ and 3.4σ [src: Sect. 1, Sect. 4 of arXiv:1611.00366].
 
 ## 3. Conformity and whether halo mass alone sets quenching
 <!-- key: conformity-and-whether-halo-mass-alone-sets -->
@@ -159,7 +177,7 @@ reflected in the three-dimensional distribution of matter" (arXiv:1702.01682)
 
 | Claim still seen | Correction |
 |---|---|
-| "Lensing is low proves low S8." | Galaxy–halo models with assembly bias, satellite segregation or selection reproduce the signal at Planck cosmology (arXiv:2211.01744, arXiv:2305.09637, arXiv:2502.09404) [src]; current joint fits give S8 ≈ 0.79–0.81 (section 1). |
+| "Lensing is low proves low S8." | Galaxy–halo models with assembly bias, satellite segregation or selection reproduce the signal at Planck cosmology (arXiv:2211.01744, arXiv:2305.09637, arXiv:2502.09404) [src]; current joint fits give S8 ≈ 0.74–0.81, depending on model, scales and source survey (section 1). |
 | "Halo assembly bias was detected in SDSS clusters (Miyatake et al. 2016)." | Projection effects explain the split (arXiv:1611.00366, arXiv:1905.07557, arXiv:1702.01682) [src]. |
 | "The halo mass function is universal." | Not at the 5% level; amplitude changes by 20–50% to z = 2.5 (arXiv:0803.2706) [src]; universality depends on the mass definition (arXiv:1507.05627, arXiv:2512.05847) [src]. |
 | "Satellites are Poisson." | Sub-Poisson preferred in KiDS-1000 (arXiv:2210.03110) [src]; the central condition alone breaks Poisson statistics [src: Sect. 4.1 of arXiv:2303.08752]. |
@@ -171,8 +189,8 @@ reflected in the three-dimensional distribution of matter" (arXiv:1702.01682)
 ## Not verified
 <!-- key: not-verified -->
 
-- The "maximum" assembly-bias level a ΛCDM halo population can produce for
-  cluster splits (1.24) is from the Zu et al. abstract only; the definition of
-  the split was not read.
-- Whether DESI DR2 or HSC Y3 lensing analyses of the lensing-is-low effect
-  exist was not searched.
+- (Closed 2026-10-16: the 1.24 split definition was read in Zu et al. 2017,
+  Sect. 4.)
+- Searched 2026-10-16: HSC Y3 × SDSS halo-model cosmology exists
+  (arXiv:2304.00704, `results.md` section 5) but is not framed as a
+  lensing-is-low test; no DESI DR2 lensing-is-low analysis was found.

@@ -1,0 +1,101 @@
+key	id	first_author	year	title	role
+Libeskind2018	1705.03021	Libeskind	2017	Tracing the cosmic web	review
+WalkerLau2022	2202.07056	Walker	2022	Cluster outskirts and their connection to the cosmic web	review
+Einasto2025	2505.22082	Einasto	2025	Galaxy Superclusters and Their Complexes in the Cosmic Web	review
+Cautun2014	1401.7866	Cautun	2014	Evolution of the cosmic web	results
+Hahn2007	astro-ph/0610280	Hahn	2006	Properties of Dark Matter Haloes in Clusters, Filaments, Sheets and Voids	foundation
+ShandarinZeldovich1989	doi:10.1103/RevModPhys.61.185	Shandarin	1989	The large-scale structure of the universe: Turbulence, intermittency, structures in a self-gravitating medium	review
+Bond1996	astro-ph/9512141	Bond	1995	How Filaments are Woven into the Cosmic Web	foundation
+Ramachandra2015	1412.7768	Ramachandra	2014	Multi-stream portrait of the Cosmic web	method
+White1984	doi:10.1086/162573	White	1984	Angular momentum growth in protogalaxies	foundation
+ForeroRomero2009	0809.4135	Forero-Romero	2008	A Dynamical Classification of the Cosmic Web	foundation
+Hoffman2012	1201.3367	Hoffman	2012	A kinematic classification of the cosmic web	foundation
+AragonCalvo2007	0705.2072	Aragon-Calvo	2007	The Multiscale Morphology Filter: Identifying and Extracting Spatial Patterns in the Galaxy Distribution	foundation
+Cautun2013	1209.2043	Cautun	2012	NEXUS: Tracing the Cosmic Web Connection	method
+Sousbie2011a	1009.4015	Sousbie	2010	The persistent cosmic web and its filamentary structure I: Theory and implementation	foundation
+Sousbie2011b	1009.4014	Sousbie	2010	The persistent cosmic web and its filamentary structure II: Illustrations	method
+AragonCalvo2010	0809.5104	Aragon-Calvo	2008	The Spine of the Cosmic Web	method
+Tempel2014	1308.2533	Tempel	2013	Detecting filamentary pattern in the cosmic web: a catalogue of filaments for the SDSS	data
+Alpaslan2014	1311.1211	Alpaslan	2013	Galaxy And Mass Assembly (GAMA): The large scale structure of galaxies and comparison to mock universes	data
+Falck2012	1201.2353	Falck	2012	ORIGAMI: Delineating Halos using Phase-Space Folds	method
+Codis2018	1803.11477	Codis	2018	On the connectivity of the cosmic web: theory and implications for cosmology and galaxy formation	foundation
+Singh2026	2607.14785	Singh	2026	Enabling Cosmic Web Analysis at Gigaparsec Scales: A Multi Block Approach for DisPerSE	code
+GalarragaEspinosa2024	2309.08659	Galárraga-Espinosa	2023	Evolution of cosmic filaments in the MTNG simulation	results
+GalarragaEspinosa2020	2003.09697	Galárraga-Espinosa	2020	Populations of filaments from the distribution of galaxies in numerical simulations	results
+Wang2024	2402.11678	Wang	2024	The boundary of cosmic filaments	results
+SotoSuarez2026	2608.25060	Soto-Suárez	2026	Tracing Galaxy Bias Through the Cosmic Web: The Role of Filaments	results
+Dhawalikar2026	2608.25840	Dhawalikar	2026	Filaments within filaments: unraveling the hierarchy of the cosmic web	results
+ShethVdW2004	astro-ph/0311260	Sheth	2003	A hierarchy of voids: Much ado about nothing	foundation
+Courtois2023	2211.16388	Courtois	2022	Sociology and hierarchy of voids: A study of seven nearby CAVITY galaxy voids and their dynamical CosmicFlows-3 environment	results
+Mansour2026	2607.26932	Mansour	2026	J-PAS & FLAMINGO: Cosmic voids and void galaxies in the gravitational landscape of photometric surveys	method
+DominguezGomez2023	2306.16818	Domínguez-Gómez	2023	Galaxies in voids assemble their stars slowly	results
+Perez2025	2501.07345	Perez	2025	Galaxy mass-size segregation in the cosmic web from the CAVITY parent sample	results
+Curtis2026	2609.19253	Curtis	2026	A High-Mass Size Deficit for Void Galaxies in the Complete SDSS DR7	results
+Bidaran2026	2609.24726	Bidaran	2026	CAVITY: Calar Alto Void Integral-field Treasury surveY: II. Second public data release	data
+GarciaBenito2024	2410.08265	García-Benito	2024	CAVITY: Calar Alto Void Integral-field Treasury surveY. I. First public data release	data
+Tojeiro2017	1612.08595	Tojeiro	2016	Galaxy and Mass Assembly (GAMA): halo formation times and halo assembly bias on the cosmic web	results
+NandiPandey2025	2507.18614	Nandi	2025	Galaxy quenching across the Cosmic Web: disentangling mass and environment with SDSS DR18	results
+Kraljic2018	1710.02676	Kraljic	2017	Galaxy evolution in the metric of the Cosmic Web	results
+Jego2025	2509.18077	Jego	2025	Star-forming galaxies in the cosmic web in the last 11 Gyr	results
+Alam2019	1801.04878	Alam	2018	Cosmic web dependence of galaxy clustering and quenching in SDSS	results
+Ramakrishnan2019	1903.02007	Ramakrishnan	2019	Cosmic web anisotropy is the primary indicator of halo assembly bias	method
+OKane2024	2409.09028	O'Kane	2024	The effect of cosmic web filaments on galaxy evolution	results
+AragonCalvo2019	1607.07881	Aragon-Calvo	2016	Galaxy Quenching from Cosmic Web Detachment	method
+Zakharova2026	2605.23457	Zakharova	2026	Cosmic web stripping and starvation of low-mass filament galaxies in TNG50	results
+Malavasi2022	2109.14623	Malavasi	2021	On the relative effect of nodes and filaments of the cosmic web on the quenching of galaxies and the orientation of their spin	results
+Taamoli2026	2610.07710	Taamoli	2026	The Role of the Cosmic Web in Galaxy Evolution Across 0.4<z<4	results
+Storck2025	2409.13010	Storck	2024	The causal effect of cosmic filaments on dark matter halos	results
+Pichon2014	1409.2608	Pichon	2014	Why do galactic spins flip in the cosmic web? A Theory of Tidal Torques near saddles	foundation
+Codis2012	1201.5794	Codis	2012	Connecting the cosmic web to the spin of dark halos: implications for galaxy formation	foundation
+GaneshaiahVeena2018	1805.00033	Ganeshaiah Veena	2018	The Cosmic Ballet: spin and shape alignments of haloes in the cosmic web	results
+TempelLibeskind2013	1308.2816	Tempel	2013	Galaxy spin alignment in filaments and sheets: observational evidence	results
+Muralichandran2025	2509.02062	Muralichandran	2025	Alignment of spiral and elliptical galaxies from Siena Galaxy Atlas with filaments	results
+Welker2020	1909.12371	Welker	2019	The SAMI Galaxy Survey: First detection of a transition in spin orientation with respect to cosmic filaments in the stellar kinematics of galaxies	results
+Barsanti2022	2208.10767	Barsanti	2022	The SAMI Galaxy Survey: flipping of the spin-filament alignment correlates most strongly with growth of the bulge	results
+Krolewski2019	1902.09797	Krolewski	2019	Alignment between filaments and galaxy spins from the MaNGA integral-field survey	critique
+Kraljic2021	2104.08275	Kraljic	2021	SDSS-IV MaNGA: 3D spin alignment of spiral and S0 galaxies	results
+WangHD2025	2506.22794	Wang	2025	Observed Anti-parallel Correlation Between Spiral Galaxy and Cosmic Filament Spins	results
+GalarragaEspinosa2021	2010.15139	Galárraga-Espinosa	2020	Properties of gas phases around cosmic filaments at z=0 in the Illustris-TNG simulation	results
+Tanimura2019	1709.05024	Tanimura	2017	A Search for Warm/Hot Gas Filaments Between Pairs of SDSS Luminous Red Galaxies	results
+deGraaff2019	1709.10378	de Graaff	2017	Probing the missing baryons with the Sunyaev-Zel'dovich effect from filaments	results
+Tanimura2022	2206.00084	Tanimura	2022	X-ray emission from cosmic web filaments in SRG/eROSITA data	results
+ZhangX2024	2406.00105	Zhang	2024	The SRG/eROSITA all-sky survey. X-ray emission from the warm-hot phase gas in long cosmic filaments	results
+Lokken2024	2409.04535	Lokken	2024	Superclustering with the Atacama Cosmology Telescope and Dark Energy Survey: II. Anisotropic large-scale coherence in hot gas, galaxies, and dark matter	results
+Hadzhiyska2024	2412.03631	Hadzhiyska	2024	Tracing cosmic gas in filaments and halos: Low-redshift insights from the kinematic Sunyaev-Zel'dovich effect	results
+Tanimura2020a	1911.09706	Tanimura	2019	Density and temperature of cosmic-web filaments on scales of tens of megaparsecs	results
+Tanimura2020b	2011.05343	Tanimura	2020	First detection of stacked X-ray emission from cosmic web filaments	results
+Hincks2022	2107.04611	Hincks	2021	A high-resolution view of the filament of gas between Abell 399 and Abell 401 from the Atacama Cosmology Telescope and MUSTANG-2	results
+Govoni2019	1906.07584	Govoni	2019	A radio ridge connecting two galaxy clusters in a filament of the cosmic web	results
+Reiprich2021	2012.08491	Reiprich	2020	The Abell 3391/95 galaxy cluster system: A 15 Mpc intergalactic medium emission filament, a warm gas bridge, infalling matter clumps, and (re-) accelerated plasma discovered by combining SRG/eROSITA data with ASKAP/EMU and DECam data	results
+Eckert2015	1512.00454	Eckert	2015	Warm-hot baryons comprise 5-10 per cent of filaments in the cosmic web	results
+Carretti2022	2202.04607	Carretti	2022	Magnetic field strength in cosmic web filaments	results
+Shull2012	1112.2706	Shull	2011	The Baryon Census in a Multiphase Intergalactic Medium: 30% of the Baryons May Still Be Missing	results
+Nicastro2018	1806.08395	Nicastro	2018	Observations of the MIssing Baryons in the warm-hot intergalactic medium	results
+Spence2023	2305.01587	Spence	2023	A search for the missing baryons with X--ray absorption lines towards the blazar 1ES 1553+113	critique
+Macquart2020	2005.13161	Macquart	2020	A census of baryons in the Universe from localized fast radio bursts	results
+Connor2024	2409.16952	Connor	2024	A gas-rich cosmic web revealed by the partitioning of the missing baryons	results
+Sharma2026	2605.01994	Sharma	2026	Baryons in the Darkest Sites of the Universe	results
+MartinezAcosta2026	2610.11203	Martínez-Acosta	2026	Pinpointing the cosmic web between massive galaxy clusters I. The incidence of HI and OVI as WHIM tracers	results
+Tully2014	1409.0880	Tully	2014	The Laniakea supercluster of galaxies	results
+Lietzen2016	1602.08498	Lietzen	2016	Discovery of a massive supercluster system at $z \sim 0.47$	results
+Cucciati2018	1806.06073	Cucciati	2018	The progeny of a Cosmic Titan: a massive multi-component proto-supercluster in formation at z=2.45 in VUDS	results
+Chiang2013	1310.2938	Chiang	2013	Ancient Light from Young Cosmic Cities: Physical and Observational Signatures of Galaxy Proto-Clusters	foundation
+Overzier2016	1610.05201	Overzier	2016	The realm of the galaxy protoclusters	review
+Toshikawa2018	1708.09421	Toshikawa	2017	GOLDRUSH. III. A Systematic Search of Protoclusters at $z\sim4$ Based on the $>100\,\mathrm{deg^2}$ Area	data
+Toshikawa2026	2610.01816	Toshikawa	2026	Diverse Protoclusters at $z\sim3$ Disclosed by Systematic Spectroscopy	results
+Ortiz2026	2603.09739	Ortiz	2026	ODIN: Confirmation and 3D Reconstruction of Six Massive Protoclusters at Cosmic Noon	results
+Witten2026	2605.28930	Witten	2026	Too many protoclusters? Reconciling the overabundance of cluster progenitors within the first billion years of the Universe	critique
+Umehata2019	1910.01324	Umehata	2019	Gas filaments of the cosmic web located around active galaxies in a proto-cluster	results
+Tornotti2026	2609.20938	Tornotti	2026	Cosmic web Ly$α$ emission in a sample of overdense regions	results
+Umehata2026	2609.06679	Umehata	2026	ADF22-WEB: Massive galaxy formation shaped by cosmic web filaments in the z = 3.1 proto-cluster core	results
+Leclercq2015	1512.02242	Leclercq	2015	Probabilistic cartography of the large-scale structure	method
+ZapataZuluaga2026	2604.01456	Zapata-Zuluaga	2026	The Cosmic Web in the DESI Early Data Release: A Probabilistic Environment Catalog	data
+GalarragaEspinosa2025	2506.15345	Galárraga-Espinosa	2025	Unveiling the small-scale web around galaxies with miniJPAS and DESI	results
+Hoffman2017	1702.02483	Hoffman	2017	The Dipole Repeller	results
+Hollinger2026	2606.13538	Hollinger	2026	A local Universe catalogue of structures and voids dynamically identified using Cosmic-Flows4++ZOA peculiar velocities	data
+Horowitz2019	1903.09049	Horowitz	2019	TARDIS Paper I: A Constrained Reconstruction Approach to Modeling the z~2.5 Cosmic Web Probed by Lyman-alpha Forest Tomography	method
+Olex2025	2412.09531	Olex	2024	A universal and physically motivated threshold for Hessian-based cosmic web identification: V-Web case	method
+Krolewski2017	1612.00067	Krolewski	2016	Measuring alignments between galaxies and the cosmic web at $z \sim 2-3$ using IGM tomography	forecast
+Ullah2026	2604.02463	Ullah	2026	Cosmic-web quenching with DESI DR1: T-Web environments and mass-dependent red/blue classification	results
+Horowitz2022	2109.09660	Horowitz	2021	Second Data Release of the COSMOS Lyman-alpha Mapping and Tomographic Observation: The First 3D Maps of the Detailed Cosmic Web at 2.05<z<2.55	data
+Noor2026	2609.09950	Noor	2026	Learning cosmic web environments with diffusion models	method

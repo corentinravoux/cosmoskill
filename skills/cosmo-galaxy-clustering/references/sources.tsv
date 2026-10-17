@@ -145,3 +145,15 @@ McDonaldRoy2009	0902.0991	McDonald	2009	Clustering of dark matter tracers: gener
 Senatore2014	1406.7843	Senatore	2014	Bias in the Effective Field Theory of Large Scale Structures	foundation
 Perko2016	1610.09321	Perko	2016	Biased Tracers in Redshift Space in the EFT of Large-Scale Structure	foundation
 DodelsonSchneider2013	1304.2593	Dodelson	2013	The Effect of Covariance Estimator Error on Cosmological Parameter Constraints	method
+Huterer2023	2212.05003	Huterer	2023	Growth of Cosmic Structure	review
+White2015	1504.03677	White	2015	Reconstruction within the Zeldovich approximation	foundation
+SherwinWhite2019	1808.04384	Sherwin	2019	The Impact of Wrong Assumptions in BAO Reconstruction	critique
+Anselmi2019	1811.12312	Anselmi	2019	Cosmic distance inference from purely geometric BAO methods: Linear Point standard ruler and Correlation Function Model Fitting	critique
+ChenX2024	2411.19738	Chen	2024	Extensive analysis of reconstruction algorithms for DESI 2024 baryon acoustic oscillations	method
+Uberoi2026	2601.05967	Uberoi	2026	The Linear Point Standard Ruler with DESI DR1 and DR2 Data	critique
+Lai2024	2404.07283	Lai	2024	A comparison between ShapeFit compression and Full-Modelling method with PyBird for DESI 2024 and beyond	method
+Maus2023	2302.07430	Maus	2023	A comparison of template vs. direct model fitting for redshift-space distortions in BOSS	critique
+Ghaemi2025	2504.10578	Ghaemi	2025	Smooth sailing or ragged climb? -- Increasing the robustness of power spectrum de-wiggling and ShapeFit parameter compression	critique
+Philcox2021	2012.09389	Philcox	2021	Cosmology Without Windows: Quadratic Estimators for the Galaxy Power Spectrum	method
+Sailer2026	2607.05513	Sailer	2026	Optimal and exact wide-angle power spectrum estimation	method
+Nakano2026	2606.29735	Nakano	2026	Modeling survey-window and integral-constraint effects on PNG in the galaxy power spectrum with light-cone mocks	critique

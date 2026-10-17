@@ -9,6 +9,7 @@ Flags: `[src]` abstract read this session; `[src: Sect. n]`, `[src: Table n]`,
 `[src: Eq. n]` body read; `[sec]` named secondary source; `[der]` derived here.
 
 ## 1. Target selection
+<!-- key: target-selection -->
 
 A spectroscopic survey observes what its target selection chose from earlier
 imaging, so the selection function of every redshift catalogue starts in the
@@ -35,6 +36,7 @@ after target selection by networks trained on visually inspected spectra
 (Choppin de Janvry et al. 2026, arXiv:2608.10080) [src].
 
 ## 2. Fibre assignment and survey operations
+<!-- key: fibre-assignment-and-survey-operations -->
 
 Fibre assignment decides which targets get a spectrum. Its imprint on
 clustering, and the corrections (PIP weights, θ-cut, altMTL completeness), are
@@ -85,6 +87,7 @@ DESI's survey-operations loop, which feeds redshifts back into targeting,
 is in `surveys-and-data.md` (Sect. 1).
 
 ## 3. Spectral extraction, calibration and sky subtraction
+<!-- key: spectral-extraction-calibration-and-sky -->
 
 **Order of operations in a fibre pipeline** (DESI, Guy et al. 2023,
 arXiv:2209.14482, Sect. IV): bias, dark and overscan subtraction; gains;
@@ -134,6 +137,7 @@ matters for the redshift fitter's Δχ² [src: arXiv:2209.14482,
 Sect. IV.7.4–IV.7.5].
 
 ## 4. Redshift fitting, classification and visual inspection
+<!-- key: redshift-fitting-classification-and-visual -->
 
 **Template χ² fitting.** The standard is a χ² scan over redshift of linear
 template combinations, per spectral class, with the class and redshift of the
@@ -187,6 +191,7 @@ velocity tolerance (3000 km/s for DESI quasars in arXiv:2208.08517) [src].
 Numbers from different surveys are comparable only after these are matched.
 
 ## 5. Image detrending and astrometry
+<!-- key: image-detrending-and-astrometry -->
 
 **Instrument signature removal (ISR).** The pipeline works backward through
 the signal chain, from ADU to photoelectrons. The Rubin DP1 order is ADU
@@ -224,6 +229,7 @@ and parallax; differential chromatic refraction was not corrected in DP1
 [src: arXiv:2603.23786, Sect. IV.3.2].
 
 ## 6. PSF modelling in imaging pipelines
+<!-- key: psf-modelling-in-imaging-pipelines -->
 
 The PSF model of an imaging pipeline feeds PSF photometry, model fitting,
 star–galaxy separation, deblending and shear. Its effect on shear (ρ
@@ -251,6 +257,7 @@ approximation that the PSF at an object's centre holds for the whole object
 fails where the number of inputs changes [src: Sect. 3.3.1].
 
 ## 7. Detection, deblending, co-addition and photometry
+<!-- key: detection-deblending-co-addition-and-photometry -->
 
 **Co-addition.** For detection and flux, the S/N-optimal combination of
 images with different seeing is to matched-filter each image with its own
@@ -286,6 +293,7 @@ the regime that biases cosmology (Berres et al. 2026, arXiv:2607.28475)
 [src].
 
 ## 8. CMB time-ordered data to maps
+<!-- key: cmb-time-ordered-data-to-maps -->
 
 Power-spectrum estimation, transfer-function correction in pseudo-C_ℓ
 (MASTER), ranges used in the likelihoods, and foreground separation are in
@@ -323,6 +331,7 @@ Planck's processing chains are summarised in `surveys-and-data.md`
 (Sect. 3).
 
 ## 9. Catalogue construction: masks, randoms, completeness, weights
+<!-- key: catalogue-construction-masks-randoms -->
 
 A clustering catalogue is a weighted data sample paired with a weighted
 random sample that is an unclustered draw from the probability that the
@@ -378,6 +387,7 @@ arXiv:2007.09000) [src].
 | Forward model by injection (Obiwan, Balrog) | the selection function from the real pipeline | costly; see Sect. 10 | arXiv:2007.08992, arXiv:2012.12825 [src] |
 
 ## 10. Source injection and end-to-end simulation of pipelines
+<!-- key: source-injection-and-end-to-end-simulation-of -->
 
 Injecting synthetic sources into real images and running the unchanged
 pipeline measures the "transfer function" from truth to catalogue: detection
@@ -394,6 +404,7 @@ not adopted as the DR1 correction [sec: cosmo-galaxy-clustering,
 systematics Sect. 5].
 
 ## 11. Data-release practice and validation
+<!-- key: data-release-practice-and-validation -->
 
 **Practice in current releases.** A release is the reduction version plus
 the catalogues, masks, randoms, survey-property maps and known-issues list
@@ -423,3 +434,10 @@ downstream statistic (Brieden et al. 2020, arXiv:2006.10857) [src]. How each
 probe blinds is in the probe skills and `cosmo-statistics-inference`.
 
 ## Not verified
+<!-- key: not-verified -->
+
+- Redrock reference paper (cited by DESI as in preparation) not read.
+- Legacy Surveys Tractor algorithm paper not read; cited through the Legacy Surveys overview.
+- PSFEx and SWarp reference papers not read.
+- 4MOST and PFS reduction pipelines: no pipeline paper found within budget.
+- Rubin DP1 deblender (Scarlet variant) not confirmed in the body.

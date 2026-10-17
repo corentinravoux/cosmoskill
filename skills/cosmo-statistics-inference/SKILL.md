@@ -13,17 +13,20 @@ re-verify against the cited paper before a number enters a manuscript.
 
 | Question | Load |
 |---|---|
-| Methods, formulas, reference papers, codes | `references/physics-and-methods.md` |
-| Practice of DESI, DES, KiDS, ACT, SPT, Planck, Euclid; priors | `references/surveys-and-data.md` |
-| Correction sizes, projection shifts, Δχ² against evidence, metric differences | `references/results.md` |
+| Methods, formulae, codes | `references/physics-and-methods.md` |
+| Collaboration practice; priors | `references/surveys-and-data.md` |
+| Correction sizes, projection shifts, Δχ² against evidence, metrics | `references/results.md` |
 | Failure modes; referee checklist | `references/systematics.md` |
 | Debates, misconceptions, not verified | `references/open-questions.md` |
 | Bibliography with roles | `references/sources.tsv` |
+| Building, correcting, validating a covariance | `deep/covariance-estimation.md` |
+| Computing a profile likelihood | `deep/profile-likelihoods.md` |
+| Computing and choosing a tension metric | `deep/tension-metrics.md` |
 
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
 
-- Hartlap fixes the precision bias only; best-fit scatter needs a second factor. 1000 mocks, 10 parameters: scatter +5% (100 data points), +29% (400) in error bar (Dodelson–Schneider variance factors 1.10, 1.65); a raw-sample-covariance posterior must widen 10% and 65%, Hartlap included (arXiv:2108.10402, arXiv:1304.2593). Name variance or error bar: BOSS "7%" is variance.
+- Hartlap fixes the precision bias only; best-fit scatter needs a second factor. 1000 mocks, 10 parameters: scatter +5% (100 data points), +29% (400) in error bar; a raw-sample-covariance posterior must widen 10% and 65%, Hartlap included (arXiv:2108.10402, arXiv:1304.2593). Name variance or error bar: BOSS "7%" is variance.
 - A Gaussian likelihood takes a covariance fixed in parameter space (arXiv:1204.4724); likelihood non-Gaussianity moved BOSS fσ8 by −0.44σ (arXiv:1803.06348).
 - Posterior mean and best fit separate in extended models: up to 6.6σ for DESI DR1 full shape in w0waCDM (arXiv:2508.11811); 1σ–2σ in BOSS by EFT prior (arXiv:2208.05929).
 - DES Y6 pre-registered its projection test, with pulls below 0.5σ in ΛCDM (arXiv:2601.14559); KiDS-Legacy reports mean, mode and MAP side by side (arXiv:2503.19441).
@@ -35,25 +38,25 @@ re-verify against the cited paper before a number enters a manuscript.
 - Simulation-based inference inflates variance at least as much as a mock covariance (arXiv:2412.02311); passing coverage is not validation (arXiv:2605.00980).
 - Emulator accuracies (0.4%, arXiv:2106.03846; 1% dark-matter-only, arXiv:2010.11288) are interpolation errors; such error can miscalibrate a Gaussian likelihood (arXiv:2607.17942).
 - Fisher forecasts underestimate w0–wa errors from geometrical probes by 30%–70% (arXiv:1205.3984).
-- Blinding levels differ: catalogue (DESI, arXiv:2404.07282), data vector (DES, arXiv:1911.05929), three catalogues (KiDS); ACT DR6 and DES Y6 publish criteria and deviations (arXiv:2503.14452).
+- Blinding levels: catalogue (DESI, arXiv:2404.07282), data vector (DES, arXiv:1911.05929), three catalogues (KiDS); ACT DR6 and DES Y6 publish criteria and deviations (arXiv:2503.14452).
 - The trial factor equals the prior-to-posterior volume ratio (arXiv:2007.13821).
 
 ## Systematics a referee checks
 <!-- key: systematics-a-referee-checks -->
 
-Covariance source, mocks against data-vector length, which correction;
-likelihood form; prior edges; mean, mode or MAP, with projection measured on
-synthetic data per model; boundary treatment; sampler, convergence, best-fit
+Covariance source, mocks against data-vector length, correction;
+likelihood form; prior edges; mean, mode or MAP, projection per
+model; boundary treatment; sampler, convergence, best-fit
 search; `Δχ²` with its degrees of freedom; Bayes factor with priors; tension
 metric, subspace and reference fixed in advance; independence of combined
-data; emulator range and error propagation; coverage plus a fixed-parameter
-test; blinding level and post-unblinding changes. Details:
+data; emulator range and error; coverage plus a fixed-parameter
+test; blinding level and post-unblinding changes:
 `references/systematics.md` §17.
 
 ## Errors that recur
 <!-- key: errors-that-recur -->
 
-- "Hartlap-corrected" presented as the full treatment of mock noise; a variance factor quoted as an error-bar factor.
+- "Hartlap-corrected" as the full treatment of mock noise; a variance factor quoted as an error-bar factor.
 - `sqrt(Δχ²)` quoted as σ for two extra parameters.
 - A `Δχ²` significance described as Bayesian evidence, or the reverse.
 - "The tension is nσ" without metric and reference; quadrature sums for correlated data.
@@ -73,7 +76,7 @@ test; blinding level and post-unblinding changes. Details:
 - `cosmo-neutrinos-dark-matter`: Σm_ν boundary.
 - `cosmo-tensions-anomalies`: cross-probe tensions, CMB anomalies.
 - `cosmo-cmb`, `cosmo-supernovae`: Planck likelihoods; hierarchical models.
-- `cosmo-simulations-mocks`, `cosmo-software-ecosystem`: mocks; codes. Hub: `observational-cosmology`.
+- `cosmo-simulations-mocks`, `cosmo-software-ecosystem`: mocks; codes.
 
 <!-- cosmoskill:block:start — generated by tools/sync_blocks.py, do not edit by hand -->
 ## Levels and layers
@@ -85,10 +88,10 @@ Answer at the lowest level that answers the question, then stop.
 |---|---|---|
 | L1 | this file only | the headline values, the state of the domain, the list a referee checks, the errors that recur |
 | L2 | one file of `references/` | what this file does not hold: other values, their history, the size of each systematic, methods, releases |
-| L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
+| L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 9k; methods 23k; results 10k; surveys 7k; systematics 13k.
+Sizes, in thousands of tokens: L1 3k; open 9k; methods 23k; results 10k; surveys 7k; systematics 13k; deep/covariance-estimation 9k; deep/profile-likelihoods 8k; deep/tension-metrics 7k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

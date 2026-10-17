@@ -1,7 +1,7 @@
 # Open questions and misconceptions — cosmological simulations and mocks
 
 Scope: live debates, internal tensions between suites, and stale claims with the paper that corrects each.
-Snapshot: 2026-10-13
+Snapshot: 2026-10-16
 
 ## 1. Live debates
 <!-- key: live-debates -->
@@ -142,7 +142,7 @@ What is achieved against these: the gravity-only requirement is met by tuned cod
 | "Friends-of-friends haloes enclose 180 times the mean density." | The boundary is at 81.62 times the mean for b = 0.2 and the enclosed overdensity depends on concentration. | arXiv:1103.0005 |
 | "Hydrodynamical simulations predict the suppression." | They are calibrated; the suppression follows the group gas fraction they were tuned to, and suites differ by a factor of two. | arXiv:1906.00968, arXiv:2512.02954 |
 | "FLAMINGO is ruled out by kSZ" / "FLAMINGO fits the kSZ". | The fiducial variant is more than 8σ from one kSZ and X-ray analysis and tracks another kSZ-to-lensing measurement; strong-feedback variants fit the first. | arXiv:2509.10455, arXiv:2609.22466 |
-| "CAMELS gives the baryonic effect on P(k)." | Its boxes are 25 Mpc/h; the response converges only above (200 Mpc)³. CAMELS is a training set. | arXiv:2010.00619, arXiv:2410.17109 |
+| "CAMELS gives the baryonic effect on P(k)." | Its first-generation boxes are 25 Mpc/h, the second generation's 50 Mpc/h (1,192 runs; arXiv:2606.10038); the response converges only above (200 Mpc)³. CAMELS is a training set. | arXiv:2010.00619, arXiv:2410.17109, arXiv:2606.10038 |
 | "The emulator is accurate to 1%, so theory error is 1%." | 1% is interpolation error against gravity-only runs; add the code-to-code and baryonic terms. | arXiv:2010.11288; `cosmo-statistics-inference` |
 | "Fixed-and-paired simulations give better covariances." | They suppress variance; they cannot estimate it. Three-point variance is not even reduced. | arXiv:1603.05253, arXiv:1811.02111 |
 | "Start the simulation as early as possible." | Early starts amplify discreteness errors; start late with 3LPT. | arXiv:2008.09588 |

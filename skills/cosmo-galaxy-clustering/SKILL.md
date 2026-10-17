@@ -19,6 +19,9 @@ re-verify against the cited paper before a number enters a manuscript.
 | Systematic budgets, mitigations, referee checklist | `references/systematics.md` |
 | Controversies, method debates, next data, stale claims | `references/open-questions.md` |
 | Bibliography with roles | `references/sources.tsv` |
+| How BAO are reconstructed and fitted; solver, convention, damping, 1D/2D | `deep/bao-reconstruction-fitting.md` |
+| Full modelling or ShapeFit; EFT codes, bias bases, priors, FS+BAO | `deep/full-shape-modelling.md` |
+| Window matrix, wide-angle terms, integral constraints, normalisation | `deep/estimators-window.md` |
 
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
@@ -108,10 +111,10 @@ Answer at the lowest level that answers the question, then stop.
 |---|---|---|
 | L1 | this file only | the headline values, the state of the domain, the list a referee checks, the errors that recur |
 | L2 | one file of `references/` | what this file does not hold: other values, their history, the size of each systematic, methods, releases |
-| L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
+| L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; open 5k; methods 9k; results 7k; surveys 5k; systematics 9k.
+Sizes, in thousands of tokens: L1 2k; open 5k; methods 9k; results 7k; surveys 5k; systematics 9k; deep/bao-reconstruction-fitting 7k; deep/estimators-window 6k; deep/full-shape-modelling 7k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

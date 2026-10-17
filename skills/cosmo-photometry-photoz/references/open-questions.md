@@ -19,7 +19,14 @@ the unified DESI calibration of DES, HSC and KiDS agrees with DES Y3 and HSC
 Y1 but not with the KiDS-1000 means, which it attributes to a mismatch of
 photometric noise between COSMOS and the KiDS gold sample, without a
 significant change in the KiDS growth estimate (Lange et al. 2025,
-arXiv:2510.25419) [src]. Forward modelling of KiDS-1000 with two galaxy
+arXiv:2510.25419) [src]. The body names three candidate causes: its use of
+COSMOS2020 photo-z, which raise mean redshifts even at fixed SOM cell; KiDS
+imaging in COSMOS being deeper than the wide survey, which it does not
+reweight while KiDS-1000 did through the SOM; and the KiDS gold cut, Eq. 13,
+defined and calibrated on the same O(10) spectra per cell, which truncates
+bin 1 near z ≈ 0.6 by construction [src: Sect. VI.2]. Bin 1 differs mostly
+in its high-z tail: the medians agree (0.229 against 0.234)
+[src: Sect. V.3]. Forward modelling of KiDS-1000 with two galaxy
 population models (pop-cosmos and the semi-analytic shark) differs by Δz ~
 0.05–0.1 in the first and last bins, comparable to the spectroscopic
 reweighting uncertainties (Leistedt et al. 2026, arXiv:2602.03935) [src]. A
@@ -63,7 +70,9 @@ demonstrated that the required accuracy survives astrophysical systematics
 beats the requirement by a factor ≥ 3 while systematic biases limit the
 accuracy (arXiv:2208.10503) [src]; the newer Euclid pipeline meets the
 requirement for bins to z_phot = 1.6 with a 1.5 Mpc minimum scale
-(arXiv:2505.10416) [src]. In data, clustering redshifts have so far served
+(arXiv:2505.10416) [src], with its optimistic shifted-stretched n(z)
+model; the conservative Gaussian-process model misses it slightly in three
+of ten bins on 1000 deg² patches [src: Sect. 5]. In data, clustering redshifts have so far served
 as a cross-check or as importance weights on SOM realisations, not as the
 sole calibration (arXiv:2510.23565, arXiv:2503.19440) [src]. Two extensions
 target the weak points: Lyα-forest cross-correlations for the 2 < z < 3 tail
@@ -104,6 +113,26 @@ method (arXiv:2605.06790) [src: Sect. 2.0.5]. The counter-trend is domain
 adaptation (arXiv:2512.11700) [src] and manifold methods robust to biased
 training sets (arXiv:2512.09032) [src], judged so far on point metrics.
 
+PDF calibration in the bodies. In CANDELS the fraction of true redshifts
+inside the nominal 68.3% interval ranged from 2.5% to 89% across eleven
+codes with comparable point scatter, and inside the 95.4% interval from 2.9%
+to 97%; in the LSST DESC test with perfect inputs every code's PIT deviated
+from uniform by an order of magnitude more than the trainZ control, which
+returns the training-set histogram for every galaxy (Newman & Gruen 2022,
+arXiv:2206.13633) [src: Sect. 4.1.1]. Nominally Bayesian codes can also fail
+to marginalise over template type, so their output matches no definition of
+a PDF [src: Sect. 4.1.1].
+
+**Storage of joint posteriors.** One-dimensional compression schemes
+(arXiv:1404.6442, arXiv:1806.00014) break down for p(z, G | photometry): a
+100-point grid in five dimensions (z, mass, sSFR, metallicity, dust) is 10⁸
+numbers per object, nearly an exabyte per billion objects; the review's
+options are posterior samples (10–100 per object), emulators fast enough to
+avoid storage, or p(z) plus a compact model of p(G | z, photometry), and
+aggregate distributions should combine likelihoods, not posteriors
+(arXiv:2206.13633) [src: Sect. 4.1.4]. Which option a Rubin- or Euclid-scale
+catalogue adopts is open.
+
 ## 6. Which dust map
 <!-- key: which-dust-map -->
 
@@ -121,7 +150,15 @@ On Euclid DR3-like mocks, defining bins by the mean spec-z of SOM cells
 leaves no bin within requirement, while binning on individual photo-z
 leaves eight of ten within it (six with a C3R2-like calibration sample)
 (arXiv:2508.02779) [src] (**forecast**). This reverses a common Stage-III
-choice.
+choice. The reason given is that SOM cells can hold heterogeneous, even
+bimodal, populations whose cell-mean redshift represents neither, while
+individual photo-z PDFs are mostly unimodal and sub-sample the cell
+[src: arXiv:2508.02779, Sect. 4.4]. Against it, DES Y6 keeps SOM-cell
+binning (by the mode of the cell n(z)): the gain relies on unbiased
+individual photo-z, which DES cannot assume, and a study it cites (Kang et
+al., in preparation) finds the gain marginal for DES-like photometry once a
+realistic transfer function such as Balrog is included
+(arXiv:2510.23566) [src: Sect. 4.1].
 
 ## 8. How much spectroscopy, and where
 <!-- key: how-much-spectroscopy-and-where -->

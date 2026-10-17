@@ -9,8 +9,10 @@ Flags: `[src]` abstract read this session; `[src: Sect. n]` body read;
 `[sec]` named secondary source; `[der]` derived here.
 
 ## 1. Method debates
+<!-- key: method-debates -->
 
 ### 1.1 Redshift fitters: fast PCA templates, physical archetypes or networks
+<!-- key: redshift-fitters-fast-pca-templates-physical -->
 
 - Side A, PCA templates. Fast and flexible; DESI Redrock met every
   survey-validation requirement with purity above 99% for all classes
@@ -29,6 +31,7 @@ Flags: `[src]` abstract read this session; `[src: Sect. n]` body read;
   the main pipeline is "generally robust" (arXiv:2405.19288) [src].
 
 ### 1.2 Imaging-systematics weights: regression or forward model
+<!-- key: imaging-systematics-weights-regression-or -->
 
 - Regression on maps (linear, neural network, random forest) is standard
   (arXiv:1907.11355, arXiv:2105.13540) [src], but every regression has its
@@ -45,6 +48,7 @@ Flags: `[src]` abstract read this session; `[src: Sect. n]` body read;
   baseline remaining optimal for the full sample (arXiv:2606.18581) [src].
 
 ### 1.3 Randoms: redshifts from the data or from a model
+<!-- key: randoms-redshifts-from-the-data-or-from-a-model -->
 
 Sampling random redshifts from the data matches dN/dz exactly and nulls
 radial modes; DESI states it will revisit the choice if dN/dz can be
@@ -52,6 +56,7 @@ forward-modelled [src: arXiv:2405.16593, Sect. 7.2]. Slitless surveys must
 model detection anyway (arXiv:2511.20856) [src].
 
 ### 1.4 CMB map-making: filter-and-bin or unbiased maximum likelihood
+<!-- key: cmb-map-making-filter-and-bin-or-unbiased -->
 
 - Filtering with an explicit correction gives unbiased maps, but those maps
   "may not straightforwardly lead to the best constraints on the power
@@ -67,6 +72,7 @@ model detection anyway (arXiv:2511.20856) [src].
   unpolarised signals (arXiv:2606.31720) [src].
 
 ### 1.5 Deblending: deterministic catalogues or probabilistic scenes
+<!-- key: deblending-deterministic-catalogues-or -->
 
 SCARLET leads on segmentation and reconstruction, DeepDISC on faint
 recall (arXiv:2607.28475) [src]; BLISS outputs posteriors over the number
@@ -75,6 +81,7 @@ and type of sources (arXiv:2601.03422) [src]. Unrecognised blends remain
 release yet ships a probabilistic catalogue as its main product.
 
 ### 1.6 Fibre-assignment corrections when targets outnumber fibres
+<!-- key: fibre-assignment-corrections-when-targets -->
 
 PIP weights are unbiased in principle (arXiv:1703.02070) [src] and were
 produced for DESI from alternate target ledgers (arXiv:2404.03006) [src],
@@ -87,6 +94,7 @@ cross-spectra to ~1% but not the auto-spectrum at k ≳ 0.2 h Mpc⁻¹
 DESI choice is in `cosmo-galaxy-clustering`.
 
 ### 1.7 Visual inspection as the truth table
+<!-- key: visual-inspection-as-the-truth-table -->
 
 Every success and purity number for DESI is relative to VI of deep co-adds
 of a few thousand to ten thousand spectra per class (arXiv:2208.08516,
@@ -97,6 +105,7 @@ inspected samples, their depth relative to the main survey, and the
 dependence of new networks on them (arXiv:2608.10080) [src].
 
 ## 1b. Known tensions between pipelines and releases
+<!-- key: known-tensions-between-pipelines-and-releases -->
 
 - DES Y3 excluded the g band from lensing because its PSF models were not
   accurate enough; Y6 restored it with colour-dependent Piff models
@@ -115,6 +124,7 @@ dependence of new networks on them (arXiv:2608.10080) [src].
   few-percent level after component separation (arXiv:1807.06208) [src].
 
 ## 1c. Forecasts
+<!-- key: forecasts -->
 
 - LSST full depth (**forecast**): ~62% of detected galaxies blended at the
   1% flux level and N_eff lowered by ~18%, to at most 39.4 arcmin⁻² in r
@@ -127,6 +137,7 @@ dependence of new networks on them (arXiv:2608.10080) [src].
   (arXiv:1805.00951) [src].
 
 ## 2. What the next data will decide
+<!-- key: what-the-next-data-will-decide -->
 
 - Euclid DR1: whether automated NISP redshifts can be made reliable as the
   extracted sample deepens; in Q1 under 10% of spectra allow a redshift
@@ -146,6 +157,7 @@ dependence of new networks on them (arXiv:2608.10080) [src].
   arXiv:2606.31720) [src].
 
 ## 3. Stale claims and misconceptions
+<!-- key: stale-claims-and-misconceptions -->
 
 | Claim that still circulates | Correction |
 |---|---|
@@ -161,3 +173,7 @@ dependence of new networks on them (arXiv:2608.10080) [src].
 | A survey-design area or density is a delivered one | Legacy Surveys' ~14,000 deg² is the design (arXiv:1804.08657) [src]; current areas are in `cosmo-surveys-facilities` |
 
 ## Not verified
+<!-- key: not-verified -->
+
+- Whether PIP weights entered the DESI DR2 fits: not read here; see `cosmo-galaxy-clustering`.
+- Simons Observatory first-light map quality: no paper read.

@@ -1,0 +1,98 @@
+key	id	first_author	year	title	role
+Cooke2024	2409.06015	Cooke	2024	Big Bang Nucleosynthesis	review
+GrohsFuller2023	2301.12299	Grohs	2023	Big Bang Nucleosynthesis	review
+Cooke2018	1710.11129	Cooke	2017	One percent determination of the primordial deuterium abundance	results
+Kislitsyn2024	2401.12797	Kislitsyn	2024	A New Precise Determination of the Primordial Abundance of Deuterium: Measurement in the metal-poor sub-DLA system at z=3.42 towards quasar J1332+0052	results
+Guarneri2024	2402.05586	Guarneri	2024	Fundamental physics with ESPRESSO: a new determination of the D/H ratio towards PKS1937-101	results
+Zavarygin2018a	1706.09512	Zavarygin	2017	The primordial deuterium abundance at z = 2.504 from a high signal-to-noise spectrum of Q1009+2956	results
+Zavarygin2018b	1801.04704	Zavarygin	2018	Primordial deuterium abundance at z=2.504 towards Q1009+2956	results
+Lee2020KHT	1910.02913	Lee	2019	Quantum mechanics at high redshift -- Modelling Damped Lyman-$α$ absorption systems	systematics
+Yeh2021dpg	2011.13874	Yeh	2020	The Impact of New d(p,γ)He3 Rates on Big Bang Nucleosynthesis	results
+Pitrou2021	2011.11320	Pitrou	2020	A new tension in the cosmological model from primordial deuterium?	critique
+Pisanti2021	2011.11537	Pisanti	2020	Primordial Deuterium after LUNA: concordances and error budget	results
+Mossa2020setup	2005.00002	Mossa	2020	Setup commissioning for an improved measurement of the D(p,gamma)3He cross section at Big Bang Nucleosynthesis energies	data
+Launders2026	2604.16600	Launders	2026	A data-driven prediction for the primordial deuterium abundance	results
+Poulin2026	2607.20635	Poulin	2026	What could an emerging Big Bang Nucleosynthesis discrepancy be hinting at?	critique
+Giovanetti2026	2604.05095	Giovanetti	2026	A generic $ω_b$ tension in early-time solutions to the Hubble tension	critique
+GoldsteinHill2026	2603.13226	Goldstein	2026	A 2% determination of $N_{\rm eff}$ from primordial element abundance, cosmic microwave background, and baryon acoustic oscillation measurements	results
+Akharman2026	2609.12065	Akharman	2026	The Role of Big Bang Nucleosynthesis in Joint Cosmological Analyses	method
+Yeh2026	2601.22239	Yeh	2026	The LBT $Y_{\rm p}$ Project V: Cosmological Implications of a New Determination of Primordial $^4$He	results
+Tait2026dpg	2607.05514	Tait	2026	Deuterium-Proton Fusion in an Effective Field Theory Constructed from On-Shell Amplitudes	method
+Schoneberg2024	2401.15054	Schöneberg	2024	The 2024 BBN baryon abundance update	results
+Pitrou2018	1801.08023	Pitrou	2018	Precision big bang nucleosynthesis with improved Helium-4 predictions	code
+Pisanti2008	0705.0290	Pisanti	2007	PArthENoPE: Public Algorithm Evaluating the Nucleosynthesis of Primordial Elements	code
+Consiglio2018	1712.04378	Consiglio	2017	PArthENoPE reloaded	code
+Gariazzo2022	2103.05027	Gariazzo	2021	PArthENoPE Revolutions	code
+Arbey2012	1106.1363	Arbey	2011	AlterBBN: A program for calculating the BBN abundances of the elements in alternative cosmologies	code
+Arbey2020	1806.11095	Arbey	2018	AlterBBN v2: A public code for calculating Big-Bang nucleosynthesis constraints in alternative cosmologies	code
+Burns2024	2307.07061	Burns	2023	PRyMordial: The First Three Minutes, Within and Beyond the Standard Model	code
+Giovanetti2024	2408.14538	Giovanetti	2024	LINX: A Fast, Differentiable, and Extensible Big Bang Nucleosynthesis Package	code
+MeissnerMetsch2022	2208.12600	Meißner	2022	Probing nuclear observables via primordial nucleosynthesis	method
+Coc2015	1511.03843	Coc	2015	New reaction rates for improved primordial D/H calculation and the cosmic evolution of deuterium	foundation
+GomezInesta2017	1710.01647	Gómez Iñesta	2017	Bayesian estimation of thermonuclear reaction rates for deuterium+deuterium reactions	method
+Viviani2022	2207.01433	Viviani	2022	Theoretical study of the d(d,p)3H and d(d,n)3He processes at low energies	method
+Sparta2025	2512.24358	Spartà	2025	Big Bang Nucleosynthesis results refined via the Trojan Horse Method	results
+Masha2025	2510.05651	Masha	2025	Underground nuclear astrophysics: Status and recent results from Felsenkeller laboratory	data
+Mossa2020	doi:10.1038/s41586-020-2878-4	Mossa	2020	The baryon density of the Universe from an improved rate of deuterium burning	data
+Barbagallo2016	1606.09420	Barbagallo	2016	The 7Be(n,alpha)4He reaction and the Cosmological Lithium Problem: measurement of the cross section in a wide energy range at n_TOF (CERN)	data
+Damone2018	1803.05701	Damone	2018	The $^{7}$Be($\boldsymbol{n,p}$)$^{7}$Li reaction and the Cosmological Lithium Problem: measurement of the cross section in a wide energy range at n_TOF (CERN)	data
+Leonard2006	nucl-ex/0601035	Leonard	2006	Precision Measurements of d(d,p)t and d(d,n)^3He Total Cross Sections at Big-Bang Nucleosynthesis Energies	data
+Li2015THM	1503.08672	Li	2015	New measurement of the d(d,p)t reaction at astrophysical energies via the Trojan-horse method	data
+Yeh2023tau	2303.04140	Yeh	2023	The Neutron Mean Life and Big Bang Nucleosynthesis	method
+Froustey2020	2008.01074	Froustey	2020	Neutrino decoupling including flavour oscillations and primordial nucleosynthesis	method
+Czarnecki2018	1802.01804	Czarnecki	2018	Neutron Lifetime and Axial Coupling Connection	method
+Gonzalez2021	2106.10375	Gonzalez	2021	Improved neutron lifetime measurement with UCN$τ$	data
+Serebrov2020	2011.13272	Serebrov	2020	Search for explanation of the neutron lifetime anomaly	critique
+Yue2013	1309.2623	Yue	2013	Improved Determination of the Neutron Lifetime	data
+Fuwa2024	2412.19519	Fuwa	2024	Improved measurements of neutron lifetime with cold neutron beam at J-PARC	data
+Hirota2020	2007.11293	Hirota	2020	Neutron lifetime measurement with pulsed cold neutrons	data
+Auler2025	2503.15239	Auler	2025	Ultra-cold neutron simulation framework for the free neutron lifetime experiment $τ$SPECT	data
+Caylor2025	2506.01682	Caylor	2025	Detection of molecular hydrogen in a neutron beam lifetime experiment	systematics
+Dubbers2018	1812.00626	Dubbers	2018	Exotic decay channels are not the cause of the neutron lifetime anomaly	critique
+Aver2026	2601.22238	Aver	2026	The LBT Y$_\mathrm{p}$ Project IV: A New Value of the Primordial Helium Abundance	results
+Skillman2026	2601.22232	Skillman	2026	The LBT $Y_{\rm p}$ Project I: An Improved Determination of the Primordial Helium Abundance -- Project Description, Sample Selection, Observations, and Methodology	data
+Weller2026	2601.22237	Weller	2026	The LBT $Y_{\rm p}$ Project III: LUCI Spectra of Metal-Poor Nebulae	data
+Yanagisawa2025	2506.24050	Yanagisawa	2025	EMPRESS. XV. A New Determination of the Primordial Helium Abundance Suggesting a Moderately Low $Y_\mathrm{P}$ Value	results
+Matsumoto2022	2203.09617	Matsumoto	2022	EMPRESS. VIII. A New Determination of Primordial He Abundance with Extremely Metal-Poor Galaxies: A Suggestion of the Lepton Asymmetry and Implications for the Hubble Tension	results
+Kurichin2021	2101.09127	Kurichin	2021	A new determination of the primordial helium abundance using the analyses of HII region spectra from SDSS	results
+Kurichin2022	2201.06431	Kurichin	2022	Determination of HII region metallicity in the context of estimating the primordial helium abundance	method
+Valerdi2021	2105.12260	Valerdi	2021	Chemical abundances in 7 metal-poor HII regions and a determination of the primordial helium abundance	results
+Valerdi2019	1904.01594	Valerdi	2019	Determination of the primordial helium abundance based on NGC 346 an HII region of the Small Magellanic Cloud	results
+Hsyu2020	2005.12290	Hsyu	2020	The PHLEK Survey: A New Determination of the Primordial Helium Abundance	results
+Aver2015	1503.08146	Aver	2015	The effects of He I 10830 on helium abundance determinations	results
+Izotov2014	1408.6953	Izotov	2014	A new determination of the primordial He abundance using the HeI 10830A emission line: cosmological implications	results
+CookeFumagalli2018	1810.06561	Cooke	2018	Measurement of the primordial helium abundance from the intergalactic medium	results
+Cooke2022He3	2203.11256	Cooke	2022	Primordial helium-3 redux: The helium isotope ratio of the Orion nebula	results
+Cooke2026He3	2605.00122	Cooke	2026	Towards a measurement of the primordial helium isotope ratio	results
+BalserBania2018	1810.09422	Balser	2018	Green Bank Telescope Observations of 3He+: HII Regions	data
+BaniaBalser2021	2012.11707	Bania	2020	Green Bank Telescope Observations of ${\bf ^3He^{\bf +}}$: Planetary Nebulae	data
+Johnson2025	2510.08689	Johnson	2025	Metals versus Non-metals: Chemical Evolution of Hydrogen and Helium Isotopes in the Milky Way	forecast
+Cooke2015	1510.02801	Cooke	2015	Big Bang Nucleosynthesis and the Helium Isotope Ratio	method
+Fields2011	1203.3551	Fields	2012	The Primordial Lithium Problem	review
+Fields2020	1912.01132	Fields	2019	Big-Bang Nucleosynthesis After Planck	review
+Norris2023	2303.11497	Norris	2023	A Critique of the Spite Plateau, and the Astration of Primordial Lithium	critique
+Korn2021	2111.00913	Korn	2021	How stars in globular clusters reveal the depletion of the Spite plateau of lithium	systematics
+Gao2020	2006.05173	Gao	2020	The GALAH Survey: A new constraint on cosmological lithium and Galactic lithium evolution from warm dwarf stars	results
+Tognelli2020	2004.14857	Tognelli	2020	Protostellar accretion in low mass metal poor stars and the cosmological lithium problem	systematics
+Monaco2010	1008.1817	Monaco	2010	The lithium content of omega Centauri. New clues to the cosmological Li problem from old stars in external galaxies	results
+Howk2012	1207.3081	Howk	2012	Observation of interstellar lithium in the low-metallicity Small Magellanic Cloud	results
+Ganguly2026	2604.01324	Ganguly	2026	Bipartite Solution to the Lithium Problem	critique
+Yeh2022	2207.13133	Yeh	2022	Probing Physics Beyond the Standard Model: Limits from BBN and the CMB Independently and Combined	results
+Sabti2020	1910.01649	Sabti	2019	Refined Bounds on MeV-scale Thermal Dark Sectors from BBN and the CMB	results
+Sabti2021	2107.11232	Sabti	2021	Addendum: Refined bounds on MeV-scale thermal dark sectors from BBN and the CMB	results
+Escudero2022	2208.03201	Escudero	2022	Primordial lepton asymmetries in the precision cosmology era: Current status and future sensitivities from BBN and the CMB	results
+Kawasaki2005	astro-ph/0408426	Kawasaki	2004	Big-Bang Nucleosynthesis and Hadronic Decay of Long-Lived Massive Particles	foundation
+Jedamzik2006	hep-ph/0604251	Jedamzik	2006	Big Bang Nucleosynthesis Constraints on Hadronically and Electromagnetically Decaying Relic Neutral Particles	foundation
+Bianco2026	2605.26824	Bianco	2026	Improved Big Bang Nucleosynthesis constraints on decaying massive relics	results
+Ganguly2025	2507.23354	Ganguly	2025	Consistent $N_{\rm eff}$ fitting in big bang nucleosynthesis analysis	critique
+Burns2026	2603.22414	Burns	2026	Inside the Black Box of Big Bang Nucleosynthesis: A Comprehensive Sensitivity Atlas for the Precision Era	method
+PospelovPradler2010	1011.1054	Pospelov	2010	Big Bang Nucleosynthesis as a Probe of New Physics	review
+Bertulani2022	2210.04071	Bertulani	2022	Big Bang nucleosynthesis as a probe of new physics	review
+Zhou2026	2602.15104	Zhou	2026	ABCMB: A Python+JAX Package for the Cosmic Microwave Background Power Spectrum	code
+TakahashiToda2023	2306.00454	Takahashi	2023	Impact of big bang nucleosynthesis on the H0 tension	critique
+Fields2006PDG	astro-ph/0601514	Fields	2006	Big-Bang nucleosynthesis (Particle Data Group mini-review)	review
+Fields2014PDG	1412.1408	Fields	2014	Big-Bang Nucleosynthesis	review
+Cyburt2016	1505.01076	Cyburt	2015	Big Bang Nucleosynthesis: 2015	review
+IliadisCoc2020	2008.12200	Iliadis	2020	Thermonuclear reaction rates and primordial nucleosynthesis	review
+DreyerMartins2026	2604.04870	Dreyer	2026	Probing Unification Scenarios with Big Bang Nucleosynthesis	method
+MeadorWoodruff2024	2412.07893	Meador-Woodruff	2024	BBN-simple: How to Bake a Universe-Sized Cake	code

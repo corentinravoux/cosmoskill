@@ -117,3 +117,11 @@ ForemanMackey2013	1202.3665	Foreman-Mackey	2012	emcee: The MCMC Hammer	code
 GelmanRubin1992	doi:10.1214/ss/1177011136	Gelman	1992	Inference from Iterative Simulation Using Multiple Sequences	foundation
 Papamakarios2016	1605.06376	Papamakarios	2016	Fast $ε$-free Inference of Simulation Models with Bayesian Conditional Density Estimation	foundation
 Alsing2018	1801.01497	Alsing	2018	Massive optimal data compression and density estimation for scalable, likelihood-free inference in cosmology	method
+Heymans2021	2007.15632	Heymans	2020	KiDS-1000 Cosmology: Multi-probe weak gravitational lensing and spectroscopic galaxy clustering constraints	results
+Rashkovetskyi2024	2404.03007	Rashkovetskyi	2024	Semi-analytical covariance matrices for two-point correlation function for DESI 2024 data	method
+DiValentino2025CosmoVerse	2504.01669	Di Valentino	2025	The CosmoVerse White Paper: Addressing observational tensions in cosmology with systematics and fundamental physics	review
+Herold2025DE	2506.12004	Herold	2025	Bayesian and frequentist perspectives agree on dynamical dark energy	results
+Chebat2025	2507.12401	Chebat	2025	Cosmological neutrino mass: a frequentist overview in light of DESI	results
+Leizerovich2025	2512.06086	Leizerovich	2025	Generalized tension metrics for multiple cosmological datasets	method
+Turner2026	2606.04089	Turner	2026	A multi-eigenbasis approach to covariance matrix denoising for cosmological inference	method
+Mattera2026	2606.18446	Mattera	2026	Covariance shrinkage for cosmological inference with Sellentin-Heavens-type likelihoods	critique

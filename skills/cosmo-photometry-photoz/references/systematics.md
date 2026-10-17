@@ -83,6 +83,18 @@ spectroscopic selection biases empirical p(z) by more than 10%, reducible to
 5% by lensing weighting, while shape-catalogue selection gives ≤ 2% (Gruen &
 Brimioulle 2017, arXiv:1610.01160) [src]. Incompleteness inside SOM cells
 alters n(z) in the DESI recalibration of KiDS-1000 (arXiv:2512.15964) [src].
+In SOM cells calibrated by both, DESI and the KiDS compilation agree in the
+middle bins but differ at the edges, the first-bin mean by −0.035 (DESI
+minus KiDS) with medians equal to 0.001, because the fainter DESI sample
+fills cells with a different p(c|z) at fixed redshift and zCOSMOS-Deep
+reaches 1.5 < z < 3 where DESI does not [src: Sect. 4.3, Table 5; Sect.
+4.5]. The largest offsets sit in cells of low DESI success rate; keeping
+only fully complete cells retains 73% of the spectra and 81% of the
+sources, and moves ⟨z⟩ down in low bins and up in high ones
+[src: Sect. 4.5, Table 6].
+In DES Y6 the calibration-sample term is the largest in every source bin,
+σ⟨z⟩ = 0.012, 0.011, 0.012 and 0.028, against ≤ 0.003 from shot noise
+and ≤ 0.009 with sample variance (arXiv:2510.23566) [src: Table 2].
 Photometric noise in the calibration field creates an apparent dependence of
 redshift on magnitude at fixed colour (arXiv:2309.13109) [src].
 **Mitigation.** Targeted spectroscopy of empty colour cells (C3R2,
@@ -92,6 +104,13 @@ arXiv:1909.09632) [src]; deep-to-wide noise transfer (arXiv:2601.02005)
 **Validation.** KL divergence, Wasserstein distance and PIT histograms are
 the most sensitive diagnostics of training-set damage (arXiv:2601.10797)
 [src].
+
+Propagated to a cosmic-shear Fisher forecast through functional
+derivatives of C_ℓ with respect to n(z), the residual Euclid SOM biases
+stay below 1σ on average for Ω_m, σ8, w0 and wa, with w0 the most affected
+and σ8 the least, but their distributions have long tails beyond 1σ;
+quality-control cuts do not always reduce them (arXiv:2508.02779)
+[src: Sect. 5.1, Eqs. 6–9] (**forecast**).
 
 ## 5. Photo-z selection and shear
 <!-- key: photo-z-selection-and-shear -->
@@ -143,7 +162,16 @@ preferred [src: Sect. 4.2.3].
 (arXiv:astro-ph/0603217) [src]; in GalSBI forward models sample variance
 dominates the mean-redshift error for samples brighter than 24 mag
 (arXiv:2606.23783) [src]; HSC Y3 includes the cosmic variance of its
-calibration fields in the n(z) posterior (arXiv:2211.16516) [src].
+calibration fields in the n(z) posterior (arXiv:2211.16516) [src]; its
+statistical σ⟨z⟩ is 0.003–0.005 per bin, but the adopted error, 0.022–0.034,
+is set by the difference between two photo-z codes (DNNz, DEMPz), so
+method dependence, not sample variance, dominates [src: Table 1,
+Sect. 5.7].
+Between DES Y3 and Y6 the leading term changed: in Y3 sample variance of
+the deep fields dominated (with deep-field photometric calibration, 0.010,
+leading in bin 1) (arXiv:2012.08566) [src: Table 2]; in Y6, with sources to
+i = 24.7, the redshift-sample term dominates (arXiv:2510.23566)
+[src: Table 2, Sect. 5.1].
 **Mitigation.** Deep-field SOM intermediary over several fields
 (arXiv:1901.05005) [src]; many-band wide coverage (PAUS, arXiv:2312.07581)
 [src]; clustering redshifts over the full footprint.
@@ -171,6 +199,13 @@ the same role for SPHEREx deep fields (arXiv:2510.01410) [src].
 **Mechanism.** w_ps ∝ b_p b_s n_p(z); the bias evolution of the photometric
 sample, lensing magnification, and non-linear small-scale clustering all
 mimic or distort n(z) (arXiv:2206.13633) [src: Sect. 4.2.6].
+- *DES Y3 budget.* In the mean-matching WZ of DES Y3, adding back
+  magnification shifts Δ⟨z⟩ by ≈ 0.002 in simulations and remains
+  negligible even with N(0, 2) priors on both magnification slopes; the
+  dominant term is the unmodelled redshift evolution of the source-sample
+  bias; redMaGiC and BOSS/eBOSS references give bin means differing by
+  −0.009 ± 0.010, 0.006 ± 0.009, 0.005 ± 0.006 and 0.022 ± 0.014
+  (Gatti et al. 2022, arXiv:2012.08569) [src: Sect. 4.1.1, 5.1].
 - *Magnification.* For a luminosity-function slope of −1, typical of faint
   galaxies, the photometric sample is not magnified; the dominant term is
   magnification of luminous spectroscopic objects by foreground photometric
@@ -181,13 +216,19 @@ mimic or distort n(z) (arXiv:2206.13633) [src: Sect. 4.2.6].
 - *Bias evolution.* Mitigated by autocorrelations and self-consistency at
   |Δz| < 0.006 on KiDS mocks, but the result depends on the n(z) model:
   replacing the truth by a colour-based n(z) raises biases to |Δz| ~ 0.04
-  (arXiv:2007.01846) [src].
+  (arXiv:2007.01846) [src]. In DES Y6, Cardinal mocks with all
+  systematics make bias evolution the dominant error; it is absorbed by a
+  first-order Legendre systematic function per bin, with Gaussian priors set
+  by the mock fit, and the 700 deg² of BOSS–eBOSS overlap are too small to
+  detect the other terms (arXiv:2510.23565) [src: Sect. IV.1, IV.1.2].
 - *Reference coverage.* DES Y6 WZ loses power above z ~ 1.1
   (arXiv:2510.23565) [src]; HSC Y3 cross-correlations stop at z = 1.2
   (arXiv:2211.16516) [src].
 **Validation.** Agreement with SOM n(z) per bin (DES Y6 within 0.1σ in
 cosmology, arXiv:2510.23566; KiDS-Legacy within 2σ per bin,
-arXiv:2503.19440) [src].
+arXiv:2503.19440) [src]. In KiDS-Legacy, the bin-four CC shift (0.035 ±
+0.010) exceeds the SKiLLS SOM bias by ~2σ, and the bin-six shift (−0.145 ±
+0.091) is unconstraining (arXiv:2503.19440) [src: Table 8].
 
 ## 10. Template and population-model mismatch
 <!-- key: template-and-population-model-mismatch -->

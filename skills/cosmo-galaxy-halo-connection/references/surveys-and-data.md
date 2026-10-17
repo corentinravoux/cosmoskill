@@ -32,7 +32,7 @@ in the cited papers.
 | DESI DR1 BGS | 0.01–0.2 | 12 stellar-mass samples over nearly four decades | SHMR to dwarfs with w_p, ΔΣ, N_sat | Shao et al. 2026, arXiv:2609.04351 [src] |
 | DESI DR1 BGS, group catalogue | flux-limited, r < 19.5 | 2 229 741 galaxies over ~2680 deg² with 3-pass coverage | central/satellite split, HODs, quenched fractions | Williams et al. 2026, arXiv:2610.20919 [src] |
 | DESI DR1 BGS, volume-limited | 0.05–0.2 | — | direct assembly-bias measurement with groups + lensing | Shao et al. 2025, arXiv:2510.20896 [src] |
-| DESI DR1 BGS + LRG (four samples) | — | — | full-scale clustering + lensing cosmology | Lange et al. 2025, arXiv:2512.15962 [src] |
+| DESI DR1 BGS + LRG (four samples) | BGS2, BGS3 in 0.2–0.3, 0.3–0.4 (M_r < −20.5, −21); LRG1, LRG2 in 0.4–0.6, 0.6–0.8 | BGS ~7500 deg², LRG ~5700 deg²; n = 3.71, 1.38 × 10⁻³ and 5.70, 5.69 × 10⁻⁴ h³Mpc⁻³; BGS1 (0.1–0.2, M_r < −19.5) dropped because its density exceeds that of resolved AbacusSummit haloes, LRG3 (0.8–1.1) because of intrinsic alignments and magnification | full-scale clustering + lensing cosmology | Lange et al. 2025, arXiv:2512.15962 [src: Sect. II.1] |
 | DESI Y1 BGS with DECaLS photometry (PAC) | low z | 349 excess-density measurements, to M* = 10^6.4 M_⊙ | SHMR to M_h ≃ 10⁸ h⁻¹M_⊙ | Xu et al. 2026, arXiv:2603.29331 [src] |
 
 ## 2. Photometric and many-band fields
@@ -57,7 +57,11 @@ in the cited papers.
 - DESI DR1 BGS self-calibrated groups: calibrated on the clustering of the
   sample itself; a Hybrid Nearest Neighbour scheme assigns redshifts to
   fibre-incomplete targets, correct about 50% of the time, with unbiased
-  occupation statistics (arXiv:2610.20919) [src].
+  occupation statistics (arXiv:2610.20919) [src]. Haloes are M_200m with NFW
+  profiles on a mean c(M) relation [src: Sect. IV.1, Eqs. 2–3]; halo masses
+  carry a typical ~0.2 dex error, larger for galaxies without satellites and
+  for "lost" centrals, and must be checked on mocks before use [src: Sect.
+  VI.2].
 - SDSS redMaPPer clusters, 8648 at 0.1 < z < 0.33: the halo assembly-bias claim
   and its critiques (arXiv:1506.06135, arXiv:1611.00366) [src]. Cluster
   catalogues as cosmological probes are in `cosmo-clusters`.
@@ -69,10 +73,13 @@ in the cited papers.
 |---|---|---|---|
 | CFHTLenS + CS82 | 250 deg² | lensing-is-low discovery | arXiv:1611.08606 [src] |
 | HSC Y1 | 4 million sources over 140 deg² with photo-z > 0.75 | HSC-Y1 × SDSS cosmology | arXiv:2111.02419 [src] |
+| HSC Y3 | single source sample over 416 deg² with photo-z > 0.75; SDSS DR11 lenses in three bins, 0.15 < z < 0.7 | HSC-Y3 × SDSS halo-model 3×2pt | arXiv:2304.00704 [src] |
+| DES Y6 Metadetection | ~140 million sources, 4031 deg², around ~9 million MagLim++ lenses; GGL S/N 173, 75–90 after R ≥ 6 or 4 h⁻¹Mpc cuts chosen to keep (Ω_m, S8) biases < 0.3σ | linear or perturbative 3×2pt only | arXiv:2601.15175 [src: Scale cuts, Sect. III] |
 | DES Y3, HSC Y1, KiDS-1000 around BOSS | — | lensing–clustering consistency | arXiv:2202.07440 [src] |
 | DES, KiDS, HSC around DESI DR1 | — | DESI DR1 full-scale analysis | arXiv:2512.15962 [src] |
 | DES Y3 around DESI BGS and LRG | — | perturbative 2×2-point | arXiv:2407.04795 [src] |
 | UNIONS around BOSS CMASS | ~2650 deg² overlap | lensing-is-low revisited | Campbell et al. 2026, arXiv:2606.23651 [src] |
+| SDSS DR7 re-Gaussianization shear (Reyes et al.) around DESI DR1 BGS | ~5400 deg² overlap; chosen over HSC Y3 and DECADE (consistent) for its lensing kernel for dwarfs and homogeneity | dwarf-to-massive SHMR; stellar masses from CIGALE rescaled to MPA/JHU with 23 127 common galaxies | arXiv:2609.04351 [src: Sect. II.1.2, II.3] |
 
 Shear and n(z) calibration of these catalogues: `cosmo-weak-lensing`,
 `cosmo-photometry-photoz`.
@@ -135,8 +142,10 @@ data type pins down, in the analyses read:
 ## 8. What comes next
 <!-- key: what-comes-next -->
 
-- DESI: DR1 is the latest release used in the papers read (BGS SHMR, groups,
-  assembly bias, lensing). The papers read do not state a date for the DR2
+- DESI: DR1 is the latest release used in the HOD, SHMR, group, assembly-bias
+  and lensing papers read; the first DR2 (Y3) galaxy–halo test is LRG
+  multiplet clustering, which the One-Percent HOD mocks fail
+  (arXiv:2511.15354) [src: Sect. 6.1]. The papers read do not state a date for the DR2
   galaxy–halo analyses; see `cosmo-surveys-facilities` for release dates.
 - Lensing overlap: UNIONS (~2650 deg² with CMASS) is the largest overlap quoted
   here (arXiv:2606.23651) [src]; Euclid and Rubin LSST overlaps with DESI are
@@ -148,7 +157,7 @@ data type pins down, in the analyses read:
 ## Not verified
 <!-- key: not-verified -->
 
-- No DESI DR2, Euclid DR1 or Rubin DP1 galaxy–halo measurement was read;
-  whether one exists at the snapshot date was not searched.
+- Searched 2026-10-16: no Euclid Q1, Rubin DP1 or KiDS-Legacy HOD or SHMR
+  paper was found; DESI DR2 has only the multiplet test above.
 - GAMA, HSC and KiDS sample sizes and areas for the galaxy–halo papers were not
   read in the bodies.

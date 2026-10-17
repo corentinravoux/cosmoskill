@@ -9,6 +9,7 @@ Flags: `[src]` abstract read this session; `[src: Sect. n]`, `[src: Table n]`
 body read; `[sec]` named secondary source; `[der]` derived here.
 
 ## 1. Spectroscopic surveys
+<!-- key: spectroscopic-surveys -->
 
 **Target selections.**
 
@@ -72,6 +73,7 @@ Sect. IV.4.1].
 | w_FKP | optimal weighting for P(k) | w_FKP = 1/(1 + n(z, N_tile) P₀), with n depending on redshift and number of overlapping tiles, because completeness tracks N_tile [src: arXiv:2405.16593, Sect. 7.3, Eq. 6] |
 
 ## 2. Imaging surveys
+<!-- key: imaging-surveys -->
 
 **Pipelines.** The HSC pipeline, built on the LSST prototype stack, has
 four stages: CCD processing, joint calibration, co-addition and
@@ -100,6 +102,7 @@ and blendedness [src: arXiv:1705.06766, Sect. 4.9 outline]. Calibration of
 those fluxes is in `cosmo-photometry-photoz`.
 
 ## 3. CMB experiments
+<!-- key: cmb-experiments -->
 
 **Planck.** HFI 2018 fits bandpass-mismatch coefficients per detector inside
 the map-making and builds frequency maps from single detectors adjusted to
@@ -121,6 +124,7 @@ sky into the real data, TF(ℓ) = crossspec(map(d + P sim) − map(d), sim) /
 powspec(sim) [src: arXiv:2503.14451, Sect. V.2, Eq. 13].
 
 ## 4. What each release contains
+<!-- key: what-each-release-contains -->
 
 Release dates, instruments and status are in `cosmo-surveys-facilities`;
 this table keeps catalogue- and map-level content.
@@ -146,6 +150,7 @@ this table keeps catalogue- and map-level content.
 | SPT-3G D1 | Main-field maps at 95, 150, 220 GHz from 2019–2020 over 4% of the sky, public | arXiv:2603.20163 [src] |
 
 ## 5. Public pipeline software
+<!-- key: public-pipeline-software -->
 
 Versions, maintenance and installation are in `cosmo-software-ecosystem`.
 
@@ -161,6 +166,7 @@ Versions, maintenance and installation are in `cosmo-software-ecosystem`.
 | CMB map-making | Madam (arXiv:astro-ph/0412517); SRoll2 (arXiv:1901.11386); NPIPE (arXiv:2007.04997); MAPPRAISER (arXiv:2405.10239); POMME in FURAX (arXiv:2606.31720) |
 
 ## 6. Pipelines being built for the next data
+<!-- key: pipelines-being-built-for-the-next-data -->
 
 - **Rubin LSST.** Designed (**forecast**) to image ~18,000 deg² about 800 times, with
   ~15 TB per night, a real-time alert stream and eleven data releases over
@@ -191,3 +197,8 @@ Versions, maintenance and installation are in `cosmo-software-ecosystem`.
   (Hervías-Caimapo et al. 2025, arXiv:2502.00946) [src].
 
 ## Not verified
+<!-- key: not-verified -->
+
+- Current Legacy Surveys release area (DR10, DR11) not read here; see `cosmo-surveys-facilities`.
+- SDSS-V, WEAVE and MOONS reduction pipelines not read.
+- Euclid DR1 content and date: not in this skill.

@@ -89,6 +89,15 @@ What you could not read at source.
 
 - Every number and every statement about what an analysis did carries the
   place read: `[src: Table 3]`, `[src: Sect. 5.2]`, `[src: Eq. 12]`.
+- For each choice an analysis makes, give the authors' stated reason with
+  its place read, not only the choice.
+- Define every symbol and every total where it is first used; explain any
+  number that differs from the one in the reference files.
+- Aim the dossier at what L2 cannot answer: before writing, list the
+  practitioner questions on the subtopic, check which ones the reference
+  files already answer, and spend the dossier on the others. A dossier on
+  a subtopic that L2 already answers well is not worth writing (pilot test
+  2026-10-16: `docs/history/tests/levels/run-2026-10-16-l3-pilot.md`).
 - New papers get a row in the skill's `references/sources.tsv`.
 - Add one row per dossier to the file map of the skill's `SKILL.md`
   (`| <question the dossier answers> | deep/<subtopic>.md |`), and set the

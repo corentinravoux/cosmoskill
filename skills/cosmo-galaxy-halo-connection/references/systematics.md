@@ -25,8 +25,14 @@ specific to the galaxy–halo connection.
   (arXiv:1207.0816) [src].
 - Size. In the Euclid mass-function calibration the halo finder is the one
   calibration term that "could lead to biased cosmological inference"; the
-  other terms are largely subdominant (arXiv:2208.02174) [src]. Most finders
-  lose subhaloes below 30–40 particles (arXiv:1104.0949) [src].
+  other terms are largely subdominant (arXiv:2208.02174) [src]. Counting only
+  bound particles inside the SO radius lowers the cumulative HMF by ~5% [src:
+  Sect. 4.3.3]; FoF-based finders merge small objects through particle
+  bridges [src: Sect. 4.3.1]; a VELOCIraptor or SUBFIND calibration analysed
+  with the ROCKSTAR one biases (Ω_m, σ8) of Euclid cluster counts by ≲ 1σ in
+  that plane with 3–5% mass–observable priors, ≲ 2σ with 1%; AHF stays ≲ 1σ
+  [src: Sect. 5.4.1, Table 5]. Most finders lose subhaloes below 30–40
+  particles (arXiv:1104.0949) [src].
 - Mitigation. State Δ, reference density and finder with every occupation
   parameter; refit an HOD rather than transfer it between simulations with
   different finders.
@@ -72,7 +78,13 @@ specific to the galaxy–halo connection.
   0.2–0.3 dex, and measured scatter includes them in quadrature [src: Sect. 6.2
   of arXiv:1804.03097].
 - Mitigation. Quote the IMF and the photometry; propagate a measurement-scatter
-  term separately from the intrinsic scatter.
+  term separately from the intrinsic scatter. DES Y3 marginalises the lens
+  stellar-mass distribution alongside shear and redshift nuisances [src:
+  Sect. 3.5 of arXiv:2506.22367].
+- Model choice. Replacing the Kravtsov et al. 2018 SHMR form by the Moster et
+  al. 2013 one in DES Y3 changes the SHMR by about 1σ near log M* ~ 10.8 and
+  less elsewhere; Planck 2018 instead of the hybrid DES Y3 + Planck cosmology
+  has a negligible effect [src: Sect. 7.2.2–7.2.3 of arXiv:2506.22367].
 
 ## 5. Scatter–slope degeneracy
 <!-- key: scatter-slope-degeneracy -->
@@ -84,6 +96,14 @@ specific to the galaxy–halo connection.
 - Mitigation. Add clustering, lensing, groups or satellite kinematics; the iHOD
   breaks the degeneracy "without the need to assume a strong prior on the
   scatter" by modelling ~80% more galaxies (arXiv:1505.02781) [src].
+
+- Group-based masses. DESI DR1 group masses have ~0.2 dex typical errors
+  (arXiv:2610.20919) [src: Sect. VI.2], and the Yang et al. DESI groups carry
+  ~0.2 dex scatter between abundance-matched and true mass, absorbed by an
+  occupation-bias parameter in the assembly-bias test (arXiv:2510.20896)
+  [src: main text]. HOD and group-catalogue satellite fractions of DESI BGS
+  disagree because groups place fewer satellites in haloes below 10^12.5
+  h⁻¹M_⊙ (arXiv:2609.04351) [src: Sect. VI.2].
 
 - How scatter is constrained [src: Sect. 6.2 of arXiv:1804.03097]: the stellar
   mass function alone cannot constrain σ_log M*; clustering constrains it where
@@ -106,6 +126,14 @@ specific to the galaxy–halo connection.
   the reduced χ² by 0.18 (arXiv:2210.03110) [src]; allowing non-Poisson
   satellites lowers the SDSS CLF σ8 from 0.763 to 0.744 (arXiv:1207.0503)
   [src].
+- Size, KiDS-1000. Forcing Poisson satellites (𝒫 ≡ ⟨N_s(N_s−1)⟩/⟨N_s⟩² = 1)
+  moves the halo-model result to S8 = 0.951 (+0.037, −0.036), Ω_m = 0.330 ±
+  0.019, against 0.773 fiducial; the full fit stays formally acceptable (p =
+  0.02) but w_p alone fails (p ~ 10⁻⁴), and GAMA groups are sub-Poisson below
+  10¹³ h⁻¹M_⊙ [src: Sect. 4.4, Eqs. 51–52 of arXiv:2210.03110].
+- Size. For DESI ELGs, imposing strict conformity divides f_sat by five and
+  changes all HOD parameters except velocity dispersion, while f_1h and the
+  mean halo mass stay put (arXiv:2306.06319) [src: Sect. 7.1].
 - Mitigation. A free satellite-variance parameter; state whether the central
   condition is imposed.
 
@@ -122,7 +150,24 @@ specific to the galaxy–halo connection.
   (Planck) or ~10% (low S8) in SHAMe fits of BOSS (arXiv:2305.09637) [src]. In
   HSC-Y1 × SDSS, galaxy–halo uncertainties bias S8 by < ~50% of its statistical
   error "unless the assembly bias effect is unexpectedly large"
-  (arXiv:2111.02419) [src].
+  (arXiv:2111.02419) [src]. HSC-Y3 × SDSS: S8 is recovered to better than
+  ~0.5σ on most mock catalogues (satellites on DM particles or subhaloes,
+  off-centred centrals, central incompleteness, FoF haloes, Illustris-like
+  baryons), while the two "worst-case" concentration-based assembly-bias
+  mocks shift it by more than 0.5σ [src: Sect. III.7, App. A, Table 4 of
+  arXiv:2304.00704]. The diagnostic is the shift of S8 between (2, 3) and (8,
+  12) h⁻¹Mpc cuts; the data give p ≈ 50% for no assembly bias [src: Sect.
+  VI.2]. In DESI DR2 LRG multiplets, concentration-based terms barely move
+  w_p or multiplets, environment-based terms move both (arXiv:2511.15354)
+  [src: Sect. 6.2].
+- Budget by effect (TNG300 BOSS-like mock, lensing/clustering ratio A):
+  galaxy-formation effects give A = 0.73–0.80 on all scales depending on the
+  baryon strength and A = 0.91 above 4 h⁻¹Mpc, against 0.76 ± 0.03 and 0.86 ±
+  0.06 measured; assembly bias contributes ΔA = 0.14 (all scales) and 0.07
+  (large scales), the largest single term; baryons slightly more than
+  parametric occupation or satellite segregation; subhalo lensing and halo
+  triaxiality reduce the tension by ΔA ≈ 0.10 [src: Sect. 5.3 of
+  arXiv:2211.01744].
 - Mitigation. Decorated or environment-dependent HODs fitted with the cosmology
   (arXiv:2512.15962) [src: Sect. III.2]; a theoretical-error term that spans
   zero (arXiv:2202.07440) [src: Sect. 4.2]; methods stated to be insensitive to
@@ -141,15 +186,34 @@ specific to the galaxy–halo connection.
   and segregation; velocities drawn from the dark matter neglect velocity bias;
   disrupted subhaloes remove satellites.
 - Size. BOSS CMASS velocity bias: centrals 0.22, satellites 0.86 of the
-  dark-matter dispersion (arXiv:1407.4811) [src]. "Roughly 80 per cent of all
-  subhalo disruption is numerical rather than physical" (van den Bosch 2017,
-  quoted by the review), and orphans are 10–30% of galaxies in some SAMs [sec:
+  dark-matter dispersion (arXiv:1407.4811) [src]. Roughly 80% of subhalo
+  disruption in Bolshoi is numerical rather than physical, "a serious
+  road-block" for small-scale clustering (van den Bosch 2017,
+  arXiv:1611.02657) [src]; idealised runs trace it mainly to inadequate force
+  softening plus a discreteness-noise runaway instability, and give two
+  criteria for discarding unreliable subhaloes (van den Bosch & Ogiya 2018,
+  arXiv:1801.05427) [src]. Orphans are 10–30% of galaxies in some SAMs [sec:
   arXiv:1804.03097, Sect. 6.5.2]. Subhalo finders agree except below ~50
   particles and at host-centre passages, and merger-tree codes give "distinct
   results" on the same simulation [sec: arXiv:1804.03097, Sect. 6.5.2]. Smooth
   satellite profiles under-predict small-scale lensing (arXiv:2512.15962) [src:
   Sect. III.2]; satellite segregation is one of the three galaxy-formation
   effects behind the lensing-is-low excess in TNG300 (arXiv:2211.01744) [src].
+  Baryons in MTNG put satellites 3–4% closer to halo centres than in the
+  dark-matter-only twin and lower their velocities, changing clustering by
+  10–20% at 0.1 h⁻¹Mpc (1–3σ for DESI-like errors), less on larger scales and
+  less than sample selection (Contreras et al. 2025, arXiv:2512.04080) [src].
+- Size of the satellite-profile choice (Basilisk, SDSS satellite kinematics
+  + abundance): with n_sat(r) ∝ (r/𝓡r_s)^(−γ)(1 + r/𝓡r_s)^(γ−3) fitted per
+  cosmology, the data prefer γ = 1 and 𝓡 ≈ 2.2 [src: Sect. 2.5, Eq. 14,
+  Sect. 5.2 of arXiv:2512.14889]; imposing satellites that trace the dark
+  matter (𝓡, γ) = (1, 1) gives ~2σ tension with Planck in the opposite
+  direction to the usual S8 tension, and a subhalo-like cored profile (2.4, 0)
+  gives ~5σ low Ω_m and σ8, with equally good luminosity-function fits [src:
+  Sect. 5.2]. Baryonic corrections to the satellite velocity dispersion from
+  no to extreme feedback (f_eject = 0–0.77 at 10¹² h⁻¹M_⊙) move (Ω_m, σ8) but
+  stay within 2σ of Planck; an Illustris-2-like feedback model does not [src:
+  Sect. 5.1].
 - Mitigation. Free satellite concentration and velocity-bias parameters;
   restrict comparisons to resolution-converged regimes (as done by Reddick et
   al. 2013 and Lehmann et al. 2017 [sec: arXiv:1804.03097, Sect. 6.5.2]); scale
@@ -161,6 +225,16 @@ specific to the galaxy–halo connection.
 - Source photometric redshifts. For z_L = 0.55, a 30% change in ΔΣ needs a
   photo-z bias Δz = 0.16 at z_S = 1; the measured impact of photo-z errors on
   the CMASS ΔΣ is at the 3% level [src: Sect. 5.1 of arXiv:1611.08606].
+- Lens–source overlap. DES Y3 SHMR keeps only lens–source bin pairs with
+  boost factors mostly within ~10% of unity and drops points above that
+  [src: Sect. 5.4 of arXiv:2506.22367]; DES Y6 corrects γ_t by B(θ) = 1 +
+  ω_LS(θ) [src: Sect. IV.3, Eq. 15 of arXiv:2601.15175].
+- Source photo-z in DESI DR1 × HSC: dropping the HSC mean-redshift offsets
+  raises S8 from 0.791 to 0.841 (~2.5σ) at Δχ² = +7.1, an extra ~0.019 on
+  σ(S8) if marginalised; HSC-based results are photo-z limited [src: Sect.
+  IV.2 of arXiv:2512.15962]. HSC-Y3 × SDSS shows that a N(0, 0.1) prior on
+  the source shift biases S8 by > 1σ when the true shift is −0.2, hence its
+  flat prior [src: Sect. III.7, App. A of arXiv:2304.00704].
 - Boost factor and intrinsic alignments. Boost factors are below 15% at the
   smallest scales and negligible at larger scales, so at most 15% of
   small-scale sources are associated with the lens; the intrinsic-alignment
@@ -172,7 +246,15 @@ specific to the galaxy–halo connection.
   estimated below 5–10% [src: Sect. 5.1 of arXiv:1611.08606]. Survey-level
   shear and n(z) calibration is in `cosmo-weak-lensing` and
   `cosmo-photometry-photoz`.
-- Baryonic effects on ΔΣ. TNG300 suppresses lensing by up to 10% at 1 h⁻¹Mpc,
+- Baryonic effects on ΔΣ. In TNG300 vs Dark-TNG, baryons move mass outward
+  and lower the cumulative mass around BOSS-like galaxies by ≃ 10% at ~1
+  h⁻¹Mpc, so a DM-only HOD over-predicts small-scale GGL by about that much
+  [src: Sect. 4.6 of arXiv:2211.01744]. In Illustris vs its gravity-only run,
+  ΔΣ of matched parent haloes is up to 20% lower at intermediate radii,
+  converging above 4 h⁻¹Mpc; at fixed number density (n̄ = 4 × 10⁻⁴ h³Mpc⁻³)
+  the hydro run has twice the satellite fraction (22% vs 11%), and baryons
+  change ΔΣ by 10–30% overall [src: Sect. 5.5 of arXiv:1611.08606]. Massive
+  neutrinos (0.15–0.3 eV) lower ΔΣ by ~10% at most [src: Sect. 5.6]. TNG300 suppresses lensing by up to 10% at 1 h⁻¹Mpc,
   Illustris by 15% at 3 h⁻¹Mpc; a kSZ-based estimate gives 20% below 1 h⁻¹Mpc
   and accounts for half of the Leauthaud et al. discrepancy [src: Sect. 4.1 of
   arXiv:2202.07440]. Baryons are usually handled by a concentration
@@ -184,6 +266,9 @@ specific to the galaxy–halo connection.
   incompleteness and luminosity estimates of extended light are suspects [src:
   Sect. 5.3 of arXiv:1611.08606]. A halo-mass-dependent selection of satellites
   removes the small-scale discrepancy (arXiv:2010.01143) [src].
+- Lens magnification. Corrected with α_lmag = 1.93 ± 0.05 (LOWZ) and 2.62 ±
+  0.28 (CMASS); the correction grows with redshift and stays below ~10% for
+  the highest-z CMASS bin [src: Sect. 5.1.4 of arXiv:2202.07440].
 - Cosmology dependence of distances. Dynamical dark energy of the DESI kind
   lowers GGL relative to clustering by up to 7% through the lensing kernel
   (arXiv:2508.05746) [src].
@@ -201,6 +286,11 @@ specific to the galaxy–halo connection.
   differ by a factor of several between analyses (0.4 vs 2 h⁻¹Mpc for
   clustering, 2.5 vs 3 vs 5.25 h⁻¹Mpc for lensing in arXiv:2512.15962,
   arXiv:2111.02419, arXiv:2202.07440) [src: Sect. III.2, IV.3, abstract].
+- Mock validation of the DESI DR1 pipeline: a diffsky-based GalSampler LRG
+  mock at z = 0.5 on UNIT (mass + concentration occupation) is fitted with χ²
+  = 10.6 (p = 0.32) and the true cosmology lies at Δχ² = 3.4 in (S8, Ω_m),
+  exceeded by 19% of Gaussian draws; only one LRG-like sample was tested
+  [src: Sect. III.4 of arXiv:2512.15962].
 - Simulation resolution: in DESI DR1, AbacusSummit resolution was insufficient
   for the faintest BGS sample [src: Sect. III.5 of arXiv:2512.15962]; halo
   finders lose substructure below 30–40 particles (arXiv:1104.0949) [src].
@@ -231,6 +321,10 @@ specific to the galaxy–halo connection.
 ## Not verified
 <!-- key: not-verified -->
 
-- van den Bosch 2017 on numerical subhalo disruption and Pujol et al. 2017 on
-  orphan fractions are quoted through the Wechsler & Tinker review, not read.
-- No systematics budget table of the DES Y3 or DESI DR1 SHMR analyses was read.
+- Pujol et al. 2017 on orphan fractions is quoted through the Wechsler &
+  Tinker review, not read (van den Bosch 2017 was read on 2026-10-16).
+- DES Y3 SHMR: its systematics-test section (Sect. 5.3 of arXiv:2506.22367)
+  was not read; the sizes quoted come from its Sect. 3.5, 5.4 and 7.2.
+- The DESI DR1 full-scale analysis has no systematics budget table: its
+  verification is the single mock test above [src: Sect. III.4 of
+  arXiv:2512.15962].

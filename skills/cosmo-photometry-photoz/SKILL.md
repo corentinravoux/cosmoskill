@@ -24,9 +24,9 @@ re-verify against the cited paper before a number enters a manuscript.
 <!-- key: what-an-expert-holds-in-mind -->
 
 - Cosmology needs **characterisation** of n(z), not per-galaxy precision; the
-  LSST DESC requirement on the bin mean is δz < 0.001(1+z) at year 10
-  (arXiv:1809.01669 via arXiv:2206.13633), Euclid's 0.002(1+z)
-  (arXiv:2208.10503).
+  LSST DESC requirement on the source-bin mean is δz < 0.001(1+z) at year
+  10, 0.002(1+z) as the year-1 goal (arXiv:1809.01669, Sect. 5.2), Euclid's
+  0.002(1+z) (arXiv:2208.10503).
 - DES Y6 FGCM stars are uniform to < 1.8 mmag RMS, but the absolute scale is
   known only to ~1% through CALSPEC (arXiv:2305.01695).
 - Gaia XP and stellar colour regression exposed 15–23 mmag zero-point
@@ -54,7 +54,7 @@ re-verify against the cited paper before a number enters a manuscript.
   on photo-z in eight of ten (arXiv:2508.02779).
 - Several machine-learning codes give good point estimates but useless PDFs
   (arXiv:2009.12112).
-- Rubin DP1: σ_NMAD ~ 0.03, ~10% outliers (arXiv:2510.07370); Euclid Q1
+- Rubin DP1: σ_NMAD 0.028–0.055, 12–20% outliers (arXiv:2510.07370); Euclid Q1
   photo-z still need a bias correction (arXiv:2503.15306).
 
 ## Systematics a referee checks
@@ -80,8 +80,9 @@ re-verify against the cited paper before a number enters a manuscript.
 - Using SFD E(B−V) without the recalibrated coefficients.
 - Treating COSMOS many-band photo-z as truth: outliers exceed 10% for faint
   star-forming galaxies in COSMOS2015 (arXiv:2206.13633, Sect. 4.2.2).
-- Citing one LSST number without its context: the same review quotes
-  0.001(1+z) at year 10 and 0.002(1+z) elsewhere.
+- Citing one LSST number without its context: the SRD mean-z requirement
+  is 0.001(1+z) for year-10 lensing, 0.002(1+z) for year 1, 0.003(1+z) for
+  year-10 clustering (arXiv:1809.01669, Sect. 5.1–5.2).
 - Summing per-galaxy posteriors to get n(z).
 
 ## Related skills
@@ -108,7 +109,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; open 3k; methods 9k; results 4k; surveys 4k; systematics 4k.
+Sizes, in thousands of tokens: L1 2k; open 4k; methods 10k; results 6k; surveys 5k; systematics 5k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

@@ -13,9 +13,9 @@ re-verify against the cited paper before a number enters a manuscript.
 
 | Question | Load |
 |---|---|
-| Halo definitions, HMF, bias, c(M), halo model and its limits, HOD/CLF/SHAM forms, empirical and physical models, assembly bias, satellites, joint-fit practice, codes | `references/physics-and-methods.md` |
-| Samples, group and lensing catalogues, simulations used, which measurement constrains what, public products | `references/surveys-and-data.md` |
-| HOD values per tracer, SHMR and scatter, satellites, assembly-bias detections, lensing-is-low amplitudes, S8 from clustering + lensing, what superseded what | `references/results.md` |
+| Halo ingredients, halo model, HOD/CLF/SHAM, empirical and physical models, assembly bias, satellites, joint-fit practice, codes | `references/physics-and-methods.md` |
+| Samples, group and lensing catalogues, simulations, which measurement constrains what | `references/surveys-and-data.md` |
+| HOD values, SHMR, satellites, assembly-bias detections, lensing-is-low, S8 from clustering + lensing, history | `references/results.md` |
 | Size of a systematic; referee checklist | `references/systematics.md` |
 | Lensing-is-low debate, assembly-bias detection, conformity, SHMR ends, method debates, stale claims | `references/open-questions.md` |
 | Title, first author, year of a cited paper | `references/sources.tsv` |
@@ -26,8 +26,8 @@ re-verify against the cited paper before a number enters a manuscript.
 - Galaxy formation efficiency peaks near M_h ~ 10¹² M_⊙ with under 20% of
   baryons in stars; scatter in M* at fixed M_h is below 0.2 dex above that
   mass (arXiv:1804.03097).
-- An occupation parameter means nothing without its mass definition, finder
-  and cosmology; FoF halo bias is ~10% below Δ = 200 (arXiv:1001.3162).
+- An occupation parameter needs its mass definition, finder and cosmology;
+  FoF halo bias is ~10% below Δ = 200 (arXiv:1001.3162).
 - The HMF is not universal at 5%: its amplitude falls 20–50% to z = 2.5
   (arXiv:0803.2706).
 - DESI One-Percent LRGs: f_sat = 11–14%, log M_h = 13.2–13.4; QSOs 12.65;
@@ -40,12 +40,13 @@ re-verify against the cited paper before a number enters a manuscript.
   by projection effects: ratio 1.02 ± 0.14 (arXiv:1611.00366).
 - Lensing is low: 20–40% at Planck for CMASS (arXiv:1611.08606); A = 0.79 ±
   0.03 at Planck, consistent with 1 at S8 = 0.76 (arXiv:2202.07440).
-- Galaxy–halo explanations exist: assembly bias, satellite segregation and
-  baryons in TNG300 (arXiv:2211.01744), SHAMe (arXiv:2305.09637); UNIONS
-  finds no significant effect (arXiv:2606.23651).
-- Joint clustering + lensing fits now give S8 ≈ 0.79–0.81: DESI DR1 0.797
-  (arXiv:2512.15962), KiDS-1000 0.773 (arXiv:2210.03110), satellite
-  kinematics 0.81 ± 0.05 (arXiv:2512.14889).
+- Galaxy–halo explanations: assembly bias, satellite segregation, baryons
+  (arXiv:2211.01744), SHAMe (arXiv:2305.09637); UNIONS sees no significant
+  effect (arXiv:2606.23651).
+- Joint clustering + lensing fits give S8 ≈ 0.74–0.81: DESI DR1 0.797
+  (arXiv:2512.15962), KiDS-1000 0.773 (arXiv:2210.03110), HSC-Y3 0.763
+  (arXiv:2304.00704), UNIONS 0.743 (arXiv:2606.23651), satellite kinematics
+  0.81 ± 0.05 (arXiv:2512.14889).
 - BOSS centrals move at 0.22 and satellites at 0.86 of the dark-matter
   velocity dispersion (arXiv:1407.4811).
 - Low-mass SHMR: slope 2.08 ± 0.21 and scatter up to 0.68 dex for dwarfs in
@@ -54,6 +55,10 @@ re-verify against the cited paper before a number enters a manuscript.
   (arXiv:1401.7329).
 - The analytic halo model needs non-linear bias and exclusion: ignoring them
   costs > 40% at ~1 h⁻¹Mpc (arXiv:1206.6890).
+- Satellite assumptions are cosmology-level: DM-tracing or subhalo-like
+  profiles put satellite kinematics ~2σ and ~5σ from Planck
+  (arXiv:2512.14889); Poisson satellites move KiDS-1000 S8 from 0.773 to
+  0.951 (arXiv:2210.03110).
 
 ## Systematics a referee checks
 <!-- key: systematics-a-referee-checks -->
@@ -80,7 +85,9 @@ re-verify against the cited paper before a number enters a manuscript.
 - Treating satellites as Poisson and the central condition as harmless.
 - Reading M_vir growth as accretion (pseudo-evolution, arXiv:1207.0816).
 - Comparing S8 values with different fixed parameters, scale cuts or
-  exponents (σ8 Ω_m^0.57 versus S8).
+  exponents.
+- Plugging ν = δ_c/σ into Sheth–Tormen, which is written in ν = (δ_c/σ)²
+  (arXiv:astro-ph/9901122).
 - Using the quiescent clustering excess as central assembly bias: at z ~ 0
   it comes mainly from satellites (arXiv:2403.01393).
 
@@ -110,7 +117,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; open 3k; methods 11k; results 6k; surveys 4k; systematics 4k.
+Sizes, in thousands of tokens: L1 2k; open 4k; methods 11k; results 8k; surveys 4k; systematics 6k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

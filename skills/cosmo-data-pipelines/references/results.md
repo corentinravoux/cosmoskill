@@ -10,6 +10,7 @@ Flags: `[src]` abstract read this session; `[src: Sect. n]`, `[src: Table n]`
 body read; `[sec]` named secondary source; `[der]` derived here.
 
 ## 1. Spectroscopic redshift performance
+<!-- key: spectroscopic-redshift-performance -->
 
 | Survey, sample | Success or completeness | Purity, catastrophics | Precision | Source |
 |---|---|---|---|---|
@@ -43,6 +44,7 @@ for 320,161 spectra (Lyke et al. 2020, arXiv:2007.09001) [src]. Networks
 for the next tracers are trained on such VI samples (arXiv:2608.10080) [src].
 
 ## 2. Spectral extraction and sky subtraction performance
+<!-- key: spectral-extraction-and-sky-subtraction -->
 
 | Pipeline | Quantity | Value | Source |
 |---|---|---|---|
@@ -55,6 +57,7 @@ for the next tracers are trained on such VI samples (arXiv:2608.10080) [src].
 | FLAMES test | cross-beam switching, dual stare | accuracy and precision < 1% | arXiv:1609.06142 [src] |
 
 ## 3. Imaging pipeline performance
+<!-- key: imaging-pipeline-performance -->
 
 | Survey, release | Quantity | Value | Source |
 |---|---|---|---|
@@ -70,7 +73,23 @@ for the next tracers are trained on such VI samples (arXiv:2608.10080) [src].
 | KiDS DR5 | area; median r depth | 1347 deg²; 24.8 (5σ), seeing 0.7″ | arXiv:2503.19439 [src] |
 | DECam brighter-fatter | size growth with flux | up to 2% over full dynamic range | arXiv:1402.0725 [src] |
 
+## 3b. Target composition, detection and classification
+<!-- key: target-composition-detection-and-classification -->
+
+| Sample or code | Quantity | Value | Source |
+|---|---|---|---|
+| DESI QSO main selection, VI of deep SV co-adds | composition | 71% quasars, 16% galaxies, 6% stars, 7% inconclusive | arXiv:2208.08511 [src] |
+| DESI QSO selection | quasars per deg² delivered | > 200, including 60 at z > 2.1; 20% above requirement | arXiv:2208.08511 [src] |
+| DESI ELG main | reliable redshifts | > 400 deg⁻² in each of 0.6 < z < 1.1 and 1.1 < z < 1.6 | arXiv:2208.08513 [src] |
+| DESI BGS | redshift success, no strong dependence on conditions (**forecast** from SV) | > 95% | arXiv:2208.08512 [src] |
+| eBOSS LRG targets | secure redshifts in SDSS-quality spectra | ≥ 89% | arXiv:1508.04478 [src] |
+| BOSS quasar targets | confirmed quasars | ~51.5% | arXiv:1207.7326 [src] |
+| DES Y6 Gold | star–galaxy efficiency, contamination (17.5 < i < 22.5) | 98.6%, 0.8% | arXiv:2501.05739 [src] |
+| DeepDISC on Rubin DP1, after fine-tuning | galaxy and star completeness, class-aware matching | 84.2% and 49.1% (from 40.2% and 13%) | arXiv:2610.10986 [src] |
+| DeepDISC vs production random forest | classification accuracy on a common sample | 97.4% vs 98.5% | arXiv:2610.10986 [src] |
+
 ## 4. CMB map-making performance
+<!-- key: cmb-map-making-performance -->
 
 | Experiment | Quantity | Value | Source |
 |---|---|---|---|
@@ -83,6 +102,7 @@ for the next tracers are trained on such VI samples (arXiv:2608.10080) [src].
 | Planck 2018 component-separated maps | end-to-end simulations vs data | relative biases at the few-percent level | Planck 2018 IV, arXiv:1807.06208 [src] |
 
 ## 5. Catalogue completeness and systematics weights
+<!-- key: catalogue-completeness-and-systematics-weights -->
 
 | Survey, sample | Quantity | Value | Source |
 |---|---|---|---|
@@ -92,7 +112,7 @@ for the next tracers are trained on such VI samples (arXiv:2608.10080) [src].
 | eBOSS DR16 QSO | χ²/dof of density vs imaging depth, before → after weights | 776/10 → 6/8 | arXiv:2007.09000 [src] |
 | eBOSS QSO CORE (design) | area where a linear imaging model recovers the angular distribution | 96.7% NGC, 76.7% SGC | arXiv:1508.04472 [src] |
 | DESI LRG | stellar contamination; imaging robustness | 0.5%; "highly robust against imaging systematics" | arXiv:2208.08515 [src] |
-| DESI BGS | stellar contamination; fibre-assignment efficiency (Bright) | < 1%; > 80% | arXiv:2208.08512 [src] |
+| DESI BGS | stellar contamination; fibre-assignment efficiency (Bright, **forecast** from SV and simulations) | < 1%; > 80% | arXiv:2208.08512 [src] |
 | DESI DR1 | bad fibres removed from LSS catalogues | 60 | arXiv:2405.16593 [src: Sect. 4.2] |
 | DES Y3 lenses | bias from the decontamination procedure on mocks | ≤ 0.5σ in (Ω_m, b) | arXiv:2105.13540 [src] |
 | DES Y3 Balrog | match of injected-object density fluctuations to data | within 1% | arXiv:2012.12825 [src] |
@@ -105,6 +125,7 @@ imaging and fibre-assignment effects on BAO and full shape are in
 `cosmo-galaxy-clustering` (systematics, Sects. 4–5).
 
 ## 5b. Source-injection results
+<!-- key: source-injection-results -->
 
 | Programme | Scale | What it measured | Source |
 |---|---|---|---|
@@ -115,6 +136,7 @@ imaging and fibre-assignment effects on BAO and full shape are in
 | Rubin DP1 | 12 patches of ECDFS with DC2 stars and galaxies | completeness and misclassification versus magnitude | arXiv:2603.23786 [src: Sect. V.6] |
 
 ## 6. History: what superseded what
+<!-- key: history-what-superseded-what -->
 
 | Stage | Earlier | Superseded by | Source |
 |---|---|---|---|
@@ -133,3 +155,9 @@ imaging and fibre-assignment effects on BAO and full shape are in
 | Euclid spectroscopy | pre-launch pipelines | Q1 early versions; DR1 pending | arXiv:2503.15302 [src] |
 
 ## Not verified
+<!-- key: not-verified -->
+
+- DESI DR2 redshift success per tracer: secondary only (from `cosmo-galaxy-clustering`).
+- Rubin DP1 PSF residual values of Table 5 beyond the observed means not read.
+- HSC blended-object fraction not read.
+- 4MOST and PFS on-sky redshift success: not available.

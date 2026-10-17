@@ -9,6 +9,7 @@ Flags: `[src]` abstract read this session; `[src: Sect. n]`, `[src: Table n]`
 body read; `[sec]` named secondary source; `[der]` derived here.
 
 ## 1. Sky-subtraction residuals
+<!-- key: sky-subtraction-residuals -->
 
 - Mechanism. Errors in the fibre flat field, wavelength solution and PSF
   shape leave residuals on bright OH lines; the residual looks like an
@@ -29,6 +30,7 @@ body read; `[sec]` named secondary source; `[der]` derived here.
   archetype refit lowers by 5–40% (arXiv:2405.19288) [src].
 
 ## 2. Redshift failures and catastrophic redshifts
+<!-- key: redshift-failures-and-catastrophic-redshifts -->
 
 - Mechanism. Line confusion ([O II] vs other lines, quasar line
   misidentification), low S/N, spectral steps between arms, and host-galaxy
@@ -47,6 +49,7 @@ body read; `[sec]` named secondary source; `[der]` derived here.
 - Test. VI truth tables, repeat observations, deep co-adds.
 
 ## 3. Redshift-error calibration
+<!-- key: redshift-error-calibration -->
 
 - Mechanism. The formal error from photon noise can be wrong in either
   direction.
@@ -59,6 +62,7 @@ body read; `[sec]` named secondary source; `[der]` derived here.
   and `cosmo-lyman-alpha`).
 
 ## 4. Slitless-spectroscopy contamination and line misidentification
+<!-- key: slitless-spectroscopy-contamination-and-line -->
 
 - Mechanism. Overlapping traces of neighbours contaminate each spectrum;
   single-line spectra are ambiguous.
@@ -72,6 +76,7 @@ body read; `[sec]` named secondary source; `[der]` derived here.
   a detection model (see `cosmo-galaxy-clustering`).
 
 ## 5. Sensor effects: brighter-fatter, charge transfer, stray fields
+<!-- key: sensor-effects-brighter-fatter-charge-transfer -->
 
 - Mechanism. Charge accumulated in a pixel deflects later charge; PSF size
   then depends on flux, so a PSF model built from bright stars is wrong for
@@ -87,6 +92,7 @@ body read; `[sec]` named secondary source; `[der]` derived here.
 - Test. Star size versus flux after correction; flat-field covariance.
 
 ## 6. Astrometric residuals
+<!-- key: astrometric-residuals -->
 
 - Mechanism. Atmospheric turbulence, unmodelled stray fields, focal-plane
   shifts, differential chromatic refraction.
@@ -100,6 +106,7 @@ body read; `[sec]` named secondary source; `[der]` derived here.
   arXiv:2603.23786, Sect. V.3) [src]; residual maps against Gaia.
 
 ## 7. Blending and deblender failures
+<!-- key: blending-and-deblender-failures -->
 
 The shear and n(z) consequences are in `cosmo-weak-lensing` (systematics,
 Sect. 2); here the catalogue-level failure.
@@ -120,6 +127,7 @@ Sect. 2); here the catalogue-level failure.
   space imaging; the BTK benchmark (arXiv:2607.28475) [src].
 
 ## 8. CMB map-maker model error and transfer function
+<!-- key: cmb-map-maker-model-error-and-transfer-function -->
 
 - Mechanism. Any mismatch between the data model and the data (sub-pixel
   signal structure, detector gain mismatch) leaks into long-wavelength modes
@@ -140,6 +148,7 @@ Sect. 2); here the catalogue-level failure.
   Sect. III.6 outline].
 
 ## 9. Instrument non-linearity, bandpass and polarisation-efficiency errors
+<!-- key: instrument-non-linearity-bandpass-and -->
 
 - Mechanism. ADC non-linearity, bandpass mismatch between detectors, and
   polarisation-efficiency errors distort polarisation at large angles and
@@ -153,6 +162,7 @@ Sect. 2); here the catalogue-level failure.
   [src].
 
 ## 10. Imaging-systematics weights: over- and under-correction
+<!-- key: imaging-systematics-weights-over-and-under -->
 
 - Mechanism. Target density responds to depth, seeing, extinction, stellar
   density; regressing it out removes spurious power but also real modes, and
@@ -170,6 +180,7 @@ Sect. 2); here the catalogue-level failure.
   `cosmo-galaxy-clustering`.
 
 ## 11. Imaging-region inhomogeneity and anisotropic n(z)
+<!-- key: imaging-region-inhomogeneity-and-anisotropic-n-z -->
 
 - Mechanism. Parent imaging of different depth (DES vs DECaLS, North vs
   South) changes both the density and the redshift distribution of the
@@ -186,6 +197,7 @@ Sect. 2); here the catalogue-level failure.
   targeting (arXiv:2208.08518) [src].
 
 ## 12. Random-catalogue and footprint errors
+<!-- key: random-catalogue-and-footprint-errors -->
 
 - Mechanism. Randoms that do not follow the true selection (missing vetoes,
   wrong coverage count, mismatched dN/dz) create spurious clustering.
@@ -198,6 +210,7 @@ Sect. 2); here the catalogue-level failure.
   coverage count N_tile.
 
 ## 13. Pipeline-version dependence of the selection function
+<!-- key: pipeline-version-dependence-of-the-selection -->
 
 - Mechanism. In a survey with spectroscopic feedback, the redshifts that
   decided re-observation were made with the pipeline version of the night,
@@ -210,4 +223,60 @@ Sect. 2); here the catalogue-level failure.
 - Test. Re-run of targeting and assignment from stored ledgers; releases that
   state every code and reduction version.
 
+## 14. PSF model errors in the pipeline
+<!-- key: psf-model-errors-in-the-pipeline -->
+
+- Mechanism. Impure star samples, too-low interpolation order, colour
+  dependence of the PSF, and co-add discontinuities.
+- Size. Rubin DP1: both Piff variants underestimate the PSF size, the
+  fourth-order one less [src: arXiv:2603.23786, Sect. V.2]; DES Y3 dropped
+  the g band for lensing because of PSF model accuracy (arXiv:2501.05781)
+  [src]. The shear-level budgets are in `cosmo-weak-lensing`.
+- Mitigation. Star selection with Gaia and infrared colours, colour-dependent
+  models and fourth-moment diagnostics (arXiv:2501.05781) [src]; co-add PSF
+  assembled from input models [src: arXiv:1705.06766, Sect. 3.3.1].
+- Test. Reserved stars (20% in HSC, [src: arXiv:1705.06766, Sect. 4.3]);
+  size and ellipticity residuals versus magnitude, colour and position.
+
+## 15. Data-product defects found after release
+<!-- key: data-product-defects-found-after-release -->
+
+- Mechanism. Bugs in metadata propagation, variance estimates or masking
+  that the science checks did not catch.
+- Examples. DESI DR1: flux-calibration inverse variance underestimated, by
+  up to a factor 5 at S/N ~ 100 per pixel; coadd resolution matrices wrong by
+  more than 0.01 for ~1.7% of pixels; Gaia EDR3 DUPLICATED_SOURCE always
+  False, so no such source was masked at targeting
+  [src: arXiv:2503.14745, App. E].
+- Mitigation. Versioned catalogues (zcatalog v1), known-issues lists read
+  before use, re-running affected steps with the fixed code.
+
+## 16. What a referee checks in a pipeline or catalogue section
+<!-- key: what-a-referee-checks-in-a-pipeline-or -->
+
+1. Reduction version and code versions named; known-issues list consulted.
+2. Target selection: parent imaging, its regions, and the masks used.
+3. Fibre assignment: completeness definition, which correction, altMTL or
+   equivalent realisations.
+4. Redshift success and purity: definition (per target, per good fibre),
+   truth table (VI, repeats), quality cut, dependence on conditions.
+5. Redshift errors calibrated on repeats, not taken from the fitter.
+6. Sky-subtraction residuals versus the noise model, especially on OH lines.
+7. Imaging: ISR steps that are modelled (brighter-fatter, CTI, crosstalk),
+   astrometric residuals, PSF model and its validation stars.
+8. Deblending: deblender, blend fraction, injection or deeper-data test.
+9. Catalogue: veto list, randoms density and how random redshifts were
+   assigned, weights and their product, survey-property maps used.
+10. Imaging-systematics weights: method, cross-validation, test on
+    contaminated mocks, spread between methods.
+11. Source injection or end-to-end simulation through the real pipeline.
+12. CMB maps: data model, filtering, transfer function measured on real data,
+    model-error tests, null splits.
+13. Catalogue-level blinding where the result is a cosmological parameter.
+
 ## Not verified
+<!-- key: not-verified -->
+
+- Tree-ring and edge distortions of CCDs: no paper read this session.
+- Differential chromatic refraction size for Rubin: not quantified here.
+- Fibre-to-fibre cross-talk size in DESI not read.

@@ -2,7 +2,7 @@
 
 Skills for [Claude Code](https://claude.com/claude-code) that give it a
 working, citable knowledge of observational cosmology: one hub skill and
-twenty-one domain skills, each built from the literature, with a bibliography
+twenty-eight domain skills, each built from the literature, with a bibliography
 checked against arXiv.
 
 The package holds general knowledge of the field and links every statement to
@@ -25,7 +25,7 @@ cosmoskill/
 │   ├── observational-cosmology/   hub: which skill holds what, review rubric,
 │   │   ├── references/            conventions, cross-probe digest
 │   │   └── scripts/               fetch_paper.py, layers.py, verify_sources.py
-│   └── cosmo-<domain>/            21 domain skills, same shape each
+│   └── cosmo-<domain>/            28 domain skills, same shape each
 │       ├── SKILL.md               when to use, file map, core facts, checklists
 │       └── references/
 │           ├── physics-and-methods.md
@@ -33,39 +33,48 @@ cosmoskill/
 │           ├── results.md
 │           ├── systematics.md
 │           ├── open-questions.md
-│           └── sources.tsv        the bibliography, machine-checked
+│           ├── sources.tsv        the bibliography, machine-checked
+│           └── subtopics.tsv      subtopics and their source (12 skills so far)
+│       └── deep/                  level-3 dossiers, in five skills so far
 ├── docs/                          specification, roadmap, agent brief, history
 ├── tools/                         upkeep: section keys, level blocks
 ├── tests/
 └── .claude-plugin/                plugin and marketplace manifests
 ```
 
-| Skill | Domain | Sources |
-|---|---|---|
-| `observational-cosmology` | hub and router; conventions; cross-probe digest | 25 |
-| `cosmo-cmb` | CMB spectra and lensing, Planck / ACT / SPT, τ, A_L | 91 |
-| `cosmo-galaxy-clustering` | BAO, RSD, full shape, DESI DR1/DR2 | 126 |
-| `cosmo-lyman-alpha` | Lyα BAO and AP, P1D, tomography, IGM | 172 |
-| `cosmo-weak-lensing` | cosmic shear, 3×2pt, S8 | 192 |
-| `cosmo-supernovae` | SN Ia Hubble diagram and compilations | 109 |
-| `cosmo-distance-ladder-h0` | H0: ladder, masers, time delays, inverse ladder | 103 |
-| `cosmo-peculiar-velocities` | velocity surveys and estimators, fσ8 at low redshift, bulk flows | 150 |
-| `cosmo-clusters` | cluster counts and mass calibration | 100 |
-| `cosmo-cmb-lss-cross-correlations` | CMB lensing × LSS, kSZ, tSZ, ISW | 101 |
-| `cosmo-beyond-two-point` | bispectrum, voids, field-level inference, SBI | 120 |
-| `cosmo-dark-energy-modified-gravity` | w0wa evidence and critiques, μ–Σ, E_G | 99 |
-| `cosmo-neutrinos-dark-matter` | Σmν, N_eff, warm / fuzzy / interacting dark matter | 101 |
-| `cosmo-inflation-primordial` | n_s, r, f_NL, curvature, birefringence | 100 |
-| `cosmo-tensions-anomalies` | cross-probe synthesis: H0, S8, dipole, CMB anomalies | 100 |
-| `cosmo-surveys-facilities` | instruments, releases, dates, status | 102 |
-| `cosmo-statistics-inference` | covariance, blinding, priors, tension metrics, SBI | 100 |
-| `cosmo-simulations-mocks` | N-body, hydro, fast mocks, emulators, constrained simulations | 100 |
-| `cosmo-reionization-21cm` | reionisation history, 21 cm, intensity mapping | 101 |
-| `cosmo-multimessenger` | standard sirens, FRBs, lensed transients | 125 |
-| `cosmo-software-ecosystem` | codes, their units, defaults and status | 100 |
-| `cosmo-theory-foundations` | definitions and formulae with the paper fixing each | 100 |
+| Skill | Domain | Sources | Dossiers |
+|---|---|---|---|
+| `observational-cosmology` | hub and router; conventions; cross-probe digest | 25 |  |
+| `cosmo-cmb` | CMB spectra and lensing, Planck / ACT / SPT, τ, A_L | 120 | 3 |
+| `cosmo-galaxy-clustering` | BAO, RSD, full shape, DESI DR1/DR2 | 158 | 3 |
+| `cosmo-lyman-alpha` | Lyα BAO and AP, P1D, tomography, IGM | 196 | 3 |
+| `cosmo-weak-lensing` | cosmic shear, 3×2pt, S8 | 232 | 3 |
+| `cosmo-supernovae` | SN Ia Hubble diagram and compilations | 159 |  |
+| `cosmo-distance-ladder-h0` | H0: ladder, masers, time delays, inverse ladder | 139 |  |
+| `cosmo-peculiar-velocities` | velocity surveys and estimators, fσ8 at low redshift, bulk flows | 164 |  |
+| `cosmo-clusters` | cluster counts and mass calibration | 122 |  |
+| `cosmo-cmb-lss-cross-correlations` | CMB lensing × LSS, kSZ, tSZ, ISW | 171 |  |
+| `cosmo-beyond-two-point` | bispectrum, voids, field-level inference, SBI | 218 |  |
+| `cosmo-dark-energy-modified-gravity` | w0wa evidence and critiques, μ–Σ, E_G | 126 |  |
+| `cosmo-neutrinos-dark-matter` | Σmν, N_eff, warm / fuzzy / interacting dark matter | 114 |  |
+| `cosmo-inflation-primordial` | n_s, r, f_NL, curvature, birefringence | 132 |  |
+| `cosmo-tensions-anomalies` | cross-probe synthesis: H0, S8, dipole, CMB anomalies | 106 |  |
+| `cosmo-surveys-facilities` | instruments, releases, dates, status | 110 |  |
+| `cosmo-statistics-inference` | covariance, blinding, priors, tension metrics, SBI | 126 | 3 |
+| `cosmo-simulations-mocks` | N-body, hydro, fast mocks, emulators, constrained simulations | 215 |  |
+| `cosmo-reionization-21cm` | reionisation history, 21 cm, intensity mapping | 167 |  |
+| `cosmo-multimessenger` | standard sirens, FRBs, lensed transients | 134 |  |
+| `cosmo-software-ecosystem` | codes, their units, defaults and status | 107 |  |
+| `cosmo-theory-foundations` | definitions and formulae with the paper fixing each | 104 |  |
+| `cosmo-photometry-photoz` | photometric calibration, photo-z, n(z) calibration | 113 |  |
+| `cosmo-galaxy-halo-connection` | HOD, SHAM, stellar-to-halo mass, assembly bias, halo model | 128 |  |
+| `cosmo-data-pipelines` | spectroscopic, imaging and CMB pipelines; masks, randoms, validation | 107 |  |
+| `cosmo-bbn` | primordial abundances, nuclear rates, BBN codes, Ω_b h² prior | 97 |  |
+| `cosmo-machine-learning` | emulators, neural compression, SBI, generative models, robustness | 123 |  |
+| `cosmo-cosmic-web` | web classification, filaments, environment, filament gas, protoclusters | 100 |  |
+| `cosmo-early-universe-exotica` | PTA background, PBHs, defects, EDE, spectral distortions | 97 |  |
 
-2,417 bibliography rows and about 400,000 words of reference in total.
+3,910 bibliography rows and about 690,000 words of reference in total; 15 specialist dossiers (level 3) in five skills.
 
 ## How the content is grounded
 
@@ -100,7 +109,7 @@ python3 $S/fetch_paper.py 2503.14739 --grep "8.632"    # find a number in its bo
 Every skill answers at the depth the question calls for, and says which:
 
 | Level | Read | For |
-|---|---|---|
+|---|---|---|---|
 | L1 | the skill's `SKILL.md` | what a domain is, where it stands, what to watch for |
 | L2 | one reference file | a value, its source, a referee point |
 | L3 | a specialist dossier | how a result is obtained, which method to choose (none written yet) |
@@ -158,16 +167,18 @@ That leaves limits a user should know:
 
 Limits of this version in particular:
 
-- No specialist dossier (L3) is written yet: below the paper itself, the
-  deepest material is the reference files.
-- Depth is uneven across domains: 91 to 192 sources, for no principled
-  reason. The first version was built for one researcher, and the domains
-  nearest to that researcher's work are the deepest.
-- Classic references are often missing: the first build searched recent
-  work first.
-- Domains without a skill: instrument and data pipelines, photometry and
-  photometric redshifts, the cosmic web, big-bang nucleosynthesis, the
-  galaxy–halo connection, early-universe exotica, machine-learning methods.
+- Specialist dossiers (L3) exist in five skills only (`cosmo-galaxy-clustering`,
+  `cosmo-statistics-inference`, `cosmo-cmb`, `cosmo-lyman-alpha`,
+  `cosmo-weak-lensing`), three each. Elsewhere the deepest material below
+  the paper itself is the reference files. The pilot test found that a
+  dossier helps only where the reference files do not already answer
+  (`docs/history/tests/levels/run-2026-10-16-l3-pilot.md`).
+- Depth is still uneven: 97 to 232 sources per domain. Every domain now
+  cites paper bodies (sections, tables, equations) and its classic
+  references, but the share of body-level statements varies.
+- Numbers were compared with their papers by sample at each gate
+  (`docs/history/tests/gate-log.md`), not exhaustively. A few sampled
+  statements could not be located at source and are logged as unconfirmed.
 - A local layer adds notes, papers and dossiers. It cannot replace a value
   of the package, and nothing in it is promoted to the package.
 

@@ -38,7 +38,7 @@ Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named 
 ## 3. Which tension metric, and is "n sigma" meaningful
 <!-- key: which-tension-metric-and-is-n-sigma-meaningful -->
 
-**State of practice.** DES settled on a suite after the comparison of Lemos et al. 2021 (arXiv:2012.09554): parameter differences, eigentension and suspiciousness agree with each other on simulated and real data (about 2.3σ for DES Y1 against Planck), and the Bayes ratio does not, because of its prior-volume dependence [src]. DES Y6 quotes a full-space parameter difference, estimated with normalising flows, as the headline, with the S8 projection next to it, and uses `n_σ < 3` as its criterion for combining data sets (arXiv:2601.14559) [src]. KiDS-Legacy quotes 0.73σ against Planck in its abstract (arXiv:2503.19441); the metric behind it was not read here.
+**State of practice.** DES settled on a suite after the comparison of Lemos et al. 2021 (arXiv:2012.09554): parameter differences, eigentension and suspiciousness agree with each other on simulated and real data (about 2.3σ for DES Y1 against Planck), and the Bayes ratio does not, because of its prior-volume dependence [src]. DES Y6 quotes a full-space parameter difference, estimated with normalising flows, as the headline, with the S8 projection next to it, and uses `n_σ < 3` as its criterion for combining data sets (arXiv:2601.14559) [src]. KiDS-Legacy quotes 0.73σ against Planck in its abstract (arXiv:2503.19441): a Hellinger distance between one-dimensional marginal Σ8 distributions, with `|ΔX| ≤ 2.6σ` as its consistency criterion between surveys [src: Sects. 6–7].
 
 **Open points.**
 

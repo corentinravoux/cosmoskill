@@ -41,9 +41,11 @@ the finder and definition dependence above].
 
 Form. Tinker et al. 2008 write dn/dM = f(σ) (ρ̄_m/M) d ln σ⁻¹/dM [src: Eq. 2 of
 arXiv:0803.2706] with f(σ) = A[(σ/b)^(−a) + 1] e^(−c/σ²) [src: Eq. 3], peak
-height ν ≡ δ_c/σ(M, z), δ_c ≈ 1.69 [src: Sect. III.1]. The ν-form of
-Sheth–Tormen and the peak-background-split bias are written in
-`cosmo-theory-foundations` section 11 from the Asgari review.
+height ν ≡ δ_c/σ(M, z), δ_c ≈ 1.69 [src: Sect. III.1]. Sheth & Tormen 1999
+(arXiv:astro-ph/9901122), on spherical-overdensity GIF haloes, define ν ≡
+[δ_c(z)/σ(m)]² (note: squared) and fit νf(ν) = A(1 + ν′^(−p)) (ν′/2)^½
+e^(−ν′/2)/√π, ν′ = aν, a = 0.707, p = 0.3, A fixed by normalisation;
+Press–Schechter is a = 1, p = 0, A = ½ [src: Eqs. 9–10, Sect. 3].
 
 | Calibration | What it established | Reference |
 |---|---|---|
@@ -71,13 +73,19 @@ them, belongs to `cosmo-clusters`.
   where both functions are significantly greater than unity" [src].
 - Peak-background split. Sheth 1999 (arXiv:astro-ph/9901122): "knowledge of the
   unconditional mass function alone is sufficient to provide an accurate
-  estimate of the large scale bias factor" [src].
+  estimate of the large scale bias factor" [src]; with the fit above, b_Eul =
+  1 + (aν − 1)/δ_c + (2p/δ_c)/[1 + (aν)^p]: massive haloes slightly less, small
+  ones more biased than Mo & White [src: Eq. 12, Sect. 3].
 - Numerical calibration. Tinker et al. 2010 (arXiv:1001.3162): ~6% scatter
   about the fit; normalised so that all matter has unit bias with the Tinker
   2008 mass function; rare haloes are more biased than the Sheth–Mo–Tormen
   ellipsoidal model predicts; FoF (b = 0.2) bias is ~10% below Δ = 200; the
   bias function "evolves very weakly with redshift, if at all"; the
   peak-background split leaves ~20% residuals at high and low mass [src].
+  Fit: b(ν) = 1 − A ν^a/(ν^a + δ_c^a) + B ν^b + C ν^c, ν = δ_c/σ, normalised by
+  ∫ b f dν = 1 [src: Eqs. 6–7]; for 200 ≤ Δ ≤ 3200 (y = log₁₀Δ): A = 1 +
+  0.24y e^(−(4/y)⁴), a = 0.44y − 0.88, B = 0.183, b = 1.5, C = 0.019 + 0.107y +
+  0.19 e^(−(4/y)⁴), c = 2.4 [src: Table 2].
 - Non-linear (scale-dependent) halo bias in the 1-halo/2-halo transition is an
   ingredient of halo-model extensions (section 5).
 - Secondary bias. At fixed mass, halo clustering depends on formation time,
@@ -89,8 +97,10 @@ them, belongs to `cosmo-clusters`.
 - NFW. Equilibrium profiles "have the same shape, independent of halo mass, of
   initial density fluctuation spectrum, and of the values of the cosmological
   parameters"; low-mass haloes are denser, reflecting earlier collapse
-  (Navarro, Frenk & White 1997, arXiv:astro-ph/9611107) [src]. Formula and its
-  truncation are in `cosmo-theory-foundations` section 11.
+  (Navarro, Frenk & White 1997, arXiv:astro-ph/9611107) [src]. ρ(r)/ρ_crit =
+  δ_c/[(r/r_s)(1 + r/r_s)²] [src: Eq. 1]; with c = r_200/r_s (r_200 at 200
+  ρ_crit), δ_c = (200/3) c³/[ln(1 + c) − c/(1 + c)], one free parameter at fixed
+  M_200, c falling with mass [src: Sect. 3.2]. Truncation: `cosmo-theory-foundations` §11.
 - Einasto-type. The logarithmic slope decreases monotonically inward with no
   convergence to an inner power law; cusps as steep as r^(−1.5) are
   inconsistent with most simulations (Navarro et al. 2004,
@@ -102,7 +112,7 @@ them, belongs to `cosmo-clusters`.
 | Relation | Content | Reference |
 |---|---|---|
 | Bullock et al. 2001 | c_v ∝ 1/(1+z) at fixed mass; scatter in log c_v ~ 0.18; denser environments give more concentrated haloes | arXiv:astro-ph/9908159 [src] |
-| Duffy et al. 2008 | power law for 10¹¹–10¹⁵ M_⊙/h, z < 2, in WMAP5; z = 0 concentrations 23% (10¹¹) to 16% (10¹⁴ M_⊙/h) below Millennium values; "much lower" than X-ray inferences | arXiv:0804.2486 [src] |
+| Duffy et al. 2008 | power law for 10¹¹–10¹⁵ M_⊙/h, z < 2, in WMAP5; z = 0 concentrations 23% (10¹¹) to 16% (10¹⁴ M_⊙/h) below Millennium values; "much lower" than X-ray inferences [src]. Form c = A(M/M_pivot)^B (1+z)^C, M_pivot = 2 × 10¹² h⁻¹M_⊙ [src: Eq. 4]; NFW, full sample, z = 0–2: (A, B, C) = (5.71, −0.084, −0.47) for 200c, (7.85, −0.081, −0.71) for vir, (10.14, −0.081, −1.01) for 200m; [src: Table 1]; relaxed haloes have A higher by ~18% [der: ratio of the Table 1 rows] | arXiv:0804.2486 |
 | Ludlow et al. 2016 | c(M, z) of CDM monotonic; WDM non-monotonic; collapsed mass history predicts both | arXiv:1601.02624 [src] |
 | Child et al. 2018 | in M/M*: power law below M/M* ~ 500–1000, then constant c_0 ~ 3; relaxed fraction falls to ~0.5 | arXiv:1804.10199 [src] |
 | Diemer 2019 | analytic model from pseudo-evolution plus ν, n_eff and α_eff; 5% accuracy against scale-free and ΛCDM simulations; in Colossus | arXiv:1809.07326 [src] |
@@ -139,7 +149,7 @@ Known limits, as the review lists them [src: Sect. 5 of arXiv:2303.08752]:
 |---|---|---|
 | Large-scale one-halo term | Û(M, k → 0) is constant, so P^1h ∝ k⁰ while P^2h ∝ k^(n_s): the one-halo term dominates again at k ~ 10⁻⁴ h/Mpc. Correct as shot noise for a discrete tracer, wrong for matter, which must fall faster than k⁴ by mass and momentum conservation [src: Sect. 5.4] | compensation kernels enforcing k² (Mohammed & Seljak; Seljak & Vlah), Lagrangian formulations, a halo-fluctuation field with a general bias expansion |
 | Transition region | linear halo bias under-predicts power between the two regimes | beyond-linear halo bias: a corrective two-halo term measured in N-body that "can boost power in the two-halo term by a factor of ~2 at scales k ~ 0.7 h/Mpc" and "almost completely" removes the under-prediction (Mead 2021, arXiv:2011.08858) [src] |
-| Halo exclusion | finite radii force the halo correlation to zero below r_h,1 + r_h,2; its form depends on the halo definition [src: Sect. 5.6] | automatic if P_hh or β^nl is calibrated on simulations (Dark Emulator, Mead & Verde); otherwise modified integration limits (Zehavi et al. 2004; Tinker et al. 2005), which bias the predicted number density and must be corrected by hand |
+| Halo exclusion | finite radii force the halo correlation to zero below r_h,1 + r_h,2; its form depends on the halo definition [src: Sect. 5.6] | automatic if P_hh or β^nl is calibrated on simulations (Dark Emulator, Mead & Verde); otherwise modified integration limits, which bias the predicted number density and must be corrected by hand. Originals: Zehavi et al. 2004 (arXiv:astro-ph/0301280) keep in the two-halo term only haloes with R_vir ≤ r/2 and use b²(M, r) = [1 + 0.2 ξ_m(r)]^(−0.5) b²_lin(M), with residuals of ~10–20% [src: Sect. III, App. A]; Tinker et al. 2005 (arXiv:astro-ph/0411777) show that the r/2 cut under-counts two-halo pairs by > 50% at 1 h⁻¹Mpc, spherical exclusion (R_vir1 + R_vir2 ≤ r) by ~25%, ellipsoidal exclusion (axis ratios 0.9, 0.8) by ~10%, and use an n̄′_g-matched shortcut; the original SMT bias over-predicts galaxy bias by ~15% at r ≳ 10 h⁻¹Mpc [src: App. B, Eqs. B10–B13] |
 | Scatter in concentration | σ_ln c ~ 0.3; the mean profile is used where ⟨Û²⟩ appears; realistic scatter boosts matter power by a few per cent at k ≳ 10 h/Mpc [src: Sect. 5.8] | an extra integral over p(c) if spatially uncorrelated; spatially correlated scatter is assembly bias |
 | Accuracy of the full model | the CLF + halo-model framework with scale-dependent halo bias and exclusion reproduces 3D galaxy–galaxy and galaxy–matter correlations to better than 10% (mostly 5%); ignoring either effect gives errors "that easily exceed 40 percent on scales of ~1 h⁻¹Mpc"; residual redshift-space distortions in w_p exceed 20% at r_p ≳ 10 h⁻¹Mpc if ignored and are corrected to ~2% with a modified Kaiser formula | van den Bosch et al. 2013, arXiv:1206.6890 [src] |
 
@@ -383,7 +393,7 @@ linear-bias limit of the halo model, section 5].
 | Emulated halo statistics (Dark Emulator) + HOD | HSC-Y1 × SDSS | Miyatake et al. 2022, arXiv:2111.02419 [src] |
 | Conditional stellar mass function + simulation-calibrated halo model with non-linear bias, exclusion, baryons | KiDS-1000 | Dvornik et al. 2023, arXiv:2210.03110 [src] |
 | Simulation-based HOD with assembly bias (AbacusSummit) | DESI DR1 × DES, KiDS, HSC | Lange et al. 2025, arXiv:2512.15962 [src] |
-| Extended SHAM (SHAMe) | GAMA × KiDS-1000 | Mahony et al. 2025, arXiv:2507.01601 [src] |
+| Extended SHAM (SHAMe): V_peak–M* scatter σ, orphan lifetime t_merger, two assembly-bias parameters f_k,c+s and f_k,c−s, and β [src: Sect. 2.1, Eq. 1]; emulated, gravity-only ΔΣ; recovers TNG300 cosmology within 1σ with or without ΔΣ below 1.4 h⁻¹Mpc [src: Sect. 4] | GAMA × KiDS-1000 | Mahony et al. 2025, arXiv:2507.01601 |
 | Satellite kinematics + luminosity function (Basilisk) | SDSS DR7 | arXiv:2512.14889 [src] |
 
 **"Lensing is low".** Clustering-trained models of BOSS CMASS predict lensing
@@ -429,9 +439,9 @@ scale cuts.
 ## Not verified
 <!-- key: not-verified -->
 
-- The Zehavi et al. 2004 and Tinker et al. 2005 exclusion prescriptions, Zheng
-  et al. 2007 satellite profiles and the Sheth–Tormen and NFW formulae were not
-  read in the original papers; they are quoted through the Asgari review or the
-  sibling `cosmo-theory-foundations`.
-- Recent HSC, DES Y6 and KiDS-Legacy galaxy–halo papers were not searched
-  individually; DES Y3 and KiDS-1000 are the latest read here.
+- Zheng et al. 2007 satellite profiles were not read in the original paper.
+  (The Zehavi 2004 and Tinker 2005 exclusion schemes, the Sheth–Tormen mass
+  function and bias, NFW and the Duffy and Tinker 2010 fits were read in their
+  bodies on 2026-10-16.)
+- Searched 2026-10-16: HSC-Y3 results are in `results.md` §5; no DES Y6 or
+  KiDS-Legacy occupation-model analysis was found (DES Y6 cuts at 4–6 h⁻¹Mpc).

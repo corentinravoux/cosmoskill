@@ -306,11 +306,11 @@ The entries are not comparable with each other without the metric and the CMB re
 
 | Quoted by | CMB data | Value | Space | Source | Flag |
 |---|---|---|---|---|---|
-| ACT | P-ACT | 1.6σ | ΛCDM parameters | arXiv:2503.14452 | [src] |
+| ACT | P-ACT | 1.6σ | Ω_m–h r_d plane, Gaussian separation in 2D | arXiv:2503.14452 | [src: App. H] |
 | SPT | SPT-3G + ACT DR6 + Planck | 2.8σ | Ω_m–h r_d plane | arXiv:2506.20707 | [src] |
 | DESI | CMB as defined in the DESI paper | 2.3σ | — | [sec: `cosmo-galaxy-clustering` SKILL.md, citing arXiv:2503.14738] | [sec] |
 
-Three numbers for what a text would call "the CMB–BAO tension", differing by CMB combination and by the subspace compared.
+Three numbers for what a text would call "the CMB–BAO tension". The ACT and SPT figures are computed in the same Ω_m–h r_d plane and differ by CMB combination (ACT-L alone against DESI DR2 is 2.8σ, arXiv:2503.14452 [src: App. H]); the space behind the DESI figure was not read.
 
 ## Not verified
 <!-- key: not-verified -->

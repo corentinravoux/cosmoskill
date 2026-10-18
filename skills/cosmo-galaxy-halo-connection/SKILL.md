@@ -15,9 +15,12 @@ re-verify against the cited paper before a number enters a manuscript.
 |---|---|
 | Halo ingredients, halo model, HOD/CLF/SHAM, empirical and physical models, assembly bias, satellites, joint-fit practice, codes | `references/physics-and-methods.md` |
 | Samples, group and lensing catalogues, simulations, which measurement constrains what | `references/surveys-and-data.md` |
-| HOD values, SHMR, satellites, assembly-bias detections, lensing-is-low, S8 from clustering + lensing, history | `references/results.md` |
+| HOD values, SHMR, satellites, assembly-bias detections, lensing-is-low, joint-fit S8, history | `references/results.md` |
 | Size of a systematic; referee checklist | `references/systematics.md` |
 | Lensing-is-low debate, assembly-bias detection, conformity, SHMR ends, method debates, stale claims | `references/open-questions.md` |
+| HOD/CLF fitting: engine, priors, covariance, sampler | `deep/hod-clf.md` |
+| SHAM/SHMR: proxy, scatter, orphans, nuisances | `deep/abundance-matching-shmr.md` |
+| Assembly-bias forms, environment, shuffling | `deep/assembly-bias.md` |
 | Title, first author, year of a cited paper | `references/sources.tsv` |
 
 ## What an expert holds in mind
@@ -114,10 +117,10 @@ Answer at the lowest level that answers the question, then stop.
 |---|---|---|
 | L1 | this file only | the headline values, the state of the domain, the list a referee checks, the errors that recur |
 | L2 | one file of `references/` | what this file does not hold: other values, their history, the size of each systematic, methods, releases |
-| L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
+| L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; open 4k; methods 11k; results 8k; surveys 4k; systematics 6k.
+Sizes, in thousands of tokens: L1 3k; open 4k; methods 11k; results 8k; surveys 4k; systematics 6k; deep/abundance-matching-shmr 7k; deep/assembly-bias 7k; deep/hod-clf 7k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

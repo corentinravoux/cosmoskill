@@ -13,12 +13,15 @@ re-verify against the cited paper before a number enters a manuscript.
 
 | Question | Load |
 |---|---|
-| Ω_GW, h_c, HD statistics, phase-transition parameters, string loops, PBH formation, SIGW, EDE model, recombination physics, distortions, energy deposition, PMF channels, ALPs, codes | `references/physics-and-methods.md` |
-| PTA releases, LVK runs, LISA, microlensing surveys, distortion instruments, CMB data labels, γ-ray and quasar data | `references/surveys-and-data.md` |
-| PTA amplitudes and significances, Ω_GW limits, Gμ, f_PBH, f_EDE, α and m_e, μ and y, p_ann, PMF bounds, ALP fraction, history | `references/results.md` |
-| PTA noise, templates, PBH modelling, EDE prior volume, constants, distortions, injection; referee checklist | `references/systematics.md` |
-| PTA origin, PBH disputes, EDE and recombination, distortions, PMF hints, forecasts, stale claims | `references/open-questions.md` |
-| Title, first author, year of a cited paper | `references/sources.tsv` |
+| Ω_GW, HD statistics, phase transitions, strings, PBH formation, SIGW, EDE, recombination, distortions, energy deposition, PMFs, ALPs, codes | `references/physics-and-methods.md` |
+| PTA releases, LVK runs, LISA, microlensing surveys, distortion instruments, CMB and γ-ray data | `references/surveys-and-data.md` |
+| PTA amplitudes, Ω_GW limits, Gμ, f_PBH, f_EDE, α, m_e, μ, y, p_ann, PMF and ALP bounds, history | `references/results.md` |
+| PTA noise, templates, PBH modelling, EDE priors, constants, distortions, injection; referee list | `references/systematics.md` |
+| PTA origin, PBH disputes, EDE, distortions, PMF hints, forecasts, stale claims | `references/open-questions.md` |
+| PTA pipeline: noise model, priors, HD Bayes factor, optimal statistic, null tests | `deep/sgwb-pta.md` |
+| Building an f_PBH(M) curve: microlensing, LVK mergers, extended mass functions | `deep/primordial-black-holes.md` |
+| Deriving μ and y limits: visibility, FIRAS fit, μ map, forecasts | `deep/spectral-distortions.md` |
+| Title, author, year of a source | `references/sources.tsv` |
 
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
@@ -39,37 +42,37 @@ re-verify against the cited paper before a number enters a manuscript.
 ## Systematics a referee checks
 <!-- key: systematics-a-referee-checks -->
 
-1. PTA noise model (red, DM, chromatic, solar wind) and split-data stability.
-2. HD significance as a calibrated p-value, not only a Bayes factor.
-3. SMBHB prior behind any new-physics model comparison.
-4. Template choice: string loop model, phase-transition source and α definition.
-5. PBH halo model, mass function, binary channel, accretion physics.
-6. EDE and constants: Bayesian versus profile, BAO sample, P-ACT versus W-ACT.
-7. FIRAS calibration and distortion foregrounds.
-8. Energy deposition (on-the-spot or full) and the PMF clumping model.
+1. PTA noise (red, DM, chromatic, solar wind); split-data stability.
+2. HD significance as calibrated p-value, not only Bayes factor.
+3. SMBHB prior behind new-physics comparisons.
+4. Templates: string loops, phase-transition source, α definition.
+5. PBH halo model, mass function, binary channel, accretion.
+6. EDE, constants: Bayesian or profile, BAO sample, P-ACT or W-ACT.
+7. FIRAS calibration; distortion foregrounds.
+8. Energy deposition (on-the-spot or full); PMF clumping model.
 
 ## Errors that recur
 <!-- key: errors-that-recur -->
 
 - "PTAs detected the background at 5σ"; treating γ as robust.
 - Mixing the PTA strain index α with the LVK Ω_GW index α.
-- Quoting Ω_GW without h or reference frequency.
-- Citing the O3 limit 5.8 × 10⁻⁹ as current.
-- Treating OGLE limits as undisputed, or white-dwarf and femtolensing limits as valid.
-- "f_EDE < 0.07 rules out EDE", without noting Bayesian versus profile.
-- Comparing a quasar Δα/α (z ~ 1) with a CMB α_EM (z ~ 1100).
-- Quoting the 1996 FIRAS μ as the current limit; mixing B_1Mpc and √⟨B²⟩.
+- Ω_GW without h or reference frequency.
+- The O3 limit 5.8 × 10⁻⁹ cited as current.
+- OGLE limits as undisputed; white-dwarf or femtolensing limits as valid.
+- "f_EDE < 0.07 rules out EDE", ignoring Bayesian versus profile.
+- Quasar Δα/α (z ~ 1) compared with CMB α_EM (z ~ 1100).
+- The 1996 FIRAS μ as current; mixing B_1Mpc and √⟨B²⟩.
 
 ## Related skills
 <!-- key: related-skills -->
 
 - `cosmo-inflation-primordial`: n_s, r, f_NL, isocurvature, features, birefringence.
-- `cosmo-tensions-anomalies`: EDE and varying m_e as H0 resolutions.
+- `cosmo-tensions-anomalies`: EDE, varying m_e as H0 fixes.
 - `cosmo-neutrinos-dark-matter`: fuzzy and particle dark matter, N_eff.
-- `cosmo-bbn`: BBN limits on decaying relics and extra radiation.
-- `cosmo-multimessenger`: standard sirens; `cosmo-cmb`: likelihoods.
-- `cosmo-reionization-21cm`: dark-ages 21 cm. `cosmo-lyman-alpha`: forest data behind PMF limits.
-- `cosmo-surveys-facilities`: LISA status.
+- `cosmo-bbn`: decaying relics, extra radiation.
+- `cosmo-multimessenger`: sirens; `cosmo-cmb`: likelihoods.
+- `cosmo-reionization-21cm`: dark-ages 21 cm; `cosmo-lyman-alpha`: forest data for PMF limits.
+- `cosmo-surveys-facilities`: LISA.
 
 <!-- cosmoskill:block:start — generated by tools/sync_blocks.py, do not edit by hand -->
 ## Levels and layers
@@ -81,10 +84,10 @@ Answer at the lowest level that answers the question, then stop.
 |---|---|---|
 | L1 | this file only | the headline values, the state of the domain, the list a referee checks, the errors that recur |
 | L2 | one file of `references/` | what this file does not hold: other values, their history, the size of each systematic, methods, releases |
-| L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
+| L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; open 3k; methods 9k; results 8k; surveys 3k; systematics 4k.
+Sizes, in thousands of tokens: L1 2k; open 3k; methods 9k; results 8k; surveys 3k; systematics 4k; deep/primordial-black-holes 7k; deep/sgwb-pta 7k; deep/spectral-distortions 6k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

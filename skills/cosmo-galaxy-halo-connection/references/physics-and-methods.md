@@ -241,8 +241,9 @@ on Bolshoi with SDSS clustering and the conditional stellar mass function of
 groups, rule out several proxies because their satellite fractions disagree
 with the data and favour the peak circular velocity with 0.20 ± 0.03 dex
 scatter in stellar mass at fixed V_peak [src]. Lehmann et al. 2017
-(arXiv:1510.05651) interpolate between peak mass and peak V_max, which sets the
-concentration dependence and therefore the assembly bias of an
+(arXiv:1510.05651) interpolate between peak mass and V_max at the epoch of
+peak mass (the abstract says "peak" V_max; Sect. III.2 defines the
+epoch and finds the two rank orders very similar), which sets the concentration dependence and therefore the assembly bias of an
 abundance-matched catalogue, and show that SDSS clustering and satellite
 fractions constrain this together with the scatter [src].
 

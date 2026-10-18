@@ -14,11 +14,14 @@ re-verify against the cited paper before a number enters a manuscript.
 | Question | Load |
 |---|---|
 | Web formation, finder definitions, environment variables, spin theory, filament-gas methods, reconstructions, codes | `references/physics-and-methods.md` |
-| Filament catalogues, CAVITY, DESI and Cosmicflows web catalogues, X-ray, SZ, radio and FRB data, protocluster surveys, simulations | `references/surveys-and-data.md` |
+| Filament and web catalogues (CAVITY, DESI, Cosmicflows), X-ray, SZ, radio, FRB and protocluster data, simulations | `references/surveys-and-data.md` |
 | Web fractions, filament statistics, environment, spin alignments, filament gas, baryon census, protoclusters, history | `references/results.md` |
 | Finder, threshold, redshift-space, confounding, alignment, stacking and reconstruction systematics; referee checklist | `references/systematics.md` |
 | Missing baryons, web versus halo mass, spin transition, finder choice, protocluster abundance, stale claims | `references/open-questions.md` |
-| Title, first author, year of a cited paper | `references/sources.tsv` |
+| Metadata of a cited paper | `references/sources.tsv` |
+| Measuring spin–filament alignments | `deep/spin-alignments.md` |
+| Building a web from galaxy surveys; finder agreement | `deep/web-classification.md` |
+| Stacking filament gas: errors, contamination, models | `deep/filament-gas.md` |
 
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
@@ -115,7 +118,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; _progress 2k; open 4k; methods 7k; results 9k; surveys 4k; systematics 4k; deep/spin-alignments 8k.
+Sizes, in thousands of tokens: L1 3k; open 4k; methods 7k; results 9k; surveys 4k; systematics 4k; deep/filament-gas 8k; deep/spin-alignments 8k; deep/web-classification 9k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

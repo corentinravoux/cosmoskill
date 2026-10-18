@@ -13,11 +13,14 @@ re-verify against the cited paper before a number enters a manuscript.
 
 | Question | Load |
 |---|---|
-| How a method works: calibration, templates, ML, hierarchical models, SOM, clustering redshifts, PDFs, codes | `references/physics-and-methods.md` |
-| Standards, survey photo-z products, many-band fields, spectroscopic training samples, what comes next | `references/surveys-and-data.md` |
-| Calibration precision, photo-z scatter, n(z) accuracy by method, challenges, requirements, what superseded what | `references/results.md` |
+| Methods: calibration, templates, ML, hierarchical models, SOM, clustering redshifts, PDFs, codes | `references/physics-and-methods.md` |
+| Standards, survey photo-z products, many-band fields, training spectra, what comes next | `references/surveys-and-data.md` |
+| Calibration precision, photo-z scatter, n(z) accuracy, challenges, requirements, history | `references/results.md` |
 | Size of a systematic; referee checklist | `references/systematics.md` |
 | Debates, stale claims, what Rubin, Euclid, DESI and SPHEREx will decide | `references/open-questions.md` |
+| Building and validating a forward-model or hierarchical n(z) | `deep/population-forward-models.md` |
+| Narrow-band photo-z: line templates, zero points, PDF fixes | `deep/narrow-many-band-photometry.md` |
+| Running ubercal or FGCM; uniformity tests; XP or SCR standards | `deep/photometric-calibration.md` |
 | Title, first author, year of a cited paper | `references/sources.tsv` |
 
 ## What an expert holds in mind
@@ -106,10 +109,10 @@ Answer at the lowest level that answers the question, then stop.
 |---|---|---|
 | L1 | this file only | the headline values, the state of the domain, the list a referee checks, the errors that recur |
 | L2 | one file of `references/` | what this file does not hold: other values, their history, the size of each systematic, methods, releases |
-| L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
+| L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; open 4k; methods 10k; results 6k; surveys 5k; systematics 5k.
+Sizes, in thousands of tokens: L1 3k; open 4k; methods 10k; results 6k; surveys 5k; systematics 5k; deep/narrow-many-band-photometry 8k; deep/photometric-calibration 7k; deep/population-forward-models 9k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

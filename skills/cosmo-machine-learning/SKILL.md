@@ -14,11 +14,14 @@ re-verify against the cited paper before a number enters a manuscript.
 | Question | Load |
 |---|---|
 | Emulators, compression losses, NPE/NLE/NRE, generative models, learned simulation corrections, classifiers, anomaly detection, symbolic regression | `references/physics-and-methods.md` |
-| Training suites (Quijote, CAMELS, CosmoGrid, Gower Street), challenges (PLAsTiCC, ELAsTiCC, Beyond-2pt, FAIR Universe), survey uses, code and data locations | `references/surveys-and-data.md` |
-| Emulator accuracy, neural-summary gains, SBI outcomes, classifier scores, robustness tests, history of the numbers | `references/results.md` |
+| Training suites (Quijote, CAMELS, CosmoGrid), challenges (PLAsTiCC, ELAsTiCC, Beyond-2pt, FAIR Universe), survey uses, data locations | `references/surveys-and-data.md` |
+| Emulator accuracy, neural-summary gains, SBI outcomes, classifier scores, robustness tests, history | `references/results.md` |
 | Simulator dependence, misspecification, emulator error, overconfidence, training-set bias, reproducibility, blinding; referee list | `references/systematics.md` |
-| Network gains, trust in simulation training, interpretability, foundation models, next data, stale claims | `references/open-questions.md` |
+| Network gains, trust in simulations, interpretability, foundation models, next data, stale claims | `references/open-questions.md` |
 | Title, first author, year of a cited paper | `references/sources.tsv` |
+| Emulator design, accuracy requirement, error propagation | `deep/emulators.md` |
+| Generative field models: training, validation, prior or posterior use | `deep/generative-models.md` |
+| Networks correcting fast solvers; super-resolution; baryon painting | `deep/learned-simulation-corrections.md` |
 
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
@@ -60,13 +63,13 @@ re-verify against the cited paper before a number enters a manuscript.
 <!-- key: systematics-a-referee-checks -->
 
 1. Training simulator, size, design; data inside the training range.
-2. Test on a simulator unseen in training, bias and calibration reported.
-3. Compression loss, architecture, ensemble versus single network.
+2. Test on an unseen simulator: bias and calibration.
+3. Compression loss, architecture, ensemble or single network.
 4. Density estimator, stopping rule, simulation count.
 5. Emulator test-set percentiles and full-likelihood comparison.
 6. Goodness of fit and out-of-distribution check on the data.
 7. Classifier metric, class weights, unseen classes, calibration.
-8. Comparison with an explicit-likelihood analysis on the same cuts.
+8. Explicit-likelihood comparison on the same cuts.
 9. Code, weights, seeds and hyperparameters public; blinding conditions.
 
 ## Errors that recur
@@ -85,17 +88,17 @@ re-verify against the cited paper before a number enters a manuscript.
 ## Related skills
 <!-- key: related-skills -->
 
-- `cosmo-statistics-inference`: coverage, TARP, calibration and the
-  simulation count of SBI; emulator error in likelihoods.
-- `cosmo-beyond-two-point`: cosmology from neural summaries and SBI on data
-  (SimBIG, DES Y3, LiFT), field-level inference with initial conditions.
-- `cosmo-simulations-mocks`: the simulation suites and gravity-only
-  emulator comparison.
-- `cosmo-photometry-photoz`: machine-learning photometric redshifts.
-- `cosmo-supernovae`: photometric classification in SN Ia cosmology.
+- `cosmo-statistics-inference`: SBI coverage, TARP, simulation count;
+  emulator error in likelihoods.
+- `cosmo-beyond-two-point`: neural-summary and SBI results on data
+  (SimBIG, DES Y3, LiFT); field-level inference.
+- `cosmo-simulations-mocks`: simulation suites, gravity-only emulator
+  comparison.
+- `cosmo-photometry-photoz`: machine-learning photo-z.
+- `cosmo-supernovae`: SN Ia photometric classification.
 - `cosmo-data-pipelines`: deep-learning deblending, imaging-systematics
-  networks, spectroscopic classification in pipelines.
-- `cosmo-software-ecosystem`: versions and maintenance of the codes.
+  networks, spectroscopic classification.
+- `cosmo-software-ecosystem`: code versions and maintenance.
 - `cosmo-weak-lensing`, `cosmo-lyman-alpha`, `cosmo-reionization-21cm`:
   probe-specific uses.
 
@@ -109,10 +112,10 @@ Answer at the lowest level that answers the question, then stop.
 |---|---|---|
 | L1 | this file only | the headline values, the state of the domain, the list a referee checks, the errors that recur |
 | L2 | one file of `references/` | what this file does not hold: other values, their history, the size of each systematic, methods, releases |
-| L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
+| L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 4k; methods 12k; results 6k; surveys 5k; systematics 9k.
+Sizes, in thousands of tokens: L1 3k; open 4k; methods 12k; results 6k; surveys 5k; systematics 9k; deep/emulators 9k; deep/generative-models 10k; deep/learned-simulation-corrections 7k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

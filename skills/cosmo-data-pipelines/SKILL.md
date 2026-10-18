@@ -14,11 +14,14 @@ re-verify against the cited paper before a number enters a manuscript.
 | Question | Load |
 |---|---|
 | How a step works: targeting, assignment, extraction, sky, redshift fitting, ISR, astrometry, PSF, deblending, co-addition, CMB map-making, masks, randoms, weights, injection, release practice | `references/physics-and-methods.md` |
-| Which pipeline a survey runs, target selections, DESI bookkeeping and weights, what each release contains, public codes, pipelines being built | `references/surveys-and-data.md` |
+| Which pipeline a survey runs, target selections, DESI bookkeeping and weights, release contents, public codes, new pipelines | `references/surveys-and-data.md` |
 | Success rates, purities, residuals, depths, completeness, map noise, what superseded what | `references/results.md` |
 | Size of a pipeline systematic; referee checklist | `references/systematics.md` |
-| Method debates, tensions between releases, forecasts, stale claims | `references/open-questions.md` |
-| Title, first author, year of a cited paper | `references/sources.tsv` |
+| Method debates, release tensions, forecasts, stale claims | `references/open-questions.md` |
+| Title, author, year of a cited paper | `references/sources.tsv` |
+| Fitter settings, good-redshift cuts, VI, repeats, failure weights | `deep/redshift-fitting.md` |
+| Vetoes, completeness, imaging weights, randoms | `deep/lss-catalogues.md` |
+| Injection-run design | `deep/source-injection.md` |
 
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
@@ -106,10 +109,10 @@ Answer at the lowest level that answers the question, then stop.
 |---|---|---|
 | L1 | this file only | the headline values, the state of the domain, the list a referee checks, the errors that recur |
 | L2 | one file of `references/` | what this file does not hold: other values, their history, the size of each systematic, methods, releases |
-| L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
+| L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; open 3k; methods 9k; results 4k; surveys 5k; systematics 5k.
+Sizes, in thousands of tokens: L1 2k; open 3k; methods 9k; results 4k; surveys 5k; systematics 5k; deep/lss-catalogues 7k; deep/redshift-fitting 7k; deep/source-injection 8k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

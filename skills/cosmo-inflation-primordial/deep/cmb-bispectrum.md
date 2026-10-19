@@ -23,6 +23,7 @@ component separation itself is the `cosmo-cmb` dossier
 `deep/component-separation.md`.
 
 ## How it is done
+<!-- key: how-it-is-done -->
 
 Notation (Planck 2018 IX, arXiv:1905.05697, Sect. 3.1): a^X_ℓm the
 harmonic coefficients of map X ∈ {T, E}; b^{X1X2X3}_{ℓ1ℓ2ℓ3} the reduced
@@ -32,6 +33,7 @@ multipole used. "Fisher error" means the error predicted by the inverse
 Fisher matrix of the template.
 
 ### Step 1. Write the observable and the theory template
+<!-- key: step-1-write-the-observable-and-the-theory -->
 
 For a rotationally invariant sky and even-parity T/E combinations,
 ⟨a^{X1}_{ℓ1m1} a^{X2}_{ℓ2m2} a^{X3}_{ℓ3m3}⟩ = 𝒢^{ℓ1ℓ2ℓ3}_{m1m2m3}
@@ -45,6 +47,7 @@ PolySpec writes the same projection explicitly, with 𝒯^X_ℓ(k) the transfer
 functions and B_ζ the primordial bispectrum (arXiv:2511.19179, Eq. 22).
 
 ### Step 2. The optimal cubic estimator and its linear term
+<!-- key: step-2-the-optimal-cubic-estimator-and-its -->
 
 In the limit of small non-Gaussianity the optimal polarised estimator is
 (Creminelli et al. 2006, as written in arXiv:1905.05697, Eq. 25)
@@ -71,6 +74,7 @@ unfeasible" [src: arXiv:1905.05697, Sect. 3.1]. The estimators below differ
 only in how they avoid it.
 
 ### Step 3a. KSW: factorise the template
+<!-- key: step-3a-ksw-factorise-the-template -->
 
 KSW filters the data into two maps on a grid of comoving distances r:
 A(r, n̂) = Σ α_ℓ(r) b_ℓ a_ℓm Y_ℓm / 𝒞_ℓ and B(r, n̂) = Σ β_ℓ(r) b_ℓ a_ℓm
@@ -100,6 +104,7 @@ is built analytically, with a flat prior on f*_NL whose meaning depends on
 the pivot [src: same].
 
 ### Step 3b. Binned estimator: coarse-grain in ℓ
+<!-- key: step-3b-binned-estimator-coarse-grain-in-ell -->
 
 Starting point: the ideal full-sky estimator f̂_NL = ⟨b^th, b^obs⟩ /
 ⟨b^th, b^th⟩ (Bucher et al. 2010, arXiv:0911.1642, Eq. 21), with the inner
@@ -131,6 +136,7 @@ precomputed, an order-of-magnitude speed-up for 300 simulations [src:
 same].
 
 ### Step 3c. Modal estimator: expand on separable modes
+<!-- key: step-3c-modal-estimator-expand-on-separable -->
 
 The shape function S(k1, k2, k3) is expanded on orthonormal polynomials
 R_n of the tetrahedral domain, S = Σ α^R_n R_n with α^R_n = ⟨R_n, S⟩
@@ -165,6 +171,7 @@ High-frequency oscillatory shapes beyond the reach of the modal and binned
 bases use two dedicated estimators [src: same].
 
 ### Step 3d. Integrated bispectrum (PR4 reanalysis, temperature only)
+<!-- key: step-3d-integrated-bispectrum-pr4-reanalysis -->
 
 The sky is divided into equal patches and the estimator is the average
 over patches of (patch mean) × (patch power spectrum), minus a linear term
@@ -178,6 +185,7 @@ for T and for f_NL^local and the lensing amplitude only [src: Sect. 6,
 table of simulation averages].
 
 ### Step 3e. Learned separable basis (non-separable models)
+<!-- key: step-3e-learned-separable-basis-non-separable -->
 
 PolySpec fits a separable ansatz Σ_n w_n α_n β_n γ_n to a numerically
 computed shape and evaluates the estimator in O(ℓ_max² log ℓ_max) as a
@@ -191,6 +199,7 @@ true template, and gives f_NL^neural = 2.9 ± 5.2 against f_NL^loc = 2.9 ±
 0.1σ [src: Sect. V.3].
 
 ### Step 4. Normalise, fit jointly or subtract the lensing bias
+<!-- key: step-4-normalise-fit-jointly-or-subtract-the -->
 
 With F_ab = ⟨B^a, B^b⟩ the Fisher matrix of templates a, b, the expected
 variance of a single-shape f_NL is 1/F_aa, multiplied by 1/f_sky on a
@@ -208,6 +217,7 @@ simulations a joint T+E binned fit of a local-only input gave local 11.5 ±
 template correlations [src: arXiv:1502.01592, Sect. 5.2].
 
 ### Step 5. Errors and linear term from simulations
+<!-- key: step-5-errors-and-linear-term-from-simulations -->
 
 Planck 2018: 300 FFP10 noise realisations through each component-
 separation pipeline, 160 for the modal pipelines "to speed up the
@@ -218,6 +228,7 @@ CMB + noise simulations [src: arXiv:2504.00884, Sect. 4]. PolySpec on PR4:
 [src: arXiv:2511.19179, Sect. V.3].
 
 ### Step 6. Validate
+<!-- key: step-6-validate -->
 
 The Planck sequence, in the order the papers run it:
 
@@ -260,8 +271,10 @@ The Planck sequence, in the order the papers run it:
 8. Thermal dust and tSZ tests [src: Sect. 6.3, summarised in Sect. 6.6].
 
 ## Choices and what they cost
+<!-- key: choices-and-what-they-cost -->
 
 ### Which estimator
+<!-- key: which-estimator -->
 
 | Estimator | Assumes | Buys | Costs | Used by |
 |---|---|---|---|---|
@@ -281,6 +294,7 @@ components, direction-dependent signals [src: arXiv:1905.05697, Sect.
 3.1].
 
 ### Full inverse-covariance filter or diagonal approximation
+<!-- key: full-inverse-covariance-filter-or-diagonal -->
 
 The exact estimator needs C⁻¹ on the masked, anisotropic-noise sky;
 Planck uses the diagonal C_ℓ⁻¹ after diffusive inpainting and states that
@@ -296,6 +310,7 @@ signal-plus-noise spectrum from half-mission maps, "matching the official
 Planck analyses" [src: arXiv:2511.19179, Sect. V.3].
 
 ### Multipole range
+<!-- key: multipole-range -->
 
 - T to 2000 (KSW, modal) or 2500 (binned): no effect, since 2000 < ℓ ≤ 2500
   is noise-dominated [src: arXiv:1905.05697, Sect. 3.2.2].
@@ -310,6 +325,7 @@ Planck analyses" [src: arXiv:2511.19179, Sect. V.3].
   Sect. 3.2.2].
 
 ### Which cleaned map
+<!-- key: which-cleaned-map -->
 
 Planck 2018 keeps SMICA, citing its stability across releases and the
 component-separation tests, with "a slight preference for SMICA and NILC";
@@ -322,6 +338,7 @@ Sects. 4, 6]. So the PR3 and PR4 headline values in L2 come from different
 cleaning methods as well as different estimators.
 
 ### Subtracting lensing with theory or with the simulation average
+<!-- key: subtracting-lensing-with-theory-or-with-the -->
 
 The PR4 simulations have a lensing amplitude below 1 (binned T+E 0.939 ±
 0.009 over 600 maps), traced back to the input CMB simulations rather than
@@ -335,6 +352,7 @@ local–ISW correlations]. The expected lensing bias on T-only local f_NL in
 that set-up is 4.3 [src: same, figure caption].
 
 ## Numbers
+<!-- key: numbers -->
 
 | Quantity | Value | Analysis | Source | Place read |
 |---|---|---|---|---|
@@ -356,6 +374,7 @@ that set-up is 4.3 [src: same, figure caption].
 | Integrated-bispectrum patches | w_ℓ = 1 for ℓ ≤ 10 | PR4 | arXiv:2504.00884 | Sect. 2.3 |
 
 ## What goes wrong
+<!-- key: what-goes-wrong -->
 
 - **Unsubtracted lensing–ISW.** Biases local f_NL by about 5 (L2). Test:
   detect the lensing amplitude in the same run and check it against 1; the
@@ -389,6 +408,7 @@ that set-up is 4.3 [src: same, figure caption].
   arXiv:1905.05697, Sect. 3.1.2].
 
 ## Reading list
+<!-- key: reading-list -->
 
 - Foundation: Komatsu, Spergel and Wandelt 2005, arXiv:astro-ph/0305189 —
   the A and B filtered maps and the fast cubic statistic (Eqs. 6–14).
@@ -408,6 +428,7 @@ that set-up is 4.3 [src: same, figure caption].
   against standard templates on PR4.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - The definition of the KSW filter α_ℓ(r) (Sect. II of
   arXiv:astro-ph/0305189) was not copied; only β_ℓ(r) was read.

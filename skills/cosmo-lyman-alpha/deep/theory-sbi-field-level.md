@@ -34,8 +34,10 @@ Eq. 1), which gives the same power spectrum. P_lin is the linear matter power;
 k_NL the non-linear scale; k_max the largest wavenumber kept in a fit.
 
 ## How it is done
+<!-- key: how-it-is-done -->
 
 ### Route A — one-loop EFT of the 3D flux power
+<!-- key: route-a-one-loop-eft-of-the-3d-flux-power -->
 
 **Step A1. Write the bias expansion.** Because the flux exists only in
 redshift space and absorption depends on the tidal field along the line of
@@ -100,6 +102,7 @@ authors read as velocities driving the breakdown and as a case for a
 (arXiv:2412.06892, Table 2 caption) [src].
 
 ### Route A′ — from the 3D EFT to P1D
+<!-- key: route-a-from-the-3d-eft-to-p1d -->
 
 P1D = (1/2π) ∫_{k_∥}^∞ k P_3D dk (arXiv:2309.10133, Eq. 6.1) integrates over
 modes that are not perturbative. The EFT treats it as a loop integral: cut the
@@ -116,6 +119,7 @@ match; the authors flag that four extra parameters "may represent a problem"
 for real data and propose simulation priors [src: Sect. 6, Eq. 6.12].
 
 ### Applying Route A to data: the eBOSS DR14 P1D
+<!-- key: applying-route-a-to-data-the-eboss-dr14-p1d -->
 
 As done in arXiv:2405.13208 (v2 LaTeX source read; letter plus Supplemental
 Material) [src throughout]:
@@ -157,6 +161,7 @@ Material) [src throughout]:
    Freeing n_s gives a σ_8–n_s correlation of −0.99 at one redshift.
 
 ### Route A″ — analytic compression of the EFT nuisance space for DESI P1D
+<!-- key: route-a-analytic-compression-of-the-eft -->
 
 arXiv:2604.09407 replaces "fix the non-linear biases to b_O(b_1)" by a
 controlled relaxation [src: Sects. 3–4]:
@@ -191,6 +196,7 @@ fiducial b_O(b_1) direction responds almost like ln(10¹⁰A_s) (Sects. 3.2–3.
 [src]. The forecast it yields is in `open-questions.md#forecasts-all-labelled`.
 
 ### Route B — EFT forward model at the field level
+<!-- key: route-b-eft-forward-model-at-the-field-level -->
 
 arXiv:2507.00284 and arXiv:2606.26234 [src: body of the first, read in LaTeX;
 abstract and Sects. IV, VII of the second]:
@@ -218,6 +224,7 @@ comparing summary statistics" [src: 2507.00284, Introduction]. A model built as
 the field level beyond 0.04 h/Mpc [src: 2507.00284, Results].
 
 ### Route B′ — hybrid EFT (HEFT)
+<!-- key: route-b-hybrid-eft-heft -->
 
 arXiv:2512.13681 [src: Sects. 2.1, 2.3, 5]: the same Lagrangian bias
 expansion (with δ³ and a ∇²δ term) is attached as weights to the particles
@@ -230,6 +237,7 @@ forest at z = 2.5. The authors propose an emulator of operator-template
 spectra on fixed-phase AbacusSummit cosmologies (Eqs. 13–14).
 
 ### Route C — simulation-based inference on P1D
+<!-- key: route-c-simulation-based-inference-on-p1d -->
 
 arXiv:2603.13011, the first full SBI on P1D [src: Sects. II, III, IV]:
 
@@ -255,8 +263,10 @@ arXiv:2603.13011, the first full SBI on P1D [src: Sects. II, III, IV]:
    between TNG and SIMBA at z ≳ 3 is degenerate with cosmology (Sect. IV.2).
 
 ## Choices and what they cost
+<!-- key: choices-and-what-they-cost -->
 
 ### One-loop or minimal (tree-level) EFT
+<!-- key: one-loop-or-minimal-tree-level-eft -->
 
 The one-loop auto-power model has 19 free parameters (2 linear, 11 non-linear,
 3 counterterms, 3 stochastic) (arXiv:2608.21226, Sect. 3.1) [src]. A
@@ -272,6 +282,7 @@ test of the EFT calibration route; its author list does not overlap with
 those of the one-loop papers.
 
 ### Deterministic b_O(b_1) relations or marginalised scatter
+<!-- key: deterministic-bo-b1-relations-or-marginalised -->
 
 The eBOSS EFT result depends on this choice by a factor 3 in σ_8 error
 (0.017 → 0.05) and moves the central value from 0.841 to 0.69 (mean)
@@ -287,6 +298,7 @@ intermediate option: keep b_O(b_1) as the backbone and marginalise the two or
 three best-measured orthogonal departures.
 
 ### Which simulation calibrates the priors
+<!-- key: which-simulation-calibrates-the-priors -->
 
 Sherwood (160 h⁻¹Mpc, homogeneous UVB, optically thin, ionisation
 equilibrium; arXiv:2309.10133, Sect. 5.1) [src] was the only public P_3D set
@@ -296,6 +308,7 @@ counterterms agree less well between the two ("not ideal", Fig. 4 caption)
 and must be relaxed for data [src: Sect. 3.1.1].
 
 ### EFT, field-level EFT, HEFT or the phenomenological P_3D model
+<!-- key: eft-field-level-eft-heft-or-the -->
 
 | Model | Reach on simulations | Place read |
 |---|---|---|
@@ -315,6 +328,7 @@ two-point level (`systematics.md#g7-desi-dr2-lyalpha-full-shape-arxiv-2607-27411
 a field-level failure and an unbiased two-point fit are compatible.
 
 ### Emulator, EFT or SBI for P1D
+<!-- key: emulator-eft-or-sbi-for-p1d -->
 
 - **EFT** recomputes the prediction at any parameter point, so extended
   models need no new simulations; that is the authors' main argument, with
@@ -337,6 +351,7 @@ a field-level failure and an unbiased two-point fit are compatible.
   no thermal-history freedom.
 
 ## Numbers
+<!-- key: numbers -->
 
 | Quantity | Value | Analysis | Source | Place read |
 |---|---|---|---|---|
@@ -368,6 +383,7 @@ h⁻¹Mpc for flat Ω_m = 0.31]. The highest P1D bins therefore lie beyond the
 counterterms carry the small-scale signal.
 
 ## What goes wrong
+<!-- key: what-goes-wrong -->
 
 - **k_max chosen by χ² alone.** Posteriors drift before χ² degrades; the
   test is stability of all bias posteriors under k_max variation
@@ -411,6 +427,7 @@ counterterms carry the small-scale signal.
   diagonal [src: Sect. IV].
 
 ## Reading list
+<!-- key: reading-list -->
 
 - Foundation: Ivanov 2024, arXiv:2309.10133 — the line-of-sight bias
   expansion, counterterms, the P1D renormalisation (Sect. 6), k_max choice.
@@ -437,6 +454,7 @@ counterterms carry the small-scale signal.
   side by side.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - The DESI P1D collaboration's own assessment of EFT likelihoods (not found
   in the passages of arXiv:2601.21432 read for L2).

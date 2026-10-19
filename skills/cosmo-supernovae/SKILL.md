@@ -15,12 +15,15 @@ re-verify against the cited paper before a number enters a manuscript.
 |---|---|
 | Standardisation, SALT/BayeSN, scatter models, BBC, BEAMS, UNITY, covariance, redshift corrections, calibration chain, blinding, codes | `references/physics-and-methods.md` |
 | Surveys, compilations, sample sizes, what is superseded, data locations, Rubin/Roman, SNe II, lensed SNe, siblings | `references/surveys-and-data.md` |
-| Current `Omega_m`, `w`, `w0`–`w_a` per sample; history; mass-step history | `references/results.md` |
+| Current `Omega_m`, `w`, `w0`–`w_a` per sample; history; mass step | `references/results.md` |
 | Size, mitigation and test of each systematic; referee checklist | `references/systematics.md` |
 | Controversies, method debates, forecasts, stale claims | `references/open-questions.md` |
-| How the dust/scatter model is fitted, simulated, propagated; which model | `deep/dust-intrinsic-scatter.md` |
-| How SALT is trained and fitted; training-calibration errors; SALT or BayeSN | `deep/light-curve-models.md` |
-| How bias-correction simulations and BBC are built and validated; alternatives | `deep/selection-bias-corrections.md` |
+| How the dust/scatter model is fitted, simulated, propagated; choice | `deep/dust-intrinsic-scatter.md` |
+| How SALT is trained, fitted; training-calibration errors; SALT or BayeSN | `deep/light-curve-models.md` |
+| How bias-correction simulations and BBC are built, validated; alternatives | `deep/selection-bias-corrections.md` |
+| Covariances, `M` marginalisation, significance, unblinding | `deep/covariance-likelihood-blinding.md` |
+| Cross-calibration fit, validation | `deep/photometric-calibration.md` |
+| Photo-z, photometric Rubin/Roman Hubble diagrams | `deep/stage-iv-photometric-samples.md` |
 | Bibliography | `references/sources.tsv` |
 
 ## What an expert holds in mind
@@ -114,7 +117,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 5k; methods 12k; results 7k; surveys 6k; systematics 10k; deep/dust-intrinsic-scatter 8k; deep/light-curve-models 7k; deep/selection-bias-corrections 7k.
+Sizes, in thousands of tokens: L1 3k; open 5k; methods 12k; results 7k; surveys 6k; systematics 10k; deep/covariance-likelihood-blinding 8k; deep/dust-intrinsic-scatter 8k; deep/light-curve-models 7k; deep/photometric-calibration 7k; deep/selection-bias-corrections 7k; deep/stage-iv-photometric-samples 6k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

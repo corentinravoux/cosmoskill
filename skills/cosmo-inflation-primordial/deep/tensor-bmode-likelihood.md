@@ -28,6 +28,7 @@ satellite-style likelihoods for τ are the `cosmo-cmb` dossier
 `deep/low-ell-polarisation-tau.md`.
 
 ## How it is done
+<!-- key: how-it-is-done -->
 
 Notation: Q, U the Stokes maps; E, B the curl-free and curl components;
 C_ℓ^XY a power spectrum, D_ℓ = ℓ(ℓ+1)C_ℓ/2π; a bandpower is a weighted
@@ -36,6 +37,7 @@ data coadds in which subsets enter with random signs so that the sky
 cancels; PTE is the probability to exceed.
 
 ### Step 1. Separate E and B on the observed patch
+<!-- key: step-1-separate-e-and-b-on-the-observed-patch -->
 
 On a partial, filtered sky some modes are both E and B ("ambiguous");
 because E is far brighter, their leakage dominates B unless removed.
@@ -71,6 +73,7 @@ inverse-noise-variance apodises, Fourier transforms and rotates Q/U to E/B
 NaMaster pure-B maps and spectra instead [src: arXiv:2505.02827, Sect. V].
 
 ### Step 2. Measure the response: transfer function and window functions
+<!-- key: step-2-measure-the-response-transfer-function -->
 
 BICEP/Keck: delta-function input maps in ℓ are passed through R and the
 full spectrum pipeline (purification, 2D Fourier transform, E/B
@@ -98,6 +101,7 @@ B_ℓ the beam from Saturn side lobes stitched to point-source main lobes
 tensor signal-to-noise, over 32–102, 102–202, …, 402–502 [src: same].
 
 ### Step 3. Remove the noise bias
+<!-- key: step-3-remove-the-noise-bias -->
 
 Two routes are in use.
 
@@ -119,6 +123,7 @@ need modification (Hamimeche and Lewis 2008, arXiv:0801.0554, App. C, Eqs.
 86–88) [src].
 
 ### Step 4. Calibration and leakage terms (SPT-3G)
+<!-- key: step-4-calibration-and-leakage-terms-spt-3g -->
 
 SPT-3G calibrates the polarisation amplitude by comparing EE at 302 ≤ ℓ <
 602 to the Planck 2018 best-fit ΛCDM spectrum (uncertainties 2.5%, 2.3%,
@@ -135,6 +140,7 @@ noise power at ℓ ≈ 30–100, and ℓ_knee from 259 to 182 at 150 GHz [src:
 Sect. IV.1, Table 1].
 
 ### Step 5. Simulations and the bandpower covariance
+<!-- key: step-5-simulations-and-the-bandpower-covariance -->
 
 BICEP/Keck [src: arXiv:1810.05216, App. H; arXiv:2110.00483, main text]:
 
@@ -158,6 +164,7 @@ realisation plus a random sign-flip noise realisation; the estimate is
 with noise [src: arXiv:2505.02827, Sect. V.3].
 
 ### Step 6. The Hamimeche–Lewis likelihood
+<!-- key: step-6-the-hamimeche-lewis-likelihood -->
 
 For n correlated Gaussian fields on the full sky, with Ĉ_ℓ the n × n
 matrix of measured auto- and cross-spectra (noise included) and C_ℓ the
@@ -194,6 +201,7 @@ simulations 1.3% (0.85%) of deconvolved spectra at ℓ ≤ 32 were negative,
 17% (9%) at ℓ = 2, for two beam windows [src: same].
 
 ### Step 7. Null tests before unblinding
+<!-- key: step-7-null-tests-before-unblinding -->
 
 BICEP/Keck jackknives: 14 data splits chosen so that the halves may carry
 different systematics; split maps are differenced, and χ² and χ (sum of
@@ -219,6 +227,7 @@ KS p = 0.61, all PTEs > 0.0008, row PTEs 0.18–0.86 [src: arXiv:2505.02827,
 Sect. V.2, Table 2].
 
 ### Step 8. Validate the limit on simulations
+<!-- key: step-8-validate-the-limit-on-simulations -->
 
 BK18 runs the full CosmoMC analysis on 200 lensed-ΛCDM + dust + noise
 simulations: 60% of the r curves peak at zero and 11% have a lower
@@ -236,8 +245,10 @@ B-mode degrees of freedom over the full-sky number, which turns down at
 low ℓ from filtering and purification [src: main text, Fig. 3].
 
 ## Choices and what they cost
+<!-- key: choices-and-what-they-cost -->
 
 ### E/B separation
+<!-- key: e-b-separation -->
 
 | Method | Handles | Cost | Measured on the same simulations |
 |---|---|---|---|
@@ -255,6 +266,7 @@ NaMaster pure-B (SPT-3G, SO) is the pseudo-C_ℓ alternative; no paper read
 here compares it with matrix purification on identical data.
 
 ### Auto-spectra with a noise model, or cross-spectra only
+<!-- key: auto-spectra-with-a-noise-model-or-cross -->
 
 BICEP/Keck keeps auto-spectra and debiases them with sign-flip noise;
 SPT-3G and SO use only split cross-spectra. The first keeps all modes but
@@ -266,6 +278,7 @@ interact with leakage deprojection filtering" (`systematics.md#b9-bk18-budget-as
 [src: arXiv:2110.00483, App. F.2].
 
 ### Likelihood approximation
+<!-- key: likelihood-approximation -->
 
 - Hamimeche–Lewis: BK, SPT-3G; exact on the full sky, fiducial-dependent
   only on the cut sky [src: arXiv:0801.0554, Sect. III.5].
@@ -286,6 +299,7 @@ interact with leakage deprojection filtering" (`systematics.md#b9-bk18-budget-as
   Gaussian 640′ beam window [src: same].
 
 ### Covariance size and conditioning
+<!-- key: covariance-size-and-conditioning -->
 
 BICEP/Keck uses 499 realisations and removes terms with zero expectation
 and correlations beyond adjacent bins; SPT-3G uses 100 and zeroes
@@ -296,6 +310,7 @@ latter makes the bound too tight [src: arXiv:2610.18036, Sect. 8]. The
 covariance-correction formulae are in `cosmo-statistics-inference`.
 
 ### Patch and bins
+<!-- key: patch-and-bins -->
 
 BK18: 9 bandpowers over 20 < ℓ < 330 of nominal width 35; SPT-3G: 5 bins
 over 32–502, wider, signal-to-noise weighted [src: arXiv:1603.05976, Table
@@ -303,6 +318,7 @@ over 32–502, wider, signal-to-noise weighted [src: arXiv:1603.05976, Table
 by its ℓ_knee (L2, `systematics.md#b6-low-frequency-noise-and-filtering`).
 
 ## Numbers
+<!-- key: numbers -->
 
 | Quantity | Value | Analysis | Source | Place read |
 |---|---|---|---|---|
@@ -320,6 +336,7 @@ by its ℓ_knee (L2, `systematics.md#b6-low-frequency-noise-and-filtering`).
 | Simulations needed | pixel > 12,000; harmonic: a few hundred with SH correction | LiteBIRD-like sims | arXiv:2610.18036 | Sect. 8 |
 
 ## What goes wrong
+<!-- key: what-goes-wrong -->
 
 - **E→B leakage from filtering.** Leakage variance comparable to the noise
   in BICEP2 without purification [src: arXiv:1603.05976, Sect. VII.1].
@@ -353,6 +370,7 @@ by its ℓ_knee (L2, `systematics.md#b6-low-frequency-noise-and-filtering`).
   subtraction [src: arXiv:2505.02827, Sect. IV.1].
 
 ## Reading list
+<!-- key: reading-list -->
 
 - Foundation: Hamimeche and Lewis 2008, arXiv:0801.0554 — the likelihood
   (Eqs. 41–50) and the cross-spectrum trade-off (App. C).
@@ -369,6 +387,7 @@ by its ℓ_knee (L2, `systematics.md#b6-low-frequency-noise-and-filtering`).
   pixel-based likelihood, negative spectra, simulation counts.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - How BICEP/Keck turns the r posterior into its 95% limit and whether it
   blinds; the BKP paper (arXiv:1502.00612) where the multi-spectrum

@@ -22,6 +22,9 @@ re-verify against the cited paper before a number enters a manuscript.
 | Building, correcting, validating a covariance | `deep/covariance-estimation.md` |
 | Computing a profile likelihood | `deep/profile-likelihoods.md` |
 | Computing and choosing a tension metric | `deep/tension-metrics.md` |
+| Computing and choosing a model-comparison statistic | `deep/model-comparison.md` |
+| Testing or replacing a Gaussian likelihood | `deep/likelihood-form.md` |
+| Validating a pipeline on synthetic data | `deep/pipeline-validation.md` |
 
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
@@ -91,7 +94,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 9k; methods 23k; results 10k; surveys 7k; systematics 13k; deep/covariance-estimation 9k; deep/profile-likelihoods 8k; deep/tension-metrics 7k.
+Sizes, in thousands of tokens: L1 3k; open 9k; methods 23k; results 10k; surveys 7k; systematics 13k; deep/covariance-estimation 9k; deep/likelihood-form 7k; deep/model-comparison 9k; deep/pipeline-validation 6k; deep/profile-likelihoods 8k; deep/tension-metrics 7k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

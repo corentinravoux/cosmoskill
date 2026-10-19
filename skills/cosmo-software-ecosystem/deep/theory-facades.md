@@ -23,8 +23,10 @@ against non-Limber and the choice of a non-Limber method are in
 are given.
 
 ## How it is done
+<!-- key: how-it-is-done -->
 
 ### Step 1. Know the order of operations of the facade
+<!-- key: step-1-know-the-order-of-operations-of-the -->
 
 CCL is used in three steps: a cosmology object that fixes the parameters
 and the choice of power-spectrum method (enough for distances, H and
@@ -44,6 +46,7 @@ before creating the cosmology [src: installed, `tracers.py` warning:
 "before instantiating the Cosmology passed"].
 
 ### Step 2. Know what the facade asks the engine for
+<!-- key: step-2-know-what-the-facade-asks-the-engine-for -->
 
 A facade does not call its engine with the engine's own defaults. What
 the installed wrappers set:
@@ -100,6 +103,7 @@ from the Python interface and is set to 10⁻⁵ [src: installed,
   dark-energy sound speed is 1; otherwise the fluid class.
 
 ### Step 3. Set the spline grids and know where the facade extrapolates
+<!-- key: step-3-set-the-spline-grids-and-know-where-the -->
 
 CCL stores P(k, a) as a bicubic spline in ln k and a, with a hybrid
 a-grid: linear for a > 0.1 and logarithmic below, so that low redshift is
@@ -143,6 +147,7 @@ outputs") [src: Sect. IV.2.2]; the installed default is
 `boltzmann_camb`.
 
 ### Step 4. Set the integration tolerances
+<!-- key: step-4-set-the-integration-tolerances -->
 
 CCL uses GSL for all integrations and interpolations; most
 interpolations are Akima, P(k) is bicubic, and the code is in double
@@ -166,6 +171,7 @@ grid, to set `LENSING_KERNEL_SPLINE_INTEGRATION = False` before building
 the cosmology [src: installed, `tracers.py`].
 
 ### Step 5. Angular spectra and real-space transforms
+<!-- key: step-5-angular-spectra-and-real-space-transforms -->
 
 - CCL does not evaluate C_ℓ at every integer ℓ: it samples logarithmically
   at low ℓ and linearly at high ℓ and interpolates with a cubic spline;
@@ -192,6 +198,7 @@ the cosmology [src: installed, `tracers.py`].
   installed, `fftlog_params.py`].
 
 ### Step 6. Configure the halo-model calculator
+<!-- key: step-6-configure-the-halo-model-calculator -->
 
 In pyccl 3.3.6 the halo model is an explicit `HMCalculator` object with
 no default mass function or bias: `mass_function` and `halo_bias` are
@@ -227,6 +234,7 @@ benchmark tolerance and "the tabulated version is in common use"
 [src: Sect. III.5, IV.3].
 
 ### Step 7. Validate a facade against a benchmark
+<!-- key: step-7-validate-a-facade-against-a-benchmark -->
 
 Two metric families are used, chosen by whether the quantity is
 observable.
@@ -261,8 +269,10 @@ stability of the code moving from smooth, simple n(z) ... to more
 complicated and realistic distributions" [src: Sect. 3.1].
 
 ## Choices and what they cost
+<!-- key: choices-and-what-they-cost -->
 
 ### Default or boosted spline settings
+<!-- key: default-or-boosted-spline-settings -->
 
 Defaults buy speed at initialisation; the CCL paper finds them adequate
 for most LSS applications (Step 3). When CCL served as a benchmark for
@@ -276,6 +286,7 @@ should be boosted; one used inside a chain can stay at defaults if a
 boosted run shows the difference is below the chosen tolerance.
 
 ### Which non-linear spectrum a facade returns
+<!-- key: which-non-linear-spectrum-a-facade-returns -->
 
 The same request gives different models: pyccl's default
 `matter_power_spectrum='halofit'` is CCL's own implementation
@@ -288,6 +299,7 @@ spectrum enters a comparison. Accuracy of each model:
 `cosmo-theory-foundations/deep/halo-model-nonlinear.md`.
 
 ### Accuracy of the engine call inside a facade
+<!-- key: accuracy-of-the-engine-call-inside-a-facade -->
 
 pyccl pins CAMB to `AccuracyTarget = 0` and `lens_potential_accuracy = 0`
 (Step 2); cosmoprimo leaves CAMB v2's lensing default. For P(k)-only LSS
@@ -298,6 +310,7 @@ not read (see Not verified). Both facades accept extra engine parameters
 names in cosmoprimo).
 
 ### pyccl or jax-cosmo
+<!-- key: pyccl-or-jax-cosmo -->
 
 jax-cosmo (Campagne et al. 2023, arXiv:2302.05163) buys gradients, JIT
 compilation and GPU execution at the cost of physics approximations, all
@@ -328,6 +341,7 @@ more calls per sample for NUTS; the authors expect the advantage at
 higher dimension [src: Sect. 5.5, Eq. 33, Table 2].
 
 ### cloelib's protocol design or a monolithic facade
+<!-- key: cloelib-s-protocol-design-or-a-monolithic-facade -->
 
 cloelib (Bonici et al. 2026, arXiv:2605.23839) separates four layers
 (background, perturbations, observables, summary statistics), each a
@@ -344,6 +358,7 @@ Differentiation with JAX]. Cost per call depends on the Perturbations
 backend (Boltzmann solver or emulator) [src: Computational times].
 
 ## Numbers
+<!-- key: numbers -->
 
 | Quantity | Value | Analysis | Source | Place read |
 |---|---|---|---|---|
@@ -361,6 +376,7 @@ backend (Boltzmann solver or emulator) [src: Computational times].
 | cloelib full-shape multipoles | ≈ 3 ms per redshift bin | comet-emu backend | arXiv:2605.23839 | Computational times |
 
 ## What goes wrong
+<!-- key: what-goes-wrong -->
 
 - **Changing a precision parameter after building the cosmology.** The
   values are copied at construction (Step 1); a later change to
@@ -396,6 +412,7 @@ backend (Boltzmann solver or emulator) [src: Computational times].
   arXiv:2510.09141, Sect. 2.1.2].
 
 ## Reading list
+<!-- key: reading-list -->
 
 - Foundation: Chisari et al. 2018, arXiv:1812.05995 — Sect. III for the
   spline, extrapolation and integration scheme; Sect. IV for the metrics
@@ -410,6 +427,7 @@ backend (Boltzmann solver or emulator) [src: Computational times].
   Sect. 5.5 for the NUTS gain at 21 parameters.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - The effect of CAMB `AccuracyTarget = 0` (as set by pyccl) on the matter
   power spectrum was not read in the CAMB paper or measured.

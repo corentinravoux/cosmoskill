@@ -127,3 +127,9 @@ Boruah2025a	2502.04158	Boruah	2025	Diffusion-based mass map reconstruction from 
 Remy2026	2606.31988	Remy	2026	Joint inference of weak lensing convergence map and cosmology with diffusion models	method
 Bonici2025	2501.04639	Bonici	2025	Effort: a fast and differentiable emulator for the Effective Field Theory of the Large Scale Structure of the Universe	code
 Vinciguerra2026	2607.17942	Vinciguerra	2026	Comparing explicit likelihood and likelihood-free simulation-based inference for weak lensing cosmic shear	critique
+Townsend2026	2602.13036	Townsend	2026	Photometric classification of supernovae detected by the Zwicky Transient Facility using noise augmentation	method
+Gal2015	1506.02142	Gal	2015	Dropout as a Bayesian Approximation: Representing Model Uncertainty in Deep Learning	foundation
+Guo2017	1706.04599	Guo	2017	On Calibration of Modern Neural Networks	foundation
+PerreaultLevasseur2017	1708.08843	Perreault Levasseur	2017	Uncertainties in Parameters Estimated with Neural Networks: Application to Strong Gravitational Lensing	method
+Hortua2019	1911.08508	Hortua	2019	Parameters Estimation for the Cosmic Microwave Background with Bayesian Neural Networks	method
+Liao2026	2602.07651	Liao	2026	Cosmology with one galaxy: An analytic formula relating $Ω_{\rm m}$ with galaxy properties	critique

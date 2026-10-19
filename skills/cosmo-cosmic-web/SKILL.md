@@ -13,21 +13,24 @@ re-verify against the cited paper before a number enters a manuscript.
 
 | Question | Load |
 |---|---|
-| Web formation, finder definitions, environment variables, spin theory, filament-gas methods, reconstructions, codes | `references/physics-and-methods.md` |
-| Filament and web catalogues (CAVITY, DESI, Cosmicflows), X-ray, SZ, radio, FRB and protocluster data, simulations | `references/surveys-and-data.md` |
-| Web fractions, filament statistics, environment, spin alignments, filament gas, baryon census, protoclusters, history | `references/results.md` |
-| Finder, threshold, redshift-space, confounding, alignment, stacking and reconstruction systematics; referee checklist | `references/systematics.md` |
+| Formation, finders, environment variables, spin theory, filament-gas methods, reconstructions, codes | `references/physics-and-methods.md` |
+| Catalogues (CAVITY, DESI, Cosmicflows); X-ray, SZ, radio, FRB, protocluster data; simulations | `references/surveys-and-data.md` |
+| Web fractions, filament statistics, environment, spins, filament gas, baryon census, protoclusters, history | `references/results.md` |
+| Finder, threshold, redshift-space, confounding, alignment, stacking, reconstruction systematics; referee checklist | `references/systematics.md` |
 | Missing baryons, web versus halo mass, spin transition, finder choice, protocluster abundance, stale claims | `references/open-questions.md` |
-| Metadata of a cited paper | `references/sources.tsv` |
-| Measuring spin–filament alignments | `deep/spin-alignments.md` |
-| Building a web from galaxy surveys; finder agreement | `deep/web-classification.md` |
-| Stacking filament gas: errors, contamination, models | `deep/filament-gas.md` |
+| Cited-paper metadata | `references/sources.tsv` |
+| Spin–filament alignment measurement | `deep/spin-alignments.md` |
+| Webs from galaxy surveys; finder agreement | `deep/web-classification.md` |
+| Filament-gas stacks: errors, contamination, models | `deep/filament-gas.md` |
+| Protocluster selection and masses; supercluster definitions | `deep/protoclusters-superclusters.md` |
+| Environment trends at fixed density, halo mass | `deep/environment.md` |
+| Absorption-line baryon census | `deep/missing-baryons.md` |
 
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
 
-- A web fraction belongs to a finder: on one simulation, filament mass runs
-  from ~10% to ~60% and void volume from ~40% to ~90% across twelve methods
+- Web fractions belong to finders: across twelve methods on one
+  simulation, filament mass spans ~10–60%, void volume ~40–90%
   (arXiv:1705.03021, Sect. 5.3).
 - Hessian thresholds are conventions: λ_th = 0.2 (T-web), 0.44 (V-web), 0
   (Cosmicflows V-web); a constant-volume threshold is
@@ -44,7 +47,7 @@ re-verify against the cited paper before a number enters a manuscript.
 - Halo spin flip: parallel to filaments at low mass, perpendicular at high
   mass; 5 × 10¹¹ h⁻¹M☉ with NEXUS, scaling with filament diameter
   (arXiv:1805.00033).
-- Stellar spin transition observed with SAMI at log M* = 10.4–10.9
+- SAMI stellar spin transition at log M* = 10.4–10.9
   (arXiv:1909.12371), tied to bulge mass (arXiv:2208.10767); the first MaNGA
   study found none (arXiv:1902.09797).
 - Filament X-ray: 9σ total, 5.4σ WHIM after ~40% contamination, eRASS:4,
@@ -62,8 +65,8 @@ re-verify against the cited paper before a number enters a manuscript.
 ## Systematics a referee checks
 <!-- key: systematics-a-referee-checks -->
 
-1. Finder, tracer, smoothing scale and threshold; a second finder or a
-   threshold range.
+1. Finder, tracer, smoothing, threshold; a second finder or threshold
+   range.
 2. Matching in stellar mass and local density or halo mass; centrals and
    satellites; node proximity.
 3. Redshift-space and photometric-redshift effects through the same pipeline
@@ -81,9 +84,8 @@ re-verify against the cited paper before a number enters a manuscript.
 
 - Quoting a web fraction without finder, smoothing and threshold.
 - Reading a stellar-mass-matched environmental trend as a tidal effect.
-- Stating that spins "align with filaments" without the mass dependence.
-- Calling a stacked X-ray filament signal pure WHIM; the stacks see its hot,
-  dense end.
+- Saying spins "align with filaments" without the mass dependence.
+- Calling stacked filament X-rays pure WHIM; stacks see its hot, dense end.
 - Citing arXiv:1806.08395 as settling the baryon census.
 - Mixing Codis et al. 2012 and NEXUS spin-flip masses as one number.
 - Using a galaxy void as a matter void without dynamical evidence.
@@ -118,7 +120,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 4k; methods 7k; results 9k; surveys 4k; systematics 4k; deep/filament-gas 8k; deep/spin-alignments 8k; deep/web-classification 9k.
+Sizes, in thousands of tokens: L1 3k; open 4k; methods 7k; results 9k; surveys 4k; systematics 4k; deep/environment 7k; deep/filament-gas 8k; deep/missing-baryons 6k; deep/protoclusters-superclusters 8k; deep/spin-alignments 8k; deep/web-classification 9k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

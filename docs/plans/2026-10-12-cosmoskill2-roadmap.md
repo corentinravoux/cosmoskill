@@ -177,3 +177,73 @@ The design's order holds, with three adjustments: section keys in Phase 2; pilot
 - **L4 has no shipped tool beyond abstracts.** `fetch_abstracts.py` reads abstracts only [V]; "L4 is mandatory" needs a public way to read a section and a definition of L4 offline.
 - **Source band against "caps never delete".** Weak lensing has 192 sources and Lyα 172 [V]; a band can only be a floor.
 - **"No textbook-level filler"** is a human judgement with no rubric or named reviewer.
+
+## 6. Open items — 2026-10-19
+
+State: phases 1–3 and 6a done; phase 4 pilot run; phase 6b at 140 dossiers
+(all 28 domains have at least 3, 17 have 6). Phase 5 not started; phase 7
+deferred by the owner.
+
+### 6.1 Finish wave 2 of dossiers
+
+Resume inflation, Lyα, simulations and software (cut half-way); then cosmic
+web, machine learning, multimessenger, neutrinos and dark matter, peculiar
+velocities, photometry and photo-z, reionisation. One session at a time per
+skill (`_progress.md` and the gate log say which is taken).
+
+### 6.2 Owner decision: should the package give numbers?
+
+The owner is not sure that giving numbers is a good idea. Today every level
+carries values: headline numbers in `SKILL.md` (L1), tables of results and
+systematic sizes in `references/` (L2), settings and sizes in the dossiers
+(L3), each with a citation and a `[src]` / `[sec]` / `[der]` flag; and the
+theory-foundations wave-2 dossiers carry values computed by an agent with
+CAMB 2.0.4, flagged `[der: CAMB]`. The risk: a reader copies a number from a
+skill file instead of the paper, and the files cannot be kept current
+between refreshes. Options to decide between:
+
+- **A. Keep as is.** Numbers everywhere, with source and flag; L4 mandatory
+  before a number is used in a manuscript (current rule).
+- **B. Literature numbers only.** Remove computed values (`[der: CAMB]` and
+  other agent-computed derivations); keep values read in papers.
+- **C. Numbers only where they carry the reasoning.** Keep sizes of effects,
+  settings, scale cuts and orders of magnitude; replace headline results
+  (H0, S8, w0wa, Σm_ν …) by the source and its location ("see arXiv:…,
+  Table 3"), so the reader always opens the paper for a current value.
+- **D. No numbers.** Pointers and methods only.
+
+Work once decided: one pass per skill (no research agent for B or C beyond
+re-reading the location), plus a rule in `docs/agent-brief*.md` and in the
+hub's level table. Cost of C: a mechanical pass over 29 `SKILL.md` and the
+`results.md` files; the dossiers mostly keep their numbers (they are sizes
+and settings).
+
+### 6.3 Check that domains and subtopics are general, not shaped by the owner's research
+
+The first build was made for one researcher; generality was set as an aim on
+2026-10-12 and the subtopic lists were derived from reviews, but no audit
+has measured it. Proposed audit (one agent, no edits, a report):
+
+1. **Domain list against the field.** Compare the 28 domains with the
+   section structure of two or three broad, recent field reviews or
+   community documents (for example a Snowmass cosmic-frontier report, the
+   PDG cosmology reviews, a CosmoVerse-type white paper). Report missing
+   domains and domains that are over-split.
+2. **Subtopic lists.** For each `subtopics.tsv`, check that its `from`
+   column names reviews or working-group lists and not one group's papers;
+   flag subtopics that appear in no cited review.
+3. **Depth against the owner's areas.** Measure sources, body-level
+   statements and dossiers per domain, and compare the domains nearest the
+   owner's work (peculiar velocities, field-level inference, Lyα forest and
+   tomography, voids, flip) with the rest; flag any domain whose depth is out
+   of line with its weight in the reviews of step 1.
+4. **Within-skill balance.** In those domains, count citations per
+   collaboration, code and group; flag any code or group cited far above its
+   share in the reviews, and any statement that presents one group's method
+   as the default.
+5. **Owner-specific traces.** Search all files for the owner's name, codes,
+   papers cited out of proportion, and machine or personal paths.
+
+Output: a report in `docs/history/tests/` with the measured numbers and a
+list of proposed corrections (merge or add domains, rebalance sources), for
+the owner to decide. No content change before that decision.

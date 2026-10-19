@@ -13,33 +13,36 @@ re-verify against the cited paper before a number enters a manuscript.
 
 | Question | Load |
 |---|---|
-| Emulators, compression losses, NPE/NLE/NRE, generative models, learned simulation corrections, classifiers, anomaly detection, symbolic regression | `references/physics-and-methods.md` |
+| Emulators, compression losses, NPE/NLE/NRE, generative models, solver corrections, classifiers, anomaly detection, symbolic regression | `references/physics-and-methods.md` |
 | Training suites (Quijote, CAMELS, CosmoGrid), challenges (PLAsTiCC, ELAsTiCC, Beyond-2pt, FAIR Universe), survey uses, data locations | `references/surveys-and-data.md` |
 | Emulator accuracy, neural-summary gains, SBI outcomes, classifier scores, robustness tests, history | `references/results.md` |
 | Simulator dependence, misspecification, emulator error, overconfidence, training-set bias, reproducibility, blinding; referee list | `references/systematics.md` |
 | Network gains, trust in simulations, interpretability, foundation models, next data, stale claims | `references/open-questions.md` |
-| Title, first author, year of a cited paper | `references/sources.tsv` |
+| Cited-paper title, author, year | `references/sources.tsv` |
 | Emulator design, accuracy requirement, error propagation | `deep/emulators.md` |
 | Generative field models: training, validation, prior or posterior use | `deep/generative-models.md` |
 | Networks correcting fast solvers; super-resolution; baryon painting | `deep/learned-simulation-corrections.md` |
+| Classifier training: augmentation, balance, calibration | `deep/classification.md` |
+| Network uncertainties, calibration, seed variance | `deep/uncertainty-reproducibility.md` |
+| Saliency tests; symbolic-regression set-up | `deep/interpretability.md` |
 
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
 
-- Emulator error is a residual against the training code: CosmoPower puts
-  99% of test spectra within 0.4% of HMcode output (arXiv:2106.03846).
+- Emulator error is a residual against the training code: 99% of
+  CosmoPower test spectra lie within 0.4% of HMcode (arXiv:2106.03846).
 - Public non-linear P(k) emulators differ by a few per cent near
   k ~ 1 h/Mpc, with σ8- and w0-dependent trends (arXiv:2605.28596).
-- The compression loss sets the ceiling: MSE summaries reach 81% of the
-  full-field figure of merit, VMIM 100% (arXiv:2407.10877); on DES Y3
+- The loss sets the ceiling: MSE summaries reach 81% of the full-field
+  FoM, VMIM 100% (arXiv:2407.10877); on DES Y3
   lensing maps VMIM gave 60% more FoM(Ω_m, S8, w) than MSE
   (arXiv:2606.11309).
-- CNN gains over the power spectrum on survey S8 are 16% (KiDS-1000,
+- CNN gains over the power spectrum on survey S8: 16% (KiDS-1000,
   arXiv:2201.07771) and 5–24% (HSC Y1, arXiv:2301.01354), not the ≈ 5
-  times seen on noiseless maps (arXiv:1802.01212).
+  times of noiseless maps (arXiv:1802.01212).
 - Every benchmarked SBI algorithm can be overconfident; ensembles help
-  (arXiv:2110.06581). NPE posteriors must not be multiplied across data
-  sets (arXiv:2605.10719).
+  (arXiv:2110.06581). Never multiply NPE posteriors across data sets
+  (arXiv:2605.10719).
 - KiDS-SBI: six-flow ensemble, 18 000 realisations, loss converged after
   5000 (arXiv:2404.15402).
 - Multi-fidelity field-level SBI: "60 simulations" in the abstract; the body
@@ -52,8 +55,8 @@ re-verify against the cited paper before a number enters a manuscript.
   multi-domain training removes it (arXiv:2603.13011).
 - Generative posteriors can match means and marginals yet miss the
   variance-field power by ~30% (arXiv:2606.10023).
-- PLAsTiCC's winner scored 0.685 on the official weighted metric; 0.468 is
-  a flat-weight figure (arXiv:2012.12392, arXiv:1907.04690).
+- PLAsTiCC winner: 0.685 on the official weighted metric; 0.468 is
+  flat-weight (arXiv:2012.12392, arXiv:1907.04690).
 - NECOLA corrects COLA to sub-percent at k ≃ 1 h/Mpc from one training
   cosmology (arXiv:2111.02441).
 - KiDS-1000 GCNN unblinded only after network–spectrum agreement and
@@ -62,12 +65,12 @@ re-verify against the cited paper before a number enters a manuscript.
 ## Systematics a referee checks
 <!-- key: systematics-a-referee-checks -->
 
-1. Training simulator, size, design; data inside the training range.
+1. Training simulator, size, design; data inside its range.
 2. Test on an unseen simulator: bias and calibration.
 3. Compression loss, architecture, ensemble or single network.
 4. Density estimator, stopping rule, simulation count.
 5. Emulator test-set percentiles and full-likelihood comparison.
-6. Goodness of fit and out-of-distribution check on the data.
+6. Goodness of fit and out-of-distribution check on data.
 7. Classifier metric, class weights, unseen classes, calibration.
 8. Explicit-likelihood comparison on the same cuts.
 9. Code, weights, seeds and hyperparameters public; blinding conditions.
@@ -77,12 +80,11 @@ re-verify against the cited paper before a number enters a manuscript.
 
 - Quoting a noiseless-simulation information gain as a survey gain.
 - Treating an emulator's interpolation error as its theory error.
-- Calling a network "robust" after a test between two CAMELS models.
-- Reading an MSE-trained summary as the information content of the data.
+- Calling a network "robust" after one CAMELS-pair test.
+- Reading an MSE summary as the data's information content.
 - Multiplying NPE posteriors from independent data sets.
-- Comparing classifier scores across different metrics or class weights.
-- Citing the multi-fidelity abstract's 60 simulations without the body's
-  calibration threshold.
+- Comparing classifier scores across metrics or class weights.
+- Citing the multi-fidelity "60 simulations" without the body's threshold.
 - Reporting one network seed or architecture as the result.
 
 ## Related skills
@@ -96,8 +98,8 @@ re-verify against the cited paper before a number enters a manuscript.
   comparison.
 - `cosmo-photometry-photoz`: machine-learning photo-z.
 - `cosmo-supernovae`: SN Ia photometric classification.
-- `cosmo-data-pipelines`: deep-learning deblending, imaging-systematics
-  networks, spectroscopic classification.
+- `cosmo-data-pipelines`: deblending, imaging-systematics and
+  spectral-classification networks.
 - `cosmo-software-ecosystem`: code versions and maintenance.
 - `cosmo-weak-lensing`, `cosmo-lyman-alpha`, `cosmo-reionization-21cm`:
   probe-specific uses.
@@ -115,7 +117,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 4k; methods 12k; results 6k; surveys 5k; systematics 9k; deep/emulators 9k; deep/generative-models 10k; deep/learned-simulation-corrections 7k.
+Sizes, in thousands of tokens: L1 3k; open 4k; methods 12k; results 6k; surveys 5k; systematics 9k; deep/classification 8k; deep/emulators 9k; deep/generative-models 10k; deep/interpretability 6k; deep/learned-simulation-corrections 7k; deep/uncertainty-reproducibility 7k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

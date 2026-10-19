@@ -29,8 +29,10 @@ the circular-velocity curve; M_peak: largest mass along the main-progenitor
 branch; N_p: particle number of a halo.
 
 ## How it is done
+<!-- key: how-it-is-done -->
 
 ### Step 1. Seed the search with friends-of-friends
+<!-- key: step-1-seed-the-search-with-friends-of-friends -->
 
 Every production finder read here starts from a 3D FoF grouping and
 refines it. In the FLAMINGO comparison, HBT-HERONS, SUBFIND and VELOCIraptor
@@ -60,6 +62,7 @@ Sect. 2.2.1, Eq. 1]. The reason given: b = 0.25 alone would percolate near
 criterion of FoF and imposes a physical smoothing scale [src: Sect. 2.2.1].
 
 ### Step 2. Split the group into haloes and subhaloes
+<!-- key: step-2-split-the-group-into-haloes-and-subhaloes -->
 
 The three families differ in the space in which they separate structures.
 
@@ -113,6 +116,7 @@ The three families differ in the space in which they separate structures.
   particle of the satellite is tracked [src: Sect. 2.4, Eq. 3].
 
 ### Step 3. Decide whether to unbind, and how
+<!-- key: step-3-decide-whether-to-unbind-and-how -->
 
 - HBT+ unbinds iteratively in the frame that minimises the kinetic energy
   (the centre-of-mass frame, with the Hubble flow included), estimating the
@@ -143,6 +147,7 @@ The three families differ in the space in which they separate structures.
   Sect. 3.3, Eqs. 4–5].
 
 ### Step 4. Measure halo properties consistently
+<!-- key: step-4-measure-halo-properties-consistently -->
 
 Masses, centres and V_max depend on the finder's choices even when the
 member particles agree. The FLAMINGO comparison therefore computes every
@@ -156,6 +161,7 @@ sphere centre r_i = (1 − 0.05)^i r₀ [src: arXiv:2110.11408, Sect. 4.4,
 Eq. 12].
 
 ### Step 5. Build merger trees
+<!-- key: step-5-build-merger-trees -->
 
 The merger-tree comparison of ten codes on common catalogues found that
 "all algorithms produced distinct results" and asks of a useful code that
@@ -188,6 +194,7 @@ fluctuations [src: arXiv:1307.3577, abstract]. Two production schemes:
   defaults "fairly lax" for the 180 outputs of Bolshoi [src: Sect. V.4].
 
 ### Step 6. Clean the catalogue before populating it
+<!-- key: step-6-clean-the-catalogue-before-populating-it -->
 
 A finder decides at each output whether a satellite that has passed
 through a host is a separate halo. An HOD then assigns galaxies by the
@@ -203,8 +210,10 @@ objects, mostly low-mass haloes on the edges of massive ones [src: Sect.
 through the host [src: Fig. 11 caption].
 
 ## Choices and what they cost
+<!-- key: choices-and-what-they-cost -->
 
 ### Which family of finder
+<!-- key: which-family-of-finder -->
 
 | Finder | Separates by | Unbinding | Cost on one FLAMINGO output | Main stated weakness |
 |---|---|---|---|---|
@@ -268,6 +277,7 @@ What was found when the families were run on the same particles:
   100 particles [src: arXiv:1203.3695, abstract].
 
 ### Mass or V_max as the halo variable
+<!-- key: mass-or-vmax-as-the-halo-variable -->
 
 The CompaSO comparison finds V_max more robust than mass across finders
 (within about 5% of ROCKSTAR, arXiv:2110.11408, Sect. 4.1); the FLAMINGO comparison finds bound-mass functions 75% apart
@@ -279,6 +289,7 @@ different finder systematics. One check in the other direction: the
 ROCKSTAR (`cosmo-galaxy-halo-connection/deep/assembly-bias.md`).
 
 ### Cleaning or not, and how hard
+<!-- key: cleaning-or-not-and-how-hard -->
 
 The AbacusSummit cleaning parameter κ was tested at 1.2, 2.0 and 20: κ = 2
 reduces the high-mass difference with ROCKSTAR from 50% to 25%, κ = 1.2 is
@@ -293,6 +304,7 @@ self-consistent at better than 1% at z = 0, a statement of precision, not
 accuracy [src: arXiv:1110.4370, Sect. VI.4].
 
 ### What the cleaning does to an occupation fit
+<!-- key: what-the-cleaning-does-to-an-occupation-fit -->
 
 The one measured case read: a seven-parameter HOD (five mass-only
 parameters and two velocity-bias parameters) fitted with AbacusHOD to the
@@ -308,6 +320,7 @@ occupation parameters of a fit are therefore tied to the catalogue
 processing, not only to the finder.
 
 ### Tracking finders and orphans
+<!-- key: tracking-finders-and-orphans -->
 
 Phase-space finders lose subhaloes inside hosts: in Bolshoi, ROCKSTAR shows
 a radial incompleteness scale for merger ratios below 1:30 in
@@ -326,6 +339,7 @@ trade is between modelling orphans analytically on a phase-space catalogue
 and tracking particles, which needs the particle data at every output.
 
 ## Numbers
+<!-- key: numbers -->
 
 | Quantity | Value | Analysis | Source | Place read |
 |---|---|---|---|---|
@@ -349,6 +363,7 @@ and tracking particles, which needs the particle data at every output.
 | FLAMINGO output cadence | 79 outputs, ⟨Δ ln a⟩ = 0.015 | FLAMINGO | arXiv:2502.06932 | Sect. 2 |
 
 ## What goes wrong
+<!-- key: what-goes-wrong -->
 
 - **Fringe haloes in SO and FoF catalogues.** Low-mass haloes carved out of
   the edges of massive ones, or remnants of fly-throughs, show up as a peak
@@ -387,6 +402,7 @@ and tracking particles, which needs the particle data at every output.
   structures over 10 Mpc long (arXiv:2502.06932, Sects. 3.4 and 5).
 
 ## Reading list
+<!-- key: reading-list -->
 
 - Review: Angulo & Hahn 2021, arXiv:2112.05165, Sect. 9.4 — the families
   of finders and the mass-definition problem.
@@ -410,6 +426,7 @@ and tracking particles, which needs the particle data at every output.
   and the three properties a tree code needs.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - The bodies of the Srisawat et al. 2013, Onions et al. 2012 and Symfind
   papers: abstracts only.

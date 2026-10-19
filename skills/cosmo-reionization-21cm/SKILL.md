@@ -13,15 +13,18 @@ re-verify against the cited paper before a number enters a manuscript.
 
 | Question | Load |
 |---|---|
-| τ, x_HI(z), kSZ, 21 cm limits, HI and line-intensity results, JWST; history of each number | `references/results.md` |
-| Observables, 21 cm equations, wedge, estimators, codes, conventions | `references/physics-and-methods.md` |
-| Experiments, data sets, status, what comes next | `references/surveys-and-data.md` |
-| Signal loss, calibration, continuum, local absorbers; referee checklist | `references/systematics.md` |
-| τ = 0.06 or 0.09, late reionisation, EDGES, forecasts, stale claims | `references/open-questions.md` |
-| How a 21 cm limit becomes an astrophysical constraint: likelihood, models, priors, emulators, samplers | `deep/eor-inference-modelling.md` |
-| How x_HI is inferred from Lyα equivalent widths: measurement, baseline, transmission model, likelihood | `deep/lya-emitters.md` |
-| How a CO, [CII] or Hα map becomes a limit on L(M_h) or ρ_H2: estimators, stacking, VID, interlopers, nulls | `deep/line-intensity-mapping.md` |
-| Bibliography with roles | `references/sources.tsv` |
+| Values, history: τ, x_HI(z), kSZ, 21 cm, HI, lines, JWST | `references/results.md` |
+| Observables, equations, wedge, estimators, codes | `references/physics-and-methods.md` |
+| Experiments, data, status, next steps | `references/surveys-and-data.md` |
+| Systematics; referee checklist | `references/systematics.md` |
+| τ debate, late end, EDGES, forecasts, stale claims | `references/open-questions.md` |
+| 21 cm limits to astrophysics | `deep/eor-inference-modelling.md` |
+| x_HI from Lyα equivalent widths | `deep/lya-emitters.md` |
+| CO, [CII], Hα maps to L(M_h), ρ_H2 | `deep/line-intensity-mapping.md` |
+| Photon budget: ξ_ion, f_esc, cutoff, clumping | `deep/ionising-photon-budget.md` |
+| 21 cm × galaxies, [CII], kSZ at z > 6 | `deep/eor-cross-correlations.md` |
+| Single-dish HI: calibration to Ω_HI b_HI | `deep/hi-intensity-mapping.md` |
+| Bibliography | `references/sources.tsv` |
 
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
@@ -52,7 +55,7 @@ re-verify against the cited paper before a number enters a manuscript.
 ## Errors that recur
 <!-- key: errors-that-recur -->
 
-- Writing that EDGES detected cosmic dawn, or that HERA detected heating.
+- Claiming EDGES detected cosmic dawn or HERA detected heating.
 - Quoting τ ≈ 0.09 as measured, or "reionisation ended at z = 6".
 - Ranking 21 cm limits taken at different k, or mixing mK² with (mK)².
 - Citing PAPER-64 limits from before the 2019 re-analysis (arXiv:1909.02085).
@@ -83,7 +86,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 5k; methods 13k; results 13k; surveys 5k; systematics 11k; deep/eor-inference-modelling 8k; deep/line-intensity-mapping 8k; deep/lya-emitters 6k.
+Sizes, in thousands of tokens: L1 3k; open 5k; methods 13k; results 13k; surveys 5k; systematics 11k; deep/eor-cross-correlations 7k; deep/eor-inference-modelling 8k; deep/hi-intensity-mapping 7k; deep/ionising-photon-budget 8k; deep/line-intensity-mapping 8k; deep/lya-emitters 6k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

@@ -371,7 +371,7 @@ physical laws separately (Sect. 5.3).
 
 | Study | Method | Finding | Reference |
 |---|---|---|---|
-| CNN on simulated lensing convergence | saliency maps; attribution = squared input-space saliency | the network improves (Ω_m, σ8) by 20% over power spectrum + peaks + Minkowski functionals with shape noise; noiseless maps: negative-κ regions carry 69–86% of the attribution; with noise, 36–68% lies in κ > 3σ_κ | Zorrilla Matilla et al. 2020, arXiv:2007.06529 [src] |
+| CNN on simulated lensing convergence | saliency maps; attribution = squared input-space saliency | the network improves (Ω_m, σ8) by 20% over power spectrum + peaks + Minkowski functionals with shape noise; noiseless maps: negative-κ regions carry 69–86% of the attribution (abstract; the body gives 86% for Gradient and 83% for Input × gradient saliency, Sect. IV.2); with noise, 36–68% lies in κ > 3σ_κ | Zorrilla Matilla et al. 2020, arXiv:2007.06529 [src] |
 | CMB map classifier (ΛCDM against a feature model) | SHAP attribution with a Galactic mask as a control | attribution correctly excludes the mask; the decision rests on global variance over the unmasked sky; public SkyExplain pipeline | Ocampo et al. 2026, arXiv:2604.05290 [src] |
 | Neural marked power spectrum | physically parametrised marks learned with a contrastive objective | at k_max = 0.2 h Mpc⁻¹, 2.9 times tighter σ8 and 1.8 times tighter Ω_m than classical marks (Fisher level); latent axes align with Ω_m and σ8 | Semenzato et al. 2026, arXiv:2606.11295 [src] |
 
@@ -379,7 +379,7 @@ physical laws separately (Sect. 5.3).
 
 | Tool or result | What it does | Reference |
 |---|---|---|
-| GNN + symbolic distillation | sparse latent messages in a GNN, then symbolic regression on its components; recovers force laws and Hamiltonians, and finds a formula for halo concentration from neighbouring mass that generalises out of distribution better than the GNN | Cranmer et al. 2020, arXiv:2006.11287 [src] |
+| GNN + symbolic distillation | sparse latent messages in a GNN, then symbolic regression on its components; recovers force laws and Hamiltonians, and finds a formula for the smoothed dark-matter overdensity at each Quijote halo from the masses and distances of its neighbours (the abstract calls it the "concentration of dark matter"), which generalises out of distribution better than the GNN | Cranmer et al. 2020, arXiv:2006.11287 [src: abstract; Sect. 4.3] |
 | PySR / SymbolicRegression.jl | multi-population evolutionary search with an evolve–simplify–optimise loop; EmpiricalBench benchmark | Cranmer 2023, arXiv:2305.01582 [src] |
 | Exhaustive symbolic regression | enumerates all expressions to a given complexity; selection by minimum description length; on cosmic chronometers + Pantheon+, ~40 of 5.2 million functions describe H(z) more economically than the Friedmann equation | Bartlett et al. 2022, arXiv:2211.11461 [src] |
 | Symbolic linear P(k) | learns the ratio to an existing fitting function; RMS fractional error 0.2% for 9 × 10⁻³ < k < 9 h Mpc⁻¹; 950 times faster than CAMB, 36 times faster than the BACCO network; σ8 formula at 0.1% | Bartlett et al. 2024, arXiv:2311.15865 [src] |

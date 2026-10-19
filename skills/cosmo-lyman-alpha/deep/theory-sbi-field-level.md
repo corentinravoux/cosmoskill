@@ -422,47 +422,29 @@ counterterms carry the small-scale signal.
 - **SBI out of distribution.** Training on one feedback model and testing on
   another gives ~10% σ_8 bias and overconfident posteriors; mean-flux
   mismatch alone biases the result severely; multi-domain training on TNG +
-  SIMBA restores coverage (arXiv:2603.13011, Sects. IV.2–IV.3, App. E) [src].
-  Pass criterion used: univariate coverage and TARP consistent with the
-  diagonal [src: Sect. IV].
+  SIMBA restores coverage (univariate coverage and TARP) (arXiv:2603.13011,
+  Sects. IV.2–IV.3, App. E) [src].
 
 ## Reading list
 <!-- key: reading-list -->
 
-- Foundation: Ivanov 2024, arXiv:2309.10133 — the line-of-sight bias
-  expansion, counterterms, the P1D renormalisation (Sect. 6), k_max choice.
-- Calibration: de Belsunce et al. 2025, arXiv:2412.06892 — EFT parameters
-  per redshift from ACCEL², analytic marginalisation set-up.
-- Application: Ivanov et al. 2025, arXiv:2405.13208 — first EFT fit to P1D
-  data; read the Supplemental Material for the b_O(b_1) table and C_n
-  recalibration.
-- Method: Karaçaylı et al. 2026, arXiv:2604.09407 — b_O(b_1) backbone plus
-  compressed, analytically marginalised departures for DESI P1D.
-- Method: de Belsunce et al. 2025, arXiv:2507.00284, and 2026,
-  arXiv:2606.26234 — field-level forward model, P_err, mocks for DESI and
-  DESI-II.
-- Method: de Belsunce et al. 2025, arXiv:2512.13681 — hybrid EFT with N-body
-  displacements, template emulator design.
-- Critique and test: Autieri et al. 2026, arXiv:2608.21226 — minimal EFT on
-  Sherwood(-Relics): degeneracies, resolution and reionisation dependence,
-  scatter in b_O(b_F).
-- Method: Sinigaglia et al. 2026, arXiv:2603.13011 — first SBI on P1D,
-  cross-simulator generalisation, explicit-likelihood comparison.
-- Application: Ivanov & Trifinopoulos 2025, arXiv:2508.04767 — EFT P1D used
-  for an extended model at z = 4.2–5.4.
-- Review: Chaves-Montero 2026, arXiv:2605.22489, Sect. 0.6 — the four routes
-  side by side.
+- Foundation: Ivanov 2024, arXiv:2309.10133 — line-of-sight bias expansion, counterterms, P1D renormalisation (Sect. 6), k_max choice.
+- Calibration: de Belsunce et al. 2025, arXiv:2412.06892 — EFT parameters per redshift from ACCEL², analytic marginalisation.
+- Application: Ivanov et al. 2025, arXiv:2405.13208 — first EFT fit to P1D data; the Supplemental Material holds b_O(b_1) and the C_n recalibration.
+- Method: Karaçaylı et al. 2026, arXiv:2604.09407 — b_O(b_1) backbone plus compressed, analytically marginalised departures for DESI P1D.
+- Method: de Belsunce et al. 2025, arXiv:2507.00284, and 2026, arXiv:2606.26234 — field-level forward model, P_err, mocks for DESI and DESI-II.
+- Method: de Belsunce et al. 2025, arXiv:2512.13681 — hybrid EFT with N-body displacements; template-emulator design.
+- Critique and test: Autieri et al. 2026, arXiv:2608.21226 — minimal EFT: degeneracies, resolution and reionisation dependence, scatter in b_O(b_F).
+- Method: Sinigaglia et al. 2026, arXiv:2603.13011 — first SBI on P1D, cross-simulator generalisation, explicit-likelihood comparison.
+- Application: Ivanov & Trifinopoulos 2025, arXiv:2508.04767 — EFT P1D for an extended model (PBHs) at z = 4.2–5.4.
+- Review: Chaves-Montero 2026, arXiv:2605.22489, Sect. 0.6 — the four routes side by side.
 
 ## Not verified
 <!-- key: not-verified -->
 
-- The DESI P1D collaboration's own assessment of EFT likelihoods (not found
-  in the passages of arXiv:2601.21432 read for L2).
-- SBI on Voigt-profile distributions, neural compressions of spectra and
-  CNN field-level IGM inference: known here only through the review
-  (arXiv:2605.22489, Sects. 0.6.3–0.6.4); the primary papers were not
-  identified or read.
-- The compressed 3D bispectrum and Lyα × halo EFT papers (not read).
-- Results of arXiv:2608.21226 beyond its abstract, Sect. 3.1 and conclusions
-  (the numerical tables of its Appendices were not read).
+- The DESI P1D collaboration's assessment of EFT likelihoods (not found).
+- SBI on Voigt-profile distributions, neural spectral compressions and CNN
+  IGM inference: seen only through the review (arXiv:2605.22489, 0.6.3–0.6.4).
+- The compressed 3D bispectrum and Lyα × halo EFT papers (not read); the
+  appendix tables of arXiv:2608.21226 (not read).
 - ACCEL² EFT parameters at z = 3.6 and 4.0 (table cut in the passage read).

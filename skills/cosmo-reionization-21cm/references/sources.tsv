@@ -189,3 +189,27 @@ Pamuk2026	2609.04488	Pamuk	2026	The Super-Sample Covariance of Line-Intensity Ma
 Bag2026SKA	2606.24724	Bag	2026	Imaging the 21-cm Signal from the Cosmic Dawn & Epoch of Reionization and the Connection with the Global Signal	review
 SKAEoR2026	2606.26435	EoR/CD Science Working Group	2026	Overview of 21cm Experiments at high redshift with SKAO	review
 Bull2026SKA	2607.01048	Bull	2026	Foreground Characterization and Mitigation in the Observations of the CD/EoR with the SKA	review
+BeckerBolton2013	1307.2259	Becker	2013	New Measurements of the Ionizing Ultraviolet Background over 2 < z < 5 and Implications for Hydrogen Reionization	method
+Giovinazzo2025	2507.01096	Giovinazzo	2025	Breaking Through the Cosmic Fog: JWST/NIRSpec Constraints on Ionizing Photon Escape in Reionization-Era Galaxies	method
+Summerfield2026	2606.14671	Summerfield	2026	From THESAN-ZOOM to JWST: Predicting ionizing photon escape and the rise of UV-bright reionization sources	critique
+Davies2024clumping	2406.18186	Davies	2024	The Predicament of Absorption-dominated Reionization II: Observational Estimate of the Clumping Factor at the End of Reionization	method
+So2014	1311.2152	So	2014	Direct Numerical Simulation of Reionization II: Recombinations, Clumping Factors, and the Photon Budget for Reionization	critique
+Oku2025	2511.09364	Oku	2025	Recombination Clumping Factor of Physically Defined Intergalactic Medium at the Epoch of Reionization	method
+Chen2020SCORCH	2004.07854	Chen	2020	SCORCH. III. Analytical Models of Reionization with Varying Clumping Factors	method
+Kaurov2015	1412.5607	Kaurov	2015	Cosmic Reionization On Computers III. The Clumping Factor	method
+Jecmen2026	2601.19995	Jecmen	2026	A GLIMPSE into the UV Continuum Slopes of the Faintest Galaxies in the Epoch of Reionization	data
+GagnonHartman2025	2502.20447	Gagnon-Hartman	2025	Detecting galaxy-21-cm cross-correlation during reionization	forecast
+Sun2026LIMFASTV	2609.35957	Sun	2026	LIMFAST. V. Probing Reionization with the Synergy Between 21 cm and Photometric Galaxy Surveys	forecast
+Zhou2025kSZ21	2503.09462	Zhou	2025	Prospects for ${\rm kSZ^2}$-${\rm 21cm^2}$ Cross-Correlations during Reionization	forecast
+Fronenberg2024	2407.14588	Fronenberg	2024	Forecasts and Statistical Insights for Line Intensity Mapping Cross-Correlations: A Case Study with 21cm x [CII]	method
+Moriwaki2024	2404.08266	Moriwaki	2024	Insights into the 21 cm field from the vanishing cross-power spectrum at the epoch of reionization	method
+Yoshiura2018	1803.00756	Yoshiura	2018	Study of systematics effects on the Cross Power Spectrum of 21 cm Line and Cosmic Microwave Background using Murchison Widefield Array Data	data
+Yoshiura2017	1709.04168	Yoshiura	2017	Detectability of 21cm-signal during the Epoch of Reionization with 21cm-Lyman-α emitter cross-correlation. II. Foreground contamination	systematics
+Sobacchi2016	1602.04837	Sobacchi	2016	Cross-correlation of the cosmic 21-cm signal and Lyman Alpha Emitters during reionization	forecast
+LaPlante2020	2005.07206	La Plante	2020	The 21 cm-kSZ-kSZ Bispectrum during the Epoch of Reionization	forecast
+Yuwen2025	2512.05588	Yuwen	2025	Squared-field cross-correlation between kinetic Sunyaev-Zel'dovich effect and 21-cm intensity mapping	forecast
+Guo2026	2610.03527	Guo	2026	Probing Early Phases of the Epoch of Reionization with the $\mathrm{kSZ}^{2}\times21\,\mathrm{cm}^{2}$ Cross-Correlation	forecast
+MeerKLASS2024	2407.21626	MeerKLASS Collaboration	2024	MeerKLASS L-band deep-field intensity maps: entering the HI dominated regime	data
+Irfan2023	2302.02683	Irfan	2023	Mitigating the effect of 1/f noise on the detection of the HI intensity mapping power spectrum from single-dish measurements	systematics
+Zhang2025	2509.10992	Zhang	2025	Joint Bayesian calibration and map-making for intensity mapping experiments	method
+Chen2025stack	2504.03908	Chen	2025	Emission-line Stacking of 21cm Intensity Maps with MeerKLASS: Inference Pipeline and Application to the L-band Deep-field Data	systematics

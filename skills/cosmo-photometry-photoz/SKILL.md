@@ -21,6 +21,9 @@ re-verify against the cited paper before a number enters a manuscript.
 | Building and validating a forward-model or hierarchical n(z) | `deep/population-forward-models.md` |
 | Narrow-band photo-z: line templates, zero points, PDF fixes | `deep/narrow-many-band-photometry.md` |
 | Running ubercal or FGCM; uniformity tests; XP or SCR standards | `deep/photometric-calibration.md` |
+| Setting up and validating a training-based (ML) photo-z | `deep/machine-learning-photoz.md` |
+| Passband extinction coefficients; dust-map choice and its cost | `deep/chromatic-extinction.md` |
+| Clustering redshifts (WZ) and their combination with SOM n(z) | `deep/clustering-redshifts-shear-ratio.md` |
 | Title, first author, year of a cited paper | `references/sources.tsv` |
 
 ## What an expert holds in mind
@@ -112,7 +115,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 4k; methods 10k; results 6k; surveys 5k; systematics 5k; deep/narrow-many-band-photometry 8k; deep/photometric-calibration 7k; deep/population-forward-models 9k.
+Sizes, in thousands of tokens: L1 3k; open 4k; methods 10k; results 6k; surveys 5k; systematics 5k; deep/chromatic-extinction 7k; deep/clustering-redshifts-shear-ratio 7k; deep/machine-learning-photoz 8k; deep/narrow-many-band-photometry 8k; deep/photometric-calibration 7k; deep/population-forward-models 9k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

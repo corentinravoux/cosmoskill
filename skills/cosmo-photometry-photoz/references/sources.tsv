@@ -115,3 +115,10 @@ Cao2022	2110.07088	Cao	2021	Calibrating photometric redshift measurements with t
 Castander2024	2406.06850	Castander	2024	The PAU Survey: Photometric Calibration of Narrow Band Images	method
 AlarconPAUS2020	2007.11132	Alarcon	2020	The PAU Survey: An improved photo-$z$ sample in the COSMOS field	method
 DazaPerilla2024	2408.16864	Daza-Perilla	2024	The PAU Survey: Enhancing photometric redshift estimation using DEEPz	critique
+Izbicki2017	1704.08095	Izbicki	2017	Converting High-Dimensional Regression to High-Dimensional Conditional Density Estimation	method
+Autenrieth2021	2106.11211	Autenrieth	2021	Stratified Learning: A General-Purpose Statistical Method for Improved Learning under Covariate Shift	method
+Wang2026	2605.13219	Wang	2026	Comparative analysis of missing data imputation methods for CSST survey: Impact on photometric redshift estimation performance	method
+Drabicki2026	2603.19882	Drabicki	2026	Quasar photometric redshifts beyond the spectroscopic coverage: Uncertainty models and redshift distributions in the Kilo-Degree Survey DR5	method
+Duncan2025	2511.03802	Duncan	2025	Making the most of pure parallels: Machine learning augmented photometric redshifts for sparse JWST filter sets	method
+Huterer2012	1211.1015	Huterer	2012	Calibration errors unleashed: effects on cosmological parameters and requirements for large-scale structure surveys	systematics
+Bravo2021	2106.08818	Bravo	2021	Simultaneous Estimation of Large-Scale Structure and Milky Way Dust Extinction from Galaxy Surveys	method

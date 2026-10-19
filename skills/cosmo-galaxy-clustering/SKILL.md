@@ -14,25 +14,28 @@ re-verify against the cited paper before a number enters a manuscript.
 | Question | Load |
 |---|---|
 | Definitions, estimators, EFT/ShapeFit models, covariance, blinding, codes, conventions | `references/physics-and-methods.md` |
-| Instruments, samples, release dates, public data, status | `references/surveys-and-data.md` |
+| Instruments, samples, releases, public data, status | `references/surveys-and-data.md` |
 | BAO tables, ΛCDM and full-shape parameters, fσ8, f_NL, history | `references/results.md` |
 | Systematic budgets, mitigations, referee checklist | `references/systematics.md` |
 | Controversies, method debates, next data, stale claims | `references/open-questions.md` |
 | Bibliography with roles | `references/sources.tsv` |
-| How BAO are reconstructed and fitted; solver, convention, damping, 1D/2D | `deep/bao-reconstruction-fitting.md` |
+| BAO reconstruction and fitting: solver, convention, damping, 1D/2D | `deep/bao-reconstruction-fitting.md` |
 | Full modelling or ShapeFit; EFT codes, bias bases, priors, FS+BAO | `deep/full-shape-modelling.md` |
 | Window matrix, wide-angle terms, integral constraints, normalisation | `deep/estimators-window.md` |
+| altMTL, FFA, PIP/IIP, angular up-weighting, θ-cut or PIP | `deep/fibre-assignment.md` |
+| Bad fibres, residual trends, χ²_sys, catastrophics, z errors, interlopers | `deep/spectroscopic-systematics.md` |
+| Blinding shifts, f_NL weights, unblinding checklists | `deep/blinding.md` |
 
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
 
-- The latest DESI BAO is DR2 (arXiv:2503.14738); the latest DESI galaxy full
-  shape is still DR1 (arXiv:2411.12021). "DR1 FS + DR2 BAO" papers mix
+- Latest DESI BAO: DR2 (arXiv:2503.14738); latest DESI galaxy full shape:
+  still DR1 (arXiv:2411.12021). "DR1 FS + DR2 BAO" papers mix
   releases (arXiv:2602.18761).
 - BAO measure D/r_d, not H0. DR2 + BBN gives H0 = 68.51 ± 0.58; DR2 alone
   gives Ω_m = 0.2975 ± 0.0086 (arXiv:2503.14738).
 - DESI DR2 BAO versus CMB in ΛCDM is 2.3σ (arXiv:2503.14738). The 2026 Lyα
-  AP paper quotes its own before and after, 2.4σ and 2.2σ (arXiv:2607.27410).
+  AP paper quotes its own 2.4σ before and 2.2σ after (arXiv:2607.27410).
 - The w0wa preference is 1.7σ for DESI BAO alone, 3.1σ with CMB, 2.8–4.2σ
   with supernovae depending on the sample, as published (arXiv:2503.14738);
   the 2025–2026 supernova recalibrations bring the last to 3.2–3.4σ
@@ -56,7 +59,7 @@ re-verify against the cited paper before a number enters a manuscript.
   σ = 5.1 (arXiv:1905.05697).
 - The SDSS–DESI difference at z ≈ 0.7 fell from about 3σ (DR1) to about 2.6σ
   (DR2); the figure depends on an assumed correlation (arXiv:2503.14738).
-- DESI finished its planned survey in April 2026; full-survey results are
+- DESI finished its planned survey in April 2026; full-survey results
   expected in 2027. Euclid DR1 clustering products: mid-2027.
 
 ## Systematics a referee checks
@@ -114,7 +117,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; open 5k; methods 9k; results 7k; surveys 5k; systematics 9k; deep/bao-reconstruction-fitting 7k; deep/estimators-window 6k; deep/full-shape-modelling 7k.
+Sizes, in thousands of tokens: L1 3k; open 5k; methods 9k; results 7k; surveys 5k; systematics 9k; deep/bao-reconstruction-fitting 7k; deep/blinding 7k; deep/estimators-window 6k; deep/fibre-assignment 6k; deep/full-shape-modelling 7k; deep/spectroscopic-systematics 5k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

@@ -13,15 +13,18 @@ re-verify against the cited paper before a number enters a manuscript.
 
 | Question | Load |
 |---|---|
-| What a feature constrains, estimators, likelihoods, codes, conventions | `references/physics-and-methods.md` |
-| Instruments, releases, data locations, status, next steps | `references/surveys-and-data.md` |
-| Current parameter values, lensing, τ, N_eff, Σm_ν, history of each number | `references/results.md` |
-| Beams, leakage, calibration, foregrounds, τ systematics, per-analysis nuisance priors, referee checklist | `references/systematics.md` |
-| τ debate, A_L fate, CMB–DESI discrepancy, forecasts, stale claims | `references/open-questions.md` |
+| Features, estimators, likelihoods, codes, conventions | `references/physics-and-methods.md` |
+| Instruments, releases, data, status, next steps | `references/surveys-and-data.md` |
+| Values (lensing, τ, N_eff, Σm_ν), history | `references/results.md` |
+| Beams, leakage, calibration, foregrounds, τ: sizes, nuisance priors, referee list | `references/systematics.md` |
+| τ debate, A_L, CMB–DESI discrepancy, forecasts, stale claims | `references/open-questions.md` |
 | Bibliography with roles | `references/sources.tsv` |
-| High-ℓ likelihood construction: splits, masks, cuts, foregrounds, lite | `deep/high-ell-likelihoods.md` |
+| High-ℓ likelihoods: splits, masks, cuts, foregrounds, lite | `deep/high-ell-likelihoods.md` |
 | Lensing reconstruction: estimators, biases, null tests | `deep/lensing-reconstruction.md` |
-| Low-ℓ EE likelihoods, τ: cleaning, QML, SimAll, LoLLiPoP | `deep/low-ell-polarisation-tau.md` |
+| Low-ℓ EE, τ: cleaning, QML, SimAll, LoLLiPoP | `deep/low-ell-polarisation-tau.md` |
+| Beams, calibration to Planck, polarisation efficiency, chromaticity | `deep/beams-calibration-polarisation.md` |
+| N_eff, Y_P, phase shift: set-up, BBN tables, shifts | `deep/damping-tail-light-relics.md` |
+| Map-level cleaning: Planck pipelines, NILC, cILC, ILC bias | `deep/component-separation.md` |
 
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
@@ -111,7 +114,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; open 5k; methods 10k; results 7k; surveys 5k; systematics 11k; deep/high-ell-likelihoods 8k; deep/lensing-reconstruction 9k; deep/low-ell-polarisation-tau 7k.
+Sizes, in thousands of tokens: L1 3k; open 5k; methods 10k; results 7k; surveys 5k; systematics 11k; deep/beams-calibration-polarisation 9k; deep/component-separation 6k; deep/damping-tail-light-relics 6k; deep/high-ell-likelihoods 8k; deep/lensing-reconstruction 9k; deep/low-ell-polarisation-tau 7k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

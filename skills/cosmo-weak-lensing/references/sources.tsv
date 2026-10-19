@@ -231,3 +231,10 @@ Fortuna2024	2409.15416	Fortuna	2024	KiDS-1000: Weak lensing and intrinsic alignm
 Samuroff2024	2402.15573	Samuroff	2024	Joint constraints from cosmic shear, galaxy-galaxy lensing and galaxy clustering: internal tension as an indicator of intrinsic alignment modelling error	critique
 Campos2022	2211.02800	Campos	2022	An empirical approach to model selection: weak lensing and intrinsic alignments	method
 Euclid2026d	2601.07784	Euclid Collaboration	2026	Euclid preparation. Testing analytic models of galaxy intrinsic alignments in the Euclid Flagship simulation	systematics
+Prat2022	2212.03734	Prat	2022	Non-local contribution from small scales in galaxy-galaxy lensing: Comparison of mitigation schemes	method
+Pandey2021	2105.13545	Pandey	2021	Dark Energy Survey Year 3 Results: Constraints on cosmological parameters and galaxy bias models from galaxy clustering and galaxy-galaxy lensing using the redMaGiC sample	critique
+Porredon2020	2011.03411	Porredon	2020	Dark Energy Survey Year 3 Results: Optimizing the Lens Sample in Combined Galaxy Clustering and Galaxy-Galaxy Lensing Analysis	method
+Faga2024	2406.12675	Faga	2024	Dark Energy Survey Year 3 Results: Cosmology from galaxy clustering and galaxy-galaxy lensing in harmonic space	results
+Doux2020	2011.06469	Doux	2020	Consistency of cosmic shear analyses in harmonic and real space	method
+Doux2022	2203.07128	Doux	2022	Dark Energy Survey Year 3 results: cosmological constraints from the analysis of cosmic shear in harmonic space	results
+Loureiro2026	2604.18111	Loureiro	2026	Smokescreen: A Python package for data vector blinding and encryption in cosmological analyses	code

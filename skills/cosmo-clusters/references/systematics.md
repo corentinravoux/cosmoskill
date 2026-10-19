@@ -272,7 +272,7 @@ Read from the LaTeX source; no HTML rendering was available.
 ## Not verified
 <!-- key: not-verified -->
 
-- Contamination of CMB-lensing cluster mass estimators by the cluster's own tSZ and kSZ signal: no paper quantifying it was fetched.
+- Contamination of CMB-lensing cluster mass estimators by the cluster's own tSZ and kSZ signal: quantified since in `deep/cmb-cluster-lensing.md` (2026-10-18), from arXiv:1705.00411, arXiv:2305.06326, arXiv:2404.02153 and arXiv:2402.18346.
 - The cross-calibration of eROSITA temperatures with Chandra and XMM-Newton: the corresponding paper was not read beyond its title. (The eRASS1 contaminant priors are now in section 13; the member-dilution size is given for DES Y1 and ACT × DES there.)
 - The numerical values of the SPT M_WL–M_halo parameters (Table 4 of arXiv:2310.12213): the table cells did not render.
 - The priors of the DES Y3 cluster analysis (its Table 2) and its mass function: the table did not render and the sections read do not name the mass function.

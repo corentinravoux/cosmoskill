@@ -13,15 +13,18 @@ re-verify against the cited paper before a number enters a manuscript.
 
 | Question | Load |
 |---|---|
-| Standard calculation, sensitivities, weak rates, τ_n, nuclear rates, codes, likelihood construction, conventions | `references/physics-and-methods.md` |
-| Which group measures what (D/H, Y_P, ³He, ⁷Li), laboratories, neutron-lifetime experiments, codes, abundance compilations, next data | `references/surveys-and-data.md` |
-| Abundance values, predictions, Ω_b h² from BBN, N_ν and new-physics limits, code comparison, what superseded what | `references/results.md` |
-| Size of each abundance, rate, τ_n and code systematic; referee checklist | `references/systematics.md` |
-| Deuterium tension, d(p,γ) dispute, τ_n anomaly, lithium, helium spread, Hubble tension, forecasts, stale claims | `references/open-questions.md` |
-| How a D/H value is fitted and combined: selection, continuum, blinding, error, sample mean | `deep/deuterium.md` |
-| How Y_P is fitted per H II region and extrapolated; LBT vs EMPRESS vs Izotov methods | `deep/helium-4.md` |
-| How a d(p,γ) or d+d rate is built from S-factor data; GP, polynomial, ab-initio fits | `deep/nuclear-reaction-rates.md` |
-| Title, first author, year of a cited paper | `references/sources.tsv` |
+| Standard calculation, sensitivities, weak rates, τ_n, nuclear rates, codes, likelihood, conventions | `references/physics-and-methods.md` |
+| Who measures D/H, Y_P, ³He, ⁷Li; laboratories, τ_n experiments, codes, abundance compilations, next data | `references/surveys-and-data.md` |
+| Abundances, predictions, BBN Ω_b h², N_ν and new-physics limits, code comparison, history | `references/results.md` |
+| Size of each abundance, rate, τ_n, code systematic; referee checklist | `references/systematics.md` |
+| D/H tension, d(p,γ) dispute, τ_n anomaly, lithium, helium spread, H0 tension, forecasts, stale claims | `references/open-questions.md` |
+| D/H fit and combination: selection, continuum, blinding, error, sample mean | `deep/deuterium.md` |
+| Y_P fit per H II region and extrapolation; LBT vs EMPRESS vs Izotov | `deep/helium-4.md` |
+| d(p,γ), d+d rates from S-factor data: GP, polynomial, ab-initio fits | `deep/nuclear-reaction-rates.md` |
+| Code physics: weak-rate corrections, network stages, agreement at aligned inputs | `deep/bbn-codes.md` |
+| ΔN_eff, ξ_ν, thermal or decaying relics in BBN and joint fits | `deep/neff-new-physics.md` |
+| Building and using a BBN Ω_b h² prior for BAO and CMB | `deep/baryon-density.md` |
+| Title, first author, year of a source | `references/sources.tsv` |
 
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
@@ -105,7 +108,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; open 3k; methods 5k; results 6k; surveys 4k; systematics 4k; deep/deuterium 7k; deep/helium-4 6k; deep/nuclear-reaction-rates 6k.
+Sizes, in thousands of tokens: L1 2k; open 3k; methods 5k; results 6k; surveys 4k; systematics 4k; deep/baryon-density 6k; deep/bbn-codes 8k; deep/deuterium 7k; deep/helium-4 6k; deep/neff-new-physics 7k; deep/nuclear-reaction-rates 6k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

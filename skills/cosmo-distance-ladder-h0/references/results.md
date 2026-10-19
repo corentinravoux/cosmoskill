@@ -3,7 +3,7 @@
 Scope: headline values of the Hubble constant from the local distance ladder,
 from ladder-independent routes, and from the early-Universe / inverse-ladder
 side, plus derived tension significances.
-Snapshot: 2026-10-17
+Snapshot: 2026-10-19
 
 All H0 values are in km/s/Mpc. Flags: `[src]` read this session in the cited
 paper (abstract unless a section is named); `[sec]` taken from a secondary
@@ -242,6 +242,8 @@ ground-based SPT-3G value alone, 66.66 ± 0.60, is lower than Planck's.
 The ratio 111.8 / 98.5 = 1.135 `[der]` is the Coma version of the tension: it
 is larger than 73.5 / 67.4 because the DESI FP relation itself returns 76.5.
 
+DESI DR2 BAO + CMB in flat ΛCDM: H0 = 68.17 ± 0.28 km/s/Mpc, Ω_m = 0.3027 ± 0.0036 (arXiv:2503.14738, Sect. VI) [src].
+
 ## Not verified
 <!-- key: not-verified -->
 
@@ -253,6 +255,3 @@ is larger than 73.5 / 67.4 because the DESI FP relation itself returns 76.5.
   `open-questions.md`, "Not verified".
 - The H0 value of the DESI Fundamental Plane early-data paper calibrated on
   Coma, and the HST Key Project-era Sandage / de Vaucouleurs values.
-- DESI + CMB combined H0 in LCDM: the body extraction returned 68.17 ± 0.28
-  for arXiv:2503.14738 Sec. VI but the dataset label was not captured; treat
-  as unverified.

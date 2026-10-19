@@ -15,15 +15,18 @@ Read first: `observational-cosmology/references/conventions.md`.
 
 | Question | Load |
 |---|---|
-| Definitions and formulae, with the paper and equation fixing each | `references/physics-and-methods.md` |
-| Conventions of Planck, ACT, BOSS/eBOSS, DESI, DES, KiDS | `references/surveys-and-data.md` |
-| Accuracy of each approximation; what superseded what | `references/results.md` |
-| Convention traps and their sizes, worked cases, referee checklist | `references/systematics.md` |
-| Split conventions, method debates, misconceptions | `references/open-questions.md` |
+| Definitions and formulae, with source equations | `references/physics-and-methods.md` |
+| Conventions of each major analysis | `references/surveys-and-data.md` |
+| Accuracy of approximations; history | `references/results.md` |
+| Convention traps, sizes, referee checklist | `references/systematics.md` |
+| Debates, misconceptions | `references/open-questions.md` |
 | Bibliography with roles | `references/sources.tsv` |
-| Relativistic counts, magnification and evolution bias, two-population dipole | `deep/relativistic-wide-angle.md` |
-| Computing C_ℓ: kernels, spin prefactors, Limber variants, non-Limber codes | `deep/projected-statistics-limber.md` |
-| Building halofit or HMcode-2020; halo-model normalisation; neutrinos | `deep/halo-model-nonlinear.md` |
+| Relativistic counts, magnification, dipole | `deep/relativistic-wide-angle.md` |
+| Computing C_ℓ; Limber and non-Limber | `deep/projected-statistics-limber.md` |
+| halofit, HMcode-2020, halo-model normalisation | `deep/halo-model-nonlinear.md` |
+| z_d, r_d formulae against CAMB, θ_MC, uncalibrated r_d | `deep/sound-horizon.md` |
+| PT kernels, loops, renormalisation, EdS error | `deep/eft-perturbation-theory.md` |
+| Solving for D and f; Ω_m^γ error; codes' fσ8 | `deep/linear-growth.md` |
 
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
@@ -90,7 +93,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 7k; methods 18k; results 7k; surveys 9k; systematics 9k; deep/halo-model-nonlinear 6k; deep/projected-statistics-limber 6k; deep/relativistic-wide-angle 7k.
+Sizes, in thousands of tokens: L1 3k; open 7k; methods 18k; results 7k; surveys 9k; systematics 9k; deep/eft-perturbation-theory 6k; deep/halo-model-nonlinear 6k; deep/linear-growth 5k; deep/projected-statistics-limber 6k; deep/relativistic-wide-angle 7k; deep/sound-horizon 6k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

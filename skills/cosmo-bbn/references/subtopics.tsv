@@ -1,12 +1,12 @@
 key	title	from	files	status
-standard-bbn-theory	Standard BBN: weak freeze-out, neutrino decoupling, expansion rate and the baryon-to-photon ratio	Cooke 2024 review, Sect. 1.2-1.3 and 2; Grohs & Fuller 2023, Sect. 2-4	physics-and-methods.md	covered
+standard-bbn-theory	Standard BBN: weak freeze-out, neutrino decoupling, expansion rate and the baryon-to-photon ratio	Cooke 2024 review, Sect. 1.2-1.3 and 2; Grohs & Fuller 2023, Sect. 2-4	physics-and-methods.md; deep/bbn-codes.md	covered
 nuclear-reaction-rates	Nuclear reaction rates and their laboratory measurement	Cooke 2024, Sect. 4.1; Grohs & Fuller 2023, Sect. 3; LUNA, Felsenkeller, n_TOF and Trojan-Horse experiment lists	physics-and-methods.md; surveys-and-data.md; systematics.md; deep/nuclear-reaction-rates.md	covered
 neutron-lifetime	Neutron lifetime: bottle versus beam	Cooke 2024, Sect. 2; Grohs & Fuller 2023, Sect. 2; UCNtau, beam (NIST BL), J-PARC experiment lists	physics-and-methods.md; surveys-and-data.md; systematics.md; open-questions.md	covered
-bbn-codes	BBN codes and their agreement	Cooke 2024, Sect. 6.2 (BBN theory and calculations); code papers of PArthENoPE, PRIMAT, AlterBBN, PRyMordial, LINX	physics-and-methods.md; results.md; systematics.md	covered
+bbn-codes	BBN codes and their agreement	Cooke 2024, Sect. 6.2 (BBN theory and calculations); code papers of PArthENoPE, PRIMAT, AlterBBN, PRyMordial, LINX	physics-and-methods.md; results.md; systematics.md; deep/bbn-codes.md	covered
 deuterium	Primordial deuterium from quasar absorbers	Cooke 2024, Sect. 3.1 and 6.3; Keck/HIRES, VLT/UVES and ESPRESSO groups	surveys-and-data.md; results.md; systematics.md; deep/deuterium.md	covered
 helium-4	Primordial helium-4 from metal-poor H II regions	Cooke 2024, Sect. 3.2 and 6.4; LBT Y_p Project, Izotov-Thuan, EMPRESS and Valerdi groups	surveys-and-data.md; results.md; systematics.md; deep/helium-4.md	covered
 helium-3	Helium-3 from Galactic H II regions and absorbers	Cooke 2024, Sect. 3.3 and 6.5	surveys-and-data.md; results.md	covered
 lithium-problem	Lithium-7, the Spite plateau and the lithium problem	Cooke 2024, Sect. 3.4 and 6.6	results.md; systematics.md; open-questions.md	covered
-baryon-density	The baryon density from BBN, its comparison with the CMB and its use as a prior	Cooke 2024, Sect. 3.1; Grohs & Fuller 2023, Sect. 1; BAO analyses using BBN priors	results.md; physics-and-methods.md; open-questions.md	covered
-neff-new-physics	N_eff and new physics from BBN alone and with the CMB	Cooke 2024, Sect. 3.2 and 4; Grohs & Fuller 2023, Sect. 5	results.md; open-questions.md	covered
+baryon-density	The baryon density from BBN, its comparison with the CMB and its use as a prior	Cooke 2024, Sect. 3.1; Grohs & Fuller 2023, Sect. 1; BAO analyses using BBN priors	results.md; physics-and-methods.md; open-questions.md; deep/baryon-density.md	covered
+neff-new-physics	N_eff and new physics from BBN alone and with the CMB	Cooke 2024, Sect. 3.2 and 4; Grohs & Fuller 2023, Sect. 5	results.md; open-questions.md; deep/neff-new-physics.md	covered
 future-bbn	Future observations and laboratory programmes	Cooke 2024, Sect. 4.1-4.2	surveys-and-data.md; open-questions.md	covered

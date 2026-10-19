@@ -22,6 +22,9 @@ re-verify against the cited paper before a number enters a manuscript.
 | Making m and its prior: metacalibration, metadetection, image simulations | `deep/shear-calibration.md` |
 | Choosing an IA model; building its priors | `deep/intrinsic-alignments.md` |
 | Setting baryon scale cuts or a feedback model; emulators | `deep/baryonic-feedback.md` |
+| γ_t or ΔΣ for 3×2pt: lens sample, point mass, magnification | `deep/ggl-3x2pt.md` |
+| Measuring ξ±, COSEBIs, pseudo-Cℓ; ΔS8 between statistics | `deep/two-point-statistics.md` |
+| Blinding shifts, unblinding tests, consistency splits | `deep/blinding-consistency.md` |
 
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
@@ -87,7 +90,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; open 5k; methods 9k; results 7k; surveys 6k; systematics 14k; deep/baryonic-feedback 6k; deep/intrinsic-alignments 6k; deep/shear-calibration 8k.
+Sizes, in thousands of tokens: L1 2k; open 5k; methods 9k; results 7k; surveys 6k; systematics 14k; deep/baryonic-feedback 6k; deep/blinding-consistency 6k; deep/ggl-3x2pt 8k; deep/intrinsic-alignments 6k; deep/shear-calibration 8k; deep/two-point-statistics 6k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

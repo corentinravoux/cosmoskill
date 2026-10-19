@@ -396,8 +396,11 @@ arXiv:0801.0642) [src]. Review: Nishizawa 2014 (arXiv:1404.5102) [src].
 
 Three approaches:
 
-1. Angular cross-spectrum C_ℓ^Tg with a bias fixed by the tracer auto-spectrum, summarised by
-   A_ISW (Krolewski 2021, arXiv:2110.13959; Ghodsi Yengejeh 2026, arXiv:2607.22461) [src].
+1. Angular cross-spectrum C_ℓ^Tg with a tracer bias fixed beforehand, summarised by A_ISW
+   (Krolewski 2021, arXiv:2110.13959; Ghodsi Yengejeh 2026, arXiv:2607.22461) [src]. The bias
+   comes from the CMB lensing cross-spectrum for unWISE (arXiv:2110.13959, Sect. 3.1.2), from
+   an earlier lensing-tomography fit for Quaia (arXiv:2607.22461, Sect. 2.2), and from the
+   tracer auto-spectrum in Stölzner 2017 (arXiv:1710.03238, Sect. VII.1) [src].
    As written in arXiv:2110.13959 [src: Sect. 2]: (ΔT/T)_ISW = −2 ∫ dχ e^−τ Φ̇, and
    C_ℓ^Tg = (2/π) ∫ k² dk P(k) K_ℓ^Φ̇(k) K_ℓ^g(k), with K_ℓ^g = ∫ dz b(z) (dN/dz) D(z) j_ℓ[kχ(z)]
    and K_ℓ^Φ̇ = (3 Ω_m H_0²/k²) ∫ dz d[(1+z)D(z)]/dz j_ℓ[kχ(z)]; a magnification term with

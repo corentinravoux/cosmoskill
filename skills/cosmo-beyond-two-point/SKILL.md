@@ -22,6 +22,9 @@ re-verify against the cited paper before a number enters a manuscript.
 | How a void size function fit is built | `deep/void-finding-size-function.md` |
 | How a field-level sampler is set up and checked | `deep/field-level-inference.md` |
 | How an SBI analysis is built and checked | `deep/simulation-based-inference.md` |
+| How a void–galaxy or void–forest RSD and AP fit is built | `deep/void-galaxy-rsd-ap.md` |
+| How a void shear or CMB-lensing stack is measured and fitted | `deep/void-lensing-cmb.md` |
+| How a density-split, kNN, WST or MF emulator analysis is built | `deep/emulator-summary-statistics.md` |
 
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
@@ -84,7 +87,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 6k; methods 19k; results 9k; surveys 4k; systematics 12k; deep/field-level-inference 7k; deep/simulation-based-inference 6k; deep/void-finding-size-function 8k.
+Sizes, in thousands of tokens: L1 3k; open 6k; methods 19k; results 9k; surveys 4k; systematics 12k; deep/emulator-summary-statistics 6k; deep/field-level-inference 7k; deep/simulation-based-inference 6k; deep/void-finding-size-function 8k; deep/void-galaxy-rsd-ap 8k; deep/void-lensing-cmb 6k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

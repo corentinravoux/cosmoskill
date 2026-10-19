@@ -119,3 +119,14 @@ Bohm2016	1605.01392	Böhm	2016	Bias to CMB lensing measurements from the bispect
 Sailer2020	2007.04325	Sailer	2020	Lower bias, lower noise CMB lensing with foreground-hardened estimators	method
 Vanneste2018	1807.02484	Vanneste	2018	Quadratic estimator for CMB cross-correlation	method
 Chang2022	2203.07638	Chang	2022	Snowmass2021 Cosmic Frontier: Cosmic Microwave Background Measurements White Paper	review
+Lungu2021	2112.12226	Lungu	2021	The Atacama Cosmology Telescope: Measurement and Analysis of 1D Beams for DR4	method
+Giardiello2024	2411.10124	Giardiello	2024	Modeling beam chromaticity for high-resolution CMB analyses	method
+Hivon2016	1608.08833	Hivon	2016	QuickPol: Fast calculation of effective beam matrices for CMB polarization	foundation
+Montefalcone2025	2501.13788	Montefalcone	2025	Free-Streaming Neutrinos and Their Phase Shift in Current and Future CMB Power Spectra	method
+Ge2022	2210.16335	Ge	2022	Scaling Transformations and the Origins of Light Relics Constraints from Cosmic Microwave Background Observations	method
+Baumann2015	1508.06342	Baumann	2015	Phases of New Physics in the CMB	foundation
+Remazeilles2011	1006.5599	Remazeilles	2010	CMB and SZ effect separation with Constrained Internal Linear Combinations	method
+Coulton2023	2307.01258	Coulton	2023	The Atacama Cosmology Telescope: High-resolution component-separated maps across one-third of the sky	data
+Abylkairov2020	2012.04032	Abylkairov	2020	Partially Constrained Internal Linear Combination: a method for low-noise CMB foreground mitigation	method
+Kwok2025	2509.10604	Kwok	2025	CMB component-separated power spectrum estimation by Spectral Internal Linear Combination (SpILC)	critique
+Chen2026	2608.28487	Chen	2026	Enhancing Cosmological Constraints from Foreground-Cleaned CMB Maps Using Large-Scale Structure Surveys	forecast

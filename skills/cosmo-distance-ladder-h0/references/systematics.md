@@ -510,8 +510,9 @@ an empty first cell continues the analysis above.
   difference of 0.10 ± 0.05 across P = 10 d (Fit 24), which lowers H0 by
   0.45; with more M31 Cepheids 0.07 ± 0.04 and -0.3; no Cepheid with
   P < 5 d is used `[src: Sect. 6.4]` (arXiv:2112.04510). Still open: the
-  anchor-host period mismatch as treated by later reanalyses (one of 2024,
-  not in `sources.tsv`, reports a shift of about -1).
+  anchor-host period mismatch as treated by later reanalyses: Högås et al.
+  2024 (arXiv:2412.07840) is the 2024 study; its shifts are tabulated in its
+  Sect. V.1 and not transcribed here; see `deep/cepheid-sn-ladder.md`.
 - The local specific-star-formation-rate step of SN Ia and its H0 impact.
 - The error budget of the LMC eclipsing-binary distance (arXiv:1903.08096):
   no HTML rendering and no LaTeX source could be read.

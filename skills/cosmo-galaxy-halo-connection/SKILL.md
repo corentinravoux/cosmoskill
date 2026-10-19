@@ -13,25 +13,27 @@ re-verify against the cited paper before a number enters a manuscript.
 
 | Question | Load |
 |---|---|
-| Halo ingredients, halo model, HOD/CLF/SHAM, empirical and physical models, assembly bias, satellites, joint-fit practice, codes | `references/physics-and-methods.md` |
-| Samples, group and lensing catalogues, simulations, which measurement constrains what | `references/surveys-and-data.md` |
+| Halo ingredients, halo model, HOD/CLF/SHAM, empirical/physical models, assembly bias, satellites, joint-fit practice, codes | `references/physics-and-methods.md` |
+| Samples, group and lensing catalogues, simulations, what constrains what | `references/surveys-and-data.md` |
 | HOD values, SHMR, satellites, assembly-bias detections, lensing-is-low, joint-fit S8, history | `references/results.md` |
 | Size of a systematic; referee checklist | `references/systematics.md` |
-| Lensing-is-low debate, assembly-bias detection, conformity, SHMR ends, method debates, stale claims | `references/open-questions.md` |
+| Lensing-is-low, assembly-bias detection, conformity, SHMR ends, method debates, stale claims | `references/open-questions.md` |
 | HOD/CLF fitting: engine, priors, covariance, sampler | `deep/hod-clf.md` |
 | SHAM/SHMR: proxy, scatter, orphans, nuisances | `deep/abundance-matching-shmr.md` |
 | Assembly-bias forms, environment, shuffling | `deep/assembly-bias.md` |
-| Title, first author, year of a cited paper | `references/sources.tsv` |
+| Groups, satellite kinematics, velocity bias | `deep/satellites.md` |
+| Empirical-model fits, SAM tuning, hydro HODs | `deep/empirical-sam-hydro.md` |
+| Concentration measurement, conversion, f_conc | `deep/profiles-concentration.md` |
+| Cited paper's title, first author, year | `references/sources.tsv` |
 
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
 
-- Galaxy formation efficiency peaks near M_h ~ 10¹² M_⊙ with under 20% of
-  baryons in stars; scatter in M* at fixed M_h is below 0.2 dex above that
-  mass (arXiv:1804.03097).
+- Formation efficiency peaks near M_h ~ 10¹² M_⊙ with < 20% of baryons in
+  stars; M* scatter at fixed M_h is < 0.2 dex above it (arXiv:1804.03097).
 - An occupation parameter needs its mass definition, finder and cosmology;
   FoF halo bias is ~10% below Δ = 200 (arXiv:1001.3162).
-- The HMF is not universal at 5%: its amplitude falls 20–50% to z = 2.5
+- The HMF is not universal at 5%; amplitude falls 20–50% to z = 2.5
   (arXiv:0803.2706).
 - DESI One-Percent LRGs: f_sat = 11–14%, log M_h = 13.2–13.4; QSOs 12.65;
   ELGs ~11.9, with conformity (arXiv:2306.06314, arXiv:2306.06319).
@@ -39,8 +41,8 @@ re-verify against the cited paper before a number enters a manuscript.
   but galaxy-level detections split: yes in SDSS and CMASS
   (arXiv:1606.07817, arXiv:2010.04182), Q_sat = 0.05 ± 0.14 in DESI DR1
   (arXiv:2510.20896).
-- The redMaPPer halo assembly-bias detection (arXiv:1506.06135) is explained
-  by projection effects: ratio 1.02 ± 0.14 (arXiv:1611.00366).
+- The redMaPPer halo assembly-bias detection (arXiv:1506.06135) reflects
+  projection effects: ratio 1.02 ± 0.14 (arXiv:1611.00366).
 - Lensing is low: 20–40% at Planck for CMASS (arXiv:1611.08606); A = 0.79 ±
   0.03 at Planck, consistent with 1 at S8 = 0.76 (arXiv:2202.07440).
 - Galaxy–halo explanations: assembly bias, satellite segregation, baryons
@@ -52,8 +54,8 @@ re-verify against the cited paper before a number enters a manuscript.
   0.81 ± 0.05 (arXiv:2512.14889).
 - BOSS centrals move at 0.22 and satellites at 0.86 of the dark-matter
   velocity dispersion (arXiv:1407.4811).
-- Low-mass SHMR: slope 2.08 ± 0.21 and scatter up to 0.68 dex for dwarfs in
-  DESI DR1 BGS (arXiv:2609.04351).
+- Dwarf SHMR in DESI DR1 BGS: slope 2.08 ± 0.21, scatter up to 0.68 dex
+  (arXiv:2609.04351).
 - BCG stellar masses from standard photometry are low by ~2–4
   (arXiv:1401.7329).
 - The analytic halo model needs non-linear bias and exclusion: ignoring them
@@ -72,7 +74,7 @@ re-verify against the cited paper before a number enters a manuscript.
 4. Assembly bias: modelled, bracketed or argued away.
 5. Satellite profile and velocity bias.
 6. Stellar-mass systematics and measurement scatter.
-7. Lens selection and completeness versus redshift.
+7. Lens selection, completeness versus z.
 8. Lensing: n(z), shear, boost, baryons, scale cuts.
 9. Residual RSD in w_p; exclusion in analytic models.
 10. Covariance, Hartlap factor, blinding.
@@ -80,10 +82,9 @@ re-verify against the cited paper before a number enters a manuscript.
 ## Errors that recur
 <!-- key: errors-that-recur -->
 
-- Comparing M_min or M_1 across papers with different Δ, finders or
-  cosmologies.
-- Calling "lensing is low" evidence for low S8 without the galaxy–halo model
-  behind it.
+- Comparing M_min or M_1 across different Δ, finders or cosmologies.
+- Calling "lensing is low" evidence for low S8 without its galaxy–halo
+  model.
 - Citing Miyatake et al. 2016 as a halo assembly-bias detection.
 - Treating satellites as Poisson and the central condition as harmless.
 - Reading M_vir growth as accretion (pseudo-evolution, arXiv:1207.0816).
@@ -92,20 +93,20 @@ re-verify against the cited paper before a number enters a manuscript.
 - Plugging ν = δ_c/σ into Sheth–Tormen, which is written in ν = (δ_c/σ)²
   (arXiv:astro-ph/9901122).
 - Using the quiescent clustering excess as central assembly bias: at z ~ 0
-  it comes mainly from satellites (arXiv:2403.01393).
+  it is mainly satellites (arXiv:2403.01393).
 
 ## Related skills
 <!-- key: related-skills -->
 
-- `cosmo-simulations-mocks`: populating and validating survey mocks, finders.
+- `cosmo-simulations-mocks`: populating, validating survey mocks; finders.
 - `cosmo-theory-foundations`: perturbative bias expansions, halo-model
   equations.
-- `cosmo-clusters`: cluster mass calibration, splashback in clusters.
+- `cosmo-clusters`: cluster mass calibration and splashback.
 - `cosmo-weak-lensing`: shear and n(z) calibration, 3×2pt, hybrid EFT.
-- `cosmo-galaxy-clustering`, `cosmo-beyond-two-point`: cosmology from
-  small-scale clustering with emulators.
-- `cosmo-cosmic-web`: environment and web dependence of haloes.
-- `cosmo-surveys-facilities`: release dates and instruments.
+- `cosmo-galaxy-clustering`, `cosmo-beyond-two-point`: emulator cosmology
+  from small-scale clustering.
+- `cosmo-cosmic-web`: environment and web dependence.
+- `cosmo-surveys-facilities`: release dates, instruments.
 
 <!-- cosmoskill:block:start — generated by tools/sync_blocks.py, do not edit by hand -->
 ## Levels and layers
@@ -120,7 +121,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 4k; methods 11k; results 8k; surveys 4k; systematics 6k; deep/abundance-matching-shmr 7k; deep/assembly-bias 7k; deep/hod-clf 7k.
+Sizes, in thousands of tokens: L1 3k; open 4k; methods 11k; results 8k; surveys 4k; systematics 6k; deep/abundance-matching-shmr 7k; deep/assembly-bias 7k; deep/empirical-sam-hydro 7k; deep/hod-clf 7k; deep/profiles-concentration 6k; deep/satellites 9k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

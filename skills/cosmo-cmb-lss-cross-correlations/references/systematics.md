@@ -433,8 +433,10 @@ under different treatments of mass and filtering; see `open-questions.md` §2.
 The stacked screening estimator returns a ~4.1σ signal that exceeds what the kSZ-measured gas
 implies; N-body tests show that CMB lensing dominates it (Hadzhiyska 2025, arXiv:2506.17379)
 [src]. The power-spectrum estimator on ACT DR6 shows foreground contamination at one frequency
-(Kramer 2026, arXiv:2608.27458) [src]. A screening "detection" needs a lensing-hardened estimator
-or an explicit subtraction.
+(Kramer 2026, arXiv:2608.27458) [src]. A screening "detection" needs a lensing-hardened estimator,
+an explicit subtraction, or filters shown on lensed simulations to cancel the leading lensing term:
+the ACT × unWISE sign estimator removes τ modes below ℓ = 1600 and finds no lensing bias on 40
+lensed simulations (Coulton 2024, arXiv:2401.13033, Sects. II.4, III.3) [src].
 
 ## 13. ISW: cosmic variance, selection of structures and mocks
 <!-- key: isw-cosmic-variance-selection-of-structures-and -->

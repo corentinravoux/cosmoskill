@@ -14,21 +14,24 @@ re-verify against the cited paper before a number enters a manuscript.
 | Question | Load |
 |---|---|
 | CPL, pivot, models, μ–Σ–η, γ, EFT, screening, `E_G`, statistics, codes | `references/physics-and-methods.md` |
-| What each data set contributes, releases, next data | `references/surveys-and-data.md` |
+| Data-set roles, releases, next data | `references/surveys-and-data.md` |
 | `w0`–`wa`, Bayes factors, μ0, Σ0, `f_R0`, `E_G`, history | `references/results.md` |
-| What can fake the signal, sizes, tests, referee checklist | `references/systematics.md` |
-| Critiques and replies, MG debates, stale claims | `references/open-questions.md` |
+| Fake signals, sizes, tests, referee checklist | `references/systematics.md` |
+| Critiques, replies, MG debates, stale claims | `references/open-questions.md` |
 | Bibliography with roles | `references/sources.tsv` |
 | Reconstructing w(z) | `deep/wz-reconstruction.md` |
-| Interacting dark energy fits | `deep/interacting-dark-energy.md` |
+| Interacting dark energy | `deep/interacting-dark-energy.md` |
 | Non-linear scales beyond ΛCDM | `deep/nonlinear-beyond-lcdm.md` |
+| Measuring `E_G`: estimators, `beta`, errors | `deep/eg-statistic.md` |
+| Stage-IV forecasts, FoM, requirements | `deep/forecasts-stage-iv.md` |
+| `f(R)`, nDGP bounds: how built | `deep/fr-screening.md` |
 
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
 
-- DESI DR2 BAO prefers `w0wa` at 1.7σ alone, 3.1σ with CMB, and 2.8 / 3.8 /
-  4.2σ with Pantheon+ / Union3 / DESY5 (arXiv:2503.14738). The last three
-  are superseded.
+- DESI DR2 BAO prefers `w0wa` at 1.7σ alone, 3.1σ with CMB, 2.8 / 3.8 /
+  4.2σ with Pantheon+ / Union3 / DESY5 (arXiv:2503.14738); the last three
+  superseded.
 - After the supernova revisions: 3.2–3.4σ for every sample
   (arXiv:2511.07517, arXiv:2601.19424); Unite 3.3σ, "weak" Bayesian evidence
   (arXiv:2609.05053); DES Y6 + DESI + CMB 3.0σ (arXiv:2605.27221).
@@ -40,15 +43,15 @@ re-verify against the cited paper before a number enters a manuscript.
   `ln B = −0.66 ± 0.44` (arXiv:2503.14743).
 - Compressed CMB priors give 2.4σ, primary CMB 2.7σ, lensing 3.1σ
   (arXiv:2503.14738). A `tau = 0.09` prior leaves 1.4σ (arXiv:2504.16932).
-- The BAO + CMB tension lies in directions that violate the null energy
-  condition (arXiv:2412.13894). Thawing models beat Λ only with supernovae
+- The BAO + CMB tension lies in null-energy-condition-violating
+  directions (arXiv:2412.13894). Thawing models beat Λ only with supernovae
   and lose to CPL (arXiv:2503.14743, arXiv:2512.20832).
 - Phantom crossing is preferred within CPL, not established: 3.2% of
   non-crossing mocks imitate it (arXiv:2506.15091).
 - Negative neutrino mass, interacting dark energy and non-minimal coupling
   absorb the same data mismatch as `w0wa` (arXiv:2407.10965,
   arXiv:2601.07361, arXiv:2503.19898).
-- Perturbations agree with general relativity: `mu0 = 0.05 ± 0.22`,
+- Perturbations agree with GR: `mu0 = 0.05 ± 0.22`,
   `Sigma0 = 0.008 ± 0.045`; the Planck PR3 Σ0 tension is a likelihood
   artefact (arXiv:2411.12026).
 - GW170817: `abs(c_g/c − 1) ≤ 5 × 10^-16`; only conformally coupled
@@ -63,13 +66,13 @@ re-verify against the cited paper before a number enters a manuscript.
 ## Systematics a referee checks
 <!-- key: systematics-a-referee-checks -->
 
-Supernova sample and calibration version; a fit without the `z < 0.1`
+Supernova sample and calibration version; fit without the `z < 0.1`
 anchor; shared supernovae between compilations; CMB experiment, likelihood,
 lensing and τ; which BAO bins carry the signal; MAP against posterior mean
-for full-shape fits; prior edges on `w0`, `wa`; a non-crossing model fit;
+for full-shape fits; prior edges on `w0`, `wa`; non-crossing model fit;
 data-set consistency under ΛCDM before combining; for μ–Σ the convention,
 background, scale cuts and CMB lensing likelihood; stability priors in EFT
-fits; the source of `Omega_m` in `E_G`.
+fits; source of `Omega_m` in `E_G`.
 
 ## Errors that recur
 <!-- key: errors-that-recur -->
@@ -79,11 +82,11 @@ fits; the source of `Omega_m` in `E_G`.
 - Reading the CPL best fit as proof of `w < −1` at high redshift.
 - Saying the data favour quintessence.
 - Counting three supernova compilations as independent confirmations.
-- Quoting a `w0wa` significance without naming the CMB data set.
-- Treating a 3σ fit of an alternative model to the same data as new evidence.
+- Quoting a `w0wa` significance without naming the CMB data.
+- Treating a 3σ alternative-model fit to the same data as new evidence.
 - Mixing `mu0`, `Sigma0` conventions (GR at 0 or 1) or `Delta DIC` signs.
 - Citing the Planck PR3 Σ0 anomaly, or the low 2015 `E_G`, as current.
-- Quoting the cosmological `f(R)` bound as the strongest one.
+- Quoting the cosmological `f(R)` bound as the strongest.
 - Citing a DESI DR2 full-shape or modified-gravity result: none exists.
 
 ## Related skills
@@ -112,7 +115,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; open 8k; methods 11k; results 10k; surveys 4k; systematics 10k; deep/interacting-dark-energy 6k; deep/nonlinear-beyond-lcdm 7k; deep/wz-reconstruction 8k.
+Sizes, in thousands of tokens: L1 3k; open 8k; methods 11k; results 10k; surveys 4k; systematics 10k; deep/eg-statistic 8k; deep/forecasts-stage-iv 7k; deep/fr-screening 6k; deep/interacting-dark-energy 6k; deep/nonlinear-beyond-lcdm 7k; deep/wz-reconstruction 8k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

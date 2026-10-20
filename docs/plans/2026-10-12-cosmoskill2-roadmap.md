@@ -1,5 +1,7 @@
 <!-- Produced by the Plan agent on 2026-10-12 from docs/specs/2026-10-12-general-levelled-package-design.md. Tags: [V] verified by the planner, [I] inferred. Not yet reviewed by the owner. -->
 
+> **Superseded on 2026-10-20 by `docs/plans/2026-10-20-plan.md`**, which is the plan to follow. This file is kept as history; its phase numbers are reused there.
+
 # Part 1 — Roadmap for cosmoskill 2
 
 > **Scope decisions taken after this roadmap was written (2026-10-12).**
@@ -247,3 +249,58 @@ has measured it. Proposed audit (one agent, no edits, a report):
 Output: a report in `docs/history/tests/` with the measured numbers and a
 list of proposed corrections (merge or add domains, rebalance sources), for
 the owner to decide. No content change before that decision.
+
+### 6.3 result (2026-10-20)
+
+Audit report: `docs/history/tests/2026-10-20-generality-audit.md`. Verdict:
+mostly general with listed tilts (80% of subtopics from reviews; no paths,
+no personal voice), tilts in the hub, in depth (Lyα, PV over; clustering,
+CMB under) and in how flip and the owner's papers frame two methods.
+
+### 6.4 Generality corrections — decided by the owner, 2026-10-20
+
+Owner's decision: "this package needs to be general. I will deepen my part
+once I get the user-specific layer." The base package is rebalanced to the
+field; the owner's own depth (PV, field-level, Lyα tomography) moves to a
+personal layer, which needs phase 5 first. Corrections 1–5 of the audit,
+in this order:
+
+1. **Rebalance the hub** (`observational-cosmology/references/field-state-2026.md`,
+   `review-checklists.md`, `conventions.md`): add field-state sections for
+   BAO/full shape, supernovae, clusters, CMB × LSS, inflation, reionisation,
+   or cut PV and Lyα to one line each with a pointer; worked checklists and
+   estimator conventions chosen across probe families (weak lensing, CMB,
+   supernovae, BAO), not P1D and the PV likelihood alone.
+2. **Describe methods by method, not by code**: PV `physics-and-methods.md`,
+   beyond-two-point `physics-and-methods.md`, `results.md` §5.4 and
+   `SKILL.md`, supernovae `physics-and-methods.md` (lines listed in the
+   report): cite each method's originators first, name flip as one
+   implementation beside its peers, retitle §5.4 "Gaussian field-level
+   likelihood".
+3. **Deepen galaxy clustering and CMB** to their field weight: one deepening
+   pass each (research agent), with the clustering subtopics re-sourced
+   beyond the single paper that supplies five of them; consider a bispectrum
+   dossier in beyond-two-point.
+4. **Fold the two PV hub files** (`pv-surveys.md`, `fsigma8-pv-compilation.md`)
+   into the standard five reference files (`surveys-and-data.md`,
+   `results.md`). This lifts, for this merge, the earlier rule that agents do
+   not edit those author-vetted files; the owner's own version can live in
+   his personal layer.
+5. **Re-anchor the Lyα subtopics on general reviews** (rows
+   `tomography-voids`, `p1d-estimation`), let CLAMATO/LATIS lead the
+   tomography dossier, keep the void–forest β at L2 in one skill.
+
+Rule for all five: no verified statement is deleted from the package
+without a home; content moved out of the base for balance goes to the
+owner's personal layer, not to nowhere.
+
+### 6.5 Audit proposals not yet decided (6–9 of the report)
+
+6. Shrink flip in `cosmo-software-ecosystem` §8.1 and remove the
+   development-copy paragraph in `cosmo-multimessenger`.
+7. Add the missing domains or router lines: alternative distance probes
+   (quasar X-ray–UV, GRBs, HII galaxies, redshift drift), the cosmological
+   principle, galaxy-scale strong lensing; state out-of-scope topics in the
+   README.
+8. Give voids and field-level inference one home each, with cross-links.
+9. Neutral README examples (layer examples across domains).

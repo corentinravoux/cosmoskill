@@ -24,6 +24,7 @@ time-delay cosmography with lensed supernovae and quasars
 `cosmo-distance-ladder-h0`, `deep/time-delay-cosmography.md`).
 
 ## How it is done
+<!-- key: how-it-is-done -->
 
 Notation. `μ` is the (signed or absolute) magnification of an image, `κ` the
 convergence, `γ` the shear, `d_L` the luminosity distance, `M_L` the
@@ -37,6 +38,7 @@ Cosmology Working Group (arXiv:2204.05434, Eq. 13–15); the weak-lensing error
 follows Mpetha et al. 2024 (arXiv:2402.19476, Eq. 4–11).
 
 ### Step 1. Decide which regime applies
+<!-- key: step-1-decide-which-regime-applies -->
 
 Two numbers set the regime [src: arXiv:2204.05434, Sect. 3.1].
 
@@ -62,6 +64,7 @@ diffraction truncates the magnification tail above `μ ≳ 10³`
 (arXiv:1605.09398) [src: Sect. II footnote 2, Sect. III].
 
 ### Step 2. Weak lensing as a distance error: add `σ_WL` to every siren
+<!-- key: step-2-weak-lensing-as-a-distance-error-add -->
 
 The per-siren distance variance used in bright-siren analyses is
 (arXiv:2402.19476) [src: Eq. 4]
@@ -113,6 +116,7 @@ counterparts, 30% from 12 LISA massive binaries (arXiv:2601.06023) [src:
 abstract; **forecast**].
 
 ### Step 3. De-lens, or do not
+<!-- key: step-3-de-lens-or-do-not -->
 
 De-lensing estimates the convergence along each siren line of sight from a
 shear (and flexion) map and subtracts it. Reported gains, all **forecasts**:
@@ -127,6 +131,7 @@ recent of the three is the most pessimistic, and its reason is cost, not
 method.
 
 ### Step 4. Search for strongly lensed pairs (the LVK workflow)
+<!-- key: step-4-search-for-strongly-lensed-pairs-the-lvk -->
 
 The lensed waveform of image `j` is (arXiv:2512.16347) [src: Sect. III.1,
 Eq. 1]
@@ -183,6 +188,7 @@ astrophysical priors, type-II phase and point-mass distortions) and found no
 significant evidence (arXiv:2304.08393) [src: abstract].
 
 ### Step 5. Turn a non-detection into rates and a high-redshift bound
+<!-- key: step-5-turn-a-non-detection-into-rates-and-a -->
 
 Rates relative to unlensed detections are simulated with SIS lenses, the SDSS
 velocity-dispersion function (`σ_vd = 10–350` km/s) for galaxies, the Tinker
@@ -196,6 +202,7 @@ weighting [src: Sect. VII.2]. The stochastic-background side is in
 `cosmo-early-universe-exotica`, `deep/sgwb-pta.md`.
 
 ### Step 6. Lensed-siren cosmography (forecast only)
+<!-- key: step-6-lensed-siren-cosmography-forecast-only -->
 
 With an electromagnetic host the delay gives the time-delay distance
 (arXiv:1703.04151) [src: Eq. 1–2]
@@ -234,8 +241,10 @@ requirement", with an exception only for "extremely simple" lenses such as a
 point mass (arXiv:2502.04472) [src: Sect. 3.2 and footnote 1].
 
 ## Choices and what they cost
+<!-- key: choices-and-what-they-cost -->
 
 ### Weak-lensing term: which `σ_WL(z)`
+<!-- key: weak-lensing-term-which-sigmawl-z -->
 
 | Choice | Assumes | Cost | Used by |
 |---|---|---|---|
@@ -251,6 +260,7 @@ only versus feedback changes it again, IllustrisTNG and MilleniumTNG giving a
 narrower `p(μ, z)` [src: arXiv:2402.19476, Sect. IV.3].
 
 ### Treat the magnification as noise, as a nuisance, or as data
+<!-- key: treat-the-magnification-as-noise-as-a-nuisance -->
 
 Adding `σ_WL` treats lensing as noise; the bias study shows that this is
 unbiased only if `σ_WL` is right (Step 2). Fitting its amplitude makes it a
@@ -273,6 +283,7 @@ detections, with 0.5–1% scatter, and a bias beyond (arXiv:2012.08381) [src:
 abstract].
 
 ### Pair search: overlap statistics or joint parameter estimation
+<!-- key: pair-search-overlap-statistics-or-joint -->
 
 Posterior overlap and phase consistency are cheap and run on all `N(N−1)/2`
 pairs; joint parameter estimation is the only step that includes population
@@ -281,6 +292,7 @@ methods flagged largely different pairs (5 in common of 105), which is why
 either one passing is enough [src: arXiv:2512.16347, Sect. IV.1.1].
 
 ### Bright or dark lensed siren
+<!-- key: bright-or-dark-lensed-siren -->
 
 The bright route needs a counterpart and gives a precise host image; the
 dark route needs a quadruple and a lens catalogue in the GW area, and its
@@ -289,6 +301,7 @@ small-Einstein-radius (about 0.5″) galaxy lenses usable, which optical
 delays below a day cannot exploit [src: arXiv:2502.04472, Sect. 3.3].
 
 ## Numbers
+<!-- key: numbers -->
 
 | Quantity | Value | Analysis | Source | Place read |
 |---|---|---|---|---|
@@ -314,6 +327,7 @@ separately"; the header row naming which column pair is which was not in the
 text read, so the pairs are not labelled here.
 
 ## What goes wrong
+<!-- key: what-goes-wrong -->
 
 - **False lensing pairs grow as `N²`.** The number of random pairs grows as
   `N²` while lensed events grow as `N`; with simple overlap criteria false
@@ -375,6 +389,7 @@ text read, so the pairs are not labelled here.
   [src: arXiv:2512.16347, Sect. III.2.1].
 
 ## Reading list
+<!-- key: reading-list -->
 
 - Foundation, regimes: LISA Cosmology Working Group 2022, arXiv:2204.05434,
   Sect. 3 — `w`, `F(w)`, Morse phases, weak lensing as noise and as signal.
@@ -399,6 +414,7 @@ text read, so the pairs are not labelled here.
 - Critique, de-lensing: Wu et al. 2022, arXiv:2211.15160.
 
 ## Not verified
+<!-- key: not-verified -->
 
 - The ET science case Sect. 2.3.3 (arXiv:2503.12263) and Zhao et al. 2026
   Sects. 3.1.2 and 5.3 (arXiv:2605.08595) were not read for this dossier.

@@ -35,7 +35,7 @@ cosmoskill/
 │           ├── open-questions.md
 │           ├── sources.tsv        the bibliography, machine-checked
 │           └── subtopics.tsv      subtopics and their source
-│       └── deep/                  level-3 dossiers, three per domain
+│       └── deep/                  level-3 dossiers, six per domain
 ├── docs/                          specification, roadmap, agent brief, history
 ├── tools/                         upkeep: section keys, level blocks
 ├── tests/
@@ -45,36 +45,36 @@ cosmoskill/
 | Skill | Domain | Sources | Dossiers |
 |---|---|---|---|
 | `observational-cosmology` | hub and router; conventions; cross-probe digest | 25 |  |
-| `cosmo-cmb` | CMB spectra and lensing, Planck / ACT / SPT, τ, A_L | 120 | 3 |
-| `cosmo-galaxy-clustering` | BAO, RSD, full shape, DESI DR1/DR2 | 158 | 3 |
-| `cosmo-lyman-alpha` | Lyα BAO and AP, P1D, tomography, IGM | 196 | 3 |
-| `cosmo-weak-lensing` | cosmic shear, 3×2pt, S8 | 232 | 3 |
-| `cosmo-supernovae` | SN Ia Hubble diagram and compilations | 164 | 3 |
-| `cosmo-distance-ladder-h0` | H0: ladder, masers, time delays, inverse ladder | 140 | 3 |
-| `cosmo-peculiar-velocities` | velocity surveys and estimators, fσ8 at low redshift, bulk flows | 165 | 3 |
-| `cosmo-clusters` | cluster counts and mass calibration | 127 | 3 |
-| `cosmo-cmb-lss-cross-correlations` | CMB lensing × LSS, kSZ, tSZ, ISW | 181 | 3 |
-| `cosmo-beyond-two-point` | bispectrum, voids, field-level inference, SBI | 228 | 3 |
-| `cosmo-dark-energy-modified-gravity` | w0wa evidence and critiques, μ–Σ, E_G | 144 | 3 |
-| `cosmo-neutrinos-dark-matter` | Σmν, N_eff, warm / fuzzy / interacting dark matter | 131 | 3 |
-| `cosmo-inflation-primordial` | n_s, r, f_NL, curvature, birefringence | 149 | 3 |
-| `cosmo-tensions-anomalies` | cross-probe synthesis: H0, S8, dipole, CMB anomalies | 119 | 3 |
-| `cosmo-surveys-facilities` | instruments, releases, dates, status | 122 | 3 |
-| `cosmo-statistics-inference` | covariance, blinding, priors, tension metrics, SBI | 126 | 3 |
-| `cosmo-simulations-mocks` | N-body, hydro, fast mocks, emulators, constrained simulations | 232 | 3 |
-| `cosmo-reionization-21cm` | reionisation history, 21 cm, intensity mapping | 190 | 3 |
-| `cosmo-multimessenger` | standard sirens, FRBs, lensed transients | 145 | 3 |
-| `cosmo-software-ecosystem` | codes, their units, defaults and status | 120 | 3 |
-| `cosmo-theory-foundations` | definitions and formulae with the paper fixing each | 117 | 3 |
-| `cosmo-photometry-photoz` | photometric calibration, photo-z, n(z) calibration | 116 | 3 |
-| `cosmo-galaxy-halo-connection` | HOD, SHAM, stellar-to-halo mass, assembly bias, halo model | 136 | 3 |
-| `cosmo-data-pipelines` | spectroscopic, imaging and CMB pipelines; masks, randoms, validation | 111 | 3 |
-| `cosmo-bbn` | primordial abundances, nuclear rates, BBN codes, Ω_b h² prior | 98 | 3 |
-| `cosmo-machine-learning` | emulators, neural compression, SBI, generative models, robustness | 128 | 3 |
-| `cosmo-cosmic-web` | web classification, filaments, environment, filament gas, protoclusters | 110 | 3 |
-| `cosmo-early-universe-exotica` | PTA background, PBHs, defects, EDE, spectral distortions | 103 | 3 |
+| `cosmo-cmb` | CMB spectra and lensing, Planck / ACT / SPT, τ, A_L | 131 | 6 |
+| `cosmo-galaxy-clustering` | BAO, RSD, full shape, DESI DR1/DR2 | 163 | 6 |
+| `cosmo-lyman-alpha` | Lyα BAO and AP, P1D, tomography, IGM | 202 | 6 |
+| `cosmo-weak-lensing` | cosmic shear, 3×2pt, S8 | 239 | 6 |
+| `cosmo-supernovae` | SN Ia Hubble diagram and compilations | 169 | 6 |
+| `cosmo-distance-ladder-h0` | H0: ladder, masers, time delays, inverse ladder | 144 | 6 |
+| `cosmo-peculiar-velocities` | velocity surveys and estimators, fσ8 at low redshift, bulk flows | 166 | 6 |
+| `cosmo-clusters` | cluster counts and mass calibration | 138 | 6 |
+| `cosmo-cmb-lss-cross-correlations` | CMB lensing × LSS, kSZ, tSZ, ISW | 181 | 6 |
+| `cosmo-beyond-two-point` | bispectrum, voids, field-level inference, SBI | 237 | 6 |
+| `cosmo-dark-energy-modified-gravity` | w0wa evidence and critiques, μ–Σ, E_G | 155 | 6 |
+| `cosmo-neutrinos-dark-matter` | Σmν, N_eff, warm / fuzzy / interacting dark matter | 148 | 6 |
+| `cosmo-inflation-primordial` | n_s, r, f_NL, curvature, birefringence | 155 | 6 |
+| `cosmo-tensions-anomalies` | cross-probe synthesis: H0, S8, dipole, CMB anomalies | 141 | 6 |
+| `cosmo-surveys-facilities` | instruments, releases, dates, status | 142 | 6 |
+| `cosmo-statistics-inference` | covariance, blinding, priors, tension metrics, SBI | 134 | 6 |
+| `cosmo-simulations-mocks` | N-body, hydro, fast mocks, emulators, constrained simulations | 245 | 6 |
+| `cosmo-reionization-21cm` | reionisation history, 21 cm, intensity mapping | 214 | 6 |
+| `cosmo-multimessenger` | standard sirens, FRBs, lensed transients | 169 | 6 |
+| `cosmo-software-ecosystem` | codes, their units, defaults and status | 120 | 6 |
+| `cosmo-theory-foundations` | definitions and formulae with the paper fixing each | 123 | 6 |
+| `cosmo-photometry-photoz` | photometric calibration, photo-z, n(z) calibration | 123 | 6 |
+| `cosmo-galaxy-halo-connection` | HOD, SHAM, stellar-to-halo mass, assembly bias, halo model | 139 | 6 |
+| `cosmo-data-pipelines` | spectroscopic, imaging and CMB pipelines; masks, randoms, validation | 117 | 6 |
+| `cosmo-bbn` | primordial abundances, nuclear rates, BBN codes, Ω_b h² prior | 102 | 6 |
+| `cosmo-machine-learning` | emulators, neural compression, SBI, generative models, robustness | 134 | 6 |
+| `cosmo-cosmic-web` | web classification, filaments, environment, filament gas, protoclusters | 120 | 6 |
+| `cosmo-early-universe-exotica` | PTA background, PBHs, defects, EDE, spectral distortions | 114 | 6 |
 
-4,133 bibliography rows and about 940,000 words of reference in total; 84 specialist dossiers (level 3), three in each domain skill.
+4,390 bibliography rows and about 1,250,000 words of reference in total; 168 specialist dossiers (level 3), six in each domain skill.
 
 ## How the content is grounded
 
@@ -167,14 +167,15 @@ That leaves limits a user should know:
 
 Limits of this version in particular:
 
-- Every domain skill has three specialist dossiers (L3), on the subtopics
-  where its reference files answered fewest practitioner questions (the gap
+- Every domain skill has six specialist dossiers (L3), on the subtopics
+  where its reference files answered fewest practitioner questions (two
+  rounds of gap audit) (the gap
   audit is recorded per domain in `docs/history/tests/gate-log.md`). The
   other subtopics have no dossier: there the deepest material below the
   paper is the reference files. The pilot test found that a dossier helps
   only where the reference files do not already answer
   (`docs/history/tests/levels/run-2026-10-16-l3-pilot.md`).
-- Depth is still uneven: 98 to 232 sources per domain. Every domain now
+- Depth is still uneven: 102 to 245 sources per domain. Every domain now
   cites paper bodies (sections, tables, equations) and its classic
   references, but the share of body-level statements varies.
 - Numbers were compared with their papers by sample at each gate

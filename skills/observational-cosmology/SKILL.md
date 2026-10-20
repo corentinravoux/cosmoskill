@@ -78,7 +78,7 @@ can answer, and go deeper only when it cannot.
 |---|---|---|
 | L1 | the domain's `SKILL.md`, nothing else | headline values, where the domain stands, the list a referee checks, the errors that recur |
 | L2 | one reference file, chosen from the file map | every other value, the history of a number, the size of each systematic, methods, releases |
-| L3 | a dossier of `deep/` | how a result is derived and how to choose between methods. Every domain skill has three, listed in its file map; a subtopic without one is answered at L2, saying so |
+| L3 | a dossier of `deep/` | how a result is derived and how to choose between methods. Every domain skill has six, listed in its file map; a subtopic without one is answered at L2, saying so |
 | L4 | the cited paper, at the place the number is given | the source itself |
 
 - **The lowest level that answers.** A value that is in the `SKILL.md` is an

@@ -21,8 +21,11 @@ re-verify against the cited paper before a number enters a manuscript.
 | Systematic sizes, referee checklist | `references/systematics.md` |
 | Controversies, forecasts, stale claims | `references/open-questions.md` |
 | Momentum P(k), ψ1/ψ2: weights, model | `deep/two-point-statistics.md` |
-| Field-level fit: cells, covariance, numerics | `deep/field-level-likelihood.md` |
-| Velocity–density fit: likelihood, σ8 linearisation, errors | `deep/velocity-density-comparison.md` |
+| Field-level cells, covariance, numerics | `deep/field-level-likelihood.md` |
+| Velocity–density likelihood, σ8 linearisation, errors | `deep/velocity-density-comparison.md` |
+| FP/TF fits, η posteriors, selection | `deep/distance-indicators.md` |
+| Bulk-flow weights, window, χ², mocks | `deep/bulk-flows.md` |
+| SN residuals, covariance, cuts | `deep/supernova-velocities.md` |
 | Bibliography | `references/sources.tsv` |
 
 ## What an expert holds in mind
@@ -44,7 +47,7 @@ re-verify against the cited paper before a number enters a manuscript.
   ~100 km/s wrong at z ~ 0.04 (arXiv:1405.0105).
 - Zero-point: DESI DR1 η_zp = 0.139 ± 0.007, tied to SH0ES/Pantheon+ SNe through
   groups; fully correlated across the sample (arXiv:2512.03232).
-- FP is the indicator most exposed to the Malmquist treatment: S8 shifts of
+- FP is most exposed to the Malmquist treatment: S8 shifts of
   0.08–0.15 against a 0.03 error; TF + SN give S8 = 0.798 ± 0.035
   (arXiv:2509.20235).
 - TF and FP residuals correlate with environment; velocities are unreliable
@@ -54,8 +57,8 @@ re-verify against the cited paper before a number enters a manuscript.
   2.3σ overall and a window-dependent 3.4σ feature (arXiv:2608.14265).
 - A bulk flow needs its estimator, window and depth; MV weights carry a ΛCDM
   prior on the velocity correlations (arXiv:1508.03860).
-- No fσ8 from ZTF data exists; only simulations — 19 % alone, 10 % with DESI DR3
-  BGS (arXiv:2303.01198, arXiv:2609.34508). No DESI DR2 PV paper either.
+- No fσ8 from ZTF data; only simulations — 19 % alone, 10 % with DESI DR3
+  BGS (arXiv:2303.01198, arXiv:2609.34508). No DESI DR2 PV paper.
 - kSZ gives τ × v; b_v ≈ 0.1–0.45 by tracer, so it constrains f_NL, not fσ8
   (arXiv:2604.04867, arXiv:2511.15701).
 - γ_L = 0.580 ± 0.110 from DESI DR1 PV + full shape (arXiv:2512.03231).
@@ -108,7 +111,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; fsigma8-pv-compilation 5k; open 6k; methods 10k; pv-surveys 7k; results 9k; surveys 4k; systematics 11k; deep/field-level-likelihood 6k; deep/two-point-statistics 6k; deep/velocity-density-comparison 7k.
+Sizes, in thousands of tokens: L1 2k; fsigma8-pv-compilation 5k; open 6k; methods 10k; pv-surveys 7k; results 9k; surveys 4k; systematics 11k; deep/bulk-flows 7k; deep/distance-indicators 9k; deep/field-level-likelihood 6k; deep/supernova-velocities 7k; deep/two-point-statistics 6k; deep/velocity-density-comparison 7k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

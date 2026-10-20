@@ -1,6 +1,6 @@
 ---
 name: cosmo-neutrinos-dark-matter
-description: Use when reviewing, planning or fact-checking cosmological neutrino or dark-matter-property claims — sum of neutrino masses from DESI, ACT, SPT or Planck, negative or effective neutrino mass, mass ordering, tau or A_lens dependence, N_eff, dark radiation, BBN, KATRIN, JUNO, double beta decay; warm, fuzzy, interacting, self-interacting or decaying dark matter limits from Lyα forest, Milky Way satellites, strong lensing, streams, UV luminosity functions, clusters; sterile neutrinos.
+description: Use when reviewing, planning or fact-checking cosmological neutrino or dark-matter-property claims — sum of neutrino masses from DESI, ACT, SPT or Planck, negative or effective neutrino mass, mass ordering, tau or A_lens dependence, N_eff, dark radiation, BBN, KATRIN, JUNO, double beta decay; warm, fuzzy, interacting, self-interacting or decaying dark matter limits from Lyα forest, Milky Way satellites, strong lensing, streams, UV luminosity functions, clusters; sterile neutrinos; relic neutrino background, PTOLEMY.
 ---
 
 # Neutrinos, light relics and dark-matter properties — expert reference
@@ -13,32 +13,35 @@ re-verify against the cited paper before a number enters a manuscript.
 
 | Question | Load |
 |---|---|
-| How each bound is obtained (model, prior, data, codes); effective masses; N_eff; M_hm-to-keV | `references/physics-and-methods.md` |
-| Releases per bound, laboratory experiments, small-scale samples, next data | `references/surveys-and-data.md` |
+| Bound by bound: model, prior, data, codes; effective masses; N_eff; M_hm-to-keV | `references/physics-and-methods.md` |
+| Releases, laboratory experiments, small-scale samples, next data | `references/surveys-and-data.md` |
 | Σm_ν, N_eff, BBN, WDM, FDM, interacting, SIDM, decay tables; history | `references/results.md` |
 | Budgets, what moves each bound, referee checklist | `references/systematics.md` |
 | Controversies, forecasts, stale claims, not verified | `references/open-questions.md` |
-| Σm_ν from full shape: method, priors, tests | `deep/neutrino-mass-full-shape.md` |
-| Lensing substructure: forward model, likelihood | `deep/strong-lensing-substructure.md` |
-| σ/m from mergers and profiles: method, critiques | `deep/self-interacting-dm.md` |
-| Bibliography with roles | `references/sources.tsv` |
+| Full-shape Σm_ν: method, tests | `deep/neutrino-mass-full-shape.md` |
+| Lensing substructure: forward model | `deep/strong-lensing-substructure.md` |
+| σ/m: method, critiques | `deep/self-interacting-dm.md` |
+| DM interactions, decays: method | `deep/interacting-decaying-dm.md` |
+| Fuzzy, axion DM: method | `deep/fuzzy-ultralight-dm.md` |
+| Relic-neutrino detection | `deep/relic-neutrino-background.md` |
+| Sources | `references/sources.tsv` |
 
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
 
-- DESI DR2 BAO + CMB: Σm_ν < 0.0642 eV (95%) in ΛCDM, < 0.163 eV in
-  w0waCDM, 0.0691–0.0774 eV with other Planck likelihoods (arXiv:2503.14744).
+- DESI DR2 BAO + CMB: Σm_ν < 0.0642 eV (95%, ΛCDM), < 0.163 eV
+  (w0waCDM), 0.0691–0.0774 eV with other Planck likelihoods (arXiv:2503.14744).
 - Three widths, one data set: 0.020 eV (truncated posterior), 0.043 eV
   (profile), 0.053 eV (effective mass); only the last two measure
   sensitivity (arXiv:2503.14744).
 - Effective mass −0.101 (+0.047/−0.056) eV, 3σ below the oscillation
-  minimum (0.059 eV normal, 0.10 eV inverted); no tension in w0waCDM,
-  with free lensing amplitudes, or with τ ≈ 0.09
+  minimum (0.059 eV normal, 0.10 eV inverted); none in w0waCDM,
+  with free lensing amplitudes or τ ≈ 0.09
   (arXiv:2407.10965, arXiv:2511.01967, arXiv:2504.16932).
-- The bound is geometric: 0.13 eV with BOSS BAO instead of DESI,
+- Geometric bound: 0.13 eV with BOSS instead of DESI BAO,
   0.23 eV without BAO; ACT P-ACT-LB 0.089 eV (abstract: 0.082)
   (arXiv:2503.14454, arXiv:2410.00090).
-- τ: doubling its error gives 0.10 eV; removing low-ℓ polarisation gives
+- τ: error doubled 0.10 eV; low-ℓ polarisation removed
   0.19 eV (arXiv:2503.14454).
 - Ordering: Bayes factor 10 (DESI); 46.5 or > 460, other priors
   (arXiv:2407.18047, arXiv:2606.18987); oscillations alone undecided
@@ -48,55 +51,54 @@ re-verify against the cited paper before a number enters a manuscript.
 - N_eff: standard 3.044 (arXiv:2008.01074). CMB-only below
   (ACT 2.60, CMB-SPA 2.82 ± 0.12), with DESI above (3.23 ± 0.18)
   (arXiv:2503.14454, arXiv:2506.20707, arXiv:2503.14744). BBN + CMB: 2.925 ± 0.082 (arXiv:2601.22239).
-- Thermal-relic WDM: Lyα 1.9–5.7 keV with the thermal prior
+- Thermal-relic WDM: Lyα 1.9–5.7 keV by thermal prior
   (arXiv:1912.09397, arXiv:2309.04533); satellites 6.5 keV
   (arXiv:2008.00022); JWST lensing 5.6–7.4 keV (Bayes factor 10:1) by data and subhalo
   prior (arXiv:2511.07765, arXiv:2511.07513); M_hm-to-keV slopes differ
   (−10/3, −3.564).
-- Fuzzy dark matter at 10⁻²² eV excluded as all dark matter; Lyα
-  limits 1.9 × 10⁻²¹ to 2 × 10⁻²⁰ eV (arXiv:2606.06969,
+- Fuzzy DM at 10⁻²² eV excluded as all DM; Lyα 1.9 × 10⁻²¹ to 2 × 10⁻²⁰ eV (arXiv:2606.06969,
   arXiv:2007.12705).
 - Self-interaction: < 0.13–0.47 cm²/g in clusters (arXiv:2012.06611,
   arXiv:1503.07675); velocity-dependent models survive (arXiv:2006.12515).
-- Forecasts: SO σ(Σm_ν) = 0.03 eV, 0.015 eV with LiteBIRD, σ(N_eff) =
+- Forecasts: SO σ(Σm_ν) = 0.03 eV, 0.015 eV + LiteBIRD, σ(N_eff) =
   0.045 (arXiv:2503.00636); Euclid + Planck 23 meV (arXiv:2405.06047).
   CMB-S4 cancelled.
-- Below DESI's own: CMB-SPA + DESI DR2 < 0.055 eV
+- Tighter: CMB-SPA + DESI DR2 < 0.055 eV
   (arXiv:2506.20707); EFT reanalysis 0.049 eV
-  (arXiv:2601.16165); 0.043 eV with many background probes
+  (arXiv:2601.16165); 0.043 eV, many background probes
   (arXiv:2405.03368).
 
 ## Systematics a referee checks
 <!-- key: systematics-a-referee-checks -->
 
 Massive states; Planck likelihood, lensing, BAO release, SN sample; τ
-prior and the limit without low-ℓ EE; boundary-free limit beside the
-Bayesian one; width change against shift; CMB–BAO consistency; ordering
-prior; N_eff free-streaming or fluid, Y_P, BBN rates. Dark matter:
+prior, limit without low-ℓ EE; boundary-free limit beside the
+Bayesian; width change versus shift; CMB–BAO consistency; ordering
+prior; N_eff free-streaming or fluid, Y_P, BBN rates. DM:
 production, half-mode conversion, confidence criterion; thermal history
 and k_max; LMC analogue, Milky Way mass, disruption; subhalo prior and
-multipoles; shared inputs of combined limits; velocity of a σ/m limit.
+multipoles; shared inputs of combined limits; σ/m velocity.
 
 ## Errors that recur
 <!-- key: errors-that-recur -->
 
 - Quoting 0.064 eV without "ΛCDM".
 - σ = 0.020 eV read as DESI's sensitivity; the forecast as met.
-- Claiming cosmology measured a negative mass or settled the ordering.
-- Attributing the bound to growth suppression or to BAO alone.
+- Claiming cosmology measured negative mass or settled the ordering.
+- Attributing the bound to growth suppression or BAO alone.
 - KATRIN quoted at 95%, or as a limit on Σm_ν.
-- N_eff = 3.046 as current (3.044; 3.046 was the Planck 2013/2018
-  baseline); N_ν (baseline 3) mixed with N_eff.
+- N_eff = 3.046 as current (3.044; 3.046 is the Planck 2013/2018
+  value); N_ν (baseline 3) mixed with N_eff.
 - Citing CMB-S4 targets, or Euclid's 4σ, as upcoming.
 - A WDM limit without thermal prior, k_max, criterion; 9.7 keV as current.
 - A thermal-relic mass transferred to sterile neutrinos or scattering.
-- A σ/m limit without velocity; the Bullet Cluster 68% limit as 95%.
+- A σ/m limit without velocity; Bullet Cluster 68% limit as 95%.
 
 ## Related skills
 <!-- key: related-skills -->
 
-- `cosmo-cmb`: τ, A_lens, lensing, N_eff data. `cosmo-galaxy-clustering`:
-  BAO and full shape. `cosmo-lyman-alpha`: P1D, thermal state, emulators.
+- `cosmo-cmb`: τ, A_lens, lensing, N_eff. `cosmo-galaxy-clustering`:
+  BAO, full shape. `cosmo-lyman-alpha`: P1D, thermal state, emulators.
 - `cosmo-dark-energy-modified-gravity`, `cosmo-supernovae`: w0wa, SN samples.
 - `cosmo-weak-lensing`, `cosmo-clusters`, `cosmo-distance-ladder-h0`: S8,
   cluster data, BAO + BBN.
@@ -116,7 +118,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 8k; methods 12k; results 12k; surveys 7k; systematics 14k; deep/neutrino-mass-full-shape 8k; deep/self-interacting-dm 7k; deep/strong-lensing-substructure 8k.
+Sizes, in thousands of tokens: L1 3k; open 8k; methods 12k; results 12k; surveys 7k; systematics 14k; deep/fuzzy-ultralight-dm 7k; deep/interacting-decaying-dm 8k; deep/neutrino-mass-full-shape 8k; deep/relic-neutrino-background 6k; deep/self-interacting-dm 7k; deep/strong-lensing-substructure 8k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

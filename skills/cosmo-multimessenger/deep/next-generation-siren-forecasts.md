@@ -115,6 +115,11 @@ F_ij = Σ_n [σ_n² + σ_lens²(z_n) + σ_v²(z_n)]⁻¹ (∂d_L/∂θ_i)(∂d_L
 σ_v(z)   = d_L(z) [1 + c(1+z)/(H(z) d_L(z))] √⟨v²⟩/c ,  √⟨v²⟩ = 500 km/s (Eq. 17)
 ```
 
+Caveat: Mpetha et al. 2024 (arXiv:2402.19476, Sect. IV.3) note that the σ_lens
+expression of Tamanini et al. 2016 lacks a factor 1/2, because the original
+fit is for σ(ln d_L²) = 2σ(d_L)/d_L; including it "would improve results in
+numerous forecasting papers" [src]. See `deep/gw-lensing.md`.
+
 `σ_n` adds, for photometric redshifts, `(∂d_L/∂z) Δz` with
 `Δz ≈ 0.03(1+z)` [src: Sect. 7]. In their optimistic scenario `σ_lens` is
 halved, assuming de-lensing by mapping the line of sight and the

@@ -3,6 +3,19 @@
 Status: design of plan item B (`docs/plans/2026-10-20-plan.md`), 2026-10-20.
 It extends `docs/layers.md`; a layer written for v0 still works unchanged.
 
+Implemented 2026-10-20: §1, §2, §3, §4 and the tests of §6 (fixtures in
+`tests/fixtures/base/` and `tests/fixtures/layers/v1/`). Points settled in
+the implementation: the fingerprint leaves out every key line of the
+section, its subsections' included, so that keying a subsection does not
+report its parent as changed; `sync_layers.py` exits with the highest
+status, a malformed entry counting 1; `make_release_manifest.py --to`
+defaults to the working tree; the fixture base names its skill file
+`SKILL.fixture.md` so that no checkout lists it as a skill. Not done yet:
+the §5 wording in `tools/templates/fixed-block.md` (regenerating the blocks
+touches every `SKILL.md`; until then `layers.py <skill>` prints the same
+instructions with each override and suppress) and the answering test with
+an override.
+
 The roadmap of 2026-10-12 designed phase 5 around a claims table. That
 table was dropped; v1 is built on what the package already has: frozen
 section keys (`<!-- key: slug -->`, checked by `tools/check_keys.py`) and the

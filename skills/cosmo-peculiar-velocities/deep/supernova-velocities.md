@@ -10,7 +10,6 @@ From: Turner 2024 review (arXiv:2411.19484), Sect. 3.2; Tsagas et al. 2025 revie
 (arXiv:2510.05340), Sect. 10.1; ZTF SN Ia DR2 peculiar-velocity paper (arXiv:2405.20409).
 
 Already in L2, not repeated here: the SN samples and their sharing in
-`pv-surveys.md#supernova-samples-used-for-peculiar-velocities` and
 `surveys-and-data.md#supernova-samples-used-as-velocity-tracers`; the origin papers of the
 magnitude covariance (Hui & Greene 2006, Gordon et al. 2007, Davis et al. 2011) in
 `physics-and-methods.md#supernova-magnitude-covariance`; the ZTF selection, the redshift-binned

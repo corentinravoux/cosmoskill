@@ -1,26 +1,93 @@
 key	id	first_author	year	title	role
+Schneider2010	1002.2136	Schneider	2010	COSEBIs: Extracting the full E-/B-mode information from cosmic shear correlation functions	method
+Burden2015	1504.02591	Burden	2015	Reconstruction in Fourier space	method
+Planck2018Params	1807.06209	Planck Collaboration	2020	Planck 2018 results. VI. Cosmological parameters	results
+Planck2018Inflation	1807.06211	Planck Collaboration	2018	Planck 2018 results. X. Constraints on inflation	results
+Bowman2018	1810.05912	Bowman	2018	An absorption profile centred at 78 megahertz in the sky-averaged spectrum	results
+Planck2018PNG	1905.05697	Planck Collaboration	2020	Planck 2018 results. IX. Constraints on primordial non-Gaussianity	results
+Pagano2019	1908.09856	Pagano	2019	Reionization optical depth determination from Planck HFI data with ten percent accuracy	results
+Ivanov2020	1909.05277	Ivanov	2020	Cosmological Parameters from the BOSS Galaxy Power Spectrum	results
+Sunayama2020	2002.03867	Sunayama	2020	The impact of projection effects on cluster observables: stacked lensing and projected clustering	systematics
+Brout2021	2004.10206	Brout	2020	It's Dust: Solving the Mysteries of the Intrinsic Scatter and Host-Galaxy Dependence of Standardized Type Ia Supernova Brightnesses	method
+deBelsunce2021	2103.14378	de Belsunce	2021	Inference of the optical depth to reionization from low multipole temperature and polarisation Planck data	results
+Krolewski2021	2105.03421	Krolewski	2021	Cosmological constraints from unWISE and Planck CMB lensing tomography	results
 Amon2021	2105.13543	Amon	2021	Dark Energy Survey Year 3 Results: Cosmology from Cosmic Shear and Robustness to Data Calibration	results
 DESY3	2105.13549	DES Collaboration	2021	Dark Energy Survey Year 3 Results: Cosmological Constraints from Galaxy Clustering and Weak Lensing	results
+Zhu2021	2109.06295	Zhu	2021	Chasing the Tail of Cosmic Reionization with Dark Gap Statistics in the Ly$\alpha$ Forest over $5 < z < 6$	results
+BK18	2110.00483	BICEP/Keck Collaboration	2021	BICEP / Keck XIII: Improved Constraints on Primordial Gravitational Waves using Planck, WMAP, and BICEP/Keck Observations through the 2018 Observing Season	results
+Brout2022calib	2112.03864	Brout	2021	The Pantheon+ Analysis: SuperCal-Fragilistic Cross Calibration, Retrained SALT2 Light Curve Model, and Calibration Systematic Uncertainty	method
+PhilcoxIvanov2022	2112.04515	Philcox	2022	The BOSS DR12 Full-Shape Cosmology: $\Lambda$CDM Constraints from the Large-Scale Galaxy Power Spectrum and Bispectrum Monopole	results
+Singh2021	2112.06778	Singh	2021	On the detection of a cosmic dawn signal in the radio background	results
+Brout2022cosmo	2202.04077	Brout	2022	The Pantheon+ Analysis: Cosmological Constraints	results
+Wu2022	2203.05416	Wu	2022	Optical selection bias and projection effects in stacked galaxy cluster weak lensing	systematics
+HERA2022	2210.04912	The HERA Collaboration	2022	Improved Constraints on the 21 cm EoR Power Spectrum and the X-Ray Heating of the IGM with HERA Phase I Observations	results
 Dam2023	2212.07733	Dam	2022	Testing the Cosmological Principle with CatWISE Quasars: A Bayesian Analysis of the Number-Count Dipole	results
 Watkins2023	2302.02028	Watkins	2023	Analyzing the Large-Scale Bulk Flow using CosmicFlows4: Increasing Tension with the Standard Cosmological Model	results
 Whitford2023	2306.11269	Whitford	2023	Evaluating bulk flow estimators for CosmicFlows-4 measurements	critique
+Farren2023	2309.05659	Farren	2023	The Atacama Cosmology Telescope: Cosmology from cross-correlations of unWISE galaxies and ACT DR6 CMB lensing	results
+Bocquet2024II	2401.02075	Bocquet	2024	SPT Clusters with DES and HST Weak Lensing. II. Cosmological Constraints from the Abundance of Massive Halos	results
+Aymerich2024	2402.04006	Aymerich	2024	Cosmological constraints from the Chandra-Planck galaxy cluster sample	results
+Ghirardini2024	2402.08458	Ghirardini	2024	The SRG/eROSITA all-sky survey: Cosmology constraints from cluster abundances in the western Galactic hemisphere	results
+Lee2024	2403.19542	Lee	2024	Cosmological inference from combining Planck and ACT cluster counts	results
+DESI2024BAO	2404.03000	DESI Collaboration	2024	DESI 2024 III: Baryon Acoustic Oscillations from Galaxies and Quasars	results
 Breuval2024	2404.08038	Breuval	2024	Small Magellanic Cloud Cepheids Observed with the Hubble Space Telescope Provide a New Anchor for the SH0ES Distance Ladder	results
+Spina2024	2405.12273	Spina	2024	Damping wings in the Lyman-α forest: a model-independent measurement of the neutral fraction at 5.4<z<6.1	results
+Sailer2024	2407.04607	Sailer	2024	Cosmological constraints from the cross-correlation of DESI Luminous Red Galaxies with CMB lensing from Planck PR4 and ACT DR6	results
+Artis2024growth	2410.09499	Artis	2024	The SRG/eROSITA All-Sky Survey : Constraints on the structure growth from cluster number counts	results
+DESI2024FS	2411.12021	Adame	2024	DESI 2024 V: Full-Shape Galaxy Clustering from Galaxies and Quasars	results
+DESI2024FSCosmo	2411.12022	DESI Collaboration	2024	DESI 2024 VII: Cosmological Constraints from the Full-Shape Modeling of Clustering Measurements	results
+Chaussidon2024	2411.17623	Chaussidon	2024	Constraining primordial non-Gaussianity with DESI 2024 LRG and QSO samples	results
+DES2025clusters	2503.13632	DES Collaboration	2025	Dark Energy Survey Year 3 Results: Cosmological Constraints from Cluster Abundances, Weak Lensing, and Galaxy Clustering	results
+ACT2025LCDM	2503.14452	Louis	2025	The Atacama Cosmology Telescope: DR6 Power Spectra, Likelihoods and $Λ$CDM Parameters	results
 Calabrese2025	2503.14454	Calabrese	2025	The Atacama Cosmology Telescope: DR6 Constraints on Extended Cosmological Models	results
 DESI2025BAO	2503.14738	DESI Collaboration	2025	DESI DR2 Results II: Measurements of Baryon Acoustic Oscillations and Cosmological Constraints	results
 DESI2025Lya	2503.14739	DESI Collaboration	2025	DESI DR2 Results I: Baryon Acoustic Oscillations from the Lyman Alpha Forest	results
 Wright2025	2503.19441	Wright	2025	KiDS-Legacy: Cosmological constraints from cosmic shear with the complete Kilo-Degree Survey	results
+Jung2025	2504.00884	Jung	2025	Constraints on primordial non-Gaussianity from Planck PR4 data	results
+Sailer2025	2504.16932	Sailer	2025	Dispu$\tau$able: the high cost of a low optical depth	critique
+Popovic2025cal	2506.05471	Popovic	2025	A Reassessment of the Pantheon+ and DES 5YR Calibration Uncertainties: Dovekie	method
+Pandey2025	2506.07432	Pandey	2025	Constraints on cosmology and baryonic feedback with joint analysis of Dark Energy Survey Year 3 lensing data and ACT DR6 thermal Sunyaev-Zel'dovich effect observations	results
 Camphuis2025	2506.20707	Camphuis	2025	SPT-3G D1: CMB temperature and polarization power spectra and cosmology from 2019 and 2020 observations of the SPT-3G Main field	results
+Ferreira2025	2507.12459	Ferreira	2025	The BAO-CMB Tension and Implications for Inflation	critique
+Lesci2025	2507.14285	Lesci	2025	AMICO galaxy clusters in KiDS-1000: cosmological constraints and mass calibration from counts and weak lensing	results
 Du2025	2507.16589	Du	2025	Cosmological preference for a positive neutrino mass at 2.7$σ$: A joint analysis of DESI DR2, DESY5, and DESY1 data	results
+ACT2025clusters	2507.21459	ACT-DES-HSC Collaboration	2025	The Atacama Cosmology Telescope: DR6 Sunyaev-Zel'dovich Selected Galaxy Clusters Catalog	data
+Acevedo2025	2508.10877	Acevedo	2025	The Dark Energy Bedrock All-Sky Supernova Program: Cross Calibration, Simulations, and Cosmology Forecasts	data
+Morawetz2025	2508.11811	Morawetz	2025	Frequentist Cosmological Constraints from Full-Shape Clustering Measurements in DESI DR1	results
 Riess2025	2509.01667	Riess	2025	The Perfect Host: JWST Cepheid Observations in a Background-Free SN Ia Host Confirm No Bias in Hubble-Constant Measurements	results
+Aymerich2025a	2509.02068	Aymerich	2025	Cosmological constraints from the Planck cluster catalogue with DES shear profiles and Chandra observations	results
+Aymerich2025b	2509.08673	Aymerich	2025	Implications of SPT and eROSITA cosmologies for Planck cluster number counts and t-SZ power spectrum	critique
+Siegel2025a	2509.10455	Siegel	2025	Joint X-ray, kinetic Sunyaev-Zeldovich, and weak lensing measurements: toward a consensus picture of efficient gas expulsion from groups and clusters	results
 H0DN2025	2510.23823	H0DN Collaboration	2025	The Local Distance Network: a community consensus report on the measurement of the Hubble constant at 1% precision	results
+Xu2025	2510.25596	Xu	2025	Constraining baryonic feedback and cosmology from DES Y3 and Planck PR4 6$\times$2pt data. I. $Λ$CDM models	results
 Bashir2025	2511.00822	Bashir	2025	The CatWISE2020 Quasar dipole: A Reassessment of the Cosmic Dipole Anomaly	critique
+Popovic2025des	2511.07517	Popovic	2025	The Dark Energy Survey Supernova Program: A Reanalysis Of Cosmology Results And Evidence For Evolving Dark Energy With An Updated Type Ia Supernova Calibration	results
 deJanvry2025	2511.18134	de Janvry	2025	Cosmic Shear constraints from HSC Year 3 with clustering calibration of the tomographic redshift distributions from DESI	results
+CHIME2025	2511.19620	CHIME Collaboration	2025	Detection of the Cosmological 21 cm Signal in Auto-correlation at z ~ 1 with the Canadian Hydrogen Intensity Mapping Experiment	results
 Li2025	2511.22512	Li	2025	Robust evidence for dynamical dark energy in light of DESI DR2 and joint ACT, SPT, and Planck data	results
-Lai2025	2512.03229	Lai	2025	The DESI DR1 Peculiar Velocity Survey: growth rate measurements from the maximum likelihood fields method	results
+Siegel2025b	2512.02954	Siegel	2025	The suppression of the matter power spectrum: strong feedback from X-ray gas mass fractions, kSZ effect profiles, and galaxy-galaxy lensing	results
+Bautista2025	2512.03228	Bautista	2025	The DESI DR1 Peculiar Velocity Survey: Mock Catalog	method
+Turner2025	2512.03230	Turner	2025	The DESI DR1 Peculiar Velocity Survey: growth rate measurements from galaxy and momentum correlation functions	results
+SO2025SAT	2512.15833	Simons Observatory Collaboration	2025	The Simons Observatory: forecasted constraints on primordial gravitational waves with the expanded array of Small Aperture Telescopes	forecast
 DES2026Y6	2601.14559	DES Collaboration	2026	Dark Energy Survey Year 6 Results: Cosmological Constraints from Galaxy Clustering and Weak Lensing	results
 Hoyt2026	2601.19424	Hoyt	2026	Union3.1: Reducing Systematics in Supernova Cosmology with Self-consistent Measurements of Host Galaxy Properties for 2000 Type Ia Supernovae	results
-ChavesMontero2026	2601.21432	Chaves-Montero	2026	Cosmological analysis of the DESI DR1 Lyman alpha 1D power spectrum	results
+Chaubal2026	2601.20551	Chaubal	2026	SPT-3G D1: A Measurement of Secondary Cosmic Microwave Background Anisotropy Power	results
 Pantos2026	2602.12238	Pantos	2026	Status of the $S_8$ Tension: A 2026 Review of Probe Discrepancies	review
+ForeroSanchez2026	2602.18761	Forero-Sánchez	2026	Cosmological constraints from a joint DESI DR1 Full-Shape and DR2 BAO	results
+Daley2026	2604.03227	Daley	2026	UNIONS-3500 Weak Lensing: II. B-mode validation for cosmic shear	systematics
+Chaussidon2026	2604.04867	Chaussidon	2026	Measurement of the galaxy-velocity power spectrum of DESI tracers with the kinematic Sunyaev-Zeldovich effect using DESI DR2 and ACT DR6	results
+Prada2026	2604.18683	Prada	2026	Galaxies at z > 10: ΛCDM predicts increased Star Formation Efficiency	results
+Qu2026	2604.19744	Qu	2026	Precision Kinematic Sunyaev--Zel'dovich Measurements Across Halo Mass and Redshift with DESI DR2 and ACT DR6: Part I. Luminous Red Galaxies	results
+Ginolin2026	2605.06799	Ginolin	2026	On the origin of the environmental dependence of SN Ia magnitudes: A BayeSN view of the ZTF SN Ia DR2	systematics
+Salcido2026	2605.11083	Salcido	2026	FLAMINGO: The thermal history of the Universe from tSZ effect cross-correlations and its dependencies on cosmology and baryon physics	results
+ForeroSanchez2026B	2606.23936	Forero-Sánchez	2026	Cosmological constraints from the DESI DR1 Bispectrum Full-Shape and DR2 BAO	results
+Bleem2026	2607.01175	Bleem	2026	Galaxy Clusters Selected via the Sunyaev-Zel'dovich Effect in 5 year data from the SPT-3G Main Survey	data
 LiteBIRD2026	2607.25285	LiteBIRD Collaboration	2026	LiteBIRD Mission Overview after Mission Reformation	forecast
+MonteroCamacho2026	2607.26373	Montero-Camacho	2026	No way ou$\tau$: Epoch of Reionization Observations Do not Support Large Values of the Optical Depth to Reionization	results
 DESI2026LyaAP	2607.27410	DESI Collaboration	2026	DESI DR2 Results IV: Alcock-Paczy\'nski Measurements from the Lyman Alpha Forest and Cosmological Constraints	results
+Chudaykin2026	2607.28445	Chudaykin	2026	Inflation, Open Universes, and Dark Energy	results
+Eskilt2026	2608.06480	Eskilt	2026	Cosmic birefringence from a joint analysis of ACT and Planck	results
 Camilleri2026	2609.05053	Camilleri	2026	Supernovae Unite: Combining Pantheon+ and DES-SN5YR	results
+Lee2026	2609.05321	Lee	2026	Supernovae Unite: Host-Galaxy Mass Measurements of Type Ia Supernovae and Their Impact on Cosmology	systematics
+Hivon2001	astro-ph/0105302	Hivon	2001	MASTER of the CMB Anisotropy Power Spectrum: A Fast Method for Statistical Analysis of Large and Complex CMB Data Sets	method
+Schneider2002	astro-ph/0206182	Schneider	2002	Analysis of two-point statistics of cosmic shear: I. Estimators and covariances	foundation

@@ -1,5 +1,9 @@
 # Local layers
 
+This page describes layers for the researcher. The full specification of
+entry modes, stamps, `sync_layers.py`, `promote.py` and the release manifest
+is `docs/layers-v1.md`; a layer written for v0 still works unchanged.
+
 The package is the base layer. A researcher adds to it without editing it,
 in two places:
 
@@ -23,7 +27,8 @@ python3 skills/observational-cosmology/scripts/layers.py init --project  # in th
 └── <skill>/
     ├── notes.md            notes attached to sections of the package
     ├── sources.tsv         your own papers, and those you rely on
-    └── deep/<name>.md      your own dossiers
+    ├── deep/<name>.md      your own dossiers
+    └── private/            the same three, never promoted to the package
 ```
 
 **`profile.md`** is free text, shown to the assistant as context. Two
@@ -52,6 +57,32 @@ Skip the introduction to shear estimators.
 `<!-- key: ... -->` under that section's heading in the package. A key does
 not change when the heading is reworded, so a note stays attached across
 updates of the package. `## general` attaches to the skill as a whole.
+
+A note adds to its section. Two other modes act on the section itself, for
+you only:
+
+```markdown
+## results#optical-depth-tau
+mode: override
+base: 3f2a9c1d7e0b
+Our baseline is the low-ell reanalysis value; quote it first.
+
+## physics-and-methods#what-is-measured-and-why-it-constrains-cosmology
+mode: suppress
+base: 8c01d2e4f9a7
+I know the basics of cluster counts.
+```
+
+- `override`: your text replaces the section for you. An answer still
+  quotes the package's value beside yours, both labelled, and says which
+  one it used.
+- `suppress`: the section is skipped, unless the question is about it; its
+  heading and your reason stay visible.
+- `base:` is the fingerprint of the section when the entry was written. The
+  commands write it; it tells `sync_layers.py` when the section has changed
+  under your entry.
+- `private: yes`, or a file under `<skill>/private/`, marks what is never
+  promoted to the package.
 
 **`<skill>/sources.tsv`** lists papers the package does not cite for that
 skill: your own, or those your work rests on. It has the columns of the
@@ -89,12 +120,15 @@ commands below, which refuse what cannot be attached or sourced.
 | Request | What the assistant does |
 |---|---|
 | "note, for my cluster work, that ..." | finds the section the remark is about and runs `layers.py note <skill> <file>#<key> <text>`; `general` when it concerns the whole skill |
+| "for me, use this value of τ instead" | shows the section with `layers.py resolve`, then runs `layers.py override <skill> <file>#<key> <text>` |
+| "I do not need the introduction to shear estimators" | runs `layers.py suppress <skill> <file>#<key> <reason>` |
 | "add this paper to my layer" | runs `layers.py source <skill> <arXiv id> --role <role>` |
 | "write up what we just worked out as a dossier" | runs `layers.py dossier <skill> <name>`, then fills the file from the papers read in the conversation, with a place for each number, and lists the rest under "Not verified" |
 | "for this project only" | the same with `--project`, which writes to `.cosmoskill/` in the project |
 
-A note is dated when written. Notes, papers and dossiers are plain files:
-edit or delete them with any editor.
+A note is dated and stamped when written. Notes, papers and dossiers are
+plain files: edit or delete them with any editor. The `cosmoskill-refine`
+skill gives the assistant this workflow.
 
 ## How the assistant uses it
 
@@ -110,23 +144,64 @@ for a dossier.
 ```bash
 python3 skills/observational-cosmology/scripts/layers.py cosmo-weak-lensing
 python3 skills/observational-cosmology/scripts/layers.py cosmo-weak-lensing --json
+python3 skills/observational-cosmology/scripts/layers.py resolve cosmo-cmb results#optical-depth-tau
 python3 skills/observational-cosmology/scripts/layers.py check
 python3 skills/observational-cosmology/scripts/layers.py check --online
 ```
 
+`resolve` prints a file of the package, or one section, with every entry
+that applies, labelled by layer and mode: `[base]` and `[personal override —
+effective for this researcher]`, `[suppressed by the project layer: ...]`,
+`[personal note] ...`. When both layers override a section, the project
+entry is the effective one; an override in one layer wins over a suppress in
+the other. `--json` gives one object per section.
+
 `check` lists notes attached to a key the package does not have (a typing
-error, or a section the package retired), malformed rows of a `sources.tsv`,
-and papers cited in a note or a dossier without a row. With `--online` it
-also compares the title and first author of every row with arXiv. Run it
-after updating the package.
+error, or a section the package retired), malformed entries and rows, and
+papers cited in a note or a dossier without a row. With `--online` it also
+compares the title and first author of every row with arXiv.
+
+## After updating the package
+
+```bash
+python3 skills/observational-cosmology/scripts/sync_layers.py
+python3 skills/observational-cosmology/scripts/sync_layers.py --follow
+python3 skills/observational-cosmology/scripts/sync_layers.py --stamp cosmo-cmb/results#optical-depth-tau
+python3 skills/observational-cosmology/scripts/sync_layers.py --stamp-all
+```
+
+`sync_layers.py` gives each entry a status: `ok`, `unstamped` (a note
+written before stamps), `changed` (the section was edited since the entry
+was written), `moved` (the key was retired with a replacement, listed in
+the skill's `references/retired-keys.tsv`), `retired` (no replacement) or
+`missing`. It exits 0 when all are `ok` or `unstamped`, 2 when an entry
+needs review, 3 when that entry is an override (your value may now be the
+older one), and 1 for a malformed layer. Read the section again with
+`resolve`, edit your entry if needed, then `--stamp` it; `--follow`
+re-attaches moved entries to their replacement. Retired and missing
+entries are left to you. A release of the package can ship
+`releases/<version>.tsv` (written by `tools/make_release_manifest.py`),
+which lists the keys added, changed, moved or retired, so you can see what
+`sync_layers.py` will report before updating.
+
+## Promoting to the package
+
+The package's owner can move an entry into the package with
+`promote.py <skill> source <id> | dossier <name> | note <file>#<key>`. It
+writes into the working tree and never commits: a paper is appended to the
+skill's bibliography (with a public identifier only), a dossier is copied to
+`deep/`, and a note becomes a proposal in `docs/proposals/` to fold in by
+hand. Private entries, rows without an arXiv or DOI identifier, and
+dossiers citing a paper without a row are refused, and nothing is written.
 
 ## What a layer does not do
 
-- A layer adds; it does not replace a value of the package. Where your
-  dossier and the package disagree, the assistant gives both and says which
-  is which.
+- A layer does not change what the package says. Even an override is
+  shown beside the package's value; where your dossier and the package
+  disagree, the assistant gives both and says which is which.
 - The package does not check a layer's content: a paper you added is read
   before it is quoted, like any other.
-- Nothing is merged or promoted to the package.
+- Nothing is merged into the package automatically: `promote.py` only
+  prepares the change, for the owner to review and commit.
 - Keep anything confidential out of a project layer that is committed with
   the project: a layer is plain text in a directory.

@@ -21,7 +21,7 @@ its numbers supersede the digest in this hub.
 | Cosmic shear, 3×2pt, S8, shear and photo-z calibration, IA, baryons | `cosmo-weak-lensing` |
 | SN Ia Hubble diagram, standardisation, calibration, compilations | `cosmo-supernovae` |
 | H0: distance ladder, SH0ES / CCHP / H0DN, masers, time delays, inverse ladder | `cosmo-distance-ladder-h0` |
-| Peculiar-velocity estimators and their equations, bulk flows, kSZ velocities, zero-point and Malmquist systematics, DESI DR1 PV and 2025–2026 results, forecasts; survey descriptions and the fσ8 table | `cosmo-peculiar-velocities` |
+| Peculiar-velocity estimators, bulk flows, kSZ velocities, zero-point and Malmquist systematics, DESI DR1 PV, fσ8 at low z | `cosmo-peculiar-velocities` |
 | Cluster counts, mass calibration and hydrostatic bias, selection, projection effects, cluster S8, gas fractions, splashback; eROSITA, SPT, ACT, Planck SZ, DES, KiDS | `cosmo-clusters` |
 | CMB lensing × galaxies and quasars, lensing tomography, kSZ and gas profiles, tSZ × LSS, ISW, CIB, moving lens | `cosmo-cmb-lss-cross-correlations` |
 | Bispectrum, parity-odd 4PCF, voids, density split, wavelets, lensing peaks and third-order shear, field-level inference, simulation-based inference | `cosmo-beyond-two-point` |
@@ -63,8 +63,8 @@ step: `references/suite-conventions.md`. Design documents and test logs are in t
   Each domain skill supersedes it for its own domain.
 - `references/conventions.md`: notation, units, estimator definitions to pin
   down.
-- `references/review-checklists.md`: four worked systematics checklists for
-  reviewing a results section. Every domain skill carries its own list under
+- `references/review-checklists.md`: six worked systematics checklists, one
+  per large probe family, for reviewing a results section. Every domain skill carries its own list under
   "Systematics a referee checks".
 - `${CLAUDE_SKILL_DIR}/scripts/verify_sources.py <skill directory>`: checks
   every cited arXiv identifier of a skill against arXiv.
@@ -148,7 +148,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 4k; conventions 1k; field-state-2026 2k; review-checklists 1k; review-rubric 1k; suite-conventions 2k.
+Sizes, in thousands of tokens: L1 4k; conventions 1k; field-state-2026 4k; review-checklists 1k; review-rubric 1k; suite-conventions 2k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

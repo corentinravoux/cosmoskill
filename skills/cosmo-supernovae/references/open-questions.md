@@ -3,7 +3,7 @@
 Scope: live controversies with both sides cited, internal tensions between
 analyses, method debates, what the next data will decide (forecasts labelled),
 and the misconceptions that still circulate with the paper that corrects each.
-Snapshot: 2026-10-13
+Snapshot: 2026-10-20
 
 Flags: `[src]` read in the cited paper this session; `[sec]` from a named
 secondary source; `[der]` derived here.
@@ -228,6 +228,44 @@ constraint from the supernovae themselves. Whether absolute flux standards
 | "Recalibration of SNe could resolve the Hubble tension." | Not supported | The 2025–2026 corrections change `H0` by ~0.2 km/s/Mpc (Roy Choudhury 2026, arXiv:2607.24443); calibration contributes < 0.2 km/s/Mpc (arXiv:2112.03864) |
 | "FoM values are comparable between papers." | Wrong | Two definitions differing by a factor 19.4 are in use (arXiv:2311.12098 vs arXiv:2609.05053) |
 | "JLA / Pantheon are fine for a quick fit." | Obsolete | Superseded twice over in calibration, scatter model and covariance treatment (arXiv:2202.04077) |
+
+## 9. Hubble diagrams beyond SNe Ia: what quasars and GRBs add at z > 2
+<!-- key: hubble-diagrams-beyond-sne-ia-what-quasars-and -->
+
+SN Ia samples thin out near z ~ 2; quasars (X-ray–UV relation), gamma-ray
+bursts and HII galaxies reach z ~ 7 and beyond. None is a physically
+standardised candle: each is an empirical correlation whose normalisation is
+degenerate with H0 and with the SN M_B. Details, samples and numbers are in
+`cosmo-distance-ladder-h0`, `references/alternative-distance-probes.md`.
+
+**Dependence on SN calibration.** The quasar Hubble diagram is put on an
+absolute scale by cross-calibration on SNe Ia in the common redshift range
+(Lusso et al. 2020, arXiv:2008.08586) `[sec: alternative-distance-probes.md
+§2.1]`. GRB relations are calibrated by interpolating the SN Ia distance
+modulus at each burst redshift (Liang et al. 2008, arXiv:0802.4262) `[src]`,
+in 2025 on Pantheon+ (Huang et al. 2025, arXiv:2506.08929) `[src]`. The
+high-z points therefore inherit the SN calibration and its systematics; they
+add only the extrapolation in redshift, plus their own evolution and
+selection effects.
+
+**Reading a claimed departure from ΛCDM.** The quasar diagram agrees with SNe
+and ΛCDM below z ~ 1.4 and deviates above at ~4σ according to its authors
+(Risaliti & Lusso 2019, arXiv:1811.02590) `[src]`, who argue against a
+redshift-dependent systematic (arXiv:2008.08586) `[src]`. Critiques: the
+deviation comes from a cosmographic expansion that fails beyond z ~ 2
+(Yang et al. 2020, arXiv:1911.01681) `[src]`; the full sample is not
+standardisable, only z ≲ 1.5–1.7 subsets are (Khadka & Ratra 2020,
+arXiv:2012.09291) `[src]`, with the SDSS–4XMM sub-sample as main cause
+(arXiv:2107.07600) `[src]`; rising Ω_m with effective redshift is expected
+in flat-ΛCDM fits (Ó Colgáin et al. 2022, arXiv:2203.10558) `[src]`. eROSITA
+quasar samples confirm the relation but do not yet constrain cosmology
+(Sacchi et al. 2025, arXiv:2508.00732) `[src]`. HII galaxies to z ~ 14 are
+consistent with flat ΛCDM (Chávez et al. 2026, arXiv:2607.14254) `[src]`.
+Checks before accepting such a claim against the SN Ia diagram: is the
+departure present where SNe and the probe overlap (it is not, for quasars);
+direct model fit or cosmographic series; relation parameters fitted jointly
+and stable across redshift bins and models; which sub-samples carry the
+high-z points.
 
 ## Not verified
 <!-- key: not-verified -->

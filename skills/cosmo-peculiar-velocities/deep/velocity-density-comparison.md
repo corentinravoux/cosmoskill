@@ -9,14 +9,14 @@ From: Turner 2024 review (arXiv:2411.19484), Sect. 5.3; Cosmicflows reconstructi
 al. 2025, arXiv:2510.05340, Sect. 2.2.3).
 
 Already in L2, not repeated here: the list of analyses and their fσ8 values in
-`pv-surveys.md#published-fsigma8-measurements-from-peculiar` and
+`results.md#published-fsigma8-from-peculiar-velocities` and
 `results.md#history-of-the-key-numbers-what-is-superseded`; the three meanings of β in
 `physics-and-methods.md#conventions-units-and-where-the-community-is`; the Malmquist sizes of
 Stiskalek 2025 in `systematics.md#malmquist-bias-and-the-distance-prior`; the 1.04 method bias,
 the TITAN budget total and the residual-flow values in
 `systematics.md#reconstruction-systematics-velocity-density` and
 `results.md#residual-external-bulk-flows-from-velocity`; the 6.5 % linear/non-linear offset in
-`fsigma8-pv-compilation.md#linear-vs-non-linear-sigma8-verified-2026-08-13`.
+`results.md#linear-against-non-linear-sigma8`.
 
 Notation: this file follows Carrick et al. 2015 (arXiv:1504.04627) and Stiskalek 2025
 (arXiv:2509.20235). β* = f/b* with b* the bias of an L* 2M++ galaxy; u(r) the predicted

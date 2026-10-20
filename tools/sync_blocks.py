@@ -10,7 +10,9 @@ two marker lines; nothing between them is edited by hand.
 
 Sizes are estimates: characters divided by 3.2, rounded to a thousand
 tokens, which is about what this kind of text (tables, numbers, identifiers)
-costs. Standard library only.
+costs. A skill without a `references/` directory is a workflow skill (for
+example `cosmoskill-refine`): it has no levels, and gets no block.
+Standard library only.
 """
 
 from __future__ import annotations
@@ -59,7 +61,7 @@ def main() -> int:
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
     stale = 0
-    for skill in sorted(p for p in (ROOT / "skills").iterdir() if (p / "SKILL.md").is_file()):
+    for skill in sorted(p for p in (ROOT / "skills").iterdir() if (p / "SKILL.md").is_file() and (p / "references").is_dir()):
         path = skill / "SKILL.md"
         text = path.read_text(encoding="utf-8")
         own, current = split(text)

@@ -13,12 +13,10 @@ re-verify against the cited paper before a number enters a manuscript.
 
 | Question | Load |
 |---|---|
-| Indicators, surveys, method families, fσ8 table | `references/pv-surveys.md` |
-| Provenance of each fσ8 | `references/fsigma8-pv-compilation.md` |
-| Estimator equations, conventions | `references/physics-and-methods.md` |
-| Releases, DR1 cut flow, codes | `references/surveys-and-data.md` |
-| 2025–2026 results, bulk flows, kSZ, gravity | `references/results.md` |
-| Systematic sizes, referee checklist | `references/systematics.md` |
+| Method families, equations, conventions | `references/physics-and-methods.md` |
+| Indicators, surveys, DR1 cut flow, codes | `references/surveys-and-data.md` |
+| fσ8 table, provenance, results, bulk flows, kSZ, gravity | `references/results.md` |
+| Systematics, sizes, referee checklist | `references/systematics.md` |
 | Controversies, forecasts, stale claims | `references/open-questions.md` |
 | Momentum P(k), ψ1/ψ2: weights, model | `deep/two-point-statistics.md` |
 | Field-level cells, covariance, numerics | `deep/field-level-likelihood.md` |
@@ -112,7 +110,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; _progress 1k; fsigma8-pv-compilation 5k; open 6k; methods 10k; pv-surveys 7k; results 9k; surveys 4k; systematics 11k; deep/bulk-flows 7k; deep/distance-indicators 9k; deep/field-level-likelihood 6k; deep/supernova-velocities 7k; deep/two-point-statistics 6k; deep/velocity-density-comparison 7k.
+Sizes, in thousands of tokens: L1 2k; open 7k; methods 12k; results 15k; surveys 6k; systematics 12k; deep/bulk-flows 7k; deep/distance-indicators 9k; deep/field-level-likelihood 6k; deep/supernova-velocities 7k; deep/two-point-statistics 6k; deep/velocity-density-comparison 7k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

@@ -1,7 +1,11 @@
 # Field state — observational cosmology, mid-2026
 
 Cross-domain digest. First written **2026-08-06**; lines marked *(2026-10-08)*
-were corrected or added on that date from the sources named. **The `cosmo-*`
+were corrected or added on that date from the sources named. Rebalanced
+**2026-10-20** to the field's weights: the sections on BAO and full shape,
+supernovae, clusters, CMB × LSS, inflation and reionisation were added from
+the `SKILL.md` and `references/` of their domain skills, and the
+peculiar-velocity and Lyman-α sections cut to pointers. **The `cosmo-*`
 skills supersede this file for their domain**: each holds dated tables with
 provenance flags, and where this digest and a `cosmo-*/references/results.md`
 differ, the sub-skill is right. **Verify before citing**: every number here
@@ -54,6 +58,55 @@ without a source below were not verified and must not be quoted.
 - The evidence is **geometric** (BAO + SN + CMB). Weak lensing does not drive
   it — which is what makes the growth-side cross-check informative.
 
+## BAO and full-shape clustering
+<!-- key: bao-and-full-shape-clustering -->
+
+- Latest DESI BAO: DR2 (arXiv:2503.14738); full shape: still DR1
+  (arXiv:2411.12021); "DR1 FS + DR2 BAO" papers mix releases
+  (arXiv:2602.18761).
+- BAO measure D/r_d, not H₀. DR2 alone gives **Ω_m = 0.2975 ± 0.0086**;
+  DR2 + BBN gives H₀ = 68.51 ± 0.58 (arXiv:2503.14738).
+- DESI DR2 BAO versus CMB in ΛCDM: 2.3σ. The errors are
+  statistics-dominated: systematics add at most 9% to the α_iso error
+  (arXiv:2503.14738).
+- The w₀wₐ preference is 1.7σ for DESI BAO alone, 3.1σ with CMB
+  (arXiv:2503.14738). DESI clustering beyond BAO has not strengthened it:
+  1.4σ for DR1 FS + DR2 BAO without CMB (arXiv:2602.18761); the bispectrum
+  weakens it (arXiv:2606.23936).
+- Live: full-shape posteriors in extended models are prior-dominated: best
+  fit and posterior mean differ by up to 6.6σ in w₀wₐCDM (arXiv:2508.11811);
+  ask for the MAP. σ₈ from full shape: BOSS EFT gave 0.69–0.73
+  (arXiv:1909.05277, arXiv:2112.04515); DESI DR1 gives 0.842 ± 0.034
+  (arXiv:2411.12022).
+- DESI finished its planned survey in April 2026, full-survey results due
+  2027; Euclid DR1 clustering products: mid-2027. Detail:
+  `cosmo-galaxy-clustering`.
+
+## Type Ia supernovae
+<!-- key: type-ia-supernovae -->
+
+- An unanchored SN Hubble diagram measures the shape of d_L(z) only; M and
+  H₀ are degenerate (arXiv:2511.07517, arXiv:2609.05053).
+- Current samples: **Unite** (2884 SNe, Pantheon+ ∪ DES, arXiv:2609.05053),
+  **DES-Dovekie** (arXiv:2511.07517), **Union3.1** (arXiv:2601.19424).
+  DES-SN5YR and Union3 are superseded; Pantheon+ (arXiv:2202.04077) stands
+  with revised host masses. The compilations share most low-z supernovae;
+  they are not independent.
+- Flat-ΛCDM Ω_m from SNe alone: **0.310 (+0.012/−0.011)** Unite
+  (arXiv:2609.05053), 0.330 ± 0.015 DES-Dovekie (arXiv:2511.07517),
+  0.344 (+0.026/−0.025) Union3.1 (arXiv:2601.19424).
+- The 2025–2026 shifts came from two fixes: Dovekie recalibration plus a
+  colour-law implementation error in DES (arXiv:2511.07517), and
+  inconsistent host masses between low and high redshift (arXiv:2601.19424,
+  arXiv:2609.05321). Their effect on the dark-energy significance: section
+  "Dark energy" above.
+- Live: the low-z anchor controls the dark-energy result: cutting z < 0.1
+  moves Unite by ~2σ, and no analysis yet uses a modern anchor; DEBASS, ZTF
+  and TITAN are pending (arXiv:2508.10877). The residual mass step runs from
+  0 to 0.17 mag depending on bias-correction dimensionality, scatter model,
+  tracer and stretch linearity; its origin is disputed (arXiv:2004.10206 vs
+  arXiv:2605.06799). Detail: `cosmo-supernovae`.
+
 ## Neutrino mass
 <!-- key: neutrino-mass -->
 
@@ -82,20 +135,95 @@ without a source below were not verified and must not be quoted.
   0.772 (+0.018/−0.017) in the ΛCDM-optimised analysis (arXiv:2105.13543);
   3×2pt S₈ = 0.776 ± 0.017 (arXiv:2105.13549) *(2026-10-08)*.
 - Shear ratios improve shear-only S₈ by up to 31%.
-- Clusters: eROSITA eRASS1, 5259 clusters, S₈ = 0.86 ± 0.01; SPT 0.795 ± 0.029.
+
+## Galaxy clusters
+<!-- key: galaxy-clusters -->
+
+- There is no single cluster S₈: **eRASS1 0.86 ± 0.01** from 5259 clusters
+  (arXiv:2402.08458), DES Y3 0.864 ± 0.035 (arXiv:2503.13632), SPT
+  0.795 ± 0.029 (arXiv:2401.02075), Planck + DES shear 0.791
+  (arXiv:2509.02068), KiDS AMICO 0.74 ± 0.03 (arXiv:2507.14285).
+- The best-constrained amplitude is not S₈: SPT has
+  σ₈(Ω_m/0.3)^0.25 = 0.805 ± 0.016 (arXiv:2401.02075).
+- The eRASS1 high S₈ and its growth index γ = 1.19 ± 0.21 are one feature of
+  the data (arXiv:2410.09499); in that cosmology Planck would count 1098
+  clusters, not 439 (arXiv:2509.08673).
+- Live: mass calibration. (1 − b) depends on its reference: 0.89 against
+  Chandra, 0.76 against XMM, same lensing (arXiv:2402.04006); matching the
+  Planck CMB needs 0.61 ± 0.03 (arXiv:2403.19542). Planck clusters are now
+  1.6σ from the CMB (arXiv:2509.02068). Richness selection biases stacked
+  lensing high by 20–60% on large scales (arXiv:2203.05416, arXiv:2002.03867).
+- No counts cosmology exists from ACT DR6 (10040 clusters, arXiv:2507.21459)
+  or SPT-3G five-year data (7190 clusters, arXiv:2607.01175). Detail:
+  `cosmo-clusters`.
+
+## CMB × LSS cross-correlations
+<!-- key: cmb-x-lss-cross-correlations -->
+
+- CMB lensing × galaxies: unWISE × ACT DR6 + Planck gives
+  **S₈ = 0.810 ± 0.015**, consistent with primary CMB, superseding
+  0.784 ± 0.015 (arXiv:2309.05659, arXiv:2105.03421); DESI LRG × ACT DR6 +
+  Planck PR4 gives 0.775 (+0.019/−0.022), 1.6–2.2σ low (arXiv:2407.04607).
+- kSZ, DESI DR2 × ACT DR6: stacking at 18σ (arXiv:2604.19744), velocity
+  reconstruction at 20.8σ (arXiv:2604.04867). kSZ measures τ × v; no kSZ fσ₈
+  exists.
+- Live: feedback strength is disputed. Strong: > 8σ from fiducial FLAMINGO
+  (arXiv:2509.10455); 10 ± 2% suppression at k = 1 h/Mpc (arXiv:2512.02954).
+  Weak: 6×2pt (arXiv:2510.25596).
+- tSZ-based S₈ values disagree: 0.811 (+0.015/−0.012) (arXiv:2506.07432),
+  0.72 ± 0.03 (arXiv:2605.11083).
+- No DES Y6, Euclid or DESI DR2 × CMB-lensing cosmology was found (search of
+  2026-10-09). Detail: `cosmo-cmb-lss-cross-correlations`.
+
+## Inflation and primordial physics
+<!-- key: inflation-and-primordial-physics -->
+
+- n_s (ΛCDM): 0.9649 ± 0.0042 (Planck 2018, arXiv:1807.06211),
+  0.9679 ± 0.0033 (CMB-SPA, arXiv:2506.20707), **0.974 ± 0.003** (P-ACT-LB,
+  with DESI BAO; arXiv:2503.14452).
+- Live: 0.974 partly reflects the CMB–BAO tension (arXiv:2507.12459): with
+  Ω_K or w₀wₐ free, n_s is 0.967–0.972 (arXiv:2607.28445). Starobinsky sits
+  at the 2σ edge of P-ACT-LB + BK18 for N = 50–60, in ΛCDM
+  (arXiv:2503.14454).
+- r_0.05 < 0.036 at 95% (BK18, arXiv:2110.00483) remains the tightest.
+  Forecasts: SO σ(r) = 1.2 (1.4) × 10⁻³ with 70% (50%) delensing
+  (arXiv:2512.15833); LiteBIRD δr < 0.002 (arXiv:2607.25285).
+- f_NL: CMB local −0.9 ± 5.1 (Planck 2018, arXiv:1905.05697), −0.1 ± 5.0 in
+  PR4 (arXiv:2504.00884). Galaxy surveys measure f_NL·b_φ: DESI DR1 −3.6 ± 9
+  (quasar p = 1.6) or +3.5 (p = 1) (arXiv:2411.17623).
+- Ω_K: DESI DR2 + CMB gives +0.0023 ± 0.0011 (arXiv:2503.14738); the
+  Planck-alone closed value is the A_L feature (arXiv:1807.06209).
+  Birefringence: 0.277° ± 0.057° jointly, 4.8σ, no detection claimed
+  (arXiv:2608.06480). Detail: `cosmo-inflation-primordial`.
+
+## Reionisation and 21 cm
+<!-- key: reionisation-and-21-cm -->
+
+- τ from Planck low-ℓ polarisation: 0.051–0.063, σ ≈ 0.005–0.009
+  (arXiv:1807.06209, arXiv:1908.09856, arXiv:2103.14378). The value
+  0.090 ± 0.012 is CMB + DESI without low-ℓ EE, not a measurement
+  (arXiv:2504.16932); reionisation probes in place of low-ℓ EE give
+  τ = 0.067 ± 0.011 (arXiv:2607.26373).
+- Reionisation ends late: dark gaps persist to z ≃ 5.3 (arXiv:2109.06295);
+  x_HI = 0.19 ± 0.07 at z = 5.6 (arXiv:2405.12273). Its duration from the
+  kSZ: SPT-3G D1 Δz(25–75%) < 3.8 (arXiv:2601.20551).
+- No 21 cm power spectrum is detected at z > 6. Deepest limit: HERA Phase I
+  **Δ² ≤ 457 mK²** at 95% confidence (z = 7.9, k = 0.34 h/Mpc;
+  arXiv:2210.04912).
+- Live: EDGES (78 MHz, 0.5 K; arXiv:1810.05912) is unconfirmed; SARAS 3
+  rejects its profile at 95.3% (arXiv:2112.06778). HI intensity mapping has
+  auto-spectra (CHIME, 12.5σ at z ~ 1; arXiv:2511.19620) but no BAO.
+- JWST: ΛCDM models fit luminosity functions to z = 14 (arXiv:2604.18683).
+  Detail: `cosmo-reionization-21cm`.
 
 ## Peculiar velocities
 <!-- key: peculiar-velocities -->
 
-- DESI DR1 PV field-level: **fσ₈ = 0.483 (+0.080/−0.043) stat ± 0.018 sys**,
-  BGS + FP + TF, 415 523 redshifts, 76 616 PVs (arXiv:2512.03229); consistent
-  with the P(k) and ξ(r) analyses of the same data.
-- Method trend: field-level / likelihood-based inference is displacing
-  compressed two-point statistics.
-- **Bulk flow is contested.** Watkins et al. 2023 (arXiv:2302.02028) report
-  4.81σ excess at 200 h⁻¹Mpc from CF4; the result is estimator-dependent, see
-  *Evaluating bulk flow estimators for CF4* (arXiv:2306.11269). Do not cite the
-  excess as established.
+- DESI DR1 PV consensus: fσ₈(z = 0.07) = 0.4497 ± 0.0548, from three
+  estimators (0.391, 0.440, 0.483) (arXiv:2512.03228, arXiv:2512.03230).
+- CF4 bulk flow: 387 ± 28 km/s at 150 h⁻¹Mpc (arXiv:2302.02028); with mock
+  errors the probability is 0.11% (arXiv:2306.11269). Detail:
+  `cosmo-peculiar-velocities`.
 
 ## Lyman-α forest
 <!-- key: lyman-alpha-forest -->
@@ -103,13 +231,7 @@ without a source below were not verified and must not be quoted.
 - DESI DR2 Lyα BAO at **0.65%** (arXiv:2503.14739); AP from the full shape at
   **1%** at z_eff = 2.33, twice as tight as BAO from the same data, giving
   D_H/r_d = 8.600 ± 0.066 and D_M/r_d = 39.32 ± 0.33 (arXiv:2607.27410).
-- DESI DR1 P1D cosmology: Δ²★ = 0.379 ± 0.032, n★ = −2.309 ± 0.019 at
-  0.009 s/km, z = 3; no running, α_s = 0.0014 ± 0.0041 with CMB and BAO
-  (arXiv:2601.21432) *(2026-10-08)*. Detail: `cosmo-lyman-alpha`.
-- DR1 P1D measured with both FFT and optimal/quadratic estimators, with a
-  dedicated estimator-validation paper; cross-estimator agreement is now
-  standard practice.
-- ACCEL² supplies the large-volume hydrodynamical calibration.
+  P1D, IGM and forest limits on dark matter: `cosmo-lyman-alpha`.
 
 ## Isotropy
 <!-- key: isotropy -->

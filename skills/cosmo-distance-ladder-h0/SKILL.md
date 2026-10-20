@@ -5,7 +5,7 @@ description: Use when reviewing, planning or fact-checking Hubble-constant work 
 
 # Distance ladder and H0 — expert reference
 
-Snapshot 2026-10-13. Numbers carry provenance flags ([src] / [sec] / [der]);
+Snapshot 2026-10-20. Numbers carry provenance flags ([src] / [sec] / [der]);
 re-verify against the cited paper before a number enters a manuscript.
 
 ## File map
@@ -18,6 +18,7 @@ re-verify against the cited paper before a number enters a manuscript.
 | H0 by route, tension table, reanalyses, history | `references/results.md` |
 | Systematics; term-by-term budgets; referee checklist | `references/systematics.md` |
 | Controversies, forecasts, stale claims | `references/open-questions.md` |
+| Quasar, GRB, HII-galaxy Hubble diagrams; redshift drift; lens statistics | `references/alternative-distance-probes.md` |
 | Bibliography | `references/sources.tsv` |
 | TRGB tip measurement; CCHP, EDD, CATS choices | `deep/trgb.md` |
 | Maser disc fits; why 2026 analyses differ | `deep/megamasers.md` |
@@ -113,7 +114,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; open 6k; methods 10k; results 7k; surveys 4k; systematics 11k; deep/cepheid-sn-ladder 6k; deep/inverse-ladder 6k; deep/jagb-miras 8k; deep/megamasers 6k; deep/time-delay-cosmography 6k; deep/trgb 6k.
+Sizes, in thousands of tokens: L1 2k; alternative-distance-probes 8k; open 6k; methods 10k; results 7k; surveys 4k; systematics 11k; deep/cepheid-sn-ladder 6k; deep/inverse-ladder 6k; deep/jagb-miras 8k; deep/megamasers 6k; deep/time-delay-cosmography 6k; deep/trgb 6k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

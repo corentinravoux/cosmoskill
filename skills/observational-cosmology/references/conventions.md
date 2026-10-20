@@ -3,6 +3,8 @@
 The most common real defect in a multi-topic cosmology manuscript is silent
 convention drift between chapters. Check these explicitly.
 
+Snapshot: 2026-10-20 (estimator list widened to the large probe families).
+
 ## Units and h-factors
 <!-- key: units-and-h-factors -->
 
@@ -38,15 +40,32 @@ P(k) defined via ⟨δ(k)δ*(k')⟩ = (2π)³ δ_D(k−k') P(k) is the usual LSS
 ## Estimator definitions to pin down
 <!-- key: estimator-definitions-to-pin-down -->
 
-- **P1D**: FFT estimator vs optimal/quadratic estimator — different noise and
-  resolution corrections; state which, and whether the two are cross-validated.
-- **PV likelihood**: field-level (density+velocity joint covariance) vs
-  compressed two-point (P_gg, P_uu, P_gu). State the inversion method and any
-  regularisation.
+- **Shear two-point statistic**: ξ±, COSEBIs, band powers or pseudo-C_ℓ.
+  ξ± mixes E and B modes and all ℓ (Schneider et al. 2002,
+  arXiv:astro-ph/0206182); COSEBIs separate E and B exactly over a finite
+  [θ_min, θ_max] (Schneider et al. 2010, arXiv:1002.2136); pseudo-C_ℓ needs
+  noise-bias subtraction and the mode-coupling matrix of the mask (Hivon et
+  al. 2002, arXiv:astro-ph/0105302). State which, and the scale range: in a
+  B-mode validation, scale cuts did not translate between statistics
+  (arXiv:2604.03227).
+- **SN light-curve model and standardisation**: the model and its training
+  (SALT2, SALT3 and their retrainings, or BayeSN) and the calibration it was
+  trained on; current analyses use the Tripp estimator,
+  μ = m_B + α x1 − β c − M_0 − Δμ_bias − δ_host as written in DES-Dovekie
+  (arXiv:2511.07517). Calibration and model training are coupled; small
+  zero-point shifts are amplified up to sixfold in distance
+  (arXiv:2112.03864, arXiv:2506.05471).
+- **BAO reconstruction**: algorithm and convention. DESI uses the iterative
+  FFT algorithm (Burden et al. 2015, arXiv:1504.02591) in the RecSym
+  convention (randoms shifted with the same redshift-space displacement, RSD
+  kept), against RecIso in BOSS and eBOSS; state the smoothing scale and the
+  assumed (b, f) (arXiv:2404.03000).
 - **Correlation function vs power spectrum**: state the Hankel convention and
   multipole definition (Legendre normalisation).
 - **Covariance**: mocks vs analytic vs Gaussian approximation; number of mocks
   and any Hartlap-type correction.
+- Domain estimators (Lyα P1D, peculiar-velocity likelihoods, kSZ, cluster
+  counts and others): the `physics-and-methods.md` of the domain skill.
 
 ## Cosmology-dependence hygiene
 <!-- key: cosmology-dependence-hygiene -->

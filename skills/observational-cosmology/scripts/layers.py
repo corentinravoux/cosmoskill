@@ -44,6 +44,10 @@ Writing, in the personal layer unless --project is given:
 
 `source` takes title and first author from arXiv and writes nothing when
 arXiv cannot be reached: a bibliography row is never written from memory.
+`note`, `override` and `suppress` stamp the entry with the fingerprint of
+the section; after an update of the package, `sync_layers.py` reports the
+entries whose section changed, moved or was retired. `promote.py` moves an
+entry into the package's working tree for its owner to review.
 
 With no layer present, `layers.py <skill>` prints nothing and exits 0.
 The project layer is listed before the personal one. COSMOSKILL_BASE, a
@@ -73,6 +77,9 @@ SOURCES = "sources.tsv"
 DEEP = "deep"
 PRIVATE = "private"
 MODES = ("add", "override", "suppress")
+RETIRED = "retired-keys.tsv"
+RETIRED_COLUMNS = ["file", "key", "retired_on", "replaced_by", "reason"]
+STAMP = re.compile(r"^[0-9a-f]{12}$")
 MAX_PROFILE_LINES = 60
 KEY_LINE = re.compile(r"^<!-- key: ([a-z0-9][a-z0-9\-]*) -->$")
 NOTE_HEADING = re.compile(r"^## +(.+?)\s*$")
@@ -314,8 +321,15 @@ def sections(text: str) -> list[dict]:
 
 
 def fingerprint(section: dict) -> str:
-    """First 12 hex digits of the SHA-256 of a section's heading line and full text."""
-    return hashlib.sha256((section["line"] + "\n" + section["full"]).encode("utf-8")).hexdigest()[:12]
+    """First 12 hex digits of the SHA-256 of a section's heading line and full text.
+
+    The full text runs to the next heading of the same or a higher level. Key
+    lines (the section's own and those of its subsections) are left out, so
+    that giving a subsection its key does not change the fingerprint; line
+    ends are stripped and leading or trailing blank lines dropped.
+    """
+    text = "\n".join(line for line in section["full"].split("\n") if not KEY_LINE.match(line.strip()))
+    return hashlib.sha256((section["line"] + "\n" + text).encode("utf-8")).hexdigest()[:12]
 
 
 def base_file(skill: str, stem: str) -> Path | None:
@@ -377,6 +391,73 @@ def attached(note: dict, keys: dict[str, set[str]]) -> bool:
     if stem:
         return key in keys.get(stem, set())
     return any(key in found for found in keys.values())
+
+
+def retired_keys(skill: str) -> dict[tuple[str, str], dict]:
+    """Return {(file stem, key): row} of a base skill's `references/retired-keys.tsv`."""
+    path = SKILLS / skill / "references" / RETIRED
+    if not path.is_file():
+        return {}
+    lines = path.read_text(encoding="utf-8").splitlines()
+    if not lines or lines[0].split("\t") != RETIRED_COLUMNS:
+        raise SystemExit(f"{path}: header must be {', '.join(RETIRED_COLUMNS)}")
+    found = {}
+    for line in lines[1:]:
+        fields = (line.split("\t") + [""] * len(RETIRED_COLUMNS))[:len(RETIRED_COLUMNS)]
+        if fields[0] and fields[1]:
+            found[(fields[0], fields[1])] = dict(zip(RETIRED_COLUMNS, (field.strip() for field in fields)))
+    return found
+
+
+def entry_status(entry: dict, keyed: dict[str, dict], retired: dict[tuple[str, str], dict]) -> dict:
+    """Say where an entry stands against the base: ok, unstamped, changed, moved, retired, missing or malformed.
+
+    Returns {"status", "stem", "key", "detail"}, plus "target" (`<file>#<key>`)
+    for a moved entry, None when its replacement is not in the base.
+    `general` entries attach to no section and have status "general".
+    """
+    if entry["attach"].lower() == "general":
+        if entry["mode"] != "add":
+            return {"status": "malformed", "stem": None, "key": None,
+                    "detail": f"a {entry['mode']} entry needs a section, not 'general'"}
+        return {"status": "general", "stem": None, "key": None, "detail": ""}
+    if entry["mode"] not in MODES:
+        return {"status": "malformed", "stem": None, "key": None,
+                "detail": f"mode '{entry['mode']}' is not one of {', '.join(MODES)}"}
+    if entry["base"] and not STAMP.match(entry["base"]):
+        return {"status": "malformed", "stem": None, "key": None,
+                "detail": f"base '{entry['base']}' is not a 12-digit fingerprint"}
+    if not ATTACH.match(entry["attach"]):
+        return {"status": "malformed", "stem": None, "key": None,
+                "detail": f"heading '{entry['attach']}' is not <file>#<key> or 'general'"}
+    stem, key = locate(entry["attach"], keyed)
+    if stem is not None and key in keyed.get(stem, {}):
+        if not entry["base"]:
+            return {"status": "unstamped", "stem": stem, "key": key, "detail": "written before stamps"}
+        if entry["base"] == fingerprint(keyed[stem][key]):
+            return {"status": "ok", "stem": stem, "key": key, "detail": ""}
+        return {"status": "changed", "stem": stem, "key": key, "detail": "base section changed since the entry was written"}
+    row = retired.get((stem, key)) if stem else next((row for (_, name), row in retired.items() if name == key), None)
+    if row is None:
+        return {"status": "missing", "stem": stem, "key": key, "detail": "key absent and not listed as retired"}
+    when = f"retired {row['retired_on']}" + (f": {row['reason']}" if row["reason"] else "")
+    if not row["replaced_by"]:
+        return {"status": "retired", "stem": row["file"], "key": key, "detail": when + "; no replacement"}
+    target, seen = row["replaced_by"], set()
+    while True:
+        found = ATTACH.match(target)
+        if not found or not found.group(1) or target in seen:
+            return {"status": "moved", "stem": row["file"], "key": key, "target": None,
+                    "detail": f"{when}; replacement '{row['replaced_by']}' not found in the base"}
+        seen.add(target)
+        new_stem, new_key = found.groups()
+        if new_key in keyed.get(new_stem, {}):
+            return {"status": "moved", "stem": row["file"], "key": key, "target": target, "detail": when}
+        onward = retired.get((new_stem, new_key))
+        if onward is None or not onward["replaced_by"]:
+            return {"status": "moved", "stem": row["file"], "key": key, "target": None,
+                    "detail": f"{when}; replacement '{target}' is not in the base"}
+        target = onward["replaced_by"]
 
 
 def clean(name: str) -> str:
@@ -533,7 +614,7 @@ def resolve(skill: str, target: str, as_json: bool) -> int:
         raise SystemExit(f"{skill} has no file '{stem}'; files: {', '.join(sorted(keyed))}")
     if wanted and wanted not in keyed[stem]:
         raise SystemExit(f"{skill}/{stem} has no section key '{wanted}'")
-    entries, general = {}, []
+    entries, general, unread = {}, [], []
     for kind, layer in layers():
         for entry in read_notes(layer, skill):
             entry["layer"] = kind
@@ -541,8 +622,12 @@ def resolve(skill: str, target: str, as_json: bool) -> int:
                 general.append(entry)
                 continue
             where = locate(entry["attach"], keyed)
-            if where[0] == stem:
+            if where[0] != stem or (wanted and where[1] != wanted):
+                continue
+            if entry["mode"] in MODES and where[1] in keyed[stem]:
                 entries.setdefault(where[1], []).append(entry)
+            else:
+                unread.append(entry)
     chosen = [keyed[stem][wanted]] if wanted else list(keyed[stem].values())
     report = []
     for section in chosen:
@@ -553,11 +638,13 @@ def resolve(skill: str, target: str, as_json: bool) -> int:
             "suppressed" if any(entry["mode"] == "suppress" for entry in found) else "base")
         report.append({"file": stem, "key": section["key"], "heading": section["heading"], "base_text": text,
                        "effective": effective,
-                       "entries": [{name: entry[name] for name in ("layer", "mode", "text", "private")}
+                       "entries": [{name: entry[name] for name in ("layer", "mode", "text", "base", "private")}
                                    for entry in found]})
     if as_json:
         print(json.dumps({"skill": skill, "general": [{"layer": entry["layer"], "text": entry["text"]} for entry in general],
-                          "sections": report}, ensure_ascii=False, indent=2))
+                          "sections": report,
+                          "unattached": [{name: entry[name] for name in ("layer", "attach", "mode", "text")}
+                                         for entry in unread]}, ensure_ascii=False, indent=2))
         return 0
     print(f"=== {skill}/{stem} — base: {base_file(skill, stem)}")
     for entry in general:
@@ -568,21 +655,34 @@ def resolve(skill: str, target: str, as_json: bool) -> int:
         if not found:
             print(section["base_text"])
             continue
-        if section["effective"] == "suppressed":
+        effective = section["effective"]
+        if effective == "suppressed":
             for entry in found:
                 if entry["mode"] == "suppress":
                     print(f"[suppressed by the {entry['layer']} layer: {entry['text']}]")
-        else:
-            print("[base]" if section["effective"] != "base" else "[base — holds]")
+        elif effective == "base":
             print(section["base_text"])
+        else:
+            print(f"[base] {section['base_text']}")
+        shown = False
         for entry in found:
             if entry["mode"] == "override":
-                state = "effective for this researcher" if section["effective"] == f"{entry['layer']} override" else "shadowed by the project layer"
-                print(f"[{entry['layer']} override — {state}; quote the base value beside it, both labelled]")
-                print(entry["text"])
+                if effective == f"{entry['layer']} override" and not shown:
+                    shown = True
+                    print(f"[{entry['layer']} override — effective for this researcher] {entry['text']}")
+                else:
+                    print(f"[{entry['layer']} override — shadowed by the {effective}] {entry['text']}")
             elif entry["mode"] == "add":
-                print(f"[{entry['layer']} note]")
-                print(entry["text"])
+                print(f"[{entry['layer']} note] {entry['text']}")
+            elif effective != "suppressed":
+                print(f"[{entry['layer']} suppress — not applied: an override holds] {entry['text']}")
+    for entry in unread:
+        problem = "no such section in the base" if entry["mode"] in MODES else f"unknown mode '{entry['mode']}'"
+        print(f"\n[{entry['layer']} {entry['mode']} on {entry['attach']}: {problem}; not applied, run sync_layers.py] "
+              f"{entry['text']}")
+    if any(entry["mode"] == "override" for section in report for entry in section["entries"]):
+        print("\nWhere an override is effective, an answer quotes the base value beside it, both labelled, "
+              "and says which one it used.")
     return 0
 
 
@@ -652,7 +752,8 @@ def add_dossier(skill: str, name: str, project: bool) -> int:
 
 
 def holds_content(folder: Path) -> bool:
-    return (folder / NOTES).is_file() or (folder / SOURCES).is_file() or (folder / DEEP).is_dir()
+    return any((place / NOTES).is_file() or (place / SOURCES).is_file() or (place / DEEP).is_dir()
+               for place in (folder, folder / PRIVATE))
 
 
 def check(online: bool) -> int:
@@ -675,6 +776,9 @@ def check(online: bool) -> int:
                                     f"not one of {', '.join(MODES)}")
                 elif note["mode"] != "add" and note["attach"].lower() == "general":
                     problems.append(f"{note['path']}: a {note['mode']} entry needs a section, not 'general'")
+                if note["base"] and not STAMP.match(note["base"]):
+                    problems.append(f"{note['path']}: entry on '{note['attach']}' has base '{note['base']}', "
+                                    f"not a 12-digit fingerprint; repair it with sync_layers.py --stamp")
             known = set(base_ids(skill)) | {row["id"].lower() for row in rows}
             cited_arxiv, cited_doi = bibliography.cited_ids(folder)
             for ident, files in sorted(cited_arxiv.items()):

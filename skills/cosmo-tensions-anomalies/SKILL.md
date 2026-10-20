@@ -5,7 +5,7 @@ description: Use when reviewing, planning or fact-checking a claim of cosmologic
 
 # Cosmological tensions and anomalies — expert reference
 
-Snapshot 2026-10-16. Flags: [src] read in the paper; [sec] from the probe
+Snapshot 2026-10-20. Flags: [src] read in the paper; [sec] from the probe
 skill holding the source; [der] derived.
 
 ## File map
@@ -18,12 +18,13 @@ skill holding the source; [der] derived.
 | Shared inputs; next data | `references/surveys-and-data.md` |
 | Mundane explanations, metric pitfalls, checklist | `references/systematics.md` |
 | Live disputes, H0 models, stale claims | `references/open-questions.md` |
+| Homogeneity scale, inhomogeneous models, local void | `references/cosmological-principle.md` |
 | Dipole significance: cuts, estimator, mocks | `deep/cosmic-dipoles.md` |
 | CMB–DESI distance: metric, inputs, extensions | `deep/cmb-bao-mismatch.md` |
 | Anomaly p-values, look-elsewhere, polarisation tests | `deep/anomaly-significance.md` |
-| Asymmetry, Cold Spot, alignments: estimators, masks, models | `deep/large-angle-cmb-anomalies.md` |
-| JWST abundance test: halo bound, cosmic variance, masses; age problem | `deep/high-redshift-galaxies.md` |
-| Judging an H0 model on all data: M_B prior, metrics, thresholds, S8, BBN | `deep/theoretical-resolutions.md` |
+| Asymmetry, Cold Spot, alignments | `deep/large-angle-cmb-anomalies.md` |
+| JWST abundance test; age problem | `deep/high-redshift-galaxies.md` |
+| Judging an H0 model on all data (M_B prior, BBN) | `deep/theoretical-resolutions.md` |
 
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
@@ -45,12 +46,11 @@ skill holding the source; [der] derived.
 ## Systematics a referee checks
 <!-- key: systematics-a-referee-checks -->
 
-- Release, likelihood and CMB combination of each input.
+- Release, likelihood, CMB combination per input.
 - Independence: shared anchor, supernovae, τ prior, calibration, shear catalogue, mocks.
 - Projected parameter or full space; point estimate; S8 exponent.
 - Anomaly null models: clustering, mask, selection, statistics tried.
 - ΛCDM consistency before combining data in an extension.
-- Past movers: redshift, mass and supernova calibration; mock errors; mass-sheet degeneracy.
 
 ## Errors that recur
 <!-- key: errors-that-recur -->
@@ -62,13 +62,12 @@ skill holding the source; [der] derived.
 - Calling a Δχ² preference Bayesian evidence.
 - "The dipole violates the cosmological principle at 5σ" without the mock-based reassessment.
 - "Evolving dark energy helps H0": it lowers it.
-- Citing the CosmoVerse white paper (arXiv:2504.01669) for current values; it predates most 2025–2026 results.
+- Citing CosmoVerse (arXiv:2504.01669) for current values: it predates most 2025–2026 results.
 
 ## Related skills
 <!-- key: related-skills -->
 
-- `cosmo-distance-ladder-h0`, `cosmo-weak-lensing`, `cosmo-cmb`, `cosmo-dark-energy-modified-gravity`: the sourced numbers.
-- `cosmo-clusters`, `cosmo-cmb-lss-cross-correlations`, `cosmo-galaxy-clustering`, `cosmo-supernovae`, `cosmo-peculiar-velocities`: per-probe detail.
+- Sourced numbers, per-probe detail: `cosmo-distance-ladder-h0`, `cosmo-weak-lensing`, `cosmo-cmb`, `cosmo-dark-energy-modified-gravity`, `cosmo-clusters`, `cosmo-cmb-lss-cross-correlations`, `cosmo-galaxy-clustering`, `cosmo-supernovae`, `cosmo-peculiar-velocities`.
 - `cosmo-neutrinos-dark-matter`, `cosmo-inflation-primordial`, `cosmo-beyond-two-point`: neutrino mass; curvature, birefringence; parity.
 - `cosmo-statistics-inference`: theory of tension metrics.
 - `cosmo-reionization-21cm`, `cosmo-simulations-mocks`: τ astrophysics, JWST; constrained simulations.
@@ -86,7 +85,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 7k; methods 9k; results 17k; surveys 5k; systematics 10k; deep/anomaly-significance 7k; deep/cmb-bao-mismatch 8k; deep/cosmic-dipoles 8k; deep/high-redshift-galaxies 8k; deep/large-angle-cmb-anomalies 8k; deep/theoretical-resolutions 8k.
+Sizes, in thousands of tokens: L1 3k; cosmological-principle 5k; open 7k; methods 9k; results 17k; surveys 5k; systematics 10k; deep/anomaly-significance 7k; deep/cmb-bao-mismatch 8k; deep/cosmic-dipoles 8k; deep/high-redshift-galaxies 8k; deep/large-angle-cmb-anomalies 8k; deep/theoretical-resolutions 8k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

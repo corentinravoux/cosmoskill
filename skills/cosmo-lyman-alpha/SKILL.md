@@ -82,7 +82,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; open 7k; methods 14k; results 13k; surveys 7k; systematics 16k; deep/continuum-distortion 7k; deep/p1d-emulators 8k; deep/p1d-estimation 7k; deep/theory-sbi-field-level 9k; deep/tomography-voids 7k; deep/validation-mocks-blinding 7k.
+Sizes, in thousands of tokens: L1 2k; open 7k; methods 14k; results 13k; surveys 7k; systematics 16k; deep/continuum-distortion 7k; deep/p1d-emulators 8k; deep/p1d-estimation 7k; deep/theory-sbi-field-level 9k; deep/tomography-voids 10k; deep/validation-mocks-blinding 7k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

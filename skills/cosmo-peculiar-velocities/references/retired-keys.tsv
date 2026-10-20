@@ -1,0 +1,21 @@
+file	key	retired_on	replaced_by	reason
+pv-surveys	why-there-are-exactly-three-indicators	2026-10-20	surveys-and-data#distance-indicators-why-three-and-what-each	file folded into the standard five (plan A.4)
+pv-surveys	galaxy-scaling-relation-surveys-tf-fp	2026-10-20	surveys-and-data#past-surveys-numbers-as-their-own-papers-give	file folded into the standard five (plan A.4)
+pv-surveys	supernova-samples-used-for-peculiar-velocities	2026-10-20	surveys-and-data#supernova-samples-used-as-velocity-tracers	file folded into the standard five (plan A.4)
+pv-surveys	current-and-future	2026-10-20	surveys-and-data#next-4hs-desi-dr2-dr3-rubin-ksz	file folded; WALLABY figures in surveys-and-data#hi-tully-fisher-surveys
+pv-surveys	method-families	2026-10-20	physics-and-methods#method-families	file folded; forward-model check in physics-and-methods#velocity-density-comparison-and-forward-models
+pv-surveys	published-fsigma8-measurements-from-peculiar	2026-10-20	results#published-fsigma8-from-peculiar-velocities	file folded; merged with the compilation table
+pv-surveys	systematics-by-indicator	2026-10-20	systematics#systematics-by-indicator-the-qualitative-list	file folded into the standard five (plan A.4)
+pv-surveys	two-live-controversies	2026-10-20	open-questions#which-distance-indicator-can-be-trusted	file folded; bulk-flow half in open-questions#is-the-bulk-flow-at-150-250-h-1mpc-anomalous
+pv-surveys	writing-rules-for-pv-sections	2026-10-20		manuscript writing advice; set aside in docs/history/set-aside/2026-10-20/A4-pv-not-folded.md
+fsigma8-pv-compilation	provenance-code-read-this-before-quoting	2026-10-20	results#published-fsigma8-from-peculiar-velocities	file folded; codes stated in the receiving section
+fsigma8-pv-compilation	measurements-from-data	2026-10-20	results#published-fsigma8-from-peculiar-velocities	file folded; merged with the pv-surveys table
+fsigma8-pv-compilation	effective-redshift-genuinely-absent-verified-in	2026-10-20	results#effective-redshift-genuinely-absent	file folded; Stiskalek FP shifts in systematics#malmquist-bias-and-the-distance-prior
+fsigma8-pv-compilation	desi-dr1-peculiar-velocity-survey-2025	2026-10-20	results#desi-dr1-peculiar-velocity-survey-arxiv-2025-12	file folded into the standard five (plan A.4)
+fsigma8-pv-compilation	forecasts-and-simulation-validation-not	2026-10-20	results#forecasts-and-simulation-validation-not	file folded into the standard five (plan A.4)
+fsigma8-pv-compilation	excluded-bulk-flow-not-fsigma8	2026-10-20	results#forecasts-and-simulation-validation-not	file folded into the standard five (plan A.4)
+fsigma8-pv-compilation	discrepancies-found-when-going-to-source	2026-10-20	results#history-of-the-fsigma8-compilation-values	file folded into the standard five (plan A.4)
+fsigma8-pv-compilation	removed-as-out-of-scope	2026-10-20	results#history-of-the-fsigma8-compilation-values	file folded into the standard five (plan A.4)
+fsigma8-pv-compilation	linear-vs-non-linear-sigma8-verified-2026-08-13	2026-10-20	results#linear-against-non-linear-sigma8	file folded into the standard five (plan A.4)
+fsigma8-pv-compilation	what-the-compilation-shows	2026-10-20	results#published-fsigma8-from-peculiar-velocities	file folded; method split in open-questions#one-dataset-three-estimators-the-desi-dr1-spread
+fsigma8-pv-compilation	remaining-gaps	2026-10-20	open-questions#gaps-left-open-by-the-fsigma8-compilation	file folded; resolved items in results#published-fsigma8-from-peculiar-velocities

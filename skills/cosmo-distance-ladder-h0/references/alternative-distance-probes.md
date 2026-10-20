@@ -18,6 +18,7 @@ al. 2025, arXiv:2504.01669) Sects. 2.1.10, 2.1.14–2.1.16; review of the
 emerging probes, Moresco et al. 2022 (arXiv:2201.07241).
 
 ## 1. What these probes add, and the common caveat
+<!-- key: what-these-probes-add-and-the-common-caveat -->
 
 The SN Ia Hubble diagram stops near z ~ 2 and BAO give a handful of
 redshifts; the CMB sits at z ~ 1100. Quasars, GRBs and HII galaxies are
@@ -38,8 +39,10 @@ redshift. Two consequences follow for every result below:
   `[src]`.
 
 ## 2. Quasars: the X-ray–UV (Risaliti–Lusso) Hubble diagram
+<!-- key: quasars-the-x-ray-uv-risaliti-lusso-hubble -->
 
 ### 2.1 Method
+<!-- key: method-2 -->
 
 The method rests on the non-linear relation between the monochromatic
 luminosities at 2 keV and 2500 Å, log L_X = γ log L_UV + β, with γ < 1
@@ -62,6 +65,7 @@ CosmoVerse cites sub-samples with the best X-ray data suggesting an intrinsic
 scatter below 0.1 dex `[sec: arXiv:2504.01669, Sect. 2.1.15]`.
 
 ### 2.2 Samples
+<!-- key: samples -->
 
 | Sample | Size, redshift | Result as stated | Citation |
 |---|---|---|---|
@@ -73,6 +77,7 @@ scatter below 0.1 dex `[sec: arXiv:2504.01669, Sect. 2.1.15]`.
 | eROSITA × SDSS DR16Q (Prokhorenko et al. 2025) | 2414 quasars, 0.5 < z < 2.5 | γ = 0.69 ± 0.02; intrinsic scatter σ²_intX = 0.063 ± 0.005 dominates σ²_intUV = 0.002 (+0.003/−0.002) `[src]` | arXiv:2512.05807 |
 
 ### 2.3 The claimed deviation from ΛCDM at z > 1.5
+<!-- key: the-claimed-deviation-from-lambdacdm-at-z-1-5 -->
 
 **As the Risaliti–Lusso group states it.** The quasar distance modulus agrees
 with SNe and ΛCDM below z ~ 1.4–1.5 and departs from it above, at ~4 sigma
@@ -127,6 +132,7 @@ dex dispersion but stop at z ≈ 1.5–3 and do not yet constrain cosmology
 (arXiv:2508.00732) `[src]`.
 
 ### 2.4 What a referee checks
+<!-- key: what-a-referee-checks-3 -->
 
 - Whether γ, β and δ are fitted jointly with cosmology, and whether they
   change with the assumed model or across redshift bins.
@@ -139,8 +145,10 @@ dex dispersion but stop at z ≈ 1.5–3 and do not yet constrain cosmology
   cuts, and their redshift dependence.
 
 ## 3. Gamma-ray bursts
+<!-- key: gamma-ray-bursts -->
 
 ### 3.1 Correlations used
+<!-- key: correlations-used -->
 
 | Correlation | Quantities | Origin and stated scatter | Citation |
 |---|---|---|---|
@@ -156,6 +164,7 @@ coordinated by the author of the Dainotti relation; read it together with
 the independent tests below.
 
 ### 3.2 Calibration and the circularity problem
+<!-- key: calibration-and-the-circularity-problem -->
 
 Few GRBs lie at z < 0.1, so E_iso or L cannot be computed without a
 cosmology: fitting a correlation in an assumed model and then using it to
@@ -188,6 +197,7 @@ constrain models is circular. Three answers are in use.
   2021, arXiv:2105.12692) `[src]`.
 
 ### 3.3 Current constraints
+<!-- key: current-constraints -->
 
 - No GRB-only result constrains Ω_m or w at a level comparable to SNe Ia or
   BAO; published fits are consistent with flat ΛCDM (arXiv:2105.12692,
@@ -211,6 +221,7 @@ constrain models is circular. Three answers are in use.
   `[src]`.
 
 ### 3.4 What a referee checks
+<!-- key: what-a-referee-checks-2 -->
 
 - Which calibrator sets the distance scale (SNe, H(z), HII galaxies), and
   whether its covariance is propagated.
@@ -222,8 +233,10 @@ constrain models is circular. Three answers are in use.
   cosmographic expansion (see §2.3).
 
 ## 4. HII galaxies and giant HII regions
+<!-- key: hii-galaxies-and-giant-hii-regions -->
 
 ### 4.1 Method
+<!-- key: method -->
 
 HII galaxies are compact starbursts in dwarf galaxies, selected by
 EW(Hβ) > 50 Å (ages below ~5 Myr); giant extragalactic HII regions (GEHRs)
@@ -242,6 +255,7 @@ and beyond with JWST NIRSpec (Hβ and [OIII] to z ~ 9)
 `[sec: arXiv:2504.01669, Sect. 2.1.10]`.
 
 ### 4.2 Samples and results
+<!-- key: samples-and-results -->
 
 | Analysis | Sample | Result as stated | Citation |
 |---|---|---|---|
@@ -259,6 +273,7 @@ ladder, not its SNe; an error of 4.0 km/s/Mpc puts 67 and 73 only 1.5 sigma apar
 `[der: (73 − 67)/4.0, error of arXiv:2607.14254]`.
 
 ### 4.3 Systematics
+<!-- key: systematics -->
 
 - *Unexplained scatter.* The scatter of L–σ is significantly larger than
   the observational errors; age differences between bursts do not explain
@@ -277,6 +292,7 @@ ladder, not its SNe; an error of 4.0 km/s/Mpc puts 67 and 73 only 1.5 sigma apar
   populations assumed to share one relation.
 
 ### 4.4 What a referee checks
+<!-- key: what-a-referee-checks -->
 
 Slope fitted with or without the high-z points; anchor sample and its
 distance scale; whether the constraint is statistical only (most are
@@ -284,11 +300,127 @@ labelled "stat"); profile and extinction cuts; for z > 3, the [OIII]-to-Hβ
 transformation and magnification model.
 
 ## 5. Redshift drift (Sandage–Loeb test)
+<!-- key: redshift-drift-sandage-loeb-test -->
+
+**Method.** The redshift of a comoving source changes in real time as
+ż = (1 + z) H0 − H(z), or as an apparent acceleration
+dv/dt0 = c H0 [1 − E(z)/(1 + z)]; the derivation uses only the null geodesic
+and the definitions of z and H (Moresco et al. 2022, arXiv:2201.07241)
+`[src: Sect. 3.11.1, Eqs. 133–135]`. Proposed by Sandage (1962) for galaxies
+and by Loeb for the Lyα forest of quasars, where the shift is "a few m/s
+over a century" (Loeb 1998, arXiv:astro-ph/9802122) `[src]`. It needs no
+candle, ruler or ladder, and its sign is a direct test of acceleration.
+
+**Signal size.** The apparent acceleration peaks at about 0.4 cm s⁻¹ yr⁻¹ at
+z ≃ 0.76, ż peaks at ~2 × 10⁻¹¹ yr⁻¹ (~H0/3) near z ≃ 1.1, and ż = 0 near
+z ≈ 2.5 for Ω_m ≈ 0.27 in flat ΛCDM, so the Lyα forest at z > 2.5 sees
+deceleration `[src: arXiv:2201.07241, Sect. 3.11.1]`.
+
+**Current measurement.** The ESPRESSO experiment, three epochs over ~2 yr on
+one z = 3.962 quasar, finds v̇ = −3.5 ± 3.6 m s⁻¹ yr⁻¹, a null result
+consistent with ΛCDM; systematics are subdominant at that noise
+(Trost et al. 2026, arXiv:2603.02318) `[src]`. The error is about three orders
+of magnitude above the signal `[der: 3.6 m s⁻¹ yr⁻¹ against ~0.4 cm s⁻¹ yr⁻¹]`.
+
+**Forecasts.** A 42-m telescope would detect the drift in ~20 yr with
+4000 h on the Lyα forest at 2 < z < 5 (Liske et al. 2008,
+arXiv:0802.1532) **forecast** `[src]`; ESPRESSO + ANDES would reach a first
+detection before 2080, about 10 yr sooner with low-z HI 21-cm absorption from
+radio facilities (arXiv:2603.02318) **forecast** `[src]`. Radio forecasts:
+~800 HI absorbers from one year of the FAST CRAFTS survey (Jiao et al. 2019,
+arXiv:1905.01184) **forecast** `[src]`; SKA HI 21-cm emission and absorption
+near z ~ 1 (Kang et al. 2025, arXiv:2501.15117) **forecast** `[src]`. A
+combined optical + radio programme gives ±2% on H0 and Ω_m in flat ΛCDM but
+~40% with Ω_Λ free and 17% on H0, ±0.1 on w0, ±0.3 on w_a in flat w0waCDM
+`[src: arXiv:2201.07241, Sect. 3.11.5]` **forecast**.
+
+**Systematics and referee checks.** Wavelength calibration stable over decades
+(laser combs, local oscillators); peculiar accelerations of order
+1 cm s⁻¹ yr⁻¹ inside galaxies and clusters, with the Solar-System barycentre
+at ~0.7 cm s⁻¹ yr⁻¹, which add noise; Lyα-forest peculiar accelerations are
+much smaller than the signal except near the zero crossing, gas in galaxies
+(21-cm targets) up to 2 dex larger `[src: arXiv:2201.07241, Sect. 3.11.4]`.
+A referee asks for the baseline, the calibration chain, the model of
+peculiar accelerations, and whether a constraint is measured or forecast; no
+detection exists.
 
 ## 6. Galaxy-scale strong-lens statistics as a geometric probe
+<!-- key: galaxy-scale-strong-lens-statistics-as-a -->
 
-## 7. Cosmic chronometers (pointer)
+Time-delay H0: `physics-and-methods.md` §4, `deep/time-delay-cosmography.md`.
+Without delays, lenses give only distance ratios: Ω_m, Ω_Λ, w, never H0.
 
-## 8. Combinations of the high-redshift probes
+**Distance ratio from Einstein radius and velocity dispersion.** For a
+singular isothermal sphere θ_E = 4π (σ²/c²) D_ls/D_s (textbook), so a lens
+with a measured Einstein radius and stellar velocity dispersion gives
+D_ls/D_s. From 53 SLACS lenses, flat Ω_Λ = 0.75 ± 0.17 and γ_PPN = 1.01 ±
+0.05, but with the warning that the results are unlikely to become precise
+unless mass profile, velocity anisotropy, light profile and the dispersion
+measurement are constrained far better (Schwab et al. 2010,
+arXiv:0907.4992) `[src]`. A 118-lens catalogue (SLACS, BELLS, LSD, SL2S)
+fits w or CPL with a power-law slope γ(z) free to evolve
+(Cao et al. 2015, arXiv:1509.07649) `[src]`. Ignoring the redshift evolution
+of the mass-density slope biases Ω_m by up to ~10σ in LSST-size mocks;
+modelling it recovers the input, ΔΩ_m ≃ 0.01 and Δw ≃ 0.1 for ~10⁴ lenses
+(Geng et al. 2026, arXiv:2603.04279) **forecast** `[src]`.
+
+**Double-source-plane lenses.** The ratio of the two Einstein radii depends
+only on distance ratios, is independent of H0, and has an Ω_m–w degeneracy
+almost orthogonal to that of the CMB and BAO; a handful of systems would give
+~15% on w (Collett et al. 2012, arXiv:1203.2758) **forecast** `[src]`. Euclid
+Q1 found four candidates in 63 deg², consistent with a LensPop prediction of
+6 ± 3, and the full survey is predicted to find 1700
+(Euclid Collaboration: Li et al. 2025, arXiv:2503.15327) **forecast** `[src]`.
+
+**Lens counts.** The fraction of multiply imaged sources grows with the volume
+to the source, hence with Ω_Λ. CLASS radio lenses gave flat Ω_m = 0.31
+(+0.27/−0.14) (stat) (+0.12/−0.10) (sys) and w < −0.55 (+0.18/−0.11)
+(Chae et al. 2002, arXiv:astro-ph/0209602) `[src]`; replacing the
+luminosity function plus Faber–Jackson by the measured SDSS velocity-dispersion
+function removes a bias toward overconfident constraints, giving flat
+Ω_Λ = 0.74–0.78 (Mitchell et al. 2004, arXiv:astro-ph/0401138) `[src]`. The
+final SQLS sample, 19 lensed quasars from 50,836 sources, gives flat
+Ω_Λ = 0.79 (+0.06/−0.07) (stat) ± 0.06 (sys), assuming a non-evolving velocity
+function (Oguri et al. 2012, arXiv:1203.1088) `[src]`. These are
+confirmations of acceleration, not competitive measurements: the predicted
+counts depend on the evolution of the early-type lens population, so lens
+counts are judged unlikely to compete as a dark-energy probe (Weinberg et al.
+2013, arXiv:1201.2434) `[src: Sect. 7.10]`.
+
+**Next samples (forecasts).** Euclid Q1 (0.45% of the survey) yielded ~500
+high-quality candidates, supporting the forecast of over 100,000 lenses
+(Lines et al. 2025, arXiv:2508.14624) **forecast** `[src]`. For LSST, a
+photometric sample of 100,000 lenses with up to 50% false positives would give
+σ(Ω_m, Ω_Λ, w) = 0.1, 0.03, 0.15 in wCDM, equivalent to 2500–3500
+spectroscopic systems (Holloway et al. 2026, arXiv:2609.21699)
+**forecast** `[src]`. For CSST, 10,000 lenses with dispersions would give
+σ(Ω_m) = 0.01 in ΛCDM and σ(w) = 0.04 (Wu et al. 2025, arXiv:2511.08030)
+**forecast** `[src]`.
+
+**What a referee checks.** The mass model (SIS or power law; slope evolution
+with redshift); velocity anisotropy and aperture correction of σ; for counts,
+the selection function and the velocity-dispersion function and its
+evolution; for photometric samples, the purity model; that the claimed
+constraint is not H0 (distance ratios only).
+
+## 7. Cosmic chronometers and combinations (pointers)
+<!-- key: cosmic-chronometers-and-combinations-pointers -->
+
+Chronometers (H(z) from differential ages of passive galaxies) are covered
+in this skill: method in `physics-and-methods.md` §5, data in
+`surveys-and-data.md` §7, values in `results.md`, systematic budget in
+`systematics.md` §15. Joint fits of quasars, GRBs and HII galaxies are
+dominated by the BAO and H(z) data they are combined with (§3.3,
+arXiv:2009.12953) `[src]`; state a claimed departure from ΛCDM above z ~ 2
+per probe and per calibration. The SN-side reading is in `cosmo-supernovae`
+(`open-questions.md`).
 
 ## Not verified
+<!-- key: not-verified -->
+
+- Sandage (1962) is cited through arXiv:2201.07241 only; its DOI was not
+  read.
+- No double-source-plane cosmological measurement (as opposed to forecasts)
+  was read this session.
+- Radio redshift-drift forecasts for CHIME and the Cooke (2020) programme
+  are named in arXiv:2201.07241 but were not read.

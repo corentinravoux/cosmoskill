@@ -8,7 +8,9 @@ For one or more skill directories, verify that
   2. every ``arXiv:<id>`` or ``doi:<doi>`` cited in the skill's Markdown files
      has a row in sources.tsv, and every row is cited at least once.
 
-Standard library only. Exit status 0 when nothing is wrong, 1 otherwise.
+A skill without a `references/` directory is a workflow skill with no
+bibliography (`cosmoskill-refine`) and is skipped. Standard library only.
+Exit status 0 when nothing is wrong, 1 otherwise.
 
     python3 verify_sources.py <skill-dir> [<skill-dir> ...] [--offline]
 """
@@ -238,6 +240,9 @@ def main() -> int:
 
     total = 0
     for skill in args.skills:
+        if (skill / "SKILL.md").is_file() and not (skill / "references").is_dir():
+            print(f"{skill.name}: workflow skill, no bibliography; skipped")
+            continue
         problems = check_skill(skill.resolve(), args.offline)
         rows = skill / "references" / "sources.tsv"
         count = sum(1 for _ in rows.open(encoding="utf-8")) - 1 if rows.is_file() else 0

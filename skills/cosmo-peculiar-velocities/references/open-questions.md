@@ -273,6 +273,7 @@ Reading the table.
 | "Forward model means non-linear dynamics" | In Boubel 2024, Stiskalek 2025, Boruah 2020 and Stahl 2021 the indicator is forward-modelled, the field is linear | `physics-and-methods.md` §5 |
 
 ## 11. Gaps left open by the fσ8 compilation
+<!-- key: gaps-left-open-by-the-fsigma8-compilation -->
 
 Folded on 2026-10-20 from the compilation of 2026-08-12/14, in which `[src]` meant "traced to the
 paper" and `[der]` "relabelled or derived, the paper does not quote fσ8".

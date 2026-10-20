@@ -12,6 +12,7 @@ arXiv:2512.03226 to arXiv:2512.03232.
 ---
 
 ## 0. Systematics by indicator — the qualitative list
+<!-- key: systematics-by-indicator-the-qualitative-list -->
 
 Folded on 2026-10-20 from the compilation of 2026-08-12/14, in which `[src]` meant "traced to the
 paper" and `[der]` "relabelled or derived, the paper does not quote fσ8".

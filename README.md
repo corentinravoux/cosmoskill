@@ -24,7 +24,9 @@ cosmoskill/
 ├── skills/
 │   ├── observational-cosmology/   hub: which skill holds what, review rubric,
 │   │   ├── references/            conventions, cross-probe digest
-│   │   └── scripts/               fetch_paper.py, layers.py, verify_sources.py
+│   │   └── scripts/               fetch_paper.py, verify_sources.py; layers.py,
+│   │                              sync_layers.py, promote.py for local layers
+│   ├── cosmoskill-refine/         workflow skill: refine the package in a layer
 │   └── cosmo-<domain>/            28 domain skills, same shape each
 │       ├── SKILL.md               when to use, file map, core facts, checklists
 │       └── references/
@@ -37,7 +39,7 @@ cosmoskill/
 │           └── subtopics.tsv      subtopics and their source
 │       └── deep/                  level-3 dossiers, six per domain
 ├── docs/                          specification, roadmap, agent brief, history
-├── tools/                         upkeep: section keys, level blocks
+├── tools/                         upkeep: section keys, level blocks, release manifest
 ├── tests/
 └── .claude-plugin/                plugin and marketplace manifests
 ```
@@ -125,21 +127,30 @@ comment under its heading, and keeps it when the heading is reworded.
 The package is a base layer. You add to it without editing it, in a personal
 layer (`~/.cosmoskill/`) or a project layer (`.cosmoskill/` in a project): a
 profile saying which domains are yours and which conventions you use, notes
-attached to sections of the package by their key, your own papers, and your
-own dossiers on the subjects you know in depth. The skills read these layers
-and say when an answer draws on them. `docs/layers.md` explains the format.
+attached to sections of the package by their key, overrides and suppressions
+of a section for you alone, your own papers, and your own dossiers on the
+subjects you know in depth. The skills read these layers and say when an
+answer draws on them; an override is always quoted beside the package's
+value. `docs/layers.md` explains the format, `docs/layers-v1.md` specifies it.
 
 ```bash
-L=skills/observational-cosmology/scripts/layers.py
-python3 $L init
-python3 $L note cosmo-weak-lensing results#the-cmb-reference-values "quote S8 differences against both CMB references"
-python3 $L source cosmo-supernovae <arXiv id> --role method      # row taken from arXiv
-python3 $L dossier cosmo-clusters richness-mass-calibration      # template to fill
-python3 $L check                                                # after updating the package
+S=skills/observational-cosmology/scripts
+python3 $S/layers.py init
+python3 $S/layers.py note cosmo-weak-lensing results#the-cmb-reference-values "quote S8 differences against both CMB references"
+python3 $S/layers.py override cosmo-cmb results#optical-depth-tau "our baseline is the low-ell reanalysis value"
+python3 $S/layers.py source cosmo-supernovae <arXiv id> --role method   # row taken from arXiv
+python3 $S/layers.py dossier cosmo-clusters richness-mass-calibration   # template to fill
+python3 $S/layers.py resolve cosmo-cmb results#optical-depth-tau        # base and entries, labelled
+python3 $S/sync_layers.py                                               # after updating the package
 ```
 
-In a conversation the assistant runs these for you: "note, for my cluster work,
-that ...", "add this paper to my layer".
+`sync_layers.py` reports every entry whose section changed, moved or was
+retired since the entry was written, and exits 3 when that entry is an
+override. In a conversation the `cosmoskill-refine` skill runs these for
+you: "note, for my cluster work, that ...", "add this paper to my layer",
+"for me, use this value instead". The package's owner moves an entry into
+the package with `promote.py`, which prepares the change in the working
+tree and never commits.
 
 ## What to trust, and how far
 
@@ -181,8 +192,10 @@ Limits of this version in particular:
 - Numbers were compared with their papers by sample at each gate
   (`docs/history/tests/gate-log.md`), not exhaustively. A few sampled
   statements could not be located at source and are logged as unconfirmed.
-- A local layer adds notes, papers and dossiers. It cannot replace a value
-  of the package, and nothing in it is promoted to the package.
+- A local layer adds notes, papers and dossiers, and may override or hide a
+  section for its researcher only. It does not change the package: an
+  override is quoted beside the package's value, and nothing reaches the
+  package unless its owner promotes and commits it.
 - Out of scope: searches for dark-matter particles by direct or indirect
   detection and at colliders, and high-energy particle astrophysics (cosmic
   rays, neutrino telescopes). Dark matter is treated through its
@@ -250,6 +263,11 @@ python3 skills/observational-cosmology/scripts/verify_sources.py skills/cosmo-<d
 python3 tools/check_keys.py --against <last release tag or commit>
 python3 -m unittest discover -s tests
 ```
+
+At a release, `python3 tools/make_release_manifest.py --from <last release>
+--version <new>` writes `releases/<new>.tsv`: the section keys added,
+changed, moved or retired, which tells a researcher what `sync_layers.py`
+will report on their layer.
 
 ## Licence
 

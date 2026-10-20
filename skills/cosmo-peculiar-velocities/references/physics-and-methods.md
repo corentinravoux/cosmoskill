@@ -9,6 +9,7 @@ Equations are transcribed from the LaTeX source of the cited paper, read this se
 paper's notation: symbols differ between sections.
 
 ## 0. Method families
+<!-- key: method-families -->
 
 Folded on 2026-10-20 from the compilation of 2026-08-12/14, in which `[src]` meant "traced to the
 paper" and `[der]` "relabelled or derived, the paper does not quote fσ8".

@@ -1,0 +1,3 @@
+file	key	retired_on	replaced_by	reason
+results	cluster-mass-old	2026-10-20	results#cluster-mass-calibration	key renamed (fixture)
+results	sn-host-step	2026-10-20		section removed (fixture)

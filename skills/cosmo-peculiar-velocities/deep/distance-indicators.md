@@ -11,8 +11,8 @@ From: Turner 2024 review (arXiv:2411.19484), Sect. 3; Tsagas et al. 2025 review
 arXiv:2512.03227); WALLABY pilot TF papers; 4HS FP programme.
 
 Already in L2, not repeated here: why there are three indicators and their scatter in
-`pv-surveys.md#why-there-are-exactly-three-indicators`; the per-indicator systematic list in
-`pv-surveys.md#systematics-by-indicator`; the DESI DR1 FP priors, outlier count, aperture and
+`surveys-and-data.md#distance-indicators-why-three-and-what-each`; the per-indicator systematic list in
+`systematics.md#systematics-by-indicator-the-qualitative-list`; the DESI DR1 FP priors, outlier count, aperture and
 evolution parameters, CF4 comparison, TF slope and scatter, and the zero-point in
 `systematics.md#desi-dr1-catalogues-and-zero-point-arxiv-2512`; the SDSS PV FP fit, f_n,
 mock validation, richness trend and zero-point in

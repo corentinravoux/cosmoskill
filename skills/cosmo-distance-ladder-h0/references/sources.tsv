@@ -143,3 +143,56 @@ Lee2024	2408.03474	Lee	2024	The Chicago-Carnegie Hubble Program: The JWST J-regi
 Favale2025	2511.19332	Favale	2025	Revisiting model-independent constraints on spatial curvature and cosmic ladders calibration: updated and forecast analyses	method
 Mortsell2021	2105.11461	Mortsell	2021	Sensitivity of the Hubble Constant Determination to Cepheid Calibration	critique
 Hogas2024	2412.07840	Högås	2024	Reassessing the Cepheid-based distance ladder: implications for the Hubble constant	critique
+Khadka2022RL	2212.10483	Khadka	2022	Quasar UV/X-ray relation luminosity distances are shorter than reverberation-measured radius-luminosity relation luminosity distances	critique
+Dainotti2022FP	2209.08675	Dainotti	2022	The Gamma-ray Bursts fundamental plane correlation as a cosmological tool	method
+OColgain2022	2203.10558	Ó Colgáin	2022	Revealing Intrinsic Flat $Λ$CDM Biases with Standardizable Candles	critique
+Khadka2020QSO	2012.09291	Khadka	2020	Determining the range of validity of quasar X-ray and UV flux measurements for constraining cosmological model parameters	critique
+Khadka2021GRB	2105.12692	Khadka	2021	Do gamma-ray burst measurements provide a useful test of cosmological models?	critique
+Okazaki2025	2510.22979	Okazaki	2025	A test of Amati relation using HII galaxy distances	critique
+Dainotti2026GRB	2603.18223	Dainotti	2026	Gamma-Ray Bursts as an Independent High-Redshift Probe of Dark Energy	forecast
+Lusso2020	2008.08586	Lusso	2020	Quasars as standard candles III. Validation of a new sample for cosmological studies	data
+Risaliti2019	1811.02590	Risaliti	2018	Cosmological constraints from the Hubble diagram of quasars at high redshifts	results
+GonzalezMoran2019	1906.02195	González-Morán	2019	Independent Cosmological Constraints from high-z HII Galaxies	results
+Zajacek2023	2305.08179	Zajaček	2023	Effect of extinction on quasar luminosity distances determined from UV and X-ray flux measurements	systematics
+Yonetoku2004	astro-ph/0309217	Yonetoku	2003	GRB Formation Rates inferred from the Spectral Peak Energy - Luminosity Relation	foundation
+Huang2025GRB	2506.08929	Huang	2025	Gamma-Ray Bursts Calibrated by Using Artificial Neural Networks from the Pantheon+ Sample	results
+Prokhorenko2025	2512.05807	Prokhorenko	2025	SRG/eROSITA-SDSS view on the relation between X-ray and UV emission for quasars	data
+Khadka2021QSO	2107.07600	Khadka	2021	Do quasar X-ray and UV flux measurements provide a useful test of cosmological models?	critique
+Risaliti2015	1505.07118	Risaliti	2015	A Hubble Diagram for Quasars	foundation
+Dainotti2008	0809.1389	Dainotti	2008	A time - luminosity correlation for Gamma Ray Bursts in the X - rays	foundation
+Signorini2024	2401.07909	Signorini	2024	Building the high-redshift Hubble Diagram with quasars	review
+Ghirlanda2006	astro-ph/0610248	Ghirlanda	2006	Gamma Ray Bursts as standard candles to constrain the cosmological parameters	review
+Liang2008	0802.4262	Liang	2008	A Cosmology-Independent Calibration of Gamma-Ray Burst Luminosity Relations and the Hubble Diagram	method
+Melnick2024	2407.18704	Melnick	2024	HII galaxies as standard candles: evolutionary corrections	systematics
+Chavez2026	2607.14254	Chávez	2026	Charting the expansion of the Universe from z$\sim$0 to z$\sim$14 with HII galaxies	results
+Khadka2019QSO	1909.01400	Khadka	2019	Quasar X-ray and UV flux, baryon acoustic oscillation, and Hubble parameter measurement constraints on cosmological model parameters	results
+Yang2020QSO	1911.01681	Yang	2019	Cosmography and flat $Λ$CDM tensions at high redshift	critique
+Lusso2019	1907.07692	Lusso	2019	Tension with the flat ΛCDM model from a high redshift Hubble Diagram of supernovae, quasars and gamma-ray bursts	results
+Cao2020	2009.12953	Cao	2020	Cosmological constraints from higher-redshift gamma-ray burst, HII starburst galaxy, and quasar (and other) data	results
+Amati2002	astro-ph/0205230	Amati	2002	Intrinsic spectra and energetics of BeppoSAX Gamma-Ray Bursts with known redshifts	foundation
+Hasan2026	2603.08884	Hasan	2026	Do the Amati and Yonetoku Relations Evolve with Redshift for Swift GRBs?	systematics
+Graziani2010	1002.3434	Graziani	2010	GRBs as standard candles: There is no "circularity problem" (and there never was)	method
+FernandezArenas2018	1710.05951	Fernández-Arenas	2017	An independent determination of the local Hubble constant	results
+Chavez2014	1405.4010	Chávez	2014	The $L - σ$ relation for massive bursts of star formation	foundation
+Chavez2016	1607.06458	Chávez	2016	Constraining the Dark Energy Equation of State with HII Galaxies	forecast
+Sacchi2025	2508.00732	Sacchi	2025	The X-ray$-$UV Luminosity Relation of eROSITA Quasars	data
+Benetti2025	2506.21477	Benetti	2025	Quasar cosmology II: joint analyses with Cosmic Microwave Background	results
+Chavez2024	2404.16261	Chávez	2024	Mapping the Hubble Flow from z$ \sim $0 to z$ \sim$7.5 with HII Galaxies	results
+Gao2026	2606.27173	Gao	2026	Redshift-Dependent Intrinsic Dispersion in the Quasar UV/X-ray Luminosity Relation	systematics
+Loeb1998	astro-ph/9802122	Loeb	1998	Direct Measurement of Cosmological Parameters from the Cosmic Deceleration of Extragalactic Objects	foundation
+Liske2008	0802.1532	Liske	2008	Cosmic dynamics in the era of Extremely Large Telescopes	forecast
+Trost2026	2603.02318	Trost	2026	The ESPRESSO Redshift Drift Experiment III -- The Third Epoch of QSO J052915.80-435152.0	results
+Jiao2019	1905.01184	Jiao	2019	Toward a direct measurement of the cosmic acceleration: roadmap and forecast on FAST	forecast
+Kang2025	2501.15117	Kang	2025	Redshift drift effect through the observation of HI 21cm signal with SKA	forecast
+Schwab2010	0907.4992	Schwab	2009	Galaxy-Scale Strong Lensing Tests of Gravity and Geometric Cosmology: Constraints and Systematic Limitations	critique
+Cao2015SL	1509.07649	Cao	2015	Cosmology with Strong Lensing Systems	results
+Geng2026	2603.04279	Geng	2026	Hierarchical cosmological constraints through strong lensing distance ratio	forecast
+Collett2012	1203.2758	Collett	2012	Constraining the dark energy equation of state with double source plane strong lenses	method
+EuclidQ1DSPL	2503.15327	Euclid Collaboration	2025	Euclid Quick Data Release (Q1). The Strong Lensing Discovery Engine D -- Double-source-plane lens candidates	data
+Chae2002	astro-ph/0209602	Chae	2002	Constraints on Cosmological Parameters from the Analysis of the Cosmic Lens All Sky Survey Radio-Selected Gravitational Lens Statistics	foundation
+Mitchell2004	astro-ph/0401138	Mitchell	2004	Improved Cosmological Constraints from Gravitational Lens Statistics	results
+Oguri2012	1203.1088	Oguri	2012	The Sloan Digital Sky Survey Quasar Lens Search. VI. Constraints on Dark Energy and the Evolution of Massive Galaxies	results
+Lines2025	2508.14624	Lines	2025	The revolution in strong lensing discoveries from Euclid	forecast
+Holloway2026	2609.21699	Holloway	2026	Lens Modeling and Cosmological Inference from an Impure Sample of Galaxy-Galaxy Strong Lenses	forecast
+Wu2025CSST	2511.08030	Wu	2025	CSST Strong Lensing Preparation: Cosmological Constraints Forecast from CSST Galaxy-Scale Strong Lensing	forecast
+Weinberg2013	1201.2434	Weinberg	2012	Observational Probes of Cosmic Acceleration	review

@@ -38,7 +38,7 @@ General CMB instrument descriptions (Planck, ACT, SPT-3G, their likelihoods and 
 | LiteBIRD after the mission reformation that followed the 2024 Mission Definition Review | one cross-Dragone telescope of 500 mm aperture, 12 bands with centres from 40 to 402 GHz (optical coverage 34–448 GHz), cooled to about 5 K, detectors at 0.1 K, L2 Lissajous orbit, nominal three-year survey | total δr < 0.002 (68%), including foreground residuals, statistics, systematics and margin | LiteBIRD Collaboration 2026, arXiv:2607.25285 | [src] |
 | CMB-S4 | — | no longer supported: DOE and NSF withdrew support on 9 July 2025 | reported in the `cosmo-cmb` skill | [sec] |
 
-The LiteBIRD requirement was relaxed with the reformation: the pre-reformation literature quotes δr < 0.001, the 2026 overview δr < 0.002. Only the second number was read at source this session (arXiv:2607.25285); the first is listed under "Not verified". The launch date after reformation is given as JFY2036 in the `cosmo-cmb` skill [sec]; it is not in the abstract read here.
+The LiteBIRD requirement on the total error was relaxed with the reformation: before it, δr < 0.001 for r = 0, δr being the total error (statistical, systematic, foreground, lensing and observer-bias terms) (arXiv:2202.02773) [src: Sects. 3.1–3.2]; after it, δr < 0.002 (68%, r = 0) for the total uncertainty including contingencies and margins, with a statistical target σ_r < 0.001 that includes foreground residuals and lensing (arXiv:2607.25285) [src: Sect. 2.1]. A "δr < 0.001" in a post-reformation paper is therefore the statistical target, not the total. The launch date after reformation is given as JFY2036 in the `cosmo-cmb` skill [sec]; it is not in the abstract read here.
 
 
 ## 2. CMB temperature and E-mode data (n_s, running, binned P(k), isocurvature, curvature, features)
@@ -173,7 +173,6 @@ According to the `cosmo-galaxy-clustering` skill, Euclid DR1 clustering products
 ## 8. Not verified
 <!-- key: not-verified -->
 
-- LiteBIRD's pre-reformation requirement, usually quoted as δr < 0.001: not in the abstract of arXiv:2202.02773 and not read in its body.
 - LiteBIRD launch date after reformation: taken from the `cosmo-cmb` skill, not from arXiv:2607.25285.
 - Simons Observatory: no first-light date, data release or measured r was read; only forecasts and the expansion plan.
 - BICEP Array receiver status in 2026: from titles of instrument papers only, not cited.

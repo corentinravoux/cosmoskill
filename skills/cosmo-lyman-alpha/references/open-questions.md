@@ -56,7 +56,7 @@ Published lower limits on a pure FDM mass span a factor of ~100: 2 × 10⁻²¹ 
 fσ8 cannot at present be measured from the 3D forest: the DESI DR1 value 0.37 (+0.055/−0.065) ± 0.033 was withheld from inference (arXiv:2509.15308) and DR2 mocks show a significant bias (arXiv:2607.27411) [src]. Routes being explored:
 - field-level and EFT models that predict the full set of line-of-sight bias operators (arXiv:2309.10133, arXiv:2507.00284, arXiv:2606.26234) [src];
 - simulation priors on b_η from P1D through ForestFlow, which constrain b_η f σ8 (arXiv:2607.27413) [src];
-- the void–forest cross-correlation, where the quadrupole gave β = 1.21 ± 0.18 at z = 2.49 (arXiv:2203.11045) [src]; converting β to a growth rate needs the same b_η knowledge;
+- the void–forest cross-correlation, whose quadrupole measures β (arXiv:2203.11045; value in `cosmo-beyond-two-point`, `results.md`) [src]; converting β to a growth rate needs the same b_η knowledge;
 - cross-correlation with CMB lensing: the squeezed bispectrum between CMB lensing and P1D is detected at 4.8σ (arXiv:2405.14988), while direct lensing of the forest is not yet detected in DR1, A_L = 0.62 ± 0.33 (arXiv:2609.36949) [src].
 
 ## 5. BAO systematics at sub-percent precision

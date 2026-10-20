@@ -2,7 +2,7 @@
 
 Scope: the canonical systematics of spectroscopic clustering analyses (BAO,
 full shape, scale-dependent bias): mechanism, measured size, mitigation,
-validation test, and the paper a referee expects. Snapshot: 2026-10-14.
+validation test, and the paper a referee expects. Snapshot: 2026-10-20.
 
 Flags: `[src]` read this session in the cited paper; `[sec]` from a named
 secondary source; `[der]` derived here. "σ_DR1" is the DESI DR1 statistical
@@ -324,7 +324,8 @@ from optimal weights points to remaining unknown systematics in the data
 
 **Reference for the SDSS era.** Ross et al. 2017, arXiv:1607.03145:
 simulated systematic trends impart no bias on BAO and have a minor effect on
-its uncertainty [src].
+its uncertainty [src]. BOSS and eBOSS weights, budgets and the Euclid plan,
+side by side: `boss-eboss-euclid.md`, Sects. 1–7.
 
 ## 6. Spectroscopic systematics
 <!-- key: spectroscopic-systematics -->

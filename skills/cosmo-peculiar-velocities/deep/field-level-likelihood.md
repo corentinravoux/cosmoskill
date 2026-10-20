@@ -8,6 +8,10 @@ Snapshot: 2026-10-17.
 From: Turner 2024 review (arXiv:2411.19484), Sect. 5.4; DESI DR1 PV maximum-likelihood-fields
 paper (arXiv:2512.03229).
 
+Field-level inference as a general method (samplers, forward models, gains
+over compressed statistics) is in `cosmo-beyond-two-point/deep/field-level-inference.md`;
+this dossier covers the Gaussian velocity-field likelihood only.
+
 Already in L2, not repeated here: the principle, the flip decomposition and the closed-form
 C_vv, the table of covariance models (AB17, AB20, C23, L22, RC25) and the zero-point
 marginalisation (eq. 32 of arXiv:2512.03229) in

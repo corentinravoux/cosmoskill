@@ -6,8 +6,9 @@ quadratic (QMLE) routes differ at each step and why each analysis chose as it
 did, how corrections are derived and validated on synthetic data, and what a
 user of the published DESI DR1 measurements must do.
 Snapshot: 2026-10-16.
-From: Chaves-Montero et al. 2026 review (arXiv:2605.22489), Sect. 0.4; DESI
-P1D working group (arXiv:2505.09493, arXiv:2505.07974).
+From: McQuinn 2016 review (arXiv:1512.00086), Sect. 2.1.2; Weinberg et al.
+2003 review (arXiv:astro-ph/0301186), Sect. 2; DESI P1D working group
+(arXiv:2505.09493, arXiv:2505.07974).
 
 Already in L2, not repeated here: the estimator table and the DR1 estimator
 equations, sub-forest length, fiducial power form, bootstrap covariance

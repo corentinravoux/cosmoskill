@@ -7,8 +7,8 @@ in it and calibrated, and how the Wiener filter compares with the constrained
 (ORCA) and forward-model (TARDIS) reconstructions; the void–forest RSD fit
 itself is left to the sibling dossier.
 Snapshot: 2026-10-19.
-From: Tomography survey groups (CLAMATO, arXiv:1710.02894; Stripe 82 eBOSS
-map, arXiv:2004.01448).
+From: Tomography survey groups (CLAMATO, arXiv:1710.02894; LATIS,
+arXiv:2002.10676; Stripe 82 eBOSS map, arXiv:2004.01448).
 
 Already in L2, not repeated here: the survey list with areas, sightline
 densities and map resolutions (`surveys-and-data.md#tomography-surveys`); the

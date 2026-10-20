@@ -397,8 +397,3 @@ by its ℓ_knee (L2, `systematics.md#b6-low-frequency-noise-and-filtering`).
   (leakage subtraction) and Dutcher et al. (SPT null-test criteria): cited
   inside the papers read, not read.
 - The BICEP/Keck polarisation-angle and absolute-calibration procedure.
-- Galloni et al. state LiteBIRD's goal as a statistical δr < 0.001
-  "including foreground residuals and lensing" (Sect. 8), while L2 quotes
-  the 2026 overview's total δr < 0.002 including systematics and margin
-  (arXiv:2607.25285); the two may refer to different budget lines, which
-  was not checked in the overview's body.

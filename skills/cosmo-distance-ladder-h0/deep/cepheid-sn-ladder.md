@@ -60,7 +60,7 @@ arXiv:2112.04510, Sect. 3.2].
 - Sky annulus 0.24"–0.8" (was 0.96"–1.44"), with a 0.008 mag PSF-wing
   offset measured on bright stars and corrected [src: arXiv:2112.04510,
   Sect. 3.4, item 1].
-- 100 artificial stars per Cepheid within 2.4", at the magnitude predicted
+- 100 artificial stars per Cepheid, placed in an annulus of outer radius 2.4", at the magnitude predicted
   by the period and a trial PL; the recovered offset refines the
   background; the PL is refitted and the cycle repeated to convergence.
   Earlier iterations had "not fully converged" [src: arXiv:2112.04510,

@@ -29,7 +29,7 @@ python3 skills/observational-cosmology/scripts/layers.py init --project  # in th
 **`profile.md`** is free text, shown to the assistant as context. Two
 optional lines are read specifically:
 
-- `home-domains: cosmo-lyman-alpha, cosmo-peculiar-velocities` names the
+- `home-domains: cosmo-weak-lensing, cosmo-cmb-lss-cross-correlations` names the
   skills of your own field. There the assistant may skip the orientation it
   would give an outsider. The rule "answer at the lowest level that answers"
   still holds.
@@ -40,15 +40,15 @@ optional lines are read specifically:
 section of the package the note attaches to:
 
 ```markdown
-## results#cosmology-from-p1d
-The compressed parameters are quoted with the mean-flux prior named.
+## results#the-cmb-reference-values
+Quote every S8 difference against both CMB references named here.
 
 ## general
-Skip the introduction to the estimators.
+Skip the introduction to shear estimators.
 ```
 
 `results` is the file (`references/results.md`; `skill` stands for
-`SKILL.md`), and `cosmology-from-p1d` is the key: the comment
+`SKILL.md`), and `the-cmb-reference-values` is the key: the comment
 `<!-- key: ... -->` under that section's heading in the package. A key does
 not change when the heading is reworded, so a note stays attached across
 updates of the package. `## general` attaches to the skill as a whole.
@@ -59,7 +59,7 @@ package's bibliography (`key, id, first_author, year, title, role`). A row is
 added from arXiv, never typed from memory:
 
 ```bash
-python3 skills/observational-cosmology/scripts/layers.py source cosmo-lyman-alpha <arXiv id> --role method
+python3 skills/observational-cosmology/scripts/layers.py source cosmo-supernovae <arXiv id> --role method
 ```
 
 The script takes the title and the first author from arXiv, derives a key,
@@ -73,7 +73,7 @@ than the package holds, written once so that the assistant does not have to
 be told again. Start one from the template:
 
 ```bash
-python3 skills/observational-cosmology/scripts/layers.py dossier cosmo-lyman-alpha qmle-window
+python3 skills/observational-cosmology/scripts/layers.py dossier cosmo-clusters richness-mass-calibration
 ```
 
 The template has a scope line, then sections for the method, the choices and
@@ -88,7 +88,7 @@ commands below, which refuse what cannot be attached or sourced.
 
 | Request | What the assistant does |
 |---|---|
-| "note for my Lyα work that ..." | finds the section the remark is about and runs `layers.py note <skill> <file>#<key> <text>`; `general` when it concerns the whole skill |
+| "note, for my cluster work, that ..." | finds the section the remark is about and runs `layers.py note <skill> <file>#<key> <text>`; `general` when it concerns the whole skill |
 | "add this paper to my layer" | runs `layers.py source <skill> <arXiv id> --role <role>` |
 | "write up what we just worked out as a dossier" | runs `layers.py dossier <skill> <name>`, then fills the file from the papers read in the conversation, with a place for each number, and lists the rest under "Not verified" |
 | "for this project only" | the same with `--project`, which writes to `.cosmoskill/` in the project |
@@ -104,12 +104,12 @@ the profile settings, the profile text, the notes, the papers and the
 dossiers for that skill, project layer first, then personal. A dossier is
 listed with its title and scope and read only when the question is about its
 subject. An answer that draws on a layer says so, and its last line names
-the layer: `[cosmoskill L3 · personal · cosmo-lyman-alpha/deep/qmle-window]`
+the layer: `[cosmoskill L3 · personal · cosmo-clusters/deep/richness-mass-calibration]`
 for a dossier.
 
 ```bash
-python3 skills/observational-cosmology/scripts/layers.py cosmo-lyman-alpha
-python3 skills/observational-cosmology/scripts/layers.py cosmo-lyman-alpha --json
+python3 skills/observational-cosmology/scripts/layers.py cosmo-weak-lensing
+python3 skills/observational-cosmology/scripts/layers.py cosmo-weak-lensing --json
 python3 skills/observational-cosmology/scripts/layers.py check
 python3 skills/observational-cosmology/scripts/layers.py check --online
 ```

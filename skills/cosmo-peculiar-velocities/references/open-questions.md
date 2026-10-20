@@ -4,15 +4,19 @@ Scope: live controversies with both sides cited, internal tensions between analy
 data, method debates, forecasts (labelled), what the next data decide, and the stale claims that
 still circulate. Snapshot: 2026-10-14
 
-Two controversies are already summarised in
-`pv-surveys.md`
-§8 (FP against TF and SNe; the contested bulk flow). This file brings them to October 2026 and adds
-the others. Flags as in `results.md`.
+The two controversies of the 2026-08 compilation (FP against TF and SNe; the contested bulk flow)
+are merged into §1 and §3; its reading of the fσ8 table and its open gaps are in §4 and §11. Flags
+as in `results.md`.
 
 ---
 
 ## 1. Is the bulk flow at 150–250 h⁻¹Mpc anomalous?
 <!-- key: is-the-bulk-flow-at-150-250-h-1mpc-anomalous -->
+
+Folded in part on 2026-10-20 from the compilation of 2026-08-12/14, in which `[src]` meant "traced
+to the paper" and `[der]` "relabelled or derived, the paper does not quote fσ8": that compilation
+records the CF4 result as a 4.81σ excess at 200 h⁻¹Mpc, estimator-dependent (arXiv:2306.11269), and
+advises against citing the excess as established.
 
 **For an anomaly.**
 
@@ -91,7 +95,13 @@ Two results point in opposite directions.
 
 - **FP low, TF and SN concordant** (velocity–density comparison against 2M++): TF + SN give S8 =
   0.798 ± 0.035; FP samples shift by 0.08 (SDSS) and 0.15 (6dF) in S8 under a quadratic Malmquist
-  term and end in 3.3σ mutual tension (Stiskalek 2025, arXiv:2509.20235) [src]. The earlier FP
+  term and end in 3.3σ mutual tension (Stiskalek 2025, arXiv:2509.20235) [src].
+  Folded on 2026-10-20 from the compilation of 2026-08-12/14, in which `[src]` meant "traced to the
+  paper" and `[der]` "relabelled or derived, the paper does not quote fσ8": it calls this the first consistent Bayesian analysis of all three indicator classes in one framework
+  against 2M++, with fσ8 = 0.412 ± 0.018 from TF + SNe, concordant with the CMB; its conclusion: low-z
+  PV data do *not* reinforce the early-vs-late S₈ tension, and FP systematics deserve scrutiny —
+  which matters for the whole programme, since FP dominates the object counts of CF4, SDSS PV and
+  4HS. The earlier FP
   result, S8 = 0.637 ± 0.054, "more than 3σ" from Planck (Said et al. 2020, arXiv:2007.04993), is of
   this type [src].
 - **TF low, FP concordant** (DESI DR1 correlation functions on one density field): BGS + FP gives
@@ -120,8 +130,15 @@ arXiv:2512.03231].
 - The papers' reading: mutually consistent within 1σ, and "the improvement when combining the
   methods is appreciable, given that the different methods access different underlying scales with
   different weights" [src: arXiv:2512.03230].
-- The opposite reading (`fsigma8-pv-compilation.md`): the spread is the honest scale of method systematics, and
-  it follows the method family.
+- The opposite reading (2026-08 compilation; folded on 2026-10-20 from the compilation of
+  2026-08-12/14, in which `[src]` meant "traced to the paper" and `[der]` "relabelled or derived,
+  the paper does not quote fσ8"): the 0.391 → 0.483 spread on identical data is the honest scale of
+  current method systematics, larger than most individual quoted error bars, and it tracks the
+  method family — the field-level estimator high, the two two-point estimators lower; more widely,
+  reconstruction methods cluster low (0.31–0.40) and velocity-statistics methods scatter wider and
+  higher, "a real methodological split", visible in the DESI DR1 triplet [der, 2026-10-20: the
+  velocity–density rows of `results.md` §0 run from 0.310 to 0.480 once Feix 2017 is counted, and
+  0.310–0.420 without the luminosity rows].
 
 The mocks settle part of it. The three estimators are correlated at only 27–39 % on the 675 mocks
 ("lower than expected"; 84 % between Fourier and configuration space in eBOSS), and with those
@@ -206,7 +223,7 @@ arXiv:2512.03229 and as 0.446 in arXiv:2512.03230 [src].
 | Einstein Telescope sirens + DESI/TAIPAN | ~3 % on fσ8, σ(γ) ≲ 0.04 | Fisher | arXiv:2005.04325 | [src] |
 | Neutrino mass with velocities | Σm_ν ≈ 0.14 eV (68 %) attainable without Planck; marginal gain with Planck | Fisher | Whitford, Howlett & Davis 2022, arXiv:2112.10302 | [src] |
 | V̂_G (kSZ velocity × CMB lensing) | S/N ~ 20–55 for ACT/SO × DESI | forecast | arXiv:2510.27605 | [src] |
-| Whole programme | ≲ 3 % on fσ8 to z = 0.3 | review statement | Turner 2024, arXiv:2411.19484, via `pv-surveys.md` | [sec] |
+| Whole programme | ≲ 3 % on fσ8 to z = 0.3 | review statement | Turner 2024, arXiv:2411.19484, via the 2026-08 compilation (`surveys-and-data.md` §6) | [sec] |
 
 Reading the table.
 
@@ -231,7 +248,7 @@ Reading the table.
 | Does the estimator spread shrink with volume? | DESI DR2/DR3 with the three estimators | same |
 | Is the 120–160 h⁻¹Mpc dipole a 6dFGS artefact? | 4HS FP in the south | after 4MOST science operations start |
 | First fσ8 from a homogeneous SN sample | ZTF DR2.5, TITAN, then Rubin | not released on the snapshot date |
-| Closing a particle-evolving forward model into fσ8 | Hamlet-PM (arXiv:2602.03699), Manticore-type inference | open niche (`pv-surveys.md` §5) |
+| Closing a particle-evolving forward model into fσ8 | Hamlet-PM (arXiv:2602.03699), Manticore-type inference | open niche: the machinery exists on the reconstruction side and has not been closed into a growth-rate measurement (`physics-and-methods.md` §0, §5) |
 | Non-linear field-level likelihood | flip extensions, EFT or emulator covariances | method work in progress |
 | b_v and the electron profile | SO × DESI, tSZ-informed τ | belongs to `cosmo-cmb-lss-cross-correlations` |
 
@@ -253,7 +270,25 @@ Reading the table.
 | "kSZ measures the velocity field amplitude" | It measures τ × v; b_v ≈ 0.1–0.45 against halo-model profiles, depending on sample and fiducial model (0.10–0.15 for DESI DR2 emission-line galaxies, 0.2–0.45 for luminous red galaxies; values in `cosmo-cmb-lss-cross-correlations`, `results.md`) | arXiv:2511.15701, arXiv:2506.21657, arXiv:2604.04867 |
 | "GR predicts faster growth of peculiar velocities than Newtonian theory" | Disputed; the standard result is recovered when the covariant system is solved consistently | arXiv:2603.14511 |
 | "The Franco et al. CF4++ fσ8 is a velocity measurement" | It is a real- vs redshift-space clustering ratio | arXiv:2605.00450 |
-| "Forward model means non-linear dynamics" | See `pv-surveys.md` §5: the indicator is forward-modelled, the field is linear | `pv-surveys.md` |
+| "Forward model means non-linear dynamics" | In Boubel 2024, Stiskalek 2025, Boruah 2020 and Stahl 2021 the indicator is forward-modelled, the field is linear | `physics-and-methods.md` §5 |
+
+## 11. Gaps left open by the fσ8 compilation
+
+Folded on 2026-10-20 from the compilation of 2026-08-12/14, in which `[src]` meant "traced to the
+paper" and `[der]` "relabelled or derived, the paper does not quote fσ8".
+
+- **Distance indicator for the 13 rows marked "mix"** (count of the 2026-08-13 table). Cosmicflows-
+  based analyses blend TF, FP and SNe in proportions that change between catalogue versions, so a
+  clean TF/FP/SN split of the compilation is not currently possible.
+- **The [der] rows** (three named in the compilation: Carrick, Nusser, Davis; Turnbull also carries
+  the flag) would be better replaced by the quantity the papers actually measure (Ω_m^0.55σ8 for
+  Carrick and Nusser, β for Davis), with the GR conversion applied at plot time and visible.
+- **Crisman, Quartin & Rebouças 2026**, *Joint curvature and growth rate measurements with supernova
+  peculiar velocities and the CMB* (arXiv:2604.06361): in scope, no fσ8 extracted, since the abstract
+  quotes σ8 and γ (`results.md` §2).
+- **Feix and Nguyen use the same physics** — growth from correlated magnitude scatter, of galaxies
+  in one case, of SNe in the other. Both are classed `probe=PV` but the indicator column separates
+  them (`lum` vs `SN`), which is arguably inconsistent.
 
 ## Not verified
 <!-- key: not-verified -->
@@ -262,4 +297,5 @@ Reading the table.
   282 km/s at 150 h⁻¹Mpc, r⁻² weights, 2.2 % probability in ΛCDM [src: arXiv:1808.07772, Table 1].
 - Whether a published rebuttal to Nusser & Tully 2026 or to Whitford et al. 2023 by the MV authors
   exists beyond arXiv:2512.03168.
-- Any Taipan status after the note in `pv-surveys.md`.
+- Any Taipan status after the note in `surveys-and-data.md` §6.
+- The folded passages of §1, §3, §4 and §11: from the 2026-08 compilation, not re-read.

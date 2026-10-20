@@ -4,13 +4,39 @@ Scope: the samples and releases behind every result in this skill, with the coun
 the analyses, where the data are public, the status on the snapshot date, and what comes next.
 Snapshot: 2026-10-07
 
-The survey descriptions (why three indicators, what each survey is, the Cosmicflows-4 composition,
-the SN samples, the planned surveys) are in
-`pv-surveys.md`
-§1–4. This file does not repeat them: it adds release-level numbers read this session, the 2025–2026
-releases, and the status of each programme.
+The survey descriptions of the 2026-08 compilation (why three indicators, what each survey is, the
+Cosmicflows-4 composition, the SN samples, the planned surveys) are folded into §0, §1, §4, §5 and §6;
+the rest of the file gives release-level numbers read this session, the 2025–2026 releases and the
+status of each programme.
 
 Flags as in `results.md`.
+
+---
+
+## 0. Distance indicators: why three, and what each delivers
+<!-- key: distance-indicators-why-three-and-what-each -->
+
+Folded on 2026-10-20 from the compilation of 2026-08-12/14, in which `[src]` meant "traced to the
+paper" and `[der]` "relabelled or derived, the paper does not quote fσ8".
+Source of the descriptions in §0–1 and §6: the review of Turner 2024 (arXiv:2411.19484), §3, §4, §6.
+
+A peculiar velocity needs a **redshift-independent distance**. Only three methods deliver them in
+bulk over cosmological volumes.
+
+| Indicator | Tracer | Distance error per object | Practical reach |
+|---|---|---|---|
+| **Tully–Fisher (TF)** | spirals; luminosity–HI linewidth | ~20 % | z ≲ 0.1 |
+| **Fundamental Plane (FP)** | early types; σ–R_e–I_e | ~20 % | z ≲ 0.1 |
+| **SN Ia** | standardisable candle | ~5–7 % (σ ≈ 0.1–0.15 mag) | z ≲ 0.3 |
+
+- **The controlling fact** (Turner §3): the TF/FP scatter is a constant in *magnitude*, so the
+  distance error is a constant *fraction* of the distance and the velocity error grows linearly with
+  distance. Scaling-relation surveys therefore stop at z ~ 0.1–0.15 however many galaxies they
+  observe, and **SNe Ia are the only reliable probe of the velocity field beyond z ≈ 0.15**.
+- TF/FP win on *number* (10⁴–10⁵ objects at ~20 % each), SNe on *per-object precision* and reach:
+  not competing strategies, but different parts of the same volume.
+- Other indicators (TRGB, SBF, masers, JAGB, Cepheids, GW sirens) are calibration rungs, not
+  survey-scale velocity tracers.
 
 ---
 
@@ -23,15 +49,36 @@ Flags as in `results.md`.
 | 2MTF | TF (HI + 2MASS J, H, K) | 2 018 spirals | all sky except \|b\| < 5°, within 100 h⁻¹Mpc | σ_v = 0.177 H0 d (fit of arXiv:1804.05520) | Hong et al. 2014, arXiv:1409.0287 | [src] |
 | SDSS PV | FP | 34 059 early types | 7 016 deg², z ≤ 0.1 | mean 23 % | Howlett et al. 2022, arXiv:2201.03112 | [src] |
 | Cosmicflows-4 | 8 methods | 55 877 galaxies in 38 065 groups | both hemispheres, anisotropic depth | — | Tully et al. 2023, arXiv:2209.11238 | [src] |
+| Mark III | TF + FP | ~3 200 | z̄ ~ 0.015 | — | Willick et al.; first uniform re-treatment of 1980s data | |
+| SFI++ | TF (I band) | ~5 000 | most of the sky above the Galactic plane, z̃ ~ 0.02 | — | Springob et al. 2007; **erratum 2009** (morphological-type correction misapplied) | |
+
+Folded on 2026-10-20 from the compilation of 2026-08-12/14, in which `[src]` meant "traced to the
+paper" and `[der]` "relabelled or derived, the paper does not quote fσ8". The last two rows come from it (chronological in Turner §4: Mark III, SFI++, 6dFGSv, 2MTF,
+SDSS PV, CF4). It gives the other four as: 6dFGSv ~9 000 FP (7 030 used in some analyses), z <
+0.055, southern, |b| > 10°, Springob et al. 2014 and Magoulas et al. 2012; 2MTF ~2 000, z ≲ 0.03
+(z̃ ~ 0.016), near-all-sky |b| > 5°, 2MASS + ALFALFA HI, "Hong et al. 2019"; SDSS PV > 34 000,
+z < 0.1, z_eff ~ 0.07, northern; CF4 "Tully et al. 2022", "local". The rows above, read in the
+papers, differ in the 2MTF reference year (Hong et al. 2014) and the CF4 year (2023).
 
 Notes.
+
+- **2MTF's selling point is the Galactic plane.** Optical surveys cut at |b| > 10°; 2MTF uses the
+  infrared and reaches |b| > 5°, recovering structure in the Zone of Avoidance that otherwise biases
+  reconstructions.
+- **6dFGSv and SDSS PV are complementary by construction**: south against north, similar N within
+  the 6dFGS redshift limit, but SDSS extends to z = 0.1.
+- **CF4 is a compilation, not a survey**: ~35 000 FP (mostly 6dFGSv + SDSS PV) and ~10 000 TF
+  (SFI++, 2MTF and others), plus SNe Ia, SNe II and SBF, from different groups with different
+  calibrations — which is why bulk flows derived from it are estimator- and calibration-sensitive.
+  It largely *contains* 6dFGSv, SDSS PV, SFI++ and 2MTF and is not independent of them. (The CF4
+  paper's own merging counts, 42 254 FP and 12 395 TF galaxies, are in `systematics.md` §9b.)
 
 - 6dFGSv velocities are delivered as **probability distributions** at the redshift-space position of
   each galaxy, from a Bayesian FP fit [src: arXiv:1409.6161]. The mean of η corresponds to the
   median of v [src: arXiv:1804.05520, §3, citing Scrimgeour et al.].
 - SDSS PV ships 2 048 mocks with the survey selection and a group-richness correction; its
   zero-point is tied to Cosmicflows-3 [src: arXiv:2201.03112]. It is the sample behind three rows of
-  the fσ8 table of `pv-surveys.md`.
+  the fσ8 table of `results.md` §0.
 - Cosmicflows-4 absolute scale: Cepheids, TRGB and the NGC 4258 maser; the assembly "is compatible
   with" H0 = 74.6 ± 0.8 (stat), "large potential systematic error of ~3 km/s/Mpc" [src:
   arXiv:2209.11238].
@@ -48,7 +95,7 @@ Notes.
 | CF4++ZOA | 65 518 CF4++ distances + 8 283 new redshifts at \|b\| ≤ 10° (2 176 from MeerKAT HI, covering the innermost 3°-wide strip of the southern Zone of Avoidance) | Hollinger et al. 2026, arXiv:2603.09339 | [src] |
 
 The two CF4++ counts (65 331 and 65 518) are both as printed in the cited abstracts; the difference
-is not explained there. CF4++ is still a compilation: every caution of `pv-surveys.md` about CF4
+is not explained there. CF4++ is still a compilation: every caution of §1 about CF4
 applies, and its DESI component is an early subset (4 191 objects), not the DR1 catalogue.
 
 Results obtained from it in the same period: bulk flow of 315 ± 40 km/s at 150 h⁻¹Mpc and "the
@@ -125,6 +172,25 @@ Sample definitions, calibration and release status of the SN compilations are in
 | WHALES | SNe Ia in and around superclusters; first two seasons on Shapley (0.02 < z < 0.06): 12 likely SNe Ia, 8 spectroscopically confirmed | initial data release | Acevedo et al. 2025, arXiv:2510.26731 | [src] |
 | Rubin LSST | **forecast**: 10 % on fσ8 over 0.02 < z < 0.14 in the most realistic scenario | 10-year survey began 30 June 2026 [sec: `cosmo-supernovae` surveys file] | Rosselli et al. 2025, arXiv:2507.00157 | [src] |
 
+**The compilation's SN table.** Folded on 2026-10-20 from the compilation of 2026-08-12/14, in which `[src]` meant "traced to the
+paper" and `[der]` "relabelled or derived, the paper does not quote fσ8".
+Two distinct uses, often confused: **PV as signal** (SNe as velocity tracers, to measure fσ8) and
+**PV as nuisance** (correcting SN redshifts for peculiar motion in Hubble-diagram cosmology).
+
+| Sample | N | z | Note |
+|---|---|---|---|
+| Pantheon+ | 1 701 light curves / 1 550 unique SNe, 18 subsamples | 0.001–2.26 | SALT2; strength is the low-z anchor. PVs reliable only at z < 0.02 (σ ≈ 300 km/s) |
+| Union3 | 2 087 SNe, 24 datasets | — | SALT3, Bayesian hierarchical errors; shares ~1 360 SNe with Pantheon+ |
+| DES-Y5 | 1 635 photometric + 194 low-z = 1 829 | 0.10–1.13 (+0.025–0.10) | dominates z > 0.5; too distant for PV work |
+| A2 (Boruah et al. 2020) | 465 SN PVs | z < 0.067 | compared to the 2M++ reconstruction, jointly with SFI++ and 2MTF |
+| DSS (Stahl et al. 2021) | 775 low-z SNe Ia **and II**, 137 via snapshot distances | low z | fσ8 = 0.390 ± 0.022 |
+| ZTF SN Ia DR2 | 994 at z < 0.06 (volume-limited); "~3 600 below z < 0.06 in the fuller sample" | z < 0.06 | Rigault et al. 2025 overview; PV impact on the Hubble diagram in Carreres et al. 2025 |
+
+The compilation's "~3 600 below z < 0.06" disagrees with the 3 628 SNe Ia at z < 0.3 of the DR2
+abstract in the table above; its 994 fits "nearly a thousand". **Sharing**: Pantheon+, Union3 and
+the PV compilations draw on the same low-z SNe, so combining fσ8 from two of them is not combining
+independent data; state which low-z sample underlies a quoted fσ8.
+
 ---
 
 ## 5. HI Tully–Fisher surveys
@@ -140,8 +206,10 @@ Sample definitions, calibration and release status of the SN compilations are in
 
 The expected size of WALLABY is quoted inconsistently by its own papers: "around half a million
 galaxies with a mean redshift of z = 0.05" in arXiv:2210.12498, "200,000 galaxies" for the
-full-survey TF programme in arXiv:2406.10877 [src]. `pv-surveys.md` gives the range of velocity-sample
-forecasts.
+full-survey TF programme in arXiv:2406.10877 [src]. Folded on 2026-10-20 from the compilation of 2026-08-12/14, in which `[src]` meant "traced to the
+paper" and `[der]` "relabelled or derived, the paper does not quote fσ8". It gives WALLABY as HI (21 cm)
+TF, ~17 000–40 000 PVs of ~324 000 detections ("forecasts vary"), 0 < z < 0.10, observing since
+2022, a 5-year run over 14 000 deg² of the southern sky with ASKAP.
 
 ---
 
@@ -150,15 +218,29 @@ forecasts.
 
 | Programme | What it adds | Status on the snapshot date | Flag |
 |---|---|---|---|
-| 4MOST Hemisphere Survey (4HS) | southern FP sample; numbers in `pv-surveys.md` | 4MOST first light in October 2025; "Verification, Commissioning, and Survey Validation"; "expected start of full science operations in Q2 2026" — the page had not been updated beyond that statement when read | [sec: 4most.eu home page, read 2026-10-08] |
+| 4MOST Hemisphere Survey (4HS) | southern FP sample, > 400 000 early types at z < 0.15 (numbers below) | 4MOST first light in October 2025; "Verification, Commissioning, and Survey Validation"; "expected start of full science operations in Q2 2026" — the page had not been updated beyond that statement when read | [sec: 4most.eu home page, read 2026-10-08] |
 | DESI PV DR2 | three years of data; more TF | not public; no paper | [sec: DESI release page] |
 | DESI DR3 BGS × ZTF 6-year SNe | field-level density × velocity | **forecast** only (arXiv:2609.34508) | [src] |
 | Rubin LSST SNe Ia | velocities to z ~ 0.14 and beyond | survey started 30 June 2026 | [sec: `cosmo-supernovae`] |
 | kSZ velocity reconstruction | large-scale radial modes at z ~ 0.5–2 | ACT DR6 × DESI DR2 published (arXiv:2604.04867); Simons Observatory next (belongs to `cosmo-cmb-lss-cross-correlations`) | [src] |
 | Gravitational-wave sirens as distance tracers | **forecast**: ~3 % on fσ8 from Einstein Telescope neutron-star mergers at z ≲ 0.2 after 10 years, with DESI and TAIPAN densities | concept | Palmese & Kim 2021, arXiv:2005.04325 [src] |
 
-Taipan, which several forecasts above assume, should not be cited as a coming survey without
-checking its status (see `pv-surveys.md`, §4).
+**The compilation's table of current and future surveys.** Folded on 2026-10-20 from the compilation of 2026-08-12/14, in which `[src]` meant "traced to the
+paper" and `[der]` "relabelled or derived, the paper does not quote fσ8".
+
+| Survey | Method | Expected N | z | Status |
+|---|---|---|---|---|
+| DESI PV | FP **and** TF | ~133 000 FP + ~53 000 TF (Saulder et al. 2023 targets) | z ≲ 0.15 | ongoing; spare-fibre programme, 14 000 deg² north. First major survey measuring both FP and TF with one instrument, TF from optical rather than HI (§3) |
+| WALLABY | TF (HI) | ~17 000–40 000 PVs (§5) | 0 < z < 0.10 | observing since 2022, southern, ASKAP |
+| 4HS | FP | > 400 000 early types | z < 0.15 | future; ~6 M redshifts over 17 000 deg², ~95 % completeness. Largest FP sample ever planned |
+| Taipan | FP | ~45 000–80 000 (quoted figures differ) | z < 0.1 | southern; check current status before citing — largely superseded by 4HS |
+| ZTF | SN Ia | ~10³ usable | z < 0.06 | ongoing, north |
+| LSST | SN Ia | orders of magnitude more | z < 0.35 | starts 2026; ≥ 825 visits per southern field over 10 yr |
+
+**Forecast headline** (Turner §6): current and future PV surveys will cover almost the whole sky to
+z = 0.3 and deliver fσ8 to **≲ 3 %**, comparable to current expansion-history precision; a combined
+WALLABY + Taipan forecast also gives ~3 % — both **forecasts**. Taipan, which several forecasts
+above assume, should not be cited as a coming survey without checking its status.
 
 ---
 
@@ -178,7 +260,10 @@ checking its status (see `pv-surveys.md`, §4).
 ## Not verified in this file
 <!-- key: not-verified-in-this-file -->
 
-- 4HS sample sizes and footprint: taken from `pv-surveys.md`, not re-read.
+- 4HS sample sizes and footprint: from the 2026-08 compilation (§6), not re-read.
+- §0, §1 (Mark III and SFI++ rows, the compilation's survey figures, the notes), §4 (the
+  compilation's SN table), §5 (WALLABY expected size) and §6 (the compilation's table and forecast
+  headline): folded from the 2026-08 compilation, not re-read.
 - ZTF "DR2.5": no release paper found; see `cosmo-supernovae`.
 - The label of the ± 4.86 term in the DESI EDR FP H0 (the abstract was read truncated at that
   point).

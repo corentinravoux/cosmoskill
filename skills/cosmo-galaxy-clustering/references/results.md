@@ -2,7 +2,7 @@
 
 Scope: headline BAO, RSD, full-shape and scale-dependent-bias measurements
 from spectroscopic surveys, with the history of the key numbers.
-Snapshot: 2026-10-07.
+Snapshot: 2026-10-20.
 
 Flags: `[src]` read this session in the cited paper; `[sec]` taken from the
 named secondary source; `[der]` derived here. Errors are 68% unless stated.
@@ -86,8 +86,8 @@ measurement [src] (arXiv:2404.03000).
 | 6dFGS | 0.106 | D_V = 456 ± 27 Mpc; r_s(z_d)/D_V = 0.336 ± 0.015 | Beutler et al. 2011, arXiv:1106.3366 | [src] |
 | SDSS DR7 MGS | 0.15 | D_V = (664 ± 25)(r_d/r_d,fid) Mpc | Ross et al. 2015, arXiv:1409.3242 | [src] |
 | WiggleZ (reconstructed) | 0.44, 0.60, 0.73 | D_V (r_s^fid/r_s) = 1716 ± 83, 2221 ± 101, 2516 ± 86 Mpc | Kazin et al. 2014, arXiv:1401.0358 | [src] |
-| SDSS LRG, 0.4 < z < 0.6 | 0.51 | D_M/r_d = 13.36 ± 0.21; D_H/r_d = 22.33 ± 0.58 | values as quoted in arXiv:2404.03002 for Alam et al. 2021, arXiv:2007.08991 | [sec] |
-| SDSS LRG, 0.6 < z < 0.85 | 0.70 | D_M/r_d = 17.86 ± 0.33; D_H/r_d = 19.33 ± 0.53 | same | [sec] |
+| SDSS LRG, 0.4 < z < 0.6 | 0.51 | D_M/r_d = 13.36 ± 0.21; D_H/r_d = 22.33 ± 0.58 | values as quoted in arXiv:2404.03002 for Alam et al. 2021, arXiv:2007.08991; re-read 2026-10-20 as the BOSS-galaxy BAO-only column | [src: arXiv:2007.08991, Table 3] |
+| SDSS LRG, 0.6 < z < 0.85 | 0.70 | D_M/r_d = 17.86 ± 0.33; D_H/r_d = 19.33 ± 0.53 | same; re-read 2026-10-20 as the eBOSS LRG (0.6 < z < 1.0) BAO-only column | [src: arXiv:2007.08991, Table 3] |
 | eBOSS LRG (BAO+RSD consensus) | 0.698 | D_M/r_d = 17.65 ± 0.30; D_H/r_d = 19.77 ± 0.47 | Bautista et al. 2020, arXiv:2007.08993 | [src] |
 | eBOSS QSO (consensus) | 1.48 | D_M/r_d = 30.22 ± 0.79; D_H/r_d = 13.26 ± 0.47 | Hou et al. 2020, arXiv:2007.08998 | [src] |
 | DESI DR1 + SDSS Lyα | 2.33 | D_M/r_d = 38.80 ± 0.75; D_H/r_d = 8.72 ± 0.14; ρ = −0.48 | arXiv:2404.03002 | [src] |
@@ -211,9 +211,15 @@ snapshot.
 | eBOSS LRG (consensus) | 0.698 | 0.473 ± 0.044 | arXiv:2007.08993 | [src] |
 | eBOSS QSO (consensus) | 1.48 | 0.464 ± 0.045 | arXiv:2007.08998 | [src] |
 | BOSS DR12 (three bins) | 0.38, 0.51, 0.61 | 6% precision; values not in the abstract | arXiv:1607.03155 | [src] |
+| BOSS DR12 consensus BAO+FS | 0.38, 0.51, 0.61 | 0.497 ± 0.039 ± 0.024; 0.458 ± 0.035 ± 0.015; 0.436 ± 0.034 ± 0.009 (stat, sys) | arXiv:1607.03155 | [src: Table 7] |
+| eBOSS ELG (consensus) | 0.85 | 0.315 ± 0.095 | arXiv:2007.09008; arXiv:2007.09009 | [src] |
+| SDSS MGS | 0.15 | 0.53 ± 0.16 | arXiv:2007.08991 | [src: Table 3] |
 
 The SDSS cosmology paper combines six fσ8 measurements [src]
-(arXiv:2007.08991). Low-redshift fσ8 from peculiar velocities belongs to
+(arXiv:2007.08991). Per-method BOSS values, the pre-BOSS measurements (VVDS,
+6dFGS, GAMA, VIPERS, FastSound, BOSS DR9) and the full SDSS compilation table
+are in `rsd-modelling.md`, Sects. 3 and 5, and `boss-eboss-euclid.md`,
+Sects. 2–3. Low-redshift fσ8 from peculiar velocities belongs to
 `cosmo-peculiar-velocities`.
 
 ## 5. Extended models (summary; interpretation in sibling skills)

@@ -1,22 +1,176 @@
 # Results — peculiar velocities: 2025–2026 measurements and the bulk-flow record
 
-Scope: what the fσ8 compilation does not hold — the non-fσ8 output of the DESI DR1 peculiar-velocity
-release, the growth, gravity and flow results found in date-sorted searches from mid-2025 to the
-snapshot, and the bulk-flow record with its estimators. Snapshot: 2026-10-14
-
-**The historical fσ8 table is not repeated here.** It lives, row by row and traced to source, in
-`pv-surveys.md` (§6) and is discussed in `fsigma8-pv-compilation.md`; nothing here duplicates it.
+Scope: every published fσ8 from peculiar velocities with its provenance (§0) and the history of
+that compilation (§7); the non-fσ8 output of the DESI DR1 peculiar-velocity release; the growth,
+gravity and flow results found in date-sorted searches from mid-2025 to the snapshot; and the
+bulk-flow record with its estimators. Snapshot: 2026-10-14
 
 Flags: `[src]` read this session in the cited paper (abstract unless a section is named); `[sec]`
-from a named secondary source; `[der]` derived, derivation stated.
+from a named secondary source; `[der]` derived, derivation stated. §0 and §7 use the flags of the
+compilation they were folded from (stated there).
+
+---
+
+## 0. Published fσ8 from peculiar velocities
+<!-- key: published-fsigma8-from-peculiar-velocities -->
+
+Folded on 2026-10-20 from the compilation of 2026-08-12/14, in which `[src]` meant "traced to the
+paper" and `[der]` "relabelled or derived, the paper does not quote fσ8".
+
+**Codes.** `[src]`: traced to the paper (abstract, else body). `[der]`: the paper does **not**
+quote fσ8 — a relabelled Ω_m^0.55σ8, β, or the midpoint of a quoted interval. `[T24]`: from Turner
+(2024) Table 1, declared "no longer used — every row has now been traced to its source" yet still on
+eight rows (kept as written). The compilation's count: "All 36 measurement rows are now first-hand:
+32 [src], 4 [der]", 39 before four non-PV rows were removed on 2026-08-13; the second pass changed
+six values (§7). `lin`: normalised to the **linear** σ8 (§0b). "re-read": checked at source on
+2026-10-20. Scope: peculiar velocities only (measured distances; RSD of redshift surveys excluded,
+§7). The compilation's `probe` column (not reproduced) split velocity-only analyses (24) from those
+also modelling clustering / RSD (12); it did **not** mark an external density field, which every
+velocity–density row uses while labelled `PV`. Ind.: mix = heterogeneous compilation, lum = galaxy
+luminosity fluctuations (no direct distance). Family: `physics-and-methods.md` §0. Ordered by z_eff.
+
+| Reference | fσ8 | z_eff | Ind. | Dataset | Family | Estimator (2026-08-13 label) | ID | Flags |
+|---|---|---|---|---|---|---|---|---|
+| Adams & Blake 2017 | 0.424 +0.067/−0.064 | 0.000 | FP | 6dFGS | field-level | density–velocity cross-covariance | arXiv:1706.05205 | [src] |
+| Howlett et al. 2017 | 0.510 +0.090/−0.080 | 0.000 | TF | 2MTF | two-point | velocity power spectrum | arXiv:1706.05130 | [T24]; re-read |
+| Johnson et al. 2014 | 0.418 ± 0.065 | 0.000 | FP+SN | 6dFGSv + low-z SNe | field-level | maximum-likelihood | arXiv:1404.3799; MNRAS 444, 3926 | [T24]; re-read, corrected (§7) |
+| Ma, Branchini & Scott 2012 | 0.420 ± 0.033 | 0.000 | mix | PSCz gravity field vs peculiar velocities | vel–dens (lin) | — | arXiv:1205.4237 | |
+| Lilow & Nusser 2021 | 0.367 ± 0.060 | 0.013 | mix | CF3 + 2MRS | vel–dens (lin) | constrained realisations | arXiv:2102.07291 | [src] lin; re-read |
+| Boubel et al. 2024 | 0.350 ± 0.030 | 0.017 | TF | Tully-Fisher forward model | vel–dens (lin) | forward model | arXiv:2301.12648 | [src]; re-read |
+| Carrick et al. 2015 | 0.401 ± 0.024 | 0.020 | mix | 2M++ | vel–dens (lin) | reconstruction | arXiv:1504.04627 | [T24] lin der |
+| Davis et al. 2011 | 0.310 ± 0.040 | 0.020 | TF | SFI++ | vel–dens (lin) | reconstruction | arXiv:1011.3114 | [T24] der |
+| Hollinger & Hudson 2024 | 0.362 ± 0.023 | 0.020 | mix | 2M++ (bias-corrected by 1.04) | vel–dens (lin) | reconstruction | arXiv:2312.03904; MNRAS 526, 337 | [T24] lin |
+| Huterer et al. 2017 | 0.428 +0.048/−0.045 | 0.020 | SN+FP | low-z SNe + galaxy velocities | field-level | maximum-likelihood | arXiv:1611.09862; JCAP 05 (2017) 015 | [src]; re-read, corrected (§7) |
+| Boruah et al. 2020 | 0.400 ± 0.017 | 0.022 | SN+TF | 465 SNe + SFI++ + 2MTF vs 2M++ | vel–dens (lin) | reconstruction | arXiv:1912.09383; MNRAS 498, 2703 | [T24] lin |
+| Nusser 2017 | 0.400 ± 0.080 | 0.027 | mix | CF3 | two-point | velocity–density correlation | arXiv:1703.05324 | [T24] der |
+| Nguyen et al. 2025 | 0.384 +0.094/−0.157 | 0.030 | SN | SN magnitude fluctuations × galaxies | two-point | — | arXiv:2510.07673 | |
+| Qin et al. 2019 | 0.404 +0.082/−0.081 | 0.030 | TF+FP | 2MTF + 6dFGSv | two-point | momentum power spectrum | arXiv:1906.02874 | [src] |
+| Said et al. 2020 | 0.338 ± 0.027 | 0.035 | FP | 6dFGS + SDSS | vel–dens (lin) | reconstruction (β → fσ8) | arXiv:2007.04993 | [src] |
+| Adams & Blake 2020 | 0.384 ± 0.052 (stat) ± 0.061 (sys) | 0.045 | FP | 6dFGS | field-level | joint RSD + PV | arXiv:2004.06399 | [src] |
+| Turner et al. 2023 | 0.358 ± 0.075 | 0.045 | mix | 6dFGS | two-point | velocity–density correlation | arXiv:2207.03707; MNRAS 518, 2436 | [src] |
+| Dupuy et al. 2019 | 0.43 (±0.03)_obs (±0.11)_cosmic | 0.050; "<0.05" in the 2026-08-13 table | mix | CF3 | two-point | correlation | arXiv:1901.03530 | [src]; re-read |
+| Courtois et al. 2023 | 0.360 ± 0.050 | 0.051 | mix | CF4 grouped | two-point | correlation function | arXiv:2211.16390; A&A 670, L15 | re-read |
+| Courtois et al. 2023 | 0.300 ± 0.060 | 0.051 | SN | CF4 SNIa subset | two-point | correlation function | arXiv:2211.16390 | re-read |
+| Courtois et al. 2023 | 0.380 ± 0.040 | 0.051 | mix | CF4 ungrouped | two-point | correlation function | arXiv:2211.16390 | [T24]; re-read |
+| DESI Collaboration 2025, consensus | 0.4497 ± 0.0548 | 0.070 | TF+FP | DESI DR1 PV + BGS | consensus | correlated combination | arXiv:2512.03230, arXiv:2512.03231 | [src] |
+| Turner et al. (DESI) 2025 | 0.391 +0.080/−0.081 | 0.070 | TF+FP | DESI DR1 PV + BGS | two-point | galaxy + momentum correlation functions | arXiv:2512.03230 | [src] |
+| Lai et al. (DESI) 2025 | 0.483 +0.080/−0.043 (stat) ± 0.018 (sys) | 0.070 | TF+FP | DESI DR1 PV + BGS | field-level | maximum-likelihood fields | arXiv:2512.03229 | [src] |
+| Qin et al. (DESI) 2025 | 0.440 +0.080/−0.096 | 0.070 | TF+FP | DESI DR1 PV + BGS | two-point | galaxy power spectrum | arXiv:2512.03231 | [src] |
+| Franco et al. 2026 | 0.344 ± 0.105 | 0.070 | mix | CF4++ (65 331 distances) | two-point | joint real/redshift-space, Kaiser | arXiv:2605.00450 | [src] |
+| Lai et al. 2023 | 0.405 +0.076/−0.071 (stat) ± 0.009 (sys) | 0.073 | FP | SDSS PV | field-level | maximum-likelihood, wide-angle + zero-point in the model | arXiv:2209.04166 | [src] |
+| Lyall et al. 2024 | 0.329 +0.081/−0.083 | 0.073 | FP | 6dFGS + SDSS | two-point | correlation function | arXiv:2407.18684 | [src]; re-read |
+| Qin et al. 2024 | 0.413 +0.050/−0.058 | 0.073 | FP | SDSS DR14 PV | two-point | density–momentum **cross** power spectrum | arXiv:2411.09571 | [src] |
+| Feix et al. 2015 | 0.37 ± 0.13 | ~0.1 | lum | SDSS DR7, 2×10⁵ galaxies | vel–dens (lin) | galaxy **luminosity** fluctuations | arXiv:1503.05945; PRL 115, 011301 | [src] |
+| Feix et al. 2017 | 0.48 ± 0.16 | ~0.1 | lum | SDSS DR13 | vel–dens (lin) | luminosity fluctuations, recalibrated photometry | arXiv:1612.07809; MNRAS 468, 1420 | [src]; re-read |
+| Stahl et al. 2021 | 0.390 ± 0.022 | — | SN | DSS: 775 low-z SNe **Ia and II**, 137 via snapshot distances, vs 2M++ | vel–dens (lin) | — | arXiv:2105.05185; MNRAS 505, 2349 | [src] lin; re-read |
+| Stiskalek 2026 | 0.412 ± 0.018 | — | TF+SN | 2M++; **TF + SN combined**, S₈ = 0.798 ± 0.035; FP excluded — unstable under inhomogeneous Malmquist treatment | vel–dens (lin) | — | arXiv:2509.20235; MNRAS 2026 | [src] lin |
+| Turnbull et al. 2012 | 0.400 ± 0.070 | — | SN | A1 (245 SNe) vs PSCz | vel–dens (lin) | — | arXiv:1111.0631 | lin der |
+| Wang et al. 2026 | 0.384 +0.116/−0.194 | — | mix | CF4 group catalogue | two-point | parallel velocity correlation function | arXiv:2604.08314 | [src] |
+| Wang et al. 2026 | 0.569 +0.054/−0.060 | — | mix | CF4 | two-point | *local* growth rate, same paper — a different quantity from the row above, do not quote as "the" CF4 value | arXiv:2604.08314 | [src] |
+
+Row notes. Hollinger & Hudson: 2023 in the 2026-08-13 table (MNRAS 526, 337), 2024 in the
+2026-08-12 one; resolved to arXiv:2312.03904, *Cosmological parameters estimated from velocity–
+density comparisons: calibrating 2M++*, the value theirs after correcting a reconstruction bias of
+1.04 ± 0.01. Lai et al. 2023 is a measurement on the SDSS PV catalogue, not a mock. Dupuy et al.:
+0.430 ± 0.114 in the 2026-08-12 table [der: √(0.03² + 0.11²) = 0.114]; Turner gives ± 0.140 (§7).
+The 2026-08-13 table had only the ungrouped Courtois value. Feix: z_eff = 0.100 in the 2026-08-12
+table. Turnbull, Ma et al. and Nguyen et al. are only in the 2026-08-12 table, with no code. DESI
+DR1: 415 523 redshifts + 76 616 PVs, z_eff = 0.07, three estimators on **one dataset** (§1).
+
+**Reading this table.**
+
+- **Rows are not independent.** 6dFGSv, SDSS PV, SFI++, 2MTF, 2M++ and the low-z SNe recur across
+  most of them, and CF3/CF4/CF4++ *contain* several. Never average it, and never present it as a
+  set of independent constraints.
+- **The four DESI DR1 rows are three estimators on one dataset plus their correlated consensus.**
+  Quote the consensus; how far the 0.391–0.483 spread measures method systematics is discussed in
+  `open-questions.md` §4.
+- **`der` rows are circular in a test of gravity.** Carrick et al. measure Ω_m^0.55σ8, Nusser 2017
+  quotes an interval on the same combination, Davis et al.'s value follows from β (Turnbull et al.
+  is also flagged `der`). Calling any of them fσ8 assumes f = Ω_m^0.55, i.e. assumes GR. Exclude
+  them from any growth-index or modified-gravity fit.
+- **A linear template biases correlation-function results low.** Tonegawa et al. 2024
+  (arXiv:2309.14457; MNRAS 529, 4787) recover fσ8 = 0.361 with a linear template against 0.376 with
+  perturbation theory on the same HR4 N-body mocks — 5.2 % below the fiducial value. Many two-point
+  rows here use a linear template.
+- **Range and errors** (compilation's statement): 0.31 to 0.51 over 0 < z_eff < 0.08, where ΛCDM
+  predicts a nearly flat fσ8 ≈ 0.45, the scatter being method and systematics, not cosmology [der,
+  2026-10-20: as merged here, 0.300 (Courtois SN subset) to 0.569 (Wang local rate), z_eff to ~0.1].
+  Errors run 0.017 to 0.19, a factor of ten; the tightest (Boruah 2020, 0.017; Stiskalek 2026,
+  0.018; Hollinger & Hudson 2024, 0.023) are reconstruction analyses, which import an external
+  density field and its systematics; correlation-function and power-spectrum errors are typically
+  0.05–0.12.
+
+### 0a. Effective redshift genuinely absent
+<!-- key: effective-redshift-genuinely-absent -->
+
+Folded on 2026-10-20 from the compilation of 2026-08-12/14, in which `[src]` meant "traced to the
+paper" and `[der]` "relabelled or derived, the paper does not quote fσ8".
+
+Five rows have no effective redshift by the authors' own choice, not a gap (re-verified paper by
+paper on 2026-08-14):
+
+- **Stiskalek 2026** — Table 1 prints "—" in the z_eff column for the Joint TFR+SNe row (the one
+  quoted), in both the fiducial and the robustness block; the individual samples carry one (CF4
+  TFR W1 0.017, CF4 TFR i 0.022, Pantheon+ 0.026, 6dF FP 0.035, SDSS FP 0.037). The caption
+  defines it as "the mean CMB redshift of each sample", so one *could* be formed; he declines to.
+- **Turnbull et al. 2012** — "a characteristic or uncertainty-weighted depth of 58 h⁻¹ Mpc"; no
+  redshift. **Stahl et al. 2021** — sample cut at z < 0.07, depth ≈ 30 h⁻¹ Mpc, with the warning
+  "each peculiar-velocity catalogue will have its own characteristic depth … and comparisons should
+  only be made at comparable depths."
+- **Wang et al. 2026** (two rows) — framed in survey depth (h⁻¹Mpc); CF4's depth is anisotropic,
+  "the depth of northern sky (z∼0.1) is two times of the depth of southern sky (z∼0.05)".
+
+Stiskalek's Fig. 4 plots literature points at sample mean redshifts he computes: **his**
+assignments, not the original authors'.
+
+### 0b. Linear against non-linear σ8
+<!-- key: linear-against-non-linear-sigma8 -->
+
+Folded on 2026-10-20 from the compilation of 2026-08-12/14 (verified there on 2026-08-13 by
+reading all 35 papers rather than their abstracts), in which `[src]` meant "traced to the paper"
+and `[der]` "relabelled or derived, the paper does not quote fσ8".
+
+**Six rows report fσ8 with the *linear* σ8** (fσ8,lin or fσ8_L): Carrick et al. 2015, Lilow &
+Nusser 2021, Hollinger & Hudson 2024, Boruah et al. 2020, Stahl et al. 2021, Stiskalek 2026
+(Turnbull et al. 2012 is also flagged `lin` in the 2026-08-12 table). All are velocity–density
+comparisons, which predict the velocity field from linear theory; the other rows write plain fσ8.
+**The offset exceeds several error bars**: Carrick et al. quote fσ8,lin = 0.401 ± 0.024 (the value
+tabulated here and by Turner) and fσ8 = 0.427 ± 0.026 with the non-linear σ8, 6.5 % apart. Six of
+35 rows sit on the lower convention, including three of the four tightest errors (Boruah 0.017,
+Stiskalek 0.018, Hollinger & Hudson 0.023): plotted against Planck's fσ8 without the convention,
+they bias the low end downward — the points that drive any claim of tension.
+
+### 0c. Forecasts and simulation validation — not measurements
+<!-- key: forecasts-and-simulation-validation-not -->
+
+Folded on 2026-10-20 from the compilation of 2026-08-12/14, in which `[src]` meant "traced to the
+paper" and `[der]` "relabelled or derived, the paper does not quote fσ8".
+
+| Reference | Value | What it is | ID |
+|---|---|---|---|
+| Dixon et al. 2026 | ⟨fσ8⟩ = 0.429 ± 0.038 (σ_stat 0.030, σ_sys 0.023) | **Simulated** end-to-end measurement for TITAN, ~2000 mock SNe Ia at z < 0.067 on Uchuu; recovers the input 0.428 to 0.1 %. First systematic budget for the reconstruction-and-scaling method | arXiv:2606.14962 |
+| Tonegawa et al. 2024 | fσ8 = 0.361 (linear) vs 0.376 (PT) | HR4 N-body mocks; the linear-template bias of the reading notes above | arXiv:2309.14457 |
+| Ravoux et al. 2025 | — | `flip` framework: field-level covariance model with wide-angle corrections + geometry-dependent Fisher forecast. No data fσ8 is reported | arXiv:2501.16852; A&A 698, A273 |
+| Rosselli et al. 2025 | — | Growth-rate forecast from LSST SN peculiar velocities (10 %, `surveys-and-data.md` §4) | arXiv:2507.00157 |
+
+**Excluded as bulk flows, not fσ8**, though often cited alongside: Watkins et al. 2023
+(arXiv:2302.02028), Whitford et al. 2023 (arXiv:2306.11269), Do et al. 2026 (Hawai'i Supernova
+Flows, arXiv:2606.17142); see §3. Crisman, Quartin & Rebouças 2026 (arXiv:2604.06361; Phys. Dark
+Univ. 53, 102391): in scope, but quotes σ8 and γ, not fσ8 (§2). Pike & Hudson 2005: β_K = 0.49 ±
+0.04 and σ8(Ω_m/0.3)^0.6 = 0.91 ± 0.12 (0.85 ± 0.05 with IRAS); fσ8 would need a value of Ω_m and
+the GR growth index, one assumption beyond the `der` rows, and no such conversion is published.
 
 ---
 
 ## 1. DESI DR1 Peculiar Velocity Survey (arXiv 2025-12-02)
 <!-- key: desi-dr1-peculiar-velocity-survey-arxiv-2025-12 -->
 
-Seven companion papers. The three fσ8 values and the consensus are in that table; the rows below
-are what it does not carry.
+Seven companion papers. The three fσ8 values and the consensus are also in §0; the rows below
+are what it does not carry. The DESI DR1 summary of the 2026-08 compilation is merged here (folded
+on 2026-10-20 from the compilation of 2026-08-12/14, in which `[src]` meant "traced to the paper"
+and `[der]` "relabelled or derived, the paper does not quote fσ8"): one dataset, three estimators,
+"not independent measurements and must never be averaged as if they were".
 
 | Quantity | Value | Paper | Flag |
 |---|---|---|---|
@@ -54,10 +208,8 @@ posterior by construction".
 
 Reading notes.
 
-- The three estimators give 0.391 (correlation functions), 0.440 (power spectra) and 0.483
-  (maximum-likelihood fields) on the same catalogue; the field-level and correlation-function
-  abstracts call the other analyses consistent within 1σ [src: arXiv:2512.03229, arXiv:2512.03230,
-  arXiv:2512.03231].
+- The field-level and correlation-function abstracts call the three analyses consistent within 1σ
+  [src: arXiv:2512.03229, arXiv:2512.03230, arXiv:2512.03231].
 - The correlation-function paper quotes its companions as 0.482 +0.049/−0.026 (field-level, before
   the ×1.64 error inflation of arXiv:2512.03229 Sect. 5) and 0.443 +0.113/−0.070 (power spectra),
   not the abstract values above, which were re-read on arXiv on 2026-10-14 [src: arXiv:2512.03230,
@@ -81,12 +233,12 @@ Reading notes.
 ## 2. Other measurements, mid-2025 to the snapshot
 <!-- key: other-measurements-mid-2025-to-the-snapshot -->
 
-Rows already in the fσ8 table of `pv-surveys.md` are marked "in table"; they are listed so the 2025–2026 picture is
+Rows already in the fσ8 table of §0 are marked "in table"; they are listed so the 2025–2026 picture is
 complete in one place, with the model each assumes.
 
 | Result | Value | Data | Model / method | Citation | Flag |
 |---|---|---|---|---|---|
-| fσ8 and S8, TF + SN Ia (in table) | fσ8 = 0.412 ± 0.018 (linear σ8), S8 = 0.798 ± 0.035 | CF4 TF, Pantheon+ SNe vs 2M++ | hierarchical forward model of each indicator against a linear-theory reconstruction; flat ΛCDM, f monotonic in Ω_m | Stiskalek 2025, arXiv:2509.20235 (MNRAS 2026; "Stiskalek 2026" in the hub file) | [src] |
+| fσ8 and S8, TF + SN Ia (in table) | fσ8 = 0.412 ± 0.018 (linear σ8), S8 = 0.798 ± 0.035 | CF4 TF, Pantheon+ SNe vs 2M++ | hierarchical forward model of each indicator against a linear-theory reconstruction; flat ΛCDM, f monotonic in Ω_m | Stiskalek 2025, arXiv:2509.20235 (MNRAS 2026; "Stiskalek 2026" in §0) | [src] |
 | fσ8 from SN magnitude × galaxy correlations (in table) | 0.384 +0.094/−0.157 at z = 0.03 | Pantheon+ × DESI DR1 BGS, z < 0.1 | auto- and cross-correlation functions, N-body covariance | Nguyen et al. 2025, arXiv:2510.07673 | [src] |
 | σ8 from SN magnitudes alone | 0.73 ± 0.22 (Pantheon+); 0.70 +0.31/−0.38 (DES-Y5); 1.02 +0.38/−0.45 (DES-Dovekie) | SN velocity-induced magnitude covariance | flat ΛCDM | Crisman, Quartin & Rebouças 2026, arXiv:2604.06361 | [src] |
 | Growth index, SN + Planck PR4, free Ω_k | γ = 0.519 +0.061/−0.099 (Pantheon+); 0.500 +0.054/−0.098 (DES-Y5); 0.525 +0.074/−0.073 (DES-Dovekie) | same | ΛCDM + γ + Ω_k | arXiv:2604.06361 | [src] |
@@ -106,7 +258,7 @@ Reading notes.
   to real-space clustering), made possible because CF4++ gives real-space positions. It does not use
   the velocity two-point function and should not be grouped with it [src: arXiv:2605.00450].
 - The β = 0.31 ± 0.01 of Watkins et al. has an error bar several times smaller than any fσ8 in the
-  table of `pv-surveys.md`. The abstract does not say what the error includes; a fit against a fixed predicted
+  table of §0. The abstract does not say what the error includes; a fit against a fixed predicted
   field does not carry the variance of the density field, which dominates the error of Stiskalek
   2025 ("uncertainty dominated by the variance of the 2M++ galaxy field") [src: arXiv:2512.03168,
   arXiv:2509.20235].
@@ -307,6 +459,53 @@ Reading notes.
 | DESI PV Hubble-flow H0 | 76.05 ± 0.35 ± 0.49 plus a ± 4.86 term, Coma SBF anchor, EDR (arXiv:2408.13842) → 73.7 ± 0.06 ± 1.1, SN Ia anchor, DR1 (arXiv:2512.03232) | DR1 supersedes EDR |
 | kSZ-velocity f_NL | −39 +40/−33 → −180 +61/−86 → 15.9 +34.6/−34.4 (§4) | DESI DR2 × ACT DR6 current |
 
+## 7. History of the fσ8 compilation: values corrected or removed at source
+<!-- key: history-of-the-fsigma8-compilation-values -->
+
+Folded on 2026-10-20 from the compilation of 2026-08-12/14, in which `[src]` meant "traced to the
+paper" and `[der]` "relabelled or derived, the paper does not quote fσ8".
+
+The compilation started from Turner, *Cosmology with Peculiar Velocity Surveys* (arXiv:2411.19484,
+an Elsevier *Encyclopedia of Astrophysics* chapter; survey descriptions in `surveys-and-data.md`
+§0–1). **Its Table 1 is not a safe source for individual values** (checked 2026-08-13): six values
+disagree with the papers — five in scope, below, and Beutler 2012, out of scope — four entries are
+not peculiar-velocity measurements, and its method column mixes fitting technique with observable
+(`physics-and-methods.md` §0). A review may quote a different row of a paper's results table, so
+this need not be an error of the review; the rate was 6 of 21 checked, 29 %.
+
+| Paper | Turner Table 1 | Source | Comment |
+|---|---|---|---|
+| Said et al. 2020 | 0.311 ± 0.027 | **0.338 ± 0.027** (abstract) | the abstract gives the *combined* 6dFGS+SDSS value at z_eff = 0.035; 0.311 is likely one survey alone |
+| Boubel et al. 2024 | 0.360 ± 0.030 | **0.35 ± 0.03** (abstract) | arXiv v2 abstract vs possibly the published MNRAS value |
+| Dupuy et al. 2019 | 0.430 ± 0.140 | **0.43 (±0.03)_obs (±0.11)_cosmic** (abstract) | Turner combines the two error terms; the split matters, since the cosmic-variance term is irreducible |
+| Turner et al. 2023 | 0.325 ± 0.075 | **0.358 ± 0.075** (abstract) | the abstract value is for 27 < s < 123 h⁻¹Mpc combining velocity and density statistics; the table presumably quotes a different scale cut of the same paper |
+| Johnson et al. 2014 | 0.418 ± 0.055 | **0.418 ± 0.065** (conclusions) | 0.055 is Beutler's error, quoted in the adjacent sentence of Johnson's own text |
+
+Values circulating in secondary summaries for the DESI DR1 PV correlation-function and
+power-spectrum analyses (0.402 +0.075/−0.077 and 0.443 +0.110/−0.070) do not match the papers,
+which give 0.391 +0.080/−0.081 and 0.440 +0.080/−0.096; cite the arXiv abstracts. (The
+correlation-function paper itself quotes its power-spectrum companion as 0.443 +0.113/−0.070, §1.)
+
+**Removed as out of scope** on 2026-08-13: present in Turner (2024) Table 1, absent from §0. All
+four are redshift-space distortions of the 6dFGS *redshift* survey — no measured distances,
+therefore not peculiar velocities; they measure the same growth rate by a different probe. The two
+Achitouv values also share galaxies with each other.
+
+| Reference | fσ8 | ID |
+|---|---|---|
+| Achitouv et al. 2017, galaxy–galaxy | 0.42 ± 0.06 | arXiv:1606.03092 |
+| Achitouv et al. 2017, void–galaxy | 0.39 ± 0.11 | arXiv:1606.03092 |
+| Beutler et al. 2012 | 0.423 ± 0.055 (Turner: 0.428 +0.079/−0.068) | arXiv:1204.4725 |
+| Blake, Carter & Koda 2018 | 0.38 ± 0.12 | arXiv:1801.04969 |
+
+**Corrected on 2026-10-20** while re-reading ten values (all ten values matched): Johnson et al.
+2014's 0.418 ± 0.065 is the 6dFGSv **+ SNe** fit; 6dFGSv alone gives 0.428 +0.079/−0.068 and the
+SNe alone 0.417 +0.097/−0.084 [src: arXiv:1404.3799, Sect. 5.4 and Table 3] — the indicator, given
+as FP with dataset 6dFGSv in both 2026-08 tables, is now FP+SN. The 6dFGSv-alone value is the
+number listed above as Turner's entry for Beutler 2012 [der: equality of the numbers only].
+Huterer et al. 2017's 0.428 is for the Supercal SNe Ia and the 6dFGS FP distances "combined
+appropriately" [src: arXiv:1611.09862, abstract] — indicator given as SN, now SN+FP.
+
 ## Not verified in this file
 <!-- key: not-verified-in-this-file -->
 
@@ -314,5 +513,7 @@ Reading notes.
   240 h⁻¹Mpc); the Peery et al. 2018 amplitude is now in §3a.
 - The estimator behind the Courtois et al. 2025 bulk flow (abstract only).
 - Any DESI DR2 peculiar-velocity result: none found up to 2026-10-08.
-- fσ8 values of the table in `pv-surveys.md` were not re-read this session except those quoted above from
-  abstracts.
+- §0, §0a–c, §7 and the merged sentence of §1: folded from the 2026-08 compilation, not re-read, except ten values
+  re-read on 2026-10-20 (rows marked "re-read"; Johnson 2014 in Sect. 5.4 and 6, the others in the
+  abstract), all matching, two indicator labels corrected (§7). Not re-read: the uncoded rows (Ma
+  2012, Nguyen 2025, Turnbull 2012) and Tonegawa's 5.2 % (not in its abstract).

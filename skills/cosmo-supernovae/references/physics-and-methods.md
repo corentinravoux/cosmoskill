@@ -392,9 +392,8 @@ source of confusion:
 <!-- key: redshifts-and-peculiar-velocity-corrections -->
 
 The use of SNe as velocity tracers (growth rate, bulk flow) belongs to
-`cosmo-peculiar-velocities`; the likelihood framework for that is the one of
-Ravoux et al. 2025 (arXiv:2501.16852). Here peculiar velocities are a
-nuisance.
+`cosmo-peculiar-velocities`, which describes the likelihood frameworks used
+for it. Here peculiar velocities are a nuisance.
 
 - **Frame.** Heliocentric redshifts are converted to the CMB frame with the
   exact multiplicative formula, then corrected for the host peculiar velocity

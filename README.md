@@ -97,7 +97,7 @@ reports citations without a row and rows without a citation.
 
 ```bash
 S=skills/observational-cosmology/scripts
-python3 $S/verify_sources.py skills/cosmo-lyman-alpha
+python3 $S/verify_sources.py skills/cosmo-cmb
 python3 $S/verify_sources.py skills/*/                 # all of them
 python3 $S/verify_sources.py --offline skills/*/       # no network
 python3 $S/fetch_paper.py 2503.14739 --abstract        # read what a paper says
@@ -132,13 +132,13 @@ and say when an answer draws on them. `docs/layers.md` explains the format.
 ```bash
 L=skills/observational-cosmology/scripts/layers.py
 python3 $L init
-python3 $L note cosmo-lyman-alpha results#cosmology-from-p1d "quote the mean-flux prior with the value"
-python3 $L source cosmo-lyman-alpha <arXiv id> --role method    # row taken from arXiv
-python3 $L dossier cosmo-lyman-alpha qmle-window                # template to fill
+python3 $L note cosmo-weak-lensing results#the-cmb-reference-values "quote S8 differences against both CMB references"
+python3 $L source cosmo-supernovae <arXiv id> --role method      # row taken from arXiv
+python3 $L dossier cosmo-clusters richness-mass-calibration      # template to fill
 python3 $L check                                                # after updating the package
 ```
 
-In a conversation the assistant runs these for you: "note for my Lyα work
+In a conversation the assistant runs these for you: "note, for my cluster work,
 that ...", "add this paper to my layer".
 
 ## What to trust, and how far
@@ -183,9 +183,14 @@ Limits of this version in particular:
   statements could not be located at source and are logged as unconfirmed.
 - A local layer adds notes, papers and dossiers. It cannot replace a value
   of the package, and nothing in it is promoted to the package.
+- Out of scope: searches for dark-matter particles by direct or indirect
+  detection and at colliders, and high-energy particle astrophysics (cosmic
+  rays, neutrino telescopes). Dark matter is treated through its
+  cosmological effects only (`cosmo-neutrinos-dark-matter`); laboratory
+  neutrino-mass limits appear where cosmology is compared with them.
 
-`docs/specs/` and `docs/plans/` hold the specification and the roadmap that
-address these.
+`docs/specs/` holds the specification; the plan followed now is
+`docs/plans/2026-10-20-plan.md`.
 
 ## Installing
 
@@ -199,7 +204,7 @@ Three routes. Use one only: two routes at once list every skill twice.
 ```
 
 Update later with `claude plugin update cosmoskill@cosmoskill`. Skills are
-then named with the plugin prefix: `cosmoskill:cosmo-lyman-alpha`.
+then named with the plugin prefix: `cosmoskill:cosmo-cmb`.
 
 **B. As a clone inside the skills directory.**
 
@@ -218,7 +223,7 @@ for d in cosmoskill/skills/*/; do
 done
 ```
 
-Update with `git pull`. Names are plain: `cosmo-lyman-alpha`.
+Update with `git pull`. Names are plain: `cosmo-cmb`.
 
 The scripts need Python 3.9 or later and nothing outside the standard
 library.

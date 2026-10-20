@@ -156,7 +156,7 @@ Forecasts that cite CMB-S4 (for example the Euclid combinations in arXiv:2507.15
 
 - Whether a BK24 r result has been presented in talks; only arXiv was searched.
 - Any Simons Observatory measurement (first B-mode spectra, n_s) announced outside arXiv.
-- The pre-reformation LiteBIRD requirement (usually quoted as δr < 0.001) and the CMB-S4 σ(r) target referred to in the list of stale claims were not read at source this session.
+- The CMB-S4 σ(r) target referred to in the list of stale claims was not read at source this session.
 - The status of the 2025–2026 papers proposing higher-curvature corrections to Starobinsky inflation and critiques of them: several were identified by title but could not be included within the source cap.
 - SPT-3G D1 constraints on running and curvature, and any SPT statement on inflation models.
 - The large-angle CMB anomalies and their possible primordial origin: belongs to `cosmo-tensions-anomalies`, not researched here.

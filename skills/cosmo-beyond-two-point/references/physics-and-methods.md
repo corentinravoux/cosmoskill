@@ -463,10 +463,12 @@ it means cannot be checked.
    densities) are the data vector of a multivariate Gaussian whose covariance
    is computed from a model power spectrum; no initial conditions are sampled.
    It is optimal for a Gaussian field and uses two-point information only;
-   nuisance parameters of the field are fitted with the cosmology. This is
-   what `flip` implements, with wide-angle covariance models; the paper
-   presents it as the foundation for a non-linear extension (Ravoux et al.
-   2025, arXiv:2501.16852). See `cosmo-peculiar-velocities`.
+   nuisance parameters of the field are fitted with the cosmology. It was
+   developed for peculiar-velocity surveys (Johnson et al. 2014, arXiv:1404.3799;
+   Adams & Blake 2017, arXiv:1706.05205; Lai et al. 2023, arXiv:2209.04166);
+   one implementation, flip, adds wide-angle covariance models and presents
+   the form as the foundation for a non-linear extension (arXiv:2501.16852).
+   See `cosmo-peculiar-velocities`.
 3. **Neural field-level methods.** A network takes the gridded field and
    returns either compressed summaries for simulation-based inference (SimBIG,
    Lemos et al. 2024, arXiv:2310.15256) or a reconstructed linear field (LiFT,

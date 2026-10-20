@@ -29,7 +29,7 @@ session. "Collab." marks a result published by the survey collaboration.
 | Third-order shear ⟨M_ap³⟩ | Yes: DES Y3, HSC Y3, KiDS-Legacy | Simulated likelihood analyses, internal consistency | Yes (DES, KiDS) |
 | Lensing peaks, PDF, MFs, scattering, topology, CNN | Yes: DES Y3, HSC Y1, KiDS-450/1000 | Coverage tests, feedback contamination tests | Yes (DES Y3) |
 | Field-level inference with sampled initial conditions | No parameters; reconstructions of 2M++, BOSS, Quaia | Posterior predictive tests; CMB-lensing cross-correlation; Beyond-2pt real space, σ8 only | No |
-| Gaussian field-level likelihood (the method flip implements) | Yes: one of the three DESI DR1 peculiar-velocity fσ8 estimators [sec, `cosmo-peculiar-velocities`] | 675 mocks [sec, same] | Yes |
+| Gaussian field-level likelihood | Yes: one of the three DESI DR1 peculiar-velocity fσ8 estimators [sec, `cosmo-peculiar-velocities`] | 675 mocks [sec, same] | Yes |
 | Neural field-level (CNN summary, LiFT) | Yes: 10% of BOSS; DESI DR1 LRG BAO | Changed-forward-model mock sets | No |
 | SBI of P + B | Yes: 10% of BOSS | SimBIG mock challenge; Beyond-2pt | No |
 
@@ -182,8 +182,8 @@ The current position is "no evidence for parity violation", not "detection".
 | β of the Lyα forest around voids | 1.21 ± 0.18 | same, linear RSD model with tomographic effect | arXiv:2203.11045 | [src] |
 | Galaxy underdensity in tomography voids | 5.95σ against random cells, 432 coeval galaxies | CLAMATO, z ≈ 2.3 | arXiv:1710.02612 | [src] |
 
-Agreement with the sibling skill: `cosmo-lyman-alpha` quotes β = 1.21 ± 0.18,
-13 h⁻¹Mpc and 220 deg²; all three match the sources read here.
+This is the one place where the void–forest β is quoted; `cosmo-lyman-alpha`
+points here. Its map figures, 13 h⁻¹Mpc and 220 deg², match the sources read here.
 
 ### 2.5 History and what is superseded
 <!-- key: history-and-what-is-superseded -->
@@ -335,7 +335,7 @@ None of these quotes a cosmological parameter.
 | DESI DR1 LRG, LiFT reconstruction | Errors on α_iso smaller by 13%, 24%, 30% and on α_AP by 5%, 22%, 30% in LRG1, LRG2, LRG3 than the DESI DR1 standard reconstruction; figure of merit × 1.2, 1.7, 2.0; central values consistent with DR1 and DR2 | arXiv:2609.14862 | [src] |
 | BOSS CMASS subsample, SimBIG CNN | Ω_m = 0.267 +0.033/−0.029, σ8 = 0.762 +0.036/−0.035, H0 = 64.5 ± 3.8; σ8 2.65 times tighter than P_ℓ | arXiv:2310.15256 | [src] |
 
-### 5.4 Gaussian field-level likelihood (flip)
+### 5.4 Gaussian field-level likelihood
 <!-- key: gaussian-field-level-likelihood-flip -->
 
 | Quantity | Value | Basis | Citation | Flag |

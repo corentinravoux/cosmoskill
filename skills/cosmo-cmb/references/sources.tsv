@@ -130,3 +130,22 @@ Coulton2023	2307.01258	Coulton	2023	The Atacama Cosmology Telescope: High-resolu
 Abylkairov2020	2012.04032	Abylkairov	2020	Partially Constrained Internal Linear Combination: a method for low-noise CMB foreground mitigation	method
 Kwok2025	2509.10604	Kwok	2025	CMB component-separated power spectrum estimation by Spectral Internal Linear Combination (SpILC)	critique
 Chen2026	2608.28487	Chen	2026	Enhancing Cosmological Constraints from Foreground-Cleaned CMB Maps Using Large-Scale Structure Surveys	forecast
+HuWhite1997	astro-ph/9706147	Hu	1997	A CMB Polarization Primer	review
+EfstathiouBond1998	astro-ph/9807103	Efstathiou	1998	Cosmic Confusion: Degeneracies among Cosmological Parameters Derived from Measurements of Microwave Background Anisotropies	foundation
+PenziasWilson1965	doi:10.1086/148307	Penzias	1965	A Measurement of Excess Antenna Temperature at 4080 Mc/s.	foundation
+Dicke1965	doi:10.1086/148306	Dicke	1965	Cosmic Black-Body Radiation.	foundation
+Fixsen1996	astro-ph/9605054	Fixsen	1996	The Cosmic Microwave Background Spectrum from the Full COBE/FIRAS Data Set	foundation
+Smoot1992	doi:10.1086/186504	Smoot	1992	Structure in the COBE differential microwave radiometer first-year maps	results
+Bennett1996	astro-ph/9601067	Bennett	1996	4-Year COBE DMR Cosmic Microwave Background Observations: Maps and Basic Results	results
+deBernardis2000	astro-ph/0004404	de Bernardis	2000	A Flat Universe from High-Resolution Maps of the Cosmic Microwave Background Radiation	results
+Hanany2000	astro-ph/0005123	Hanany	2000	MAXIMA-1: A Measurement of the Cosmic Microwave Background Anisotropy on angular scales of 10 arcminutes to 5 degrees	results
+Kovac2002	astro-ph/0209478	Kovac	2002	Detection of Polarization in the Cosmic Microwave Background using DASI	results
+Bennett2003	astro-ph/0302207	Bennett	2003	First Year Wilkinson Microwave Anisotropy Probe (WMAP) Observations: Preliminary Maps and Basic Results	data
+Kogut2003	astro-ph/0302213	Kogut	2003	Wilkinson Microwave Anisotropy Probe (WMAP) First Year Observations: TE Polarization	results
+Spergel2003	astro-ph/0302209	Spergel	2003	First Year Wilkinson Microwave Anisotropy Probe (WMAP) Observations: Determination of Cosmological Parameters	results
+Bennett2012	1212.5225	Bennett	2012	Nine-Year Wilkinson Microwave Anisotropy Probe (WMAP) Observations: Final Maps and Results	data
+Planck2013XVI	1303.5076	Planck Collaboration	2013	Planck 2013 results. XVI. Cosmological parameters	results
+Planck2015I	1502.01582	Planck Collaboration	2015	Planck 2015 results. I. Overview of products and scientific results	data
+Das2011	1103.2124	Das	2011	Detection of the Power Spectrum of Cosmic Microwave Background Lensing by the Atacama Cosmology Telescope	results
+Hanson2013	1307.5830	Hanson	2013	Detection of B-mode Polarization in the Cosmic Microwave Background with Data from the South Pole Telescope	results
+BICEP2_2014	1403.3985	Ade	2014	BICEP2 I: Detection Of B-mode Polarization at Degree Angular Scales	critique

@@ -4,13 +4,33 @@ Scope: the systematics that decide whether a peculiar-velocity growth or flow me
 trusted, each with its mechanism, its quantified size where a paper gives one, the standard
 mitigation, the validation test and the reference a referee expects. Snapshot: 2026-10-14
 
-The qualitative list by indicator (TF linewidth and inclination, FP aperture and stellar population,
-SN standardisation) is in
-`pv-surveys.md`
-§7 and is not repeated. This file adds the numbers.
+§0 gives the qualitative list by indicator; §1–9 add the numbers.
 
 Flags as in `results.md`. "DESI DR1" means the December 2025 peculiar-velocity papers
 arXiv:2512.03226 to arXiv:2512.03232.
+
+---
+
+## 0. Systematics by indicator — the qualitative list
+
+Folded on 2026-10-20 from the compilation of 2026-08-12/14, in which `[src]` meant "traced to the
+paper" and `[der]` "relabelled or derived, the paper does not quote fσ8".
+
+**Common to all.** Malmquist / selection bias, homogeneous vs inhomogeneous — the single largest
+source of disagreement between analyses (§2); log-distance vs velocity estimator bias (the
+ratio-of-distances estimator is biased; use log-distance ratios, §9); zero-point calibration, fully
+degenerate with a monopole flow (§1); non-linear velocity dispersion σ_v and the damping model (§5);
+coherent bulk flow × survey window; fiducial-cosmology dependence and the fσ8–σ8–γ degeneracies.
+
+**TF-specific.** Inclination corrections, HI linewidth definition (W₅₀ vs W₂₀), extinction,
+morphological-type corrections (the SFI++ erratum came from exactly this), HI self-absorption.
+
+**FP-specific.** Aperture correction on σ, stellar-population and environmental dependence of the
+plane (§4), surface-brightness selection, plane evolution with z.
+
+**SN-specific.** SALT2 vs SALT3 standardisation, host-mass step, intrinsic-scatter model,
+photometric vs spectroscopic classification, and — for PV work — the peculiar-velocity correction
+applied *to build the sample*, which is circular if the same reconstruction is later the model.
 
 ---
 
@@ -94,9 +114,12 @@ against a statistical uncertainty of ~0.03; the joint TF + SN result moves only 
 0.035 to 0.792 ± 0.035. SDSS FP and 6dF FP agree within 1.5σ under linear bias and are "driven into
 3.3σ tension" under the quadratic variant. The author notes the quadratic extension "is not
 self-consistent at the field level", because the velocity field is still a linear map of a linearly
-biased density, and treats it "as a sensitivity test" [src: all from arXiv:2509.20235, §5]. The
-corresponding fσ8 shifts per sample are quoted in the compilation (`fsigma8-pv-compilation.md`
-§1) [sec].
+biased density, and treats it "as a sensitivity test" [src: all from arXiv:2509.20235, §5]. In fσ8
+(his Table 1): 6dF FP moves from fσ8L = 0.379 ± 0.016 to **0.301 ± 0.015** under the quadratic
+treatment, SDSS FP from 0.412 to 0.373, while the TFR and SN samples barely move [sec: Table 1 as
+read for the 2026-08 compilation; folded on 2026-10-20 from the compilation of 2026-08-12/14, in
+which `[src]` meant "traced to the paper" and `[der]` "relabelled or derived, the paper does not
+quote fσ8"].
 
 **Why FP is exposed.** Early types live in the densest regions (largest b1), so the line-of-sight
 density prior matters most for them [src: arXiv:2509.20235, §5]; and their per-object distance error
@@ -194,7 +217,7 @@ non-linear motions; σ_u is degenerate with fσ8.
 | Systematic quoted for SDSS PV (field-level, central finite difference, δσ_u = 1 h⁻¹Mpc) | ±0.009 | arXiv:2209.04166 | [src: Sect. 6.1, eqs. 45–47] |
 | Systematic quoted for the 6dFGS joint RSD+PV fit | ±0.061, larger than the statistical ±0.052; σ_u contributes only 1.09 × 10⁻³ — the term is the redshift-dependent bias α_b (6.06 × 10⁻²); k_max 1.69 × 10⁻³, σ_g 2.84 × 10⁻³ | arXiv:2004.06399 | [src: Table 5, Sect. 5.1.1] |
 | Linear instead of non-linear P_θθ in the velocity covariance | fσ8 biased by (−2.7 ± 0.06) % on 27 ZTF mocks, because linear P overestimates small-scale power and hence the variance | arXiv:2303.01198 | [src: Sect. 5.2] |
-| Linear template for velocity correlation functions | 5.2 % low on HR4 mocks | Tonegawa et al. 2024, arXiv:2309.14457, as reported in `fsigma8-pv-compilation.md` | [sec] |
+| Linear template for velocity correlation functions | 5.2 % low on HR4 mocks | Tonegawa et al. 2024, arXiv:2309.14457, as reported in the 2026-08 compilation (`results.md` §0) | [sec] |
 
 The three "preferred" σ_u values span a factor of three. A result that fixes σ_u must show the
 fσ8(σ_u) slope; a result that samples it must show the prior.
@@ -219,7 +242,7 @@ arXiv:2512.03229].
   "the uncertainty dominated by the variance of the 2M++ galaxy field" (σ8 of the galaxies) [src:
   arXiv:2509.20235].
 - σ8 normalisation: these analyses return the **linear** σ8; the offset to the non-linear convention
-  is 6.5 % in Carrick et al. 2015 (`fsigma8-pv-compilation.md` §4b) [sec].
+  is 6.5 % in Carrick et al. 2015 (`results.md` §0b) [sec].
 - External flow: a residual dipole of 159 ± 23 to 171 ± 11 km/s is fitted as a free "V_ext"
   (`results.md` §3b); Watkins et al. 2025 (arXiv:2512.03168) argue it "increases monotonically with
   scale", against the usual assumption of a spatially uniform external flow [src].
@@ -244,7 +267,7 @@ definition of ψ1, ψ2 themselves.
 
 - Low-z volumes are small: cosmic variance on fσ8 from the 2M++ volume is ~5 % [src:
   arXiv:2312.03904]; Dupuy et al. split their CF3 error into ±0.03 observational and ±0.11 cosmic
-  [sec: `fsigma8-pv-compilation.md`].
+  [sec: 2026-08 compilation, `results.md` §0].
 - Mocks drawn from finite boxes under-predict large-scale velocity correlations: with a 1 h⁻¹Gpc box
   the halo velocity correlation is suppressed relative to linear theory; fitting with k_min = 0
   biases fσ8 "significantly" when bin correlations are ignored; marginalising over k_min restores
@@ -444,13 +467,14 @@ are at the paper's z_eff (0.07 for DESI DR1) and against the paper's own fiducia
    measured or derived from β or Ω_m^0.55 σ8.
 10. For a bulk flow: estimator, window, depth, the ΛCDM expectation for the
     *same* window, and mock-calibrated errors.
-11. Shared data: which rows of `fsigma8-pv-compilation.md` use the same galaxies.
+11. Shared data: which rows of the fσ8 table (`results.md` §0) use the same galaxies.
 12. For kSZ velocities: the optical-depth or b_v degeneracy and the external
     information that breaks it.
 
 ## Not verified in this file
 <!-- key: not-verified-in-this-file -->
 
+- §0, and the Stiskalek fσ8 shifts of §2: folded from the 2026-08 compilation, not re-read.
 - The individual terms behind the 0.29 km/s/Mpc DESI DR1 zero-point systematic (its Fig. 10).
 - Systematic budgets of the 2MTF velocity power spectrum (arXiv:1706.05130), of the 6dFGS
   correlation functions (arXiv:2207.03707), and of the SN velocity–density fits (arXiv:1912.09383,

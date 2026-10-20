@@ -332,7 +332,7 @@ Recent constraint from the high-z P1D on helium reionisation by faint quasars: a
 | LATIS data release | 7408 spectra, 5575 secure redshifts (4176 at z > 1.7), 4.7 × 10⁵ forest pixels, maps over 1.65 deg², z = 2.2–2.8, resolution 4 h⁻¹ cMpc — "the largest such maps to date" | arXiv:2510.08815 | [src] |
 | LATIS structure "Antu" | z = 2.685, five IGM-selected protoclusters, total mass 3 × 10¹⁵ M☉ | arXiv:2507.10949 | [src] |
 | eBOSS Stripe 82 map | 220 deg², 37 QSO spectra per deg², mean S/N 2 per Å, volume 0.94 h⁻³Gpc³, resolution 13 h⁻¹Mpc | arXiv:2004.01448 | [src] |
-| Void × Lyα forest cross-correlation | RSD around voids detected at 8σ; β = 1.21 ± 0.18; median z = 2.49 | arXiv:2203.11045 | [src] |
+| Void × Lyα forest cross-correlation | in `cosmo-beyond-two-point`, `results.md` (voids), the home of void measurements | arXiv:2203.11045 | — |
 | CMB lensing × P1D squeezed bispectrum | 4.8σ at z_eff = 2.4; Planck PR3 lensing, > 280,000 DESI Y1 QSO spectra | arXiv:2405.14988 | [src] |
 | Weak lensing of the forest, DESI DR1 | A_L = 0.42 ± 0.43 (auto), 0.87 ± 0.48 (cross), combined 0.62 ± 0.33: not a detection | arXiv:2609.36949 | [src] |
 | 3D power spectrum, eBOSS DR16 | 205,012 spectra, z_eff = 2.334; Kaiser + non-linear correction fits 0.02 ≤ k ≤ 0.35 h/Mpc at 1–2σ | arXiv:2403.08241 | [src] |

@@ -44,6 +44,14 @@ its numbers supersede the digest in this hub.
 | Cosmic web as an object: T-web/V-web/NEXUS/DisPerSE classification, filaments, walls, nodes, voids as structures, environment dependence of galaxies, spin and shape alignments, filament gas and missing baryons (X-ray, tSZ, FRBs), protoclusters, web reconstructions | `cosmo-cosmic-web` |
 | Early-Universe physics beyond the standard history: PTA and LVK stochastic backgrounds, primordial black holes, cosmic strings and defects, phase transitions, early dark energy and modified recombination (physics and limits), varying constants, primordial magnetic fields, axion-like particles, CMB spectral distortions, dark-ages energy injection | `cosmo-early-universe-exotica` |
 
+Topics shared by several skills have one home; the other skills point to it.
+Voids as a cosmological probe (finders, size function, void–galaxy AP and
+RSD, void lensing): `cosmo-beyond-two-point`; voids as structures of the web:
+`cosmo-cosmic-web`; forest data behind tomographic voids: `cosmo-lyman-alpha`.
+Field-level inference as a method: `cosmo-beyond-two-point`
+(`deep/field-level-inference.md`); its applications to velocities and to the
+forest are in `cosmo-peculiar-velocities` and `cosmo-lyman-alpha`.
+
 How the suite is built, checked and updated, with the update cycle step by
 step: `references/suite-conventions.md`. Design documents and test logs are in the
 `docs/` directory of the package repository.

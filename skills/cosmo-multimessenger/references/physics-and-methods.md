@@ -408,13 +408,6 @@ physical space, so the correlation is maximal on the true `d_L(z)` relation.
 - Requirements for a percent-level H0 (forecast): `σ_dL = 0.1 d_L`, at least 5000 dark
   sirens and good localisation (arXiv:2510.19931) [src].
 
-A field-level variant grids the sirens in `d_L` space and compares the resulting density
-field with a galaxy field in redshift space. The `flip` package (arXiv:2501.16852)
-contains a density data vector for that purpose, `GWDensMesh` in
-`flip/data_vector/gw_vectors.py` [src: public flip repository, `main` branch, class
-present on 2026-10-12]. How it is built was read in a development copy and is listed
-under "Not verified".
-
 ## 7. Fast radio bursts: dispersion measure–redshift relation
 <!-- key: fast-radio-bursts-dispersion-measure-redshift -->
 
@@ -577,5 +570,3 @@ no cosmological measurement yet.
   Appendix C of arXiv:2509.04348) and their prior ranges; §4 gives their content as described in
   Sect. II.3 only.
 - GausSN (named in arXiv:2608.28427) and the cluster-lens modelling codes.
-- How `GWDensMesh` builds the siren density field (per-event sky-position kernels were
-  seen in a development copy of flip, not in a release).

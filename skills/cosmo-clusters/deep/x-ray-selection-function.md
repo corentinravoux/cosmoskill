@@ -283,7 +283,7 @@ area (1000 deg² tested) [src: abstract, Sect. 7.2].
 
 - **Faint clusters under-predicted.** The eRASS1 model predicts too few
   eFEDS clusters in eRASS1 (5σ for the cosmology sample, > 7σ for the
-  primary one), with P_i systematically below the observed match
+  eRASS1-main sample), with P_i systematically below the observed match
   fractions; no single cause was found, and the test proved highly
   sensitive to small model changes [src: arXiv:2402.08457, Sects. 6.2,
   6.4, 7.2.4]. The bright end matches SPT [src: Sect. 8]. Test: external

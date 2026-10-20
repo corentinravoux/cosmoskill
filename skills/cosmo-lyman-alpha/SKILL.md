@@ -1,6 +1,6 @@
 ---
 name: cosmo-lyman-alpha
-description: Use when reviewing, planning or fact-checking Lyman-alpha forest work — Lyα BAO and Alcock-Paczynski at z~2.3, full shape, 1D flux power spectrum P1D (FFT, QMLE), P3D and P-cross, picca deltas, continuum fitting, distortion matrix, DLA/BAL/metal contamination, Vega fits, Lyα tomography and void cross-correlation, IGM thermal state, Nyx/PRIYA/LaCE/ForestFlow emulators, warm or fuzzy dark matter and neutrino limits from the forest, BOSS/eBOSS/DESI DR1/DR2 Lyα results.
+description: Use when reviewing, planning or fact-checking Lyman-alpha forest work — Lyα BAO and Alcock-Paczynski at z~2.3, full shape, 1D flux power spectrum P1D (FFT, QMLE), P3D and P-cross, picca deltas, continuum fitting, distortion matrix, DLA/BAL/metal contamination, Vega fits, Lyα tomography, IGM thermal state, Nyx/PRIYA/LaCE/ForestFlow emulators, warm or fuzzy dark matter and neutrino limits from the forest, BOSS/eBOSS/DESI DR1/DR2 Lyα results.
 ---
 
 # Lyman-alpha forest — expert reference
@@ -40,7 +40,7 @@ re-verify against the cited paper before a number enters a manuscript.
 - One eBOSS data vector gave σ_8 = 0.733 (PRIYA, arXiv:2309.03943) and 0.841 (EFT, arXiv:2405.13208); amplitude degenerate with mean flux (arXiv:2412.05372).
 - WDM limits: 1.9–5.7 keV, depending on thermal-history priors and k_max (arXiv:1912.09397, arXiv:2309.04533).
 - DESI P1D: FFT and QMLE measured; cosmology uses QMLE (arXiv:2505.09493, arXiv:2505.07974).
-- Tomography regimes: 2–4 h⁻¹Mpc over ≲ 2 deg² with galaxies (CLAMATO, LATIS), 13 h⁻¹Mpc over 220 deg² with quasars (arXiv:2004.01448); void–forest RSD: β = 1.21 ± 0.18 (arXiv:2203.11045).
+- Tomography regimes: 2–4 h⁻¹Mpc over ≲ 2 deg² with galaxies (CLAMATO, LATIS), 13 h⁻¹Mpc over 220 deg² with quasars (arXiv:2004.01448).
 
 ## Systematics a referee checks
 <!-- key: systematics-a-referee-checks -->

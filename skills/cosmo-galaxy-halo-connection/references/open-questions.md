@@ -34,7 +34,8 @@ With DES Y3, HSC Y1 and KiDS-1000 the lensing/clustering ratio is A = 0.79 ±
 - UNIONS lensing finds no significant effect for CMASS and stresses that large
   scales, not only small ones, decide it (arXiv:2606.23651) [src]: the Planck
   HOD over-predicts ΔΣ by only ~7% after shear-bias correction, yet its joint
-  fits sit at S8 = 0.743, set by the large-scale GGL [src: Sect. 7.1, 7.3].
+  fits sit at S8 = 0.743, set by the large-scale GGL [src: Sect. 7.1; Sect. 7.2,
+  Table 3; Sect. 7.3].
 
 **Cosmology side.** Lower S8 reconciles the measurements (arXiv:1611.08606,
 arXiv:2202.07440) [src]; but above 5.25 h⁻¹Mpc the Planck and Lensing
@@ -52,7 +53,7 @@ SHAMe S8 = 0.793, 1.7σ from Planck (arXiv:2507.01601) [src]; satellite
 kinematics S8 = 0.81 ± 0.05 with "no indication of S8 tension"
 (arXiv:2512.14889) [src]; HSC-Y3 × SDSS halo-model 3×2pt S8 = 0.763
 (+0.040, −0.036) (arXiv:2304.00704) [src]; UNIONS × CMASS joint HOD +
-cosmology fits S8 = 0.743 (arXiv:2606.23651) [src: Sect. 7.3]. The central
+cosmology fits S8 = 0.743 (arXiv:2606.23651) [src: Sects. 7.2–7.3]. The central
 values span 0.74–0.81 [der: range of the values just listed; corrected
 2026-10-16 from "0.79–0.81", which omitted KiDS-1000 and the HSC-Y3 and
 UNIONS fits], between and below the low lensing cosmology (0.76) and Planck

@@ -5,7 +5,8 @@ hydrodynamical simulations and applied to a P1D data vector; how the field-level
 and hybrid EFT forward models are fitted and what they reach; how a
 simulation-based (neural posterior) P1D analysis is set up and tested across
 galaxy-formation models; and what each route assumes, gains and loses relative
-to the emulator likelihoods of `deep/p1d-emulators.md`.
+to the emulator likelihoods of `deep/p1d-emulators.md`. Field-level
+inference as a general method is in `cosmo-beyond-two-point/deep/field-level-inference.md`.
 Snapshot: 2026-10-19.
 From: Chaves-Montero et al. 2026 review (arXiv:2605.22489), Sects. 0.6.1,
 0.6.3, 0.6.4.

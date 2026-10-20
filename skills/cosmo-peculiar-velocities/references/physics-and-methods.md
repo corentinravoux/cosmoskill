@@ -4,13 +4,35 @@ Scope: the observables, estimators, covariance models and likelihoods used in di
 peculiar-velocity cosmology, with the equations as the cited papers write them, their range of
 validity, and the public codes. Snapshot: 2026-10-14
 
-Not repeated here: the indicators, the surveys and the four **method families** with the
-classification of every published fσ8, which are in
-`pv-surveys.md`
-(§1–5). This file gives what stands behind each family.
-
+Indicators and surveys: `surveys-and-data.md` §0–1; published fσ8 by family: `results.md` §0.
 Equations are transcribed from the LaTeX source of the cited paper, read this session, in that
 paper's notation: symbols differ between sections.
+
+## 0. Method families
+
+Folded on 2026-10-20 from the compilation of 2026-08-12/14, in which `[src]` meant "traced to the
+paper" and `[der]` "relabelled or derived, the paper does not quote fσ8".
+Grouped by **what the estimator does to the data before fitting**, not by the optimiser: almost
+every analysis maximises a likelihood, so "maximum likelihood" is a fitting detail, not a family.
+Boundaries follow each paper's own words; "Rows" counts rows of the fσ8 table (`results.md` §0).
+
+| Family | What it does | Depends on | Rows | Here |
+|---|---|---|---|---|
+| Field-level likelihood-based inference | the likelihood of the observed density and velocity *field values* is written through a model covariance and maximised or sampled; no summary statistic is measured first ("maximum likelihood fields") | the covariance model and its non-linear damping | 6 | §3 |
+| Two-point statistics | a correlation function, power or momentum spectrum is *measured*, then fitted | the estimator, its window, the fitting template | 16 | §4 |
+| Velocity–density comparison, linear | the velocity field is *predicted* from a redshift-survey density field by **linear theory** — directly, or through a Wiener filter / constrained realisation, still linear dynamics | an external density field, its bias, linear theory | 13 | §5 |
+| Velocity–density comparison, particle forward model | the same, with the field evolved from initial conditions by a **gravity solver on a particle field** (LPT, COLA, particle-mesh, N-body), mildly non-linear | the solver, its resolution, the initial-condition prior | **0** | §5 |
+
+The fitting technique is a separate axis: forward likelihood (Boruah 2020, Stahl 2021), forward
+model (Boubel 2024), hierarchical Bayes (Stiskalek 2026, Ma+2012), MCMC, χ². The families fail
+differently: on the covariance model; on the estimator and template; on the external density field
+and linear theory. Turner (2024) Table 1 puts "maximum-likelihood" beside "power spectrum" and
+"correlation function" (a fitting label among observables) and groups Howlett+2017 with the
+maximum-likelihood analyses, though it measures and fits the velocity power spectrum (its abstract
+finds the Watkins & Feldman estimator "suitable for measuring the velocity power spectrum") [src:
+arXiv:1706.05130, abstract]. Per Lai+2023, "In the development of the maximum likelihood fields
+method, Adams & Blake (2017) were the first to simultaneously model..."; Lai+2023 (arXiv:2209.04166)
+and the DESI analysis (arXiv:2512.03229) name the method in their own abstracts.
 
 ## 1. The observable: log-distance ratio, and the velocity estimators built on it
 <!-- key: the-observable-log-distance-ratio-and-the -->
@@ -20,8 +42,8 @@ that is Gaussian in the logarithm of the distance. The natural observable is the
 
     η_i = log10[ D(z_obs,i) / D(z_cos,i) ]
 
-with D the comoving radial distance, z_obs the observed and z_cos the cosmological redshift (Ravoux
-et al. 2025, arXiv:2501.16852, §3.2) [src]. Johnson et al. 2014 (arXiv:1404.3799) state the reason
+with D the comoving radial distance, z_obs the observed and z_cos the cosmological redshift (notation
+of arXiv:2501.16852, §3.2) [src]. Johnson et al. 2014 (arXiv:1404.3799) state the reason
 it must be used: the intrinsic scatter of the FP and TF relations "is only Gaussian in logarithmic
 distance units; wrongly assuming it is Gaussian in linear (velocity) units can bias cosmological
 constraints" [src: abstract]. The DESI DR1 form, η ≡ log10[D(z_obs)/D(z_H)] = α v_p with
@@ -57,8 +79,8 @@ low-redshift expansion of the recession velocity they recommend is
 |---|---|---|---|
 | naive | v = cz − H0 r_e | criticised in Watkins & Feldman 2015, arXiv:1411.6665, and arXiv:1405.0105 | [src] |
 | Watkins–Feldman | v = [c z_mod /(1 + z_mod)] · ln( c z_mod / H0 r_e ), with z_mod = z[1 + ½(1 − q0)z − ⅙(1 − q0 − 3q0² + 1)z²]; error δv = c z_mod δl /(1 + z_mod) | arXiv:1411.6665, eq. "vest" | [src] |
-| log-distance (flip) | v_i = ln(10) · D(z_obs,i) H(z_obs,i) /(1 + z_obs,i) · η_i | arXiv:2501.16852, eq. "etatovel" | [src] |
-| Hubble-residual (flip) | v_i = −(c ln10 / 5) · J(p_i) · Δμ_i, with J one of four forms: "Watkins" z/(1+z); "low-z" z; "Hubble high-order" (the q0, j0 expansion above divided by 1+z); "full" [ (1+z)c / ((H(z)/h) D(z)) − 1 ]⁻¹ | arXiv:2501.16852, eq. "dmutovel" and Table "velest" | [src] |
+| log-distance (arXiv:2501.16852) | v_i = ln(10) · D(z_obs,i) H(z_obs,i) /(1 + z_obs,i) · η_i | arXiv:2501.16852, eq. "etatovel" | [src] |
+| Hubble-residual (arXiv:2501.16852) | v_i = −(c ln10 / 5) · J(p_i) · Δμ_i, with J one of four forms: "Watkins" z/(1+z); "low-z" z; "Hubble high-order" (the q0, j0 expansion above divided by 1+z); "full" [ (1+z)c / ((H(z)/h) D(z)) − 1 ]⁻¹ | arXiv:2501.16852, eq. "dmutovel" and Table "velest" | [src] |
 | Davis–Scrimgeour | v_DS = c (z − z_l)/(1 + z_l), z_l the redshift solving d_L(z_l) = measured distance | as used by Wang et al. 2026, arXiv:2604.08314, eq. "velocity_hz" | [src] |
 | Bayesian, non-linearised | posterior on v from the SN magnitude without assuming local linearity of the magnitude–redshift relation or a fixed cosmology; lower bias at large v_p/cz | Upadhyay, Saini & Sethi 2026, arXiv:2603.06469 | [src] |
 
@@ -102,8 +124,8 @@ with β = f/b, r_g the galaxy–matter cross-correlation coefficient, and u the 
 - The velocity has no Kaiser term: "Unlike the density or the momentum, the velocity does not have
   the squashing term" [src].
 
-The fitted amplitude is fσ8 because P_θθ and P_mθ are normalised by the fiducial σ8²; in the flip
-decomposition the velocity term has coefficient A_vv = (fσ8)² multiplying (aH)² μ1 μ2 / k² · P_θθ(k)
+The fitted amplitude is fσ8 because P_θθ and P_mθ are normalised by the fiducial σ8²; in the
+decomposition of arXiv:2501.16852 the velocity term has coefficient A_vv = (fσ8)² multiplying (aH)² μ1 μ2 / k² · P_θθ(k)
 D_u²(k, σ_u) [src: arXiv:2501.16852, §3.1].
 
 **Beyond the empirical damping.** Chen et al. 2025 (arXiv:2508.00066): 1-loop Lagrangian and
@@ -120,7 +142,8 @@ trained on AbacusSummit for the non-linear regime [src].
 velocities) is taken as Gaussian with zero mean and covariance C(Θ) = C_field(Θ) + C_obs; the
 likelihood is maximised or sampled, and no summary statistic is measured. Origin: Johnson et al.
 2014 (arXiv:1404.3799, velocity only, fσ8(k)); Adams & Blake 2017 (arXiv:1706.05205, first
-density–velocity cross-covariance); Adams & Blake 2020 (arXiv:2004.06399, RSD in the density term)
+density–velocity cross-covariance); Adams & Blake 2020 (arXiv:2004.06399, RSD in the density term),
+all on 6dFGS; then Lai et al. 2023 (arXiv:2209.04166, wide-angle effect and zero-point calibration)
 [src: abstracts]. Earlier roots: Jaffe & Kaiser 1994 (arXiv:astro-ph/9408046), a likelihood of
 velocity data for a P(k) parametrised by (σ8, Γ), applied to Lauer & Postman clusters and to SNe Ia;
 Abate et al. 2008 (arXiv:0802.1935), the full velocity covariance averaged in grid cells, which
@@ -132,8 +155,7 @@ arXiv:1404.3799, Sect. 3.5].
 
     C_ab(r1, r2) = (2π)⁻³ ∫ d³k  P_ab(k, μ1, μ2) e^{i k·r}
 
-with μ1, μ2 the cosines to the two lines of sight. The flip framework (arXiv:2501.16852, §2.2)
-writes any model as
+with μ1, μ2 the cosines to the two lines of sight. One general decomposition, implemented in the flip code (arXiv:2501.16852, §2.2), writes any model as
 
     P_ab(k, μ1, μ2) = Σ_n A_ab,n  B_ab,n(k, μ1, μ2)  P_ab,n(k)
     C_ab            = Σ_n A_ab,n  C_ab,n
@@ -154,7 +176,7 @@ separation vector and the reference direction [src].
 "the mathematical equivalency is only valid when the line-of-sight reference is the bisector" [src:
 arXiv:2501.16852, §3.1].
 
-**Named covariance models** (as flip labels them) [src: arXiv:2501.16852, §3.1]:
+**Named covariance models** (labels of arXiv:2501.16852) [src: arXiv:2501.16852, §3.1]:
 
 | Label | Paper | Content | Limitation stated |
 |---|---|---|---|
@@ -241,7 +263,6 @@ Mpc⁻¹ for that set (0.25 when P^p_2 and a momentum bias are added); window co
 matrix built from randoms on a 140³ grid in a 700 h⁻¹Mpc box; **the momentum spectrum is fitted only
 to k ≤ 0.1 h Mpc⁻¹** because "the systematic bias of FP data enhances the measured momentum power
 spectrum at k > 0.1 h Mpc⁻¹".
-
 The *velocity* (not momentum) power spectrum was estimated directly by Howlett et al. 2017
 (arXiv:1706.05130, 2MTF) [src: title].
 
@@ -278,7 +299,8 @@ to a poor goodness-of-fit". Earlier applications: Turner, Blake & Ruggeri 2023 (
 6dFGS) [src: title].
 
 A **linear template biases this family low** (Tonegawa et al. 2024, arXiv:2309.14457; 5.2 % on HR4
-mocks per `fsigma8-pv-compilation.md` [sec]), and finite mock volumes suppress large-scale velocity
+mocks [sec: 2026-08 compilation, `results.md` §0]; non-linear and density–velocity terms shift fσ8
+by ~10 % for a next-generation volume with r_min = 20 h⁻¹Mpc [src: abstract]), and finite mock volumes suppress large-scale velocity
 correlations (`systematics.md` §8).
 
 ### 4c. Supernova magnitude covariance
@@ -309,24 +331,34 @@ motions from the galaxy distribution, and Ω) [src: abstract]. The reverse route
 and mass fields reconstructed from radial velocities alone under a no-vorticity assumption, is POTENT:
 Bertschinger & Dekel 1989 (doi:10.1086/185348) and the method paper Dekel, Bertschinger & Faber 1990
 (doi:10.1086/169418), which smooths with a tensor window and explores Malmquist bias with Monte Carlo
-simulations [src: abstracts].
-
-**Calibration of the method on mocks.** Hollinger & Hudson 2024 (arXiv:2312.03904) and Dixon et al.
+simulations [src: abstracts]. **Calibration of the method on mocks.** Hollinger & Hudson 2024 (arXiv:2312.03904) and Dixon et al.
 2026 (arXiv:2606.14962); numbers in `systematics.md` §6.
 
 **Forward-modelling the distance indicator.** VIRBIUS (Lavaux 2016, arXiv:1512.04534) samples true
 distances, the 3D velocity field and calibration parameters jointly, handling selection and
 miscalibration [src: abstract]. Stiskalek 2025 (arXiv:2509.20235) and Stiskalek, Desmond & Lavaux
 2025 (arXiv:2509.14997) calibrate each indicator jointly with a linear-theory reconstruction and
-marginalise over distances [src: abstracts]. In all of these the velocity field is still linear.
+marginalise over distances ("jointly calibrates each distance indicator and a *linear theory*
+reconstruction") [src: abstracts]; Boubel 2024, Boruah 2020 and Stahl 2021 likewise forward-model
+the TF relation, Malmquist bias or standardisation against the 2M++ linear-theory prediction. In
+all of these the velocity field is linear: "forward model" does not imply non-linear dynamics; nor
+do constrained realisations, a Wiener filter in spherical Fourier–Bessel space (Lilow & Nusser 2021)
+[src: arXiv:2102.07291, abstract].
 
-**Forward-modelling the field.** Graziani et al. 2019 (arXiv:1901.01818, CF3, linear); Boruah,
-Lavaux & Hudson 2022 (arXiv:2111.15535, inhomogeneous Malmquist corrections); Valade et al. 2026
-(arXiv:2602.03699, Hamlet-PM: particle-mesh dynamics on CF4 to z < 0.05, 100 constrained 512³ runs
-in 500 h⁻¹Mpc boxes); Nusser 2026 (arXiv:2606.08593, Zel'dovich MAP reconstruction of 2MRS with an
-unbinned Poisson likelihood, tested on CF4 groups); BORG (Jasche & Lavaux 2019, arXiv:1806.11117)
-and Manticore-Local (McAlpine et al. 2025, arXiv:2505.10682) on the density side [src: abstracts,
-titles]. None quotes fσ8 (`pv-surveys.md` §5).
+**Forward-modelling the field.** Graziani et al. 2019 (arXiv:1901.01818: hierarchical Bayesian
+forward model of CF3 that "assumes the ΛCDM model within the linear regime"); Boruah, Lavaux &
+Hudson 2022 (arXiv:2111.15535: "a forward-modelled velocity field reconstruction algorithm",
+forward-modelling the distance data and inhomogeneous Malmquist bias); Valade et al. 2026
+(arXiv:2602.03699, Hamlet-PM: "The dynamics are integrated with a particle-mesh gravity solver, thus
+probing the mildly non-linear regime", on CF4 to z < 0.05, 100 constrained 512³ runs in 500 h⁻¹Mpc
+boxes — the clearest particle-evolving analysis); Nusser 2026 (arXiv:2606.08593, Zel'dovich MAP
+reconstruction of 2MRS with an unbinned Poisson likelihood, tested on CF4 groups); BORG (Jasche &
+Lavaux 2019, arXiv:1806.11117) and Manticore-Local (McAlpine et al. 2025, arXiv:2505.10682: BORG
+with a nonlinear gravitational solver on 2M++, Bayesian evidence comparisons) on the density side
+[src: abstracts, titles]. None quotes fσ8: **no published fσ8 comes from a particle-evolving forward
+model** (`open-questions.md` §9). The quotations and this check (2026-08-14) were folded on
+2026-10-20 from the compilation of 2026-08-12/14, in which `[src]` meant "traced to the paper" and
+`[der]` "relabelled or derived, the paper does not quote fσ8".
 
 **Machine-learned reconstruction.** Gong & Bean 2026 (arXiv:2606.05047): a gradient-boosted tree and
 a Transformer trained on AbacusSummit to predict the residual between true and linear-theory
@@ -401,14 +433,12 @@ analytic errors "typically underestimated" [src]. The record is in `results.md` 
 ## 7. kSZ velocities, at the level relevant here
 <!-- key: ksz-velocities-at-the-level-relevant-here -->
 
-The kinematic Sunyaev–Zel'dovich effect measures the electron momentum along the line of sight: it
-gives **τ × v**, never v alone. Three estimators are in use — pairwise kSZ, velocity-weighted
-stacking, and kSZ velocity reconstruction (kSZ tomography) — each with its own degeneracy (mean
-optical depth τ̄, accuracy of the stacking velocity, velocity bias b_v). They are tabulated with the
-2025–2026 measurements in `results.md` §4. The point to retain: b_v is measured at ≈ 0.3–0.45
-(arXiv:2506.21657, arXiv:2511.15701), so the *amplitude* of the velocity field, hence fσ8, is not
-measurable by kSZ alone; kSZ velocities constrain shapes (f_NL, the force-law index) and gas
-physics. Gas physics and the CMB side belong to `cosmo-cmb-lss-cross-correlations`.
+The kinematic Sunyaev–Zel'dovich effect gives **τ × v**, never v alone. Its three estimators —
+pairwise kSZ, velocity-weighted stacking, kSZ velocity reconstruction — and their degeneracies (τ̄,
+the stacking velocity, the velocity bias b_v) are tabulated with the 2025–2026 measurements in
+`results.md` §4. With b_v ≈ 0.3–0.45 (arXiv:2506.21657, arXiv:2511.15701) the *amplitude*, hence
+fσ8, is not measurable by kSZ alone; kSZ velocities constrain shapes (f_NL, the force-law index) and
+gas physics, which belong with the CMB side to `cosmo-cmb-lss-cross-correlations`.
 
 ## 8. Covariance, mocks, consensus, blinding practice and codes
 <!-- key: covariance-mocks-consensus-blinding-practice -->
@@ -463,8 +493,8 @@ physics. Gas physics and the CMB side belong to `cosmo-cmb-lss-cross-correlation
   (§2); σ* (or σ_v) in km/s is an additive 1D dispersion on each velocity, ~300 km/s in the Kaiser
   estimator (§6) and a free "residual velocity scatter" in forward models (arXiv:2509.20235). They
   are not interchangeable and some analyses carry both.
-- **σ8 normalisation and effective redshift**: see `pv-surveys.md` and `fsigma8-pv-compilation.md`. DESI DR1 defines z_eff as the mean
-  redshift of all density and velocity galaxies [src: arXiv:2512.03230].
+- **σ8 normalisation and effective redshift**: see `results.md` §0a–0b. DESI DR1 defines z_eff as the
+  mean redshift of all density and velocity galaxies [src: arXiv:2512.03230].
 - **Bulk-flow window and depth**: Gaussian (arXiv:0809.4041), top-hat (arXiv:1808.07772), or the
   survey's own weights (MLE). "Depth" is a radius R for the first two and an error-weighted mean
   distance for the third.
@@ -483,3 +513,5 @@ physics. Gas physics and the CMB side belong to `cosmo-cmb-lss-cross-correlation
 - The scale range of the SDSS PV power-spectrum fit (arXiv:2411.09571) and the k_max of the 6dFGS
   joint fit (arXiv:2004.06399).
 - Malmquist 1920 and the earliest inhomogeneous-Malmquist treatments: no identifier found this pass.
+- §0 and the forward-model passages of §5: folded from the 2026-08 compilation, not re-read (except
+  the abstracts of arXiv:1706.05130 and arXiv:2102.07291, read 2026-10-20).

@@ -274,7 +274,7 @@ One table per analysis; each entry gives the place read. "σ/3" is the DESI thre
 |---|---|---|
 | Mock validation design | 10 realisations of four contamination levels (raw; + continuum + noise; + metals; + HCDs + quasar redshift errors) for each of the four correlation functions; 90 more for two levels, to test biases ten times below the statistical error | [src: Sect. V.4] |
 | Mean α on mocks, all four functions combined | raw 1.009 / 0.995; + continuum + noise 1.005 / 0.992; + metals 1.010 / 0.989; + HCDs + σ_v 1.005 / 0.998 (α_∥ / α_⊥, mean σ 0.019 / 0.023 at the last level) | [src: Table 4] |
-| β_Lyα on mocks | 1.628 (raw) → 1.553 (+ continuum + noise) → 1.464 (+ HCDs + σ_v): contaminants bias β, not α | [src: Table 4] |
+| β_Lyα on mocks, all four functions combined | 1.628 (raw) → 1.553 (+ continuum + noise) → 1.464 (+ HCDs + σ_v): contaminants bias β, not α | [src: Table 4] |
 | ρ(α_∥, α_⊥) on mocks | −0.572 (auto), −0.470 (cross), −0.615 (auto Lyβ), −0.347 (cross Lyβ); zero between different functions | [src: Table 5] |
 | HCD masking | DLAs with log N_HI > 20.3 masked in data; in mocks, input HCDs above 20.3 corrected and pixels with > 20% absorption masked; detected versus input DLA parameters give "nearly identical results" | [src: Sect. V.4] |
 | Alternative analyses | BAO stable once metals are in the model, also with broadband polynomials; bias parameters change with HCD and broadband terms; other quasar-redshift estimators move the cross-correlation BAO by ≤ 0.5σ; distortion matrix to 300 h⁻¹Mpc or on a finer grid has no important effect; only the two-redshift-bin split differs by ~1σ, as expected for independent samples | [src: Appendix D] |

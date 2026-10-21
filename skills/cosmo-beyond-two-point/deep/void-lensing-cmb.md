@@ -5,7 +5,8 @@ finder for lensing, rescaled stacking, ΔΣ or κ estimator, random-point
 subtraction, covariance by analytic formula, random maps or jackknife,
 profile or template fit, what A_κ and b_Vg mean), and how to choose between
 2D and 3D voids, rescaled and unrescaled stacks, profile models and
-simulation templates; void ISW is left to the sibling skill.
+simulation templates. Void imprints on the CMB through ISW are in
+`cosmo-cmb-lss-cross-correlations`, which owns the ISW effect.
 Snapshot: 2026-10-18.
 From: Cai & Neyrinck 2025, Sects. 5 (gravitational lensing by voids) and 6
 (imprints on the CMB).

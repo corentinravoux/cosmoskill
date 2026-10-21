@@ -251,7 +251,7 @@ fractions constrain this together with the scatter [src].
 function).** Moster et al. 2010 (arXiv:0903.4682) fit a parameterised
 stellar-to-halo relation to the stellar mass function and find clustering adds
 no strong constraint [src]. Behroozi et al. 2010 (arXiv:1001.0015) give the
-uncertainty budget (`systematics.md` sections 4–5) [src].. Multi-epoch
+uncertainty budget (`systematics.md` sections 4–5) [src]. Multi-epoch
 abundance matching (Moster et al. 2013, arXiv:1205.5807) follows satellites
 from their accretion time [src]. Behroozi et al. 2013 (arXiv:1207.6105) extend
 the relation to star formation histories from z = 0 to 8 [src].

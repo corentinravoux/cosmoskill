@@ -646,7 +646,8 @@ def resolve(skill: str, target: str, as_json: bool) -> int:
                           "unattached": [{name: entry[name] for name in ("layer", "attach", "mode", "text")}
                                          for entry in unread]}, ensure_ascii=False, indent=2))
         return 0
-    print(f"=== {skill}/{stem} — base: {base_file(skill, stem)}")
+    path = base_file(skill, stem)
+    print(f"=== {skill}/{stem} — base: {path.relative_to(SKILLS) if path else None}")
     for entry in general:
         print(f"[{entry['layer']} note on the skill] {entry['text']}")
     for section in report:

@@ -342,6 +342,7 @@ None of these quotes a cosmological parameter.
 |---|---|---|---|---|
 | σ(fσ8) | +0.047/−0.048, a 10% error; up to 50% smaller than supernovae alone | **forecast**: simulated ZTF 6-year SNe Ia velocities + DESI DR3 BGS density | arXiv:2609.34508 | [src] |
 | Fisher forecast accuracy | 30% closer to the full-likelihood error than a volume Fisher forecast | simulation | arXiv:2501.16852 | [src] |
+| fσ8 with wide-angle and zero-point terms in the model | 0.405 (+0.076/−0.071) stat ± 0.009 sys at z_eff = 0.073; likelihood interpolated for a ~30× faster MCMC | SDSS PV catalogue (method paper's own application) | arXiv:2209.04166 | [src] |
 
 The data result of this method, fσ8 from DESI DR1 peculiar velocities, is in
 `cosmo-peculiar-velocities`. The 10% forecast above matches the figure that

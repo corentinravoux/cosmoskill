@@ -108,7 +108,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 2k; open 3k; methods 5k; results 6k; surveys 4k; systematics 4k; deep/baryon-density 6k; deep/bbn-codes 8k; deep/deuterium 7k; deep/helium-4 6k; deep/neff-new-physics 7k; deep/nuclear-reaction-rates 6k.
+Sizes, in thousands of tokens: L1 3k; open 3k; methods 5k; results 6k; surveys 4k; systematics 4k; deep/baryon-density 6k; deep/bbn-codes 8k; deep/deuterium 7k; deep/helium-4 6k; deep/neff-new-physics 7k; deep/nuclear-reaction-rates 6k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.
@@ -126,7 +126,11 @@ in one of its parents, or in the home directory, or if `COSMOSKILL_HOME` is
 set, run
 `python3 "${CLAUDE_SKILL_DIR}/../observational-cosmology/scripts/layers.py" cosmo-bbn`
 and read what it prints before answering. A note applies when its subject is
-the question's; you need not open the section it is attached to. Say which
+the question's; you need not open the section it is attached to. An
+override replaces its base section for this researcher: use it, and quote
+the base value beside it, both labelled. A suppressed section is left out
+and named as suppressed; use it only when the question asks for that
+section's own content, and then say that the layer hides it. Say which
 statements come from a local layer.
 
 End the answer with one line, `<file>` being `skill` for this file or the

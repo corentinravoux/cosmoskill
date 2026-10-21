@@ -19,7 +19,7 @@ re-verify against the cited paper before a number enters a manuscript.
 | Failure modes; referee checklist | `references/systematics.md` |
 | Debates, misconceptions, not verified | `references/open-questions.md` |
 | Bibliography with roles | `references/sources.tsv` |
-| Building, correcting, validating a covariance | `deep/covariance-estimation.md` |
+| Building, correcting, validating a covariance; χ² goodness of fit | `deep/covariance-estimation.md` |
 | Computing a profile likelihood | `deep/profile-likelihoods.md` |
 | Computing and choosing a tension metric | `deep/tension-metrics.md` |
 | Computing and choosing a model-comparison statistic | `deep/model-comparison.md` |
@@ -112,7 +112,11 @@ in one of its parents, or in the home directory, or if `COSMOSKILL_HOME` is
 set, run
 `python3 "${CLAUDE_SKILL_DIR}/../observational-cosmology/scripts/layers.py" cosmo-statistics-inference`
 and read what it prints before answering. A note applies when its subject is
-the question's; you need not open the section it is attached to. Say which
+the question's; you need not open the section it is attached to. An
+override replaces its base section for this researcher: use it, and quote
+the base value beside it, both labelled. A suppressed section is left out
+and named as suppressed; use it only when the question asks for that
+section's own content, and then say that the layer hides it. Say which
 statements come from a local layer.
 
 End the answer with one line, `<file>` being `skill` for this file or the

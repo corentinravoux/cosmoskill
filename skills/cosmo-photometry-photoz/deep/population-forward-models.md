@@ -215,7 +215,8 @@ negligible at KV450 volumes [src: arXiv:2605.15078, Sect. 2].
 - **Same data model, two populations.** With the KiDS data model, shark
   (semi-analytic) galaxies reproduce the SKiLLS truth to < 0.005 in every
   bin mean, which validates the data model; replacing shark by pop-cosmos
-  moves the highest bin by Δz ~ 0.05–0.1 [src: arXiv:2602.03935,
+  moves the mean redshift of the first (0.1 < z < 0.3) and last
+  (0.9 < z < 1.2) bins by Δz ~ 0.05–0.1 [src: arXiv:2602.03935, abstract,
   Sect. IV.1]. The mechanism given: at high redshift pop-cosmos galaxies
   span broader and redder r − i and i − Z colours, and its colour–redshift
   relation has ridges from Hα, [O III] and Hβ crossing the bands; BPZ then
@@ -336,7 +337,7 @@ arXiv:2602.03935, Sect. V].
 | Zero-point initialisation | 12,473 spectra, 0 < z < 2 | pop-cosmos | arXiv:2402.00935 | Sect. IV.1 |
 | SPS emulator error | < 3% over 99.9%, < 1% over 99% of parameter space | Speculator for KiDS bands | arXiv:2602.03935 | Sect. III.1 |
 | Data-model check | shark + data model vs SKiLLS: all bin means < 0.005 | KiDS-1000 | arXiv:2602.03935 | Sect. IV.1 |
-| Population-model shift | Δz ~ 0.05–0.1, highest bin | KiDS-1000 | arXiv:2602.03935 | Sect. IV.1 |
+| Population-model shift | Δz ~ 0.05–0.1, first and last bins | KiDS-1000 | arXiv:2602.03935 | Sect. IV.1 |
 | Selection emulator | accuracy ~63%, AUC ≃ 0.90, precision ~0.44, recall ~0.46 | KiDS-1000 | arXiv:2602.03935 | Sect. III.4 |
 | Bin counts mock vs data | differ by ~5–10%; shapes robust | KiDS-1000 | arXiv:2602.03935 | Sect. IV.4 |
 | GalSBI ABC | 10⁴ samples, keep 2000, 20-component GMM, 10 → 30 tiles, 31 iterations, 53 parameters | HSC PDR3 deep | arXiv:2412.08701 | Sect. 2.4, 4.3 |

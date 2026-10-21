@@ -538,7 +538,8 @@ unbiased there.
 <!-- key: gaussian-field-level-likelihood -->
 
 The systematic is the covariance model: its wavenumber integration range, its
-validity in separation, and wide-angle terms (arXiv:2501.16852). Details and
+validity in separation, wide-angle terms and the zero-point calibration
+(arXiv:2209.04166, arXiv:2501.16852). Details and
 the damping-parameter issue are in `cosmo-peculiar-velocities`.
 
 ## 6. Simulation-based inference

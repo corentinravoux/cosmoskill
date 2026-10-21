@@ -1,7 +1,7 @@
 key	title	from	files	status
 photometric-calibration	Global photometric calibration and standards	Scope file; DES, Rubin LSST and Gaia calibration programmes; Newman & Gruen 2022 review, Sect. 1.1	physics-and-methods.md; surveys-and-data.md; results.md; systematics.md	covered
 chromatic-extinction	Chromatic effects and Milky Way extinction	Scope file; DES and Rubin calibration programmes; Newman & Gruen 2022 review, Sect. 4.2.4	physics-and-methods.md; systematics.md; open-questions.md; deep/chromatic-extinction.md	covered
-template-fitting	Photometric redshifts by template fitting	Newman & Gruen 2022 review, Sect. 2.1, 2.3; Tortorelli & Grün 2026 review, Sect. 3	physics-and-methods.md; results.md; systematics.md	covered
+template-fitting	Photometric redshifts by template fitting	Newman & Gruen 2022 review, Sect. 2.1, 2.3; Tortorelli & Grün 2026 review, Sect. 3	physics-and-methods.md; results.md; systematics.md; deep/narrow-many-band-photometry.md	covered
 machine-learning-photoz	Photometric redshifts by machine learning	Newman & Gruen 2022 review, Sect. 2.2; Tortorelli & Grün 2026 review, Sect. 2	physics-and-methods.md; results.md; open-questions.md; deep/machine-learning-photoz.md	covered
 population-forward-models	Bayesian hierarchical and population (forward) models	Newman & Gruen 2022 review, Sect. 2.4, 4.1.3, 5.1; Tortorelli & Grün 2026 review, Sect. 3.0.2-3.0.3	physics-and-methods.md; results.md; open-questions.md	covered
 nz-direct-som	Direct and self-organising-map calibration of n(z)	Newman & Gruen 2022 review, Sect. 3.3; Tortorelli & Grün 2026 review, Sect. 2.0.3; DES, KiDS and LSST DESC photo-z working groups	physics-and-methods.md; results.md; systematics.md; open-questions.md	covered

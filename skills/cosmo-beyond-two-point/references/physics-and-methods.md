@@ -116,9 +116,8 @@ direct χ² or a projection on N_eig eigenmodes with a T² distribution
 Sect. IV of arXiv:2508.09133]. The analytic covariance takes P + 1/n̄ as
 input and neglects the higher-order correlations.
 
-### 1.6 What the main analyses did
+### 1.5 What the main analyses did
 <!-- key: what-the-main-analyses-did -->
-<!-- TABLE-ANCHOR-1.6 -->
 
 Read in the method sections; the place is given in each cell.
 
@@ -131,7 +130,7 @@ Read in the method sections; the place is given in each cell.
 | BOSS DR12, window-free P + B_0 (arXiv:2112.04515) | Unwindowed quadratic and cubic estimators [src: Sect. III, Eqs. 3–4]; P_ℓ to k = 0.2, the real-space proxy Q_0 to 0.4, B_0 at 0.01–0.08 h Mpc⁻¹ with Δk = 0.01, 62 triangle bins [src: Sect. III, Table 2] | One-loop EFT P, tree-level B; h, ln(10¹⁰A_s), ω_cdm, ω_b, n_s varied, Σm_ν fixed to 0.06 eV; linear nuisance parameters marginalised analytically [src: Sect. IV.3] | 2048 Patchy mocks (999 when BAO parameters are included), Hartlap factor, Gaussian likelihood [src: Eqs. 14–15]. Validation on the mean of 84 Nseries mocks with the covariance scaled to 6 and to 235 h⁻³Gpc³ [src: Sect. V] | 13% on σ8 (abstract) |
 | BOSS DR12, one-loop B_0 + tree-level B_2 (arXiv:2206.08327) | FKP P_0,2 with 42 (36) k-bins; B_0 with 150 (62) triangle bins of width 0.0215 (0.0246) h Mpc⁻¹, centres from 0.0215 (0.029) to 0.215 (0.176), for CMASS (LOWZ); B_2 adds 9 bins [src: Sect. 2] | One-loop EFT for P and B_0, tree level for B_2; ω_cdm, h, ln(10¹⁰A_s) free, BBN prior on ω_b, n_s fixed; a linear prior on Ω_m, h, b_1 added against projection effects [src: Sect. 4]. Window: tree-level bispectrum evaluated with the windowed linear spectrum, no window on the loop [src: Eq. 18] | 2048 Patchy mocks, bin width chosen to keep the Hartlap factor at about 0.91 (0.95) [src: Sect. 2]. Scale cut checked by adding next-order counterterms [src: Sect. 5.2] | 30%, 18%, 13% on σ8, h, Ω_m (abstract) |
 
-### 1.5 Status
+### 1.6 Status
 <!-- key: status-5 -->
 
 Bispectrum (monopole, tree level or one loop): **data, mock-validated**, in
@@ -664,7 +663,7 @@ blinding.**
   the model and the triangles kept: 0.08 for the tree-level EFT monopole
   (arXiv:2110.10161, arXiv:2507.13433), 0.12 for the N-body-calibrated
   GEO-FPT kernel (arXiv:2503.09714), 0.20 for diagonal TripoSH
-  configurations (arXiv:2610.01836); see §1.6. SimBIG quotes 0.5;
+  configurations (arXiv:2610.01836); see §1.5. SimBIG quotes 0.5;
   emulators quote 1 h⁻¹Mpc in configuration space.
 - **"Field-level"** has three meanings (§5.1).
 - **"Gain"** must name its baseline: the same pipeline's two-point analysis,

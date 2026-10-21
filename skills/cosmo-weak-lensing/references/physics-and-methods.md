@@ -131,7 +131,8 @@ by f_r (⟨M_h⟩/M_piv)^β per bin, red fraction and mean halo mass, with M_piv
 0.769 [src: Eq. 7]; NLA-k adds the density-weighting term of TATT with one
 bias b_src [src: Eq. 9]. DES Y6: a₁(z) = −A₁ C̄₁ ρ_c Ωm/D(z)
 [(1+z)/(1+z₀)]^η₁, a₂(z) = 5 A₂ C̄₁ ρ_c Ωm/D²(z) [(1+z)/(1+z₀)]^η₂, a₁δ =
-b_TA a₁, with C̄₁ = 5 × 10⁻¹⁴ M⊙ h⁻² Mpc² and z₀ = 0.3; NLA is A₂ = η₂ = b_TA
+b_TA a₁, with C̄₁ = 5 × 10⁻¹⁴ M⊙ h⁻² Mpc² (as printed; the dimensionally consistent unit
+is h⁻² M⊙⁻¹ Mpc³, `deep/intrinsic-alignments.md`) and z₀ = 0.3; NLA is A₂ = η₂ = b_TA
 = 0, giving P_GI = a₁ P_m and P_II = a₁² P_m (arXiv:2602.10065) [src: Eqs.
 13–15]. HSC Y3 uses the same amplitudes with z₀ = 0.62 and one-loop terms
 from FAST-PT (arXiv:2304.00702) [src: Eqs. 19–20]; the DES Y3 + KiDS-1000

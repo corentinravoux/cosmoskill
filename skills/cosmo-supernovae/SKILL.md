@@ -23,7 +23,7 @@ re-verify against the cited paper before a number enters a manuscript.
 | How bias-correction simulations and BBC are built, validated; alternatives | `deep/selection-bias-corrections.md` |
 | Covariances, `M` marginalisation, significance, unblinding | `deep/covariance-likelihood-blinding.md` |
 | Cross-calibration fit, validation | `deep/photometric-calibration.md` |
-| Photo-z, photometric Rubin/Roman Hubble diagrams | `deep/stage-iv-photometric-samples.md` |
+| Photo-z, classifier calibration, photometric Rubin/Roman Hubble diagrams | `deep/stage-iv-photometric-samples.md` |
 | Bibliography | `references/sources.tsv` |
 
 ## What an expert holds in mind
@@ -135,7 +135,11 @@ in one of its parents, or in the home directory, or if `COSMOSKILL_HOME` is
 set, run
 `python3 "${CLAUDE_SKILL_DIR}/../observational-cosmology/scripts/layers.py" cosmo-supernovae`
 and read what it prints before answering. A note applies when its subject is
-the question's; you need not open the section it is attached to. Say which
+the question's; you need not open the section it is attached to. An
+override replaces its base section for this researcher: use it, and quote
+the base value beside it, both labelled. A suppressed section is left out
+and named as suppressed; use it only when the question asks for that
+section's own content, and then say that the layer hides it. Say which
 statements come from a local layer.
 
 End the answer with one line, `<file>` being `skill` for this file or the

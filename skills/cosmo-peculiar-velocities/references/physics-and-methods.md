@@ -282,7 +282,10 @@ with f, g the geometric factors of each pair, and their linear predictions
     Ψ∥(r) = (f H0)²/(2π²) ∫ dk P(k) [ j0(kr) − 2 j1(kr)/(kr) ]
     Ψ⊥(r) = (f H0)²/(2π²) ∫ dk P(k)   j1(kr)/(kr)
 
-[src: arXiv:2604.08314, eqs. "psipar", "psiperp" and following]. The measured ψ1, ψ2 are
+[src: arXiv:2604.08314, eqs. "psipar", "psiperp" and following]. The DESI DR1 correlation-function
+paper prints the two kernels the other way round, j0 − 2j1/(kr) under Ψ⊥ and j1/(kr) under Ψ∥
+[src: arXiv:2512.03230, Sect. 3.1.1, Eqs. 8–9]; check which assignment a code follows before
+comparing (`deep/two-point-statistics.md`). The measured ψ1, ψ2 are
 survey-geometry-dependent mixtures, ψ1(r) = A(r) Ψ∥ + [1 − A(r)] Ψ⊥ and ψ2(r) = B(r) Ψ∥ + [1 − B(r)]
 Ψ⊥ [src: Turner et al. 2025, arXiv:2512.03230, §3], so **the model must be built with the survey's
 own A(r), B(r)**; two surveys' ψ1 are not comparable.
@@ -485,8 +488,6 @@ gas physics, which belong with the CMB side to `cosmo-cmb-lss-cross-correlations
 ## 9. Conventions, units and where the community is split
 <!-- key: conventions-units-and-where-the-community-is -->
 
-- **flip units**: RA/Dec in radians, comoving distances in h⁻¹Mpc, velocities in km/s, k in h Mpc⁻¹
-  (workspace `CLAUDE.md` §5); reference paper arXiv:2501.16852.
 - **Three different "β"**: β ≡ f/b (arXiv:1312.1022, arXiv:1706.05205); β* ≡ Ω_m^0.55 / b* with b*
   the bias of an L* galaxy (arXiv:1504.04627); β ≡ Ω_m^γ / b (arXiv:2007.04993). Converting any of
   them to fσ8 needs σ8 of the galaxy field, and the second and third assume a growth index.

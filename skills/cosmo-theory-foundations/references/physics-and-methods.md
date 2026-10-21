@@ -70,7 +70,7 @@ Definitions of Planck Collaboration 2013, arXiv:1303.5076, Sect. 2 and Table 1 [
 
 - The CMB acoustic scale uses r_* = r_s(z_*), with θ_* = r_*/D_A(z_*) (arXiv:1303.5076, Sect. 2.2.2). BAO use r_d ≡ r_s(z_drag): "Baryon velocities decouple from the photon dipole when Compton drag balances the gravitational force, which happens at τ_d ~ 1" (same section).
 - Eisenstein & Hu 1998 note that for Ω_b h² ≲ 0.03 the drag epoch "follows last scattering of the photons", so "the sound and Silk scales in the transfer function are larger than those in the CMB" (arXiv:astro-ph/9709112, Sect. 2.1). Hence r_d > r_*: 147.09 against 144.43 Mpc in Planck 2018, a 1.8% difference [der from the two values in section 2]. Converting a BAO measurement with r_* is an error of that size.
-- The drag redshift is quoted as z_d ≈ 1060 by DESI DR2 (arXiv:2503.14738, Sect. 1) and as "around a redshift z = 1020" by eBOSS (eBOSS Collaboration 2021, arXiv:2007.08991, Sect. 2) [src for both]; neither paper comments on the other value. DESI quotes z_* ≈ 1089.
+- The drag redshift is quoted as z_d ≈ 1060 by DESI DR2 (arXiv:2503.14738, Sect. 1) and as "around a redshift z = 1020" by eBOSS (eBOSS Collaboration 2021, arXiv:2007.08991, Sect. 2) [src for both]; neither paper comments on the other value. They are two definitions, not two cosmologies: `deep/sound-horizon.md#step-3-read-1020-and-1060-as-two-definitions`. DESI quotes z_* ≈ 1089.
 
 ### 3.2 r_d as BAO analyses define it
 <!-- key: rd-as-bao-analyses-define-it -->
@@ -379,7 +379,6 @@ Each with the paper read or cited above; installation and versions are in `cosmo
 <!-- key: not-verified -->
 
 - The accuracy of DESI's power-law r_d formula against a Boltzmann code: not stated in arXiv:2209.14330 or arXiv:2212.04522 (body searched 2026-10-15); not found elsewhere.
-- Why eBOSS quotes z_d ≈ 1020 and DESI ≈ 1060.
 - Growth approximations of Lahav et al. 1991 and Carroll, Press & Turner 1992, and the BBKS formula itself: not on arXiv, not read, not written.
 - Mass-function, bias and NFW profile formulae in their original papers (Tinker, Sheth–Tormen, NFW: abstracts only); they are written in section 11 as the Asgari et al. review gives them, and the Sheth–Tormen values of A, p, q were not read.
 - The full Challinor–Lewis expression with magnification and evolution bias.

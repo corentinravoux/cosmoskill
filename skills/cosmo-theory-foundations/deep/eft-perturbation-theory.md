@@ -315,7 +315,8 @@ coefficients, wider k range, no σ8 gain on the sample tested
   reaches 1.7% at k = 0.3 h/Mpc, z = 0 (arXiv:2605.05114). Test: rerun with
   exact time dependence (spectral or gauge method) at the highest k_max.
 - **Copied vertex values.** Reproduce ν_n, μ_n from Eqs. 50–51 rather than
-  copying Eq. 52: the printed μ_2 carries a wrong sign (Step 2).
+  copying Eq. 52: its printed μ_2 differs in sign from what Eqs. 50–51
+  give, and the convention behind the difference was not resolved (Step 2).
 
 ## Reading list
 <!-- key: reading-list -->

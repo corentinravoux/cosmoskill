@@ -199,12 +199,17 @@ should be stated.
 <!-- key: foreground-model-and-mask -->
 
 The 2022 monopole limit depends on the model and on the Galactic mask
-(PL90 to PL40) [src: arXiv:2206.02762, Table 1]:
+(PL90 to PL40) [src: arXiv:2206.02762, Table 2]:
 
-| Model | PL90 | PL80 | PL60 | PL40 |
-|---|---|---|---|---|
-| A_d + β_d (baseline) | < 47 | < 51 | < 47 | < 53 |
-| A_d, fixed β_d | < 74 | < 50 | < 105 | < 179 |
+| Model | PL90 | PL80 | PL60 | PL40 | σ_syst |
+|---|---|---|---|---|---|
+| A_d + β_d (baseline) | < 47 | < 51 | < 47 | < 53 | 2.5 |
+| A_d, fixed β_d | < 74 | < 50 | < 105 | < 179 | 48 |
+| FIRAS residual | < 72 | < 57 | < 89 | < 147 | 34 |
+
+σ_syst is the standard deviation of the upper limits across masks, which
+the paper takes as an estimate of the systematic uncertainty on the
+constraint [src: Table 2 caption].
 
 Values are 95% upper limits on |⟨μ⟩| in units of 10⁻⁶ (see "Not verified"
 for the unit printed in the table header). With a free dust index the limit
@@ -286,7 +291,7 @@ expansion would handle [src: Sect. 4].
   > 95% correlated [src: arXiv:2206.02762, Sect. III.1]. Test: non-linear μ
   in the fit; report the μ–ΔT correlation.
 - **Foreground model too rigid.** Fixed β_d degrades with mask choice
-  [src: arXiv:2206.02762, Table 1]. Test: monopole across masks for each
+  [src: arXiv:2206.02762, Table 2]. Test: monopole across masks for each
   model.
 - **Unmodelled CIB and lines.** Neither is in the 2022 model; frequencies
   above 600 GHz are cut [src: arXiv:2206.02762, Sect. III.2]. Test:
@@ -322,9 +327,9 @@ expansion would handle [src: Sect. 4].
 ## Not verified
 <!-- key: not-verified -->
 
-- Table 1 of arXiv:2206.02762 prints "[×10⁻⁵]" in the header of its model
-  rows while the caption and abstract give 10⁻⁶; the values are reported here
-  in 10⁻⁶, consistent with the abstract's 47 × 10⁻⁶.
+- Table 2 of arXiv:2206.02762 prints "[×10⁻⁵]" in its header, while its
+  baseline row repeats the Table 1 limits, which are in 10⁻⁶, and the
+  abstract gives 47 × 10⁻⁶; the values are reported here in 10⁻⁶.
 - The Planck μ map of Khatri & Sunyaev (as cited in arXiv:2206.02762) and
   the Wright et al. 1994 interpretation cited by Fixsen et al. were not read;
   no identifiers recorded.

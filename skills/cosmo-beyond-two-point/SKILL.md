@@ -38,7 +38,7 @@ re-verify against the cited paper before a number enters a manuscript.
 - The Beyond-2pt challenge tested the bias of the mean on HOD mocks without systematics; it states that it does not validate error bars (arXiv:2405.02252).
 - Third-order shear: KiDS-Legacy S8 = 0.806 +0.025/−0.023 (arXiv:2606.12389), DES Y3 0.780 ± 0.015 (arXiv:2508.14018), HSC Y3 0.736 ± 0.020 (arXiv:2508.14019). The gain is in Ω_m.
 - DES Y3 map-level SBI: S8 = 0.808 ± 0.017 in wCDM, almost three times the two-point figure of merit (arXiv:2606.11309).
-- "Field-level" means sampled initial conditions, a Gaussian likelihood on the field (from peculiar-velocity analyses, arXiv:1706.05205; implemented in flip, arXiv:2501.16852), or a neural network. Only the last two were found to have produced parameters from data.
+- "Field-level" means sampled initial conditions, a Gaussian likelihood on the field (developed for peculiar-velocity surveys, arXiv:1404.3799, arXiv:1706.05205, arXiv:2209.04166; flip is one implementation, arXiv:2501.16852), or a neural network. Only the last two were found to have produced parameters from data.
 - BORG on 2M++ (arXiv:1806.11117, arXiv:2505.10682), BOSS (arXiv:1909.06396) and Quaia (arXiv:2602.02363) delivers fields.
 - Field-level gain over P + B: factor 3.5–5.2 on simulated halos (arXiv:2403.03220) against equivalence with an analytic likelihood (arXiv:2507.05378, arXiv:2509.09673).
 - SimBIG uses about 10% of BOSS; its bispectrum result is robust, its wavelet result is not (arXiv:2310.15243, arXiv:2310.15250).
@@ -104,7 +104,11 @@ in one of its parents, or in the home directory, or if `COSMOSKILL_HOME` is
 set, run
 `python3 "${CLAUDE_SKILL_DIR}/../observational-cosmology/scripts/layers.py" cosmo-beyond-two-point`
 and read what it prints before answering. A note applies when its subject is
-the question's; you need not open the section it is attached to. Say which
+the question's; you need not open the section it is attached to. An
+override replaces its base section for this researcher: use it, and quote
+the base value beside it, both labelled. A suppressed section is left out
+and named as suppressed; use it only when the question asks for that
+section's own content, and then say that the layer hides it. Say which
 statements come from a local layer.
 
 End the answer with one line, `<file>` being `skill` for this file or the

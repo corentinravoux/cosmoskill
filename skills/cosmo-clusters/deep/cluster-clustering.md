@@ -152,8 +152,9 @@ For richness-selected clusters, the environment changes both detection and
 richness, which adds bias to every cluster correlation. DES Y6 models it as
 a scale-dependent ratio to the original model,
 Σ_cA/Σ_cA[Orig](θ) = b_s1 + b_s2 exp(−θ χ(z̄)/r_0), the same ratio for w_cg,
-and its square root for w_cc (Eq. 23) [src: arXiv:2503.13631, Sect.
-II.3.5]. The square root comes from the selection modulating the cluster
+and its square for w_cc (Eq. 23 writes the lensing ratio as the square
+root of the w_cc ratio) [src: arXiv:2503.13631, Sect. II.3.5]. The square
+comes from the selection modulating the cluster
 density field, which enters cluster clustering twice (a quadratic boost),
 validated in HOD-cylinder mocks [src: same]. Using a scale-independent
 model instead, as in DES Y1, biases S8 and Ω_m by 0.45 of the statistical

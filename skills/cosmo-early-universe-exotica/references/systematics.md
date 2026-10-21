@@ -152,4 +152,3 @@ background amplitude (arXiv:2306.16218) [src].
 - The PIXIE and FOSSIL foreground budgets behind their forecasts were not
   read in the bodies.
 - The OGLE reply to Hawkins 2025, if any, was not searched.
-<!-- key: not-verified -->

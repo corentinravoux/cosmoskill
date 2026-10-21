@@ -274,10 +274,12 @@ scatter from 0.167 to 0.157 mag and raises H0 by about 0.4 (Peterson et al.
 prefers tracers at z > 0.023 `[src]` (arXiv:2510.23823).
 
 Two-rung ladders and megamasers work at cz of 1000 to 3000 km/s, where the
-velocity field is the dominant term. The current practice is field-level:
-condition on each posterior realisation of a constrained simulation
-(Manticore-Local, BORG applied to 2M++; McAlpine et al. 2025,
-arXiv:2505.10682) and marginalise (arXiv:2509.09665, arXiv:2609.29996). See
+velocity field is the dominant term. Two treatments are in use: a linear
+reconstruction from 2M++, as above (SH0ES, H0DN), and a field-level one
+developed by one collaboration, which conditions on each posterior
+realisation of a constrained simulation (Manticore-Local, BORG applied to
+2M++; McAlpine et al. 2025, arXiv:2505.10682) and marginalises over them
+(arXiv:2509.09665, arXiv:2609.29996). See
 `cosmo-peculiar-velocities` for the reconstruction methods.
 
 ### 2.7 Statistical model: priors and selection
@@ -370,8 +372,11 @@ Current practice (TDCOSMO):
   for projection, rotation and anisotropy (arXiv:2506.03023,
   arXiv:2604.14145) `[src]`.
 - The flat-LCDM H0 needs an Omega_m prior, taken from uncalibrated SNe
-  (Pantheon+, DES-SN5YR) or DESI BAO; results are stable across the choice
-  `[src]` (arXiv:2506.03023).
+  (Pantheon+, DES-SN5YR) or DESI BAO; results are stable across these
+  informative priors `[src]` (arXiv:2506.03023). A uniform Omega_m prior gives
+  H0 = 73.7 (+4.7/-4.4) against 71.6 (+3.9/-3.3) with Pantheon+
+  `[src: Sects. 8.1, 10.1.1]`: match the prior before comparing with earlier
+  TDCOSMO results (`deep/time-delay-cosmography.md#omegam-prior`).
 
 Cluster-lensed supernovae (Refsdal, H0pe, Encore) use the same equation with
 cluster mass models; a lensed SN Ia adds absolute magnifications that break

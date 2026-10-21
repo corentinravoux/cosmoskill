@@ -168,10 +168,12 @@ Reading rules:
   WFIRST are tabulated in arXiv:1308.4164 [src]; they are **forecasts** made
   in 2013 and the surveys were executed differently.
 
-Worked example from the DESI papers. The Survey Validation paper projected
-BAO precisions of 0.28% at z < 1.1, 0.39% at 1.1 < z < 1.9 and 0.46% at
-1.9 < z < 3.5 for the full 14,000 deg² programme (**forecast**;
-arXiv:2306.06307) [src]. The road-map paper states that DESI captures "a
+Worked example from the DESI papers. For the isotropic BAO distance R(z),
+the Survey Validation paper lists design requirements of 0.28% at
+0 < z < 1.1 and 0.39% at 1.1 < z < 1.9, and **forecasts** for the full
+programme of 0.24%, 0.37% and 0.46% at 1.9 < z < 3.7 (arXiv:2306.06307)
+[src: Sect. VI.2, Table 8]. Quote requirement and forecast as such; they
+differ. The road-map paper states that DESI captures "a
 significant fraction of the available linear modes up to z = 1.2"
 (arXiv:2209.03585) [src]: beyond that redshift the gain comes from density
 and redshift reach, which is the case made for DESI-II and the Stage-V

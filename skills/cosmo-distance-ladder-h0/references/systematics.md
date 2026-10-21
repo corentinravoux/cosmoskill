@@ -273,9 +273,11 @@ H0 by 0.8 to 1.4 and the non-linear Manticore field by 1.6 to 2.1 `[src]`
 realisations of the velocity field is 5.2 and a free velocity monopole is
 5.4 ± 3.4 `[src]` (arXiv:2609.29996).
 
-**Mitigation.** Marginalise over posterior realisations of a constrained
-simulation, with the selection of the sample in the likelihood
-(arXiv:2509.09665). Method details: `cosmo-peculiar-velocities`.
+**Mitigation.** Correct with a linear 2M++ reconstruction and group
+redshifts (arXiv:2110.03487), or marginalise over posterior realisations of
+a constrained simulation, with the selection of the sample in the likelihood
+(arXiv:2509.09665); quote which, since the two differ by the shifts above.
+Method details: `cosmo-peculiar-velocities`.
 
 ## 10. Local structure and sample variance
 <!-- key: local-structure-and-sample-variance -->

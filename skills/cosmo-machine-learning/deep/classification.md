@@ -237,7 +237,7 @@ interpretability as the argument for trees and accuracy for deep networks withou
 
 At fixed 95% purity on the PLAsTiCC WFD sample, the flat-weighted classifier peaks at 80% SN Ia
 completeness at z = 0.8, where about 70% of objects are SNe Ia, and falls below 40% nearby,
-because only 0.6% of training SNe Ia lie at z < 0.1; the redshift-weighted classifier keeps about
+because only 0.6% of the SNe Ia in the sample (the paper points to its Fig. 2) lie at z < 0.1; the redshift-weighted classifier keeps about
 70% at low redshift and declines smoothly with S/N, and in the DDF stays above 80% at most
 redshifts up to z = 1.55 (arXiv:1907.04690) [src: Sect. IV.2, Fig. 7]. When SNe Ia are dropped
 from the training set with p(z) = exp(−z) or min(exp(z) − 1, 1), the flat-weighted completeness

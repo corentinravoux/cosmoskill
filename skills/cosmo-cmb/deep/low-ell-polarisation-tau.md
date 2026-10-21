@@ -315,6 +315,30 @@ Sect. 7].
   depth, which "might not hold" for polarised atmospheric emission; the
   forecast ignores foregrounds (**forecast**) [src: Sect. V.5].
 
+### A τ prior when Planck large scales are not used
+<!-- key: a-tau-prior-when-planck-large-scales-are-not -->
+
+No paper read for this skill gives a rule; the published choices, each with
+what it implies (details and the case for each side in
+`open-questions.md#is-the-planck-large-scale-polarisation-value-of`):
+
+- **Leave τ free.** The other data then set it: DESI BAO + high-ℓ CMB + CMB
+  lensing give τ = 0.090 ± 0.012 in ΛCDM, and the evolving-dark-energy
+  preference drops from about 3σ to about 1.5σ [src: arXiv:2504.16932].
+  The result is a statement about what the other data prefer, not a τ
+  measurement.
+- **A ground-based prior.** CLASS × Planck, 0.053 (+0.018/−0.019) [src:
+  arXiv:2501.11904, Sect. V.4]; independent of the Planck low-ℓ
+  systematics in instrument and modulation, but its width does not exclude
+  0.09 on its own (`open-questions.md`, about 2σ [der]).
+- **A prior from reionisation astrophysics.** τ = 0.0552 with errors of a
+  few 10⁻³ (arXiv:2601.09644) or 0.067 ± 0.011 (arXiv:2607.26373) [src, as
+  quoted in `open-questions.md`]; these import a reionisation model, which
+  `cosmo-reionization-21cm` covers.
+
+State which choice was made, and show the result under a second one when
+the conclusion depends on τ (dark-energy preference, Σm_ν, n_s).
+
 ## Numbers
 <!-- key: numbers -->
 

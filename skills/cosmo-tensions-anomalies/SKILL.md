@@ -33,7 +33,7 @@ skill holding the source; [der] derived.
 - Early side beyond Planck: SPT-3G D1 66.66 ± 0.60, CMB-SPA 67.19 ± 0.38, DESI DR2 BAO + BBN 68.51 ± 0.58 (arXiv:2506.20707, arXiv:2503.14738).
 - Lensing S8 vs CMB: KiDS-Legacy 0.76σ in S8 (0.73σ in Σ8) from Planck alone; DES Y6 3×2pt 2.6σ in S8, 1.8σ full space from Planck + ACT + SPT, 1.0σ full space from Planck 2018 alone. CMB S8 spans 0.819–0.836 (arXiv:2503.19441, arXiv:2601.14559, arXiv:2309.10034).
 - Low-z amplitudes disagree more among themselves than with the CMB: eRASS1 0.86 ± 0.01, KiDS clusters 0.74 ± 0.03, tSZ 0.72 ± 0.03 (arXiv:2402.08458, arXiv:2507.14285, arXiv:2605.11083).
-- CMB against DESI DR2 in ΛCDM: 1.6σ (P-ACT) to 3.7σ (SPT + ACT) (arXiv:2503.14452). Higher τ, w0wa, negative neutrino mass and Ω_K > 0 each absorb this one mismatch (arXiv:2504.16932, arXiv:2407.10965).
+- CMB against DESI DR2 in ΛCDM: 1.6σ (P-ACT, arXiv:2503.14452) to 3.7σ (SPT + ACT, arXiv:2506.20707). Higher τ, w0wa, negative neutrino mass and Ω_K > 0 each absorb this one mismatch (arXiv:2504.16932, arXiv:2407.10965).
 - w0wa: 1.7σ DESI alone; with CMB 3.1σ (2.7σ without CMB lensing, 2.4σ compressed priors, 1.4σ with τ = 0.09); 3.0–3.4σ with recalibrated supernovae; 4.2σ superseded (arXiv:2503.14738, arXiv:2504.16932, arXiv:2601.19424). Evidence for DESI + CMB mildly favours Λ (arXiv:2511.10631).
 - A_L = 1.180 ± 0.065 is Planck PR3; PR4 HiLLiPoP and ground data give 1.0–1.04; CMB-SPA A_2pt = 1.079 ± 0.038, yet 1.6σ from ΛCDM in the (A_2pt, A_recon) plane (arXiv:2309.10034, arXiv:2506.20707).
 - Number-count dipole: 4.9–5.7σ for CatWISE, 5.4σ for three radio surveys, but 3.3–3.6σ with clustering-aware mocks; the DESI redshift dipole gives 358 (+55/−48) km/s (arXiv:2009.14826, arXiv:2509.16732, arXiv:2511.00822, arXiv:2608.30914).
@@ -103,7 +103,11 @@ in one of its parents, or in the home directory, or if `COSMOSKILL_HOME` is
 set, run
 `python3 "${CLAUDE_SKILL_DIR}/../observational-cosmology/scripts/layers.py" cosmo-tensions-anomalies`
 and read what it prints before answering. A note applies when its subject is
-the question's; you need not open the section it is attached to. Say which
+the question's; you need not open the section it is attached to. An
+override replaces its base section for this researcher: use it, and quote
+the base value beside it, both labelled. A suppressed section is left out
+and named as suppressed; use it only when the question asks for that
+section's own content, and then say that the layer hides it. Say which
 statements come from a local layer.
 
 End the answer with one line, `<file>` being `skill` for this file or the

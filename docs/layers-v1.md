@@ -10,11 +10,12 @@ section, its subsections' included, so that keying a subsection does not
 report its parent as changed; `sync_layers.py` exits with the highest
 status, a malformed entry counting 1; `make_release_manifest.py --to`
 defaults to the working tree; the fixture base names its skill file
-`SKILL.fixture.md` so that no checkout lists it as a skill. Not done yet:
-the §5 wording in `tools/templates/fixed-block.md` (regenerating the blocks
-touches every `SKILL.md`; until then `layers.py <skill>` prints the same
-instructions with each override and suppress) and the answering test with
-an override.
+`SKILL.fixture.md` so that no checkout lists it as a skill. Also done
+2026-10-20: the §5 wording, in `tools/templates/fixed-block.md` and every
+`SKILL.md` block, with the rule the answering test asked for (a suppressed
+section is used only when the question asks for that section's own
+content); the answering test with an override and a suppress passed
+(`docs/history/tests/levels/run-2026-10-20-l3-second.md`).
 
 The roadmap of 2026-10-12 designed phase 5 around a claims table. That
 table was dropped; v1 is built on what the package already has: frozen
@@ -158,8 +159,9 @@ entry at a time, and never writes a bibliography row from memory.
 
 The block every `SKILL.md` ends with (generated from
 `tools/templates/fixed-block.md`) adds: an `override` is quoted with the base
-value beside it, both labelled; a `suppress` is honoured unless the question
-is about that section itself. The footer is unchanged
+value beside it, both labelled, and used; a suppressed section is left out
+and named as suppressed, and is used only when the question asks for that
+section's own content, saying that the layer hides it. The footer is unchanged
 (`base+personal`, `base+project`).
 
 ## 6. Tests

@@ -130,6 +130,50 @@ A note is dated and stamped when written. Notes, papers and dossiers are
 plain files: edit or delete them with any editor. The `cosmoskill-refine`
 skill gives the assistant this workflow.
 
+## Writing good entries
+
+A layer is read on every question of the skills it touches, so how it is
+written decides what it costs and whether it is used.
+
+- **Keep notes to 1–3 lines.** `layers.py <skill>` prints every note of the
+  skill before each answer; a long note is paid for on every question. Put
+  longer content in a dossier: it is listed by title and scope and read only
+  when the question is on its subject. `layers.py check` warns on a note of
+  more than four lines.
+- **Attach to the most specific section, and open with the subject.** A
+  note is applied when its subject is the question's, without opening the
+  section it is attached to; "τ prior: ..." is recognised, "Note: ..." is
+  not. One entry per subject: two contradicting entries on one key leave
+  the answer to choose.
+- **Few `general` notes.** They apply to every question of the skill;
+  `check` warns above three.
+- **Choose the mode by what you mean.** A note adds without contradicting.
+  An override says the package's value is not the one you use; give your
+  value with its paper and place read, since the answer quotes it beside
+  the package's. A suppress hides a section you never need; give the reason.
+  A dossier holds your own method depth, in the package's template.
+- **The profile is for who you are and your conventions**, not for content:
+  it is printed in every skill.
+- **Source like the package.** A number carries its paper and the place
+  read; add papers with `layers.py source`, never by hand; your own
+  judgement is labelled as yours or goes under "Not verified".
+- **Point to the package rather than copying it.** A copied passage goes
+  stale silently when the package changes; a pointer to `<file>#<key>`
+  stays right, and `sync_layers.py` reports when the section moves.
+- **Write an override after reading the current base** with
+  `layers.py resolve`, so that its stamp means something when
+  `sync_layers.py` later says `changed`.
+- **Keep confidential content private** (`private/` or `private: yes`), and
+  write the rest neutrally, so that `promote.py` can move it into the
+  package unchanged.
+
+A complete example, built with `layers.py` and kept valid by a test, is in
+`skills/cosmoskill-refine/example-layer/`: a profile, notes of each mode
+(including a `general` and a private one) on three skills, a paper row and a
+short dossier that points to the package. The `cosmoskill-refine` skill
+reads it before building a specialised part of a skill in a researcher's
+layer.
+
 ## How the assistant uses it
 
 Every skill ends with a block that says: if a `.cosmoskill/` directory

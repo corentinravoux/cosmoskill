@@ -81,6 +81,10 @@ RETIRED = "retired-keys.tsv"
 RETIRED_COLUMNS = ["file", "key", "retired_on", "replaced_by", "reason"]
 STAMP = re.compile(r"^[0-9a-f]{12}$")
 MAX_PROFILE_LINES = 60
+# Soft limits of `check` (warnings, not failures): every answer in a skill reads
+# all its notes, so a long note or many `general` notes cost every question.
+NOTE_WARN_LINES = 4
+GENERAL_WARN_COUNT = 3
 KEY_LINE = re.compile(r"^<!-- key: ([a-z0-9][a-z0-9\-]*) -->$")
 NOTE_HEADING = re.compile(r"^## +(.+?)\s*$")
 ANY_HEADING = re.compile(r"^(#{1,6}) +(.+?)\s*$")
@@ -172,10 +176,12 @@ def personal_layer() -> Path:
 
 def project_layer(start: Path | None = None) -> Path | None:
     here = (start or Path.cwd()).resolve()
-    personal = personal_layer().resolve()
+    # The home directory's .cosmoskill is a personal layer, never a project one,
+    # even when COSMOSKILL_HOME points elsewhere.
+    personal = {personal_layer().resolve(), (Path.home() / LAYER_DIR).resolve()}
     for folder in [here, *here.parents]:
         candidate = folder / LAYER_DIR
-        if candidate.is_dir() and candidate.resolve() != personal:
+        if candidate.is_dir() and candidate.resolve() not in personal:
             return candidate
     return None
 
@@ -758,7 +764,7 @@ def holds_content(folder: Path) -> bool:
 
 
 def check(online: bool) -> int:
-    orphans = faults = 0
+    orphans = faults = warnings = 0
     for kind, layer in layers():
         for folder in sorted(path for path in layer.iterdir() if path.is_dir() and holds_content(path)):
             skill = folder.name
@@ -780,6 +786,19 @@ def check(online: bool) -> int:
                 if note["base"] and not STAMP.match(note["base"]):
                     problems.append(f"{note['path']}: entry on '{note['attach']}' has base '{note['base']}', "
                                     f"not a 12-digit fingerprint; repair it with sync_layers.py --stamp")
+            notes = read_notes(layer, skill)
+            for note in notes:
+                length = sum(1 for line in note["text"].splitlines() if line.strip())
+                if length > NOTE_WARN_LINES:
+                    print(f"{kind}: warning: {note['path']}:{note['line'] + 1}: note on '{note['attach']}' has "
+                          f"{length} lines; every answer in {skill} reads it: keep notes to 1-3 lines, move "
+                          f"longer content to a dossier (layers.py dossier {skill} <name>)")
+                    warnings += 1
+            general = [note for note in notes if note["attach"].lower() == "general"]
+            if len(general) > GENERAL_WARN_COUNT:
+                print(f"{kind}: warning: {folder}: {len(general)} 'general' notes; they apply to every question "
+                      f"in {skill}: attach each to the most specific section instead")
+                warnings += 1
             known = set(base_ids(skill)) | {row["id"].lower() for row in rows}
             cited_arxiv, cited_doi = bibliography.cited_ids(folder)
             for ident, files in sorted(cited_arxiv.items()):
@@ -796,7 +815,8 @@ def check(online: bool) -> int:
             for problem in problems:
                 print(f"{kind}: {problem}")
             faults += len(problems)
-    print(f"{orphans} note(s) attached to nothing, {faults} problem(s) in papers and citations", file=sys.stderr)
+    print(f"{orphans} note(s) attached to nothing, {faults} problem(s) in papers and citations, "
+          f"{warnings} warning(s)", file=sys.stderr)
     return 1 if orphans or faults else 0
 
 

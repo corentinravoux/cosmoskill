@@ -46,6 +46,41 @@ project only"; with no layer yet, run `layers.py init` first.
 6. Anything confidential goes under `<layer>/<skill>/private/`, or takes
    the line `private: yes`; it is never promoted.
 
+## Writing good entries
+<!-- key: writing-good-entries -->
+
+Every answer in a skill reads everything `layers.py <skill>` prints, so
+apply these to every entry you write, and run `layers.py check`, which
+warns on the first and the third:
+
+- A note is 1–3 lines: one fact, preference or correction. Anything longer
+  is a dossier, read only when the question is on its subject.
+- Attach it to the most specific section; open it with its subject
+  ("τ prior:", "For KiDS S8:"), so its relevance shows without opening the
+  section. One entry per subject; never two that contradict on one key.
+- `general` notes apply to every question of the skill: at most three.
+- The profile holds who the researcher is and their conventions, not
+  content.
+- A number carries its paper and the place read; the researcher's own
+  judgement is labelled as theirs, or goes under "Not verified".
+- Point to the package's sections instead of copying them: a copy goes
+  stale silently when the package changes.
+- Write neutrally what could serve others, so that `promote.py` can take it
+  unchanged.
+
+## Building a specialised part of a skill
+<!-- key: building-a-specialised-part-of-a-skill -->
+
+When the researcher wants their own depth on a subject the package covers
+only broadly (several notes, papers and a dossier on one subject), read the
+example layer in `example-layer/` of this skill first: its `profile.md`,
+one `notes.md` and its dossier. Follow its shape, size and labelling: short
+notes attached to keys, the papers added with `source`, one dossier in the
+package's template that points to the package's sections rather than
+copying them, and the researcher's own practice under "Not verified". Copy
+the pattern, not the content. Then run `layers.py check` and
+`sync_layers.py`.
+
 ## After an update of the package
 <!-- key: after-an-update-of-the-package -->
 

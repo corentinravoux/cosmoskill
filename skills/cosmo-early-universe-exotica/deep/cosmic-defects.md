@@ -7,7 +7,7 @@ superposition, metastable and superstring modifications), how LVK, PTAs and
 Planck set up their searches, how domain-wall spectra are parametrised, and
 which modelling choice moves Gμ by orders of magnitude; the limits
 themselves are in the reference files.
-Snapshot: 2026-10-19.
+Snapshot: 2026-10-21.
 From: LISA Cosmology WG 2022, Sect. 7 and 9.2.3; Carr et al. 2026, Sect.
 II.2.2; Planck, LVK and PTA string searches.
 
@@ -187,7 +187,9 @@ and b ∈ [0.5, 1], c ∈ [0.3, 3] [src: Eq. 57]. Decay into dark radiation
 The largest single choice. LVK O3 stochastic exclusions: model A Gμ ≳ (9.6 ×
 10⁻⁹ – 10⁻⁶), B ≳ (4.0–6.3) × 10⁻¹⁵, C-1 ≳ (2.1–4.5) × 10⁻¹⁵, C-2 ≳
 (4.2–7.0) × 10⁻¹⁵, the ranges spanning N_k [src: arXiv:2101.12248, Sect.
-V]. With model A the strongest limit came from PTAs (Gμ ≳ 10⁻¹⁰); with B
+V]. The C-1 exclusion holds "aside from a small region where N_k ≳ 180",
+which the stochastic analysis leaves open [src: same]. With model A the
+strongest limit came from PTAs (Gμ ≳ 10⁻¹⁰); with B
 and C-1 from LVK; with C-2 the CMB is almost as strong as LVK [src: Sect.
 V]. In the 2026 multi-band analysis only model A can explain the PTA signal
 without violating LVK; B, C-1 and C-2 are capped by LVK about 4.6 orders of

@@ -3,9 +3,10 @@
 Scope: how a neutral fraction is inferred from Lyα equivalent widths of
 UV-selected galaxies (line measurement with JWST and from the ground,
 completeness and slit loss, the post-reionisation baseline, the IGM
-transmission model and the likelihood), and how to choose between
-baselines, line profiles, simulations and summary statistics.
-Snapshot: 2026-10-17.
+transmission model and the likelihood), how the narrow-band
+luminosity-function route differs, and how to choose between baselines,
+line profiles, simulations and summary statistics.
+Snapshot: 2026-10-21.
 From: SKA EoR/CD synergies chapter (Chakraborty et al. 2026,
 arXiv:2606.30947), Sects. 2.2 and 4.1.2; Bernal & Kovetz 2022 review
 (arXiv:2206.15377), Sect. 2.4.
@@ -225,6 +226,35 @@ a spherical radius [src].
   that it may not be a general law" [src]. Unlike dark pixels, the ceiling
   needs a simulation calibration [src].
 
+### Luminosity function instead of equivalent widths
+<!-- key: luminosity-function-instead-of-equivalent-widths -->
+
+Narrow-band surveys select emitters by line flux and compare the Lyα
+luminosity function (LF) with a post-reionisation reference; two routes:
+- **Density ratio (LAGER).** T(6.9)/T(5.7) = (ρ_Lyα ratio)/(ρ_UV ratio)
+  (Eq. 8), assuming unchanged ISM and stellar populations over 200 Myr:
+  0.63 (+0.13/−0.15) over 0.63 ± 0.09 gives 1.0 (+0.26/−0.28) [src:
+  arXiv:2105.12191, Sect. VIII.1.3]. The conversion is model dependent:
+  from T > 0.72 (1σ), three McQuinn radiative-transfer models give
+  x_HI < 0.16, 0.33, 0.11, a volume test < 0.04 and analytic bubble models
+  < 0.16; the paper adopts x_HI < 0.33 at z = 6.9 [src: Sect. VIII.1.4, Table 4].
+- **Forward model (SILVERRUSH).** 21cmFAST maps of one scenario at x_HI =
+  0–0.975 laid on the density field; UV LF turned into a Lyα LF with a
+  z ~ 6 EW distribution; damping wings along sightlines; 100 sub-volumes of
+  Δz = 0.1; fit only log L_α = 42.4–43.4 (resolution below, AGN above
+  43.5); Gaussian likelihood, uniform prior. Result: x_HI < 0.05 at z = 5.7,
+  0.15 (+0.10/−0.08), 0.18 (+0.14/−0.12), 0.75 (+0.09/−0.13) at 6.6, 7.0,
+  7.3; clustering gives 0.06 and 0.21 at 5.7 and 6.6 [src: arXiv:2411.15495, Sect. V.4].
+- **Systematics.** LFs at one redshift differ by factors ~2 between
+  surveys; EW limits (0–48 Å on a common spectrum) explain up to ~1.6 in
+  density; veto-band masking (~15–40% of area, ~9% for the z = 5.7
+  reference) lowers φ* if ignored [src: arXiv:2105.12191, Sects.
+  VIII.1–VIII.1.2]. Cosmic variance sets a floor Δx_HI ~ 0.2 at x_HI = 0.3
+  for a 2 deg², Δz = 0.5 survey; only many independent fields reduce it
+  [src: arXiv:2305.04949]. The bright end (L > 10^43.4 erg/s) does not
+  evolve from z = 5.7 to 6.6, read as bubbles around luminous emitters
+  [src: arXiv:2506.13854].
+
 ### Field average or structure by structure
 <!-- key: field-average-or-structure-by-structure -->
 
@@ -315,9 +345,10 @@ reionization simulations" [src: Sect. V.2, Fig. 11 caption].
 ## Not verified
 <!-- key: not-verified -->
 
-- The Lyα luminosity-function and clustering route (narrow-band surveys)
-  was not read at source: two searches returned nothing; only its use in
-  arXiv:2504.09725 is recorded.
+- Luminosity-function route: the SILVERRUSH IV (Konno et al.) z = 5.7 and
+  6.6 LFs used as references, the McQuinn et al. models and the HEROES
+  method sections were not read; the clustering route only as far as
+  arXiv:2411.15495, Sect. V.4.
 - Lu et al. bubble-size distributions and Mason & Gronke transmission
   integral (used by arXiv:2408.01507) were not read.
 - The 35 ± 10% slit loss is quoted by arXiv:2608.19311 from Napolitano et

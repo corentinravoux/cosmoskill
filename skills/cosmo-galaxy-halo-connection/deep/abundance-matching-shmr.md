@@ -4,8 +4,9 @@ Scope: how a subhalo abundance-matching (SHAM) catalogue or a parametric
 stellar-to-halo mass relation (SHMR) is built and fitted (choice and epoch
 of the halo property, stellar mass function input, how scatter is
 injected, satellites, disruption and orphans, assembly-bias extensions,
-nuisance parameters and priors), and what each choice was found to cost.
-Snapshot: 2026-10-18.
+nuisance parameters and priors), what each choice was found to cost, and
+how SHMRs from lensing, abundance matching and clustering compare.
+Snapshot: 2026-10-21.
 From: Wechsler & Tinker 2018, Sect. 2.2.1–2.2.2, 4–6; DES, HSC, COSMOS and
 DESI BGS galaxy-evolution groups.
 
@@ -268,6 +269,34 @@ give the model additional freedom in order to fit the more complex data"
 fractions of DESI BGS disagree (L2, `results.md#satellites`), so the two
 routes do not give the same f_sat on the same data.
 
+## SHMRs from lensing, abundance matching and clustering compared
+<!-- key: shmrs-from-lensing-abundance-matching-and -->
+
+- **Where they agree.** Abundance matching, HOD, CLF, X-ray clusters and
+  lensing-plus-clustering models show "remarkable consistency on the general
+  outlines" of the local SHMR [src: arXiv:1804.03097, Sect. 6.1]. COSMOS
+  lensing + clustering + SMF agrees broadly with matching and satellite
+  kinematics, and Behroozi-style matching on its SMFs recovers its pivot
+  masses, with "subtle differences" unexplained [src: arXiv:1104.0928,
+  Sects. V.4, V.5.5]. DES Y3 (w(θ) + γ_t) agrees with the Behroozi 2013 and
+  Moster 2013 matching at low mass and with the SDSS lensing + clustering
+  iHOD [src: arXiv:2506.22367, Sect. 7.1.1].
+- **Where they differ, and why.** Above log M_h^cen ≳ 12 DES Y3 is in
+  tension with that matching and agrees with Kravtsov et al. [src: same],
+  who find earlier SHMRs underestimate BCG masses by ~2–4 because SDSS
+  photometry misses outer profiles; with improved photometry matching
+  agrees with M*,BCG ∝ M₅₀₀^(0.34 ± 0.11) [src: arXiv:1401.7329, Sect.
+  III.1]. The review names massive-end stellar masses (sky subtraction
+  first, then outer profiles, ICL, IMF) as the largest discrepancy between
+  methods [src: arXiv:1804.03097, Sects. 6.1, 6.5.1]. HSC lensing finds M_h
+  varying by up to 0.4 dex at fixed total M*, with the inner 10 kpc mass:
+  one SHMR is incomplete there [src: arXiv:1811.01139].
+- **Scatter.** Abundance alone cannot fix it: BOSS bias 0.18 dex (log M_h =
+  12.7–13.7), SDSS clustering + lensing 0.22 (+0.02/−0.01) at 10¹² and
+  0.18 ± 0.01 at 10¹⁴ M_⊙, groups with SHAM mocks 0.20 ± 0.02, X-ray
+  clusters 0.17 (14–15), all including measurement scatter [sec:
+  arXiv:1804.03097, Sect. 6.2; 0.17 also in arXiv:1401.7329, Sect. III.1].
+
 ## Numbers
 <!-- key: numbers -->
 
@@ -353,5 +382,8 @@ routes do not give the same f_sat on the same data.
   not read, no identifiers recorded.
 - The SHM functional form of Moster et al. 2013 (its Eq. 2) was not read;
   only its parameter names and redshift dependence (Eqs. 5–8).
+- SHMR comparison: arXiv:1811.01139 read in its abstract only; the
+  numerical gap between the DES Y3 and matching SHMRs above 10¹² M_⊙, and
+  KiDS lensing SHMRs, were not read.
 - The orphan fractions needed by each SHAM model in arXiv:1705.06347,
   Fig. 11, and its Appendix C completeness fit were not read as text.

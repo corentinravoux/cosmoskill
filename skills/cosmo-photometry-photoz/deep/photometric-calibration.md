@@ -5,8 +5,9 @@ solved (photometric model, calibration-star selection, the fit and its
 degeneracies, non-photometric data, chromatic corrections), how its
 uniformity is tested against an external reference, and how to choose
 between ubercalibration, forward calibration, stellar-colour or Gaia-XP
-standards and in-situ throughput metrology.
-Snapshot: 2026-10-18.
+standards and in-situ throughput metrology, and how a zero-point error
+propagates into photo-z and n(z).
+Snapshot: 2026-10-21.
 From: Scope file; DES, Rubin LSST and Gaia calibration programmes; Newman &
 Gruen 2022 review, Sect. 1.1 (copied from `references/subtopics.tsv`).
 
@@ -234,6 +235,32 @@ above 800 nm exceeds 5%; CBP transmission and a vignetting model are the
 outstanding ingredients [src: Sect. 4, 6]. The angle-of-incidence blue
 shift of filter edges has only an initial measurement [src: Sect. 6].
 
+## How a zero-point error propagates
+<!-- key: how-a-zero-point-error-propagates -->
+
+- **Template photo-z.** Zero-point errors "may create discontinuities not
+  reproduced by the templates"; on CFHTLS D1 they left a systematic offset
+  at z_s < 0.5 [src: arXiv:astro-ph/0603217, Sects. 3.3, 4.1]. Offsets
+  fitted on 468 bright spec-z galaxies stay below 0.1 mag (mean 0.042);
+  with template optimisation they remove the trends (σ = 0.037), and the
+  catastrophic fraction falls by 2.3 over the three steps, the prior
+  included, not by the offsets alone [src: Table 1, Sect. 5.1].
+- **Lensing n(z).** DES Y3 perturbs deep-field magnitudes by their
+  zero-point errors (u 0.0548, griz 0.0039, JHK_s 0.0054 mag) and reruns
+  SOMPZ: the spread peaks where the 4000 Å break crosses a filter, and the
+  ⟨z⟩ term is 0.010, 0.005, 0.002, 0.002 (bins 1–4; all terms 0.012,
+  0.008, 0.006, 0.009), u-dominated at low z [src: arXiv:2012.08566,
+  Sect. 5.3, Fig. 15, Table 2]. DES Y6 (u 0.055 mag) finds it largest in
+  bin 1 and rising again in bin 4, as a fixed magnitude error maps to a
+  larger redshift error at high z [src: arXiv:2510.23566, Sect. 5.2].
+- **Clustering n(z) and density.** For DES Y6 MagLim++ the term is largest
+  in bin 6 on ⟨z⟩ and σ₆₈ and moderate in bin 2 (g–r transition, z ~ 0.4)
+  [src: arXiv:2509.07964, Sect. IV.2]. A varying calibration field breaks
+  the isotropy of the observed density and couples multipoles
+  [src: arXiv:1211.1015, Sect. II.2, Eq. 17]; sizes in
+  `deep/chromatic-extinction.md#how-an-error-propagates`. Wide-field
+  residuals enter clustering through imaging weights (`cosmo-data-pipelines`).
+
 ## Numbers
 <!-- key: numbers -->
 
@@ -334,6 +361,8 @@ shift of filter edges has only an initial measurement [src: Sect. 6].
   of 2025–2026 work.
 - The Gaia XP correction paper used by arXiv:2309.11225 and the BEST
   standards body (arXiv:2601.05486): not read for this dossier.
-- How calibration errors propagate into photo-z and n(z): no paper read
-  here quantifies it; the narrow-band and template dossiers give
-  zero-point offsets at the photo-z level only.
+- Outlier rates as a function of a wide-field zero-point error, for
+  template or machine-learning photo-z: no paper read here isolates them
+  (arXiv:astro-ph/0603217 reports the combined effect of offsets, templates
+  and prior). KiDS-Legacy zero-point propagation into n(z): no passage
+  found in arXiv:2503.19440 by term search; not read further.

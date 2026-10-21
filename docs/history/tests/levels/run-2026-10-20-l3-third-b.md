@@ -788,3 +788,18 @@ Source checks for this skill: E6 and E7 (table at the end). Rows for that table:
 |---|---|---|---|
 | E6 | B2pt `deep/void-finding-size-function.md`, "Calibrated (fixed or relaxed)" | fixed calibration (C_slope, C_offset) = (−1.62, 4.30): Ω_m 0.293, σ8 0.839, w −0.97; relaxed: 0.285, 0.793, −1.11 ± 0.24 | arXiv:2212.03873, Sect. IV.2, Table 1: printed so, with the relaxed calibration posterior −2.02, 4.74 as in the dossier's Numbers. The text gives about 21% on Ω_m for both and 10% (relaxed) against 7% (fixed) on σ8, which bears out "relaxing loosens σ8, not Ω_m". Match. |
 | E7 | B2pt `deep/field-level-inference.md`, Step 8 | Beyond-2pt stage 2: target "R̂ ∼ 0.01", ≈ 255 samples of α, ESS 193–311, Gelman–Rubin 0.003–0.035, two chains, GetDist | arXiv:2405.02252, Sect. V.3.3, "MCMC convergence and autocorrelation": printed so, with mean and median ESS 254.4 and 259.5. Match. The dossier's [der] that the values are R̂ − 1 agrees with the paper's EFT-entry criterion, written "R−1<0.03" (section "Sampling & validation"). |
+
+## Source checks E1–E5
+
+Recovered on 2026-10-21 from the transcript of the run that was stopped; the
+paper text below is what the paper reader returned at the time.
+
+| # | File | Statement | What the paper says |
+|---|---|---|---|
+| E1 | DE `deep/fr-screening.md`, Numbers and the note after it | eRASS1 `log10 abs(f_R0)` < −4.31 (95%, massless ν) in the abstract and Eq. 50, while Table 2 prints < −5.12 | match: the abstract gives "< −4.31 at 95% confidence level"; Sect. 5.2, Table 2, row "HS-f(R)", prints "< −5.12" (Ω_m 0.28 ± 0.02, σ8 0.89 ± 0.04, S8 0.85 ± 0.04); the dossier reports the inconsistency without picking one (arXiv:2402.08459) |
+| E2 | neutrinos–DM `deep/interacting-decaying-dm.md`, Not verified | Mosbech et al. quote the Planck optical depth as τ = 0.054 ± 0.0007 | match: Sect. 5 prints "τ_CMB = 0.054 ± 0.0007" (arXiv:2607.15020) |
+| E3 | same | the error of E2 was "not checked against the Planck paper" | Planck 2018 gives τ = 0.0544 ± 0.0073 (arXiv:1807.06209, Sect. 3, base-ΛCDM table): the error printed in arXiv:2607.15020 is ten times smaller; the paper does not comment on it |
+| E4 | inflation `deep/slow-roll-model-comparison.md`, "χ² or Bayes factor" | D-brane p = 2: Δχ² = −2.0, ln B = +0.6 | match: Sect. 4.2, Table 5, row "D-brane inflation (p = 2)": −2.0, 0.6 (arXiv:1807.06211); the p = 4 row was cut in the output and not compared |
+| E5 | CMB × LSS `deep/ksz-velocity-reconstruction.md`, filter matching | arXiv:2604.04867 writes the filter ratio as b_l^150/b_l^90 | match: Sect. IV.1, Eq. 39, F_l^150 = (b_l^150/b_l^90) F_l^90 (arXiv:2604.04867) |
+
+One more check of the same run, for `cosmo-beyond-two-point`, was made before the stop and is not numbered: the void galaxy bias b_g = 2.45 ± 0.36 quoted in `results.md` and `systematics.md` matches the abstract and conclusions of arXiv:2507.13450.

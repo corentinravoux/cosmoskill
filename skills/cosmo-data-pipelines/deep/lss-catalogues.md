@@ -6,7 +6,7 @@ imaging-systematics regression with its map choice and null-test pass
 criterion, randoms and their normalisation, total and FKP weights), with
 the stated reason for each setting, compared across DESI DR1, eBOSS DR16,
 DES Y3 lenses and the Euclid design.
-Snapshot: 2026-10-17.
+Snapshot: 2026-10-21.
 From: Ross et al. 2025 (DESI LSS catalogues); eBOSS and DES clustering
 working groups (copied from `references/subtopics.tsv`).
 
@@ -138,7 +138,12 @@ weights and a 2D FKP weight w_FKP,2D = 1/[1 + n₀⟨C_assign⟩(n_tile) P₀]
 h³ Mpc⁻³; errors Poisson from weighted counts, known to be only
 approximately right, so the same statistic is computed on 25 Abacus altMTL
 mocks with no contamination, put through the same regression
-[src: arXiv:2411.12020, Sect. 6]. Pass criterion, fixed while blinded:
+[src: arXiv:2411.12020, Sect. 6]. The DR1 Poisson errors were also
+divided by mistake by the pre-refactoring mean completeness weight of the
+full sample, which under-estimates them; the paper states that this was
+applied consistently to data and mocks and so does not affect the
+data-against-mock null tests [src: Sect. 6, footnote 14]. Pass
+criterion, fixed while blinded:
 the total χ²_null over all tested maps below that of at least one of the 25
 mocks, and each map's χ²_null below at least two mocks; failures were
 investigated, and the maps and methods were never changed after

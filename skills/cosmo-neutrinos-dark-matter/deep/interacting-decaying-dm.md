@@ -400,8 +400,9 @@ velocity-independent limits in `results.md`.
 - The ACT DR6 sections named in "From" (VI.4.1, VI.5.2) were not read
   for this dossier.
 - Mosbech et al. quote the Planck optical depth as τ = 0.054 ± 0.0007
-  (Sect. 5); the error is copied as printed and was not checked against
-  the Planck paper.
+  (Sect. 5); Planck 2018 gives τ = 0.0544 ± 0.0073 (arXiv:1807.06209,
+  Sect. 3), an error ten times larger. The paper does not comment on it;
+  whether its τ prior used the printed width was not checked.
 - The numerical value of 𝓕_He used by the 2018 and 2026 analyses was
   not read; the 2014 value is 0.76.
 - The dark-radiation hierarchy equations for ℓ ≥ 2 of arXiv:1606.02073

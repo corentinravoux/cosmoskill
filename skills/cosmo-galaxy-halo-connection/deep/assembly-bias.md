@@ -5,7 +5,7 @@ and ranking of the secondary property, decorated, re-ranking and
 mass-parameter implementations, priors, likelihood), how it is diagnosed
 (shuffling, correlated re-ranking, direct HOD splits), and how to choose
 between these forms and read their parameters across papers.
-Snapshot: 2026-10-18.
+Snapshot: 2026-10-21.
 From: Wechsler & Tinker 2018, Sect. 5.3–5.4, 6.4, 7.2; Asgari et al. 2023,
 Sect. 5.8.
 
@@ -43,6 +43,10 @@ itself. The definitions differ from paper to paper:
 | Environment (tophat) | δ = M(r_98 < r < 5 h⁻¹Mpc) / ⟨M(r_98 < r < 5 h⁻¹Mpc)⟩ − 1, ranked as δ^rank | AbacusHOD | arXiv:2110.11412, Eq. 12 |
 | Environment (smoothed) | smoothed matter overdensity δ_5 and tidal anisotropy α_5 | SIMBA vs TNG, Yang et al. 2025 | arXiv:2511.01441, abstract, Sect. 3.2 |
 | Environment (data) | galaxy overdensity δ_g, rank-ordered into halves | DESI DR1 BGS groups | arXiv:2510.20896 (definition in L2) |
+| Environment (smoothed, SAM) | δ_1.25 ranked in narrow mass bins; δ_5 and tidal anisotropy α_0.3,1.25 as alternatives | Xu et al. 2021 | arXiv:2007.05545, Sect. 5.1 |
+| Environment (constrained run) | matter overdensity δ_8^m on 8 h⁻¹Mpc, normalised rank in a narrow mass bin, after Wibking et al. | SDSS on ELUCID, Salcedo et al. 2022 | arXiv:2010.04176, Sect. 3.2 |
+| Concentration (NFW) | upper or lower 50 percentile in a narrow mass bin | DESI One-Percent BGS, Pearl et al. | arXiv:2309.08675, Sect. II.2.2 |
+| Formation time, environment | haloes split by formation time or large-scale environment | EAGLE, Illustris, Artale et al. 2018 | arXiv:1805.06938, abstract |
 
 Why concentration: it correlates with formation history, earlier-forming
 haloes being more concentrated at fixed mass [src: arXiv:2010.04182, Sect.
@@ -52,7 +56,12 @@ bias both in simulations and in CMASS data [src: arXiv:2110.11412, Sect.
 of the halo without extending deep into the 2-halo regime" [src:
 arXiv:2010.04182, Sect. 2.4], and the value recommended by Hadzhiyska et al.
 2020 as best at capturing the secondary-bias signature in hydrodynamical
-simulations [src: arXiv:2110.11412, Sect. 7.1].
+simulations [src: arXiv:2110.11412, Sect. 7.1]. Why the large-scale
+density: the bias shift is Δb_g = ρ_cc σ(b|M)/√⟨N_gal⟩, so the best
+variable has |ρ_cc| → 1 with halo bias, i.e. the overdensity itself
+(arXiv:2010.04176, Eq. 6) [src: Sect. 3.2]. Why ranks: less sensitive to
+the exact definition and scale of the environment [src: arXiv:2007.05545,
+Sect. 5.1; arXiv:2010.04176, Sect. 3.2].
 
 ### Step 2. Choose how the occupation responds to the rank
 <!-- key: step-2-choose-how-the-occupation-responds-to -->
@@ -95,9 +104,15 @@ act on centrals and satellites together, a simplification the authors chose
 "for model simplicity and to limit the number of necessary parameters"
 [src: Sect. 2.4].
 
-**(c) Analytic modulation of the mass parameters (AbacusHOD).** Following
-Xu et al. 2020 (as cited), the secondary rank shifts the two mass scales of
-the baseline HOD:
+**(c) Analytic modulation of the mass parameters (Xu et al.; AbacusHOD).**
+The origin, fitted to a SAM: log M_min = log M_min⁰ + B_cen(δ_1.25^rank −
+0.5), log M_1 = log M_1⁰ + B_sat(δ_1.25^rank − 0.5); negative B lowers the
+mass scales in dense regions; |B| is the range in dex; modulating σ_log M
+alone could not reproduce the central signal of the SAM (arXiv:2007.05545,
+Eqs. 7–8) [src: Sect. 5.1]. Salcedo et al. use the same form on δ̃_8^m with
+𝒬_cen, 𝒬_sat, positive 𝒬_cen meaning dense haloes are less likely to host
+centrals (arXiv:2010.04176, Eqs. 7–8) [src: Sect. 3.2]. AbacusHOD's version
+shifts the two mass scales of the baseline HOD:
 log₁₀M_cut^mod = log₁₀M_cut + A_cent(c^rank − 0.5) + B_cent(δ^rank − 0.5) and
 log₁₀M_1^mod = log₁₀M_1 + A_sat(c^rank − 0.5) + B_sat(δ^rank − 0.5)
 (arXiv:2110.11412, Eqs. 10–11). Reason: galaxy-swap schemes conserve the
@@ -120,7 +135,9 @@ the authors suggest marginalising over C_δ "of order unity" [src: Sect. 6].
 The direct DESI measurement uses the form of (c) for satellites: log
 M_1(δ_g) = log M_1* + Q_sat(δ̃_g − 0.5), with δ̃_g set to 0.25 and 0.75 for
 the low- and high-density halves and α fixed to 1 (arXiv:2510.20896, Eq.
-9) [src].
+9) [src]. The BGS One-Percent fit writes the central decoration as δN_cen =
+A_cen(0.5 − |0.5 − ⟨N_cen⟩_std|) (arXiv:2309.08675, Eq. 7) [src], equal to
+the min form of (a) [der: 0.5 − |0.5 − x| = min(x, 1 − x)].
 
 ### Step 3. Fit
 <!-- key: step-3-fit -->
@@ -147,6 +164,13 @@ doubled scales (0.338–60 h⁻¹Mpc in 8 log bins, 0–60 in 6 linear bins)
 and then samples with dynesty to compute evidences [src: arXiv:2110.11412,
 Sect. 5.4]. DESI DR1 frees A_cen and A_sat over the maximum range allowed
 by the model, [−1, 1] [src: arXiv:2512.15962, Sect. III.2, Table 1].
+Count statistics: SDSS DR7 (Wang et al. 2022) and DESI BGS (Pearl et al.)
+fit n_gal, w_p and counts-in-cylinders P(N_CiC) with a concentration-
+decorated HOD [src: arXiv:2204.05332, abstract; arXiv:2309.08675, Sect.
+II.3]. Salcedo et al. fit w_p of quintiles in galaxy counts on 8 h⁻¹Mpc
+cross the full sample, p(N_8^g) and n_g on the constrained ELUCID
+reconstruction of the SDSS volume [src: arXiv:2010.04176, abstract,
+Sect. 6 headings].
 
 ### Step 4. Diagnose with shuffling
 <!-- key: step-4-diagnose-with-shuffling -->
@@ -175,7 +199,11 @@ they re-order occupations within each mass bin by a secondary property with
 an adjustable correlation r, drawn from a bivariate Gaussian of correlation
 r and mapped to ranks (six steps in their Sect. 4.2); further shuffling
 within bins of mass and environment shows how much of the excess the
-environment explains (their Sect. 4.3, Conclusions) [src].
+environment explains (their Sect. 4.3, Conclusions) [src]. In a SAM, Xu et
+al. shuffle centrals in 0.1 dex bins below log M_h = 14.6 (0.2 and 0.6 dex
+above), move satellites with their central, place a moved central at the
+former occupant or the most-bound particle, and use 10 shuffles for the
+error [src: arXiv:2007.05545, Sect. 3.1].
 
 ## Choices and what they cost
 <!-- key: choices-and-what-they-cost -->
@@ -198,6 +226,15 @@ environment explains (their Sect. 4.3, Conclusions) [src].
   Conclusions]. In SIMBA and TNG most assembly bias is attributed to δ_5,
   and tidal anisotropy contributes negligibly [src: arXiv:2511.01441,
   abstract].
+- **Semi-analytic model.** Halo age or concentration carry only 20–30% of
+  the signal; the smoothed matter density or the tidal anisotropy "can
+  account for the full level" (definition matters) [src: arXiv:2007.05545,
+  abstract]. On tidal anisotropy this differs from the SIMBA/TNG result
+  above.
+- **EAGLE and Illustris.** At fixed low halo mass, haloes in dense regions
+  and early-formed haloes more often host a central; early-formed haloes
+  host fewer satellites; "in agreement with previous findings from
+  semi-analytical models" [src: arXiv:1805.06938, abstract].
 - **What DESI DR1 did.** Concentration only, stating that other secondary
   properties such as overdensity are advocated and "further tests are
   needed" [src: arXiv:2512.15962, Sect. III.2].
@@ -267,11 +304,39 @@ phenomenon [src: arXiv:2510.20896, Conclusions].
 ### Which statistic
 <!-- key: which-statistic -->
 
+Counts-in-cylinders: SDSS DR7 gives significant positive central
+assembly bias for M_r < −20.0 and −19.5, none for −21.0, and at most a
+marginal negative satellite term [src: arXiv:2204.05332, abstract]; on
+DESI BGS the CiC-free fit gives "very little information about assembly
+bias" [src: arXiv:2309.08675, Fig. 6 caption]. On w_p alone, Vakili &
+Hahn find modest central assembly bias in M_r < −20.5 to −19.5, none in
+the brightest samples, no satellite dependence, and information criteria
+favouring the mass-only HOD in most cases [src: arXiv:1610.01991,
+abstract].
+
 Decorated parameters are "in many instances poorly constrained" by SDSS
 DR7 w_p alone [src: arXiv:1606.07817, Sect. 2.2]. Fitting ξ(r_p, π) to mocks
 with the CMASS jackknife covariance recovers A and A_e within their 1σ
 errors, and most other parameters within 1σ, except κ (satellite cut-off)
 at ~2σ [src: arXiv:2010.04182, Sect. 6.1].
+
+### Constrained or random simulation
+<!-- key: constrained-or-random-simulation -->
+
+On mocks, cosmic variance between a constrained and a non-constrained
+simulation can bias the fit into "an erroneous detection" of assembly
+bias; the ELUCID reconstruction of the SDSS volume removes that
+degeneracy and gives 𝒬_cen = −0.09 ± 0.05, 𝒬_sat = 0.09 ± 0.10 above
+M_⋆ = 10^10.2 h⁻²M_⊙, "no evidence for a significant (> 2σ)" assembly bias
+[src: arXiv:2010.04176, abstract].
+
+### Consequence for cosmology
+<!-- key: consequence-for-cosmology -->
+
+Extending the HOD (halo shape, incompleteness, baryons, central position
+bias) in Aemulus fits of BOSS w_p, ξ_0 and ξ_2 does not significantly
+change the growth rate, with weak to mild evidence for some extensions
+[src: arXiv:2409.19399, abstract].
 
 ### Consequence for lensing
 <!-- key: consequence-for-lensing -->
@@ -291,7 +356,11 @@ shuffled deficit at 1–20 h⁻¹Mpc is 15 ± 1%, not removed by changing the
 finder to ROCKSTAR; M_200m minimises it among the mass proxies tried (M_200m, M_200c, V_peak) without removing it
 [src: arXiv:1911.02610, Sect. 3.1, Conclusions]. A semi-analytic mock at the
 DESI density gives Q_sat = −0.25 (as cited by the DESI paper) against the
-measured 0.05 ± 0.14 [src: arXiv:2510.20896, Conclusions].
+measured 0.05 ± 0.14 [src: arXiv:2510.20896, Conclusions]. Conformity: in
+the SAG model on MDPL2, for centrals in 10^11.6–10^11.8 h⁻¹M_⊙ haloes split
+by sSFR and age, the level of conformity correlates with the level of
+assembly bias, and removing centrals near massive haloes lowers both [src:
+arXiv:2505.03880, abstract].
 
 ## Numbers
 <!-- key: numbers -->
@@ -315,6 +384,10 @@ measured 0.05 ± 0.14 [src: arXiv:2510.20896, Conclusions].
 | Density-slope coupling | C_δ(μ) ~ 2 C_δ(ν); C_δ of order unity | SIMBA, TNG | arXiv:2511.01441 | Sect. 6 |
 | Direct satellite test | Q_sat = 0.05 ± 0.14; −0.01 ± 0.14 with a 5% M_h bias for dense haloes | DESI DR1 BGS, log M_h > 12.9 | arXiv:2510.20896 | Q_sat paragraph |
 | Recovery on mocks | A, A_e within 1σ; κ ~2σ off | CMASS-like mocks | arXiv:2010.04182 | Sect. 6.1 |
+| Constrained-run bound | 𝒬_cen = −0.09 ± 0.05, 𝒬_sat = 0.09 ± 0.10 | SDSS on ELUCID, M_⋆ > 10^10.2 h⁻²M_⊙ | arXiv:2010.04176 | abstract |
+| Central assembly bias with CiC | positive at 99.9% (M_r < −20.0), 99.5% (< −20.5); 94.8% at −21.0, z ~ 0.25 | DESI One-Percent BGS | arXiv:2309.08675 | abstract |
+| Share of the signal from age or concentration | 20–30% | SAM, shuffling | arXiv:2007.05545 | abstract |
+| Shuffle mass bins | 0.1 dex below log M_h = 14.6, then 0.2 and 0.6 dex; 10 shuffles | SAM | arXiv:2007.05545 | Sect. 3.1 |
 
 ## What goes wrong
 <!-- key: what-goes-wrong -->
@@ -324,7 +397,10 @@ measured 0.05 ± 0.14 [src: arXiv:2510.20896, Conclusions].
   a positive A or B puts fewer galaxies there; AbacusHOD's negative B_cent,
   B_sat correspond to Yuan et al.'s positive A_e [src: arXiv:2110.11412,
   Sects. 2.4, 5.4]. A positive Q_sat means fewer satellites in dense
-  environments [src: arXiv:2510.20896, Eq. 9]. Test: before comparing
+  environments [src: arXiv:2510.20896, Eq. 9], as does a positive 𝒬_cen
+  in Salcedo et al. [src: arXiv:2010.04176, Sect. 3.2]; a negative B_cen of
+  Xu et al. lowers M_min in dense regions, the AbacusHOD sense [src:
+  arXiv:2007.05545, Sect. 5.1]. Test: before comparing
   values, write down which way each paper's parameter moves galaxies.
 - **Amplitudes compared across definitions.** A_e is degenerate with the
   amplitude of f_env and is not comparable between the tophat and Gaussian
@@ -353,6 +429,10 @@ measured 0.05 ± 0.14 [src: arXiv:2510.20896, Conclusions].
   and run the rotation control [src: arXiv:2511.01441, Sect. 3.1]; check a
   pure-HOD N-body box gives no deficit, as on 27 Abacus sub-boxes [src:
   arXiv:1911.02610, Conclusions].
+- **Cosmic variance read as assembly bias.** Fitting a non-constrained
+  simulation to a small volume can produce a spurious detection [src:
+  arXiv:2010.04176, abstract]. Test: repeat on a constrained run or
+  several boxes.
 - **Box variance and finder.** The TNG300 deficit was checked against box
   size and the halo finder (FoF, ROCKSTAR) [src: arXiv:1911.02610,
   Conclusions]. Test: repeat the shuffle on a second finder.
@@ -376,18 +456,34 @@ measured 0.05 ± 0.14 [src: arXiv:2510.20896, Conclusions].
   z = 0; density dependence confined to turn-on masses; C_δ slope model.
 - Application: Shao et al. 2025, arXiv:2510.20896 — model-light direct
   satellite test against environment.
+- Method: Xu et al. 2021, arXiv:2007.05545 — SAM dissection of secondary
+  properties; origin of the analytic B_cen, B_sat modulation.
+- Application: Salcedo et al. 2022, arXiv:2010.04176 — 𝒬_cen, 𝒬_sat on a
+  constrained simulation of the SDSS volume.
+- Application: Wang et al. 2022, arXiv:2204.05332; Pearl et al. 2024,
+  arXiv:2309.08675 — counts-in-cylinders detections in SDSS DR7 and DESI
+  BGS.
+- Application: Vakili & Hahn 2019, arXiv:1610.01991 — w_p bound with model
+  selection.
+- Prediction: Artale et al. 2018, arXiv:1805.06938 (EAGLE, Illustris);
+  Lacerna et al. 2025, arXiv:2505.03880 (conformity and assembly bias in
+  SAG).
+- Cosmology impact: Zhai & Percival 2024, arXiv:2409.19399.
 - Application: Lange et al. 2025, arXiv:2512.15962 — decorated HOD in a
   cosmological lensing + clustering fit, and its stated limits.
 
 ## Not verified
 <!-- key: not-verified -->
 
-- Yuan et al. 2018 (implementation of the re-ranking), Xu et al. 2020
-  (analytic prescription adopted by AbacusHOD), Walsh & Tinker 2019 and Mao
-  et al. 2015 are cited in the papers read; not read, no identifiers
-  recorded.
+- Yuan et al. 2018 (implementation of the re-ranking), Walsh & Tinker 2019
+  and Mao et al. 2015 are cited in the papers read; not read, no
+  identifiers recorded. Xu et al. 2020 is now read (arXiv:2007.05545).
 - The SDSS indirect constraint Q_sat = 0.09 ± 0.10 quoted by the DESI
-  direct paper (its reference 32): source not identified.
+  direct paper (its reference 32) equals the value in Salcedo et al.
+  (arXiv:2010.04176, abstract); that reference 32 is this paper was not
+  checked.
+- Artale et al. 2018, Wang et al. 2022, Vakili & Hahn 2019, Zhai & Percival
+  2024 and Lacerna et al. 2025: abstracts only.
 - Hadzhiyska et al. 2021 (arXiv:2108.00006, TNG vs Santa-Cruz SAM): abstract
   only; the quantitative differences in occupancy response were not read.
 - The definitions of δ_5 and α_5 (smoothing kernel) in arXiv:2511.01441,

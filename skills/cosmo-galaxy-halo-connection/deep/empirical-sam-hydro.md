@@ -7,7 +7,7 @@ errors, likelihood, sampler, model selection), how semi-analytic models are
 tuned and what skipping the tuning costs, how a survey-like tracer sample and
 its HOD are extracted from a hydrodynamical run, and how such catalogues are
 used to validate an occupation-model pipeline.
-Snapshot: 2026-10-19.
+Snapshot: 2026-10-21.
 From: Wechsler & Tinker 2018, Sect. 2.2.4, 2.3, 2.4; Crain et al. 2023
 review.
 
@@ -209,6 +209,37 @@ The TNG300 procedure for DESI-like galaxies (arXiv:2202.12911):
    divided by 1.23, since that subhalo over-estimates it by (23 ± 3)% with no
    significant mass dependence on 800 test haloes [src: Sect. 3.4].
 
+Other suites, one line each:
+
+- **FLAMINGO** (Contreras et al. 2024): 1906.8 h⁻¹Mpc box, 2 × 5040³
+  particles (3.85 × 10⁹ and 7.29 × 10⁸ h⁻¹M_⊙ for dark matter and initial
+  gas), partially fixed initial conditions; at z = 0.4 a BOSS-like
+  incomplete red colour–magnitude selection (~3.16 × 10⁻⁴ h³Mpc⁻³) and a
+  DESI BGS-like sample complete in M_r (10⁻³ h³Mpc⁻³); 681 h⁻¹Mpc boxes with
+  other feedback variants for the BGS-like sample only [src:
+  arXiv:2407.18912, Sects. 2.1–2.2].
+- **Illustris and EAGLE** (Beltz-Mohrmann et al. 2020): two luminosity-
+  threshold samples per run; a five-parameter HOD fitted to each hydro run
+  and applied to its dark-matter-only twin; compared on w_p, ξ(s), group
+  multiplicity and counts-in-cells [src: arXiv:1908.11448, abstract, Sect. 4
+  headings].
+- **EAGLE, SHAM** (Chaves-Montero et al. 2016): V_relax, the peak circular
+  velocity while a relaxation criterion holds, correlates best with M_⋆
+  [src: arXiv:1507.01948, abstract].
+- **EAGLE, sizes** (Desmond et al. 2017): galaxy size correlates only
+  weakly with halo mass, concentration and spin at fixed M_⋆ [src:
+  arXiv:1612.01029, abstract].
+- **Magneticum** (Ragagnin et al. 2021): HODEmu, a Gaussian-process
+  emulator of the satellite N_s–M relation (normalisation A, slope β,
+  scatter σ) over 15 cosmologies and 4 redshifts in 0 < z < 0.5 [src:
+  arXiv:2110.05498, abstract].
+- **MillenniumTNG** (Contreras et al. 2025): satellites matched between
+  hydro and dark-matter-only runs through merger trees, giving position and
+  velocity offsets versus mass and radius [src: arXiv:2512.04080,
+  abstract].
+- **SIMBA and TNG**: shuffling and environment-dependent HODs in
+  `deep/assembly-bias.md` (arXiv:2511.01441).
+
 ### Step 9. Use an empirical-model mock to validate an HOD pipeline
 <!-- key: step-9-use-an-empirical-model-mock-to-validate -->
 
@@ -222,6 +253,19 @@ III.4]. The point of the transfer is that the galaxy model is not the one
 being fitted, so the test probes model misspecification [der: from the
 construction just described]. The outcome is in L2.
 
+On FLAMINGO, an emulator (GalaxyEmu-Planck) of a 13-parameter HOD and of
+SHAMe is fitted to w_p, ξ_0,2 and ΔΣ (> 1 h⁻¹Mpc, to avoid baryonic
+effects) and then predicts k-NN, counts-in-cylinders, void probability and
+assembly-bias statistics: the HOD performs comparably on clustering and
+lensing, SHAMe better on higher-order statistics, notably assembly bias,
+and two HOD parameters can be dropped without loss [src: arXiv:2407.18912,
+abstract, Sect. 3.3 headings]. SHAMe needs both assembly-bias parameters;
+without them the predicted small-scale lensing is too high, "in the same
+direction as the lensing-is-low signal" [src: Sect. 5]. FLAMINGO is also
+the validation volume for a joint cluster-lensing, galaxy-clustering and
+cross-correlation model, which improves the σ8–Ω_m figure of merit 15-fold
+over clusters alone [src: arXiv:2601.16353, abstract].
+
 ## Choices and what they cost
 <!-- key: choices-and-what-they-cost -->
 
@@ -234,8 +278,44 @@ for UniverseMachine) and phenomenological forms. SAMs carry physical
 prescriptions but are tuned to a few targets, and the halo layer changes
 their outputs at the tuning level (Step 7). Hydrodynamical runs give
 correlated galaxy and gas properties in one volume, but in a single
-cosmology and box (205 h⁻¹Mpc for TNG300), so tracer samples of a few
-thousand galaxies (Step 8).
+cosmology and box: 205 h⁻¹Mpc for TNG300, hence tracer samples of a few
+thousand galaxies, against 1906.8 h⁻¹Mpc for FLAMINGO
+(Step 8).
+
+### Which hydrodynamical suite
+<!-- key: which-hydrodynamical-suite -->
+
+The suites disagree where feedback acts, so a result from one is not a
+property of hydrodynamics:
+
+- **Halo mass function.** Both Illustris and EAGLE shift haloes to lower
+  masses, but differently: Illustris is below its dark-matter-only HMF
+  above 10¹² h⁻¹M_⊙ and above it at lower masses, EAGLE below at all masses
+  under 10¹⁴ h⁻¹M_⊙ [src: arXiv:1908.11448, Sect. 6]. A hydro-fitted HOD
+  on the dark-matter-only twin therefore over-predicts n_g; after an HMF
+  correction it reproduces all statistics for the bright sample, while the
+  faint sample also needs spatial, velocity and assembly-bias terms [src:
+  abstract].
+- **Satellite abundance.** The N_s–M normalisation and slope depend
+  weakly on Ω_m and Ω_b, which "can explain some discrepancies" between
+  the satellite HODs of Magneticum, Illustris and BAHAMAS; the dependence
+  differs between full-physics, dark-matter-only and non-radiative runs
+  [src: arXiv:2110.05498, abstract].
+- **Assembly bias.** ~10% at z = 0 in TNG, nearly zero in SIMBA (see
+  `deep/assembly-bias.md`); TNG and the Santa Cruz SAM agree on two-point
+  clustering and assembly-bias signatures but differ in low-mass occupancy
+  and in a TNG gas–environment correlation absent from the SAM [src:
+  arXiv:2108.00006, abstract]. In EAGLE assembly bias changes clustering
+  by 20% and a V_relax SHAM captures it to within 15% [src:
+  arXiv:1507.01948, abstract].
+- **Baryons against selection.** In MTNG, hydro satellites sit 3–4% closer
+  to halo centres and move more slowly than in the dark-matter-only run,
+  changing clustering by 10–20% at 0.1 h⁻¹Mpc (1–3σ at DESI-like errors);
+  this is smaller than the change from galaxy selection [src:
+  arXiv:2512.04080, abstract].
+- **Environment.** In FLAMINGO the HMF, halo bias, SHMR, CSMF and c–M
+  relation depend on environment; ignoring it biases the SHMR and f_sat in
+  density-split lensing HOD fits [src: arXiv:2610.23997, abstract].
 
 ### Which halo property
 <!-- key: which-halo-property -->
@@ -311,6 +391,13 @@ arXiv:2202.12911, Sect. 4.1].
 | Subhalo-dispersion correction | divide by 1.23 ((23 ± 3)% over-estimate) | TNG300 | arXiv:2202.12911 | Sect. 3.4 |
 | LRG velocity bias | α_c = 0.137 ± 0.007; α_s = 0.92 ± 0.05 | TNG300 | arXiv:2202.12911 | Sect. 3.4 |
 | Validation mock covariance | 125 jackknife parts × 2 UNIT boxes | DESI DR1 | arXiv:2512.15962 | Sect. III.4 |
+| Hydro box | 1906.8 h⁻¹Mpc, 2 × 5040³, m_DM 3.85 × 10⁹ h⁻¹M_⊙ | FLAMINGO | arXiv:2407.18912 | Sect. 2.1 |
+| Survey-like densities | BOSS-like ~3.16 × 10⁻⁴, BGS-like 10⁻³ h³Mpc⁻³ at z = 0.4 | FLAMINGO | arXiv:2407.18912 | Sect. 2.2 |
+| HOD complexity | 13 parameters; 2 removable without loss | FLAMINGO validation | arXiv:2407.18912 | abstract |
+| Satellite offsets | 3–4% closer; 10–20% in clustering at 0.1 h⁻¹Mpc | MTNG | arXiv:2512.04080 | abstract |
+| SHAM in EAGLE | 30% too much clustering < 2 Mpc at 8.77 < log M_⋆ < 9.77; assembly bias 20%, captured to 15% | EAGLE | arXiv:1507.01948 | abstract |
+| Satellite emulator | 15 cosmologies × 4 redshifts | Magneticum | arXiv:2110.05498 | abstract |
+| Joint cluster + galaxy model | figure of merit × 15 | FLAMINGO | arXiv:2601.16353 | abstract |
 
 ## What goes wrong
 <!-- key: what-goes-wrong -->
@@ -343,6 +430,13 @@ arXiv:2202.12911, Sect. 4.1].
 - **Untuned dust in mock colours.** The TNG dust model was only roughly
   tuned [src: arXiv:2202.12911, Sect. 2.2]; selections near colour
   boundaries inherit it [der].
+- **One suite taken as "the" hydro answer.** Illustris and EAGLE change
+  the HMF differently [src: arXiv:1908.11448, Sect. 6]; SIMBA and TNG
+  disagree on assembly bias at z = 0 (arXiv:2511.01441). Test: repeat on a
+  second suite, or on feedback variants of one (FLAMINGO's 681 h⁻¹Mpc
+  boxes, arXiv:2407.18912, Sect. 2.1).
+- **Hydro-fitted HOD on a dark-matter-only HMF.** Over-predicts the number
+  density unless the HMF is corrected [src: arXiv:1908.11448, abstract].
 - **Validation on one mock.** The DESI DR1 test used a single LRG-like
   sample and calls for more, notably for BGS [src: arXiv:2512.15962, Sect.
   III.4].
@@ -364,6 +458,17 @@ arXiv:2202.12911, Sect. 4.1].
   what it keeps as tests.
 - Application, hydro: Yuan et al. 2022, arXiv:2202.12911 — DESI-like
   colour selection in TNG300, HOD, Poisson test, velocity bias.
+- Comparison, hydro: Beltz-Mohrmann et al. 2020, arXiv:1908.11448 — HOD
+  fitted in Illustris and EAGLE, transferred to their dark-matter twins.
+- Validation, hydro: Contreras et al. 2024, arXiv:2407.18912 — FLAMINGO
+  BOSS- and BGS-like samples, HOD against SHAMe on higher-order statistics.
+- Application, hydro: Chaves-Montero et al. 2016, arXiv:1507.01948 (EAGLE
+  SHAM); Desmond et al. 2017, arXiv:1612.01029 (EAGLE sizes); Ragagnin et
+  al. 2021, arXiv:2110.05498 (Magneticum satellites); Contreras et al.
+  2025, arXiv:2512.04080 (MTNG satellites); Martín Girardi et al. 2026,
+  arXiv:2610.23997 (FLAMINGO environment); Cao et al. 2026,
+  arXiv:2601.16353 (FLAMINGO clusters + galaxies).
+- Comparison, hydro vs SAM: Hadzhiyska et al. 2021, arXiv:2108.00006.
 - Application, validation: Lange et al. 2025, arXiv:2512.15962 — GalSampler
   transfer of an empirical model as a misspecification test.
 - Review: Somerville & Davé 2015, arXiv:1412.2712; Crain & van de Voort
@@ -380,5 +485,8 @@ arXiv:2202.12911, Sect. 4.1].
 - A date-sorted arXiv search for 2025–2026 empirical-model papers was
   rate-limited (HTTP 429); an INSPIRE query returned no 2025–2026 empirical
   galaxy–halo model paper beyond those listed, so newer models may exist.
+- The hydro-suite additions of 2026-10-21 rest on abstracts, except
+  arXiv:2407.18912 (Sects. 2.1, 2.2, 5) and arXiv:1908.11448 (Sect. 6).
+  No galaxy–halo connection paper on Astrid was found by abstract search.
 - The EMERGE box side lengths come from figure captions, not from the
   simulation section, which was cut by the rendering.

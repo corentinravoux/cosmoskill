@@ -244,3 +244,15 @@ Power2003	astro-ph/0201544	Power	2002	The Inner Structure of LambdaCDM Halos I: 
 MansfieldAvestruz2021	2008.08591	Mansfield	2020	How Biased Are Halo Properties in Cosmological Simulations?	critique
 Zhang2019Softening	1810.07055	Zhang	2018	The optimal gravitational softening length for cosmological N-body simulations	critique
 Ludlow2019	1908.05019	Ludlow	2019	Numerical convergence of hydrodynamical simulations of galaxy formation: the abundance and internal structure of galaxies and their cold dark matter haloes	critique
+Doumler2013a	1212.2806	Doumler	2013	Reconstructing cosmological initial conditions from galaxy peculiar velocities. I. Reverse Zeldovich Approximation	method
+Doumler2013c	1212.2810	Doumler	2013	Reconstructing cosmological initial conditions from galaxy peculiar velocities. III. Constrained simulations	method
+Carrick2015	1504.04627	Carrick	2015	Cosmological parameters from the comparison of peculiar velocities with predictions from the 2M++ density field	results
+Carlesi2016	1602.03919	Carlesi	2016	Constrained Local UniversE Simulations: A Local Group Factory	results
+Libeskind2020	2008.04926	Libeskind	2020	The Hestia project: simulations of the Local Group	data
+Sorce2020	2006.01838	Sorce	2020	Efficiently estimating mean, uncertainty and unconstrained large scale fraction of local Universe simulations with paired fixed fields	method
+Valade2022a	2203.02369	Valade	2022	Hamiltonian Monte Carlo reconstruction from peculiar velocities	method
+Valade2022b	2209.05846	Valade	2022	Testing Bayesian reconstruction methods from peculiar velocities	critique
+Courtois2023	2211.16390	Courtois	2022	Gravity in the Local Universe : density and velocity fields using CosmicFlows-4	results
+Dolag2023	2302.10960	Dolag	2023	Simulating the LOcal Web (SLOW): I. Anomalies in the local density field	data
+HernandezMartinez2024	2402.01834	Hernández-Martínez	2024	Simulating the LOcal Web (SLOW) II: Properties of local galaxy clusters	results
+Lilow2024	2404.02278	Lilow	2024	Neural network reconstruction of density and velocity fields from the 2MASS Redshift Survey	results

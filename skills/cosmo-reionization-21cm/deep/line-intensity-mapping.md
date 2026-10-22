@@ -3,8 +3,11 @@
 Scope: how a CO, [CII] or Hα/[O III] intensity map becomes a power
 spectrum, a stack, a one-point statistic or a cross-spectrum, how an upper
 limit becomes a statement on L_CO(M_h) and ρ_H2, and how to choose between
-estimators and interloper treatments.
-Snapshot: 2026-10-17.
+estimators and interloper treatments. COMAP supplies the most complete
+published chain and is followed step by step; each step also gives what
+COPSS and mmIME (CO), CONCERTO, TIME, EXCLAIM and Planck × SDSS ([CII]) and
+HETDEX and BOSS (Lyα) do in its place.
+Snapshot: 2026-10-21.
 From: Bernal & Kovetz 2022 review (arXiv:2206.15377), Sects. 2, 3, 5 and 6;
 SKA EoR/CD synergies chapter (arXiv:2606.30947), Sect. 3.3.
 
@@ -52,6 +55,32 @@ COPSS and mmIME in h Mpc⁻¹.
   ~200 μK² Hz sr, comparable to the line signal, and ~50 μK² Hz sr even after
   masking sources above ~30 μJy. The cut costs 3% of sensitivity and leaves
   ≲ 0.1 μK² Hz sr.
+- Interferometric, ground pickup (COPSS on the SZA, Keating et al. 2016,
+  arXiv:1605.03971, Sect. III.2.1) [src]: antenna-orientation-dependent
+  signals (telescope environment, cross-talk) correlate between antennas; the
+  fields were observed lead–trail, and the variance-weighted average of the
+  three fields of a group, per hour angle, channel and baseline, is
+  subtracted as a ground model. Cost: 33% fewer independent measurements,
+  ~18% sensitivity. Before it 0.2% of modes exceeded the noise by > 5σ, the
+  largest ~10³ times; after it none did. Pilot data without lead–trail kept
+  only the outrigger baselines that a jackknife showed free of ground.
+- Single-dish, millimetre, real data (TIME commissioning, Yang et al. 2025,
+  arXiv:2511.09473) [src: abstract]: gains and pointing from Jupiter; common-
+  mode subtraction "with correlation-weighted scaling" removes correlated
+  noise and a map-domain PCA identifies further systematics; on the Galactic
+  Sgr A field the broadband continuum agrees with BGPS to ~5%. This is a
+  commissioning test, not a cosmological map.
+- Continuum removal, [CII] (CONCERTO simulations, Van Cuyck et al. 2023,
+  arXiv:2306.01568) [src]: PCA against arPLS, a per-pixel asymmetric
+  penalised-least-squares baseline that fits the frequency-coherent CIB,
+  Galactic dust and CMB together, with one regularisation parameter R = 1
+  [src: Sect. 3.2, Eqs. 9–11]. arPLS brings the continuum below the z = 7
+  [CII] power by a factor > 70; PCA reaches only 0.7 [src: abstract].
+- Optical IFU spectra, Lyα (HETDEX, Lujan Niemeyer et al. 2025,
+  arXiv:2510.11427) [src]: the intensity is taken from spectra containing no
+  LAE above S/N 5.5 [src: abstract]; sky residuals that survive masking are
+  removed by a PCA per field on normalised IFU spectra (N_λ = 1036; ~7% of
+  voxels masked in the remaining fibres) [src: Sect. II.2.7, Eq. 2].
 
 ### Step 2. Estimate the power spectrum without a noise bias
 <!-- key: step-2-estimate-the-power-spectrum-without-a -->
@@ -80,6 +109,22 @@ COMAP Season 2 (Stutzer et al. 2024, arXiv:2406.07511, Sect. 2) [src]:
   time-stream simulations through the pipeline were too expensive.
 - The spectrum is divided by the transfer function per k bin (L2); limits
   are 95% per bin with a positivity prior [src: Sect. 5.4].
+
+Peers for this step:
+
+- COPSS [src: arXiv:1605.03971, Sect. III.2, Eq. 1]: Δ²(k) = k³P(k)/(2π²)
+  from gridded delay-visibilities, computed two ways, the product of
+  semi-correlated pairs (PSCP) and a maximum-likelihood evaluation of the
+  band-averaged power; P in μK² h⁻³ Mpc³, k in h Mpc⁻¹.
+- CONCERTO [src: arXiv:2306.01568, abstract]: the P of K EstimatoR (POKER)
+  adapted to masked LIM cubes.
+- HETDEX [src: arXiv:2510.11427, abstract and Sect. IV.3]: a cross-power of
+  Lyα intensity with LAEs, so no noise bias; model and covariance from
+  lognormal mocks of the LAE catalogue and the intensity in redshift space,
+  with the HETDEX sensitivity, selection and mask. The PCA suppresses but does
+  not eliminate power, and sky subtraction suppresses k ≲ 0.4 h Mpc⁻¹; both
+  are carried by the mocks into the model rather than divided out of the
+  data, the reverse of COMAP's per-bin transfer-function division.
 
 ### Step 3. Fit a two-amplitude model
 <!-- key: step-3-fit-a-two-amplitude-model -->
@@ -134,6 +179,11 @@ Rayleigh–Jeans [Eq. 5]. The authors note the four (α, β) fits lie on one
 line, α ≈ 0.10β + 1.19 [Eq. 3], "as they are generally derived from similar
 samples of the most luminous" galaxies.
 
+COPSS fits a single shot-noise amplitude: P_CO = 3.0 ± 1.3 × 10³ μK²
+(h⁻¹ Mpc)³, Δ²_CO(k = 1 h Mpc⁻¹) = 1.5 ± 0.7 × 10³ μK², P_CO > 0 at 98.9%,
+over k = 0.5–10 h Mpc⁻¹, z = 2.3–3.3, 19 fields, 0.7 deg² [src: Keating et
+al. 2016, arXiv:1605.03971, abstract].
+
 ### Step 5. Convert to molecular gas density
 <!-- key: step-5-convert-to-molecular-gas-density -->
 
@@ -150,6 +200,13 @@ modified Li model (Kamenetzky et al. line fits, L_IR = 10¹⁰ SFR [Eq. 12],
 L_CO = A_CO M²/M_0 below M_0 = 10¹² M_⊙/h and constant above [Eqs. 17–18],
 motivated by a molecular fraction peaking near that mass, and converted
 with α_CO = 3.6.
+
+COPSS goes through a luminosity-to-halo-mass ratio, A_CO = 6.3 (+1.4/−2.1) ×
+10⁻⁷ L_⊙/M_⊙, a molecular gas fraction f_H2 = 5.5 (+3.4/−2.2) × 10⁻² for
+~10¹² M_⊙ haloes, and "simple theoretical estimates" of its scaling, to
+ρ_H2(z ~ 3) = 1.1 (+0.7/−0.4) × 10⁸ M_⊙ Mpc⁻³ [src: arXiv:1605.03971,
+abstract]; the COMAP re-analysis of COPSS under its own L(M_h) is below
+(Choices).
 
 ### Step 6. Stack on a galaxy catalogue
 <!-- key: step-6-stack-on-a-galaxy-catalogue -->
@@ -173,6 +230,40 @@ COMAP × eBOSS/DESI quasars (Dunne et al. 2025, arXiv:2510.23568, Sect. 4)
 - Attenuation and variance factors applied to models [src: Sect. 6]:
   redshift scatter 1669 km/s gives f_VI = 1.21; pointing 1.05; template
   model dependence d_MD = 1.069; interloper scatter d_LI = 1.038.
+
+Lyα and [CII] peers in cross-correlation with spectroscopic tracers:
+
+- BOSS Lyα (Croft et al. 2018, arXiv:1806.06050) [src: abstract]: the
+  residual flux of BOSS LRG spectra after subtracting the best-fit galaxy
+  model is crossed with BOSS quasars (signal on 1–15 h⁻¹ Mpc) and with the Lyα
+  forest (no signal; 95% limit on the global Lyα surface brightness μ < 1.2 ×
+  10⁻²² erg s⁻¹ cm⁻² Å⁻¹ arcsec⁻²). Correcting a contamination from quasar
+  clustering on cross-fibre light lowers the quasar cross by 50% against the
+  DR10 result. The authors conclude that LAEs contribute but quasars dominate
+  within 15 h⁻¹ Mpc.
+- HETDEX Lyα (arXiv:2510.11427) [src: abstract]: LAE × Lyα intensity over
+  1.9 < z < 3.5 gives b_g b_I ⟨I⟩ F̄_RSD/F̄_RSD^fid = 6.7 ± 3.1, 11.7 ± 1.4 and
+  8.3 ± 1.5 × 10⁻²² erg s⁻¹ cm⁻² arcsec⁻² Å⁻¹ at z̄ = 2.1, 2.6 and 3.2,
+  "reasonably consistent" with hydrodynamical simulations with Lyα radiative
+  transfer.
+- The comparison as HETDEX states it [src: arXiv:2510.11427, Sect. VII]:
+  with b_g = 2 assumed, its b_I⟨I⟩ is "significantly smaller" than the values
+  from quasar–Lyα intensity crosses (Croft et al., Lin et al.); the low- and
+  high-z bins are consistent with the forest–Lyα upper limit, the medium-z
+  bin 2.6σ above it. The suggested cause is that quasar crosses are dominated
+  by small-scale physics around quasars, such as an elevated radiation field.
+- Planck × SDSS [CII] (Pullen et al. 2018, arXiv:1707.06172) [src: abstract]:
+  the three highest-frequency Planck maps crossed with BOSS quasars and CMASS
+  galaxies, fitting [CII], CIB and thermal SZ jointly; an anomalous emission
+  I_ν = 6.6 (+5.0/−4.8) × 10⁴ Jy/sr (95%) at z = 2–3.2 in the 545 GHz map,
+  but the [CII] model and the CIB + SZ-only model are "equally plausible" by
+  BIC.
+- EXCLAIM (Cataldo et al. 2021, arXiv:2101.11734) [src: abstract]: a
+  balloon-borne cryogenic telescope (90-cm primary at ~1.7 K, six μ-Spec
+  modules, 420–540 GHz, R = 512) designed to map CO and [CII] over 0 < z <
+  3.5 and to "cross-correlate with a spectroscopic galaxy catalog" to detect
+  the emission unambiguously; the comparison of estimators above
+  (arXiv:2603.13218) uses EXCLAIM-like simulations.
 
 ### Step 7. One-point statistics
 <!-- key: step-7-one-point-statistics -->
@@ -250,6 +341,7 @@ per halo; re-analysed in the COMAP framework COPSS gives ρ_H2 < 6.4–7.4 ×
 | Mask bright voxels (targeted, from a catalogue) | catalogue complete for bright CO | masked voxels lost; FG2 masking at L_*/10 removes a few per cent of voxels | arXiv:1609.01728, Sect. 5.2; arXiv:2606.17210 |
 | Blind masking across bands | extra lower-frequency bands | needs bands EoR-Spec lacks today | arXiv:2606.17210 [src: abstract] |
 | Cross with galaxies or another line | contaminant uncorrelated with tracer | measures only the correlated part; Galactic foregrounds still leaked into low-k cross-power and ℛ | arXiv:2603.13218, Sect. 4.1; arXiv:2606.10005 |
+| Mask low-z galaxies from a stellar-mass catalogue (CO proxy) | stellar mass traces CO power | residual line power 2 × 10² Jy²/sr from faint undetected sources; [CII]/residual = 62 ± 32 at z = 5.2 for 22% area lost, 2.0 ± 1.4 at z = 7; residual CO and [CI] limit z > 7; residuals vary 12–15% field to field | CONCERTO sims, arXiv:2306.01568 [src: abstract] |
 | Model in the VID | foreground Φ(L) known in form | shot-noise foreground mildly degrading; clustering foreground leaves only upper limits | arXiv:1609.01728, Sect. 5.2 |
 
 The interloper geometry (Lidz & Taylor 2016, Sect. II) [src]: mapping an
@@ -265,8 +357,16 @@ degenerate with the target shot noise in P(k) but only weakly degenerate in
 the VID (Fisher forecast, CO at z ~ 3) [src: arXiv:1609.01728, Sect. 5.2].
 
 **Cross-spectrum noise splits.** COMAP pays ~12% sensitivity for feed-group
-crosses to cancel group-common systematics; mmIME and COPSS use six
-jackknives instead of a cross-spectrum (below).
+crosses to cancel group-common systematics; mmIME and COPSS use jackknives
+instead of a cross-spectrum (below). COPSS pays ~18% sensitivity for its
+lead–trail ground subtraction [src: arXiv:1605.03971, Sect. III.2.1].
+
+**Auto-spectrum or cross with a tracer, Lyα case.** A quasar cross samples
+only the ~3% of space within 15 h⁻¹ Mpc of a quasar and can be dominated by
+the quasars themselves; a cross with the Lyα forest or with LAEs samples the
+global emission [src: Croft et al. 2018, arXiv:1806.06050, abstract;
+arXiv:2510.11427, Sect. VII]. The HETDEX and quasar-cross amplitudes are
+therefore not the same quantity, as HETDEX itself discusses.
 
 ## Numbers
 <!-- key: numbers -->
@@ -288,6 +388,13 @@ jackknives instead of a cross-spectrum (below).
 | Stack limit | ⟨L′_CO⟩ = 4.15 ± 2.94 × 10¹⁰ K km s⁻¹ pc² (1.41σ); best-fit a = 0.20 of fiducial | COMAP × eBOSS/DESI | arXiv:2510.23568 | Sect. 5 |
 | Extra stack masking | +12.5% voxels masked, +2% stack error | COMAP × eBOSS/DESI | arXiv:2510.23568 | Sect. 2.1.1 |
 | Clustered neighbours in a stack | ~50% of stacked intensity | EXCLAIM-like sims | arXiv:2603.13218 | Sect. 4.2 |
+| COPSS P_CO | 3.0 ± 1.3 × 10³ μK² (h⁻¹ Mpc)³; Δ²(k = 1) = 1.5 ± 0.7 × 10³ μK²; > 0 at 98.9% | COPSS II | arXiv:1605.03971 | abstract |
+| COPSS A_CO, f_H2, ρ_H2 | 6.3 (+1.4/−2.1) × 10⁻⁷ L_⊙/M_⊙; 5.5 (+3.4/−2.2) × 10⁻²; 1.1 (+0.7/−0.4) × 10⁸ M_⊙ Mpc⁻³ | COPSS II | arXiv:1605.03971 | abstract |
+| COPSS ground subtraction | −33% independent measurements, −18% sensitivity; modes > 5σ 0.2% → 0 | COPSS II | arXiv:1605.03971 | Sect. III.2.1 |
+| Planck × SDSS [CII] | I_ν = 6.6 (+5.0/−4.8) × 10⁴ Jy/sr (95%), z = 2–3.2 | Planck 545 GHz × BOSS | arXiv:1707.06172 | abstract |
+| HETDEX b_g b_I⟨I⟩ | 6.7 ± 3.1, 11.7 ± 1.4, 8.3 ± 1.5 × 10⁻²² erg s⁻¹ cm⁻² arcsec⁻² Å⁻¹ at z̄ = 2.1, 2.6, 3.2 | HETDEX LAE × Lyα | arXiv:2510.11427 | abstract |
+| BOSS Lyα × forest | μ < 1.2 × 10⁻²² erg s⁻¹ cm⁻² Å⁻¹ arcsec⁻² (95%) | BOSS DR12 | arXiv:1806.06050 | abstract |
+| CONCERTO continuum removal | arPLS > 70× below [CII] at z = 7; PCA 0.7 (**forecast**) | SIDES sims | arXiv:2306.01568 | abstract |
 | η = 0 cut | contaminant 200 → ≲ 0.1 μK² Hz sr; −3% sensitivity | mmIME | arXiv:2008.08087 | Sect. III.2.1 |
 | Line shares of 100 GHz shot power | CO(2–1) 0.43, (3–2) 0.40, (4–3) 0.14, (5–4) 0.03 (model) | mmIME | arXiv:2008.08087 | Table 4 |
 | Li model priors | σ_SFR, σ_LCO = 0.3 ± 0.1; log δ_MF = 0.0 ± 0.3; α = 1.17 ± 0.37; β = 0.21 ± 3.74 | Li et al. 2016 | arXiv:1503.08833 | Sects. II.2.2–II.2.4 |
@@ -315,6 +422,10 @@ jackknives instead of a cross-spectrum (below).
   even–odd, cross-window, plus diff-pol and high-η in mmIME; largest outlier
   2.4σ; first–last 2.9σ over a k range, attributed to disjoint uv coverage
   that skews the noise [src: arXiv:2008.08087, Sect. III.2.2, Table 2].
+  COPSS's four jackknives (couplet, even–odd, first–last, cross-window) give
+  ~60 noise-like values, largest outlier 2.4σ; its cross-window test pairs
+  windows two apart because adjacent windows may share noise [src:
+  arXiv:1605.03971, Sect. III.2.3].
 - **Filter signal loss.** Test: injection end to end; COMAP used one
   realisation in one field and calls it a "sanity check" [src:
   arXiv:2406.07511, App. D]. More PCA modes, more loss [src:
@@ -332,6 +443,16 @@ jackknives instead of a cross-spectrum (below).
   ~30% "of the luminosity ... in map space" from another COMAP paper, and
   simulates a 10% interloper [src: arXiv:2406.07511, Sect. 2.1 footnote;
   arXiv:2510.23568, Sect. 6.3.3]. State which quantity is meant.
+- **Ground pickup in an interferometer.** Correlated between antennas through
+  orientation-dependent emission; up to ~10³ times the noise in single modes
+  before lead–trail subtraction in COPSS [src: arXiv:1605.03971, Sect.
+  III.2.1].
+- **Cross-fibre light in a Lyα cross.** Quasar clustering leaks light into
+  neighbouring fibres; its removal halved the BOSS quasar × Lyα signal
+  [src: arXiv:1806.06050, abstract].
+- **Continuum removal by PCA at high z.** On CONCERTO simulations PCA leaves
+  the dust continuum above the z = 7 [CII] power, unlike a per-pixel arPLS
+  baseline [src: arXiv:2306.01568, abstract].
 - **Stack attenuation.** Redshift errors, pointing and template shape
   each lower the stack; the stack paper corrects models, not data, and
   keeps sample variance on the model side [src: arXiv:2510.23568, Sects.
@@ -374,6 +495,17 @@ jackknives instead of a cross-spectrum (below).
   with attenuation budget.
 - Method comparison: Kramer et al. 2026, arXiv:2603.13218 — stack, CVID and
   cross-power on the same simulations.
+- Application, CO interferometer: Keating et al. 2016, arXiv:1605.03971 —
+  COPSS ground subtraction, PSCP/MLE spectra, jackknives, ρ_H2.
+- Application, Lyα: Lujan Niemeyer et al. 2025, arXiv:2510.11427 — HETDEX
+  LAE × intensity, mocks for model and covariance, comparison with quasar
+  crosses; Croft et al. 2018, arXiv:1806.06050 — BOSS quasar and forest
+  crosses, cross-fibre light.
+- Application, [CII]: Pullen et al. 2018, arXiv:1707.06172 — Planck × SDSS.
+- Method, [CII]: Van Cuyck et al. 2023, arXiv:2306.01568 — CONCERTO
+  continuum removal (PCA vs arPLS), catalogue masking, POKER.
+- Instrument: Cataldo et al. 2021, arXiv:2101.11734 (EXCLAIM); Yang et al.
+  2025, arXiv:2511.09473 (TIME commissioning pipeline).
 - Forecast: Ambrose et al. 2026, arXiv:2606.10005 — SPHEREx line–line
   crosses, masking, dust.
 - Forecast/method: Dev et al. 2026, arXiv:2607.20404 — [CII] time-stream
@@ -399,5 +531,8 @@ jackknives instead of a cross-spectrum (below).
   of Bernal & Baleato Lizancos 2024: titles seen in a search, not read.
 - Gong et al. 2017, the Hα/[O III] intensity-mapping foundation: title seen,
   not read.
-- HI intensity-mapping estimators (CHIME, MeerKLASS) were not re-read; see
-  the HI entries of L2.
+- HI intensity-mapping estimators: see `hi-intensity-mapping.md`.
+- One title search (CONCERTO, EXCLAIM, HETDEX, TIME) returned no CONCERTO,
+  TIME or EXCLAIM power spectrum on sky data; CCAT was not searched; SPHEREx LIM appears here through the forecast only. Lin et al.
+  (eBOSS quasar × Lyα intensity) is known through HETDEX's comparison, not
+  read. mmIME's later multi-line results were not searched.

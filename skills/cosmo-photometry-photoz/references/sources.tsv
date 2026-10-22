@@ -122,3 +122,27 @@ Drabicki2026	2603.19882	Drabicki	2026	Quasar photometric redshifts beyond the sp
 Duncan2025	2511.03802	Duncan	2025	Making the most of pure parallels: Machine learning augmented photometric redshifts for sparse JWST filter sets	method
 Huterer2012	1211.1015	Huterer	2012	Calibration errors unleashed: effects on cosmological parameters and requirements for large-scale structure surveys	systematics
 Bravo2021	2106.08818	Bravo	2021	Simultaneous Estimation of Large-Scale Structure and Milky Way Dust Extinction from Galaxy Surveys	method
+Ilbert2008	0809.2101	Ilbert	2008	COSMOS Photometric Redshifts with 30-bands for 2-deg2	method
+Molino2013	1306.4968	Molino	2013	The ALHAMBRA Survey: Bayesian Photometric Redshifts with 23 bands for 3 squared degrees	data
+LopezSanjuan2019	1907.12939	López-Sanjuan	2019	J-PLUS: photometric calibration of large area multi-filter surveys with stellar and white dwarf loci	method
+HernanCaballero2026	2607.06662	Hernán-Caballero	2026	J-PLUS: Spectral classification and photometric redshifts for 79 million sources in the fourth data release	results
+Lima2021	2110.13901	Lima	2021	Photometric redshifts for the S-PLUS Survey: is machine learning up to the task?	method
+Feder2026	2603.24668	Feder	2026	A Probabilistic Autoencoder for Galaxy SED Reconstruction and Redshift Estimation: Application to Mock SPHEREx Spectrophotometry	method
+Bae2025	2512.24537	Bae	2025	The Redshifts from 122 Bands: Comparative Redshift Forecast for Low-Resolution Spectra from SPHEREx and 7-Dimensional Sky Survey (7DS)	forecast
+Hildebrandt2020K1000	2007.15635	Hildebrandt	2020	KiDS-1000 catalogue: Redshift distributions and their calibration	results
+Cawthon2020	2012.12826	Cawthon	2020	Dark Energy Survey Year 3 Results: Calibration of Lens Sample Redshift Distributions using Clustering Redshifts with BOSS/eBOSS	method
+Morrison2016	1609.09085	Morrison	2016	The-wiZZ: Clustering redshift estimation for everyone	code
+ChoppindeJanvry2025a	2511.18133	Choppin de Janvry	2025	Full calibration of the tomographic redshift distribution from the HSC PDR3 Shape Catalog with DESI	results
+ChoppindeJanvry2025b	2511.18134	Choppin de Janvry	2025	Cosmic Shear constraints from HSC Year 3 with clustering calibration of the tomographic redshift distributions from DESI	results
+Ruggeri2025	2512.15963	Ruggeri	2025	Clustering redshift distribution calibration of weak lensing surveys using the DESI-DR1 spectroscopic dataset	results
+Rana2025	2508.21681	Rana	2025	Hyper Suprime-Cam Y3 results: photo-$z$ bias calibration with lensing shear ratios and cosmological constraints from cosmic shear	results
+Emas2024	2403.07313	Emas	2024	Cosmology with shear ratios: a joint study of weak lensing and spectroscopic redshift datasets	method
+Emas2025	2510.05539	Emas	2025	Validation of the DESI-DR1 3x2-pt analysis: scale cut and shear ratio tests	systematics
+Prat2018	1810.02212	Prat	2018	Cosmological lensing ratios with DES Y1, SPT and Planck	results
+Herbel2017	1705.05386	Herbel	2017	The redshift distribution of cosmological samples: a forward modeling approach	foundation
+Kacprzak2019	1906.01018	Kacprzak	2019	Monte Carlo Control Loops for cosmic shear cosmology with DES Year 1	results
+Moser2024	2401.06846	Moser	2024	Simulation-based inference of deep fields: galaxy population model and redshift distributions	method
+TortorelliMcCullough2024	2405.06009	Tortorelli	2024	Impact of stellar population synthesis choices on forward modelling-based redshift distribution estimates	critique
+Sudek2021	2112.11345	Sudek	2021	The Sensitivity of the Redshift Distribution to Galaxy Demographics	systematics
+Crenshaw2024	2405.04740	Crenshaw	2024	Probabilistic Forward Modeling of Galaxy Catalogs with Normalizing Flows	code
+Everett2020	2012.12825	Everett	2020	Dark Energy Survey Year 3 Results: Measuring the Survey Transfer Function with Balrog	method

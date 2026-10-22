@@ -4,8 +4,15 @@ Scope: how a population-model n(z) is built step by step (generative
 chain, choice of population model, data model, selection and binning,
 fitting of the hyper-parameters, propagation of their uncertainty), how a
 histogram-type hierarchical model differs from it, how either is validated,
-and what each choice has been shown to cost on mocks and data.
-Snapshot: 2026-10-18.
+and what each choice has been shown to cost on mocks and data. The
+routes in use come from several groups: SPS populations with a learned
+density (pop-cosmos), parametric populations rendered into images and
+fitted by ABC (UFig/MCCL, then GalSBI), hierarchical models over
+templates or SOM phenotypes with or without clustering, image injection
+of deep-field galaxies (DES Balrog) or catalogue-level deep-to-wide
+transfer (Euclid) inside SOM calibrations, and sensitivity studies of
+population and SPS choices.
+Snapshot: 2026-10-21.
 From: Newman & Gruen 2022 review, Sect. 2.4, 4.1.3, 5.1; Tortorelli & Grün
 2026 review, Sect. 3.0.2–3.0.3 (copied from `references/subtopics.tsv`).
 
@@ -75,6 +82,16 @@ extra hyper-parameters, or neglected only if the photometric cuts are
 shown to dominate (arXiv:2207.05819, App. A as summarised in Sect. VI)
 [src: Sect. VI].
 
+The earlier image-level chain (UFig in Monte-Carlo Control Loops)
+compares images instead: simulations are processed exactly as the data
+with the same cuts, n(z) is read from the input redshifts of matched
+simulated galaxies, and, with no likelihood for catalogue or image
+comparisons, ABC accepts draws below a distance threshold (lower
+thresholds: more accurate, costlier); the loops tune the simulations,
+calibrate the measurement and explore systematics [src: arXiv:1705.05386,
+Sect. 2]. Hierarchical chains with clustering are in the last choice
+below.
+
 ### Step 2. Choose the population model
 <!-- key: step-2-choose-the-population-model -->
 
@@ -106,6 +123,16 @@ start from ~300 BPZ templates, group them by k-means in the space of the
 first four principal components into five groups and draw ten per group,
 to avoid over-representing near-duplicates [src: Sect. 2.2].
 
+Two parametric predecessors of GalSBI: UFig on Subaru COSMOS images
+models luminosity functions, SEDs, sizes and radial profiles of blue and
+red galaxies [src: arXiv:1705.05386, abstract]; the HSC deep-field model
+of Moser et al. has 46 parameters for the luminosity functions, colours
+and morphology of the two populations [src: arXiv:2401.06846,
+Sect. 3.5, abstract]. A non-physical alternative, PZFlow, models the
+joint distribution of catalogue quantities with normalising flows, so
+that simulated galaxies carry a "true" redshift posterior for photo-z
+validation in LSST DESC [src: arXiv:2405.04740].
+
 ### Step 3. Build the data model
 <!-- key: step-3-build-the-data-model -->
 
@@ -134,6 +161,23 @@ to avoid over-representing near-duplicates [src: Sect. 2.2].
   images, SExtractor is run in forced-photometry mode and objects are
   matched to the input; an emulator replaces the image step from
   iteration 6 onwards [src: arXiv:2412.08701, Sect. 2.4.1, 4.3].
+- **Injection into the real images (DES Balrog).** Nearly 30 million
+  galaxy models from the DES Deep Fields are injected into single-epoch
+  images of a random 20% of the Y3 footprint and processed with the data,
+  so that measurement systematics "often too difficult to capture with
+  traditional generative models" are inherited; recovered colours match
+  to ~1–8 mmag and density fluctuations to within 1%, with significant
+  magnitude biases for a subset of blended objects [src: arXiv:2012.12825,
+  abstract]. In the DES Y3 SOM calibration these realisations give the
+  deep-to-wide transfer function p(c | ĉ, ŝ), lensing-weighted, which is
+  computed from Balrog rather than from the wide sample because only
+  Balrog objects have both photometries [src: arXiv:2012.08566,
+  Sect. 4.1, 4.2.3].
+- **Catalogue-level transfer (Euclid).** Deep photometry is degraded to
+  any shallower survey in flux space, keeping the correlations between
+  fluxes and errors; by the authors' metrics this outperforms Balrog, and
+  inside the SOM reconstruction on Flagship it reduces mean-redshift
+  biases in all tomographic bins [src: arXiv:2601.02005, abstract].
 
 ### Step 4. Reproduce selection, binning and weights
 <!-- key: step-4-reproduce-selection-binning-and-weights -->
@@ -163,6 +207,9 @@ neural network trained on GAMA (σ_z ≃ 0.06), with bins 0 < ẑ < 0.2 and
 | Optimal transport (pop-cosmos) | minimise the Sinkhorn approximation of the Wasserstein-2 distance between simulated and real catalogues, 𝓛(ψ, η) = W₂[D(u, s, n \| ψ, η), D̂] (Eq. 11), by gradient descent through the simulator with base draws u, s, n held fixed (reparameterisation) | Adam, learning rate 10⁻⁴, stop after twenty epochs without improvement; distance summed over magnitudes and 25 adjacent-band colours; zero points and emission-line corrections initialised from 12,473 spectroscopic matches (zCOSMOS-bright, DEIMOS, C3R2) and then kept free | a point estimate [src: arXiv:2402.00935, Sect. IV, IV.1–IV.2] |
 | Approximate Bayesian computation (GalSBI) | iterative batches on disjoint random sets of tiles; each posterior becomes the next prior (Eq. 12) | 10,000 prior samples, 10 tiles (0.38 deg²) at first, keep the 2,000 lowest distances, resample with a 20-component Gaussian mixture; tiles grow to 30 (1.15 deg²) by iteration 21; 31 iterations used all 746 HSC deep patches | posterior samples of ψ [src: arXiv:2412.08701, Sect. 2.4, 3, 4.3] |
 | Gibbs sampling (histogram model) | alternate: draw (i, j, k) for each galaxy with probability f_ijk p(F̂ \| ijk) (Eq. 6), then f_ijk from the Dirichlet–multinomial given the counts n_ijk (Eq. 7) | Gaussian flux errors F̂_b ~ N(aF_b, σ_b²) (Eq. 1); 3000 samples in simulations; four random subsets of 10⁵ KV450 galaxies and their union | samples of n(z) per bin [src: arXiv:2605.15078, Sect. 2.1, 3, 4.2] |
+| Rejection ABC (UFig, MCCL) | accept draws below distance thresholds | Subaru COSMOS 4 bands + VVDS; DES Y1 with image distances and the VVDS redshift distribution | families of n(z) [src: arXiv:1705.05386, Sect. 2; arXiv:1906.01018, Sect. IV.2] |
+| Factorised ABC (HSC deep fields) | p(θ \| d) ≈ Π_i p(θ \| d_i) (Eq. 6), the posterior of one image subset serving as prior for the next (Eqs. 7–8); MMD distance with a Gaussian kernel (Eqs. 9–10) on magnitudes, sizes, two photo-z, ellipticities and flux fractions | 10,000 prior draws, keep the 20th percentile of distances, resample, iterate | posterior samples of 46 parameters [src: arXiv:2401.06846, Sect. 3.5–3.5.1] |
+| Gibbs sampling with clustering (Cox process) | one approximation, the density field taken from a kernel density estimate of the tracers, makes the model amenable to Gibbs sampling | simple simulated system with known density field | n(z) and individual z [src: arXiv:1807.11873, abstract, Sect. 6] |
 
 The stated reasons. pop-cosmos minimises an OT distance because the
 likelihood (and so the KL divergence) is intractable, while OT estimation
@@ -205,6 +252,17 @@ negligible at KV450 volumes [src: arXiv:2605.15078, Sect. 2].
   arXiv:2402.00935, Sect. IV.2]. The KiDS paper defers propagation of
   residual uncertainties and a cosmology run to later work [src:
   arXiv:2602.03935, Sect. IV.2, V].
+- **ABC families.** UFig on Subaru COSMOS gives ⟨z⟩ = 0.626 ± 0.033
+  against 0.659 from 36-band COSMOS2015 photo-z, a 1σ agreement, with
+  n(z) smoother than the COSMOS one because the model has no clustering
+  [src: arXiv:1705.05386, Sect. 6.2]. MCCL on DES Y1 builds 30 n(z) for a
+  single non-tomographic bin, ⟨z̄⟩ = 0.598 ± 0.024 against 0.596 for the
+  fiducial survey, and measures the shear C_ℓ jointly, giving
+  S8 D_IA = 0.895 (+0.054/−0.039) with systematics at ~60% of the
+  statistical error [src: arXiv:1906.01018, Sect. IV.2, abstract]. The
+  HSC deep-field ABC agrees with COSMOS2020 in the mean at the 1σ level
+  to i = 24 after reweighting against COSMOS sample variance [src:
+  arXiv:2401.06846, abstract].
 
 ## Choices and what they cost
 <!-- key: choices-and-what-they-cost -->
@@ -237,7 +295,24 @@ negligible at KV450 volumes [src: arXiv:2605.15078, Sect. 2].
   carry the largest population-model uncertainty, metallicity next, the
   star-forming sequence and mass function to be better constrained; they
   recommend wider priors on the first two [src: arXiv:2207.05819,
-  Sect. VI].
+  Sect. VI]. Two sensitivity studies from other groups locate it
+  elsewhere. Varying one SED-modelling choice at a time around a
+  Prospector-β population and binning with a SOM, the IMF, AGN, gas
+  physics and attenuation law each bias the tomographic means and
+  scatters beyond Stage IV requirements whatever stellar-mass-function
+  reweighting is applied, while late stellar phases (blue horizontal
+  branch, TP-AGB, post-AGB) stay within them [src: arXiv:2405.06009,
+  abstract, Sect. 7]; the authors conclude that a flexible population
+  model is not enough unless the stellar-population model is accurate a
+  priori or flexible enough [src: Sect. 7]. A Salpeter IMF changes the
+  i-band selection so much that fixed-SMF samples are biased far beyond
+  requirements, mostly mitigated once counts are matched [src:
+  Sect. 6.2.2]. In a two-population Schechter model with eight evolving
+  parameters each, shallow (SDSS-like) n(z) depend mainly on quenched
+  galaxies and deep (DES, HSC) ones on star-forming galaxies; the slope
+  a_M of the star-forming characteristic magnitude matters most, a change
+  of 148% (its quoted uncertainty) moving the mean redshift by ~45%
+  [src: arXiv:2112.11345, abstract].
 
 ### Error floors or explicit bias terms
 <!-- key: error-floors-or-explicit-bias-terms -->
@@ -263,7 +338,9 @@ tests with KiDS-like cuts on HSC shape catalogues changed only the tails
 of the colour distributions (work in preparation, as reported) [src:
 Sect. V]. Image-level models (GalSBI) carry morphology and blending
 through the real source extractor at the cost of an emulator and
-iterative ABC [src: arXiv:2412.08701, Sect. 2.3–2.4].
+iterative ABC [src: arXiv:2412.08701, Sect. 2.3–2.4]. Injection into
+the real images (Balrog) and catalogue-level transfer are compared in
+Step 3.
 
 ### ABC distance
 <!-- key: abc-distance -->
@@ -313,7 +390,17 @@ spectroscopic field with biases above 0.05 still give the mean to about
 3 × 10⁻³ and always a lower KL divergence than photometry alone [src:
 Sect. 7]. Limits they list: 0.2 < z < 1.2 only, an idealised tracer
 spanning the range, the noise likelihood taken from the full simulation
-rather than from limited injections [src: Sect. 7].
+rather than from limited injections [src: Sect. 7]. The earlier
+formulation by Sánchez & Bernstein writes the selected galaxies as a Cox
+process, ρ = n f_z [1 + b_z δ_z(θ)] p(s | θ) (Eq. 1) [src:
+arXiv:1807.11873, Sect. 2.1]; without photometry its maximum-posterior
+n(z) reduces to standard clustering-redshift estimators, and its
+authors describe it as a generalisation of Leistedt et al. 2016 that adds clustering
+and an informative prior; on a simple simulation with a known density
+field, clustering sharpens the posteriors and can overcome biases or
+gaps in the spectroscopic prior, but with the KDE approximation the
+posterior no longer samples the shot noise of the tracers [src:
+arXiv:1807.11873, Sect. 6, abstract].
 
 ### Summing individual posteriors under a learned prior
 <!-- key: summing-individual-posteriors-under-a-learned -->
@@ -347,6 +434,11 @@ arXiv:2602.03935, Sect. V].
 | BHM vs stacking, bin medians | 0.001–0.005 vs 0.004–0.014; mean χ² 18 vs 102 | KV450-like simulation | arXiv:2605.15078 | Table 1, Sect. 3 |
 | Template set for stability | ≥ 100 random, or 50 PCA-grouped (5 × 10) | KV450 | arXiv:2605.15078 | Sect. 2.2, 4.2 |
 | Hierarchical colours + clustering | mean to ~3 × 10⁻³ with prior biases > 0.05 | 1000 deg² N-body mock | arXiv:1910.07127 | Sect. 7 |
+| UFig ABC n(z) | ⟨z⟩ = 0.626 ± 0.033 vs 0.659 (COSMOS2015) | Subaru COSMOS, 4 bands | arXiv:1705.05386 | Sect. 6.2 |
+| MCCL DES Y1 | 30 n(z); ⟨z̄⟩ = 0.598 ± 0.024 vs 0.596; S8 D_IA = 0.895 (+0.054/−0.039) | DES Y1, one bin | arXiv:1906.01018 | Sect. IV.2; abstract |
+| Factorised ABC | 46 parameters; 10⁴ draws, 20th percentile kept; mean within 1σ of COSMOS2020 to i = 24 | HSC deep + COSMOS2020 | arXiv:2401.06846 | Sect. 3.5; abstract |
+| Balrog injection | ~30 million models, 20% of footprint; colours to ~1–8 mmag; density fluctuations within 1% | DES Y3 | arXiv:2012.12825 | abstract |
+| Demographic sensitivity | a_M changed by 148% → mean z shifted by ~45% | SDSS-, DES-, HSC-like mocks | arXiv:2112.11345 | abstract |
 
 ## What goes wrong
 <!-- key: what-goes-wrong -->
@@ -398,6 +490,9 @@ arXiv:2602.03935, Sect. V].
 - **Median and mean disagree.** Bright high-z tails move the mean by
   0.05–0.08 while medians agree to < 0.01 in GalSBI-SPS at i ≤ 21–22
   [src: arXiv:2505.21610, Sect. 5.2]. State which statistic is compared.
+- **SPS ingredients fixed by assumption** (IMF, AGN, nebular, attenuation
+  law; see "Which population model"). Test: rerun the chain with one SPS
+  component varied at a time, as arXiv:2405.06009 does.
 
 Validation as performed: bootstrap KDE of the mean-redshift difference
 against spectroscopic histograms (arXiv:2207.05819, Fig. 8 caption) [src];
@@ -433,22 +528,42 @@ beyond comparison with the Stage-III and LSST requirements
   stacking.
 - Method: Alarcon et al. 2020, arXiv:1910.07127 — hierarchical colours
   plus clustering; robustness to biased spectroscopic priors.
+- Foundation: Herbel et al. 2017, arXiv:1705.05386 — n(z) from UFig
+  image simulations and ABC; Kacprzak et al. 2019, arXiv:1906.01018 —
+  MCCL on DES Y1, joint n(z) and shear C_ℓ.
+- Method: Moser et al. 2024, arXiv:2401.06846 — factorised ABC on HSC
+  deep fields, the GalSBI predecessor.
+- Method: Sánchez & Bernstein 2018, arXiv:1807.11873 — Cox-process
+  hierarchical model of colours and clustering.
+- Data model: Everett et al. 2020, arXiv:2012.12825 — Balrog injection;
+  Kang et al. 2026, arXiv:2601.02005 — catalogue-level transfer.
+- Critique/test: Tortorelli, McCullough & Gruen 2024, arXiv:2405.06009 —
+  SPS choices against Stage IV requirements; Sudek et al. 2021,
+  arXiv:2112.11345 — demographic parameters.
+- Code: Crenshaw et al. 2024, arXiv:2405.04740 — PZFlow.
 - Review: Tortorelli & Grün 2026, arXiv:2605.06790, Sect. 3 — the risks
   and the checks a forward model should pass (summarised in L2).
 
 ## Not verified
 <!-- key: not-verified -->
 
+- The MCCL comparison value 0.596 for the fiducial n(z) (arXiv:1906.01018):
+  ⟨z̄⟩ = 0.598 ± 0.024 was found in the text on 2026-10-21, 0.596 was not
+  (it may sit in a figure or table the HTML does not render).
 - The Thorp et al. pop-cosmos updates (the IRAC-selected model used for
   KiDS) and the companion validation paper with QQ/PP plots: cited in
   arXiv:2602.03935 and arXiv:2402.00935, not read; no identifier recorded.
-- Leistedt et al. 2016 (arXiv:1602.05960) and Sánchez & Bernstein 2019
-  (arXiv:1807.11873): bodies not read here; their schemes are described
-  only as Kyriacou et al. and Alarcon et al. summarise them.
-- The GalSBI predecessor whose reweighted mocks give the LePhare and EAZY
-  errors (Moser et al. 2024, as named in arXiv:2606.23783), the shark
-  model papers and the HSC morphology test (Tudorache et al., in
-  preparation): not read.
+- Leistedt et al. 2016 (arXiv:1602.05960): body not read; its scheme is
+  described only as Kyriacou et al., Alarcon et al. and Sánchez &
+  Bernstein summarise it. Of arXiv:1807.11873 only Sect. 2.1 and 6 and
+  the abstract were read; its prior and bias tests (Sect. 4–5) were not.
+- Moser et al. 2024 (arXiv:2401.06846) was read in its abstract and
+  Sect. 3.5 only; the reweighting that gives the LePhare and EAZY errors
+  used by arXiv:2606.23783 was not read. The shark model papers and the
+  HSC morphology test (Tudorache et al., in preparation): not read.
+- Sudek et al. (arXiv:2112.11345), PZFlow (arXiv:2405.04740), Balrog
+  (arXiv:2012.12825) and the Euclid transfer function (arXiv:2601.02005)
+  were read in their abstracts only.
 - Appendix A of arXiv:2207.05819 (image-based selection) was read only
   through its summary in Sect. VI.
 - Whether a KiDS cosmology analysis with the pop-cosmos n(z) has

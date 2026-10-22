@@ -86,7 +86,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 5k; methods 13k; results 13k; surveys 5k; systematics 11k; deep/eor-cross-correlations 7k; deep/eor-inference-modelling 8k; deep/hi-intensity-mapping 7k; deep/ionising-photon-budget 8k; deep/line-intensity-mapping 8k; deep/lya-emitters 7k.
+Sizes, in thousands of tokens: L1 3k; open 5k; methods 13k; results 13k; surveys 5k; systematics 11k; deep/eor-cross-correlations 7k; deep/eor-inference-modelling 8k; deep/hi-intensity-mapping 12k; deep/ionising-photon-budget 8k; deep/line-intensity-mapping 11k; deep/lya-emitters 7k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

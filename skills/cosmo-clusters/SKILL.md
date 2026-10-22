@@ -94,7 +94,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 5k; methods 11k; results 10k; surveys 4k; systematics 11k; deep/cluster-clustering 7k; deep/cmb-cluster-lensing 9k; deep/gas-mass-fraction 6k; deep/optical-selection-projection 8k; deep/sz-selection-function 7k; deep/x-ray-selection-function 6k.
+Sizes, in thousands of tokens: L1 3k; open 5k; methods 11k; results 10k; surveys 4k; systematics 11k; deep/cluster-clustering 7k; deep/cmb-cluster-lensing 9k; deep/gas-mass-fraction 10k; deep/optical-selection-projection 11k; deep/sz-selection-function 7k; deep/x-ray-selection-function 6k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

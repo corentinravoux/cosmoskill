@@ -5,21 +5,21 @@ by step (time-ordered calibration with noise diodes, 1/f noise, map-making,
 beam reconvolution or not, choice of the number of removed modes, subset
 cross-spectra, jackknife covariance, the fitted model with beam, window and
 signal-loss terms, null and injection tests), with the reason each analysis
-gives for its choices.
-Snapshot: 2026-10-19.
+gives for its choices. The chain followed is MeerKLASS's; each step also gives
+what the other single-dish experiments (GBT, Parkes, FAST) and the
+interferometric ones (CHIME, MeerKAT in interferometric mode, Tianlai) do in
+its place, and the cross-correlation detections with galaxy surveys.
+Snapshot: 2026-10-21.
 From: Wolz et al. 2026 SKA HI intensity-mapping chapter (arXiv:2607.03259),
 Sects. 2–4; Bernal & Kovetz 2022 (arXiv:2206.15377), Sects. 5–6.
 
 Already in L2, not repeated here: the amplitudes and detections
 (`results.md#post-reionisation-hi-intensity-mapping`); the CHIME, GBT and
-MeerKLASS pipeline rows, including the mPCA, the D(k) = (k/h Mpc⁻¹)^β loss
-term and the transfer-function formula (`physics-and-methods.md#what-the-main-limits-and-detections-did`);
-signal loss, mask–gain coupling, the 17.90 MHz beam ripple and the
-transfer-function debate (`systematics.md#post-reionisation-hi-intensity-mapping`,
-`open-questions.md#hi-intensity-mapping-first-auto-spectra-and`). The
-interferometric (CHIME) route is described in those L2 sections; this dossier
-follows the single-dish MeerKLASS chain, which is the one planned for
-SKA-Mid.
+MeerKLASS pipeline rows, including the D(k) loss term and the
+transfer-function formula (`physics-and-methods.md#what-the-main-limits-and-detections-did`);
+signal loss, mask–gain coupling, the beam ripple and the transfer-function
+debate (`systematics.md#post-reionisation-hi-intensity-mapping`,
+`open-questions.md#hi-intensity-mapping-first-auto-spectra-and`).
 
 ## How it is done
 <!-- key: how-it-is-done -->
@@ -69,6 +69,38 @@ angle to the line of sight; f the growth rate.
   arXiv:2610.12158, Sect. 2; arXiv:2206.01579, Sect. 2]. Of 41 deep-field
   blocks, 14 are entirely flagged [src: arXiv:2610.12158, Fig. 2 caption].
 
+Peers for this step:
+
+- GBT (single dish, 680–920 MHz receiver, 700–900 MHz used): passband drifts
+  are controlled with a pulsed electronic calibrator averaged per scan, and
+  the absolute calibration from radio point sources is accurate to 9%, quoted
+  as a separate systematic [src: Switzer et al. 2013, arXiv:1304.3712, Sects.
+  2 and 2.2].
+- FAST (single dish, 19 beams, drift scan): all 19 beams show 1/f
+  fluctuations of similar structure; a noise-diode, frequency-independent gain
+  calibration every 8 s does not change the residual 1/f after SVD
+  subtraction; after 30 SVD modes the knee frequency is ~6 × 10⁻⁴ Hz, and the
+  1/f noise can bias the HI power spectrum by 10% [src: Hu et al. 2021,
+  arXiv:2109.06447, abstract].
+- CHIME (cylinder interferometer): the complex gain of each feed is
+  calibrated once per sidereal day from the eigendecomposition of the
+  N²_feed visibility matrix during the night-time transit of Cygnus A
+  (Cassiopeia A, Taurus A or Virgo A otherwise, corrected by a "beam ratio"
+  averaged over many nights); the relative spectral flux density of the
+  calibrators in the band is known to better than 1% [src: CHIME
+  Collaboration 2022, arXiv:2202.01242, Sect. III.1.2]. Common-mode gain
+  drifts between daily calibrations are regressed on the outside temperature
+  (susceptibility 0.07%/K at 400 MHz to 0.2%/K at 800 MHz), which improves
+  the stability from about 0.8% to 0.5% [src: arXiv:2202.01242, Sect.
+  III.2.4, Eq. 2]. Bandpass structure that couples with bright sources and
+  evades the delay filter is fitted afterwards, source by source, with
+  catalogue-based templates (HyFoReS) [src: CHIME Collaboration 2025,
+  arXiv:2511.19620, Sect. III.3, Eqs. 20–22].
+- MeerKAT in interferometric mode: CASA-based flagging (tfcrop, rflag, a 50
+  Jy clip, persistent RFI bands at 933–960 and 1163–1310 MHz) and standard
+  delay, bandpass and gain calibration on PKS B1934−638 and PKS J0252−7104
+  [src: Paul et al. 2023, arXiv:2301.11943, Sect. II.1].
+
 ### Step 2. Make maps
 <!-- key: step-2-make-maps -->
 
@@ -85,6 +117,19 @@ angle to the line of sight; f the growth rate.
 - Noise level by the "ABBA" difference of four neighbouring channels, used
   to characterise the subsets and not in the fit, because subset
   cross-spectra remove the noise bias [src: arXiv:2610.12158, Sect. 2.2].
+- Interferometric peers. CHIME builds "deconvolved ringmaps", a map-making
+  technique "tailored to CHIME, or effectively any transit radio
+  interferometer" of north–south cylinders, by beamforming in the
+  north–south direction on the baseline grid (cylinder spacing 22.0 m, feed
+  spacing 0.3048 m) [src: arXiv:2202.01242, Sect. IV.3]. MeerKAT in
+  interferometric mode makes no map: visibilities are gridded in (u, v),
+  delay-transformed per uv pixel with a Blackman–Harris window to limit
+  foreground leakage to high k_∥, and k_∥ = 2πτν₂₁H(z)/[c(1 + z)²] [src:
+  arXiv:2301.11943, Sect. III.2]. Tianlai's cylinder pathfinder reconstructs
+  sky maps from 20 days of drift scans with a drone-measured primary beam,
+  which the authors find "significantly enhances reconstruction accuracy over
+  previous analytical approximations" [src: Deng et al. 2026,
+  arXiv:2604.27465, abstract].
 
 ### Step 3. Split the data into independent subsets
 <!-- key: step-3-split-the-data-into-independent-subsets -->
@@ -98,6 +143,16 @@ the contamination more coherent within a subset [src: arXiv:2610.12158, Sect.
 2.1]. In the chess-board split, two pairs share dishes, two share blocks, and
 two (A–C, B–D) share neither and are "the most independent".
 
+The other experiments split in time. GBT used four sub-season maps A–D of
+similar depth and coverage, determined the foreground modes separately for
+each side of a pair, and averaged the six cross-pairs [src: Switzer et al.
+2013, arXiv:1304.3712, Sect. 2.3]. CHIME splits its 94 nights into even and
+odd subsets and cross-correlates them [src: CHIME Collaboration 2025,
+arXiv:2511.19620, Sect. VII.2]. MeerKAT in interferometric mode crosses even
+and odd cubes, which "removes the noise bias ... and it is also useful to
+minimize the impact of any time-dependent systematics" [src: Paul et al.
+2023, arXiv:2301.11943, Sect. III.2].
+
 ### Step 4. Decide on beam reconvolution
 <!-- key: step-4-decide-on-beam-reconvolution -->
 
@@ -110,6 +165,18 @@ two (A–C, B–D) share neither and are "the most independent".
 The beam then enters the model only as a Gaussian transverse damping at the
 median frequency (Step 7), which neglects its frequency dependence, side
 lobes and asymmetry [src: arXiv:2610.12158, Sect. 11.6].
+
+GBT's reason for its γ = 1.4 was polarisation: the leakage beam "mixes ~10% of
+polarization to intensity", is antisymmetric about the boresight and slightly
+broader than the primary beam, and Faraday rotation adds spectral structure;
+convolving to 1.4 times the 700 MHz beam mitigates this and the
+frequency-dependent Stokes I beam, at the cost of halving the number of
+independent resolution elements, viable because GBT has "roughly twice the
+resolution needed" for linear scales [src: Switzer et al. 2013,
+arXiv:1304.3712, Sect. 2.2]. The interferometric
+MeerKAT analysis enters the beam through the power-squared beam area
+Ω_ps = ∫ A²(l, m) dl dm from the eidos beam model [src: Paul et al. 2023,
+arXiv:2301.11943, Sect. III.2, Eq. 2].
 
 ### Step 5. Remove foregrounds and choose N_fg
 <!-- key: step-5-remove-foregrounds-and-choose-nfg -->
@@ -140,6 +207,56 @@ lobes and asymmetry [src: arXiv:2610.12158, Sect. 11.6].
   each cleaned cube, expected diagonal beyond 2–3 MHz (~10 channels); off-
   diagonal terms below 15%, 2.5% on average [src: arXiv:2610.12158, Sect. 3].
 
+Peers for this step:
+
+- GBT, SVD of a cross-covariance. The noise-inverse-weighted cross-variance
+  C_AB = (W_A ∘ M_A)(W_B ∘ M_B)ᵀ/N_θ of two sub-season maps is decomposed by
+  SVD, its left and right vectors cleaning A and B; the weights are made
+  separable, "so rank-1, so that it does not increase the map rank" [src:
+  Switzer et al. 2013, arXiv:1304.3712, Sect. 2.1]. The limit is "not from the
+  number of degrees of freedom along the line of sight, but ... the number of
+  independent angular resolution elements", with the rule of thumb T ~ [(1 −
+  N_m/N_ν)(1 − N_m/N_res)]² for the signal transfer; the fields had ~70 and ~30
+  resolution elements [src: arXiv:1304.3712, Sect. 2.1].
+- GBT, choice of the mode number. The optimum "coincides with the most
+  stringent upper bound from the auto-power spectrum": the wide field shows a
+  minimum from 20 to 30 modes and 30 are removed; the deep field's minimum is
+  at 15 but 10 are removed, "conservatively", because the optimum concerns
+  an ensemble of surveys and one survey may scatter low [src:
+  arXiv:1304.3712, Sect. 2.1]. MeerKLASS instead maximises the S/N of the
+  cross-spectrum fit under a χ² condition (above).
+- GBT × eBOSS, FastICA. Idealised simulations need N_IC ≥ 4; on
+  systematics-dominated data more components also remove non-Gaussian and
+  anisotropic systematics, at the risk of HI loss, which a transfer function
+  from 100 injected lognormal mocks corrects [src: Wolz et al. 2021,
+  arXiv:2102.04946, Sect. 3.2].
+- FAST: SVD subtraction of 20 modes lowers the 1/f knee frequency in a 10 MHz
+  band to 1.8 × 10⁻³ Hz; the residual 1/f is then uncorrelated in frequency
+  [src: Hu et al. 2021, arXiv:2109.06447, abstract].
+- CHIME, filtering in delay. Point sources are 10³–10⁵ times the signal; each
+  map pixel is high-pass filtered along frequency with a DAYENU filter built
+  from the covariance C_mn = ε⁻¹ sinc[2πτ_cut(ν_m − ν_n)] + δ_mn, pseudo-
+  inverted with the 47.2% of masked channels zeroed, its weights propagated
+  [src: CHIME Collaboration 2022, arXiv:2202.01242, Sect. IV.5, Eqs. 52–56].
+  The delay cut is chosen empirically: the "aggressive" cut is the lowest
+  delay where P_data/P_noise < 3; four cuts 25–100 ns below it were pushed
+  through the pipeline on data and on a simulated signal, and the cut minus
+  75 ns gave the highest S/N [src: arXiv:2202.01242, Sect. IV.5, Fig. 9].
+  The 2025 auto-spectrum filters each 9.94 s integration before time
+  averaging (L2) and adds HyFoReS for residual bandpass leakage [src:
+  arXiv:2511.19620, Sects. III.2.3 and III.3].
+- Tianlai: multiscale PCA in wavelet domains on the sphere (mPCA-UWTS), with
+  foregrounds about five orders of magnitude above the signal; MeerKLASS's
+  mPCA is the flat-cube analogue [src: Deng et al. 2026, arXiv:2604.27465,
+  abstract].
+- MeerKAT interferometric, avoidance not removal. Foregrounds are left in the
+  wedge; low-level broadband RFI or mutual coupling that shows as peaks
+  outside the wedge, concentrated near zero fringe rate, is flagged per
+  antenna pair and per 15-min scan at 5σ above thermal noise (BLF), or on the
+  gridded uv–τ cube (UVDF) [src: Paul et al. 2023, arXiv:2301.11943, Sects.
+  IV.2–IV.3]. BLF gives 3.2σ and 3.5σ at z ≈ 0.32 and 0.44; UVDF raises them
+  to 5.9σ and 9.18σ [src: arXiv:2301.11943, abstract].
+
 ### Step 6. Estimate cross-spectra and their covariance
 <!-- key: step-6-estimate-cross-spectra-and-their -->
 
@@ -157,6 +274,42 @@ lobes and asymmetry [src: arXiv:2610.12158, Sect. 11.6].
   contaminants; the jackknife is kept because it captures that budget and
   the bin correlations (≈ 30% between the second and third k bins, ≈ 10% for
   other neighbours) [src: arXiv:2610.12158, Sect. 6].
+
+Peers for this step:
+
+- GBT estimator: the optimal quadratic estimator of Liu & Tegmark 2011 on
+  weighted, cleaned sub-season maps, cross-pairs only, binned in (k_⊥, k_∥),
+  with the weighted mean of each frequency slice removed [src: Switzer et al.
+  2013, arXiv:1304.3712, Sect. 2.3].
+- GBT × eBOSS covariance: from the cross-correlation of the cleaned GBT data
+  with 100 WiggleZ random catalogues, which includes cosmic variance and noise;
+  at small k the analytic error from the measured auto-spectra is larger than
+  the covariance-based one, and both converge at small scales; FastICA adds no
+  significant correlation between k modes in the injected lognormals [src:
+  Wolz et al. 2021, arXiv:2102.04946, App. B].
+- CHIME stacking: the noise covariance of the stack is the sample covariance
+  of stacks on 10 000 mock catalogues drawn without replacement from the eBOSS
+  random catalogues, because the propagated radiometric noise misses residual
+  foregrounds, RFI and the frequency coupling of the filter, which shows as a
+  sinc-like covariance between frequency offsets [src: CHIME Collaboration
+  2022, arXiv:2202.01242, Sect. IV.8, Fig. 12].
+- CHIME auto-spectrum: delay spectra by a matched-filter, inverse-covariance
+  transform whose forward operator R = W G H F includes the mask and the
+  foreground filter, to keep compact k_∥ windows [src: CHIME Collaboration
+  2025, arXiv:2511.19620, Sect. V.1, Eqs. 50–54]; noise covariance from 1000
+  Monte Carlo noise realisations passed through the even × odd estimator,
+  off-diagonal correlations ≲ 15% [src: arXiv:2511.19620, Sect. V.4, Eq. 73].
+  Stated limits: ≲ 10% errors in single k_y bins, rebinning correlations not
+  modelled, a frequency-independent sky-noise template; the realisations match
+  the jackknife-measured noise to ≲ 10% [src: arXiv:2511.19620, Sect. V.4,
+  "Limitations"].
+
+Three practices side by side: MeerKLASS keeps a data jackknife because a
+Gaussian or model-based covariance misses residual contaminants (above);
+CHIME's auto-spectrum builds its covariance from noise simulations and checks
+it against a jackknife; the cross-correlation analyses (GBT × WiggleZ/eBOSS,
+CHIME stacks) stack or cross the real map on random catalogues, which CHIME
+adopts because the residual foregrounds and RFI are in the map.
 
 ### Step 7. Fit the model
 <!-- key: step-7-fit-the-model -->
@@ -176,6 +329,27 @@ lobes and asymmetry [src: arXiv:2610.12158, Sect. 11.6].
   the subsets' Fourier-space windows (Eqs. 26–28); β is subset-pair dependent
   [src: arXiv:2610.12158, Sects. 7.3 and 7.5].
 
+Peers for this step. Where MeerKLASS models the loss with D(k), GBT corrected
+it by a Monte Carlo transfer function, T(k_i) from signal simulations
+injected before cleaning, squared "because cleaning is applied to both sides
+of the quadratic estimator", with 300 simulations "sufficient" (Eq. 1), and a
+separate beam transfer function from Gaussian simulations at the common
+resolution [src: Switzer et al. 2013, arXiv:1304.3712, Sect. 2.3]. CHIME
+applies the stored filter to its simulations, so the loss sits in the model
+(L2). In cross-correlation with galaxies, the amplitude is
+Ω_HI b_HI r, r the HI–galaxy correlation coefficient, at an effective k:
+GBT × WiggleZ [0.43 ± 0.07 (stat) ± 0.04 (sys)] × 10⁻³ over 0.6 < z < 1 and
+~41 deg² [src: Masui et al. 2012, arXiv:1208.0331, abstract]; with the later
+GBT maps on 100 deg², at k_eff = 0.31 h Mpc⁻¹ and z ≃ 0.8, 0.58 ± 0.09 ±
+0.05 (WiggleZ), 0.40 ± 0.09 ± 0.04 (eBOSS ELG) and 0.35 ± 0.08 ± 0.03 (eBOSS
+LRG), × 10⁻³ [src: Wolz et al. 2021, arXiv:2102.04946, abstract]. Parkes ×
+2dF (0.057 < z < 0.098, ~1300 deg²) detects the cross at 5.18σ, but at k ~
+1.5 h Mpc⁻¹ the cross-power is more than six times below the ALFALFA-based
+expectation (14.8σ), red galaxies correlating much more weakly than blue
+ones [src: Anderson et al. 2018, arXiv:1710.00424, abstract]. Since r "is
+dependent on the HI content of the optical galaxy sample", the three
+GBT amplitudes are not one quantity [src: arXiv:2102.04946, abstract].
+
 ### Step 8. Validate
 <!-- key: step-8-validate -->
 
@@ -188,6 +362,17 @@ lobes and asymmetry [src: arXiv:2610.12158, Sect. 11.6].
 
 A shuffle in one direction kills radial or angular systematics but not both,
 so passing both argues against either [src: arXiv:2610.12158, Sect. 10.2].
+
+Peers for this step. CHIME's auto-spectrum null: each of the even and odd
+subsets is halved and differenced, and the cross-spectrum of the two
+differenced sets, in which a constant sky cancels and noise stays
+independent, is consistent with the noise covariance [src: CHIME
+Collaboration 2025, arXiv:2511.19620, Sect. VII.2, Fig. 15]. The stacking
+analysis checks consistency between polarisations, between even and odd
+days, beam-calibration errors and linearity [src: CHIME Collaboration 2022,
+arXiv:2202.01242, Sect. VII, outline]. The interferometric MeerKAT analysis
+runs foreground-scatter, signal-extraction, jackknife and null tests [src:
+Paul et al. 2023, arXiv:2301.11943, Sect. V, outline; criteria not read].
 
 ## Choices and what they cost
 <!-- key: choices-and-what-they-cost -->
@@ -240,6 +425,34 @@ form with measured auto-spectra already absorbs excess power and is close to
 the jackknife on the diagonal; with model auto-spectra it underestimates the
 errors at large scales [src: arXiv:2610.12158, Sect. 6].
 
+### Remove in frequency covariance or filter in delay
+<!-- key: remove-in-frequency-covariance-or-filter-in-delay -->
+
+Blind decompositions (PCA, SVD, FastICA, mPCA) learn the foreground modes
+from the data, remove signal on all scales and need a transfer function or a
+loss model; their efficacy is limited by the number of angular resolution
+elements (Step 5) [src: arXiv:1304.3712, Sects. 2.1 and 2.3]. CHIME's delay
+filter fixes the removed region (τ < τ_cut) in advance and is applied to the
+simulations as well, but couples all channels, which shows as a sinc-shaped
+frequency covariance (Step 6) [src: arXiv:2202.01242, Sects. IV.5 and IV.8].
+Avoidance, in the interferometric MeerKAT analysis, keeps only modes outside
+the wedge and flags what contaminates them (Step 5) [src: arXiv:2301.11943,
+Sect. IV.2].
+
+### Auto-spectrum or cross-correlation with galaxies
+<!-- key: auto-spectrum-or-cross-correlation-with-galaxies -->
+
+The first detections were cross-correlations with galaxies (GBT × WiggleZ
+and eBOSS, Parkes × 2dF, MeerKAT × WiggleZ, CHIME stacks on eBOSS), whose
+amplitude carries r, the HI–galaxy correlation coefficient (Step 7) [src:
+arXiv:1208.0331; arXiv:2102.04946; arXiv:1710.00424; arXiv:2206.01579;
+arXiv:2202.01242, abstracts]; Parkes × 2dF finds a strong small-scale
+decrement, read as weak HI clustering, a small r, or both [src:
+arXiv:1710.00424, abstract]. The interferometric MeerKAT paper states the
+contrast: "So far, detections have only been achieved through
+cross-correlations with galaxy surveys" [src: arXiv:2301.11943, abstract].
+An auto-spectrum constrains Ω_HI b_HI without r (Step 7).
+
 ### Single-dish or interferometer for SKA
 <!-- key: single-dish-or-interferometer-for-ska -->
 
@@ -269,6 +482,19 @@ in practice" [src: arXiv:2607.03259, Sect. 2.5].
 | SVD 1/f + foreground clean | 40% HI power lost at k = 0.04 Mpc⁻¹ for 3 modes | simulation | arXiv:2302.02683 | abstract |
 | Null tests | 200 shuffles per direction; p < 5 × 10⁻³ | MeerKLASS 2026 | arXiv:2610.12158 | Sect. 10.2 |
 | Injection | 200 mocks; χ²_inj p = 0.37 and 0.51 | MeerKLASS 2026 | arXiv:2610.12158 | Sect. 10.7 |
+| Absolute calibration | 9% (point sources) | GBT 2013 | arXiv:1304.3712 | Sect. 2 |
+| Polarisation leakage | ~10% of polarisation into intensity | GBT | arXiv:1304.3712 | Sect. 2.2 |
+| Modes removed | 30 (wide), 10 (deep; optimum 15) | GBT auto 2013 | arXiv:1304.3712 | Sect. 2.1 |
+| Transfer-function simulations | 300 | GBT auto 2013 | arXiv:1304.3712 | Sect. 2.3 |
+| Thermal gain susceptibility | 0.07%/K (400 MHz) to 0.2%/K (800 MHz); stability 0.8% → 0.5% | CHIME | arXiv:2202.01242 | Sect. III.2.4 |
+| Band masked before the delay filter | 47.2% | CHIME stack | arXiv:2202.01242 | Sect. IV.5 |
+| Delay cut | aggressive cut (P_data/P_noise < 3) minus 75 ns | CHIME stack | arXiv:2202.01242 | Sect. IV.5 |
+| Stack noise covariance | 10 000 random mock catalogues | CHIME stack | arXiv:2202.01242 | Sect. IV.8 |
+| Auto noise covariance | 1000 realisations; off-diagonal ≲ 15% | CHIME auto | arXiv:2511.19620 | Sect. V.4 |
+| FAST 1/f knee | 1.8 × 10⁻³ Hz after 20 SVD modes; ~6 × 10⁻⁴ Hz after 30; 10% bias on P(k) | FAST pilot | arXiv:2109.06447 | abstract |
+| Ω_HI b_HI r | 0.43 ± 0.07 ± 0.04 × 10⁻³ (WiggleZ, 2013); 0.58 ± 0.09 ± 0.05, 0.40 ± 0.09 ± 0.04, 0.35 ± 0.08 ± 0.03 × 10⁻³ (WiggleZ, ELG, LRG; k_eff = 0.31 h Mpc⁻¹) | GBT cross | arXiv:1208.0331; arXiv:2102.04946 | abstracts |
+| Parkes × 2dF | 5.18σ; > 6× below expectation at k ~ 1.5 h Mpc⁻¹ (14.8σ) | Parkes | arXiv:1710.00424 | abstract |
+| Interferometric auto detection | 3.2σ, 3.5σ (BLF); 5.9σ, 9.18σ (UVDF) at z ≈ 0.32, 0.44 | MeerKAT interferometric | arXiv:2301.11943 | abstract |
 | Stacking systematic | ν_sys = 17.90 (+6.53/−4.27) MHz, A_sys = 0.50 ± 0.33 (prior-limited) | MeerKLASS × GAMA stack | arXiv:2504.03908 | abstract |
 
 ## What goes wrong
@@ -312,22 +538,26 @@ in practice" [src: arXiv:2607.03259, Sect. 2.5].
 ## Reading list
 <!-- key: reading-list -->
 
-- Method, review: Wolz et al. 2026, arXiv:2607.03259 — SKA HI survey
-  definition, calibration and SKA-specific systematics.
-- Data, calibration: MeerKLASS Collaboration 2024, arXiv:2407.21626 — diode
-  calibration model, self-calibration, PCA with weights, reconvolution.
-- Application: MeerKLASS Collaboration 2026, arXiv:2610.12158 — subsets, mPCA,
-  N_fg selection, jackknife, model with window and loss, validation suite.
-- Application: Cunnington et al. 2022, arXiv:2206.01579 — pilot map-making
-  and weighted reconvolution.
-- Method: Cunnington et al. 2023, arXiv:2302.07034 — transfer-function
-  reconstruction of signal loss.
-- Systematics: Irfan et al. 2023, arXiv:2302.02683 — 1/f noise in MeerKAT
-  pilot data and its mitigation.
-- Systematics: Chen et al. 2025, arXiv:2504.03908 — beam-ripple systematic
-  seen in stacking.
-- Method: Zhang et al. 2025, arXiv:2509.10992 — joint Bayesian calibration and
-  map-making.
+- Method, review: Wolz et al. 2026, arXiv:2607.03259 (SKA HI surveys,
+  calibration, SKA systematics).
+- MeerKLASS single dish: MeerKLASS Collaboration 2024, arXiv:2407.21626
+  (diode model, self-calibration, weighted PCA); 2026, arXiv:2610.12158
+  (subsets, mPCA, N_fg, jackknife, loss model, validation); Cunnington et al.
+  2022, arXiv:2206.01579 (pilot, reconvolution); Cunnington et al. 2023,
+  arXiv:2302.07034 (transfer function); Irfan et al. 2023, arXiv:2302.02683
+  (1/f); Chen et al. 2025, arXiv:2504.03908 (beam ripple); Zhang et al. 2025,
+  arXiv:2509.10992 (joint Bayesian calibration).
+- Other single dishes: Switzer et al. 2013, arXiv:1304.3712 (GBT auto:
+  sub-season crosses, SVD, transfer function); Hu et al. 2021,
+  arXiv:2109.06447 (FAST 1/f).
+- Detections in cross-correlation: Masui et al. 2012, arXiv:1208.0331 (GBT ×
+  WiggleZ); Wolz et al. 2021, arXiv:2102.04946 (GBT × eBOSS, FastICA);
+  Anderson et al. 2018, arXiv:1710.00424 (Parkes × 2dF).
+- Interferometers: CHIME Collaboration 2022, arXiv:2202.01242 (calibration,
+  ringmaps, DAYENU, stack covariance) and 2025, arXiv:2511.19620 (auto,
+  HyFoReS, noise Monte Carlo); Paul et al. 2023, arXiv:2301.11943 (MeerKAT
+  interferometric, avoidance, flagging); Deng et al. 2026, arXiv:2604.27465
+  (Tianlai, drone beam, wavelet PCA).
 
 ## Not verified
 <!-- key: not-verified -->
@@ -340,7 +570,9 @@ in practice" [src: arXiv:2607.03259, Sect. 2.5].
 - Sects. 10.1 and 10.3–10.11 of arXiv:2610.12158 (splitting, patchwork,
   leakage, radial and N_fg-stability tests) were not read; their pass criteria
   are not recorded.
-- The interferometric route (CHIME, HIRAX, CHORD) is not
-  re-examined here; L2 holds what was read for CHIME.
-- The GBT auto-spectrum pipeline (season cross-spectra, SVD modes) was not
-  re-read for this dossier.
+- HIRAX and CHORD have no power-spectrum analysis read; their hardware
+  status is in L2 (`surveys-and-data.md`). Tianlai was read in its abstract
+  only. The CHIME primary-beam deconvolution and beam calibration (Sects.
+  IV.3.3, IV.4 of arXiv:2202.01242) were not read.
+- FAST HI intensity-mapping power spectra (beyond the 1/f study) were not
+  searched for this run.

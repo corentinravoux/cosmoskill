@@ -6,11 +6,15 @@ calibration, the selection bias of stacked lensing and clustering as a
 boost function, an analytic bias model, a post-processing correction or a
 full simulation-based forward model, scale cuts), how each is validated
 against SZ cross-matches and spectroscopy, and what each choice was found
-to cost.
-Snapshot: 2026-10-18.
+to cost. The most detailed projection modelling is DES redMaPPer work;
+the HSC CAMIRA, SDSS redMaPPer with HSC lensing, KiDS AMICO, Euclid and
+eROSITA cross-match routes are given beside it step by step.
+Snapshot: 2026-10-21.
 From: Miyatake 2025 review (arXiv:2505.07697), Sects. 3.1 and 5; DES
 cluster analyses Y1, Y3 and Y6 strategy (arXiv:2002.11124,
-arXiv:2503.13631); KiDS AMICO cosmology paper set (arXiv:2507.14338).
+arXiv:2503.13631); KiDS AMICO cosmology paper set (arXiv:2507.14338);
+HSC CAMIRA papers (arXiv:1407.4693, arXiv:1701.00818,
+arXiv:1904.07524); Euclid Cluster Finder Challenge (arXiv:1906.04707).
 
 Already in L2, not repeated here: the mechanism, the history of the size
 estimate (≤ 5% in 2014 to 20–30% in DES Y1), the simulated boosts of
@@ -53,6 +57,25 @@ AMICO writes the intrinsic richness λ* with a lognormal of scatter σ_intr
 around α + β log(M/M_piv) + γ log(H(z)/H(z_piv)) + log λ*_piv (Eqs.
 20–21) [src: Sect. 5.1, arXiv:2507.14285].
 
+HSC CAMIRA does not separate the two terms: Murata et al. fit a
+lognormal P(ln N | M, z) to stacked lensing of 1747 CAMIRA clusters
+(N ≥ 15, 0.1 ≤ z ≤ 1.0) and abundances, without informative priors
+[src, arXiv:1904.07524], and state that its σ_lnN|M,z "should be
+effectively regarded as a total scatter", including intrinsic scatter,
+richness errors, halo orientation and projection [src: Sect. 4.1,
+same]. Acceptable p-values required terms in ln(1 + z) and [ln(1 +
+z)]² in the mean and scatter [src, same]; the middle redshift bin then
+has a ⟨M | N⟩ about 20% higher and a slightly smaller scatter, which the
+authors ascribe to a non-monotonic redshift dependence of the
+projection effect, supported by cluster photo-z errors that are smallest
+at 0.4 ≤ z ≤ 0.55 [src: Sects. 6.3 and 7, same]. The scatter is larger
+for a Planck than for a WMAP cosmology and rises towards low richness
+for Planck only [src, same]. The CAMIRA finder itself (red-sequence
+colours from population synthesis, calibrated on spectroscopic galaxies)
+was first run on SDSS DR8 and calibrated with CFHTLenS stacked lensing
+including miscentring, N = 20 corresponding to M_vir ≈ 10¹⁴ h⁻¹ M_sun
+[src, arXiv:1407.4693].
+
 ### Step 2. Calibrate the background noise by injection
 <!-- key: step-2-calibrate-the-background-noise-by -->
 
@@ -71,6 +94,25 @@ step only sets the background part [src: Sect. 2, same]. A by-product:
 the richness errors quoted in the redMaPPer catalogue underestimate the
 true observational uncertainty by about 40–70%, because they assume the
 membership probabilities are correct [src: Sect. 3.1, same].
+
+The two calibration routes have a known trade-off, stated by the Euclid
+Cluster Finder Challenge: end-to-end simulated data include "realistic
+projection effects associated with the spatial correlation between
+structures", which injection of simulated clusters into existing data
+finds difficult to reproduce, a point "particularly relevant" for
+finders based on the galaxy distribution [src: Sect. 1,
+arXiv:1906.04707]. HSC CAMIRA uses a hybrid: mock galaxy samples from
+the observed COSMOS-field HSC galaxies for the field and CAMIRA members
+from the Wide survey for clusters, placed with N-body halo distributions
+and keeping masks, matched to input haloes within 1 h⁻¹ Mpc and Δz <
+0.1 [src: Sects. 6.1–6.2, arXiv:1701.00818]; the input richness–mass
+relation and red fraction are assumptions, on which the scatter and
+completeness, but not their qualitative behaviour, depend [src: Sect.
+6.1, same]. AMICO in KiDS-DR3 uses mocks derived
+directly from the data, preserving photo-z errors, absorption, missing
+data and the spatial correlation of galaxies and clusters, "not
+rely[ing] on the assumptions" of simulations and semi-analytic models
+[src, arXiv:1810.02811]; its KiDS-1000 version is in Step 3.
 
 ### Step 3. Calibrate correlated projections in N-body simulations
 <!-- key: step-3-calibrate-correlated-projections-in-n -->
@@ -103,6 +145,17 @@ P(z_ob | z_tr) Gaussian with σ = 0.014(1 + z_tr) [src: Sects. 3 and 5.1,
 same]. Impurities bias counts high and stacked lensing low [src: Sect. 3,
 same].
 
+The cosmology of the simulation matters for correlated structure: the
+Euclid challenge mock has Ω_m = 0.25 and σ8 = 0.9, which the authors
+expect "to lead to fewer projection effects with other clusters along
+the line-of-sight and to increase the overall number of clusters" [src:
+Sect. 6.2, arXiv:1906.04707]. Six finders (photometric-redshift
+tomography, optimal filtering, hierarchical, wavelet and
+friends-of-friends) were run blind on that mock; three reach > 80%
+completeness at a mean purity of 80% down to 10¹⁴ M_sun and up to z = 2,
+and AMICO (matched filter) and PZWav (adaptive wavelet) were selected
+for the Euclid pipeline [src, same].
+
 ### Step 4. Model the selection bias of lensing and clustering
 <!-- key: step-4-model-the-selection-bias-of-lensing-and -->
 
@@ -120,7 +173,7 @@ Mpc reproduces the redMaPPer bias, which is why counts-in-cylinders mocks
 are used as a cheap stand-in for the finder [src: Sect. 6.2, same].
 
 Six ways of carrying this into a likelihood are in use, in order of
-appearance.
+appearance; (b′) and (g) are two further routes, from HSC work.
 
 **(a) A multiplicative correction to stacked masses.** DES Y1 corrected
 its stacked lensing masses with a simulation calibration of the
@@ -137,7 +190,30 @@ arXiv:2112.09059]. The squared factor for clustering comes from the
 simulation finding that the clustering boost is twice the lensing boost
 [src: same]. The DES Y6 strategy paper reports that the Π(R) of the
 published papers is a typo for 1 + Π(R) [src: Sect. IV.1.6, footnote,
-arXiv:2503.13631].
+arXiv:2503.13631]. The SDSS redMaPPer + HSC-Y3 analysis keeps the same
+Eqs. (Eqs. 26–28 there) but uses one Π0 and R0 for all richness bins:
+with the HSC-Y3 covariance, whose large scales are not shape-noise
+dominated, the per-bin model of the earlier SDSS-lensing analysis
+(arXiv:2112.09059) did not recover the input
+cosmology on a noiseless mock, because the boost amplitude is
+degenerate with the clustering and lensing amplitudes [src: Sects. 4.2
+and 5.1, arXiv:2309.13025]. With shared parameters, mocks with
+projection lengths of 60 and 120 h⁻¹ Mpc, 40% miscentred clusters and
+a cluster photo-z scatter of 30 h⁻¹ Mpc were recovered [src: Sect. 5.1,
+same], and the blind result is S8 = 0.816 +0.041/−0.039, consistent
+with Planck 2018 [src, same], against S8 = 0.718 from the same finder
+with SDSS lensing and per-bin boosts (Choices below).
+
+**(b′) A boost on the halo bias of the clustering only (HSC CAMIRA).**
+Chiu et al. self-calibrate the CAMIRA richness–mass normalisation from
+ξ_cc, ξ_cg (with BOSS CMASS) and ξ_gg, modelling the cluster bias as a
+linear combination of the bias without projection and the bias due to
+projection, weighted by the probability f that a cluster is a
+projection of two haloes (more than two being rare), following Baxter
+et al. 2016 [src: Sect. 5.3, arXiv:2005.13564]. The normalisation A_N =
+11.9 +3.0/−1.9 at M500 = 10¹⁴ h⁻¹ M_sun, z = 0.6 from all three
+functions is consistent with weak-lensing magnification and with shear
++ abundance, with a ≲ 1.9σ preference for a lower value [src, same].
 
 **(c) An empirical scale-dependent ratio (DES Y3 and Y6).** The ratio of
 the selected to the original cluster lensing model is b_s1 + b_s2
@@ -193,6 +269,15 @@ emulated over cosmology [src: Sects. III.2, IV.1, IV.3,
 arXiv:2510.25706]. Here the selection bias is not modelled; it is present
 in the mocks by construction.
 
+**(g) A different mass proxy.** Huang et al. compare halo-mass tracers
+at 0.2 < z < 0.5 with HSC galaxy–galaxy lensing: the outer stellar mass
+M*[50,100] performs comparably to redMaPPer and CAMIRA richness above
+log M_vir/M_sun = 14.0, and in N-body simulations haloes selected by it
+have lensing profiles consistent with no projection or miscentring,
+while richness-selected clusters show an excess at R ~ 1 Mpc "which may
+suggest a more significant impact from selection biases" [src,
+arXiv:2109.02646].
+
 ### Step 5. Choose scales
 <!-- key: step-5-choose-scales -->
 
@@ -236,6 +321,31 @@ redshift [src: Sect. 4.3.3, same].
 fraction more than twice as large at low richness as at high, and an
 increase of up to 25% from z ~ 0.1 to z ~ 0.2 [src: abstract,
 arXiv:2506.06249].
+
+**X-ray cross-matches.** In the eRASS1 identification with redMaPPer
+on the Legacy Surveys (eROMaPPer), 3% of clusters have overlapping
+structures in projection and get a secondary redshift, 95 optical
+detections were judged by eye to be in projection to the X-ray source,
+and the i band rejected low-richness clusters with high contamination
+probability, "for which the i-band might help to identify random
+line-of-sight projections" (numbers in the table) [src: Sects. 4.1.1,
+4.2.1 and 4.2.2, arXiv:2402.08453]. The paper quotes SDSS reshuffling
+tests (purity ≳ 95%) as showing that redMaPPer clusters "are not
+significantly affected by projection effects" [sec: Sect. 3.1,
+arXiv:2402.08453, citing Rykoff et al. 2014], a test of detection
+purity rather than of the richness boost. eFEDS candidates are
+confirmed with MCMF and CAMIRA [src, arXiv:2106.14519]; S-PLUS matches
+PZWav to eRASS1 at purities of 80–95%, stricter purity lowering
+completeness mostly for low-luminosity systems, with more groups
+recovered than by redMaPPer [src, arXiv:2607.02706].
+
+**Weak-lensing selection.** Of 129 HSC-Y3 shear peaks (ν > 4.7), 126
+have optical counterparts, the rest being line-of-sight projections or
+offsets to low-mass haloes [src: Sect. 2.2, arXiv:2608.02755]; fCAMIRA
+ranks all red-sequence counterparts along the line of sight by their
+lensing contribution f_lens, and the ≈ 8% redshift outliers against a
+positional match are "primarily attributed to projection effects" [src:
+abstract and Sect. 4.2, same].
 
 ## Choices and what they cost
 <!-- key: choices-and-what-they-cost -->
@@ -311,7 +421,11 @@ AMICO, PZWav or WaZP, for which "no study of projection effects has been
 carried out"; the authors expect them to be "equally, if not more
 strongly, affected" because their line-of-sight kernel is wider than the
 red sequence [src: Sect. 5.3, arXiv:2502.12914]. Spectroscopy reaches low
-richness but only at low redshift (arXiv:2506.06249).
+richness but only at low redshift (arXiv:2506.06249). AMICO and PZWav
+rely instead on data-driven mocks and the Euclid challenge (Steps 2–3);
+the KiDS-DR3 AMICO counts and lensing gave S8 = 0.78 ± 0.04 [src,
+arXiv:2012.12273]. CAMIRA is tested against XXL and XMM-LSS X-ray
+properties and centres [src, arXiv:1701.00818].
 
 ## Numbers
 <!-- key: numbers -->
@@ -333,6 +447,17 @@ richness but only at low redshift (arXiv:2506.06249).
 | Optical cluster bias, λ^ob = 20, z = 0.5 | 2.1 × random-selected at R = 0; + 5% at large R | DES Y3-like mock | arXiv:2604.05833 | Sect. II.1 |
 | Unassociated members (simulation calibration) | ≈ 30% at low λ to < 10% at high λ | DES Y3 redMaPPer | arXiv:2502.12914 | Sect. 4.3.3 |
 | Best-constrained combination | σ8 (Ω_m/0.3)^0.36 | DES Y1 forward model | arXiv:2510.25706 | Sect. VII.2, Eq. 34 |
+| CAMIRA HSC catalogue | 1921 clusters, 0.1 < z < 1.1, N > 15 (≈ M200m ≳ 10¹⁴ h⁻¹ M_sun), ≈ 232 deg²; photo-z bias < 0.005, scatter < 0.01 | HSC S16A | arXiv:1701.00818 | abstract |
+| CAMIRA completeness and purity | > 0.9 for massive clusters; 90 mocks, ≈ 144 deg² | HSC S16A | arXiv:1701.00818 | abstract; Sect. 6.2 |
+| CAMIRA mass–richness | 1747 clusters; lensing S/N = 19 at 0.7 ≤ z ≤ 1.0; ⟨M \| N⟩ ≈ 20% higher in the middle z bin | HSC Y1 | arXiv:1904.07524 | abstract; Sect. 7 |
+| CAMIRA clustering normalisation | A_N = 11.9 +3.0/−1.9 (ξ_cc + ξ_cg + ξ_gg), 21% error | HSC × BOSS CMASS | arXiv:2005.13564 | abstract |
+| Boost mock tests | d_proj = 60, 120 h⁻¹ Mpc; 40% miscentred; σ_ph = 30 h⁻¹ Mpc: recovered | SDSS redMaPPer + HSC-Y3 | arXiv:2309.13025 | Sect. 5.1 |
+| S8, shared boost | 0.816 +0.041/−0.039 | SDSS redMaPPer + HSC-Y3 | arXiv:2309.13025 | abstract |
+| AMICO KiDS-DR3 | 7988 candidates, S/N > 3.5, purity ≈ 95%; 3652 with λ* ≥ 20 give S8 = 0.78 ± 0.04 | KiDS-DR3 | arXiv:1810.02811; arXiv:2012.12273 | abstracts |
+| Euclid finder challenge | 6 finders; 3 with > 80% completeness at 80% purity to 10¹⁴ M_sun, z = 2; mock Ω_m = 0.25, σ8 = 0.9 | Euclid-like mock | arXiv:1906.04707 | abstract; Sect. 6.2 |
+| eRASS1 optical projections | 332 (3%) overlapping in projection; 95 X-ray/optical projections; 446 rejected with i band, P_cont = 49% | eRASS1 × LS | arXiv:2402.08453 | Sects. 4.1.1, 4.2.1, 4.2.2 |
+| eFEDS confirmation | 477 of 542; contamination 6 ± 3% (confirmed), 17 ± 3% (all) | eFEDS × HSC, LS | arXiv:2106.14519 | abstract |
+| Shear-selected counterparts | purity ≳ 98% (126/129); ≈ 8% redshift outliers > 0.15 from projection | HSC-Y3 | arXiv:2608.02755 | Sect. 2.2; abstract |
 
 ## What goes wrong
 <!-- key: what-goes-wrong -->
@@ -349,6 +474,10 @@ richness but only at low redshift (arXiv:2506.06249).
 | Redshift trend absent in simulations | unmatched fraction versus redshift misfit | free redshift trend of τ (Eq. 19) | arXiv:2502.12914, Sects. 3.3, 4.2 |
 | Miscentring correlated with projection | not modelled in the 2019 calibration | none stated; flagged as future work | arXiv:1807.07072, Sect. 2 |
 | Selection correction decided after unblinding | large post-unblinding change | fix the correction and its prior before unblinding | arXiv:2002.11124, Sect. I |
+| Per-bin boosts with a sample-variance-dominated lensing covariance | input cosmology not recovered on a noiseless mock | share the boost parameters across richness bins | arXiv:2309.13025, Sect. 5.1 |
+| Redshift-dependent projection | non-monotonic ⟨M \| N⟩ and scatter with z | free ln(1 + z) and [ln(1 + z)]² terms; compare with cluster photo-z errors | arXiv:1904.07524, Sects. 6.3, 7 |
+| Mock cosmology with low Ω_m or high σ8 | fewer projections than in the data | run calibration mocks at the current cosmology | arXiv:1906.04707, Sect. 6.2 |
+| Wrong counterpart along the line of sight | wrong redshift (≈ 8% of shear peaks; 3% of eRASS1) | rank counterparts by lensing contribution; secondary redshifts; visual inspection | arXiv:2608.02755, abstract; arXiv:2402.08453, Sect. 4.2.1 |
 
 Null and consistency tests stated in the papers read: cross-shear and
 tangential shear around 50 times as many randoms consistent with zero,
@@ -382,6 +511,19 @@ statistical uncertainty [src: Sect. IV.1.8, arXiv:2503.13631].
   (arXiv:2507.14285), Sects. 3, 4.3, 5.1 and 6.3.
 - Critique from SZ data: Grandis et al. 2025 (arXiv:2502.12914),
   Sects. 3–5.
+- HSC CAMIRA: Oguri 2014 (arXiv:1407.4693); Oguri et al. 2018
+  (arXiv:1701.00818), Sect. 6; Murata et al. 2019 (arXiv:1904.07524),
+  Sects. 4.1, 6.3; Chiu et al. 2020 (arXiv:2005.13564), Sect. 5.3.
+- Shared boost with HSC-Y3 lensing: Sunayama et al. 2024
+  (arXiv:2309.13025), Sects. 4.2, 5.1. Proxy with reduced projection:
+  Huang et al. 2021 (arXiv:2109.02646).
+- KiDS AMICO DR3: Maturi et al. 2019 (arXiv:1810.02811); Lesci et al.
+  2022 (arXiv:2012.12273). Euclid finder challenge: Adam et al. 2019
+  (arXiv:1906.04707), Sects. 1, 6.2.
+- Cross-matches: eRASS1, Kluge et al. 2024 (arXiv:2402.08453), Sects.
+  4, 7; eFEDS, Klein et al. 2022 (arXiv:2106.14519); S-PLUS, Doubrawa
+  et al. 2026 (arXiv:2607.02706); HSC shear-selected, Chiu et al. 2026
+  (arXiv:2608.02755).
 
 ## Not verified
 <!-- key: not-verified -->
@@ -394,8 +536,12 @@ statistical uncertainty [src: Sect. IV.1.8, arXiv:2503.13631].
   (arXiv:2503.13632, Table 2 did not render in an earlier session).
 - The SinFoniA mock method itself (Maturi et al.), known here only as
   described in arXiv:2507.14285.
-- The body of the DESI spectroscopic study (arXiv:2506.06249): not read;
-  a 2026 HSC paper on optical confirmation of shear-selected clusters was
-  seen by title only.
-- Projection effects for CAMIRA (HSC) and for the Euclid AMICO and PZWav
-  samples: not read.
+- The body of the DESI spectroscopic study (arXiv:2506.06249): not read.
+  The HSC shear-selected optical confirmation (arXiv:2608.02755) is now
+  read in Sects. 2.2 and 4.2.
+- CAMIRA has no dedicated P(λ^ob | λ^true) calibration in the papers
+  read; the value of the projection probability f in arXiv:2005.13564
+  and the body of the AMICO KiDS-DR3 selection paper (arXiv:1810.02811)
+  were not read. Projection studies for the Euclid AMICO and PZWav
+  samples (beyond the challenge) and for the final DES WaZP catalogue
+  (title only): not read.

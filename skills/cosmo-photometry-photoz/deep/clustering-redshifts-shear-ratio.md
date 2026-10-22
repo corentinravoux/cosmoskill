@@ -6,8 +6,9 @@ reference bias, model of the unknown sample's bias, covariance), how the
 measured cross-correlations become a constraint on n(z) (shift fits,
 Gaussian-process reconstruction, importance sampling of SOM
 realisations), and how a shear-ratio likelihood is built; with the
-choices DES, KiDS and Euclid made and their stated reasons.
-Snapshot: 2026-10-19.
+choices DES, KiDS, HSC, Euclid and the DESI cross-survey calibration
+made and their stated reasons.
+Snapshot: 2026-10-21.
 From: Newman & Gruen 2022 review, Sect. 3.3, 4.2.6; DES and KiDS redshift
 working groups (copied from `references/subtopics.tsv`).
 
@@ -76,6 +77,24 @@ reference samples and set at the S/N peak, and that larger scales would
 need a more complex covariance, "never implemented in practice" [src:
 arXiv:2505.10416, Sect. 4.4].
 
+- **KiDS-1000.** A single broad radial bin with radial weighting (the
+  Schmidt et al. 2013 technique); the earlier KiDS simulation study used
+  100 kpc < r < 1 Mpc comoving throughout, and KiDS-1000 explored smaller
+  ranges such as 30–300 and 50–500 kpc [src: arXiv:2007.15635,
+  Sect. 4.1.1]. KiDS-Legacy later moved to the larger 0.5–1.5 Mpc (above).
+- **HSC Y3 (CAMIRA LRG reference).** 0.1–1.0 Mpc, lensing weights
+  included in the estimator, the-wizz for the pair counts [src:
+  arXiv:2211.16516, Sect. 5.5].
+- **HSC PDR3 × DESI DR1/DR2.** W(r) ∝ r^β with β = −1 (after Ménard et
+  al. 2014 and Schmidt et al. 2013), fiducial 0.3–3 h⁻¹ Mpc, "more
+  conservative" than the 0.1–1 Mpc of the first HSC calibration, with
+  1–5 h⁻¹ Mpc as a check; the effective scales are ~0.6 and ~2 h⁻¹ Mpc
+  [src: arXiv:2511.18133, Sect. 3.1].
+- **DESI DR1 × DES Y3, KiDS-1000, HSC Y1 and Y3.** Reference slices of
+  Δz = 0.05 over 0.1 < z < 1.6 with BGS, LRG and ELG; fits at R > 5,
+  1.5–10 and 3–20 h⁻¹ Mpc give consistent b_u p_u within the errors
+  [src: arXiv:2512.15963, Sect. 4.2, 6.2.2].
+
 ### Step 2. Measure the correlations
 <!-- key: step-2-measure-the-correlations -->
 
@@ -92,7 +111,19 @@ k-means on sky coordinates and pairs are counted across region boundaries
 [src: arXiv:2503.19440, Sect. 5.1]. Euclid compared weighting the ratio of
 pair counts with weighting the pair counts themselves: no difference in
 uncertainties, so the simpler first form was kept [src: arXiv:2505.10416,
-Sect. 4.2].
+Sect. 4.2]. DESI DR1 uses w = D_uD_r/D_uR_r − 1 (Eq. 19) with TreeCorr,
+because randoms exist for the reference only; each DESI galaxy carries
+w_sys × w_IIP (individual inverse-probability fibre weight), which is
+appropriate for cross-correlations since only one side of each pair is
+subject to fibre collisions, and sources carry their shear weights, so
+the result is the lensing-weighted n(z) [src: arXiv:2512.15963,
+Sect. 4.2]. KiDS-1000 replaced the-wizz by yet_another_wizz to avoid the
+sky pixelisation inherited from STOMP, which gives more realistic errors
+at the small angular scales probed at high redshift [src:
+arXiv:2007.15635, Sect. 4.1.1]; the-wizz itself separates pair finding
+from the redshift estimate, so that a user's sub-sample is processed in
+a fraction of the time of rerunning all the correlations [src:
+arXiv:1609.09085].
 
 ### Step 3. Calibrate the reference bias
 <!-- key: step-3-calibrate-the-reference-bias -->
@@ -109,7 +140,17 @@ work [src: arXiv:2503.19440, Sect. 5.2]. DES checks that b_r from 1.5–5
 Mpc and 5–15 Mpc agree, so neither scale-dependent bias nor fibre
 collisions matter at the fiducial range, while 0.1–1.5 Mpc biases differ;
 BOSS/eBOSS bias jumps near z = 0.2 and 0.7 follow selection changes
-[src: arXiv:2510.23565, Sect. IV.2.2].
+[src: arXiv:2510.23565, Sect. IV.2.2]. KiDS-1000 corrects the
+reference bias in the same way, and checks the source-bias evolution by
+self-consistency (a broad sample against the weighted sum of the
+tomographic bins), noting that this check is of limited use because
+source bias evolves little across the core of one bin, and that outlier
+populations far from that core cannot be corrected, so the method suits
+only narrow, unimodal n(z) [src: arXiv:2007.15635, Sect. 4.1.1].
+DES Y3 lenses add the unknown sample's own auto-correlation in photo-z
+micro-bins of dz = 0.02, whose photo-z scatter integral (Eq. 8) is now
+estimated from the clustering redshifts of the micro-bins rather than
+from simulations as in DES Y1 [src: arXiv:2012.12826, Sect. 4.2].
 
 ### Step 4. Model the cross-correlation and its errors
 <!-- key: step-4-model-the-cross-correlation-and-its -->
@@ -148,6 +189,28 @@ Sect. 3.3.1]. With both biases measured in the same slices,
 n_p(z_i) = w_sp / [Δz √(w_ss w_pp)] (Eq. 49), valid also at next order in
 the bias expansion [src: Sect. 3.3.1].
 
+Three other treatments of the unknown sample's bias:
+
+- **HSC Y3** fits w_LRG−Y3 ∝ φ_nz b_PhotZ b_LRG w_DM (Eq. 7) with one
+  free product b = b_LRG b_PhotZ per tomographic bin, and propagates the
+  CAMIRA LRG photo-z error by drawing 10 reference catalogues from a
+  conditional density trained on spectra and inflating the covariance
+  (Eq. 8); w_DM uses CCL halofit at fixed cosmology, since cosmology
+  changes its redshift scaling by ~10%, below the ~20% effect of bias
+  modelling [src: arXiv:2211.16516, Sect. 5.5].
+- **HSC × DESI** drops linear bias and assumes only that the
+  cross-correlation coefficient r_xy, in w_xy ≈ r_xy √(w_xx w_yy) (Eq. 6),
+  does not evolve with redshift inside a tomographic bin, a weaker
+  assumption that the agreement of two scale cuts supports down to
+  ~0.5 h⁻¹ Mpc [src: arXiv:2511.18133, Sect. 3.1].
+- **DESI DR1** fits A_ur with two magnification amplitudes p, q
+  (Gaussian priors 4.0 ± 2.0, flat prior on A_ur) (Eqs. 22–23) and
+  marginalises a source bias b_u(z) = b₀ + b₁z (Eq. 27) whose Gaussian
+  priors, fitted to mocks matched to each survey's magnitudes and
+  colours, are widened by a factor 2 [src: arXiv:2512.15963, Sect. 5.2,
+  6.2.2]. Magnification becomes non-negligible at z ≳ 1 because of the
+  depth of the ELG sample [src: abstract].
+
 ### Step 5. Estimate the covariance
 <!-- key: step-5-estimate-the-covariance -->
 
@@ -166,6 +229,12 @@ the bias expansion [src: Sect. 3.3.1].
   checked against halo-model analytic covariances, but the jackknife was
   kept because of the non-linear regime, HOD uncertainties and non-Limber
   connected terms [src: arXiv:2503.19440, Sect. 5.1].
+- HSC Y3: bootstrap resampling as implemented in the-wizz [src:
+  arXiv:2211.16516, Sect. 5.5].
+- DESI DR1: jackknife over 60 regions; auto- and cross-correlation
+  jackknife regions cannot be matched, which matters little because the
+  cross-correlation dominates the error budget [src: arXiv:2512.15963,
+  Sect. 4.2].
 
 ### Step 6. Turn w into an n(z) constraint
 <!-- key: step-6-turn-w-into-an-n-z-constraint -->
@@ -203,6 +272,34 @@ Three routes in current use:
    keep their cross-bin correlations, and the raw SOM realisations were
    too noisy for importance sampling to work, so components that do not
    affect the observables are projected out first [src: Sect. II.4].
+4. **Shift of the SOM n(z), single wide-area sample (KiDS-1000).**
+   m_θ(z) = A n_SOM(z + δz^CZ) (Eq. 9). If the S/N varies across the
+   peak, a template that is too broad (DIR) biases the mean high and one
+   too narrow (SOM) biases it low, so the wide-area and deep pencil-beam
+   CCs were not combined [src: arXiv:2007.15635, Sect. 4.1.3]. The result:
+   no significant bias of the SOM n(z) against the CCs, and a SOM + CC
+   calibration with mean-redshift errors of ~0.01–0.02 [src: abstract].
+5. **Shift and stretch (DES Y3 lenses).** n(z) = s⁻¹ n_pz((z − z_mean −
+   Δz)/s + z_mean) (Eq. 14), used where a shift alone fits badly [src:
+   arXiv:2012.12826, Sect. 4.4]; this is the form Euclid later calls the
+   SSM (Eq. 72 above). Mean-redshift errors 0.003–0.008, widths 4–9%,
+   |Δz| < 0.01 against photo-z in most of eleven bins [src: abstract].
+6. **Joint hierarchical posterior (HSC Y3).** A logistic Gaussian-process
+   prior on the binned n(z), built from photometry (DNNz) with a
+   cosmic-variance term, is combined with the CC likelihood and sampled
+   with elliptical slice sampling, marginalising b [src: arXiv:2211.16516,
+   Sect. 5.6]. Bin 3 is only partly calibrated and bin 4 not at all,
+   since CAMIRA LRGs stop at z < 1.2; a 2–3σ inconsistency near z ≈ 0.2,
+   where CAMIRA photo-z are known to be biased, is left for later work;
+   conservative priors are recommended [src: Sect. 5.6–5.7].
+7. **Splines or SGP on all bins (HSC × DESI).** With ELGs and QSOs the
+   four HSC bins are calibrated; relative to Rau et al. the two high bins
+   move to higher redshift, Δz₃ = −0.043 (+0.022/−0.020) and
+   Δz₄ = −0.050 ± 0.012, shifts considerably smaller than those found by
+   the HSC Y3 cosmic-shear analyses [src: arXiv:2511.18133, abstract].
+   With these priors HSC Y3 cosmic shear gives S8 = 0.804 (+0.019/−0.018)
+   against 0.769 (+0.031/−0.034), an error 1.8 times smaller [src:
+   arXiv:2511.18134, abstract].
 
 ### Step 7. Build a shear-ratio likelihood (DES Y3)
 <!-- key: step-7-build-a-shear-ratio-likelihood-des-y3 -->
@@ -232,6 +329,28 @@ reasons:
   MagLim), m per source bin, linear lens bias, five TATT parameters;
   magnification coefficients fixed [src: Sect. III.2.1].
 
+Other shear-ratio set-ups:
+
+- **HSC Y3 (Rana et al.).** Spectroscopic lenses from GAMA, SDSS and
+  DESI in fifteen narrow bins; sources in bins 2–4 behind z_l < 0.4
+  lenses and bins 3–4 behind z_l < 0.55; five logarithmic θ bins from
+  0.17′ to 137.5′ [src: arXiv:2508.21681, Sect. III]. The ratio is
+  modelled through Σ⁻¹_crit,eff^(i,j) / Σ⁻¹_crit,eff^(i,k) (Eqs. 10–11), in
+  which ΔΣ cancels [src: Sect. IV.1]. Gaussian Δz priors from Rau et al.
+  on bins 1–2, uniform on bins 3–4, Δm priors of σ = 0.01, four PSF
+  parameters [src: Sect. V]. Covariance from 300 random rotations of
+  source shapes, added to the measured signal rather than used alone to
+  avoid noise in the denominator; Hartlap-corrected total S/N 203; no
+  significant correlation with cosmic shear, so the two are combined
+  [src: Sect. VIII.1]. Blinded [src: abstract].
+- **KiDS, DES and HSC around BOSS (Emas et al.)** with a Bayesian
+  estimator to reduce the ratio bias [src: arXiv:2403.07313]; the
+  DESI-DR1 3×2pt validation fits new ratios with the cosmic-shear model
+  [src: arXiv:2510.05539].
+- **DES Y1 lensing ratios** with galaxy, SPT and Planck lensing, a
+  geometric test of cosmology rather than a redshift calibration [src:
+  arXiv:1810.02212].
+
 ## Choices and what they cost
 <!-- key: choices-and-what-they-cost -->
 
@@ -243,6 +362,9 @@ reasons:
 | Estimator | DP (one random catalogue) | LS (both) | availability of randoms for the photometric sample | arXiv:2510.23565, Sect. II.2.1 |
 | Systematics prior | centred on mock best fit | centred on zero, width = mock amplitude | how far the mock is trusted | arXiv:2510.23565, Sect. IV.1.1 |
 | Covariance | jackknife | analytic halo model | non-linear regime, HOD and non-Limber uncertainty favour jackknife | arXiv:2503.19440, Sect. 5.1 |
+| Reference sample | one photometric LRG sample with modelled photo-z errors, z < 1.2 (HSC Y3) | DESI BGS, LRG, ELG, QSO (HSC × DESI; DESI DR1 cross-survey) | redshift reach (bins 3–4) and photo-z error of the reference | arXiv:2211.16516, Sect. 5.6; arXiv:2511.18133, abstract |
+| Bias assumption | linear bias per slice | constant cross-correlation coefficient within a bin | how far to small scales one may go | arXiv:2511.18133, Sect. 3.1 |
+| Combination with photometry | template shift or importance weights (KiDS, DES) | joint hierarchical posterior (HSC Y3) | whether the CC likelihood and the photometric prior enter one inference | arXiv:2211.16516, Sect. 5.6 |
 
 Compared on the same mock: on MICE2, fitting KiDS CCs with the true n(z)
 gives ⟨D_z⟩ within 0.01 of zero (except bin six) with scatter 0.005 in
@@ -253,6 +375,21 @@ Sect. 6.2.2]. On real DES Y6 data, Fid (1.5–5 Mpc) and LS (5–15 Mpc) n(z)
 agree within the systematic-function freedom; SS (0.1–1.5 Mpc) n(z)
 differ by much more than their small errors [src: arXiv:2510.23565,
 Sect. IV.2.2, App. D].
+
+Compared across surveys with one reference: DESI DR1 clustering
+redshifts agree with the SOM-calibrated n(z) of DES Y3, KiDS-1000 and
+HSC within uncertainties in every tomographic bin [src:
+arXiv:2512.15963, abstract]. Compared within HSC: the photometric and
+CAMIRA-CC posterior means agree in the first three bins with mild tension
+in the first [src: arXiv:2211.16516, Sect. 5.7]; the shear-ratio Δz₂–Δz₄
+agree with the cosmic-shear self-calibration, with a mild Δz₃–Δz₄ shift
+that disappears with DESI-DR1 lenses only, attributed to the
+heterogeneous lens depth [src: arXiv:2508.21681, abstract]; the DESI
+clustering shifts are smaller than the cosmic-shear ones [src:
+arXiv:2511.18133, abstract]. Shear ratios add to cosmic shear less than
+an accurate photo-z prior on the mean source redshift does, and their
+S8 gain (up to 34%) shrinks when combined with full 3×2pt [src:
+arXiv:2403.07313, abstract].
 
 ## Numbers
 <!-- key: numbers -->
@@ -275,6 +412,15 @@ Sect. IV.2.2, App. D].
 | Shear-ratio set | 3 lens bins × 3 ratios over source bin 4; 2–6 h⁻¹ Mpc | DES Y3 | arXiv:2105.13542 | Sect. IV.1.1–IV.1.2 |
 | Shear-ratio covariance | 10⁵ realisations | DES Y3 | arXiv:2105.13542 | Sect. IV.1.4 |
 | SR data vs 3×2pt best fit | χ²/ndf 11.3/9 (redMaGiC), 18.8/9, p = 0.03 (MagLim; threshold 0.01) | DES Y3 | arXiv:2105.13542 | Fig. 4 caption |
+| KiDS-1000 scales; SOM + CC error | 100 kpc–1 Mpc (earlier), 30–300 and 50–500 kpc explored; ⟨z⟩ errors ~0.01–0.02 | KiDS-1000 | arXiv:2007.15635 | Sect. 4.1.1; abstract |
+| DES Y3 lens WZ | ⟨z⟩ errors 0.003–0.008, width 4–9%; micro-bins dz = 0.02 | DES Y3 redMaGiC, MagLim | arXiv:2012.12826 | abstract; Sect. 4.2 |
+| HSC Y3 WZ | 0.1–1.0 Mpc; 10 CAMIRA error-model catalogues; LRG z < 1.2 (no bin-4 CC) | HSC Y3 | arXiv:2211.16516 | Sect. 5.5–5.6 |
+| HSC × DESI | 0.3–3 h⁻¹ Mpc, W ∝ r⁻¹; Δz₃ = −0.043, Δz₄ = −0.050 ± 0.012 vs Rau et al. | HSC PDR3, DESI DR1/DR2 | arXiv:2511.18133 | Sect. 3.1; abstract |
+| HSC Y3 S8 with DESI WZ priors | 0.804 (+0.019/−0.018) vs 0.769 (+0.031/−0.034) | HSC Y3 cosmic shear | arXiv:2511.18134 | abstract |
+| DESI DR1 cross-survey WZ | Δz = 0.05, 0.1 < z < 1.6; 60 jackknife regions; magnification priors 4.0 ± 2.0 | DES Y3, KiDS-1000, HSC Y1/Y3 | arXiv:2512.15963 | Sect. 4.2, 5.2 |
+| HSC Y3 shear ratios | S/N 59, 75, 62 (bins 2–4), total 203; 300 rotations; S8 = 0.773 ± 0.031 with cosmic shear | HSC Y3 | arXiv:2508.21681 | abstract; Sect. VIII.1 |
+| Shear ratio with cosmic shear | S8 improved up to 34% (KiDS, DES, HSC × BOSS) | three surveys | arXiv:2403.07313 | abstract |
+| DES Y1 lensing ratio amplitude | A = 1.1 ± 0.1 relative to ΛCDM | DES Y1 + SPT + Planck | arXiv:1810.02212 | abstract |
 
 ## What goes wrong
 <!-- key: what-goes-wrong -->
@@ -315,6 +461,18 @@ Sect. IV.2.2, App. D].
   large-scale ratios [src: arXiv:2105.13542, Sect. IV.1.2]. The MagLim
   ratio fit (p = 0.03) passed the 0.01 threshold set in advance [src:
   Fig. 4 caption].
+- **A photometric reference with its own photo-z errors** (CAMIRA LRGs)
+  leaves residual bias where those errors are known to be biased (the
+  z ≈ 0.2 tension) and cannot reach the highest bins [src:
+  arXiv:2211.16516, Sect. 5.6]. Test: draw the reference from its error
+  model several times and compare with a spectroscopic reference.
+- **Template shape under varying S/N.** A shift fit to a too-broad or
+  too-narrow template biases the mean when S/N changes across the peak
+  [src: arXiv:2007.15635, Sect. 4.1.3]. Test: the toy model of its
+  App. A, or fit shift and stretch.
+- **Heterogeneous lens depth in shear ratios** shifts the Δz₃–Δz₄ plane
+  [src: arXiv:2508.21681, abstract]. Test: repeat with a single
+  homogeneous lens sample.
 
 ## Reading list
 <!-- key: reading-list -->
@@ -337,6 +495,23 @@ Sect. IV.2.2, App. D].
   model used in the fit drives the bias (summary in L2).
 - Method: Sánchez et al. 2022, arXiv:2105.13542 — shear-ratio
   construction, scale cuts, covariance by realisations.
+- Method: Hildebrandt et al. 2020, arXiv:2007.15635, Sect. 4 — KiDS-1000
+  CC with yet_another_wizz, SOM template shifts and the S/N argument.
+- Method: Cawthon et al. 2020, arXiv:2012.12826 — DES Y3 lens WZ, bias
+  correction from micro-bins, shift and stretch.
+- Code: Morrison et al. 2016, arXiv:1609.09085 — the-wizz.
+- Application: Rau et al. 2022, arXiv:2211.16516, Sect. 5.5–5.7 — HSC Y3
+  joint hierarchical posterior with a photometric LRG reference.
+- Application: Choppin de Janvry et al. 2025, arXiv:2511.18133 and
+  arXiv:2511.18134 — HSC with DESI references, constant
+  cross-correlation coefficient, effect on S8.
+- Application: Ruggeri et al. 2025, arXiv:2512.15963 — one DESI
+  reference for DES, KiDS and HSC, magnification and bias marginalised.
+- Method: Rana et al. 2025, arXiv:2508.21681 — HSC Y3 shear-ratio
+  calibration of Δz; Emas et al. 2024, arXiv:2403.07313 and 2025,
+  arXiv:2510.05539 — shear ratios across KiDS, DES, HSC with BOSS and
+  DESI; Prat et al. 2018, arXiv:1810.02212 — lensing ratios with CMB
+  lensing.
 
 ## Not verified
 <!-- key: not-verified -->
@@ -353,6 +528,13 @@ Sect. IV.2.2, App. D].
   Fig. 8 caption of the same paper quotes f = 0.14 ± 0.04 for the data
   in bin six, against 0.07 ± 0.04 in Table 7; the difference is left
   unresolved.
-- A date-restricted search for 2025–2026 clustering-redshift papers was
-  rate-limited this session; papers after the DES Y6, KiDS-Legacy and
-  Euclid ones already in L2 may be missing.
+- A search on 2026-10-21 found the 2025 HSC × DESI and DESI DR1
+  cross-survey papers now included; no search restricted to 2026 was run,
+  so later papers may be missing.
+- Emas et al. 2024 and 2025 (arXiv:2403.07313, arXiv:2510.05539) and
+  Prat et al. (arXiv:1810.02212) were read in their abstracts only; the
+  form of the Bayesian ratio estimator was not read. The scale cuts of
+  the HSC Y3 shear-ratio analysis beyond the measured θ range were not
+  read.
+- The KiDS-1000 list of explored scales is cut in the rendering read
+  ("30–300 kpc, 50–500 kpc and 5…"); the remaining range was not read.

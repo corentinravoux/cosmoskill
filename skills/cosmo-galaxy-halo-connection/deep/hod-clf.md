@@ -6,7 +6,7 @@ or emulator; which statistic and binning; how the number density enters;
 priors; covariance; sampler and convergence), how the CLF variant is
 parametrised, and what each choice was found to cost when two were run on
 the same data.
-Snapshot: 2026-10-18.
+Snapshot: 2026-10-21.
 From: Wechsler & Tinker 2018, Sect. 2.2.3; Asgari et al. 2023, Sect. 4.1;
 DESI, eBOSS and SDSS clustering working groups.
 
@@ -42,8 +42,14 @@ into the satellite term with an independent cut-off M_0 and normalisation
 M_1′; M_min is the mass where ⟨N_cen⟩ = 0.5 and M_1 (≠ M_1′) the mass where
 ⟨N_sat⟩ = 1 (Zehavi et al. 2011, arXiv:1005.2413, Eq. 7) [src: Sect. II.3].
 Aemulus writes the satellites as (M/M_sat)^α exp(−M_cut/M) N_cen
-(arXiv:1804.05867, Eq. 7) [src]. Read which mass is called M_1 before
-comparing.
+(arXiv:1804.05867, Eq. 7) [src]. DES Y3 writes ⟨N_c⟩ = (f_cen/2)[1 +
+erf((log M_h − log M_min)/σ_log M)] and ⟨N_s⟩ = ⟨N_c⟩(M_h/M_1)^α with no
+cut-off; f_cen, for redMaGiC only, multiplies centrals and satellites and
+is fully degenerate with M_1 (arXiv:2106.08438, Eqs. 1–2) [src: Sect. 2.1].
+The DESI BGS One-Percent fit (Pearl et al.) uses the SDSS form with log M_0
+reparametrised as Q_0 ∈ [0, 1] between log M_min and log M_1
+(arXiv:2309.08675, Eqs. 1–3) [src: Sect. II.2.2]. Read which mass is
+called M_1 before comparing.
 
 Phase-space parameters in current use [src: arXiv:2306.06314, Sect. 4.1,
 Eqs. 7–8]: central line-of-sight velocity v_cent,z = v_L2,z + α_vel,c
@@ -64,7 +70,16 @@ have no physical motivation; they describe the SDSS group-catalogue CLF
 [src: Sect. 3.2]. An HOD follows from the CLF by integrating over
 luminosity; the CLF "typically requires stronger prior assumptions", while a
 five-parameter HOD is already flexible enough for luminosity-threshold
-samples [src: arXiv:1005.2413, Sect. II.3].
+samples [src: arXiv:1005.2413, Sect. II.3]. KiDS-1000 uses the stellar-mass
+version (CSMF, after Yang et al. 2008): the same central and satellite
+shapes in M_⋆, M*_s = 0.56 M*_c, log φ*_s = b_0 + b_1 log m_13 (no quadratic
+term), σ_c and α_s independent of halo mass, and a mass-dependent Poisson
+parameter 𝒫(M) = ⟨N_s(N_s − 1)⟩/⟨N_s⟩² for the satellite–satellite term
+(arXiv:2210.03110, Eqs. 16–25) [src: Sect. 2.2]. Halotools (Hearin et al.
+2017, arXiv:1606.04106) implements HOD, CLF, abundance matching and
+assembly-bias variants as interchangeable components populating a halo
+catalogue, with mock clustering, lensing and group statistics [src:
+abstract]; the DESI BGS fit runs on it.
 
 ### Step 2. Choose the prediction engine
 <!-- key: step-2-choose-the-prediction-engine -->
@@ -78,6 +93,10 @@ samples [src: arXiv:1005.2413, Sect. II.3].
 | Tabulation | pre-computed halo–halo, halo–particle, particle–particle w_p per mass-bin pair, weighted by the HOD (Eqs. 14–16) | DESI One-Percent, mass-only HOD on w_p + n_z | arXiv:2306.06314, App. A |
 | GP surrogate of χ² | 20 mocks per point, mean χ² and its error fed to a Gaussian process, refined iteratively | DESI One-Percent ELG | arXiv:2306.06319, Sect. 5.1 |
 | GP emulator of the statistic over cosmology + HOD | 15 inputs; trained on 2000 HOD designs over N-body cosmologies | Aemulus | arXiv:1804.05867, Sect. III |
+| Same, applied | ξ_0, ξ_2, w_p at 0.1–60 h⁻¹Mpc with a halo-velocity scaling γ_f | Aemulus V, BOSS | arXiv:2203.08999, abstract |
+| Analytic halo model + CSMF | SMF, ΔΣ and w_p with non-linear halo bias β^NL from an emulator, updated from the median walker position rather than at each step | KiDS-1000 | arXiv:2210.03110, Sects. 2.2, 3.6 |
+| Halo model for γ_t | HOD + halo model, with satellite stripping, point mass, magnification and IA terms, to ~100 kpc | DES Y3 redMaGiC, MagLim | arXiv:2106.08438, abstract, Sect. 3 headings, Sect. 6 |
+| Pretabulation (galtab) | Halotools HOD on SMDPL (400 h⁻¹Mpc); CiC predicted from placeholder galaxies, Monte Carlo or analytic mode, GPU-portable | DESI One-Percent BGS | arXiv:2309.08675, Sects. II.3, III.4–III.6 |
 
 Direct population runs fast enough to sample with: on one 32-core node,
 populating a downsampled AbacusSummit box at CMASS density takes 0.17 s and
@@ -100,6 +119,9 @@ only for the mass-only model on w_p [src: arXiv:2306.06314, App. A].
 | DESI One-Percent ELG | w_p, ξ_0, ξ_2 | w_p: 17 log bins 0.04–32 h⁻¹Mpc, π ± 40; multipoles: 27 log bins 0.17–32 h⁻¹Mpc | arXiv:2306.06319, Sect. 2.1 |
 | AbacusHOD CMASS | w_p, then ξ(r_p, π) | ξ: 8 log r_p bins 0.169–30, 6 linear π bins 0–30 h⁻¹Mpc | arXiv:2110.11412, Sect. 4.4 |
 | HSC-Y1 × SDSS | w_p and ΔΣ, no n̄_g | w_p 16 bins 2–30, ΔΣ 9 bins 3–30 h⁻¹Mpc; 75 points for three samples | arXiv:2111.02419, Sect. IV.2 |
+| DESI One-Percent BGS | n_gal, w_p, counts-in-cylinders P(N_CiC) | w_p: 12 log bins 0.158–39.81 h⁻¹Mpc, π_max = 40; cylinders R = 2, half-length 10 h⁻¹Mpc; 28 N_CiC bins | arXiv:2309.08675, Sects. II.3, II.3.1 |
+| DES Y3 | γ_t per lens–source bin pair, plus n̄_g for redMaGiC | 30 angular bins per pair, down to ~100 kpc | arXiv:2106.08438, Sects. 5.2, 6 |
+| KiDS-1000 | SMF, ΔΣ, w_p jointly | full covariance with cross-terms | arXiv:2210.03110, Sect. 3.6 |
 
 Why ξ(r_p, π): its r_p dependence traces the one- to two-halo transition
 and its π dependence the velocities and fingers of God; w_p is "strictly
@@ -109,6 +131,10 @@ stopped at 32 h⁻¹Mpc: to capture the one-halo regime and the transition
 "while limiting our exposure to large scale modes due to the small
 footprint" [src: same]. Why SDSS dropped two large-r_p points: they add
 cost but change results insignificantly [src: arXiv:1606.07817, Sect. 2.3].
+Why counts-in-cylinders: 2 h⁻¹Mpc cylinders mainly count intra-halo
+neighbours, so they probe satellite occupation and assembly bias; w_p could
+be replaced by ξ_0 and ξ_2 "at the expense of additional degrees of
+freedom" [src: arXiv:2309.08675, Sect. II.3].
 
 ### Step 4. Put in the number density
 <!-- key: step-4-put-in-the-number-density -->
@@ -131,8 +157,16 @@ Three treatments:
    factor; M_1 is fixed to 10¹³ h⁻¹M_⊙ because it is degenerate with A_s
    and α [src: arXiv:2306.06319, Sect. 3.3].
 
+4. Density as one entry of the data vector: DES Y3 appends n̄_g to the
+   redMaGiC γ_t vector with its variance on the diagonal, which "effectively
+   serves as a prior", and leaves it out for MagLim [src: arXiv:2106.08438,
+   Sect. 6]; the BGS fit puts n_gal (inverse-probability weighted) inside
+   the jackknife covariance with w_p and CiC [src: arXiv:2309.08675, Sects.
+   II.3, II.3.1].
+
 HSC-Y1 × SDSS uses no abundance term at all [src: arXiv:2111.02419, Sect.
-IV.2].
+IV.2]; KiDS-1000 fits the stellar mass function itself [src:
+arXiv:2210.03110, Sect. 3.6].
 
 ### Step 5. Build the covariance
 <!-- key: step-5-build-the-covariance -->
@@ -158,6 +192,15 @@ IV.2].
   current point and the cosmic variance from 48 sub-cubes of 1 h⁻¹Gpc,
   χ² = Δᵀ[C_data/(1 − D_data) + C_model/(1 − D_model)]⁻¹Δ with D the Hartlap
   factor of each part (arXiv:2306.06319, Eq. 11) [src].
+- **Jackknife with Hartlap, lensing.** DES Y3: 150 k-means patches at least
+  as large as the largest angular scale; N_θ/N_JK = 0.2, Hartlap factor
+  applied; the authors note that it unbiases C⁻¹ but can still inflate the
+  intervals [src: arXiv:2106.08438, Sect. 5.2].
+- **Few regions, pseudo-inverse.** DESI BGS: 20 jackknife regions, "somewhat
+  noisy" but smaller regions would break independence and cut CiC edges;
+  the Moore–Penrose pseudo-inverse handles the singular matrix, after
+  rescaling to unit diagonal so that n_gal is not lost to machine precision
+  [src: arXiv:2309.08675, Sects. II.3.1, IV].
 
 ### Step 6. Sample and check convergence
 <!-- key: step-6-sample-and-check-convergence -->
@@ -170,6 +213,9 @@ IV.2].
 | DESI One-Percent LRG/QSO | dynesty, after optimisation | Gaussian priors with bounds | arXiv:2306.06314, Sect. 6.1 |
 | DESI One-Percent ELG | GP surrogate + MCMC | 800 Hammersley points, then 800 iterations; converged when the KL divergence between successive chains is < 0.1 for 20 consecutive iterations, after removing points whose GP χ² error exceeds 10 | arXiv:2306.06319, Sect. 5.1 |
 | HSC-Y1 × SDSS | MultiNest | nestcheck; four seeds give S8, σ8, Ω_m scatter < ~0.1% of the central values (< ~2% of σ) | arXiv:2111.02419, App. D |
+| DES Y3 γ_t | MultiNest | Hartlap-corrected Gaussian likelihood | arXiv:2106.08438, Sect. 6 |
+| KiDS-1000 | emcee, stretch and KDE moves mixed 50/50 | more walkers, shorter autocorrelation times | arXiv:2210.03110, Sect. 3.6 |
+| DESI One-Percent BGS | emcee, 20 walkers × 3000 iterations, burn-in 2000 trial points | autocorrelation 100–300, about half that of Monte Carlo CiC; deterministic likelihood | arXiv:2309.08675, Sect. IV |
 
 The acceptance rule of the SDSS DR7 code as printed lacks the factor ½ of
 a likelihood ∝ exp(−χ²/2) [der: compare arXiv:1005.2413, Sect. II.3 with
@@ -190,6 +236,8 @@ Eq. 8 there]; a reader reproducing it should check which was used.
 | DESI One-Percent QSO | log M_cut N(12.7, 1) in [11.2, 14]; log M_1 N(15.0, 1) in [12, 16]; σ N(0.5, 0.5) in [0, 3]; α N(1.0, 0.5) in [0.3, 2]; κ N(0.5, 0.5) in [0.3, 3]; α_c N(1.5, 1.0) in [0, 2]; α_s N(0.2, 1.0) in [0, 2] | same | arXiv:2306.06314, Table 2 |
 | HSC-Y1 × SDSS | ω_b BBN Gaussian; n_s Planck mean with 3 × its σ; Ω_de, ω_c flat over the emulator range (~±30σ, ±15σ of Planck); α_mag Gaussian width 0.5 | 25 parameters in all | arXiv:2111.02419, Sect. IV.2 |
 | SDSS CLF | uniform on Ω_m, σ8 and all CLF parameters; WMAP7 covariance on Ω_b h², n_s, h; Gaussian nuisances | — | arXiv:1207.0503, Sect. 4 |
+| DESI One-Percent BGS | uniform: log M_min [9, 16], σ_log M [10⁻⁵, 5], log M_1 [10, 16], Q_0 [0, 1], α [10⁻⁵, 5], A_cen, A_sat [−1, 1] | wide; only the upper A_cen bound matters | arXiv:2309.08675, Sect. II.2.2 |
+| DES Y3 redMaGiC | HOD priors from earlier red-galaxy work; flat [0, 0.2] satellite prior in the highest-z bin | Gaussian Δz, m priors | arXiv:2106.08438, Sect. 6 |
 
 What the prior does: on DESI LRGs at 0.6 < z < 0.8, Gaussian priors tighten
 mainly the satellite parameters (log M_1, α, κ), "help to eliminate isolated
@@ -210,7 +258,15 @@ bias and f_sat as a more orthogonal basis [src: arXiv:2110.11412, Sect.
 maximum likelihood against a posterior median 0.26, so the maximum-
 likelihood point may be "a relative outlier" [src: Sect. 5.2, Table 1].
 ξ(r_p, π) "gives much tighter constraints on parameters and breaks multiple
-parameter degeneracies" [src: Fig. 5 caption].
+parameter degeneracies" [src: Fig. 5 caption]. On DESI BGS, adding CiC
+to n_gal and w_p "drastically" tightens the HOD; without CiC the fit
+yields "very little information about assembly bias" [src:
+arXiv:2309.08675, abstract, Fig. 6 caption]. Aemulus V fits ξ_0, ξ_2 and
+w_p down to 0.1 h⁻¹Mpc and finds fσ8 = 0.413 ± 0.031, 0.470 ± 0.026,
+0.396 ± 0.022 at z = 0.25, 0.4, 0.55, lower than Planck ΛCDM by 1.9σ,
+0.3σ, 3.4σ; the authors "cannot rule out an unknown systematic error in
+the galaxy bias model at non-linear scales" [src: arXiv:2203.08999,
+abstract].
 
 ### Direct population or surrogate
 <!-- key: direct-population-or-surrogate -->
@@ -236,7 +292,10 @@ Sect. III, abstract].
 The analytic halo model with exclusion and scale-dependent bias is accurate
 to ~10% on w_p (SDSS DR7) [src: arXiv:1005.2413, Sect. II.3]; the CLF
 analysis puts no model error into the likelihood on that basis [src:
-arXiv:1207.0503, Sect. 4]. Simulation-based population inherits the
+arXiv:1207.0503, Sect. 4]. KiDS-1000 adds non-linear halo bias, exclusion,
+scale-dependent galaxy bias and baryon feedback to the halo model and gets
+S8 = 0.773 (+0.028/−0.030), comparable to 3×2pt analyses with cosmic shear
+[src: arXiv:2210.03110, abstract]. Simulation-based population inherits the
 simulation cosmology and snapshot; the ELG fits in two alternative
 AbacusSummit cosmologies (high N_eff, low σ8) fit equally well, shift log₁₀M_c
 and f_σv by 1–2σ, and move the mean halo mass by at most 2.7σ (0.08 dex),
@@ -253,7 +312,13 @@ conformity by default [src: arXiv:2110.11412, Sect. 2.1; arXiv:2306.06314,
 Sect. 4.1]. The ELG GP pipeline instead draws satellites from an NFW
 profile with r_25 as r_s proxy, truncated at r_98 as r_vir proxy, chosen
 because it reproduces the clustering of particle-based placement [src:
-arXiv:2306.06319, Sect. 5.1, App. A].
+arXiv:2306.06319, Sect. 5.1, App. A]. The BGS fit draws satellites from
+the host NFW profile, centrals at the centre, Bernoulli and Poisson counts
+[src: arXiv:2309.08675, Sect. II.2.2]; DES Y3 frees a = c_sat/c_dm and
+models tidal stripping of satellite haloes for γ_t [src: arXiv:2106.08438,
+Sect. 6 and the Sect. 3.3 heading]; KiDS-1000 frees the satellite Poisson parameter and prefers
+sub-Poisson variance, reduced χ² better by 0.18 [src: arXiv:2210.03110,
+abstract].
 
 ## Numbers
 <!-- key: numbers -->
@@ -276,6 +341,13 @@ arXiv:2306.06319, Sect. 5.1, App. A].
 | Emulator accuracy | 0.9% (w_p, 1–10 h⁻¹Mpc); training 2000 HOD designs | Aemulus III | arXiv:1804.05867 | Sect. III |
 | Cosmology swap | log ⟨M_h⟩ shift ≤ 0.08 dex (2.7σ) | DESI ELG | arXiv:2306.06319 | Sect. 9 |
 | Sampler reproducibility | < ~2% of σ across four seeds | HSC-Y1 × SDSS | arXiv:2111.02419 | App. D |
+| Jackknife regions | 150 (k-means), N_θ/N_JK = 0.2 | DES Y3 γ_t | arXiv:2106.08438 | Sect. 5.2 |
+| Jackknife regions | 20, pseudo-inverse | DESI One-Percent BGS | arXiv:2309.08675 | Sect. II.3.1 |
+| Chain | 20 walkers × 3000 iterations; autocorrelation 100–300 | DESI One-Percent BGS | arXiv:2309.08675 | Sect. IV |
+| Central assembly bias | positive at 99.9% (M_r < −20.0) and 99.5% (< −20.5), z ~ 0.15 | DESI One-Percent BGS, with CiC | arXiv:2309.08675 | abstract |
+| Typical halo mass | log M_h ≈ 13.7 (redMaGiC), 13.3–13.5 (MagLim), ~15% precision; f_sat 0.1–0.2 and 0.1–0.3 | DES Y3 γ_t | arXiv:2106.08438 | abstract |
+| S8 from SMF + ΔΣ + w_p | 0.773 (+0.028/−0.030) | KiDS-1000 CSMF halo model | arXiv:2210.03110 | abstract |
+| fσ8 from ξ_0, ξ_2, w_p (0.1–60 h⁻¹Mpc) | 0.413 ± 0.031, 0.470 ± 0.026, 0.396 ± 0.022 (z = 0.25, 0.4, 0.55) | Aemulus V, BOSS | arXiv:2203.08999 | abstract |
 
 ## What goes wrong
 <!-- key: what-goes-wrong -->
@@ -307,6 +379,12 @@ arXiv:2306.06319, Sect. 5.1, App. A].
   σ forces the satellite and central amplitudes; one-sided terms allow
   incompleteness. Test: rerun with the alternative treatment and report
   f_ic.
+- **Too few jackknife regions for a long data vector.** With 20 regions
+  and 41 statistics (1 + 12 + 28 [der: from Sect. II.3.1]) the matrix is
+  singular; the BGS fit uses a pseudo-
+  inverse and unit-diagonal rescaling [src: arXiv:2309.08675, Sect. IV];
+  DES Y3 keeps N_θ/N_JK = 0.2 and applies Hartlap [src: arXiv:2106.08438,
+  Sect. 5.2]. Test: report the ratio of data points to regions.
 - **Velocity-bias sign.** α_vel,c is defined non-negative because ± are
   degenerate [src: arXiv:2306.06314, Sect. 4.1]; a posterior piled at 0 is
   a boundary effect, not a measurement of zero.
@@ -330,6 +408,15 @@ arXiv:2306.06319, Sect. 5.1, App. A].
   emulator design and accuracy.
 - Application, emulator at equation level: Miyatake et al. 2022,
   arXiv:2111.02419 — Dark Emulator HOD, priors, MultiNest convergence.
+- Application, BGS: Pearl et al. 2024, arXiv:2309.08675 — DESI One-Percent
+  BGS HOD with counts-in-cylinders, galtab, pseudo-inverse covariance.
+- Application, lensing: Zacharegkas et al. 2022, arXiv:2106.08438 — DES Y3
+  HOD from small-scale γ_t, jackknife + Hartlap, MultiNest.
+- Application, CSMF: Dvornik et al. 2023, arXiv:2210.03110 — KiDS-1000
+  CSMF halo model with SMF, ΔΣ, w_p; sampler; sub-Poisson satellites.
+- Application, emulator: Zhai et al. 2023, arXiv:2203.08999 — Aemulus V on
+  BOSS ξ_0, ξ_2, w_p.
+- Code: Hearin et al. 2017, arXiv:1606.04106 — Halotools.
 - Critique: Hadzhiyska et al. 2020, arXiv:1911.02610 — the mass-only HOD
   misses 15% of large-scale clustering in TNG300 (see `deep/assembly-bias.md`).
 
@@ -340,6 +427,11 @@ arXiv:2306.06319, Sect. 5.1, App. A].
   Neistein et al. 2011 (tabulation), Zhang et al. 2022 (tabulation for
   AbacusSummit) and Norberg et al. (jackknife tests) are cited in the papers
   read; not read, no identifiers recorded.
+- Aemulus V (arXiv:2203.08999): only the abstract was usable; its HOD
+  parameters, covariance and emulator error were not located in the
+  rendering. Halotools: abstract only.
+- Searched for a DESI DR1 BGS HOD fit beyond arXiv:2512.15962 and
+  arXiv:2309.08675: none found by title or abstract.
 - The header row of Table 2 of arXiv:2306.06314 was not rendered; the
   assignment of the columns to LRG and QSO prior and bounds is inferred
   from its caption and layout.

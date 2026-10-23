@@ -133,3 +133,8 @@ Guo2017	1706.04599	Guo	2017	On Calibration of Modern Neural Networks	foundation
 PerreaultLevasseur2017	1708.08843	Perreault Levasseur	2017	Uncertainties in Parameters Estimated with Neural Networks: Application to Strong Gravitational Lensing	method
 Hortua2019	1911.08508	Hortua	2019	Parameters Estimation for the Cosmic Microwave Background with Bayesian Neural Networks	method
 Liao2026	2602.07651	Liao	2026	Cosmology with one galaxy: An analytic formula relating $Ω_{\rm m}$ with galaxy properties	critique
+Bayer2025	2505.13620	Bayer	2025	Field-Level Comparison and Robustness Analysis of Cosmological N-body Simulations	systematics
+Ntampaka2025	2510.09748	Ntampaka	2025	The Importance of Being Adaptable: An Exploration of the Power and Limitations of Domain Adaptation for Simulation-Based Inference with Galaxy Clusters	critique
+Garuda2026	2603.12380	Garuda	2026	HaloFlow II: Robust Galaxy Halo Mass Inference with Domain Adaptation	method
+Tregidga2025	2511.09660	Tregidga	2025	Measuring the Dark Matter Self-Interaction Cross-Section with Deep Compact Clustering for Robust Machine Learning Inference	method
+Pierre2025	2507.03086	Pierre	2025	Mitigating Model Misspecification in Simulation-Based Inference for Galaxy Clustering	method

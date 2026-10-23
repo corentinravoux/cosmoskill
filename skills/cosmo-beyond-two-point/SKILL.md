@@ -86,7 +86,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 6k; methods 19k; results 9k; surveys 4k; systematics 12k; deep/emulator-summary-statistics 6k; deep/field-level-inference 7k; deep/simulation-based-inference 6k; deep/void-finding-size-function 8k; deep/void-galaxy-rsd-ap 8k; deep/void-lensing-cmb 6k.
+Sizes, in thousands of tokens: L1 3k; open 6k; methods 19k; results 9k; surveys 4k; systematics 12k; deep/emulator-summary-statistics 9k; deep/field-level-inference 7k; deep/simulation-based-inference 6k; deep/void-finding-size-function 10k; deep/void-galaxy-rsd-ap 8k; deep/void-lensing-cmb 6k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

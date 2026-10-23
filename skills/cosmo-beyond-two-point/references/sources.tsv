@@ -239,3 +239,21 @@ PerezSar2026	2605.22630	Pérez Sar	2026	Towards precision cosmology with Void x 
 Johnson2014	1404.3799	Johnson	2014	The 6dF Galaxy Velocity Survey: Cosmological constraints from the velocity power spectrum	results
 Adams2017	1706.05205	Adams	2017	Improving constraints on the growth rate of structure by modelling the density-velocity cross-correlation in the 6dF Galaxy Survey	method
 Lai2023	2209.04166	Lai	2023	Using peculiar velocity surveys to constrain the growth rate of structure with the wide-angle effect	method
+Ronconi2017	1703.07848	Ronconi	2017	Cosmological exploitation of cosmic void statistics - New numerical tools in the CosmoBolognaLib to extract cosmological constraints from the void size function	code
+Lehman2025	2502.05262	Lehman	2025	Cosmological Inference with Cosmic Voids and Neural Network Emulators	method
+Kreisch2022	2107.02304	Kreisch	2021	The GIGANTES dataset: precision cosmology from voids in the machine learning era	data
+Bayer2021	2102.05049	Bayer	2021	Detecting Neutrino Mass by Combining Matter Clustering, Halos, and Voids	forecast
+Salcedo2025	2504.08221	Salcedo	2025	Multiprobe cosmology forecasts from halo-occupation-distribution-based forward modeling of galaxy and void statistics	forecast
+Liu2026tess	2606.21864	Liu	2026	Optimization of Tessellation-based Statistics: Void Statistics	method
+MonllorBerbegal2026	2610.18348	Monllor-Berbegal	2026	Structure and evolution of cosmic voids within DESI DR1	data
+Song2024	2402.05492	Song	2024	Cosmological Forecast of the Void Size Function Measurement from the CSST Spectroscopic Survey	forecast
+Verza2022	2212.09740	Verza	2022	DEMNUni: disentangling dark energy from massive neutrinos with the void size function	forecast
+Zhai2023	2203.08999	Zhai	2022	The Aemulus Project V: Cosmological constraint from small-scale clustering of BOSS galaxies	results
+StoreyFisher2022	2210.03203	Storey-Fisher	2022	The Aemulus Project VI: Emulation of beyond-standard galaxy clustering statistics to improve cosmological constraints	method
+Chapman2022	2106.14961	Chapman	2021	The completed SDSS-IV extended Baryon Oscillation Spectroscopic Survey: measurement of the growth rate of structure from the small-scale clustering of the luminous red galaxy sample	results
+Miyatake2022	2111.02419	Miyatake	2021	Cosmological inference from the emulator based halo model II: Joint analysis of galaxy-galaxy weak lensing and galaxy clustering from HSC-Y1 and SDSS	results
+Miyatake2023	2304.00704	Miyatake	2023	Hyper Suprime-Cam Year 3 Results: Cosmology from Galaxy Clustering and Weak Lensing with HSC and SDSS using the Emulator Based Halo Model	results
+Nishimichi2019	1811.09504	Nishimichi	2018	Dark Quest. I. Fast and Accurate Emulation of Halo Clustering Statistics and Its Application to Galaxy Clustering	method
+Kobayashi2022	2110.06969	Kobayashi	2021	Full-shape cosmology analysis of SDSS-III BOSS galaxy power spectrum using emulator-based halo model: a $5\%$ determination of $σ_8$	results
+Gao2026aemulus	2601.12976	Gao	2026	Joint analysis of small-scale galaxy clustering and galaxy--galaxy lensing from BOSS galaxies	results
+Pinon2025	2501.14638	Pinon	2025	A theoretical approach to density-split clustering	method

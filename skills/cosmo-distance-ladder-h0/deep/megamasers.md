@@ -4,8 +4,11 @@ Scope: how a maser-disc distance is fitted from VLBI spot catalogues (data,
 warped Keplerian model, error floors, priors, outliers, sampling) and how
 the disc distances become an H0 (velocity likelihood, flow model, distance
 prior, selection), with the choices that separate the three current
-megamaser values.
-Snapshot: 2026-10-17.
+megamaser values, and how the NGC 4258 distance is used and tested by the
+ladders downstream. The disc data come from one consortium (MCP and the
+NGC 4258 VLBI team); the modelling, the flow corrections and the anchor
+tests have independent groups, cited per step.
+Snapshot: 2026-10-22.
 From: Verde et al. 2023 review (arXiv:2311.13305), Sects. 2.2.5 and 2.4.4;
 Freedman & Madore 2023 (arXiv:2309.05618), Sect. 8.2; Megamaser Cosmology
 Project (arXiv:2001.09213).
@@ -38,6 +41,19 @@ velocity, and high-velocity masers on the disc midline shifted by several
 hundred km s⁻¹ to either side [src: arXiv:2001.09213, Sect. 2, footnote].
 Accelerations are measured for only a subset of spots [src:
 arXiv:2609.17684, Sect. 3.1].
+
+The NGC 4258 fits of 2013 and 2019 use an averaged data set: spectra of
+many epochs reduced to one position, velocity and acceleration per
+velocity bin. Van der Boom & Kushnir call this the "single-orbit
+assumption" and reject it: a warped disc's near-side "bowl" amplifies
+systemic masers over radii of about 3.4–4.1 mas, so one velocity maps to
+several positions (ΔX ≈ 50 µas at 425 km s⁻¹ against an averaged error of
+≈ 2 µas), and the normalised residuals of the raw positions about the
+averaged ones are heavy-tailed, not N(0, 1) [src: arXiv:2601.14374,
+Sect. 3.1]. They add that maser lines are a few km s⁻¹ wide, so adjacent
+1 km s⁻¹ bins are not independent: the spectra hold fewer than 5
+blueshifted, about 10 redshifted and at most 40 systemic masers against
+the ~370 independent points implied [src: Sect. 3.2].
 
 ### Step 2. The warped Keplerian disc
 <!-- key: step-2-the-warped-keplerian-disc -->
@@ -92,6 +108,17 @@ truncated Gaussians 10 ± 5 µas (positions), 2 ± 1 km s⁻¹ (velocities),
 reanalysis uses the same centres and widths with explicit truncation
 bounds [src: arXiv:2609.17684, Table 2].
 
+Independent refit of the averaged NGC 4258 data [src: arXiv:2601.14374,
+Sect. 2.5]: with the 2013 fixed floors 7.277 ± 0.166 Mpc against the
+published 7.596 ± 0.167 (≈ 1.3σ) at χ²_ν ≈ 0.4, so those floors look
+"overly conservative"; with the 2019 fitted floors held fixed 7.551 ±
+0.072 Mpc but χ²_ν ≈ 1.4 (495 dof, chance probability ≈ 9 × 10⁻⁹); with
+free floors 7.547 ± 0.079 Mpc and χ²_ν ≈ 1.2, consistent with Reid et
+al. 2019. The authors warn that χ²_ν is not a valid goodness of fit once
+floors are fitted, and that the fitted high-velocity velocity floor
+exceeds the bin width while the systemic one is below it, which "hint[s]"
+at residual systematics [src: Sect. 2.5.3].
+
 ### Step 4. Priors and sampling
 <!-- key: step-4-priors-and-sampling -->
 
@@ -114,7 +141,13 @@ numerically (14 disc parameters), then samples with NUTS for the disc
 parameters inside a Metropolis-within-Gibbs scheme plus a "reflection
 move" between the two φ modes of each high-velocity spot; mode-finding
 from random starts is called "the central difficulty" [src:
-arXiv:2609.17684, Sect. 3.5].
+arXiv:2609.17684, Sect. 3.5]. Van der Boom & Kushnir also marginalise
+(r, φ) numerically per maser and sample the global parameters with
+dynesty (14 free parameters); they trace the 1.3σ gap to the 2013 value
+to the φ degeneracy of the high-velocity masers, and recover 7.58 ± 0.21
+Mpc when each maser is instead set at its likelihood-maximising (r, φ),
+which they suspect mimics the 2013 sampler [src: arXiv:2601.14374,
+Sect. 2.5.1].
 
 ### Step 5. Outlier rejection
 <!-- key: step-5-outlier-rejection -->
@@ -148,6 +181,20 @@ dynesty. Four velocity treatments:
 The M2000 outlier comes from Great Attractor infall applied to three hosts
 behind it, which adds 300–600 km s⁻¹ to their recession velocities [src:
 Sect. 3.4].
+
+Other treatments of the same six MCP distances:
+
+- Boruah, Hudson & Lavaux 2021: a volumetric distance prior and
+  marginalisation of the peculiar-velocity correction along each line of
+  sight, with the 2M++ reconstruction or a kernel-smoothed Tully–Fisher
+  field (SuperTF; 6dF not usable, all six hosts are northern); H0 = 69
+  (+2.9/−2.8) with 2M++ [src: arXiv:2010.01119, abstract, Sect. 6.3].
+  A uniform instead of volumetric prior biases distances low and H0 high,
+  by ~1 km/s/Mpc here [src: Sect. 6.3, Table 3].
+- Barua, Ramakrishnan & Desai 2025: frequentist profile likelihood over
+  the six velocity nuisance parameters gives 73.5 (+3.0/−2.9), within 0.2σ
+  of the MCP Bayesian 73.9 ± 3.0, with consistent intervals [src:
+  arXiv:2502.11998, abstract].
 
 2026 hierarchical form [src: arXiv:2609.17684, Sect. 3.4, Eq. 24]: each
 galaxy's distance posterior (kernel density, flat prior) is reweighted by
@@ -222,8 +269,8 @@ other; no reply was found in this run.
 ### Real-space or redshift-space evaluation
 <!-- key: real-space-or-redshift-space-evaluation -->
 
-Boruah et al. (2021, as described in the reanalysis) used the MCP
-distances with the linear field and obtained 70.1 ± 2.9 (uniform distance
+Boruah et al. (2021, arXiv:2010.01119; numbers as described in the
+reanalysis) used the MCP distances with the linear field and obtained 70.1 ± 2.9 (uniform distance
 prior) or 69.0 (+2.9/−2.8) (uniform in volume). Their shift from 73.9
 splits into ~2 from applying the field at all, ~0.6 from a prior flat in
 distance instead of the MCP flat prior on latent recession velocity, and
@@ -268,6 +315,59 @@ mass limit shifted the recovered distance by 3.6%, with tell-tale shifts
 of x₀ by ~0.2 mas, systemic velocity by ~40 km s⁻¹ and e by ~0.08; the
 fitted systemic velocity (474.3 ± 0.5 km s⁻¹, against 472 ± 4 from Hα) and
 e = 0.006 exclude an effect that large, so 1% was adopted [src: same].
+Van der Boom & Kushnir show that the averaging alone can also bias the
+distance and raise χ²_ν above 1 on synthetic data, an effect of the same
+kind as the 1% spiral-structure term [src: arXiv:2601.14374, Sect. 3.1].
+
+### Averaged bins or tracked maser components
+<!-- key: averaged-bins-or-tracked-maser-components -->
+
+Instead of averaged bins, van der Boom & Kushnir track individual maser
+components across epochs, which needs spatially resolved epochs, so most
+epochs are dropped. Their distances span about 6.7 to 8.1 Mpc depending
+on how components are selected; "visually and statistically robust fits
+can differ by several standard deviations", because the present cadence
+cannot follow intrinsically variable masers, and high-cadence monitoring
+is needed for this method to give an anchor [src: arXiv:2601.14374,
+abstract]. They do not propose a replacement distance. The 2026 MCP-data
+reanalysis keeps the averaged per-spot catalogues and refits NGC 4258 to
+7.558 ± 0.073 Mpc with an eccentric quadratic warp (above) [src:
+arXiv:2609.17684, Sect. 4.4].
+
+## Downstream: NGC 4258 as a ladder anchor
+<!-- key: downstream-ngc-4258-as-a-ladder-anchor -->
+
+How each ladder uses the maser distance is in L2
+(`results.md#one-step-routes-independent-of-the-ladder-and`); what tests
+it:
+
+- **Cepheids, SH0ES.** 669 HST Cepheids in NGC 4258 give a Wesenheit PL
+  zero point consistent with the LMC calibration to 0.032 ± 0.044 mag,
+  after a metallicity term of −0.20 ± 0.05 mag dex⁻¹ [src:
+  arXiv:2203.06681, abstract].
+- **Cepheids, critique.** On the earlier (R16) photometry, the LMC DEB
+  distance with SH0ES Cepheids places NGC 4258 at 6.98 Mpc against the
+  maser 7.58 Mpc, Δμ = 0.177 ± 0.051 mag (≈ 3.5σ, metallicity ignored);
+  NGC 4258 alone as anchor gives H0 = 72.0 ± 1.9 (no priors) or 70.3 ±
+  1.8 (slope prior), the LMC alone 76.5 ± 1.7 or 74.8 ± 1.6 [src:
+  arXiv:2007.10716, Sects. 3.1, 4.1]. The same paper notes that Miras
+  give μ_N4258 − μ_LMC = 10.95 ± 0.06, against 10.92 ± 0.04 from DEB +
+  maser, which tests his first explanation (an error in the geometric
+  distances) and passes it; the abstract proposes instead a 0.1–0.15 mag
+  bias in the SH0ES Cepheid PL intercepts and calls an independent
+  NGC 4258 distance "particularly critical" [src: Sect. 3.1, abstract].
+  With Gaia EDR3 parallaxes added the anchor tension grows: the
+  parallaxes and the LMC pull H0 up, the maser anchor down, so the
+  three-anchor fits are "statistically inconsistent" [src:
+  arXiv:2103.08723, Sect. 3]. The SH0ES Cepheid zero-point agreement
+  above uses the later photometry of 669 Cepheids.
+- **TRGB, CCHP.** Halo fields give F814W₀ = 25.347 ± 0.014 (stat) ±
+  0.042 (sys); with the maser distance M_F814W^TRGB = −4.050 ± 0.028 ±
+  0.048 mag, within 1% of the LMC DEB calibration [src: arXiv:2008.04181,
+  abstract].
+- **Blue supergiants.** The flux-weighted gravity–luminosity relation
+  gives m − M = 29.38 ± 0.12, in agreement with the maser distance [src:
+  arXiv:2411.07974, abstract].
 
 ## Numbers
 <!-- key: numbers -->
@@ -288,6 +388,15 @@ e = 0.006 exclude an effect that large, so 1% was adopted [src: same].
 | β for linear 2M++ | N(0.43, 0.02) | 2026 reanalysis | arXiv:2609.17684 | Sect. 3.4 |
 | Field lookup shift, NGC 5765b | ~400 km s⁻¹ | reanalysis of arXiv:2608.06247 | arXiv:2609.17684 | Sect. 5.1 |
 | Manticore realisations | 80 | arXiv:2608.06247 | arXiv:2608.06247 | Sect. 3 |
+| NGC 4258 distance, independent refit of averaged data | 7.277 ± 0.166 (2013 floors); 7.551 ± 0.072 (2019 floors fixed); 7.547 ± 0.079 Mpc (floors free) | van der Boom & Kushnir 2026 | arXiv:2601.14374 | Sect. 2.5 |
+| NGC 4258 distance, tracked components | ~6.7 to 8.1 Mpc across selections | van der Boom & Kushnir 2026 | arXiv:2601.14374 | abstract |
+| MCP H0, profile likelihood | 73.5 (+3.0/−2.9) | Barua et al. 2025 | arXiv:2502.11998 | abstract |
+| MCP distances, 2M++ LOS marginalisation, volumetric prior | 69 (+2.9/−2.8) | Boruah et al. 2021 | arXiv:2010.01119 | abstract |
+| NGC 4258 from LMC DEB + R16 Cepheids | 6.98 Mpc; Δμ = 0.177 ± 0.051 mag against the maser | Efstathiou 2020 | arXiv:2007.10716 | Sect. 3.1 |
+| H0, NGC 4258 sole anchor (R16 Cepheids) | 72.0 ± 1.9 (no priors); 70.3 ± 1.8 (slope prior) | Efstathiou 2020 | arXiv:2007.10716 | Sect. 4.1 |
+| TRGB zero point from the maser distance | M_F814W = −4.050 ± 0.028 (stat) ± 0.048 (sys) | CCHP, Jang et al. 2020 | arXiv:2008.04181 | abstract |
+| Cepheid PL zero point, NGC 4258 vs LMC | 0.032 ± 0.044 mag | SH0ES, Yuan et al. 2022 | arXiv:2203.06681 | abstract |
+| FGLR (blue supergiant) modulus | 29.38 ± 0.12 | Kudritzki et al. 2024 | arXiv:2411.07974 | abstract |
 
 ## What goes wrong
 <!-- key: what-goes-wrong -->
@@ -317,6 +426,11 @@ e = 0.006 exclude an effect that large, so 1% was adopted [src: same].
 - **Unmodelled disc structure.** Look for shifts in x₀, systemic velocity
   against an independent value, and eccentricity [src: arXiv:1307.6031,
   Sect. V.2.1].
+- **Averaged bins treated as independent spots.** Adjacent velocity bins
+  share one line; test: fit tracked components or synthetic averaged data
+  [src: arXiv:2601.14374, Sects. 3.1–3.2].
+- **χ²_ν read as fit quality with fitted floors.** Not χ²-distributed;
+  test on mock discs instead [src: arXiv:2601.14374, Sect. 2.5.3].
 
 ## Reading list
 <!-- key: reading-list -->
@@ -334,12 +448,26 @@ e = 0.006 exclude an effect that large, so 1% was adopted [src: same].
 - Application/critique: Stiskalek & Desmond 2026, arXiv:2609.17684 —
   spot-level refit, priors, selection, diagnosis of the other analyses.
 - Data: McAlpine et al. 2025, arXiv:2505.10682 — Manticore-Local field.
+- Independent NGC 4258 modelling: van der Boom & Kushnir 2026,
+  arXiv:2601.14374 — single-orbit critique, refits, component tracking.
+- Other flow and statistics treatments: Boruah et al. 2021,
+  arXiv:2010.01119 (Sect. 6.3); Barua et al. 2025, arXiv:2502.11998.
+- Anchor tests: Efstathiou 2020, arXiv:2007.10716 (Sects. 3–4); Yuan et
+  al. 2022, arXiv:2203.06681; Jang et al. 2020, arXiv:2008.04181;
+  Kudritzki et al. 2024, arXiv:2411.07974.
 
 ## Not verified
 <!-- key: not-verified -->
 
-- The MCP erratum (Pesce et al. 2026) and Boruah et al. (2021): described
-  through arXiv:2609.17684, not read; no identifier recorded.
+- The MCP erratum (Pesce et al. 2026): described through
+  arXiv:2609.17684, not read; no identifier recorded. Boruah et al. 2021
+  (arXiv:2010.01119) read at abstract and Sect. 6.3 only; its Table 3
+  values and its uniform-prior 70.1 are as quoted by arXiv:2609.17684.
+- Van der Boom & Kushnir 2026: Sect. 4 results and the cadence study
+  (Sect. 5) not read beyond the abstract; no reply by the NGC 4258 team
+  found.
+- SH0ES 2022 anchor-by-anchor H0 (arXiv:2112.04510): no HTML; not read
+  here.
 - The last steps of the reanalysis's reconciliation with arXiv:2608.06247
   (text cut off after the h-conversion step), and any reply by its
   authors.

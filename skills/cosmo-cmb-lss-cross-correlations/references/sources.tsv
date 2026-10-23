@@ -180,3 +180,29 @@ Lenz2019	1905.00426	Lenz	2019	Large-scale Maps of the Cosmic Infrared Background
 McCarthy2024cib	2405.13470	McCarthy	2024	Large-scale galactic-dust-cleaned cosmic infrared background maps from \textit{Planck} PR4 and HI4PI with \texttt{pyilc}	data
 McCarthy2022	2210.01049	McCarthy	2022	Constraints on primordial non-Gaussianity from halo bias measured through CMB lensing cross-correlations	results
 Maniyar2019	1809.04551	Maniyar	2019	Constraining cosmology with the cosmic microwave and infrared backgrounds correlation	critique
+Planck2016GNILC	1605.09387	Planck Collaboration	2016	Planck intermediate results. XLVIII. Disentangling Galactic dust emission and cosmic infrared background anisotropies	data
+Planck2013CIB	1309.0382	Planck Collaboration	2013	Planck 2013 results. XXX. Cosmic infrared background measurements and implications for star formation	results
+Tucci2016CIBfNL	1606.02323	Tucci	2016	Cosmic Infrared Background anisotropies as a window into primordial non-Gaussianity	forecast
+Jego2022CIBshear	2209.05472	Jego	2022	Constraining the physics of star formation from CIB-cosmic shear cross-correlations	results
+Yan2022CIBKiDS	2204.01649	Yan	2022	Cosmic star formation history with tomographic cosmic infrared background-galaxy cross-correlation	results
+Yan2023CIBunWISE	2310.10848	Yan	2023	The star formation, dust, and abundance of galaxies with unWISE-CIB cross-correlations	results
+Chiang2025CIBTomography	2504.05384	Chiang	2025	Cosmic Infrared Background Tomography and a Census of Cosmic Dust and Star Formation	results
+Maniyar2021CIBHalo	2006.16329	Maniyar	2020	Simple halo model formalism for the cosmic infrared background and its correlation with the thermal Sunyaev Zel'dovich effect	method
+Larsen2016CIBDelens	1607.05733	Larsen	2016	Demonstration of cosmic microwave background delensing using the cosmic infrared background	results
+Manzotti2017SPTpolDelens	1701.04396	Manzotti	2017	CMB Polarization B-mode Delensing with SPTpol and Herschel	results
+Yu2017MultitracerDelens	1705.02332	Yu	2017	Multitracer CMB delensing maps from Planck and WISE data	data
+BICEPKeck2020Delens	2011.08163	BICEP/Keck	2020	A Demonstration of Improved Constraints on Primordial Gravitational Waves with Delensing	results
+Nakato2026SPT3GTemplates	2608.06343	Nakato	2026	SPT-3G D1: Foreground-Robust Lensing Templates for Primordial Gravitational Wave Searches	results
+vanEngelen2015ACTCIB	1412.0626	van Engelen	2014	The Atacama Cosmology Telescope: Lensing of CMB Temperature and Polarization Derived from Cosmic Infrared Background Cross-Correlation	results
+POLARBEAR2013CIB	1312.6645	POLARBEAR Collaboration	2013	Evidence for Gravitational Lensing of the Cosmic Microwave Background Polarization from Cross-correlation with the Cosmic Infrared Background	results
+Soergel2016SPTkSZ	1603.03904	Soergel	2016	Detection of the kinematic Sunyaev-Zel'dovich effect with DES Year 1 and SPT	results
+Schiappucci2023SPT3GkSZ	2207.11937	Schiappucci	2022	A measurement of the mean central optical depth of galaxy clusters via the pairwise kinematic Sunyaev-Zel'dovich effect with SPT-3G and DES	results
+Vavagiakis2021ACTtSZkSZ	2101.08373	Vavagiakis	2021	The Atacama Cosmology Telescope: Probing the Baryon Content of SDSS DR15 Galaxies with the Thermal and Kinematic Sunyaev-Zel'dovich Effects	results
+Li2018PlanckBOSSkSZ	1710.10876	Li	2017	Measurement of the pairwise kinematic Sunyaev-Zeldovich effect with Planck and BOSS data	results
+Chen2022DESIPlanckkSZ	2109.04092	Chen	2021	Detection of pairwise kSZ effect with DESI galaxy clusters and Planck	results
+LiZheng2026ACTCMASS	2605.01963	Li	2026	Constraints on Halo Gas Profiles from Joint kSZ and Galaxy Clustering Analysis of ACT DR6 and CMASS	results
+Patki2023ProjFields	2306.03127	Patki	2023	Improved Modeling of the Kinematic Sunyaev-Zel'dovich Projected-Fields signal and its Cosmological Dependence	method
+Rodriguez2025ProjFields	2509.03458	Rodriguez	2025	Comparison of Halo Model and Simulation Predictions for Projected-Field Kinematic Sunyaev-Zel'dovich Cross-Correlations	method
+Kovac2025BFC	2507.07991	Kovač	2025	Baryonification II: Constraining feedback with X-ray and kinematic Sunyaev-Zel'dovich observations	results
+Bucko2026BFCXray	2609.09144	Bucko	2026	Baryonification IV: Constraining baryonic feedback with X-ray gas fractions	results
+McCarty2026FRBkSZ	2608.11296	McCarty	2026	A new measurement of the FRB DM-galaxy cross correlation and a first joint analysis with the kinematic SZ effect	results

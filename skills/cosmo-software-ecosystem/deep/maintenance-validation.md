@@ -5,10 +5,13 @@ regression, cross-code), how the model grid, metric and precision budget
 of such a test are chosen, how a run is kept reproducible across code
 versions, what test and release practice the code papers state, and how a
 code is cited.
-Snapshot: 2026-10-19.
+Snapshot: 2026-10-22.
 From: Snowmass2021 CompF white paper (arXiv:2203.07347), Sect. 5.3
 (verification and validation); cloelib (arXiv:2605.23839), Documentation
-and Availability.
+and Availability; the validation sections of the CAMB 2 (arXiv:2607.14854),
+CLASS (arXiv:1104.2932, arXiv:1104.2934) and CCL (arXiv:1812.05995) papers;
+the Boltzmann code comparisons of Seljak et al. 2003
+(arXiv:astro-ph/0306052) and Bellini et al. 2017 (arXiv:1709.09135).
 
 Already in L2, not repeated here: repository activity and superseded codes
 (`open-questions.md#maintenance-status-at-the-repositories`,
@@ -39,7 +42,15 @@ procedure; the procedure below is read in code papers.
   raised precision. CAMB v2's `camb.check_accuracy` compares a default run
   with a reference that doubles the main accuracy boosts and reports
   fractional differences per output and per ℓ or k range (Lewis 2026,
-  arXiv:2607.14854) [src: Sect. IX].
+  arXiv:2607.14854) [src: Sect. IX]. CLASS keeps every accuracy parameter
+  in one precision structure (`include/common.h`), set by the input
+  module and overwritten by a `.pre` file; "the user will not find a
+  single accuracy parameter declared and hard-coded locally" (Lesgourgues
+  2011, arXiv:1104.2932) [src: Sect. 2.3]. Its reference files
+  `cl_ref.pre` and `pk_ref.pre` give 0.01 % accurate C_ℓ^TT and P(k) for
+  2 ≤ ℓ ≤ 3000 and k ≤ 1 h Mpc⁻¹ (EE error twice larger), `pk_ref.pre`
+  keeping it for the linear P(k) to k ≤ 50 h Mpc⁻¹; degraded settings are
+  calibrated against them (arXiv:1104.2934) [src: Sect. 3].
 - **Regression.** Compare with stored outputs. The standard CAMB test
   suite generates scalar, tensor, lensed, transfer and matter-power outputs
   over a broad grid and compares them with precomputed references made at
@@ -53,7 +64,12 @@ procedure; the procedure below is read in code papers.
   2026-10-19]. CCL in 2018 ran accuracy checks in C and unit tests in
   Python on a continuous-integration service, "ensuring that the code
   remains reliable as we continue to improve it" (Chisari et al. 2018,
-  arXiv:1812.05995) [src: Sect. V].
+  arXiv:1812.05995) [src: Sect. V]. CCL compares each output with known
+  analytic solutions where they exist, with simulations for its Cosmic
+  Emulator path, and otherwise with "one or multiple independent
+  implementations" that are shipped in the CCL repository with the
+  library; each feature gets a numerical accuracy parameter 𝒜, and tests
+  "pertain to numerical accuracy alone" [src: arXiv:1812.05995, Sect. IV].
 - **Cross-code.** Compare with an independent implementation under
   matched physics. CAMB v2 against CLASS 3.3.4 used the same non-linear
   model (HMcode-2020 without feedback), the same lensing source cutoff,
@@ -62,7 +78,15 @@ procedure; the procedure below is read in code papers.
   lensing edge effects [src: arXiv:2607.14854, Sect. IX, Fig. 3 caption].
   The authors call it "a like-for-like numerical test, not a statement
   that the shared physical model is the most accurate description of the
-  Universe" [src: same].
+  Universe" [src: same]. Earlier like-for-like tests: Seljak et al. 2003
+  compared three independent codes and, by removing the main sources of
+  numerical instability, improved their agreement by an order of
+  magnitude, to below 0.1 % in the matter P(k) and below sampling variance
+  up to ℓ = 3000 in TT, TE and EE (arXiv:astro-ph/0306052) [src]; CLASS
+  against CAMB, both at reference precision, differ by Δχ² = 0.027 in a
+  simplified three-channel Planck likelihood, so "the effective χ²
+  obtained with Planck will only be accurate up to 0.03"
+  (arXiv:1104.2934) [src: Sect. 3].
 
 None of the three measures physical accuracy. CCL makes the same
 separation: what it validates is numerical accuracy, physical accuracy
@@ -85,9 +109,16 @@ of each model being discussed separately (`physics-and-methods.md#theory-facades
   runs for an SO-like experiment over 2 ≤ ℓ ≤ min(4000, ℓ_max), excluding
   number-count, tensor-only and matter-only files [src: Sect. IX]. Its
   numbers are in `results.md#camb-v2-default-accuracy-arxiv-2607-14854`.
+- The Δχ² metric is older than CAMB 2: CLASS III computes Δχ² against
+  reference spectra in a simplified Planck likelihood (three channels,
+  f_sky = 0.8, χ² to ℓ = 3000) and notes that Δχ² ∼ 1 is roughly 0.1–0.2 %
+  on the C_ℓ, except on the largest and smallest angular scales
+  (arXiv:1104.2934) [src: Sect. 3].
 - For observables of a survey, express the difference in units of the
   data error (CCL's |ΔC_ℓ|/σ_ℓ; CLOE's d_max and χ² criteria in
-  `deep/theory-facades.md`).
+  `deep/theory-facades.md`). CCL's stated goal: numerical uncertainty in
+  correlation functions "within a fraction of the expected statistical
+  uncertainty for LSST" [src: arXiv:1812.05995, Sect. IV].
 
 ### Step 3. Build the model grid so that it can fail
 <!-- key: step-3-build-the-model-grid-so-that-it-can-fail -->
@@ -113,6 +144,14 @@ of each model being discussed separately (`physics-and-methods.md#theory-facades
   B₀ = 0.01 [src: arXiv:1709.09135, Sect. IV.2, IV.3]. It also varied
   cosmological and gravitational parameters to check that agreement was
   robust [src: Sect. IV].
+- Sample the parameter space, not only points in it. CCL draws 100
+  Latin-hypercube points over the five ΛCDM parameters, with ranges
+  "significantly wider" than current constraints (h 0.55–0.8, Ω_c
+  0.15–0.35, Ω_b 0.018–0.052, A_s 1.5–2.5 × 10⁻⁹, n_s 0.94–0.98),
+  massless neutrinos, and compares linear and halofit P(k) through CCL
+  with CLASS v2.6.3 run directly, at default and high precision; the test
+  also checks CCL's tabulation and interpolation of external spectra
+  [src: arXiv:1812.05995, Sects. IV, IV.2.3, Table 5].
 - Use realistic inputs, not only smooth ones: CLOE's distance to CCL grows
   with the irregularity of n(z) (`deep/theory-facades.md`, "What goes
   wrong").
@@ -131,6 +170,16 @@ Appendix C (`systematics.md#default-accuracy-and-non-linear-settings-of`).
 CAMB v2 takes the opposite route: defaults designed to reach per-mille
 accuracy "without such strong boosting" [src: arXiv:2607.14854,
 Sect. IX].
+
+CLASS III gives a recipe tied to a likelihood: from reference spectra,
+degrade the accuracy parameters one at a time, assuming they act
+independently, and keep the loosest value of each that holds Δχ² below a
+target; the files `chi2pl0.1.pre`, `chi2pl1.pre`, `chi2pl10.pre` hold the
+results for Δχ² ∼ 0.1, 1, 10, and `cl_permille.pre`, `cl_2permille.pre`,
+`cl_3permille.pre` give 0.1, 0.2, 0.3 % on the C_ℓ up to ℓ = 3000
+[src: arXiv:1104.2934, Sect. 3]. The authors add that "the only way to
+check which precision setting is sufficient is to perform a full
+parameter extraction from the data with different settings" [src: same].
 
 ### Step 5. Record everything a rerun needs
 <!-- key: step-5-record-everything-a-rerun-needs -->
@@ -157,6 +206,10 @@ Sect. IX].
   provide paths to the installation folders" [src: arXiv:2005.05290,
   Sect. VI]. The archive of a run therefore needs the path and version of
   any modified code, which the installer does not know.
+- **Parameter file with the chains.** MontePython writes in each output
+  directory a `log.param` file whose parameter names, ranges and scalings
+  its analysis tools read back, and a `.paramnames` file for GetDist
+  (Brinckmann et al. 2018, arXiv:1804.07261) [src: App. C].
 - **Grids of runs.** Cobaya's batch tool, taken over from CosmoMC, builds
   every model × data combination from common definitions plus two lists of
   variations, with a folder per combination and queue scripts [src:
@@ -206,7 +259,14 @@ a paper names the version is in `systematics.md#what-a-referee-checks`.
 <!-- key: self-convergence-or-cross-code-comparison -->
 
 Self-convergence is cheap and automatic but cannot find an error shared
-by default and boosted runs (a wrong equation, a convention).
+by default and boosted runs (a wrong equation, a convention), nor one in
+a setting the boosts do not reach. In 2011, CAMB with all accuracy boosts
+at 3 still differed from CLASS by ≃ 0.7 % in unlensed TT at low ℓ and
+0.1 % at high ℓ, and raising the boosts further changed nothing; two
+hard-coded quantities were responsible, the Bessel-function sampling
+(Δx = 1 for x > 25; 0.2 moved the C_ℓ by ≈ 0.1 %) and the time sampling
+of the free-electron fraction (`nthermo`) (arXiv:1104.2934, Sect. 2.1)
+[src].
 Cross-code comparison can, but only after the physics is matched by hand
 (recombination, helium, neutrinos, lensing cutoff, non-linear model,
 Step 1), and then it tests only numerics. CAMB v2 uses both and adds the
@@ -287,6 +347,13 @@ Record which one was used (Step 5).
 | CAMB–CLASS low-ℓ TT difference in MG and ΛCDM | up to ≃ 0.5 % for ℓ ≲ 100 | hi_class vs EFTCAMB | arXiv:1709.09135 | Sect. IV.1 |
 | Inherited base-code deviation | ≃ 3 % in lensing spectrum, ΛCDM included | CLASS-LVDM (CLASS v1.7) vs EFTCAMB | arXiv:1709.09135 | Sect. IV.5 |
 | Planck nuisance-parameter count cited as motivation | about 20 | CosmoSIS | arXiv:1409.3409 | Sect. 2 |
+| Three-code agreement after removing instabilities | < 0.1 % in matter P(k); below sampling variance to ℓ = 3000 (TT, TE, EE), ≃ 0.1 % over most of it | 2003 comparison | arXiv:astro-ph/0306052 | abstract |
+| CLASS reference precision | 0.01 % in C_ℓ^TT, P(k) for 2 ≤ ℓ ≤ 3000, k ≤ 1 h Mpc⁻¹; EE twice larger | `cl_ref.pre`, `pk_ref.pre` | arXiv:1104.2934 | Sect. 3 |
+| CLASS vs CAMB reference spectra | Δχ² = 0.027 | simplified Planck, ℓ ≤ 3000 | arXiv:1104.2934 | Sect. 3 |
+| CAMB default accuracy, 2011 | Δχ² = 368 (10 with `accuracy_boost` 1.5, `l_sample_boost` 1.2) | same | arXiv:1104.2934 | Sect. 3 |
+| Δχ² ∼ 1 in C_ℓ terms | ≃ 0.1–0.2 %, except largest and smallest scales | same | arXiv:1104.2934 | Sect. 3 |
+| CCL benchmark agreement, χ and D | 𝒜 = 5 × 10⁻⁷ and 6 × 10⁻⁶, 0.01 ≤ z ≤ 1000 | CCL v1 | arXiv:1812.05995 | Sect. IV, table |
+| CCL parameter-space test | 100 Latin-hypercube points in 5 ΛCDM parameters | vs CLASS v2.6.3 | arXiv:1812.05995 | Sect. IV.2.3 |
 
 ## What goes wrong
 <!-- key: what-goes-wrong -->
@@ -316,6 +383,11 @@ Record which one was used (Step 5).
   Sect. 3.2]. Test: the CosmoSIS `test` sampler saves every module's
   output for a single parameter point so it can be compared with
   expectations, and can time each module [src: App. A.4].
+- **Boost parameters that do not boost everything.** Hard-coded sampling
+  in a code escapes its global boosts, and a self-convergence test then
+  converges to the wrong answer (Choices, first item). Test: compare with
+  an independent code at reference precision, or check that all accuracy
+  parameters are exposed, as CLASS's precision structure does.
 - **"Tested" read as unit-tested.** CosmoSIS does not enforce unit tests
   for contributed modules, "since most cosmologists are not trained
   programmers", but encourages them and provides a mechanism to run them
@@ -328,10 +400,19 @@ Record which one was used (Step 5).
 - Method: Lewis 2026, arXiv:2607.14854 — Sect. IX for the three
   complementary checks and the grid; Sect. X for agent-assisted
   development and its failure mode.
+- Method: Lesgourgues 2011, arXiv:1104.2934 (CLASS III) — Sect. 2.1 for
+  hard-coded CAMB settings found by cross-code comparison, Sect. 3 for
+  reference and Δχ²-calibrated precision files; arXiv:1104.2932, Sect. 2.3,
+  for the single precision structure.
+- Critique: Seljak et al. 2003, arXiv:astro-ph/0306052 — the first
+  three-code Boltzmann comparison.
+- Method: Brinckmann et al. 2018, arXiv:1804.07261 — App. C, what
+  MontePython writes with its chains.
 - Method: Bellini et al. 2017, arXiv:1709.09135 — Sect. IV for how a
   multi-code comparison chooses targets, models and the precision budget.
 - Foundation: Chisari et al. 2018, arXiv:1812.05995 — Sect. IV for
-  per-quantity metrics; Sect. V for tests, CI and Docker.
+  benchmarks, per-quantity accuracy 𝒜 and the Latin-hypercube test;
+  Sect. V for tests, CI and Docker.
 - Method: Torrado & Lewis 2020, arXiv:2005.05290 — Sect. VI for stock
   external codes and version recording; App. B for a generated input.
 - Method: Zuntz et al. 2014, arXiv:1409.3409 — Sect. 3.2 for the costs of
@@ -357,5 +438,8 @@ Record which one was used (Step 5).
 - No paper on software-citation or reproducibility practice specific to
   cosmology was found in the searches made; Zenodo or ASCL records of the
   codes were not looked up.
-- MontePython and desilike practice (tests, version recording) was not
-  read.
+- MontePython: only App. C of arXiv:1804.07261 was read; whether it
+  records code versions was not found. desilike has no code paper found;
+  its test practice was not read.
+- The body of Seljak et al. 2003 (which sources of instability) was not
+  read; only its abstract.

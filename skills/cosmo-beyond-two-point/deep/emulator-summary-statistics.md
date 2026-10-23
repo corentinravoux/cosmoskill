@@ -6,8 +6,11 @@ parametrisation and its priors, how box simulations are made to look like
 the survey, measurement settings of density split, kNN, WST and Minkowski
 functionals, network and loss, emulator-error estimate, likelihood), and how
 to choose between the designs in use, with what was found when they were
-compared on the same data.
-Snapshot: 2026-10-18.
+compared on the same data. The backbone is the AbacusSummit + BOSS CMASS
+family (SUNBIRD density split, WST, MFs, the Beyond-2pt kNN entry); each
+step adds the other suites (Aemulus, Dark Quest, Quijote) and samples (BOSS
+LOWZ and other redshift bins, eBOSS LRG, HSC, DES, KiDS).
+Snapshot: 2026-10-22.
 From: Beyond-2pt challenge (arXiv:2405.02252), Sects. V.1 (BACCO hybrid
 emulator), V.5 (kNN), V.6 (density split) and VI.4 (galaxy–halo connection
 models).
@@ -54,6 +57,28 @@ c013 (density split), c001–c004 (WST, MFs), c001–c004 and c171–c175 (kNN)
 [src: arXiv:2309.16539, Sect. 2.3.1; arXiv:2310.16116, Sect. IV.5;
 arXiv:2501.01698, Sect. 3.5; arXiv:2405.02252, Sect. V.5.2].
 
+Other suites, one line each:
+
+- **Aemulus.** 75 boxes of 1.05 h⁻¹Gpc with 1400³ particles (mass resolution
+  ≈ 3.5 × 10¹⁰ h⁻¹M_⊙): 40 wCDM training cosmologies on a Latin hypercube and
+  a test set of 7 cosmologies × 5 phases; z = 0.55 snapshot for Aemulus VI
+  (arXiv:2210.03203) [src: Sect. II.1]. Unlike AbacusSummit's single phase,
+  the test set gives the sample variance directly [src: Sect. IV.2].
+- **Aemulus ν.** wνCDM boxes with neutrinos as particles, used for BOSS
+  clustering + galaxy–galaxy lensing (Gao et al. 2026, arXiv:2601.12976) [src].
+- **Dark Quest.** 101 flat wCDM models, 2048³ particles, maximin sliced
+  Latin hypercube, halo catalogues at 0 ≤ z ≤ 1.48; Dark Emulator predicts
+  halo statistics, not galaxy ones, and the HOD is applied at the equation
+  level rather than by populating mocks (Nishimichi et al. 2019,
+  arXiv:1811.09504) [src].
+- **Quijote** (SimBIG). 1 (h⁻¹Gpc)³ boxes with 1024³ particles on a Latin
+  hypercube, z = 0.5, Rockstar halos (arXiv:2310.15246) [src: Sect. II.1];
+  used without an emulator (Step 5).
+- **Weak lensing.** DES Y3 peaks: N-body simulations at a grid of
+  cosmologies with a Gaussian-process emulator, the intrinsic-alignment
+  amplitude modelled as a function of Ω_m and σ8 (arXiv:2110.10135) [src:
+  Sect. 4.3].
+
 ### Step 2. Fix the HOD family and its prior
 <!-- key: step-2-fix-the-hod-family-and-its-prior -->
 
@@ -72,6 +97,18 @@ arXiv:2310.16116, Table 1; arXiv:2501.01698, Table 1]. kNN priors:
 log M_cut U[12.0, 14.5], log M_1 U[13, 15], log σ U[−3.5, 1.5], κ U[0, 2],
 α_vel,s U[0.2, 1.8], B_cent, B_sat U[−1, 1] [src: arXiv:2405.02252,
 Eq. 28].
+
+HOD freedom elsewhere: SimBIG uses a 9-parameter HOD adding assembly,
+concentration and velocity biases (arXiv:2310.15246) [src: Sect. II.1];
+Aemulus VI a flexible environment-dependent assembly-bias model
+(arXiv:2210.03203) [src]; Aemulus V adds γ_f, the halo velocity amplitude
+relative to general relativity (arXiv:2203.08999) [src]; the HSC-Y1 +
+SDSS Dark Emulator analysis marginalises about 20 nuisance parameters and
+finds the S8 bias from galaxy–halo uncertainty below ~50% of σ(S8) "unless
+the assembly bias effect is unexpectedly large" (arXiv:2111.02419) [src];
+the BOSS DR12 P(k) full-shape fit with the Dark Quest halo emulator uses 7
+nuisance parameters per galaxy sample and no galaxy-abundance information
+(arXiv:2110.06969) [src].
 
 Density matching. Mocks denser than the target are randomly downsampled
 (f_ic); mocks below it are discarded: 151 474 of 229 500 WST mocks kept at
@@ -108,6 +145,17 @@ Three solutions are in use, in increasing realism.
    n̄ = 2.4 × 10⁻⁴; three rotations are averaged [src: arXiv:2501.01698,
    Sect. 3.3]. Reason: forward-model what cannot be corrected, so that
    data–mock differences come from cosmology and HOD only [src: same].
+4. **Full survey realism (SimBIG, Quijote).** BOSS geometry and
+   observational systematics are applied to every HOD catalogue, with the
+   redshift range and footprint of the data (arXiv:2310.15246) [src:
+   Sect. II.1].
+
+Fibre collisions, where small scales are used: eBOSS LRG corrects them with
+pairwise-inverse-probability weights, unbiased on all scales
+(arXiv:2106.14961) [src]; Aemulus V uses another correction, and its
+tension with Planck persists when data below 0.4 h⁻¹Mpc, where collisions
+matter in the highest-z bin, are removed (arXiv:2203.08999) [src:
+Sect. VIII].
 
 ### Step 4. Measure the statistic
 <!-- key: step-4-measure-the-statistic -->
@@ -118,6 +166,18 @@ Three solutions are in use, in increasing realism.
 | WST | box 2700 h⁻¹Mpc, NGRID = 270, TSC, Gaussian σ = 0.8 cell (8 h⁻¹Mpc), J = 4 scales, L = 4 orientations, q = 0.8, modified KYMATIO for masked fields; about 60 s per mock on a GPU | 76 coefficients | arXiv:2310.16116, Sect. IV.4.1 |
 | kNN (RD and DD) | k = 1–9; 8 log bins in r_p from 0.63 to 63 h⁻¹Mpc, 5 in r_π from 0.5 to 32 h⁻¹Mpc; bins with CDF < 0.05 or > 0.95 removed to Gaussianise; DD cut at r_p > 5 h⁻¹Mpc | 114 (RD), 144 (DD) | arXiv:2405.02252, Sect. V.5.1, V.5.4 |
 | MFs | four functionals of the excursion sets, smoothing ≥ 15 h⁻¹Mpc (L2) | — | arXiv:2501.01698 |
+
+Other statistics and ranges: Aemulus VI emulates w_p, ξ_0, ξ_2, the
+underdensity probability function P_U(s) and the density-marked correlation
+M(s) over 0.1–50 h⁻¹Mpc (arXiv:2210.03203) [src]; Aemulus V w_p, ξ_0, ξ_2 over
+0.1–60 h⁻¹Mpc in three BOSS redshift bins (arXiv:2203.08999) [src]; eBOSS
+LRG 7–60 h⁻¹Mpc baseline and 0.1–60 h⁻¹Mpc extended (arXiv:2106.14961) [src];
+HSC-Y1 + SDSS w_p from 2 and ΔΣ from 3 up to 30 h⁻¹Mpc, excluding the BAO
+(arXiv:2111.02419) [src]; P(k) multipoles ℓ = 0, 2, 4 of four BOSS DR12
+samples, 0.2 < z < 0.75, to k_max = 0.25 h Mpc⁻¹ with an emulator of the
+redshift-space halo power spectrum (arXiv:2110.06969) [src]; SimBIG the bispectrum and a CNN summary of the
+field (arXiv:2310.15246) [src]; DES Y3 tomographic shear peaks including
+cross-peaks, with C_ℓ (arXiv:2110.10135) [src].
 
 The kNN binning is designed for non-linear and quasi-linear scales and is
 "not sensitive to large-scale features such as the BAO by design"; the k
@@ -139,6 +199,13 @@ arXiv:2309.16539, Sect. 2.2.3]. The kNN design concentrates training near
 the maximum-likelihood region to improve precision there [src:
 arXiv:2405.02252, Sect. V.5.2].
 
+Gaussian processes instead of networks: Aemulus VI (arXiv:2210.03203) [src],
+Dark Emulator (principal components plus GP regression; better than 2% on
+the halo–matter and 4% on the halo auto-correlation for CMASS-like halos,
+arXiv:1811.09504) [src] and the DES Y3 peaks emulator (arXiv:2110.10135)
+[src: Sect. 4.3]. No emulator at all: SimBIG fits neural posterior
+estimators to forward-modelled catalogues (arXiv:2310.15246) [src].
+
 ### Step 6. Estimate the emulator error and build the covariance
 <!-- key: step-6-estimate-the-emulator-error-and-build -->
 
@@ -156,6 +223,18 @@ Eqs. 15–20). The kNN analysis uses a jackknife over 125 cubes of
 4 × 10⁷) plus a hold-out emulator covariance [src: arXiv:2405.02252,
 Sect. V.5.3].
 
+Aemulus: C_emu is the raw test-set error minus the test boxes' sample
+variance in quadrature, assumed diagonal (an earlier choice of the sample
+correlation matrix had a minor effect); it is "non-negligible in the total
+covariance" (arXiv:2203.08999) [src: Sects. VI.1, VIII]. An emulator of an
+analytic w_p model reached sub-percent error, the simulation-based one is
+worse and scale-dependent, which the authors attribute possibly to the
+training-error model, volume, resolution and small-scale density field
+[src: Sect. VIII]. In Aemulus VI the emulator error is comparable to the
+volume-adjusted sample variance except for w_p, with C_test from 7
+cosmologies × 5 boxes populated with 100 HODs (arXiv:2210.03203) [src:
+Sects. IV.2, V.1].
+
 ### Step 7. Sample and validate
 <!-- key: step-7-sample-and-validate -->
 
@@ -165,7 +244,12 @@ here), dynesty, uniform priors except a BBN prior ω_b = 0.02268 ±
 AbacusSummit cosmologies; a non-HOD mock (Uchuu with SHAM ranked on a mix of
 v_max and v_vir, including assembly bias, for density split; Uchuu with
 UniverseMachine for WST) [src: arXiv:2309.16539, Sect. 3.2.4;
-arXiv:2310.16116, Sect. V.2.2]; Nseries cut-sky mocks (L2).
+arXiv:2310.16116, Sect. V.2.2]; Nseries cut-sky mocks (L2). Aemulus V
+repeats the recovery on Uchuu SHAM catalogues, with the correlation matrix
+from GLAM mocks and the diagonal scaled to the Uchuu volume
+(arXiv:2203.08999) [src: App. E]; Aemulus VI checks 70 recovery models and
+finds normalised errors following a unit normal except Ω_m from w_p or ξ_0
+alone (arXiv:2210.03203) [src: Sect. V.3].
 
 ## Choices and what they cost
 <!-- key: choices-and-what-they-cost -->
@@ -217,7 +301,12 @@ arXiv:2405.02252, Sect. VI.4, V.6.4]. On BOSS data the DSC-only σ8 is
 0.768 +0.037/−0.043, below the 2PCF-only value; using only Q_0 and Q_4
 costs 9% on ω_cdm, since most information sits in the extreme quintiles;
 monopole only costs 18%, 13% and 18% on ω_cdm, σ8 and fσ8 [src:
-arXiv:2309.16541, Sect. 4.4.4].
+arXiv:2309.16541, Sect. 4.4.4]. Other suites disagree on where the gain
+stops: in Fourier space the Dark Quest BOSS fit gains little beyond
+k_max ≈ 0.2 h Mpc⁻¹, through shot noise and HOD marginalisation
+(arXiv:2110.06969) [src], while Aemulus VI finds that scales below
+~6 h⁻¹Mpc carry as much information as larger ones on its mocks
+(arXiv:2210.03203) [src].
 
 ### Same data, different statistics
 <!-- key: same-data-different-statistics -->
@@ -238,6 +327,35 @@ isolate the statistic. L2 notes that agreement in σ8 is not independent
 confirmation; the disagreement in ω_cdm, n_s and h shows that the shared
 ingredients do not force agreement either.
 
+### Other suites and samples: results as the papers state them
+<!-- key: other-suites-and-samples-results-as-the-papers -->
+
+| Analysis | Suite | Data | Result | Source |
+|---|---|---|---|---|
+| Aemulus V | Aemulus | BOSS, 3 z bins, 0.1–60 h⁻¹Mpc | fσ8 = 0.413 ± 0.031 (z = 0.25), 0.470 ± 0.026 (0.4), 0.396 ± 0.022 (0.55): 1.9σ, 0.3σ, 3.4σ below Planck ΛCDM | arXiv:2203.08999 [src] |
+| eBOSS LRG | Aemulus | DR16 LRG, 7–60 h⁻¹Mpc | fσ8(0.737) = 0.408 ± 0.038, 1.4σ below Planck; 1.7 × more precise than large scales alone; with 0.1–60 h⁻¹Mpc a 4.5σ tension in the halo velocity amplitude, possibly an HOD breakdown | arXiv:2106.14961 [src] |
+| BOSS clustering + lensing | Aemulus ν | BOSS × DECaLS, HSC | fσ8 1–4σ below Planck; lensing tightens S8, weakly fσ8 | arXiv:2601.12976 [src] |
+| Aemulus VI (mocks) | Aemulus | recovery tests | P_U + M improve Ω_m 27%, σ8 19%, fσ8 12%; scales below ~6 h⁻¹Mpc carry as much information as larger ones | arXiv:2210.03203 [src] |
+| BOSS DR12 P(k) full shape | Dark Quest | 4 samples, k_max = 0.25 h Mpc⁻¹ | Ω_m = 0.301 +0.012/−0.011, H_0 = 68.2 ± 1.4, σ8 = 0.786 +0.036/−0.037; within 1σ of Planck | arXiv:2110.06969 [src] |
+| HSC-Y1 + SDSS | Dark Quest | ΔΣ + w_p | S8 = 0.795 +0.049/−0.042 | arXiv:2111.02419 [src] |
+| HSC-Y3 + SDSS 3×2pt | Dark Quest | ξ± + ΔΣ + w_p | S8 = 0.763 +0.040/−0.036; ~2.5σ from Planck | arXiv:2304.00704 [src] |
+| SimBIG | Quijote | 10% of BOSS volume | Ω_b, h, n_s, Ω_m, σ8 1.6, 1.5, 1.7, 1.2, 2.3 × tighter than P(k); S8 below the CMB | arXiv:2310.15246 [src] |
+| DES Y3 peaks + C_ℓ | DES N-body grid, GP | DES Y3 | S8 = 0.797 +0.015/−0.013, 38% tighter than C_ℓ alone, 1.5σ below Planck | arXiv:2110.10135 [src] |
+| KiDS-1000 density split (lensing) | analytic model, not an emulator | KiDS-bright | S8 = 0.74 +0.03/−0.02, Ω_m = 0.28 ± 0.02 | arXiv:2208.02171 [src] |
+
+Comparisons made by the papers: Aemulus V finds its values consistent with
+other simulation-based non-linear results (BOSS LOWZ lensing, eBOSS LRG,
+an independent LOWZ clustering analysis), together pointing to
+γ_f^{1/2} σ8 ≈ 0.75, while the data are well fitted with γ_f = 1, and it
+cannot exclude a galaxy-bias systematic at non-linear scales
+(arXiv:2203.08999) [src]; it notes that it and the eBOSS LRG analysis
+correct fibre collisions differently yet both find tension with Planck
+once the smallest scales enter [src: Sect. VIII]. An analytic alternative
+to emulating density split exists: a large-deviation two-point-PDF model
+agrees with simulations on large scales within the cosmic variance of a
+DESI DR1-like sample, with one degree of freedom (Pinon et al. 2025,
+arXiv:2501.14638) [src].
+
 ## Numbers
 <!-- key: numbers -->
 
@@ -254,6 +372,10 @@ ingredients do not force agreement either.
 | kNN data vector | 114 RD, 144 DD bins; jackknife 125 × (400 h⁻¹Mpc)³ | Beyond-2pt | arXiv:2405.02252 | Sect. V.5.1, V.5.3 |
 | MF remap cuboid | 1.414 × 2.828 × 2.0 (box units), three rotations | MFs | arXiv:2501.01698 | Sect. 3.3 |
 | MF vs WST + 2PCF | 2.9σ (ω_cdm), 2.1σ (n_s), 2.3σ (h) | CMASS | arXiv:2501.01698 | Sect. 6.1 |
+| Aemulus training and test | 40 wCDM training; 7 × 5 test boxes; 1.05 h⁻¹Gpc, 1400³ | Aemulus | arXiv:2210.03203 | Sect. II.1 |
+| Dark Quest design | 101 wCDM, 2048³, z = 0–1.48; accuracy < 2% (ΔΣ-type), < 4% (w_p-type) | Dark Quest | arXiv:1811.09504 | abstract |
+| SimBIG simulations | 1 (h⁻¹Gpc)³, 1024³, z = 0.5, 9-parameter HOD | Quijote | arXiv:2310.15246 | Sect. II.1 |
+| Nuisance parameters | about 20 | HSC-Y1 + SDSS | arXiv:2111.02419 | abstract |
 
 ## What goes wrong
 <!-- key: what-goes-wrong -->
@@ -305,6 +427,23 @@ ingredients do not force agreement either.
   design of future suites).
 - Foundation: Banerjee & Abel 2021, arXiv:2007.13342 — kNN-CDF definition.
 - Foundation: Maksimova et al. 2021, arXiv:2110.11398 — AbacusSummit.
+- Method, other suites: Nishimichi et al. 2019, arXiv:1811.09504 (Dark
+  Quest); Storey-Fisher et al. 2022, arXiv:2210.03203 (Aemulus VI, P_U and
+  marked correlation, GP emulator error).
+- Application, Aemulus: Zhai et al. 2022, arXiv:2203.08999 (BOSS small
+  scales, γ_f, C_emu); Chapman et al. 2021, arXiv:2106.14961 (eBOSS LRG, PIP
+  weights); Gao et al. 2026, arXiv:2601.12976 (Aemulus ν, clustering +
+  lensing).
+- Application, Dark Emulator: Kobayashi et al. 2022, arXiv:2110.06969 (BOSS
+  P(k) full shape, validated on mocks with assembly bias); Miyatake et al. 2021, arXiv:2111.02419
+  (HSC-Y1 + SDSS); Miyatake et al. 2023, arXiv:2304.00704 (HSC-Y3 3×2pt).
+- Application, Quijote: Hahn et al. 2023, arXiv:2310.15246 (SimBIG,
+  survey-realistic forward model, no emulator).
+- Application, lensing: Zürcher et al. 2021, arXiv:2110.10135 (DES Y3 peaks,
+  GP emulator); Burger et al. 2022, arXiv:2208.02171 (KiDS-1000 density
+  split, analytic model).
+- Alternative: Pinon et al. 2025, arXiv:2501.14638 — analytic density-split
+  model.
 
 ## Not verified
 <!-- key: not-verified -->
@@ -316,4 +455,7 @@ ingredients do not force agreement either.
 - The BACCO hybrid-EFT emulator set-up (arXiv:2405.02252, Sect. V.1): not
   read in this run.
 - No DESI application of density split, kNN, WST or MFs to cosmology was
-  found in a date-sorted search from 2025-06-01.
+  found in date-sorted searches from 2025-06-01 and from 2025-01-01 (run of
+  2026-10-22).
+- Uchuu as a training suite, and the Lange et al. BOSS LOWZ analysis named
+  in arXiv:2203.08999: not read.

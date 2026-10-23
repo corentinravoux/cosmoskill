@@ -6,7 +6,7 @@ the homogeneity scale from galaxy and quasar surveys; isotropy as a pointer
 to the dipole and CMB material of this skill; inhomogeneous alternatives to
 dark energy (LTB void models, backreaction, timescape); and the local-void
 (KBC) explanation of the Hubble tension with its critiques.
-Snapshot: 2026-10-20
+Snapshot: 2026-10-22
 
 Flags as in `results.md`: `[src]` read this session in the cited paper's
 abstract; `[src: <place>]` in its body; `[sec: X]` taken from the named
@@ -223,7 +223,36 @@ local void in ΛCDM "is not sufficient to solve the Hubble tension"
 `[sec: arXiv:2504.01669, Sect. 4.5.1, Eq. 4.22]`. A 2026 perspective links
 the void to low-redshift BAO deviations (α_iso < 1) and predicts convergence
 to the CMB expansion rate above z ≈ 0.2 (Banik et al. 2026,
-arXiv:2602.03928) `[src]`.
+arXiv:2602.03928) `[src]`. Later tests by the same proponents (all `[src]`,
+abstracts):
+
+- Bulk flow: the Haslbauer void model, not fitted to bulk flows, agrees
+  "qualitatively" with the rising CF4 bulk-flow curve, which is in 4.8σ
+  tension with ΛCDM at 200 h⁻¹ Mpc (Mazurenko et al. 2023, arXiv:2311.17988).
+- H0(z): Gaussian and exponential profiles reasonably match binned H0(z)
+  declining toward Planck; Maxwell–Boltzmann less well (Mazurenko et al.
+  2024, arXiv:2412.12245).
+- BAO: 42 D_V measurements give χ² = 75.7 without a void and 47.3–51.2
+  with void models, 3.3σ → 1.1–1.4σ, assuming independent errors; the
+  differences are smaller for angular and radial BAO (Banik & Kalaitzidis
+  2025, arXiv:2501.17934).
+- Gravitational redshift at z ≳ 0.3: BBN + CMB + BAO + chronometers give
+  z₀ = −0.4 (+0.8/−0.9)% (−0.1 ± 0.7% from z > 0.29), preferring 0, yet the
+  void value 0.84% fits with Δχ² < 2, so higher-z data cannot rule the void
+  out (Banik, Nájera & Desmond 2026, arXiv:2606.02712).
+
+Independent support for an underdensity, smaller in effect:
+
+- 2MRS and 2M++ counts to K < 11.5 over ~90% of the sky: ≈ 21–22%
+  underdense at z < 0.075, implying a local H0 ≈ 3% high and a 3σ tension
+  with ΛCDM (Wong et al. 2021, Shanks group, arXiv:2107.08505) `[src]`.
+- CLASSIX X-ray clusters: matter underdensity −0.3 ± 0.15 within ~100 Mpc,
+  local H0 higher by 5.5 (+2.1/−2.8)%, diluted when distance indicators
+  outside it are used; ΛCDM probability 1.3–3.7σ (Böhringer et al. 2019,
+  arXiv:1907.12402) `[src]`.
+- ΛLTB with the KBC profile: consistent with 217 SNe at 0.0233 < z < 0.15
+  and with linear kSZ limits (SPT, ACT); the H0 tension falls from 3.4σ to
+  2.75σ (Hoscheit & Barger 2018, arXiv:1801.01890) `[src]`.
 
 **As the critiques state it.**
 
@@ -240,10 +269,40 @@ arXiv:2602.03928) `[src]`.
 - The Manticore-Local BORG reconstruction of 2M++ finds "no evidence for a
   large local underdensity" (McAlpine et al. 2025, arXiv:2505.10682)
   `[src]`.
+- Note on attribution: Stiskalek et al. 2025 is co-authored by Banik, and
+  the 2026 proponents' perspective by Desmond; the critiques below are
+  from other groups.
+- N-body sample variance in the local H0 is 0.31 km/s/Mpc; a void solving
+  the tension needs δ ≃ −0.8 within ~150 Mpc, "very unlikely" in ΛCDM and
+  against observations (Wu & Huterer 2017, arXiv:1706.09723) `[src]`.
+- ΛLTB fits to Pantheon over all profile parameters: the tension "cannot
+  be saved by a local void alone" (Cai et al. 2020, arXiv:2012.08292)
+  `[src]`.
+- ΛLTB + Pantheon + BAO + Planck distance priors: binned SNe prefer a −13%
+  drop over ~300 Mpc, matching KBC, but the full sample is compatible with
+  homogeneity ("a cautionary tale" on binned SNe), and M_B is unchanged
+  against ΛCDM, so the void "does not resolve the tension" (Castello et al.
+  2021, arXiv:2110.04226) `[src]`.
+- Without assuming the Copernican principle, ΛLTB with CMB, BAO, SNe, local
+  H0, chronometers, y-distortion and kSZ: the void is favoured only when
+  SNe are restricted to 0.023 < z < 0.15; with the full SN sample the
+  tension is not solved, and the best fit is a shallow void, δ_L ≈ −0.04,
+  r_out ≈ 300 Mpc (Camarena et al. 2022, arXiv:2205.05422) `[src]`.
 
-**Where it stands.** The void is measured in redshift-space galaxy counts;
-direct distances and constrained reconstructions do not find it at the
-required size, and a void of that size is not expected in ΛCDM, so the
+**The proponents' reply to the SN test.** Kenworthy et al. assumed
+Newtonian void dynamics and fixed q̄₀ to the ΛCDM 0.55; a large void raises
+q̄₀, so it must be free; the local q̄₀ = 1.08 ± 0.29 they quote from Camarena
+& Marra (> 1, impossible
+for a standard background) with the high local H0 is read as evidence for
+a local effect (Haslbauer et al. 2020, arXiv:2009.11292, Sects. 5.2,
+5.3.4, 5.3.6) `[src: those sections]`. They also quote Hoscheit & Barger
+as giving H0 higher by 1.27 ± 0.59 in 0.0233 < z < 0.07 than in
+0.07 < z < 0.15, "only modestly" reducing the tension (Sect. 5.3.4).
+
+**Where it stands.** The void is measured in redshift-space galaxy counts
+(K band, 2MRS, clusters); SN-only ΛLTB fits find it only in binned or
+z < 0.15 SN subsets; direct distances and constrained reconstructions do
+not find it at the required size, and a void of that size is not expected in ΛCDM, so the
 proposal needs enhanced structure growth (MOND in the published models).
 The proponents list the decisive tests: field-level fits to distance
 catalogues, kSZ limits on coherent outflows, fast radio bursts and redshift
@@ -275,3 +334,7 @@ in `cosmo-distance-ladder-h0` (`open-questions.md` §7) and in this skill's
   the searches made.
 - Bianchi and McVittie spacetimes (CosmoVerse Sects. 4.6.2.b, 4.6.3) are
   not covered.
+- §5 peers (2026-10-22) read at abstract level only, except Haslbauer et
+  al. 2020 Sects. 5.2–5.3; no reply by Kenworthy et al. to that critique,
+  and no reply by the proponents to Castello et al. or Camarena et al., was
+  searched for.

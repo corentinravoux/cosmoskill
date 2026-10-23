@@ -7,7 +7,7 @@ primordial-black-hole (PBH) abundance is computed to test overproduction
 (Press–Schechter on a smoothed density or threshold statistics on the
 compaction function), and how non-Gaussianity and the QCD equation of state
 change both; what each choice costs and where two analyses disagree.
-Snapshot: 2026-10-19.
+Snapshot: 2026-10-22.
 From: Carr et al. 2026, Sect. VII.1; LISA Cosmology WG 2022, Sect. 10.3; PTA
 new-physics papers.
 
@@ -137,6 +137,41 @@ definition of the integral, not mixed.
   3], log₁₀(k_*/Mpc⁻¹) ∈ [4, 12], n_s ∈ [0.4, 2.6], all uniform [src:
   arXiv:2306.16227, Sect. 4.4].
 
+Fits by other groups and to other arrays' data:
+
+- **PPTA DR3, full likelihood** (Han et al. 2024, arXiv:2412.09755, with
+  PPTA members): 30 of the 32 pulsars, the PPTA noise models in Enterprise
+  through PTArcade, an HD-correlated common process on 15 frequency
+  components, H₀ = 67.4, product-space Bayes factors; the curvature
+  spectrum comes from a non-minimal-derivative-coupling inflation model
+  with three parameters, not a template [src: Sect. III]. Against an SMBHB
+  power law (γ = 13/3) the Bayes factor is 0.9: PPTA "is insufficient to
+  distinguish between these scenarios" [src: Sect. IV].
+- **Three arrays' free spectra** (Liu, Chen & Huang 2023, arXiv:2307.01102):
+  the HD free spectra of NANOGrav 15 yr (14 bins), PPTA DR3 (28) and EPTA
+  DR2 (24), 66 frequencies from 1.28 to 49.1 nHz, each bin's posterior
+  turned into a kernel density and the log-likelihoods summed; the
+  integrated bound ∫ h²Ω_GW d ln k ≲ 2.9 × 10⁻⁷ from BAO and CMB is added
+  [src: main text].
+- **NANOGrav + EPTA free spectra** (Figueroa et al. 2023, arXiv:2307.02399):
+  the two sets treated as independent "though we acknowledge the impact of
+  overlapping pulsars"; Gaussian kernel smoothing of free-spectrum chains,
+  bins independent, templates averaged over bins of width Δf = 1/T because
+  SIGW spectra vary on scales finer than the resolution, and a flat
+  white-noise-like component added to every model so that the
+  high-frequency bins are absorbed; PolyChord through Cobaya [src: main
+  text; SM Sect. I].
+- **NANOGrav only, many models** (Ellis et al. 2023, arXiv:2308.08546):
+  best fits ranked by BIC = −2ℓ + k ln 14 against SMBHBs with environmental
+  effects [src: Table 1].
+- **Broken power law on three arrays** (Cai et al. 2023, arXiv:2306.17822):
+  a parametrised BPL for Ω_GW fitted to NANOGrav, PPTA and EPTA [src:
+  abstract]. Bian et al. 2023 (arXiv:2307.02376) fit the HD free spectra of
+  EPTA, PPTA and NANOGrav with SIGW and other sources and find "no strong
+  preference for any specific SGWB source" [src: abstract].
+- One date-limited search (2024 onwards) found no SIGW fit to MPTA or CPTA
+  data.
+
 ### Step 5. Compute the PBH abundance of the same spectrum
 <!-- key: step-5-compute-the-pbh-abundance-of-the-same -->
 
@@ -220,6 +255,26 @@ Figs. 6–7 captions].
   power law gives γ ≈ 3.5 for large k_*, consistent both with EPTA's fitted
   slope and with 13/3 [src: arXiv:2306.16227, Sect. 4.4, Fig. 19].
 
+### Which data, which likelihood
+<!-- key: which-data-which-likelihood -->
+
+- **Full likelihood** (NANOGrav, EPTA, the PPTA DR3 fit) keeps pulsar noise
+  and correlations; **free-spectrum fits** (Franciolini et al., Liu et al.,
+  Figueroa et al., Ellis et al.) are fast enough for many models and for
+  combining arrays, but assume independent bins, and combining NANOGrav
+  with EPTA as independent double-counts the shared pulsars, which
+  Figueroa et al. acknowledge [src: arXiv:2307.02399, main text].
+- **Evidence differs by array.** Against the NANOGrav SMBHB prior, Figueroa
+  et al. find Gaussian SIGW bump BF = 120 (NANOGrav) and 15 (EPTA), the
+  non-Gaussian bump 66 and 8.7, and a plain power law with n_t = 2/3 only
+  ~2–3; they add that these depend on modelling assumptions [src:
+  arXiv:2307.02399, Table 1 and text]. On PPTA DR3 a model-based SIGW
+  spectrum has BF 0.9 against SMBHBs [src: arXiv:2412.09755, Sect. IV].
+  Ellis et al. give the SIGW best fit k_* = 10^7.7 Mpc⁻¹, A = 0.06, Δ =
+  0.21 with ΔBIC = −2.1 (5.8 when SMBHBs are added), while phase
+  transitions and domain walls fit better (−4.9, −5.7) [src:
+  arXiv:2308.08546, Table 1].
+
 ### Press–Schechter or compaction thresholds
 <!-- key: press-schechter-or-compaction-thresholds -->
 
@@ -266,7 +321,12 @@ perturbative regime holds while A(3f_NL/5)² ≪ 1 [src: text after Eq. 7].
 Effect on the PBH side: quasi-inflection-point non-Gaussianity assists
 collapse and pushes the overproduction limit below the 3σ region of
 NANOGrav; curvaton models with r_dec ≳ 0.9 or f_NL ≈ −2 suppress PBHs and
-relax the tension [src: discussion of Fig. 3]. NANOGrav, with Gaussian
+relax the tension [src: discussion of Fig. 3]. Two independent bounds on
+local non-Gaussianity at PTA scales, each in its authors' notation:
+|f_nl| ≲ 2.34 at 95% from NANOGrav + EPTA (arXiv:2307.02399) [src:
+abstract]; |F_NL| ≲ 13.9 for a log-normal spectrum from NANOGrav + PPTA +
+EPTA, and −13.9 ≲ F_NL ≲ −0.1 to avoid PBH overproduction
+(arXiv:2307.01102) [src: abstract]. NANOGrav, with Gaussian
 perturbations only, notes that non-Gaussianity "can dramatically affect the
 PBH bounds" [src: arXiv:2306.16219, App. C.2].
 
@@ -329,6 +389,11 @@ the peak reaches ~10⁻² (Chen et al. 2026, arXiv:2608.20219) [src: abstract].
 | Threshold shift with width | up to ~20% higher for narrow spectra | compaction method | arXiv:2306.17149 | SM Sect. II |
 | Perturbativity of NG | A(3f_NL/5)² ≪ 1 | — | arXiv:2306.17149 | text after Eq. 7 |
 | Radiation today | h²Ω_r = 4.2 × 10⁻⁵ | — | arXiv:2306.17149 | text after Eq. 3 |
+| SIGW BF vs SMBHB | gSIGW bump 120 (NG15), 15 (EPTA); ngSIGW 66, 8.7 | NG15 + EPTA free spectra | arXiv:2307.02399 | Table 1 text |
+| SIGW BF vs SMBHB | 0.9 (inflation-model spectrum) | PPTA DR3, 15 bins | arXiv:2412.09755 | Sect. IV |
+| SIGW best fit | k_* = 10^7.7 Mpc⁻¹, A = 0.06, Δ = 0.21; ΔBIC −2.1 | NG15, Ellis et al. | arXiv:2308.08546 | Table 1 |
+| Joint free spectrum | 66 bins, 1.28–49.1 nHz (NG15 14, PPTA 28, EPTA 24) | three arrays | arXiv:2307.01102 | main text |
+| Local NG bounds | abs(f_nl) ≲ 2.34 (95%); abs(F_NL) ≲ 13.9, −13.9 ≲ F_NL ≲ −0.1 without PBH overproduction | NG15+EPTA; NG15+PPTA+EPTA | arXiv:2307.02399; arXiv:2307.01102 | abstracts |
 | QCD tail versus f³ | log₁₀ B = 1.0 (NG15), 0.8 (IPTA DR2) | causality tail | arXiv:2306.17136 | Table 1 |
 | CMB-driven limit on a QCD-epoch tail | new data sets: excluded at 3σ only for f_CT ≳ 100 nHz, affected for ≳ 50 nHz; IPTA DR2 decisively disfavours f_CT ≳ 32 nHz | causality tail + ΔN_eff | arXiv:2306.17136 | Sect. IV |
 
@@ -382,6 +447,16 @@ the peak reaches ~10⁻² (Chen et al. 2026, arXiv:2608.20219) [src: abstract].
 - Foundation: Ananda et al. 2006, arXiv:gr-qc/0612013, and Kohri & Terada
   2018, arXiv:1804.08577 — the second-order source and the analytic kernel
   (abstracts read for L2).
+- Application: Han et al. 2024, arXiv:2412.09755 — full-likelihood SIGW fit
+  to PPTA DR3.
+- Application: Liu, Chen & Huang 2023, arXiv:2307.01102 — joint NANOGrav,
+  PPTA, EPTA free-spectrum fit; non-Gaussianity bound.
+- Application: Figueroa et al. 2023, arXiv:2307.02399 — NANOGrav + EPTA,
+  many sources, Bayes factors and AIC, bin smoothing.
+- Comparison: Ellis et al. 2023, arXiv:2308.08546 — multi-model BIC ranking
+  on NANOGrav 15 yr.
+- Application: Cai et al. 2023, arXiv:2306.17822; Bian et al. 2023,
+  arXiv:2307.02376 — broken-power-law and multi-source fits (abstracts).
 - Critique: Chen et al. 2026, arXiv:2608.20219 — lattice versus
   perturbative curvature spectra (abstract only).
 
@@ -398,5 +473,7 @@ the peak reaches ~10⁻² (Chen et al. 2026, arXiv:2608.20219) [src: abstract].
   X(r_dec, ζ_G) (their Eq. S7) were not read.
 - The one-loop no-go papers and their rebuttals cited by NANOGrav were not
   read; no identifiers recorded.
-- Later PTA releases (EPTA DR2 + InPTA, MPTA, IPTA) were not searched for
-  updated SIGW fits.
+- No SIGW fit to MPTA, CPTA or the five-array combination was found (one
+  search, 2024 onwards); fits to IPTA data were not searched separately.
+- Bodies of arXiv:2306.17822 and arXiv:2307.02376 (abstracts only); the
+  Liu et al. kernel-density details and the Ellis et al. SIGW section.

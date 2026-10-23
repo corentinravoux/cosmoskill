@@ -3,10 +3,13 @@
 Scope: how a cosmological goal is turned into survey, data-set and
 instrument requirements (levels, allocations, margins), how a systematics
 budget is set and split among subsystems, and how requirements are verified
-and renegotiated when the data miss them, as read in the DESI, LSST and
-Euclid requirement papers and in the weak-lensing allocation papers behind
-Euclid.
-Snapshot: 2026-10-17.
+and renegotiated when the data miss them, as read in the requirement
+papers of DESI, LSST (the 2008 science drivers and the DESC Science
+Requirements Document), Euclid and the weak-lensing allocation papers
+behind it, Roman's spectroscopic survey, PFS, SPHEREx and LiteBIRD (2022,
+2026). CMB ground-survey flow-downs (CMB-S4, SO, CMB-HD) are in
+`deep/cmb-survey-design.md`.
+Snapshot: 2026-10-22.
 From: Euclid overview (arXiv:2405.13491), Sects. 2–3 (primary probes to
 spacecraft and instruments); Flaugher et al. 2022 Snowmass report
 (arXiv:2209.08654), Sect. 3.3.
@@ -54,6 +57,38 @@ minimum-specification depths in `surveys-and-data.md#imaging-surveys`.
   Sect. II.1.5]. "Any one of the four main science drivers could be
   removed, and the remaining three would still yield very similar
   requirements for most system parameters" [src].
+- **LSST DESC.** RH1: a combined FoM above 500 (about ten times the
+  Stage II FoM of 54) with the Y10 data, statistical and systematic
+  errors included, with Stage III priors (BOSS, Planck, Stage III
+  supernovae, an H₀ prior) [src: arXiv:1809.01669, Sect. 4]. Goal G1:
+  each probe in the joint likelihood above twice its Stage III FoM, that
+  is 12, 1.5, 1.3, 19 and 40 for clusters, LSS, strong lensing,
+  supernovae and weak lensing [src: same]. The goal is relative to
+  earlier experiments, where Euclid's FoM ≥ 375 is absolute.
+- **Roman.** Two dark-energy questions flow to three Science Objectives
+  (NIR imaging deeper than 26.5 AB; expansion history to z = 2 with SN,
+  WL and redshift surveys; growth history to z = 2 with WL, RSD and
+  clusters, each with cross-checks), then to Level 2 requirements for
+  the spectroscopic survey [src: arXiv:2110.01829, Sect. II.1].
+- **PFS.** Science-yield requirements: ≲ 3% on D_A(z) and H(z) in each
+  of six BAO bins over 0.8 < z < 2.4, ≲ 7% on Ω_de(z), Ω_K to ≲ 0.3%,
+  ≲ 6% on the growth rate per bin from RSD [src: arXiv:1206.0737,
+  Table 4]. They were written to provide "key science requirements for
+  the technical design" and reproduce the conceptual and preliminary
+  design reviews (2012, 2013) [src: Sect. I].
+- **SPHEREx.** Δf_NL < 0.5, "needed to meaningfully discriminate between
+  single-field and multi-field inflation", from many low-accuracy
+  redshifts (power spectrum) and fewer high-accuracy ones (bispectrum)
+  [src: arXiv:2511.02985, Sects. III, III.2].
+- **LiteBIRD.** 2022: Lv1.01, total δr < 10⁻³ including statistical
+  noise, systematics, foreground residuals, lensing and observer bias,
+  "and shall not rely on future external data sets"; Lv1.02, > 5σ from
+  2 ≤ ℓ ≤ 10 and from 11 ≤ ℓ ≤ 200 separately for r = 0.01 and τ = 0.05
+  [src: arXiv:2202.02773, Sect. 3.2, Table 1]. After the reformation:
+  δr < 0.002 (68%, r = 0), with contingency and margins inside, and a
+  statistical target σ_r < 0.001 including foregrounds and lensing; for
+  r = 0.01, independent 3σ detections of the reionisation and
+  recombination bumps [src: arXiv:2607.25285, Sect. 2.1].
 
 ### Step 2. Derive the statistical requirements: sample and survey size
 <!-- key: step-2-derive-the-statistical-requirements -->
@@ -78,6 +113,27 @@ minimum-specification depths in `surveys-and-data.md#imaging-surveys`.
   quality; a ten-year lifetime is the compromise between a 15 m (3 years)
   or 12 m (5 years) mirror and operations cost; the coadd depth then gives
   a minimum effective aperture of 6.4 m [src].
+- **Roman spectroscopy.** HLSS 1: about 1500 deg² (2000 goal), "the
+  minimum required to yield robust BAO/RSD measurements", at least 90%
+  covered by the imaging survey, contiguous where practical. HLSS 2:
+  n > 3 × 10⁻⁴ (h/Mpc)³ at z = 1.6, from shot-noise non-dominance
+  nP(k = 0.2 h/Mpc) ~ 1 with 20% margin, bias b(z) = 1 + 0.5z assumed;
+  "we cannot require a higher galaxy number density than what nature
+  provides" [src: arXiv:2110.01829, Sect. II.1]. The reference survey
+  meeting them maps 2000 deg² to 10⁻¹⁶ erg s⁻¹ cm⁻² at 6.5σ in about
+  0.6 yr [src: abstract]; the survey to be flown is the community-defined
+  wide-area survey (`open-questions.md#cancelled-descoped-or-redefined-projects`).
+- **PFS.** Galaxy-catalogue requirements: 0.8 ≤ z ≤ 2.4 (0.8–1.6
+  minimum), ≥ 2900 galaxies deg⁻², n̄P > 1 (0.8 < z < 1.6) or > 0.5
+  (1.6 < z < 2.4) at k = 0.1 h/Mpc, ≥ 1400 deg², width > 7.5° in at most
+  four regions, about 100 clear nights [src: arXiv:1206.0737, Table 4].
+  The width is 2.5 BAO lengths at the minimum redshift z = 0.8, to be
+  refined by simulation, and the density must exceed SDSS and BOSS LRG
+  densities for reconstruction [src: Sect. II.2.4].
+- **SPHEREx sensitivity.** The redshift number and accuracy depend on
+  point-source sensitivity in bands 1–4, set to better than 18.4 AB
+  (5σ) per spectral channel at the end of the survey [src:
+  arXiv:2511.02985, Sect. III.2].
 
 ### Step 3. Set and split the systematics budget
 <!-- key: step-3-set-and-split-the-systematics-budget -->
@@ -134,6 +190,50 @@ table) [src]. Initial values may be placeholders, then revised by
 simulation and rebalanced when one factor is disproportionate, for
 example by changing technology [src: Sect. 2.4].
 
+**DESC: calibratable against self-calibrated.** RH2 asks that the total
+calibratable systematic uncertainty of each probe be below the
+marginalised statistical uncertainty in the (w0, wa) plane; the
+statistical error already contains self-calibrated systematics
+(intrinsic alignments, galaxy bias, mass–observable scatter), so
+astrophysical systematics may exceed the pure statistical error [src:
+arXiv:1809.01669, Sect. 4]. RH2 is the only requirement applicable to
+the Y1 analysis [src]. The calibratable budget is then scaled so the
+final FoM is exactly 500 [src]. Each requirement is placed by biasing the
+data vector, refitting by Fisher forecast, and reading the distance to
+the edge of the 1σ ellipse, r = sqrt(b · C⁻¹ · b) (Eq. 2), with C the
+marginalised (w0, wa) covariance; the requirement s0/r is then rescaled
+by the effect's share of the budget, combined in quadrature (two equal
+shares get r = 1/√2 each), assuming b linear in s0 [src: App. H2].
+For 3×2pt the calibratable budget is split 0.7 (redshift), 0.2 (number
+density), 0.7 (multiplicative shear), 0.2 (additive shear), chosen to sum
+to 1 in quadrature, the smaller shares going to effects easier to null
+test, with f_sys = 0.62 times the marginalised statistical error in Y10;
+the two redshift items each get 0.7/√7 ≈ 0.25 [src: Sect. 5.2]. Y10
+results: mean source redshift 0.001(1 + z) (Y1 goal 0.002), photo-z
+scatter 0.003(1 + z), redshift-dependent shear calibration 0.003, PSF
+model size 0.1%, stellar contamination 0.1%; additive-shear requirements
+deferred [src: Sect. 5.2]. Compare Euclid: the tolerance there is a
+fraction of σ per parameter (|b/σ| ≤ 0.25 on w0, above), in DESC the
+ellipse edge in (w0, wa) before rescaling.
+
+**LiteBIRD: an equal split.** The 2022 error budget (Lv2.06) gives equal
+amounts to the total statistical error after foreground separation and to
+the total systematic error, σ_stat < 0.6 × 10⁻³ and σ_syst < 0.6 × 10⁻³,
+with margin for the noise penalty of debiasing; lensing and foreground
+uncertainty sit in σ_stat because no external delensing is assumed, and
+observer bias must be much smaller than σ_syst [src: arXiv:2202.02773,
+Sect. 3.3]. The 2026 statistical target σ_r < 0.001 sits inside a total
+of 0.002 (Step 1) [src: arXiv:2607.25285, Sect. 2.1].
+
+**SPHEREx: one number for large-angle errors.** All sources of error
+coherent on ~10° scales must be controlled to 0.2% (rms per dex in
+wavenumber) to measure f_NL^loc = 1; observing from space removes the
+variable atmospheric extinction that limited earlier f_NL studies, and
+Galactic extinction at 3.2 μm is an order of magnitude below the i band
+[src: arXiv:1412.4872, Sect. VIII]. Spurious power from sky-varying
+redshift errors exceeds the requirement and must be corrected by measuring
+the variation of redshift bias and scatter over the sky [src: App. A].
+
 ### Step 4. Derive the instrument requirements
 <!-- key: step-4-derive-the-instrument-requirements -->
 
@@ -165,6 +265,36 @@ Requirements Document, and the VIS flow-down exceeded 4000 requirements
 cosmological parameters, nothing sits above the Science Requirements
 Document [src].
 
+Peers:
+
+- **LiteBIRD** splits requirements into five levels, Lv1 science to Lv5
+  unit specifications, with 11 Lv2 measurement requirements (statistical
+  and systematic uncertainty, scan strategy, resolution, calibration,
+  error and systematic budgets, duration, orbit, observer bias,
+  noise-covariance knowledge); Lv2 "do not assume a specific system",
+  Lv3 apply to the system chosen in trade-off studies, and programme
+  constraints such as the cost cap enter at Lv2 [src: arXiv:2202.02773,
+  Sect. 3.3]. Examples: < 80′ FWHM in the lowest band for ℓ = 200, a
+  three-year observing phase set by cost cap and cooler lifetime, a
+  Lissajous orbit at L2 [src].
+- **PFS instrument** (for the cosmology survey): 650–1260 nm (650–1000
+  minimum), 2400 fibres, overhead < 0.2 of open-shutter time, mean
+  throughput > 22% (red) and > 24% (NIR), R ~ 3000 (red) and ~ 4000
+  (NIR) "to resolve out OH lines but limit read noise", read noise ≤ 3 and
+  ≤ 4 e⁻, sky subtraction < 1% per resolution element [src:
+  arXiv:1206.0737, Table 5].
+- **Roman spectroscopy.** HLSS 3: Hα over 1.1 < z < 1.9; two lines are
+  needed for a grism redshift, hence 1–1.93 μm, chosen beyond what ground
+  surveys reach (z ~ 1) and complementary to Euclid's 1.85 μm cut-off.
+  HLSS 4: σ_z < 0.001(1 + z), outliers beyond 0.005 below 10% and known
+  to 2 × 10⁻³ [src: arXiv:2110.01829, Sect. II.1].
+- **SPHEREx.** Bands 1–4 resolving power and sensitivity come from the
+  f_NL theme; the galaxy-formation theme adds control of noise and
+  systematics on degree scales, the ices theme higher resolving power to
+  5 μm [src: arXiv:2511.02985, Sect. III]; the pixel is the smallest that
+  does not degrade point-source sensitivity at fixed pixel count and
+  time, 6″ [src: Sect. III.3].
+
 ### Step 5. Carry margins
 <!-- key: step-5-carry-margins -->
 
@@ -172,6 +302,14 @@ DESI's "baseline with margin" survey (14,000 deg² against the 9000 deg²
 requirement) forecasts 0.22% and 0.31% on R(z) and 0.84% on H(z) against
 required 0.28%, 0.39% and 1.05% [src: arXiv:2205.10939, Table 3]. Euclid's
 survey delivers median S/N above each channel's requirement (`deep/footprint-tiling-depth.md`).
+SPHEREx defines margin as the difference between the Maximum Expected
+Value performance (each sub-system meeting its specification with
+contingency) and the requirement, and carried 300% margin on its driving
+point-source sensitivity requirement, with no new technology [src:
+arXiv:1412.4872, Sect. I, Fig. 2 caption]. Roman's density requirement
+carries 20% margin for the uncertain Hα luminosity function [src:
+arXiv:2110.01829, Sect. II.1]; LiteBIRD 2026 puts contingency and margins
+inside δr [src: arXiv:2607.25285, Sect. 2.1].
 
 ### Step 6. Verify against data
 <!-- key: step-6-verify-against-data -->
@@ -266,6 +404,19 @@ for future scope [src: arXiv:1210.7691, Sect. 2.3]. A requirement quoted
 without its ℓ range, survey area and source density is not comparable
 (all three enter the denominator of Eq. 25) [src].
 
+### Revising the top-level number
+<!-- key: revising-the-top-level-number -->
+
+LiteBIRD's total requirement went from δr < 10⁻³ (2022, five components,
+no external data) [src: arXiv:2202.02773, Table 1] to δr < 0.002 with
+σ_r < 0.001 statistical (2026), and its large-r requirement from > 5σ to
+independent 3σ bump detections for r = 0.01 [src: arXiv:2202.02773,
+Table 1; arXiv:2607.25285, Sect. 2.1]. Roman's spectroscopic
+requirements were written for a reference survey "to formulate mission
+science requirements", the final survey being defined by a community
+process before launch [src: arXiv:2110.01829, Sect. I]. A requirement is
+tied to the document version it comes from.
+
 ## Numbers
 <!-- key: numbers -->
 
@@ -286,6 +437,16 @@ without its ℓ range, survey area and source density is not comparable
 | Minimum effective aperture | 6.4 m from coadd r ~ 27.5 | LSST | arXiv:0805.2366 | Sect. II.2.1 |
 | SV ELG density | 860 + 180 = 1040 deg⁻² [der: sum] against 1280 required | DESI | arXiv:2306.06307 | Table 5 |
 | VIS flow-down size | > 4000 requirements | Euclid VIS | arXiv:2405.13492 | Sect. 2.1 |
+| Top-level FoM | > 500 (Y10, stat + sys, Stage III priors); per probe > 2 × Stage III | LSST DESC | arXiv:1809.01669 | Sect. 4 |
+| Calibratable budget | f_sys = 0.62 × stat (Y10, non-SN); 3×2pt shares 0.7/0.2/0.7/0.2 | LSST DESC | arXiv:1809.01669 | Sect. 5.2 |
+| 3×2pt Y10 requirements | Δ⟨z⟩ 0.001(1+z); σ_z 0.003(1+z); shear calibration 0.003; PSF size 0.1%; stars 0.1% | LSST DESC | arXiv:1809.01669 | Sect. 5.2 |
+| HLSS area, density | ~1500 deg² (2000 goal); n > 3 × 10⁻⁴ (h/Mpc)³ at z = 1.6 | Roman | arXiv:2110.01829 | Sect. II.1 |
+| HLSS redshifts | 1.1 < z < 1.9 (Hα); σ_z < 0.001(1+z); outliers < 10% | Roman | arXiv:2110.01829 | Sect. II.1 |
+| Cosmology yield | ≲ 3% D_A, H in 6 bins; ≲ 6% growth; Ω_K ≲ 0.3% | PFS | arXiv:1206.0737 | Table 4 |
+| Cosmology catalogue | ≥ 1400 deg²; ≥ 2900 deg⁻²; Δz/(1+z) < 0.0007; < 1% wrong z | PFS | arXiv:1206.0737 | Table 4 |
+| f_NL requirement | Δf_NL < 0.5 → > 18.4 AB (5σ) per channel, bands 1–4 | SPHEREx | arXiv:2511.02985 | Sect. III.2 |
+| Large-angle error budget | 0.2% rms per dex in k for f_NL^loc = 1 | SPHEREx | arXiv:1412.4872 | Sect. VIII |
+| δr requirement | 2022: < 10⁻³ total, σ_stat and σ_syst < 0.6 × 10⁻³ each; 2026: < 0.002 total, σ_r < 0.001 | LiteBIRD | arXiv:2202.02773; arXiv:2607.25285 | Sects. 3.2–3.3; Sect. 2.1 |
 
 ## What goes wrong
 <!-- key: what-goes-wrong -->
@@ -313,26 +474,35 @@ without its ℓ range, survey area and source density is not comparable
 - **Requirements that change after the hardware.** DESI added BGS
   requirements after the instrument was complete [src: arXiv:2205.10939,
   Sect. II.2]; such programmes inherit hardware optimised for others.
+- **Fixed instead of marginalised parameters.** Taking the (w0, wa) block
+  of the Fisher matrix, rather than of its inverse, fixes the other
+  parameters and gives "overly small uncertainties and too-conservative
+  requirements" [src: arXiv:1809.01669, App. H2, footnote 20].
+- **A density nature does not provide.** Roman's density requirement is
+  bounded by the Hα luminosity function, uncertain enough to need a 20%
+  margin [src: arXiv:2110.01829, Sect. II.1]. Check the luminosity
+  function behind a quoted density.
+- **Quoting an old version.** LiteBIRD's δr < 10⁻³ is the 2022
+  requirement, not the 2026 one (Revising the top-level number).
 
 ## Reading list
 <!-- key: reading-list -->
 
-- Foundation: Amara & Réfrégier 2008, arXiv:0710.5171 — bias Fisher
-  formalism and the 10⁻⁷ / 10⁻³ caps.
-- Method: Massey et al. 2013, arXiv:1210.7690 — tolerance criterion by
-  likelihood overlap, joint additive–multiplicative requirement.
-- Method: Cropper et al. 2013, arXiv:1210.7691 — integration over ℓ,
-  subsystem weights and an allocation tree with Euclid values.
-- Application: Euclid Collaboration 2024 (VIS), arXiv:2405.13492,
-  Sect. 2.1 — the Euclid document chain and why the tree was supplemented.
-- Critique: Paykari et al. 2020, arXiv:1910.10521 — end-to-end
-  verification against the flow-down.
-- Application: Abareshi et al. 2022, arXiv:2205.10939, Sects. II–III —
-  DESI Level 1 to Level 4 with reasons.
-- Application: DESI Collaboration 2023, arXiv:2306.06307, Sect. V.3 —
-  requirements against Survey Validation performance and the changes made.
-- Foundation: Ivezić et al. 2019, arXiv:0805.2366, Sects. II.1.5–II.3 —
-  shared constraints, aperture and etendue derivation.
+| Role | Paper | What for |
+|---|---|---|
+| Foundation | Amara & Réfrégier 2008, arXiv:0710.5171 | bias Fisher formalism and the 10⁻⁷ / 10⁻³ caps |
+| Foundation | Ivezić et al. 2019, arXiv:0805.2366, Sects. II.1.5–II.3 | shared constraints, aperture and etendue derivation |
+| Method | Massey et al. 2013, arXiv:1210.7690 | tolerance criterion by likelihood overlap, joint additive–multiplicative requirement |
+| Method | Cropper et al. 2013, arXiv:1210.7691 | integration over ℓ, subsystem weights and an allocation tree with Euclid values |
+| Method | LSST DESC 2018, arXiv:1809.01669, Sects. 4, 5.2, App. H2 | relative FoM goals, calibratable against self-calibrated, ellipse-edge allocation |
+| Application | Euclid Collaboration 2024 (VIS), arXiv:2405.13492, Sect. 2.1 | the Euclid document chain and why the tree was supplemented |
+| Application | Abareshi et al. 2022, arXiv:2205.10939, Sects. II–III | DESI Level 1 to Level 4 with reasons |
+| Application | DESI Collaboration 2023, arXiv:2306.06307, Sect. V.3 | requirements against Survey Validation performance and the changes made |
+| Application | Wang et al. 2022, arXiv:2110.01829, Sect. II.1 | Roman HLSS Level 2 requirements |
+| Application | Takada et al. 2014, arXiv:1206.0737, Sect. II.3 | PFS cosmology survey and instrument requirements |
+| Application | Doré et al. 2014, arXiv:1412.4872, Sect. VIII; Bock et al. 2025, arXiv:2511.02985, Sect. III | SPHEREx systematics budget; science to requirements |
+| Application | LiteBIRD Collaboration 2022, arXiv:2202.02773, Sects. 3.2–3.3; 2026, arXiv:2607.25285, Sect. 2.1 | five-level tree, equal stat/syst split, revised δr |
+| Critique | Paykari et al. 2020, arXiv:1910.10521 | end-to-end verification against the flow-down |
 
 ## Not verified
 <!-- key: not-verified -->
@@ -346,6 +516,11 @@ without its ℓ range, survey area and source density is not comparable
   propagation), cited by arXiv:1910.10521, not read.
 - The DESI Final Design Report (arXiv:1611.00036) derivations of fibre
   number and field from A_survey, T_tile and T_survey.
-- Requirement flow-downs of CMB, radio and spectroscopic projects other
-  than DESI (Simons Observatory, SKA, PFS, 4MOST) were not read for this
-  dossier.
+- 4MOST: the overview (de Jong et al. 2019, arXiv:1903.02464) and the
+  Cosmology Redshift Survey paper (Richard et al. 2019, arXiv:1903.02474)
+  have no HTML rendering; only the CRS abstract was read (about 8 million
+  objects, 0.15 < z < 3.5), so no 4MOST requirement is given. SKA and the
+  Simons Observatory flow-downs were not read; CMB-S4 and SO design
+  drivers are in `deep/cmb-survey-design.md`.
+- The WFIRST-AFTA 2015 report (Spergel et al. 2015, arXiv:1503.03757) has
+  no HTML rendering; read at abstract only.

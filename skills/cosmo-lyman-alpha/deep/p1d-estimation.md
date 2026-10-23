@@ -4,8 +4,11 @@ Scope: how each step of a P1D measurement is carried out (continuum, noise
 power, resolution, weights, masks, covariance), how the FFT and optimal
 quadratic (QMLE) routes differ at each step and why each analysis chose as it
 did, how corrections are derived and validated on synthetic data, and what a
-user of the published DESI DR1 measurements must do.
-Snapshot: 2026-10-16.
+user of the published DESI DR1 measurements must do. Medium-resolution
+surveys (BOSS, eBOSS, DESI) and the high-resolution echelle and X-Shooter
+measurements (Keck/HIRES, VLT/UVES, KODIAQ, SQUAD, XQ-100) are set side by
+side at each step.
+Snapshot: 2026-10-22.
 From: McQuinn 2016 review (arXiv:1512.00086), Sect. 2.1.2; Weinberg et al.
 2003 review (arXiv:astro-ph/0301186), Sect. 2; DESI P1D working group
 (arXiv:2505.09493, arXiv:2505.07974).
@@ -53,12 +56,46 @@ states that a_q and b_q "also absorb the effect of the mean IGM flux and the
 underlying large-scale overdensity field", which biases P1D (Sect. 3.1) and
 is corrected in Step 6.
 
+High-resolution peers, one line each:
+
+- **Walther et al. 2018** (74 HIRES and UVES spectra): no continuum fit of
+  their own; a mean-flux regulation (Lee et al. 2012) fits each sightline's
+  forest by a linear f(z) times F̄ = exp(−τ_eff), τ_eff = C + τ_0[(1+z)/(1+z_0)]^β
+  (Becker et al. 2013 form), and divides f(z) out; chunks of Δz = 0.2
+  (arXiv:1709.07354, Eqs. 2–3) [src: Sect. II.3]. A z = 3 simulation test,
+  true against hand-fitted continuum, changed only the largest scales [src:
+  same, footnote 2].
+- **XQ-100, Iršič et al. 2017**: the official hand-fitted continua of the
+  survey (López et al. 2016), not refitted with the mean flux or the power;
+  synthetic spectra carry a unit continuum (arXiv:1702.01761) [src:
+  Sect. 3.1]. The continuum leak is estimated by measuring the power of the
+  bare continuum fits as if they were absorption, and is small against the
+  errors [src: Sect. 4.5].
+- **KODIAQ + SQUAD + XQ-100, Karaçaylı et al. 2022** (QMLE): spectra divided
+  by the best-fit mean flux of their data set, then cut into three equal
+  rest-frame chunks, chunks shorter than 10% of the forest dropped; a
+  constant and a slope are marginalised per chunk, not per spectrum
+  (arXiv:2108.10870) [src: Sects. 3.1, 4.6].
+
+Walther et al., Karaçaylı et al. 2022 and the DR1 FFT all use 1050–1180 Å in the rest frame
+[src: arXiv:1709.07354, Sect. II.2; arXiv:2108.10870, Sect. 3.1;
+arXiv:2505.09493, Sect. 3.1].
+
 Masks applied before the fit (QMLE): DLA regions with more than 20%
 absorption from a Voigt profile, wings corrected; all possible BAL troughs
 masked without correction; major sky lines (arXiv:2505.07974) [src: Sect. 3.1].
 FFT sub-forests shorter than 75 pixels or with more than 120 masked pixels are
 removed; z_min = 2.1 avoids λ ≲ 3700 Å where atmospheric absorption raises
 the noise (arXiv:2505.09493) [src: Sect. 3.2].
+High resolution: Walther et al. mask DLAs and super-LLSs by eye until the
+wings fall below the noise, keep the longer remaining piece so that no gap
+is added, drop spectra shorter than 10% of a redshift bin (Δz ≈ 0.02), and
+mask metal lines from a list of transitions (their Table 3)
+(arXiv:1709.07354) [src: Sect. II.2]. Karaçaylı et al. 2022 do not mask
+metals (side-band subtraction instead), remove DLAs visually with help from
+a finder and catalogues, and reject reduction artefacts with median-absolute-
+deviation cuts on flux and error, −MAD(F) < F < 1 + MAD(F) and
+σ < median(σ) + 3.5 MAD(σ) (arXiv:2108.10870, Eqs. 1–2) [src: Sect. 3.1].
 
 ### Step 2. Noise power (FFT) or noise matrix (QMLE)
 <!-- key: step-2-noise-power-fft-or-noise-matrix-qmle -->
@@ -94,6 +131,13 @@ noise-including terms average to zero [src: Sect. 4.2]. Choices and reasons
   above, the α-corrected estimate is kept for its smaller errors. With this,
   the noise systematic is dropped from the budget.
 
+**High resolution.** Walther et al. average the |FFT|² of 100 Gaussian
+realisations of each spectrum's 1σ error vector (arXiv:1709.07354) [src:
+Sect. III.1]. XQ-100 takes P_N constant in k, normalised so that
+F̄²σ_N² = (1/π) P_N (k_max − k_min), with σ_N² the mean pixel flux-error
+variance in the redshift bin and k_max the Nyquist scale; tested on
+synthetic data (arXiv:1702.01761, Eqs. 5–7) [src: Sect. 3.5].
+
 **QMLE.** Diagonal noise matrix N_ii = σ_i², the pipeline noise divided by
 continuum and F̄ (arXiv:2008.06421) [src: Sect. 2.1], with η(λ) calibrated in
 side bands: moments ⟨δ⟩, ⟨δ²⟩, ⟨δ⁴⟩ in log σ²_pipe bins, jackknife
@@ -116,6 +160,18 @@ W²(k) P_fid(k, z_ij) with W(k) = e^{−k²R²/2} sinc(kΔv/2) (arXiv:2008.06421
 Eqs. 16–17) [src: Sect. 2.1], and called DESI's resolution matrix "one of
 QMLE's strengths for future analyses" [src: same]. Residual resolution error
 is not corrected but put in the covariance (Step 7).
+
+High resolution: Walther et al. divide by W_R² with W_R = exp[−(kR)²/2]
+sin(kΔv/2)/(kΔv/2) at the nominal slit resolution; at resolving power
+50 000 (R = 2.55 km/s) W_R²(0.1 s/km) ≈ 0.94, so a 20% resolution error
+(unknown seeing) changes the power by ≲ 4% at k < 0.1 s/km
+(arXiv:1709.07354, Eqs. 4–5) [src: Sect. III.1]. Karaçaylı et al. 2022
+correct the nominal XQ-100 and SQUAD resolutions for seeing smaller than the
+slit and budget the rest as σ_Res = r_m P_fid 2k²R̄², r_m = 0.1 (XQ-100, seeing
+known to 10%) and 0.4 (SQUAD); even 40% moves P1D by only 1–3% at
+k = 0.1 s/km (arXiv:2108.10870, Eq. 27) [src: Sects. 3.1, 4.6]. Resolution
+dominates at medium resolution (DESI, `systematics.md#c1-spectral-resolution`)
+and is a minor term at high resolution.
 
 ### Step 4. Estimate
 <!-- key: step-4-estimate -->
@@ -149,6 +205,18 @@ reasons:
 - **Interpolation in z.** Linear rather than top hat, for smoothness; it
   forces each pixel pair into two redshift bins [src: Sect. 2.1].
 
+**Other estimators.** BOSS DR9 built a Fourier-transform and an
+independent maximum-likelihood estimator, with different systematics, on
+13 821 selected spectra; they agree in all twelve bins from z = 2.2 to 4.4,
+0.001–0.02 (km/s)⁻¹ (arXiv:1306.5896) [src]. Walther et al. use a
+Lomb–Scargle periodogram because masked spectra are irregularly sampled,
+logarithmic k bins as McDonald et al. 2000, and equal weight per mode, so
+short spectra are down-weighted (arXiv:1709.07354, Eq. 4) [src: Sect. III.1].
+XQ-100 is a plain FFT tested on synthetic data (arXiv:1702.01761) [src].
+Karaçaylı et al. 2022 run the QMLE separately on KODIAQ + SQUAD (combined at
+spectrum level) and on XQ-100, to keep XQ-100's large resolution
+corrections in check, then combine (arXiv:2108.10870) [src]; see Step 7.
+
 ### Step 5. Masks
 <!-- key: step-5-masks -->
 
@@ -161,7 +229,15 @@ redshift bin (arXiv:2509.13593) [src: Sect. 5.3]. QMLE: masked pixels get
 large errors and drop out; on 100,000 DESI-lite spectra with 15% carrying a
 25 Å masked HCD, ignoring the mask gave χ² ~ 4000 and the large-error
 treatment χ² = 234, "close to the original case" (arXiv:2008.06421) [src:
-Sect. 4.1].
+Sect. 4.1]. Walther et al. write the masked power as P_true convolved with
+the squared transform of the mask (Eq. 6) and, rather than deconvolve,
+divide the data by a correction from forward models generated with and
+without the masks (arXiv:1709.07354) [src: Sect. III.2]: the same principle
+as DESI's mock ratios, with mocks from Lyα forest simulations given the
+noise, resolution and masking of the data [src: abstract]. With DLAs kept rather than masked,
+Karaçaylı et al. 2022 find more large-scale power from the damping wings and
+a ≈ 5% change at medium and small scales from the lower mean flux
+(arXiv:2108.10870) [src: Sect. 4.2, Fig. 8].
 
 ### Step 6. Continuum bias and continuum modes
 <!-- key: step-6-continuum-bias-and-continuum-modes -->
@@ -201,6 +277,24 @@ because "the optimal estimator gives a Gaussian covariance matrix that is
 theoretically the smallest" (arXiv:2505.07974) [src: Sect. 4.4.5]; outliers
 beyond 3.5σ̄ of an amplifier-cleaned mean get quadratically inflated errors
 (1 at z = 2.2, 2 at 2.4, 3 each at 2.6 and 2.8) [src: same].
+
+High resolution, where the sample is small:
+
+- **XQ-100**: 1000 bootstrap resamplings over quasars, each spectrum an
+  independent measurement; on synthetic samples of 100 and 5000 spectra the
+  variance scales as 1/N_Q (arXiv:1702.01761) [src: Sect. 4.4].
+- **Walther et al.**: with n_QSO ~ 10 per bin a data covariance of
+  ~15 × 16/2 entries is too noisy, so the diagonal is bootstrapped from the
+  data and the correlations R_ij come from model skewers,
+  C_ij = σ_data(k_i) σ_data(k_j) R_ij, interpolated in thermal parameters
+  (arXiv:1709.07354, Eqs. 7–8) [src: Sect. III.5].
+- **Karaçaylı et al. 2022**: 25 000 bootstrap realisations; systematics added
+  in quadrature: metals 10% of the side-band power (bin-to-bin fluctuations
+  6% above the bootstrap error, room left for blending), DLA incompleteness
+  1%, continuum-marginalisation inefficiency 10%, resolution as in Step 3;
+  when KODIAQ + SQUAD and XQ-100 are averaged, the DLA, continuum and metal
+  terms are treated as fully correlated and only resolution averages down
+  (arXiv:2108.10870, Eqs. 18, 28–30) [src: Sects. 4.2, 4.6].
 
 ## Choices and what they cost
 <!-- key: choices-and-what-they-cost -->
@@ -273,6 +367,22 @@ precision" with wavelength-dependent sign (Fig. 12); the QMLE paper uses 1.5%
 abstract's wording of the same result. The FFT budget instead applies a
 correction A_res with a 30% error (arXiv:2505.09493) [src: Sect. 6.2].
 
+### Metals: mask the lines or subtract the side-band power
+<!-- key: metals-mask-the-lines-or-subtract-the-side-band -->
+
+- **Mask** (Walther et al. 2018): possible at high resolution, where lines
+  are resolved. Their argument against side bands: power measured redward of
+  Lyα in lower-redshift quasars "can never account for transitions with
+  λ < λ_Lyα,rest which always fall into the forest", such as Si III 1206
+  (arXiv:1709.07354) [src: Sect. III.2]. Metals change the power modestly at
+  k < 0.1 s/km; masking and restricting to k < 0.1 s/km removes their effect
+  [src: abstract].
+- **Subtract** (eBOSS, DESI, Karaçaylı et al. 2022): a statistical side-band
+  estimate, no line masking; at high resolution its error is budgeted at 10%
+  of the side-band power (arXiv:2108.10870) [src: Sects. 3.1, 4.6]. The
+  Si III–Lyα correlation is then modelled in the fit (user recommendations
+  below).
+
 ### Side bands: metals only, or pipeline residuals too
 <!-- key: side-bands-metals-only-or-pipeline-residuals-too -->
 
@@ -281,6 +391,33 @@ check) removes metals redward of 1380 Å and also pipeline residuals, such as
 the blue/red arm overlap at 5800–6350 Å, ~10% of the forest power at high k
 at λ ~ 6000 Å (arXiv:1812.03554) [src: Sect. 3.3]. It is statistical: each
 redshift bin uses different, lower-z quasars [src: same].
+
+### Agreement between measurements, as the papers state it
+<!-- key: agreement-between-measurements-as-the-papers -->
+
+- Walther et al. 2018 agree with BOSS at k < 0.02 s/km where both measure,
+  and reach 5–15% precision at high k (arXiv:1709.07354) [src]. Against the
+  older high-resolution P1D of McDonald et al. 2000 (eight quasars,
+  arXiv:astro-ph/9911196), Croft et al. 2002 (30 HIRES and 23 LRIS spectra,
+  arXiv:astro-ph/0012324) and Kim et al. 2004 (a subset of their data),
+  the shapes match for 0.01 ≲ k ≲ 0.08 s/km; the strongest mismatch is with
+  Croft et al. at z = 2.13 on all scales, where Walther et al. agree with
+  Kim et al. and BOSS and suspect the mean flux or that measurement
+  [src: Sect. IV.3]. Comparisons are limited by conventions: factors of 2 in
+  the Fourier normalisation, F against δ_F (a factor F̄²), metal masking and
+  noise subtraction differ between data sets, and hand continua of
+  high-resolution spectra are biased low, which biases the power of F high
+  [src: same].
+- XQ-100: total error comparable to BOSS in the common range and more than
+  50% smaller at z > 3.6 and k > 0.01 s/km (arXiv:1702.01761) [src].
+- Karaçaylı et al. 2022: the combined KODIAQ + SQUAD + XQ-100 P1D agrees
+  with Iršič et al. 2017, Walther et al. and eBOSS DR14 even at the largest
+  scales, but they advise eBOSS for k ≲ 4 × 10⁻³ s/km, and do not compare
+  directly with Gaikwad et al. 2021, which forward-models the spectra
+  without noise subtraction or window deconvolution (arXiv:2108.10870)
+  [src: Sect. 4.2].
+- DESI DR1 against eBOSS: see the last row of the table below and "What goes
+  wrong".
 
 ## Numbers
 <!-- key: numbers -->
@@ -304,6 +441,15 @@ redshift bin uses different, lower-z quasars [src: same].
 | Corrections, eBOSS DR14 | continuum 1.02–1.05; sky masking 0.82–1.10; DLA masking 0.99–1.00 | eBOSS DR14 | arXiv:1812.03554 | Table 3 |
 | Masking bias, hydro skewers | > 1% at k < 3 Mpc⁻¹ (2% masked); windowed model < 0.5% | MP-Gadget z = 3 | arXiv:2505.02904 | Sect. 3 |
 | eBOSS–DESI offset on common quasars | reduced 2–3×, 5% persists | DR1 | arXiv:2505.07974 | Sect. 5.1 |
+| BOSS DR9 sample | 13 821 spectra; 12 bins z = 2.2–4.4; 0.001–0.02 (km/s)⁻¹; FFT and likelihood agree | BOSS | arXiv:1306.5896 | abstract |
+| Walther sample | 74 HIRES + UVES spectra, 1.8 < z < 3.4, 5–15% at high k | high resolution | arXiv:1709.07354 | abstract |
+| Noise realisations | 100 per spectrum | Walther | arXiv:1709.07354 | Sect. III.1 |
+| Resolution window | W_R²(0.1 s/km) ≈ 0.94 at R = 2.55 km/s; 20% error → ≲ 4% | Walther | arXiv:1709.07354 | Sect. III.1 |
+| XQ-100 sample | 100 X-Shooter spectra, z = 3–4.2, k = 0.003–0.06 s/km | XQ-100 | arXiv:1702.01761 | abstract |
+| Bootstrap samples | 1000 (XQ-100); 25 000 (KODIAQ + SQUAD + XQ-100) | high resolution | arXiv:1702.01761; arXiv:2108.10870 | Sect. 4.4; Sect. 4.2 |
+| KODIAQ + SQUAD + XQ-100 | 538 quasars, z = 2.0–4.6, k < 0.1 s/km; 1276 KS chunks from 464 quasars, 74 XQ-100 quasars | QMLE | arXiv:2108.10870 | abstract; Sect. 3.1 |
+| Systematic terms | metals 10% of SB power; DLA 1%; continuum 10% inefficiency; resolution r_m = 0.1 (XQ-100), 0.4 (SQUAD) | KODIAQ + SQUAD + XQ-100 | arXiv:2108.10870 | Sect. 4.6 |
+| Highest-z, smallest-scale P1D | 15 high-resolution spectra, 4.0 ≲ z ≲ 5.2, −1 ≲ log(k s/km) ≲ −0.7 | Boera et al. | arXiv:1809.06980 | abstract |
 
 ## What goes wrong
 <!-- key: what-goes-wrong -->
@@ -359,6 +505,20 @@ bin; if χ²_ν is bad, "which is likely to happen", inflate the diagonal until
   covariances are validated (KS protocol, continuum bias, masking, resolution).
 - Critique and alternative: Lokken et al. 2025, arXiv:2505.02904 — masking
   biases of FFT estimators and the window-matrix fix with pixel weights.
+- Method, medium resolution: Palanque-Delabrouille et al. 2013,
+  arXiv:1306.5896 — BOSS DR9, FFT and likelihood estimators side by side.
+- Application, high resolution: Walther et al. 2018, arXiv:1709.07354 —
+  HIRES + UVES, Lomb–Scargle, metal masking, forward-modelled mask
+  correction, hybrid covariance, comparison with earlier echelle P1D.
+- Application, X-Shooter: Iršič et al. 2017, arXiv:1702.01761 — XQ-100,
+  official continua, flat noise power, bootstrap.
+- Application, high resolution QMLE: Karaçaylı et al. 2022, arXiv:2108.10870
+  — KODIAQ, SQUAD and XQ-100, seeing-corrected resolution, budget,
+  correlated-systematics combination.
+- Application, z > 4: Boera et al. 2019, arXiv:1809.06980 — 15 spectra,
+  smallest scales at 4 ≲ z ≲ 5.2.
+- History: McDonald et al. 2000, arXiv:astro-ph/9911196, and Croft et al.
+  2002, arXiv:astro-ph/0012324 — the first high-resolution P1D tables.
 
 ## Not verified
 <!-- key: not-verified -->
@@ -367,7 +527,15 @@ bin; if χ²_ν is bad, "which is likely to happen", inflate the diagonal until
   and the BOSS DR9 two-estimator comparison (arXiv:1306.5896): bodies not read.
 - The xQMLE equations and the regularised bootstrap of arXiv:2505.07974
   (Sects. 3.2.1–3.2.2) beyond what L2 states.
-- Whether high-resolution P1D pipelines (arXiv:2108.10870) use the same
-  continuum-bias and masking treatment.
+- Whether the high-resolution pipelines test the three-point continuum bias
+  of Step 6 (not in the sections of arXiv:2108.10870, arXiv:1709.07354 and
+  arXiv:1702.01761 read).
+- Day, Tytler & Kambalur 2019 (87 HIRES quasars, cited by arXiv:2108.10870,
+  Sect. 4.6, for metal blending): three arXiv searches returned no record;
+  no identifier.
+- Kim et al. 2004 (UVES) and Gaikwad et al. 2021: named in arXiv:1709.07354
+  and arXiv:2108.10870, not read.
+- The XQ-100 rest-frame forest range and resolution treatment (Sects. 2.1,
+  3.4 of arXiv:1702.01761, not read).
 - The fitted form of the FFT masking corrections per redshift bin in DR1
   (shown only in figures of arXiv:2509.13593).

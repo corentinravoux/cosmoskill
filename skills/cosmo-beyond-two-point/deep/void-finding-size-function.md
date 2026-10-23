@@ -3,9 +3,11 @@
 Scope: how a void size function (VSF) measurement is turned into a
 cosmological constraint (finder output, cleaning, radius cut, model with its
 threshold, bias, redshift-space and Alcock–Paczynski corrections, likelihood,
-calibration), and how to choose between the calibrated, free-threshold and
-finder-built-for-the-model routes.
-Snapshot: 2026-10-17.
+calibration), and how to choose between the calibrated, free-threshold,
+finder-built-for-the-model and simulation-based (emulator, implicit
+likelihood, HOD forward model) routes, with the other finders and teams at
+each step.
+Snapshot: 2026-10-22.
 From: Cai & Neyrinck 2025 review (arXiv:2503.22532), Sect. 3 (distribution
 function of voids; finding voids); Beyond-2pt challenge (arXiv:2405.02252),
 Sect. V.7 (void size function).
@@ -22,9 +24,12 @@ DR16 values (`results.md#void-size-function`); spurious voids
 ## How it is done
 <!-- key: how-it-is-done -->
 
-The procedure below is the one of the BOSS DR12 analysis (Contarini et al.
-2023, arXiv:2212.03873), which the Euclid forecast (arXiv:2205.11525) and the
-Beyond-2pt void entry (arXiv:2405.02252, Sect. V.7) share. Notation follows
+The backbone below is the procedure of the BOSS DR12 analysis (Contarini et
+al. 2023, arXiv:2212.03873), which the Euclid forecast (arXiv:2205.11525) and
+the Beyond-2pt void entry (arXiv:2405.02252, Sect. V.7) share, built on the
+void tools of the CosmoBolognaLib (Ronconi & Marulli 2017, arXiv:1703.07848,
+designed to be independent of the void finder [src]). Each step then lists
+what other teams do. Notation follows
 arXiv:2212.03873: superscript L for linear and NL for non-linear density
 contrasts, subscript "tr" for the tracer field and "DM" for the matter field.
 
@@ -51,6 +56,38 @@ Song et al. 2025 (BOSS DR16) also run VIDE but use the unmerged low-density
 zones "for avoiding the void-in-void issue", and add an ellipticity
 ε_v = 1 − (I_min/I_max)^{1/4} from the eigenvalues of the inertia tensor of the
 member tracers (arXiv:2501.07817, Eqs. 3–4) [src: Sect. 2.2].
+
+Other finders in use for the VSF, one line each:
+
+- **VIDE on simulations.** GIGANTES runs VIDE on the Quijote halo catalogues:
+  over 10⁹ voids for thousands of cosmological models (arXiv:2107.02304)
+  [src]; Lehman et al. 2025 use VIDE on Quijote halos for their emulators,
+  voids being basins bounded by density maxima of the Voronoi field
+  (arXiv:2502.05262) [src: Sect. 2.3]. Salcedo et al. 2025 keep the original
+  VIDE merging rule, zones joined only if their boundary density is below
+  0.2 times the mean tracer density, to stay sensitive to the galaxy–halo
+  connection in intra-void filaments (arXiv:2504.08221) [src: Sect. II.3].
+- **VIDE on BOSS with implicit likelihood.** Thiele et al. 2023 keep VIDE
+  because earlier work found shape-agnostic finders constrain Σm_ν better
+  than spherical ones (arXiv:2307.07555) [src: Sect. III.1].
+- **Spherical finder.** Bayer et al. 2021 use a spherical void finder on
+  Quijote, and suggest another finder might extract more information
+  (arXiv:2102.05049) [src: Sects. IV.3, VI].
+- **Watershed without spherical shape plus an ellipticity cut**, CSST
+  forecast on a Jiutian semi-analytic mock (Song et al. 2024,
+  arXiv:2402.05492) [src], the route later applied to DR16 above.
+- **Grid-based finder on DESI.** AVISM runs on a regular grid with a survey
+  mask, on DESI DR1 BGS and LRG data first corrected for redshift-space
+  distortions and with the velocity field reconstructed, in two
+  1400³ cMpc³ cubes (Monllor-Berbegal et al. 2026, arXiv:2610.18348) [src:
+  abstract, Sect. 2.3].
+- **Delaunay against Voronoi.** DIVE (Delaunay: voids from empty
+  circumspheres) and VIDE (Voronoi) are both tessellation-based; small
+  changes in tracer positions or density rearrange the tessellation and add
+  scatter to the VSF, which Liu et al. 2026 reduce by subsampling and
+  averaging (arXiv:2606.21864) [src: Sects. I–II]. Their list of families:
+  Delaunay-based WVF, DIVE, Delfin++; Voronoi-based ZOBOV, VIDE, REVOLVER,
+  VAST, VEGA [src: Sect. I].
 
 ### Step 2. Clean the catalogue to match the model's definition of a void
 <!-- key: step-2-clean-the-catalogue-to-match-the-model-s -->
@@ -81,6 +118,16 @@ The authors expect the sharp fall, since cleaning keeps the largest and
 deepest underdensities and shrinks them, which pushes many below the radius
 cut [src: Sect. 2.2].
 
+Routes without cleaning. Simulation-based analyses model the voids exactly
+as the finder returns them: Salcedo et al. note that a forward model can
+take "any void finder" (arXiv:2504.08221) [src: Sect. II.3]; Lehman et al.
+argue that analytic models describe only a subset of watershed voids, while
+emulators of the uncleaned statistics retain more information
+(arXiv:2502.05262) [src]. The free-threshold route (Song et al.) selects by
+ellipticity instead of cleaning (Step 1). Liu et al. report 20–40% gains in
+constraining power from stabilising the tessellation, a different fix for
+catalogue noise (arXiv:2606.21864) [src: Sect. I].
+
 ### Step 3. Choose the threshold
 <!-- key: step-3-choose-the-threshold -->
 
@@ -94,6 +141,11 @@ possibly spurious ones [src: arXiv:2205.11525, Sect. 2.2; arXiv:2405.02252,
 Sect. V.7.2]. The Euclid analysis repeated everything with −0.6 and found
 consistent results [src: arXiv:2205.11525, Sect. 2.2]. The model must be
 evaluated with the same threshold as the cleaning [src: same].
+Elsewhere: in the CSST forecast the fitted linear thresholds run from about
+−0.4 to −0.1 between z = 0.5 and 1.1, far from the δ_v ≃ −2.7 of spherical
+evolution with particle tracers (arXiv:2402.05492) [src]; the DESI DR1
+AVISM catalogue is compared with the SvdW + Vdn model at δ_V^L = −0.55
+(arXiv:2610.18348) [src: Sect. 4.2, Fig. 4].
 
 ### Step 4. Cut small radii
 <!-- key: step-4-cut-small-radii -->
@@ -108,6 +160,9 @@ arXiv:2405.02252, Sect. V.7.4, Caveats]. The cut is set in units of MGS:
 | Euclid Flagship | f_cut(z) MGS, f_cut from 2.30 (lowest bin) to 2.00 (highest), chosen from the drop of counts and the departure from the model | MGS 10.28–14.45 h⁻¹Mpc | arXiv:2205.11525, Sect. 2.2, Table 1 |
 | Beyond-2pt light cone | fixed R̃_min = 33 h⁻¹Mpc in three redshift bins | 6, 7, 6 non-empty radius bins | arXiv:2405.02252, Sect. V.7.4 |
 | BOSS DR16 (free threshold) | ≈ 2.5 MGS, and bins with fewer than 5 voids dropped | 40 and 45 h⁻¹Mpc in the two bins | arXiv:2501.07817, Sect. 3 |
+
+| BOSS CMASS NGC, implicit likelihood | 32 linear bins over 30–80 h⁻¹Mpc, "well above the mean tracer separation"; two z bins split at z = 0.53 | 30 h⁻¹Mpc | arXiv:2307.07555, Sect. III.1 |
+| Quijote, spherical finder (Fisher) | 15 linear bins, set by convergence of the derivatives | 10.4–29.9 h⁻¹Mpc | arXiv:2102.05049, Sect. IV.3 |
 
 The Euclid analysis also removed voids whose centre lies within 30 h⁻¹Mpc of
 the footprint edge and corrected the model for the selected volume [src:
@@ -140,6 +195,19 @@ independent to high accuracy for ΛCDM and the dark-energy models it tests
 [src: arXiv:2205.11525, Sect. 3.2]. The Vdn model reproduces voids in the
 matter field only if they are non-overlapping spheres enclosing δ_v,DM^NL
 [src: arXiv:2212.03873, Sect. II.1].
+
+Predicting the counts without the excursion set: Lehman et al. emulate the
+VSF and void profiles with neural networks trained on Quijote (arXiv:2502.05262)
+[src]; Thiele et al. populate approximate gravity-only simulations with
+massive-neutrino particles with an 11-parameter HOD and use implicit
+likelihood inference, rejecting an emulator plus Gaussian likelihood
+because a 17-dimensional emulator is hard to build and the VSF is not
+Gaussian (arXiv:2307.07555) [src: Sect. I]; Salcedo et al. model the VSF on a
+grid of N-body simulations with an HOD including central and satellite
+assembly bias (arXiv:2504.08221) [src]. In that route the tracer bias of
+Step 6 is replaced by the HOD: raising σ_log M or lowering M_min puts
+centrals in low-mass haloes in underdense regions, which fracture large
+voids into smaller ones (arXiv:2504.08221) [src: Sect. III.1].
 
 ### Step 6. Map the tracer threshold to the matter threshold
 <!-- key: step-6-map-the-tracer-threshold-to-the-matter -->
@@ -186,6 +254,10 @@ and the pipeline is CosmoBolognaLib [src: same]. The BOSS sample has 3 280
 VIDE voids above 30 h⁻¹Mpc, against 5 111.85 on average in the Patchy mocks
 [src: Sect. III.1], in two redshift bins (0.2 < z ≤ 0.45, 0.45 < z < 0.65)
 holding three and four independent radius bins on the data [src: Sect. IV.1].
+Thiele et al. test the Poisson assumption directly and find the VSF "very
+close to Poisson distributed (as long as bins are chosen wide enough)"
+(arXiv:2307.07555) [src: Sect. I]; Song et al. use a Gaussian χ²
+instead (Choices below).
 
 ## Choices and what they cost
 <!-- key: choices-and-what-they-cost -->
@@ -297,6 +369,31 @@ reproduce the measured VSF; the new model with spherical mapping is within
 radii [src: Sect. 5.1]. The review reproduces this comparison as its Fig. 4
 [src: arXiv:2503.22532, Sect. 3]. No data analysis with this model was found.
 
+### Analytic model or simulation-based model
+<!-- key: analytic-model-or-simulation-based-model -->
+
+- **Analytic (Vdn with calibrated or free nuisance).** Cheap, transparent,
+  but needs cleaning or a free threshold and a calibration of the bias
+  inside voids (Steps 2–6).
+- **Emulated summary statistics.** Lehman et al., Quijote halos: Ω_m and σ8
+  recovered to 14.4% and 8.4% from void profiles, σ8 to 6.8% adding the VSF;
+  robust to resolution, and posteriors unchanged with Magneticum baryons
+  (arXiv:2502.05262) [src].
+- **Implicit likelihood on data.** BOSS CMASS NGC with the VSF, the
+  void–galaxy cross power spectrum and P_gg: Σm_ν < 0.43 eV (P_gg) and
+  < 0.35 eV (all), 95%, k_max = 0.15 h Mpc⁻¹, Planck-inspired ΛCDM prior; void
+  statistics may constrain Σm_ν "most effectively from below"
+  (arXiv:2307.07555) [src].
+- **HOD forward model, forecast.** VSF + w_p,vg + w_p,gg in DESI Y5: 1.5% on
+  Ω_m and 0.8% on σ8, **forecast** (arXiv:2504.08221) [src].
+- **Information content, forecasts.** GIGANTES: σ(Σm_ν) = 0.13 eV from voids
+  alone and 0.09 eV with halos for 1 h⁻³Gpc³, no CMB prior, **forecast**
+  (arXiv:2107.02304) [src]; Bayer et al.: P(k) + halo mass function + VSF give
+  σ(M_ν) = 0.018 eV for 1 (h⁻¹Gpc)³, **forecast**, an underestimate without
+  super-sample covariance, baryons and survey systematics (arXiv:2102.05049)
+  [src]. DEMNUni: dark energy and neutrino masses act separably on the VSF
+  (Verza et al. 2022, arXiv:2212.09740) [src].
+
 ## Numbers
 <!-- key: numbers -->
 
@@ -320,6 +417,14 @@ radii [src: Sect. 5.1]. The review reproduces this comparison as its Fig. 4
 | Ellipticity cut | ε_v < 0.15 keeps ≈ 45% | BOSS DR16 | arXiv:2501.07817 | Sect. 3 |
 | Free thresholds | δ_v = −0.162, −0.123 | BOSS DR16 | arXiv:2501.07817 | Table 2 |
 | q_RSD on MXXL halos | 1.058 (q^s), 1.092 (q^l); δR_v = 0.315 and 0.5 | spherical finder, z = 0.99 | arXiv:2007.12064 | Sect. 4.2 |
+| Σm_ν from BOSS voids (implicit likelihood) | < 0.43 eV (P_gg), < 0.35 eV (VSF + P_vg + P_gg), 95% | CMASS NGC | arXiv:2307.07555 | abstract |
+| VSF radius bins, CMASS | 32 linear, 30–80 h⁻¹Mpc, split at z = 0.53 | VIDE | arXiv:2307.07555 | Sect. III.1 |
+| Emulated void statistics | Ω_m 14.4%, σ8 8.4% (profiles); σ8 6.8% with VSF | Quijote | arXiv:2502.05262 | abstract |
+| DESI DR1 voids (AVISM) | 1114 BGS (0.1 < z < 0.3), 216 LRG (0.4 < z < 0.8); bias in voids 1.31 ± 0.02, 2.14 ± 0.04 | DESI DR1 | arXiv:2610.18348 | abstract |
+| SvdW + Vdn threshold for DESI DR1 overlay | δ_V^L = −0.55 | DESI DR1 | arXiv:2610.18348 | Sect. 4.2 |
+| Free thresholds, CSST mock | ≈ −0.4 to −0.1, z = 0.5–1.1 | Jiutian SAM | arXiv:2402.05492 | abstract |
+| DESI Y5 VSF + w_p forecast | Ω_m 1.5%, σ8 0.8% (**forecast**) | HOD grid | arXiv:2504.08221 | abstract |
+| Tessellation stabilisation | 20–40% better constraints | DIVE, VIDE | arXiv:2606.21864 | Sect. I |
 | VERSUS speed | < 20 s at 500³ cells for (2 h⁻¹Gpc)³; ≈ 8 times faster than VIDE for ≈ 4 × 10⁶ galaxies | AbacusSummit | arXiv:2605.03779 | Sect. 5.1 |
 
 ## What goes wrong
@@ -394,13 +499,29 @@ keep the truth within 68% (App. C) [src: arXiv:2212.03873].
   function, failure of Vdn on DEMNUni.
 - Critique: Findlay & Nadathur 2026, arXiv:2605.03779 — finder designed for
   the model; profile bias against count bias.
+- Code: Ronconi & Marulli 2017, arXiv:1703.07848 — CosmoBolognaLib void
+  cleaning and VSF models.
+- Application, simulation-based: Thiele et al. 2023, arXiv:2307.07555 — BOSS
+  voids with implicit likelihood, Poisson test.
+- Method, emulator: Lehman et al. 2025, arXiv:2502.05262 — neural emulators
+  of VSF and profiles on Quijote.
+- Data set: Kreisch et al. 2022, arXiv:2107.02304 — GIGANTES VIDE catalogues.
+- Forecast: Bayer et al. 2021, arXiv:2102.05049 (spherical finder, P + HMF +
+  VSF); Salcedo et al. 2025, arXiv:2504.08221 (HOD forward model, DESI Y5);
+  Song et al. 2024, arXiv:2402.05492 (CSST, free threshold); Verza et al.
+  2022, arXiv:2212.09740 (DEMNUni, dark energy and neutrinos).
+- Method, finders: Liu et al. 2026, arXiv:2606.21864 — DIVE against VIDE,
+  tessellation instability.
+- Data: Monllor-Berbegal et al. 2026, arXiv:2610.18348 — DESI DR1 AVISM void
+  catalogues and VSF.
 
 ## Not verified
 <!-- key: not-verified -->
 
-- Bernardeau 1994 (the fitting formula of Step 5) and Ronconi & Marulli 2017
-  (the cleaning code): cited through arXiv:2212.03873 and arXiv:2205.11525,
-  not read; no identifier recorded.
+- Bernardeau 1994 (the fitting formula of Step 5): cited through
+  arXiv:2212.03873 and arXiv:2205.11525, not read; no identifier recorded.
+  Ronconi & Marulli 2017 (arXiv:1703.07848): abstract read, the cleaning
+  algorithm itself is taken from arXiv:2212.03873.
 - How Song et al. 2025 built the covariance C of Eq. 13 (not in the sections
   read).
 - The companion BOSS paper combining the VSF with other probes (ref. [33] of
@@ -408,4 +529,8 @@ keep the truth within 68% (App. C) [src: arXiv:2212.03873].
   2024 named in arXiv:2503.22532: not read.
 - Whether the Poisson approximation holds for cleaned voids at Stage-IV
   volume: L2 cites a simulation check (arXiv:2307.07555), not re-read here.
-- No DESI VSF cosmology was found in a date-sorted search from 2025-06-01.
+- No DESI VSF cosmology was found in date-sorted searches (2025-06-01, and
+  again 2026-10-22); the DESI DR1 AVISM catalogue (arXiv:2610.18348) shows a
+  VSF against theory but fits no cosmology. The DIVE paper (Zhao et al.
+  2016), the Pylians void finder and the REVOLVER, VAST and VEGA papers were
+  not read.

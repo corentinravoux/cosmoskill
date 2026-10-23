@@ -94,7 +94,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 6k; methods 12k; results 12k; surveys 5k; systematics 11k; deep/cib-cross-correlations 6k; deep/isw 7k; deep/ksz-gas-profiles 8k; deep/ksz-velocity-reconstruction 8k; deep/other-secondaries 7k; deep/tsz-cross-correlations 7k.
+Sizes, in thousands of tokens: L1 3k; open 6k; methods 12k; results 12k; surveys 5k; systematics 11k; deep/cib-cross-correlations 8k; deep/isw 7k; deep/ksz-gas-profiles 11k; deep/ksz-velocity-reconstruction 8k; deep/other-secondaries 7k; deep/tsz-cross-correlations 7k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

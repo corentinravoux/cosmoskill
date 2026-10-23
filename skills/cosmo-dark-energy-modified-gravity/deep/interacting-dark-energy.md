@@ -4,8 +4,12 @@ Scope: how an interacting-dark-energy (IDE) fit is set up (coupling form,
 sign convention, perturbation treatment, code, priors, data), why the
 same background data that prefer `w0wa` also prefer a coupling, and what
 separates the two descriptions; for a reader about to run or referee an
-IDE analysis.
-Snapshot: 2026-10-17.
+IDE analysis. The worked example is the coupled-fluid / coupled-quintessence
+fit of the Zhang group (ePPF, IDECAMB); the fluid route with `w ≃ −1`
+(Di Valentino and Nunes group), the geodesic interacting vacuum (Pan, Yang
+et al.), pure momentum exchange (dark scattering) and the Planck 2015
+collaboration analysis are given beside it, step by step.
+Snapshot: 2026-10-22.
 From: Li 2026 review (arXiv:2606.21826), Sects. III.1 and III.3.
 
 Already in L2, not repeated here: the one-line claim "interacting dark
@@ -55,6 +59,18 @@ phantom-crossing EoS" in a non-interacting analysis [src: Sect. III.1].
 | Coupled quintessence (CQ) | Lagrangian with dark-matter mass `m(phi) ∝ exp(−beta sqrt(kappa) phi)`, `kappa = 8 pi G`; `Q_μ = −beta rho_c sqrt(kappa) ∂_μ phi`, background `Q = beta rho_c sqrt(kappa) phi'/a` (Eqs. 4, 11–12); potential `U = U_0 (sqrt(kappa) phi)^{−alpha}` (Eq. 5) | `alpha`, `beta` | arXiv:2601.07361 |
 | Running coupling | `Q(a) = 3 beta(a) H0 rho_0`, `rho_0 = rho_de0 + rho_c0`, `beta(a) = beta_0 a + beta_e (1 − a)` (Eq. 11) | `beta_0`, `beta_e` | arXiv:2606.21826, Sect. III.1 |
 | Binned coupling | interacting vacuum with `beta(z)` in 20 bins and a Gaussian smoothness prior | 20, about 3 effective | Li and Zhang 2025, arXiv:2506.18477 [src: abstract] |
+| Fluid, `Q = xi 𝓗 rho_DE`, `w ≃ −1` | `Q` enters the dark-matter equation with `+` sign (Eqs. 2–3), `xi < 0` means transfer from dark matter to dark energy; `w` not sampled | `xi` | Silva et al. 2025, arXiv:2503.23225, Sects. II.1, III; Giarè et al. 2024, arXiv:2404.15232, model section |
+| Geodesic interacting vacuum, `Q ∝ H rho_dm` | `w = −1`, `rho_dm ∝ a^(−3+delta_0)`, hence `Q = −delta_0 H rho_dm` (Eq. 5) | `delta_0` | Pan et al. 2025, arXiv:2504.00994, Sect. II |
+| Transfer potential in trace-free Einstein gravity | `w = −1`, energy-momentum transfer potential proportional to `rho_c` | `epsilon` | Zhai et al. 2025, arXiv:2503.15659 [src: abstract] |
+| Coupled quintessence, Planck 2015 | `m(phi) = m_0 exp(−beta phi)`, `V = V_0 phi^(−alpha)`, `w ≈ −2/(alpha + 2)`, `G_eff = G(1 + 2 beta²)` for dark matter (Eqs. 54–57) | `alpha`, `beta` | Planck 2015 XIV, arXiv:1502.01590, Sect. 5.3.4 |
+| Dark scattering (pure momentum exchange) | no energy transfer, background unchanged; friction `A(a) = [1 + w(a)] (H0²/H) 3 xi Omega_DE/(8 pi G)` in the Euler equation (Eqs. 5–6), `xi > 0` in bn/GeV, with CPL `w(a)` | `xi` (or `A_ds = (1 + w) xi`), `w0`, `wa` | Tsedrik and Bose 2025, arXiv:2512.17684, Sect. 2 |
+
+The Planck 2015 coupled quintessence is the same Lagrangian model as the CQ
+row above (exponential mass coupling, inverse-power-law potential): Planck
+fixes `V_0` by an iterative routine valid for `alpha ≥ 0.03` (about
+`w = −0.99`) and notes that `w` is "not an independent parameter", being
+degenerate with the flatness of the potential [src: arXiv:1502.01590,
+Sect. 5.3.4].
 
 Why `H` or `H0` in the kernel: an energy-transfer rate needs an inverse
 time; `H` keeps the background equations analytically tractable, while the
@@ -104,6 +120,34 @@ What this buys and costs: ePPF lets the sampler explore the whole
 (see "What goes wrong"). The Gavela et al. stability condition is a property
 of the fluid model; with ePPF it no longer acts as a prior.
 
+Other treatments in use, one line each:
+
+- **Fluid with `w = −1 + epsilon` and a fixed flow direction.** Giarè et al.
+  regularise the early-time super-horizon instability by `w = −1 + epsilon`,
+  `epsilon ≃ 10⁻⁴`, and require `xi < 0` (dark matter to dark energy)
+  [src: arXiv:2404.15232, model section, footnote 2]; Silva et al. implement
+  the same kernel in CLASS with MontePython and a flat prior
+  `xi ∈ [−1, 0]` (`[−1.5, 1.5]` for the sign-switching variant) [src:
+  arXiv:2503.23225, Sect. III, Table 1]. These papers share Gavela's
+  convention, in which `xi < 0` with `w > −1` gives `d = xi/[3(1 + w)] < 0`
+  [der: Eq. 40 of arXiv:0901.1611], so here the stability condition does
+  act as a prior.
+- **Geodesic dark matter, unperturbed vacuum.** Pan et al. take
+  `Q^μ ∥ u^μ_c` (energy exchange without momentum transfer), so dark matter
+  stays geodesic, the vacuum is homogeneous (`delta_de = theta_de = 0`), and
+  only the dark-matter continuity equation gains a term in `delta_0`
+  (synchronous gauge, CDM frame, Eqs. 9–10); the prior on `delta_0` is
+  two-sided, `[−1, 1]` [src: arXiv:2504.00994, Sect. II, Table 1].
+- **Scalar field solved directly.** Planck 2015 integrates the Klein–Gordon
+  equation with the dark-matter source term, `phi'' + 2𝓗 phi' + a² dV/dphi =
+  a² beta rho_c` (Eq. 56), each component treated as a fluid [src:
+  arXiv:1502.01590, Sect. 5.3.4].
+- **Momentum exchange only.** In dark scattering the growing mode requires
+  the friction to vanish early, `w0 + wa < −1/2`; linear growth agrees with a
+  modified CLASS within 1–2% over the prior range, and non-linear scales use
+  the halo-model reaction (ReACT) with a CosmoPower emulator
+  [src: arXiv:2512.17684, Sect. 2].
+
 ### Step 4. Sample with the CMB computed consistently
 <!-- key: step-4-sample-with-the-cmb-computed-consistently -->
 
@@ -131,6 +175,17 @@ TT to ℓ < 1000 and TE/EE to ℓ < 600, ACT DR6 and SPT-3G "lite"
 likelihoods, joint Planck + ACT + SPT lensing, DESI DR2 BAO, and one of
 Pantheon+, DESY5 or DES-Dovekie [src: arXiv:2601.07361, Sect. II].
 
+Peers: Silva et al. sample `100 theta_s` in CLASS, with Planck 2018 Plik
+TT/TE/EE, low-ℓ SimAll, Planck lensing, DESI DR2 and one of Pantheon+,
+Pantheon+ with SH0ES calibration, Union3 or DESY5 [src: arXiv:2503.23225,
+Sect. III]; Pan et al. sample `100 theta_MC` with Planck 2018, DESI DR2,
+cosmic chronometers and Pantheon+, Union3 or DESY5 [src: arXiv:2504.00994,
+Table 1, abstract]; Tsedrik and Bose fit DES Y3 3×2pt with DESI DR2 BAO,
+DESY5 and Planck [src: arXiv:2512.17684, abstract]. Silva et al. combine
+only data sets not in tension with CMB + DESI DR2 for the sign-switching
+model; DESY5 reaches 4.64σ there and is left out [src: arXiv:2503.23225,
+Sect. IV.2].
+
 ### Step 5. Report coupling, fit and model comparison
 <!-- key: step-5-report-coupling-fit-and-model-comparison -->
 
@@ -142,6 +197,16 @@ the profile of `beta` has a well-defined minimum away from zero for both
 models, approximately parabolic, "comparable" to the marginalised
 significance [src: main text].
 
+Peers report differently. Planck 2015 found the CQ coupling 2.5σ (TT) to
+2.8σ (with polarisation) from zero for Planck + BSH, yet "the goodness of
+fit does not improve"; it points to the `beta`–`alpha` degeneracy, under
+which marginalising over `alpha` gives more weight to larger `beta`, as a
+possible prior dependence [src: arXiv:1502.01590, Sect. 5.3.4]. Pan et al.
+report `Delta chi2_min`, AIC and Bayesian evidence together: the first
+mildly favours the interaction for most data sets, the others favour ΛCDM
+[src: arXiv:2504.00994, abstract]. Silva et al. give `Delta chi2_min` and
+`Delta AIC` per data combination [src: arXiv:2503.23225, Table 2].
+
 ## Choices and what they cost
 <!-- key: choices-and-what-they-cost -->
 
@@ -152,6 +217,9 @@ significance [src: main text].
 |---|---|---|
 | Li et al. 2026; Li 2026 review | `rho_c' + 3𝓗 rho_c = −aQ` | transfer from dark matter to dark energy |
 | Gavela et al. 2009 | `rho_dm' + 3𝓗 rho_dm = xi 𝓗 rho_de` (Eq. 29) | transfer from dark energy to dark matter |
+| Silva et al. 2025; Giarè et al. 2024 | `rho_DM' + 3𝓗 rho_DM = Q`, `Q = xi 𝓗 rho_DE` (Eq. 2) | `xi > 0`: dark energy to dark matter (`xi < 0` imposed: the reverse) |
+| Pan et al. 2025 | `rhȯ_dm + 3H rho_dm = −Q`, `Q = −delta_0 H rho_dm` (Eqs. 4–5) | `delta_0 > 0`: dark matter dilutes more slowly, `a^(−3+delta_0)` |
+| Planck 2015 XIV | `rho_c' = −3𝓗 rho_c − beta rho_c phi'` (Eq. 55) | larger positive `beta`: more transfer from dark matter to dark energy |
 
 So `beta > 0` in one paper and `xi > 0` in the other mean opposite
 directions of flow. Gavela et al. give `w_de^eff = w + xi/3` (Eq. 32) and
@@ -201,6 +269,32 @@ behaviour; CMB + DESI DR2 + DESY5 gives `Delta chi2_MAP = −17.76` and
 from a PCA [src: arXiv:2506.18477, abstract]. The primary papers behind the
 first three statements were not read here.
 
+Constant couplings with `w` fixed near −1, read in other groups' papers:
+
+- Planck 2018 + DESI DR1, `Q = xi 𝓗 rho_DE`: `xi = −0.32 (+0.18/−0.14)`,
+  `H0 = 70.8 (+1.4/−1.7)`; the model gives lower `Omega_m` and higher
+  `sigma8`, "which may not be fully consistent" with large-scale-structure
+  data [src: arXiv:2404.15232, abstract].
+- Same kernel with DESI DR2: the significance falls; DR2 moves `Omega_m`
+  up with about half the error, and since more negative `xi` means less
+  dark matter, the higher `Omega_m` drives `xi` towards zero [src:
+  arXiv:2503.23225, Sect. IV.1]. Adding Pantheon+, Union3 or DESY5 gives
+  only lower bounds on `xi`, the tightest with DESY5 [src: same, Table 2].
+- Geodesic interacting vacuum, `Q ∝ H rho_dm`: a preference "at slightly
+  more than 1σ however still within 2σ", "no strong evidence" [src:
+  arXiv:2504.00994, abstract].
+- Trace-free Einstein gravity, `Q ∝ rho_c`: `epsilon ~ 10⁻⁴`; CMB and SN
+  alone do not favour it, DESI 2024 BAO adds a 1σ preference for transfer
+  from dark matter to dark energy, driven by the low-redshift BAO points
+  that favour a lower `Omega_m` [src: arXiv:2503.15659, abstract].
+
+The two pictures as the papers give them: with a free `w` and ePPF, Li et
+al. find the CQ coupling away from zero with Pantheon+, DESY5 and
+DES-Dovekie alike [src: arXiv:2601.07361, Table 1]; with `w ≃ −1` and the fixed sign,
+Silva et al. find DESY5 pulls the coupling to its tightest bound near zero
+[src: arXiv:2503.23225, Table 2]. The models differ (free or fixed `w`,
+kernel, perturbation scheme, prior range); neither paper compares the two.
+
 ### Why IDE and w0wa cannot be separated by distances
 <!-- key: why-ide-and-w0wa-cannot-be-separated-by -->
 
@@ -247,6 +341,15 @@ arXiv:2601.07361, Conclusion].
 | CQ `Omega_m`, `S8`, `H0` | 0.2986 ± 0.0051; 0.8253 ± 0.0095; 68.01 ± 0.54 | CMB without lensing + DESI + DES-Dovekie | arXiv:2601.07361 | Table 6 |
 | Binned interacting vacuum | `Delta chi2_MAP = −17.76`, `ln B = 5.98 ± 0.69`, ≈ 3 effective d.o.f. | CMB + DESI DR2 + DESY5 | arXiv:2506.18477 | abstract |
 | Coupled quintessence, early bound | `abs(beta) ≤ 0.1` | data of 1999 | arXiv:astro-ph/9908023 | abstract |
+| Planck CQ `beta` | < 0.066 (95%) TT + lowP; 0.037 (+0.018/−0.015) + BSH; 0.036 (+0.016/−0.013) TT,TE,EE + lowP + BSH | Planck 2015 + BAO, SN, `H0` | arXiv:1502.01590 | Table 9 |
+| Planck CQ `alpha`, `H0` | 0.29 (+0.077/−0.26); 67.47 (+0.88/−0.79) | Planck TT + lowP + BSH | arXiv:1502.01590 | Table 9 |
+| Fluid `xi`, `w ≃ −1` | −0.32 (+0.18/−0.14), `H0 = 70.8 (+1.4/−1.7)` | Planck 2018 + DESI DR1 | arXiv:2404.15232 | abstract |
+| Fluid `xi`, `w ≃ −1` | −0.132 (+0.087/−0.064), `Delta chi2_min = +1.1`, `Delta AIC = +3.1` | Planck 2018 + DESI DR2 | arXiv:2503.23225 | Table 2 |
+| Same, with SN | `xi > −0.0538` (Pantheon+), `> −0.0220` (DESY5), `> −0.0630` (Union3); `Delta chi2_min` +1.38, +2.32, +0.5 | Planck 2018 + DESI DR2 + SN | arXiv:2503.23225 | Table 2 |
+| Same, with SH0ES-calibrated Pantheon+ | −0.116 (+0.060/−0.050), `H0 = 69.61 ± 0.44`, `Delta chi2_min = −2.20` | Planck 2018 + DESI DR2 + PPS | arXiv:2503.23225 | Table 2, Sect. IV.1 |
+| Geodesic vacuum `delta_0` | −0.00059 ± 0.00034 (CMB + DESI); −0.00044 (+0.00034/−0.00033) (+ DESY5); inner of the two printed intervals | Planck 2018 + DESI DR2 (+ SN) | arXiv:2504.00994 | results table, Sect. III |
+| Dark scattering `A_ds`; `w0`, `wa` | 9.8 (+2.8/−9.5) bn/GeV; −0.79 (+0.05/−0.06), −0.56 (+0.24/−0.15) (CPL alone: −0.76 ± 0.06, −0.77 (+0.23/−0.20)) | DES Y3 3×2pt + DESI DR2 + DESY5 + Planck | arXiv:2512.17684 | abstract |
+| FoM gain from DES Y3 on (`w0`, `wa`) | ~12% CPL, ~25% dark scattering | same vs DESI + SN + CMB | arXiv:2512.17684 | abstract |
 
 Reading the table: the IDE Δχ² values sit within about 2 of CPL with the
 same number of extra parameters (two); the extra fit of CF over CPL is 1.5
@@ -268,6 +371,9 @@ for the same data.
   restricts the prior to the stable region imposes a theoretical prior that
   shapes the posterior. Test: state whether perturbations use ePPF (or an
   equivalent), and whether the prior was cut by the doom-factor sign.
+  Examples of such cuts in use: `xi < 0` with `w = −1 + 10⁻⁴`
+  [src: arXiv:2404.15232, footnote 2]; `xi ∈ [−1, 0]` [src:
+  arXiv:2503.23225, Table 1].
 - **Sign mixed between papers.** See "Sign conventions". Test: rewrite both
   continuity equations before comparing.
 - **One-sided priors and corner limits.** In CQ, `beta ≥ 0` and `alpha > 0`
@@ -292,6 +398,20 @@ for the same data.
   that ΛCDM-calibrated prescriptions do not capture (Zhai et al. 2026,
   arXiv:2606.11368) [src: abstract]. Test: do not combine IDE with
   non-linear weak-lensing scales modelled by a ΛCDM halofit or HMcode.
+  Tools that do model the non-linear regime: ReACT for dark scattering
+  [src: arXiv:2512.17684, Sect. 2]; the Euclid preparation suite includes
+  CiDER coupled-quintessence runs with c-GADGET (`beta` = 0.03, 0.05, 0.08,
+  background fixed to ΛCDM, suppressed growth) [src: arXiv:2409.03523,
+  Sect. 3.7].
+- **A marginal peak without a better fit.** Planck 2015 found a 2.5–2.8σ
+  CQ coupling with no improvement in overall χ² and suspects the
+  `beta`–`alpha` degeneracy under marginalisation [src: arXiv:1502.01590,
+  Sect. 5.3.4]; the same corner structure as the Li et al. priors above.
+  Test: profile likelihood and `Delta chi2` beside the marginal interval.
+- **Different statistics, different verdicts.** In one paper the same fits
+  are mildly favoured by `Delta chi2_min` and disfavoured by AIC and the
+  Bayesian evidence [src: arXiv:2504.00994, abstract]. Test: report all
+  three with the number of added parameters.
 - **Background degeneracy read as detection.** Kunz's argument and the
   explicit mapping of arXiv:1911.02618 (above) mean that a coupling and a
   `w(z)` are two names for the same `H(z)`. Evidence that a coupling rather
@@ -329,6 +449,18 @@ for the same data.
   interacting-vacuum coupling.
 - Critique: Zhai et al. 2026, arXiv:2606.11368 — non-linear structure in
   IDE is not captured by ΛCDM-calibrated prescriptions.
+- Collaboration: Planck 2015 XIV, arXiv:1502.01590, Sect. 5.3.4 — coupled
+  quintessence with Planck, BAO, SN, `H0`, WL and RSD; prior-dependence caveat.
+- Collaboration (simulations): Euclid preparation LXIII, arXiv:2409.03523 —
+  CiDER coupled-quintessence N-body runs.
+- Application (fluid, `w ≃ −1`): Giarè et al. 2024, arXiv:2404.15232
+  (DESI DR1); Silva et al. 2025, arXiv:2503.23225 (DESI DR2, CLASS).
+- Application (geodesic vacuum, `Q ∝ H rho_dm`): Pan et al. 2025,
+  arXiv:2504.00994 — `Delta chi2`, AIC and evidence side by side.
+- Application (trace-free gravity, `Q ∝ rho_c`): Zhai et al. 2025,
+  arXiv:2503.15659.
+- Application (momentum exchange): Tsedrik and Bose 2025, arXiv:2512.17684
+  — dark scattering with DES Y3 3×2pt, ReACT.
 
 ## Not verified
 <!-- key: not-verified -->
@@ -341,5 +473,9 @@ for the same data.
   residuals (Sect. III.2) and the full Table 6 rows for CF beyond `Omega_m`.
 - The review of Wang et al. on dark-sector interactions (cited as [63] in
   arXiv:2601.07361): not read.
-- Whether any collaboration (DESI, DES, ACT, SPT) has published an IDE
-  analysis: none was found in the searches made for this dossier.
+- Collaboration IDE analyses: Planck 2015 (above) is the one read. No DESI,
+  DES, ACT or SPT collaboration fit of an IDE model was found in the
+  searches of 2026-10-17 and 2026-10-22; Euclid has simulations only.
+- The tables of arXiv:2504.00994 and arXiv:2503.23225 were read without
+  their captions' confidence-level conventions beyond what is stated above;
+  the value of `w` used by Silva et al. is not stated in the sections read.

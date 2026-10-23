@@ -4,8 +4,11 @@ Scope: how the non-linear matter power spectrum is built from the halo model
 and from the halofit and HMcode-2020 prescriptions (equations, fitted
 parameters, filters, spherical-collapse inputs, massive neutrinos), how the
 low-mass part of the two-halo integral is made to converge, which version a
-code actually runs, and how to check a prescription against its calibration.
-Snapshot: 2026-10-17.
+code actually runs, and how to check a prescription against its calibration;
+the alternatives, simulation emulators (EuclidEmulator 1 and 2, Mira-Titan
+Cosmic Emu, BACCO, Aemulus ν) and the halo-model reaction (ReACT), and the
+comparisons between all of them.
+Snapshot: 2026-10-22.
 From: Asgari 2023 halo-model review (arXiv:2303.08752), Sects. 2, 3 and 5;
 DES Y3 (halofit, arXiv:2105.13548) and KiDS-Legacy (HMcode-2020,
 arXiv:2503.19441) choices. Feedback in sibling dossier
@@ -185,7 +188,48 @@ included [src: App. A]. Choices compared [src: Sects. 3.2–3.4]:
   26 massive-neutrino Mira-Titan nodes this CAMB version "performs worse,
   especially for high neutrino masses" than Takahashi without explicit ν
   dependence; the authors suspect differences in how simulations treat
-  neutrinos (linear, semi-linear, particle) [src: App. B].
+  neutrinos (linear, semi-linear, particle) [src: App. B]. The
+  EuclidEmulator2 team makes the same diagnosis from the other side: EE2
+  finds on average about 3 % less power than the Bird et al. halofit at
+  intermediate scales, consistent with PM-based neutrino simulations
+  finding less power than particle-neutrino ones, as Bird et al. report
+  (arXiv:2010.11288, Sect. 8.2.3) [src].
+- Halo-model reaction: Cataneo et al. 2019b predict the total-matter P(k)
+  with massive neutrinos to percent level out to k = 10 h/Mpc from standard
+  halo mass function and concentration fits, and to better than 1 % with
+  halo properties refined on N-body runs (arXiv:1909.02561) [src].
+
+### Step 7. Emulate the simulations instead
+<!-- key: step-7-emulate-the-simulations-instead -->
+
+| Emulator | Training set and method | Range | Stated accuracy | Source |
+|---|---|---|---|---|
+| EuclidEmulator | PKDGRAV3 runs, polynomial chaos expansion of the non-linear correction (NLC), designed on mock emulators built from Takahashi halofit | z ≤ 5 (simulations converged to k ≈ 5 h/Mpc) | NLC ∼ 0.3 % vs N-body; full P(k) ∼ 1 % for k ≲ 1 h/Mpc, z ≲ 3.5 | arXiv:1809.04695 |
+| EuclidEmulator2 | > 250 paired-and-fixed PKDGRAV3 runs, 3000³ particles in 1 (h⁻¹ Gpc)³, linear evolution of ν, photons, DE and metric, N-body gauge, resolution correction | w0waCDM + Σm_ν, 8 parameters, z ≤ 3, 0.01 ≤ k ≤ 10 h/Mpc | NLC 1 % or better; blind test on Flagship v2.0 | arXiv:2010.11288 |
+| Mira-Titan (Cosmic Emu) II | 36 models, one high-resolution run each plus 16 medium-resolution runs and TimeRG perturbation theory | 8 parameters with ν and w0wa; k ∼ 5 Mpc⁻¹, z ≤ 2 | ≈ 4 % | arXiv:1705.03388 |
+| Mira-Titan IV | 111 runs, (2.1 Gpc)³, 3200³ particles, plus 1776 lower-resolution runs and TimeRG | same 8 parameters | 2–3 % | arXiv:2207.12345 |
+| BACCO | cosmology rescaling of a few large runs (L ∼ 2 Gpc, 4320³) to 800 points of an 8-parameter space; neural network | 0 < z < 1.5, 10⁻² < k < 5 h/Mpc | 2 % (ΛCDM), 3 % (w0wa, ν) | arXiv:2004.06245 |
+| Aemulus ν | 150 runs of (1.05 h⁻¹ Gpc)³, neutrinos as particles to 0.5 eV, Zel'dovich control variates | wνCDM, 0 ≤ z ≤ 3 | ≤ 1 % for k ≤ 1, ≤ 2 % for k ≤ 4 h/Mpc | arXiv:2303.09762 |
+
+[src: abstracts; BACCO also Sect. 2.1]. BACCO's runs have 6 times better
+mass resolution, 50 % larger volume and twice the spatial resolution of
+those of the first EuclidEmulator, and 2 times better mass resolution than
+Mira-Titan, which the authors attribute to running only 6 simulations
+thanks to rescaling (arXiv:2004.06245, Sect. 2.1) [src].
+
+### Step 8. The halo-model reaction (response) approach
+<!-- key: step-8-the-halo-model-reaction-response-approach -->
+
+ReACT writes P_NL(k, z) = ℛ(k, z) P^pseudo_NL(k, z) (Eq. 1), where the
+pseudo cosmology has ΛCDM physics with initial conditions rescaled so that
+its linear spectrum equals the target one, P^pseudo_L = P_L (Eq. 2), and
+the reaction ℛ is a ratio of halo-model spectra (Cataneo et al. 2019, as given in
+arXiv:2005.12184, Sect. 2.2) [src: Sects. 2–2.2]. The halo model thus
+enters only as a ratio; any ΛCDM non-linear prescription that accepts the
+modified linear spectrum can supply P^pseudo_NL. ReACT used HMcode
+2015/2016, accurate to 5 % for k < 10 h/Mpc, and that is the limiting
+error at k ≤ 5 h/Mpc; beyond, the error of ℛ is of the same order
+[src: Sect. 2.1].
 
 ## Choices and what they cost
 <!-- key: choices-and-what-they-cost -->
@@ -219,6 +263,45 @@ w0–wa reaches 1.3% RMS on the non-linear spectrum against EuclidEmulator2
 (Sui et al. 2024, arXiv:2410.14623) [src: abstract]. Their reference is an
 emulator, so their error adds to the emulator's own.
 
+### Fitting function, reaction or emulator: what the comparisons find
+<!-- key: fitting-function-reaction-or-emulator-what-the -->
+
+- DEMNUni (Parimbelli et al. 2022, arXiv:2207.13677), against N-body with
+  massive neutrinos and w0wa, z ≤ 2, k ≲ 1 h/Mpc (where the simulations
+  are ∼ 1 % accurate): HMcode and ReACT "considerably improve" over the
+  Smith and Takahashi halofit (both with the Bird correction), agreeing to
+  2 % in all scenarios; EuclidEmulator2 agrees to ≲ 1 % at low z with
+  massless neutrinos and dynamical dark energy, up to ∼ 2 % at z = 2;
+  baccoemu behaves similarly except for a couple of dark-energy models;
+  ratios to ΛCDM agree at sub-per-cent or per-cent level for all
+  prescriptions [src: abstract].
+- EuclidEmulator2 against HMcode (2016 version): few-per-cent agreement
+  over all cosmologies and redshifts, virtually perfect on large scales
+  (arXiv:2010.11288, Sect. 8.2.4) [src]; against Bird halofit, systematic
+  oscillations near the BAO and the ∼ 3 % offset of Step 6 [src:
+  Sect. 8.2.3].
+- Emulators against each other, both sides: the first EuclidEmulator was
+  "shown to be more accurate" than halofit and Cosmic Emu
+  (arXiv:1809.04695) [src]; BACCO finds sub-per-cent agreement with it for
+  the Euclid reference cosmology but a ∼ 5 % spread for other cosmologies,
+  even at k < 1 h/Mpc, which "might suggest" uncertainties in the
+  EuclidEmulator beyond its quoted precision (arXiv:2004.06245,
+  Sect. 3.2.3) [src].
+
+### Baryons: HMcode-2020's model or baryonification
+<!-- key: baryons-hmcode-2020-s-model-or-baryonification -->
+
+HMcode-2020 carries its own feedback model (sibling dossier). The
+baryonification route displaces particles of gravity-only runs:
+Schneider et al. 2019 emulate the suppression and find that ignoring
+baryons biases Ω_m and σ8 by more than 5σ in a Euclid-like shear
+analysis, while cutting to large scales removes the bias but enlarges the
+Ω_m–σ8 contour by more than 10 (arXiv:1910.11357) [src]. The BACCO
+baryonification emulator, calibrated on more than 50 000 measurements in
+15 parameters, reaches 1–2 % for 0.01 < k < 5 h/Mpc and 0 < z < 1.5, also
+against 74 hydrodynamical simulations, and finds that one parameter, M_c,
+is enough at a given epoch (Aricò et al. 2020, arXiv:2011.15018) [src].
+
 ### Integrating the full halo model or the fitted model
 <!-- key: integrating-the-full-halo-model-or-the-fitted -->
 
@@ -245,6 +328,16 @@ model with its normalisation fix (Step 2), not HMcode.
 | Sheth–Tormen constants | p = 0.3, q = 0.707, A ≃ 0.216 | HMcode-2020 | arXiv:2009.01858 | Eq. 18 |
 | syren-halofit | 3% → < 2% (refit) → 1% (corrected) RMS vs EuclidEmulator2 | ΛCDM | arXiv:2402.17492 | abstract |
 | syren-new | 1.3% RMS non-linear, 0.3% linear, 0.1% σ8 | ν + w0wa | arXiv:2410.14623 | abstract |
+| EuclidEmulator2 NLC | ≤ 1% for 0.01 ≤ k ≤ 10 h/Mpc, z ≤ 3 | w0waCDM + Σm_ν | arXiv:2010.11288 | abstract |
+| EuclidEmulator2 vs Bird halofit | ≃ 3% less power at intermediate k | 84 test cosmologies | arXiv:2010.11288 | Sect. 8.2.3 |
+| Mira-Titan IV | 2–3% | 111 runs, 8 parameters | arXiv:2207.12345 | abstract |
+| BACCO matter emulator | 2% (ΛCDM), 3% (w0wa, ν); 10⁻² < k < 5 h/Mpc, z < 1.5 | 800 rescaled cosmologies | arXiv:2004.06245 | abstract |
+| BACCO vs EuclidEmulator (1) | sub-per-cent (Euclid reference); ∼5% spread otherwise | — | arXiv:2004.06245 | Sect. 3.2.3 |
+| Aemulus ν matter surrogate | ≤ 1% (k ≤ 1), ≤ 2% (k ≤ 4 h/Mpc), 0 ≤ z ≤ 3 | wνCDM | arXiv:2303.09762 | abstract |
+| ReACT pseudo-spectrum limit | 5% for k < 10 h/Mpc (HMcode 2015/16) | — | arXiv:2005.12184 | Sect. 2.1 |
+| Reaction with ν | percent to k = 10 h/Mpc; < 1% with refined halo properties | — | arXiv:1909.02561 | abstract |
+| DEMNUni comparison | HMcode, ReACT 2%; EE2 ≲ 1% (low z), ∼2% (z = 2) | ν + w0wa, k ≲ 1 h/Mpc, z ≤ 2 | arXiv:2207.13677 | abstract |
+| BACCO baryonification | 1–2%, 0.01 < k < 5 h/Mpc; 74 hydro runs | 15 parameters | arXiv:2011.15018 | abstract |
 
 ## What goes wrong
 <!-- key: what-goes-wrong -->
@@ -274,7 +367,18 @@ model with its normalisation fix (Step 2), not HMcode.
   (arXiv:2303.08752, Sect. 3.7.2).
 - **Emulator-based accuracy claims.** A fit judged against EuclidEmulator2
   (arXiv:2402.17492, arXiv:2410.14623) inherits the emulator's own error;
-  compare with N-body where the paper does.
+  compare with N-body where the paper does. Emulators also disagree with
+  each other by more than their quoted errors in some cosmologies
+  (arXiv:2004.06245, Sect. 3.2.3).
+- **Emulator outside its box.** EE2's sub-per-cent validation used three
+  cosmologies inside the ellipsoid inscribed in its parameter box; the
+  error "is likely to exceed the 1% limit" outside it, and is dominated by
+  the simulations at k ≳ 5 h/Mpc (arXiv:2010.11288, Sect. 8.2.1) [src].
+  Check the emulator's ranges against the prior.
+- **Reaction error read as the reaction's.** In ReACT the pseudo spectrum's
+  prescription, not ℛ, limits accuracy below k ≃ 5 h/Mpc
+  (arXiv:2005.12184, Sect. 2.1); name the prescription used for
+  P^pseudo_NL.
 
 ## Reading list
 <!-- key: reading-list -->
@@ -294,6 +398,20 @@ model with its normalisation fix (Step 2), not HMcode.
 - Application: Sui et al. 2024, arXiv:2410.14623 — symbolic spectra with
   neutrinos and w0wa.
 - Context: Mead et al. 2015, arXiv:1505.07833 — original HMcode (in L2).
+- Code: Euclid Collaboration: Knabenhans et al. 2019, arXiv:1809.04695, and
+  2020, arXiv:2010.11288 — EuclidEmulator 1 and 2, their tests against
+  halofit, HMcode, Cosmic Emu and BACCO (Sect. 8.2).
+- Code: Lawrence et al. 2017, arXiv:1705.03388, and Moran et al. 2022,
+  arXiv:2207.12345 — Mira-Titan Cosmic Emu.
+- Code: Angulo et al. 2020, arXiv:2004.06245 — BACCO rescaling emulator
+  and its comparison with other methods (Sect. 3.2.3).
+- Code: DeRose et al. 2023, arXiv:2303.09762 — Aemulus ν.
+- Method: Bose et al. 2020, arXiv:2005.12184 — ReACT and the pseudo
+  cosmology; Cataneo et al. 2019b, arXiv:1909.02561 — reaction with ν.
+- Critique: Parimbelli et al. 2022, arXiv:2207.13677 — DEMNUni comparison
+  of halofit, HMcode, ReACT, baccoemu and EuclidEmulator2.
+- Method (baryons): Schneider et al. 2019, arXiv:1910.11357; Aricò et al.
+  2021, arXiv:2011.15018.
 
 ## Not verified
 <!-- key: not-verified -->
@@ -306,3 +424,7 @@ model with its normalisation fix (Step 2), not HMcode.
 - The baryonic part of HMcode-2020 (Sect. 6): left to the sibling dossier.
 - Whether current CAMB and CLASS releases still default to the halofit
   variants described in arXiv:2009.01858 (2020): no code documentation read.
+- The original reaction paper (Cataneo et al. 2019, cited in arXiv:2005.12184), the Dark Emulator, CSST
+  emulator and HMx: seen by title or citation only; no statement made.
+- DEMNUni body (which HMcode version, per-model numbers): only the
+  abstract read.

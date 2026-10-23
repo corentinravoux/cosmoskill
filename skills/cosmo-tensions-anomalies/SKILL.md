@@ -85,7 +85,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; cosmological-principle 5k; open 7k; methods 9k; results 17k; surveys 5k; systematics 10k; deep/anomaly-significance 7k; deep/cmb-bao-mismatch 8k; deep/cosmic-dipoles 8k; deep/high-redshift-galaxies 8k; deep/large-angle-cmb-anomalies 8k; deep/theoretical-resolutions 8k.
+Sizes, in thousands of tokens: L1 3k; cosmological-principle 6k; open 7k; methods 9k; results 17k; surveys 5k; systematics 10k; deep/anomaly-significance 7k; deep/cmb-bao-mismatch 8k; deep/cosmic-dipoles 8k; deep/high-redshift-galaxies 8k; deep/large-angle-cmb-anomalies 8k; deep/theoretical-resolutions 10k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

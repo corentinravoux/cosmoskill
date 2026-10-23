@@ -2,7 +2,7 @@
 
 Scope: the observables, estimators, covariance models and likelihoods used in direct
 peculiar-velocity cosmology, with the equations as the cited papers write them, their range of
-validity, and the public codes. Snapshot: 2026-10-14
+validity, and the public codes. Snapshot: 2026-10-22
 
 Indicators and surveys: `surveys-and-data.md` §0–1; published fσ8 by family: `results.md` §0.
 Equations are transcribed from the LaTeX source of the cited paper, read this session, in that
@@ -11,11 +11,24 @@ paper's notation: symbols differ between sections.
 ## 0. Method families
 <!-- key: method-families -->
 
-Folded on 2026-10-20 from the compilation of 2026-08-12/14, in which `[src]` meant "traced to the
-paper" and `[der]` "relabelled or derived, the paper does not quote fσ8".
-Grouped by **what the estimator does to the data before fitting**, not by the optimiser: almost
-every analysis maximises a likelihood, so "maximum likelihood" is a fitting detail, not a family.
-Boundaries follow each paper's own words; "Rows" counts rows of the fσ8 table (`results.md` §0).
+The reviews and comparison papers draw the families differently. Their classifications are set
+side by side here; none is the field's single one. The fσ8 table of `results.md` §0 is sorted
+by the last.
+
+| Classification | Families | Place read |
+|---|---|---|
+| Dekel 1994 review | analysis of observed peculiar velocities; motions predicted from the galaxy distribution | arXiv:astro-ph/9401022, contents |
+| Strauss & Willick 1995 review | velocity surveys alone; velocity surveys combined with redshift surveys (velocity–density comparison) | arXiv:astro-ph/9502079, abstract |
+| Turner 2024 review | bulk flows; two-point statistics; velocity field reconstructions; maximum-likelihood estimators, which "model the covariance between the two fields analytically" | arXiv:2411.19484, Sects. 5.1–5.4 |
+| DESI DR1 consensus (Turner et al. 2025) | two-point summary statistics, in Fourier space (Park 2000, Howlett 2017c, Qin 2019, 2025) or configuration space (Nusser 2017, Wang 2018, Dupuy 2019, Courtois 2023, Turner 2023, Lyall 2024); maximum-likelihood methods (Johnson 2014, Huterer 2017, Adams & Blake 2020, Lai 2023); reconstruction, the velocity field "inferred from the measured galaxy density field and then directly compared to discrete velocity measurements point-by-point" (Davis 2011, Turnbull 2012, Carrick 2015, Said 2020, Lilow & Nusser 2021, Qin 2023, Boubel 2024, Stiskalek 2025) | arXiv:2512.03230, Sect. 1 |
+| Blake & Turner 2024, comparison | two "important classes": the "power-spectrum method" (2-point spectra of velocity and density tracers, fitted) and the "reconstruction-and-scaling method" (a model velocity field compared point by point) | arXiv:2408.05660, abstract |
+| Adams & Blake 2020, literature comparison | covariance analyses; multi-tracer approaches; 6dFGS RSD and velocity results; density–velocity comparison approaches, whose fσ8 it calls "velocity-velocity constraints" | arXiv:2004.06399, Sect. 5.2 |
+| Velocity Field Olympics (Stiskalek et al. 2025), reconstructions only | by constraint (redshift-space galaxy positions, or direct distance tracers) and by dynamics (BORG, non-linear; linear theory) | arXiv:2502.00121, abstract, Sect. 2.1 |
+| This package's compilation (2026-08, folded 2026-10-20) | by what the estimator does to the data before fitting; the fitting technique is a separate axis (table below) | — |
+
+The compilation's families, with "Rows" the rows of the fσ8 table (`results.md` §0); in that
+compilation `[src]` meant "traced to the paper" and `[der]` "relabelled or derived, the paper does
+not quote fσ8":
 
 | Family | What it does | Depends on | Rows | Here |
 |---|---|---|---|---|
@@ -24,16 +37,32 @@ Boundaries follow each paper's own words; "Rows" counts rows of the fσ8 table (
 | Velocity–density comparison, linear | the velocity field is *predicted* from a redshift-survey density field by **linear theory** — directly, or through a Wiener filter / constrained realisation, still linear dynamics | an external density field, its bias, linear theory | 13 | §5 |
 | Velocity–density comparison, particle forward model | the same, with the field evolved from initial conditions by a **gravity solver on a particle field** (LPT, COLA, particle-mesh, N-body), mildly non-linear | the solver, its resolution, the initial-condition prior | **0** | §5 |
 
-The fitting technique is a separate axis: forward likelihood (Boruah 2020, Stahl 2021), forward
-model (Boubel 2024), hierarchical Bayes (Stiskalek 2026, Ma+2012), MCMC, χ². The families fail
-differently: on the covariance model; on the estimator and template; on the external density field
-and linear theory. Turner (2024) Table 1 puts "maximum-likelihood" beside "power spectrum" and
-"correlation function" (a fitting label among observables) and groups Howlett+2017 with the
-maximum-likelihood analyses, though it measures and fits the velocity power spectrum (its abstract
-finds the Watkins & Feldman estimator "suitable for measuring the velocity power spectrum") [src:
-arXiv:1706.05130, abstract]. Per Lai+2023, "In the development of the maximum likelihood fields
-method, Adams & Blake (2017) were the first to simultaneously model..."; Lai+2023 (arXiv:2209.04166)
-and the DESI analysis (arXiv:2512.03229) name the method in their own abstracts.
+There, almost every analysis maximises a likelihood, so "maximum likelihood" is a fitting
+detail; the fitting technique is forward likelihood (Boruah 2020, Stahl 2021), forward model
+(Boubel 2024), hierarchical Bayes (Stiskalek 2026, Ma+2012), MCMC or χ². The families fail
+differently: on the covariance model; on the estimator and template; on the external density
+field and linear theory.
+
+Where the classifications place one analysis differently:
+
+- **"Maximum likelihood" as a family or a technique.** Turner 2024 and the DESI DR1 consensus
+  make it a family (above); the compilation makes it a technique. Turner (2024) Table 1 groups
+  Howlett+2017 with the maximum-likelihood analyses, though it measures and fits the velocity
+  power spectrum (its abstract finds the Watkins & Feldman estimator "suitable for measuring the
+  velocity power spectrum") [src: arXiv:1706.05130, abstract]. Per Lai+2023, "In the development
+  of the maximum likelihood fields method, Adams & Blake (2017) were the first to simultaneously
+  model..."; Lai+2023 (arXiv:2209.04166) and the DESI analysis (arXiv:2512.03229) name the method
+  in their own abstracts.
+- **Forward-modelled indicator likelihoods** (Said 2020, Boubel 2024, Stiskalek 2025): the DESI
+  consensus lists them under reconstruction; the compilation under linear velocity–density
+  comparison, the forward model being the fitting technique.
+- **Courtois et al. 2023 (Cosmicflows-4)**: a configuration-space correlation function in the
+  DESI consensus, and its abstract gives its fσ8 "using the pairwise correlation of radial
+  peculiar velocities" [src: arXiv:2211.16390, abstract]; a Hamiltonian Monte Carlo
+  reconstruction that samples the growth rate in the Velocity Field Olympics [src:
+  arXiv:2502.00121, Sect. 2.1.5].
+- **Bulk flows** are a family in Turner 2024; the other rows classify growth-rate estimators and
+  leave them out (§6).
 
 ## 1. The observable: log-distance ratio, and the velocity estimators built on it
 <!-- key: the-observable-log-distance-ratio-and-the -->

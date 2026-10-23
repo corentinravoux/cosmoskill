@@ -122,3 +122,14 @@ Choustikov2023	2305.09337	Choustikov	2023	Optimizing the Evolution of Perturbati
 Fidler2026	2605.05114	Fidler	2026	Effective Field Theory of Large Scale Structure and Newtonian Motion Gauges	method
 Philcox2026	2610.13867	Philcox	2026	The Redshift-Space Galaxy Power Spectrum at Two-Loop Order	method
 Kiakotou2008	0709.0253	Kiakotou	2007	Neutrino Mass, Dark Energy, and the Linear Growth Factor	method
+Knabenhans2019EE1	1809.04695	Euclid Collaboration	2018	Euclid preparation: II. The EuclidEmulator -- A tool to compute the cosmology dependence of the nonlinear matter power spectrum	code
+Knabenhans2021EE2	2010.11288	Euclid Collaboration	2020	Euclid preparation: IX. EuclidEmulator2 -- Power spectrum emulation with massive neutrinos and self-consistent dark energy perturbations	code
+Lawrence2017MiraTitan	1705.03388	Lawrence	2017	The Mira-Titan Universe II: Matter Power Spectrum Emulation	code
+Moran2022MiraTitan	2207.12345	Moran	2022	The Mira-Titan Universe IV. High Precision Power Spectrum Emulation	code
+Angulo2020BACCO	2004.06245	Angulo	2020	The BACCO Simulation Project: Exploiting the full power of large-scale structure for cosmology	code
+DeRose2023Aemulus	2303.09762	DeRose	2023	Aemulus $\nu$: Precise Predictions for Matter and Biased Tracer Power Spectra in the Presence of Neutrinos	code
+Bose2020ReACT	2005.12184	Bose	2020	On the road to percent accuracy IV: ReACT -- computing the non-linear power spectrum beyond $\Lambda$CDM	method
+Cataneo2019nu	1909.02561	Cataneo	2019	On the road to percent accuracy III: non-linear reaction of the matter power spectrum to massive neutrinos	method
+Parimbelli2022	2207.13677	Parimbelli	2022	DEMNUni: comparing nonlinear power spectra prescriptions in the presence of massive neutrinos and dynamical dark energy	critique
+Schneider2019BCM	1910.11357	Schneider	2019	Baryonic effects for weak lensing. Part I. Power spectrum and covariance matrix	method
+Arico2020	2011.15018	Aricò	2020	The BACCO Simulation Project: A baryonification emulator with Neural Networks	method

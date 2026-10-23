@@ -1,7 +1,7 @@
 # Machine learning in cosmology — systematics
 
 Scope: the failure modes specific to machine-learning methods in cosmology: simulator dependence, misspecification, out-of-distribution inputs, training-set size, emulator error, overconfidence, reproducibility.
-Snapshot: 2026-10-17
+Snapshot: 2026-10-22
 
 Flags: as in `physics-and-methods.md`.
 
@@ -14,7 +14,10 @@ the Universe, do not share: sub-grid feedback, unconverged small-scale halo
 properties, galaxy-finder choices. Applied to data from another simulator
 it can be biased and overconfident at once.
 
-**Size, where measured.**
+**Size, where measured.** Most published tests use the CAMELS suites (one
+box size, one set of codes); the rows after the CAMELS block below test
+other N-body codes, other hydrodynamic runs (Magneticum, EAGLE, BAHAMAS)
+and real data.
 
 | Test | Outcome | Reference |
 |---|---|---|
@@ -32,6 +35,11 @@ it can be biased and overconfident at once.
 | Galaxy GNN trained on Astrid, positions + v_z, tested on IllustrisTNG, SIMBA, Magneticum, SWIFT-EAGLE, SB28 | in-suite RMSE 0.043, relative error 11.8%, χ² 1.65; across suites RMSE 0.015–0.047, relative error 4.0–13.1%, χ² 0.25–2.38; worst on SB28. Adding stellar mass: in-suite error 9.6%, across suites 10.7–20.7% and χ² up to 14.2. Models trained on IllustrisTNG or SIMBA extrapolated worse than the Astrid one | arXiv:2302.14101 [src: Sect. IV.1, IV.2] |
 | Same CROCODILE test, numbers read in the body (201 L50 Sobol runs, SB35-trained GNN of Genel et al., frozen) | Ω_m RMSE 0.035 in distribution → 0.132 ± 0.019 (mean relative error 24%), σ8 0.093 → 0.124 ± 0.007; R² = −0.43 ± 0.43 and −0.21 ± 0.15; mean χ² 30 ± 8 and 25 ± 6 (truncated; 56 and 265 untruncated). 46 runs have more galaxies than any of the 1024 training graphs; without them the Ω_m RMSE is 0.053 but σ8 stays overconfident (χ² 22 ± 6). At fixed cosmology, raising the galaxy count from 5.1 × 10³ to 9.2 × 10³ moves σ8 from 0.74 to 0.89, about 2.5 predicted σ. The 27 fiducial CV runs are recovered and calibrated (χ² 1.1 and 1.4) | arXiv:2609.23982 [src: Sect. IV.2, Fig. 10] |
 | Lyα P1D NPE, train IllustrisTNG, test SIMBA, k_max = 3 h Mpc⁻¹ | needs the mean flux rescaled first (the models differ by ~5–15% at z ≳ 3; without it the parameters are "severely biased"); then Ω_m roughly unbiased with larger scatter, σ8 biased high by ~10%, posteriors overconfident in coverage and TARP. Multi-domain training on 475 + 475 runs, tested on 25 + 25, recovers both parameters | arXiv:2603.13011 [src: Sect. IV.2, IV.3] |
+| Field-level CNN on matter slices, trained on 1000 Gadget runs, tested on 50 each of Abacus, CUBEP³M, PKDGrav3, Ramses and CAMELS IllustrisTNG | non-AMR codes recovered (R² ~ 1; slightly larger σ8 error on Abacus); Ramses (AMR) above 20% error on Ω_m and σ8 (Ω_m high, σ8 low); tests at twice the resolution biased "in all cases"; the N-body-trained network is biased in σ8 on IllustrisTNG, no worse than on Ramses. A PQMass out-of-distribution test flags Abacus, CUBEP³M and PKDGrav3 although their inference is almost unbiased; smoothing brings the codes into agreement | Bayer et al. 2025, arXiv:2505.13620 [src: Table 1, Sect. III.3; abstract] |
+| Cluster masses from X-ray profiles, trained on Magneticum, tested on IllustrisTNG | the network gains 17% on the training data and loses 40% on the test set; scatter augmentation does not help; a domain-adaptation network (DRRN) aligns the latent spaces but stays worse than the Y_X scaling relation | Ntampaka et al. 2025, arXiv:2510.09748 [src] |
+| Halo masses from synthetic HSC-like galaxy images, IllustrisTNG, EAGLE and SIMBA, trained on one and tested on another | without domain adaptation biased and overconfident; MMD adaptation lowers the normalised residual β by 31% on average, up to 57% | Garuda et al. 2026, arXiv:2603.12380 [src] |
+| SIDM cross-section from cluster images, BAHAMAS-SIDM and DARKSKIES | a latent-space clustering flags mock observations unlike either training suite, so their parameter estimates can be discarded | Tregidga et al. 2025, arXiv:2511.09660 [src] |
+| SimBIG WST on BOSS, after discarding the coefficients inconsistent across TEST0/1/2 (TEST2 on AbacusSummit with CompaSO) and mapping the observation back into the training support | σ8 histograms consistent across the three test sets; Ω_m = 0.32 ± 0.02, σ8 = 0.80 ± 0.02, 1.4 and 3.1 times tighter than a perturbation-theory P(k) analysis | Pierre et al. 2025, arXiv:2507.03086 [src: Sect. II.2.3, II.2.4, Fig. 2; abstract] |
 
 **Mitigation.** Train on several simulators (multi-domain training,
 arXiv:2603.13011 [src]); unsupervised domain adaptation by maximum mean
@@ -41,10 +49,20 @@ arXiv:2311.01588 [src]); restrict inputs to quantities on which codes are
 converged (arXiv:2209.06843 [src]); remove the scales that fail the
 cross-simulator test (k ≳ 0.3 h Mpc⁻¹ for SimBIG WST, arXiv:2310.15250
 [src]); self-supervised pre-training on a cheap simulator then a frozen
-encoder (arXiv:2608.26354 [src]).
+encoder (arXiv:2608.26354 [src]); outside CAMELS, MMD adaptation across
+IllustrisTNG, EAGLE and SIMBA (arXiv:2603.12380 [src]), smoothing the
+field until N-body codes agree (arXiv:2505.13620 [src]), and discarding
+simulator-inconsistent summary components before a learned transform of
+the observation (arXiv:2507.03086 [src]). Domain adaptation is not always
+enough: from Magneticum to IllustrisTNG it stayed worse than a scaling
+relation (arXiv:2510.09748 [src]).
 
 **Validation.** Test on a simulator never seen in training, with its own
-sub-grid model and finder, and report both bias and calibration there.
+sub-grid model and finder, and report both bias and calibration there;
+test at another resolution too (arXiv:2505.13620 [src: Sect. III.3]). A
+field-level out-of-distribution metric can flag a test set whose inference
+is nonetheless unbiased, so it is a conservative diagnostic, not a
+substitute for the inference test (same, Sect. III.3).
 The DES Y3 map-level design does this with Buzzard mocks, built from HOD
 galaxy catalogues on a different N-body code, against CosmoGridV1
 training mocks generated at the pixel level; Buzzard drives parameter

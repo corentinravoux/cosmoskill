@@ -119,3 +119,14 @@ Cornish2025	2510.19912	Cornish	2025	Systematics mitigation for catalogue-based a
 Amon2021	2105.13543	Amon	2021	Dark Energy Survey Year 3 Results: Cosmology from Cosmic Shear and Robustness to Data Calibration	results
 RodriguezMonroy2021	2105.13540	Rodríguez-Monroy	2021	Dark Energy Survey Year 3 Results: Galaxy clustering and systematics treatment for lens galaxy samples	systematics
 Alvarez2022	2203.07347	Alvarez	2022	Snowmass2021 Computational Frontier White Paper: Cosmological Simulations and Modeling	review
+Winther2015	1506.06384	Winther	2015	Modified Gravity N-body Code Comparison Project	critique
+Euclid2024MGsims	2409.03522	Euclid Collaboration	2024	Euclid preparation. Simulations and nonlinearities beyond $\Lambda$CDM. 1. Numerical methods and validation	critique
+Li2012ECOSMOG	1110.1379	Li	2011	ECOSMOG: An Efficient Code for Simulating Modified Gravity	code
+Llinares2014ISIS	1307.6748	Llinares	2013	ISIS: a new N-body cosmological code with scalar fields based on RAMSES. Code presentation and application to the shapes of clusters	code
+Puchwein2013	1305.2418	Puchwein	2013	Modified Gravity-GADGET: A new code for cosmological hydrodynamical simulations of modified gravity models	code
+Ruan2022MGGLAM	2110.00328	Ruan	2021	Fast full N-body simulations of generic modified gravity: conformal coupling models	code
+Ganjoo2026	2604.15434	Ganjoo	2026	PySCo-EFT and ECOSMOG-EFT: a tandem of N-body simulation codes for the Effective Field Theory of Dark Energy	code
+GarciaQuintero2019	1908.00290	Garcia-Quintero	2019	ISiTGR: Testing deviations from GR at cosmological scales including dynamical dark energy, massive neutrinos, functional or binned parametrizations, and spatial curvature	code
+Pace2019EoS	1905.06795	Pace	2019	Dark sector evolution in Horndeski models	code
+Pace2021QSA	2011.05713	Pace	2020	Comparison of different approaches to the quasi-static approximation in Horndeski models	critique
+Seljak2003	astro-ph/0306052	Seljak	2003	A comparison of cosmological Boltzmann codes: are we ready for high precision cosmology?	critique

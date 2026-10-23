@@ -7,7 +7,7 @@ LVK merger data (early-Universe binary rate, suppression factor,
 hierarchical likelihood), how monochromatic curves are translated to
 extended mass functions and combined, and which assumptions move each
 curve.
-Snapshot: 2026-10-18.
+Snapshot: 2026-10-22.
 From: Carr et al. 2026 review, Sects. II–VI; LISA Cosmology WG 2022,
 Sect. 10; microlensing surveys (HSC, OGLE, EROS, MACHO) and LVK sub-solar
 searches.
@@ -143,6 +143,19 @@ K = 4, "as suggested by numerical simulations"; the most conservative
 choice would be γ = 2, K = 1 [src: same]. It dominates above f_PBH ≈ 0.1
 and strengthens the edges of the excluded region [src: Sect. IV.1].
 
+Other rate models:
+
+- **LVK sub-solar search** (LVK 2021, arXiv:2109.12197): an equal-mass
+  population uniformly distributed in comoving volume, two nearest
+  neighbours torqued by the next closest PBH (Eqs. 3–4), Planck cosmology,
+  no suppression factor; the authors note that binary disruption by close
+  PBHs, clusters and matter inhomogeneities suppress the rate and would
+  loosen their bound [src: Sect. III, App. A].
+- **Clustered PBHs** (Jedamzik 2020, arXiv:2007.03565): early-Universe
+  binaries are taken as negligible (from a companion paper) and the rate is
+  computed for mergers inside PBH clusters, with a QCD-epoch mass function
+  or one from a peak in the curvature spectrum [src: abstract].
+
 ### LVK mergers, step 2: the likelihood
 <!-- key: lvk-mergers-step-2-the-likelihood -->
 
@@ -166,6 +179,29 @@ same catalogue [src: Sects. II, IV]:
    f_PBH ~ LogU(10⁻⁵, 1), m_c ~ LogU(0.1, 10³) M☉ (Table 2), using events
    with SNR > 11 and inverse false-alarm rate > 4 yr [src: Sect. IV.2].
 
+Other likelihoods:
+
+- **Mixed with astrophysical channels** (Franciolini et al. 2021,
+  arXiv:2105.03349): hierarchical Bayesian inference on GWTC-2 mixing a PBH
+  population with common-envelope (CE), globular-cluster (GC),
+  nuclear-star-cluster (NSC) and stable-mass-transfer (SMT) channels, with
+  free mixing fractions; p_det from the same single-detector semi-analytic
+  method with SNR threshold 8; uniform hyperpriors, the accretion cut-off
+  redshift capped at 30, above which accretion is negligible [src: SM
+  Sect. A.1].
+- **Binned mass function** (Chen, Yuan & Huang 2021, arXiv:2108.11740): a
+  model-independent binned reconstruction of the PBH mass function from
+  GWTC-3 [src: abstract].
+- **Non-detection, sub-solar masses** (LVK O3a): no candidate in three
+  pipelines (most significant false-alarm rate 0.14 yr⁻¹); ⟨VT⟩ from
+  injections with 0.2 < m₁ < 10 M☉, 0.2 < m₂ < 1 M☉, 0.1 < q < 1, in nine
+  chirp-mass bins over 0.17–2.39 M☉; a loudest-event 90% limit R₉₀ = 2.3/⟨VT⟩
+  per bin, the rate taken constant since only z ≲ 0.12 is reached [src:
+  arXiv:2109.12197, Sect. III, Eqs. 1–2]. The pipelines' ⟨VT⟩ agree within
+  O(30%) and MBTA is fiducial; calibration (≲ 10% in ⟨VT⟩) is neglected
+  [src: same]. The rate limit is equated to the model rate and inverted at
+  each mass (App. A).
+
 ### Evaporation, in one paragraph
 <!-- key: evaporation-in-one-paragraph -->
 
@@ -177,7 +213,14 @@ today; below 2 × 10¹⁴ g quark and gluon jets fragment, so secondary
 emission must be added; near-extremal spins halve the lifetime [src:
 arXiv:2601.06024, Sect. III]. The constraint families then follow as in
 L2 (BBN 10⁹–10¹³ g, CMB above 10¹³ g, photon background and Voyager to
-~10¹⁷ g) [src: Sect. IV.1.1].
+~10¹⁷ g) [src: Sect. IV.1.1]. One family read at source: Voyager 1, beyond
+the heliopause, measures the sub-GeV e± that evaporating PBHs of M ≲ 10¹⁷ g
+inject and that the solar field hides from Earth-bound detectors; with a
+two-zone diffusion model (K = K₀ β (ℛ/GV)^δ, convection, reacceleration,
+halo half-height of a few kpc) PBHs below 10¹⁶ g cannot exceed 0.1% of the
+dark matter, less for a log-normal mass function; the limit rests on local
+measurements, complementary to cosmological ones (Boudaud & Cirelli 2018,
+arXiv:1807.03075) [src: abstract; main text].
 
 ### From monochromatic to extended mass functions
 <!-- key: from-monochromatic-to-extended-mass-functions -->
@@ -257,6 +300,29 @@ prefers some PBH sub-population [src: same]. The joint fit gives a
 stronger sub-solar constraint than the agnostic one, which the authors
 attribute to insufficient resolution of the scan [src: same].
 
+Other readings of the same catalogues, as their authors state them:
+
+- The PBH fraction "depends significantly on the set of assumed
+  astrophysical models": PBHs are favoured against GC and NSC channels, but
+  a dominant SMT channel "drastically reduces the need for PBHs", except
+  for the rate of mass-gap events such as GW190521; without GW190521 the
+  evidence for CE+GC+SMT and CE+GC+SMT+PBH becomes comparable; SMT would
+  need a fraction 0.34 ± 0.22 [src: arXiv:2105.03349, abstract and
+  Discussion].
+- GW190521 fits a PBH reading naturally, while the light events (GW190814,
+  GW190425, GW200105, GW200115) are "quite unlikely" to be binary PBHs,
+  because the PBH rates are much smaller than LVK's [src: arXiv:2108.11740,
+  abstract].
+- In the opposite direction, QCD-epoch PBHs making all the dark matter and
+  merging in clusters reproduce the heavy-BH rates and GW190814, and
+  explain why no light–light merger has been seen; the authors call the
+  match "tantalizing" [src: arXiv:2007.03565, abstract]. This rests on
+  early binaries being negligible, the opposite of the two-body dominance
+  assumed by arXiv:2405.05732 (Step 1).
+- Below 1 M☉, the LVK non-detection gives f_PBH ≲ 6% for equal-mass binaries
+  of 0.2–1.0 M☉, under the unsuppressed rate [src: arXiv:2109.12197, Sect.
+  III].
+
 ### LVK: mass-function shape
 <!-- key: lvk-mass-function-shape -->
 
@@ -315,6 +381,10 @@ Sect. VII.2].
 | Three-body parameters | γ = 1, K = 4 (conservative γ = 2, K = 1) | LVK O3 PBH | arXiv:2405.05732 | Sect. III.1 |
 | Exclusion criterion (no PBH events) | N > 3 (2σ) | LVK O3 PBH | arXiv:2405.05732 | Sect. II |
 | Detection threshold | SNR_c = 8; joint fit SNR > 11, IFAR > 4 yr | LVK O3 PBH | arXiv:2405.05732 | Sects. II, IV.2 |
+| Sub-solar limit | f_PBH ≲ 6% (equal mass, 0.2–1.0 M☉, unsuppressed rate) | LVK O3a SSM | arXiv:2109.12197 | Sect. III |
+| SSM rate limit | R₉₀ = 2.3/⟨VT⟩; 9 chirp-mass bins, 0.17–2.39 M☉; pipelines within O(30%) | LVK O3a SSM | arXiv:2109.12197 | Sect. III |
+| SMT fraction needed | 0.34 ± 0.22 | GWTC-2 mixed channels | arXiv:2105.03349 | Discussion |
+| Voyager e± limit | f_PBH < 0.1% for M < 10¹⁶ g | Voyager 1 | arXiv:1807.03075 | abstract |
 | Evaporating today | M ≈ 5 × 10¹⁴ g (non-spinning) | review | arXiv:2601.06024 | Sect. III |
 | Window closure | log-normal σ ≳ 2.5 | review | arXiv:2601.06024 | Sect. VI |
 
@@ -366,6 +436,16 @@ Sect. VII.2].
 - Application: Andrés-Carcasona et al. 2024, arXiv:2405.05732 — merger
   rate with suppression, hierarchical likelihood, three readings of LVK
   data.
+- Application: LVK 2021, arXiv:2109.12197 — sub-solar search, ⟨VT⟩ and
+  loudest-event limit, unsuppressed PBH rate (Sect. III, App. A).
+- Application: Franciolini et al. 2021, arXiv:2105.03349 — PBHs mixed with
+  astrophysical channels in a hierarchical fit.
+- Application: Chen, Yuan & Huang 2021, arXiv:2108.11740 — binned mass
+  function from GWTC-3 (abstract).
+- Critique: Jedamzik 2020, arXiv:2007.03565 — cluster mergers as evidence
+  for PBH dark matter (abstract).
+- Application: Boudaud & Cirelli 2018, arXiv:1807.03075 — Voyager 1 e±
+  evaporation limit.
 - Critique: Hawkins 2025, arXiv:2509.05400 — passbands, selection,
   efficiency, self-lensing, halo models in the OGLE analysis.
 
@@ -379,5 +459,11 @@ Sect. VII.2].
 - No OGLE reply to arXiv:2509.05400 was searched.
 - The derivation of S₁ and S₂ (Raidal et al. and Hütsi et al., as cited
   in arXiv:2405.05732) was not read; no identifiers recorded.
-- Evaporation constraints were read only in the review summary; the
-  BBN, CMB, photon-background and Voyager analyses behind them were not.
+- Evaporation constraints were read only in the review summary, except
+  Voyager (arXiv:1807.03075, abstract and propagation text); the BBN, CMB
+  and photon-background analyses were not.
+- The LVK O3b and O4 sub-solar searches, the companion paper of
+  arXiv:2007.03565 and the bodies of arXiv:2108.11740 and arXiv:2007.03565
+  were not read. The Lyα, dynamical-heating and dwarf-galaxy limits named
+  in "Extended mass functions in general" are known only through the
+  review.

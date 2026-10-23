@@ -39,8 +39,9 @@ stop there.
 
 ## What not to do
 
-- Do not delete a verified statement. If the dossier grows past about 520
-  lines, condense duplicated text; do not drop facts.
+- Do not delete a verified statement. A dossier has no length cap: depth
+  first, repetition removed. Past about 1000 lines, split it into two
+  dossiers on sub-subjects rather than cut it (`docs/agent-brief-dossier.md`).
 - Do not rank groups or methods yourself. Present competing claims with both
   sides as the papers state them.
 - Do not add a paper you have not read this session. A paper seen by title

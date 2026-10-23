@@ -5,8 +5,13 @@ produced from cluster mergers (offsets and the drag model) and from the
 inner density profiles of relaxed groups and clusters (isothermal Jeans
 model, r₁ matching, ensemble combination), which cross section and which
 velocity average a limit refers to, and how each method has been
-calibrated and criticised.
-Snapshot: 2026-10-17.
+calibrated and criticised. The two worked methods come from the
+Massey–Harvey–Robertson (offsets) and Kaplinghat–Tulin–Sagunski (Jeans)
+lineages; the other cluster routes (Bullet simulations, BCG wobbles, halo
+and X-ray shapes, weak-lensing profiles, the cluster RAR, lensing with
+kinematics), the dwarf and rotation-curve routes and the gravothermal
+calibration are given one line each by other teams.
+Snapshot: 2026-10-22.
 From: Snowmass 2021 halo-measurements white paper (Bechtol et al.,
 arXiv:2203.07354), Sects. 2.2.1, 3.2.1–3.2.2, 4.2.3.
 
@@ -54,6 +59,9 @@ What the analyses state:
 | Sagunski et al. 2020, Jeans | σ defined through Eq. 8; for anisotropic scattering "the appropriate angular moment" | arXiv:2006.12515, Sect. II.1, footnote 1 |
 | Robertson, Massey & Eke 2016, Bullet simulations | isotropic, velocity-independent, dσ/dΩ = σ/4π | arXiv:1605.04307, Sect. 2.1.1 |
 | TNGC-SIDM I 2026, merger simulations | isotropic, velocity-independent σ_T/m = 1 (and 0.5) cm²/g | arXiv:2610.18957 [src] |
+| Sabarish et al. 2023, merger simulations | velocity-dependent, both rare (isotropic) and frequent (small-angle) scattering | arXiv:2310.07769 [src] |
+| Adhikari et al. 2024, ACT × DES weak lensing | isotropic, elastic σ/m; also dissipative SIDM | arXiv:2401.05788 [src] |
+| Zavala et al. 2013, dwarf spheroidals | σ_T/m, velocity-independent | arXiv:1211.6426 [src] |
 
 ### Step 1. Say which velocity average
 <!-- key: step-1-say-which-velocity-average -->
@@ -116,6 +124,13 @@ Harvey et al. 2015 (arXiv:1503.07675):
    cm²/g (68%, two-tailed), < 0.47 cm²/g (95%, one-tailed); control
    ⟨β_⊥⟩ = −0.06 ± 0.07 [src: main text].
 
+Peer on a single system: for the Bullet Cluster, Randall et al. ran SIDM
+N-body simulations of 1E 0657-56 against X-ray, lensing and optical data;
+the absence of a subcluster mass–galaxy offset gives σ/m < 1.25 cm²/g
+(68%), and the subcluster mass-to-light ratio, if equal to the main
+cluster's before the merger, σ/m < 0.7 cm²/g [src: arXiv:0704.0261,
+abstract].
+
 ### Step 2b. Relaxed haloes: the isothermal Jeans model
 <!-- key: step-2b-relaxed-haloes-the-isothermal-jeans -->
 
@@ -158,6 +173,20 @@ et al. groups and clusters, with free Υ⋆ and stellar anisotropy β
 [src: Sect. IV.2, V]. Andrade et al. fit the dark-matter surface density
 from Qlens strong-lensing models of eight clusters between 10 and 150 kpc
 [src: abstract].
+
+A peer on one cluster: O'Donnell et al. fit MACS J0138-2155 with strong
+lensing and spatially resolved BCG kinematics; they compute the isothermal
+Jeans SIDM profile at every step instead of fitting a cored NFW and
+converting "after-the-fact" as Andrade et al. did, and take the halo age
+as the age of the Universe at the cluster redshift (9.9 Gyr), "the same
+as Andrade et al." [src: arXiv:2508.20179, Sects. I.2, III.1]. They
+justify the core-growth branch by an estimate (relation of Outmezguine
+et al.) that such a cluster begins collapsing after 216 Gyr at
+0.1 cm²/g, 22 Gyr at 1 cm²/g [src: Sect. III.1, footnote 2]. Code:
+`sidm_halos` [src: same]. A method comparison on nine isolated galaxies
+and BCGs finds gravothermal-fluid and isothermal cross sections
+consistent at 1σ, the isothermal method preferring values ~3 times larger
+[src: Yang et al. 2023, arXiv:2305.05067, abstract].
 
 ### Step 3. Combine systems
 <!-- key: step-3-combine-systems -->
@@ -217,6 +246,23 @@ to ±40 kpc with 80 galaxies/arcmin² [src: Sect. 4.3]. Gas stripping
 introduces radially dependent asymmetries, so methods probing different
 radii can show an offset where none exists [src: abstract, Sect. 5].
 
+Other simulation teams, one line each:
+
+- Equal-mass 10¹⁵ M⊙ mergers give maximal galaxy–dark-matter offsets
+  ≲ 20 kpc at 1 cm²/g, an order of magnitude below those measured in
+  (near-)equal-mass mergers, so "competitive cross-section constraints are
+  thus unlikely to emerge from offsets"; BCGs then oscillate on ~100 kpc
+  orbits for Gyr [src: Kim, Peter & Wittman 2017, arXiv:1608.08630,
+  abstract].
+- With the intracluster medium included, offsets just after first
+  pericentre hardly change, but can be amplified later; mergers near first
+  apocentre may be more informative [src: Fischer et al. 2023,
+  arXiv:2302.07882, abstract].
+- For velocity-dependent rare and frequent scattering at current upper
+  bounds, offsets just after first pericentre are ≤ 10 kpc in
+  dark-matter-only runs; the BCG offset grows later [src: Sabarish et al.
+  2023, arXiv:2310.07769, abstract].
+
 ### Re-measured offsets of the 72-merger sample
 <!-- key: re-measured-offsets-of-the-72-merger-sample -->
 
@@ -265,6 +311,28 @@ cored-NFW fits find uniformly high surface densities at 30 kpc, which
 the BCG and inside the strong-lensing data, except for A611 [src:
 Sects. 6.1.1, 6.3; Fig. 8 caption].
 
+### Other cluster routes, one line each
+<!-- key: other-cluster-routes-one-line-each -->
+
+| Route | Result as stated | Source |
+|---|---|---|
+| BCG wobbles, 10 relaxed clusters vs BAHAMAS-SIDM | consistent with CDM at ~1.5σ; σ/m < 0.12 (0.39) cm²/g at 68% (95%) | Harvey et al. 2019, arXiv:1812.06981 [src] |
+| Cluster Einstein radii vs CLASH, BAHAMAS-SIDM | σ/m > 1 cm²/g at ~1000 km/s "likely incompatible"; SIDM cores not reflected in gas, stars or X-ray luminosity | Robertson et al. 2019, arXiv:1810.05649 [src] |
+| Halo shapes (lensing potentials, X-ray isophotes) | earlier limit of ~0.02 cm²/g "off by more than an order of magnitude"; at least 0.1 cm²/g allowed | Peter et al. 2013, arXiv:1208.3026 [src] |
+| X-ray ellipticity, 84 relaxed Chandra/ROSAT clusters vs adiabatic zooms | non-cool-core clusters agree better with 0.5–1 cm²/g; CDM and 0.1 cm²/g disfavoured at 68%; missing cooling and feedback could reconcile CDM | Shen et al. 2022, arXiv:2202.00038 [src] |
+| Weak-lensing profiles, ACT clusters × DES sources | isotropic elastic σ/m < 1 cm²/g (95%) | Adhikari et al. 2024, arXiv:2401.05788 [src] |
+| Cluster radial acceleration relation vs CLASH | σ/m = 0.3 cm²/g disfavoured at 3.8σ using r > 100 kpc | Tam et al. 2022, arXiv:2207.03506 [src] |
+| Lensing + BCG kinematics, MACS J0138 | σ/m < 0.613 cm²/g (95%) at ⟨v_pair⟩ < 2090 km/s | O'Donnell et al. 2025, arXiv:2508.20179 [src] |
+
+O'Donnell et al. judge the routes that do not reconstruct the inner
+profile (merger offsets, BCG offsets, the RAR, ellipticities) "not yet
+competitive" with strong-lensing profile constraints, for observational
+and theoretical reasons [src: arXiv:2508.20179, Sect. I.2]. The range
+preferred by Shen et al. (0.5–1 cm²/g) lies above the 95% limits of the
+BCG-wobble and MACS J0138 analyses [der: values in this table]; each
+paper states its own caveats, and none compares the routes on common
+clusters.
+
 ### Velocity-independent or velocity-dependent reading
 <!-- key: velocity-independent-or-velocity-dependent -->
 
@@ -275,6 +343,59 @@ particle with an 11 MeV dark photon, is consistent with all scales in that
 paper's Fig. 3 [src: Fig. 3 caption]. For Yukawa models the averaged
 σ̄_T, σ̄_V of Eq. 91 replace evaluation at ⟨v_rel⟩, which smooths the
 resonant wiggles [src: arXiv:2011.04679, Sect. IV.2].
+
+### Galaxy and dwarf scales, one line each
+<!-- key: galaxy-and-dwarf-scales-one-line-each -->
+
+The velocity dependence is set by combining the cluster limits above with
+lower-velocity systems; the claims, both ways:
+
+- **Rotation-curve diversity.** SIDM with a fixed cross section and the
+  CDM concentration–mass relation fits galaxies of 25–300 km/s across the
+  full diversity, through baryons and assembly scatter [src: Kamada et al.
+  2017, arXiv:1611.02716, abstract]. Controlled simulations find the
+  observed scatter exceeds dark-matter-only predictions in both CDM and
+  SIDM; realistic baryons help, better with SIDM, but feasibility "depends
+  on the sampling of the halo mass-concentration relation" [src: Creasey
+  et al. 2017, arXiv:1612.03903, abstract]. A strong regime,
+  σ/m ≈ 20–40 cm²/g in dwarfs, lets concentrated haloes collapse within
+  10 Gyr and accommodates high-density outliers of 14 LSB galaxies [src:
+  Roberts et al. 2024, arXiv:2407.15005, abstract].
+- **Milky Way satellites.** σ_T/m ~ 0.1 cm²/g leaves subhaloes too massive
+  for Fornax and Sculptor; ~1 cm²/g resolves it [src: Zavala et al. 2013,
+  arXiv:1211.6426, abstract]. Simulated subhalo central densities favour
+  σ/m < 3 cm²/g [src: Ebisu et al. 2021, arXiv:2107.05967, abstract]. With
+  gravothermal collapse in a semi-analytic subhalo model, classical plus
+  ultrafaint kinematics "decisively" prefer CDM over velocity-independent
+  SIDM above ~0.2 cm²/g [src: Ando et al. 2025, arXiv:2503.13650,
+  abstract]. In the opposite direction, 1–5 cm²/g subhaloes are not dense
+  enough for the densest dwarfs, which motivates velocity-dependent cross
+  sections > 5 cm²/g at satellite velocities so that some collapse [src:
+  Silverman et al. 2022, arXiv:2203.10104, abstract]. The two last papers
+  differ in velocity dependence and modelling; neither tests the other's.
+
+### Gravothermal-collapse calibration
+<!-- key: gravothermal-collapse-calibration -->
+
+- Collapsed vdSIDM subhaloes (σ_T/m up to 100 cm²/g) reach inner slopes
+  ≈ −3 down to the resolution limit; resolving the collapse below 1 kpc
+  needs tailored runs [src: Turner et al. 2021, arXiv:2010.02924,
+  abstract].
+- N-body collapse is very sensitive to energy-conservation errors (keep
+  them well below 1%) and an oversized SIDM kernel speeds it up
+  artificially [src: Fischer, Yu & Dolag 2025, arXiv:2506.06269,
+  abstract].
+- A spherical DSMC code shows N-body runs converge only with softening
+  well below collisionless practice; the harmonic interpolation of
+  long- and short-mean-free-path conductivities in fluid models is
+  inaccurate; collapse starts somewhat sooner but slows "dramatically"
+  once the core is optically thick [src: van den Bosch & Tokayer 2026,
+  arXiv:2610.28890, abstract].
+- Strong-lensing tests of collapse (dense perturbers in arcs) are in
+  `strong-lensing-substructure.md#dense-perturbers-and-sidm-the-competing-readings`; for cluster
+  galaxy–galaxy lensing, subhalo inner slopes γ > 2.5, which core collapse
+  could produce, alleviate the reported excess [src: Dutra, Natarajan &
+  Gilman 2024, arXiv:2406.17024, abstract].
 
 ## Numbers
 <!-- key: numbers -->
@@ -299,6 +420,12 @@ resonant wiggles [src: arXiv:2011.04679, Sect. IV.2].
 | Bullet simulation, σ/m = 2 cm²/g | ~20 kpc offset vs observed 25 ± 29 kpc | idealised SIDM | arXiv:1605.04307 | Sect. 5 |
 | TNGC-SIDM main-cluster DM–BCG offset | up to ~20 kpc, persisting > 4 Gyr after first pericentre | σ_T/m = 1 cm²/g | arXiv:2610.18957 | abstract |
 | DARKSKIES suite | 100 clusters, M₂₀₀ > 5 × 10¹⁴ M⊙; σ/m = 0, 0.01, 0.05, 0.1, 0.2 cm²/g | velocity-independent SIDM | arXiv:2509.19842 | abstract |
+| Bullet Cluster | σ/m < 1.25 cm²/g (68%, offset); < 0.7 cm²/g (mass-to-light) | SIDM N-body of 1E 0657-56 | arXiv:0704.0261 | abstract |
+| Equal-mass merger offsets | ≲ 20 kpc at 1 cm²/g | idealised 10¹⁵ M⊙ mergers | arXiv:1608.08630 | abstract |
+| Offsets at current upper bounds | ≤ 10 kpc after first pericentre | velocity-dependent rare / frequent SIDM | arXiv:2310.07769 | abstract |
+| Isothermal vs gravothermal cross sections | consistent at 1σ, isothermal ~3× larger | 9 isolated galaxies and BCGs | arXiv:2305.05067 | abstract |
+| MACS J0138 collapse onset | 216 Gyr at 0.1 cm²/g; 22 Gyr at 1 cm²/g (estimate) | cluster-scale core growth | arXiv:2508.20179 | Sect. III.1, footnote 2 |
+| Dwarf-scale cross sections | σ/m < 3 cm²/g (subhalo densities); CDM preferred above ~0.2 cm²/g (velocity-independent); > 5 cm²/g velocity-dependent motivated; 20–40 cm²/g in LSB dwarfs | MW satellites; LSB rotation curves | arXiv:2107.05967; arXiv:2503.13650; arXiv:2203.10104; arXiv:2407.15005 | abstracts |
 
 ## What goes wrong
 <!-- key: what-goes-wrong -->
@@ -350,6 +477,18 @@ resonant wiggles [src: arXiv:2011.04679, Sect. IV.2].
 - **Proxy mismatch.** Quoting a σ_T limit for a model whose halo
   evolution is set by σ_V, or using ⟨σv⟩ where the transfer rates need
   ⟨σ_T v²⟩ or ⟨σ_V v³⟩ [src: arXiv:2011.04679, Sects. I, IV.2].
+- **Halo shapes mis-modelled.** Ignoring the triaxial mass outside the
+  scattering core and the scatter in axis ratios overstated shape limits
+  by more than an order of magnitude [src: arXiv:1208.3026].
+- **Gas physics missing from the comparison set.** Adiabatic zooms cannot
+  rule out that cooling and feedback reconcile CDM with X-ray shapes [src:
+  arXiv:2202.00038]; SIDM cores leave gas, stars and X-ray luminosities
+  unchanged in BAHAMAS-SIDM [src: arXiv:1810.05649].
+- **Method choice moves the cross section.** Isothermal fits prefer ~3×
+  the gravothermal value [src: arXiv:2305.05067]; quote the method.
+- **Under-resolved collapse.** Energy errors, kernel size and softening
+  change collapse times [src: arXiv:2506.06269; arXiv:2610.28890]. Test:
+  energy error well below 1%, softening below collisionless practice.
 - **Sample selection for mergers.** A recent zoom-in study finds the
   offset of the main-cluster halo larger than that of the subcluster and
   concludes that "sample selection plays a key role", favouring double
@@ -375,6 +514,12 @@ resonant wiggles [src: arXiv:2011.04679, Sect. IV.2].
 - Simulations: Harvey et al. 2025, arXiv:2509.19842 (DARKSKIES); Lee et al.
   2026, arXiv:2610.18957 (TNGC-SIDM I) — current calibration suites.
 - Review: Bechtol et al. 2022, arXiv:2203.07354 — place among halo probes.
+- Foundation (Bullet): Randall et al. 2008, arXiv:0704.0261 — simulation-based offset and mass-to-light limits.
+- Merger simulations, other teams: Kim, Peter & Wittman 2017, arXiv:1608.08630; Fischer et al. 2023, arXiv:2302.07882; Sabarish et al. 2023, arXiv:2310.07769.
+- Other cluster routes: Peter et al. 2013, arXiv:1208.3026 (shapes); Robertson et al. 2019, arXiv:1810.05649 (BAHAMAS-SIDM lensing); Harvey et al. 2019, arXiv:1812.06981 (BCG wobbles); Shen et al. 2022, arXiv:2202.00038 (X-ray shapes); Tam et al. 2022, arXiv:2207.03506 (RAR); Adhikari et al. 2024, arXiv:2401.05788 (weak lensing); O'Donnell et al. 2025, arXiv:2508.20179 (lensing + kinematics).
+- Method comparison: Yang et al. 2023, arXiv:2305.05067 — isothermal vs gravothermal.
+- Galaxies and dwarfs: Zavala et al. 2013, arXiv:1211.6426; Kamada et al. 2017, arXiv:1611.02716; Creasey et al. 2017, arXiv:1612.03903; Ebisu et al. 2021, arXiv:2107.05967; Silverman et al. 2022, arXiv:2203.10104; Roberts et al. 2024, arXiv:2407.15005; Ando et al. 2025, arXiv:2503.13650.
+- Gravothermal collapse: Turner et al. 2021, arXiv:2010.02924; Fischer, Yu & Dolag 2025, arXiv:2506.06269; van den Bosch & Tokayer 2026, arXiv:2610.28890; Dutra et al. 2024, arXiv:2406.17024 (cluster galaxy–galaxy lensing).
 
 ## Not verified
 <!-- key: not-verified -->
@@ -383,8 +528,12 @@ resonant wiggles [src: arXiv:2011.04679, Sect. IV.2].
   calibration and the Robertson et al. 2019 BAHAMAS-SIDM test were read
   only as described in arXiv:2012.06611.
 - The Harvey et al. dynamical model behind Eq. S1 (its ref. 28, Eq. 33)
-  was not read; nor the BCG-wobble limit of Harvey et al. 2019, quoted as
-  σ/m < 0.39 cm²/g (95%) in arXiv:2012.06611 Sect. 6.3 [sec].
+  was not read. The BCG-wobble limit of Harvey et al. 2019, quoted as
+  σ/m < 0.39 cm²/g (95%) in arXiv:2012.06611 Sect. 6.3, is now read in
+  its abstract (arXiv:1812.06981).
+- The peers added on 2026-10-22 were read at abstract level, except
+  O'Donnell et al. (Sects. I.2, III.1); their method sections, and the
+  Outmezguine et al. collapse relation, were not read.
 - Kaplinghat, Tulin & Yu 2015 has no body rendering available here; its
   ⟨σv⟩ definition was not read at source.
 - DARKSKIES and TNGC-SIDM I were read at abstract level only.

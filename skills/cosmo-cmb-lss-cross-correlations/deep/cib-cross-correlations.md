@@ -4,8 +4,11 @@ Scope: how a CIB × CMB-lensing (or CIB × tracer) analysis is built — which
 CIB map and how it was cleaned of Galactic dust, the linear CIB model and
 its priors, the data vector, masks, covariance and lensing normalisation,
 and how the choices differ between an f_NL measurement and a delensing
-tracer.
-Snapshot: 2026-10-17.
+tracer. The f_NL route rests on one line of work (McCarthy, Hill,
+Thornton and co-authors; no other CIB × lensing f_NL measurement found);
+maps, CIB models and the delensing use have several groups, given step by
+step.
+Snapshot: 2026-10-22.
 From: Baxter 2022 Snowmass review (arXiv:2203.06795), Sect. I (Fig. 1
 probes); SO science goals 2025 (arXiv:2503.00636), Sect. 3.5 (dusty
 galaxies, CIB).
@@ -65,6 +68,23 @@ dust power on large scales [src: arXiv:2605.03783, Sect. III.2].
 At 353 GHz the CMB dominates the CIB, so a NILC CMB estimate is subtracted
 first [src: arXiv:2605.03783, Sect. III.2; arXiv:2405.13470, abstract].
 
+Other maps and dust treatments:
+- **GNILC** (Planck intermediate XLVIII, arXiv:1605.09387) [src]: PR2
+  maps at 353, 545, 857 GHz in which Galactic dust is separated from the
+  CIB by spatial (power-spectrum) information; the CIB is available over
+  60% of the sky at |b| > 20°, "recommended for exploring
+  cross-correlations with lensing and large-scale structure".
+- **Planck 2013 XXX** (arXiv:1309.0382) [src]: the earlier Planck + IRAS
+  CIB power spectra, 143–3000 GHz, on about 2240 deg², ℓ ≈ 150–2500.
+- **L19 in other cross-correlations.** CIB × cosmic shear uses the L19
+  maps with their 20% masks (HI threshold 2.5 × 10²⁰ cm⁻², 15′ apodisation)
+  and drops ℓ < 100 because of the large-scale power loss of L19 (Jego et
+  al. 2022, arXiv:2209.05472, Sect. 3.2.1) [src].
+- **A CIB-free dust map instead of HI.** CIB tomography with 11 Planck,
+  Herschel and IRAS maps cross-correlated with SDSS galaxies and quasars
+  removes Galactic dust with CSFD (Chiang et al. 2025, arXiv:2504.05384)
+  [src].
+
 ### Step 2. Choose sky regions
 <!-- key: step-2-choose-sky-regions -->
 
@@ -118,6 +138,28 @@ between the bias evolution and ρ_SFR [src: Sect. 2.2, Eq. 9]. The fitted
 bias is an emissivity-weighted effective bias, not the bias of the haloes
 that dominate the star formation (Eqs. 13–14); it rises from ~0.8 at z = 0
 to ~8 at z = 4 [src: Sect. 4.2, abstract].
+
+Other CIB models, fitted to other data:
+- Planck 2013 XXX fitted two models to all auto- and cross-spectra: the
+  linear model with an emissivity-weighted mean bias (the one above) and a
+  halo/subhalo model with a parametrised L_IR–mass relation; star
+  formation is well constrained to z ~ 2, beyond which the SED uncertainty
+  dominates [src: arXiv:1309.0382].
+- A four-parameter halo model linking halo mass accretion to star
+  formation fits Planck and Herschel spectra jointly for the first time,
+  log₁₀M_max = 12.94 ± 0.02, but finds the large-scale Planck and Herschel
+  data "not fully compatible" with the Herschel ℓ > 3000 data (Maniyar et
+  al. 2020, arXiv:2006.16329) [src].
+- Halo-based SFR models fitted to CIB × tracer spectra instead of CIB
+  auto-spectra: CIB × DES and KiDS shear, η = 0.445 +0.055/−0.11,
+  log₁₀(M_1/M⊙) = 12.17 ± 0.25 [src: arXiv:2209.05472]; CIB × KiDS galaxies
+  (43σ), η_max = 0.41 +0.09/−0.14 at log₁₀M_peak = 12.14 ± 0.36 (Yan et
+  al. 2022, arXiv:2204.01649) [src]; CIB × unWISE (194σ, 100 < ℓ < 2000),
+  three halo models constrained consistently, T_0 = 21.14 +1.02/−1.34 K
+  against the Planck 24.4 ± 1.9 K (Yan et al. 2023, arXiv:2310.10848)
+  [src]; tomography with SDSS, 60σ on the evolving CIB spectrum over
+  0 < z < 4, the bias–intensity degeneracy broken with the FIRAS + Planck
+  monopole [src: arXiv:2504.05384].
 
 A simpler kernel serves a delensing tracer: a single modified-blackbody
 SED with T_d = 34 K, β = α = 2, and a Gaussian emissivity in redshift
@@ -202,9 +244,36 @@ with ρ_L the matrix of correlation coefficients among tracers [src:
 Sect. II.3]. Smooth models are fitted to the measured cross-spectra before
 computing weights, "to avoid biases caused by statistical fluctuations";
 external tracers enter only at 102 ≤ L ≤ 2000 because of Galactic dust at
-low L [src: Sect. V]. Simulated tracers are Gaussian fields
+low L [src: Sect. V]. The smooth-template weighting was already the
+practice of the Planck CIB + Planck κ + WISE multitracer maps (Yu et al.
+2017, arXiv:1705.02332) [src]. Simulated tracers are Gaussian fields
 g = A_L κ + u with A_L = C_L^gκ/C_L^κκ, extended to several tracers by a
 Cholesky decomposition (Eqs. 35–39) [src: Sect. IV.2].
+
+The CIB as a delensing tracer, by other experiments:
+
+| Analysis | Tracer and data | Result | Source |
+|---|---|---|---|
+| Sherwin & Schmittfull 2015 (**forecast**) | Planck 545 GHz CIB | removes > half the lensing B power; σ(r) better by up to ≈ 2.2, ≈ 4 with a ≈ 3 μK′ lensing reconstruction; CIB-spectrum uncertainty harmless below a few thousand deg² | arXiv:1502.05356 [src] |
+| Larsen et al. 2016 | Planck 545 + 857 GHz, temperature | peak sharpening at 16σ, A_delens = 1.12 ± 0.07 | arXiv:1607.05733 [src] |
+| Manzotti et al. 2017 | Herschel 500 μm, SPTpol 90 deg² | B power −28% at 300 < ℓ < 2300; no-delensing rejected at 6.9σ; limited by tracer noise | arXiv:1701.04396 [src] |
+| Yu et al. 2017 | Planck CIB + Planck κ + WISE | delensing factor 43 ± 1% (f_sky = 0.43), 48 ± 1% (0.11); maps public | arXiv:1705.02332 [src] |
+| BICEP/Keck 2020 | Planck CIB, SPT + BK + Planck E | σ(r) 0.024 → 0.022 in simulations (26% with a perfect template); r_0.05 < 0.090 → < 0.082 | arXiv:2011.08163 [src] |
+| Nakato et al. 2026 | SPT-3G 2019–20 + Planck CIB | profile-hardened GMV + CIB: foreground bias < 10% of σ; A_lens^res ≃ 0.48 over 20 ≤ ℓ ≤ 200 | arXiv:2608.06343 [src] |
+
+Hertig et al. and Nakato et al. each call their template "the highest
+delensing efficiency" to date, on different sky areas and multipole
+ranges (lensing power removed: 39% for ACT DR6 B modes at
+100 ≤ ℓ ≤ 1500 and 47% for Planck at 30 ≤ ℓ ≤ 300, over 23% of the sky,
+against A_lens^res ≃ 0.48 at 20 ≤ ℓ ≤ 200 on the SPT-3G field) [src: arXiv:2511.21949;
+arXiv:2608.06343].
+
+CIB × CMB lensing as a lensing measurement: ACTPol × Planck CIB detects
+polarisation lensing at 4.5σ (9.1σ with temperature) on 206 deg² and the
+first CIB × κ at ℓ > 2000, A = 1.02 +0.12/−0.18 (stat.) ± 0.06 (syst.)
+against the Planck fit (van Engelen et al. 2014, arXiv:1412.0626) [src];
+POLARBEAR × Herschel gives 4.0σ evidence for polarisation lensing and
+2.3σ for lensing B modes (arXiv:1312.6645) [src].
 
 ## Choices and what they cost
 <!-- key: choices-and-what-they-cost -->
@@ -221,7 +290,11 @@ Cholesky decomposition (Eqs. 35–39) [src: Sect. IV.2].
   regions halved σ(f_NL), from 40 for the best earlier region to 23,
   "driven mostly by new maps that are unbiased to larger angular scales, as
   well as a more optimal treatment of additional sky area" [src:
-  arXiv:2605.03783, Sect. V.1].
+  arXiv:2605.03783, Sect. V.1]. An earlier **forecast** puts the CIB
+  auto-spectrum itself at |f_NL| < 1 for future space missions, provided
+  enough frequency channels, high ones such as 857 GHz included, clean the
+  dust (Tucci et al. 2016, arXiv:1606.02323) [src]; the data analyses
+  above keep the auto-spectrum out of the low ℓ for fear of dust (Step 4).
 - **Delensing needs intermediate scales.** The NILC maps were less
   correlated with CMB lensing than GNILC in the relevant multipoles, because
   they keep large-scale CIB power at the cost of more dust at intermediate
@@ -282,6 +355,12 @@ dust problem above.
 | Delensing tracer range | 102 ≤ L ≤ 2000 (external tracers) | ACT DR6 + unWISE + CIB | arXiv:2511.21949 | Sect. V |
 | Delensing CIB kernel | T_d = 34 K, β = α = 2, z_c ~ 2, σ_z = 2 | same | arXiv:2511.21949 | Sect. II.3 |
 | Effective CIB bias | ~0.8 (z = 0) to ~8 (z = 4) | Planck | arXiv:1801.10146 | abstract |
+| GNILC CIB sky | 60% at abs(b) > 20° | Planck PR2 | arXiv:1605.09387 | abstract |
+| CIB × shear model | η = 0.445 +0.055/−0.11; log₁₀M_1 = 12.17 ± 0.25 | Planck L19 × DES, KiDS | arXiv:2209.05472 | abstract |
+| CIB × galaxies significance | 43σ (KiDS); 194σ (unWISE); 60σ (SDSS tomography) | Planck × tracers | arXiv:2204.01649; arXiv:2310.10848; arXiv:2504.05384 | abstracts |
+| CIB × ACTPol κ amplitude | A = 1.02 +0.12/−0.18 ± 0.06 | ACTPol × Planck | arXiv:1412.0626 | abstract |
+| CIB delensing on data | A_delens = 1.12 ± 0.07 (T); B −28% (SPTpol); 43–48% (multitracer); A_lens^res ≃ 0.48 (SPT-3G) | various | arXiv:1607.05733; arXiv:1701.04396; arXiv:1705.02332; arXiv:2608.06343 | abstracts |
+| BK r with CIB delensing | r_0.05 < 0.090 → < 0.082 | BICEP/Keck 2014 | arXiv:2011.08163 | abstract |
 
 ## What goes wrong
 <!-- key: what-goes-wrong -->
@@ -309,7 +388,16 @@ dust problem above.
 - **Nested regions combined as independent.** The earlier HI thresholds are
   subsets of one another [src: arXiv:2210.01049, Sect. IV.7].
 - **Fitting tracer weights to noisy spectra.** Biases the co-added lensing
-  map; fit smooth models first [src: arXiv:2511.21949, Sect. V].
+  map; fit smooth models first [src: arXiv:2511.21949, Sect. V;
+  arXiv:1705.02332].
+- **Foreground bias in the CMB-lensing leg of a template.** Test:
+  reconstruction variants with different foreground immunity (standard
+  and profile-hardened GMV, polarisation only) on Agora simulations [src:
+  arXiv:2608.06343].
+- **Large-scale power loss of L19 in other cross-correlations.** Test or
+  cut: ℓ ≥ 100 [src: arXiv:2209.05472, Sect. 3.2.1].
+- **Inconsistent CIB data sets in the model fit.** Large-scale Planck and
+  Herschel against Herschel ℓ > 3000 [src: arXiv:2006.16329].
 
 ## Reading list
 <!-- key: reading-list -->
@@ -330,6 +418,19 @@ dust problem above.
   delensing tracer; GNILC against NILC.
 - Critique: Maniyar et al. 2019, arXiv:1809.04551 — dust requirement for
   CIB × ISW.
+- Data: Planck intermediate XLVIII, arXiv:1605.09387 (GNILC maps); Planck
+  2013 XXX, arXiv:1309.0382 (CIB spectra, linear and halo models).
+- Models from other data: Maniyar et al. 2020, arXiv:2006.16329; Jego et
+  al. 2022, arXiv:2209.05472; Yan et al. 2022, arXiv:2204.01649 and 2023,
+  arXiv:2310.10848; Chiang et al. 2025, arXiv:2504.05384.
+- Forecast: Tucci et al. 2016, arXiv:1606.02323 (f_NL from the CIB
+  auto-spectrum); Sherwin & Schmittfull 2015, arXiv:1502.05356 (CIB
+  delensing).
+- Delensing and lensing on data: Larsen et al. 2016, arXiv:1607.05733;
+  Manzotti et al. 2017, arXiv:1701.04396; Yu et al. 2017,
+  arXiv:1705.02332; BICEP/Keck 2020, arXiv:2011.08163; Nakato et al.
+  2026, arXiv:2608.06343; van Engelen et al. 2014, arXiv:1412.0626;
+  POLARBEAR 2013, arXiv:1312.6645.
 
 ## Not verified
 <!-- key: not-verified -->
@@ -340,6 +441,10 @@ dust problem above.
   behind the S_νν′ priors: references not read.
 - CIB × galaxy cross-correlations used for star-formation history
   (arXiv:2603.04269, in L2) and the CIB halo models compared in
-  arXiv:2405.13470, Figs. 15–16: not read in body.
+  arXiv:2405.13470, Figs. 15–16: not read in body. The CIB models of
+  Shang et al. 2012 and HerMES (Viero et al. 2013): titles seen only.
+- The bodies of the delensing papers in the peer table (abstracts only),
+  and the scattering-transform dust–CIB separation (Sinha et al. 2026,
+  title only).
 - The sizes of A_ℓ for the two regions (arXiv:2605.03783, App. A): figure
   only.

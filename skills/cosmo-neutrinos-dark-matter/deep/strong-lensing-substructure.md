@@ -4,8 +4,13 @@ Scope: how a dark-matter limit is produced from quadruply imaged quasars
 (flux measurement, forward model of halo populations, per-lens likelihood,
 combination over lenses, conversion to a particle mass), and how to choose
 between likelihood constructions, macromodel freedoms and subhalo-abundance
-priors.
-Snapshot: 2026-10-17.
+priors. The worked example is the forward model of the Gilman, Treu,
+Birrer and Nierenberg teams (pyHalo, lenstronomy), the source of most
+current quad limits; beside it: the SHARP flux-ratio analysis (Hsueh,
+Vegetti, Fassnacht et al.), gravitational imaging of extended arcs (Vegetti
+and Koopmans; the Durham automated scan; ALMA and VLBI data), and the dense
+perturbers read as tests of SIDM.
+Snapshot: 2026-10-22.
 From: Snowmass 2021 halo-measurements white paper (Bechtol et al.,
 arXiv:2203.07354), Sects. 4.2.1 and 5.2.4.
 
@@ -147,6 +152,14 @@ that fits the images without substructure and then held fixed, so the
 lens equation becomes linear in the macromodel deflection (Eq. 6) [src:
 Sect. II.1].
 
+Peers: SHARP VII models seven quads with stellar discs and luminous
+satellites explicitly in the macromodel and, "for the first time",
+line-of-sight haloes of 10⁶–10⁹ M⊙ [src: Hsueh et al. 2020,
+arXiv:1905.04182, abstract]. A study with Aquarius-style CDM haloes found
+that substructure matters for close image pairs and triples, while
+anomalies in large-separation systems are attributed to simplifications
+of the smooth models [src: Xu et al. 2015, arXiv:1307.4220, abstract].
+
 ### Step 5. Compute magnifications and the flux-ratio likelihood
 <!-- key: step-5-compute-magnifications-and-the-flux -->
 
@@ -197,6 +210,12 @@ The m_hm bound is quoted as a 10:1 Bayes factor (ratio of posterior at the
 peak region to the excluded value) and at 95%, for a log-uniform Σ_sub and
 for the galacticus and N-body priors (values in L2). The keV number follows
 from the relation each paper adopts (L2).
+
+Gravitational-imaging analyses quote the bound differently: detections and
+non-detections, weighted by each lens's sensitivity function, enter a
+Poisson likelihood whose expectation is the (sub)halo mass function of the
+dark-matter model tested [src: Vegetti et al. 2023 review,
+arXiv:2306.11781, Sect. 4.4.1].
 
 ## Choices and what they cost
 <!-- key: choices-and-what-they-cost -->
@@ -256,6 +275,24 @@ ratios to ~3–5%, less precise than macromodel predictions but robust to
 angular structure, and does not absorb injected halo perturbations
 (Paugnat, Treu & Gilman 2025, arXiv:2509.05416 [src]).
 
+Other groups on the same degeneracy, one line each:
+
+- Mock quads perturbed by 10–40% by CDM haloes are fitted equally well by
+  m = 3, 4 multipoles of amplitude ≤ 0.01; "flux-ratio anomalies in lensed
+  quasars alone cannot be used to place strong constraints" without
+  information that informs the priors [src: Cohen et al. 2024,
+  arXiv:2403.08895, abstract]. The forward model above answers with
+  isophote-based priors on a_m (this section).
+- In arcs, subhalo detectability depends on the azimuthal freedom of the
+  lens model; separate dark and stellar components turn up two candidates
+  and remove four false positives of the single power law [src:
+  Nightingale et al. 2024, arXiv:2209.10566, abstract].
+- In ALMA data of SDP.81, the earlier ~10⁹ M⊙ subhalo inference "was most
+  likely spurious", from poorly fitting multipoles, although mocks show it
+  would have been found with log Bayes factor 29 had it existed; the
+  authors ask for multipoles up to m = 4 and a good smooth fit as a
+  prerequisite [src: Stacey et al. 2025, arXiv:2508.02776, abstract].
+
 ### Imaging data
 <!-- key: imaging-data -->
 
@@ -266,6 +303,34 @@ covariance [src: arXiv:2511.07513, Sect. II.2.3; abstract]. Eight of the
 28 lenses have HST imaging, three NIRCam, eleven MIRI F560W and four none
 listed [src: Table 2, counted here [der]]; systems without imaging enter
 through positions and flux ratios only.
+
+### Extended arcs: gravitational imaging and its variants
+<!-- key: extended-arcs-gravitational-imaging-and-its -->
+
+The arc route is a separate family, with its own steps [src:
+arXiv:2306.11781, Sects. 4.4.1, 4.4.3, 7.2]:
+
+| Step | Gravitational imaging (Koopmans 2005; Vegetti & Koopmans 2009) | Alternatives |
+|---|---|---|
+| Model | pixellated source; low-mass haloes as linear, pixellated corrections to the parametric potential, so no assumption on their number, mass or position | power spectrum of a Gaussian random field of density fluctuations (Hezaveh et al. 2016), valid only below ~5 × 10⁷ M⊙; trans-dimensional probabilistic cataloguing (Brewer et al. 2016, Daylan et al. 2018) |
+| Detection | free-form correction consistent with a parametric halo fit, and Bayes factor ≥ 50 over the smooth model, roughly ≥ 10σ | — |
+| Why so strict | false positives fall from 40% at a 4σ threshold to 20% at 5σ; false negatives from 60% at 4σ to 30% at 6σ (Ritondale et al. 2019, as summarised) | — |
+| Non-detections | sensitivity function: lowest detectable mass per image pixel | machine-learning estimate (O'Riordan et al. 2023) |
+| Inference | Poisson likelihood of detections given the model's mass functions | forward or statistical comparison of the measured power spectrum |
+
+The method is "not fully forward": detections must be assessed and then
+interpreted against theory in two further steps [src: Sect. 4.4.1].
+Sensitivity: the lowest detectable mass falls linearly with S/N and more
+strongly with angular resolution; HST data reach ~10⁹ M⊙, which is why
+arc limits are "less stringent (though possibly more robust)" than quad
+limits [src: Sect. 7.2, after Despali et al. 2022]. A 10σ criterion on
+17 BELLS-GALLERY lenses gives no detection, against 1.17 ± 1.08 expected
+CDM line-of-sight haloes; a 5σ threshold would expect 9.0 ± 3.0 but yields
+many spurious detections and non-detections [src: Ritondale et al. 2019,
+arXiv:1811.03627, abstract]. Milli-arcsecond VLBI changes the regime: a
+(1.13 ± 0.04) × 10⁶ M⊙ object within 80 pc detected at 26σ, found
+non-parametrically and confirmed parametrically [src: Powell et al. 2025,
+arXiv:2510.07382, abstract].
 
 ### Subhalo-abundance prior: what is being calibrated
 <!-- key: subhalo-abundance-prior-what-is-being-calibrated -->
@@ -320,6 +385,43 @@ CDM at the level of their bounds; the two approaches differ in statistic,
 lens priors and dark-matter models, and the sections read do not compare
 them on common lenses.
 
+### Dense perturbers and SIDM: the competing readings
+<!-- key: dense-perturbers-and-sidm-the-competing-readings -->
+
+Two arc detections carry most of the SIDM argument; each paper's reading:
+
+- **SDSS J0946+1006 (subhalo H).** Projected mass ~2–3.7 × 10⁹ M⊙ within
+  1 kpc, slope steeper than isothermal; under 1% of TNG100 mocks are steep
+  enough and all are too luminous, so the object is "unexpected" in ΛCDM,
+  also as a line-of-sight halo [src: Minor et al. 2021, arXiv:2011.10627,
+  abstract]. Fitting its redshift gives 0.207 ± 0.019, a subhalo, a > 5σ
+  outlier from the ΛCDM v_max–r_max relation, slope γ_2D close to the
+  −2 of gravothermal collapse [src: Enzi et al. 2024, arXiv:2411.08565,
+  abstract]. It is one of two compelling candidates in the Durham scan of
+  54 HST lenses [src: arXiv:2209.10566, abstract].
+- **JVAS B1938+666, object A (~10⁸ M⊙).** First reported as a
+  1.9 × 10⁸ M⊙ satellite [src: Vegetti et al. 2012, arXiv:1201.3643,
+  abstract]; refitted as a line-of-sight halo behind the lens at
+  z = 1.42, an order of magnitude more massive [src: Şengül et al. 2022,
+  arXiv:2112.00749, abstract]; refitted again as a foreground halo at
+  z = 0.13 ± 0.07, with TNG50 analogues "atypical but possible" in ΛCDM
+  [src: Tajalli et al. 2025, arXiv:2505.07944, abstract]. Both objects may
+  match SIDM gravothermal profiles for σ_c,0/m ≳ 300 cm²/g [src: same].
+- **JVAS B1938+666, the 10⁶ M⊙ object.** Best models: a point mass within
+  ≤ 10 pc on a near-constant surface density truncated at 139 pc; if dark,
+  "incompatible with cold dark matter", possibly an SIDM halo whose centre
+  collapsed to a black hole [src: Vegetti et al. 2026, arXiv:2601.02466,
+  abstract]. Gravothermal fluid simulations reproduce it in deep core
+  collapse; CDM with an intermediate-mass black hole needs a progenitor
+  stripped by five orders of magnitude [src: Zhang & Yu 2026,
+  arXiv:2606.12909, abstract]. SIDM zoom-ins (Concerto) contain analogues
+  of the observed perturbers through core collapse [src: Kong, Nadler &
+  Yu 2025, arXiv:2510.01491, abstract].
+- **Quads.** As summarised by the review, existing quad data disfavour SIDM
+  models with large amplitudes at low speeds, if those drive low-mass
+  haloes to core collapse (Gilman et al. 2022) [src: arXiv:2306.11781,
+  Sect. 7.1]; that primary paper was not read here.
+
 ## Numbers
 <!-- key: numbers -->
 
@@ -345,9 +447,21 @@ them on common lenses.
 | Projected subhalo mass, CDM | 1.7 (+2.6/−1.2) × 10⁷ M⊙ kpc⁻² (95%); galacticus 0.9, N-body 0.6 × 10⁷ | same | arXiv:2511.07513 | abstract |
 | Flux-ratio-only bounds, broad Σ_sub | log10 m_hm < 9.3 (10:1), < 8.5 (95%) | JWST flux ratios | arXiv:2511.07765 | Sect. VIII.1 |
 | Same, galacticus / N-body prior, 95% | < 7.3 / < 7.0 | JWST flux ratios | arXiv:2511.07765 | Sect. VIII.1 |
+| f_sub (CDM); m_th | 0.012 (+0.007/−0.004); > 5.58 keV (95%) | 7 quads, discs and LOS haloes | arXiv:1905.04182 | abstract |
+| Substructure fraction, SLACS | f = 0.0076 (+0.0208/−0.0052) uniform prior; 0.0064 (+0.0080/−0.0042) CDM prior on α | 11 SLACS arcs + J0946 | arXiv:1405.3666 | abstract |
+| B1938 satellite; slope, fraction | 1.9 ± 0.1 × 10⁸ M⊙; α = 1.1 (+0.6/−0.4), f = 3.3 (+3.6/−1.8)% | two arc detections | arXiv:1201.3643 | abstract |
+| Arc-only half-mode bound | log M_hm < 12.26 (2σ) | 17 BELLS + 11 SLACS | arXiv:1811.03627 | abstract |
+| Joint thermal relic | m_th > 6.048 keV, M_hm < 3 × 10⁷ M⊙/h (95%); lensing alone > 0.6 (SLACS), > 0.1 keV (BELLS) | arcs + Lyα + MW satellites | arXiv:2010.13802; arXiv:2306.11781 | abstract; Sect. 7.2 |
+| Quads + MW satellites | M_hm < 10⁷ M⊙, m_WDM > 9.7 keV (95%) (Nadler et al. 2021, as summarised) | — | arXiv:2306.11781 | Sect. 7.1 |
+| FDM from one VLBI arc | m ≤ 4.4 × 10⁻²¹ eV excluded (Powell et al. 2023, as summarised) | MG J0751+2716 | arXiv:2306.11781 | Sect. 7.2 |
+| Lowest-mass detection | m_80 = (1.13 ± 0.04) × 10⁶ M⊙, 26σ, astrometry 194 μas | B1938 VLBI arc | arXiv:2510.07382 | abstract |
+| J0946 subhalo | z = 0.207 ± 0.019; γ_2D = −1.81 (+0.15/−0.11) at 0.75–1.25 kpc | HST arcs | arXiv:2411.08565 | abstract |
+| B1938 object A redshift | 1.42 (+0.10/−0.15) vs 0.13 ± 0.07 | same data, two analyses | arXiv:2112.00749; arXiv:2505.07944 | abstracts |
+| HST arc candidates | 5 candidates, 2 compelling, 45 lenses without substructure, of 54 | HST | arXiv:2209.10566 | abstract |
 
-The 95% values of the last row are not in L2, which quotes the 10:1
-values; for the conversion to keV see L2.
+The 95% values of the JWST flux-ratio rows with the galacticus / N-body
+priors are not in L2, which quotes the 10:1 values; for the conversion to
+keV see L2.
 
 ## What goes wrong
 <!-- key: what-goes-wrong -->
@@ -387,27 +501,34 @@ values; for the conversion to keV see L2.
 - **Unmodelled compact perturbers.** A ~10⁶ M⊙ compact object detected in
   an arc could indicate a population that is not in the model if it is not
   a globular cluster [src: Sect. VII.1].
+- **Multipoles read as subhaloes, in quads and arcs.** m = 3, 4 at ≤ 0.01
+  reproduce CDM-level anomalies [src: arXiv:2403.08895]; a reported ALMA
+  subhalo did not survive multipoles [src: arXiv:2508.02776]. Test: fit
+  multipoles to m = 4 before claiming a detection.
+- **Perturber redshift assumed.** The same B1938 object was placed at the
+  lens, behind it (z = 1.42) and in front (z = 0.13), with mass changing
+  by an order of magnitude [src: arXiv:2112.00749; arXiv:2505.07944].
+  Test: fit the redshift.
+- **Detection threshold too low.** At 5σ, arcs give many spurious
+  detections and non-detections [src: arXiv:1811.03627]. Test: Bayes
+  factor ≥ 50 and agreement of free-form and parametric fits [src:
+  arXiv:2306.11781, Sect. 4.4.1].
 
 ## Reading list
 <!-- key: reading-list -->
 
-- Foundation: Dalal & Kochanek 2002, arXiv:astro-ph/0111456 — first
-  measurement of the substructure fraction from seven lenses, f = 0.02
-  (0.006 < f < 0.07, 90%).
-- Method: Gilman et al. 2019, arXiv:1908.06983 — the ABC forward-model
-  framework, sampling and KDE rules, lens selection.
-- Data: Keeley et al. 2025, arXiv:2511.07765 — JWST MIRI flux and SED
-  method, flux-ratio-only bounds.
-- Application: Gilman et al. 2025, arXiv:2511.07513 — Gaussian likelihood,
-  arcs by importance weights, tidal model, priors, KDE and convergence.
-- Method: Paugnat, Treu & Gilman 2025, arXiv:2509.05416 — macromodel-free
-  flux-ratio prediction.
-- Critique: Alfred et al. 2026, arXiv:2607.07709 — external shear hiding
-  anomalies.
-- Competing interpretation: Hou et al. 2026, arXiv:2601.16818 — cusp
-  statistic favouring FDM.
-- Review: Bechtol et al. 2022, arXiv:2203.07354 — place of lensing among
-  halo probes.
+- Foundation: Dalal & Kochanek 2002, arXiv:astro-ph/0111456 — first substructure fraction from seven lenses, f = 0.02 (0.006 < f < 0.07, 90%).
+- Method (quads): Gilman et al. 2019, arXiv:1908.06983 — ABC forward model, sampling and KDE rules, lens selection.
+- Data (quads): Keeley et al. 2025, arXiv:2511.07765 — JWST MIRI fluxes, SED method, flux-ratio-only bounds.
+- Application (quads): Gilman et al. 2025, arXiv:2511.07513 — Gaussian likelihood, arcs by importance weights, tidal model, priors, KDE.
+- Application (quads, other team): Hsueh et al. 2020, arXiv:1905.04182 — SHARP VII, discs and line-of-sight haloes, m_th > 5.58 keV.
+- Method: Paugnat, Treu & Gilman 2025, arXiv:2509.05416 — macromodel-free flux-ratio prediction.
+- Critique: Alfred et al. 2026, arXiv:2607.07709 — external shear hiding anomalies; Cohen et al. 2024, arXiv:2403.08895 — multipoles mimic haloes; Xu et al. 2015, arXiv:1307.4220 — which anomalies CDM substructure explains.
+- Competing interpretation: Hou et al. 2026, arXiv:2601.16818 — cusp statistic favouring FDM.
+- Review: Vegetti et al. 2023, arXiv:2306.11781 — both routes, modelling approaches, detection criteria, constraints; Bechtol et al. 2022, arXiv:2203.07354 — lensing among halo probes.
+- Arcs: Vegetti et al. 2012, arXiv:1201.3643; Vegetti et al. 2014, arXiv:1405.3666; Ritondale et al. 2019, arXiv:1811.03627; Nightingale et al. 2024, arXiv:2209.10566; Stacey et al. 2025, arXiv:2508.02776 (ALMA); Powell et al. 2025, arXiv:2510.07382 (VLBI).
+- Joint WDM: Enzi et al. 2021, arXiv:2010.13802 — arcs with Lyα and Milky Way satellites.
+- Dense perturbers and SIDM: Minor et al. 2021, arXiv:2011.10627; Şengül et al. 2022, arXiv:2112.00749; Enzi et al. 2024, arXiv:2411.08565; Tajalli et al. 2025, arXiv:2505.07944; Vegetti et al. 2026, arXiv:2601.02466; Kong, Nadler & Yu 2025, arXiv:2510.01491; Zhang & Yu 2026, arXiv:2606.12909.
 
 ## Not verified
 <!-- key: not-verified -->
@@ -421,5 +542,12 @@ values; for the conversion to keV see L2.
   bound was found in the sections read.
 - Hou et al. 2026: the Bayesian decision criterion and the SIDM and FDM
   substructure models (Methods g–h, d) were not read.
-- Gravitational-imaging analyses of individual arcs, cited as broadly
-  consistent in arXiv:2511.07513 Sect. VII.1, were not read.
+- Gravitational-imaging analyses (called broadly consistent in
+  arXiv:2511.07513, Sect. VII.1): read at abstract level, with the review's
+  method and constraint sections (arXiv:2306.11781, Sects. 4.4, 7); their
+  method sections, and the primary papers the review summarises (Hezaveh
+  et al. 2016, Nadler et al. 2021, Powell et al. 2023, Gilman et al. 2022
+  SIDM, Despali et al. 2022), were not read.
+- That object A of arXiv:2505.07944 is the 2012 satellite of
+  arXiv:1201.3643 follows from the papers' descriptions of earlier
+  analyses [der], not from a statement read.

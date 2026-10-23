@@ -6,9 +6,12 @@ local datum, why the ladder enters as a prior on M_B rather than on H0,
 which residual-tension and model-preference metrics and thresholds are
 used, how the S8, CMB–BAO, BBN and neutrino-mass constraints are brought
 in, and how far each data choice moves the verdict.
-Snapshot: 2026-10-18.
+Snapshot: 2026-10-22.
 From: CosmoVerse white paper (arXiv:2504.01669), Sect. 4; Abdalla et al.
-2022 (arXiv:2203.06142), Sect. VII.
+2022 (arXiv:2203.06142), Sect. VII. Peers of the Schöneberg et al.
+comparisons: Khalife et al. 2023, Di Valentino et al. 2021; critiques by
+Knox & Millea, Efstathiou, Benevento et al., Vagnozzi; the 2020 EDE–LSS
+exchange.
 
 Already in L2 or in sibling skills, not repeated here: the groups E, M,
 R, L, E + L and the no-go arguments in outline
@@ -48,6 +51,11 @@ lensing + BAO) and passes a Gaussian test at 1.0σ, with Δχ² ≈ 106 against
 ΛCDM [src: same section, criterion 1, fn. 8]. Phenomenological emergent
 dark energy (no ΛCDM limit) looks good on tension; its generalisation
 GPEDE, which contains ΛCDM, passes no test [src: same section].
+Khalife et al. add the second side to the first question: a model that
+lowers the tension by widening the H0 posterior "without actually
+predicting a larger value" is "not excluded" but does not solve it [src:
+arXiv:2312.09814, Sect. 4.3]; the review of Di Valentino et al. makes the
+same point [src: arXiv:2103.01183, abstract].
 
 ### Step 2. Fix the baseline data A
 <!-- key: step-2-fix-the-baseline-data-a -->
@@ -69,7 +77,9 @@ DESI constraining power; the authors note that the stronger performance
 of the sign-switching cosmological constant in some papers is enhanced
 by those data [src: Sect. IV.2, "Notable differences"]. (Olympics: Planck
 2018 + BOSS DR12, MGS, 6dFGS BAO + Pantheon [src: arXiv:2107.10291, Sect.
-2].)
+2]. Khalife et al. 2023: Planck TT, TE, EE + lowE + lensing, SPT-3G 2018,
+BAO 6dFGS + DR7 + DR12 + DR16, Pantheon; SH0ES as a Gaussian on H0, 73.29
+± 0.9 [src: arXiv:2312.09814, Sects. 2, 4.3].)
 
 ### Step 3. Enter the ladder as a prior on M_B
 <!-- key: step-3-enter-the-ladder-as-a-prior-on-mb -->
@@ -101,6 +111,18 @@ Table 3]. For wCDM itself the two priors give nearly the same posterior
 likelihood on H0 rather than M_b incorrectly yields more favorable results
 for these late-time models"; for early-time models the choice is
 "effectively irrelevant" [src: arXiv:2107.10291, Sect. 2].
+
+Earlier statements by other groups. Benevento, Hu & Raveri: transitions
+at z ≪ 0.1 reach the SH0ES 74.03 ± 1.42 with a CMB + BAO fit as good as
+ΛCDM's, but with the SH0ES calibration transferred to Pantheon H0 falls
+to 69.17 ± 1.09 [src: arXiv:2002.11707, abstract]. Efstathiou: an H0
+prior is "a huge and lossy compression" that discards the SN Hubble-
+diagram shape; carry one M_B for Cepheid hosts and one for distant SNe,
+a candidate needing overlapping posteriors, valid also for changes at z
+≲ 0.05 [src: arXiv:2103.08723, Sect. 3]. Forward side: fitting the
+expansion history to Pantheon instead of fixing q0 raises the
+three-anchor H0 from 74.1 ± 1.3 to 74.8–75.0 ± 1.3, M_B unchanged near
+−19.21 [src: Table 2].
 
 Double-counting caveat. Bansal & Huterer state that applying −19.253 ±
 0.027 together with the full Pantheon+ sample "effectively double-counts
@@ -136,6 +158,11 @@ A = CMB + BAO + SN without the local datum; B = the M_B (or H0) prior
 
 DMAP supersedes the Gaussian tension in the Olympics; they differ by ≲
 10% except for EDE and NEDE [src: arXiv:2107.10291, Sect. 2, fn. 9].
+Khalife et al. use the exact form, Q_MPCL: q = probability of the
+smallest credible interval of P(δ) (difference of the two posteriors)
+containing δ = 0, n = √2 erf⁻¹(q) (Eqs. 5–7); for Gaussian posteriors
+Q_MPCL = Q_DMAP = Δ_GT. Q_MPCL carries priors and volume effects, Q_DMAP
+only best fits, so both are reported [src: arXiv:2312.09814, Sect. 4.3].
 
 ### Step 5. Measure the model preference (question 2)
 <!-- key: step-5-measure-the-model-preference-question-2 -->
@@ -159,6 +186,7 @@ hence it is read with a tension metric [src: arXiv:2107.10291, Sect.
 |---|---|---|---|
 | Olympics | Δ_Gauss or Δ_DMAP ≤ 3σ | ΔAIC ≤ −6.91 | 3σ so that models failing it stay excluded if systematics are revised "slightly but not drastically"; −6.91 from exp(−ΔAIC/2) = 10^1.5, "weak preference" on Jeffreys' scale [src: arXiv:2107.10291, Sect. 2] |
 | World Cup | cells < 3.5σ highlighted (not a cut) | −ΔAIC > 10 or ln BF > 3, on the fit with the M_B prior | "a significant improvement in the combined fit" [src: arXiv:2607.13283, Sect. III.3; Tables 2–4] |
+| Khalife et al. 2023 | Q_MPCL or Q_DMAP ≤ 3σ, either, "agnostic" between them | ΔAIC with and without SH0ES, computed only for Q_MPCL ≤ 4σ | 3σ so that revised systematics could bring a model below 2σ [src: arXiv:2312.09814, Sect. 2] |
 | SPT-3G D1 EDE | Q_MPCL ≤ 3σ and Q_DMAP ≤ 3σ | ΔAIC ≤ −6.91, on data without SH0ES | to ask "is there SH0ES-independent evidence for the AEDE model?" [src: arXiv:2507.23355, Sect. II] |
 
 Olympics medals: bronze for passing DMAP or AIC, silver for both, gold
@@ -226,6 +254,19 @@ Both sides, same model class:
 - World Cup EDE: Δ_DMAP 2.51σ, Δ_shift 2.6σ (H0), 3.0σ (M_B) [src:
   arXiv:2607.13283, Tables 2–4]; Olympics: tails took EDE and EMG from
   3.1–3.7σ (Gaussian) to 1.6–2.3σ (DMAP) [src: arXiv:2107.10291, Sect. 2].
+  Khalife et al. 2023: EDE Q_MPCL 3.7σ, Q_DMAP 2.7σ [src:
+  arXiv:2312.09814, Table 1].
+- 2020 round, BOSS full shape [src: abstracts]. Against: EDE at 3σ with
+  SH0ES and without most LSS, below 2σ with LSS, weaker with physical
+  field priors (Hill et al., arXiv:2003.07355); EFT BOSS gives f_EDE <
+  0.072 (95%), H0 = 68.54 (+0.52/−0.95), f_EDE < 0.053 with photometric
+  LSS, and "refute[s] claims" that MCMC without SH0ES misleads (Ivanov et
+  al., arXiv:2006.11235); EDE and Rock 'n' Roll degeneracies are "well
+  broken" by full shape (D'Amico et al., arXiv:2006.12420). For: the limits
+  are "a consequence of their choice of priors"; EFT-LSS + CMB + SNe
+  allow f_ede = 0.09, H0 = 71 at Δχ² = 0.12 against ΛCDM, the extra power
+  tracing to a BOSS–Planck A_s difference already in ΛCDM (Smith et al.,
+  arXiv:2009.10740).
 
 ### Model preference with or without the local datum
 <!-- key: model-preference-with-or-without-the-local-datum -->
@@ -235,7 +276,11 @@ Tables 5, 6]. Without SH0ES: EDE Δχ² = −7.0 against −35.4 with SH0ES, on
 P-ACT + lensing + BAO + SN [src: arXiv:2505.08051, Sect. V]; ΔAIC = −2.5
 for CMB-SPA + DESI [src: arXiv:2507.23355, Sect. IV.2]. The first asks
 whether the model fits all data including the ladder, the second whether
-data other than the ladder ask for it; quote which.
+data other than the ladder ask for it; quote which. Khalife et al.: ΔAIC
+without SH0ES positive for all eleven models (EDE Δχ² = −4.6, ΔAIC =
++1.4); with SH0ES ≈ 6² − n² for a tension cut from 6σ to nσ, so "nothing
+in the data" is fit better than in ΛCDM "except the SH0ES likelihood
+itself" [src: arXiv:2312.09814, Sect. 2, Table 1].
 
 ### Which CMB data
 <!-- key: which-cmb-data -->
@@ -311,6 +356,10 @@ SPT + DESI + Pantheon+ + SH0ES, Δχ² ≲ −14 against w0waCDM without EDE
 ### S8
 <!-- key: s8 -->
 
+The EDE-specific form: the EDE fit to CMB + SH0ES has 10% more matter
+power at k = 1 h/Mpc and a higher σ8, which LSS data penalise [src:
+arXiv:2003.07355, abstract].
+
 The structural argument [src: arXiv:2010.04158, main text, Eqs. 1–2,
 Figs. 1–2]: θ* = r*/D(z*) and θ⊥^BAO = r_d/D(z_obs) define lines in the
 r_d–H0 plane with different slopes because z* ≫ z_obs; with r_d =
@@ -354,6 +403,21 @@ Sect. V.4].
 
 ### Late-time models: the two walls in numbers
 <!-- key: late-time-models-the-two-walls-in-numbers -->
+
+Earlier form: BOSS BAO + uncalibrated Pantheon, five-node spline H(z),
+zero curvature, give β_BAO ≡ c/(r_s^drag H0) = 29.54 ± 0.406, tying H0 to
+r_s without ΛCDM [src: arXiv:1908.03663, Sect. III]; Knox & Millea call
+a faster expansion in the decade of scale factor before recombination
+"the least unlikely" [src: abstract]. Late escapes: H(z) wiggles cost
+many new degrees of freedom and sit at the three BOSS redshifts, which
+"might invalidate" the BAO compression; distance-duality violation would
+need supernova "axion brightening" [src: Sects. IV.1.1–IV.1.2]. A
+dynamics-free inverse ladder gives the same verdict [src:
+arXiv:2103.08723, abstract]. Other side: from seven hints (old-object
+ages, r_s–H0 degeneracy directions, chronometers, low-z "descending
+trends", early ISW, uncalibrated Ω_m, equality-scale H0) early-time
+physics "alone will always fall short"; early plus late non-local plus
+local new physics is needed [src: Vagnozzi, arXiv:2308.16628, abstract].
 
 Normalisation wall: BAO measure r_d H0 (Eqs. 2–4 of arXiv:2607.21244);
 late-time models cannot change r_d. Shape wall [src: arXiv:2607.21244,
@@ -405,6 +469,14 @@ non-minimally coupled scalar with a smoothly varying M_B gains −27 with H0
 | Required δH0/H0 | ≃ 0.093 | Sabogal et al. | arXiv:2607.21244 | Sect. II |
 | Allowed δH0/H0 (95%) | < 2.07% conservative; < 3.67% permissive | Sabogal et al. | arXiv:2607.21244 | Table 2 |
 | M_B step at z ≈ 0.013 | Δχ² ≈ −40 | Bansal & Huterer | arXiv:2602.06293 | Sect. IV |
+| ΛCDM tension, Planck + SPT-3G 2018 + BAO + SN vs SH0ES | Q_MPCL 6.0σ, Q_DMAP 5.8σ | Khalife et al. | arXiv:2312.09814 | Table 1 |
+| m_e + Ω_K (+ Σm_ν) | Q_MPCL 2.9σ (1.5σ), Q_DMAP 3.1σ (3.0σ); H0 = 68.20 (69.75 +1.85/−2.93) | Khalife et al. | arXiv:2312.09814 | Table 1 |
+| EDE, without / with SH0ES | ΔAIC +1.4 / −25.1 | Khalife et al. | arXiv:2312.09814 | Table 1 |
+| m_e Q_MPCL, same SH0ES likelihood as the Olympics | 2.9 → 3.2σ on adding SPT-3G 2018 and eBOSS DR16 | Khalife et al. | arXiv:2312.09814 | Sect. 2, fn. 7 |
+| Late DE transition: H0 prior vs calibration transferred to SNe | 74.03 ± 1.42 reached vs 69.17 ± 1.09 | Benevento et al. | arXiv:2002.11707 | abstract |
+| β_BAO = c/(r_s^drag H0), BOSS + Pantheon, spline H(z) | 29.54 ± 0.406 | Knox & Millea | arXiv:1908.03663 | Sect. III |
+| EDE with EFT BOSS (no SH0ES) | f_EDE < 0.072 (95%); H0 = 68.54 (+0.52/−0.95) | Ivanov et al. | arXiv:2006.11235 | abstract |
+| EDE, EFT-LSS + CMB + SNe, other priors | f_ede = 0.09, H0 = 71, Δχ² = 0.12 vs ΛCDM | Smith et al. | arXiv:2009.10740 | abstract |
 
 ## What goes wrong
 <!-- key: what-goes-wrong -->
@@ -457,6 +529,15 @@ non-minimally coupled scalar with a smoothly varying M_B gains −27 with H0
 - The other side on EDE: Poulin et al. 2025, arXiv:2505.08051 — Sects. V–VI.
 - Side effects on n_s and w0wa: Peng et al. 2025, arXiv:2509.11902; Wang
   & Piao 2025, arXiv:2511.16606 (abstracts).
+- Other comparisons: Khalife et al. 2023, arXiv:2312.09814 (Sects. 2,
+  4.3); review Di Valentino et al. 2021, arXiv:2103.01183.
+- Where solutions can live: Knox & Millea 2019, arXiv:1908.03663 (Sects.
+  III–IV); Vagnozzi 2023, arXiv:2308.16628 (opinion); calibration tests
+  of late models: Benevento et al. 2020, arXiv:2002.11707; Efstathiou
+  2021, arXiv:2103.08723 (Sect. 3).
+- EDE and LSS, both sides: Hill et al. 2020, arXiv:2003.07355; Ivanov et
+  al. 2020, arXiv:2006.11235; D'Amico et al. 2020, arXiv:2006.12420;
+  Smith et al. 2020, arXiv:2009.10740 (abstracts).
 
 ## Not verified
 <!-- key: not-verified -->
@@ -468,7 +549,10 @@ non-minimally coupled scalar with a smoothly varying M_B gains −27 with H0
   < 0.15: not stated in Sect. IV.1; other sections not searched.
 - Olympics Table 1 (rendered as a CSV include) and its Tests C and D;
   World Cup Table 10 and Appendix C (text summaries only).
-- Efstathiou 2021, 2026 (arXiv:2103.08723, arXiv:2607.29562): not reread.
+- Efstathiou 2026 (arXiv:2607.29562): not reread. Efstathiou 2021 read
+  at Sect. 3 only.
+- Khalife et al. 2023 Sects. 5.3–5.6 (per-model detail, S8 update) not
+  read; the four EDE–LSS papers of 2020 read at abstract level only.
 - No paper read here compares S8-oriented models (decaying dark matter,
   interacting dark energy) across all data; the Olympics notes only that
   the dark radiation–dark matter models lower S8 (arXiv:2107.10291, Sect. 2).

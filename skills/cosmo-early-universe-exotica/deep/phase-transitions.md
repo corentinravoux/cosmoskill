@@ -7,7 +7,7 @@ how PTA and LISA analyses fit such templates (free or fixed shapes,
 geometric or thermodynamic parameters, foregrounds, dark-radiation
 likelihood), and how large the theory error from the effective potential is;
 the fitted values are in the reference files.
-Snapshot: 2026-10-19.
+Snapshot: 2026-10-22.
 From: LISA Cosmology WG 2022, Sect. 6 and 9.2.2; Carr et al. 2026 PBH
 review, Sect. II.2.1; PTA new-physics papers.
 
@@ -150,6 +150,30 @@ Sect. 3.3].
   arXiv:2306.16227, Sect. 4.3.2]; amplitude Ω_GW = 3𝒜 Ω_*²(λ_*ℋ_*)² F_GW,0
   S_turb, 𝒜 ≃ 1.75 × 10⁻³, F_GW,0 ≃ 8 × 10⁻⁵ (10/g_*)^(1/3) [src: Eqs.
   21–22].
+- **Other groups, other data.**
+  - *NANOGrav 15 yr, strong transitions* (Ellis et al. 2023,
+    arXiv:2308.08546): α ≫ 1 is assumed, where fluid and bubble sources
+    behave alike, with one broken power law (a = b = 2.4, c = 4, A = 5.1 ×
+    10⁻², f_p = 0.7 f_H(T_*) β/H) times a function S_H that turns the
+    spectrum into the causality tail beyond the horizon scale, its
+    sharpness δ fixed to 1 after checking it matters little [src: Sect.
+    III.2, Eqs. 19–20]. Free parameters are T_* and β/H only.
+  - *NANOGrav 15 yr + EPTA DR2new free spectra* (Figueroa et al. 2023,
+    arXiv:2307.02399): phase transitions among seven source classes, the
+    two data sets treated as independent, bin-averaged templates and an
+    extra flat component (method in `deep/scalar-induced-gw.md`, Step 4)
+    [src: main text; SM Sect. I].
+  - *CPTA DR1* (Wang 2023, arXiv:2307.15970): four parameters {T_*, α_*,
+    H_*/β, η}, η a friction parameter, alone ("PTO") or with SMBHBs
+    ("PTBBH", nine parameters, Planck 2018 background) [src: Sect. IV].
+  - *HD free spectra of EPTA, PPTA and NANOGrav* (Bian et al. 2023,
+    arXiv:2307.02376), with strings, domain walls and curvature
+    perturbations as alternatives [src: abstract].
+  - *NANOGrav 15 yr and IPTA DR2 from a Lagrangian* (Puchades-Ibáñez &
+    Schwaller 2026, arXiv:2609.12098): a classically conformal Abelian
+    Higgs model with the nucleation rate at NLO in the dimensionally reduced
+    theory, propagated through percolation, reheating and GW production
+    [src: abstract].
 - **Dark-radiation likelihood (Bringmann et al. 2023, arXiv:2306.09411).**
   The PTA likelihood is multiplied by ℒ_cosmo [src: Sect. 4]. For a stable
   dark sector, ℒ_cosmo is a Gaussian in N_eff = 3.044 + ΔN_eff(θ_DS) with
@@ -184,6 +208,32 @@ differences", pt-bubble moves to slightly smaller T_* [src: App. C.3].
 pt-sound alone struggles with the lowest bins; adding SMBHBs helps it
 (Bayes factor 3.7 → 6.5) and opens a plateau where SMBHBs carry the signal
 [src: Sect. V.3].
+
+### Same data, different conclusions
+<!-- key: same-data-different-conclusions -->
+
+- **Ellis et al. on NANOGrav 15 yr**: pure transition best fit T_* = 0.34
+  GeV, β/H = 6.0, −2Δℓ = −2.3 against the SMBHB baseline; with SMBHBs
+  (environmental effects included) the fit is dominated by the transition,
+  and requiring ≥ 5% probability for the 4 nHz candidate event gives T_* =
+  2.6 GeV, β/H = 4.0 [src: arXiv:2308.08546, Sect. III.2, Eqs. 21–22].
+  ΔBIC = −4.9 against SMBHBs with environment (2.9 when the two are
+  combined); the combined fit beats SMBHBs alone only for phase
+  transitions and domain walls [src: Sect. IV, Table 1]. PBH overproduction
+  requires β/H ≳ 4 (≳ 6 in another reference they cite), and most of the
+  1σ region passes [src: Sect. III.2].
+- **Figueroa et al. on NANOGrav + EPTA**: SIGWs and, less so, audible axions
+  and superstrings have the largest Bayes factors against SMBHBs; phase
+  transitions are among "the remaining models" with lower BF and AIC [src:
+  arXiv:2307.02399, main text].
+- **CPTA DR1**: 2σ range T_* ∈ [1.3 MeV, 29.5 GeV], against [1 MeV, 100
+  GeV] for NANOGrav 12.5 yr; H_*/β > 0.014, α_* > 0.21, η < 8.12 (2σ);
+  "slightly tighter" than NANOGrav 12.5 yr, weaker than 15 yr; the
+  integrated bound Ω̃_GW < 10⁻⁶ (CMB, BBN, astrometry) barely helps, and
+  adding SMBHBs loosens all four parameters [src: arXiv:2307.15970, Sect.
+  IV].
+- **Bian et al. on three arrays**: no strong preference for any source
+  [src: arXiv:2307.02376, abstract].
 
 ### Free or fixed spectral shape
 <!-- key: free-or-fixed-spectral-shape -->
@@ -256,7 +306,11 @@ maps models through thermodynamic parameters instead [src:
 arXiv:2403.03723, Sect. 7]. TransitionListener v2.0 (arXiv:2605.15259)
 provides a potential-to-spectrum pipeline with true-vacuum fraction,
 backreaction on expansion, reheating and PTA likelihood interfaces [src:
-abstract].
+abstract]. Fitting NANOGrav 15 yr and IPTA DR2, the NLO nucleation rate
+shifts the preferred gauge coupling by 9% and 13% and the input scale by
+18% (NANOGrav); after calibrating the determinant, the largest remaining
+uncertainties are the GW spectra and the R_*–β/H relation [src:
+arXiv:2609.12098, abstract].
 
 ## Numbers
 <!-- key: numbers -->
@@ -276,6 +330,10 @@ abstract].
 | LISA reconstruction | ≲ 10% relative errors (68%) for Ω_p ≳ 10⁻¹² at ~3 mHz; ≳ 10⁻¹³ if the Galactic foreground were fully removed — **forecast** | LISA 2024 | arXiv:2403.03723 | Sect. 7 |
 | Nucleation criteria | S_c ≃ 140 (onset, EW scale); percolation Eq. 5 | LISA 2020 | arXiv:1910.13125 | Eqs. 3–5 |
 | Turbulence efficiency | 𝒜 ≃ 1.75 × 10⁻³ (decaying stage only, conservative) | EPTA | arXiv:2306.16227 | Sect. 4.3.1 |
+| Strong-PT template | a = b = 2.4, c = 4, A = 5.1 × 10⁻², f_p = 0.7 f_H β/H | Ellis et al., NG15 | arXiv:2308.08546 | Eq. 19 |
+| Strong-PT best fit | T_* = 0.34 GeV, β/H = 6.0; ΔBIC −4.9 | Ellis et al., NG15 | arXiv:2308.08546 | Eq. 21, Table 1 |
+| CPTA PT range | T_* ∈ [1.3 MeV, 29.5 GeV] (2σ); α_* > 0.21; H_*/β > 0.014 | CPTA DR1, Wang | arXiv:2307.15970 | Sect. IV |
+| NLO nucleation shift | gauge coupling 9% (NG15), 13% (IPTA DR2); scale 18% | conformal U(1) | arXiv:2609.12098 | abstract |
 | N_eff likelihood | 2.941 ± 0.143 (Gaussian) | Bringmann et al. | arXiv:2306.09411 | Sect. 4.1 |
 | Daisy-scheme theory error | two to three orders of magnitude in peak amplitude | SMEFT study | arXiv:2009.10080 | abstract |
 
@@ -337,6 +395,15 @@ abstract].
 - Critique: Kierkla et al. 2026, arXiv:2607.18233; Christiansen et al.
   2025, arXiv:2511.02910 — resummation schemes for supercooled transitions
   (abstracts).
+- Comparison: Ellis et al. 2023, arXiv:2308.08546 — strong-transition
+  template and BIC ranking against other sources on NANOGrav 15 yr.
+- Application: Figueroa et al. 2023, arXiv:2307.02399 — NANOGrav + EPTA,
+  seven source classes.
+- Application: Wang 2023, arXiv:2307.15970 — the CPTA DR1 fit.
+- Application: Bian et al. 2023, arXiv:2307.02376 — three arrays' free
+  spectra (abstract).
+- Critique: Puchades-Ibáñez & Schwaller 2026, arXiv:2609.12098 — NLO
+  nucleation on NANOGrav and IPTA DR2 (abstract).
 - Code: Matuszak & Tasillo 2026, arXiv:2605.15259 — TransitionListener
   v2.0 (abstract).
 
@@ -349,7 +416,10 @@ abstract].
   parameter reconstruction results (Sect. 5) were not read.
 - Bodies of arXiv:2009.10080, arXiv:2607.18233, arXiv:2511.02910 and
   arXiv:2605.15259 were not read; only abstracts.
-- Phase-transition fits by PPTA, CPTA, MPTA and the IPTA combination were
-  not searched.
+- No phase-transition fit to PPTA DR3 or MPTA data by the collaborations
+  was found (one search, 2024 onwards). Which CPTA data product Wang fits
+  (the collaboration gives correlations at single frequencies) was not
+  read; nor the phase-transition results of Figueroa et al. beyond the
+  ranking.
 - The LISA Cosmology WG 2022 Sect. 6 body beyond what L2 quotes was not
   re-read.

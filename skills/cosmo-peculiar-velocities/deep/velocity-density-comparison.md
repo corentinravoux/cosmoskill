@@ -4,9 +4,18 @@ Scope: how a growth rate is obtained by comparing measured peculiar velocities w
 field predicted from a redshift survey (reconstruction, bias normalisation, line-of-sight
 likelihood, β → fσ8, linearisation of σ8), and how to choose between the likelihoods, the
 error models and the normalisation recipes in use.
-Snapshot: 2026-10-17.
+Snapshot: 2026-10-22.
 From: Turner 2024 review (arXiv:2411.19484), Sect. 5.3; Cosmicflows reconstructions (Tsagas et
-al. 2025, arXiv:2510.05340, Sect. 2.2.3).
+al. 2025, arXiv:2510.05340, Sect. 2.2.3); DESI DR1 consensus paper (arXiv:2512.03230), Sect. 1.
+
+Who does it. The DESI DR1 consensus paper lists as reconstruction analyses Davis et al. 2011,
+Turnbull et al. 2012, Carrick et al. 2015, Said et al. 2020, Lilow & Nusser 2021, Qin et al.
+2023, Boubel et al. 2024 and Stiskalek 2025 [src: arXiv:2512.03230, Sect. 1]. Most current fits
+use the 2M++ field of Carrick et al. (Said et al., Stahl et al., Boubel et al., Stiskalek); the
+2MRS fields of Davis et al. and of Lilow & Nusser, the 2MASS field of Pike & Hudson, the PSCz field
+(Turnbull et al.) and the velocity-constrained Cosmicflows fields (Graziani et al., Courtois et
+al., Valade et al., Sorce) are the others read here. The comparison of reconstructions against
+each other is the Velocity Field Olympics (Stiskalek et al. 2025, arXiv:2502.00121).
 
 Already in L2, not repeated here: the list of analyses and their fσ8 values in
 `results.md#published-fsigma8-from-peculiar-velocities` and
@@ -69,6 +78,31 @@ arXiv:2312.03904, Sect. 3.1.2, item 3].
 The velocity field is computed once, for β* = 1, and scaled in the likelihood: "the scaling by
 β* is applied only at this stage" [src: arXiv:2509.20235, Sect. 4, after Eq. 19].
 
+Other reconstructions, one line each:
+
+- **2MRS gravity in an orthonormal basis** (Davis et al. 2011): the 2MRS-predicted and the SFI++
+  inverse-TF velocity fields are both expanded in the ND95 basis (spherical harmonics × radial
+  derivatives of spherical Bessel functions, n ≤ 5, l ≤ 3, plus an external quadrupole: 72 modes),
+  with a radial coordinate y(z) = sqrt(log(1 + (z/z_s)²)), z_s = 5 000 km/s, that coarsens the
+  resolution with distance [src: arXiv:1011.3114, Sect. 3.3]; the χ² is minimised by adding
+  these modes, each galaxy with equal weight [src: Sect. 3.7]. The basis "completely avoids the
+  strong error covariance in the smoothed TF velocities" [src: abstract].
+- **2MASS photometry and public redshifts** within 65 h⁻¹Mpc (Pike & Hudson 2005), against SN Ia,
+  SBF and TF samples [src: arXiv:astro-ph/0511012, abstract]; **PSCz** against 245 SNe
+  (Turnbull et al. 2012) [src: arXiv:1111.0631, abstract].
+- **Neural network** (Lilow et al. 2024): a U-net trained on Quijote mocks with RSD, bias and the
+  2MRS selection, which "consistently outperform[s]" the Wiener filter on validation mocks [src:
+  arXiv:2404.02278, abstract].
+- **Fields constrained by velocities, not by redshifts.** Sorce's constrained realisations use
+  only grouped Cosmicflows-2 velocities, Wiener-filtered and moved to progenitor positions by
+  the reverse Zel'dovich approximation, then evolved with Gadget2 (500 h⁻¹Mpc, 512³) [src:
+  arXiv:2502.00121, Sect. 2.1.4]; the hierarchical models of Graziani et al. 2019 (CF3, linear
+  ΛCDM, ~150 km/s velocity uncertainty) and HAMLET (Valade et al. 2022, HMC) sample the linear
+  field with the distances [src: arXiv:1901.01818; arXiv:2203.02369, abstracts]; Courtois et al.
+  2023 do so on CF4 with the growth rate sampled (`field-level-likelihood.md`).
+- **Non-linear BORG fields** (CSiBORG1, CSiBORG2) are compared with the linear ones in the
+  Velocity Field Olympics (Choices, last subsection).
+
 ### Step 2. Normalise the galaxy bias with distance
 <!-- key: step-2-normalise-the-galaxy-bias-with-distance -->
 
@@ -103,6 +137,17 @@ r² for distances not yet corrected for homogeneous Malmquist bias (arXiv:1912.0
 1 + z_pred = (1 + z_cos)(1 + (βv + V_ext)·r̂/c) (Eq. 7); a Gaussian instead of log-normal
 distance error changes β by < 0.35σ [src: Sect. 4.2, footnote 3].
 
+Said et al. 2020 fit the FP and the velocity field together in the observables, a VELMOD-like
+method (Willick et al. 1997) in which β and V_ext are continuous parameters rather than the
+discrete β grid of the original: P(θ_e, σ0, I_e, cz, r) = P(θ_e, σ0, I_e | r) P(cz | r) P(r)
+(Eq. 19), a forward FP in the angular radius, θ_e against R_e(σ0, I_e)/d_A(r) (Eq. 20), and
+u(r) = β V_pred(r) + V_ext with V_pred from 2M++ (Eqs. 21–22); the angular-to-physical radius
+conversion is done inside the likelihood with the true distance [src: arXiv:2007.04993, Sect. 4].
+Boubel et al. 2024 forward-model TF magnitudes, linewidths and HI fluxes, following Willick et
+al. 1997, and factor the redshift term as P(z_c | z, α, δ, θ_PV) P(z, α, δ), with θ_PV = {β,
+V_ext} and u = β V_pred(z, α, δ) + V_ext · r̂ from 2M++ evaluated in redshift space (Eqs. 2–5)
+[src: arXiv:2301.12648, Sect. 2.1].
+
 Stiskalek 2025 generalises the prior to the tracer's own bias and selection [src:
 arXiv:2509.20235, Sect. 4]:
 
@@ -134,11 +179,13 @@ been used to linearise it:
 |---|---|---|---|
 | Juszkiewicz et al. 2010, Ω_m = 0.3 | Carrick 2015; Boruah 2020 | 0.427 ± 0.026 → 0.401 ± 0.024 (0.398 with Ω_m = 0.266) | arXiv:1504.04627, Sect. 4.3; arXiv:1912.09383, Sect. 5.2.1 |
 | halofit, "better matches the measured particle σ8 in MDPL2" | Hollinger & Hudson 2024 | 0.398 ± 0.025 → 0.362 ± 0.023 | arXiv:2312.03904, Sect. 6.1 |
-| syren-new emulator, root-finding on A_s | Stiskalek 2025 | Juszkiewicz "inaccurate at the level of 3–5 per cent" | arXiv:2509.20235, Sect. 2 |
+| syren-new emulator, root-finding on A_s | Stiskalek 2025; Stiskalek et al. 2025 | Juszkiewicz "inaccurate at the level of 3–5 per cent"; syren-new ~3 % below it, hmcode 5 % | arXiv:2509.20235, Sect. 2; arXiv:2502.00121, Sect. 4.6 |
 
 Hollinger & Hudson state that halofit gives "a larger correction than in our previous work"
 [src]. The choice of recipe therefore moves fσ8,lin by several per cent before any data
-systematic.
+systematic. Boubel et al. use σ8,g = 0.99 of Carrick et al. directly: fσ8 = 0.33 ± 0.04 from the
+i-band β and 0.36 ± 0.03 from W1 [src: arXiv:2301.12648, Sect. 6.3]. Turnbull et al. quote
+Ω_m^0.55 σ8,lin = 0.40 ± 0.07 from SNe against PSCz [src: arXiv:1111.0631, abstract].
 
 ### Step 5. Calibrate the method on mocks
 <!-- key: step-5-calibrate-the-method-on-mocks -->
@@ -149,7 +196,13 @@ non-overlapping spheres, and form ζ* = (β/f)(σ8,g/σ8,m) (Eq. 8), which equal
 method [src: arXiv:2312.03904, Sect. 3.1.2]. Velocities are compared at the central galaxy of
 each halo, for consistency with the grouped redshifts of the data [src: same]. The weighted
 corrections are ζ† = 1.01 for each of the four Boruah et al. samples and 1.04 for the two FP
-samples of Said et al.; fσ8 = β_norm/ζ† (Eq. 12) [src: Sect. 6.1].
+samples of Said et al.; fσ8 = β_norm/ζ† (Eq. 12) [src: Sect. 6.1]. Their earlier calibration
+(Hollinger & Hudson 2021) varied the smoothing, haloes or galaxies as density tracers, noise in
+halo masses or in the stellar-to-halo relation, and the survey volume: at 4 h⁻¹Mpc the method
+has "only small systematic biases at the level of 5%", and cosmic variance is 5 % for current
+volumes [src: arXiv:2101.04120, abstract]. Boubel et al. adopt that 5 % and add it in quadrature
+[src: arXiv:2301.12648, Sect. 6.3]. Dixon et al. 2026 calibrate on TITAN-like Uchuu mocks
+(Numbers).
 
 ## Choices and what they cost
 <!-- key: choices-and-what-they-cost -->
@@ -179,7 +232,10 @@ arXiv:1912.09383, Sect. 5.1.1].
   inferred from μ, "to minimize the spatial Malmquist bias effect", and compare distance moduli
   through μ ≈ μ(z_obs) − η(z_obs) v_r (Eqs. 23–24, with η here a magnitude-per-velocity factor,
   not the log-distance ratio) [src: arXiv:2102.07291, Sect. 2.6].
-- Boubel et al. 2024 query a redshift-space version of the field at each observed redshift. Stiskalek
+- Boubel et al. 2024 query a redshift-space version of the field at each observed redshift.
+  Their reason: conditioning on z rather than z_c means the second factor, P(z, α, δ), "is the
+  redshift-space distribution, an observable quantity", so no real-space density model is needed
+  [src: arXiv:2301.12648, Sect. 2.1]. Stiskalek
   calls this a "partial" forward model, whose factorisation p(z_obs, z_cos) = p(z_cos|z_obs)
   p(z_obs) puts a prior on observed data; the correct treatment is a likelihood for z_obs and a
   prior on z_cos, which carries inhomogeneous Malmquist bias [src: arXiv:2509.20235, Sect. 6,
@@ -239,7 +295,12 @@ three combinations agree: β = 0.390 ± 0.024 (error inflated to χ² = dof), 0.
 (jackknife over surveys), 0.402 ± 0.023 (mock covariance) [src]. On TITAN-like mocks, Dixon et
 al. find no under-estimate of errors and attribute the difference with Blake & Turner to a tuned
 smoothing scale and a catalogue that samples the density well below 4 h⁻¹Mpc [src:
-arXiv:2606.14962, Sect. VI.1].
+arXiv:2606.14962, Sect. VI.1]. Boubel et al. state that their errors are assumed uncorrelated
+between galaxies, true of the TF scatter but not of the velocity field; the full velocity
+covariance "will be addressed in future work", and the sample variance of the velocity volume
+is not in the quoted error [src: arXiv:2301.12648, Sect. 6.3]. Davis et al. avoid the error
+covariance of smoothed TF velocities by fitting orthonormal modes (Step 1) [src:
+arXiv:1011.3114, abstract].
 
 ### Correcting the model velocity for its own stochasticity
 <!-- key: correcting-the-model-velocity-for-its-own -->
@@ -269,6 +330,33 @@ linear theory on realistic redshift catalogues, the gain being offset by selecti
 and fingers of God [src: arXiv:2102.07291, Sect. 8.2]. Their likelihood of Δμ includes a
 covariance C_Δμ (Eq. 26) and free (fσ8, B_ext, h_obs) [src: Sect. 2.6].
 
+### Which density field, and how the results compare across fields
+<!-- key: which-density-field-and-how-the-results-compare -->
+
+- **Velocity Field Olympics** (Stiskalek et al. 2025): a framework scoring reconstructions
+  against TF, FP and SN samples by Bayesian evidence, redshift residuals, velocity scaling β and
+  the need for V_ext; "the non-linear BORG reconstruction consistently outperforms others"
+  [src: arXiv:2502.00121, abstract]. With β free (expected 1 for fields sourced by the matter):
+  CSiBORG2 is consistent with 1 except SFI++ (1.13 ± 0.03) and CF4 i-band (1.14 ± 0.02), below
+  3σ; CSiBORG1 and Lilow et al. 2024 give β < 1, the velocities being over-predicted [src: Sect.
+  4.3]. A linear-theory density–velocity fit there gives S8 = 0.793 ± 0.035, "in strong
+  disagreement with some peculiar velocity studies" [src: abstract].
+- **A field from velocities alone** (Boruah et al. 2022) performs better, by Bayesian model
+  comparison, than adaptive-kernel-smoothed velocities from the same data, but not as well as the
+  2M++ reconstruction, because velocity tracers are sparse and noisy [src: arXiv:2111.15535,
+  abstract].
+- **Comparisons the papers make.** Adams & Blake 2020 set their 6dFGS field-level fσ8 beside
+  Pike & Hudson (0.44 ± 0.06), Davis et al. (0.32 ± 0.04) and Carrick et al. (0.427 ± 0.027),
+  all 2MASS-based fields against SFI-type velocities, consistent at 1σ [src: arXiv:2004.06399,
+  Sect. 5.2.5]. Boubel et al. compare their CF4 value with Carrick (0.401 ± 0.024), Boruah
+  (0.401 ± 0.017), Davis et al. (0.31 ± 0.06, as printed there) and Hollinger & Hudson
+  (0.362 ± 0.023), whose correction "slightly decreases the difference" with Carrick [src:
+  arXiv:2301.12648, Sect. 6.3]. Said et al. find S8 more than 3σ from Planck [src:
+  arXiv:2007.04993, abstract]; Stiskalek 2025 names the likelihood differences with Said et al.
+  (selection weighting, FP variable) and finds that b1 alone does not explain the low value
+  (above). Turnbull et al. find that PSCz fails to account for
+  150 ± 43 km/s of the SN bulk motion [src: arXiv:1111.0631, abstract].
+
 ## Numbers
 <!-- key: numbers -->
 
@@ -292,6 +380,17 @@ covariance C_Δμ (Eq. 26) and free (fσ8, B_ext, h_obs) [src: Sect. 2.6].
 | TITAN reconstruction systematics | smoothing 0.012, depth K < 12.7 0.007, boundary 190→180 h⁻¹Mpc 0.008 (−0.008 shift); σ_sys^recon 0.016 | TITAN mocks | arXiv:2606.14962 | Table 2 |
 | Line-of-sight upper limit | R = 200 h⁻¹Mpc; σ8,g within 190 | TITAN mocks | arXiv:2606.14962 | Sect. IV.2, IV.4.2 |
 | Intrinsic-scatter bias, C11 vs BS21 | −0.028 (−6.4 %); −0.019 (−4.6 %) with c < 0.2 | TITAN mocks | arXiv:2606.14962 | Sect. VI.1 |
+| Orthonormal basis | n ≤ 5, l ≤ 3 + external quadrupole, 72 modes; z_s = 5 000 km/s | 2MRS vs SFI++ | arXiv:1011.3114 | Sect. 3.3 |
+| β (2MRS vs SFI++) | 0.28 < β < 0.37 (68.3 %), 0.24–0.43 (95.4 %); σ8 = 0.73 ± 0.1 | Davis 2011 | arXiv:1011.3114 | abstract |
+| β_K (2MASS within 65 h⁻¹Mpc) | 0.49 ± 0.04; σ8(Ω_m/0.3)^0.6 = 0.91 ± 0.12 | Pike & Hudson 2005 | arXiv:astro-ph/0511012 | abstract |
+| Ω_m^0.55 σ8,lin (SNe vs PSCz) | 0.40 ± 0.07; unexplained SN bulk motion 150 ± 43 km/s | Turnbull 2012 | arXiv:1111.0631 | abstract |
+| β (FP vs 2M++) | 6dFGS 0.372 +0.034/−0.050; SDSS 0.314 +0.031/−0.047; joint 0.341 ± 0.024 → fσ8 = 0.338 ± 0.027 at z = 0.035 | Said 2020 | arXiv:2007.04993 | abstract |
+| fσ8 (SNe Ia + II vs 2M++) | 0.390 ± 0.022; V_ext = 195 +22/−23 km/s | Stahl 2021, 775 SNe | arXiv:2105.05185 | abstract |
+| fσ8 (CF4 TF vs 2M++) | 0.35 ± 0.03 at z = 0.017; |V_ext| = 227 ± 11 km/s; i-band 0.33 ± 0.04, W1 0.36 ± 0.03 | Boubel 2024 | arXiv:2301.12648 | abstract; Sect. 6.3 |
+| Method bias and cosmic variance | ~5 % each at 4 h⁻¹Mpc smoothing | Hollinger & Hudson 2021 | arXiv:2101.04120 | abstract |
+| β of reconstructions (expected 1) | CSiBORG2: SFI++ 1.13 ± 0.03, CF4 i 1.14 ± 0.02, others within 1.5σ | VFO | arXiv:2502.00121 | Sect. 4.3 |
+| S8 (linear-theory field) | 0.793 ± 0.035 | VFO | arXiv:2502.00121 | abstract |
+| Sorce constrained simulation | 500 h⁻¹Mpc, 512³, CF2 velocities only | VFO | arXiv:2502.00121 | Sect. 2.1.4 |
 
 ## What goes wrong
 <!-- key: what-goes-wrong -->
@@ -343,15 +442,31 @@ covariance C_Δμ (Eq. 26) and free (fσ8, B_ext, h_obs) [src: Sect. 2.6].
   equivalence with the power-spectrum method once the covariance is complete.
 - Validation: Dixon et al. 2026, arXiv:2606.14962 — end-to-end SN budget, hybrid likelihood
   with correlated systematics.
+- Method and results: Davis et al. 2011, arXiv:1011.3114 — 2MRS gravity vs SFI++ in an
+  orthonormal basis, β and non-linear bias.
+- Method and results: Said et al. 2020, arXiv:2007.04993 — FP and velocity field fitted together
+  (VELMOD-like, continuous β), 6dFGS and SDSS.
+- Method and results: Boubel et al. 2024, arXiv:2301.12648 — forward model of TF observables on
+  CF4, redshift-space factorisation, WALLABY forecast.
+- Results: Pike & Hudson 2005, arXiv:astro-ph/0511012; Turnbull et al. 2012, arXiv:1111.0631;
+  Stahl et al. 2021, arXiv:2105.05185 — 2MASS, PSCz and 2M++ fields against SN, SBF and TF data.
+- Calibration: Hollinger & Hudson 2021, arXiv:2101.04120 — smoothing, tracer and volume effects.
+- Alternative reconstructions: Lilow et al. 2024, arXiv:2404.02278 (neural network on 2MRS);
+  Graziani et al. 2019, arXiv:1901.01818, and Valade et al. 2022, arXiv:2203.02369 (fields from
+  Cosmicflows velocities); Boruah et al. 2022, arXiv:2111.15535 (forward model from velocities).
+- Comparison: Stiskalek et al. 2025, arXiv:2502.00121 — Velocity Field Olympics.
 
 ## Not verified
 <!-- key: not-verified -->
 
 - Pike & Hudson 2005 (arXiv:astro-ph/0511012), where the forward likelihood is introduced, and
   Juszkiewicz et al. 2010 and Westover 2007: cited here through arXiv:1504.04627, bodies not read.
-- Said et al. 2020 (arXiv:2007.04993) and Boubel et al. 2024 (arXiv:2301.12648): their
-  likelihoods are described here only as Stiskalek 2025 (Sect. 6) reads them.
+- Said et al. 2020 (arXiv:2007.04993, Sect. 4) and Boubel et al. 2024 (arXiv:2301.12648, Sects.
+  2.1, 6.3) were read for the likelihood and the error; the 1/S_n selection weighting and the r²
+  prior that Stiskalek 2025 (Sect. 6) attributes to Said et al. were not checked in its body.
+- Davis et al. 2011: the value fσ8 = 0.32 ± 0.04 (arXiv:2004.06399) and 0.31 ± 0.06
+  (arXiv:2301.12648) are both attributed to it; its own abstract gives β and σ8 only.
 - The size of the fσ8 bias of the uncorrected reconstruction in arXiv:2306.16664 (Fig. 4, not
   readable as text) and the error ratios of arXiv:2408.05660 (Figs. 4–5).
-- Hollinger & Hudson 2021 ("HH21"), the earlier idealised-mock calibration: no identifier read.
+- Hollinger & Hudson 2021 (arXiv:2101.04120): abstract only.
 - The Appendix A N-body tests of arXiv:1504.04627 (smoothing and σ_v) were not read.

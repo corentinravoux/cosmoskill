@@ -5,8 +5,13 @@ power spectra plus bispectra (estimator, binning, PNG terms in the model,
 PNG bias parameters and their priors, scale cuts, covariance, validation
 on simulations), and how to choose between tree-level and one-loop
 bispectra, conservative and simulation-based priors, fixed and free
-cosmology.
-Snapshot: 2026-10-17.
+cosmology. Most EFT power-spectrum-plus-bispectrum f_NL analyses of BOSS
+and DESI data read here come from one group (Cabass, Ivanov, Philcox and
+co-authors); the independent data analyses are D'Amico et al. (one-loop
+bispectrum) and Chen et al. (weighted skew-spectra); the other lines are
+power-spectrum-only scale-dependent-bias analyses (eBOSS, DESI) and
+simulation studies (Quijote-PNG, field level).
+Snapshot: 2026-10-22.
 From: Achúcarro et al. 2022 review (arXiv:2203.08128), Sect. 3.2.2 (PNG
 from the bispectrum of tracers; map-level inference of PNG).
 
@@ -99,6 +104,22 @@ the near-perfect b_φ–f_NL degeneracy [src: arXiv:2512.04266, Sect. 3.3].
 This answers the open item in `results.md#not-verified`: the DESI DR1
 f_NL^local = −0.1 ± 7.4 assumes p = 0.55 / 1 / 1.6 by sample.
 
+Other groups on the same choice, power spectrum only:
+- **Barreira 2022** (arXiv:2205.05673) [src]: on the BOSS DR12 power
+  spectrum, fixed b_φ(b_1) relations change σ(f_NL) by up to an order of
+  magnitude, from 16 ± 16 to 230 ± 226 on the same data; marginalising b_φ
+  with wide priors "is not conservative" and biases the result through
+  projection effects; only f_NL b_φ is measured (≠ 0 at 1.6σ).
+- **DESI DR1 collaboration** (Chaussidon et al. 2024, arXiv:2411.17623)
+  [src]: universality for LRGs and a recent-merger model for QSOs gives
+  −3.6 +9.0/−9.1; universality for QSOs too gives 3.5 +10.7/−7.4.
+- **Simulation priors on p.** IllustrisTNG DESI-like quasars give
+  p̄ ≃ 1.4 with weak redshift dependence, robust across CAMELS, and
+  f_NL = −3.3 ± 9.2 on DESI DR1 (Fondi et al. 2026, arXiv:2602.12357)
+  [src]. Field-level HEFT bias on AbacusSummit LRG- and QSO-like samples
+  reduces the b_φ uncertainty by 80%, b_∇ being a proxy for concentration
+  (Hadzhiyska & Ferraro 2025, arXiv:2501.14873) [src].
+
 ### Step 4. Measure P and B without window convolution
 <!-- key: step-4-measure-p-and-b-without-window -->
 
@@ -121,11 +142,30 @@ weights and the Rustico code on a 512³ grid of side 3500 h⁻¹ Mpc,
 Poisson shot noise subtracted at estimator level [src: arXiv:2201.11518,
 App. B].
 
+Other estimators: the FFT multipole estimator of Scoccimarro 2015
+(arXiv:1506.02729) measures BOSS bispectrum multipoles ℓ = 0, 2, 4 for all
+triangles to k = 0.2 h Mpc⁻¹ in about fifteen minutes on one core, which
+makes mock covariances affordable [src]. The skew-spectrum analysis of
+BOSS uses FKP estimates with an approximate window convolution, which
+errs by up to 5% on the gravitational bispectrum above k = 0.03 h Mpc⁻¹,
+6% on the equilateral and 18% on the orthogonal skew-spectra (Chen et
+al. 2024, arXiv:2401.13036, Sect. 5) [src]. The Quijote-PNG
+quasi-maximum-likelihood estimator compresses P and a modal bispectrum;
+the modal expansion converges faster in the numerical derivatives of the
+score function than k-binning (Jung et al. 2022, arXiv:2211.07565) [src].
+A configuration-space route fits the 2PCF and 3PCF monopoles, calibrated
+on halo simulations, with a **forecast** σ(f_NL^local) = 22 for DESI Y1
+LRGs (Brown et al. 2024, arXiv:2403.18789) [src].
+
 For the high-z quasars (QSO-all), the DESI DR1 reanalysis applies
 redshift weights w_0 = D(b_1 − f/3), w_2 = (2/3)Df, w̃ = b_1 − p with
 p = 1.6 (Eq. 2), propagated to window matrix and covariance, and weights
 the bispectrum fields to match the power-spectrum effective redshift
-[src: Sect. 2.2].
+[src: Sect. 2.2]. Such redshift weights for the scale-dependent bias come
+from the eBOSS quasar analyses: they improved the DR14 error by 15% (40%
+if quasars have a lower PNG response) (Castorina et al. 2019,
+arXiv:1904.08859) and the DR16 result, f_NL = −12 ± 21, by 37% (Mueller
+et al. 2021, arXiv:2106.13725) [src].
 
 ### Step 5. Bin, cut and choose statistics
 <!-- key: step-5-bin-cut-and-choose-statistics -->
@@ -153,6 +193,19 @@ the bispectrum fields to match the power-spectrum effective redshift
 - **B k_max at one loop** is set to avoid theory bias (Step 6 and
   "Choices"); a perturbativity prior instead caps the size of loops in
   D'Amico et al. (next step).
+
+Compressed or alternative statistics: tree-level weighted skew-spectra
+with the one-loop P_ℓ on BOSS, cosmology fixed to Planck 2018; two PNG
+kernels added to the Legendre ones cut the f_NL^equil and EFT errors by
+10–20% [src: arXiv:2401.13036, Sect. 5]. On Quijote-PNG haloes
+(k_max = 0.5 h Mpc⁻¹), P plus a suitable marked power spectrum beats P
+plus B for f_NL^equil (Jung et al. 2024, arXiv:2403.00490) [src]; a
+patch-based CNN summary added to P and B gains 30–45% at
+k_max ~ 0.1 h Mpc⁻¹ (Cagliari et al. 2025, arXiv:2510.12715) [src]; BORG
+field-level inference on Quijote halo catalogues to k_max ≈ 0.1 h Mpc⁻¹
+improves σ(f_NL^local) by ~1.3 over a P + B estimator, marginalising
+initial conditions and bias (Andrews et al. 2026, arXiv:2603.20855) [src].
+All three are simulation studies, not data results.
 
 ### Step 6. Likelihood, priors on the Gaussian nuisances, sampling
 <!-- key: step-6-likelihood-priors-on-the-gaussian -->
@@ -190,8 +243,12 @@ Each analysis fits the mean of large-volume simulations with f_NL = 0 using
 the covariance of the full simulated volume, so that any offset measures
 theory error [src: arXiv:2201.07238; arXiv:2204.01781, Fig. 2;
 arXiv:2201.11518, Sect. 4]. D'Amico et al. turn the offset into a bound,
-σ_th ≲ |μ_sims| − σ_sims (or σ_sims if negative) (Eq. 50) [src]. Results
-are in "Numbers".
+σ_th ≲ |μ_sims| − σ_sims (or σ_sims if negative) (Eq. 50) [src]. Chen et
+al. fit the mean of 84 Nseries boxes with the 2048-Patchy covariance
+rescaled to the BOSS volume (×2.4) and to the full Nseries volume (×84):
+the equilateral bias is about 0.53σ of BOSS, the orthogonal 4.15σ, traced
+to the window approximation, so f_NL^ortho was not fitted on data [src:
+arXiv:2401.13036, Sect. 5, Table 2]. Results are in "Numbers".
 
 ## Choices and what they cost
 <!-- key: choices-and-what-they-cost -->
@@ -211,6 +268,15 @@ are in "Numbers".
   Eqs. 46–49]; on DESI QSO-all by about 15% (−2 +11/−10 → −3 ± 9) [src:
   arXiv:2512.04266, Sect. 4.1]. With k_min = 0.05 instead of 0.01 the BOSS
   local error grows by a factor of four [src: arXiv:2204.01781, Eq. 47].
+- **The same split in simulations.** On Quijote-PNG haloes, local PNG is
+  best measured by the power-spectrum scale-dependent bias with sample
+  variance cancellation and small scales add little; equilateral and
+  orthogonal information is mostly in the bispectrum, raised up to ×4 by
+  small scales, but f_NL^equil stays degenerate with σ8 and the bias model
+  (Coulton et al. 2022, arXiv:2206.15450) [src]. The local signal
+  saturates at k ~ 0.2 h Mpc⁻¹; **forecast** Δf_NL = 45 (local), 570
+  (equil.), 110 (ortho.) for 1 (h⁻¹ Gpc)³ at z = 1 with k_max = 0.5
+  [src: arXiv:2211.07565].
 
 ### Tree level or one loop for B
 <!-- key: tree-level-or-one-loop-for-b -->
@@ -285,6 +351,14 @@ Eqs. 51–53]. The analyses differ in loop order, k ranges, PNG bias
 relations (b_φ with p = 0.55 against universality) and priors, so the
 difference cannot be assigned to one choice from what was read.
 
+The skew-spectrum analysis finds f_NL^equil = −34 +296/−334 and states it
+consistent within 1σ with 260 ± 300 and 245 ± 293 of its Refs. [10] and
+[12]; it describes [12] as one-loop P_0, P_2 and B_0 with FKP and fixed
+Planck cosmology (an error 7.5% different from its own with only a tree
+bispectrum) and [10] as window-free P + B_0 in the "aggressive" model
+(errors within 5%) [src: arXiv:2401.13036, Sect. 5]. Widening its EFT
+priors fivefold gives similar f_NL^equil [src: same].
+
 ## Numbers
 <!-- key: numbers -->
 
@@ -307,6 +381,14 @@ difference cannot be assigned to one choice from what was read.
 | One-loop vs tree B gain | ≈ 12% (equil.), ≈ 26% (ortho.) | DESI DR1 | arXiv:2512.04266 | Sect. 4.2 |
 | Bispectrum gain, local | ≈ 20% (BOSS, sim. b_φ), ≈ 30% (universality), ≈ 15% (DESI QSO-all) | BOSS; DESI DR1 | arXiv:2204.01781; arXiv:2512.04266 | Sect. 5; Sect. 4.1 |
 | DESI DR1 galaxies only, local | 6 ± 13 (LRG alone 6 +14/−13; collaboration 2 +15/−14 for p = 0.55) | DESI DR1 reanalysis | arXiv:2512.04266 | Sect. 4.1 |
+| DESI DR1 P only, local | −3.6 +9.0/−9.1 (QSO merger model); 3.5 +10.7/−7.4 (universality) | DESI DR1 LRG + QSO | arXiv:2411.17623 | abstract |
+| DESI DR1 with TNG prior on p | p̄ ≃ 1.4; f_NL = −3.3 ± 9.2 | DESI DR1 QSO | arXiv:2602.12357 | abstract |
+| BOSS P only, b_φ relation spread | 16 ± 16 to 230 ± 226 | BOSS DR12 | arXiv:2205.05673 | abstract |
+| eBOSS QSO, local | −51 < f_NL < 21 (95%, DR14); −12 ± 21 (DR16) | eBOSS | arXiv:1904.08859; arXiv:2106.13725 | abstracts |
+| Skew-spectra BOSS, equil. | −34 +296/−334 (cosmology fixed) | BOSS DR12 | arXiv:2401.13036 | Sect. 5, Eq. 5.1 |
+| Skew-spectra Nseries bias | 0.53σ (equil.), 4.15σ (ortho.) of BOSS | Nseries | arXiv:2401.13036 | Sect. 5, Table 2 |
+| Field level vs P + B (sims) | σ(f_NL^local) ~1.3 times smaller, k_max ≈ 0.1 | Quijote, BORG | arXiv:2603.20855 | abstract |
+| HEFT b_φ prior | b_φ uncertainty −80% (galaxy samples) | AbacusSummit | arXiv:2501.14873 | abstract |
 
 ## What goes wrong
 <!-- key: what-goes-wrong -->
@@ -321,11 +403,16 @@ difference cannot be assigned to one choice from what was read.
   simulation validation with the informative priors switched on.
 - **Prior mapping outside its calibration.** SBPs are calibrated for one
   galaxy type, one redshift and one cosmology [src: arXiv:2402.13310,
-  Sect. 2.1]. Test: compare conservative and SBP results; a large shift of
+  Sect. 2.1]. Local PNG has the same issue for b_φ: wide priors are not a
+  safe fallback, since they bias f_NL through projection [src:
+  arXiv:2205.05673]; simulation priors on p are calibrated on one
+  hydrodynamical model (TNG, checked against CAMELS) [src:
+  arXiv:2602.12357]. Test: compare conservative and SBP results; a large shift of
   the central value, as in DESI QSO-all (670 → −100), deserves a reason
   [src: arXiv:2512.04266, Sect. 4.2].
 - **Local f_NL with b_φ fixed.** Results move with the assumed relation
-  (BOSS: −33 ± 28 against −50 ± 40) [src: arXiv:2204.01781, Sect. 5]. Test:
+  (BOSS: −33 ± 28 against −50 ± 40 [src: arXiv:2204.01781, Sect. 5]; power
+  spectrum alone, an order of magnitude in σ [src: arXiv:2205.05673]). Test:
   report the result for a second relation, or fit b_φ f_NL and b_δφ f_NL
   directly, as Cabass et al. do in their Sect. 6 [src: Sect. 2.6].
 - **Large-scale systematics in the first k bin.** Test: raise k_min and
@@ -334,6 +421,14 @@ difference cannot be assigned to one choice from what was read.
   after comparing weighted and unweighted spectra and the low-k power
   spectrum, and gives an LRG-only result as a test [src:
   arXiv:2512.04266, Sect. 2.1].
+  The power-spectrum analyses test several contamination-removal methods
+  on EZ mocks, among them a neural-network cleaning (eBOSS DR16,
+  arXiv:2106.13725), and add an angular integral constraint to the window
+  for the photometric dependence of target selection, validated blind
+  (DESI DR1, arXiv:2411.17623) [src].
+- **Approximate window convolution.** A few-percent window error was
+  enough for a 4.15σ orthogonal bias in the skew-spectrum analysis [src:
+  arXiv:2401.13036, Sect. 5]. Test: the Nseries fit at full volume.
 - **Template mismatch with the CMB.** The physical orthogonal template
   differs from Planck's in the squeezed limit [src: arXiv:2201.07238,
   footnote 2]. Test: state the template before combining with Planck.
@@ -364,6 +459,20 @@ difference cannot be assigned to one choice from what was read.
   DESI DR1 P + B, PolyBin3D, per-sample p, tree vs one-loop gain.
 - Critique: Bakx et al. 2025, arXiv:2507.22110 — where the one-loop and
   tree-level bispectrum bias f_NL^equil.
+- Application (other groups): Chen, Chakraborty & Dvorkin 2024,
+  arXiv:2401.13036 — weighted skew-spectra on BOSS, Nseries bias.
+  Chaussidon et al. 2024, arXiv:2411.17623; Mueller et al. 2021,
+  arXiv:2106.13725; Castorina et al. 2019, arXiv:1904.08859 — DESI and
+  eBOSS scale-dependent bias, redshift weights.
+- Critique: Barreira 2022, arXiv:2205.05673 — b_φ uncertainty on BOSS.
+  Priors: Fondi et al. 2026, arXiv:2602.12357; Hadzhiyska & Ferraro 2025,
+  arXiv:2501.14873.
+- Method: Scoccimarro 2015, arXiv:1506.02729 (FFT bispectrum multipoles);
+  Brown et al. 2024, arXiv:2403.18789 (2PCF + 3PCF).
+- Simulation studies: Coulton et al. 2022, arXiv:2206.15450; Jung et al.
+  2022, arXiv:2211.07565 and 2024, arXiv:2403.00490 (Quijote-PNG);
+  Cagliari et al. 2025, arXiv:2510.12715; Andrews et al. 2026,
+  arXiv:2603.20855 (BORG field level).
 
 ## Not verified
 <!-- key: not-verified -->
@@ -377,6 +486,8 @@ difference cannot be assigned to one choice from what was read.
   (Table 1) and the Gaussian-nuisance priors of arXiv:2201.07238.
 - Map-level (field-level) inference of PNG on data: no analysis read here;
   see `cosmo-beyond-two-point`.
-- Weighted skew-spectra on BOSS (Chen et al. 2024) and the cosmological-
-  collider BOSS analysis (Cabass et al. 2024): titles seen in a search, not
-  read.
+- The cosmological-collider BOSS analysis (Cabass et al. 2024): title
+  seen in a search, not read.
+- The reference list of arXiv:2401.13036: which papers its Refs. [10] and
+  [12] are, and why its 245 ± 293 for [12] differs from the 207 ± 292 read
+  in arXiv:2201.11518.

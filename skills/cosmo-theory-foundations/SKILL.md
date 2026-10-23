@@ -93,7 +93,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 7k; methods 18k; results 7k; surveys 9k; systematics 9k; deep/eft-perturbation-theory 6k; deep/halo-model-nonlinear 6k; deep/linear-growth 5k; deep/projected-statistics-limber 6k; deep/relativistic-wide-angle 7k; deep/sound-horizon 6k.
+Sizes, in thousands of tokens: L1 3k; open 7k; methods 18k; results 7k; surveys 9k; systematics 9k; deep/eft-perturbation-theory 6k; deep/halo-model-nonlinear 8k; deep/linear-growth 5k; deep/projected-statistics-limber 6k; deep/relativistic-wide-angle 7k; deep/sound-horizon 6k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

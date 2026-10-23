@@ -3,12 +3,16 @@
 Scope: how a linear modified-gravity or dark-energy Boltzmann code is set
 up (choice of basis, background, stability tests, initial conditions,
 quasi-static switching, precision) and how to choose between EFTCAMB,
-H-EFTCAMB, hi_class, mochi_class and MGCAMB for a given model, with the
+H-EFTCAMB, hi_class, mochi_class, EoS_class, MGCAMB and ISiTGR for a given
+model; how the non-linear scales are reached with modified-gravity N-body
+codes (ECOSMOG, ISIS, MG-Gadget, MG-Arepo, MG-GLAM, PySCo); and the
 code-comparison results read in the papers.
-Snapshot: 2026-10-17.
+Snapshot: 2026-10-22.
 From: cloelib software paper (arXiv:2605.23839), State of the Field
-(hi_class, mgclass II, mochi_class); Bellini et al. 2017 code comparison
-(arXiv:1709.09135).
+(hi_class, mgclass II, mochi_class); the linear comparison of Bellini et
+al. 2017 (arXiv:1709.09135); the N-body comparisons of Winther et al. 2015
+(arXiv:1506.06384) and Euclid Collaboration: Adamek et al. 2024
+(arXiv:2409.03522).
 
 Already in L2, not repeated here: the list of forks, their bases and
 references in `physics-and-methods.md#modified-gravity-forks`; the
@@ -30,8 +34,8 @@ subset.
 | Route | What the user supplies | Codes | Place read |
 |---|---|---|---|
 | Covariant Lagrangian | the Horndeski functions G_2…G_5 of the scalar φ and X = −½ g^{μν}∂_μφ∂_νφ (arXiv:2603.01662, Eqs. 4–5) and initial field values; background and perturbations follow | hi_class (Galileon, nKGB, quintessence, Brans–Dicke since 2019), H-EFTCAMB Horndeski module (`EFTflag = 5`) | arXiv:1909.01828, Sect. 3.3; arXiv:2603.01662, Sect. 2.2.1 |
-| Effective basis of time functions | a background (w_DE(a) or ρ_DE) plus four functions of time | hi_class (α basis), EFTCAMB pure EFT (`EFTflag = 1`, Ω and γ_i basis), EFTCAMB alternative parametrisations (`EFTflag = 2`), mochi_class (stable basis) | arXiv:1605.06102, Sects. 2.2, 3.2; arXiv:1405.3590, Sect. II; arXiv:2407.11968, Sect. 2.1 |
-| Phenomenological growth functions | μ(a, k) and γ(a, k) or Σ(a, k) in the Poisson and slip equations, on a w or Ω_X background | MGCAMB, MGCLASS II | arXiv:2305.05667, Sect. II.1 |
+| Effective basis of time functions | a background (w_DE(a) or ρ_DE) plus four functions of time | hi_class (α basis), EFTCAMB pure EFT (`EFTflag = 1`, Ω and γ_i basis), EFTCAMB alternative parametrisations (`EFTflag = 2`), mochi_class (stable basis), EoS_class (α_x, solved in the equation-of-state formalism) | arXiv:1605.06102, Sects. 2.2, 3.2; arXiv:1405.3590, Sect. II; arXiv:2407.11968, Sect. 2.1; arXiv:1905.06795, Sects. 1, 3 |
+| Phenomenological growth functions | μ(a, k) and γ(a, k) or Σ(a, k) in the Poisson and slip equations, on a w or Ω_X background | MGCAMB, MGCLASS II, ISiTGR (also Q, R, D; functional, binned or hybrid in a and k; curved backgrounds) | arXiv:2305.05667, Sect. II.1; arXiv:1908.00290, Sects. IV.1–IV.5 |
 
 Definitions used below.
 
@@ -52,6 +56,21 @@ Definitions used below.
   σ the anisotropic stress; Σ is defined by k²(Φ+Ψ) =
   −4πG Σ a²[2ρΔ + 3(ρ+P)σ] (Eq. 6), and Σ = μ(1+γ)/2 only once relativistic
   anisotropic stress is negligible (Eq. 7) [src: Sect. II.1].
+- **Q, R, D** (ISiTGR; arXiv:1908.00290, Eqs. 18–20): (k² − 3K)Φ =
+  −4πG a² Q Σ_i ρ_iΔ_i and k²(Ψ − RΦ) = −12πG a² Q Σ_i ρ_i(1+w_i)σ_i, with
+  D ≡ Q(1+R)/2, which avoids the Q–R degeneracy and is what lensing and ISW
+  probe; ISiTGR implements both pairs. Σ = D, like Σ = μ(1+γ)/2, holds only
+  for zero anisotropic shear [src: Sect. IV.3]. Note that ISiTGR's Φ is
+  MGCAMB's Ψ in the Poisson equation: check each paper's Eq. before
+  mapping parameters [der from the two equations as written].
+- **Hybrid binning** (ISiTGR): bins in redshift, and inside each bin a
+  function of scale X_1 e^(−k/k_c) + X_2 (1 − e^(−k/k_c)) (Eqs. 32–33),
+  which gives a smoother P(k) than binning in k too [src: Sect. IV.5.2].
+- **EoS approach** (EoS_class; arXiv:1905.06795): the dark sector is
+  described by its equation of state for perturbations, entropy
+  perturbation w_dsΓ_ds and anisotropic stress w_dsΠ_ds, written in terms
+  of the α_x; implemented in CLASS, first for f(R) as CLASS_EOS_FR, then
+  for full Horndeski [src: Sects. 1, 3].
 - **Stable basis** (mochi_class; arXiv:2407.11968, Eq. 26): D_kin, M_*²,
   c_s² and α_B0 = α_B(z = 0), plus a background function; α_B is obtained
   by integrating the non-linear equation Eq. 27 with source Eq. 28, then
@@ -162,6 +181,7 @@ horizon (c_s²k² ≫ a²H²), turning its equation into a constraint
 |---|---|
 | MGCAMB, mgclass | on all scales and at all times |
 | EFTCAMB | never (full dynamics) |
+| QSA_class (CLASS branch for this test) | three QSA formulations against the exact solution (arXiv:2011.05713) |
 | hi_class (2019) | per mode and per epoch, three modes: FFD (full dynamics always), FQS (QSA always), AUTO (switching) |
 | mochi_class | hybrid, with the QSA allowed until late times |
 
@@ -184,6 +204,42 @@ dynamics, because the authors prefer the QSA at early times, when dark
 energy does not gravitate, to the QSA at late times [src: Sect. 5.3]. The
 method must be set explicitly to AUTO; otherwise full dynamics is used, and
 the defaults were chosen for accuracy over speed [src: Sect. 5.3].
+
+Which QSA is applied also matters. Pace et al. 2021 (arXiv:2011.05713)
+compare three formulations, the QSA applied to the field equations, to
+the equations of the two metric potentials, and the attractor solution of
+the EoS approach: all agree on very small scales; except in f(R), where
+all three coincide, they depart from the exact solution at
+k ≲ 3–4 × 10⁻³ h Mpc⁻¹; the field-equation and EoS forms reproduce
+P(k), C_ℓ^TT and lensing within 1 % for k/H_0 of a few and ℓ > 5, while
+the potential-equation form has "limited applicability" [src]. Most
+modified-gravity N-body codes also take the QSA (Step 6).
+
+### Step 6. Go non-linear: modified-gravity N-body codes
+<!-- key: step-6-go-non-linear-modified-gravity-n-body -->
+
+The Boltzmann codes stop at linear scales. Beyond them the scalar-field
+equation, non-linear because of screening, is solved on a mesh by
+Newton–Gauss–Seidel relaxation with multigrid acceleration
+(arXiv:1506.06384, Sect. 3.2) [src]. The codes, one line each:
+
+| Code | Base and mesh | Models and extras | Source |
+|---|---|---|---|
+| DGPM | fixed-grid PM, FFT Poisson solver; residual < 10⁻¹⁰ within 3 V-cycles | DGP (Vainshtein) | arXiv:1506.06384, Sect. 4.1.1 |
+| ECOSMOG | RAMSES AMR, multigrid on all refinement levels | f(R), DGP, dilaton, symmetron, Galileons | arXiv:1110.1379; arXiv:1506.06384, Sect. 4.1.2 |
+| ISIS | RAMSES, non-linear multigrid; `isis-nonstatic` keeps time derivatives | f(R), symmetron, disformal, cubic Galileon | arXiv:1307.6748; arXiv:1506.06384, Sect. 4.1.4 |
+| MG-Gadget | P-Gadget3 TreePM+SPH, AMR grid built from the oct-tree | f(R) with hydrodynamics, cooling and star formation, AGN feedback studied; massive neutrinos | arXiv:1305.2418; arXiv:1506.06384, Sect. 4.1.3 |
+| MG-Arepo | Arepo moving mesh, TreePM; AMR relaxation solver; MG force on larger time steps | f(R), nDGP; δf massive neutrinos | arXiv:2409.03522, Sect. 3.1.1 |
+| MG-GLAM | GLAM parallel PM, multigrid relaxation; full solver, accuracy limited by the PM grid | f(R) variants, symmetron, coupled quintessence; Vainshtein and K-mouflage in a companion code | arXiv:2110.00328, abstract, Sect. 1 |
+| PySCo-EFT, ECOSMOG-EFT | Python PM and RAMSES AMR, multigrid with Vainshtein screening | Horndeski with c_T = 1, in EFT of dark energy | arXiv:2604.15434 |
+| MG-COLA, PANDA | approximate MG solvers (COLA: fixed-grid PM with 2LPT) | in the Euclid comparison, nDGP within 1 % of MG-Arepo even at k > 1 h Mpc⁻¹ | arXiv:2409.03522, Sects. 3.2, 4 |
+
+Run time: MG-GLAM takes about 3–5 times the time of the same ΛCDM GLAM run
+and is "at least 100 times faster" than ECOSMOG and MG-Arepo for the same
+box and particle number (arXiv:2110.00328, Sect. 1) [src]. In the Euclid
+comparison full field solvers cost up to a factor of ten more CPU time
+than ΛCDM, the approximate ones not significantly more
+(arXiv:2409.03522, Sect. 4) [src].
 
 ## Choices and what they cost
 <!-- key: choices-and-what-they-cost -->
@@ -264,6 +320,25 @@ theoretically inconsistent", since w is then an effective quantity, not a
 fluid. The authors leave the choice to context (arXiv:2305.05667,
 Sect. II.2.6) [src].
 
+### QSA in N-body codes, and full or approximate solvers
+<!-- key: qsa-in-n-body-codes-and-full-or-approximate -->
+
+- The QSA, used by most modified-gravity N-body codes, was tested for the
+  symmetron, where non-static effects are expected to be largest:
+  `isis` and `isis-nonstatic` differ by < 0.5 % on all scales and
+  redshifts shown; in that implementation particles do not follow the
+  field's rapid oscillations, because of different time steps
+  (arXiv:1506.06384, abstract, Sect. 6) [src].
+- Full field solvers against approximate ones: in the Euclid comparison
+  the full solvers (MG-Arepo, MG-Gadget, ECOSMOG, ISIS, PySCo) agree on
+  the boost to ≲ 1 % up to k ≲ 1 h Mpc⁻¹ and ≲ 3 % up to 10 h Mpc⁻¹; PANDA
+  and MG-COLA stay within 3 % up to k ≲ 7 h Mpc⁻¹, at a much lower cost
+  (arXiv:2409.03522, Sect. 4) [src].
+- PM resolution: a fixed-grid code (COLA, PySCo without AMR) lacks power
+  at k ≳ 1 h Mpc⁻¹ in ΛCDM itself (arXiv:2409.03522, Sect. 3.2) [src];
+  MG-GLAM's accuracy is likewise "only limited by the resolution of the
+  PM grid" (arXiv:2110.00328, Sect. 1) [src].
+
 ### Which code for which question
 <!-- key: which-code-for-which-question -->
 
@@ -281,7 +356,15 @@ Sect. II.2.6) [src].
   MGCAMB cubic splines of μ, Σ, Ω_X (arXiv:2305.05667, Sect. II.2.5,
   heading only read).
 - Survey-style μ–Σ constraints, Planck and DES forms, f(R) and
-  symmetron in QSA: MGCAMB (arXiv:2305.05667, Sect. II.1).
+  symmetron in QSA: MGCAMB (arXiv:2305.05667, Sect. II.1); with binned or
+  hybrid time and scale dependence, Q–R–D forms, curvature and massive
+  neutrinos throughout: ISiTGR, a patch to CAMB and CosmoMC
+  (arXiv:1908.00290, abstract, Sect. IV).
+- Horndeski in the EoS formalism, or f(R) in CLASS: EoS_class
+  (arXiv:1905.06795, Sect. 1).
+- Non-linear P(k), haloes, velocity divergence: a full N-body solver
+  (Step 6); many runs for mocks or emulators: MG-GLAM (arXiv:2110.00328,
+  abstract); baryons together with f(R): MG-Gadget (arXiv:1305.2418).
 
 ## Numbers
 <!-- key: numbers -->
@@ -306,6 +389,18 @@ Sect. II.2.6) [src].
 | mochi_class GR-approximation end | `z_gr_smg` = 99 | default | arXiv:2407.11968 | Sect. 3.1 |
 | mochi_class input sampling | Δln a ≤ 7.5 × 10⁻⁴ over ln a ∈ [−2, 0] | recommended | arXiv:2407.11968 | Sect. 3.1 |
 | hi_class AUTO switches | at most 6 | — | arXiv:1909.01828 | Sect. 5.3 |
+| EoS_class vs hi_class, C_ℓ^TT, C_ℓ^φφ, P(k) | sub-per-cent, < 0.1 % in almost all cases; largest at TT ℓ ≳ 1000, from CLASS 2.6.3 vs 2.4.5 | α_x models 1, 3–6 | arXiv:1905.06795 | Sect. 4 |
+| QSA formulations vs exact | depart at k ≲ 3–4 × 10⁻³ h Mpc⁻¹; observables within 1 % for k/H_0 of a few, ℓ > 5 | Horndeski models | arXiv:2011.05713 | abstract |
+| N-body codes, ΛCDM P(k), MG switched off | 1 % at k ≲ 1 h Mpc⁻¹; ∼ 5 % at k ∼ 5 h Mpc⁻¹ | ECOSMOG, ISIS, MG-Gadget | arXiv:1506.06384 | Sect. 6 |
+| N-body codes, f(R) boost P/P_ΛCDM | < 1 % for k ≲ 7 h Mpc⁻¹ | same initial conditions | arXiv:1506.06384 | Sect. 6 |
+| DGPM vs ECOSMOG (fixed grid), DGP boost | ≲ 1 % for k ≲ 7 h Mpc⁻¹ | — | arXiv:1506.06384 | Sect. 6 |
+| Symmetron, QSA vs non-static | < 0.5 % | `isis` vs `isis-nonstatic` | arXiv:1506.06384 | Sect. 6 |
+| Full solvers, boost (F5, F6, N1.2, N5.6) | ≲ 1 % to k ≲ 1, ≲ 3 % to k ≲ 10 h Mpc⁻¹; f(R) < 1 % to k ≈ 10 | MG-Arepo reference, z = 1 and 0.667 | arXiv:2409.03522 | Sects. 3.2, 4 |
+| AMR codes, nDGP boost at k > 1 h Mpc⁻¹ | ∼ 2 % from MG-Arepo | ECOSMOG, ISIS | arXiv:2409.03522 | Sect. 3.2 |
+| Approximate solvers, boost | ≤ 3 % to k ≲ 7 h Mpc⁻¹ | PANDA, MG-COLA | arXiv:2409.03522 | Sect. 4 |
+| Relative halo mass function | within 5 %, except the largest and smallest masses | all codes | arXiv:2409.03522 | Sect. 4 |
+| CPU cost relative to ΛCDM | up to × 10 (full solvers); MG-GLAM 3–5, ≥ 100 times faster than ECOSMOG, MG-Arepo | — | arXiv:2409.03522; arXiv:2110.00328 | Sect. 4; Sect. 1 |
+| PySCo-EFT, ECOSMOG-EFT | < 0.5 % vs linear theory on large scales, similar between codes non-linearly; numerical effects < 2 % at k = 10 h Mpc⁻¹ | EFT of DE, Vainshtein | arXiv:2604.15434 | abstract |
 
 High-precision settings used for the mochi_class comparison
 (arXiv:2407.11968, App. A) [src]: CLASS-based, `perturbations_sampling_stepsize = 0.01`,
@@ -346,7 +441,16 @@ High-precision settings used for the mochi_class comparison
   the named versions only (EFTCAMB Sep17, Oct15 for JBD; hi_class v1.1;
   COOP v1.1) [src: Sects. III.1–III.3, V]. A 0.2 % EFTCAMB–MGCAMB low-ℓ
   difference came from the underlying CAMB versions
-  (arXiv:2407.11968, Sect. 4.1) [src].
+  (arXiv:2407.11968, Sect. 4.1) [src], and the largest EoS_class–hi_class
+  difference, TT at ℓ ≳ 1000, from CLASS 2.6.3 against 2.4.5
+  (arXiv:1905.06795, Sect. 4) [src].
+- **Base N-body code read as a modified-gravity effect.** ΛCDM differences
+  between base codes (RAMSES, P-Gadget3) propagate into the modified
+  results; f(R) P(k) differences were "driven almost exclusively" by the
+  base codes, so the comparison is made on the ratio to a ΛCDM run of the
+  same code from the same initial conditions (arXiv:1506.06384, Sect. 6)
+  [src]. AMR refinement criteria made RAMSES-based codes lose small-scale
+  power against tree codes (arXiv:2409.03522, Sect. 3.2) [src].
 - **Parameter map bugs.** The authors name the map from model parameters
   to the code's basis as "the most probable place" for bugs in a model
   not in the comparison (arXiv:1709.09135, Sect. V, step 2) [src]. Test:
@@ -387,11 +491,29 @@ until outputs stop changing; (5) a known limit is recovered.
 - Code: Zucca et al. 2019, arXiv:1901.05956 and Wang et al. 2023,
   arXiv:2305.05667 — MGCAMB GR limit, direct μ–Σ, DE perturbations.
 - Critique: Sawicki & Bellini 2015, arXiv:1503.06831 — where the QSA
-  breaks, by sound speed and observable.
+  breaks, by sound speed and observable; Pace et al. 2021,
+  arXiv:2011.05713 — three QSA formulations against exact solutions.
+- Code: Garcia-Quintero et al. 2019, arXiv:1908.00290 — ISiTGR
+  parametrisations, binning, curvature. Pace et al. 2019,
+  arXiv:1905.06795 — EoS_class and its validation against hi_class.
+- Critique and validation (non-linear): Winther et al. 2015,
+  arXiv:1506.06384 — first MG N-body comparison, QSA test; Euclid
+  Collaboration: Adamek et al. 2024, arXiv:2409.03522 — methods review,
+  full and approximate solvers, costs.
+- Code (N-body): Li et al. 2012, arXiv:1110.1379 (ECOSMOG); Llinares et
+  al. 2014, arXiv:1307.6748 (ISIS); Puchwein et al. 2013,
+  arXiv:1305.2418 (MG-Gadget); Ruan et al. 2022, arXiv:2110.00328
+  (MG-GLAM); Ganjoo et al. 2026, arXiv:2604.15434 (PySCo-EFT,
+  ECOSMOG-EFT).
 
 ## Not verified
 <!-- key: not-verified -->
 
+- The agreement levels quoted from the Euclid code comparison (arXiv:2409.03522,
+  Sect. 4) for the full solvers: on 2026-10-22 the coordinator found the
+  paper's statements that full solvers agree down to k ≈ 10 h Mpc⁻¹ and that
+  the approximate schemes stay within 2% of MG-Arepo, but not the exact
+  percentages; they may sit in its figures.
 - MGCAMB cubic-spline reconstruction (arXiv:2305.05667, Sect. II.2.5) and
   the CDM-only coupling (Sect. II.2.2): headings read, bodies not.
 - MGCLASS II settings (arXiv:2112.14175): only its abstract is in L2; that
@@ -403,6 +525,11 @@ until outputs stop changing; (5) a known limit is recovered.
   cited in arXiv:2407.11968, footnote 2, not read.
 - hi_class default values of T_μ, T_r, ε_decay, z_FD: the paper reports
   values used in its figures, not the shipped defaults.
+- MG-Arepo's own paper (Arnold et al. 2019), COOP's code paper and
+  CLASS_EOS_FR's: described here only through arXiv:2409.03522,
+  arXiv:1709.09135 and arXiv:1905.06795; not read, no identifiers
+  recorded. The MG-GLAM derivative-coupling companion paper
+  was seen by abstract only.
 - The `EFTflag` numbering read is that of the EFTCAMB notes v3.0 HTML;
   H-EFTCAMB adds `EFTflag = 5` (arXiv:2603.01662), and later numbering was
   not checked against the code.

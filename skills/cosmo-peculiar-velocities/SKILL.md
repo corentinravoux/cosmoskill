@@ -110,7 +110,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 7k; methods 12k; results 15k; surveys 6k; systematics 12k; deep/bulk-flows 7k; deep/distance-indicators 9k; deep/field-level-likelihood 6k; deep/supernova-velocities 7k; deep/two-point-statistics 6k; deep/velocity-density-comparison 7k.
+Sizes, in thousands of tokens: L1 3k; open 7k; methods 13k; results 15k; surveys 6k; systematics 12k; deep/bulk-flows 7k; deep/distance-indicators 9k; deep/field-level-likelihood 9k; deep/supernova-velocities 7k; deep/two-point-statistics 6k; deep/velocity-density-comparison 10k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

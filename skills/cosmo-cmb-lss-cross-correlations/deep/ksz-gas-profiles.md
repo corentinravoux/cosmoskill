@@ -5,8 +5,12 @@ profile or a feedback statement — the forward model of the filtered signal,
 the gas model (GNFW, baryonification) with its priors and truncation, the
 HOD and halo-mass inputs, how simulations are stacked for a like-for-like
 comparison, the lensing-to-kSZ ratio, and the projected-field estimator —
-and how to choose between these routes.
-Snapshot: 2026-10-18.
+and how to choose between these routes. The most detailed recent profile
+analyses all use ACT DR6 × DESI data (the Berkeley-led measurement papers
+and the Amon-group simulation comparisons); other CMB experiments,
+samples and estimators (SPT, Planck, ACT × BOSS, pairwise, projected
+field) and the X-ray and FRB comparisons are given beside them.
+Snapshot: 2026-10-22.
 From: Baxter 2022 Snowmass review (arXiv:2203.06795), Sect. II.2
 ("Constraining baryonic feedback"); SO science goals 2025
 (arXiv:2503.00636), Sect. 3.4 (kSZ gas and feedback paragraph).
@@ -52,6 +56,36 @@ power spectrum; A_k2h free amplitude of the two-halo term.
 The stacked estimators need a velocity per galaxy; the projected field
 needs none but measures the square of the signal.
 
+Other data and estimators, one line each [src: abstracts unless stated]:
+- **Pairwise, SPT-SZ × DES Y1 clusters** (Soergel et al. 2016,
+  arXiv:1603.03904): 4.2σ, the first pairwise detection with photometric
+  redshifts; τ̄_e = (3.75 ± 0.89) × 10⁻³.
+- **Pairwise, SPT-3G × DES Y3 clusters** (Schiappucci et al. 2023,
+  arXiv:2207.11937): 4.1σ with 24,580 clusters on ~1400 deg²;
+  τ̄_e = (2.97 ± 0.73) × 10⁻³ from kSZ against (2.51 ± 0.55 ± 0.15) × 10⁻³
+  from tSZ, 0.6σ apart.
+- **Pairwise, ACT DR5/DR4 × SDSS DR15** (Calafut et al. 2021,
+  arXiv:2101.08374): 5.4σ with 343,647 LRGs, mass-averaged τ̄ per
+  luminosity bin; the tSZ companion paper (below) compares the two.
+- **Pairwise, Planck** × BOSS (Li et al. 2018, arXiv:1710.10876): τ̄ at
+  0.5–1.7σ per sample, best with a 7′ aperture; × DESI imaging groups (Chen
+  et al. 2022, arXiv:2109.04092): 5σ with 1.2 × 10⁵ clusters and a
+  maximum-likelihood estimator, group masses gaining ~10%,
+  τ̄_e = (1.66 ± 0.35) × 10⁻⁴.
+- **Joint pairwise kSZ and galaxy clustering, ACT DR6 × CMASS** (Li &
+  Zheng 2026, arXiv:2605.01963, Sect. III.3): the kSZ dipole fitted with
+  the galaxy multipoles breaks the τ̄–b_1 degeneracy; a τ̄ profile versus
+  aperture with S/N 7.2 at θ_AP = 2′ (f150), no kSZ rejected at 8.7σ.
+- **Stacking with velocities reconstructed from photometric groups**, ACT
+  × DESI Legacy groups (Roper, Cai & Peacock 2025, arXiv:2510.12553): the
+  group sample is split into receding and approaching halves to avoid
+  cancellation [src: Sect. 1].
+- **Projected field, first** (Hill et al. 2016, arXiv:1603.01608):
+  Planck + WMAP × WISE, 3.8–4.5σ, (f_b/0.158)(f_free/1.0) = 1.48 ± 0.19
+  (statistical only) at z ≈ 0.4.
+- **FRB dispersion measure × galaxies** (McCarty et al. 2026,
+  arXiv:2608.11296): 130 localised FRBs × DESI Legacy BGS, 6.5σ.
+
 ### Step 2. Forward-model the filtered signal
 <!-- key: step-2-forward-model-the-filtered-signal -->
 
@@ -80,6 +114,14 @@ baryonification fit of Siegel 2025 (arXiv:2512.02954) scales the model by
 the reported v_p^rms/r_v of each sample, which assumes that the gas velocity
 dispersion does not depend on θ_d; its Appendix D finds this valid only at
 small separations, so the kSZ fit is restricted to θ_d < 3′ [src: Sect. 3.1].
+The photometric-group analysis builds the forward model from AbacusSummit
+mock group catalogues with synthetic kSZ maps and a reconstructed velocity
+field that includes photo-z errors, redshift-space distortions and masks,
+and finds CIB contamination subdominant in the ACT channel used [src:
+arXiv:2510.12553]. The ACT × SDSS tSZ route converts the tSZ signal into
+τ̄ with hydrodynamical simulations under an AGN-feedback model and
+compares with NFW predictions (Vavagiakis et al. 2021, arXiv:2101.08373)
+[src].
 
 ### Step 3. Choose the gas model
 <!-- key: step-3-choose-the-gas-model -->
@@ -125,7 +167,15 @@ percent for 0.1 < k < 10 h/Mpc and 0 < z < 2 [src: Sect. 3, Table 1]. The
 kSZ-only posterior is log₁₀M_c = 13.8 +0.6/−0.5; joint with eROSITA gas
 fractions 13.6 ± 0.2 [src: Table 1]. The same model yields the matter-power
 suppression directly, which is why this route is chosen for
-weak-lensing priors.
+weak-lensing priors. Independent baryonification lines: the
+component-wise BFC model fitted to ACT kSZ and eROSITA gas fractions
+gives a suppression above a percent at k = 0.3–0.6 h Mpc⁻¹, 2–8% at
+k = 1 and 20–25% at k = 5, and matches X-COP cluster density and pressure
+profiles (Kovač et al. 2025, arXiv:2507.07991) [src]; the same framework
+forward-models X-ray surface brightness for CHEX-MATE and eFEDS,
+f_gas = 0.029 ± 0.006 at M_500c = 3 × 10¹³ M⊙ and 0.078 ± 0.004 at
+3 × 10¹⁴ M⊙, suppression 6% at k = 1 and 23% at k = 5 (Bucko et al.
+2026, arXiv:2609.09144) [src].
 
 ### Step 4. Harmonic-space measurement and the HOD
 <!-- key: step-4-harmonic-space-measurement-and-the-hod -->
@@ -195,6 +245,14 @@ the simulated profile to the largest aperture or leaves its amplitude free,
 fitted linearly as Â = mᵀC⁻¹d / mᵀC⁻¹m with σ_A = (mᵀC⁻¹m)^−1/2 [src:
 arXiv:2503.19870, Sects. V.2, V.2.1, V.2.2; App. .3, Eqs. 12–15].
 
+Other comparisons with simulations: FLAMINGO against the Planck + ACT
+stacks of BOSS galaxies, with KiDS and DES galaxy–galaxy lensing to select
+the simulated galaxies (McCarthy et al. 2024, arXiv:2410.19905) [src];
+Websky against ACT DR6 × CMASS, renormalised at θ_AP = 6′ so that only the
+shape is compared, because Websky haloes are more massive than CMASS
+hosts and some CMASS galaxies are satellites or miscentred (Li & Zheng
+2026, arXiv:2605.01963, Sect. IV.1.2) [src].
+
 ### Step 6. Calibrate the halo mass or take a ratio
 <!-- key: step-6-calibrate-the-halo-mass-or-take-a-ratio -->
 
@@ -235,6 +293,16 @@ Kusiak 2021 [src: arXiv:2102.01068, Sects. II.1, II.2, IV.1, IV.2]:
    (Eq. 20).
 5. NaMaster bandpowers in 13 bins of Δℓ = 200 from 300 to 2900, Gaussian
    covariance, nearly diagonal but used in full.
+
+The estimator was introduced on Planck + WMAP × WISE [src:
+arXiv:1603.01608]. Its original model is an approximation valid at small
+scales; an improved model differs in a scale-dependent way that matters
+at the S/N > 100 forecast for SO or CMB-S4 × WISE or Rubin, and a Planck
+prior leaves ~7% uncertainty on the amplitude (Patki et al. 2023,
+arXiv:2306.03127) [src]. The class_sz halo model agrees with Websky at
+Planck sensitivity but differs by ≈ 20% for SO, consistent with the terms
+of other contractions it omits (Rodriguez et al. 2025, arXiv:2509.03458)
+[src].
 
 ## Choices and what they cost
 <!-- key: choices-and-what-they-cost -->
@@ -289,6 +357,49 @@ arXiv:2510.15822, Sect. 4.2]. The harmonic analysis uses three redshift bins
 matched to the HOD calibration, the configuration-space one four finer bins
 for redshift evolution [src: arXiv:2604.19744, Sect. IV.2].
 
+### kSZ against X-ray, tSZ and FRB baryon measurements
+<!-- key: ksz-against-x-ray-tsz-and-frb-baryon -->
+
+The papers' own comparisons, both sides as stated [src: abstracts unless
+stated]:
+- **kSZ against X-ray-calibrated simulations.** FLAMINGO comparisons find
+  that kSZ prefers stronger feedback than simulations calibrated to
+  low-z X-ray gas fractions, which eases S8 from cosmic shear "at the
+  expense of agreement with the X-ray group measurements" [src:
+  arXiv:2410.19905].
+- **kSZ against eROSITA.** The BFC fit finds ACT kSZ consistent with
+  eROSITA gas fractions, both stronger than most simulations, unlike
+  pre-eROSITA gas fractions; the authors suspect selection bias in the
+  pre-eROSITA sample or halo-mass differences [src: arXiv:2507.07991].
+  The joint DESI + ACT kSZ, eROSITA and lensing analysis: eROSITA gas
+  fractions are 2× lower than fiducial FLAMINGO and the kSZ profiles
+  combined > 8σ discrepant with it; the strongest-expulsion variant fits
+  (Siegel et al. 2025, arXiv:2509.10455) [src]. X-ray forward modelling of
+  CHEX-MATE and eFEDS is "consistent with recent kinematic
+  Sunyaev-Zel'dovich results" [src: arXiv:2609.09144].
+- **On fiducial FLAMINGO, the ratio route differs.** The ΔΣ-filtered
+  kSZ/lensing ratio finds fiducial FLAMINGO "most closely tracks the
+  observed radial gas distribution" in both BGS and LRGs [src:
+  arXiv:2609.22466], whereas the mass-matched profiles put it > 10σ from
+  the LRG profile [src: arXiv:2510.15822, Table 2]; the two compare
+  different quantities (a differential f_gas ratio against absolute
+  profiles).
+- **Mass dependence.** Low-mass groups (10^12.5 ≲ M ≲ 10^14 h⁻¹ M⊙) hold
+  0.21 ± 0.06 of the universal baryon fraction within the virial radius,
+  massive groups the universal value, consistent with an extended profile
+  [src: arXiv:2510.12553]. ACT DR6 × CMASS: the integrated τ̄ flattens at
+  θ_AP ≳ 6′, ~2.6 cMpc/h, 2–3 virial radii, against ~1 Mpc/h for NFW, and
+  Websky flattens faster than the data [src: arXiv:2605.01963,
+  Sect. IV.1.2].
+- **kSZ against tSZ on the same clusters.** SPT-3G × DES: τ̄ agree at
+  0.6σ [src: arXiv:2207.11937]; ACT × SDSS DR15: within 1σ in two of three
+  luminosity bins, 2–3σ apart in the brightest, τ̄ accounting for one
+  third to all of the predicted baryons [src: arXiv:2101.08373].
+- **FRBs.** The FRB DM × galaxy signal disfavours gas tracing dark matter
+  (no feedback) at ~9σ and shows "good agreement" with recent kSZ studies;
+  a first joint fit uses FRBs to break the kSZ optical-depth degeneracy
+  and measure fσ8 [src: arXiv:2608.11296].
+
 ### Which velocity enters the prediction
 <!-- key: which-velocity-enters-the-prediction -->
 
@@ -331,6 +442,17 @@ Sect. 5.3].
 | Projected-field bins | 13 × Δℓ = 200, ℓ = 300–2900 | Planck × unWISE | arXiv:2102.01068 | Sect. IV.2 |
 | Projected-field per-sample significance | 1.4σ, 5.0σ, 2.5σ (blue, green, red) | same | arXiv:2102.01068 | Fig. 5 caption |
 | Non-linear velocity terms | each up to ≈ 50%; net 10–20% | simulations | arXiv:2607.23339 | Table 1 caption |
+| Pairwise τ̄_e (SPT) | (3.75 ± 0.89) × 10⁻³ (SPT-SZ × DES Y1); (2.97 ± 0.73) × 10⁻³ kSZ, (2.51 ± 0.55 ± 0.15) × 10⁻³ tSZ (SPT-3G × DES Y3) | SPT × DES | arXiv:1603.03904; arXiv:2207.11937 | abstracts |
+| Pairwise τ̄_e (Planck × DESI groups) | (1.66 ± 0.35) × 10⁻⁴, 4.7σ template fit | Planck | arXiv:2109.04092 | abstract |
+| Pairwise detection, ACT × SDSS DR15 | 5.4σ, 343,647 LRGs | ACT DR5/DR4 | arXiv:2101.08374 | abstract |
+| ACT DR6 × CMASS τ̄ profile | S/N 7.2 at 2′; 8.7σ (f150), 7.3σ (f090) against no kSZ | ACT DR6 | arXiv:2605.01963 | Fig. 3 caption; Table 1 |
+| Low-mass group baryon fraction | 0.21 ± 0.06 f_b within r_vir | ACT × DESI Legacy groups | arXiv:2510.12553 | abstract |
+| Projected-field amplitude (first) | (f_b/0.158)(f_free) = 1.48 ± 0.19 | Planck + WMAP × WISE | arXiv:1603.01608 | abstract |
+| Projected-field model gap | ≈ 20% for SO (halo model vs Websky) | simulations | arXiv:2509.03458 | abstract |
+| X-ray f_gas (baryonification) | 0.029 ± 0.006 (3 × 10¹³ M⊙); 0.078 ± 0.004 (3 × 10¹⁴ M⊙) | CHEX-MATE + eFEDS | arXiv:2609.09144 | abstract |
+| P(k) suppression, kSZ + eROSITA | 2–8% at k = 1, 20–25% at k = 5 h Mpc⁻¹ | ACT + eROSITA | arXiv:2507.07991 | abstract |
+| eROSITA vs fiducial FLAMINGO | f_gas 2× lower; kSZ > 8σ discrepant | DESI + ACT + eROSITA | arXiv:2509.10455 | abstract |
+| FRB DM × galaxy | 6.5σ; no feedback disfavoured at ~9σ | 130 FRBs × BGS | arXiv:2608.11296 | abstract |
 
 ## What goes wrong
 <!-- key: what-goes-wrong -->
@@ -372,6 +494,18 @@ Sect. 5.3].
   with the 545 GHz map; 0.83, 0.72, 0.95 with 857 GHz; noise-map nulls
   0.32–1.0; a 40% Planck mask gives consistent results
   (arXiv:2102.01068, Sect. IV.1, Table 3) [src].
+- **Simulation haloes more massive than the sample, or satellites.**
+  Lowers or raises the amplitude; one answer is to compare shapes only,
+  renormalised at a large aperture [src: arXiv:2605.01963, Sect. IV.1.2].
+- **Projected-field model incomplete.** The dominant-term halo model is
+  ≈ 20% off for SO; the other contractions must be added [src:
+  arXiv:2509.03458; arXiv:2306.03127].
+- **Selection of the X-ray comparison sample.** Pre-eROSITA gas fractions
+  point to weaker feedback than kSZ, possibly through selection bias or
+  mass estimates [src: arXiv:2507.07991]. Test: forward-model the X-ray
+  selection [src: arXiv:2609.09144].
+- **Hemisphere differences.** A mild SGC–NGC discrepancy in one LRG bin
+  may be a residual systematic [src: arXiv:2609.22466].
 - **Real-space ↔ harmonic consistency.** Convert the harmonic best fit to
   CAP with Eq. 37 of arXiv:2604.19744 and fit one amplitude A to the
   bootstrap-covariance profile; A = 1 is the pass criterion (Sect. V.3)
@@ -382,24 +516,31 @@ Sect. 5.3].
 
 - Foundation: Schaan 2020, arXiv:2009.05557 — CAP stacking, tSZ/dust
   rejection (in L2).
-- Method: Amodeo 2020, arXiv:2009.05558 — the forward-model chain, GNFW
-  density and pressure, two-halo term, priors.
-- Method: Qu 2026, arXiv:2604.19744 — harmonic momentum template, GNFW
-  truncation, HOD-marginalised emulator likelihood, CAP window.
-- Method: Kusiak 2021, arXiv:2102.01068 — projected-field estimator, lensing
-  term, α-cleaning and its nulls.
-- Method: Siegel 2025, arXiv:2512.02954 — baryonification fit of kSZ and
-  X-ray gas fractions; priors; θ_d < 3′.
-- Application: Bigwood 2025, arXiv:2510.15822 — stacking simulations like
-  the data; cosmic-variance correction; lensing mass matching.
-- Application: Ried Guachalla 2025, arXiv:2503.19870 — the two
-  simulation-comparison approaches and their caveats.
-- Application: Hadzhiyska 2025, arXiv:2507.14136 — CMB-lensing mass and the
-  kSZ/κ gas fraction.
-- Method: Liu 2026, arXiv:2609.22466 — ΔΣ filter and model-independent
-  f_gas(R); beam and miscentring tests.
+- Method: Amodeo 2020, arXiv:2009.05558 (forward-model chain, GNFW density
+  and pressure, two-halo term, priors); Qu 2026, arXiv:2604.19744
+  (harmonic momentum template, GNFW truncation, HOD-marginalised emulator,
+  CAP window); Kusiak 2021, arXiv:2102.01068 (projected field, lensing
+  term, α-cleaning); Siegel 2025, arXiv:2512.02954 (baryonification of
+  kSZ and X-ray gas fractions, θ_d < 3′); Liu 2026, arXiv:2609.22466 (ΔΣ
+  filter, model-independent f_gas(R)).
+- Application: Bigwood 2025, arXiv:2510.15822 (simulations stacked like
+  the data, cosmic variance, lensing mass matching); Ried Guachalla 2025,
+  arXiv:2503.19870 (two simulation comparisons); Hadzhiyska 2025,
+  arXiv:2507.14136 (CMB-lensing mass, kSZ/κ gas fraction).
 - Critique: Ondaro-Mallea 2026, arXiv:2607.23339 — decomposition of the
-  stacked signal; consistency of stacking velocities in theory and data.
+  stacked signal; stacking velocities in theory and data.
+- Other experiments and samples: Soergel 2016, arXiv:1603.03904 and
+  Schiappucci 2023, arXiv:2207.11937 (SPT × DES pairwise); Calafut 2021,
+  arXiv:2101.08374 and Vavagiakis 2021, arXiv:2101.08373 (ACT × SDSS
+  pairwise and tSZ); Li 2018, arXiv:1710.10876 and Chen 2022,
+  arXiv:2109.04092 (Planck pairwise); Li & Zheng 2026, arXiv:2605.01963
+  (ACT DR6 × CMASS joint fit); Roper 2025, arXiv:2510.12553 (photometric
+  groups).
+- Projected field: Hill 2016, arXiv:1603.01608; Patki 2023,
+  arXiv:2306.03127; Rodriguez 2025, arXiv:2509.03458.
+- X-ray and FRB comparisons: McCarthy 2024, arXiv:2410.19905; Kovač 2025,
+  arXiv:2507.07991; Siegel 2025, arXiv:2509.10455; Bucko 2026,
+  arXiv:2609.09144; McCarty 2026, arXiv:2608.11296.
 
 ## Not verified
 <!-- key: not-verified -->
@@ -413,3 +554,7 @@ Sect. 5.3].
   is not stated in the parts read.
 - The pairwise-estimator modelling beyond L2, and the HOD of
   arXiv:2507.14136 (its Sect. III.2), were not read for this dossier.
+- Bodies of the pairwise and X-ray peer papers (abstracts only, except
+  arXiv:2605.01963 Sects. III.3, IV.1.2 and arXiv:2510.12553 Sect. 1);
+  ACT × BOSS DR11 pairwise (De Bernardis et al. 2017) and the Planck
+  unbound-gas analysis: not read.

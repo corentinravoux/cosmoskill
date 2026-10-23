@@ -114,7 +114,7 @@ them, belongs to `cosmo-clusters`.
 | Bullock et al. 2001 | c_v ∝ 1/(1+z) at fixed mass; scatter in log c_v ~ 0.18; denser environments give more concentrated haloes | arXiv:astro-ph/9908159 [src] |
 | Duffy et al. 2008 | power law for 10¹¹–10¹⁵ M_⊙/h, z < 2, in WMAP5; z = 0 concentrations 23% (10¹¹) to 16% (10¹⁴ M_⊙/h) below Millennium values; "much lower" than X-ray inferences [src]. Form c = A(M/M_pivot)^B (1+z)^C, M_pivot = 2 × 10¹² h⁻¹M_⊙ [src: Eq. 4]; NFW, full sample, z = 0–2: (A, B, C) = (5.71, −0.084, −0.47) for 200c, (7.85, −0.081, −0.71) for vir, (10.14, −0.081, −1.01) for 200m; [src: Table 1]; relaxed haloes have A higher by ~18% [der: ratio of the Table 1 rows] | arXiv:0804.2486 |
 | Ludlow et al. 2016 | c(M, z) of CDM monotonic; WDM non-monotonic; collapsed mass history predicts both | arXiv:1601.02624 [src] |
-| Child et al. 2018 | in M/M*: power law below M/M* ~ 500–1000, then constant c_0 ~ 3; relaxed fraction falls to ~0.5 | arXiv:1804.10199 [src] |
+| Child et al. 2018 | in M/M*: power law below M/M* ~ 500–1000, then constant c_0 ~ 3; relaxed fraction falls to ~0.5 | arXiv:1804.10199 [src: abstract] |
 | Diemer 2019 | analytic model from pseudo-evolution plus ν, n_eff and α_eff; 5% accuracy against scale-free and ΛCDM simulations; in Colossus | arXiv:1809.07326 [src] |
 | CAMELS, 28 parameters | baryonic imprints on c_vir–M_vir over 10¹¹–10¹⁴·⁵ M_⊙/h, z = 0–3, from 2048 TNG-model runs | Delgado 2026, arXiv:2610.03544 [src] |
 
@@ -384,7 +384,7 @@ linear-bias limit of the halo model, section 5].
    outside a few virial radii: Mandelbaum et al. 2013 (arXiv:1207.1120) remove
    scales below 2 (lensing) and 4 h⁻¹Mpc (clustering), detect scale-dependent
    bias for the luminous samples, and find σ8 (Ω_m/0.25)^0.57 = 0.80 ± 0.05
-   with statistical and systematic errors comparable [src]. Its perturbative
+   with statistical and systematic errors comparable [src: abstract]. Its perturbative
    version (hybrid EFT) is in `cosmo-weak-lensing`.
 2. All scales with a galaxy–halo model:
 

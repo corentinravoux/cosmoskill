@@ -17,10 +17,11 @@ HSC CAMIRA papers (arXiv:1407.4693, arXiv:1701.00818,
 arXiv:1904.07524); Euclid Cluster Finder Challenge (arXiv:1906.04707).
 
 Already in L2, not repeated here: the mechanism, the history of the size
-estimate (≤ 5% in 2014 to 20–30% in DES Y1), the simulated boosts of
-Sunayama 2020 and Wu 2022, the SPT confirmation fractions and the
-spectroscopic 16% in `systematics.md#optical-selection-projection-effects-and`;
-the DES Y1 budget and the "−2 ± 3% replaced by −20 to −30%" lesson in
+estimate (from a few per cent in 2014 to the DES Y1 simulation
+correction), the simulated boosts of Sunayama 2020 and Wu 2022, the SPT
+confirmation fractions and the spectroscopic estimate in `systematics.md#optical-selection-projection-effects-and`;
+the DES Y1 budget and its lesson (an analytic correction replaced by a
+simulation one) in
 `systematics.md#des-y1-redmapper-counts-and-stacked-lensing-des`; the DES
 Y3 data vector and the KiDS AMICO priors in the two sections after it;
 the S8 values of each optical analysis and the DES Y1 story in
@@ -213,7 +214,8 @@ projection of two haloes (more than two being rare), following Baxter
 et al. 2016 [src: Sect. 5.3, arXiv:2005.13564]. The normalisation A_N =
 11.9 +3.0/−1.9 at M500 = 10¹⁴ h⁻¹ M_sun, z = 0.6 from all three
 functions is consistent with weak-lensing magnification and with shear
-+ abundance, with a ≲ 1.9σ preference for a lower value [src, same].
++ abundance, with a ≲ 1.9σ preference for a lower value [src: abstract,
+arXiv:2005.13564].
 
 **(c) An empirical scale-dependent ratio (DES Y3 and Y6).** The ratio of
 the selected to the original cluster lensing model is b_s1 + b_s2
@@ -276,7 +278,7 @@ log M_vir/M_sun = 14.0, and in N-body simulations haloes selected by it
 have lensing profiles consistent with no projection or miscentring,
 while richness-selected clusters show an excess at R ~ 1 Mpc "which may
 suggest a more significant impact from selection biases" [src,
-arXiv:2109.02646].
+arXiv:2109.02646]. [src: abstract]
 
 ### Step 5. Choose scales
 <!-- key: step-5-choose-scales -->
@@ -385,8 +387,10 @@ and V, same]. Euclid's b_sel = 1.17 is at the low end of this range
 Two readings follow. A small-scale-only fit is not bias-free: the
 MiniUchuu small-scale bias equals the all-scale one, and Wu et al. find
 the Σ bias peaking near 1 pMpc and, for high richness, 10–15% in the 3D
-density at small radii [src: Sect. 4, arXiv:2203.05416]. The KiDS AMICO
-test, which boosted only the two-halo term by 1.2, therefore does not
+density at small radii [src: Sect. 4, arXiv:2203.05416].
+
+The KiDS AMICO
+test, which boosted only the two-halo term, therefore does not
 probe the one-halo part of the effect [der: comparison of the tests in
 arXiv:2507.14285 Sect. 6.3 and arXiv:2510.00753 Sect. IV].
 
@@ -423,7 +427,7 @@ strongly, affected" because their line-of-sight kernel is wider than the
 red sequence [src: Sect. 5.3, arXiv:2502.12914]. Spectroscopy reaches low
 richness but only at low redshift (arXiv:2506.06249). AMICO and PZWav
 rely instead on data-driven mocks and the Euclid challenge (Steps 2–3);
-the KiDS-DR3 AMICO counts and lensing gave S8 = 0.78 ± 0.04 [src,
+the KiDS-DR3 AMICO counts and lensing gave S8 = 0.78 ± 0.04 [src: abstract,
 arXiv:2012.12273]. CAMIRA is tested against XXL and XMM-LSS X-ray
 properties and centres [src, arXiv:1701.00818].
 
@@ -435,7 +439,7 @@ properties and centres [src, arXiv:1701.00818].
 | Injection grid | λ_in = 5–100 (10 values), z_in = 0.1–0.3 (5 values), 10000 positions each | SDSS redMaPPer | arXiv:1807.07072 | Sect. 3.1 |
 | Underestimate of catalogue richness errors | 40–70% | SDSS redMaPPer | arXiv:1807.07072 | Sect. 3.1 |
 | Correlated-structure boost of Δ^prj | × 2–4 for λ^true = 20–100; f^prj → 1 for λ^true ≳ 40 | SDSS mocks | arXiv:1807.07072 | Sect. 3.4 |
-| Percolation | 5% of λ^true = 20 haloes lose > 50%; ± 15% percolation radius → ± 2% abundance | same | same | Sect. 3.4 |
+| Percolation | 5% of λ^true = 20 haloes lose > 50%; ± 15% percolation radius → ± 2% abundance | SDSS mocks | arXiv:1807.07072 | Sect. 3.4 |
 | AMICO richness error | A_μ = 0.198 ± 0.005, B_μ = −0.179 ± 0.007, A_σ = 0.320 ± 0.008, B_σ = 0.011 ± 0.001; σ_x up to 35% above Poisson | KiDS-1000 | arXiv:2507.14285 | Sect. 3, Eqs. 2–3 |
 | AMICO redshift error | σ = 0.014(1 + z) | KiDS-1000 | arXiv:2507.14285 | Sect. 5.1 |
 | Lensing fit range | 0.4–3.5 h⁻¹ Mpc, 6 bins | KiDS-1000 AMICO | arXiv:2507.14285 | Sect. 4.3 |
@@ -453,7 +457,7 @@ properties and centres [src, arXiv:1701.00818].
 | CAMIRA clustering normalisation | A_N = 11.9 +3.0/−1.9 (ξ_cc + ξ_cg + ξ_gg), 21% error | HSC × BOSS CMASS | arXiv:2005.13564 | abstract |
 | Boost mock tests | d_proj = 60, 120 h⁻¹ Mpc; 40% miscentred; σ_ph = 30 h⁻¹ Mpc: recovered | SDSS redMaPPer + HSC-Y3 | arXiv:2309.13025 | Sect. 5.1 |
 | S8, shared boost | 0.816 +0.041/−0.039 | SDSS redMaPPer + HSC-Y3 | arXiv:2309.13025 | abstract |
-| AMICO KiDS-DR3 | 7988 candidates, S/N > 3.5, purity ≈ 95%; 3652 with λ* ≥ 20 give S8 = 0.78 ± 0.04 | KiDS-DR3 | arXiv:1810.02811; arXiv:2012.12273 | abstracts |
+| AMICO KiDS-DR3 | 7988 candidates, S/N > 3.5, purity ≈ 95%; 3652 with λ* ≥ 20 give S8 = 0.78 ± 0.04 | KiDS-DR3 | arXiv:1810.02811; arXiv:2012.12273 | abstract of each |
 | Euclid finder challenge | 6 finders; 3 with > 80% completeness at 80% purity to 10¹⁴ M_sun, z = 2; mock Ω_m = 0.25, σ8 = 0.9 | Euclid-like mock | arXiv:1906.04707 | abstract; Sect. 6.2 |
 | eRASS1 optical projections | 332 (3%) overlapping in projection; 95 X-ray/optical projections; 446 rejected with i band, P_cont = 49% | eRASS1 × LS | arXiv:2402.08453 | Sects. 4.1.1, 4.2.1, 4.2.2 |
 | eFEDS confirmation | 477 of 542; contamination 6 ± 3% (confirmed), 17 ± 3% (all) | eFEDS × HSC, LS | arXiv:2106.14519 | abstract |

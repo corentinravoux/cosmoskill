@@ -18,10 +18,10 @@ depletion (arXiv:1209.5058, arXiv:1209.4082, arXiv:2305.09733,
 arXiv:2505.21624).
 
 Already in L2, not repeated here: the cosmological results (Ω_m, h,
-Ω_Λ, w) of each analysis and the 7.4% and 3% scatter figures in
+Ω_Λ, w) of each analysis and the intrinsic-scatter figures in
 `results.md#gas-mass-fraction-of-relaxed-clusters-a`; the principle
-(f_gas ∝ d^1.5, a distance and Ω_b/Ω_m probe) and the lensing/X-ray
-ratio of 0.96 at r2500 in `physics-and-methods.md#gas-mass-fraction`;
+(the distance dependence of f_gas, a distance and Ω_b/Ω_m probe) and the
+lensing/X-ray mass ratio at r2500 in `physics-and-methods.md#gas-mass-fraction`;
 simulated hydrostatic bias and the Chandra–XMM calibration offset in
 `systematics.md#hydrostatic-bias-and-x-ray-temperature`; the X-COP and
 Planck-ESZ bias values in `results.md#hydrostatic-bias-what-simulations-and-x-ray`.
@@ -156,11 +156,12 @@ of its Υ0 prior.
 The 2022 model, which this dossier follows [src: Sect. 3,
 arXiv:2111.09343]:
 
-- true shell gas fraction f_gas(z, M2500) = Υ(z, M2500) Ω_b/Ω_m (Eq. 1),
+- true shell gas fraction f_gas(z, M2500) = Υ(z, M2500) Ω_b/Ω_m (Eq. 1 of
+  arXiv:2111.09343),
   with the gas depletion Υ = Υ0 (1 + Υ1 z) (M2500/3 × 10¹⁴ M_sun)^α
   (Eq. 2) and a lognormal intrinsic scatter σ_f;
 - measured value f_gas^ref = K(z) A(z)^η_f [d^ref(z)/d(z)]^{3/2}
-  f_gas(z, M2500) (Eq. 3), where d is the distance, "ref" the reference
+  f_gas(z, M2500) (Eq. 3 of arXiv:2111.09343), where d is the distance, "ref" the reference
   flat ΛCDM with h = 0.7 and Ω_m = 0.3, A(z) = θ2500^ref/θ2500 =
   H(z) d(z)/[H(z) d(z)]^ref (Eq. 4) the change of aperture with
   cosmology, η_f the slope of the shell f_gas with aperture, and K(z) =
@@ -320,6 +321,8 @@ arXiv:2111.09343].
 ### How the model evolved
 <!-- key: how-the-model-evolved -->
 
+From arXiv:0706.0033, arXiv:1402.6212 and arXiv:2111.09343, one column each; the places read (Sects., Eqs., Tables) are in the last row:
+
 | Element | Allen et al. 2008 (arXiv:0706.0033) | Mantz et al. 2014 (arXiv:1402.6212) | Mantz et al. 2022 (arXiv:2111.09343) |
 |---|---|---|---|
 | Quantity | cumulative f_gas(< r2500) | shell 0.8–1.2 r2500 | shell 0.8–1.2 r2500 |
@@ -350,7 +353,9 @@ The 2022 reprocessing with newer Chandra calibration (ciao 4.9, caldb
 lowered temperatures marginally at z < 0.6 and raised f_gas by about 4%
 on average; gas densities were unchanged, so the shift is a temperature
 effect, within the systematic allowances of earlier work [src: Sect. 2.1,
-arXiv:2111.09343]. Because K0 is fitted to lensing, a temperature shift
+arXiv:2111.09343].
+
+Because K0 is fitted to lensing, a temperature shift
 moves K0 rather than the cosmology, as long as the lensing clusters share
 the calibration of the full sample [der: from Eqs. 3 and 5 of
 arXiv:2111.09343].
@@ -408,7 +413,7 @@ Eq. 6 of arXiv:2204.12823].
 | Shell | 0.8–1.2 r2500 | 2014, 2022 | arXiv:1402.6212 | Sect. 3.1 |
 | Profile slope | f_gas ∝ Δ^−0.22, ∝ r^0.43 for 0.5–1.6 r2500 | 2014 | arXiv:1402.6212 | Sect. 3.1 |
 | Depletion prior | Υ0 U(0.71, 0.87) (centre 0.79); 2014 centre 0.848 superseded | 2022; 2014 | arXiv:2111.09343; arXiv:1402.6212 | Table 7; Sect. 4.2 |
-| Evolution priors | Υ1, K1 U(−0.05, 0.05) | 2014, 2022 | as above | Tables 3, 7 |
+| Evolution priors | Υ1, K1 U(−0.05, 0.05) | 2014, 2022 | arXiv:1402.6212; arXiv:2111.09343 | Tables 3, 7 |
 | Aperture slopes | η_f = 0.390 ± 0.024; η_m = 1.065 ± 0.016 | 2022 | arXiv:2111.09343 | Sect. 3 |
 | Lensing mass bias | W0 = 0.96 ± 0.09, W1 = −0.09 ± 0.03 | 2022 | arXiv:2111.09343 | Sect. 3 |
 | Mass calibration | K0 = 0.93 ± 0.11 (f_gas alone); 0.99 ± 0.06 (with CMB, BAO, SN); σ_K = 0.14 +0.09/−0.07 | 2022 | arXiv:2111.09343 | Sect. 4.5 |
@@ -498,9 +503,10 @@ simulated relaxed clusters [src: Sect. 3.1, Fig. 3, arXiv:1402.6212].
   abstract only), and the misread result is one of Planelles et al.;
   which number was misread is not stated in the section read, and the
   tables of Planelles et al. (Tables 2–3) did not render.
-- The SPT baryon depletion value of Chiu et al. 2018 (Sect. 5.3): cut
-  in the rendering; FLAMINGO, TNG-Cluster and COLIBRE depletion values
-  in the 0.8–1.2 r2500 shell: not found in the papers read.
+- The SPT baryon depletion value of Chiu et al. 2018 (arXiv:1711.00917,
+  Sect. 5.3): cut in the rendering; FLAMINGO, TNG-Cluster and COLIBRE
+  depletion values in the shell used by the relaxed series: not found in
+  the papers read.
 - The source of the W(z) lensing-bias model cited by arXiv:2111.09343:
   not identified in the sections read.
 - The Pierre 2022 review section named in `subtopics.tsv` was not

@@ -337,7 +337,7 @@ combined analysis of the three classes had not been done.
 
 - The method cited in the ET science case for overcoming FIM limits with
   GRB-selected events (its ref. 1170) was not identified: the HTML rendering
-  of arXiv:2503.12263 stops before the reference list.
+  of arXiv:2503.12263 stops before the reference list. [src: Sect. "Bright sirens."]
 - The origin of the `σ_lens` fitting formula (ref. 87 of arXiv:1601.07112) and
   of `σ_v` (ref. 93) were not read.
 - The GWFISH paper (arXiv:2205.02499) was not read beyond its title as listed

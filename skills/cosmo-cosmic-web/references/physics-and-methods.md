@@ -291,7 +291,7 @@ BORG-2M++, Manticore, Hamlet-PM) are in `cosmo-simulations-mocks`.
 | Code | Use | Reference | Flag |
 |---|---|---|---|
 | DisPerSE | topological skeleton, walls and voids from discrete tracers; persistence in σ | arXiv:1009.4015 | [src] |
-| Multi-block DisPerSE | gigaparsec volumes; 99.6% total length and 94.7% individual filament recovery against a monolithic run on a 300 h⁻¹Mpc MDPL2 subvolume | arXiv:2607.14785 | [src] |
+| Multi-block DisPerSE | gigaparsec volumes; 99.6% total length and 94.7% individual filament recovery against a monolithic run on a 300 h⁻¹Mpc MDPL2 subvolume | arXiv:2607.14785 | [src: abstract] |
 | NEXUS / NEXUS+ | multiscale Hessian on density, log-density, tidal, velocity divergence and shear fields | arXiv:1209.2043 | [src] |
 | Bisous | stochastic filament spines and orientation fields | arXiv:1308.2533 | [src] |
 | ORIGAMI | phase-space shell-crossing classification of simulation particles | arXiv:1201.2353 | [src] |

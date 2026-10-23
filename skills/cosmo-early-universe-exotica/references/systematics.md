@@ -17,10 +17,10 @@ Flags as in `physics-and-methods.md`.
 | Spectral-index sensitivity | γ depends on the data model of a few pulsars, unlike calibrated detection statistics | report A at fixed γ = 13/3 and the free-γ fit | arXiv:2306.16213 | [src: Sect. I] |
 | Time-dependent signal strength | PPTA's first-half data limit is in tension with the full-set amplitude; EPTA's 10.3 yr spectrum is in mild tension with the full 24.7 yr | split-data tests | arXiv:2306.16215; arXiv:2306.16214 | [src] |
 | Clock and ephemeris errors | monopolar and dipolar correlations; NANOGrav sees a quasi-monochromatic monopole in frequency bin 2 (3.95 nHz) | fit monopole and dipole processes jointly with HD | arXiv:2306.16213 | [src: Fig. 6 caption] |
-| Significance calibration | Bayes factors need a null distribution; sky scrambles and phase shifts give p = 10⁻³ against a BF of 200–1000 | quote p-values, not only Bayes factors | arXiv:2306.16213 | [src] |
+| Significance calibration | Bayes factors need a null distribution; sky scrambles and phase shifts give p = 10⁻³ against a BF of 200–1000 | quote p-values, not only Bayes factors | arXiv:2306.16213 | [src: abstract] |
 | Cross-array modelling differences | parameters agree within 1σ; a standardised noise model reduces the tension in pulsar noise parameters | IPTA common noise model | arXiv:2309.00693 | [src] |
 | Cosmic variance of HD | intrinsic scatter of the correlation even without noise | compare with the Allen variance | arXiv:2205.05637 | [src] |
-| SMBHB prior in model comparison | new-physics Bayes factors 10–100 depend on the SMBHB population prior | quote with the prior; prefer excluded-region statements | arXiv:2306.16219 | [src] |
+| SMBHB prior in model comparison | new-physics Bayes factors 10–100 depend on the SMBHB population prior | quote with the prior; prefer excluded-region statements | arXiv:2306.16219 | [src: abstract] |
 
 NANOGrav's minimum noise characteristic strain is 7 × 10⁻¹⁵ at 5 nHz, and
 its power-law-integrated sensitivity roughly agrees with the recovered
@@ -112,11 +112,11 @@ background amplitude (arXiv:2306.16218) [src].
   the inference (arXiv:2503.09599) [src].
 - **Low-ℓ polarisation likelihood.** SRoll2 low-ℓ EE allows larger PMF
   amplitudes than the Planck 2018 baseline, especially for positive n_B:
-  √⟨B²⟩ < 0.72 against < 0.69 nG (arXiv:2204.06302) [src].
+  √⟨B²⟩ < 0.72 against < 0.69 nG (arXiv:2204.06302) [src: abstract].
 - **Lyα noise model.** The PMF hint in the forest disappears with
   conservative noise modelling (arXiv:2501.06299) [src].
 - **Blazar duty cycle.** The IGMF lower bound rises from 7.1 × 10⁻¹⁶ G (10
-  yr) to 3.9 × 10⁻¹⁴ G (10⁷ yr) (arXiv:2306.05132) [src].
+  yr) to 3.9 × 10⁻¹⁴ G (10⁷ yr) (arXiv:2306.05132) [src: abstract].
 
 ## 6. Referee checklist
 <!-- key: referee-checklist -->

@@ -170,7 +170,7 @@ this as unchecked for the gravity-only emulators.
 - **Photometric SN Ia cosmology with ML classification.** The ELAsTiCC-based
   DESC study forecasts a w0wa FoM of about 150 with ~6000 events and
   reports small but significant biases (**forecast**, arXiv:2512.06319)
-  [src].
+  [src: abstract].
 - **Simulation budgets.** Multi-fidelity training (60 N-body runs suffice
   in a KiDS-Legacy mock according to the abstract, while the body places
   reliable posterior widths at N ~ 100–120; arXiv:2606.23346 [src;

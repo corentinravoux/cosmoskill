@@ -417,7 +417,7 @@ arXiv:2312.08423, Sect. V.1].
   why its edges sit where they do; single-epoch scatter.
 - Lee et al. 2024, arXiv:2408.03474 (method, CCHP): photometry, the
   convergence algorithm, error terms, the NGC 4258 zero point, mode against
-  mean.
+  mean. [src: Sect. II]
 - Freedman et al. 2024, arXiv:2408.06153 (application, CCHP): JAGB in the
   H0 analysis; App. A for a 2MASS-to-F115W zero-point transfer.
 - Li et al. 2025, arXiv:2502.05259 (method, SH0ES side): crowding grid, 25

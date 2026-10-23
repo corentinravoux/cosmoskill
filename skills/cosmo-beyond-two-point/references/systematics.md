@@ -13,9 +13,8 @@ Snapshot: 2026-10-13
 Mechanism: the sample covariance of N_b bins from N_m mocks is singular or
 badly biased when N_b approaches N_m. Size: with the BOSS mock set the standard
 binning held 116 triangles; compression allowed 2734 and cut the credible
-intervals on (b1, b2, f, σ8) by 24.8%, 52.8%, 26.4%, 21% [src]
-(arXiv:1806.02853), and by 39%, 49%, 29%, 22% with geometrical compression
-[src] (arXiv:1901.00987). Mitigation: compression, analytic covariance,
+intervals on (b1, b2, f, σ8) by 24.8%, 52.8%, 26.4%, 21% [src: abstract] (arXiv:1806.02853), and by 39%, 49%, 29%, 22% with geometrical compression
+[src: abstract] (arXiv:1901.00987). Mitigation: compression, analytic covariance,
 window-free estimators. Referee check: N_m, N_b, and the Hartlap or Percival
 factor applied (those corrections are in `cosmo-statistics-inference`).
 
@@ -71,10 +70,9 @@ collaboration treatment for two-point statistics is in
 Mechanism: a χ² of the parity-odd 4PCF against mocks is biased if the
 parity-even eight-point function of the data differs from that of the mocks.
 Size: in BOSS the 8PCF bias term is about 6σ while the genuine parity signal is
-0–2.5σ [src] (arXiv:2407.03397); replacing Patchy by GLAM-Uchuu mocks moves the
-significance from > 3.5σ to 1.4σ [src] (arXiv:2401.09523). In DESI DR1 the auto
-analysis gives 4–10σ and the cross-patch analysis gives nothing [src]
-(arXiv:2508.09133). Mitigation: cross-correlation between independent patches,
+0–2.5σ [src: abstract] (arXiv:2407.03397); replacing Patchy by GLAM-Uchuu mocks moves the
+significance from > 3.5σ to 1.4σ [src: abstract] (arXiv:2401.09523). In DESI DR1 the auto
+analysis gives 4–10σ and the cross-patch analysis gives nothing [src: abstract] (arXiv:2508.09133). Mitigation: cross-correlation between independent patches,
 χ²_× and χ²_null, compressed statistics with direct mock covariance
 (arXiv:2604.06021). The lesson generalises: a higher-order "detection"
 expressed as a χ² against approximate mocks is a statement about the mocks
@@ -85,13 +83,13 @@ How the significance moved with the covariance, read in the papers:
 | Data, statistic | Noise model | Significance | Place |
 |---|---|---|---|
 | BOSS, all four chunks, rank test, 1288 bins, 10 radial bins over 20–160 h⁻¹Mpc | 2042 MultiDark-Patchy mocks | > 3.5σ (CMASS-N 2.5σ, CMASS-S 2.2σ, LOWZ-N 2.1σ, LOWZ-S 2.0σ) | arXiv:2401.09523 [src: Table 1] |
-| same | 627 GLAM-Uchuu N-body mocks | 1.4σ (CMASS-N 0.0σ, CMASS-S 0.9σ, LOWZ-N 0.9σ, LOWZ-S > 3.2σ) | same [src: Table 1] |
-| same, 250 eigenmodes, analytic T² | Patchy / GLAM-Uchuu | 3.0σ / 2.4σ; with the empirical T² distribution 2.7σ / 2.1σ | same [src: Sect. II] |
+| same | 627 GLAM-Uchuu N-body mocks | 1.4σ (CMASS-N 0.0σ, CMASS-S 0.9σ, LOWZ-N 0.9σ, LOWZ-S > 3.2σ) | arXiv:2401.09523 [src: Table 1] |
+| same, 250 eigenmodes, analytic T² | Patchy / GLAM-Uchuu | 3.0σ / 2.4σ; with the empirical T² distribution 2.7σ / 2.1σ | arXiv:2401.09523 [src: Sect. II] |
 | BOSS CMASS-NGC, χ² with analytic covariance | Patchy | about 7σ, reproduced | arXiv:2407.03397 [src: Sect. 1.2] |
-| BOSS, χ²_× between patches | Patchy | 1.8σ (NGC), 1.7σ (SGC); the combined figure depends on which of five well-motivated statistics is chosen | same [src: Sect. 4.5] |
+| BOSS, χ²_× between patches | Patchy | 1.8σ (NGC), 1.7σ (SGC); the combined figure depends on which of five well-motivated statistics is chosen | arXiv:2407.03397 [src: Sect. 4.5] |
 | DESI DR1 LRG, auto χ² | 25 Abacus AltMTL mocks | 11.4σ (NGC), 7.0σ (SGC); sensitive to the volume correction for box replication | arXiv:2508.09133 [src: Sect. V.2] |
-| same | 1000 EZmocks, fast fibre assignment | 6.6σ (NGC), 5.7σ (SGC) | same [src: Sect. V.2] |
-| DESI DR1 LRG, cross χ²_× between 4 + 3 patches | EZmocks | −1.0σ (NGC), −0.8σ (SGC); 6.7σ and 6.1σ would be expected if auto and cross agreed | same [src: Sect. V.4] |
+| same | 1000 EZmocks, fast fibre assignment | 6.6σ (NGC), 5.7σ (SGC) | arXiv:2508.09133 [src: Sect. V.2] |
+| DESI DR1 LRG, cross χ²_× between 4 + 3 patches | EZmocks | −1.0σ (NGC), −0.8σ (SGC); 6.7σ and 6.1σ would be expected if auto and cross agreed | arXiv:2508.09133 [src: Sect. V.4] |
 
 In all BOSS chunks but LOWZ-S the GLAM-Uchuu variance exceeds the Patchy
 one by a roughly uniform factor, and 41% of the GLAM-Uchuu mocks analysed
@@ -130,8 +128,8 @@ prior ranges". The quantified shifts for the power spectrum alone are in
 `cosmo-galaxy-clustering`.
 
 Measured on noiseless synthetic data in the independent DESI DR1 reanalysis
-(ΛCDM), posterior mean minus input in units of the error [src: Table 5 of
-arXiv:2507.13433]:
+(ΛCDM), posterior mean minus input in units of the error,
+[src: Table 5 of arXiv:2507.13433]:
 
 | Data | ω_cdm | H_0 | ln(10¹⁰A_s) | Ω_m | σ8 |
 |---|---|---|---|---|---|
@@ -201,7 +199,7 @@ Systematic budgets of the main void–galaxy analyses:
 | Analysis | Term | Size | Place |
 |---|---|---|---|
 | SDSS six bins (arXiv:2205.06258), 250 MGS + 250 Patchy mocks at their own Ω_m and at 0.28, 0.34 | Mean offset (subtracted); scatter of offsets (added in quadrature) | fσ8: −0.0113; 0.0161. α_⊥/α_∥: 0.0029; 0.0061. Statistical errors per bin: 0.084 to +0.16/−0.23 and 0.019 to +0.044/−0.052, so the total equals the statistical error to one unit in the last digit | [src: Sect. 4.3, Table 3] |
-| same | Largest single offset | fσ8: 0.0464 ± 0.0334 (MGS, Ω_m = 0.28); α_⊥/α_∥: −0.0167 ± 0.0055 (MGS, own cosmology); offsets significant at 2σ in two bins per parameter. The 84 NSERIES N-body mocks show none but are not in the budget (other footprint) | [src: Table 2, Sect. 4.1] |
+| SDSS six bins (arXiv:2205.06258) | Largest single offset | fσ8: 0.0464 ± 0.0334 (MGS, Ω_m = 0.28); α_⊥/α_∥: −0.0167 ± 0.0055 (MGS, own cosmology); offsets significant at 2σ in two bins per parameter. The 84 NSERIES N-body mocks show none but are not in the budget (other footprint) | [src: Table 2, Sect. 4.1] |
 | eBOSS DR16 LRG (arXiv:2008.06060) | Modelling; fiducial cosmology | Δfσ8 = 0.0144 (3%); Δ(α_⊥/α_∥) = 0.00417 ± 0.00390 (0.42%) from Nseries, the EZmocks giving < 0.00097; 0.8% on α_⊥/α_∥ at Ω_m = 0.350 against 0.286; "small compared to the statistical errors" | [src: Sect. 6.1–6.3] |
 | eBOSS DR16 three tracers (arXiv:2007.09013), relative error on β, LRG / ELG / QSO | Binning; FKP weight; estimator; fiducial cosmology; linear RSD model; total | 4.8 / 2.3 / 1.4; 1.4 / 2.3 / 0.7; 2.2 / 3.3 / 1.0; 2.2 each; 9.0 / 8.3 / 39.9; 10.8 / 9.8 / 40.0 %. The quasar β carries a 40% modelling systematic. Finder run 1000 times per catalogue, as random buffer particles change the tessellation | [src: Table 7, Eq. 35, Sect. 3.3.1] |
 | same model, re-tested | Offset on β | 0.031, against 0.037 in the original and a statistical error of 0.075 | arXiv:2008.06060 [src: App. A] |
@@ -217,18 +215,19 @@ Mechanism: void centres correlate with the particular realisation of sparse
 tracers, so the tracer velocity profile inside voids differs from the matter
 one. Size: differences of order 20% in the velocity profile, a few percent in
 the Jacobian, and changes in the monopole and quadrupole comparable to the
-effect of fσ8 at current statistical precision [src] (Massara et al. 2022,
+effect of fσ8 at current statistical precision [src: abstract] (Massara et al. 2022,
 arXiv:2206.14120).
 
 ### 2.4 Mock calibration
 <!-- key: mock-calibration -->
 
 Size: calibrating the BOSS model on survey mocks moves f/b from 0.540 ± 0.091
-to 0.347 ± 0.023 [src], a factor four in precision and a shift of 2.1 times
-the uncalibrated error [der: (0.540 − 0.347)/0.091]; the
-authors flag the calibrated result as dependent on the cosmology and galaxy
-model of the mocks (arXiv:2007.07895). Referee check: which numbers are
-calibration-free.
+to 0.347 ± 0.023 [src: abstract]; the authors flag the calibrated result as
+dependent on the cosmology and galaxy model of the mocks (arXiv:2007.07895).
+Referee check: which numbers are calibration-free.
+
+The calibration both shrinks the error several times and moves the central
+value by more than the uncalibrated error [der].
 
 ### 2.5 Spurious (Poisson) voids
 <!-- key: spurious-poisson-voids -->
@@ -244,7 +243,7 @@ analyses apply a cleaning procedure for purity and completeness
 β from voids becomes fσ8 only with an external linear bias
 (arXiv:2007.09013 takes it from the eBOSS consensus papers). Whether the bias
 inside voids equals the large-scale linear bias is an assumption; void lensing
-gives a direct check, 2.45 ± 0.36 for BOSS voids [src] (arXiv:2507.13450).
+gives a direct check, 2.45 ± 0.36 for BOSS voids [src: abstract] (arXiv:2507.13450).
 
 ### 2.7 Mask, selection and photo-z
 <!-- key: mask-selection-and-photo-z -->
@@ -261,7 +260,7 @@ spectra [src] (arXiv:2412.02761).
 The map resolution equals the mean sightline separation, so voids smaller than
 that are not resolved; the finder threshold is calibrated on simulations and
 checked through the void volume fraction (19.5% in data, 18.2% in simulation
-[src], arXiv:1710.02612); the cross-correlation model must include the
+[src: abstract], arXiv:1710.02612); the cross-correlation model must include the
 sampling of the field along parallel sightlines (arXiv:2203.11045). Continuum
 fitting, DLAs and metals propagate into the map; those are described in
 `cosmo-lyman-alpha`.
@@ -297,7 +296,7 @@ Beyond-2pt challenge an underestimated emulation uncertainty on the
 hexadecapole biased one submission and was found only after unmasking, on a
 volume larger than earlier tests (arXiv:2405.02252). Referee check: emulator
 error budget per data-vector element, and a recovery test at a volume well
-above the survey's (84 times in arXiv:2309.16541).
+above the survey's (84 times in arXiv:2309.16541, abstract).
 
 Sizes in the BOSS density-split analysis (arXiv:2309.16541). The emulator,
 trained on periodic boxes at one redshift, is applied to a survey with a
@@ -305,10 +304,12 @@ footprint, a radial selection and fibre collisions; the residual on the mean
 of 84 Nseries mocks (120 h⁻³Gpc³ covariance) is Δω_cdm = 0.00015 ± 0.0018,
 Δσ8 = 0.0129 ± 0.018, Δn_s = 0.0080 +0.020/−0.019, Δfσ8 = 0.0066 ± 0.011
 (2σ), none significant; the 2σ scatter of the 84 best fits over √84 is added
-in quadrature [src: Sect. 4.4.3]. The test is limited by the number of
-N-body mocks: Δσ8 = 0.013, 0.4 of the data error, cannot be excluded [der].
-Below about 20 h⁻¹Mpc the emulator error dominates the monopoles, so those
-scales add little [src: Sect. 4.4.2].
+in quadrature [src: Sect. 4.4.3]. Below about 20 h⁻¹Mpc the emulator error
+dominates the monopoles, so those scales add little [src: Sect. 4.4.2].
+
+The test is limited by the number of N-body mocks: a residual in σ8 of the
+size measured, a sizeable fraction of the data error, cannot be excluded
+[der].
 
 ### 3.3 Parameter-space restrictions of the simulation suite
 <!-- key: parameter-space-restrictions-of-the-simulation -->
@@ -336,7 +337,7 @@ corrections; they must be forward-modelled in every training mock
 (arXiv:2211.00660, arXiv:2501.01698). Minkowski functionals on masked fields
 need an unbiased boundary treatment (arXiv:2110.06109); the same paper reports
 a low-significance north–south difference in LOWZ, a_0 = −0.080 ± 0.040
-against 0.032 ± 0.024 [src], which may be a data systematic.
+against 0.032 ± 0.024 [src: abstract], which may be a data systematic.
 
 ### 3.6 Fisher forecasts from periodic boxes
 <!-- key: fisher-forecasts-from-periodic-boxes -->
@@ -360,8 +361,8 @@ small-scale skewness, not only the power spectrum. Size: up to 1σ bias in S8
 for peaks, minima, PDF and scattering transform at 2′ smoothing with the
 strongest feedback in IllustrisTNG and BAHAMAS mocks, for HSC Y1 depth; in the
 HSC Y1 data the shift between including and excluding small scales is ≤ 0.5σ
-[src] (Grandón et al. 2024, arXiv:2403.03807). DES Y3 persistent homology
-reports biases under 0.3σ in the Ω_m–S8 plane [src] (arXiv:2506.13439).
+[src: abstract] (Grandón et al. 2024, arXiv:2403.03807). DES Y3 persistent homology
+reports biases under 0.3σ in the Ω_m–S8 plane [src: abstract] (arXiv:2506.13439).
 Mitigation: scale cuts; a baryon correction model validated on several
 hydrodynamical simulations (arXiv:2606.12389). The sibling skill records that
 the strength of feedback is itself disputed; a robustness test is only as good
@@ -382,7 +383,7 @@ signal at third order. Forward-modelled in the DES Y3 SBI analyses
 (arXiv:2405.10881, arXiv:2403.02314) and corrected analytically in KiDS-Legacy
 together with reduced shear (arXiv:2606.12389).
 
-Read in the KiDS-Legacy body: the correction is a factor per data point,
+Read in the KiDS-Legacy body (arXiv:2606.12389): the correction is a factor per data point,
 the ratio of simulated data vectors with and without the effect, not a
 formula [src: Sect. 2.6]. For ⟨M_ap³⟩ alone, neglecting reduced shear moves
 S8 up by 0.54σ, source clustering by 0.13σ, and a source bias of 0.7 or 1.3
@@ -405,7 +406,7 @@ aperture radius is kept there [src: Sect. 5.2].
 
 An SBI posterior is only calibrated within the support and physics of the
 training simulations. Tests: coverage (arXiv:2606.11309); consistency between
-statistics, p > 0.1 for all combinations in DES Y3 (arXiv:2405.10881).
+statistics, p > 0.1 for all combinations in DES Y3 (arXiv:2405.10881, abstract).
 Non-Gaussian shape noise and mask must be in the mocks (arXiv:2403.02314).
 
 A documented failure and repair (arXiv:2606.11309). Coverage is tested with
@@ -427,10 +428,10 @@ and the sample covariance is rescaled to the measured signal [src: Sect.
 ### 4.5 Prior bounds
 <!-- key: prior-bounds -->
 
-The DES Y3 SBI wCDM analyses impose −1 < w < −1/3 (arXiv:2403.02314): the
-quoted "w < −0.80" is a one-sided limit against a prior edge, not a
+The DES Y3 SBI wCDM analyses impose −1 < w < −1/3 (arXiv:2403.02314, Sect. 4.2): the
+quoted "w < −0.80" (abstract) is a one-sided limit against a prior edge, not a
 measurement of w, and cannot be compared with w0 = −1.39 ± 0.31 from the 2+3
-point analysis (arXiv:2508.14018), which allows w < −1.
+point analysis (arXiv:2508.14018, abstract), which allows w < −1.
 
 ### 4.6 Redshift calibration inherited from the two-point analysis
 <!-- key: redshift-calibration-inherited-from-the-two -->
@@ -462,7 +463,7 @@ authors call the correct likelihood "the primary challenge" for smaller
 scales (arXiv:2509.09673). Summary-statistic analyses are less exposed because
 the central limit theorem Gaussianises band powers.
 
-The tests, read in the body. Poisson noise added to a *linear* Gaussian
+The tests, read in the body of arXiv:2509.09673. Poisson noise added to a *linear* Gaussian
 signal leaves the Gaussian field-level likelihood unbiased at k_max = 0.12
 h Mpc⁻¹, since only power-spectrum information is used; with the non-linear
 signal b_1(δ_1 + G_2) it is biased, while P + B with the noise bispectrum
@@ -554,7 +555,7 @@ friends-of-friends to Rockstar can bias σ8 from the bispectrum; training on a
 complex HOD works on simpler data, but training on a simple HOD fails on data
 from a more complex one (Modi et al. 2023, arXiv:2309.15071).
 
-Detail from the body (no shift quoted as a number). Gravity: residuals and
+Detail from the body of arXiv:2309.15071 (no shift quoted as a number). Gravity: residuals and
 coverage agree between N-body and particle-mesh training (friends-of-friends
 halos, 10-parameter HOD) [src: Sect. 5.1]. Halo finder: Ω_m and the
 power-spectrum σ8 are unbiased, but with the bispectrum a model trained on
@@ -591,7 +592,7 @@ paper makes the same point about its own challenge (arXiv:2405.02252).
 ### 6.4 Small volumes
 <!-- key: small-volumes -->
 
-The SimBIG results use about 10% of BOSS. The Beyond-2pt SBI entry was trained
+The SimBIG results use about 10% of BOSS (arXiv:2310.15243, abstract). The Beyond-2pt SBI entry was trained
 on (1 h⁻¹Gpc)³ boxes against (2 h⁻¹Gpc)³ for the others and trimmed the largest
 scales, which widened its Ω_m posterior (arXiv:2405.02252). Scaling the number
 and volume of simulations to DESI is the stated bottleneck (arXiv:2309.15071).
@@ -600,7 +601,7 @@ and volume of simulations to DESI is the stated bottleneck (arXiv:2309.15071).
 <!-- key: what-a-referee-checks-in-a-beyond-two-point -->
 
 1. Which data, which release, what fraction of the survey (SimBIG: 10% of
-   BOSS; emulator analyses: CMASS at 0.45–0.6 only).
+   BOSS, arXiv:2310.15243, abstract; emulator analyses: CMASS at 0.45–0.6 only, arXiv:2309.16541, Sect. 2.1).
 2. The baseline of every quoted gain, and whether that baseline is optimal.
 3. Covariance: number of mocks against data-vector length; approximate or
    N-body mocks; whether a different mock set changes the significance.

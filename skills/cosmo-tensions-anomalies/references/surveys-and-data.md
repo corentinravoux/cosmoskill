@@ -177,7 +177,7 @@ incomplete understanding of the noise properties of the data"
 |---|---|---|
 | JWST early release NIRCam imaging: six candidates at 7.4 < z < 9.1 | photometric redshifts and SED masses | arXiv:2207.12446 [src] |
 | FRESCO: 36 dust-obscured galaxies at z_spec = 5–9 | NIRCam slitless grism redshifts; a single dispersion angle with a single emission feature is the failure mode identified in arXiv:2602.03030 | arXiv:2309.02492 [src] |
-| NIRSpec IFU + ALMA follow-up of S1 | multi-line redshift; revises one FRESCO object from z = 5.58 to 3.2439 | arXiv:2602.03030 [src] |
+| NIRSpec IFU + ALMA follow-up of S1 | multi-line redshift; revises one FRESCO object from z = 5.58 to 3.2439 | arXiv:2602.03030 [src: abstract] |
 | Spectroscopically confirmed JWST and HST galaxies at 7 ≤ z ≤ 14, compiled for comparison with UniverseMachine on Uchuu | UV luminosity functions, M_*–SFR and M_*–M_UV relations | arXiv:2604.18683 [src] |
 
 What is shared: the SED-fitting assumptions behind every stellar mass, and, for slitless samples, the contamination mode demonstrated by S1. JWST survey descriptions are not held in this suite; see `cosmo-reionization-21cm` for the reionisation side.

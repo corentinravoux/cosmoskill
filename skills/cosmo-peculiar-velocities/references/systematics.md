@@ -50,7 +50,7 @@ when sky coverage is partial.
 |---|---|---|---|---|
 | SDSS PV | uncertainty 0.004 dex, "not including cosmic variance or the error within CosmicFlows-III itself" | CF3, cross-checked with the 2M++ predicted zero-point | Howlett et al. 2022, arXiv:2201.03112 | [src] |
 | 2MTF vs 6dFGSv | relative difference < 0.02 dex | galaxies and groups in common | Qin et al. 2018, arXiv:1804.05520 | [src] |
-| 2MTF vs CF3 | −0.016 ± 0.002 dex | galaxies in common | Qin et al. 2019, arXiv:1811.00822 | [src] |
+| 2MTF vs CF3 | −0.016 ± 0.002 dex | galaxies in common | Qin et al. 2019, arXiv:1811.00822 | [src: abstract] |
 | DESI DR1 FP+TF | η_zp = 0.139 ± 0.007 | 93 Pantheon+/SH0ES SN Ia distances (137 light curves) matched through galaxy groups; direct host matches are only 4 (TF) + 41 (FP) | Carr et al. 2025, arXiv:2512.03232, §5 | [src] |
 | DESI DR1, value used in the field-level likelihood | σ_y = 0.005 | same paper, as quoted by Lai et al. | Lai et al. 2025, arXiv:2512.03229, §3.3 | [src] |
 
@@ -68,7 +68,7 @@ impact on the velocity power spectrum" in the Fisher study of Howlett, Staveley-
 
 - 2MTF against 2MRS and PSCz: the residual bulk flow drops from ~250 to ~150 km/s, and β from the
   2MRS model moves into agreement with the literature, once "the monopole deviation in the velocity
-  zeropoint between data and model" is subtracted (Springob et al. 2016, arXiv:1511.04849) [src].
+  zeropoint between data and model" is subtracted (Springob et al. 2016, arXiv:1511.04849) [src: abstract].
 - CF4: a zero-point **dipole** of 0.087 ± 0.019 mag in the TF W1 sample (4.1 ± 0.9 % in H0; odds
   877:1) and 0.049 ± 0.013 mag in Pantheon+ (2.3 ± 0.6 %), which a radially varying velocity dipole
   explains as "local flow features (or possibly systematics)" (Stiskalek et al. 2025,
@@ -134,7 +134,7 @@ indicator relation with the selection function inside the likelihood (the 3D-Gau
 **Validation.** The mean vs maximum-likelihood η of each galaxy: in DESI DR1 FP the two
 distributions differ by a relative zero-point of −0.10 and have σ = 0.124 vs 0.116, but individual
 galaxies differ "by up to 0.56 dex in the most highly skewed cases" [src: arXiv:2512.03226, §5] —
-sample statistics are safe, single-object distances are not.
+sample statistics are safe, single-object distances are not. [src: Sect. 6]
 
 ---
 
@@ -149,7 +149,7 @@ scatter of the relation, so the mean η of the selected sample is not zero and d
 - DESI DR1 FP: variations of axis-ratio, velocity-dispersion and Δχ² cuts give "no or minimal effect
   on the resulting log-distance ratios and less than 5 % variation in σ_r²"; lowering the magnitude
   limit shifts the mean η [src: arXiv:2512.03226, §6]. Imaging: m_r(BASS/MzLS) − m_r(DECaLS) =
-  −0.018 ± 0.013 mag, consistent with zero at 1.4σ, no correction applied [src].
+  −0.018 ± 0.013 mag, consistent with zero at 1.4σ, no correction applied [src: Sect. 3].
 - ZTF SN Ia simulations (Carreres et al. 2023, arXiv:2303.01198): the selected sample is unbiased
   only to z < 0.06, where the 6-year forecast is a 19 % fσ8 error; the selection is "mostly a
   magnitude cut", and M_0 is recovered ~0.01 mag low [src: abstract and §5]. A sharp cut in z_obs is
@@ -159,7 +159,7 @@ scatter of the relation, so the mean η of the selected sample is not zero and d
 - SN-rate inhomogeneity: the ZTF DR2 volume-limited sample shows a SN Ia excess at z ≃ 0.02–0.04
   rejected as a uniform-rate fluctuation at 12.2σ, with local rate enhancements of 3–8 in clusters;
   "the SN Ia rate is not a linear tracer of the underlying matter density" (Lordet et al. 2026,
-  arXiv:2604.12714) [src]. A velocity tracer that over-samples clusters over-weights virialised
+  arXiv:2604.12714) [src: abstract]. A velocity tracer that over-samples clusters over-weights virialised
   motions.
 
 **Mitigation and validation.** End-to-end mocks with the survey selection (675 for DESI DR1,
@@ -233,12 +233,12 @@ arXiv:2512.03229].
 <!-- key: reconstruction-systematics-velocity-density -->
 
 - Bias of the method itself on 2M++-like mocks: fσ8 high by 1.04 ± 0.01; cosmic variance of the
-  volume ~5 %; predicted-velocity error 170 km/s (Hollinger & Hudson 2024, arXiv:2312.03904) [src].
+  volume ~5 %; predicted-velocity error 170 km/s (Hollinger & Hudson 2024, arXiv:2312.03904) [src: abstract].
 - Stochasticity of the reconstructed velocity biases the model velocity; in lognormal tests the
   correction is "significant" in some scenarios (Turner & Blake 2023, arXiv:2306.16664) [src].
 - Budget for SNe against a 2M++-like reconstruction (**simulated** TITAN): σ_sys = 0.023 = SN 0.017
   ⊕ reconstruction 0.016; "the assumed intrinsic scatter model is the largest single systematic
-  contribution" and can shift fσ8 low through red SNe (Dixon et al. 2026, arXiv:2606.14962) [src].
+  contribution" and can shift fσ8 low through red SNe (Dixon et al. 2026, arXiv:2606.14962) [src: abstract].
 - Dominant *statistical* term of the tightest results is not the velocities but the galaxy field:
   "the uncertainty dominated by the variance of the 2M++ galaxy field" (σ8 of the galaxies) [src:
   arXiv:2509.20235].

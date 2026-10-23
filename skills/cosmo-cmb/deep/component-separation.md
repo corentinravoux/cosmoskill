@@ -38,6 +38,8 @@ half-sum and half-difference maps (Planck).
 ### Step 1. Pick the family of method
 <!-- key: step-1-pick-the-family-of-method -->
 
+From arXiv:1807.06208 unless a row names another paper:
+
 | Method | Data model | What is fitted | Output | Place |
 |---|---|---|---|---|
 | Commander (Bayesian parametric) | d_ν(p) = g_ν Σ_c F_ν(β_c) T(p) a_c + n_ν(p) (Eq. 1) | amplitudes a_c of each component, spectral parameters β_c, calibration g_ν, by Gibbs sampling | CMB and foreground maps, full posterior | [src: arXiv:1807.06208, Sect. 2.1] |
@@ -88,7 +90,7 @@ What each assumes and why it is used:
   differencing [src: arXiv:1807.06208, App. C.1].
 - SEVEM 2018 adds 217 GHz to the polarisation coadd for signal-to-noise
   but down-weights it on the largest scales, where it is more prone to
-  systematics and calibration error [src: Sect. 2.3].
+  systematics and calibration error (arXiv:1807.06208) [src: Sect. 2.3].
 
 ### Step 3. Choose the needlet bands and the covariance kernel (NILC)
 <!-- key: step-3-choose-the-needlet-bands-and-the -->
@@ -98,7 +100,7 @@ What each assumes and why it is used:
   Galactic emission varies fast with scale and position, broad bands at
   high ℓ, where tSZ, CIB, sources and noise vary slowly [src:
   arXiv:2307.01258, Sect. III.2].
-- The covariance is estimated at each needlet pixel with a smoothed
+- The covariance (arXiv:2307.01258) is estimated at each needlet pixel with a smoothed
   top-hat kernel T(θ) = 1/(1 + θ/W_i)⁶ (Eq. 12), with width
   W_i = 2 arccos(1 − 2 × 20 N_elements/N_modes) (Eq. 13), so that
   enough modes enter for the matrix to be invertible; the authors found
@@ -129,7 +131,7 @@ masking couples them [src: App. C].
   stacking on ACT DR5 clusters; a small central residual remains, which
   the authors attribute to CIB correlated with clusters and enhanced by
   the deprojection [src: arXiv:2307.01258, Sect. V.1, Fig. 12].
-- For y maps, deprojecting a CIB modified blackbody (β = 1.7,
+- For y maps (arXiv:2307.01258), deprojecting a CIB modified blackbody (β = 1.7,
   T_CIB = 10.70 K, Eq. 18) and its first derivative in β ("CIB-δβ")
   adds robustness at the cost of more noise [src: Sect. III.3.3,
   Fig. 15].
@@ -138,10 +140,12 @@ masking couples them [src: App. C].
   for variance: accepting a tSZ residual of 20% of the standard-ILC
   residual cuts the CMB-map variance by at least 50% relative to full
   deprojection over ℓ = 3000–4800 for an SO-like setup (**forecast**)
-  [src: Abylkairov et al. 2020, arXiv:2012.04032].
+  [src: Abylkairov et al. 2020, arXiv:2012.04032, abstract].
 
 ### Step 6. Validate the cleaned map
 <!-- key: step-6-validate-the-cleaned-map -->
+
+From arXiv:1807.06208 unless a row names another paper:
 
 | Check | How | Pass criterion or result | Place |
 |---|---|---|---|
@@ -214,7 +218,7 @@ caution [src: Sect. 6].
   variance [src: Sect. III]. The weak version implicitly assumes certain
   connected four-point functions vanish (Eqs. 28–29) and is sub-optimal
   otherwise [src].
-- In SO-like simulations SpILC gives CMB spectrum error bars more than 7
+- In SO-like simulations SpILC (arXiv:2509.10604) gives CMB spectrum error bars more than 7
   times smaller than a tSZ- and CIB-deprojected constrained ILC at
   ℓ ≳ 4000 (**forecast**) [src: abstract].
 - Data splits: a SpILC estimator without instrumental noise bias drops

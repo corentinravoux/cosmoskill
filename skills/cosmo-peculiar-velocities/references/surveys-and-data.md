@@ -81,7 +81,7 @@ Notes.
   the fσ8 table of `results.md` §0.
 - Cosmicflows-4 absolute scale: Cepheids, TRGB and the NGC 4258 maser; the assembly "is compatible
   with" H0 = 74.6 ± 0.8 (stat), "large potential systematic error of ~3 km/s/Mpc" [src:
-  arXiv:2209.11238].
+  arXiv:2209.11238]. [src: abstract]
 
 ---
 
@@ -100,7 +100,7 @@ applies, and its DESI component is an early subset (4 191 objects), not the DR1 
 
 Results obtained from it in the same period: bulk flow of 315 ± 40 km/s at 150 h⁻¹Mpc and "the
 dynamical scale of homogeneity is not yet reached in the interval [200–300] Mpc/h"
-(arXiv:2502.01308) [src]; the Vela mass (`results.md` §2).
+(arXiv:2502.01308) [src: abstract]; the Vela mass (`results.md` §2).
 
 ---
 
@@ -112,13 +112,13 @@ A secondary-target programme of DESI, FP and TF with one instrument and one phot
 
 | Stage | Date | Content | Reference | Flag |
 |---|---|---|---|---|
-| Target selection | 2023-02 | 373 533 early-type and 118 637 late-type targets in the 5-year footprint; predicted yield ~133 000 FP + ~53 000 TF velocities over 14 000 deg² | Saulder et al. 2023, arXiv:2302.13760 | [src] |
+| Target selection | 2023-02 | 373 533 early-type and 118 637 late-type targets in the 5-year footprint; predicted yield ~133 000 FP + ~53 000 TF velocities over 14 000 deg² | Saulder et al. 2023, arXiv:2302.13760 | [src: Sect. "Résumé"] |
 | Survey validation / EDR, FP | 2024-08 | 6 698 unique early types observed, 4 267 with velocity-dispersion error < 10 %; FP zero-point from the Coma SBF distance; H0 = 76.05 ± 0.35 (stat) ± 0.49 (syst FP), plus a third term of ± 4.86 that dominates | Said et al. 2025, arXiv:2408.13842 | [src] |
 | EDR, TF | 2025-07 | rotation at 0.33 R26 for 1 163 spirals (1 136 + 27 dwarfs); slope −7.96 ± 0.13 AB mag from 41 Coma spirals, scatter 1.07 ± 0.02 mag; public distance catalogue | Douglass et al. 2025, arXiv:2507.11765 | [src] |
 | DR1 FP catalogue | 2025-12 | 98 292 unique early types, z < 0.1, 26 % distances | Ross et al. 2025, arXiv:2512.03226 | [src] |
 | DR1 TF catalogue | 2025-12 | 10 262 spirals, rotation at 0.4 R26; 6 807 in the clustering catalogue | Douglass et al. 2025, arXiv:2512.03227 | [src] |
-| DR1 mocks | 2025-12 | 675 realisations with BGS density, FP, TF and SN Ia samples | Bautista et al. 2025, arXiv:2512.03228 | [src] |
-| DR1 zero-point | 2025-12 | η_zp = 0.139 ± 0.007 from SH0ES/Pantheon+ SNe via groups | Carr et al. 2025, arXiv:2512.03232 | [src] |
+| DR1 mocks | 2025-12 | 675 realisations with BGS density, FP, TF and SN Ia samples | Bautista et al. 2025, arXiv:2512.03228 | [src: abstract] |
+| DR1 zero-point | 2025-12 | η_zp = 0.139 ± 0.007 from SH0ES/Pantheon+ SNe via groups | Carr et al. 2025, arXiv:2512.03232 | [src: Sect. V.5] |
 
 **From catalogue to cosmology sample.** The counts shrink at each step, and the growth-rate papers
 do not all quote the same one [src: arXiv:2512.03229 §2, arXiv:2512.03230 §2]:
@@ -148,7 +148,7 @@ scatter, but coherent with galaxy morphology.
 - DESI DR1 spectra and redshifts: public since 19 March 2025; EDR since 13 June 2023 [sec:
   data.desi.lbl.gov/doc/releases, read 2026-10-08].
 - DR1 PV measurements and likelihood products: Zenodo record 17672675 and the power-spectrum code at
-  github.com/FeiQin-cosmologist/Galaxy_Power_Spectrum [src: arXiv:2512.03231, data availability].
+  github.com/FeiQin-cosmologist/Galaxy_Power_Spectrum [src: arXiv:2512.03231, data availability]. [src: Sect. "Data availability"]
 - DESI DR2 (three years of data): the release page lists no public DR2; only the DR2 BAO cosmology
   chains are out [sec: same page]. **No DR2 peculiar-velocity paper was found** in date-sorted arXiv
   searches up to 2026-10-08. The DR1 field-level paper calls its mock study "a preparation for the
@@ -168,9 +168,9 @@ Sample definitions, calibration and release status of the SN compilations are in
 | ZTF SN Ia DR2 | 3 628 spectroscopically classified SNe Ia at z < 0.3 (March 2018 – December 2020); 2 667 pass light-curve cuts; "nearly a thousand" in the volume-limited z < 0.06 sample | public, but "the photometric accuracy of the DR2 is not yet suited for cosmological parameter inference", deferred to "DR2.5" | Rigault et al. 2025, arXiv:2409.04346 | [src] |
 | ZTF, growth rate | simulations only: 19 % on fσ8 from 6 years at z < 0.06, velocities alone; 10 % (σ = +0.047/−0.048) when combined with DESI DR3 BGS density — both **forecasts** | **no fσ8 from ZTF data found** in date-sorted searches up to 2026-10-08 | Carreres et al. 2023, arXiv:2303.01198; Ravoux et al. 2026, arXiv:2609.34508 | [src] |
 | TITAN (ATLAS) | ~2 000 SNe Ia at z < 0.067 expected; end-to-end simulated measurement only | data analysis not published | Dixon et al. 2026, arXiv:2606.14962 | [src] |
-| Hawai'i Supernova Flows | optical + NIR SN Ia distances; bulk flow within z ≲ 0.1 | published | Do et al. 2026, arXiv:2606.17142 | [src] |
-| WHALES | SNe Ia in and around superclusters; first two seasons on Shapley (0.02 < z < 0.06): 12 likely SNe Ia, 8 spectroscopically confirmed | initial data release | Acevedo et al. 2025, arXiv:2510.26731 | [src] |
-| Rubin LSST | **forecast**: 10 % on fσ8 over 0.02 < z < 0.14 in the most realistic scenario | 10-year survey began 30 June 2026 [sec: `cosmo-supernovae` surveys file] | Rosselli et al. 2025, arXiv:2507.00157 | [src] |
+| Hawai'i Supernova Flows | optical + NIR SN Ia distances; bulk flow within z ≲ 0.1 | published | Do et al. 2026, arXiv:2606.17142 | [src: abstract] |
+| WHALES | SNe Ia in and around superclusters; first two seasons on Shapley (0.02 < z < 0.06): 12 likely SNe Ia, 8 spectroscopically confirmed | initial data release | Acevedo et al. 2025, arXiv:2510.26731 | [src: abstract] |
+| Rubin LSST | **forecast**: 10 % on fσ8 over 0.02 < z < 0.14 in the most realistic scenario | 10-year survey began 30 June 2026 [sec: `cosmo-supernovae` surveys file] | Rosselli et al. 2025, arXiv:2507.00157 | [src: abstract] |
 
 **The compilation's SN table.** Folded on 2026-10-20 from the compilation of 2026-08-12/14, in which `[src]` meant "traced to the
 paper" and `[der]` "relabelled or derived, the paper does not quote fσ8".
@@ -198,8 +198,8 @@ independent data; state which low-z sample underlies a quoted fσ8.
 
 | Survey | Content | Status | Reference | Flag |
 |---|---|---|---|---|
-| WALLABY pilot, phase 1 | 614 HI spectra in four fields, 472 usable, 251 sufficiently inclined; TF distances with W1; cluster distances to 5–10 % | published | Courtois et al. 2023, arXiv:2210.12498 | [src] |
-| WALLABY pilot, phase 2 (PDR2) | 180 deg², three more fields; TF from 0.8 to 3.4 μm, including the 4HS target photometry | published | Mould et al. 2024, arXiv:2406.10877 | [src] |
+| WALLABY pilot, phase 1 | 614 HI spectra in four fields, 472 usable, 251 sufficiently inclined; TF distances with W1; cluster distances to 5–10 % | published | Courtois et al. 2023, arXiv:2210.12498 | [src: abstract] |
+| WALLABY pilot, phase 2 (PDR2) | 180 deg², three more fields; TF from 0.8 to 3.4 μm, including the 4HS target photometry | published | Mould et al. 2024, arXiv:2406.10877 | [src: abstract] |
 | WALLABY full survey | 132 footprints observed by 31 December 2025, "around 11.5 %" complete; "almost 6 000" full-survey detections released internally; public release of the first tranche under discussion | observing | [sec: WALLABY newsletter, wallaby-survey.org, February 2026, read 2026-10-08] | [sec] |
 | FAST | 4 796 velocities in CF4++ | first release ingested | arXiv:2502.01308 | [src] |
 | SKAO | **forecast** chapter for TF surveys with SKA-Mid AA* and AA4 | planned | Mayor et al. 2026, arXiv:2606.26001 | [src] |

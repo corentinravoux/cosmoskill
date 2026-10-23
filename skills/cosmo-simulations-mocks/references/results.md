@@ -11,10 +11,10 @@ Snapshot: 2026-10-13
 | Ten codes (Cosmic Code Comparison Project) | common initial conditions in small boxes | P(k) and mass function at the 10% level over wide ranges | Heitmann et al. 2007, arXiv:0706.1270 [src] |
 | RAMSES, PKDGRAV3, GADGET-3 (Euclid code comparison) | one set of initial conditions (2LPT at z = 49), L = 500 Mpc/h, 2048³ particles, standard run parameters | P(k) within 1% at k ≤ 1 h/Mpc at z = 0 to 3.8, and within 3% at k ≤ 10 h/Mpc for z ≤ 1 (about 5% at z = 2, 10% at z = 3.8); largest scales within about 0.4%; reduced bispectra within less than 1% at k ≤ 2 h/Mpc | Schneider et al. 2015, arXiv:1503.05920 [src: Sects. 2.1 and 2.3, Fig. 1; bispectrum from the abstract] |
 | GADGET-4, PKDGRAV3, Abacus, RAMSES on the Euclid comparison box | reruns by the code authors | P(k) within 0.4% up to k about 2 h/Mpc and 2% up to k about 10 h/Mpc at z = 0; stacked profiles of the 25 most massive haloes within a percent down to 10 kpc/h | [sec: arXiv:2112.05165, Sect. 8.5 and Fig. 24, after Springel et al. 2020] |
-| Abacus on the same initial conditions | 2048³ particles, 500 Mpc/h, m_p = 1.2 × 10⁹ M_⊙/h, 10 kpc/h spline softening | good agreement with RAMSES and PKDGRAV3, "less so" with GADGET-3; halving the time step changes P(k) by less than 0.3% at k < 10 h/Mpc; linear theory reproduced to better than 0.01% on large scales | Garrison et al. 2018, arXiv:1810.02916 [src] |
+| Abacus on the same initial conditions | 2048³ particles, 500 Mpc/h, m_p = 1.2 × 10⁹ M_⊙/h, 10 kpc/h spline softening | good agreement with RAMSES and PKDGRAV3, "less so" with GADGET-3; halving the time step changes P(k) by less than 0.3% at k < 10 h/Mpc; linear theory reproduced to better than 0.01% on large scales | Garrison et al. 2018, arXiv:1810.02916 [src: abstract] |
 | Abacus, GADGET, SWIFT (DESI N-body project) | matched phases from z = 199; 1296³, 1728³ and 2592³ particles, particle masses 6.25 × 10⁸, 2.11 × 10⁹ and 5.00 × 10⁹ M_⊙/h; compared at z = 1 and z = 2 | matter P(k) within 1% for k ≤ 10 h/Mpc (0.1% at k < 0.1 h/Mpc); between resolutions of one code 1% at k = 2 and 4% at k = 10 h/Mpc; mass functions within 1% for 10¹²–10¹³·⁵ M_⊙/h; code differences in halo clustering below the DESI statistical error for s > 20 Mpc/h in redshift space (year-5 error; year-1 error above 10 Mpc/h); 2.1 × 10⁹ M_⊙/h is converged for halo clustering at these scales | Grove et al. 2021, arXiv:2112.09138 [src: Sects. 3.2, 4.2 and 5.2] |
 | GINKAKU against GADGET, PKDGRAV3, RAMSES | shared initial conditions | differences in the non-linear P(k) below about 1% after tuning accuracy parameters; inter-resolution spread of the halo mass function reduced to about 1% by the post-processing pipeline | Nishimichi et al. 2026, arXiv:2605.28581 [src] |
-| Aemulus internal convergence | 1.05 Gpc/h boxes, 3.51 × 10¹⁰ M_⊙/h | statistics converged to 1% (2%) for halos with more than 500 (200) particles, for r > 200 kpc/h or k about 3 h/Mpc, z ≤ 1 | DeRose et al. 2018, arXiv:1804.05865 [src] |
+| Aemulus internal convergence | 1.05 Gpc/h boxes, 3.51 × 10¹⁰ M_⊙/h | statistics converged to 1% (2%) for halos with more than 500 (200) particles, for r > 200 kpc/h or k about 3 h/Mpc, z ≤ 1 | DeRose et al. 2018, arXiv:1804.05865 [src: abstract] |
 
 Sizes with their conditions are in `systematics.md` §2. The two headline code-comparison numbers are not the same statement. Schneider et al. 2015 (1% to k = 1, 3% to k = 10) compared three codes at "standard run parameters"; Grove et al. 2021 (1% to k = 10) compared three other codes with settings chosen for DESI. The improvement between them reflects tuned accuracy parameters as much as better codes, as the GINKAKU paper states explicitly.
 
@@ -48,24 +48,24 @@ The gravity-only emulators are quoted at 1–3% while the baryonic response at k
 
 | Method | Statistic | Accuracy | Range | Reference, flag |
 |---|---|---|---|---|
-| COLA, 10 steps | halo statistics | "accurate" down to 10¹¹ M_⊙/h | 100 Mpc/h box, 5 × 10⁹ M_⊙/h particles | arXiv:1301.0322 [src] |
+| COLA, 10 steps | halo statistics | "accurate" down to 10¹¹ M_⊙/h | 100 Mpc/h box, 5 × 10⁹ M_⊙/h particles | arXiv:1301.0322 [src: abstract] |
 | ICE-COLA, 40 steps, mesh factor 3 | matter P(k) | 1% | k ≲ 1 h/Mpc, 0 < z < 1 | arXiv:1509.04685 [src] |
 | same | halo mass function | 5% | M > 10¹²·⁵ M_⊙/h | arXiv:1509.04685 [src] |
 | same | halo bias | 2% | k ≲ 0.7 h/Mpc | arXiv:1509.04685 [src] |
 | same | redshift-space halo monopole and quadrupole | 4% | k ≲ 0.4 h/Mpc | arXiv:1509.04685 [src] |
-| COLA, 20 steps, inside BORG | density field around massive local clusters | adequate; virial masses not converged | within 135 Mpc/h | arXiv:2304.09193 [src] |
+| COLA, 20 steps, inside BORG | density field around massive local clusters | adequate; virial masses not converged | within 135 Mpc/h | arXiv:2304.09193 [src: abstract] |
 | FastPM, N_s = 10, B = 2 | halo benchmarks at z = 0 | close to N_s = 40, B = 3 at one tenth of the cost | — | arXiv:1603.00476 [src] |
-| Seven approximate methods (ICE-COLA, Pinocchio, PeakPatch, Halogen, Patchy, lognormal, Gaussian) against 300 N-body runs | halo power-spectrum monopole | most within 5%; quadrupole residuals sometimes larger and scale dependent | — | Blot et al. 2018, arXiv:1806.09497 [src] |
+| Seven approximate methods (ICE-COLA, Pinocchio, PeakPatch, Halogen, Patchy, lognormal, Gaussian) against 300 N-body runs | halo power-spectrum monopole | most within 5%; quadrupole residuals sometimes larger and scale dependent | — | Blot et al. 2018, arXiv:1806.09497 [src: Sect. 1] |
 | same | variance of the multipoles | typically within 10% | — | arXiv:1806.09497 [src] |
 | same | errors on growth, AP and bias parameters from the mock covariance | within 10% of the N-body covariance result | — | arXiv:1806.09497 [src] |
-| EZmocks for eBOSS | two-point statistics of data against mocks | within 1σ | down to a few Mpc/h; up to k = 0.3 h/Mpc; cross-correlations discrepant in Fourier space above 0.15 h/Mpc | arXiv:2007.08997 [src] |
+| EZmocks for eBOSS | two-point statistics of data against mocks | within 1σ | down to a few Mpc/h; up to k = 0.3 h/Mpc; cross-correlations discrepant in Fourier space above 0.15 h/Mpc | arXiv:2007.08997 [src: abstract] |
 | GLASS | two-point statistics of clustering and lensing | percent level | full-sky shells | arXiv:2302.01942 [src] |
 | CoLoRe-2LPT | Lyα bias, β, mean flux, P1D | within 10% of the DESI measurement; quasar linear bias within 5% | z > 2 | arXiv:2607.27412 [src] |
 | FastPM against Abacus, GADGET, SWIFT | matter P(k) | departs at the 1% level | k > 0.5 h/Mpc, z = 1 and 2; force-mesh factor 2, 46 steps | arXiv:2112.09138 [src: Sects. 3.1.4 and 5.2] |
 | EZmocks, original method | halo P(k) and ξ against N-body; bispectrum | 1%; 20% | k ≤ 0.55 h/Mpc, r ≥ 10 Mpc/h | arXiv:1409.1124 [src] |
-| PATCHY | halo P(k), real and redshift space | about 2% | k ≲ 1 h/Mpc, z = 0.577, CMASS-like density | arXiv:1307.3285 [src] |
+| PATCHY | halo P(k), real and redshift space | about 2% | k ≲ 1 h/Mpc, z = 0.577, CMASS-like density | arXiv:1307.3285 [src: abstract] |
 | L-PICOLA | matter P(k); reduced bispectrum | 2%; 5% | z = 0, BAO and RSD scales | arXiv:1506.03737 [src] |
-| COLA, 10 steps (WiggleZ mocks) | velocity power spectrum | no systematic error for k < 0.15 h/Mpc; 3% for k < 0.2 h/Mpc | 10¹² M_⊙ haloes | arXiv:1507.05329 [src] |
+| COLA, 10 steps (WiggleZ mocks) | velocity power spectrum | no systematic error for k < 0.15 h/Mpc; 3% for k < 0.2 h/Mpc | 10¹² M_⊙ haloes | arXiv:1507.05329 [src: abstract] |
 | PINOCCHIO | halo mass function | better than 10% | haloes of at least 30–50 particles | arXiv:astro-ph/0109323 [src] |
 | nIFTy comparison | quadrupole of ξ and P(k) | 1% only for the semi-N-body method | r < 25 Mpc/h, k > 0.15 h/Mpc | arXiv:1412.7729 [src] |
 | Seven approximate methods, correlation-function covariance | parameter errors | within 5% (lower mass threshold), 10% (higher); up to 20% depending on how the halo sample is matched | z = 1 | Lippich et al. 2018, arXiv:1806.09477 [src] |
@@ -99,7 +99,7 @@ How the suites compare with gas observations, 2024–2026:
 
 | Test | Outcome | Reference, flag |
 |---|---|---|
-| DES Y3 lensing + ACT DR5 kSZ, baryonification | mean feedback more extreme than most hydrodynamical simulations; S8 = 0.823 +0.019/−0.020 | Bigwood et al. 2024, arXiv:2404.06098 [src] |
+| DES Y3 lensing + ACT DR5 kSZ, baryonification | mean feedback more extreme than most hydrodynamical simulations; S8 = 0.823 +0.019/−0.020 | Bigwood et al. 2024, arXiv:2404.06098 [src: abstract] |
 | DESI Y1 × ACT kSZ against FLAMINGO, ANTILLES, BAHAMAS, SIMBA, FABLE | fiducial feedback models disfavoured at more than 3σ; stronger-AGN variants of FLAMINGO and BAHAMAS, and SIMBA, within 2σ; kSZ amplitude predicts the P(k) suppression as well as baryon fractions do | Bigwood et al. 2025, arXiv:2510.15822 [src] |
 | eROSITA X-ray + DESI × ACT kSZ + lensing against the fiducial 1 Gpc FLAMINGO | eROSITA gas fractions 2× lower than the simulation; kSZ combined more than 8σ discrepant; the strongest-expulsion variant fits | Siegel et al. 2025, arXiv:2509.10455 [src] |
 | DESI DR2 BGS and LRG lensing-to-kSZ ratio (HSC Y3 shear, ACT DR6) against Illustris, IllustrisTNG, SIMBA, FLAMINGO | fiducial FLAMINGO tracks the radial gas fraction most closely; Illustris-1 and TNG300-1 bracket the data at small radii | Liu et al. 2026, arXiv:2609.22466 [src] |
@@ -113,11 +113,11 @@ What controls the suppression: the mean baryon fraction of groups predicts the z
 
 | Analysis | Covariance source | Mock count | Reference, flag |
 |---|---|---|---|
-| eBOSS DR16 BAO and RSD | EZmock sample covariance | 1000 per tracer | arXiv:2007.08997 [src] |
-| DESI DR1 BAO | analytic (RascalC, configuration space) as the fiducial choice, validated against EZmocks | 1000 EZmocks per Galactic cap | arXiv:2411.12027 [src] |
-| DESI DR1 full shape | EZmock sample covariance with a correction, because the analytic Fourier-space covariance did not reproduce the expected measurements | 1000 per cap | arXiv:2411.12027 [src] |
+| eBOSS DR16 BAO and RSD | EZmock sample covariance | 1000 per tracer | arXiv:2007.08997 [src: abstract] |
+| DESI DR1 BAO | analytic (RascalC, configuration space) as the fiducial choice, validated against EZmocks | 1000 EZmocks per Galactic cap | arXiv:2411.12027 [src: Sect. 2.1] |
+| DESI DR1 full shape | EZmock sample covariance with a correction, because the analytic Fourier-space covariance did not reproduce the expected measurements | 1000 per cap | arXiv:2411.12027 [src: Sect. 2.1] |
 | DESI DR1 systematic tests | AbacusSummit HOD mocks | 25 boxes | arXiv:2404.03008 [src] |
-| DESI DR1 peculiar velocities | DESI-PV mocks | 675 | arXiv:2512.03228 [src] |
+| DESI DR1 peculiar velocities | DESI-PV mocks | 675 | arXiv:2512.03228 [src: abstract] |
 | Euclid | no cosmological analysis published at the snapshot [sec: `cosmo-weak-lensing` and `cosmo-galaxy-clustering` SKILL.md]; the reference mock is one Flagship 2 light-cone | 1 | arXiv:2405.13495 [src] |
 
 Two points about these counts. The DESI BAO covariance is not a mock covariance: the mocks validate an analytic one. And the DESI EZmocks are calibrated on AbacusSummit HOD mocks, which are calibrated on the one-percent survey, so the chain from data to covariance has two fitted layers [src] (arXiv:2411.12027).
@@ -133,12 +133,12 @@ With N_mocks = 1000 and a data vector of 100 points the error bar inflates by 10
 | Box size | L > 40 Mpc/h for sub-percent missing-mode error | Nyx | arXiv:1406.6361 [src] |
 | Splicing accuracy | 10% level on P1D | Nyx test | arXiv:1406.6361 [src] |
 | Eulerian versus SPH | ≲ 1% in P1D | Nyx versus CRK-HACC with tessellated density; the SPH-kernel density biases flux statistics, most at z about 5 | arXiv:2207.05023 [src] |
-| AGN feedback on P1D | suppression at all scales, growing to low z; neglect shifts σ_8 by 2% and n_s by 1% (twice the then-current error on n_s) | Horizon-AGN series, z = 4.25–2.0 | arXiv:2002.02822 [src] |
-| LaCE | sub-percent, k_∥ = 0.1–4 Mpc⁻¹, z = 2–4.5; percent level to 8 Mpc⁻¹ | includes unseen ΛCDM extensions | arXiv:2305.19064 [src] |
-| ForestFlow | 3% on P3D to k = 5 Mpc⁻¹; 1.5% on P1D to k_∥ = 4 Mpc⁻¹ | z = 2–4.5 | arXiv:2409.05682 [src] |
-| PRIYA | interpolation error < 1%; percent-level convergence, z = 5.4–2.2 | 120 Mpc/h boxes | arXiv:2306.05471 [src] |
-| Lyssa | sub-percent convergence of P1D per run | 4096³ cells in 120 Mpc | arXiv:2412.05372 [src] |
-| Lyssa on eBOSS DR14 | A_Lyα < 7.6 (95%), n_Lyα = −2.369 ± 0.008; Planck best fit A_Lyα = 8.79, n_Lyα = −2.363; with a mean-transmission prior A_Lyα = 9.8 ± 1.1 | the low amplitude is driven by the mean-flux degeneracy | arXiv:2412.05372 [src] |
+| AGN feedback on P1D | suppression at all scales, growing to low z; neglect shifts σ_8 by 2% and n_s by 1% (twice the then-current error on n_s) | Horizon-AGN series, z = 4.25–2.0 | arXiv:2002.02822 [src: abstract] |
+| LaCE | sub-percent, k_∥ = 0.1–4 Mpc⁻¹, z = 2–4.5; percent level to 8 Mpc⁻¹ | includes unseen ΛCDM extensions | arXiv:2305.19064 [src: abstract] |
+| ForestFlow | 3% on P3D to k = 5 Mpc⁻¹; 1.5% on P1D to k_∥ = 4 Mpc⁻¹ | z = 2–4.5 | arXiv:2409.05682 [src: abstract] |
+| PRIYA | interpolation error < 1%; percent-level convergence, z = 5.4–2.2 | 120 Mpc/h boxes | arXiv:2306.05471 [src: abstract] |
+| Lyssa | sub-percent convergence of P1D per run | 4096³ cells in 120 Mpc | arXiv:2412.05372 [src: abstract] |
+| Lyssa on eBOSS DR14 | A_Lyα < 7.6 (95%), n_Lyα = −2.369 ± 0.008; Planck best fit A_Lyα = 8.79, n_Lyα = −2.363; with a mean-transmission prior A_Lyα = 9.8 ± 1.1 | the low amplitude is driven by the mean-flux degeneracy | arXiv:2412.05372 [src: abstract] |
 
 A 1% emulator error is an interpolation error inside the training set. It says nothing about physics absent from the simulations (patchy reionisation, AGN feedback), which the rows above show to be at the percent level or more.
 
@@ -148,17 +148,17 @@ A 1% emulator error is an interpolation error inside the training set. It says n
 | Quantity | Value | Context | Reference, flag |
 |---|---|---|---|
 | Reduction of cell-to-cell scatter in constrained runs | factor 2–3 at 5 Mpc/h | CLUES, inner region | arXiv:1510.04900 [src] |
-| Scatter between simulated and reconstructed velocity fields | 104 ± 4 km/s | CLUES | arXiv:1510.04900 [src] |
+| Scatter between simulated and reconstructed velocity fields | 104 ± 4 km/s | CLUES | arXiv:1510.04900 [src: abstract] |
 | Smallest scale of accurate 2LPT BORG reconstruction | about 6 Mpc/h | SDSS DR7-like mock | arXiv:1203.3639 [src] |
-| Number of COLA steps adequate for the density field around local clusters | 20 (virial masses still unconverged) | within 135 Mpc/h | arXiv:2304.09193 [src] |
-| Local underdensity | about 5% relative to the mean | SIBELIUS-DARK, to 200 Mpc | arXiv:2202.04099 [src] |
+| Number of COLA steps adequate for the density field around local clusters | 20 (virial masses still unconverged) | within 135 Mpc/h | arXiv:2304.09193 [src: abstract] |
+| Local underdensity | about 5% relative to the mean | SIBELIUS-DARK, to 200 Mpc | arXiv:2202.04099 [src: abstract] |
 | Local underdensity | "no evidence for a large local underdensity" | Manticore-Local | arXiv:2505.10682 [src] |
 | Cluster counterparts | 14, each within 1°, detected at 2–4σ across the posterior | Manticore-Local | arXiv:2505.10682 [src] |
 | Reconstructed volume and resolution | (4 Gpc/h)³ to z about 0.7 at about 4 Mpc/h | Manticore-Deep | arXiv:2606.10020 [src] |
 | CMB-lensing cross-correlation of the reconstruction | 7.4σ (Planck PR3) | Manticore-Deep | arXiv:2606.10020 [src] |
 | kSZ from reconstructed velocities | 3.5σ, 64,750 clusters, Planck 217 GHz | Manticore-Deep | arXiv:2606.10020 [src] |
 | Constrained ensemble from velocities | 100 runs, 512³ in (500 Mpc/h)³, Cosmicflows-4 to 160 Mpc/h | Hamlet-PM | arXiv:2602.03699 [src] |
-| S8 from density–velocity cross-correlation with a linear reconstruction | 0.793 ± 0.035; in agreement with weak lensing and Planck, in strong disagreement with some peculiar-velocity studies | validation framework for velocity reconstructions | arXiv:2502.00121 [src] |
+| S8 from density–velocity cross-correlation with a linear reconstruction | 0.793 ± 0.035; in agreement with weak lensing and Planck, in strong disagreement with some peculiar-velocity studies | validation framework for velocity reconstructions | arXiv:2502.00121 [src: abstract] |
 | Differentiable particle mesh | 6 steps for percent-level P(k) at k about 0.2 h/Mpc, 512³, a few seconds on GPU | DISCO-DJ | arXiv:2510.05206 [src] |
 | Lyα-tomography reconstruction | r = 0.95 on deformation-tensor eigenvalues | TARDIS, 30 m-class mock data | arXiv:1903.09049 [src] |
 
@@ -195,13 +195,13 @@ Each line gives the sequence in time, so that a reader can tell which statement 
 
 **Covariance mocks for spectroscopic surveys.**
 - BOSS DR9: 600 PTHalos mocks (arXiv:1203.6609). BOSS DR12: 12,288 MultiDark-Patchy light-cones (arXiv:1509.06400).
-- eBOSS DR16: 1000 EZmocks per tracer (arXiv:2007.08997).
-- DESI DR1: 1000 EZmocks per Galactic cap, used directly for the full shape and as validation of an analytic covariance for BAO (arXiv:2411.12027).
-- DESI DR1 peculiar velocities: 675 (arXiv:2512.03228).
+- eBOSS DR16: 1000 EZmocks per tracer (arXiv:2007.08997, abstract).
+- DESI DR1: 1000 EZmocks per Galactic cap, used directly for the full shape and as validation of an analytic covariance for BAO (arXiv:2411.12027, Sect. 2.1).
+- DESI DR1 peculiar velocities: 675 (arXiv:2512.03228, abstract).
 
 **Lyα forest simulations.**
 - 2015: 20 kpc/h and 40 Mpc/h requirements; splicing good to 10% (arXiv:1406.6361).
-- 2017: Sherwood, up to 160 Mpc/h (arXiv:1605.03462).
+- 2017: Sherwood, up to 160 Mpc/h (arXiv:1605.03462, abstract).
 - 2020: AGN feedback worth 2% on σ_8 (arXiv:2002.02822).
 - 2023: grid and particle codes agree to 1% in P1D with a tessellated density (arXiv:2207.05023); PRIYA with patchy reionisation (arXiv:2306.05471); Sherwood-Relics (arXiv:2207.13098).
 - 2023–2025: emulators at the sub-percent to 3% level (arXiv:2305.19064, arXiv:2409.05682, arXiv:2412.05372).
@@ -209,9 +209,9 @@ Each line gives the sequence in time, so that a reader can tell which statement 
 
 **Constrained simulations.**
 - 2013: 2LPT field-level inference, about 6 Mpc/h (arXiv:1203.3639).
-- 2016: velocity-constrained realisations to 150 Mpc/h (arXiv:1510.04900).
+- 2016: velocity-constrained realisations to 150 Mpc/h (arXiv:1510.04900, abstract).
 - 2019: particle-mesh dynamics inside the sampler, 2M++ (arXiv:1806.11117).
-- 2022: SIBELIUS-DARK to 200 Mpc with public catalogues (arXiv:2202.04099).
+- 2022: SIBELIUS-DARK to 200 Mpc with public catalogues (arXiv:2202.04099, abstract).
 - 2024: posterior resimulation established as the route to halo masses (arXiv:2304.09193).
 - 2025: Manticore-Local, a posterior ensemble validated on velocities (arXiv:2505.10682, arXiv:2502.00121).
 - 2026: Manticore-Deep over (4 Gpc/h)³ (arXiv:2606.10020); forward modelling from Cosmicflows-4 velocities (arXiv:2602.03699).

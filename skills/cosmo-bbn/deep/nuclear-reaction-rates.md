@@ -82,7 +82,7 @@ Launders et al.'s rules [src: arXiv:2604.16600, Sect. III.3]:
 5. If only total errors are given, take the smallest percentage error of the
    set as its normalisation error.
 
-Their fiducial d + d data are five sets (KR87B, KR87M, BR90, GR95, Leo06)
+Their (arXiv:2604.16600) fiducial d + d data are five sets (KR87B, KR87M, BR90, GR95, Leo06)
 with normalisation errors 6.4%, 8.12%, 1.3%, 3.3% and 1%; their d(p,γ)³He
 data are six sets (MA97, SC97, CA02, TI19, LUNA 2020, TU21) [src: Table 3].
 Disputed sets and the reasons given:

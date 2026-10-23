@@ -25,11 +25,11 @@ Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named 
 
 **The facts.** DESI quotes the preference for w0waCDM as a `Δχ²_MAP` converted to σ with two degrees of freedom, with `Δ(DIC)` as a companion: 3.1σ and −8.7 for DESI DR2 + CMB (arXiv:2503.14738) [src]. A nested-sampling evidence on the same combination gives `ln B = −0.57 ± 0.26`, mildly favouring ΛCDM (Ong, Yallup & Handley 2025, arXiv:2511.10631; extended to seven model extensions in arXiv:2603.05472) [src].
 
-**Side A: the evidence is the consistent Bayesian answer.** The Ockham factor penalises parameters the data do not need; where the evidence does favour w0wa (with the original DES-SN5YR, `ln B = +3.32 ± 0.27`), a tension analysis traces it to a 2.95σ conflict between DESI and that supernova sample inside ΛCDM, and the preference vanishes with the recalibrated sample (`ln B = −0.30 ± 0.19`) (arXiv:2511.10631) [src]. On this reading the signal is an inter-data-set tension that two extra parameters absorb.
+**Side A: the evidence is the consistent Bayesian answer.** The Ockham factor penalises parameters the data do not need; where the evidence does favour w0wa (with the original DES-SN5YR, `ln B = +3.32 ± 0.27`), a tension analysis traces it to a 2.95σ conflict between DESI and that supernova sample inside ΛCDM, and the preference vanishes with the recalibrated sample (`ln B = −0.30 ± 0.19`) (arXiv:2511.10631) [src: abstract]. On this reading the signal is an inter-data-set tension that two extra parameters absorb.
 
 **Side B: the evidence is only as meaningful as the prior on w0, wa.** The CPL parameters have no physical prior; the flat ranges are conventions, and the Bayes factor moves linearly with their volume. Efstathiou 2008 (arXiv:0802.3185) argued exactly this for dark energy: for nested, poorly motivated models, parameter estimation is more informative than the evidence [src]. A `Δχ²` has a calibrated frequentist meaning that does not depend on the prior, provided Wilks' conditions hold.
 
-**Side C: neither in-sample statistic is the right question.** Karim, Speagle & Hložek 2026 (arXiv:2609.04334) score the models on held-out redshift blocks: a modest preference for w0waCDM, supplied entirely by one BAO block (LRG2, z = 0.706), with every supernova sample consistent with zero [src]. This disagrees with Side A on which data set drives the preference, and the two analyses have not been reconciled.
+**Side C: neither in-sample statistic is the right question.** Karim, Speagle & Hložek 2026 (arXiv:2609.04334) score the models on held-out redshift blocks: a modest preference for w0waCDM, supplied entirely by one BAO block (LRG2, z = 0.706), with every supernova sample consistent with zero [src: abstract]. This disagrees with Side A on which data set drives the preference, and the two analyses have not been reconciled.
 
 **What a careful text does.** It quotes `Δχ²`, the number of extra parameters and the σ; the Bayes factor with the prior ranges; and names the supernova sample and its calibration version. It does not translate `ln B` into σ or the reverse without saying how. The physics and the full list of critiques are in `cosmo-dark-energy-modified-gravity`.
 
@@ -42,9 +42,9 @@ Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named 
 
 **Open points.**
 
-- Full space or projection. 1.8σ against 2.6σ for the same DES Y6 posteriors (arXiv:2601.14559). The projection is the more sensitive test if S8 was the pre-registered question; the full-space value is the honest one if it was not. Papers rarely say which was fixed in advance.
+- Full space or projection. 1.8σ against 2.6σ for the same DES Y6 posteriors (arXiv:2601.14559, abstract). The projection is the more sensitive test if S8 was the pre-registered question; the full-space value is the honest one if it was not. Papers rarely say which was fixed in advance.
 - The reference. The CMB side has moved from Planck alone to Planck + ACT DR6 + SPT-3G, which is tighter; a survey's "tension with the CMB" changes with the reference even when its own result does not.
-- Non-Gaussian posteriors. Parameter-difference estimators with normalising flows are accurate to 0.2–0.5σ (arXiv:2105.03324); the suspiciousness needs a Gaussianity assumption for its p-value.
+- Non-Gaussian posteriors. Parameter-difference estimators with normalising flows are accurate to 0.2–0.5σ (arXiv:2105.03324, abstract); the suspiciousness needs a Gaussianity assumption for its p-value.
 - Correlated data. With overlapping sky (DESI and DES lensing, CMB lensing and galaxy surveys) the independent-data metrics do not apply; posterior predictive tests do, but they have their own projection effects and lose power when nuisance parameters absorb the mismatch (arXiv:2610.03447).
 - Is "nσ" meaningful at all. A Gaussian-equivalent σ is a relabelling of a p-value. Beyond about 3σ it depends on the tails of the posteriors and of the likelihood, which is where the Gaussian likelihood, the Hartlap correction (arXiv:2108.10402) and kernel density estimates are least reliable.
 
@@ -116,7 +116,7 @@ The size of the stake is documented in `cosmo-galaxy-clustering`: with simulatio
 **Points under discussion.**
 
 - A catalogue-level shift hides the distance scale and the growth rate; it does not by itself hide a preference for `w0`, `wa` once several redshift bins and external data sets are combined, unless the choice of combinations and priors was frozen beforehand. Which of the DESI DR2 dark-energy combinations were pre-specified was not read here.
-- External data are public and unblinded. A combined analysis can be blind only to the new data, and the choice of which external data set is the headline (the supernova compilation, the CMB likelihood) is an analysis choice with a documented effect of 2.8σ to 4.2σ (arXiv:2503.14738).
+- External data are public and unblinded. A combined analysis can be blind only to the new data, and the choice of which external data set is the headline (the supernova compilation, the CMB likelihood) is an analysis choice with a documented effect of 2.8σ to 4.2σ (arXiv:2503.14738, abstract).
 - Blinding against diagnosis. KiDS-Legacy reports that its scheme impeded the diagnosis of systematics (arXiv:2503.19441); ACT DR6 moved one validation test to after unblinding because "actual data were needed to make further progress" (arXiv:2503.14452); DES Y6 needed three blind iterations and dropped a lens bin without finding the cause (arXiv:2601.14559). The alternative, unblinding to investigate, costs credibility. The current answer is a written plan that states in advance what happens when a test fails.
 - Reanalyses of public data, which now produce many of the statistical critiques, are not blind by construction.
 - Tooling for Stage IV: data-vector blinding with encryption for Rubin (arXiv:2604.18111); a Lyα forest scheme for DESI (arXiv:2607.07875).

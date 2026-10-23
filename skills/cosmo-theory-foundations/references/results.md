@@ -35,7 +35,7 @@ The numbers most often needed, each detailed in the section named.
 | Spread between r_d conventions | 1–2% | arXiv:1411.1074, Sect. II.2 [src] |
 | Aubourg et al. Eq. 16 (N_eff = 3.046) | 0.021% for Σm_ν < 0.6 eV, ω_b and ω_cb within 3σ of Planck | arXiv:1411.1074 [src] |
 | Aubourg et al. Eq. 17 (free N_eff) | 0.119% for 0 < Σm_ν < 0.6 eV, 3 < N_eff < 5 | arXiv:1411.1074 [src] |
-| Response of r_d to neutrino mass at fixed ω_cb | −0.26% for 0.5 eV, −0.92% for 1.0 eV | arXiv:1411.1074 [src] |
+| Response of r_d to neutrino mass at fixed ω_cb | −0.26% for 0.5 eV, −0.92% for 1.0 eV | arXiv:1411.1074 [src: Sect. II.2] |
 | Response of r_d to N_eff | one extra species lowers r_d by about 3.2% | arXiv:1411.1074 [src] |
 | DESI DR2 Eq. 2, exponents | d ln r_d/d ln ω_bc = −0.23; d ln r_d/d ln ω_b = −0.13; d ln r_d/d ln N_eff = −0.1; pivot 147.05 Mpc at ω_b = 0.02236, ω_bc = 0.1432, N_eff = 3.04 | arXiv:2503.14738 [src] |
 | r_d from that formula with CMB ω_b, ω_bc | 0.2% | arXiv:2503.14738, Sect. 1 [src] |
@@ -48,7 +48,7 @@ Values of the ruler, to recognise which convention a number belongs to:
 
 | Quantity | Value | Data and model | Source |
 |---|---|---|---|
-| r_d | 147.49 ± 0.59 Mpc (0.4%) | Planck 2013, ΛCDM, Σm_ν = 0.06 eV, N_eff = 3.046 | arXiv:1411.1074 [src]; superseded |
+| r_d | 147.49 ± 0.59 Mpc (0.4%) | Planck 2013, ΛCDM, Σm_ν = 0.06 eV, N_eff = 3.046 | arXiv:1411.1074 [src: Sect. II.2]; superseded |
 | r_drag | 147.09 ± 0.26 Mpc | Planck 2018 TT,TE,EE+lowE+lensing, base ΛCDM | arXiv:1807.06209, Table 1 [src] |
 | r_* | 144.43 ± 0.26 Mpc | same | arXiv:1807.06209, Table 2 [src] |
 | z_* | 1089.92 ± 0.25 | same | arXiv:1807.06209, Table 2 [src] |

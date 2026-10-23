@@ -47,8 +47,9 @@ of research that way. So:
    left, open leads. If you find this file when you start, you are resuming:
    read it and the existing files, keep what is there, and continue from the
    first subtopic not marked done. Delete it when the skill is complete.
-4. **Budget, hard caps.** At most 90 research tool calls for the domain and
-   at most 120 rows in `sources.tsv`. Read abstracts for headline results;
+4. **Budget, hard caps.** At most 90 research tool calls for the domain. No cap on the rows of
+   `sources.tsv` (owner, 2026-10-23): it lists every paper the skill cites,
+   and only those. Read abstracts for headline results;
    read one body section, never a whole paper, for what section 2b asks.
    Count your calls in `_progress.md`. When the budget is spent, stop researching, finish the
    files with what you have and list the rest under "Not verified". The
@@ -121,7 +122,8 @@ work first and skipped the classic references. Three rules correct that.
    what an analysis did (statistic, scale cuts, model, priors, covariance,
    blinding) is read in its method section. Mark such a statement with the
    place read, inside the flag: `[src: Table 3]`, `[src: Sect. 5.2]`,
-   `[src: Eq. 12]`. A plain `[src]` means the abstract.
+   `[src: Eq. 12]`, `[src: abstract]`. Every number carries its place; a
+   plain `[src]` is no longer used (owner, 2026-10-23).
 
 `references/subtopics.tsv`, tab-separated, one header line:
 
@@ -154,9 +156,18 @@ references/subtopics.tsv
 - Cite as `arXiv:2503.14738` (old style: `arXiv:astro-ph/0501171`). For a
   paper not on arXiv use `doi:10.1093/mnras/227.1.1`. Put the first author and
   year next to it the first time: "Kaiser 1987, doi:…".
-- Flag every number: `[src]` read in the cited paper itself this session;
-  `[sec]` taken from a secondary source, which you name; `[der]` derived, with
-  the derivation and its assumption stated.
+- **Every number names its paper and the place it was read** (owner,
+  2026-10-23): an `arXiv:` or `doi:` identifier in the same table row, list
+  item or paragraph, and a place (`[src: Sect. 5.2]`, `[src: Table 3]`,
+  `[src: Eq. 12]`, `[src: abstract]`, a figure, an appendix or a footnote).
+  `[sec: <place>]` marks a number taken from a secondary source, which you
+  name with its own identifier and place.
+- **No derived numbers** (owner, 2026-10-23). Give only numbers a paper
+  states. Do not compute, convert, combine or rescale a value yourself, even
+  with a stated formula; if the paper does not give the number in the form
+  needed, quote what it gives. A derivation in words, without a new number,
+  may stay, flagged `[der]`. `tools/check_numbers.py` lists every number
+  without its paper and place, and every `[der]` that carries a number.
 - Forecasts are labelled **forecast** in the same sentence or table row.
 
 ### `references/sources.tsv`
@@ -175,7 +186,7 @@ Kaiser1987	doi:10.1093/mnras/227.1.1	Kaiser	1987	Clustering in real space and in
 first listed author, or the collaboration name if arXiv lists that).
 `title` is the exact arXiv title. `role` is one of `foundation`, `review`,
 `method`, `data`, `results`, `systematics`, `forecast`, `code`, `critique`.
-Aim for 70–110 sources, 120 at most: the papers an expert in the domain would expect to see, classic ones included.
+No cap on the number of sources (owner, 2026-10-23): every paper the skill cites, and only those, including the classic ones an expert in the domain would expect to see.
 
 ### The five reference files
 
@@ -217,8 +228,9 @@ description: Use when <triggering situations and keywords only: tasks, probes, s
 
 # <Domain title> — expert reference
 
-Snapshot <date of the run>. Numbers carry provenance flags ([src] / [sec] / [der]);
-re-verify against the cited paper before a number enters a manuscript.
+Snapshot <date of the run>. Every number names its paper and the place it was
+read ([src: <place>] / [sec: <place>]); no number is derived by an agent.
+Re-verify against the cited paper before a number enters a manuscript.
 
 ## File map
 

@@ -77,7 +77,7 @@ local density. Assembly-bias detections in clustering are in
   spirals (arXiv:2506.22794) [src]; independent confirmation of filament
   rotation was not looked for.
 - Forecast: at z ~ 2.5, IGM tomography with > 10,000 galaxies (PFS) reaches
-  Δ⟨cos θ⟩ ~ 0.03 (arXiv:1612.00067, **forecast**) [src].
+  Δ⟨cos θ⟩ ~ 0.03 (arXiv:1612.00067, **forecast**) [src: abstract].
 
 ## 4. Which finder, which web?
 <!-- key: which-finder-which-web -->
@@ -100,7 +100,7 @@ compared with T-web classes [src]) belong to `cosmo-machine-learning`.
 **Abundance at z > 5.** JWST candidates looked two to 300 times too numerous
 for ΛCDM (2.3σ to 4σ); Witten et al. (2026, arXiv:2605.28930) remove the
 tension by matching aperture definitions of halo mass and using forward
-tracking, and conclude that 64% of the candidates are proto-groups [src]. A
+tracking, and conclude that 64% of the candidates are proto-groups [src: abstract]. A
 claim of too many protoclusters should state the aperture of the mass estimate
 and the descendant-mass criterion.
 

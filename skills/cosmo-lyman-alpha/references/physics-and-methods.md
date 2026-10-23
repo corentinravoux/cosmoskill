@@ -76,7 +76,7 @@ The pipeline used from eBOSS DR16 to DESI is `picca`, public since arXiv:2007.08
 | Method | Principle | Performance | Citation | Flag |
 |---|---|---|---|---|
 | Mean-flux-regulated PCA | PCA fit redward of Lyα predicts the forest continuum shape; slope and amplitude corrected with an external mean flux | 8% rms at S/N ~ 2, < 5% at S/N > 5; extends usable P1D to ~2× larger scales | arXiv:1108.6080 | [src] |
-| LyCAN (CNN) | predicts 1040–1600 Å continuum from 1216–1600 Å, trained on COS-based and DESI mock spectra | median error 1.5% (DESI mocks), 4.1% (COS spectra); 40% better than PCA/NMF | arXiv:2405.06743 | [src] |
+| LyCAN (CNN) | predicts 1040–1600 Å continuum from 1216–1600 Å, trained on COS-based and DESI mock spectra | median error 1.5% (DESI mocks), 4.1% (COS spectra); 40% better than PCA/NMF | arXiv:2405.06743 | [src: abstract] |
 | Composite ratios | no per-object continuum; flux ratios of composites at different z | relative F̄(z), anchored at z < 2.5 | arXiv:1208.2584 | [src] |
 | Direct spline fitting | high-resolution spectra only | biased low by < 1%, 4%, 12% at z = 2, 3, 4; corrected with mocks | arXiv:0710.4522 | [src] |
 
@@ -223,8 +223,8 @@ is the natural statistic of forest geometry: Fourier along the well-sampled dire
 | Estimator | Idea | Status | Citation | Flag |
 |---|---|---|---|---|
 | P× quadratic estimator | block-diagonal global covariance; likelihood for P3D as a Taylor expansion around a fiducial | algorithm demonstrated | arXiv:1710.11036 | [src] |
-| Averaged 1D FFTs | small-scale P3D from products of 1D Fourier modes of neighbouring sightlines; validated on Nyx | eBOSS DR16 proof of principle at z = 2.2, 2.4 | arXiv:2310.09116 | [src] |
-| Pair-count spectral estimator | weight pixel pairs by exp(ik·r); tractable window matrix | eBOSS DR16, 0.02 ≤ k ≤ 0.35 h/Mpc | arXiv:2403.08241 | [src] |
+| Averaged 1D FFTs | small-scale P3D from products of 1D Fourier modes of neighbouring sightlines; validated on Nyx | eBOSS DR16 proof of principle at z = 2.2, 2.4 | arXiv:2310.09116 | [src: abstract] |
+| Pair-count spectral estimator | weight pixel pairs by exp(ik·r); tractable window matrix | eBOSS DR16, 0.02 ≤ k ≤ 0.35 h/Mpc | arXiv:2403.08241 | [src: abstract] |
 | Optimal 3D estimator | exact window deconvolution, marginalisation of continuum modes, conjugate gradient + P³M; flat sky | validated on mocks | arXiv:2503.15619 | [src] |
 | MAPLE | maximum a posteriori band powers and covariance, Wiener-filter based | method paper | arXiv:2403.17294 | [src] (title and snippet) |
 | Unified HMC reconstruction | P3D from ξ_3D, P1D and P× jointly | forecast on DESI-like mock vector | arXiv:2506.08198 | [src] |
@@ -260,7 +260,7 @@ Simulations use spatially uniform photo-ionisation and photo-heating rates from 
 | Emulator | Training suite | Inputs | Output and accuracy | Citation | Flag |
 |---|---|---|---|---|---|
 | LaCE (Gaussian process) | hydrodynamical suite | amplitude and slope of the linear power at small scales + IGM state, per redshift, 2 < z < 4 | P1D; sub-percent for a 0.3 eV neutrino cosmology not in the training set | arXiv:2011.15127 | [src] |
-| LaCE (neural network) | same family | same | sub-percent over k_∥ = 0.1–4 Mpc⁻¹, z = 2–4.5; percent level to 8 Mpc⁻¹ | arXiv:2305.19064 | [src] |
+| LaCE (neural network) | same family | same | sub-percent over k_∥ = 0.1–4 Mpc⁻¹, z = 2–4.5; percent level to 8 Mpc⁻¹ | arXiv:2305.19064 | [src: abstract] |
 | ForestFlow | 30 fixed-and-paired simulations | cosmology + IGM | b_δ, b_η and six non-linear P3D parameters by conditional normalising flows; 3% (P3D) and 1.5% (P1D) to k = 5 Mpc⁻¹, k_∥ = 4 Mpc⁻¹ | arXiv:2409.05682 | [src] |
 | PRIYA | 48 + 3 multi-fidelity runs | 9 parameters + 2 in post-processing | P1D and mean T; ≲ 1% interpolation error | arXiv:2306.05471, arXiv:2309.03943 | [src] |
 | Lyssa / lym1d | 18 Nyx runs | cosmology + thermal | P1D, percent-level agreement with a previous emulator | arXiv:2412.05372 | [src] |

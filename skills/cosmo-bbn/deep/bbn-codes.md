@@ -123,7 +123,7 @@ with S_{i,R} the stoichiometric coefficient of species i in reaction R
 reverse rates follow from detailed balance as
 ⟨σv⟩_rev = α_R T₉^{β_R} exp(γ_R/T₉) ⟨σv⟩_fwd, with α_R, β_R, γ_R set by
 masses and spins [src: Eq. 2.19]. The integration is split because the
-system is stiff:
+system is stiff (arXiv:1801.08023, Sect. V.1; arXiv:2307.07061, Sect. 2.3):
 
 | Stage | PRIMAT (arXiv:1801.08023, Sect. V.1) | PRyMordial (arXiv:2307.07061, Sect. 2.3) |
 |---|---|---|
@@ -241,9 +241,8 @@ Turner [src: Sects. V.3.3–V.3.4].
 <!-- key: neutrino-decoupling-thermal-approximation-or -->
 
 Implemented in PRIMAT with neutrino spectra from an external
-quantum-kinetic calculation (Froustey, Pitrou & Volpe 2020,
-arXiv:2008.01074) [src: Sect. 5, Tables 2–3], relative to instantaneous
-decoupling:
+quantum-kinetic calculation (Froustey, Pitrou & Volpe 2020), relative to
+instantaneous decoupling (arXiv:2008.01074) [src: Sect. 5, Tables 2–3]:
 
 | Implementation | δY_P (%) | δ(D/H) (%) | δ(⁷Li/H) (%) |
 |---|---|---|---|
@@ -279,8 +278,8 @@ deuterium abundances", the 51 extra reactions for ⁷Li (arXiv:2307.07061)
 
 With constants, masses, reverse-rate constants and the n + p → d + γ rate
 aligned, but each code's own other rates, at η = 6.14 × 10⁻¹⁰ and
-τ_n = 879.4 s (Meißner & Metsch 2022, arXiv:2208.12600)
-[src: Sect. IV, Table 1]:
+τ_n = 879.4 s (Meißner & Metsch 2022,
+arXiv:2208.12600) [src: Sect. IV, Table 1]:
 
 | Code | 10⁵ D/H | 10⁵ (³H + ³He)/H | Y_P | 10¹⁰ (⁷Li + ⁷Be)/H |
 |---|---|---|---|---|
@@ -410,8 +409,8 @@ preferred for sequential Monte Carlo (arXiv:2408.14538) [src: Sect. IV.2].
 - Pisanti et al. 2008, arXiv:0705.0290 (code): PArthENoPE equations in z,
   initial conditions, ΔN_eff and ξ inputs, differences from the Kawano
   code.
-- Gariazzo et al. 2022, arXiv:2103.05027 (code): PArthENoPE 3.0 rate
-  keywords and their effect on D/H.
+- Gariazzo et al. 2022, arXiv:2103.05027 (code): the third PArthENoPE
+  release, its rate keywords and their effect on D/H.
 - Arbey et al. 2020, arXiv:1806.11095 (code): AlterBBN error modes,
   integrator accuracy and timing.
 - Burns, Tait & Valli 2024, arXiv:2307.07061 (code): PRyMordial network

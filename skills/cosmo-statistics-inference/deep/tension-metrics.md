@@ -161,7 +161,7 @@ marginal mode summaries (arXiv:2503.19441) [src: Sects. 5.2, 7].
 **More than two data sets.** Leizerovich 2025 (arXiv:2512.06086) generalise the
 difference-in-means statistic `Q_DM` to several data sets at once, with the dominant tension
 directions in the shared space; on that basis the reported DESI–Planck increase from 1.9σ (DR1)
-to 2.3σ (DR2) becomes 1.18σ_eff to 1.45σ_eff [src].
+to 2.3σ (DR2) becomes 1.18σ_eff to 1.45σ_eff [src: abstract].
 
 ### Step 5. Diagnose what the tension is
 <!-- key: step-5-diagnose-what-the-tension-is -->

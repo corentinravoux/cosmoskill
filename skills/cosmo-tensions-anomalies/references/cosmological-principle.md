@@ -59,12 +59,12 @@ fiducial cosmology (Lopes-Dias et al. 2026, arXiv:2606.07854) `[src]`.
 
 | Sample | Redshift | Result as stated | Citation |
 |---|---|---|---|
-| SDSS LRGs | z ~ 0.3 (0.2–0.35) | N(R) ∝ R³ above R ~ 70 h⁻¹ Mpc; rms density variation 7% among ten ~2 × 10⁷ h⁻³ Mpc³ regions, consistent with biased ΛCDM `[src]` | Hogg et al. 2004, arXiv:astro-ph/0411197 |
+| SDSS LRGs | z ~ 0.3 (0.2–0.35) | N(R) ∝ R³ above R ~ 70 h⁻¹ Mpc; rms density variation 7% among ten ~2 × 10⁷ h⁻³ Mpc³ regions, consistent with biased ΛCDM `[src: abstract]` | Hogg et al. 2004, arXiv:astro-ph/0411197 |
 | WiggleZ, > 200,000 blue galaxies, ~1 (h⁻¹ Gpc)³ | 0.2–0.8 | R_H = 71 ± 8, 70 ± 5, 81 ± 5, 75 ± 4 h⁻¹ Mpc at z ~ 0.2, 0.4, 0.6, 0.8; a fractal with D₂ < 2.97 excluded on ~80–300 h⁻¹ Mpc at 99.99% `[src]` | arXiv:1205.6812 |
 | BOSS DR12 CMASS, 3 h⁻³ Gpc³ | 0.43–0.7 | R_H = 63.3 ± 0.7 h⁻¹ Mpc against a ΛCDM prediction of 62.0; D₂ compatible with 3 above 300 h⁻¹ Mpc in all bins `[src]` | arXiv:1702.02159 |
-| SDSS DR7 quasars | z ~ 1.3 | homogeneous above at most 130 h⁻¹ Mpc `[src]` | arXiv:1306.1700 |
-| SDSS-IV DR16 quasars | 2.2–3.2 | R_H decreasing with redshift, in good agreement with ΛCDM `[src]` | arXiv:2010.06635 |
-| DESI DR1 LRGs (angular θ_H) | 0.4–1.1 | θ_H identified in all shells, consistent with ΛCDM mocks, with eBOSS DR16 and between the two Galactic caps `[src]` | arXiv:2606.07854 |
+| SDSS DR7 quasars | z ~ 1.3 | homogeneous above at most 130 h⁻¹ Mpc `[src: abstract]` | arXiv:1306.1700 |
+| SDSS-IV DR16 quasars | 2.2–3.2 | R_H decreasing with redshift, in good agreement with ΛCDM `[src: abstract]` | arXiv:2010.06635 |
+| DESI DR1 LRGs (angular θ_H) | 0.4–1.1 | θ_H identified in all shells, consistent with ΛCDM mocks, with eBOSS DR16 and between the two Galactic caps `[src: abstract]` | arXiv:2606.07854 |
 
 ### 2.3 How to read these numbers
 <!-- key: how-to-read-these-numbers -->
@@ -134,7 +134,7 @@ arXiv:0807.1443) `[src]`. The models failed on several independent tests:
 - *BAO.* Adding BAO gives Ω_in > 0.2 against Ω_in < 0.15 from SNe, 3σ
   apart, and constrained adiabatic profiles are "ruled out at high
   confidence" by purely geometric probes (Zumalacárregui et al. 2012,
-  arXiv:1201.2790) `[src]`.
+  arXiv:1201.2790) `[src: abstract]`.
 
 **Λ LTB (a void plus Λ).** Data now constrain small departures rather than
 replacements of dark energy. ΛLTB models confronted with many data sets do
@@ -182,7 +182,7 @@ homogeneity (Seifert et al. 2024, arXiv:2412.15143) `[src]`.
 
 | Analysis | Data | Result as stated | Citation |
 |---|---|---|---|
-| Dam et al. 2017 | JLA SNe | likelihood statistically indistinguishable from flat ΛCDM; apparent q0 = −0.043 (+0.004/−0.000) `[src]` | arXiv:1706.07236 |
+| Dam et al. 2017 | JLA SNe | likelihood statistically indistinguishable from flat ΛCDM; apparent q0 = −0.043 (+0.004/−0.000) `[src: abstract]` | arXiv:1706.07236 |
 | Lane et al. 2023 | Pantheon+, cosmology-independent covariance | "for the first time" evidence that timescape may fit better than ΛCDM `[src]` | arXiv:2311.01438 |
 | Seifert et al. 2024 | Pantheon+, Tripp standardisation only | ln B > 5 for timescape over ΛCDM on the full sample; ln B > 1 for z > 0.075 `[src]` | arXiv:2412.15143 |
 | DES SN analysis, as quoted by CosmoVerse | DES SNe, z > 0.033 | ln B = 1.7 for timescape; BAO by simple geometric scaling strongly favour ΛCDM `[sec: arXiv:2504.01669, Sect. 4.6.3.c]` | not read |
@@ -228,44 +228,44 @@ abstracts):
 
 - Bulk flow: the Haslbauer void model, not fitted to bulk flows, agrees
   "qualitatively" with the rising CF4 bulk-flow curve, which is in 4.8σ
-  tension with ΛCDM at 200 h⁻¹ Mpc (Mazurenko et al. 2023, arXiv:2311.17988).
+  tension with ΛCDM at 200 h⁻¹ Mpc (Mazurenko et al. 2023, arXiv:2311.17988). [src: abstract]
 - H0(z): Gaussian and exponential profiles reasonably match binned H0(z)
   declining toward Planck; Maxwell–Boltzmann less well (Mazurenko et al.
   2024, arXiv:2412.12245).
 - BAO: 42 D_V measurements give χ² = 75.7 without a void and 47.3–51.2
   with void models, 3.3σ → 1.1–1.4σ, assuming independent errors; the
   differences are smaller for angular and radial BAO (Banik & Kalaitzidis
-  2025, arXiv:2501.17934).
+  2025, arXiv:2501.17934). [src: abstract]
 - Gravitational redshift at z ≳ 0.3: BBN + CMB + BAO + chronometers give
   z₀ = −0.4 (+0.8/−0.9)% (−0.1 ± 0.7% from z > 0.29), preferring 0, yet the
   void value 0.84% fits with Δχ² < 2, so higher-z data cannot rule the void
-  out (Banik, Nájera & Desmond 2026, arXiv:2606.02712).
+  out (Banik, Nájera & Desmond 2026, arXiv:2606.02712). [src: abstract]
 
 Independent support for an underdensity, smaller in effect:
 
 - 2MRS and 2M++ counts to K < 11.5 over ~90% of the sky: ≈ 21–22%
   underdense at z < 0.075, implying a local H0 ≈ 3% high and a 3σ tension
-  with ΛCDM (Wong et al. 2021, Shanks group, arXiv:2107.08505) `[src]`.
+  with ΛCDM (Wong et al. 2021, Shanks group, arXiv:2107.08505) `[src: abstract]`.
 - CLASSIX X-ray clusters: matter underdensity −0.3 ± 0.15 within ~100 Mpc,
   local H0 higher by 5.5 (+2.1/−2.8)%, diluted when distance indicators
   outside it are used; ΛCDM probability 1.3–3.7σ (Böhringer et al. 2019,
   arXiv:1907.12402) `[src]`.
 - ΛLTB with the KBC profile: consistent with 217 SNe at 0.0233 < z < 0.15
   and with linear kSZ limits (SPT, ACT); the H0 tension falls from 3.4σ to
-  2.75σ (Hoscheit & Barger 2018, arXiv:1801.01890) `[src]`.
+  2.75σ (Hoscheit & Barger 2018, arXiv:1801.01890) `[src: abstract]`.
 
 **As the critiques state it.**
 
 - The SN Ia Hubble diagram (1295 SNe) is inconsistent at 4–5σ with
   |δ| > 20% and bounds δ < 27% on scales > 69 h⁻¹ Mpc at 5σ; the empirical
   σ_H0 = 0.60% matches the 0.42% cosmic variance expected (Kenworthy et al.
-  2019, arXiv:1901.08681) `[src]`.
+  2019, arXiv:1901.08681) `[src: abstract]`.
 - Field-level fits of void models to Cosmicflows-4 Tully–Fisher distances
   prefer a void smaller than 70 Mpc, under 10% of the KBC size; the local
   H0 is 72.1 (+0.9/−0.8), 70.4 ± 0.4 or 70.2 (+0.5/−0.4) for exponential,
   Gaussian or Maxwell–Boltzmann profiles, the first disfavoured by the
   evidence, and the preferred models disagree with the CF4 bulk flow
-  (Stiskalek et al. 2025, arXiv:2506.10518) `[src]`.
+  (Stiskalek et al. 2025, arXiv:2506.10518) `[src: abstract]`.
 - The Manticore-Local BORG reconstruction of 2M++ finds "no evidence for a
   large local underdensity" (McAlpine et al. 2025, arXiv:2505.10682)
   `[src]`.
@@ -274,7 +274,7 @@ Independent support for an underdensity, smaller in effect:
   from other groups.
 - N-body sample variance in the local H0 is 0.31 km/s/Mpc; a void solving
   the tension needs δ ≃ −0.8 within ~150 Mpc, "very unlikely" in ΛCDM and
-  against observations (Wu & Huterer 2017, arXiv:1706.09723) `[src]`.
+  against observations (Wu & Huterer 2017, arXiv:1706.09723) `[src: abstract]`.
 - ΛLTB fits to Pantheon over all profile parameters: the tension "cannot
   be saved by a local void alone" (Cai et al. 2020, arXiv:2012.08292)
   `[src]`.
@@ -282,12 +282,12 @@ Independent support for an underdensity, smaller in effect:
   drop over ~300 Mpc, matching KBC, but the full sample is compatible with
   homogeneity ("a cautionary tale" on binned SNe), and M_B is unchanged
   against ΛCDM, so the void "does not resolve the tension" (Castello et al.
-  2021, arXiv:2110.04226) `[src]`.
+  2021, arXiv:2110.04226) `[src: abstract]`.
 - Without assuming the Copernican principle, ΛLTB with CMB, BAO, SNe, local
   H0, chronometers, y-distortion and kSZ: the void is favoured only when
   SNe are restricted to 0.023 < z < 0.15; with the full SN sample the
   tension is not solved, and the best fit is a shallow void, δ_L ≈ −0.04,
-  r_out ≈ 300 Mpc (Camarena et al. 2022, arXiv:2205.05422) `[src]`.
+  r_out ≈ 300 Mpc (Camarena et al. 2022, arXiv:2205.05422) `[src: abstract]`.
 
 **The proponents' reply to the SN test.** Kenworthy et al. assumed
 Newtonian void dynamics and fixed q̄₀ to the ΛCDM 0.55; a large void raises

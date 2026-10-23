@@ -46,7 +46,7 @@ a band power C_b or D_b is a weighted average of C_ℓ over a bin b;
   Sect. 3.2.1].
 - Plik coadds TE and ET into one "TE" per frequency pair, with weights
   within 20% of 0.5. Stated reason: an unbinned TE+ET covariance would be
-  about 8 GB [src: Sect. 3.2.1].
+  about 8 GB (arXiv:1907.12875) [src: Sect. 3.2.1].
 - Plik keeps the TE cross-frequency spectra separate. A single coadded TE
   (the CamSpec choice) would prevent fitting foreground and nuisance
   parameters together with cosmology [src: Sect. 3.2.1].
@@ -56,15 +56,17 @@ a band power C_b or D_b is a weighted average of C_ℓ over a bin b;
 
 - **Plik.** Masks are built per frequency by thresholding high-frequency
   HFI maps: T66, T57, T47 in temperature and P70, P50, P41 in polarisation
-  at 100, 143, 217 GHz (the number is the sky percentage kept).
+  at 100, 143, 217 GHz (the number is the sky percentage kept) (arXiv:1907.12875)
+  [src: Sect. 3.2.2].
   - Galactic masks are apodised with a 4.71° FWHM Gaussian, point-source
-    and CO masks with 30′; the large apodisation costs about 10% of f_sky.
+    and CO masks with 30′; the large apodisation costs about 10% of f_sky
+    (arXiv:1907.12875) [src: Sect. 3.2.2].
   - Stated reason for apodising: to reduce correlations between C_ℓ
     estimates at different ℓ [src: arXiv:1907.12875, Sect. 3.2.2].
   - Point sources are not masked in polarisation. Masking them changes
     EE 100×100 by less than 3 × 10⁻⁶ μK² in C_ℓ and moves n_s and A_s by
     about 0.1σ with EE alone, and has no detected effect on the joint
-    likelihood [src: Sect. 3.2.2].
+    likelihood (arXiv:1907.12875) [src: Sect. 3.2.2].
 - **CamSpec PR4.** One diffuse mask keeping 80% of the sky before
   apodisation ("mask80") at all frequencies in T and P. The point-source
   mask is per frequency in T, and the 143 GHz mask is used for all
@@ -73,12 +75,13 @@ a band power C_b or D_b is a weighted average of C_ℓ over a bin b;
   100, 143, 217 GHz, leaving effective sky fractions of 75%, 66% and 52%
   after the other masks [src: arXiv:2309.10034, Sect. 3.2.1].
   - Masks are built from smoothed 353 GHz maps; Galactic masks are
-    apodised with a 1.0° taper, CO and source masks with 15′ [src].
+    apodised with a 1.0° taper, CO and source masks with 15′
+    (arXiv:2309.10034) [src: Sect. 3.2.1].
   - The masks are about 5% larger than in the previous HiLLiPoP. Stated
     reason: Planck is sample-variance limited to ℓ ≃ 1800 in TT and
-    ℓ ≃ 1100 in TE [src].
+    ℓ ≃ 1100 in TE (arXiv:2309.10034) [src: Sect. 3.2.1].
   - One point-source mask for all three channels, with higher flux cuts
-    (about 340, 250, 200 mJy). Stated reason: it preserves Galactic
+    (about 340, 250, 200 mJy; arXiv:2309.10034). Stated reason: it preserves Galactic
     compact structures, so the dust spectra stay power laws; the PR3
     source masks remove cirrus and create a knee near ℓ = 200 [src:
     Sects. 3.2.1, 5.2].
@@ -89,14 +92,15 @@ a band power C_b or D_b is a weighted average of C_ℓ over a bin b;
   pixelisation [src: arXiv:2503.14452, Sect. III.3].
   - The sky area (25% after Galactic and > 15 mJy source cuts at f150) is
     large enough to invert the unbinned mode-coupling matrix exactly
-    [src].
-  - Spectra are rebinned with Δℓ_min = 50 [src].
+    (arXiv:2503.14452) [src: Sect. III.3].
+  - Spectra are rebinned with Δℓ_min = 50 (arXiv:2503.14452) [src:
+    Sect. III.3].
 - **SPT-3G D1.** Polspice on the curved sky with a border-only mask. More
   than 2000 sources and clusters are filled by Gaussian constrained
   realisations (inpainting, Eq. 20) instead of being masked, with the
   covariance increased to account for the simulated signal [src:
   arXiv:2506.20707, Sects. IV.3–IV.4].
-  - Stated reason: in simulations, source holes raise the variance at
+  - Stated reason (arXiv:2506.20707): in simulations, source holes raise the variance at
     ℓ = 3000 by 50%, through correlations between large and small scales;
     inpainting raises it much less [src: Sect. IV.3, Fig. 8].
   - The paper states this is the first use of inpainting in a primary-CMB
@@ -105,8 +109,8 @@ a band power C_b or D_b is a weighted average of C_ℓ over a bin b;
 ### Step 3. Correct for filtering
 <!-- key: step-3-correct-for-filtering -->
 
-- ACT removes ground pickup by cutting Fourier modes |ℓ_x| < 90 and
-  |ℓ_y| < 50. It measures the bias as a matrix F_ℓ from 800 noise-free
+- ACT removes ground pickup by cutting Fourier modes with |ℓ_x| < 90
+  and |ℓ_y| < 50. It measures the bias as a matrix F_ℓ from 800 noise-free
   simulations per array-band, and inverts it [src: arXiv:2503.14452,
   Sect. III.3.1].
   - The ℓ–ℓ′ coupling of the filter is neglected, because its correlation
@@ -134,13 +138,13 @@ Plik (arXiv:1907.12875, Table 13) [src: Sect. 3.2.4]:
 
 Stated reasons for the Plik cuts [src: Sect. 3.2.4]:
 
-- 100×100 TT stops at 1197, kept from 2015 for comparison with the
+- 100×100 TT stops at 1197 (arXiv:1907.12875, Sect. 3.2.4), kept from 2015 for comparison with the
   detector-set likelihood, and because odd–even and half-mission null
   tests show signs of failure at similar scales.
 - 100×143 and 100×217 TT are left out: little extra S/N, more foreground
-  complexity.
+  complexity (arXiv:1907.12875, Sect. 3.2.4).
 - Polarisation: 100 GHz spectra stop at 1000 (noise); 217 GHz spectra
-  start at 500 (dust modelling).
+  start at 500 (dust modelling) (arXiv:1907.12875, Sect. 3.2.4).
 
 HiLLiPoP V4.2 (arXiv:2309.10034, Table 1) uses ℓ = 30–2500 in T and
 30–2000 in P, with per-pair limits: TT 100×100 [30, 1500], 143×143
@@ -184,14 +188,14 @@ arXiv:2503.14452, Sect. VI.1.1]:
   D_ℓ^{X_iY_j,radio} = a_s^XY [ℓ(ℓ+1)/ℓ₀(ℓ₀+1)] [g(ν_i)g(ν_j)/g²(ν₀)]
   (ν_iν_j/ν₀²)^{β_s+2} (Eq. 18). Here g(ν) converts flux to thermodynamic
   units, and TE amplitudes may be negative;
-- Poisson CIB, a modified blackbody μ(ν; β_p, T_d) ≡ ν^β B_ν(T_d) g(ν) with
+- Poisson CIB (arXiv:2503.14452), a modified blackbody μ(ν; β_p, T_d) ≡ ν^β B_ν(T_d) g(ν) with
   T_d = 9.6 K (Eq. 19); clustered CIB, Planck-measured to ℓ = 3000 and then
   ℓ^0.8 (Eq. 20);
 - tSZ: a_tSZ D_ℓ^tSZ (ℓ/ℓ₀)^{α_tSZ} f(ν_i)f(ν_j)/f²(ν₀) (Eq. 21), with
   f(ν) = x coth(x/2) − 4 and x = hν/k_B T_CMB;
 - kSZ: a template rescaled by a_kSZ (Eq. 22);
 - tSZ × CIB: amplitude −ξ√(a_c a_tSZ) (Eq. 23);
-- Galactic dust: a power law in ℓ with α^TT = −0.6, α^{TE/EE} = −0.4,
+- Galactic dust (arXiv:2503.14452): a power law in ℓ with α^TT = −0.6, α^{TE/EE} = −0.4,
   T_d^eff = 19.6 K and β_d = 1.5, all fixed (Eq. 24).
 
 The tilt α_tSZ is new to this analysis. Stated reason: the nominal
@@ -215,17 +219,18 @@ galaxies [src: arXiv:2309.10034, Sect. 5.2].
 
 **(b) Spectrum-level cleaning, then residual power laws** (CamSpec). Each
 spectrum is cleaned with a template frequency ν_T, 545 GHz for TT and
-353 GHz for TE and EE:
+353 GHz for TE and EE (arXiv:2205.10869) [src: Sect. 3.3]:
 
 C^{X_ν1Y_ν2, clean} = (1+α^{X_ν1})(1+α^{Y_ν2}) C^{X_ν1Y_ν2}
 − (1+α^{X_ν1}) α^{Y_ν2} C^{X_ν1Y_νT} − (1+α^{Y_ν2}) α^{X_ν1} C^{Y_ν2X_νT}
 + α^{X_ν1} α^{Y_ν2} C^{X_νTY_νT} (arXiv:2205.10869, Eq. 1).
 
-- α′ minimises the cleaned auto-spectrum over ℓ = 100–500 (TT, where dust
+- α′ (arXiv:2205.10869) minimises the cleaned auto-spectrum over ℓ = 100–500 (TT, where dust
   dominates over the CIB) or 30–300 (polarisation). The coefficient used
   is α = α′/(1 + α′), because the minimisation is biased [src: Sect. 3.3].
 - In polarisation, above ℓ = 150 a power-law fit to the dust is
-  subtracted instead, to limit 353 GHz noise [src].
+  subtracted instead, to limit 353 GHz noise (arXiv:2205.10869) [src:
+  Sect. 3.3].
 - Stated payoff: all TE and EE spectra can be coadded, with no polarised
   foreground nuisance parameters. TT keeps a power-law residual per
   frequency pair [src].
@@ -237,7 +242,8 @@ The multi-frequency model is written as C_b^th = A C_b^CMB + C_b^sec(θ) +
 C_b^sys (arXiv:1907.12875, Eq. 51) [src: Sect. 3.5.2]. Here:
 
 - A is a 0/1 mapping matrix, the same CMB at all frequencies;
-- C_b^sec are the foregrounds, with 20 nuisance parameters θ;
+- C_b^sec are the foregrounds, with 20 nuisance parameters θ (arXiv:1907.12875,
+  Sect. 3.5.2);
 - C_b^sys holds fixed residual leakage, sub-pixel and correlated-noise
   terms.
 
@@ -299,7 +305,7 @@ compression [src: arXiv:2506.20707, Sect. V.4].
 - CamSpec-NPIPE is more constraining in TE and EE at all scales and in TT
   above ℓ = 1500 [src: arXiv:2510.09430, Sect. III.2.2].
 - Plik-Legacy is more constraining in TT below ℓ = 1200, because it
-  includes 100×100 [src].
+  includes 100×100 (arXiv:2510.09430) [src: Sect. III.2.2].
 - Jense et al. attribute the gain to more data in NPIPE and to
   pre-cleaning, which keeps more sky [src].
 
@@ -321,9 +327,9 @@ reasons [src: arXiv:2503.14452, Sect. VI.3]:
 - the sky overlap with ACT is substantial;
 - ACT has similar or better power at the discarded multipoles;
 - the TT correlation over 600 < ℓ < 1000 is neglected because Planck's
-  errors are smaller there;
+  errors are smaller there (arXiv:2503.14452, Sect. VI.3);
 - PR3 rather than NPIPE, partly because ACT agrees less well with the
-  NPIPE 100 GHz ET spectra;
+  NPIPE 100 GHz ET spectra (arXiv:2503.14452, Sect. VI.3);
 - keeping all of Planck with the cross-covariance was estimated to gain
   less than 5% on σ(N_eff).
 
@@ -382,7 +388,8 @@ on the full range avoids this [src: arXiv:2510.09430, abstract].
   corrections improve χ² by only about 9 [src]. Test: report binned and
   coadded χ² separately.
 - **Noise correlations between detector sets.** They bias the
-  cross-spectra; this drove Plik to half-mission splits [src: Sect. 3.2.1].
+  cross-spectra; this drove Plik to half-mission splits (arXiv:1907.12875) [src:
+  Sect. 3.2.1].
   Test: odd–even and half-mission null tests by spectrum. Such tests set
   the 100×100 TT cut [src: Sect. 3.2.4].
 - **A spurious dust knee near ℓ = 200,** created by source masks that
@@ -392,7 +399,7 @@ on the full range avoids this [src: arXiv:2510.09430, abstract].
   arXiv:2506.20707, Sect. IV.3]. Test: simulated covariance with and
   without the source mask.
 - **Filter transfer function poorly sampled at low ℓ.** It is the reason
-  for SPT's ℓ_min = 400 [src: Sect. IV.4]. Test: the Monte Carlo
+  for SPT's ℓ_min = 400 (arXiv:2506.20707) [src: Sect. IV.4]. Test: the Monte Carlo
   precision of the transfer function.
 - **Lite likelihood used outside its range.** Truncating after
   marginalisation, or using a lite likelihood for single spectra, can
@@ -414,13 +421,13 @@ on the full range avoids this [src: arXiv:2510.09430, abstract].
 - Foundation: Dunkley et al. 2013, arXiv:1301.0776: the multi-frequency
   foreground model and the first CMB-only compression.
 - Method: Efstathiou & Gratton 2019, arXiv:1910.00483: the CamSpec
-  pipeline, 80% sky, temperature cleaning.
+  pipeline, 80% sky, temperature cleaning [src: abstract].
 - Application: Planck Collaboration 2019, arXiv:1907.12875, Sect. 3: Plik
   splits, masks, cuts, foregrounds, Plik_lite, goodness of fit.
 - Application: Rosenberg et al. 2022, arXiv:2205.10869: CamSpec on NPIPE,
   the dust-cleaning equation.
 - Application: Tristram et al. 2023, arXiv:2309.10034: HiLLiPoP masks,
-  ℓ-by-ℓ likelihood, dust template from 353 GHz.
+  ℓ-by-ℓ likelihood, dust template from 353 GHz. [src: Sect. 1]
 - Application: Louis et al. 2025, arXiv:2503.14452: ACT DR6 pseudo-C_ℓ
   pipeline, foreground equations, ACT-lite, Planck truncation.
 - Application: Camphuis et al. 2025, arXiv:2506.20707: inpainting,

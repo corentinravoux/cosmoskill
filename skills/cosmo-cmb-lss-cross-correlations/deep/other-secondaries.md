@@ -324,7 +324,7 @@ channels (arXiv:2607.16071, Sect. 6) [src].
 - Method: Coulton 2024, arXiv:2401.13033 — sign estimator, lensing-safe
   filters, foreground and lensing validation, null significance.
 - Application: Hotinli 2026, arXiv:2605.18938 — moving-lens estimator,
-  symmetry arguments, empirical covariance, 25 null tests, CIB check.
+  symmetry arguments, empirical covariance, 25 null tests per sample [src: Table 2 and its summary paragraph], CIB check.
 - Critique: Hadzhiyska 2025, arXiv:2506.17379 — lensing dominates a stacked
   screening signal; kSZ–screening comparison.
 - Application: Kramer 2026, arXiv:2608.27458 — screening power spectrum,

@@ -326,7 +326,7 @@ The Bayes factor depends on the prior range of the model parameters
   levels of assumption).
 - Method: Martin et al. 2014, arXiv:1312.3529 — effective likelihood in
   slow-roll space, reheating parameter R, prior rules, evidences for 193
-  models.
+  models. [src: abstract]
 - Code: Martin, Ringeval and Vennin 2014, arXiv:1303.3787 — the ASPIC
   functionals ε_n(θ_reh, θ_inf) (L2).
 - Application: ACT DR6 extended models, arXiv:2503.14454 — r–n_s plane

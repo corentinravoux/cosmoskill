@@ -12,7 +12,7 @@ physics); SO science goals, Sect. IV.
 
 Already in L2, not repeated here: the N_eff and Σm_ν tables by data set
 and the ACT ΔN_eff limits (`results.md#light-relics-and-neutrino-mass`);
-the definition of N_eff, the 3.044 versus 3.046 convention and the
+the definition of N_eff, the convention for its standard value and the
 foundation papers on damping and phase (`physics-and-methods.md#extension-parameters-as-actually-defined`);
 the ACT-low versus SPT-standard question and the FIRAS argument
 (`open-questions.md#neff-act-low-spt-at-the-standard-value`); the
@@ -76,6 +76,8 @@ Sect. VII.2.4].
 ### Step 2. Choose the parameter set
 <!-- key: step-2-choose-the-parameter-set -->
 
+Standard value N_eff = 3.044 as used in arXiv:2503.14454 (Sect. VI.1.1) and arXiv:2506.20707 (Sect. VII.2.4):
+
 | Model | What varies | What it isolates | Analysis |
 |---|---|---|---|
 | ΛCDM + N_eff, BBN-consistent Y_P | N_eff; Y_P from a BBN table as a function of (Ω_b h², N_eff) | expansion rate before recombination plus phase | ACT DR6, SPT-3G D1, Planck 2018 |
@@ -130,7 +132,7 @@ P-ACT) [src: Eq. 32].
 Montefalcone, Wallisch and Freese build two templates [src:
 arXiv:2501.13788, Sects. 2.2–2.3]:
 
-- Spectrum-based. The multipole shift relative to N_eff = 3.044 is
+- Spectrum-based (arXiv:2501.13788). The multipole shift relative to N_eff = 3.044 is
   δℓ(N_eff) = A(N_eff) f_ℓ (Eq. 2.4), with
   A(N_eff) = [ε(N_eff) − ε(3.044)]/[ε(1) − ε(3.044)] (Eq. 2.5) and
   f_ℓ = ℓ_∞/[1 + (ℓ/ℓ_⋆)^ξ] (Eq. 2.6), fitted to peak and trough shifts of
@@ -146,7 +148,7 @@ arXiv:2501.13788, Sects. 2.2–2.3]:
 - Perturbation-based. The phase is applied to the photon-baryon sources
   inside the line-of-sight integral, k → k + Δφ/r_s in Θ₀ + Ψ, Π, θ_b/k and
   θ_b′/k² (Eq. 2.19), with the ISW source left unshifted [src: Sect. 2.3.2].
-- Validation on Planck-like mocks: three massless neutrinos, three with
+- Validation on Planck-like mocks (arXiv:2501.13788): three massless neutrinos, three with
   Σm_ν = 0.06 eV, and two free-streaming plus one fluid species are all
   recovered, and mass does not bias the phase [src: Sect. 2.4].
 
@@ -174,7 +176,7 @@ degeneracy that BAO crosses [src: Sects. VII.2.4, VII.4.2, footnote 47].
 <!-- key: bbn-consistent-yp-or-free-yp -->
 
 - BBN-consistent: tightest N_eff (ACT 2.60 (+0.21/−0.29); P-ACT
-  2.73 ± 0.14), at the price of assuming standard BBN between z ~ 10⁹ and
+  2.73 ± 0.14; arXiv:2503.14454) [src: Sect. VI.1.1, Eq. 30], at the price of assuming standard BBN between z ~ 10⁹ and
   recombination.
 - Free Y_P: N_eff and Y_P anti-correlate at fixed θ_s, because both set
   the damping [src: arXiv:2501.13788, Sect. 2.1; arXiv:2503.14454,
@@ -198,7 +200,7 @@ degeneracy that BAO crosses [src: Sects. VII.2.4, VII.4.2, footnote 47].
   PArthENoPE and PRIMAT consistent within 0.1σ [src: arXiv:1807.06209,
   Sect. 2.1]; ACT finds identical parameters across its three
   configurations [src: arXiv:2503.14454, Sect. VI.2].
-- For predicted abundances it matters. ACT, P-ACT-LB, ΛCDM: predicted
+- For predicted abundances it matters. ACT (arXiv:2503.14454), P-ACT-LB, ΛCDM: predicted
   Y_p 0.24727, 0.24707, 0.24691 for PRIMAT_2021, PRIMAT_2024 (τ_n = 878.4 s),
   PRyMordial, the first shift from τ_n and the second from reaction rates;
   predicted D/H × 10⁵ = 2.415, 2.413 and 2.480, with PRIMAT 2–3σ from the
@@ -264,7 +266,8 @@ damping tail, and only second about relics.
 <!-- key: reading-list -->
 
 - Foundation: Hou et al. 2011, arXiv:1104.2333 — why N_eff is a damping
-  measurement: θ_d/θ_s ∝ H^{0.5}, the role of Y_P and of the baryon
+  measurement: the expansion rate sets the ratio of the diffusion scale to
+  the sound horizon [src: abstract]; the role of Y_P and of the baryon
   fraction.
 - Foundation: Baumann et al. 2015, arXiv:1508.06342 — the phase shift as
   a robust signature of free streaming.

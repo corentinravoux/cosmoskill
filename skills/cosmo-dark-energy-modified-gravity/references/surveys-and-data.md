@@ -18,7 +18,7 @@ here.
 |---|---|---|---|
 | BAO (galaxies, quasars, Lyα) | `D_M/r_d`, `D_H/r_d`, `D_V/r_d` over `0.1 < z < 4.2` | shape of the distance–redshift relation; alone it defines only a degeneracy direction in `w0`–`wa` | [src] arXiv:2503.14738 |
 | CMB, compressed | `theta_*`, `omega_b`, `omega_bc` | anchors `r_d` and `Omega_m`; "most of the information that the CMB provides on w(z)" | [src] arXiv:2503.14738 |
-| CMB lensing and full spectra | lensing amplitude, ISW | changes `Delta chi2` (−9.7 → −12.5) without moving the posterior | [src] arXiv:2503.14738 |
+| CMB lensing and full spectra | lensing amplitude, ISW | changes `Delta chi2` (−9.7 → −12.5) without moving the posterior | [src: Sect. IX] arXiv:2503.14738 |
 | Type Ia supernovae, uncalibrated | relative `d_L(z)`, densest at `z < 1` | measure `w0` "well independently of wa"; break the BAO degeneracy | [src] arXiv:2503.14738 |
 | 3×2pt (cosmic shear + clustering + galaxy–galaxy lensing) | `Omega_m`, `S8` | can replace the CMB as the `Omega_m` anchor, giving a low-redshift-only test | [src] arXiv:2503.14738, arXiv:2605.27221 |
 | Full-shape clustering, RSD | `f sigma8`, shape of `P(k)`, AP | growth information; needed for `mu` | [src] arXiv:2411.12026 |
@@ -69,10 +69,10 @@ No DESI DR2 full-shape cosmology exists at the snapshot (sibling
 
 | Sample | Content | Role | Source | Flag |
 |---|---|---|---|---|
-| DES-Dovekie | ~1600 likely SNe Ia from DES + ~200 low-redshift SNe; recalibrated, SALT3 retrained, colour-law fix | replaces DES-SN5YR | Popovic et al. 2025, arXiv:2511.07517 | [src] |
+| DES-Dovekie | ~1600 likely SNe Ia from DES + ~200 low-redshift SNe; recalibrated, SALT3 retrained, colour-law fix | replaces DES-SN5YR | Popovic et al. 2025, arXiv:2511.07517 | [src: abstract] |
 | Union3.1 | ~2000 SNe; host properties re-derived from DESI Legacy Imaging Surveys photometry with Prospector; UNITY analysis | replaces Union3 | Hoyt et al. 2026, arXiv:2601.19424 | [src] |
-| Pantheon+ with corrected host masses | low-redshift host masses revised | changes 2.8σ to 3.2σ | arXiv:2601.19424 | [src] |
-| Unite | 2884 likely SNe Ia; Pantheon+ ∪ DES-SN5YR with consistent modelling, selection and bias corrections; host masses redetermined for over 98% | the single combined sample | Camilleri et al. 2026, arXiv:2609.05053 | [src] |
+| Pantheon+ with corrected host masses | low-redshift host masses revised | changes 2.8σ to 3.2σ | arXiv:2601.19424 | [src: abstract] |
+| Unite | 2884 likely SNe Ia; Pantheon+ ∪ DES-SN5YR with consistent modelling, selection and bias corrections; host masses redetermined for over 98% | the single combined sample | Camilleri et al. 2026, arXiv:2609.05053 | [src: abstract] |
 
 All four share most of the `z < 0.1` anchor. The anchor, its surveys and its
 planned replacements are documented in `cosmo-supernovae`.
@@ -97,7 +97,7 @@ Combination names (P-ACT, CMB-SPA), their differences and the τ input are in
 | Data set | Content | Dark-energy / gravity use | Source | Flag |
 |---|---|---|---|---|
 | DES Y6 3×2pt | ~5000 deg²; 140 million source shapes; 9 million lens positions | `wCDM`; with SN + BAO (+ clusters) the first single-survey all-probe `w0wa` result | DES Collaboration 2026, arXiv:2601.14559, arXiv:2605.27221 | [src] |
-| KiDS-Legacy | 1347 deg², `z ≤ 2.0` (as described in an external μ–Σ analysis) | `Sigma0` with CMB | Du et al. 2026, arXiv:2602.03110 | [src] |
+| KiDS-Legacy | 1347 deg², `z ≤ 2.0` (as described in an external μ–Σ analysis) | `Sigma0` with CMB | Du et al. 2026, arXiv:2602.03110 | [src: abstract] |
 | KiDS-1000, DES Y3, HSC | sources for DESI DR1 and BOSS `E_G` measurements | Rauhut et al. 2025, arXiv:2507.16098 | [src] |
 | DES Y3 3×2pt | still the 3×2pt likelihood in DESI DR2 and DESI DR1 MG combinations | arXiv:2503.14738, arXiv:2411.12026 | [src] |
 
@@ -170,13 +170,13 @@ Forecast statements read this session:
 |---|---|---|---|
 | Oct 2017 | GW170817 speed of gravity | removed most non-conformal Horndeski dark energy | arXiv:1710.05901 [src] |
 | Jul 2022 | DES Y3 extensions | no evidence beyond ΛCDM | arXiv:2207.05766 [src] |
-| Apr 2024 | DESI DR1 BAO | 2.5–3.9σ `w0wa` preference | arXiv:2404.03002 [src] |
+| Apr 2024 | DESI DR1 BAO | 2.5–3.9σ `w0wa` preference | arXiv:2404.03002 [src: abstract] |
 | Nov 2024 | DESI DR1 full shape, modified gravity | GR consistent; PR3 Σ0 tension traced to the likelihood | arXiv:2411.12026 [src] |
-| Mar 2025 | DESI DR2 BAO | 2.8–4.2σ | arXiv:2503.14738 [src] |
-| Nov 2025 | DES-Dovekie | 4.2σ → 3.2σ | arXiv:2511.07517 [src] |
+| Mar 2025 | DESI DR2 BAO | 2.8–4.2σ | arXiv:2503.14738 [src: abstract] |
+| Nov 2025 | DES-Dovekie | 4.2σ → 3.2σ | arXiv:2511.07517 [src: abstract] |
 | Jan 2026 | Union3.1; DES Y6 3×2pt | samples converge at 3.2–3.4σ; `w = −1.12 (+0.26/−0.20)` from 3×2pt | arXiv:2601.19424, arXiv:2601.14559 [src] |
 | Feb 2026 | DESI DR1 FS + DR2 BAO | 1.4σ without CMB | arXiv:2602.18761 [src] |
 | Apr 2026 | DESI survey complete; DESI DR1 `f(R)` | `log10 abs(f_R0) < −4.59` | arXiv:2604.26915 [src] |
-| May 2026 | DES Y6 all-probe `w0wa` | 2.2σ alone, 3.0σ with DESI and CMB | arXiv:2605.27221 [src] |
+| May 2026 | DES Y6 all-probe `w0wa` | 2.2σ alone, 3.0σ with DESI and CMB | arXiv:2605.27221 [src: abstract] |
 | Jun 2026 | DESI DR1 bispectrum + DR2 BAO | weakens the DESI-only preference | arXiv:2606.23936 [src] |
 | Sep 2026 | Unite | 3.3σ, weak Bayesian evidence | arXiv:2609.05053 [src] |

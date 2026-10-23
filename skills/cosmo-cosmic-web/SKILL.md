@@ -51,12 +51,12 @@ re-verify against the cited paper before a number enters a manuscript.
   (arXiv:1909.12371), tied to bulge mass (arXiv:2208.10767); the first MaNGA
   study found none (arXiv:1902.09797).
 - Filament X-ray: 9σ total, 5.4σ WHIM after ~40% contamination, eRASS:4,
-  7817 SDSS filaments, log T = 6.84 (arXiv:2406.00105).
+  7817 SDSS filaments, log T = 6.84 (arXiv:2406.00105, abstract).
 - Filament tSZ: 5.3σ between LRG pairs (arXiv:1709.05024), 4.4σ along
   30–100 Mpc filaments (arXiv:1911.09706); oriented ACT DR6 multipoles at
   8–10σ (arXiv:2409.04535).
 - FRBs give Ω_b h₇₀ = 0.051 ± 0.006 and f_IGM = 0.76 (+0.10/−0.11)
-  (arXiv:2409.16952); the phase partition is statistical.
+  (arXiv:2409.16952, abstract); the phase partition is statistical.
 - O VII "missing baryons" lines (arXiv:1806.08395) re-analysed: one is
   noise, one possibly intrinsic (arXiv:2305.01587, Sect. 4.4).
 - JWST "too many protoclusters" disappears with consistent mass apertures;
@@ -130,8 +130,9 @@ Sizes, in thousands of tokens: L1 3k; open 4k; methods 7k; results 9k; surveys 4
   (`--abstract`, `--outline`, `--section`, `--grep`), or with any tool that
   gives the paper. If it cannot be read, say that L4 was required and not
   done.
-- A formula of the skill may be applied to the asker's numbers; label the
-  result as derived.
+- Quote a number only with its paper and the place it was read, as the
+  skill gives them; the skill holds no number of its own making. A formula
+  may be applied to the asker's numbers; label the result as derived.
 
 Local layers: if a directory `.cosmoskill/` exists in the working directory,
 in one of its parents, or in the home directory, or if `COSMOSKILL_HOME` is

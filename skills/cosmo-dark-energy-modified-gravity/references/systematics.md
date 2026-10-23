@@ -72,7 +72,7 @@ candidates of that size are documented below.
   common-mode error in the anchor.
 - **Size.** Removing the common objects from one catalogue or the other
   changes the exclusion of ΛCDM between 3.8σ and 2.5σ (arXiv:2411.11685,
-  DR1-era data) [src].
+  DR1-era data) [src: abstract].
 - **Mitigation and test.** Use one compilation per fit; never multiply
   significances; prefer the combined Unite sample when the question is the
   joint constraint.
@@ -107,7 +107,7 @@ candidates of that size are documented below.
 
 - **Which information is used.** DESI + compressed (`theta_*`, `omega_b`,
   `omega_bc`) priors: 2.4σ; + primary CMB without lensing: 2.7σ; + lensing:
-  3.1σ (arXiv:2503.14738) [src]. The lensing likelihood adds 0.4σ without
+  3.1σ (arXiv:2503.14738) [src: Sect. IX]. The lensing likelihood adds 0.4σ without
   moving the posterior.
 - **Which likelihood.** CamSpec and Plik agree; PR4 LoLLiPoP–HiLLiPoP shifts
   the DESI + CMB + DESY5 contour by ~0.1σ (arXiv:2503.14738) [src]. For
@@ -142,7 +142,7 @@ candidates of that size are documented below.
 - **Size.** DESI DR1 full shape + BAO in `w0waCDM`: shifts between the
   maximum-likelihood estimate and the Bayesian posterior mean of 2.1σ, 4.1σ,
   6.5σ, 6.3σ and 6.6σ for `sigma8`, `H0`, `Omega_m`, `w0`, `wa`; under ΛCDM
-  the shifts are below 1σ (Morawetz et al. 2025, arXiv:2508.11811) [src]. The
+  the shifts are below 1σ (Morawetz et al. 2025, arXiv:2508.11811) [src: abstract]. The
   frequentist intervals are "significantly shifted relative to the Bayesian
   credible intervals for the w0waCDM model, unless supernovae data are
   included" [src].
@@ -192,7 +192,7 @@ candidates of that size are documented below.
   −1` (arXiv:2503.14738) [src].
 - Data generated from a non-crossing (algebraic quintessence) model yield a
   CPL crossing with a `chi2` gain exceeding the observed one in 3.2% of 1,000
-  mocks (Keeley, Shafieloo and Matthewson 2025, arXiv:2506.15091) [src].
+  mocks (Keeley, Shafieloo and Matthewson 2025, arXiv:2506.15091) [src: abstract].
 - The evidence is in the slope, not in the offset: `w_p` is 0.6σ (DESI + CMB)
   and 1.9σ (with DESY5) from −1 [der: (−1.024 + 1)/0.043 and (−0.954 +
   1)/0.024, values from arXiv:2503.14738]; the argument is due to Cortês and
@@ -266,7 +266,7 @@ candidates of that size are documented below.
 
 - **Background.** In DESI DR1, `mu0` moves from 0.05 ± 0.22 (ΛCDM background)
   to −0.24 (+0.32/−0.28) (`w0wa` background) with the same data; Σ0 is stable
-  (arXiv:2411.12026) [src]. A modified-gravity constraint is conditional on
+  (arXiv:2411.12026) [src: abstract]. A modified-gravity constraint is conditional on
   the expansion history assumed.
 - **Functional form.** A time dependence proportional to `Omega_DE(a)` is
   insensitive to modifications at `z > 1`. Pan and Ye (arXiv:2503.19898) argue

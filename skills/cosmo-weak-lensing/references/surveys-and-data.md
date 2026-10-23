@@ -17,16 +17,16 @@ each survey's own definition, so the column is indicative, not homogeneous.
 | Catalogue | Area (deg²) | Galaxies | n_eff (arcmin⁻²) | Shape method | Citation | Flag |
 |---|---|---|---|---|---|---|
 | CFHTLenS | 154 | 4.2 million (0.2 < z < 1.3) | — | lensfit | arXiv:1212.3338, arXiv:1210.8201 | [src] |
-| KiDS-450 | ~450 | ~15 million | — | lensfit (self-calibrating) | arXiv:1606.05338 | [src] |
+| KiDS-450 | ~450 | ~15 million | — | lensfit (self-calibrating) | arXiv:1606.05338 | [src: abstract] |
 | DES Y1 | 1321 | 26 million used; catalogues of 34.8 million (metacalibration, riz) and 21.9 million (im3shape, r) | — | metacalibration and im3shape; σ_m = 0.013 and 0.025 | arXiv:1708.01538, arXiv:1708.01533 | [src] |
 | HSC Y1 | 137 | — | ~17 after cuts | — (catalogue: arXiv:1705.06745) | arXiv:1809.09148 | [src] |
-| KiDS-1000 | 1006 | 21 million | 6.17 | lensfit | arXiv:2007.01845 | [src] |
+| KiDS-1000 | 1006 | 21 million | 6.17 | lensfit | arXiv:2007.01845 | [src: abstract] |
 | DES Y3 | 4143 | 100,204,026 | 5.59 (σ_e = 0.261) | metacalibration | arXiv:2011.03408 | [src] |
 | HSC Y3 | 433.48 catalogue; 416 cosmology | >25 million | 19.9 catalogue; 15 cosmology | — | arXiv:2107.00136, arXiv:2304.00702 | [src] |
 | DECADE (north cap) | 5412 | 107 million | 4.59 | metacalibration | arXiv:2502.17674 | [src] |
 | KiDS-Legacy | 1347 (effective 967.4 for the gold sample) | 40,894,394 gold-selected sources in six bins of 6.0 to 7.4 million | 8.79 (σ_ε = 0.28) | lensfit, calibrated on the SKiLLS multi-band image simulations | arXiv:2503.19441, arXiv:2210.07163 | [src: Table 1 of arXiv:2503.19441] |
 | DES Y6 | 4422 | 151,922,791 catalogue; ≈140 million cosmology | 8.22 catalogue; 8.29 cosmology (σ_e = 0.29) | metadetection | arXiv:2501.05665, arXiv:2602.10065 | [src] |
-| DECADE + DES Y3 | 13,000 | 270 million | — | — | arXiv:2509.03582 | [src] |
+| DECADE + DES Y3 | 13,000 | 270 million | — | — | arXiv:2509.03582 | [src: abstract] |
 | UNIONS-3500 | ~3500 (2894 used for B modes) | 62 million | 4.96 (σ_ε = 0.27) | — | arXiv:2605.13549, arXiv:2604.03227 | [src] |
 
 Dashes mark quantities not stated in the abstracts read this session. The
@@ -60,8 +60,8 @@ sees the same detector-scale additive pattern in COSEBI B modes
 
 | Release / analysis | Area | Key facts | Citation | Flag |
 |---|---|---|---|---|
-| KiDS-450 | ~450 deg² | nearly 15 million galaxies; self-calibrating lensfit | Hildebrandt et al. 2017, arXiv:1606.05338 | [src] |
-| KiDS+VIKING-450 | 450 deg² | optical + VIKING near-infrared, which allowed higher-redshift sources | Hildebrandt et al. 2020, arXiv:1812.06076 | [src] |
+| KiDS-450 | ~450 deg² | nearly 15 million galaxies; self-calibrating lensfit | Hildebrandt et al. 2017, arXiv:1606.05338 | [src: abstract] |
+| KiDS+VIKING-450 | 450 deg² | optical + VIKING near-infrared, which allowed higher-redshift sources | Hildebrandt et al. 2020, arXiv:1812.06076 | [src: abstract] |
 | KiDS-1000 (DR4) | 1006 deg² | 21 million gold-sample galaxies, 6.17 arcmin⁻² [src: arXiv:2007.01845]; shear catalogue arXiv:2007.01845; redshifts arXiv:2007.15635; methodology arXiv:2007.01844; cosmic shear arXiv:2007.15633; 3×2pt with BOSS and 2dFLenS arXiv:2007.15632 | Asgari et al. 2021; Heymans et al. 2021 | [src] |
 | KiDS DR5 / KiDS-Legacy | 1347 deg² of nine-band imaging plus 23 deg² of KiDS-like imaging over deep spectroscopic fields | sources to z_B ≤ 2.0; ~32% gain in constraining power on Σ8 over previous KiDS analyses | Wright et al. 2024, arXiv:2503.19439 (DR5); Wright et al. 2025, arXiv:2503.19441 (cosmology) | [src] for the numbers, from arXiv:2503.19441 |
 
@@ -85,7 +85,7 @@ shear (arXiv:2606.12389), BNT k-cut (arXiv:2607.04384).
 
 | Analysis | Area | Sources | Key facts | Citation | Flag |
 |---|---|---|---|---|---|
-| DES SV | — | 2.12 million (im3shape) and 3.44 million (ngmix) | first DES shear catalogues, two independent pipelines | Jarvis et al. 2016, arXiv:1507.05603 | [src] |
+| DES SV | — | 2.12 million (im3shape) and 3.44 million (ngmix) | first DES shear catalogues, two independent pipelines | Jarvis et al. 2016, arXiv:1507.05603 | [src: abstract] |
 | DES Y1 | 1321 deg² | 26 million, four bins | shape catalogues arXiv:1708.01533; cosmic shear arXiv:1708.01538; 3×2pt arXiv:1708.01530 | Troxel et al. 2018; DES Collaboration 2018 | [src] area and counts from arXiv:1708.01538 |
 | DES Y3 | 4143 deg² effective | 100,204,026 galaxies in riz, n_eff = 5.59 arcmin⁻², σ_e = 0.261, four bins, cosmic-shear S/N = 40 | shapes (metacalibration) arXiv:2011.03408; PSF arXiv:2011.03409; redshifts arXiv:2012.08566; image simulations arXiv:2012.08567; cosmic shear arXiv:2105.13543 and arXiv:2105.13544; 3×2pt arXiv:2105.13549 | Gatti et al. 2021; Amon et al. 2022 | [src] numbers from arXiv:2011.03408 and arXiv:2105.13543 |
 | DES Y6 (final) | shape catalogue 4422 deg² (151,922,791 galaxies, n_eff = 8.22 arcmin⁻², σ_e = 0.29) [src: arXiv:2501.05665]; survey ≈5000 deg²; GGL footprint 4031 deg² | cosmology sample ≈140 million, 8.29 arcmin⁻², 50% complete at i = 24.0, four bins centred at ⟨z⟩ = 0.414, 0.538, 0.846, 1.157 | metadetection shapes arXiv:2501.05665; PSF arXiv:2501.05781; Balrog injection arXiv:2501.05683; Gold photometry arXiv:2501.05739; lens sample MagLim++ with ≈9 million galaxies in six bins | arXiv:2602.10065, arXiv:2601.14559, arXiv:2601.15175, arXiv:2510.23566 | [src] |
@@ -172,7 +172,7 @@ clustering-redshift reference of DES Y6 (arXiv:2510.23565) [src].
 | Data | Location | Flag |
 |---|---|---|
 | KiDS DR5 | ESO science archive, Astro-WISE, https://kids.strw.leidenuniv.nl/DR5/ | [src] |
-| DES Y6 cosmology products | https://des.ncsa.illinois.edu/releases/y6a2 (the page did not render through the fetch tool; address from a web search result). Y6 Gold: nearly 5000 deg² of grizY, 669 million objects, depth i ≈ 23.4 at S/N ≈ 10 for extended objects (Bechtol et al. 2025, arXiv:2501.05739) [src] | [sec] address |
+| DES Y6 cosmology products | https://des.ncsa.illinois.edu/releases/y6a2 (the page did not render through the fetch tool; address from a web search result). Y6 Gold: nearly 5000 deg² of grizY, 669 million objects, depth i ≈ 23.4 at S/N ≈ 10 for extended objects (Bechtol et al. 2025, arXiv:2501.05739) [src: abstract] | [sec] address |
 | HSC-SSP PDR3 | https://hsc-release.mtk.nao.ac.jp (third public release 31 August 2021, about 670 deg² at full depth in five bands; Y3 shape catalogue 434 deg² — from a web-search summary of the release site, not read on the page itself) | [sec] |
 | DECADE | shear catalogues, data vectors and likelihoods stated public in arXiv:2509.03582 | [src] |
 

@@ -111,10 +111,10 @@ Measured nuisance parameters (BBC fits; error on last digit in parentheses):
 |---|---|---|---|---|---|---|
 | Pantheon+ (BS21 scatter model) | 0.148(4) | 3.09(4) | -0.003(7) | 0.00 | 0.171 | arXiv:2202.04077 Table 2 `[src]` |
 | Pantheon+ (P21 scatter model) | 0.145(5) | 3.00(5) | 0.019(10) | 0.00 | 0.171 | arXiv:2202.04077 Table 2 `[src]` |
-| DES-SN5YR (DES + low-z) | 0.161 ± 0.001 | 3.12 ± 0.03 | 0.038 ± 0.007 | 0.04 | — | arXiv:2401.02945 `[src]` |
-| DES-Dovekie | 0.169(3) | 3.14(4) | 0.033(8) | 0.035 | 0.170 | arXiv:2511.07517 `[src]` |
-| Unite | 0.159(3) | 3.08(3) | 0.040(6) | 0.037 | 0.177 | arXiv:2609.05053 `[src]` |
-| ZTF DR2 siblings (25 pairs, cosmology-independent) | 0.228 ± 0.029 | 3.160 ± 0.191 | — | <= 0.10 (95%) | — | arXiv:2406.01434 `[src]` |
+| DES-SN5YR (DES + low-z) | 0.161 ± 0.001 | 3.12 ± 0.03 | 0.038 ± 0.007 | 0.04 | — | arXiv:2401.02945 `[src: Sect. V.2]` |
+| DES-Dovekie | 0.169(3) | 3.14(4) | 0.033(8) | 0.035 | 0.170 | arXiv:2511.07517 `[src: Sect. 9]` |
+| Unite | 0.159(3) | 3.08(3) | 0.040(6) | 0.037 | 0.177 | arXiv:2609.05053 `[src: Sect. 6]` |
+| ZTF DR2 siblings (25 pairs, cosmology-independent) | 0.228 ± 0.029 | 3.160 ± 0.191 | — | <= 0.10 (95%) | — | arXiv:2406.01434 `[src: abstract]` |
 | ZTF DR2 volume-limited | broken, see below | 3.05 ± 0.06 | > 0.12 | — | 0.15 | arXiv:2405.20965, arXiv:2406.02072 `[src]` |
 
 For bias corrections that carry no host-mass dependence (the G10 and C11
@@ -148,14 +148,14 @@ and bias correction as much as of the data.
 
 | Model | Reference | Key facts |
 |---|---|---|
-| SALT | Guy et al. 2005, arXiv:astro-ph/0506583 | First version: luminosity modelled against phase, wavelength, one shape and one colour parameter, trained on nearby SNe; distances from rest-frame U and B alone with 0.16 ± 0.05 mag dispersion `[src]`. |
+| SALT | Guy et al. 2005, arXiv:astro-ph/0506583 | First version: luminosity modelled against phase, wavelength, one shape and one colour parameter, trained on nearby SNe; distances from rest-frame U and B alone with 0.16 ± 0.05 mag dispersion `[src: abstract]`. |
 | SALT2 | Guy et al. 2007, arXiv:astro-ph/0701828 | Flux model `F(p, lambda) = x0 [M0(p, lambda) + x1 M1(p, lambda) + ...] exp[c CL(lambda)]`, with `p` the phase, `M0` the mean spectral sequence, `M1` its first variation, `CL` the mean colour law and `c = (B−V)_max − <B−V>`; equivalent to a principal-component decomposition apart from the colour term `[src: Eq. 1, Sect. 2]`. Rest-frame 2500–8000 Å `[src]`. Retrained for Pantheon+ with the Fragilistic calibration (arXiv:2112.03864). |
-| SALT3 (K21) | Kenworthy et al. 2021, arXiv:2104.07795 | Trained on 1083 SNe with 1207 spectra; 2000–11000 Å; public training code (SALTshaker); SALT2.4 vs SALT3.K21 distance shift between low and high z of 2 ± 14 mmag `[src]`. |
-| SALT3.DES5YR | Taylor et al. 2023, arXiv:2301.10644 | SALT2 and SALT3 trained on the same 1083 SNe; model-choice systematic `Delta w = +0.001 ± 0.005` (SN+CMB) `[src]`. |
+| SALT3 (K21) | Kenworthy et al. 2021, arXiv:2104.07795 | Trained on 1083 SNe with 1207 spectra; 2000–11000 Å; public training code (SALTshaker); SALT2.4 vs SALT3.K21 distance shift between low and high z of 2 ± 14 mmag `[src: abstract]`. |
+| SALT3.DES5YR | Taylor et al. 2023, arXiv:2301.10644 | SALT2 and SALT3 trained on the same 1083 SNe; model-choice systematic `Delta w = +0.001 ± 0.005` (SN+CMB) `[src: abstract]`. |
 | SALT3.DOV | arXiv:2506.05471, arXiv:2511.07517 | Retrained on the Dovekie calibration, with many legacy-survey SNe cut from the training sample. |
 | MLCS2k2, SNooPy | Jha et al. 2007, arXiv:astro-ph/0612666; Burns et al. 2011, arXiv:1010.4040 | Non-SALT fitters. MLCS2k2: 133 nearby SNe, intrinsic dispersion below 7 % in distance, separate intrinsic colour and dust `[src]`. SNooPy: uBVgriYJH templates from 24 CSP SNe `[src]`. |
-| BayeSN | Mandel et al. 2022, arXiv:2008.07538 | Hierarchical Bayesian SED model, optical to NIR (0.35–1.8 µm), dust and intrinsic components separated; trained on 79 SNe; total Hubble RMS 0.10 mag with NIR vs 0.14 mag for SALT2/SNooPy on the same sample `[src]`. |
-| BayeSN G26 | Grayling et al. 2026, arXiv:2606.19429 | Trained on the SALT cosmology training sample with cross-calibration parameters inside the training; on DES-SN5YR at z < 0.7, sigma_NMAD 0.164 mag vs 0.185 mag for SALT3.Dovekie, without bias corrections `[src]`. Described by its authors as a step toward an end-to-end BayeSN cosmology analysis, not yet one. |
+| BayeSN | Mandel et al. 2022, arXiv:2008.07538 | Hierarchical Bayesian SED model, optical to NIR (0.35–1.8 µm), dust and intrinsic components separated; trained on 79 SNe; total Hubble RMS 0.10 mag with NIR vs 0.14 mag for SALT2/SNooPy on the same sample `[src: abstract]`. |
+| BayeSN G26 | Grayling et al. 2026, arXiv:2606.19429 | Trained on the SALT cosmology training sample with cross-calibration parameters inside the training; on DES-SN5YR at z < 0.7, sigma_NMAD 0.164 mag vs 0.185 mag for SALT3.Dovekie, without bias corrections `[src: abstract]`. Described by its authors as a step toward an end-to-end BayeSN cosmology analysis, not yet one. |
 
 Calibration and model training are coupled: Brout et al. 2022
 (arXiv:2112.03864) retrain SALT2 on the new calibration and find that the
@@ -275,12 +275,12 @@ simulations `[src: Eqs. 3–5]` (arXiv:2401.02945).
 | Framework | Reference | Notes |
 |---|---|---|
 | Hierarchical model on SALT-II fits | March et al. 2011, arXiv:1102.3237 | On simulations: tighter constraints than the `chi2` method more than 90 % of the time, statistical bias reduced by a factor 2–3, and a posterior for the intrinsic dispersion (`0.13 ± 0.01 mag` on the data of the time) `[src]`. An earlier hierarchical framework, for near-infrared light curves with Gibbs sampling, is Mandel et al. 2009 (arXiv:0908.0536): intrinsic `sigma(M_H) = 0.11 ± 0.03 mag` `[src]`. |
-| BAHAMAS | Shariff et al. 2016, arXiv:1510.05954 | Hierarchical model on SALT2 parameters. On the 740 JLA SNe with Planck it gave `Omega_m = 0.399 ± 0.027` and `w = -0.910 ± 0.045` (flat wCDM), 2.8 sigma and 1.6 sigma from the standard analysis, a mass step of 0.055 ± 0.022 mag and `sigma_res = 0.104 ± 0.005` `[src]`. No selection-effect modelling at that stage. |
+| BAHAMAS | Shariff et al. 2016, arXiv:1510.05954 | Hierarchical model on SALT2 parameters. On the 740 JLA SNe with Planck it gave `Omega_m = 0.399 ± 0.027` and `w = -0.910 ± 0.045` (flat wCDM), 2.8 sigma and 1.6 sigma from the standard analysis, a mass step of 0.055 ± 0.022 mag and `sigma_res = 0.104 ± 0.005` `[src: abstract]`. No selection-effect modelling at that stage. |
 | UNITY | Rubin et al. 2015, arXiv:1507.01602; UNITY1.5 in arXiv:2311.12098; UNITY1.8 in arXiv:2601.19854 | Outliers, selection effects, non-linear standardisation, unexplained dispersion and calibration in one posterior. Separate `beta` for blue SNe and for red SNe in low- and high-mass hosts. Used for Union3 (UNITY1.5) and Union3.1 (UNITY1.7 `[src: arXiv:2601.19424 Sect. VI]`). |
-| Steve | Hinton et al. 2019, arXiv:1811.02381 | Hierarchical model with simulation-characterised selection; `w` bias below 0.03 on average on 60 000 simulated SNe, dependent on the intrinsic-scatter model `[src]`. Cross-check in DES-SN3YR. |
+| Steve | Hinton et al. 2019, arXiv:1811.02381 | Hierarchical model with simulation-characterised selection; `w` bias below 0.03 on average on 60 000 simulated SNe, dependent on the intrinsic-scatter model `[src: abstract]`. Cross-check in DES-SN3YR. |
 | Two-population BHM | arXiv:2606.17802 | SALT2 parameters plus host mass and colour as a mixture of two SN and two host populations. |
 | FlowSN | Boyd et al. 2026, arXiv:2603.11165 | Normalising flow learns the selected-SN likelihood from simulations, used inside a hierarchical model with HMC; on LSST-like SNANA simulations the `w0` posterior is an order of magnitude less biased than "conventional techniques" `[src]`. Simulation result only. |
-| CIGaRS | Karchev et al. 2025, arXiv:2508.15899 | Joint SBI of SN and host photometry, progenitor age and metallicity dependence, delay-time distribution and cosmology; demonstrated on ~16 000 mock SNe to z = 0.9 `[src]`. Simulation result only. |
+| CIGaRS | Karchev et al. 2025, arXiv:2508.15899 | Joint SBI of SN and host photometry, progenitor age and metallicity dependence, delay-time distribution and cosmology; demonstrated on ~16 000 mock SNe to z = 0.9 `[src: abstract]`. Simulation result only. |
 
 Published cosmology from data comes from BBC (Pantheon, Pantheon+, DES,
 Unite) and UNITY (Union3, Union3.1). Two pipelines on overlapping data are
@@ -302,11 +302,11 @@ arXiv:2401.02929). Ingredients:
   extractions and learning algorithms on it.
 - **SuperNNova** (Möller & de Boissière 2019, arXiv:1901.06384): recurrent
   network on light curves; Ia vs non-Ia accuracy 96.92 ± 0.09 % without
-  redshift and 99.55 ± 0.06 % with redshift on simulations `[src]`.
+  redshift and 99.55 ± 0.06 % with redshift on simulations `[src: abstract]`.
 - **Contamination budget** (Vincenzi et al. 2023, arXiv:2111.10382): after
   SuperNNova, contamination 0.8–3.5 % and efficiency 97.7–99.5 % depending on
   the non-Ia models; `w` bias < 0.008 and `sigma_w,syst <= 0.004` against an
-  expected `sigma_w,stat = 0.039` `[src]`.
+  expected `sigma_w,stat = 0.039` `[src: abstract]`.
 - The light-curve fit and the requirement of a valid bias correction already
   act as classifiers: SALT3 fitting and quality cuts reduce non-Ia from ~40 %
   to ~11 % before any classifier `[src]` (arXiv:2401.02945).
@@ -516,4 +516,4 @@ cannot be blind in the same sense; DES-Dovekie first reproduces DES-SN5YR.
 <!-- key: not-verified -->
 
 - Tripp 1998 (A&A 331, 815) has no arXiv version and no DOI on Crossref; it
-  is cited through arXiv:2511.07517, and Tripp & Branch 1999 was read instead.
+  is cited through arXiv:2511.07517, and Tripp & Branch 1999 was read instead. [src: Sect. "References"]

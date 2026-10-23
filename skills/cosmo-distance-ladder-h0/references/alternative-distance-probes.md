@@ -46,7 +46,7 @@ redshift. Two consequences follow for every result below:
 
 The method rests on the non-linear relation between the monochromatic
 luminosities at 2 keV and 2500 Å, log L_X = γ log L_UV + β, with γ < 1
-(Risaliti & Lusso 2015, arXiv:1505.07118) `[src]`. Writing L = 4π d_L² F
+(Risaliti & Lusso 2015, arXiv:1505.07118) `[src: abstract]`. Writing L = 4π d_L² F
 for both bands gives
 
     log d_L = [log F_X − β − γ log F_UV] / [2 (γ − 1)] − ½ log 4π
@@ -69,12 +69,12 @@ scatter below 0.1 dex `[sec: arXiv:2504.01669, Sect. 2.1.15]`.
 
 | Sample | Size, redshift | Result as stated | Citation |
 |---|---|---|---|
-| Risaliti & Lusso 2015 | ~1138 quasars, to z ~ 6 | matches SNe at z = 0–1.4; ΛCDM fit Ω_M = 0.22 (+0.08/−0.10), Ω_Λ = 0.92 (+0.18/−0.30); with SNe Ω_M = 0.28 ± 0.04, Ω_Λ = 0.73 ± 0.08 `[src]` | arXiv:1505.07118 |
-| Risaliti & Lusso 2019 | quasars at 0.5 < z < 5.5 | agreement with SNe at z < 1.4; deviation from ΛCDM at higher z, "~4 sigma"; with an evolving w, dark-energy density increasing with time `[src]` | arXiv:1811.02590 |
+| Risaliti & Lusso 2015 | ~1138 quasars, to z ~ 6 | matches SNe at z = 0–1.4; ΛCDM fit Ω_M = 0.22 (+0.08/−0.10), Ω_Λ = 0.92 (+0.18/−0.30); with SNe Ω_M = 0.28 ± 0.04, Ω_Λ = 0.73 ± 0.08 `[src: abstract]` | arXiv:1505.07118 |
+| Risaliti & Lusso 2019 | quasars at 0.5 < z < 5.5 | agreement with SNe at z < 1.4; deviation from ΛCDM at higher z, "~4 sigma"; with an evolving w, dark-energy density increasing with time `[src: abstract]` | arXiv:1811.02590 |
 | Lusso et al. 2019 | SNe + quasars + GRBs | tension with flat ΛCDM in the high-z Hubble diagram (title) `[src]` | arXiv:1907.07692 |
-| Lusso et al. 2020 | ~2400 quasars with Chandra or XMM X-rays, to z ~ 7.5 | distances match SNe to z ~ 1.5; slope does not evolve to z ~ 5; ΛCDM reproduces the diagram to z ~ 1.5–2, "strong deviations" above `[src]` | arXiv:2008.08586 |
-| eROSITA eFEDS / eRASS1 (Sacchi et al. 2025) | 1248 and 519 quasars, to z ≈ 3 and 1.5 | no significant redshift evolution; dispersion ~0.2 dex; no significant cosmological constraint yet `[src]` | arXiv:2508.00732 |
-| eROSITA × SDSS DR16Q (Prokhorenko et al. 2025) | 2414 quasars, 0.5 < z < 2.5 | γ = 0.69 ± 0.02; intrinsic scatter σ²_intX = 0.063 ± 0.005 dominates σ²_intUV = 0.002 (+0.003/−0.002) `[src]` | arXiv:2512.05807 |
+| Lusso et al. 2020 | ~2400 quasars with Chandra or XMM X-rays, to z ~ 7.5 | distances match SNe to z ~ 1.5; slope does not evolve to z ~ 5; ΛCDM reproduces the diagram to z ~ 1.5–2, "strong deviations" above `[src: abstract]` | arXiv:2008.08586 |
+| eROSITA eFEDS / eRASS1 (Sacchi et al. 2025) | 1248 and 519 quasars, to z ≈ 3 and 1.5 | no significant redshift evolution; dispersion ~0.2 dex; no significant cosmological constraint yet `[src: abstract]` | arXiv:2508.00732 |
+| eROSITA × SDSS DR16Q (Prokhorenko et al. 2025) | 2414 quasars, 0.5 < z < 2.5 | γ = 0.69 ± 0.02; intrinsic scatter σ²_intX = 0.063 ± 0.005 dominates σ²_intUV = 0.002 (+0.003/−0.002) `[src: abstract]` | arXiv:2512.05807 |
 
 ### 2.3 The claimed deviation from ΛCDM at z > 1.5
 <!-- key: the-claimed-deviation-from-lambdacdm-at-z-1-5 -->
@@ -119,17 +119,17 @@ al. 2025, arXiv:2506.21477) `[src]`.
 - *A redshift trend expected in ΛCDM.* The quasars recover Ω_m ≈ 0.3 at
   z ≲ 0.7 and move to Ω_m ≈ 1 at z ≳ 1; the same trend of rising Ω_m with
   effective redshift is argued to be an intrinsic bias of flat-ΛCDM fits
-  (Ó Colgáin et al. 2022, arXiv:2203.10558) `[src]`.
+  (Ó Colgáin et al. 2022, arXiv:2203.10558) `[src: abstract]`.
 - *Dispersion model.* Over 1.6 < z < 2.6 a redshift-dependent intrinsic
   dispersion is decisively favoured over a constant one, and shifts the
-  flat-ΛCDM Ω_m0 by ≈ 0.025 (Gao et al. 2026, arXiv:2606.27173) `[src]`.
+  flat-ΛCDM Ω_m0 by ≈ 0.025 (Gao et al. 2026, arXiv:2606.27173) `[src: abstract]`.
 
 **Where it stands.** The z > 1.5 departure is claimed by the group that built
 the sample and attributed by the critiques to the cosmographic fit, to
 sub-sample heterogeneity or redshift evolution of the relation, or to
 extinction. The independent eROSITA samples confirm the slope and the ~0.2
 dex dispersion but stop at z ≈ 1.5–3 and do not yet constrain cosmology
-(arXiv:2508.00732) `[src]`.
+(arXiv:2508.00732) `[src: abstract]`.
 
 ### 2.4 What a referee checks
 <!-- key: what-a-referee-checks-3 -->
@@ -207,7 +207,7 @@ constrain models is circular. Three answers are in use.
 - A joint fit of GRBs, HII galaxies and quasar angular sizes with H(z) and
   BAO gives Ω_m0 = 0.313 ± 0.013 and H0 = 69.3 ± 1.2 km/s/Mpc, the three
   high-z sets being mutually consistent (Cao et al. 2020,
-  arXiv:2009.12953) `[src]`; most of the weight is in H(z) + BAO.
+  arXiv:2009.12953) `[src: abstract]`; most of the weight is in H(z) + BAO.
 - H0 from GRBs is set by the calibrator: CosmoVerse quotes 73.23 ± 3.31 and
   72.87 ± 2.92 km/s/Mpc without and with evolution correction, both with
   SN-based priors `[sec: arXiv:2504.01669, Sect. 2.1.16]`; such values are not
@@ -259,11 +259,11 @@ and beyond with JWST NIRSpec (Hβ and [OIII] to z ~ 9)
 
 | Analysis | Sample | Result as stated | Citation |
 |---|---|---|---|
-| Fernández-Arenas et al. 2018 | 36 GEHRs in 13 anchor galaxies (incl. NGC 4258) + local HII galaxies | H0 = 71.0 ± 2.8 (random) ± 2.1 (systematic) km/s/Mpc `[src]` | arXiv:1710.05951 |
+| Fernández-Arenas et al. 2018 | 36 GEHRs in 13 anchor galaxies (incl. NGC 4258) + local HII galaxies | H0 = 71.0 ± 2.8 (random) ± 2.1 (systematic) km/s/Mpc `[src: abstract]` | arXiv:1710.05951 |
 | Chávez et al. 2016 | 25 HII galaxies to z ~ 2.33, with CMB + BAO | 13% improvement of quintessence constraints over BAO + CMB; **forecast:** substantial gain with 500 high-z objects `[src]` | arXiv:1607.06458 |
-| González-Morán et al. 2019 | 15 new Keck/MOSFIRE (1.3 ≤ z ≤ 2.5) + 31 high-z + 107 at z ≤ 0.15 | Ω_m = 0.290 (+0.056/−0.069); flat {Ω_m, w0} = {0.280 (+0.130/−0.100), −1.12 (+0.58/−0.32)} (stat) `[src]` | arXiv:1906.02195 |
+| González-Morán et al. 2019 | 15 new Keck/MOSFIRE (1.3 ≤ z ≤ 2.5) + 31 high-z + 107 at z ≤ 0.15 | Ω_m = 0.290 (+0.056/−0.069); flat {Ω_m, w0} = {0.280 (+0.130/−0.100), −1.12 (+0.58/−0.32)} (stat) `[src: abstract]` | arXiv:1906.02195 |
 | Chávez et al. 2024 | 231 GEHRs and HII galaxies to z ≈ 7.5, some JWST | flat {h, Ω_m, w0} = {0.731 ± 0.039, 0.302 (+0.12/−0.069), −1.01 (+0.52/−0.29)} (stat) `[src]` | arXiv:2404.16261 |
-| Chávez et al. 2026 | 243 objects, z ~ 0 to z ~ 14, JWST and ALMA+JWST, lensing magnification modelled | flat ΛCDM h = 0.725 ± 0.040, Ω_m = 0.308 (+0.043/−0.053); CPL w0 = −0.92 (+0.57/−0.34), w_a = −0.48 (+0.60/−1.50); no evidence of evolution of the relation `[src]` | arXiv:2607.14254 |
+| Chávez et al. 2026 | 243 objects, z ~ 0 to z ~ 14, JWST and ALMA+JWST, lensing magnification modelled | flat ΛCDM h = 0.725 ± 0.040, Ω_m = 0.308 (+0.043/−0.053); CPL w0 = −0.92 (+0.57/−0.34), w_a = −0.48 (+0.60/−1.50); no evidence of evolution of the relation `[src: abstract]` | arXiv:2607.14254 |
 
 CosmoVerse (Table 2) gives, for 195 HII galaxies alone with the slope
 fixed, flat-ΛCDM Ω_m = 0.282 (+0.037/−0.045)

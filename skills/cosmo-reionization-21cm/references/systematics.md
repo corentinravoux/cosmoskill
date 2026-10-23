@@ -183,7 +183,7 @@ radii inferred from galaxies exceed analytic cosmic-average expectations by up t
 - Intrinsic line properties. The z ~ 5–6 lines are broader and more offset (median 258 km/s)
   than the z ~ 2 templates used before JWST, which raises the predicted transmission through
   neutral gas and lowers inferred neutral fractions [src: Prieto-Lyon et al. 2025,
-  arXiv:2509.18302].
+  arXiv:2509.18302]. [src: abstract]
 - Environment. In the DIVER sample strong emitters lie farther from overdensities; near the z ~
   5.2 GOODS-N overdensity fewer than 15% of galaxies show strong Lyα. This is opposite to the
   simplest inside-out expectation and points to circumgalactic or local opacity [src: Zhu et al.
@@ -191,7 +191,7 @@ radii inferred from galaxies exceed analytic cosmic-average expectations by up t
 - Field-to-field variance. Four PASSAGE pointings contain {3, 1, 0, 0} emitters [src: Runnholm
   et al. 2025, arXiv:2502.19174].
 - Threshold dependence. The same data give different ⟨x_HI⟩ for EW > 25 Å and EW > 10 Å (0.38
-  against 0.52 at z ~ 7) [src: Kundu et al. 2026, arXiv:2609.40363].
+  against 0.52 at z ~ 7) [src: Kundu et al. 2026, arXiv:2609.40363]. [src: abstract]
 
 ## 5. Kinetic SZ
 <!-- key: kinetic-sz -->
@@ -294,7 +294,7 @@ arXiv:2504.18534].
 **Non-Gaussian leakage.** Foreground leakage makes the distribution of power estimates
 non-Gaussian; fitting only the Gaussian component tightens the MWA limit at z = 6.5 from (30.2
 mK)² to (23.0 mK)² [src: Trott et al. 2025, arXiv:2508.04164]. A referee will ask how the
-Gaussian component is isolated without removing signal.
+Gaussian component is isolated without removing signal. [src: abstract]
 
 **Ionosphere and polarisation leakage.** The ionosphere absorbs (smoothly, hence benign),
 refracts source positions, scintillates and Faraday-rotates polarised emission. The rotation
@@ -318,7 +318,7 @@ there).
 - Instrumental structure. A ground-plane resonance model fits the public spectrum with a smaller
   rms residual (20.8 mK) than the EDGES model (24.5 mK); the public EDGES spectrum had no noise
   level, so standard goodness-of-fit statistics could not be computed [src: Bradley et al. 2018,
-  arXiv:1810.09015].
+  arXiv:1810.09015]. [src: abstract]
 - Calibration and noise model. Data models with a detailed noise model and calibration-error
   terms are decisively preferred, and then the evidence for a signal is not strong [src: Sims &
   Pober 2019, arXiv:1910.03165].
@@ -427,7 +427,7 @@ by the beam, and needs forward modelling [src: arXiv:2606.25955, section 3].
   CO(2–1) from z = 6–8 [src: arXiv:2406.07511, Sect. 2.1, footnote].
 - Instrument systematics in the power spectrum. COMAP moved from feed–feed to feed-group
   cross-spectra for robustness and reports 312 difference-map null tests consistent with noise
-  [src: Stutzer et al. 2024, arXiv:2406.07511].
+  [src: Stutzer et al. 2024, arXiv:2406.07511]. [src: abstract]
 - Stacking attenuation. Redshift (velocity) uncertainty of the catalogue, pipeline signal loss,
   cosmic variance and interloper emission all enter the COMAP quasar stack interpretation [src:
   Dunne et al. 2025, arXiv:2510.23568].
@@ -443,7 +443,7 @@ by the beam, and needs forward modelling [src: arXiv:2606.25955, section 3].
   et al. 2026, arXiv:2604.18683].
 - Small fields. The z ~ 14–15 number density rests on ~350 arcmin² and carries an uncertainty of
   a factor of several (182 +329/−105 times the model) [src: Naidu et al. 2025,
-  arXiv:2505.11263].
+  arXiv:2505.11263]. [src: abstract]
 - Sample selection in ξ_ion. A stellar-mass-complete sample gives a significantly milder
   evolution of ξ_ion with redshift and UV magnitude than previously reported [src: Simmonds et
   al. 2024, arXiv:2409.01286].

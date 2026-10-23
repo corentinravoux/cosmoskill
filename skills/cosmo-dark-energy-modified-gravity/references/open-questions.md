@@ -21,13 +21,13 @@ below gives the objection, the reply, and the status at the snapshot.
 - **Objection.** Efstathiou 2024, arXiv:2408.07175: the DR1 evidence ran from
   ~3.9σ with DES5Y to ~2.5σ with Pantheon+; supernovae common to DES5Y and
   Pantheon+ show an offset of ~0.04 mag between low and high redshift; a
-  systematic of that size brings DES5Y into agreement with Planck ΛCDM [src].
+  systematic of that size brings DES5Y into agreement with Planck ΛCDM [src: abstract].
 - **Reply.** Vincenzi et al. 2025, arXiv:2501.06664: the offset is reproduced;
   43% of it comes from DES-SN5YR improvements in intrinsic-scatter and host
   modelling, 38% from comparing objects that carry different selection
   functions and therefore different bias corrections (20% of the supernovae
   are in common). With the Pantheon+ scatter model and host properties the
-  DES-SN5YR evidence falls only from 3.9σ to 3.3σ [src].
+  DES-SN5YR evidence falls only from 3.9σ to 3.3σ [src: abstract].
 - **What happened next.** Two real errors were then found on the supernova
   side: the Dovekie recalibration of DES (Popovic et al. 2025,
   arXiv:2511.07517) and inconsistent host masses between low and high redshift
@@ -52,7 +52,7 @@ below gives the objection, the reply, and the status at the snapshot.
   low-redshift supernovae common to DES5Y and Pantheon+; removing the common
   objects from one or the other catalogue gives 3.8σ or 2.5σ; marginalising
   over a `z < 0.1` versus `z > 0.1` magnitude offset in DES5Y weakens the
-  evidence significantly [src].
+  evidence significantly [src: abstract].
 - Dhawan, Popovic and Goobar 2024, arXiv:2409.18668: the dominant supernova
   systematics (calibration, progenitor and dust evolution, Milky Way
   extinction law) all shift an underlying ΛCDM towards the DESI 2024 region of
@@ -82,7 +82,7 @@ below gives the objection, the reply, and the status at the snapshot.
   preference above 3σ is a property of combinations and can equally be
   described as a ΛCDM inconsistency between data sets: a mismatch in the
   matter density (`Omega_m` 0.297 from DESI against 0.317 from Planck,
-  arXiv:2503.14738 [src]).
+  arXiv:2503.14738 [src: Sect. VII.2]).
 - Zaldarriaga 2026, arXiv:2606.30527: an SVD of the low-redshift distance data
   finds that the leading measurable direction is essentially `Omega_m h^2`,
   that most of the tension with the CMB resides there, and that the second
@@ -98,7 +98,7 @@ fitted.
 - Elbers et al. 2024, arXiv:2407.10965: with an effective neutrino mass
   allowed to be negative, Planck + ACT + DESI in ΛCDM is in 2.8–3.3σ tension
   with oscillation experiments; in `w0wa` and mirage models the mass returns
-  to `0.06 (+0.15/−0.10) eV` and `0.04 (+0.15/−0.11) eV` [src].
+  to `0.06 (+0.15/−0.10) eV` and `0.04 (+0.15/−0.11) eV` [src: abstract].
 - Jhaveri, Karwal and Hu 2025, arXiv:2504.21813: the tension "largely arises
   from the CMB lensing constraints on the calibration of the sound horizon"
   and relies on the large-angle polarisation measurement of τ; dropping these
@@ -136,7 +136,7 @@ fitted.
 - Toomey et al. 2025, arXiv:2509.13318: priors on (`w0`, `wa`) learned by a
   normalising flow from two quintessence models reduce the Planck + DESI
   tension with Λ from ~3.1σ to ~1.3σ; "uniform priors ... can actually bias
-  inferences toward unphysical parameter regions" [src].
+  inferences toward unphysical parameter regions" [src: abstract].
 - **Reply.** Herold and Karwal 2025, arXiv:2506.12004: profile-likelihood
   (frequentist) constraints on `w0`, `wa` are "in excellent agreement with the
   Bayesian constraints" for DESI + Planck + lensing + Pantheon+ or DESY5; the
@@ -155,7 +155,7 @@ Section 5).
   reaches 33.97 (illustrative 5% threshold: 20); removing the LRG2 redshift
   bin reduces it to 0.49; allowing any of the seven bins to carry the excess,
   the signal does not survive a look-elsewhere correction; they call it "a
-  fragile, single-bin, specification-dependent signal" [src]. This is a
+  fragile, single-bin, specification-dependent signal" [src: abstract]. This is a
   BAO-only statement.
 
 ### 1.6 Physical versus effective models: phantom crossing
@@ -177,7 +177,7 @@ Section 5).
 - **Can a non-crossing model fake it?** Keeley, Shafieloo and Matthewson 2025,
   arXiv:2506.15091: in 1,000 mocks drawn from an algebraic-quintessence
   fiducial, CPL with a phantom crossing beats the real-data `chi2` improvement
-  in 3.2% of cases [src]. Roughly a 2σ statement: the crossing is preferred,
+  in 3.2% of cases [src: abstract]. Roughly a 2σ statement: the crossing is preferred,
   not established.
 - **Thawing quintessence.** DESI's own test gives `Delta chi2` of −2.9 to
   −13.2 for algebraic thawing against −10.7 to −21.0 for `w0wa`

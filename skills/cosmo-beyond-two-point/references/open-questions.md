@@ -35,17 +35,16 @@ abstracts do not reconcile them.
 
 Priors on EFT parameters learned from HOD mocks sharpen constraints
 (arXiv:2507.00118; the f_NL^equil error falls from 390 to 230 in
-arXiv:2512.04266 when BOSS and such priors are added). The objection is that
+arXiv:2512.04266 when BOSS and such priors are added [src: abstract]). The objection is that
 the result then inherits the HOD family's assumptions; the sibling skill
-`cosmo-galaxy-clustering` records σ8 = 0.766 ± 0.015 from such priors against
-0.842 ± 0.034 from the collaboration analysis [sec, from that skill's
-SKILL.md; not re-read at source here].
+`cosmo-galaxy-clustering` records σ8 = 0.766 ± 0.015 from such priors (Chudaykin et al. 2026, arXiv:2602.18554, abstract) against
+0.842 ± 0.034 from the collaboration analysis (DESI Collaboration 2024, arXiv:2411.12022, abstract).
 
 ### 1.3 Parity violation
 <!-- key: parity-violation -->
 
-Side A: a parity-odd 4PCF excess at 7.1σ in BOSS CMASS (arXiv:2206.03625) and
-4–10σ in the DESI DR1 LRG auto analysis (arXiv:2508.09133); a BAO feature in
+Side A: a parity-odd 4PCF excess at 7.1σ in BOSS CMASS (arXiv:2206.03625, abstract) and
+4–10σ in the DESI DR1 LRG auto analysis (arXiv:2508.09133, abstract); a BAO feature in
 the odd 4PCF is proposed as a decisive test (Hou, Slepian & Jamieson 2024,
 arXiv:2410.05230). Side B: the excess disappears with N-body mocks
 (arXiv:2401.09523), with statistics free of the 8PCF bias (arXiv:2407.03397),
@@ -58,7 +57,7 @@ decides: DESI DR2 with larger sets of high-fidelity mocks.
 
 A full-shape trispectrum pipeline now exists and is validated on simulations
 (arXiv:2610.08908); the **forecast** gain for a DESI-like volume is up to 15%
-on ω_cdm. No data application yet.
+on ω_cdm [src: abstract]. No data application yet.
 
 ## 2. Cosmic voids
 <!-- key: cosmic-voids -->
@@ -67,9 +66,9 @@ on ω_cdm. No data application yet.
 <!-- key: are-the-void-ap-constraints-as-tight-as-quoted -->
 
 Side A: the void–galaxy cross-correlation gives D_M/D_H more precisely than BAO
-in the same data, a factor of about 3.5 in BOSS CMASS (arXiv:1904.01030), and
+in the same data, a factor of about 3.5 in BOSS CMASS (arXiv:1904.01030, abstract), and
 the combination with galaxy clustering shrinks the allowed parameter volume by
-55% in eBOSS (arXiv:2008.06060). Side B: three later studies from overlapping
+55% in eBOSS (arXiv:2008.06060, abstract). Side B: three later studies from overlapping
 author lists show effects of the same order as the statistical error: the
 velocity-profile mismatch (arXiv:2206.14120), the finder's response to the
 fiducial cosmology (arXiv:2407.02699), and the dependence on reconstruction
@@ -94,21 +93,21 @@ all (arXiv:2007.07895, Sect. 4.3.1, against arXiv:1805.09349).
 
 The two BOSS results from one paper, f/b = 0.540 ± 0.091 and 0.347 ± 0.023,
 show how much of the constraining power can come from the mocks
-(arXiv:2007.07895). A referee should ask which is quoted.
+(arXiv:2007.07895, abstract). A referee should ask which is quoted.
 
 ### 2.3 The w < −1 pull
 <!-- key: the-w-1-pull -->
 
 Voids plus galaxies in SDSS give w = −1.50 +0.43/−0.28 and Ω_m = 0.391 in wCDM
-(arXiv:2303.06143); the VSF gives w = −1.1 ± 0.2 (arXiv:2212.03873) and
-−1.263 +0.329/−0.396 (arXiv:2501.07817). None is significant; they should not
+(arXiv:2303.06143, abstract); the VSF gives w = −1.1 ± 0.2 (arXiv:2212.03873, abstract) and
+−1.263 +0.329/−0.396 (arXiv:2501.07817, abstract). None is significant; they should not
 be cited as support for phantom dark energy.
 
 ### 2.4 Growth from the void–forest cross-correlation
 <!-- key: growth-from-the-void-forest-cross-correlation -->
 
 The first measurement gives the forest β around voids at z = 2.49
-(arXiv:2203.11045). Open: whether a growth-rate constraint can be extracted,
+(arXiv:2203.11045, abstract). Open: whether a growth-rate constraint can be extracted,
 given that forest RSD in the auto- and cross-correlations fail mock validation
 for fσ8 (recorded in `cosmo-lyman-alpha`). A void–Lyα RSD Letter by the same
 author is in preparation and is not citable.
@@ -118,9 +117,9 @@ author is in preparation and is not citable.
 
 | Probe | Forecast | Reference |
 |---|---|---|
-| Euclid void–galaxy CCF with reconstruction | D_M/D_H to about 0.3%, fσ8 to 5–8% in each of four bins, ΔΩ_m = ±0.0028, w to 6% | arXiv:2302.05302 |
-| Euclid VSF | w to better than 10%; FoM(w0, wa) = 17 with only Σm_ν additionally free | arXiv:2205.11525 |
-| Euclid photometric void clustering × lensing | cross-correlation improves constraints by 10–15%, FoM by 10% to 25% | Bonici et al. 2023, arXiv:2206.14211 |
+| Euclid void–galaxy CCF with reconstruction | D_M/D_H to about 0.3%, fσ8 to 5–8% in each of four bins, ΔΩ_m = ±0.0028, w to 6% | arXiv:2302.05302, abstract |
+| Euclid VSF | w to better than 10%; FoM(w0, wa) = 17 with only Σm_ν additionally free | arXiv:2205.11525, abstract |
+| Euclid photometric void clustering × lensing | cross-correlation improves constraints by 10–15%, FoM by 10% to 25% | Bonici et al. 2023, arXiv:2206.14211, abstract |
 | Void lensing for Σm_ν; voids for ultra-light axions | simulation studies, no number read | Xu et al. 2026, arXiv:2603.09278; London et al. 2026, arXiv:2602.22990 |
 
 ### 2.6 Stale or fragile claims
@@ -131,7 +130,7 @@ author is in preparation and is not citable.
   A_κ = 1.016 ± 0.054 (arXiv:2412.02761; proceedings summary Sartori 2026,
   arXiv:2605.19763).
 - A claimed sign change of the ISW effect in voids at z < 0.03 (Hansen et al.
-  2025, arXiv:2506.08832) is a single-group result with an amplitude an order
+  2025, arXiv:2506.08832, abstract) is a single-group result with an amplitude an order
   of magnitude above the ΛCDM expectation; treat as unconfirmed.
 
 ## 3. Alternative statistics and their validation
@@ -179,9 +178,9 @@ in real space with σ8 free).
 ### 4.1 Does third-order shear sharpen or reopen the S8 tension?
 <!-- key: does-third-order-shear-sharpen-or-reopen-the-s8 -->
 
-KiDS-Legacy 2+3-point: within 1σ of Planck (arXiv:2606.12389). DES Y3
-2+3-point: 2.3σ (arXiv:2508.14018). HSC Y3 2+3-point: 3.2σ, an increase over
-its two-point result (arXiv:2508.14019). The three use the same statistic and
+KiDS-Legacy 2+3-point: within 1σ of Planck (arXiv:2606.12389, abstract). DES Y3
+2+3-point: 2.3σ (arXiv:2508.14018, abstract). HSC Y3 2+3-point: 3.2σ, an increase over
+its two-point result (arXiv:2508.14019, abstract). The three use the same statistic and
 closely related pipelines (two share authors). The spread therefore reflects
 the underlying catalogues and redshift calibrations, which for HSC Y3 have
 since been revised (see `cosmo-weak-lensing`). No HSC Y3 2+3-point reanalysis
@@ -202,7 +201,7 @@ arXiv:2409.01301).
 <!-- key: is-the-baryon-robustness-real -->
 
 HSC Y1 finds differences ≤ 0.5σ down to 2′, "or it is canceled by other
-scale-dependent systematics" (arXiv:2403.03807). That caveat is the open
+scale-dependent systematics" (arXiv:2403.03807, abstract). That caveat is the open
 question for Stage IV, where the statistical error will be several times
 smaller.
 
@@ -220,18 +219,18 @@ status and dates are in `cosmo-weak-lensing`.
 
 Side A (LEFTfield group). On identical modes of simulated halos, sampling the
 initial conditions improves σ8 by factors 3.5–5.2 over a simulation-based
-P + B analysis at k_max = 0.10–0.12 h Mpc⁻¹ (arXiv:2403.03220); in redshift
+P + B analysis at k_max = 0.10–0.12 h Mpc⁻¹ (arXiv:2403.03220, abstract); in redshift
 space for a DESI-LRG-like sample the amplitude is twice as precise, up to
-three times in extended models (arXiv:2609.16719); a controlled toy model
+three times in extended models (arXiv:2609.16719, abstract); a controlled toy model
 shows the loss of fixed summaries growing with non-linearity and with falling
 noise (arXiv:2606.18227); for f_NL^loc the gain is about 1.3
-(arXiv:2603.20855).
+(arXiv:2603.20855, abstract).
 
 Side B (perturbative-likelihood group). With an analytic P + B (+ T)
 likelihood the errors match the field-level ones on large scales; the
 trispectrum adds 20–30%; the discrepancy is attributed to the likelihood-free
 P + B baselines being too weak, not to the field-level errors being too small
-(arXiv:2507.05378). With cosmology free, field-level errors are "comparable"
+(arXiv:2507.05378; 20–30% read in the abstract). With cosmology free, field-level errors are "comparable"
 to P + B (arXiv:2509.09673).
 
 State of play: both sides agree on the field-level error bars and disagree on
@@ -246,7 +245,7 @@ With sampled initial conditions: no parameter constraint was found; the data
 products are fields (arXiv:1806.11117, arXiv:1909.06396, arXiv:2505.10682,
 arXiv:2602.02363). In the Beyond-2pt challenge it took part only in real space
 with σ8 as the single free parameter (arXiv:2405.02252). With neural
-compression: yes, on 10% of BOSS (arXiv:2310.15256). With a Gaussian
+compression: yes, on 10% of BOSS (arXiv:2310.15256; the 10% is read in the abstract of the companion paper arXiv:2310.15243). With a Gaussian
 likelihood: yes, for fσ8 from velocities (`cosmo-peculiar-velocities`).
 
 ### 5.3 Local-Universe implications
@@ -272,8 +271,8 @@ compares with the 0.1–0.2% of standard reconstruction (figure from
   date-sorted searches. The SimBIG papers contain forecasts for DESI, PFS and
   Euclid (arXiv:2310.15246); the abstract gives no number.
 - **Promise against delivery.** The marked power spectrum went from a
-  forecast factor above 2 (matter, Fisher; arXiv:2001.11024) to 1.2 on σ8 only
-  (galaxies, data; arXiv:2404.04228) and to no advantage over P + B at BOSS
+  forecast factor above 2 (matter, Fisher; arXiv:2001.11024, abstract) to 1.2 on σ8 only
+  (galaxies, data; arXiv:2404.04228, abstract) and to no advantage over P + B at BOSS
   density in an analytic study (arXiv:2411.14377).
 - **Halo finder dependence** of the bispectrum σ8 (arXiv:2309.15071) has no
   agreed mitigation.
@@ -283,27 +282,26 @@ compares with the 0.1–0.2% of standard reconstruction (figure from
 
 | Claim still seen | Correction | Reference |
 |---|---|---|
-| "Parity violation detected at 7σ in BOSS" | The excess is against Patchy mocks; 1.4σ with N-body mocks, 0–2.5σ with 8PCF-free statistics, null in cross-patch and compressed analyses | arXiv:2401.09523, arXiv:2407.03397, arXiv:2508.09133, arXiv:2604.06021 |
-| "The BOSS bispectrum shows γ 2.7σ from GR" | A 2016 result with Planck 2015; DESI DR1 P + B gives μ0 = 0.12 ± 0.49, consistent with GR | arXiv:1606.00439, arXiv:2606.23936 |
+| "Parity violation detected at 7σ in BOSS" | The excess is against Patchy mocks; 1.4σ with N-body mocks, 0–2.5σ with 8PCF-free statistics, null in cross-patch and compressed analyses | arXiv:2401.09523 (abstract), arXiv:2407.03397 (abstract), arXiv:2508.09133, arXiv:2604.06021 |
+| "The BOSS bispectrum shows γ 2.7σ from GR" | A 2016 result with Planck 2015; DESI DR1 P + B gives μ0 = 0.12 ± 0.49 (Sect. 4.2.6; the arXiv listing abstract gives ± 0.51), consistent with GR | arXiv:1606.00439 (abstract), arXiv:2606.23936 |
 | "The bispectrum strengthens the DESI dark-energy signal" | It shifts DESI-only w0wa towards Λ and weakens the evidence relative to P alone | arXiv:2606.23936 |
 | "Voids give a 1% AP distance free of systematics" | Finder response to AP, velocity-profile mismatch and reconstruction dependence were quantified afterwards; the later SDSS analyses carry a fiducial-cosmology term that the finder-response paper judges adequate | arXiv:2407.02699, arXiv:2206.14120 |
-| "Void lensing is low compared with ΛCDM" | A_κ = 1.016 ± 0.054 with matched mocks | arXiv:2412.02761 |
-| "The marked power spectrum gives a 4σ neutrino-mass detection" | Fisher forecast for matter in 1 (h⁻¹Gpc)³; on BOSS data the gain is 1.2× on σ8 only | arXiv:2001.11024, arXiv:2404.04228 |
+| "Void lensing is low compared with ΛCDM" | A_κ = 1.016 ± 0.054 with matched mocks | arXiv:2412.02761, abstract |
+| "The marked power spectrum gives a 4σ neutrino-mass detection" | Fisher forecast for matter in 1 (h⁻¹Gpc)³; on BOSS data the gain is 1.2× on σ8 only | arXiv:2001.11024, arXiv:2404.04228 (abstract) |
 | "Higher-order statistics passed a blind challenge, so their errors are validated" | The challenge tested bias of the mean on HOD mocks and says explicitly that it does not validate uncertainties | arXiv:2405.02252 |
 | "Field-level inference gives 3–5 times better σ8" | True against an SBI P + B baseline on simulated rest-frame halos; disputed against an analytic P + B (+ T) likelihood; no data application | arXiv:2403.03220, arXiv:2507.05378, arXiv:2509.09673 |
 | "BORG measures cosmological parameters from 2M++ or BOSS" | The papers report reconstructed fields and quote no cosmological parameter | arXiv:1806.11117, arXiv:1909.06396 |
 | "HSC Y3 third-order shear confirms a 3σ S8 tension" | Predates the HSC Y3 redshift recalibration recorded in `cosmo-weak-lensing`; KiDS-Legacy 2+3-point is within 1σ of Planck | arXiv:2508.14019, arXiv:2606.12389 |
-| "w < −0.8 from DES Y3 map-level inference favours w ≈ −1" | One-sided limit against a prior edge at w = −1 | arXiv:2403.02314 |
-| "The void–forest β = 1.21 is a growth-rate measurement" | It is the forest RSD parameter around voids | arXiv:2203.11045 |
+| "w < −0.8 from DES Y3 map-level inference favours w ≈ −1" | One-sided limit w < −0.80 (abstract) against a prior edge at w = −1 (Sect. 4.2) | arXiv:2403.02314 |
+| "The void–forest β = 1.21 is a growth-rate measurement" | It is the forest RSD parameter around voids | arXiv:2203.11045, abstract |
 
 ## 8. What the next data will decide
 <!-- key: what-the-next-data-will-decide -->
 
-- DESI DR2 full shape with the bispectrum: whether the amplitude gain (4–26%
-  depending on pipeline) converges between pipelines.
+- DESI DR2 full shape with the bispectrum: whether the amplitude gain (from 4% in arXiv:2610.01836 to 26% in arXiv:2606.23936, both abstract, depending on pipeline) converges between pipelines.
 - DESI DR2 parity-odd 4PCF with cross-patch statistics and N-body mock sets.
 - A DESI or Euclid void–galaxy analysis with the AP-response correction:
-  whether the 0.3% **forecast** on D_M/D_H (arXiv:2302.05302) survives.
+  whether the 0.3% **forecast** on D_M/D_H (arXiv:2302.05302, abstract) survives.
 - DES Y6 higher-order lensing (arXiv:2606.11309) and an HSC Y3 2+3-point
   rerun with revised redshifts.
 - A field-level or SBI cosmology from DESI galaxy clustering: none exists.

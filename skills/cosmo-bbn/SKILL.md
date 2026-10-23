@@ -29,29 +29,33 @@ re-verify against the cited paper before a number enters a manuscript.
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
 
-- (D/H)_P = (2.527 ± 0.030) × 10⁻⁵ from seven absorbers (arXiv:1710.11129);
-  (2.533 ± 0.024) × 10⁻⁵ from all 17 literature values (arXiv:2401.12797).
+- (D/H)_P = (2.527 ± 0.030) × 10⁻⁵ from seven absorbers (arXiv:1710.11129)
+  [src: abstract]; (2.533 ± 0.024) × 10⁻⁵ from all 17 literature values
+  (arXiv:2401.12797) [src: abstract; Sect. 5].
 - The BBN prediction error on D/H now exceeds the observational one; the
   deuterium-burning rates set it (arXiv:2011.13874, arXiv:2604.16600).
 - Light-element Ω_b h² depends on the rate philosophy: 0.02236 ± 0.00034
-  (PArthENoPE v3) against 0.02195 ± 0.00021 (PRIMAT rates); 0.02218 ±
-  0.00055 with rates marginalised (arXiv:2401.15054).
-- Ab-initio and Gaussian-process rates put the D/H prediction 1.7–2σ below
-  observation at the CMB baryon density (arXiv:2011.11320,
-  arXiv:2604.16600); data-driven polynomial fits find concordance
-  (arXiv:2011.13874).
+  (PArthENoPE v3) against 0.02195 ± 0.00021 (PRIMAT rates)
+  [src: Sect. 4.1]; 0.02218 ± 0.00055 with rates marginalised
+  (arXiv:2401.15054) [src: abstract].
+- Ab-initio and Gaussian-process rates put the D/H prediction below
+  observation at the CMB baryon density: a ≃1.8σ tension
+  (arXiv:2011.11320) [src: abstract]; 1.70σ, or 1.98σ with the Planck +
+  ACT + SPT baryon density (arXiv:2604.16600) [src: abstract]; data-driven
+  polynomial fits find concordance (arXiv:2011.13874).
 - Y_P = 0.2458 ± 0.0013 (LBT Y_p Project, arXiv:2601.22238) against
-  0.2402 ± 0.0040 (EMPRESS XV, arXiv:2506.24050); the spread across groups
-  exceeds every quoted error.
-- Predicted Y_P = 0.24709 ± 0.00017 (PRIMAT, arXiv:1801.08023); τ_n
-  dominates its theory error (arXiv:2303.04140).
-- τ_n: bottles 879.4(6) s against beams 888.0(2.0) s (arXiv:1802.01804);
-  UCNτ 877.75 s (arXiv:2106.10375); the electron-counting J-PARC beam
-  agrees with bottles (arXiv:2412.19519).
-- N_ν = 2.925 ± 0.082 from LBT Y_P + D/H + CMB (arXiv:2601.22239);
-  N_eff = 2.990 ± 0.070 adding ACT, SPT and DESI (arXiv:2603.13226); both
-  fixed one reaction network (arXiv:2609.12065).
-- ⁷Li is predicted ~3.5 times the plateau (arXiv:2011.11320, Table 2); n_TOF
+  0.2402 ± 0.0040 (EMPRESS XV, arXiv:2506.24050), both [src: abstract]; the
+  spread across groups exceeds every quoted error.
+- Predicted Y_P = 0.24709 ± 0.00017 (PRIMAT, arXiv:1801.08023)
+  [src: abstract]; τ_n dominates its theory error (arXiv:2303.04140).
+- τ_n: bottles 879.4(6) s against beams 888.0(2.0) s (arXiv:1802.01804)
+  [src: abstract]; UCNτ 877.75 s (arXiv:2106.10375) [src: abstract]; the
+  electron-counting J-PARC beam agrees with bottles (arXiv:2412.19519).
+- N_ν = 2.925 ± 0.082 from LBT Y_P + D/H + CMB (arXiv:2601.22239)
+  [src: abstract]; N_eff = 2.990 ± 0.070 adding ACT, SPT and DESI
+  (arXiv:2603.13226) [src: abstract]; both fixed one reaction network
+  (arXiv:2609.12065).
+- ⁷Li still shows a "factor ∼3 discrepancy" (arXiv:2011.11320, Sect. 1); n_TOF
   closed the main nuclear routes (arXiv:1606.09420, arXiv:1803.05701).
 - Any new-physics fix of lithium must keep D/H, Y_P and ³He/⁴He standard
   (arXiv:2203.11256).
@@ -61,7 +65,9 @@ re-verify against the cited paper before a number enters a manuscript.
 ## Systematics a referee checks
 <!-- key: systematics-a-referee-checks -->
 
-1. D/H sample (7, 9, 13 or 17 systems), continuum and interloper treatment.
+1. D/H sample (seven systems, arXiv:1710.11129 [src: abstract]; 13,
+   arXiv:1706.09512 [src: abstract]; nine or 17, arXiv:2401.12797
+   [src: Sect. 5]), continuum and interloper treatment.
 2. Y_P sample, weighted average or regression, emissivities, He I 10830.
 3. Spite-plateau T_eff scale and depletion assumptions.
 4. d(p,γ)³He, d(d,n)³He, d(d,p)t evaluation; rates marginalised or not.
@@ -76,9 +82,11 @@ re-verify against the cited paper before a number enters a manuscript.
 - Quoting a "BBN prior" on ω_b without code, rate set and abundances.
 - Calling the D/H–CMB offset a tension or a concordance without saying
   which deuterium-burning rates were used.
-- Mixing N_ν (baseline 3) from BBN with N_eff (baseline 3.044) from the CMB.
+- Mixing N_ν (baseline 3) from BBN with N_eff (baseline 3.044,
+  arXiv:2603.13226 [src: abstract]) from the CMB.
 - Comparing a regression Y_P with a weighted-average Y_P as if equivalent.
-- Citing Izotov et al. 2014 (Y_P = 0.2551, N_eff = 3.58) as current.
+- Citing Izotov et al. 2014 (Y_P = 0.2551, N_eff = 3.58; arXiv:1408.6953
+  [src: abstract]) as current.
 - Treating the neutron-lifetime puzzle as evidence for dark decays.
 - Combining a low EMPRESS Y_P with D/H at ΔN_eff = 0 without noting the
   incompatibility (arXiv:2401.15054, Sect. 4.3).
@@ -118,8 +126,9 @@ Sizes, in thousands of tokens: L1 3k; open 3k; methods 5k; results 6k; surveys 4
   (`--abstract`, `--outline`, `--section`, `--grep`), or with any tool that
   gives the paper. If it cannot be read, say that L4 was required and not
   done.
-- A formula of the skill may be applied to the asker's numbers; label the
-  result as derived.
+- Quote a number only with its paper and the place it was read, as the
+  skill gives them; the skill holds no number of its own making. A formula
+  may be applied to the asker's numbers; label the result as derived.
 
 Local layers: if a directory `.cosmoskill/` exists in the working directory,
 in one of its parents, or in the home directory, or if `COSMOSKILL_HOME` is

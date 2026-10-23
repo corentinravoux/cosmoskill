@@ -17,7 +17,7 @@ All Σm_ν upper limits are 95% credible or confidence limits unless stated. "CM
 | Minimum Σm_ν, normal ordering (lightest mass zero) | ≥ 0.059 eV | NuFIT 6.0 splittings as used by DESI, arXiv:2503.14744 §4.1; global fit is Esteban et al. 2024, arXiv:2410.05380 | [sec] |
 | Minimum Σm_ν, inverted ordering | ≥ 0.10 eV | same | [sec] |
 | Mass-ordering preference from oscillations alone | "almost equally good fit for both orderings"; Δχ² = 6.1 for normal ordering only when the Super-Kamiokande atmospheric table is added | arXiv:2410.05380 abstract | [src] |
-| Effective electron-antineutrino mass, tritium endpoint | m_ν² = −0.14 (+0.13/−0.15) eV²; m_ν < 0.45 eV (90% CL), 259 days, 36 million electrons | KATRIN, Aker et al. 2024, arXiv:2406.13516 | [src] |
+| Effective electron-antineutrino mass, tritium endpoint | m_ν² = −0.14 (+0.13/−0.15) eV²; m_ν < 0.45 eV (90% CL), 259 days, 36 million electrons | KATRIN, Aker et al. 2024, arXiv:2406.13516 | [src: abstract] |
 | Σm_ν implied by the KATRIN limit | ≲ 1.3 eV | Qu et al. 2026, arXiv:2607.24742 abstract | [sec] |
 | KATRIN status, January 2026 review | "about to reach its target sensitivity of the neutrino mass of less than 300 meV"; next a keV sterile-neutrino search, then KATRIN++ with an atomic tritium source | Drexlin & Weinheimer 2026, arXiv:2601.00248 abstract | [src] |
 | JUNO reactor oscillation parameters, 207.2 live days, 8,294 inverse-beta-decay candidates, mean baseline 52.5 km | Δm²_31 = +2.509 (+0.027/−0.025) × 10⁻³ eV² (normal) or −2.482 (+0.025/−0.026) × 10⁻³ eV² (inverted); sin²θ_12 = 0.3036 ± 0.0064; Δm²_21 = (7.388 ± 0.078) × 10⁻⁵ eV² | JUNO Collaboration 2026, arXiv:2609.37895 abstract | [src] |
@@ -75,21 +75,21 @@ Independent analyses in extended dark-energy models:
 
 | Result | Value | Citation | Flag |
 |---|---|---|---|
-| (w0, wa) marginalised, also stable under binned and cubic w(a) | Σm_ν < 0.152 eV | Qu et al. 2026, arXiv:2607.24742 | [src] |
+| (w0, wa) marginalised, also stable under binned and cubic w(a) | Σm_ν < 0.152 eV | Qu et al. 2026, arXiv:2607.24742 | [src: abstract] |
 | Late-Universe-free route: primary CMB with A_lens marginalised + reconstructed lensing spectrum | Σm_ν < 0.41 eV | arXiv:2607.24742 | [src] |
 | w0waCDM, DESI DR1 full shape + bispectrum + BAO + CMB + SNe | Σm_ν < 0.077 eV; stated to be 37% tighter than background data alone | Ivanov et al. 2026, arXiv:2601.16165 | [src] |
-| Sign-switching Λ_sCDM, DESI DR2 BAO + CMB + DES-Dovekie SNe | Σm_ν,eff = 0.055 ± 0.050 eV (68%), against −0.075 (+0.039/−0.053) eV in ΛCDM for the same data; transition redshift z† > 2.4 (95%) | Kıbrıs et al. 2026, arXiv:2605.21456 | [src] |
+| Sign-switching Λ_sCDM, DESI DR2 BAO + CMB + DES-Dovekie SNe | Σm_ν,eff = 0.055 ± 0.050 eV (68%), against −0.075 (+0.039/−0.053) eV in ΛCDM for the same data; transition redshift z† > 2.4 (95%) | Kıbrıs et al. 2026, arXiv:2605.21456 | [src: abstract] |
 
 ### 1.4 Effective (signed) neutrino mass and the tension with oscillations
 <!-- key: effective-signed-neutrino-mass-and-the-tension -->
 
 | Analysis | Data | Result (68%) | Stated tension | Citation | Flag |
 |---|---|---|---|---|---|
-| Clustering-suppression-only extension to negative values | DESI DR1 BAO + CMB | Σm_ν = −160 ± 90 meV; minimum-mass suppression excluded at 99% | — | Craig et al. 2024, arXiv:2405.00836 | [src] |
+| Clustering-suppression-only extension to negative values | DESI DR1 BAO + CMB | Σm_ν = −160 ± 90 meV; minimum-mass suppression excluded at 99% | — | Craig et al. 2024, arXiv:2405.00836 | [src: abstract] |
 | Effective mass consistent in background and perturbations | Planck + ACT + DESI DR1 | Σm_ν,eff = −0.125 (+0.058/−0.070) eV [sec, quoted in arXiv:2503.14744] | 2.8–3.3σ with oscillations | Elbers et al. 2024, arXiv:2407.10965 | [src] for the tension |
 | Same parameter | DESI DR2 BAO + CMB | Σm_ν,eff = −0.101 (+0.047/−0.056) eV; σ = 0.053 eV, 2.6 times the baseline Bayesian σ | 3σ with the oscillation lower limit | arXiv:2503.14744 | [src] |
-| Same, w0waCDM and mirage dark energy | Planck + ACT + DESI DR1 | Σm_ν,eff = 0.06 (+0.15/−0.10) eV and 0.04 (+0.15/−0.11) eV | none | arXiv:2407.10965 | [src] |
-| Effective mass plus two lensing parameters (peak smoothing and lensing-potential amplitude) | Planck, Planck + ACT lensing, DESI | Σm̃_ν = −0.018 (+0.085/−0.089) eV | none | Cozzumbo et al. 2025, arXiv:2511.01967 | [src] |
+| Same, w0waCDM and mirage dark energy | Planck + ACT + DESI DR1 | Σm_ν,eff = 0.06 (+0.15/−0.10) eV and 0.04 (+0.15/−0.11) eV | none | arXiv:2407.10965 | [src: abstract] |
+| Effective mass plus two lensing parameters (peak smoothing and lensing-potential amplitude) | Planck, Planck + ACT lensing, DESI | Σm̃_ν = −0.018 (+0.085/−0.089) eV | none | Cozzumbo et al. 2025, arXiv:2511.01967 | [src: abstract] |
 | Range across dataset combinations and tension metrics | CMB + DESI DR1 + background probes | — | 2.5σ to 5σ | Jiang et al. 2024, arXiv:2407.18047 | [src] |
 
 ### 1.5 The optical-depth route
@@ -97,14 +97,14 @@ Independent analyses in extended dark-energy models:
 
 | Result | Value | Citation | Flag |
 |---|---|---|---|
-| τ preferred by DESI BAO + high-ℓ CMB + CMB lensing in ΛCDM, no low-ℓ EE | 0.090 ± 0.012, 3–5σ from Planck low-ℓ polarisation | Sailer et al. 2025, arXiv:2504.16932 | [src] |
-| Same question, independent analysis | τ = 0.091 ± 0.011; neutrino tension at Σm_ν = 0.06 eV removed; w0wa preference below 95% CL | Jhaveri, Karwal & Hu 2025, arXiv:2504.21813 | [src] |
+| τ preferred by DESI BAO + high-ℓ CMB + CMB lensing in ΛCDM, no low-ℓ EE | 0.090 ± 0.012, 3–5σ from Planck low-ℓ polarisation | Sailer et al. 2025, arXiv:2504.16932 | [src: abstract] |
+| Same question, independent analysis | τ = 0.091 ± 0.011; neutrino tension at Σm_ν = 0.06 eV removed; w0wa preference below 95% CL | Jhaveri, Karwal & Hu 2025, arXiv:2504.21813 | [src: abstract] |
 | With τ ≈ 0.09 | w0wa preference falls from about 3σ to 1.4σ (Δχ²_MAP = −3.82) [src: Sect. III.2]; n_s = 0.968 ± 0.004, H0 = 67.94 ± 0.44 km/s/Mpc | arXiv:2504.16932 | [src] |
 | DESI DR2 BAO + CMB, τ fixed at 0.067 or 0.074 (about 2σ or 3σ above the baseline 0.054 ± 0.007) | tension of Σm_ν,eff with oscillations remains at 2.3σ or 1.7σ; without large-scale polarisation the tension "could be explained as a ∼2σ statistical fluctuation" | arXiv:2503.14744 §5.2.1 | [src] |
 | P-ACT-LB with the SRoll2 error doubled, prior τ = 0.057 ± 0.012 | Σm_ν < 0.10 eV | arXiv:2503.14454 appendix on DESI DR2 and τ | [src] |
 | P-ACT-LB without SRoll2 (τ from lensing in the spectra) | Σm_ν < 0.19 eV | same | [src] |
 | τ preferred by P-ACT-LB with DESI DR2; τ measured without SRoll2 (P-ACT-LB with DR2 and supernovae) | 0.0643 (+0.0055/−0.0067); 0.081 ± 0.016 | same | [src] |
-| Imposed prior τ = 0.11 ± 0.006 | Σm_ν = 0.10 (+0.04/−0.05) eV (68%), presented as a 2σ detection conditional on the prior | Sullivan, de Belsunce & Ivanov 2026, arXiv:2606.30903 | [src] |
+| Imposed prior τ = 0.11 ± 0.006 | Σm_ν = 0.10 (+0.04/−0.05) eV (68%), presented as a 2σ detection conditional on the prior | Sullivan, de Belsunce & Ivanov 2026, arXiv:2606.30903 | [src: abstract] |
 
 The τ values measured from Planck large-scale polarisation, and the evidence from reionisation data, are held in `cosmo-cmb` and `cosmo-reionization-21cm`; the high-τ numbers above are what the neutrino sector would need, not measurements of τ.
 
@@ -117,9 +117,9 @@ The τ values measured from Planck large-scale polarisation, and the evidence fr
 | Frequentist counterpart | χ²(IO) − χ²(NO) = 4.6 | arXiv:2503.14744 §5.1 | [src] |
 | Lightest mass | m_l < 0.023 eV (NO or free ordering), < 0.024 eV (IO) | arXiv:2503.14744 | [src] |
 | Σm_ν with oscillation prior | < 0.101 eV (NO), < 0.133 eV (IO) | arXiv:2503.14744 | [src] |
-| Earlier Bayes factor, CMB + DESI DR1 + background probes | 46.5 | arXiv:2407.18047 | [src] |
-| Alternative prior constructions | K > 460 in ΛCDM, K > 40 in extensions; prior measure changes K by a factor of about 10 | Jimenez et al. 2026, arXiv:2606.18987 | [src] |
-| EFT reanalysis | inverted ordering disfavoured at about 3.5σ (ΛCDM) and 2.4σ (w0waCDM) | arXiv:2601.16165 | [src] |
+| Earlier Bayes factor, CMB + DESI DR1 + background probes | 46.5 | arXiv:2407.18047 | [src: abstract] |
+| Alternative prior constructions | K > 460 in ΛCDM, K > 40 in extensions; prior measure changes K by a factor of about 10 | Jimenez et al. 2026, arXiv:2606.18987 | [src: abstract] |
+| EFT reanalysis | inverted ordering disfavoured at about 3.5σ (ΛCDM) and 2.4σ (w0waCDM) | arXiv:2601.16165 | [src: abstract] |
 
 The Bayes factors 10, 46.5 and > 460 use the same class of data. The difference is the prior on the masses and the data combination; see `open-questions.md` §1.4.
 
@@ -131,8 +131,8 @@ The Bayes factors 10, 46.5 and > 460 use the same class of data. The difference 
 
 | Statement | Value | Citation | Flag |
 |---|---|---|---|
-| N_eff with full collision term, flavour oscillations and QED plasma corrections | 3.0440 | Froustey, Pitrou & Volpe 2020, arXiv:2008.01074 | [src] |
-| Finite-temperature QED: O(e²) correction δN_eff ≃ +0.010, O(e³) ≃ −0.001; expected to move 3.044 to 3.043 | — | Bennett et al. 2019, arXiv:1911.04504 | [src] |
+| N_eff with full collision term, flavour oscillations and QED plasma corrections | 3.0440 | Froustey, Pitrou & Volpe 2020, arXiv:2008.01074 | [src: abstract] |
+| Finite-temperature QED: O(e²) correction δN_eff ≃ +0.010, O(e³) ≃ −0.001; expected to move 3.044 to 3.043 | — | Bennett et al. 2019, arXiv:1911.04504 | [src: abstract] |
 
 The reference value used by DESI, ACT and SPT is 3.044 (arXiv:2503.14744, arXiv:2506.20707). A text quoting 3.046 is using the pre-2020 value, which is the one in Planck 2018 (arXiv:1807.06209 Sect. 7.5.2 [src]). It comes from Mangano 2005 (arXiv:hep-ph/0506164 [src]), who obtained N_eff = 3.046 with three-flavour oscillations in the decoupling calculation.
 
@@ -156,7 +156,7 @@ The reference value used by DESI, ACT and SPT is 3.044 (arXiv:2503.14744, arXiv:
 | DESI DR2 BAO + CMB, Σm_ν free | 3.16 ± 0.17, Σm_ν < 0.0741 eV; correlation ρ = 0.18 | arXiv:2503.14744 | [src] |
 | DESI DR2 BAO + CMB + DESY5, w0waCDM | 3.01 ± 0.19 | arXiv:2503.14744 Table 2 | [src] |
 | Self-interacting dark radiation | N_idr < 0.134 (95%) | arXiv:2503.14454 abstract | [src] |
-| Self-interacting dark radiation with running and running-of-running free; Planck + ACT DR6 + DESI DR2 + uncalibrated Pantheon+ | ΔN_eff < 0.58 (95%); < 0.68 with dark-radiation–matter decoupling | Garny, Niedermann & Sloth 2026, arXiv:2604.26541 | [src] |
+| Self-interacting dark radiation with running and running-of-running free; Planck + ACT DR6 + DESI DR2 + uncalibrated Pantheon+ | ΔN_eff < 0.58 (95%); < 0.68 with dark-radiation–matter decoupling | Garny, Niedermann & Sloth 2026, arXiv:2604.26541 | [src: abstract] |
 
 Every CMB-only value is within 2σ of 3.044 (arXiv:2506.20707 [src]). CMB-only values sit below 3.044 and values with DESI BAO sit above it: BAO prefer larger H0 r_d and smaller Ω_m, which N_eff absorbs (arXiv:2503.14744 §4.2). `cosmo-cmb` warns that in ΛCDM + N_eff the CMB and BAO disagree at more than 3σ for some CMB combinations, so the combined number should not be quoted without that caveat.
 
@@ -175,15 +175,15 @@ The phase shift is produced by free-streaming radiation travelling faster than t
 
 | Quantity | Value | Citation | Flag |
 |---|---|---|---|
-| Primordial deuterium | (D/H)_P = (2.527 ± 0.030) × 10⁻⁵, seven systems | Cooke, Pettini & Steidel 2017, arXiv:1710.11129 | [src] |
-| Predicted helium mass fraction, standard BBN | Y_P = 0.24709 ± 0.00017 (PRIMAT) | Pitrou et al. 2018, arXiv:1801.08023 | [src] |
-| Measured primordial helium, LBT Y_p Project | Y_p = 0.2458 ± 0.0013, stated to be the most precise to date | Yeh et al. 2026, arXiv:2601.22239 | [src] |
-| Baryon density, Y_p + D/H + BBN + CMB, N_ν = 3 | η = (6.120 ± 0.038) × 10⁻¹⁰, Ω_b h² = 0.02236 ± 0.00014 | arXiv:2601.22239 | [src] |
-| N_ν, BBN + CMB | 2.925 ± 0.082; ΔN_ν ≤ 0.125 (95%, for N_ν ≥ 3) | arXiv:2601.22239 | [src] |
-| N_ν, BBN + CMB, earlier | 2.898 ± 0.141; N_ν < 3.180 (2σ) | Yeh et al. 2022, arXiv:2207.13133 | [src] |
-| Change between epochs | −0.708 < N_ν^CMB − N_ν^BBN < 0.328 | arXiv:2207.13133 | [src] |
-| Baryon density from light elements with nuclear rates marginalised (PRyMordial) | Ω_b h² = 0.02218 ± 0.00055 (ΛCDM); 0.02196 ± 0.00063 (+N_eff) | Schöneberg 2024, arXiv:2401.15054 | [src] |
-| ΔN_eff from light elements alone | −0.14 ± 0.21 | arXiv:2401.15054 | [src] |
+| Primordial deuterium | (D/H)_P = (2.527 ± 0.030) × 10⁻⁵, seven systems | Cooke, Pettini & Steidel 2017, arXiv:1710.11129 | [src: abstract] |
+| Predicted helium mass fraction, standard BBN | Y_P = 0.24709 ± 0.00017 (PRIMAT) | Pitrou et al. 2018, arXiv:1801.08023 | [src: abstract] |
+| Measured primordial helium, LBT Y_p Project | Y_p = 0.2458 ± 0.0013, stated to be the most precise to date | Yeh et al. 2026, arXiv:2601.22239 | [src: abstract] |
+| Baryon density, Y_p + D/H + BBN + CMB, N_ν = 3 | η = (6.120 ± 0.038) × 10⁻¹⁰, Ω_b h² = 0.02236 ± 0.00014 | arXiv:2601.22239 | [src: abstract] |
+| N_ν, BBN + CMB | 2.925 ± 0.082; ΔN_ν ≤ 0.125 (95%, for N_ν ≥ 3) | arXiv:2601.22239 | [src: abstract] |
+| N_ν, BBN + CMB, earlier | 2.898 ± 0.141; N_ν < 3.180 (2σ) | Yeh et al. 2022, arXiv:2207.13133 | [src: abstract] |
+| Change between epochs | −0.708 < N_ν^CMB − N_ν^BBN < 0.328 | arXiv:2207.13133 | [src: abstract] |
+| Baryon density from light elements with nuclear rates marginalised (PRyMordial) | Ω_b h² = 0.02218 ± 0.00055 (ΛCDM); 0.02196 ± 0.00063 (+N_eff) | Schöneberg 2024, arXiv:2401.15054 | [src: abstract] |
+| ΔN_eff from light elements alone | −0.14 ± 0.21 | arXiv:2401.15054 | [src: abstract] |
 
 The BBN baryon density depends on the deuterium-burning rates: ab-initio theoretical rates favour lower Ω_b h², experimentally determined rates higher (arXiv:2401.15054). A "BBN prior" in a BAO analysis therefore names a code and a rate set, not a single number; `cosmo-distance-ladder-h0` holds the BAO + BBN H0 results.
 
@@ -200,13 +200,13 @@ All limits are for a thermal relic making up all of the dark matter. A limit on 
 | Kim et al. and Croft et al. spectra + WMAP | > 0.55 keV (thermal), > 2.0 keV (sterile neutrino), 2σ | — | Viel et al. 2005, arXiv:astro-ph/0501562 | [src] |
 | 25 quasars at z > 4, HIRES + MIKE | > 3.3 keV (2σ) | several physically motivated thermal histories | Viel et al. 2013, arXiv:1306.2314 | [src] |
 | Same spectra, wider range of thermal histories | no limit: warm and cold models fit the cutoff equally well | — | Garzilli, Boyarsky & Ruchayskiy 2015, arXiv:1510.07006 | [src] |
-| XQ-100 alone / HIRES+MIKE alone / combined | > 1.4 / 4.1 / 5.3 keV (2σ) | T(z) a power law in redshift | Iršič et al. 2017, arXiv:1702.01764 | [src] |
-| XQ-100 + HIRES/MIKE, temperature jumps up to 5000 K allowed | > 3.5 keV (2σ) | non-smooth T(z) | arXiv:1702.01764 | [src] |
-| SDSS DR14 (z < 4.5) + XQ-100 | > 5.3 keV | — | Palanque-Delabrouille et al. 2019, arXiv:1911.09073 | [src] |
+| XQ-100 alone / HIRES+MIKE alone / combined | > 1.4 / 4.1 / 5.3 keV (2σ) | T(z) a power law in redshift | Iršič et al. 2017, arXiv:1702.01764 | [src: abstract] |
+| XQ-100 + HIRES/MIKE, temperature jumps up to 5000 K allowed | > 3.5 keV (2σ) | non-smooth T(z) | arXiv:1702.01764 | [src: abstract] |
+| SDSS DR14 (z < 4.5) + XQ-100 | > 5.3 keV | — | Palanque-Delabrouille et al. 2019, arXiv:1911.09073 | [src: abstract] |
 | High-resolution spectra, coldest reionisation histories allowed by data | > 1.9 keV | cold histories; limit set by position of the flux-power maximum | Garzilli et al. 2019, arXiv:1912.09397 | [src] |
-| Boera et al. 2019 spectra, 4.0 ≲ z ≲ 5.2, 1080 Cholla simulations | > 3.1 keV; peak likelihood at 4.5 keV | wide range of thermal histories | Villasenor et al. 2022, arXiv:2209.14220 | [src] |
-| HIRES + UVES, z = 4.2–5.0 | > 5.7 keV | k_max = 0.2 s/km, inhomogeneous reionisation included | Iršič et al. 2023, arXiv:2309.04533 | [src] |
-| Same, restricted to earlier scales and priors | > 4.1 keV | k_max < 0.1 s/km | arXiv:2309.04533 | [src] |
+| Boera et al. 2019 spectra, 4.0 ≲ z ≲ 5.2, 1080 Cholla simulations | > 3.1 keV; peak likelihood at 4.5 keV | wide range of thermal histories | Villasenor et al. 2022, arXiv:2209.14220 | [src: abstract] |
+| HIRES + UVES, z = 4.2–5.0 | > 5.7 keV | k_max = 0.2 s/km, inhomogeneous reionisation included | Iršič et al. 2023, arXiv:2309.04533 | [src: abstract] |
+| Same, restricted to earlier scales and priors | > 4.1 keV | k_max < 0.1 s/km | arXiv:2309.04533 | [src: abstract] |
 
 The range 1.9–5.7 keV matches what `cosmo-lyman-alpha` quotes; that skill holds the data and emulator side.
 
@@ -216,14 +216,14 @@ The range 1.9–5.7 keV matches what `cosmo-lyman-alpha` quotes; that skill hold
 | Probe | m_WDM | Notes | Citation | Flag |
 |---|---|---|---|---|
 | Milky Way satellites, DES + Pan-STARRS1 | > 6.5 keV (free-streaming length ≲ 10 h⁻¹ kpc) | marginalised over galaxy–halo connection, Milky Way mass, disk disruption | Nadler et al. 2020, arXiv:2008.00022 | [src] |
-| Milky Way + M31 satellites (DES, PS1, PAndAS) | > 6.20 keV (95%); > 5.75 keV (20:1 posterior ratio) | not a collaboration analysis | Liu, Gong & Liao 2025, arXiv:2512.01361 | [src] |
-| 8 quadruply imaged quasars, flux ratios | > 5.2 keV (m_hm < 10^7.8 M⊙) | — | Gilman et al. 2019, arXiv:1908.06983 | [src] |
-| 31 lensed quasars, JWST MIRI flux ratios | > 5.6 keV (m_hm < 10^7.8 M⊙, Galacticus subhalo prior) or > 6.4 keV (m_hm < 10^7.6 M⊙, N-body prior), Bayes factor 10:1 | — | Keeley et al. 2025, arXiv:2511.07765 | [src] |
+| Milky Way + M31 satellites (DES, PS1, PAndAS) | > 6.20 keV (95%); > 5.75 keV (20:1 posterior ratio) | not a collaboration analysis | Liu, Gong & Liao 2025, arXiv:2512.01361 | [src: abstract] |
+| 8 quadruply imaged quasars, flux ratios | > 5.2 keV (m_hm < 10^7.8 M⊙) | — | Gilman et al. 2019, arXiv:1908.06983 | [src: abstract] |
+| 31 lensed quasars, JWST MIRI flux ratios | > 5.6 keV (m_hm < 10^7.8 M⊙, Galacticus subhalo prior) or > 6.4 keV (m_hm < 10^7.6 M⊙, N-body prior), Bayes factor 10:1 | — | Keeley et al. 2025, arXiv:2511.07765 | [src: abstract] |
 | 28 quads, JWST, flux ratios + extended arcs | > 6.5 keV (m_hm < 10^7.4 M⊙, Galacticus) or > 7.4 keV (m_hm < 10^7.2 M⊙, N-body), Bayes factor 10:1; free-streaming length < 7.0 or < 6.0 kpc | 0.4 dex gain from the arcs | Gilman et al. 2025, arXiv:2511.07513; Gilman et al. 2026, arXiv:2606.05277 | [src] |
-| GD-1 and Pal 5 streams | > 3.6 keV streams alone; > 6.2 keV with dwarf satellite counts | — | Banik et al. 2019, arXiv:1911.02663 | [src] |
-| Lensing (extended sources) + Lyα + Milky Way satellites | > 6.048 keV (λ_hm < 0.089 Mpc/h, M_hm < 3 × 10⁷ M⊙/h); a likelihood-ratio 1/20 criterion gives 2.552 keV | — | Enzi et al. 2020, arXiv:2010.13802 | [src] |
-| Lensing flux ratios + Milky Way satellites, joint | > 9.7 keV (M_hm < 10^7.0 M⊙); 7.4 keV disfavoured 20:1 | stated 30% gain over each probe alone | Nadler et al. 2021, arXiv:2101.07810 | [src] |
-| Galaxy ultraviolet luminosity functions, JWST z = 9–14.5 with HST z = 4–8 | ≥ 3.2 keV | marginalised over star-formation-efficiency parameters | Liu, Shan & Zhang 2024, arXiv:2404.13596 | [src] |
+| GD-1 and Pal 5 streams | > 3.6 keV streams alone; > 6.2 keV with dwarf satellite counts | — | Banik et al. 2019, arXiv:1911.02663 | [src: abstract] |
+| Lensing (extended sources) + Lyα + Milky Way satellites | > 6.048 keV (λ_hm < 0.089 Mpc/h, M_hm < 3 × 10⁷ M⊙/h); a likelihood-ratio 1/20 criterion gives 2.552 keV | — | Enzi et al. 2020, arXiv:2010.13802 | [src: abstract] |
+| Lensing flux ratios + Milky Way satellites, joint | > 9.7 keV (M_hm < 10^7.0 M⊙); 7.4 keV disfavoured 20:1 | stated 30% gain over each probe alone | Nadler et al. 2021, arXiv:2101.07810 | [src: abstract] |
+| Galaxy ultraviolet luminosity functions, JWST z = 9–14.5 with HST z = 4–8 | ≥ 3.2 keV | marginalised over star-formation-efficiency parameters | Liu, Shan & Zhang 2024, arXiv:2404.13596 | [src: abstract] |
 
 Two JWST lensing numbers circulate (5.6/6.4 keV and 6.5/7.4 keV). They come from the same survey: the first uses flux ratios only, the second adds the lensed arcs. Each has two values because the subhalo-abundance prior differs.
 
@@ -232,7 +232,7 @@ Two JWST lensing numbers circulate (5.6/6.4 keV and 6.5/7.4 keV). They come from
 
 | Statement | Citation | Flag |
 |---|---|---|
-| Unidentified line at E = (3.55–3.57) ± 0.03 keV in a stack of 73 clusters; if all dark matter is a 7.1 keV sterile neutrino, sin²(2θ) = 7 × 10⁻¹¹ | Bulbul et al. 2014, arXiv:1402.2301 | [src] |
+| Unidentified line at E = (3.55–3.57) ± 0.03 keV in a stack of 73 clusters; if all dark matter is a 7.1 keV sterile neutrino, sin²(2θ) = 7 × 10⁻¹¹ | Bulbul et al. 2014, arXiv:1402.2301 | [src: abstract] |
 | No line in more than 30 Ms of XMM-Newton blank-sky data; decaying-dark-matter origin stated to be excluded | Dessert, Rodd & Safdi 2018, arXiv:1812.06976 | [src] |
 | Rebuttals: the limit relaxes by a factor of about 20 (Abazajian 2020, arXiv:2004.06170) or by more than an order of magnitude (Boyarsky et al. 2020, arXiv:2004.06601) under different background modelling; the original authors replied and maintained the exclusion (reply read this session, not listed in `sources.tsv`) | — | [src] |
 | Structure-formation side: the 7.1 keV sterile neutrino is ruled out for lepton asymmetries L6 > 10 | arXiv:2010.13802 | [src] |
@@ -245,15 +245,15 @@ Two JWST lensing numbers circulate (5.6/6.4 keV and 6.5/7.4 keV). They come from
 
 | Probe | Limit | Citation | Flag |
 |---|---|---|---|
-| Lyα, XQ-100 + HIRES/MIKE | > 20 × 10⁻²² eV (2σ) allowing temperature jumps; > 37.5 × 10⁻²² eV for a power-law thermal history | Iršič et al. 2017, arXiv:1703.04683 | [src] |
+| Lyα, XQ-100 + HIRES/MIKE | > 20 × 10⁻²² eV (2σ) allowing temperature jumps; > 37.5 × 10⁻²² eV for a power-law thermal history | Iršič et al. 2017, arXiv:1703.04683 | [src: abstract] |
 | Lyα, emulator of hydrodynamical simulations | > 2 × 10⁻²⁰ eV (95%) | Rogers & Peiris 2020, arXiv:2007.12705 | [src] |
-| Lyα P1D at z = 4.2, 4.6, 5.0, neural-network emulator | > 1.9 × 10⁻²¹ eV (95%) | Liu, Gong & Zhou 2026, arXiv:2606.06969 | [src] |
+| Lyα P1D at z = 4.2, 4.6, 5.0, neural-network emulator | > 1.9 × 10⁻²¹ eV (95%) | Liu, Gong & Zhou 2026, arXiv:2606.06969 | [src: abstract] |
 | Milky Way satellites (DES + PS1) | > 2.9 × 10⁻²¹ eV (95%) | arXiv:2008.00022 | [src] |
-| Milky Way + M31 satellites | > 1.74 × 10⁻²⁰ eV (95%) | arXiv:2512.01361 | [src] |
-| Stellar streams (GD-1, Pal 5) | > 1.4 × 10⁻²¹ eV; > 2.2 × 10⁻²¹ eV with satellite counts | arXiv:1911.02663 | [src] |
+| Milky Way + M31 satellites | > 1.74 × 10⁻²⁰ eV (95%) | arXiv:2512.01361 | [src: abstract] |
+| Stellar streams (GD-1, Pal 5) | > 1.4 × 10⁻²¹ eV; > 2.2 × 10⁻²¹ eV with satellite counts | arXiv:1911.02663 | [src: abstract] |
 | Sizes and stellar kinematics of Segue 1 and Segue 2 (dynamical heating by granules) | > 3 × 10⁻¹⁹ eV (99%) | Dalal & Kravtsov 2022, arXiv:2203.05750 | [src] |
 | Stellar kinematics of Leo II, wavefunction reconstruction | > 2.2 × 10⁻²¹ eV (95%), independent of cosmology and production mechanism | Zimmermann et al. 2024, arXiv:2405.20374 | [src] |
-| One VLBI lensed arc at < 5 mas resolution | m ≤ 4.4 × 10⁻²¹ eV excluded at 20:1 posterior odds; vector case > 1.4 × 10⁻²¹ eV | Powell et al. 2023, arXiv:2302.10941 | [src] |
+| One VLBI lensed arc at < 5 mas resolution | m ≤ 4.4 × 10⁻²¹ eV excluded at 20:1 posterior odds; vector case > 1.4 × 10⁻²¹ eV | Powell et al. 2023, arXiv:2302.10941 | [src: abstract] |
 | Warm-wave dark matter with a subhorizon field spectrum peaked at k* | m > 6 × 10⁻¹⁸ eV (k*/10⁴ Mpc⁻¹) for k* > 10⁴ Mpc⁻¹ | Nadler et al. 2026, arXiv:2605.15371 | [src] |
 
 The Lyα lower limits differ by an order of magnitude (1.9 × 10⁻²¹ to 2 × 10⁻²⁰ eV) across analyses of comparable high-redshift data; the 2026 paper marginalises over intergalactic-medium parameters with its own emulator and is the weakest of the three.
@@ -263,11 +263,11 @@ The Lyα lower limits differ by an order of magnitude (1.9 × 10⁻²¹ to 2 × 
 
 | Mass range | Limit (95%) | Data | Citation | Flag |
 |---|---|---|---|---|
-| 10⁻³² ≤ m ≤ 10⁻²⁵·⁵ eV | Ω_a/Ω_d < 0.05, Ω_a h² < 0.006 | WMAP, Planck, ACT, SPT, WiggleZ | Hložek et al. 2014, arXiv:1410.2896 | [src] |
+| 10⁻³² ≤ m ≤ 10⁻²⁵·⁵ eV | Ω_a/Ω_d < 0.05, Ω_a h² < 0.006 | WMAP, Planck, ACT, SPT, WiggleZ | Hložek et al. 2014, arXiv:1410.2896 | [src: abstract] |
 | m ≤ 10⁻²⁶ eV; 10⁻³⁰ ≤ m ≤ 10⁻²⁸ eV | < 10% of the dark matter; < 1% | Planck 2018 + BOSS power spectrum and bispectrum | Rogers et al. 2023, arXiv:2301.08361 | [src] |
 | m ≈ 10⁻²⁹ eV | as low as 0.3% of the total matter density | DESI DR1 full shape + Planck + ACT | Verdiani et al. 2026, arXiv:2607.11876 | [src] |
 | m = 10⁻²⁶ eV; 10⁻²⁵ eV | < 1.5%; < 9% of the dark matter | Planck, ACT and SPT-3G CMB lensing, non-linear axion model | Laguë et al. 2026, arXiv:2606.06410 | [src] |
-| log10(m/eV) = −23, −22, −21 | f_FDM < 0.07, 0.12, 0.65 | Lyα P1D, z = 4.2–5.0 | arXiv:2606.06969 | [src] |
+| log10(m/eV) = −23, −22, −21 | f_FDM < 0.07, 0.12, 0.65 | Lyα P1D, z = 4.2–5.0 | arXiv:2606.06969 | [src: abstract] |
 
 Hints that did not survive combination: BOSS alone preferred axions at 2.7σ for m = 10⁻²⁶ eV (arXiv:2301.08361); the DESI luminous red galaxy sample shows a mild preference at the same mass that vanishes with CMB data (arXiv:2607.11876); ACT lensing shows a 2.1σ preference at 10⁻²⁴·⁵ eV driven by a few data points (arXiv:2606.06410).
 
@@ -276,10 +276,10 @@ Hints that did not survive combination: BOSS alone preferred axions at 2.7σ for
 
 | Interaction | Limit | Data | Citation | Flag |
 |---|---|---|---|---|
-| Dark matter–proton, velocity-independent, spin-independent | σ < 5.3 × 10⁻²⁷ cm² (1 keV), 3.0 × 10⁻²⁶ cm² (1 MeV), 1.7 × 10⁻²⁵ cm² (1 GeV), 1.6 × 10⁻²³ cm² (1 TeV) | Planck temperature, polarisation and lensing | Gluscevic & Boddy 2017, arXiv:1712.07133 | [src] |
+| Dark matter–proton, velocity-independent, spin-independent | σ < 5.3 × 10⁻²⁷ cm² (1 keV), 3.0 × 10⁻²⁶ cm² (1 MeV), 1.7 × 10⁻²⁵ cm² (1 GeV), 1.6 × 10⁻²³ cm² (1 TeV) | Planck temperature, polarisation and lensing | Gluscevic & Boddy 2017, arXiv:1712.07133 | [src: abstract] |
 | Dark matter–baryon, velocity-independent | σ < 2 × 10⁻²⁹ cm² (10 keV), 6 × 10⁻²⁷ cm² (10 GeV); scaling m^1/4 below 1 GeV and m above | Milky Way satellite population | Nadler et al. 2019, arXiv:1904.10000 | [src] |
-| Dark matter–proton, velocity-independent | σ0 < 8.8 × 10⁻²⁹ cm² for a 100 MeV particle | Milky Way satellites, DES + PS1 | arXiv:2008.00022 | [src] |
-| Dark matter–proton, σ = σ0 (v/c)ⁿ, 1 MeV particle | σ0 < 1.1 × 10⁻²⁵ cm² (n = 2), 2.1 × 10⁻²² cm² (n = 4); for n = 0 within an order of magnitude of the Lyα and satellite limits | HST ultraviolet luminosity functions, z ≈ 4–10, blank and lensed fields, + Planck + Pantheon | Lazare et al. 2025, arXiv:2510.10757 | [src] |
+| Dark matter–proton, velocity-independent | σ0 < 8.8 × 10⁻²⁹ cm² for a 100 MeV particle | Milky Way satellites, DES + PS1 | arXiv:2008.00022 | [src: abstract] |
+| Dark matter–proton, σ = σ0 (v/c)ⁿ, 1 MeV particle | σ0 < 1.1 × 10⁻²⁵ cm² (n = 2), 2.1 × 10⁻²² cm² (n = 4); for n = 0 within an order of magnitude of the Lyα and satellite limits | HST ultraviolet luminosity functions, z ≈ 4–10, blank and lensed fields, + Planck + Pantheon | Lazare et al. 2025, arXiv:2510.10757 | [src: abstract] |
 | Dark matter–neutrino | u_νχ ≤ 1.5 × 10⁻⁸; stated to exclude earlier hints of non-zero interaction | high-resolution Lyα forest, dedicated hydrodynamical simulations | Mosbech et al. 2026, arXiv:2607.15020 | [src] |
 | Dark matter–dark radiation | ETHOS-4 model excluded at the inferred 95 percentiles | lensing + Lyα + satellites | arXiv:2010.13802 | [src] |
 | Collisionless dark matter, only a small axion-like fraction allowed | consistent | ACT DR6 + Planck | arXiv:2503.14454 | [src] |
@@ -291,15 +291,15 @@ The CMB limits and the satellite limits on the same cross section differ by orde
 
 | System, relative velocity | Result | Citation | Flag |
 |---|---|---|---|
-| Bullet Cluster 1E 0657-56, offset method | σ/m < 1.25 cm²/g (68%) | Randall et al. 2007, arXiv:0704.0261 | [src] |
+| Bullet Cluster 1E 0657-56, offset method | σ/m < 1.25 cm²/g (68%) | Randall et al. 2007, arXiv:0704.0261 | [src: abstract] |
 | Bullet Cluster, mass-to-light ratio argument | σ/m < 0.7 cm²/g | arXiv:0704.0261 | [src] |
 | Bullet Cluster re-simulated | constraint depends more on how positions are measured than on initial conditions; earlier tight limits overstated | Robertson, Massey & Eke 2016, arXiv:1605.04307 | [src] |
-| 72 cluster collisions, dark matter–star offset 5.8 ± 8.2 kpc | σ/m < 0.47 cm²/g (95%) | Harvey et al. 2015, arXiv:1503.07675 | [src] |
-| Relaxed groups, Jeans analysis | σ/m = 0.5 ± 0.2 cm²/g | Sagunski et al. 2020, arXiv:2006.12515 | [src] |
-| Relaxed clusters, Jeans analysis | σ/m = 0.19 ± 0.09 cm²/g; < 0.35 cm²/g (95%) | arXiv:2006.12515 | [src] |
-| 8 clusters, strong lensing, mean relative velocity 1458 (+80/−81) km/s | σ/m = 0.082 (+0.027/−0.021) cm²/g; < 0.13 cm²/g (95%) | Andrade et al. 2020, arXiv:2012.06611 | [src] |
+| 72 cluster collisions, dark matter–star offset 5.8 ± 8.2 kpc | σ/m < 0.47 cm²/g (95%) | Harvey et al. 2015, arXiv:1503.07675 | [src: abstract] |
+| Relaxed groups, Jeans analysis | σ/m = 0.5 ± 0.2 cm²/g | Sagunski et al. 2020, arXiv:2006.12515 | [src: abstract] |
+| Relaxed clusters, Jeans analysis | σ/m = 0.19 ± 0.09 cm²/g; < 0.35 cm²/g (95%) | arXiv:2006.12515 | [src: abstract] |
+| 8 clusters, strong lensing, mean relative velocity 1458 (+80/−81) km/s | σ/m = 0.082 (+0.027/−0.021) cm²/g; < 0.13 cm²/g (95%) | Andrade et al. 2020, arXiv:2012.06611 | [src: abstract] |
 | Dwarfs to clusters, combined fit | about 2 cm²/g on galaxy scales falling to about 0.1 cm²/g on cluster scales | Kaplinghat, Tulin & Yu 2015, arXiv:1508.03339 | [src] |
-| SPARC rotation curves, isothermal Jeans model with core collapse | L-shaped degeneracy: σ0 ≈ 2 cm²/g with ω ≳ 500 km/s, or σ0 ≈ 100 cm²/g with ω ≈ 60 km/s; best fit under the core-growth reading σ0 ≃ 5 cm²/g, ω ≃ 250 km/s; about 1/6 of galaxies admit both a core-growth and a core-collapse solution | Jia et al. 2026, arXiv:2601.17118 | [src] |
+| SPARC rotation curves, isothermal Jeans model with core collapse | L-shaped degeneracy: σ0 ≈ 2 cm²/g with ω ≳ 500 km/s, or σ0 ≈ 100 cm²/g with ω ≈ 60 km/s; best fit under the core-growth reading σ0 ≃ 5 cm²/g, ω ≃ 250 km/s; about 1/6 of galaxies admit both a core-growth and a core-collapse solution | Jia et al. 2026, arXiv:2601.17118 | [src: abstract] |
 
 Reading rule: a velocity-independent cross section of order 1 cm²/g, the value originally invoked for dwarf cores, is disfavoured by groups and clusters; a cross section that falls with velocity is not (arXiv:2006.12515). A self-interaction limit is meaningless without the velocity at which it applies. Reviews: Tulin & Yu 2017, arXiv:1705.02358; Adhikari et al. 2022, arXiv:2207.10638.
 
@@ -308,12 +308,12 @@ Reading rule: a velocity-independent cross section of order 1 cm²/g, the value 
 
 | Model | Result | Data | Citation | Flag |
 |---|---|---|---|---|
-| Fraction f of dark matter decaying to dark radiation | at most 3.8% decayed between recombination and today (95%); f Γ < 6.3 × 10⁻³ Gyr⁻¹ for long lifetimes | CMB only (2016) | Poulin, Serpico & Lesgourgues 2016, arXiv:1606.02073 | [src] |
-| Same model | f_dcdm ≲ 0.022 for lifetimes shorter than the age of the Universe; τ/f_dcdm ≳ 250 Gyr in the long-lived regime | Planck + Pantheon + BOSS (EFT full shape) | Simon et al. 2022, arXiv:2203.07440 | [src] |
-| Decay to dark radiation + warm daughter (two-body) | best fit with an S8 prior: τ = 120 Gyr, v_kick/c ≃ 1.2% | same + KiDS-1000 S8 prior | arXiv:2203.07440 | [src] |
-| Two-body decay, profile likelihood | half-life 6.93 (+7.88/−2.85) Gyr, kick 1250 (+1450/−1000) km/s at 68% CL; differs strongly from Bayesian intervals (volume effect) | Planck + SDSS BAO | Montandon et al. 2025, arXiv:2505.20193 | [src] |
+| Fraction f of dark matter decaying to dark radiation | at most 3.8% decayed between recombination and today (95%); f Γ < 6.3 × 10⁻³ Gyr⁻¹ for long lifetimes | CMB only (2016) | Poulin, Serpico & Lesgourgues 2016, arXiv:1606.02073 | [src: abstract] |
+| Same model | f_dcdm ≲ 0.022 for lifetimes shorter than the age of the Universe; τ/f_dcdm ≳ 250 Gyr in the long-lived regime | Planck + Pantheon + BOSS (EFT full shape) | Simon et al. 2022, arXiv:2203.07440 | [src: abstract] |
+| Decay to dark radiation + warm daughter (two-body) | best fit with an S8 prior: τ = 120 Gyr, v_kick/c ≃ 1.2% | same + KiDS-1000 S8 prior | arXiv:2203.07440 | [src: abstract] |
+| Two-body decay, profile likelihood | half-life 6.93 (+7.88/−2.85) Gyr, kick 1250 (+1450/−1000) km/s at 68% CL; differs strongly from Bayesian intervals (volume effect) | Planck + SDSS BAO | Montandon et al. 2025, arXiv:2505.20193 | [src: abstract] |
 | Decaying dark matter as a way to relax Σm_ν | background data alone allow Σm_ν of order 1 eV; full Planck likelihood with lensing restores Σm_ν ≲ 0.079 eV | BAO + SNe + CMB | Montandon et al. 2026, arXiv:2603.03284 | [src] |
-| Self-interacting neutrinos, strongly interacting mode (2019) | H0 = 72.3 ± 1.4, σ8 = 0.786 ± 0.020, N_eff = 4.02 ± 0.29 | Planck 2015-era data | Kreisch, Cyr-Racine & Doré 2019, arXiv:1902.00534 | [src] |
+| Self-interacting neutrinos, strongly interacting mode (2019) | H0 = 72.3 ± 1.4, σ8 = 0.786 ± 0.020, N_eff = 4.02 ± 0.29 | Planck 2015-era data | Kreisch, Cyr-Racine & Doré 2019, arXiv:1902.00534 | [src: abstract] |
 | Neutrino self-interactions, 2025 | no evidence | ACT DR6 + Planck | arXiv:2503.14454 | [src] |
 | Wess–Zumino (stepped) dark radiation; atomic dark matter with coupled dark radiation | ACT DR6 closes most of the parameter space that had allowed higher H0 | ACT DR6 | Cvetko, Joseph & Marques-Tavares 2025, arXiv:2512.19633 | [src] |
 | Light sterile neutrino, fully thermalised | strongly disfavoured without a local H0 prior; partially populated (Dodelson–Widrow-like or cooler) cases remain viable | Planck + DESI DR2 BAO + SNe | Ladeira et al. 2026, arXiv:2606.21518 | [src] |
@@ -327,10 +327,10 @@ Reading rule: a velocity-independent cross section of order 1 cm²/g, the value 
 | Year | Data | Limit | Citation | Flag | Status |
 |---|---|---|---|---|---|
 | 2018 | Planck 2018 + BAO | < 0.12 eV | arXiv:1807.06209 | [src] | superseded as the headline; still the last limit that predates DESI |
-| 2019 | SDSS DR14 Lyα + Planck, with running free | < 0.11 eV; < 0.09 eV with CMB lensing and BAO | arXiv:1911.09073 | [src] | superseded; relies on the eBOSS-era P1D likelihood, see `cosmo-lyman-alpha` |
-| 2024 | DESI DR1 BAO + CMB | < 0.072 eV (prior Σm_ν > 0); < 0.113 eV (prior Σm_ν > 0.059 eV) | DESI Collaboration 2024, arXiv:2404.03002 | [src] | superseded by DR2 |
+| 2019 | SDSS DR14 Lyα + Planck, with running free | < 0.11 eV; < 0.09 eV with CMB lensing and BAO | arXiv:1911.09073 | [src: abstract] | superseded; relies on the eBOSS-era P1D likelihood, see `cosmo-lyman-alpha` |
+| 2024 | DESI DR1 BAO + CMB | < 0.072 eV (prior Σm_ν > 0); < 0.113 eV (prior Σm_ν > 0.059 eV) | DESI Collaboration 2024, arXiv:2404.03002 | [src: abstract] | superseded by DR2 |
 | 2025 | ACT DR6 + Planck + lensing + DESI DR1 | < 0.089 eV (0.082 eV in the abstract) | arXiv:2503.14454 | [src] | current for ACT; uses DR1 BAO |
-| 2025 | DESI DR2 BAO + CMB | < 0.0642 eV | arXiv:2503.14744 | [src] | current DESI Collaboration value |
+| 2025 | DESI DR2 BAO + CMB | < 0.0642 eV | arXiv:2503.14744 | [src: abstract] | current DESI Collaboration value |
 | 2026 | DESI DR1 Lyα P1D added to CMB + BAO | "do not significantly tighten the limits" | Chaves-Montero et al. 2026, arXiv:2601.21432 abstract | [src] | `cosmo-lyman-alpha` gives the shift as 55.1 → 53.7 meV [sec, sibling skill] |
 | 2026 | SPT-3G D1 lensing + CMB + BAO | < 0.072 eV | arXiv:2608.31136 | [src] | current for SPT |
 
@@ -341,12 +341,12 @@ The limit fell by a factor of about two between 2018 and 2025 while the effectiv
 
 | Year | Data | Value | Citation | Flag |
 |---|---|---|---|---|
-| 2018 | Planck 2018 + BAO | 2.99 ± 0.17 | arXiv:1807.06209 | [src] |
-| 2022 | BBN + CMB | 2.898 ± 0.141 | arXiv:2207.13133 | [src] |
-| 2025 | P-ACT-LB | 2.86 ± 0.13 | arXiv:2503.14454 | [src] |
+| 2018 | Planck 2018 + BAO | 2.99 ± 0.17 | arXiv:1807.06209 | [src: abstract] |
+| 2022 | BBN + CMB | 2.898 ± 0.141 | arXiv:2207.13133 | [src: abstract] |
+| 2025 | P-ACT-LB | 2.86 ± 0.13 | arXiv:2503.14454 | [src: abstract] |
 | 2025 | CMB-SPA | 2.82 ± 0.12 | arXiv:2506.20707 | [src] |
-| 2025 | DESI DR2 BAO + Planck + lensing | 3.23 ± 0.18 | arXiv:2503.14744 | [src] |
-| 2026 | LBT Y_p + D/H + CMB | 2.925 ± 0.082 | arXiv:2601.22239 | [src] |
+| 2025 | DESI DR2 BAO + Planck + lensing | 3.23 ± 0.18 | arXiv:2503.14744 | [src: Sect. IV.3] |
+| 2026 | LBT Y_p + D/H + CMB | 2.925 ± 0.082 | arXiv:2601.22239 | [src: abstract] |
 | 2026 | DESI DR1 Lyα P1D + CMB + BAO | 3.02 ± 0.10 | arXiv:2601.21432 abstract | [src] |
 
 ### 8.3 Thermal-relic warm dark matter mass, Lyα forest

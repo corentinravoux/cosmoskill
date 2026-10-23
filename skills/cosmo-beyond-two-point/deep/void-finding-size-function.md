@@ -100,7 +100,7 @@ tracer field [src: arXiv:2212.03873, Sect. III.2]:
 
 1. Reject a void if a sphere of radius R_central = 2 MGS(z) around its VIDE
    centre does not reach δ_v,tr(R_central) < −0.7. MGS(z) = n_gal(z)^{−1/3} is
-   the mean galaxy separation.
+   the mean galaxy separation [src: arXiv:2212.03873, Sect. III.2].
 2. Rescale each surviving void to the radius R at which the enclosed tracer
    density contrast equals δ_v,tr^NL.
 3. Remove overlapping voids one by one, rejecting the one with the higher
@@ -113,7 +113,7 @@ spline fit to n_gal(z) [src: same].
 
 What the cleaning removes, Euclid Flagship light cone (redshift space,
 0.95 < z < 1.70): VIDE finds 33 828 voids above f_cut MGS, and 2 054 remain
-after cleaning [src: arXiv:2205.11525, Table 1], about 6% [der: 2054/33828].
+after cleaning [src: arXiv:2205.11525, Table 1].
 The authors expect the sharp fall, since cleaning keeps the largest and
 deepest underdensities and shrinks them, which pushes many below the radius
 cut [src: Sect. 2.2].
@@ -181,7 +181,8 @@ Weygaert) is
 where σ is the rms of the linear matter field on the Lagrangian scale R_L,
 δ_v^L the linear void-formation threshold and δ_c^L the linear collapse
 threshold. δ_c^L lies between 1.06 and 1.686 and only changes the number of
-very small voids, which the cut removes [src: footnote to Eq. 2]. The
+very small voids, which the cut removes [src: arXiv:2212.03873, Sect. II.1,
+footnote to Eq. 2]. The
 volume-conserving (Vdn) model of Jennings et al. gives the counts per unit
 log radius,
 
@@ -268,7 +269,7 @@ instead (Choices below).
 The BOSS analysis calibrates (C_slope, C_offset) on the median counts of 100
 Patchy mocks, with b_eff σ8 from each mock's 2PCF as a Gaussian prior and the
 Patchy cosmology fixed [src: arXiv:2212.03873, Sect. III.4]. It then runs two
-versions on the data [src: Sect. III.4, Table 1]:
+versions on the data [src: arXiv:2212.03873, Sect. III.4, Table 1]:
 
 | Version | What is assumed | Ω_m (ΛCDM) | σ8 (ΛCDM) | w (wCDM) |
 |---|---|---|---|---|
@@ -383,15 +384,15 @@ radii [src: Sect. 5.1]. The review reproduces this comparison as its Fig. 4
   void–galaxy cross power spectrum and P_gg: Σm_ν < 0.43 eV (P_gg) and
   < 0.35 eV (all), 95%, k_max = 0.15 h Mpc⁻¹, Planck-inspired ΛCDM prior; void
   statistics may constrain Σm_ν "most effectively from below"
-  (arXiv:2307.07555) [src].
+  (arXiv:2307.07555) [src: abstract].
 - **HOD forward model, forecast.** VSF + w_p,vg + w_p,gg in DESI Y5: 1.5% on
-  Ω_m and 0.8% on σ8, **forecast** (arXiv:2504.08221) [src].
+  Ω_m and 0.8% on σ8, **forecast** (arXiv:2504.08221) [src: abstract].
 - **Information content, forecasts.** GIGANTES: σ(Σm_ν) = 0.13 eV from voids
   alone and 0.09 eV with halos for 1 h⁻³Gpc³, no CMB prior, **forecast**
-  (arXiv:2107.02304) [src]; Bayer et al.: P(k) + halo mass function + VSF give
+  (arXiv:2107.02304) [src: abstract]; Bayer et al.: P(k) + halo mass function + VSF give
   σ(M_ν) = 0.018 eV for 1 (h⁻¹Gpc)³, **forecast**, an underestimate without
   super-sample covariance, baryons and survey systematics (arXiv:2102.05049)
-  [src]. DEMNUni: dark energy and neutrino masses act separably on the VSF
+  [src: abstract]. DEMNUni: dark energy and neutrino masses act separably on the VSF
   (Verza et al. 2022, arXiv:2212.09740) [src].
 
 ## Numbers

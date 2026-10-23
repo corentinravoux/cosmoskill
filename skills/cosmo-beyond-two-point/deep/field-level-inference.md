@@ -156,7 +156,8 @@ arXiv:2509.13435, Sect. 3.3.1].
   𝒜_p, each with a free amplitude A_p under a Jeffreys prior; marginalising
   gives a likelihood in ratios N_i/Σ_{j∈𝒜_p} N_j (Eqs. 9–10), insensitive to
   the absolute intensity on each patch [src: Sect. 2.5]. Motivation: below
-  k ≈ 10⁻² h Mpc⁻¹ the systematics of BOSS are not understood [src: same].
+  k ≈ 10⁻² h Mpc⁻¹ the systematics of BOSS are not understood [src:
+  arXiv:1909.06396, Sect. 2.5].
 - **Model error.** The 2M++ run tempers the Poisson likelihood by a power
   β = 0.3, equivalent to keeping a homogeneous sub-sample N_i → βN_i, hence
   conservative errors [src: arXiv:1806.11117, Sect. 3.5, Eq. 24].
@@ -180,12 +181,13 @@ arXiv:2509.13435, Sect. 3.3.1].
 - Values achieved, Beyond-2pt stage 2: a Gelman–Rubin target written
   "R̂ ∼ 0.01" and ≈ 255 independent samples of α; ten analyses gave ESS
   193–311 and Gelman–Rubin values 0.003–0.035, two chains each, computed with
-  GetDist [src: arXiv:2405.02252, Sect. V.3.3]. Values this small can only
-  be R̂ − 1 [der]. Perturbative LPT model, eight chains of 200 000 samples:
+  GetDist [src: arXiv:2405.02252, Sect. V.3.3]. Perturbative LPT model, eight chains of 200 000 samples:
   ESS 1 415–73 834 and R̂ ≤ 1.007, slowest for A, b_1 and log P_err; this is
   the least efficient case of that paper, and redshift space or a higher
   k_max mix faster because degeneracies are broken [src: arXiv:2509.09673,
   App. G, Table 7].
+- The Beyond-2pt Gelman–Rubin values above are small enough that they can
+  only be R̂ − 1, not R̂ itself [der].
 
 ## Choices and what they cost
 <!-- key: choices-and-what-they-cost -->
@@ -270,7 +272,7 @@ initial conditions, which is cheap [src: Sect. V.3.4, Unmasking criteria].
 | k_max/Λ | 1/1.4 (not optimised) | LEFTfield, Beyond-2pt | arXiv:2405.02252 | Sect. V.3.3 |
 | k_max | 0.1 h Mpc⁻¹, stability criterion Δα/σ_α < 2 | LEFTfield, Beyond-2pt | arXiv:2405.02252 | Eq. 23, Sect. V.3.4 |
 | Bias priors (baseline) | α U(0.5, 1.5); b_δ U(0, 4); b_δ², b_K² U(−4, 4); b_∇²δ U(−20, 20) | LEFTfield, Beyond-2pt | arXiv:2405.02252 | Eqs. 20–21 |
-| Convergence achieved | ESS 193–311; Gelman–Rubin 0.003–0.035 (R̂ − 1 [der]) | LEFTfield, ten boxes | arXiv:2405.02252 | Sect. V.3.3 |
+| Convergence achieved | ESS 193–311; Gelman–Rubin statistic 0.003–0.035, as the paper writes it | LEFTfield, ten boxes | arXiv:2405.02252 | Sect. V.3.3 |
 | Convergence target | R̂ − 1 ≲ 10⁻² (arbitrary) | notes | arXiv:2509.13435 | Sect. 3.3.2 |
 | Autocorrelation window | T ≥ C τ̂(T), C ∈ [5, 10] | LEFTfield tests | arXiv:2212.07875 | App. D |
 | HMC scaling | N_dim^{1/4} against N_dim for random walk | — | arXiv:2212.07875 | Sect. 3.2 |

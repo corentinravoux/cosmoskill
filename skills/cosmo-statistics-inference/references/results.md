@@ -38,14 +38,14 @@ Reading the table: the Hartlap factor and the Dodelson–Schneider factor are of
 | Parameter variance increase from a simulation covariance | factor of order `1 + N_b/N_s` | Dodelson & Schneider 2013, arXiv:1304.2593 | [src] |
 | Best-fit-scatter term, "fractional increase in variance" (not error bar; Hartlap term excluded): BOSS 600 mocks, 41 bins; DLS 1000, 60; CFHTLenS 184, 24 | 7%; 6%; 13% | arXiv:1304.2593 | [src: Table 1] |
 | DESI DR1 full shape: 1000 EZmocks per tracer and redshift bin, Hartlap and Percival 2014 factors, plus a larger tracer-dependent rescaling for mock realism | ~20% Fourier-space EZmock–analytic mismatch with realistic fibre assignment | DESI Collaboration 2024, arXiv:2411.12021 | [src: Sects. 5.7–5.8] |
-| Realisations needed for a 5% error on a parameter error, `N_D << 100` | ≥ 200 | Taylor et al. 2013, arXiv:1212.4359 | [src] |
+| Realisations needed for a 5% error on a parameter error, `N_D << 100` | ≥ 200 | Taylor et al. 2013, arXiv:1212.4359 | [src: abstract] |
 | Standard bootstrap, variance of ξ(s), 1–25 Mpc/h | overestimated by ~40% | Norberg et al. 2009, arXiv:0810.1885 | [src] |
 | Internal covariance, Ω_m–σ8 contour volume against truth (DES 5-year forecast) | ≳ 85% | Friedrich et al. 2016, arXiv:1508.00895 | [src] |
-| Corrected jackknife or bootstrap against 1000 Quijote boxes | within ~10% | Mohammad & Percival 2022, arXiv:2109.07071 | [src] |
-| DES Y3: effect of the `f_sky` approximation on χ² at maximum posterior | +3.7% (Δχ² ≈ 18.9) | Friedrich et al. 2021, arXiv:2012.08568 | [src] |
+| Corrected jackknife or bootstrap against 1000 Quijote boxes | within ~10% | Mohammad & Percival 2022, arXiv:2109.07071 | [src: abstract] |
+| DES Y3: effect of the `f_sky` approximation on χ² at maximum posterior | +3.7% (Δχ² ≈ 18.9) | Friedrich et al. 2021, arXiv:2012.08568 | [src: abstract] |
 | DES Y3: extra scatter of the maximum posterior from evaluating the covariance at the wrong parameters | ~3% for Ω_m and σ8, ~5% for w | arXiv:2012.08568 | [src] |
 | KiDS-1000: bias of S8 from known modelling and inference systematics | ≤ 0.1σ | Joachimi et al. 2021, arXiv:2007.01844 | [src] |
-| RascalC: cost of a finely binned 2PCF covariance | < 100 CPU-hours | Philcox et al. 2019, arXiv:1904.11070 | [src] |
+| RascalC: cost of a finely binned 2PCF covariance | < 100 CPU-hours | Philcox et al. 2019, arXiv:1904.11070 | [src: abstract] |
 | DESI 2024: analytic configuration-space covariance adequate for BAO; analytic Fourier-space covariance does not reproduce the mocks for full shape, hence a corrected mock covariance | qualitative | Forero-Sánchez et al. 2024, arXiv:2411.12027 | [src] |
 
 ### 1.3 Non-Gaussian likelihood and parameter-dependent covariance: documented sizes
@@ -54,8 +54,8 @@ Reading the table: the Hartlap factor and the Dodelson–Schneider factor are of
 | Case | Effect | Source | Flag |
 |---|---|---|---|
 | BOSS power-spectrum multipoles, Gaussian against mock-estimated likelihood | fσ8 shifts by −0.44σ, other parameters not significantly | Hahn et al. 2019, arXiv:1803.06348 | [src] |
-| Group multiplicity function, same test | `log M_1` and α shift by +0.43σ and −0.51σ, broaden by 42% and 66% | arXiv:1803.06348 | [src] |
-| Shear correlation functions, 100 deg² mocks | no significant bias in 1D posteriors of Ω_m, σ8 | Lin et al. 2020, arXiv:1905.03779 | [src] |
+| Group multiplicity function, same test | `log M_1` and α shift by +0.43σ and −0.51σ, broaden by 42% and 66% | arXiv:1803.06348 | [src: abstract] |
+| Shear correlation functions, 100 deg² mocks | no significant bias in 1D posteriors of Ω_m, σ8 | Lin et al. 2020, arXiv:1905.03779 | [src: abstract] |
 | PCA compression of the shear data vector in the same work | dimension reduced by a factor ~5 with most of the information kept | arXiv:1905.03779 | [src] |
 | Parameter-dependent covariance in 3×2pt, survey under 1% of the sky | bias up to O(10%) of the statistical error | Kodwani et al. 2019, arXiv:1811.11584 | [src] |
 | CMB: validity of the Hamimeche–Lewis approximation | ℓ ≳ 30 | Hamimeche & Lewis 2008, arXiv:0801.0554 | [src] |
@@ -69,15 +69,15 @@ Shifts are between the posterior mean and the best fit (maximum likelihood or MA
 |---|---|---|---|---|
 | BOSS full shape, EFTofLSS, ΛCDM, "West-coast" prior (PyBird) | up to 1σ | PyBird and CLASS-PT results agree only at the 1σ level on the same data | Simon et al. 2023, arXiv:2208.05929 | [src] |
 | Same, "East-coast" prior (CLASS-PT) | up to 2σ | best fits of the two priors consistent at ~1σ, ~0.5σ with doubled prior widths | arXiv:2208.05929 | [src] |
-| BOSS (eBOSS) full shape, ΛCDM, profile against posterior | up to 1.0σ (1.6σ) | frequentist intervals wider by factors up to 1.9 (1.6); Planck constraints unchanged | Holm et al. 2023, arXiv:2309.04468 | [src] |
-| DESI DR1 full shape + BAO, ΛCDM: σ8, H0, Ω_m | 0.8σ, 0.3σ, 0.7σ | frequentist: σ8 = 0.863 (+0.048/−0.040), H0 = 68.96 (+0.81/−0.80), Ω_m = 0.3034 ± 0.0110 | Morawetz et al. 2025, arXiv:2508.11811 | [src] |
-| DESI DR1 full shape + BAO, w0waCDM: σ8, H0, Ω_m, w0, wa | 2.1σ, 4.1σ, 6.5σ, 6.3σ, 6.6σ | frequentist: σ8 = 0.782 (+0.060/−0.036), H0 = 63.7 (+4.2/−2.0), Ω_m = 0.378 (+0.024/−0.047), w0 = −0.16 (+0.10/−0.50), wa = −3.0 (+1.7, lower bound not given) | arXiv:2508.11811 | [src] |
+| BOSS (eBOSS) full shape, ΛCDM, profile against posterior | up to 1.0σ (1.6σ) | frequentist intervals wider by factors up to 1.9 (1.6); Planck constraints unchanged | Holm et al. 2023, arXiv:2309.04468 | [src: abstract] |
+| DESI DR1 full shape + BAO, ΛCDM: σ8, H0, Ω_m | 0.8σ, 0.3σ, 0.7σ | frequentist: σ8 = 0.863 (+0.048/−0.040), H0 = 68.96 (+0.81/−0.80), Ω_m = 0.3034 ± 0.0110 | Morawetz et al. 2025, arXiv:2508.11811 | [src: abstract] |
+| DESI DR1 full shape + BAO, w0waCDM: σ8, H0, Ω_m, w0, wa | 2.1σ, 4.1σ, 6.5σ, 6.3σ, 6.6σ | frequentist: σ8 = 0.782 (+0.060/−0.036), H0 = 63.7 (+4.2/−2.0), Ω_m = 0.378 (+0.024/−0.047), w0 = −0.16 (+0.10/−0.50), wa = −3.0 (+1.7, lower bound not given) | arXiv:2508.11811 | [src: abstract] |
 | DESI DR1 full shape, w0waCDM, with supernovae | intervals no longer significantly shifted | qualitative | arXiv:2508.11811 | [src] |
 | DESI DR1 full shape + BBN + n_s, baseline priors | "multi-σ" in H0, w0, wa | Jeffreys prior brings the MAP inside the 68% region | Bonici et al. 2026, arXiv:2607.02498 | [src] |
 | Stage-IV synthetic clustering, w0waCDM, Mpc/h against Mpc priors | from "several standard deviations" to "well within 1σ" | mock data | Pezzotta et al. 2026, arXiv:2610.08751 | [src] |
-| DES Y3 + KiDS-1000 cosmic shear, ΛCDM, S8 | mean 0.790 (+0.018/−0.014) against MAP 0.801 | 1.7σ from Planck | DES & KiDS 2023, arXiv:2305.17173 | [src] |
-| BOSS full shape, wCDM, CMB-free | w = −1.17 (+0.12/−0.11); nuisance priors "informative", broadening them shifts the contours | — | Carrilho et al. 2023, arXiv:2207.14784 | [src] |
-| LSS only (BOSS DR12 full shape + BAO + DES Y3 3×2pt), w0waCDM, reparameterised | w0 = −0.72 ± 0.21, wa = −0.91 (+0.78/−0.64) | MAP inside the marginal interval | Tsedrik et al. 2025, arXiv:2509.09562 | [src] |
+| DES Y3 + KiDS-1000 cosmic shear, ΛCDM, S8 | mean 0.790 (+0.018/−0.014) against MAP 0.801 | 1.7σ from Planck | DES & KiDS 2023, arXiv:2305.17173 | [src: abstract] |
+| BOSS full shape, wCDM, CMB-free | w = −1.17 (+0.12/−0.11); nuisance priors "informative", broadening them shifts the contours | — | Carrilho et al. 2023, arXiv:2207.14784 | [src: abstract] |
+| LSS only (BOSS DR12 full shape + BAO + DES Y3 3×2pt), w0waCDM, reparameterised | w0 = −0.72 ± 0.21, wa = −0.91 (+0.78/−0.64) | MAP inside the marginal interval | Tsedrik et al. 2025, arXiv:2509.09562 | [src: abstract] |
 
 DES Y6 3×2pt measured its own projection effects with a noiseless data vector at the MAP, analysed with the data pipeline and covariance (arXiv:2601.14559, appendix on prior-volume effects) [src]. Pulls are (truth − mean)/σ.
 
@@ -102,11 +102,11 @@ Cost of the mitigations: 320 000 mock catalogues from 10 000 HOD parameter sets 
 | ΛCDM parameters, Planck 2013 | profile likelihood with Minuit | "excellent" agreement | Planck intermediate XVI, arXiv:1311.1657 | [src] |
 | Σm_ν, Planck 2013 CMB + lensing + BAO | < 0.26 eV (95% CL) | "very similar" with Feldman–Cousins | arXiv:1311.1657 | [src] |
 | Σm_ν, Planck 2018 + ACT lensing + DESI (2024), ΛCDM | profile limits agree with the posterior at the ~10% level | < 0.072 eV (95%) | Naredo-Tuero et al. 2024, arXiv:2407.13831 | [src] |
-| Σm_ν, same with HiLLiPoP and without the DESI z = 0.7 bin | — | < 0.11 eV (95%) | arXiv:2407.13831 | [src] |
-| Σm_ν, DESI DR2 BAO + CMB, ΛCDM | < 0.053 eV (95%, Feldman–Cousins) | < 0.0642 eV (95%), marginalised σ = 0.020 eV | Elbers et al. 2025, arXiv:2503.14744 | [src] |
-| Early dark energy fraction, Planck + BOSS full shape | f_EDE = 0.072 ± 0.036 (68% CL) | MCMC limits affected by volume effects (values not transcribed here) | Herold et al. 2022, arXiv:2112.12140 | [src] |
-| Early dark energy, Planck + BOSS | f_EDE = 0.087 ± 0.037, H0 = 70.57 ± 1.36 km/s/Mpc; H0 within 1.7σ of SH0ES for all data sets tried | — | Herold & Ferreira 2023, arXiv:2210.16296 | [src] |
-| Tensor-to-scalar ratio, Planck PR4 + BK18 + lensing + BAO | r < 0.037 (95% CL) | r < 0.038 (flat prior on r) | Campeti & Komatsu 2022, arXiv:2205.05617 | [src] |
+| Σm_ν, same with HiLLiPoP and without the DESI z = 0.7 bin | — | < 0.11 eV (95%) | arXiv:2407.13831 | [src: abstract] |
+| Σm_ν, DESI DR2 BAO + CMB, ΛCDM | < 0.053 eV (95%, Feldman–Cousins) | < 0.0642 eV (95%), marginalised σ = 0.020 eV | Elbers et al. 2025, arXiv:2503.14744 | [src: abstract] |
+| Early dark energy fraction, Planck + BOSS full shape | f_EDE = 0.072 ± 0.036 (68% CL) | MCMC limits affected by volume effects (values not transcribed here) | Herold et al. 2022, arXiv:2112.12140 | [src: abstract] |
+| Early dark energy, Planck + BOSS | f_EDE = 0.087 ± 0.037, H0 = 70.57 ± 1.36 km/s/Mpc; H0 within 1.7σ of SH0ES for all data sets tried | — | Herold & Ferreira 2023, arXiv:2210.16296 | [src: abstract] |
+| Tensor-to-scalar ratio, Planck PR4 + BK18 + lensing + BAO | r < 0.037 (95% CL) | r < 0.038 (flat prior on r) | Campeti & Komatsu 2022, arXiv:2205.05617 | [src: abstract] |
 | Dark matter–proton scattering, Planck 2018 | prior-independent limits | "the Bayesian method consistently overestimates the constraints on the cross section" | Straight et al. 2026, arXiv:2603.25731 | [src] |
 | Wilks, likelihood integration and Feldman–Cousins on non-Gaussian chains | agree within 10% near the Gaussian regime | — | Barua et al. 2025, arXiv:2508.10633 | [src] |
 
@@ -146,9 +146,9 @@ Checks `[der]`: every significance is reproduced by `p = exp(−abs(Δχ²)/2)` 
 | + DES-SN5YR (original calibration) | 4.2σ | `ln B = +3.32 ± 0.27`, quoted as 3.07 ± 0.10σ | arXiv:2511.10631; arXiv:2603.05472 | [src] |
 | + DES-Dovekie (recalibrated) | (see `cosmo-dark-energy-modified-gravity`) | `ln B = −0.30 ± 0.19` | arXiv:2511.10631 | [src] |
 | + Pantheon+ | 2.8σ | `ln B = −0.66 ± 0.44` | DESI extended dark-energy paper, Lodha et al. 2025, arXiv:2503.14743 | [sec: `cosmo-dark-energy-modified-gravity` SKILL.md; the abstract of arXiv:2503.14743 does not give it] |
-| Out-of-sample score, DESI DR2 BAO + CMB + supernovae | — | "modest preferences" for w0waCDM in ΔELPD, supplied entirely by one BAO block, LRG2 at z = 0.706; all supernova samples consistent with zero | Karim et al. 2026, arXiv:2609.04334 | [src] |
+| Out-of-sample score, DESI DR2 BAO + CMB + supernovae | — | "modest preferences" for w0waCDM in ΔELPD, supplied entirely by one BAO block, LRG2 at z = 0.706; all supernova samples consistent with zero | Karim et al. 2026, arXiv:2609.04334 | [src: abstract] |
 
-Where the Bayesian preference comes from, according to arXiv:2511.10631 [src]: a 2.95 ± 0.04σ tension between DESI DR2 and DES-SN5YR within ΛCDM, reduced to 1.96 ± 0.04σ with DES-Dovekie. The extended model is preferred "precisely because its additional parameters act to resolve this specific dataset conflict".
+Where the Bayesian preference comes from, according to arXiv:2511.10631 [src: Sect. III]: a 2.95 ± 0.04σ tension between DESI DR2 and DES-SN5YR within ΛCDM, reduced to 1.96 ± 0.04σ with DES-Dovekie. The extended model is preferred "precisely because its additional parameters act to resolve this specific dataset conflict".
 
 The lesson for a referee: for DESI + CMB the three in-sample statistics read 3.1σ, `Δ(DIC) = −8.7` ("strong" on DESI's own scale) and `ln B = −0.57` (mildly against). None of them is an error; they answer different questions with different treatment of the prior volume of `w0`, `wa`.
 
@@ -168,11 +168,11 @@ The lesson for a referee: for DESI + CMB the three in-sample statistics read 3.1
 | Same | projected on S8 | 2.6σ | arXiv:2601.14559 | [src] |
 | All DES probes (3×2pt, SNe, BAO, clusters) against CMB | parameter difference | 2.8σ | arXiv:2601.14559 | [src] |
 | DES 3×2pt + DESI DR2 BAO + DES SNe + SPT clusters against CMB | parameter difference | 2.3σ | arXiv:2601.14559 | [src] |
-| LSS combinations against Planck 2015 + Pol + BAO | method of Battye, Charnock & Moss | 2.55σ for the most discrepant LSS combination, 0.76σ for the most concordant | Charnock, Battye & Moss 2017, arXiv:1703.05959 | [src] |
+| LSS combinations against Planck 2015 + Pol + BAO | method of Battye, Charnock & Moss | 2.55σ for the most discrepant LSS combination, 0.76σ for the most concordant | Charnock, Battye & Moss 2017, arXiv:1703.05959 | [src: abstract] |
 | DES Y3 + KiDS-1000 shear against Planck | as quoted | 1.7σ | arXiv:2305.17173 | [src] |
-| DESI DR2 against DES-SN5YR, ΛCDM | five metrics, combined statement | 2.95 ± 0.04σ; 1.96 ± 0.04σ with DES-Dovekie | Ong et al. 2025, arXiv:2511.10631 | [src] |
-| DES Y1 internal consistency | posterior predictive p-value | 0.046; 0.10 after removing about 1.5% of the data vector | Doux et al. 2021, arXiv:2011.03410 | [src] |
-| Accuracy of non-Gaussian parameter-shift estimators | benchmark | within 0.2σ generally, 0.5σ in difficult cases | Raveri & Doux 2021, arXiv:2105.03324 | [src] |
+| DESI DR2 against DES-SN5YR, ΛCDM | five metrics, combined statement | 2.95 ± 0.04σ; 1.96 ± 0.04σ with DES-Dovekie | Ong et al. 2025, arXiv:2511.10631 | [src: Sect. III] |
+| DES Y1 internal consistency | posterior predictive p-value | 0.046; 0.10 after removing about 1.5% of the data vector | Doux et al. 2021, arXiv:2011.03410 | [src: abstract] |
+| Accuracy of non-Gaussian parameter-shift estimators | benchmark | within 0.2σ generally, 0.5σ in difficult cases | Raveri & Doux 2021, arXiv:2105.03324 | [src: abstract] |
 | KiDS-Legacy cosmic shear against Planck | Hellinger distance: 0.73σ in Σ8 (the abstract's figure), 0.76σ in S8 [src: Sect. 7] | 0.73σ / 0.76σ | Wright et al. 2025, arXiv:2503.19441 | [src] |
 | CMB against DESI DR2 BAO, ΛCDM | as quoted by each collaboration | 1.6σ (P-ACT), 2.8σ (SPT-3G + ACT + Planck, Ω_m–h r_d plane) | arXiv:2503.14452, arXiv:2506.20707 | [src] |
 
@@ -200,7 +200,7 @@ Two readings of the table. First, the DES Y6 pair (1.8σ and 2.6σ on the same p
 | CosmoPower | CMB TT, TE, EE and lensing potential spectra | error ≲ 10% of the expected Simons Observatory shot noise | 5σ region around the Planck best fit | arXiv:2106.03846 | [src] |
 | CosmoPower | speed-up of the full inference pipeline | up to O(10^4) | — | arXiv:2106.03846 | [src] |
 | EuclidEmulator2 | non-linear correction to the matter power spectrum | 1% or better against high-resolution dark-matter-only simulations | 0.01 ≤ k ≤ 10 h/Mpc, z ≤ 3, w0waCDM + Σm_ν (8 parameters) | Euclid Collaboration 2021, arXiv:2010.11288 | [src] |
-| EuclidEmulator2 | training set | over 250 simulations, 3000³ particles, 1 (Gpc/h)³, paired-and-fixed | — | arXiv:2010.11288 | [src] |
+| EuclidEmulator2 | training set | over 250 simulations, 3000³ particles, 1 (Gpc/h)³, paired-and-fixed | — | arXiv:2010.11288 | [src: abstract] |
 
 These are interpolation accuracies against the training-type calculation. They are not the accuracy of the prediction against the real Universe: a 1% dark-matter-only emulator says nothing about baryonic feedback at k of a few h/Mpc.
 
@@ -214,7 +214,7 @@ These are interpolation accuracies against the training-type calculation. They a
 | Gaussian linear model, neural posterior and likelihood estimation with normalising flows | posterior variance inflated by at least the Dodelson–Schneider amount for the same number of simulations; the true contour is recovered "given enough simulations" | Homer et al. 2024, arXiv:2412.02311 | [src] |
 | KiDS-1000 cosmic shear pseudo-C_ℓ, 18 000 realisations, ΛCDM | S8 = 0.731 ± 0.033; probability-to-exceed 0.42; learnt likelihood approximately Gaussian at fixed cosmology; constraints wider than with a Gaussian likelihood because of the cosmology dependence of the covariance | von Wietersheim-Kramsta et al. 2024, arXiv:2404.15402 | [src] |
 | Same: neglecting variable depth and PSF anisotropy in the forward model | S8 overestimated by ~5% | arXiv:2404.15402 | [src] |
-| f_NL from halo fields, 1000 realisations, ratio estimation against likelihood-based inference | means and skewness agree; variance agrees on average only; kurtosis differs; for P + B the learned posteriors are "often underconfident ... despite passing coverage tests" | Alokda et al. 2026, arXiv:2605.00980 | [src] |
+| f_NL from halo fields, 1000 realisations, ratio estimation against likelihood-based inference | means and skewness agree; variance agrees on average only; kurtosis differs; for P + B the learned posteriors are "often underconfident ... despite passing coverage tests" | Alokda et al. 2026, arXiv:2605.00980 | [src: abstract] |
 | Euclid-like Gaussian shear mocks, explicit Gaussian likelihood against learned likelihood, TARP | the explicit likelihood is "strongly miscalibrated under emulation inaccuracies or likelihood non-Gaussianity"; constraints differ by up to a factor of two from the map-level network with the explicit likelihood, about 30% with the learned one | Vinciguerra et al. 2026, arXiv:2607.17942 | [src] |
 | Beyond-2pt mock challenge | tests the bias of the mean on HOD mocks; states that it does not validate error bars | [sec: `cosmo-beyond-two-point` SKILL.md] | [sec] |
 
@@ -249,10 +249,10 @@ No collaboration analysis found in this session quotes a trial-factor-corrected 
 
 | Case | Local figure | After calibration or change of choice | Source | Flag |
 |---|---|---|---|---|
-| w0wa preference with DESI DR2 + CMB, by supernova compilation | 2.8σ, 3.8σ, 4.2σ | three values from one BAO + CMB data set; the spread is an analysis-choice effect | arXiv:2503.14738 | [src] |
-| Same preference, out-of-sample, by redshift block | — | supplied by a single BAO block (LRG2, z = 0.706) | arXiv:2609.04334 | [src] |
-| LSS against Planck, choice of LSS combination | 2.55σ (most discrepant) | 0.76σ (most concordant) | arXiv:1703.05959 | [src] |
-| DES Y6 against CMB, choice of projection | 2.6σ in S8 | 1.8σ in the full space | arXiv:2601.14559 | [src] |
+| w0wa preference with DESI DR2 + CMB, by supernova compilation | 2.8σ, 3.8σ, 4.2σ | three values from one BAO + CMB data set; the spread is an analysis-choice effect | arXiv:2503.14738 | [src: Sect. VII] |
+| Same preference, out-of-sample, by redshift block | — | supplied by a single BAO block (LRG2, z = 0.706) | arXiv:2609.04334 | [src: abstract] |
+| LSS against Planck, choice of LSS combination | 2.55σ (most discrepant) | 0.76σ (most concordant) | arXiv:1703.05959 | [src: abstract] |
+| DES Y6 against CMB, choice of projection | 2.6σ in S8 | 1.8σ in the full space | arXiv:2601.14559 | [src: abstract] |
 | Parity-odd four-point function | 7.1σ against one mock suite | 1.4σ with N-body mocks | [sec: `cosmo-beyond-two-point` SKILL.md] | [sec] |
 | Phantom crossing within CPL | "preferred" | 3.2% of non-crossing mocks imitate it | [sec: `cosmo-dark-energy-modified-gravity` SKILL.md] | [sec] |
 

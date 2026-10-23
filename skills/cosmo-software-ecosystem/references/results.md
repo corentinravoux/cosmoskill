@@ -68,18 +68,18 @@ These timings come from the author of one of the two codes; the 2011 comparison 
 | H-EFTCAMB Horndeski module | validated internally against EFTCAMB models and externally against hi_class; no number in the abstract | covariant Horndeski Lagrangians | arXiv:2603.01662 | [src] |
 | MGCLASS II | "good agreement with the results existing in the literature" | parameterisations used by the Planck collaboration | arXiv:2112.14175 | [src] |
 | DISCO-EB against CAMB and CLASS | "per-mille level" | including massive neutrinos and a dark-energy fluid | arXiv:2311.03291 | [src] |
-| Chebyshev against cubic-spline interpolation in k and ℓ | 10⁻⁴–10⁻⁵ relative error with 50–80 points per variable, against about 10⁻⁴ with 200 points; a 2.5–4 times speed-up | typical CMB temperature spectrum, SymBoltz | Sletmoen 2026, arXiv:2608.24682 | [src] |
+| Chebyshev against cubic-spline interpolation in k and ℓ | 10⁻⁴–10⁻⁵ relative error with 50–80 points per variable, against about 10⁻⁴ with 200 points; a 2.5–4 times speed-up | typical CMB temperature spectrum, SymBoltz | Sletmoen 2026, arXiv:2608.24682 | [src: abstract] |
 
 ### 1.5 Ingredients inside the solvers
 <!-- key: ingredients-inside-the-solvers -->
 
 | Ingredient | Stated accuracy | Conditions | Citation | Flag |
 |---|---|---|---|---|
-| HYREC-2 recombination | "no noticeable bias in any cosmological parameters even in the case of an ideal cosmic-variance limited experiment up to ℓ = 5000"; runs in under one millisecond | 99.7 % confidence region allowed by Planck | arXiv:2007.14114 | [src] |
+| HYREC-2 recombination | "no noticeable bias in any cosmological parameters even in the case of an ideal cosmic-variance limited experiment up to ℓ = 5000"; runs in under one millisecond | 99.7 % confidence region allowed by Planck | arXiv:2007.14114 | [src: abstract] |
 | HMcode-2020 non-linear P(k) | RMS error 2.5 %; "rarely exceeds 5 per cent and never exceeds 16 per cent" | k < 10 h Mpc⁻¹, z < 2, against simulations | arXiv:2009.01858 | [src] |
 | HMcode-2020 feedback response | matched at the < 1 % level | z < 1, k < 20 h Mpc⁻¹, against hydrodynamical simulations | arXiv:2009.01858 | [src] |
 | Takahashi halofit | 5 % for k ≤ 1 h Mpc⁻¹ (the abstract goes on to a looser figure at smaller scales, not read) | fitted over k ≤ 30 h Mpc⁻¹, 0 ≤ z ≤ 10, 16 models around WMAP best fits | arXiv:1208.2701 | [src] |
-| Standard-model N_eff | 3.0440 ± 0.0002 | flavour oscillations, finite-temperature QED to O(e³), full collision integral | Bennett et al. 2020, arXiv:2012.02726 | [src] |
+| Standard-model N_eff | 3.0440 ± 0.0002 | flavour oscillations, finite-temperature QED to O(e³), full collision integral | Bennett et al. 2020, arXiv:2012.02726 | [src: abstract] |
 | Reionisation-heating convention in the linear P(k) | about 1 % at k ∼ 1 Mpc⁻¹ at z = 0; several tens of per cent by k ∼ 10–20 Mpc⁻¹ | switching on CAMB's optional homogeneous heating, T_reion = 10⁴ K, z_re = 7.7; "only indicative" | arXiv:2607.14854 | [src: App. B] |
 
 ## 2. Theory facades: validated accuracy
@@ -108,7 +108,7 @@ The pyccl default for the non-Limber method is `non_limber_integration_method='F
 | Fast–slow decorrelation with dragging | speed-up "by a factor of five or more" | Planck likelihoods with dozens of fast nuisance parameters | Lewis 2013, arXiv:1304.4473 | [src] |
 | Cobaya overhead | "sub-millisecond overhead per posterior evaluation" | — | arXiv:2005.05290 | [src] |
 | MontePython 3 proposal adaptation | "can save many hundreds of CPU-hours" | runs with poor prior knowledge of the covariance | arXiv:1804.07261 | [src] |
-| HMC with emulators against nested sampling without | speed-up factor O(10³) | Stage IV cosmic shear, 37 parameters; a 157-parameter combination of three surveys is also sampled | Piras & Spurio Mancini 2023, arXiv:2305.06347 | [src] |
+| HMC with emulators against nested sampling without | speed-up factor O(10³) | Stage IV cosmic shear, 37 parameters; a 157-parameter combination of three surveys is also sampled | Piras & Spurio Mancini 2023, arXiv:2305.06347 | [src: abstract] |
 | GPU nested sampling | Bayes factors with error bar "in just 2 days on a single A100 GPU"; a further factor of 4 from interpolating the matter power spectrum | 39-dimensional ΛCDM against w0wa cosmic-shear analysis | Lovick et al. 2025, arXiv:2509.13307 | [src] |
 | NUTS against MALA and Metropolis–Hastings on emulated likelihoods | NUTS "generally converges in the fewest samples", but by wall time "MALA and even standard MH remain highly competitive" | differentiable neural-network likelihood emulators, ΛCDM and a sterile-neutrino extension | Nygaard et al. 2026, arXiv:2606.04895 | [src] |
 | candl derivative-based uses | Fisher matrices without finite differences; NUTS sampling of CMB data | SPT-3G 2018 TT/TE/EE | arXiv:2401.13433 | [src] |
@@ -124,7 +124,7 @@ The DES Y3 analyses adopted PolyChord as "a good balance of speed and robustness
 | Difference between theory multipoles | O(1 %) for k ≤ 0.25 h Mpc⁻¹ | same ΛCDM parameters, other parameters fitted independently | arXiv:2404.07272, conclusion (footnote) | [src] |
 | Where the models start to deviate | k_max ∼ 0.26 h Mpc⁻¹ or higher, attributed to the limit of one-loop theory and not to disagreement between the theories | noiseless data generated by one code and fitted by the others | arXiv:2404.07272, conclusion | [src] |
 | Range planned as fiducial for DESI DR1 | 0.02 < k ≲ 0.2 h Mpc⁻¹ | — | arXiv:2404.07272, conclusion | [src] |
-| ShapeFit against Full-Modelling with PyBird | consistent "at the ∼ 0.5 σ level" in ΛCDM; both consistent with the truth to k_max = 0.20 h Mpc⁻¹ including the hexadecapole | DESI-like cubic boxes | Lai et al. 2024, arXiv:2404.07283 | [src] |
+| ShapeFit against Full-Modelling with PyBird | consistent "at the ∼ 0.5 σ level" in ΛCDM; both consistent with the truth to k_max = 0.20 h Mpc⁻¹ including the hexadecapole | DESI-like cubic boxes | Lai et al. 2024, arXiv:2404.07283 | [src: abstract] |
 | FOLPSν modelling error | "fully sub-dominant for the DESI statistical precision within the studied range of scales" | AbacusSummit LRG, ELG, QSO | Noriega et al. 2024, arXiv:2404.07269 | [src] |
 | Configuration-space pipeline | recovers the mock parameters "within 1 σ in all cases for a 1-year DESI volume" | Gaussian streaming model with CLPT and EFT | arXiv:2404.07268 | [src] |
 | Blinded EFT challenge | two independent teams recovered H₀, Ω_m and the clustering amplitude "within sub-percent statistical errors" | mocks mimicking BOSS with a hundred times larger cumulative volume | Nishimichi et al. 2020, arXiv:2003.08277 | [src] |
@@ -137,7 +137,7 @@ Timings stated by the papers:
 | Code | Time per evaluation | Conditions | Citation | Flag |
 |---|---|---|---|---|
 | CLASS-PT | ∼ 0.3 s for an end-to-end run for one cosmology | 2020 | arXiv:2004.10607 | [src] |
-| PyBird-JAX | 1.2 ms on a CPU, 0.2 ms on a GPU; "3–4 orders of magnitude speed-up over PyBird" | redshift-space multipoles, with internal emulators | arXiv:2507.20990 | [src] |
+| PyBird-JAX | 1.2 ms on a CPU, 0.2 ms on a GPU; "3–4 orders of magnitude speed-up over PyBird" | redshift-space multipoles, with internal emulators | arXiv:2507.20990 | [src: abstract] |
 | `elf` | "a few milliseconds on a GPU, after just-in-time compilation" | EPT and LPT spectra | arXiv:2610.08023 | [src] |
 | `neckar` | "up to two orders of magnitude faster than similar existing codes without relying on emulators" | — | arXiv:2610.03466 | [src] |
 | FAST-PT | "fast enough to embed in Monte Carlo Markov Chain parameter estimation"; no figure in the abstract | — | arXiv:1603.04826 | [src] |
@@ -154,7 +154,7 @@ The conclusion of arXiv:2404.07272 also records the history behind the compariso
 | TreeCorr default tolerance | `bin_slop` chosen so that `bin_slop × bin_size` = 0.1, or `bin_slop` = 1 when `bin_size` < 0.1 | logarithmic binning; the documentation recommends halving `bin_slop` as a convergence test | [src: TreeCorr 5.1 documentation via context7] | [src] |
 | FlowPM against a Python particle-mesh code | "on an average 10x speed-up in terms of wallclock time" | — | arXiv:2010.11847 | [src] |
 | DISCO-DJ particle-mesh | 6 time steps for per-cent-level accuracy in the present-day power spectrum at k ≈ 0.2 h Mpc⁻¹ with N = 512³ particles, "which takes just a few seconds" | BullFrog integrator, GPU | arXiv:2510.05206 | [src] |
-| Lyα BAO pipeline (picca + Vega) on mocks | model "able to recover unbiased measurements of the BAO position" | 150 synthetic realisations of DESI DR1 | Cuceu et al. 2024, arXiv:2404.03004 | [src] |
+| Lyα BAO pipeline (picca + Vega) on mocks | model "able to recover unbiased measurements of the BAO position" | 150 synthetic realisations of DESI DR1 | Cuceu et al. 2024, arXiv:2404.03004 | [src: abstract] |
 | Lyα full-shape fit on mocks | unbiased D_M/D_H(z_eff) with r_min = 25 h⁻¹ Mpc | one hundred eBOSS synthetic data sets | Cuceu et al. 2022, arXiv:2209.12931 | [src] |
 
 | Corrfunc against TreeCorr 3.3.6 | identical pair counts with TreeCorr's `bin_slop` disabled; Corrfunc 1.9–5.7 times faster single-threaded | benchmark in the Corrfunc paper, by its authors | arXiv:1911.03545 | [src: Sect. 6.5] |
@@ -172,9 +172,9 @@ No paper comparing pypower with nbodykit, or pycorr (the Corrfunc wrapper) with 
 | CAMB emulators of the CosmoPower framework | recovered parameters "well within 0.1 σ of the input cosmology" in a cosmic-variance-limited experiment | ΛCDM and one- or two-parameter extensions including w0wa | "typically ≲ 1/50 of the evaluation time" | arXiv:2405.07903 | [src] |
 | Capse.jl | emulation errors below 0.1 σ for all scales relevant for CMB-S4 | CMB TT, polarisation, lensing | "a few microseconds" per prediction; trained in an hour on 8 cores; a Planck TT+TE+EE analysis "in less than a second" with the fastest combination | arXiv:2307.14339 | [src] |
 | LaCE, Gaussian process | sub-per-cent prediction of P1D in a Σm_ν = 0.3 eV cosmology not in the training set | 2 < z < 4 | — | arXiv:2011.15127 | [src] |
-| LaCE, neural network | sub-per-cent precision; 1 % for ionisation and thermal histories not in the training set | k∥ = 0.1 to 4 Mpc⁻¹, z = 2 to 4.5 | — | arXiv:2305.19064 | [src] |
-| lym1d on the Lyssa suite | "percent level accuracy" against a previous emulator; each simulation converged at the sub-per-cent level | 18 Nyx simulations, 4096³ cells, 120 Mpc box | — | arXiv:2412.05372 | [src] |
-| ForestFlow | 3 % for P3D and 1.5 % for P1D | to k = 5 Mpc⁻¹ and k∥ = 4 Mpc⁻¹; 30 fixed-and-paired simulations, z = 2 to 4.5 | — | arXiv:2409.05682 | [src] |
+| LaCE, neural network | sub-per-cent precision; 1 % for ionisation and thermal histories not in the training set | k∥ = 0.1 to 4 Mpc⁻¹, z = 2 to 4.5 | — | arXiv:2305.19064 | [src: abstract] |
+| lym1d on the Lyssa suite | "percent level accuracy" against a previous emulator; each simulation converged at the sub-per-cent level | 18 Nyx simulations, 4096³ cells, 120 Mpc box | — | arXiv:2412.05372 | [src: abstract] |
+| ForestFlow | 3 % for P3D and 1.5 % for P1D | to k = 5 Mpc⁻¹ and k∥ = 4 Mpc⁻¹; 30 fixed-and-paired simulations, z = 2 to 4.5 | — | arXiv:2409.05682 | [src: abstract] |
 
 ## 7. History of the numbers that changed
 <!-- key: history-of-the-numbers-that-changed -->

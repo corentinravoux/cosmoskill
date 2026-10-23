@@ -195,10 +195,10 @@ in the CR–θ_c plane and θ_c then integrated out (arXiv:2109.13171, Sect.
 | Θ_sel | Dependence on the twin's assumptions | Cost in the likelihood | Performance | Place read |
 |---|---|---|---|---|
 | (M500, z) | strong: inherits the twin's scaling relations | cheapest | 34% average precision (primary sample) | arXiv:2402.08457, Sects. 5.4, 8 |
-| (L_X, z) | luminosity tied to photons | cheap | 56% | same |
-| (CR, z, H) | quasi-independent of the twin's cosmology; sky depth explicit | needs a count-rate–mass relation in the model | 70% (cosmology sample) | Sects. 5.3–5.4 |
-| (CR, z, H, EM_0) | adds morphology | needs a morphology model | 74% | Sect. 5.4 |
-| surface brightness in 7 × 5 annuli | closest to the pipeline | requires profiles in the forward model | close to 71–74% | Sects. 4.2, 5.4 |
+| (L_X, z) | luminosity tied to photons | cheap | 56% | arXiv:2402.08457, Sects. 5.4, 8 |
+| (CR, z, H) | quasi-independent of the twin's cosmology; sky depth explicit | needs a count-rate–mass relation in the model | 70% (cosmology sample) | arXiv:2402.08457, Sects. 5.3–5.4 |
+| (CR, z, H, EM_0) | adds morphology | needs a morphology model | 74% | arXiv:2402.08457, Sect. 5.4 |
+| surface brightness in 7 × 5 annuli | closest to the pipeline | requires profiles in the forward model | close to 71–74% | arXiv:2402.08457, Sects. 4.2, 5.4 |
 
 The conclusion drawn: models with at least one morphological feature
 perform better, but the less twin-dependent models demand "a heavier

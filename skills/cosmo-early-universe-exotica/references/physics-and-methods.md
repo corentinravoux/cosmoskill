@@ -32,7 +32,7 @@ in timing residuals (arXiv:2306.16213) [src: Sect. I].
   but no inter-pulsar correlation. A Bayes factor of HD over CURN measures the evidence for the
   correlation itself; a Bayes factor of CURN over pulsar noise alone measures only the common spectrum.
   NANOGrav 15 yr reports both: > 10¹⁴ for a power-law background over independent pulsar noise, and
-  200–1000 for HD over CURN, depending on spectral modelling (arXiv:2306.16213) [src].
+  200–1000 for HD over CURN, depending on spectral modelling (arXiv:2306.16213) [src: abstract].
 - **Calibrating the significance.** NANOGrav builds the null distribution of the HD Bayes factor by
   removing inter-pulsar correlations (phase shifts, sky scrambles), giving p = 10⁻³ (about 3σ); the
   frequentist optimal statistic gives p = 5 × 10⁻⁵ to 1.9 × 10⁻⁴ (3.5–4σ) (arXiv:2306.16213) [src]. PPTA
@@ -282,7 +282,7 @@ primordial non-Gaussianity on 10 ≲ k ≲ 5 × 10⁴ (Bianchini et al. 2022, ar
 Energy injected after recombination by decaying or annihilating particles, evaporating or accreting PBHs,
 or other exotic sources heats and ionises the gas, broadens the last-scattering surface and damps the CMB
 anisotropies; energy carried away by 100 keV – 1 TeV photons appears instead in the X-ray and γ-ray
-backgrounds (Chen et al. 2003, arXiv:astro-ph/0310473) [src].
+backgrounds (Chen et al. 2003, arXiv:astro-ph/0310473) [src: abstract].
 
 - **Annihilation parameter.** Planck constrains p_ann ≡ f_eff ⟨σv⟩/m_χ (Planck 2018 VI, arXiv:1807.06209)
   [src: Eq. 86], computed with the ExoClass branch of class v2.6.3 and HyRec, the on-the-spot

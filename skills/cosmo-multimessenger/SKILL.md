@@ -130,8 +130,9 @@ Sizes, in thousands of tokens: L1 3k; open 6k; methods 12k; results 7k; surveys 
   (`--abstract`, `--outline`, `--section`, `--grep`), or with any tool that
   gives the paper. If it cannot be read, say that L4 was required and not
   done.
-- A formula of the skill may be applied to the asker's numbers; label the
-  result as derived.
+- Quote a number only with its paper and the place it was read, as the
+  skill gives them; the skill holds no number of its own making. A formula
+  may be applied to the asker's numbers; label the result as derived.
 
 Local layers: if a directory `.cosmoskill/` exists in the working directory,
 in one of its parents, or in the home directory, or if `COSMOSKILL_HOME` is

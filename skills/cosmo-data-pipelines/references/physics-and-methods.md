@@ -49,7 +49,7 @@ fibres closer than 55″; tile centres were perturbed away from a uniform
 covering to follow the large-scale structure of the targets, reaching a
 sampling rate above 92% for all targets and above 99% for non-colliding ones,
 at an efficiency above 90% (Blanton et al. 2003, arXiv:astro-ph/0105535)
-[src].
+[src: abstract].
 
 **Robotic positioners.** With patrol regions that overlap, the number of
 targets reached depends on the assignment scheme. Proposed schemes: a
@@ -114,7 +114,7 @@ not flux-conserving, so one fits R·M to F rather than M
 | Family | Idea | Reference |
 |---|---|---|
 | Mean or model sky from dedicated sky fibres | fit one deconvolved sky spectrum S through each fibre's resolution matrix and flat field, optionally with a polynomial over focal-plane position and wavelength: χ² = Σ_k Σ_i w_ki (F̃_ki − T_ki Σ_j R_kij P(x_k, y_k, λ_j) S_j)² | DESI, arXiv:2209.14482 [src: Sect. IV.7.1, Eq. 14] |
-| PCA of sky residuals | removes systematic residuals left by the mean model; in AAOmega the residual falls as t^−0.32 instead of t^−0.5 over 200 h of data | Sharp & Parkinson 2010, arXiv:1007.0648 [src] |
+| PCA of sky residuals | removes systematic residuals left by the mean model; in AAOmega the residual falls as t^−0.32 instead of t^−0.5 over 200 h of data | Sharp & Parkinson 2010, arXiv:1007.0648 [src: abstract] |
 | Beam switching or nod-and-shuffle | the object fibre also measures the sky; cross-beam switching and dual stare reach < 1% accuracy on FLAMES | Rodrigues et al. 2016, arXiv:1609.06142 [src] |
 
 Variants: a 2D background model built before rectification, insensitive to
@@ -187,7 +187,7 @@ of deep co-adds and repeats; the VI programmes are listed in `results.md`
 **Definitions to pin down when comparing success rates.** "Success" can
 mean the fraction of targets, of observed fibres, or of good-hardware fibres
 passing a quality cut; "purity" is measured against VI or repeats with a
-velocity tolerance (3000 km/s for DESI quasars in arXiv:2208.08517) [src].
+velocity tolerance (3000 km/s for DESI quasars in arXiv:2208.08517) [src: abstract].
 Numbers from different surveys are comparable only after these are matched.
 
 ## 5. Image detrending and astrometry

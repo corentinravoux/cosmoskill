@@ -62,7 +62,7 @@ class needs.
 
 | Facility | Aperture | Field | Fibres | Fibres per deg² | A × N_fibre [m²] | Flag for inputs |
 |---|---|---|---|---|---|---|
-| SDSS-V | 2.5 m | — | 500 per site | — | 2.5 × 10³ | [src] arXiv:2507.06989 |
+| SDSS-V | 2.5 m | — | 500 per site | — | 2.5 × 10³ | [src: abstract] arXiv:2507.06989 |
 | WEAVE | 4.2 m | 2° diameter, 3.1 deg² | 960 (MOS-A) | about 310 | 1.3 × 10⁴ | [src: Table 2] arXiv:2212.03981 |
 | 4MOST | 4 m class | 4.2 deg² | 2436 | 580 | 3.1 × 10⁴ | [src] arXiv:1903.02464, arXiv:2606.27882 |
 | MOONS | 8 m class | 25′ diameter, 0.14 deg² | about 1000 | about 7300 | 5.0 × 10⁴ | [src] arXiv:2009.00628, arXiv:2009.00635 |
@@ -195,10 +195,10 @@ its noise is thermal and its limit is foreground removal (Sect. 8).
 | Legacy Surveys (DESI requirement) | g 24.0, r 23.4, z 22.5 | optimal-extraction depth of an exponential galaxy, 0.45″ half-light radius | arXiv:1804.08657 [src: App. A] |
 | UNIONS | u 23.7, g 24.5, r 24.2, i 23.8, z 23.3 | 10σ point source, 2″ aperture | arXiv:2503.13783 [src] |
 | HSC-SSP Wide | r ≈ 26; per band g 26.5, r 26.1, i 25.9, z 25.1, y 24.4 | 5σ point source (abstract), **design** | arXiv:1704.05858 [src; Table 2 per band] |
-| Pan-STARRS1 3π | g 23.3, r 23.2, i 23.1, z 22.3, y 21.4 | 5σ point source, stack | arXiv:1612.05560 [src] |
+| Pan-STARRS1 3π | g 23.3, r 23.2, i 23.1, z 22.3, y 21.4 | 5σ point source, stack | arXiv:1612.05560 [src: abstract] |
 | Rubin | r ≈ 24.5 single visit, r ≈ 27.5 coadd; per band ugrizy single visit 23.9, 25.0, 24.7, 24.0, 23.3, 22.1 and coadd 26.1, 27.4, 27.5, 26.8, 26.1, 24.9 | 5σ point source, zenith, **design** (about 0.2 mag lost at realistic airmass) | arXiv:0805.2366 [src: Table 1] |
-| Euclid VIS | m_AB > 24.5 | S/N > 10, extended source, single broad band | arXiv:2405.13492 [src] |
-| Euclid reference survey | 26.2 visible, 24.5 near-infrared | 5σ point source, pre-launch **design** | arXiv:2108.01201 [src] |
+| Euclid VIS | m_AB > 24.5 | S/N > 10, extended source, single broad band | arXiv:2405.13492 [src: abstract] |
+| Euclid reference survey | 26.2 visible, 24.5 near-infrared | 5σ point source, pre-launch **design** | arXiv:2108.01201 [src: abstract] |
 | CSST | g ≈ 26 | 5σ point source, **design** | arXiv:2507.04618 [src] |
 | Euclid NISP | Y_E 24.6, J_E 24.6, H_E 24.5 (requirement 24.0) | 5σ point source, model fit, initial in-flight | arXiv:2405.13493 [src: Table 5, Sect. 2] |
 | Roman HLWAS medium tier | 26.5 in Y, J, H | 5σ point source, about 600 s, **design** | arXiv:2505.10574 [src: Sect. II] |
@@ -225,7 +225,7 @@ the column is indicative; `cosmo-weak-lensing` gives the definitions.
 
 - Relative photometric calibration from overlaps ("ubercalibration"): about
   1% in griz over 8500 deg² for SDSS (Padmanabhan et al. 2008,
-  arXiv:astro-ph/0703454) [src].
+  arXiv:astro-ph/0703454) [src: abstract].
 - Forward global calibration with atmosphere and instrument models: 7 mmag
   uniformity over the 5000 deg² DES footprint, with chromatic corrections
   needed to go below a percent (Burke et al. 2018, arXiv:1706.01542) [src];
@@ -250,7 +250,7 @@ they quote: the fraction of the parent target list given a fibre
 redshift (redshift success), and the fraction of the footprint observed to
 nominal depth. DESI DR2 values per tracer show the range: assignment
 completeness 75.5% (BGS), 82.6% (LRG), 53.7% (ELG), 93.6% (QSO); redshift
-success 98.8%, 99.0%, 73.9%, 68.0% (arXiv:2503.14738) [sec: GC].
+success 98.8%, 99.0%, 73.9%, 68.0% (arXiv:2503.14738, Sect. II.1) [sec: GC].
 
 Hardware sets the pattern of what is missed:
 
@@ -294,8 +294,8 @@ several programmes in one exposure (arXiv:2606.14012) [src].
 |---|---|---|
 | ATLAS | whole visible sky every two days | arXiv:1802.00879 [src] |
 | ZTF | 47 deg² per exposure, 8 s readout | arXiv:1902.01932 [src] |
-| YSE | about 750 deg² every three days in griz (2020) | arXiv:2010.09724 [src] |
-| Rubin | pairs of 15 s exposures, two visits per pointing per night; 10,000 deg² in one filter in three nights (**design**) | arXiv:0805.2366 [src] |
+| YSE | about 750 deg² every three days in griz (2020) | arXiv:2010.09724 [src: abstract] |
+| Rubin | pairs of 15 s exposures, two visits per pointing per night; 10,000 deg² in one filter in three nights (**design**) | arXiv:0805.2366 [src: abstract] |
 | Roman HLTDS | about five-day cadence for two years, wide tier about 18 deg², deep tier about 6.5 deg² | arXiv:2505.10574 [src: Sect. II] |
 | Euclid | step-and-stare, four dithered frames per wide-survey pointing | arXiv:2108.01201 [src] |
 | SPHEREx | four all-sky passes in two years | [sec: GC] |
@@ -308,7 +308,7 @@ combined with (`cosmo-supernovae`). For Rubin, the cosmological return was
 evaluated on more than 100 simulated strategies; the footprint, whether the
 repeat visits of a night are taken in different filters, and the regularity
 of the cadence each change it "profoundly" (Lochner et al. 2022,
-arXiv:2104.05676) [src]. A cadence quoted from a design paper is a
+arXiv:2104.05676) [src: abstract]. A cadence quoted from a design paper is a
 requirement, not what the scheduler delivered.
 
 ## 7. CMB sensitivity: map depth, resolution and sky fraction

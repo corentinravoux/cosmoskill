@@ -29,18 +29,18 @@ re-verify against the cited paper before a number enters a manuscript.
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
 
-- There is no single cluster S8: eRASS1 0.86 ± 0.01 (arXiv:2402.08458), DES Y3 0.864 ± 0.035 (arXiv:2503.13632), SPT 0.795 ± 0.029 (arXiv:2401.02075), Planck + DES shear 0.791 (arXiv:2509.02068), KiDS AMICO 0.74 ± 0.03 (arXiv:2507.14285).
-- The eRASS1 high S8 and its growth index γ = 1.19 ± 0.21 are one feature of the data (arXiv:2410.09499); in that cosmology Planck would count 1098 clusters, not 439 (arXiv:2509.08673).
-- DES Y1 clusters gave S8 = 0.65 ± 0.04, blind and wrong: lensing-model systematics (arXiv:2002.11124).
-- Richness selection biases stacked lensing high by 20–60% on large scales (arXiv:2203.05416, arXiv:2002.03867).
-- (1 − b) depends on its reference: 0.89 against Chandra, 0.76 against XMM, same lensing (arXiv:2402.04006). Lensing of the Planck scale gives 0.69–0.76 (arXiv:1402.2670, arXiv:1502.01883, arXiv:1904.07887); matching the Planck CMB needs 0.61 ± 0.03 (arXiv:2403.19542).
-- Planck clusters are now 1.6σ from the CMB (arXiv:2509.02068); the 3.7σ of 2015 was the top of a prior-dependent range (arXiv:1502.01597).
-- Simulated hydrostatic bias is 10–20% and depends on temperature weighting (arXiv:2409.07849, arXiv:2404.08539).
+- There is no single cluster S8: eRASS1 0.86 ± 0.01 (arXiv:2402.08458), DES Y3 0.864 ± 0.035 (arXiv:2503.13632), SPT 0.795 ± 0.029 (arXiv:2401.02075), Planck + DES shear 0.791 (arXiv:2509.02068), KiDS AMICO 0.74 ± 0.03 (arXiv:2507.14285); abstract of each.
+- The eRASS1 high S8 and its growth index γ = 1.19 ± 0.21 are one feature of the data (arXiv:2410.09499, abstract); in that cosmology Planck would count 1098 clusters, not 439 (arXiv:2509.08673, abstract).
+- DES Y1 clusters gave S8 = 0.65 ± 0.04, blind and wrong: lensing-model systematics (arXiv:2002.11124, abstract).
+- Richness selection biases stacked lensing high by 20–60% on large scales (arXiv:2203.05416, abstract; arXiv:2002.03867).
+- (1 − b) depends on its reference: 0.89 against Chandra, 0.76 against XMM, same lensing (arXiv:2402.04006). Lensing of the Planck scale gives 0.688 ± 0.072 (arXiv:1402.2670), 0.76 ± 0.05 ± 0.06 (arXiv:1502.01883) and 0.71 ± 0.10 from CMB lensing (arXiv:1904.07887); matching the Planck CMB needs 0.61 ± 0.03 (arXiv:2403.19542). Abstract of each.
+- Planck clusters are now 1.6σ from the CMB (arXiv:2509.02068); the 3.7σ of 2015 was the top of a prior-dependent range (arXiv:1502.01597). Abstract of each.
+- Simulated hydrostatic bias, (M_HSE − M)/M, is about −0.1 for groups to −0.2 for clusters in FLAMINGO (arXiv:2409.07849, abstract) and depends on temperature weighting (arXiv:2404.08539).
 - Tinker 2008 is good to ≲ 5% at z = 0 and not universal (arXiv:0803.2706); baryons matter for eROSITA-like thresholds only (arXiv:1502.07357); the Euclid fit is sub-percent but halo-finder dependent (arXiv:2208.02174).
-- Weak-lensing mass is biased: 5–10% for NFW fits (arXiv:1011.1681), −14.6% in Euclid-like conditions (arXiv:2409.02783). The SPT lensing systematic grows from 1% to 10% between z = 0.25 and 0.95 (arXiv:2310.12213).
-- The best-constrained amplitude is not S8: SPT has σ8(Ω_m/0.3)^0.25 = 0.805 ± 0.016 (arXiv:2401.02075).
+- Weak-lensing mass is biased: 5–10% for NFW fits (arXiv:1011.1681), −14.6% in Euclid-like conditions (arXiv:2409.02783). The SPT lensing systematic grows from 1% to 10% between z = 0.25 and 0.95 (arXiv:2310.12213). Abstract of each.
+- The best-constrained amplitude is not S8: SPT has σ8(Ω_m/0.3)^0.25 = 0.805 ± 0.016 (arXiv:2401.02075, abstract).
 - A Poisson count likelihood underestimates errors for Rubin- or Euclid-like samples (arXiv:2210.11093).
-- No counts cosmology exists from ACT DR6 (10040 clusters, arXiv:2507.21459) or SPT-3G five-year data (7190 clusters, arXiv:2607.01175).
+- No counts cosmology exists from ACT DR6 (10040 clusters, arXiv:2507.21459, abstract) or SPT-3G five-year data (7190 clusters, arXiv:2607.01175, abstract).
 - Splashback radii were low for optical samples (arXiv:1601.06063), not for SZ-selected ones (arXiv:1811.06081) nor KiDS AMICO (arXiv:2602.07114).
 
 ## Systematics a referee checks
@@ -62,9 +62,9 @@ re-verify against the cited paper before a number enters a manuscript.
 <!-- key: errors-that-recur -->
 
 - Writing "clusters prefer low σ8" without naming the sample.
-- Quoting DES Y1 0.65 as a measurement.
+- Quoting DES Y1 0.65 as a measurement (arXiv:2002.11124, abstract).
 - Comparing (1 − b) values with different reference relations, or simulation b_HSE with opposite sign.
-- Differencing amplitudes with exponents 0.17, 0.2, 0.25, 0.3 and 0.5.
+- Differencing amplitudes with exponents 0.17 (arXiv:1407.4516), 0.2 (arXiv:1812.01679), 0.25 (arXiv:2401.02075), 0.3 (arXiv:1303.5080) and the 0.5 of S8; abstract of each.
 - Calling eRASS1 all-sky: it is one hemisphere, six months (arXiv:2402.08452).
 - Citing ACT cluster cosmology newer than 2013 (arXiv:1301.0816).
 - Treating f_gas as a growth probe (arXiv:2111.09343).
@@ -94,7 +94,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 5k; methods 11k; results 10k; surveys 4k; systematics 11k; deep/cluster-clustering 7k; deep/cmb-cluster-lensing 9k; deep/gas-mass-fraction 10k; deep/optical-selection-projection 11k; deep/sz-selection-function 7k; deep/x-ray-selection-function 6k.
+Sizes, in thousands of tokens: L1 3k; open 6k; methods 11k; results 10k; surveys 5k; systematics 11k; deep/cluster-clustering 7k; deep/cmb-cluster-lensing 9k; deep/gas-mass-fraction 10k; deep/optical-selection-projection 11k; deep/sz-selection-function 7k; deep/x-ray-selection-function 6k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.
@@ -104,8 +104,9 @@ Sizes, in thousands of tokens: L1 3k; open 5k; methods 11k; results 10k; surveys
   (`--abstract`, `--outline`, `--section`, `--grep`), or with any tool that
   gives the paper. If it cannot be read, say that L4 was required and not
   done.
-- A formula of the skill may be applied to the asker's numbers; label the
-  result as derived.
+- Quote a number only with its paper and the place it was read, as the
+  skill gives them; the skill holds no number of its own making. A formula
+  may be applied to the asker's numbers; label the result as derived.
 
 Local layers: if a directory `.cosmoskill/` exists in the working directory,
 in one of its parents, or in the home directory, or if `COSMOSKILL_HOME` is

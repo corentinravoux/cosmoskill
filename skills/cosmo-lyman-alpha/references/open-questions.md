@@ -14,14 +14,14 @@ This is the central open question of P1D cosmology, and the answer depends on th
 
 **The reanalyses of the same eBOSS DR14 data.**
 
-- PRIYA (arXiv:2309.03943): after removing a subset of the P1D data found to be in internal tension, n_P = 1.009 (+0.027/−0.018), "in reasonable agreement with Planck, and in tension with earlier eBOSS analyses"; the amplitude is low, σ_8 = 0.733 (+0.026/−0.029) [src].
-- Lyssa / lym1d (arXiv:2412.05372): slope n_Lyα = −2.369 ± 0.008 against Planck −2.363; amplitude low only through its degeneracy with the mean transmission, and "this tension disappears when imposing a well-motivated external prior on this mean transmission" [src].
-- EFT (arXiv:2405.13208): σ_8 = 0.841 ± 0.017 with simulation-informed priors, "consistent with the standard cosmology" [src].
+- PRIYA (arXiv:2309.03943): after removing a subset of the P1D data found to be in internal tension, n_P = 1.009 (+0.027/−0.018), "in reasonable agreement with Planck, and in tension with earlier eBOSS analyses"; the amplitude is low, σ_8 = 0.733 (+0.026/−0.029) [src: abstract].
+- Lyssa / lym1d (arXiv:2412.05372): slope n_Lyα = −2.369 ± 0.008 against Planck −2.363; amplitude low only through its degeneracy with the mean transmission, and "this tension disappears when imposing a well-motivated external prior on this mean transmission" [src: abstract].
+- EFT (arXiv:2405.13208): σ_8 = 0.841 ± 0.017 with simulation-informed priors, "consistent with the standard cosmology" [src: abstract].
 - Neutrino self-interactions: earlier eBOSS likelihoods combined with Planck preferred self-interaction; with the EFT or PRIYA likelihoods the preference disappears (arXiv:2503.15592) [src].
 
 So four analyses of one data vector give a low slope (original), a normal slope with low amplitude (PRIYA), a normal slope with prior-dependent amplitude (Lyssa), and a normal amplitude (EFT). The disagreement is in the modelling (emulator, thermal and mean-flux priors, data cuts), not in the measurement.
 
-**The new data.** DESI DR1 P1D gives Δ²_★ = 0.379 ± 0.032 and n_★ = −2.309 ± 0.019, and in combination with DESI BAO and Planck/ACT/SPT-3G a running α_s = 0.0014 ± 0.0041, with no preference for a non-zero value (arXiv:2601.21432) [src]. The authors close "by outlining the improvements needed to fully reach the level of confidence implied by these uncertainties" [src] — a caveat that belongs next to any quotation of these numbers.
+**The new data.** DESI DR1 P1D gives Δ²_★ = 0.379 ± 0.032 and n_★ = −2.309 ± 0.019, and in combination with DESI BAO and Planck/ACT/SPT-3G a running α_s = 0.0014 ± 0.0041, with no preference for a non-zero value (arXiv:2601.21432) [src: abstract]. The authors close "by outlining the improvements needed to fully reach the level of confidence implied by these uncertainties" [src] — a caveat that belongs next to any quotation of these numbers.
 
 **How the DESI paper itself reads the history** (arXiv:2601.21432, Sects. 6.2, 7.1 and 8) [src]. The DR1 result is "fully consistent" with Planck 2018 and consistent with all earlier Lyα analyses only at the 2σ level, "mostly because our n_★ uncertainties are significantly larger"; the slope error is 0.019 against 0.006 for eBOSS although DESI uses more spectra. The explanation offered: earlier analyses neglected emulator errors and used "simplified models for metal and HCD contamination … which can induce significant shifts in the inferred posteriors", and the metal and HCD models of the SDSS analyses "are strongly disfavored by DESI data". The paper also records a second external claim, by Fairbairn et al. (arXiv:2511.01612), of a 5σ tension between eBOSS P1D and the combined Planck + ACT + SPT data under ΛCDM, reduced to about 3σ with running [sec: as summarised in arXiv:2601.21432, Sect. 7.1]; the abstract of that paper states that eBOSS likelihoods with a suppression of small-scale power "can be accommodated by correlated variations of (α_s, β_s), leading to a preference for non-zero running", and proposes inflationary potentials with localised features [src].
 
@@ -30,7 +30,7 @@ So four analyses of one data vector give a low slope (original), a normal slope 
 - The DESI analysis fixes several things it lists as unvalidated or unmodelled: no informative IGM priors, an assumed LLS functional form strongly correlated with the cosmological parameters, no UV-fluctuation or patchy-reionisation terms, and an emulator whose error is comparable to the statistical error up to z = 2.8.
 - The DESI DR1 n_★ = −2.309 ± 0.019 is less negative than the Planck-ΛCDM value quoted in the Lyssa paper for a similarly defined slope (−2.363) [src for both numbers]; the DESI paper warns that "minor differences may exist in the definition of the compressed parameters compared to other analyses", so the comparison must be made with one code.
 - FFT and QMLE give forest-bias parameters that differ by 2.2σ in a simple model fit (arXiv:2505.07974) [src].
-- Independent external analyses of the DESI DR1 compressed likelihood are starting to appear (N_eff < 3.41, arXiv:2609.22581) [src]; they inherit the two-parameter compression, which that paper validated to 0.15% for its sterile-neutrino model [src].
+- Independent external analyses of the DESI DR1 compressed likelihood are starting to appear (N_eff < 3.41, arXiv:2609.22581) [src: abstract]; they inherit the two-parameter compression, which that paper validated to 0.15% for its sterile-neutrino model [src].
 
 **What decides it.** DESI DR2 P1D with a second emulator on the same data; a joint 1D + 3D fit (ForestFlow already predicts 3D clustering from P1D and reproduces the DESI BAO-analysis clustering, arXiv:2607.27413 [src]); and the P3D / P× measurements, whose estimators exist (arXiv:1710.11036, arXiv:2503.15619, arXiv:2403.17294) and whose small-scale version was demonstrated on eBOSS (arXiv:2310.09116) [src].
 
@@ -90,7 +90,7 @@ Estimators: cross-spectrum P×(k_∥, θ) (arXiv:1710.11036); weighted FFT estim
 
 - T_0(z) from different statistics agrees on a peak near z ≈ 3 (arXiv:2009.00016) but the peak redshift and height differ between P1D-based (peak 14 000 K at z ~ 3.4, arXiv:1808.04367) and multi-statistic analyses (14 750 ± 1322 K at z ≈ 3) [src].
 - Late end of hydrogen reionisation (z ≤ 5.3, arXiv:2108.03699) means relic temperature fluctuations at z = 4–5, exactly where WDM limits are derived (arXiv:2109.06897) [src].
-- The forest alone gives τ_e = 0.040 (+0.042/−0.018) (95%) (arXiv:2510.00107) [src]. This is relevant to the CMB τ question raised by DESI-era fits, which belongs to `cosmo-cmb` and `cosmo-reionization-21cm`.
+- The forest alone gives τ_e = 0.040 (+0.042/−0.018) (95%) (arXiv:2510.00107) [src: abstract]. This is relevant to the CMB τ question raised by DESI-era fits, which belongs to `cosmo-cmb` and `cosmo-reionization-21cm`.
 - JWST faint quasars as He II reionisation sources are constrained by the high-z P1D (arXiv:2609.16992) [src].
 
 - Dynamical dark energy consistent with the DESI constraints would tilt the flux power spectrum and raise IGM temperatures in hydrodynamical simulations (arXiv:2601.00767) [src]; the DESI DR1 P1D paper judges its own posterior too broad to measure the dark-energy equation of state (arXiv:2601.21432, Sect. 7) [src].

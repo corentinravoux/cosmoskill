@@ -31,7 +31,7 @@ pointing to Ω_b h² "in excellent agreement" with Planck (arXiv:2011.11537)
 
 **What decides it.** The tension is a statement about the deuterium-burning
 rates more than about the abundances: new d(d,n)³He and d(d,p)t S-factors
-at 0.1–0.6 MeV (arXiv:2604.16600) [src], and a resolution of the
+at 0.1–0.6 MeV (arXiv:2604.16600) [src: abstract], and a resolution of the
 d(p,γ)³He experiment–theory offset (§2). Launders et al. find that
 low-degree polynomial fits, the technique of the data-driven networks,
 systematically over-predict D/H in validation (arXiv:2604.16600) [src].
@@ -72,9 +72,9 @@ observational Y_P error; BBN + CMB "predict" 870 ± 16 s
 ## 4. The lithium problem
 <!-- key: the-lithium-problem -->
 
-The prediction exceeds the plateau by a factor ~3.5 [der: from
-arXiv:2011.11320, Table 2]. Three classes of solution remain under
-discussion (Fields 2012, arXiv:1203.3551) [src]:
+The prediction exceeds the plateau: Pitrou et al. describe a "factor ∼3
+discrepancy" (arXiv:2011.11320) [src: Sect. 1]. Three classes of solution
+remain under discussion (Fields 2012, arXiv:1203.3551) [src: abstract]:
 
 - **Stellar depletion.** Diffusion with extra mixing accounts for
   ~0.3 dex, leaving ~0.15 dex (arXiv:2111.00913) [src]; destruction during
@@ -119,11 +119,12 @@ error on Y_P (arXiv:2603.22414) [src].
   likelihood stops two representative models from reaching high H0
   (Giovanetti 2026, arXiv:2604.05095) [src].
 - The D/H discrepancy grows to ~3σ in EDE-type models; a short increase of
-  the expansion rate during deuterium burning (ΔH/H ≈ 0.09) removes it,
-  extra radiation does not (Poulin et al. 2026, arXiv:2607.20635) [src].
+  the expansion rate during deuterium burning (ΔH/H = 0.087 +0.036/−0.037)
+  removes it, extra radiation does not (Poulin et al. 2026,
+  arXiv:2607.20635) [src: abstract].
 - The significance of the Hubble tension in an EDE model changes by 0.8σ
   with the treatment of rates and abundance data (Takahashi & Toda 2023,
-  arXiv:2306.00454) [src].
+  arXiv:2306.00454) [src: abstract].
 - BAO + BBN H0 values and the BBN prior on r_d are held in
   `cosmo-distance-ladder-h0` and `cosmo-galaxy-clustering`; the H0 tension
   overview in `cosmo-tensions-anomalies`.
@@ -133,15 +134,15 @@ error on Y_P (arXiv:2603.22414) [src].
 
 | Quantity | Forecast | Condition | Citation | Flag |
 |---|---|---|---|---|
-| σ(N_ν) | ≃ 0.03 (**forecast**) | CMB-S4 with present BBN precision; would reveal N_eff − 3 = 0.044 | Yeh et al. 2022, arXiv:2207.13133 | [src] |
+| σ(N_ν) | ≃ 0.03 (**forecast**) | CMB-S4 with present BBN precision; would reveal N_eff − 3 = 0.044 | Yeh et al. 2022, arXiv:2207.13133 | [src: abstract] |
 | N_eff from D/H alone | limited to ~2% by rates; Y_P could reach ~0.5% (ΔN_ν ≃ 0.015) (**forecast**) | — | Cooke 2024, arXiv:2409.06015 | [src: Sect. 2] |
 | Neutrino heating via Y_P | needs Y_P to 0.1% for 2σ (**forecast**) | — | arXiv:2409.06015 | [src: Sect. 4.2] |
 | CMB Y_P | ~2% from Stage-4 CMB, not competitive with H II regions (**forecast**) | — | arXiv:2409.06015 | [src: Sect. 4.2] |
 | D/H sample | statistics × ≳ 100 with 30 m-class telescopes (**forecast**); ELT HIRES 0.3% with a five-fold sample (**forecast**) | blue coverage | arXiv:2409.06015 [src: Sect. 4.2]; arXiv:2011.11320 [src: Sect. Discussion] | |
-| τ_n discrimination | needs σ(Y_P) = 0.001 (**forecast**) | — | arXiv:2303.04140 | [src] |
+| τ_n discrimination | needs σ(Y_P) = 0.001 (**forecast**) | — | arXiv:2303.04140 | [src: abstract] |
 | Lepton asymmetry | 4σ (SO), 5σ (CMB-S4) if EMPRESS Y_P is true, no dark radiation (**forecast**) | — | arXiv:2208.03201 | [src] |
-| MeV thermal relics | m_χ > 10–15 MeV with upcoming CMB (**forecast**) | — | arXiv:1910.01649 | [src] |
-| Primordial ³He/⁴He | ~30% with ~4 more measurements within ~3 kpc (**forecast**) | — | arXiv:2510.08689 | [src] |
+| MeV thermal relics | m_χ > 10–15 MeV with upcoming CMB (**forecast**) | — | arXiv:1910.01649 | [src: abstract] |
+| Primordial ³He/⁴He | ~30% with ~4 more measurements within ~3 kpc (**forecast**) | — | arXiv:2510.08689 | [src: abstract] |
 
 ## 8. Stale claims and misconceptions
 <!-- key: stale-claims-and-misconceptions -->
@@ -149,13 +150,13 @@ error on Y_P (arXiv:2603.22414) [src].
 | Claim still seen | Status | Correcting source |
 |---|---|---|
 | "BBN gives Ω_b h² = x" with no code or rate named | The light-element Ω_b h² moves by ~1σ between rate philosophies | arXiv:2401.15054 [src: Sect. 4.1] |
-| "Y_P from H II regions is uncertain at 0.004" | LBT Y_p IV gives ±0.0013; but group-to-group spread remains | arXiv:2601.22238 [src] |
-| "Helium favours N_eff ≈ 3.6" (Izotov et al. 2014) | Later analyses of overlapping data give 0.2449–0.2462 and N_eff ≈ 2.9–3.0 | arXiv:1503.08146; arXiv:2101.09127 [src] |
+| "Y_P from H II regions is uncertain at 0.004" (e.g. ±0.0040, arXiv:1503.08146 [src: abstract]) | LBT Y_p IV gives ±0.0013; but group-to-group spread remains | arXiv:2601.22238 [src: abstract] |
+| "Helium favours a high N_eff" (Izotov et al. 2014: N_eff = 3.58 ± 0.25, arXiv:1408.6953 [src: abstract]) | Later analyses of overlapping data give Y_P = 0.2449 ± 0.0040 (arXiv:1503.08146) and 0.2462 ± 0.0022 with N_eff = 2.95 ± 0.16 (arXiv:2101.09127) | arXiv:1503.08146; arXiv:2101.09127 [src: abstract] |
 | "The lithium problem may be nuclear" | The ⁷Be + n channels were measured and do not solve it | arXiv:1606.09420; arXiv:1803.05701 [src] |
 | "The neutron-lifetime anomaly signals dark decays" | Excluded by decay correlations; an electron-counting beam agrees with bottles | arXiv:1812.00626; arXiv:2412.19519 [src] |
-| "BBN tests N_eff = 3.046" | Current decoupling calculations give 3.043–3.044; BBN papers use N_ν = 3 as baseline | arXiv:2409.06015 [sec: Cielo et al. 2023]; arXiv:2207.13133 [src] |
+| "BBN tests N_eff = 3.046" | Current decoupling calculations give 3.043 (Cielo et al. 2023, as quoted in arXiv:2409.06015) or 3.044 (as quoted in arXiv:2603.13226); BBN papers use N_ν = 3 as baseline | arXiv:2409.06015 [sec: Sect. 2]; arXiv:2603.13226 [src: abstract]; arXiv:2207.13133 [src] |
 | "D/H observations limit BBN" | The prediction error now exceeds the observational one | arXiv:2011.13874; arXiv:2604.16600 [src] |
-| "PDG BBN concordance range η = 4.7–6.5 × 10⁻¹⁰" (2006 PDG) | The 2014 PDG review gives 5.7–6.7 × 10⁻¹⁰ and N_ν = 3.28 ± 0.28; superseded again since | Fields 2006 (PDG mini-review), arXiv:astro-ph/0601514; Fields et al. 2014 (PDG review), arXiv:1412.1408 [src] |
+| "PDG BBN concordance range η = 4.7–6.5 × 10⁻¹⁰" (2006 PDG) | The 2014 PDG review gives 5.7–6.7 × 10⁻¹⁰ and N_ν = 3.28 ± 0.28; superseded again since | Fields 2006 (PDG mini-review), arXiv:astro-ph/0601514; Fields et al. 2014 (PDG review), arXiv:1412.1408 [src: abstract] |
 
 ## Not verified
 <!-- key: not-verified -->

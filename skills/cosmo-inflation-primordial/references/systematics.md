@@ -100,7 +100,7 @@ Low-frequency channels constrain it: the WMAP and Planck maps from 23 GHz upward
 ### B5. Beam chromaticity and bandpass
 <!-- key: b5-beam-chromaticity-and-bandpass -->
 
-For the SO SATs, the variation of the beam inside each band biases r by 0.02σ and the dust amplitude A_d by up to 0.77σ; all biases stay below 1σ, also with bandpass-shape uncertainty (arXiv:2503.01791) [src]. The effect matters for the foreground parameters more than for r.
+For the SO SATs, the variation of the beam inside each band biases r by 0.02σ and the dust amplitude A_d by up to 0.77σ; all biases stay below 1σ, also with bandpass-shape uncertainty (arXiv:2503.01791) [src: abstract]. The effect matters for the foreground parameters more than for r.
 
 ### B6. Low-frequency noise and filtering
 <!-- key: b6-low-frequency-noise-and-filtering -->
@@ -120,7 +120,7 @@ Limits assume a nearly scale-invariant inflationary spectrum with n_t fixed: BK1
 ### B9. BK18 budget as read in the paper body
 <!-- key: b9-bk18-budget-as-read-in-the-paper-body -->
 
-BICEP/Keck 2021, arXiv:2110.00483. Baseline: r_0.05 = 0.014 +0.010/−0.011 (r_0.05 < 0.036, 95%), A_d,353 = 4.4 +0.8/−0.7 μK², A_sync,23 < 1.4 μK² (95%), β_d = 1.49 +0.13/−0.12; lensing BB fixed to the Planck 2018 ΛCDM prediction [src: main text, results paragraph].
+BICEP/Keck 2021, arXiv:2110.00483. Baseline: r_0.05 = 0.014 +0.010/−0.011 (r_0.05 < 0.036, 95%), A_d,353 = 4.4 +0.8/−0.7 μK², A_sync,23 < 1.4 μK² (95%), β_d = 1.49 +0.13/−0.12; lensing BB fixed to the Planck 2018 ΛCDM prediction [src: main text, results paragraph]. [src: Sect. "pacs"]
 
 | Item | Baseline treatment or size | Effect on r | Place |
 |---|---|---|---|
@@ -201,7 +201,7 @@ Errors and the linear term come from simulations. Planck 2015 polarisation resul
 ### C4. Template dependence and look-elsewhere
 <!-- key: c4-template-dependence-and-look-elsewhere -->
 
-A null result for three templates is not a null result for all shapes; scans over oscillatory or collider templates need a look-elsewhere correction (2.4σ after correction, arXiv:2511.17500).
+A null result for three templates is not a null result for all shapes; scans over oscillatory or collider templates need a look-elsewhere correction (2.4σ after correction, arXiv:2511.17500). [src: abstract]
 
 ## D. Non-Gaussianity from large-scale structure
 <!-- key: non-gaussianity-from-large-scale-structure -->
@@ -315,7 +315,7 @@ General-relativistic and wide-angle terms contribute on the same large scales as
 ### D8. Cluster counts
 <!-- key: d8-cluster-counts -->
 
-The ACT cluster f_NL depends on the mass calibration: the analysis finds a 16.4% residual mass bias "heavily informed by our adopted priors", with negligible effect on f_NL at the present error (arXiv:2602.03917) [src].
+The ACT cluster f_NL depends on the mass calibration: the analysis finds a 16.4% residual mass bias "heavily informed by our adopted priors", with negligible effect on f_NL at the present error (arXiv:2602.03917) [src: abstract].
 
 ## E. Isocurvature
 <!-- key: isocurvature -->
@@ -348,7 +348,7 @@ The ACT cluster f_NL depends on the mass calibration: the analysis finds a 16.4%
 - **Polarisation-angle calibration.** EB measures α + β. Planck's raw angle uncertainty is the systematic that the Minami–Komatsu method removes (arXiv:2011.11254); ACT relies on optics-model priors, and its result is conditional on them (arXiv:2509.13654, arXiv:2608.06480). Target for hardware calibration: 0.08° for the SO SATs (**forecast**, arXiv:2606.11300).
 - **Intrinsic EB of Galactic dust.** The foreground-based calibration assumes the foreground EB is known. β decreases as the Galactic mask grows (arXiv:2201.07682); a dust-robust variant of the ACT + Planck analysis gives 3.5σ instead of 4.8σ (arXiv:2608.06480) [src]. Body-level, Planck PR4 (arXiv:2201.07682) [src: Sects. V–VI]: β = 0.30° ± 0.11° at f_sky = 0.93; dropping one channel gives 0.34 ± 0.12 (no 100 GHz), 0.38 ± 0.12 (no 143), 0.27 ± 0.13 (no 217), 0.08 ± 0.21 (no 353), so the 353 GHz cross-spectra carry most of the signal. A dust EB acts as an effective angle γ_ℓ, so foreground calibration returns β − γ; with r^TB,dust ≈ 0.05 and a filament–field misalignment ψ_dust ≈ 5°, γ ≲ 0.7° for f_sky ≈ 0.7 (Eq. 1). The filament model C_ℓ^EB,dust = A_ℓ C_ℓ^EE,dust sin(4ψ_ℓ^dust), with A_ℓ free in four ℓ bins over 51–1490 (Eq. 2), brings β back to positive values for all masks. Known instrumental systematics in the NPIPE simulations shift β by −0.009° ± 0.003°, negligible against 0.11° [src: Sect. IV].
 - **Intensity-to-polarisation leakage.** Marginalised in the ACT analysis (arXiv:2509.13654).
-- **Omitted systematic in a quoted error.** 0.30 ± 0.05 excludes the angle systematic (arXiv:2507.16714).
+- **Omitted systematic in a quoted error.** 0.30 ± 0.05 excludes the angle systematic (arXiv:2507.16714, abstract).
 - **Self-calibrated experiments.** BICEP/Keck constrains only β(ℓ) variations (arXiv:2603.06812). SPT-3G likewise rotates its maps to null TB and EB (section B10).
 
 ### H1. ACT DR6 birefringence: miscalibration-angle treatment as read

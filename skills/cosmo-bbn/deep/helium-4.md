@@ -13,7 +13,7 @@ Already in L2, not repeated here: the Y_P values of every group and their
 history in `results.md#primordial-helium-4`; the programmes, instruments and
 sample sizes in
 `surveys-and-data.md#helium-4-metal-poor-h-ii-region-programmes`; the
-emissivity shift (+0.9% in y⁺), the WLS-versus-linmix comparison and the
+emissivity shift (+0.9% in y⁺, arXiv:2601.22238 [src: Sect. VI.2]), the WLS-versus-linmix comparison and the
 intrinsic scatter in `systematics.md#helium-4`; the y–Y conversion trap in
 `physics-and-methods.md#conventions-and-where-the-community-is-split`; the
 EMPRESS–D/H incompatibility in
@@ -66,7 +66,7 @@ uniform Case B H II region with mean n_e and T_e, fitted by minimising
     χ² = Σ_λ [F(λ)/F(Hβ|Pγ) − (F(λ)/F(Hβ|Pγ))_meas]² / σ(λ)²     (Eq. 1)
 
 where line fluxes are taken relative to Hβ, except He I λ10830, taken
-relative to Pγ. Up to nine parameters: T_e, n_e, τ (optical depth of He I
+relative to Pγ (arXiv:2601.22238). Up to nine parameters: T_e, n_e, τ (optical depth of He I
 λ3889 at line centre), C(Hβ) (reddening), a_He, a_H, a_P (underlying
 stellar absorption under He, Balmer and Paschen lines), ξ (neutral-to-
 ionised H fraction for collisional excitation) and y⁺. Lines: up to eight
@@ -82,7 +82,7 @@ their reasons [src: Sect. II]:
 - He emissivities of Del Zanna & Storey and H emissivities of Storey &
   Sochi on finer grids; He lines change by ≲ 1% at low density except
   λ6678 [src: Sect. II.1].
-- Radiative transfer from Kurichin & Ivanchik (2025), fitted over
+- Radiative transfer from Kurichin & Ivanchik (2025), used in arXiv:2601.22238, fitted over
   8000 < T_e < 22 000 K, 1 < n_e < 10 000 cm⁻³, 0 < τ < 10 to ≲ 0.1%,
   replacing the Benjamin et al. fits valid only to τ < 2, "largely
   eliminating potential extrapolation" [src: Sect. II.2].
@@ -90,7 +90,8 @@ their reasons [src: Sect. II]:
   against Case B, which "would systematically bias the result"
   [src: Sect. II.3].
 - ξ dropped below T_e = 14 000 K, where collisional excitation is
-  negligible but the fit drifts to non-physical ξ [src: Sect. II.4].
+  negligible but the fit drifts to non-physical ξ (arXiv:2601.22238)
+  [src: Sect. II.4].
 - T(O III) enters as a weak prior on T(He) [src: Sect. V.3].
 
 **EMPRESS model** (Yanagisawa et al. 2025, arXiv:2506.24050) [src:
@@ -98,7 +99,7 @@ Sect. IV.3.2]. The YMCMC code of Hsyu et al. 2020 with eight parameters
 (no a_P); line ratios
 
     F(λ)/F(Hβ) = y⁺ [E(λ)/E(Hβ)] × [(EW(Hβ) + a_He(Hβ))/EW(Hβ)] /
-                 [(EW(λ) + a_He(λ))/EW(λ)] × f_τ(λ) 10^{−f(λ)c(Hβ)}   (Eq. 6)
+                 [(EW(λ) + a_He(λ))/EW(λ)] × f_τ(λ) 10^{−f(λ)c(Hβ)}   (arXiv:2506.24050, Eq. 6)
 
 for He (Eq. 5 is the H analogue with the collisional factor C/R), with E
 the emissivity, EW the equivalent width, f_τ the optical-depth function
@@ -106,7 +107,8 @@ and f(λ) the reddening law. Flat priors (Eq. 7): 0.06 ≤ y⁺ ≤ 0.15,
 0 ≤ log n_e ≤ 3, 0 ≤ c(Hβ) ≤ 0.5, 0 ≤ a_H ≤ 10, 0 ≤ a_He ≤ 5,
 0 ≤ τ_He ≤ 5, −6 ≤ log ξ ≤ −0.1; upper y⁺ bound raised to 0.15 because of
 possible He overabundance at high z; 500 walkers, 1000 steps, 800 burn-in;
-parameters reported as posterior medians with 16–84% ranges [src].
+parameters reported as posterior medians with 16–84% ranges
+(arXiv:2506.24050) [src: Sect. IV.3.2].
 
 **Izotov–Thuan route** (arXiv:1408.6953) [src: Sect. 3.4]. Monte Carlo
 over T_e(He⁺), N_e(He⁺) in 10–600 cm⁻³ and τ(λ3889) in 0–5, minimising the
@@ -124,7 +126,7 @@ B = 8.64 A(O) − 47.44, A(O) = 12 + log O/H (Eqs. 7–8).
   fail (three expected from noise alone), several showing [Fe V] λ4227,
   i.e. ionisation not from massive stars [src: arXiv:2601.22238, Sect. IV,
   Table 1].
-- **LBT: flags on the 47 survivors.** τ > 10 (outside the radiative-transfer
+- **LBT: flags on the 47 survivors** (arXiv:2601.22238). τ > 10 (outside the radiative-transfer
   fit domain; one target, τ = 13.25); a_He > 0.5 Å (two targets; an earlier
   paper of the team used 1.0 Å, but the LBT sample's mean a_He is 0.266 Å against
   0.522 Å in the older HeBCD data); T(He) diverging from T(O III) and
@@ -151,7 +153,7 @@ that Y_P does not require the slope when the metallicity baseline is
 short, and the running mean ⟨Y⟩ shows no systematic rise with the O/H
 cut [src: Sect. VII.2].
 
-**York regression (LBT secondary).** Weighted least squares with errors on
+**York regression (LBT secondary, arXiv:2601.22238).** Weighted least squares with errors on
 both y and O/H, York's method, weights w_i = w_Xi w_Yi/(w_Xi + b²w_Yi)
 and S² = Σw_i(a + bX_i − Y_i)²/(N − 2) (Eqs. G5–G6) [src: App. G]. On 41
 targets, y_P = 0.08117 ± 0.00096, slope Δy/Δ(O/H) = 14 ± 12, S = 1.70
@@ -216,7 +218,7 @@ App. A].
   [src: Sect. VII.3].
 - Bias of averaging if enrichment is real: for ΔY/Δ(O/H) = 46 the
   average over O/H < 4 × 10⁻⁵ would be high by ~0.0009, below the error
-  [src: Sect. VII.2].
+  (arXiv:2601.22238) [src: Sect. VII.2].
 - EMPRESS, EMPGs only: slope fixed at Hsyu's 0.00054 gives
   Y_P = 0.2383 (+0.0058/−0.0043); slope zero gives 0.2422
   (+0.0060/−0.0042); σ_int rises to 0.0035–0.0043, i.e. EMPGs scatter

@@ -29,10 +29,10 @@ Founding papers (abstracts read):
 | Step | What the paper established | Reference |
 |---|---|---|
 | Shape dependence as the signature of gravity | Tree-level perturbation theory fixes how B depends on triangle shape; departures in galaxy catalogues are read as bias. One-loop corrections computed and compared with N-body; the reduced bispectrum loses its shape dependence in the strongly non-linear regime | Scoccimarro et al. 1997, arXiv:astro-ph/9704075 |
-| Bias from the bispectrum | Second-order perturbation theory and a likelihood for B lift the degeneracy between b and Ω_0 left by β = Ω_0^0.6/b; the covariance of B needs the six-point function | Matarrese, Verde & Heavens 1997, arXiv:astro-ph/9706059 |
+| Bias from the bispectrum | Second-order perturbation theory and a likelihood for B lift the degeneracy between b and Ω_0 left by β = Ω_0^0.6/b; the covariance of B needs the six-point function | Matarrese, Verde & Heavens 1997, arXiv:astro-ph/9706059, abstract |
 | Redshift space | Perturbative multipole expansion of the redshift-space bispectrum plus a phenomenological model for the non-linear transition; the hierarchical model does not hold in redshift space | Scoccimarro, Couchman & Frieman 1998, arXiv:astro-ph/9808305 |
 | From theory to a survey | Survey geometry and sparse sampling correlate triangles and break the Gaussian-likelihood approximation; likelihood built on bispectrum eigenmodes from mock surveys | Scoccimarro 2000, arXiv:astro-ph/0004086 |
-| First survey measurements | IRAS QDOT, 2 Jy and 1.2 Jy at 0.05 < k < 0.2 h Mpc⁻¹ (Scoccimarro et al. 2000, arXiv:astro-ph/0004087); 2dFGRS at 0.1 < k < 0.5 h Mpc⁻¹: b_1 = 1.04 ± 0.11, b_2 = −0.054 ± 0.08, Ω_m = 0.27 ± 0.06 at z = 0.17 [src] | Verde et al. 2001, arXiv:astro-ph/0112161 |
+| First survey measurements | IRAS QDOT, 2 Jy and 1.2 Jy at 0.05 < k < 0.2 h Mpc⁻¹ (Scoccimarro et al. 2000, arXiv:astro-ph/0004087, abstract); 2dFGRS at 0.1 < k < 0.5 h Mpc⁻¹: b_1 = 1.04 ± 0.11, b_2 = −0.054 ± 0.08, Ω_m = 0.27 ± 0.06 at z = 0.17 [src: abstract] | Verde et al. 2001, arXiv:astro-ph/0112161 |
 | Information content with P | Joint P + B covariance including beat coupling; amplitude and effective spectral index improve by almost a factor of two (**forecast**) | Sefusatti et al. 2006, arXiv:astro-ph/0604505 |
 
 Review of perturbation theory, estimators and their errors: Bernardeau et al.
@@ -44,18 +44,18 @@ Review of perturbation theory, estimators and their errors: Bernardeau et al.
 | Estimator | What it does | Reference |
 |---|---|---|
 | Binned-triangle estimator of the bispectrum monopole | Number of triangles limited by the number of mocks | arXiv:1407.5668; Gil-Marín et al. 2016, arXiv:1606.00439 |
-| FFT-based estimators with a radial line of sight | Power-spectrum and bispectrum multipoles (ℓ = 0, 2, 4) from FFTs of overdensity multipoles for a survey geometry; for BOSS about fifteen minutes on one core for B_ℓ of all triangles up to k = 0.2 h Mpc⁻¹ [src], which is what makes covariances from many mocks affordable | Scoccimarro 2015, arXiv:1506.02729 |
-| Interlaced grids and high-order mass assignment | Interlacing removes the odd aliasing images; with fourth-order interpolation the bias on P and B is below 0.01% up to the Nyquist frequency [src] | Sefusatti et al. 2015, arXiv:1512.07295 |
+| FFT-based estimators with a radial line of sight | Power-spectrum and bispectrum multipoles (ℓ = 0, 2, 4) from FFTs of overdensity multipoles for a survey geometry; for BOSS about fifteen minutes on one core for B_ℓ of all triangles up to k = 0.2 h Mpc⁻¹ [src: abstract], which is what makes covariances from many mocks affordable | Scoccimarro 2015, arXiv:1506.02729 |
+| Interlaced grids and high-order mass assignment | Interlacing removes the odd aliasing images; with fourth-order interpolation the bias on P and B is below 0.01% up to the Nyquist frequency [src: abstract] | Sefusatti et al. 2015, arXiv:1512.07295 |
 | 3PCF multipoles in O(N²) | Spherical-harmonic expansion around each galaxy, no triplet counting; exact in angle, with edge correction | Slepian & Eisenstein 2015, arXiv:1506.02040 |
 | Linear compression (MOPED) | M linear combinations of the data keep the Fisher information on M parameters when the noise does not depend on them; the idea behind the compressions below | Heavens, Jimenez & Lahav 1999, arXiv:astro-ph/9911102 |
-| Maximal (Karhunen–Loève) and geometrical compression | Raises the usable triangle count from 116 to 2734 [src] on BOSS CMASS | Gualdi et al. 2018, arXiv:1806.02853; Gualdi et al. 2019, arXiv:1901.00987 |
+| Maximal (Karhunen–Loève) and geometrical compression | Raises the usable triangle count from 116 to 2734 [src: abstract of both] on BOSS CMASS | Gualdi et al. 2018, arXiv:1806.02853; Gualdi et al. 2019, arXiv:1901.00987 |
 | Window-free (quasi-optimal, maximum-likelihood) estimators | Deconvolve the survey window in the measurement, so the theory is not window-convolved; extended to ℓ = 2, 4 multipoles | Philcox & Ivanov 2021, arXiv:2112.04515; Ivanov et al. 2023, arXiv:2302.04414 |
-| Tripolar spherical harmonic (TripoSH) decomposition | Introduced by Sugiyama et al. 2018 (arXiv:1803.02132): zero-total-angular-momentum expansion, measurable with FFTs, with a simple window correction; L > 0 modes arise only from RSD or AP; 14σ detection of the L = 2 mode in BOSS DR12 [src]. Window convolution becomes a linear transformation of theory multipoles | Guandalin et al. 2026, arXiv:2610.01836 |
+| Tripolar spherical harmonic (TripoSH) decomposition | Introduced by Sugiyama et al. 2018 (arXiv:1803.02132): zero-total-angular-momentum expansion, measurable with FFTs, with a simple window correction; L > 0 modes arise only from RSD or AP; 14σ detection of the L = 2 mode in BOSS DR12 [src: abstract of arXiv:1803.02132]. Window convolution becomes a linear transformation of theory multipoles | Guandalin et al. 2026, arXiv:2610.01836 |
 | ShapeFit compression of P + B0 | Compress to α_iso, α_AP, fσ_s8, m+n, then infer cosmology; mitigates prior-volume effects | Novell-Masot et al. 2025, arXiv:2503.09714; Novell-Masot et al. 2026, arXiv:2603.19356 |
 | Trispectrum as a test of Gaussianity | Connected four-point function in Fourier space, weak non-linear growth; a statistic τ independent of cosmology, power spectrum and (linear) bias in real space | Verde & Heavens 2001, arXiv:astro-ph/0101143 |
-| Integrated trispectrum with P and B | Monopole and quadrupoles of P, B and i-trispectrum of the redshift-space *matter* field: 68% regions smaller by 72%, 78%, 72%, 47%, 46% on (f, σ8, f_nl, α_∥, α_⊥) than P_0,2 + B_0, for 25 (h⁻¹Gpc)³, n = 5 × 10⁻⁴ h³Mpc⁻³, z = 0.5 [src]; simulations only | Gualdi, Gil-Marín & Verde 2021, arXiv:2104.03976 |
-| Isotropic N-point basis and the O(N_g²) estimator | Basis of rotation-invariant functions from spherical harmonics and Clebsch–Gordan coefficients (Cahn & Slepian 2020, arXiv:2010.14418); NPCFs by pair counting, 3PCF to 6PCF of a BOSS-like survey in about 100 CPU-hours [src] | Philcox et al. 2021 (ENCORE), arXiv:2105.08722 |
-| Connected (parity-even) 4PCF | Disconnected part subtracted at the estimator level; compression to about 100 basis vectors; 8.1σ in BOSS CMASS, 4.7σ once tetrahedron sides below 14 h⁻¹Mpc are excluded [src] | Philcox, Hou & Slepian 2021, arXiv:2108.01670 |
+| Integrated trispectrum with P and B | Monopole and quadrupoles of P, B and i-trispectrum of the redshift-space *matter* field: 68% regions smaller by 72%, 78%, 72%, 47%, 46% on (f, σ8, f_nl, α_∥, α_⊥) than P_0,2 + B_0, for 25 (h⁻¹Gpc)³, n = 5 × 10⁻⁴ h³Mpc⁻³, z = 0.5 [src: abstract]; simulations only | Gualdi, Gil-Marín & Verde 2021, arXiv:2104.03976 |
+| Isotropic N-point basis and the O(N_g²) estimator | Basis of rotation-invariant functions from spherical harmonics and Clebsch–Gordan coefficients (Cahn & Slepian 2020, arXiv:2010.14418); NPCFs by pair counting, 3PCF to 6PCF of a BOSS-like survey in about 100 CPU-hours [src: abstract] | Philcox et al. 2021 (ENCORE), arXiv:2105.08722 |
+| Connected (parity-even) 4PCF | Disconnected part subtracted at the estimator level; compression to about 100 basis vectors; 8.1σ in BOSS CMASS, 4.7σ once tetrahedron sides below 14 h⁻¹Mpc are excluded [src: abstract] | Philcox, Hou & Slepian 2021, arXiv:2108.01670 |
 | Isotropic-basis 4PCF, parity-odd modes | Lowest-order statistic sensitive to scalar parity violation; the test was proposed by Cahn, Slepian & Hou 2021 (arXiv:2110.12004) | Hou, Slepian & Cahn 2022, arXiv:2206.03625; Philcox 2022, arXiv:2206.04227 |
 | Kurto spectra (composite-field spectra P_2×2, P_3×1) | Compress the parity-odd trispectrum to a low-dimensional vector so that the covariance can come directly from mocks | Gao et al. 2026, arXiv:2604.06021 |
 
@@ -69,11 +69,11 @@ Review of perturbation theory, estimators and their errors: Bernardeau et al.
   resummation, non-linear RSD, binning and projection effects) was validated
   on the PT Challenge simulations, 566 h⁻³Gpc³, as valid up to
   k_max = 0.08 h Mpc⁻¹ at z = 0.61, with a gain of 5–15% over P on those
-  simulations and an estimated 10% on σ8 at BOSS volume [src] (Ivanov et al.
+  simulations and an estimated 10% on σ8 at BOSS volume [src: abstract] (Ivanov et al.
   2021, arXiv:2110.10161).
 - **One-loop EFT bispectrum.** For matter, the counterterms were derived by
   Baldauf et al. 2014 (arXiv:1406.4135; three new operators, agreement with
-  N-body to k ≈ 0.22 h Mpc⁻¹ at z = 0 [src]) and Angulo et al. 2014
+  N-body to k ≈ 0.22 h Mpc⁻¹ at z = 0 [src: abstract]) and Angulo et al. 2014
   (arXiv:1406.4143). For the redshift-space galaxy monopole, Philcox et al.
   2022 (arXiv:2206.02800) find that the one-loop terms extend the scale range
   and tighten the bias parameters but bring no noticeable gain on σ8, because
@@ -152,7 +152,7 @@ are not interchangeable.
 
 | Finder | Principle | Reference |
 |---|---|---|
-| VoidFinder (maximal spheres) | Based on the algorithm of El-Ad & Piran; recovers the full volume of near-spherical voids, less for elongated ones; 35 voids above 20 h⁻¹Mpc diameter in PSCz [src] | Hoyle & Vogeley 2001, arXiv:astro-ph/0109357 |
+| VoidFinder (maximal spheres) | Based on the algorithm of El-Ad & Piran; recovers the full volume of near-spherical voids, less for elongated ones; 35 voids above 20 h⁻¹Mpc diameter in PSCz [src: abstract] | Hoyle & Vogeley 2001, arXiv:astro-ph/0109357 |
 | Watershed Void Finder (WVF) | Watershed transform of the density field, with corrections for sampling noise; no assumption on scale or shape | Platen, van de Weygaert & Jones 2007, arXiv:0706.2788 |
 | ZOBOV | Voronoi tessellation density estimate plus watershed; no free parameter, no shape assumption | Neyrinck 2008, arXiv:0712.3049 |
 | VIDE | Toolkit built on ZOBOV for surveys and simulations | Sutter et al. 2015, arXiv:1406.1191 |
@@ -163,7 +163,7 @@ are not interchangeable.
 
 The first systematic comparison ran thirteen finders on one subvolume of the
 Millennium simulation: they agree on the main void and on centres below 10% of
-the mean density (Colberg et al. 2008, arXiv:0803.0918). The average density
+the mean density (Colberg et al. 2008, arXiv:0803.0918, abstract). The average density
 profile of watershed voids follows a two-parameter empirical function,
 universal in size and redshift, with a linear-theory velocity profile derived
 from it (Hamaus, Sutter & Wandelt 2014, arXiv:1403.5499).
@@ -178,7 +178,7 @@ voids, one for voids in clouds, which are squeezed out and give the small-size
 cut-off. Jennings, Li & Hu 2013 (arXiv:1304.6087) define voids as spheres of
 ρ_v = 0.2 ρ_m, use δ_v = −2.7, and find that this model greatly overpredicts
 the abundance in N-body simulations, while a volume-conserving version (Vdn)
-matches it within 16% for 1 < r < 15 h⁻¹Mpc [src]; voids in halos are fewer
+matches it within 16% for 1 < r < 15 h⁻¹Mpc [src: abstract of arXiv:1304.6087]; voids in halos are fewer
 below 10 h⁻¹Mpc and more numerous above than in the matter. Current
 analyses use the volume-conserving (Vdn) modification, extended with nuisance
 parameters tied to the large-scale galaxy bias and calibrated on mocks
@@ -210,11 +210,11 @@ Founding papers (abstracts read):
 | Stacked voids | AP test on the mean sphericity of voids stacked in redshift shells; **forecast** that Euclid stacked voids outperform BAO by an order of magnitude in the dark-energy figure of merit | Lavaux & Wandelt 2011, arXiv:1110.0345 |
 | Void outflows in simulations | Outflow velocities peaking further out for larger voids; void–tracer cross-correlation in ξ(σ, π) elongated along the line of sight | Padilla, Ceccarelli & Lambas 2005, arXiv:astro-ph/0508297 |
 | Void–galaxy RSD on data | Parametric linear model of the redshift-space cross-correlation applied to SDSS; large voids expand, small voids with overdense shells collapse | Paz et al. 2013, arXiv:1306.5799 |
-| Joint AP + RSD model | Linear theory describes void dynamics; modelling peculiar velocities reduces the AP systematic from about 15% to about 5%; **forecast** σ(f/b)/(f/b) ≈ 2% (20%) and σ(D_A H)/D_A H ≈ 0.2% (2%) for SDSS MAIN-like (CMASS-like) densities in 1 h⁻³Gpc³, at which level the linear model is systematics-dominated [src] | Hamaus et al. 2015, arXiv:1507.04363 |
-| Multipole estimator | In linear theory ξ_vh has only a monopole and a quadrupole; β from their ratio without knowing the void profile, to 9% in 3 (h⁻¹Gpc)³ with voids above 25 h⁻¹Mpc [src]; voids can look elongated or flattened, which complicates the AP test | Cai et al. 2016, arXiv:1603.05184 |
-| First SDSS constraint | ε = 1.003 ± 0.012, Ω_m = 0.281 ± 0.031, f/b = 0.417 ± 0.089 at z̄ = 0.57, with an additional systematic uncertainty of half the statistical one [src] | Hamaus et al. 2016, arXiv:1602.01784 |
-| Linear model valid inside the void | Terms neglected before change the sign of the quadrupole inside the void radius; with a velocity dispersion, fits BOSS-CMASS-like mocks over 0 ≤ s ≤ 120 h⁻¹Mpc; f(z = 0.52) to 2.7% in (2.5 h⁻¹Gpc)³ [src]; the linear-bias approximation does not hold within voids | Nadathur & Percival 2017, arXiv:1712.07575 |
-| Reconstruction before void finding | The assumptions of the models fail for voids found in redshift space; Zeldovich reconstruction restores them, at the cost of repeating the reconstruction for every tested model; growth rate to 3.4% in the same volume [src] | Nadathur, Carter & Percival 2018, arXiv:1805.09349 |
+| Joint AP + RSD model | Linear theory describes void dynamics; modelling peculiar velocities reduces the AP systematic from about 15% to about 5%; **forecast** σ(f/b)/(f/b) ≈ 2% (20%) and σ(D_A H)/D_A H ≈ 0.2% (2%) for SDSS MAIN-like (CMASS-like) densities in 1 h⁻³Gpc³, at which level the linear model is systematics-dominated [src: abstract] | Hamaus et al. 2015, arXiv:1507.04363 |
+| Multipole estimator | In linear theory ξ_vh has only a monopole and a quadrupole; β from their ratio without knowing the void profile, to 9% in 3 (h⁻¹Gpc)³ with voids above 25 h⁻¹Mpc [src: abstract]; voids can look elongated or flattened, which complicates the AP test | Cai et al. 2016, arXiv:1603.05184 |
+| First SDSS constraint | ε = 1.003 ± 0.012, Ω_m = 0.281 ± 0.031, f/b = 0.417 ± 0.089 at z̄ = 0.57, with an additional systematic uncertainty of half the statistical one [src: abstract] | Hamaus et al. 2016, arXiv:1602.01784 |
+| Linear model valid inside the void | Terms neglected before change the sign of the quadrupole inside the void radius; with a velocity dispersion, fits BOSS-CMASS-like mocks over 0 ≤ s ≤ 120 h⁻¹Mpc; f(z = 0.52) to 2.7% in (2.5 h⁻¹Gpc)³ [src: abstract]; the linear-bias approximation does not hold within voids | Nadathur & Percival 2017, arXiv:1712.07575 |
+| Reconstruction before void finding | The assumptions of the models fail for voids found in redshift space; Zeldovich reconstruction restores them, at the cost of repeating the reconstruction for every tested model; growth rate to 3.4% in the simulation volume [src: abstract] | Nadathur, Carter & Percival 2018, arXiv:1805.09349 |
 
 Two modelling schools exist:
 
@@ -239,10 +239,10 @@ fixed with cosmology, with the Percival et al. (2021) posterior
 [src: Eqs. 18–22].
 
 Convention trap: arXiv:1904.01030 quotes D_A H/c = 0.4367 at z = 0.57 with D_A
-the angular diameter distance, while arXiv:2007.07895 quotes D_A H/c = 0.588 at
-z = 0.51 with D_A the *comoving* angular diameter distance. They differ by a
-factor (1 + z): 0.4367 × 1.57 = 0.686 [der, assuming the first is the proper
-distance]. From 2020 the reconstruction school quotes D_M/D_H.
+the angular diameter distance (abstract), while arXiv:2007.07895 quotes D_A H/c = 0.588 at
+z = 0.51 with D_A the *comoving* angular diameter distance (abstract). From 2020 the reconstruction school quotes D_M/D_H.
+
+If the first is the proper distance, the two conventions differ by a factor (1 + z), and the two values cannot be compared as printed [der].
 
 ### 2.4 Void lensing
 <!-- key: void-lensing -->
@@ -260,8 +260,7 @@ between neighbouring sightlines; its resolution is set by the mean transverse
 sightline separation. Two regimes exist. Dense galaxy-plus-quasar backgrounds
 give about 2–2.5 h⁻¹Mpc over a fraction of a square degree (CLAMATO:
 arXiv:1710.02612; Horowitz et al. 2022, arXiv:2109.09660). Quasar-only surveys
-give 13 h⁻¹Mpc over 220 deg² at a sightline density of 37 deg⁻² [src]
-(arXiv:2004.01448), which also provides a void and protocluster catalogue
+give 13 h⁻¹Mpc over 220 deg² at a sightline density of 37 deg⁻² [src: abstract] (arXiv:2004.01448), which also provides a void and protocluster catalogue
 from the map.
 
 The void–forest cross-correlation of Ravoux et al. 2022 (arXiv:2203.11045)
@@ -314,19 +313,18 @@ Where each statistic comes from (abstracts read):
 
 | Statistic | Founding or first-application paper | What it established |
 |---|---|---|
-| Density split, projected | Friedrich et al. 2017, arXiv:1710.05162; Gruen et al. 2017, arXiv:1710.05045 | Sky split into areas of distinct foreground galaxy density; lensing and counts-in-cells in each, with a perturbation-theory model. DES Y1 + SDSS: Ω_m = 0.26 +0.04/−0.03 or 0.28 +0.05/−0.04 for two stochasticity models; σ8 model dependent (0.97 +0.07/−0.06 or 0.80 +0.06/−0.07) [src] |
-| Density split, redshift space | Paillas et al. 2021, arXiv:2101.09854 | Velocities are nearly Gaussian in each density quantile, so the Gaussian streaming model holds; on mocks of (1.5 h⁻¹Gpc)³ with s_min = 15 h⁻¹Mpc, fσ12 improves by about 30% and the AP parameters by about a factor 6 over the 2PCF [src] |
+| Density split, projected | Friedrich et al. 2017, arXiv:1710.05162; Gruen et al. 2017, arXiv:1710.05045 | Sky split into areas of distinct foreground galaxy density; lensing and counts-in-cells in each, with a perturbation-theory model. DES Y1 + SDSS: Ω_m = 0.26 +0.04/−0.03 or 0.28 +0.05/−0.04 for two stochasticity models; σ8 model dependent (0.97 +0.07/−0.06 or 0.80 +0.06/−0.07) [src: abstract of arXiv:1710.05045] |
+| Density split, redshift space | Paillas et al. 2021, arXiv:2101.09854 | Velocities are nearly Gaussian in each density quantile, so the Gaussian streaming model holds; on mocks of (1.5 h⁻¹Gpc)³ with s_min = 15 h⁻¹Mpc, fσ12 improves by about 30% and the AP parameters by about a factor 6 over the 2PCF [src: abstract] |
 | Scattering transform | Mallat 2011, arXiv:1101.2286; Bruna & Mallat 2012, arXiv:1203.1513 | Cascade of wavelet-modulus operators, translation invariant and stable to deformations; expected values depend on high-order moments and separate processes with the same power spectrum |
-| Scattering transform in cosmology | Cheng et al. 2020, arXiv:2006.08561; Valogiannis & Dvorkin 2021, arXiv:2108.07821 | On simulated lensing maps it matches a CNN without training; on the Quijote 3D matter field, Fisher errors 1.2–4 times tighter than P(k) on six parameters [src] (matter field, periodic box) |
+| Scattering transform in cosmology | Cheng et al. 2020, arXiv:2006.08561; Valogiannis & Dvorkin 2021, arXiv:2108.07821 | On simulated lensing maps it matches a CNN without training; on the Quijote 3D matter field, Fisher errors 1.2–4 times tighter than P(k) on six parameters [src: abstract of arXiv:2108.07821] (matter field, periodic box) |
 | Wavelet phase harmonics | Allys et al. 2020, arXiv:2006.06298 | Low-dimensional statistics of 2D non-Gaussian fields; Fisher errors tighter than P + B for four of five parameters on projected Quijote fields; also generative |
 | Minkowski functionals | Mecke, Buchert & Wagner 1993, arXiv:astro-ph/9312028; Schmalzing & Buchert 1997, arXiv:astro-ph/9702130 | Complete family of morphological measures including the Euler characteristic, first for point sets (Abell clusters), then for isodensity contours of a smoothed field, with the genus as one member |
-| MFs in perturbation theory and on data | Matsubara 2000, arXiv:astro-ph/0006269; Hikage et al. 2003, arXiv:astro-ph/0304455 | Second-order formulae for genus, level crossings and MFs of smoothed fields, with bias; first SDSS measurement (154 287 galaxies), consistent with ΛCDM mocks |
+| MFs in perturbation theory and on data | Matsubara 2000, arXiv:astro-ph/0006269; Hikage et al. 2003, arXiv:astro-ph/0304455 | Second-order formulae for genus, level crossings and MFs of smoothed fields, with bias; first SDSS measurement (154 287 galaxies, arXiv:astro-ph/0304455, abstract), consistent with ΛCDM mocks |
 | Marked statistics | Beisbart & Kerscher 2000, arXiv:astro-ph/0003358; Sheth 2005, arXiv:astro-ph/0511772 | Marked point processes and mark-weighted correlation functions for luminosity and morphology segregation; halo-model description of marked correlations |
 | Density-dependent mark for cosmology | White 2016, arXiv:1609.08632 | A density-marked correlation function as a generic test of screened modified gravity, studied at low order in perturbation theory; the marked power spectrum of arXiv:2001.11024 uses a mark of this family |
 
 Information-content studies use the Quijote suite: 44 100 N-body simulations
-over more than 7 000 cosmologies in boxes of 1 h⁻¹Gpc [src]
-(Villaescusa-Navarro et al. 2020, arXiv:1909.05273). A Fisher forecast from
+over more than 7 000 cosmologies in boxes of 1 h⁻¹Gpc [src: abstract] (Villaescusa-Navarro et al. 2020, arXiv:1909.05273). A Fisher forecast from
 Quijote is an upper bound for matter or halos in a periodic box; it is not a
 survey forecast.
 
@@ -347,11 +345,11 @@ free: the training suite fixes 100θ_* = 1.041533, so h and Ω_m are derived,
 with ω_ν fixed at 60 meV; ω_b has a BBN prior [src: Sect. 3.5, Eqs. 21–22].
 Gain on the data at fixed pipeline: σ8 = 0.792 ± 0.034 with DSC against
 0.807 +0.055/−0.049 from the 2PCF alone, ω_cdm ± 0.0022 against ± 0.0034,
-n_s ± 0.018 against +0.043/−0.026 [src: Table 3], that is about 1.5 on σ8
-and ω_cdm, below the emulator forecast of 1.9 and 2.9 in arXiv:2309.16539
-[der: ratios of the quoted errors]. The errors stop shrinking below
+n_s ± 0.018 against +0.043/−0.026 [src: Table 3]. The emulator forecast of arXiv:2309.16539 was a gain of 2.9 on ω_cdm and 1.9 on σ8 over the 2PCF [src: abstract]. The errors stop shrinking below
 s_min ≈ 20 h⁻¹Mpc because the emulator-error term then dominates the
 monopoles [src: Sect. 4.4.2].
+
+The error ratios on the data, read from Table 3 of arXiv:2309.16541, are smaller than that forecast [der].
 
 The Minkowski-functional analysis (arXiv:2501.01698) follows the same
 design. The four functionals are the volume fraction W_0, the surface area
@@ -400,16 +398,16 @@ Founding papers (abstracts read):
 | Statistic | Reference | Content |
 |---|---|---|
 | Aperture mass | Schneider 1996, arXiv:astro-ph/9601039; Schneider et al. 1997, arXiv:astro-ph/9708143 | Weighted mass in a circular aperture from the image distortions, used to detect halos as signal-to-noise peaks; ⟨M_ap²⟩ as a localised probe of the projected power spectrum and the third moment as a skewness independent of the power-spectrum normalisation |
-| Peak counts | Jain & Van Waerbeke 1999, arXiv:astro-ph/9910459; Kratochvil, Haiman & May 2009, arXiv:0907.0486; Dietrich & Hartlap 2009, arXiv:0906.3512 | Peak distribution as a probe of the halo mass function and of Ω; most of the sensitivity comes from low peaks (κ ≈ 0.03) that are not single halos; a "peak function" from N-body simulations in the Ω_m–σ8 plane, competitive with and complementary to shear tomography |
-| Skewness of the convergence | Bernardeau, Van Waerbeke & Mellier 1996, arXiv:astro-ph/9609122 | In the quasi-linear regime the variance scales as P(k) Ω_0^1.5 z_s^1.5 and the skewness as Ω_0^−0.8 z_s^−1.35: used jointly they separate Ω_0 from the amplitude; the strong dependence on source redshift is flagged as the practical concern |
+| Peak counts | Jain & Van Waerbeke 1999, arXiv:astro-ph/9910459; Kratochvil, Haiman & May 2009, arXiv:0907.0486; Dietrich & Hartlap 2009, arXiv:0906.3512 | Peak distribution as a probe of the halo mass function and of Ω; most of the sensitivity comes from low peaks (κ ≈ 0.03; arXiv:0907.0486, abstract) that are not single halos; a "peak function" from N-body simulations in the Ω_m–σ8 plane, competitive with and complementary to shear tomography |
+| Skewness of the convergence | Bernardeau, Van Waerbeke & Mellier 1996, arXiv:astro-ph/9609122 | In the quasi-linear regime the variance scales as P(k) Ω_0^1.5 z_s^1.5 and the skewness as Ω_0^−0.8 z_s^−1.35: used jointly they separate Ω_0 from the amplitude; the strong dependence on source redshift is flagged as the practical concern [src: abstract] |
 | Shear three-point function | Schneider & Lombardi 2002, arXiv:astro-ph/0207454; Schneider, Kilbinger & Lombardi 2003, arXiv:astro-ph/0308328 | Four complex "natural components" that only pick up a phase under rotation; their relation to the convergence bispectrum, E/B separation, and generalised third-order aperture measures with several filter scales that hold essentially all the bispectrum information |
 | ⟨M_ap³⟩ from the three-point function | Jarvis, Bernstein & Jain 2003, arXiv:astro-ph/0307393 | Skewness and kurtosis of the aperture mass insensitive to masks and variable depth, with a tree code for the three-point function; 2σ skewness in the CTIO survey |
-| Bispectrum tomography | Takada & Jain 2003, arXiv:astro-ph/0310125 | **Forecast**, 50 < ℓ < 3000, three redshift bins: bispectrum constraints comparable to the power spectrum, a factor three better combined |
-| First 2+3-point data analysis | Fu et al. 2014, arXiv:1404.5469 | CFHTLenS: third moment at 2σ; σ8(Ω_m/0.27)^α improved by 10% over second order; tested for source–lens clustering, IA and baryons [src] |
+| Bispectrum tomography | Takada & Jain 2003, arXiv:astro-ph/0310125 | **Forecast**, 50 < ℓ < 3000, three redshift bins: bispectrum constraints comparable to the power spectrum, a factor three better combined [src: abstract] |
+| First 2+3-point data analysis | Fu et al. 2014, arXiv:1404.5469 | CFHTLenS: third moment at 2σ; σ8(Ω_m/0.27)^α improved by 10% over second order; tested for source–lens clustering, IA and baryons [src: abstract] |
 | Modern ⟨M_ap³⟩ pipeline | Heydenreich et al. 2022, arXiv:2208.11686 | Γ^(i) and ⟨M_ap³⟩ from the BiHalofit bispectrum, validated on N-body; on KiDS-1000-like mocks the joint analysis almost doubles the power on S8 and multiplies the Ω_m–σ8 figure of merit by 5.9 [src] (mock, not data) |
-| Convergence PDF from theory | Barthelemy et al. 2019, arXiv:1909.02615; Boyle et al. 2020, arXiv:2012.07771 | Large-deviation prediction of the convergence PDF, within 5% in the tails at z_s = 1 and 10′, percent level with nulling; validated against simulations with Σm_ν and w; **forecast** for Euclid-like area better than the 2PCF on M_ν and w0 with a Planck prior |
-| Convergence PDF from simulations | Liu & Madhavacheril 2018, arXiv:1809.10747 | **Forecast**, LSST-like, MassiveNuS: the tomographic PDF alone outperforms the power spectrum on M_ν; combining them tightens it by a further 35% |
-| First data applications of peaks | Liu et al. 2014, arXiv:1412.0757; Kacprzak et al. 2016, arXiv:1603.05040 | CFHTLenS, 154 deg², emulator on 91 cosmologies accurate to ≤ 5%: peaks + power spectrum halve the area of the (Ω_m, σ8) contour, σ8(Ω_m/0.27)^0.63 = 0.85 ± 0.03 [src]. DES SV, 139 deg², 158 models: σ8(Ω_m/0.3)^0.6 = 0.77 ± 0.07, peaks with S/N > 4 excluded because of IA, blending and cluster-member contamination [src] |
+| Convergence PDF from theory | Barthelemy et al. 2019, arXiv:1909.02615; Boyle et al. 2020, arXiv:2012.07771 | Large-deviation prediction of the convergence PDF, within 5% in the tails at z_s = 1 and 10′ (arXiv:1909.02615, abstract), percent level with nulling; validated against simulations with Σm_ν and w; **forecast** for Euclid-like area better than the 2PCF on M_ν and w0 with a Planck prior |
+| Convergence PDF from simulations | Liu & Madhavacheril 2018, arXiv:1809.10747 | **Forecast**, LSST-like, MassiveNuS: the tomographic PDF alone outperforms the power spectrum on M_ν; combining them tightens it by a further 35% [src: abstract] |
+| First data applications of peaks | Liu et al. 2014, arXiv:1412.0757; Kacprzak et al. 2016, arXiv:1603.05040 | CFHTLenS, 154 deg², emulator on 91 cosmologies accurate to ≤ 5%: peaks + power spectrum halve the area of the (Ω_m, σ8) contour, σ8(Ω_m/0.27)^0.63 = 0.85 ± 0.03 [src: abstract of arXiv:1412.0757]. DES SV, 139 deg², 158 models: σ8(Ω_m/0.3)^0.6 = 0.77 ± 0.07, peaks with S/N > 4 excluded because of IA, blending and cluster-member contamination [src: abstract of arXiv:1603.05040] |
 
 ### 4.2 Inference practice
 <!-- key: inference-practice -->
@@ -424,7 +422,7 @@ alignments and source clustering applied; the statistic is compressed by a
 neural network; and a neural density estimator gives the likelihood or
 posterior. The DES Y3 implementation rests on the Gower Street suite, 791
 full-sky PKDGRAV simulations from which more than 3 000 mock DES data sets are
-built [src] (arXiv:2403.02314). Validation is by coverage tests and by
+built [src: abstract] (arXiv:2403.02314). Validation is by coverage tests and by
 contaminating the test vector with baryonic feedback (arXiv:2606.11309,
 arXiv:2506.13439).
 
@@ -455,7 +453,7 @@ it means cannot be checked.
 1. **Forward-model inference with sampled initial conditions.** The joint
    posterior P(θ, δ_ini | d) ∝ L(d | F[δ_ini, θ]) P(δ_ini | θ) P(θ) is sampled,
    where F is a structure-formation model plus bias, selection and noise, and
-   δ_ini has as many dimensions as the grid (10⁶ or more). Hamiltonian Monte
+   δ_ini has as many dimensions as the grid has cells. Hamiltonian Monte
    Carlo is the standard sampler. This is the only form that accesses all
    non-Gaussian information on the scales modelled.
 2. **Gaussian field-level likelihood.** The observed field values (velocities,
@@ -511,7 +509,7 @@ leading order and reconstruction is the theoretical root of "Side B" in
 | LEFTfield | Lagrangian EFT forward model | EFT bias expansion with noise parameters | simulated halos; Beyond-2pt real-space mock | Nguyen et al. 2024, arXiv:2403.03220 |
 | Perturbative forward model, Gaussian likelihood | perturbation theory | EFT bias, Gaussian noise with constant power | mock data from the same model | Akitsu et al. 2025, arXiv:2509.09673; Spezzati, Marinucci & Simonović 2025, arXiv:2507.05378 |
 | BORG-WL | gravity model of the BORG-WL framework | TATT or NLA alignments, enthalpy-gradient-descent baryons | synthetic shear data only | Porqueres et al. 2023, arXiv:2304.04785 |
-| BORG for f_NL^loc | structure-formation model and resolution varied as tests | bias + initial conditions + f_NL sampled jointly | Quijote halo catalogues, k_max ≈ 0.1 h Mpc⁻¹ | Andrews et al. 2026, arXiv:2603.20855 |
+| BORG for f_NL^loc | structure-formation model and resolution varied as tests | bias + initial conditions + f_NL sampled jointly | Quijote halo catalogues, k_max ≈ 0.1 h Mpc⁻¹ | Andrews et al. 2026, arXiv:2603.20855, abstract |
 
 ### 5.3 What the outputs are
 <!-- key: what-the-outputs-are -->
@@ -562,8 +560,8 @@ Founding papers (abstracts read):
 | Approximate Bayesian Computation | Accept simulations within a distance of the data in summary space; population Monte Carlo implementation applied to image-simulation calibration | Akeret et al. 2015, arXiv:1504.07245 |
 | Conditional density estimation | Learn a parametric posterior from simulations, with no ε-ball; earlier inferences guide later simulations | Papamakarios & Murray 2016, arXiv:1605.06376 |
 | Score compression | Compression of N data to n numbers, n the number of parameters, through the gradient of the log-likelihood; keeps the Fisher information and generalises Karhunen–Loève and MOPED compression (arXiv:astro-ph/9911102) | Alsing & Wandelt 2017, arXiv:1712.00012 |
-| DELFI in cosmology | Compression to one number per parameter, then a density model for the joint distribution of data and parameters; about 10⁴ simulations for the JLA supernova test case [src] | Alsing, Wandelt & Feeney 2018, arXiv:1801.01497 |
-| Neural density estimators with active learning | Likelihood learned by neural density estimators, simulations acquired where they matter; O(10³) simulations for typical problems [src]; public code pydelfi | Alsing et al. 2019, arXiv:1903.00007 |
+| DELFI in cosmology | Compression to one number per parameter, then a density model for the joint distribution of data and parameters; about 10⁴ simulations for the JLA supernova test case [src: abstract, Sect. 5] | Alsing, Wandelt & Feeney 2018, arXiv:1801.01497 |
+| Neural density estimators with active learning | Likelihood learned by neural density estimators, simulations acquired where they matter; O(10³) simulations for typical problems [src: abstract]; public code pydelfi | Alsing et al. 2019, arXiv:1903.00007 |
 | Learned compression | Networks trained to maximise Fisher information (IMNN) give near-sufficient non-linear summaries | Charnock, Lavaux & Wandelt 2018, arXiv:1802.03537 |
 | Networks on the 3D field | 3D convolutional networks on dark-matter simulations estimate parameters as well as, or better than, the summary-based estimates compared | Ravanbakhsh et al. 2017, arXiv:1711.02033 |
 | Calibration tests | Simulation-based calibration: rank statistics of posterior samples over the prior predictive (Talts et al. 2018, arXiv:1804.06788); TARP coverage for generative estimators, needing samples only (Lemos et al. 2023, arXiv:2302.03026) | — |
@@ -634,7 +632,7 @@ blinding.**
 - Changed-forward-model test sets: SimBIG (arXiv:2211.00660), LiFT
   (arXiv:2609.14862), MFs with non-HOD mocks (arXiv:2501.01698).
 - Large-volume recovery tests: 84 times the CMASS volume for density split
-  (arXiv:2309.16541); 200 h⁻³Gpc³ for the trispectrum (arXiv:2610.08908).
+  (arXiv:2309.16541, abstract); 200 h⁻³Gpc³ for the trispectrum (arXiv:2610.08908, abstract).
 
 ### 7.2 Codes and public products named in the papers read
 <!-- key: codes-and-public-products-named-in-the-papers -->
@@ -661,9 +659,9 @@ blinding.**
 - **k_max** is in h Mpc⁻¹. The perturbative trispectrum and field-level
   analyses read here stop at 0.10–0.12. For the bispectrum the cut depends on
   the model and the triangles kept: 0.08 for the tree-level EFT monopole
-  (arXiv:2110.10161, arXiv:2507.13433), 0.12 for the N-body-calibrated
-  GEO-FPT kernel (arXiv:2503.09714), 0.20 for diagonal TripoSH
-  configurations (arXiv:2610.01836); see §1.5. SimBIG quotes 0.5;
+  (arXiv:2110.10161, abstract; arXiv:2507.13433, Sect. IV.3), 0.12 for the N-body-calibrated
+  GEO-FPT kernel (arXiv:2503.09714, Sect. 3.3), 0.20 for diagonal TripoSH
+  configurations (arXiv:2610.01836, Sect. 6); see §1.5. SimBIG quotes 0.5;
   emulators quote 1 h⁻¹Mpc in configuration space.
 - **"Field-level"** has three meanings (§5.1).
 - **"Gain"** must name its baseline: the same pipeline's two-point analysis,

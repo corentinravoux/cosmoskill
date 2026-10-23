@@ -121,14 +121,14 @@ in `cosmo-supernovae`; the rows below are the numbers this skill needs.
 
 | Data combination | `w0` | `wa` | Significance | Source | Flag |
 |---|---|---|---|---|---|
-| DESI DR2 + CMB + DES-Dovekie | −0.803 ± 0.054 | −0.72 ± 0.21 | 3.2σ | Popovic et al. 2025, arXiv:2511.07517 | [src] |
-| DESI DR2 + Planck + Union3.1 | −0.719 ± 0.084 | −0.95 (+0.29/−0.26) | 3.4σ (was 3.8σ) | Hoyt et al. 2026, arXiv:2601.19424 | [src] |
-| DESI DR2 + Planck + DES-Dovekie, as recomputed by Hoyt et al. | — | — | 3.4σ (was 4.2σ) | arXiv:2601.19424 | [src] |
-| DESI DR2 + Planck + Pantheon+ with corrected host masses | — | — | 3.2σ (was 2.8σ) | arXiv:2601.19424 | [src] |
+| DESI DR2 + CMB + DES-Dovekie | −0.803 ± 0.054 | −0.72 ± 0.21 | 3.2σ | Popovic et al. 2025, arXiv:2511.07517 | [src: abstract] |
+| DESI DR2 + Planck + Union3.1 | −0.719 ± 0.084 | −0.95 (+0.29/−0.26) | 3.4σ (was 3.8σ) | Hoyt et al. 2026, arXiv:2601.19424 | [src: abstract] |
+| DESI DR2 + Planck + DES-Dovekie, as recomputed by Hoyt et al. | — | — | 3.4σ (was 4.2σ) | arXiv:2601.19424 | [src: abstract] |
+| DESI DR2 + Planck + Pantheon+ with corrected host masses | — | — | 3.2σ (was 2.8σ) | arXiv:2601.19424 | [src: abstract] |
 | Unite (2884 SNe) + CMB + DES and DESI BAO | −0.861 (+0.044/−0.042) | −0.60 (+0.17/−0.19) | 3.3σ (MAP), 3.1σ (maximum likelihood); Bayesian evidence "only weak" | Camilleri et al. 2026, arXiv:2609.05053 | [src] |
-| DES Y6 alone: SN + BAO + 3×2pt | −0.84 ± 0.10 | −0.44 (+0.60/−0.55) | 2.2σ | DES Collaboration 2026, arXiv:2605.27221 | [src] |
-| DES Y6 + DESI DR2 BAO (low redshift only, no CMB) | −0.84 (+0.06/−0.07) | −0.53 (+0.33/−0.28) | 2.3σ | arXiv:2605.27221 | [src] |
-| DES Y6 + DESI DR2 BAO + primary CMB | −0.82 ± 0.05 | −0.63 (+0.21/−0.18) | 3.0σ | arXiv:2605.27221 | [src] |
+| DES Y6 alone: SN + BAO + 3×2pt | −0.84 ± 0.10 | −0.44 (+0.60/−0.55) | 2.2σ | DES Collaboration 2026, arXiv:2605.27221 | [src: abstract] |
+| DES Y6 + DESI DR2 BAO (low redshift only, no CMB) | −0.84 (+0.06/−0.07) | −0.53 (+0.33/−0.28) | 2.3σ | arXiv:2605.27221 | [src: abstract] |
+| DES Y6 + DESI DR2 BAO + primary CMB | −0.82 ± 0.05 | −0.63 (+0.21/−0.18) | 3.0σ | arXiv:2605.27221 | [src: abstract] |
 | Same without supernovae | — | — | 2.6σ | arXiv:2605.27221 | [src] |
 
 - DES-Dovekie is quoted at 3.2σ by its own paper (arXiv:2511.07517) and at
@@ -143,7 +143,7 @@ in `cosmo-supernovae`; the rows below are the numbers this skill needs.
   merit by ~10%; dropping any one probe gives 2.3–3.2σ, always with `w0 > −1`,
   `wa < 0` [src].
 - The convergence is the result: three supernova samples that gave 2.8 / 3.8 /
-  4.2σ now give 3.2 / 3.4 / 3.4σ (arXiv:2601.19424) [src].
+  4.2σ now give 3.2 / 3.4 / 3.4σ (arXiv:2601.19424) [src: abstract].
 
 ### 2.1 How each reanalysis computed its significance
 <!-- key: how-each-reanalysis-computed-its-significance -->
@@ -254,15 +254,15 @@ share.
 
 | Quantity | Value | Data | Source | Flag |
 |---|---|---|---|---|
-| `w` | −0.99 (+0.15/−0.13) | DESI DR1 BAO alone | arXiv:2404.03002 | [src] |
-| `w` | −0.971 (best fit) | DESI DR2 + CMB + DESY5 | arXiv:2503.14738 | [src] |
-| `w` | −1.12 (+0.26/−0.20) | DES Y6 3×2pt alone | DES Collaboration 2026, arXiv:2601.14559 | [src] |
-| `w` | −0.981 (+0.021/−0.022) | DES Y6 3×2pt + CMB + DESI DR2 BAO + DES SN + SPT clusters | arXiv:2601.14559 | [src] |
-| `w` | −0.99 (+0.11/−0.13) | KiDS-1000 + BOSS + 2dFLenS 3×2pt | Tröster et al. 2020, arXiv:2010.16416 | [src] |
-| (`w_p`, `wa`) | (−0.99 (+0.28/−0.17), −0.9 ± 1.2), `z_p = 0.24` | DES Y3 3×2pt alone | DES Collaboration 2022, arXiv:2207.05766 | [src] |
-| (`w_p`, `wa`) | (−1.03 (+0.04/−0.03), −0.4 (+0.4/−0.3)), `z_p = 0.21` | DES Y3 + external data of 2022 | arXiv:2207.05766 | [src] |
-| (`w0`, `wa`) | (−0.72 ± 0.21, −0.91 (+0.78/−0.64)) | BOSS DR12 full shape + pre-DESI BAO + DES Y3 3×2pt, no CMB, reparameterised EFT | Tsedrik, Carrilho and Moretti 2025, arXiv:2509.09562 | [src] |
-| (`w0`, `wa`) | (−0.16 (+0.10/−0.50), −3.0 (+1.7)) frequentist | DESI DR1 full shape + BAO alone | Morawetz et al. 2025, arXiv:2508.11811 | [src] |
+| `w` | −0.99 (+0.15/−0.13) | DESI DR1 BAO alone | arXiv:2404.03002 | [src: abstract] |
+| `w` | −0.971 (best fit) | DESI DR2 + CMB + DESY5 | arXiv:2503.14738 | [src: Sect. VI] |
+| `w` | −1.12 (+0.26/−0.20) | DES Y6 3×2pt alone | DES Collaboration 2026, arXiv:2601.14559 | [src: abstract] |
+| `w` | −0.981 (+0.021/−0.022) | DES Y6 3×2pt + CMB + DESI DR2 BAO + DES SN + SPT clusters | arXiv:2601.14559 | [src: abstract] |
+| `w` | −0.99 (+0.11/−0.13) | KiDS-1000 + BOSS + 2dFLenS 3×2pt | Tröster et al. 2020, arXiv:2010.16416 | [src: abstract] |
+| (`w_p`, `wa`) | (−0.99 (+0.28/−0.17), −0.9 ± 1.2), `z_p = 0.24` | DES Y3 3×2pt alone | DES Collaboration 2022, arXiv:2207.05766 | [src: abstract] |
+| (`w_p`, `wa`) | (−1.03 (+0.04/−0.03), −0.4 (+0.4/−0.3)), `z_p = 0.21` | DES Y3 + external data of 2022 | arXiv:2207.05766 | [src: abstract] |
+| (`w0`, `wa`) | (−0.72 ± 0.21, −0.91 (+0.78/−0.64)) | BOSS DR12 full shape + pre-DESI BAO + DES Y3 3×2pt, no CMB, reparameterised EFT | Tsedrik, Carrilho and Moretti 2025, arXiv:2509.09562 | [src: abstract] |
+| (`w0`, `wa`) | (−0.16 (+0.10/−0.50), −3.0 (+1.7)) frequentist | DESI DR1 full shape + BAO alone | Morawetz et al. 2025, arXiv:2508.11811 | [src: abstract] |
 
 - A constant `w` close to −1 in every data set is what the pivot argument
   predicts and is not evidence against dynamics: Linder 2007, arXiv:0708.0024,
@@ -271,7 +271,7 @@ share.
 - DES Y6 3×2pt in ΛCDM: `S8 = 0.789 ± 0.012`, `Omega_m = 0.333
   (+0.023/−0.028)`; 1.8σ from the CMB in full parameter space, 2.6σ in `S8`
   alone; all DES probes 2.8σ; with DESI DR2 BAO, DES SN and SPT clusters 2.3σ
-  (arXiv:2601.14559) [src]. The weak-lensing side is in `cosmo-weak-lensing`.
+  (arXiv:2601.14559) [src: abstract]. The weak-lensing side is in `cosmo-weak-lensing`.
 - Chen and Ivanov 2025, arXiv:2507.00118: adding the BOSS EFT power spectrum
   and bispectrum likelihood to DESI BAO + Planck + Pantheon+ makes the
   preference for dynamical dark energy "disappear"; simulation-based priors
@@ -333,8 +333,8 @@ Omega_DE(a)/Omega_DE,0` and the same for Σ (DES and DESI convention; see
 
 | `gamma` | Data | Significance against 0.55 | Source | Flag |
 |---|---|---|---|---|
-| 0.633 (+0.025/−0.024) | Planck + weak lensing + clustering + velocities | 3.7σ | Nguyen, Huterer and Wen 2023, arXiv:2302.01331 | [src] |
-| 0.639 (+0.024/−0.025) | `f sigma8` + Planck | 4.2σ | arXiv:2302.01331 | [src] |
+| 0.633 (+0.025/−0.024) | Planck + weak lensing + clustering + velocities | 3.7σ | Nguyen, Huterer and Wen 2023, arXiv:2302.01331 | [src: abstract] |
+| 0.639 (+0.024/−0.025) | `f sigma8` + Planck | 4.2σ | arXiv:2302.01331 | [src: abstract] |
 
 Where the `chi2` gain comes from (best fit with free γ minus γ = 0.55): Planck
 2018 TT,TE,EE alone −8.5, mostly high-ℓ (−7.0); Planck with lensing −2.8, the
@@ -354,17 +354,17 @@ verified" in `open-questions.md`).
 
 | Parameter | Value | Data | Source | Flag |
 |---|---|---|---|---|
-| `Omega_0` (power-law non-minimal coupling) | 0.012 (+0.001/−0.012) | DESI DR1 (FS + BAO) + DESY5 SN + CMB, ΛCDM background | arXiv:2411.12026 | [src] |
-| `s_0` (power-law index) | 0.996 (+0.54/−0.20) | same | arXiv:2411.12026 | [src] |
-| `c_M` (α-basis, no braiding) | < 1.14 | DESI DR1 + external | arXiv:2411.12026 | [src] |
+| `Omega_0` (power-law non-minimal coupling) | 0.012 (+0.001/−0.012) | DESI DR1 (FS + BAO) + DESY5 SN + CMB, ΛCDM background | arXiv:2411.12026 | [src: abstract] |
+| `s_0` (power-law index) | 0.996 (+0.54/−0.20) | same | arXiv:2411.12026 | [src: abstract] |
+| `c_M` (α-basis, no braiding) | < 1.14 | DESI DR1 + external | arXiv:2411.12026 | [src: abstract] |
 | `c_B` (α-basis, braiding free) | "mild yet consistent indication for c_B > 0" | DESI DR1 + external | arXiv:2411.12026 | [src] |
 | `alpha_B`, `alpha_M` | compatible with GR at ~2σ; errors reduced by ~40% and ~50% | BOSS P + B, DESI LRG × Planck PR4, Planck PR4, DESI DR2 BAO, DES Y5 | arXiv:2511.10616 | [src] |
-| Gravitational-wave speed | `abs(c_g/c − 1) ≤ 5 × 10^-16` | GW170817 + GRB 170817A | Ezquiaga and Zumalacárregui 2017, arXiv:1710.05901 | [src] |
+| Gravitational-wave speed | `abs(c_g/c − 1) ≤ 5 × 10^-16` | GW170817 + GRB 170817A | Ezquiaga and Zumalacárregui 2017, arXiv:1710.05901 | [src: abstract] |
 | Gravitational-wave speed | deviations "smaller than a few × 10^-15" | same event | Creminelli and Vernizzi 2017, arXiv:1710.05877 | [src] |
-| `G_cosmo/G_N` ("cosmic glitch") | 0.9920 ± 0.0025 (3.3σ) | Planck + ACT + SPT + DESI DR2 | arXiv:2609.40176 | [src] |
+| `G_cosmo/G_N` ("cosmic glitch") | 0.9920 ± 0.0025 (3.3σ) | Planck + ACT + SPT + DESI DR2 | arXiv:2609.40176 | [src: abstract] |
 
 The chance probability of the GW170817–GRB 170817A coincidence is `5.0 ×
-10^-8` (LIGO Scientific Collaboration et al. 2017, arXiv:1710.05834) [src].
+10^-8` (LIGO Scientific Collaboration et al. 2017, arXiv:1710.05834) [src: abstract].
 
 ## 7. Specific models and screening
 <!-- key: specific-models-and-screening -->
@@ -389,14 +389,14 @@ that matches the claim.
 | `E_G` | Redshift | Data | GR prediction quoted | Source | Flag |
 |---|---|---|---|---|---|
 | 0.39 ± 0.06 | — | galaxy lensing + clustering + growth rate, tens of Mpc (survey not named in the abstract) | ≈ 0.4 | Reyes et al. 2010, arXiv:1003.2185 | [src] |
-| 0.243 ± 0.060 (stat) ± 0.013 (sys) | 0.57 | Planck CMB lensing × CMASS + RSD β, up to 150 Mpc/h | 2.6σ below GR | Pullen et al. 2015, arXiv:1511.04457 | [src] |
-| 0.36 (+0.06/−0.05) | 0.555 | Planck lensing × CMASS, new estimator | 0.401 ± 0.005 | Wenzl et al. 2024, arXiv:2401.12971 | [src] |
-| 0.40 (+0.11/−0.09) | 0.316 | Planck lensing × LOWZ | 0.452 ± 0.005 | arXiv:2401.12971 | [src] |
+| 0.243 ± 0.060 (stat) ± 0.013 (sys) | 0.57 | Planck CMB lensing × CMASS + RSD β, up to 150 Mpc/h | 2.6σ below GR | Pullen et al. 2015, arXiv:1511.04457 | [src: abstract] |
+| 0.36 (+0.06/−0.05) | 0.555 | Planck lensing × CMASS, new estimator | 0.401 ± 0.005 | Wenzl et al. 2024, arXiv:2401.12971 | [src: abstract] |
+| 0.40 (+0.11/−0.09) | 0.316 | Planck lensing × LOWZ | 0.452 ± 0.005 | arXiv:2401.12971 | [src: abstract] |
 | consistent with GR + ΛCDM (no single number in the abstract) | up to z ~ 1 | BOSS and DESI DR1 × KiDS, DES, HSC | Planck cosmology | Rauhut et al. 2025, arXiv:2507.16098 | [src] |
-| 0.31 (+0.06/−0.05); 0.34 ± 0.05 adding Planck PR4 lensing | 0.555 | ACT DR6 lensing × BOSS CMASS; GR value 0.401 ± 0.005 | consistent | Wenzl et al. 2024, arXiv:2405.12795 | [src] |
-| 0.49 (+0.14/−0.11); 0.43 (+0.11/−0.09) adding Planck PR4 lensing | 0.316 | ACT DR6 lensing × BOSS LOWZ; GR value 0.452 ± 0.005 | consistent | arXiv:2405.12795 | [src] |
-| 0.503 ± 0.054 | 0.38 | KiDS-1000 × BOSS/2dFLenS, no Planck prior | consistent | Zhang et al. 2026, arXiv:2604.24631 | [src] |
-| 0.444 ± 0.054 | 0.61 | same | consistent | arXiv:2604.24631 | [src] |
+| 0.31 (+0.06/−0.05); 0.34 ± 0.05 adding Planck PR4 lensing | 0.555 | ACT DR6 lensing × BOSS CMASS; GR value 0.401 ± 0.005 | consistent | Wenzl et al. 2024, arXiv:2405.12795 | [src: abstract] |
+| 0.49 (+0.14/−0.11); 0.43 (+0.11/−0.09) adding Planck PR4 lensing | 0.316 | ACT DR6 lensing × BOSS LOWZ; GR value 0.452 ± 0.005 | consistent | arXiv:2405.12795 | [src: abstract] |
+| 0.503 ± 0.054 | 0.38 | KiDS-1000 × BOSS/2dFLenS, no Planck prior | consistent | Zhang et al. 2026, arXiv:2604.24631 | [src: abstract] |
+| 0.444 ± 0.054 | 0.61 | same | consistent | arXiv:2604.24631 | [src: abstract] |
 
 - The Pullen et al. deviation appeared only above 80 Mpc/h [src]; the
   reanalysis by Wenzl et al. with matched effective redshifts and a calibrated
@@ -404,7 +404,7 @@ that matches the claim.
   2% (CMASS) and 3% (LOWZ) [src].
 - arXiv:2604.24631 also reports the Weyl-potential amplitude `J` for CMASS
   1.50σ below the GR prediction with Planck 2018 priors, LOWZ consistent
-  [src].
+  [src: abstract].
 
 ## 9. History of the key numbers
 <!-- key: history-of-the-key-numbers -->
@@ -414,10 +414,10 @@ that matches the claim.
 
 | Date | Release | Pantheon+ | Union3 | DES | Source |
 |---|---|---|---|---|---|
-| Apr 2024 | DESI DR1 BAO | 2.5σ | 3.5σ | 3.9σ (DES-SN5YR) | arXiv:2404.03002 [src] |
-| Mar 2025 | DESI DR2 BAO | 2.8σ | 3.8σ | 4.2σ (DES-SN5YR) | arXiv:2503.14738 [src] |
+| Apr 2024 | DESI DR1 BAO | 2.5σ | 3.5σ | 3.9σ (DES-SN5YR) | arXiv:2404.03002 [src: abstract] |
+| Mar 2025 | DESI DR2 BAO | 2.8σ | 3.8σ | 4.2σ (DES-SN5YR) | arXiv:2503.14738 [src: Sect. VII] |
 | Nov 2025 | DES-Dovekie recalibration | — | — | 3.2σ | arXiv:2511.07517 [src] |
-| Jan 2026 | Union3.1 and corrected Pantheon+ host masses | 3.2σ | 3.4σ | 3.4σ (Dovekie) | arXiv:2601.19424 [src] |
+| Jan 2026 | Union3.1 and corrected Pantheon+ host masses | 3.2σ | 3.4σ | 3.4σ (Dovekie) | arXiv:2601.19424 [src: abstract] |
 | May 2026 | DES Y6 SN + BAO + 3×2pt + DESI DR2 + CMB | — | — | 3.0σ | arXiv:2605.27221 [src] |
 | Jun 2026 | DESI DR1 P + B + DR2 BAO + CMB + Dovekie | — | — | 3.1σ | arXiv:2606.23936 [src] |
 | Sep 2026 | Unite (Pantheon+ ∪ DES) | 3.3σ (single combined sample) | — | — | arXiv:2609.05053 [src] |

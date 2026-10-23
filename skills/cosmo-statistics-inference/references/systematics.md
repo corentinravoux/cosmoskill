@@ -33,7 +33,7 @@ Non-independent mocks. BOSS DR10 and DR11 drew the north and south caps of joint
 
 **Mitigation.** The pair-weighting corrections of Mohammad & Percival 2022 (arXiv:2109.07071), which recover the covariance to the 10% precision of their test; or use the jackknife only to calibrate a model covariance, as RascalC does for the shot-noise rescaling (arXiv:1904.11070).
 
-**Validation.** Compare with mocks on the diagonal and on the leading principal components; vary the number of regions (64 against 125 in arXiv:2109.07071 changes the structure of the matrix, not its amplitude).
+**Validation.** Compare with mocks on the diagonal and on the leading principal components; vary the number of regions (64 against 125 in arXiv:2109.07071 changes the structure of the matrix, not its amplitude). [src: abstract]
 
 **Traps.** A jackknife covariance does not contain super-sample covariance. The Hartlap correction with `n_s` set to the number of jackknife regions assumes independence that the regions do not have.
 

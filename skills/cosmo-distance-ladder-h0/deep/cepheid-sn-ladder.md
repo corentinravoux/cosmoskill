@@ -337,4 +337,4 @@ the phase correction changes JWST − HST by 0.004 mag [der: −0.007 against
   body of arXiv:2105.11461 (abstract only).
 - The Milky Way recalibration of arXiv:2412.07840 (their Sect. V) and the
   value of their Eq. 24, which the quoted shifts imply is 72.67 [der].
-- The CCHP JWST Cepheid analysis of NGC 7250 (cited in arXiv:2408.06153).
+- The CCHP JWST Cepheid analysis of NGC 7250 (cited in arXiv:2408.06153). [src: Sect. III]

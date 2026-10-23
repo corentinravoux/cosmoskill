@@ -32,7 +32,7 @@ re-verify against the cited paper before a number enters a manuscript.
 - Planck low-ℓ polarisation gives τ = 0.051–0.063, σ ≈ 0.005–0.009 (arXiv:1807.06209, arXiv:1908.09856, arXiv:2103.14378; lowest, 0.051 ± 0.006 from NPIPE, arXiv:2007.04997, in `cosmo-cmb`). The value 0.090 ± 0.012 is CMB + DESI without low-ℓ EE, not a measurement (arXiv:2504.16932).
 - Reionisation probes in place of low-ℓ EE give τ = 0.067 ± 0.011 (arXiv:2607.26373). τ = 0.09 sits ≈ 2σ from SPT patchy-kSZ limits (arXiv:2505.15899); exotic ionisation adds ≤ 0.008 (arXiv:2608.01919).
 - Reionisation ends late: dark gaps persist to z ≃ 5.3 (arXiv:2109.06295); x_HI = 0.19 ± 0.07 at z = 5.6 (arXiv:2405.12273). Background fluctuations remain an alternative (arXiv:2312.08464).
-- The mean free path falls from 9.33 to 0.81 proper Mpc over z = 5.08–5.93 (arXiv:2308.04614).
+- The mean free path falls from 9.33 to 0.81 proper Mpc over z = 5.08–5.93 (arXiv:2308.04614, abstract).
 - At z ~ 7 every probe gives x_HI ≈ 0.4–0.65 with errors of 0.2–0.4 (arXiv:1802.06066, arXiv:2504.04683, arXiv:2609.40363).
 - kSZ: SPT-3G D1 finds D_3000 = 1.75 ± 0.86 μK² and Δz(25–75%) < 3.8 (arXiv:2601.20551); ACT gives Δz < 4.4 (arXiv:2506.06274). "Δz = 1.0" is superseded (arXiv:2002.06197).
 - EDGES (78 MHz, 0.5 K; arXiv:1810.05912) is unconfirmed; SARAS 3 rejects its profile at 95.3% (arXiv:2112.06778); its depth moves from 370 to 670 mK with the beam correction (arXiv:1910.03165). EDGES data are public since 2026 (arXiv:2605.16643).
@@ -96,8 +96,9 @@ Sizes, in thousands of tokens: L1 3k; open 5k; methods 13k; results 13k; surveys
   (`--abstract`, `--outline`, `--section`, `--grep`), or with any tool that
   gives the paper. If it cannot be read, say that L4 was required and not
   done.
-- A formula of the skill may be applied to the asker's numbers; label the
-  result as derived.
+- Quote a number only with its paper and the place it was read, as the
+  skill gives them; the skill holds no number of its own making. A formula
+  may be applied to the asker's numbers; label the result as derived.
 
 Local layers: if a directory `.cosmoskill/` exists in the working directory,
 in one of its parents, or in the home directory, or if `COSMOSKILL_HOME` is

@@ -23,7 +23,7 @@ The case against.
 
 - Direct probes. Replacing the low-ℓ EE data by quasar damping wings and dark pixels gives τ =
   0.067 ± 0.011, and a ≳ 2σ preference for dynamical dark energy survives [src: Montero-Camacho
-  & Mao 2026, arXiv:2607.26373].
+  & Mao 2026, arXiv:2607.26373]. [src: abstract]
 - Duration. With the endpoint fixed by the Lyα forest, τ = 0.09 requires a long reionisation, in
   ≈ 2σ tension with the SPT patchy-kSZ limit [src: Cain et al. 2025, arXiv:2505.15899].
 - Exotic early ionisation does not supply the missing Δτ ≃ 0.03: primordial black holes give at
@@ -67,11 +67,11 @@ same high-ℓ CMB and BAO data]. The sibling skills `cosmo-cmb`, `cosmo-neutrino
 
 | Statement | Value | Citation | Flag |
 |---|---|---|---|
-| tanh midpoint from τ | z_re = 8.14 ± 0.61 | Pagano et al. 2019, arXiv:1908.09856 | [src] |
-| joint 21 cm limits + Lyman-line x_HI + CMB | z₅₀ = 7.16 (+0.15/−0.12), Δz < 1.8 (95%) | Sims et al. 2025, arXiv:2504.09725 | [src] |
-| mean-free-path emulator | z_re = 6.58 ± 1.2 | arXiv:2602.03923 | [src] |
-| JWST galaxy damping wings | x_HI from 0.25 at z ~ 6 to 1.00 at z ~ 9: "a rapid transition around z ∼ 7–8" | Umeda et al. 2025, arXiv:2504.04683 | [src] |
-| JWST Lyα fractions | mass-weighted x_HI = 0.38 (+0.14/−0.38) at z ~ 7 | Kundu et al. 2026, arXiv:2609.40363 | [src] |
+| tanh midpoint from τ | z_re = 8.14 ± 0.61 | Pagano et al. 2019, arXiv:1908.09856 | [src: abstract] |
+| joint 21 cm limits + Lyman-line x_HI + CMB | z₅₀ = 7.16 (+0.15/−0.12), Δz < 1.8 (95%) | Sims et al. 2025, arXiv:2504.09725 | [src: abstract] |
+| mean-free-path emulator | z_re = 6.58 ± 1.2 | arXiv:2602.03923 | [src: abstract] |
+| JWST galaxy damping wings | x_HI from 0.25 at z ~ 6 to 1.00 at z ~ 9: "a rapid transition around z ∼ 7–8" | Umeda et al. 2025, arXiv:2504.04683 | [src: abstract] |
+| JWST Lyα fractions | mass-weighted x_HI = 0.38 (+0.14/−0.38) at z ~ 7 | Kundu et al. 2026, arXiv:2609.40363 | [src: abstract] |
 | kSZ | Δ⁵⁰z < 3.8 (SPT-3G), Δz < 4.4 (ACT) | arXiv:2601.20551, arXiv:2506.06274 | [src] |
 
 The midpoints are not directly comparable: the tanh value is the midpoint of a symmetric model
@@ -118,7 +118,7 @@ Multi-wavelength constraints predict a trough between −201 and
 
 - CHIME's auto-spectrum disagrees with IllustrisTNG at 3.1–4.0σ on non-linear scales [src: CHIME
   Collaboration 2026, arXiv:2603.25680]. Whether this is HI astrophysics in the simulations or a
-  residual of the measurement is open.
+  residual of the measurement is open. [src: abstract]
 - Amplitudes at z ≈ 0.4: 10³ Ω_HI b_HI r = 0.86 ± 0.10 ± 0.12 in cross-correlation with WiggleZ
   [src: Cunnington et al. 2022, arXiv:2206.01579] and 10³ Ω_HI b_HI = 1.271 (+1.080/−0.598) in
   auto-correlation [src: MeerKLASS Collaboration 2026, arXiv:2610.12158]. They are consistent
@@ -168,9 +168,9 @@ bursty at z > 10. `cosmo-tensions-anomalies` tracks this as a tension.
 |---|---|---|---|---|
 | EDGES profile | deeper NenuFAR and HERA Phase II Cosmic Dawn limits; a second global-signal instrument | NenuFAR needs an order of magnitude more depth to test EDGES-compatible fluctuation models | Munshi et al. 2025, arXiv:2507.10533 | [src] |
 | Cosmic Dawn power spectrum | — | predicted Δ² at z = 15, k = 0.35 h/Mpc: 8.7–197 mK²; current best limits at z ≈ 17–20 are 4.6 × 10⁵–1.1 × 10⁶ mK², three to five orders of magnitude above [der: ratio of the quoted numbers, at different k and z] | arXiv:2508.13761; arXiv:2507.10533; arXiv:2511.21289 | [src] |
-| EoR power spectrum | full HERA Phase II seasons | only two weeks with 180 antennas analysed so far; mutual coupling must be modelled | HERA Collaboration 2025, arXiv:2511.21289 | [src] |
+| EoR power spectrum | full HERA Phase II seasons | only two weeks with 180 antennas analysed so far; mutual coupling must be modelled | HERA Collaboration 2025, arXiv:2511.21289 | [src: Sect. I] |
 | τ independent of Planck | large-angle polarisation from space; 21 cm clustering | 21 cm τ competitive only with a clean wedge and ~5 years of data (**forecast**) | Sailer, Chen & White 2022, arXiv:2205.11504 | [src] |
-| τ from polarised SZ | future CMB × galaxy data | a factor ~3 tighter than today's −0.01 ± 0.14 (**forecast**) | Krywonos et al. 2026, arXiv:2607.16071 | [src] |
+| τ from polarised SZ | future CMB × galaxy data | a factor ~3 tighter than today's −0.01 ± 0.14 (**forecast**) | Krywonos et al. 2026, arXiv:2607.16071 | [src: abstract] |
 | Duration | kSZ with better tSZ–CIB separation | — | Chaubal et al. 2026, arXiv:2601.20551 | [src] |
 | x_HI at z > 6 with small errors | larger quasar samples with the new continuum methods | a single S/N ~ 10 spectrum cannot do it; samples are needed | Hennawi et al. 2024, arXiv:2406.12070 | [src] |
 | HI BAO | CHORD (2028), SKA-Mid wide survey | 20,000 deg², z = 0.35–3, 10,000 h (**forecast** survey definition) | arXiv:2607.09374; Wolz et al. 2026, arXiv:2607.03259 | [src] |
@@ -204,7 +204,7 @@ bursty at z > 10. `cosmo-tensions-anomalies` tracks this as a tension.
   (identifier 2601.09644 in its bibliography) was not read in this session and is not in this
   bibliography.
 - The Planck 2015 τ value is known here only as quoted by arXiv:1502.02024 (0.066 ± 0.012);
-  the WMAP nine-year value was not read.
+  the WMAP nine-year value was not read. [src: abstract]
 - Frequency coverage of the full EDGES profile against the SARAS 3 band: only the SARAS band
   (55–85 MHz) and the EDGES centre (78 MHz) and width (19 MHz) were read; the statement in 1.5
   that SARAS does not cover the whole EDGES band is an inference from those numbers [der: 78 ±

@@ -35,14 +35,14 @@ history of those nuisances (`results.md` §7).
 (arXiv:astro-ph/0111606) builds minimum-variance estimators of the intervening mass from the six
 quadratic combinations of the temperature and polarisation fields; Okamoto 2003
 (arXiv:astro-ph/0301031) derives the full-sky version; the review is Lewis 2006
-(arXiv:astro-ph/0601594) [src]. CMB lensing was first detected in cross-correlation: 3.4σ from
+(arXiv:astro-ph/0601594) [src: abstract]. CMB lensing was first detected in cross-correlation: 3.4σ from
 WMAP quadratic estimators × NVSS radio counts (Smith 2007, arXiv:0705.3980), then 2.5σ evidence
-with SDSS LRGs, quasars and NVSS combined (Hirata 2008, arXiv:0801.0644) [src]. With ground-based
+with SDSS LRGs, quasars and NVSS combined (Hirata 2008, arXiv:0801.0644) [src: abstract]. With ground-based
 maps: SPT × optical and infrared galaxy catalogues over 17–68 deg², each at > 4σ (Bleem 2012,
-arXiv:1203.4808); ACT × SDSS photometric quasars at 3.8σ (Sherwin 2012, arXiv:1207.4543) [src].
+arXiv:1203.4808); ACT × SDSS photometric quasars at 3.8σ (Sherwin 2012, arXiv:1207.4543) [src: abstract].
 The unWISE tomography starts with Krolewski 2019 (arXiv:1909.07412): three samples at median
 z ≈ 0.6, 1.1, 1.5, S/N = 79.3 over 100 < ℓ < 1000 with Planck, and the finding that
-magnification bias must be included [src].
+magnification bias must be included [src: abstract].
 
 ### 2.1 Observables
 <!-- key: observables -->
@@ -65,7 +65,7 @@ z_eff = ∫ dχ z [W^g]²/χ² / ∫ dχ [W^g]²/χ², which it finds accurate t
 LRG bins; beyond-Limber corrections are dominated by redshift-space distortions at ℓ ≲ 75 [src].
 
 Sizes for the DESI LRG bins: magnification is below 1% of C_ℓ^gg and at most ≃ 10% of C_ℓ^κg, in
-the highest-redshift bin (arXiv:2407.04607) [src]. For broad or high-redshift samples the
+the highest-redshift bin (arXiv:2407.04607) [src: Sect. 4.5]. For broad or high-redshift samples the
 magnification term is larger and the number-count slope is a calibrated input, published with the
 sample (Zhou 2023, arXiv:2309.06443) [src].
 
@@ -85,11 +85,11 @@ itself (von Wietersheim-Kramsta 2021, arXiv:2101.05261) [src].
 |---|---|---|
 | Linear theory with conservative scale cuts | Qu 2024 (arXiv:2410.10808): "a scale cut where non-linear effects are negligible" | linear regime only [src] |
 | Perturbation theory, restricted to large scales | White 2021 (arXiv:2111.09898) | large scales [src] |
-| Hybrid EFT (HEFT): Lagrangian bias expansion on N-body displacements, emulated | Sailer 2024 (arXiv:2407.04607, Aemulus ν emulator); Kim 2024 (arXiv:2407.04606); Sailer 2025 (arXiv:2503.24385); Rubiola 2025 (arXiv:2510.09563) | k_max = 0.6 h/Mpc in arXiv:2407.04606; ℓ_max = 600 in arXiv:2407.04607 [src] |
+| Hybrid EFT (HEFT): Lagrangian bias expansion on N-body displacements, emulated | Sailer 2024 (arXiv:2407.04607, Aemulus ν emulator); Kim 2024 (arXiv:2407.04606); Sailer 2025 (arXiv:2503.24385); Rubiola 2025 (arXiv:2510.09563) | k_max = 0.6 h/Mpc in arXiv:2407.04606 [src: abstract]; 79 ≤ ℓ < 600 for the galaxy auto-spectra in arXiv:2407.04607 [src: Sect. 6.6] |
 | Hybrid model with marginalisation over higher-order biases | Farren 2023 (arXiv:2309.05659) | validated on mocks [src] |
-| One-loop Eulerian bias for P, tree-level for the bispectrum | Verdiani 2025 (arXiv:2510.17796) | k_max^P ≃ 0.2 h/Mpc, k_max^B ≃ 0.08 h/Mpc [src] |
+| One-loop Eulerian bias for P, tree-level for the bispectrum | Verdiani 2025 (arXiv:2510.17796) | k_max^P ≃ 0.2 h/Mpc, k_max^B ≃ 0.08 h/Mpc [src: abstract] |
 | EFT of LSS, joint with 3D full shape and bispectrum | Ivanov 2026 (arXiv:2601.16165) | — |
-| Linear bias with scale cuts, or non-linear bias | Chang 2022 (arXiv:2203.12440): two sets of scale cuts | S/N 23.9 or 25.7 [src] |
+| Linear bias with scale cuts, or non-linear bias | Chang 2022 (arXiv:2203.12440): two sets of scale cuts | S/N 23.9 or 25.7 [src: abstract] |
 
 HEFT in arXiv:2407.04607 adds 16 nuisance parameters for four bins (b_2^L, b_s^L and two
 counterterms per bin) to a 30-dimensional posterior [src]. That is where projection ("volume")
@@ -103,17 +103,17 @@ k = 0.6 h/Mpc for haloes of LRG mass [src: Sect. 5.1].
 
 - S_8 = σ_8(Ω_m/0.3)^0.5, the galaxy-lensing convention.
 - S_8^× or S_8^3x2pt = σ_8(Ω_m/0.3)^0.4, the best-constrained combination of the κ–galaxy data
-  (arXiv:2407.04606, arXiv:2409.02109) [src].
+  (arXiv:2407.04606, arXiv:2409.02109) [src: abstract].
 - σ_8, after a BAO prior fixes Ω_m.
 - σ_8(z) or S_8^×(z) per bin: the growth history (arXiv:2402.05761, arXiv:2407.04606) [src].
 - The amplitude at redshifts above the tracers, from the lensing auto-spectrum once the
   cross-correlations have fixed the low-redshift part: a 3.3% constraint above z = 2.4 (Farren
-  2024, arXiv:2409.02109) and σ_8(z̃ = 5.1) (Embil Villagra 2025, arXiv:2507.08798) [src].
+  2024, arXiv:2409.02109) and σ_8(z̃ = 5.1) (Embil Villagra 2025, arXiv:2507.08798) [src: abstract].
 
-The CMB lensing auto-spectrum itself constrains a combination with exponent 0.25 (see
-`cosmo-cmb`). ACT DR6 lensing alone with BAO gives σ_8 = 0.819 ± 0.015 and S_8 = 0.840 ± 0.028
-(Madhavacheril 2023, arXiv:2304.05203) [src]. Four exponents (0.25, 0.4, 0.5, and 0.2 for
-lensing × tSZ, §4) circulate in this domain.
+The CMB lensing auto-spectrum itself constrains S_8^CMBL ≡ σ_8(Ω_m/0.3)^0.25 (arXiv:2304.05203,
+Sect. I and footnote 2; see `cosmo-cmb`). ACT DR6 lensing alone with BAO gives σ_8 = 0.819 ± 0.015 and S_8 = 0.840 ± 0.028
+(Madhavacheril 2023, arXiv:2304.05203) [src: abstract]. Four exponents (this one, the two above, and
+the one of lensing × tSZ in `#thermal-sunyaev-zel-dovich-x-lss`) circulate in this domain.
 
 ### 2.4 Lensing map normalisation in cross-correlation
 <!-- key: lensing-map-normalisation-in-cross-correlation -->
@@ -147,31 +147,33 @@ from Gaia BP/RP spectra improved with a k-nearest-neighbour model trained on SDS
 <!-- key: derived-tests -->
 
 - **f_NL (local).** Scale-dependent bias Δb ∝ f_NL b_φ/k², with b_φ ∝ (b − p). Analyses quote
-  p = 1 and p = 1.6 side by side (arXiv:2504.20992, arXiv:2512.17865) [src]. The κ–galaxy
-  spectrum is used alone or with the auto-spectrum above an ℓ_min cut (arXiv:2412.10279) [src].
+  p = 1 and p = 1.6 side by side (arXiv:2504.20992, arXiv:2512.17865) [src: abstract]. The κ–galaxy
+  spectrum is used alone or with the auto-spectrum above an ℓ_min cut (arXiv:2412.10279) [src: abstract].
 - **E_G.** The ratio of a lensing cross-spectrum to a velocity (RSD) measurement of the same
   galaxies; in GR it equals Ω_m,0/f(z) and is scale independent. With ACT DR6 and BOSS it is
   consistent with GR and with scale independence (PTE > 5%), with 3–4% systematic errors
-  (Wenzl 2024, arXiv:2405.12795) [src]. Proposed by Zhang 2007 (arXiv:0704.1932) as the ratio
+  (Wenzl 2024, arXiv:2405.12795) [src: abstract]. Proposed by Zhang 2007 (arXiv:0704.1932) as the ratio
   of the Laplacian of the Newtonian potentials to the peculiar-velocity divergence; first
   measured with galaxy–galaxy lensing, E_G = 0.39 ± 0.06 on tens of Mpc (Reyes 2010,
   arXiv:1003.2185); the CMB-lensing estimator, from C_ℓ^κg, C_ℓ^gg and β, is Pullen 2014
   (arXiv:1412.4454); its first use, Planck × CMASS, gave E_G(z = 0.57) = 0.243 ± 0.060 (stat)
   ± 0.013 (sys), 2.6σ below GR, the deviation lying above 80 Mpc/h (Pullen 2015,
-  arXiv:1511.04457) [src].
+  arXiv:1511.04457) [src: abstract].
 - **Sound-horizon-free H_0.** The shape of the lensing and galaxy spectra carries the
   matter–radiation equality scale (arXiv:2409.02109, arXiv:2506.22416, arXiv:2410.24134) [src].
 - **Variance cancellation.** A third tracer can remove structure from κ before the
   cross-correlation, giving the gain of a joint analysis without modelling that tracer:
   10–20% lower variance with the CIB or LRGs on Planck data (Baleato Lizancos 2023,
-  arXiv:2301.10242) [src].
+  arXiv:2301.10242) [src: abstract].
 - **Galaxy magnification as a growth probe.** Cross-correlating non-overlapping photometric bins
-  isolates magnification; detected at 11σ for BGS × LRG (arXiv:2503.24385) [src].
+  isolates magnification; detected at 11σ for BGS × LRG (arXiv:2503.24385) [src: abstract].
 - **Stacking on voids and superstructures**, compared with mock templates through an amplitude
   A_κ (Sartori 2026, arXiv:2605.19763; Hang 2021, arXiv:2105.11936) [src].
 
 ### 2.7 What the main analyses did
 <!-- key: what-the-main-analyses-did -->
+
+Columns: Farren 2023, arXiv:2309.05659 (left), and Sailer 2024, arXiv:2407.04607 (right); the place read is given in each cell.
 
 | | unWISE × ACT DR6 (arXiv:2309.05659) | DESI LRG × PR4 + ACT DR6 (arXiv:2407.04607) |
 |---|---|---|
@@ -199,7 +201,7 @@ Two analyses built differently:
 ΔT/T_CMB = −∫ dχ a σ_T n_e (v_e · n̂)/c. The signal has the blackbody spectrum of the CMB, so
 frequency information cannot isolate it, and it is odd in the line-of-sight velocity, so it
 averages to zero in a plain stack. Its typical size where it peaks is ~0.1 μK against ~100 μK
-of primary anisotropy (as stated in Ried Guachalla 2025, arXiv:2503.19870) [src]. Every estimator
+of primary anisotropy (as stated in Ried Guachalla 2025, arXiv:2503.19870) [src: Sect. IV.2]. Every estimator
 supplies the velocity sign from the galaxy survey.
 
 **Origins.** The effect is that of Sunyaev 1980 (doi:10.1093/mnras/190.3.413 [sec: title and year
@@ -228,9 +230,9 @@ Where each estimator comes from [src, abstracts]:
 
 | Estimator | Proposed in |
 |---|---|
-| Pairwise | Ferreira 1998 (arXiv:astro-ph/9812456): the mean pairwise velocity v_12 estimated from line-of-sight velocities, sensitive to σ_8² Ω^0.6. With Planck: 1.8–2.5σ on foreground-cleaned maps around SDSS central galaxies at z ≈ 0.1 (Planck Collaboration 2015, arXiv:1504.03339) |
+| Pairwise | Ferreira 1998 (arXiv:astro-ph/9812456): the mean pairwise velocity v_12 estimated from line-of-sight velocities, sensitive to σ_8² Ω^0.6. With Planck: 1.8–2.5σ on foreground-cleaned maps around SDSS central galaxies at z ≈ 0.1 (Planck Collaboration 2015, arXiv:1504.03339) [src: abstract] |
 | Velocity-weighted template | Ho 2009 (arXiv:0903.2845): reconstructed velocity field × galaxy field as a kSZ template |
-| Projected field | Doré 2003 (arXiv:astro-ph/0309337): kSZ × cosmic shear, strength scaling roughly as σ_8⁷; DeDeo 2005 (arXiv:astro-ph/0511060): tomographic galaxy counts; Ferraro 2016 (arXiv:1605.02722): squared filtered map × projected tracers, **forecast** S/N ≈ 3 (Planck), 120 (Advanced ACTPol), > 150 (Stage IV) with WISE, statistical errors only |
+| Projected field | Doré 2003 (arXiv:astro-ph/0309337): kSZ × cosmic shear, strength scaling roughly as σ_8⁷; DeDeo 2005 (arXiv:astro-ph/0511060): tomographic galaxy counts; Ferraro 2016 (arXiv:1605.02722): squared filtered map × projected tracers, **forecast** S/N ≈ 3 (Planck), 120 (Advanced ACTPol), > 150 (Stage IV) with WISE, statistical errors only [src: abstract] |
 | Velocity reconstruction ("kSZ tomography") | Terrana 2016 (arXiv:1610.06919) and Deutsch 2017 (arXiv:1707.08129): the statistically anisotropic part of the CMB–tracer correlation encodes the CMB dipole seen by the electrons; Cayuso 2021 (arXiv:2111.11526): quadratic estimators for the radial (kSZ) and transverse (moving lens) velocity |
 
 **Stacking, as implemented for DESI × ACT** (arXiv:2503.19870, section "Methodology") [src].
@@ -308,8 +310,8 @@ marginalisation over the CMB lensing contribution to the same statistic (arXiv:2
 
 Combining kSZ (density) with tSZ (pressure) of the same objects gives the electron temperature,
 measured to 20% for CMASS (arXiv:2009.05557), and the feedback energetics (Amodeo 2020,
-arXiv:2009.05558) [src]. Stacked tSZ with a ȳ–τ̄ relation gives optical depths that can be
-checked against the pairwise kSZ values (Moore 2026, arXiv:2609.08939) [src].
+arXiv:2009.05558) [src: abstract]. Stacked tSZ with a ȳ–τ̄ relation gives optical depths that can be
+checked against the pairwise kSZ values (Moore 2026, arXiv:2609.08939) [src: abstract].
 
 ### 3.4 Cosmology from the large-scale velocity field
 <!-- key: cosmology-from-the-large-scale-velocity-field -->
@@ -323,9 +325,9 @@ developed in `cosmo-peculiar-velocities`.
 Proposals to break the degeneracy: a low-scatter relation between optical depth and tSZ signal
 within an aperture, found in hydrodynamical simulations with a sub-grid systematic below 10%
 (Battaglia 2016, arXiv:1607.02442); fast radio bursts (Madhavacheril 2019, arXiv:1901.02418)
-[src]. What the cosmology programme promised: growth rate to sub-1% out to z ≈ 1 from kSZ cluster
+[src: abstract]. What the cosmology programme promised: growth rate to sub-1% out to z ≈ 1 from kSZ cluster
 velocities and reconstructed velocities (Alonso 2016, arXiv:1604.01382, **forecast**); f_NL from
-the unbiased large-scale velocity field (Münchmeyer 2018, arXiv:1810.13424, **forecast**) [src].
+the unbiased large-scale velocity field (Münchmeyer 2018, arXiv:1810.13424, **forecast**) [src: abstract].
 
 ## 4. Thermal Sunyaev–Zel'dovich × LSS
 <!-- key: thermal-sunyaev-zel-dovich-x-lss -->
@@ -336,29 +338,29 @@ component separation.
 **Origins.** The effect: Sunyaev 1970 (doi:10.1007/BF00653471 [sec: title and year from Crossref,
 paper not read]). Halo model: Komatsu 2002 (arXiv:astro-ph/0205468) predicts the tSZ C_ℓ from a
 universal gas profile and the halo mass function with no free parameter; C_ℓ ∝ σ_8⁷ (Ω_b h)²,
-dominated by 20–40% of the virial radius [src]. Pressure profiles behind the models: the
+dominated by 20–40% of the virial radius [src: abstract]. Pressure profiles behind the models: the
 universal profile of 33 REXCESS clusters of 10¹⁴–10¹⁵ M⊙ (Arnaud 2009, arXiv:0910.1234) and
-profiles from SPH simulations (Battaglia 2011, arXiv:1109.3711) [src]. y maps: the first all-sky
+profiles from SPH simulations (Battaglia 2011, arXiv:1109.3711) [src: abstract]. y maps: the first all-sky
 map, from the Planck 100–857 GHz channels (Planck Collaboration 2013, arXiv:1303.5081); the 2015
-maps, from 30–857 GHz (Planck Collaboration 2015, arXiv:1502.01596) [src]. First tSZ × CMB
+maps, from 30–857 GHz (Planck Collaboration 2015, arXiv:1502.01596) [src: abstract]. First tSZ × CMB
 lensing: 6.2σ with a Planck ILC y map, σ_8(Ω_m/0.282)^0.26 = 0.824 ± 0.029 (Hill 2013,
 arXiv:1312.4525); stacking and cross-correlation of y with groups: Vikram 2016
-(arXiv:1608.04160) [src].
+(arXiv:1608.04160) [src: abstract].
 
 The cross-correlations in use:
 
 | Statistic | Constrains | Reference |
 |---|---|---|
 | galaxies × y, large scales | bias-weighted mean electron pressure ⟨b_h P_e⟩(z), in meV cm⁻³ | Pandey 2019, arXiv:1904.13347; Sánchez 2022, arXiv:2210.08633 [src] |
-| spectroscopic reference × multi-frequency intensity maps | ⟨bP_e⟩ to z ~ 1 with uncorrelated bins; the thermal history; a mass bias B = 1.27 (1 − b = 0.79) for the Planck universal pressure profile | Chiang 2020, arXiv:2006.14650 [src] |
+| spectroscopic reference × multi-frequency intensity maps | ⟨bP_e⟩ to z ~ 1 with uncorrelated bins; the thermal history; a mass bias B = 1.27 (1 − b = 0.79) for the Planck universal pressure profile | Chiang 2020, arXiv:2006.14650 [src: abstract] |
 | galaxies × multi-frequency maps, tSZ and CIB fitted together | ⟨bP_e⟩ and ⟨bρ_SFR⟩ jointly | La Posta 2026, arXiv:2603.04269 [src] |
-| shear × y | pressure profile, feedback, and cosmology through σ_8(Ω_m/0.3)^0.2 | Van Waerbeke 2013, arXiv:1310.5721; Tröster 2021, arXiv:2109.04458; Gatti 2021, arXiv:2108.01600; Pandey 2025, arXiv:2506.07432 [src] |
-| CMB lensing × y | intermediate-mass (10¹³–10¹⁴ h⁻¹M⊙), z ≲ 1.5 gas | McCarthy 2023, arXiv:2308.16260 [src] |
+| shear × y | pressure profile, feedback, and cosmology through σ_8(Ω_m/0.3)^0.2 | Van Waerbeke 2013, arXiv:1310.5721; Tröster 2021, arXiv:2109.04458; Gatti 2021, arXiv:2108.01600; Pandey 2025, arXiv:2506.07432 [src: abstract] |
+| CMB lensing × y | intermediate-mass (10¹³–10¹⁴ h⁻¹M⊙), z ≲ 1.5 gas | McCarthy 2023, arXiv:2308.16260 [src: abstract] |
 | stacked y on groups and clusters | integrated pressure; ȳ–τ̄ relation | arXiv:2609.08939 [src] |
 
 In the FLAMINGO simulations ⟨b_h P_e⟩ ∝ S_8^ε with ε ≈ 3 over 0.1 ≤ z ≤ 1, and stronger feedback
 raises ⟨b_h P_e⟩, opposite to its effect on small-scale gas fractions (Salcido 2026,
-arXiv:2605.11083) [src]. The statistic is therefore a steep but feedback-degenerate amplitude
+arXiv:2605.11083) [src: abstract]. The statistic is therefore a steep but feedback-degenerate amplitude
 probe.
 
 The (1 − b) of arXiv:2006.14650 is defined against the Planck pressure profile; the comparison
@@ -382,17 +384,17 @@ calibrations m of the four source bins [src: Sect. 2.1].
 positive correlation between temperature and overdensity on large angular scales. It is detectable
 only in cross-correlation, and the signal-to-noise is bounded by cosmic variance of the primary
 CMB: the highest significance among the works cited here is 4.7–5.0σ, from five catalogues in
-redshift bins (Stölzner 2017, arXiv:1710.03238) [src].
+redshift bins (Stölzner 2017, arXiv:1710.03238) [src: abstract].
 
 **Origins.** Sachs 1967 (doi:10.1086/148982) and Rees 1968 (doi:10.1038/217511a0) [sec: titles
 and years from Crossref, papers not read]. Crittenden 1995 (arXiv:astro-ph/9510072) proposed the
 cross-correlation: with a cosmological constant a significant part of the large-scale anisotropy
 arises at z < 1 from evolving potentials, "an effect first noted by Rees and Sciama", and
-correlates with tracers of the local matter density [src]. First reported correlations: WMAP ×
+correlates with tracers of the local matter density [src: abstract]. First reported correlations: WMAP ×
 HEAO-1 hard X-ray background at 2.5–3.0σ and × NVSS at 2–2.5σ (Boughn 2003,
-arXiv:astro-ph/0305001) [src]. WMAP-era combinations: ~4.5σ (Giannantonio 2008, arXiv:0801.4380);
+arXiv:astro-ph/0305001) [src: abstract]. WMAP-era combinations: ~4.5σ (Giannantonio 2008, arXiv:0801.4380);
 a tomographic likelihood over z ~ 0.1–2.5 with b(z) dN/dz fitted per sample (Ho 2008,
-arXiv:0801.0642) [src]. Review: Nishizawa 2014 (arXiv:1404.5102) [src].
+arXiv:0801.0642) [src: abstract]. Review: Nishizawa 2014 (arXiv:1404.5102) [src: abstract].
 
 Three approaches:
 
@@ -406,10 +408,10 @@ Three approaches:
    and K_ℓ^Φ̇ = (3 Ω_m H_0²/k²) ∫ dz d[(1+z)D(z)]/dz j_ℓ[kχ(z)]; a magnification term with
    coefficient (5s − 2) is added. The template is binned like the data and scaled by A_ISW.
 2. Stacking or matched filtering on catalogued voids and superclusters (Nadathur 2016,
-   arXiv:1608.08638; Kovács 2018, arXiv:1811.07812) [src]. The matched filter has an expected S/N
+   arXiv:1608.08638; Kovács 2018, arXiv:1811.07812) [src: abstract]. The matched filter has an expected S/N
    comparable to the full cross-correlation and avoids the a posteriori bias of tuned stacking
-   filters (arXiv:1608.08638) [src]. The stacking line starts with Granett 2008
-   (arXiv:0805.3695): 9.6 ± 2.2 μK, above 4σ, on SDSS LRG supervoids and superclusters [src].
+   filters (arXiv:1608.08638) [src: abstract]. The stacking line starts with Granett 2008
+   (arXiv:0805.3695): 9.6 ± 2.2 μK, above 4σ, on SDSS LRG supervoids and superclusters [src: abstract].
 3. The ISW–lensing bispectrum, internal to the CMB: ≈ 3σ in Planck 2015 (Planck Collaboration
    2015, arXiv:1502.01595) [src].
 
@@ -425,11 +427,11 @@ the principal contaminant of y-maps and of temperature-based lensing reconstruct
 (`systematics.md` §2–3).
 
 **Origins.** Song 2002 (arXiv:astro-ph/0209001) computed the far-infrared background × lensing
-potential correlation with a halo model [src]. First detections, both in 2013: Planck, with a
+potential correlation with a halo model [src: abstract]. First detections, both in 2013: Planck, with a
 peak significance of 42σ at 545 GHz, a correlation as high as 80% and a host-halo mass scale
 log₁₀(M/M⊙) = 10.5 ± 0.6 (Planck Collaboration 2013, arXiv:1303.5078); SPT 150 GHz convergence ×
 Herschel/SPIRE over 90 deg², 6.7–8.8σ per band, bias 1.3–1.8 (Holder 2013, arXiv:1303.5048)
-[src]. Delensing with the CIB: Sherwin 2015 (arXiv:1502.05356) [src].
+[src: abstract]. Delensing with the CIB: Sherwin 2015 (arXiv:1502.05356) [src: abstract].
 
 ## 7. Other secondaries
 <!-- key: other-secondaries -->
@@ -509,11 +511,11 @@ propagating its error to f_NL [src: Sect. 1 and Sect. 5.4].
   (`systematics.md` §6).
 - **Scale cuts or bias model**: linear-only (arXiv:2410.10808) against HEFT to k = 0.6 h/Mpc
   (arXiv:2407.04606); arXiv:2407.04607 reports "excellent agreement" between its HEFT fit and a
-  linear-theory fit on a restricted range of scales [src].
+  linear-theory fit on a restricted range of scales [src: abstract].
 - **f_NL response p**: 1 or 1.6.
 - **Detection significance**: "S/N" from Δχ² against a best-fit template, "rejection of the null",
   and amplitude over error are three numbers; arXiv:2305.06792 quotes 4.8σ and 5.1σ for the same
-  data [src].
+  data [src: abstract].
 - **kSZ amplitude names**: τ̄, A_kSZ², A, b_v (§3.2).
 - **"kinetic" and "kinematic"** SZ are the same effect; both spellings appear in titles.
 - **Template amplitudes**: A_ISW, A_κ and b_ML are ratios to a ΛCDM or halo-model template whose

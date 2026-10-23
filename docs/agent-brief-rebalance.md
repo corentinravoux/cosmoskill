@@ -22,6 +22,11 @@ dossier's citations. Where the field really has one (one instrument, one
 survey, one code that everyone uses), say so in the dossier's scope line and
 stop there.
 
+## Numbers
+
+Every number you add names its paper and the place read, in the same row,
+item or paragraph; no number you computed (`docs/agent-brief.md`, section 3).
+
 ## What to add
 
 1. **The peers, method step by method step.** For each step of "How it is
@@ -56,9 +61,8 @@ stop there.
 ## Bibliography
 
 A new paper gets a row in the skill's `references/sources.tsv` (title and
-first author from the abstract you read). The brief's cap of 120 rows is
-already exceeded in some skills; add only papers you cite, and report the
-row count before and after.
+first author from the abstract you read). There is no cap on the rows (owner, 2026-10-23); add only papers you cite,
+and report the row count before and after.
 
 ## Reading and budget
 

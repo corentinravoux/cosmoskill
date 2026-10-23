@@ -3,23 +3,23 @@
 Scope: the systematic effects that limit cluster cosmology, their measured size, mitigation and the reference a referee expects.
 Snapshot: 2026-10-14
 
-Cluster counts are limited by systematics, not by statistics, in every current sample. The three families are the absolute mass scale (sections 1–4), the selection (sections 5–8) and the theory and inference machinery (sections 9–11). Each subsection gives the mechanism, the size where a paper quantifies it, the usual mitigation, the validation test and the reference.
+Cluster counts are limited by systematics, not by statistics, in every current sample. The three families are the absolute mass scale (Sects. 1–4), the selection (Sects. 5–8) and the theory and inference machinery (Sects. 9–11). Each subsection gives the mechanism, the size where a paper quantifies it, the usual mitigation, the validation test and the reference.
 
 ## 1. Weak-lensing mass: modelling bias and scatter
 <!-- key: weak-lensing-mass-modelling-bias-and-scatter -->
 
 - Mechanism. A spherical profile fitted to the tangential shear of a triaxial halo embedded in large-scale structure does not return the spherical-overdensity mass.
-- Size. Bias of 5–10% and intrinsic scatter of about 20% for massive clusters, up to about 30% for groups, in NFW fits to about 1e4 simulated haloes [src] (Becker & Kravtsov 2011, arXiv:1011.1681). On N-body haloes in Euclid conditions the weak-lensing mass is low by −14.6 ± 1.7 % on average for M200c > 5e13 M_sun at z < 1 in the ideal case, and by −15.5 ± 2.4 % in a realistic setting with robust source selection [src] (Euclid Collaboration 2024, arXiv:2409.02783).
+- Size. Bias of 5–10% and intrinsic scatter of about 20% for massive clusters, up to about 30% for groups, in NFW fits to about 1e4 simulated haloes [src: abstract] (Becker & Kravtsov 2011, arXiv:1011.1681). On N-body haloes in Euclid conditions the weak-lensing mass is low by −14.6 ± 1.7 % on average for M200c > 5e13 M_sun at z < 1 in the ideal case, and by −15.5 ± 2.4 % in a realistic setting with robust source selection [src: abstract] (Euclid Collaboration 2024, arXiv:2409.02783).
 - Mitigation. A simulation-calibrated relation between weak-lensing mass and halo mass, with its bias and scatter as nuisance parameters, following the shear-library method of Grandis et al. 2021 (arXiv:2103.16212) [src]; a restricted radial range that avoids the core and the two-halo regime. In the HSC shear-selected analysis the calibrated scatter is σ_WL = 0.238 ± 0.037, and fitting down to 0.2 instead of 0.5 Mpc/h raises it by about 50% [src: Sect. 4.5.1, arXiv:2406.11970].
 - Validation. The same estimator run on mock shear from hydrodynamical simulations; agreement between independent lensing surveys for the same clusters.
-- Size in a current budget. For SPT clusters with DES Y3 lensing the systematic uncertainty of the mass calibration rises from 1% at z = 0.25 to 10% at z = 0.95, plus 2% in quadrature for baryonic effects on the lensing-mass model [src] (Bocquet et al. 2024, arXiv:2310.12213). For eRASS1 × DES Y3 the hydrodynamical modelling uncertainty dominates at z < 0.6 and the source photo-z calibration at higher lens redshift [src] (arXiv:2402.08455).
+- Size in a current budget. For SPT clusters with DES Y3 lensing the systematic uncertainty of the mass calibration rises from 1% at z = 0.25 to 10% at z = 0.95, plus 2% in quadrature for baryonic effects on the lensing-mass model [src: abstract] (Bocquet et al. 2024, arXiv:2310.12213). For eRASS1 × DES Y3 the hydrodynamical modelling uncertainty dominates at z < 0.6 and the source photo-z calibration at higher lens redshift [src: abstract] (arXiv:2402.08455).
 
 ## 2. Weak-lensing mass: source redshifts, shear calibration, member contamination, blending
 <!-- key: weak-lensing-mass-source-redshifts-shear -->
 
 - Mechanism. The lensing efficiency Σ_crit depends on the source redshift distribution; cluster members scattered into the source sample dilute the shear; the dense cluster field increases blending.
-- Size. Source photometric redshifts are the largest systematic of the CCCP lensing masses [src] (Hoekstra et al. 2015, arXiv:1502.01883). In the DES Y1 stacked calibration the systematic term (0.133) exceeds the statistical one (0.075) on M0 = 3.081 in units of 1e14 M_sun, for a 5.0% total [src] (McClintock et al. 2019, arXiv:1805.00039); the listed contributions are shear and photo-z errors, miscentring, member dilution, the halo–mass correlation model, triaxiality and projection effects.
-- Blending at Rubin depth. In DC2 simulations a cut on a "blending entropy" S_b < 0.2 removes about 25% of objects, mostly near the magnitude limit, and substantially reduces the blending-induced bias in cluster lensing profiles and masses, and through them in σ8 [src] (Ramel et al. 2026, arXiv:2609.12158).
+- Size. Source photometric redshifts are the largest systematic of the CCCP lensing masses [src: abstract] (Hoekstra et al. 2015, arXiv:1502.01883). In the DES Y1 stacked calibration the systematic term (0.133) exceeds the statistical one (0.075) on M0 = 3.081 in units of 1e14 M_sun, for a 5.0% total [src: abstract] (McClintock et al. 2019, arXiv:1805.00039); the listed contributions are shear and photo-z errors, miscentring, member dilution, the halo–mass correlation model, triaxiality and projection effects.
+- Blending at Rubin depth. In DC2 simulations a cut on a "blending entropy" S_b < 0.2 removes about 25% of objects, mostly near the magnitude limit, and substantially reduces the blending-induced bias in cluster lensing profiles and masses, and through them in σ8 [src: abstract] (Ramel et al. 2026, arXiv:2609.12158).
 - Mitigation. Boost-factor or P(z)-decomposition corrections for member dilution; conservative source selection behind the cluster; the survey's own shear and redshift calibration (see `cosmo-weak-lensing`).
 - Validation. Consistency of the masses of the same clusters across DES, KiDS and HSC, as done for eRASS1 (arXiv:2402.08455, arXiv:2504.01076).
 
@@ -27,7 +27,7 @@ Cluster counts are limited by systematics, not by statistics, in every current s
 <!-- key: miscentring -->
 
 - Mechanism. The optical or SZ centre is offset from the halo centre. The shear profile is suppressed at small radii and, for optical finders, the richness is underestimated.
-- Size. About 75 ± 8 % of DES Y1 redMaPPer clusters are well centred relative to X-ray peaks; the offsets of the rest follow a Gamma distribution in normalised projected distance; miscentring causes a systematic underestimate of richness [src] (Zhang et al. 2019, arXiv:1901.07119).
+- Size. About 75 ± 8 % of DES Y1 redMaPPer clusters are well centred relative to X-ray peaks; the offsets of the rest follow a Gamma distribution in normalised projected distance; miscentring causes a systematic underestimate of richness [src: abstract] (Zhang et al. 2019, arXiv:1901.07119).
 - Mitigation. A two-component profile model (centred plus miscentred fraction with an offset distribution), with priors from X-ray or SZ centres; exclusion of the innermost radii.
 - Validation. Comparison of optical centres with X-ray or SZ centres on the overlap sample.
 
@@ -35,29 +35,29 @@ Cluster counts are limited by systematics, not by statistics, in every current s
 <!-- key: hydrostatic-bias-and-x-ray-temperature -->
 
 - Mechanism. Hydrostatic masses miss non-thermal pressure (bulk motion, turbulence) and depend on the temperature estimate. Scaling relations calibrated on them carry the bias into the counts.
-- First simulation estimate. Mock Chandra analyses of simulated clusters: hydrostatic mass biased low by about 5–20% through the virial region, gas mass accurate to < 6% [src] (Nagai, Vikhlinin & Kravtsov 2007, arXiv:astro-ph/0609247).
-- Size from simulations. Median hydrostatic bias of about −0.1 at group scale to −0.2 at cluster scale in FLAMINGO, with scatter of about 0.1 at M500c ~ 1e14 M_sun [src] (Braspenning et al. 2025, arXiv:2409.07849). For M500c > 7.5e14 M_sun at z = 0 the bias is 0.22 ± 0.01 with X-ray spectroscopic-like temperatures and −0.05 ± 0.01 with SZ y-weighted temperatures [src] (Kay et al. 2024, arXiv:2404.08539): much of the "hydrostatic" bias is a temperature-weighting effect.
-- Size from data. Non-thermal pressure of about 6% at R500 and 10% at R200 in X-COP; the universal gas fraction with the Planck mass calibration implies 1 − b = 0.85 ± 0.05 [src] (Eckert et al. 2019, arXiv:1805.00034).
-- Instrument calibration. The same lensing data give 1 − b = 0.89 ± 0.04 against a Chandra-calibrated Y_SZ–M relation and 0.76 ± 0.04 against the XMM one [src] (arXiv:2402.04006). The cosmology from the counts is identical; only the label "bias" moves.
-- Mass and redshift dependence. Weighing the Giants found evidence at 95% confidence for a mass dependence of M_Planck/M_WtG [src] (arXiv:1402.2670); a Planck + SPT fit finds the bias increasing towards high redshift and low mass (arXiv:2112.03606); ACT × DES Y3 finds (1 − b) decreasing with redshift with power-law index −1.8 +0.5/−0.6 [src] (arXiv:2512.18935); gas-fraction data give 3.8σ evidence for redshift dependence that is "entirely dependent on the cluster sample" [src] (Wicker et al. 2023, arXiv:2204.12823).
+- First simulation estimate. Mock Chandra analyses of simulated clusters: hydrostatic mass biased low by about 5–20% through the virial region, gas mass accurate to < 6% [src: abstract] (Nagai, Vikhlinin & Kravtsov 2007, arXiv:astro-ph/0609247).
+- Size from simulations. Median hydrostatic bias of about −0.1 at group scale to −0.2 at cluster scale in FLAMINGO, with scatter of about 0.1 at M500c ~ 1e14 M_sun [src: abstract] (Braspenning et al. 2025, arXiv:2409.07849). For M500c > 7.5e14 M_sun at z = 0 the bias is 0.22 ± 0.01 with X-ray spectroscopic-like temperatures and −0.05 ± 0.01 with SZ y-weighted temperatures [src: abstract] (Kay et al. 2024, arXiv:2404.08539): much of the "hydrostatic" bias is a temperature-weighting effect.
+- Size from data. Non-thermal pressure of about 6% at R500 and 10% at R200 in X-COP; the universal gas fraction with the Planck mass calibration implies 1 − b = 0.85 ± 0.05 [src: abstract] (Eckert et al. 2019, arXiv:1805.00034).
+- Instrument calibration. The same lensing data give 1 − b = 0.89 ± 0.04 against a Chandra-calibrated Y_SZ–M relation and 0.76 ± 0.04 against the XMM one [src: abstract] (arXiv:2402.04006). The cosmology from the counts is identical; only the label "bias" moves.
+- Mass and redshift dependence. Weighing the Giants found evidence at 95% confidence for a mass dependence of M_Planck/M_WtG [src: abstract] (arXiv:1402.2670); a Planck + SPT fit finds the bias increasing towards high redshift and low mass (arXiv:2112.03606); ACT × DES Y3 finds (1 − b) decreasing with redshift with power-law index −1.8 +0.5/−0.6 [src: abstract] (arXiv:2512.18935); gas-fraction data give 3.8σ evidence for redshift dependence that is "entirely dependent on the cluster sample" [src: abstract] (Wicker et al. 2023, arXiv:2204.12823).
 - Mitigation. Calibrate the mass scale with lensing and treat X-ray quantities as low-scatter proxies only; free mass and redshift trends of the relation.
-- Validation. Relaxed clusters at r2500, where lensing and hydrostatic masses agree: 0.96 ± 9% (stat) ± 9% (sys) [src] (Applegate et al. 2016, arXiv:1509.02162).
+- Validation. Relaxed clusters at r2500, where lensing and hydrostatic masses agree: 0.96 ± 9% (stat) ± 9% (sys) [src: abstract] (Applegate et al. 2016, arXiv:1509.02162).
 
 ## 5. X-ray selection
 <!-- key: x-ray-selection -->
 
 - Mechanism. Detection depends on surface brightness, hence on core state, morphology, exposure, background and point-source contamination, not on mass alone.
 - Evidence. PSZ2 revealed "a population of low-redshift X-ray under-luminous clusters" almost absent from ROSAT-selected samples [src] (arXiv:1502.01598). X-ray and SZ selections do not pick the same population.
-- Mitigation. Selection functions from end-to-end simulated skies, as for eRASS1 (Clerc et al. 2024, arXiv:2402.08457); optical confirmation to control purity (eRASS1 cosmology sample at about 95% purity [src], arXiv:2402.08452); a mixture model for residual contaminants.
-- Validation. Cross-matching with SZ and optical catalogues: 1279 SPT-3G clusters match eRASS1 [src] (arXiv:2607.01175); 321 AMICO KiDS-1000 clusters match the eRASS1 primary sample [src] (arXiv:2507.14338).
+- Mitigation. Selection functions from end-to-end simulated skies, as for eRASS1 (Clerc et al. 2024, arXiv:2402.08457); optical confirmation to control purity (eRASS1 cosmology sample at about 95% purity [src: abstract], arXiv:2402.08452); a mixture model for residual contaminants.
+- Validation. Cross-matching with SZ and optical catalogues: 1279 SPT-3G clusters match eRASS1 [src: abstract] (arXiv:2607.01175); 321 AMICO KiDS-1000 clusters match the eRASS1 primary sample [src: abstract] (arXiv:2507.14338).
 
 ## 6. SZ selection: astrophysical contamination
 <!-- key: sz-selection-astrophysical-contamination -->
 
-- Dust. At z > 1 the tSZ signal is reduced by 17.4 +3.1/−2.9 % at 150 GHz and 3.7 ± 0.7 % at 95 GHz; the SPT-Deep catalogue from dust-nulled maps is consistent with the nominal one, which the authors attribute to the 220 GHz band [src] (arXiv:2503.17271). In SPT-3G five-year data the 220 GHz increment is about 17 times larger at z ~ 1.5 than at z ~ 0.25, with only weak evidence for correlated synchrotron emission [src] (arXiv:2607.01175).
-- Radio sources. Median reduction of ξ by 0.032, about 0.8% of the ξ = 4 threshold; about 7% of candidates have a predicted Δξ > 1 [src] (arXiv:2311.07512).
-- Relativistic corrections and CIB in Planck. Relativistic corrections change the tSZ amplitude by 5–10% but not the signal-to-noise; the cluster-correlated CIB has a negligible effect on the Planck tSZ observables [src] (arXiv:2408.06189).
-- Purity. PSZ2 purity lower limit 83% [src] (arXiv:1502.01598); SPT-3G candidates more than 82% pure at ξ > 4 and more than 99% at ξ ≥ 5 [src] (arXiv:2607.01175).
+- Dust. At z > 1 the tSZ signal is reduced by 17.4 +3.1/−2.9 % at 150 GHz and 3.7 ± 0.7 % at 95 GHz; the SPT-Deep catalogue from dust-nulled maps is consistent with the nominal one, which the authors attribute to the 220 GHz band [src: abstract] (arXiv:2503.17271). In SPT-3G five-year data the 220 GHz increment is about 17 times larger at z ~ 1.5 than at z ~ 0.25, with only weak evidence for correlated synchrotron emission [src: abstract] (arXiv:2607.01175).
+- Radio sources. Median reduction of ξ by 0.032, about 0.8% of the ξ = 4 threshold; about 7% of candidates have a predicted Δξ > 1 [src: abstract] (arXiv:2311.07512).
+- Relativistic corrections and CIB in Planck. Relativistic corrections change the tSZ amplitude by 5–10% but not the signal-to-noise; the cluster-correlated CIB has a negligible effect on the Planck tSZ observables [src: abstract] (arXiv:2408.06189).
+- Purity. PSZ2 purity lower limit 83% [src: abstract] (arXiv:1502.01598); SPT-3G candidates more than 82% pure at ξ > 4 and more than 99% at ξ ≥ 5 [src: abstract] (arXiv:2607.01175).
 - Mitigation. Multi-frequency matched filters with deprojection; optical confirmation; a ξ or S/N threshold at which purity is high.
 - Validation. Catalogues rebuilt from dust-nulled or CIB-deprojected maps.
 
@@ -71,38 +71,38 @@ Cluster counts are limited by systematics, not by statistics, in every current s
 ## 8. Optical selection: projection effects and lensing selection bias
 <!-- key: optical-selection-projection-effects-and -->
 
-This is the systematic that produced the wrong DES Y1 result (S8 = 0.65 ± 0.04, arXiv:2002.11124).
+This is the systematic that produced the wrong DES Y1 result (S8 = 0.65 ± 0.04, arXiv:2002.11124). [src: abstract]
 
 - Mechanism. Photometric cluster finders count galaxies in a cylinder that is tens of Mpc deep. Haloes embedded in filaments or elongated along the line of sight gain richness, so a richness-selected sample is enriched in them. Their stacked lensing and clustering signals are boosted anisotropically on large scales relative to a mass-selected sample of the same mean mass.
 - How the estimate grew. The redMaPPer paper put the incidence of projection effects at ≤ 5% [src] (Rykoff et al. 2014, arXiv:1303.3562). The empirical model of Costanzi et al. 2019 (arXiv:1807.07072) found that marginalising over a lognormal richness–mass relation only, without projection effects, biases S8 by 0.05, more than twice the posterior uncertainty of a DES Y1-like analysis [src]. DES Y1 then found the selection effect on stacked lensing masses to be 20–30% [src: Sect. III.3, arXiv:2002.11124].
-- Size in simulations. Lensing and clustering boosted on large scales by up to factors of 1.2 and 1.4; about 30% of the sample, the clusters in filaments aligned with the line of sight, causes the boost [src] (Sunayama et al. 2020, arXiv:2002.03867). For redMaPPer in the Buzzard simulations, residuals of richness and lensing are positively correlated at fixed mass, and the selection bias of ΔΣ is 20–60% on large scales, from spurious members within ±20–60 Mpc/h along the line of sight [src] (Wu et al. 2022, arXiv:2203.05416). The Euclid framework finds an enhancement of the stacked profile that peaks near 1 Mpc/h with amplitude 20–40% depending on richness and redshift, with baryons changing it by about 2% beyond 0.3 Mpc/h [src] (Euclid Collaboration 2026, arXiv:2605.02723).
-- Size in data. Projection effects contribute about 16% of the weighted richness for the lowest-richness SDSS redMaPPer clusters, with a steeper richness dependence than the models then in use [src] (Myles et al. 2021, arXiv:2011.07070). SPT-SZ confirms 207 of 1005 DES Y1 redMaPPer clusters at λ > 40; the unconfirmed population exceeds 12% at λ = 40 and extrapolates to more than 22% at λ = 20 (97.5 percentile limits) [src] (Grandis et al. 2021, arXiv:2101.04984).
-- Mitigation, in order of appearance. A richness cut (λ ≥ 30 "significantly reduces the tension", arXiv:2002.11124); an external multi-wavelength mass anchor (arXiv:2010.13800); an anisotropic-boost forward model (arXiv:2112.09059, arXiv:2309.13025); a multiprobe data vector of cluster abundances, cluster cross-correlations and galaxy clustering, on large scales only in DES Y1 (arXiv:2010.01138) and extended in DES Y3 (arXiv:2503.13632); a simulation-based forward model of the cluster finder with counts-in-cylinders selection (arXiv:2510.25706).
+- Size in simulations. Lensing and clustering boosted on large scales by up to factors of 1.2 and 1.4; about 30% of the sample, the clusters in filaments aligned with the line of sight, causes the boost [src: abstract] (Sunayama et al. 2020, arXiv:2002.03867). For redMaPPer in the Buzzard simulations, residuals of richness and lensing are positively correlated at fixed mass, and the selection bias of ΔΣ is 20–60% on large scales, from spurious members within ±20–60 Mpc/h along the line of sight [src: abstract] (Wu et al. 2022, arXiv:2203.05416). The Euclid framework finds an enhancement of the stacked profile that peaks near 1 Mpc/h with amplitude 20–40% depending on richness and redshift, with baryons changing it by about 2% beyond 0.3 Mpc/h [src: abstract] (Euclid Collaboration 2026, arXiv:2605.02723).
+- Size in data. Projection effects contribute about 16% of the weighted richness for the lowest-richness SDSS redMaPPer clusters, with a steeper richness dependence than the models then in use [src: abstract] (Myles et al. 2021, arXiv:2011.07070). SPT-SZ confirms 207 of 1005 DES Y1 redMaPPer clusters at λ > 40; the unconfirmed population exceeds 12% at λ = 40 and extrapolates to more than 22% at λ = 20 (97.5 percentile limits) [src: abstract] (Grandis et al. 2021, arXiv:2101.04984).
+- Mitigation, in order of appearance. A richness cut (λ ≥ 30 "significantly reduces the tension", arXiv:2002.11124, abstract); an external multi-wavelength mass anchor (arXiv:2010.13800); an anisotropic-boost forward model (arXiv:2112.09059, arXiv:2309.13025); a multiprobe data vector of cluster abundances, cluster cross-correlations and galaxy clustering, on large scales only in DES Y1 (arXiv:2010.01138) and extended in DES Y3 (arXiv:2503.13632); a simulation-based forward model of the cluster finder with counts-in-cylinders selection (arXiv:2510.25706).
 - Validation. Cross-matching with SZ or X-ray samples (arXiv:2502.12914, which rules out significant contamination by unvirialised objects at high richness in DES Y3 but finds redshift trends that projection-effect simulations do not capture); spectroscopic membership (arXiv:2011.07070).
-- The warning in the record. The anisotropic-boost model applied to SDSS with SDSS lensing gave S8 = 0.718 +0.024/−0.021, which its authors call "clearly inconsistent" with other probes (arXiv:2112.09059); the same model with HSC Y3 lensing gave 0.816 +0.041/−0.039 (arXiv:2309.13025). A model of the projection effect is not a guarantee.
+- The warning in the record. The anisotropic-boost model applied to SDSS with SDSS lensing gave S8 = 0.718 +0.024/−0.021, which its authors call "clearly inconsistent" with other probes (arXiv:2112.09059); the same model with HSC Y3 lensing gave 0.816 +0.041/−0.039 (arXiv:2309.13025); abstract of each. A model of the projection effect is not a guarantee.
 
 ## 9. Halo mass function and bias
 <!-- key: halo-mass-function-and-bias -->
 
-- Non-universality. The amplitude of the "universal" f(σ) falls by 20–50% from z = 0 to 2.5 depending on the mass definition [src] (Tinker et al. 2008, arXiv:0803.2706). A fit that ignores this introduces false cosmological sensitivity (arXiv:1502.07357).
-- Calibration accuracy. Tinker 2008 is accurate to ≲ 5% at z = 0 [src]; replacing it by the Magneticum DM-only fit shifts a Planck-like result by Δσ8 ≈ 0.02 [src] (Bocquet et al. 2016, arXiv:1502.07357), which is comparable to current statistical errors. The Euclid calibration is sub-percent over the models tested, and names the halo finder as the remaining effect that can bias inference [src] (arXiv:2208.02174).
-- Baryons. Negligible for SPT-like and Planck-like samples; for an eROSITA-like sample neglecting them biases Ω_m low by about 0.01 [src] (arXiv:1502.07357). The effect vanishes for M200m ≳ 1e14 M_sun and at z ~ 2.
-- Halo bias. The Tinker 2010 fit has about 6% scatter, and the bias of FoF haloes is about 10% below that of Δ = 200 haloes [src] (arXiv:1001.3162). A clustering-based mass calibration inherits this.
+- Non-universality. The amplitude of the "universal" f(σ) falls by 20–50% from z = 0 to 2.5 depending on the mass definition [src: abstract] (Tinker et al. 2008, arXiv:0803.2706). A fit that ignores this introduces false cosmological sensitivity (arXiv:1502.07357).
+- Calibration accuracy. Tinker 2008 is accurate to ≲ 5% at z = 0 [src: abstract] (arXiv:0803.2706); replacing it by the Magneticum DM-only fit shifts a Planck-like result by Δσ8 ≈ 0.02 [src: abstract] (Bocquet et al. 2016, arXiv:1502.07357), which is comparable to current statistical errors. The Euclid calibration is sub-percent over the models tested, and names the halo finder as the remaining effect that can bias inference [src: abstract] (arXiv:2208.02174).
+- Baryons. Negligible for SPT-like and Planck-like samples; for an eROSITA-like sample neglecting them biases Ω_m low by about 0.01 [src: abstract] (arXiv:1502.07357). The effect vanishes for M200m ≳ 1e14 M_sun and at z ~ 2.
+- Halo bias. The Tinker 2010 fit has about 6% scatter, and the bias of FoF haloes is about 10% below that of Δ = 200 haloes [src: abstract] (arXiv:1001.3162). A clustering-based mass calibration inherits this.
 - Mitigation. Marginalise over mass-function uncertainty (arXiv:2507.14285); use fits or emulators calibrated for massive neutrinos and for the halo definition actually used.
 
 ## 10. Form of the scaling relation: scatter, evolution, mass dependence
 <!-- key: form-of-the-scaling-relation-scatter-evolution -->
 
 - Mechanism. Counts constrain the product of mass function and scaling relation. A wrong functional form (constant bias, self-similar evolution, lognormal scatter) is absorbed by cosmological parameters.
-- Size. With a constant bias the Planck × DES analysis gives S8 = 0.791 +0.023/−0.021 and Ω_m = 0.312; with a mass-dependent bias 0.814 +0.019/−0.020 and 0.353 +0.025/−0.031 [src] (arXiv:2509.02068). With self-similar evolution the Chandra–Planck analysis gives S8 = 0.78 ± 0.02, with fitted evolution 0.81 ± 0.02 [src] (arXiv:2402.04006). A redshift-evolution parameter β = 0.86 ± 0.07 can replace w = −0.82 ± 0.07 in the Planck + ACT counts [src] (arXiv:2403.19542): evolution of the relation and dark energy are degenerate.
-- Scatter. The richness–mass scatter is not lognormal in DES Y3 × SPT (arXiv:2502.12914); the intrinsic scatter of log λ*–log M200 in KiDS AMICO is 0.05 ± 0.02 [src] (arXiv:2507.14285).
+- Size. With a constant bias the Planck × DES analysis gives S8 = 0.791 +0.023/−0.021 and Ω_m = 0.312; with a mass-dependent bias 0.814 +0.019/−0.020 and 0.353 +0.025/−0.031 [src: abstract] (arXiv:2509.02068). With self-similar evolution the Chandra–Planck analysis gives S8 = 0.78 ± 0.02, with fitted evolution 0.81 ± 0.02 [src: abstract] (arXiv:2402.04006). A redshift-evolution parameter β = 0.86 ± 0.07 can replace w = −0.82 ± 0.07 in the Planck + ACT counts [src: abstract] (arXiv:2403.19542): evolution of the relation and dark energy are degenerate.
+- Scatter. The richness–mass scatter is not lognormal in DES Y3 × SPT (arXiv:2502.12914); the intrinsic scatter of log λ*–log M200 in KiDS AMICO is 0.05 ± 0.02 [src: abstract] (arXiv:2507.14285).
 - Mitigation. Free slopes in mass and redshift, correlated scatter, and a mass calibration that spans the redshift range of the counts.
 
 ## 11. Likelihood, covariance, photometric redshifts
 <!-- key: likelihood-covariance-photometric-redshifts -->
 
 - Sample variance. Neglected by a pure Poisson likelihood, which "always underestimates the errors" for Rubin- or Euclid-like samples [src] (Payerne et al. 2023, arXiv:2210.11093); the framework is Hu & Kravtsov 2003 (arXiv:astro-ph/0203169). Super-sample covariance is in the KiDS AMICO list of marginalised effects (arXiv:2507.14285).
-- Photometric redshifts of clusters. In Euclid-like mocks they broaden posteriors by 20–30%; neglecting redshift-space distortions in cluster clustering can bias the constraints [src] (Fumagalli et al. 2025, arXiv:2510.13509).
+- Photometric redshifts of clusters. In Euclid-like mocks they broaden posteriors by 20–30%; neglecting redshift-space distortions in cluster clustering can bias the constraints [src: abstract] (Fumagalli et al. 2025, arXiv:2510.13509).
 - Inference machinery. Simulation-based inference adds its own error term: 3% from neural-network stochasticity in the XXL analysis [src] (arXiv:2602.11989).
 - Parameter-space effects. The best-constrained combination is not S8; quoting S8 inflates the error and moves the point estimate along the degeneracy (arXiv:2401.02075, arXiv:2406.11970).
 
@@ -121,30 +121,30 @@ One table per analysis, read in the paper body; the place read is in the flag. A
 
 | Item | What the paper does | Flag |
 |---|---|---|
-| Mass function | Tinker 2008, chosen for its simple form; Tinker 2010 or Despali 2016 lower σ8 from 0.88 ± 0.02 to 0.86 ± 0.02, Ω_m unchanged; "does not yet limit our cosmological constraints" | [src: Sect. 7.2, 2402.08458] |
-| Count-rate–mass relation | lognormal scatter σ_X, prior U(0.05, 2); normalisation, mass slope, redshift evolution of slope and normalisation all free (uniform priors); luminosity-distance and scale-factor evolution fixed to −2 and 2 | [src: Table 1, 2402.08458] |
-| Richness–mass relation | normalisation, slope, two redshift terms, scatter free; correlation with count rate ρ in U(−0.9, 0.9); richness noise Poisson in its Gaussian limit; selection cut λ̂ > 3 lowers completeness by 1.1% | [src: Table 1, Sect. 4.3, 2402.08458] |
-| WL bias model | ⟨ln(M_WL/M0)⟩ = b_l + b_M ln(M/M0), ln σ²_WL = s_l + s_M ln(M/M0), M0 = 2e14 M_sun, calibrated on TNG300 haloes with M200c > 3e13 M_sun/h at z = 0.24, 0.42, 0.64, 0.95 (three projections each) | [src: Sect. 4.1, Eq. 35, 2402.08455] |
-| WL bias value and its uncertainty | b_WL from −0.05 to −0.1; uncertainty from ~1000 re-runs varying source n(z), richness–mass, member contamination, miscentring and shear bias, plus 2% hydro-modelling uncertainty; compressed into two principal components A_WL, B_WL with N(0, 1) priors; the highest-redshift bias is dominated by the Σ_crit uncertainty from photo-z | [src: Sect. 4.5, 2402.08455; Table 1, 2402.08458] |
-| Shear and photo-z term | fractional uncertainty of the mean lensing efficiency from 0.55% at z_cl = 0.1 to 4.3% at z_cl = 0.8 | [src: Sect. 3.3.2, 2402.08455] |
-| Miscentring | X-ray-to-halo offsets from the eROSITA simulated twin, Rayleigh + Gamma mixture (Eq. 26); extraction model: NFW with a core at the effective miscentring radius (Eq. 29) | [src: Sects. 4.2.2, 4.3, 2402.08455] |
-| Contaminants | mixture model with AGN fraction U(0, 0.1) and random-source fraction U(0, 0.15) | [src: Table 1, 2402.08458] |
-| Cluster redshifts | relative error N-truncated (0.0050, 0.0011); bias b_z N(1.005, 0.037); catastrophic fraction TN(0.0013, 0.0010) | [src: Table 1, 2402.08458] |
-| Cosmology priors | Ω_m U(0.05, 0.95); H0 N(67.77, 0.6), with a distance-ladder or flat prior checked to make no difference; Ω_b U(0.046, 0.052); n_s U(0.92, 1.0) | [src: Sect. 4.6, Table 1, 2402.08458] |
+| Mass function | Tinker 2008, chosen for its simple form; Tinker 2010 or Despali 2016 lower σ8 from 0.88 ± 0.02 to 0.86 ± 0.02, Ω_m unchanged; "does not yet limit our cosmological constraints" | [src: Sect. 7.2, arXiv:2402.08458] |
+| Count-rate–mass relation | lognormal scatter σ_X, prior U(0.05, 2); normalisation, mass slope, redshift evolution of slope and normalisation all free (uniform priors); luminosity-distance and scale-factor evolution fixed to −2 and 2 | [src: Table 1, arXiv:2402.08458] |
+| Richness–mass relation | normalisation, slope, two redshift terms, scatter free; correlation with count rate ρ in U(−0.9, 0.9); richness noise Poisson in its Gaussian limit; selection cut λ̂ > 3 lowers completeness by 1.1% | [src: Table 1, Sect. 4.3, arXiv:2402.08458] |
+| WL bias model | ⟨ln(M_WL/M0)⟩ = b_l + b_M ln(M/M0), ln σ²_WL = s_l + s_M ln(M/M0), M0 = 2e14 M_sun, calibrated on TNG300 haloes with M200c > 3e13 M_sun/h at z = 0.24, 0.42, 0.64, 0.95 (three projections each) | [src: Sect. 4.1, Eq. 35, arXiv:2402.08455] |
+| WL bias value and its uncertainty | b_WL from −0.05 to −0.1; uncertainty from ~1000 re-runs varying source n(z), richness–mass, member contamination, miscentring and shear bias, plus 2% hydro-modelling uncertainty; compressed into two principal components A_WL, B_WL with N(0, 1) priors; the highest-redshift bias is dominated by the Σ_crit uncertainty from photo-z | [src: Sect. 4.5, arXiv:2402.08455; Table 1, arXiv:2402.08458] |
+| Shear and photo-z term | fractional uncertainty of the mean lensing efficiency from 0.55% at z_cl = 0.1 to 4.3% at z_cl = 0.8 | [src: Sect. 3.3.2, arXiv:2402.08455] |
+| Miscentring | X-ray-to-halo offsets from the eROSITA simulated twin, Rayleigh + Gamma mixture (Eq. 26); extraction model: NFW with a core at the effective miscentring radius (Eq. 29) | [src: Sects. 4.2.2, 4.3, arXiv:2402.08455] |
+| Contaminants | mixture model with AGN fraction U(0, 0.1) and random-source fraction U(0, 0.15) | [src: Table 1, arXiv:2402.08458] |
+| Cluster redshifts | relative error N-truncated (0.0050, 0.0011); bias b_z N(1.005, 0.037); catastrophic fraction TN(0.0013, 0.0010) | [src: Table 1, arXiv:2402.08458] |
+| Cosmology priors | Ω_m U(0.05, 0.95); H0 N(67.77, 0.6), with a distance-ladder or flat prior checked to make no difference; Ω_b U(0.046, 0.052); n_s U(0.92, 1.0) | [src: Sect. 4.6, Table 1, arXiv:2402.08458] |
 
 ### SPT clusters with DES Y3 and HST lensing (Bocquet et al. 2024, arXiv:2310.12213 and arXiv:2401.02075)
 <!-- key: spt-clusters-with-des-y3-and-hst-lensing -->
 
 | Item | What the paper does | Flag |
 |---|---|---|
-| M_WL–M_halo relation | calibrated on Magneticum hydro/gravity-only pairs: 9798 mass maps of 3266 haloes with M200c > 1.56e14 M_sun/h, projection depth ±20 Mpc/h; the link to gravity-only masses lets a gravity-only mass function (Tinker 2008 is the one cited) be used | [src: Sect. V.2.1, 2310.12213] |
-| Baryonic uncertainty | repeated on TNG (1431 maps of 477 haloes); differences Δb_WL = 0.02, Δb_WL,M = 0.018, Δs_WL = 0.25, Δs_WL,M = 0.59, added in quadrature | [src: Eq. 39, 2310.12213] |
-| Budget by source | bias uncertainty dominated by baryons at low z and by photo-z (⟨Σ_crit⁻¹⟩) beyond z ≈ 0.45; finite simulation sample, miscentring, member contamination and shear calibration together ~1% up to z ~ 0.8; eight variants (SPT or optical centres, BPZ or DNF, R_min = 0.5 or 0.8 Mpc/h) | [src: Sects. V.2.1–V.2.2, 2310.12213] |
-| Radial range | only scales beyond 500 kpc/h, larger than typical SPT centre offsets | [src: Sect. V.2.2, 2310.12213] |
-| Priors in the cosmology fit | bias and scatter modulated by N(0, 1) parameters; b_WL,M N(1.029, 0.006²); s_WL,M N(−0.226, 0.040²); SZ and richness relations uninformative, scatter > 0.05; correlation coefficients U(−0.5, 0.5); Ω_b h² and n_s Planck Gaussians; h N(0.70, 0.05²); Σm_ν U(0, 0.6) eV | [src: Table 1, 2401.02075] |
-| Multi-observable model | lognormal scatter in ζ, M_WL, λ with full covariance (Eqs. 46–47) | [src: Sect. VII.1, 2310.12213] |
-| Mass function uncertainty | 3.5% in amplitude and 2% in slope marginalised as a test; no shifts, so neglected thereafter | [src: Sect. IV.2.3, 2401.02075] |
-| Sample and purity | ξ > 5, z > 0.25, ≳ 95% pure after follow-up; DES covers 73% of the area | [src: Sect. II.1, 2401.02075] |
+| M_WL–M_halo relation | calibrated on Magneticum hydro/gravity-only pairs: 9798 mass maps of 3266 haloes with M200c > 1.56e14 M_sun/h, projection depth ±20 Mpc/h; the link to gravity-only masses lets a gravity-only mass function (Tinker 2008 is the one cited) be used | [src: Sect. V.2.1, arXiv:2310.12213] |
+| Baryonic uncertainty | repeated on TNG (1431 maps of 477 haloes); differences Δb_WL = 0.02, Δb_WL,M = 0.018, Δs_WL = 0.25, Δs_WL,M = 0.59, added in quadrature | [src: Eq. 39, arXiv:2310.12213] |
+| Budget by source | bias uncertainty dominated by baryons at low z and by photo-z (⟨Σ_crit⁻¹⟩) beyond z ≈ 0.45; finite simulation sample, miscentring, member contamination and shear calibration together ~1% up to z ~ 0.8; eight variants (SPT or optical centres, BPZ or DNF, R_min = 0.5 or 0.8 Mpc/h) | [src: Sects. V.2.1–V.2.2, arXiv:2310.12213] |
+| Radial range | only scales beyond 500 kpc/h, larger than typical SPT centre offsets | [src: Sect. V.2.2, arXiv:2310.12213] |
+| Priors in the cosmology fit | bias and scatter modulated by N(0, 1) parameters; b_WL,M N(1.029, 0.006²); s_WL,M N(−0.226, 0.040²); SZ and richness relations uninformative, scatter > 0.05; correlation coefficients U(−0.5, 0.5); Ω_b h² and n_s Planck Gaussians; h N(0.70, 0.05²); Σm_ν U(0, 0.6) eV | [src: Table 1, arXiv:2401.02075] |
+| Multi-observable model | lognormal scatter in ζ, M_WL, λ with full covariance (Eqs. 46–47) | [src: Sect. VII.1, arXiv:2310.12213] |
+| Mass function uncertainty | 3.5% in amplitude and 2% in slope marginalised as a test; no shifts, so neglected thereafter | [src: Sect. IV.2.3, arXiv:2401.02075] |
+| Sample and purity | ξ > 5, z > 0.25, ≳ 95% pure after follow-up; DES covers 73% of the area | [src: Sect. II.1, arXiv:2401.02075] |
 
 ### DES Y1 redMaPPer counts and stacked lensing (DES Collaboration 2020, arXiv:2002.11124)
 <!-- key: des-y1-redmapper-counts-and-stacked-lensing-des -->
@@ -162,12 +162,14 @@ Sizes are uncertainties on the amplitude of the mass–richness relation, mostly
 | Richness model | P(λ_true \| M) = Poisson convolved with Gaussian scatter of fixed relative width; projection effects forward-modelled in the counts with no nuisance parameter | [src: Sect. IV.1] |
 | Count covariance | Poisson, sample variance, miscentring; no covariance between counts and lensing masses | [src: Sect. IV.1] |
 | Projection-model systematic | half the parameter shift between the fiducial model and random-point injection | [src: Appendix B] |
-| What the calibration paper had assumed | triaxiality factor 0.96 ± 0.02 times projection factor 1.02 ± 0.02, combined 0.98 ± 0.03, constant in richness and redshift; boost factor ≈ 2% on ΔΣ at R = 1 Mpc; miscentring posteriors equal the priors (McClintock et al. 2019, arXiv:1805.00039) | [src: Sects. 5.4.2, 5.6, 1805.00039] |
+| What the calibration paper had assumed | triaxiality factor 0.96 ± 0.02 times projection factor 1.02 ± 0.02, combined 0.98 ± 0.03, constant in richness and redshift; boost factor ≈ 2% on ΔΣ at R = 1 Mpc; miscentring posteriors equal the priors (McClintock et al. 2019, arXiv:1805.00039) | [src: Sects. 5.4.2, 5.6, arXiv:1805.00039] |
 
-The contrast between the last row and the selection-effect row is the DES Y1 lesson in numbers: an analytic orientation-plus-projection correction of −2 ± 3% was replaced after unblinding by a simulation correction of −20 to −30%.
+The contrast between the last row and the selection-effect row is the DES Y1 lesson: an analytic orientation-plus-projection factor close to one was replaced after unblinding by a much larger simulation correction (the values are in the two rows).
 
 ### DES Y3 redMaPPer, counts + lensing + clustering (DES Collaboration 2025, arXiv:2503.13632)
 <!-- key: des-y3-redmapper-counts-lensing-clustering-des -->
+
+From arXiv:2503.13632; the place read is in the flag:
 
 | Item | Size or treatment | Flag |
 |---|---|---|
@@ -181,6 +183,8 @@ The contrast between the last row and the selection-effect row is the DES Y1 les
 
 ### KiDS-1000 AMICO counts + stacked lensing (Lesci et al. 2025, arXiv:2507.14285)
 <!-- key: kids-1000-amico-counts-stacked-lensing-lesci-et -->
+
+From arXiv:2507.14285; the place read is in the flag:
 
 | Item | Size or treatment | Flag |
 |---|---|---|
@@ -198,7 +202,7 @@ The contrast between the last row and the selection-effect row is the DES Y1 les
 ### HSC Y3 shear-selected clusters (Chiu et al. 2024, arXiv:2406.11970)
 <!-- key: hsc-y3-shear-selected-clusters-chiu-et-al-2024 -->
 
-Read from the LaTeX source; no HTML rendering was available.
+From arXiv:2406.11970, read from the LaTeX source (no HTML rendering was available); the place read is in the flag:
 
 | Item | Size or treatment | Flag |
 |---|---|---|
@@ -212,6 +216,8 @@ Read from the LaTeX source; no HTML rendering was available.
 ### Planck 2015 SZ counts (Planck Collaboration 2015 XXIV, arXiv:1502.01597)
 <!-- key: planck-2015-sz-counts-planck-collaboration-2015 -->
 
+From arXiv:1502.01597; the place read is in the flag:
+
 | Item | Size or treatment | Flag |
 |---|---|---|
 | Y–M relation | E^−β(z) [D_A² Ȳ500 / 1e-4 Mpc²] = Y* (h/0.7)^(−2+α) [(1 − b) M500 / 6e14 M_sun]^α; from X-ray hydrostatic masses of the 2013 analysis, with M_X = (1 − b) M500 and b constant in mass and redshift | [src: Sect. 3.2, Eq. 7] |
@@ -224,6 +230,8 @@ Read from the LaTeX source; no HTML rendering was available.
 ### Planck + ACT counts reanalysis (Lee et al. 2024, arXiv:2403.19542)
 <!-- key: planck-act-counts-reanalysis-lee-et-al-2024 -->
 
+From arXiv:2403.19542; the place read is in the flag:
+
 | Item | Size or treatment | Flag |
 |---|---|---|
 | ACT sample | 59 clusters of the 182-cluster 2018 ACTPol catalogue at SNR_2.4 > 5.6, 987.5 deg², 148 GHz only (spatial, not spectral, selection) | [src: Sect. 2.2] |
@@ -232,6 +240,8 @@ Read from the LaTeX source; no HTML rendering was available.
 
 ### Planck PSZ2 × DES Y3 shear × Chandra (Aymerich et al. 2025, arXiv:2509.02068)
 <!-- key: planck-psz2-x-des-y3-shear-x-chandra-aymerich -->
+
+From arXiv:2509.02068; the place read is in the flag:
 
 | Item | Size or treatment | Flag |
 |---|---|---|
@@ -244,6 +254,8 @@ Read from the LaTeX source; no HTML rendering was available.
 
 ### ACT DR5 × DES Y3 lensing (Shin et al. 2025, arXiv:2512.18935)
 <!-- key: act-dr5-x-des-y3-lensing-shin-et-al-2025-arxiv -->
+
+From arXiv:2512.18935; the place read is in the flag:
 
 | Item | Size or treatment | Flag |
 |---|---|---|
@@ -273,7 +285,7 @@ Read from the LaTeX source; no HTML rendering was available.
 <!-- key: not-verified -->
 
 - Contamination of CMB-lensing cluster mass estimators by the cluster's own tSZ and kSZ signal: quantified since in `deep/cmb-cluster-lensing.md` (2026-10-18), from arXiv:1705.00411, arXiv:2305.06326, arXiv:2404.02153 and arXiv:2402.18346.
-- The cross-calibration of eROSITA temperatures with Chandra and XMM-Newton: the corresponding paper was not read beyond its title. (The eRASS1 contaminant priors are now in section 13; the member-dilution size is given for DES Y1 and ACT × DES there.)
+- The cross-calibration of eROSITA temperatures with Chandra and XMM-Newton: the corresponding paper was not read beyond its title. (The eRASS1 contaminant priors are now in Sect. 13; the member-dilution size is given for DES Y1 and ACT × DES there.)
 - The numerical values of the SPT M_WL–M_halo parameters (Table 4 of arXiv:2310.12213): the table cells did not render.
 - The priors of the DES Y3 cluster analysis (its Table 2) and its mass function: the table did not render and the sections read do not name the mass function.
 - Cluster-finder photometric-redshift performance for HSC shear-selected clusters.

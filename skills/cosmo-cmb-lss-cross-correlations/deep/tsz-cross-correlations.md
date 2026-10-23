@@ -268,16 +268,17 @@ for SPT-SZ [src: Sect. 4.5].
 | Approach | Buys | Costs | Used by |
 |---|---|---|---|
 | GNFW with free (1 − b_H) | comparison with cluster literature; ⟨b_h P_e⟩ per bin | one-to-two-halo transition must be patched (R(k)); HOD needed for C^gg | arXiv:2210.08633 |
-| HMx, one T_AGN | gas and matter coupled; feedback and cosmology together | calibrated to one simulation family; 15% accuracy on pressure spectra | arXiv:2109.04458 |
+| HMx, one T_AGN | gas and matter coupled; feedback and cosmology together | calibrated to one simulation family; electron pressure–matter spectrum of BAHAMAS reproduced at the 15 percent level for z < 2 and k ≲ 7 h/Mpc | arXiv:2109.04458 [src: Sect. 3.1] |
 | Baryonification-type gas + hydrostatic pressure | joint fit of shear and shear × y to all scales; P(k) suppression | six free gas, pressure and transition parameters, several slopes fixed | arXiv:2506.07432 |
 | FLAMINGO spectra, free amplitude | no halo-model approximations | discrete set of models | arXiv:2609.31774 |
 
 On the same kind of data the approaches give opposite S_8 readings (see
 L2). One difference is visible in the papers: arXiv:2506.07432 fits a free
-gas model and finds reduced pressure in haloes below 10¹⁴ M_⊙/h (see L2),
-whereas arXiv:2609.31774 can lower the amplitude only through S_8 or the
-discrete FLAMINGO feedback variants [der: comparison of the two model
-sets]. Against fiducial
+gas model and finds reduced pressure in low-mass haloes (see L2), whereas
+arXiv:2609.31774 can lower the amplitude only through S_8 or the discrete
+FLAMINGO feedback variants [der: comparison of the two model sets].
+
+Against fiducial
 FLAMINGO the measured amplitude is A_γtSZ = 0.598 ± 0.015 (30 < ℓ ≤ 2000);
 the strongest-feedback low-S_8 run gives 0.949 ± 0.024 [src:
 arXiv:2609.31774, Table 4].
@@ -357,7 +358,7 @@ S_8 as a statement about the compilation.
 - Application: Sánchez 2022, arXiv:2210.08633 — galaxy × y halo model, two
   regimes, jackknife, CIB leakage test.
 - Application: Tröster 2021, arXiv:2109.04458 — KiDS × y with HMx; the 0.2
-  exponent; scalar CIB model.
+  exponent; scalar CIB model [src: abstract].
 - Application: Pandey 2025, arXiv:2506.07432 — coupled gas model, priors,
   covariance, NUTS.
 - Method: Wayland 2026, arXiv:2609.31774 — spectrum-level component

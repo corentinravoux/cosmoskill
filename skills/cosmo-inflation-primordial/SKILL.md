@@ -65,7 +65,7 @@ re-verify against the cited paper before a number enters a manuscript.
 - f_NL = 0.8 ± 5.0 (2015, preliminary) as Planck's result.
 - Giving a galaxy f_NL without p.
 - "Planck shows a closed universe"; "negative curvature" for Ω_K < 0.
-- "Birefringence detected"; 0.30° ± 0.05° omits the angle systematic (arXiv:2507.16714).
+- "Birefringence detected"; 0.30° ± 0.05° omits the angle systematic (arXiv:2507.16714, abstract).
 - BICEP/Keck is blind to a constant β (arXiv:2603.06812).
 
 ## Related skills
@@ -101,8 +101,9 @@ Sizes, in thousands of tokens: L1 3k; open 7k; methods 11k; results 12k; surveys
   (`--abstract`, `--outline`, `--section`, `--grep`), or with any tool that
   gives the paper. If it cannot be read, say that L4 was required and not
   done.
-- A formula of the skill may be applied to the asker's numbers; label the
-  result as derived.
+- Quote a number only with its paper and the place it was read, as the
+  skill gives them; the skill holds no number of its own making. A formula
+  may be applied to the asker's numbers; label the result as derived.
 
 Local layers: if a directory `.cosmoskill/` exists in the working directory,
 in one of its parents, or in the home directory, or if `COSMOSKILL_HOME` is

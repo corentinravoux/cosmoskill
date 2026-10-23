@@ -31,9 +31,9 @@ re-verify against the cited paper before a number enters a manuscript.
 
 - NANOGrav 15 yr: A = 2.4 (+0.7/−0.6) × 10⁻¹⁵ at γ = 13/3; free fit γ = 3.2 ± 0.6; HD p = 10⁻³ (Bayes-factor null), 5 × 10⁻⁵–1.9 × 10⁻⁴ (frequentist) (arXiv:2306.16213).
 - No PTA reaches 5σ: EPTA ≳ 3σ (10.3 yr subset), PPTA ~2σ, MPTA 3–3.4σ, noise-model dependent, five arrays combined below 5σ (arXiv:2306.16214, arXiv:2306.16215, arXiv:2412.01153, arXiv:2512.08666).
-- New-physics Bayes factors of 10–100 depend on the SMBHB prior and "should not be regarded as evidence for new physics"; stable strings alone give factors < 1 (arXiv:2306.16219).
+- New-physics Bayes factors of 10–100 depend on the SMBHB prior and "should not be regarded as evidence for new physics"; stable strings alone give factors < 1 (arXiv:2306.16219, abstract).
 - The PTA amplitude exceeds the local-SMBH prediction (arXiv:2312.06756).
-- LVK: Ω_GW(25 Hz) ≤ 2.8 × 10⁻⁹ (flat), ≤ 2.0 × 10⁻⁹ (α = 2/3), against predicted compact-binary 6.3 × 10⁻¹⁰ (arXiv:2608.23477).
+- LVK: Ω_GW(25 Hz) ≤ 2.8 × 10⁻⁹ (flat), ≤ 2.0 × 10⁻⁹ (α = 2/3), against predicted compact-binary 6.3 × 10⁻¹⁰ (arXiv:2608.23477, abstract).
 - PBHs: the asteroid window, 10⁻¹⁷–10⁻¹⁰ M☉, is the only unconstrained range (arXiv:2601.06024); LVK O3 gives f_PBH ≲ 10⁻³ over 1–200 M☉ (arXiv:2405.05732); OGLE's < 1% limits are disputed (arXiv:2403.02386, arXiv:2509.05400).
 - Gaussian SIGW fits to the PTA signal overproduce PBHs at 2σ (arXiv:2306.17149).
 - EDE: ACT DR6 f_EDE < 0.088, no H0 shift, the DR4 hint gone (arXiv:2503.14454); SPT+ACT+Planck < 0.070, with DESI 0.055 (+0.024/−0.047) (arXiv:2507.23355); profile 0.09 ± 0.03 (arXiv:2505.08051).
@@ -100,8 +100,9 @@ Sizes, in thousands of tokens: L1 3k; open 3k; methods 9k; results 8k; surveys 3
   (`--abstract`, `--outline`, `--section`, `--grep`), or with any tool that
   gives the paper. If it cannot be read, say that L4 was required and not
   done.
-- A formula of the skill may be applied to the asker's numbers; label the
-  result as derived.
+- Quote a number only with its paper and the place it was read, as the
+  skill gives them; the skill holds no number of its own making. A formula
+  may be applied to the asker's numbers; label the result as derived.
 
 Local layers: if a directory `.cosmoskill/` exists in the working directory,
 in one of its parents, or in the home directory, or if `COSMOSKILL_HOME` is

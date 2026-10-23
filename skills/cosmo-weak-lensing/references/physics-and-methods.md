@@ -52,7 +52,7 @@ Because the kernel is broad and proportional to Ωm, and the power spectrum to
 σ8², cosmic shear constrains mainly the combination S8 ≡ σ8 (Ωm/0.3)^0.5; the
 exponent that best matches the degeneracy direction is survey-dependent:
 KiDS-Legacy finds α = 0.58 and quotes Σ8 = σ8(Ωm/0.3)^0.58 alongside S8
-(Wright et al. 2025, arXiv:2503.19441) [src].
+(Wright et al. 2025, arXiv:2503.19441) [src: Sect. 5.1].
 
 The measured ellipticity is an estimate of the reduced shear g = γ/(1 − κ),
 not of γ; the difference is second order and is modelled explicitly in
@@ -271,7 +271,7 @@ appropriate t-distribution (Sellentin & Heavens 2016, arXiv:1511.05969); see
 The likelihood is Gaussian in the data vector. The covariance is evaluated at
 a fiducial cosmology and usually iterated once at the best fit. The choice of
 the data vector that enters the Gaussian term is not innocuous: in the
-KiDS-Legacy k-cut analysis it moves S8 by about 0.08 (arXiv:2607.04384) [src].
+KiDS-Legacy k-cut analysis it moves S8 by about 0.08 (arXiv:2607.04384) [src: Sect. "References"].
 
 Internal-consistency tests are part of the method: KiDS-Legacy applies three
 tiers of metrics to splits by redshift, scale, colour and region
@@ -333,10 +333,10 @@ blind inference before dropping a lens bin, under a plan written in advance
   mean with TATT is 0.783 and its MAP 0.763; for 3×2pt, 0.789 and 0.793 [src:
   Table 4 of arXiv:2601.14559].
 - **S8 exponent.** 0.5 by convention; the best-constrained combination has a
-  survey-dependent exponent (0.58 for KiDS-Legacy) [src: arXiv:2503.19441].
+  survey-dependent exponent (0.58 for KiDS-Legacy) [src: arXiv:2503.19441]. [src: Sect. 5.1]
 - **Tension metric.** One-dimensional S8 difference, full-parameter-space
   shift, or evidence-based; DES Y6 quotes two for the same data (2.6σ and
-  1.8σ) (arXiv:2601.14559) [src].
+  1.8σ) (arXiv:2601.14559) [src: abstract].
 - **Sign of the redshift shift.** DES writes n_i(z) → n_i(z − Δz_i) [src: Eq.
   23 of arXiv:2105.13543], HSC n_i(z) → n_i(z + Δz_i) [src: Eq. 22 of
   arXiv:2304.00702], so a negative HSC shift means a higher true redshift;

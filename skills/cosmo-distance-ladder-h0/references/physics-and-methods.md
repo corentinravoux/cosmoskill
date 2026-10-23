@@ -162,8 +162,8 @@ level-2 Hubble-flow probes.
 | Anchor | Method | Precision | Citation | Flag |
 |---|---|---|---|---|
 | Milky Way Cepheids | Gaia EDR3 parallaxes + HST photometry of 75 Cepheids | 1.0% | arXiv:2012.08534 | [src] |
-| Milky Way cluster Cepheids | mean Gaia parallax of > 300 stars per cluster, 17 Cepheids | offset -3 ± 4 microarcsec | arXiv:2208.01045 | [src] |
-| LMC | 20 late-type detached eclipsing binaries, surface-brightness-colour relation calibrated to 0.8% | 1% | arXiv:1903.08096 | [src] |
+| Milky Way cluster Cepheids | mean Gaia parallax of > 300 stars per cluster, 17 Cepheids | offset -3 ± 4 microarcsec | arXiv:2208.01045 | [src: abstract] |
+| LMC | 20 late-type detached eclipsing binaries, surface-brightness-colour relation calibrated to 0.8% | 1% | arXiv:1903.08096 | [src: abstract] |
 | SMC | 15 late-type DEBs; core geometry modelled; 88 HST Cepheids | better than 2% | arXiv:2010.08754; arXiv:2404.08038 | [src] |
 | NGC 4258 | VLBI positions, velocities and accelerations of H2O masers in a Keplerian disc | 1.5% | arXiv:1908.05625 | [src] [der] |
 
@@ -177,9 +177,9 @@ Where each anchor comes from:
 | Anchor | Founding or defining paper | What it states | Flag |
 |---|---|---|---|
 | NGC 4258 masers | Miyoshi et al. 1995, doi:10.1038/373127a0 | first disc model, 6.4 ± 0.9 Mpc from one VLBI epoch (Table 1 of arXiv:1908.05625) | [sec] |
-| | Herrnstein et al. 1999, arXiv:astro-ph/9907013 | geometric distance from maser proper motions (31.5 microarcsec/yr) and accelerations in a thin Keplerian disc: 7.2 ± 0.3 Mpc | [src] |
-| | Humphreys et al. 2013, arXiv:1307.6031 | 18 VLBI epochs, warped disc with eccentric orbits: 7.60 ± 0.17 ± 0.15 Mpc | [src] |
-| LMC eclipsing binaries | Pietrzyński et al. 2013, arXiv:1303.2063 | late-type giant systems give both linear and angular sizes and avoid the modelling of hot early-type stars; 8 systems, 49.97 ± 0.19 ± 1.11 kpc (2.2%) | [src] |
+| | Herrnstein et al. 1999, arXiv:astro-ph/9907013 | geometric distance from maser proper motions (31.5 microarcsec/yr) and accelerations in a thin Keplerian disc: 7.2 ± 0.3 Mpc | [src: abstract] |
+| | Humphreys et al. 2013, arXiv:1307.6031 | 18 VLBI epochs, warped disc with eccentric orbits: 7.60 ± 0.17 ± 0.15 Mpc | [src: abstract] |
+| LMC eclipsing binaries | Pietrzyński et al. 2013, arXiv:1303.2063 | late-type giant systems give both linear and angular sizes and avoid the modelling of hot early-type stars; 8 systems, 49.97 ± 0.19 ± 1.11 kpc (2.2%) | [src: abstract] |
 | Gaia parallaxes | Lindegren et al. 2021, arXiv:2012.03380 | EDR3 astrometry: 34 months, five-parameter solutions, or six-parameter ones with a pseudocolour | [src] |
 | | Riess et al. 2018, arXiv:1804.10655 | offset and distance scale fitted together, with DR2: -46 ± 13 microarcsec for Cepheids, a factor 2.5 lost in precision | [src] |
 
@@ -218,7 +218,7 @@ arXiv:2502.05259) `[src]`.
 **Miras.** Oxygen-rich long-period variables with P < 400 d, NIR
 period-luminosity relation; need year-long monitoring. Anchored on the LMC,
 NGC 4258 and, since 2025, 41 Miras in 18 globular clusters with Gaia distances
-(Bhardwaj et al. 2025, arXiv:2507.10658) `[src]`.
+(Bhardwaj et al. 2025, arXiv:2507.10658) `[src: Sect. IV.2]`.
 
 Where each indicator comes from, and how the main analyses define it:
 
@@ -228,13 +228,13 @@ Where each indicator comes from, and how the main analyses define it:
 | | Da Costa & Armandroff 1990, doi:10.1086/115500 | the colour of the giant branch traces metallicity (arXiv:2408.06153, Sect. VI.1) | [sec] |
 | | arXiv:2408.06153 | physics: core helium flash at a core mass near 0.5 solar masses, for stars below about 2 solar masses | [src: Sect. VI.1] |
 | | Freedman et al. 2019, arXiv:1907.05922; 2020, arXiv:2002.01550 | CCHP zero point on the LMC (DEB modulus 18.477), H0 = 69.8 ± 0.8 ± 1.7; the 2020 paper details the extinction method | [src] |
-| | Jang et al. 2021, arXiv:2008.04181 | CCHP zero point on NGC 4258: tip at 25.347 ± 0.014 ± 0.042, M_F814W = -4.050 ± 0.028 ± 0.048 mag | [src] |
+| | Jang et al. 2021, arXiv:2008.04181 | CCHP zero point on NGC 4258: tip at 25.347 ± 0.014 ± 0.042, M_F814W = -4.050 ± 0.028 ± 0.048 mag | [src: abstract] |
 | | arXiv:2503.11769 | infrared tip fitted in two dimensions and standardised by colour: mu_i = m_i + beta (c_i - c_0) - M | [src: Eq. 8] |
 | | arXiv:2304.06693 | CATS: each tip rectified to a contrast ratio R = 4, slope -0.021 ± 0.004 mag per unit R | [src: Sect. III.1] |
-| JAGB | Madore & Freedman 2020, arXiv:2005.10792 | method introduced: ~3300 LMC stars give M_J = -6.22, the SMC -6.18 ± 0.01 ± 0.05, adopted -6.20 ± 0.01 ± 0.04 mag; single-epoch scatter 0.27 mag | [src] |
+| JAGB | Madore & Freedman 2020, arXiv:2005.10792 | method introduced: ~3300 LMC stars give M_J = -6.22, the SMC -6.18 ± 0.01 ± 0.05, adopted -6.20 ± 0.01 ± 0.04 mag; single-epoch scatter 0.27 mag | [src: abstract] |
 | | Nikolaev & Weinberg 2000, doi:10.1086/317048 | "J region" first identified in the LMC (arXiv:2408.06153, Sect. VI.2) | [sec] |
 | | arXiv:2408.06153; arXiv:2502.05259 | bounded above by carbon burning at the base of the envelope, below by the absence of a third dredge-up; JWST box 1.0 < F150W - F277W < 1.5 | [src: Sect. VI.2; Sect. II.4] |
-| Miras | Huang et al. 2018, arXiv:1801.02711 | HST route: 139 oxygen-rich Miras in NGC 4258, scatter ~0.14 mag, mu_4258 - mu_LMC = 10.95 ± 0.01 ± 0.06 mag | [src] |
+| Miras | Huang et al. 2018, arXiv:1801.02711 | HST route: 139 oxygen-rich Miras in NGC 4258, scatter ~0.14 mag, mu_4258 - mu_LMC = 10.95 ± 0.01 ± 0.06 mag | [src: abstract] |
 | SBF | Tonry & Schneider 1988, doi:10.1086/114847 | "A new technique for measuring extragalactic distances", cited as the origin by arXiv:2101.02221 and arXiv:2510.23823 | [sec] |
 | Tully-Fisher | Tully & Fisher 1977 (no DOI, not in `sources.tsv`); Kourkchi et al. 2020, arXiv:2009.00733 | HI line width against luminosity, first used for distances in 1977 (arXiv:2510.23823, App. A.6); Cosmicflows-4: 9792 spirals within 15,000 km/s, 75.1 ± 0.2 (stat), systematics up to 3 | [sec] [src] |
 | Fundamental Plane | Djorgovski & Davis 1987, doi:10.1086/164948; Dressler et al. 1987, doi:10.1086/164947; Said et al. 2024, arXiv:2408.13842 | introduced in 1987 ("a new distance estimator", titles confirmed); DESI fits it from velocity dispersions and Legacy Survey photometry | [sec] [src] |
@@ -245,11 +245,11 @@ Where each indicator comes from, and how the main analyses define it:
 **SN Ia.** Standardised peak magnitudes with stretch, colour and host-mass
 corrections; see `cosmo-supernovae`. The Pantheon+ compilation (1701 light
 curves of 1550 SNe, z = 0.001 to 2.26) carries the covariance between
-calibrator and Hubble-flow SNe (Brout et al. 2022, arXiv:2202.04077) `[src]`.
+calibrator and Hubble-flow SNe (Brout et al. 2022, arXiv:2202.04077) `[src: abstract]`.
 
 **SBF.** Pixel-to-pixel variance of an early-type galaxy image; reaches
 100 Mpc with HST WFC3/IR, 4% per galaxy; calibrated on Cepheids or on TRGB
-(Blakeslee et al. 2021, arXiv:2101.02221) `[src]`. It skips SN Ia.
+(Blakeslee et al. 2021, arXiv:2101.02221) `[src: abstract]`. It skips SN Ia.
 
 **Tully-Fisher and Fundamental Plane.** Scaling relations with large
 per-galaxy scatter but very large samples (origins in the table of
@@ -404,7 +404,7 @@ after extrapolating H(z) to z = 0 with a model or a reconstruction.
 <!-- key: early-universe-and-inverse-ladder-inference -->
 
 **CMB.** The acoustic scale theta_* = r_* / D_M(z_*) is measured to 0.03%
-(100 theta_* = 1.0411 ± 0.0003) `[src]` (arXiv:1807.06209). Within flat LCDM,
+(100 theta_* = 1.0411 ± 0.0003) `[src: abstract]` (arXiv:1807.06209). Within flat LCDM,
 omega_b and omega_c fix r_* and the only freedom left to match theta_* is H0.
 The value is model-dependent by construction. See `cosmo-cmb`.
 
@@ -475,9 +475,9 @@ the independent H0DN software.
 |---|---|---|---|
 | SH0ES data vector y, covariance C, design matrix L | the full linear system of the 2022 fit, written in matrix form for transmission and reused by the reanalyses in `results.md` Section 6 | arXiv:2112.04510 | [src] |
 | H0DN software and data products | network solver in IDL and Python, data files, one configuration file per variant of its Table 4; repository address in App. E, public on publication | arXiv:2510.23823, App. E | [src: App. E] |
-| Pantheon+ light curves and covariance | 1701 light curves, used by SH0ES and H0DN | arXiv:2202.04077 | [src] |
-| Extragalactic Distance Database, TRGB | about 400 hosts with a TRGB distance | as used in arXiv:2609.29996 | [src] |
-| Cosmicflows-4 | 55,877 distances, eight methods | arXiv:2209.11238 | [src] |
+| Pantheon+ light curves and covariance | 1701 light curves, used by SH0ES and H0DN | arXiv:2202.04077 | [src: abstract] |
+| Extragalactic Distance Database, TRGB | about 400 hosts with a TRGB distance | as used in arXiv:2609.29996 | [src: abstract] |
+| Cosmicflows-4 | 55,877 distances, eight methods | arXiv:2209.11238 | [src: abstract] |
 | Manticore-Local | posterior realisations of the local density and velocity field | arXiv:2505.10682 | [src] |
 | TDCOSMO hierarchical pipeline | lens models, kinematics, population inference | arXiv:2007.02941 | [src] |
 

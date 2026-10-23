@@ -221,9 +221,9 @@ shot-noise dominated [src: arXiv:2510.13509, Sect. 4.4.2].
 | Range tested (Euclid-like) | ΔFoM, clustering + lensing masses | Place read |
 |---|---|---|
 | 20–130 Mpc/h (reference) | — | arXiv:2510.13509, Table 4 |
-| 40–130 | −14% | same |
-| 60–130 | −37% | same |
-| 20–200 | −3% | same |
+| 40–130 | −14% | arXiv:2510.13509, Table 4 |
+| 60–130 | −37% | arXiv:2510.13509, Table 4 |
+| 20–200 | −3% | arXiv:2510.13509, Table 4 |
 
 Scales of 20–60 Mpc/h carry sizeable information, beyond the BAO adds
 almost nothing for Ω_m and σ8 [src: arXiv:2510.13509, Sect. 4.4.3]. For
@@ -297,8 +297,8 @@ Sect. V.5].
   maps that assume a β profile [src: arXiv:2402.08460, Sect. 2.2]. Test:
   the angular slope (≈ −0.8) and n(z) agreement of randoms and data.
 - **n(z) features the randoms do not follow.** The eRASS1 peak at z ≈ 0.8
-  from an optical filter transition; handled by a redshift cut [src:
-  same].
+  from an optical filter transition; handled by a redshift cut to
+  0.1–0.6 [src: arXiv:2402.08460, Sect. 2.2 and Fig. 3 caption].
 - **Bias model outside its calibration.** Tinker-type fits for the rarest
   haloes [src: arXiv:2610.08947, Sect. IV.2]; > 20% spread between bias
   models [src: arXiv:2402.08460, Sect. 3.1.2]. Test: rerun with an
@@ -355,7 +355,7 @@ Sect. V.5].
   Euclid study (cited there to an earlier Euclid paper): not read.
 - The Euclid result that the counts covariance changes by 15–20% with RSD
   and photo-z is from the abstract of arXiv:2510.13509 only.
-- The SPT-3G halo-bias value b_h = 5.30 ± 0.24 is from the abstract; its
+- The SPT-3G halo-bias value b_h = 5.30 ± 0.24 is from the abstract of arXiv:2610.08947; its
   section was not read.
 - The XXL cluster clustering measurement that enters arXiv:2109.13171 was
   not read.

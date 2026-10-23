@@ -316,13 +316,13 @@ Sects. 6.1.1, 6.3; Fig. 8 caption].
 
 | Route | Result as stated | Source |
 |---|---|---|
-| BCG wobbles, 10 relaxed clusters vs BAHAMAS-SIDM | consistent with CDM at ~1.5σ; σ/m < 0.12 (0.39) cm²/g at 68% (95%) | Harvey et al. 2019, arXiv:1812.06981 [src] |
-| Cluster Einstein radii vs CLASH, BAHAMAS-SIDM | σ/m > 1 cm²/g at ~1000 km/s "likely incompatible"; SIDM cores not reflected in gas, stars or X-ray luminosity | Robertson et al. 2019, arXiv:1810.05649 [src] |
-| Halo shapes (lensing potentials, X-ray isophotes) | earlier limit of ~0.02 cm²/g "off by more than an order of magnitude"; at least 0.1 cm²/g allowed | Peter et al. 2013, arXiv:1208.3026 [src] |
-| X-ray ellipticity, 84 relaxed Chandra/ROSAT clusters vs adiabatic zooms | non-cool-core clusters agree better with 0.5–1 cm²/g; CDM and 0.1 cm²/g disfavoured at 68%; missing cooling and feedback could reconcile CDM | Shen et al. 2022, arXiv:2202.00038 [src] |
+| BCG wobbles, 10 relaxed clusters vs BAHAMAS-SIDM | consistent with CDM at ~1.5σ; σ/m < 0.12 (0.39) cm²/g at 68% (95%) | Harvey et al. 2019, arXiv:1812.06981 [src: abstract] |
+| Cluster Einstein radii vs CLASH, BAHAMAS-SIDM | σ/m > 1 cm²/g at ~1000 km/s "likely incompatible"; SIDM cores not reflected in gas, stars or X-ray luminosity | Robertson et al. 2019, arXiv:1810.05649 [src: abstract] |
+| Halo shapes (lensing potentials, X-ray isophotes) | earlier limit of ~0.02 cm²/g "off by more than an order of magnitude"; at least 0.1 cm²/g allowed | Peter et al. 2013, arXiv:1208.3026 [src: abstract] |
+| X-ray ellipticity, 84 relaxed Chandra/ROSAT clusters vs adiabatic zooms | non-cool-core clusters agree better with 0.5–1 cm²/g; CDM and 0.1 cm²/g disfavoured at 68%; missing cooling and feedback could reconcile CDM | Shen et al. 2022, arXiv:2202.00038 [src: abstract] |
 | Weak-lensing profiles, ACT clusters × DES sources | isotropic elastic σ/m < 1 cm²/g (95%) | Adhikari et al. 2024, arXiv:2401.05788 [src] |
-| Cluster radial acceleration relation vs CLASH | σ/m = 0.3 cm²/g disfavoured at 3.8σ using r > 100 kpc | Tam et al. 2022, arXiv:2207.03506 [src] |
-| Lensing + BCG kinematics, MACS J0138 | σ/m < 0.613 cm²/g (95%) at ⟨v_pair⟩ < 2090 km/s | O'Donnell et al. 2025, arXiv:2508.20179 [src] |
+| Cluster radial acceleration relation vs CLASH | σ/m = 0.3 cm²/g disfavoured at 3.8σ using r > 100 kpc | Tam et al. 2022, arXiv:2207.03506 [src: abstract] |
+| Lensing + BCG kinematics, MACS J0138 | σ/m < 0.613 cm²/g (95%) at ⟨v_pair⟩ < 2090 km/s | O'Donnell et al. 2025, arXiv:2508.20179 [src: abstract] |
 
 O'Donnell et al. judge the routes that do not reconstruct the inner
 profile (merger offsets, BCG offsets, the RAR, ellipticities) "not yet

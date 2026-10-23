@@ -41,12 +41,12 @@ Notes [src]:
 - BAO detection significance ranges from 5.6σ (QSO) to 14.7σ (LRG3+ELG1).
 - The Lyα paper quotes D_H/r_d = 8.632 ± 0.098 ± 0.026 and
   D_M/r_d = 38.99 ± 0.52 ± 0.12 (statistical, then theory systematic), a
-  0.65% isotropic measurement at z_eff = 2.33 (arXiv:2503.14739).
+  0.65% isotropic measurement at z_eff = 2.33 (arXiv:2503.14739, abstract).
 - Joint fit of all bins in flat ΛCDM: χ²/dof = 10.2/(13 − 2).
 - Statistical precision improved by 30% to 50% over DR1.
 
 Update at z = 2.33 (July 2026): adding the Lyα full-shape AP measurement to
-Lyα BAO gives D_H/r_d = 8.600 ± 0.066 and D_M/r_d = 39.32 ± 0.33 [src]
+Lyα BAO gives D_H/r_d = 8.600 ± 0.066 and D_M/r_d = 39.32 ± 0.33 [src: abstract]
 (DESI Collaboration 2026, arXiv:2607.27410). AP alone is measured to 1%,
 twice as tight as BAO from the same data [src]. Detail: `cosmo-lyman-alpha`.
 
@@ -82,13 +82,13 @@ measurement [src] (arXiv:2404.03000).
 
 | Survey, sample | z_eff | Measurement | Citation | Flag |
 |---|---|---|---|---|
-| SDSS LRG (first detection) | 0.35 | distance ratio to z = 1089 to 4%; absolute distance to 5% | Eisenstein et al. 2005, arXiv:astro-ph/0501171 | [src] |
-| 6dFGS | 0.106 | D_V = 456 ± 27 Mpc; r_s(z_d)/D_V = 0.336 ± 0.015 | Beutler et al. 2011, arXiv:1106.3366 | [src] |
-| SDSS DR7 MGS | 0.15 | D_V = (664 ± 25)(r_d/r_d,fid) Mpc | Ross et al. 2015, arXiv:1409.3242 | [src] |
+| SDSS LRG (first detection) | 0.35 | distance ratio to z = 1089 to 4%; absolute distance to 5% | Eisenstein et al. 2005, arXiv:astro-ph/0501171 | [src: abstract] |
+| 6dFGS | 0.106 | D_V = 456 ± 27 Mpc; r_s(z_d)/D_V = 0.336 ± 0.015 | Beutler et al. 2011, arXiv:1106.3366 | [src: abstract] |
+| SDSS DR7 MGS | 0.15 | D_V = (664 ± 25)(r_d/r_d,fid) Mpc | Ross et al. 2015, arXiv:1409.3242 | [src: abstract] |
 | WiggleZ (reconstructed) | 0.44, 0.60, 0.73 | D_V (r_s^fid/r_s) = 1716 ± 83, 2221 ± 101, 2516 ± 86 Mpc | Kazin et al. 2014, arXiv:1401.0358 | [src] |
 | SDSS LRG, 0.4 < z < 0.6 | 0.51 | D_M/r_d = 13.36 ± 0.21; D_H/r_d = 22.33 ± 0.58 | values as quoted in arXiv:2404.03002 for Alam et al. 2021, arXiv:2007.08991; re-read 2026-10-20 as the BOSS-galaxy BAO-only column | [src: arXiv:2007.08991, Table 3] |
 | SDSS LRG, 0.6 < z < 0.85 | 0.70 | D_M/r_d = 17.86 ± 0.33; D_H/r_d = 19.33 ± 0.53 | same; re-read 2026-10-20 as the eBOSS LRG (0.6 < z < 1.0) BAO-only column | [src: arXiv:2007.08991, Table 3] |
-| eBOSS LRG (BAO+RSD consensus) | 0.698 | D_M/r_d = 17.65 ± 0.30; D_H/r_d = 19.77 ± 0.47 | Bautista et al. 2020, arXiv:2007.08993 | [src] |
+| eBOSS LRG (BAO+RSD consensus) | 0.698 | D_M/r_d = 17.65 ± 0.30; D_H/r_d = 19.77 ± 0.47 | Bautista et al. 2020, arXiv:2007.08993 | [src: abstract] |
 | eBOSS QSO (consensus) | 1.48 | D_M/r_d = 30.22 ± 0.79; D_H/r_d = 13.26 ± 0.47 | Hou et al. 2020, arXiv:2007.08998 | [src] |
 | DESI DR1 + SDSS Lyα | 2.33 | D_M/r_d = 38.80 ± 0.75; D_H/r_d = 8.72 ± 0.14; ρ = −0.48 | arXiv:2404.03002 | [src] |
 
@@ -99,7 +99,7 @@ LRG paper. State which one is being compared.
 BOSS DR12 final: 1.2 million galaxies, three overlapping slices at
 z_eff = 0.38, 0.51, 0.61; with Planck 2015, Ω_K = 0.0003 ± 0.0026 and
 w = −1.01 ± 0.06; in flat ΛCDM Ω_m = 0.310 ± 0.005 and
-H0 = 67.6 ± 0.5 km/s/Mpc [src] (Alam et al. 2017, arXiv:1607.03155).
+H0 = 67.6 ± 0.5 km/s/Mpc [src: abstract] (Alam et al. 2017, arXiv:1607.03155).
 
 ## 2. ΛCDM parameters from BAO
 <!-- key: lambdacdm-parameters-from-bao -->
@@ -110,27 +110,27 @@ lensing, with different likelihood versions in DR1 and DR2).
 | Dataset | Ω_m | H0 [km/s/Mpc] or h r_d | Citation | Flag |
 |---|---|---|---|---|
 | DESI DR2 BAO | 0.2975 ± 0.0086 | h r_d = 101.54 ± 0.73 Mpc (r = −0.92) | arXiv:2503.14738 | [src] |
-| DESI DR2 + BBN | 0.2977 ± 0.0086 | 68.51 ± 0.58 | arXiv:2503.14738 | [src] |
-| DESI DR2 + BBN + θ_* | 0.2967 ± 0.0045 | 68.45 ± 0.47 | arXiv:2503.14738 | [src] |
-| DESI DR2 + CMB | 0.3027 ± 0.0036 | 68.17 ± 0.28 | arXiv:2503.14738 | [src] |
-| CMB alone (as used in DR2 paper) | 0.3169 ± 0.0065 | 67.14 ± 0.47 | arXiv:2503.14738 | [src] |
-| DESI DR1 BAO | 0.295 ± 0.015 | — | arXiv:2404.03002 | [src] |
+| DESI DR2 + BBN | 0.2977 ± 0.0086 | 68.51 ± 0.58 | arXiv:2503.14738 | [src: Sect. VI] |
+| DESI DR2 + BBN + θ_* | 0.2967 ± 0.0045 | 68.45 ± 0.47 | arXiv:2503.14738 | [src: Sect. VI] |
+| DESI DR2 + CMB | 0.3027 ± 0.0036 | 68.17 ± 0.28 | arXiv:2503.14738 | [src: Sect. VI] |
+| CMB alone (as used in DR2 paper) | 0.3169 ± 0.0065 | 67.14 ± 0.47 | arXiv:2503.14738 | [src: Sect. VI] |
+| DESI DR1 BAO | 0.295 ± 0.015 | — | arXiv:2404.03002 | [src: abstract] |
 | DESI DR1 + BBN | — | 68.53 ± 0.80 | value quoted in arXiv:2503.14738 | [sec] |
-| DESI DR1 + BBN + θ_* | — | 68.52 ± 0.62 | arXiv:2404.03002 | [src] |
-| DESI DR1 + CMB | 0.307 ± 0.005 | 67.97 ± 0.38 | arXiv:2404.03002 | [src] |
-| DESI DR2 Lyα (BAO + AP) + BBN | 0.325 ± 0.018 (AP) | 66.5 ± 1.3 | arXiv:2607.27410 | [src] |
-| Planck 2018 | 0.315 ± 0.007 | 67.4 ± 0.5 | Planck Collaboration 2020, arXiv:1807.06209 | [src] |
+| DESI DR1 + BBN + θ_* | — | 68.52 ± 0.62 | arXiv:2404.03002 | [src: abstract] |
+| DESI DR1 + CMB | 0.307 ± 0.005 | 67.97 ± 0.38 | arXiv:2404.03002 | [src: abstract] |
+| DESI DR2 Lyα (BAO + AP) + BBN | 0.325 ± 0.018 (AP) | 66.5 ± 1.3 | arXiv:2607.27410 | [src: abstract] |
+| Planck 2018 | 0.315 ± 0.007 | 67.4 ± 0.5 | Planck Collaboration 2020, arXiv:1807.06209 | [src: abstract] |
 
 Consistency statements, flat ΛCDM [src]:
 
 - DESI DR2 BAO versus CMB in the (Ω_m, h r_d) plane: 2.3σ, up from 1.9σ in
-  DR1; 2.0σ if CMB lensing is excluded (arXiv:2503.14738).
+  DR1; 2.0σ if CMB lensing is excluded (arXiv:2503.14738, Sect. VI).
 - With the 2026 Lyα AP measurement the DESI–CMB discrepancy goes from 2.4σ to
-  2.2σ (arXiv:2607.27410; that paper's own before-and-after numbers).
+  2.2σ (arXiv:2607.27410; that paper's own before-and-after numbers). [src: abstract]
 - DESI DR2 + BBN versus SH0ES H0: 4.5σ, independent of the CMB
-  (arXiv:2503.14738).
+  (arXiv:2503.14738, Sect. VI).
 - Ω_m from DESI DR2 versus supernovae: 1.7σ (Pantheon+), 2.1σ (Union3), 2.9σ
-  (DESY5), supernovae preferring higher Ω_m (arXiv:2503.14738).
+  (DESY5), supernovae preferring higher Ω_m (arXiv:2503.14738, Sect. VI).
 
 ## 3. Full-shape constraints, flat ΛCDM
 <!-- key: full-shape-constraints-flat-lambdacdm -->
@@ -140,23 +140,23 @@ n_s treatment differs and is stated.
 
 | Data and analysis | Ω_m | H0 | σ8 | n_s | Citation | Flag |
 |---|---|---|---|---|---|---|
-| BOSS DR12, EFT (CLASS-PT lineage) | 0.295 ± 0.010 | 67.9 ± 1.1 | 0.721 ± 0.043 | fixed | Ivanov et al. 2020, arXiv:1909.05277 | [src] |
-| BOSS DR12, EFT (PyBird lineage) | 0.309 ± 0.010 | 68.5 ± 2.2 | ln(10¹⁰A_s) = 2.72 ± 0.13 | fixed | D'Amico et al. 2020, arXiv:1909.05271 | [src] |
-| BOSS DR12, P + bispectrum monopole | — | 69.6 (+1.1/−1.3) | 0.692 (+0.035/−0.041) | free: 0.870 (+0.067/−0.064) | Philcox & Ivanov 2022, arXiv:2112.04515 | [src] |
-| same, n_s from Planck | — | 68.31 (+0.83/−0.86) | 0.722 (+0.032/−0.036) | Planck | arXiv:2112.04515 | [src] |
-| BOSS, LPT, pre-recon P + post-recon ξ | 0.303 ± 0.0082 | 69.23 ± 0.77 | 0.733 ± 0.047 | — | Chen et al. 2022, arXiv:2110.05530 | [src] |
-| DESI DR1 FS + DR1 BAO (key paper) | 0.296 ± 0.010 | 68.63 ± 0.79 | 0.841 ± 0.034 | Gaussian prior | Adame et al. 2024, arXiv:2411.12021 | [src] |
-| same, cosmology paper | 0.2962 ± 0.0095 | — | 0.842 ± 0.034 | weak prior | DESI Collaboration 2024, arXiv:2411.12022 | [src] |
-| DESI DR1 (FS+BAO) + CMB | 0.3056 ± 0.0049 | — | 0.8121 ± 0.0053 | — | arXiv:2411.12022 | [src] |
-| DESI DR1 (FS+BAO) + CMB + DESY3 3×2pt | — | 68.40 ± 0.27 | — | — | arXiv:2411.12022 | [src] |
-| DESI DR1 FS + BAO, HOD-informed priors | 0.2994 ± 0.0090 | — | 0.836 (+0.024/−0.027) | weak prior | Zhang et al. 2025, arXiv:2504.10407 | [src] |
-| DESI DR1 FS + BAO, profile likelihood | 0.3034 ± 0.0110 | 68.96 (+0.81/−0.80) | 0.863 (+0.048/−0.040) | — | Morawetz et al. 2025, arXiv:2508.11811 | [src] |
-| DESI DR1 P + B, independent pipeline | 0.284 ± 0.011 | 70.7 ± 1.1 | 0.811 ± 0.030 | external prior | Chudaykin et al. 2025, arXiv:2507.13433 | [src] |
-| same + DESI DR2 BAO | 0.296 ± 0.007 | 68.8 ± 0.6 | 0.818 ± 0.029 | external prior | arXiv:2507.13433 | [src] |
-| DESI DR1 FS (ShapeFit) + DR2 BAO ("DESI1.5") | 0.3035 ± 0.0085 | h = 0.6876 ± 0.0059 | 0.822 ± 0.034 | wide prior | Forero-Sánchez et al. 2026, arXiv:2602.18761 | [src] |
-| DESI DR1 P with simulation-based priors + DR2 BAO | 0.2987 ± 0.0066 | 68.80 ± 0.35 | 0.766 ± 0.015 | — | Chudaykin et al. 2026, arXiv:2602.18554 | [src] |
-| DESI DR1 P + B + photometric and CMB-lensing cross-correlations + DR2 BAO | 0.2974 ± 0.0050 | 69.08 ± 0.37 | 0.838 ± 0.017 | CMB prior | Ivanov et al. 2026, arXiv:2601.16165 | [src] |
-| Planck 2018 (for reference) | 0.315 ± 0.007 | 67.4 ± 0.5 | 0.811 ± 0.006 | 0.965 ± 0.004 | arXiv:1807.06209 | [src] |
+| BOSS DR12, EFT (CLASS-PT lineage) | 0.295 ± 0.010 | 67.9 ± 1.1 | 0.721 ± 0.043 | fixed | Ivanov et al. 2020, arXiv:1909.05277 | [src: abstract] |
+| BOSS DR12, EFT (PyBird lineage) | 0.309 ± 0.010 | 68.5 ± 2.2 | ln(10¹⁰A_s) = 2.72 ± 0.13 | fixed | D'Amico et al. 2020, arXiv:1909.05271 | [src: abstract] |
+| BOSS DR12, P + bispectrum monopole | — | 69.6 (+1.1/−1.3) | 0.692 (+0.035/−0.041) | free: 0.870 (+0.067/−0.064) | Philcox & Ivanov 2022, arXiv:2112.04515 | [src: abstract] |
+| same, n_s from Planck | — | 68.31 (+0.83/−0.86) | 0.722 (+0.032/−0.036) | Planck | arXiv:2112.04515 | [src: abstract] |
+| BOSS, LPT, pre-recon P + post-recon ξ | 0.303 ± 0.0082 | 69.23 ± 0.77 | 0.733 ± 0.047 | — | Chen et al. 2022, arXiv:2110.05530 | [src: abstract] |
+| DESI DR1 FS + DR1 BAO (key paper) | 0.296 ± 0.010 | 68.63 ± 0.79 | 0.841 ± 0.034 | Gaussian prior | Adame et al. 2024, arXiv:2411.12021 | [src: abstract] |
+| same, cosmology paper | 0.2962 ± 0.0095 | — | 0.842 ± 0.034 | weak prior | DESI Collaboration 2024, arXiv:2411.12022 | [src: abstract] |
+| DESI DR1 (FS+BAO) + CMB | 0.3056 ± 0.0049 | — | 0.8121 ± 0.0053 | — | arXiv:2411.12022 | [src: abstract] |
+| DESI DR1 (FS+BAO) + CMB + DESY3 3×2pt | — | 68.40 ± 0.27 | — | — | arXiv:2411.12022 | [src: abstract] |
+| DESI DR1 FS + BAO, HOD-informed priors | 0.2994 ± 0.0090 | — | 0.836 (+0.024/−0.027) | weak prior | Zhang et al. 2025, arXiv:2504.10407 | [src: abstract] |
+| DESI DR1 FS + BAO, profile likelihood | 0.3034 ± 0.0110 | 68.96 (+0.81/−0.80) | 0.863 (+0.048/−0.040) | — | Morawetz et al. 2025, arXiv:2508.11811 | [src: abstract] |
+| DESI DR1 P + B, independent pipeline | 0.284 ± 0.011 | 70.7 ± 1.1 | 0.811 ± 0.030 | external prior | Chudaykin et al. 2025, arXiv:2507.13433 | [src: abstract] |
+| same + DESI DR2 BAO | 0.296 ± 0.007 | 68.8 ± 0.6 | 0.818 ± 0.029 | external prior | arXiv:2507.13433 | [src: abstract] |
+| DESI DR1 FS (ShapeFit) + DR2 BAO ("DESI1.5") | 0.3035 ± 0.0085 | h = 0.6876 ± 0.0059 | 0.822 ± 0.034 | wide prior | Forero-Sánchez et al. 2026, arXiv:2602.18761 | [src: abstract] |
+| DESI DR1 P with simulation-based priors + DR2 BAO | 0.2987 ± 0.0066 | 68.80 ± 0.35 | 0.766 ± 0.015 | — | Chudaykin et al. 2026, arXiv:2602.18554 | [src: abstract] |
+| DESI DR1 P + B + photometric and CMB-lensing cross-correlations + DR2 BAO | 0.2974 ± 0.0050 | 69.08 ± 0.37 | 0.838 ± 0.017 | CMB prior | Ivanov et al. 2026, arXiv:2601.16165 | [src: abstract] |
+| Planck 2018 (for reference) | 0.315 ± 0.007 | 67.4 ± 0.5 | 0.811 ± 0.006 | 0.965 ± 0.004 | arXiv:1807.06209 | [src: abstract] |
 
 Reading the table:
 
@@ -174,7 +174,7 @@ Reading the table:
   2026, arXiv:2610.01836).
 - Bayesian and frequentist DESI results agree in ΛCDM (shifts of 0.8σ, 0.3σ,
   0.7σ in σ8, H0, Ω_m between maximum likelihood and posterior mean) but not
-  in w0waCDM, where the shifts reach 2.1σ to 6.6σ [src] (arXiv:2508.11811).
+  in w0waCDM, where the shifts reach 2.1σ to 6.6σ [src: abstract] (arXiv:2508.11811).
 
 ## 4. Growth rate
 <!-- key: growth-rate -->
@@ -208,7 +208,7 @@ snapshot.
 
 | Survey, sample | z_eff | fσ8 | Citation | Flag |
 |---|---|---|---|---|
-| eBOSS LRG (consensus) | 0.698 | 0.473 ± 0.044 | arXiv:2007.08993 | [src] |
+| eBOSS LRG (consensus) | 0.698 | 0.473 ± 0.044 | arXiv:2007.08993 | [src: abstract] |
 | eBOSS QSO (consensus) | 1.48 | 0.464 ± 0.045 | arXiv:2007.08998 | [src] |
 | BOSS DR12 (three bins) | 0.38, 0.51, 0.61 | 6% precision; values not in the abstract | arXiv:1607.03155 | [src] |
 | BOSS DR12 consensus BAO+FS | 0.38, 0.51, 0.61 | 0.497 ± 0.039 ± 0.024; 0.458 ± 0.035 ± 0.015; 0.436 ± 0.034 ± 0.009 (stat, sys) | arXiv:1607.03155 | [src: Table 7] |
@@ -263,12 +263,12 @@ Full-shape side:
   (arXiv:2602.18761, w0waCDM table and abstract). **The arXiv abstract prints
   "w0 = 0.49" without the minus sign; the table in the body gives −0.49.**
 - With the LRG bispectrum, DESI-only results are consistent with Λ within 1σ;
-  DESI + CMB gives 2.8σ; DESI + CMB + DES-Dovekie supernovae 3.1σ [src]
+  DESI + CMB gives 2.8σ; DESI + CMB + DES-Dovekie supernovae 3.1σ [src: abstract]
   (arXiv:2606.23936).
 - With simulation-based priors, w0wa is consistent with Λ within 2.2σ without
-  supernovae and 1.4σ with them [src] (arXiv:2602.18554).
+  supernovae and 1.4σ with them [src: abstract] (arXiv:2602.18554).
 - Independent combined-probe analysis: 2.2σ from low-redshift data with
-  Pantheon+, 2.7σ with Planck instead of supernovae [src] (arXiv:2601.16165).
+  Pantheon+, 2.7σ with Planck instead of supernovae [src: abstract] (arXiv:2601.16165).
 
 The dark-energy interpretation is in `cosmo-dark-energy-modified-gravity`.
 
@@ -281,13 +281,13 @@ The dark-energy interpretation is in `cosmo-dark-energy-modified-gravity`.
 | Σm_ν | < 0.071 eV (95%) | DESI DR1 (FS+BAO) + CMB, ΛCDM | arXiv:2411.12022 | [src] |
 | Σm_ν | < 0.064 eV (95%) | DESI DR2 BAO + CMB, ΛCDM | arXiv:2503.14738 | [src] |
 | Σm_ν | < 0.16 eV (95%) | DESI DR2 BAO + CMB, w0waCDM | arXiv:2503.14738 | [src] |
-| 10³ Ω_K | 2.3 ± 1.1 | DESI DR2 BAO + CMB, ΛCDM + Ω_K | arXiv:2503.14738 | [src] |
+| 10³ Ω_K | 2.3 ± 1.1 | DESI DR2 BAO + CMB, ΛCDM + Ω_K | arXiv:2503.14738 | [src: Sect. VI] |
 | 10³ Ω_K | 25 ± 41 | DESI DR2 BAO alone | arXiv:2503.14738 | [src] |
-| w | −0.916 ± 0.078 | DESI DR2 BAO alone, wCDM | arXiv:2503.14738 | [src] |
-| w | −1.055 ± 0.036 | DESI DR2 BAO + CMB, wCDM | arXiv:2503.14738 | [src] |
-| w | −0.99 (+0.15/−0.13) | DESI DR1 BAO alone, wCDM | arXiv:2404.03002 | [src] |
-| μ_0 | 0.11 (+0.45/−0.54) | DESI DR1 (FS+BAO) alone | arXiv:2411.12022 | [src] |
-| μ_0, Σ_0 | 0.04 ± 0.22, 0.044 ± 0.047 | DESI DR1 + CMB + DESY3 | arXiv:2411.12022 | [src] |
+| w | −0.916 ± 0.078 | DESI DR2 BAO alone, wCDM | arXiv:2503.14738 | [src: Sect. VI] |
+| w | −1.055 ± 0.036 | DESI DR2 BAO + CMB, wCDM | arXiv:2503.14738 | [src: Sect. VI] |
+| w | −0.99 (+0.15/−0.13) | DESI DR1 BAO alone, wCDM | arXiv:2404.03002 | [src: abstract] |
+| μ_0 | 0.11 (+0.45/−0.54) | DESI DR1 (FS+BAO) alone | arXiv:2411.12022 | [src: abstract] |
+| μ_0, Σ_0 | 0.04 ± 0.22, 0.044 ± 0.047 | DESI DR1 + CMB + DESY3 | arXiv:2411.12022 | [src: abstract] |
 
 Neutrino-mass interpretation: `cosmo-neutrinos-dark-matter`. Modified
 gravity: `cosmo-dark-energy-modified-gravity`.
@@ -298,7 +298,7 @@ gravity: `cosmo-dark-energy-modified-gravity`.
 Rescaling the power spectrum to remove r_s information and relying on the
 equality scale, with uncalibrated DR1 BAO and θ_*, DESI DR1 gives
 H0 = 69.2 (+1.3/−1.4), 70.3 (+1.4/−1.2) and 69.6 (+1.3/−1.8) km/s/Mpc for
-three choices of the external Ω_m information [src] (Zaborowski et al. 2025,
+three choices of the external Ω_m information [src: abstract] (Zaborowski et al. 2025,
 arXiv:2510.19149).
 
 ## 6. Local primordial non-Gaussianity from scale-dependent bias (status)
@@ -309,14 +309,14 @@ arXiv:2510.19149).
 | eBOSS DR16 QSO, P_0 | −12 ± 21 | — | Mueller et al. 2022, arXiv:2106.13725 | [src] |
 | eBOSS DR16 QSO, optimal weights | −4 < f_NL < 27 | standard response | Cagliari et al. 2024, arXiv:2309.15814 | [src] |
 | same | −23 < f_NL < 21 | lower response | arXiv:2309.15814 | [src] |
-| DESI DR1 LRG + QSO, P(k) | −3.6 (+9.0/−9.1) | p = 1 for LRG, recent-merger model for QSO | Chaussidon et al. 2024, arXiv:2411.17623 | [src] |
-| same | 3.5 (+10.7/−7.4) | universality for QSO too | arXiv:2411.17623 | [src] |
-| DESI DR1, simulation prior on p (mean ≈ 1.4) | −3.3 ± 9.2 | IllustrisTNG-based prior | Fondi et al. 2026, arXiv:2602.12357 | [src] |
-| DESI DR1 LRG×QSO cross-correlations added | 2.1 (+8.8/−8.3) | — | Rosado-Marín et al. 2026, arXiv:2604.05213 | [src] |
-| DESI DR1 LRG + QSO, configuration space | −3 ± 12 | p_LRG = 1.0 ± 0.1, p_QSO = 1.6 ± 0.1 | Brown et al. 2026, arXiv:2606.24651 | [src] |
-| DESI DR1 P + B (EFT, one loop) | −0.1 ± 7.4 | — | Chudaykin et al. 2025, arXiv:2512.04266 | [src] |
-| same + CMB | −0.0 ± 4.1 | — | arXiv:2512.04266 | [src] |
-| Planck 2018 bispectrum | −0.9 ± 5.1 | none needed | Planck Collaboration 2020, arXiv:1905.05697 | [src] |
+| DESI DR1 LRG + QSO, P(k) | −3.6 (+9.0/−9.1) | p = 1 for LRG, recent-merger model for QSO | Chaussidon et al. 2024, arXiv:2411.17623 | [src: abstract] |
+| same | 3.5 (+10.7/−7.4) | universality for QSO too | arXiv:2411.17623 | [src: abstract] |
+| DESI DR1, simulation prior on p (mean ≈ 1.4) | −3.3 ± 9.2 | IllustrisTNG-based prior | Fondi et al. 2026, arXiv:2602.12357 | [src: abstract] |
+| DESI DR1 LRG×QSO cross-correlations added | 2.1 (+8.8/−8.3) | — | Rosado-Marín et al. 2026, arXiv:2604.05213 | [src: abstract] |
+| DESI DR1 LRG + QSO, configuration space | −3 ± 12 | p_LRG = 1.0 ± 0.1, p_QSO = 1.6 ± 0.1 | Brown et al. 2026, arXiv:2606.24651 | [src: abstract] |
+| DESI DR1 P + B (EFT, one loop) | −0.1 ± 7.4 | — | Chudaykin et al. 2025, arXiv:2512.04266 | [src: abstract] |
+| same + CMB | −0.0 ± 4.1 | — | arXiv:2512.04266 | [src: abstract] |
+| Planck 2018 bispectrum | −0.9 ± 5.1 | none needed | Planck Collaboration 2020, arXiv:1905.05697 | [src: abstract] |
 
 DESI DR1 improves on eBOSS by a factor 2.3 [src] (arXiv:2411.17623). The same
 analysis used 1,631,716 LRGs (0.6 < z < 1.1) and 1,189,129 QSOs
@@ -331,7 +331,7 @@ f_NL^equil = 719 ± 390, f_NL^orth = −200 ± 100 [src] (arXiv:2512.04266).
 | Year | Result | Citation | Flag |
 |---|---|---|---|
 | 2005 | First detections: SDSS LRG ξ(r) (46,748 galaxies) and 2dFGRS P(k) (221,414 galaxies) | arXiv:astro-ph/0501171; arXiv:astro-ph/0501174 | [src] |
-| 2012 | First reconstruction on data: 1.9% distance to z = 0.35 | arXiv:1202.0090 | [src] |
+| 2012 | First reconstruction on data: 1.9% distance to z = 0.35 | arXiv:1202.0090 | [src: abstract] |
 | 2017 | BOSS DR12 consensus, 1.2 million galaxies | arXiv:1607.03155 | [src] |
 | 2021 | SDSS final: eight BAO samples, aggregate 0.60% | arXiv:2007.08991; precision as quoted in arXiv:2404.03002 | [src], precision [sec] |
 | 2024 | DESI DR1: 0.52% (galaxies and QSO), 0.49% with Lyα | arXiv:2404.03000; arXiv:2404.03002 | [src] |
@@ -346,7 +346,7 @@ f_NL^equil = 719 ± 390, f_NL^orth = −200 ± 100 [src] (arXiv:2512.04266).
   concludes "no significant discrepancy" [src] (arXiv:2503.14738).
 - LRG1 (z = 0.51) D_H/r_d: 20.98 ± 0.61 in DR1, 21.863 ± 0.425 in DR2 [src].
 - DR1 versus DR2 overall: largest shifts 1.56σ in α_iso (LRG3+ELG1) and 1.93σ
-  in α_AP (LRG2), with DR1 treated as a subset; KS p-value 0.40 [src]
+  in α_AP (LRG2), with DR1 treated as a subset; KS p-value 0.40 [src: Sect. III.3.1]
   (arXiv:2503.14738).
 
 **H0 from BAO + BBN.** 68.53 ± 0.80 (DR1) to 68.51 ± 0.58 (DR2) [src],

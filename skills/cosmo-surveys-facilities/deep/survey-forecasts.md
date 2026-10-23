@@ -311,7 +311,7 @@ Sect. II.6].
 - Critique: Wolz et al. 2012, arXiv:1205.3984 — where Fisher fails against
   MCMC.
 - Application: Euclid Collaboration 2025, arXiv:2510.09153 — sampled
-  forecasts, projection effects, FoM > 400.
+  forecasts, projection effects, FoM > 400. [src: abstract]
 - Application: DESI Collaboration 2023, arXiv:2306.06307, Sect. VI —
   per-bin forecast table and FoM against design.
 - Application: Simons Observatory 2018, arXiv:1808.07445, Sect. II — CMB

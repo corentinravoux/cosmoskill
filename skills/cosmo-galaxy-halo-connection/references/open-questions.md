@@ -30,7 +30,7 @@ With DES Y3, HSC Y1 and KiDS-1000 the lensing/clustering ratio is A = 0.79 ±
   differing mainly in the assembly-bias level, ~20% vs ~10% (arXiv:2305.09637)
   [src].
 - Abundance matching calibrated with PAC cross-correlations reproduces CMASS
-  lensing with S8 = 0.8294 ± 0.0110 (HSC) (arXiv:2502.09404) [src].
+  lensing with S8 = 0.8294 ± 0.0110 (HSC) (arXiv:2502.09404) [src: abstract].
 - UNIONS lensing finds no significant effect for CMASS and stresses that large
   scales, not only small ones, decide it (arXiv:2606.23651) [src]: the Planck
   HOD over-predicts ΔΣ by only ~7% after shear-bias correction, yet its joint

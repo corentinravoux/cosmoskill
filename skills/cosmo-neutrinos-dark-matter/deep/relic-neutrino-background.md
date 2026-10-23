@@ -64,7 +64,7 @@ of tritium nuclei; U_ej the electron-row elements of the mixing matrix;
 - **Per-nucleus rate used by KATRIN.** R_cap = 4.2 × 10⁻²⁵ yr⁻¹ per
   tritium nucleus for Majorana neutrinos, halved for Dirac; KATRIN
   quotes its results for Majorana neutrinos (Aker et al. 2022,
-  arXiv:2202.04587 [src]).
+  arXiv:2202.04587 [src: Sect. "Keywords:"]).
 
 ### Step 2. Background and resolution
 <!-- key: step-2-background-and-resolution -->
@@ -180,7 +180,7 @@ The PTOLEMY collaboration's 2019 sensitivity study (arXiv:1902.05508
 
 | Target | Limitation stated | Source |
 |---|---|---|
-| Molecular gas (KATRIN) | the final-state ground-state distribution extends the endpoint by ⟨E_GS⟩ ≈ 1.7 eV, an "irreducible background" for m_ν < 0.85 eV; the β tail exceeds the capture signal by about seven orders of magnitude at η = 1; η limits "well below 1 · 10⁶" for m_ν < 0.85 eV seem unlikely, "making the actual detection of CνB with molecular tritium virtually impossible" | arXiv:2202.04587 [src] |
+| Molecular gas (KATRIN) | the final-state ground-state distribution extends the endpoint by ⟨E_GS⟩ ≈ 1.7 eV, an "irreducible background" for m_ν < 0.85 eV; the β tail exceeds the capture signal by about seven orders of magnitude at η = 1; η limits "well below 1 · 10⁶" for m_ν < 0.85 eV seem unlikely, "making the actual detection of CνB with molecular tritium virtually impossible" | arXiv:2202.04587 [src: Sect. "Keywords:"] |
 | Gas generally | KATRIN "falls short of the required sample activity by six orders of magnitude" | arXiv:2101.10069 [src] |
 | Tritium on graphene (PTOLEMY) | zero-point motion of the bound nucleus broadens the electron energy by ΔE ≈ (ħc/λ_el) γ (Eq. 5), γ = [Q² m_e/(m_nucl³ c⁴)]^(1/4) (Eq. 6); ΔE ≈ 0.60–0.75 eV for chemisorption and 0.22–0.33 eV for physisorption across ab initio potentials (Table 1); ΔE ∝ κ^(1/4) in the binding stiffness κ, so an order-of-magnitude gain needs κ four orders smaller; tritium (γ ≈ 3 × 10⁴) "lies deep inside the region where the observation of the CνB peak is impossible"; heavier emitters are listed as alternatives | arXiv:2101.10069 [src] |
 | Same, collaboration analysis | the spread for one tritium atom on flat graphene is "at least an order of magnitude larger than the energy resolution expected"; if ³He⁺ ends in the continuum the capture peak is hidden, if bound the rate is exponentially suppressed; proposed mitigations: hydrogen-passivated carbon nanotubes (sliding along the axis) and a magnetic field against dimerisation | PTOLEMY Collaboration (Apponi et al.) 2022, arXiv:2203.11228 Sect. V [src] |
@@ -247,7 +247,7 @@ required number of events is "still far from any proposed realization"
   mass (arXiv:1405.7654 footnote 6). Test: compute K_end with recoil.
 - **Molecular final states.** Treating molecular tritium as atomic hides
   the 1.7 eV extension of the endpoint and the 43% of captures lost
-  below it (arXiv:2202.04587). Test: include the final-state
+  below it (arXiv:2202.04587, Sect. "Keywords:"). Test: include the final-state
   distribution in both β and capture spectra.
 - **Unphysical best fits.** A negative η or m_ν² best fit can make a
   limit look tighter; KATRIN builds contours relative to the null

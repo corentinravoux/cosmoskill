@@ -14,7 +14,7 @@ Already in L2, not repeated here: the precision reached by each
 measurement and the (1 − b) values in
 `physics-and-methods.md#mass-calibration` and
 `results.md#planck-sz-clusters-and-the-mass-bias-question`; the CMB-S4
-forecast of a 2.5–4.5σ Σm_ν detection with CMB-cluster-lensing
+forecast of a Σm_ν detection with CMB-cluster-lensing
 calibration in `open-questions.md#forecasts`; the SPT-3G CMB-lensing
 sample sizes in `surveys-and-data.md#lensing-data-sets-used-for-mass-calibration`.
 CMB lensing reconstruction over the whole sky (as opposed to around
@@ -122,12 +122,14 @@ to temperature in arXiv:2305.06326 [src: abstracts]. The SPT-3G steps
 [src: Sect. 3.1, arXiv:2404.02153]:
 1. On a tSZ-nulled ILC map (95, 150, 220 GHz), Wiener-filter the 60′
    cutout with W_ℓ = C_ℓ/(C_ℓ + N_ℓ) for ℓ ≤ 2000 and zero above
-   (Eq. 1), with N_ℓ from half-difference maps, and take the median
+   (Eq. 1 of arXiv:2404.02153), with N_ℓ from half-difference maps, and take the median
    gradient direction in the central 6′ × 6′.
 2. Cut 10′ × 10′ stamps from the unfiltered map, rotate them along the
    gradient, weight by w = w_n w_g (inverse noise variance times gradient
-   magnitude), subtract each stamp's mean, and stack.
-3. Subtract the stack at random points: s = s_c − s_r (Eq. 2), with
+   magnitude), subtract each stamp's mean, and stack [src: Sect. 3.1,
+   arXiv:2404.02153].
+3. Subtract the stack at random points: s = s_c − s_r (Eq. 2 of
+   arXiv:2404.02153), with
    N_rand = 10 N_clus drawn from the survey randoms so that they avoid
    masked regions; larger random sets did not change the result.
 4. Estimate the cluster tSZ (and CIB and other cluster-correlated
@@ -138,8 +140,9 @@ to temperature in arXiv:2305.06326 [src: abstracts]. The SPT-3G steps
    adding white noise and Gaussian foregrounds to the models only when
    estimating the gradient direction, because otherwise the better
    gradient estimate of the models "will cause a bias towards lower
-   masses" [src: Sect. 3.2, same].
-6. Likelihood −2 ln L = Σ (s − m) Ĉ⁻¹ (s − m)ᵀ over pixels (Eq. 3), with
+   masses" [src: Sect. 3.2, arXiv:2404.02153].
+6. Likelihood −2 ln L = Σ (s − m) Ĉ⁻¹ (s − m)ᵀ over pixels (Eq. 3 of
+   arXiv:2404.02153), with
    a jackknife covariance from N_jk = 0.9 N_clus subsamples (Eq. 4),
    chosen because it captures all noise sources; for sub-samples of about
    a third of the clusters the full-sample covariance is multiplied by 3
@@ -243,7 +246,8 @@ signal-to-noise makes the catalogue SZ masses scatter high near the
 threshold, so the ratio estimator overestimates 1 − b, and matched-filter
 mass biases propagate straight into it; this is the authors' explanation
 of why the Planck 2015 CMB-lensing value, 1/(1 − b) = 0.99 ± 0.19,
-differs from their 1.41 ± 0.20 [src: Sects. 5 and 8, Table 6, same].
+differs from their 1.41 ± 0.20 [src: Sects. 5 and 8, Table 6,
+arXiv:1904.07887].
 
 **Mean-mass prior (SPT-SZ).** Chaubal et al. take the stacked
 M200 = (5.1 ± 2.1) × 10¹⁴ M_sun of the SPT-SZ CMB-lensing measurement as a
@@ -336,15 +340,15 @@ same].
 | Gradient band limit | ℓ ≤ 2000 | Planck, ACT, SPT-3G | arXiv:1904.07887; arXiv:2009.07772; arXiv:2404.02153 | Sect. 4.2; App. A; Eq. 1 |
 | High-resolution leg; output band | ℓ ≤ 6000; 200 < L < 5000 | ACT × MaDCoWS | arXiv:2009.07772 | App. A |
 | Mean field | 20% (bin 1), 50% (bin 2), > 100% beyond | ACT | arXiv:2009.07772 | App. A |
-| Randoms | 10 N_clus (stack); ≈ 300 N_clus (mean field); 16384 per band | SPT-3G; ACT; Planck | as listed | Sect. 3.1; App. A; Sect. 4.2 |
+| Randoms | 10 N_clus (stack); ≈ 300 N_clus (mean field); 16384 per band | SPT-3G; ACT; Planck | arXiv:2404.02153; arXiv:2009.07772; arXiv:1904.07887 | Sect. 3.1; App. A; Sect. 4.2 |
 | Fit range | 5 bins within 8′ | ACT | arXiv:2009.07772 | App. B |
 | Miscentring prior | f_mis = 0.22 ± 0.11; ln c_mis = −1.13 ± 0.22 | SPT-3G × DES Y3 | arXiv:2404.02153 | Sect. 3.4 |
 | Lensing-observable priors | 1 − b_CMBlens 0.93 ± 0.05; σ_CMBlens 0.20 ± 0.05; r 0.83 ± 0.10 | Planck MMF3 | arXiv:1904.07887 | Table 3 |
-| Posteriors | 1 − b_CMBlens 0.92 ± 0.05; σ_CMBlens 0.21 ± 0.04; r 0.80 +0.06/−0.09; ⟨p_obs⟩ = 0.234 ± 0.052 (4.5σ) | same | same | Table 5; Sect. 8 |
+| Posteriors | 1 − b_CMBlens 0.92 ± 0.05; σ_CMBlens 0.21 ± 0.04; r 0.80 +0.06/−0.09; ⟨p_obs⟩ = 0.234 ± 0.052 (4.5σ) | Planck MMF3 | arXiv:1904.07887 | Table 5; Sect. 8 |
 | Stacked masses, DES Y3 redMaPPer | M200m = 1.66 ± 0.13 ± 0.03, 1.97 ± 0.18 ± 0.05, 2.11 ± 0.20 ± 0.05 (× 10¹⁴ M_sun; flux-, volume-, volume&redshift-limited) | SPT-3G 2019–20 | arXiv:2404.02153 | Sect. 4.2 |
-| Systematic budget | miscentring 1.7%, beam 1.7%, residual foregrounds 1.3%, filtering 0.9%; total 2.4% (0.25σ) | same | same | Table 2 |
+| Systematic budget | miscentring 1.7%, beam 1.7%, residual foregrounds 1.3%, filtering 0.9%; total 2.4% (0.25σ) | SPT-3G 2019–20 | arXiv:2404.02153 | Table 2 |
 | Modelling budget on M_CMBlens/M_SZ | total ± 0.026 (14% of the 0.190 statistical error); profile truncation +0.017/−0.019; kSZ bias −0.060 corrected | Planck + SPT-SZ, 468 clusters | arXiv:2402.18346 | Table 5 |
-| Ratio | M_CMBlens/M_SZ = 0.98 ± 0.19 ± 0.03 | same | same | abstract |
+| Ratio | M_CMBlens/M_SZ = 0.98 ± 0.19 ± 0.03 | Planck + SPT-SZ, 468 clusters | arXiv:2402.18346 | abstract |
 | SPTpol temperature | M200m = 1.62 +0.32/−0.25 ± 0.04 (volume-limited, 1741) and 1.28 +0.14/−0.18 ± 0.03 (flux-limited, 4003), × 10¹⁴ M_sun; systematics dominated by centroids | SPTpol × DES Y3 | arXiv:1810.10998 | abstract |
 | Forecast mass precision | SPT-3G Main T 7.1%, T + Pol 6.4%, Main + Extended T + Pol 5.7% (**forecast**) | SPT-3G × DES | arXiv:2404.02153 | Table 3 |
 | Forecast mass precision | 6.6% (SPT-3G, 7000 clusters), 4.1% (SO, 25000), 3.9% (SO + FYST), 1.8% (CMB-S4, 100000) (**forecast**) | rotated stack, temperature | arXiv:2305.06326 | Sect. 6.2 |
@@ -403,7 +407,7 @@ arXiv:1904.07887, not read in detail).
 - Application, counts: Chaubal et al. 2022 (arXiv:2111.07491), Sects. III
   and V, for the mean-mass prior and SPT-3G and CMB-S4 forecasts.
 - First detections: Baxter et al. 2015 (arXiv:1412.7521), MLE on 513 SPT
-  clusters; Raghunathan et al. 2019 (arXiv:1907.08605), polarisation only.
+  clusters (abstract); Raghunathan et al. 2019 (arXiv:1907.08605), polarisation only.
 
 ## Not verified
 <!-- key: not-verified -->

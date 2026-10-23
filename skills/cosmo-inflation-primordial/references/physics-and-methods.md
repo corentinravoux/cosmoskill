@@ -40,7 +40,7 @@ With ε_V = (M_Pl²/2)(V′/V)² and η_V = M_Pl² V″/V: n_s − 1 = 2η_V −
 
 For Starobinsky R² inflation, Higgs inflation and the α-attractors, the leading-order formulas are n_s ≈ 1 − 2/N and r ≈ 12α/N² (α = 1 for Starobinsky): the superconformal α-attractors of Kallosh et al. 2013 converge to n_s = 1 − 2/N, r = 12α/N² at small α (large curvature of the Kähler manifold) and to chaotic-inflation predictions at large α (arXiv:1311.0472) [src]; the α = 1 class was introduced as a universality class of conformal inflation (Kallosh et al. 2013, arXiv:1306.5220). Higgs inflation needs a non-minimal coupling of the Higgs to gravity and no new particle (Bezrukov and Shaposhnikov 2008, arXiv:0710.3755). The formulas give n_s = 0.960 and 0.967 for N = 50 and 60, and r = 0.0048 and 0.0033 [der: direct evaluation of the formulas of arXiv:1311.0472]. Refined predictions beyond these approximations exist and shift the comparison with data (Drees and Xu 2025, arXiv:2504.20757).
 
-The library ASPIC computes reheating-consistent predictions for 118 single-field models (Martin, Ringeval and Vennin 2014, arXiv:1303.3787) [src].
+The library ASPIC computes reheating-consistent predictions for 118 single-field models (Martin, Ringeval and Vennin 2014, arXiv:1303.3787) [src: abstract].
 
 ### What actually fixes n_s
 <!-- key: what-actually-fixes-ns -->
@@ -98,7 +98,7 @@ The moment expansion was introduced by Chluba et al. 2017: spatial and line-of-s
 ### Quoting a limit
 <!-- key: quoting-a-limit -->
 
-Limits on r are 95% upper limits from a posterior with a flat prior on r ≥ 0 unless stated. SPIDER quotes both a Feldman–Cousins limit (0.11) and a Bayesian one (0.19) for the same data (arXiv:2103.13334) [src]: the construction must be named. The scale subscript (r_0.05 or r_0.002) must be copied.
+Limits on r are 95% upper limits from a posterior with a flat prior on r ≥ 0 unless stated. SPIDER quotes both a Feldman–Cousins limit (0.11) and a Bayesian one (0.19) for the same data (arXiv:2103.13334) [src: abstract]: the construction must be named. The scale subscript (r_0.05 or r_0.002) must be copied.
 
 ## 4. Cosmic birefringence
 <!-- key: cosmic-birefringence -->
@@ -153,7 +153,7 @@ Local non-Gaussianity couples long and short modes and adds a term to the bias o
 
 Δb(k, z) = b_φ f_NL / α(k, z), with α(k, z) = 2 c² k² T(k) D(z) / (3 Ω_m H_0²), and b_φ = 2 δ_c (b_1 − p),
 
-where δ_c ≈ 1.686 is the spherical-collapse threshold, T(k) the transfer function and D(z) the growth factor normalised to the scale factor in matter domination. The data constrain the product f_NL · b_φ only (Barreira 2022, arXiv:2205.05673).
+where δ_c ≈ 1.686 is the spherical-collapse threshold, T(k) the transfer function and D(z) the growth factor normalised to the scale factor in matter domination. The data constrain the product f_NL · b_φ only (Barreira 2022, arXiv:2205.05673). [src: Sect. 1]
 
 As DESI DR1 writes it (arXiv:2411.17623) [src: Sect. 2, Eqs. 2–4, 7]: P(k, z) = [b_1(z) + b_Φ(z) f_NL^loc / T_Φ→δ(k, z)]² P_lin(k, z), with T_Φ→δ = (P_lin/P_Φ)^(1/2), P_Φ(k) = (9/25)(2π²/k³) A_s (k/k_pivot)^(n_s−1), k_pivot = 0.05 Mpc⁻¹, Φ normalised to (3/5)R, so that T_Φ→δ ∝ k² T(k); and b_Φ = 2δ_c (b_1 − p) with δ_c = 1.686.
 

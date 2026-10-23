@@ -52,7 +52,7 @@ supernova side is here.
   modelling (inside the DES systematic budget), 38 % from comparing
   bias-corrected distances of subsets with different selection functions.
   Using the Pantheon+ scatter model and host properties, the DES-SN5YR
-  preference drops only from 3.9 to 3.3 sigma `[src]`.
+  preference drops only from 3.9 to 3.3 sigma `[src: abstract]`.
 - DESI + CMB without any supernovae: 3.1 sigma (arXiv:2503.14738); the full
   DES combination without SNe: 2.6 sigma (DES Collaboration 2026,
   arXiv:2605.27221) `[src]`.
@@ -65,10 +65,10 @@ fixed, and both reduced the *spread* between samples:
 
 1. Calibration and an extinction-law implementation error in the DES
    analysis: DES-Dovekie, 4.2 → 3.2 sigma (Popovic et al. 2025,
-   arXiv:2511.07517) `[src]`.
+   arXiv:2511.07517) `[src: abstract]`.
 2. Inconsistent host-mass estimates between low and high redshift: Union3.1,
    3.8 → 3.4 sigma; and the same correction applied to Pantheon+ *raises*
-   it, 2.8 → 3.2 sigma (Hoyt et al. 2026, arXiv:2601.19424) `[src]`.
+   it, 2.8 → 3.2 sigma (Hoyt et al. 2026, arXiv:2601.19424) `[src: abstract]`.
 
 After both, the three samples give 3.2–3.4 sigma with DESI DR2 and Planck,
 and the merged Unite sample gives 3.3 sigma (MAP) with a Bayesian evidence
@@ -99,9 +99,9 @@ arXiv:2609.05053) `[src]`. What remains open:
 | Dust: host-dependent `R_V` and reddening explain the step and the colour-dependent scatter | 11 sigma colour dependence of scatter; step dependence on colour at 4.5 sigma `[src]` | Brout & Scolnic 2021, arXiv:2004.10206 |
 | Mostly intrinsic | ZTF volume-limited: no evolution of the step with colour; reddening above `c >= 0.2` is dust but the step is not `[src]` | Ginolin et al. 2024, arXiv:2406.02072 |
 | Intrinsic, confirmed with a dust-aware SED model | Step `0.103 ± 0.018 mag` with dust fitted jointly; mean `R_V` equal across environments within 0.2 `[src]` | Ginolin et al. 2026, arXiv:2605.06799 |
-| No dust-law difference | `R_V = 2.84 ± 0.31` in low-mass and `2.58 ± 0.23` in high-mass hosts of 157 Foundation SNe `[src]` | Thorp et al. 2021, arXiv:2102.05678 |
+| No dust-law difference | `R_V = 2.84 ± 0.31` in low-mass and `2.58 ± 0.23` in high-mass hosts of 157 Foundation SNe `[src: abstract]` | Thorp et al. 2021, arXiv:2102.05678 |
 | Both | Intrinsic step at 3.1 sigma together with a ~2 sigma `R_V` difference `[src]` | Grayling et al. 2024, arXiv:2401.08755 |
-| Two populations; the step is redundant | Low-stretch population brighter by `0.14 ± 0.03 mag` at `x1 = 0`, steeper `alpha` by `0.064 ± 0.023`, different `R_B` (3.89 ± 0.29 vs 3.08 ± 0.08) `[src]` | Wojtak et al. 2026, arXiv:2606.17802 |
+| Two populations; the step is redundant | Low-stretch population brighter by `0.14 ± 0.03 mag` at `x1 = 0`, steeper `alpha` by `0.064 ± 0.023`, different `R_B` (3.89 ± 0.29 vs 3.08 ± 0.08) `[src: abstract]` | Wojtak et al. 2026, arXiv:2606.17802 |
 | Two populations inside a cosmology analysis | Residual mass step consistent with zero for unreddened SNe; errors on cosmology shrink `[src]` | Rubin et al. 2026, arXiv:2601.19854 |
 | Against two populations at high redshift | log10 Bayes factor +1.9 against, on DES-SN5YR with an SBI dust model `[src]` | Popovic et al. 2026, arXiv:2607.28725 |
 | Age-driven `R_V` step | Galaxy forward model: `R_V` step with galaxy age fits best; an intrinsic age–luminosity step is mostly absorbed by `alpha` `[src]` | Wiseman et al. 2022, arXiv:2207.05583 |

@@ -26,7 +26,7 @@ arXiv:astro-ph/0110414) [src: Sect. 2.2, Eqs. 1–3].
 
 - **Cosmic variance.** One sky gives 2ℓ+1 samples per multipole, hence
   ΔC_ℓ = √(2/(2ℓ+1)) C_ℓ; averaging over bands Δℓ ≈ ℓ gives about 1% at
-  ℓ = 100 and 0.1% at ℓ = 1000 [src: Sect. 2.2, Eq. 4].
+  ℓ = 100 and 0.1% at ℓ = 1000 (arXiv:astro-ph/0110414) [src: Sect. 2.2, Eq. 4].
 - **Noise and sky cut.** Gaussian noise of known spectrum enters by
   replacing C_ℓ with signal plus noise in that formula; masking to a
   fraction f_sky inflates errors by f_sky^(−1/2) ("sample variance")
@@ -52,7 +52,7 @@ distortions belong to `cosmo-early-universe-exotica`.
 - **Superhorizon origin.** The degree scale of the acoustic peaks is also
   the particle horizon at recombination, so the perturbations must have been
   laid down while those scales were far outside the horizon, with
-  correlations at the 10⁻⁵ level [src: Hu & Dodelson 2001, Sect. 3.2].
+  correlations at the 10⁻⁵ level [src: Hu & Dodelson 2001, arXiv:astro-ph/0110414, Sect. 3.2].
 - **Temperature from a time shift.** The Newtonian potential is a time
   shift δt/t = Ψ, so Θ = −δa/a = −(2/3)(1 + p/ρ)⁻¹ δt/t: −Ψ/2 in radiation
   domination and −2Ψ/3 in matter domination [src: Sect. 3.2, Eq. 13].
@@ -109,7 +109,7 @@ Points to hold:
   density perturbations stop growing near horizon crossing contributes to
   the driving [src: Sect. 3.5]; the light-relic signatures (damping and
   phase shift) are in `deep/damping-tail-light-relics.md`.
-- **Damping physics.** Shear viscosity (photon quadrupole, coefficient
+- **Damping physics** (arXiv:astro-ph/0110414). Shear viscosity (photon quadrupole, coefficient
   A_v = 16/15) and heat conduction (A_h = R²/(1+R)) add a damping term; the
   damping length is the geometric mean of horizon and mean free path, the
   random walk of photons from hot to cold regions (Silk damping)
@@ -197,7 +197,7 @@ integrated Sachs–Wolfe (ISW) term.
   1996, arXiv:astro-ph/9608050) [src].
 - **Doppler from reionisation** is strongly suppressed by the same
   cancellation and negligible below ℓ ~ 10² unless the optical depth
-  approaches unity [src: Hu & Dodelson 2001, Sect. 4.3.3].
+  approaches unity [src: Hu & Dodelson 2001, arXiv:astro-ph/0110414, Sect. 4.3.3].
 - Measurement of τ: `deep/low-ell-polarisation-tau.md`; reionisation
   history: `cosmo-reionization-21cm`; patchy kSZ:
   `cosmo-cmb-lss-cross-correlations`.
@@ -215,7 +215,7 @@ the odd–even modulation, and the initial conditions set the phase and the
 tilt.
 
 Their linear response, for the 2001 working model (Ω_tot = 1,
-Ω_Λ = 2/3, Ω_b h² = 0.02, Ω_m h² = 0.16, n = 1), as written [src: Eq. 24]:
+Ω_Λ = 2/3, Ω_b h² = 0.02, Ω_m h² = 0.16, n = 1), as written in arXiv:astro-ph/0110414 [src: Eq. 24]:
 
 | Observable | Ω_m h² | Ω_b h² | Ω_Λ | Ω_tot |
 |---|---|---|---|---|
@@ -225,7 +225,7 @@ Their linear response, for the 2001 working model (Ω_tot = 1,
 | ΔR*/R* | — | 1.0 | — | — |
 
 Coefficients multiply fractional changes of each parameter. In that model
-ℓ_a = 301, ℓ₁ = 0.73 ℓ_a, ℓ_eq = 149, ℓ_d = 1332, R* = 0.57 [src: Sect. 3.9];
+ℓ_a = 301, ℓ₁ = 0.73 ℓ_a, ℓ_eq = 149, ℓ_d = 1332, R* = 0.57 (arXiv:astro-ph/0110414) [src: Sect. 3.9];
 the 2001 data values quoted beside them are superseded and not repeated.
 
 What follows from it [src: Sect. 3.9]:
@@ -269,16 +269,19 @@ same physics for the measured spectra [src: Sect. 3.2]:
   of the perturbations. r* = ∫c_s dt = ∫dη/√(3(1 + 3ρ_b/4ρ_γ)).
 - **The Ω_m–h degeneracy and how it is broken.** With ω_b fixed to better
   than 1% by the relative peak heights, θ* constrains
-  Ω_m h³ = 0.09633 ± 0.00029 (68%, Planck 2018) [src: Eq. 6]. The orthogonal
+  Ω_m h³ = 0.09633 ± 0.00029 (68%, Planck 2018; arXiv:1807.06205) [src:
+  Sect. 3.2, Eq. 6]. The orthogonal
   direction is fixed by Ω_m h² through the damping scale and through the
   share of the potentials set by cold dark matter rather than by the
   baryon–photon fluid, which changes the relative peak heights.
 - **Tilt.** With the amplitude fixed at k₀ = 0.05 Mpc⁻¹, which projects
   near ℓ = 500, raising n_s adds power at ℓ > 500 and removes it below; over
-  three decades in wavenumber Planck finds n_s ≠ 1 at more than 8σ.
+  three decades in wavenumber Planck finds n_s ≠ 1 at more than 8σ
+  (arXiv:1807.06205) [src: Sect. 3.2].
 - **Reionisation.** Scattering suppresses power below the Hubble scale at
   reionisation (ℓ > 10) by e^(−2τ) and generates large-angle polarisation
-  with C_ℓ^EE ∝ τ²; Planck limits the reionisation redshift to < 9 (95%).
+  with C_ℓ^EE ∝ τ²; Planck limits the reionisation redshift to < 9 (95%)
+  (arXiv:1807.06205) [src: Sect. 3.2].
 - **Lensing** changes the primordial spectra slightly, invisibly by eye but
   included in the model; its treatment is in `physics-and-methods.md` §3.
 
@@ -300,7 +303,7 @@ Planck 2018 I lists eight assumptions of ΛCDM (A1–A8: universality of
 physics, GR, statistical homogeneity, a hot dense past, five constituents,
 small curvature, Gaussian adiabatic nearly scale-invariant initial
 fluctuations, trivial topology) and states which the CMB tests
-[src: Sects. 3.1 and 3.3]:
+(arXiv:1807.06205) [src: Sects. 3.1 and 3.3]:
 
 | Assumption | CMB evidence as stated | Place |
 |---|---|---|
@@ -312,7 +315,7 @@ fluctuations, trivial topology) and states which the CMB tests
 
 The base model fixes the radiation content to photons at T = 2.7260 K and
 neutrinos with N_eff = 3.046 and a single massive eigenstate of 0.06 eV,
-with Y_P from standard BBN [src: Sect. 3.2]; extensions that free these are
+with Y_P from standard BBN (arXiv:1807.06205) [src: Sect. 3.2]; extensions that free these are
 in `physics-and-methods.md` §7.
 Given the assumptions, the high-redshift ionisation history is computed to
 high accuracy, so only the constituents and the low-redshift ionisation
@@ -324,7 +327,8 @@ the calculation linear perturbation theory in a Boltzmann code
 <!-- key: what-spectra-do-not-constrain -->
 
 - **A_s and τ separately** at ℓ > 10: only A_s e^(−2τ) is measured there;
-  τ needs the large-angle E bump (§6; Planck 2018 I, Sect. 3.2).
+  τ needs the large-angle E bump (§6; Planck 2018 I, arXiv:1807.06205,
+  Sect. 3.2).
 - **Curvature and dark energy from the unlensed peaks**: the geometric
   degeneracy (§7). WMAP alone could not break it, and parameters moved to
   the Planck-preferred values once BAO were added [src: Planck 2018 I,

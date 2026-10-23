@@ -34,12 +34,12 @@ in thermodynamic (CMB) temperature units. Map depth is quoted in μK-arcmin,
 the noise rms in a pixel of one square arcminute. Polarisation depth is
 quoted separately and is larger than the temperature depth: the SPT-3G D1
 maps reach 5.4, 4.4 and 16.2 μK-arcmin in I at 95, 150 and 220 GHz and 8.4,
-6.6 and 25.8 μK-arcmin in Q/U [src] (Quan et al. 2026, arXiv:2603.20163).
+6.6 and 25.8 μK-arcmin in Q/U [src: abstract] (Quan et al. 2026, arXiv:2603.20163).
 
-The monopole is T₀ = 2.72548 ± 0.00057 K [src] (Fixsen 2009, arXiv:0911.1955).
-The dipole is dominated by the solar motion; the NPIPE estimate of its
-amplitude is 3366.6 ± 2.7 μK [src] (Planck Collaboration 2020,
-arXiv:2007.04997). The orbital and solar dipoles are the primary absolute
+The monopole is T₀ = 2.72548 ± 0.00057 K (Fixsen 2009, arXiv:0911.1955)
+[src: abstract]. The dipole is dominated by the solar motion; the NPIPE
+estimate of its amplitude is 3366.6 ± 2.7 μK (Planck Collaboration 2020,
+arXiv:2007.04997) [src: abstract]. The orbital and solar dipoles are the primary absolute
 calibrators of satellite data, and ground experiments inherit them by
 cross-calibrating against Planck maps on their own footprint (Louis et al.
 2025, arXiv:2503.14452; Camphuis et al. 2025, arXiv:2506.20707).
@@ -55,7 +55,7 @@ of new physics (birefringence, tensor modes): Komatsu 2022, arXiv:2202.13919.
 Base ΛCDM is sampled as {Ω_b h², Ω_c h², θ, n_s, ln(10¹⁰A_s), τ}. The angular
 acoustic scale is θ* = r*/D_M(z*), the ratio of the comoving sound horizon at
 last scattering to the comoving angular-diameter distance to it. Planck
-measures 100θ* = 1.0411 ± 0.0003, a 0.03% determination [src] (Planck
+measures 100θ* = 1.0411 ± 0.0003, a 0.03% determination [src: abstract] (Planck
 Collaboration 2018, arXiv:1807.06209). H₀, Ω_m and σ₈ are derived parameters
 and are model dependent.
 
@@ -79,11 +79,11 @@ between tables that use the same code definition.
 |---|---|---|
 | Peak positions | θ* | Geometric; the best measured quantity in cosmology (arXiv:1807.06209) |
 | Relative peak heights (odd/even, radiation driving) | Ω_b h², Ω_m h² | Break the H₀–Ω_m degeneracy along fixed θ* (arXiv:2503.14452, Sect. VIII.4) |
-| Damping tail (ℓ ≳ 1500) | Ω_b h², n_s, N_eff, Y_P | N_eff changes diffusion damping and induces a phase shift (arXiv:2503.14454) |
-| Overall amplitude at ℓ ≳ 30 | A_s e^(−2τ) | Reionisation scattering suppresses sub-horizon power by e^(−2τ) |
-| Reionisation bump in EE at ℓ ≲ 20 | τ | Amplitude ∝ τ²; only full-sky experiments reach it |
+| Damping tail (smallest scales) | Ω_b h², n_s, N_eff, Y_P | N_eff changes diffusion damping and induces a phase shift (arXiv:2503.14454) |
+| Overall amplitude (all but the largest scales) | A_s e^(−2τ) | Reionisation scattering suppresses sub-horizon power by e^(−2τ) |
+| Reionisation bump in EE at the largest scales | τ | Amplitude ∝ τ²; only full-sky experiments reach it |
 | Smoothing of peaks, transfer of power to the tail | lensing potential amplitude (A_s, Ω_m, Σm_ν) | The "two-point" lensing signature |
-| Reconstructed C_L^φφ | σ₈ Ω_m^0.25 | The "four-point" lensing signature |
+| Reconstructed C_L^φφ | σ₈ Ω_m^0.25 | The "four-point" lensing signature (arXiv:1807.06210) [src: abstract] |
 | Tilt across the whole range | n_s | Needs lever arm; degenerate with Ω_b h² on restricted ranges |
 
 Foundations of the table [src, abstracts]. The peaks are driven acoustic
@@ -113,7 +113,8 @@ Points worth holding precisely, all from the ACT DR6 paper (Louis et al.
   two are positively correlated (higher Ω_b lowers the second-to-first peak
   ratio, which a redder tilt compensates). In the damping tail both damp
   power, so they are anti-correlated. Combining the two ranges breaks the
-  degeneracy; P-ACT reaches 0.4% on each.
+  degeneracy; P-ACT reaches 0.4% on each (arXiv:2503.14452) [src:
+  Sect. VIII.3].
 - With EE alone on ACT scales, the polarisation efficiency is nearly
   degenerate with Ω_c h²: freeing it in [0.9, 1.1] roughly doubles
   σ(Ω_c h²) and σ(H₀). The mechanism is radiation driving, whose amplitude
@@ -129,7 +130,7 @@ Large-scale structure between us and last scattering deflects photons by
 the gradient of the lensing potential φ(n), an integral of the Weyl potential
 along the line of sight. The observed fields are remapped,
 X̃(n) = X(n + ∇φ). ACT describes the lensing kernel as covering z ~ 0.5–5
-[src] (Qu et al. 2023, arXiv:2304.05202). The convergence is κ = −∇²φ/2 and
+(Qu et al. 2023, arXiv:2304.05202) [src: abstract]. The convergence is κ = −∇²φ/2 and
 its spectrum is C_L^κκ = [L(L+1)]² C_L^φφ / 4. Capital L is reserved for
 lensing multipoles.
 
@@ -138,9 +139,10 @@ adds power in the damping tail of TT, TE and EE; it converts E into B; and
 it correlates modes of different ℓ, which is what reconstruction exploits.
 The first two were computed in the power-spectrum approach by Seljak 1995
 (arXiv:astro-ph/9505109): lensing redistributes power and smooths sharp
-features [src]. For polarisation the smoothing is larger because the peaks
-are narrower, up to 10% at ℓ < 1000, and lensing generates B modes from
-pure E (Zaldarriaga & Seljak 1998, arXiv:astro-ph/9803150) [src].
+features [src: abstract]. For polarisation the smoothing is larger because
+the peaks are narrower, up to 10% at ℓ < 1000, and lensing generates B
+modes from pure E (Zaldarriaga & Seljak 1998, arXiv:astro-ph/9803150)
+[src: abstract].
 
 ### Quadratic estimators
 <!-- key: quadratic-estimators -->
@@ -172,7 +174,8 @@ arXiv:1807.06210, Sect. 2.1].
 N⁰ is the disconnected (Gaussian) term, N¹ the connected term proportional
 to C^φφ itself, and the mean field is the response to the mask and to
 anisotropic noise. The ACT DR6 pipeline is the current reference
-implementation [src] (Qu et al. 2023, arXiv:2304.05202): the night-time
+implementation (Qu et al. 2023, arXiv:2304.05202) [src: Sects. V.11 and
+VI.1, Fig. 1 caption, for the numbers below]: the night-time
 data are split into eight subsets with independent noise and the four-point
 estimator uses only cross-correlations between splits, so that it "is immune
 to noise bias" and noise simulations are needed only for the covariance; N⁰
@@ -182,9 +185,10 @@ uses 792 simulations with a Hartlap correction; the baseline range
 40 < L < 763 was fixed before unblinding and an extended range 40 < L < 1300
 gives a consistent amplitude.
 
-Reconstruction pipelines as run, read in the method sections:
+Reconstruction pipelines as run, read in the method sections of
+arXiv:2304.05202, arXiv:2304.05196, arXiv:1807.06210 and arXiv:2608.31136:
 
-| Step | ACT DR6 (arXiv:2304.05202, 2304.05196) | Planck 2018 (arXiv:1807.06210) | SPT-3G D1 (arXiv:2608.31136) |
+| Step | ACT DR6 (arXiv:2304.05202, arXiv:2304.05196) | Planck 2018 (arXiv:1807.06210) | SPT-3G D1 (arXiv:2608.31136) |
 |---|---|---|---|
 | Input and filter | inverse-variance coadd of f090, f150; diagonal harmonic filter with C_l^tot = C_l^cmb + N_l^coadd [src: 2304.05196, Sect. V.1] | Wiener filter X^WF = C^fid 𝒯† Cov⁻¹ X^dat, Cov = 𝒯 C^fid 𝒯† + N, diagonal pixel noise, conjugate gradient; T and P filtered separately (+3% noise at L ≤ 400); 100 ≤ ℓ ≤ 2048 [src: Sect. 2.1, Eqs. 1–2] | C⁻¹-filtered maps; GMV is the baseline [src: Sect. V.3.3] |
 | Estimator | cross-split estimator, profile-hardened MV [src: 2304.05196, Sect. V.1] | Carron & Lewis 2017 spin-1 displacement, split into gradient and curl; T-only, P-only, MV rather than the five Okamoto–Hu pairs; lensed fiducial spectra make it nearly unbiased non-perturbatively [src: Sect. 2.1, Eqs. 3–6] | GMV, with profile-hardened, cross-ILC and tSZ-deprojected variants as checks [src: Sect. V.3.3] |
@@ -206,9 +210,9 @@ Range of validity. Quadratic estimators are close to optimal when the
 lensing B-mode power is below the noise; for deep polarisation maps they
 lose information, and Carron & Lewis 2017 forecast a factor ≃2 improvement
 on σ(r) from delensing with the optimal map in a Stage-4 configuration
-(forecast) [src] (arXiv:1704.08230). The SPT-3G D1 reconstruction is
-dominated by polarisation information at L ≲ 600 [src]
-(arXiv:2608.31136).
+(forecast) (arXiv:1704.08230) [src: abstract]. The SPT-3G D1
+reconstruction is dominated by polarisation information at L ≲ 600
+(arXiv:2608.31136) [src: abstract].
 
 ### Three lensing amplitudes that must not be confused
 <!-- key: three-lensing-amplitudes-that-must-not-be -->
@@ -236,7 +240,7 @@ latest reprocessings, with explicit templates for instrumental effects:
 SRoll2 fits the non-linearity of the HFI analogue-to-digital converters and
 polarisation efficiencies from data redundancy (Delouis et al. 2019,
 arXiv:1901.11386); NPIPE processes LFI and HFI jointly and delivers 600
-end-to-end simulations [src] (arXiv:2007.04997).
+end-to-end simulations (arXiv:2007.04997) [src: abstract].
 
 Ground pipelines differ in how they treat atmosphere and ground pickup.
 
@@ -279,12 +283,12 @@ Ranges actually used in the 2025 likelihoods [src]:
 
 | Data set | TT | TE, EE | Sky used | Source |
 |---|---|---|---|---|
-| ACT DR6 | ℓ_min 600–1000 by array-band, ℓ_max 8500 | same ℓ_min after unblinding (500 before) | 10,000 deg² of 19,000 deg² mapped | arXiv:2503.14452 |
-| SPT-3G D1 | 400–3000 | 400–4000 | 4% of the sky | arXiv:2506.20707 |
-| Planck in P-ACT | ℓ < 1000 | ℓ < 600 | PR3 likelihood masks | arXiv:2503.14452 |
+| ACT DR6 | ℓ_min 600–1000 by array-band, ℓ_max 8500 | same ℓ_min after unblinding (500 before) | 10,000 deg² of 19,000 deg² mapped | arXiv:2503.14452 [src: Sect. III.1, Table 1; abstract] |
+| SPT-3G D1 | 400–3000 | 400–4000 | 4% of the sky | arXiv:2506.20707 [src: Sect. IV.4, Fig. 1 caption; abstract] |
+| Planck in P-ACT | ℓ < 1000 | ℓ < 600 | PR3 likelihood masks | arXiv:2503.14452 [src: Sect. VIII.3] |
 | Planck 2018 Plik | 30–1197 (100), 30–1996 (143), 30–2508 (143×217, 217); no 100×143, 100×217 | 30–999 with 100 GHz, 505–999 or 505–1996 with 217 GHz, 30–1996 (143) [src: Table 13] | half-mission cross-spectra | arXiv:1907.12875, Sect. 3.2.4 |
 | Planck PR4 HiLLiPoP | 30–1500 with 100 GHz (250–1500 for 100×217), 50–2000 (143), 250–2500 (143×217, 217) | TE 30–2000, EE 30–2000 (EE 100×100: 100–1200) [src: Table 1] | up to 75%; 29 758 multipoles | arXiv:2309.10034, Sect. 3.2.3 |
-| Planck CamSpec (2019 reanalysis) | — | — | 80% | arXiv:1910.00483 |
+| Planck CamSpec (2019 reanalysis) | — | — | 80% | arXiv:1910.00483 [src: abstract] |
 
 ## 5. Foregrounds and component separation
 <!-- key: foregrounds-and-component-separation -->
@@ -301,7 +305,7 @@ goes back to the nine-parameter ACT model of Dunkley et al. 2013
 | Likelihood | Nuisance parameters | Source |
 |---|---|---|
 | ACT DR6 MFLike | 14 foreground, 10 calibration, 5 bandpass shift | arXiv:2503.14452, App. G |
-| SPT-3G D1 multi-frequency | 43 in total; 2 in the compressed SPT-lite | arXiv:2506.20707 |
+| SPT-3G D1 multi-frequency | 43 in total; 2 in the compressed SPT-lite | arXiv:2506.20707, Sects. V.1 and V.4 |
 | Planck PR4 HiLLiPoP | 6 inter-calibrations, 7 temperature foreground amplitudes, 1 in polarisation, 3 spectral indices | arXiv:2309.10034 |
 
 Map-level component separation is used for lensing inputs, for Compton-y
@@ -309,7 +313,7 @@ and CIB maps, for low-ℓ polarisation and for B-mode searches. Planck 2018
 used Commander, NILC, SEVEM and SMICA for the CMB and Commander, GNILC and
 SMICA for the astrophysical components, and measured mean polarised
 spectral indices β_d = 1.55 ± 0.05 for dust and β_s = −3.1 ± 0.1 for
-synchrotron [src] (Planck Collaboration 2018, arXiv:1807.06208). The four
+synchrotron (Planck Collaboration 2018, arXiv:1807.06208) [src: abstract]. The four
 pipelines descend from four method papers [src, abstracts]: a blind
 internal linear combination by harmonic band (Tegmark et al. 2003,
 arXiv:astro-ph/0302496); SMICA, spectral matching of a multi-component
@@ -353,7 +357,7 @@ covariance; it expects χ² with mean n_ℓ − n_p and variance 2(n_ℓ − n_p
 The covariance is semi-analytic, corrected with simulations. Camphuis et al.
 2022 (arXiv:2204.13721) give the exact calculation for small footprints and
 find that earlier fast approximations are accurate to about 5% on the SPT-3G
-footprint for wide bins, their improved approximation to 1% [src]. Atkins et
+footprint for wide bins, their improved approximation to 1% [src: abstract]. Atkins et
 al. 2024 (arXiv:2412.07068) find their analytic ACT DR6 prescription within
 3% of Monte Carlo, against about 16% for the simpler earlier prescription,
 and 1% after a simulation-based correction [src].
@@ -367,9 +371,10 @@ Covariance construction as run:
 | SPT-3G D1 | semi-analytic covariance of the pseudo-spectra with mask-coupling kernels of the border-only apodised mask, debiased like the spectra; signal at the best fit; isotropic noise, no anisotropic correction | [src: arXiv:2506.20707, Sect. IV.6, Eqs. 31–33] |
 | SPT-3G D1 model operators | super-sample lensing [S(κ)C]_ℓ = C_ℓ − (∂ℓ²C_ℓ/∂ln ℓ) κ/ℓ², κ ~ N(0, 0.00045); aberration [A C]_ℓ = C_ℓ − β_ab ℓ ∂C_ℓ/∂ℓ, β_ab = −0.0004826, CMB only; nine beam eigenmodes; polarised-beam ratio B^T/B^P(β_pol); quadrupolar leakage. Beam errors are parameters here and covariance terms in ACT; Planck 2018 ignores beam-determination uncertainty [src: arXiv:1907.12875, Sect. 3.3.5] | [src: Sect. V.2.1, Eqs. 41–45] |
 
-Low ℓ. At ℓ < 30 the likelihood is non-Gaussian and noise is correlated.
-Planck 2018 uses a simulation-based EE likelihood built on the 100×143 GHz
-cross-spectrum, labelled "lowE" (arXiv:1907.12875, arXiv:1807.06209). Alternatives tested on SRoll2 maps
+Low ℓ. At the lowest multipoles the likelihood is non-Gaussian and noise is
+correlated. Planck 2018 uses a simulation-based EE likelihood built on the
+100×143 GHz cross-spectrum, labelled "lowE" (arXiv:1907.12875, [src:
+abstract]; arXiv:1807.06209). Alternatives tested on SRoll2 maps
 include a maximum-entropy approximation (momento) and a density-estimation
 scheme (de Belsunce et al. 2021, arXiv:2103.14378). The analytic form for
 correlated T and E on a cut sky is Hamimeche & Lewis 2008 (arXiv:0801.0554).
@@ -392,35 +397,36 @@ takes it from Planck large-scale polarisation, in one of three ways [src]:
 | Analysis | τ information | Source |
 |---|---|---|
 | ACT DR6 "ACT", "P-ACT", "W-ACT" | SRoll2 low-ℓ EE likelihood; equivalent prior τ = 0.0566 ± 0.0058 | arXiv:2503.14452, Sect. VI.3 |
-| SPT-3G D1, "SPT+ACT", "CMB-SPA" | Gaussian prior from the PR4 analysis (NPIPE gives 0.051 ± 0.006) | arXiv:2506.20707, arXiv:2007.04997 |
+| SPT-3G D1, "SPT+ACT", "CMB-SPA" | Gaussian prior from the PR4 analysis (NPIPE gives 0.051 ± 0.006) | arXiv:2506.20707, arXiv:2007.04997 [src: abstract] |
 | Planck 2018 baseline | simulation-based low-ℓ EE likelihood ("lowE") | arXiv:1907.12875 |
 | Planck PR4 (Tristram et al.) | LoLLiPoP | arXiv:2309.10034 |
 
 This is a shared dependence: Sailer et al. 2025 (arXiv:2504.16932) call it a
 "single-point failure" for analyses that include CMB data. It also means
-that ln(10¹⁰A_s) from different papers differs partly because the τ input
+that A_s from different papers differs partly because the τ input
 differs.
 
 Lensing likelihoods are Gaussian in the C_L^φφ band powers with
 perturbative corrections for the dependence of the band powers on
 cosmology; Planck 2018 uses the conservative range 8 ≤ L ≤ 400 and neglects
-the correlation between the two- and four-point functions [src]
-(arXiv:1807.06209, arXiv:1807.06210).
+the correlation between the two- and four-point functions
+(arXiv:1807.06209, arXiv:1807.06210) [src: abstract of arXiv:1807.06210,
+for the range].
 
 Samplers and theory. Cobaya (Torrado & Lewis 2020, arXiv:2005.05290) is the
 common sampler front end. Theory spectra come from CAMB (Lewis et al. 1999,
 arXiv:astro-ph/9911177) or CLASS (Blas et al. 2011, arXiv:1104.2933), with
 recombination from HyRec (Ali-Haïmoud & Hirata 2010, arXiv:1011.3758) or an
 equivalent code. Emulators replace the Boltzmann code inside chains:
-CosmoPower (Spurio Mancini et al. 2021, arXiv:2106.03846) runs about 10⁵
-times faster than CAMB or CLASS according to the SPT-3G D1 paper [sec]
-(arXiv:2506.20707). SPT analyses use candl, a JAX-based differentiable
+CosmoPower (Spurio Mancini et al. 2021, arXiv:2106.03846) replaces the
+Boltzmann code in parts of the SPT-3G D1 validation (arXiv:2506.20707,
+Sect. V.5). SPT analyses use candl, a JAX-based differentiable
 likelihood (Balkenhol et al. 2024, arXiv:2401.13433).
 
 Accuracy settings matter at DR6/D1 precision. ACT DR6 states that non-linear
 corrections to the lensing potential are non-negligible even in the primary
 spectra and adopts the dark-matter-only HMcode model rather than Halofit
-[src] (arXiv:2503.14454). McCarthy et al. 2021 (arXiv:2103.05582) show that
+(arXiv:2503.14454). McCarthy et al. 2021 (arXiv:2103.05582) [src: abstract] show that
 mis-modelling C_L^κκ can bias H₀ by up to 1.6σ and N_eff by 1.2σ for a
 CMB-S4-like survey (forecast) and that default Boltzmann precision settings
 are insufficient [src]. SPT-3G D1 uses the ACT DR6 accuracy settings [src].
@@ -441,9 +447,10 @@ are insufficient [src]. SPT-3G D1 uses the ACT DR6 accuracy settings [src].
   acoustic oscillations (Bashinsky & Seljak 2003, arXiv:astro-ph/0310198),
   first detected in the CMB temperature spectrum by Follin et al. 2015
   (arXiv:1503.07863).
-- Σm_ν: base ΛCDM fixes one massive eigenstate with 0.06 eV. When the mass
-  is varied, Planck, ACT and DESI use three degenerate states
-  (arXiv:2503.14454, arXiv:2503.14744). Limits are 95% one-sided and depend
+- Σm_ν: base ΛCDM fixes one massive eigenstate with 0.06 eV
+  (arXiv:2503.14454) [src: Sect. VI.1.1]. When the mass is varied, Planck,
+  ACT and DESI use three degenerate states (arXiv:2503.14454,
+  arXiv:2503.14744 [src: abstract]). Limits are 95% one-sided and depend
   on the prior boundary at zero.
 - Ω_K < 0 is a closed universe. A_L, A_2pt and A_recon: see Section 3.
 
@@ -499,14 +506,15 @@ prevented post-unblinding changes; both must be reported together.
 - Name of the combined data set. "P-ACT" is ACT DR6 plus Planck cut at
   ℓ < 1000 (TT) and ℓ < 600 (TE, EE). "CMB-SPA" is SPT-3G D1 + ACT DR6 +
   Planck, each with lensing. They are different objects; P-ACT-LB adds
-  lensing and DESI DR1 BAO, P-ACT-LB2 uses DESI DR2 [src] (arXiv:2503.14452,
-  arXiv:2506.20707).
+  lensing and DESI DR1 BAO, P-ACT-LB2 uses DESI DR2 (arXiv:2503.14452,
+  arXiv:2506.20707) [src: Sect. VIII.3 of arXiv:2503.14452].
 - S₈ versus the lensing combination. Lensing papers define
   S₈^CMBL ≡ σ₈(Ω_m/0.3)^0.25 (arXiv:2304.05202) or quote σ₈Ω_m^0.25
-  (arXiv:1807.06210, arXiv:2608.31136). Neither is the galaxy-lensing
-  S₈ = σ₈(Ω_m/0.3)^0.5.
+  (arXiv:1807.06210, arXiv:2608.31136) [src: abstract]. Neither is the
+  galaxy-lensing S₈ = σ₈(Ω_m/0.3)^0.5.
 - Frequency labels. ACT f090/f150/f220 are centred on 98, 150, 220 GHz
-  (arXiv:2503.14451); SPT-3G bands are 95, 150, 220 GHz (arXiv:2603.20163).
+  (arXiv:2503.14451); SPT-3G bands are 95, 150, 220 GHz (arXiv:2603.20163)
+  [src: abstract].
 
 ## Not verified
 <!-- key: not-verified -->

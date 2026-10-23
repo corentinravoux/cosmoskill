@@ -38,7 +38,7 @@ A "Gaussian difference" below is n = |a − b| / sqrt(σ_a² + σ_b²) with asym
 | Side | Value | Data | Citation | Flag |
 |---|---|---|---|---|
 | Local | 73.50 ± 0.81 | H0 Distance Network baseline (Gaia, DEBs, NGC 4258; Cepheids + TRGB; SN Ia, SBF, masers) | H0DN Collaboration 2025, arXiv:2510.23823 | [src: Eq. 1, Sect. IV] |
-| Local | 73.18 ± 0.88 | SH0ES: HST + JWST Cepheids + 35 TRGB calibrations, 55 SN Ia calibrators; "∼6σ above the ΛCDM + CMB expectation" | Riess et al. 2025, arXiv:2509.01667 | [src] |
+| Local | 73.18 ± 0.88 | SH0ES: HST + JWST Cepheids + 35 TRGB calibrations, 55 SN Ia calibrators; "∼6σ above the ΛCDM + CMB expectation" | Riess et al. 2025, arXiv:2509.01667 | [src: abstract] |
 | Local | 73.04 ± 1.04 | SH0ES HST-only baseline, 42 calibrators | Riess et al. 2022, arXiv:2112.04510 | [sec: h0] |
 | Local | 70.39 ± 1.22 (stat) ± 1.33 (sys) ± 0.70 (σ_SN); total 1.94 [der, quadrature] | CCHP TRGB, 24 SN Ia calibrators, anchor NGC 4258 | Freedman et al. 2024, arXiv:2408.06153 | [src: Sect. I, Fig. 1] for the value; [sec: h0] for the sample |
 | Local, one-step | 71.6 (+3.9/−3.3) | TDCOSMO-2025, 8 lensed quasars, mass-sheet degeneracy free | TDCOSMO Collaboration 2025, arXiv:2506.03023 | [sec: h0] |
@@ -161,10 +161,10 @@ Model: ΛCDM + A_L, one parameter; "distance from 1" is (A_L − 1)/σ unless th
 
 | Value | Data | Distance from 1 | Citation | Flag |
 |---|---|---|---|---|
-| 1.180 ± 0.065 | Planck PR3 Plik TT,TE,EE + lowE | 2.7σ (paper) | arXiv:1807.06209 | [src] |
+| 1.180 ± 0.065 | Planck PR3 Plik TT,TE,EE + lowE | 2.7σ (paper) | arXiv:1807.06209 | [src: Sect. 2.2.1] |
 | 1.185 ± 0.067 (A_2pt, T and E, no φφ) | Planck PR3, SPT rerun | 2.8σ [der] | arXiv:2506.20707 | [src: Sect. VII.2.3] |
 | 1.095 ± 0.056 | Planck PR4 CamSpec | 1.7σ (as quoted by ACT) | arXiv:2503.14452 | [src: Sect. VIII.5] |
-| 1.039 ± 0.052 | Planck PR4 HiLLiPoP | 0.75σ (as quoted by ACT) | arXiv:2309.10034 | [src] |
+| 1.039 ± 0.052 | Planck PR4 HiLLiPoP | 0.75σ (as quoted by ACT) | arXiv:2309.10034 | [src: Sect. 11.1] |
 | 1.007 ± 0.057 | ACT DR6 | 0.1σ [der] | arXiv:2503.14452 | [src: Sect. VIII.5] |
 | 1.081 ± 0.043 | P-ACT | 1.9σ [der] | arXiv:2503.14452 | [src: Sect. VIII.5] |
 | A_2pt = 0.991 (+0.083/−0.10) (T and E); A_lens = 0.972 (+0.079/−0.089) with A_2pt = A_recon | SPT-3G D1 | 0.1σ, 0.3σ below [der] | arXiv:2506.20707 | [src: Sect. VII.2.3, Eq. 67] |
@@ -190,7 +190,7 @@ Rows without a place [sec: cmb, `results.md` §5 and `open-questions.md` §1].
 | 0.053 (+0.018/−0.019) | CLASS 90 GHz × Planck, ground-based | Li et al. 2025; ID and detail in `cosmo-cmb` `results.md` §5 |
 | 0.090 ± 0.012 | DESI BAO + high-ℓ CMB + CMB lensing, no low-ℓ EE | Sailer et al. 2025, arXiv:2504.16932 |
 | 0.091 ± 0.011 | CMB without low-ℓ EE and lensing constraints, Σm_ν = 0.06 eV | Jhaveri et al. 2025, arXiv:2504.21813 |
-| 0.0552 (+0.0019/−0.0026 stat) (+0.0075/−0.0049 sys) | Planck without low-ℓ EE + reionisation history from Lyα forest and damping wings; leaves 2.4σ with DESI DR2 BAO | Kageura et al. 2026, arXiv:2601.09644 [src] |
+| 0.0552 (+0.0019/−0.0026 stat) (+0.0075/−0.0049 sys) | Planck without low-ℓ EE + reionisation history from Lyα forest and damping wings; leaves 2.4σ with DESI DR2 BAO | Kageura et al. 2026, arXiv:2601.09644 [src: abstract] |
 
 Size: the BAO-preferred value is in "≃ 3–5σ tension with Planck low-ℓ polarization data when taken at face value": about 5σ at face value, about 3.8σ "when accounting for the prior width", one parameter (arXiv:2504.16932) [src: abstract, note 72]; against PR4, (0.090 − 0.058) / sqrt(0.012² + 0.006²) = 2.4σ [der]. Every Planck reprocessing from 2018 to 2023 lies in 0.051–0.063 [sec: cmb], with uncertainties from 0.005 to 0.009 depending on the likelihood and data combination (0.0086 for lowE alone, 0.0073 with TT,TE,EE and lensing, 0.006 for PR4) [src: Eq. 2 and Table 2 of arXiv:1807.06209; Eq. 14 of arXiv:2309.10034]. The τ question is not an anomaly in a measurement; it is the statement that one parameter, measured by one instrument, would absorb the CMB–BAO mismatch if it were wrong by about 0.03.
 
@@ -322,8 +322,8 @@ The review by the discovering group states that the discrepancy "now exceeds 5σ
 
 | Result | Data | Citation | Flag |
 |---|---|---|---|
-| 384 ± 78 (stat) ± 115 (syst) km/s along (l, b) = (264°, 48°), from aberration and modulation of the CMB anisotropies | Planck 2013 | arXiv:1303.5087 | [src] |
-| v = 357.95 (+55.05/−48.47) km/s from the redshift dipole of quasars, against 369.82 ± 0.11 km/s from the CMB; the number-count dipole of the same catalogues is "significantly enhanced", attributed by the authors to leakage of large-scale power and footprint incompleteness | DESI DR1 BGS, LRG, ELG, QSO, 0.1 < z < 2.1; 1,000 EZmocks | Wu & Xia 2026, arXiv:2608.30914 | [src] |
+| 384 ± 78 (stat) ± 115 (syst) km/s along (l, b) = (264°, 48°), from aberration and modulation of the CMB anisotropies | Planck 2013 | arXiv:1303.5087 | [src: abstract] |
+| v = 357.95 (+55.05/−48.47) km/s from the redshift dipole of quasars, against 369.82 ± 0.11 km/s from the CMB; the number-count dipole of the same catalogues is "significantly enhanced", attributed by the authors to leakage of large-scale power and footprint incompleteness | DESI DR1 BGS, LRG, ELG, QSO, 0.1 < z < 2.1; 1,000 EZmocks | Wu & Xia 2026, arXiv:2608.30914 | [src: abstract] |
 | Upper limits on the bulk flow at 200–2000 h⁻¹Mpc consistent with ΛCDM, in "strong tension" with a ~370 km/s flow at R ~ 1000 h⁻¹Mpc | kSZ velocity reconstruction, Planck × WISE×SuperCOSMOS and unWISE | arXiv:2605.12499 | [sec: pv] |
 
 ### 7.3 Supernova dipole
@@ -347,8 +347,8 @@ Rows without a place [sec: pv, `results.md` §3]. A bulk flow is defined only wi
 |---|---|---|---|
 | CF4, minimum variance, top-hat, 150 h⁻¹Mpc | 387 ± 28 | expectation 139; χ² = 19.34 for 3 degrees of freedom, probability 0.023% [src: Sect. 7, Table 1] | Watkins et al. 2023, arXiv:2302.02028 |
 | CF4, same, 200 h⁻¹Mpc | 419 ± 36 | expectation 120; χ² = 29.13, probability 0.00021% (table), "less than 0.003%" (abstract); "does not quite reach 5σ" in the authors' words [src: Sect. 7, 8] | arXiv:2302.02028 |
-| CF4, minimum variance, mock-calibrated errors, 173 h⁻¹Mpc | 428 ± 108 | probability 0.11% "of obtaining a larger χ²"; with the maximum-likelihood estimator 408 ± 165 at 49 h⁻¹Mpc, "in reasonable agreement" [src] | Whitford, Howlett & Davis 2023, arXiv:2306.11269 |
-| CF4, monopole + dipole in six radial bins to 300 h⁻¹Mpc | 628 ± 82 in the 120–160 h⁻¹Mpc bin | ΛCDM prediction for the actual positions and weights; full range 2.29σ (dipole), 2.36σ (joint), four bins to 160 h⁻¹Mpc 2.34σ and 2.42σ [src]; peak bin 3.40σ, 1.56σ without 6dFGS, 3.77σ without SNe; the SN and 6dFGS dipoles are "mutually consistent in a covariance-aware comparison" [src] | Nusser & Tully 2026, arXiv:2608.14265 |
+| CF4, minimum variance, mock-calibrated errors, 173 h⁻¹Mpc | 428 ± 108 | probability 0.11% "of obtaining a larger χ²"; with the maximum-likelihood estimator 408 ± 165 at 49 h⁻¹Mpc, "in reasonable agreement" [src: abstract] | Whitford, Howlett & Davis 2023, arXiv:2306.11269 |
+| CF4, monopole + dipole in six radial bins to 300 h⁻¹Mpc | 628 ± 82 in the 120–160 h⁻¹Mpc bin | ΛCDM prediction for the actual positions and weights; full range 2.29σ (dipole), 2.36σ (joint), four bins to 160 h⁻¹Mpc 2.34σ and 2.42σ [src: abstract]; peak bin 3.40σ, 1.56σ without 6dFGS, 3.77σ without SNe; the SN and 6dFGS dipoles are "mutually consistent in a covariance-aware comparison" [src] | Nusser & Tully 2026, arXiv:2608.14265 |
 | CF4 TF, 2MTF, SFI++, Pantheon+ at z < 0.05, forward model | bulk-flow curve | "fully consistent with expectations from the standard cosmological model" | Stiskalek, Desmond & Lavaux 2025, arXiv:2509.14997 |
 | kSZ velocity reconstruction, 200–2000 h⁻¹Mpc | upper limits | consistent with ΛCDM; "strong tension" with reading the CatWISE quasar dipole as a ~370 km/s flow at R ~ 1000 h⁻¹Mpc | Gandhi et al. 2026, arXiv:2605.12499 |
 

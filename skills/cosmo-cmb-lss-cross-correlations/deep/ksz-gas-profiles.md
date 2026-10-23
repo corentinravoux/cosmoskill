@@ -59,19 +59,21 @@ needs none but measures the square of the signal.
 Other data and estimators, one line each [src: abstracts unless stated]:
 - **Pairwise, SPT-SZ × DES Y1 clusters** (Soergel et al. 2016,
   arXiv:1603.03904): 4.2σ, the first pairwise detection with photometric
-  redshifts; τ̄_e = (3.75 ± 0.89) × 10⁻³.
+  redshifts; τ̄_e = (3.75 ± 0.89) × 10⁻³. [src: abstract]
 - **Pairwise, SPT-3G × DES Y3 clusters** (Schiappucci et al. 2023,
   arXiv:2207.11937): 4.1σ with 24,580 clusters on ~1400 deg²;
   τ̄_e = (2.97 ± 0.73) × 10⁻³ from kSZ against (2.51 ± 0.55 ± 0.15) × 10⁻³
-  from tSZ, 0.6σ apart.
+  from tSZ, 0.6σ apart [src: abstract].
 - **Pairwise, ACT DR5/DR4 × SDSS DR15** (Calafut et al. 2021,
   arXiv:2101.08374): 5.4σ with 343,647 LRGs, mass-averaged τ̄ per
-  luminosity bin; the tSZ companion paper (below) compares the two.
-- **Pairwise, Planck** × BOSS (Li et al. 2018, arXiv:1710.10876): τ̄ at
-  0.5–1.7σ per sample, best with a 7′ aperture; × DESI imaging groups (Chen
+  luminosity bin; the tSZ companion paper (below) compares the two. [src: abstract]
+- **Pairwise, Planck** × BOSS (Li et al. 2018, arXiv:1710.10876): τ̄ =
+  (0.53 ± 0.32) × 10⁻⁴ (1.65σ, LowZ North central galaxies), (0.30 ± 0.57)
+  × 10⁻⁴ (0.53σ, LowZ South) and (0.43 ± 0.28) × 10⁻⁴ (1.53σ, DR13 groups),
+  best with a 7′ aperture [src: abstract]; × DESI imaging groups (Chen
   et al. 2022, arXiv:2109.04092): 5σ with 1.2 × 10⁵ clusters and a
   maximum-likelihood estimator, group masses gaining ~10%,
-  τ̄_e = (1.66 ± 0.35) × 10⁻⁴.
+  τ̄_e = (1.66 ± 0.35) × 10⁻⁴ [src: abstract].
 - **Joint pairwise kSZ and galaxy clustering, ACT DR6 × CMASS** (Li &
   Zheng 2026, arXiv:2605.01963, Sect. III.3): the kSZ dipole fitted with
   the galaxy multipoles breaks the τ̄–b_1 degeneracy; a τ̄ profile versus
@@ -82,9 +84,9 @@ Other data and estimators, one line each [src: abstracts unless stated]:
   cancellation [src: Sect. 1].
 - **Projected field, first** (Hill et al. 2016, arXiv:1603.01608):
   Planck + WMAP × WISE, 3.8–4.5σ, (f_b/0.158)(f_free/1.0) = 1.48 ± 0.19
-  (statistical only) at z ≈ 0.4.
+  (statistical only) at z ≈ 0.4. [src: abstract]
 - **FRB dispersion measure × galaxies** (McCarty et al. 2026,
-  arXiv:2608.11296): 130 localised FRBs × DESI Legacy BGS, 6.5σ.
+  arXiv:2608.11296): 130 localised FRBs × DESI Legacy BGS, 6.5σ. [src: abstract]
 
 ### Step 2. Forward-model the filtered signal
 <!-- key: step-2-forward-model-the-filtered-signal -->
@@ -299,10 +301,10 @@ arXiv:1603.01608]. Its original model is an approximation valid at small
 scales; an improved model differs in a scale-dependent way that matters
 at the S/N > 100 forecast for SO or CMB-S4 × WISE or Rubin, and a Planck
 prior leaves ~7% uncertainty on the amplitude (Patki et al. 2023,
-arXiv:2306.03127) [src]. The class_sz halo model agrees with Websky at
+arXiv:2306.03127) [src: abstract]. The class_sz halo model agrees with Websky at
 Planck sensitivity but differs by ≈ 20% for SO, consistent with the terms
 of other contractions it omits (Rodriguez et al. 2025, arXiv:2509.03458)
-[src].
+[src: abstract].
 
 ## Choices and what they cost
 <!-- key: choices-and-what-they-cost -->
@@ -392,9 +394,9 @@ stated]:
   Websky flattens faster than the data [src: arXiv:2605.01963,
   Sect. IV.1.2].
 - **kSZ against tSZ on the same clusters.** SPT-3G × DES: τ̄ agree at
-  0.6σ [src: arXiv:2207.11937]; ACT × SDSS DR15: within 1σ in two of three
+  0.6σ [src: arXiv:2207.11937, abstract]; ACT × SDSS DR15: within 1σ in two of three
   luminosity bins, 2–3σ apart in the brightest, τ̄ accounting for one
-  third to all of the predicted baryons [src: arXiv:2101.08373].
+  third to all of the predicted baryons [src: arXiv:2101.08373, abstract].
 - **FRBs.** The FRB DM × galaxy signal disfavours gas tracing dark matter
   (no feedback) at ~9σ and shows "good agreement" with recent kSZ studies;
   a first joint fit uses FRBs to break the kSZ optical-depth degeneracy
@@ -442,7 +444,7 @@ Sect. 5.3].
 | Projected-field bins | 13 × Δℓ = 200, ℓ = 300–2900 | Planck × unWISE | arXiv:2102.01068 | Sect. IV.2 |
 | Projected-field per-sample significance | 1.4σ, 5.0σ, 2.5σ (blue, green, red) | same | arXiv:2102.01068 | Fig. 5 caption |
 | Non-linear velocity terms | each up to ≈ 50%; net 10–20% | simulations | arXiv:2607.23339 | Table 1 caption |
-| Pairwise τ̄_e (SPT) | (3.75 ± 0.89) × 10⁻³ (SPT-SZ × DES Y1); (2.97 ± 0.73) × 10⁻³ kSZ, (2.51 ± 0.55 ± 0.15) × 10⁻³ tSZ (SPT-3G × DES Y3) | SPT × DES | arXiv:1603.03904; arXiv:2207.11937 | abstracts |
+| Pairwise τ̄_e (SPT) | (3.75 ± 0.89) × 10⁻³ (SPT-SZ × DES Y1); (2.97 ± 0.73) × 10⁻³ kSZ, (2.51 ± 0.55 ± 0.15) × 10⁻³ tSZ (SPT-3G × DES Y3) | SPT × DES | arXiv:1603.03904; arXiv:2207.11937 | abstract of each |
 | Pairwise τ̄_e (Planck × DESI groups) | (1.66 ± 0.35) × 10⁻⁴, 4.7σ template fit | Planck | arXiv:2109.04092 | abstract |
 | Pairwise detection, ACT × SDSS DR15 | 5.4σ, 343,647 LRGs | ACT DR5/DR4 | arXiv:2101.08374 | abstract |
 | ACT DR6 × CMASS τ̄ profile | S/N 7.2 at 2′; 8.7σ (f150), 7.3σ (f090) against no kSZ | ACT DR6 | arXiv:2605.01963 | Fig. 3 caption; Table 1 |
@@ -499,7 +501,7 @@ Sect. 5.3].
   renormalised at a large aperture [src: arXiv:2605.01963, Sect. IV.1.2].
 - **Projected-field model incomplete.** The dominant-term halo model is
   ≈ 20% off for SO; the other contractions must be added [src:
-  arXiv:2509.03458; arXiv:2306.03127].
+  arXiv:2509.03458; arXiv:2306.03127] [src: abstract].
 - **Selection of the X-ray comparison sample.** Pre-eROSITA gas fractions
   point to weaker feedback than kSZ, possibly through selection bias or
   mass estimates [src: arXiv:2507.07991]. Test: forward-model the X-ray

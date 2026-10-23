@@ -28,7 +28,7 @@ facts follow and recur throughout the literature:
    low-redshift sample" as the main limitation (Scolnic et al. 2018,
    arXiv:1710.00845).
 3. Removing z < 0.1 from Unite (687 events, 24 % of the sample) is the only
-   redshift cut that moves the cosmology by ~2 sigma `[src]`
+   redshift cut that moves the cosmology by ~2 sigma `[src: Sect. 9.1]`
    (arXiv:2609.05053).
 
 ## 2. Past surveys
@@ -36,13 +36,13 @@ facts follow and recur throughout the literature:
 
 | Survey | Instrument / strategy | Sample and redshift | Notes | Reference |
 |---|---|---|---|---|
-| High-Z Supernova Search Team | Multi-telescope search and follow-up | 16 high-z (10 new at 0.16 < z < 0.62) + 34 nearby `[src]` | Discovery of acceleration | Riess et al. 1998, arXiv:astro-ph/9805201 |
-| Supernova Cosmology Project | Multi-telescope; low-z from Calán/Tololo | 42 SNe at 0.18 < z < 0.83 `[src]` | Discovery of acceleration | Perlmutter et al. 1999, arXiv:astro-ph/9812133 |
-| SNLS | CFHT MegaCam, four 1 deg² fields, 4 bands (as described for the SNLS samples) | 3-year joint sample: 472 SNe = 123 low-z + 93 SDSS + 242 SNLS + 14 HST `[src]` | Introduced the systematics covariance matrix; calibration-dominated | Conley et al. 2011, arXiv:1104.1443 |
+| High-Z Supernova Search Team | Multi-telescope search and follow-up | 16 high-z (10 new at 0.16 < z < 0.62) + 34 nearby `[src: abstract]` | Discovery of acceleration | Riess et al. 1998, arXiv:astro-ph/9805201 |
+| Supernova Cosmology Project | Multi-telescope; low-z from Calán/Tololo | 42 SNe at 0.18 < z < 0.83 `[src: abstract]` | Discovery of acceleration | Perlmutter et al. 1999, arXiv:astro-ph/9812133 |
+| SNLS | CFHT MegaCam, four 1 deg² fields, 4 bands (as described for the SNLS samples) | 3-year joint sample: 472 SNe = 123 low-z + 93 SDSS + 242 SNLS + 14 HST `[src: abstract]` | Introduced the systematics covariance matrix; calibration-dominated | Conley et al. 2011, arXiv:1104.1443 |
 | SDSS-II SN + SNLS (JLA) | SDSS 2.5 m (0.05 < z < 0.4) + SNLS (0.2 < z < 1) + low-z | 740 SNe, 613 of them from SDSS-II and SNLS `[src: Sects. 2, 3.1]` | Joint recalibration, SALT2 retrained | Betoule et al. 2014, arXiv:1401.4064 |
 | Pan-STARRS1 Medium Deep | PS1 1.8 m, griz | 365 spectroscopically confirmed; 279 used at 0.03 < z < 0.68 `[src]` | Core of Pantheon | arXiv:1710.00845 |
-| Foundation | PS1, griz, untargeted follow-up of z < 0.1 SNe | DR1: 225 SNe, 180 pass cosmology cuts; intrinsic scatter 0.111 mag `[src]` | First low-z sample on a well-calibrated survey system | Foley et al. 2018, arXiv:1711.02474 |
-| CfA3, CfA4, CSP-I | Dedicated low-z follow-up of mostly targeted discoveries | Together with Foundation: 194 SNe at 0.025 < z < 0.1 in the DES-SN5YR anchor `[src]` | The "historical low-z" set | as listed in arXiv:2609.05053 |
+| Foundation | PS1, griz, untargeted follow-up of z < 0.1 SNe | DR1: 225 SNe, 180 pass cosmology cuts; intrinsic scatter 0.111 mag `[src: abstract]` | First low-z sample on a well-calibrated survey system | Foley et al. 2018, arXiv:1711.02474 |
+| CfA3, CfA4, CSP-I | Dedicated low-z follow-up of mostly targeted discoveries | Together with Foundation: 194 SNe at 0.025 < z < 0.1 in the DES-SN5YR anchor `[src: Sect. 2.1]` | The "historical low-z" set | as listed in arXiv:2609.05053 |
 | DES-SN | DECam on the Blanco 4 m; ten ~3 deg² fields, griz; 8 shallow fields to r ~ 23.5 per visit and 2 deep fields to 24.5; 5 seasons `[src]` | > 20 000 candidates; 7000 host redshifts (OzDES); 1635 photometric SNe Ia at 0.10 < z < 1.13 `[src]` | Largest single-survey high-z sample | Vincenzi et al. 2024, arXiv:2401.02945 |
 
 ## 3. Compilations and their status
@@ -52,8 +52,8 @@ facts follow and recur throughout the literature:
 |---|---|---|---|---|---|
 | Union and its 2012 extension | 2008, 2012 | 414 SNe reduced to 307 by cuts `[src]`; the 2012 analysis adds 14 HST cluster SNe, ten beyond z = 1 `[src]` | One blind procedure for heterogeneous subsamples, with outlier rejection | Superseded; ancestors of Union3 | Kowalski et al. 2008, arXiv:0804.4142; Suzuki et al. 2012, arXiv:1105.3470 |
 | JLA | 2014 | 740 SNe, SDSS-II + SNLS3 + low-z + HST | SALT2, binned-smoothed covariance | Superseded | arXiv:1401.4064 |
-| Pantheon | 2018 | 1048 SNe, 0.01 < z < 2.3 `[src]` | SALT2 + BBC, Supercal | Superseded by Pantheon+ | arXiv:1710.00845 |
-| DES-SN3YR | 2019 | 207 DES (spectroscopic) + 122 low-z = 329 `[src]` | SALT2 + BBC | Superseded | Abbott et al. (DES) 2019, arXiv:1811.02374 |
+| Pantheon | 2018 | 1048 SNe, 0.01 < z < 2.3 `[src: abstract]` | SALT2 + BBC, Supercal | Superseded by Pantheon+ | arXiv:1710.00845 |
+| DES-SN3YR | 2019 | 207 DES (spectroscopic) + 122 low-z = 329 `[src: abstract]` | SALT2 + BBC | Superseded | Abbott et al. (DES) 2019, arXiv:1811.02374 |
 | Pantheon+ | 2022 | 1701 light curves of 1550 SNe from 18 surveys, 0.001 < z < 2.26 `[src]`; includes the SH0ES calibrators | SALT2 (retrained), BBC, Fragilistic, unbinned covariance | Still the standard for distance-ladder `H0`; its host masses and calibration are updated in Unite | Scolnic et al. 2022, arXiv:2112.03863; Brout et al. 2022, arXiv:2202.04077 |
 | Union3 | 2023 | 2087 SNe from 24 datasets `[src]` | SALT3 + UNITY1.5 | Superseded by Union3.1 | Rubin et al. 2023, arXiv:2311.12098 |
 | DES-SN5YR (= DESY5) | 2024 | 1635 DES photometric (0.10 < z < 1.13) + 194 low-z (0.025 < z < 0.10), "for a total of 1829 SNe" (Sect. 2.1) `[src]` | SALT3 + BBC, SuperNNova, BEAMS | Superseded by DES-Dovekie | DES Collaboration 2024, arXiv:2401.02929 |
@@ -66,7 +66,7 @@ Details worth remembering:
 - **Pantheon+ vs DES overlap.** Pantheon+ contains the DES-SN3YR
   spectroscopic sample (203 SNe); 145 of these are also in DES-SN5YR. Unite
   keeps the 145 DES-SN5YR versions because the two samples have different
-  selection functions `[src]` (arXiv:2609.05053).
+  selection functions `[src: Sect. 2.3]` (arXiv:2609.05053).
 - **Common objects across analyses.** Unite and DES-Dovekie share 1555 SNe
   (182 at z < 0.1); Unite and Pantheon+ share 1375 (642 at z < 0.1) `[src]`
   (arXiv:2609.05053).
@@ -95,13 +95,13 @@ Details worth remembering:
 | DEBASS | DECam imaging of low-z SNe, WiFeS host spectroscopy; same instrument as DES | > 400 spectroscopically confirmed SNe Ia at 0.01 < z < 0.08 (2021 to mid-2025); early release of 77 SNe in the DES footprint; MAD of residuals ~0.10 mag before bias corrections `[src]` | Preliminary; intended to replace the historical DES anchor | Sherman et al. 2025, arXiv:2508.10878; Acevedo et al. 2025, arXiv:2508.10877 |
 | TITAN (ATLAS) | Four ATLAS telescopes, all sky | > 10 000 spectroscopically confirmed SNe Ia observed by ATLAS, "thousands" cosmology-grade; calibration paper finds initial offsets ~40 mmag vs DES Y6 stars, reduced to an estimated 5–10 mmag systematic `[src]` | Calibration and host papers out; no Hubble-diagram cosmology found in this session's searches | Marlin et al. 2025, arXiv:2512.21903; Murakami et al. 2026, arXiv:2604.16597 |
 | Young Supernova Experiment | PS1 griz + ZTF gr | DR1: 1975 transients observed from 24 November 2019 to 20 December 2021, redshifts to ~0.5; a photometric classifier labels 1048 of 1483 unclassified events as SNe Ia `[src]`. Named by the Unite authors among the low-z samples "expected to produce new low-z results in the near future" `[sec, arXiv:2609.05053]` | No cosmology sample found | Aleo et al. 2023, arXiv:2211.07128 |
-| JWST high-z SNe Ia | NIRCam / NIRSpec | Spectroscopically confirmed SNe Ia at z > 2: SN 2023adsy and SN 2023aeax (z = 2.15); the latter's distance agrees with LCDM at ~0.1 sigma; "no definitive evolution" `[src]` | Evolution test, not a cosmology sample | Pierel et al. 2024, arXiv:2411.11953 |
+| JWST high-z SNe Ia | NIRCam / NIRSpec | Spectroscopically confirmed SNe Ia at z > 2: SN 2023adsy and SN 2023aeax (z = 2.15); the latter's distance agrees with LCDM at ~0.1 sigma; "no definitive evolution" `[src: abstract]` | Evolution test, not a cosmology sample | Pierel et al. 2024, arXiv:2411.11953 |
 
 Roles of the new anchors:
 
 - DEBASS vs Foundation: median distance offset `0.016 ± 0.019 mag`; a
   different calibration solution moves it by `-0.015 ± 0.019 mag`; tertiary
-  stars of DEBASS, DES and PS1 agree at the 10 mmag level `[src]`
+  stars of DEBASS, DES and PS1 agree at the 10 mmag level `[src: abstract]`
   (arXiv:2508.10877). **Forecast** (same paper): replacing the historical
   anchor by > 400 DEBASS SNe improves the statistical errors on `w0` and
   `w_a` by 30 % and 24 %, raises the FoM by up to 60 %, and allows an
@@ -116,8 +116,8 @@ Roles of the new anchors:
 
 | Facility | Status | SN programme | Numbers | Source |
 |---|---|---|---|---|
-| Rubin LSST | 10-year survey began 30 June 2026 `[sec, Rubin/SLAC and CMU announcements found by web search]` | Wide-Fast-Deep plus Deep Drilling Fields; fully photometric analysis with host photo-z | **Forecast**: a simulated DDF sample of ~6000 events with a spectroscopic low-z WFD sample gives FoM ~150, against 54 quoted for DES-SN5YR; small but significant biases remain in the pipeline `[src]` | Mitra et al. 2025, arXiv:2512.06319 |
-| Rubin + DESI follow-up | Proposal | DESI tiles re-prioritised on Rubin alerts, starting 2027 | **Forecast**: 7500 near-peak spectra in one year; a volume-limited subset of 2300 SNe Ia at z < 0.3 added to current data pushes the tension with LCDM beyond 5 sigma *if current best-fit values persist* `[src]` | Truong et al. 2026, arXiv:2604.18859 |
+| Rubin LSST | 10-year survey began 30 June 2026 `[sec, Rubin/SLAC and CMU announcements found by web search]` | Wide-Fast-Deep plus Deep Drilling Fields; fully photometric analysis with host photo-z | **Forecast**: a simulated DDF sample of ~6000 events with a spectroscopic low-z WFD sample gives FoM ~150, against 54 quoted for DES-SN5YR; small but significant biases remain in the pipeline `[src: abstract]` | Mitra et al. 2025, arXiv:2512.06319 |
+| Rubin + DESI follow-up | Proposal | DESI tiles re-prioritised on Rubin alerts, starting 2027 | **Forecast**: 7500 near-peak spectra in one year; a volume-limited subset of 2300 SNe Ia at z < 0.3 added to current data pushes the tension with LCDM beyond 5 sigma *if current best-fit values persist* `[src: Sect. IV.2.5]` | Truong et al. 2026, arXiv:2604.18859 |
 | Roman | Launched 30 August 2026; in commissioning `[sec, NASA mission page read 2026-10-07]` | High-Latitude Time-Domain Survey (HLTDS): wide imaging 18.3 deg² and deep imaging 6.5 deg², northern and southern fields, core component ~2 years with filter subsets every 5 days, ~6 months of observing time in total `[sec, NASA HLTDS page]` | **Forecast**: 10 000 Roman SNe Ia after cuts, combined with 4400 from LSST, give a FoM "well above" the mission requirement of 326, with SALT-training systematics not included `[src]` | Kessler et al. 2025, arXiv:2506.04402 |
 | Roman (earlier reference design) | Superseded by the HLTDS definition | Two tiers, ~19 deg² (z up to 1) and ~5 deg² (z up to 1.7) | **Forecast**: ~12 000 SNe Ia, ~5000 at z > 1 `[src]` | Rose et al. 2021, arXiv:2111.03081 |
 
@@ -155,8 +155,8 @@ and either the corrected Pantheon+ or Unite.
 | Method | Sample | Result (model) | Reference |
 |---|---|---|---|
 | Standardised candle method, Cepheid/TRGB/geometric calibrators | 13 calibrator SNe II | `H0 = 75.4 (+3.8/-3.7) km/s/Mpc`, statistical only; systematic estimate 1.5 `[src]` | de Jaeger et al. 2022, arXiv:2203.08974 |
-| Tailored expanding photosphere method (radiative-transfer emulator), no distance ladder | 10 SNe II at 0.01 < z < 0.04, literature data | `H0 = 74.9 ± 1.9 km/s/Mpc` (stat) `[src]` | Vogl et al. 2024, arXiv:2411.04968 |
-| Hierarchical Bayesian SCM with an H-alpha term, SNfactory spectrophotometry | Hubble-flow SNe II-P | Scatter reduced from 0.28 to 0.18 mag; `H0 = 70.6 (+4.5/-4.3) km/s/Mpc` (stat only) `[src]` | Holas et al. 2026, arXiv:2609.39804 |
+| Tailored expanding photosphere method (radiative-transfer emulator), no distance ladder | 10 SNe II at 0.01 < z < 0.04, literature data | `H0 = 74.9 ± 1.9 km/s/Mpc` (stat) `[src: abstract]` | Vogl et al. 2024, arXiv:2411.04968 |
+| Hierarchical Bayesian SCM with an H-alpha term, SNfactory spectrophotometry | Hubble-flow SNe II-P | Scatter reduced from 0.28 to 0.18 mag; `H0 = 70.6 (+4.5/-4.3) km/s/Mpc` (stat only) `[src: abstract]` | Holas et al. 2026, arXiv:2609.39804 |
 
 The standardised candle method goes back to Hamuy & Pinto 2002
 (arXiv:astro-ph/0201279): plateau luminosity correlates with ejecta
@@ -175,9 +175,9 @@ the interpretation belongs to `cosmo-distance-ladder-h0`.
 | Object | Type, redshift | H0 (km/s/Mpc) | Reference |
 |---|---|---|---|
 | SN Refsdal | Cluster-lensed core-collapse SN | `64.8 (+4.4/-4.3)` from eight lens models; `66.6 (+4.1/-3.3)` from the two best `[src]` | Kelly et al. 2023, arXiv:2305.06367 |
-| SN H0pe | SN Ia, z = 1.78, cluster lens, JWST | `75.7 (+8.1/-5.5)` using the SN Ia magnification to weight lens models; `71.8 (+9.2/-8.1)` without `[src]` | Pascale et al. 2024, arXiv:2403.18902 |
-| SN Encore | SN Ia, z = 1.95, cluster lens, JWST | `66.9 (+11.2/-8.1)` `[src]`; a second lensed SN ("Requiem") in the same host has a further image expected within a few years | Pierel et al. 2025, arXiv:2509.12301 |
-| SN 2025wny | Superluminous SN-I, z = 2.015, galaxy-scale lens | `66.7 (+7.6/-6.3)` for isothermal profiles; `70.8 (+8.2/-6.1)` with free density slopes `[src]` | Mörtsell et al. 2026, arXiv:2608.28430 |
+| SN H0pe | SN Ia, z = 1.78, cluster lens, JWST | `75.7 (+8.1/-5.5)` using the SN Ia magnification to weight lens models; `71.8 (+9.2/-8.1)` without `[src: abstract]` | Pascale et al. 2024, arXiv:2403.18902 |
+| SN Encore | SN Ia, z = 1.95, cluster lens, JWST | `66.9 (+11.2/-8.1)` `[src: abstract]`; a second lensed SN ("Requiem") in the same host has a further image expected within a few years | Pierel et al. 2025, arXiv:2509.12301 |
+| SN 2025wny | Superluminous SN-I, z = 2.015, galaxy-scale lens | `66.7 (+7.6/-6.3)` for isothermal profiles; `70.8 (+8.2/-6.1)` with free density slopes `[src: abstract]` | Mörtsell et al. 2026, arXiv:2608.28430 |
 
 Discovery papers: four images of one supernova around a z = 0.54 galaxy of
 the cluster MACS J1149.6+2223, host at z = 1.49, a later appearance

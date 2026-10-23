@@ -378,7 +378,7 @@ is 0.164 mag for G26 against 0.185 for SALT3.Dovekie [src: Sect. 5].
 - Application: Vincenzi et al. 2024, arXiv:2401.02945 — joint propagation
   of calibration and model.
 - Critique: Rigault et al. 2024, arXiv:2406.02073 — where SALT fails on
-  3000 ZTF light curves.
+  3000 ZTF light curves. [src: abstract]
 - Critique/extension: Kenworthy et al. 2025, arXiv:2502.09713 — SALT3+ and
   the `x2` term.
 - Alternative: Mandel et al. 2022, arXiv:2008.07538 — BayeSN model and

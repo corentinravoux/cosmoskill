@@ -32,7 +32,7 @@ re-verify against the cited paper before a number enters a manuscript.
 - Formation efficiency peaks near M_h ~ 10¹² M_⊙ with < 20% of baryons in
   stars; M* scatter at fixed M_h is < 0.2 dex above it (arXiv:1804.03097).
 - An occupation parameter needs its mass definition, finder and cosmology;
-  FoF halo bias is ~10% below Δ = 200 (arXiv:1001.3162).
+  FoF halo bias is ~10% below Δ = 200 (arXiv:1001.3162, abstract).
 - The HMF is not universal at 5%; amplitude falls 20–50% to z = 2.5
   (arXiv:0803.2706).
 - DESI One-Percent LRGs: f_sat = 11–14%, log M_h = 13.2–13.4; QSOs 12.65;
@@ -53,9 +53,9 @@ re-verify against the cited paper before a number enters a manuscript.
   (arXiv:2304.00704), UNIONS 0.743 (arXiv:2606.23651), satellite kinematics
   0.81 ± 0.05 (arXiv:2512.14889).
 - BOSS centrals move at 0.22 and satellites at 0.86 of the dark-matter
-  velocity dispersion (arXiv:1407.4811).
+  velocity dispersion (arXiv:1407.4811, abstract).
 - Dwarf SHMR in DESI DR1 BGS: slope 2.08 ± 0.21, scatter up to 0.68 dex
-  (arXiv:2609.04351).
+  (arXiv:2609.04351, abstract).
 - BCG stellar masses from standard photometry are low by ~2–4
   (arXiv:1401.7329).
 - The analytic halo model needs non-linear bias and exclusion: ignoring them
@@ -131,8 +131,9 @@ Sizes, in thousands of tokens: L1 3k; open 4k; methods 11k; results 8k; surveys 
   (`--abstract`, `--outline`, `--section`, `--grep`), or with any tool that
   gives the paper. If it cannot be read, say that L4 was required and not
   done.
-- A formula of the skill may be applied to the asker's numbers; label the
-  result as derived.
+- Quote a number only with its paper and the place it was read, as the
+  skill gives them; the skill holds no number of its own making. A formula
+  may be applied to the asker's numbers; label the result as derived.
 
 Local layers: if a directory `.cosmoskill/` exists in the working directory,
 in one of its parents, or in the home directory, or if `COSMOSKILL_HOME` is

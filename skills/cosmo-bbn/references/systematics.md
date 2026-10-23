@@ -24,7 +24,7 @@ body read; `[sec]` named secondary source; `[der]` derived here.
   H (arXiv:2409.06015) [src: Sect. 3.1].
 - **Mechanism: low H I column.** For log N(H I) ≈ 18, modelling uncertainty
   becomes the main term of the error budget (Guarneri et al. 2024,
-  arXiv:2402.05586) [src]. Damped and sub-damped systems are preferred
+  arXiv:2402.05586) [src: abstract]. Damped and sub-damped systems are preferred
   because the H I column is fixed by the damping wings.
 - **Mechanism: line-profile physics.** The Voigt profile is insufficient for
   very high column-density damped systems; a Kramers–Heisenberg profile with
@@ -35,11 +35,12 @@ body read; `[sec]` named secondary source; `[der]` derived here.
   charge exchange; astration changes D/H by ≲ 0.1% below ~1% solar
   metallicity (arXiv:2409.06015) [src: Sect. 3.1].
 - **Size.** In J1332+0052 the systematic term is 0.012 dex against
-  0.008 dex statistical (arXiv:2401.12797) [src].
+  0.008 dex statistical (arXiv:2401.12797) [src: abstract].
 - **Sample selection.** Different compilations give different means:
   (2.527 ± 0.030) × 10⁻⁵ for seven homogeneously analysed systems
-  (arXiv:1710.11129) against (2.545 ± 0.025) × 10⁻⁵ for 13 systems after
-  least-trimmed-squares rejection (arXiv:1706.09512) [src]. State the sample.
+  (arXiv:1710.11129) [src: abstract] against (2.545 ± 0.025) × 10⁻⁵ for 13
+  systems after least-trimmed-squares rejection (arXiv:1706.09512)
+  [src: abstract]. State the sample.
 - **Validation.** The seven systems of the precision sample, spanning
   different metallicities, are consistent with one value
   (arXiv:1710.11129) [src: Sect. V.1].
@@ -52,7 +53,7 @@ body read; `[sec]` named secondary source; `[der]` derived here.
   collisional correction and emissivities are fitted per target; optical
   lines alone leave temperature and density degenerate. He I 10830 breaks
   the density degeneracy and reduced the Y_P error by over 50%
-  (arXiv:1503.08146) [src].
+  (arXiv:1503.08146) [src: abstract].
 - **Size: emissivities.** Switching to the Del Zanna & Storey He
   emissivities raised y⁺ by 0.9% on average (40 of 41 targets up), 0.95% with
   the updated Hβ emissivity (arXiv:2601.22238) [src: Sect. VI.2].
@@ -93,7 +94,7 @@ body read; `[sec]` named secondary source; `[der]` derived here.
   (arXiv:1810.09422) [src].
 - **Validation.** Time variability of He I* absorption in Orion limited to
   < 0.17% yr⁻¹ (2σ), supporting radiative equilibrium (arXiv:2605.00122)
-  [src].
+  [src: abstract].
 
 ## 4. Lithium-7
 <!-- key: lithium-7 -->
@@ -101,13 +102,13 @@ body read; `[sec]` named secondary source; `[der]` derived here.
 - **Mechanism: stellar depletion.** Atomic diffusion moderated by extra
   mixing explains heavy-element trends between dwarfs and giants in
   globular clusters and implies plateau stars were born with ~0.3 dex more
-  Li (Korn 2021, arXiv:2111.00913) [src]. Pre-main-sequence depletion with
-  cold protostellar accretion from small seeds can exhaust Li, while hot
-  accretion converges to standard models within 1 Myr (Tognelli et al.
-  2020, arXiv:2004.14857) [src].
+  Li (Korn 2021, arXiv:2111.00913) [src: abstract]. Pre-main-sequence
+  depletion with cold protostellar accretion from small seeds can exhaust
+  Li, while hot accretion converges to standard models within 1 Myr
+  (Tognelli et al. 2020, arXiv:2004.14857) [src: abstract].
 - **Mechanism: effective temperature scale.** Different T_eff methods differ
   by up to 350 K, i.e. 0.3 dex in A(Li); anchoring to the infrared flux
-  method removes much of it (Norris et al. 2023, arXiv:2303.11497) [src].
+  method removes much of it (Norris et al. 2023, arXiv:2303.11497) [src: abstract].
 - **Mechanism: dispersion and "meltdown".** Below [Fe/H] ≈ −3 the scatter
   grows and A(Li) falls below the plateau (arXiv:2303.11497) [src].
 - **Environment test.** The plateau also exists in ω Cen, a probable
@@ -141,7 +142,7 @@ body read; `[sec]` named secondary source; `[der]` derived here.
 - **Validation.** Rerun with ab-initio and with data-driven rates; quote both
   or the marginalised result.
 - **What would fix it.** New d(d,n)³He and d(d,p)t S-factor data at
-  0.1–0.6 MeV (arXiv:2604.16600) [src].
+  0.1–0.6 MeV (arXiv:2604.16600) [src: abstract].
 - **Electron screening** affects laboratory, not primordial, cross sections;
   indirect (Trojan Horse) measurements give the bare S-factor and a
   screening potential (arXiv:1503.08672) [src].
@@ -153,13 +154,16 @@ body read; `[sec]` named secondary source; `[der]` derived here.
 <!-- key: neutron-lifetime -->
 
 - **Mechanism.** τ_n enters Y_P with exponent 0.730 and D/H with 0.413
-  (arXiv:2303.04140) [src: Eqs. 13–14]. Choosing the beam rather than the
-  bottle average shifts τ_n by ~8.6 s (arXiv:1802.01804) [src], i.e. Y_P by
-  ~0.0018 [der: 0.730 × 0.2467 × 8.6/878.4], comparable to the error of the
-  best Y_P measurement (0.0013, arXiv:2601.22239) [src].
+  (arXiv:2303.04140) [src: Eqs. 13–14]. The beam and bottle averages differ
+  by 8.6(2.1) s (arXiv:1802.01804) [src: abstract]; the best Y_P
+  measurement has an error of 0.0013 (arXiv:2601.22239) [src: abstract].
+- **Consequence.** Choosing the beam rather than the bottle average moves
+  the predicted Y_P, through the exponent above, by an amount of the order
+  of the error of the best Y_P measurement [der: exponent applied to the
+  beam–bottle difference; no paper read here states the shift].
 - **Beam-method systematics.** Absolute neutron fluence dominated the 2005
   NIST error (2.7 s), reduced by a direct efficiency measurement
-  (arXiv:1309.2623) [src]; charge exchange of trapped protons with residual
+  (arXiv:1309.2623) [src: abstract]; charge exchange of trapped protons with residual
   H₂ occurs but is "unlikely to have significantly affected" the NIST result
   (Caylor et al. 2025, arXiv:2506.01682) [src].
 - **Bottle-method systematics.** Wall losses in material traps; magnetic
@@ -168,11 +172,11 @@ body read; `[sec]` named secondary source; `[der]` derived here.
 - **Exotic explanations.** A dark decay channel is excluded with high
   confidence using neutron-decay correlation data (Dubbers et al. 2018,
   arXiv:1812.00626) [src]; the τ_n–g_A relation bounds exotic branching
-  ratios below 0.27% (arXiv:1802.01804) [src].
+  ratios below 0.27% (arXiv:1802.01804) [src: abstract].
 - **Mitigation for BBN.** State the τ_n adopted and whether its error is
   inflated for the beam–bottle spread; Y_P observations are not yet precise
-  enough to discriminate, which needs σ(Y_P) ≈ 0.001 (arXiv:2303.04140)
-  [src].
+  enough to discriminate, which needs σ(Y_P) = 0.001 (arXiv:2303.04140)
+  [src: abstract].
 
 ## 7. Code and network choices
 <!-- key: code-and-network-choices -->
@@ -183,16 +187,20 @@ body read; `[sec]` named secondary source; `[der]` derived here.
   set "characterized ... by the underlying code" (arXiv:2401.15054) [src].
 - **Size.** Up to ~1σ in Ω_b h² between rate philosophies; see `results.md`
   §7 (arXiv:2401.15054) [src: Sect. 4.1].
-- **Helium.** The weak-rate corrections fix Y_P to ±0.00017 in PRIMAT
-  (arXiv:1801.08023) [src]; codes without them differ by more than this.
+- **Helium.** With all weak-rate corrections, PRIMAT claims "a 10⁻⁴
+  accuracy" on Y_P = 0.24709 ± 0.00017, the error coming from the τ_n
+  uncertainty (arXiv:1801.08023) [src: abstract; Sect. V.4]; codes without
+  the corrections differ by more than this.
 - **Mitigation.** Name the code, version and rate set with every BBN prior;
   use a code that marginalises over rates, or quote the spread.
 
 ## 8. Referee checklist
 <!-- key: referee-checklist -->
 
-1. D/H: which systems, which compilation (7, 9, 13 or 17 systems), and the
-   continuum, interloper and component-structure treatment.
+1. D/H: which systems, which compilation (seven systems, arXiv:1710.11129
+   [src: abstract]; 13, arXiv:1706.09512 [src: abstract]; nine or 17,
+   arXiv:2401.12797 [src: Sect. 5]), and the continuum, interloper and
+   component-structure treatment.
 2. Y_P: which group and sample; weighted average or regression; intrinsic
    scatter; emissivities; He I 10830 used.
 3. Lithium: T_eff scale; whether stellar depletion is modelled; plateau
@@ -202,7 +210,8 @@ body read; `[sec]` named secondary source; `[der]` derived here.
 5. Code and version (PArthENoPE v2 or v3, PRIMAT 2018 or 2021, PRyMordial
    mode, LINX, AlterBBN), and the N_eff assumed in any tabulated Y_P.
 6. τ_n value and whether the beam–bottle spread is propagated.
-7. N_ν or N_eff baseline (3 or 3.044) stated.
+7. N_ν or N_eff baseline (3, or 3.044 as in arXiv:2603.13226
+   [src: abstract]) stated.
 8. BBN-only, CMB-only and joint results kept apart; whether Y_P is tied to
    ω_b by BBN in the CMB fit.
 9. A "BBN prior" quoted with code, rates and abundances; full likelihood or
@@ -214,6 +223,12 @@ body read; `[sec]` named secondary source; `[der]` derived here.
 ## Not verified
 <!-- key: not-verified -->
 
+- Before the numbers pass of 2026-10-23 §7 said that the weak-rate
+  corrections fix Y_P to ±0.00017 in PRIMAT; arXiv:1801.08023 (Sect. V.4)
+  attributes σ(Y_P) ≃ 0.00017 to the neutron-lifetime uncertainty, and the
+  statement now says so. The Y_P shift from the beam–bottle choice, given
+  before as a value computed from the τ_n exponent, is not stated by any paper read
+  here and was removed.
 - An error budget table for D/H across all systems was not read; only
   per-system statements.
 - The LBT Y_p Project sample-testing results per flag (Sect. V) were not

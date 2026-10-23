@@ -41,12 +41,12 @@ compilation and corrections form the Hubble flow.
 
 - SH0ES reading: the CCHP JWST subsample is a low fluctuation of a small
   sample; the 11 TRGB hosts left out of the CCHP 24 give 74.1, and the
-  complete N = 35 TRGB sample gives 72.1 to 73.3 ± 1.8 `[src]`
+  complete N = 35 TRGB sample gives 72.1 to 73.3 ± 1.8 `[src: abstract]`
   (arXiv:2504.08921).
 - CCHP reading: going from 11 to 24 calibrators moves the CSP-II based H0 by
   only 0.8 (1.4 sigma), so the JWST result is not significantly biased low,
   whereas the Pantheon+ calibration shifts by +2 (3.1 sigma), more than in
-  CSP or in the Pantheon team's own SuperCal analysis `[src]` (Hoyt et al.
+  CSP or in the Pantheon team's own SuperCal analysis `[src: abstract]` (Hoyt et al.
   2025, arXiv:2503.11769).
 
 **What would settle it.** A common, pre-specified calibrator list with all
@@ -71,7 +71,7 @@ modelling `[src]`.
 
 - Högås & Mörtsell (2026, arXiv:2601.22215): physically motivated priors on
   all distances, Milky Way Cepheids in the joint fit, a conservative Gaia
-  offset: 70.6 ± 1.0, tension reduced from 5 to 2 sigma `[src]`.
+  offset: 70.6 ± 1.0, tension reduced from 5 to 2 sigma `[src: abstract]`.
 - Stiskalek et al. (2026, arXiv:2603.09880, with SH0ES co-authors): the same
   prior without the selection function mis-predicts the observed parallax,
   magnitude and period distributions; with selection, the SH0ES calibration
@@ -80,7 +80,7 @@ modelling `[src]`.
 - Percival (2026, arXiv:2607.22425): a likelihood for truncated selection in
   correlated observables finds 1.3 to 2.3 sigma evidence for residual
   selection in calibrator-galaxy Cepheids and shifts of -1.4, -0.2 and -1.0
-  that together "substantially reduce" the tension `[src]`.
+  that together "substantially reduce" the tension `[src: abstract]`.
 - Stiskalek et al. (2025, arXiv:2509.09665): a Cepheid-only two-rung ladder
   with explicit selection and a field-level velocity model gives 71.1 ± 1.4;
   other selection assumptions raise it by up to one sigma `[src]`. It is
@@ -98,7 +98,7 @@ arXiv:2603.09880; the extragalactic step (Percival's parameter) is not.
 **Claim.** Among 88 sound-horizon-free measurements, 30 ladder-based ones
 average 72.73 ± 0.39 and 58 others 69.37 ± 0.34, a 6.5 sigma split (3.9 sigma
 at least after correlations); measurements that assume LCDM give the lowest
-values (67.61 ± 0.96) `[src]` (Pantos & Perivolaropoulos 2026,
+values (67.61 ± 0.96) `[src: abstract]` (Pantos & Perivolaropoulos 2026,
 arXiv:2601.00650).
 
 **Counter-evidence.**
@@ -132,10 +132,10 @@ constrained-simulation velocity fields disagree:
 - Watkins & Feldman (arXiv:2608.06247): 66.9 ± 2.5 to 68.8 ± 2.6 depending on
   the assumed velocity noise, consistent with the CMB and more than 2 sigma
   below the ladder; they argue earlier results were biased by peculiar
-  velocities `[src]`.
+  velocities `[src: Sect. 3]`.
 - Stiskalek & Desmond (arXiv:2609.17684): 71.6 ± 3.7 from five galaxies
   refitted at the spot-catalogue level with a distance prior and selection;
-  velocity corrections lower H0 by 1.6 to 2.1 `[src]`.
+  velocity corrections lower H0 by 1.6 to 2.1 `[src: abstract]`.
 
 Both lower the 2020 value; they differ on by how much. With six objects the
 outcome hinges on the velocity model of each host and on the error assigned to
@@ -162,7 +162,7 @@ lenses, where three lensed SNe give 64.8 to 75.7 with errors of 4 to 11
 **Forecast.** 3.3% with resolved kinematics of the 7 original lenses, 2.5%
 adding 50 non-time-delay lenses, 1.5% and 1.2% with 40 time-delay and 200
 other lenses, all without profile assumptions (Birrer & Treu 2021,
-arXiv:2008.06157) `[src]`.
+arXiv:2008.06157) `[src: abstract]`.
 
 ## 6. Coma and the Fundamental Plane
 <!-- key: coma-and-the-fundamental-plane -->
@@ -232,7 +232,7 @@ published in arXiv:2503.14738; revised since by supernova recalibrations, see
   arXiv:2503.14454).
 - SPT-3G: f_EDE < 0.12 (SPT alone), < 0.070 (SPT + ACT + Planck) at 95%,
   tension 3.6 sigma; adding DESI gives f_EDE = 0.055 (+0.024/-0.047) and
-  2.6 sigma, driven by the CMB-DESI discrepancy in LCDM `[src]` (Khalife et
+  2.6 sigma, driven by the CMB-DESI discrepancy in LCDM `[src: abstract]` (Khalife et
   al. 2025, arXiv:2507.23355).
 - A profile-likelihood analysis with ACT DR6 + DESI DR2 gives f_EDE = 0.09 ±
   0.03 and H0 = 71.0 ± 1.1, residual tension ~2 sigma, and stresses
@@ -272,7 +272,7 @@ measurement.
 | Calibrator sample variance; JAGB standardisation | more JWST hosts; spectroscopic purity surveys (arXiv:2609.25412) | ongoing | [src] |
 | Time-delay H0 at ~3% without profile assumptions | TDCOSMO-2026 hierarchical analysis | announced (arXiv:2608.27566) | [src] |
 | Third rung without SNe at 1% | DESI PV calibrated directly on Cepheids / TRGB | later DESI releases (arXiv:2512.03232) | [src] |
-| Two-rung ladders | TRGB beyond cz ~ 1000 km/s and better local reconstructions (arXiv:2609.29996) | open | [src] |
+| Two-rung ladders | TRGB beyond cz ~ 1000 km/s and better local reconstructions (arXiv:2609.29996) | open | [src: abstract] |
 | r_d-free early H0 | completed DESI + SO-like lensing: sigma(H0) ~ 0.67, **forecast** (arXiv:2509.16202) | late 2020s | [src] |
 
 ## 11. Stale or wrong claims that still circulate

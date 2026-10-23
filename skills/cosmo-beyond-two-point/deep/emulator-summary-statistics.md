@@ -165,7 +165,7 @@ Sect. VIII].
 | Density split | grid 5 h⁻¹Mpc, Gaussian R_s = 10 h⁻¹Mpc, N_query = 5 N_gal, 5 quintiles; Q_2 dropped because the quintile CCFs sum to zero up to shot noise; ℓ = 0, 2; 241 μ bins; s bins of 1 (0–4), 3 (4–30), 5 h⁻¹Mpc (30–150) | 648 with the 2PCF | arXiv:2309.16539, Sect. 2.2.4, 2.3.2; arXiv:2309.16541, Sect. 2.2.2 |
 | WST | box 2700 h⁻¹Mpc, NGRID = 270, TSC, Gaussian σ = 0.8 cell (8 h⁻¹Mpc), J = 4 scales, L = 4 orientations, q = 0.8, modified KYMATIO for masked fields; about 60 s per mock on a GPU | 76 coefficients | arXiv:2310.16116, Sect. IV.4.1 |
 | kNN (RD and DD) | k = 1–9; 8 log bins in r_p from 0.63 to 63 h⁻¹Mpc, 5 in r_π from 0.5 to 32 h⁻¹Mpc; bins with CDF < 0.05 or > 0.95 removed to Gaussianise; DD cut at r_p > 5 h⁻¹Mpc | 114 (RD), 144 (DD) | arXiv:2405.02252, Sect. V.5.1, V.5.4 |
-| MFs | four functionals of the excursion sets, smoothing ≥ 15 h⁻¹Mpc (L2) | — | arXiv:2501.01698 |
+| MFs | four functionals of the excursion sets, Gaussian smoothing R_G = 15 h⁻¹Mpc, one scale | — | arXiv:2501.01698, Sect. 3.4.1 |
 
 Other statistics and ranges: Aemulus VI emulates w_p, ξ_0, ξ_2, the
 underdensity probability function P_U(s) and the density-marked correlation
@@ -332,16 +332,16 @@ ingredients do not force agreement either.
 
 | Analysis | Suite | Data | Result | Source |
 |---|---|---|---|---|
-| Aemulus V | Aemulus | BOSS, 3 z bins, 0.1–60 h⁻¹Mpc | fσ8 = 0.413 ± 0.031 (z = 0.25), 0.470 ± 0.026 (0.4), 0.396 ± 0.022 (0.55): 1.9σ, 0.3σ, 3.4σ below Planck ΛCDM | arXiv:2203.08999 [src] |
-| eBOSS LRG | Aemulus | DR16 LRG, 7–60 h⁻¹Mpc | fσ8(0.737) = 0.408 ± 0.038, 1.4σ below Planck; 1.7 × more precise than large scales alone; with 0.1–60 h⁻¹Mpc a 4.5σ tension in the halo velocity amplitude, possibly an HOD breakdown | arXiv:2106.14961 [src] |
+| Aemulus V | Aemulus | BOSS, 3 z bins, 0.1–60 h⁻¹Mpc | fσ8 = 0.413 ± 0.031 (z = 0.25), 0.470 ± 0.026 (0.4), 0.396 ± 0.022 (0.55): 1.9σ, 0.3σ, 3.4σ below Planck ΛCDM | arXiv:2203.08999 [src: abstract] |
+| eBOSS LRG | Aemulus | DR16 LRG, 7–60 h⁻¹Mpc | fσ8(0.737) = 0.408 ± 0.038, 1.4σ below Planck; 1.7 × more precise than large scales alone; with 0.1–60 h⁻¹Mpc a 4.5σ tension in the halo velocity amplitude, possibly an HOD breakdown | arXiv:2106.14961 [src: abstract] |
 | BOSS clustering + lensing | Aemulus ν | BOSS × DECaLS, HSC | fσ8 1–4σ below Planck; lensing tightens S8, weakly fσ8 | arXiv:2601.12976 [src] |
-| Aemulus VI (mocks) | Aemulus | recovery tests | P_U + M improve Ω_m 27%, σ8 19%, fσ8 12%; scales below ~6 h⁻¹Mpc carry as much information as larger ones | arXiv:2210.03203 [src] |
-| BOSS DR12 P(k) full shape | Dark Quest | 4 samples, k_max = 0.25 h Mpc⁻¹ | Ω_m = 0.301 +0.012/−0.011, H_0 = 68.2 ± 1.4, σ8 = 0.786 +0.036/−0.037; within 1σ of Planck | arXiv:2110.06969 [src] |
-| HSC-Y1 + SDSS | Dark Quest | ΔΣ + w_p | S8 = 0.795 +0.049/−0.042 | arXiv:2111.02419 [src] |
-| HSC-Y3 + SDSS 3×2pt | Dark Quest | ξ± + ΔΣ + w_p | S8 = 0.763 +0.040/−0.036; ~2.5σ from Planck | arXiv:2304.00704 [src] |
-| SimBIG | Quijote | 10% of BOSS volume | Ω_b, h, n_s, Ω_m, σ8 1.6, 1.5, 1.7, 1.2, 2.3 × tighter than P(k); S8 below the CMB | arXiv:2310.15246 [src] |
-| DES Y3 peaks + C_ℓ | DES N-body grid, GP | DES Y3 | S8 = 0.797 +0.015/−0.013, 38% tighter than C_ℓ alone, 1.5σ below Planck | arXiv:2110.10135 [src] |
-| KiDS-1000 density split (lensing) | analytic model, not an emulator | KiDS-bright | S8 = 0.74 +0.03/−0.02, Ω_m = 0.28 ± 0.02 | arXiv:2208.02171 [src] |
+| Aemulus VI (mocks) | Aemulus | recovery tests | P_U + M improve Ω_m 27%, σ8 19%, fσ8 12%; scales below ~6 h⁻¹Mpc carry as much information as larger ones | arXiv:2210.03203 [src: abstract] |
+| BOSS DR12 P(k) full shape | Dark Quest | 4 samples, k_max = 0.25 h Mpc⁻¹ | Ω_m = 0.301 +0.012/−0.011, H_0 = 68.2 ± 1.4, σ8 = 0.786 +0.036/−0.037; within 1σ of Planck | arXiv:2110.06969 [src: abstract] |
+| HSC-Y1 + SDSS | Dark Quest | ΔΣ + w_p | S8 = 0.795 +0.049/−0.042 | arXiv:2111.02419 [src: abstract] |
+| HSC-Y3 + SDSS 3×2pt | Dark Quest | ξ± + ΔΣ + w_p | S8 = 0.763 +0.040/−0.036; ~2.5σ from Planck | arXiv:2304.00704 [src: abstract] |
+| SimBIG | Quijote | 10% of BOSS volume | Ω_b, h, n_s, Ω_m, σ8 1.6, 1.5, 1.7, 1.2, 2.3 × tighter than P(k); S8 below the CMB | arXiv:2310.15246 [src: abstract] |
+| DES Y3 peaks + C_ℓ | DES N-body grid, GP | DES Y3 | S8 = 0.797 +0.015/−0.013, 38% tighter than C_ℓ alone, 1.5σ below Planck | arXiv:2110.10135 [src: abstract] |
+| KiDS-1000 density split (lensing) | analytic model, not an emulator | KiDS-bright | S8 = 0.74 +0.03/−0.02, Ω_m = 0.28 ± 0.02 | arXiv:2208.02171 [src: abstract] |
 
 Comparisons made by the papers: Aemulus V finds its values consistent with
 other simulation-based non-linear results (BOSS LOWZ lensing, eBOSS LRG,

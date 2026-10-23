@@ -42,7 +42,7 @@ re-verify against the cited paper before a number enters a manuscript.
   spectra allow one; 89% success at 0.9 < z < 1.8 needs tuned cuts
   (arXiv:2503.15302, arXiv:2503.15308).
 - DESI DR1 flux-calibration variances are underestimated, up to a factor 5
-  at S/N ~ 100 per pixel; use zcatalog v1 (arXiv:2503.14745).
+  at S/N ~ 100 per pixel; use zcatalog v1 (arXiv:2503.14745, Sect. II.2).
 - In DESI, redshifts feed back into targeting, so the selection function
   depends on the pipeline version used in operations (arXiv:2306.06309).
 - Random redshifts drawn from the data null radial modes
@@ -53,7 +53,7 @@ re-verify against the cited paper before a number enters a manuscript.
   (arXiv:2610.10986); the HSC deblender fails in cluster cores
   (arXiv:1705.06766).
 - Injection is now survey-wide: 146 million Balrog injections over DES Y6
-  (arXiv:2501.05683).
+  (arXiv:2501.05683, abstract).
 - CMB map-maker model error can lose O(1) of large-scale power, invisible
   to simulations without that error (arXiv:2210.02243); ACT DR6 measures
   its transfer function by injection into real data (arXiv:2503.14451).
@@ -125,8 +125,9 @@ Sizes, in thousands of tokens: L1 3k; open 3k; methods 9k; results 4k; surveys 5
   (`--abstract`, `--outline`, `--section`, `--grep`), or with any tool that
   gives the paper. If it cannot be read, say that L4 was required and not
   done.
-- A formula of the skill may be applied to the asker's numbers; label the
-  result as derived.
+- Quote a number only with its paper and the place it was read, as the
+  skill gives them; the skill holds no number of its own making. A formula
+  may be applied to the asker's numbers; label the result as derived.
 
 Local layers: if a directory `.cosmoskill/` exists in the working directory,
 in one of its parents, or in the home directory, or if `COSMOSKILL_HOME` is

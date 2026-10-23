@@ -182,7 +182,7 @@ corrects detection and selection analytically, with noise bias to second
 order; at HSC conditions it reports m = −0.12 ± 0.10% for isolated galaxies
 and about −0.3 ± 0.1% for blends, after correcting a detection/selection bias
 of about −4%, at about 1000 galaxies per CPU second (Li & Mandelbaum 2022,
-arXiv:2208.10522) [src]. It is not yet the shear method of a published
+arXiv:2208.10522) [src: abstract]. It is not yet the shear method of a published
 cosmic-shear cosmology among the analyses this skill tracks.
 
 ## Choices and what they cost

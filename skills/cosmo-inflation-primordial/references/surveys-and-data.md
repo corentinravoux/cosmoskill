@@ -14,12 +14,12 @@ General CMB instrument descriptions (Planck, ACT, SPT-3G, their likelihoods and 
 
 | Experiment / release | Sky and depth | Frequencies | Result for r | Citation | Flag |
 |---|---|---|---|---|---|
-| BICEP2/Keck × Planck (2015) | about 400 deg²; 57 nK·deg in Q and U (BICEP2/Keck); Planck 1.2 μK·deg at 143 GHz | 150 GHz with Planck 30–353 GHz | r_0.05 < 0.12; lensing B modes at 7.0σ | arXiv:1502.00612 | [src] |
-| SPIDER, 2015 balloon flight | 4.8% of the sky | 95, 150 GHz | r < 0.11 (Feldman–Cousins) | arXiv:2103.13334 | [src] |
-| Planck PR4 (NPIPE) | more than 50% of the sky for B modes | 30–857 GHz | r < 0.056 (with TT) | arXiv:2010.01139 | [src] |
+| BICEP2/Keck × Planck (2015) | about 400 deg²; 57 nK·deg in Q and U (BICEP2/Keck); Planck 1.2 μK·deg at 143 GHz | 150 GHz with Planck 30–353 GHz | r_0.05 < 0.12; lensing B modes at 7.0σ | arXiv:1502.00612 | [src: abstract] |
+| SPIDER, 2015 balloon flight | 4.8% of the sky | 95, 150 GHz | r < 0.11 (Feldman–Cousins) | arXiv:2103.13334 | [src: abstract] |
+| Planck PR4 (NPIPE) | more than 50% of the sky for B modes | 30–857 GHz | r < 0.056 (with TT) | arXiv:2010.01139 | [src: abstract] |
 | BK14 + SPTpol + Planck delensing | BICEP/Keck patch | — | first delensed r limit; σ(r) reduced by about 10% | arXiv:2011.08163 | [src] |
-| BK18 (BICEP2, Keck Array, BICEP3 to 2018) | about 600 deg² at 95 GHz, about 400 deg² at 150 and 220 GHz; 2.8, 2.8, 8.8 μK·arcmin | 95, 150, 220 GHz, with WMAP and Planck 23–353 GHz | r_0.05 < 0.036, σ(r) = 0.009 | arXiv:2110.00483 | [src] |
-| SPT-3G 2019–2020 BB | about 1500 deg² overlapping the BICEP/Keck patch; 9.3 and 6.7 μK·arcmin white noise at 95 and 150 GHz | 95, 150, 220 GHz | r < 0.25, σ(r) = 0.067 | arXiv:2505.02827 | [src] |
+| BK18 (BICEP2, Keck Array, BICEP3 to 2018) | about 600 deg² at 95 GHz, about 400 deg² at 150 and 220 GHz; 2.8, 2.8, 8.8 μK·arcmin | 95, 150, 220 GHz, with WMAP and Planck 23–353 GHz | r_0.05 < 0.036, σ(r) = 0.009 | arXiv:2110.00483 | [src: abstract] |
+| SPT-3G 2019–2020 BB | about 1500 deg² overlapping the BICEP/Keck patch; 9.3 and 6.7 μK·arcmin white noise at 95 and 150 GHz | 95, 150, 220 GHz | r < 0.25, σ(r) = 0.067 | arXiv:2505.02827 | [src: abstract] |
 
 ### Current
 <!-- key: current -->
@@ -33,9 +33,9 @@ General CMB instrument descriptions (Planck, ACT, SPT-3G, their likelihoods and 
 
 | Experiment | Configuration | Target (all **forecasts**) | Citation | Flag |
 |---|---|---|---|---|
-| Simons Observatory, expanded SATs | six SATs by 2027, survey to 2035 | σ(r) = 1.2 × 10⁻³ for r = 0, ℓ_knee = 50, moderately complex foregrounds, 70% of lensing B modes removed; 7 × 10⁻⁴ with optimistic noise and foregrounds; about 2.5 times better than the original three-SAT, five-year plan | arXiv:2512.15833 | [src] |
-| LiteBIRD, 2021 concept | 15 bands over 34–448 GHz, 2.2 μK·arcmin, 0.5° at 100 GHz, three-year survey, launch then given as the late 2020s | see paper | LiteBIRD Collaboration 2022, arXiv:2202.02773 | [src] |
-| LiteBIRD after the mission reformation that followed the 2024 Mission Definition Review | one cross-Dragone telescope of 500 mm aperture, 12 bands with centres from 40 to 402 GHz (optical coverage 34–448 GHz), cooled to about 5 K, detectors at 0.1 K, L2 Lissajous orbit, nominal three-year survey | total δr < 0.002 (68%), including foreground residuals, statistics, systematics and margin | LiteBIRD Collaboration 2026, arXiv:2607.25285 | [src] |
+| Simons Observatory, expanded SATs | six SATs by 2027, survey to 2035 | σ(r) = 1.2 × 10⁻³ for r = 0, ℓ_knee = 50, moderately complex foregrounds, 70% of lensing B modes removed; 7 × 10⁻⁴ with optimistic noise and foregrounds; about 2.5 times better than the original three-SAT, five-year plan | arXiv:2512.15833 | [src: abstract] |
+| LiteBIRD, 2021 concept | 15 bands over 34–448 GHz, 2.2 μK·arcmin, 0.5° at 100 GHz, three-year survey, launch then given as the late 2020s | see paper | LiteBIRD Collaboration 2022, arXiv:2202.02773 | [src: abstract] |
+| LiteBIRD after the mission reformation that followed the 2024 Mission Definition Review | one cross-Dragone telescope of 500 mm aperture, 12 bands with centres from 40 to 402 GHz (optical coverage 34–448 GHz), cooled to about 5 K, detectors at 0.1 K, L2 Lissajous orbit, nominal three-year survey | total δr < 0.002 (68%), including foreground residuals, statistics, systematics and margin | LiteBIRD Collaboration 2026, arXiv:2607.25285 | [src: abstract] |
 | CMB-S4 | — | no longer supported: DOE and NSF withdrew support on 9 July 2025 | reported in the `cosmo-cmb` skill | [sec] |
 
 The LiteBIRD requirement on the total error was relaxed with the reformation: before it, δr < 0.001 for r = 0, δr being the total error (statistical, systematic, foreground, lensing and observer-bias terms) (arXiv:2202.02773) [src: Sects. 3.1–3.2]; after it, δr < 0.002 (68%, r = 0) for the total uncertainty including contingencies and margins, with a statistical target σ_r < 0.001 that includes foreground residuals and lensing (arXiv:2607.25285) [src: Sect. 2.1]. A "δr < 0.001" in a post-reformation paper is therefore the statistical target, not the total. The launch date after reformation is given as JFY2036 in the `cosmo-cmb` skill [sec]; it is not in the abstract read here.
@@ -48,19 +48,19 @@ Instrument descriptions, likelihood names and data locations are in `cosmo-cmb`.
 
 | Name in the literature | Content | Used for | Citation | Flag |
 |---|---|---|---|---|
-| Planck 2018 (PR3) | temperature, polarisation, lensing; Plik high-ℓ likelihood | n_s = 0.9649 ± 0.0042; r_0.002 < 0.10; isocurvature; features; non-parametric P(k) | arXiv:1807.06211 | [src] |
+| Planck 2018 (PR3) | temperature, polarisation, lensing; Plik high-ℓ likelihood | n_s = 0.9649 ± 0.0042; r_0.002 < 0.10; isocurvature; features; non-parametric P(k) | arXiv:1807.06211 | [src: abstract] |
 | Planck PR4 (NPIPE) | reprocessed maps; more than 50% of the sky for B modes; 600 simulations for the bispectrum analysis | r from Planck alone; f_NL; feature searches with CamSpec | arXiv:2010.01139, arXiv:2504.00884, arXiv:2605.30236 | [src] |
 | ACT DR6 | small-scale TT, TE, EE; binned P(k) to k = 0.43 Mpc⁻¹ | running, binned P(k), small-scale isocurvature | arXiv:2503.14452, arXiv:2503.14454 | [src] |
 | P-ACT | ACT DR6 + Planck PR3 cut at ℓ < 1000 (TT) and ℓ < 600 (TE, EE) | n_s = 0.9709 ± 0.0038 | arXiv:2503.14452 | [src] |
 | P-ACT-LB | P-ACT + ACT and Planck CMB lensing + DESI DR1 BAO | n_s = 0.974 ± 0.003; running; Ω_K; with BK18, r < 0.038 | arXiv:2503.14452, arXiv:2503.14454 | [src] |
 | SPT-3G D1 | 2019–2020 observations of the SPT-3G Main field, 4% of the sky | enters CMB-SPA | arXiv:2506.20707 (abstract snippet) | [src] |
-| CMB-SPA | SPT-3G D1 + ACT DR6 + Planck | n_s = 0.9679 ± 0.0033 | arXiv:2506.20707 | [src] |
-| "CMB-PAS" | Planck + ACT + SPT as combined by Cheslog et al. | n_s and α_s with N_eff and Σm_ν free; binned P(k) to 0.5% at k = 0.2 Mpc⁻¹ | arXiv:2609.35964 | [src] |
+| CMB-SPA | SPT-3G D1 + ACT DR6 + Planck | n_s = 0.9679 ± 0.0033 | arXiv:2506.20707 | [src: Sect. II] |
+| "CMB-PAS" | Planck + ACT + SPT as combined by Cheslog et al. | n_s and α_s with N_eff and Σm_ν free; binned P(k) to 0.5% at k = 0.2 Mpc⁻¹ | arXiv:2609.35964 | [src: abstract] |
 | "CMB" in DESI papers | CamSpec rather than Plik, with ACT lensing added | Ω_K = 0.0023 ± 0.0011 with DESI DR2 | arXiv:2503.14738 | [src] |
 
 P-ACT, CMB-SPA and "CMB-PAS" are three different products. The first truncates Planck to avoid double counting with ACT; the second and third are built by different groups. A value of n_s must be attributed to one of them by name.
 
-**Forecast** for the scalar spectrum: SO-like and CMB-HD-like surveys would constrain e^(−2τ) P_R at k = 0.2 Mpc⁻¹ to 0.1%, and a CMB-HD-like survey would reach k = 30 Mpc⁻¹ to within a factor of ten (arXiv:2609.35964) [src].
+**Forecast** for the scalar spectrum: SO-like and CMB-HD-like surveys would constrain e^(−2τ) P_R at k = 0.2 Mpc⁻¹ to 0.1%, and a CMB-HD-like survey would reach k = 30 Mpc⁻¹ to within a factor of ten (arXiv:2609.35964) [src: abstract].
 
 ## 3. Lyman-α forest data for the running
 <!-- key: lyman-alpha-forest-data-for-the-running -->
@@ -76,10 +76,10 @@ The 1D flux power spectrum reaches k of order 1 Mpc⁻¹ and is the long lever a
 | Data set | Content | Result | Citation | Flag |
 |---|---|---|---|---|
 | WMAP 5-year | temperature | first optimal equilateral and orthogonal limits | arXiv:0905.3746 | [src] |
-| Planck 2015 | full-mission T and E; polarisation labelled preliminary | f_NL^local = 0.8 ± 5.0 (T + E) | arXiv:1502.01592 | [src] |
-| Planck 2018 (PR3) | T and E, including polarisation at 4 ≤ ℓ < 40; KSW, binned and modal estimators | f_NL^local = −0.9 ± 5.1 | arXiv:1905.05697 | [src] |
+| Planck 2015 | full-mission T and E; polarisation labelled preliminary | f_NL^local = 0.8 ± 5.0 (T + E) | arXiv:1502.01592 | [src: abstract] |
+| Planck 2018 (PR3) | T and E, including polarisation at 4 ≤ ℓ < 40; KSW, binned and modal estimators | f_NL^local = −0.9 ± 5.1 | arXiv:1905.05697 | [src: abstract] |
 | Planck PR4 | T and E; binned and integrated-bispectrum estimators; 600 simulations | f_NL^local = −0.1 ± 5.0 | arXiv:2504.00884 | [src] |
-| ACT DR6 SZ cluster catalogue | 1,201 clusters, 10,347 deg² Legacy region | f_NL = 55 ± 125 from counts | arXiv:2602.03917 | [src] |
+| ACT DR6 SZ cluster catalogue | 1,201 clusters, 10,347 deg² Legacy region | f_NL = 55 ± 125 from counts | arXiv:2602.03917 | [src: abstract] |
 
 No ground-based primary-CMB bispectrum measurement of f_NL (ACT, SPT) was found in the searches of 2026-10-09.
 
@@ -91,14 +91,14 @@ No ground-based primary-CMB bispectrum measurement of f_NL (ACT, SPT) was found 
 | SDSS compendium (2008) | several samples; dominated by photometric quasars | power spectra | arXiv:0805.3580 | [src] |
 | BOSS DR12 galaxies | — | P(k) scale-dependent bias; P + B with EFT | arXiv:2205.05673, arXiv:2201.07238, arXiv:2201.11518 | [src] |
 | eBOSS DR14 quasars | — | redshift-weighted P(k) | arXiv:1904.08859 | [src] |
-| eBOSS DR16 quasars | 343,708 quasars, 0.8 < z < 2.2, 4808 deg² | P(k) monopole, neural-network imaging weights | arXiv:2106.13725 | [src] |
+| eBOSS DR16 quasars | 343,708 quasars, 0.8 < z < 2.2, 4808 deg² | P(k) monopole, neural-network imaging weights | arXiv:2106.13725 | [src: abstract] |
 | DESI DR1 LRG | 1,631,716 galaxies, 0.6 < z < 1.1 | P(k), blinded | arXiv:2411.17623 | [src] |
 | DESI DR1 QSO | 1,189,129 quasars, 0.8 < z < 3.1 | P(k), blinded | arXiv:2411.17623 | [src] |
-| DESI DR1 LRG, QSO, ELG | 0.8 < z < 3.1 | auto- and cross-spectra | arXiv:2604.05213 | [src] |
+| DESI DR1 LRG, QSO, ELG | 0.8 < z < 3.1 | auto- and cross-spectra | arXiv:2604.05213 | [src: abstract] |
 | DESI DR1 public catalogues | six tracers | external P + B reanalysis; feature search | arXiv:2512.04266, arXiv:2610.10530 | [src] |
-| DESI DR1 QSO × Planck PR4 lensing | 1.2 million quasars, 0.8 < z < 3.5, f_sky about 20%, three bins | pseudo-C_ℓ cross-spectra | arXiv:2512.17865 | [src] |
+| DESI DR1 QSO × Planck PR4 lensing | 1.2 million quasars, 0.8 < z < 3.5, f_sky about 20%, three bins | pseudo-C_ℓ cross-spectra | arXiv:2512.17865 | [src: abstract] |
 | Quaia (Gaia–unWISE quasars) | two tomographic bins | angular auto-spectra and CMB-lensing cross-spectra | arXiv:2504.20992 | [src] |
-| DESI Legacy Imaging LRGs × ACT DR5 | northern Galactic hemisphere | kSZ velocity reconstruction, 11.7σ detection | arXiv:2506.21657 | [src] |
+| DESI Legacy Imaging LRGs × ACT DR5 | northern Galactic hemisphere | kSZ velocity reconstruction, 11.7σ detection | arXiv:2506.21657 | [src: abstract] |
 
 DESI DR2 BAO uses more than 14 million galaxies and quasars from three years of operation (arXiv:2503.14738) [src]; no DR2 f_NL analysis was found. According to the `cosmo-galaxy-clustering` skill, DESI completed its planned survey in April 2026 and full-survey results are expected in 2027 [sec].
 
@@ -150,10 +150,10 @@ According to the `cosmo-galaxy-clustering` skill, Euclid DR1 clustering products
 |---|---|---|---|
 | Planck PR3 polarisation | first joint fit of β and miscalibration angles | arXiv:2011.11254 | [src] |
 | Planck PR4 | nearly full sky; dependence on the Galactic mask studied | arXiv:2201.07682 | [src] |
-| WMAP + Planck PR4 | 23–353 GHz; test of frequency dependence | arXiv:2205.13962 | [src] |
+| WMAP + Planck PR4 | 23–353 GHz; test of frequency dependence | arXiv:2205.13962 | [src: abstract] |
 | ACT DR6 | EB and TB with optics-model priors on the angles | arXiv:2509.13654 | [src] |
 | ACT DR6 + Planck PR4 maps | cross-spectra between the two telescopes | arXiv:2608.06480 | [src] |
-| BK18 (95, 150, 220 GHz) | multipole-dependent rotation only | arXiv:2603.06812 | [src] |
+| BK18 (95, 150, 220 GHz) | multipole-dependent rotation only | arXiv:2603.06812 | [src: abstract] |
 | SPT-3G D1 and SPTpol BB | anisotropic birefringence; foreground-marginalised likelihoods public at github.com/lbalkenhol/candl_data | arXiv:2510.07928 | [src] |
 | ACT DR6 | anisotropic birefringence and screening | arXiv:2608.27458 | [src] |
 
@@ -162,7 +162,7 @@ According to the `cosmo-galaxy-clustering` skill, Euclid DR1 clustering products
 
 | When | What | Decides | Source | Flag |
 |---|---|---|---|---|
-| not dated in the sources read | BICEP/Keck "BK24" (data 2016–2024) | whether σ(r) falls below 0.009 | arXiv:2608.25016 | [src] |
+| not dated in the sources read | BICEP/Keck "BK24" (data 2016–2024) | whether σ(r) falls below 0.009 | arXiv:2608.25016 | [src: Sect. 1] |
 | by 2027, survey to 2035 | SO with six SATs | **forecast** σ(r) = 1.2 × 10⁻³ | arXiv:2512.15833 | [src] |
 | early 2029 | SPT-3G+ installation | delensing and small-scale polarisation | arXiv:2608.20236 | [src] |
 | 2027 (per `cosmo-galaxy-clustering`) | DESI full-survey results | f_NL from the full quasar and LRG samples | sibling skill | [sec] |

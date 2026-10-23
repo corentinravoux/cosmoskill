@@ -59,9 +59,9 @@ All numbers in the fourth column are from arXiv:2503.14744 §4.3. When Σm_ν is
 
 These are not the same quantity and their central values must not be compared directly.
 
-1. **Clustering-only extension** (Craig et al. 2024, arXiv:2405.00836): the suppression of clustering is allowed to become an enhancement. Result on DESI DR1 + CMB: −160 ± 90 meV.
+1. **Clustering-only extension** (Craig et al. 2024, arXiv:2405.00836): the suppression of clustering is allowed to become an enhancement. Result on DESI DR1 + CMB: −160 ± 90 meV. [src: abstract]
 2. **Consistent extension** (Elbers et al. 2024, arXiv:2407.10965; adopted in arXiv:2503.14744): a negative neutrino contribution to the energy density at late times, implemented in linear perturbation theory so that every effect of Σm_ν extends to negative values; identical to Σm_ν for positive values. Result on DESI DR2 + CMB: −0.101 (+0.047/−0.056) eV.
-3. **Effective mass with lensing nuisance parameters** (Cozzumbo et al. 2025, arXiv:2511.01967): a signed mass varied together with one parameter for peak smoothing and one for the lensing-potential amplitude. Result: −0.018 (+0.085/−0.089) eV.
+3. **Effective mass with lensing nuisance parameters** (Cozzumbo et al. 2025, arXiv:2511.01967): a signed mass varied together with one parameter for peak smoothing and one for the lensing-potential amplitude. Result: −0.018 (+0.085/−0.089) eV. [src: abstract]
 
 How each is implemented, read in the method sections:
 
@@ -78,7 +78,7 @@ The DESI paper states that evidence for negative values is to be read as unident
 
 - **Bayesian with a positivity prior.** Standard for collaboration limits. The quoted σ(Σm_ν) = 0.020 eV for DESI DR2 + CMB is a property of the truncated posterior.
 - **Profile likelihood with Feldman–Cousins.** The profile in Σm_ν ≥ 0 is close to parabolic; it is extrapolated to a full parabola with minimum μ0 and width σ, and a 95% limit is built with the Feldman–Cousins prescription. DESI DR2 + CMB: μ0 = −0.036 eV, σ = 0.043 eV, limit 0.053 eV (arXiv:2503.14744 Table 3 [src]). The minimisation uses iminuit with 14 free parameters for BAO + CMB and 44 with the full shape.
-- **Agreement between the two.** Naredo-Tuero et al. 2024 (arXiv:2407.13831) find profile-likelihood and Bayesian limits within about 10%. In DESI DR2 the Feldman–Cousins limit is 0.01 eV lower than the Bayesian one in ΛCDM and 0.01 eV higher in w0waCDM.
+- **Agreement between the two.** Naredo-Tuero et al. 2024 (arXiv:2407.13831, Sect. III.1) find profile-likelihood and Bayesian limits within about 10%. In DESI DR2 the Feldman–Cousins limit is 0.01 eV lower than the Bayesian one in ΛCDM and 0.01 eV higher in w0waCDM.
 - **Three widths for one data set.** 0.020 eV (Bayesian, truncated), 0.043 eV (profile parabola), 0.053 eV (effective-mass posterior). Only the last two measure sensitivity.
 - **Tension metrics.** The tension with oscillations is quoted as 3σ from the effective-mass posterior (arXiv:2503.14744) and as 2.5–5σ depending on metric and data (Jiang et al. 2024, arXiv:2407.18047). State the metric.
 - **Model comparison for the ordering.** Bayes factor between NO and IO with equal prior odds and a stated mass prior; the frequentist counterpart is Δχ² between the two minimum-mass points.
@@ -122,7 +122,7 @@ Points that the table does not carry:
 - Standard-Model value: 3.044 (Froustey, Pitrou & Volpe 2020, arXiv:2008.01074 gives 3.0440; QED corrections in Bennett et al. 2019, arXiv:1911.04504). The earlier 3.046 comes from momentum-dependent kinetic equations with three-flavour oscillations, which change the energy-density result little but raise the effect on primordial ⁴He by about 20% (Mangano 2005, arXiv:hep-ph/0506164 [src]).
 - What the CMB measures: the expansion rate before recombination through the damping tail relative to the acoustic scale, and the phase shift. The first is degenerate with the primordial helium fraction (arXiv:astro-ph/0310198); analyses either impose BBN consistency for Y_P or free it.
 - **Free-streaming versus fluid radiation.** N_eff in tables is free-streaming radiation. Self-interacting (fluid) dark radiation produces no phase shift and is constrained separately as N_idr (arXiv:2503.14454: N_idr < 0.134).
-- **Model dependence of ΔN_eff limits.** The ACT limit assumes a power-law primordial spectrum; freeing the running and its running relaxes the limit on self-interacting dark radiation to ΔN_eff < 0.58 (Garny, Niedermann & Sloth 2026, arXiv:2604.26541).
+- **Model dependence of ΔN_eff limits.** The ACT limit assumes a power-law primordial spectrum; freeing the running and its running relaxes the limit on self-interacting dark radiation to ΔN_eff < 0.58 (Garny, Niedermann & Sloth 2026, arXiv:2604.26541). [src: abstract]
 - **Stepped or decoupling dark radiation.** Wess–Zumino dark radiation changes its energy density when a mediator becomes non-relativistic; ACT DR6 closes most of the parameter space in which it raised H0 (Cvetko, Joseph & Marques-Tavares 2025, arXiv:2512.19633).
 - **BBN.** Light-element abundances measure the expansion rate at about one second through N_ν and the baryon density through D/H. The helium prediction depends mainly on the weak rates and the neutron lifetime; the baryon density inferred from D/H depends on the deuterium-burning rates (Pitrou et al. 2018, arXiv:1801.08023; Schöneberg 2024, arXiv:2401.15054). BBN and the CMB probe the radiation density at different epochs, so a difference between them is itself a constraint (Yeh et al. 2022, arXiv:2207.13133).
 - Convention: BBN papers quote N_ν with baseline 3; CMB papers quote N_eff with baseline 3.044. The stated difference is N_eff − 3 = 0.044 (arXiv:2207.13133).
@@ -168,14 +168,14 @@ Limits are derived on the half-mode mass M_hm (or wavelength λ_hm) and then con
 
 | M_hm | m_WDM | Source | Flag |
 |---|---|---|---|
-| 10^7.8 M⊙ | 5.2 keV | Gilman et al. 2019, arXiv:1908.06983 | [src] |
-| 10^7.8 M⊙ | 5.6 keV | Keeley et al. 2025, arXiv:2511.07765 | [src] |
-| 10^7.6 M⊙ | 6.4 keV | arXiv:2511.07765 | [src] |
-| 10^7.4 M⊙ | 6.5 keV | Gilman et al. 2025, arXiv:2511.07513 | [src] |
+| 10^7.8 M⊙ | 5.2 keV | Gilman et al. 2019, arXiv:1908.06983 | [src: abstract] |
+| 10^7.8 M⊙ | 5.6 keV | Keeley et al. 2025, arXiv:2511.07765 | [src: abstract] |
+| 10^7.6 M⊙ | 6.4 keV | arXiv:2511.07765 | [src: abstract] |
+| 10^7.4 M⊙ | 6.5 keV | Gilman et al. 2025, arXiv:2511.07513 | [src: abstract] |
 | 10^7.4 M⊙ | 7.4 keV | Nadler et al. 2021, arXiv:2101.07810 | [src] |
-| 10^7.2 M⊙ | 7.4 keV | arXiv:2511.07513 | [src] |
-| 10^7.0 M⊙ | 9.7 keV | arXiv:2101.07810 | [src] |
-| 3 × 10⁷ M⊙/h (λ_hm = 0.089 Mpc/h) | 6.048 keV | Enzi et al. 2020, arXiv:2010.13802 | [src] |
+| 10^7.2 M⊙ | 7.4 keV | arXiv:2511.07513 | [src: abstract] |
+| 10^7.0 M⊙ | 9.7 keV | arXiv:2101.07810 | [src: abstract] |
+| 3 × 10⁷ M⊙/h (λ_hm = 0.089 Mpc/h) | 6.048 keV | Enzi et al. 2020, arXiv:2010.13802 | [src: abstract] |
 
 The same half-mode mass maps to different keV values in different papers (10^7.8 M⊙ gives 5.2 or 5.6 keV; 10^7.4 M⊙ gives 6.5 or 7.4 keV). The conversion depends on the adopted transfer-function fit, cosmology and unit convention (M⊙ or M⊙/h). Compare limits in M_hm, or re-derive the mass with one relation.
 
@@ -249,10 +249,10 @@ Two models are in use (Simon et al. 2022, arXiv:2203.07440): a fraction f of the
 ## 5. Conventions and where the community is split
 <!-- key: conventions-and-where-the-community-is-split -->
 
-- **Limit level.** Neutrino-mass limits are 95%; KATRIN quotes 90% CL; lensing papers quote Bayes-factor 10:1 or posterior-odds 20:1 bounds next to 95% limits. Liu, Gong & Liao 2025 (arXiv:2512.01361) give both: 6.20 keV at 95% and 5.75 keV at 20:1.
+- **Limit level.** Neutrino-mass limits are 95%; KATRIN quotes 90% CL; lensing papers quote Bayes-factor 10:1 or posterior-odds 20:1 bounds next to 95% limits. Liu, Gong & Liao 2025 (arXiv:2512.01361, abstract) give both: 6.20 keV at 95% and 5.75 keV at 20:1.
 - **Units.** Σm_ν in eV or meV; warm-dark-matter mass in keV for a thermal relic; fuzzy-dark-matter mass in eV; Lyα wavenumbers in s/km; σ/m in cm²/g; dark matter–proton cross sections in cm².
 - **Thermal relic versus sterile neutrino.** The same data give 0.55 keV for a thermal relic and 2.0 keV for a sterile neutrino (Viel et al. 2005, arXiv:astro-ph/0501562). State the production mechanism. Non-resonant production by oscillations with active neutrinos (Dodelson 1994, arXiv:hep-ph/9303287: sterile neutrinos "can be either hot, warm, or cold", and 0.1–1.0 keV gives warm dark matter) differs from lepton-asymmetry-driven resonant production, which gives a colder, non-thermal spectrum (Shi 1999, arXiv:astro-ph/9810076) [src]. Review of production mechanisms and limits: Boyarsky 2019, arXiv:1807.07938 [src].
-- **Bayesian versus frequentist.** Split on neutrino mass (§1.5) and on decaying dark matter, where the two give strongly different 68% regions (Montandon et al. 2025, arXiv:2505.20193).
+- **Bayesian versus frequentist.** Split on neutrino mass (§1.5) and on decaying dark matter, where the two give strongly different 68% regions (Montandon et al. 2025, arXiv:2505.20193). [src: abstract]
 - **Collaboration result versus external reanalysis.** The tightest Σm_ν numbers (0.049 eV in ΛCDM, 0.077 eV in w0waCDM) come from an external EFT reanalysis of DESI DR1 with bispectrum and cross-correlations (Ivanov et al. 2026, arXiv:2601.16165), not from the DESI Collaboration. Not every limit below DESI's own is external: SPT's CMB-SPA + DESI DR2 gives < 0.055 eV (Camphuis et al. 2025, arXiv:2506.20707 Eq. 106 [src]), with Planck removed above ℓ = 1000.
 - **Blinding.** The CMB and BAO inputs are blinded by their collaborations (see `cosmo-cmb`, `cosmo-galaxy-clustering`). No blinding statement was read this session for any of the small-scale dark-matter analyses listed in §3.3.
 

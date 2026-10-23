@@ -247,7 +247,7 @@ arXiv:2608.27830).
 | BAO template fit | α_iso, α_AP on a post-reconstruction ξ_0, ξ_2 with a spline broadband | s > s_min, with s_min = 60 h⁻¹ Mpc in DR2 and 50 in DR1 [src] | Chen et al. 2024, arXiv:2402.14070; arXiv:2503.14738 |
 | Standard compression | α_∥, α_⊥, fσ8 with a fixed template | BOSS and eBOSS consensus results | Alam et al. 2017, arXiv:1607.03155 |
 | ShapeFit | α_iso, α_AP, fσ_s8, slope m | same scales as full modelling | Brieden et al. 2021, arXiv:2106.07641 |
-| Full modelling (EFT) | cosmological parameters directly, one-loop EFT with bias, counterterms, stochastic terms | DESI DR1: 0.02 < k < 0.20 h Mpc⁻¹, ℓ = 0, 2 [src] | arXiv:2411.12021 |
+| Full modelling (EFT) | cosmological parameters directly, one-loop EFT with bias, counterterms, stochastic terms | DESI DR1: 0.02 < k < 0.20 h Mpc⁻¹, ℓ = 0, 2 [src: Sect. 4.7] | arXiv:2411.12021 |
 
 **DESI DR1 BAO template** (DESI Collaboration 2024, arXiv:2404.03000)
 [src: Sect. 4.3–4.4, Eqs. 5–16, Tables 5–6]:

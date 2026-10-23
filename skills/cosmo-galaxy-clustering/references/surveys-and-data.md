@@ -16,14 +16,14 @@ detail beyond what clustering analyses need belongs to
 <!-- key: 2df-galaxy-redshift-survey-2dfgrs -->
 
 - Instrument: 2dF multi-fibre spectrograph on the Anglo-Australian Telescope,
-  400 objects at once over a 2° diameter field [src] (Colless et al. 2001,
+  400 objects at once over a 2° diameter field [src: abstract] (Colless et al. 2001,
   arXiv:astro-ph/0106498).
 - Design: about 250,000 galaxies to b_J = 19.45, 2000 deg², median depth
   z = 0.11 [src] (arXiv:astro-ph/0106498).
 - Final clustering sample: 221,414 galaxies [src] (Cole et al. 2005,
   arXiv:astro-ph/0501174).
 - Result that matters: evidence for baryon oscillations in P(k),
-  Ω_m h = 0.168 ± 0.016, Ω_b/Ω_m = 0.185 ± 0.046 [src]
+  Ω_m h = 0.168 ± 0.016, Ω_b/Ω_m = 0.185 ± 0.046 [src: abstract]
   (arXiv:astro-ph/0501174).
 
 ### 1.2 6dF Galaxy Survey (6dFGS)
@@ -32,9 +32,9 @@ detail beyond what clustering analyses need belongs to
 - Southern sky at |b| > 10°; 125,071 galaxies in the final catalogue, median
   redshift 0.053 [src] (Jones et al. 2009, arXiv:0903.5451).
 - BAO at z_eff = 0.106: D_V = 456 ± 27 Mpc, H0 = 67 ± 3.2 km/s/Mpc with the
-  WMAP-7 sound horizon [src] (Beutler et al. 2011, arXiv:1106.3366).
+  WMAP-7 sound horizon [src: abstract] (Beutler et al. 2011, arXiv:1106.3366).
 - It is the lowest-redshift BAO point of the pre-DESI compilations; the
-  lowest DESI bin is BGS at z_eff = 0.295 [src] (arXiv:2503.14738).
+  lowest DESI bin is BGS at z_eff = 0.295 [src: Sect. III.1] (arXiv:2503.14738).
 
 ### 1.3 WiggleZ
 <!-- key: wigglez -->
@@ -48,10 +48,10 @@ detail beyond what clustering analyses need belongs to
 <!-- key: sdss-i-ii -->
 
 - LRG sample of the first BAO detection: 46,748 galaxies, 3816 deg²,
-  0.16 < z < 0.47, 0.72 h⁻³ Gpc³ [src] (Eisenstein et al. 2005,
+  0.16 < z < 0.47, 0.72 h⁻³ Gpc³ [src: abstract] (Eisenstein et al. 2005,
   arXiv:astro-ph/0501171).
 - DR7 Main Galaxy Sample for BAO: z < 0.2, 6813 deg², bias about 1.5, 1000
-  mocks [src] (Ross et al. 2015, arXiv:1409.3242).
+  mocks [src: abstract] (Ross et al. 2015, arXiv:1409.3242).
 
 ### 1.5 BOSS (SDSS-III)
 <!-- key: boss-sdss-iii -->
@@ -93,7 +93,7 @@ arXiv:2503.14738).
 ### 2.1 DESI
 <!-- key: desi -->
 
-**Instrument** [src] (DESI Collaboration 2022, arXiv:2205.10939): 4 m Mayall
+**Instrument** [src: abstract] (DESI Collaboration 2022, arXiv:2205.10939): 4 m Mayall
 telescope, Kitt Peak; 3.2° diameter prime-focus corrector; 5020 robotic fibre
 positioners in ten petals; ten three-arm spectrographs covering 360–980 nm at
 resolution 2000–5000. Survey start: May 2021.
@@ -159,7 +159,7 @@ Changes from DR1 to DR2 [src] (arXiv:2503.14738):
   BAO analysis uses 1.19 million of them. Using all would add about 20% of
   effective volume [src].
 - Lyα: over 820,000 forest spectra and over 1.2 million quasar positions,
-  about twice DR1 [src] (DESI Collaboration 2025, arXiv:2503.14739).
+  about twice DR1 [src: abstract] (DESI Collaboration 2025, arXiv:2503.14739).
 
 **Mocks.** AbacusSummit N-body (Maksimova et al. 2021, arXiv:2110.11398) with
 HODs fitted to early data for validation; EZmocks for covariance (Chuang et
@@ -195,7 +195,7 @@ with further papers planned in 2026.
   Release 2 (Q2), 24 June 2026. No other public release is listed. None of
   the three is a cosmology release.
 - Q1 content: 63.1 deg² of the Euclid Deep Fields at wide-survey depth, about
-  30 million objects, processed with early pipelines [src] (Euclid
+  30 million objects, processed with early pipelines [src: abstract] (Euclid
   Collaboration: Aussel et al. 2025, arXiv:2503.15302).
 - Q2 content: the Euclid Galactic Bulge Survey, 4.8 deg² over nine adjoining
   fields, VIS calibrated images with astrometry and photometry catalogues for
@@ -217,7 +217,7 @@ with further papers planned in 2026.
   timeline page, dated 15 June 2026, which gives "November 2026" and
   "mid-2027"; IPAC Euclid DR1 page for the day and the observation dates).
 - The BAO pipeline was validated end to end on mocks for 0.9 ≤ z ≤ 1.8
-  (Euclid Collaboration: Sarpa et al. 2026, arXiv:2605.03446).
+  (Euclid Collaboration: Sarpa et al. 2026, arXiv:2605.03446). [src: abstract]
 - No Euclid spectroscopic clustering measurement on data was found as of the
   snapshot.
 
@@ -226,10 +226,10 @@ with further papers planned in 2026.
 
 - 8.2 m Subaru; 1.25 deg² field; 2386 science fibres; offered to the
   community since March 2025, with queue observing and "fibre hours" as the
-  allocation unit [src] (Tanaka et al. 2026, arXiv:2606.14012).
+  allocation unit [src: abstract] (Tanaka et al. 2026, arXiv:2606.14012).
 - Cosmology programme as designed (**forecast**): emission-line galaxies over
   0.8 < z < 2.4 in 9.3 (Gpc/h)³; distances to 3% in each of six redshift bins
-  from BAO; growth to 6% from RSD; 300 nights assumed [src] (Takada et al.
+  from BAO; growth to 6% from RSD; 300 nights assumed [src: abstract] (Takada et al.
   2014, arXiv:1206.0737).
 - No PFS clustering result was found as of the snapshot.
 
@@ -246,7 +246,7 @@ with further papers planned in 2026.
   quote ESO's date.
 - Cosmology Redshift Survey (CRS): 5.4 million redshifts over about 5700 deg²
   from bright galaxies, LRGs and quasars, selected from Legacy Survey DR10.1
-  imaging [src] (Bandi et al. 2025, arXiv:2510.02449). **Planned**, not yet
+  imaging [src: abstract] (Bandi et al. 2025, arXiv:2510.02449). **Planned**, not yet
   observed at the time of that paper.
 
 ### 2.5 SPHEREx
@@ -267,7 +267,7 @@ with further papers planned in 2026.
 - Reference High Latitude Spectroscopic Survey (**forecast**, 2021 reference
   design): 2000 deg² with the near-IR grism (1.0–1.93 μm, R = 435–865), about
   10 million Hα redshifts at z = 1–2 and 2 million [O III] redshifts at
-  z = 2–3, in about 0.6 years of observing [src] (Wang et al. 2022,
+  z = 2–3, in about 0.6 years of observing [src: abstract] (Wang et al. 2022,
   arXiv:2110.01829). The survey as finally defined (High Latitude Wide Area
   Survey) was not read this session.
 
@@ -277,7 +277,7 @@ with further papers planned in 2026.
 - **DESI extension** (through 2028, to about 17,000 deg²): Sect. 2.1.
 - **Spec-S5**: two 4 m telescopes upgraded to 6 m wide-field facilities, each
   with 13,000 fibres; more than a tenfold gain in spectroscopic capability;
-  concept and overview stage [src] (Poppett et al. 2026, arXiv:2608.07927).
+  concept and overview stage [src: abstract] (Poppett et al. 2026, arXiv:2608.07927).
 - **Euclid DR1 clustering products**: mid-2027; DR2 June 2029 and DR3 October
   2031, tentative (Sect. 2.2).
 - **DESI final-survey BAO**: 2027 (Sect. 2.1).

@@ -93,7 +93,7 @@ Three forms are in use.
 **SPT** (arXiv:2310.12213, Sect. VI):
 
     P(ξ | ζ) = N( sqrt(ζ² + 3), 1 )                                   (Eq. 40)
-    ⟨ln ζ⟩ = ln A_SZ + B_SZ ln(M200c / 3e14 M_sun/h) + C_SZ ln(E(z)/E(0.6))   (Eq. 41)
+    ⟨ln ζ⟩ = ln A_SZ + B_SZ ln(M200c / 3e14 M_sun/h) + C_SZ ln(E(z)/E(0.6))   (Eq. 41, arXiv:2310.12213)
 
 ζ is the "unbiased significance", the significance at the true position and
 scale; the "+3" accounts for maximisation over three free parameters (R.A.,

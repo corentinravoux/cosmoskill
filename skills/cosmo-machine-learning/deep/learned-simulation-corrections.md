@@ -134,7 +134,7 @@ The tests read in the bodies, in the order they are usually run:
    fiducial cosmology but very different r(k) [src: arXiv:2207.05509, Sect. 5].
 3. **Bispectrum, haloes, profiles, RSD.** The styled U-Net's low-mass haloes (M < 5 × 10¹³ M_⊙/h)
    are 10–20% too abundant; profiles of 500 haloes of ~5 × 10¹⁴ M_⊙/h beat COLA [src:
-   arXiv:2206.04594, Halos].
+   arXiv:2206.04594, Halos]. [src: Sect. "Halos"]
 4. **Outside the training cosmology.** NECOLA, trained at one cosmology, is tested on 100
    Latin-hypercube runs (five parameters varied), on M_ν = 0.1, 0.2, 0.4 eV and on w = −0.95,
    −1.05 runs, below ~1% to k = 1 h Mpc⁻¹ [src: arXiv:2111.02441, Sect. III.2]. MG-NECOLA is
@@ -258,7 +258,7 @@ the full field but with the resolution limit above.
   `systematics.md#simulator-dependence` for the measured cost of such transfers.
 - **Rare objects absent from training.** Sixteen 100 h⁻¹Mpc pairs hold few massive clusters; the SR
   authors propose separate-universe or constrained runs to enrich them [src: arXiv:2010.06608,
-  Discussion].
+  Discussion]. [src: Sect. "Keywords:"]
 - **Projection effects.** BIND's 50 h⁻¹Mpc projections include foreground and background matter and
   sometimes several haloes [src: arXiv:2609.10709, Sect. III.1]. Test: retrain on halo-centred
   6.25 h⁻¹Mpc cubes, as in its App. C.

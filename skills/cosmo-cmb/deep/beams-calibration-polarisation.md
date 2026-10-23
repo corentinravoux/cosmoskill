@@ -76,7 +76,7 @@ Stated reasons for the choices:
 b_ℓ = (2π/Ω) ∫ B(θ) P_ℓ(cos θ) d(cos θ) (arXiv:2112.12226, Eq. 21), with
 the model extrapolated beyond the fit radius to capture the low-ℓ part and
 the solid angle outside it [src: Sect. IV.3]. ACT then divides out, in
-order [src: Sect. IV.4]:
+order (arXiv:2112.12226) [src: Sect. IV.4]:
 
 | Correction | Size for ℓ < 10,000 | Place |
 |---|---|---|
@@ -109,7 +109,7 @@ pointing errors, alignment and changes over a season.
   of Eq. 23 [src: Sect. IV.5]. The method was validated by injecting
   simulated sources with known V into real data [src].
 - Negative V is allowed, because V absorbs all beam-altering effects, not
-  only pointing [src: Sect. IV.5]. The 98 GHz jitter of PA3 is much larger
+  only pointing (arXiv:2112.12226) [src: Sect. IV.5]. The 98 GHz jitter of PA3 is much larger
   than at 150 GHz (e.g. 190.9 ± 7.0 against 6.6 ± 5.8 arcsec² in Deep56),
   which the authors read as seasonal beam change rather than pointing
   [src: Table 3, Sect. IV.5].
@@ -203,7 +203,7 @@ all three tie it to the CMB itself.
   this pushes polarisation parameters toward temperature, and check that
   marginalising the absolute T-to-P calibration leaves parameters
   unchanged [src].
-- The TE-based check, Eq. 46, gives c_100^TE = 1.04 ± 0.02,
+- The TE-based check of arXiv:1907.12875, Eq. 46, gives c_100^TE = 1.04 ± 0.02,
   c_143^TE = 1.00 ± 0.02, c_217^TE = 1.02 ± 0.02 (Eq. 47), about 1σ from
   the EE values at 100 and 217 GHz and more at 143 GHz [src]. End-to-end
   simulations show no such difference; correlated noise, a residual
@@ -241,7 +241,7 @@ all three tie it to the CMB itself.
   Sect. IV.2.3]. Stated reason: no polarised source in the field is bright
   enough to map the polarised beam, and sidelobes from scattering and
   panel gaps need not be polarised like the main beam [src: App. B.2].
-- Quadrupolar leakage (SPT). Leakage beams are Hermite expansions around
+- Quadrupolar leakage (SPT, arXiv:2506.20707). Leakage beams are Hermite expansions around
   a Gaussian (Eq. 122), fitted on 25 coadds built from 418 bright-source
   thumbnails; the spin-2 amplitude is
   ε₂ = (a_{2,0}^{T→Q} − a_{0,2}^{T→Q} + a_{1,1}^{T→U})/2 (Eq. 124), propagated
@@ -286,7 +286,8 @@ all three tie it to the CMB itself.
   agreement and risks pulling polarisation parameters toward TT; the
   authors found the TT/TE/EE agreement decreased rather than increased
   after these corrections [src: arXiv:1907.12875, Sect. 3.3.4].
-- Free with a broad prior (ACT ±10%, SPT U(0.8, 1.2)): model-independent
+- Free with a broad prior (ACT uniform 0.9–1.1, arXiv:2503.14452, Table 4;
+  SPT U(0.8, 1.2), arXiv:2506.20707, Table 9): model-independent
   amplitude, at a cost for EE-only constraints, which ACT quantifies as a
   doubling of σ(Ω_c h²) and σ(H₀) (L2). ACT reports that freeing the Planck
   efficiency does not broaden the P-ACT EE posteriors
@@ -306,9 +307,10 @@ all three tie it to the CMB itself.
   test went from PTE 0.004 to 51% [src].
 - The direct point-source measurement uses the same one-parameter model,
   written B_pol = (1 − β_pol)B_main + β_pol B_full (arXiv:2602.06334,
-  Eq. 3), and draws 55–70% of its precision from ℓ > 3000 [der: 100% minus
-  the 45% (95, 220 GHz) and 30% (150 GHz) below ℓ = 3000, Sect. 4.2], while the
-  spectra constrain β_pol at ℓ ≲ 3000. The authors list a scale-dependent
+  Eq. 3), and draws about 45% (95 and 220 GHz) and 30% (150 GHz) of its
+  precision from ℓ < 3000, the rest mostly from 3000 ≲ ℓ ≲ 10,000
+  [src: Sects. 4.2 and 4.3], while the spectra constrain β_pol at
+  ℓ ≲ 3000 [src: Sect. 5.2]. The authors list a scale-dependent
   polarised beam as one possible reconciliation; their ℓ-restricted fits
   find no significant scale dependence (weakest p = 0.08 before
   look-elsewhere) [src: Sect. 5.2].
@@ -404,7 +406,8 @@ Two lessons the papers draw themselves:
   3.3.4–3.3.5 — beam matrices, model-based efficiencies, the 143 GHz TE/EE
   efficiency puzzle.
 - Critique: de Haan et al. 2026, arXiv:2602.06334 — direct β_pol from point
-  sources, and the three readings of its 1.3σ difference with the spectra.
+  sources, and the three readings of its 1.3σ difference with the spectra
+  [src: abstract].
 
 ## Not verified
 <!-- key: not-verified -->
@@ -416,6 +419,7 @@ Two lessons the papers draw themselves:
   paper's calibration appendix were not read; the SPT beam covariance
   construction is as summarised in arXiv:2506.20707.
 - The Planck HFI processing paper that gives the 3 × 10⁻⁴ gain precision
-  was not read; the number is quoted from arXiv:1907.12875 [sec].
+  was not read; the number is quoted from arXiv:1907.12875 [sec: section
+  "Beams and beam-leakage uncertainty", citing its Table 7].
 - Hardware polarisation-angle calibrators (wire grids, Tau A, drones) are
   in `cosmo-inflation-primordial` (birefringence) and not repeated here.

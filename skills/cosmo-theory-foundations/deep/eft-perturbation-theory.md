@@ -312,7 +312,7 @@ coefficients, wider k range, no σ8 gain on the sample tested
   the renormalisation-scale dependence (k_ren. = 0.1 against 0.18 h/Mpc) is
   "a measure of the importance of higher loops".
 - **EdS velocity kernels in a precision RSD fit.** The quadrupole error
-  reaches 1.7% at k = 0.3 h/Mpc, z = 0 (arXiv:2605.05114). Test: rerun with
+  reaches 1.7% at k = 0.3 h/Mpc, z = 0 (arXiv:2605.05114, abstract). Test: rerun with
   exact time dependence (spectral or gauge method) at the highest k_max.
 - **Copied vertex values.** Reproduce ν_n, μ_n from Eqs. 50–51 rather than
   copying Eq. 52: its printed μ_2 differs in sign from what Eqs. 50–51

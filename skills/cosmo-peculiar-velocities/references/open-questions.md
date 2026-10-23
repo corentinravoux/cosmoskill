@@ -24,13 +24,13 @@ advises against citing the excess as established.
   36 at 200 h⁻¹Mpc in CF4, against expectations of 139 and 120; probabilities 0.023 % and 0.00021 %
   [src: Table 1].
 - Whitford, Howlett & Davis 2023 (arXiv:2306.11269): confirm the amplitude with mock-calibrated
-  errors, 428 ± 108 km/s at 173 h⁻¹Mpc, probability 0.11 % [src].
+  errors, 428 ± 108 km/s at 173 h⁻¹Mpc, probability 0.11 % [src: abstract].
 - Duangchan et al. 2025 (arXiv:2507.22236): a forward model with no ΛCDM prior on the velocity field
-  finds "a 3σ tension … around 140 Mpc/h and 240 Mpc/h" [src].
+  finds "a 3σ tension … around 140 Mpc/h and 240 Mpc/h" [src: abstract].
 - Watkins, Clark & Feldman 2025 (arXiv:2512.03168): the flow is "dominated by sources beyond 200
-  Mpc/h", with the external part rising with scale [src].
+  Mpc/h", with the external part rising with scale [src: abstract].
 - Courtois et al. 2025 (arXiv:2502.01308): no dynamical homogeneity scale within 200–300 h⁻¹Mpc in
-  CF4++; their bulk flow at 150 h⁻¹Mpc is 315 ± 40 km/s [src].
+  CF4++; their bulk flow at 150 h⁻¹Mpc is 315 ± 40 km/s [src: abstract].
 
 **Against.**
 
@@ -40,16 +40,16 @@ advises against citing the excess as established.
   **localised** at 120–160 h⁻¹Mpc (|V_dip| = 628 ± 82 km/s, 3.40σ), concentrated towards negative
   supergalactic X, and "depends strongly on the survey window": removing 6dFGS lowers the deviation
   to 1.56σ, removing SNe raises it to 3.77σ; TF and 6dFGS favour larger dipoles, SDSS and SNe
-  smaller ones [src].
+  smaller ones [src: abstract].
 - Stiskalek, Desmond & Lavaux 2025 (arXiv:2509.14997): a general bulk-flow curve from TF and SN
   samples at z < 0.05 is "fully consistent with expectations from the standard cosmological model"
   [src].
 - Do et al. 2026 (arXiv:2606.17142): SN Ia flows of ~100–400 km/s within z ≲ 0.1, "all consistent
   with the predictions of ΛCDM", with the spread between two estimators, two distance estimators and
-  two wavelength regimes presented as the systematic [src].
+  two wavelength regimes presented as the systematic [src: abstract].
 - Dressler & Monson 2026 (arXiv:2604.02470): 5 % SBF distances show a ~1000 km/s infall over a
   steradian converging to zero at ~70 Mpc, "at odds with reports of comparable amplitude bulk flows
-  on scales of hundreds of Mpc" [src].
+  on scales of hundreds of Mpc" [src: abstract].
 - kSZ: no flow in Planck clusters (< 254 km/s at 95 % CL, arXiv:1303.5090); upper limits at 200–2000
   h⁻¹Mpc consistent with ΛCDM (arXiv:2605.12499) [src].
 - Hollinger & Hudson 2024 (arXiv:2312.03904): the residual flows of velocity–density comparisons are
@@ -112,7 +112,7 @@ They are not contradictory — different estimators, different TF samples (HI li
 single-fibre optical rotation at 0.4 R26 in DESI), and the DESI TF error bar is large — but neither
 supports a blanket statement about an indicator. Common ground: environment-correlated residuals
 exist in both relations (group-richness trend in SDSS and DESI FP; Millennium-TNG, arXiv:2602.23033)
-[src].
+[src: Sect. A.2].
 
 Open: whether the DESI FP group trend is physical or photometric ("the difference in amplitude works
 against" a physical origin, arXiv:2512.03226); the cause of the TF excess at z > 0.05; whether the
@@ -208,20 +208,20 @@ arXiv:2512.03229 and as 0.446 in arXiv:2512.03230 [src].
 
 | Survey or combination | Forecast | Method | Citation | Flag |
 |---|---|---|---|---|
-| TAIPAN + WALLABY/WNSHS | ~3 % on fσ8 at z ~ 0.025; velocities improve the constraint by ~40 % over density alone; factor ~2 if all modes to k = 0.2 h Mpc⁻¹ are used | Fisher | Koda et al. 2014, arXiv:1312.1022 | [src] |
+| TAIPAN + WALLABY/WNSHS | ~3 % on fσ8 at z ~ 0.025; velocities improve the constraint by ~40 % over density alone; factor ~2 if all modes to k = 0.2 h Mpc⁻¹ are used | Fisher | Koda et al. 2014, arXiv:1312.1022 | [src: abstract] |
 | same, combined surveys | ~3 %; adding 2MTF (~2 000 galaxies) to 6dFGS improves fσ8 by ~20 % | Fisher | arXiv:1609.08247 | [src] |
 | DESI PV + BGS, full survey | 4 % statistical at z < 0.15, "over two times better" than BGS redshifts alone | Fisher | Saulder et al. 2023, arXiv:2302.13760 | [src] |
-| DESI PV vs BGS RSD | uncertainty reduced "by a factor of approximately 2.5 at redshift 0.1" | — | Said et al. 2025, arXiv:2408.13842 | [src] |
+| DESI PV vs BGS RSD | uncertainty reduced "by a factor of approximately 2.5 at redshift 0.1" | — | Said et al. 2025, arXiv:2408.13842 | [src: abstract] |
 | ZTF SNe, 6 years, z < 0.06 | 19 % | mocks + maximum likelihood | arXiv:2303.01198 | [src] |
-| ZTF 6-year SNe + DESI DR3 BGS | σ(fσ8) = +0.047/−0.048, a 10 % error; up to 50 % reduction from adding the density | field-level on dedicated simulation | Ravoux et al. 2026, arXiv:2609.34508 | [src] |
+| ZTF 6-year SNe + DESI DR3 BGS | σ(fσ8) = +0.047/−0.048, a 10 % error; up to 50 % reduction from adding the density | field-level on dedicated simulation | Ravoux et al. 2026, arXiv:2609.34508 | [src: abstract] |
 | ZTF + LSST SNe | 5 % on fD "by 2027" | analytical | Graziani et al. 2020, arXiv:2001.09095 | [src] |
-| LSST SNe, 5 years, SN data alone | σ(σ8) = 0.17, or 0.09 with 20 % completeness | exact likelihood + Fisher | Garcia et al. 2020, arXiv:1905.00746 | [src] |
-| LSST SNe, realistic simulation | 10 % over 0.02 < z < 0.14; < 18 % in each of three bins | mocks + maximum likelihood | arXiv:2507.00157 | [src] |
+| LSST SNe, 5 years, SN data alone | σ(σ8) = 0.17, or 0.09 with 20 % completeness | exact likelihood + Fisher | Garcia et al. 2020, arXiv:1905.00746 | [src: abstract] |
+| LSST SNe, realistic simulation | 10 % over 0.02 < z < 0.14; < 18 % in each of three bins | mocks + maximum likelihood | arXiv:2507.00157 | [src: abstract] |
 | LSST + DESI SNe with high-z RSD | σ(γ) ≈ 0.02 | Fisher | Kim & Linder 2020, arXiv:1911.09121 | [src] |
 | LSST + 4MOST, 6×2pt | area in (σ8, γ) shrinks "by more than half" against clustering alone | Fisher | Quartin et al. 2022, arXiv:2111.05185 | [src] |
 | Next-generation SN surveys × galaxies | "a further order of magnitude" on fσ8 over the Pantheon+ × BGS result | N-body scaling | arXiv:2510.07673 | [src] |
 | Einstein Telescope sirens + DESI/TAIPAN | ~3 % on fσ8, σ(γ) ≲ 0.04 | Fisher | arXiv:2005.04325 | [src] |
-| Neutrino mass with velocities | Σm_ν ≈ 0.14 eV (68 %) attainable without Planck; marginal gain with Planck | Fisher | Whitford, Howlett & Davis 2022, arXiv:2112.10302 | [src] |
+| Neutrino mass with velocities | Σm_ν ≈ 0.14 eV (68 %) attainable without Planck; marginal gain with Planck | Fisher | Whitford, Howlett & Davis 2022, arXiv:2112.10302 | [src: abstract] |
 | V̂_G (kSZ velocity × CMB lensing) | S/N ~ 20–55 for ACT/SO × DESI | forecast | arXiv:2510.27605 | [src] |
 | Whole programme | ≲ 3 % on fσ8 to z = 0.3 | review statement | Turner 2024, arXiv:2411.19484, via the 2026-08 compilation (`surveys-and-data.md` §6) | [sec] |
 

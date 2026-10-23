@@ -16,14 +16,14 @@ body read; `[sec]` named secondary source; `[der]` derived here.
 | Survey, tracer | Selection | Target density | Source |
 |---|---|---|---|
 | BOSS CMASS and LOWZ | colour cuts on SDSS imaging; code MKSAMPLE released | — | Reid et al. 2015, arXiv:1509.06529 [src] |
-| eBOSS LRG | SDSS + WISE colours, z < 19.95, 19.9 < i < 21.8 | ~50 deg⁻² | Prakash et al. 2015, arXiv:1508.04478 [src] |
-| eBOSS QSO (CORE) | XDQSOz likelihood + mid-IR–optical cut, g < 22 or r < 22; PTF variability for z > 2.1 | ~70 deg⁻² at 0.9 < z < 2.2 and ~7 deg⁻² at z > 2.1 expected | Myers et al. 2015, arXiv:1508.04472 [src] |
-| eBOSS ELG | g−r vs r−z box + g cut on DECaLS | 200 (NGC), 240 (SGC) deg⁻² | Raichoor et al. 2017, arXiv:1704.00338 [src] |
-| DESI BGS | r < 19.5 (Bright), 19.5 < r < 20.175 colour-selected (Faint) | — | Hahn et al. 2022, arXiv:2208.08512 [src] |
-| DESI LRG | g, r, z, W1 from Legacy Surveys | 605 deg⁻²; n = 5×10⁻⁴ h³ Mpc⁻³ at 0.4 < z < 0.8 | Zhou et al. 2022, arXiv:2208.08515 [src] |
-| DESI ELG | g cut + (g−r) vs (r−z) box, two disjoint subsamples | ~1940 and ~460 deg⁻² | Raichoor et al. 2022, arXiv:2208.08513 [src] |
-| DESI QSO | random forest on g, r, z, W1, W2, 16.5 < r < 23 | 310 deg⁻² | Chaussidon et al. 2022, arXiv:2208.08511 [src] |
-| 4MOST CRS BG, LRG | from Legacy Surveys DR10.1 | 5.4 million redshifts over ~5700 deg² planned | Bandi et al. 2025, arXiv:2510.02449 [src] |
+| eBOSS LRG | SDSS + WISE colours, z < 19.95, 19.9 < i < 21.8 | ~50 deg⁻² | Prakash et al. 2015, arXiv:1508.04478 [src: abstract] |
+| eBOSS QSO (CORE) | XDQSOz likelihood + mid-IR–optical cut, g < 22 or r < 22; PTF variability for z > 2.1 | ~70 deg⁻² at 0.9 < z < 2.2 and ~7 deg⁻² at z > 2.1 expected | Myers et al. 2015, arXiv:1508.04472 [src: abstract] |
+| eBOSS ELG | g−r vs r−z box + g cut on DECaLS | 200 (NGC), 240 (SGC) deg⁻² | Raichoor et al. 2017, arXiv:1704.00338 [src: abstract] |
+| DESI BGS | r < 19.5 (Bright), 19.5 < r < 20.175 colour-selected (Faint) | — | Hahn et al. 2022, arXiv:2208.08512 [src: abstract] |
+| DESI LRG | g, r, z, W1 from Legacy Surveys | 605 deg⁻²; n = 5×10⁻⁴ h³ Mpc⁻³ at 0.4 < z < 0.8 | Zhou et al. 2022, arXiv:2208.08515 [src: abstract] |
+| DESI ELG | g cut + (g−r) vs (r−z) box, two disjoint subsamples | ~1940 and ~460 deg⁻² | Raichoor et al. 2022, arXiv:2208.08513 [src: abstract] |
+| DESI QSO | random forest on g, r, z, W1, W2, 16.5 < r < 23 | 310 deg⁻² | Chaussidon et al. 2022, arXiv:2208.08511 [src: abstract] |
+| 4MOST CRS BG, LRG | from Legacy Surveys DR10.1 | 5.4 million redshifts over ~5700 deg² planned | Bandi et al. 2025, arXiv:2510.02449 [src: abstract] |
 
 The trend is from colour boxes to likelihood and machine-learning selections
 (XDQSOz in eBOSS, a random forest for DESI quasars) and from SDSS imaging to

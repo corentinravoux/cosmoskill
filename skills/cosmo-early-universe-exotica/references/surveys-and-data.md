@@ -14,14 +14,14 @@ major arrays is at the ~2–4σ level (arXiv:2412.01153) [src].
 
 | Array | Data set | Pulsars, span | Telescopes | Headline (abstract) | Citation | Flag |
 |---|---|---|---|---|---|---|
-| NANOGrav | 15 yr data set (2023) | 67 pulsars in the GWB analysis; 16.03 yr | Arecibo, GBT, VLA | HD-correlated background, p ≈ 10⁻³ (Bayes-factor null) and 5 × 10⁻⁵–1.9 × 10⁻⁴ (frequentist) | arXiv:2306.16213 | [src] |
-| EPTA + InPTA | EPTA DR2 (24.7 yr full; 10.3 yr "new" subset), InPTA DR1 for ten common pulsars | 25 pulsars | European telescopes; uGMRT for InPTA | Bayes factor 60, false-alarm 0.1% for the 10.3 yr subset | arXiv:2306.16214 | [src] |
-| PPTA | DR3 | 30 pulsars, 18 yr | Parkes (Murriyang) | HD significance p ≲ 0.02 (~2σ); signal strength time-dependent | arXiv:2306.16215 | [src] |
+| NANOGrav | 15 yr data set (2023) | 67 pulsars in the GWB analysis; 16.03 yr | Arecibo, GBT, VLA | HD-correlated background, p ≈ 10⁻³ (Bayes-factor null) and 5 × 10⁻⁵–1.9 × 10⁻⁴ (frequentist) | arXiv:2306.16213 | [src: Sect. VI] |
+| EPTA + InPTA | EPTA DR2 (24.7 yr full; 10.3 yr "new" subset), InPTA DR1 for ten common pulsars | 25 pulsars | European telescopes; uGMRT for InPTA | Bayes factor 60, false-alarm 0.1% for the 10.3 yr subset | arXiv:2306.16214 | [src: abstract] |
+| PPTA | DR3 | 30 pulsars, 18 yr | Parkes (Murriyang) | HD significance p ≲ 0.02 (~2σ); signal strength time-dependent | arXiv:2306.16215 | [src: abstract] |
 | CPTA | DR1 | — (FAST observations) | FAST | 4.6σ HD around 14 nHz with the discrete-frequency method | arXiv:2306.16216 | [src] |
-| MPTA | 4.5 yr data release | 83 pulsars, ~250,000 arrival times, median error 3 μs | MeerKAT | HD 3–3.4σ in one noise model, insignificant in others | arXiv:2412.01153 | [src] |
-| InPTA | DR2 | 27 pulsars, up to 7.2 yr, two bands | uGMRT | CURN Bayes factor 2.5; HD consistent with zero; A_GWB < 3.4 × 10⁻¹⁴ at γ = 13/3 | arXiv:2608.02808 | [src] |
+| MPTA | 4.5 yr data release | 83 pulsars, ~250,000 arrival times, median error 3 μs | MeerKAT | HD 3–3.4σ in one noise model, insignificant in others | arXiv:2412.01153 | [src: abstract] |
+| InPTA | DR2 | 27 pulsars, up to 7.2 yr, two bands | uGMRT | CURN Bayes factor 2.5; HD consistent with zero; A_GWB < 3.4 × 10⁻¹⁴ at γ = 13/3 | arXiv:2608.02808 | [src: abstract] |
 | IPTA | comparison of 2023 results | all five arrays | — | GWB parameters agree within 1σ across arrays; DR3 combination in preparation | arXiv:2309.00693 | [src] |
-| Independent combination | public data of five PTAs | 121 pulsars | — | consistent with non-zero amplitude, below 5σ; reconstructed correlation matches HD | arXiv:2512.08666 | [src] |
+| Independent combination | public data of five PTAs | 121 pulsars | — | consistent with non-zero amplitude, below 5σ; reconstructed correlation matches HD | arXiv:2512.08666 | [src: abstract] |
 
 The InPTA DR2 paper estimates that a baseline of at least 10 yr is needed
 before its data start to recover the common red noise (arXiv:2608.02808)
@@ -40,7 +40,7 @@ models by "direct combination" instead of choosing a single timing model
   then required in 10 of 12 pulsars instead of 5, an extra chromatic term
   appears in eight, and unmodelled solar-wind delays near conjunction are
   absorbed into the dispersion measure (Iraci et al. 2025,
-  arXiv:2510.04639) [src]. The noise model of a pulsar thus depends on the
+  arXiv:2510.04639) [src: abstract]. The noise model of a pulsar thus depends on the
   frequency coverage of the data, which feeds directly into the background
   inference.
 - InPTA DR2 single-pulsar noise analysis of 27 pulsars: pulsars with baselines ≲ 2.5 yr show Gaussian
@@ -57,7 +57,7 @@ models by "direct combination" instead of choosing a single timing model
 
 | Data | Observing runs | Band dominating the limit | Citation | Flag |
 |---|---|---|---|---|
-| LIGO–Virgo O3 (+ O1, O2) | to 2020 | 20–76.6 Hz for a flat spectrum | arXiv:2101.12130 | [src] |
+| LIGO–Virgo O3 (+ O1, O2) | to 2020 | 20–76.6 Hz for a flat spectrum | arXiv:2101.12130 | [src: abstract] |
 | LVK O1–O4a | to the end of O4a | — | arXiv:2508.20721 | [src] |
 | LVK O1 to 1 April 2025 (within O4) | adds O4 data, re-processes earlier O4 data with new frequency-domain cuts for non-stationary spectral lines | — | arXiv:2608.23477 | [src] |
 
@@ -79,8 +79,8 @@ arXiv:2101.12130) [src].
 |---|---|---|---|---|
 | NANOGrav 15 yr | f_i = i/T, T = 16.03 yr; first bin ~2 nHz, bin 2 at 3.95 nHz | minimum noise characteristic strain 7 × 10⁻¹⁵ at 5 nHz | arXiv:2306.16213; arXiv:2306.16218 | [src: Fig. 6 caption; src] |
 | PTAs in general | 10⁻⁹ – 10⁻⁶ Hz | — | arXiv:2204.05434 | [src: Sect. 5.1.3] |
-| LVK O3 | 20–76.6 Hz (α = 0), 20–90.6 Hz (α = 2/3), 20–291.6 Hz (α = 3), 99% of sensitivity | — | arXiv:2101.12130 | [src] |
-| LISA | 0.1 mHz – 1 Hz | — | arXiv:2402.07571 | [src] |
+| LVK O3 | 20–76.6 Hz (α = 0), 20–90.6 Hz (α = 2/3), 20–291.6 Hz (α = 3), 99% of sensitivity | — | arXiv:2101.12130 | [src: abstract] |
+| LISA | 0.1 mHz – 1 Hz | — | arXiv:2402.07571 | [src: abstract] |
 | Binary pulsars, Earth–Moon resonances | ~1 μHz | Ω_GW ≳ 6 × 10⁻⁶ excluded; ≳ 5 × 10⁻⁹ by the late 2030s (**forecast**) | arXiv:2204.05434 | [src: Sect. 5.1.3] |
 | CMB B modes (Planck + BICEP/Keck) | f = 7.7 × 10⁻¹⁷ Hz | Ω_GW h² < 1.5 × 10⁻¹⁶ from r < 0.036 | arXiv:2204.05434 | [src: Sect. 5.1.3] |
 
@@ -93,9 +93,9 @@ nHz, consistent with f₂ = 3.95 nHz quoted for the second bin.
 | Survey | Targets | Data behind the limit | Citation | Flag |
 |---|---|---|---|---|
 | MACHO | Magellanic Clouds | claimed halo lens population; disputed by EROS and OGLE | cited via arXiv:2601.06024 and arXiv:2509.05400 | [src] |
-| EROS-2 | LMC and SMC | 33 × 10⁶ stars monitored 6.7 yr; bright-star subsample of 7 × 10⁶ over 84 deg² (LMC) and 9 deg² (SMC) | arXiv:astro-ph/0607207 | [src] |
+| EROS-2 | LMC and SMC | 33 × 10⁶ stars monitored 6.7 yr; bright-star subsample of 7 × 10⁶ over 84 deg² (LMC) and 9 deg² (SMC) | arXiv:astro-ph/0607207 | [src: abstract] |
 | Subaru/HSC | M31 | one 7 h night at 2 min cadence | arXiv:1701.02151 | [src] |
-| OGLE (bulge) | Galactic bulge | 2622 events over 5 yr | arXiv:1901.07120 | [src] |
+| OGLE (bulge) | Galactic bulge | 2622 events over 5 yr | arXiv:1901.07120 | [src: abstract] |
 | OGLE (LMC, 20 yr) | LMC | ~80 million stars over 20 yr | arXiv:2403.02386 | [src] |
 | OGLE (high cadence) | LMC and SMC centres | ~35 million stars, October 2022 – May 2024 | arXiv:2410.06251 | [src] |
 

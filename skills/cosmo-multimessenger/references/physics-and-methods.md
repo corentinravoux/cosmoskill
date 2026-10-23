@@ -140,7 +140,7 @@ move the answer:
   87.6 km/s/Mpc and `P(H0 > 120)` from 0.017 to 0.159 while the binned maximum stays at
   70.5; post-hoc reweighting of the baseline samples recovers only about 17% of that
   shift because the volumetric run undersamples a low-`d_L`, high-inclination mode
-  [src]. A prior study must re-sample, not reweight.
+  [src: abstract]. A prior study must re-sample, not reweight.
 - **H0 prior.** Flat-in-log, `p(H0) ∝ 1/H0`, in LVC 2017 (arXiv:1710.05835) [src: Methods] and
   in the O2 paper (arXiv:1908.06060); flat in the LVK papers from GWTC-3 (§5). The same event
   gives 70.0 (+12.0/−8.0) in the first and 68.7 (+17.5/−8.3) in the second [src, abstracts]; the
@@ -176,10 +176,10 @@ approaches in the literature, in order of appearance:
 | Approach | Input | Result for NGC 4993 | Reference |
 |---|---|---|---|
 | Gaussian-kernel average of a direct-distance catalogue | 6dFGSv Fundamental Plane, kernel 8 h⁻¹ Mpc, 10 galaxies within one kernel width [src] | `<v_p>` = 310 ± 69 km/s, error inflated to 150 km/s [sec: arXiv:1909.00587 §3.2] | arXiv:1710.05835 |
-| Marginalise over the kernel scale | same kind of catalogue | a 200 km/s shift moves H0 by about 4 km/s/Mpc [src] | arXiv:1909.09609 |
+| Marginalise over the kernel scale | same kind of catalogue | a 200 km/s shift moves H0 by about 4 km/s/Mpc [src: abstract] | arXiv:1909.09609 |
 | Group redshift plus several catalogues, Bayesian model averaging; likelihood written in log-distance ratio | CF3, 2MTF, 6dFGSv; several group catalogues | catalogues disagree by more than their errors | arXiv:1909.00587 |
 | Reconstructed non-linear field plus virial term | BORG on 2M++ | mean 373 km/s, σ ≈ 130 km/s (82 field, 100 virial) [src] | arXiv:1909.08627 |
-| Dedicated spectroscopy of the environment | DESI: 39 group members, Fundamental Plane distances | H0 = 70.9 or 73.4 depending on the velocity source [src] | arXiv:2512.08818 |
+| Dedicated spectroscopy of the environment | DESI: 39 group members, Fundamental Plane distances | H0 = 70.9 or 73.4 depending on the velocity source [src: abstract] | arXiv:2512.08818 |
 | Full covariance of the velocity field between sirens | simulations | error up to ×2 within 50 Mpc [src] | arXiv:2509.03101 |
 
 The general Bayesian model of Howlett & Davis 2019 "works more closely with observed
@@ -406,7 +406,7 @@ physical space, so the correlation is maximal on the true `d_L(z)` relation.
   assuming independence, and chose spectral rather than catalogue sirens to avoid a covariance
   through shared galaxy catalogues [src: Sect. 3.4].
 - Requirements for a percent-level H0 (forecast): `σ_dL = 0.1 d_L`, at least 5000 dark
-  sirens and good localisation (arXiv:2510.19931) [src].
+  sirens and good localisation (arXiv:2510.19931) [src: Sect. II.4].
 
 ## 7. Fast radio bursts: dispersion measure–redshift relation
 <!-- key: fast-radio-bursts-dispersion-measure-redshift -->
@@ -517,7 +517,7 @@ mass-sheet degeneracy that limits lensed quasars. The practice so far:
 - Use of the standard candle: in SN H0pe the models are weighted by agreement with the
   absolute magnifications (arXiv:2403.18902).
 - Galaxy-scale lens: SN 2025wny, delays from light curves and from the time evolution
-  of spectral features (arXiv:2608.28427).
+  of spectral features (arXiv:2608.28427, abstract).
 - Blinding is standard: blinded analysis for Refsdal, live unblinding for H0pe,
   double-blind for Encore [src: the three abstracts].
 
@@ -541,7 +541,7 @@ no cosmological measurement yet.
 | Code | Purpose | Reference |
 |---|---|---|
 | `gwcosmo` | LVK pipeline: catalogue and spectral sirens, joint population inference; sampled redshift prior and host-weighting inference in the 2026 version; version 3.0.0 in GWTC-4.0 [src: 2509.04348, software statement]; kernel-density evaluation of the per-event term (§5) | arXiv:1908.06050, arXiv:2308.02281, arXiv:2609.04991 |
-| `icarogw` 2.0 | LVK pipeline: population, cosmology and modified propagation, CPU/GPU; about two orders of magnitude faster above 100 events [src]; version 2.0.3 in GWTC-4.0 [src: 2509.04348, software statement]; Monte Carlo evaluation (§5) | arXiv:2305.17973 |
+| `icarogw` 2.0 | LVK pipeline: population, cosmology and modified propagation, CPU/GPU; about two orders of magnitude faster above 100 events [src: abstract]; version 2.0.3 in GWTC-4.0 [src: 2509.04348, software statement]; Monte Carlo evaluation (§5) | arXiv:2305.17973 |
 | `CHIMERA` | joint population and catalogue analysis, built for spectroscopic catalogues | arXiv:2312.05302 |
 | `DarkSirensStat` | catalogue method with completeness studies, released with the GWTC-2 analysis | arXiv:2101.12660 |
 | `zDM` (+ PATH) | forward model of `p(z, DM)` with survey selection; probabilistic host association | arXiv:2208.00819, arXiv:2609.04765 |

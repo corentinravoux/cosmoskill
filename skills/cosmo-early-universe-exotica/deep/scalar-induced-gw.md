@@ -152,7 +152,7 @@ Fits by other groups and to other arrays' data:
   DR2 (24), 66 frequencies from 1.28 to 49.1 nHz, each bin's posterior
   turned into a kernel density and the log-likelihoods summed; the
   integrated bound ∫ h²Ω_GW d ln k ≲ 2.9 × 10⁻⁷ from BAO and CMB is added
-  [src: main text].
+  [src: main text]. [src: abstract]
 - **NANOGrav + EPTA free spectra** (Figueroa et al. 2023, arXiv:2307.02399):
   the two sets treated as independent "though we acknowledge the impact of
   overlapping pulsars"; Gaussian kernel smoothing of free-spectrum chains,

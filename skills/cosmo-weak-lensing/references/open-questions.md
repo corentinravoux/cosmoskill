@@ -29,7 +29,7 @@ The two final Stage-III analyses disagree about it.
   and KiDS-Legacy (<1σ) against a combined-CMB baseline S8 = 0.836
   +0.012/−0.013, and names photometric-redshift calibration,
   intrinsic-alignment modelling and shear pipelines as candidate origins
-  (Pantos & Perivolaropoulos 2026, arXiv:2602.12238) [src].
+  (Pantos & Perivolaropoulos 2026, arXiv:2602.12238) [src: abstract].
 
 Three facts keep this from being a clean contradiction between the two surveys.
 
@@ -82,7 +82,7 @@ earlier low values:
   bins (Choppin de Janvry et al. 2025, arXiv:2511.18134) [src].
 - Replacing lensfit by metacalibration on KiDS-1000 leaves S8 at 0.789
   +0.020/−0.024, still 1.8σ from Planck: "it is not caused by the shear
-  measurements" (Yoon et al. 2025, arXiv:2510.01122) [src].
+  measurements" (Yoon et al. 2025, arXiv:2510.01122) [src: abstract].
 - An independent DESI-based recalibration finds differences in the KiDS-1000
   mean redshifts, average shift ΔMean(z) = −0.028 across bins (Blanco et al.
   2025, arXiv:2512.15964) [src], and attributes KiDS-1000 differences to
@@ -198,7 +198,7 @@ dependence of the lensing kernel (Heydenreich et al. 2025, arXiv:2508.05746)
 - **Covariance from data or from theory.** The KiDS-Legacy k-cut analysis
   moves from S8 = 0.798 to 0.717 when the Gaussian covariance term is computed
   from the observed rather than the theoretical data vector (arXiv:2607.04384)
-  [src].
+  [src: abstract].
 - **Scale cuts or modelling.** Two-loop EFT on the scales that survive the
   cuts gives competitive constraints on DES Y3 (Chen et al. 2026,
   arXiv:2603.28761) [src]; baryon models with external priors recover the

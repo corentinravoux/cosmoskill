@@ -16,12 +16,11 @@ BBN is a competition between the nuclear reaction rates, free-neutron decay
 and the expansion rate (Cooke 2024 review, arXiv:2409.06015)
 [src: Sect. 2]. In the Standard Model with N_ν = 3 its single free parameter
 is the baryon-to-photon ratio η = n_B/n_γ, related to the baryon density by
+η = (273.78 ± 0.18) × 10⁻¹⁰ × Ω_b h² (Steigman 2006, as quoted in
+arXiv:2409.06015 [sec: Cooke 2024, Sect. 2, Eq. 27]; the same factor is
+used in arXiv:1710.11129 [src: Sect. V.2]).
 
-    η = (273.78 ± 0.18) × 10⁻¹⁰ × Ω_b h²
-
-(Steigman 2006, as quoted in arXiv:2409.06015 [sec: Cooke 2024, Sect. 2];
-the same factor is used in arXiv:1710.11129 [src: Sect. V.2]). With
-Ω_b h² from the CMB, standard BBN has no free parameter; with the
+With Ω_b h² from the CMB, standard BBN has no free parameter; with the
 abundances alone it measures Ω_b h² at t ~ 1 s–10 min, and with Ω_b h² fixed
 it measures the expansion rate, usually parameterised by ΔN_ν or N_eff
 (arXiv:2409.06015) [src: Sect. 2].
@@ -34,19 +33,24 @@ it measures the expansion rate, usually parameterised by ΔN_ν or N_eff
 - D/H is also the most sensitive nuclide to the expansion rate, but rate
   uncertainties limit N_eff from D/H alone to ~2%.
 - Y_P is nearly insensitive to Ω_b h² and could reach ~0.5% on N_eff,
-  i.e. ΔN_ν ≃ 0.015, because its inputs (chiefly τ_n) are well known.
+  i.e. ΔN_ν ≃ 0.015, because its inputs (chiefly τ_n) are well known
+  (arXiv:2409.06015) [src: Sect. 2].
 
-Numerical scalings around η₁₀ = 6.115, N_ν = 3, τ_n = 878.4 s (Yeh, Olive &
-Fields 2023, arXiv:2303.04140) [src: Sect. III, Eqs. 13–16]:
+Numerical scalings X = X₀ (η₁₀/6.115)^a (N_ν/3)^b (τ_n/878.4 s)^c around
+η₁₀ = 6.115, N_ν = 3, τ_n = 878.4 s (Yeh, Olive & Fields 2023,
+arXiv:2303.04140) [src: Sect. III, Eqs. 13–16]:
 
-    Y_P   = 0.2467      (η₁₀/6.115)^0.040  (N_ν/3)^0.163  (τ_n/878.4 s)^0.730
-    D/H   = 2.496e-5    (η₁₀/6.115)^-1.634 (N_ν/3)^0.405  (τ_n/878.4 s)^0.413
-    ³He/H = 1.041e-5    (η₁₀/6.115)^-0.570 (N_ν/3)^0.138  (τ_n/878.4 s)^0.127
-    ⁷Li/H = 4.937e-10   (η₁₀/6.115)^2.117  (N_ν/3)^-0.285 (τ_n/878.4 s)^0.431
+| X | X₀ | a (η₁₀) | b (N_ν) | c (τ_n) |
+|---|---|---|---|---|
+| Y_P | 0.2467 | 0.040 | 0.163 | 0.730 |
+| D/H | 2.496 × 10⁻⁵ | −1.634 | 0.405 | 0.413 |
+| ³He/H | 1.041 × 10⁻⁵ | −0.570 | 0.138 | 0.127 |
+| ⁷Li/H | 4.937 × 10⁻¹⁰ | 2.117 | −0.285 | 0.431 |
 
-From these, a 1% error on D/H maps to 0.6% on η [der: 1/1.634, at fixed
-N_ν and rates], and a 1 s shift in τ_n moves Y_P by ≈ 0.0002
-[der: 0.730 × 0.2467/878.4].
+At fixed N_ν and rates, a fractional error on D/H maps to a smaller
+fractional error on η, divided by the size of the η exponent of D/H; and
+τ_n enters Y_P with the largest of the four τ_n exponents [der: from the
+exponents in the table].
 
 ## 2. The standard calculation
 <!-- key: the-standard-calculation -->
@@ -72,7 +76,7 @@ N_ν and rates], and a 1 s shift in τ_n moves Y_P by ≈ 0.0002
   zero-temperature corrections, finite nucleon mass, finite-temperature
   radiative corrections, weak magnetism and QED plasma effects, all included
   self-consistently with detailed balance in PRIMAT
-  (arXiv:1801.08023) [src].
+  (arXiv:1801.08023) [src: abstract; Sect. I.2].
 - **Neutrino decoupling with oscillations** and the full collision term is
   treated in Froustey, Pitrou & Volpe (2020, arXiv:2008.01074) [src];
   PRyMordial includes non-instantaneous decoupling and returns N_eff
@@ -110,8 +114,8 @@ footnote 5].
 
 | Evaluation | Method | Reactions | Citation | Flag |
 |---|---|---|---|---|
-| Coc et al. 2015 | ab-initio S-factor shapes, systematic uncertainties included | d(p,γ), d(d,n), d(d,p); D/H = (2.45 ± 0.10) × 10⁻⁵ (2σ) | arXiv:1511.03843 | [src] |
-| Gómez Iñesta, Iliadis & Coc 2017 | Bayesian S-factor fits | d(d,n), d(d,p); D/H lower by 0.16% | arXiv:1710.01647 | [src] |
+| Coc et al. 2015 | ab-initio S-factor shapes, systematic uncertainties included | d(p,γ), d(d,n), d(d,p); D/H = (2.45 ± 0.10) × 10⁻⁵ (2σ) | arXiv:1511.03843 | [src: abstract] |
+| Gómez Iñesta, Iliadis & Coc 2017 | Bayesian S-factor fits | d(d,n), d(d,p); D/H lower by 0.16% | arXiv:1710.01647 | [src: abstract] |
 | Yeh, Olive & Fields 2021 | world-average data, model-independent polynomials | d(p,γ) with LUNA | arXiv:2011.13874 | [src] |
 | Pisanti et al. 2021 (PArthENoPE) | statistical analysis of data with theoretical-uncertainty study | d(p,γ), d(d,n), d(d,p) | arXiv:2011.11537 | [src] |
 | NACRE II | compilation of measured rates; used by PRyMordial in its data-driven mode | network | named in arXiv:2401.15054 | [sec: arXiv:2401.15054, Sect. 3] |
@@ -125,7 +129,7 @@ interactions give S-factors with a theory error from cutoff variation
 lie below the ab-initio benchmark; an effective-field-theory fit to capture
 data with nuclear-theory priors gives S(0) = 0.209 ± 0.008 eV b and traces
 the offset to one next-to-leading contact term (Tait 2026,
-arXiv:2607.05514) [src].
+arXiv:2607.05514) [src: abstract].
 
 ## 4. The neutron lifetime and the weak rates
 <!-- key: the-neutron-lifetime-and-the-weak-rates -->
@@ -144,7 +148,7 @@ counts surviving ultracold neutrons after storage (material or
 magneto-gravitational traps); a **beam** counts decay products from a cold
 beam of known fluence. Lifetime and axial coupling are linked by
 τ_n(1 + 3g_A²) = 5172.0(1.1) s (Czarnecki, Marciano & Sirlin 2018,
-arXiv:1802.01804) [src]. Measured values are in `results.md` §8 and the
+arXiv:1802.01804) [src: abstract]. Measured values are in `results.md` §8 and the
 puzzle in `open-questions.md` §3.
 
 ## 5. BBN codes
@@ -209,7 +213,7 @@ side on variations of nuclear observables by Meißner & Metsch
 | Lithium | A(Li) = log₁₀(Li/H) + 12 | mixing A(Li) with Li/H |
 | Deuterium | 10⁵ (D/H) or log₁₀(D/H) | errors on the log are not symmetric on the linear value |
 | Rate philosophy | ab-initio-shaped S-factors (PRIMAT) vs fits to data (PArthENoPE, Fields–Olive–Yeh) vs Gaussian processes (Launders et al.) (arXiv:2401.15054 [src: Sect. 3]; arXiv:2604.16600 [src]) | a "BBN prior" without the rate set |
-| τ_n | bottle (~878 s) or beam (~888 s) or PDG average (arXiv:1802.01804 [src]) | — |
+| τ_n | bottle average 879.4(6) s or beam average 888.0(2.0) s (arXiv:1802.01804 [src: abstract]) or PDG average | — |
 
 **Where the community is split.**
 
@@ -238,8 +242,12 @@ snippet].
 ## Not verified
 <!-- key: not-verified -->
 
+- Before the numbers pass of 2026-10-23 the τ_n row of §7 gave "bottle
+  (~878 s) or beam (~888 s)"; arXiv:1802.01804 (abstract) gives the
+  averages 879.4(6) s and 888.0(2.0) s, now quoted.
 - Steigman 2006 (η–Ω_b h² conversion) and Cielo et al. 2023 (N_eff = 3.043)
-  were taken from the Cooke 2024 review, not read.
+  were taken from the Cooke 2024 review (arXiv:2409.06015, Sect. 2), not
+  read.
 - The NACRE II compilation and the Wagoner-code lineage of the
   Fields–Olive–Yeh code are named from arXiv:2401.15054, not read.
 - The EFT contact-term interpretation of d(p,γ)³He (arXiv:2607.05514) is a

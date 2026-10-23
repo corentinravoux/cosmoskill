@@ -42,7 +42,7 @@ re-verify against the cited paper before a number enters a manuscript.
   0.23 eV without BAO; ACT P-ACT-LB 0.089 eV (abstract: 0.082)
   (arXiv:2503.14454, arXiv:2410.00090).
 - τ: error doubled 0.10 eV; low-ℓ polarisation removed
-  0.19 eV (arXiv:2503.14454).
+  0.19 eV (arXiv:2503.14454, Sect. G.2).
 - Ordering: Bayes factor 10 (DESI); 46.5 or > 460, other priors
   (arXiv:2407.18047, arXiv:2606.18987); oscillations alone undecided
   (arXiv:2410.05380); JUNO: normal at ≥ 2.1σ (arXiv:2609.37895).
@@ -128,8 +128,9 @@ Sizes, in thousands of tokens: L1 3k; open 8k; methods 12k; results 12k; surveys
   (`--abstract`, `--outline`, `--section`, `--grep`), or with any tool that
   gives the paper. If it cannot be read, say that L4 was required and not
   done.
-- A formula of the skill may be applied to the asker's numbers; label the
-  result as derived.
+- Quote a number only with its paper and the place it was read, as the
+  skill gives them; the skill holds no number of its own making. A formula
+  may be applied to the asker's numbers; label the result as derived.
 
 Local layers: if a directory `.cosmoskill/` exists in the working directory,
 in one of its parents, or in the home directory, or if `COSMOSKILL_HOME` is

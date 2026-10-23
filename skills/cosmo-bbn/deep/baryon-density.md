@@ -182,9 +182,13 @@ ACT states that differences in the helium predicted by recent BBN codes
   (arXiv:2401.15054) [src: Sects. 3, 5]; Planck's 0.0222 ± 0.0005 was
   built the same way from three pipelines (arXiv:1807.06209)
   [src: Sect. 7.6.1].
-- **Costs.** Errors 2–2.7 times larger than a PRIMAT-family prior
-  (0.00055 against 0.00021–0.00026) [der: from arXiv:2603.22414, Sect. 8].
-  In BAO + BBN, ω_b calibrates r_d, so the H₀ error inherits this choice;
+- **Costs.** Larger errors: on the same data, Schöneberg's marginalised
+  prior gives Ω_b h² = 0.02231 ± 0.00055 against 0.02195 ± 0.00021 with
+  PRIMAT rates (arXiv:2401.15054) [src: Sect. 4.1]; in Burns 2026, NACRE-II
+  rates give 0.02231 ± 0.00056 against 0.02202 ± 0.00021 with PRIMAT rates,
+  "looser by roughly a factor of 2.7", and 0.02226 ± 0.00056 against
+  0.02192 ± 0.00026 with ΔN_eff free (arXiv:2603.22414) [src: Sect. 8].
+- **Costs for H₀.** In BAO + BBN, ω_b calibrates r_d, so the H₀ error inherits this choice;
   DESI DR2 gets H₀ = 68.51 ± 0.58 km s⁻¹ Mpc⁻¹ with the conservative prior
   (arXiv:2503.14738) [src: Sect. VI, Eq. 19].
 
@@ -327,4 +331,4 @@ evaluation took ~2 s [src: Sect. VI.2].
 - The earlier full LINX + Planck analysis ("Paper II" of
   arXiv:2408.14538) was not identified or read.
 - The PArthENoPE rate paper that sets the 6 × 10⁻⁷ D/H theory error is
-  named by arXiv:2401.15054 and not read here.
+  named by arXiv:2401.15054 [src: Sect. 3] and not read here.

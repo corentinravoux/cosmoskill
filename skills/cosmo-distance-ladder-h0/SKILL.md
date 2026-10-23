@@ -43,7 +43,7 @@ re-verify against the cited paper before a number enters a manuscript.
   in the SN calibrator subsample and compilation (arXiv:2408.11770,
   arXiv:2503.11769). The complete 35-calibrator TRGB sample gives 72.1 to
   73.3 ± 1.8 (arXiv:2504.08921).
-- Both JWST ladders rest on NGC 4258 alone (arXiv:1908.05625) and share SN
+- Both JWST ladders rest on NGC 4258 alone (arXiv:1908.05625, abstract) and share SN
   hosts.
 - Early side, flat LCDM [src]: 67.4 ± 0.5 Planck 2018 (arXiv:1807.06209);
   66.66 ± 0.60 SPT-3G D1 and 67.19 ± 0.38 SPT+ACT+Planck
@@ -57,7 +57,7 @@ re-verify against the cited paper before a number enters a manuscript.
   reanalyses give 66.9 to 68.8 (arXiv:2608.06247) or 71.6 ± 3.7
   (arXiv:2609.17684).
 - DESI DR1 FP+TF, 73.7 ± 0.06 ± 1.1, borrows the SH0ES/Pantheon+ zero
-  point (arXiv:2512.03232).
+  point (arXiv:2512.03232, abstract).
 - Volume priors give 70.6 ± 1.0 (arXiv:2601.22215); with selection modelled
   the Milky Way calibration is recovered within 0.5 sigma (arXiv:2603.09880);
   extragalactic selection stays open (arXiv:2607.22425).
@@ -81,7 +81,7 @@ two-rung ladders, the velocity reconstruction. The gap to close is 0.176 ±
 <!-- key: errors-that-recur -->
 
 - Offering Cepheid crowding as an explanation: HST − JWST is −0.01 ± 0.03
-  mag, rejected at 8.2 sigma (arXiv:2401.04773).
+  mag, rejected at 8.2 sigma (arXiv:2401.04773, abstract).
 - "The TRGB gives 69.8": the 2021 CCHP value (arXiv:2106.15656); no CATS
   variant falls below 71.6 (arXiv:2304.06693).
 - "4.4 sigma" or "5 sigma" unqualified: the 2019 and 2022 figures against
@@ -124,8 +124,9 @@ Sizes, in thousands of tokens: L1 3k; alternative-distance-probes 8k; open 6k; m
   (`--abstract`, `--outline`, `--section`, `--grep`), or with any tool that
   gives the paper. If it cannot be read, say that L4 was required and not
   done.
-- A formula of the skill may be applied to the asker's numbers; label the
-  result as derived.
+- Quote a number only with its paper and the place it was read, as the
+  skill gives them; the skill holds no number of its own making. A formula
+  may be applied to the asker's numbers; label the result as derived.
 
 Local layers: if a directory `.cosmoskill/` exists in the working directory,
 in one of its parents, or in the home directory, or if `COSMOSKILL_HOME` is

@@ -15,7 +15,7 @@ here.
 | Data set | What | Size, depth | Status | Citation | Flag |
 |---|---|---|---|---|---|
 | SDSS Bisous filament catalogue | public filament spines, radius ~0.5 h⁻¹Mpc | longest 60 h⁻¹Mpc | public | Tempel et al. 2014, arXiv:1308.2533 | [src] |
-| GAMA large-scale structure catalogue | filaments, tendrils, isolated void galaxies from an adapted MST | 45,542 galaxies and 6,000 groups at z ≤ 0.213; 643 filaments | published | Alpaslan et al. 2014, arXiv:1311.1211 | [src] |
+| GAMA large-scale structure catalogue | filaments, tendrils, isolated void galaxies from an adapted MST | 45,542 galaxies and 6,000 groups at z ≤ 0.213; 643 filaments | published | Alpaslan et al. 2014, arXiv:1311.1211 | [src: abstract] |
 | CAVITY (Calar Alto Void Integral-field Treasury surveY) | integral-field spectroscopy of void galaxies, PMAS/PPAK V500, 3745–7500 Å at 6 Å FWHM | DR1 (2024, arXiv:2410.08265); DR2: 200 data cubes in 15 voids at 0.005 ≤ z ≤ 0.050 | DR2 public, cavity.caha.es | Bidaran et al. 2026, arXiv:2609.24726 | [src] |
 
 Integral-field and imaging samples used against these skeletons: SAMI
@@ -34,13 +34,13 @@ ellipticals within 2 Mpc of SDSS DR12 Bisous spines at z ≤ 0.2
 
 | Data set | What | Facts | Citation | Flag |
 |---|---|---|---|---|
-| DESI EDR cosmic-web environment catalogue | per-object void/sheet/filament/knot probabilities for BGS, LRG, ELG, QSO | 20 EDR rosettes, ~175 deg², 100 realisations per tracer and zone; "first public cosmic-web environment catalog built on any DESI data release" | Zapata-Zuluaga et al. 2026, arXiv:2604.01456 | [src] |
-| DESI DR1 T-web environments | colour versus web class for BGS (0.15 ≤ z < 0.55), LRG (0.6 ≤ z < 0.9), ELG (0.6 ≤ z < 1.6) | T-web on a 256³ grid in an 800 Mpc cube | Ullah et al. 2026, arXiv:2604.02463 | [src] |
+| DESI EDR cosmic-web environment catalogue | per-object void/sheet/filament/knot probabilities for BGS, LRG, ELG, QSO | 20 EDR rosettes, ~175 deg², 100 realisations per tracer and zone; "first public cosmic-web environment catalog built on any DESI data release" | Zapata-Zuluaga et al. 2026, arXiv:2604.01456 | [src: abstract] |
+| DESI DR1 T-web environments | colour versus web class for BGS (0.15 ≤ z < 0.55), LRG (0.6 ≤ z < 0.9), ELG (0.6 ≤ z < 1.6) | T-web on a 256³ grid in an 800 Mpc cube | Ullah et al. 2026, arXiv:2604.02463 | [src: abstract] |
 | CF4++ZOA V-web catalogue | 37 voids (effective radii 13–38 h⁻¹Mpc) and 42 knots (10⁴ to 3.3 × 10⁵ h⁻³Mpc³) to z = 0.1; 3041 CF4++ galaxies in the voids and 7346 in the knots | Cosmicflows-4 with zone-of-avoidance extension, HMC ensemble | Hollinger & Courtois 2026, arXiv:2606.13538 | [src]; [src: Sect. 4] for galaxy counts |
-| Cosmicflows-2 Wiener-filter velocity field | local flow dominated by the Shapley attractor and a single "dipole repeller" at 16,000 ± 4,500 km/s; Local Group moves at 631 ± 20 km/s with respect to the CMB | Cosmicflows-2 | Hoffman et al. 2017, arXiv:1702.02483 | [src] |
+| Cosmicflows-2 Wiener-filter velocity field | local flow dominated by the Shapley attractor and a single "dipole repeller" at 16,000 ± 4,500 km/s; Local Group moves at 631 ± 20 km/s with respect to the CMB | Cosmicflows-2 | Hoffman et al. 2017, arXiv:1702.02483 | [src: abstract] |
 | Laniakea | supercluster boundary from diverging flows | Cosmicflows | arXiv:1409.0880 | [src] |
 | BORG reconstructions of SDSS | probabilistic web maps | SDSS main sample | arXiv:1512.02242 | [src] |
-| miniJPAS + DESI | local filaments around galaxies, 0.2 < z < 0.8 | spectro-photometric | arXiv:2506.15345 | [src] |
+| miniJPAS + DESI | local filaments around galaxies, 0.2 < z < 0.8 | spectro-photometric | arXiv:2506.15345 | [src: abstract] |
 | COSMOS2020 | MMF on galaxy density maps, 0.4 < z < 4 | photometric, mass-complete | arXiv:2610.07710 | [src] |
 
 The peculiar-velocity data behind Cosmicflows and the bulk-flow results are in
@@ -70,8 +70,8 @@ title of arXiv:2109.09660) [src: title].
 |---|---|---|---|---|
 | Planck Compton-y and CMB-lensing maps | first pair and filament tSZ stacks | used for 260,000 LRG pairs, 1,002,334 CMASS pairs, 24,544 filaments | arXiv:1709.05024, arXiv:1709.10378, arXiv:1911.09706 | [src] |
 | ACT DR6 + Planck y; MUSTANG-2 | oriented supercluster stacks; resolved A399–A401 bridge at 1.65′ | ~3 times the significance of the proof of concept for extended gas | arXiv:2409.04535, arXiv:2107.04611 | [src] |
-| ROSAT all-sky survey | first stacked X-ray filament detection | 15,165 filaments | arXiv:2011.05343 | [src] |
-| eROSITA eFEDS | stacked X-ray in a small deep field | 463 filaments | arXiv:2206.00084 | [src] |
+| ROSAT all-sky survey | first stacked X-ray filament detection | 15,165 filaments | arXiv:2011.05343 | [src: abstract] |
+| eROSITA eFEDS | stacked X-ray in a small deep field | 463 filaments | arXiv:2206.00084 | [src: abstract] |
 | eROSITA eRASS:4 (scans of 12 Dec 2019 to 19 Dec 2021; eSASS pipeline 020; telescope modules 1–4 and 6 only, avoiding the light leak in 5 and 7) | stacked X-ray of WHIM | ~3200 deg² SDSS overlap reduced to 2275 deg² after foreground cuts | arXiv:2406.00105 | [src: Sect. 2] |
 | SDSS LOWZ+CMASS DisPerSE filament catalogue (Malavasi et al.) | filament positions for most stacks | 63,391 filaments at 3σ persistence | as used in arXiv:2406.00105 | [sec: Zhang et al. 2024, Sect. 2] |
 | LOFAR (LoTSS DR2) | radio ridges; rotation measures | 140–144 MHz | arXiv:1906.07584, arXiv:2202.04607 | [src] |
@@ -100,8 +100,8 @@ of 1ES 1553+113 are the data behind the O VII claim and its re-analysis
 | Survey | Selection | Scale | Citation | Flag |
 |---|---|---|---|---|
 | HSC-SSP (GOLDRUSH) | g-dropout overdensities > 4σ at z ~ 3.8; U-dropouts at z ~ 3 | 121 deg², 179 candidates (S16A) | arXiv:1708.09421; arXiv:2610.01816 | [src] |
-| ODIN + DESI | narrowband Lyα emitters at z ≈ 2.4, 3.1 with DESI spectroscopy | ≈ 14 deg² (COSMOS, XMM-LSS), six confirmed | arXiv:2603.09739 | [src] |
-| VUDS | spectroscopic Voronoi density at z ~ 2.45 | COSMOS | arXiv:1806.06073 | [src] |
+| ODIN + DESI | narrowband Lyα emitters at z ≈ 2.4, 3.1 with DESI spectroscopy | ≈ 14 deg² (COSMOS, XMM-LSS), six confirmed | arXiv:2603.09739 | [src: abstract] |
+| VUDS | spectroscopic Voronoi density at z ~ 2.45 | COSMOS | arXiv:1806.06073 | [src: abstract] |
 | MUSE deep fields (MUDF, MXDF) | LAE overdensities and diffuse Lyα, 3 ≲ z ≲ 5 | 41 overdensities | arXiv:2609.20938 | [src] |
 | JWST protocluster candidates at 5 < z < 9 | literature compilation | — | arXiv:2605.28930 | [src] |
 
@@ -129,7 +129,7 @@ of 1ES 1553+113 are the data behind the O VII claim and its re-analysis
   magnitude: CHORD, DSA, SKA, with galaxy surveys DESI, LSST, Euclid, PFS,
   SPHEREx, Roman (arXiv:2605.01994) [src].
 - Subaru PFS: > 10,000 coeval galaxies would constrain galaxy–web alignments
-  at z ~ 2.5 to Δ⟨cos θ⟩ ~ 0.03 (arXiv:1612.00067, **forecast**) [src].
+  at z ~ 2.5 to Δ⟨cos θ⟩ ~ 0.03 (arXiv:1612.00067, **forecast**) [src: abstract].
 - J-PAS: watershed voids on a quasi-potential survive J-PAS-like photometric
   errors (arXiv:2607.26932) [src].
 - Facility schedules are in `cosmo-surveys-facilities`.
@@ -139,7 +139,7 @@ of 1ES 1553+113 are the data behind the O VII claim and its re-analysis
 
 | Product | Access as stated in the paper read | Citation | Flag |
 |---|---|---|---|
-| CAVITY DR2 | 200 IFS cubes and master catalogues at cavity.caha.es/data/dr2/ | arXiv:2609.24726 | [src] |
+| CAVITY DR2 | 200 IFS cubes and master catalogues at cavity.caha.es/data/dr2/ | arXiv:2609.24726 | [src: abstract] |
 | DESI EDR web-environment catalogue | "all data products and the open-source pipeline are publicly available" | arXiv:2604.01456 | [src] |
 | SDSS Bisous filaments | "a public catalogue of filaments" | arXiv:1308.2533 | [src] |
 | Laniakea | accompanying movie at irfu.cea.fr/laniakea | arXiv:1409.0880 | [src] |

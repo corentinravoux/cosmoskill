@@ -18,18 +18,18 @@ changes is the velocity of NGC 4993, the viewing-angle information and the prior
 | H0 | Statistic | Extra information beyond GW + host redshift | Velocity treatment | Reference | Flag |
 |---|---|---|---|---|---|
 | 70.0 (+12.0/−8.0) | MAP, flat-in-log prior [src: Methods]; the median with symmetric interval is 74.0 (+16.0/−8.0) [src: Extended Data Table 1] | none | 6dFGSv kernel, 150 km/s error | arXiv:1710.05835 | [src] |
-| 68.7 (+17.5/−8.3) | highest-density interval, flat-in-log prior | none (GW170817-only value in the O2 paper) | — | arXiv:1908.06060 | [src] |
+| 68.7 (+17.5/−8.3) | highest-density interval, flat-in-log prior | none (GW170817-only value in the O2 paper) | — | arXiv:1908.06060 | [src: abstract] |
 | 76 (+19/−13) | — | none; re-derived from public data | — | arXiv:1807.05667 | [src] |
-| 68.9 (+4.7/−4.6) | — | VLBI superluminal motion and light curve | — | arXiv:1806.10596 | [src] |
-| 66.8 (+13.4/−9.2) | Bayesian model average | none | several catalogues and groups | arXiv:1909.00587 | [src] |
-| 64.8 (+7.3/−7.2) | Bayesian model average | radio viewing angle | several catalogues and groups | arXiv:1909.00587 | [src] |
-| 68.3 (+4.6/−4.5) | — | VLBI | BORG on 2M++ plus virial term | arXiv:1909.08627 | [src] |
-| 68.6 (+14.0/−8.5) | — | none | kernel scale marginalised | arXiv:1909.09609 | [src] |
+| 68.9 (+4.7/−4.6) | — | VLBI superluminal motion and light curve | — | arXiv:1806.10596 | [src: abstract] |
+| 66.8 (+13.4/−9.2) | Bayesian model average | none | several catalogues and groups | arXiv:1909.00587 | [src: abstract] |
+| 64.8 (+7.3/−7.2) | Bayesian model average | radio viewing angle | several catalogues and groups | arXiv:1909.00587 | [src: abstract] |
+| 68.3 (+4.6/−4.5) | — | VLBI | BORG on 2M++ plus virial term | arXiv:1909.08627 | [src: abstract] |
+| 68.6 (+14.0/−8.5) | — | none | kernel scale marginalised | arXiv:1909.09609 | [src: abstract] |
 | 66.2 (+4.4/−4.2) | 1σ | kilonova, gamma-ray burst, equation-of-state prior, GW190425 | — | arXiv:2002.11355 | [src] |
-| 75.46 (+5.34/−5.39) | 68% credible | afterglow to about 3.5 yr (optical, X-ray, radio) | host velocity included | arXiv:2305.19914 | [src] |
-| 70.9 (+6.4/−8.5) | — | — | DESI Fundamental Plane velocities of the group | arXiv:2512.08818 | [src] |
-| 73.4 (+3.3/−3.9) | — | — | Cosmicflows-4 SBF velocity of NGC 4993 | arXiv:2512.08818 | [src] |
-| 65.5 ± 4.4 | — | all VLBI data, visibility-plane fit, hydrodynamical jets | ensemble of corrections marginalised | arXiv:2605.11437 | [src] |
+| 75.46 (+5.34/−5.39) | 68% credible | afterglow to about 3.5 yr (optical, X-ray, radio) | host velocity included | arXiv:2305.19914 | [src: abstract] |
+| 70.9 (+6.4/−8.5) | — | — | DESI Fundamental Plane velocities of the group | arXiv:2512.08818 | [src: abstract] |
+| 73.4 (+3.3/−3.9) | — | — | Cosmicflows-4 SBF velocity of NGC 4993 | arXiv:2512.08818 | [src: abstract] |
+| 65.5 ± 4.4 | — | all VLBI data, visibility-plane fit, hydrodynamical jets | ensemble of corrections marginalised | arXiv:2605.11437 | [src: abstract] |
 
 Related numbers:
 
@@ -45,7 +45,7 @@ Related numbers:
   150 km/s [sec: arXiv:1909.00587 §3.2]; 373 km/s mean with total σ ≈ 130 km/s from BORG
   (arXiv:1909.08627 §6.1) [src]. Hubble-flow velocity 3327 − 310 = 3017 km/s [der].
 - Prior dependence: under a uniform-in-`d_L` prior the weighted median is 87.6 instead
-  of 77.6 while the mode stays at 70.5 (arXiv:2606.30504) [src].
+  of 77.6 while the mode stays at 70.5 (arXiv:2606.30504) [src: abstract].
 
 Reading the table: the six values that use jet or afterglow information lie between
 64.8 and 75.5 with quoted errors of 4 to 7 [der: range of the rows above]. The same
@@ -74,11 +74,11 @@ associations that the LVK analyses do not use.
 
 | Catalogue | Events used | H0 | What is combined | Reference | Flag |
 |---|---|---|---|---|---|
-| O1–O2 | BBH with galaxy catalogues (DES for GW170814), plus GW170817 | 68.7 (+17.0/−7.8) (flat-in-log prior, highest-density) | catalogue + bright | arXiv:1908.06060 | [src] |
+| O1–O2 | BBH with galaxy catalogues (DES for GW170814), plus GW170817 | 68.7 (+17.0/−7.8) (flat-in-log prior, highest-density) | catalogue + bright | arXiv:1908.06060 | [src: abstract] |
 | GWTC-3 | 47 | 68 (+12/−7) (arXiv abstract) | spectral + bright | arXiv:2111.03604 | [src] |
 | GWTC-3 | 47 | 68 (+8/−6) | GLADE+ catalogue, **fixed** population, + bright | arXiv:2111.03604 | [src] |
 | GWTC-4.0 | 142 of 218 | 75.4 (+12.8/−9.1); 90%: (+24.5/−13.3) (median; arXiv abstract) | spectral + GLADE+ + bright | arXiv:2509.04348 | [src] |
-| GWTC-5.0 | 236 | 71.7 (+9.4/−7.5) (median) | spectral + DES Y6 catalogue with luminosity weighting + bright | arXiv:2605.27227 | [src] |
+| GWTC-5.0 | 236 | 71.7 (+9.4/−7.5) (median) | spectral + DES Y6 catalogue with luminosity weighting + bright | arXiv:2605.27227 | [src: abstract] |
 
 Notes.
 
@@ -179,11 +179,11 @@ search of 2026-10-10.
 
 | Quantity | Value | Sample | Reference | Flag |
 |---|---|---|---|---|
-| `Ω_b` | 0.051 (+0.021/−0.025) `h70⁻¹` (95%) | first arcsecond-localised sample | arXiv:2005.13161 | [src] |
-| `Ω_b h70` | 0.051 ± 0.006 | DSA-110 and literature sample | arXiv:2409.16952 | [src] |
-| `f_IGM` | 0.76 (+0.10/−0.11) | same | arXiv:2409.16952 | [src] |
-| `f_igm` | 0.59 (+0.11/−0.10) | 8 FLIMFLAM sightlines with foreground spectroscopy | arXiv:2402.00505 | [src] |
-| `f_gas` in haloes of `10^10`–`10^13 M☉` | 0.55 (+0.26/−0.29) | same | arXiv:2402.00505 | [src] |
+| `Ω_b` | 0.051 (+0.021/−0.025) `h70⁻¹` (95%) | first arcsecond-localised sample | arXiv:2005.13161 | [src: abstract] |
+| `Ω_b h70` | 0.051 ± 0.006 | DSA-110 and literature sample | arXiv:2409.16952 | [src: abstract] |
+| `f_IGM` | 0.76 (+0.10/−0.11) | same | arXiv:2409.16952 | [src: abstract] |
+| `f_igm` | 0.59 (+0.11/−0.10) | 8 FLIMFLAM sightlines with foreground spectroscopy | arXiv:2402.00505 | [src: abstract] |
+| `f_gas` in haloes of `10^10`–`10^13 M☉` | 0.55 (+0.26/−0.29) | same | arXiv:2402.00505 | [src: abstract] |
 | `f_IGM` | ≥ 0.69 (95%) | 61 localised, sightlines without intervening haloes | arXiv:2506.04186 | [src] |
 | `f_d` (all diffuse gas) | > 0.9 for a constant model | 124 localised | arXiv:2506.03536 | [src] |
 | mean rest-frame `DM_host` | 90 (+29/−19) pc cm⁻³ | FLIMFLAM | arXiv:2402.00505 | [src] |
@@ -214,12 +214,12 @@ feedback.
 
 | H0 | Sample | Method | Reference | Flag |
 |---|---|---|---|---|
-| 62.3 ± 9.1 | 9 localised | `p(DM | z)` with scatter model | arXiv:2104.04538 | [src] |
+| 62.3 ± 9.1 | 9 localised | `p(DM | z)` with scatter model | arXiv:2104.04538 | [src: abstract] |
 | 64.67 (+5.62/−4.66) | 14 localised | scatter distributions from simulations (arXiv abstract) | arXiv:2108.00581 | [src] |
 | 73 (+12/−8) | 16 localised + 60 unlocalised | survey forward model (`zDM`) | arXiv:2208.00819 | [src] |
-| 85.3 (+9.4/−8.1) | 21 localised + 57 unlocalised | as above, with `F` free | arXiv:2305.07022 | [src] |
-| 71.28 (+1.90/−2.08) | 95 of 117 localised | `p(DM | z)`, statistical error only | arXiv:2507.18946 | [src] |
-| 69 (+17/−15) | 2124 unlocalised (CHIME Catalog 2) | DM distribution only | arXiv:2604.03769 | [src] |
+| 85.3 (+9.4/−8.1) | 21 localised + 57 unlocalised | as above, with `F` free | arXiv:2305.07022 | [src: abstract] |
+| 71.28 (+1.90/−2.08) | 95 of 117 localised | `p(DM | z)`, statistical error only | arXiv:2507.18946 | [src: abstract] |
+| 69 (+17/−15) | 2124 unlocalised (CHIME Catalog 2) | DM distribution only | arXiv:2604.03769 | [src: abstract] |
 
 Each needs an external baryon density (physics file, §7.2); the prior used is not in
 every abstract. The values span 62 to 85 while the
@@ -233,15 +233,15 @@ tension.
 
 | Object | H0 | Notes | Reference | Flag |
 |---|---|---|---|---|
-| SN Refsdal | 64.8 (+4.4/−4.3) | eight cluster models, blinded | arXiv:2305.06367 | [src] |
-| SN Refsdal | 66.6 (+4.1/−3.3) | the two models most consistent with the observations | arXiv:2305.06367 | [src] |
-| SN Refsdal, re-modelled | 66.0 ± 4.3 | four mass models, new MUSE and JWST redshifts | arXiv:2509.09979 | [src] |
+| SN Refsdal | 64.8 (+4.4/−4.3) | eight cluster models, blinded | arXiv:2305.06367 | [src: abstract] |
+| SN Refsdal | 66.6 (+4.1/−3.3) | the two models most consistent with the observations | arXiv:2305.06367 | [src: abstract] |
+| SN Refsdal, re-modelled | 66.0 ± 4.3 | four mass models, new MUSE and JWST redshifts | arXiv:2509.09979 | [src: abstract] |
 | SN H0pe | 71.8 (+9.2/−8.1) | seven lens models, time delays only (arXiv abstract) | arXiv:2403.18902 | [src] |
 | SN H0pe | 75.7 (+8.1/−5.5) | models weighted by the absolute magnifications (arXiv abstract) | arXiv:2403.18902 | [src] |
-| SN Encore | 66.9 (+11.2/−8.1) | seven lens models, double-blind | arXiv:2509.12301 | [src] |
-| SN 2025wny | 80.5 (+26.4/−16.7) | photometric delays only | arXiv:2608.28427 | [src] |
-| SN 2025wny | 70.8 (+8.2/−6.1) | photometric + spectroscopic delays | arXiv:2608.28427 | [src] |
-| TDCOSMO-2025 (8 lensed quasars) | 71.6 (+3.9/−3.3) | flat ΛCDM, Ω_m from Pantheon+, mass-sheet degeneracy free, blinded | arXiv:2506.03023 | [src] |
+| SN Encore | 66.9 (+11.2/−8.1) | seven lens models, double-blind | arXiv:2509.12301 | [src: abstract] |
+| SN 2025wny | 80.5 (+26.4/−16.7) | photometric delays only | arXiv:2608.28427 | [src: abstract] |
+| SN 2025wny | 70.8 (+8.2/−6.1) | photometric + spectroscopic delays | arXiv:2608.28427 | [src: abstract] |
+| TDCOSMO-2025 (8 lensed quasars) | 71.6 (+3.9/−3.3) | flat ΛCDM, Ω_m from Pantheon+, mass-sheet degeneracy free, blinded | arXiv:2506.03023 | [src: abstract] |
 
 The TDCOSMO value agrees with the one in `cosmo-distance-ladder-h0`, where the history
 of lensed-quasar results is kept. All lensed-supernova values assume flat ΛCDM with
@@ -300,13 +300,13 @@ Gaussian the 1σ error roughly halved [der: 0.023/2 ≈ 0.012 against 0.006].
 
 - Closed on 2026-10-12: the GWTC-5.0 spectral-only, catalogue-only and bright-only H0
   values and its `Xi_0` constraint are now in §2.1 and §2.3. Still open: which version
-  of arXiv:2509.04348 the journal printed.
+  of arXiv:2509.04348 the journal printed. [src: App. E]
 - Whether the arXiv abstracts of arXiv:2509.04348, arXiv:2111.03604, arXiv:1806.10596,
   arXiv:2108.00581 and arXiv:2403.18902 carry the same numbers as their journal
   versions. Values different from those above circulate for each of these papers;
   quote the version you cite.
 - The matter-density prior of each lensed-supernova analysis. Read on 2026-10-13 for
   SN Refsdal only: delays predicted at H0 = 70 and Ω_M = 0.3 and rescaled, with an
-  effect of varying Ω_M of at most about 0.7 (arXiv:2305.06367) [src: Supplementary].
+  effect of varying Ω_M of at most about 0.7 (arXiv:2305.06367, Sect. "Effects of varying \Omega_{\rm M} and \O") [src: Supplementary].
 - The Ω_m and `w0` constraints from sirens beyond those in the GW190521 rows.
 - H0 values from SN Zwicky or iPTF16geu, if any exist.

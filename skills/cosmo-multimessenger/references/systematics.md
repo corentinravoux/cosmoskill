@@ -17,15 +17,15 @@ error propagated: `δH0 / H0 ≈ σ_v / (H0 d)`.
 
 | Statement | Value | Source |
 |---|---|---|
-| Typical peculiar velocity and its share of the recession velocity at 40 Mpc | 300 km/s, about 10% | arXiv:1710.05835 Methods [src] |
+| Typical peculiar velocity and its share of the recession velocity at 40 Mpc | 300 km/s, about 10% | arXiv:1710.05835 Methods [src: Sect. "Finding the Hubble velocity of NGC 4993"] |
 | LVC 2017 correction for NGC 4993 | 310 ± 69 km/s from 6dFGSv; error inflated to 150 km/s, 250 km/s as a robustness test | [sec: arXiv:1909.00587 §3.2]; confirmed in arXiv:1710.05835 [src: Methods] |
 | Where the 150 km/s comes from | it is the uncertainty of the 2MASS Redshift Survey reconstruction used as a cross-check (Hubble velocity 3047 km/s against 3017 from 6dFGSv), adopted because the 6dFGSv estimate "may represent an imperfect model of the true bulk flow" | arXiv:1710.05835 [src: Methods] |
 | Hubble velocity used | 3017 ± 166 km/s, that is 5.5% [der: 166/3017], against about 15% on the GW distance | arXiv:1710.05835 [src: Methods] |
 | Size in H0 of widening the velocity error from 150 to 250 km/s | MAP interval from 70.0 (+12.0/−8.0) to 70.0 (+14.0/−9.0); symmetric interval from 74.0 (+16.0/−8.0) to 74.0 (+16.0/−9.0) | arXiv:1710.05835 [src: Extended Data Table 1] |
 | After a jet prior | the H0 error is "dominated by both the GW data and the peculiar motion of NGC 4993", no longer by the viewing angle | arXiv:1806.10596 [src: main text] |
 | BORG reconstruction on 2M++ | mean 373 km/s, mode 385 km/s; field σ ≈ 82 km/s, virial term ≈ 100 km/s, total ≈ 130 km/s; mean 24% higher and σ 13% smaller than LVC | arXiv:1909.08627 §6.1 [src] |
-| Sensitivity | 200 km/s on `v_p` ↔ about 4 km/s/Mpc on H0 | arXiv:1909.09609 [src] |
-| Dependence on the velocity source, same siren data | H0 = 70.9 (+6.4/−8.5) with DESI Fundamental Plane velocities, 73.4 (+3.3/−3.9) with the Cosmicflows-4 SBF velocity | arXiv:2512.08818 [src] |
+| Sensitivity | 200 km/s on `v_p` ↔ about 4 km/s/Mpc on H0 | arXiv:1909.09609 [src: abstract] |
+| Dependence on the velocity source, same siren data | H0 = 70.9 (+6.4/−8.5) with DESI Fundamental Plane velocities, 73.4 (+3.3/−3.9) with the Cosmicflows-4 SBF velocity | arXiv:2512.08818 [src: abstract] |
 | Catalogue disagreement | 2MTF and CF3/6dFGSv velocities at NGC 4993 differ by more than their errors for kernels of 2–10 h⁻¹ Mpc, traced to a global distance-scale offset between catalogues | arXiv:1909.00587 §3.2 [src] |
 | Correlated errors | H0 error up to ×2 larger when the velocity covariance is included, for GW170817-like sirens within 50 Mpc with 5% distances | arXiv:2509.03101 [src] |
 
@@ -140,7 +140,7 @@ and, for dark sirens, the three-dimensional localisation.
   (arXiv:2006.02779) [src].
 - With the worst O3 calibration error applied to every event, the true H0 leaves the
   90% interval after about 40 binary neutron stars; with 10% of events affected, it
-  stays inside after 100 (arXiv:2204.03614) [src].
+  stays inside after 100 (arXiv:2204.03614) [src: abstract].
 - Next-generation golden dark sirens: waveform and calibration accuracy must improve as
   `O(ρ⁻²)` with signal-to-noise `ρ`; waveform bias can change the host ranking
   (arXiv:2602.14898) [src].
@@ -290,7 +290,7 @@ can carry bias.
 | Host weighting | a wrong weighting scheme biases H0 through the assumed redshift distribution and through favouring wrong hosts | arXiv:2405.14818 [src] |
 | Choice of band | B-band against K-band weighting changes the posterior as much as the largest uncertainty effect tested | arXiv:2608.26307 [src] |
 | Redshift errors | ignoring photometric-redshift errors gives a bias comparable with other GWTC-3 systematics, still below the statistical error | arXiv:2302.12037 [src] |
-| Photometric against spectroscopic | precision degraded by up to a factor of about 9 (**forecast**, O5, 100 best events) | arXiv:2312.05302 [src] |
+| Photometric against spectroscopic | precision degraded by up to a factor of about 9 (**forecast**, O5, 100 best events) | arXiv:2312.05302 [src: abstract] |
 | Magnitude errors and K-corrections | minor at `z < 0.2` | arXiv:2608.26307 [src] |
 | Pipeline dependence | the two LVK pipelines treat completeness differently and find different gains from the catalogue | arXiv:2605.27227 §4.1 [src] |
 
@@ -501,7 +501,7 @@ Lensed transient:
 - Table 2 of arXiv:2602.04766 was read in an earlier version of the paper than the
   current abstract (§6); the table of the current version was not read.
 - The H0 inference for SN 2025wny is made in a companion paper (Mörtsell et al.) that
-  was not fetched; §8 quotes it as reported in arXiv:2608.28427.
+  was not fetched; §8 quotes it as reported in arXiv:2608.28427. [src: abstract]
 - Weak-lensing magnification of siren distances: §3 now gives the LVK statement for
   GWTC-3 ("a few percent"); no number was read for third-generation or LISA sources
   beyond arXiv:astro-ph/0504616.

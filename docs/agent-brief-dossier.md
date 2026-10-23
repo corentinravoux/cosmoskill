@@ -41,8 +41,12 @@ item goes under "Not verified".
 
 ## Shape of a dossier
 
-200 to 450 lines. The headings below, in this order; a heading with nothing
-verified to say is left out, except the last.
+As long as the subject needs: a dossier is the deep level, so depth comes
+first. Remove repetition and padding, never depth. Past about 1000 lines
+(about 25k tokens, which an L3 answer reads whole), split it into two
+dossiers on sub-subjects rather than cut it (owner, 2026-10-23). The
+headings below, in this order; a heading with nothing verified to say is
+left out, except the last.
 
 ```markdown
 # <Subtopic> — <skill> dossier

@@ -117,7 +117,7 @@ arXiv:2208.01045).
 
 **Where it is contested.** A "conservative" wide prior on the residual offset
 is one of the two ingredients that move H0 to 70.6 in Högås & Mörtsell (2026,
-arXiv:2601.22215) `[src]`.
+arXiv:2601.22215) `[src: abstract]`.
 
 **Next data.** Gaia DR4, 2 December 2026 (`surveys-and-data.md`).
 
@@ -128,15 +128,15 @@ Each anchor alone must return the same H0. Values read this session:
 
 | Anchor alone | H0 | Citation | Flag |
 |---|---|---|---|
-| NGC 4258 (2016) | 72.25 ± 2.51 | arXiv:1604.01424 | [src] |
-| LMC, 8 DEBs (2016) | 72.04 ± 2.67 | arXiv:1604.01424 | [src] |
-| MW, 15 parallaxes (2016) | 76.18 ± 2.37 | arXiv:1604.01424 | [src] |
-| NGC 4258 (2019 distance) | 72.0 ± 1.9 | arXiv:1908.05625 | [src] |
-| LMC, 20 DEBs (2019) | 74.22 ± 1.82 | arXiv:1903.07603 | [src] |
-| MW, Gaia EDR3 (2021) | 73.0 ± 1.4 | arXiv:2012.08534 | [src] |
-| SMC (2024) | 74.1 ± 2.1 | arXiv:2404.08038 | [src] |
-| H0DN without NGC 4258 | 73.084 ± 0.920 | arXiv:2510.23823 | [src] |
-| H0DN without Gaia parallaxes | 73.609 ± 0.929 | arXiv:2510.23823 | [src] |
+| NGC 4258 (2016) | 72.25 ± 2.51 | arXiv:1604.01424 | [src: abstract] |
+| LMC, 8 DEBs (2016) | 72.04 ± 2.67 | arXiv:1604.01424 | [src: abstract] |
+| MW, 15 parallaxes (2016) | 76.18 ± 2.37 | arXiv:1604.01424 | [src: abstract] |
+| NGC 4258 (2019 distance) | 72.0 ± 1.9 | arXiv:1908.05625 | [src: abstract] |
+| LMC, 20 DEBs (2019) | 74.22 ± 1.82 | arXiv:1903.07603 | [src: abstract] |
+| MW, Gaia EDR3 (2021) | 73.0 ± 1.4 | arXiv:2012.08534 | [src: abstract] |
+| SMC (2024) | 74.1 ± 2.1 | arXiv:2404.08038 | [src: abstract] |
+| H0DN without NGC 4258 | 73.084 ± 0.920 | arXiv:2510.23823 | [src: Sect. V.1] |
+| H0DN without Gaia parallaxes | 73.609 ± 0.929 | arXiv:2510.23823 | [src: Sect. V.1] |
 
 **Critique to know.** Efstathiou (2020, arXiv:2007.10716) pointed to an
 inconsistency between the LMC and NGC 4258 relative Cepheid distances in the
@@ -184,15 +184,15 @@ arXiv:2511.03394) `[src]`.
 **Sizes claimed.**
 
 - Volume prior applied to all hosts and to MW Cepheids, plus a wide Gaia
-  offset prior: 73.0 -> 70.6 ± 1.0 `[src]` (arXiv:2601.22215).
+  offset prior: 73.0 -> 70.6 ± 1.0 `[src: abstract]` (arXiv:2601.22215).
 - Same prior on MW Cepheids without a selection model: a spurious ~0.05 mag
   zero-point shift; with the two HST selection functions and a Galactic disc
-  prior, the PL parameters agree with SH0ES within 0.5 sigma `[src]`
+  prior, the PL parameters agree with SH0ES within 0.5 sigma `[src: abstract]`
   (Stiskalek et al. 2026, arXiv:2603.09880).
 - Truncated selection on a correlated observable: one extra parameter for the
   Cepheid cut-off in SN hosts lowers H0 by 1.4; SN selection terms by 0.2; an
   equal-volume prior by 1.0; evidence for non-zero corrections is 1.3 to 2.3
-  sigma `[src]` (Percival 2026, arXiv:2607.22425).
+  sigma `[src: abstract]` (Percival 2026, arXiv:2607.22425).
 
 **Mitigation.** Either a full forward model with explicit selection, or
 simulation-based bias corrections with realistic source and selection
@@ -205,7 +205,7 @@ magnitude and period distributions; mock ladders with known selection.
 **What a referee asks.** How were the hosts selected, and is that selection
 in the likelihood? The selection criteria of the SH0ES host sample, built
 over three decades, are not fully documented; changing the assumption moves a
-two-rung H0 from 71.8 to 77.0 `[src]` (Kenworthy et al. 2022,
+two-rung H0 from 71.8 to 77.0 `[src: abstract]` (Kenworthy et al. 2022,
 arXiv:2204.10866).
 
 ## 7. SN Ia standardisation between calibrators and the Hubble flow
@@ -297,7 +297,7 @@ distances (arXiv:2506.10518). See `open-questions.md` for the void debate.
 
 - **Tip detection.** Edge-detection responses are multi-peaked; the measured
   tip correlates with the contrast ratio of the field. Algorithm choices add
-  0.83 to the H0 error, and none of 108 variants gives H0 below 71.6 `[src]`
+  0.83 to the H0 error, and none of 108 variants gives H0 below 71.6 `[src: abstract]`
   (arXiv:2304.06693).
 - **Zero point.** CCHP: -4.050 ± 0.028 ± 0.048 in F814W on NGC 4258
   (arXiv:2008.04181). -4.01 ± 0.04 in F814W on NGC 4258 (arXiv:1908.05625);
@@ -317,11 +317,11 @@ distances (arXiv:2506.10518). See `open-questions.md` for the void debate.
 
 - Field-to-field variation of 0.11 ± 0.02 mag between two NGC 4258 fields in
   the CCHP analysis, also seen in SH0ES fields; the systematic of 2.0 in the
-  JAGB H0 is dominated by it `[src]` (Li et al. 2025, arXiv:2502.05259).
+  JAGB H0 is dominated by it `[src: abstract]` (Li et al. 2025, arXiv:2502.05259).
 - The luminosity function changes shape between galaxies, so mode, mean,
   median and model fits give different H0 `[src]` (arXiv:2502.05259).
 - Ground-based JAGB distances to nearby galaxies are offset from HST TRGB
-  distances by 0.17 ± 0.04 (stat) ± 0.06 (sys) mag `[src]` (Anand 2025,
+  distances by 0.17 ± 0.04 (stat) ± 0.06 (sys) mag `[src: abstract]` (Anand 2025,
   arXiv:2502.07882).
 - Purity: of 54 Milky Way stars in the standard colour box, only 13 are
   carbon-rich, a 76 ± 6% oxygen-rich contamination `[src]` (Li et al. 2026,

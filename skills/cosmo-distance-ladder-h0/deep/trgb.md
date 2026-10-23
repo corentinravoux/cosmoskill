@@ -288,7 +288,7 @@ and its contrast are therefore an analysis choice worth ~1.6 in H0.
 - Method/application: Hoyt et al. 2025, arXiv:2503.11769 — 2D edge
   detection, colour standardisation, critique of CATS.
 - Method/critique: Scolnic et al. 2023, arXiv:2304.06693 — unsupervised
-  algorithm, contrast standardisation, NGC 4258 field comparison.
+  algorithm, contrast standardisation, NGC 4258 field comparison. [src: abstract]
 - Application: Li et al. 2025, arXiv:2504.08921 — complete calibrator
   sample (L2).
 - Application: Cruz Reyes et al. 2026, arXiv:2602.15421 — Gaia-only
@@ -302,7 +302,7 @@ and its contrast are therefore an analysis choice worth ~1.6 in H0.
   modified TRGBTOOL: cited through the papers above, not read; no
   identifier recorded.
 - The earlier TRGB measurements in NGC 5584, NGC 1309, NGC 3370 and
-  NGC 3021 (reference [31] of arXiv:2304.06693) were not identified.
+  NGC 3021 (reference [31] of arXiv:2304.06693) were not identified. [src: Sect. II.1]
 - The CCHP blinding protocol details beyond Sect. III.3 of
   arXiv:2503.11769, and Appendix C.1–C.2 (2D fit details), not read.
 - Any CATS reply to the 2025 CCHP critique was not searched.

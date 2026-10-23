@@ -428,7 +428,7 @@ i.e. an r⁻² weighting of radial velocities (Peery, Watkins & Feldman 2018, ar
 
 with σ* the 1D non-linear dispersion, "usually assumed to be ~300 km/s" [src: as written in
 arXiv:1804.05520, §3]. Its window is whatever the survey gives; its depth is the error-weighted
-depth, typically shallow.
+depth, typically shallow. [src: Sect. 1]
 
 **ηMLE** (Qin et al. 2018, arXiv:1804.05520): the same likelihood written in the observable,
 

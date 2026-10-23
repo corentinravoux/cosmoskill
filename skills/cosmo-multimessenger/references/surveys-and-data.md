@@ -80,14 +80,14 @@ cosmology papers) was not read this session; see "Not verified".
 
 | Catalogue | Type | Completeness and depth as quoted | Used in | Source |
 |---|---|---|---|---|
-| GLADE+ | all-sky compilation of six catalogues (GWGC, 2MPZ, 2MASS XSC, HyperLEDA, WISE×SCOS photo-z, SDSS DR16Q) [src] | complete to `d_L = 47 (+4/−2)` Mpc in total B-band luminosity; holds the brightest galaxies giving 90% of B- and K-band luminosity to about 130 Mpc [src] | GWTC-3, GWTC-4.0, GWTC-5.0 (alternative), Peak Sirens | arXiv:2110.06184 |
+| GLADE+ | all-sky compilation of six catalogues (GWGC, 2MPZ, 2MASS XSC, HyperLEDA, WISE×SCOS photo-z, SDSS DR16Q) [src: abstract] | complete to `d_L = 47 (+4/−2)` Mpc in total B-band luminosity; holds the brightest galaxies giving 90% of B- and K-band luminosity to about 130 Mpc [src] | GWTC-3, GWTC-4.0, GWTC-5.0 (alternative), Peak Sirens | arXiv:2110.06184 |
 | GLADE (previous version) | all-sky | — | GWTC-2 dark sirens | arXiv:2101.12660 |
 | DES Y3 photo-z | photometric | — | GW170814 | arXiv:1901.01540 |
 | DES Y6 Gold | photometric; restricted to `0.05 < z < 0.50` to keep the galaxy distribution consistent with uniform in comoving volume [src] | — | GWTC-4.0 external analysis; fiducial catalogue of GWTC-5.0 with luminosity weighting [src] | arXiv:2602.04766, arXiv:2605.27227 |
 | DESI Legacy Imaging Survey | photometric, photo-z PDFs from a deep-learning model [src] | magnitude-limited; incompleteness modelled in the 2026 analysis [src] | 8, 15, then 17 well-localised dark sirens | arXiv:2111.06445, arXiv:2404.16092, arXiv:2603.20195 |
 | DELVE | photometric (DECam) | — | GW190924_021846, GW200202_154313 | arXiv:2310.13695 |
 | 2MPZ, WISE×SuperCOSMOS | photometric, all-sky | — | GWTC-3 cross-correlation | arXiv:2203.03643 |
-| DESI spectroscopy around NGC 4993 | spectroscopic, dedicated | 39 group galaxies, five times more than before [src] | GW170817 host environment | arXiv:2512.08818 |
+| DESI spectroscopy around NGC 4993 | spectroscopic, dedicated | 39 group galaxies, five times more than before [src: abstract] | GW170817 host environment | arXiv:2512.08818 |
 | HETDEX internal release 5 (VIRUS) | spectroscopic, integral-field | "exquisite completeness within z = 0.2" [src] | **forecast** for follow-up of golden and silver sirens | arXiv:2512.21729 |
 
 The mismatch that defines the field: GLADE+ is complete to 47 Mpc, while the
@@ -107,10 +107,10 @@ are well localised (arXiv:2511.04786) [src].
 
 | Product | Used by | Source |
 |---|---|---|
-| 6dFGSv Fundamental Plane velocities (more than 8000 galaxies, `z ≲ 0.055`) [src] | LVC 2017 | arXiv:1710.05835 |
+| 6dFGSv Fundamental Plane velocities (more than 8000 galaxies, `z ≲ 0.055`) [src: Sect. "Finding the Hubble velocity of NGC 4993"] | LVC 2017 | arXiv:1710.05835 |
 | Cosmicflows-3, 2MTF, 6dFGSv with several group catalogues | Howlett & Davis | arXiv:1909.00587 |
 | BORG reconstruction on 2M++ | Mukherjee et al.; also shipped in GLADE+ for `z < 0.05` | arXiv:1909.08627, arXiv:2110.06184 |
-| 2M++ linear reconstruction (within 200 h⁻¹ Mpc) [src] | cross-check in LVC 2017 | arXiv:1504.04627 |
+| 2M++ linear reconstruction (within 200 h⁻¹ Mpc) [src: abstract] | cross-check in LVC 2017 | arXiv:1504.04627 |
 | DESI Fundamental Plane; Cosmicflows-4 surface-brightness-fluctuation distance of NGC 4993 | Amsellem et al. | arXiv:2512.08818 |
 
 Survey descriptions and the current state of these velocity data are in
@@ -124,12 +124,12 @@ Survey descriptions and the current state of these velocity data are in
 
 | Facility / sample | Band, localisation | Sample | Status | Source |
 |---|---|---|---|---|
-| CHIME/FRB Catalog 1 | 400–800 MHz | 536 bursts, 2018-07-25 to 2019-07-01, 62 from 18 repeaters; sky rate 525 ± 30 (stat) +140/−130 (sys) per sky per day above 5 Jy ms at 600 MHz [src] | superseded | arXiv:2106.04352 |
-| CHIME/FRB Catalog 2 | 400–800 MHz, `O(10')` positions, 0.983 ms resolution [src] | 4539 bursts from 3641 sources, 2018-07-25 to 2023-09-15, 981 bursts from 83 repeaters; all Catalog 1 events reprocessed [src] | current | arXiv:2601.09399 |
+| CHIME/FRB Catalog 1 | 400–800 MHz | 536 bursts, 2018-07-25 to 2019-07-01, 62 from 18 repeaters; sky rate 525 ± 30 (stat) +140/−130 (sys) per sky per day above 5 Jy ms at 600 MHz [src: abstract] | superseded | arXiv:2106.04352 |
+| CHIME/FRB Catalog 2 | 400–800 MHz, `O(10')` positions, 0.983 ms resolution [src: abstract] | 4539 bursts from 3641 sources, 2018-07-25 to 2023-09-15, 981 bursts from 83 repeaters; all Catalog 1 events reprocessed [src] | current | arXiv:2601.09399 |
 | ASKAP / CRAFT | arcsecond localisation | 16 localised bursts in the 2022 H0 analysis, with 60 unlocalised from Parkes and ASKAP [src] | operating | arXiv:2208.00819 |
 | DSA-110 | arcsecond localisation with host association in Pan-STARRS1 [src] | 11 bursts in the first catalogue; 30 hosts in the 2024 host study [src] | operating | arXiv:2307.03344, arXiv:2409.16964 |
 | FLIMFLAM DR1 | foreground spectroscopy | 8 sightlines [src] | first release | arXiv:2402.00505 |
-| DSA (with Chronoscope backend) | 1650 antennas of 6.15 m, 0.7–2 GHz, Nevada; localisation ≲ 250 mas [src] | **forecast**: about `10^4` bursts per year per sub-band, about `10^5` over the nominal five-year survey [src] | planned | arXiv:2608.30943 |
+| DSA (with Chronoscope backend) | 1650 antennas of 6.15 m, 0.7–2 GHz, Nevada; localisation ≲ 250 mas [src: abstract] | **forecast**: about `10^4` bursts per year per sub-band, about `10^5` over the nominal five-year survey [src] | planned | arXiv:2608.30943 |
 
 CHIME outrigger stations for VLBI localisation appear in 2025–2026 titles on arXiv; no
 paper on them was read (see "Not verified").
@@ -139,7 +139,7 @@ paper on them was read (see "Not verified").
 
 | Year of analysis | Localised bursts used | Source |
 |---|---|---|
-| 2020 | published sample plus four new (`z` = 0.291, 0.118, 0.378, 0.522) [src] | arXiv:2005.13161 |
+| 2020 | published sample plus four new (`z` = 0.291, 0.118, 0.378, 0.522) [src: abstract] | arXiv:2005.13161 |
 | 2021 | 9 | arXiv:2104.04538 |
 | 2021 | 14 | arXiv:2108.00581 |
 | 2022 | 16 (with 60 unlocalised) | arXiv:2208.00819 |
@@ -170,14 +170,14 @@ population model is part of the cosmological likelihood through `DM_host`.
 | Object | Type, source redshift | Lens | Delay data | H0 paper |
 |---|---|---|---|---|
 | SN Refsdal | multiply imaged supernova; reappearance observed in 2015 as predicted [src] | massive galaxy cluster, MACS J1149 [src: arXiv:2305.06367, Supplementary] | reappearance delay | arXiv:2305.06367, arXiv:2509.09979 |
-| SN H0pe | Type Ia, `z = 1.78`, three images [src] | cluster PLCK G165.7+67.0, `z = 0.35` [src] | JWST photometry and spectroscopy, two relative delays [src] | arXiv:2403.18902 |
-| SN Encore | Type Ia, `z = 1.95` [src] | cluster MACS J0138.0−2155 [src] | `Δt = −39.8 (+3.9/−3.3)` days [src] | arXiv:2509.12301 |
+| SN H0pe | Type Ia, `z = 1.78`, three images [src: abstract] | cluster PLCK G165.7+67.0, `z = 0.35` [src] | JWST photometry and spectroscopy, two relative delays [src] | arXiv:2403.18902 |
+| SN Encore | Type Ia, `z = 1.95` [src: abstract] | cluster MACS J0138.0−2155 [src] | `Δt = −39.8 (+3.9/−3.3)` days [src] | arXiv:2509.12301 |
 | SN Requiem | sibling of Encore in the same host; a fourth image is expected within a few years [src] | same cluster | pending | arXiv:2509.12301 |
-| SN 2025wny | Type I superluminous, `z = 2.015`, first of its class to be strongly lensed; four deblended images [src] | galaxy-scale lens | `Δt_AB = −10.6 (+2.2/−2.5)` days photometric [src] | arXiv:2608.28427 |
+| SN 2025wny | Type I superluminous, `z = 2.015`, first of its class to be strongly lensed; four deblended images [src: abstract] | galaxy-scale lens | `Δt_AB = −10.6 (+2.2/−2.5)` days photometric [src] | arXiv:2608.28427 |
 | TDCOSMO-2025 | 8 lensed quasars, with 11 SLACS and 4 SL2S non-time-delay lenses [src] | galaxy-scale lenses | long-term monitoring | arXiv:2506.03023 |
 
 Three lensed supernovae had given H0 by September 2025 (Refsdal, H0pe, Encore;
-arXiv:2509.12301) [src]; SN 2025wny is the fourth, and the only galaxy-scale system
+arXiv:2509.12301) [src: abstract]; SN 2025wny is the fourth, and the only galaxy-scale system
 with an H0 among the papers read. Lensed quasars are covered in `cosmo-distance-ladder-h0`. No lensed
 gravitational-wave event and no lensed FRB has produced a cosmological measurement; the
 literature on both is forecasts (open-questions file).

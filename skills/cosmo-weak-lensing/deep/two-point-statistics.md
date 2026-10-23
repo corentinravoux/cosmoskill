@@ -308,7 +308,7 @@ What comparisons on one catalogue found:
 - Application: Secco et al. 2021, arXiv:2105.13544 — curved-sky,
   bin-averaged ξ± model and its k sensitivity.
 - Critique: Guerrini et al. 2026, arXiv:2605.13543 — a 2.18σ
-  configuration–harmonic difference once correlations are counted.
+  configuration–harmonic difference once correlations are counted. [src: abstract]
 
 ## Not verified
 <!-- key: not-verified -->

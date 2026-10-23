@@ -61,7 +61,7 @@ Flags as in the other files. Numbers are repeated here only when the argument ne
 - **Closed (2019–2020).** Planck 2018 spectra alone prefer Ω_K < 0 at more than 99% (arXiv:1807.06209, arXiv:1911.02087), in 2.5–3σ tension with lensing and BAO in the curved model (arXiv:1908.09139). Counter-position: with a different Planck likelihood the spectra are consistent with flatness and CMB + BAO give 0.0004 ± 0.0018 (arXiv:2002.06892). The preference is the A_L feature in another parameter (arXiv:1807.06209); its later history is in `cosmo-cmb`.
 - **Open (2025–2026).** DESI DR2 + CMB give Ω_K = +0.0023 ± 0.0011 (arXiv:2503.14738); low-redshift data alone are claimed to prefer an open universe at 2σ to 5σ depending on the supernova sample (arXiv:2512.19565). Counter-position: the preference exists only inside ΛCDM and vanishes when dark energy is allowed to evolve, so it is "an artifact of limited model flexibility" (arXiv:2604.23492); DESI's own w0waCDM + Ω_K fits are consistent with zero (arXiv:2503.14738).
 - **Inflationary reading.** Chudaykin et al. take Ω_K ≈ 3 × 10⁻³ as a motivation to revisit open-universe inflation and note that it lowers n_s (arXiv:2607.28445). Efstathiou and Gratton read flatness as support for a long inflation (arXiv:2002.06892).
-- **Judgment.** Both the 2019 closed hint and the 2025 open hint appear when two data sets that disagree in ΛCDM are forced into ΛCDM + Ω_K. Neither exceeds about 2σ in a combined fit. **Forecast**: Euclid σ(Ω_K) = 0.0044 (0.003) alone (arXiv:2507.15819), which does not improve on DESI + CMB.
+- **Judgment.** Both the 2019 closed hint and the 2025 open hint appear when two data sets that disagree in ΛCDM are forced into ΛCDM + Ω_K. Neither exceeds about 2σ in a combined fit. **Forecast**: Euclid σ(Ω_K) = 0.0044 (0.003) alone (arXiv:2507.15819, abstract), which does not improve on DESI + CMB.
 
 ## 6. Cosmic birefringence: a 4.8σ signal nobody claims
 <!-- key: cosmic-birefringence-a-4-8sigma-signal-nobody -->
@@ -145,7 +145,7 @@ Forecasts that cite CMB-S4 (for example the Euclid combinations in arXiv:2507.15
 12. **"Planck shows the Universe is closed."** Planck 2018 spectra alone, Plik likelihood; flat with lensing and BAO, and DESI-era fits lean open (arXiv:1807.06209, arXiv:2002.06892, arXiv:2503.14738).
 13. **"Negative curvature" for Ω_K < 0.** Ω_K < 0 is positive spatial curvature (closed).
 14. **"Cosmic birefringence is detected at 3.6σ / 4.8σ."** The authors of both results decline to claim a detection because of foreground and instrument systematics (arXiv:2205.13962, arXiv:2608.06480).
-15. **"β = 0.30 ± 0.05" as a 6σ measurement.** The error omits the polarisation-angle systematic (arXiv:2507.16714).
+15. **"β = 0.30 ± 0.05" as a 6σ measurement.** The error omits the polarisation-angle systematic (arXiv:2507.16714, abstract).
 16. **"BICEP/Keck sees no birefringence."** It self-calibrates on EB and is blind to a constant β (arXiv:2603.06812).
 17. **"DESI sees a primordial feature at 3σ."** Only at fixed Planck cosmology; it disappears when the cosmology is varied (arXiv:2610.10530).
 18. **"SPHEREx: R = 40 over 0.75–4.1 μm and R = 150 over 4.1–4.8 μm."** Proposal values (arXiv:1412.4872); the flown mission has 102 bands over 0.75–5.0 μm and was launched on 11 March 2025 (arXiv:2511.02985).

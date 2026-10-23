@@ -413,7 +413,7 @@ The limits on early-time models.
   with the photon density, the BBN baryon-to-photon ratio and the
   baryon-to-matter ratio from clustering gives 69.0 ± 2.5 from DESI DR1 +
   θ_* + BBN, "robust to pre-recombination modifications such as Early Dark
-  Energy" (Krolewski et al. 2025, arXiv:2511.23432) [src]. At that precision
+  Energy" (Krolewski et al. 2025, arXiv:2511.23432) [src: abstract]. At that precision
   it does not discriminate.
 
 Results of the model comparisons are in `open-questions.md` §2.

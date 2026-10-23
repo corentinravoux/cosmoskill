@@ -28,7 +28,7 @@ dark energy offers a possible solution [src] (arXiv:2503.14738, abstract).
   DR2 values moved into better agreement with Planck ΛCDM than DR1; D_par
   remains consistent. He finds w(z = 0.5) = −0.996 ± 0.046 from DESI BAO +
   CMB, sees no significant evidence for evolving dark energy from Planck +
-  DESI BAO, and criticises the statistical methodology [src].
+  DESI BAO, and criticises the statistical methodology [src: abstract].
 - Ó Colgáin et al. 2024 (arXiv:2404.08633) traced the DR1 BAO-only preference
   for w0 > −1 to the LRG bin at z_eff = 0.51, which alone implied
   Ω_m = 0.67 (+0.18/−0.17) [src]. For DR2, Ó Colgáin et al. 2025
@@ -43,7 +43,7 @@ dark energy offers a possible solution [src] (arXiv:2503.14738, abstract).
 **Critiques from the CMB side.** The mismatch depends on the optical depth:
 a τ near 0.09 would reduce the preference for evolving dark energy from about
 3σ to about 1.5σ, at the cost of a 3–5σ conflict with Planck low-ℓ
-polarisation [src] (Sailer et al. 2025, arXiv:2504.16932). Detail:
+polarisation [src: abstract] (Sailer et al. 2025, arXiv:2504.16932). Detail:
 `cosmo-cmb`.
 
 **What the clustering data themselves say when more than BAO is used.**
@@ -57,7 +57,7 @@ polarisation [src] (Sailer et al. 2025, arXiv:2504.16932). Detail:
   lowers the DESI + CMB preference from 3.1σ to 2.7σ [src] (DESI
   Collaboration 2026, arXiv:2607.27410; the 3.1σ is the DR2 BAO value).
 - Simulation-based priors: no statistically significant evidence (2.2σ
-  without supernovae, 1.4σ with) [src] (Chudaykin et al. 2026,
+  without supernovae, 1.4σ with) [src: abstract] (Chudaykin et al. 2026,
   arXiv:2602.18554).
 
 **Rule of judgment.** The significance of the w0wa preference has not grown
@@ -175,7 +175,7 @@ full-shape fits use PIP weights is not known at the snapshot.
   (`systematics.md` Sect. 5).
 - **Two-point versus bispectrum.** The DESI DR1 P + B analysis quotes
   f_NL = −0.1 ± 7.4, tighter than the scale-dependent-bias result
-  (σ ≈ 9), and −0.0 ± 4.1 with the CMB [src] (Chudaykin et al. 2025,
+  (σ ≈ 9), and −0.0 ± 4.1 with the CMB [src: abstract] (Chudaykin et al. 2025,
   arXiv:2512.04266). It is an independent analysis; no collaboration
   bispectrum f_NL result was found.
 - **Next.** DESI DR2 and final samples; SPHEREx all-sky low-resolution

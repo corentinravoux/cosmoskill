@@ -19,7 +19,7 @@ The instrumental systematics of the input data are not repeated here: beams, cal
 
 One table per analysis; the subsections below discuss each systematic across analyses. All limits 95%, ΛCDM + Σm_ν with Σm_ν > 0 unless stated.
 
-**DESI DR2 BAO + CMB (Elbers et al. 2025, arXiv:2503.14744; baseline < 0.0642 eV, PR4 CamSpec)**
+**DESI DR2 BAO + CMB (Elbers et al. 2025, arXiv:2503.14744; baseline < 0.0642 eV, PR4 CamSpec)** [src: abstract]
 
 | Change | Effect on Σm_ν | Place |
 |---|---|---|
@@ -88,8 +88,8 @@ The SN samples are not independent: the DESY5 low-redshift (z < 0.1) sample come
 | P-ACT-LB, prior widened to τ = 0.057 ± 0.012 | Σm_ν < 0.089 eV becomes < 0.10 eV: "minimal impact" | Calabrese et al. 2025, arXiv:2503.14454 appendix | [src] |
 | P-ACT-LB, SRoll2 removed | Σm_ν < 0.19 eV; τ = 0.081 ± 0.016 is then measured from lensing in the spectra | arXiv:2503.14454 appendix | [src] |
 | No low-ℓ EE, DESI BAO + high-ℓ CMB + lensing | τ = 0.090 ± 0.012; w0wa preference from about 3σ to 1.4σ (Δχ²_MAP = −3.82) [src: Sect. III.2] | Sailer et al. 2025, arXiv:2504.16932 | [src] |
-| No low-ℓ EE, no lensing constraints | τ = 0.091 ± 0.011; neutrino tension at 0.06 eV removed | Jhaveri, Karwal & Hu 2025, arXiv:2504.21813 | [src] |
-| Imposed prior τ = 0.11 ± 0.006 | Σm_ν = 0.10 (+0.04/−0.05) eV | Sullivan, de Belsunce & Ivanov 2026, arXiv:2606.30903 | [src] |
+| No low-ℓ EE, no lensing constraints | τ = 0.091 ± 0.011; neutrino tension at 0.06 eV removed | Jhaveri, Karwal & Hu 2025, arXiv:2504.21813 | [src: abstract] |
+| Imposed prior τ = 0.11 ± 0.006 | Σm_ν = 0.10 (+0.04/−0.05) eV | Sullivan, de Belsunce & Ivanov 2026, arXiv:2606.30903 | [src: abstract] |
 
 - **What the size means.** Widening the error on τ does almost nothing; the central value has to move. A shift to about 0.09 is 3–5σ from Planck low-ℓ polarisation (arXiv:2504.16932 [src]), and Planck reprocessings give 0.051–0.063 with σ ≈ 0.006 [sec: `cosmo-cmb`]. DESI adds that τ cannot be the whole explanation, because at fixed neutrino mass a larger τ raises the CMB-preferred H0 r_d only slightly (arXiv:2503.14744 §5.2.1 [src]).
 - **Mitigation.** Name the low-ℓ EE likelihood or the τ prior. Show the limit with the prior widened and with low-ℓ EE removed.
@@ -121,7 +121,7 @@ The SN samples are not independent: the DESY5 low-redshift (z < 0.1) sample come
 
 - **Mechanism.** Neutrino mass and the late-time expansion history both change the distance to last scattering at fixed physical densities. A model that absorbs the BAO–CMB mismatch elsewhere releases the pressure on Σm_ν.
 - **Size.** DESI DR2 BAO + CMB: < 0.0642 eV (ΛCDM), < 0.0851 eV (wCDM), < 0.163 eV (w0waCDM). With supernovae the w0waCDM limit is 0.117, 0.139 or 0.129 eV for Pantheon+, Union3 or DESY5, while in wCDM supernovae tighten the limit to 0.0586–0.0653 eV (arXiv:2503.14744 Table 2 [src]). The effective mass in w0waCDM is 0.06 (+0.15/−0.10) eV (Elbers et al. 2024, arXiv:2407.10965 [src]).
-- **Mitigation.** State the model with the limit; in a text that also argues for evolving dark energy, quote the w0waCDM limit. A dark-energy-independent construction gives < 0.152 eV, stable under binned and cubic w(a) (arXiv:2607.24742 [src]).
+- **Mitigation.** State the model with the limit; in a text that also argues for evolving dark energy, quote the w0waCDM limit. A dark-energy-independent construction gives < 0.152 eV, stable under binned and cubic w(a) (arXiv:2607.24742 [src: abstract]).
 - **Validation.** Limits with each supernova compilation. The compilations were recalibrated in 2025–2026 (`cosmo-supernovae`); the neutrino limits in the DESI table predate those revisions and have not been recomputed in a paper read here.
 - **Referee citation.** arXiv:2503.14744 Table 2; arXiv:2407.10965.
 
@@ -148,7 +148,7 @@ The SN samples are not independent: the DESY5 low-redshift (z < 0.1) sample come
 - **Mechanism.** The Bayes factor between orderings is the ratio of prior volume left by an upper limit that sits between the two minimum masses; it depends on the prior measure on the masses as much as on the data.
 - **Size.** K = 10 for DESI DR2 + CMB + NuFIT 6.0 with the CamSpec likelihood, 6 with L-H and 8 with plik; Δχ² = 4.6 (arXiv:2503.14744 [src]). Other prior constructions give 46.5 (Jiang et al. 2024, arXiv:2407.18047) and more than 460 in ΛCDM or more than 40 in extensions, with the prior measure changing K by a factor of about 10 (Jimenez et al. 2026, arXiv:2606.18987) [src].
 - **Mitigation.** Give the prior on the masses, the frequentist Δχ², and the result in w0waCDM. Oscillation data alone fit both orderings almost equally well unless the Super-Kamiokande atmospheric table is added (Esteban et al. 2024, arXiv:2410.05380 [src]).
-- **Validation.** The laboratory: JUNO with accelerator constraints favours normal ordering at ≥ 2.1σ, Bayes factor 10.18 (JUNO Collaboration 2026, arXiv:2609.37895 [src]).
+- **Validation.** The laboratory: JUNO with accelerator constraints favours normal ordering at ≥ 2.1σ, Bayes factor 10.18 (JUNO Collaboration 2026, arXiv:2609.37895 [src: abstract]).
 
 ## 9. N_eff
 <!-- key: neff -->
@@ -161,7 +161,7 @@ The SN samples are not independent: the DESY5 low-redshift (z < 0.1) sample come
 | Primordial spectrum | a power law is assumed | self-interacting dark radiation: N_idr < 0.134 becomes ΔN_eff < 0.58 with running and running-of-running free | Garny, Niedermann & Sloth 2026, arXiv:2604.26541 | [src] |
 | Free-streaming or fluid | only free-streaming radiation produces the phase shift | separate parameters N_eff and N_idr | Bashinsky & Seljak 2003, arXiv:astro-ph/0310198 | [src] |
 | Helium | the damping tail is degenerate with Y_P | BBN consistency imposed, or Y_P freed | arXiv:astro-ph/0310198 | [src] |
-| Epoch | BBN and CMB measure radiation at different times | −0.708 < N_ν^CMB − N_ν^BBN < 0.328 | Yeh et al. 2022, arXiv:2207.13133 | [src] |
+| Epoch | BBN and CMB measure radiation at different times | −0.708 < N_ν^CMB − N_ν^BBN < 0.328 | Yeh et al. 2022, arXiv:2207.13133 | [src: abstract] |
 
 A low N_eff cannot be attributed to photon heating at late times: raising the photon energy density by the 12% (P-ACT) or 6% (P-ACT-LB) needed would produce spectral distortions μ = 0.16 or y = 0.03 (0.09 or 0.02), excluded by COBE/FIRAS; only injection at 2 × 10⁶ < z < 10⁹ escapes (arXiv:2503.14454 §6.1.1 [src]). Do not combine CMB and BAO for N_eff without stating their mutual consistency in ΛCDM + N_eff [sec: `cosmo-cmb`].
 
@@ -170,7 +170,7 @@ A low N_eff cannot be attributed to photon heating at late times: raising the ph
 
 - **Nuclear rates.** The baryon density from D/H depends on the deuterium-burning rates: ab-initio theoretical rates favour lower Ω_b h², experimental rates higher. Marginalising over rates gives Ω_b h² = 0.02218 ± 0.00055 (Schöneberg 2024, arXiv:2401.15054 [src]), four times the error of the 0.02236 ± 0.00014 obtained with BBN + CMB and N_ν = 3 (Yeh et al. 2026, arXiv:2601.22239 [src]) [der: 0.00055/0.00014].
 - **Helium.** The predicted Y_P = 0.24709 ± 0.00017 (Pitrou et al. 2018, arXiv:1801.08023) is far more precise than the measured 0.2458 ± 0.0013 (arXiv:2601.22239) [src]; N_ν from BBN is limited by the observational helium systematics, which this session did not research.
-- **Convention.** N_ν with baseline 3 in BBN papers, N_eff with baseline 3.044 in CMB papers (arXiv:2207.13133 [src]).
+- **Convention.** N_ν with baseline 3 in BBN papers, N_eff with baseline 3.044 in CMB papers (arXiv:2207.13133 [src: Sect. 1]).
 - **Referee expectation.** A "BBN prior" names the code and the rate compilation.
 
 # Part B — dark-matter properties
@@ -178,7 +178,7 @@ A low N_eff cannot be attributed to photon heating at late times: raising the ph
 ## Dark-matter budgets by analysis, read in paper bodies
 <!-- key: dark-matter-budgets-by-analysis-read-in-paper -->
 
-**Lyα forest, HIRES + UVES, z = 4.2–5.0 (Iršič et al. 2023, arXiv:2309.04533; baseline m_WDM > 5.7 keV, 95%)**
+**Lyα forest, HIRES + UVES, z = 4.2–5.0 (Iršič et al. 2023, arXiv:2309.04533; baseline m_WDM > 5.7 keV, 95%)** [src: abstract]
 
 | Change | Effect | Place |
 |---|---|---|
@@ -238,12 +238,12 @@ Both Lyα analyses correct for inhomogeneous reionisation with different simulat
 | Thermal-history assumption | m_WDM limit | Citation | Flag |
 |---|---|---|---|
 | T(z) a power law | > 5.3 keV | Iršič et al. 2017, arXiv:1702.01764 | [src] |
-| temperature jumps up to 5000 K allowed | > 3.5 keV | arXiv:1702.01764 | [src] |
-| wide range of histories, 1080 simulations | > 3.1 keV | Villasenor et al. 2022, arXiv:2209.14220 | [src] |
+| temperature jumps up to 5000 K allowed | > 3.5 keV | arXiv:1702.01764 | [src: abstract] |
+| wide range of histories, 1080 simulations | > 3.1 keV | Villasenor et al. 2022, arXiv:2209.14220 | [src: abstract] |
 | coldest reionisation histories allowed by data | > 1.9 keV | Garzilli et al. 2019, arXiv:1912.09397 | [src] |
 | histories wide enough that a warm intergalactic medium fits the cutoff | no limit | Garzilli, Boyarsky & Ruchayskiy 2015, arXiv:1510.07006 | [src] |
-| thermal history and inhomogeneous reionisation marginalised, k_max = 0.2 s/km | > 5.7 keV | Iršič et al. 2023, arXiv:2309.04533 | [src] |
-| same, k_max < 0.1 s/km and earlier priors | > 4.1 keV | arXiv:2309.04533 | [src] |
+| thermal history and inhomogeneous reionisation marginalised, k_max = 0.2 s/km | > 5.7 keV | Iršič et al. 2023, arXiv:2309.04533 | [src: abstract] |
+| same, k_max < 0.1 s/km and earlier priors | > 4.1 keV | arXiv:2309.04533 | [src: abstract] |
 
 - **Mitigation.** Marginalise over a thermal-history family wide enough to include late and cold reionisation; include inhomogeneous reionisation; use independent temperature measurements as priors and say so.
 - **Validation.** Stability of the limit under k_max cuts and under dropping redshift bins.
@@ -272,7 +272,7 @@ Source for this section: the supplement of Nadler et al. 2020 (arXiv:2008.00022 
 - **Validation.** Consistency of the inferred galaxy–halo connection with hydrodynamical simulations; the joint Milky Way + M31 analysis gives 6.20 keV against 6.5 keV for the Milky Way alone (arXiv:2512.01361, arXiv:2008.00022 [src]).
 - **Referee citation.** arXiv:2008.00022 and the census papers it builds on, which this session did not fetch.
 
-**Milky Way + M31 satellites (Liu, Gong & Liao 2025, arXiv:2512.01361; > 6.20 keV, 95%)**
+**Milky Way + M31 satellites (Liu, Gong & Liao 2025, arXiv:2512.01361; > 6.20 keV, 95%)** [src: abstract]
 
 | Item | What was done or found | Place |
 |---|---|---|
@@ -301,7 +301,7 @@ Source for the priors: Gilman et al. 2025 §4.3 (arXiv:2511.07513 [src]).
 
 | Probe | Dominant systematic | Size where quantified | Citation | Flag |
 |---|---|---|---|---|
-| GD-1, Pal 5 density | normalisation and slope of the subhalo mass function in the inner Galaxy, tidal disruption | 3.6 keV from streams alone, 6.2 keV only with satellite counts | Banik et al. 2019, arXiv:1911.02663 | [src] |
+| GD-1, Pal 5 density | normalisation and slope of the subhalo mass function in the inner Galaxy, tidal disruption | 3.6 keV from streams alone, 6.2 keV only with satellite counts | Banik et al. 2019, arXiv:1911.02663 | [src: abstract] |
 | Ultraviolet luminosity functions | star-formation efficiency and its scatter are degenerate with a delay in halo formation | ≥ 3.2 keV after marginalisation, weaker than the headline Lyα, satellite and lensing limits | Liu, Shan & Zhang 2024, arXiv:2404.13596 | [src] |
 | Same, dark matter–proton scattering | as above | for n = 0 within an order of magnitude of the Lyα and satellite limits | Lazare et al. 2025, arXiv:2510.10757 | [src] |
 | Dwarf sizes and dispersions (fuzzy dark matter) | heating by granules assumes the soliton–halo structure and no other heating or cooling history | > 3 × 10⁻¹⁹ eV at 99%, 15 to 150 times the other limits [der: against 2 × 10⁻²⁰ and 2 × 10⁻²¹ eV] | Dalal & Kravtsov 2022, arXiv:2203.05750 | [src] |
@@ -321,7 +321,7 @@ Source for the priors: Gilman et al. 2025 §4.3 (arXiv:2511.07513 [src]).
 - **Scale probed.** CMB limits and satellite limits on the same dark matter–baryon cross section differ by orders of magnitude because satellites probe smaller scales (Nadler et al. 2019, arXiv:1904.10000 [src]); state the probe with the cross section, and the velocity index n.
 - **Self-interaction, mergers.** The offset method depends more on how the centroids are measured than on the initial conditions, and early Bullet Cluster limits were overstated (Robertson, Massey & Eke 2016, arXiv:1605.04307 [src]). The ensemble offset is 5.8 ± 8.2 kpc (Harvey et al. 2015, arXiv:1503.07675 [src]).
 - **Self-interaction, profiles.** Jeans modelling assumes equilibrium and a baryon model; with core collapse included about 1/6 of SPARC galaxies admit both a core-growth and a core-collapse solution, giving an L-shaped degeneracy between σ0 and the velocity scale (Jia et al. 2026, arXiv:2601.17118 [src]).
-- **Velocity.** σ/m of 0.5 ± 0.2 cm²/g in groups and 0.19 ± 0.09 cm²/g in clusters refer to different velocities (Sagunski et al. 2020, arXiv:2006.12515 [src]); a limit without its velocity cannot be compared with another.
+- **Velocity.** σ/m of 0.5 ± 0.2 cm²/g in groups and 0.19 ± 0.09 cm²/g in clusters refer to different velocities (Sagunski et al. 2020, arXiv:2006.12515 [src: abstract]); a limit without its velocity cannot be compared with another.
 
 ## 18. Sub-component axions, decays, the X-ray line
 <!-- key: sub-component-axions-decays-the-x-ray-line -->
@@ -364,7 +364,7 @@ Dark matter:
 
 - Observational systematics of the primordial helium determination (LBT Y_p Project) were not researched.
 - Stream analyses: Sects. 3.1 and 4.1 of arXiv:1911.02663 were read (Part B budget table); its treatment of baryonic substructures (Sect. 2.3) and stream progenitor modelling were not.
-- The effect on the limit of the alternative inner-Galaxy subhalo suppression (γ = 1.5, β = 0.7) in arXiv:1911.02663 was not read.
+- The effect on the limit of the alternative inner-Galaxy subhalo suppression (γ = 1.5, β = 0.7) in arXiv:1911.02663 was not read. [src: Sect. 3.1]
 - Effect of the source-size and multipole priors on the JWST limits: priors read (arXiv:2511.07513 Sects. V.1, V.4), no ablation found in the sections read.
 - Blinding practice of the small-scale dark-matter analyses was not read.
 - The decomposition of the neutrino bound that ACT cites for the statement that excess smoothing is not the primary driver was not fetched; the statement is quoted from ACT.

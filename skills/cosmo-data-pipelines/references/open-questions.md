@@ -113,7 +113,7 @@ dependence of new networks on them (arXiv:2608.10080) [src].
 - In Rubin DP1 the production extendedness classification and DeepDISC
   agree within ~1 percentage point on a common sample (97.4% vs 98.5%),
   but DeepDISC labels more faint sources as stars and independent labels
-  favour the random forest in most disagreements (arXiv:2610.10986) [src].
+  favour the random forest in most disagreements (arXiv:2610.10986) [src: abstract].
 - ACT DR6 mapmaker transfer function from pure simulations disagreed with
   the one measured against Planck until model error was traced
   [src: arXiv:2503.14451, Sect. V.2].
@@ -128,10 +128,10 @@ dependence of new networks on them (arXiv:2608.10080) [src].
 
 - LSST full depth (**forecast**): ~62% of detected galaxies blended at the
   1% flux level and N_eff lowered by ~18%, to at most 39.4 arcmin⁻² in r
-  (arXiv:2103.02078) [src].
+  (arXiv:2103.02078) [src: abstract].
 - LSST-like photometric clustering (**forecast**): an anisotropic n(z)
   biases σ8 low by 1.7σ and Ω_m high by 1.4σ if a global n(z) is used
-  (arXiv:2609.15542) [src].
+  (arXiv:2609.15542) [src: abstract].
 - DESI fibre assignment (**forecast**, mocks): after three or more passes
   the BAO errors match those of a randomly sampled survey
   (arXiv:1805.00951) [src].
@@ -170,7 +170,7 @@ dependence of new networks on them (arXiv:2608.10080) [src].
 | DESI DR1 v0 redshift catalogues are final | FIBERMAP metadata errors (e.g. STD_FIBER_RA wrong for ~17% of targets) are fixed only in zcatalog v1 [src: arXiv:2503.14745, App. E] |
 | Template subtraction removes imaging systematics without bias | Biased in its original form; basic mode projection is unbiased (arXiv:1509.08933) [src] |
 | The co-add PSF can be modelled from stars on the co-add | Dithers make it discontinuous; HSC combines input PSF models instead [src: arXiv:1705.06766, Sect. 3.3.1] |
-| A survey-design area or density is a delivered one | Legacy Surveys' ~14,000 deg² is the design (arXiv:1804.08657) [src]; current areas are in `cosmo-surveys-facilities` |
+| A survey-design area or density is a delivered one | Legacy Surveys' ~14,000 deg² is the design (arXiv:1804.08657) [src: abstract]; current areas are in `cosmo-surveys-facilities` |
 
 ## Not verified
 <!-- key: not-verified -->

@@ -312,7 +312,7 @@ results" [src: Fig. 5 caption].
   Euclid mocks the small-scale signal is dominated by the non-linear potential
   (arXiv:2410.06268) [src, abstract].
 - **Even-multipole contamination misread.** Lensing reaches 35% of ξ_4 at
-  200 h⁻¹Mpc while staying below 1% of ξ_0, ξ_2 (arXiv:1309.1321): the
+  200 h⁻¹Mpc while staying below 1% of ξ_0, ξ_2 (arXiv:1309.1321, Sect. IV.1): the
   hexadecapole is the first even multipole to check.
 - **i^ℓ convention.** Castorina & White's ξ_ℓ^(n) omit i^ℓ (footnote 3), so
   their plane-parallel quadrupole carries a minus sign.

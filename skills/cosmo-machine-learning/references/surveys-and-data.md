@@ -16,13 +16,13 @@ what makes each a training set.
 | Suite | Content | Design for ML | Reference |
 |---|---|---|---|
 | Quijote | 44 100 N-body runs, more than 7000 models in {Ω_m, Ω_b, h, n_s, σ8, M_ν, w}; 256³, 512³ or 1024³ particles in 1 h⁻¹Gpc; more than 35 million core hours; about a petabyte released with halo and void catalogues and millions of summary statistics | built for information-content studies (Fisher derivatives) and to "provide enough data to train machine learning algorithms" | Villaescusa-Navarro et al. 2020, arXiv:1909.05273 [src] |
-| CAMELS | 4233 runs of (25 h⁻¹Mpc)³: 2184 (magneto-)hydrodynamic with AREPO (IllustrisTNG model) and GIZMO (SIMBA model), 2049 N-body; Ω_m, σ8 and four feedback parameters | "the largest suite of cosmological (magneto-)hydrodynamic simulations designed to train machine learning algorithms"; the two sub-grid families give significantly different baryon fractions and P(k) suppression, which makes cross-model tests possible | Villaescusa-Navarro et al. 2021, arXiv:2010.00619 [src] |
+| CAMELS | 4233 runs of (25 h⁻¹Mpc)³: 2184 (magneto-)hydrodynamic with AREPO (IllustrisTNG model) and GIZMO (SIMBA model), 2049 N-body; Ω_m, σ8 and four feedback parameters | "the largest suite of cosmological (magneto-)hydrodynamic simulations designed to train machine learning algorithms"; the two sub-grid families give significantly different baryon fractions and P(k) suppression, which makes cross-model tests possible | Villaescusa-Navarro et al. 2021, arXiv:2010.00619 [src: abstract] |
 | CAMELS Multifield Dataset (CMD) | hundreds of thousands of 2D maps and 3D grids of gas, dark matter and stars from 2000 simulated universes; more than 70 TB | parameter inference posed as a community challenge | Villaescusa-Navarro et al. 2022, arXiv:2109.10915 [src] |
 | CAMELS-CROCODILE | GADGET SPH with the Osaka feedback model, 25 and 50 h⁻¹Mpc boxes, one-parameter, cosmic-variance and Sobol sets over 26 parameters | an independent sub-grid implementation to train and test across galaxy-formation models; its fiducial P(k) suppression is a few per cent against up to ~27% for IllustrisTNG at z = 0 | Nagamine et al. 2026, arXiv:2609.23982 [src] |
-| CAMELS SB35 (as used by BIND) | 1024 paired hydrodynamical and dark-matter-only 50 h⁻¹Mpc runs over 35 parameters | paired runs for learned baryon painting | arXiv:2609.10709 [src] |
-| CosmoGridV1 | PkdGrav3 light-cones; 2500 Sobol grid points in wCDM (Ω_m, σ8, w0, H0, n_s, Ω_b), 7 runs each, 69 particle shells at n_side = 2048 to z = 3.5; 200 fiducial runs with stencil derivatives; 28 benchmark runs with larger boxes and resolution; map-level baryon correction | map-level inference for Stage-III photometric surveys; the benchmark runs test sensitivity to simulation choices | Kacprzak et al. 2023, arXiv:2209.04662 [src] |
-| CAMELS second generation | 1192 IllustrisTNG-model runs in (50 h⁻¹Mpc)³ over 35 cosmological, astrophysical and numerical parameters, eight times the volume of the first generation | MLPs, CNNs, GNNs and Gaussian processes on P(k), maps, galaxy graphs and halo thermodynamics; constraints tighten with volume but more weakly than the square root of the volume | Genel et al. 2026, arXiv:2606.10038 [src] |
-| Gower Street | 791 full-sky PKDGRAV runs with parameters chosen by mixed active learning; more than 3000 DES Y3 mocks | DES Y3 neural-compression SBI | arXiv:2403.02314 [src] |
+| CAMELS SB35 (as used by BIND) | 1024 paired hydrodynamical and dark-matter-only 50 h⁻¹Mpc runs over 35 parameters | paired runs for learned baryon painting | arXiv:2609.10709 [src: abstract] |
+| CosmoGridV1 | PkdGrav3 light-cones; 2500 Sobol grid points in wCDM (Ω_m, σ8, w0, H0, n_s, Ω_b), 7 runs each, 69 particle shells at n_side = 2048 to z = 3.5; 200 fiducial runs with stencil derivatives; 28 benchmark runs with larger boxes and resolution; map-level baryon correction | map-level inference for Stage-III photometric surveys; the benchmark runs test sensitivity to simulation choices | Kacprzak et al. 2023, arXiv:2209.04662 [src: abstract] |
+| CAMELS second generation | 1192 IllustrisTNG-model runs in (50 h⁻¹Mpc)³ over 35 cosmological, astrophysical and numerical parameters, eight times the volume of the first generation | MLPs, CNNs, GNNs and Gaussian processes on P(k), maps, galaxy graphs and halo thermodynamics; constraints tighten with volume but more weakly than the square root of the volume | Genel et al. 2026, arXiv:2606.10038 [src: abstract] |
+| Gower Street | 791 full-sky PKDGRAV runs with parameters chosen by mixed active learning; more than 3000 DES Y3 mocks | DES Y3 neural-compression SBI | arXiv:2403.02314 [src: abstract] |
 
 ## 2. Benchmark suites and data challenges
 <!-- key: benchmark-suites-and-data-challenges -->
@@ -42,7 +42,7 @@ what makes each a training set.
 
 | Task | Data | Outcome | Reference |
 |---|---|---|---|
-| Giant arcs in clusters with Mask R-CNN (ARTEMIDE) | trained and validated on over 4500 simulated images (mock sources injected in Euclidised HST images of 10 lensing clusters), tested on 500 simulations and Euclid Q1 | precision 76%, recall 58% on the test set; 66% of visually confirmed Q1 arcs above the training area threshold recovered; false positives and faint arcs remain the limitation | Euclid Collaboration 2025, arXiv:2511.03064 [src] |
+| Giant arcs in clusters with Mask R-CNN (ARTEMIDE) | trained and validated on over 4500 simulated images (mock sources injected in Euclidised HST images of 10 lensing clusters), tested on 500 simulations and Euclid Q1 | precision 76%, recall 58% on the test set; 66% of visually confirmed Q1 arcs above the training area threshold recovered; false positives and faint arcs remain the limitation | Euclid Collaboration 2025, arXiv:2511.03064 [src: abstract] |
 | Active anomaly search in Euclid images | 10 000 images, hybrid of Protege and PineForest | 799 unusual objects, including 29 strong-lens systems and candidates (9 absent from the published Q1 lens catalogues searched) and 202 ring galaxies | arXiv:2609.36096 [src] |
 
 ### 2.3 Cosmological-inference challenges
@@ -129,7 +129,7 @@ to `cosmo-software-ecosystem`.
 - 2018: PLAsTiCC on Kaggle, 28 September – 17 December, 1094 teams
   (arXiv:1903.11756) [src]; the lens-finding challenge on 100 000
   candidates (arXiv:1802.03609) [src].
-- 2019: Quijote, 44 100 N-body runs (arXiv:1909.05273) [src].
+- 2019: Quijote, 44 100 N-body runs (arXiv:1909.05273) [src: Sect. II].
 - 2020–2021: CAMELS, 4233 runs (arXiv:2010.00619) [src]; CMD, 70 TB
   (arXiv:2109.10915) [src].
 - 2022: CosmoGridV1 and the KiDS-1000 GCNN analysis (arXiv:2209.04662,

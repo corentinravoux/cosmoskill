@@ -316,7 +316,7 @@ general.
 <!-- key: not-verified -->
 
 - The paper that derives the N(147.46, 0.28) Mpc r_d prior (cited as Lemos
-  & Lewis 2023 in arXiv:2406.05049) was not read.
+  & Lewis 2023 in arXiv:2406.05049) was not read. [src: Sect. 2.3]
 - The PolyCDM parametrisation itself (Sect. II.1 of arXiv:1411.1074) and
   BOSS's distance-duality test result were not read.
 - The DES-Dovekie systematics tables (Tables 6 and 7 of the DES-Dovekie

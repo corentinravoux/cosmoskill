@@ -517,11 +517,11 @@ keV see L2.
 ## Reading list
 <!-- key: reading-list -->
 
-- Foundation: Dalal & Kochanek 2002, arXiv:astro-ph/0111456 — first substructure fraction from seven lenses, f = 0.02 (0.006 < f < 0.07, 90%).
+- Foundation: Dalal & Kochanek 2002, arXiv:astro-ph/0111456 — first substructure fraction from seven lenses, f = 0.02 (0.006 < f < 0.07, 90%). [src: abstract]
 - Method (quads): Gilman et al. 2019, arXiv:1908.06983 — ABC forward model, sampling and KDE rules, lens selection.
 - Data (quads): Keeley et al. 2025, arXiv:2511.07765 — JWST MIRI fluxes, SED method, flux-ratio-only bounds.
 - Application (quads): Gilman et al. 2025, arXiv:2511.07513 — Gaussian likelihood, arcs by importance weights, tidal model, priors, KDE.
-- Application (quads, other team): Hsueh et al. 2020, arXiv:1905.04182 — SHARP VII, discs and line-of-sight haloes, m_th > 5.58 keV.
+- Application (quads, other team): Hsueh et al. 2020, arXiv:1905.04182 — SHARP VII, discs and line-of-sight haloes, m_th > 5.58 keV. [src: abstract]
 - Method: Paugnat, Treu & Gilman 2025, arXiv:2509.05416 — macromodel-free flux-ratio prediction.
 - Critique: Alfred et al. 2026, arXiv:2607.07709 — external shear hiding anomalies; Cohen et al. 2024, arXiv:2403.08895 — multipoles mimic haloes; Xu et al. 2015, arXiv:1307.4220 — which anomalies CDM substructure explains.
 - Competing interpretation: Hou et al. 2026, arXiv:2601.16818 — cusp statistic favouring FDM.

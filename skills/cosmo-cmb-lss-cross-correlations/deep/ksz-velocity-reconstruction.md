@@ -76,8 +76,10 @@ filter by a beam ratio so that b_v^90 = b_v^150 and the 150 − 90 difference
 is kSZ-free, at some loss of signal-to-noise [src: arXiv:2506.21657,
 Eq. 36; arXiv:2604.04867, Eq. 39]. The two papers write the ratio the other
 way round (b_l^90/b_l^150 in arXiv:2506.21657, b_l^150/b_l^90 in
-arXiv:2604.04867); equal b_v requires b_l F_l to be equal at the two
-frequencies, which is the first form [der, from Eq. 25 of arXiv:2604.04867].
+arXiv:2604.04867).
+
+Equal b_v requires b_l F_l to be equal at the two frequencies, which is the
+form of arXiv:2506.21657 [der, from Eq. 25 of arXiv:2604.04867].
 
 ### Step 3. Build the velocity field
 <!-- key: step-3-build-the-velocity-field -->

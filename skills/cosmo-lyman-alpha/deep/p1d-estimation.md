@@ -409,7 +409,7 @@ redshift bin uses different, lower-z quasars [src: same].
   high-resolution spectra are biased low, which biases the power of F high
   [src: same].
 - XQ-100: total error comparable to BOSS in the common range and more than
-  50% smaller at z > 3.6 and k > 0.01 s/km (arXiv:1702.01761) [src].
+  50% smaller at z > 3.6 and k > 0.01 s/km (arXiv:1702.01761) [src: abstract].
 - Karaçaylı et al. 2022: the combined KODIAQ + SQUAD + XQ-100 P1D agrees
   with Iršič et al. 2017, Walther et al. and eBOSS DR14 even at the largest
   scales, but they advise eBOSS for k ≲ 4 × 10⁻³ s/km, and do not compare

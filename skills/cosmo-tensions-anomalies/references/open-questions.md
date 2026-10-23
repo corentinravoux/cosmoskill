@@ -36,7 +36,7 @@ Flags as in `results.md`: `[src]` read this session in the cited paper; `[sec: X
 
 **Among low-redshift probes.** eRASS1 clusters at 0.86 ± 0.01 against KiDS AMICO clusters at 0.74 ± 0.03 and a tSZ cross-correlation at 0.72 ± 0.03: differences of 3.8σ and 4.4σ [der, `results.md` §2.3]. The cluster values rest on lensing mass calibrations from the shear surveys, and the tSZ value on one simulation suite's gas model (`surveys-and-data.md` §2).
 
-**The astrophysical fork.** Strong baryonic feedback (kSZ, X-ray, tSZ, KiDS P(k)) would raise the S8 inferred from small-scale shear; weak feedback (DES Y3 6×2pt) would not [sec: wl, x]. Recalibrating DES Y3 with external IA and baryon information gives 0.832 (arXiv:2512.04209) [sec: wl].
+**The astrophysical fork.** Strong baryonic feedback (kSZ, X-ray, tSZ, KiDS P(k)) would raise the S8 inferred from small-scale shear; weak feedback (DES Y3 6×2pt) would not [sec: wl, x]. Recalibrating DES Y3 with external IA and baryon information gives 0.832 (arXiv:2512.04209, abstract) [sec: wl].
 
 **Open.** Whether DES Y6's 2.6σ survives a common analysis with KiDS-Legacy; whether eRASS1's high value and its γ = 1.19 ± 0.21 are a feature of the data or of the mass calibration; no Stage-IV lensing result exists [sec: wl, cl].
 
@@ -102,7 +102,7 @@ Further statements of the same paper [src]: "no model fully resolves the Hubble 
 ### 2.2 Early dark energy: where the limits come from
 <!-- key: early-dark-energy-where-the-limits-come-from -->
 
-- Bayesian limits: f_EDE < 0.12 (SPT alone) and < 0.070 (SPT + ACT + Planck) at 95%, residual tension 3.6σ; with DESI, f_EDE = 0.055 (+0.024/−0.047) and 2.6σ, "driven by the CMB–DESI discrepancy in ΛCDM" (Khalife et al. 2025, arXiv:2507.23355) [sec: h0].
+- Bayesian limits: f_EDE < 0.12 (SPT alone) and < 0.070 (SPT + ACT + Planck) at 95%, residual tension 3.6σ; with DESI, f_EDE = 0.055 (+0.024/−0.047) and 2.6σ, "driven by the CMB–DESI discrepancy in ΛCDM" (Khalife et al. 2025, arXiv:2507.23355) [sec: h0]. [src: abstract]
 - Profile likelihood: f_EDE = 0.09 ± 0.03 and H0 = 71.0 ± 1.1 with ACT DR6 + DESI DR2, residual tension about 2σ, with prior-volume effects in the Bayesian limits (Poulin et al. 2025, arXiv:2505.08051) [sec: h0]. Model class reviewed in Poulin, Smith & Karwal 2023 (arXiv:2302.09032) [sec: h0].
 - ACT DR6 finds no evidence for early dark energy, extra radiation, varying constants or modified recombination (Calabrese et al. 2025, arXiv:2503.14454) [sec: h0].
 - The two faces of the same data: part of the room for early dark energy with DESI comes from the Ω_m mismatch of Section 1.2, not from the ladder.

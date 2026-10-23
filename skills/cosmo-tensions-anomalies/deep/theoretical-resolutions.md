@@ -544,7 +544,7 @@ non-minimally coupled scalar with a smoothly varying M_B gains −27 with H0
 
 - Bodies of arXiv:2509.11902 and arXiv:2511.16606 (abstracts only).
 - The Camarena–Marra paper behind M = −19.243 ± 0.032 (ref. [85] of
-  arXiv:2602.06293): not identified or read.
+  arXiv:2602.06293): not identified or read. [src: App. A]
 - Whether the World Cup corrects the SH0ES–Pantheon+ overlap at 0.01 < z
   < 0.15: not stated in Sect. IV.1; other sections not searched.
 - Olympics Table 1 (rendered as a CSV include) and its Tests C and D;

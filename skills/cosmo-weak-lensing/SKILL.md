@@ -30,15 +30,15 @@ re-verify against the cited paper before a number enters a manuscript.
 <!-- key: what-an-expert-holds-in-mind -->
 
 - KiDS-Legacy cosmic shear: S8 = 0.815 +0.016/−0.021 (marginal mode), 0.73σ from Planck in Σ8, 0.74–0.76σ in S8; the rise from KiDS-1000 (0.759) is attributed mainly to redshift calibration (arXiv:2503.19441).
-- DES Y6 cosmic shear: 0.798 +0.014/−0.015 with NLA, 0.783 +0.019/−0.015 with TATT; 2.0σ and 2.3σ in S8 from Planck + ACT DR6 + SPT-3G (arXiv:2602.10065).
-- DES Y6 3×2pt: S8 = 0.789 ± 0.012, 2.6σ in S8 but 1.8σ in the full parameter space (arXiv:2601.14559). Reduced, not gone; metric-dependent.
+- DES Y6 cosmic shear: 0.798 +0.014/−0.015 with NLA, 0.783 +0.019/−0.015 with TATT; 2.0σ and 2.3σ in S8 from Planck + ACT DR6 + SPT-3G (arXiv:2602.10065, abstract).
+- DES Y6 3×2pt: S8 = 0.789 ± 0.012, 2.6σ in S8 but 1.8σ in the full parameter space (arXiv:2601.14559, abstract). Reduced, not gone; metric-dependent.
 - HSC Y3 moves from 0.769 to 0.804 +0.019/−0.018 with DESI clustering redshifts (arXiv:2511.18134); metacalibration on KiDS-1000 changes nothing (arXiv:2510.01122). Redshifts, not shapes, drove the old lows.
 - CMB references differ: KiDS Planck alone (0.834 ± 0.016), DES Planck + ACT + SPT (0.836 +0.012/−0.013), same centre, tighter; against Planck 2018 alone the DES Y6 3×2pt full-parameter difference is 1.0σ (arXiv:2601.14559, arXiv:2602.12238).
 - IA model choice: 0.6σ in S8 between NLA and TATT, about 1σ in the S8–Ωm plane across variants (arXiv:2602.10065); the bluest galaxies show no detectable alignment (arXiv:2507.11530).
 - Baryonic feedback strength is disputed: kSZ, X-ray, tSZ and the KiDS-Legacy P(k) favour strong suppression (arXiv:2609.09144, arXiv:2509.08365, arXiv:2506.07432); DES Y3 6×2pt favours weak (arXiv:2510.25596).
-- External IA and baryon calibration moves DES Y3 to 0.832 +0.013/−0.017 (arXiv:2512.04209).
+- External IA and baryon calibration moves DES Y3 to 0.832 +0.013/−0.017 (arXiv:2512.04209, abstract).
 - Scale cuts saturate: all scales plus a free baryon model gain almost nothing (arXiv:2509.03582); LSST year 10 barely beats year 1 without better baryon and redshift priors (arXiv:2602.21863, forecast).
-- Mean and MAP of S8 differ through projection effects: 0.790 vs 0.801 in DES Y3 + KiDS-1000 (arXiv:2305.17173).
+- Mean and MAP of S8 differ through projection effects: 0.790 vs 0.801 in DES Y3 + KiDS-1000 (arXiv:2305.17173, abstract).
 - No Stage-IV cosmic-shear cosmology exists. Euclid DR1 lensing products: mid-2027. Rubin LSST began 30 June 2026; Roman launched 30 August 2026.
 - UNIONS-3500: first results non-tomographic, S8 error about ±0.07 (arXiv:2605.13547).
 
@@ -61,8 +61,8 @@ re-verify against the cited paper before a number enters a manuscript.
 
 - Quoting "S8 ≈ 0.76, 2–3σ below Planck" as current; that is KiDS-1000 and DES Y3.
 - Writing that the tension is "resolved" without the DES Y6 3×2pt figure.
-- Citing 0.772 as the DES Y3 cosmic-shear result; it is the optimised-scale variant, the fiducial is 0.759 (arXiv:2105.13543).
-- Citing CFHTLenS tomography σ8 = 0.799 as lensing-only; it includes WMAP7, BOSS, an H0 prior (arXiv:1303.1808).
+- Citing 0.772 as the DES Y3 cosmic-shear result; it is the optimised-scale variant, the fiducial is 0.759 (arXiv:2105.13543, abstract).
+- Citing CFHTLenS tomography σ8 = 0.799 as lensing-only; it includes WMAP7, BOSS, an H0 prior (arXiv:1303.1808, abstract).
 - Treating November 2026 as the Euclid lensing release; it is DR1-Foundation.
 - Comparing S8 values with different exponents (0.45, 0.5, 0.58), point estimates or CMB references.
 
@@ -100,8 +100,9 @@ Sizes, in thousands of tokens: L1 3k; open 5k; methods 9k; results 7k; surveys 6
   (`--abstract`, `--outline`, `--section`, `--grep`), or with any tool that
   gives the paper. If it cannot be read, say that L4 was required and not
   done.
-- A formula of the skill may be applied to the asker's numbers; label the
-  result as derived.
+- Quote a number only with its paper and the place it was read, as the
+  skill gives them; the skill holds no number of its own making. A formula
+  may be applied to the asker's numbers; label the result as derived.
 
 Local layers: if a directory `.cosmoskill/` exists in the working directory,
 in one of its parents, or in the home directory, or if `COSMOSKILL_HOME` is

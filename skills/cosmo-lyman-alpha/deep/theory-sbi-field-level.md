@@ -71,7 +71,7 @@ they "noticeably" improve the fit at k ~ 3 h/Mpc [src: Sect. 3.3].
 integrated with FFTLog; the implementation is a module of CLASS-PT, and "135
 one loop integrals are computed in ≈ 1 second on one CPU core" per
 cosmology; sampling nuisance parameters needs no recomputation
-(arXiv:2405.13208, Supplemental Material) [src].
+(arXiv:2405.13208, Supplemental Material) [src: Sect. "References"].
 
 **Step A4. Calibrate on a hydrodynamical box.** Fit the binned P_3D(k, μ) of
 a simulation with a pseudo-χ² that assumes a Gaussian diagonal covariance,
@@ -403,7 +403,7 @@ counterterms carry the small-scale signal.
 - **Simulation–data mismatch absorbed by counterterms.** The Sherwood P1D
   does not match SDSS even after mean-flux renormalisation; the C_n
   recalibration on LaCE mocks moves C_0 from −0.17 b_1 − 0.0148 to
-  −0.17 b_1 − 0.2053 h⁻¹Mpc (arXiv:2405.13208, Supplemental) [src], so the
+  −0.17 b_1 − 0.2053 h⁻¹Mpc (arXiv:2405.13208, Supplemental) [src: Sect. "References"], so the
   EFT likelihood is calibrated partly by an emulator.
 - **Negative shot noise.** Free P_shot drifts negative, especially at high
   z, and shifts counterterms and biases (arXiv:2608.21226, Sect. 5) [src].
@@ -437,7 +437,7 @@ counterterms carry the small-scale signal.
 - Method: de Belsunce et al. 2025, arXiv:2512.13681 — hybrid EFT with N-body displacements; template-emulator design.
 - Critique and test: Autieri et al. 2026, arXiv:2608.21226 — minimal EFT: degeneracies, resolution and reionisation dependence, scatter in b_O(b_F).
 - Method: Sinigaglia et al. 2026, arXiv:2603.13011 — first SBI on P1D, cross-simulator generalisation, explicit-likelihood comparison.
-- Application: Ivanov & Trifinopoulos 2025, arXiv:2508.04767 — EFT P1D for an extended model (PBHs) at z = 4.2–5.4.
+- Application: Ivanov & Trifinopoulos 2025, arXiv:2508.04767 — EFT P1D for an extended model (PBHs) at z = 4.2–5.4. [src: abstract]
 - Review: Chaves-Montero 2026, arXiv:2605.22489, Sect. 0.6 — the four routes side by side.
 
 ## Not verified

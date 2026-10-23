@@ -76,7 +76,7 @@ prior [src: arXiv:2403.02314, Sect. 2.5].
 
 Here I(Θ; F(x)) is the mutual information between parameters and compressed
 data, h the differential entropy, and q̃ the density network of the loss.
-The DES Y3 hybrid chain: the 440-element E/B C_ℓ vector goes to 10 numbers
+The DES Y3 hybrid chain (arXiv:2606.11309): the 440-element E/B C_ℓ vector goes to 10 numbers
 through a fully connected network (ten layers of 256); each of three map
 patches (eight channels of 512² pixels) goes to 4 numbers through a CNN;
 four restarts give 88 summaries, compressed to 7 [src: Sect. 6.2]. The
@@ -217,7 +217,8 @@ arXiv:2507.03086, Sects. III.1–III.2]:
 
 1. Discard coefficients whose means differ between TEST0 and TEST1 (same
    cosmology, different simulators) by more than 1σ; some differ by up to
-   12σ, and just under half are removed, mostly small-scale but not all.
+   12σ, and just under half are removed, mostly small-scale but not all
+   [src: arXiv:2507.03086, Sect. III.1].
 2. Learn a transformation η_ψ of the summaries jointly with the NPE, with
    loss −Σ_i log q_φ(θ_i|η_ψ(s_i)) + λ d({η_ψ(s_i)}, η_ψ(s_obs)) (Eqs. 5–6),
    d a distance between distributions; λ is set to the smallest value at
@@ -226,7 +227,7 @@ arXiv:2507.03086, Sects. III.1–III.2]:
 
 Each step alone fails one of the two diagnostics: filtering fixes the
 simulator robustness but not the variability on the data, the transform the
-reverse [src: Sect. III.2.3]. Result on BOSS CMASS: Ω_m = 0.32 ± 0.02 and
+reverse [src: Sect. III.2.3]. Result on BOSS CMASS (arXiv:2507.03086): Ω_m = 0.32 ± 0.02 and
 σ8 = 0.80 ± 0.02, 1.4 and 3.1 times tighter than a perturbative power-spectrum
 analysis [src: abstract]. The transform uses the observation during
 training, so the posterior is conditioned on a summary space chosen with the
@@ -274,7 +275,8 @@ scales) plus SBI (small scales) analysis as the way out [src: same].
   Sect. II.2.4].
 - **Data outside the training support.** Shows up as posteriors that change
   with the architecture at equal validation loss [src: same]. Test: D_v
-  across 10 architectures; the data-in-cloud check of DES Y3.
+  across 10 architectures [src: arXiv:2507.03086, Sect. III.2.3, Fig. 6];
+  the data-in-cloud check of DES Y3.
 - **Priors hidden in the simulations.** Implicitly marginalised parameters
   carry their simulated distribution as prior [src: arXiv:2403.02314,
   Sect. 2.5]; in DES Y3 h was drawn from a Gaussian centred between SH0ES

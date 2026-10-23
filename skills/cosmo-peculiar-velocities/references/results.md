@@ -45,7 +45,7 @@ luminosity fluctuations (no direct distance). Family: `physics-and-methods.md` �
 | Nusser 2017 | 0.400 ± 0.080 | 0.027 | mix | CF3 | two-point | velocity–density correlation | arXiv:1703.05324 | [T24] der |
 | Nguyen et al. 2025 | 0.384 +0.094/−0.157 | 0.030 | SN | SN magnitude fluctuations × galaxies | two-point | — | arXiv:2510.07673 | |
 | Qin et al. 2019 | 0.404 +0.082/−0.081 | 0.030 | TF+FP | 2MTF + 6dFGSv | two-point | momentum power spectrum | arXiv:1906.02874 | [src] |
-| Said et al. 2020 | 0.338 ± 0.027 | 0.035 | FP | 6dFGS + SDSS | vel–dens (lin) | reconstruction (β → fσ8) | arXiv:2007.04993 | [src] |
+| Said et al. 2020 | 0.338 ± 0.027 | 0.035 | FP | 6dFGS + SDSS | vel–dens (lin) | reconstruction (β → fσ8) | arXiv:2007.04993 | [src: abstract] |
 | Adams & Blake 2020 | 0.384 ± 0.052 (stat) ± 0.061 (sys) | 0.045 | FP | 6dFGS | field-level | joint RSD + PV | arXiv:2004.06399 | [src] |
 | Turner et al. 2023 | 0.358 ± 0.075 | 0.045 | mix | 6dFGS | two-point | velocity–density correlation | arXiv:2207.03707; MNRAS 518, 2436 | [src] |
 | Dupuy et al. 2019 | 0.43 (±0.03)_obs (±0.11)_cosmic | 0.050; "<0.05" in the 2026-08-13 table | mix | CF3 | two-point | correlation | arXiv:1901.03530 | [src]; re-read |
@@ -57,15 +57,15 @@ luminosity fluctuations (no direct distance). Family: `physics-and-methods.md` �
 | Lai et al. (DESI) 2025 | 0.483 +0.080/−0.043 (stat) ± 0.018 (sys) | 0.070 | TF+FP | DESI DR1 PV + BGS | field-level | maximum-likelihood fields | arXiv:2512.03229 | [src] |
 | Qin et al. (DESI) 2025 | 0.440 +0.080/−0.096 | 0.070 | TF+FP | DESI DR1 PV + BGS | two-point | galaxy power spectrum | arXiv:2512.03231 | [src] |
 | Franco et al. 2026 | 0.344 ± 0.105 | 0.070 | mix | CF4++ (65 331 distances) | two-point | joint real/redshift-space, Kaiser | arXiv:2605.00450 | [src] |
-| Lai et al. 2023 | 0.405 +0.076/−0.071 (stat) ± 0.009 (sys) | 0.073 | FP | SDSS PV | field-level | maximum-likelihood, wide-angle + zero-point in the model | arXiv:2209.04166 | [src] |
+| Lai et al. 2023 | 0.405 +0.076/−0.071 (stat) ± 0.009 (sys) | 0.073 | FP | SDSS PV | field-level | maximum-likelihood, wide-angle + zero-point in the model | arXiv:2209.04166 | [src: abstract] |
 | Lyall et al. 2024 | 0.329 +0.081/−0.083 | 0.073 | FP | 6dFGS + SDSS | two-point | correlation function | arXiv:2407.18684 | [src]; re-read |
-| Qin et al. 2024 | 0.413 +0.050/−0.058 | 0.073 | FP | SDSS DR14 PV | two-point | density–momentum **cross** power spectrum | arXiv:2411.09571 | [src] |
+| Qin et al. 2024 | 0.413 +0.050/−0.058 | 0.073 | FP | SDSS DR14 PV | two-point | density–momentum **cross** power spectrum | arXiv:2411.09571 | [src: abstract] |
 | Feix et al. 2015 | 0.37 ± 0.13 | ~0.1 | lum | SDSS DR7, 2×10⁵ galaxies | vel–dens (lin) | galaxy **luminosity** fluctuations | arXiv:1503.05945; PRL 115, 011301 | [src] |
 | Feix et al. 2017 | 0.48 ± 0.16 | ~0.1 | lum | SDSS DR13 | vel–dens (lin) | luminosity fluctuations, recalibrated photometry | arXiv:1612.07809; MNRAS 468, 1420 | [src]; re-read |
 | Stahl et al. 2021 | 0.390 ± 0.022 | — | SN | DSS: 775 low-z SNe **Ia and II**, 137 via snapshot distances, vs 2M++ | vel–dens (lin) | — | arXiv:2105.05185; MNRAS 505, 2349 | [src] lin; re-read |
-| Stiskalek 2026 | 0.412 ± 0.018 | — | TF+SN | 2M++; **TF + SN combined**, S₈ = 0.798 ± 0.035; FP excluded — unstable under inhomogeneous Malmquist treatment | vel–dens (lin) | — | arXiv:2509.20235; MNRAS 2026 | [src] lin |
+| Stiskalek 2026 | 0.412 ± 0.018 | — | TF+SN | 2M++; **TF + SN combined**, S₈ = 0.798 ± 0.035; FP excluded — unstable under inhomogeneous Malmquist treatment | vel–dens (lin) | — | arXiv:2509.20235; MNRAS 2026 | [src: abstract] lin |
 | Turnbull et al. 2012 | 0.400 ± 0.070 | — | SN | A1 (245 SNe) vs PSCz | vel–dens (lin) | — | arXiv:1111.0631 | lin der |
-| Wang et al. 2026 | 0.384 +0.116/−0.194 | — | mix | CF4 group catalogue | two-point | parallel velocity correlation function | arXiv:2604.08314 | [src] |
+| Wang et al. 2026 | 0.384 +0.116/−0.194 | — | mix | CF4 group catalogue | two-point | parallel velocity correlation function | arXiv:2604.08314 | [src: abstract] |
 | Wang et al. 2026 | 0.569 +0.054/−0.060 | — | mix | CF4 | two-point | *local* growth rate, same paper — a different quantity from the row above, do not quote as "the" CF4 value | arXiv:2604.08314 | [src] |
 
 Row notes. Hollinger & Hudson: 2023 in the 2026-08-13 table (MNRAS 526, 337), 2024 in the
@@ -177,19 +177,19 @@ and `[der]` "relabelled or derived, the paper does not quote fσ8"): one dataset
 | FP catalogue size | 98 292 unique early-type galaxies, z < 0.1 | Ross et al. 2025, arXiv:2512.03226 | [src] |
 | FP distance precision | 26 % random error per galaxy | arXiv:2512.03226 | [src] |
 | TF catalogue size | 10 262 spirals, rotation measured at 0.4 R26; 6 807 in the clustering catalogue | Douglass et al. 2025, arXiv:2512.03227 | [src] |
-| TF relation | slope −7.22 ± 0.01 AB mag (r band), intrinsic scatter 0.466 ± 0.001 AB mag, calibrated in bins Δz = 0.005 over 0.03 < z < 0.1 | arXiv:2512.03227 | [src] |
+| TF relation | slope −7.22 ± 0.01 AB mag (r band), intrinsic scatter 0.466 ± 0.001 AB mag, calibrated in bins Δz = 0.005 over 0.03 < z < 0.1 | arXiv:2512.03227 | [src: abstract] |
 | Sample entering the field-level fit | 415 523 redshifts + 76 616 velocities | Lai et al. 2025, arXiv:2512.03229 | [src] |
-| Mocks | 675 realisations, used by all three estimators and for the cross-method correlations | Bautista et al. 2025, arXiv:2512.03228 | [src] |
-| Consensus fσ8(z_eff = 0.07) | 0.4497 ± 0.0548 | Turner et al. 2025, arXiv:2512.03230 | [src] |
+| Mocks | 675 realisations, used by all three estimators and for the cross-method correlations | Bautista et al. 2025, arXiv:2512.03228 | [src: abstract] |
+| Consensus fσ8(z_eff = 0.07) | 0.4497 ± 0.0548 | Turner et al. 2025, arXiv:2512.03230 | [src: abstract] |
 | Correlation functions | 0.391 (+0.080/−0.081) | Turner et al. 2025, arXiv:2512.03230 abstract | [src] |
 | Power spectra | 0.440 (+0.080/−0.096) | Qin et al. 2025, arXiv:2512.03231 abstract | [src] |
 | Maximum-likelihood fields | 0.483 (+0.080/−0.043) stat ± 0.018 sys | Lai et al. 2025, arXiv:2512.03229 abstract | [src] |
-| Planck+ΛCDM value quoted for comparison | 0.449 ± 0.008 | arXiv:2512.03229 | [src] |
+| Planck+ΛCDM value quoted for comparison | 0.449 ± 0.008 | arXiv:2512.03229 | [src: abstract] |
 | Growth index, consensus + DESI DR1 full shape | γ_L = 0.580 ± 0.110 | arXiv:2512.03230; Qin et al. 2025, arXiv:2512.03231 | [src] |
-| Ω_m, σ8 from the same joint fit | 0.301 ± 0.011, 0.834 ± 0.032 | arXiv:2512.03231 | [src] |
-| H0, FP+TF zero-point tied to SH0ES/Pantheon+ SNe Ia | 73.7 ± 0.06 (stat) ± 1.1 (syst) km/s/Mpc | Carr et al. 2025, arXiv:2512.03232 | [src] |
+| Ω_m, σ8 from the same joint fit | 0.301 ± 0.011, 0.834 ± 0.032 | arXiv:2512.03231 | [src: abstract] |
+| H0, FP+TF zero-point tied to SH0ES/Pantheon+ SNe Ia | 73.7 ± 0.06 (stat) ± 1.1 (syst) km/s/Mpc | Carr et al. 2025, arXiv:2512.03232 | [src: abstract] |
 
-**How the consensus is built** (arXiv:2512.03228, §9) [src]. Each estimator is run on the 675 mocks;
+**How the consensus is built** (arXiv:2512.03228, §9) [src: abstract]. Each estimator is run on the 675 mocks;
 the scatter of the best fits and their Pearson correlations are
 
 | | field-level (MLE) | power spectra | correlation functions |
@@ -226,7 +226,7 @@ Reading notes.
   Hubble-flow rung, the absolute scale comes from SH0ES supernovae (baseline) or SBF. Its
   statistical error (0.06) is negligible beside the 1.1 systematic, which carries the uncertainty of
   the SN distance ladder it is tied to [src: arXiv:2512.03232]. The topic belongs to
-  `cosmo-distance-ladder-h0`.
+  `cosmo-distance-ladder-h0`. [src: abstract]
 
 ---
 
@@ -240,17 +240,17 @@ complete in one place, with the model each assumes.
 |---|---|---|---|---|---|
 | fσ8 and S8, TF + SN Ia (in table) | fσ8 = 0.412 ± 0.018 (linear σ8), S8 = 0.798 ± 0.035 | CF4 TF, Pantheon+ SNe vs 2M++ | hierarchical forward model of each indicator against a linear-theory reconstruction; flat ΛCDM, f monotonic in Ω_m | Stiskalek 2025, arXiv:2509.20235 (MNRAS 2026; "Stiskalek 2026" in §0) | [src] |
 | fσ8 from SN magnitude × galaxy correlations (in table) | 0.384 +0.094/−0.157 at z = 0.03 | Pantheon+ × DESI DR1 BGS, z < 0.1 | auto- and cross-correlation functions, N-body covariance | Nguyen et al. 2025, arXiv:2510.07673 | [src] |
-| σ8 from SN magnitudes alone | 0.73 ± 0.22 (Pantheon+); 0.70 +0.31/−0.38 (DES-Y5); 1.02 +0.38/−0.45 (DES-Dovekie) | SN velocity-induced magnitude covariance | flat ΛCDM | Crisman, Quartin & Rebouças 2026, arXiv:2604.06361 | [src] |
-| Growth index, SN + Planck PR4, free Ω_k | γ = 0.519 +0.061/−0.099 (Pantheon+); 0.500 +0.054/−0.098 (DES-Y5); 0.525 +0.074/−0.073 (DES-Dovekie) | same | ΛCDM + γ + Ω_k | arXiv:2604.06361 | [src] |
-| Curvature in the same fit | Ω_k = −0.011 ± 0.006 (Pantheon+), flatness excluded at 2.0σ; 2.6σ (DES-Y5); 1.8σ (DES-Dovekie) | same | ΛCDM + γ + Ω_k | arXiv:2604.06361 | [src] |
-| β from CF4 against the internal (r < 200 h⁻¹Mpc) predicted field | β = 0.31 ± 0.01 | CF4 | linear velocity–density comparison with weighted averages | Watkins, Clark & Feldman 2025, arXiv:2512.03168 | [src] |
+| σ8 from SN magnitudes alone | 0.73 ± 0.22 (Pantheon+); 0.70 +0.31/−0.38 (DES-Y5); 1.02 +0.38/−0.45 (DES-Dovekie) | SN velocity-induced magnitude covariance | flat ΛCDM | Crisman, Quartin & Rebouças 2026, arXiv:2604.06361 | [src: abstract] |
+| Growth index, SN + Planck PR4, free Ω_k | γ = 0.519 +0.061/−0.099 (Pantheon+); 0.500 +0.054/−0.098 (DES-Y5); 0.525 +0.074/−0.073 (DES-Dovekie) | same | ΛCDM + γ + Ω_k | arXiv:2604.06361 | [src: abstract] |
+| Curvature in the same fit | Ω_k = −0.011 ± 0.006 (Pantheon+), flatness excluded at 2.0σ; 2.6σ (DES-Y5); 1.8σ (DES-Dovekie) | same | ΛCDM + γ + Ω_k | arXiv:2604.06361 | [src: abstract] |
+| β from CF4 against the internal (r < 200 h⁻¹Mpc) predicted field | β = 0.31 ± 0.01 | CF4 | linear velocity–density comparison with weighted averages | Watkins, Clark & Feldman 2025, arXiv:2512.03168 | [src: abstract] |
 | H0 for which CF4 velocities are self-consistent | 75.0 ± 0.1 km/s/Mpc (a catalogue scale, not a cosmological H0) | CF4 | same | arXiv:2512.03168 | [src] |
 | fσ8, CF4 groups, parallel velocity correlation (in table) | 0.384 +0.116/−0.194; "local" 0.569 +0.054/−0.060 | CF4 groups | ψ∥ estimator, MCMC | Wang et al. 2026, arXiv:2604.08314 | [src] |
 | fσ8, CF4++ real- vs redshift-space clustering (in table) | 0.344 ± 0.105 at z = 0.07 | 65 331 CF4++ distances | Kaiser enhancement of ξ; **not** a velocity statistic | Franco, Courtois & Bernui 2026, arXiv:2605.00450 | [src] |
-| "BAO" scale in the same paper | 132 ± 8 h⁻¹Mpc (real space), 139 ± 7 h⁻¹Mpc (redshift space) | same | empirical fit | arXiv:2605.00450 | [src] |
-| Great Attractor infall from SBF | flow over ~1 sr peaking at ~1000 km/s, converging to zero at D ≈ 70 Mpc; 66 galaxies, 5 % distances | Magellan/FourStar H-band SBF, 2000 < V < 5000 km/s | kinematic | Dressler & Monson 2026, arXiv:2604.02470 | [src] |
+| "BAO" scale in the same paper | 132 ± 8 h⁻¹Mpc (real space), 139 ± 7 h⁻¹Mpc (redshift space) | same | empirical fit | arXiv:2605.00450 | [src: abstract] |
+| Great Attractor infall from SBF | flow over ~1 sr peaking at ~1000 km/s, converging to zero at D ≈ 70 Mpc; 66 galaxies, 5 % distances | Magellan/FourStar H-band SBF, 2000 < V < 5000 km/s | kinematic | Dressler & Monson 2026, arXiv:2604.02470 | [src: abstract] |
 | Vela supercluster mass | 33.8 × 10¹⁶ M_⊙, radius 70 h⁻¹Mpc, distance 189 h⁻¹Mpc | 65 518 CF4++ distances + 8 283 new ZoA redshifts (2 176 MeerKAT HI) | hybrid redshift + velocity reconstruction | Hollinger et al. 2026, arXiv:2603.09339 | [src] |
-| H0 from GW170817 with DESI FP group velocities | 70.9 +6.4/−8.5 km/s/Mpc (FP); 73.4 +3.3/−3.9 (CF4 SBF velocity of NGC 4993) | 39 group galaxies | standard siren + group peculiar velocity | Amsellem et al. 2025, arXiv:2512.08818 | [src] |
+| H0 from GW170817 with DESI FP group velocities | 70.9 +6.4/−8.5 km/s/Mpc (FP); 73.4 +3.3/−3.9 (CF4 SBF velocity of NGC 4993) | 39 group galaxies | standard siren + group peculiar velocity | Amsellem et al. 2025, arXiv:2512.08818 | [src: abstract] |
 
 Reading notes.
 
@@ -281,31 +281,31 @@ Galactic.
 
 | Reference | Data | Estimator, window | Depth | Amplitude (km/s) | Direction (l, b) | Paper's verdict vs ΛCDM | Flag |
 |---|---|---|---|---|---|---|---|
-| Watkins, Feldman & Hudson 2009, arXiv:0809.4041 | compilation of all major surveys | MV, Gaussian | 50 h⁻¹Mpc | 407 | (287°, 8°) | excluded at >98 % for WMAP5 (predicted 1D rms ~110 km/s) | [src] |
+| Watkins, Feldman & Hudson 2009, arXiv:0809.4041 | compilation of all major surveys | MV, Gaussian | 50 h⁻¹Mpc | 407 | (287°, 8°) | excluded at >98 % for WMAP5 (predicted 1D rms ~110 km/s) | [src: abstract] |
 | Feldman, Watkins & Hudson 2010, arXiv:0911.5516 | 4 536 velocities | MV + shear + octupole | ~100 h⁻¹Mpc | 416 ± 78 | (282° ± 11°, 6° ± 6°) | "disagreement … at a high confidence level" | [src] |
-| Nusser & Davis 2011, arXiv:1101.1650 | SFI++ TF | ACE (all-space constrained estimate), top-hat | 40 h⁻¹Mpc | 333 ± 38 | (276°, 14°) | consistent | [src] |
+| Nusser & Davis 2011, arXiv:1101.1650 | SFI++ TF | ACE (all-space constrained estimate), top-hat | 40 h⁻¹Mpc | 333 ± 38 | (276°, 14°) | consistent | [src: abstract] |
 | same | same | same | 100 h⁻¹Mpc | 257 ± 44 | (279°, 10°) | consistent | [src] |
-| Turnbull et al. 2012, arXiv:1111.0631 | 245 SNe Ia ("First Amendment") | MV | — | 249 ± 76 | (319° ± 18°, 7° ± 14°) | consistent | [src] |
+| Turnbull et al. 2012, arXiv:1111.0631 | 245 SNe Ia ("First Amendment") | MV | — | 249 ± 76 | (319° ± 18°, 7° ± 14°) | consistent | [src: abstract] |
 | Feindt et al. 2013, arXiv:1310.4184 | 117 SNfactory SNe + Union2 | dipole fit in redshift shells | 0.06 < z < 0.1 | < 240 (68 % CL, along the CMB dipole) | — | contradicts a large "dark flow" | [src] |
 | Hong et al. 2014, arXiv:1409.0287 | 2MTF, 2 018 spirals | χ² with Gaussian filter | 20 / 30 / 40 h⁻¹Mpc | 310.9 ± 33.9 / 280.8 ± 25.0 / 292.3 ± 27.8 | "similar to previous" | consistent at 1σ | [src] |
-| Hoffman, Courtois & Tully 2015, arXiv:1503.05422 | Cosmicflows-2 | Wiener filter + constrained realisations, top-hat | 50 (150) h⁻¹Mpc | 250 ± 21 (239 ± 38) | — | consistent with the ΛCDM prior, which the method requires as a prerequisite; cosmic variance 126 (60) km/s | [src] |
-| Scrimgeour et al. 2016, arXiv:1511.06930 | 6dFGSv, ~10⁴ FP | MV, hemisphere | 50 h⁻¹Mpc | 248 ± 58 | (318° ± 20°, 40° ± 13°) | consistent | [src] |
+| Hoffman, Courtois & Tully 2015, arXiv:1503.05422 | Cosmicflows-2 | Wiener filter + constrained realisations, top-hat | 50 (150) h⁻¹Mpc | 250 ± 21 (239 ± 38) | — | consistent with the ΛCDM prior, which the method requires as a prerequisite; cosmic variance 126 (60) km/s | [src: abstract] |
+| Scrimgeour et al. 2016, arXiv:1511.06930 | 6dFGSv, ~10⁴ FP | MV, hemisphere | 50 h⁻¹Mpc | 248 ± 58 | (318° ± 20°, 40° ± 13°) | consistent | [src: abstract] |
 | same | same | same | 70 h⁻¹Mpc | 243 ± 58 | same | consistent | [src] |
 | Qin et al. 2018, arXiv:1804.05520 | 2MTF + 6dFGSv, 10 904 galaxies | ηMLE (log-distance likelihood) | 40 h⁻¹Mpc | 288 ± 24 | (296° ± 6°, 21° ± 5°) | consistent | [src] |
-| Qin et al. 2019, arXiv:1811.00822 | 2MTF + CF3 | ηMLE | 37 h⁻¹Mpc | 259 ± 15 | (300° ± 4°, 23° ± 3°) | consistent; shear 1.7 ± 0.4 h km/s/Mpc | [src] |
+| Qin et al. 2019, arXiv:1811.00822 | 2MTF + CF3 | ηMLE | 37 h⁻¹Mpc | 259 ± 15 | (300° ± 4°, 23° ± 3°) | consistent; shear 1.7 ± 0.4 h km/s/Mpc | [src: abstract] |
 | Peery, Watkins & Feldman 2018, arXiv:1808.07772 | CF3 | improved MV, top-hat, H0-independent | 150 h⁻¹Mpc | 282 km/s (r⁻² weights; 252 with Gaussian weights) | — | ΛCDM expectation 128 (166); χ²(3 dof) = 9.59 (6.92), probability 2.2 % (7.4 %) | [src: Table 1] |
-| Qin 2021, arXiv:2105.04800 | 2MTF | estimator on Gaussianised velocities | 30 h⁻¹Mpc | 332 ± 27 | (293° ± 5°, 13° ± 4°) | consistent | [src] |
+| Qin 2021, arXiv:2105.04800 | 2MTF | estimator on Gaussianised velocities | 30 h⁻¹Mpc | 332 ± 27 | (293° ± 5°, 13° ± 4°) | consistent | [src: abstract] |
 | Watkins et al. 2023, arXiv:2302.02028 | CF4 | MV, top-hat | 150 h⁻¹Mpc | 387 ± 28 (ΛCDM expectation 139) | (297° ± 4°, −6° ± 3°) | χ² = 19.34 for 3 d.o.f., probability 0.023 % | [src: Table 1] |
 | same | same | same | 200 h⁻¹Mpc | 419 ± 36 (ΛCDM expectation 120) | (298° ± 5°, −8° ± 4°) | χ² = 29.13 for 3 d.o.f., probability 0.00021 % | [src: Table 1] |
-| Whitford, Howlett & Davis 2023, arXiv:2306.11269 | CF4 | Kaiser MLE | 49 h⁻¹Mpc | 408 ± 165 | towards the Great Attractor region | "reasonable agreement" | [src] |
+| Whitford, Howlett & Davis 2023, arXiv:2306.11269 | CF4 | Kaiser MLE | 49 h⁻¹Mpc | 408 ± 165 | towards the Great Attractor region | "reasonable agreement" | [src: abstract] |
 | same | same | MVE, mock-calibrated errors | 173 h⁻¹Mpc | 428 ± 108 | same | 0.11 % probability of a larger χ² | [src] |
 | Lopes et al. 2024, arXiv:2405.11077 | Pantheon+ SNe, 0.015 ≤ z ≤ 0.06 | directional H0 dipole | 102.83 ± 10.2 Mpc | 132.14 ± 109.3 | (326.1° ± 11.2°, 27.8° ± 11.2°) | dipole in H0 at > 99.9 % CL; the velocity itself is 1.2σ from zero [der: 132.14/109.3] | [src] |
 | Courtois et al. 2025, arXiv:2502.01308 | CF4++ (CF4 + first WALLABY, FAST, DESI velocities) | not stated in the abstract | 150 h⁻¹Mpc | 315 ± 40 | — | homogeneity scale "not yet reached" within 200–300 h⁻¹Mpc | [src] |
-| Duangchan et al. 2025, arXiv:2507.22236 | CF4 | forward model with no cosmological prior on the field, simulation-based correction from 64 mocks | ~140 and ~240 h⁻¹Mpc | (in body) | — | 3σ tension at both depths | [src] |
+| Duangchan et al. 2025, arXiv:2507.22236 | CF4 | forward model with no cosmological prior on the field, simulation-based correction from 64 mocks | ~140 and ~240 h⁻¹Mpc | (in body) | — | 3σ tension at both depths | [src: abstract] |
 | Stiskalek, Desmond & Lavaux 2025, arXiv:2509.14997 | CF4 TF W1, 2MTF, SFI++, Pantheon+, z < 0.05 | forward model, radially varying velocity dipole | bulk-flow *curve* | — | — | "fully consistent with expectations from the standard cosmological model" | [src] |
-| Watkins, Clark & Feldman 2025, arXiv:2512.03168 | CF4 | MV split into internal (< 200 h⁻¹Mpc) and external parts | to 200 h⁻¹Mpc | — | — | flow "dominated by sources beyond 200 Mpc/h", external part *rising* with scale | [src] |
-| Nusser & Tully 2026, arXiv:2608.14265 | CF4 and each constituent catalogue | monopole + dipole in six radial bins, log-distance estimator, ΛCDM prediction for the actual positions and covariances | to 300 h⁻¹Mpc; peak bin 120–160 h⁻¹Mpc | 628 ± 82 (dipole of that bin) | towards negative supergalactic X | full range 2.29σ (dipole), 2.36σ (joint); peak bin 3.40σ, 1.56σ without 6dFGS, 3.77σ without SNe | [src] |
-| Do et al. 2026, arXiv:2606.17142 | Hawai'i Supernova Flows SNe Ia, optical and NIR | two estimators × two distance estimators × two wavelength regimes | z ≲ 0.1 | ~100 to 400 depending on the choice | — | "all consistent with the predictions of ΛCDM" | [src] |
+| Watkins, Clark & Feldman 2025, arXiv:2512.03168 | CF4 | MV split into internal (< 200 h⁻¹Mpc) and external parts | to 200 h⁻¹Mpc | — | — | flow "dominated by sources beyond 200 Mpc/h", external part *rising* with scale | [src: abstract] |
+| Nusser & Tully 2026, arXiv:2608.14265 | CF4 and each constituent catalogue | monopole + dipole in six radial bins, log-distance estimator, ΛCDM prediction for the actual positions and covariances | to 300 h⁻¹Mpc; peak bin 120–160 h⁻¹Mpc | 628 ± 82 (dipole of that bin) | towards negative supergalactic X | full range 2.29σ (dipole), 2.36σ (joint); peak bin 3.40σ, 1.56σ without 6dFGS, 3.77σ without SNe | [src: abstract] |
+| Do et al. 2026, arXiv:2606.17142 | Hawai'i Supernova Flows SNe Ia, optical and NIR | two estimators × two distance estimators × two wavelength regimes | z ≲ 0.1 | ~100 to 400 depending on the choice | — | "all consistent with the predictions of ΛCDM" | [src: abstract] |
 
 ### 3b. Residual ("external") bulk flows from velocity–density comparison
 <!-- key: residual-external-bulk-flows-from-velocity -->
@@ -316,14 +316,14 @@ comparable to §3a amplitudes.
 
 | Reference | Density field | Residual flow (km/s) | Direction (l, b) | Flag |
 |---|---|---|---|---|
-| Turnbull et al. 2012, arXiv:1111.0631 | PSCz | 150 ± 43 not accounted for | — | [src] |
-| Carrick et al. 2015, arXiv:1504.04627 | 2M++ (200 h⁻¹Mpc) | 159 ± 23, preferred at 5.1σ | (304° ± 11°, 6° ± 13°) | [src] |
-| Springob et al. 2016, arXiv:1511.04849 | 2MRS, PSCz | ~250, falling to ~150 once the monopole zero-point offset between data and model is removed | — | [src] |
-| Boruah, Hudson & Lavaux 2020, arXiv:1912.09383 | 2M++ | 171 ± 11 | (301° ± 4°, 0° ± 3°) | [src] |
+| Turnbull et al. 2012, arXiv:1111.0631 | PSCz | 150 ± 43 not accounted for | — | [src: abstract] |
+| Carrick et al. 2015, arXiv:1504.04627 | 2M++ (200 h⁻¹Mpc) | 159 ± 23, preferred at 5.1σ | (304° ± 11°, 6° ± 13°) | [src: abstract] |
+| Springob et al. 2016, arXiv:1511.04849 | 2MRS, PSCz | ~250, falling to ~150 once the monopole zero-point offset between data and model is removed | — | [src: abstract] |
+| Boruah, Hudson & Lavaux 2020, arXiv:1912.09383 | 2M++ | 171 ± 11 | (301° ± 4°, 0° ± 3°) | [src: abstract] |
 
 Carrick et al. also give the *predicted* flow of a 50 h⁻¹Mpc Gaussian window, 230 ± 30 km/s towards
 (293° ± 8°, 14° ± 10°), and a predicted Local Group velocity from the 2M++ volume alone of 540 ± 40
-km/s towards (268° ± 4°, 38° ± 6°), 10° from the CMB dipole [src: arXiv:1504.04627].
+km/s towards (268° ± 4°, 38° ± 6°), 10° from the CMB dipole [src: arXiv:1504.04627]. [src: abstract]
 
 ### 3c. kSZ bulk flows
 <!-- key: ksz-bulk-flows -->
@@ -331,8 +331,8 @@ km/s towards (268° ± 4°, 38° ± 6°), 10° from the CMB dipole [src: arXiv:1
 | Reference | Data | Result | Flag |
 |---|---|---|---|
 | Kashlinsky et al. 2010, arXiv:0910.4958 | WMAP5 + >1 000 X-ray clusters | flow "consistent with approximately constant velocity out to at least 800 Mpc" (the "dark flow" claim, so named in arXiv:1310.4184) | [src] |
-| Planck Collaboration 2014, arXiv:1303.5090 | Planck + MCXC clusters, mean z = 0.18 | no bulk flow detected; blind-search upper limit 254 km/s (95 % CL); kSZ monopole 72 ± 60 km/s; cluster radial rms < 800 km/s (95 % CL) against a linear ΛCDM value near 230 km/s at z = 0.15 | [src] |
-| Gandhi et al. 2026, arXiv:2605.12499 | kSZ velocity reconstruction, WISE×SuperCOSMOS and unWISE with Planck, six bins over 0.1 ≲ z ≲ 1.5 | upper limits at 200 ≲ R ≲ 2000 h⁻¹Mpc "fully consistent with the ΛCDM bulk flow expectation"; "strong tension" with reading the CatWISE quasar dipole as a ~370 km/s flow at R ~ 1000 h⁻¹Mpc | [src] |
+| Planck Collaboration 2014, arXiv:1303.5090 | Planck + MCXC clusters, mean z = 0.18 | no bulk flow detected; blind-search upper limit 254 km/s (95 % CL); kSZ monopole 72 ± 60 km/s; cluster radial rms < 800 km/s (95 % CL) against a linear ΛCDM value near 230 km/s at z = 0.15 | [src: abstract] |
+| Gandhi et al. 2026, arXiv:2605.12499 | kSZ velocity reconstruction, WISE×SuperCOSMOS and unWISE with Planck, six bins over 0.1 ≲ z ≲ 1.5 | upper limits at 200 ≲ R ≲ 2000 h⁻¹Mpc "fully consistent with the ΛCDM bulk flow expectation"; "strong tension" with reading the CatWISE quasar dipole as a ~370 km/s flow at R ~ 1000 h⁻¹Mpc | [src: abstract] |
 
 ### 3d. How to read the record
 <!-- key: how-to-read-the-record -->
@@ -353,14 +353,14 @@ km/s towards (268° ± 4°, 38° ± 6°), 10° from the CMB dipole [src: arXiv:1
   expansion [src: arXiv:2509.14997]. See `systematics.md` §1.
 - **Which sub-catalogue carries the excess.** In CF4 "TFR and 6dFGS favor larger dipoles, while SDSS
   and SN favor smaller ones"; the localised 120–160 h⁻¹Mpc feature "depends strongly on the survey
-  window" [src: arXiv:2608.14265].
+  window" [src: arXiv:2608.14265]. [src: abstract]
 - **Relativistic terms.** Corrections of order vz (gravitational redshift, time evolution of the
   field) bias recent estimates "toward larger values by ~10 %" according to Heinesen 2023
   (arXiv:2305.16084) [src].
 - **The observer matters.** For a Local-Group-like observer the measured bulk flow differs from that
   of a random observer by up to ~20 % at R ≤ 50 h⁻¹Mpc, comparable to sample variance; sparse
   sampling, velocity errors and radial incompleteness each bias it by more than 10 % at R ≤ 100
-  h⁻¹Mpc [src: arXiv:1802.03391].
+  h⁻¹Mpc [src: arXiv:1802.03391]. [src: abstract]
 
 ---
 
@@ -373,7 +373,7 @@ The kSZ effect gives τ × v. Three estimators, with what each returns and what 
 |---|---|---|---|
 | Pairwise kSZ | mean pairwise momentum of halo pairs vs separation | mean optical depth τ̄; the combination constrained is H0 f σ8² once τ̄ and bias are supplied | 9.3σ with 913 286 DESI DR1 LRGs × ACT DR6 + Planck (Gong et al. 2025, arXiv:2511.23417); 5σ at z ~ 0.3 with DESI DR1 BGS (Hadzhiyska et al. 2025, arXiv:2510.14135) [src] |
 | Velocity-weighted stacking | gas profile around galaxies, using an *external* reconstructed velocity as the weight | accuracy of the reconstructed velocity | non-linear terms suppress the signal by 10–20 % when the stacking velocity keeps non-linear information or RSD (Ondaro-Mallea et al. 2026, arXiv:2607.23339) [src] |
-| kSZ velocity reconstruction (kSZ tomography) | large-scale radial velocity modes from the anisotropy of the small-scale kSZ–galaxy correlation | velocity bias b_v (the "optical-depth degeneracy"), an overall amplitude | galaxy–velocity cross-spectrum at 17.0σ (LRG), 8.3σ (ELG), 6.8σ (QSO), first velocity auto-spectrum at 3.1σ, 20.8σ cumulative with DESI DR2 × ACT DR6 (Chaussidon et al. 2026, arXiv:2604.04867) [src] |
+| kSZ velocity reconstruction (kSZ tomography) | large-scale radial velocity modes from the anisotropy of the small-scale kSZ–galaxy correlation | velocity bias b_v (the "optical-depth degeneracy"), an overall amplitude | galaxy–velocity cross-spectrum at 17.0σ (LRG), 8.3σ (ELG), 6.8σ (QSO), first velocity auto-spectrum at 3.1σ, 20.8σ cumulative with DESI DR2 × ACT DR6 (Chaussidon et al. 2026, arXiv:2604.04867) [src: abstract] |
 
 Facts that matter for a peculiar-velocity reader.
 
@@ -388,24 +388,24 @@ Facts that matter for a peculiar-velocity reader.
   from kSZ tomography "can change appreciably" (Tishue, Shiveshwarkar & Holder 2025,
   arXiv:2510.25821) [src].
 - kSZ velocity reconstruction already has "lower noise on a per-mode basis than the galaxy
-  auto-correlation on the largest scales" (arXiv:2604.04867) [src]: it is a large-scale-mode probe,
+  auto-correlation on the largest scales" (arXiv:2604.04867) [src: Sect. IV.2]: it is a large-scale-mode probe,
   complementary to distance-indicator velocities, which are a z < 0.1 probe.
 - Reconstructed (not kSZ) velocities used as stacking weights are now also machine-learned: Gong et
   al. 2026 (arXiv:2609.36355) reach SNR 14.2 on the optical depth with a Transformer-reconstructed
-  velocity field of DESI DR2 LRGs at z = 0.55 and 0.8 [src].
+  velocity field of DESI DR2 LRGs at z = 0.55 and 0.8 [src: abstract].
 
 Measurements, all model-dependent through the electron profile; none is an fσ8.
 
 | Result | Value | Data | Citation | Flag |
 |---|---|---|---|---|
 | Pairwise kSZ detection | 9.3σ | 913 286 DESI DR1 LRGs × ACT DR6 + Planck | arXiv:2511.23417 | [src] |
-| Pairwise kSZ at low z | 5σ at z ~ 0.3 (θ_ap = 3.3′, log M⋆ > 11); constrains H0 f σ8² given τ̄ and bias | 1.6 M DESI DR1 BGS galaxies × ACT DR6 | arXiv:2510.14135 | [src] |
-| Force-law index from pairwise kSZ | g ∝ 1/rⁿ with n = 2.1 ± 0.3 over 30–230 Mpc | ACT × SDSS | Gallardo et al. 2026, arXiv:2604.14327 | [src] |
-| Galaxy clustering + pairwise kSZ spectrum | H0 = 70.82 +4.94/−5.01, Ω_m = 0.290 +0.092/−0.068, w0 = −1.038 +0.245/−0.437, lg τ̄ = −4.24 ± 0.10 (w0CDM) | ACT DR6 × CMASS | Li & Zheng 2025, arXiv:2510.27227 | [src] |
-| kSZ velocity reconstruction, f_NL | −39 +40/−33; b_v = 0.45 +0.06/−0.05; 11.7σ | ACT DR5 × DESI-LS LRGs | arXiv:2506.21657 | [src] |
+| Pairwise kSZ at low z | 5σ at z ~ 0.3 (θ_ap = 3.3′, log M⋆ > 11); constrains H0 f σ8² given τ̄ and bias | 1.6 M DESI DR1 BGS galaxies × ACT DR6 | arXiv:2510.14135 | [src: abstract] |
+| Force-law index from pairwise kSZ | g ∝ 1/rⁿ with n = 2.1 ± 0.3 over 30–230 Mpc | ACT × SDSS | Gallardo et al. 2026, arXiv:2604.14327 | [src: abstract] |
+| Galaxy clustering + pairwise kSZ spectrum | H0 = 70.82 +4.94/−5.01, Ω_m = 0.290 +0.092/−0.068, w0 = −1.038 +0.245/−0.437, lg τ̄ = −4.24 ± 0.10 (w0CDM) | ACT DR6 × CMASS | Li & Zheng 2025, arXiv:2510.27227 | [src: abstract] |
+| kSZ velocity reconstruction, f_NL | −39 +40/−33; b_v = 0.45 +0.06/−0.05; 11.7σ | ACT DR5 × DESI-LS LRGs | arXiv:2506.21657 | [src: abstract] |
 | same, QML estimator | A = 0.39 ± 0.04; 11.7σ | ACT DR6 × DESI-LS DR9 | arXiv:2506.21684 | [src] |
 | kSZ × continuity-equation velocity, f_NL | −180 +61/−86 (67 % CL), consistent with zero at 95 %; b_v = 0.33 ± 0.03 (11σ) | ACT DR6 × DESI-LS LRGs | arXiv:2511.15701 | [src] |
-| Spectroscopic velocity reconstruction, f_NL | 15.9 +34.6/−34.4 (68 % CL); 20.8σ cumulative kSZ detection | DESI DR2 LRG, ELG, QSO × ACT DR6 | arXiv:2604.04867 | [src] |
+| Spectroscopic velocity reconstruction, f_NL | 15.9 +34.6/−34.4 (68 % CL); 20.8σ cumulative kSZ detection | DESI DR2 LRG, ELG, QSO × ACT DR6 | arXiv:2604.04867 | [src: abstract] |
 | Bulk flow to Gpc scales | upper limits, consistent with ΛCDM (see §3c) | Planck × WISE×SuperCOSMOS, unWISE | arXiv:2605.12499 | [src] |
 
 History of the kSZ-velocity f_NL: −39 +40/−33 (June 2025) → −180 +61/−86 (Nov 2025, 2D photometric)
@@ -419,14 +419,14 @@ velocity field") [src: arXiv:2506.21657, arXiv:2511.15701, arXiv:2604.04867].
 
 | Test | Result | Data, method | Model | Citation | Flag |
 |---|---|---|---|---|---|
-| Scale-dependent growth | fσ8(k, z=0) in bins Δk ~ 0.03 h Mpc⁻¹ to ~35 % each, including scales > 300 h⁻¹Mpc; no scale dependence; ~15 % combined | 6dFGSv + low-z SNe, field-level, velocity only | bias-independent | Johnson et al. 2014, arXiv:1404.3799 | [src] |
-| Growth index from the bulk flow | γ = 0.495 ± 0.096 (σ8 = 0.8, Ω_m = 0.266 fixed); DGP excluded at > 99 % | SFI++ bulk flow | ΛCDM + γ | Nusser & Davis 2011, arXiv:1101.1650 | [src] |
+| Scale-dependent growth | fσ8(k, z=0) in bins Δk ~ 0.03 h Mpc⁻¹ to ~35 % each, including scales > 300 h⁻¹Mpc; no scale dependence; ~15 % combined | 6dFGSv + low-z SNe, field-level, velocity only | bias-independent | Johnson et al. 2014, arXiv:1404.3799 | [src: abstract] |
+| Growth index from the bulk flow | γ = 0.495 ± 0.096 (σ8 = 0.8, Ω_m = 0.266 fixed); DGP excluded at > 99 % | SFI++ bulk flow | ΛCDM + γ | Nusser & Davis 2011, arXiv:1101.1650 | [src: abstract] |
 | f(R) from the bulk flow | f_R0 must be ≤ 10⁻⁴ (10⁻³ overpredicts the 2MTF flow at 20–50 h⁻¹Mpc) | ECOSMOG simulations vs 2MTF | f(R) gravity | Seiler & Parkinson 2016, arXiv:1607.01837 | [src] |
-| S8 under GR and DGP | S8 = 0.637 ± 0.054 (γ = 6/11) and 0.741 ± 0.062 (γ = 11/16); > 3σ from Planck | 6dFGS + SDSS FP vs 2M++ | Ω_m = 0.315 ± 0.007 prior | Said et al. 2020, arXiv:2007.04993 | [src] |
-| nDGP and f(R) from two-point functions | r_c H0/c > 6.987 and −log10|f_R0| > 4.703 (2σ), "significantly affected by the prior" | 6dFGS + SDSS PV correlation functions | nDGP, Hu–Sawicki f(R) | Lyall et al. 2024, arXiv:2407.18684 | [src] |
-| Growth index, DESI | γ_L = 0.580 ± 0.110 | DESI DR1 PV consensus + DESI DR1 full shape | ΛCDM + γ | arXiv:2512.03230 | [src] |
-| Growth index, SN velocities + CMB | γ = 0.519 +0.061/−0.099 (Pantheon+) | SN magnitude covariance + Planck PR4 | ΛCDM + γ + Ω_k | arXiv:2604.06361 | [src] |
-| Force law | n = 2.1 ± 0.3 | pairwise kSZ | g ∝ r⁻ⁿ | arXiv:2604.14327 | [src] |
+| S8 under GR and DGP | S8 = 0.637 ± 0.054 (γ = 6/11) and 0.741 ± 0.062 (γ = 11/16); > 3σ from Planck | 6dFGS + SDSS FP vs 2M++ | Ω_m = 0.315 ± 0.007 prior | Said et al. 2020, arXiv:2007.04993 | [src: abstract] |
+| nDGP and f(R) from two-point functions | r_c H0/c > 6.987 and −log10|f_R0| > 4.703 (2σ), "significantly affected by the prior" | 6dFGS + SDSS PV correlation functions | nDGP, Hu–Sawicki f(R) | Lyall et al. 2024, arXiv:2407.18684 | [src: abstract] |
+| Growth index, DESI | γ_L = 0.580 ± 0.110 | DESI DR1 PV consensus + DESI DR1 full shape | ΛCDM + γ | arXiv:2512.03230 | [src: abstract] |
+| Growth index, SN velocities + CMB | γ = 0.519 +0.061/−0.099 (Pantheon+) | SN magnitude covariance + Planck PR4 | ΛCDM + γ + Ω_k | arXiv:2604.06361 | [src: abstract] |
+| Force law | n = 2.1 ± 0.3 | pairwise kSZ | g ∝ r⁻ⁿ | arXiv:2604.14327 | [src: abstract] |
 
 Reading notes.
 
@@ -438,7 +438,7 @@ Reading notes.
   rate by ~15 % is mimicked by Local-Group-like observer selection [src: arXiv:1802.03391].
 - The DESI γ_L comes from a joint fit of the consensus low-redshift growth rate with the DESI DR1
   full-shape clustering data; the velocity sample contributes one 12.2 % point at z = 0.07 [src:
-  arXiv:2512.03230].
+  arXiv:2512.03230]. [src: Sect. 4.3.5]
 - Forecast, not measurement: a kSZ-velocity analogue of E_G (the V̂_G estimator, galaxy × CMB
   lensing over galaxy × kSZ-reconstructed velocity) is predicted to reach S/N ~ 20–55 for ACT/SO ×
   DESI at z ≈ 0.73, 1.33, 1.84 [src: arXiv:2510.27605] — **forecast**.

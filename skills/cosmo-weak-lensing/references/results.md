@@ -31,13 +31,13 @@ value read in the body of the paper.
 | Dataset | S8 | Other | Model / choices | Citation | Flag |
 |---|---|---|---|---|---|
 | KiDS-Legacy (KiDS DR5, 1347 deg², nine bands, sources to z_B ≤ 2.0) | 0.815 +0.016/−0.021 | Σ8 = σ8(Ωm/0.3)^0.58 = 0.821 +0.014/−0.016; 0.73σ from Planck Legacy in Σ8, 0.76σ in S8 [src: Sect. 7] | flat ΛCDM; IA model depending on halo mass and spectral type; baryon feedback marginalised | Wright et al. 2025, arXiv:2503.19441 | [src] |
-| DES Y6 (≈140 million galaxies, 8.29 arcmin⁻², four bins, S/N = 83) | 0.798 +0.014/−0.015 | 1.8% precision; 2.0σ from CMB in S8, 1.1σ in full parameter space | flat ΛCDM, NLA; small scales removed for baryons | DES Collaboration 2026, arXiv:2602.10065 | [src] |
-| DES Y6, same data | 0.783 +0.019/−0.015 | 2.5% precision; 2.3σ from CMB in S8, 1.7σ in full parameter space | flat ΛCDM, TATT | arXiv:2602.10065 | [src] |
+| DES Y6 (≈140 million galaxies, 8.29 arcmin⁻², four bins, S/N = 83) | 0.798 +0.014/−0.015 | 1.8% precision; 2.0σ from CMB in S8, 1.1σ in full parameter space | flat ΛCDM, NLA; small scales removed for baryons | DES Collaboration 2026, arXiv:2602.10065 | [src: abstract] |
+| DES Y6, same data | 0.783 +0.019/−0.015 | 2.5% precision; 2.3σ from CMB in S8, 1.7σ in full parameter space | flat ΛCDM, TATT | arXiv:2602.10065 | [src: abstract] |
 | HSC Y3 real space, DESI clustering-redshift recalibration | 0.804 +0.019/−0.018 | error reduced by a factor 1.8 relative to the original | flat ΛCDM, HSC Y3 ξ± with new Δz priors | Choppin de Janvry et al. 2025, arXiv:2511.18134 | [src] |
 | HSC Y3 cosmic shear + shear ratios | 0.773 ± 0.031 | Ωm = 0.304 +0.030/−0.029 | flat ΛCDM | Rana et al. 2025, arXiv:2508.21681 | [src] |
 | DECADE + DES Y3 (270 million galaxies, 13,000 deg²) | 0.805 ± 0.019 | Ωm = 0.262 +0.023/−0.036; within 1.9σ of Planck | flat ΛCDM | Anbajagane et al. 2025, arXiv:2509.03582 | [src] |
-| UNIONS-3500, ξ±, one redshift bin | 0.831 +0.067/−0.078 | consistent with Planck within 1σ | flat ΛCDM, non-tomographic | Goh et al. 2026, arXiv:2605.13547 | [src] |
-| UNIONS-3500, pseudo-Cℓ, one redshift bin | 0.891 +0.057/−0.084 | 0.79σ from Planck; configuration vs harmonic agree at 2.18σ | flat ΛCDM, non-tomographic | Guerrini et al. 2026, arXiv:2605.13543 | [src] |
+| UNIONS-3500, ξ±, one redshift bin | 0.831 +0.067/−0.078 | consistent with Planck within 1σ | flat ΛCDM, non-tomographic | Goh et al. 2026, arXiv:2605.13547 | [src: abstract] |
+| UNIONS-3500, pseudo-Cℓ, one redshift bin | 0.891 +0.057/−0.084 | 0.79σ from Planck; configuration vs harmonic agree at 2.18σ | flat ΛCDM, non-tomographic | Guerrini et al. 2026, arXiv:2605.13543 | [src: abstract] |
 
 The CMB reference in the DES Y6 papers is the combination of Planck 2018, ACT
 DR6 and SPT-3G DR1 primary anisotropies (arXiv:2602.10065, arXiv:2601.14559)
@@ -72,20 +72,20 @@ to 1σ (arXiv:2602.10065) [src].
 
 | Dataset | Result | Model | Citation | Flag |
 |---|---|---|---|---|
-| DES Y6 3×2pt (≈5000 deg², 140 million sources, 9 million lenses) | S8 = 0.789 ± 0.012; Ωm = 0.333 +0.023/−0.028 | flat ΛCDM | DES Collaboration 2026, arXiv:2601.14559 | [src] |
-| DES Y6 3×2pt vs CMB | 1.8σ full-parameter difference; 2.6σ projected on S8 | flat ΛCDM; CMB = Planck 2018 + ACT DR6 + SPT-3G DR1 | arXiv:2601.14559 | [src] |
-| DES Y6 3×2pt | S8 = 0.782 +0.021/−0.020; Ωm = 0.325 +0.032/−0.035; w = −1.12 +0.26/−0.20 | wCDM | arXiv:2601.14559 | [src] |
+| DES Y6 3×2pt (≈5000 deg², 140 million sources, 9 million lenses) | S8 = 0.789 ± 0.012; Ωm = 0.333 +0.023/−0.028 | flat ΛCDM | DES Collaboration 2026, arXiv:2601.14559 | [src: abstract] |
+| DES Y6 3×2pt vs CMB | 1.8σ full-parameter difference; 2.6σ projected on S8 | flat ΛCDM; CMB = Planck 2018 + ACT DR6 + SPT-3G DR1 | arXiv:2601.14559 | [src: abstract] |
+| DES Y6 3×2pt | S8 = 0.782 +0.021/−0.020; Ωm = 0.325 +0.032/−0.035; w = −1.12 +0.26/−0.20 | wCDM | arXiv:2601.14559 | [src: abstract] |
 | All DES probes (3×2pt + SN Ia + BAO + clusters) vs CMB | 2.8σ parameter difference | flat ΛCDM | arXiv:2601.14559 | [src] |
 | DES Y6 3×2pt + DESI DR2 BAO + DES SN + SPT clusters vs CMB | 2.3σ parameter difference | flat ΛCDM | arXiv:2601.14559 | [src] |
-| DES Y6 3×2pt + CMB + those low-z data | S8 = 0.806 +0.006/−0.007; Ωm = 0.302 ± 0.003; h = 0.683 +0.003/−0.002; Σmν < 0.14 eV (95%) | flat ΛCDM | arXiv:2601.14559 | [src] |
-| same combination | w = −0.981 +0.021/−0.022 | wCDM | arXiv:2601.14559 | [src] |
-| KiDS-Legacy + DES Y3 cosmic shear + Pantheon+ + DESI Y1 BAO | S8 = 0.814 +0.011/−0.012; σ8 = 0.802 +0.022/−0.018 | flat ΛCDM | Stölzner et al. 2025, arXiv:2503.19442 | [src] |
-| KiDS-Legacy + CMB + CMB lensing + RSD + BAO | S8 = 0.816 ± 0.006 | flat ΛCDM | Reischke et al. 2025, arXiv:2512.11041 | [src] |
-| same combination | S8 = 0.837 ± 0.008 | w0waCDM | arXiv:2512.11041 | [src] |
+| DES Y6 3×2pt + CMB + those low-z data | S8 = 0.806 +0.006/−0.007; Ωm = 0.302 ± 0.003; h = 0.683 +0.003/−0.002; Σmν < 0.14 eV (95%) | flat ΛCDM | arXiv:2601.14559 | [src: abstract] |
+| same combination | w = −0.981 +0.021/−0.022 | wCDM | arXiv:2601.14559 | [src: abstract] |
+| KiDS-Legacy + DES Y3 cosmic shear + Pantheon+ + DESI Y1 BAO | S8 = 0.814 +0.011/−0.012; σ8 = 0.802 +0.022/−0.018 | flat ΛCDM | Stölzner et al. 2025, arXiv:2503.19442 | [src: abstract] |
+| KiDS-Legacy + CMB + CMB lensing + RSD + BAO | S8 = 0.816 ± 0.006 | flat ΛCDM | Reischke et al. 2025, arXiv:2512.11041 | [src: abstract] |
+| same combination | S8 = 0.837 ± 0.008 | w0waCDM | arXiv:2512.11041 | [src: abstract] |
 | KiDS-Legacy extensions (read here as KiDS-Legacy alone, which the width of the bounds supports but the abstract does not state) | Σmν ≤ 1.5 eV; w0 = −1.0 ± 0.7; wa = −1.3 +1.9/−2.0; ΩK = 0.08 +0.16/−0.17 (1σ bounds) | one extension at a time | arXiv:2512.11041 | [src] |
 | DES Y3 + Planck PR4 6×2pt, all ξ± scales to 2.5′, baryon PCA with a gas-fraction prior | S8 = 0.8073 ± 0.0094 | flat ΛCDM | Xu et al. 2025, arXiv:2510.25596 | [src] |
-| DESI DR1 BGS+LRG clustering + DES and KiDS lensing, simulation-based, scales to 0.4 h⁻¹Mpc (clustering) and 2.5 h⁻¹Mpc (lensing) | S8 = 0.797 +0.023/−0.024; Ωm = 0.292 ± 0.011 | other parameters fixed to CMB-preferred values | Lange et al. 2025, arXiv:2512.15962 | [src] |
-| same with HSC lensing | S8 = 0.791 +0.020/−0.021; Ωm = 0.300 ± 0.009 | HSC photo-z offset fixed to the HSC best fit | arXiv:2512.15962 | [src] |
+| DESI DR1 BGS+LRG clustering + DES and KiDS lensing, simulation-based, scales to 0.4 h⁻¹Mpc (clustering) and 2.5 h⁻¹Mpc (lensing) | S8 = 0.797 +0.023/−0.024; Ωm = 0.292 ± 0.011 | other parameters fixed to CMB-preferred values | Lange et al. 2025, arXiv:2512.15962 | [src: abstract] |
+| same with HSC lensing | S8 = 0.791 +0.020/−0.021; Ωm = 0.300 ± 0.009 | HSC photo-z offset fixed to the HSC best fit | arXiv:2512.15962 | [src: abstract] |
 
 Read in the body of the DES Y6 3×2pt paper (arXiv:2601.14559): the 3×2pt MAP
 is S8 = 0.793; with non-linear galaxy bias the mean is 0.789 ± 0.011; galaxy
@@ -117,7 +117,7 @@ modification; with external data (Σ0, μ0) = (0.04 ± 0.05, 0.08 +0.21/−0.19)
 
 In w0waCDM the KiDS-Legacy + CMB-lensing combination gives a Bayes factor B =
 0.07 for w0waCDM against ΛCDM, and with all probes B = 2.73, which the paper
-equates to a 2.6σ suspiciousness (arXiv:2512.11041) [src]. Weak lensing
+equates to a 2.6σ suspiciousness (arXiv:2512.11041) [src: abstract]. Weak lensing
 therefore does not drive the dynamical-dark-energy preference; see
 `cosmo-dark-energy-modified-gravity`.
 
@@ -126,12 +126,12 @@ therefore does not drive the dynamical-dark-energy preference; see
 
 | Reanalysis | S8 | What changed | Citation | Flag |
 |---|---|---|---|---|
-| DES Y3, "blue" sample, IA priors from spectroscopic direct measurements, baryon model informed by X-ray gas fractions and kSZ profiles | 0.832 +0.013/−0.017 | 2% constraint, a factor-two gain over the fiducial DES Y3 model; posterior moves up by 1.5σ | Bigwood et al. 2025, arXiv:2512.04209 | [src] |
-| DES Y3 small-scale shear + shear × tSZ (ACT DR6 + Planck) | 0.811 +0.015/−0.012 | Ωm = 0.263 +0.023/−0.030; shear × tSZ detected at 21σ; 2–4σ preference for stronger suppression than mild-feedback simulations | Pandey et al. 2025, arXiv:2506.07432 | [src] |
-| DES Y3, two-loop EFT with lensing counterterms and spin-2 EFT for IA | 0.783 +0.038/−0.031 (0.802 +0.031/−0.026 with BAO) | perturbative model on the scales left by the cuts | Chen et al. 2026, arXiv:2603.28761 | [src] |
-| KiDS-1000 with metacalibration instead of lensfit | 0.789 +0.020/−0.024 | \|m\| < 0.017 in all bins; 28% more constraining power; still 1.8σ from Planck | Yoon et al. 2025, arXiv:2510.01122 | [src] |
-| KiDS-1000, clipped + unclipped ξ±, emulator forward model | 0.724 ± 0.027; Ωm = 0.263 +0.035/−0.038; w0 = −1.24 +0.26/−0.28 | wCDM; 16% tighter S8 than unclipped alone | Giblin et al. 2026, arXiv:2608.07377 | [src] |
-| KiDS-Legacy pseudo-Cℓ with BNT k-cut (k ≥ 0.33 Mpc⁻¹ removed) | 0.798 ± 0.045 | within 0.1σ of the fiducial band-power result; 0.717 +0.047/−0.046 when the Gaussian covariance is built from the observed data vector | Gu et al. 2026, arXiv:2607.04384 | [src] |
+| DES Y3, "blue" sample, IA priors from spectroscopic direct measurements, baryon model informed by X-ray gas fractions and kSZ profiles | 0.832 +0.013/−0.017 | 2% constraint, a factor-two gain over the fiducial DES Y3 model; posterior moves up by 1.5σ | Bigwood et al. 2025, arXiv:2512.04209 | [src: abstract] |
+| DES Y3 small-scale shear + shear × tSZ (ACT DR6 + Planck) | 0.811 +0.015/−0.012 | Ωm = 0.263 +0.023/−0.030; shear × tSZ detected at 21σ; 2–4σ preference for stronger suppression than mild-feedback simulations | Pandey et al. 2025, arXiv:2506.07432 | [src: abstract] |
+| DES Y3, two-loop EFT with lensing counterterms and spin-2 EFT for IA | 0.783 +0.038/−0.031 (0.802 +0.031/−0.026 with BAO) | perturbative model on the scales left by the cuts | Chen et al. 2026, arXiv:2603.28761 | [src: abstract] |
+| KiDS-1000 with metacalibration instead of lensfit | 0.789 +0.020/−0.024 | \|m\| < 0.017 in all bins; 28% more constraining power; still 1.8σ from Planck | Yoon et al. 2025, arXiv:2510.01122 | [src: abstract] |
+| KiDS-1000, clipped + unclipped ξ±, emulator forward model | 0.724 ± 0.027; Ωm = 0.263 +0.035/−0.038; w0 = −1.24 +0.26/−0.28 | wCDM; 16% tighter S8 than unclipped alone | Giblin et al. 2026, arXiv:2608.07377 | [src: abstract] |
+| KiDS-Legacy pseudo-Cℓ with BNT k-cut (k ≥ 0.33 Mpc⁻¹ removed) | 0.798 ± 0.045 | within 0.1σ of the fiducial band-power result; 0.717 +0.047/−0.046 when the Gaussian covariance is built from the observed data vector | Gu et al. 2026, arXiv:2607.04384 | [src: abstract] |
 
 The DES Y3 blue-sample reanalysis decomposes its gain (arXiv:2512.04209)
 [src: Table 1, Sect. IV]: TATT with the DES scale cuts on the blue sample
@@ -160,8 +160,8 @@ two abstracts; the HSC abstract does not mention the recalibration].
 | Measurement | Value | Citation | Flag |
 |---|---|---|---|
 | KiDS-Legacy deprojected P_m(k,z), k = 3–20 h Mpc⁻¹ | suppression 30% ± 10% (stat) ± 4% (sys) relative to dark-matter-only, 2.8σ | Broxterman et al. 2025, arXiv:2509.08365 | [src] |
-| X-ray gas fractions (CHEX-MATE + eFEDS) through baryonification | f_gas = 0.029 ± 0.006 at M500c = 3×10¹³ M⊙; 0.078 ± 0.004 at 3×10¹⁴ M⊙; suppression 6% at k = 1 h/Mpc and 23% at k = 5 h/Mpc | Bucko et al. 2026, arXiv:2609.09144 | [src] |
-| DES Y3 + Planck PR4 6×2pt | first baryon principal component Q1 = 0.025 +0.024/−0.029; 2.9–3.3σ below Illustris, 4.7–5.9σ below OWLS-AGN T8.7, i.e. weak feedback | arXiv:2510.25596 | [src] |
+| X-ray gas fractions (CHEX-MATE + eFEDS) through baryonification | f_gas = 0.029 ± 0.006 at M500c = 3×10¹³ M⊙; 0.078 ± 0.004 at 3×10¹⁴ M⊙; suppression 6% at k = 1 h/Mpc and 23% at k = 5 h/Mpc | Bucko et al. 2026, arXiv:2609.09144 | [src: abstract] |
+| DES Y3 + Planck PR4 6×2pt | first baryon principal component Q1 = 0.025 +0.024/−0.029; 2.9–3.3σ below Illustris, 4.7–5.9σ below OWLS-AGN T8.7, i.e. weak feedback | arXiv:2510.25596 | [src: abstract] |
 | DES Y3 shear × ACT tSZ | 2–4σ preference for stronger suppression than mild-feedback simulations | arXiv:2506.07432 | [src] |
 
 The 6×2pt result (weak feedback) and the tSZ, kSZ, X-ray and KiDS P_m(k)
@@ -172,9 +172,9 @@ results (strong feedback) are in open disagreement; see `open-questions.md`.
 
 | Lensing data | S8 | Citation | Flag |
 |---|---|---|---|
-| DESI DR1 clustering + DES Y3 | 0.786 +0.022/−0.019 | Porredon et al. 2025, arXiv:2512.15960 | [src] |
-| DESI DR1 clustering + KiDS-1000 | 0.760 +0.020/−0.018 | arXiv:2512.15960 | [src] |
-| DESI DR1 clustering + HSC Y3 | 0.771 +0.026/−0.027 | arXiv:2512.15960 | [src] |
+| DESI DR1 clustering + DES Y3 | 0.786 +0.022/−0.019 | Porredon et al. 2025, arXiv:2512.15960 | [src: abstract] |
+| DESI DR1 clustering + KiDS-1000 | 0.760 +0.020/−0.018 | arXiv:2512.15960 | [src: abstract] |
+| DESI DR1 clustering + HSC Y3 | 0.771 +0.026/−0.027 | arXiv:2512.15960 | [src: abstract] |
 
 The paper calls these mutually consistent and 1.5–2σ low relative to Planck in
 the S8–Ωm plane (arXiv:2512.15960) [src]. They use the pre-Legacy KiDS
@@ -186,9 +186,9 @@ of the 2025 recalibrations [der: from the data sets named in the abstract].
 
 | Reference | Value | Citation | Flag |
 |---|---|---|---|
-| Planck 2018, base ΛCDM | Ωm = 0.315 ± 0.007; σ8 = 0.811 ± 0.006 | Planck Collaboration 2020, arXiv:1807.06209 | [src] |
-| ACT DR6 + CMB lensing (ACT, Planck) + DESI DR1 BAO | σ8 = 0.813 ± 0.005 | Louis et al. 2025, arXiv:2503.14452 | [src] |
-| SPT-3G D1 + ACT + Planck | σ8 = 0.8137 ± 0.0037 | Camphuis et al. 2025, arXiv:2506.20707 | [src] |
+| Planck 2018, base ΛCDM | Ωm = 0.315 ± 0.007; σ8 = 0.811 ± 0.006 | Planck Collaboration 2020, arXiv:1807.06209 | [src: abstract] |
+| ACT DR6 + CMB lensing (ACT, Planck) + DESI DR1 BAO | σ8 = 0.813 ± 0.005 | Louis et al. 2025, arXiv:2503.14452 | [src: abstract] |
+| SPT-3G D1 + ACT + Planck | σ8 = 0.8137 ± 0.0037 | Camphuis et al. 2025, arXiv:2506.20707 | [src: abstract] |
 | "Combined CMB" (Planck + ACT DR6 + SPT-3G), as compiled by a 2026 review | S8 = 0.836 +0.012/−0.013 | Pantos & Perivolaropoulos 2026, arXiv:2602.12238 | [sec] (review abstract) |
 | Planck 2018 + ACT DR6 + SPT-3G DR1, primary anisotropies without lensing, analysed with the DES Y6 priors | S8 = 0.836 +0.012/−0.013 (MAP 0.837); Ωm = 0.324 +0.007/−0.012; σ8 = 0.805 +0.014/−0.007 | arXiv:2601.14559 | [src: Table 4, Sect. V.2] |
 | Planck Legacy, as quoted by KiDS-Legacy | S8 = 0.834 ± 0.016 | arXiv:2503.19441 | [sec: Sect. 7 of that paper] |
@@ -268,7 +268,7 @@ figure the paper itself quoted, against the CMB data set it named.
 - **Joint:** DES Y3 + KiDS-1000 (0.790 mean, 0.801 MAP) is the reference
   "hybrid pipeline" result of 2023 and already showed that the mean and the
   MAP differ by more than half the error bar through projection effects
-  (arXiv:2305.17173) [src].
+  (arXiv:2305.17173) [src: abstract].
 
 The three HSC Y1/Y3 flavours are a standing example that two statistics on one
 catalogue can differ: 0.780 (Cℓ) against 0.823 (ξ±) for Y1 [src:
@@ -278,7 +278,7 @@ arXiv:1809.09148, arXiv:1906.06041].
 <!-- key: not-verified -->
 
 - The Planck 2018 S8 value in the body of arXiv:1807.06209 itself: still not
-  read; 0.834 ± 0.016 is here as KiDS-Legacy quotes it.
+  read; 0.834 ± 0.016 is here as KiDS-Legacy quotes it. [src: Sect. 3]
 - The point-estimate convention of the HSC, DECADE and UNIONS rows (KiDS-Legacy
   and DES are now read in the body).
 - Whether the later version of arXiv:2511.18134 changed the values of its

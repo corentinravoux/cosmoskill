@@ -16,7 +16,7 @@ Flags: `[src]` read in the cited paper this session; `[sec]` taken from a named 
 **The case that it is not a neutrino statement.**
 
 - The signal is the BAO–CMB mismatch in H0 r_d, re-expressed. A negative effective mass, evolving dark energy and a higher τ each absorb it (arXiv:2503.14744 §5.2; arXiv:2407.10965). DESI itself reads negative values as unidentified systematics or new physics possibly unrelated to neutrinos.
-- With two lensing amplitudes free the effective mass is −0.018 (+0.085/−0.089) eV (Cozzumbo et al. 2025, arXiv:2511.01967).
+- With two lensing amplitudes free the effective mass is −0.018 (+0.085/−0.089) eV (Cozzumbo et al. 2025, arXiv:2511.01967). [src: abstract]
 - With τ near 0.09 the tension disappears (Sailer et al. 2025, arXiv:2504.16932; Jhaveri, Karwal & Hu 2025, arXiv:2504.21813); within DESI's own tests it falls to 1.7σ at τ = 0.074 (`systematics.md` §2).
 - Profile-likelihood and Bayesian limits agree, and the limit sits at the edge of what the data can do: "living at the edge" (Naredo-Tuero et al. 2024, arXiv:2407.13831).
 - Graham, Green & Meyers 2025 (arXiv:2508.20999) separate two things called negative mass: one describes the expansion history, the other enhanced lensing. They need not have a common origin.
@@ -54,7 +54,7 @@ Qu et al. 2026 (arXiv:2607.24742) obtain Σm_ν < 0.152 eV with (w0, wa) margina
 
 - **Cosmology says "moderately" to "decisively", depending on the prior.** K = 10 (DESI DR2 + CMB + NuFIT 6.0; 6 with L-H, 8 with plik), Δχ² = 4.6; 46.5 with more data and another prior (arXiv:2407.18047); above 460 in ΛCDM and above 40 in extensions (Jimenez et al. 2026, arXiv:2606.18987), with a stated factor of about 10 from the prior measure alone; 3.5σ (ΛCDM) or 2.4σ (w0waCDM) in the EFT reanalysis (arXiv:2601.16165); "∼98% confidence" from P-ACT-LB (arXiv:2503.14454 [src]).
 - **Oscillations alone do not.** NuFIT 6.0 finds both orderings fit almost equally well; Δχ² = 6.1 for normal ordering only with the Super-Kamiokande atmospheric table (Esteban et al. 2024, arXiv:2410.05380).
-- **JUNO has started to.** With 207.2 live days and accelerator constraints on Δm²_31, normal ordering is favoured at ≥ 2.1σ, Bayes factor 10.18 (JUNO Collaboration 2026, arXiv:2609.37895 [src]).
+- **JUNO has started to.** With 207.2 live days and accelerator constraints on Δm²_31, normal ordering is favoured at ≥ 2.1σ, Bayes factor 10.18 (JUNO Collaboration 2026, arXiv:2609.37895 [src: abstract]).
 - **The caveats.** The cosmological preference exists only where the upper limit lies between 0.059 and 0.10 eV, which holds in ΛCDM and wCDM and fails in w0waCDM (limits 0.12–0.16 eV). ACT notes that it depends on the use of DESI BAO. A text may say that cosmology in ΛCDM and JUNO point the same way; it may not multiply the two Bayes factors without stating the model assumption.
 
 ### 1.5 Bayesian or frequentist?

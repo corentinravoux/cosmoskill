@@ -50,7 +50,7 @@ TE and EE, a sub-percent leakage matters.
 - SPT-3G D1 also introduced a sidelobe polarisation fraction β_pol per
   band, after noticing EE differences between 95 and 150 GHz on the same
   sky. The D1 data prefer β_pol ≠ 1 at 5σ within ΛCDM; without the
-  correction TT and EE disagreed mainly in the n_s–Ω_b h² plane [src]
+  correction TT and EE disagreed mainly in the n_s–Ω_b h² plane [src: Sect. I]
   (arXiv:2506.20707).
 - A direct measurement on 100 bright point sources gives
   β_pol = 0.89 ± 0.10, 1.08 ± 0.10 and 0.90 ± 0.22 at 95, 150 and 220 GHz,
@@ -58,20 +58,20 @@ TE and EE, a sub-percent leakage matters.
   inferred in the cosmological analysis by an effective 1.3σ. The authors
   list three explanations for the frequency-dependent residuals seen in
   the spectra: a statistical fluctuation, a need for better polarised beam
-  models, or a systematic other than beam depolarisation [src] (de Haan et
+  models, or a systematic other than beam depolarisation [src: abstract] (de Haan et
   al. 2026, arXiv:2602.06334).
 - Planck 2018: polarisation efficiencies of the HFI channels are corrected
   empirically, and the choice between map-based and spectrum-based
   corrections moves A_L from 1.180 ± 0.065 to 1.142 ± 0.066 and base
-  parameters by up to 0.5σ in ω_b [src] (Planck Collaboration 2018,
-  arXiv:1807.06209). The likelihood paper names the accuracy
-  of the polarisation-efficiency modelling as the main limitation and
-  estimates overall consistency between high-ℓ implementations at better
-  than 0.5σ [src] (arXiv:1907.12875).
+  parameters by up to 0.5σ in ω_b (Planck Collaboration 2018,
+  arXiv:1807.06209) [src: Sect. 2.2.1]. The likelihood paper names the
+  accuracy of the polarisation-efficiency modelling as the main limitation
+  and estimates overall consistency between high-ℓ implementations at
+  better than 0.5σ (arXiv:1907.12875) [src: abstract].
 - For degree-scale B-mode work beam systematics are the dominant
   instrumental systematic of the BICEP receivers; the programme's goal is
-  to hold each dominant systematic to 20% of σ(r) or less [src] (Vergès et
-  al. 2026, arXiv:2606.13942).
+  to hold each dominant systematic to 20% of σ(r) or less (Vergès et
+  al. 2026, arXiv:2606.13942) [src: abstract].
 
 **Referee expectation.** The leakage model, how it was measured, whether
 it was in place before unblinding, and the shift in parameters with and
@@ -106,11 +106,12 @@ multipoles.
 - ACT removes Fourier modes with |ℓ_x| < 90 and |ℓ_y| < 50 and corrects with
   a simulation-calibrated transfer matrix (800 simulations per array-band),
   neglecting ℓ–ℓ' coupling after checking that its correlation length is
-  below the bin width [src] (arXiv:2503.14452).
+  below the bin width [src: Sect. I] (arXiv:2503.14452).
 - SPT estimates the filter transfer function from full time-domain
   simulations; residual uncertainty from filtering artefacts and from
   inpainting of point-source holes shifts parameters by less than 0.1σ and
-  is left out of the likelihood [src] (arXiv:2506.20707).
+  is left out of the likelihood (arXiv:2506.20707) [src: Sect. V.2,
+  Sect. IV.1.1].
 - For the largest scales from the ground, CLASS reports that time-domain
   filtering in maximum-likelihood map-making is correctable with a
   pixel-space transfer matrix, leaving a power deficit below 3% from
@@ -119,40 +120,42 @@ multipoles.
 **Validation.** Null tests by scan direction, elevation, time and
 precipitable water vapour. In ACT's suite of about 2000 nulls the lowest
 PTE (0.05%) was in the elevation test, judged acceptable given the number
-of tests [src] (arXiv:2503.14452).
+of tests (arXiv:2503.14452) [src: Sect. IV.1, Fig. 5 caption].
 
 ## 5. Large-scale polarisation systematics and τ
 <!-- key: large-scale-polarisation-systematics-and-tau -->
 
-**Mechanism.** The reionisation bump lies at ℓ ≲ 20, where 1/f noise,
+**Mechanism.** The reionisation bump lies at the lowest multipoles, where 1/f noise,
 far-sidelobe pickup, ADC non-linearity and Galactic foregrounds are all
 largest and where only a few modes exist.
 
 **History of the mitigation.** SRoll2 fits higher-order terms of the HFI
 ADC non-linearity that the 2018 release treated to first order, bringing
-the residual "below the detector noise level" in simulations [src] (Delouis
-et al. 2019, arXiv:1901.11386); the associated τ analysis says the dipole-
-distortion systematic is brought below the noise and the τ uncertainty is
-reduced by about 40% relative to 2018 [src] (Pagano et al. 2019,
-arXiv:1908.09856). NPIPE lowers noise and systematics at essentially all
-scales and finds τ robust to data and sky cuts [src] (arXiv:2007.04997).
-Different likelihood constructions on the same SRoll2 maps agree and move
-τ by about 0.5σ, mostly through the joint treatment of temperature and
-polarisation [src] (de Belsunce et al. 2021, arXiv:2103.14378).
+the residual "below the detector noise level" in simulations (Delouis
+et al. 2019, arXiv:1901.11386) [src: abstract]; the associated τ analysis
+says the dipole-distortion systematic is brought below the noise and the τ
+uncertainty is reduced by about 40% relative to 2018 (Pagano et al. 2019,
+arXiv:1908.09856) [src: abstract]. NPIPE lowers noise and systematics at
+essentially all scales and finds τ robust to data and sky cuts
+(arXiv:2007.04997) [src: abstract]. Different likelihood constructions on
+the same SRoll2 maps agree and move τ by about 0.5σ, mostly through the
+joint treatment of temperature and polarisation (de Belsunce et al. 2021,
+arXiv:2103.14378) [src: abstract].
 
 **Independent checks.** CLASS × Planck gives 0.053 (+0.018/−0.019), the
-first ground-based attempt [src] (arXiv:2501.11904); its error is three
-times the Planck one (0.018/0.006) [der]. Reionisation-history data (Lyα forest, damping wings,
-dark pixels) combined with CMB data that exclude low-ℓ EE return τ near
-0.055–0.067 [src] (Kageura et al. 2026, arXiv:2601.09644; Montero-Camacho &
-Mao 2026, arXiv:2607.26373).
+first ground-based attempt (arXiv:2501.11904) [src: abstract].
+Reionisation-history data (Lyα forest, damping wings, dark pixels)
+combined with CMB data that exclude low-ℓ EE return τ = 0.0552
+(+0.0019/−0.0026 stat) (+0.0075/−0.0049 sys) (Kageura et al. 2026,
+arXiv:2601.09644) and 0.067 ± 0.011 (Montero-Camacho & Mao 2026,
+arXiv:2607.26373) [src: abstract].
 
 **Modelling dependence.** The standard analysis assumes a step-like
 (tanh) reionisation and slow-roll primordial spectra. Relaxing the
 reionisation model, or treating the low-ℓ temperature deficit as a
 physical feature, raises the allowed τ: the Planck 95% upper limit moves
-from 0.0696 to 0.075 [src] (Jhaveri et al. 2025, arXiv:2504.21813; 2026,
-arXiv:2606.20795).
+from 0.0696 to 0.075 (Jhaveri et al. 2025, arXiv:2504.21813; 2026,
+arXiv:2606.20795) [src: abstract].
 
 **Referee expectation.** Name the low-ℓ EE likelihood or τ prior; state
 that ACT, SPT and DESI+CMB results all inherit it; cite Sailer et al. 2025
@@ -169,8 +172,8 @@ and frequency dependent.
 parameters move by less than 0.5σ under all tested template changes and
 model extensions, while some foreground parameters move more; it also
 shows recovery of input cosmology from non-Gaussian, correlated sky
-simulations built independently of the fitted model [src] (Beringue et al.
-2025, arXiv:2506.06274). SPT-3G D1 finds that the inferred tSZ and kSZ
+simulations built independently of the fitted model (Beringue et al.
+2025, arXiv:2506.06274) [src: abstract]. SPT-3G D1 finds that the inferred tSZ and kSZ
 power depends on the tSZ–CIB correlation model and, less, on the assumed
 angular shapes [src] (Chaubal et al. 2026, arXiv:2601.20551). ACT DR6
 detects a tilt of the SZ spectrum relative to its baseline template [src]
@@ -179,7 +182,7 @@ detects a tilt of the SZ spectrum relative to its baseline template [src]
 **Mitigation.** Multi-frequency fit with templates (Dunkley et al. 2013,
 arXiv:1301.0776); point-source masking with flux cuts; restricting TT to
 ℓ ≤ 3000 (SPT) while using TE and EE to 4000, since polarised foregrounds
-are much weaker [src] (arXiv:2506.20707).
+are much weaker (arXiv:2506.20707) [src: Sect. IV.4].
 
 **Validation.** Frequency-split parameter consistency. SPT orders its
 frequency spectra to expose foreground mis-modelling and notes a trend in
@@ -193,12 +196,13 @@ hypothesis [src] (arXiv:2506.20707).
 signal everywhere on the sky at the levels now probed.
 
 **History.** The joint BICEP2/Keck–Planck analysis found strong evidence
-for dust and no significant tensor signal, r_0.05 < 0.12 [src]
-(arXiv:1502.00612). BK18 fits a seven-parameter foreground model without
-an external prior on the dust spectral index, with 220 GHz maps whose
-signal-to-noise on dust exceeds that of Planck 353 GHz [src]
-(arXiv:2110.00483). Planck 2018 measures mean polarised indices
-β_d = 1.55 ± 0.05 and β_s = −3.1 ± 0.1 [src] (arXiv:1807.06208).
+for dust and no significant tensor signal, r_0.05 < 0.12
+(arXiv:1502.00612) [src: abstract]. BK18 fits a seven-parameter foreground
+model without an external prior on the dust spectral index, with 220 GHz
+maps whose signal-to-noise on dust exceeds that of Planck 353 GHz
+(arXiv:2110.00483) [src: abstract]. Planck 2018 measures mean polarised
+indices β_d = 1.55 ± 0.05 and β_s = −3.1 ± 0.1 (arXiv:1807.06208) [src:
+abstract].
 
 **For TT/TE/EE.** Galactic dust is a minor term at high latitude and is
 fitted with an amplitude per spectrum type.
@@ -206,7 +210,7 @@ fitted with an amplitude per spectrum type.
 **Lensing B modes** are now a comparable limitation: the SPT-3G D1 lensing
 template built with a profile-hardened estimator and a CIB tracer keeps
 foreground-induced bias below 10% of the statistical error on the template
-power in simulations [src] (Nakato et al. 2026, arXiv:2608.06343).
+power in simulations (Nakato et al. 2026, arXiv:2608.06343) [src: abstract].
 
 Details of r analyses belong to `cosmo-inflation-primordial`.
 
@@ -221,8 +225,8 @@ through their trispectrum and their bispectrum with κ.
 subtraction plus a profile bias-hardened estimator reduce the bias on
 A_lens to below 0.2σ; a CIB-deprojected variant using Planck high-frequency
 data performs similarly and agrees on the data; other frequency-cleaned
-options either cost too much noise or are biased [src] (MacCrann et al.
-2023, arXiv:2304.05196). Methods: bias hardening (Namikawa et al. 2012,
+options either cost too much noise or are biased (MacCrann et al.
+2023, arXiv:2304.05196) [src: abstract]. Methods: bias hardening (Namikawa et al. 2012,
 arXiv:1209.0091), gradient cleaning (Madhavacheril & Hill 2018,
 arXiv:1802.08230), polarisation-only reconstruction (Ge et al. 2024,
 arXiv:2411.06000).
@@ -231,7 +235,8 @@ arXiv:2411.06000).
 nulls at map and band-power level; consistency between estimators with
 different foreground immunity (arXiv:2304.05196, arXiv:2608.06343).
 Planck 2018 restricts its likelihood to 8 ≤ L ≤ 400 because higher L shows
-some evidence of a curl-test failure [src] (arXiv:1807.06209).
+marginal evidence for null-test failures in the lensing curl and frequency
+consistency (arXiv:1807.06210) [src: Sect. 3.2].
 SPT-3G 2018 quotes its amplitude "excluding instrumental and astrophysical
 systematic uncertainties" and marginalises a foreground bias template in
 its parameter fits [src] (Pan et al. 2023, arXiv:2308.11608).
@@ -243,7 +248,8 @@ its parameter fits [src] (Pan et al. 2023, arXiv:2308.11608).
   on C_L^κκ at scales affected by non-linear evolution and feedback.
   Forecast biases for a CMB-S4-like survey reach 1.6σ on H₀ and 1.2σ on
   N_eff; removing TT above ℓ = 3000 or marginalising feedback parameters
-  mitigates them (forecast) [src] (McCarthy et al. 2021, arXiv:2103.05582).
+  mitigates them (forecast) (McCarthy et al. 2021, arXiv:2103.05582) [src:
+  abstract].
   ACT DR6 uses a dark-matter-only non-linear model without feedback [src]
   (Calabrese et al. 2025, arXiv:2503.14454). SPT detects non-linear
   evolution in the lensing spectrum at more than 3σ [src]
@@ -251,28 +257,29 @@ its parameter fits [src] (Pan et al. 2023, arXiv:2308.11608).
 - **Super-sample lensing.** Modes larger than the survey dilate the
   acoustic scale coherently. It should be included for surveys with less
   than 10% of the sky that measure the damping tail at ℓ ≳ 1500; omitted,
-  it produces apparently conflicting θ values [src] (Manzotti et al. 2014,
-  arXiv:1401.7992). SPT-3G D1 samples the mean convergence κ of the field
+  it produces apparently conflicting θ values (Manzotti et al. 2014,
+  arXiv:1401.7992) [src: abstract]. SPT-3G D1 samples the mean convergence κ of the field
   as a nuisance parameter [src] (arXiv:2506.20707). Tristram et al. 2023
   checked it is negligible for Planck's sky fraction [src]
   (arXiv:2309.10034).
 - **Aberration.** Our velocity (β = 0.00123) shifts multipoles on a partial
   sky by ΔL/L ≈ β⟨cos θ⟩; ignored, it biases θ* at the 0.01% level,
-  comparable to Planck's uncertainty [src] (Jeong et al. 2013,
-  arXiv:1309.2285). ACT corrects for it with 300 simulations [src]
-  (arXiv:2503.14452).
+  comparable to Planck's uncertainty (Jeong et al. 2013,
+  arXiv:1309.2285) [src: abstract]. ACT corrects for it with 300
+  simulations (arXiv:2503.14452) [src: Sect. III.3.3].
 
 ## 10. Covariance accuracy
 <!-- key: covariance-accuracy -->
 
 Analytic pseudo-C_ℓ covariances are approximate on small or inhomogeneous
 footprints. Earlier fast approximations are good to about 5% on the SPT-3G
-footprint for wide bins and an improved one to 1% [src] (Camphuis et al.
-2022, arXiv:2204.13721). The ACT DR6 prescription agrees with simulations
-to 3% (16% for the earlier prescription) and to 1% after a simulation-
-based correction [src] (Atkins et al. 2024, arXiv:2412.07068). Lensing
-analyses use simulation covariances with a Hartlap correction (792
-simulations for ACT DR6) [src] (Qu et al. 2023, arXiv:2304.05202).
+footprint for wide bins and an improved one to 1% (Camphuis et al.
+2022, arXiv:2204.13721) [src: abstract]. The ACT DR6 prescription agrees
+with simulations to 3% (16% for the earlier prescription) and to 1% after
+a simulation-based correction (Atkins et al. 2024, arXiv:2412.07068) [src:
+abstract]. Lensing analyses use simulation covariances with a Hartlap
+correction (792 simulations for ACT DR6) (Qu et al. 2023,
+arXiv:2304.05202) [src: Sect. V.11].
 
 ## 11. Theory-code accuracy
 <!-- key: theory-code-accuracy -->
@@ -291,7 +298,7 @@ BBN table (3.044 versus 3.046) must be made consistent [src]
 - ACT and Planck overlap on the sky. P-ACT avoids double counting by
   cutting Planck at ℓ < 1000 (TT) and ℓ < 600 (TE, EE) instead of modelling
   the cross-covariance; ACT estimates that a full treatment would improve
-  σ(N_eff) by less than 5% [src] (arXiv:2503.14452).
+  σ(N_eff) by less than 5% [src: Sect. IV.1] (arXiv:2503.14452).
 - SPT does not quote a consistency statistic between SPT+ACT and Planck
   for A_2pt because the ACT data are significantly correlated with Planck
   [src] (arXiv:2506.20707).
@@ -302,7 +309,7 @@ BBN table (3.044 versus 3.046) must be made consistent [src]
 - Shifts between a data set and its subset are expected to be larger than
   naive intuition; Planck's ℓ < 800 versus ℓ > 800 parameter shifts are
   exceeded in 15% of simulations (χ²) and a 2.2σ single-parameter
-  deviation occurs in 9% [src] (Planck Collaboration 2016,
+  deviation occurs in 9% [src: abstract] (Planck Collaboration 2016,
   arXiv:1608.02487).
 
 ## 13. Post-unblinding changes
@@ -335,6 +342,8 @@ the posterior mean in units of its σ, for the data combination named.
 ### ACT DR6 power spectra (Louis et al. 2025, arXiv:2503.14452)
 <!-- key: act-dr6-power-spectra-louis-et-al-2025-arxiv -->
 
+From arXiv:2503.14452:
+
 | Item | Prior or size | Place |
 |---|---|---|
 | Foreground model | 15 parameters, 14 free (9 TT, 2 TE, 2 EE, one radio index common to all); β_p ≡ β_c; wide non-negative uniform priors on amplitudes | [src: Sect. VII.2, Table 3] |
@@ -355,6 +364,8 @@ the posterior mean in units of its σ, for the data combination named.
 ### SPT-3G D1 T&E (Camphuis et al. 2025, arXiv:2506.20707)
 <!-- key: spt-3g-d1-t-e-camphuis-et-al-2025-arxiv-2506 -->
 
+From arXiv:2506.20707:
+
 | Item | Prior or size | Place |
 |---|---|---|
 | External temperature calibration (to Planck) | N(1.0, 0.0036); posterior 1.0002 ± 0.0036 | [src: App. D, Table 9] |
@@ -369,6 +380,8 @@ the posterior mean in units of its σ, for the data combination named.
 
 ### Planck 2018 Plik high-ℓ likelihood (Planck Collaboration 2019, arXiv:1907.12875)
 <!-- key: planck-2018-plik-high-ell-likelihood-planck -->
+
+From arXiv:1907.12875 unless a row names another paper:
 
 | Item | Prior or size | Place |
 |---|---|---|
@@ -387,6 +400,8 @@ the posterior mean in units of its σ, for the data combination named.
 ### Planck PR4 CamSpec (Rosenberg et al. 2022, arXiv:2205.10869)
 <!-- key: planck-pr4-camspec-rosenberg-et-al-2022-arxiv -->
 
+From arXiv:2205.10869:
+
 | Item | What was done | Place |
 |---|---|---|
 | TT calibration | factor per spectrum relative to 143×143 over 50 ≤ ℓ ≤ 500 (cosmic variance removed by differencing), read as beam-transfer errors | [src: Sect. 3.4.1, Eq. 2] |
@@ -397,7 +412,8 @@ the posterior mean in units of its σ, for the data combination named.
 <!-- key: act-dr6-lensing-qu-et-al-2023-arxiv-2304-05202 -->
 
 ΔA_lens over the baseline 40 ≤ L ≤ 763, MV estimator (polarisation-only
-MVPol in brackets); conservative models are upper limits.
+MVPol in brackets); conservative models are upper limits. Rows from
+arXiv:2304.05202 (Table 3, Sect. V) unless they name arXiv:2304.05196.
 
 | Item | Size | Place |
 |---|---|---|
@@ -415,6 +431,8 @@ MVPol in brackets); conservative models are upper limits.
 ### Planck 2018 lensing (Planck Collaboration 2018, arXiv:1807.06210)
 <!-- key: planck-2018-lensing-planck-collaboration-2018 -->
 
+From arXiv:1807.06210:
+
 | Item | What was done or found | Place |
 |---|---|---|
 | CIB bias, temperature-only | 2% negative bias at 217 GHz on 8 ≤ L ≤ 400 from the LSS bispectrum; an order of magnitude smaller after SMICA cleaning; sub-percent with tSZ-deprojected SMICA weights; curl negligible | [src: Sect. 4.5, Fig. 23] |
@@ -423,6 +441,8 @@ MVPol in brackets); conservative models are upper limits.
 
 ### SPT-3G D1 lensing (Omori et al. 2026, arXiv:2608.31136)
 <!-- key: spt-3g-d1-lensing-omori-et-al-2026-arxiv-2608 -->
+
+From arXiv:2608.31136:
 
 | Item | What was done or found | Place |
 |---|---|---|
@@ -435,6 +455,8 @@ MVPol in brackets); conservative models are upper limits.
 ### Combined CMB analyses (SPT+ACT, CMB-SPA, ACT+SPT+Planck lensing)
 <!-- key: combined-cmb-analyses-spt-act-cmb-spa-act-spt -->
 
+From arXiv:2506.20707 unless a row names another paper:
+
 | Item | What was done or found | Place |
 |---|---|---|
 | CMB-SPA composition | Planck PR3 Plik T&E + low-ℓ TT, Planck PR4 φφ, ACT DR6 (ACT-lite) with the P-ACT multipole cuts, SPT-3G D1 T&E + MUSE φφ; τ prior N(0.051, 0.006) | [src: arXiv:2506.20707, Sect. VII.1] |
@@ -444,6 +466,8 @@ MVPol in brackets); conservative models are upper limits.
 
 ### Large-scale polarisation and τ (Planck 2018 lowE, PR4 LoLLiPoP)
 <!-- key: large-scale-polarisation-and-tau-planck-2018 -->
+
+From arXiv:1807.06209 unless a row names another paper:
 
 | Item | What was done or found | Place |
 |---|---|---|
@@ -456,6 +480,8 @@ MVPol in brackets); conservative models are upper limits.
 
 ### Planck PR4 HiLLiPoP V4.2 (Tristram et al. 2023, arXiv:2309.10034)
 <!-- key: planck-pr4-hillipop-v4-2-tristram-et-al-2023 -->
+
+From arXiv:2309.10034:
 
 | Item | Prior or size | Place |
 |---|---|---|
@@ -500,7 +526,7 @@ MVPol in brackets); conservative models are upper limits.
 <!-- key: not-verified -->
 
 - The NPIPE low-ℓ polarisation transfer function: LoLLiPoP corrects for
-  it (Section 15) [src: arXiv:2309.10034, Sect. 3.1]; its size was not
+  it (Sect. 15 of this file) [src: arXiv:2309.10034, Sect. 3.1]; its size was not
   read.
 - The ACT DR6 beam paper was not read; ACT beam statements come from the
   power-spectrum paper. The SPT-3G D1 beam treatment (nine eigenmodes from
@@ -508,6 +534,6 @@ MVPol in brackets); conservative models are upper limits.
   the dedicated beam paper was not.
 - Atmospheric-noise characterisation at the South Pole (a 2026 BICEP/Keck
   paper exists) was not read.
-- Bandpass uncertainties: closed, priors now in Section 15 (ACT DR6). The
+- Bandpass uncertainties: closed, priors now in Sect. 15 of this file (ACT DR6). The
   impact of the bandpass shifts on cosmological parameters alone was not
   found stated separately.

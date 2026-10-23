@@ -129,7 +129,7 @@ secondary source) or [der] (derived here, derivation stated).
   arXiv:1712.01860 (z = 7.54); limits in section 1.3 of `results.md`.
 - A neutral IGM in front of a source imprints Lyα damping-wing absorption redward of the line
   centre. In stacked forest spectra the wing extends more than 1000 km/s beyond a Gunn–Peterson
-  trough when x_HI ≳ 0.1 [src: Spina et al. 2024, arXiv:2405.12273].
+  trough when x_HI ≳ 0.1 [src: Spina et al. 2024, arXiv:2405.12273]. [src: abstract]
 - Quasars. The three difficulties are the stochastic patchy topology, the degeneracy with the
   quasar lifetime, and the unknown intrinsic spectrum near Lyα [src: Davies et al. 2018,
   arXiv:1802.06066]. Current pipelines predict the intrinsic continuum from the red side: a
@@ -249,11 +249,11 @@ section 2.1 [sec for the numbers].
 - Two observables: the global (sky-averaged) spectrum T̄_b(ν), and the fluctuations, summarised
   by the dimensionless power spectrum Δ²₂₁(k) = k³ P(k)/2π² in mK².
 - Frequency coverage: 47–234 MHz corresponds to z = 5.1–29.3 [src: HERA Collaboration 2025,
-  arXiv:2511.21289].
+  arXiv:2511.21289]. [src: Sect. I]
 - Sequence of epochs. Lyα photons from the first stars couple T_s to the cold gas and produce
   absorption; X-ray heating then raises the gas above the CMB temperature; reionisation removes
   the signal. EDGES read its profile edges as the onset of Lyα coupling by 180 Myr and heating
-  less than 100 Myr later [src: Bowman et al. 2018, arXiv:1810.05912].
+  less than 100 Myr later [src: Bowman et al. 2018, arXiv:1810.05912]. [src: abstract]
 - The EDGES depth requires one of three things: gas colder than adiabatic cooling allows (for
   example dark-matter–baryon scattering), a radio background in excess of the CMB at high
   redshift, or an unmodelled systematic [src: arXiv:2511.21289, introduction; arXiv:1810.05912].
@@ -320,7 +320,7 @@ section 2.1 [sec for the numbers].
   arXiv:2111.05927].
 - Shot noise depends on the scatter of line luminosity at fixed halo mass. JWST-era burstiness
   raises it by a line-dependent factor (B_Hα ≃ 7; 2.5–3.5 for [CII], CO, UV at z ~ 6) [src:
-  Kovetz et al. 2026, arXiv:2605.13967].
+  Kovetz et al. 2026, arXiv:2605.13967]. [src: abstract]
 - Interlopers: one observed frequency contains several lines from different redshifts. For [CII]
   at reionisation redshifts the interlopers are lower-redshift CO lines, and the first CCAT
   measurement is expected to be of the combined [CII] + CO power (**forecast**) [src: Dev et al.
@@ -379,7 +379,7 @@ section 2.1 [sec for the numbers].
 | Method | Used by | Property to check | Citation |
 |---|---|---|---|
 | Delay filtering and avoidance | HERA, CHIME | which k_∥ are lost; leakage from mutual coupling and reflections | arXiv:2210.04912, arXiv:2309.04404 |
-| Gaussian process regression | LOFAR | recovers k = 0.07–0.3 h/cMpc in simulations and gains a factor ≳ 3 over avoidance; needs foreground coherence ≳ 3 MHz [src] | Mertens et al. 2017, arXiv:1711.10834 |
+| Gaussian process regression | LOFAR | recovers k = 0.07–0.3 h/cMpc in simulations and gains a factor ≳ 3 over avoidance; needs foreground coherence ≳ 3 MHz [src: abstract] | Mertens et al. 2017, arXiv:1711.10834 |
 | Machine-learned GPR covariance | LOFAR 2025 | signal suppression; a bias correction was needed on the 3C196 field [src] | arXiv:2503.05576, Ceccotti et al. 2025, arXiv:2504.18534 |
 | Blind source separation (PCA, FastICA) + transfer function | GBT, MeerKLASS | signal loss on all scales, corrected by mock injection [src] | Wolz et al. 2021, arXiv:2102.04946; Cunnington et al. 2023, arXiv:2302.07034 |
 | Wavelet-domain PCA | Tianlai | first use with spherical Fourier–Bessel power spectrum [src] | Deng et al. 2026, arXiv:2604.27465 |
@@ -450,7 +450,7 @@ All rows [src]. Notes.
 | EDGES analysis package | open-source end-to-end calibration, analysis and simulation package for global-signal experiments; raw EDGES data released with it | Murray et al. 2026, arXiv:2605.16643 | [src] |
 | EX-CITE on Sherwood | post-processing for ionising-background fluctuations in Lyα forest modelling | arXiv:2304.02038 | [src] |
 | THESAN, CoDa-III, Aton | radiation-hydrodynamic or radiative-transfer reionisation simulations used as comparison in Lyα and Lyα-emitter work | named in arXiv:2304.02038 and arXiv:2609.40363 | [sec] |
-| Lumina | 500 cMpc radiation-hydrodynamic box (AREPO, IllustrisTNG model, GPU M1 transport), through HI and He II reionisation to z = 3 | Zier et al. 2026, arXiv:2605.15310 | [src] |
+| Lumina | 500 cMpc radiation-hydrodynamic box (AREPO, IllustrisTNG model, GPU M1 transport), through HI and He II reionisation to z = 3 | Zier et al. 2026, arXiv:2605.15310 | [src: abstract] |
 | AMBER, Agora | reionisation and microwave-sky simulations behind the SPT kSZ duration limits and the trispectrum foreground estimate | named in arXiv:2601.20551 and arXiv:2403.02337 | [sec] |
 | UniverseMachine on Uchuu; Shark | empirical and semi-analytic galaxy models compared with JWST luminosity functions | Prada et al. 2026, arXiv:2604.18683; Lagos et al. 2026, arXiv:2609.03537 | [src] |
 

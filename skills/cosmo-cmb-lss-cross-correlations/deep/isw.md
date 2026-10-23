@@ -222,7 +222,7 @@ Sect. 3.3) [src].
 <!-- key: which-simulations-make-the-covariance -->
 
 - End-to-end FFP10 maps include noise, systematics and foregrounds processed
-  like the data, but only 300 exist (arXiv:2110.13959) [src].
+  like the data, but only 300 exist (arXiv:2110.13959) [src: Sect. 3.2].
 - Correlated Gaussian realisations scale to 2000 and can include the observed
   excess in C_ℓ^gg and Poisson noise; randomising only the CMB and crossing
   with the real tracer map underestimates the errors by ~10% and needs a

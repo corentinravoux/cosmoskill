@@ -414,7 +414,7 @@ supervoid is excluded by lensing (above); the local Eridanus void supplies
 - Akrami et al. 2014, Moss et al. 2011, Contreras et al. 2017 and 2018,
   Erickcek et al. 2009, Vielva et al. 2004, Cruz et al. 2005 and the
   look-elsewhere estimate of 1.85% for the Cold Spot ("[69]" of
-  arXiv:1510.07929): cited through the papers above, not read.
+  arXiv:1510.07929): cited through the papers above, not read. [src: Sect. 2.5]
 - The bodies of arXiv:0908.3988, arXiv:0901.1986, arXiv:1703.07894,
   arXiv:2112.07699, arXiv:2601.13830, arXiv:2607.28774 and arXiv:2606.24886:
   abstracts only.

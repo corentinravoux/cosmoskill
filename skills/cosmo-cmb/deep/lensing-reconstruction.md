@@ -202,12 +202,13 @@ estimator.
 
 ACT (arXiv:2304.05202):
 
-- Every null test is χ² = d_nullᵀ ℂ⁻¹ d_null (Eq. 41), with ℂ from 792
+- Every null test (arXiv:2304.05202) is χ² = d_nullᵀ ℂ⁻¹ d_null (Eq. 41), with ℂ from 792
   simulations run through the same analysis, so correlations between the
   differenced data sets are kept. There are 10 degrees of freedom in the
   baseline range and 13 in the extended range [src: Sect. VI.2].
 - The PTE distributions are uniform by a Kolmogorov–Smirnov test (10% in
-  the baseline range, 74% in the extended range) [src: Sect. VI.6].
+  the baseline range, 74% in the extended range) (arXiv:2304.05202) [src:
+  Sect. VI.6].
 - The tests are grouped by category (noise, scales, frequency,
   foregrounds, isotropy, instrument). The sum and the worst χ² in each
   group are compared with their simulated distributions at 2σ. Only the
@@ -217,19 +218,19 @@ ACT (arXiv:2304.05202):
 
 SPT-3G D1 (arXiv:2608.31136):
 
-- Simulation mean: over 498 realisations, the mean of the TT, PP and GMV
+- Simulation mean (arXiv:2608.31136): over 498 realisations, the mean of the TT, PP and GMV
   spectra must lie within 0.3σ of the input in every bin. Most bins agree
   to better than 0.1σ, a few reach about 0.15σ. The criterion is set at
   band-power level because a parameter-level threshold would depend on
   model and priors [src: Sect. V.1].
-- Unlensed simulations: 50 realisations with no deflection, debiased by N⁰
+- Unlensed simulations (arXiv:2608.31136): 50 realisations with no deflection, debiased by N⁰
   only, must give a mean spectrum with PTE > 0.05 against zero. The
   results are 0.06 (TT), 0.22 (PP), 0.16 (GMV) [src: Sect. V.2].
-- Curl: a non-zero curl spectrum appears in data and simulations alike.
+- Curl (arXiv:2608.31136): a non-zero curl spectrum appears in data and simulations alike.
   It is attributed to map-making and filtering, and the simulation mean is
   subtracted. The residual curl gives PTE 0.88, 0.61, 0.20 for TT, PP, GMV
   [src: Sect. V.3.1].
-- Against MUSE, on 100 matched simulations: band-power differences give
+- Against MUSE (arXiv:2608.31136), on 100 matched simulations: band-power differences give
   χ² = 19.8 for 15 degrees of freedom (PTE 0.18). At parameter level,
   A_recon has PTE 0.89 (PP) and 0.97 (GMV), and σ₈Ω_m^0.25 has PTE 0.43
   and 0.45 [src: Sect. VI.3.3, Eqs. 46–47].
@@ -240,8 +241,8 @@ SPT-3G D1 (arXiv:2608.31136):
 ### Combining T, E and B: HO02, SQE or GMV
 <!-- key: combining-t-e-and-b-ho02-sqe-or-gmv -->
 
-Maniyar et al. 2021 (arXiv:2101.12193) compare four quadratic estimators
-on the same noise models:
+Maniyar et al. 2021 compare four quadratic estimators on the same noise
+models (arXiv:2101.12193):
 
 | Estimator | Construction | Noise relative to the others | Used by |
 |---|---|---|---|
@@ -252,7 +253,7 @@ on the same noise models:
 
 - The GMV is the weak-signal first step of likelihood-based estimators
   [src: arXiv:2101.12193, Sect. VII].
-- For CMB-S4-like noise, the GMV gain over HO02 comes from the TT–TE–EE
+- For CMB-S4-like noise (arXiv:2101.12193), the GMV gain over HO02 comes from the TT–TE–EE
   block rather than from better EB filtering, and is largest at L ≲ 200
   [src: Sect. VI.2].
 - Cost: SQE keeps configuration-space separability and is cheaper on a cut
@@ -277,7 +278,7 @@ on the same noise models:
   extragalactic temperature foregrounds can be approximated by sources
   with identical profiles. For an SO-like experiment, hardening allows a
   higher ℓ_max and about 50% more statistical power than the standard QE
-  (**forecast**) [src].
+  (**forecast**) [src: abstract].
 - SPT stacks lensing maps on clusters, infrared sources and radio sources
   just below the masking threshold to compare the residuals of each
   variant. The baseline GMV shows an oscillatory ring around clusters,
@@ -309,7 +310,7 @@ on the same noise models:
   s^MAP_i is the gradient of the joint log posterior with respect to θ_i at
   the maximum a posteriori (f, φ), J is the covariance of s^MAP over
   simulations and H its derivative with respect to θ [src: Eqs. 5–9].
-- The result is asymptotically unbiased for any latent space. The loss of
+- The result (arXiv:2411.06000) is asymptotically unbiased for any latent space. The loss of
   optimality is bounded below 10% of the statistical error for a
   comparable lensing analysis [src: Sect. III.1, citing Millea & Seljak].
 - Unlike a QE, MUSE uses moments of all orders (EE, EB, BB, EEE, …) [src].
@@ -327,8 +328,9 @@ on the same noise models:
 - Hu & Okamoto 2002 (arXiv:astro-ph/0111606) find that polarisation starts
   to help at about 40 μK-arcmin with a 7′ beam, that it surpasses
   temperature at about 26 μK-arcmin and 4′, and that EB can give a
-  high-signal-to-noise mass map to L ~ 1000 [src].
-- SPT-3G D1 is polarisation-dominated at L ≲ 600 (L2). For ACT DR6 the
+  high-signal-to-noise mass map to L ~ 1000 [src: abstract].
+- SPT-3G D1 is polarisation-dominated at L ≲ 600 (arXiv:2608.31136)
+  [src: abstract]. For ACT DR6 the
   temperature-only foreground bias is larger than the MV one (L2,
   `systematics.md#act-dr6-lensing-qu-et-al-2023-arxiv-2304-05202`), so the
   weight of temperature in the estimator sets how much the foreground

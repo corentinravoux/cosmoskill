@@ -40,7 +40,7 @@ re-verify against the cited paper before a number enters a manuscript.
 - One eBOSS data vector gave σ_8 = 0.733 (PRIYA, arXiv:2309.03943) and 0.841 (EFT, arXiv:2405.13208); amplitude degenerate with mean flux (arXiv:2412.05372).
 - WDM limits: 1.9–5.7 keV, depending on thermal-history priors and k_max (arXiv:1912.09397, arXiv:2309.04533).
 - DESI P1D: FFT and QMLE measured; cosmology uses QMLE (arXiv:2505.09493, arXiv:2505.07974).
-- Tomography regimes: 2–4 h⁻¹Mpc over ≲ 2 deg² with galaxies (CLAMATO, LATIS), 13 h⁻¹Mpc over 220 deg² with quasars (arXiv:2004.01448).
+- Tomography regimes: 2–4 h⁻¹Mpc over ≲ 2 deg² with galaxies (CLAMATO, LATIS), 13 h⁻¹Mpc over 220 deg² with quasars (arXiv:2004.01448, abstract).
 
 ## Systematics a referee checks
 <!-- key: systematics-a-referee-checks -->
@@ -92,8 +92,9 @@ Sizes, in thousands of tokens: L1 3k; open 7k; methods 14k; results 13k; surveys
   (`--abstract`, `--outline`, `--section`, `--grep`), or with any tool that
   gives the paper. If it cannot be read, say that L4 was required and not
   done.
-- A formula of the skill may be applied to the asker's numbers; label the
-  result as derived.
+- Quote a number only with its paper and the place it was read, as the
+  skill gives them; the skill holds no number of its own making. A formula
+  may be applied to the asker's numbers; label the result as derived.
 
 Local layers: if a directory `.cosmoskill/` exists in the working directory,
 in one of its parents, or in the home directory, or if `COSMOSKILL_HOME` is

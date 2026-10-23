@@ -131,7 +131,8 @@ fields [src: Sect. 3.3].
   freedom (Wilks) [src: Eqs. 22–23].
 - **Bias in voids.** The void–galaxy correlation measured in reconstructed
   space around the same voids, averaged with the lensing-weighted void-size
-  distribution, is fitted to ΔΣ with one free b_Vg [src: Sect. 3.4.2].
+  distribution, is fitted to ΔΣ with one free b_Vg [src: arXiv:2507.13450,
+  Sect. 3.4.2].
   Result: b_Vg/b_g = 1.36 ± 0.27 against the large-scale bias of the same
   samples from an external analysis; consistent with the up-to-25% excess
   expected from the void-finding selection effect, not significant [src:
@@ -307,7 +308,9 @@ Sect. 4.4].
   read; not read, no identifiers recorded.
 - A DES Y3 trough-and-peak bias analysis and a CSST void–lensing forecast
   found in the date-sorted search (2025-06-01 onward): titles only, not used.
-- The radial range of the 14 UNIONS bins and the UNIONS–BOSS overlap area:
-  not in the sections read.
-- L2 quotes a void galaxy bias of 2.45 ± 0.36 from arXiv:2507.13450; this
-  dossier read the ratio b_Vg/b_g = 1.36 ± 0.27 only.
+- The radial range of the 14 UNIONS bins (arXiv:2507.13450, Sect. 3.2) and
+  the UNIONS–BOSS overlap area: not in the sections read.
+- arXiv:2507.13450 gives both a galaxy bias relative to underdense
+  environments, b_g = 2.45 ± 0.36 (abstract, Sect. 6), quoted in L2, and the
+  ratio b_Vg/b_g = 1.36 ± 0.27 (Sect. 4.3) used here; how the paper relates
+  the two was not read.

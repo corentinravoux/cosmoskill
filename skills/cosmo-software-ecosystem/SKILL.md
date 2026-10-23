@@ -31,7 +31,7 @@ CLASS 3.2.3, healpy 1.19.0); re-read them for the version in use.
 <!-- key: what-an-expert-holds-in-mind -->
 
 - CAMB and CLASS agree at 0.01 % only for concordance ΛCDM, a shared recombination history and boosted precision (arXiv:1104.2934).
-- CAMB v2 (arXiv:2607.14854) changed the defaults: unboosted runs now target 10⁻³; v1.6.6 defaults are off by 1.5 % in TT at ℓ = 3000.
+- CAMB v2 (arXiv:2607.14854, Sect. IX) changed the defaults: unboosted runs now target 10⁻³; v1.6.6 defaults are off by 1.5 % in TT at ℓ = 3000.
 - pyccl 3.3.6 still requests CAMB's v1 accuracy behaviour, so pyccl and a direct CAMB v2 call differ.
 - Units split in two camps: classy and pyccl use Mpc⁻¹ and Mpc³; cosmoprimo, flip and picca use h-units; CAMB mixes both in one object.
 - Default neutrinos differ: CAMB one massive eigenstate of 0.06 eV; pyccl massless, split "normal" when set; cosmoprimo and CLASS none. N_eff is 3.044 (arXiv:2012.02726) except in stored cosmologies such as astropy `Planck18` (3.046).
@@ -104,8 +104,9 @@ Sizes, in thousands of tokens: L1 3k; open 5k; methods 14k; results 7k; surveys 
   (`--abstract`, `--outline`, `--section`, `--grep`), or with any tool that
   gives the paper. If it cannot be read, say that L4 was required and not
   done.
-- A formula of the skill may be applied to the asker's numbers; label the
-  result as derived.
+- Quote a number only with its paper and the place it was read, as the
+  skill gives them; the skill holds no number of its own making. A formula
+  may be applied to the asker's numbers; label the result as derived.
 
 Local layers: if a directory `.cosmoskill/` exists in the working directory,
 in one of its parents, or in the home directory, or if `COSMOSKILL_HOME` is

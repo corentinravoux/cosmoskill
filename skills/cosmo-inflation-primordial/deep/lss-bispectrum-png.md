@@ -105,13 +105,13 @@ This answers the open item in `results.md#not-verified`: the DESI DR1
 f_NL^local = −0.1 ± 7.4 assumes p = 0.55 / 1 / 1.6 by sample.
 
 Other groups on the same choice, power spectrum only:
-- **Barreira 2022** (arXiv:2205.05673) [src]: on the BOSS DR12 power
+- **Barreira 2022** (arXiv:2205.05673) [src: abstract]: on the BOSS DR12 power
   spectrum, fixed b_φ(b_1) relations change σ(f_NL) by up to an order of
   magnitude, from 16 ± 16 to 230 ± 226 on the same data; marginalising b_φ
   with wide priors "is not conservative" and biases the result through
   projection effects; only f_NL b_φ is measured (≠ 0 at 1.6σ).
 - **DESI DR1 collaboration** (Chaussidon et al. 2024, arXiv:2411.17623)
-  [src]: universality for LRGs and a recent-merger model for QSOs gives
+  [src: abstract]: universality for LRGs and a recent-merger model for QSOs gives
   −3.6 +9.0/−9.1; universality for QSOs too gives 3.5 +10.7/−7.4.
 - **Simulation priors on p.** IllustrisTNG DESI-like quasars give
   p̄ ≃ 1.4 with weak redshift dependence, robust across CAMELS, and

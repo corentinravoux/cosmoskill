@@ -503,7 +503,7 @@ belong to `cosmo-statistics-inference`.
   Hubble time [src].
 - Significance: DESI and the supernova teams quote `Delta chi2_MAP` converted
   to σ; Unite quotes both MAP (3.3σ) and maximum-likelihood (3.1σ) values
-  (arXiv:2609.05053) [src]. Bayes factors are quoted as `ln B`, as odds, or in
+  (arXiv:2609.05053) [src: abstract]. Bayes factors are quoted as `ln B`, as odds, or in
   words on a Jeffreys scale whose thresholds vary between authors.
 - Sign of `Delta DIC` and `ln B`: DESI defines `Delta DIC = DIC(w0wa) −
   DIC(Λ)`, negative favouring `w0wa`, and `ln B = ln Z(w0wa) − ln Z(Λ)`,

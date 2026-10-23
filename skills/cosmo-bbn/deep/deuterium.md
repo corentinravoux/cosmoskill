@@ -27,13 +27,16 @@ The "Precision Sample" criteria of Cooke et al. (2014, arXiv:1308.3240)
 [src: Sect. II.2.1] are the reference that later papers test against:
 
 1. H I Lyα with Lorentzian damping wings, log N(H I)/cm⁻² ≥ 19, so that
-   the wings fix the total H I column "independently of the cloud model".
+   the wings fix the total H I column "independently of the cloud model"
+   (arXiv:1308.3240) [src: Sect. II.2.1].
 2. Lyα wings not strongly blended: the edges of neighbouring strong H I
-   troughs at least 500 km s⁻¹ away, and modelled simultaneously.
+   troughs at least 500 km s⁻¹ away, and modelled simultaneously
+   (arXiv:1308.3240) [src: Sect. II.2.1].
 3. At least two resolved, apparently unblended, optically thin D I
    transitions, so that N(D I) does not depend on the cloud model.
 4. Echelle data with R ≥ 30 000 (v_FWHM ≤ 10 km s⁻¹) and S/N ≳ 10 per
-   ~3 km s⁻¹ pixel at Lyα and at the weakest D I line used.
+   ~3 km s⁻¹ pixel at Lyα and at the weakest D I line used
+   (arXiv:1308.3240) [src: Sect. II.2.1].
 5. Several unblended metal lines of one species (ideally O I, Si II) when
    only one optically thin D I line exists, to fix the velocity structure
    and the partly ionised gas.
@@ -162,9 +165,9 @@ Three practices:
    wing only, UVES or HIRES alone; the posterior chains of all variants are
    pooled and the 0.014 dex total error read from the pooled posterior,
    keeping "neutrality among these alternatives" [src: arXiv:2401.12797,
-   Sect. 3.3]. This 0.014 dex is the quadrature sum of the 0.008 dex
-   statistical and 0.012 dex systematic terms quoted in L2
-   [der: √(0.008² + 0.012²) = 0.0144].
+   Sect. 3.3]. The abstract states that the 0.014 dex accounts for
+   statistical and systematic uncertainties of 0.008 dex and 0.012 dex
+   (arXiv:2401.12797) [src: abstract].
 3. **Half the difference between two blending models**, added in
    quadrature: σ_sys(log D/H) = 0.08 for Q1009+2956, giving
    log(D/H) = −4.606 ± 0.066 [src: arXiv:1706.09512, Sect. 3.9]. The number
@@ -191,7 +194,7 @@ Three practices:
   (2.545 ± 0.025) × 10⁻⁵ [src: arXiv:1706.09512, Sect. 4.2, Eq. 2]. Stated
   reason: to avoid subjective decisions on which values are "good"
   [src: same].
-- **All literature values** (Kislitsyn et al. 2024). Weighted mean of all
+- **All literature values** (Kislitsyn et al. 2024, arXiv:2401.12797). Weighted mean of all
   17 entries of their Table 4, (2.533 ± 0.024) × 10⁻⁵ (Eq. 2), "conservative
   ... in the sense that it incorporates all previous determinations"; the
   nine systems meeting the Cooke et al. 2014 criteria give

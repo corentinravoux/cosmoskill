@@ -154,7 +154,7 @@ fits and through the training of the light-curve model on the same data.
 - Sensitivity: per 25 mmag of inter-survey zero-point error, `Omega_m` and
   `w` in SH0ES + Pantheon+ move by 0.04 and −0.17, while `H0` moves by no
   more than 0.2 km/s/Mpc because calibrator and Hubble-flow SNe share
-  surveys `[src]` (Brownsberger et al. 2023, arXiv:2110.03486).
+  surveys `[src: abstract]` (Brownsberger et al. 2023, arXiv:2110.03486).
 - Dovekie: small calibration changes are amplified by up to a factor 6 in
   inferred distances through the colour–luminosity relation and SALT
   training; the recalibration gives `d mu/dz = 0.025` and
@@ -164,7 +164,7 @@ fits and through the training of the light-curve model on the same data.
   10–12 mmag for CfA3, CfA4, CSP `[src: Table 3]`; mean distance changes per
   survey from −0.035 (SNLS) to +0.030 mag (CfA4) `[src: Table 7]`.
 - Realised effect: DES-SN5YR → DES-Dovekie, `Delta Omega_m = -0.022` and
-  4.2 → 3.2 sigma for evolving dark energy with DESI DR2 and CMB `[src]`
+  4.2 → 3.2 sigma for evolving dark energy with DESI DR2 and CMB `[src: abstract]`
   (arXiv:2511.07517).
 - New anchors: ATLAS forced photometry starts ~40 mmag from DES Y6 stars and
   needs filter shifts at the ~30 mmag level, reaching 5–10 mmag after
@@ -183,7 +183,7 @@ together.
 **Validation.** Tertiary-star comparisons between surveys; distance
 comparison of SNe observed by several surveys (151 such SNe in Pantheon+,
 arXiv:2112.03863); per-survey Hubble-residual offsets; replacing the anchor
-by a same-instrument sample (Foundation, DEBASS).
+by a same-instrument sample (Foundation, DEBASS). [src: abstract]
 
 **Cite.** arXiv:1508.05361, arXiv:2112.03864, arXiv:2506.05471; Stage-IV
 requirements: Anumba et al. 2026 (arXiv:2604.19746).
@@ -268,7 +268,7 @@ models (BS21, age model) as systematics.
 
 **Validation.** Hubble-residual scatter and mean versus colour; fitted
 `beta`; `chi2` of each variant (Unite: one dust realisation is disfavoured
-by `Delta chi2 = 49.2`, the age model by 23.6 `[src]`, arXiv:2609.05053).
+by `Delta chi2 = 49.2`, the age model by 23.6 `[src: Sect. 6]`, arXiv:2609.05053).
 
 **Cite.** arXiv:1209.2482, arXiv:2004.10206, arXiv:2112.04456.
 

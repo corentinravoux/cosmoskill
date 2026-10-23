@@ -46,14 +46,14 @@ re-verify against the cited paper before a number enters a manuscript.
 - Stacked posteriors are a biased n(z); posteriors under implicit priors
   cannot be used for inference (arXiv:2007.12178).
 - DES Y6 source σ⟨z⟩ = 0.012, 0.008, 0.009, 0.024, dominated by missing
-  faint spectra (arXiv:2510.23566).
+  faint spectra (arXiv:2510.23566, Sect. 4.2).
 - One wrong spectroscopic redshift per thousand already strains LSST's
   width tolerance; current Q = 3 failure rates are 0.75–1%
   (arXiv:2206.13633, Sect. 4.2.2).
 - Spectroscopic selection biases direct calibration by Δz = 0.005–0.05
-  (arXiv:2003.10454).
+  (arXiv:2003.10454, abstract).
 - Two population models change KiDS-1000 edge-bin means by Δz ~ 0.05–0.1
-  (arXiv:2602.03935): forward modelling moves the risk to the prior.
+  (arXiv:2602.03935, abstract): forward modelling moves the risk to the prior.
 - DESI calibrates DES, HSC and KiDS together to σ_z̄ ~ 0.01, disagreeing with
   the KiDS-1000 means (arXiv:2510.25419).
 - Euclid mocks: binning on SOM-cell spec-z meets the requirement in no bin,
@@ -125,8 +125,9 @@ Sizes, in thousands of tokens: L1 3k; open 4k; methods 10k; results 6k; surveys 
   (`--abstract`, `--outline`, `--section`, `--grep`), or with any tool that
   gives the paper. If it cannot be read, say that L4 was required and not
   done.
-- A formula of the skill may be applied to the asker's numbers; label the
-  result as derived.
+- Quote a number only with its paper and the place it was read, as the
+  skill gives them; the skill holds no number of its own making. A formula
+  may be applied to the asker's numbers; label the result as derived.
 
 Local layers: if a directory `.cosmoskill/` exists in the working directory,
 in one of its parents, or in the home directory, or if `COSMOSKILL_HOME` is

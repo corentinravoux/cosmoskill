@@ -69,7 +69,7 @@ noise and no foregrounds. Their reasons: large-scale temperature is
 similar p-values; and noise-free maps are what makes 10⁸ realisations
 possible. Residual foregrounds are not simulated because four
 component-separation methods are unlikely to "leave behind the identical
-anomalies".
+anomalies". [src: abstract]
 
 ### Step 2. Prepare the data like the simulations
 <!-- key: step-2-prepare-the-data-like-the-simulations -->

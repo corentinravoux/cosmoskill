@@ -143,7 +143,7 @@ the BAO constraints stable to data vector, modelling choices and the
 Gaussian-likelihood assumption (arXiv:2503.14742).
 
 **Lyα.** DESI DR2 added a theoretical systematic to Lyα BAO for the first
-time: ±0.026 on D_H/r_d and ±0.12 on D_M/r_d [src] (DESI Collaboration 2025,
+time: ±0.026 on D_H/r_d and ±0.12 on D_M/r_d [src: abstract] (DESI Collaboration 2025,
 arXiv:2503.14739).
 
 ## 2. Galaxy–halo connection

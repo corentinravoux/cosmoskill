@@ -53,19 +53,20 @@ C = S(C_ℓ) + [N + α² N_sync + β² N_dust]/(1 − α − β)² (Eq. 6), wher
 the signal covariance and N the noise covariance of each map [src:
 Sect. 2.2.1].
 
-- In Eq. 5 α multiplies the 30 GHz (synchrotron) map and β the 353 GHz
+- In Eq. 5 of arXiv:1907.12875 α multiplies the 30 GHz (synchrotron) map and β the 353 GHz
   (dust) map. Table 2 is consistent with this: an α is fitted only at
   100 GHz. The sentence after Eq. 5 names them in the opposite order
   [src: Sect. 2.2.1, Table 2].
 - Planck fits synchrotron only at 100 GHz. Stated reason: to avoid
-  auto-correlating residual 30 GHz systematics [src].
+  auto-correlating residual 30 GHz systematics (arXiv:1907.12875) [src: Sect. 2.2.1].
 - The cleaning mask keeps f_sky = 0.70; spectrum masks go down to 0.30
-  [src].
+  (arXiv:1907.12875) [src: Sect. 2.2.1].
 - SRoll2 cleans with its own 353 GHz map for dust, and WMAP K (for
   100 GHz) and Ka (for 143 GHz) for synchrotron [src: arXiv:1908.09856,
   Sect. 3, Table 1].
   - Its masks threshold the sum of dust intensity scaled to 143 GHz and
-    synchrotron intensity scaled to 100 GHz, smoothed at 7.5°.
+    synchrotron intensity scaled to 100 GHz, smoothed at 7.5° (arXiv:1908.09856)
+    [src: Sect. 3].
   - The masks are binary, without apodisation [src: Sect. 3, Fig. 6
     caption].
 - CLASS adds the template uncertainties to the covariance:
@@ -94,7 +95,7 @@ likelihood "is not accurate enough, especially at large angular scales"
 - Planck 2018: quasi-QML cross-spectrum of cleaned 100 × 143 GHz maps on
   the 50% mask [src: arXiv:1907.12875, Sect. 2.2.2].
   - The temperature map is Commander, smoothed to 440′ with 2 μK
-    regularisation noise.
+    regularisation noise (arXiv:1907.12875) [src: Sect. 2.2.2].
   - The signal covariance assumes an earlier Planck best fit.
   - The noise covariances are FFP8 matrices, which miss systematics.
     Stated reason this is acceptable: it costs variance, not bias [src].
@@ -118,7 +119,7 @@ likelihood "is not accurate enough, especially at large angular scales"
   frequency- and mask-dependent factor, which must be squared for a power
   spectrum [src].
 - About 64% of the EE quadrupole and 73% of the octupole are missing,
-  about 30% at ℓ = 4–5 and 20% at ℓ = 6 [src].
+  about 30% at ℓ = 4–5 and 20% at ℓ = 6 (arXiv:2007.04997) [src: Sect. 4.3].
 - Stated reason for accepting it: a compromise between noisy but unbiased
   large-scale polarisation and filtering out the modes most compromised
   by calibration uncertainty under the Planck scan [src].
@@ -135,18 +136,19 @@ likelihood "is not accurate enough, especially at large angular scales"
 **Simulation-based, multipole by multipole** (Planck 2018 "SimAll",
 arXiv:1907.12875, Sect. 2.2.3):
 
-1. Clean 100 and 143 GHz, compute the data cross-QML spectrum.
+1. Clean 100 and 143 GHz, compute the data cross-QML spectrum (arXiv:1907.12875,
+   Sect. 2.2.2).
 2. Clean 300 FFP10 end-to-end simulations the same way and subtract the
    known input CMB, giving 300 "pure" noise + systematics + foreground-
-   residual maps.
+   residual maps (arXiv:1907.12875, Sect. 2.2.3).
 3. Draw 1000 parameter sets uniformly in 10⁹A_s = 0.6–3.8, τ = 0–0.14,
    r = 0–1 (Eq. 9), which spans 0–0.30 μK² in D_ℓ^EE and 0–0.20 μK² in
-   D_ℓ^BB (Eq. 10).
+   D_ℓ^BB (Eq. 10) (arXiv:1907.12875).
 4. Pair 300 Gaussian CMB maps for each set with the 300 noise maps:
-   300 000 samples per multipole.
+   300 000 samples per multipole (arXiv:1907.12875, Sect. 2.2.3).
 5. Interpolate the log histogram of C_ℓ^QML for each theory with a
    low-order polynomial f_ℓ^i (Eq. 11), and evaluate it at the data.
-6. Interpolate the 1000 pairs in C_ℓ (g_ℓ), and sum:
+6. Interpolate the 1000 pairs in C_ℓ (g_ℓ; arXiv:1907.12875), and sum:
    log ℒ ≈ Σ_{ℓ=2}^{29} g_ℓ(C_ℓ^data, C_ℓ) + const (Eq. 12).
 
 - ℓ-to-ℓ correlations are ignored: ℒ = Π_ℓ ℒ_ℓ (Eq. 8) [src].
@@ -163,24 +165,24 @@ arXiv:1907.12875, Sect. 2.2.3):
 **Simulation-based, on a τ grid** (SRoll2, arXiv:1908.09856, Sect. 4):
 
 - 101 spectra for τ in [0, 0.1], with A_s varied so that
-  10⁹A_s e^{−2τ} = 1.875 and other parameters fixed.
+  10⁹A_s e^{−2τ} = 1.875 and other parameters fixed (arXiv:1908.09856, Sect. 4).
 - 500 signal maps per grid point are combined with the 500 noise,
-  systematics and foreground-residual simulations.
+  systematics and foreground-residual simulations (arXiv:1908.09856, Sect. 4).
 - Histograms are built ℓ by ℓ and τ by τ, and ln 𝒫 is smoothed by
   piecewise polynomials f_ℓ.
 - The probability is 𝒫(data | τ) = exp Σ_{ℓ=2}^{29} f_ℓ (Eq. 2), assuming
-  negligible correlation between multipoles [src].
+  negligible correlation between multipoles (arXiv:1908.09856) [src: Sect. 4].
 
 CLASS follows the same logic with smoother tools (arXiv:2501.11904,
 Sect. V.4, Eq. 11):
 
-- 600 (τ, A_s) pairs, τ uniform in 0–0.3, with
+- 600 (τ, A_s) pairs (arXiv:2501.11904, Sect. V.4), τ uniform in 0–0.3, with
   A_s e^{−2τ} = 1.884 × 10⁻⁹. This value differs from SRoll2's 1.875
   because each is taken from the Planck best fit the paper cites.
 - 500 realisations per pair; a kernel density estimate per multipole
-  gives the likelihood at the data.
+  gives the likelihood at the data (arXiv:2501.11904, Sect. V.4).
 - Gaussian-process interpolation in τ, then emcee with a Gaussian prior on
-  10⁹A_s e^{−2τ} [src].
+  10⁹A_s e^{−2τ} (arXiv:2501.11904) [src: Sect. V.4].
 
 **Approximate analytic likelihood** (LoLLiPoP): the Hamimeche–Lewis
 change of variables adapted to cross-spectra (L2). Its covariance comes
@@ -215,19 +217,19 @@ arXiv:2103.14378, Sects. 4.2–4.3):
   realisation. Likelihoods built from two halves of the simulations agree
   [src: arXiv:1907.12875, Sect. 2.2.4].
 - Data–simulation PTEs ℓ by ℓ (Table 3): TE has outliers, e.g. 0.5% at
-  ℓ = 19 [src: Sect. 2.2.2].
+  ℓ = 19 (arXiv:1907.12875) [src: Sect. 2.2.2].
 - The data scatter is smaller than the simulations predict. This is
   attributed to overestimated ADC non-linearity variance in the
   simulations [src].
 - SRoll2 tests [src: arXiv:1908.09856, Sect. 4]:
-  - masks of 20–60% (see L2);
+  - masks of 20–60% (arXiv:1908.09856, Sect. 4);
   - ℓ_min up to 5, stable;
   - dropping one multipole: removing ℓ = 5 shifts τ by about 0.5σ,
-    consistent with a 1.2σ fluctuation in simulations;
-  - synchrotron tracers WMAP K, Ka or LFI 30 GHz agree;
+    consistent with a 1.2σ fluctuation in simulations (arXiv:1908.09856, Sect. 4);
+  - synchrotron tracers WMAP K, Ka or LFI 30 GHz agree (arXiv:1908.09856, Sect. 4);
   - 217 GHz instead of 353 GHz as dust tracer for 100 GHz agrees, with
-    slightly larger errors;
-  - TE alone gives τ = 0.057 (+0.012/−0.013).
+    slightly larger errors (arXiv:1908.09856, Sect. 4);
+  - TE alone gives τ = 0.057 (+0.012/−0.013) (arXiv:1908.09856, Sect. 4).
 - de Belsunce et al. test their three likelihoods on 100 SRoll2
   end-to-end simulations kept out of the noise estimation, with inputs
   τ = 0.05, 0.06, 0.07. None is significantly biased (table in Numbers)
@@ -246,7 +248,7 @@ arXiv:2103.14378, Sects. 4.2–4.3):
   give τ higher than the 100 × 143 full-mission baseline by 0.8–2σ, for
   every likelihood [src: arXiv:2103.14378, Sect. 7].
 - They read this as correlated systematics within a band that bias τ high
-  by about 0.01 [src].
+  by about 0.01 (arXiv:2103.14378) [src: Sect. 7].
 - Hence the stated rule in Planck: cross-frequency spectra only [src:
   arXiv:1907.12875, Sect. 2.2.6].
 
@@ -326,14 +328,15 @@ what it implies (details and the case for each side in
   lensing give τ = 0.090 ± 0.012 in ΛCDM, and the evolving-dark-energy
   preference drops from about 3σ to about 1.5σ [src: arXiv:2504.16932].
   The result is a statement about what the other data prefer, not a τ
-  measurement.
+  measurement. [src: abstract]
 - **A ground-based prior.** CLASS × Planck, 0.053 (+0.018/−0.019) [src:
   arXiv:2501.11904, Sect. V.4]; independent of the Planck low-ℓ
-  systematics in instrument and modulation, but its width does not exclude
-  0.09 on its own (`open-questions.md`, about 2σ [der]).
-- **A prior from reionisation astrophysics.** τ = 0.0552 with errors of a
-  few 10⁻³ (arXiv:2601.09644) or 0.067 ± 0.011 (arXiv:2607.26373) [src, as
-  quoted in `open-questions.md`]; these import a reionisation model, which
+  systematics in instrument and modulation, but its width alone cannot
+  decide between the Planck values and the CMB + DESI value
+  (`open-questions.md`).
+- **A prior from reionisation astrophysics.** τ = 0.0552
+  (+0.0019/−0.0026 stat) (+0.0075/−0.0049 sys) (arXiv:2601.09644) or
+  0.067 ± 0.011 (arXiv:2607.26373) [src: abstract]; these import a reionisation model, which
   `cosmo-reionization-21cm` covers.
 
 State which choice was made, and show the result under a second one when
@@ -349,7 +352,7 @@ the conclusion depends on τ (dark-energy preference, Σm_ν, n_s).
 | Template scalings (×10²) | α = 0.95 ± 0.07 (100, WMAP K), 1.63 ± 0.21 (143, Ka); β = 1.86 ± 0.015 (100), 0.0394 ± 0.014 (143) as printed | SRoll2 | arXiv:1908.09856 | Table 1 |
 | Cleaning mask | f_sky = 0.70 | Planck 2018; SRoll2 | arXiv:1907.12875; arXiv:1908.09856 | Sect. 2.2.1; Sect. 3 |
 | Simulation sets | 300 FFP10 (2018); 500 (SRoll2); 500 (CLASS) | — | arXiv:1907.12875; arXiv:1908.09856; arXiv:2501.11904 | Sects. 2.2.1; 3; V.4 |
-| Theory draws | 1000 sets (SimAll); 101 τ values (SRoll2); 600 pairs (CLASS) | — | same | Sect. 2.2.3; Sect. 4; Sect. V.4 |
+| Theory draws | 1000 sets (SimAll); 101 τ values (SRoll2); 600 pairs (CLASS) | — | arXiv:1907.12875; arXiv:1908.09856; arXiv:2501.11904 | Sect. 2.2.3; Sect. 4; Sect. V.4 |
 | MC recovery | 0.05032 ± 0.00048 (input 0.05); 0.05968 ± 0.00044 (input 0.06) | Planck 2018 | arXiv:1907.12875 | Sect. 2.2.4 |
 | NPIPE EE suppression | 64% (ℓ = 2), 73% (ℓ = 3), about 30% (ℓ = 4–5), about 20% (ℓ = 6) | Planck PR4 | arXiv:2007.04997 | Sect. 4.3 |
 | Likelihood tests, input 0.060 | τ_ML 0.0603 (SimLow), 0.0600 (momento), 0.0597 (pydelfi); mean σ 0.0063, 0.0057, 0.0060 | SRoll2 simulations | arXiv:2103.14378 | Table 2 |
@@ -371,7 +374,7 @@ the conclusion depends on τ (dark-energy preference, Σm_ν, n_s).
   arXiv:1907.12875, Sects. 2.2.2, 2.2.6]. Test: data–simulation PTEs per
   multipole.
 - **Too few simulations at low signal.** With 300 simulations, a τ-based
-  scheme can be inaccurate when low τ is explored [src: Sect. 2.2.3].
+  scheme can be inaccurate when low τ is explored (arXiv:1907.12875) [src: Sect. 2.2.3].
   Test: input–output recovery at τ = 0.05 and 0.06, and likelihoods built
   from half the simulations [src: Sect. 2.2.4].
 - **Ignoring the map-making transfer function.** In NPIPE, quadrupole and

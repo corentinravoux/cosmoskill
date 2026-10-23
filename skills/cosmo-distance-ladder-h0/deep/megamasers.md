@@ -436,7 +436,7 @@ it:
 <!-- key: reading-list -->
 
 - Foundation: Herrnstein et al. 1999, arXiv:astro-ph/9907013 — the
-  geometric method on NGC 4258.
+  geometric method on NGC 4258. [src: abstract]
 - Method: Humphreys et al. 2013, arXiv:1307.6031 — data, accelerations,
   disc model, spiral-structure systematic.
 - Method: Reid et al. 2019, arXiv:1908.05625 — error floors as parameters;
@@ -449,7 +449,7 @@ it:
   spot-level refit, priors, selection, diagnosis of the other analyses.
 - Data: McAlpine et al. 2025, arXiv:2505.10682 — Manticore-Local field.
 - Independent NGC 4258 modelling: van der Boom & Kushnir 2026,
-  arXiv:2601.14374 — single-orbit critique, refits, component tracking.
+  arXiv:2601.14374 — single-orbit critique, refits, component tracking. [src: abstract]
 - Other flow and statistics treatments: Boruah et al. 2021,
   arXiv:2010.01119 (Sect. 6.3); Barua et al. 2025, arXiv:2502.11998.
 - Anchor tests: Efstathiou 2020, arXiv:2007.10716 (Sects. 3–4); Yuan et
@@ -474,4 +474,4 @@ it:
 - Individual MCP galaxy papers (Reid 2013, Kuo 2013, 2015, Gao 2016/2017,
   Pesce 2020a): cited through arXiv:2001.09213 and arXiv:2609.17684.
 - The acceleration-fitting paper of NGC 4258 (Humphreys et al., Paper II):
-  cited through arXiv:1307.6031.
+  cited through arXiv:1307.6031. [src: abstract]

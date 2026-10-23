@@ -19,11 +19,12 @@ likelihoods and rate nuisances in `deep/nuclear-reaction-rates.md`.
 
 Notation. N_ν is the number of neutrino-like species during BBN (3 in the
 Standard Model); N_eff the effective number of relativistic species
-measured by the CMB, 3.044 for N_ν = 3; ΔN_eff ≡ N_eff − N_eff^SM; ξ_ν =
+measured by the CMB, 3.044 for N_ν = 3 (arXiv:2603.13226) [src: abstract]; ΔN_eff ≡ N_eff − N_eff^SM; ξ_ν =
 μ_ν/T_ν the comoving neutrino degeneracy parameter (μ_ν the chemical
 potential); η the baryon-to-photon ratio, η₁₀ = 10¹⁰ η; ω_b = Ω_b h²;
-X_n the neutron fraction; T_np ≈ 0.8 MeV the n/p freeze-out temperature;
-T_νd ≈ 2 MeV neutrino decoupling; Q = m_n − m_p.
+X_n the neutron fraction; T_np the n/p freeze-out temperature, where the
+weak rates cease to matter around k_B T ≃ 0.8 MeV (arXiv:2409.06015)
+[src: Sect. 3]; T_νd the neutrino decoupling temperature; Q = m_n − m_p.
 
 ## How it is done
 <!-- key: how-it-is-done -->
@@ -63,7 +64,7 @@ Mapping N_ν during BBN to N_eff at the CMB:
   arXiv:1801.08023) [src: Eq. 165, Sect. VI.4]; z_ν and z are the
   comoving neutrino and plasma temperatures.
 - Yeh et al. 2022 scale all species: N_eff = 1.0147 N_ν (arXiv:2207.13133)
-  [src: Eq. 28], i.e. 3.044/3 [der].
+  [src: Eq. 28].
 - PRIMAT's authors note Cyburt et al. assume their Eq. 65 holds for
   N_ν ≠ 3, and judge the difference "not crucial" given the size of the
   N_ν errors [src: arXiv:1801.08023, Sect. VI.4].
@@ -75,14 +76,14 @@ For each flavour μ_ν + μ_ν̄ = 0, ξ_ν is frozen, and oscillations
 equalise the flavours (arXiv:1801.08023) [src: Sect. VI.3]. The asymmetry
 is
 
-    η_ν ≡ (n_ν − n_ν̄)/n_γ ≃ (1/(12 ζ(3))) (T_ν/T)³ (π² ξ_ν + ξ_ν³)      (PRIMAT Eq. 158)
+    η_ν ≡ (n_ν − n_ν̄)/n_γ ≃ (1/(12 ζ(3))) (T_ν/T)³ (π² ξ_ν + ξ_ν³)      (arXiv:1801.08023, Eq. 158)
 
 ≃ 0.25 ξ_ν [1 + ξ_ν²/π²] with the Standard-Model T_γ/T_ν (Escudero et al.
 2022, arXiv:2208.03201) [src: Eq. 1]. Three effects:
 
 1. Extra energy density, flavour- and sign-independent:
-   ΔN_eff = Σ_α [(30/7)(ξ_α/π)² + (15/7)(ξ_α/π)⁴] (Escudero Eq. 4); for
-   |ξ| ≲ 0.1 this is ≲ 0.01, so Escudero et al. keep only the helium
+   ΔN_eff = Σ_α [(30/7)(ξ_α/π)² + (15/7)(ξ_α/π)⁴] (Escudero Eq. 4); for a
+   degeneracy |ξ| ≲ 0.1 this is ≲ 0.01, so Escudero et al. keep only the helium
    effect [src: arXiv:2208.03201, Sect. II].
 2. Shifted neutrino distributions in the weak rates (PRIMAT Eq. 160), the
    dominant effect: the equilibrium n/p is multiplied by e^{−ξ_ν}
@@ -127,7 +128,7 @@ by injection time t_inj (arXiv:2605.26824) [src: Sect. 3]:
 | Hadrodisintegration | t_inj ≳ 10² s | injected nucleons no longer thermalise first and break up formed nuclei |
 | Photodisintegration | t_inj ≳ 10⁴ s | electromagnetic cascade photons above nuclear thresholds |
 
-Only π±, K±, K_L, n, n̄, p, p̄ live long enough to interconvert; charged
+Only π±, K±, K_L, n, n̄, p, p̄ live long enough to interconvert (arXiv:2605.26824); charged
 hadrons thermalise in ~10⁻¹² s even at 0.1 MeV [src: Sect. 3.1.1].
 Photodisintegration needs E_N^th < E_ee^th ≃ m_e²/(22T), so it acts only
 for T ≲ O(keV), after standard BBN, and the two factorise; above the
@@ -189,19 +190,19 @@ Fig. 2].
 - **Assumes.** The conventional fit extrapolates the dark-radiation case
   (T_ν unchanged) to negative ΔN_eff; Ganguly et al. call this
   "unphysical" (arXiv:2507.23354) [src: Sect. IV].
-- **What changes.** δX_n,fo/X_n,fo ≃ 0.04 ΔN_eff for dark radiation (Eq.
-  28) but O(10⁻³) ΔN_eff for x_e = 1 injection (Eq. 26), an accidental
+- **What changes.** δX_n,fo/X_n,fo ≃ 0.04 ΔN_eff for dark radiation
+  (arXiv:2507.23354, Eq. 28) but O(10⁻³) ΔN_eff for x_e = 1 injection (Eq. 26), an accidental
   cancellation at the 10% level between the shifts of T_νe, H and the
   equilibrium X_n [src: Sect. III.2]. Y_P "loses its sensitivity" to N_eff
   for ΔN_eff < 0, leaving D/H as the only effective constraint on two
   parameters, so BBN alone cannot exclude points such as ΔN_eff ≃ −0.5,
   η₁₀ = 5.82 [src: Sect. IV].
-- **Result.** ΔN_eff < 0.74 (95%) from PDG Y_P and D/H with no lower bound;
+- **Result.** ΔN_eff < 0.74 (95%) from PDG Y_P and D/H with no lower bound (arXiv:2507.23354);
   the analysis is truncated at N_eff = 2 [src: Eq. 32]. A Y_P as low as
   the EMPRESS value "cannot be realized" by electromagnetic injection;
   hadronic injection raises Y_P; a lepton asymmetry remains possible
   [src: Sect. IV].
-- **Validity.** The x_e = 1 treatment matches a continuous-injection
+- **Validity.** The x_e = 1 treatment (arXiv:2507.23354) matches a continuous-injection
   calculation for 0.1 s ≲ τ_χ ≲ 1 s and remains good up to ~100 s; for
   τ_χ ≲ 0.1 s flavour-dependent dilution matters; beyond ~100 s the
   dilution of η must be included for D/H [src: Sect. II, Appendix A
@@ -363,8 +364,8 @@ value "improves the interconversion bounds significantly" [src: Sect. 5.5].
   were not re-read in body; their method is described here through
   arXiv:2605.26824.
 - The D/H value used by Bianco et al. is printed in the HTML rendering as
-  (25.08 ± 0.029) × 10⁻⁵ and the SBBN prediction as
-  (25.23 ± 0.53) × 10⁻⁵; the units are inconsistent with the rest of the
+  (25.08 ± 0.029) × 10⁻⁵ (arXiv:2605.26824, Sect. 2, Eq. 1) and the SBBN
+  prediction as (25.23 ± 0.53) × 10⁻⁵ (Sect. 3.5, Eq. 77); the units are inconsistent with the rest of the
   literature and these values are not quoted in the table.
 - The limits on lifetimes and abundances of decaying relics from
   arXiv:2605.26824 (its Figs. 5–16) were not read.

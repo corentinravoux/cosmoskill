@@ -18,7 +18,7 @@ without a source below were not verified and must not be quoted.
 - **SPT-3G D1** (Camphuis et al., arXiv:2506.20707): TT/TE/EE from 4% of sky,
   deepest maps used in a CMB TT/TE/EE analysis; most precise lensed EE
   (ℓ = 1800–4000) and TE (ℓ = 2200–4000) to date.
-  SPT-3G alone: **H₀ = 66.66 ± 0.60**.
+  SPT-3G alone: **H₀ = 66.66 ± 0.60**. [src: abstract]
 - **CMB-SPA** = SPT + ACT + Planck combined: **H₀ = 67.19 ± 0.38**,
   σ₈ = 0.8137 ± 0.0037 in the current arXiv version; the first version read
   67.24 ± 0.35 *(2026-10-08)*. SPT-3G alone is quoted as 6.2σ from SH0ES. Relative to Planck alone the joint fit shrinks σ(ωb),
@@ -45,7 +45,7 @@ without a source below were not verified and must not be quoted.
 - DESI DR2 BAO + CMB + SN prefer evolving dark energy over ΛCDM; phantom in the
   past, quintessence-like today (Quintom-B).
 - Robustness study across six parameterisations with CMB (ACT+SPT+Planck) +
-  DESI DR2 + DESY5/Pantheon+/Union3 (arXiv:2511.22512): preference **robust to
+  DESI DR2 + DESY5/Pantheon+/Union3 (arXiv:2511.22512, abstract): preference **robust to
   parameterisation and data combination**; up to **4.2σ** (BA model,
   CMB+DESI+DESY5, w₀ = −0.785 ± 0.047).
 - As published with DESI DR2 the significance was strongly SN-sample
@@ -114,7 +114,7 @@ without a source below were not verified and must not be quoted.
 - Feldman–Cousins limit 0.053 eV **breaches the oscillation floor**; with an
   effective parameter allowing negative densities the tension reaches ~3σ.
 - But in w₀wₐCDM a joint DESI DR2 + CMB + DESY5 + DESY1 analysis finds
-  **Σmν = 0.098 (+0.016/−0.037) eV, 2.7σ positive** (arXiv:2507.16589).
+  **Σmν = 0.098 (+0.016/−0.037) eV, 2.7σ positive** (arXiv:2507.16589, abstract).
 - Lesson for prose: the neutrino-mass bound is **model-dependent**, and quoting
   the ΛCDM number as "the" cosmological limit is misleading in a manuscript that
   also argues for dynamical dark energy.
@@ -144,7 +144,7 @@ without a source below were not verified and must not be quoted.
   0.795 ± 0.029 (arXiv:2401.02075), Planck + DES shear 0.791
   (arXiv:2509.02068), KiDS AMICO 0.74 ± 0.03 (arXiv:2507.14285).
 - The best-constrained amplitude is not S₈: SPT has
-  σ₈(Ω_m/0.3)^0.25 = 0.805 ± 0.016 (arXiv:2401.02075).
+  σ₈(Ω_m/0.3)^0.25 = 0.805 ± 0.016 (arXiv:2401.02075, abstract).
 - The eRASS1 high S₈ and its growth index γ = 1.19 ± 0.21 are one feature of
   the data (arXiv:2410.09499); in that cosmology Planck would count 1098
   clusters, not 439 (arXiv:2509.08673).
@@ -209,7 +209,7 @@ without a source below were not verified and must not be quoted.
   kSZ: SPT-3G D1 Δz(25–75%) < 3.8 (arXiv:2601.20551).
 - No 21 cm power spectrum is detected at z > 6. Deepest limit: HERA Phase I
   **Δ² ≤ 457 mK²** at 95% confidence (z = 7.9, k = 0.34 h/Mpc;
-  arXiv:2210.04912).
+  arXiv:2210.04912). [src: abstract]
 - Live: EDGES (78 MHz, 0.5 K; arXiv:1810.05912) is unconfirmed; SARAS 3
   rejects its profile at 95.3% (arXiv:2112.06778). HI intensity mapping has
   auto-spectra (CHIME, 12.5σ at z ~ 1; arXiv:2511.19620) but no BAO.

@@ -44,7 +44,7 @@ re-verify against the cited paper before a number enters a manuscript.
   spectrum still converts η to v first (arXiv:2512.03231). v = cz − H0 d is
   ~100 km/s wrong at z ~ 0.04 (arXiv:1405.0105).
 - Zero-point: DESI DR1 η_zp = 0.139 ± 0.007, tied to SH0ES/Pantheon+ SNe through
-  groups; fully correlated across the sample (arXiv:2512.03232).
+  groups; fully correlated across the sample (arXiv:2512.03232, Sect. V.5).
 - FP is most exposed to the Malmquist treatment: S8 shifts of
   0.08–0.15 against a 0.03 error; TF + SN give S8 = 0.798 ± 0.035
   (arXiv:2509.20235).
@@ -59,7 +59,7 @@ re-verify against the cited paper before a number enters a manuscript.
   BGS (arXiv:2303.01198, arXiv:2609.34508). No DESI DR2 PV paper.
 - kSZ gives τ × v; b_v ≈ 0.1–0.45 by tracer, so it constrains f_NL, not fσ8
   (arXiv:2604.04867, arXiv:2511.15701).
-- γ_L = 0.580 ± 0.110 from DESI DR1 PV + full shape (arXiv:2512.03231).
+- γ_L = 0.580 ± 0.110 from DESI DR1 PV + full shape (arXiv:2512.03231, abstract).
 
 ## Systematics a referee checks
 <!-- key: systematics-a-referee-checks -->
@@ -120,8 +120,9 @@ Sizes, in thousands of tokens: L1 3k; open 7k; methods 13k; results 15k; surveys
   (`--abstract`, `--outline`, `--section`, `--grep`), or with any tool that
   gives the paper. If it cannot be read, say that L4 was required and not
   done.
-- A formula of the skill may be applied to the asker's numbers; label the
-  result as derived.
+- Quote a number only with its paper and the place it was read, as the
+  skill gives them; the skill holds no number of its own making. A formula
+  may be applied to the asker's numbers; label the result as derived.
 
 Local layers: if a directory `.cosmoskill/` exists in the working directory,
 in one of its parents, or in the home directory, or if `COSMOSKILL_HOME` is

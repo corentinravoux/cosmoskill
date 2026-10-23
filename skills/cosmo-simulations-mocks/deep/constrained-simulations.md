@@ -684,7 +684,7 @@ and writes snapshots (Step 3) [src: arXiv:1608.01763, Sects. II.4–II.5].
 - Application: Libeskind et al. 2020, arXiv:2008.04926 — HESTIA: CF2
   WF/CR, two seeds, LG selection, magnetohydrodynamic zooms.
 - Application: Carlesi et al. 2016, arXiv:1602.03919 — the Local Group
-  factory, success rates over 300 constrained runs.
+  factory, success rates over 300 constrained runs. [src: abstract]
 - Method: Sorce 2020, arXiv:2006.01838 — paired fixed fields for the
   random fraction and the uncertainty.
 - Application: Dolag et al. 2023, arXiv:2302.10960, and Hernández-Martínez

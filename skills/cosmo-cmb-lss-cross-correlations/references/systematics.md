@@ -71,7 +71,7 @@ fit use small scales that the Y1 analysis had to drop; the signal-to-noise of th
 δ_g κ + γ_t κ vector is 34.8 without cuts, 23.9 with linear-bias cuts, 25.7 with non-linear-bias
 cuts (arXiv:2203.12440) [src: Sect. 4, table of signal-to-noise].
 
-**Estimators behind the mitigation** [src, abstracts]. Bias hardening (Namikawa 2012,
+**Estimators behind the mitigation** [src: abstract of each]. Bias hardening (Namikawa 2012,
 arXiv:1209.0091); source hardening against point-source trispectra (Osborne 2013,
 arXiv:1310.7547); profile hardening, in which all temperature foregrounds are treated as sources
 of one profile (Sailer 2020, arXiv:2007.04325); a foreground-cleaned gradient leg (Madhavacheril
@@ -83,7 +83,7 @@ arXiv:1310.7023).
 **Mitigation.** Source and cluster subtraction, profile bias-hardened estimators, CIB
 deprojection with Planck high frequencies (arXiv:2304.05196); tSZ-cleaned lensing maps
 (Chang 2022, arXiv:2203.12440; Shaikh 2023, arXiv:2309.04412); polarisation-only reconstruction,
-now measurable at ~14σ with SPT-3G D1 × DES Y3 shear (Ouellette 2026, arXiv:2606.26223) [src].
+now measurable at ~14σ with SPT-3G D1 × DES Y3 shear (Ouellette 2026, arXiv:2606.26223) [src: abstract].
 
 **Null tests on data.** unWISE × ACT DR6 runs 28 null tests on C_ℓ^κg for its two samples and
 finds four with PTE < 0.05 and none below 0.01, all for the Blue sample: minimum variance against
@@ -134,10 +134,10 @@ flux where the tSZ is a decrement below 217 GHz.
   so some leakage can remain (arXiv:2506.07432) [src: App. "Impact of systematics"; Sect. 2.1].
 - For CMB lensing × y the residual CIB is "a serious systematic" because of the high CIB–κ
   correlation; the measured amplitude moves between 0.82 ± 0.21 and 0.56 ± 0.24 with the choice
-  of lensing map (McCarthy 2023, arXiv:2308.16260) [src].
+  of lensing map (McCarthy 2023, arXiv:2308.16260) [src: abstract].
 - For unWISE × multi-frequency maps, a model with a radio component is preferred at 9.5σ and
   11σ; without it the ACT DR6 NILC y map gives an apparent negative galaxy–tSZ correlation on
-  small scales (Zhao 2026, arXiv:2606.28099) [src].
+  small scales (Zhao 2026, arXiv:2606.28099) [src: abstract].
 - For stacked tSZ on DESI LRG and BGS, dust and radio emission dominate the tSZ signal at and
   below the ~2′ aperture, while large-scale (R > 4′) CIB contamination is less significant (Moore
   2026, arXiv:2609.08939) [src].
@@ -147,9 +147,9 @@ flux where the tSZ is a decrement below 217 GHz.
 
 - In the Planck y maps the residuals are thermal dust on large scales (the major contaminant at
   ℓ < 60 in 2013) and CIB and point sources on small scales (Planck Collaboration 2013,
-  arXiv:1303.5081; Planck Collaboration 2015, arXiv:1502.01596) [src]. The tSZ–CIB correlation is
+  arXiv:1303.5081; Planck Collaboration 2015, arXiv:1502.01596) [src: abstract]. The tSZ–CIB correlation is
   detected in Planck data: stacked on clusters, the infrared emission is about 50% more extended
-  than the tSZ signal (Planck Collaboration 2015, arXiv:1509.06555) [src].
+  than the tSZ signal (Planck Collaboration 2015, arXiv:1509.06555) [src: abstract].
 
 **Mitigation.** CIB deprojection in the ILC; moment deprojection against a wrong CIB spectrum
 (arXiv:2308.16260); fitting tSZ, CIB and radio jointly at the level of the multi-frequency
@@ -256,13 +256,13 @@ costs about a third of the available signal (arXiv:2309.05659) [src: Sect. 4, Se
 
 **Related slips.**
 - Inconsistent neutrino mass between the power-spectrum emulator and the rest of the likelihood:
-  ΔS_8 ≃ −4 f_ν = −0.019 for Σm_ν = 0.06 eV, observed as −0.017 (arXiv:2407.04607) [src].
+  ΔS_8 ≃ −4 f_ν = −0.019 for Σm_ν = 0.06 eV, observed as −0.017 (arXiv:2407.04607) [src: Sect. 7.2].
 - Constraints that come from the broadband shape of the auto-spectrum, not from the lensing
   amplitude: the low Ω_m = 0.245 ± 0.024 of the 2MASS/WISE analysis is "driven by the broadband
   shape of the galaxy auto-correlation, and may be affected by theoretical uncertainties in the
-  HEFT power spectrum templates" (Rubiola 2025, arXiv:2510.09563) [src].
+  HEFT power spectrum templates" (Rubiola 2025, arXiv:2510.09563) [src: abstract].
 - Linear or non-linear bias changes the usable scales and the result only slightly in DES Y3:
-  S_8 = 0.736 against 0.734 (arXiv:2203.12440) [src].
+  S_8 = 0.736 against 0.734 (arXiv:2203.12440) [src: abstract].
 
 **Mitigation and validation.** Quote the best fit beside the mean; fit a noiseless synthetic data
 vector; show a linear-theory fit on restricted scales (arXiv:2407.04607) [src]; fit N-body mocks.
@@ -275,8 +275,10 @@ auto-spectrum gains spurious large-scale power. The cross-spectrum with κ is no
 either: weights change the effective sample, and in the unWISE case below it was C_ℓ^κg that
 moved.
 
-**Size.** Introducing systematics weights for unWISE raised S_8 by 0.4σ, mostly through a higher
-C_ℓ^κg for the Blue sample at nearly unchanged C_ℓ^gg (arXiv:2309.05659) [src]. For f_NL the
+**Size.** Introducing systematics weights for unWISE raised S_8 by 0.4σ in the reanalysis of
+unWISE × Planck (arXiv:2309.05659, App. I.1 table), mostly through a higher C_ℓ^κg for the Blue
+sample at nearly unchanged C_ℓ^gg [src]; in the ACT DR6 analysis the weights changed S_8 by
+ΔS_8 = 0.006 (~0.3σ) [src: arXiv:2309.05659, Sect. 3.1.3]. For f_NL the
 effect is the leading one: the DESI LRG analysis uses a neural-network weight scheme and an
 ℓ_min cut on the auto-spectrum, and states that the cross-spectrum is the more stable of the two
 (Bermejo-Climent 2024, arXiv:2412.10279) [src]. The spectroscopic DESI quasar sample is free of
@@ -299,8 +301,8 @@ Cosmology from the velocity needs τ; gas physics from τ needs the velocity.
 - Velocity reconstruction returns b_v × v; b_v absorbs the mismatch between true and fiducial
   P_ge and is marginalised (Chaussidon 2026, arXiv:2604.04867) [src]. Measured values are well
   below one: b_v = 0.229 ± 0.022 (90 GHz) and 0.233 ± 0.020 (150 GHz) for DESI DR2 LRGs
-  (arXiv:2604.04867, table of LRG fits), 0.33 ± 0.03 for photometric LRGs (McCarthy 2025,
-  arXiv:2511.15701), A = 0.39 ± 0.04 (Lai 2025, arXiv:2506.21684) [src].
+  (arXiv:2604.04867, Sect. V.2 table), 0.33 ± 0.03 for photometric LRGs (McCarthy 2025,
+  arXiv:2511.15701, abstract), A = 0.42 ± 0.042 (Lai 2025, arXiv:2506.21684, abstract) [src].
 - A low b_v is evidence about gas only if the galaxy side of the fiducial P_ge is right. For DESI
   ELGs the abundance-matching HOD gives a linear bias of ~2.3 instead of ~1.3 and so biases b_v
   low (arXiv:2604.04867, section "Lower kSZ signal than expected") [src].
@@ -323,12 +325,12 @@ coefficient r < 1; the estimator divides by r.
 
 **Size.** r = 0.65 for a DESI-like spectroscopic sample, with an uncertainty equivalent to ~2% of
 the signal that the DESI Y1 analysis neglects [sec: simulation result as quoted in Ried Guachalla
-2025, arXiv:2503.19870]. When the stacking velocity retains non-linear information or is affected
+2025, arXiv:2503.19870, Sect. IV.2]. When the stacking velocity retains non-linear information or is affected
 by redshift-space distortions, non-linear terms suppress the stacked signal by 10–20%, a 1–2σ
 effect for current data, weakly dependent on feedback (Ondaro-Mallea 2026, arXiv:2607.23339)
-[src]. Periodic boundary conditions in the reconstruction produce a skewed tail at the edges of
+[src: abstract]. Periodic boundary conditions in the reconstruction produce a skewed tail at the edges of
 the redshift range: 49 and 25 galaxies beyond ±5σ_v = 1,150 km/s in DESI Y1, without effect on
-the result (arXiv:2503.19870) [src].
+the result (arXiv:2503.19870) [src: Sect. IV.1].
 
 **r is degenerate with the gas amplitude.** The estimator scales as r n_e σ_gas σ_rec, so an
 error on r is an error on the profile amplitude. r = 0.65 is a light-cone average over the DESI
@@ -396,10 +398,10 @@ reconstruction does not enjoy the same cancellation.
 - In the group-stacking analysis, CIB effects are subdominant to the kSZ signal in the ACT channel
   used (Roper 2025, arXiv:2510.12553) [src].
 
-**Validation.** The same measurement on 150 GHz, 90/98 GHz and ILC maps (Calafut 2021,
-arXiv:2101.08374; arXiv:2511.23417); frequency-difference nulls, 26 of them in Hotinli 2026
+**Validation.** The same measurement on co-added 150 GHz and 98 GHz maps and a component-separated map
+(Calafut 2021, arXiv:2101.08374), or on 150 GHz, total-frequency and ILC maps (arXiv:2511.23417); frequency-difference nulls, 26 of them in Hotinli 2026
 (arXiv:2609.17676); two experiments with independent optics and beams, ACT and SPT-3G, agreeing
-to 0.7σ channel by channel (arXiv:2609.17676) [src].
+to 0.7σ channel by channel (arXiv:2609.17676) [src: abstract].
 
 ## 11. kSZ and tSZ: host haloes, satellites and miscentring
 <!-- key: ksz-and-tsz-host-haloes-satellites-and -->
@@ -409,10 +411,10 @@ including satellites and miscentred galaxies. Comparing with a simulation requir
 selection.
 
 **Size.** Ignoring baryons in a galaxy–galaxy lensing fit biases the halo mass low by ~20%
-(Sunseri 2025, arXiv:2505.20413) [src]. The simulation comparison of Bigwood 2025
+(Sunseri 2025, arXiv:2505.20413) [src: abstract]. The simulation comparison of Bigwood 2025
 (arXiv:2510.15822) fixes the mass selection with galaxy–galaxy lensing and includes cosmic
-variance, miscentring and satellites [src]. Independent CMB-lensing masses exist for the DESI
-samples (Hadzhiyska 2025, arXiv:2507.14136) [src].
+variance, miscentring and satellites [src: abstract]. Independent CMB-lensing masses exist for the DESI
+samples (Hadzhiyska 2025, arXiv:2507.14136) [src: abstract].
 
 A large offset of the galaxies from the centres of the gas profiles, or a significant satellite
 fraction in more massive haloes, would artificially extend the observed profile; the stacks also
@@ -447,7 +449,7 @@ structures and to choices made after looking at the data.
 **Evidence.** Stacks on selected supervoids give A_ISW ≈ 4–5 (Kovács 2018, arXiv:1811.07812);
 a matched filter without a posteriori choices on BOSS structures gives 1.64 ± 0.53 (Nadathur
 2016, arXiv:1608.08638); stacks on DESI Legacy superstructures with matched mocks give
-−0.10 ± 0.69 for voids (Hang 2021, arXiv:2105.11936) [src].
+−0.10 ± 0.69 for voids (Hang 2021, arXiv:2105.11936) [src: abstract].
 
 **Significance against the expected signal** (unWISE × Planck, Krolewski 2021,
 arXiv:2110.13959) [src: Sect. 5.1, table of systematics tests]. Per sample A_ISW = 0.73 ± 0.34
@@ -469,7 +471,7 @@ magnification, with the same failure modes as §4–7.
 <!-- key: covariance-and-noise-models -->
 
 - A cross-covariance between tomographic samples was missing in one blinded analysis until after
-  unblinding (−0.3σ on S_8; arXiv:2309.05659) [src].
+  unblinding (−0.3σ on S_8; arXiv:2309.05659) [src: Sect. 9.2].
 - Sizes of the correlations in that analysis: C_ℓ^gg with C_ℓ^κg at the same ℓ up to 60%;
   different ℓ ≤ 10%; C_ℓ^κg of the two samples 40–60%; ACT and Planck lensing reconstructions
   ≲ 30%, but the two κg spectra up to 50% and the two gg spectra up to 60% because the galaxies

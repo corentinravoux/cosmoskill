@@ -459,7 +459,7 @@ arXiv:2506.20707, Sect. VII.3].
 <!-- key: not-verified -->
 
 - The mock study of ΛCDM bias under dynamical dark energy cited as
-  "Tang et al." (ref. 160 of arXiv:2506.20707): not identified or read.
+  "Tang et al." (ref. 160 of arXiv:2506.20707): not identified or read. [src: Sect. VII.3]
 - The "update difference in means" statistic of Jhaveri et al. (their
   Eq. 53 of ref. 49): reference not identified; formula not read.
 - The DESI DR2 distance with Plik or HiLLiPoP in place of CamSpec in ΛCDM:

@@ -57,7 +57,7 @@ Snapshot: 2026-10-16
 ### 1.6 Is the local Universe underdense in the constrained simulations?
 <!-- key: is-the-local-universe-underdense-in-the -->
 
-- SIBELIUS-DARK finds a large-scale underdensity of about 5% within 200 Mpc and an unusually high number of very massive clusters (arXiv:2202.04099).
+- SIBELIUS-DARK finds a large-scale underdensity of about 5% within 200 Mpc and an unusually high number of very massive clusters (arXiv:2202.04099, abstract).
 - Manticore-Local finds no evidence for a large local underdensity (arXiv:2505.10682).
 - The two use different inference set-ups; neither abstract reconciles them. The question bears on local-void explanations of the Hubble tension, treated in `cosmo-distance-ladder-h0`.
 
@@ -67,7 +67,7 @@ Snapshot: 2026-10-16
 - Internal: posterior-predictive checks against ΛCDM statistics (arXiv:2505.10682, arXiv:2606.10020).
 - External: Bayesian evidence against direct distance tracers (arXiv:2502.00121); CMB lensing at 7.4σ and kSZ at 3.5σ (arXiv:2606.10020).
 - Object level: matched clusters (arXiv:2505.10682, arXiv:2602.03699).
-- Open: there is no agreed benchmark across groups; the velocity comparison of arXiv:2502.00121 is the closest thing to one, and its by-product S8 = 0.793 ± 0.035 disagrees strongly with some peculiar-velocity studies.
+- Open: there is no agreed benchmark across groups; the velocity comparison of arXiv:2502.00121 is the closest thing to one, and its by-product S8 = 0.793 ± 0.035 disagrees strongly with some peculiar-velocity studies. [src: abstract]
 - Open: velocity-based forward modelling claims to surpass the standard peculiar-velocity pipeline while stating that systematic biases remain (arXiv:2602.03699).
 
 ### 1.8 Which dynamics inside field-level inference?

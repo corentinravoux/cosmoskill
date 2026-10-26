@@ -56,8 +56,8 @@ re-verify against the cited paper before a number enters a manuscript.
   (arXiv:2512.15380) [src: abstract].
 - GWTC-5.0: 390 candidates (arXiv:2605.27225), 267 in population (arXiv:2605.27226),
   236 in cosmology (arXiv:2605.27227) [src: abstract of each]. O4 ended 18 November
-  2025; IR1 planned from November 2026; O5 undated (LVK observing-plan page,
-  `references/surveys-and-data.md` Sect. 1.1).
+  2025; IR1 targets a mid-January 2027 start; O5 undated [doc: https://www.aei.mpg.de/gwastronomy, 2026-10-26]
+  (`references/surveys-and-data.md` Sect. 1.1).
 - FRBs: DM ∝ Ω_b h² f_d / h. Ω_b h70 = 0.051 ± 0.006, f_IGM = 0.76
   (arXiv:2409.16952). H0 = 62.3 ± 9.1 (arXiv:2104.04538), 85.3 (+9.4/−8.1)
   (arXiv:2305.07022); 71.28 (+1.90/−2.08) is statistical only (arXiv:2507.18946)
@@ -137,8 +137,9 @@ Sizes, in thousands of tokens: L1 3k; open 7k; methods 12k; results 7k; surveys 
   (`--abstract`, `--outline`, `--section`, `--grep`), or with any tool that
   gives the paper. If it cannot be read, say that L4 was required and not
   done.
-- Quote a number only with its paper and the place it was read, as the
-  skill gives them; the skill holds no number of its own making. A formula
+- Quote a number only with its paper and the place it was read, or, for a
+  code or facility fact, its `[doc]` page and read date, as the skill gives
+  them; the skill holds no number of its own making. A formula
   may be applied to the asker's numbers; label the result as derived.
 
 Local layers: if a directory `.cosmoskill/` exists in the working directory,

@@ -407,7 +407,7 @@ against 0.10 and 0.059 eV in the DESI papers [src: both].
   file name and the one-line description in arXiv:2411.12022; its kernels
   were not read.
 - The source of the 0.077 eV "official" DR1 value quoted in
-  arXiv:2601.16165 was not identified.
+  arXiv:2601.16165 [src: Sect. 4.3, its ref. 48] was not identified.
 - The external reanalysis's ref. [145], which justifies EdS kernels at
   current errors, and its ref. [13] on σ₈ as principal component, were not
   read.

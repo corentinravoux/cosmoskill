@@ -21,16 +21,16 @@ cosmological analysis needs: which events, which catalogue, how complete.
 | O4a | 2023-05-24 15:00 to 2024-01-16 16:00 [src: abstract] | GWTC-4.0 | 128 new candidates with `p_astro ≥ 0.5`, 86 with false-alarm rate below 1 yr⁻¹; 218 in total [src: abstract] | arXiv:2508.18082 |
 | O4b | 2024-04-10 15:00 to 2025-01-28 17:00, plus four days of engineering run from 2024-04-06 [src: abstract] | GWTC-5.0 | 161 new candidates, all consistent with BBH, 104 with false-alarm rate below 1 yr⁻¹; O1–O4a re-analysed to 229; cumulative 390 with `p_astro ≥ 0.5` [src: abstract] | arXiv:2605.27225 |
 | O4c | 2025-01-28 to 2025-11-18 [der: end of O4b to end of O4] | none yet | data "under detailed examination" at the end of the run [sec: LVK announcement] | LVK news item, see below |
-| IR1 | planned six-month run "beginning early- to mid-November of 2026" [src] | — | Virgo joins with possible interruptions; KAGRA joins later as available [src] | LVK observing-plan page |
+| IR1 | planned six-month run "targeting a mid-January 2027 start" [doc: https://www.aei.mpg.de/gwastronomy, 2026-10-26] | — | "LIGO and Virgo will participate, potentially starting with two of the three detectors"; KAGRA joins later as available [doc: https://www.aei.mpg.de/gwastronomy, 2026-10-26] | AEI page on current gravitational-wave astronomy (the LVK observing-plan page could not be opened on 2026-10-26) |
 | O5 | no date: "plans and timeline … are being refined" [src] | — | — | LVK observing-plan page |
 
-Official pages read on 2026-10-10: the LVK observing plan,
-`https://observing.docs.ligo.org/plan/` (last updated 3 September 2026, next update
-announced for 15 October 2026 or sooner), and, through a web search, the LVK
-announcement "LIGO-Virgo-KAGRA Collaboration successfully wraps up its fourth Observing
-Run" on `ligo.org`, which gives the O4 span as 24 May 2023 to 18 November 2025 and
-about 250 candidates observed in real time [sec]. The O4c boundaries are inferred from
-those two dates and were not read on a page that names O4c.
+Official pages read on 2026-10-26: the LVK observing plan,
+`https://observing.docs.ligo.org/plan/`, could not be opened (bot protection);
+the Virgo announcement of 18 November 2025, "LIGO, Virgo and KAGRA complete
+the richest observation run to date", says that O4, launched in May 2023,
+ended that day, with some 250 new signals [doc:
+https://www.virgo-gw.eu/news/ligo-virgo-and-kagra-complete-the-richest-observation-run-to-date/,
+2026-10-26]. The O4c boundaries were not read on a page that names O4c.
 
 ### 1.2 Three different "sizes" of GWTC-5.0
 <!-- key: three-different-sizes-of-gwtc-5-0 -->

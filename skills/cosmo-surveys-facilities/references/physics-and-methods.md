@@ -210,7 +210,7 @@ its noise is thermal and its limit is foreground removal (Sect. 8).
 A 5σ point-source limit and a 10σ extended-source limit in the same data
 differ by more than a magnitude. The two Euclid rows describe the same
 instrument and are not in conflict. Never rank surveys by
-depth without converting to one convention.
+depth without converting to one convention. <!-- num: not a value -->
 
 ### 4.2 Effective source density
 <!-- key: effective-source-density -->
@@ -394,5 +394,6 @@ the number of events with a redshift, by counterpart or statistically
   arXiv:2205.10939 Sect. V.2.)
 - The third n_eff value of arXiv:1305.0793 (after masking), cut off in the
   abstract text retrieved.
-- Rubin's delivered cadence since 30 June 2026, and the adopted baseline
+- Rubin's delivered cadence since the survey start (announced 30 June 2026
+  [doc: https://rubinobservatory.org/news/action-rubin-lsst-begins, 2026-10-26]), and the adopted baseline
   survey strategy version.

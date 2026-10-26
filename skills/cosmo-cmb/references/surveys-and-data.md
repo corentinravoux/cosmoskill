@@ -5,7 +5,7 @@ anisotropies, lensing and B-mode status — instrument, sky, depth, release,
 public location, status on the snapshot date and what comes next.
 Snapshot: 2026-10-07
 
-Flags: `[src]` read this session in the cited paper or official page;
+Flags: `[src]` read in the cited paper; `[doc: <page>, <date>]` read on an official page on that date;
 `[sec]` from a named secondary source; `[der]` derived here. Forecasts are
 labelled **forecast**.
 
@@ -201,14 +201,14 @@ From arXiv:2202.02773 (2022 design) and arXiv:2607.25285 (reformed design), each
 | Sensitivity goal | total 2.2 μK-arcmin; 0.5° resolution at 100 GHz | δr < 0.002 (68%) total, including foreground residuals, systematics and margin |
 | Survey | 3 years at L2 | 3 years, Lissajous orbit at L2 |
 | Launch | "late 2020s" | JFY2036 |
-| Source | LiteBIRD Collaboration 2022, arXiv:2202.02773 [src] | LiteBIRD Collaboration 2026, arXiv:2607.25285 [src]; launch date and reviews from the ISAS/JAXA mission page, read 2026-10-07 [src] |
+| Source | LiteBIRD Collaboration 2022, arXiv:2202.02773 [src] | LiteBIRD Collaboration 2026, arXiv:2607.25285 [src]; launch date and reviews from the ISAS/JAXA mission page [doc: https://www.isas.jaxa.jp/en/missions/spacecraft/future/litebird.html, 2026-10-26] |
 
-Milestones from the ISAS/JAXA page [src]: October 2024, KEK relinquished
-its technological contribution and a one-year study of reformation plans
-began; 2025-09-25, the reformation plan was evaluated and the team
+Milestones from the ISAS/JAXA page [doc: https://www.isas.jaxa.jp/en/missions/spacecraft/future/litebird.html, 2026-10-26]: 2024-10-09, KEK relinquished
+its technological contribution and a study of reformation plans of about
+one year began; 2025-09-25, the reformation plan was evaluated and the team
 was told to continue toward a mission definition review; 2026-06-26,
-Mission Definition Review #2 was held, and the page headline states that
-LiteBIRD passed it and advanced to Phase A. Older texts quote a tighter δr
+Mission Definition Review #2 was held, and ISAS/JAXA concluded that the
+project "is ready to proceed to the Project Preparation phase (Phase A)". Older texts quote a tighter δr
 target; it predates the reformation and was not traced to a paper on
 2026-10-23. The reformed requirement is δr < 0.002 (arXiv:2607.25285)
 [src: abstract].

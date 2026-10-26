@@ -39,7 +39,7 @@ N_det: number of detectors; Y: combined yield and observing efficiency;
 ΔT: survey duration; s: white map depth in μK-arcmin; N_ℓ: noise power
 spectrum; ℓ_knee, α_knee: knee multipole and slope of the 1/f term;
 f_sky: sky fraction; "detector-years": N_det × years of observation,
-expressed in 150 GHz-equivalent detectors in CMB-S4.
+expressed in 150 GHz-equivalent detectors in CMB-S4. <!-- num: not a value -->
 
 ## How it is done
 <!-- key: how-it-is-done -->

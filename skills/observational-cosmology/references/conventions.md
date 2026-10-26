@@ -35,7 +35,7 @@ P(k) defined via ⟨δ(k)δ*(k')⟩ = (2π)³ δ_D(k−k') P(k) is the usual LSS
   signal itself. State which is used and where the conversion happens.
 - Peculiar velocity sign convention (positive = receding) must be uniform.
 - For Lyα: observed λ, rest-frame λ_RF, and the Lyα line convention
-  (1215.67 Å) — state whether vacuum or air wavelengths.
+  (1215.6701 Å in vacuum, NIST Atomic Spectra Database [doc: https://physics.nist.gov/cgi-bin/ASD/lines1.pl?spectra=H+I, 2026-10-26]) — state whether vacuum or air wavelengths.
 
 ## Estimator definitions to pin down
 <!-- key: estimator-definitions-to-pin-down -->

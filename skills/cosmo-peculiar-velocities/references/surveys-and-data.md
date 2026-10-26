@@ -150,12 +150,11 @@ morphology.
 
 **Public data and status.**
 
-- DESI DR1 spectra and redshifts: public since 19 March 2025; EDR since 13 June 2023 [sec:
-  data.desi.lbl.gov/doc/releases, read 2026-10-08].
+DESI DR1 spectra and redshifts: public since 19 March 2025; EDR since 13 June
+2023 [doc: https://data.desi.lbl.gov/doc/releases/, 2026-10-26].
 - DR1 PV measurements and likelihood products: Zenodo record 17672675 and the power-spectrum code at
   github.com/FeiQin-cosmologist/Galaxy_Power_Spectrum [src: arXiv:2512.03231, data availability]. [src: Sect. "Data availability"]
-- DESI DR2 (three years of data): the release page lists no public DR2; only the DR2 BAO cosmology
-  chains are out [sec: same page]. **No DR2 peculiar-velocity paper was found** in date-sorted arXiv
+- DESI DR2 (three years of data): the release page lists no public DR2 spectra or catalogues; only the DR2 cosmology chains and posterior maximization results are out [doc: https://data.desi.lbl.gov/doc/releases/, 2026-10-26]. **No DR2 peculiar-velocity paper was found** in date-sorted arXiv
   searches up to 2026-10-08. The DR1 field-level paper calls its mock study "a preparation for the
   DR2 data release, which will contain more Tully-Fisher galaxies" [src: arXiv:2512.03229].
 
@@ -208,7 +207,7 @@ independent data; state which low-z sample underlies a quoted fσ8.
 |---|---|---|---|---|
 | WALLABY pilot, phase 1 | 614 HI spectra in four fields, 472 usable, 251 sufficiently inclined; TF distances with W1; cluster distances to 5–10 % | published | Courtois et al. 2023, arXiv:2210.12498 | [src: abstract] |
 | WALLABY pilot, phase 2 (PDR2) | 180 deg², three more fields; TF from 0.8 to 3.4 μm, including the 4HS target photometry | published | Mould et al. 2024, arXiv:2406.10877 | [src: abstract] |
-| WALLABY full survey | 132 footprints observed by 31 December 2025, "around 11.5 %" complete; "almost 6 000" full-survey detections released internally; public release of the first tranche under discussion | observing | [sec: WALLABY newsletter, wallaby-survey.org, February 2026, read 2026-10-08] | [sec] |
+| WALLABY full survey | 132 footprints observed by 31 December 2025, "around 11.5%" complete; "almost 6000" full-survey HI detections released internally; the timeline for public release of the first tranche to be considered "soon" | observing | WALLABY newsletter 24, February 2026 | [doc: https://wallaby-survey.org/newsletters/newsletter-24/, 2026-10-26] |
 | FAST | 4 796 velocities in CF4++ | first release ingested | arXiv:2502.01308 | [src: abstract] |
 | SKAO | **forecast** chapter for TF surveys with SKA-Mid AA* and AA4 | planned | Mayor et al. 2026, arXiv:2606.26001 | [src] |
 
@@ -226,8 +225,8 @@ the southern sky with ASKAP.
 
 | Programme | What it adds | Status on the snapshot date | Flag |
 |---|---|---|---|
-| 4MOST Hemisphere Survey (4HS) | southern FP sample, > 400 000 early types at z < 0.15 (arXiv:2411.19484, Sect. 6.2; numbers below) | 4MOST first light in October 2025; "Verification, Commissioning, and Survey Validation"; "expected start of full science operations in Q2 2026" — the page had not been updated beyond that statement when read | [sec: 4most.eu home page, read 2026-10-08] |
-| DESI PV DR2 | three years of data; more TF | not public; no paper | [sec: DESI release page] |
+| 4MOST Hemisphere Survey (4HS) | southern FP sample, > 400 000 early types at z < 0.15 (arXiv:2411.19484, Sect. 6.2; numbers below) | 4MOST "has seen First Light on the VISTA telescope" and "is currently going through the Verification, Commissioning, and Survey Validation Phases" with "an expected start of full science operations in Q2 2026" — the page had not been updated beyond that statement when read | [doc: https://www.4most.eu/cms/, 2026-10-26] |
+| DESI PV DR2 | three years of data; more TF | not public; no paper | [doc: https://data.desi.lbl.gov/doc/releases/, 2026-10-26] |
 | DESI DR3 BGS × ZTF 6-year SNe | field-level density × velocity | **forecast** only (arXiv:2609.34508) | [src] |
 | Rubin LSST SNe Ia | **forecast** fσ8 precision quoted over 0.02 < z < 0.14 (arXiv:2507.00157, abstract) | survey started 30 June 2026 | [sec: `cosmo-supernovae`] |
 | kSZ velocity reconstruction | large-scale radial velocity modes from DESI LRGs, ELGs and QSOs | ACT DR6 × DESI DR2 published (arXiv:2604.04867, abstract); Simons Observatory next (belongs to `cosmo-cmb-lss-cross-correlations`) | [src] |

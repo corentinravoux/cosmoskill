@@ -35,7 +35,11 @@ which question. Load one reference at a time.
   |---|---|---|
   | `[src: <place>]` | read in the cited paper itself at that place (section, table, equation, figure, footnote or abstract) when the file was written | re-read the paper, then quote |
   | `[sec: <place>]` | taken from a named secondary source at that place | go to the primary paper first |
+  | `[doc: <source>, <date>]` | a code fact (version, release date, default) or a facility fact (date, status, count) read on that date at a URL, a repository path or an installed package; not a paper (owner, 2026-10-26); stale two years after the read date, when `tools/check_numbers.py` fails it until it is re-read | re-read the page; quote with its date, it may have changed |
   | `[der]` | reasoning in words drawn from cited results; carries no number | do not quote as a result |
+
+  A statement whose numbers are not values (notation, names, pointers)
+  carries `<!-- num: not a value -->`; it holds no result to quote.
 
 - A number without its paper and place, a number computed by an agent, or a
   claim with no citation, is a defect in the file: fix the file, do not

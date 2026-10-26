@@ -34,7 +34,7 @@ Check these when reviewing a chapter; each is a real error, not a style point.
   and curvature.
 - **σ₈ vs S₈ vs fσ₈.** Distinct quantities with distinct degeneracy directions.
   fσ₈ values at different z_eff are not comparable; S₈ carries an Ωm exponent
-  whose value (0.5) is a convention, not a measurement.
+  whose value (0.5) is a convention, not a measurement. <!-- num: not a value -->
 - **Growth rate in modified gravity.** f is scale-dependent in f(R) and in most
   screened models, so a single fσ₈(z) curve is an effective quantity at the
   8 h⁻¹Mpc scale, not the ΛCDM growth rate.
@@ -57,7 +57,7 @@ Two cases that look identical to a keyword search and are not:
   of constrained quantities) versus a numerical *bound* being asserted;
 - a fiducial value assumed for modelling (Σmν = 0.06 eV in a composition list)
   versus a measurement being quoted.
-Neither of the first kind is a claim, and neither can be wrong.
+Neither of the first kind is a claim, and neither can be wrong. <!-- num: not a value -->
 
 ## Calibrate the finding to the section's register
 <!-- key: calibrate-the-finding-to-the-section-s-register -->

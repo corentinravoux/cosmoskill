@@ -115,9 +115,9 @@ separate.
 
 | Release | Public date | Content | Flag |
 |---|---|---|---|
-| EDR (Survey Validation) | 13 June 2023 | 1.8 million unique targets, Dec 2020 – June 2021 | [src] DESI data-release page |
-| DR1 | 2025-03-19 | 18.7 million objects, main survey May 2021 – June 2022, plus reprocessed SV | [src] DESI data-release page; count also in arXiv:2503.14745 [src: abstract] |
-| DR2 cosmology products | 6 October 2025 | BAO likelihoods, chains, best fits | [src] DESI announcement |
+| EDR (Survey Validation) | 13 June 2023 | 1.8 million unique targets, Survey Validation observations December 2020 through June 2021 | [doc: https://data.desi.lbl.gov/doc/releases/, 2026-10-26] [doc: https://data.desi.lbl.gov/doc/releases/edr/, 2026-10-26] |
+| DR1 | 2025-03-19 | 18.7 million new spectra, main survey May 2021 – June 2022, plus a reprocessing of the Survey Validation data of the EDR | [doc: https://data.desi.lbl.gov/doc/releases/, 2026-10-26]; count also in arXiv:2503.14745 [src: abstract] |
+| DR2 cosmology products | 6 October 2025 | cosmology chains (MCMC) and best-fit values; the full DR2 "in some months" | [doc: https://www.desi.lbl.gov/2025/10/06/desi-dr2-cosmology-chains-and-data-products-released/, 2026-10-26] |
 | DR2 spectra and catalogues | not public at snapshot | first three years | see "Not verified" |
 
 EDR per target class: 428,758 BGS, 227,318 LRG, 437,664 ELG, 76,079 QSO,
@@ -173,14 +173,15 @@ Changes from DR1 to DR2 (arXiv:2503.14738, Sect. II.1) [src]:
 HODs fitted to early data for validation; EZmocks for covariance (Chuang et
 al. 2015, arXiv:1409.1124).
 
-**Status** [src] (Berkeley Lab release of 15 April 2026 and DESI
-announcement of the same date): the planned five-year survey is complete,
-ahead of schedule, with more than 47 million galaxies and quasars against a
-goal of 34 million, and more than 20 million stars. Observations continue
-through 2028 and extend the footprint from 14,000 to about 17,000 deg². First
-dark-energy results from the full five-year data set are expected in 2027.
-The release states that current analysis focuses on the first three years,
-with further papers planned in 2026.
+**Status** [doc:
+https://www.desi.lbl.gov/2026/04/15/desi-reaches-mapping-milestone-surpassing-expectations/,
+2026-10-26] (DESI announcement of 15 April 2026): the planned five-year survey
+is complete, its observations finished "ahead of schedule", with more than 47
+million galaxies and quasars against a goal of 34 million, and 20 million
+stars of the Milky Way. Observations continue through 2028 and extend the
+footprint from 14,000 to 17,000 deg². The first dark-energy results from the
+full five-year survey are expected in 2027; the analyses so far use the first
+three years of data.
 
 **Published cosmology by release.**
 
@@ -195,35 +196,36 @@ with further papers planned in 2026.
 - Mission: optical imaging plus near-infrared imaging and slitless
   spectroscopy over about 14,000 deg² (Euclid Collaboration: Mellier et
   al. 2025, arXiv:2405.13491) [src: abstract].
-- Public releases to date, complete list as of 2026-10-08 [src] (ESA Euclid
-  data page, https://www.cosmos.esa.int/web/euclid/data, and ESA Euclid
-  timeline, https://www.cosmos.esa.int/web/euclid/timeline, both fetched
-  2026-10-08): (i) Early Release Observations (ERO) data release, 23 May
-  2024; (ii) Quick Data Release 1 (Q1), 19 March 2025; (iii) Quick Data
-  Release 2 (Q2), 24 June 2026. No other public release is listed. None of
-  the three is a cosmology release.
+Public releases to date, complete list as of 2026-10-26 (ESA Euclid data page
+[doc: https://www.cosmos.esa.int/web/euclid/data, 2026-10-26]; ESA Euclid
+timeline [doc: https://www.cosmos.esa.int/web/euclid/timeline, 2026-10-26]):
+(i) Early Release Observations (ERO) data release, 23 May 2024; (ii) Quick
+Data Release 1 (Q1), 19 March 2025; (iii) Quick Data Release 2 (Q2), 24 June
+2026. No other public release is listed. None of the three is a cosmology
+release.
 - Q1 content: 63.1 deg² of the Euclid Deep Fields at wide-survey depth, about
   30 million objects, processed with early pipelines [src: abstract] (Euclid
   Collaboration: Aussel et al. 2025, arXiv:2503.15302).
-- Q2 content: the Euclid Galactic Bulge Survey, 4.8 deg² over nine adjoining
-  fields, VIS calibrated images with astrometry and photometry catalogues for
-  60 million stars; no galaxy-clustering or lensing product [src] (Euclid
-  Consortium Q2 page, https://www.euclid-ec.org/science/q2/, fetched
-  2026-10-08).
-- Announced next releases [src] (ESA Euclid timeline, same URL and date; the
-  page states that the dates are tentative): DR1-Foundation 12 November 2026;
-  DR1 mid-2027; Quick Data Release 3 (Q3) 2028; DR2 June 2029; Quick Data
-  Release 4 (Q4) 2030; DR3 October 2031. The IPAC timeline
-  (https://euclid.caltech.edu/page/data-release-timeline, fetched 2026-10-08)
-  gives the same dates except DR2, which it puts in March 2029; the ESA page
-  is the reference.
-- DR1: about 1900 deg² (roughly 1400 south, 500 north), Wide Survey
-  observations from 14 February 2024 to 21 May 2025, released in two stages:
-  DR1-Foundation (raw and calibrated images, catalogues, spectra) on 12
-  November 2026, and the complete DR1 with the higher-level products for
-  galaxy clustering and weak lensing in mid-2027 [src] (ESA Euclid DR1
-  timeline page, dated 15 June 2026, which gives "November 2026" and
-  "mid-2027"; IPAC Euclid DR1 page for the day and the observation dates).
+Q2 content: the Euclid Galactic Bulge Survey, 4.8 deg² over nine adjoining
+fields, calibrated VIS images with astrometry and photometry catalogues for 60
+million stars; the page lists no galaxy-clustering or lensing product (Euclid
+Consortium Q2 page [doc: https://www.euclid-ec.org/science/q2/, 2026-10-26]).
+Announced next releases (ESA Euclid timeline [doc:
+https://www.cosmos.esa.int/web/euclid/timeline, 2026-10-26]; the page states
+that "data release dates are tentative and will have to be confirmed"):
+DR1-Foundation 12 November 2026; DR1 mid-2027; Quick Data Release 3 (Q3) 2028;
+DR2 June 2029; Quick Data Release 4 (Q4) 2030; DR3 October 2031. The IPAC
+timeline [doc: https://euclid.caltech.edu/page/data-release-timeline,
+2026-10-26] gives DR1 Foundation 12 November 2026, DR1 complete mid-2027, DR2
+March 2029 and DR3 October 2031; the ESA page is the reference.
+DR1: about 1900 deg² (about 1400 south, 500 north), observed 14 February 2024
+to 21 May 2025, released in two stages: DR1-Foundation (raw data and
+calibrated images, catalogues, spectra) in November 2026, on 12 November by
+the IPAC page, and the complete DR1 with the higher-level products for galaxy
+clustering and weak lensing in mid-2027 (ESA Euclid DR1 timeline page, update
+of 15 June 2026 [doc: https://www.cosmos.esa.int/web/euclid/dr1-timeline,
+2026-10-26]; IPAC Euclid DR1 page for the split, the observation dates and the
+day [doc: https://euclid.caltech.edu/page/euclid-dr1, 2026-10-26]).
 - The BAO pipeline was validated end to end on mocks for 0.9 ≤ z ≤ 1.8
   (Euclid Collaboration: Sarpa et al. 2026, arXiv:2605.03446). [src: abstract]
 - No Euclid spectroscopic clustering measurement on data was found as of the
@@ -244,14 +246,15 @@ with further papers planned in 2026.
 ### 2.4 4MOST
 <!-- key: 4most -->
 
-- VISTA 4 m telescope, Paranal; about 2400 fibres over a 4.2 deg² field;
-  first light in October 2025; verification, commissioning and survey
-  validation phases through the first half of 2026; five-year public survey
-  programme of at least 25 million objects over at least 15,000 deg² [src]
-  (4MOST project site, `4most.eu`, read 2026-10-07). First light was
-  obtained on 18 October 2025 [src] (ESO announcement sciann17735, published
-  22 October 2025, read 2026-10-08). The project site shows 21 October;
-  quote ESO's date.
+VISTA, a 4-m-class telescope at Paranal; spectra of about 2400 objects at once
+(ESO: "more than 2400 fibres") over a hexagonal 4.2 deg² field; Verification,
+Commissioning and Survey Validation phases in 2026, full science operations
+expected from Q2 2026; an initial five-year Public Survey of at least 25
+million objects over at least 15 000 deg² (4MOST project site [doc:
+https://www.4most.eu/cms/, 2026-10-26]). First light was obtained on 18
+October 2025 (ESO announcement sciann17735, published 22 October 2025 [doc:
+https://www.eso.org/sci/publications/announcements/sciann17735.html,
+2026-10-26]). The project site gives 21 October; quote ESO's date.
 - Cosmology Redshift Survey (CRS): 5.4 million redshifts over about 5700 deg²
   from bright galaxies, LRGs and quasars, selected from Legacy Survey DR10.1
   imaging [src: abstract] (Bandi et al. 2025, arXiv:2510.02449). **Planned**, not yet
@@ -270,8 +273,13 @@ with further papers planned in 2026.
 ### 2.6 Nancy Grace Roman Space Telescope
 <!-- key: nancy-grace-roman-space-telescope -->
 
-- Launched 30 August 2026; in commissioning, en route to L2 at the snapshot
-  date [src] (NASA Roman mission page, read 2026-10-07).
+Launched 30 August 2026 on a Falcon Heavy, towards L2, for a three-month
+commissioning; first images expected by early 2027 (NASA release [doc:
+https://www.nasa.gov/news-release/nasas-dark-universe-seeking-nancy-grace-roman-space-telescope-launches/,
+2026-10-26]). In the science commissioning phase since 22 October 2026 (NASA
+Roman blog [doc:
+https://science.nasa.gov/blogs/roman/2026/10/22/nasas-roman-space-telescope-enters-final-commissioning-phase/,
+2026-10-26]).
 - Reference High Latitude Spectroscopic Survey (**forecast**, 2021 reference
   design): 2000 deg² with the near-IR grism (1.0–1.93 μm, R = 435–865), about
   10 million Hα redshifts at z = 1–2 and 2 million [O III] redshifts at

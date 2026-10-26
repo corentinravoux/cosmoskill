@@ -13,7 +13,9 @@ secondary source; `[der]` reasoning in words, without a new number.
 A Type Ia supernova (SN Ia) analysis measures **relative** luminosity distances.
 The observable is the distance modulus
 
-    mu = 5 log10( d_L / 10 pc ),   d_L = (1 + z_hel) * D_M(z_HD)
+```
+mu = 5 log10( d_L / 10 pc ),   d_L = (1 + z_hel) * D_M(z_HD)
+```
 
 where `z_hel` is the heliocentric redshift (it sets the photon energy and
 arrival-rate dilution at the telescope) and `z_HD` is the "Hubble-diagram"

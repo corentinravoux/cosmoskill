@@ -295,10 +295,10 @@ without a source below were not verified and must not be quoted.
 | **CMB-S4** | **cancelled** — DOE and NSF withdrew support 9 July 2025 |
 | Simons Observatory | commissioning / early observing |
 | LiteBIRD | JAXA L-class; reformed after the 2024 Mission Definition Review to a single telescope with 12 bands, δr < 0.002 (arXiv:2607.25285) [src: abstract] *(2026-10-08)*; launch under revision JFY2032 → JFY2036 (ISAS/JAXA page, via `cosmo-surveys-facilities`) |
-| Rubin LSST | survey began **30 June 2026** (Rubin announcement, via `cosmo-surveys-facilities`) |
-| Roman | launch **30 Aug 2026** (NASA mission page, via `cosmo-surveys-facilities`), science ops early 2027 |
-| Euclid | Q1 (March 2025) released; DR1-Foundation planned 12 Nov 2026, "tentative"; full DR1 with clustering and lensing products mid-2027 (ESA Euclid timeline, via `cosmo-surveys-facilities`) |
-| 4MOST | first light **18 Oct 2025** (ESO date, via `cosmo-surveys-facilities`) |
+| Rubin LSST | survey began **29 June 2026** (Rubin survey-strategy progress page [doc: https://survey-strategy.lsst.io/progress/index.html, 2026-10-26]; Rubin release of 30 June 2026 [doc: https://rubinobservatory.org/news/action-rubin-lsst-begins, 2026-10-26]) |
+| Roman | launch **30 Aug 2026** (NASA release [doc: https://www.nasa.gov/news-release/nasas-dark-universe-seeking-nancy-grace-roman-space-telescope-launches/, 2026-10-26]), first images expected by early 2027 |
+| Euclid | Q1 (March 2025) and Q2 released; DR1-Foundation planned 12 Nov 2026, dates "tentative"; full DR1 with clustering and lensing products mid-2027 (ESA Euclid timeline [doc: https://www.cosmos.esa.int/web/euclid/timeline, 2026-10-26]) |
+| 4MOST | first light **18 Oct 2025** (ESO announcement [doc: https://www.eso.org/sci/publications/announcements/sciann17735.html, 2026-10-26]) |
 | Subaru PFS | SSP under way; first-light date not verified |
 | SPHEREx | launched **11 Mar 2025** (arXiv:2511.02985) [src: abstract], first all-sky map Dec 2025 |
 | DESI | DR2 released 2025; DR3 BAO expected 2027 |

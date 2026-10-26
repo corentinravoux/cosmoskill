@@ -51,14 +51,14 @@ doi:10.1086/159659) for the reddening-free Wesenheit magnitude `[sec]`.
 Review of the methods and their systematics up to 2010: Freedman & Madore
 (arXiv:1004.1856).
 
-Distance modulus: mu_0 = m_0 - M_0 = 5 log D + 25, D in Mpc.
+Distance modulus: mu_0 = m_0 - M_0 = 5 log D + 25, D in Mpc. <!-- num: not a value -->
 
 Cepheid j in host i, in the NIR Wesenheit system:
 
     m^W_H,i,j = mu_0,i + M^W_H,1 + b_W (log P_i,j - 1) + Z_W [O/H]_i,j   (Eq. 1)
 
 with M^W_H,1 the absolute magnitude at P = 10 d and solar metallicity, b_W the
-period slope and Z_W (called gamma elsewhere) the metallicity term.
+period slope and Z_W (called gamma elsewhere) the metallicity term. <!-- num: not a value -->
 
 Wesenheit magnitude (Section 3.4 of arXiv:2112.04510) `[src: Sect. 3.4]`:
 

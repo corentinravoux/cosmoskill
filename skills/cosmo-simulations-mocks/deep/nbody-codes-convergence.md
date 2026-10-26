@@ -30,7 +30,7 @@ times the critical density; Δt: time step; η: dimensionless time-step
 parameter; A_i or a_i: acceleration of particle i; θ: tree opening angle;
 N_g, N_p: numbers of mesh points and particles; H_g, H_p: mesh spacing and
 mean particle spacing (GINKAKU notation, H_p = ℓ); r_s: tree–mesh force
-split scale; ε_g = r_s/H_g.
+split scale; ε_g = r_s/H_g. <!-- num: not a value -->
 
 ## How it is done
 <!-- key: how-it-is-done -->

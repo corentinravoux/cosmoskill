@@ -129,7 +129,7 @@ Lyα-visibility values depend on a reionisation-topology model and on the assume
 
 The kSZ power at ℓ = 3000 is the sum of a late-time (homogeneous) part and a reionisation (patchy) part; the duration
 limit depends on the template assumed for the first. Definitions of "duration" differ between papers and must be
-quoted.
+quoted. <!-- num: not a value -->
 
 | Quantity | Value | Data | Citation | Flag |
 |---|---|---|---|---|

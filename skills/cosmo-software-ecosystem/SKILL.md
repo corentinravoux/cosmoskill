@@ -10,7 +10,9 @@ read ([src: <place>] / [sec: <place>]); no number is derived by an agent.
 Re-verify against the cited paper before a number enters a manuscript.
 
 Defaults were read in named versions (camb 2.0.4, pyccl 3.3.6, cosmoprimo 1.0.0,
-CLASS 3.2.3, healpy 1.19.0); re-read them for the version in use.
+CLASS 3.2.3, healpy 1.19.0); re-read them for the version in use [doc: installed
+camb 2.0.4, pyccl 3.3.6, cosmoprimo 1.0.0, healpy 1.19.0; lesgourg/class_public/explanatory.ini
+at tag v3.2.3, 2026-10-26].
 
 ## File map
 <!-- key: file-map -->
@@ -34,7 +36,7 @@ CLASS 3.2.3, healpy 1.19.0); re-read them for the version in use.
 
 - CAMB and CLASS agree at 0.01 % only for concordance ΛCDM, a shared recombination history and boosted precision (arXiv:1104.2934, abstract).
 - CAMB v2 (arXiv:2607.14854, Sect. IX) changed the defaults: unboosted runs now target 10⁻³; v1.6.6 defaults are off by 1.5 % in TT at ℓ = 3000.
-- pyccl 3.3.6 still requests CAMB's v1 accuracy behaviour, so pyccl and a direct CAMB v2 call differ [src: pyccl 3.3.6 installed docstring, not a paper].
+- pyccl 3.3.6 still requests CAMB's v1 accuracy behaviour, so pyccl and a direct CAMB v2 call differ [doc: installed pyccl 3.3.6, `pyccl.Cosmology` docstring and pyccl/boltzmann.py, 2026-10-26].
 - Units split in two camps: classy and pyccl use Mpc⁻¹ and Mpc³; cosmoprimo, flip and picca use h-units; CAMB mixes both in one object.
 - Default neutrinos differ (code defaults read in the installed packages, not a paper): CAMB one massive eigenstate of 0.06 eV;
  pyccl massless, split "normal" when set; cosmoprimo and CLASS none. N_eff is 3.044 (benchmark 3.0440 ± 0.0002, arXiv:2012.02726, abstract) except in stored cosmologies such as astropy `Planck18` (3.046).
@@ -98,7 +100,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 5k; methods 14k; results 7k; surveys 11k; systematics 12k; deep/boltzmann-solvers 7k; deep/estimator-codes 6k; deep/maintenance-validation 9k; deep/modified-gravity-solvers 11k; deep/samplers-frameworks 6k; deep/theory-facades 8k.
+Sizes, in thousands of tokens: L1 3k; open 7k; methods 15k; results 7k; surveys 13k; systematics 14k; deep/boltzmann-solvers 7k; deep/estimator-codes 6k; deep/maintenance-validation 9k; deep/modified-gravity-solvers 11k; deep/samplers-frameworks 6k; deep/theory-facades 9k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.
@@ -108,8 +110,9 @@ Sizes, in thousands of tokens: L1 3k; open 5k; methods 14k; results 7k; surveys 
   (`--abstract`, `--outline`, `--section`, `--grep`), or with any tool that
   gives the paper. If it cannot be read, say that L4 was required and not
   done.
-- Quote a number only with its paper and the place it was read, as the
-  skill gives them; the skill holds no number of its own making. A formula
+- Quote a number only with its paper and the place it was read, or, for a
+  code or facility fact, its `[doc]` page and read date, as the skill gives
+  them; the skill holds no number of its own making. A formula
   may be applied to the asker's numbers; label the result as derived.
 
 Local layers: if a directory `.cosmoskill/` exists in the working directory,

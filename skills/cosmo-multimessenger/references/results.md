@@ -299,7 +299,7 @@ not move; the two intervals are at different confidence levels and are not compa
 - `cosmo-surveys-facilities`: O4 ended 18 November 2025 — confirmed by the LVK
   announcement; "GWTC-5.0 has 267 mergers" — 267 is the population-analysis sample (arXiv:2605.27226) [src: abstract], the
   catalogue holds 390 candidates (arXiv:2605.27225) [src: abstract; surveys file, Sect. 1.2]; "O5 has no date" — confirmed, with
-  the addition that a six-month run IR1 is planned from November 2026.
+  the addition that a six-month run IR1 targets a mid-January 2027 start [doc: https://www.aei.mpg.de/gwastronomy, 2026-10-26].
 
 ## Not verified
 <!-- key: not-verified -->

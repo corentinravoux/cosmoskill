@@ -350,7 +350,7 @@ Neutrino mass and N_eff:
 Dark matter:
 
 11. Thermal relic or another production mechanism; fraction of the dark matter.
-12. The half-mode mass, its unit convention and the conversion used; 95%, 20:1 or 10:1.
+12. The half-mode mass, its unit convention and the conversion used; 95%, 20:1 or 10:1. <!-- num: not a value -->
 13. Lyα: thermal-history family, treatment of reionisation, k_max, redshift range.
 14. Satellites: host-halo selection and LMC analogue, Milky Way mass, disruption model, selection function.
 15. Lensing: subhalo-abundance prior and result under the alternative, multipoles, source size, line-of-sight haloes, M_hm prior range.

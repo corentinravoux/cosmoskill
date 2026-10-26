@@ -185,7 +185,7 @@ Supporting references for rows above: the standard review of neutrino cosmology 
 - Whether a KATRIN result from the complete data set, or a published LEGEND-200 limit, exists at the snapshot.
 - The positive Σm_ν in w0waCDM reported in the hub file from a joint DESI + CMB + DES analysis was not read here.
 - Whether thermal relics above 6 keV still alter any small-scale structure observable.
-- The status of the 3.5 keV line in microcalorimeter data.
+- The status of the 3.5 keV line in microcalorimeter data. <!-- num: not a value -->
 - Forecasts for Rubin satellite counts, stream samples and lensed-quasar samples.
 - DESI-II, Spec-S5, PFS and 4MOST forecasts for Σm_ν.
 - Project 8 and next-generation double-beta sensitivities.

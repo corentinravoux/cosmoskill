@@ -385,7 +385,8 @@ parameter choices on the performance of the EB solvers" [src: same].
   DISCO-EB, not from CAMB's source.
 - CLASS parameter names and defaults are those of the 2011 papers
   (v1.1) and of the 2023 Euclid paper; they were not checked against
-  CLASS 3.4 (classy 3.4.1.0 on PyPI) or its `explanatory.ini`.
+  CLASS 3.4 (classy 3.4.1.0 on PyPI [doc: https://pypi.org/pypi/classy/json,
+  2026-10-26]) or its `explanatory.ini`.
 - Whether CAMB's `do_late_rad_truncation` changed between 2011 and the
   version used in arXiv:2303.09451 was not read.
 - The CAMB version used in arXiv:2303.09451 was not read.

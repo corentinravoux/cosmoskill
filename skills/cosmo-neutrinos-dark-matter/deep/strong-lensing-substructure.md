@@ -209,7 +209,7 @@ reweighting [src: arXiv:1908.06983, Sect. 2.3].
 The m_hm bound is quoted as a 10:1 Bayes factor (ratio of posterior at the
 peak region to the excluded value) and at 95%, for a log-uniform Σ_sub and
 for the galacticus and N-body priors (values in L2). The keV number follows
-from the relation each paper adopts (L2).
+from the relation each paper adopts (L2). <!-- num: not a value -->
 
 Gravitational-imaging analyses quote the bound differently: detections and
 non-detections, weighted by each lens's sensitivity function, enter a
@@ -460,7 +460,7 @@ Two arc detections carry most of the SIDM argument; each paper's reading:
 
 The 95% values of the JWST flux-ratio rows with the galacticus / N-body
 priors are not in L2, which quotes the 10:1 values; for the conversion to
-keV see L2.
+keV see L2. <!-- num: not a value -->
 
 ## What goes wrong
 <!-- key: what-goes-wrong -->

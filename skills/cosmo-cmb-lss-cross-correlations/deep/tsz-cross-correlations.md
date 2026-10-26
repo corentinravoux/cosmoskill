@@ -20,7 +20,7 @@ rule (`physics-and-methods.md#thermal-sunyaev-zel-dovich-x-lss`,
 Symbols: y Compton parameter; P_e electron pressure; b_h linear halo bias;
 dn/dM halo mass function; W_A(χ) radial kernel of field A; b_H hydrostatic
 mass bias, with B = 1/(1 − b_H); r_500c, M_500c radius and mass enclosing
-500 times the critical density.
+500 times the critical density. <!-- num: not a value -->
 
 ## How it is done
 <!-- key: how-it-is-done -->

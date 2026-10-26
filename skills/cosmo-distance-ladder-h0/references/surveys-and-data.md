@@ -5,7 +5,7 @@ sets used to measure the Hubble constant locally, through one-step routes, and
 through the early Universe; past, current and planned, in that order.
 Snapshot: 2026-10-07
 
-Flags: `[src]` read this session in the cited paper or on the official page
+Flags: `[src]` read in the cited paper; `[doc: <page>, <date>]` read on an official page on that date
 named; `[sec]` from a named secondary source; `[der]` derived here.
 Sample sizes are those of the cited analysis, not of the parent survey.
 
@@ -38,11 +38,12 @@ arXiv:2608.06247).
 | SMC | late-type DEBs; HST Cepheids in the core | 15 DEBs (10 new + 5 published); 88 Cepheids | in use since 2024 | arXiv:2010.08754; arXiv:2404.08038 | [src: abstract] |
 | NGC 4258 | VLBI maser disc; HST and JWST Cepheids, TRGB, JAGB, Miras | > 1000 JWST Cepheids with 5 SN hosts | in use; the only anchor of the JWST ladders | arXiv:1908.05625; arXiv:2401.04773 | [src: abstract] |
 
-Gaia release dates (ESA Gaia release page, cosmos.esa.int/web/gaia/release,
-read this session `[src]`): DR1 14 September 2016; DR2 25 April 2018; EDR3
-3 December 2020; DR3 13 June 2022; **DR4 planned for 2 December 2026**, based
-on 66 months of data; DR5, all mission data, not before the end of 2030.
-The parallaxes behind every H0 value in `results.md` are from EDR3 / DR3.
+Gaia release dates [doc: https://www.cosmos.esa.int/web/gaia/release,
+2026-10-26]: DR1 14 September 2016; DR2 25 April 2018; EDR3 3 December 2020;
+DR3 13 June 2022; **DR4 planned for 2 December 2026**, based on 66 months of
+data; DR5, "based on the complete 10.5 years of extended mission data", not
+before the end of 2030. The parallaxes behind every H0 value in `results.md`
+are from EDR3 / DR3.
 
 ## 3. The Cepheid / TRGB / JAGB / Mira ladders (current)
 <!-- key: the-cepheid-trgb-jagb-mira-ladders-current -->
@@ -176,7 +177,7 @@ Survey descriptions and later releases are in `cosmo-cmb`,
 | SN Requiem fourth image | "within a few years" | decade-long time-delay baseline in MACS J0138 | arXiv:2509.12301 | [src] |
 | DESI PV, later releases | planned | direct Cepheid / TRGB calibration of FP and TF, towards a percent-level H0 without SNe | arXiv:2512.03232 | [src] |
 | WALLABY | planned use | large Tully-Fisher samples for the joint TF + velocity estimator | arXiv:2408.03660 | [src] |
-| Rubin LSST | survey began 29 June 2026 | lensed quasars and SNe, low-z SN samples | survey-strategy.lsst.io (progress page) | [src] |
+| Rubin LSST | survey began 29 June 2026 (progress page; the Rubin release of 30 June 2026 announces the start) | lensed quasars and SNe, low-z SN samples | survey-strategy.lsst.io (progress page) | [doc: https://survey-strategy.lsst.io/progress/index.html, 2026-10-26] |
 | Simons-Observatory-like lensing + completed DESI | **forecast** | sigma(H0) ~ 0.67 with r_d free and fixed neutrino mass | arXiv:2509.16202 | [src: abstract] |
 | 40 time-delay + 200 other lenses | **forecast** | 1.5% and 1.2% on H0 without mass-profile assumptions | Birrer & Treu 2021, arXiv:2008.06157 | [src: abstract] |
 

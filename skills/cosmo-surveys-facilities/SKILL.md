@@ -30,32 +30,35 @@ Facts flagged `[sec: GC|WL|CMB|SN|CL]` come from the named sibling skill.
 <!-- key: what-an-expert-holds-in-mind -->
 
 - DESI finished its planned survey in April 2026 and observes through 2028
-  (Berkeley Lab release of 15 April 2026); public spectra stop at DR1
-  (19 March 2025, `data.desi.lbl.gov` release page; DR1 paper
-  arXiv:2503.14745), DR2 being BAO likelihoods only.
+  (DESI post of 15 April 2026) [doc: https://www.desi.lbl.gov/2026/04/15/desi-reaches-mapping-milestone-surpassing-expectations/, 2026-10-26]; public spectra stop at DR1
+  (19 March 2025, `data.desi.lbl.gov` release page) [doc: https://data.desi.lbl.gov/doc/releases/, 2026-10-26]; DR1 paper
+  arXiv:2503.14745; DR2 being cosmology chains and best-fit values only.
 - Euclid has three public releases and no cosmology product. DR1-Foundation
   is due 12 November 2026, DR1 mid-2027, DR2 June 2029, DR3 October 2031,
-  all "tentative" (ESA Euclid timeline page, read 2026-10-09).
-- Rubin's ten-year survey began 30 June 2026 (Rubin announcement, via
-  `cosmo-weak-lensing`); Early DP2 came on 27 July 2026 (`dp2.lsst.io`); DR1
-  will be "based on the first year of LSST observations" (RTN-011 v9.1).
-- Roman launched 30 August 2026 and is in commissioning (NASA mission
-  page); its surveys are the community-defined ones, not the 2021 reference
+  all "tentative" (ESA Euclid timeline page) [doc: https://www.cosmos.esa.int/web/euclid/timeline, 2026-10-26].
+- Rubin announced the start of its ten-year survey on 30 June 2026
+  [doc: https://rubinobservatory.org/news/action-rubin-lsst-begins, 2026-10-26]; Early DP2 came on 27 July 2026 [doc: https://dp2.lsst.io/, 2026-10-26]; DR1
+  will be "based on the first year of LSST observations" (RTN-011 v9.1) [doc: https://rtn-011.lsst.io/, 2026-10-26].
+- Roman launched 30 August 2026 [doc: https://www.nasa.gov/news-release/nasas-dark-universe-seeking-nancy-grace-roman-space-telescope-launches/, 2026-10-26] and entered science commissioning on 22 October 2026
+  [doc: https://science.nasa.gov/blogs/roman/, 2026-10-26]; its surveys are the community-defined ones, not the 2021 reference
   (arXiv:2505.10574).
-- SDSS DR20 (30 July 2026, `sdss.org/dr20`) is current. SDSS-V has no clustering programme;
+- SDSS DR20 (30 July 2026, `sdss.org/dr20`) is current [doc: https://www.sdss.org/science/publications/data-release-publications/, 2026-10-26]. SDSS-V has no clustering programme;
   eBOSS closed in DR16 (arXiv:2507.06989, arXiv:2112.02026).
-- 4MOST (first light 18 October 2025 per ESO; 2436 spectra per pointing,
-  arXiv:2606.27882 [src: abstract]), WEAVE and MOONS (first observations
+- 4MOST (first light 18 October 2025 per ESO
+  [doc: https://www.eso.org/sci/publications/announcements/sciann17735.html, 2026-10-26]; 2436 spectra per pointing,
+  arXiv:2606.27882 [src: abstract]; survey operations expected "in the
+  coming month" on 12 October 2026 [doc: https://www.4most.eu/cms/news/2026/ORR3/, 2026-10-26]), WEAVE and MOONS (first observations
   announced 3 September 2026, ESO ann26007) are on sky without a confirmed
   main-survey start (arXiv:1903.02464, arXiv:2212.03981, arXiv:2009.00628).
 - CMB-S4 was cancelled on 9 July 2025 (`cmb-s4.org`, via `cosmo-cmb`).
   LiteBIRD is now one telescope, target launch "Japanese fiscal year 2036"
   (arXiv:2607.25285) [src: Table 2]. The Simons Observatory has no public data.
-- eROSITA DR2 (31 July 2026, `erosita.mpe.mpg.de/dr2`) holds catalogues of
+- eROSITA DR2 (31 July 2026, `erosita.mpe.mpg.de/dr2`
+  [doc: https://erosita.mpe.mpg.de/dr2/, 2026-10-26]) holds catalogues of
   three all-sky passes of the German half (arXiv:2607.27772); eight were
   planned "by the end of 2023" (arXiv:2010.03477) [src: abstract].
-- Legacy Surveys DR11 covers about 22,700 deg² (`legacysurvey.org` DR11
-  page); the 14,000 deg² figure is the design (arXiv:1804.08657).
+- Legacy Surveys DR11 covers 22,731 deg² in all bands jointly (`legacysurvey.org` DR11
+  page) [doc: https://www.legacysurvey.org/dr11/description/, 2026-10-26]; the 14,000 deg² figure is the design (arXiv:1804.08657).
 - Stage-V spectroscopy: MUST reports construction (arXiv:2605.10102);
   Spec-S5, WST and MSE are designs (arXiv:2608.07927, arXiv:2403.05398,
   arXiv:2503.15553).
@@ -124,7 +127,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 6k; methods 8k; results 5k; surveys 14k; systematics 7k; deep/cadence-time-domain 8k; deep/cmb-survey-design 11k; deep/cross-survey-coordination 8k; deep/footprint-tiling-depth 8k; deep/requirements-flowdown 11k; deep/survey-forecasts 6k.
+Sizes, in thousands of tokens: L1 3k; open 7k; methods 8k; results 7k; surveys 15k; systematics 7k; deep/cadence-time-domain 8k; deep/cmb-survey-design 11k; deep/cross-survey-coordination 8k; deep/footprint-tiling-depth 8k; deep/requirements-flowdown 11k; deep/survey-forecasts 6k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.
@@ -134,8 +137,9 @@ Sizes, in thousands of tokens: L1 3k; open 6k; methods 8k; results 5k; surveys 1
   (`--abstract`, `--outline`, `--section`, `--grep`), or with any tool that
   gives the paper. If it cannot be read, say that L4 was required and not
   done.
-- Quote a number only with its paper and the place it was read, as the
-  skill gives them; the skill holds no number of its own making. A formula
+- Quote a number only with its paper and the place it was read, or, for a
+  code or facility fact, its `[doc]` page and read date, as the skill gives
+  them; the skill holds no number of its own making. A formula
   may be applied to the asker's numbers; label the result as derived.
 
 Local layers: if a directory `.cosmoskill/` exists in the working directory,

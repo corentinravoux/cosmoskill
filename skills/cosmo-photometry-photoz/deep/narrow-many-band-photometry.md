@@ -31,7 +31,7 @@ error in band i. α_j ≥ 0: amplitude of template j. l_i: global
 zero-point factor of band i. k: per-galaxy NB/BB flux scaling. z_b: mode
 of p(z). z_s: spectroscopic redshift. Δ_z = (z_b − z_s)/(1 + z_s).
 σ_68 = ½(P84 − P16) of Δ_z. σ_NMAD = 1.48 median(|Δz − median Δz|/(1 + z_s)).
-Outlier thresholds differ between papers and are given with each number.
+Outlier thresholds differ between papers and are given with each number. <!-- num: not a value -->
 
 ## How it is done
 <!-- key: how-it-is-done -->

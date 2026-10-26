@@ -236,7 +236,7 @@ Significances in this domain are usually conditional: on the b_φ relation (f_NL
 ## 11. Conventions and where the community is split
 <!-- key: conventions-and-where-the-community-is-split -->
 
-- **Pivot.** n_s and α_s at k_* = 0.05 Mpc⁻¹; r at 0.05 Mpc⁻¹ (BICEP/Keck, ACT) or 0.002 Mpc⁻¹ (Planck 2018). Isocurvature amplitudes at 0.002, 0.05 and 0.1 Mpc⁻¹. Units are Mpc⁻¹ without h, except in galaxy-clustering papers.
+- **Pivot.** n_s and α_s at k_* = 0.05 Mpc⁻¹; r at 0.05 Mpc⁻¹ (BICEP/Keck, ACT) or 0.002 Mpc⁻¹ (Planck 2018). Isocurvature amplitudes at 0.002, 0.05 and 0.1 Mpc⁻¹. Units are Mpc⁻¹ without h, except in galaxy-clustering papers. <!-- num: not a value -->
 - **Sign of Ω_K.** Ω_K = 1 − Ω_tot: negative for a closed universe. "Negative curvature" in words means an open universe, Ω_K > 0; arXiv:2607.28445 uses both phrasings in one sentence.
 - **f_NL.** The local, equilateral and orthogonal amplitudes are different parameters and must carry their superscript. Large-scale-structure values depend on p (or b_φ). The sign and normalisation convention of f_NL differs between some older large-scale-structure papers and the CMB convention; the conversion factor was not read this session (see "Not verified").
 - **Confidence levels.** r limits are 95%; f_NL, n_s, Ω_K, β are 68% intervals; isocurvature limits are one-tail 95%; eBOSS DR14 f_NL intervals are 95% while DR16 ones are 68%.

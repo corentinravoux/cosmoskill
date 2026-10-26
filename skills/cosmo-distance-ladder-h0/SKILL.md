@@ -119,7 +119,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; alternative-distance-probes 8k; open 7k; methods 10k; results 7k; surveys 4k; systematics 12k; deep/cepheid-sn-ladder 6k; deep/inverse-ladder 6k; deep/jagb-miras 8k; deep/megamasers 9k; deep/time-delay-cosmography 6k; deep/trgb 6k.
+Sizes, in thousands of tokens: L1 3k; alternative-distance-probes 8k; open 7k; methods 10k; results 7k; surveys 5k; systematics 12k; deep/cepheid-sn-ladder 6k; deep/inverse-ladder 6k; deep/jagb-miras 8k; deep/megamasers 9k; deep/time-delay-cosmography 6k; deep/trgb 6k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.
@@ -129,8 +129,9 @@ Sizes, in thousands of tokens: L1 3k; alternative-distance-probes 8k; open 7k; m
   (`--abstract`, `--outline`, `--section`, `--grep`), or with any tool that
   gives the paper. If it cannot be read, say that L4 was required and not
   done.
-- Quote a number only with its paper and the place it was read, as the
-  skill gives them; the skill holds no number of its own making. A formula
+- Quote a number only with its paper and the place it was read, or, for a
+  code or facility fact, its `[doc]` page and read date, as the skill gives
+  them; the skill holds no number of its own making. A formula
   may be applied to the asker's numbers; label the result as derived.
 
 Local layers: if a directory `.cosmoskill/` exists in the working directory,

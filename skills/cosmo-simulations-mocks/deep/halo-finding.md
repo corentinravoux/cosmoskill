@@ -27,7 +27,7 @@ inter-particle separation ⟨l⟩; Δ: overdensity threshold; M_200c, M_200m,
 M_vir: masses inside spheres of 200 times the critical density, 200 times
 the mean density, and the Bryan & Norman virial overdensity; V_max: peak of
 the circular-velocity curve; M_peak: largest mass along the main-progenitor
-branch; N_p: particle number of a halo.
+branch; N_p: particle number of a halo. <!-- num: not a value -->
 
 ## How it is done
 <!-- key: how-it-is-done -->

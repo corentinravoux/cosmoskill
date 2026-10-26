@@ -33,7 +33,7 @@ r*/D_M(z*) the CMB acoustic angle; ω_b = Ω_b h², ω_bc = (Ω_b + Ω_c)h²,
 ω_m = Ω_m h² (ω_bc plus massive neutrinos); τ the reionisation optical
 depth; A_s the primordial amplitude; M_ν or Σm_ν the summed neutrino mass;
 Δχ²_MAP the difference of χ² at the maximum a posteriori points of two
-models.
+models. <!-- num: not a value -->
 
 ## How it is done
 <!-- key: how-it-is-done -->

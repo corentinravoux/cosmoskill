@@ -655,7 +655,7 @@ blinding.**
 - **β** means f/b for galaxies around voids, and the forest RSD parameter in
   the void–forest correlation; neither is fσ8.
 - **S8** is σ8 (Ω_m/0.3)^0.5 in every lensing paper cited here; always state
-  ΛCDM or wCDM with the value.
+  ΛCDM or wCDM with the value. <!-- num: not a value -->
 - **k_max** is in h Mpc⁻¹. The perturbative trispectrum and field-level
   analyses read here stop at 0.10–0.12. For the bispectrum the cut depends on
   the model and the triangles kept: 0.08 for the tree-level EFT monopole

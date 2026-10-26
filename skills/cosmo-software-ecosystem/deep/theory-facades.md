@@ -19,8 +19,9 @@ against non-Limber and the choice of a non-Limber method are in
 `cosmo-theory-foundations/deep/projected-statistics-limber.md`.
 
 "Installed" means read in the package source (pyccl 3.3.6, cosmoprimo
-1.0.0, camb 2.0.4) on 2026-10-19; where the 2018 CCL paper differs, both
-are given.
+1.0.0, camb 2.0.4) on 2026-10-19 and re-read on 2026-10-26; where the
+2018 CCL paper differs, both are given [doc: installed pyccl 3.3.6,
+cosmoprimo 1.0.0, camb 2.0.4, 2026-10-26].
 
 ## How it is done
 <!-- key: how-it-is-done -->
@@ -41,9 +42,9 @@ not only by the engine; and the numerical parameters are read when the
 cosmology is built. In pyccl 3.3.6 they are global objects
 (`pyccl.spline_params`, `pyccl.gsl_params`), and `Cosmology._build_cosmo`
 copies them into the object's `_spline_params`, `_gsl_params` and
-`_accuracy_params` [src: pyccl 3.3.6 installed, `cosmology.py`]. Set them
-before creating the cosmology [src: installed, `tracers.py` warning:
-"before instantiating the Cosmology passed"].
+`_accuracy_params` [doc: installed pyccl 3.3.6, pyccl/cosmology.py, 2026-10-26]. Set them
+before creating the cosmology [doc: installed pyccl 3.3.6, pyccl/tracers.py warning:
+"before instantiating the Cosmology passed", 2026-10-26].
 
 ### Step 2. Know what the facade asks the engine for
 <!-- key: step-2-know-what-the-facade-asks-the-engine-for -->
@@ -52,7 +53,7 @@ A facade does not call its engine with the engine's own defaults. What
 the installed wrappers set:
 
 **pyccl → CAMB (`transfer_function='boltzmann_camb'`, the default)**
-[src: pyccl 3.3.6 installed, `boltzmann.py`, `get_camb_pk_lin`]:
+[doc: installed pyccl 3.3.6, pyccl/boltzmann.py, `get_camb_pk_lin`, 2026-10-26]:
 
 - `camb.config.AccuracyTarget = 0` unless overridden, with the comment
   that CAMB 2.x defaults to 1 and the legacy value keeps "behavior closer
@@ -64,11 +65,13 @@ the installed wrappers set:
   is given; CAMB's `kmax` is in Mpc⁻¹ (`systematics.md#traps-that-follow`).
 - Normalisation by σ8: CAMB is first run with A_s = 2.1 × 10⁻⁹, σ8 is
   computed by CCL from that linear spectrum, and A_s is rescaled by
-  (σ8,target/σ8)². When A_s is given it is passed directly.
+  (σ8,target/σ8)². When A_s is given it is passed directly
+  [doc: installed pyccl 3.3.6, pyccl/boltzmann.py, 2026-10-26].
 - Neutrinos: `share_delta_neff = False`, and the CAMB degeneracy factor is
   set to g = (T_ncdm/(11/4)^{−1/3})⁴ with T_ncdm = 0.71611, so that "both
   codes use the same neutrino temperature" as CLASS. Y_He comes from CAMB's
-  BBN predictor with ΔN_eff = N_eff − 3.044.
+  BBN predictor with ΔN_eff = N_eff − 3.044 [doc: installed pyccl 3.3.6,
+  pyccl/boltzmann.py, 2026-10-26].
 - Dark energy: `dark_energy_model='fluid'` unless set to `'ppf'`; the code
   raises an error asking for PPF when w(a) crosses −1 with the fluid model.
 - Non-linear: only when the CAMB non-linear spectrum is requested, with
@@ -77,20 +80,21 @@ the installed wrappers set:
 
 In CAMB 2.0.4, `'mead'` is the HMcode-2016 name (`mead2016` is documented
 as its alias) while CAMB's own `halofit_default` is `mead2020`
-[src: camb 2.0.4 installed, `nonlinear.py`]. A pyccl prediction with the
+[doc: installed camb 2.0.4, camb/nonlinear.py, 2026-10-26]. A pyccl prediction with the
 CAMB non-linear spectrum and default extra parameters is therefore
 HMcode-2016, not the HMcode-2020 a direct CAMB call would give.
 
 **pyccl → CLASS** sets `P_k_max_1/Mpc` to `K_MAX_SPLINE` and
 `z_max_pk = 1/A_SPLINE_MINLOG_PK − 1`, then fills its own (a, k) grid with
 `pk_lin`; a code comment states that the lowest CLASS k could not be read
-from the Python interface and is set to 10⁻⁵ [src: installed,
-`boltzmann.py`].
+from the Python interface and is set to 10⁻⁵ [doc: installed pyccl 3.3.6,
+pyccl/boltzmann.py, 2026-10-26].
 
-**cosmoprimo → CAMB** [src: cosmoprimo 1.0.0 installed, `camb.py`]:
+**cosmoprimo → CAMB** [doc: installed cosmoprimo 1.0.0, cosmoprimo/camb.py, 2026-10-26]:
 
 - `set_matter_power(kmax=kmax_pk * h)`: `kmax_pk` (default 10) is in
-  h Mpc⁻¹ and converted to CAMB's Mpc⁻¹.
+  h Mpc⁻¹ and converted to CAMB's Mpc⁻¹ [doc: installed cosmoprimo 1.0.0,
+  cosmoprimo/camb.py and cosmoprimo/cosmology.py, 2026-10-26].
 - `set_for_lmax(lmax=ellmax_cl)` with no `lens_potential_accuracy`
   argument, hence CAMB v2's automatic value (`systematics.md#default-accuracy-and-non-linear-settings-of`).
 - `non_linear='mead'` or `'hmcode'` → CAMB `'mead'` (HMcode-2016);
@@ -118,7 +122,7 @@ occurred; for Eisenstein–Hu only the high-k end was extrapolated; for the
 Cosmic Emulator the spline range was fixed to 10⁻³–5 Mpc⁻¹, the emulator's
 validity range [src: Sect. III.2].
 
-Defaults in pyccl 3.3.6 [src: installed, `pyccl.spline_params`]:
+Defaults in pyccl 3.3.6 [doc: installed pyccl 3.3.6, `pyccl.spline_params`, 2026-10-26]:
 
 | Parameter | Default | Meaning as read |
 |---|---|---|
@@ -152,7 +156,9 @@ outputs") [src: Sect. IV.2.2]; the installed default is
 CCL uses GSL for all integrations and interpolations; most
 interpolations are Akima, P(k) is bicubic, and the code is in double
 precision throughout [src: arXiv:1812.05995, Sect. III]. Defaults of
-`pyccl.gsl_params` in 3.3.6 [src: installed]:
+`pyccl.gsl_params` in 3.3.6 follow.
+
+From `pyccl.gsl_params` [doc: installed pyccl 3.3.6, `pyccl.gsl_params`, 2026-10-26]:
 
 | Parameter | Default |
 |---|---|
@@ -168,7 +174,7 @@ integral is "the relevant concern for numerical accuracy" [src:
 Sect. IV.3]. The lensing kernel is integrated by spline by default;
 pyccl warns, when the n(z) has fewer samples than the lensing-kernel χ
 grid, to set `LENSING_KERNEL_SPLINE_INTEGRATION = False` before building
-the cosmology [src: installed, `tracers.py`].
+the cosmology [doc: installed pyccl 3.3.6, pyccl/tracers.py, 2026-10-26].
 
 ### Step 5. Angular spectra and real-space transforms
 <!-- key: step-5-angular-spectra-and-real-space-transforms -->
@@ -180,7 +186,8 @@ the cosmology [src: installed, `tracers.py`].
   limits adapted to the window functions, bounded by `K_MIN` and `K_MAX`
   [src: Sect. III.3.1]. The installed `angular_cl` defaults are
   `limber_integration_method='qag_quad'`, `l_limber=-1` (Limber
-  everywhere), `non_limber_integration_method='FKEM'` [src: installed].
+  everywhere), `non_limber_integration_method='FKEM'` [doc: installed pyccl 3.3.6,
+  `pyccl.angular_cl` signature, 2026-10-26].
   The 2018 paper's non-Limber route was Angpow, limited to galaxy
   clustering without magnification [src: Sect. III.3.2].
 - Real-space correlation functions: the flat-sky Hankel transform is the
@@ -190,12 +197,13 @@ the cosmology [src: installed, `tracers.py`].
   extrapolation C_ℓ ∝ ℓ^β with β from the last two input values; the
   paper states agreement with brute force "well within cosmic-variance
   uncertainties" [src: Sect. III.4]. The installed `correlation` default
-  is `method='fftlog'` [src: installed].
+  is `method='fftlog'` [doc: installed pyccl 3.3.6, `pyccl.correlation`
+  signature, 2026-10-26].
 - FFTLog accuracy parameters for 3D Hankel transforms (`FFTLogParams`):
   `padding_lo_fftlog = 0.1`, `padding_hi_fftlog = 10`, `n_per_decade = 100`,
   `extrapol = 'linx_liny'`, `plaw_fourier = −1.5` (the pre-whitening tilt
-  P(r) ∝ r^tilt "to avoid aliasing"), `plaw_projected = −1.0` [src:
-  installed, `fftlog_params.py`].
+  P(r) ∝ r^tilt "to avoid aliasing"), `plaw_projected = −1.0` [doc:
+  installed pyccl 3.3.6, pyccl/_core/parameters/fftlog_params.py, 2026-10-26].
 
 ### Step 6. Configure the halo-model calculator
 <!-- key: step-6-configure-the-halo-model-calculator -->
@@ -204,12 +212,14 @@ In pyccl 3.3.6 the halo model is an explicit `HMCalculator` object with
 no default mass function or bias: `mass_function` and `halo_bias` are
 required keyword arguments; `log10M_min = 8`, `log10M_max = 16`,
 `nM = 128` samples uniform in log₁₀ M, `integration_method_M='simpson'`
-(or `'spline'`) [src: installed, `halo_model.py`]. Its consistency check
+(or `'spline'`) [doc: installed pyccl 3.3.6, pyccl/halos/halo_model.py, 2026-10-26]. Its consistency check
 raises "Inconsistent mass definitions" when profiles, mass function and
-bias use different mass definitions [src: same]. Eleven mass
+bias use different mass definitions [doc: installed pyccl 3.3.6,
+pyccl/halos/halo_model.py, 2026-10-26]. Eleven mass
 functions, four bias models and seven concentration models are shipped
 (module listing of `pyccl.halos`); `MassFuncTinker08` defaults to
-`mass_def="200m"` [src: installed].
+`mass_def="200m"` [doc: installed pyccl 3.3.6, `pyccl.halos` listing and
+`MassFuncTinker08` signature, 2026-10-26].
 
 Low-mass completion. The two-halo term should tend to the linear spectrum
 as k → 0, which is numerically hard because most mass functions place
@@ -219,8 +229,8 @@ the missing mass "as a delta function in mass at the lower limit"
 [src: arXiv:1812.05995, Sect. III.5]. The installed calculator does the
 same: it stores (ρ₀ − ∫ M n dM)/M₀ and, for bias-weighted integrals,
 (ρ₀ − ∫ M n b dM)/M₀, and adds that term times the integrand at the lowest
-mass [src: installed, `_get_mass_function`, `_get_halo_bias`,
-`_integrate_over_mf`]. Lowering `log10M_min` changes how much of the
+mass [doc: installed pyccl 3.3.6, pyccl/halos/halo_model.py, `_get_mass_function`,
+`_get_halo_bias`, `_integrate_over_mf`, 2026-10-26]. Lowering `log10M_min` changes how much of the
 integral is carried by this correction.
 
 σ(M) and the mass function (arXiv:1812.05995). dσ⁻¹/dM is obtained from a spline of σ(M)
@@ -399,7 +409,8 @@ backend (Boltzmann solver or emulator) [src: Computational times].
   `log10M_max` and check the k → 0 limit of the two-halo term against the
   linear spectrum.
 - **Lensing kernel under-sampled.** pyccl's warning (Step 4) is emitted
-  with `importance='low'` [src: installed].
+  with `importance='low'` [doc: installed pyccl 3.3.6, pyccl/tracers.py,
+  2026-10-26].
 - **jax-cosmo outside its physics.** No radiation, no massive neutrinos,
   Eisenstein–Hu transfer, Limber only, no RSD in number counts (pyccl or
   jax-cosmo above). Test: compare with pyccl at the analysis' scales and
@@ -435,7 +446,8 @@ backend (Boltzmann solver or emulator) [src: Computational times].
   power spectrum was not read in the CAMB paper or measured.
 - The meaning of the pyccl parameters `DLOGK_INTEGRATION` (0.025),
   `DCHI_INTEGRATION` (5) and `N_K_3DCOR` (100 000) was not read in a
-  docstring; only their values.
+  docstring; only their values [doc: installed pyccl 3.3.6,
+  `pyccl.spline_params`, 2026-10-26].
 - cosmoprimo's CLASS engine settings (precision parameters passed to
   `pyclass`) and its JAX-friendly parts were not read.
 - cloelib's units and its accuracy against benchmarks were not read
@@ -448,5 +460,6 @@ backend (Boltzmann solver or emulator) [src: Computational times].
   printed, the figure was not inspected.
 - Whether pyccl 3.3.6 still accepts `matter_power_spectrum='camb'` as the
   switch to the CAMB non-linear branch was inferred from the `'camb'`
-  entry of its `MatterPowerSpectra` enumeration, not run.
+  entry of its `MatterPowerSpectra` enumeration, not run [doc: installed
+  pyccl 3.3.6, `pyccl.MatterPowerSpectra`, 2026-10-26].
 - Spectroscopic CLOE validation (PBJ, COFFE benchmarks) was not read.

@@ -28,7 +28,7 @@ in Gpc⁻³ yr⁻¹; FIM the Fisher information matrix of the waveform
 parameters. Network labels are those of the cited papers: `Δ-10km` and
 `Δ-15km` for an ET triangle with 10 or 15 km arms, `2L-15km-45°` for two
 L-shaped ET detectors with 15 km arms rotated by 45°, CE40 and CE20 for
-Cosmic Explorer with 40 and 20 km arms, A# for upgraded LIGO.
+Cosmic Explorer with 40 and 20 km arms, A# for upgraded LIGO. <!-- num: not a value -->
 
 ### Step 1. Fix the network, the time and the duty cycle
 <!-- key: step-1-fix-the-network-the-time-and-the-duty -->

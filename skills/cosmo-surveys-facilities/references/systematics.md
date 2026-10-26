@@ -94,7 +94,7 @@ hardware or strategy choice creates the effect and where to read on.
   depth, seeing, extinction and stellar density modulate the target density
   (Sect. 2.1). A change of imaging survey inside the footprint is a change
   of selection: the Legacy Surveys switch from Bok/Mayall grz to DECam at
-  Dec = 32.375° (legacysurvey.org DR11 description) [src].
+  Dec = 32.375° (legacysurvey.org DR11 description) [doc: https://www.legacysurvey.org/dr11/description/, 2026-10-26].
 - **Requirement.** For DESI targeting: photometric nights with 1% rms
   photometricity in g and r and 2% in z, no region over 3° across covered
   only by non-photometric data, systematic photometry errors from PSF and
@@ -110,8 +110,8 @@ hardware or strategy choice creates the effect and where to read on.
 ### 1.5 Hardware faults as selection effects
 <!-- key: hardware-faults-as-selection-effects -->
 
-A spectrograph misalignment stopped WEAVE from 16 September 2024 to July
-2025 (ING WHT page) [src]. Interruptions of this kind change the footprint
+A stand-down of WEAVE "for investigation of spectrograph misalignment"
+began on 17 June 2024 (WEAVE project timeline) [doc: https://weave-project.atlassian.net/wiki/spaces/WEAVE/pages/164298821/Timeline, 2026-10-26]; the timeline gives no end date. Interruptions of this kind change the footprint
 and the depth pattern a survey finally delivers, and design numbers do not
 anticipate them (`open-questions.md`, Sect. 1).
 
@@ -355,7 +355,7 @@ cluster lensing. Where: `cosmo-weak-lensing`, `cosmo-clusters`.
 ## Not verified
 <!-- key: not-verified -->
 
-- SDSS-I/II fibre-collision angular scale. (BOSS 62″ and DESI patrol
+- SDSS-I/II fibre-collision angular scale. (BOSS and DESI patrol
   disc: closed, Sect. 1.1.)
 - Size of the north/south photometric offset in the Legacy Surveys and how
   DESI DR2 treats it.

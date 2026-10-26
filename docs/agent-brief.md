@@ -218,7 +218,7 @@ content is an argument. Start each with a one-line scope and
    will decide, forecasts (labelled). Also the misconceptions and stale
    claims that still circulate, each with the paper that corrects it.
 
-### `SKILL.md` — follow this shape exactly, 400–700 words
+### `SKILL.md` — follow this shape exactly (no word limit; owner, 2026-10-26)
 
 ```markdown
 ---

@@ -60,8 +60,8 @@ procedure; the procedure below is read in code papers.
   reproduces the released outputs across the model grid" [src: same].
   The CAMB README says the suite runs on GitHub Actions for new commits
   and pull requests, with reference results kept in a separate test-outputs
-  repository [sec: web https://github.com/cmbant/CAMB README, read
-  2026-10-19]. CCL in 2018 ran accuracy checks in C and unit tests in
+  repository [doc: https://raw.githubusercontent.com/cmbant/CAMB/master/README.rst,
+  2026-10-26]. CCL in 2018 ran accuracy checks in C and unit tests in
   Python on a continuous-integration service, "ensuring that the code
   remains reliable as we continue to improve it" (Chisari et al. 2018,
   arXiv:1812.05995) [src: Sect. V]. CCL compares each output with known
@@ -241,9 +241,9 @@ What each source asks:
 
 | Code | What to cite | Source |
 |---|---|---|
-| CLASS | "at least" CLASS II: Approximation schemes (arXiv:1104.2933); "Feel free to cite more CLASS papers!" | [sec: web https://github.com/lesgourg/class_public README, read 2026-10-19] |
-| CAMB | the CAMB 2 paper (arXiv:2607.14854) and the closed-FRW paper (arXiv:astro-ph/9911177), "and references therein as appropriate" | [sec: web https://github.com/cmbant/CAMB README, read 2026-10-19] |
-| CCL | arXiv:1812.05995 and a link to the repository; for external packages used through CCL (CLASS, CAMB, FAST-PT, velocileptors, emulators), follow their licences and cite their papers; no version or DOI rule stated | [sec: web https://ccl.readthedocs.io/en/latest/source/citation.html, read 2026-10-19] |
+| CLASS | "at least" CLASS II: Approximation schemes (arXiv:1104.2933); "Feel free to cite more CLASS papers!" | [doc: https://raw.githubusercontent.com/lesgourg/class_public/master/README.md, 2026-10-26] |
+| CAMB | the CAMB 2 paper (arXiv:2607.14854) and the closed-FRW paper (arXiv:astro-ph/9911177), "and references therein as appropriate" | [doc: https://raw.githubusercontent.com/cmbant/CAMB/master/README.rst, 2026-10-26] |
+| CCL | arXiv:1812.05995 and a link to the repository; for external packages used through CCL (CLASS, CAMB, FAST-PT, velocileptors, emulators), follow their licences and cite their papers; no version or DOI rule stated | [doc: https://ccl.readthedocs.io/en/latest/source/citation.html, 2026-10-26] |
 | flip | arXiv:2501.16852 and arXiv:2303.01198 | `physics-and-methods.md#flip` |
 | cosmoprimo, desilike, pypower, pycorr | no code paper found: cite the repository | `SKILL.md` |
 
@@ -251,7 +251,7 @@ Neither the CLASS nor the CAMB README asks for a version number. The CAMB
 README lists branches that matter for reproduction: "1.6.6 is the last
 Planck-era precision version, as used by Planck analysis", and `CAMB_v0`
 "the old Fortran-oriented ... version as used by the Planck 2018
-analysis" [sec: web, CAMB README, read 2026-10-19]. The referee check that
+analysis" [doc: cmbant/CAMB/README.rst on `master`, 2026-10-26]. The referee check that
 a paper names the version is in `systematics.md#what-a-referee-checks`.
 
 ## Choices and what they cost
@@ -429,7 +429,8 @@ Record which one was used (Step 5).
 
 - The CAMB README's two statements on which version Planck used (1.6.6
   "as used by Planck analysis", `CAMB_v0` "as used by the Planck 2018
-  analysis") are quoted as read; which Planck analyses each refers to was
+  analysis") are quoted as read [doc: cmbant/CAMB/README.rst on `master`,
+  2026-10-26]; which Planck analyses each refers to was
   not checked.
 - The coverage of the CAMB, CCL and CLASS test suites (which outputs,
   which tolerances) was not read; the CLASS README states nothing about

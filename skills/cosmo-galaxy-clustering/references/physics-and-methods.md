@@ -4,7 +4,7 @@ Scope: what spectroscopic galaxy and quasar clustering measures, the
 estimators, the theory models in current use, covariance, blinding, codes and
 conventions. Snapshot: 2026-10-14.
 
-Flags: `[src]` read this session in the cited paper or official page; `[sec]`
+Flags: `[src]` read in the cited paper; `[doc: <page>, <date>]` read on an official page on that date; `[sec]`
 taken from a named secondary source; `[der]` derived here, derivation stated.
 
 ## 1. What is measured and why it constrains cosmology

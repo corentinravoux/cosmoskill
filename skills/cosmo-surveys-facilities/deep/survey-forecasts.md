@@ -14,7 +14,7 @@ forecasts (arXiv:1808.07445).
 Already in L2, not repeated here: the FKP weight, the integral form of
 V_eff and the n̄P ≈ 1 rule in
 `physics-and-methods.md#number-density-np-and-effective-volume`; rules for
-comparing figures of merit and the Euclid "above 400" forecast in
+comparing figures of merit and the Euclid figure-of-merit forecast in
 `physics-and-methods.md#dark-energy-task-force-stages-and-the-figure-of`;
 the Knox band-power error and current CMB map depths in
 `physics-and-methods.md#cmb-sensitivity-map-depth-resolution-and-sky`; the

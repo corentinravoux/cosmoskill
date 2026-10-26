@@ -30,7 +30,7 @@ extinction law; Δλ: shift of the mean wavelength of a passband between
 the standard and the actual one; s(z) = d log₁₀ N(z, > m)/dm and α =
 2.5 d log N/dm: number-count slopes in the notation of the two papers
 that use them; b_g, b_r: linear clustering bias of a galaxy sample and of
-a reference sample.
+a reference sample. <!-- num: not a value -->
 
 ## How it is done
 <!-- key: how-it-is-done -->

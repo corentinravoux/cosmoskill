@@ -442,7 +442,7 @@ Unite's.
 - The Armstrong et al. coverage paper behind the DES-SN5YR "> 95 %"
   statement (arXiv:2401.02945, Sect. VII.2) was not identified or read.
 - The chain-shifting blinding formalism cited by Pantheon+ (its
-  reference 49) was not identified.
+  reference 49) was not identified. <!-- num: not a value -->
 - Handley & Lemos 2019 (Suspiciousness) and Trotta 2008 (evidence scale)
   were not read; their use is quoted from Unite and DES-Dovekie.
 - Whether Pantheon+'s printed `w(z)` is a rendering or a paper error.

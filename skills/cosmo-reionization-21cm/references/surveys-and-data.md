@@ -98,14 +98,18 @@ Notes.
 | CHORD | 512 six-metre dishes in a core at the Dominion Radio Astrophysical Observatory, 300–1500 MHz, drift scan; two 64-dish outriggers at Hat Creek and Green Bank | three-dish engineering array evaluated; 64-dish pathfinder being commissioned; "The full array will be commissioned in 2028" | The CHORD Collaboration 2026, arXiv:2607.09374 | [src: abstract] |
 | HIRAX | six-metre fibreglass dishes with f/D = 0.21, at the SARAO SKA site in South Africa; target redshift 0.78–2.55 | "being deployed"; metrology of the first 28 dishes published; surface accuracy within requirements, feed-placement precision not yet | Studer et al. 2026, arXiv:2607.26972 | [src: abstract] |
 | SKA-Mid | Band 1 covers 350–1050 MHz; the "Wide" HI survey assumes AA4, z = 0.35–3, 20,000 deg², 10,000 h | under construction on the Karoo site next to MeerKAT | arXiv:2606.25955; Wolz et al. 2026, arXiv:2607.03259, section 2.1 | [src] |
-| SKA-Low | the "Deep" HI survey assumes AA4, 100 deg², ~5,000 h, 200–350 MHz (3 < z < 6) | under construction [sec: web search of SKAO documents, below] | arXiv:2607.03259, section 2.1 | [src] |
+| SKA-Low | the "Deep" HI survey assumes AA4, 100 deg², ~5,000 h, 200–350 MHz (3 < z < 6) | under construction [doc: https://www.skao.int/en/explore/construction-journey, 2026-10-26] | arXiv:2607.03259, section 2.1 | [src] |
 
-SKA staging, from a web search of SKAO documents on 2026-10-10 (https://www.skao.int,
-staged-delivery document SKAO-TEL-0002299) [sec]: the array assemblies are AA0.5, AA1, AA2, AA*
-and AA4; construction pauses at AA*, which comprises 144 dishes (80 SKA-Mid dishes with the 64
-MeerKAT dishes) and 307 SKA-Low stations; AA2 is the start of science verification. The dates
-found disagree between SKAO documents (AA* in 2028 on one page, 2029 in another) and the SKAO
-timeline page could not be opened; no date is given here.
+SKA staging (SKAO construction-journey page [doc:
+https://www.skao.int/en/explore/construction-journey, 2026-10-26]): array
+assemblies from AA0.5 to AA4; the preliminary array AA*, matched to the
+anticipated funding, comprises 80 SKA-Mid dishes integrated with 64 MeerKAT
+dishes (144 dishes) and 307 SKA-Low stations; the design baseline AA4 is 197
+SKA-Mid dishes and 512 SKA-Low stations; by the completion of AA2 both
+telescopes reach or pass the sensitivity of comparable existing facilities,
+and science verification runs while each assembly is built. The dates found
+disagree between SKAO documents (AA* in 2028 on one page, 2029 in another); no
+date is given here.
 
 ## 4. Line-intensity mapping experiments (CO, [CII], Lyα)
 <!-- key: line-intensity-mapping-experiments-co-cii -->

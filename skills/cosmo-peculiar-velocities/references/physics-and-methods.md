@@ -541,7 +541,7 @@ gas physics, which belong with the CMB side to `cosmo-cmb-lss-cross-correlations
 <!-- key: not-verified-in-this-file -->
 
 - Tully & Fisher 1977 (A&A 54, 661): no DOI or arXiv record found and abstract not read; cited only
-  through Turner 2024.
+  through Turner 2024. <!-- num: not a value -->
 - The k range of the small-scale density nuisance b_add of the L22 model (arXiv:2209.04166): not
   found on 2026-10-23, the numbers were removed.
 - The scale range of the SDSS PV power-spectrum fit (arXiv:2411.09571) and the k_max of the 6dFGS

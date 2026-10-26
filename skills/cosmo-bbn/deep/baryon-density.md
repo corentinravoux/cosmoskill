@@ -24,7 +24,7 @@ y_DP = 10⁵ (D/H)_P; Y_P the primordial helium fraction, as a nucleon
 fraction 4n_He/n_b unless a paper defines it as a mass fraction (stated
 where it matters); τ_n the neutron lifetime; N_eff the effective number
 of relativistic species; "theory error" the spread of a predicted
-abundance from nuclear-rate and τ_n uncertainties.
+abundance from nuclear-rate and τ_n uncertainties. <!-- num: not a value -->
 
 ## How it is done
 <!-- key: how-it-is-done -->

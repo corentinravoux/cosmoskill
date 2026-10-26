@@ -58,10 +58,12 @@ CMB and SNe datasets" (arXiv:2503.14738) [src].
 | DESI DR1 LRG bispectrum | adds higher-order information | first cosmology in June 2026 | arXiv:2606.23936 | [src] |
 | DES Y6 BAO | photometric BAO, part of the DES all-probe combination | — | arXiv:2605.27221 | [src] |
 
-DESI finished its planned survey in April 2026 (Ohio State University news
-release of 17 April 2026, "DESI finishes observations for largest 3D map of
-universe") [sec]; the sibling `cosmo-galaxy-clustering` gives the same date.
-No DESI DR2 full-shape cosmology exists at the snapshot (sibling
+DESI completed the observations of its planned five-year survey "ahead of
+schedule" (DESI announcement of 15 April 2026, "DESI Reaches Mapping
+Milestone, Surpassing Expectations") [doc:
+https://www.desi.lbl.gov/2026/04/15/desi-reaches-mapping-milestone-surpassing-expectations/,
+2026-10-26]; the sibling `cosmo-galaxy-clustering` gives the same date. No
+DESI DR2 full-shape cosmology exists at the snapshot (sibling
 `cosmo-galaxy-clustering`) [sec].
 
 ### 3.2 Supernovae
@@ -134,7 +136,7 @@ arXiv listing].
 
 | Data | When | What it decides | Source | Flag |
 |---|---|---|---|---|
-| DESI full five-year survey: BAO, then full shape | first dark-energy results expected in 2027 | whether the BAO + CMB preference grows as `sqrt(volume)` or stalls; DR2 full shape for μ, Σ | Ohio State University news release, 17 April 2026 | [sec] |
+| DESI full five-year survey: BAO, then full shape | first dark-energy results expected in 2027 | whether the BAO + CMB preference grows as `sqrt(volume)` or stalls; DR2 full shape for μ, Σ | DESI announcement, 15 April 2026 | [doc: https://www.desi.lbl.gov/2026/04/15/desi-reaches-mapping-milestone-surpassing-expectations/, 2026-10-26] |
 | Euclid DR1 | "DR1-Foundation" (raw and calibrated images, catalogues, spectra, about 1900 deg²) in November 2026; complete DR1 with clustering and weak-lensing science products in mid-2027 | independent BAO, RSD and lensing; first Euclid `w0wa` and μ–Σ | ESA Euclid "DR1 Timeline" page, www.cosmos.esa.int/web/euclid/dr1-timeline, as returned by a web search on 2026-10-08 | [sec] |
 | Modern low-redshift supernova anchors (DEBASS, ZTF) | pending | the low-redshift half of the supernova signal | `cosmo-supernovae` | [sec] |
 | Rubin LSST lensing with DESI lenses | full survey | `E_G` able to reject GR for some modified-gravity scenarios (**forecast**) | Leonard et al. 2025, arXiv:2511.19194 | [src] |

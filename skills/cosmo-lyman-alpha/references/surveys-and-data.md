@@ -50,7 +50,7 @@ Growth of the DESI Lyα BAO sample: DR2 is about twice DR1 (arXiv:2503.14739 [sr
 
 Instrument facts that matter for the forest (arXiv:2503.14739, Sects. 2.4 and 6.3) [src]: the DESI blue channel has resolution 2000–3000 against 1500–2000 for the SDSS spectrographs; forests are measured over 3600–5772 Å (the lower bound is the design minimum wavelength, the upper the blue–red dichroic transition); DR1 quasars mostly had a single observation, so the typical S/N of DR1 was somewhat lower than eBOSS DR16, whereas most DR2 quasars have multiple observations. For P1D only the high-S/N subset is used: 62,807 spectra in the DR1 cosmological analysis, against 13,821 (BOSS) and 43,751 (eBOSS) (arXiv:2601.21432, Sect. 6.2) [src].
 
-Public-data status. EDR was released on 13 June 2023 and DR1 on 19 March 2025 [sec: DESI data-release page `data.desi.lbl.gov/doc/releases/`, fetched 2026-10-08]; the papers are arXiv:2306.06308 and arXiv:2503.14745. For DR2 only the cosmology chains and supporting products were released, on 6 October 2025, with the full DR2 to follow "in some months" [sec: DESI collaboration news page of that date, fetched 2026-10-08]; the release page listed no DR2 spectra when fetched. The DR1 P1D data vectors are on Zenodo (records 16943723 for QMLE and 17100543 for FFT; arXiv:2601.21432, Sect. 2.1) [src]. The EDR Lyα delta catalogue is a public value-added catalogue (arXiv:2306.06312) [src].
+Public-data status. EDR was released on 13 June 2023 and DR1 on 19 March 2025 [doc: https://data.desi.lbl.gov/doc/releases/, 2026-10-26]; the papers are arXiv:2306.06308 and arXiv:2503.14745. For DR2 only the cosmology chains and supporting products were released, on 6 October 2025, with the full DR2 to follow "in some months" [doc: https://www.desi.lbl.gov/2025/10/06/desi-dr2-cosmology-chains-and-data-products-released/, 2026-10-26]; the release page lists no DR2 spectra or catalogues [doc: https://data.desi.lbl.gov/doc/releases/, 2026-10-26]. The DR1 P1D data vectors are on Zenodo (records 16943723 for QMLE and 17100543 for FFT; arXiv:2601.21432, Sect. 2.1) [src]. The EDR Lyα delta catalogue is a public value-added catalogue (arXiv:2306.06312) [src].
 
 ## 4. High-resolution and intermediate-resolution samples
 <!-- key: high-resolution-and-intermediate-resolution -->
@@ -164,7 +164,7 @@ P1D uses a quality-selected subset, so the counts are much smaller: 3,035 (SDSS)
 | Sherwood P3D measurements | `github.com/andreufont/sherwood_p3d` | arXiv:2205.00962 | [src] |
 | AbacusSummit Lyα skewers and QSO catalogues | Globus, as stated | arXiv:2305.08899 | [src] |
 | Nyx-based non-linear power tables and fit parameters | stated public | arXiv:1506.04519 | [src] |
-| CLAMATO DR1 and DR2 | redshifts, spectra, pixel data, maps; DR2 on Zenodo (record 7524313) | arXiv:1710.02894, arXiv:2109.09660 | [src] |
+| CLAMATO DR1 and DR2 | redshifts, spectra, pixel data, maps; DR2 on Zenodo (record 7524313) | arXiv:1710.02894, arXiv:2109.09660 | [src] <!-- num: not a value --> |
 | LATIS | spectra, redshifts, transmission pixels, maps, mock surveys | arXiv:2510.08815 | [src] |
 | KODIAQ DR2 | Keck Observatory Archive and igmspec | arXiv:1707.07905 | [src] |
 | XQ-100 | all data products public | arXiv:1607.08776 | [src] |

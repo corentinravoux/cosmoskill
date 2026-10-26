@@ -31,7 +31,7 @@ position i in season j; S_b^obs(λ): observing passband of band b, a
 function of focal-plane position, pointing and time; S_b^std(λ): the
 chosen standard passband; δ_b^std: the correction from observed to
 standard magnitude; E^gray: residual grey (wavelength-independent)
-extinction.
+extinction. <!-- num: not a value -->
 
 ## How it is done
 <!-- key: how-it-is-done -->

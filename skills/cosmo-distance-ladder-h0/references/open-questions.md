@@ -281,7 +281,7 @@ measurement.
 
 | Question | Data | When | Flag |
 |---|---|---|---|
-| Gaia zero point and the MW anchor | Gaia DR4 | 2 December 2026 | [src] ESA page |
+| Gaia zero point and the MW anchor | Gaia DR4 | 2 December 2026 | [doc: https://www.cosmos.esa.int/web/gaia/release, 2026-10-26] |
 | Calibrator sample variance; JAGB standardisation | more JWST hosts; spectroscopic purity surveys (arXiv:2609.25412) | ongoing | [src] |
 | Time-delay H0 with free lambda_int, toward per cent precision | TDCOSMO-2026 hierarchical analysis | announced (arXiv:2608.27566) | [src: abstract] |
 | Third rung without SNe, toward a per cent measurement | DESI PV calibrated directly on Cepheids / TRGB | later DESI releases (arXiv:2512.03232) | [src: abstract] |

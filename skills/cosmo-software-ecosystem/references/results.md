@@ -96,7 +96,7 @@ These timings come from the author of one of the two codes; the 2011 comparison 
 | CLOE against benchmark codes | "all the summary statistics of interest always differ less than 0.1 σ from the chosen benchmark" | Euclid photometric and spectroscopic observables | Euclid Collaboration 2025, arXiv:2510.09141 | [src: abstract] |
 | jax-cosmo | no accuracy figure in the abstract | — | arXiv:2302.05163 | — |
 
-The pyccl default for the non-Limber method is `non_limber_integration_method='FKEM'`, with `l_limber=-1` and `limber_max_error=0.01` [src: pyccl 3.3.6 installed, `angular_cl` signature].
+The pyccl default for the non-Limber method is `non_limber_integration_method='FKEM'`, with `l_limber=-1` and `limber_max_error=0.01` [doc: installed pyccl 3.3.6, `angular_cl` signature, 2026-10-26].
 
 ## 3. Samplers: documented comparisons
 <!-- key: samplers-documented-comparisons -->
@@ -153,7 +153,7 @@ The conclusion of arXiv:2404.07272 also records the history behind the compariso
 |---|---|---|---|---|
 | Corrfunc speed | a projected correlation function w_p(r_p) for about 1 million galaxies "within a few seconds on a single thread" | — | arXiv:1911.03545 | [src] |
 | NaMaster validation | recovers the input power spectra "in the most complex scenarios with no detectable bias" | validation suite resembling next-generation LSS and ground-based CMB observations | arXiv:1809.09603 | [src] |
-| TreeCorr default tolerance | `bin_slop` chosen so that `bin_slop × bin_size` = 0.1, or `bin_slop` = 1 when `bin_size` < 0.1 | logarithmic binning; the documentation recommends halving `bin_slop` as a convergence test | [src: TreeCorr 5.1 documentation via context7] | [src] |
+| TreeCorr default tolerance | `bin_slop` chosen so that `bin_slop × bin_size` = 0.1, or `bin_slop` = 1 when `bin_size` < 0.1 | logarithmic binning; the documentation recommends halving `bin_slop` as a convergence test | [doc: rmjarvis/TreeCorr/treecorr/corr2base.py and docs/binning.rst on `releases/5.1`, 2026-10-26] | [doc: rmjarvis/TreeCorr/treecorr/corr2base.py, 2026-10-26] |
 | FlowPM against a Python particle-mesh code | "on an average 10x speed-up in terms of wallclock time" | — | arXiv:2010.11847 | [src: abstract] |
 | DISCO-DJ particle-mesh | 6 time steps for per-cent-level accuracy in the present-day power spectrum at k ≈ 0.2 h Mpc⁻¹ with N = 512³ particles, "which takes just a few seconds" | BullFrog integrator, GPU | arXiv:2510.05206 | [src: abstract] |
 | Lyα BAO pipeline (picca + Vega) on mocks | model "able to recover unbiased measurements of the BAO position" | 150 synthetic realisations of DESI DR1 | Cuceu et al. 2024, arXiv:2404.03004 | [src: abstract] |
@@ -183,12 +183,12 @@ No paper comparing pypower with nbodykit, or pycorr (the Corrfunc wrapper) with 
 
 | Quantity | Older value | Current value | Where each is still found | Flag |
 |---|---|---|---|---|
-| Default N_eff | 3.046 | 3.044 | 3.044 in camb 2.0.4 (`nnu`), pyccl 3.3.6 (`Neff`), cosmoprimo 1.0.0 (`N_eff`) and CLASS v3.2.3 (`N_ur` in `explanatory.ini`); 3.046 in astropy `Planck15` and `Planck18`; 3.04 is the default of astropy `FlatLambdaCDM` | [src: installed packages and checkout] |
+| Default N_eff | 3.046 | 3.044 | 3.044 in camb 2.0.4 (`nnu`), pyccl 3.3.6 (`Neff`), cosmoprimo 1.0.0 (`N_eff`) and CLASS v3.2.3 (`N_ur` in `explanatory.ini`); 3.046 in astropy `Planck15` and `Planck18`; 3.04 is the default of astropy `FlatLambdaCDM` | [doc: installed camb 2.0.4, pyccl 3.3.6, cosmoprimo 1.0.0, astropy 8.0.1; lesgourg/class_public/explanatory.ini at tag v3.2.3, 2026-10-26] |
 | CAMB lensing source cutoff | max(kη₀) = 10375 (v1.x default, "tuned for Planck-era requirements") | max(kη₀) = 90000 (v2 default) | arXiv:2607.14854 | [src: Sect. IX, XI] |
-| CAMB `lens_potential_accuracy` | 0 "to reproduce the previous low-accuracy default" | `None`, meaning max(4, (ℓ_max − 1500)/500) | camb 2.0.4 `set_for_lmax` docstring | [src: installed] |
+| CAMB `lens_potential_accuracy` | 0 "to reproduce the previous low-accuracy default" | `None`, meaning max(4, (ℓ_max − 1500)/500) | camb 2.0.4 `set_for_lmax` docstring | [doc: installed camb 2.0.4, `CAMBparams.set_for_lmax`, 2026-10-26] |
 | CAMB against CLASS speed | CLASS about 2.5 times faster (2011) | CAMB v2 default 1.1 s against 4.3 s wall for CLASS default (2026, four threads, ℓ_max = 4000) | arXiv:1104.2934; arXiv:2607.14854 | [src: abstract of arXiv:1104.2934; Sect. XI, Table 1 of arXiv:2607.14854] |
 
-| HMcode | 2015 and 2016 versions | `mead2020` is the CAMB default version | camb 2.0.4 | [src: installed] |
+| HMcode | 2015 and 2016 versions | `mead2020` is the CAMB default version | camb 2.0.4 | [doc: installed camb 2.0.4, camb/nonlinear.py, 2026-10-26] |
 | EFTCAMB | EFTCAMB | H-EFTCAMB, "the official successor" | arXiv:2603.01662 | [src] |
 | DES sampler | MultiNest (Y1) | PolyChord (Y3), nautilus (Y6) | arXiv:2202.08233; sibling `cosmo-statistics-inference` | [src], [sec] |
 

@@ -4,7 +4,7 @@ Scope: what each family of cosmology codes computes, the method each member uses
 
 Snapshot: 2026-10-14
 
-Provenance of API facts: "installed" means the docstring or signature was read in the released package at the stated version (camb 2.0.4, pyccl 3.3.6, astropy 8.0.1, healpy 1.19.0, emcee 3.1.6, cosmoprimo 1.0.0). "checkout" means the source repository was read at the stated version or commit (CLASS v3.2.3, pypower 1.0.0, EFTCAMB commit of 2026-04-02; picca and flip at a development state, not a release, so their facts should be re-read in the release in use). "context7" means library documentation fetched through the context7 documentation service on 2026-10-11.
+Provenance of API facts: "installed" means the docstring or signature was read in the released package at the stated version (camb 2.0.4, pyccl 3.3.6, astropy 8.0.1, healpy 1.19.0, emcee 3.1.6, cosmoprimo 1.0.0). "checkout" means the source repository was read at the stated version or commit (CLASS v3.2.3, pypower 1.0.0, EFTCAMB commit of 2026-04-02; picca and flip at a development state, not a release, so their facts should be re-read in the release in use). "context7" means library documentation fetched through the context7 documentation service on 2026-10-11. The installed versions were re-read on 2026-10-26 [doc: installed camb 2.0.4, pyccl 3.3.6, astropy 8.0.1, healpy 1.19.0, emcee 3.1.6, cosmoprimo 1.0.0; lesgourg/class_public/explanatory.ini at tag v3.2.3; cosmodesi/pypower/pypower/_version.py, 2026-10-26].
 
 ## 1. Boltzmann solvers and their modified-gravity forks
 <!-- key: boltzmann-solvers-and-their-modified-gravity -->
@@ -41,9 +41,9 @@ Conventions read in the code papers:
 | Design statement | line-of-sight code extended to closed models in arXiv:astro-ph/9911177 | "very structured, easy to modify, and offers a rigorous way to control the accuracy of output quantities" (arXiv:1104.2932) |
 | Approximation schemes | — | tight-coupling approximation at first or second order, ultra-relativistic fluid approximation, radiation streaming approximation (Blas, Lesgourgues & Tram 2011, arXiv:1104.2933) |
 | Non-cold relics | massive-neutrino perturbation treatment documented in the appendix of Howlett et al. 2012, arXiv:1201.3654 | arbitrary phase-space distributions with automatic momentum sampling and a viscous-fluid approximation inside the Hubble radius (arXiv:1104.2935) |
-| Recombination default | `Recfast` class [src: camb 2.0.4 installed, default `CAMBparams().Recomb`] | `recombination = HyRec` [src: CLASS v3.2.3 checkout, `explanatory.ini`]; HYREC-2 is described in Lee & Ali-Haïmoud 2020, arXiv:2007.14114 |
-| Dark-energy default | `DarkEnergyFluid` class, `set_dark_energy(..., dark_energy_model='fluid')` [src: camb 2.0.4 installed] | `use_ppf = yes` [src: CLASS v3.2.3 checkout, `explanatory.ini`] |
-| Non-linear default | `NonLinear_none`; when switched on, `halofit_version='mead2020'` (HMcode-2020, arXiv:2009.01858) [src: camb 2.0.4 installed] | `non_linear =` left empty [src: CLASS v3.2.3 checkout, `explanatory.ini`] |
+| Recombination default | `Recfast` class [doc: installed camb 2.0.4, default `CAMBparams().Recomb`, 2026-10-26] | `recombination = HyRec` [doc: https://raw.githubusercontent.com/lesgourg/class_public/v3.2.3/explanatory.ini, 2026-10-26]; HYREC-2 is described in Lee & Ali-Haïmoud 2020, arXiv:2007.14114 |
+| Dark-energy default | `DarkEnergyFluid` class, `set_dark_energy(..., dark_energy_model='fluid')` [doc: installed camb 2.0.4, `set_dark_energy` signature, 2026-10-26] | `use_ppf = yes` [doc: https://raw.githubusercontent.com/lesgourg/class_public/v3.2.3/explanatory.ini, 2026-10-26] |
+| Non-linear default | `NonLinear_none`; when switched on, `halofit_version='mead2020'` (HMcode-2020, arXiv:2009.01858) [doc: installed camb 2.0.4, `CAMBparams()` and camb/nonlinear.py, 2026-10-26] | `non_linear =` left empty [doc: https://raw.githubusercontent.com/lesgourg/class_public/v3.2.3/explanatory.ini, 2026-10-26] |
 | Latest method paper | Lewis 2026, arXiv:2607.14854 (CAMB v2) | — |
 
 CAMB v2 (arXiv:2607.14854) is a substantial update: a new treatment of the hyperspherical Bessel functions used for line-of-sight integration in non-flat models, updated integrators, a recalibrated fast recombination model, stabilised parameterised post-Friedmann (PPF) dark-energy evolution and improved CMB-lensing accuracy.
@@ -53,10 +53,10 @@ The parameterised post-Friedmann prescription, which allows the equation of stat
 ### 1.3 Non-linear corrections shipped with the solvers
 <!-- key: non-linear-corrections-shipped-with-the-solvers -->
 
-CAMB 2.0.4 exposes these `halofit_version` names: `original`, `bird`, `peacock`, `takahashi`, `mead` (alias `mead2016`), `halomodel`, `casarini`, `mead2015`, `mead2020`, `mead2020_feedback` [src: camb 2.0.4 installed].
+CAMB 2.0.4 exposes these `halofit_version` names: `original`, `bird`, `peacock`, `takahashi`, `mead` (alias `mead2016`), `halomodel`, `casarini`, `mead2015`, `mead2020`, `mead2020_feedback` [doc: installed camb 2.0.4, `camb.nonlinear.halofit_version_names`, 2026-10-26].
 `takahashi` is the revised halofit of Takahashi et al. 2012, arXiv:1208.2701; `mead2020` and `mead2020_feedback` are HMcode-2020 without and with the baryonic-feedback model (arXiv:2009.01858).
-pyccl defaults to `matter_power_spectrum='halofit'` and can pass a `halofit_version` to CAMB through `extra_parameters` [src: pyccl 3.3.6 installed].
-cosmoprimo leaves `non_linear` empty by default and its docstring recommends "mead" when matching CLASS and CAMB [src: cosmoprimo 1.0.0 installed].
+pyccl defaults to `matter_power_spectrum='halofit'` and can pass a `halofit_version` to CAMB through `extra_parameters` [doc: installed pyccl 3.3.6, `pyccl.Cosmology` signature and docstring, 2026-10-26].
+cosmoprimo leaves `non_linear` empty by default and its docstring recommends "mead" when matching CLASS and CAMB [doc: installed cosmoprimo 1.0.0, cosmoprimo/cosmology.py, 2026-10-26].
 Two analyses that both "use halofit" may therefore use different fitting functions; the accuracy of each is in `results.md`.
 
 ### 1.4 Modified-gravity forks
@@ -72,14 +72,14 @@ Two analyses that both "use halofit" may therefore use different fitting functio
 
 The split that matters is between codes that solve a theory (EFTCAMB, H-EFTCAMB, hi_class) and codes that parameterise the phenomenology (MGCAMB, MGCLASS II).
 The first group guarantees a consistent background and stability; the second maps directly onto the μ–Σ constraints that surveys quote.
-Facades expose a subset: pyccl supports only the `MuSigmaMG` parameterisation [src: pyccl 3.3.6 installed], and cosmoprimo lists an optional `isitgr` extra [src: cosmoprimo 1.0.0 package metadata].
+Facades expose a subset: pyccl supports only the `MuSigmaMG` parameterisation [doc: installed pyccl 3.3.6, `pyccl.modified_gravity`, 2026-10-26], and cosmoprimo lists an optional `isitgr` extra [doc: installed cosmoprimo 1.0.0, package metadata, 2026-10-26].
 The physics of these parameterisations and the survey results belong to the sibling `cosmo-dark-energy-modified-gravity`.
 
 ### 1.5 Differentiable and accelerated solvers
 <!-- key: differentiable-and-accelerated-solvers -->
 
 DISCO-EB is a JAX solver whose outputs are differentiable with respect to all inputs, with massive neutrinos and a parameterised dark-energy fluid (Hahn, List & Porqueres 2023, arXiv:2311.03291).
-SymBoltz.jl is "a symbolic-numeric, approximation-free and differentiable linear Einstein-Boltzmann solver" [src: repository description, `hersle/SymBoltz.jl`]; its Chebyshev interpolation in k and ℓ is described in Sletmoen 2026, arXiv:2608.24682.
+SymBoltz.jl is "a symbolic-numeric, approximation-free and differentiable linear Einstein-Boltzmann solver" [doc: https://api.github.com/repos/hersle/SymBoltz.jl, 2026-10-26]; its Chebyshev interpolation in k and ℓ is described in Sletmoen 2026, arXiv:2608.24682.
 class_sz is a C and Python code for cross-survey observables (halo model, LSS and CMB), accelerated with emulators (Bolliet et al. 2023, arXiv:2310.18482).
 Neural emulators that replace the solver altogether are in section 9.
 
@@ -90,20 +90,20 @@ A facade gives one interface over one or several Boltzmann engines and adds the 
 
 | Facade | Engines | Scope | Units it returns | Differentiable |
 |---|---|---|---|---|
-| cosmoprimo | `class` (through `pyclass`), `camb`, `eisenstein_hu`, `eisenstein_hu_nowiggle`, `bbks` | background, thermodynamics, primordial, transfer, harmonic, Fourier | distances in Mpc/h, P(k) in (Mpc/h)³, H(z) in km/s/Mpc [src: cosmoprimo 1.0.0 installed] | partly: "Most of cosmoprimo, apart from Boltzmann solvers, is JAX-friendly", with `jax.jacfwd` examples on the `bbks` and `capse` engines [sec: web https://github.com/cosmodesi/cosmoprimo README, read 2026-10-14] |
-| pyccl | `boltzmann_camb` (default), other transfer functions and emulators | distances, growth, P(k), halo model, angular spectra with Limber or the non-Limber FKEM method, correlation functions | k in Mpc⁻¹, P(k) in Mpc³, distances in Mpc [src: pyccl 3.3.6 installed] | no |
-| astropy.cosmology | none (analytic FLRW) | background only | `Quantity` objects in Mpc and km/s/Mpc [src: astropy 8.0.1 installed] | no |
+| cosmoprimo | `class` (through `pyclass`), `camb`, `eisenstein_hu`, `eisenstein_hu_nowiggle`, `bbks` | background, thermodynamics, primordial, transfer, harmonic, Fourier | distances in Mpc/h, P(k) in (Mpc/h)³, H(z) in km/s/Mpc [doc: installed cosmoprimo 1.0.0, cosmoprimo/camb.py docstrings, 2026-10-26] | partly: "Most of cosmoprimo, apart from Boltzmann solvers, is JAX-friendly", with `jax.jacfwd` examples on the `bbks` and `capse` engines [doc: https://raw.githubusercontent.com/cosmodesi/cosmoprimo/main/README.md, 2026-10-26] |
+| pyccl | `boltzmann_camb` (default), other transfer functions and emulators | distances, growth, P(k), halo model, angular spectra with Limber or the non-Limber FKEM method, correlation functions | k in Mpc⁻¹, P(k) in Mpc³, distances in Mpc [doc: installed pyccl 3.3.6, `linear_matter_power` and `comoving_radial_distance` docstrings, 2026-10-26] | no |
+| astropy.cosmology | none (analytic FLRW) | background only | `Quantity` objects in Mpc and km/s/Mpc [doc: installed astropy 8.0.1, `Planck18.comoving_distance` and `Planck18.H0` units, 2026-10-26] | no |
 | jax-cosmo | Eisenstein–Hu transfer function, halofit | background, P(k), Limber angular spectra for lensing and clustering (arXiv:2302.05163) | not read | yes (JAX) |
 | cloelib | interfaces to established Boltzmann solvers | photometric and spectroscopic observables, CMB and cluster cross-correlations; "intended to serve as the reference theory computation infrastructure for Euclid's first cosmological release" (Bonici et al. 2026, arXiv:2605.23839) | not read | yes (JAX) |
 
 Points of difference:
 
-- cosmoprimo carries the DESI fiducial cosmology: `fiducial.DESI()` is the AbacusSummit base cosmology c000, described in its docstring as "Planck2018, base_plikHM_TTTEEE_lowl_lowE_lensing mean", with default engine `class` [src: cosmoprimo 1.0.0 installed].
+- cosmoprimo carries the DESI fiducial cosmology: `fiducial.DESI()` is the AbacusSummit base cosmology c000, described in its docstring as "Planck2018, base_plikHM_TTTEEE_lowl_lowE_lensing mean", with default engine `class` [doc: installed cosmoprimo 1.0.0, `fiducial.DESI` docstring, 2026-10-26].
 - pyccl was built around a validation suite: each predicted quantity has a documented numerical accuracy established against independent codes (Chisari et al. 2018, arXiv:1812.05995). Its non-Limber method is FKEM, the fastest method within the required accuracy in the N5K challenge (Leonard et al. 2022, arXiv:2212.04291).
 - What CCL validates is numerical accuracy only; physical accuracy of each model is discussed separately. The accuracy metric is a fractional difference for background quantities and, for C_ℓ, |ΔC_ℓ|/σ_ℓ with the full-sky cosmic-variance error σ_ℓ² = (C_ℓ^aa C_ℓ^bb + (C_ℓ^ab)²)/(2ℓ + 1), required below 0.1; the validation C_ℓ used the BBKS spectrum, and RSD and magnification were "not currently validated" in the 2018 paper (arXiv:1812.05995) [src: Sect. IV, IV.5, Eq. 95–96]. Values are in `systematics.md`, section 9.
 - The N5K challenge fixed the accuracy and compared run time: the LSST Y10 3x2pt data vector to Δχ² ≈ 0.2 on ℓ ≤ 200, on 64 cores of one node. FKEM took 0.437 s, the matter method 2.00 s, Levin 4.53 s, against 0.0445 s for CCL's Limber calculation; cosmology-independent precomputations were excluded (arXiv:2212.04291) [src: Sect. 5.1].
-- astropy.cosmology solves no perturbations: it has no P(k) and no σ8 calculation; the `sigma8` and `n` entries of `Planck18.meta` are stored metadata [src: astropy 8.0.1 installed].
-- flip computes its model power spectra through any of three engines, `class_engine`, `cosmoprimo_engine` and `pyccl_engine` [src: flip docs `power_spectra.md`], so the unit conversions of section 1 of `systematics.md` apply at that boundary.
+- astropy.cosmology solves no perturbations: it has no P(k) and no σ8 calculation; the `sigma8` and `n` entries of `Planck18.meta` are stored metadata [doc: installed astropy 8.0.1, `Planck18.meta` and attribute listing, 2026-10-26].
+- flip computes its model power spectra through any of three engines, `class_engine`, `cosmoprimo_engine` and `pyccl_engine` [doc: corentinravoux/flip/docs/power_spectra.md on `main`, 2026-10-26], so the unit conversions of section 1 of `systematics.md` apply at that boundary.
 
 Conventions each survey adopts (fiducial cosmologies, σ8 against σ12, h⁻¹ units) are in the sibling `cosmo-theory-foundations`.
 
@@ -118,10 +118,10 @@ A framework couples a theory code, a set of likelihoods and a sampler, and manag
 | Framework | Theory codes | Distinctive mechanism | Reference |
 |---|---|---|---|
 | CosmoMC | CAMB | Metropolis–Hastings with fast–slow decorrelation and dragging (arXiv:1304.4473) | arXiv:astro-ph/0205436 |
-| Cobaya | CAMB, CLASS and others through wrappers | automatic blocking of parameters by speed, caching of intermediate results, YAML or Python input; its MCMC sampler is "a direct translation from CosmoMC" and PolyChord is interfaced [src: Cobaya docs via context7] | arXiv:2005.05290 |
+| Cobaya | CAMB, CLASS and others through wrappers | automatic blocking of parameters by speed, caching of intermediate results, YAML or Python input; its MCMC sampler is "the Markov Chain Monte Carlo Metropolis sampler used by CosmoMC" and PolyChord is interfaced [doc: https://cobaya.readthedocs.io/en/latest/; https://cobaya.readthedocs.io/en/latest/sampler_mcmc.html; https://cobaya.readthedocs.io/en/latest/theory.html; https://cobaya.readthedocs.io/en/latest/input.html, 2026-10-26] | arXiv:2005.05290 |
 | MontePython | CLASS | adaptation of the jumping factor and inverse-Fisher-matrix proposal (version 3) | arXiv:1210.7183, arXiv:1804.07261 |
 | CosmoSIS | modules (CAMB and others) | every calculation is a module with declared inputs and outputs | arXiv:1409.3409 |
-| desilike | wrappers of velocileptors, pybird and FOLPS-nu | likelihoods for BAO and RSD analyses, Taylor-expansion and MLP emulators, ShapeFit; samplers and profilers provided; bindings to Cobaya, CosmoSIS and MontePython [src: repository README] | none |
+| desilike | wrappers of velocileptors, pybird and FOLPS-nu | likelihoods for BAO and RSD analyses, Taylor-expansion and MLP emulators, ShapeFit; samplers and profilers provided; bindings to Cobaya, CosmoSIS and MontePython [doc: https://raw.githubusercontent.com/cosmodesi/desilike/main/README.md, 2026-10-26] | none |
 
 ### 3.2 Sampler families
 <!-- key: sampler-families -->
@@ -165,8 +165,8 @@ The comparison below follows section 3.6 of Maus et al. 2024, arXiv:2404.07272 [
 
 | Code | Expansion | Infrared resummation | Counterterms and stochastic terms | Other |
 |---|---|---|---|---|
-| velocileptors (LPT) | Lagrangian | long-wavelength displacements exponentiated, short ones perturbative, split at `k_IR` | counterterms of the form k²P_Zel | also moment expansion, Gaussian and Fourier streaming models, real-space velocity statistics [src: repository README] |
-| velocileptors (EPT) | Eulerian | wiggle / no-wiggle split, only the wiggle part is damped | k²P_lin | accepts a no-wiggle spectrum through `pnw` [src: repository README] |
+| velocileptors (LPT) | Lagrangian | long-wavelength displacements exponentiated, short ones perturbative, split at `k_IR` | counterterms of the form k²P_Zel | also moment expansion, Gaussian and Fourier streaming models, real-space velocity statistics [doc: https://raw.githubusercontent.com/sfschen/velocileptors/master/README.md, 2026-10-26] |
+| velocileptors (EPT) | Eulerian | wiggle / no-wiggle split, only the wiggle part is damped | k²P_lin | accepts a no-wiggle spectrum through `pnw` [doc: https://raw.githubusercontent.com/sfschen/velocileptors/master/README.md, 2026-10-26] |
 | PyBird | Eulerian (EFTofLSS) | resummation of long-wavelength displacements, as in LPT | k²P_lin; one extra isotropic stochastic term k²/k_M² | reference arXiv:2003.07956 |
 | FOLPSν | Eulerian with kernels beyond Einstein–de Sitter | wiggle / no-wiggle split | k²P_lin | scale-dependent growth from massive neutrinos kept in the kernels (arXiv:2208.02791) |
 | CLASS-PT | Eulerian, inside CLASS | infrared resummation | full set, with Alcock–Paczynski | arXiv:2004.10607 |
@@ -194,7 +194,7 @@ Recent additions, all aimed at gradient-based or faster inference:
 
 - PyBird-JAX, a differentiable JAX implementation of PyBird with internal emulators (Reeves, Zhang & Zheng 2025, arXiv:2507.20990).
 - Effort.jl, an emulator of the EFTofLSS power spectrum validated against PyBird (arXiv:2501.04639).
-- `folpsax`, the JAX version of FOLPSν [src: repository description, `cosmodesi/folpsax`].
+- `folpsax`, the JAX version of FOLPSν [doc: https://api.github.com/repos/cosmodesi/folpsax, 2026-10-26].
 - `elf`, a JAX implementation of the one-loop galaxy power spectrum in both Eulerian and Lagrangian perturbation theory, presented as the first auto-differentiable LPT implementation (Kobayashi & Akitsu 2026, arXiv:2610.08023).
 - `neckar`, a C code with a Python wrapper based on the FFTLog expansion, with bootstrap kernels and a revised infrared resummation (Harder et al. 2026, arXiv:2610.03466).
 
@@ -210,13 +210,13 @@ The equations (EFTofLSS counterterms, bias bases, Kaiser limit) are in `cosmo-th
 | FFT power spectrum | pypower, nbodykit (arXiv:1712.05834) | particles painted on a mesh, FFT, multipoles with a local line of sight | P_ℓ(k) of surveys and boxes, with window functions |
 | Pseudo-C_ℓ | NaMaster (arXiv:1809.09603) | mode-coupling matrix inversion on masked maps, with deprojection and purification | angular spectra of spin-0 and spin-2 fields |
 | Three-point | Triumvirate (arXiv:2304.03643), TreeCorr, nbodykit | tri-polar spherical-harmonic multipoles (Triumvirate) | bispectrum and 3PCF multipoles |
-| Reconstruction | pyrecon | density-field reconstruction before BAO fits [src: repository description] | post-reconstruction BAO |
+| Reconstruction | pyrecon | density-field reconstruction before BAO fits [doc: https://api.github.com/repos/cosmodesi/pyrecon, 2026-10-26] | post-reconstruction BAO |
 
 Details read this session:
 
-- pycorr supports angular (θ), s, (s, μ) and (r_p, π) binning; its only pair-counting engine is Corrfunc, by default the `desi` branch of the cosmodesi fork; it supports inverse bitwise (PIP) weights with angular upweighting, analytical pair counts for periodic boxes, jackknife covariance and MPI [src: repository README].
-- pypower estimates auto- and cross-power-spectrum multipoles and window functions for periodic boxes and survey geometry, plane-parallel or with the first odd wide-angle corrections; it depends on `pmesh` [src: repository README, checkout].
-- pypower accepts pairwise weights as a pycorr `WeightTwoPointEstimator` and can compute a direct pair-count correction at small angular separation (`direct_selection_attrs`, default θ between 0 and 2/60 degrees) [src: pypower 1.0.0 checkout, `CatalogFFTPower` docstring].
+- pycorr supports angular (θ), s, (s, μ) and (r_p, π) binning; its only pair-counting engine is Corrfunc, by default the `desi` branch of the cosmodesi fork; it supports inverse bitwise (PIP) weights with angular upweighting, analytical pair counts for periodic boxes, jackknife covariance and MPI [doc: https://raw.githubusercontent.com/cosmodesi/pycorr/main/README.md, 2026-10-26].
+- pypower estimates auto- and cross-power-spectrum multipoles and window functions for periodic boxes and survey geometry, plane-parallel or with the first odd wide-angle corrections; it depends on `pmesh` [doc: https://raw.githubusercontent.com/cosmodesi/pypower/main/README.md, 2026-10-26].
+- pypower accepts pairwise weights as a pycorr `WeightTwoPointEstimator` and can compute a direct pair-count correction at small angular separation (`direct_selection_attrs`, default θ between 0 and 2/60 degrees) [doc: cosmodesi/pypower/pypower/fft_power.py on `main`, `CatalogFFTPower` docstring, 2026-10-26].
 - nbodykit also contains friends-of-friends, HOD population and FastPM (arXiv:1712.05834); those belong to `cosmo-simulations-mocks`.
 - NaMaster handles any pair of spin-0 or spin-2 fields, contaminated by an arbitrary number of linear systematics, with E- or B-mode purification, on the sphere or in the flat sky (arXiv:1809.09603).
 
@@ -233,13 +233,13 @@ Estimator definitions (Landy–Szalay, FKP, Yamamoto), windows and fibre-collisi
 
 | Code | Role in an analysis | Method |
 |---|---|---|
-| picca | data side: continuum fitting, flux-transmission deltas, 1D and 3D correlation functions, P1D, covariance matrices [src: repository README] | reference analysis in du Mas des Bourboux et al. 2020, arXiv:2007.08995 |
-| Vega | model side: "tool for computing 3D correlation function and power spectrum models", based on picca `fitter2`; minimiser iminuit, sampler interfaces to PolyChord and pocoMC [src: Vega README] | used for Lyα auto- and cross-correlations, metal, DLA and SBLA analyses and DESI BAO and full-shape analyses [src: Vega README]; described in Cuceu et al. 2022, arXiv:2209.12931, and Cuceu et al. 2025, arXiv:2509.15308 |
+| picca | data side: continuum fitting, flux-transmission deltas, 1D and 3D correlation functions, P1D, covariance matrices [doc: https://raw.githubusercontent.com/igmhub/picca/main/README.md, 2026-10-26] | reference analysis in du Mas des Bourboux et al. 2020, arXiv:2007.08995 |
+| Vega | model side: "tool for computing 3D correlation function and power spectrum models", based on picca `fitter2`; minimiser iminuit, sampler interfaces to PolyChord and pocoMC [doc: https://raw.githubusercontent.com/andreicuceu/vega/master/README.rst, 2026-10-26] | used for Lyα auto- and cross-correlations, metal, DLA and SBLA analyses and DESI BAO and full-shape analyses [doc: https://raw.githubusercontent.com/andreicuceu/vega/master/README.rst, 2026-10-26]; described in Cuceu et al. 2022, arXiv:2209.12931, and Cuceu et al. 2025, arXiv:2509.15308 |
 | LaCE | P1D emulator | Gaussian process (arXiv:2011.15127) and neural network (arXiv:2305.19064) on the amplitude and slope of the linear power spectrum and IGM parameters |
 | lym1d | P1D likelihood framework | Gaussian-process emulator built on the Lyssa suite of Nyx simulations (Walther et al. 2024, arXiv:2412.05372) |
 | ForestFlow | P3D emulator | conditional normalising flows predicting the two linear biases and six parameters of small-scale deviations, combined with a Boltzmann solver (Chaves-Montero et al. 2024, arXiv:2409.05682) |
 
-The picca README states that its tools serve both eBOSS and DESI, that "Picca v4.0 was used in du Mas des Bourboux et al. (2020)", and that model computation and fitting are done with Vega; the older `fitter2` remains for some tasks [src: picca README, checkout].
+The picca README states that its tools serve both eBOSS and DESI, that "Picca v4.0 was used in du Mas des Bourboux et al. (2020)", and that model computation and fitting are done with Vega; the older `fitter2` remains for some tasks [doc: https://raw.githubusercontent.com/igmhub/picca/main/README.md, 2026-10-26].
 LaCE and lym1d differ in training simulations and in parameterisation: LaCE emulates as a function of the linear power spectrum at the redshift of interest, which lets it predict extended models not in the training set (arXiv:2011.15127).
 The Lyα BAO pipeline as a whole is validated on 150 synthetic realisations of DESI DR1 in Cuceu et al. 2024, arXiv:2404.03004 [src: abstract].
 
@@ -255,9 +255,9 @@ The physics (continuum distortion, metals, DLAs) and the results belong to the s
 
 HEALPix (Górski et al. 2004, arXiv:astro-ph/0409513) is the equal-area iso-latitude pixelisation used for almost all full-sky CMB and LSS maps; `healpy` is its Python package.
 Its defaults (RING ordering, three iterations of the harmonic transform, ℓ_max = 3 N_side − 1) are in section 6 of `systematics.md`.
-NaMaster (section 5) works on HEALPix or rectangular (CAR) maps and uses the HEALPix polarisation convention [src: NaMaster documentation, `NmtField`].
+NaMaster (section 5) works on HEALPix or rectangular (CAR) maps and uses the HEALPix polarisation convention [doc: https://namaster.readthedocs.io/en/latest/api/pymaster.field.html, 2026-10-26].
 TreeCorr (section 5) measures the shear two- and three-point functions.
-pyccl (section 2) predicts the lensing and clustering angular spectra and their correlation functions through FFTLog Hankel transforms [src: pyccl 3.3.6 installed, `correlation(method='fftlog')`].
+pyccl (section 2) predicts the lensing and clustering angular spectra and their correlation functions through FFTLog Hankel transforms [doc: installed pyccl 3.3.6, `correlation(method='fftlog')` signature, 2026-10-26].
 FAST-PT (section 4) supplies the one-loop intrinsic-alignment integrals.
 LensTools (Petri 2016, arXiv:1606.01903) is a simulation and feature-measurement package: it brings together CAMB and Gadget2 runs into a ray-tracing pipeline and measures lensing features such as peaks and moments.
 Survey pipelines, shear calibration and the choice between ξ±, COSEBIs and pseudo-C_ℓ belong to the sibling `cosmo-weak-lensing`.
@@ -270,7 +270,7 @@ Survey pipelines, shear calibration and the choice between ξ±, COSEBIs and pse
 
 flip (arXiv:2501.16852) fits the growth rate from velocity and density fields with a Gaussian likelihood whose covariance is computed from model power spectra; it implements the covariance models of earlier velocity analyses and adds one with wide-angle corrections (arXiv:2501.16852).
 It is "field-level" in the sense that the likelihood is written on the field values at the tracer positions; it does not sample initial conditions, unlike the forward models of §8.2.
-Fitting is by maximum likelihood (Minuit), MCMC (emcee) or Fisher forecast [src: flip docs `fitting.md`]; some covariance terms suffer catastrophic cancellation at small kσ_g and are evaluated in arbitrary precision [src: arXiv:2501.16852, App. D].
+Fitting is by maximum likelihood (Minuit), MCMC (emcee) or Fisher forecast [doc: corentinravoux/flip/docs/fitting.md on `main`, 2026-10-26]; some covariance terms suffer catastrophic cancellation at small kσ_g and are evaluated in arbitrary precision [src: arXiv:2501.16852, App. D].
 The README asks users to cite arXiv:2501.16852 and Carreres et al. 2023, arXiv:2303.01198.
 The method, its peers and its results are in `cosmo-peculiar-velocities`.
 
@@ -321,4 +321,4 @@ Emulators of N-body outputs (non-linear P(k), halo statistics, baryonic suppress
 - arXiv:2607.14854 was read in an HTML rendering titled "CAMB 2", an earlier version than the current abstract ("CAMB v2"); section and appendix numbers quoted here (Sect. II–XI, App. B–C) may differ in the current version.
 - The recommended sampler settings of Lemos et al. 2022 (their Table 3) did not render and were not read.
 - No body was read for hi_class, EFTCAMB, MGCAMB, jax-cosmo, cloelib, Capse.jl, ForestFlow or Vega in this pass.
-- CLASS code defaults were read in `explanatory.ini` of v3.2.3, a 2024 checkout; the current release is classy 3.4.1.0 and was not read.
+- CLASS code defaults were read in `explanatory.ini` of v3.2.3, a 2024 checkout; the current release is classy 3.4.1.0 and was not read [doc: lesgourg/class_public/explanatory.ini at tag v3.2.3; https://pypi.org/pypi/classy/json, 2026-10-26].

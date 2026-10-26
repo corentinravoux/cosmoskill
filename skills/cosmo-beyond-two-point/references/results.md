@@ -240,7 +240,7 @@ DSC on CMASS likewise finds "signatures of environment-based assembly bias"
 ## 4. Higher-order weak lensing
 <!-- key: higher-order-weak-lensing -->
 
-All rows are fits to survey data. S8 = σ8 (Ω_m/0.3)^0.5 throughout.
+All rows are fits to survey data. S8 = σ8 (Ω_m/0.3)^0.5 throughout. <!-- num: not a value -->
 
 | Data | Statistic | S8 | Other | Model | Citation | Flag |
 |---|---|---|---|---|---|---|

@@ -108,7 +108,7 @@ slightly without changing the problem (arXiv:1912.01132) [src: abstract].
 
 All rows assume standard BBN with N_ν = 3 unless stated.
 
-| Ω_b h² (or 100 Ω_b h²) | Inputs | Rate treatment | Citation | Flag |
+| Ω_b h² (or 100 Ω_b h²) | Inputs | Rate treatment | Citation | Flag <!-- num: not a value --> |
 |---|---|---|---|---|
 | 100 Ω_b h² = 2.166 ± 0.015 (D/H) ± 0.011 (BBN); η₁₀ = 5.931 ± 0.051 | Cooke 2018 D/H | Marcucci et al. ab-initio d(p,γ) | arXiv:1710.11129 | [src: Sect. V.2, Eqs. 11–12] |
 | 100 Ω_b h² = 2.235 ± 0.016 ± 0.033 | Cooke 2018 D/H | Adelberger et al. empirical d(p,γ) | arXiv:1710.11129 | [src: Eq. 14] |

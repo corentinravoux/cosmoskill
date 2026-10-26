@@ -61,7 +61,8 @@ warns on the first and the third:
 - `general` notes apply to every question of the skill: at most three.
 - The profile holds who the researcher is and their conventions, not
   content.
-- A number carries its paper and the place read; the researcher's own
+- A number carries its paper and the place read (a code or facility
+  fact: `[doc: <page>, <date read>]`); the researcher's own
   judgement is labelled as theirs, or goes under "Not verified".
 - Point to the package's sections instead of copying them: a copy goes
   stale silently when the package changes.

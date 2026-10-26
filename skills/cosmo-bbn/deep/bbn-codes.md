@@ -22,7 +22,7 @@ T the photon (plasma) temperature, T₉ = T/(10⁹ K); T_ν the neutrino
 temperature; Y_i = n_i/n_b the yield of nuclide i; Y_P the primordial ⁴He
 mass fraction, defined in the codes as 4 Y(⁴He); τ_n the neutron lifetime;
 g_A the nucleon axial coupling; ΔY_P^(4) ≡ 10⁴ ΔY_P, the unit PRIMAT uses
-for corrections.
+for corrections. <!-- num: not a value -->
 
 ## How it is done
 <!-- key: how-it-is-done -->

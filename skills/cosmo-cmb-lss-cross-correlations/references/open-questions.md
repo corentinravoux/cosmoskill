@@ -51,7 +51,7 @@ preferences discussed in `cosmo-dark-energy-modified-gravity`.
 
 **What decides it.** A lensing × DESI spectroscopic-galaxy analysis with DR2 samples, an
 independent imaging tracer at z < 0.6, and SPT-3G or Simons Observatory lensing maps on the same
-tracers. None was found in a date-sorted search on 2026-10-09.
+tracers. None was found in a date-sorted search on 2026-10-09. <!-- num: not a value -->
 
 ## 2. How strong is baryonic feedback, as seen by the kSZ?
 <!-- key: how-strong-is-baryonic-feedback-as-seen-by-the -->

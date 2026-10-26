@@ -39,7 +39,7 @@ The binned primordial spectrum is constrained as e^(−2τ) P_R(k) (arXiv:2503.1
 ### A4b. How n_s moves with spectrum, likelihood, τ and data set (body-level)
 <!-- key: a4b-how-ns-moves-with-spectrum-likelihood-tau -->
 
-All ΛCDM, 68%, k_* = 0.05 Mpc⁻¹.
+All ΛCDM, 68%, k_* = 0.05 Mpc⁻¹. <!-- num: not a value -->
 
 | n_s | What changes | Place |
 |---|---|---|

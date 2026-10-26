@@ -210,8 +210,8 @@ side on variations of nuclear observables by Meißner & Metsch
 | Helium | Y_P mass fraction vs y_P = n(He)/n(H); Y = 4y(1−Z)/(1+4y) (arXiv:2601.22238 [src: Sect. VII.3]) | regressions in Y depend on Z, in y do not |
 | Expansion rate | N_ν (BBN, baseline 3) vs N_eff (CMB, baseline 3.044); ΔN_ν = 0 ↔ N_eff ≈ 3.043–3.044 (arXiv:2409.06015 [src: Sect. 2]; arXiv:2207.13133 [src]) | comparing N_ν from BBN with N_eff from the CMB without the 0.044 offset |
 | Helium-3 | ³He means ³He + ³H; ⁷Li means ⁷Li + ⁷Be (arXiv:2409.06015 [src: Sect. 2]) | — |
-| Lithium | A(Li) = log₁₀(Li/H) + 12 | mixing A(Li) with Li/H |
-| Deuterium | 10⁵ (D/H) or log₁₀(D/H) | errors on the log are not symmetric on the linear value |
+| Lithium | A(Li) = log₁₀(Li/H) + 12 | mixing A(Li) with Li/H <!-- num: not a value --> |
+| Deuterium | 10⁵ (D/H) or log₁₀(D/H) | errors on the log are not symmetric on the linear value <!-- num: not a value --> |
 | Rate philosophy | ab-initio-shaped S-factors (PRIMAT) vs fits to data (PArthENoPE, Fields–Olive–Yeh) vs Gaussian processes (Launders et al.) (arXiv:2401.15054 [src: Sect. 3]; arXiv:2604.16600 [src]) | a "BBN prior" without the rate set |
 | τ_n | bottle average 879.4(6) s or beam average 888.0(2.0) s (arXiv:1802.01804 [src: abstract]) or PDG average | — |
 

@@ -548,7 +548,7 @@ no cosmological measurement yet.
 <!-- key: conventions-and-community-splits -->
 
 - H0 in km s⁻¹ Mpc⁻¹; `d_L` in Mpc (no `h`); DM in pc cm⁻³; viewing angle as inclination
-  `i` (0°–180°) or as angle from the jet axis (0°–90°): 137° and 43° are one geometry.
+  `i` (0°–180°) or as angle from the jet axis (0°–90°): 137° and 43° are one geometry. <!-- num: not a value -->
 - Summary statistic (MAP + highest-density, or median + symmetric) and H0 prior (flat
   or flat-in-log, ranges in §5) differ between papers.
 - "Dark siren" means catalogue method in some papers and any siren without counterpart

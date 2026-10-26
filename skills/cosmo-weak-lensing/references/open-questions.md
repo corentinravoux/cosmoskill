@@ -216,9 +216,10 @@ dependence of the lensing kernel (Heydenreich et al. 2025, arXiv:2508.05746)
 - Euclid DR1 cosmology products: mid-2027 at the earliest (ESA timeline, see
   `surveys-and-data.md`) [src]. Until then every cosmic-shear number is Stage
   III.
-- Rubin: survey started 30 June 2026; first shear catalogues appear in data
-  previews, not in a cosmology release.
-- Roman: launched 30 August 2026, in commissioning.
+Rubin: survey started 29 June 2026 [doc:
+https://survey-strategy.lsst.io/progress/index.html, 2026-10-26]; first shear
+catalogues appear in data previews, not in a cosmology release.
+Roman: launched 30 August 2026 [doc: https://www.nasa.gov/news-release/nasas-dark-universe-seeking-nancy-grace-roman-space-telescope-launches/, 2026-10-26]; in the science commissioning phase since 22 October 2026 [doc: https://science.nasa.gov/blogs/roman/2026/10/22/nasas-roman-space-telescope-enters-final-commissioning-phase/, 2026-10-26].
 - Tomographic and 3×2pt UNIONS analyses are announced as next steps
   (arXiv:2605.13543) [src].
 
@@ -231,7 +232,7 @@ dependence of the lensing kernel (Heydenreich et al. 2025, arXiv:2508.05746)
 | "The S8 tension is resolved." | Overstated: DES Y6 3×2pt is 2.6σ from the combined CMB in S8. | arXiv:2601.14559 [src: abstract] |
 | "The low S8 came from shear calibration." | Not supported: metacalibration on KiDS-1000 gives the same S8. | arXiv:2510.01122 |
 | "HSC Y3 recalibrated: S8 = 0.805 ± 0.018." | That is the abstract and Table 1 of an earlier version, still served by the ar5iv rendering; the current arXiv abstract gives 0.804 +0.019/−0.018 [src: both read 2026-10-12]. | arXiv:2511.18134 |
-| "Euclid DR1 in late 2026 will settle it." | November 2026 is DR1-Foundation only; lensing products follow in mid-2027. | ESA DR1 timeline (15 June 2026) |
+| "Euclid DR1 in late 2026 will settle it." | November 2026 is DR1-Foundation only; lensing products follow in mid-2027. | ESA DR1 timeline (update of 15 June 2026) [doc: https://www.cosmos.esa.int/web/euclid/dr1-timeline, 2026-10-26] |
 | "DES Y3 cosmic shear: S8 = 0.772 +0.018/−0.017" quoted as the DES Y3 result. | That is the ΛCDM-optimised scale-cut variant; the fiducial value is 0.759 +0.025/−0.023. | arXiv:2105.13543 [src: abstract] |
 | "DES Y3 3×2pt: S8 = 0.779 +0.014/−0.015." | The abstract value is 0.776 ± 0.017; the other figure was not found in any abstract read this session. | arXiv:2105.13549 |
 | "Baryons cannot matter for S8 (FLAMINGO)." | True for the 2023 size of the tension; the 2025–2026 values leave a much smaller gap, and gas probes now favour strong feedback. | arXiv:2309.07959, arXiv:2512.04209 |

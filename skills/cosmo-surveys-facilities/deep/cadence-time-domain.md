@@ -25,7 +25,7 @@ classification as analyses are in `cosmo-supernovae`.
 Notation. SNR_b is the light-curve signal-to-noise ratio in band b summed
 over epochs; σ_c the uncertainty on the SALT2 colour c; z_lim (Rubin wide
 survey) or z_complete (deep fields) the redshift up to which SNe Ia pass the
-quality cuts; N_visits the number of 30 s visits per night and per field;
+quality cuts; N_visits the number of visits per night and per field;
 "budget" the fraction of all survey visits given to a programme.
 
 ## How it is done
@@ -402,7 +402,7 @@ integer-programming approach once readout fell from 40 s to 8 s
 
 - The adopted Rubin baseline as of the survey start (version, rolling
   parameters, whether visits are 1 × 30 s or 2 × 15 s), and the SCOC
-  phase-3 recommendations: not found on arXiv in the searches made.
+  phase-3 recommendations: not found on arXiv in the searches made. <!-- num: not a value -->
 - The Roman HLTDS Definition Committee report (Appendix C.2 of
   arXiv:2505.10574 is not rendered); the reasons for the field choice
   beyond the continuous-viewing-zone and roll-angle constraints read in

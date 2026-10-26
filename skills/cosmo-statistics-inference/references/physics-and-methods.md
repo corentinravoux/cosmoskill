@@ -186,7 +186,18 @@ The Jeffreys prior is `π(θ) ∝ sqrt(det F(θ))` with `F` the Fisher matrix; i
 ### 7.1 Construction
 <!-- key: construction -->
 
-The profile likelihood of a parameter `θ` is `L_p(θ) = max_ν L(θ, ν)`, with all other parameters re-optimised at each fixed `θ`. The "graphical" interval is read where `Δχ²(θ) = −2 ln[L_p(θ)/L_max]` crosses the quantile of a χ² distribution with one degree of freedom for the chosen confidence level. This reading rests on Wilks' theorem, that is on the asymptotic limit of a large data set, a Gaussian estimator and a true value away from any boundary (Herold, Ferreira & Heinrich 2024, arXiv:2408.07700). It contains no prior and is invariant under reparameterisation.
+The profile likelihood of a parameter `θ` is `L_p(θ) = max_ν L(θ, ν)`, with all other parameters re-optimised at each fixed `θ`. The "graphical" interval is read where `Δχ²(θ) = −2 ln[L_p(θ)/L_max]` crosses the quantile of a χ² distribution with one degree of freedom for the chosen confidence level: `Δχ² = 1.00` for 68.27% and `3.84` for 95% (Particle Data Group, Review of Particle Physics 2024, chapter 40 "Statistics", doi:10.1103/PhysRevD.110.030001) [src: Sect. 40.4.2.2, Table 40.2]. This reading rests on Wilks' theorem, that is on the asymptotic limit of a large data set, a Gaussian estimator and a true value away from any boundary (Herold, Ferreira & Heinrich 2024, arXiv:2408.07700). It contains no prior and is invariant under reparameterisation.
+
+Values of Δχ² (or 2Δ ln L) for a coverage probability 1 − α "in the large data sample limit, for joint estimation of M parameters", from doi:10.1103/PhysRevD.110.030001 (chapter 40), Table 40.2:
+
+| 1 − α (%) | M = 1 | M = 2 | M = 3 |
+|---|---|---|---|
+| 68.27 | 1.00 | 2.30 | 3.53 |
+| 90 | 2.71 | 4.61 | 6.25 |
+| 95 | 3.84 | 5.99 | 7.82 |
+| 95.45 | 4.00 | 6.18 | 8.03 |
+| 99 | 6.63 | 9.21 | 11.34 |
+| 99.73 | 9.00 | 11.83 | 14.16 |
 
 Feldman & Cousins 1998 (arXiv:physics/9711021) give a confidence-belt construction that unifies upper limits and two-sided intervals, avoids unphysical intervals for a Gaussian measurement with a bounded physical region, and removes the loss of coverage that occurs when the choice between a limit and an interval is made after seeing the data [src]. In cosmology it is the standard tool for the neutrino mass, where the best fit sits at or beyond `Σm_ν = 0`.
 

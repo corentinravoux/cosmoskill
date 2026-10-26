@@ -11,6 +11,19 @@ carries a number is
 
     ok        it holds an identifier and a place, itself or through the line
               just above its table (a caption such as "From arXiv:..., Table 2:")
+    doc       it holds a `[doc: <URL, path or installed package>, <YYYY-MM-DD>]`
+              flag, itself or through its caption: a code fact or a fact from an
+              official page, read on that date (owner, 2026-10-26)
+    marked    it carries `<!-- num: not a value -->`: its numbers are names,
+              notation or pointers, not values (owner, 2026-10-26)
+    bad-doc   it holds a `[doc` flag without a source and a valid read date
+    old-src   it holds a `[src: …]` or `[sec: …]` flag that names a source other
+              than a paper (an installed package, PyPI, GitHub, a checkout, a
+              README, documentation, a web page): rewrite it as `[doc]` after
+              a re-read. Checked on every statement, with or without a number
+              (owner, 2026-10-26)
+    stale-doc its oldest `[doc]` read date is more than two years old: re-read
+              the source and update the fact and the date (owner, 2026-10-26)
     no-place  it holds an identifier but no place
     no-paper  it holds a place but no identifier
     none      it holds neither
@@ -20,14 +33,23 @@ What is not counted as a number: years, arXiv identifiers and DOIs (also bare
 identifiers in a list), section, table, equation, figure, step, "§" and
 reference numbers, list numbering and numbered bold headings, flags in square
 brackets, the `Snapshot:` line, level names (L1 to L4), single digits, the
-"21" of "21 cm" and of 21cm-named codes. The block written by
+"21" of "21 cm" and of 21cm-named codes; since 2026-10-26 also catalogue
+designations (NGC 4258, 1ES 1553+113), spectral lines named by wavelength
+(He I 10830), a short list of field and instrument names (Stripe 82,
+LOFAR 2.0) and confidence levels named as such ("68% intervals", "(95%)").
+A date without a day ("November 2026", "mid-2027") is not counted (owner,
+2026-10-26).
+The block written by
 `tools/sync_blocks.py` is skipped.
 
     python3 tools/check_numbers.py                 # one line per skill
     python3 tools/check_numbers.py --skill cosmo-cmb --list
     python3 tools/check_numbers.py --check         # exit 1 above the baseline
 
-`--check` compares the count of statements that are not `ok`, and of
+`doc` and `marked` statements pass; they are counted apart and listed with
+`--list --status doc` (sorted by read date, oldest first) or `--status marked`.
+
+`--check` compares the count of statements that do not pass, and of
 `derived` ones, per skill, with `tools/numbers-baseline.tsv`; a count may go
 down, never up. `--write-baseline` rewrites that file from the current
 state. Standard library only.
@@ -38,6 +60,7 @@ from __future__ import annotations
 import argparse
 import re
 import sys
+from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -70,11 +93,43 @@ NOT_NUMBERS = [
     # Labels, not values (2026-10-25): "§12" (the word boundary above misses "§"), reference numbers
     # ("ref. 87"), bare arXiv identifiers in a list ("arXiv:1907.02973, 2007.15994"), the "21" of "21 cm"
     # and of code names (21cmFAST, 21CMMC), and the file's own numbered bold headings ("**9.3 Validation.**").
-    re.compile(r"§\s*\d[\d.]*"),
+    re.compile(r"§\s*\d[\d.]*(?:\s*[–\-]\s*\d[\d.]*)?"),
     re.compile(r"\brefs?\.\s*\d+(?:\s*(?:,|and|–|-)\s*\d+)*", re.I),
     re.compile(r"\b21\s?-?cm\w*", re.I),
     re.compile(r"^\*\*\d+(?:\.\d+)+(?=\s+[A-Z])"),
+    # Names, not values (owner, 2026-10-26, step 2). Each rule removes one number, never a statement.
+    # Catalogue designations: "NGC 4258", "1ES 1553+113", "PKS 0405−123", "J1342+0928".
+    re.compile(r"\b(?:NGC|IC|UGC|PGC|PKS|1ES|3C|4C|Abell|ESO|Mrk|HE|Q)\s?\d+(?:[.+−\-–]\d+)*|\bJ\d{4}(?:\.\d+)?[+−\-]\d{2,4}"),
+    # Spectral lines named by their wavelength: "He I 10830", "Si II 1260", "C IV 1550", "Mg II 2796".
+    re.compile(r"\b(?:H|He|C|N|O|Mg|Si|S|Fe|Ca|Na|Al|Ne)\s?(?:I{1,3}V?|IV|VI{0,3}|X)\]?\s?λ?\s?\d{3,5}\b"),
+    # Fields and instruments whose name holds a number.
+    re.compile(r"\bStripe\s?82\b|\bLOFAR\s?2\.0\b|\bSPTpol\s?500d\b|\bSPTpol\s?100d\b|\bSPT-?SZ\s?2500d\b", re.I),
+    # A confidence level named as such: "(68%)", "68% intervals", "95% upper limits", "limits are 95%",
+    # "at 95% C.L.". A bare percent ("95% complete", "a purity of 95%") stays a number.
+    re.compile(r"(?:\(|\b(?:at|are|is|as|and|or|all|limits?|intervals?|errors?|bounds?|one-tail|two-tail|one-sided|two-sided)\s+)"
+               r"(?:68(?:\.3)?|90|95(?:\.4)?|99(?:\.7)?)\s?%(?=\s*(?:\)|,|;|\.|$|and\b|or\b|C\.?L|confidence|credible|"
+               r"intervals?|limits?|upper|lower|one-tail|two-tail|symmetric|posterior|ranges?|while|unless))"
+               r"|\b(?:68(?:\.3)?|90|95(?:\.4)?|99(?:\.7)?)\s?%\s*(?=(?:C\.?L\.?|confidence|credible|intervals?|"
+               r"(?:upper |lower )?limits?|upper|lower|one-tail|two-tail|symmetric)\b)", re.I),
 ]
+# A non-paper source (owner, 2026-10-26): "[doc: https://pypi.org/project/camb/, 2026-10-26]",
+# "[doc: installed camb 2.0.4, 2026-10-26]". The source must look like a URL, a path or an installed package.
+DOC_FLAG = re.compile(r"\[doc\b[^\]]*\]", re.I)
+DOC = re.compile(r"\[doc:\s*(?P<source>[^\]]*?(?:[./]|\binstalled\s)[^\]]*?),\s*(?P<date>20\d\d-[01]\d-[0-3]\d)\s*\]", re.I)
+MARKER = "<!-- num: not a value -->"
+# A `[doc]` fact must be re-read at least every two years (owner, 2026-10-26).
+STALE_AFTER_YEARS = 2
+PASSING = {"ok", "doc", "marked"}
+# A [src]/[sec] flag is for a paper (or a named secondary paper); a code or web source takes [doc] (owner, 2026-10-26).
+OLD_SRC = re.compile(r"\[(?:src|sec):[^\]]*?(?:\b(?:installed|PyPI|pypi|GitHub|github|checkout|context7|README|docs?|"
+                     r"documentation|repository|repo|metadata|API|website|web|page)\b|https?://|www\.)[^\]]*\]")
+
+
+def old_src(statement: str) -> bool:
+    """A non-paper source in a [src]/[sec] flag; a flag quoted in a code span (a legend) does not count."""
+    return bool(OLD_SRC.search(re.sub(r"`[^`]*`", " ", statement)))
+
+
 BLOCK_START, BLOCK_END = "<!-- cosmoskill:block:start", "<!-- cosmoskill:block:end"
 LIST_START = re.compile(r"^(?:[-*+]|\d+[.)])\s+")
 
@@ -136,8 +191,39 @@ def numbers_in(statement: str) -> list[str]:
     return found
 
 
-def classify(statement: str, caption: str) -> str:
+def doc_dates(text: str) -> list[str]:
+    """The read dates of the valid `[doc]` flags in a text; an invalid calendar date does not count."""
+    dates = []
+    for match in DOC.finditer(text):
+        try:
+            date.fromisoformat(match.group("date"))
+        except ValueError:
+            continue
+        dates.append(match.group("date"))
+    return dates
+
+
+def stale_limit(today: date) -> date:
+    """The oldest read date that is not stale on `today`."""
+    try:
+        return today.replace(year=today.year - STALE_AFTER_YEARS)
+    except ValueError:  # 29 February
+        return today.replace(year=today.year - STALE_AFTER_YEARS, day=28)
+
+
+def classify(statement: str, caption: str, today: date | None = None) -> str:
     context = statement + " " + caption
+    if old_src(statement):
+        return "old-src"
+    if MARKER in statement:
+        return "marked"
+    if DOC_FLAG.search(statement) or DOC_FLAG.search(caption):
+        flags = len(DOC_FLAG.findall(statement)) or len(DOC_FLAG.findall(caption))
+        valid = len(doc_dates(statement)) or len(doc_dates(caption))
+        if not valid or valid != flags:
+            return "bad-doc"
+        read = min(doc_dates(statement) or doc_dates(caption))
+        return "stale-doc" if date.fromisoformat(read) < stale_limit(today or date.today()) else "doc"
     has_ident, has_place = bool(IDENT.search(context)), bool(PLACE.search(context))
     if has_ident and has_place:
         return "ok"
@@ -160,16 +246,17 @@ def scan(skill: Path) -> list[dict]:
     for path in skill_files(skill):
         for line, last, statement, caption in statements(path.read_text(encoding="utf-8")):
             values = numbers_in(statement)
-            if not values:
+            if not values and not old_src(statement):
                 continue
             found.append({"file": str(path.relative_to(ROOT)), "line": line, "last": last,
                           "status": classify(statement, caption),
+                          "read": min(doc_dates(statement) or doc_dates(caption) or [""]),
                           "derived": "[der" in statement, "numbers": values, "text": statement})
     return found
 
 
 def counts(records: list[dict]) -> tuple[int, int, int]:
-    return (len(records), sum(record["status"] != "ok" for record in records),
+    return (len(records), sum(record["status"] not in PASSING for record in records),
             sum(record["derived"] for record in records))
 
 
@@ -183,29 +270,40 @@ def read_baseline() -> dict[str, tuple[int, int]]:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--skill", help="one skill, e.g. cosmo-cmb")
-    parser.add_argument("--list", action="store_true", help="print every statement that is not ok, or derived")
-    parser.add_argument("--status", choices=["no-place", "no-paper", "none", "derived"], help="with --list: one kind only")
+    parser.add_argument("--list", action="store_true", help="print every statement that does not pass, or derived")
+    parser.add_argument("--status", choices=["no-place", "no-paper", "none", "bad-doc", "stale-doc", "old-src", "derived", "doc", "marked"],
+                        help="with --list: one kind only (doc and marked are listed only when asked)")
     parser.add_argument("--check", action="store_true", help="exit 1 if a skill is above the baseline")
     parser.add_argument("--write-baseline", action="store_true")
     args = parser.parse_args()
 
     skills = [ROOT / "skills" / args.skill] if args.skill else sorted(
         path for path in (ROOT / "skills").iterdir() if (path / "references").is_dir())
-    baseline, rows, worse = read_baseline(), [], []
+    baseline, rows, worse, listed = read_baseline(), [], [], []
+    passed = {"doc": 0, "marked": 0}
     for skill in skills:
         records = scan(skill)
         total, open_, derived = counts(records)
         rows.append((skill.name, open_, derived))
+        docs = sum(record["status"] == "doc" for record in records)
+        marked = sum(record["status"] == "marked" for record in records)
+        passed["doc"] += docs
+        passed["marked"] += marked
         if args.list:
             for record in records:
                 kind = "derived" if record["derived"] else record["status"]
-                if kind == "ok" or (args.status and kind != args.status):
-                    continue
-                print(f"{record['file']}:{record['line']}: {kind}: {', '.join(record['numbers'][:4])} | "
-                      f"{record['text'][:160]}")
+                wanted = kind == args.status if args.status else kind not in PASSING
+                if wanted:
+                    listed.append(record | {"kind": kind})
         elif not args.check and not args.write_baseline:
             print(f"{skill.name:40} {total:5} statements with numbers, {open_:5} without paper and place, "
-                  f"{derived:4} derived")
+                  f"{derived:4} derived, {docs:4} doc, {marked:4} marked")
+    if args.status == "doc":
+        listed.sort(key=lambda record: record["read"])
+    for record in listed:
+        read = f" {record['read']}" if record["kind"] == "doc" else ""
+        print(f"{record['file']}:{record['line']}: {record['kind']}{read}: {', '.join(record['numbers'][:4])} | "
+              f"{record['text'][:160]}")
         if args.check and skill.name in baseline:
             before = baseline[skill.name]
             if open_ > before[0] or derived > before[1]:
@@ -222,8 +320,8 @@ def main() -> int:
         print(f"{len(worse)} skill(s) above the numbers baseline", file=sys.stderr)
         return 1 if worse else 0
     if not args.list:
-        print(f"total: {sum(row[1] for row in rows)} without paper and place, {sum(row[2] for row in rows)} derived",
-              file=sys.stderr)
+        print(f"total: {sum(row[1] for row in rows)} without paper and place, {sum(row[2] for row in rows)} derived, "
+              f"{passed['doc']} doc, {passed['marked']} marked", file=sys.stderr)
     return 0
 
 

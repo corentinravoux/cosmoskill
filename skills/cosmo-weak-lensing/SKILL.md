@@ -39,7 +39,7 @@ re-verify against the cited paper before a number enters a manuscript.
 - External IA and baryon calibration moves DES Y3 to 0.832 +0.013/−0.017 (arXiv:2512.04209, abstract).
 - Scale cuts saturate: all scales plus a free baryon model gain almost nothing (arXiv:2509.03582); LSST year 10 barely beats year 1 without better baryon and redshift priors (arXiv:2602.21863, forecast) [src: abstract of each].
 - Mean and MAP of S8 differ through projection effects: 0.790 vs 0.801 in DES Y3 + KiDS-1000 (arXiv:2305.17173, abstract).
-- No Stage-IV cosmic-shear cosmology exists. Euclid DR1 lensing products: mid-2027. Rubin LSST began 30 June 2026; Roman launched 30 August 2026.
+No Stage-IV cosmic-shear cosmology exists. Euclid DR1 lensing products: mid-2027. Rubin LSST began on 29 June 2026 [doc: https://survey-strategy.lsst.io/progress/index.html, 2026-10-26]; Roman launched 30 August 2026 [doc: https://www.nasa.gov/news-release/nasas-dark-universe-seeking-nancy-grace-roman-space-telescope-launches/, 2026-10-26].
 - UNIONS-3500: first results non-tomographic, S8 = 0.831 +0.067/−0.078 (arXiv:2605.13547) [src: abstract].
 
 ## Systematics a referee checks
@@ -100,8 +100,9 @@ Sizes, in thousands of tokens: L1 3k; open 5k; methods 9k; results 8k; surveys 6
   (`--abstract`, `--outline`, `--section`, `--grep`), or with any tool that
   gives the paper. If it cannot be read, say that L4 was required and not
   done.
-- Quote a number only with its paper and the place it was read, as the
-  skill gives them; the skill holds no number of its own making. A formula
+- Quote a number only with its paper and the place it was read, or, for a
+  code or facility fact, its `[doc]` page and read date, as the skill gives
+  them; the skill holds no number of its own making. A formula
   may be applied to the asker's numbers; label the result as derived.
 
 Local layers: if a directory `.cosmoskill/` exists in the working directory,

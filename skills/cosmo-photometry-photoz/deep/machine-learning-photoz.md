@@ -33,7 +33,7 @@ S, T: source (training) and target (photometric) samples; e(x): propensity
 score, the probability that an object with features x is in S;
 Δz = (z_phot − z_ref)/(1 + z_ref) unless stated; σ_NMAD and the outlier
 fraction η_0.15 (|Δz| > 0.15) as defined in
-`results.md#photo-z-performance-of-individual-galaxies`.
+`results.md#photo-z-performance-of-individual-galaxies`. <!-- num: not a value -->
 
 ## How it is done
 <!-- key: how-it-is-done -->

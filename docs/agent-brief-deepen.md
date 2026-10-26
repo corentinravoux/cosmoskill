@@ -74,8 +74,8 @@ Read one section at a time, never a whole paper.
   heading). A new section gets its key from the tool below.
 - New papers get a row in `references/sources.tsv`, with the exact arXiv
   title and first author. No cap on rows; add what you cite, nothing else.
-- Bump the `Snapshot:` date of each file you change to the date of the run,
-  and keep the body of `SKILL.md` within 700 words.
+- Bump the `Snapshot:` date of each file you change to the date of the run.
+  `SKILL.md` has no word limit (owner, 2026-10-26).
 
 ## Budget
 

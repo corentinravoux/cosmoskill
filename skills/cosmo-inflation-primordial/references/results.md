@@ -9,13 +9,13 @@ Flags: `[src]` read this session in the cited paper; `[sec]` read in a secondary
 ## 1. Scalar spectral index n_s
 <!-- key: scalar-spectral-index-ns -->
 
-All values are 68% intervals in flat ΛCDM with a power-law spectrum, pivot k_* = 0.05 Mpc⁻¹, unless the model column says otherwise.
+All values are 68% intervals in flat ΛCDM with a power-law spectrum, pivot k_* = 0.05 Mpc⁻¹, unless the model column says otherwise. <!-- num: not a value -->
 
 | n_s | Data | Model | Citation | Flag |
 |---|---|---|---|---|
 | 0.9649 ± 0.0042 | Planck 2018 temperature, polarisation and lensing | ΛCDM | arXiv:1807.06211 (abstract) | [src] |
 | 0.9709 ± 0.0038 | P-ACT: ACT DR6 + Planck PR3 cut at ℓ < 1000 (TT) and ℓ < 600 (TE, EE) | ΛCDM | arXiv:2503.14452, section "Joint results from ACT and Planck" | [src] |
-| values removed, not placed (see §12) | P-ACT split by spectrum (TT, TE, EE) | ΛCDM | arXiv:2503.14452 | — |
+| 10² n_s = 97.30 ± 0.55 (TT), 97.4 ± 1.4 (TE), 97.6 ± 1.2 (EE) | P-ACT, each spectrum alone; nominal flat priors on the ACT polarisation efficiencies | ΛCDM | arXiv:2503.14452 | [src: Sect. VIII.3, Table 6; read in the arXiv LaTeX source on 2026-10-26, the HTML rendering shows the caption only] |
 | 0.974 ± 0.003 | P-ACT-LB: P-ACT + ACT and Planck CMB lensing + DESI DR1 BAO | ΛCDM | arXiv:2503.14452 (abstract) | [src] |
 | 0.9743 ± 0.0034 | P-ACT-LB, the four-digit form of the previous row | ΛCDM | quoted in McDonald 2025, arXiv:2505.07488, and Shobcha et al. 2026, arXiv:2606.24131 | [sec: abstract] |
 | 0.9679 ± 0.0033 | CMB-SPA: SPT-3G D1 + ACT DR6 + Planck (second arXiv version; the first gave 0.9684 ± 0.0030) | ΛCDM | arXiv:2506.20707; first version arXiv:2506.20707v1 | [src: Sect. II "Summary of results", in each version] |
@@ -238,7 +238,7 @@ The fully correlated limits are about 40 times stronger than the uncorrelated on
 ## 8. Spatial curvature
 <!-- key: spatial-curvature -->
 
-Convention: Ω_K = 1 − Ω_tot, so Ω_K < 0 is a closed universe (positive spatial curvature K) and Ω_K > 0 an open one (negative K). All values are 68% in ΛCDM + Ω_K unless the model column says otherwise.
+Convention: Ω_K = 1 − Ω_tot, so Ω_K < 0 is a closed universe (positive spatial curvature K) and Ω_K > 0 an open one (negative K). All values are 68% in ΛCDM + Ω_K unless the model column says otherwise. <!-- num: not a value -->
 
 | Ω_K | Data | Model | Citation | Flag |
 |---|---|---|---|---|
@@ -343,5 +343,4 @@ A value in the left column must not be quoted as current.
 - SPT-3G D1 constraints on Ω_K, on the running and on isocurvature were not found in a search of the paper source (arXiv:2506.20707) and are not given.
 - Planck 2018 feature-amplitude limits (per template) were not read; only the abstract statement is used.
 - The trispectrum parameter τ_NL and the Planck limits on it were not looked up.
-- The P-ACT n_s values split by spectrum (TT, TE, EE), formerly in the n_s table and attributed to a table of arXiv:2503.14452, were not found in the HTML rendering on 2026-10-25 (each value searched; Sects. VIII.1 and VIII.3 read); they were removed until the place is read.
 - No search was made for WMAP-era r, n_s or f_NL values; history tables start with Planck or with the first measurement read this session.

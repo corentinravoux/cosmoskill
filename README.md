@@ -90,7 +90,12 @@ Every skill follows one contract, set out in
   names its paper and the place it was read, `[src: Sect. 4.2]` in the cited
   paper itself, `[sec: <place>]` in a named secondary source. No number is
   computed by an agent; `[der]` marks reasoning in words and carries no
-  number. `tools/check_numbers.py` lists the numbers that do not comply yet.
+  number. Two exceptions (owner, 2026-10-26): a code fact or a fact from an
+  official page carries `[doc: <URL, path or installed package>, <date
+  read>]`, and a statement whose numbers are names or notation carries
+  `<!-- num: not a value -->`. `tools/check_numbers.py` lists the numbers
+  that do not comply, and the `[doc]` facts by read date; a `[doc]` fact
+  read more than two years ago fails until it is re-read.
 - `results.md` and `surveys-and-data.md` carry a snapshot date. Superseded
   values stay in a history section, marked as superseded.
 - Forecasts are labelled as forecasts.

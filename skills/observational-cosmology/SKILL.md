@@ -93,8 +93,9 @@ can answer, and go deeper only when it cannot.
   L1 answer. An L1 answer does not open a reference file "to be safe".
 - **Levels stack.** L4 starts from the L2 entry, whose citation and flag say
   where to look: `[src: <place>]` was read in the paper at that place,
-  `[sec: <place>]` came from a named secondary source, `[der]` marks
-  reasoning in words and carries no number. Flags are in the reference
+  `[sec: <place>]` came from a named secondary source, `[doc: <page>,
+  <date>]` is a code or facility fact read on an official page on that
+  date, `[der]` marks reasoning in words and carries no number. Flags are in the reference
   files; the `SKILL.md` bullets carry citations only.
 - **L4 is mandatory** before endorsing a number for a manuscript, a proposal
   or a referee report. Read the paper with
@@ -149,7 +150,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 5k; conventions 1k; field-state-2026 5k; review-checklists 1k; review-rubric 1k; suite-conventions 2k.
+Sizes, in thousands of tokens: L1 5k; conventions 1k; field-state-2026 6k; review-checklists 1k; review-rubric 1k; suite-conventions 2k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.
@@ -159,8 +160,9 @@ Sizes, in thousands of tokens: L1 5k; conventions 1k; field-state-2026 5k; revie
   (`--abstract`, `--outline`, `--section`, `--grep`), or with any tool that
   gives the paper. If it cannot be read, say that L4 was required and not
   done.
-- Quote a number only with its paper and the place it was read, as the
-  skill gives them; the skill holds no number of its own making. A formula
+- Quote a number only with its paper and the place it was read, or, for a
+  code or facility fact, its `[doc]` page and read date, as the skill gives
+  them; the skill holds no number of its own making. A formula
   may be applied to the asker's numbers; label the result as derived.
 
 Local layers: if a directory `.cosmoskill/` exists in the working directory,

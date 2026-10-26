@@ -182,9 +182,9 @@ Hamlet-PM comparison quoted in that report.
 
 | Data | Expected | Decides |
 |---|---|---|
-| LVK run IR1, six months from November 2026 [src: LVK plan page] | more events at O4-like sensitivity; a neutron-star merger with a counterpart would be the second bright siren | whether GW170817-based conclusions survive a second event |
+| LVK run IR1, six months, targeting a mid-January 2027 start [doc: https://www.aei.mpg.de/gwastronomy, 2026-10-26] | more events at O4-like sensitivity; a neutron-star merger with a counterpart would be the second bright siren | whether GW170817-based conclusions survive a second event |
 | O4c data (2025-01-28 to 2025-11-18 [der]) in a future catalogue | the last part of O4 is not in GWTC-5.0 | spectral-siren precision; evolution of the mass spectrum |
-| O5, no date [src: LVK plan page] | — | the regime where population systematics dominate (arXiv:2312.11627) |
+| O5, no date ("Plans and timeline for the fifth observing run (O5) are in discussion") [doc: https://www.aei.mpg.de/gwastronomy, 2026-10-26] | — | the regime where population systematics dominate (arXiv:2312.11627) |
 | Deep spectroscopy of siren localisation volumes | redshifts to `r ≈ 19` for the best events (arXiv:2607.17284) | whether catalogue information overtakes spectral information |
 | Larger localised FRB samples; DSA with about `10^5` bursts (**forecast**, arXiv:2608.30943) | DM two-point statistics | feedback amplitude; `p(DM | z)` shape |
 | Fourth image of SN Requiem, "within a few years" (arXiv:2509.12301) | decade-long delay baseline | a precise cluster-lens H0 |
@@ -249,7 +249,7 @@ read at abstract level only and no cosmological number is taken from it.
 | "Peculiar-velocity errors average out with more sirens." | Nearby hosts share bulk flows; covariance can double the error within 50 Mpc. | arXiv:2509.03101 [src: abstract] |
 | "The peculiar velocity of NGC 4993 is 310 ± 150 km/s." | One estimate (arXiv:1710.05835 [src: Methods, Sect. "Finding the Hubble velocity of NGC 4993"]); BORG gives 373 with σ ≈ 130 (arXiv:1909.08627 [src: Sect. 6.1]), and direct-distance catalogues disagree beyond their errors (arXiv:1909.00587 [src: Sect. 3.2]). | arXiv:1710.05835, arXiv:1909.08627, arXiv:1909.00587 |
 | "GWTC-5.0 has 267 events." | 390 candidates; 267 in the population analysis; 236 in cosmology. | arXiv:2605.27225, arXiv:2605.27226, arXiv:2605.27227 [src: abstract of each] |
-| "O5 starts in 2027." | The official plan gives no date; a six-month run IR1 is planned from November 2026. | LVK plan page, 3 September 2026 |
+| "O5 starts in 2027." | "Plans and timeline for the fifth observing run (O5) are in discussion"; a six-month run IR1 targets a mid-January 2027 start. | AEI page [doc: https://www.aei.mpg.de/gwastronomy, 2026-10-26] |
 | "2% from sirens within five years." | A 2017 forecast, conditional on counterparts that did not occur. | arXiv:1712.06531 |
 | "FRBs give an independent H0." | Conditional on `Ω_b h²` and on the diffuse baryon fraction. | arXiv:2508.14434 |
 | "FRBs measure H0 to under 3%." | Statistical error only ("below 2.8%"); other analyses differ from it by more than that (results file, Sect. 4.3). | arXiv:2507.18946 [src: abstract] |

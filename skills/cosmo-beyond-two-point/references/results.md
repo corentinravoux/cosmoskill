@@ -1,7 +1,7 @@
 # Results — statistics beyond the two-point function
 
 Scope: headline constraints from each statistic, with an explicit status column: survey data with blinding or mock challenge, survey data without, or simulations only.
-Snapshot: 2026-10-13
+Snapshot: 2026-10-26
 
 
 ## 0. Status of every statistic: data or simulations

@@ -2,7 +2,7 @@
 
 Scope: live controversies, internal tensions, method debates, what the next
 data will decide, forecasts (labelled), and stale claims that still circulate.
-Snapshot: 2026-10-16
+Snapshot: 2026-10-26
 
 Flags: `[src]` abstract read this session; `[src: Sect. n]` body read;
 `[sec]` named secondary source; `[der]` derived here.
@@ -67,7 +67,10 @@ excluded with high confidence by decay-correlation data
 explanation (Serebrov et al. 2020, arXiv:2011.13272) [src: abstract
 snippet]. For BBN the spread matters only for Y_P and remains below the
 observational Y_P error; BBN + CMB "predict" 870 ± 16 s
-(arXiv:2303.04140) [src].
+(arXiv:2303.04140) [src]. With the LBT Y_P the indirect route
+tightens: τ_n = 873.0 ± 6.3 s, consistent with bottles and the
+electron-detection beam and 2.4σ below the proton-detection beams
+(Loverde et al. 2026, arXiv:2609.13140) [src: Sect. IV.2].
 
 ## 4. The lithium problem
 <!-- key: the-lithium-problem -->
@@ -109,7 +112,11 @@ low-metallicity targets (arXiv:2601.22238) [src] agrees with standard BBN;
 whether a weighted average or a regression is appropriate, and how much
 intrinsic scatter there is, are the method questions (§ systematics 2).
 Burns (2026) shows that once ΔN_eff is free it dominates the theory
-error on Y_P (arXiv:2603.22414) [src].
+error on Y_P (arXiv:2603.22414) [src]. A third reading of the low EMPRESS
+value besides dark radiation and lepton asymmetry is non-unitary
+three-neutrino mixing, which lowers Y_P through a larger β-decay Fermi
+constant; Guo & Li find a best fit α₂₂ = 0.982 with N_eff = 3.044 and
+ξ_e = 0 still allowed (arXiv:2610.29069) [src: abstract].
 
 ## 6. BBN and the Hubble tension
 <!-- key: bbn-and-the-hubble-tension -->

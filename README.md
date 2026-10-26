@@ -15,7 +15,8 @@ a claim, and it answers three questions for its domain: what is the current
 number and where does it come from, what does a referee check, and which
 statements that still circulate are out of date.
 
-Version 0.3.0. Snapshot of the literature: October 2026.
+Version 1.0.0 (`CHANGELOG.md`). Snapshot of the literature: 26 October 2026
+for the reference files; the dossiers carry their own dates.
 
 ## What is in it
 
@@ -39,7 +40,8 @@ cosmoskill/
 │           └── subtopics.tsv      subtopics and their source
 │       └── deep/                  level-3 dossiers, six per domain
 ├── docs/                          specification, roadmap, agent brief, history
-├── tools/                         upkeep: section keys, level blocks, release manifest
+├── tools/                         upkeep: section keys, level blocks, numbers checker,
+│                                  refresh status, release manifest
 ├── tests/
 └── .claude-plugin/                plugin and marketplace manifests
 ```
@@ -162,9 +164,9 @@ tree and never commits.
 ## What to trust, and how far
 
 The skills were written by Claude research agents in October 2026, one domain
-at a time, under the rule that nothing is written from model memory. Each was
-then gated by a coordinating session: the checker rerun, and five to eight
-quoted numbers compared with the arXiv abstract. `docs/history/tests/gate-log.md`
+at a time, under the rule that nothing is written from model memory. Each run
+was then gated by a coordinating session: the checkers rerun, and statements
+compared with the paper or page they cite. `docs/history/tests/gate-log.md`
 records every gate, including the mismatches found and corrected and the
 claims that were not checked. Three rounds of testing compared answers given
 from memory alone with answers given from the skill files alone
@@ -172,13 +174,16 @@ from memory alone with answers given from the skill files alone
 
 That leaves limits a user should know:
 
-- The bibliography is verified. The numbers are verified by sample, not
-  exhaustively. A number flagged `[src]` was read by an agent in the paper;
-  re-read the paper before the number enters a manuscript.
-- Many numbers are abstract-level. Values that sit in a paper's body are
-  flagged as such in the gate log where they were not re-read.
-- Dates and status lines of facilities often rest on official web pages,
-  flagged `[sec: web]`.
+- The bibliography is verified against arXiv. Every number names its paper
+  and the place it was read, and the checker enforces that mechanically;
+  whether the value at that place is the one quoted was compared by sample at
+  each gate, not exhaustively. Re-read the paper before a number enters a
+  manuscript.
+- Many places are the abstract; body places (section, table, equation) are
+  given where the value sits in the body.
+- Code facts and facility dates rest on official pages and installed
+  packages, flagged `[doc: <page>, <date read>]`; they are re-read at least
+  every two years.
 - Each file lists what its author could not verify under "Not verified".
   Those lists are part of the content.
 - The snapshot is October 2026. This field moves monthly.
@@ -209,8 +214,10 @@ Limits of this version in particular:
   cosmological effects only (`cosmo-neutrinos-dark-matter`); laboratory
   neutrino-mass limits appear where cosmology is compared with them.
 
-`docs/specs/` holds the specification; the plan followed now is
-`docs/plans/2026-10-23-plan.md`.
+`docs/specs/` holds the specification; the release plan is
+`docs/plans/2026-10-26-release-1.0.md`. A benchmark with outside questions,
+graded by people, is planned for a later release; the level tests in
+`docs/history/tests/levels/` are self-tests, not evidence of quality.
 
 ## Installing
 
@@ -255,6 +262,9 @@ procedure for refreshing a domain and for adding one. In short: find what
 appeared since the snapshot date, read it at source, add the result and move
 the superseded value to the history, add the bibliography rows, bump the
 date, run the checker. Never refresh from memory.
+`python3 tools/refresh_status.py --due 90` lists what a refresh should cover:
+files older than 90 days and `[doc]` facts about to go stale. Contributions
+follow `CONTRIBUTING.md`.
 
 ## Updating
 
@@ -268,6 +278,7 @@ python3 tools/assign_keys.py     # give new sections their key
 python3 tools/sync_blocks.py     # regenerate the level block of each SKILL.md
 python3 skills/observational-cosmology/scripts/verify_sources.py skills/cosmo-<domain>
 python3 tools/check_keys.py --against <last release tag or commit>
+python3 tools/check_numbers.py --skill cosmo-<domain> --list   # must print nothing
 python3 -m unittest discover -s tests
 ```
 

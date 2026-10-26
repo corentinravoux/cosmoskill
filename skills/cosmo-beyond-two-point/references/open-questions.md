@@ -1,7 +1,7 @@
 # Open questions — statistics beyond the two-point function
 
 Scope: live controversies, method debates, forecasts (labelled) and stale claims.
-Snapshot: 2026-10-13
+Snapshot: 2026-10-26
 
 
 ## 1. Bispectrum and N-point functions
@@ -49,7 +49,13 @@ the odd 4PCF is proposed as a decisive test (Hou, Slepian & Jamieson 2024,
 arXiv:2410.05230). Side B: the excess disappears with N-body mocks
 (arXiv:2401.09523), with statistics free of the 8PCF bias (arXiv:2407.03397),
 in cross-patch correlations (arXiv:2508.09133), in kurto spectra
-(arXiv:2604.06021), and no inflationary template fits (arXiv:2210.16320). What
+(arXiv:2604.06021), and no inflationary template fits (arXiv:2210.16320). A
+controlled test: in the Quijote-Odd halo catalogues, initialised with a
+parity-violating primordial trispectrum, the auto- and cross-correlation search
+methods used on BOSS and DESI find no statistically detectable parity-odd
+signal; the halo measurements are dominated by Poisson noise, which the
+authors can tell apart from the response expected for a parity-odd signal
+(Ortolá Leonard et al. 2026, arXiv:2610.18707, abstract). What
 decides: DESI DR2 with larger sets of high-fidelity mocks.
 
 ### 1.4 Trispectrum

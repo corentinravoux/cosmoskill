@@ -3,7 +3,7 @@
 Scope: current primordial abundances, BBN predictions, the baryon density
 from BBN and its comparison with the CMB, N_eff and new-physics limits from
 BBN alone and with the CMB, with the history of the key numbers.
-Snapshot: 2026-10-16
+Snapshot: 2026-10-26
 
 Flags: `[src]` abstract read this session; `[src: Sect. n]`, `[src: Eq. n]`,
 `[src: Table n]` body read; `[sec]` named secondary source; `[der]` derived here.
@@ -61,6 +61,12 @@ LBT team quotes 0.2467 ± 0.0002 from its own code (arXiv:2601.22238)
 (EMPRESS VIII, arXiv:2203.09617) to 0.2551 (Izotov et al., arXiv:1408.6953)
 [src: abstract], is much larger than any quoted error and is set by method
 and sample, not by statistics.
+
+**Neutron lifetime from Y_P.** Inverting the LBT Y_P under standard BBN,
+Loverde et al. (2026, arXiv:2609.13140) infer τ_n = 873.0 ± 6.3 s,
+consistent with bottle experiments and the electron-detection beam
+experiment and 2.4σ below the proton-detection beam experiments
+[src: Sect. IV.2].
 
 ## 3. Helium-3
 <!-- key: helium-3 -->
@@ -178,6 +184,7 @@ not vary (arXiv:2609.12065) [src: Sect. 1].
 | Expansion rate during D burning | ΔH/H = 0.087 (+0.036/−0.037) at T_D ≃ 0.03 MeV in an EDE cosmology; extra radiation does not reconcile Ω_b h² | Poulin et al. 2026, arXiv:2607.20635 | [src: abstract] |
 | Long-lived decaying particles | hadronic and electromagnetic constraints for 0.01 s < τ < 10¹² s | Kawasaki, Kohri & Moroi 2005, arXiv:astro-ph/0408426; Jedamzik 2006, arXiv:hep-ph/0604251; update Bianco et al. 2026, arXiv:2605.26824 | [src: abstract of hep-ph/0604251] |
 | Negative ΔN_eff | the usual N_eff fit is inconsistent for ΔN_eff < 0 unless neutrino-induced rates are adjusted | Ganguly, Jung & Yun 2025, arXiv:2507.23354 | [src] |
+| Non-unitary three-neutrino mixing | raises the β-decay Fermi constant above the muon-decay one and lowers Y_P; with EMPRESS Y_P + D/H the best fit is α₂₂ = 0.982, while N_eff = 3.044, ξ_e = 0 stay allowed | Guo & Li 2026, arXiv:2610.29069 | [src: abstract] |
 | Sensitivity atlas | 14 parameters and 63 rates in PRyMordial; with ΔN_eff free it dominates the Y_P theory error | Burns 2026, arXiv:2603.22414 | [src: abstract] |
 
 Reviews of BBN as a probe of new physics: Pospelov & Pradler 2010

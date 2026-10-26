@@ -1065,3 +1065,14 @@ Worklist 105 → 0: 4 old flags deleted as duplicates of a `[doc]` read today; 3
 Gate (coordinator, 2 of 2 match at source): `surveys-and-data.md:23` EFTCAMB tags `['eftcamb-camb1-final']`, 0 releases, pushed 2026-10-19 (GitHub REST API, re-read); `open-questions.md:87` Cobaya "This is the Markov Chain Monte Carlo Metropolis sampler used by CosmoMC" (cobaya.readthedocs.io `sampler_mcmc.html`, re-read; the old phrase is absent from the page).
 
 State after: 0 statements without paper and place, 0 derived, 302 doc, 38 marked; `sync_blocks.py` wrote 2 blocks; 79 tests pass; keys and sources 0 problems on every skill.
+
+### Release 1.0, step R1: light refresh (brief `docs/agent-brief-refresh.md`, base `6bf5495`)
+
+| Skill | Snapshot before | Kept | Changes | Calls | Gate (coordinator, at source) |
+|---|---|---|---|---|---|
+| `cosmo-bbn` | 2026-10-16 | 2: arXiv:2609.13140 (τ_n from LBT Y_P; found through INSPIRE citations, submitted before the snapshot), arXiv:2610.29069 (non-unitary mixing and low Y_P) | `results.md` neutron-lifetime and new-physics rows; `open-questions.md` 2 items; nothing superseded; 7 seen, not kept | 13 | 2 of 2 match: τ_n = 873.0 ± 6.3 s (2609.13140, Sect. IV.2); α₂₂ = 0.982 (2610.29069, abstract) |
+
+### Release 1.0, steps R2–R4 (coordinator)
+
+R2: `tools/refresh_status.py` (snapshot dates and ages per skill, `[doc]` facts by read date, `--due <days>` for what a refresh should cover), `tests/test_refresh_status.py` (4 tests); cited in `suite-conventions.md`, "Refreshing a domain". R3: `CHANGELOG.md` (0.1.0 to 1.0.0; 30 tests at 0.3.0 counted in a worktree of `43eace2`), `CONTRIBUTING.md`; `plugin.json` version 1.0.0; `marketplace.json` description. R4: `claude plugin validate .` (Claude Code 2.1.310) passes; one directory warning left, no icon (optional). Clean-account install in a fresh temporary `CLAUDE_CONFIG_DIR`: `plugin marketplace add ~/Software/cosmoskill`, `plugin install cosmoskill@cosmoskill` succeed; `plugin details` lists 30 skills, version 1.0.0, about 3,700 always-on tokens; the directory removed after.
+| `cosmo-beyond-two-point` | 2026-10-13 | 2: arXiv:2610.18348 (AVISM, second public DESI DR1 void catalogue), arXiv:2610.18707 (Quijote-Odd: 4PCF parity searches find no signal in the halo catalogues, Poisson-noise dominated) | `surveys-and-data.md` row and DESI-voids status; `open-questions.md` §1.3; nothing superseded; about 8 seen, not kept (forecasts, methods) | 17 | 2 of 2 match: 1114 BGS and 216 LRG voids, 1400³ cMpc³ (2610.18348, abstract); "no statistically detectable parity-odd signal … dominated by Poisson noise" (2610.18707, abstract) |

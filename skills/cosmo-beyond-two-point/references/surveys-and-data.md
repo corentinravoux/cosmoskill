@@ -1,7 +1,7 @@
 # Surveys and data — statistics beyond the two-point function
 
 Scope: the data sets, void catalogues, simulation suites and mock challenges on which beyond-two-point analyses have been run or validated.
-Snapshot: 2026-10-13
+Snapshot: 2026-10-26
 
 
 ## 1. Spectroscopic samples used for higher-order clustering
@@ -45,6 +45,7 @@ the number in its abstract) and GLAM-Uchuu (N-body, 2000³ particles [src: abstr
 | SDSS MGS + BOSS + eBOSS LRG | 0.07 < z < 1.0, six redshift bins [src] | not given in abstract | reconstruction + watershed | arXiv:2205.06258 |
 | BOSS DR16 non-spherical voids | 0.2 < z < 0.8, two bins [src] | not given in abstract | Voronoi + watershed, ellipticity cut | arXiv:2501.07817 |
 | DESIVAST (DESI DR1 BGS, volume limited) | z < 0.24 [src: abstract] | 1 461 (VoidFinder), 420 (V² REVOLVER), 295 (V² VIDE) [src: abstract] | VoidFinder, V² | arXiv:2411.00148 |
+| DESI DR1 BGS and LRG (AVISM, public) | 0.1 < z < 0.3 (BGS) and 0.4 < z < 0.8 (LRG), each in a 1400³ cMpc³ cube; RSD and velocity-field preprocessing before void finding [src: abstract] | 1 114 (BGS), 216 (LRG) clean voids, sizes up to about 65 cMpc [src: abstract] | AVISM | Monllor-Berbegal et al. 2026, arXiv:2610.18348 |
 | DESI Legacy Survey DR9 LRG (photometric) | ≈ 19 500 deg², ≈ 10 million LRGs, voids at 0.35 < z < 0.95 [src] | not given in abstract | 3D voids with photo-z | arXiv:2412.02761 |
 | CLAMATO (Keck/LRIS, COSMOS) | 240 sightlines, 0.16 deg², 2.5 h⁻¹Mpc, 3.15 × 10⁵ h⁻³Mpc³ [src: abstract of arXiv:1710.02612]; DR2: 320 objects, ≈ 0.2 deg², 2.05 < z < 2.55 [src: abstract of arXiv:2109.09660] | void volume fraction 19.5% (data), 18.2% (simulation) [src: abstract of arXiv:1710.02612] | spherical overdensity | arXiv:1710.02612, arXiv:2109.09660 |
 | eBOSS Stripe 82 Lyα tomography | 220 deg², 37 quasars deg⁻², 0.94 h⁻³Gpc³, 13 h⁻¹Mpc [src: abstract] | void and protocluster catalogue | finder applied to the Wiener-filtered map | arXiv:2004.01448 |
@@ -193,7 +194,7 @@ What the challenge does and does not establish, in the paper's own terms:
 | Item | Status at the snapshot | Source |
 |---|---|---|
 | DESI bispectrum | DR1 only; three pipelines published between March 2025 and October 2026 | arXiv:2503.09714, arXiv:2507.13433, arXiv:2610.01836 |
-| DESI voids | DR1 BGS void catalogue (DESIVAST) published; no void–galaxy cosmology found | arXiv:2411.00148 |
+| DESI voids | DR1 BGS void catalogue (DESIVAST) published; a second public DR1 catalogue (AVISM, BGS and LRG) with size function, profiles and void bias but no cosmological fit; no void–galaxy cosmology found | arXiv:2411.00148, arXiv:2610.18348 (abstract) |
 | DESI field-level | Neural BAO reconstruction of DR1 LRGs by an external group | arXiv:2609.14862 |
 | DES higher-order lensing | Y3 complete in several statistics; Y6 announced | arXiv:2606.11309 |
 | KiDS | Legacy 2+3-point published June 2026 | arXiv:2606.12389 |

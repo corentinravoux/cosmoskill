@@ -3,7 +3,7 @@
 Scope: the observational programmes that measure primordial D/H, Y_P, ³He
 and ⁷Li; the laboratory facilities that measure the nuclear rates and the
 neutron lifetime; public codes and rate compilations; what is expected next.
-Snapshot: 2026-10-16
+Snapshot: 2026-10-26
 
 Flags: `[src]` abstract read this session; `[src: Sect. n]`, `[src: Table n]`
 body read; `[sec]` named secondary source; `[der]` derived here.

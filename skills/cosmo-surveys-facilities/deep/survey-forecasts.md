@@ -80,7 +80,8 @@ Seo & Eisenstein 2007 (arXiv:astro-ph/0701079) keep only the acoustic
 information [src: Sect. II]:
 
 - Non-linear damping of the BAO by Lagrangian displacements:
-  P_b,nl = P_b,lin exp(−k⊥²Σ⊥²/2 − k∥²Σ∥²/2) (Eqs. 3–4), with
+  P_b,nl = P_b,lin exp(−k⊥²Σ⊥²/2 − k∥²Σ∥²/2) (arXiv:astro-ph/0701079,
+  Eqs. 3–4), with
   Σ⊥ = Σ0 G and Σ∥ = Σ0 G(1 + f), Σ0 = 12.4 h⁻¹ Mpc for σ8 = 0.9 and
   scaling with σ8; G is the growth function normalised to 0.758 at z = 0
   and f = dlnG/dlna.
@@ -89,7 +90,8 @@ information [src: Sect. II]:
   damping itself; broadband shape information is removed by subtracting a
   Fisher matrix computed with Ω_b = 0.005; the Alcock–Paczynski
   information from the assumed redshift-space distortion is removed by
-  setting β ≈ 0 in the derivatives [src: Sect. II]. Reason stated: both
+  setting β ≈ 0 in the derivatives [src: arXiv:astro-ph/0701079, Sect. II].
+  Reason stated: both
   AP and broadband information are "less robust than the BAO" because
   quasilinear redshift distortions and broadband systematics (tilt,
   non-linear bias, non-linear growth) are not understood well enough [src].
@@ -99,7 +101,8 @@ information [src: Sect. II]:
   / (P(k)/P_0.2 + 1/(nP_0.2 R(μ)))² × exp[−k²(1−μ²)Σ⊥² − k²μ²Σ∥²],
   with f₁ = μ² − 1, f₂ = μ² (Eqs. 20–21), R(μ) = (1 + βμ²)², P_0.2 the
   power at k = 0.2 h Mpc⁻¹, Σ_s = 1/k_silk the Silk scale, and
-  A0 = 0.4529 (WMAP1) or 0.5817 (WMAP3) [src: Sect. IV]. A 20-point μ grid
+  A0 = 0.4529 (WMAP1) or 0.5817 (WMAP3) [src: arXiv:astro-ph/0701079,
+  Sect. IV]. A 20-point μ grid
   and 50 k points to 0.5 h Mpc⁻¹ converge [src].
 - Photometric redshift errors or fingers of God enter by
   R(k, μ) = (1 + βμ²)² exp(−k²μ²Σ_z²) (Eq. 27), acting like extra shot
@@ -132,7 +135,8 @@ clustering [src: arXiv:1910.09273, Sect. 4.2.2]:
 Here σ_p and σ_v are the fingers-of-God and BAO-damping velocity
 dispersions. The authors note that k_max = 0.25 may itself be optimistic
 "depending on ones confidence in modelling of the non-linear power
-spectrum", the one-halo term being a 30% correction at that scale [src].
+spectrum", the one-halo term being a 30% correction at that scale [src:
+arXiv:1910.09273, Sect. 4.2.2, "Pessimistic setting"].
 
 ### Step 5. Project to cosmological parameters and add priors
 <!-- key: step-5-project-to-cosmological-parameters-and -->
@@ -169,7 +173,7 @@ for example (γ, Ω_m) [src].
 - **Code comparison.** Six clustering codes agreed to a few per cent in
   the intermediate setting and about 4% on the redshift-dependent
   parameters; all validated codes agree within the 10% requirement [src:
-  Sects. 4.2.3, 6].
+  arXiv:1910.09273, Sects. 4.2.3, 6].
 - **Fisher against posterior sampling.** For purely geometric probes,
   Fisher forecasts underestimate marginalised errors by 30–70%, especially
   when wa is marginalised; for weak lensing the difference is about 5%

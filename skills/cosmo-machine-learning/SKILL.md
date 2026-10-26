@@ -30,21 +30,23 @@ re-verify against the cited paper before a number enters a manuscript.
 <!-- key: what-an-expert-holds-in-mind -->
 
 - Emulator error is a residual against the training code: 99% of
-  CosmoPower test spectra lie within 0.4% of HMcode (arXiv:2106.03846).
+  CosmoPower test non-linear corrections (HMcode) lie within 0.4%
+  (arXiv:2106.03846, Sect. 3.2).
 - Public non-linear P(k) emulators differ by a few per cent near
   k ~ 1 h/Mpc, with σ8- and w0-dependent trends (arXiv:2605.28596).
 - The loss sets the ceiling: MSE summaries reach 81% of the full-field
-  FoM, VMIM 100% (arXiv:2407.10877); on DES Y3
-  lensing maps VMIM gave 60% more FoM(Ω_m, S8, w) than MSE
-  (arXiv:2606.11309).
+  FoM, VMIM 100% (arXiv:2407.10877, abstract); on DES Y3
+  lensing maps VMIM gave 60% more FoM(Ω_m, S8, w) than the earlier
+  MSE-trained CNN (arXiv:2606.11309, abstract, Sect. 8.1).
 - CNN gains over the power spectrum on survey S8: 16% (KiDS-1000,
-  arXiv:2201.07771) and 5–24% (HSC Y1, arXiv:2301.01354), not the ≈ 5
-  times of noiseless maps (arXiv:1802.01212).
+  arXiv:2201.07771, abstract) and 5–24% (HSC Y1, arXiv:2301.01354,
+  abstract), not the ≈ 5 times of noiseless maps (arXiv:1802.01212,
+  abstract).
 - Every benchmarked SBI algorithm can be overconfident; ensembles help
   (arXiv:2110.06581). Never multiply NPE posteriors across data sets
   (arXiv:2605.10719).
 - KiDS-SBI: six-flow ensemble, 18 000 realisations, loss converged after
-  5000 (arXiv:2404.15402).
+  5000 (arXiv:2404.15402, Sect. 5.4).
 - Multi-fidelity field-level SBI: "60 simulations" in the abstract; the body
   needs N ~ 100–120 for reliable widths (arXiv:2606.23346).
 - Robustness depends on the input: mass maps transfer between IllustrisTNG
@@ -52,11 +54,11 @@ re-verify against the cited paper before a number enters a manuscript.
   (arXiv:2201.02202); a positions-and-velocities GNN fails on a new
   sub-grid model (arXiv:2609.23982).
 - Lyα P1D NPE trained on one CAMELS model biases σ8 by ~10% on the other;
-  multi-domain training removes it (arXiv:2603.13011).
+  multi-domain training removes it (arXiv:2603.13011, abstract).
 - Generative posteriors can match means and marginals yet miss the
-  variance-field power by ~30% (arXiv:2606.10023).
-- PLAsTiCC winner: 0.685 on the official weighted metric; 0.468 is
-  flat-weight (arXiv:2012.12392, arXiv:1907.04690).
+  variance-field power by up to ~30% (arXiv:2606.10023, Sects. 5.2, 6.1).
+- PLAsTiCC winner: 0.685 on the official weighted metric (arXiv:2012.12392,
+  Fig. 7 caption); 0.468 is flat-weight (arXiv:1907.04690, abstract).
 - NECOLA corrects COLA to sub-percent at k ≃ 1 h/Mpc from one training
   cosmology (arXiv:2111.02441).
 - KiDS-1000 GCNN unblinded only after network–spectrum agreement and
@@ -84,7 +86,8 @@ re-verify against the cited paper before a number enters a manuscript.
 - Reading an MSE summary as the data's information content.
 - Multiplying NPE posteriors from independent data sets.
 - Comparing classifier scores across metrics or class weights.
-- Citing the multi-fidelity "60 simulations" without the body's threshold.
+- Citing the multi-fidelity "60 simulations" (arXiv:2606.23346, abstract) without the body's
+  threshold.
 - Reporting one network seed or architecture as the result.
 
 ## Related skills

@@ -55,9 +55,7 @@ The white-noise depth of a survey follows from the per-detector NET:
 arcmin² means the observed area. The authors took NET = 350 μK√s per
 detector "achieved by current generation experiments" and Y = 25%
 combining focal-plane yield and operating efficiency over five years
-[src: Sect. II.1]. Worked example [der: Eq. 1 with these inputs]:
-f_sky = 0.4 is 5.94 × 10⁷ arcmin²; 10⁴, 10⁵ and 10⁶ detectors then give
-s ≈ 4.3, 1.36 and 0.43 μK-arcmin. Depth scales as 1/sqrt(N_det) and as
+[src: Sect. II.1]. In Eq. 1 depth scales as 1/sqrt(N_det) and as
 sqrt(area): doubling the area at fixed effort costs a factor sqrt(2) in
 depth.
 
@@ -104,12 +102,7 @@ Production practices that replace the ideal NET:
 
 Survey weight is the quantity that adds linearly: CMB-S4 defines it as
 2A/N² for a Q/U map of noise N over effective area A, "linear in detector
-count and run time" [src: arXiv:1907.04473, Table 2-4 note]. Check
-[der]: the 95 GHz ultra-deep entry (weight 14.1 × 10⁶ μK⁻², 0.78
-μK-arcmin) implies A ≈ 1190 deg², 2.9% of the sky, as designed; the
-deep-wide 95 GHz temperature entry (26.3 × 10⁶ μK⁻², 2.0 μK-arcmin) gives
-A ≈ 29,200 deg² if the temperature weight is A/N², matching the quoted
-f_sky^noise of 71% (29,000 deg²) [src: Sect. 7.3].
+count and run time" [src: arXiv:1907.04473, Table 2-4 note].
 
 ### Step 2. Add the large-scale noise
 <!-- key: step-2-add-the-large-scale-noise -->
@@ -128,12 +121,14 @@ earlier experiments:
   due to filtering" and agrees with Polarbear using a rotating half-wave
   plate; ℓ_knee = 50 is the pessimistic and 25 the optimistic case,
   scaled to other bands through precipitable-water-vapour fluctuations,
-  assuming a scan speed twice that of ABS and QUIET [src: same, Table 2].
+  assuming a scan speed twice that of ABS and QUIET [src: arXiv:1808.07445,
+  Sect. II.2, Table 2].
 - **LAT polarisation.** N_red = N_white, ℓ_knee = 700, α_knee = −1.4, from
   ACTPol at 150 GHz and Polarbear without a rotating half-wave plate
-  [src: same].
+  [src: arXiv:1808.07445, Sect. II.2].
 - **LAT temperature.** ℓ_knee = 1000, α_knee = −3.5, N_red = 1800 μK²s at
-  90 GHz and 12,000 μK²s at 145 GHz measured on ACTPol; extrapolated to
+  90 GHz and 12,000 μK²s at 145 GHz measured on ACTPol (arXiv:1808.07445)
+  [src: Sect. II.2]; extrapolated to
   other bands with an atmospheric model; divided by the number of optics
   tubes per band (each tube taken as an independent atmospheric
   realisation below the tube separation, ℓ ≈ 50) and by a further factor
@@ -173,11 +168,12 @@ arXiv:1907.04473, Sect. 7.1]:
 
 - **Light relics (N_eff)** constrain mostly through TE, whose error is
   sample-variance dominated, so the driver is area: a deep and wide field
-  of f_sky ≈ 0.7.
+  of f_sky ≈ 0.7 (arXiv:1907.04473) [src: Sect. 7.1].
 - **Primordial gravitational waves (r)** depend on BB, whose sample
   variance is small and reducible by delensing, while foregrounds are
   bright relative to the signal, so the driver is depth on the cleanest
-  small patch: an ultra-deep field of f_sky ≈ 0.03.
+  small patch: an ultra-deep field of f_sky ≈ 0.03 (arXiv:1907.04473)
+  [src: Sect. 7.2].
 
 The same split appears in SO's damping-tail study: at noise above
 4 μK-arcmin, N_eff depends strongly on f_sky; σ(N_eff) degrades by 40%
@@ -261,11 +257,11 @@ Peers on the same question:
 - **Why a 20 GHz channel on the LAT.** An early forecast iteration showed
   synchrotron residual biases; a 20 GHz SAT channel lacked sensitivity at
   ℓ ≳ 100 for lack of resolution, so it moved to the delensing LAT [src:
-  Sects. 7.2, 7.A.1].
+  arXiv:1907.04473, Sects. 7.2, 7.A.1].
 - **Why the foreground bands at all.** Unmodelled dust biases r at 150 GHz
   by two orders of magnitude above the CMB-S4 target; each foreground needs
   at least one channel, and several if it varies across the field [src:
-  Sect. 7.2].
+  arXiv:1907.04473, Sect. 7.2].
 - **SO low-frequency time.** σ(r) is broadly optimal with about one year of
   the 27/39 GHz tube in an MF SAT, at the expense of 93/145 GHz [src:
   arXiv:1808.07445, Sect. III.4.3]. The SAT resolution (≤ 90′) does not
@@ -316,7 +312,7 @@ Peers on the same question:
 - **Residual systematics budget.** Simulations required noise-like additive
   residuals ≲ 10% of the noise for a bias ≲ 10⁻⁴ on r, a level Stage-3
   experiments achieve, so "Stage-3 technology is sufficient; we just need
-  more of it" [src: Sect. 8].
+  more of it" [src: arXiv:1907.04473, Sect. 8].
 - **30 m for CMB-HD.** Lensing by structures at k ~ 10 h Mpc⁻¹ seen at
   z ~ 2 needs ℓ ~ 35,000, about 15″ at 150 GHz, hence a 30 m dish, which
   foreground cleaning (sources above 0.03 mJy, the CIB) also requires
@@ -354,7 +350,7 @@ Peers on the same question:
   "anti-apodised" the maps through turnaround time, so the design scans
   through it and chooses the Galactic cut after the fact; a 30° minimum
   elevation and a 13–14% Galactic cut leave about 62% for N_eff [src:
-  Sect. 7.3].
+  arXiv:1907.04473, Sect. 7.3].
 - **Modulation.** A continuously rotating half-wave plate at the sky side
   of all lenses modulates the large-scale atmosphere and removes
   instrumental polarisation from the optics behind it, reducing T→P leakage
@@ -517,7 +513,8 @@ paper for SO's number.
   depths, SO 2025 SAT tables polarisation (√2 higher) [src:
   arXiv:2512.15833, Table 1 note].
 - **One collaboration's forecast quoted by another.** SPT-3G+ quotes 0.0014
-  for SO, the SO paper 1.2 × 10⁻³ (Who forecasts what for r).
+  for SO (arXiv:2608.20236) [src: Sect. 2.2], the SO paper 1.2 × 10⁻³
+  (arXiv:2512.15833) [src: abstract] (Who forecasts what for r).
 
 ## Reading list
 <!-- key: reading-list -->

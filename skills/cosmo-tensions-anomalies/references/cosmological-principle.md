@@ -10,9 +10,9 @@ Snapshot: 2026-10-22
 
 Flags as in `results.md`: `[src]` read this session in the cited paper's
 abstract; `[src: <place>]` in its body; `[sec: X]` taken from the named
-secondary source; `[der]` derived here. Field map: CosmoVerse white paper
-(Di Valentino et al. 2025, arXiv:2504.01669), Sects. 4.5.1 (local void) and
-4.6 (cosmological principle). Several of the papers below are written by
+secondary source; `[der]` a derivation in words, without a number. Field map: CosmoVerse white paper
+(Di Valentino et al. 2025, arXiv:2504.01669), Sect. 4.5.1 (local void) and
+Sect. 4.6 (cosmological principle). Several of the papers below are written by
 the proponents of the model they test; each claim is attributed.
 
 ## 1. What is tested
@@ -46,7 +46,7 @@ density (Nadathur 2013, arXiv:1306.1700) `[src]`.
 For spheres of comoving radius r centred on survey objects, homogeneity
 means a mean count N(<r) ∝ r³, i.e. a correlation dimension
 D₂(r) = d ln N / d ln r = 3. The homogeneity scale R_H is conventionally the
-radius above which D₂ stays within 1% of 3 (D₂ > 2.97); this definition was
+radius above which D₂ stays within 1% of 3 (D₂ > 2.97, arXiv:1205.6812 [src: abstract]); this definition was
 introduced with WiggleZ as more robust and comparable between surveys
 (Scrimgeour et al. 2012, arXiv:1205.6812) `[src]` and adopted by BOSS
 (Ntelis et al. 2017, arXiv:1702.02159) `[src]` and eBOSS quasars (Gonçalves
@@ -60,8 +60,8 @@ fiducial cosmology (Lopes-Dias et al. 2026, arXiv:2606.07854) `[src]`.
 | Sample | Redshift | Result as stated | Citation |
 |---|---|---|---|
 | SDSS LRGs | z ~ 0.3 (0.2–0.35) | N(R) ∝ R³ above R ~ 70 h⁻¹ Mpc; rms density variation 7% among ten ~2 × 10⁷ h⁻³ Mpc³ regions, consistent with biased ΛCDM `[src: abstract]` | Hogg et al. 2004, arXiv:astro-ph/0411197 |
-| WiggleZ, > 200,000 blue galaxies, ~1 (h⁻¹ Gpc)³ | 0.2–0.8 | R_H = 71 ± 8, 70 ± 5, 81 ± 5, 75 ± 4 h⁻¹ Mpc at z ~ 0.2, 0.4, 0.6, 0.8; a fractal with D₂ < 2.97 excluded on ~80–300 h⁻¹ Mpc at 99.99% `[src]` | arXiv:1205.6812 |
-| BOSS DR12 CMASS, 3 h⁻³ Gpc³ | 0.43–0.7 | R_H = 63.3 ± 0.7 h⁻¹ Mpc against a ΛCDM prediction of 62.0; D₂ compatible with 3 above 300 h⁻¹ Mpc in all bins `[src]` | arXiv:1702.02159 |
+| WiggleZ, > 200,000 blue galaxies, ~1 (h⁻¹ Gpc)³ | 0.2–0.8 | R_H = 71 ± 8, 70 ± 5, 81 ± 5, 75 ± 4 h⁻¹ Mpc at z ~ 0.2, 0.4, 0.6, 0.8; a fractal with D₂ < 2.97 excluded on ~80–300 h⁻¹ Mpc at 99.99% `[src: abstract]` | arXiv:1205.6812 |
+| BOSS DR12 CMASS, 3 h⁻³ Gpc³ | 0.43–0.7 | R_H = 63.3 ± 0.7 h⁻¹ Mpc against a ΛCDM prediction of 62.0; D₂ compatible with 3 above 300 h⁻¹ Mpc in all bins `[src: abstract]` | arXiv:1702.02159 |
 | SDSS DR7 quasars | z ~ 1.3 | homogeneous above at most 130 h⁻¹ Mpc `[src: abstract]` | arXiv:1306.1700 |
 | SDSS-IV DR16 quasars | 2.2–3.2 | R_H decreasing with redshift, in good agreement with ΛCDM `[src: abstract]` | arXiv:2010.06635 |
 | DESI DR1 LRGs (angular θ_H) | 0.4–1.1 | θ_H identified in all shells, consistent with ΛCDM mocks, with eBOSS DR16 and between the two Galactic caps `[src: abstract]` | arXiv:2606.07854 |
@@ -76,7 +76,7 @@ fiducial cosmology (Lopes-Dias et al. 2026, arXiv:2606.07854) `[src]`.
   degenerate with the density field; in a toy model with density
   oscillations of the survey's size, conventional selection-function
   estimates bias counts towards homogeneity and underestimate R_H by ~40%,
-  a model-dependent figure (Heinesen 2020, arXiv:2006.15022) `[src]`.
+  a model-dependent figure (Heinesen 2020, arXiv:2006.15022) `[src: abstract]`.
 - Volume-limited counts measure homogeneity of the tracer, not of the
   matter; isotropy is tested separately (§3).
 
@@ -95,9 +95,9 @@ Isotropy is covered in this skill and not repeated here: the number-count
 anomalies in `physics-and-methods.md` §7, `results.md` §9 and
 `deep/large-angle-cmb-anomalies.md`; the bulk flow in
 `physics-and-methods.md` §8 and `results.md` §8. In one line: the
-number-count dipole is 4.9–5.7σ above the kinematic expectation for
-CatWISE but 3.3–3.6σ with clustering-aware mocks, and
-the CMB large-angle anomalies are 2–3σ after look-elsewhere correction
+number-count dipole is 4.9σ (arXiv:2009.14826) or 5.7σ (arXiv:2212.07733)
+above the kinematic expectation for CatWISE but 3.63σ, 3.44σ or 3.27σ with clustering-aware mocks, and
+the joint CMB large-angle anomaly is 3σ or 2σ after look-elsewhere correction over about 16 or 50 tests
 `[sec: this skill, SKILL.md and results.md §§7, 9]`. A detected redshift
 drift would also probe isotropy and FLRW directly (Moresco et al. 2022,
 arXiv:2201.07241) `[src: Sect. 3.11.5]`; no detection exists (see
@@ -184,7 +184,7 @@ homogeneity (Seifert et al. 2024, arXiv:2412.15143) `[src]`.
 |---|---|---|---|
 | Dam et al. 2017 | JLA SNe | likelihood statistically indistinguishable from flat ΛCDM; apparent q0 = −0.043 (+0.004/−0.000) `[src: abstract]` | arXiv:1706.07236 |
 | Lane et al. 2023 | Pantheon+, cosmology-independent covariance | "for the first time" evidence that timescape may fit better than ΛCDM `[src]` | arXiv:2311.01438 |
-| Seifert et al. 2024 | Pantheon+, Tripp standardisation only | ln B > 5 for timescape over ΛCDM on the full sample; ln B > 1 for z > 0.075 `[src]` | arXiv:2412.15143 |
+| Seifert et al. 2024 | Pantheon+, Tripp standardisation only | ln B > 5 for timescape over ΛCDM on the full sample; ln B > 1 for z > 0.075 `[src: abstract]` | arXiv:2412.15143 |
 | DES SN analysis, as quoted by CosmoVerse | DES SNe, z > 0.033 | ln B = 1.7 for timescape; BAO by simple geometric scaling strongly favour ΛCDM `[sec: arXiv:2504.01669, Sect. 4.6.3.c]` | not read |
 | Saulder et al. 2019 | SDSS and 2MRS groups vs Millennium mocks | Hubble-flow variations prefer ΛCDM over an approximated timescape `[src]` | arXiv:1811.11976 |
 
@@ -249,15 +249,15 @@ Independent support for an underdensity, smaller in effect:
 - CLASSIX X-ray clusters: matter underdensity −0.3 ± 0.15 within ~100 Mpc,
   local H0 higher by 5.5 (+2.1/−2.8)%, diluted when distance indicators
   outside it are used; ΛCDM probability 1.3–3.7σ (Böhringer et al. 2019,
-  arXiv:1907.12402) `[src]`.
+  arXiv:1907.12402) `[src: abstract]`.
 - ΛLTB with the KBC profile: consistent with 217 SNe at 0.0233 < z < 0.15
   and with linear kSZ limits (SPT, ACT); the H0 tension falls from 3.4σ to
   2.75σ (Hoscheit & Barger 2018, arXiv:1801.01890) `[src: abstract]`.
 
 **As the critiques state it.**
 
-- The SN Ia Hubble diagram (1295 SNe) is inconsistent at 4–5σ with
-  |δ| > 20% and bounds δ < 27% on scales > 69 h⁻¹ Mpc at 5σ; the empirical
+- The SN Ia Hubble diagram (1295 SNe) is inconsistent at 4–5σ with a
+  local underdensity |δ| > 20% and bounds δ < 27% on scales > 69 h⁻¹ Mpc at 5σ; the empirical
   σ_H0 = 0.60% matches the 0.42% cosmic variance expected (Kenworthy et al.
   2019, arXiv:1901.08681) `[src: abstract]`.
 - Field-level fits of void models to Cosmicflows-4 Tully–Fisher distances
@@ -301,7 +301,7 @@ as giving H0 higher by 1.27 ± 0.59 in 0.0233 < z < 0.07 than in
 
 **Where it stands.** The void is measured in redshift-space galaxy counts
 (K band, 2MRS, clusters); SN-only ΛLTB fits find it only in binned or
-z < 0.15 SN subsets; direct distances and constrained reconstructions do
+z < 0.15 SN subsets (arXiv:1801.01890) [src: abstract]; direct distances and constrained reconstructions do
 not find it at the required size, and a void of that size is not expected in ΛCDM, so the
 proposal needs enhanced structure growth (MOND in the published models).
 The proponents list the decisive tests: field-level fits to distance
@@ -332,7 +332,7 @@ in `cosmo-distance-ladder-h0` (`open-questions.md` §7) and in this skill's
   was not identified and read.
 - No 2025–2026 critique of the Seifert et al. timescape result was found in
   the searches made.
-- Bianchi and McVittie spacetimes (CosmoVerse Sects. 4.6.2.b, 4.6.3) are
+- Bianchi and McVittie spacetimes (CosmoVerse, arXiv:2504.01669, Sect. 4.6.2.b; Sect. 4.6.3) are
   not covered.
 - §5 peers (2026-10-22) read at abstract level only, except Haslbauer et
   al. 2020 Sects. 5.2–5.3; no reply by Kenworthy et al. to that critique,

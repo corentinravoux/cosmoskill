@@ -20,12 +20,14 @@ data sets. Its systematics are of three kinds:
    between low and high redshift (Sections 1–4).
 2. An inference artefact: priors, parameterisation, choice of statistic,
    repeated testing (Sections 5–8).
-3. A modelling limit specific to tests of gravity (Sections 9–12).
+3. A modelling limit specific to tests of gravity (Sects. 9 to 12).
 
 For the signal under discussion in 2024–2026 the sizes are: BAO + CMB +
-supernovae prefer `w0wa` at 3.0–3.4σ (`results.md` Sections 2 and 9). A
-systematic that removes about 1.5σ from this makes it unremarkable. Several
-candidates of that size are documented below.
+supernovae prefer `w0wa` at 3.0σ (DES Y6 + DESI DR2 + CMB, arXiv:2605.27221,
+abstract), 3.2σ (DES-Dovekie, arXiv:2511.07517, abstract) and 3.4σ
+(Union3.1, arXiv:2601.19424, abstract); `results.md` Sections 2 and 9. A
+systematic that removes a large part of this preference makes it
+unremarkable; several candidates are documented below.
 
 ## 1. Supernova relative calibration between low and high redshift
 <!-- key: supernova-relative-calibration-between-low-and -->
@@ -39,15 +41,16 @@ candidates of that size are documented below.
   shift the dark energy inference towards the DESI 2024 results from an
   underlying ΛCDM cosmology" [src].
 - **Size.** The DESY5 low-redshift points sit at `mu − mu_fid ≈ 0.03` mag
-  against 0.01 mag for Pantheon+ (arXiv:2503.14738) [src]. An offset of ~0.04
-  mag between low and high redshift in common supernovae (Efstathiou 2024,
-  arXiv:2408.07175) [src], of which 43% is modelling improvements and 38%
-  different selection functions (Vincenzi et al. 2025, arXiv:2501.06664)
-  [src]. The Dovekie recalibration and colour-law fix changed `Omega_m` by
-  −0.022 and the significance from 4.2σ to 3.2σ (Popovic et al. 2025,
-  arXiv:2511.07517) [src]. Inconsistent host masses produced a > 0.03 mag
-  discrepancy between the Union3 and Pantheon+ low-redshift means, reduced to
-  0.01 mag after correction (Hoyt et al. 2026, arXiv:2601.19424) [src].
+  against 0.01 mag for Pantheon+ (arXiv:2503.14738) [src: Sect. VII.2]. An
+  offset of ~0.04 mag between low and high redshift in common supernovae
+  (Efstathiou 2024, arXiv:2408.07175) [src: abstract], of which 43% is
+  modelling improvements and 38% different selection functions (Vincenzi et
+  al. 2025, arXiv:2501.06664) [src: abstract]. The Dovekie recalibration and
+  colour-law fix changed `Omega_m` by −0.022 and the significance from 4.2σ
+  to 3.2σ (Popovic et al. 2025, arXiv:2511.07517) [src: abstract].
+  Inconsistent host masses produced a > 0.03 mag discrepancy between the
+  Union3 and Pantheon+ low-redshift means, reduced to 0.01 mag after
+  correction (Hoyt et al. 2026, arXiv:2601.19424) [src: abstract].
 - **Mitigation.** Recalibration on a common photometric system; consistent
   host properties across redshift; a single combined sample with one set of
   bias corrections (Unite, arXiv:2609.05053) [src]. Details:
@@ -68,7 +71,7 @@ candidates of that size are documented below.
 
 - **Mechanism.** Pantheon+, Union3 and the DES samples share most of their
   low-redshift supernovae; 20% of the supernovae are common to Pantheon+ and
-  DES-SN5YR (arXiv:2501.06664) [src]. Agreement among them does not test a
+  DES-SN5YR (arXiv:2501.06664) [src: abstract]. Agreement among them does not test a
   common-mode error in the anchor.
 - **Size.** Removing the common objects from one catalogue or the other
   changes the exclusion of ΛCDM between 3.8σ and 2.5σ (arXiv:2411.11685,
@@ -86,10 +89,10 @@ candidates of that size are documented below.
 - **Size.** In DR1 the preference was "primarily driven by the two LRG samples
   at z_eff = 0.51 and z_eff = 0.71"; replacing DESI at `z < 0.8` by SDSS BAO
   returned parameters consistent with ΛCDM (Chudaykin and Kunz 2024,
-  arXiv:2407.02558) [src]. For the DR1→DR2 sequence, an e-process analysis
+  arXiv:2407.02558) [src: abstract]. For the DR1→DR2 sequence, an e-process analysis
   finds the evidence "concentrated almost entirely in the LRG2 redshift bin";
   without it the e-value falls from 33.97 to 0.49 (Kim, Mota and Tamosiunas
-  2026, arXiv:2607.28918) [src].
+  2026, arXiv:2607.28918) [src: abstract].
 - **Counter-evidence.** The DR2 measurements are "consistent with DESI DR1 and
   SDSS" (arXiv:2503.14738, abstract) [src]; the LRG2–eBOSS difference at
   `z ≈ 0.7` fell from 3σ (DR1) to ~2.6σ (DR2, correlation 0.57 assumed)
@@ -97,9 +100,10 @@ candidates of that size are documented below.
 - **Validation test.** Leave-one-bin-out fits; replacement of DESI bins by
   SDSS; consistency of `D_M/D_H` (which is independent of `r_d`) with the
   fitted model.
-- **Lyman-α.** The DR2 Lyα full-shape distances agree with Planck ΛCDM and sit
-  about 2σ from the CMB + BAO `w0waCDM` prediction (sibling
-  `cosmo-lyman-alpha`, citing the 2026 DESI Lyα full-shape paper [sec]). A
+- **Lyman-α.** The DR2 Lyα forest distances are "in excellent agreement with
+  the ΛCDM prediction, but show a roughly 2σ tension with the w0waCDM
+  prediction" from CMB + DESI BAO (DESI Collaboration 2026, arXiv:2607.27410)
+  [src: Sect. V.3]. A
   `w0wa` best fit must be checked at `z = 2.33` as well as at `z < 1`.
 
 ## 4. The CMB input
@@ -170,12 +174,12 @@ candidates of that size are documented below.
   no physical model populates; the Bayes factor scales inversely with the
   prior volume.
 - **Size.** Reversing the DR2 + CMB + DESY5 Bayes factor needs priors wider by
-  more than 10 in each parameter (arXiv:2503.14743) [src]. Theory-informed
-  priors from quintessence reduce the Planck + DESI tension with Λ from ~3.1σ
-  to ~1.3σ (Toomey et al. 2025, arXiv:2509.13318) [src]. With priors on
-  Padé-`w` parameters, thawing quintessence is still preferred over Λ when
-  supernovae are included, "not sensitive to our choice of prior" (Shlivko
-  2025, arXiv:2512.20832) [src]. See also Patel, Chakraborty and Amendola
+  more than 10 in each parameter (arXiv:2503.14743) [src: App. A].
+  Theory-informed priors from quintessence reduce the Planck + DESI tension
+  with Λ from ~3.1σ to ~1.3σ (Toomey et al. 2025, arXiv:2509.13318)
+  [src: abstract]. With priors on Padé-`w` parameters, thawing quintessence
+  is still preferred over Λ when supernovae are included, "not sensitive to
+  our choice of prior" (Shlivko 2025, arXiv:2512.20832) [src: abstract]. See also Patel, Chakraborty and Amendola
   2024, arXiv:2407.06586.
 - **Hard prior edges.** The DESI BAO-only and BAO + CMB-prior posteriors are
   cut by `wa > −3`; their means and limits are prior-dependent
@@ -193,10 +197,12 @@ candidates of that size are documented below.
 - Data generated from a non-crossing (algebraic quintessence) model yield a
   CPL crossing with a `chi2` gain exceeding the observed one in 3.2% of 1,000
   mocks (Keeley, Shafieloo and Matthewson 2025, arXiv:2506.15091) [src: abstract].
-- The evidence is in the slope, not in the offset: `w_p` is 0.6σ (DESI + CMB)
-  and 1.9σ (with DESY5) from −1 [der: (−1.024 + 1)/0.043 and (−0.954 +
-  1)/0.024, values from arXiv:2503.14738]; the argument is due to Cortês and
-  Liddle 2024, arXiv:2404.08056 [src].
+- The evidence is in the slope, not in the offset: at the pivot DESI gives
+  `w_p = −1.024 ± 0.043` (DESI + CMB, `z_p = 0.53`) and `w_p = −0.954 ±
+  0.024` (DESI + CMB + DESY5, `z_p = 0.31`), "a mild preference for a
+  deviation from w = −1 at the best-measured redshift" (arXiv:2503.14738)
+  [src: Sect. VII.1]; the argument is due to Cortês and Liddle 2024,
+  arXiv:2404.08056 [src].
 - High-order polynomial expansions and high-redshift cut-offs of `w(z)` "can
   be pathological" (Linder 2007, arXiv:0708.0024) [src].
 - Choosing the redshift at which the departure from −1 is maximal (Rippentrop,
@@ -216,17 +222,18 @@ candidates of that size are documented below.
   signal does not survive [src].
 - Frequentist σ, DIC, and Bayes factor can disagree in sign for the same data
   (Pantheon+ with DR2: 2.8σ, `Delta DIC = −6.8`, `ln B = −0.66 ± 0.44`;
-  arXiv:2503.14738, arXiv:2503.14743) [src].
+  arXiv:2503.14738, Table 6; arXiv:2503.14743, Table 4) [src].
 - **Referee expects.** The statistic named, the number of extra parameters,
   the prior ranges, and both a frequentist and a Bayesian number.
 
 ## 9. Combining data sets that disagree
 <!-- key: combining-data-sets-that-disagree -->
 
-- Under ΛCDM, DESI BAO and the CMB differ at 2.3σ (arXiv:2503.14738) [src];
-  all DES probes and the CMB at 2.8σ (arXiv:2601.14559) [src]; under constant
-  `w`, Unite finds "strong evidence of tension between CMB measurements and
-  the combined BAO and supernova datasets" (arXiv:2609.05053) [src].
+- Under ΛCDM, DESI BAO and the CMB differ at 2.3σ (arXiv:2503.14738)
+  [src: abstract]; all DES probes and the CMB at 2.8σ (arXiv:2601.14559)
+  [src: abstract]; under constant `w`, Unite finds "strong evidence of tension
+  between CMB measurements and the combined BAO and supernova datasets"
+  (arXiv:2609.05053) [src: abstract].
 - A model with two more parameters that absorbs a 2–3σ inter-data-set
   difference will be preferred at 2–3σ. The preference and the tension are one
   fact, not two.
@@ -239,9 +246,9 @@ candidates of that size are documented below.
   interacting dark energy at 3–5σ (Li et al. 2026, arXiv:2601.07361),
   non-minimal coupling at 3σ (Pan and Ye 2025, arXiv:2503.19898), a weaker
   cosmological gravitational constant at 3.3σ (Wen et al. 2026,
-  arXiv:2609.40176) [src]. That five unrelated one- or two-parameter
-  extensions each reach about 3σ on the same data is the signature of a
-  data-set mismatch, not of five discoveries.
+  arXiv:2609.40176) [src: abstract of each]. That five unrelated one- or two-parameter
+  extensions each reach a comparable significance on the same data is the
+  signature of a data-set mismatch, not of five discoveries.
 
 ## 10. Modified gravity: degeneracy with the CMB lensing amplitude
 <!-- key: modified-gravity-degeneracy-with-the-cmb -->
@@ -254,7 +261,7 @@ candidates of that size are documented below.
   A 2026 analysis with KiDS-Legacy and Planck + ACT + SPT finds `Sigma0 =
   0.149 ± 0.051` (3.0σ) and attributes it to "higher amplitudes in the
   large-scale CMB lensing measurements" (Du et al. 2026, arXiv:2602.03110)
-  [src]. The growth-index excess of Nguyen, Huterer and Wen 2023,
+  [src: abstract]. The growth-index excess of Nguyen, Huterer and Wen 2023,
   arXiv:2302.01331, is partly the same Planck feature: in Planck data it
   "offsets the preference for nonzero curvature" [src].
 - **Mitigation.** Run with at least two CMB likelihoods and with and without
@@ -297,10 +304,10 @@ candidates of that size are documented below.
 - **`E_G`.** (i) Mismatched effective redshifts between lensing, clustering
   and RSD pieces; (ii) non-Gaussian error of a ratio; (iii) residual
   systematic budget of 2% (CMASS) and 3% (LOWZ) in the calibrated estimator
-  (Wenzl et al. 2024, arXiv:2401.12971) [src]; (iv) dependence of the GR
+  (Wenzl et al. 2024, arXiv:2401.12971) [src: abstract]; (iv) dependence of the GR
   prediction on `Omega_m,0` and the need for a careful bias treatment (Leonard
   et al. 2025, arXiv:2511.19194) [src]. The 2.6σ low value of Pullen et al.
-  2015, arXiv:1511.04457, arose only at scales above 80 Mpc/h [src] and is not
+  2015, arXiv:1511.04457, arose only at scales above 80 Mpc/h [src: abstract] and is not
   reproduced by the calibrated estimator.
 - **Cluster tests of screening.** Results depend on the assumed mass profile:
   NFW and Hernquist give agreement with GR, a Burkert profile (disfavoured by
@@ -354,6 +361,8 @@ One card per analysis, read in the paper body. "Place" is where it was read.
 ### 14.1 DESI DR2 BAO (DESI Collaboration 2025, arXiv:2503.14738)
 <!-- key: desi-dr2-bao-desi-collaboration-2025-arxiv-2503 -->
 
+From arXiv:2503.14738 unless another paper is named in the row; places in the last column.
+
 | Aspect | What the paper does | Place |
 |---|---|---|
 | Statistic | `Delta chi2_MAP` = twice the difference of the negative log posterior at the two MAP points (iminuit started from the chain MAP), so non-uniform priors count; converted to a "(frequentist) significance" for 2 extra parameters; `Delta DIC` alongside, `< −5` "strong", `< −10` "decisive" | [src: Sect. V; Table 6] |
@@ -373,6 +382,8 @@ One card per analysis, read in the paper body. "Place" is where it was read.
 ### 14.2 Profile likelihood: Herold and Karwal 2025 (arXiv:2506.12004)
 <!-- key: profile-likelihood-herold-and-karwal-2025-arxiv -->
 
+From arXiv:2506.12004; places in the last column.
+
 | Aspect | What the paper does | Place |
 |---|---|---|
 | Data | DESI DR2 BAO; Planck PR3 TT, TE, EE + ACT DR6 + Planck PR4 lensing; Pantheon+ or DES Y5 (pre-Dovekie); no Union3 | [src: Sect. II] |
@@ -386,6 +397,8 @@ One card per analysis, read in the paper body. "Place" is where it was read.
 ### 14.3 Optical depth: Sailer et al. 2025 (arXiv:2504.16932)
 <!-- key: optical-depth-sailer-et-al-2025-arxiv-2504-16932 -->
 
+From arXiv:2504.16932; places in the last column.
+
 | Aspect | What the paper does | Place |
 |---|---|---|
 | Data | DESI DR2 BAO; Planck PR4 CamSpec high-ℓ TT, TE, EE; PR4 + ACT DR6 lensing; Planck low-ℓ replaced by a Gaussian τ prior, 0.06 or 0.09, `sigma = 0.006`; no ACT primary spectra | [src: Sect. II] |
@@ -397,6 +410,8 @@ One card per analysis, read in the paper body. "Place" is where it was read.
 ### 14.4 Low-redshift supernova offset: Efstathiou 2024 (arXiv:2408.07175)
 <!-- key: low-redshift-supernova-offset-efstathiou-2024 -->
 
+From arXiv:2408.07175; places in the last column.
+
 | Aspect | What the paper does | Place |
 |---|---|---|
 | Common DES SNe | 145 of the 203 DES Y3 SNe of Pantheon+ are in DES5Y; mean `m_Pan − m_DES = −0.012` mag, dispersion 0.067 mag | [src: Sect. 3] |
@@ -406,6 +421,8 @@ One card per analysis, read in the paper body. "Place" is where it was read.
 
 ### 14.5 Which bin: Kim, Mota and Tamosiunas 2026 (arXiv:2607.28918)
 <!-- key: which-bin-kim-mota-and-tamosiunas-2026-arxiv -->
+
+From arXiv:2607.28918; places in the last column.
 
 | Aspect | What the paper does | Place |
 |---|---|---|
@@ -419,6 +436,8 @@ One card per analysis, read in the paper body. "Place" is where it was read.
 ### 14.6 Bayesian reanalysis: Ong et al. 2025 (arXiv:2511.10631)
 <!-- key: bayesian-reanalysis-ong-et-al-2025-arxiv-2511 -->
 
+From arXiv:2511.10631; places in the last column.
+
 | Aspect | What the paper does | Place |
 |---|---|---|
 | Method | PolyChord in Cobaya with CAMB; DESI priors `w0` in [−3, 1], `wa` in [−3, 2]; CMB = Planck with CamSpec; `ln B` converted to an upper bound on σ through the Bayes-factor bound on the p-value, only when `ln B > 0` | [src: Sect. II] |
@@ -427,6 +446,8 @@ One card per analysis, read in the paper body. "Place" is where it was read.
 
 ### 14.7 CMB experiment: ACT DR6 (Calabrese et al. 2025, arXiv:2503.14454)
 <!-- key: cmb-experiment-act-dr6-calabrese-et-al-2025 -->
+
+From arXiv:2503.14454; places in the last column.
 
 | Aspect | What the paper does | Place |
 |---|---|---|
@@ -438,6 +459,8 @@ One card per analysis, read in the paper body. "Place" is where it was read.
 ### 14.8 Which bin, DR1: Chudaykin and Kunz 2024 (arXiv:2407.02558)
 <!-- key: which-bin-dr1-chudaykin-and-kunz-2024-arxiv -->
 
+From arXiv:2407.02558; places in the last column.
+
 | Aspect | What the paper does | Place |
 |---|---|---|
 | Data | Planck PR3 Plik + Commander + SimAll, PR4 + ACT DR6 lensing; DESI DR1 BAO; Pantheon+; MontePython | [src: Sect. II.3] |
@@ -448,6 +471,8 @@ One card per analysis, read in the paper body. "Place" is where it was read.
 ### 14.9 Split supernova likelihood: Notari, Redi and Tesi 2024 (arXiv:2411.11685)
 <!-- key: split-supernova-likelihood-notari-redi-and-tesi -->
 
+From arXiv:2411.11685; places in the last column.
+
 | Aspect | What the paper does | Place |
 |---|---|---|
 | DES5Y composition | `z < 0.1`: 197 SNe, all but 3 from historical samples (118 Foundation); `z > 0.1`: 1632, all DES | [src: Sect. 4.2, table] |
@@ -457,9 +482,11 @@ One card per analysis, read in the paper body. "Place" is where it was read.
 ### 14.10 Full-shape profile likelihood: Morawetz et al. 2025 (arXiv:2508.11811)
 <!-- key: full-shape-profile-likelihood-morawetz-et-al -->
 
+From arXiv:2508.11811; places in the last column.
+
 | Aspect | What the paper does | Place |
 |---|---|---|
 | Statistic | 1D and 2D profile likelihoods; intervals from `Delta chi2 < 1 (4)` in 1D, `< 2.30 (6.17)` in 2D; compared with posterior means and MAP | [src: Sect. 3.3, Eqs. 2–3] |
-| `w0wa`, DESI FS + BAO + BBN + `n_s10` | profile: `w0 = −0.16 (+0.10/−0.50)`, `wa = −3.0 (+1.7)`, `Omega_m = 0.378`, `H0 = 63.7`; MLE–posterior-mean shifts 2.1σ to 6.6σ | [src: Sect. 4.2, Eq. 7] |
-| `w0wa`, + CMB + Union3 | profile `w0 = −0.634 ± 0.100`, `wa = −1.39 (+0.38/−0.41)`; shifts 0.2–1.0σ | [src: Sect. 4.2, Eq. 8] |
+| `w0wa`, DESI FS + BAO + BBN + `n_s10` | profile: `w0 = −0.16 (+0.10/−0.50)`, `wa = −3.0 (+1.7)`, `Omega_m = 0.378`, `H0 = 63.7`; MLE–posterior-mean shifts 2.1σ, 4.1σ, 6.5σ, 6.3σ and 6.6σ for `sigma8`, `H0`, `Omega_m`, `w0`, `wa` | [src: Sect. 4.2, Eq. 7] |
+| `w0wa`, + CMB + Union3 | profile `w0 = −0.634 ± 0.100`, `wa = −1.39 (+0.38/−0.41)`; shifts 0.2σ, 0.7σ, 0.7σ, 1.0σ and 0.9σ for the same parameters | [src: Sect. 4.2, Eq. 8] |
 | FS versus BAO | frequentist constraints agree between FS-only and FS + BAO fits, whereas Bayesian ones differ significantly; the paper reads the Bayesian `w0wa` constraints as prior-sensitive | [src: Sect. 4.2] |

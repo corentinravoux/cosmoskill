@@ -17,7 +17,7 @@ corrections, the dimensionalities, the original cell sizes and the
 reference-cosmology dependence in
 `physics-and-methods.md#selection-bias-bbc-and-beams`; the selection-bias
 row of each compilation in `physics-and-methods.md#what-each-main-analysis-did`;
-the comparison trap and its 38 % share in
+the comparison trap and its share in
 `systematics.md#selection-bias-malmquist-and-its-dependence-on`; the
 reference-cosmology test in
 `systematics.md#reference-cosmology-in-bias-corrections`; the colour and
@@ -44,7 +44,7 @@ two inputs to the catalogue-level SNANA simulation:
 - **Detection efficiency versus S/N** in each filter, reaching 50 % around
   `S/N ~ 5`. The S/N is computed from the true flux and the noise model in
   the same way as in the simulation, not from measured fluxes [src:
-  Sect. 7.1].
+  arXiv:1811.02379, Sect. 7.1].
 - **Flux-uncertainty scale** `Ŝ_sim`, the ratio of the RMS of
   (true − measured) flux on fakes to the same RMS in the simulation
   (Eq. 14), mapped against local surface brightness; after it, fake and
@@ -55,9 +55,9 @@ Why fakes are not the bias correction themselves: their light-curve model is
 deliberately unrealistic (no intrinsic scatter, tuned redshift
 distribution), 10 000 is "more than an order of magnitude smaller" than a
 BiasCor sample needs, and the result would only hold for one SN model; SNANA
-is about 10^5 times faster than image-level simulation [src: Sect. 4].
+is about 10^5 times faster than image-level simulation [src: arXiv:1811.02379, Sect. 4].
 Fakes are placed on at most about 1 % of galaxies per 0.05 redshift bin,
-because a fake blocks real detections on its galaxy for that season [src].
+because a fake blocks real detections on its galaxy for that season [src: Sect. 4].
 
 ### Step 2. Model the trigger and the spectroscopic selection
 <!-- key: step-2-model-the-trigger-and-the-spectroscopic -->
@@ -175,7 +175,7 @@ modelled [src].
   SNLS offset traced to a position-dependent filter transmission not
   modelled (reduced to 0.9σ once included) and an unintended χ²/dof cut on
   high-S/N low-z data (five calibrator light curves recovered) [src:
-  Sect. 5.2].
+  arXiv:2609.05053, Sect. 5.2].
 - **Coverage and cosmology recovery** on simulated samples: see L2.
 
 ## What the correction is made of
@@ -187,18 +187,20 @@ Sect. 9]:
 
 1. No intrinsic scatter, only `x0` fitted: about 0.01 mag, because only the
    two trigger detections are selected and the other few dozen epochs are
-   unbiased.
+   unbiased [src: arXiv:1811.02379, Sect. 9].
 2. G10 scatter, only `x0` fitted: about 0.1 mag, since selection prefers
-   positive brightness fluctuations correlated across epochs and bands.
+   positive brightness fluctuations correlated across epochs and bands
+   [src: arXiv:1811.02379, Sect. 9].
 3. All three parameters fitted: much larger, "mainly because of the bias in
    fitted color"; measured-minus-true colour RMS is about 0.5 of the true
-   colour spread, 0.7 at z > 0.5.
+   colour spread, 0.7 at z > 0.5 [src: arXiv:1811.02379, Sect. 9].
 
 Their conclusion: the bias "is primarily associated with intrinsic scatter
 and light-curve fitting", not with Malmquist bias in the narrow sense [src].
 Averaged over colour it is zero at low redshift and about 0.05 mag at high
 redshift, model dependent; changing α from 0.10 to 0.24 moves it by up to
-0.03 mag, changing β by about 1 by up to 0.01 mag [src].
+0.03 mag, changing β by about 1 by up to 0.01 mag [src: arXiv:1811.02379,
+Sect. 9].
 
 ## Choices and what they cost
 <!-- key: choices-and-what-they-cost -->

@@ -41,7 +41,7 @@ Sect. V]. Two kinds of source are in use:
 | Source | Size | Why | Place read |
 |---|---|---|---|
 | Warm dust, rest frame ~8–12 μm, ~hundreds of K | ~0.5–10 pc, little dependence on luminosity, ~mas | not microlensed | arXiv:2511.07765, Sect. V |
-| Hot dust, ~1500 K, sublimation zone | 0.05–0.2 pc at 10⁴⁴–10⁴⁵ erg/s | can be microlensed; modelled and removed | same |
+| Hot dust, ~1500 K, sublimation zone | 0.05–0.2 pc at 10⁴⁴–10⁴⁵ erg/s | can be microlensed; modelled and removed | arXiv:2511.07765, Sect. V |
 | Nuclear narrow-line region | sampled 20–80 pc FWHM in the model | not microlensed; older samples | arXiv:2511.07513, Sect. V.4 |
 
 The JWST MIRI fluxes are measured by forward-modelling each image as a point
@@ -57,7 +57,7 @@ The warm-dust flux is then separated by a three-component SED fit per
 image: a power law νF_ν ∝ ν^β_q with β_q in [−0.8, 0] around the typical
 −0.3 (range widened "to account for distortions in the continuum due to
 microlensing"), and hot and warm blackbodies whose amplitudes may differ
-between images [src: Sect. V]. The hot-dust temperature prior was raised
+between images [src: arXiv:2511.07765, Sect. V]. The hot-dust temperature prior was raised
 from 900–1600 K to a lower limit of 1200 K because several systems drove
 the warm-dust flux to zero; all 31 lenses were refitted and these flux
 ratios supersede the earlier ones [src: Sect. V]. Flux-ratio uncertainties
@@ -83,7 +83,7 @@ The narrow ranges on α and δ_LOS are justified as "very robust predictions
 of collisionless dark matter above the free-streaming scale"; Σ_sub is
 wide because of tidal-evolution uncertainty, and was extended upward
 relative to earlier analyses "to test the dependence of the results on the
-prior" [src: Sect. IV.3]. Sect. IV.1.1 of the same paper describes δ_LOS
+prior" [src: arXiv:2511.07513, Sect. IV.3]. Sect. IV.1.1 of the same paper describes δ_LOS
 as allowing "up to 20%" differences, against 10% in Sect. IV.3 [src: both
 places]; the sampling range [0.9, 1.1] is the operative statement.
 
@@ -97,12 +97,12 @@ Sects. II, IV.1]:
   redshift, or at infall for subhaloes). Below 10⁶ M⊙ haloes are too small
   to affect the flux ratios for the source sizes used; above 10^10.7 M⊙
   they would usually host visible light and are modelled explicitly
-  [src: Sect. IV.1]. Earlier work stopped at 10¹⁰ M⊙ [src: Sect. VII.1].
+  [src: arXiv:2511.07513, Sect. IV.1]. Earlier work stopped at 10¹⁰ M⊙ [src: Sect. VII.1].
 - **Field haloes.** Double cone opening to six Einstein radii, planes
   every Δz = 0.02, uniform positions; mass function
   d²N/dm dV = δ_LOS [1 + ξ(m_host, z_d)] d²N_ST/dm dV (Eq. 13), where
   ξ is the two-halo term of the group host, adding ~20% haloes near the
-  deflector, computed with colossus [src: Sect. IV.1.1]. Profiles are
+  deflector, computed with colossus [src: arXiv:2511.07513, Sect. IV.1.1]. Profiles are
   truncated NFW (Eq. 14) with the Diemer–Joyce concentration and 0.2 dex
   scatter, truncated at r_200.
 - **Negative convergence sheets.** Each plane gets
@@ -114,7 +114,7 @@ Sects. II, IV.1]:
   infall mass function d²N/dm dA = (Σ_sub/m_0)(m/m_0)^(−α) F(m_host, z)
   with m_0 = 10⁸ M⊙ (Eq. 15) and
   F = (m_host/10¹³ M⊙)^k1 (z + 0.5)^k2, k1 = 0.55, k2 = 0.37, calibrated
-  on galacticus (Eq. 16) [src: Sect. IV.1.2]. Each subhalo gets an infall
+  on galacticus (Eq. 16) [src: arXiv:2511.07513, Sect. IV.1.2]. Each subhalo gets an infall
   redshift, an infall concentration, a bound-mass fraction drawn from
   p(f_bound | c, z_infall, c_host) of the Du et al. tidal model, then a
   truncation radius and normalisation factor f_t from tidal tracks; most
@@ -149,7 +149,7 @@ Multi-plane ray tracing (Eq. 4) with ~10⁴ background haloes is made
 tractable by the decoupled multi-plane approximation: the deflection by
 haloes behind the deflector is computed once for an initial macromodel
 that fits the images without substructure and then held fixed, so the
-lens equation becomes linear in the macromodel deflection (Eq. 6) [src:
+lens equation becomes linear in the macromodel deflection (Eq. 6) [src: arXiv:2511.07513, 
 Sect. II.1].
 
 Peers: SHARP VII models seven quads with stellar discs and luminous
@@ -177,7 +177,7 @@ The arcs are not reconstructed for each forward-modelled realisation.
 Instead a separate set of lens models fitted to arcs + positions provides
 weights w_img(n_mac | d_ptsrc, d_I) on the macromodel parameters (Eq. 9):
 the ratio of the macromodel posterior with imaging to that without,
-integrated over realisations and q [src: Sect. II.2.3]. The authors'
+integrated over realisations and q [src: arXiv:2511.07513, Sect. II.2.3]. The authors'
 reason: modelling imaging data in the presence of substructure risks
 systematic bias, so the arcs are used only to constrain the deflector on
 scales larger than a pixel [src: Sects. II, II.2.3]. Substructure is
@@ -296,12 +296,11 @@ Other groups on the same degeneracy, one line each:
 ### Imaging data
 <!-- key: imaging-data -->
 
-Adding arcs improves the bound by 0.4 dex (L2). The mechanism: arcs
+Adding arcs improves the bound by 0.4–0.5 dex [src: arXiv:2511.07513 Sect. VI.2]. The mechanism: arcs
 constrain q, γ_ext, γ and the m = 3, 4 amplitudes, narrowing the
 model-predicted flux ratios (Figs. 2–3) and breaking the Σ_sub–m_hm
-covariance [src: arXiv:2511.07513, Sect. II.2.3; abstract]. Eight of the
-28 lenses have HST imaging, three NIRCam, eleven MIRI F560W and four none
-listed [src: Table 2, counted here [der]]; systems without imaging enter
+covariance [src: arXiv:2511.07513, Sect. II.2.3; abstract]. Table 2 of that paper lists, lens by lens, the imaging
+used (HST, NIRCam or MIRI F560W) [src: Table 2]; systems without imaging enter
 through positions and flux ratios only.
 
 ### Extended arcs: gravitational imaging and its variants
@@ -456,7 +455,7 @@ Two arc detections carry most of the SIDM argument; each paper's reading:
 | FDM from one VLBI arc | m ≤ 4.4 × 10⁻²¹ eV excluded (Powell et al. 2023, as summarised) | MG J0751+2716 | arXiv:2306.11781 | Sect. 7.2 |
 | Lowest-mass detection | m_80 = (1.13 ± 0.04) × 10⁶ M⊙, 26σ, astrometry 194 μas | B1938 VLBI arc | arXiv:2510.07382 | abstract |
 | J0946 subhalo | z = 0.207 ± 0.019; γ_2D = −1.81 (+0.15/−0.11) at 0.75–1.25 kpc | HST arcs | arXiv:2411.08565 | abstract |
-| B1938 object A redshift | 1.42 (+0.10/−0.15) vs 0.13 ± 0.07 | same data, two analyses | arXiv:2112.00749; arXiv:2505.07944 | abstracts |
+| B1938 object A redshift | 1.42 (+0.10/−0.15) vs 0.13 ± 0.07 | same data, two analyses | arXiv:2112.00749; arXiv:2505.07944 | abstract (both) |
 | HST arc candidates | 5 candidates, 2 compelling, 45 lenses without substructure, of 54 | HST | arXiv:2209.10566 | abstract |
 
 The 95% values of the JWST flux-ratio rows with the galacticus / N-body
@@ -500,14 +499,14 @@ keV see L2.
   the tidal model [src: Sect. VII.1].
 - **Unmodelled compact perturbers.** A ~10⁶ M⊙ compact object detected in
   an arc could indicate a population that is not in the model if it is not
-  a globular cluster [src: Sect. VII.1].
+  a globular cluster [src: arXiv:2511.07513, Sect. VII.1].
 - **Multipoles read as subhaloes, in quads and arcs.** m = 3, 4 at ≤ 0.01
-  reproduce CDM-level anomalies [src: arXiv:2403.08895]; a reported ALMA
+  reproduce CDM-level anomalies [src: arXiv:2403.08895, abstract]; a reported ALMA
   subhalo did not survive multipoles [src: arXiv:2508.02776]. Test: fit
   multipoles to m = 4 before claiming a detection.
 - **Perturber redshift assumed.** The same B1938 object was placed at the
   lens, behind it (z = 1.42) and in front (z = 0.13), with mass changing
-  by an order of magnitude [src: arXiv:2112.00749; arXiv:2505.07944].
+  by an order of magnitude [src: arXiv:2112.00749, abstract; arXiv:2505.07944, abstract].
   Test: fit the redshift.
 - **Detection threshold too low.** At 5σ, arcs give many spurious
   detections and non-detections [src: arXiv:1811.03627]. Test: Bayes

@@ -29,18 +29,18 @@ re-verify against the cited paper before a number enters a manuscript.
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
 
-- KiDS-Legacy cosmic shear: S8 = 0.815 +0.016/−0.021 (marginal mode), 0.73σ from Planck in Σ8, 0.74–0.76σ in S8; the rise from KiDS-1000 (0.759) is attributed mainly to redshift calibration (arXiv:2503.19441).
+- KiDS-Legacy cosmic shear: S8 = 0.815 +0.016/−0.021 (marginal mode); Hellinger distance to Planck Legacy 0.73σ in Σ8 and 0.76σ in S8 (arXiv:2503.19441) [src: Sect. 7] (the abstract attaches 0.73σ to S8); the rise from KiDS-1000 (0.759, arXiv:2007.15633) is attributed mainly to redshift calibration [src: abstract of each].
 - DES Y6 cosmic shear: 0.798 +0.014/−0.015 with NLA, 0.783 +0.019/−0.015 with TATT; 2.0σ and 2.3σ in S8 from Planck + ACT DR6 + SPT-3G (arXiv:2602.10065, abstract).
 - DES Y6 3×2pt: S8 = 0.789 ± 0.012, 2.6σ in S8 but 1.8σ in the full parameter space (arXiv:2601.14559, abstract). Reduced, not gone; metric-dependent.
-- HSC Y3 moves from 0.769 to 0.804 +0.019/−0.018 with DESI clustering redshifts (arXiv:2511.18134); metacalibration on KiDS-1000 changes nothing (arXiv:2510.01122). Redshifts, not shapes, drove the old lows.
-- CMB references differ: KiDS Planck alone (0.834 ± 0.016), DES Planck + ACT + SPT (0.836 +0.012/−0.013), same centre, tighter; against Planck 2018 alone the DES Y6 3×2pt full-parameter difference is 1.0σ (arXiv:2601.14559, arXiv:2602.12238).
-- IA model choice: 0.6σ in S8 between NLA and TATT, about 1σ in the S8–Ωm plane across variants (arXiv:2602.10065); the bluest galaxies show no detectable alignment (arXiv:2507.11530).
+- HSC Y3 moves from 0.769 to 0.804 +0.019/−0.018 with DESI clustering redshifts (arXiv:2511.18134) [src: abstract]; metacalibration on KiDS-1000 changes nothing (arXiv:2510.01122). Redshifts, not shapes, drove the old lows.
+- CMB references differ: KiDS uses Planck alone (0.834 ± 0.016, arXiv:2503.19441) [src: Sect. 7], DES Planck + ACT + SPT (0.836 +0.012/−0.013), close centres, the DES one tighter; against Planck 2018 alone the DES Y6 3×2pt full-parameter difference is 1.0σ (arXiv:2601.14559) [src: Sect. V.2, Sect. VIII]; see also arXiv:2602.12238.
+- IA model choice: 0.6σ in S8 between NLA and TATT (arXiv:2602.10065) [src: Sect. VI.1], and IA and baryon-feedback model choices move S8 by up to 1σ [src: abstract]; the bluest galaxies show no detectable alignment (arXiv:2507.11530) [src: abstract].
 - Baryonic feedback strength is disputed: kSZ, X-ray, tSZ and the KiDS-Legacy P(k) favour strong suppression (arXiv:2609.09144, arXiv:2509.08365, arXiv:2506.07432); DES Y3 6×2pt favours weak (arXiv:2510.25596).
 - External IA and baryon calibration moves DES Y3 to 0.832 +0.013/−0.017 (arXiv:2512.04209, abstract).
-- Scale cuts saturate: all scales plus a free baryon model gain almost nothing (arXiv:2509.03582); LSST year 10 barely beats year 1 without better baryon and redshift priors (arXiv:2602.21863, forecast).
+- Scale cuts saturate: all scales plus a free baryon model gain almost nothing (arXiv:2509.03582); LSST year 10 barely beats year 1 without better baryon and redshift priors (arXiv:2602.21863, forecast) [src: abstract of each].
 - Mean and MAP of S8 differ through projection effects: 0.790 vs 0.801 in DES Y3 + KiDS-1000 (arXiv:2305.17173, abstract).
 - No Stage-IV cosmic-shear cosmology exists. Euclid DR1 lensing products: mid-2027. Rubin LSST began 30 June 2026; Roman launched 30 August 2026.
-- UNIONS-3500: first results non-tomographic, S8 error about ±0.07 (arXiv:2605.13547).
+- UNIONS-3500: first results non-tomographic, S8 = 0.831 +0.067/−0.078 (arXiv:2605.13547) [src: abstract].
 
 ## Systematics a referee checks
 <!-- key: systematics-a-referee-checks -->
@@ -59,12 +59,12 @@ re-verify against the cited paper before a number enters a manuscript.
 ## Errors that recur
 <!-- key: errors-that-recur -->
 
-- Quoting "S8 ≈ 0.76, 2–3σ below Planck" as current; that is KiDS-1000 and DES Y3.
+- Quoting the KiDS-1000 and DES Y3 cosmic-shear values as current: S8 = 0.759 in each, 3σ and 2.3σ from the CMB they used (arXiv:2007.15633, arXiv:2105.13543) [src: abstract of each].
 - Writing that the tension is "resolved" without the DES Y6 3×2pt figure.
 - Citing 0.772 as the DES Y3 cosmic-shear result; it is the optimised-scale variant, the fiducial is 0.759 (arXiv:2105.13543, abstract).
 - Citing CFHTLenS tomography σ8 = 0.799 as lensing-only; it includes WMAP7, BOSS, an H0 prior (arXiv:1303.1808, abstract).
 - Treating November 2026 as the Euclid lensing release; it is DR1-Foundation.
-- Comparing S8 values with different exponents (0.45, 0.5, 0.58), point estimates or CMB references.
+- Comparing S8 values defined with different exponents (α = 0.45 or 0.5 in arXiv:1809.09148, α = 0.58 for Σ8 in arXiv:2503.19441) [src: abstract of each], point estimates or CMB references.
 
 ## Related skills
 <!-- key: related-skills -->
@@ -90,7 +90,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 5k; methods 9k; results 7k; surveys 6k; systematics 14k; deep/baryonic-feedback 6k; deep/blinding-consistency 6k; deep/ggl-3x2pt 8k; deep/intrinsic-alignments 6k; deep/shear-calibration 8k; deep/two-point-statistics 6k.
+Sizes, in thousands of tokens: L1 3k; open 5k; methods 9k; results 8k; surveys 6k; systematics 14k; deep/baryonic-feedback 6k; deep/blinding-consistency 6k; deep/ggl-3x2pt 8k; deep/intrinsic-alignments 6k; deep/shear-calibration 8k; deep/two-point-statistics 6k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

@@ -16,7 +16,7 @@ From: Snowmass CF6 (arXiv:2209.08654), Sect. 5; Euclid overview
 Already in L2 or another dossier, not repeated here: UNIONS depths and the
 Euclid PSF-colour need in `surveys-and-data.md#imaging-surveys` and
 `systematics.md#point-spread-function`; the Roman HLWAS tiers and the
-committee's reasons for the wide tier (Rubin and DESI overlap, 470 deg² of
+committee's reasons for the wide tier (Rubin and DESI overlap, overlap with
 Euclid) in `deep/footprint-tiling-depth.md`; the SO LAT sky-fraction trade
 for LSST and DESI overlap in `deep/survey-forecasts.md` ("Area or overlap
 for a CMB survey"); Rubin deep-drilling budgets, the Euclid Deep Field
@@ -86,8 +86,8 @@ overlap is what is left to negotiate.
 
 - **Euclid's footprint.** Stellar contamination and Galactic stray light,
   reddening at fixed exposure time and zodiacal background exclude low
-  Galactic latitude, dusty sky and the ecliptic; the area is defined as
-  |b| > 25°, |β| > 15° and E(B − V) < 0.08 (up to 0.15 to avoid holes)
+  Galactic latitude, dusty sky and the ecliptic; the area is defined as |b|
+  > 25°, |β| > 15° and E(B − V) < 0.08 (up to 0.15 to avoid holes)
   [src: arXiv:1710.08489, Sect. IV.4.1]. The DDP report quotes 17,400 deg²
   compatible with the requirements, of which the six-year baseline covers
   the required 15,000 deg² [src: arXiv:2201.03862, Sect. 6, Fig. 2
@@ -274,8 +274,10 @@ the abstracts.
   spectroscopy (**forecast**) [src: arXiv:1112.4478, abstract].
 
 What to check: whether the forecast includes sample-variance cancellation
-in a 3D × 2D covariance and nuisance parameters; the 20% result is
-statistical-only, and the large factors depend on the nuisance model.
+in a 3D × 2D covariance and nuisance parameters; the de Putter et al.
+result of at most about 20% (arXiv:1308.6070) [src: abstract] is for
+statistical errors only, and the large factors depend on the nuisance
+model.
 
 ### Sharing photometry for photo-z
 <!-- key: sharing-photometry-for-photo-z -->
@@ -350,14 +352,17 @@ LSST products and public data for DES [src: arXiv:2405.13491, Sect. 7.3].
 | n_eff with blending, 20–27.5 mag | 44.08 combined; 39.17 LSST-like; 30.31 Euclid-like (arcmin⁻²) | simulations | arXiv:2506.22658 | abstract |
 | DCR model improvement from VIS | ≈ 2 | DDP report | arXiv:2201.03862 | Executive Summary |
 | Joint survey processing cost | ~200 work-years | JSP report | arXiv:2008.10663 | abstract |
-| Same-sky gain | ~4 (DE), > 2 (MG) / ≤ 20% FoM (**forecast**) | Kirk / de Putter | arXiv:1307.8062; arXiv:1308.6070 | abstracts |
+| Same-sky gain | ~4 (DE), > 2 (MG) / ≤ 20% FoM (**forecast**) | Kirk / de Putter | arXiv:1307.8062; arXiv:1308.6070 | abstract of each |
 | LSST + Roman SN FoM | up to ×2 (**forecast**) | SN community | arXiv:2104.01199 | Sect. II |
 
 ## What goes wrong
 <!-- key: what-goes-wrong -->
 
 - **Overlap quoted from the wrong footprint.** The Rubin–Euclid overlap
-  ranges from 7534 to 12,500 deg² across footprint versions (Step 2).
+  is 7534 deg² in the Euclid overview (arXiv:2405.13491) [src: Sect. 4.4]
+  and 12,500 deg² for an extended WFD with a northern mini-survey in the
+  DDP report (arXiv:2201.03862) [src: Sect. 6]; each belongs to its
+  footprint version (Step 2).
   Test: name the Rubin strategy version and the Euclid release footprint.
 - **Ground data shallower than space data where it matters.** Euclid depth
   varies with zodiacal light; matching the average leaves the deepest
@@ -381,8 +386,8 @@ LSST products and public data for DES [src: arXiv:2405.13491, Sect. 7.3].
 - **Confusing products.** Euclid's products from UNIONS pixels differ from
   UNIONS's own catalogues [src: arXiv:2503.13783, Sect. V]. Test: cite
   which pipeline produced the photometry.
-- **Same-sky factor out of context.** Factors from 1.2 to 4 come from
-  different covariance and nuisance treatments (Choices). Test: state the
+- **Same-sky factor out of context.** The same-sky factors of different
+  papers come from different covariance and nuisance treatments (Choices). Test: state the
   forecast assumptions next to the factor.
 - **Assumed follow-up.** Host redshifts for DDF SNe exceed what 4MOST
   reaches and what Roman's Subaru time covers [src: arXiv:2104.01199,

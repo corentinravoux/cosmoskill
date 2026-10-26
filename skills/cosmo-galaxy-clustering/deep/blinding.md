@@ -52,9 +52,10 @@ Sect. 2.3].
 Constraints on the draw [src: arXiv:2404.07282, Sect. 3.3, Fig. 1, Eq. 14]:
 
 - |α_⊥ − 1| < 0.03 and |α_∥ − 1| < 0.03 over 0.4 < z < 2.1; the allowed
-  (w0, wa) region is the white area of their Fig. 1. Adding BGS
-  (0.1 < z < 0.4) later did not change the region (App. A).
-- The growth-rate shift is not drawn independently: f_blind is set so that
+  (w0, wa) region is the white area of their Fig. 1 [src: arXiv:2404.07282,
+  Sect. 3.3]. Adding BGS
+  (0.1 < z < 0.4) later did not change the region (arXiv:2404.07282, App. A).
+- The growth-rate shift is not drawn independently (arXiv:2404.07282): f_blind is set so that
   the RSD boost of the monopole compensates the volume dilation α_iso⁻³ of
   the AP shift,
   f_blind(z) = b_1 { sqrt[ (D²_A,fid H_blind)/(D²_A,blind H_fid)
@@ -120,7 +121,7 @@ Sect. 4.4, footnote 9]. For several redshift bins the authors recommend a
 coherent parametrisation of f(z) across bins rather than independent
 shifts [src: Sect. 3.3].
 
-Smoothing choice [src: Sect. 4.4]: R_sm = 15 h⁻¹ Mpc left an RSD bump at
+Smoothing choice (arXiv:2006.10857) [src: Sect. 4.4]: R_sm = 15 h⁻¹ Mpc left an RSD bump at
 0.05 < k < 0.20 h Mpc⁻¹; 5 h⁻¹ Mpc gave a negative reconstructed
 quadrupole (non-linear velocities over-predict linear RSD); 10 h⁻¹ Mpc was
 adopted for LOWZ and CMASS, and a sub-optimal choice "does not affect the
@@ -142,7 +143,7 @@ for their definitions). δ̂^r is built by painting data and randoms (CIC),
 smoothing with S_1 = exp(−k²σ_1²/2) (Eq. 8), estimating RSD displacements
 with pyrecon's iterative FFT for a fiducial b and f, moving the galaxies
 back, repainting, dividing by b and smoothing with S_2 (σ_2); σ_1 = σ_2 =
-30 h⁻¹ Mpc [src: Sect. 2.2.2]. Stated reason: only large scales are needed,
+30 h⁻¹ Mpc (arXiv:2406.00191) [src: Sect. 2.2.2]. Stated reason: only large scales are needed,
 and S_2 keeps the weights away from BAO and RSD scales [src: same]. The
 blinded spectrum is (Eq. 11) the original plus 2a(k) X̃ + a(k)² Ỹ, with X̃
 and Ỹ (Eqs. 12–13) carrying a shot-noise term; a corrective factor a'/a in
@@ -207,7 +208,7 @@ mock, Γ_α = (α^measured/α^rescaling)/α^measured_baseline (Eq. 26), which
 cancels sample variance; Γ̃_m (Eq. 27) uses differences for m. Γ = 1
 (Γ̃ = 0) means no residual.
 
-Mock test [src: Sects. 5.1–5.2]: 25 AbacusSummit DR1-like mocks (200 h⁻³
+Mock test (arXiv:2404.07282) [src: Sects. 5.1–5.2]: 25 AbacusSummit DR1-like mocks (200 h⁻³
 Gpc³) for the multipoles; one mock blinded 8 × 2 times (8 (w0, wa) pairs ×
 f_NL = ±20) for fits. Pass criterion is qualitative: Γ near unity and
 reduced χ² within the 1σ–2σ spread of the 16 cases (about 80% within 1σ).
@@ -231,6 +232,8 @@ The systematic budget is fixed before unblinding, with the stated aim of
 preventing the tendency "to attribute a higher level of systematic
 uncertainty to outcomes that are unexpected" [src: arXiv:2404.03000,
 Sect. 6].
+
+DR2 column from arXiv:2503.14742, Table 6 [src]; the other columns as listed under the table:
 
 | Checklist item | DR1 BAO | DR1 FS (ShapeFit) | DR2 BAO |
 |---|---|---|---|

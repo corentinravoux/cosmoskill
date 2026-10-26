@@ -8,18 +8,19 @@ one mass definition is converted to another, and how c(M), its freedom and
 off-centring enter the galaxy–galaxy lensing and satellite models of current
 joint fits.
 Snapshot: 2026-10-19.
-From: Asgari et al. 2023, Sect. 3.5-3.6; Wechsler & Tinker 2018, Sect. 2.1.
+From: Asgari et al. 2023 (arXiv:2303.08752), Sects. 3.5–3.6; Wechsler & Tinker
+2018 (arXiv:1804.03097), Sect. 2.1.
 
 Already in L2, not repeated here: NFW and Einasto as profiles, the c(M)
 relations of Bullock, Duffy (with its Table 1 coefficients), Ludlow, Child,
 Diemer & Joyce and the CAMELS baryonic relation, in
 `physics-and-methods.md#density-profiles-and-concentration`; concentration
-scatter in the halo model (σ_ln c ~ 0.3) in
+scatter in the halo model (σ_ln c) in
 `physics-and-methods.md#the-halo-model-and-its-limits`; the size of the
 profile systematics and of baryonic changes to ΔΣ in
 `systematics.md#profiles-concentration-and-their-scatter` and
 `systematics.md#lensing-and-clustering-systematics-in-joint-fits`; the
-f_conc bracket 0.61–0.84 of the BOSS lensing comparison in
+f_conc bracket of the BOSS lensing comparison in
 `physics-and-methods.md#galaxy-galaxy-lensing-with-clustering`; the
 satellite-profile tests of satellite kinematics in `deep/satellites.md`.
 Which mass function, profile and Δ_v the matter halo model uses, and the
@@ -67,8 +68,9 @@ Relaxation cuts also differ, and they change the answer:
 
 Unrelaxed haloes have mass far from the potential minimum, so their fitted
 r_s is large and their c(M) is lower and flatter [src: arXiv:1804.10199,
-Sect. III.1]. Duffy et al. relaxed haloes have A ~18% higher than the full
-sample [der: L2 entry on their Table 1].
+Sect. III.1]. Duffy et al. give the relaxed sample its own fit: NFW,
+z = 0–2, (A, B, C) = (6.71, −0.091, −0.44) for 200c, against (5.71, −0.084,
+−0.47) for the full sample (arXiv:0804.2486, Table 1).
 
 ### Step 2. Choose the centre
 <!-- key: step-2-choose-the-centre -->
@@ -127,7 +129,10 @@ numerical systematics, and low-mass bins with many haloes would otherwise
 dominate [src: arXiv:1809.07326, Sect. II.3]. The scatter about the
 relation is about 0.16 dex in their sample [src: same] and 0.11 dex
 (log-normal) for relaxed Planck haloes in Dutton & Macciò [src:
-arXiv:1402.7073, Sect. 4.1]; the two samples differ in their relaxation cut, which may account for part of the difference
+arXiv:1402.7073, Sect. 4.1].
+
+The two samples of Diemer & Joyce and of Dutton & Macciò differ in their
+relaxation cut, which may account for part of the difference in scatter
 [der: from the two selections in Step 1].
 
 ### Step 6. Convert to the mass definition of the analysis
@@ -215,9 +220,11 @@ A WMAP-era relation in a Planck-cosmology analysis is low: relaxed Planck
 concentrations are ~20% higher than WMAP5 ones and close to WMAP1, log₁₀ c_200
 = 0.905 − 0.101 log₁₀(M_200/10¹² h⁻¹M_⊙) (Eq. 8) and log₁₀ c_vir = 1.025 −
 0.097 log₁₀(M_vir/10¹² h⁻¹M_⊙) (Eq. 9) [src: arXiv:1402.7073, Sect. 4.1].
+
 The Duffy et al. relation, fitted in WMAP5, is the base of the KiDS-1000
 halo model, with f_h free [src: arXiv:2210.03110, Sect. 2.1] [der: the f_h
 posterior absorbs both baryons and any cosmology mismatch of the relation].
+
 Recent models disagree among themselves: Diemer & Joyce differ from Correa
 et al. and Ludlow et al. models by up to 20%, the latter describing only
 relaxed haloes (no upturn), and from Bolshoi/MultiDark Rockstar data by

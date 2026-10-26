@@ -92,11 +92,11 @@ Lanzieri et al. 2024, arXiv:2407.10877 [src: Sect. 3]):
 | Fisher information (IMNN) | maximise ln det F of the summaries at a fiducial point, from simulations at and around it | locally sufficient summaries | at the fiducial point; one retraining at the recovered point restores optimality (arXiv:2107.07405) [src] |
 | Variational mutual-information maximisation (VMIM) | L = −ln q(θ ∣ F_φ(x); φ′), with q a conditional density estimator trained jointly; a lower bound on I(t, θ) = D_KL(p(t,θ) ‖ p(t)p(θ)) | sufficient summaries, given network flexibility and data | yes in the limit [src: Sect. 3, Eq. Loss_vmim] |
 
-In the controlled test the VMIM summaries improve the (Ω_c, σ8) figure of
-merit by 1.24 times over MSE and 1.1 times over MAE, and similar factors
-hold for (Ω_c, w0) and (σ8, w0) [src: Sect. 6.3, Table 4]. The marginals
+In the controlled test of arXiv:2407.10877 the VMIM summaries improve the
+(Ω_c, σ8) figure of merit by 1.24 times over MSE and 1.1 times over MAE,
+and similar factors hold for (Ω_c, w0) and (σ8, w0) [src: Sect. 6.3, Table 4]. The marginals
 move as well: w0 = −1.00 (+0.20/−0.22) with VMIM against −1.01
-(+0.19/−0.20) from the full-field HMC truth, but −1.13 ± 0.23 with MSE,
+(+0.19/−0.20) from the full-field HMC truth, but −1.13 (+0.23/−0.22) with MSE,
 −1.16 ± 0.22 with MAE and −0.73 (+0.19/−0.22) with a Gaussian
 negative-log-likelihood loss [src: Table 5]. The GNLL loss should in
 principle give the MSE summaries but is "hard to train" because it also
@@ -116,7 +116,7 @@ Sect. 3].
 | Flat lensing convergence maps | 2D CNN | Gupta et al. 2018, arXiv:1802.01212 [src] |
 | Full-sky tomographic lensing maps | graph-convolutional network on HEALPix (n_side = 512) | Fluri et al. 2022, KiDS-1000, arXiv:2201.07771 [src: abstract] |
 | 2D total-mass maps from hydrodynamical runs | CNN with likelihood-free marginalisation over feedback | Villaescusa-Navarro et al. 2021, arXiv:2109.10360 [src] |
-| 21 cm light-cones | self-supervised Vision Transformer (JEPA pre-training) as a frozen encoder | Pietschke et al. 2026 (SKATR), arXiv:2608.26354 [src] |
+| 21 cm light-cones | self-supervised Vision Transformer (JEPA pre-training) as a frozen encoder | Pietschke et al. 2026 (SKATR), arXiv:2608.26354 [src: abstract] |
 
 **What the survey map-level analyses did** (method sections read):
 
@@ -228,13 +228,13 @@ and explicit field-level likelihoods.
 
 | Family | Principle | First or reference cosmology use | Reference |
 |---|---|---|---|
-| Generative adversarial network | generator G and discriminator D in a minimax game; at the optimum G reproduces the data distribution and D = 1/2 | 2D N-body slices of 500 and 100 Mpc; P(k) agreement 1–2% for 0.06 < k < 0.4 | Goodfellow et al. 2014, arXiv:1406.2661 [src]; Rodriguez et al. 2018, arXiv:1801.09070 [src] |
+| Generative adversarial network | generator G and discriminator D in a minimax game; at the optimum G reproduces the data distribution and D = 1/2 | 2D N-body slices of 500 and 100 Mpc; P(k) agreement 1–2% for 0.06 < k < 0.4 | Goodfellow et al. 2014, arXiv:1406.2661 [src]; Rodriguez et al. 2018, arXiv:1801.09070 [src: abstract] |
 | Variational autoencoder + flow, conditioned on physical parameters, inside a physical forward model of PSF and noise | learns galaxy morphology from noisy, PSF-convolved HST/ACS COSMOS stamps; GalSim-Hub repository | image simulations for shear calibration | Lanusse et al. 2021, arXiv:2008.03833 [src] |
 | Denoising diffusion (score-based) model | learns to reverse a noising process; trained on a weighted variational bound linked to denoising score matching | dark-matter density fields and dust images; fidelity measured with three metrics, issues identified | Ho et al. 2020, arXiv:2006.11239 [src]; Mudur et al. 2022, arXiv:2211.12444 [src] |
 | Point-cloud diffusion | galaxies or haloes as a set of 3D points with attributes, no voxelisation; usable for emulation and for the conditional likelihood of a galaxy field | Quijote massive haloes | Cuesta-Lazaro et al. 2023, arXiv:2311.17141 [src] |
 | Conditional point-cloud diffusion from dark matter to galaxies | generates galaxies with positions, SFR and stellar mass from a dark-matter field without halo finding; trained on IllustrisTNG | (151.3 Mpc)³ catalogue with SFR > 1 M_⊙/yr in about 10 s on one GPU | Moriwaki et al. 2026, arXiv:2607.19808 [src: abstract] |
 | Latent diffusion with overlapping patches | generates arbitrarily large 3D fields conditioned on an input field ("upscaling") | TNG300-2 dark-matter density and gas temperature from training on ~1% of the volume; P(k) within 10% for k ≤ 5 h Mpc⁻¹; a CAMELS 25 h⁻¹Mpc box upscaled to 205 h⁻¹Mpc without fine-tuning | Mishra et al. 2026 (Cosmo-FOLD), arXiv:2601.14377 [src: abstract] |
-| Conditional flow matching | continuous flow from label-specific noise to convergence maps conditioned on Ω_m, σ8 | fidelity better than 1% (basic statistics) and 5% (higher-order) against a GAN benchmark at below 10% and 20% | Li & Kacprzak 2026, arXiv:2605.23114 [src] |
+| Conditional flow matching | continuous flow from label-specific noise to convergence maps conditioned on Ω_m, σ8 | fidelity better than 1% (basic statistics) and 5% (higher-order) against a GAN benchmark at below 10% and 20% | Li & Kacprzak 2026, arXiv:2605.23114 [src: abstract] |
 | Diffusion prior in posterior sampling | diffusion model as prior, data enter through the likelihood score (DPS) | DES Y3 mass maps at 1 arcmin; standard DPS biased, corrected by rescaling the likelihood score | Boruah et al. 2025, arXiv:2511.14667 [src] |
 
 **Validation of a generative model.** Pixel one-point distribution, peaks,
@@ -265,7 +265,7 @@ LPT) and their accuracy are in `cosmo-simulations-mocks`.
 | NECOLA, CNN correction of COLA | COLA particle positions → Quijote N-body positions | sub-percent to k ≃ 1 h Mpc⁻¹; trained at one cosmology, within ≃ 1% to k = 1 h Mpc⁻¹ when Ω_m, Ω_b, h, n_s, σ8, w, M_ν vary | Kaushal et al. 2022, arXiv:2111.02441 [src] |
 | MG-NECOLA | MG-PICOLA f(R) snapshots → Quijote-MG N-body | ≲ 1% in P(k) and bispectrum to k ≃ 1 h Mpc⁻¹; below 5% outside the training cosmology; recovers the GR limit and M_ν ≤ 0.4 eV suppression though trained massless; speed-up ~1500 | Orjuela-Quintana et al. 2026, arXiv:2604.19613 [src: abstract] |
 | Hybrid physical–neural ODE | Fourier-space network adds an effective force to a particle-mesh solver | P(k) gain similar to PGD; better cross-correlation; more robust to resolution and cosmology changes | Lanzieri et al. 2022, arXiv:2207.05509 [src] |
-| Lagrangian Deep Learning | FastPM dark matter → stellar, gas density and temperature maps through learned displacement layers (gradient of an effective potential) | ~10 learned parameters; nearly four orders of magnitude cheaper than hydrodynamics | Dai et al. 2021, arXiv:2010.02926 [src] |
+| Lagrangian Deep Learning | FastPM dark matter → stellar, gas density and temperature maps through learned displacement layers (gradient of an effective potential) | ~10 learned parameters; nearly four orders of magnitude cheaper than hydrodynamics | Dai et al. 2021, arXiv:2010.02926 [src: abstract] |
 | Lagrangian neural cellular automaton | residual corrections to Zel'dovich, iterated on a comoving lattice; equivariant; gives trajectories | trained on Quijote across redshifts and cosmologies; built as a differentiable forward model | Jacobus et al. 2026, arXiv:2607.27320 [src] |
 | Stochastic super-resolution | low-resolution N-body → 512 times more particles | from 16 low/high-resolution training pairs: P(k) to percent level to 16 h⁻¹Mpc, halo mass function within 10% to 10¹¹ M_⊙; deployed in a box 1000 times larger | Li et al. 2021, arXiv:2010.06608 [src: abstract] |
 | Baryon painting (VAE, GAN) | BAHAMAS matter density → gas pressure, applied to SLICS | tSZ maps and κ × tSZ spectrum and variance consistent with BAHAMAS | Tröster et al. 2019, arXiv:1903.12173 [src] |
@@ -273,12 +273,12 @@ LPT) and their accuracy are in `cosmo-simulations-mocks`.
 
 The style-parameter emulator was trained on 2000 Latin-hypercube Quijote
 cosmologies split 1757 / 122 / 121 into training, validation and test
-(arXiv:2206.04594) [src: Setup]; a network trained at one cosmology
+(arXiv:2206.04594) [src: Sect. "Setup"]; a network trained at one cosmology
 mis-shapes the BAO bump at k ~ 0.04 h Mpc⁻¹ when Ω_b/Ω_m moves away from
-its single training value [src: Displacement Power Spectra], and its
+its single training value [src: Sect. "Displacement Power Spectra"], and its
 transfer to f_NL = ±100 local, orthogonal and equilateral initial
-conditions was tested on seven Quijote-PNG runs [src: Primordial
-non-Gaussianity].
+conditions was tested on seven Quijote-PNG runs [src: Sect. "Primordial
+non-Gaussianity"].
 
 **Common pattern.** Learning a residual on top of a physical approximation
 (Zel'dovich, COLA, PM) keeps large scales exact by construction and
@@ -306,8 +306,8 @@ redshift fitting and visual inspection in spectroscopic pipelines are in
 | Alert stream, hierarchical | GRU recurrent network with a hierarchical cross-entropy over an observational taxonomy, host context concatenated | classifies after a single observation | Shah et al. 2025 (ORACLE), arXiv:2501.01496 [src] |
 | Alert broker | tree-based classifiers on engineered features plus deep networks; CATS architecture | infrastructure tested on ELAsTiCC | Fraga et al. 2024 (Fink), arXiv:2404.08798 [src] |
 | SN spectra | CNN classifying type, age, redshift and host instead of template matching; trained on over 4000 spectra | speed independent of the template library size | Muthukrishna et al. 2019 (DASH), arXiv:1903.02557 [src: abstract] |
-| Quasar spectra | CNN posed as feature detection: line presence gives the class, line wavelength the redshift; BAL extension | line confusion below 0.2% | Busca et al. 2018 (QuasarNET), arXiv:1808.09955 [src] |
-| Strong-lens images | CNNs, SVMs, arc and ring finders and visual inspection compared blind on 100 000 candidates | false-positive rate is the controlling metric | Metcalf et al. 2018, arXiv:1802.03609 [src] |
+| Quasar spectra | CNN posed as feature detection: line presence gives the class, line wavelength the redshift; BAL extension | line confusion below 0.2% | Busca et al. 2018 (QuasarNET), arXiv:1808.09955 [src: abstract] |
+| Strong-lens images | CNNs, SVMs, arc and ring finders and visual inspection compared blind on 100 000 candidates | false-positive rate is the controlling metric | Metcalf et al. 2018, arXiv:1802.03609 [src: abstract] |
 
 **The metric matters.** PLAsTiCC scored entries with a weighted
 multi-class logarithmic loss; Avocado's 0.468 is on a flat-weight log-loss
@@ -330,21 +330,21 @@ imaging/spectroscopic outliers.
 | Design | Score | Example and data | Reference |
 |---|---|---|---|
 | Unsupervised random forest on features | dissimilarity from an unsupervised forest | more than two million SDSS galaxy spectra; the top 400 include lenses, double-peaked emitters, extreme line ratios | Baron et al. 2017, arXiv:1611.07526 [src: abstract] |
-| Isolation forest on a learned latent space | isolation depth | variational recurrent autoencoder trained on 1% of PLAsTiCC; 1 129 184 events ranked; ~95% pure sample of rare transients, flagged before peak | Villar et al. 2021, arXiv:2103.12102 [src] |
+| Isolation forest on a learned latent space | isolation depth | variational recurrent autoencoder trained on 1% of PLAsTiCC; 1 129 184 events ranked; ~95% pure sample of rare transients, flagged before peak | Villar et al. 2021, arXiv:2103.12102 [src: abstract] |
 | Autoencoder + normalising flow | low probability under a flow in a redshift-invariant latent space | DESI EDR Bright Galaxy Survey; many outliers are stars misclassified as galaxies, traced to the PCA star templates of the pipeline | Liang et al. 2023, arXiv:2307.07664 [src] |
-| Predictive model of known classes | deviation from the predicted light curve, as a function of time | ZTF light curves; a Bayesian parametric model reaches area under the precision–recall curve above 0.79 for most rare classes, and beats a flexible neural model | Muthukrishna et al. 2022, arXiv:2111.00036 [src] |
-| Active anomaly detection | isolation forest re-weighted by expert feedback | ~80% more true anomalies than a static isolation forest on the Open Supernova Catalog (Ishida et al. 2021, arXiv:1909.13260 [src]); Astronomaly roughly doubles the interesting anomalies in the first 100 objects viewed (Lochner et al. 2021, arXiv:2010.11202 [src]) | — |
+| Predictive model of known classes | deviation from the predicted light curve, as a function of time | ZTF light curves; a Bayesian parametric model reaches area under the precision–recall curve above 0.79 for most rare classes, and beats a flexible neural model | Muthukrishna et al. 2022, arXiv:2111.00036 [src: abstract] |
+| Active anomaly detection | isolation forest re-weighted by expert feedback | ~80% more true anomalies than a static isolation forest on the Open Supernova Catalog (Ishida et al. 2021, arXiv:1909.13260 [src: abstract]); Astronomaly roughly doubles the interesting anomalies in the first 100 objects viewed (Lochner et al. 2021, arXiv:2010.11202 [src: abstract]) | — |
 
 **Operational use.** The Fink broker runs an isolation forest on ZTF
 features from 25 January 2023, sends the 10 most anomalous candidates each
 night to experts, and retrains with Active Anomaly Discovery; in its first
 year it triggered 33 supernovae (30 previously unreported) and nine new
-dwarf novae (Pruzhinskaya et al. 2026, arXiv:2603.29511) [src]. A
+dwarf novae (Pruzhinskaya et al. 2026, arXiv:2603.29511) [src: abstract]. A
 comparison of three active frameworks finds that the best one depends on
 the data: on ZTF light curves Protege, PineForest and Astronomaly recover
 83, 78 and 38 variable stars in the first 100 objects, on Euclid images
 PineForest finds 70 disturbed galaxies against 29 and 19 (Sreejith & Nichol
-2026, arXiv:2609.36096) [src].
+2026, arXiv:2609.36096) [src: abstract].
 
 **Why flexible models are worse here.** A network flexible enough to fit
 the known classes well also fits the anomalies; the parametric model wins
@@ -381,7 +381,7 @@ physical laws separately (Sect. 5.3).
 |---|---|---|
 | GNN + symbolic distillation | sparse latent messages in a GNN, then symbolic regression on its components; recovers force laws and Hamiltonians, and finds a formula for the smoothed dark-matter overdensity at each Quijote halo from the masses and distances of its neighbours (the abstract calls it the "concentration of dark matter"), which generalises out of distribution better than the GNN | Cranmer et al. 2020, arXiv:2006.11287 [src: abstract; Sect. 4.3] |
 | PySR / SymbolicRegression.jl | multi-population evolutionary search with an evolve–simplify–optimise loop; EmpiricalBench benchmark | Cranmer 2023, arXiv:2305.01582 [src] |
-| Exhaustive symbolic regression | enumerates all expressions to a given complexity; selection by minimum description length; on cosmic chronometers + Pantheon+, ~40 of 5.2 million functions describe H(z) more economically than the Friedmann equation | Bartlett et al. 2022, arXiv:2211.11461 [src] |
+| Exhaustive symbolic regression | enumerates all expressions to a given complexity; selection by minimum description length; on cosmic chronometers + Pantheon+, ~40 of 5.2 million functions describe H(z) more economically than the Friedmann equation | Bartlett et al. 2022, arXiv:2211.11461 [src: abstract] |
 | Symbolic linear P(k) | learns the ratio to an existing fitting function; RMS fractional error 0.2% for 9 × 10⁻³ < k < 9 h Mpc⁻¹; 950 times faster than CAMB, 36 times faster than the BACCO network; σ8 formula at 0.1% | Bartlett et al. 2024, arXiv:2311.15865 [src: abstract] |
 | Symbolic CMB lensing spectrum (CMBolic) | see §1 | arXiv:2606.07745 [src] |
 

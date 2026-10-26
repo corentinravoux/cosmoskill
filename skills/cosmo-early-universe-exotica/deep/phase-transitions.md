@@ -81,21 +81,24 @@ arXiv:1910.13125, Sects. 3.2, 3.4]. EPTA, by contrast, fits a decaying
 
 NANOGrav [src: arXiv:2306.16219, Eqs. 33–36]:
 
-- Bubbles: Ω_b(f) = 𝒟 Ω̃_b (α_*/(1+α_*))² (H_*R_*)² 𝒮(f/f_b), Ω̃_b = 0.0049.
+- Bubbles: Ω_b(f) = 𝒟 Ω̃_b (α_*/(1+α_*))² (H_*R_*)² 𝒮(f/f_b), Ω̃_b = 0.0049
+  [src: arXiv:2306.16219, Eq. 33 and the text after Eq. 34].
 - Sound waves: Ω_s(f) = 𝒟 Ω̃_s Υ(τ_sw) (κ_s α_*/(1+α_*))² (H_*R_*)
-  𝒮(f/f_s), Ω̃_s = 0.036.
+  𝒮(f/f_s), Ω̃_s = 0.036 [src: arXiv:2306.16219, Eq. 34 and the text after
+  it].
 - Redshift: 𝒟 = (π²/90)(T₀⁴/(M_Pl² H₀²)) g_* (g_*,s^eq/g_*,s)^(4/3) ≃ 1.67 ×
   10⁻⁵, with T₀ and H₀ today, g's at T_* and g_*,s^eq at matter–radiation
-  equality.
+  equality [src: arXiv:2306.16219, Eq. 35].
 - Lifetime suppression: Υ(τ_sw) = 1 − (1 + 2τ_sw H_*)^(−1/2), with τ_sw ≈
   R_*/Ū_f and Ū_f² ≈ 3κ_s α_*/[4(1+α_*)] the mean-square fluid velocity.
 
 The 2020 LISA report [src: arXiv:1910.13125, Eqs. 19–20, 29, 32]:
 
 - Today's factor F_gw,0 = Ω_γ,0 (g_s0/g_s*)^(4/3) g_*/g_0 = (3.57 ± 0.05) ×
-  10⁻⁵ (100/g_*)^(1/3).
+  10⁻⁵ (100/g_*)^(1/3) [src: arXiv:1910.13125, Eqs. 19–20].
 - Long-lasting sound waves: dΩ_gw,0/d ln f = 0.687 F_gw,0 K² (H_*R_*/c_s)
-  Ω̃_gw C(f/f_p,0), Ω̃_gw ~ 10⁻² from simulations.
+  Ω̃_gw C(f/f_p,0), Ω̃_gw ~ 10⁻² from simulations [src: arXiv:1910.13125,
+  Eq. 29 and the text after it, Sect. 3.3].
 - If the shock time H_*τ_sh = H_*R_*/K^(1/2) is below one: multiply by it,
   giving K^(3/2)(H_*R_*/√c_s)² instead of K²(H_*R_*/c_s).
 
@@ -252,17 +255,24 @@ degeneracies and eases sampling [src: arXiv:2403.03723, Sects. 2.2.1, 7].
 NANOGrav's smooth Υ = 1 − (1+2τ_swH_*)^(−1/2) [src: arXiv:2306.16219, Eq.
 36]; the 2020 LISA switch between Eq. 29 and Eq. 32 at H_*τ_sh = 1 [src:
 arXiv:1910.13125, Sect. 3.3]; the 2024 LISA min[H_*τ_sh, 1] [src:
-arXiv:2403.03723, Sect. 2.2.1]. For H_*τ_sh ≪ 1, Υ ≈ τ_swH_*, so the three
-agree in that limit and differ by order-unity factors near H_*τ_sh ~ 1
-[der: expansion of Eq. 36]. Note that NANOGrav's τ_sw uses Ū_f² ≈
-3κ_sα_*/[4(1+α_*)] while LISA 2024 uses v̄_f² = K/Γ with K carrying the
-extra 0.6.
+arXiv:2403.03723, Sect. 2.2.1]. Note that NANOGrav's τ_sw uses Ū_f² ≈
+3κ_sα_*/[4(1+α_*)] while LISA 2024 uses v̄_f² = K/Γ with K ≃ 0.6 κ α/(1+α)
+[src: arXiv:2403.03723, Sect. 2.2.1].
+
+In the short-lifetime limit the three conventions agree to leading order
+and differ by order-unity factors when the lifetime approaches a Hubble
+time [der: expansion of NANOGrav's smooth Υ].
 
 ### Efficiency normalisation
 <!-- key: efficiency-normalisation -->
 
-The single-bubble κ (NANOGrav) and 0.6 κ (LISA 2024) differ by a factor
-0.36 in K², hence in Ω_sw [der: (0.6)²]. NANOGrav argues such prefactors
+NANOGrav's amplitude carries the single-bubble κ_s squared, (κ_sα_*/(1+α_*))²
+[src: arXiv:2306.16219, Eq. 34], while LISA 2024 uses K ≃ 0.6 κ α/(1+α),
+the 0.6 accounting for the efficiency of bulk fluid motion relative to the
+single bubble [src: arXiv:2403.03723, Sect. 2.2.1].
+
+Because the efficiency enters the amplitude squared, the LISA 2024 factor
+lowers Ω_sw relative to the NANOGrav convention [der]. NANOGrav argues such prefactors
 are absorbed by a rescaled α_* in a fit, and peak-frequency factors by a
 rescaled T_* [src: arXiv:2306.16219, Sect. V.3]; the absorption holds for
 fit quality, not for the physical α_* or T_* quoted.
@@ -396,7 +406,7 @@ arXiv:2609.12098, abstract].
   2025, arXiv:2511.02910 — resummation schemes for supercooled transitions
   (abstracts).
 - Comparison: Ellis et al. 2023, arXiv:2308.08546 — strong-transition
-  template and BIC ranking against other sources on NANOGrav 15 yr.
+  template and BIC ranking against other sources on the NANOGrav data.
 - Application: Figueroa et al. 2023, arXiv:2307.02399 — NANOGrav + EPTA,
   seven source classes.
 - Application: Wang 2023, arXiv:2307.15970 — the CPTA DR1 fit.

@@ -297,9 +297,9 @@ read describes no correction for that search.
 | Siena Galaxy Atlas subsets | spirals 0.36–2 Mpc: σ_⟨cos θ⟩ = 3.859; ellipticals ≤ 2 Mpc, M_r ≤ −20.67: σ_⟨cos θ⟩ = 13.792, p_KS = 6.6 × 10⁻²⁸ | SGA × Bisous | arXiv:2509.02062 | Table 3 |
 | FoG-aligned segments | 10% with |cos α_los| > 0.95 (5% expected); ~22% → ~14% above 0.9 after compression | GAMA | arXiv:1909.12371; arXiv:2208.10767 | Sect. 3.1.1; Sect. 3.2 |
 
-The halo critical mass of Codis et al. is in M☉ in the body (no h⁻¹),
+The halo critical mass of Codis et al. is in M☉ in the body (no h⁻¹) of arXiv:1201.5794,
 which settles the units left open in `results.md#not-verified`; the text
-and the figure give 4 and 5 × 10¹² M☉ for the same quantity.
+and the figure give 4 and 5 × 10¹² M☉ for the same quantity [src: Sect. 2.2; Eq. 1 in Sect. 2.3]. The HTML abstract also prints 5(±1) × 10¹² M☉ with the unit, unlike the listing abstract.
 
 ## What goes wrong
 <!-- key: what-goes-wrong -->
@@ -331,11 +331,12 @@ and the figure give 4 and 5 × 10¹² M☉ for the same quantity.
 - **Post-selection significance.** Subsets chosen to maximise significance
   (arXiv:2509.02062, Sect. 4.3). Test: report the trials or a pre-defined
   split.
-- **σ from a p-value.** The edge-on paper calls p = 0.002 "4.3σ" and p =
-  0.01 "3.5σ" [src: arXiv:2507.07334, Sect. 5]; these σ equal the slope
-  over its error (0.13/0.03, 0.7/0.2), while a two-sided Gaussian gives
-  ~3.1σ and ~2.6σ for those p-values [der: standard normal quantiles]. Test:
-  state which statistic the σ belongs to.
+- **σ from a p-value.** The edge-on paper calls a confidence level of
+  0.2% "4.3σ" and a p-value of 0.01 "3.5σ" [src: arXiv:2507.07334, Sect. 5]. Test: state which
+  statistic the σ belongs to.
+- **σ from a p-value, check.** Those σ are larger than the two-sided
+  Gaussian equivalents of the same p-values; they read as the fitted slope
+  over its error [der: standard normal quantiles].
 - **Bulge decomposition.** Of 25 strongly rotation-dominated bulges, 8 are
   suspected discs [src: arXiv:2208.10767, Sect. 5.4].
 - **Halo resolution.** Spin directions need ≥ 300 particles; the inner 10%
@@ -376,8 +377,9 @@ and the figure give 4 and 5 × 10¹² M☉ for the same quantity.
 - Lee & Erdogdu 2007 and Lee 2011 (thin-disc and two-sign methods) and
   Haynes & Giovanelli 1984: read only as written in arXiv:2104.08275;
   identifiers not looked up.
-- Codis et al. 2018 and Dubois et al. 2014 Horizon-AGN predictions (ξ <
-  0.05): cited through arXiv:1909.12371, not read.
+- Codis et al. 2018 and Dubois et al. 2014 Horizon-AGN predictions
+  (ξ < 0.05): cited through arXiv:1909.12371, Sect. 4.1; the original
+  papers were not read.
 - The per-bin values of Barsanti et al. Table 2 and the SAMI 2σ-network
   results (App. E of arXiv:1909.12371) were not read.
 - No Hector or DESI spin–filament measurement was found in the 2025–2026

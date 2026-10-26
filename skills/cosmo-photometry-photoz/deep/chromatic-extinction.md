@@ -82,18 +82,18 @@ a reference sample.
 ### Step 2. Compute R_b for your passband
 <!-- key: step-2-compute-rb-for-your-passband -->
 
-Schlafly & Finkbeiner tabulate, for 88 passbands and R_V = 2.1, 3.1, 4.1,
-5.1,
+Schlafly & Finkbeiner (arXiv:1012.4804) tabulate, for 88 passbands
+[src: abstract] and R_V = 2.1, 3.1, 4.1, 5.1 [src: App. A],
 
   Δm_b = −2.5 log [∫ dλ W_b S 10^(−A(λ) Δm_1μm/2.5) / ∫ dλ W_b S]
   (arXiv:1012.4804, Eq. A1),
 
-with A(λ) the F99 law normalised to 1 at 1 μm, Δm_1μm equal to N = 0.78
+with A(λ) the F99 law normalised to 1 at 1 μm (arXiv:1012.4804), Δm_1μm equal to N = 0.78
 times the 1 μm extinction of SFD under SFD's O'Donnell R_V = 3.1 law, S a
 7000 K, log Z = −1, log g = 4.5 synthetic spectrum, in the limit of small
 E(B−V)_SFD; the coefficients in Table 6 multiply E(B−V)_SFD directly
 [src: App. A, Table 6 note]. Two caveats from the paper: the synthetic
-spectra stop at 1.05 μm and are extrapolated as a blackbody, which biases
+spectra cover 2500–10500 Å and are extrapolated as a blackbody, which biases
 near-infrared coefficients "somewhat high", about 1% for UKIRT against a
 λ⁻¹ spectrum; and SFD's own table had multiplied some source spectra by a
 spurious factor λ, corrected there [src: App. A]. Two numbers to keep
@@ -156,7 +156,7 @@ for stacked exposures Δλ is the exposure-time-weighted mean [src: Sect.
 5.2]. The point of this choice: Δλ "does not depend on the SED", so the
 catalogue only needs one number per band per object [src: Sect. 5.2].
 
-Why it is needed: in a step-function toy model, Δz = −0.0033 Δμ per nm of
+Why it is needed (arXiv:2310.14716): in a step-function toy model, Δz = −0.0033 Δμ per nm of
 mean-wavelength shift of the band containing the Balmer break, so 1 nm
 already matches Euclid's Δz/(1+z) = 0.002 requirement; off-axis passbands
 move blue, so using the central passband biases photo-z high [src: Sect.
@@ -258,11 +258,11 @@ Sect. 7.4].
   density by +11.0% and the LRG density by −1.4% [src: arXiv:2409.05140,
   Sect. 4.2].
 - **Colours** [der]: from Eq. 4 of arXiv:2409.05140, a map error δE moves
-  g − r by (R_g − R_r) δE = 1.049 δE and r − z by 0.954 δE for DECam, so
-  the 6 mmag zero-point floor of the DESI map or the 0.7 mmag CSFD
-  correction are colour errors of the same order; the effect on photo-z of
-  a given colour error is not quantified in the papers read (see Not
-  verified).
+  g − r by (R_g − R_r) δE and r − z by (R_r − R_z) δE, with the DECam
+  coefficients of the Numbers table below, so the zero-point floor of the
+  DESI map and the amplitude of the CSFD correction (both in that table)
+  are colour errors of the same order; the effect on photo-z of a given
+  colour error is not quantified in the papers read (see Not verified).
 
 ## Numbers
 <!-- key: numbers -->

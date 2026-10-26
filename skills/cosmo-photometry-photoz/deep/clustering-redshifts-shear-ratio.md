@@ -9,7 +9,7 @@ realisations), and how a shear-ratio likelihood is built; with the
 choices DES, KiDS, HSC, Euclid and the DESI cross-survey calibration
 made and their stated reasons.
 Snapshot: 2026-10-21.
-From: Newman & Gruen 2022 review, Sect. 3.3, 4.2.6; DES and KiDS redshift
+From: Newman & Gruen 2022 review (arXiv:2206.13633), Sect. 3.3 and Sect. 4.2.6; DES and KiDS redshift
 working groups (copied from `references/subtopics.tsv`).
 
 Already in L2, not repeated here: the principle and Newman's error
@@ -79,9 +79,10 @@ arXiv:2505.10416, Sect. 4.4].
 
 - **KiDS-1000.** A single broad radial bin with radial weighting (the
   Schmidt et al. 2013 technique); the earlier KiDS simulation study used
-  100 kpc < r < 1 Mpc comoving throughout, and KiDS-1000 explored smaller
-  ranges such as 30–300 and 50–500 kpc [src: arXiv:2007.15635,
-  Sect. 4.1.1]. KiDS-Legacy later moved to the larger 0.5–1.5 Mpc (above).
+  100 kpc < r < 1 Mpc comoving throughout, and KiDS-1000 explored the
+  additional ranges 30–300 kpc, 50–500 kpc and 500 kpc–1.5 Mpc
+  [src: arXiv:2007.15635, Sect. 4.1.1]. KiDS-Legacy later moved to the larger 0.5–1.5 Mpc
+  (arXiv:2503.19440) [src: Sect. 5.2] (above).
 - **HSC Y3 (CAMIRA LRG reference).** 0.1–1.0 Mpc, lensing weights
   included in the estimator, the-wizz for the pair counts [src:
   arXiv:2211.16516, Sect. 5.5].
@@ -162,13 +163,14 @@ continuous and vanish at z → 0, and models
   ŵ_ur_i = Σ_j f_u^j [b_u,j A_j,r_i (1 + S_ur_i) + α_u,j b_r_i D_ij
   + b_u,j α_r_i D_ji]  (arXiv:2510.23565, Eq. 17),
 
-with A_ji = b_r_i ∫ dz K_j n_r_i w_m (Eq. 10), D the magnification
+with A_ji = b_r_i ∫ dz K_j n_r_i w_m (arXiv:2510.23565, Eq. 10), D the magnification
 kernels, and a systematic function S = Σ_{k≤M} s_uk √(2k+1)/0.85 L_k(z̃)
 on z̃ ∈ [−0.85, 0.85] (Eq. 18) [src: Sect. II.1.1, II.1.3]. Because A is
 not diagonal, correlations at the edges of the reference slices are
 modelled, replacing the one-bin (Limber) approximation [src: Sect. IV.1].
 w_m uses CCL's non-linear halofit power spectrum with linear bias, judged
-adequate down to 1.5 Mpc [src: Sect. II.1.1].
+adequate down to 1.5 Mpc, a result of d'Assignies et al. 2025 [src:
+Sect. II.1.1, footnote 3].
 
 The order M and the prior widths come from Cardinal mocks run twice: a
 "no systematics" case (true per-slice biases, idealised bins, LS) that
@@ -282,8 +284,9 @@ Three routes in current use:
 5. **Shift and stretch (DES Y3 lenses).** n(z) = s⁻¹ n_pz((z − z_mean −
    Δz)/s + z_mean) (Eq. 14), used where a shift alone fits badly [src:
    arXiv:2012.12826, Sect. 4.4]; this is the form Euclid later calls the
-   SSM (Eq. 72 above). Mean-redshift errors 0.003–0.008, widths 4–9%,
-   |Δz| < 0.01 against photo-z in most of eleven bins [src: abstract].
+   SSM (Eq. 72 above). Mean-redshift errors 0.003–0.008, widths 4–9%, and
+   offsets |Δz| < 0.01 against photo-z in most of eleven bins [src:
+   abstract].
 6. **Joint hierarchical posterior (HSC Y3).** A logistic Gaussian-process
    prior on the binned n(z), built from photometry (DNNz) with a
    cosmic-variance term, is combined with the CC likelihood and sampled
@@ -315,12 +318,12 @@ reasons:
   highest bins are dominated by magnification; for each lens bin, ratios
   of source bins 1, 2, 3 over bin 4, the highest-S/N measurement in the
   denominator to minimise noise bias: nine ratios [src: Sect. IV.1.1].
-- Scales 2–6 h⁻¹ Mpc, the lower limit to stay out of the one-halo regime
+- Scales 2–6 h⁻¹ Mpc (arXiv:2105.13542), the lower limit to stay out of the one-halo regime
   where TATT is not valid; the two nearly geometric ratios (l₁, s₃, s₄) and
   (l₂, s₃, s₄) use all scales from 2.5′ [src: Sect. IV.1.2, Table 2].
   Large-scale ratios (> 8 h⁻¹ Mpc to 250′) only validate [src: Sect.
   IV.1.2].
-- Each ratio is a minimum-variance average over scales,
+- Each ratio is a minimum-variance average over scales (arXiv:2105.13542),
   r = σ_r² Dᵀ C_r⁻¹ r(θ) with C_r = J C_γ Jᵀ (Eqs. 24–27); scale-dependent
   ratios did not improve results [src: Sect. IV.1.3]. The 9 × 9 covariance
   comes from 10⁵ Gaussian realisations of the γ_t data vector drawn from
@@ -412,7 +415,7 @@ arXiv:2403.07313, abstract].
 | Shear-ratio set | 3 lens bins × 3 ratios over source bin 4; 2–6 h⁻¹ Mpc | DES Y3 | arXiv:2105.13542 | Sect. IV.1.1–IV.1.2 |
 | Shear-ratio covariance | 10⁵ realisations | DES Y3 | arXiv:2105.13542 | Sect. IV.1.4 |
 | SR data vs 3×2pt best fit | χ²/ndf 11.3/9 (redMaGiC), 18.8/9, p = 0.03 (MagLim; threshold 0.01) | DES Y3 | arXiv:2105.13542 | Fig. 4 caption |
-| KiDS-1000 scales; SOM + CC error | 100 kpc–1 Mpc (earlier), 30–300 and 50–500 kpc explored; ⟨z⟩ errors ~0.01–0.02 | KiDS-1000 | arXiv:2007.15635 | Sect. 4.1.1; abstract |
+| KiDS-1000 scales; SOM + CC error | 100 kpc–1 Mpc (earlier), 30–300 kpc, 50–500 kpc and 500 kpc–1.5 Mpc explored; ⟨z⟩ errors ~0.01–0.02 | KiDS-1000 | arXiv:2007.15635 | Sect. 4.1.1; abstract |
 | DES Y3 lens WZ | ⟨z⟩ errors 0.003–0.008, width 4–9%; micro-bins dz = 0.02 | DES Y3 redMaGiC, MagLim | arXiv:2012.12826 | abstract; Sect. 4.2 |
 | HSC Y3 WZ | 0.1–1.0 Mpc; 10 CAMIRA error-model catalogues; LRG z < 1.2 (no bin-4 CC) | HSC Y3 | arXiv:2211.16516 | Sect. 5.5–5.6 |
 | HSC × DESI | 0.3–3 h⁻¹ Mpc, W ∝ r⁻¹; Δz₃ = −0.043, Δz₄ = −0.050 ± 0.012 vs Rau et al. | HSC PDR3, DESI DR1/DR2 | arXiv:2511.18133 | Sect. 3.1; abstract |
@@ -522,7 +525,7 @@ arXiv:2403.07313, abstract].
 - Bernstein et al. 2025 (mode compression and density estimators used
   after importance sampling) and Gatti & Vielzeuf et al. 2018 were cited
   by the DES Y6 paper but not read.
-- The KiDS-Legacy shift fits are read in Table 7 of the HTML rendering;
+- The KiDS-Legacy shift fits (arXiv:2503.19440) are read in Table 7 of the HTML rendering;
   `systematics.md#clustering-redshift-systematics` cites the same values
   as Table 8, probably a version difference; the values agree. The
   Fig. 8 caption of the same paper quotes f = 0.14 ± 0.04 for the data
@@ -536,5 +539,3 @@ arXiv:2403.07313, abstract].
   form of the Bayesian ratio estimator was not read. The scale cuts of
   the HSC Y3 shear-ratio analysis beyond the measured θ range were not
   read.
-- The KiDS-1000 list of explored scales is cut in the rendering read
-  ("30–300 kpc, 50–500 kpc and 5…"); the remaining range was not read.

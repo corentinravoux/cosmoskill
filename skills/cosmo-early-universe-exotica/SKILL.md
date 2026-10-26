@@ -29,18 +29,18 @@ re-verify against the cited paper before a number enters a manuscript.
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
 
-- NANOGrav 15 yr: A = 2.4 (+0.7/−0.6) × 10⁻¹⁵ at γ = 13/3; free fit γ = 3.2 ± 0.6; HD p = 10⁻³ (Bayes-factor null), 5 × 10⁻⁵–1.9 × 10⁻⁴ (frequentist) (arXiv:2306.16213).
-- No PTA reaches 5σ: EPTA ≳ 3σ (10.3 yr subset), PPTA ~2σ, MPTA 3–3.4σ, noise-model dependent, five arrays combined below 5σ (arXiv:2306.16214, arXiv:2306.16215, arXiv:2412.01153, arXiv:2512.08666).
+- NANOGrav 15 yr: A = 2.4 (+0.7/−0.6) × 10⁻¹⁵ at γ = 13/3; HD p = 10⁻³ (Bayes-factor null), 5 × 10⁻⁵ – 1.9 × 10⁻⁴ (frequentist) (arXiv:2306.16213, abstract); free fit γ = 3.2 ± 0.6 (5–95%) (Sect. I).
+- No PTA reaches 5σ: EPTA ≳ 3σ (10.3 yr subset), PPTA ~2σ, MPTA 3–3.4σ, noise-model dependent, five arrays combined below 5σ (arXiv:2306.16214, arXiv:2306.16215, arXiv:2412.01153, arXiv:2512.08666; abstract of each).
 - New-physics Bayes factors of 10–100 depend on the SMBHB prior and "should not be regarded as evidence for new physics"; stable strings alone give factors < 1 (arXiv:2306.16219, abstract).
 - The PTA amplitude exceeds the local-SMBH prediction (arXiv:2312.06756).
 - LVK: Ω_GW(25 Hz) ≤ 2.8 × 10⁻⁹ (flat), ≤ 2.0 × 10⁻⁹ (α = 2/3), against predicted compact-binary 6.3 × 10⁻¹⁰ (arXiv:2608.23477, abstract).
-- PBHs: the asteroid window, 10⁻¹⁷–10⁻¹⁰ M☉, is the only unconstrained range (arXiv:2601.06024); LVK O3 gives f_PBH ≲ 10⁻³ over 1–200 M☉ (arXiv:2405.05732); OGLE's < 1% limits are disputed (arXiv:2403.02386, arXiv:2509.05400).
+- PBHs: the asteroid window, ~10⁻¹⁷–10⁻¹⁰ M☉, is the only unconstrained range (arXiv:2601.06024, Sect. V); LVK O3 gives f_PBH ≲ 10⁻³ over 1–200 M☉ (arXiv:2405.05732, abstract); OGLE's < 1% limits (arXiv:2403.02386, abstract) are disputed (arXiv:2509.05400).
 - Gaussian SIGW fits to the PTA signal overproduce PBHs at 2σ (arXiv:2306.17149).
-- EDE: ACT DR6 f_EDE < 0.088, no H0 shift, the DR4 hint gone (arXiv:2503.14454); SPT+ACT+Planck < 0.070, with DESI 0.055 (+0.024/−0.047) (arXiv:2507.23355); profile 0.09 ± 0.03 (arXiv:2505.08051).
-- Constants at recombination (P-ACT-LB): m_e/m_e,0 = 1.0096 ± 0.0060, α_EM/α_EM,0 = 1.0043 ± 0.0017, both step models, no driving field (arXiv:2503.14454).
-- FIRAS: |y| < 15 × 10⁻⁶, |μ| < 9 × 10⁻⁵ (arXiv:astro-ph/9605054); reanalysis |⟨μ⟩| < 47 × 10⁻⁶ (arXiv:2206.02762); ΛCDM predicts μ ≈ 2.3 × 10⁻⁸ (arXiv:1909.01593).
-- p_ann < 3.2 × 10⁻²⁸ cm³ s⁻¹ GeV⁻¹ (Planck 2018, on-the-spot; arXiv:1807.06209).
-- PMFs: √⟨B²⟩ < 0.69 nG (arXiv:2204.06302), Lyα B < 0.30 nG (arXiv:2501.06299); γ-ray lower bound > 7.1 × 10⁻¹⁶ G, duty-cycle dependent (arXiv:2306.05132); a 1.8–3σ pG hint (arXiv:2503.09599) against ACT clumping b < 0.41.
+- EDE: ACT DR6 f_EDE < 0.088, no H0 shift, the DR4 hint gone (arXiv:2503.14454, Sect. V.1); SPT+ACT+Planck < 0.070, with DESI 0.055 (+0.024/−0.047) (arXiv:2507.23355, abstract); profile 0.09 ± 0.03 (arXiv:2505.08051, abstract).
+- Constants at recombination (P-ACT-LB): m_e/m_e,0 = 1.0096 ± 0.0060 (arXiv:2503.14454, Sect. V.2.1), α_EM/α_EM,0 = 1.0043 ± 0.0017 (Sect. V.2.3, Eq. 24), both step models, no driving field.
+- FIRAS: |y| < 15 × 10⁻⁶, |μ| < 9 × 10⁻⁵ (arXiv:astro-ph/9605054, abstract); reanalysis |⟨μ⟩| < 47 × 10⁻⁶ (arXiv:2206.02762, abstract); ΛCDM predicts μ ≈ 2.3 × 10⁻⁸ (arXiv:1909.01593, Sect. 2.1).
+- p_ann < 3.2 × 10⁻²⁸ cm³ s⁻¹ GeV⁻¹ (Planck 2018, on-the-spot; arXiv:1807.06209, Sect. 7.9).
+- PMFs: √⟨B²⟩ < 0.69 nG (arXiv:2204.06302), Lyα B < 0.30 nG (arXiv:2501.06299); γ-ray lower bound > 7.1 × 10⁻¹⁶ G, duty-cycle dependent (arXiv:2306.05132); all from the abstracts. A 5–10 pG hint at ~1.8σ (Planck + DESI) to ~3σ (+ SH0ES-calibrated SNe) (arXiv:2503.09599, abstract) against ACT clumping b < 0.41 (arXiv:2503.14454, Eq. 27).
 
 ## Systematics a referee checks
 <!-- key: systematics-a-referee-checks -->
@@ -60,10 +60,10 @@ re-verify against the cited paper before a number enters a manuscript.
 - "PTAs detected the background at 5σ"; treating γ as robust.
 - PTA strain index α mixed with LVK Ω_GW index α.
 - Ω_GW without h or reference frequency.
-- O3 limit 5.8 × 10⁻⁹ cited as current.
+- O3 limit 5.8 × 10⁻⁹ (arXiv:2101.12130, abstract) cited as current.
 - OGLE limits as undisputed; white-dwarf/femtolensing limits as valid.
-- "f_EDE < 0.07 rules out EDE", ignoring Bayesian/profile.
-- Quasar Δα/α (z ~ 1) compared with CMB α_EM (z ~ 1100).
+- "f_EDE < 0.070 rules out EDE" (the SPT+ACT+Planck bound, arXiv:2507.23355, abstract), ignoring Bayesian/profile.
+- Quasar Δα/α (low redshift) compared with CMB α_EM (recombination).
 - The 1996 FIRAS μ as current; mixing B_1Mpc and √⟨B²⟩.
 
 ## Related skills
@@ -90,7 +90,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 3k; methods 9k; results 8k; surveys 3k; systematics 4k; deep/cosmic-defects 6k; deep/phase-transitions 8k; deep/primordial-black-holes 8k; deep/scalar-induced-gw 9k; deep/sgwb-pta 10k; deep/spectral-distortions 6k.
+Sizes, in thousands of tokens: L1 3k; open 3k; methods 9k; results 8k; surveys 3k; systematics 5k; deep/cosmic-defects 6k; deep/phase-transitions 8k; deep/primordial-black-holes 8k; deep/scalar-induced-gw 9k; deep/sgwb-pta 10k; deep/spectral-distortions 6k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

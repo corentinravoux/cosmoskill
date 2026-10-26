@@ -5,8 +5,8 @@ description: Use when reviewing, planning or fact-checking the statistical side 
 
 # Statistics and inference in cosmology — expert reference
 
-Snapshot 2026-10-14. Numbers carry provenance flags ([src] / [sec] / [der]);
-re-verify against the cited paper before a number enters a manuscript.
+Snapshot 2026-10-14. Every number names its paper and the place it was read ([src: <place>] / [sec: <place>]); no number is derived by an agent.
+Re-verify against the cited paper before a number enters a manuscript.
 
 ## File map
 <!-- key: file-map -->
@@ -29,18 +29,18 @@ re-verify against the cited paper before a number enters a manuscript.
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
 
-- Hartlap fixes the precision bias only; best-fit scatter needs a second factor. 1000 mocks, 10 parameters: scatter +5% (100 data points), +29% (400) in error bar; a raw-sample-covariance posterior must widen 10% and 65%, Hartlap included (arXiv:2108.10402, arXiv:1304.2593). Name variance or error bar: BOSS "7%" is variance.
-- A Gaussian likelihood takes a covariance fixed in parameter space (arXiv:1204.4724); likelihood non-Gaussianity moved BOSS fσ8 by −0.44σ (arXiv:1803.06348).
-- Posterior mean and best fit separate in extended models: up to 6.6σ for DESI DR1 full shape in w0waCDM (arXiv:2508.11811); 1σ–2σ in BOSS by EFT prior (arXiv:2208.05929).
-- DES Y6 pre-registered its projection test, with pulls below 0.5σ in ΛCDM (arXiv:2601.14559); KiDS-Legacy reports mean, mode and MAP side by side (arXiv:2503.19441).
+- Hartlap fixes the precision bias only; best-fit scatter needs a second factor (arXiv:1304.2593), the likelihood width a third (arXiv:1312.4841), or a matching-prior t-posterior (arXiv:2108.10402). Name variance or error bar: BOSS "7%" (600 mocks, 41 bins) is variance (arXiv:1304.2593, Sect. III.3 table).
+- A Gaussian likelihood takes a covariance fixed in parameter space (arXiv:1204.4724); likelihood non-Gaussianity moved BOSS fσ8 by −0.44σ (arXiv:1803.06348, abstract).
+- Posterior mean and best fit separate in extended models: 6.6σ in wa for DESI DR1 full shape in w0waCDM (arXiv:2508.11811, abstract); up to 1σ or 2σ in BOSS, by EFT prior (arXiv:2208.05929, abstract).
+- DES Y6 pre-registered its projection test, with pulls below 0.5σ in ΛCDM (arXiv:2601.14559, App. B); KiDS-Legacy reports mean, mode and MAP side by side (arXiv:2503.19441).
 - Profile likelihoods are prior-free, not assumption-free: Wilks holds for ΛCDM; Σm_ν needs a boundary-corrected or Feldman–Cousins belt; w0 is doubtful (arXiv:2408.07700).
-- DESI's σ is `Δχ²_MAP` with 2 dof: −12.5 gives 3.1σ, `Δ(DIC) = −8.7` (arXiv:2503.14738). The same data give `ln B = −0.57 ± 0.26` (arXiv:2511.10631).
+- DESI's σ is `Δχ²_MAP` with 2 dof: −12.5 gives 3.1σ, `Δ(DIC) = −8.7` (arXiv:2503.14738, Table 6). The same data give `ln B = −0.57 ± 0.26` (arXiv:2511.10631, abstract).
 - The Bayes ratio scales with prior volume; parameter differences, suspiciousness and eigentension agree (arXiv:2012.09554, arXiv:1902.04029).
-- A tension needs metric, subspace and reference: DES Y6 against the CMB is 1.8σ full-space, 2.6σ in S8 (arXiv:2601.14559); CMB against DESI DR2 is 1.6σ for ACT, 2.8σ for SPT (arXiv:2503.14452, arXiv:2506.20707).
+- A tension needs metric, subspace and reference: DES Y6 against the CMB is 1.8σ full-space, 2.6σ in S8 (arXiv:2601.14559); CMB against DESI DR2 is 1.6σ for ACT, 2.8σ for SPT (arXiv:2503.14452, arXiv:2506.20707; abstract of each).
 - MultiNest gave narrower intervals and inconsistent evidences on DES Y1 (arXiv:2202.08233); DES Y6 and KiDS-Legacy use Nautilus (arXiv:2306.16923). Cosmology's `R − 1 < 0.01` tests chain means (arXiv:1304.4473), unlike `R̂` (arXiv:1903.08008).
 - Simulation-based inference inflates variance at least as much as a mock covariance (arXiv:2412.02311); passing coverage is not validation (arXiv:2605.00980).
-- Emulator accuracies (0.4%, arXiv:2106.03846; 1% dark-matter-only, arXiv:2010.11288) are interpolation errors; such error can miscalibrate a Gaussian likelihood (arXiv:2607.17942).
-- Fisher forecasts underestimate w0–wa errors from geometrical probes by 30%–70% (arXiv:1205.3984).
+- Emulator accuracies (0.4%, arXiv:2106.03846; 1% dark-matter-only, arXiv:2010.11288; abstract of each) are interpolation errors; such error can miscalibrate a Gaussian likelihood (arXiv:2607.17942).
+- Fisher forecasts underestimate w0–wa errors from geometrical probes by 30%–70% (arXiv:1205.3984, abstract).
 - Blinding levels: catalogue (DESI, arXiv:2404.07282), data vector (DES, arXiv:1911.05929), three catalogues (KiDS); ACT DR6 and DES Y6 publish criteria and deviations (arXiv:2503.14452).
 - The trial factor equals the prior-to-posterior volume ratio (arXiv:2007.13821).
 
@@ -54,7 +54,7 @@ search; `Δχ²` with its degrees of freedom; Bayes factor with priors; tension
 metric, subspace and reference fixed in advance; independence of combined
 data; emulator range and error; coverage plus a fixed-parameter
 test; blinding level and post-unblinding changes:
-`references/systematics.md` §17.
+`references/systematics.md` Sect. 17.
 
 ## Errors that recur
 <!-- key: errors-that-recur -->
@@ -94,7 +94,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 9k; methods 23k; results 10k; surveys 7k; systematics 13k; deep/covariance-estimation 9k; deep/likelihood-form 7k; deep/model-comparison 9k; deep/pipeline-validation 6k; deep/profile-likelihoods 8k; deep/tension-metrics 7k.
+Sizes, in thousands of tokens: L1 3k; open 9k; methods 23k; results 10k; surveys 8k; systematics 13k; deep/covariance-estimation 9k; deep/likelihood-form 7k; deep/model-comparison 9k; deep/pipeline-validation 7k; deep/profile-likelihoods 8k; deep/tension-metrics 7k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

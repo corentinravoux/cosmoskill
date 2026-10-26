@@ -15,10 +15,10 @@ what makes each a training set.
 
 | Suite | Content | Design for ML | Reference |
 |---|---|---|---|
-| Quijote | 44 100 N-body runs, more than 7000 models in {Ω_m, Ω_b, h, n_s, σ8, M_ν, w}; 256³, 512³ or 1024³ particles in 1 h⁻¹Gpc; more than 35 million core hours; about a petabyte released with halo and void catalogues and millions of summary statistics | built for information-content studies (Fisher derivatives) and to "provide enough data to train machine learning algorithms" | Villaescusa-Navarro et al. 2020, arXiv:1909.05273 [src] |
+| Quijote | 44 100 N-body runs, more than 7000 models in {Ω_m, Ω_b, h, n_s, σ8, M_ν, w}; 256³, 512³ or 1024³ particles in 1 h⁻¹Gpc; more than 35 million core hours; about a petabyte released with halo and void catalogues and millions of summary statistics | built for information-content studies (Fisher derivatives) and to "provide enough data to train machine learning algorithms" | Villaescusa-Navarro et al. 2020, arXiv:1909.05273 [src: abstract] |
 | CAMELS | 4233 runs of (25 h⁻¹Mpc)³: 2184 (magneto-)hydrodynamic with AREPO (IllustrisTNG model) and GIZMO (SIMBA model), 2049 N-body; Ω_m, σ8 and four feedback parameters | "the largest suite of cosmological (magneto-)hydrodynamic simulations designed to train machine learning algorithms"; the two sub-grid families give significantly different baryon fractions and P(k) suppression, which makes cross-model tests possible | Villaescusa-Navarro et al. 2021, arXiv:2010.00619 [src: abstract] |
-| CAMELS Multifield Dataset (CMD) | hundreds of thousands of 2D maps and 3D grids of gas, dark matter and stars from 2000 simulated universes; more than 70 TB | parameter inference posed as a community challenge | Villaescusa-Navarro et al. 2022, arXiv:2109.10915 [src] |
-| CAMELS-CROCODILE | GADGET SPH with the Osaka feedback model, 25 and 50 h⁻¹Mpc boxes, one-parameter, cosmic-variance and Sobol sets over 26 parameters | an independent sub-grid implementation to train and test across galaxy-formation models; its fiducial P(k) suppression is a few per cent against up to ~27% for IllustrisTNG at z = 0 | Nagamine et al. 2026, arXiv:2609.23982 [src] |
+| CAMELS Multifield Dataset (CMD) | hundreds of thousands of 2D maps and 3D grids of gas, dark matter and stars from 2000 simulated universes; more than 70 TB | parameter inference posed as a community challenge | Villaescusa-Navarro et al. 2022, arXiv:2109.10915 [src: abstract] |
+| CAMELS-CROCODILE | GADGET SPH with the Osaka feedback model, 25 and 50 h⁻¹Mpc boxes, one-parameter, cosmic-variance and Sobol sets over 26 parameters | an independent sub-grid implementation to train and test across galaxy-formation models; its fiducial P(k) suppression is a few per cent against up to ~27% for IllustrisTNG at z = 0 | Nagamine et al. 2026, arXiv:2609.23982 [src: abstract] |
 | CAMELS SB35 (as used by BIND) | 1024 paired hydrodynamical and dark-matter-only 50 h⁻¹Mpc runs over 35 parameters | paired runs for learned baryon painting | arXiv:2609.10709 [src: abstract] |
 | CosmoGridV1 | PkdGrav3 light-cones; 2500 Sobol grid points in wCDM (Ω_m, σ8, w0, H0, n_s, Ω_b), 7 runs each, 69 particle shells at n_side = 2048 to z = 3.5; 200 fiducial runs with stencil derivatives; 28 benchmark runs with larger boxes and resolution; map-level baryon correction | map-level inference for Stage-III photometric surveys; the benchmark runs test sensitivity to simulation choices | Kacprzak et al. 2023, arXiv:2209.04662 [src: abstract] |
 | CAMELS second generation | 1192 IllustrisTNG-model runs in (50 h⁻¹Mpc)³ over 35 cosmological, astrophysical and numerical parameters, eight times the volume of the first generation | MLPs, CNNs, GNNs and Gaussian processes on P(k), maps, galaxy graphs and halo thermodynamics; constraints tighten with volume but more weakly than the square root of the volume | Genel et al. 2026, arXiv:2606.10038 [src: abstract] |
@@ -32,10 +32,10 @@ what makes each a training set.
 
 | Challenge | Organisers, dates | Data | Outcome | Reference |
 |---|---|---|---|---|
-| PLAsTiCC | Kaggle, 28 September – 17 December 2018; 1094 teams; winners in February 2019 | simulated LSST light curves of 18 transient and variable models (released after the challenge), LSST Operations Simulator cadence, SNANA fluxes; small, bright, non-representative training set; test set of 3.5 million objects; an unseen "Other" class in the test set | top three: boosted trees with GP augmentation (Boone), and two ensembles of trees and neural networks | Kessler et al. 2019, arXiv:1903.11756 [src]; Hložek et al. 2020, arXiv:2012.12392 [src: Sect. 3.2] |
-| ELAsTiCC (Extended LSST Astronomical Time-Series Classification Challenge) | organisers not read here; used by the Fink broker and by LSST DESC papers | about 0.5 million events used for ORACLE training; 19 classes including SN sub-types, AGN, variable stars, microlensing and kilonovae | ORACLE macro-averaged top-level precision 0.96 after 1 day, > 0.99 after 64 days, 0.83 for the 19-way task at 1024 days; Fink CATS ≥ 93% precision for all classes but "long" (~83%) | arXiv:2501.01496 [src]; arXiv:2404.08798 [src] |
-| ELAsTiCC-based SN Ia cosmology simulation | LSST DESC | ~6000 photometrically classified SNe Ia with host photo-z in ~50 deg² of Deep Drilling Fields plus a spectroscopic low-z sample; SCONE + BBC | w0wa figure of merit about 150 against 54 for DES 5-year; "small but significant biases" over 25 samples (**forecast**) | Mitra et al. 2025, arXiv:2512.06319 [src] |
-| Strong Gravitational Lens Finding Challenge | open challenge | 100 000 candidate images | several methods find more than half the lenses above thresholds with zero false positives, better than human inspection | arXiv:1802.03609 [src] |
+| PLAsTiCC | Kaggle, 28 September – 17 December 2018; 1094 teams; winners in February 2019 | simulated LSST light curves of 18 transient and variable models (released after the challenge), LSST Operations Simulator cadence, SNANA fluxes; small, bright, non-representative training set; test set of 3.5 million objects; an unseen "Other" class in the test set | top three: boosted trees with GP augmentation (Boone), and two ensembles of trees and neural networks | Kessler et al. 2019, arXiv:1903.11756 [src: abstract]; Hložek et al. 2020, arXiv:2012.12392 [src: Sect. 3.2] |
+| ELAsTiCC (Extended LSST Astronomical Time-Series Classification Challenge) | organisers not read here; used by the Fink broker and by LSST DESC papers | about 0.5 million events used for ORACLE training; 19 classes including SN sub-types, AGN, variable stars, microlensing and kilonovae | ORACLE macro-averaged top-level precision 0.96 after 1 day, > 0.99 after 64 days, 0.83 for the 19-way task at 1024 days; Fink CATS ≥ 93% precision for all classes but "long" (~83%) | arXiv:2501.01496 [src: abstract]; arXiv:2404.08798 [src: abstract] |
+| ELAsTiCC-based SN Ia cosmology simulation | LSST DESC | ~6000 photometrically classified SNe Ia with host photo-z in ~50 deg² of Deep Drilling Fields plus a spectroscopic low-z sample; SCONE + BBC | w0wa figure of merit about 150 against 54 for DES 5-year; "small but significant biases" over 25 samples (**forecast**) | Mitra et al. 2025, arXiv:2512.06319 [src: abstract] |
+| Strong Gravitational Lens Finding Challenge | open challenge | 100 000 candidate images | several methods find more than half the lenses above thresholds with zero false positives, better than human inspection | arXiv:1802.03609 [src: abstract] |
 
 ### 2.2 Image tasks with survey data
 <!-- key: image-tasks-with-survey-data -->
@@ -43,7 +43,7 @@ what makes each a training set.
 | Task | Data | Outcome | Reference |
 |---|---|---|---|
 | Giant arcs in clusters with Mask R-CNN (ARTEMIDE) | trained and validated on over 4500 simulated images (mock sources injected in Euclidised HST images of 10 lensing clusters), tested on 500 simulations and Euclid Q1 | precision 76%, recall 58% on the test set; 66% of visually confirmed Q1 arcs above the training area threshold recovered; false positives and faint arcs remain the limitation | Euclid Collaboration 2025, arXiv:2511.03064 [src: abstract] |
-| Active anomaly search in Euclid images | 10 000 images, hybrid of Protege and PineForest | 799 unusual objects, including 29 strong-lens systems and candidates (9 absent from the published Q1 lens catalogues searched) and 202 ring galaxies | arXiv:2609.36096 [src] |
+| Active anomaly search in Euclid images | 10 000 images, hybrid of Protege and PineForest | 799 unusual objects, including 29 strong-lens systems and candidates (9 absent from the published Q1 lens catalogues searched) and 202 ring galaxies | arXiv:2609.36096 [src: abstract] |
 
 ### 2.3 Cosmological-inference challenges
 <!-- key: cosmological-inference-challenges -->
@@ -70,7 +70,7 @@ documents it. Cosmological values belong to the probe skills.
 | DES Y3 | lensing-map SBI with CNN compression (Gower Street) | data result, wCDM | arXiv:2403.02314 [src] |
 | DES Y3 | weak lensing + clustering maps, graph CNNs on the full footprint trained on over one million CosmoGridV1 mocks, normalising-flow likelihood in ten parameters, validated on Buzzard; 2–3 times higher Ω_m–S8 figure of merit than its two-point baseline (**forecast**) | analysis design; data analysis announced | Thomsen et al. 2025, arXiv:2511.04681 [src] |
 | KiDS-1000 | GCNN map-level analysis on CosmoGrid; SBI of pseudo-C_ℓ | data results | arXiv:2201.07771 [src]; arXiv:2404.15402 [src] |
-| HSC Y1 | CNN on 19 sub-fields of 3 × 3 deg² in four bins | data result | arXiv:2301.01354 [src] |
+| HSC Y1 | CNN on 19 sub-fields of 3 × 3 deg² in four bins | data result | arXiv:2301.01354 [src: abstract] |
 | KiDS-Legacy | multi-fidelity field-level SBI | mock analysis | arXiv:2606.23346 [src] |
 | DES 5-year SNe | SuperNNova classification in BEAMS; NPE population model | data results; see `cosmo-supernovae` | arXiv:2607.28725 [src] |
 | DESI | neural BAO reconstruction of DR1 LRGs by an external group; outlier detection in EDR BGS | see `cosmo-beyond-two-point`; arXiv:2307.07664 [src] | — |
@@ -81,7 +81,7 @@ documents it. Cosmological values belong to the probe skills.
 
 | Probe or method | Review | Reference |
 |---|---|---|
-| Deep learning for galaxy surveys (all probes) | Dawes Review 10 | Huertas-Company & Lanusse 2022, arXiv:2210.01813 |
+| Deep learning for galaxy surveys (all probes) | a Dawes review | Huertas-Company & Lanusse 2022, arXiv:2210.01813 |
 | Machine learning in cosmology, community plan | Snowmass 2021 white paper | Dvorkin et al. 2022, arXiv:2203.08056 |
 | Simulation-based inference | general review; pedagogical chapter | arXiv:1911.01429; Thiele 2026, arXiv:2605.10719 |
 | Weak lensing | estimators, limits of traditional analyses, ML remedies | Shirasaki 2026, arXiv:2605.12877 [src] |
@@ -125,13 +125,13 @@ to `cosmo-software-ecosystem`.
 
 **Past (training sets and challenges that set the practice).**
 - 2009: the Coyote Universe emulates P(k) from 37 models
-  (arXiv:0902.0429) [src].
+  (arXiv:0902.0429) [src: abstract].
 - 2018: PLAsTiCC on Kaggle, 28 September – 17 December, 1094 teams
-  (arXiv:1903.11756) [src]; the lens-finding challenge on 100 000
-  candidates (arXiv:1802.03609) [src].
+  (arXiv:1903.11756) [src: abstract]; the lens-finding challenge on 100 000
+  candidates (arXiv:1802.03609) [src: abstract].
 - 2019: Quijote, 44 100 N-body runs (arXiv:1909.05273) [src: Sect. II].
-- 2020–2021: CAMELS, 4233 runs (arXiv:2010.00619) [src]; CMD, 70 TB
-  (arXiv:2109.10915) [src].
+- 2020–2021: CAMELS, 4233 runs (arXiv:2010.00619) [src: abstract]; CMD, 70 TB
+  (arXiv:2109.10915) [src: abstract].
 - 2022: CosmoGridV1 and the KiDS-1000 GCNN analysis (arXiv:2209.04662,
   arXiv:2201.07771) [src].
 
@@ -142,7 +142,7 @@ to `cosmo-software-ecosystem`.
 - 2025: ELAsTiCC-trained classifiers (arXiv:2501.01496) [src]; DES Y3
   map-level lensing + clustering design (arXiv:2511.04681) [src]; Fink
   anomaly detection in operation on ZTF since 25 January 2023
-  (arXiv:2603.29511) [src].
+  (arXiv:2603.29511) [src: abstract].
 - 2026: FAIR Universe Weak Lensing ML Uncertainty Challenge in two phases
   (arXiv:2604.14451) [src]; CAMELS second generation and
   CAMELS-CROCODILE (arXiv:2606.10038, arXiv:2609.23982) [src]; LSST DESC

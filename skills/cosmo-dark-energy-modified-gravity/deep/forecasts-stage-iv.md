@@ -15,7 +15,7 @@ conventions differ (`physics-and-methods.md#definitions`); the
 "factor of three from cross-correlations" sentence and the Caldwell–Linder
 target `sigma(w') ≈ 1 + w` (`surveys-and-data.md#what-comes-next`); the
 release dates of DESI, Euclid and Rubin (same file). The general theory of
-Fisher matrices and the 30–70% underestimate of `w0`–`wa` errors by Fisher
+Fisher matrices and the underestimate of `w0`–`wa` errors by Fisher
 matrices for geometric probes belong to `cosmo-statistics-inference`
 (`results.md#fisher-forecasts-against-full-posteriors` there).
 
@@ -118,7 +118,7 @@ code comparison [src: arXiv:1910.09273, Sect. 4.5.1]:
 
 - interpolate `log10 P` against `log10 k` with cubic splines and avoid
   other interpolations; 50 steps per decade in `k` was the default after
-  tests at 20, 50 and 200;
+  tests at 20, 50 and 200 [src: arXiv:1910.09273, Sect. 4.5.1];
 - use numerical derivatives for all parameters: semi-analytic
   derivatives with respect to `ln H` and `ln D_A` disagree with numerical
   ones for `k > 0.1 h/Mpc` and are unstable under rebinning;
@@ -231,8 +231,8 @@ Monte Carlo for future analyses [src: Sect. 7].
 ### Optimistic or pessimistic scale cuts
 <!-- key: optimistic-or-pessimistic-scale-cuts -->
 
-For `w0`, `wa` with Euclid alone the change is a factor 3.3 in FoM for the
-full combination (377 → 1257, flat) [src: arXiv:1910.09273, Sect. 6; der: 1257/377 = 3.3]. For
+For `w0`, `wa` with Euclid alone the full-combination FoM goes from 377
+(pessimistic) to 1257 (optimistic), flat [src: arXiv:1910.09273, Sect. 6]. For
 μ–Σ it is larger and model-dependent: with conservative cuts
 (`k_max^{3×2pt} = 0.25 Mpc^-1`, `k_max^{GCsp} = 0.1 Mpc^-1`) 3×2pt alone
 gives 278% (SS) or 169% (US) on `mu_bar_0` and 35% or 22% on
@@ -240,7 +240,8 @@ gives 278% (SS) or 169% (US) on `mu_bar_0` and 35% or 22% on
 `k_max^{3×2pt}` brings both to ≈ 1%, which "requires ensuring that the
 modelling of nonlinear scales can reach a high level of accuracy"
 [src: arXiv:2512.09748, Sect. 4.2.1]. The screening prescription (SS
-versus US) moves the 3×2pt-only μ error by a factor ≈ 1.6 [der: 278/169].
+versus US) therefore changes the 3×2pt-only μ error (278% against 169%
+above).
 
 ### Fiducial model
 <!-- key: fiducial-model -->
@@ -298,7 +299,7 @@ All rows are **forecasts**.
 | DESI DETF FoM | 133 galaxy BAO; 169 with Lyα BAO; 332 adding galaxy broadband; 121 for a 9000 deg² BAO survey; Stage-IV threshold 110 | with Planck priors | arXiv:1611.00036 | Sect. 1; Sect. 2.4.3 |
 | DESC requirement | combined FoM > 500 (Y10, systematics, Stage-III priors); Stage-II 54 | all DESC probes | arXiv:1809.01669 | Sect. 4 |
 
-The γ rows differ by a factor ≈ 4–7 [der: 0.070/0.015, 0.052/0.0077] because the Table 14 forecast could
+The γ rows differ because the Table 14 forecast could
 not include GCph or XC while varying γ ("none of the available codes allow
 us to include GCph or cross-correlation, while also allowing γ to vary")
 [src: arXiv:1910.09273, Fig. 13 caption]; quote the row whose probe set
@@ -318,8 +319,8 @@ matches the claim.
 | Requirements from a sub-block of `F` | over-tight requirements | use the marginalised block of `F^-1` | arXiv:1809.01669, App. H2 |
 | Flexible nuisance models absorbing a systematic | very loose calibratable requirements | test interactions between systematics models | arXiv:1809.01669, App. H2 |
 | Projection effects invisible to Fisher | sampled marginals offset from the truth | check that the truth is the best fit; vary priors (BBN, redshift shifts) | arXiv:2510.09153, Sect. 6.3.3 |
-| Comparing FoMs across documents | Stage-IV thresholds 110 against 500 for different probe sets and priors | recompute with one convention and one external-data set | arXiv:1611.00036; arXiv:1809.01669 |
-| Screening ignored in non-linear MG forecasts | errors differ by up to ≈ 1.6× between US and SS [der] | quote both limits | arXiv:2512.09748, Sect. 4.2.1 |
+| Comparing FoMs across documents | Stage-IV thresholds 110 against 500 for different probe sets and priors | recompute with one convention and one external-data set | arXiv:1611.00036, Sect. 2.4.3; arXiv:1809.01669, Sect. 4 |
+| Screening ignored in non-linear MG forecasts | errors differ between the US and SS limits | quote both limits | arXiv:2512.09748, Sect. 4.2.1 |
 | IA model built in GR used in MG | unknown amplitude change | absorb into `A_IA`; no dedicated study exists | arXiv:2512.09748, Sect. 2.2 |
 
 Validation checklist used by the collaborations: common inputs and a
@@ -355,16 +356,16 @@ test.
 ## Not verified
 <!-- key: not-verified -->
 
-- CLOE Table 4 (FoM per probe and model): only the abstract's "exceeding
-  400" and the text were read.
+- CLOE Table 4 (FoM per probe and model): only the abstract's "exceed 400"
+  (arXiv:2510.09153, abstract) and the text were read.
 - Ilić et al. 2022 (Euclid × CMB forecasts): numbers taken from the Table 1
   reproduced in arXiv:2512.09748; the paper itself was not read and its
   identifier is not recorded here.
-- The DESI design FoM sentence "332 including galaxy broadband power
-  spect[rum]" was truncated in the rendering; the `k_max` behind it was not
-  read.
-- The Stage-II value of 11 used by DESI comes from its reference [109],
-  not identified.
+- The DESI design FoM sentence, read in full on 2026-10-25: "332 including
+  galaxy broadband power spectrum to k = 0.1 h Mpc^-1", and 704 out to
+  `k < 0.2 h/Mpc` (arXiv:1611.00036, Sect. 1; Table 2.9 in Sect. 2.4.3).
+- The Stage-II value of 11 used by DESI comes from its reference [109]
+  (arXiv:1611.00036, Sect. 2.4.3), not identified.
 - No DESI DR2-era or Rubin-era updated collaboration forecast of `w0`–`wa`
   was read; the SRD (2018) and the DESI design paper (2016) predate the
   current data.

@@ -95,7 +95,7 @@ galaxy–matter cross-correlations [src: arXiv:2110.11413, Sect. 3.1]:
 
 1. Split the cone into 33 redshift catalogues from z = 0.1 to 8, each
    owning the haloes that cross between its two half-redshifts [src:
-   Sect. 3.2].
+   arXiv:2110.11413, Sect. 3.2].
 2. For a halo with a merger-tree progenitor, find the crossing distance
    χ* assuming constant radial velocity between epochs (Eqs. 1–2), then
    interpolate position, velocity and mass linearly to χ* (Eq. 3); mark
@@ -104,13 +104,13 @@ galaxy–matter cross-correlations [src: arXiv:2110.11413, Sect. 3.1]:
    and drift it with its velocity, x_interp = x_i + v_i [t(r_i) − t(χ_i)]
    (1 + z_i) (Eq. 4) [src: Sect. 3.2]. About 1/3 of all haloes have no
    progenitor, but only about 5%, 2.5% and 1% of haloes with 100, 1000 and
-   10,000 particles [src: Sect. 3.2, Fig. 3].
+   10,000 particles [src: arXiv:2110.11413, Sect. 3.2, Fig. 3].
 4. Match the haloes' subsample particles to the light-cone particle
    output, as satellite tracers [src: Sect. 3.3].
 
 The stated justification of linear motion: at z ≲ 0.5 a halo at
 500 km/s moves about 300 kpc between catalogues spaced by Δz = 0.05
-[src: Sect. 3.1].
+[src: arXiv:2110.11413, Sect. 3.1].
 
 ### Step 4. Compute the lensing fields: Born or ray-tracing
 <!-- key: step-4-compute-the-lensing-fields-born-or-ray -->
@@ -209,10 +209,10 @@ arXiv:1706.01472, abstract].
 | Statistic | Ray-tracing against Born | Analysis | Place read |
 |---|---|---|---|
 | κ power spectrum | within 0.2% (NGP) or 0.1% (NUFFT) up to ℓ ≈ 10⁴; differences dominated by interpolation, not by post-Born physics | MTNG, z_s = 1, N_side = 8192 | arXiv:2406.08540, Sect. 4.2 |
-| κ PDF | central part within 1%; high tail −1.5% at κ ≈ 0.09; low tail +10% at κ ≈ −0.025; Born overestimates the high tail and underestimates the low one | same | Sect. 4.3 |
-| Peaks | −1.5% at κ ≈ 0.15 | same, 1 arcmin smoothing | Sect. 5 |
-| Minima | +15% at κ ≈ −0.025, −7% at κ ≈ 0.03 | same | Sects. 4.4, 5 |
-| Minkowski functional V_1 | +25% (NGP, NUFFT) at κ ≈ −0.028 | same | Sect. 5 |
+| κ PDF | central part within 1%; high tail −1.5% at κ ≈ 0.09; low tail +10% at κ ≈ −0.025; Born overestimates the high tail and underestimates the low one | same | arXiv:2406.08540, Sect. 4.3 |
+| Peaks | −1.5% at κ ≈ 0.15 | same, 1 arcmin smoothing | arXiv:2406.08540, Sect. 5 |
+| Minima | +15% at κ ≈ −0.025, −7% at κ ≈ 0.03 | same | arXiv:2406.08540, Sects. 4.4, 5 |
+| Minkowski functional V_1 | +25% (NGP, NUFFT) at κ ≈ −0.028 | same | arXiv:2406.08540, Sect. 5 |
 | Void abundance and profiles | not significantly affected | same | Sect. 5 |
 | Parameter bias, power spectrum | negligible for an LSST-like survey once shape noise is included | 260 h⁻¹ Mpc, 512³ Gadget2 runs, LensTools | arXiv:1612.00852, abstract and Sect. II |
 | Parameter bias, κ skewness and kurtosis | up to 2.5σ | same | arXiv:1612.00852, abstract |
@@ -250,16 +250,16 @@ Sects. 5.1 and 6]:
 - Along directions of repeated structure: O(10%) bias in the mean PDF and
   Minkowski functionals, O(1%) in C_ℓ, bispectrum, peaks and minima, and
   O(10%) in covariances, rising with z_s and ℓ to about 25% at
-  z_s = 2.5.
+  z_s = 2.5 [src: arXiv:2511.20423, abstract].
 - A patch centred on a replication direction under gnomonic projection:
-  biases up to O(100%) at high redshift.
-- After removing those patches, means agree within 1%, but variances
-  differ by 10–30% (super-sample effect), and survey shape noise for DES,
-  KiDS, HSC, LSST, Euclid or Roman does not remove it.
+  biases up to O(100%) at high redshift [src: arXiv:2511.20423, abstract].
+- After removing those patches, means agree within 1% [src: arXiv:2511.20423,
+  abstract], but variances differ by 10–30% (super-sample effect) [src: App. B.2,
+  Fig. 16 caption], and survey shape noise for DES, KiDS, HSC, LSST, Euclid or Roman does not remove it [src: abstract].
 - Scaling given by the authors: replication-induced covariance falls as
   L⁻² to L⁻³, so doubling the box cuts it by 4–8; σ_b², the variance of
   the box-scale mode (Eq. 15), is 13.2 times smaller for 1250 than for
-  625 h⁻¹ Mpc, turning a 20% SSC effect into about 1.5%.
+  625 h⁻¹ Mpc, turning a 20% SSC effect into about 1.5% [src: arXiv:2511.20423, Sect. 6].
 
 Their reading: tiling is acceptable for the mean if the affected patches
 are cut; covariances need large boxes [src: Sect. 6]. Rotating shells

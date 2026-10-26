@@ -19,9 +19,9 @@ detail beyond what clustering analyses need belongs to
   400 objects at once over a 2° diameter field [src: abstract] (Colless et al. 2001,
   arXiv:astro-ph/0106498).
 - Design: about 250,000 galaxies to b_J = 19.45, 2000 deg², median depth
-  z = 0.11 [src] (arXiv:astro-ph/0106498).
-- Final clustering sample: 221,414 galaxies [src] (Cole et al. 2005,
-  arXiv:astro-ph/0501174).
+  z = 0.11 (arXiv:astro-ph/0106498) [src: abstract].
+- Final clustering sample: 221,414 galaxies (Cole et al. 2005,
+  arXiv:astro-ph/0501174) [src: abstract].
 - Result that matters: evidence for baryon oscillations in P(k),
   Ω_m h = 0.168 ± 0.016, Ω_b/Ω_m = 0.185 ± 0.046 [src: abstract]
   (arXiv:astro-ph/0501174).
@@ -30,7 +30,7 @@ detail beyond what clustering analyses need belongs to
 <!-- key: 6df-galaxy-survey-6dfgs -->
 
 - Southern sky at |b| > 10°; 125,071 galaxies in the final catalogue, median
-  redshift 0.053 [src] (Jones et al. 2009, arXiv:0903.5451).
+  redshift 0.053 (Jones et al. 2009, arXiv:0903.5451) [src: abstract].
 - BAO at z_eff = 0.106: D_V = 456 ± 27 Mpc, H0 = 67 ± 3.2 km/s/Mpc with the
   WMAP-7 sound horizon [src: abstract] (Beutler et al. 2011, arXiv:1106.3366).
 - It is the lowest-redshift BAO point of the pre-DESI compilations; the
@@ -40,8 +40,8 @@ detail beyond what clustering analyses need belongs to
 <!-- key: wigglez -->
 
 - Redshift range 0.2 < z < 1. Reconstructed BAO distances at
-  z = 0.44, 0.60, 0.73 with 4.8%, 4.5% and 3.4% precision [src] (Kazin et al.
-  2014, arXiv:1401.0358).
+  z = 0.44, 0.60, 0.73 with 4.8%, 4.5% and 3.4% precision (Kazin et al.
+  2014, arXiv:1401.0358) [src: abstract].
 - Sample size and area were not read this session.
 
 ### 1.4 SDSS-I/II
@@ -58,8 +58,8 @@ detail beyond what clustering analyses need belongs to
 
 - Final DR12 clustering sample: 1.2 million massive galaxies, effective area
   9329 deg², volume 18.7 Gpc³, 0.2 < z < 0.75, analysed in three overlapping
-  slices at z_eff = 0.38, 0.51, 0.61 [src] (Alam et al. 2017,
-  arXiv:1607.03155).
+  slices at z_eff = 0.38, 0.51, 0.61 (Alam et al. 2017, arXiv:1607.03155)
+  [src: abstract; 0.2 < z < 0.75 from Sect. 2.2].
 - Samples named LOWZ and CMASS in the catalogue papers; the consensus
   analysis combines them.
 - Observational systematics and selection function: Ross et al. 2017,
@@ -70,8 +70,9 @@ detail beyond what clustering analyses need belongs to
 ### 1.6 eBOSS (SDSS-IV)
 <!-- key: eboss-sdss-iv -->
 
-Final DR16 catalogues [src] (Ross et al. 2020, arXiv:2007.09000; Mohammad et
-al. 2020, arXiv:2007.09005):
+Final DR16 catalogues (Ross et al. 2020, arXiv:2007.09000; Mohammad et
+al. 2020, arXiv:2007.09005). LRG and QSO rows from the abstract of the first,
+ELG row from the abstract of arXiv:2007.09005 [src: abstract of each]:
 
 | Tracer | z range | N | Area [deg²] |
 |---|---|---|---|
@@ -100,13 +101,14 @@ resolution 2000–5000. Survey start: May 2021.
 
 **Design** (DESI Collaboration 2016, arXiv:1611.00036): four target classes
 selected from imaging, BGS, LRG, ELG, QSO, with QSO at z > 2.1 used for the
-Lyα forest; more than 30 million redshifts planned [src]. Targets come from
-the DESI Legacy Imaging Surveys DR9 (DECaLS, BASS, MzLS) [src] (DESI
-Collaboration 2024, arXiv:2404.03002).
+Lyα forest (2.1 < z < 3.5); more than 30 million redshifts planned
+[src: Sect. 1]. Targets come from
+the DESI Legacy Imaging Surveys DR9 (DECaLS, BASS, MzLS) (DESI
+Collaboration 2024, arXiv:2404.03002) [src: Sect. 2.2].
 
-**Target densities and priorities** [src] (arXiv:2404.03002): BGS Bright 854
-deg⁻²; LRG 624 deg⁻²; QSO 310 deg⁻², highest priority; ELG lowest priority,
-with a random 10% at LRG priority. Bright-time and dark-time programmes are
+**Target densities and priorities** (arXiv:2404.03002) [src: Sect. 2.2,
+sample paragraphs]: BGS Bright 854 deg⁻²; LRG 624 deg⁻²; QSO 310 deg⁻²,
+highest priority; ELG lowest priority, with a random 10% at LRG priority. Bright-time and dark-time programmes are
 separate.
 
 **Releases.**
@@ -114,28 +116,31 @@ separate.
 | Release | Public date | Content | Flag |
 |---|---|---|---|
 | EDR (Survey Validation) | 13 June 2023 | 1.8 million unique targets, Dec 2020 – June 2021 | [src] DESI data-release page |
-| DR1 | 19 March 2025 | 18.7 million objects, main survey May 2021 – June 2022, plus reprocessed SV | [src] DESI data-release page |
+| DR1 | 2025-03-19 | 18.7 million objects, main survey May 2021 – June 2022, plus reprocessed SV | [src] DESI data-release page; count also in arXiv:2503.14745 [src: abstract] |
 | DR2 cosmology products | 6 October 2025 | BAO likelihoods, chains, best fits | [src] DESI announcement |
 | DR2 spectra and catalogues | not public at snapshot | first three years | see "Not verified" |
 
 EDR per target class: 428,758 BGS, 227,318 LRG, 437,664 ELG, 76,079 QSO,
-466,447 Milky Way Survey objects with good spectra [src] (DESI Collaboration
-2023, arXiv:2306.06308). DR1: 13.1 million galaxies, 1.6 million quasars,
-4 million stars [src] (DESI Collaboration 2025, arXiv:2503.14745).
+466,447 Milky Way Survey objects with good spectra (DESI Collaboration
+2023, arXiv:2306.06308) [src: abstract]. DR1: 13.1 million galaxies, 1.6
+million quasars, 4 million stars (DESI Collaboration 2025, arXiv:2503.14745)
+[src: abstract].
 
 Public locations [src]: `data.desi.lbl.gov/public/edr`,
 `data.desi.lbl.gov/public/dr1`, and for DR2 cosmology
 `data.desi.lbl.gov/public/papers/y3/bao-cosmo-params/`.
 
-**DR1 clustering data** [src] (arXiv:2404.03002): main-survey observations
+**DR1 clustering data** (arXiv:2404.03002) [src: Sect. 2.2]: main-survey observations
 from 14 May 2021 to 14 June 2022; 2744 dark and 2275 bright tiles; about
 7500 deg², just over half of the expected final 14,200 deg²; the final survey
 was planned at 9929 dark and 5676 bright tiles. Catalogue construction: Ross
 et al. 2025, arXiv:2405.16593; sample definitions and two-point pipeline:
 DESI Collaboration 2024, arXiv:2411.12020.
 
-**Clustering samples, DR1 versus DR2** [src] (arXiv:2404.03002;
-arXiv:2503.14738):
+**Clustering samples, DR1 versus DR2.** DR1 counts from arXiv:2404.03002
+(Sect. 2.2 sample paragraphs; BGS and QSO also in its Table 1); DR2 columns
+from arXiv:2503.14738, Table 2, except the QSO count, which is the BAO bin of
+its Table 3. From arXiv:2404.03002 and arXiv:2503.14738 [src: Sect. 2.2, Tables 1, 2 and 3]:
 
 | Tracer | z range | N (DR1 BAO) | N (DR2 BAO) | DR2 area [deg²] | DR2 assignment completeness | DR2 z success |
 |---|---|---|---|---|---|---|
@@ -145,19 +150,22 @@ arXiv:2503.14738):
 | QSO (tracer) | 0.8–2.1 (BAO) | 856,652 | 1,461,588 | 11,181 | 93.6% | 68.0% |
 
 The DR2 QSO row of the catalogue table counts 2,062,839 good redshifts over
-0.8 < z < 3.5; the 1,461,588 is the 0.8 < z < 2.1 BAO bin [src].
+0.8 < z < 3.5; the 1,461,588 is the 0.8 < z < 2.1 BAO bin (arXiv:2503.14738)
+[src: Tables 2 and 3].
 
-Changes from DR1 to DR2 [src] (arXiv:2503.14738):
+Changes from DR1 to DR2 (arXiv:2503.14738, Sect. II.1) [src]:
 
-- ELG sample larger by a factor 2.7, LRG 2.1, QSO 1.7; area larger by 54%
-  (QSO) to 75% (LRG, ELG); effective volume larger by 1.8 (QSO) to 3.1 (ELG2).
-- BGS: nearly four times the DR1 BAO sample. Half of the gain is area and
+- ELG sample larger by a factor 2.7, LRG 2.1, QSO 1.7; area larger by
+  between 54% (QSO) and 75% (LRG and ELG) (arXiv:2503.14738) [src: Sect. II.1].
+  The DR1 and DR2 effective volumes per bin are in the tables of
+  `results.md`, Sects. 1.1–1.2.
+- BGS: nearly 4× the DR1 BAO sample. Half of the gain is area and
   completeness; the rest comes from relaxing the absolute-magnitude cut from
   M_r < −21.5 to M_r < −21.35, with a new definition of M_r without k- or
-  e-corrections.
+  e-corrections (arXiv:2503.14738) [src: Sect. II.1].
 - DESI DR2 holds more than 9.1 million BGS redshifts at 0.1 < z < 0.4; the
-  BAO analysis uses 1.19 million of them. Using all would add about 20% of
-  effective volume [src].
+  BAO analysis uses 1,188,526 of them (Table 2). Using all would add about
+  20% of effective volume (arXiv:2503.14738) [src: Sect. II.1].
 - Lyα: over 820,000 forest spectra and over 1.2 million quasar positions,
   about twice DR1 [src: abstract] (DESI Collaboration 2025, arXiv:2503.14739).
 
@@ -185,8 +193,8 @@ with further papers planned in 2026.
 <!-- key: euclid-spectroscopic-survey -->
 
 - Mission: optical imaging plus near-infrared imaging and slitless
-  spectroscopy over about 14,000 deg² [src] (Euclid Collaboration: Mellier et
-  al. 2025, arXiv:2405.13491).
+  spectroscopy over about 14,000 deg² (Euclid Collaboration: Mellier et
+  al. 2025, arXiv:2405.13491) [src: abstract].
 - Public releases to date, complete list as of 2026-10-08 [src] (ESA Euclid
   data page, https://www.cosmos.esa.int/web/euclid/data, and ESA Euclid
   timeline, https://www.cosmos.esa.int/web/euclid/timeline, both fetched
@@ -254,7 +262,7 @@ with further papers planned in 2026.
 
 - Launched 11 March 2025; all-sky spectral survey in 102 bands from 0.75 to
   5.0 μm at resolving power 35–130 in 6.2″ pixels; four all-sky passes over
-  two years [src] (Bock et al. 2025, arXiv:2511.02985).
+  two years (Bock et al. 2025, arXiv:2511.02985) [src: abstract].
 - Cosmology goal: a low-resolution all-sky redshift survey to constrain
   inflationary non-Gaussianity [src]. Spectral images are released rapidly;
   no redshift catalogue or clustering result was found as of the snapshot.
@@ -274,7 +282,7 @@ with further papers planned in 2026.
 ## 3. Planned
 <!-- key: planned -->
 
-- **DESI extension** (through 2028, to about 17,000 deg²): Sect. 2.1.
+- **DESI extension** (through 2028; footprint in Sect. 2.1).
 - **Spec-S5**: two 4 m telescopes upgraded to 6 m wide-field facilities, each
   with 13,000 fibres; more than a tenfold gain in spectroscopic capability;
   concept and overview stage [src: abstract] (Poppett et al. 2026, arXiv:2608.07927).
@@ -293,15 +301,15 @@ with further papers planned in 2026.
 | May 2021 | DESI main survey starts | [src] |
 | June 2023 | DESI EDR | [src] |
 | April 2024 | DESI DR1 BAO | [src] |
-| May 2024 | Euclid ERO data release (23 May) | [src] |
+| May 2024 | Euclid ERO data release (2024-05-23) | [src] |
 | November 2024 | DESI DR1 full shape, f_NL | [src] |
-| March 2025 | DESI DR1 public; DESI DR2 BAO; Euclid Q1 (19 March); PFS operations; SPHEREx launch | [src] |
+| March 2025 | DESI DR1 public; DESI DR2 BAO; Euclid Q1 (2025-03-19); PFS operations; SPHEREx launch | [src] |
 | October 2025 | DESI DR2 cosmology products public; 4MOST first light | [src] |
 | April 2026 | DESI planned survey complete | [src] |
-| June 2026 | Euclid Q2 (24 June; Galactic Bulge Survey, not cosmology) | [src] |
+| June 2026 | Euclid Q2 (2026-06-24; Galactic Bulge Survey, not cosmology) | [src] |
 | July 2026 | DESI DR2 Lyα AP | [src] |
 | August 2026 | Roman launch | [src] |
-| 12 November 2026 | Euclid DR1-Foundation (planned) | [src] |
+| 2026-11-12 | Euclid DR1-Foundation (planned) | [src] |
 | 2027 | DESI full-survey results; Euclid complete DR1 (planned, mid-2027) | [src] |
 | June 2029; October 2031 | Euclid DR2; Euclid DR3 (planned, tentative) | [src] |
 
@@ -328,8 +336,8 @@ with further papers planned in 2026.
 - Public release date of the full DESI DR2 spectra and catalogues. The DESI
   announcement of 6 October 2025 says "in some months"; a web-search summary
   attributed "by early 2027" to a 2025 Milky Way Survey paper, not read here.
-- The total redshift goal of the DESI extension (a web-search summary gave
-  63 million; not found on the pages fetched).
+- The total redshift goal of the DESI extension (a web-search summary gave a
+  figure that was not found on the pages fetched).
 - WiggleZ sample size and area; BOSS LOWZ/CMASS individual numbers.
 - Euclid launch date, NISP wavelength range, and expected numbers of
   spectroscopic redshifts in DR1.

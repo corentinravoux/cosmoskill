@@ -11,7 +11,8 @@ From: Euclid 2025 review (arXiv:2512.09748), Sects. 6–8; DESI DR1
 modified-gravity key paper (arXiv:2411.12026), Sect. 2.3 and App. A.
 
 Already in L2, not repeated here: what DESI DR1 (EdS kernels checked against
-fkpt), DES Y3 (Halofit ratio, "linear" scale cuts keeping 256 of 462 points),
+fkpt), DES Y3 (Halofit ratio, "linear" scale cuts keeping 256 of 462 points;
+arXiv:2207.05766, Sect. II.4, Table 1),
 KiDS-1000 (ReACT on HMcode, cosmic shear only) and DESI DR1 `f(R)` (fkpt,
 `k_max = 0.17 h/Mpc`, screening neglected) did, in
 `physics-and-methods.md#what-the-main-modified-gravity-analyses-did`; the
@@ -90,8 +91,7 @@ cheaper simulations suffice. Then `P_f(R) = Xi × P_ΛCDM`, the cosmology
 dependence entering mainly through `P_ΛCDM` [src: arXiv:2409.03524, Sect.
 5.2].
 
-Available predictions for Hu–Sawicki `f(R)` [src: arXiv:2512.09748, Sect.
-6.2.1]:
+Available predictions for Hu–Sawicki `f(R)` [src: arXiv:2512.09748, Sect. 6.2.1]:
 
 | Prediction | Basis | Cosmology dependence | Validity stated |
 |---|---|---|---|
@@ -145,7 +145,7 @@ For μ–Σ, conservative cuts of `k_max = 0.25 Mpc^-1` (3×2pt) and
 `0.1 Mpc^-1` (spectroscopic) give relative errors on `mu_0` and `Sigma_0`
 of 278% and 35% (SS) or 169% and 22% (US) from 3×2pt alone, and 24% and 3%
 (SS) or 23% and 3% (US) for 3×2pt + spectroscopic (**forecast**) [src:
-Sect. 4.2.1]. More optimistic cuts bring both to about 1% "however, such
+arXiv:2512.09748, Sect. 4.2.1]. More optimistic cuts bring both to about 1% "however, such
 an improvement requires ensuring that the modelling of nonlinear scales can
 reach a high level of accuracy" (**forecast**) [src: same]. ReACT's
 accuracy rules out the optimistic weak-lensing cut (`ell_max = 5000`); it
@@ -297,7 +297,7 @@ ratio of L2 corresponds to neither and is applied only with linear cuts.
   0.1σ for `w0`, `wa`, but up to 1σ on the growth parameter in the highest
   redshift bin, unacceptable for a gravity test; precomputing magnification
   at a fixed CMB cosmology reduces the shift to 0.13σ (`w0waCDM`) and 0.1σ
-  (**forecast**) [src: Sects. 7.2.2–7.2.3].
+  (**forecast**) [src: arXiv:2512.09748, Sects. 7.2.2–7.2.3].
 
 ## Numbers
 <!-- key: numbers -->

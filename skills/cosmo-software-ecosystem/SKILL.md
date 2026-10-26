@@ -5,8 +5,10 @@ description: Use when choosing, citing, comparing or debugging a cosmology code,
 
 # Cosmology software ecosystem — expert reference
 
-Snapshot 2026-10-14. Numbers carry provenance flags ([src], [sec], [der]);
-re-verify against the cited paper before a number enters a manuscript.
+Snapshot 2026-10-14. Every number names its paper and the place it was
+read ([src: <place>] / [sec: <place>]); no number is derived by an agent.
+Re-verify against the cited paper before a number enters a manuscript.
+
 Defaults were read in named versions (camb 2.0.4, pyccl 3.3.6, cosmoprimo 1.0.0,
 CLASS 3.2.3, healpy 1.19.0); re-read them for the version in use.
 
@@ -30,16 +32,18 @@ CLASS 3.2.3, healpy 1.19.0); re-read them for the version in use.
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
 
-- CAMB and CLASS agree at 0.01 % only for concordance ΛCDM, a shared recombination history and boosted precision (arXiv:1104.2934).
+- CAMB and CLASS agree at 0.01 % only for concordance ΛCDM, a shared recombination history and boosted precision (arXiv:1104.2934, abstract).
 - CAMB v2 (arXiv:2607.14854, Sect. IX) changed the defaults: unboosted runs now target 10⁻³; v1.6.6 defaults are off by 1.5 % in TT at ℓ = 3000.
-- pyccl 3.3.6 still requests CAMB's v1 accuracy behaviour, so pyccl and a direct CAMB v2 call differ.
+- pyccl 3.3.6 still requests CAMB's v1 accuracy behaviour, so pyccl and a direct CAMB v2 call differ [src: pyccl 3.3.6 installed docstring, not a paper].
 - Units split in two camps: classy and pyccl use Mpc⁻¹ and Mpc³; cosmoprimo, flip and picca use h-units; CAMB mixes both in one object.
-- Default neutrinos differ: CAMB one massive eigenstate of 0.06 eV; pyccl massless, split "normal" when set; cosmoprimo and CLASS none. N_eff is 3.044 (arXiv:2012.02726) except in stored cosmologies such as astropy `Planck18` (3.046).
+- Default neutrinos differ (code defaults read in the installed packages, not a paper): CAMB one massive eigenstate of 0.06 eV;
+ pyccl massless, split "normal" when set; cosmoprimo and CLASS none. N_eff is 3.044 (benchmark 3.0440 ± 0.0002, arXiv:2012.02726, abstract) except in stored cosmologies such as astropy `Planck18` (3.046).
 - "fσ8" has three code definitions (CAMB velocity–density, CLASS dσ8/dln a, scale-independent f).
 - "Halofit" is eleven options in CAMB; the default is HMcode-2020 (arXiv:2009.01858), in pyccl Takahashi (arXiv:1208.2701).
 - H-EFTCAMB is the official successor of EFTCAMB (arXiv:2603.01662); modified-gravity solvers agree at sub-per-cent level (arXiv:1709.09135).
-- velocileptors, PyBird and FOLPSν agree to k_max ≃ 0.25 h Mpc⁻¹ at 8 (h⁻¹ Gpc)³ precision once bias freedom is matched (arXiv:2404.07272).
-- MultiNest at standard settings gave Ω_m intervals about 10 % narrower than PolyChord (S8 less so) and unreliable evidences on DES Y1; DES Y3 moved to PolyChord (arXiv:2202.08233).
+- velocileptors, PyBird and FOLPSν agree to k_max ≃ 0.25 h Mpc⁻¹ at 8 (h⁻¹ Gpc)³ precision once bias freedom is matched (arXiv:2404.07272, Sect. 6, Conclusion).
+- MultiNest at standard settings gave Ω_m intervals about 10 % narrower than PolyChord (S8 less so) and unreliable evidences on DES Y1; DES Y3 moved to PolyChord (arXiv:2202.08233, Sect. 4.4 and 5).
+
 - Cobaya's MCMC is a translation of CosmoMC, whose repository has been quiet since 2022; desilike binds to Cobaya, CosmoSIS and MontePython.
 - picca measures, Vega models and fits (arXiv:2007.08995, arXiv:2509.15308).
 - flip (arXiv:2501.16852): radians, Mpc h⁻¹, km/s, h Mpc⁻¹; engines classy, cosmoprimo, pyccl; cite also arXiv:2303.01198.

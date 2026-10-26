@@ -28,16 +28,18 @@ which question. Load one reference at a time.
 
 - Prose cites `arXiv:<id>` or `doi:<doi>`. Every cited identifier has one row
   in `sources.tsv`, and every row is cited.
-- Every number carries a flag:
+- Only numbers read in a paper are given (owner, 2026-10-23). Every number
+  names its paper (`arXiv:` or `doi:`) and the place it was read, in a flag:
 
   | flag | meaning | use in a manuscript |
   |---|---|---|
-  | `[src]` | read in the cited paper itself when the file was written | re-read the paper, then quote |
-  | `[sec]` | taken from a named secondary source | go to the primary paper first |
-  | `[der]` | derived; the derivation and its assumption are stated | quote only with the assumption |
+  | `[src: <place>]` | read in the cited paper itself at that place (section, table, equation, figure, footnote or abstract) when the file was written | re-read the paper, then quote |
+  | `[sec: <place>]` | taken from a named secondary source at that place | go to the primary paper first |
+  | `[der]` | reasoning in words drawn from cited results; carries no number | do not quote as a result |
 
-- A number with no flag, or a claim with no citation, is a defect in the
-  file: fix the file, do not quote the number.
+- A number without its paper and place, a number computed by an agent, or a
+  claim with no citation, is a defect in the file: fix the file, do not
+  quote the number. `tools/check_numbers.py` lists them.
 - Forecasts are labelled as forecasts and never share a table with
   measurements without a column that says which is which.
 - Each `results.md` and `surveys-and-data.md` starts with a snapshot date.

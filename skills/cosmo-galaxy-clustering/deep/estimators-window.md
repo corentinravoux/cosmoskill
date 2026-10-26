@@ -32,10 +32,11 @@ Random catalogues are split into data-sized chunks whose pair counts are
 summed; at least 50 times the data are used (1, 8, 10, 4 random files for
 BGS, LRG, ELG, QSO) [src: same].
 
-**Fourier space (DESI DR1).** FKP field F = n_D − α_R n_R (Eq. 13),
+**Fourier space (DESI DR1, arXiv:2411.12020).** FKP field F = n_D − α_R n_R (Eq. 13),
 multipoles P̂_ℓ = (2ℓ+1)/(A N_k) Σ_k F_0(k) F_ℓ(−k) − N_ℓ with the
 first-point line of sight (Eqs. 14, 16–17), shot noise in the monopole only
-(Eq. 15) [src: Sect. 10.1.2]. Implementation details [src: same]:
+(Eq. 15) [src: Sect. 10.1.2].
+Implementation details, from arXiv:2411.12020 [src: Sect. 10.1.2]:
 
 | Setting | DESI DR1 value |
 |---|---|
@@ -119,7 +120,7 @@ W → W − W^RIC − W^AIC (arXiv:2411.17623, Eq. 46) [src: Sect. 5.2.3]:
   depend on the spectrum it was estimated on [src: Sect. 4.4].
 - W^AIC: same form, fitted on 30 uncontaminated EZmocks to which the
   imaging-weight scheme is applied; it is purely geometric, so it does not
-  measure the efficiency of the weights [src: Sect. 5.2.2].
+  measure the efficiency of the weights (arXiv:2411.17623) [src: Sect. 5.2.2].
 - The global IC is negligible there [src: Sect. 4.4].
 
 ### Step 6. If the window is non-compact, rotate it
@@ -192,9 +193,10 @@ On BOSS DR12 low-z NGC, in linear Kaiser theory [src: Beutler, Castorina &
 Zhang 2019, arXiv:1810.05051, Sects. 3.4.1, 4]:
 
 - The quadrupole leaks about 10% into the monopole at large scales; n = 1
-  dipole and octopole terms add about 2%.
+  dipole and octopole terms add about 2% (arXiv:1810.05051) [src: Sect. 3.4.1].
 - Ignoring n = 1, 2 biases the FFT quadrupole by 20% at large scales and the
-  hexadecapole by more than 100% at k = 0.003 h Mpc⁻¹.
+  hexadecapole by more than 100% at k = 0.003 h Mpc⁻¹ (arXiv:1810.05051)
+  [src: Sect. 3.4.1].
 - Including n = 2 lowers the large-scale monopole by 3%.
 - Window plus wide-angle terms reach up to 5% of the even-multipole errors;
   no significant effect on BAO or RSD for BOSS.

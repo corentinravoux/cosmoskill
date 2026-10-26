@@ -22,7 +22,7 @@ relations (arXiv:2306.16227) [src].
 SMBH abundance (local scaling relations) is "significantly smaller" than
 measured; changes of merger history cannot close the gap, and preserving the
 Soltan-argument mass density requires typical contributing masses of at
-least ~3 × 10¹⁰ M☉, about ten times larger than predicted [src].
+least ~3 × 10¹⁰ M☉, about ten times larger than predicted [src: abstract].
 
 **The cosmological side.** In NANOGrav's new-physics search, inflation,
 scalar-induced GWs, first-order phase transitions, metastable or
@@ -31,7 +31,7 @@ stable field-theory cosmic strings fail. Many cosmological models give Bayes
 factors of 10 to 100 against the SMBHB interpretation, but the collaboration
 states that these "strongly depend on modeling assumptions about the cosmic
 SMBHB population and, at this stage, should not be regarded as evidence for
-new physics" (arXiv:2306.16219) [src]. EPTA reaches the same conclusion: "it
+new physics" (arXiv:2306.16219) [src: abstract]. EPTA reaches the same conclusion: "it
 is impossible to discriminate among the different origins" at this stage;
 early-Universe sources other than strings and phase transitions "would
 require non-standard scenarios", such as a blue-tilted tensor spectrum or
@@ -51,17 +51,14 @@ signal (arXiv:2306.16219) [src].
 <!-- key: primordial-black-holes-as-dark-matter-and-as -->
 
 **PBH binaries and LVK.** After GW150914, two groups proposed PBH mergers as the source: Bird et
-al. 2016 (arXiv:1603.00464), with PBHs as all the dark matter in a 20–100 M☉ window and binaries
-formed in halo encounters [src]; Sasaki et al. 2016 (arXiv:1603.08338), with binaries formed in
+al. 2016 (arXiv:1603.00464), with PBHs as all the dark matter in a 20–100 M☉ window and binaries formed in halo encounters [src: abstract]; Sasaki et al. 2016 (arXiv:1603.08338), with binaries formed in
 the early Universe, where PBHs as all the dark matter would exceed the observed rate and a
-fraction of the dark matter matches it [src]. The two formation channels predict different
+fraction of the dark matter matches it [src: abstract]. The two formation channels predict different
 rates.
 
 - **Stellar-mass PBHs as the LVK population.** The 2016 proposals
   (arXiv:1603.00464, arXiv:1603.08338) [src] are now confronted with
-  f_PBH ≲ 10⁻³ over 1–200 M☉ from O3 population analyses
-  (arXiv:2405.05732) and < 1–10% from twenty years of OGLE LMC data
-  (arXiv:2403.02386) [src]. PBHs can still contribute a sub-population of
+  f_PBH ≲ 10⁻³ over 1–200 M☉ from O3 population analyses (arXiv:2405.05732) and, from twenty years of OGLE LMC data, < 1% for 1.8 × 10⁻⁴ – 6.3 M☉ and < 10% for 1.3 × 10⁻⁵ – 860 M☉ (arXiv:2403.02386) [src: abstract of each]. PBHs can still contribute a sub-population of
   mergers without being the dark matter.
 - **The OGLE versus MACHO dispute.** OGLE finds no long events and fewer
   events than expected from known stars; Hawkins (arXiv:2509.05400) argues
@@ -90,8 +87,7 @@ The status of these models as H0 resolutions is the business of
   preferences appear only with DESI BAO, which SPT-3G reads as the
   CMB–DESI discrepancy in ΛCDM [src].
 - **Bayesian limits or profile intervals?** Profile likelihoods give
-  non-zero f_EDE (0.072 ± 0.036, arXiv:2112.12140; 0.09 ± 0.03,
-  arXiv:2505.08051) [src] where Bayesian analyses give upper limits. Both
+  non-zero f_EDE (0.072 ± 0.036, arXiv:2112.12140; 0.09 ± 0.03, arXiv:2505.08051) [src: abstract of each] where Bayesian analyses give upper limits. Both
   are correct answers to different questions; a referee should ask which
   one a paper reports.
 - **Large-scale structure.** The S8 penalty of EDE (arXiv:2003.07355) [src]
@@ -137,8 +133,7 @@ The status of these models as H0 resolutions is the business of
   different data (Planck + DESI ± SNe versus ACT + Planck) and are not yet
   reconciled in one analysis.
 - **A hint in the Lyα forest?** The B ~ 0.2 nG extra power of Pavičević et
-  al. disappears under conservative noise modelling (arXiv:2501.06299)
-  [src]. The forest data side is in `cosmo-lyman-alpha`.
+  al. disappears under conservative noise modelling (arXiv:2501.06299) [src: abstract]. The forest data side is in `cosmo-lyman-alpha`.
 - **Duty-cycle dependence of the γ-ray lower bound** (arXiv:2306.05132)
   [src] leaves the lower edge of the allowed window uncertain by two orders
   of magnitude.

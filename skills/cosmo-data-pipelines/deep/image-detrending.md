@@ -8,7 +8,7 @@ edge distortions, charge-transfer inefficiency and new sensor anomalies are
 handled, and how the background is subtracted; compared across HSC, DES,
 Rubin DP1 and Euclid VIS, with the reason given for each choice.
 Snapshot: 2026-10-18.
-From: Bosch et al. 2018, Sects. 3.1–3.2, 4.1–4.2; DES and Rubin
+From: Bosch et al. 2018 (arXiv:1705.06766), Sects. 3.1–3.2 and 4.1–4.2; DES and Rubin
 data-management groups (copied from `references/subtopics.tsv`).
 
 Already in L2, not repeated here: the Rubin DP1 ISR order, the
@@ -32,6 +32,8 @@ consequences in `cosmo-weak-lensing`.
 All pipelines work backwards through the signal chain, from ADU to
 photoelectrons (arXiv:2603.23786) [src: Sect. IV.2.1]. What differs is how
 each product is built.
+
+By column: arXiv:1705.06766 [src: Sect. 4.1]; arXiv:1801.03177 [src: Sects. III.1–III.3]; arXiv:2503.15303 [src: Sect. 3].
 
 | Product | HSC (Bosch et al. 2018, arXiv:1705.06766) [src: Sect. 4.1] | DES (Morganson et al. 2018, arXiv:1801.03177) [src: Sects. III.1–III.3] | Euclid VIS Q1 (arXiv:2503.15303) [src: Sect. 3] |
 |---|---|---|---|
@@ -303,7 +305,7 @@ Sect. 3.11].
 | Quantity | Value | Analysis | Source | Place read |
 |---|---|---|---|---|
 | Bias frames combined | ~10 (HSC); ~150, 5σ rejection (DES) | HSC, DES | arXiv:1705.06766; arXiv:1801.03177 | Sect. 4.1; Sect. III.2 |
-| Dome flats combined | ~10 (HSC); 50–100 of 8–20 s (DES) | HSC, DES | same | same |
+| Dome flats combined | ~10 (HSC); 50–100 of 8–20 s (DES) | HSC, DES | arXiv:1705.06766; arXiv:1801.03177 | Sect. 4.1; Sect. III.2 |
 | Crosstalk coefficients | intra-CCD up to 10⁻³, inter-CCD < 2×10⁻⁴, set to 0 below 10⁻⁶ | DECam | arXiv:1801.03177 | Sect. III.1 |
 | Crosstalk coefficients | up to 5×10⁻⁴; not applied below 4×10⁻⁵; edge effect ~5 ADU | Euclid VIS | arXiv:2503.15303 | Sect. 3.4 |
 | Non-linearity | 2–4% near saturation; none applied < 300 ADU | Euclid VIS | arXiv:2503.15303 | Sect. 3.6 |

@@ -17,7 +17,7 @@ which is the case for every extragalactic foreground.
 
 **Mechanism.** A quadratic lensing estimator applied to a masked sky returns a misnormalised
 convergence. The correction is a ratio of simulated spectra evaluated with the galaxy mask and
-depends on the overlap region (`physics-and-methods.md` §2.4).
+depends on the overlap region (`physics-and-methods.md`, Sect. 2.4).
 
 **Size.** Omitting it lowered S_8 by 0.6σ in unWISE × Planck (Farren 2023, arXiv:2309.05659,
 appendix table) and by ΔS_8 = 0.015 (about 0.5σ) in DESI LRG × Planck PR3 (Sailer 2024,
@@ -34,7 +34,7 @@ arXiv:2407.04607) agree to < 0.2σ on the lensing amplitude of each LRG bin and 
 four bins together (arXiv:2407.04606) [src: Sect. 3.3].
 
 **Mitigation and validation.** Monte Carlo correction per mask combination (480 Gaussian
-simulations for Planck in arXiv:2309.05659 [src: same appendix]); marginalisation of
+simulations for Planck in arXiv:2309.05659 [src: App. I]); marginalisation of
 the residual normalisation uncertainty in the covariance (arXiv:2309.05659) [src].
 
 **Referee expects.** A statement that the correction was computed for the actual overlap, and
@@ -114,7 +114,7 @@ without profile hardening (arXiv:2410.10808) [src: Sect. V.3].
 
 **Mechanism.** A Compton-y map retains CIB and radio emission, and both correlate with any
 low-redshift tracer and with lensing. The sign differs: dusty and radio emission add positive
-flux where the tSZ is a decrement below 217 GHz.
+flux where the tSZ is a decrement, below the tSZ null frequency.
 
 **Size.**
 - CIB "has a substantial impact" on DES Y3 shear × y and "must be taken into account" (Gatti
@@ -175,7 +175,7 @@ overlap with the lensing kernel, so the fit compensates by raising S_8 (arXiv:23
 **Size.** Adding spectroscopic data to the unWISE cross-correlation redshifts raised S_8 by
 0.8σ, the largest single term of the reanalysis; the Blue-sample dN/dz changed by 0.74σ and
 Green by 0.14σ. Switching to a principal-component marginalisation of dN/dz moved S_8 by −0.2σ
-and widened the posterior by ~15% (arXiv:2309.05659, appendix table) [src]. In galaxy lensing the
+and widened the posterior by ~15% (arXiv:2309.05659) [src: App. I, Table 10]. In galaxy lensing the
 same class of error drove the old low S_8 values [sec: `cosmo-weak-lensing` SKILL.md].
 
 **How the marginalisation is built** (arXiv:2309.05659) [src: Sect. 8.2]. 1000 Gaussian
@@ -247,7 +247,7 @@ sections "Volume effect estimation" and "Planck PR3 reanalysis") [src].
 | DESI LRG, HEFT (arXiv:2407.04607) [src: Sect. 5.1, table of scale cuts] | 20 ≤ ℓ < 600 (Planck), 44 ≤ ℓ < 600 (ACT) | 79 ≤ ℓ < 600 | ℓ_min where beyond-Limber corrections are below 1%; ACT mean field exceeds the signal at ℓ ≲ 30; ℓ_max ≃ χ(z_min) × 0.6 h/Mpc for the first bin |
 | DESI Legacy galaxies × ACT DR6, linear bias (Qu 2024, arXiv:2410.10808) [src: Sect. III.1] | 50 ≤ ℓ ≤ 154, 221, 283 (k_max = 0.15, 0.16, 0.17 h/Mpc) | same | ℓ_max where the non-linear part of P_mm reaches 10% of the linear one; a tighter cut moves S_8 by 0.03σ, linear against non-linear modelling by 0.19σ (PR3 reanalysis) |
 | Quaia × ACT DR6, linear bias (arXiv:2507.08798) [src: Sect. IV.1] | 32 ≤ ℓ ≤ 316 (bin 1), 526 (bin 2) | same | first bandpower dropped for systematics and the mean field; k_max = 0.15 h/Mpc at the mean redshift of the bin |
-| DESI LRG, linear theory (same) | ℓ_max = 178, 243, 243 for bins 2–4; bin 1 dropped | same | ℓ_max ≃ χ(z_eff) × 0.1 h/Mpc, where linear and non-linear P_mm differ by ≤ 1.5% |
+| DESI LRG, linear theory (arXiv:2407.04607) [src: Sect. 5.1] | ℓ_max = 178, 243, 243 for bins 2–4; bin 1 dropped | same | ℓ_max ≃ χ(z_eff) × 0.1 h/Mpc, where linear and non-linear P_mm differ by ≤ 1.5% |
 
 In the unWISE analysis the higher-order bias terms are at most 7% (Blue) and 5% (Green) of
 C_ℓ^gg and at most 2% of C_ℓ^κg; dropping them all moves S_8 by ≃ 0.1σ. The in-range
@@ -480,7 +480,7 @@ magnification, with the same failure modes as §4–7.
   (arXiv:2309.05659) [src: Sect. 6].
 - Bootstrap over objects underestimates velocity-reconstruction noise for dense samples: the
   fitted noise rescalings for DESI LRGs are 1.13 (90 GHz), 1.09 (150 GHz) and 1.29 (90 × 150)
-  (arXiv:2604.04867, table of LRG fits) [src].
+  (arXiv:2604.04867) [src: Sect. V.2, table of LRG fits].
 - kSZ and secondary power from spectra alone depend on the assumed tSZ–CIB correlation (Chaubal
   2026, arXiv:2601.20551) [src].
 

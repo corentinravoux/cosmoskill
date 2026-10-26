@@ -111,7 +111,7 @@ arXiv:1807.06207) [src]. LFI 2018 improved calibration and ADC
 non-linearity corrections (Planck 2018 II, arXiv:1807.06206) [src]. NPIPE
 processes LFI and HFI jointly and ships 600 end-to-end simulations with full
 time-domain processing, plus the raw and processed TOD and the software
-(Planck Collaboration 2020, arXiv:2007.04997) [src].
+(Planck Collaboration 2020, arXiv:2007.04997) [src: Sects. 5, 7.7].
 
 **ACT DR6** (arXiv:2503.14451). The noise model is built from the data, which
 contains the sky; so a first map is subtracted before the noise model is
@@ -131,23 +131,23 @@ this table keeps catalogue- and map-level content.
 
 | Release | Content relevant to pipelines | Source |
 |---|---|---|
-| SDSS DR16 (eBOSS) | DR16Q: 750,414 quasars, VI for 320,161 spectra; LSS catalogues: 343,708 quasars at 0.8 < z < 2.2 over 4808 deg², 174,816 eBOSS LRGs combined with BOSS into 377,458 over 9493 deg² | arXiv:2007.09001, arXiv:2007.09000 [src] |
+| SDSS DR16 (eBOSS) | DR16Q: 750,414 quasars, VI for 320,161 spectra; LSS catalogues: 343,708 quasars at 0.8 < z < 2.2 over 4808 deg², 174,816 eBOSS LRGs combined with BOSS into 377,458 over 9493 deg² | arXiv:2007.09001, arXiv:2007.09000 [src: abstract of each; arXiv:2007.09000, Sects. 5.2 and 5.7] |
 | SDSS DR17 | last SDSS-IV release; eBOSS main sample was complete in DR16 | arXiv:2112.02026 [src] |
 | BOSS DR12 | target selection and LSS catalogues with randoms; MKSAMPLE code | arXiv:1509.06529 [src] |
-| DESI EDR | Survey Validation spectra: 466,447 MWS, 428,758 BGS, 227,318 LRG, 437,664 ELG, 76,079 QSO targets, plus 137,148 secondary; LSS catalogues; intermediate products | arXiv:2306.06308 [src] |
-| DESI DR1 | first 13 months of the main survey plus SV reprocessed: 18.7M confident redshifts (13.1M galaxies, 1.6M quasars, 4M stars); spectra, redshift catalogues, LSS catalogues, VACs | arXiv:2503.14745 [src] |
-| DES DR2 | ~5000 deg² grizY; 691M objects in 10,169 co-add tiles from 76,217 exposures; median PSF FWHM g 1.11″ to z 0.83″; uniformity < 3 mmag vs Gaia; astrometric precision ~27 mas; S/N = 10 depth i = 23.8 | arXiv:2101.05765 [src] |
-| DES Y3 Gold | ~390M objects; maps of footprint, masks, depth, conditions, foregrounds | arXiv:2011.03407 [src] |
-| DES Y6 Gold | 669M objects; i ≈ 23.4 at S/N ~10; uniformity < 2 mmag; star–galaxy efficiency 98.6%, contamination 0.8% at 17.5 < i < 22.5; 448M galaxies after cuts; survey-property maps | Bechtol et al. 2025, arXiv:2501.05739 [src] |
-| HSC-SSP PDR3 | 670 deg² at full depth (~26 mag, 5σ), 1470 deg² including partial; small-scale sky subtraction before detection cut false detections | Aihara et al. 2022, arXiv:2108.13045 [src] |
-| KiDS DR4 | 1006 deg² of ugri tiles with weight maps, masks, nine-band forced photometry with VIKING, photo-z | arXiv:1902.11265 [src] |
-| KiDS DR5 | 1347 deg², i band re-observed (+0.4 mag); 126,085 sources with spectroscopic and photometric redshifts for calibration | arXiv:2503.19439 [src] |
-| Legacy Surveys | g, r, z over a ~14,000 deg² design footprint plus WISE forced photometry; Tractor catalogue; software released with data | arXiv:1804.08657 [src] |
-| Euclid Q1 | 63.1 deg² at wide-survey depth; ~30M objects; ~3M validated red-grism spectra; early pipeline versions; masks | arXiv:2503.15302, arXiv:2503.15307 [src] |
-| Rubin DP1 | 1792 LSSTComCam exposures over 48 nights; ~15 deg² in seven fields; images, co-adds, difference images, catalogues, survey-property maps; ~2.3M objects; ~3.5 TB on the Rubin Science Platform | arXiv:2603.23786 [src] |
-| Planck NPIPE | frequency maps, raw and processed TOD, software, 600 end-to-end simulations | arXiv:2007.04997 [src] |
-| ACT DR6 | maps at 98, 150, 220 GHz over 19,000 deg², null-test splits, depth-1 maps, matched-filtered and ILC maps; on LAMBDA | arXiv:2503.14451 [src] |
-| SPT-3G D1 | Main-field maps at 95, 150, 220 GHz from 2019–2020 over 4% of the sky, public | arXiv:2603.20163 [src] |
+| DESI EDR | Survey Validation spectra: 466,447 MWS, 428,758 BGS, 227,318 LRG, 437,664 ELG, 76,079 QSO targets, plus 137,148 secondary; LSS catalogues; intermediate products | arXiv:2306.06308 [src: abstract] |
+| DESI DR1 | first 13 months of the main survey plus SV reprocessed: 18.7M confident redshifts (13.1M galaxies, 1.6M quasars, 4M stars); spectra, redshift catalogues, LSS catalogues, VACs | arXiv:2503.14745 [src: abstract] |
+| DES DR2 | ~5000 deg² grizY; 691M objects in 10,169 co-add tiles from 76,217 exposures; median PSF FWHM g 1.11″ to z 0.83″; uniformity < 3 mmag vs Gaia; astrometric precision ~27 mas; S/N = 10 depth i = 23.8 | arXiv:2101.05765 [src: abstract] |
+| DES Y3 Gold | ~390M objects; maps of footprint, masks, depth, conditions, foregrounds | arXiv:2011.03407 [src: abstract] |
+| DES Y6 Gold | 669M objects; i ≈ 23.4 at S/N ~10; uniformity < 2 mmag; star–galaxy efficiency 98.6%, contamination 0.8% at 17.5 < i < 22.5; 448M galaxies after cuts; survey-property maps | Bechtol et al. 2025, arXiv:2501.05739 [src: abstract] |
+| HSC-SSP PDR3 | 670 deg² at full depth (~26 mag, 5σ), 1470 deg² including partial; small-scale sky subtraction before detection cut false detections | Aihara et al. 2022, arXiv:2108.13045 [src: abstract] |
+| KiDS DR4 | 1006 deg² of ugri tiles with weight maps, masks, nine-band forced photometry with VIKING, photo-z | arXiv:1902.11265 [src: abstract] |
+| KiDS DR5 | 1347 deg², i band re-observed (+0.4 mag); 126,085 sources with spectroscopic and photometric redshifts for calibration | arXiv:2503.19439 [src: abstract] |
+| Legacy Surveys | g, r, z over a ~14,000 deg² design footprint plus WISE forced photometry; Tractor catalogue; software released with data | arXiv:1804.08657 [src: abstract] |
+| Euclid Q1 | 63.1 deg² at wide-survey depth; ~30M objects; ~3M validated red-grism spectra; early pipeline versions; masks | arXiv:2503.15302, arXiv:2503.15307 [src: abstract of each] |
+| Rubin DP1 | 1792 LSSTComCam exposures over 48 nights; ~15 deg² in seven fields; images, co-adds, difference images, catalogues, survey-property maps; ~2.3M objects; ~3.5 TB on the Rubin Science Platform | arXiv:2603.23786 [src: abstract] |
+| Planck NPIPE | frequency maps, raw and processed TOD, software, 600 end-to-end simulations | arXiv:2007.04997 [src: abstract] |
+| ACT DR6 | maps at 98, 150, 220 GHz over 19,000 deg², null-test splits, depth-1 maps, matched-filtered and ILC maps; on LAMBDA | arXiv:2503.14451 [src: abstract] |
+| SPT-3G D1 | Main-field maps at 95, 150, 220 GHz from 2019–2020 over 4% of the sky, public | arXiv:2603.20163 [src: abstract] |
 
 ## 5. Public pipeline software
 <!-- key: public-pipeline-software -->
@@ -182,13 +182,13 @@ Versions, maintenance and installation are in `cosmo-software-ecosystem`.
   deepens the extracted sample [src: arXiv:2503.15302, Sect. 9].
 - **4MOST CRS.** Bright galaxies, LRGs, ELGs and quasars, about 8 million
   objects over 0.15 < z < 3.5 in the design (**forecast**; Richard et al. 2019,
-  arXiv:1903.02474) [src]; target catalogues validated on Legacy Surveys
-  DR10.1 for 5.4 million redshifts over ~5700 deg² (arXiv:2510.02449) [src].
+  arXiv:1903.02474) [src: abstract]; target catalogues validated on Legacy Surveys
+  DR10.1 for 5.4 million redshifts over ~5700 deg² (arXiv:2510.02449) [src: abstract].
 - **PFS.** 2400 fibres over 380–1260 nm; the cosmology survey targets ELGs at
-  0.8 < z < 2.4 in the design (**forecast**; Takada et al. 2014, arXiv:1206.0737) [src],
+  0.8 < z < 2.4 in the design (**forecast**; Takada et al. 2014, arXiv:1206.0737) [src: abstract],
   in the regime of more targets than fibres (arXiv:1912.06583) [src].
 - **DESI second phase.** Lyman-break galaxies at z ~ 2–4.5 with
-  network-based decontamination (arXiv:2608.10080) [src].
+  network-based decontamination (arXiv:2608.10080) [src: abstract].
 - **Simons Observatory.** An automated scheduler turns scan strategies into
   observing scripts and a workflow system runs daily reduction on site (Guan
   et al. 2024, arXiv:2406.10905) [src]; for the small-aperture telescopes, a

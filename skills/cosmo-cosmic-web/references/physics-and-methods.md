@@ -39,7 +39,7 @@ sections 6 and 7.
 times are dominated by tenuous filaments and sheets that merge, so that
 today's web has fewer but much more massive structures; long, almost straight
 filaments exceed 100 h⁻¹Mpc and bridge massive clusters (arXiv:1401.7866)
-[src]. In the multi-stream (phase-space) description, voids are single-stream
+[src: abstract]. In the multi-stream (phase-space) description, voids are single-stream
 regions, walls have three or a few streams, haloes sit at filament crossings
 and filaments at wall crossings (Ramachandra & Shandarin 2015,
 arXiv:1412.7768) [src].
@@ -69,7 +69,7 @@ figure]. The families and their defining choices:
 | Topological (watershed, SpineWeb) | watershed basins of the density field; separatrices give walls and the spine (filaments and nodes) | — | Aragón-Calvo et al. 2010, arXiv:0809.5104 |
 | Stochastic (Bisous) | marked point process of interacting cylinders fitted by MCMC; returns filament-detection and orientation fields, then spines | filament radius prior 0.4–1.0 h⁻¹Mpc; visit-map threshold 0.05; orientation strength > 0.7 [src: Sect. 4.2] | Tempel et al. 2014, arXiv:1308.2533 |
 | Graph (adapted MST) | minimal spanning tree on group centroids, then galaxies within distance r; "tendrils" and isolated void galaxies in a second pass | linking length chosen so that ≥ 90% of groups with M ≥ 10¹¹ M☉ are in filaments [src: Sect. 4.1] | Alpaslan et al. 2014, arXiv:1311.1211 |
-| Node-to-node (FINE) | highest-density paths between nodes on a Voronoi density | nodes M > 5 × 10¹³ M☉, skeleton threshold 5 times the mean Voronoi density [src: Sect. 4.3] | Libeskind et al. 2018, Sect. 4.3 |
+| Node-to-node (FINE) | highest-density paths between nodes on a Voronoi density | nodes M > 5 × 10¹³ M☉, skeleton threshold 5 times the mean Voronoi density [src: Sect. 4.3] | Libeskind et al. 2018, arXiv:1705.03021, Sect. 4.3 |
 | Phase-space (ORIGAMI) | shell-crossing along 3, 2, 1, 0 orthogonal axes = halo, filament, wall, void | dynamical, density-independent; needs particle Lagrangian positions [src] | Falck et al. 2012, arXiv:1201.2353 |
 | Phase-space (MSWA) | number of streams; voids single-stream | simulations only [src] | Ramachandra & Shandarin 2015, arXiv:1412.7768 |
 | Linearised Hessian (CLASSIC) | Lagrangian-perturbation linearisation of the density, then a Hessian classification | — | Libeskind et al. 2018, Sect. 4.7 |
@@ -141,7 +141,7 @@ are not directly comparable with another.
 | Measure | Definition as used | Example | Flag |
 |---|---|---|---|
 | Discrete web class | T-web (or V-web) class of the cell containing the galaxy or group | GAMA groups in voids, sheets, filaments, knots (Tojeiro et al. 2017, arXiv:1612.08595); SDSS DR18 sheets, filaments, clusters (Nandi & Pandey 2025, arXiv:2507.18614) | [src] |
-| Distance to skeleton features | 3D distance of each galaxy to the nearest node, filament and wall of a DisPerSE skeleton | GAMA, 0.03 ≤ z ≤ 0.25 (Kraljic et al. 2018, arXiv:1710.02676); SIMBA, z = 3–0 (Jego et al. 2025, arXiv:2509.18077) | [src] |
+| Distance to skeleton features | 3D distance of each galaxy to the nearest node, filament and wall of a DisPerSE skeleton | GAMA, 0.03 ≤ z ≤ 0.25 (Kraljic et al. 2018, arXiv:1710.02676); SIMBA, z = 3–0 (Jego et al. 2025, arXiv:2509.18077) | [src: abstract] |
 | Overdensity plus tidal anisotropy | δ₈ from a top-hat of 8 h⁻¹Mpc radius (500 random points per sphere); tidal torque q²_R from the eigenvalues of the tidal tensor of the density smoothed with a 5 h⁻¹Mpc Gaussian; α_R ≡ √(q²_R) (1 + δ_R)^(−n), with n = 1 and R = 4 R_200b in simulations (Paranjape et al.), and n = 0.55 at fixed R = 5 h⁻¹Mpc chosen to remove the δ₈–α₅ correlation in SDSS | Alam et al. 2019, arXiv:1801.04878 | [src: Sect. 3.3–3.4] |
 | Halo-scale tidal anisotropy | α at ~4 times the halo radius | Ramakrishnan et al. 2019, arXiv:1903.02007 | [src] |
 | Matched samples | compare filament and field galaxies at fixed stellar mass and, in addition, at fixed local galaxy density | SDSS DR8 (O'Kane et al. 2024, arXiv:2409.09028) | [src] |
@@ -161,7 +161,7 @@ shell-crossing on intergalactic scales detaches them (Aragón-Calvo, Neyrinck &
 Silk 2016, arXiv:1607.07881) [src]. Statistical decomposition: halo
 concentration, shape, velocity anisotropy and spin correlate with large-scale
 bias b₁ only through α, p(α, b₁, c) ≃ p(α) p(b₁|α) p(c|α), for 8 × 10¹¹ <
-M_vir/(h⁻¹M☉) < 5 × 10¹⁴ (arXiv:1903.02007) [src]. The halo-occupation view of
+M_vir/(h⁻¹M☉) < 5 × 10¹⁴ (arXiv:1903.02007) [src: abstract]. The halo-occupation view of
 assembly bias and its detections is in `cosmo-galaxy-halo-connection`.
 
 ## 5. Spin and shape alignments with the web
@@ -193,7 +193,7 @@ belong to `cosmo-weak-lensing`. This skill treats the alignment as a property
 of galaxy formation in the web. The two meet in Storck et al. (2024,
 arXiv:2409.13010): halo orientation relative to a filament changes by up to
 80% under changes of the non-linear environment at fixed initial patch, which
-they flag as a limit for intrinsic-alignment models [src].
+they flag as a limit for intrinsic-alignment models [src: abstract].
 
 ## 6. Gas in the web: methods
 <!-- key: gas-in-the-web-methods -->
@@ -260,7 +260,7 @@ the scale and the reliability of the web.
 |---|---|---|---|---|
 | Galaxy redshift survey | Bayesian forward modelling of initial conditions (BORG), then probabilistic web maps with propagated uncertainties | dynamic web elements, posterior probabilities per voxel | Leclercq et al. 2015, arXiv:1512.02242 | [src] |
 | Galaxy positions only, no density field | stochastic topological ranking of each object against matched randoms (ASTRA), 100 realisations per tracer and zone | per-object probabilities of void, sheet, filament, knot; thresholds on the rank r recalibrated from |r| = 0.9 to e.g. r ≤ −0.25 for voids to match the GAMA void volume fraction (59% at 4 h⁻¹Mpc smoothing) | Zapata-Zuluaga et al. 2026, arXiv:2604.01456 | [src: Sect. "The rank parameter r", Table 2] |
-| Spectro-photometric galaxies | probabilistic DisPerSE on miniJPAS + DESI, local filaments within 3 Mpc of each galaxy with M* > 10¹⁰ M☉ | galaxy connectivity to local filaments | Galárraga-Espinosa et al. 2025, arXiv:2506.15345 | [src] |
+| Spectro-photometric galaxies | probabilistic DisPerSE on miniJPAS + DESI, local filaments within 3 Mpc of each galaxy with M* > 10¹⁰ M☉ | galaxy connectivity to local filaments | Galárraga-Espinosa et al. 2025, arXiv:2506.15345 | [src: abstract] |
 | Peculiar velocities | Wiener filter or Hamiltonian Monte Carlo reconstruction of the velocity field, then V-web | attractors, repellers, voids and knots | Hoffman et al. 2017, arXiv:1702.02483 (Cosmicflows-2); Hollinger & Courtois 2026, arXiv:2606.13538 (CF4++ZOA) | [src] |
 | Lyα forest tomography | Wiener filtering, or constrained reconstruction of initial conditions with a fast gravity model (TARDIS) | eigenvalues and eigenvectors of the pseudo-deformation tensor | Horowitz et al. 2019, arXiv:1903.09049 | [src] |
 
@@ -279,9 +279,9 @@ tidal-tensor eigenvectors well enough to measure galaxy–web alignments at z ~
 2.5; CLAMATO-like data with 600 zCOSMOS-Deep galaxies would give 3σ limits
 only on extreme models with Δ⟨cos θ⟩ ~ 0.1, while > 10,000 galaxies (Subaru
 PFS) are needed for Δ⟨cos θ⟩ ~ 0.03 (Krolewski et al. 2017, arXiv:1612.00067,
-**forecast**) [src]. With 30 m-class telescope mocks, TARDIS eigenvalues
+**forecast**) [src: abstract]. With 30 m-class telescope mocks, TARDIS eigenvalues
 correlate with the truth at r = 0.95 and can be evolved to z = 0
-(arXiv:1903.09049) [src]. Tomography surveys, map-making and their data are in
+(arXiv:1903.09049) [src: abstract]. Tomography surveys, map-making and their data are in
 `cosmo-lyman-alpha`; constrained simulations of the local web (CLUES,
 BORG-2M++, Manticore, Hamlet-PM) are in `cosmo-simulations-mocks`.
 

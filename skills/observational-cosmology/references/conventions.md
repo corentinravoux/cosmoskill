@@ -31,8 +31,8 @@ P(k) defined via ⟨δ(k)δ*(k')⟩ = (2π)³ δ_D(k−k') P(k) is the usual LSS
 ## Redshift frames
 <!-- key: redshift-frames -->
 
-- Heliocentric vs CMB-frame redshift: matters at the 10⁻³ level — i.e. exactly
-  the PV signal. State which is used and where the conversion happens.
+- Heliocentric vs CMB-frame redshift: the difference is of the size of the PV
+  signal itself. State which is used and where the conversion happens.
 - Peculiar velocity sign convention (positive = receding) must be uniform.
 - For Lyα: observed λ, rest-frame λ_RF, and the Lyα line convention
   (1215.67 Å) — state whether vacuum or air wavelengths.

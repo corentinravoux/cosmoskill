@@ -14,8 +14,8 @@ arXiv:2512.03226 to arXiv:2512.03232.
 ## 0. Systematics by indicator — the qualitative list
 <!-- key: systematics-by-indicator-the-qualitative-list -->
 
-Folded on 2026-10-20 from the compilation of 2026-08-12/14, in which `[src]` meant "traced to the
-paper" and `[der]` "relabelled or derived, the paper does not quote fσ8".
+Folded on 2026-10-20 from the compilation of 2026-08-12/14, in which `src` meant "traced to the
+paper" and `der` "relabelled or derived, the paper does not quote fσ8".
 
 **Common to all.** Malmquist / selection bias, homogeneous vs inhomogeneous — the single largest
 source of disagreement between analyses (§2); log-distance vs velocity estimator bias (the
@@ -48,14 +48,15 @@ when sky coverage is partial.
 
 | Survey | Zero-point and its uncertainty | Anchor | Source | Flag |
 |---|---|---|---|---|
-| SDSS PV | uncertainty 0.004 dex, "not including cosmic variance or the error within CosmicFlows-III itself" | CF3, cross-checked with the 2M++ predicted zero-point | Howlett et al. 2022, arXiv:2201.03112 | [src] |
-| 2MTF vs 6dFGSv | relative difference < 0.02 dex | galaxies and groups in common | Qin et al. 2018, arXiv:1804.05520 | [src] |
+| SDSS PV | uncertainty 0.004 dex, "not including cosmic variance or the error within CosmicFlows-III itself" | CF3, cross-checked with the 2M++ predicted zero-point | Howlett et al. 2022, arXiv:2201.03112 | [src: abstract] |
+| 2MTF vs 6dFGSv | relative difference < 0.02 dex | galaxies and groups in common | Qin et al. 2018, arXiv:1804.05520 | [src: abstract] |
 | 2MTF vs CF3 | −0.016 ± 0.002 dex | galaxies in common | Qin et al. 2019, arXiv:1811.00822 | [src: abstract] |
-| DESI DR1 FP+TF | η_zp = 0.139 ± 0.007 | 93 Pantheon+/SH0ES SN Ia distances (137 light curves) matched through galaxy groups; direct host matches are only 4 (TF) + 41 (FP) | Carr et al. 2025, arXiv:2512.03232, §5 | [src] |
-| DESI DR1, value used in the field-level likelihood | σ_y = 0.005 | same paper, as quoted by Lai et al. | Lai et al. 2025, arXiv:2512.03229, §3.3 | [src] |
+| DESI DR1 FP+TF | η_zp = 0.139 ± 0.007 | 93 Pantheon+/SH0ES SN Ia distances (137 light curves) matched through galaxy groups; direct host matches are only 4 (TF) + 41 (FP) | Carr et al. 2025, arXiv:2512.03232 | [src: Sect. V.5 for η_zp; Sect. IV for the matches] |
+| DESI DR1, value used in the field-level likelihood | σ_y = 0.005 | same paper, as quoted by Lai et al. | Lai et al. 2025, arXiv:2512.03229 | [src: Sect. 3.3] |
 
-The 0.007 and 0.005 are both read in the arXiv sources of companion papers and differ; check which
-version of the zero-point paper a given analysis used before quoting either.
+The 0.007 (error on η_zp, arXiv:2512.03232, Sect. V.5) and the 0.005 (σ_y as quoted from that
+paper by arXiv:2512.03229, Sect. 3.3) are both read in the arXiv versions of companion papers and
+differ; check which version of the zero-point paper a given analysis used before quoting either.
 
 **Propagation.** The zero-point uncertainty is fully correlated between all objects: DESI adds
 σ²_η,zp to *every* element of the η covariance (and an extra common term for TF objects) [src:
@@ -71,12 +72,12 @@ impact on the velocity power spectrum" in the Fisher study of Howlett, Staveley-
   zeropoint between data and model" is subtracted (Springob et al. 2016, arXiv:1511.04849) [src: abstract].
 - CF4: a zero-point **dipole** of 0.087 ± 0.019 mag in the TF W1 sample (4.1 ± 0.9 % in H0; odds
   877:1) and 0.049 ± 0.013 mag in Pantheon+ (2.3 ± 0.6 %), which a radially varying velocity dipole
-  explains as "local flow features (or possibly systematics)" (Stiskalek et al. 2025,
-  arXiv:2509.14997) [src]. With velocity corrections applied, the CF4 H0 anisotropy "is strongly
+  explains as "local flow features (or possibly systematics)" (Stiskalek et al. 2025, arXiv:2509.14997)
+[src: abstract]. With velocity corrections applied, the CF4 H0 anisotropy "is strongly
   reduced" (Salzano et al. 2025, arXiv:2512.02526) [src].
 - CF4 internal scale: the catalogue is "compatible with" H0 = 74.6 ± 0.8 (stat) with "a large
-  potential systematic error of ~3 km/s/Mpc" (Tully et al. 2023, arXiv:2209.11238); 75.0 ± 0.1 is
-  the value that makes its velocities self-consistent (arXiv:2512.03168) [src]. Using another H0 to
+  potential systematic error of ~3 km/s/Mpc" (Tully et al. 2023, arXiv:2209.11238, abstract); 75.0 ± 0.1 is the value that makes its velocities
+self-consistent (arXiv:2512.03168) [src: abstract of each]. Using another H0 to
   turn CF4 distances into velocities injects a monopole.
 
 **Mitigation.** Marginalise the zero-point with its real prior width; make the bulk-flow estimator
@@ -102,7 +103,7 @@ selection is made on linewidth, Nusser & Davis 1994 (arXiv:astro-ph/9407100) [sr
 
 **Size — the largest quantified systematic in the field.** In the unified framework of Stiskalek
 2025 (arXiv:2509.20235, §5) the inhomogeneous term is modelled through the bias b1 (and optionally
-b2) of each velocity tracer relative to the 2M++ density:
+b2) of each velocity tracer relative to the 2M++ density (values from arXiv:2509.20235, Sect. 5):
 
 | Sample | b2 preferred | Shift in S8, linear → quadratic bias | Flag |
 |---|---|---|---|
@@ -117,14 +118,14 @@ against a statistical uncertainty of ~0.03; the joint TF + SN result moves only 
 self-consistent at the field level", because the velocity field is still a linear map of a linearly
 biased density, and treats it "as a sensitivity test" [src: all from arXiv:2509.20235, §5]. In fσ8
 (his Table 1): 6dF FP moves from fσ8L = 0.379 ± 0.016 to **0.301 ± 0.015** under the quadratic
-treatment, SDSS FP from 0.412 to 0.373, while the TFR and SN samples barely move [sec: Table 1 as
-read for the 2026-08 compilation; folded on 2026-10-20 from the compilation of 2026-08-12/14, in
-which `[src]` meant "traced to the paper" and `[der]` "relabelled or derived, the paper does not
-quote fσ8"].
+treatment, SDSS FP from 0.412 ± 0.016 to 0.373 ± 0.015, and the joint TFR + SNe fσ8 is 0.409 ±
+0.018 under the quadratic variant [src: arXiv:2509.20235, Table 1; Sect. 6 for the linear SDSS FP
+value]. The paper puts the quadratic 6dF FP value "in 7.8σ tension with Planck" [src: Sect. 5].
 
 **Why FP is exposed.** Early types live in the densest regions (largest b1), so the line-of-sight
 density prior matters most for them [src: arXiv:2509.20235, §5]; and their per-object distance error
-is the largest (26 % in DESI DR1, 23 % in SDSS PV) [src: arXiv:2512.03226, arXiv:2201.03112].
+is the largest (26 % in DESI DR1, arXiv:2512.03226 [src: abstract]; 23 % in SDSS PV, arXiv:2201.03112
+[src: abstract]).
 
 **Mitigation.** Work in η where the method allows (the DESI DR1 momentum spectrum converts η to v first, arXiv:2512.03231 eq. 57); forward-model distances with an explicit prior
 (VIRBIUS, arXiv:1512.04534; Boruah et al. 2022, arXiv:2111.15535); for two-point statistics, fit the
@@ -162,8 +163,7 @@ scatter of the relation, so the mean η of the selected sample is not zero and d
   arXiv:2604.12714) [src: abstract]. A velocity tracer that over-samples clusters over-weights virialised
   motions.
 
-**Mitigation and validation.** End-to-end mocks with the survey selection (675 for DESI DR1,
-arXiv:2512.03228; 2 048 for SDSS PV, arXiv:2201.03112); a redshift cut where the sample stops being
+**Mitigation and validation.** End-to-end mocks with the survey selection (675 for DESI DR1, arXiv:2512.03228; 2 048 for SDSS PV, arXiv:2201.03112) [src: abstract of each]; a redshift cut where the sample stops being
 complete.
 
 ---
@@ -180,9 +180,9 @@ field acquires a spurious correlation with density that no random-scatter model 
   separate FP fits per richness bin [src: arXiv:2201.03112].
 - DESI DR1 FP: an excess of small-scale clustering of η led to the correction ⟨η_group⟩ − ⟨η_field⟩
   = −0.0145 log10(N_group) for N_group < 71, −0.0268 otherwise (χ²/dof = 16.3/16); groups built from
-  pairs within r⊥ < 1.75 and r∥ < 8.5 h⁻¹Mpc; the trend has the same sign as in SDSS and "roughly
-  half" the amplitude [src: arXiv:2512.03226, §4]. Even after it, the momentum power spectrum is
-  enhanced at k > 0.1 h Mpc⁻¹ and is fitted only below that [src: arXiv:2512.03231].
+  pairs within r⊥ < 1.75 and r∥ < 8.5 h⁻¹Mpc; the trend has the same sign as in SDSS and "roughly half" the amplitude [src: arXiv:2512.03226,
+Sect. 5.2.3, Eq. 16]. Even after it, the momentum power spectrum is
+  enhanced at k > 0.1 h Mpc⁻¹ and is fitted only below that [src: arXiv:2512.03231, Sects. 6.1 and 8].
 - DESI DR1 TF: "excess correlation" between TF velocities at z > 0.05, seen by all three estimators
   and not reproduced by the mocks ("systematics not captured by the mocks, such as the environmental
   dependence"); all TF velocities at z > 0.05 were removed, leaving 2 929 of 6 806 [src:
@@ -193,10 +193,10 @@ field acquires a spurious correlation with density that no random-scatter model 
   statistics only "on scales larger than ~10 h⁻¹Mpc"; below that, residuals correlated with
   structural properties, star-formation history and environment produce "spurious correlations with
   the galaxy density field"; adding SFR, gas mass and stellar mass to the relations mitigates it,
-  mostly for late types (Dumerchat et al. 2026, arXiv:2602.23033) [src].
+  mostly for late types (Dumerchat et al. 2026, arXiv:2602.23033) [src: abstract].
 
-**Mitigation.** Scale cuts (24 h⁻¹Mpc lower bound in configuration space, k ≤ 0.1 for the momentum
-spectrum, in DESI DR1); environment terms in the relation; splitting by indicator as a null test.
+**Mitigation.** Scale cuts (24 h⁻¹Mpc lower bound in configuration space, arXiv:2512.03230, Sect.
+4.2; k ≤ 0.1 for the momentum spectrum, arXiv:2512.03231, Sect. 8, in DESI DR1); environment terms in the relation; splitting by indicator as a null test.
 
 ---
 
@@ -210,7 +210,7 @@ non-linear motions; σ_u is degenerate with fσ8.
 
 | Statement | Value | Source | Flag |
 |---|---|---|---|
-| σ_u from N-body | ≈ 13 h⁻¹Mpc at z = 0 (valid to k ≤ 0.2 h Mpc⁻¹) | arXiv:1312.1022 | [src] |
+| σ_u from N-body | ≈ 13 h⁻¹Mpc at z = 0 (valid to k ≤ 0.2 h Mpc⁻¹) | arXiv:1312.1022 | [src: Sect. 2.3.1] |
 | σ_u measured on 2MTF | 6.75 +1.74/−6.75 h⁻¹Mpc | Howlett et al. 2017, as quoted in arXiv:2303.01198, Sect. 5.1 | [sec] |
 | σ_u preferred by SDSS PV mocks | 19–23 h⁻¹Mpc tested, 21 or 22 adopted (the paper uses both) | Lai et al. 2023, arXiv:2209.04166 | [src: Sect. 5.3, 6.1] |
 | fσ8 variation for σ_u in 13–15 h⁻¹Mpc | < ~2 %; −9 % to +6 % for a Gaussian prior centred anywhere in 5–25 h⁻¹Mpc (width 10); insensitive to the prior width | arXiv:2303.01198 | [src: Sect. 5.1, Fig. 12] |
@@ -218,9 +218,9 @@ non-linear motions; σ_u is degenerate with fσ8.
 | Systematic quoted for SDSS PV (field-level, central finite difference, δσ_u = 1 h⁻¹Mpc) | ±0.009 | arXiv:2209.04166 | [src: Sect. 6.1, eqs. 45–47] |
 | Systematic quoted for the 6dFGS joint RSD+PV fit | ±0.061, larger than the statistical ±0.052; σ_u contributes only 1.09 × 10⁻³ — the term is the redshift-dependent bias α_b (6.06 × 10⁻²); k_max 1.69 × 10⁻³, σ_g 2.84 × 10⁻³ | arXiv:2004.06399 | [src: Table 5, Sect. 5.1.1] |
 | Linear instead of non-linear P_θθ in the velocity covariance | fσ8 biased by (−2.7 ± 0.06) % on 27 ZTF mocks, because linear P overestimates small-scale power and hence the variance | arXiv:2303.01198 | [src: Sect. 5.2] |
-| Linear template for velocity correlation functions | 5.2 % low on HR4 mocks | Tonegawa et al. 2024, arXiv:2309.14457, as reported in the 2026-08 compilation (`results.md` §0) | [sec] |
+| Linear template for velocity correlation functions | 5.2 % low on HR4 mocks at r_min = 21 h⁻¹Mpc | Tonegawa et al. 2024, arXiv:2309.14457 | [src: Sect. 4] |
 
-The three "preferred" σ_u values span a factor of three. A result that fixes σ_u must show the
+The three "preferred" σ_u values differ widely. A result that fixes σ_u must show the
 fσ8(σ_u) slope; a result that samples it must show the prior.
 
 **Mitigation.** Sample σ_u with interpolated covariances (flip, arXiv:2501.16852); perturbative or
@@ -242,11 +242,13 @@ arXiv:2512.03229].
 - Dominant *statistical* term of the tightest results is not the velocities but the galaxy field:
   "the uncertainty dominated by the variance of the 2M++ galaxy field" (σ8 of the galaxies) [src:
   arXiv:2509.20235].
-- σ8 normalisation: these analyses return the **linear** σ8; the offset to the non-linear convention
-  is 6.5 % in Carrick et al. 2015 (`results.md` §0b) [sec].
-- External flow: a residual dipole of 159 ± 23 to 171 ± 11 km/s is fitted as a free "V_ext"
+- σ8 normalisation: these analyses return the **linear** σ8; Carrick et al. 2015 give both
+  conventions, Ω_m^0.55σ8,lin = 0.401 ± 0.024 and fσ8 = 0.427 ± 0.026 with the non-linear σ8
+  (arXiv:1504.04627, abstract and Sect. 4.3; `results.md` §0b).
+- External flow: a residual dipole is fitted as a free "V_ext" — 159 ± 23 km/s in Carrick et al. 2015
+  (arXiv:1504.04627), 171 ± 11 km/s in Boruah et al. 2020 (arXiv:1912.09383) [src: abstract of each]
   (`results.md` §3b); Watkins et al. 2025 (arXiv:2512.03168) argue it "increases monotonically with
-  scale", against the usual assumption of a spatially uniform external flow [src].
+  scale", against the usual assumption of a spatially uniform external flow [src: abstract].
 
 ---
 
@@ -275,14 +277,14 @@ definition of ψ1, ψ2 themselves.
   it; the suppression grows with halo mass (Chuang et al. 2026, arXiv:2602.04485) [src].
 - Bulk-flow errors from analytic estimators are "typically underestimated" relative to
   mock-calibrated ones (arXiv:2306.11269) [src].
-- Observer position: a Local-Group-like observer changes the bulk flow by ~20 % at R ≤ 50 h⁻¹Mpc
-  (arXiv:1802.03391) [src].
+- Observer position: a Local-Group-like observer changes the bulk flow by ~20 % at R ≤ 50 h⁻¹Mpc (arXiv:1802.03391) [src: abstract].
 - Coherent velocities correlate SN magnitudes: neglecting the velocity covariance shifts H0 by about
   1.0 km/s/Mpc in ZTF DR2 simulations and underestimates its error (Carreres et al. 2025,
   arXiv:2405.20409); the zero-point error of a low-z anchor is underestimated by a factor ~2
   (arXiv:astro-ph/0512159); H0 errors from nearby sirens can double (Blake & Turner 2025,
-  arXiv:2509.03101) [src]. Group-averaged redshifts recover ~135–145 km/s of scatter (Peterson et
-  al. 2024, arXiv:2408.14560) [src]. These belong to `cosmo-supernovae` and
+  arXiv:2509.03101) [src: abstract of each]. Group averaging should improve redshift precision by ~135 km/s in
+simulations, and on Pantheon+ it improves the Hubble-residual scatter by the equivalent of 145 km/s
+(Peterson et al. 2024, arXiv:2408.14560) [src: abstract]. These belong to `cosmo-supernovae` and
   `cosmo-distance-ladder-h0`.
 
 ---
@@ -290,14 +292,13 @@ definition of ψ1, ψ2 themselves.
 ## 9. Model and convention systematics
 <!-- key: model-and-convention-systematics -->
 
-- Velocity estimator: v = cz − H0 D overestimates by ~100 km/s at z ~ 0.04 (arXiv:1405.0105) [src];
+- Velocity estimator: v = cz − H0 D overestimates by ~100 km/s at z ~ 0.04 (arXiv:1405.0105) [src: abstract];
   the estimators that drop the "−1" term of the full expression underestimate velocities
   increasingly with redshift [src: arXiv:2303.01198, appendix].
 - Velocity bias: neglecting it "has the potential to bias constraints on the growth rate by over 5σ"
   for next-generation surveys (**forecast**, arXiv:1609.08247) [src].
 - FLRW modelling of magnitude fluctuations: against full numerical relativity the growth-rate offset
-  at z ≲ 0.2 is "sub-dominant to the statistical error of current datasets" (Nguyen, Blake &
-  Macpherson 2026, arXiv:2606.18437) [src].
+  at z ≲ 0.2 is "sub-dominant to the statistical error of current datasets" (Nguyen, Blake & Macpherson 2026, arXiv:2606.18437) [src: abstract].
 - Fit-range dependence: in the DESI DR1 correlation-function analysis fσ8 trends with the lower
   bound of the fit range, within the statistical error [src: arXiv:2512.03230, §5].
 
@@ -307,10 +308,13 @@ definition of ψ1, ψ2 themselves.
 <!-- key: budgets-read-analysis-by-analysis -->
 
 One table per analysis, read in the body this session; the place read is in each flag. fσ8 values
-are at the paper's z_eff (0.07 for DESI DR1) and against the paper's own fiducial.
+are at the paper's z_eff (0.07 for DESI DR1, arXiv:2512.03230, Sect. 2.2.2) and against the paper's
+own fiducial.
 
 ### DESI DR1, maximum-likelihood fields (Lai et al. 2025, arXiv:2512.03229)
 <!-- key: desi-dr1-maximum-likelihood-fields-lai-et-al -->
+
+Paper: arXiv:2512.03229; the place read is in the Flag column.
 
 | Item | What the paper did or found | Flag |
 |---|---|---|
@@ -326,6 +330,8 @@ are at the paper's z_eff (0.07 for DESI DR1) and against the paper's own fiducia
 ### DESI DR1, density and momentum power spectra (Qin et al. 2025, arXiv:2512.03231)
 <!-- key: desi-dr1-density-and-momentum-power-spectra-qin -->
 
+Paper: arXiv:2512.03231; the place read is in the Flag column.
+
 | Item | What the paper did or found | Flag |
 |---|---|---|
 | Model and nuisances | 1-loop model with 13 parameters, reduced to 5 on mocks: fσ8 ∈ (0, 1.5], b1σ8 ∈ [0, 3], b2σ8 ∈ [−5, 5], σ²_vT, σ²_vS ∈ (0, 350²], flat; b1, b2 and the dispersions shared by density and momentum | [src: Sect. 5.1] |
@@ -335,6 +341,8 @@ are at the paper's z_eff (0.07 for DESI DR1) and against the paper's own fiducia
 
 ### DESI DR1, galaxy and momentum correlation functions (Turner et al. 2025, arXiv:2512.03230)
 <!-- key: desi-dr1-galaxy-and-momentum-correlation -->
+
+Paper: arXiv:2512.03230; the place read is in the Flag column.
 
 | Item | What the paper did or found | Flag |
 |---|---|---|
@@ -346,6 +354,8 @@ are at the paper's z_eff (0.07 for DESI DR1) and against the paper's own fiducia
 
 ### DESI DR1 catalogues and zero-point (arXiv:2512.03226, arXiv:2512.03227, arXiv:2512.03232)
 <!-- key: desi-dr1-catalogues-and-zero-point-arxiv-2512 -->
+
+Papers: arXiv:2512.03226, arXiv:2512.03227, arXiv:2512.03232; the paper and place read are in the Flag column.
 
 | Item | What the paper did or found | Flag |
 |---|---|---|
@@ -362,6 +372,8 @@ are at the paper's z_eff (0.07 for DESI DR1) and against the paper's own fiducia
 ### DESI DR1 mocks (Bautista et al. 2025, arXiv:2512.03228)
 <!-- key: desi-dr1-mocks-bautista-et-al-2025-arxiv-2512 -->
 
+Paper: arXiv:2512.03228; the place read is in the Flag column.
+
 | Item | What the paper did or found | Flag |
 |---|---|---|
 | Construction | 25 AbacusSummit 2 h⁻¹Gpc boxes × 27 sub-volumes = 675 cut-sky mocks, observer at each centre, DR1 masks; neighbouring sub-volumes correlated below 1.6 % (from Carreres et al. 2023b); 1 + z_obs = (1 + z_cos)(1 + z_v) | [src: Sect. 3.3, eq. 1] |
@@ -371,6 +383,8 @@ are at the paper's z_eff (0.07 for DESI DR1) and against the paper's own fiducia
 
 ### SDSS PV catalogue (Howlett et al. 2022, arXiv:2201.03112)
 <!-- key: sdss-pv-catalogue-howlett-et-al-2022-arxiv-2201 -->
+
+Paper: arXiv:2201.03112; the place read is in the Flag column.
 
 | Item | What the paper did or found | Flag |
 |---|---|---|
@@ -384,6 +398,8 @@ are at the paper's z_eff (0.07 for DESI DR1) and against the paper's own fiducia
 ### SDSS PV growth rate: field-level (Lai et al. 2023, arXiv:2209.04166) and power spectra (Qin et al. 2024, arXiv:2411.09571)
 <!-- key: sdss-pv-growth-rate-field-level-lai-et-al-2023 -->
 
+Papers: arXiv:2209.04166, arXiv:2411.09571; the paper and place read are in the Flag column.
+
 | Item | What the paper did or found | Flag |
 |---|---|---|
 | Field-level priors | fσ8 ∈ [0, 1], bσ8 ∈ [0, 3], σ_v ∈ [0, 5000] km/s, b_add σ8 ∈ [0, 10], flat; σ_u fixed (and σ_g fixed in the fit without Taylor expansion) | [src: 2209.04166 Sect. 5.1, 6.1] |
@@ -392,10 +408,12 @@ are at the paper's z_eff (0.07 for DESI DR1) and against the paper's own fiducia
 | Field-level result | fσ8 = 0.405 +0.076/−0.071 at z_eff = 0.073, k_max = 0.15, δ_g > 20 cut; b_add σ8 = 1.550, > 20σ from zero, "so we must include it"; σ_v = 400 ± 260 km/s | [src: 2209.04166 Fig. 11] |
 | Power spectra: likelihood | 2 048 mocks; Box–Cox Gaussianisation per k-bin (eq. 44), then the Sellentin–Heavens t-likelihood (eq. 46); five parameters fσ8, b1σ8, b2σ8, b3nlσ8, σ²_v | [src: 2411.09571 Sect. V.1] |
 | Power spectra: result | fσ8 = 0.413 +0.050/−0.058 at z_eff = 0.073 from P^δ_0, P^p_0, P^δp_1; χ²/dof = 72.9/79; GR + Planck prediction 0.448 | [src: 2411.09571 Sect. VI.1, Table 2] |
-| Same data, two methods | 0.405 (field-level) and 0.413 (power spectra) on SDSS PV, both at z_eff = 0.073; no joint mock correlation published in either paper | [src: as above] |
+| Same data, two methods | 0.405 (field-level) and 0.413 (power spectra) on SDSS PV, both at z_eff = 0.073; no joint mock correlation published in either paper | [src: arXiv:2209.04166, abstract; arXiv:2411.09571, Sect. VI.1, Table 2] |
 
 ### Cosmicflows-4 (Tully et al. 2023, arXiv:2209.11238)
 <!-- key: cosmicflows-4-tully-et-al-2023-arxiv-2209-11238 -->
+
+Paper: arXiv:2209.11238; the place read is in the Flag column.
 
 | Item | What the paper did or found | Flag |
 |---|---|---|
@@ -406,6 +424,8 @@ are at the paper's z_eff (0.07 for DESI DR1) and against the paper's own fiducia
 
 ### 6dFGSv: field-level fits (Johnson et al. 2014, arXiv:1404.3799; Adams & Blake 2020, arXiv:2004.06399)
 <!-- key: 6dfgsv-field-level-fits-johnson-et-al-2014 -->
+
+Papers: arXiv:1404.3799, arXiv:2004.06399; the paper and place read are in the Flag column.
 
 | Item | What the paper did or found | Flag |
 |---|---|---|
@@ -418,6 +438,8 @@ are at the paper's z_eff (0.07 for DESI DR1) and against the paper's own fiducia
 ### SN Ia velocities, ZTF simulations (Carreres et al. 2023, arXiv:2303.01198) — simulation, not a measurement
 <!-- key: sn-ia-velocities-ztf-simulations-carreres-et-al -->
 
+Paper: arXiv:2303.01198; the place read is in the Flag column.
+
 | Item | What the paper did or found | Flag |
 |---|---|---|
 | Fit | fσ8, σ_v and σ_u by maximum likelihood (iminuit, Hesse/Minos errors), checked against emcee | [src: Sect. 3.3] |
@@ -426,6 +448,8 @@ are at the paper's z_eff (0.07 for DESI DR1) and against the paper's own fiducia
 
 ### TF, FP and SNe against 2M++ (Stiskalek 2025, arXiv:2509.20235)
 <!-- key: tf-fp-and-sne-against-2m-stiskalek-2025-arxiv -->
+
+Paper: arXiv:2509.20235; the place read is in the Flag column.
 
 | Item | What the paper did or found | Flag |
 |---|---|---|
@@ -436,12 +460,14 @@ are at the paper's z_eff (0.07 for DESI DR1) and against the paper's own fiducia
 ### Same data, different methods
 <!-- key: same-data-different-methods -->
 
-- DESI DR1, one catalogue at z_eff = 0.07: correlation functions 0.391, power spectra 0.440,
-  field-level 0.483; mock correlations 27–39 % (`results.md` §1). The three use different error
+- DESI DR1, one catalogue at z_eff = 0.07: correlation functions 0.391 (arXiv:2512.03230), power
+  spectra 0.440 (arXiv:2512.03231), field-level 0.483 (arXiv:2512.03229) [src: abstract of each];
+  mock correlations 27.3 % to 38.8 % (arXiv:2512.03228, Sect. 9; `results.md` §1). The three use different error
   constructions: Hartlap χ², Sellentin–Heavens t-likelihood, Hessian errors inflated × 1.64; and
   different scale limits: 24 h⁻¹Mpc, k^p ≤ 0.1, a 20 h⁻¹Mpc grid (tables above).
-- SDSS PV at z_eff = 0.073: field-level 0.405 +0.076/−0.071 and power spectra 0.413 +0.050/−0.058,
-  with no published correlation between them (table above).
+- SDSS PV at z_eff = 0.073: field-level 0.405 +0.076/−0.071 (arXiv:2209.04166, abstract) and power
+  spectra 0.413 +0.050/−0.058 (arXiv:2411.09571, Sect. VI.1, Table 2), with no published correlation between
+  them (table above).
 - TF against FP within DESI DR1: the TF-only field-level fit is 0.85 ± 0.11 against 0.520 ± 0.054
   for FP (velocities only, Tables 2–3 of arXiv:2512.03229); all three methods cut TF at z > 0.05.
 
@@ -461,11 +487,11 @@ are at the paper's z_eff (0.07 for DESI DR1) and against the paper's own fiducia
    induced systematic on fσ8.
 6. Scale cuts in k or r, and the trend of fσ8 with them.
 7. Wide-angle treatment for any survey covering thousands of square degrees at
-   z < 0.1.
+   low redshift.
 8. Mocks: number, selection realism, box size against the largest fitted scale;
    whether the quoted error is the mock scatter or the posterior width.
 9. σ8 convention (linear vs non-linear) and effective redshift; whether fσ8 is
-   measured or derived from β or Ω_m^0.55 σ8.
+   measured or derived from β or from Ω_m^γ σ8 with the GR γ.
 10. For a bulk flow: estimator, window, depth, the ΛCDM expectation for the
     *same* window, and mock-calibrated errors.
 11. Shared data: which rows of the fσ8 table (`results.md` §0) use the same galaxies.
@@ -475,8 +501,10 @@ are at the paper's z_eff (0.07 for DESI DR1) and against the paper's own fiducia
 ## Not verified in this file
 <!-- key: not-verified-in-this-file -->
 
-- §0, and the Stiskalek fσ8 shifts of §2: folded from the 2026-08 compilation, not re-read.
-- The individual terms behind the 0.29 km/s/Mpc DESI DR1 zero-point systematic (its Fig. 10).
+- §0: folded from the 2026-08 compilation, not re-read. The Stiskalek fσ8 shifts of §2 were
+  re-read on 2026-10-23 (arXiv:2509.20235, Table 1).
+- The individual terms behind the 0.29 km/s/Mpc DESI DR1 zero-point systematic (arXiv:2512.03232,
+  Sect. VI.1.6, Fig. 10).
 - Systematic budgets of the 2MTF velocity power spectrum (arXiv:1706.05130), of the 6dFGS
   correlation functions (arXiv:2207.03707), and of the SN velocity–density fits (arXiv:1912.09383,
   arXiv:2105.05185): not read in the body.

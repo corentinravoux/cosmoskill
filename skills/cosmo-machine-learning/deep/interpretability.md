@@ -42,7 +42,7 @@ CNN that regresses (Ω_m, σ8) from 512 × 512 convergence maps (arXiv:2007.0652
 SmoothGrad and integrated gradients were set aside for cost after a check on a few maps gave
 qualitatively similar results [src: Sect. IV].
 
-**Step A2. Run the model-parameter randomisation test.** Recompute each saliency map after
+**Step A2. Run the model-parameter randomisation test** (arXiv:2007.06529). Recompute each saliency map after
 randomising the weights layer by layer from the output to the first convolution; a map that does
 not change cannot reflect what the network learned [src: Sect. IV.1]. Score the similarity of
 the trained and fully randomised maps with Pearson r, Spearman ρ and Kendall τ, with "no
@@ -52,7 +52,7 @@ deconvnet −0.731, so they were dropped [src: Table 2]. Visually, three propaga
 highlighted high-κ peaks while the gradient methods put relevance near local minima: the
 methods disagree on the same map before any test [src: Sect. IV.1, Fig. 4].
 
-**Step A3. Map attributions onto a physical variable.** Square the saliency (so that signs do not
+**Step A3. Map attributions onto a physical variable** (arXiv:2007.06529). Square the saliency (so that signs do not
 cancel), sum it over pixels in 20 linear bins of κ in [−2.5, 5] in units of each map's rms
 σ_κ, add the Ω_m and σ8 outputs, and also divide by the pixel count per bin; do this for each of
 the 101 cosmologies, with and without shape noise [src: Sect. IV.2]. Noiseless: negative-κ
@@ -203,6 +203,7 @@ galaxies at z = 0) and applied to Astrid, SIMBA and Swift-EAGLE with the same fu
 but with three coefficients {k_sim, c0_sim, a0_sim} refitted per suite: k_sim = 5.68, 4.71,
 14.88, 8.58 (arXiv:2602.07651) [src: Sects. II.2.2, III.1, Table 3]. Finding an equally compact
 formula by training on the other suites was "substantially more difficult" [src: Sect. III.1].
+
 A transferable form with per-simulator coefficients is not a transferable estimator: on data the
 right coefficients are unknown [der].
 
@@ -213,7 +214,7 @@ right coefficients are unknown [der].
 |---|---|---|---|---|
 | Randomisation-test correlation (Pearson) | gradient −0.002, input × gradient −0.003, guided backprop 0.152, deconvnet −0.731, deep Taylor 0.882 | lensing CNN | arXiv:2007.06529 | Table 2 |
 | κ binning of attributions | 20 linear bins, κ ∈ [−2.5, 5] σ_κ | lensing CNN | arXiv:2007.06529 | Sect. IV.2 |
-| PySR defaults | 40 populations × 1000; 3 × 10⁵ mutations per call; p_cross = 0.01 | PySR | arXiv:2305.01582 | Algorithms 1–2 |
+| PySR defaults | 40 populations × 1000; 3 × 10⁵ mutations per call; p_cross = 0.01 | PySR | arXiv:2305.01582 | Sect. 2.1, Algorithms 1–2 |
 | PySR run for Ω_m formula | 1500 iterations, 30 populations, squared loss, "best" selection | one-galaxy formula | arXiv:2602.07651 | Sect. II.2.1 |
 | Operon settings | ε = 10⁻³; 10⁸ evaluations | symbolic P_L(k) | arXiv:2311.15865 | Sect. 5 |
 | Training / validation set | 100 + 100 LH cosmologies; 200 k values | symbolic P_L(k) | arXiv:2311.15865 | Sect. 5 |

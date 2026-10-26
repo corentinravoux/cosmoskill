@@ -45,8 +45,11 @@ def split(text: str) -> tuple[str, str | None]:
 def block_for(skill: Path) -> str:
     own, _ = split((skill / "SKILL.md").read_text(encoding="utf-8"))
     template = TEMPLATE.read_text(encoding="utf-8").strip("\n")
-    references = sorted((skill / "references").glob("*.md")) if (skill / "references").is_dir() else []
-    dossiers = sorted((skill / "deep").glob("*.md")) if (skill / "deep").is_dir() else []
+    # A run's `_progress.md` checkpoint is not a level of the skill.
+    references = sorted(p for p in (skill / "references").glob("*.md") if not p.name.startswith("_")) \
+        if (skill / "references").is_dir() else []
+    dossiers = sorted(p for p in (skill / "deep").glob("*.md") if not p.name.startswith("_")) \
+        if (skill / "deep").is_dir() else []
     # The block itself is part of L1: count the file as it will be written.
     sizes = [f"L1 {thousands(len(own) + len(template) + 200)}"]
     sizes += [f"{SHORT.get(path.stem, path.stem)} {thousands(len(path.read_text(encoding='utf-8')))}" for path in references]

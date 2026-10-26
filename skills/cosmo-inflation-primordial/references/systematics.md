@@ -13,23 +13,23 @@ Flags as in the other files. CMB instrument systematics in general (beams, calib
 <!-- key: a1-dependence-on-the-data-combination -->
 
 - **Mechanism.** n_s is degenerate with Ω_b h² within each CMB data set and with the parameters that BAO constrain; the sign of the n_s–Ω_b h² correlation differs between Planck and ACT (arXiv:2503.14452). A BAO data set in tension with the CMB in ΛCDM pulls n_s upward (arXiv:2507.12459).
-- **Size.** +0.0060 from Planck 2018 to P-ACT, then +0.003 more with lensing and DESI BAO [der, from `results.md` section 1]; CMB-SPA without BAO gives 0.9679 ± 0.0033 (arXiv:2506.20707). The spread between combinations, 0.965 to 0.974, is two to three times the quoted error of any one.
-- **Mitigation.** Quote n_s with the combination name; give the CMB-only value beside the CMB + BAO one; state the CMB–BAO consistency (2.8σ for CMB-SPA against DESI DR2, arXiv:2506.20707).
-- **Validation.** Split by spectrum: P-ACT gives 0.9730 ± 0.0055 (TT), 0.974 ± 0.014 (TE), 0.976 ± 0.012 (EE) (arXiv:2503.14452) [src], so the shift is not driven by one spectrum.
+- **Size.** n_s = 0.9649 ± 0.0042 for Planck 2018 (arXiv:1807.06211) [src: abstract], 0.9709 ± 0.0038 for P-ACT (arXiv:2503.14452) [src: Sect. VIII.3] and 0.974 ± 0.003 with lensing and DESI BAO (arXiv:2503.14452) [src: abstract]; CMB-SPA without BAO gives 0.9679 ± 0.0033 (arXiv:2506.20707) [src: Sect. II]. The differences between combinations are comparable to or larger than the quoted error of any one.
+- **Mitigation.** Quote n_s with the combination name; give the CMB-only value beside the CMB + BAO one; state the CMB–BAO consistency (2.8σ for CMB-SPA against DESI DR2, arXiv:2506.20707) [src: abstract].
+- **Validation.** Split by spectrum: P-ACT gives consistent results from either temperature or polarisation (arXiv:2503.14452) [src: abstract], so the shift is not driven by one spectrum.
 - **Cite.** arXiv:2503.14452, arXiv:2507.12459.
 
 ### A2. Dependence on the cosmological model
 <!-- key: a2-dependence-on-the-cosmological-model -->
 
 - **Mechanism.** Extensions that change the damping tail or the late-time distances absorb part of the tilt.
-- **Size.** With α_s, N_eff and Σm_ν free, n_s = 0.9758 ± 0.0064: the error doubles (arXiv:2609.35964) [src]. With Ω_K or w0wa free, n_s falls to 0.967–0.972 (arXiv:2607.28445) [src].
+- **Size.** With α_s, N_eff and Σm_ν free, n_s = 0.9758 ± 0.0064 (arXiv:2609.35964) [src: abstract]. With Ω_K free, n_s = 0.9667 ± 0.0041 (Planck + DESI) or 0.9692 ± 0.0035 (with ACT and SPT); with w0wa free, 0.9716 ± 0.0032 (arXiv:2607.28445) [src: abstract].
 - **Mitigation.** State the model with every n_s; a model exclusion in the r–n_s plane is a statement inside ΛCDM unless shown otherwise.
 - **Cite.** arXiv:2609.35964, arXiv:2607.28445.
 
 ### A3. Planck truncation, likelihood and version
 <!-- key: a3-planck-truncation-likelihood-and-version -->
 
-P-ACT removes Planck multipoles above 1000 (TT) and 600 (TE, EE) (arXiv:2503.14452). CMB-SPA changed between arXiv versions: n_s = 0.9684 ± 0.0030 in the first, 0.9679 ± 0.0033 in the second (arXiv:2506.20707) [src]. A referee asks for the arXiv version. Instrumental effects that move ACT and SPT parameters (polarised beams, leakage, calibration to Planck) are in `cosmo-cmb`.
+P-ACT keeps Planck high-ℓ data at ℓ < 1000 in TT and ℓ < 600 in TE/EE (arXiv:2503.14452) [src: Sect. VI.3]. CMB-SPA changed between arXiv versions (the values are in `results.md`, section 1); the second gives n_s = 0.9679 ± 0.0033 (arXiv:2506.20707) [src: Sect. II]. A referee asks for the arXiv version. Instrumental effects that move ACT and SPT parameters (polarised beams, leakage, calibration to Planck) are in `cosmo-cmb`.
 
 ### A4. Optical depth
 <!-- key: a4-optical-depth -->
@@ -57,7 +57,7 @@ ACT-only parameters rest on the Planck Sroll2 large-scale EE for τ; with DESI D
 <!-- key: a5-running-from-the-lyalpha-forest -->
 
 - **Mechanism.** The P1D slope depends on the modelling of the intergalactic medium, metals, high-column-density systems and the emulator; an error in the slope is read as running.
-- **Size.** eBOSS P1D + Planck gave −0.010 ± 0.004, a 2.5σ negative running [der: 0.010/0.004] (arXiv:1911.09073, via arXiv:2503.14454); P-ACT alone excludes that value at more than 3σ (arXiv:2503.14454); DESI DR1 P1D, which marginalises more systematics, gives 0.0014 ± 0.0041 with CMB and BAO (arXiv:2601.21432).
+- **Size.** eBOSS P1D + Planck gave −0.010 ± 0.004, which its authors call a slight (3σ) preference for negative running (arXiv:1911.09073) [src: abstract]; P-ACT alone excludes that value at more than 3σ (arXiv:2503.14454) [src: Sect. IV.1]; DESI DR1 P1D, which marginalises more systematics, gives 0.0014 ± 0.0041 with CMB and BAO (arXiv:2601.21432) [src: abstract].
 - **Mitigation and detail.** `cosmo-lyman-alpha`.
 
 ## B. Tensor-to-scalar ratio
@@ -67,11 +67,11 @@ ACT-only parameters rest on the Planck Sroll2 large-scale EE for τ; with DESI D
 <!-- key: b1-polarised-galactic-dust -->
 
 - **Mechanism.** Polarised dust emission is the main B-mode foreground at high frequency; if the dust spectral index β_d varies across the sky, the ℓ dependence of the dust spectrum changes with frequency and can mimic a tensor signal.
-- **Size.** For SO, a low-order moment expansion leaves a bias of up to r ≈ 0.03 when the spatial dispersion is σ(β_d) ≈ 0.3, the most extreme case considered but still allowed by data; the bias is driven by correlations between β_d and the dust amplitude (arXiv:2508.00073) [src]. That is 25 times the SO forecast σ(r) = 1.2 × 10⁻³ [der].
+- **Size.** For SO, a low-order moment expansion leaves a bias of up to r ≈ 0.03 when the spatial dispersion is σ(β_d) ≈ 0.3, the most extreme case considered but still allowed by data; the bias is driven by correlations between β_d and the dust amplitude (arXiv:2508.00073) [src: abstract]. It is far above the SO forecast σ(r) = 1.2 × 10⁻³ (arXiv:2512.15833) [src: abstract].
 - **Body-level (SO SATs, arXiv:2508.00073)** [src: Sect. IV.2, Fig. 9]: with realistic PySM d10 dust and s5 synchrotron, the fiducial BBPower pipeline is biased even at zero dust dispersion, from synchrotron decorrelation (spatially varying β_s); a second-order moment in β_s removes it. With growing β_d dispersion (spatial or along the line of sight) the fiducial bias rises to r ≈ 0.1; the moment pipeline stays consistent with r = 0 at low dispersion but is still biased for x_βd ≳ 1.0 (spatial) or ≳ 1.2 (line of sight). T_d variations bias r less. A covariance from Gaussian power-law simulations without decorrelation is "known to be incorrect" and gives χ²/dof = 1.7 at zero dust dispersion; an angular template plus a covariance with decorrelation brings r back in line for the x_βd = 1.6 case.
-- **Mitigation.** Multi-frequency parametric fits with a free dust spectral index (BK18: no external prior on it, 220 GHz as the dust lever arm, arXiv:2110.00483); moment expansions and "extended parametric methods" (arXiv:2508.00073).
+- **Mitigation.** Multi-frequency parametric fits with a free dust spectral index (BK18: no external prior on it, 220 GHz as the dust lever arm, arXiv:2110.00483 [src: abstract]); moment expansions and "extended parametric methods" (arXiv:2508.00073).
 - **Validation.** Recovery of r = 0 on simulations with several dust models of increasing complexity; stability of r when frequencies are dropped.
-- **History a referee remembers.** The BICEP2 B-mode excess was reanalysed jointly with Planck data; the joint analysis gave r_0.05 < 0.12 (arXiv:1502.00612).
+- **History a referee remembers.** The BICEP2 B-mode excess was reanalysed jointly with Planck data; the joint analysis gave r_0.05 < 0.12 (arXiv:1502.00612) [src: abstract].
 - **Cite.** arXiv:1502.00612, arXiv:2110.00483, arXiv:2508.00073.
 
 ### B2. Synchrotron
@@ -83,7 +83,7 @@ Low-frequency channels constrain it: the WMAP and Planck maps from 23 GHz upward
 <!-- key: b3-lensing-b-modes-and-delensing -->
 
 - **Mechanism.** Lensing B modes add sample variance to r and, if the template is biased, a bias.
-- **Size.** Delensing BK14 improved σ(r) by about 10% against 26% for a perfect template (arXiv:2011.08163) [src]. SO assumes 70% removal for its headline forecast (arXiv:2512.15833) [src].
+- **Size.** Delensing BK14 improved σ(r) by about 10% against 26% for a perfect template (arXiv:2011.08163) [src: abstract]. SO assumes 70% removal for its headline forecast (arXiv:2512.15833) [src: abstract].
 - **Mitigation.** A lensing template from CMB polarisation plus a mass tracer (CIB, later internal reconstruction), included in the likelihood as a pseudo-frequency map.
 - **Validation.** Simulations in which the tracer is correlated with foregrounds; comparison of the template cross-spectrum with the expected lensing BB.
 - **Body-level sizes (BK14 + lensing template, arXiv:2011.08163).** σ(r) 0.024 → 0.022 in the six-parameter search of 499 simulations (0.026 → 0.023 in eight dimensions) [src: Sect. VI.1]. A misestimate of the CIB–φ cross-spectrum by half the patch-to-patch scatter biases r by 0.2σ [src: Sect. IV.2]; a 1.7% low polarisation efficiency of the input SPTpol Q/U maps gives a negligible bias [src: Sect. IV.2]. The template needs E modes at higher ℓ than the BICEP beam resolves, hence the SPTpol and Planck maps [src: Sect. III.1.3].
@@ -93,7 +93,7 @@ Low-frequency channels constrain it: the WMAP and Planck maps from 23 GHz upward
 <!-- key: b4-temperature-to-polarisation-leakage-from -->
 
 - **Mechanism.** Differences between the beams of paired orthogonal detectors convert the temperature anisotropy into spurious polarisation.
-- **Size.** For BICEP3 at 95 GHz over 2016–2024 the residual after extended deprojection is equivalent to r = (1.12 ± 0.06) × 10⁻³, down from (4.5 ± 0.7) × 10⁻³ with standard deprojection; preliminary (arXiv:2608.25016) [src]. The standard-deprojection residual is half of the BK18 σ(r) = 0.009 [der], so it cannot be ignored at the BK24 depth.
+- **Size.** For BICEP3 at 95 GHz over 2016–2024 the residual after extended deprojection is equivalent to r = (1.12 ± 0.06) × 10⁻³, down from (4.5 ± 0.7) × 10⁻³ with standard deprojection; preliminary (arXiv:2608.25016) [src: abstract]. The standard-deprojection residual is not small against the BK18 σ(r) = 0.009 (arXiv:2110.00483) [src: abstract], so it cannot be ignored at the BK24 depth.
 - **Mitigation.** Deprojection of beam-difference templates built from the temperature map; far-field beam maps.
 - **Cite.** arXiv:2608.25016.
 
@@ -105,12 +105,12 @@ For the SO SATs, the variation of the beam inside each band biases r by 0.02σ a
 ### B6. Low-frequency noise and filtering
 <!-- key: b6-low-frequency-noise-and-filtering -->
 
-Atmospheric and instrumental 1/f noise sets the lowest usable multipole. SPT-3G has noise knees at ℓ = 128 (95 GHz) and 182 (150 GHz), which is why its r limit is 0.25 despite deep maps (arXiv:2505.02827) [src]. The SO forecast assumes ℓ_knee = 50 (arXiv:2512.15833) [src]; the forecast is conditional on reaching it.
+Atmospheric and instrumental 1/f noise sets the lowest usable multipole. SPT-3G has noise knees at ℓ = 128 (95 GHz) and 182 (150 GHz), which is why its r limit is 0.25 despite deep maps (arXiv:2505.02827) [src: abstract]. The SO forecast assumes ℓ_knee = 50 (arXiv:2512.15833) [src: abstract]; the forecast is conditional on reaching it.
 
 ### B7. Statistical construction and priors
 <!-- key: b7-statistical-construction-and-priors -->
 
-Feldman–Cousins versus Bayesian limits differ by almost a factor of two for SPIDER (0.11 against 0.19, arXiv:2103.13334). Freeing ΛCDM parameters and adding Planck low-ℓ polarisation moves 0.036 to 0.032 on the same B-mode data (arXiv:2112.07961); a different n_s moves it to 0.038 (arXiv:2503.14454). None of these is new B-mode information.
+Feldman–Cousins versus Bayesian limits differ by almost a factor of two for SPIDER (0.11 against 0.19, arXiv:2103.13334) [src: abstract]. Freeing ΛCDM parameters and adding Planck low-ℓ polarisation moves 0.036 to 0.032 on the same B-mode data (arXiv:2112.07961) [src: abstract; Sect. I for 0.036]; a different n_s moves it to 0.038 (arXiv:2503.14454) [src: Sect. IV.4]. None of these is new B-mode information.
 
 ### B8. Model of the tensor spectrum
 <!-- key: b8-model-of-the-tensor-spectrum -->
@@ -163,7 +163,7 @@ Simons Observatory 2025, arXiv:2512.15833, 10³ σ(r) at 68% after 10 years, wit
 | optimistic | A_lens = 0.5 | 0.9 / 1.1 | 1.9 / 2.5 |
 | optimistic | A_lens = 0.3 | 0.7 / 0.9 | — |
 
-Decorrelation degrades σ(r) by about 20%, the pessimistic 1/f model by about 30%, and going from 50% to 70% delensing improves it by 20% after 10 years. The paper's own fiducial is the most conservative case, σ(r) = 1.4 × 10⁻³ (pessimistic 1/f, 50% delensing, decorrelation); the 1.2 × 10⁻³ of the abstract assumes 70% delensing [src: Sect. 3.2].
+Decorrelation degrades σ(r) by about 20%, the pessimistic 1/f model by about 30%, and going from 50% to 70% delensing improves it by 20% after 10 years. The paper's own fiducial is the most conservative case, σ(r) = 1.4 × 10⁻³ (pessimistic 1/f, 50% delensing, decorrelation); the 1.2 × 10⁻³ of the abstract assumes 70% delensing (arXiv:2512.15833) [src: Sect. 3.2].
 
 ## C. Non-Gaussianity from the CMB
 <!-- key: non-gaussianity-from-the-cmb -->
@@ -173,12 +173,12 @@ Decorrelation degrades σ(r) by about 20%, the pessimistic 1/f model by about 30
 
 The correlation between lensing and the ISW effect produces a squeezed bispectrum that biases f_NL^local if it is not subtracted. Planck 2018 detects it at 3.5σ (arXiv:1905.05697) [src]. In polarisation the lensing–reionisation E-mode correlation plays the same role; the template amplitude f_NL^lens is 1 in ΛCDM [src: Sect. 4.1, Eq. 37].
 
-Planck 2018 sizes, SMICA, 68% (arXiv:1905.05697):
+Planck 2018 sizes, SMICA, 68% (arXiv:1905.05697, Table 5 and Sect. 5.1, as given per row):
 
 | Quantity | Value | Place |
 |---|---|---|
 | f_NL^local T, KSW: not subtracted → lensing subtracted | 6.7 ± 5.6 → −0.5 ± 5.6 | [src: Table 5] |
-| f_NL^local T+E, KSW: not subtracted → subtracted | 4.1 ± 5.1 → −0.9 ± 5.1 (bias ≈ 5) | [src: Table 5] |
+| f_NL^local T+E, KSW: not subtracted → subtracted | 4.1 ± 5.1 → −0.9 ± 5.1 | [src: Table 5] |
 | f_NL^local T+E, subtracted, by estimator | KSW −0.9 ± 5.1; Binned −2.5 ± 5.0; Modal 1 −0.1 ± 4.7; Modal 2 −2.0 ± 5.0 | [src: Table 5] |
 | f_NL^ortho T+E, not subtracted → subtracted (KSW) | −46 ± 23 → −37 ± 23 | [src: Table 5] |
 | f_NL^equil T+E (KSW) | −17 ± 47 → −18 ± 47 (lensing bias negligible) | [src: Table 5] |
@@ -210,8 +210,8 @@ A null result for three templates is not a null result for all shapes; scans ove
 <!-- key: d1-the-response-bphi -->
 
 - **Mechanism.** The signal is f_NL · b_φ; b_φ depends on how the tracer was selected, not only on its linear bias.
-- **Size.** For the same BOSS data, σ(f_NL) runs from 16 to 226 with the b_φ(b_1) relation (arXiv:2205.05673) [src], and is 19, 44 or 165 for the highest-concentration third, all, or the lowest-concentration third of haloes (arXiv:2209.07251) [src]. For DESI DR1 the central value moves from −3.6 to +3.5 between p = 1.6 and p = 1 for quasars (arXiv:2411.17623) [src]; for Quaia the error grows from 19 to 26 (arXiv:2504.20992) [src].
-- **Mitigation.** Simulation-based priors on p for the selected sample (p̄ ≈ 1.4 for DESI-like quasars in IllustrisTNG, checked against CAMELS; arXiv:2602.12357); reporting f_NL for more than one p.
+- **Size.** For the same BOSS data, the strongest bound is f_NL = 16 ± 16 and the loosest 230 ± 226 as the b_φ(b_1) relation is changed (arXiv:2205.05673) [src: abstract], and σ(f_NL) is 19, 44 or 165 for the highest-concentration third, all, or the lowest-concentration third of haloes (arXiv:2209.07251) [src: abstract]. For DESI DR1 the central value moves from −3.6 to +3.5 between p = 1.6 and p = 1 for quasars (arXiv:2411.17623) [src: abstract]; Quaia also depends on the assumed response (arXiv:2504.20992).
+- **Mitigation.** Simulation-based priors on p for the selected sample (p̄ ≃ 1.4 for DESI-like quasars in IllustrisTNG, checked against CAMELS; arXiv:2602.12357 [src: abstract]); reporting f_NL for more than one p.
 - **Warning.** Marginalising b_φ with a wide prior is not conservative: it biases f_NL through projection effects (arXiv:2205.05673).
 - **Cite.** arXiv:0805.3580, arXiv:2205.05673, arXiv:2209.07251, arXiv:2602.12357.
 
@@ -219,7 +219,7 @@ A null result for three templates is not a null result for all shapes; scans ove
 <!-- key: d2-large-scale-imaging-systematics -->
 
 - **Mechanism.** Stellar density, extinction, depth and seeing modulate the target density on the same scales as the 1/k² signal; excess large-scale power mimics a non-zero f_NL, and over-correction removes signal.
-- **Size.** For eBOSS DR16 the optimal analysis improved the error by 10% where a Fisher forecast predicted more, which its authors read as "still unknown systematic effects in the data" (arXiv:2309.15814) [src]. SPHEREx allocates δn/n < 0.2% rms per dex to spurious clustering to reach Δf_NL < 0.5 (arXiv:2511.02985) [src].
+- **Size.** For eBOSS DR16 the optimal analysis improved the error by 10% where a Fisher forecast predicted more, which its authors read as "still unknown systematic effects in the data" (arXiv:2309.15814) [src: abstract]. SPHEREx allocates δn/n < 0.2% rms per dex to spurious clustering to reach Δf_NL < 0.5 (arXiv:2511.02985) [src: Sect. III.2].
 - **Mitigation.** Regression or neural-network weights against imaging templates (arXiv:2106.13725); an angular integral-constraint term in the window to account for the modes removed by the weights (arXiv:2411.17623); cross-correlation between tracers (arXiv:2604.05213) or with CMB lensing (arXiv:2512.17865), which do not share these systematics.
 - **Validation.** Mocks that reproduce the target selection with contamination injected and removed (EZmocks, arXiv:2106.13725); blinded validation (arXiv:2411.17623); the spectroscopic DESI quasar auto-spectrum shows no excess large-scale power, unlike photometric quasar samples (arXiv:2512.17865).
 
@@ -271,7 +271,7 @@ Fabbian et al. 2025, arXiv:2504.20992, 68%, p_φ = 1 unless stated [src: Sect. 3
 | ℓ_min^κg = 4; 10 | −29.0 ± 20; −38.2 ± 24 |
 | G < 20 sub-sample | −12.1 +27.2/−25.0 |
 
-The ℓ ≤ 15 cut of the auto-spectrum comes from simulations: bins whose shift under deprojection has PTE < 5% against systematics-free simulations are removed (ℓ = 6 has PTE < 1%); no κg bin fails, and the quasar dipole must be deprojected (Y_10, Y_1±1) to avoid leakage through the mask [src: Sect. 3.3, Fig. 7].
+The ℓ ≤ 15 cut of the auto-spectrum comes from simulations: bins whose shift under deprojection has PTE < 5% against systematics-free simulations are removed (ℓ = 6 has PTE < 1%); no κg bin fails, and the quasar dipole must be deprojected (Y_10, Y_1±1) to avoid leakage through the mask (arXiv:2504.20992) [src: Sect. 3.3, Fig. 7].
 
 ### D2e. DESI DR1 quasars × Planck PR4 lensing as read
 <!-- key: d2e-desi-dr1-quasars-x-planck-pr4-lensing-as -->
@@ -285,7 +285,7 @@ Chiarenza et al. 2025, arXiv:2512.17865, baseline p = 1.6, three bins over 0.8 <
 | Constant bias per bin; linearly interpolated b(z) | −3 +28/−35; 2 +28/−33 |
 | A_s and n_s free with Planck 2018 Gaussian priors | 1 +33/−36 |
 
-Neural-network weights are not used because their over-correction of large-scale modes is "particularly severe"; the residual mode removal of the two linear schemes is measured on 500 systematics-free lognormal mocks (GLASS) of the DR1 footprint and corrected [src: Sect. 5.2].
+Neural-network weights are not used because their over-correction of large-scale modes is "particularly severe"; the residual mode removal of the two linear schemes is measured on 500 systematics-free lognormal mocks (GLASS) of the DR1 footprint and corrected (arXiv:2512.17865) [src: Sect. 5.2].
 
 ### D3. Window function and integral constraints
 <!-- key: d3-window-function-and-integral-constraints -->
@@ -295,17 +295,17 @@ Estimating the mean density and the radial selection from the data removes large
 ### D4. Redshift errors and tomographic bin mismatch
 <!-- key: d4-redshift-errors-and-tomographic-bin-mismatch -->
 
-For a SPHEREx-like photometric analysis, galaxies assigned to the wrong redshift bin produce apparent tensions of 3–6σ on f_NL^local and 9–12σ on the bias; a scattering-matrix formalism removes the bias in simulations (Saraf and Parkinson 2024, arXiv:2412.03078) [src].
+For a SPHEREx-like photometric analysis, galaxies assigned to the wrong redshift bin produce apparent tensions of 3–6σ on f_NL^local and 9–12σ on the bias; a scattering-matrix formalism removes the bias in simulations (Saraf and Parkinson 2024, arXiv:2412.03078) [src: abstract].
 
 ### D5. Bias parameters and scale cuts in bispectrum analyses
 <!-- key: d5-bias-parameters-and-scale-cuts-in-bispectrum -->
 
-Equilateral and orthogonal constraints depend on the priors of the non-linear bias parameters: 940 ± 600 with everything free against 260 ± 300 with quadratic bias and cosmology fixed (arXiv:2201.07238) [src]; simulation-based priors tighten DESI + BOSS to 200 ± 230 (arXiv:2512.04266) [src]. A referee asks for the scale cuts, the validation on simulations with known f_NL, and the result without the informative priors.
+Equilateral and orthogonal constraints depend on the priors of the non-linear bias parameters: 940 ± 600 with everything free against 260 ± 300 with quadratic bias and cosmology fixed (arXiv:2201.07238) [src: abstract]; simulation-based priors tighten DESI + BOSS to 200 ± 230 (arXiv:2512.04266) [src: abstract]. A referee asks for the scale cuts, the validation on simulations with known f_NL, and the result without the informative priors.
 
 ### D6. Covariance approximations in forecasts
 <!-- key: d6-covariance-approximations-in-forecasts -->
 
-The SPHEREx forecast omits the non-Gaussian covariance and the power spectrum–bispectrum covariance, worth "tens of percent" (arXiv:2511.02985). Euclid's σ(f_NL^local) = 2.2 assumes universality and k_max = 0.15 h Mpc⁻¹ (arXiv:2507.15819).
+The SPHEREx forecast omits the non-Gaussian covariance and the power spectrum–bispectrum covariance, worth "tens of percent" (arXiv:2511.02985). Euclid's σ(f_NL^local) = 2.2 assumes universality and k_max = 0.15 h Mpc⁻¹ (arXiv:2507.15819) [src: abstract].
 
 ### D7. Relativistic and wide-angle effects
 <!-- key: d7-relativistic-and-wide-angle-effects -->
@@ -322,21 +322,21 @@ The ACT cluster f_NL depends on the mass calibration: the analysis finds a 16.4%
 
 - **Prior-volume effects.** With a flat prior on the isocurvature tilt, an unconstrained amplitude leaves a large volume at extreme tilts; Planck and ACT sample amplitudes at two scales instead (arXiv:2503.14454).
 - **Correlation with n_s.** The scale-invariant CDI limit weakens from 0.9 to 1.1 (× 10⁻¹⁰) when ACT is added because n_s rises (arXiv:2503.14454) [src]. Isocurvature limits inherit the data-combination dependence of section A1.
-- **Lensing-like smoothing.** Compensated isocurvature produces extra smoothing at high ℓ (arXiv:1807.06211), so it responds to the same peak-smoothing preference as A_L [der: inference from the mechanism]; the 68% interval 0.0037 +0.0016/−0.0021 is not a detection.
+- **Lensing-like smoothing.** Compensated isocurvature produces extra smoothing at high ℓ, like A_L (arXiv:1807.06211); the Planck 68% interval Δ²_rms = 0.0037 +0.0016/−0.0021 (arXiv:1807.06211) [src: Sect. 9.5; Sect. 11] is not a detection.
 - **Non-linear modelling.** HMCode can fail for blue-tilted spectra (arXiv:2503.14454).
 
 ## F. Spatial curvature
 <!-- key: spatial-curvature -->
 
-- **A_L and likelihood.** The Planck-only preference for Ω_K < 0 has the same origin as A_L > 1 and changes by about 0.5σ with the polarisation likelihood (−0.044 with Plik, −0.037 with CamSpec; arXiv:1807.06209) [src]. Quote release and likelihood.
-- **Combining discordant data.** Planck alone and BAO were in 2.5–3σ tension in the curved model (arXiv:1908.09139); combining them hides that. The same holds today for CMB and DESI in ΛCDM.
-- **Model dependence at late times.** Ω_K from BAO and supernovae depends on the dark-energy model: an open preference in ΛCDM disappears in extended models (arXiv:2604.23492); with w0wa free DESI + CMB + SNe give (0.6–1.1) × 10⁻³ ± 1.3 × 10⁻³ (arXiv:2503.14738).
+- **A_L and likelihood.** The Planck-only preference for Ω_K < 0 has the same origin as A_L > 1 and changes with the likelihood (−0.044 +0.018/−0.015 with Plik, −0.037 +0.019/−0.014 with CamSpec, TT,TE,EE + lowE; arXiv:1807.06209) [src: Sect. 7.3]. Quote release and likelihood.
+- **Combining discordant data.** Planck alone and BAO were in 2.5 to 3σ tension in the curved model (arXiv:1908.09139) [src: abstract]; combining them hides that. The same holds today for CMB and DESI in ΛCDM.
+- **Model dependence at late times.** Ω_K from BAO and supernovae depends on the dark-energy model: an open preference in ΛCDM, Ω_K = 0.049 ± 0.037, disappears in extended models (arXiv:2604.23492) [src: abstract]; with w0wa free DESI + CMB + SNe give 10³Ω_K = 1.1 ± 1.3 (Pantheon+), 0.6 ± 1.3 (Union3) and 0.8 ± 1.3 (DESY5) (arXiv:2503.14738) [src: Table 5 (Sect. VI)].
 - **Supernova sample.** The late-time open preference ranges from 2σ to 5σ with the supernova compilation (arXiv:2512.19565).
 
 ## G. Primordial features
 <!-- key: primordial-features -->
 
-- **Look-elsewhere.** Local Δχ² of −10 to −15 corresponds to at most 2.6σ globally (arXiv:2605.30236).
+- **Look-elsewhere.** Local Δχ² of −10 to −15 corresponds to at most 2.6σ globally (arXiv:2605.30236) [src: abstract].
 - **Fixed cosmology.** A 3σ logarithmic feature in DESI DR1 at fixed Planck cosmology disappears when the cosmology is varied (arXiv:2610.10530).
 - **Likelihood version.** Planck PR3 hints shrink with PR4 CamSpec (arXiv:2605.30236).
 - **BAO degeneracy and non-linear damping.** Frequencies near the BAO one are poorly constrained; the damping must be modelled consistently (arXiv:1906.08758, arXiv:2610.10530).
@@ -345,7 +345,7 @@ The ACT cluster f_NL depends on the mass calibration: the analysis finds a 16.4%
 ## H. Cosmic birefringence
 <!-- key: cosmic-birefringence -->
 
-- **Polarisation-angle calibration.** EB measures α + β. Planck's raw angle uncertainty is the systematic that the Minami–Komatsu method removes (arXiv:2011.11254); ACT relies on optics-model priors, and its result is conditional on them (arXiv:2509.13654, arXiv:2608.06480). Target for hardware calibration: 0.08° for the SO SATs (**forecast**, arXiv:2606.11300).
+- **Polarisation-angle calibration.** EB measures α + β. Planck's raw angle uncertainty is the systematic that the Minami–Komatsu method removes (arXiv:2011.11254); ACT relies on optics-model priors, and its result is conditional on them (arXiv:2509.13654, arXiv:2608.06480). Target for hardware calibration: 0.08° for the SO SATs (**forecast**, arXiv:2606.11300) [src: abstract].
 - **Intrinsic EB of Galactic dust.** The foreground-based calibration assumes the foreground EB is known. β decreases as the Galactic mask grows (arXiv:2201.07682); a dust-robust variant of the ACT + Planck analysis gives 3.5σ instead of 4.8σ (arXiv:2608.06480) [src]. Body-level, Planck PR4 (arXiv:2201.07682) [src: Sects. V–VI]: β = 0.30° ± 0.11° at f_sky = 0.93; dropping one channel gives 0.34 ± 0.12 (no 100 GHz), 0.38 ± 0.12 (no 143), 0.27 ± 0.13 (no 217), 0.08 ± 0.21 (no 353), so the 353 GHz cross-spectra carry most of the signal. A dust EB acts as an effective angle γ_ℓ, so foreground calibration returns β − γ; with r^TB,dust ≈ 0.05 and a filament–field misalignment ψ_dust ≈ 5°, γ ≲ 0.7° for f_sky ≈ 0.7 (Eq. 1). The filament model C_ℓ^EB,dust = A_ℓ C_ℓ^EE,dust sin(4ψ_ℓ^dust), with A_ℓ free in four ℓ bins over 51–1490 (Eq. 2), brings β back to positive values for all masks. Known instrumental systematics in the NPIPE simulations shift β by −0.009° ± 0.003°, negligible against 0.11° [src: Sect. IV].
 - **Intensity-to-polarisation leakage.** Marginalised in the ACT analysis (arXiv:2509.13654).
 - **Omitted systematic in a quoted error.** 0.30 ± 0.05 excludes the angle systematic (arXiv:2507.16714, abstract).
@@ -364,7 +364,7 @@ Diego-Palazuelos and Komatsu 2025, arXiv:2509.13654. Five array-bands, each with
 | 90% correlated per frequency | 0.212 ± 0.072 | [src: Table 2] |
 | Same three, with residual I→P leakage γ_i marginalised | 0.208 ± 0.059; 0.215 ± 0.074 (headline); 0.216 ± 0.073 | [src: Sect. V, Table 3] |
 
-Fitted |γ_i| ≤ 0.08%, against the 0.3% leakage correction already applied to the maps; marginalising γ shifts α_i by ≤ 0.21σ and β by ≤ 0.07σ [src: Sect. V]. Dropping off-diagonal covariance shifts best fits by ≤ 0.01°; the data tighten α_i over the optics prior by 20–37% for PA5 and PA6 [src: Sect. IV]. An unexplained PA5 f150 − f090 angle difference of 0.21° ± 0.09° is why the prior choice matters [src: Sect. IV].
+Fitted |γ_i| ≤ 0.08%, against the 0.3% leakage correction already applied to the maps; marginalising γ shifts α_i by ≤ 0.21σ and β by ≤ 0.07σ (arXiv:2509.13654) [src: Sect. V]. Dropping off-diagonal covariance shifts best fits by ≤ 0.01°; the data tighten α_i over the optics prior by 20–37% for PA5 and PA6 [src: Sect. IV]. An unexplained PA5 f150 − f090 angle difference of 0.21° ± 0.09° is why the prior choice matters [src: Sect. IV].
 
 ### H2. ACT + Planck joint birefringence: how β moves (as read)
 <!-- key: h2-act-planck-joint-birefringence-how-beta -->
@@ -381,7 +381,7 @@ Eskilt 2026, arXiv:2608.06480, 68%, in degrees [src: Sect. III].
 | No Planck α priors (HFI ones are pre-flight) | 0.280 ± 0.059 | ACT priors + foregrounds |
 | No α priors at all | 0.442 ± 0.098 | foregrounds only |
 
-Joint χ² = 89.1 for 73 degrees of freedom (PTE 9.7%); ACT × ACT alone has PTE 0.1%, partly from a poor fit near ℓ ≈ 1800–1900 already noted by the ACT team. Planck prefers α + β ≈ 0.30°, ACT ≈ 0.20° [src: Sect. III].
+Joint χ² = 89.1 for 73 degrees of freedom (PTE 9.7%); ACT × ACT alone has PTE 0.1%, partly from a poor fit near ℓ ≈ 1800–1900 already noted by the ACT team. Planck prefers α + β ≈ 0.30°, ACT ≈ 0.20° (arXiv:2608.06480) [src: Sect. III].
 
 ## I. Checklist for a referee
 <!-- key: checklist-for-a-referee -->
@@ -409,4 +409,4 @@ Joint χ² = 89.1 for 73 degrees of freedom (PTE 9.7%); ACT × ACT alone has PTE
 - BICEP/Keck gain and ground-pickup budgets, and the BK18 polarisation-angle procedure (the BK18 additive and bandpass budget is now in section B9).
 - The estimator dependence of the PR4 f_NL reanalysis (arXiv:2504.00884 has no HTML rendering; not read).
 - E-to-B leakage from partial sky and filtering in ground-based B-mode analyses: no paper read.
-- Systematics of the Planck low-ℓ polarisation that enter r < 0.032.
+- Systematics of the Planck low-ℓ polarisation that enter r < 0.032 (arXiv:2112.07961) [src: abstract].

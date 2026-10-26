@@ -25,7 +25,7 @@ debate (`systematics.md#post-reionisation-hi-intensity-mapping`,
 <!-- key: how-it-is-done -->
 
 Notation. T_sky(θ, ν) is the calibrated brightness temperature; a "block" is
-one ~1.5 h scan of the field and a "single cube" one dish in one block; N_fg
+one ~1.5 h scan of the field (arXiv:2610.12158, Sect. 2) and a "single cube" one dish in one block; N_fg
 the number of removed principal components; Ω_HI b_HI the amplitude of the
 auto-spectrum; T̄_HI the mean HI brightness temperature; μ the cosine of the
 angle to the line of sight; f the growth rate.
@@ -492,7 +492,7 @@ in practice" [src: arXiv:2607.03259, Sect. 2.5].
 | Stack noise covariance | 10 000 random mock catalogues | CHIME stack | arXiv:2202.01242 | Sect. IV.8 |
 | Auto noise covariance | 1000 realisations; off-diagonal ≲ 15% | CHIME auto | arXiv:2511.19620 | Sect. V.4 |
 | FAST 1/f knee | 1.8 × 10⁻³ Hz after 20 SVD modes; ~6 × 10⁻⁴ Hz after 30; 10% bias on P(k) | FAST pilot | arXiv:2109.06447 | abstract |
-| Ω_HI b_HI r | 0.43 ± 0.07 ± 0.04 × 10⁻³ (WiggleZ, 2013); 0.58 ± 0.09 ± 0.05, 0.40 ± 0.09 ± 0.04, 0.35 ± 0.08 ± 0.03 × 10⁻³ (WiggleZ, ELG, LRG; k_eff = 0.31 h Mpc⁻¹) | GBT cross | arXiv:1208.0331; arXiv:2102.04946 | abstracts |
+| Ω_HI b_HI r | 0.43 ± 0.07 ± 0.04 × 10⁻³ (WiggleZ, 2013); 0.58 ± 0.09 ± 0.05, 0.40 ± 0.09 ± 0.04, 0.35 ± 0.08 ± 0.03 × 10⁻³ (WiggleZ, ELG, LRG; k_eff = 0.31 h Mpc⁻¹) | GBT cross | arXiv:1208.0331; arXiv:2102.04946 | abstract of each |
 | Parkes × 2dF | 5.18σ; > 6× below expectation at k ~ 1.5 h Mpc⁻¹ (14.8σ) | Parkes | arXiv:1710.00424 | abstract |
 | Interferometric auto detection | 3.2σ, 3.5σ (BLF); 5.9σ, 9.18σ (UVDF) at z ≈ 0.32, 0.44 | MeerKAT interferometric | arXiv:2301.11943 | abstract |
 | Stacking systematic | ν_sys = 17.90 (+6.53/−4.27) MHz, A_sys = 0.50 ± 0.33 (prior-limited) | MeerKLASS × GAMA stack | arXiv:2504.03908 | abstract |

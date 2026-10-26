@@ -87,19 +87,20 @@ The 21cmFAST galaxy model used by HERA has nine parameters (Park et al.
 2019 parametrisation; arXiv:2108.07282, Sect. V.1) [src]:
 
 - stellar-to-halo mass ratio M⋆/M_h = f⋆,10 (M_h/10¹⁰ M_⊙)^α⋆ (Ω_b/Ω_m),
-  f⋆ restricted to [0, 1] (Eq. 18): parameters f⋆,10, α⋆;
+  f⋆ restricted to [0, 1] (arXiv:2108.07282, Eq. 18): parameters f⋆,10, α⋆;
 - star-formation rate Ṁ⋆ = M⋆/(t⋆ H⁻¹): parameter t⋆, in units of the
   Hubble time;
 - duty cycle f_duty = exp(−M_turn/M_h): parameter M_turn;
-- escape fraction f_esc = f_esc,10 (M_h/10¹⁰ M_⊙)^α_esc (Eq. 19):
+- escape fraction f_esc = f_esc,10 (M_h/10¹⁰ M_⊙)^α_esc (arXiv:2108.07282, Eq. 19):
   f_esc,10, α_esc;
 - X-ray emissivity per star formation integrated from E_0 to 2 keV,
   L_X<2keV/SFR (Eq. 20), with SED index α_X and escape threshold E_0
-  (E_0 ~ 0.5 keV corresponds to an H I column of ~10^21.4 cm⁻²).
+  (E_0 ~ 0.5 keV corresponds to an H I column of ~10^21.4 cm⁻²) [src: arXiv:2108.07282,
+  Sect. V.1, Eq. 20].
 
 Ionising and soft-UV emission assume Pop II SEDs, ~5000 ionising photons
 per stellar baryon (Starburst99, Scalo IMF, 0.05 solar metallicity) [src:
-Sect. V.1]. Simulation settings: 250 cMpc box, initial conditions on 512³,
+arXiv:2108.07282, Sect. V.1]. Simulation settings: 250 cMpc box, initial conditions on 512³,
 radiation fields on 128³, 2LPT, sub-grid RSD; the model power spectra are
 spherically averaged, which does not match HERA's line-of-sight mode
 selection, accepted because the density-dominated regime where it matters
@@ -142,10 +143,10 @@ the likelihood [src: arXiv:2606.27858, Sect. 2.4].
 HERA multiplies L_total = L_m × L_LFs × L_DF × L_τ [src: arXiv:2108.07282,
 Sect. V.2]:
 
-- UV luminosity functions at z = 6–10, faint end M_UV > −20 (HST);
+- UV luminosity functions at z = 6–10, faint end M_UV > −20 (HST) (arXiv:2108.07282, Sect. V.2);
 - dark-pixel limit x_HI < 0.06 + 0.05 (1σ) at z ~ 5.9 as a one-sided
-  Gaussian;
-- τ_e = 0.0569 (+0.0081/−0.0066) (Planck 2018 as re-analysed by Qin et al.).
+  Gaussian (arXiv:2108.07282, Sect. V.2);
+- τ_e = 0.0569 (+0.0081/−0.0066) (Planck 2018 as re-analysed by Qin et al.) [sec: arXiv:2108.07282, Sect. V.2].
 
 The 21cmEMUv3 paper quotes the HERA prior on τ as 0.0569 (+0.0081/−0.0086)
 [src: arXiv:2606.00219, Sect. 5.1]; the two readings disagree on the lower

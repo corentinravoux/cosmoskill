@@ -164,8 +164,8 @@ DES-SN5YR + DESI DR1 BAO, same r_d prior [src: arXiv:2406.05049, Table 1]:
 | 5th order | 67.26 (+0.73/−0.71) | −19.381 | 2.3 |
 
 The third order fits DES-SN5YR alone but not the higher-redshift BAO
-(Delta chi^2 = 81), so the too-short series raises H0 by 2.8 [der: 70.03
-− 67.19] [src: arXiv:2406.05049, Sect. 3]. With DES-Dovekie + DESI DR2: 66.54 ± 0.70
+(Delta chi^2 = 81) [src: arXiv:2406.05049, Sect. 3], so the too-short
+series returns a higher H0 than the fourth order (table above). With DES-Dovekie + DESI DR2: 66.54 ± 0.70
 (4th), 66.82 ± 0.74 (5th, weakly preferred, Delta AIC = 2.1), 66.59 ± 0.69
 with curvature free [src: arXiv:2602.12822, Table 1]. BOSS: PolyCDM 67.3 ±
 1.1, o w0waCDM 67.1 ± 1.1, LCDM "nearly unchanged" [src: arXiv:1411.1074,
@@ -255,7 +255,7 @@ general.
 <!-- key: what-goes-wrong -->
 
 - **Truncated cosmography.** A third-order series fits SNe alone but fails
-  once BAO at z > 1 are added and raises H0 by 2.8 [der]; test: Delta AIC and
+  once BAO at z > 1 are added and raises H0 (table above); test: Delta AIC and
   Delta chi^2 between orders on the joint data [src: arXiv:2406.05049,
   Sect. 3].
 - **Calling it independent of the CMB.** It "does depend on the drag scale

@@ -21,10 +21,10 @@ Already in L2, not repeated here: the list of analyses and their fσ8 values in
 `results.md#published-fsigma8-from-peculiar-velocities` and
 `results.md#history-of-the-key-numbers-what-is-superseded`; the three meanings of β in
 `physics-and-methods.md#conventions-units-and-where-the-community-is`; the Malmquist sizes of
-Stiskalek 2025 in `systematics.md#malmquist-bias-and-the-distance-prior`; the 1.04 method bias,
+Stiskalek 2025 in `systematics.md#malmquist-bias-and-the-distance-prior`; the method bias,
 the TITAN budget total and the residual-flow values in
 `systematics.md#reconstruction-systematics-velocity-density` and
-`results.md#residual-external-bulk-flows-from-velocity`; the 6.5 % linear/non-linear offset in
+`results.md#residual-external-bulk-flows-from-velocity`; the linear/non-linear offset in
 `results.md#linear-against-non-linear-sigma8`.
 
 Notation: this file follows Carrick et al. 2015 (arXiv:1504.04627) and Stiskalek 2025
@@ -59,8 +59,8 @@ iteration [src: arXiv:1504.04627, Sect. 2.5]:
 1. fit a Schechter luminosity function and compute luminosity (or number) weights, Eqs. 5–6;
 2. set 2MRS galaxies beyond 125 h⁻¹Mpc to zero weight; clone galaxies to fill incompleteness
    and the Zone of Avoidance (|b| < 5°, |b| < 10° near the Galactic centre, cloned from
-   adjacent strips) [src: Sect. 2.1];
-3. grid the weighted galaxies within 200 h⁻¹Mpc;
+   adjacent strips) [src: arXiv:1504.04627, Sect. 2.5 (125 h⁻¹Mpc cut); Sect. 2.1];
+3. grid the weighted galaxies within 200 h⁻¹Mpc [src: arXiv:1504.04627, Sect. 2.5];
 4. normalise δ_g to the bias of an L* galaxy and smooth with a 4 h⁻¹Mpc Gaussian;
 5. predict velocities with Eq. 9;
 6. turn redshifts into distances with the predicted line-of-sight velocity, using
@@ -210,8 +210,7 @@ volumes [src: arXiv:2101.04120, abstract]. Boubel et al. adopt that 5 % and add 
 ### Forward likelihood, inverse VELMOD or χ²
 <!-- key: forward-likelihood-inverse-velmod-or-chi2 -->
 
-Carrick et al. ran three on the same 2M++ field [src: arXiv:1504.04627, Sects. 4.2, 4.3,
-Table 1]:
+Carrick et al. ran three on the same 2M++ field [src: arXiv:1504.04627, Sects. 4.2, 4.3, Table 1]:
 
 | Method | Malmquist treatment | β* (LW) |
 |---|---|---|

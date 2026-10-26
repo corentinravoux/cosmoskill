@@ -16,7 +16,7 @@ From: Baxter 2022 Snowmass review (arXiv:2203.06795), Sect. II.2
 (arXiv:2503.00636), Sect. 3.4 (kSZ gas and feedback paragraph).
 
 Already in L2, not repeated here: the estimator families, the CAP formula
-and the DESI Y1 stacking estimator with r = 0.65
+and the DESI Y1 stacking estimator with r = 0.65 [sec: arXiv:2503.19870, Sect. IV.2]
 (`physics-and-methods.md#estimators`); the pairwise estimator, its bins and
 the τ̄ model dependence (`physics-and-methods.md#estimators`,
 `systematics.md#ksz-the-optical-depth-degeneracy`); r and photometric
@@ -34,8 +34,8 @@ baryon model is in `cosmo-weak-lensing/deep/baryonic-feedback.md`.
 Symbols: θ_d aperture radius of the filter; 𝒯(θ_d) CAP output in
 μK·arcmin²; τ optical depth; n_e free-electron density; ρ_gas gas density;
 v_r line-of-sight velocity, v_rms its root mean square; r correlation
-coefficient between stacking and true velocities; X_H = 0.76 hydrogen mass
-fraction; μ_e mean molecular weight per free electron; f_b = Ω_b/Ω_m;
+coefficient between stacking and true velocities; X_H hydrogen mass
+fraction (0.76 in arXiv:2506.07432, Sect. II.2.1); μ_e mean molecular weight per free electron; f_b = Ω_b/Ω_m;
 R_200, r_200c, M_200c radius and mass at 200 times the critical density;
 M_500 the same at 500; d_A angular-diameter distance; P_eg electron–galaxy
 power spectrum; A_k2h free amplitude of the two-halo term.
@@ -128,7 +128,7 @@ compares with NFW predictions (Vavagiakis et al. 2021, arXiv:2101.08373)
 ### Step 3. Choose the gas model
 <!-- key: step-3-choose-the-gas-model -->
 
-**GNFW density** (Amodeo 2020, Eq. 16, after its ref. [53]):
+**GNFW density** (Amodeo 2020, arXiv:2009.05558, Eq. 16, after its ref. [53]):
 ρ_GNFW(x) = ρ_0 (x/x_c,k)^γ_k [1 + (x/x_c,k)^α_k]^{−(β_k − γ_k)/α_k},
 ρ_gas = ρ_GNFW ρ_cr(z) f_b, x = r/R_200. The inner shape is unconstrained by
 SZ data, so γ_k = −0.2 and α_k = 1 are fixed; the free parameters are ρ_0,
@@ -141,7 +141,7 @@ signal; fixing x_c,k = 0.6 tightens log₁₀ρ_0 from 13% to 7%
 (Eq. 17) fixes γ_t = −0.3 and
 x_c,t = 0.497 (M_200/10¹⁴ M⊙)^−0.00865 (1 + z)^0.731 from simulations.
 
-**GNFW in harmonic space** (Qu 2026, Eqs. 23–24): the same form with
+**GNFW in harmonic space** (Qu 2026, arXiv:2604.19744, Eqs. 23–24): the same form with
 r/(x_c r_200c), α = 0.88 and γ = −0.2 fixed "to their fiducial values from
 Battaglia" because of "strong degeneracies between the five GNFW
 parameters"; sampled are log₁₀ρ_0 ∈ [1, 5], x_c,k ∈ [0.1, 1],
@@ -183,7 +183,7 @@ f_gas = 0.029 ± 0.006 at M_500c = 3 × 10¹³ M⊙ and 0.078 ± 0.004 at
 <!-- key: step-4-harmonic-space-measurement-and-the-hod -->
 
 Qu 2026 [src: Sects. III.3–III.4, IV.2]:
-1. Template π̂(θ) = (Ω_pix n̄_g^2D)⁻¹ Σ_{i∈pix} v_r,i/c on a 0.5′ CAR grid
+1. Template (arXiv:2604.19744) π̂(θ) = (Ω_pix n̄_g^2D)⁻¹ Σ_{i∈pix} v_r,i/c on a 0.5′ CAR grid
    (Eq. 10), an intensive quantity whose continuum limit is
    ∫ (dp/dχ)(1 + δ_g) v_r/c dχ (Eq. 11).
 2. Pseudo-C_ℓ with NaMaster; the bandpower window is applied to the theory
@@ -191,10 +191,10 @@ Qu 2026 [src: Sects. III.3–III.4, IV.2]:
 3. Theory C_ℓ^τg = ∫ dχ/χ² W_τ W_g P_eg(k_ℓ, z) with W_τ = σ_T a⁻² n̄_e
    (Eqs. 15–16), P_eg from the halo model (one-halo ∫ dn/dM ũ_τ ũ_g, Eq. 17;
    two-halo with halo bias, Eq. 18), computed with class_sz.
-4. Gaussian NaMaster covariance (Knox limit Eq. 25); Gaussian likelihood over
+4. Gaussian NaMaster covariance (arXiv:2604.19744; Knox limit Eq. 25); Gaussian likelihood over
    1000 ≤ ℓ ≤ 7000 (Sect. III.4.2; a footnote in Sect. IV.2 names
    ℓ = 1000–5000 as the fitting range); Cobaya until R − 1 < 0.01.
-5. HOD marginalisation: the DESI LRG HOD (AbacusHF-v2 baseline, Eqs. 31–32)
+5. HOD marginalisation (arXiv:2604.19744): the DESI LRG HOD (AbacusHF-v2 baseline, Eqs. 31–32)
    is fitted to the projected correlation function in three bins
    (0.4–0.6, 0.6–0.8, 0.8–1.1). A Gaussian-process emulator trained on 1000
    class_sz runs over the 10-dimensional HOD + gas space (median error
@@ -202,7 +202,7 @@ Qu 2026 [src: Sects. III.3–III.4, IV.2]:
    N_HOD = 100 HOD draws, uniform within the 5th–95th percentiles of the
    clustering posterior, at each step (Eq. 33). The completeness f_cen
    cancels in the n̄_g-normalised spectrum.
-6. Cosmology fixed to Planck 2018 TTTEEE; 50 posterior draws spanning ~4σ
+6. Cosmology fixed to Planck 2018 TTTEEE (arXiv:2604.19744); 50 posterior draws spanning ~4σ
    change D_ℓ^kSZ by 2–3%, against ~30% from the gas parameters (footnote 5).
 
 Real-space and harmonic results are linked by the CAP window
@@ -216,23 +216,23 @@ normalised to unit row sums [src: Sect. V.3].
 
 Bigwood 2025 (arXiv:2510.15822) builds the comparison for eight
 hydrodynamical runs [src: Sects. 3.1–3.4]:
-1. Place a snapshot box at its comoving distance, compute per gas cell the
+1. Place a snapshot box (arXiv:2510.15822) at its comoving distance, compute per gas cell the
    Doppler parameter b = v_r σ_T m_g / (μ_e m_p Ω_pix d_A² c) (Eq. 1) with
    μ_e = 1.17, excluding star-forming and T < 10⁵ K gas (no measurable
    change), on ≈ (0.2′)² pixels; ΔT_kSZ = −b T_CMB (Eq. 2). The 100 Mpc/h
    boxes are projected along three axes.
-2. Convolve with a 1.6′ Gaussian beam; apply the CAP filter; use the
+2. Convolve (arXiv:2510.15822) with a 1.6′ Gaussian beam; apply the CAP filter; use the
    inverse-variance, velocity-weighted estimator of Eq. 5 with **r_v = 1**,
    because the true galaxy velocities are used (satellites take the
    velocity of their central). Objects within 6√2′ of the box edge are
    dropped.
-3. Correct for cosmic variance: in 64 sub-boxes of 100 Mpc/h from a
+3. Correct for cosmic variance (arXiv:2510.15822, Sects. 3.1–3.4): in 64 sub-boxes of 100 Mpc/h from a
    400 Mpc/h BAHAMAS run the amplitude scatters, mainly through the rms
    line-of-sight velocity of the stacked haloes; 200 Mpc/h sub-boxes halve
    the scatter, and 400 Mpc/h boxes show none. Each profile is rescaled by
    the ratio of its stacked v_LOS,rms to the FLAMINGO value, which also puts
    all runs on the FLAMINGO cosmology.
-4. Match the selection in **halo mass**, not number density: the minimum
+4. Match the selection (arXiv:2510.15822) in **halo mass**, not number density: the minimum
    stellar mass in each simulation is tuned so that the mean halo mass
    equals the galaxy–galaxy-lensing value of Siegel 2025
    (log₁₀⟨M_500/M⊙⟩ = 13.31 for BGS, 13.30 for LRGs); the required cuts
@@ -277,10 +277,10 @@ hosts and some CMASS galaxies are satellites or miscentred (Li & Zheng
 <!-- key: step-7-the-projected-field-estimator -->
 
 Kusiak 2021 [src: arXiv:2102.01068, Sects. II.1, II.2, IV.1, IV.2]:
-1. Filter the cleaned CMB map with F(ℓ) = C_ℓ^kSZ/C_ℓ^tot normalised to a
+1. Filter (arXiv:2102.01068) the cleaned CMB map with F(ℓ) = C_ℓ^kSZ/C_ℓ^tot normalised to a
    unit maximum (Eq. 3), times the 5′ Gaussian beam (Eqs. 4–5); the filter
    removes ℓ < 100, which also removes the ISW, and peaks near ℓ ≈ 2000.
-2. Square in real space and cross with δ_g. In Limber,
+2. Square in real space and cross with δ_g (arXiv:2102.01068). In Limber,
    C_ℓ = c⁻² ∫ dη/η² W_g g² 𝒯(ℓ/η, η) (Eq. 6), with the triangle power
    spectrum built from the hybrid bispectrum approximated as
    (1/3) v_rms² B_m^NL (Eq. 8); Halofit v_rms raises the signal by ≈ 20%
@@ -293,7 +293,7 @@ Kusiak 2021 [src: arXiv:2102.01068, Sects. II.1, II.2, IV.1, IV.2]:
    leg; remove galaxy-correlated dust by "α-cleaning", a per-ℓ-bin linear
    combination (1 + α)T_LGMCA − αT_545 that nulls the cross with δ_g
    (Eq. 20).
-5. NaMaster bandpowers in 13 bins of Δℓ = 200 from 300 to 2900, Gaussian
+5. NaMaster bandpowers (arXiv:2102.01068, Sects. II.1, II.2, IV.1, IV.2) in 13 bins of Δℓ = 200 from 300 to 2900, Gaussian
    covariance, nearly diagonal but used in full.
 
 The estimator was introduced on Planck + WMAP × WISE [src:
@@ -319,8 +319,8 @@ of other contractions it omits (Rodriguez et al. 2025, arXiv:2509.03458)
   arXiv:2503.19870, Sect. V.2.2, Table 1].
 - **Matching the largest aperture** assumes all bound gas is enclosed there,
   but that point has the largest primary-CMB noise and contains a two-halo
-  term [src: same, Sect. V.2.1]. Same data: TNG PTE ~ 10⁻⁴⁸ against 0.046 when
-  free (Table 1).
+  term [src: arXiv:2503.19870, Sect. V.2.1]. Same data: TNG PTE ~ 10⁻⁴⁸ against 0.046 when
+  free [src: Table 1].
 - **Lensing mass matching** keeps the amplitude: fiducial BAHAMAS, FABLE and
   FLAMINGO are > 10σ from the LRG profile, and all simulations but FABLE and
   XFABLE are within 2σ of BGS [src: arXiv:2510.15822, Sect. 4.2, Table 2].
@@ -549,7 +549,7 @@ Sect. 5.3].
 
 - The two-halo term recipe of Amodeo 2020 (its Appendix A) and its pressure
   fit results (Sect. III.3) were not read.
-- Qu 2026 Table 1 (fixed-HOD constraints) and Appendix F (allowed GNFW
+- Qu 2026 (arXiv:2604.19744) Table 1 (fixed-HOD constraints) and Appendix F (allowed GNFW
   region) were not read; the discrepancy between the 1000–7000 and
   1000–5000 fitting ranges is as printed.
 - How the "σ" deviation in Table 2 of arXiv:2510.15822 is converted from χ²

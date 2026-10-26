@@ -12,10 +12,10 @@ secondary source; `[der]` derived here. Forecasts are labelled.
 
 **The facts.** In flat ΛCDM the DESI DR2 BAO and the CMB disagree at 2.3σ in
 the (Ω_m, h r_d) plane, up from 1.9σ in DR1, and at 2.0σ without CMB lensing
-[src] (DESI Collaboration 2025, arXiv:2503.14738). DESI is nevertheless
-consistent with the CMB acoustic scale θ_* [src]. Opening w0wa absorbs the
-mismatch: 3.1σ preference with the CMB, 2.8σ to 4.2σ with supernovae added
-[src].
+(DESI Collaboration 2025, arXiv:2503.14738) [src: Sect. VI]. DESI is
+nevertheless consistent with the CMB acoustic scale θ_* [src]. Opening w0wa
+absorbs the mismatch: 3.1σ preference with the CMB [src: Table 6], 2.8–4.2σ
+with supernovae added, depending on the sample [src: abstract].
 
 **The collaboration's reading.** "Unless there is an unknown systematic error
 associated with one or more datasets", ΛCDM is being challenged and dynamical
@@ -31,13 +31,13 @@ dark energy offers a possible solution [src] (arXiv:2503.14738, abstract).
   DESI BAO, and criticises the statistical methodology [src: abstract].
 - Ó Colgáin et al. 2024 (arXiv:2404.08633) traced the DR1 BAO-only preference
   for w0 > −1 to the LRG bin at z_eff = 0.51, which alone implied
-  Ω_m = 0.67 (+0.18/−0.17) [src]. For DR2, Ó Colgáin et al. 2025
+  Ω_m = 0.67 (+0.18/−0.17) [src: abstract]. For DR2, Ó Colgáin et al. 2025
   (arXiv:2504.04417) find that LRG1 remains the most prominent outlier
   jointly with ELG1, that LRG2 now has the greatest bearing on w0 > −1, and
   that removing any single bin does not restore w0 = −1 within 1σ [src].
 - DESI's own checks: the DR2 bins are mutually consistent in ΛCDM (largest
-  difference 1.8σ, between LRG1 and LRG3+ELG1; χ²/dof = 10.2/11) [src]
-  (arXiv:2503.14738); the unified-tracer reanalysis finds no missed feature
+  difference 1.8σ, between LRG1 and LRG3+ELG1; χ²/dof = 10.2/(13 − 2))
+  (arXiv:2503.14738) [src: Sect. III.3.1]; the unified-tracer reanalysis finds no missed feature
   in 0.8 < z < 1.6 [src] (Sanders et al. 2026, arXiv:2608.27830).
 
 **Critiques from the CMB side.** The mismatch depends on the optical depth:
@@ -49,13 +49,14 @@ polarisation [src: abstract] (Sailer et al. 2025, arXiv:2504.16932). Detail:
 **What the clustering data themselves say when more than BAO is used.**
 
 - DESI DR1 full shape (ShapeFit) + DR2 BAO, no CMB, no supernovae: 1.4σ from
-  ΛCDM [src] (Forero-Sánchez et al. 2026, arXiv:2602.18761).
+  ΛCDM (Forero-Sánchez et al. 2026, arXiv:2602.18761) [src: abstract].
 - Adding the LRG bispectrum weakens the evidence in every combination; DESI
   + CMB + DES-Dovekie supernovae gives 3.1σ, "driven primarily by the
-  CMB" [src] (Forero-Sánchez et al. 2026, arXiv:2606.23936).
+  CMB" (Forero-Sánchez et al. 2026, arXiv:2606.23936) [src: abstract for 3.1σ].
 - The Lyα AP measurement gives a higher Ω_m = 0.325 ± 0.018 at z = 2.33 and
-  lowers the DESI + CMB preference from 3.1σ to 2.7σ [src] (DESI
-  Collaboration 2026, arXiv:2607.27410; the 3.1σ is the DR2 BAO value).
+  lowers the DESI + CMB preference from 3.1σ to 2.7σ (DESI Collaboration
+  2026, arXiv:2607.27410) [src: abstract]; the 3.1σ is the DR2 BAO value
+  (arXiv:2503.14738) [src: Table 6].
 - Simulation-based priors: no statistically significant evidence (2.2σ
   without supernovae, 1.4σ with) [src: abstract] (Chudaykin et al. 2026,
   arXiv:2602.18554).
@@ -63,7 +64,7 @@ polarisation [src: abstract] (Sailer et al. 2025, arXiv:2504.16932). Detail:
 **Rule of judgment.** The significance of the w0wa preference has not grown
 monotonically with added clustering information from the same survey. Quote
 it with the exact data combination, and do not describe it as coming from
-"DESI" alone: DESI BAO alone is 1.7σ [src] (arXiv:2503.14738). The
+"DESI" alone: DESI BAO alone is 1.7σ (arXiv:2503.14738) [src: Table 6]. The
 interpretation belongs to `cosmo-dark-energy-modified-gravity`; supernova
 sample dependence to `cosmo-supernovae`.
 
@@ -71,14 +72,15 @@ sample dependence to `cosmo-supernovae`.
 <!-- key: the-lrg-bins-and-the-sdss-comparison -->
 
 DESI DR1 LRG2 (z = 0.71) gave D_M/r_d = 16.85 ± 0.32 against 17.86 ± 0.33 from
-SDSS at z = 0.70, about 3σ for an assumed correlation of 0.21 [src] (DESI
-Collaboration 2024, arXiv:2404.03002). DESI suggested an unlucky sample
+SDSS at z = 0.70, about 3σ for an assumed correlation of 0.21 (DESI
+Collaboration 2024, arXiv:2404.03002) [src: Sect. 3.3; 16.85 also in Table 1,
+17.86 ± 0.33 read in arXiv:2007.08991, Table 3]. DESI suggested an unlucky sample
 fluctuation, to be settled by DR2. DR2 gives 17.351 ± 0.177, between the two;
 the DESI–SDSS difference is about 2.6σ with the higher correlation (0.57)
 that the larger overlap now implies, 2.3σ against DESI's reanalysis of the
-SDSS catalogues, and 1.9σ if no correlation is assumed [src]
-(arXiv:2503.14738). A global comparison in four matched bins gives a KS
-p-value of 0.39 [src].
+SDSS catalogues, and 1.9σ if no correlation is assumed (arXiv:2503.14738)
+[src: Sect. III.3.2; 17.351 ± 0.177 from Table 4]. A global comparison in
+four matched bins gives a KS p-value of 0.39 [src: Sect. III.3.2].
 
 Status: not a discrepancy by the collaboration's criteria, not entirely gone
 either. The honest statement is that the significance depends on an
@@ -92,8 +94,8 @@ sample, with a still larger effective volume in this bin.
 the DESI baseline (three bias, two counterterm, two stochastic) [src]
 (arXiv:2411.12021). In ΛCDM with DESI DR1 the effect is small. In w0waCDM it dominates:
 Bayesian means and maximum-likelihood values differ by up to 6.6σ for full
-shape + BAO without supernovae [src] (Morawetz et al. 2025,
-arXiv:2508.11811).
+shape + BAO without supernovae (Morawetz et al. 2025,
+arXiv:2508.11811) [src: abstract].
 
 **Positions.**
 
@@ -124,17 +126,18 @@ BOSS EFT analyses gave σ8 = 0.721 ± 0.043 (Ivanov et al. 2020,
 arXiv:1909.05277), 0.692 (+0.035/−0.041) with free n_s (Philcox & Ivanov
 2022, arXiv:2112.04515) and 0.733 ± 0.047 (Chen et al. 2022,
 arXiv:2110.05530), against 0.811 ± 0.006 from Planck (Planck Collaboration
-2020, arXiv:1807.06209) [src]. Frequentist reanalysis found no indication of
-a BOSS–Planck tension [src] (arXiv:2309.04468). DESI DR1 gives
-0.842 ± 0.034 (DESI Collaboration 2024, arXiv:2411.12022), 0.863
+2020, arXiv:1807.06209), all [src: abstract]. Frequentist reanalysis found no
+indication of a BOSS–Planck tension [src: abstract] (arXiv:2309.04468). DESI
+DR1 gives 0.842 ± 0.034 (DESI Collaboration 2024, arXiv:2411.12022), 0.863
 (+0.048/−0.040) as a profile-likelihood interval (arXiv:2508.11811), and
 0.811 ± 0.030 in an independent P + B analysis (Chudaykin et al. 2025,
-arXiv:2507.13433) [src].
+arXiv:2507.13433), all [src: abstract].
 
 Still open: the simulation-based-prior analysis of the same DESI data returns
-0.766 ± 0.015, with the shift attributed to quasar HOD assumptions [src]
-(arXiv:2602.18554), while the combined-probe analysis from the same group
-gives 0.838 ± 0.017 [src] (Ivanov et al. 2026, arXiv:2601.16165). The
+0.766 ± 0.015, with the shift attributed to quasar HOD assumptions
+(arXiv:2602.18554) [src: abstract], while the combined-probe analysis from
+the same group gives 0.838 ± 0.017 (Ivanov et al. 2026, arXiv:2601.16165)
+[src: abstract]. The
 amplitude from clustering alone is therefore prior- and model-dependent at
 the level of its quoted error. Lensing-side S8: `cosmo-weak-lensing`.
 
@@ -159,7 +162,9 @@ the bispectrum.
 The θ-cut throws away pairs below 0.05° and with them small-scale
 information; PIP weights recover it but need many alternative assignment
 realisations and non-zero pair probabilities (Bianchi et al. 2024,
-arXiv:2411.12025; Pinon et al. 2024, arXiv:2406.04804). Whether DESI DR2
+arXiv:2411.12025; Pinon et al. 2024, arXiv:2406.04804; the 0.05° scale is
+the positioner patrol diameter, below which assignment affects clustering,
+arXiv:2406.04804, Sects. 2.1 and 2.3). Whether DESI DR2
 full-shape fits use PIP weights is not known at the snapshot.
 
 ## 7. f_NL from scale-dependent bias
@@ -168,9 +173,9 @@ full-shape fits use PIP weights is not known at the snapshot.
 - **The b_φ problem.** Constraints are on f_NL b_φ; marginalising over b_φ
   with wide priors is not conservative and biases the result [src] (Barreira
   2022, arXiv:2205.05673). DESI numbers move from −3.6 to +3.5 with the QSO
-  assumption alone [src] (Chaussidon et al. 2024, arXiv:2411.17623). A
-  simulation-based prior gives mean p ≈ 1.4 for DESI-like quasars [src]
-  (Fondi et al. 2026, arXiv:2602.12357).
+  assumption alone (Chaussidon et al. 2024, arXiv:2411.17623)
+  [src: abstract]. A simulation-based prior gives mean p ≈ 1.4 for DESI-like
+  quasars (Fondi et al. 2026, arXiv:2602.12357) [src: abstract].
 - **Imaging systematics** set the floor on the largest scales
   (`systematics.md` Sect. 5).
 - **Two-point versus bispectrum.** The DESI DR1 P + B analysis quotes
@@ -187,12 +192,12 @@ Full treatment: `cosmo-inflation-primordial`.
 ## 8. Under-used data
 <!-- key: under-used-data -->
 
-- BGS: the DR2 BAO analysis uses 1.19 million of more than 9.1 million BGS
+- BGS: the DR2 BAO analysis uses 1,188,526 of more than 9.1 million BGS
   redshifts at 0.1 < z < 0.4, because the pipeline assumes a roughly constant
   clustering amplitude; using all would add about 20% of effective volume
-  [src] (arXiv:2503.14738).
+  (arXiv:2503.14738) [src: Sect. II.1 and Table 2].
 - Hexadecapole and k > 0.20 h Mpc⁻¹ are excluded from the DESI DR1 baseline
-  [src] (arXiv:2411.12021).
+  (arXiv:2411.12021) [src: Sect. 4.7].
 - Higher-order statistics: the bispectrum is used so far only by supporting
   or independent analyses (arXiv:2606.23936; arXiv:2507.13433; Guandalin et
   al. 2026, arXiv:2610.01836). Detail: `cosmo-beyond-two-point`.
@@ -200,9 +205,10 @@ Full treatment: `cosmo-inflation-primordial`.
 ## 9. Reconstruction beyond the standard algorithm
 <!-- key: reconstruction-beyond-the-standard-algorithm -->
 
-Field-level and neural reconstructions promise 26% to 35% tighter BAO
-parameters on DESI-like LRG mocks (**mock result**, Bayer et al. 2026,
-arXiv:2603.15732). Open: robustness to survey systematics, covariance, and
+Field-level and neural reconstructions promise 26% (explicit field-level
+inference) and 35% (implicit inference) tighter BAO parameters on DESI-like
+LRG mocks (**mock result**, Bayer et al. 2026, arXiv:2603.15732)
+[src: abstract]. Open: robustness to survey systematics, covariance, and
 blinding of a forward-model reconstruction. No cosmological result from data
 with these methods was verified this session.
 
@@ -210,10 +216,11 @@ with these methods was verified this session.
 <!-- key: h0-from-clustering-with-and-without-rd -->
 
 BAO + BBN gives 68.51 ± 0.58 km/s/Mpc, 4.5σ from SH0ES, and assumes standard
-pre-recombination physics [src] (arXiv:2503.14738). The sound-horizon-free
-route through the equality scale gives 69.2 to 70.3 with errors of 1.2 to 1.8
-[src] (Zaborowski et al. 2025, arXiv:2510.19149), consistent with the
-r_d-based value. Agreement between the two routes is the clustering test of
+pre-recombination physics (arXiv:2503.14738) [src: Table 5 and Sect. VI].
+The sound-horizon-free route through the equality scale gives
+H0 = 69.2 (+1.3/−1.4), 70.3 (+1.4/−1.2) and 69.6 (+1.3/−1.8) km/s/Mpc for
+three choices of external Ω_m information (Zaborowski et al. 2025,
+arXiv:2510.19149) [src: abstract], consistent with the r_d-based value. Agreement between the two routes is the clustering test of
 early-universe modifications of r_d. Detail: `cosmo-distance-ladder-h0`.
 
 ## 11. What the next data will decide
@@ -223,19 +230,19 @@ early-universe modifications of r_d. Detail: `cosmo-distance-ladder-h0`.
 |---|---|---|
 | DESI DR2 galaxy full shape | not announced; "further papers" in 2026 per the April 2026 release [src] | prior-volume effects at 2–3 times the DR1 volume; fσ8(z); w0wa from clustering alone |
 | DESI full five-year BAO | 2027 [src] | the LRG bins; BAO–CMB mismatch at final precision |
-| Euclid DR1 clustering products | mid-2027 [src] | independent BAO and RSD at 0.9 < z < 1.8 with slitless systematics |
-| PFS, 4MOST CRS | no result yet | z > 1.6 ELG clustering; southern overlap with Rubin and Euclid |
+| Euclid DR1 clustering products | mid-2027 [src] | independent BAO and RSD at 0.9 < z < 1.8 (range of the BAO mocks, arXiv:2605.03446, abstract) with slitless systematics |
+| PFS, 4MOST CRS | no result yet | high-redshift ELG clustering; southern overlap with Rubin and Euclid |
 | SPHEREx | during the two-year survey | f_NL from all-sky low-resolution redshifts |
 | Roman | after commissioning | dense Hα clustering at z = 1–2 |
 
 **Forecasts** read this session:
 
 - Euclid BAO only, four redshift bins of DR1-like mocks: about 10% on Ω_m
-  and 3% on H0 r_s (**forecast** on mocks, arXiv:2605.03446) [src].
+  and 3% on H0 r_s (**forecast** on mocks, arXiv:2605.03446) [src: abstract].
 - PFS: 3% distances in six bins, 6% growth (**forecast**, 2014 design;
   Takada et al. 2014, arXiv:1206.0737) [src].
 - Roman reference survey: 10 million Hα and 2 million [O III] redshifts
-  (**forecast**, Wang et al. 2022, arXiv:2110.01829) [src].
+  (**forecast**, Wang et al. 2022, arXiv:2110.01829) [src: abstract].
 - Euclid Fisher forecasts for clustering and lensing: Euclid Collaboration:
   Blanchard et al. 2020, arXiv:1910.09273 (**forecast**; numbers not read).
 
@@ -246,10 +253,10 @@ early-universe modifications of r_d. Detail: `cosmo-distance-ladder-h0`.
    (arXiv:2404.03002).
 2. **"DESI alone prefers dynamical dark energy at 3–4σ."** DESI DR2 BAO alone:
    1.7σ; the 3.1σ needs the CMB and the 4.2σ needs DESY5 supernovae
-   (arXiv:2503.14738).
+   (arXiv:2503.14738) [src: Table 6].
 3. **"The DESI BAO–CMB tension is about 3σ."** It is 2.3σ in ΛCDM
    (arXiv:2503.14738); the Lyα AP update quotes 2.4σ before and 2.2σ after
-   (arXiv:2607.27410).
+   (arXiv:2607.27410) [src: abstract of each].
 4. **"Full-shape analyses find low σ8."** True of BOSS EFT posteriors, not of
    DESI DR1 (Sect. 4).
 5. **"DESI DR2 full shape shows …"** There is no DR2 galaxy full-shape
@@ -258,14 +265,16 @@ early-universe modifications of r_d. Detail: `cosmo-distance-ladder-h0`.
 6. **"The DR1 fσ8 points can be fitted directly."** They are fσ_s8 converted
    under r_d = r_d^fid, for visualisation only (arXiv:2411.12021).
 7. **"The LRG point at z = 0.51 drives everything."** It drove the DR1
-   BAO-only w0 > −1 preference (arXiv:2404.08633). In DR2 no single bin does
+   BAO-only w0 > −1 preference (arXiv:2404.08633) [src: abstract]. In DR2 no single bin does
    (arXiv:2504.04417).
 8. **"SDSS and DESI disagree at 3σ at z = 0.7."** That was DR1. DR2: about
-   2.6σ, or 2.3σ against the DESI reanalysis of SDSS (arXiv:2503.14738).
+   2.6σ, or 2.3σ against the DESI reanalysis of SDSS (arXiv:2503.14738)
+   [src: Sect. III.3.2].
 9. **"DESI LSS f_NL is now better than Planck."** The scale-dependent-bias
-   result has σ ≈ 9 against 5.1 for Planck (Planck Collaboration 2020,
-   arXiv:1905.05697); the −0.1 ± 7.4 figure is an independent P + B analysis
-   (arXiv:2512.04266).
+   result is −3.6 (+9.0/−9.1) (arXiv:2411.17623) against −0.9 ± 5.1 for
+   Planck (Planck Collaboration 2020, arXiv:1905.05697); the −0.1 ± 7.4
+   figure is an independent P + B analysis (arXiv:2512.04266); all
+   [src: abstract].
 10. **"Systematics dominate DESI BAO."** The systematic term raises the total
     α_iso error by at most 9% (arXiv:2503.14738).
 11. **Abstract of arXiv:2602.18761.** It prints w0 = 0.49; the paper's table

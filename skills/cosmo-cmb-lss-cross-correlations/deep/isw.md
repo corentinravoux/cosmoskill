@@ -59,7 +59,7 @@ of Nadathur 2016; R_v void radius; TS test statistic.
 - **Five catalogues** (arXiv:1710.03238, Sect. III): Planck 2015 SEVEM by
   default, with the union of the four confidence masks, and 100, 143 and
   217 GHz maps as achromaticity checks.
-- **Planck 2015 XXI** (Sect. 3.1): N_side = 64 maps; the expected signal and
+- **Planck 2015 XXI** (arXiv:1502.01595, Sect. 3.1): N_side = 64 maps; the expected signal and
   its covariance both come from 10,000 of 11,000 coherent CMB–tracer
   simulations.
 
@@ -102,7 +102,7 @@ Sect. 2.3) [src].
 | unWISE | NaMaster (MASTER) bandpowers; Δℓ = 16 over 20 < ℓ < 100, plus 7 < ℓ < 20 for Blue only; theory multiplied by the bandpower windows, checked on 100 noiseless Gaussian simulations | 300 Planck FFP10 end-to-end simulations crossed with the unWISE data, including the covariance between samples; Hartlap correction "tiny" for 5 bins; errors close to Gaussian [src: arXiv:2110.13959, Sect. 4] |
 | Quaia | NaMaster; 6 logarithmic bins to ℓ_max = 300 | 2000 correlated Gaussian realisations of T and g from (C_ℓ^TT, C_ℓ^gg, C_ℓ^Tg), a power law added to C_ℓ^gg to reproduce the observed excess, Planck noise added to T, Poisson-sampled quasar counts; Hartlap factor 0.996 [src: arXiv:2607.22461, Sects. 2.4, 2.6] |
 | Five catalogues | PolSpice; 4 bins over 4 ≤ ℓ ≤ 100, unweighted bin averages | PolSpice analytic covariance, block-averaged; nearly diagonal but used in full [src: arXiv:1710.03238, Sects. VI, VII.1] |
-| Planck 2015 XXI | ACPS at N_side = 64 | 10,000 coherent simulations [src: Sect. 3.1] |
+| Planck 2015 XXI | ACPS at N_side = 64 | 10,000 coherent simulations [src: arXiv:1502.01595, Sect. 3.1] |
 
 The ℓ_min of unWISE is set where the galaxy auto-spectrum departs from a
 model fitted on smaller scales (ℓ = 7 for Blue, 20 for Green and Red); the
@@ -148,7 +148,7 @@ Sect. 5.1].
 
 **Matched filter** (arXiv:1608.08638, Sects. III.1–III.3) [src]:
 1. Linear ISW, ΔT/T̄ = −2 ∫ a (1 − f) Φ dz (Eq. 2).
-2. From the BigMD simulation, the potential at a void scales with
+2. From the BigMD simulation (arXiv:1608.08638), the potential at a void scales with
    λ_v ≡ δ̄_g (R_eff,v/1 h⁻¹Mpc)^1.2 (Eq. 3) and at a supercluster with
    λ_c ≡ δ̄_g (R_eff,c/1 h⁻¹Mpc)^1.6 (Eq. 5); profiles
    Φ̄ = Φ_0/[1 + (r/r_0)²] (voids, Eq. 4) or with a free exponent α
@@ -160,7 +160,7 @@ Sect. 5.1].
    the template amplitude T_0 and of minimum variance, C_ℓ being the
    Planck map spectrum.
 4. Each template has expected S/N ≲ 0.1, so structures are binned in λ and
-   stacked.
+   stacked (arXiv:1608.08638, Sects. III.1–III.3).
 5. Errors from 2000 mocks: random CMB skies at the positions of randomly
    drawn QPM mock catalogues, which capture both CMB and catalogue
    variance.
@@ -172,15 +172,15 @@ Sect. 5.1].
 1. Freeze the superstructure selection on the galaxy maps and on the stacked
    CMB lensing signal, which has much higher S/N; only then stack the
    temperature.
-2. 2D finder: Gaussian smoothing σ = 20 h⁻¹Mpc/d(z); void centres among the
+2. 2D finder (arXiv:2105.11936, Sects. 3.1–3.3): Gaussian smoothing σ = 20 h⁻¹Mpc/d(z); void centres among the
    lowest 10% of smoothed pixels (δ_* ≈ −0.2); radius where the shell
    density first turns positive (R from 1 to 300 h⁻¹Mpc in steps of 2);
    clusters from the densest 5% of the inverted map; voids with less than
    70% of their area in the footprint dropped.
-3. Rotate each map to the structure centre, rescale by R_v to 3R_v, divide
+3. Rotate each map (arXiv:2105.11936) to the structure centre, rescale by R_v to 3R_v, divide
    the stacked map by the stacked mask (Eq. 14); ℓ < 10 removed from data
    and simulated ISW maps, which mis-simulate the largest modes.
-4. Covariance three ways — 1000 random CMB maps at the data positions,
+4. Covariance (arXiv:2105.11936, Sects. 3.1–3.3) three ways — 1000 random CMB maps at the data positions,
    1000 random position sets on the real CMB, jackknife over structures —
    in close agreement; Hartlap with p = 15.
 5. A_ISW = ΔT_data/ΔT_th against simulated light-cone templates.

@@ -56,7 +56,7 @@ of tritium nuclei; U_ej the electron-row elements of the mixing matrix;
 - **Rate.** Γ = Σ_j |U_ej|² σ̄ [n_j(ν_hR) + n_j(ν_hL)] N_T (Eq. 53).
   Dirac: Γ^D = σ̄ n₀ N_T (Eq. 54); Majorana: Γ^M = 2σ̄ n₀ N_T (Eq. 55),
   because relic Dirac neutrinos are all left-helical while Majorana
-  neutrinos populate both helicities; n₀ ≈ 56 cm⁻³ (Eq. 9) [src]. For
+  neutrinos populate both helicities; n₀ ≈ 56 cm⁻³ (Eq. 9) [src: arXiv:1405.7654]. For
   100 g of tritium, Γ^M ≈ 8.12 yr⁻¹ and Γ^D ≈ 4.06 yr⁻¹ (Eq. 57),
   independent of the mass while the neutrinos are non-relativistic
   [src: Sect. 3]. With clustering, helicities mix in bound orbits, but
@@ -90,8 +90,7 @@ arXiv:2202.04587]:
 
 1. **Data.** Integral spectra measured with a MAC-E filter, resolution
    ΔE = 2.8 eV at E₀ = 18.57 keV, 117 pixels merged; KNM1 analysed from
-   E₀ − 37 eV to E₀ + 49 eV (274 scans, 521.7 h), KNM2 from E₀ − 40 eV
-   to E₀ + 135 eV (361 scans, 743.7 h) [src].
+   E₀ − 37 eV to E₀ + 49 eV (274 scans, 521.7 h), KNM2 from E₀ − 40 eV to E₀ + 135 eV (361 scans, 743.7 h) [src: arXiv:2202.04587, Sect. "First measurement campaign (KNM1)" and the KNM2 paragraph after it; abstract for 18.57 keV].
 2. **Model.** R_calc(qU) = ∫ R_diff(E) f(E − qU) dE + R_bg (Eq. 1),
    f the response function, R_diff = R_β + R_CνB (Eq. 2), R_β with the
    molecular final-state distribution (Eq. 3). The capture term is a
@@ -99,7 +98,7 @@ arXiv:2202.04587]:
    (Eq. 4), ε_FSD the ground-state fraction: the 43% of captures that
    leave ³HeT⁺ electronically excited fall below the endpoint and are
    dropped, and ro-vibrational plus Doppler broadening is modelled as a
-   0.4 eV Gaussian, checked by simulation [src].
+   0.4 eV Gaussian, checked by simulation [src: arXiv:2202.04587].
 3. **Physical region.** Only m_ν² ≥ 0 is allowed, because the capture
    line position is undefined otherwise and an excess near the endpoint
    is "best explained with a positive (physical) neutrino capture
@@ -113,9 +112,9 @@ arXiv:2202.04587]:
    (−5.8 ± 5.2) × 10¹⁰, 5%; the KNM2 and combined contours are computed
    relative to the null hypothesis "so as not to benefit from the
    non-physical best fit"; the two campaigns are combined by adding χ²
-   surfaces, minimum χ² = 50.7 for 50 degrees of freedom [src].
+   surfaces, minimum χ² = 50.7 for 50 degrees of freedom [src: arXiv:2202.04587, Sect. "Combination of individual results" and the KNM1/KNM2 result paragraphs before it].
 5. **Result.** η < 9.7 × 10¹⁰ (90%) or 1.1 × 10¹¹ (95%); projected final
-   KATRIN sensitivity η < 10¹⁰ (90%) [src: abstract]. Earlier
+   KATRIN sensitivity η < 10¹⁰ (90%) [src: arXiv:2202.04587, abstract]. Earlier
    kinematic experiments gave about 10¹³ [src].
 
 ### Step 4. Forecast a dedicated experiment: PTOLEMY
@@ -127,7 +126,7 @@ The PTOLEMY collaboration's 2019 sensitivity study (arXiv:1902.05508
 1. **Binned counts.** β and capture events per bin of width Δ
    (Eqs. 17–18) plus a constant background; Γ_b ≈ 10⁻⁵ Hz in a 15 eV
    window, "1 or 2 per each energy bin per year", is required for
-   Δ = 50 meV [src: Sect. 4].
+   Δ = 50 meV [src: arXiv:1902.05508, Sect. 4].
 2. **Asimov data.** Expected counts with √N errors, no fluctuations
    (Eq. 21); systematic errors deferred until the detector design is
    fixed [src].
@@ -233,9 +232,9 @@ required number of events is "still far from any proposed realization"
 | PTOLEMY design resolution in the 2014 study | 0.15 eV | — | arXiv:1405.7654 | Sect. 3 |
 | Background requirement | Γ_b ≈ 10⁻⁵ Hz in 15 eV, for Δ = 50 meV | PTOLEMY forecast | arXiv:1902.05508 | Sect. 4 |
 | Prototype voltage control | resolution better than 500 meV needs a few ppm; achieved 0.2 ppm per 1 kV board, ≲ 50 mV over 10 kV | PTOLEMY prototype | Ammendola et al. 2025, arXiv:2512.19437 | abstract |
-| KATRIN spectrometer resolution | 2.8 eV at 18.57 keV | KATRIN 2019 | arXiv:2202.04587 | Experimental setup |
+| KATRIN spectrometer resolution | 2.8 eV at 18.57 keV | KATRIN 2019 | arXiv:2202.04587 | Sect. "Experimental setup"; abstract for 18.57 keV |
 | KATRIN overdensity limit | η < 9.7 × 10¹⁰ (90%), 1.1 × 10¹¹ (95%); final sensitivity < 10¹⁰ (90%) | KNM1 + KNM2 | arXiv:2202.04587 | abstract |
-| Molecular endpoint extension | ⟨E_GS⟩ ≈ 1.7 eV; irreducible below m_ν = 0.85 eV | KATRIN | arXiv:2202.04587 | Relic neutrino analysis |
+| Molecular endpoint extension | ⟨E_GS⟩ ≈ 1.7 eV; irreducible below m_ν = 0.85 eV | KATRIN | arXiv:2202.04587 | Sect. "Relic neutrino analysis" |
 | Zero-point broadening on graphene | 0.60–0.75 eV (chemisorption), 0.22–0.33 eV (physisorption) | tritium on graphene | arXiv:2101.10069 | Table 1 |
 | Clustering factor | ~1.0005 (0.01 eV) to ~3 (0.3 eV) | 27 simulated haloes | arXiv:2306.16444 | Sect. 4.1 |
 | Overdensity favoured by cosmology | 0.2 ≲ η ≲ 3.5 | compilation | arXiv:2207.12413 | abstract |
@@ -264,9 +263,7 @@ required number of events is "still far from any proposed realization"
 - **Reading A_CNB as a single property.** It combines the
   Dirac/Majorana factor, clustering and interactions
   (arXiv:1902.05508).
-- **Over-optimistic clustering.** For m_ν ≲ 0.05 eV the clustering
-  factor is close to one (arXiv:2306.16444); an assumed large η needs a
-  source.
+- **Over-optimistic clustering.** For neutrino masses between 0.01 and 0.3 eV the clustering factor ranges from 1 + O(10⁻³) to 1 + O(1) (arXiv:2306.16444, abstract; about 1.0005 at 0.01 eV, Sect. 4.1); an assumed large η needs a source.
 
 ## Reading list
 <!-- key: reading-list -->

@@ -71,7 +71,7 @@ Date-sorted leads not read (2025–2026, titles only): splashback of RASS-MCMF c
 ## 7. Method debates
 <!-- key: method-debates -->
 
-- How much does clustering add? More than 300% in figure of merit for Euclid-like optical samples [arXiv:2510.13509, **forecast**], but 2–8% on σ(w) for future SZ samples with current mass-relation priors, vanishing if the priors tighten by a factor of two [arXiv:2510.14464, **forecast**]. The answer depends on the assumed external mass calibration; a forecast that does not state it is not usable.
+- How much does clustering add? More than 300% in figure of merit for Euclid-like optical samples [src: abstract, arXiv:2510.13509, **forecast**], but 2–8% on σ(w) for future SZ samples with current mass-relation priors, vanishing if the priors tighten by a factor of two [src: abstract, arXiv:2510.14464, **forecast**]. The answer depends on the assumed external mass calibration; a forecast that does not state it is not usable.
 - Poisson, Gaussian or simulation-based likelihood (arXiv:2210.11093, arXiv:2602.11989).
 - Mass function: fitting function, emulator, or hydrodynamical calibration; the halo-finder dependence is unresolved at the level Euclid needs (arXiv:2208.02174).
 - Constant or mass-dependent bias: the choice moves Ω_m from 0.312 to 0.353 in the same data [src, arXiv:2509.02068]. [src: abstract]
@@ -101,7 +101,7 @@ Every row is a **forecast**.
 | Experiment | Forecast | Assumptions | Citation | Flag |
 |---|---|---|---|---|
 | Euclid photometric clusters | Δw0 = 0.03, Δwa = 0.2 with free curvature, figure of merit 291; with Planck Δw0 = 0.02, Δwa = 0.07, figure of merit 802; Δf_NL ~ 6.6; Δγ = 0.02; ΔΩ_ν = 0.0013 | Fisher matrix, 2015; depends on knowledge of the observable–mass relation, which the abstract calls "crucial" | Sartoris et al. 2016, arXiv:1505.02165 | [src] |
-| Euclid counts + clustering | photo-z broaden posteriors by 20–30%; clustering raises the figure of merit by more than 300% | 1000 Euclid-like mock catalogues | arXiv:2510.13509 | [src] |
+| Euclid counts + clustering | photo-z broaden posteriors by 20–30%; clustering raises the figure of merit by more than 300% | 1000 Euclid-like mock catalogues | arXiv:2510.13509 | [src: abstract] |
 | CMB-S4 wide and deep | 75000 clusters over f_sky = 50% and 14000 over 3%; about 1350 at z ≥ 2; σ(w0) ≲ 1%; 2.5–4.5σ detection of Σm_ν with CMB-cluster lensing calibration; CMB-HD three times more clusters | 2021 experiment configuration. CMB-S4 lost DOE and NSF support on 9 July 2025 [sec, `cosmo-cmb` SKILL.md], so these numbers describe a design, not a scheduled survey | Raghunathan et al. 2022, arXiv:2107.10250 | [src: abstract] |
 | Future SZ samples, 33000–140000 clusters | clustering improves σ(w) by 1.023–1.0790 and σ(Ω_m) by 1.068–1.145; with weak priors, the mass slope and redshift evolution of the relation improve by 1.389 ± 0.041 and 1.340 ± 0.039 | three prior levels on the mass–observable relation | Zhan & Reichardt 2025, arXiv:2510.14464 | [src: abstract] |
 | eROSITA-like sample | neglecting baryons in the mass function biases Ω_m low by about 0.01, comparable to the expected uncertainty | idealised survey, Magneticum | arXiv:1502.07357 | [src: abstract] |

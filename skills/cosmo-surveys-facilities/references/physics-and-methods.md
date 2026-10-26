@@ -22,71 +22,75 @@ given area to a given point-source depth scales as 1/(AΩ). The quantity
 ignores everything that differs most between ground and space: seeing, sky
 brightness, wavelength, detector efficiency and duty cycle.
 
-| Facility | Aperture used | Field | AΩ | Flag |
-|---|---|---|---|---|
-| Rubin (Simonyi) | 6.5 m effective (8.4 m primary) | 9.6 deg² | 319 m² deg² | inputs [src] arXiv:0805.2366; product [der], and stated as 319 m² deg² in its Table 1 [src: Table 1] |
-| HSC on Subaru | 8.2 m | 1.5° diameter, 1.77 deg² as a full disc | 93 m² deg² | inputs [src: Table 1] arXiv:1704.05858; product [der]; the paper calls HSC's étendue "the largest of all existing wide-field optical imaging cameras" before LSST [src: Sect. 2] |
-| ZTF (Palomar 48-inch) | 1.22 m | 47 deg² | 55 m² deg² | inputs [src] arXiv:1902.01932; product [der] |
-| DECam on Blanco | 4 m | 2.2° diameter (3.8 deg² as a full disc [der]); "3 sq. deg." stated as the field of view [src: Sect. I] | 38 m² deg² with 3 deg² (48 with the full disc) | inputs [src] arXiv:1504.02900; product [der] |
-| CSST | 2 m | about 1.1 deg² | 3.5 m² deg² | inputs [src] arXiv:2507.04618; product [der] |
-| Roman WFI | 2.4 m | 0.281 deg² | 1.3 m² deg² | inputs [src] arXiv:1902.05569; product [der] |
-| Euclid NISP | 1.20 m | 0.57 deg² | 0.64 m² deg² | inputs [src: Sect. 2] arXiv:2405.13493; product [der] |
-| Euclid VIS | 1.20 m | 0.54 deg² | 0.61 m² deg² | aperture [src: Sect. 2] arXiv:2405.13493, field [src] arXiv:2405.13492; product [der] |
+| Facility | Aperture | Field | Source and place |
+|---|---|---|---|
+| Rubin (Simonyi) | 8.4 m primary (6.5 m effective) | 9.6 deg²; étendue 319 m² deg² | arXiv:0805.2366 [src: abstract; Table 1 for the étendue] |
+| HSC on Subaru | 8.2 m | 1.5° diameter; effective area about 1.77 deg² once the focal plane beyond 49′ of the centre is masked | arXiv:1704.05858 [src: abstract; Sect. 2 and its Table 1] |
+| ZTF (Palomar 48-inch Schmidt) | 48-inch | 47 deg² field of view; light-sensitive area 47.7 deg² | arXiv:1902.01932 [src: abstract; Table 1] |
+| DECam on Blanco | 4 m | 2.2° diameter; "3 sq. deg." field of view | arXiv:1504.02900 [src: abstract; Sect. I] |
+| CSST | 2 m | about 1.1 deg² for the survey camera; full field of the optics 1.72 deg² | arXiv:2507.04618 [src: Sect. 3.2, 3.3] |
+| Roman WFI | 2.4 m | 0.281 deg² | arXiv:1902.05569 [src: abstract] |
+| Euclid NISP | 1.20 m | 0.57 deg² | arXiv:2405.13493 [src: abstract; Sect. 2] |
+| Euclid VIS | 1.2 m | 0.54 deg² (0.787° × 0.709° quoted in Sect. 2.2) | arXiv:2405.13492 [src: abstract; Sect. 2.2; Table 2] |
 
-Assumption for every [der] product: unobstructed circular aperture of the
-quoted diameter, A = π(D/2)². For Rubin the paper itself supplies the
-effective diameter; with the full 8.4 m the product would be 532 m² deg²,
-which is not the number to quote.
+No étendue is computed here (owner's rule of 2026-10-23); the agent-computed
+products of an earlier version are set aside in
+`docs/history/set-aside/2026-10-23/cosmo-surveys-facilities-physics-and-methods.md`.
+What the papers themselves state about survey speed:
 
-Three consequences that the table makes visible:
-
-- Rubin's etendue is about six times that of ZTF and six to eight times
-  that of DECam, depending on the DECam field adopted [der], which is
-  why it can revisit 18,000 deg² about 800 times in ten years
-  (arXiv:0805.2366) [src].
-- ZTF matches DECam in etendue with a telescope of one tenth the area [der]:
-  it buys cadence, not depth. Its design paper states "more than an order of
-  magnitude improvement in survey speed" over its predecessor
-  (arXiv:1902.01932) [src].
-- Space imagers have etendues one to two orders of magnitude below the
-  ground surveys [der]. They compete on resolution (0.18″ for VIS
-  [src], 0.074″ pixels for CSST [src]), on infrared background, and on
-  stability of the point-spread function, none of which enter AΩ.
+- LSST: the effective étendue "will be greater than 300 m2 deg2, which is
+  more than an order of magnitude larger than that of any existing
+  facility" [src: Sect. II] and a four-telescope Pan-STARRS would have "an
+  étendue about 6 times smaller than that of LSST" [src: Sect. II.3]
+  (arXiv:0805.2366). This is why LSST can observe an 18,000 deg² region
+  about 800 times in ten years [src: abstract].
+- ZTF: "more than an order of magnitude improvement in survey speed"
+  relative to PTF, from its 47 deg² field and 8 s readout
+  (arXiv:1902.01932) [src: abstract]: it buys cadence, not depth.
+- HSC: a survey power "about 8 times larger than that of Suprime-Cam", and
+  Subaru is the 8-m class telescope "with by far the largest field of view"
+  (arXiv:1704.05858) [src: Sect. 2].
+- Space imagers compete on resolution (VIS spatial resolution 0.18″,
+  arXiv:2405.13492 [src: abstract]; 0.074″ pixels for CSST, arXiv:2507.04618 [src:
+  Sect. 3.3]), on infrared background, and on stability of the
+  point-spread function, none of which enter AΩ.
 
 ### 1.2 Multi-object spectroscopy
 <!-- key: multi-object-spectroscopy -->
 
 For fibre spectrographs the analogue is collecting area times the number of
 fibres, with the fibre density on the sky deciding how many passes a target
-class needs.
+class needs. The table gives the inputs as the papers state them; no
+product or fibre density is computed here.
 
-| Facility | Aperture | Field | Fibres | Fibres per deg² | A × N_fibre [m²] | Flag for inputs |
-|---|---|---|---|---|---|---|
-| SDSS-V | 2.5 m | — | 500 per site | — | 2.5 × 10³ | [src: abstract] arXiv:2507.06989 |
-| WEAVE | 4.2 m | 2° diameter, 3.1 deg² | 960 (MOS-A) | about 310 | 1.3 × 10⁴ | [src: Table 2] arXiv:2212.03981 |
-| 4MOST | 4 m class | 4.2 deg² | 2436 | 580 | 3.1 × 10⁴ | [src] arXiv:1903.02464, arXiv:2606.27882 |
-| MOONS | 8 m class | 25′ diameter, 0.14 deg² | about 1000 | about 7300 | 5.0 × 10⁴ | [src] arXiv:2009.00628, arXiv:2009.00635 |
-| DESI | 4 m | 3.2° diameter, 8.0 deg² (requirement ≥ 7.65 deg²) | 5020 | 624 (requirement < 700) | 6.3 × 10⁴ | [src: abstract, Table 4] arXiv:2205.10939 |
-| PFS | 8.2 m | 1.25 deg² | 2386 | 1909 | 1.3 × 10⁵ | [src: abstract, Sect. 2] arXiv:2606.14012 |
-| Spec-S5 (**design**) | 6 m, two telescopes | — | 13,000 each | — | 3.7 × 10⁵ each | [sec: GC] arXiv:2608.07927 |
-| MUST (**design**) | 6.5 m | about 5 deg² | more than 20,000 | 4000 | 6.6 × 10⁵ | [src] arXiv:2605.10102 |
-| MSE (**design**, 2025) | 11.5 m | 1.5 deg² | more than 18,000 | 12,000 | 1.9 × 10⁶ | [src] arXiv:2503.15553 |
-| WST (**design**) | 12 m class | 3 deg² | 20,000 | 6700 | 2.3 × 10⁶ | [src] arXiv:2403.05398, arXiv:2607.01150 |
+| Facility | Aperture | Field | Fibres | Source and place |
+|---|---|---|---|---|
+| SDSS-V | 2.5-m Sloan and 100-inch du Pont | — | 500 zonal robotic fibre positioners feeding an optical (500 fibres) and a near-infrared (300 fibres) spectrograph | arXiv:2507.06989 [src: abstract] |
+| WEAVE | 4.2 m (William Herschel Telescope) | 2° diameter | 960 (MOS, plate A) | arXiv:2212.03981 [src: Sect. 1; Table 2 in Sect. 2.2] |
+| 4MOST | VISTA | 4.2 deg² | 2436 | arXiv:2606.27882 [src: abstract]; overview arXiv:1903.02464 |
+| MOONS | 8-m (VLT) | 25-arcminute field | 1000 | arXiv:2009.00628 [src: abstract]; field from arXiv:2009.00635 [src: abstract] |
+| DESI | 4 m (Mayall) | 3.2° diameter corrector, "8 deg2" field (requirement: no less than 7.65 deg²) | 5020; requirement: fibre density less than 700 per deg² | arXiv:2205.10939 [src: abstract; Sect. I; Table 4 in Sect. II.3] |
+| PFS | 8.2 m | 1.25 deg² | 2386 | arXiv:2606.14012 [src: abstract] |
+| Spec-S5 (**design**) | two 6-m telescopes | — | 13,000 per observatory | arXiv:2608.07927 [src: abstract; Table 1] |
+| MUST (**design**) | 6.5 m | about 5 deg² | more than 20,000 | arXiv:2605.10102 [src: abstract] |
+| MSE (**design**, 2025) | 11.5 m | 1.5 deg² | 18,000+ | arXiv:2503.15553 [src: abstract] |
+| WST (**design**) | 12 m | 3 deg² | 20,000 low-resolution plus 2,000 high-resolution | arXiv:2403.05398 [src: Summary; Sect. 1.2; Sect. 5.1, which assumes a "10–12m class facility"]; see also arXiv:2607.01150 |
 
-The last two columns are [der] with the same unobstructed-aperture
-assumption. They ignore throughput, fibre diameter, wavelength coverage,
+These inputs ignore throughput, fibre diameter, wavelength coverage,
 spectral resolution, reconfiguration time and the fraction of time awarded
 to cosmology, so they rank hardware, not surveys. What they show:
 
-- A "Stage-V" facility in the sense used by the MUST and WST papers is one
-  to two orders of magnitude above DESI in A × N_fibre [der].
-- DESI's fibre density, 624 per deg² [der], equals the density of its LRG
-  targets alone (624 per deg², arXiv:2404.03002) [sec: GC]. With BGS Bright
-  at 854 per deg² and QSO at 310 per deg² [sec: GC], every tile is
-  over-subscribed and completeness is built up by overlapping passes
-  (Sect. 5).
+- MUST calls itself "the first Stage-V spectroscopic facility currently
+  under construction" (arXiv:2605.10102) [src: abstract].
+- DESI's targets over-subscribe its fibres: the DR1 target densities are
+  624 deg⁻² for LRGs, 854 per deg² for BGS and 310 deg⁻² for QSOs
+  (arXiv:2404.03002) [src: Sect. "The Luminous Red Galaxy Sample", "The
+  Bright Galaxy Sample", "The Quasar Sample"], against a fibre-density
+  requirement of less than 700 per deg² (arXiv:2205.10939) [src: Table 4],
+  and completeness is built up by overlapping passes (Sect. 5).
 - PFS and MOONS trade field for aperture: high fibre density on small
-  fields suits deep, dense samples, not 14,000 deg² footprints.
+  fields suits deep, dense samples, not the wide footprints of DESI-class
+  surveys.
 
 ### 1.3 Slitless spectroscopy
 <!-- key: slitless-spectroscopy -->
@@ -123,13 +127,13 @@ How the vocabulary is used in the facility papers read this session [src]:
 - The CHIME analysis-method paper quotes its forecast as a figure-of-merit
   gain: a medium-sized cylinder telescope "improves the DETF Figure of Merit
   by around 70% over Planck and Stage II experiments" (**forecast**; Shaw et
-  al. 2015, arXiv:1401.2095).
+  al. 2015, arXiv:1401.2095, abstract).
 
 Rules for comparing figures of merit:
 
 1. A figure of merit is a property of a survey plus its priors plus its
    external data. The Euclid **forecast** of a (w0, wa) figure of merit above
-   400 is for all primary probes combined (arXiv:2510.09153) [sec: WL]; a
+   400 is for all primary probes combined (arXiv:2510.09153) [src: abstract]; a
    single-probe number from another paper is not comparable.
 2. Check whether curvature and neutrino mass are free. Font-Ribera et al.
    2014 (arXiv:1308.4164) [src] show that BAO-only dark-energy constraints
@@ -191,21 +195,21 @@ its noise is thermal and its limit is foreground removal (Sect. 8).
 
 | Survey | Quoted depth | Convention | Source |
 |---|---|---|---|
-| DES DR2 | g 24.7, r 24.4, i 23.8, z 23.1, Y 21.7 | S/N = 10, 1.95″ diameter aperture, coadd | arXiv:2101.05765 [src] |
+| DES DR2 | g 24.7, r 24.4, i 23.8, z 23.1, Y 21.7 | S/N = 10, 1.95″ diameter aperture, coadd | arXiv:2101.05765 [src: abstract] |
 | Legacy Surveys (DESI requirement) | g 24.0, r 23.4, z 22.5 | optimal-extraction depth of an exponential galaxy, 0.45″ half-light radius | arXiv:1804.08657 [src: App. A] |
-| UNIONS | u 23.7, g 24.5, r 24.2, i 23.8, z 23.3 | 10σ point source, 2″ aperture | arXiv:2503.13783 [src] |
+| UNIONS | u 23.7, g 24.5, r 24.2, i 23.8, z 23.3 | 10σ point source, 2″ aperture | arXiv:2503.13783 [src: abstract; Sect. II.2.2] |
 | HSC-SSP Wide | r ≈ 26; per band g 26.5, r 26.1, i 25.9, z 25.1, y 24.4 | 5σ point source (abstract), **design** | arXiv:1704.05858 [src; Table 2 per band] |
 | Pan-STARRS1 3π | g 23.3, r 23.2, i 23.1, z 22.3, y 21.4 | 5σ point source, stack | arXiv:1612.05560 [src: abstract] |
 | Rubin | r ≈ 24.5 single visit, r ≈ 27.5 coadd; per band ugrizy single visit 23.9, 25.0, 24.7, 24.0, 23.3, 22.1 and coadd 26.1, 27.4, 27.5, 26.8, 26.1, 24.9 | 5σ point source, zenith, **design** (about 0.2 mag lost at realistic airmass) | arXiv:0805.2366 [src: Table 1] |
 | Euclid VIS | m_AB > 24.5 | S/N > 10, extended source, single broad band | arXiv:2405.13492 [src: abstract] |
 | Euclid reference survey | 26.2 visible, 24.5 near-infrared | 5σ point source, pre-launch **design** | arXiv:2108.01201 [src: abstract] |
-| CSST | g ≈ 26 | 5σ point source, **design** | arXiv:2507.04618 [src] |
+| CSST | g "not less than 26 mag" | **design** | arXiv:2507.04618 [src: Sect. 4.2] |
 | Euclid NISP | Y_E 24.6, J_E 24.6, H_E 24.5 (requirement 24.0) | 5σ point source, model fit, initial in-flight | arXiv:2405.13493 [src: Table 5, Sect. 2] |
 | Roman HLWAS medium tier | 26.5 in Y, J, H | 5σ point source, about 600 s, **design** | arXiv:2505.10574 [src: Sect. II] |
 
 A 5σ point-source limit and a 10σ extended-source limit in the same data
 differ by more than a magnitude. The two Euclid rows describe the same
-instrument: 26.2 and "> 24.5" are not in conflict. Never rank surveys by
+instrument and are not in conflict. Never rank surveys by
 depth without converting to one convention.
 
 ### 4.2 Effective source density
@@ -215,10 +219,9 @@ For weak lensing the survey power is set by area, shape noise and the
 effective number density n_eff of sources (Chang et al. 2013,
 arXiv:1305.0793). That paper's **forecast** for LSST is n_eff ≈ 37 arcmin⁻²
 before blending and masking and ≈ 31 arcmin⁻² after rejecting seriously
-blended galaxies [src]. Delivered Stage-III values run from about 4.6 to 20
-arcmin⁻² (DECADE 4.59, UNIONS 4.96, DES Y3 5.59, KiDS-1000 6.17, DES Y6
-8.22, HSC Y3 19.9) [sec: WL]. Each survey uses its own n_eff definition, so
-the column is indicative; `cosmo-weak-lensing` gives the definitions.
+blended galaxies [src: abstract]. Delivered Stage-III values, each with its
+own n_eff definition and paper, are in `cosmo-weak-lensing`; they are not
+repeated here.
 
 ### 4.3 Uniformity and calibration as specifications
 <!-- key: uniformity-and-calibration-as-specifications -->
@@ -228,18 +231,19 @@ the column is indicative; `cosmo-weak-lensing` gives the definitions.
   arXiv:astro-ph/0703454) [src: abstract].
 - Forward global calibration with atmosphere and instrument models: 7 mmag
   uniformity over the 5000 deg² DES footprint, with chromatic corrections
-  needed to go below a percent (Burke et al. 2018, arXiv:1706.01542) [src];
+  needed to go below a percent (Burke et al. 2018, arXiv:1706.01542) [src:
+  abstract];
   DES DR2 reports better than 3 mmag uniformity against Gaia
   (arXiv:2101.05765) [src].
 - Pan-STARRS1: 7–12 mmag systematic floor depending on band
-  (arXiv:1612.05560) [src].
+  (arXiv:1612.05560) [src: abstract].
 - Uniform depth by design: the Legacy Surveys adjust exposure times
   dynamically (arXiv:1804.08657) [src]; DESI and PFS do the same for
   spectroscopy with an "effective exposure time" (arXiv:2306.06309;
   arXiv:2606.14012) [src].
 
-Photometric-redshift requirements (for example |Δ⟨z⟩| ≤ 0.002(1+z) per bin
-for Euclid) belong to `cosmo-weak-lensing`.
+Photometric-redshift requirements (for example on the mean redshift per
+tomographic bin for Euclid) belong to `cosmo-weak-lensing`.
 
 ## 5. Completeness and fibre assignment
 <!-- key: completeness-and-fibre-assignment -->
@@ -262,12 +266,12 @@ Hardware sets the pattern of what is missed:
   only a small disc, so the constraint is the number of targets per patrol
   area (Lasker et al. 2024, arXiv:2404.03006) [src].
 - Tilting spines (4MOST): 2436 spines positioned to about 0.27″ RMS on sky
-  after six months of operation (arXiv:2606.27882) [src].
+  after six months of operation (arXiv:2606.27882) [src: abstract].
 
 Because missed targets are clustered, assignment incompleteness suppresses
 the measured clustering in a scale-dependent way. In a DESI BGS mock the
 completeness is above 95% in low-density regions and below 10% in the
-centres of massive clusters (Smith et al. 2019, arXiv:1809.07355) [src].
+centres of massive clusters (Smith et al. 2019, arXiv:1809.07355) [src: abstract].
 The correction now standard is pairwise-inverse-probability (PIP)
 weighting: rerun the assignment many times, estimate for each pair the
 probability of being observed, and upweight (arXiv:1703.02070) [src]. It is
@@ -284,7 +288,7 @@ and a model-stage alternative removes small angular separations ("θ-cut")
 Survey scheduling is part of the specification. DESI plans each night in
 the afternoon, selects fields automatically, judges completeness in real
 time and updates the target list the next morning, over 15,000 fields
-(arXiv:2306.06309) [src]. PFS allocates "fibre hours" and co-observes
+(arXiv:2306.06309) [src: abstract]. PFS allocates "fibre hours" and co-observes
 several programmes in one exposure (arXiv:2606.14012) [src].
 
 ## 6. Cadence and time-domain strategy
@@ -293,7 +297,7 @@ several programmes in one exposure (arXiv:2606.14012) [src].
 | Survey | Cadence as specified | Source |
 |---|---|---|
 | ATLAS | whole visible sky every two days | arXiv:1802.00879 [src] |
-| ZTF | 47 deg² per exposure, 8 s readout | arXiv:1902.01932 [src] |
+| ZTF | 47 deg² per exposure, 8 s readout | arXiv:1902.01932 [src: abstract] |
 | YSE | about 750 deg² every three days in griz (2020) | arXiv:2010.09724 [src: abstract] |
 | Rubin | pairs of 15 s exposures, two visits per pointing per night; 10,000 deg² in one filter in three nights (**design**) | arXiv:0805.2366 [src: abstract] |
 | Roman HLTDS | about five-day cadence for two years, wide tier about 18 deg², deep tier about 6.5 deg² | arXiv:2505.10574 [src: Sect. II] |
@@ -326,20 +330,23 @@ still holds: for fixed detector sensitivity and observing time "a smaller
 beam provides significantly more information than a larger beam", and the
 uncertainties on n_s and r scale roughly with the beam size.
 
-Depths of the current maps, to fix orders of magnitude [sec: CMB]: ACT DR6
-has a median of 10 μK-arcmin over 19,000 deg²; SPT-3G D1 reaches 4.4
+Depths of the current maps, to fix orders of magnitude: ACT DR6 covers
+19,000 deg² with a median combined depth of 10 μK-arcmin (arXiv:2503.14451)
+[src: abstract]; SPT-3G D1 reaches 4.4
 μK-arcmin in intensity at 150 GHz over 1500 deg² (white-noise floors 5.4,
 4.4, 16.2 μK-arcmin in T and 8.4, 6.6, 25.8 in polarisation at 95, 150,
 220 GHz; coadded 3.3 and 5.1; atmosphere dominates T noise on large
 scales; arXiv:2506.20707 [src: Sect. IV.5]); Planck's white-noise levels
-are 0.55 μK_CMB deg in T at 143 GHz, about 33 μK-arcmin [der: × 60]
-(arXiv:1807.06205 [src: Table 4]); BK18 reaches 2.8
-μK-arcmin in Q/U at 95 and 150 GHz over about 400–600 deg². Depth and area
+are 0.55 μK_CMB deg in T at 143 GHz
+(arXiv:1807.06205 [src: Table 4]); BK18 reaches 2.8 μK-arcmin in Q/U at
+95 and 150 GHz, over an effective area of about 600 deg² at 95 GHz and
+about 400 deg² at 150 GHz (arXiv:2110.00483) [src: abstract]. Depth and area
 trade at fixed detector-years; the sample-variance term favours area for
 lensing and damping-tail science and depth on a small clean patch for
-primordial B modes. Hence the split into large-aperture telescopes (6 m and
-10 m) and small-aperture refractors (0.5 m class) at the Simons Observatory
-and the South Pole [sec: CMB]. Likelihood-level detail: `cosmo-cmb`.
+primordial B modes. Hence the split into one 6-m Large Aperture Telescope
+and three 0.5-m Small Aperture Telescopes at the Simons Observatory
+(arXiv:1808.07445) [src: abstract; Sect. II.1], and the same split between
+large and small telescopes at the South Pole [sec: CMB]. Likelihood-level detail: `cosmo-cmb`.
 
 ## 8. Radio and gravitational-wave figures of merit
 <!-- key: radio-and-gravitational-wave-figures-of-merit -->
@@ -355,12 +362,12 @@ a CHIME-like cylinder analysed with the m-mode formalism, unbiased power
 spectra require each feed's beam width known to 0.1% and amplifier gains
 known to 1% within each minute, and foreground cleaning leaves only
 k_∥ < 0.02 h/Mpc inaccessible (**forecast** on simulations;
-arXiv:1401.2095) [src]. Treatment: `cosmo-reionization-21cm`.
+arXiv:1401.2095) [src: abstract]. Treatment: `cosmo-reionization-21cm`.
 
 **HI galaxy and continuum surveys.** Specified like optical surveys:
 sensitivity per channel and resolution (WALLABY: about 1.6 mJy per beam per
-4 km/s channel at about 30″, arXiv:2002.07311 [src]) or continuum rms
-(DSA-2000 **design**: 500 nJy per beam, arXiv:1907.07648 [src]).
+4 km/s channel at about 30″, arXiv:2002.07311 [src: abstract]) or continuum rms
+(DSA-2000 **design**: 500 nJy per beam, arXiv:1907.07648 [src: abstract]).
 
 **Gravitational-wave detectors.** The quantities to quote are the number of
 candidates above a stated threshold and the localisation, not a depth. The

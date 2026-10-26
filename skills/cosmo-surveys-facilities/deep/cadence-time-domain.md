@@ -129,7 +129,7 @@ budget [src: arXiv:2205.07651, Sect. III]. The budget is
     DD_budget = N_visits^DD / (N_visits^DD + N_visits^non-DD),
     N_visits^DD = Σ_fields Σ_seasons N_visits,night × seaslen / cad
 
-[src: Eqs. 5–6], with N_visits^non-DD = 2,122,176 visits taken from LSST
+[src: arXiv:2205.07651, Eqs. 5–6], with N_visits^non-DD = 2,122,176 visits taken from LSST
 simulations [src: Sect. III]. Read off the budget contours: for 180-day
 seasons, ten seasons per field and a one-day cadence, a 3–15% budget allows
 7 to 42 visits per night; with two seasons per field it allows 36 to 208
@@ -140,9 +140,9 @@ seasons, ten seasons per field and a one-day cadence, a 3–15% budget allows
   to 400; seasons of at least six months are needed to collect at least 80%
   of the SNe Ia of the northernmost fields, and time dilation shortens the
   effective season at high z because SNe at the season edges have poor
-  light curves [src: Sect. III].
+  light curves [src: arXiv:2205.07651, Sect. III].
 - **Cadence.** "A regular cadence of observation (∼ 3 days max)" and few
-  gaps longer than 10 days [src: Sect. III].
+  gaps longer than 10 days [src: arXiv:2205.07651, Sect. III].
 - **Depth per night for a target completeness.** At one-day cadence and
   180-day seasons, z_complete = 0.80, 0.75, 0.70 need 149, 108 and 81
   visits per night (g/r/i/z/y = 2/9/62/56/20, 2/9/44/38/15, 2/9/33/31/6),
@@ -272,11 +272,12 @@ Sect. VI.6, Fig. 16].
 - **Intensive Deep Rolling (IDR):** two ultra-deep equatorial fields
   (COSMOS, XMM-LSS) to z_complete ~ 0.8 plus one deep field to ~0.6,
   observed every night with about 130 visits per night, achievable in a few
-  years [src: Sect. X, item 2].
+  years [src: arXiv:2205.07651, Sect. X, item 2].
 - **Result on equal budget.** At 5%, σ_w ≈ 1.3–1.4% for IDR against
   σ_w ≥ 2% for DU; DU collects about 1.8 times more well-measured SNe but
   IDR has 45% of its SNe at z ≥ 0.8 against 22% for DU, and the N(z) shape,
-  not the count, decides σ_w [src: Sects. VII.3, VIII, Fig. 11 caption]
+  not the count, decides σ_w [src: arXiv:2205.07651, Sects. VII.3, VIII,
+  Fig. 11 caption]
   (**forecast**). Going from 5% to 8% budget lowers σ_w by 20–25%; σ_w ≈
   1.1% needs 8% (DR) or 15% (DU) [src: Sect. VII.3]. The equatorial choice
   for the ultra-deep fields follows from host spectroscopy: PFS is "the only
@@ -338,7 +339,7 @@ integer-programming approach once readout fell from 40 s to 8 s
 | 1 × 30 s against 2 × 15 s | ~7% efficiency; metrics up to +20% | DESC | arXiv:2104.05676 | Sect. VII.1 |
 | Weather effect on transient metrics | up to 150% | DESC | arXiv:2104.05676 | Fig. 17 caption |
 | Usable SNe Ia, rolling active vs background | ~50% vs ~20% | DESC | arXiv:2210.15690 | Sect. V |
-| HLTDS core | 158 days; wide 18.27 deg² [der: 10.68 + 7.59], deep 6.47 deg² [der: 1.97 + 4.5] | Roman | arXiv:2505.10574 | Sect. III.2 |
+| HLTDS core | 158 days; wide imaging tier 10.68 deg² (North) and 7.59 deg² (South), deep imaging tier 1.97 and 4.5 deg²; "about 18 deg2" wide and "about 6.5 deg2" deep in Sect. II | Roman | arXiv:2505.10574 | Sect. III.2; Sect. II |
 | HLTDS good SNe Ia | ~7500 wide, ~6800 deep (**forecast**) | Roman | arXiv:2505.10574 | Sect. III.2 |
 | TiDES | ≤ 50,000 host redshifts to z ~ 1 in 5 yr (**forecast**) | 4MOST | arXiv:1903.02476 | abstract |
 | ZTF public cadence | 3 nights, g + r, ≥ 30 min apart | ZTF | arXiv:1905.02209 | Sect. VI.1 |
@@ -351,7 +352,7 @@ integer-programming approach once readout fell from 40 s to 8 s
   broad" [src: arXiv:2104.05676, Sect. VI.6]. Test: the per-band gap
   distribution and the fraction of gaps over 10 days, not the median.
 - **Simulated weather too kind.** Optimistic weather inflates transient
-  metrics by up to 150% [src: Sect. VI.7]. Test: rerun with the realistic
+  metrics by up to 150% [src: arXiv:2104.05676, Sect. VI.7]. Test: rerun with the realistic
   cloud threshold.
 - **Count instead of N(z).** A strategy with more SNe can give a worse σ_w
   if its redshift completeness is low [src: arXiv:2205.07651, Sect. VIII].

@@ -42,12 +42,13 @@ inverse variance, R_{k,i,j} resolution matrix, T_{k,i} fibre flat.
   redshifts [src: same].
 - **Negative trails** behind bright charge along the serial direction in
   some red and NIR amplifiers are linear and subtracted as a convolution
-  with K(x) = −(A/L) exp(−x/L), A = 5 × 10⁻⁵–1.2 × 10⁻³, L = 4–35 pixels
-  per amplifier; new readout parameters did not remove them
-  [src: Sect. IV.2.5, Table 1]. **Scattered light** was modelled only for
+  with K(x) = −(A/L) exp(−x/L), A and L fitted per affected amplifier
+  (Table 1), the amplitude "0.1% of the charge for the worst amplifier";
+  new readout parameters did not remove them
+  [src: arXiv:2209.14482, Sect. IV.2.5, Table 1]. **Scattered light** was modelled only for
   early, fogged-window data [src: Sect. IV.2.7].
 - **Pixel variance.** Read noise from the overscan: 3.4, 2.7, 2.5 e⁻ rms
-  (blue, red, NIR) [src: Sect. IV.2.9]. The usual σ̃²_P = σ²_R + P (Eq. 2)
+  (blue, red, NIR) [src: arXiv:2209.14482, Sect. IV.2.9]. The usual σ̃²_P = σ²_R + P (Eq. 2)
   correlates variance with pixel value, biasing an inverse-variance mean
   of P by −1 at leading order, and is truncated at low counts [src: same].
   DESI takes the Poisson term from a model image (boxcar extraction, flat,
@@ -92,7 +93,7 @@ partly resolved disk [src: same].
   (trace and wavelength Legendre coefficients; σ_x, σ_y; a_{ij}), line
   intensities fitted throughout, per block of 25 fibres (20 blocks, gaps
   of about two fibre spacings); no positivity in the fit, pixel-integrated
-  values forced positive at extraction [src: Sect. IV.3.2].
+  values forced positive at extraction [src: arXiv:2209.14482, Sect. IV.3.2].
 - **Stability criterion**: the emission-line flux bias from a PSF shape
   error, δF/F = Σ_i P_i P_i^truth / Σ_j P_j² − 1 (Eq. 4; model and true
   PSF integrated in pixel i, normalised), worst in the read-noise limit
@@ -200,7 +201,7 @@ rejection, then exactly [src: arXiv:2209.14482, Sect. IV.6.1]; twelve
   lamps give azimuthal uniformity better than 0.1%, with about 1% radial
   difference from the sky expected from vignetting; all cameras of a type
   share one mean spectrum, which inter-calibrates the ten spectrographs
-  [src: Sect. IV.6.2].
+  [src: arXiv:2209.14482, Sect. IV.6.2].
 - **Validation.** Corrected twilight flats show a few-percent gradient
   along one axis (sky brightness with elevation), the same in the three
   cameras, i.e. geometric and achromatic; dark-sky fibres over four nights
@@ -208,7 +209,7 @@ rejection, then exactly [src: arXiv:2209.14482, Sect. IV.6.1]; twelve
   sky normalisation (Step 6) [src: Sect. IV.6.3, Fig. 28].
 - **Humidity.** Collimator reflectivity dips at 3800 and 4400 Å move with
   humidity (8% in winter to 50% in summer); a humidity-binned model
-  corrects afternoon calibrations to the night [src: Sect. IV.6.4].
+  corrects afternoon calibrations to the night [src: arXiv:2209.14482, Sect. IV.6.4].
 - **Peers.** BOSS divides by extracted quartz-lamp flat spectra
   (arXiv:1208.0022) [src: Sect. IV.3]. LAMOST uses twilight flats, then
   rescales each fibre by its sky-line flux over the median of all fibres
@@ -249,7 +250,7 @@ are not modelled in that version [src: arXiv:2209.14482, Sect. IV.7.1].
   σ²_S̃ + (σ_T S̃)² + (ε_λ ∂_λ S̃)², σ_S̃ the sky-model error for the mean
   resolution, σ_T the flat error, ε_λ (typically 0.025 Å) set per sky line
   for χ²/ndf = 1 within ±3 Å on sky fibres and applied to all fibres only
-  there [src: Sect. IV.7.4, Fig. 32]. Neighbour correlations are about −0.8
+  there [src: arXiv:2209.14482, Sect. IV.7.4, Fig. 32]. Neighbour correlations are about −0.8
   in the deconvolved sky but a few percent after reconvolution, so only
   the diagonal for the mean R is stored [src: same, Fig. 31].
 
@@ -290,7 +291,7 @@ slitless background; levels in Numbers).
   halo stars, the proper-motion cut avoids peculiar cool-kinematics stars
   [src: arXiv:2209.14482, Sect. IV.8].
 - **Model fit.** Allende Prieto et al. grid (R = 10,000; T_eff in 500 K
-  steps, [Fe/H] −5 to +1 in 0.5 dex, log g 1–5 in 1 dex) [src: Sect. IV.8.1].
+  steps, [Fe/H] −5 to +1 in 0.5 dex, log g 1–5 in 1 dex) [src: arXiv:2209.14482, Sect. IV.8.1].
   Data and model are divided by a 160 Å sliding-median continuum (width
   empirical) so no prior calibration is needed; extra variance 0.12; sky
   lines, tellurics and interstellar Ca H&K masked; radial velocity by
@@ -301,7 +302,7 @@ slitless background; levels in Numbers).
   [src: Fig. 37].
 - **Rejection**: 3σ outliers in measured-to-model r flux over
   6000–7300 Å, and Δ(g − r) > 0.1 + 0.2 E(B − V), relaxed with extinction
-  for reddening-law uncertainty [src: Sect. IV.9.1]. **Calibration vector**:
+  for reddening-law uncertainty [src: arXiv:2209.14482, Sect. IV.9.1]. **Calibration vector**:
   per camera, a mean deconvolved C_j with a scale α_k per star for
   positioning offsets and outliers (Eq. 17), convolved with each fibre's R
   [src: Sect. IV.9.2].
@@ -310,7 +311,7 @@ slitless background; levels in Numbers).
   the point-source acceptance F_PSF gives the applied "flat to PSF" factor
   ⟨F_PSF(s)⟩ / F_PSF(s, r_F) × r_F² / ⟨r_F²⟩ (Eq. 18); a "PSF to fiber"
   factor for a 1.5″ fibre in 1″ seeing and an exponential profile (Eq. 19)
-  is stored as PSF_TO_FIBER_SPECFLUX, not applied [src: Sect. IV.9.3]: the
+  is stored as PSF_TO_FIBER_SPECFLUX, not applied [src: arXiv:2209.14482, Sect. IV.9.3]: the
   default is total flux for point sources, a lower limit for extended ones
   [src: Sect. IV.9].
 - **Peers.** BOSS fits the response over the focal plane from standards
@@ -568,3 +569,7 @@ consistent with imaging for both, 6% scatter at the bright end
   calibrations (arXiv:2503.15307, Sects. 2.3.6, 2.3.8, 2.4.1): not read.
 - Horne 1986 (doi:10.1086/131801) body not read; its variance argument is
   quoted through arXiv:2209.14482, Sect. IV.2.9.
+- Negative-trail kernel: this file gave A and L as ranges spanning the
+  rows of Table 1 of arXiv:2209.14482; the paper states no range, so the
+  ranges were removed (2026-10-25). The per-amplifier values are in that
+  table.

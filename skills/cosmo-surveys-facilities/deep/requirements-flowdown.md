@@ -171,15 +171,16 @@ use different definitions [src: arXiv:2405.13492, Sect. 2.1;
 arXiv:1210.7691, Table 1].
 
 **Weights per subsystem.** With R_gal = 0.20″ (limit m_AB = 24.5),
-convolutive PSF size R_C = 0.22″, non-convolutive R_NC = 0.05″ and
-|ε_C| < 0.1, the additive weights are a′₁ = 0.10 and a′₂ = 0.74 (PSF
+convolutive PSF size R_C = 0.22″, non-convolutive R_NC = 0.05″ and |ε_C|
+< 0.1, the additive weights are a′₁ = 0.10 and a′₂ = 0.74 (PSF
 ellipticity) against a′₃ = 1.0 × 10⁻³ and a′₄ = 4.2 × 10⁻³ (PSF size),
 and the multiplicative weights m′₁ = m′₅ = 0.60 (size) and m′₂ = 0.17
 (Eqs. 32–33) [src: arXiv:1210.7691, Sect. 2.4]. Conclusion stated there:
 ellipticity knowledge drives the additive budget, PSF size knowledge the
 multiplicative one [src].
 
-**Allocation tree.** The Euclid example tree of Cropper et al. allocates
+**Allocation tree.** The Euclid example tree of Cropper et al.
+(arXiv:1210.7691) allocates
 σ[|c|] = 1.3 × 10⁻⁴ against a cap of 3.2 × 10⁻⁴ and ⟨m⟩ = 1.5 × 10⁻³
 against 2.0 × 10⁻³, then splits downward: PSF-model ellipticity knowledge
 2.3 × 10⁻⁴, of which truncation error 2.1 × 10⁻⁴ and coefficient error
@@ -255,7 +256,7 @@ zenith over the band, maxima of 0.6″ (360–450 nm) and 0.5″ (450–980 nm),
 coatings at 98.5% transmission per surface, chief-ray deviation < 0.5° on
 average, focal-surface radius of curvature > 3000 mm, at most one
 aspheric surface per lens; the aspheric-departure limit came from vendors'
-interferometric testing [src: Sect. III.1].
+interferometric testing [src: arXiv:2205.10939, Sect. III.1].
 
 In Euclid the chain runs Science Requirements Document → Mission
 Requirements Document → system, instrument, processing, operations and
@@ -379,20 +380,24 @@ arXiv:2205.10939, Sect. II.2].
 DESI Survey Validation against the 2014 requirements [src:
 arXiv:2306.06307, Sect. V.3, Table 5]:
 
-- ELG: 860 + 180 deg⁻² (two selections) at 0.6 < z < 1.6 against 1280;
+- ELG: 860 deg⁻² for ELG_LOP at 0.6 < z < 1.6 against 1280 [src: Table 5];
   fibre-assignment efficiency 69% against the assumed 80%; the prime
   selection was cut from 2400 to 1941 deg⁻² because high-redshift
   galaxies could not be picked from grz imaging beyond a certain density,
   and a lower-priority selection filled the rest; the 1.1 < z < 1.6 sample
-  still beats the original 400 deg⁻² assumption at 450 deg⁻² [src].
+  still beats the original 400 deg⁻² assumption at 450 deg⁻² [src:
+  arXiv:2306.06307, Sect. V.3; Table 6 for 2400 and 1941].
 - LRG: redshift success high enough that faint LRGs (to z = 20.6) need
-  one epoch instead of two; target density 350 → 624 deg⁻², 80% more
-  reliable redshifts for 25 fewer exposures per deg² [src].
+  one epoch instead of two; target density 350 → 624 deg⁻², "80% more
+  targets" for 25 fewer exposures per deg² [src: arXiv:2306.06307,
+  Sect. V.3].
 - Quasars: target density raised by 20% to 311 deg⁻² for about 20% more
-  Lyα quasars at a cost of 30 more exposures per deg² (450 in total) [src].
+  Lyα quasars at a cost of 30 more exposures per deg² (450 in total) [src:
+  arXiv:2306.06307, Sect. V.3].
 - Lyα quasars: catastrophic failures 12.2% at 1000 km/s against < 2%;
   1.8% at 3000 km/s, so the requirement is met only "if the definition of
-  a catastrophic failure is relaxed" [src].
+  a catastrophic failure is relaxed" [src: arXiv:2306.06307, Table 5;
+  Sect. V.3].
 
 ### The ℓ range of a requirement
 <!-- key: the-ell-range-of-a-requirement -->
@@ -432,10 +437,10 @@ tied to the document version it comes from.
 | Level 1 BAO | 0.28% (0 < z < 1.1), 0.39% (1.1–1.9), H 1.05%; with margin 0.22%, 0.31%, 0.84% | DESI | arXiv:2205.10939 | Table 3 |
 | Level 1 systematics | 0.16% D_A, 0.26% H at z < 1.5 | DESI | arXiv:2205.10939 | Table 3 |
 | Corrector image quality | < 0.4″ field-weighted FWHM at zenith | DESI | arXiv:2205.10939 | Sect. III.1 |
-| Inter-exposure time | 2 min | DESI | arXiv:2205.10939 | Sect. II.3 |
+| Inter-exposure time | about 2 min to change between fields | DESI | arXiv:2205.10939 | Sect. I |
 | Minimum etendue for one data set | ~300 m² deg² | LSST | arXiv:0805.2366 | Sect. II.3 |
 | Minimum effective aperture | 6.4 m from coadd r ~ 27.5 | LSST | arXiv:0805.2366 | Sect. II.2.1 |
-| SV ELG density | 860 + 180 = 1040 deg⁻² [der: sum] against 1280 required | DESI | arXiv:2306.06307 | Table 5 |
+| SV ELG density | ELG_LOP at 0.6 < z < 1.6: 860 deg⁻² against at least 1280 deg⁻² required (L2.3.1) | DESI | arXiv:2306.06307 | Table 5 |
 | VIS flow-down size | > 4000 requirements | Euclid VIS | arXiv:2405.13492 | Sect. 2.1 |
 | Top-level FoM | > 500 (Y10, stat + sys, Stage III priors); per probe > 2 × Stage III | LSST DESC | arXiv:1809.01669 | Sect. 4 |
 | Calibratable budget | f_sys = 0.62 × stat (Y10, non-SN); 3×2pt shares 0.7/0.2/0.7/0.2 | LSST DESC | arXiv:1809.01669 | Sect. 5.2 |
@@ -482,15 +487,17 @@ tied to the document version it comes from.
   bounded by the Hα luminosity function, uncertain enough to need a 20%
   margin [src: arXiv:2110.01829, Sect. II.1]. Check the luminosity
   function behind a quoted density.
-- **Quoting an old version.** LiteBIRD's δr < 10⁻³ is the 2022
-  requirement, not the 2026 one (Revising the top-level number).
+- **Quoting an old version.** LiteBIRD's 2026 requirement is a total
+  uncertainty δr < 0.002 (arXiv:2607.25285) [src: abstract]; a δr < 10⁻³
+  quoted as the requirement comes from the earlier design (Revising the
+  top-level number).
 
 ## Reading list
 <!-- key: reading-list -->
 
 | Role | Paper | What for |
 |---|---|---|
-| Foundation | Amara & Réfrégier 2008, arXiv:0710.5171 | bias Fisher formalism and the 10⁻⁷ / 10⁻³ caps |
+| Foundation | Amara & Réfrégier 2008, arXiv:0710.5171 | bias Fisher formalism and the additive and multiplicative caps |
 | Foundation | Ivezić et al. 2019, arXiv:0805.2366, Sects. II.1.5–II.3 | shared constraints, aperture and etendue derivation |
 | Method | Massey et al. 2013, arXiv:1210.7690 | tolerance criterion by likelihood overlap, joint additive–multiplicative requirement |
 | Method | Cropper et al. 2013, arXiv:1210.7691 | integration over ℓ, subsystem weights and an allocation tree with Euclid values |
@@ -507,6 +514,11 @@ tied to the document version it comes from.
 ## Not verified
 <!-- key: not-verified -->
 
+- The DESI SV ELG density was given as "860 + 180 deg⁻²"; Table 5 of
+  arXiv:2306.06307 gives 860 deg⁻² for ELG_LOP, and no 180 deg⁻² value was
+  found in the paper, so it was removed (numbers run of 2026-10-24/25). The
+  inter-exposure time was placed in Sect. II.3; it is stated in Sect. I of
+  arXiv:2205.10939.
 - The Euclid Science Requirements and Mission Requirements Documents and
   the LSST Science Requirements Document are cited by the papers but not
   on arXiv; not read.

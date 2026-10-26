@@ -135,7 +135,7 @@ of each mode says which parameter a tension lives in [src: Sect. 4.4, Eq. 18].
    the sample standard deviations, and insert the resulting mean difference in the Gaussian `τ`
    statistic to express it in σ.
 3. Validation on Gaussian variates with the posterior sample sizes: systematic deviations of
-   0.1σ or less up to 4σ, scatter ±0.05σ.
+   0.1σ or less up to 4σ, scatter ±0.05σ (arXiv:2007.15632) [src: App. G.1].
 
 For KiDS-1000 3×2pt against Planck, `d_H = 0.95`, that is 3.1σ, equal to `τ` and to the S8
 parameter-shift estimate [src: Sect. 3.2, App. G.1]. KiDS-Legacy applies the same measure to the
@@ -201,8 +201,9 @@ real DES Y1 and Planck data all four give about 2.3σ, which remains with Planck
 (arXiv:2012.09554) [src: Sect. 7]. On KiDS-1000 3×2pt against Planck, three estimators that do
 and do not assume Gaussian marginals all give 3.1σ (arXiv:2007.15632) [src: Sect. 3.2]. The
 choice of metric matters less, on these two cases, than the choice of subspace and of reference
-data: compare the DES Y6 numbers of Step 3 and the 1.6σ–2.8σ spread of the CMB–BAO figures,
-which comes from the CMB combination.
+data: compare the DES Y6 numbers of Step 3 and the 1.6σ, 2.3σ and 2.8σ CMB–BAO figures
+(arXiv:2503.14452, arXiv:2503.14738, arXiv:2506.20707; abstract of each), a spread that comes from
+the CMB combination.
 
 When to use which:
 

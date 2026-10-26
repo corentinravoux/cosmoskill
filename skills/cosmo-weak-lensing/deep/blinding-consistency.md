@@ -124,16 +124,17 @@ blinded data vectors" (arXiv:2601.14559) [src: Sect. IV.8].
    model choices are frozen before the data vector is unblinded [src].
 3. Parameter stage, under ΛCDM and linear bias [src: App. A.1]:
    - goodness of fit Δ_PPD > 0.01 for ξ± (TATT and NLA), 2×2pt, 3×2pt and
-     3×2pt in wCDM;
+     3×2pt in wCDM (arXiv:2601.14559) [src: App. A.1];
    - seven pairwise consistency checks, P(2×2pt|3×2pt), P(ξ±|3×2pt),
      P(w|2×2pt), P(γ_t|2×2pt), P(w|ξ± + γ_t), P(γ_t|ξ± + w),
      P(ξ±|2×2pt), each Δ_PPD > 0.01, except P(w|ξ± + γ_t), exempted in
      advance because simulations showed prior-volume effects give very
-     small values even for self-consistent data;
+     small values even for self-consistent data (arXiv:2601.14559) [src:
+     App. A.1];
    - χ²/ν at the MAP, with χ² = −2 ln P_MAP − 2 Σ ln Δθ_i so that Gaussian
      priors count in the fit [src: Eq. 15], and ν = N_data − N_eff, N_eff
      = N_sampled − Tr(C_P C_π⁻¹) [src: Eq. 16]; the MAP is the best of
-     Powell searches started from the 20 highest-posterior samples [src:
+     Powell searches started from the 20 highest-posterior samples (arXiv:2601.14559) [src:
      Sect. IV.5];
    - visual check that the nuisance parameters with tight Gaussian priors
      (source and lens n(z) modes, m, magnification α) do not push against
@@ -170,7 +171,7 @@ subsets stay linked through the joint covariance [src: Sect. 4].
   data of subset A are simulated conditional on subset B with μ_A^sim =
   t_A(θ_B) + C_AB C_BB⁻¹ [d_B − t_B(θ_B)], C_A^sim = C_AA − C_AB C_BB⁻¹ C_BA
   [src: Eqs. 16–17]; p(A|B) is the fraction of samples with χ²[d_A^sim]
-  > χ²[d_A] [src: Eqs. 18–19]; threshold p > 0.01 [src: Sect. 4.1.1].
+  > χ²[d_A] [src: Eqs. 18–19]; threshold p > 0.01 (arXiv:2503.19442) [src: Sect. 4.1.1].
   Because TPD p-values "can result in p-values that are biased low" when
   the two posteriors sit far apart, the paper reads them as conservative
   and calibrates only a split that fails [src: Sect. 3.2.3].
@@ -178,7 +179,7 @@ subsets stay linked through the joint covariance [src: Sect. 4].
 Splits used: each redshift bin against the rest, auto- against
 cross-correlations, scales, north against south, red against blue (at
 T_B = 3.0, about a third red, and T_B = 1.9, about 16% red), and joint
-vectors of different statistics [src: Sects. 3.2, 4.2.2]. Red–blue
+vectors of different statistics (arXiv:2503.19442) [src: Sects. 3.2, 4.2.2]. Red–blue
 cross-correlations are left out of the data vector, because their mixed
 signal "cannot be easily modelled", but enter through the covariance [src:
 Sect. 4.2.2].
@@ -209,7 +210,7 @@ bin 2 was restored for a check (arXiv:2601.14559) [src: App. A.3, A.5].
 | Additive data-vector shift | preserves χ² and cross-probe consistency checks | relies on the model; can push nuisance posteriors to prior edges (2 of the large-truth-shift realisations), a false alarm for a standard validation check; Δχ² grows when both blinding and truth shifts are large (arXiv:1911.05929) [src: Sect. 4.5] | DES Y3, Y6; DESI DR1 3×2pt; LSST DESC |
 | Nuisance re-optimised at each cosmology | smaller ‖Δξ‖ bound | extra fits (arXiv:2512.15960) [src: Sect. 3.7] | DESI DR1 3×2pt |
 | Parameter-level hiding only | cheap | data vector unprotected | HSC (as an extra layer) |
-| PPD metric (Δ_PPD > 0.01) | works for correlated subsets, no parameter duplication | sensitive to covariance amplitude; some pairs dominated by prior volume | DES |
+| PPD metric (Δ_PPD > 0.01; arXiv:2601.14559 [src: Sect. IV.8, App. A.1]) | works for correlated subsets, no parameter duplication | sensitive to covariance amplitude; some pairs dominated by prior volume | DES |
 | Three tiers (evidence, parameter shift, TPD) | three views; TPD conservative | parameter duplication; N_Θ needs mocks; Bayes ratio prior-dependent | KiDS-Legacy |
 
 ## Numbers
@@ -307,6 +308,6 @@ bin 2 was restored for a check (arXiv:2601.14559) [src: App. A.3, A.5].
   this session.
 - The DES Y6 catalogue and data-vector null-test papers (cited as [151],
   [41], [61], [146] in arXiv:2601.14559) and their pass criteria.
-- The DES Y3 unblinding criteria beyond the p > 0.01 recorded in L2, and
+- The DES Y3 unblinding criteria beyond the p-value threshold recorded in L2, and
   the redMaGiC/MagLim switch of DES Y3 in relation to unblinding.
 - Whether UNIONS-3500 and DECADE blinded and how.

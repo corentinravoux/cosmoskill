@@ -89,7 +89,7 @@ DES writes the estimator in steps (Prat et al. 2021, arXiv:2105.13541):
 
 1. Tangential ellipticity of each pair, e_t = −e₁ cos 2φ − e₂ sin 2φ [src:
    Eq. 1]; weighted mean over pairs, γ_t = Σ w_LS e_t / Σ w_LS with w_LS =
-   w_l w_s, in 20 log bins over 2.5′–250′ [src: Eq. 2]. Lens weights remove
+   w_l w_s, in 20 log bins over 2.5′–250′ (arXiv:2105.13541) [src: Eq. 2]. Lens weights remove
    correlations with observing conditions; the mean weighted ellipticity of
    each source bin, a few 10⁻⁴, is subtracted first [src: Sect. III.1,
    Table 2].
@@ -105,7 +105,7 @@ DES writes the estimator in steps (Prat et al. 2021, arXiv:2105.13541):
    frame only for isotropic source distributions and constant additive
    shear, which fail near edges and masks; subtracting γ_t around randoms
    removes this and a covariance term from using the overdensity field
-   [src: Sect. III.3, Eq. 6]. DES Y3 uses 40 randoms per lens [src: Sect.
+   [src: Sect. III.3, Eq. 6]. DES Y3 uses 40 randoms per lens (arXiv:2105.13541) [src: Sect.
    III.3].
 4. **Response.** Divide by the mean response ⟨R⟩ = Σ w_s R_s / Σ w_s of the
    source bin [src: Eqs. 17–18]. DES Y6 measures R by finite differences
@@ -238,12 +238,12 @@ small scales the 3×2pt discards (row "Shear ratio, Y6" under Numbers).
 | Choice | Assumes | Buys | Costs | Who | Compared |
 |---|---|---|---|---|---|
 | MagLim vs redMaGiC lenses | photo-z of a magnitude-limited sample adequate | ×3.5 galaxies; +40% FoM (forecast setup) | 30% wider n(z); selection by photo-z exposes filter transitions | DES Y3, Y6 | redMaGiC Y3 failed X_lens; MagLim Y3 consistent with X_lens = 1 (arXiv:2105.13545) [src: Sect. V.4] |
-| Spectroscopic lenses | overlap area enough | exact lens n(z); ΔΣ in physical units | small overlap (416 deg² HSC); reference-cosmology correction | HSC Y3, KiDS-1000, DESI DR1 | three shear surveys on DESI lenses consistent (arXiv:2512.15960) [src] |
+| Spectroscopic lenses | overlap area enough | exact lens n(z); ΔΣ in physical units | small overlap (416 deg² HSC Y3, arXiv:2304.00702 [src: abstract]); reference-cosmology correction | HSC Y3, KiDS-1000, DESI DR1 | three shear surveys on DESI lenses consistent (arXiv:2512.15960) [src] |
 | Linear vs non-linear bias | perturbative bias valid to 4 h⁻¹Mpc | DES Y6: < 10% on S8, +14% FoM; DES Y3 redMaGiC 2×2pt: 17% (arXiv:2105.13545) [src] | prior-volume shifts ≈ 0.5σ vs ≈ 0.2σ (arXiv:2601.14559) [src: Sect. V.1.2]; compute | DES Y6 fiducial linear "because the gain ... is not sufficient to justify the added computational complexity" [src] | means equal, 0.789 both [src: Eqs. 21–22] |
 | PM marginalisation vs larger cuts | non-locality is a 1/θ² mode | ≈ 1.3 × tighter S8 for LSST Y1 2×2pt (**forecast**) (Prat et al. 2022, arXiv:2212.03734) [src] | S/N 55 → 28 (redMaGiC), 67 → 32 (MagLim) in Y3 (arXiv:2105.13541) [src: Sect. IV.2] | DES Y3, Y6, DESI DR1 | Υ statistic, Y-transform, "project-out": equivalent posteriors on LSST Y1 synthetic and DES Y3 data; only the removal of the 1/R² mode matters [src: arXiv:2212.03734, Sect. 5] |
 | PM with geometric information (one B^i per lens bin) | enclosed mass constant across the lens bin | tighter TATT parameters, especially b_TA | "slightly biased" for LSST Y1; must be retested on stronger data [src: arXiv:2212.03734, Sect. 5] | DES Y3, Y6 | — |
 | Boost measured vs modelled | — | independent of n(z) tails | needs randoms and jackknife errors | DES | Δχ² of omitting it: 9.8 (MagLim) all scales, 0.2 above 6 h⁻¹Mpc (arXiv:2105.13541) [src: Table 3]; Y6 ≈ 1–2 after cuts (arXiv:2601.15175) [src: Sect. V.5] |
-| Overlapping lens–source bins: model or drop | IA × bias model adequate | IA self-calibration, more pairs | IA model risk | DES models them; KiDS-1000 drops them; HSC Y3 selects sources with photo-z > 0.75 (arXiv:2304.00704) [src] | — |
+| Overlapping lens–source bins: model or drop | IA × bias model adequate | IA self-calibration, more pairs | IA model risk | DES models them; KiDS-1000 drops them; HSC Y3 selects sources with photo-z > 0.75 (arXiv:2304.00704) [src: abstract] | — |
 | Magnification priors from Balrog vs free | image simulation reproduces selection | tight α | data may prefer another amplitude | DES | Y3: free α preferred a different amplitude; lens cross-clustering allows uninformative priors "without any loss of constraining power" (arXiv:2209.09782) [src] |
 | γ_t vs ΔΣ vs band powers | — | γ_t: no cosmology in the measurement; ΔΣ: physical scales; band powers: E/B split | ΔΣ: reference-cosmology factor; band powers: k-leakage | DES / HSC / KiDS-1000 | — |
 | Scalar vs scale-dependent response | R isotropic and scale-free | simplicity | — | DES Y3, Y6 | Δχ² < 0.01 (Y6) (arXiv:2601.15175) [src: Sect. V.5]; 0.0078 (Y3) (arXiv:2105.13541) [src: Table 3] |

@@ -62,7 +62,7 @@ from the ngmix "bdf" model fits (bulge + disk sharing one size, fixed size
 ratio) of ~3 million sources detected in DES deep fields (three supernova
 fields and COSMOS), whose co-adds have S/N about √10 times the wide survey,
 with Poisson noise added [src: arXiv:2012.12825, Sect. III.1]. Selection
-[src: Sect. III.4]:
+[src: arXiv:2012.12825, Sect. III.4]:
 
 | Cut | Stated reason |
 |---|---|
@@ -74,7 +74,7 @@ with Poisson noise added [src: arXiv:2012.12825, Sect. III.1]. Selection
 
 After the cuts the main and auxiliary input catalogues hold about 1.23
 million and 746,000 objects; stars were added separately at 10% of the
-injections, sampled to g = 27 [src: Sect. III.4].
+injections, sampled to g = 27 [src: arXiv:2012.12825, Sect. III.4].
 
 Extinction: each deep-field object is dereddened with the mean SFD E(B−V)
 of five points of its CCD and re-reddened with the five-point mean of the
@@ -125,13 +125,15 @@ arXiv:2012.12825, Sect. III.5]. Balrog Y3 therefore saves the full
 remeasured catalogue and applies a two-step match [src: same]:
 
 - Injection positions matched to the nearest detection within
-  r₁ = 0.5″.
+  r₁ = 0.5″ [src: arXiv:2012.12825, Sect. III.5].
 - Then matched to Y3 Gold within r₂ = 0.5″–2.0″ in 0.25″ steps; the
   "antecedent" of a blend is the brighter of the contributors by mean riz
   GAp flux (4″ FWHM Gaussian aperture on the PSF-deconvolved profile);
-  injections fainter than a real neighbour get match_flag = 2 and are cut.
+  injections fainter than a real neighbour get match_flag = 2 and are cut
+  [src: arXiv:2012.12825, Sect. III.5].
 - Over 96% of candidates have no Gold source within the aperture;
-  ambiguous cases are < 1.5% at the Y3 injection density.
+  ambiguous cases are < 1.5% at the Y3 injection density
+  [src: arXiv:2012.12825, Sect. III.5].
 
 Y6 replaces this with a more conservative flag: every detected injection
 with a real object within 1.5″ is removed, whatever their relative
@@ -154,13 +156,14 @@ Balrog Y3 validation ladder [src: arXiv:2012.12825, Sect. II.3]:
    renderings.
 3. Blank-image runs on a sparse grid, first with Poisson noise only, then
    with Gaussian sky noise of the CCD SKYVAR; final version on 200 tiles,
-   2.3 million injections, 1.6 million detections.
+   2.3 million injections, 1.6 million detections
+   [src: arXiv:2012.12825, Sect. II.3].
 
 The blank-image runs found a ~7.5 mmag faint offset for one subgroup,
 traced to different priors on the bulge fraction (fracdev) in the
 deep-field model and in the wide-field CModel; this sets a ~3 mmag floor on
 the mean magnitude response measurable with deep-field inputs, while colours
-are unaffected [src: Sect. II.3].
+are unaffected [src: arXiv:2012.12825, Sect. II.3, Fig. 3].
 
 ### Step 7. Turn the output into a product
 <!-- key: step-7-turn-the-output-into-a-product -->

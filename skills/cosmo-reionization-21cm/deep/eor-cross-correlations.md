@@ -64,7 +64,8 @@ As Gagnon-Hartman, Davies & Mesinger write it [src: arXiv:2502.20447, Sect. 3]:
   θ_FoV the angular radius of the beam; three scenarios: fiducial (this
   slope), pessimistic (doubled), optimistic (halved, as a stand-in for
   foreground recovery inside the wedge), with k_∥ ≤ 0.07 Mpc⁻¹ excised
-  (fiducial, optimistic) or ≤ 0.175 Mpc⁻¹ (pessimistic).
+  (fiducial, optimistic) or ≤ 0.175 Mpc⁻¹ (pessimistic) [src: arXiv:2502.20447,
+  Sect. 3].
 - Galaxy redshift errors are not cut but carried in the noise (Step 3).
 - Contaminated modes are treated as unusable and the others as clean. The
   authors note that keeping modes with uncorrelated systematics "might

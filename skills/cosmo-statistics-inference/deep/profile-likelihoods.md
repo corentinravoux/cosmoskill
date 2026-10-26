@@ -63,14 +63,14 @@ DESI DR1, the most fully documented collaboration recipe (arXiv:2508.11811) [src
 
 1. Profile bounds fixed in advance from test runs, to cover approximately the `Δχ² ≤ 9` (3σ) region.
 2. 16 entries per one-dimensional profile, with extra entries where the interpolation showed
-   features.
-3. 10 to 20 independent optimisations per entry: the first started from the exact
+   features (arXiv:2508.11811) [src: Sect. 3.3].
+3. 10 to 20 independent optimisations per entry (arXiv:2508.11811) [src: Sect. 3.3]: the first started from the exact
    maximum-likelihood point (profiled parameter excepted), the others from the
    maximum-likelihood point displaced at random by amounts proportional to the MCMC variance;
    more for data sets without supernovae, and more again for noisy entries.
 4. Quadratic interpolation in log-likelihood space between entries, so that the minimum `χ²` is
    not tied to a grid point and the `Δχ²` crossings can be found.
-5. Two-dimensional profiles on a 16 × 16 grid, contours by cubic interpolation.
+5. Two-dimensional profiles on a 16 × 16 grid, contours by cubic interpolation (arXiv:2508.11811) [src: Sect. 3.3].
 
 The intervals are read at `Δχ²(θ_i) < 1 (4)` in one dimension and `Δχ²(θ_i, θ_j) < 2.30 (6.17)`
 in two, with `Δχ² ≡ −2 log(L(θ_i)/L_max)` [src: Eqs. 2–3]; the paper states that the asymptotic
@@ -222,9 +222,9 @@ App. A].
 | Construction | Assumes | Buys | Costs | Used by | Same-data comparison |
 |---|---|---|---|---|---|
 | Marginal posterior, HPD or mean ± σ | prior is meaningful | standard, cheap from chains | projection effects; credible ≠ confidence | collaboration headlines | w0waCDM H0 credible intervals undercover "dramatically" on DESI DR1 mocks (arXiv:2508.11811) [src: App. A] |
-| MAP + PJ-HPD | posterior samples dense near the MAP | contains the best fit, Bayesian | boundaries scatter (tens of samples set them); a few tens of optimisations | KiDS-1000, KiDS-Legacy, DES Y6 | KiDS-1000 mocks: S8 interval 0.054–0.057 marginal against 0.057–0.072 PJ-HPD (`deep/covariance-estimation.md`) |
+| MAP + PJ-HPD | posterior samples dense near the MAP | contains the best fit, Bayesian | boundaries scatter (tens of samples set them); a few tens of optimisations | KiDS-1000, KiDS-Legacy, DES Y6 | KiDS-1000 synthetic runs, analytic and mock covariances: S8 1σ widths 0.054, 0.056, 0.054, 0.057 marginal against 0.072, 0.062, 0.057, 0.066 PJ-HPD (arXiv:2007.01844, Table 5, IDs 9–12; `deep/covariance-estimation.md`) |
 | Profile, graphical `Δχ² = 1, 4` | Wilks and Wald hold; no boundary | no prior; reparameterisation invariant | 16+ optimisations per point, ×10–20 restarts | DESI DR1 frequentist; Herold 2025 | ΛCDM and w0waCDM H0 profile coverage consistent with 68.3% on 100 DESI mocks (arXiv:2508.11811) [src: App. A] |
-| Profile + parabola + Feldman–Cousins | Gaussian in the profiled parameter, near a boundary | boundary-correct limit; separates `σ` from `μ_0` | parabolic-fit dependence | DESI DR2 neutrinos; Chebat 2025 | DESI DR2 BAO + CMB: 0.053 eV in both papers (arXiv:2503.14744, arXiv:2507.12401) [src] |
+| Profile + parabola + Feldman–Cousins | Gaussian in the profiled parameter, near a boundary | boundary-correct limit; separates `σ` from `μ_0` | parabolic-fit dependence | DESI DR2 neutrinos; Chebat 2025 | DESI DR2 BAO + CMB: 0.053 eV in both papers (arXiv:2503.14744, arXiv:2507.12401, where it is 53 meV with Planck PR4 and CMB lensing) [src: abstract of each] |
 | Full Neyman construction with mocks | fast mocks and likelihood | exact coverage | prohibitive for Boltzmann-code likelihoods | not used for a headline | recommended for w0CDM with Planck-lite (`physics-and-methods.md#when-the-graphical-construction-can-be-trusted`) |
 | Profile binned from an MCMC | dense chains | free, a quick projection test | noisy, biased by prior volume, can miss the minimum | initialisation in PROSPECT and Procoli | > 4 in `χ²` above the optimised profile for EDE (arXiv:2401.14225) [src: Sect. III.2] |
 
@@ -328,7 +328,7 @@ KiDS-1000, arXiv:2007.01844) [src: Sect. 7].
   paper doing it in full was read.
 - Gómez-Valent 2022 (arXiv:2203.16285): the binned-chain method is described only as summarised
   in arXiv:2312.02972 and arXiv:2504.01669.
-- The coverage percentages of DESI App. A were read from the text, not from Fig. 6; only
+- The coverage percentages of DESI App. A (arXiv:2508.11811) were read from the text, not from Fig. 6; only
   "consistent with 68.3%" and "dramatic undercoverage" are quoted.
 - Chebat et al. Eq. 4 is quoted for its ordering ratio only; the integrand of their coverage
   condition was not checked against Feldman & Cousins.

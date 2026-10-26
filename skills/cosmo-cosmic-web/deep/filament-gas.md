@@ -121,11 +121,13 @@ arXiv:2406.00105, Sects. 4.1–4.2]:
 2. AGN and X-ray binaries from their own relations (Sects. 4.1.2–4.1.3,
    not read).
 3. Integrated over 0–10 Mpc: 20% halo, 12% AGN, 5% XRB, total 37%;
-   bootstrap relative uncertainties 6.9%, 1.8%, 1.4% (Table 2).
+   bootstrap relative uncertainties 6.9%, 1.8%, 1.4% (arXiv:2406.00105,
+   Table 2).
 4. Photo-z losses: recovered-flux fraction f = (D_L²(z_true)/n_MC) Σ_i
    w_i/D_L²(z_i) (Eq. 8), w_i = 1 if 0.15 < z_i < 0.7; ~1 for 11 < log M*
    < 12, ~80% for 9.5 < log M* < 11 at z > 0.3, raising the total to
-   "as high as ~40%" and leaving ~60% WHIM at 5.4σ.
+   "as high as ~40%" [src: arXiv:2406.00105, Sect. 4.2] and leaving ~60%
+   WHIM at 5.4σ [src: abstract].
 5. In the spectral fit the three contaminant normalisations are coupled
    at these ratios [src: Sect. 5.2].
 
@@ -170,8 +172,8 @@ the simulations' cosmic variance [src: Sect. V.1].
 
 The two definitions χ² and χ² − χ²_null differ by the null term, and the
 two tSZ filament analyses above also differ in map, sample and radial
-range, so their 4.4 and 7.82 cannot be compared as a gain from the data
-alone [der: from the definitions read].
+range, so their two significances cannot be compared as a gain from the
+data alone [der: from the definitions read].
 
 ### Step 7. Convert a profile into δ and T
 <!-- key: step-7-convert-a-profile-into-delta-and-t -->

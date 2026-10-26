@@ -110,7 +110,7 @@ arXiv:2306.05492, Sects. 2.1–2.3]:
   80 (high resolution) and 200 km/s (intermediate) the kicks lose their effect
   (overcooling or escape speed); above 400 and 800 km/s they are too rarely
   sampled, the expected number of kicks per star particle being ⟨N_kicks⟩ =
-  1.85 (f_SN/0.25)(Δv_SN/400 km/s)^−2 (Eq. 3), about 2 and 0.4.
+  1.85 (f_SN/0.25)(Δv_SN/400 km/s)^−2 (Eq. 3), about 2 and 0.4 [src: arXiv:2306.05492, Sect. 2.1].
 - Bondi accretion (Eq. 4) carries a boost α = max[(n_H/n_H,*)^β_BH, 1] (Eq. 5,
   after Booth & Schaye 2009, arXiv:0904.2572), n_H,* = 0.1 cm^−3, needed
   because the Bondi radius and the interstellar phases are unresolved.
@@ -123,7 +123,7 @@ arXiv:2306.05492, Sects. 2.1–2.3]:
 - Self-regulation requires the time between AGN events to be shorter than the
   black-hole growth time, t_AGN/t_BH ≈ 0.98 (m_g/1.09 × 10^9 M_⊙) (n_heat
   ΔT_AGN/10^8.5 K)(m_BH/10^7 M_⊙)^−1 (Eqs. 7–9), hence ΔT_AGN ≲ 10^8.5 K at
-  intermediate resolution, 8 times higher (lower) at high (low) resolution. The
+  intermediate resolution, 8 times higher (lower) at high (low) resolution [src: arXiv:2306.05492, Sect. 2.3]. The
   adopted flat priors are narrower than allowed (Table 2) to sample the region
   near the best fit better.
 
@@ -166,11 +166,11 @@ likelihood inference (Jo et al. 2022, arXiv:2211.16461, abstract).
 | Bias | How FLAMINGO models it | How others handle it | Place read |
 |---|---|---|---|
 | Eddington bias of stellar masses | lognormal scatter σ(log M_*) = min(0.070 + 0.071z, 0.3) dex added to simulated masses (Eq. 11) | not modelled in the papers read | arXiv:2306.05492, Sect. 3.1.1 |
-| Systematic stellar-mass offset (population synthesis, dust) | log₁₀ M_*,obs → log₁₀ M_*,obs + log₁₀ b_*, prior log₁₀ b_* ~ N(0, 0.14) (Eqs. 12–13), mass independent because no prior exists for a mass dependence | — | Sect. 3.1.2 |
-| Cosmic variance of the SMF | shift log₁₀ b_cv, prior b_cv ~ N(1, 0.06) (Eqs. 14–15) | — | Sect. 3.1.3 |
+| Systematic stellar-mass offset (population synthesis, dust) | log₁₀ M_*,obs → log₁₀ M_*,obs + log₁₀ b_*, prior log₁₀ b_* ~ N(0, 0.14) (Eqs. 12–13), mass independent because no prior exists for a mass dependence | — | arXiv:2306.05492, Sect. 3.1.2 |
+| Cosmic variance of the SMF | shift log₁₀ b_cv, prior b_cv ~ N(1, 0.06) (Eqs. 14–15) | — | arXiv:2306.05492, Sect. 3.1.3 |
 | Hydrostatic mass bias | M_500c = M_500c,HSE/b_HSE (Eq. 17), ratio convention, prior N(0.74, 0.10) combining 0.72 ± 0.08 and 0.76 ± 0.06 from X-ray versus lensing comparisons (Eq. 18); its effect on f_gas itself neglected; weak-lensing masses taken as unbiased | BAHAMAS runs a synthetic X-ray pipeline on its haloes and compares X-ray-like quantities; SIMBA compares hot gas (T > 10^5 K) within the true R_500 with the BAHAMAS compilation | Sect. 3.2.1, Eq. 23; arXiv:1603.02702, Sect. 2.4; arXiv:1901.10203, Sect. 3.7 |
 | X-ray selection at low mass | cut at M_500c,HSE > 10^13.8 M_⊙, where the median f_gas stops falling, plus one point from a fit at 4 × 10^13 M_⊙ | BAHAMAS: mass-selected simulated sample, notes flux-limited samples may favour gas-rich groups | Sect. 3.2.1; arXiv:1603.02702, Sect. 2.5 |
-| Redshift mismatch | X-ray sample cut to z < 0.25 (median 0.1) and matched to z = 0.1; HSC–XXL lensing sample at its median z = 0.3 with a separate emulator | — | Sects. 3.2.1–3.2.2 |
+| Redshift mismatch | X-ray sample cut to z < 0.25 (median 0.1) and matched to z = 0.1; HSC–XXL lensing sample at its median z = 0.3 with a separate emulator | — | arXiv:2306.05492, Sects. 3.2.1–3.2.2 |
 | Stellar aperture | 50 kpc 3D, chosen from mock-observation tests of EAGLE because FLAMINGO galaxies are too large to mock; 30, 50, 100 kpc differ only above about 10^11 M_⊙ | EAGLE and BAHAMAS: 30 pkpc 3D, close to a 2D Petrosian mass | Sect. 4.2 and App. A; arXiv:1407.7040, Sect. 5.1.1; arXiv:1603.02702, App. B |
 
 The compilation: 15 data sets (12 hydrostatic, 3 lensing); the hydrostatic ones
@@ -429,11 +429,11 @@ convergence tests in a smaller box at two resolutions sharing the large modes
   review states Horizon-AGN's stellar feedback was not calibrated but taken
   from Starburst99 and its AGN feedback set by the M_BH–M_* relation [sec:
   arXiv:2309.17075, Sect. 2.4].
-- The BAHAMAS strong and weak AGN variants (ΔT_heat ± 0.2 dex) are quoted from
-  the FLAMINGO papers; McCarthy et al. 2018 was not read.
-- The later CAMELS extensions to 28 parameters (seen in a search by title only)
-  and to 35 parameters (arXiv:2606.10038, in L2): how their parameter ranges
-  were chosen was not read.
+- The BAHAMAS strong and weak AGN variants are quoted from the FLAMINGO papers; their
+  heating temperatures were not found there in this run, and McCarthy et al. 2018 was not read.
+- The later CAMELS extensions, one seen in a search by title only and one
+  to 35 parameters (arXiv:2606.10038 [src: abstract], in L2): how their parameter
+  ranges were chosen was not read.
 - The functional form of the rTNG300 correction (Eq. 3 and App. A of
   arXiv:1707.03406) and the stellar-mass rescaling of Jo et al. (their App. A):
   not read.

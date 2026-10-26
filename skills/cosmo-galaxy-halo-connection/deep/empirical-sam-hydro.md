@@ -8,14 +8,14 @@ tuned and what skipping the tuning costs, how a survey-like tracer sample and
 its HOD are extracted from a hydrodynamical run, and how such catalogues are
 used to validate an occupation-model pipeline.
 Snapshot: 2026-10-21.
-From: Wechsler & Tinker 2018, Sect. 2.2.4, 2.3, 2.4; Crain et al. 2023
-review.
+From: Wechsler & Tinker 2018 (arXiv:1804.03097), Sect. 2.2.4, Sect. 2.3 and
+Sect. 2.4; Crain et al. 2023 review (arXiv:2309.17075).
 
 Already in L2, not repeated here: what each model family parameterises and
 its headline findings (age matching, EMERGE, UniverseMachine, SAM review,
 nIFTy scatter, Crain et al.) in
 `physics-and-methods.md#empirical-semi-analytic-and-hydrodynamical`; the
-DESI DR1 single-mock verification (χ² = 10.6, Δχ² = 3.4) in
+DESI DR1 single-mock verification (its χ² and Δχ²) in
 `systematics.md#residual-redshift-space-distortions-exclusion`; the TNG300
 budget of the lensing-is-low excess in
 `systematics.md#assembly-bias-and-secondary-dependencies`. How a
@@ -130,17 +130,19 @@ arXiv:1806.07893, Sect. 3.5]:
 - a redshift-dependent offset between observed and true stellar mass, μ =
   μ₀ + μ_a(1 − a) (Eq. 25), with prior widths 0.14 and 0.24 dex, plus an
   SFR-only offset κ exp(−(z − 2)²/2) (Eq. 26), prior width 0.24 dex, for the
-  tension between observed sSFRs and SMF evolution that peaks at z = 2;
+  tension between observed sSFRs and SMF evolution that peaks at z = 2
+  [src: arXiv:1806.07893, Sect. 3.5];
 - a mass- or sSFR-dependent offset is not used, because the tight SMF errors
   would make the sampler use it to fit the SMF shape ("overfitting") and the
   sSFR-dependent one is degenerate with sample variance;
 - random stellar-mass errors σ_SM,obs = min(σ_SM,0 + σ_SM,z z, 0.3 dex)
   (Eq. 27) for Eddington bias; SFR scatter such that intrinsic plus
-  observed main-sequence scatter is 0.3 dex (Eq. 28);
+  observed main-sequence scatter is 0.3 dex (Eq. 28) [src: arXiv:1806.07893,
+  Sect. 3.5];
 - volume-weighting over each observable's redshift range (Eq. 29),
   redshift-space distortions from halo velocities, and 30 km/s of combined
   velocity bias and redshift error; PRIMUS grism redshifts with σ_z/(1 + z) =
-  0.0033;
+  0.0033 [src: arXiv:1806.07893, Sect. 3.5];
 - a universal Chabrier IMF, as in all the compared data.
 
 ### Step 5. Write the likelihood and sample
@@ -189,17 +191,17 @@ arXiv:1505.04607, Sect. 3.4].
 The TNG300 procedure for DESI-like galaxies (arXiv:2202.12911):
 
 1. TNG300-1 (205 h⁻¹Mpc, 2500³ dark-matter particles and gas cells) and its
-   dark-matter-only twin, at z = 0.8 [src: Sect. 2.1].
+   dark-matter-only twin, at z = 0.8 [src: arXiv:2202.12911, Sect. 2.1].
 2. Colours with FSPS (MILES library, MIST isochrones) from the star-formation
    history of star particles within 30 kpc, split at 30 Myr into a young part
    (nebular emission) and an old part (stellar continuum); dust optical depth
    τ_v = γ (Z_gas/Z_⊙)^α Σ̃*^β (Eq. 1) with (α, β, γ) = (−0.6, 0.2, 0.4)
-   "roughly tuned" to z ~ 0 relations and not formally optimised [src: Sect.
-   2.2].
+   "roughly tuned" to z ~ 0 relations and not formally optimised [src:
+   arXiv:2202.12911, Sect. 2.2].
 3. The DESI LRG (Eqs. 2–3) and ELG (Eqs. 4–6) colour cuts on magnitudes
    shifted by δm, with δm chosen to reach the DESI target density of 5 ×
    10⁻⁴ h³Mpc⁻³: δm = −0.4 gives 4608 LRGs, δm = +0.6 gives 4998 ELGs [src:
-   Sect. 2.3].
+   arXiv:2202.12911, Sects. 2.3.1–2.3.2].
 4. Each galaxy's host matched to the dark-matter-only run through TNG's
    bijective subhalo map, by position and mass where it is missing; halo mass
    M_200c; centre at the potential minimum [src: Sect. 2.4].
@@ -207,7 +209,8 @@ The TNG300 procedure for DESI-like galaxies (arXiv:2202.12911):
    per mass bin and compared to the baseline HOD forms [src: Sect. 3]. The
    halo velocity dispersion is approximated by that of the largest subhalo
    divided by 1.23, since that subhalo over-estimates it by (23 ± 3)% with no
-   significant mass dependence on 800 test haloes [src: Sect. 3.4].
+   significant mass dependence on 800 test haloes [src: arXiv:2202.12911,
+   Sect. 3.4].
 
 Other suites, one line each:
 
@@ -249,9 +252,11 @@ concentration and a host-centric phase-space model; the LRG-like z = 0.5 mock
 is observed in the distant-observer approximation along three axes, with a
 jackknife covariance from 125 parts of each of two UNIT boxes; the pipeline
 then fits it with AbacusSummit templates [src: arXiv:2512.15962, Sect.
-III.4]. The point of the transfer is that the galaxy model is not the one
-being fitted, so the test probes model misspecification [der: from the
-construction just described]. The outcome is in L2.
+III.4]. The outcome is in L2.
+
+The point of the transfer is that the galaxy model is not the one being
+fitted, so the test probes model misspecification [der: from the
+construction just described].
 
 On FLAMINGO, an emulator (GalaxyEmu-Planck) of a 13-parameter HOD and of
 SHAMe is fitted to w_p, ξ_0,2 and ΔΣ (> 1 h⁻¹Mpc, to avoid baryonic
@@ -273,14 +278,14 @@ over clusters alone [src: arXiv:2601.16353, abstract].
 <!-- key: empirical-model-sam-or-hydrodynamical-run -->
 
 The empirical models fit their parameters to data with a likelihood and
-report posteriors (Step 5); the price is per-model cost (400 000 CPU hours
-for UniverseMachine) and phenomenological forms. SAMs carry physical
+report posteriors (Step 5); the price is per-model cost (400 k CPU hours
+for UniverseMachine, arXiv:1806.07893, Sect. 4.1) and phenomenological forms. SAMs carry physical
 prescriptions but are tuned to a few targets, and the halo layer changes
 their outputs at the tuning level (Step 7). Hydrodynamical runs give
 correlated galaxy and gas properties in one volume, but in a single
-cosmology and box: 205 h⁻¹Mpc for TNG300, hence tracer samples of a few
-thousand galaxies, against 1906.8 h⁻¹Mpc for FLAMINGO
-(Step 8).
+cosmology and box: 205 h⁻¹Mpc for TNG300 (arXiv:2202.12911) [src:
+Sect. 2.1], hence tracer samples of a few thousand galaxies, against
+1906.8 h⁻¹Mpc for FLAMINGO (arXiv:2407.18912) [src: Sect. 2.1] (Step 8).
 
 ### Which hydrodynamical suite
 <!-- key: which-hydrodynamical-suite -->
@@ -365,7 +370,8 @@ arXiv:2202.12911, Sect. 4.1].
   KiDS-1000 data in `systematics.md#occupation-statistics-and-the-central-condition`.
 - Baseline forms reproduce the measured TNG occupations "reasonably well",
   e.g. log M_cut = 12.7, log M_1 = 13.6, σ = 0.2, α = 1.15, κ = 0.08, f_ic =
-  0.8 for LRGs (a curve chosen by eye, not a fit) [src: Fig. 2 caption].
+  0.8 for LRGs (a curve chosen by eye, not a fit) [src: arXiv:2202.12911,
+  Fig. 2 caption, Sect. 3.1].
 
 ## Numbers
 <!-- key: numbers -->
@@ -452,8 +458,8 @@ arXiv:2202.12911, Sect. 4.1].
   selection.
 - Critique: Kumar et al. 2023, arXiv:2312.04847 — orphan over-abundance
   in UniverseMachine against satellite lensing.
-- Comparison: Knebe et al. 2015, arXiv:1505.04607 — 14 models on one
-  halo layer without retuning; orphans drive the occupation spread.
+- Comparison: Knebe et al. 2015, arXiv:1505.04607 — 14 models (abstract)
+  on one halo layer without retuning; orphans drive the occupation spread.
 - Method, SAM: Lagos et al. 2018, arXiv:1807.11180 — what Shark tunes and
   what it keeps as tests.
 - Application, hydro: Yuan et al. 2022, arXiv:2202.12911 — DESI-like
@@ -483,7 +489,7 @@ arXiv:2202.12911, Sect. 4.1].
   Hadzhiyska et al. 2021 and the UniverseMachine DR1 high-z predictions were
   not read.
 - A date-sorted arXiv search for 2025–2026 empirical-model papers was
-  rate-limited (HTTP 429); an INSPIRE query returned no 2025–2026 empirical
+  rate-limited; an INSPIRE query returned no 2025–2026 empirical
   galaxy–halo model paper beyond those listed, so newer models may exist.
 - The hydro-suite additions of 2026-10-21 rest on abstracts, except
   arXiv:2407.18912 (Sects. 2.1, 2.2, 5) and arXiv:1908.11448 (Sect. 6).

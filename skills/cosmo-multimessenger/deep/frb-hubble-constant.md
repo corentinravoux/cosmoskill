@@ -61,7 +61,7 @@ likelihood, Liu et al. 2026 (arXiv:2604.03769) for unlocalised bursts.
 
    `n_sfr = 0` is no evolution, 1 follows star formation, about 2 is
    AGN-like; a higher H0 lowers the rate per comoving volume element.
-3. **Energy function** [src: Sect. 2.2.2, Eq. 14]: cumulative
+3. **Energy function** [src: arXiv:2208.00819, Sect. 2.2.2, Eq. 14]: cumulative
    `p(E > E_th) = ∫_{E_th}^∞ (E/E_max)^γ exp(−E/E_max) dE` (an upper
    incomplete Gamma, "Schechter"), adopted instead of a hard-cut power law
    because the sharp cut-off produced "numerical artefacts in the analysis of
@@ -69,7 +69,7 @@ likelihood, Liu et al. 2026 (arXiv:2604.03769) for unlocalised bursts.
    bandwidth; spectral behaviour in the "rate interpretation"
    `Φ(ν) ∝ ν^α`, chosen because it describes the data as well as a spectral
    index and is "computationally much faster".
-4. **Widths** [src: Sect. 2.2.3, Eq. 15–16]: intrinsic widths log-normal
+4. **Widths** [src: arXiv:2208.00819, Sect. 2.2.3, Eq. 15–16]: intrinsic widths log-normal
    (`log μ_w = 1.70`, `log σ_w = 0.73`, bias-corrected); scattering from
    CHIME at 600 MHz, `log μ_s = 0.7`, `log σ_s = 1.72`, scaled as `ν^(−4)`;
    `w_eff = √(w_int² + w_scat² + w_DM² + w_samp²)`, the last two being DM
@@ -126,8 +126,7 @@ Where H0 comes from in this model [src: arXiv:2208.00819, Sect. 3]:
 - the **redshift reach**: a higher H0 makes a "smaller" universe seen to
   higher `z`, which is "partially degenerate" with `E_max`; in `P(z, SNR)`
   lowering H0 by 10 is "nearly equivalent to lowering `E_max` by 0.1 dex" —
-  to the extent that FRB energetics do not evolve, "the analysis is
-  effectively a standard candle".
+  to the extent that FRB energetics do not evolve, "the analysis is effectively a standard candle" [src: arXiv:2208.00819, Sect. 3].
 
 ### Route B. Localised bursts, per-burst `p(DM | z)`
 <!-- key: route-b-localised-bursts-per-burst-p-dm-z -->
@@ -148,7 +147,7 @@ halo DM Gaussian 65 ± 15 pc cm⁻³, motivated by estimates of 50–80; `f_d`
 flat on [0.84, 0.96] following Connor et al., from `f_d = 1 − f_* − f_cold`
 with the stellar fraction allowed to vary by a factor of five; uniform
 priors `F` ∈ [0.011, 0.5], `e^μ_host` ∈ [20, 200] pc cm⁻³, `σ_host` ∈
-[0.2, 2.0], H0 ∈ [20, 140] [src: Sect. II.2, Table 1].
+[0.2, 2.0], H0 ∈ [20, 140] [src: arXiv:2610.15536, Sect. II.2, Table 1].
 
 Peers, by the form taken for `p(DM | z)`:
 
@@ -199,9 +198,7 @@ S_DM = −0.7707 (lg DM_obs)² + 4.5601 lg DM_obs − 5.6291
 peaks near 1000 pc cm⁻³ because DM smearing removes high-DM bursts and RFI
 mitigation removes bright low-DM ones. `DM_ISM` from YMW16, `DM_halo` free,
 `f = 10^(−0.75)` fixed (freeing it leaves H0 "essentially unchanged"),
-`DM_max = 4000` pc cm⁻³, `z_max = 3` [src: same]. On 2124 CHIME Catalog 2
-bursts: H0 = 69 (+17/−15), 22%; breaking the degeneracy between H0, `α`
-and `E_*` would give 9% [src: abstract].
+`DM_max = 4000` pc cm⁻³, `z_max = 3` [src: arXiv:2604.03769, Sect. II]. On 2124 CHIME Catalog 2 bursts: H0 = 69 (+17/−15), 22%; breaking the degeneracy between H0, `α` and `E_*` would give 9% [src: arXiv:2604.03769, abstract].
 
 Two other treatments of bursts without a host redshift:
 
@@ -284,8 +281,7 @@ al. baseline uses the narrow `F` prior (Table 1 above). Liu et al. fix `F`
 ### Analytic or simulated `P_IGM`, `f_d` free or fixed
 <!-- key: analytic-or-simulated-pigm-fd-free-or-fixed -->
 
-Zhang et al. vary one ingredient at a time [src: arXiv:2610.15536, Table 3,
-Sect. III.3]:
+Zhang et al. vary one ingredient at a time (arXiv:2610.15536) [src: Table 3, Sect. III.3]:
 
 | Variation (FRB + DESI DR2) | H0 |
 |---|---|
@@ -299,9 +295,7 @@ Sect. III.3]:
 | IllustrisTNG and `f_d = 0.94` | 68.8 ± 1.0 |
 
 Galactic models move H0 by at most about 0.5σ; the extragalactic DM model
-both tightens the error and moves H0 towards the CMB value, "identifying
-extragalactic DM modeling as the dominant systematic uncertainty" [src:
-abstract, Sect. III.3]. This is the same conclusion as the Xu et al. shifts
+both tightens the error and moves H0 towards the CMB value, "identifying extragalactic DM modeling as the dominant systematic uncertainty" (arXiv:2610.15536) [src: abstract, Sect. III.3]. This is the same conclusion as the Xu et al. shifts
 in L2, reached on a different sample and with BAO in place of a BBN prior.
 
 The Galactic disc model is not always small: Wang et al. 2025 obtain
@@ -399,18 +393,19 @@ established.
   bursts; whether the functional forms of `P_cos` and `P_host` matter for
   unlocalised bursts is "beyond the scope" of that work [src:
   arXiv:2604.03769, Sect. II].
-- **One Galactic model.** NE2001 against YMW16 moves H0 by 6.6 [der: 75.61
-  − 69.04] in Wang et al. (a few low-latitude bursts) and by 0.2 in Zhang et
-  al. (arXiv:2501.09260; arXiv:2610.15536). Test: refit with both models
+- **One Galactic model.** NE2001 against YMW16 gives H0 = 69.04 (+2.30/−2.07)
+  against 75.61 (+2.23/−2.07) in Wang et al. (a few low-latitude bursts;
+  arXiv:2501.09260 [src: abstract]) and 71.4 (+2.2/−2.5) against 71.6 (+2.2/−2.4)
+  in Zhang et al. (arXiv:2610.15536 [src: Table 3]). Test: refit with both models
   and with a Galactic-latitude cut.
 - **A log-normal or `α = β = 3` cosmic PDF.** Both misfit the ray-traced TNG
   distribution (arXiv:2507.07090, Sect. IV.2). Test: refit with the
   modified-normal `p_np,31` or a simulated PDF.
 - **Quoting a statistical error as total.** Gao et al. state that their
   ±0.68 from 527 CHIME pseudo-redshifts is statistical only and that
-  systematics dominate (arXiv:2410.03994, abstract, Sect. 5.2). The FRB + BAO error shrinks
-  from 2.4 to 1.0 when `P_IGM` and `f_d` are fixed to a simulation, with a
-  shift of 2.6 [der: 71.4 − 68.8] (Table 3 above). The quoted error is
+  systematics dominate (arXiv:2410.03994, abstract, Sect. 5.2). The FRB + BAO value goes
+  from 71.4 (+2.2/−2.5) to 68.8 ± 1.0 when `P_IGM` and `f_d` are fixed to a simulation
+  (arXiv:2610.15536, Table 3; table above). The quoted error is
   conditional on the DM model.
 
 ## Reading list

@@ -88,7 +88,7 @@ How the significance moved with the covariance, read in the papers:
 | BOSS CMASS-NGC, χ² with analytic covariance | Patchy | about 7σ, reproduced | arXiv:2407.03397 [src: Sect. 1.2] |
 | BOSS, χ²_× between patches | Patchy | 1.8σ (NGC), 1.7σ (SGC); the combined figure depends on which of five well-motivated statistics is chosen | arXiv:2407.03397 [src: Sect. 4.5] |
 | DESI DR1 LRG, auto χ² | 25 Abacus AltMTL mocks | 11.4σ (NGC), 7.0σ (SGC); sensitive to the volume correction for box replication | arXiv:2508.09133 [src: Sect. V.2] |
-| same | 1000 EZmocks, fast fibre assignment | 6.6σ (NGC), 5.7σ (SGC) | arXiv:2508.09133 [src: Sect. V.2] |
+| same | 1000 EZmocks, fast fibre assignment | 6.6σ (NGC), 5.7σ (SGC) | arXiv:2508.09133 [src: Sect. III (mock count); Sect. V.2] |
 | DESI DR1 LRG, cross χ²_× between 4 + 3 patches | EZmocks | −1.0σ (NGC), −0.8σ (SGC); 6.7σ and 6.1σ would be expected if auto and cross agreed | arXiv:2508.09133 [src: Sect. V.4] |
 
 In all BOSS chunks but LOWZ-S the GLAM-Uchuu variance exceeds the Patchy
@@ -302,7 +302,7 @@ Sizes in the BOSS density-split analysis (arXiv:2309.16541). The emulator,
 trained on periodic boxes at one redshift, is applied to a survey with a
 footprint, a radial selection and fibre collisions; the residual on the mean
 of 84 Nseries mocks (120 h⁻³Gpc³ covariance) is Δω_cdm = 0.00015 ± 0.0018,
-Δσ8 = 0.0129 ± 0.018, Δn_s = 0.0080 +0.020/−0.019, Δfσ8 = 0.0066 ± 0.011
+Δσ8 = 0.01288 ± 0.018, Δn_s = 0.00801 +0.020/−0.019, Δfσ8 = 0.00657 ± 0.011
 (2σ), none significant; the 2σ scatter of the 84 best fits over √84 is added
 in quadrature [src: Sect. 4.4.3]. Below about 20 h⁻¹Mpc the emulator error
 dominates the monopoles, so those scales add little [src: Sect. 4.4.2].

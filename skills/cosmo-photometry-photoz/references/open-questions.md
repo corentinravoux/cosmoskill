@@ -91,14 +91,14 @@ shift, shift-and-stretch, Gaussian-process and PCA models argues that
 Stage-IV 3×2pt must go beyond shift and stretch; a five-parameter PCA model
 costs 5% on S8 but halves the bias in Ω_m and σ8, and all models can be
 marginalised analytically (Ruiz-Zapatero et al. 2026, arXiv:2604.24425)
-[src]. For the Euclid DR1 photometric clustering sample the mean must be
+[src: abstract]. For the Euclid DR1 photometric clustering sample the mean must be
 known to 0.004(1+z) to keep 80% of the w0wa 3×2pt constraining power, and
 the width then matters little (Euclid Collaboration: Bertmann et al. 2026,
-arXiv:2604.00805) [src] (**forecast**). Against the "width does not matter"
+arXiv:2604.00805) [src: abstract] (**forecast**). Against the "width does not matter"
 reading: spatially varying (anisotropic) n(z) from observing conditions
 biases σ8 low by 1.7σ and Ω_m high by 1.4σ in an LSST-like 2×2pt set-up with
 KiDS-like selection, while staying below 1σ for KiDS- and DES-like set-ups
-(Zhang et al. 2026, arXiv:2609.15542) [src] (**forecast**).
+(Zhang et al. 2026, arXiv:2609.15542) [src: abstract] (**forecast**).
 
 ## 5. Can machine-learning photo-z deliver usable PDFs?
 <!-- key: can-machine-learning-photo-z-deliver-usable-pdfs -->
@@ -138,7 +138,7 @@ catalogue adopts is open.
 
 SFD over-corrects in a way correlated with large-scale structure
 (arXiv:1808.03294, arXiv:2306.03926) [src], and the DESI stellar map differs
-from SFD by up to 80 mmag in E(B−V) (arXiv:2409.05140) [src]. Whether the
+from SFD by up to 80 mmag in E(B−V) (arXiv:2409.05140) [src: abstract]. Whether the
 corrected infrared map (CSFD) or stellar-reddening maps should be the
 default is open; stellar maps are limited by the photometric calibration they
 are meant to serve (arXiv:2409.05140) [src].
@@ -185,7 +185,7 @@ DESI DC3R2 spans 56% of the Euclid/LSST colour space (arXiv:2309.13109)
   (arXiv:2503.15306) [src]; DR1 will be the first test of SOM plus
   clustering calibration at Euclid depth.
 - **SPHEREx**: all-sky low-resolution spectra forecast 19 million galaxies
-  with σ_z < 0.003(1+z) (**forecast**, arXiv:2312.04636) [src].
+  with σ_z < 0.003(1+z) (**forecast**, arXiv:2312.04636) [src: abstract].
 - **DESI**: deep and secondary-target samples (DESI-Deep, DC3R2) and
   clustering references to z ~ 3 through the Lyα forest
   (arXiv:2601.16962) [src].
@@ -199,9 +199,9 @@ DESI DC3R2 spans 56% of the Euclid/LSST colour space (arXiv:2309.13109)
 - "Stacking per-galaxy PDFs gives n(z)." Biased, worse at low S/N
   (arXiv:2007.12178) [src]; only frequentist p(z) under a fixed model stack
   (arXiv:2206.13633) [src: Sect. 1.1].
-- "SFD E(B−V) can be used as is." Its normalisation is 14% high
-  (arXiv:1012.4804) [src] and it contains extragalactic structure
-  (arXiv:1808.03294) [src].
+- "SFD E(B−V) can be used as is." It needs a 14% recalibration,
+  E(B−V) = 0.86 E(B−V)_SFD (arXiv:1012.4804) [src: abstract, Sect. I], and
+  it contains extragalactic structure (arXiv:1808.03294) [src: abstract].
 - "1% photometric calibration is the state of the art." DES Y6 relative
   uniformity is below 1.8 mmag; the ~1% figure is the absolute scale
   (arXiv:2305.01695) [src].

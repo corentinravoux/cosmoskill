@@ -29,7 +29,7 @@ n(z) be known with minimal bias; the review calls redshift characterisation
 "perhaps the leading systematic uncertainty" of these analyses
 [src: Sect. 1.1].
 
-Degeneracies are intrinsic at low R: with riz alone, an elliptical at z = 0.3
+Degeneracies are intrinsic at low R (arXiv:2206.13633): with riz alone, an elliptical at z = 0.3
 and a spiral at z = 0.52 are nearly indistinguishable, and the 4000 Å break can
 be mistaken for the Lyman break [src: Sect. 1.1]. The resulting p(z) is
 multimodal and the relative weight of the modes is set by a prior on the galaxy
@@ -46,15 +46,15 @@ The global approach solves simultaneously for calibration parameters
 fluxes of stars observed more than once, using overlaps between exposures. It
 separates the relative calibration, a large linear least-squares problem, from
 the absolute calibration, a few numbers for the whole survey (Padmanabhan et
-al. 2008, arXiv:astro-ph/0703454) [src]. Applied to SDSS it reached about 1%
+al. 2008, arXiv:astro-ph/0703454) [src: abstract]. Applied to SDSS it reached about 1%
 relative errors over 8500 deg² in griz and about 2% in u, limited by unmodelled
-atmospheric variation at Apache Point [src]. Pan-STARRS1 extended the method,
+atmospheric variation at Apache Point [src: abstract]. Pan-STARRS1 extended the method,
 solving for system throughput, atmospheric transparency and the large-scale
 flat field together, with relative precision below 10 mmag in g, r, i and about
-10 mmag in z and y (Schlafly et al. 2012, arXiv:1201.2208) [src]. The Deep Lens
+10 mmag in z and y (Schlafly et al. 2012, arXiv:1201.2208) [src: abstract]. The Deep Lens
 Survey showed that sky flats can be non-uniform by up to 0.13 mag peak to
 valley, reduced to 0.01–0.02 mag after ubercal (Wittman et al. 2012,
-arXiv:1111.2058) [src].
+arXiv:1111.2058) [src: abstract].
 
 ### 2.2 Forward calibration
 <!-- key: forward-calibration -->
@@ -63,13 +63,13 @@ The Forward Global Calibration Method (FGCM) of DES models the instrument and
 the atmosphere, together with auxiliary measurements taken at the observatory,
 to predict the passband of every exposure; a standard passband is defined, and
 each magnitude is moved to it with a "chromatic correction" that depends on the
-source spectrum (Burke et al. 2018, arXiv:1706.01542) [src]. On DES Y3 the
+source spectrum (Burke et al. 2018, arXiv:1706.01542) [src: abstract]. On DES Y3 the
 residual random error is 5–6 mmag per exposure, the uniformity over 5000 deg²
 is 7 mmag, and the source-spectrum systematic is below 5 mmag for main-sequence
-stars with 0.5 < g − i < 3.0 [src]. The DES Y6 FGCM reference catalogue holds
+stars with 0.5 < g − i < 3.0 [src: abstract]. The DES Y6 FGCM reference catalogue holds
 17 million stars (16 < i < 21) calibrated to a uniformity better than 1.8 mmag
 RMS; the absolute scale is tied to the HST CALSPEC spectrum of C26202 and is
-known to about 1% (Rykoff et al. 2023, arXiv:2305.01695) [src].
+known to about 1% (Rykoff et al. 2023, arXiv:2305.01695) [src: abstract].
 
 ### 2.3 Hardware metrology
 <!-- key: hardware-metrology -->
@@ -85,7 +85,7 @@ across the LSSTCam focal plane, a function of the ray angle of incidence
 (Amouroux et al. 2026, arXiv:2606.31822) [src]. StarDICE aims at a metrology
 chain from laboratory standards to stellar fluxes at 1 mmag in griz; its
 thermal-infrared camera corrects grey (cloud) extinction to about 0.01 mag on 2
-arcmin scales (Sommer et al. 2025, arXiv:2511.00182) [src].
+arcmin scales (Sommer et al. 2025, arXiv:2511.00182) [src: abstract].
 
 ### 2.4 Stellar standards
 <!-- key: stellar-standards -->
@@ -108,7 +108,7 @@ across the focal plane change the effective passband. For DES these systematic
 chromatic errors reach 2% in some bands; corrected with measured atmospheric
 and instrumental transmission they fall below 0.3%; for galaxies they are
 redshift dependent and can exceed those of stars (Li et al. 2016,
-arXiv:1601.00117) [src]. FGCM folds this correction into the calibration itself
+arXiv:1601.00117) [src: abstract]. FGCM folds this correction into the calibration itself
 (arXiv:1706.01542) [src]. The Rubin filter-edge shifts across the focal plane
 (arXiv:2606.31822) [src] are the same effect.
 
@@ -121,7 +121,7 @@ and R_b from an extinction law. Three families of maps exist:
 | Map | Tracer | Property that matters | Reference |
 |---|---|---|---|
 | SFD | 100 μm emission from COBE/DIRBE + IRAS, dust temperature from DIRBE 100/240 μm | full sky at IRAS resolution; twice as accurate as Burstein–Heiles at low and moderate reddening | Schlegel et al. 1998, arXiv:astro-ph/9710327 [src: abstract] |
-| SFD recalibrated | SDSS stellar spectra, predicted colours | SFD normalisation 14% too high; Fitzpatrick (1999) law with R_V = 3.1 preferred; R_b tabulated for 88 passbands | Schlafly & Finkbeiner 2011, arXiv:1012.4804 [src] |
+| SFD recalibrated | SDSS stellar spectra, predicted colours | SFD recalibrated by 14%, E(B−V) = 0.86 E(B−V)_SFD; Fitzpatrick (1999) law with R_V = 3.1 preferred; R_b tabulated for 88 passbands | Schlafly & Finkbeiner 2011, arXiv:1012.4804 [src: abstract; Sect. I] |
 | CSFD | SFD minus a CIB/LSS template built from WISE galaxy density fields | removes extragalactic structure from SFD | Chiang 2023, arXiv:2306.03926 [src] |
 | DESI stellar | reddening of 2.6 million stars from DESI imaging versus colours synthesised from DESI spectra | differs from SFD by up to 80 mmag in E(B−V), attributed mostly to SFD; better galaxy-density uniformity; limited by photometric calibration | Zhou et al. 2024, arXiv:2409.05140 [src: abstract] |
 
@@ -205,8 +205,8 @@ volume the training set covers and uncontrolled outside it.
 | Nearest neighbours | DNF | directional neighbourhood metric plus local fit; the DES reference estimator; the metric DN = D² sin²α multiplies the Euclidean magnitude distance by the angle between multi-magnitude vectors, so neighbours keep the target's flux proportions [src: Sect. 2.3, Eq. 3]; a hyperplane fit to ~60 neighbours beats a 25-neighbour kNN average and approaches ANNz [src: Sect. 5.1] | De Vicente et al. 2016, arXiv:1511.07623 [src]; DES Y6 Gold use: arXiv:2607.07771 [src] |
 | Gaussian process | GPz | heteroscedastic predictive variance from both data density and photometric noise; outperforms TPZ and ANNz2 on SDSS DR12; the variance is a model term ν*, which shrinks where training data are dense, plus a noise term β⁻¹ made input-dependent, β_i = exp(φ(x_i)u + b) [src: Sect. 5, Eqs. 5.1–5.4] | Almosallam et al. 2016, arXiv:1604.03593 [src] |
 | Images (CNN) | Pasquet et al. | 64 × 64 ugriz cutouts plus reddening; σ_MAD < 0.01 with ≥ 100k training objects, bias < 10⁻⁴, SDSS main sample z < 0.4; precision limited by image S/N | Pasquet et al. 2019, arXiv:1806.06607 [src: abstract] |
-| Domain adaptation | CNN + adversarial network | CNN trained on the COSMOS Ultra Deep Field at i < 25 failed on other HSC-CLAUDS fields until an unsupervised adversarial domain-adaptation branch was added; catalogues for ~4 million sources | Treyer et al. 2025, arXiv:2512.11700 [src] |
-| Manifold learning | UMAP-kNN-z | UMAP compression of ugrizyJH colours; with a highly biased spec-z training set it keeps its performance while SOM- and colour-space methods degrade, notably at z > 1.5 | Ashmead et al. 2025, arXiv:2512.09032 [src] |
+| Domain adaptation | CNN + adversarial network | CNN trained on the COSMOS Ultra Deep Field at i < 25 failed on other HSC-CLAUDS fields until an unsupervised adversarial domain-adaptation branch was added; catalogues for ~4 million sources | Treyer et al. 2025, arXiv:2512.11700 [src: abstract] |
+| Manifold learning | UMAP-kNN-z | UMAP compression of ugrizyJH colours; with a highly biased spec-z training set it keeps its performance while SOM- and colour-space methods degrade, notably at z > 1.5 | Ashmead et al. 2025, arXiv:2512.09032 [src: abstract] |
 
 ### 5.2 Implicit priors and imperfect training sets
 <!-- key: implicit-priors-and-imperfect-training-sets -->
@@ -255,11 +255,11 @@ prior (arXiv:2007.12178) [src].
 | Same, on N-body simulations | adds marginalisation over the clustering–density mapping | a deliberate shift of Δz̄ ≈ 0.05 in the spectroscopic prior leaves a posterior bias Δz̄ ≲ 0.003 | Alarcon et al. 2020, arXiv:1910.07127 [src: abstract] |
 | Forward population model (SPS + data model + selection) | tomographic n(z) without spectroscopic calibration | bias of the mean Δz ≲ 0.003 (GAMA) and ≃ 0.01 (VVDS) without tuning; generative chain: draw SPS parameters and z from the population model, emulated SPS photometry, noise from an uncertainty model, selection cuts on noisy photometry, bin labels from the photo-z estimator, repeated until N objects pass; in the validation the hyper-parameters are fixed, not inferred; GAMA biases 0.003 and 0.001 in two bins | Alsing et al. 2023, arXiv:2207.05819 [src: Sect. II.2, II.4, IV.3] |
 | pop-cosmos | diffusion-model population prior fitted to 140,938 COSMOS galaxies (r < 25, 26 bands) by optimal transport | predicts colours for z < 4 | Alsing et al. 2024, arXiv:2402.00935 [src: abstract] |
-| pop-cosmos on KiDS-1000 | SED-fitting posteriors for 4 million galaxies at 8.2 GPU s per galaxy | against ~185,000 DESI DR1 matches: BGS bias 2 × 10⁻³, σ_MAD = 0.03, 3.2% outliers; LRG bias 3 × 10⁻², σ_MAD = 0.05, 1.0% outliers | Halder et al. 2026, arXiv:2602.03930 [src] |
-| GalSBI (phenomenological, image-level SBI) | luminosity functions, morphology, SEDs constrained with ABC against HSC deep images through UFig simulations | n(z) agrees with COSMOS photo-z within 1.5σ for all magnitude cuts | Fischbacher et al. 2024, arXiv:2412.08701 [src]; code arXiv:2412.08722 [src] |
+| pop-cosmos on KiDS-1000 | SED-fitting posteriors for 4 million galaxies at 8.2 GPU s per galaxy | against ~185,000 DESI DR1 matches: BGS bias 2 × 10⁻³, σ_MAD = 0.03, 3.2% outliers; LRG bias 3 × 10⁻², σ_MAD = 0.05, 1.0% outliers | Halder et al. 2026, arXiv:2602.03930 [src: abstract] |
+| GalSBI (phenomenological, image-level SBI) | luminosity functions, morphology, SEDs constrained with ABC against HSC deep images through UFig simulations | n(z) agrees with COSMOS photo-z within 1.5σ for all magnitude cuts | Fischbacher et al. 2024, arXiv:2412.08701 [src: abstract]; code arXiv:2412.08722 [src] |
 | GalSBI-SPS | SPS-based population with literature parameters only | colours and magnitudes within 0.14 mag to i < 23; mean-n(z) offset 0.01–0.08 before fitting | Tortorelli et al. 2025, arXiv:2505.21610 [src: abstract] |
 | GalSBI with clustering | adds subhalo abundance matching; constrained on DES Y3 images | mean redshifts agree with HSC COSMOS photo-z within 0.2–1.6σ; sample variance dominates for bright (< 24 mag) samples, population-model uncertainty for fainter ones | Fischbacher et al. 2026, arXiv:2606.23783 [src: abstract] |
-| Learned SED prior | generative model (probabilistic autoencoder + normalising flow) of spectra, luminosities and redshifts trained on GalSBI-SPS mocks | SOM-bin mean redshifts within |Δ⟨z⟩| ≲ 0.0007(1+z) under controlled conditions | Frediani et al. 2026, arXiv:2609.26594 [src] |
+| Learned SED prior | generative model (probabilistic autoencoder + normalising flow) of spectra, luminosities and redshifts trained on GalSBI-SPS mocks | SOM-bin mean redshifts within |Δ⟨z⟩| ≲ 0.0007(1+z) under controlled conditions | Frediani et al. 2026, arXiv:2609.26594 [src: abstract] |
 
 Most numbers in the table come from simulations or from fields where many-band
 photo-z serve as truth; the debate is in `open-questions.md` §2.
@@ -317,15 +317,15 @@ in that cell. Weighting cell by cell by the wide-sample occupation gives n(z).
   (calibrated on spectroscopic and many-band photometric data over part of the
   footprint, with the resulting cosmic variance included) and
   cross-correlations with LRGs up to z < 1.2 (Rau et al. 2023,
-  arXiv:2211.16516) [src].
+  arXiv:2211.16516) [src: abstract].
 - **Euclid.** With DR3-like mocks, defining tomography by the mean spec-z of
   SOM cells leaves none of ten bins within |Δ⟨z⟩| ≤ 0.002(1+z); defining it by
   individual photo-z puts eight of ten within requirement, and at most six when
   the calibration sample is degraded towards C3R2 (Roster et al. 2025,
-  arXiv:2508.02779) [src]. A deep-to-wide transfer function that degrades deep
+  arXiv:2508.02779) [src: abstract]. A deep-to-wide transfer function that degrades deep
   photometry to wide-survey noise while keeping flux–error correlations reduces
   the mean biases in all bins and outperforms Balrog-type image injection on
-  their metrics (Kang et al. 2026, arXiv:2601.02005) [src].
+  their metrics (Kang et al. 2026, arXiv:2601.02005) [src: abstract].
 
 ## 8. Clustering redshifts and shear ratios
 <!-- key: clustering-redshifts-and-shear-ratios -->
@@ -357,7 +357,7 @@ bias b_p(z) (and magnification). Measured performance:
 | Analysis | Reference sample | Result | Reference |
 |---|---|---|---|
 | KiDS mocks (MICE) | KiDS-like spectroscopic overlap | mean redshifts unbiased at |Δz| < 0.006 with bias evolution mitigated by auto-correlations; up to |Δz| ~ 0.04 when a colour-based n(z) replaces the truth as the model | van den Busch et al. 2020, arXiv:2007.01846 [src: abstract] |
-| DES Y3 | redMaGiC + BOSS/eBOSS | mean z of bins recovered to RMS ~ 0.014 in simulations; marginalises magnification and bias evolution | Gatti et al. 2022, arXiv:2012.08569 [src] |
+| DES Y3 | redMaGiC + BOSS/eBOSS | mean z of bins recovered to RMS ~ 0.014 in simulations; marginalises magnification and bias evolution | Gatti et al. 2022, arXiv:2012.08569 [src: abstract] |
 | DES Y6 | BOSS, eBOSS galaxies and quasars; 1.5–5 Mpc | importance sampling of SOM n(z) realisations with a WZ likelihood; weak at z > 1.1; S8 improves by ~10% (cosmic shear and 3×2pt); model w_xy = ∫dz b_x b_y n_x n_y w_m(z) + w^μ_xy with linear bias, a θ⁻¹ scale weight and halofit P(k) from CCL [src: Sect. II.1.1, Eqs. 2–5] | d'Assignies et al. 2025, arXiv:2510.23565 [src] |
 | Euclid mocks (Flagship) | BOSS, DESI, NISP-like | mean z of ten bins to ~0.01 or better on the mock area; extrapolated to ~6000 deg² the statistical error beats σ(⟨z⟩) < 0.002(1+z) by at least 3×, but systematic biases limit accuracy | Naidoo et al. 2023, arXiv:2208.10503 [src: abstract] |
 | Euclid mocks (Flagship 2) | BOSS, DESI, NISP | means and widths of all bins to z_phot ≤ 1.6 within requirement; photometric-sample bias is the main limitation; 1-halo term forces a minimum separation of 1.5 Mpc; each bin correlated with one tracer (DESI BGS, BOSS, DESI LRG, ELG, NISP) on 1000–2500 deg² patches; requirement met in every bin with the shifted-stretched model, while the conservative Gaussian-process model exceeds it slightly in bins 1, 3 and 7 unless patches are doubled [src: Sect. 5] | d'Assignies et al. 2025, arXiv:2505.10416 [src] |
@@ -380,7 +380,7 @@ ratios in full (power-spectrum integration, intrinsic alignments,
 magnification) and uses them as an extra likelihood: source-redshift
 constraints tighten by up to 38% over the prior in some bins, cosmic-shear S8
 by up to 31% and 3×2pt by up to 10% (Sánchez et al. 2022, arXiv:2105.13542)
-[src]. The ratios are a cross-check on redshifts and intrinsic alignments
+[src: abstract]. The ratios are a cross-check on redshifts and intrinsic alignments
 together, not a stand-alone redshift calibration.
 
 ## 9. Redshift PDFs: meaning and storage

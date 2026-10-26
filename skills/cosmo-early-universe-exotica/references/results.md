@@ -9,10 +9,10 @@ Flags as in `physics-and-methods.md`.
 <!-- key: pulsar-timing-background-amplitude-spectrum -->
 
 Amplitudes are characteristic strain at f = 1 yr⁻¹. "γ = 13/3" (strain index
-α = −2/3) is the circular-SMBHB value; a free γ is fitted to the residual
-spectrum. Intervals are as each paper states them.
+α = −2/3) is the circular-SMBHB value (arXiv:2306.16213, Sect. I); a free γ
+is fitted to the residual spectrum. Intervals are as each paper states them.
 
-| Array | A at γ = 13/3 | Free spectrum | Significance of HD | Citation | Flag |
+| Array | A at the SMBHB γ | Free spectrum | Significance of HD | Citation | Flag |
 |---|---|---|---|---|---|
 | NANOGrav 15 yr | 2.4 (+0.7/−0.6) × 10⁻¹⁵ (median, 90%), log-uniform amplitude prior | A = 6.4 (+4.2/−2.7) × 10⁻¹⁵, γ = 3.2 ± 0.6 (5–95%) | BF(HD/CURN) 200–1000; p = 10⁻³ (Bayesian null), 5 × 10⁻⁵ – 1.9 × 10⁻⁴ (optimal statistic) | arXiv:2306.16213 | [src: Sect. I, III] |
 | EPTA DR2 (+ InPTA) | (2.5 ± 0.7) × 10⁻¹⁵ (full set and 10.3 yr subset agree) | 10.3 yr spectrum "rather uncertain", in mild tension with the full set | full 24.7 yr: BF 4, FAP 4%; 10.3 yr: BF 60, FAP ~0.1% (≳ 3σ) | arXiv:2306.16214 | [src: abstract] |
@@ -40,7 +40,9 @@ spectrum. Intervals are as each paper states them.
 ## 2. Ground-based stochastic-background limits
 <!-- key: ground-based-stochastic-background-limits -->
 
-All 95% credible, log-uniform amplitude prior, reference frequency 25 Hz.
+All 95% credible, log-uniform amplitude prior, reference frequency 25 Hz, as
+the abstracts of arXiv:2101.12130 and arXiv:2608.23477 state; the abstract
+of arXiv:2508.20721 states 95% and 25 Hz.
 
 | Data | Ω_GW, α = 0 | Ω_GW, α = 2/3 | Ω_GW, α = 3 | Citation | Flag |
 |---|---|---|---|---|---|
@@ -59,7 +61,7 @@ values behind the BBN version of this bound are in `cosmo-bbn`.
 
 The predicted compact-binary background is Ω_CBC(25 Hz) = 0.9 (+1.1/−0.5) ×
 10⁻⁹ (90%, GWTC-4 populations; arXiv:2508.20721) and 6.3 (+5.0/−2.2) × 10⁻¹⁰
-(90%, GWTC-5.0; arXiv:2608.23477) [src]: the astrophysical foreground sits
+(90%, GWTC-5.0; arXiv:2608.23477) [src: abstract of each]: the astrophysical foreground sits
 within a factor of a few of the current limits, so a cosmological background
 at 25 Hz will have to be separated from it.
 
@@ -71,7 +73,7 @@ at 25 Hz will have to be separated from it.
 | Bayes factor versus SMBHB alone | pt-bubble 18.1 ± 0.6; pt-sound 3.7 ± 0.1; with SMBHB added: 12.6 ± 0.5 and 6.5 ± 0.3 | NANOGrav 15 yr; SMBHB reference model with astrophysical priors | arXiv:2306.16219 | [src: Sect. V.3] |
 | Percolation temperature, pt-bubble | T_* ∈ [0.047, 0.41] GeV (68%), [0.023, 1.75] GeV (95%) | same | arXiv:2306.16219 | [src: Sect. V.3] |
 | Percolation temperature, pt-sound | T_* ∈ [4.7, 33] MeV (68%), [2.7, 93] MeV (95%); with SMBHB [4.9, 50] MeV (68%), [0.8, 2 × 10⁶] MeV (95%) | same; the 95% range with SMBHB covers a plateau where SMBHBs explain the signal | arXiv:2306.16219 | [src: Sect. V.3] |
-| Secluded dark-sector transition | strongly disfavoured against SMBHBs once BBN and CMB energy-release bounds apply; a dark sector that decays before neutrino decoupling remains viable | NANOGrav common red spectrum published before the 15 yr release (the paper predates it) | Bringmann et al. 2023, arXiv:2306.09411 | [src] |
+| Secluded dark-sector transition | strongly disfavoured against SMBHBs once BBN and CMB energy-release bounds apply; a dark sector that decays before neutrino decoupling remains viable | NANOGrav common red spectrum published before the 15 yr release (the paper predates it) | Bringmann et al. 2023, arXiv:2306.09411 | [src: abstract] |
 | EPTA | the measurement "would place tight constraints ... on the level of turbulence developed by first-order phase transitions" | EPTA DR2 + InPTA | arXiv:2306.16227 | [src] |
 
 The T_* intervals shift between templates partly because of the numerical
@@ -81,14 +83,14 @@ reabsorbed in T_* (arXiv:2306.16219) [src: Sect. V.3].
 ## 4. Cosmic strings and defects
 <!-- key: cosmic-strings-and-defects -->
 
-| Probe | Limit on Gμ (95%) | Model | Citation | Flag |
+| Probe | Limit on Gμ | Model | Citation | Flag |
 |---|---|---|---|---|
-| Planck 2013 power spectrum | < 1.5 × 10⁻⁷ (< 1.3 × 10⁻⁷ with high-ℓ data); f₁₀ < 0.015 | Nambu–Goto | arXiv:1303.5085 | [src: abstract] |
+| Planck 2013 power spectrum | < 1.5 × 10⁻⁷ (< 1.3 × 10⁻⁷ with high-ℓ data); f₁₀ < 0.015 (95%) | Nambu–Goto | arXiv:1303.5085 | [src: abstract] |
 | Planck 2013 power spectrum | < 3.2 × 10⁻⁷; f₁₀ < 0.028 | Abelian-Higgs field theory | arXiv:1303.5085 | [src: abstract] |
-| Planck 2013 non-Gaussian searches | < 8.8 × 10⁻⁷ (modal bispectrum) | post-recombination strings | arXiv:1303.5085 | [src] |
-| PTA (pre-2014 limits) | ≤ 2.8 × 10⁻⁹ | Blanco-Pillado et al. loop distribution | arXiv:1309.6637 | [src] |
-| LVK O3 stochastic + burst | ≲ 4 × 10⁻¹⁵ for one loop model; one to two orders of magnitude better than O2, model-dependent | loop models A, B and an interpolating model | arXiv:2101.12248 | [src] |
-| NANOGrav 15 yr fit | stable strings give Bayes factors 0.28–0.38 against SMBHB (0.76–0.89 when added to SMBHB) | stable-c, -k, -m, -n templates | arXiv:2306.16219 | [src: Sect. V.4] |
+| Planck 2013 non-Gaussian searches | < 8.8 × 10⁻⁷ (modal bispectrum, 95%) | post-recombination strings | arXiv:1303.5085 | [src: abstract] |
+| PTA (pre-2014 limits) | ≤ 2.8 × 10⁻⁹ | Blanco-Pillado et al. loop distribution | arXiv:1309.6637 | [src: abstract] |
+| LVK O3 stochastic + burst | ≲ 4 × 10⁻¹⁵ for one loop model; one to two orders of magnitude better than O2, model-dependent | loop models A, B and an interpolating model | arXiv:2101.12248 | [src: abstract] |
+| NANOGrav 15 yr fit | stable strings give Bayes factors against SMBHB of 0.277 ± 0.006 (stable-c), 0.364 ± 0.008 (stable-k), 0.379 ± 0.008 (stable-m), 0.307 ± 0.006 (stable-n); when added to SMBHB, 0.76 ± 0.01, 0.89 ± 0.02, 0.84 ± 0.02, 0.83 ± 0.01 | stable-c, -k, -m, -n templates | arXiv:2306.16219 | [src: Sect. V.4, "Results and discussion"] |
 
 Superstrings and metastable strings fit the NANOGrav signal; stable
 field-theory strings are the only cosmological source that consistently
@@ -114,14 +116,14 @@ Individual limits:
 
 | Probe | Mass range | Limit | Data, model | Citation | Flag |
 |---|---|---|---|---|---|
-| Subaru/HSC M31 microlensing | ~10⁻¹¹–10⁻⁶ M☉ | "most stringent" upper bounds when published; one candidate event | 7 h, 2 min cadence, tens of millions of M31 stars | Niikura et al. 2017, arXiv:1701.02151 | [src] |
-| OGLE bulge, 5 yr | 10⁻⁶–10⁻³ M☉ | tightest bound in this range under the null hypothesis; 6 ultrashort events (t_E ≈ 0.1–0.3 d) fit by Earth-mass PBHs at per-cent f_PBH | 2622 events | Niikura et al. 2019, arXiv:1901.07120 | [src] |
+| Subaru/HSC M31 microlensing | ~10⁻¹¹–10⁻⁶ M☉ | "most stringent" upper bounds when published; one candidate event | 7 h, 2 min cadence, tens of millions of M31 stars | Niikura et al. 2017, arXiv:1701.02151 | [src: abstract] |
+| OGLE bulge, 5 yr | 10⁻⁶–10⁻³ M☉ | tightest bound in this range under the null hypothesis; 6 ultrashort events (t_E ≈ 0.1–0.3 d) fit by Earth-mass PBHs at per-cent f_PBH | 2622 events | Niikura et al. 2019, arXiv:1901.07120 | [src: abstract] |
 | OGLE high-cadence Magellanic Clouds (Oct 2022 – May 2024) | 1.4 × 10⁻⁸ – 0.013 M☉ | f_PBH ≤ 1%; no short events; rules out the PBH origin of the bulge ultrashort events | ~35 million stars | Mróz et al. 2024, arXiv:2410.06251 | [src: abstract] |
 | OGLE LMC, 20 yr | 1.8 × 10⁻⁴ – 6.3 M☉; 1.3 × 10⁻⁵ – 860 M☉ | < 1%; < 10% | ~80 million stars, no events with t_E > 1 yr | Mróz et al. 2024, arXiv:2403.02386 | [src: abstract] |
-| EROS-2 (+ EROS-1), Magellanic Clouds | 0.6 × 10⁻⁷ – 15 M☉ | excluded as the primary halo component; τ_LMC < 0.36 × 10⁻⁷ (95%), < 8% of the halo at ~0.4 M☉ | 7 × 10⁶ bright stars, 6.7 yr; one candidate where ~39 expected | Tisserand et al. 2006, arXiv:astro-ph/0607207 | [src] |
+| EROS-2 (+ EROS-1), Magellanic Clouds | 0.6 × 10⁻⁷ – 15 M☉ | excluded as the primary halo component; τ_LMC < 0.36 × 10⁻⁷ (95%), < 8% of the halo at ~0.4 M☉ | 7 × 10⁶ bright stars, 6.7 yr; one candidate where ~39 expected | Tisserand et al. 2006, arXiv:astro-ph/0607207 | [src: abstract] |
 | LVK O3a sub-solar search | one component 0.2–1.0 M☉, q ≥ 0.1 | f_PBH ≲ 6% (equal-mass isotropic PBHs); merger rate < 220–24200 Gpc⁻³ yr⁻¹ | no candidates; loudest trigger FAR 0.14 yr⁻¹ | LVK 2021, arXiv:2109.12197 | [src: abstract] |
 | LVK O3 events, hierarchical | 1–200 M☉ | f_PBH ≲ 10⁻³ in every scenario | early-Universe binaries; several mass functions incl. QCD-epoch critical collapse with non-Gaussianity | Andrés-Carcasona et al. 2024, arXiv:2405.05732 | [src: abstract] |
-| CMB, accretion with DM halo | ≳ 20–50 M☉ upward | f_PBH < 3 × 10⁻⁹ around 10⁴ M☉ | Planck 2018 | Serpico et al. 2020, arXiv:2002.10771 | [src] |
+| CMB, accretion with DM halo | ≳ 20–50 M☉ upward | f_PBH < 3 × 10⁻⁹ around 10⁴ M☉ | Planck 2018 | Serpico et al. 2020, arXiv:2002.10771 | [src: abstract] |
 | Review summary (microlensing) | 10⁻¹⁰–10³ M☉ | "claimed" exclusion above 1% of the halo | MACHO, EROS, Kepler, HSC, OGLE | Carr et al. 2026, arXiv:2601.06024 | [src: Sect. IV.2.1] |
 | Review summary (window) | ~10⁻¹⁷–10⁻¹⁰ M☉ | unconstrained; PBHs could be all the dark matter | — | arXiv:2601.06024 | [src: Sect. V] |
 
@@ -136,7 +138,7 @@ disputed (open-questions.md §2).
 | Statement | Value | Citation | Flag |
 |---|---|---|---|
 | Bayes factor of SIGW versus SMBHB (NANOGrav 15 yr) | sigw-delta 44 ± 2, sigw-gauss 57 ± 3, sigw-box 21 ± 1; with SMBHB added 38 ± 2, 59 ± 3, 23 ± 1 — larger than for inflationary tensors | arXiv:2306.16219 | [src: Sect. V.2] |
-| PBH overproduction | disfavours Gaussian SIGW at 2σ and single-field scenarios with non-Gaussianity at 3σ as the explanation of NANOGrav 15 yr; relaxed if non-Gaussianity suppresses PBHs; PTA data do not constrain the PBH abundance | Franciolini et al. 2023, arXiv:2306.17149 | [src] |
+| PBH overproduction | disfavours Gaussian SIGW at 2σ and single-field scenarios with non-Gaussianity at 3σ as the explanation of NANOGrav 15 yr; relaxed if non-Gaussianity suppresses PBHs; PTA data do not constrain the PBH abundance | Franciolini et al. 2023, arXiv:2306.17149 | [src: abstract] |
 
 These Bayes factors carry the same caveat as all new-physics fits: they
 depend on the SMBHB population prior (arXiv:2306.16219) [src].
@@ -162,7 +164,7 @@ quote all three.
 | SPT + DESI | 0.081 (+0.037/−0.052) (68%) | tension 1.5σ | Bayesian | arXiv:2507.23355 | [src: abstract] |
 | SPT + ACT + Planck + DESI | 0.055 (+0.024/−0.047) (68%) | tension 2.6σ | Bayesian | arXiv:2507.23355 | [src: abstract] |
 | Planck ℓ < 1000 + ACT DR6 + lensing + Pantheon+ + DESI DR2 | 0.09 ± 0.03 | 71.0 ± 1.1 | profile likelihood | Poulin et al. 2025, arXiv:2505.08051 | [src: abstract] |
-| ACT DR6 + DESI DR2 (with varying-m_e study) | < 0.016 | — | Bayesian | Toda et al. 2025, arXiv:2508.09025 | [src] |
+| ACT DR6 + DESI DR2 (with varying-m_e study) | < 0.016 | — | Bayesian | Toda et al. 2025, arXiv:2508.09025 | [src: abstract] |
 | Planck + BOSS full shape | 0.072 ± 0.036 (68%) | — | profile likelihood | Herold et al. 2022, arXiv:2112.12140 | [src: abstract] |
 
 - ACT DR6 finds "no evidence" for EDE; the DR4 hint is not seen in DR6
@@ -173,18 +175,20 @@ quote all three.
 - Poulin et al. find a residual SH0ES tension of ~2σ, against 3.7σ with
   NPIPE and SDSS BAO; adding SH0ES raises the preference above 5σ,
   Δχ² = −35.4 (arXiv:2505.08051) [src: abstract].
-- The Toda et al. bound, f_EDE < 0.016, is far below the others; its prior
-  and data choices were not read (see "Not verified").
+- The Toda et al. bound, f_EDE < 0.016 (arXiv:2508.09025, abstract), is far
+  below the others; its prior and data choices were not read (see "Not
+  verified").
 
 ## 8. Modified recombination and varying constants
 <!-- key: modified-recombination-and-varying-constants -->
 
-Constants vary as a step at z = 50 (ACT DR6) unless stated; 68% intervals.
+Constants vary as a step at z = 50 (ACT DR6, arXiv:2503.14454, Sect. V.2)
+unless stated; 68% intervals.
 
 | Quantity | Value | Data | Citation | Flag |
 |---|---|---|---|---|
 | Δα/α (recombination) | (3.6 ± 3.7) × 10⁻³ | Planck 2013 | Planck int. XXIV, arXiv:1406.7482 | [src: abstract] |
-| Δm_e/m_e | (4 ± 11) × 10⁻³ | Planck 2013 | arXiv:1406.7482 | [src] |
+| Δm_e/m_e | (4 ± 11) × 10⁻³ | Planck 2013 | arXiv:1406.7482 | [src: abstract] |
 | m_e/m_e,0 | 1.0078 ± 0.0067; with SNe 1.0190 ± 0.0055 (H0 = 71.24 ± 0.96) | Planck 2018 + BAO (+ SNe) | Hart et al. 2019, arXiv:1912.03986 | [src: abstract] |
 | m_e/m_e,0 | 0.856 (+0.060/−0.073) (P-ACT, 2.4σ below 1, driven by Planck); ACT alone 1.02 (+0.11/−0.15); W-ACT 0.921 ± 0.083; Planck alone 0.880 (+0.068/−0.080) | CMB only | arXiv:2503.14454 | [src: Eqs. 17–18] |
 | m_e/m_e,0 | 1.0096 ± 0.0060, H0 = 69.8 ± 1.1 (P-ACT-LB); 1.0063 ± 0.0056, H0 = 69.1 ± 1.0 (P-ACT-LBS) | + lensing + DESI DR1 (+ SNe) | arXiv:2503.14454 | [src: Eq. 19] |
@@ -208,10 +212,10 @@ paper is "no evidence" for varying constants or modified recombination
 
 | Quantity | Limit or value | Data | Citation | Flag |
 |---|---|---|---|---|
-| y | |y| < 15 × 10⁻⁶ (95%) | COBE/FIRAS full data | Fixsen et al. 1996, arXiv:astro-ph/9605054 | [src] |
-| μ | |μ| < 9 × 10⁻⁵ (95%) | COBE/FIRAS full data | arXiv:astro-ph/9605054 | [src] |
+| y | |y| < 15 × 10⁻⁶ (95%) | COBE/FIRAS full data | Fixsen et al. 1996, arXiv:astro-ph/9605054 | [src: abstract] |
+| μ | |μ| < 9 × 10⁻⁵ (95%) | COBE/FIRAS full data | arXiv:astro-ph/9605054 | [src: abstract] |
 | T_CMB | 2.728 ± 0.004 K (95%) | COBE/FIRAS | arXiv:astro-ph/9605054 | [src: abstract] |
-| μ monopole | |⟨μ⟩| < 47 × 10⁻⁶ (95%), a factor ~2 better than FIRAS | FIRAS reanalysis | Bianchini et al. 2022, arXiv:2206.02762 | [src] |
+| μ monopole | |⟨μ⟩| < 47 × 10⁻⁶ (95%), a factor ~2 better than FIRAS | FIRAS reanalysis | Bianchini et al. 2022, arXiv:2206.02762 | [src: abstract] |
 | f_NL on 10 ≲ k ≲ 5 × 10⁴ | f_NL ≲ 3.6 × 10⁶, n_NL ≲ 1.4 | μT, μE cross-correlation FIRAS × Planck | arXiv:2206.02762 | [src: abstract] |
 | ΛCDM μ prediction | (2.3 ± 0.14) × 10⁻⁸ | theory, scale-invariant extrapolation | arXiv:1909.01593 | [src: Sect. 2.1] |
 
@@ -240,21 +244,21 @@ caption]; whether the CMB excludes them is read on that figure, not here.
 
 | Quantity | Limit or value | Data, model | Citation | Flag |
 |---|---|---|---|---|
-| B_1Mpc, non-helical | < 4.4 nG (95%) | Planck 2015 power spectra | arXiv:1502.01594 | [src] |
-| B_1Mpc, maximally helical | < 5.6 nG | Planck 2015 | arXiv:1502.01594 | [src] |
+| B_1Mpc, non-helical | < 4.4 nG (95%) | Planck 2015 power spectra | arXiv:1502.01594 | [src: abstract] |
+| B_1Mpc, maximally helical | < 5.6 nG | Planck 2015 | arXiv:1502.01594 | [src: abstract] |
 | B_1Mpc, nearly scale-invariant | < 2.0 nG; < 0.9 nG with the ionisation-history effect | Planck 2015 | arXiv:1502.01594 | [src: abstract] |
 | B_1Mpc from non-Gaussianity | < 2.8 nG (passive-tensor bispectrum); < 4.5 nG (preferred directions); < 3 nG (compensated scalar) | Planck 2015 | arXiv:1502.01594 | [src: abstract] |
 | √⟨B²⟩, ionisation history | < 0.69 nG (Planck 2018), < 0.72 nG (SRoll2 low-ℓ EE), marginalised over n_B (95%) | ambipolar diffusion + MHD turbulence | Paoletti et al. 2022, arXiv:2204.06302 | [src: abstract] |
 | Clumping variance b | < 0.41 (P-ACT), < 0.44 (P-ACT-LB) (95%); no evidence of clumping | three-zone M1 model | arXiv:2503.14454 | [src: Eq. 27, Fig. 15] |
 | PMF strength from recombination fits | preference for 5–10 pG today, ~1.8σ (Planck + DESI) to ~3σ (+ SH0ES-calibrated SNe) | non-helical, Batchelor spectrum; MHD-informed recombination | Jedamzik et al. 2025, arXiv:2503.09599 | [src: abstract] |
-| Lyα forest | B < 0.30 nG for n_B = −2.9 (k_peak > 30 Mpc⁻¹, 3σ, conservative noise model); a hint of extra power fitted by B ~ 0.2 nG at k_peak ~ 20 Mpc⁻¹ | hydrodynamic simulations, > 250 000 flux models | Pavičević et al. 2025, arXiv:2501.06299 | [src] |
-| IGMF lower bound | B ≥ 3 × 10⁻¹⁶ G | Fermi, TeV blazars | Neronov et al. 2010, arXiv:1006.3504 | [src] |
+| Lyα forest | B < 0.30 nG for n_B = −2.9 (k_peak > 30 Mpc⁻¹, 3σ, conservative noise model); a hint of extra power fitted by B ~ 0.2 nG at k_peak ~ 20 Mpc⁻¹ | hydrodynamic simulations; 234,000 models of the 1D flux power spectrum for each of three redshift bins | Pavičević et al. 2025, arXiv:2501.06299 | [src: abstract for the limits; main-text section "Hydrodynamic Simulations" for the model count] |
+| IGMF lower bound | B ≥ 3 × 10⁻¹⁶ G | Fermi, TeV blazars | Neronov et al. 2010, arXiv:1006.3504 | [src: abstract] |
 | IGMF lower bound | B > 7.1 × 10⁻¹⁶ G for 1 Mpc coherence and a 10 yr duty cycle; > 1.8 × 10⁻¹⁴ G (10⁴ yr), > 3.9 × 10⁻¹⁴ G (10⁷ yr) | Fermi-LAT + H.E.S.S. | H.E.S.S. & Fermi-LAT 2023, arXiv:2306.05132 | [src: abstract] |
 
-The gap between the γ-ray lower bounds (~10⁻¹⁶–10⁻¹⁴ G) and the CMB and
-Lyα upper bounds (~0.1–1 nG) is the window in which a primordial field
-would have to lie [der: comparison of the rows above, same comoving
-normalisation assumed, which the papers do not all share].
+The window between the γ-ray lower bounds and the CMB and Lyα upper
+bounds in the rows above is where a primordial field would have to lie
+[der: comparison of the rows above; the papers do not all share the same
+normalisation of B].
 
 ## 12. Axion-like particles
 <!-- key: axion-like-particles -->
@@ -273,18 +277,18 @@ small fraction allowed as axion-like particles" [src].
 
 | Quantity | Earlier value | Superseded by | Why | Citation | Flag |
 |---|---|---|---|---|---|
-| Isotropic LVK limit, flat spectrum | Ω_GW ≤ 5.8 × 10⁻⁹ (O1–O3) | ≤ 2.8 × 10⁻⁹ (O1–O4a; confirmed with data to April 2025) | more data; new frequency-domain cuts | arXiv:2101.12130 → arXiv:2508.20721, arXiv:2608.23477 | [src] |
+| Isotropic LVK limit, flat spectrum | Ω_GW ≤ 5.8 × 10⁻⁹ (O1–O3) | ≤ 2.8 × 10⁻⁹ (O1–O4a; confirmed with data to April 2025) | more data; new frequency-domain cuts | arXiv:2101.12130 → arXiv:2508.20721, arXiv:2608.23477 | [src: abstract of each] |
 | PTA strain amplitude at f = 1 yr⁻¹, γ = 13/3 | 1.92 × 10⁻¹⁵ and 2.95 × 10⁻¹⁵, common-process values quoted in the 2022 LISA review | NANOGrav 15 yr 2.4 (+0.7/−0.6) × 10⁻¹⁵ with HD correlations | first HD evidence | arXiv:2204.05434 [src: Sect. 5.1.3] → arXiv:2306.16213 | [src] |
-| PTA string tension (pre-2014 PTA data) | Gμ ≤ 2.8 × 10⁻⁹ | PTA signal fitted by metastable or superstrings; stable strings disfavoured | detection of a common signal | arXiv:1309.6637 → arXiv:2306.16219 | [src] |
-| Planck string tension | Gμ < 1.3–1.5 × 10⁻⁷ (Nambu–Goto) | still the CMB reference; LVK and PTA bounds are model-dependent and far tighter | — | arXiv:1303.5085 | [src: abstract] |
+| PTA string tension (pre-2014 PTA data) | Gμ ≤ 2.8 × 10⁻⁹ | PTA signal fitted by metastable or superstrings; stable strings disfavoured | detection of a common signal | arXiv:1309.6637 → arXiv:2306.16219 | [src: abstract of each; arXiv:2306.16219, Sect. V.4 for the metastable and superstring fits] |
+| Planck string tension | Gμ < 1.5 × 10⁻⁷ (< 1.3 × 10⁻⁷ with high-ℓ data) (Nambu–Goto) | still the CMB reference; LVK and PTA bounds are model-dependent and far tighter | — | arXiv:1303.5085 | [src: abstract] |
 | f_EDE hint | 0.091 (+0.020/−0.036), ACT DR4 combination | ACT DR6 < 0.088 (ACT), < 0.12 (P-ACT-LB) | DR6 polarisation | arXiv:2503.14454 | [src: Sect. V.1] |
 | Δα/α at recombination | (3.6 ± 3.7) × 10⁻³ (Planck 2013) | α_EM/α_EM,0 = 1.0037 ± 0.0017 (P-ACT) | ACT DR6 damping tail | arXiv:1406.7482 → arXiv:2503.14454 | [src; src: Eq. 23] |
 | m_e/m_e,0 | 1.0078 ± 0.0067 (Planck 2018 + BAO) | 1.0096 ± 0.0060 (P-ACT-LB) | ACT DR6 + DESI | arXiv:1912.03986 → arXiv:2503.14454 | [src; src: Eq. 19] |
-| μ monopole | < 9 × 10⁻⁵ (FIRAS 1996) | < 47 × 10⁻⁶ (FIRAS reanalysis) | reanalysis with a μ map | arXiv:astro-ph/9605054 → arXiv:2206.02762 | [src] |
-| PMF amplitude | B_1Mpc < 0.9 nG with ionisation (Planck 2015) | √⟨B²⟩ < 0.69 nG (Planck 2018); Lyα B < 0.30 nG (n_B = −2.9) | better polarisation; Lyα small scales | arXiv:1502.01594 → arXiv:2204.06302, arXiv:2501.06299 | [src] |
-| IGMF lower bound | B ≥ 3 × 10⁻¹⁶ G | B > 7.1 × 10⁻¹⁶ G (1 Mpc, 10 yr duty cycle) | combined Fermi-LAT + H.E.S.S. | arXiv:1006.3504 → arXiv:2306.05132 | [src] |
-| Planetary-mass PBHs | per-cent f_PBH fits the OGLE ultrashort events | ≤ 1% for 1.4 × 10⁻⁸ – 0.013 M☉ | high-cadence Magellanic Cloud survey | arXiv:1901.07120 → arXiv:2410.06251 | [src] |
-| Stellar-mass PBHs from LVK | PBH dark matter consistent with GW150914 rates (2016) | f_PBH ≲ 10⁻³ over 1–200 M☉ (O3) | population analyses | arXiv:1603.00464, arXiv:1603.08338 → arXiv:2405.05732 | [src] |
+| μ monopole | < 9 × 10⁻⁵ (FIRAS 1996) | < 47 × 10⁻⁶ (FIRAS reanalysis) | reanalysis with a μ map | arXiv:astro-ph/9605054 → arXiv:2206.02762 | [src: abstract of each] |
+| PMF amplitude | B_1Mpc < 0.9 nG with ionisation (Planck 2015) | √⟨B²⟩ < 0.69 nG (Planck 2018); Lyα B < 0.30 nG (n_B = −2.9) | better polarisation; Lyα small scales | arXiv:1502.01594 → arXiv:2204.06302, arXiv:2501.06299 | [src: abstract of each] |
+| IGMF lower bound | B ≥ 3 × 10⁻¹⁶ G | B > 7.1 × 10⁻¹⁶ G (1 Mpc, 10 yr duty cycle) | combined Fermi-LAT + H.E.S.S. | arXiv:1006.3504 → arXiv:2306.05132 | [src: abstract of each] |
+| Planetary-mass PBHs | per-cent f_PBH fits the OGLE ultrashort events | ≤ 1% for 1.4 × 10⁻⁸ – 0.013 M☉ | high-cadence Magellanic Cloud survey | arXiv:1901.07120 → arXiv:2410.06251 | [src: abstract of each] |
+| Stellar-mass PBHs from LVK | PBH dark matter consistent with GW150914 rates (2016) | f_PBH ≲ 10⁻³ over 1–200 M☉ (O3) | population analyses | arXiv:1603.00464, arXiv:1603.08338 → arXiv:2405.05732 | [src: abstract of each] |
 
 The PIXIE quoted in older papers (2011) was a B-mode polarimeter; the 2024
 design is a spectrum and polarisation mission with different sensitivities
@@ -296,7 +300,7 @@ design is a spectrum and polarisation mission with different sensitivities
 <!-- key: not-verified -->
 
 - The selection, priors and data of the f_EDE < 0.016 bound of
-  arXiv:2508.09025, which disagrees with all other EDE bounds here.
+  arXiv:2508.09025 (abstract), which disagrees with all other EDE bounds here.
 - Planck PR4 (NPIPE) EDE and varying-constant bounds.
 - SPT-3G D1 bounds on varying constants and modified recombination (the
   combined SPT + ACT + Planck paper was not read here).

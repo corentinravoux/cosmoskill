@@ -37,30 +37,31 @@ JWST/NIRSpec practice, as in the public-archive sample of Tang et al. 2024
 
 - Systemic redshift from rest-optical lines (Hγ, Hβ, [O III], Hα) fitted with
   Gaussians and averaged with S/N weights; 204 emission-line sources at
-  6.533 < z_sys < 12.513; Lyα detected at S/N > 3 in 33 of 210.
+  6.533 < z_sys < 12.513; Lyα detected at S/N > 3 in 33 of 210 (arXiv:2408.01507, Sect. II.2).
 - Grating spectra: flat (f_ν) continuum fitted at rest 1300–1400 Å, not
   below 1300 Å "to avoid potential damped Ly α absorption"; detections
   fitted with an asymmetric Gaussian; non-detections get a 3σ limit from the
   error spectrum integrated over ±1000 km/s of systemic, a window that
-  "ensures we capture the entire Ly α profile".
+  "ensures we capture the entire Ly α profile" (arXiv:2408.01507, Sect. II.5).
 - Prism spectra: R ~ 30 at the blue end spreads Lyα across the break, so
   the continuum is a power law at 1300–1600 Å times a Heaviside break, and
   the line is integrated over rest 1170–1270 Å (≈ 6 pixels). For 9 galaxies
-  detected in both modes, EWs agree with a scatter of ~0.09 dex.
+  detected in both modes, EWs agree with a scatter of ~0.09 dex (arXiv:2408.01507, Sect. II.5).
 - Median 3σ EW limits: < 36 Å (grating, 85 non-detections), < 44 Å (prism,
-  159 non-detections).
+  159 non-detections) (arXiv:2408.01507, Sect. II.5).
 - A wavelength-dependent slit-loss correction assuming a point source is
   applied in the reduction (Sect. II.1).
 - Lyα escape fraction from Case B with T_e = 10⁴ K: F_int(Lyα) = 8.7
   F(Hα), 25.0 F(Hβ) or 53.6 F(Hγ), dust-corrected with Balmer decrements
-  (median E(B − V) = 0.01).
+  (median E(B − V) = 0.01) (arXiv:2408.01507, Sect. II.5).
 
 DIVER (Zhu et al. 2026, arXiv:2608.19311, Sects. II.2 and II.4) [src] fits
 the line with a single Gaussian and by direct summation, masking −700 to
 +1400 km/s for the baseline, and takes the continuum and Hα from SED fits
 to JADES photometry because grating continua are too weak. Its median 3σ
-EW limits are 15.6 Å (grating) and 74.4 Å (prism), so the prism sample
-cannot test a 25 Å threshold for typical galaxies [der: 74.4 > 25]. It
+rest-frame EW limits are 15.6 Å (grating) and 74.4 Å (prism), and the
+paper therefore relies mainly on the deeper grating sample for the
+environmental comparisons [src: Sect. II.4]. It
 defines an effective visibility f_esc,Lyα^eff ≡ L_Lyα / (8.7 L_Hα,obs)
 (Eq. 5), with Hα not dust-corrected, and writes it schematically as
 f_Lyα^ISM T_CGM T_IGM (a_Lyα/a_Hα) 10^{0.4 A_Hα} (Eq. 6), where a is the
@@ -96,7 +97,7 @@ forms in use:
 
 In Mason's form, A absorbs both non-emitters and low-redshift interlopers
 (≤ 29% if all non-detections were interlopers), assumed equally small at
-z ~ 7 [src: Sect. II.1.3]. Kundu et al. deconvolve the observed z = 6
+z ~ 7 [src: arXiv:1709.05356, Sect. II.1.3]. Kundu et al. deconvolve the observed z = 6
 distribution for the transmission at z = 6, P_in(EW_in) = ∫ dT T P_α(T)
 P₆(EW_in T) (Eq. 4), because blue-side absorption remains after
 reionisation and some red-side wing persists near its end [src: Sect.
@@ -115,8 +116,8 @@ The common structure (Mason et al. 2018, Eqs. 5–6):
 T_IGM(x̄_HI, M_h, Δv) = ∫₀^∞ dv J_α(Δv, M_h, v) e^(−τ_IGM), where τ_D is the
 damping-wing optical depth of neutral patches, τ_HII the resonant opacity
 of infalling and residual gas in the local H II region, J_α the emergent
-line profile and Δv its velocity offset from systemic [src]. Choices of
-each analysis:
+line profile and Δv its velocity offset from systemic [src].
+Choices of each analysis, read in arXiv:1709.05356 (Sects. II.1.1, II.2, III.1), arXiv:2408.01507 (Sect. IV.2) and arXiv:2609.40363 (Sects. II.1, II.3):
 
 | Ingredient | Mason et al. 2018 | Tang et al. 2024 | Kundu et al. 2026 |
 |---|---|---|---|
@@ -128,12 +129,12 @@ each analysis:
 
 Kundu's transmission is T_α = ∫₀^∞ dν L_ν e^(−τ_DW) / ∫ dν L_ν (Eq. 8), so
 T_α → ½ without outflows when τ_DW → 0: half the Gaussian is blue of
-systemic [src: Sect. II.3.2]. The Gunn–Peterson depth used there is τ_GP =
+systemic [src: arXiv:2609.40363, Sect. II.3.2]. The Gunn–Peterson depth used there is τ_GP =
 3.8 × 10⁵ [(1 + z_s)/7]^{3/2} [Ω_b h²/0.0223] [Ω_m h²/0.142]^{−1/2}
 [(1 − Y)/0.76] (Eq. 10) [src]. Mason's reason for a halo-mass rather than
 UV-magnitude relation for Δv: galaxies of equal M_UV at different
 redshifts have different masses, and Δv ∝ M_h^0.32 tracks the circular
-velocity v_c ∝ M_h^{1/3} [src: Sect. II.1.1]. Tang's reason for ignoring
+velocity v_c ∝ M_h^{1/3} (arXiv:1709.05356) [src: Sect. II.1.1]. Tang's reason for ignoring
 infall in its conclusions: at the sample's M_UV and with z ~ 5 offsets,
 infall does not drive the decline [src: Sect. IV.2].
 
@@ -182,7 +183,7 @@ Eq. 22].
   to calibrating on the EW distribution rather than on narrow-band LAE
   luminosity functions at L_α ~ 10^42.5–10^43.8 erg/s: those reach only
   EW ≥ 113 Å at M_UV = −18.75 and EW ≥ 28 Å at −20.25, against medians of
-  10 ± 2 Å and 16 ± 3 Å at M_UV = −19.5 and −18.5 [src: Sect. III.7]. The
+  10 ± 2 Å and 16 ± 3 Å at M_UV = −19.5 and −18.5 [src: arXiv:2609.40363, Sect. III.7]. The
   earlier model gave a median EW of ~70 Å at M_UV = −18.5 [src].
 
 ### Line profile and velocity offset
@@ -301,8 +302,8 @@ reionization simulations" [src: Sect. V.2, Fig. 11 caption].
   from different apertures, keeping only a uniform relative scale [src:
   arXiv:2608.19311, Sect. II.4]. Test: rescale the baseline to the target
   aperture and propagate the factor's error.
-- **Limits too shallow for the threshold.** A 74 Å prism limit says nothing
-  about EW > 25 Å (`#numbers`). Test: use the full likelihood with
+- **Limits too shallow for the threshold.** The 74.4 Å median prism limit of
+  DIVER (arXiv:2608.19311, Sect. II.4) says nothing about EW > 25 Å (`#numbers`). Test: use the full likelihood with
   per-object limits, or restrict to the grating sample.
 - **Redshift window and interlopers.** Pre-JWST samples needed the line in
   the observed window; ~48% of one lensed subsample could lie above it,
@@ -330,7 +331,7 @@ reionization simulations" [src: Sect. V.2, Fig. 11 caption].
 - Method: Mason et al. 2018, arXiv:1709.05356 — forward-modelled EW
   likelihood with non-detections; Δv–halo-mass relation.
 - Application: Tang et al. 2024, arXiv:2408.01507 — JWST/NIRSpec
-  measurement recipe (grating and prism), log-normal fit, x̄_HI to z = 13.
+  measurement recipe (grating and prism), log-normal fit, x̄_HI to z = 13 (abstract).
 - Data: Prieto-Lyon et al. 2025, arXiv:2509.18302 — z ~ 5–6 baseline,
   completeness and slit-loss modelling, line widths and offsets.
 - Application: Kundu et al. 2026, arXiv:2609.40363 — THESAN transmission,
@@ -351,7 +352,6 @@ reionization simulations" [src: Sect. V.2, Fig. 11 caption].
   arXiv:2411.15495, Sect. V.4.
 - Lu et al. bubble-size distributions and Mason & Gronke transmission
   integral (used by arXiv:2408.01507) were not read.
-- The 35 ± 10% slit loss is quoted by arXiv:2608.19311 from Napolitano et
-  al.; that paper was not read and no identifier is recorded.
+- The 35 ± 10% slit loss is quoted by arXiv:2608.19311 (Sect. II.4) from Napolitano et al.; that paper was not read and no identifier is recorded.
 - Kundu et al. results sections III.1–III.5 were not read beyond what L2
   holds.

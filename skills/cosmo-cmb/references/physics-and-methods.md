@@ -86,7 +86,7 @@ between tables that use the same code definition.
 | Reconstructed C_L^φφ | σ₈ Ω_m^0.25 | The "four-point" lensing signature (arXiv:1807.06210) [src: abstract] |
 | Tilt across the whole range | n_s | Needs lever arm; degenerate with Ω_b h² on restricted ranges |
 
-Foundations of the table [src, abstracts]. The peaks are driven acoustic
+Foundations of the table [src: abstract of each]. The peaks are driven acoustic
 oscillations of the photon–baryon fluid, and an analytic treatment
 reproduces the spectra to 5–10% on all scales (Hu & Sugiyama 1994,
 arXiv:astro-ph/9407093); baryon drag produces the alternating peak heights,
@@ -437,9 +437,9 @@ are insufficient [src]. SPT-3G D1 uses the ACT DR6 accuracy settings [src].
 - N_eff: ρ_rad = ρ_γ [1 + (7/8)(4/11)^(4/3) N_eff]. The standard-model value
   used by ACT DR6 and SPT-3G D1 is 3.044 (arXiv:2506.20707, arXiv:2503.14454); Planck 2018
   used 3.046 (arXiv:1807.06209). ACT notes it had to correct for this small
-  difference between its BBN table and CLASS [src]. Constraints quoted with
+  difference between its BBN table and CLASS [src: arXiv:2503.14454, Sect. III; 3.044 also arXiv:2506.20707, Sect. VII.2.4; 3.046 in the abstract of arXiv:1807.06209 as printed in the paper]. Constraints quoted with
   "BBN consistency" tie Y_P to (Ω_b h², N_eff); those with Y_P free are
-  weaker and should not be compared with them. Physics [src, abstracts]:
+  weaker and should not be compared with them. Physics [src: abstract of each]:
   the WMAP+SPT N_eff constraint came almost entirely from the expansion
   rate changing the ratio of the photon diffusion scale to the sound
   horizon, with little from the early ISW effect (Hou et al. 2011,

@@ -26,7 +26,7 @@ equations of the matter spectrum are written out in `cosmo-theory-foundations`
 |---|---|---|
 | Spherical overdensity (SO) | haloes are "generally defined with masses and radii specified by a given overdensity: M_vir = (4π/3) R_vir³ Δ ρ_m", Δ "around 200"; the review uses the Bryan & Norman virial Δ unless stated. Labels: 200m (mean), 200c (critical), 500c (X-ray), vir | [src: Sect. 2.1 of arXiv:1804.03097]; Bryan & Norman 1998, arXiv:astro-ph/9710107 |
 | Conversions | SO masses are "much more tightly correlated with each other than with masses based on the number of particles" (FoF); unmatched definitions between hydro and N-body runs give an "observationally significant bias" in abundances | White 2001, arXiv:astro-ph/0011495 [src] |
-| Pseudo-evolution | SO mass grows with the falling reference density even for a static profile: "almost the entire mass evolution" of most M200 ~ 10¹² M_⊙ haloes since z = 1, and the low-mass evolution of c(M) | Diemer et al. 2013, arXiv:1207.0816 [src] |
+| Pseudo-evolution | SO mass grows with the falling reference density even for a static profile: "almost the entire mass evolution" of most haloes with M_200m ≲ 10¹² h⁻¹M_⊙ between z = 1 and 0, and the low-mass evolution of c(M) | Diemer et al. 2013, arXiv:1207.0816 [src: abstract] |
 | Outer profiles | most self-similar in units of R200m (inner ones in R200c); steepest slope near R200m, −4 or steeper for fast accretors | Diemer 2014, arXiv:1401.1216 [src] |
 | Splashback radius | first apocentre after turnaround: R_sp ≈ 0.8–1 R200m (rapid accretion) to ≈ 1.5 R200m (slow); "not expected to change the qualitative conclusions" of galaxy–halo work; cluster measurements in `cosmo-clusters` | More et al. 2015, arXiv:1504.05591 [src]; [src: Sect. 2.1 of arXiv:1804.03097] |
 | Subhaloes | bound peaks orbiting inside a host; "resolving and tracking such objects is critical" | [src: Sect. 2.1 of arXiv:1804.03097] |
@@ -104,19 +104,19 @@ them, belongs to `cosmo-clusters`.
 - Einasto-type. The logarithmic slope decreases monotonically inward with no
   convergence to an inner power law; cusps as steep as r^(−1.5) are
   inconsistent with most simulations (Navarro et al. 2004,
-  arXiv:astro-ph/0311231) [src]. Einasto describes stacked profiles better than
+  arXiv:astro-ph/0311231) [src: abstract]. Einasto describes stacked profiles better than
   NFW, though both agree well at cluster scales at low z (Child et al. 2018,
   arXiv:1804.10199) [src].
 - Concentration–mass relations:
 
 | Relation | Content | Reference |
 |---|---|---|
-| Bullock et al. 2001 | c_v ∝ 1/(1+z) at fixed mass; scatter in log c_v ~ 0.18; denser environments give more concentrated haloes | arXiv:astro-ph/9908159 [src] |
-| Duffy et al. 2008 | power law for 10¹¹–10¹⁵ M_⊙/h, z < 2, in WMAP5; z = 0 concentrations 23% (10¹¹) to 16% (10¹⁴ M_⊙/h) below Millennium values; "much lower" than X-ray inferences [src]. Form c = A(M/M_pivot)^B (1+z)^C, M_pivot = 2 × 10¹² h⁻¹M_⊙ [src: Eq. 4]; NFW, full sample, z = 0–2: (A, B, C) = (5.71, −0.084, −0.47) for 200c, (7.85, −0.081, −0.71) for vir, (10.14, −0.081, −1.01) for 200m; [src: Table 1]; relaxed haloes have A higher by ~18% [der: ratio of the Table 1 rows] | arXiv:0804.2486 |
+| Bullock et al. 2001 | c_v ∝ 1/(1+z) at fixed mass; scatter in log c_v ~ 0.18; denser environments give more concentrated haloes | arXiv:astro-ph/9908159 [src: abstract] |
+| Duffy et al. 2008 | power law for 10¹¹–10¹⁵ M_⊙/h, z < 2, in WMAP5; z = 0 concentrations 23% (10¹¹) to 16% (10¹⁴ M_⊙/h) below Millennium values; "much lower" than X-ray inferences [src: abstract]. Form c = A(M/M_pivot)^B (1+z)^C, M_pivot = 2 × 10¹² h⁻¹M_⊙ [src: Eq. 4]; NFW, full sample, z = 0–2: (A, B, C) = (5.71, −0.084, −0.47) for 200c, (7.85, −0.081, −0.71) for vir, (10.14, −0.081, −1.01) for 200m; [src: Table 1]; relaxed sample, NFW, z = 0–2: (6.71, −0.091, −0.44) for 200c [src: Table 1] | arXiv:0804.2486 |
 | Ludlow et al. 2016 | c(M, z) of CDM monotonic; WDM non-monotonic; collapsed mass history predicts both | arXiv:1601.02624 [src] |
 | Child et al. 2018 | in M/M*: power law below M/M* ~ 500–1000, then constant c_0 ~ 3; relaxed fraction falls to ~0.5 | arXiv:1804.10199 [src: abstract] |
 | Diemer 2019 | analytic model from pseudo-evolution plus ν, n_eff and α_eff; 5% accuracy against scale-free and ΛCDM simulations; in Colossus | arXiv:1809.07326 [src] |
-| CAMELS, 28 parameters | baryonic imprints on c_vir–M_vir over 10¹¹–10¹⁴·⁵ M_⊙/h, z = 0–3, from 2048 TNG-model runs | Delgado 2026, arXiv:2610.03544 [src] |
+| CAMELS, 28 parameters | baryonic imprints on c_vir–M_vir over 10¹¹–10¹⁴·⁵ M_⊙/h, z = 0–3, from 2048 TNG-model runs | Delgado 2026, arXiv:2610.03544 [src: abstract] |
 
 Concentration taken from one relation (often Duffy et al. 2008 with its slopes
 fixed) is an assumption of most halo-model fits of lensing; the cluster
@@ -165,14 +165,14 @@ matter spectrum is in `cosmo-weak-lensing` and `cosmo-simulations-mocks`.
 by P(N|M) plus the spatial and velocity distributions of galaxies within
 haloes; different statistics respond to different combinations of its
 parameters, and cosmological and HOD parameters are argued to have
-non-degenerate effects [src]. In dissipationless simulations ⟨N⟩(M) of
+non-degenerate effects [src: abstract]. In dissipationless simulations ⟨N⟩(M) of
 subhaloes has "a step, a shoulder, and a power law high-mass tail"; it is
 Poisson at high mass but sub-Poisson for ⟨N⟩ < 4; ⟨N_s⟩ ∝ M^b with b ~ 1
-(Kravtsov et al. 2004, arXiv:astro-ph/0308519) [src]. Zheng et al. 2005
+(Kravtsov et al. 2004, arXiv:astro-ph/0308519) [src: abstract]. Zheng et al. 2005
 (arXiv:astro-ph/0408564) find the central–satellite split in an SPH simulation
 and a semi-analytic model, with M_1 ≈ 14 M_min (SPH) or 18 M_min (SA), and a
 conditional galaxy mass function that is not Schechter because of the central
-"bump" [src].
+"bump" [src: abstract].
 
 The five-parameter form, as the Asgari review writes it [src: Eqs. 51–52 of
 arXiv:2303.08752]:
@@ -229,12 +229,12 @@ incompleteness ("iHOD"), using ~80% more galaxies than threshold HODs [src].
 **Principle.** Vale 2004 (arXiv:astro-ph/0402500) replace linearity between
 light and mass with monotonicity between galaxy luminosity and halo or subhalo
 mass; their halo/subhalo mass–luminosity relation is a double power law tending
-to L ∝ M⁴ at low mass and L ∝ M^0.28 at high mass [src]. Conroy et al. 2006
+to L ∝ M⁴ at low mass and L ∝ M^0.28 at high mass [src: abstract]. Conroy et al. 2006
 (arXiv:astro-ph/0512234) match luminosity to V_max, taken at accretion for
 subhaloes (V_max,acc), and reproduce SDSS and DEEP2 clustering for 0.1 < r_p <
-10 h⁻¹Mpc and Lyman-break galaxies at z ~ 3–5 [src]. Abundance matching
+10 h⁻¹Mpc and Lyman-break galaxies at z ~ 3–5 [src: abstract]. Abundance matching
 "assumes that every dark matter halo or subhalo above a specific mass threshold
-hosts one galaxy" (Behroozi et al. 2010, arXiv:1001.0015) [src].
+hosts one galaxy" (Behroozi et al. 2010, arXiv:1001.0015) [src: abstract].
 
 **Choice of halo property and scatter.** Reddick et al. 2013 (arXiv:1207.2160),
 on Bolshoi with SDSS clustering and the conditional stellar mass function of
@@ -259,10 +259,10 @@ the relation to star formation histories from z = 0 to 8 [src].
 **Joint lensing + clustering + abundance.** Leauthaud et al. 2012
 (arXiv:1104.0928), COSMOS z = 0.2–1, is the first joint analysis of the three,
 "carefully accounting for sample variance and for scatter between stellar and
-halo mass" [src]. The DES Y3 analysis fits log M*(M_h) = log(ε M_1) +
+halo mass" [src: abstract]. The DES Y3 analysis fits log M*(M_h) = log(ε M_1) +
 f[log(M_h/M_1)] − f(0), f(x) ≡ −log(10^(αx) + 1) + δ [log(1 + exp(x))]^γ / [1 +
-exp(10^(−x))], from ~100 kpc to ~100 Mpc (Zacharegkas et al. 2025,
-arXiv:2506.22367) [src].
+exp(10^(−x))] [src: Sect. 2.1], from ~100 kpc to ~100 Mpc [src: abstract]
+(Zacharegkas et al. 2025, arXiv:2506.22367).
 
 Results by survey are in `results.md` section 2.
 
@@ -280,23 +280,23 @@ once.
 
 | Model | What is parameterised | Constrained by | Selected findings | Reference |
 |---|---|---|---|---|
-| Age distribution matching | at fixed luminosity, colour monotonic in z_starve, a halo-assembly redshift | SDSS M_r < −19 statistics | halo and galaxy assembly "are indeed correlated" | Hearin et al. 2013, arXiv:1304.5557 [src] |
+| Age distribution matching | at fixed luminosity, colour monotonic in z_starve, a halo-assembly redshift | SDSS M_r < −19 statistics | halo and galaxy assembly "are indeed correlated" | Hearin et al. 2013, arXiv:1304.5557 [src: abstract] |
 | EMERGE | SFR from halo growth rate times an instantaneous baryon conversion efficiency; delayed-then-rapid satellite quenching; tidal disruption | data out to high z, model selection statistics | at fixed halo mass passive galaxies have higher stellar mass; intracluster mass up to 8 times the central | Moster et al. 2018, arXiv:1705.05373 [src] |
-| UniverseMachine | SFR from potential-well depth, assembly history and redshift | SMFs, SFRs, quenched fractions, UV luminosity functions, IRX-UV, auto- and cross-correlations by star-formation class, environmental quenching, 0 < z < 10 | galaxy assembly correlates strongly with halo assembly; massive quenched galaxies sit in more massive haloes than star-forming ones at fixed stellar mass; Planck cosmologies give up to 0.3 dex lower SHMR at early times | Behroozi et al. 2019, arXiv:1806.07893 [src] |
+| UniverseMachine | SFR from potential-well depth, assembly history and redshift | SMFs, SFRs, quenched fractions, UV luminosity functions, IRX-UV, auto- and cross-correlations by star-formation class, environmental quenching, 0 < z < 10 | galaxy assembly correlates strongly with halo assembly; massive quenched galaxies sit in more massive haloes than star-forming ones at fixed stellar mass; Planck cosmologies give up to 0.3 dex lower SHMR at early times | Behroozi et al. 2019, arXiv:1806.07893 [src: abstract] |
 
 **Semi-analytic models (SAMs).** Review: Somerville et al. 2015
 (arXiv:1412.2712), which finds models converged on cosmological accretion,
 stellar winds most efficient at low mass, black-hole feedback at high mass, and
 merging and environment, all "phenomenological implementations" tuned to
-observations [src]. Examples: the Munich model recalibrated to Planck
-(Henriques et al. 2015, arXiv:1410.0365) [src]; GALFORM with a top-heavy
-starburst IMF (Lacey et al. 2016, arXiv:1509.08473) [src]; Shark, open source
+observations [src: abstract]. Examples: the Munich model recalibrated to Planck
+(Henriques et al. 2015, arXiv:1410.0365) [src: abstract]; GALFORM with a top-heavy
+starburst IMF (Lacey et al. 2016, arXiv:1509.08473) [src: abstract]; Shark, open source
 and modular, which finds SAM halo baryon fractions much higher than EAGLE's
-(Lagos et al. 2018, arXiv:1807.11180) [src]. The nIFTy comparison ran 12 SAMs
+(Lagos et al. 2018, arXiv:1807.11180) [src: abstract]. The nIFTy comparison ran 12 SAMs
 and 2 HOD models on one simulation and one set of merger trees without
 recalibration: stellar mass functions, sSFR, stellar-to-halo ratios and orphan
 abundances scatter widely, "much larger than seen in previous comparison
-studies" (Knebe et al. 2015, arXiv:1505.04607) [src].
+studies" (Knebe et al. 2015, arXiv:1505.04607) [src: abstract].
 
 **Hydrodynamical simulations.** Review: Crain et al. 2023 (arXiv:2309.17075):
 current suites "broadly reproduce the observed spatial clustering of galaxies"
@@ -320,11 +320,11 @@ neighbouring haloes). The review keeps these distinct [src: Sect. 5.3–5.4 and
 
 | Result | Content | Reference |
 |---|---|---|
-| Halo assembly bias, formation time | below ~10¹³ M_⊙/h clustering depends strongly on formation time; at 10¹¹ M_⊙/h the oldest 10% are > 5 times more correlated than the youngest 10% | Gao et al. 2005, arXiv:astro-ph/0506510 [src] |
+| Halo assembly bias, formation time | below ~10¹³ M_⊙/h clustering depends strongly on formation time; at 10¹¹ M_⊙/h the oldest 10% are > 5 times more correlated than the youngest 10% | Gao et al. 2005, arXiv:astro-ph/0506510 [src: abstract] |
 | Concentration | b(c, M\|z) = b(M\|z) b(c\|M/M*), sign change at M*: concentrated haloes cluster more below M*, less above | Wechsler et al. 2006, arXiv:astro-ph/0512416 [src] |
-| Halo definition | amplitude and sense depend on Δ; Δ ~ 20m–40m removes most concentration dependence below 10¹² h⁻¹M_⊙; no definition removes all forms | Villarreal et al. 2017, arXiv:1705.04327 [src] |
-| Causes at low mass | splashback subhaloes give two thirds; the rest from ≲ 10% of haloes in dense regions slowed by tidal fields and fast ambient matter (web view: `cosmo-cosmic-web`) | Mansfield et al. 2019, arXiv:1902.00030 [src] |
-| Galaxy assembly bias, shuffling | ±10% in two-point correlations of a SAM on Millennium; fixing formation redshift or concentration as well does not remove it | Croton et al. 2007, arXiv:astro-ph/0605636 [src] |
+| Halo definition | amplitude and sense depend on Δ; Δ ~ 20m–40m removes most concentration dependence below 10¹² h⁻¹M_⊙; no definition removes all forms | Villarreal et al. 2017, arXiv:1705.04327 [src: abstract] |
+| Causes at low mass | splashback subhaloes give two thirds; the rest from ≲ 10% of haloes in dense regions slowed by tidal fields and fast ambient matter (web view: `cosmo-cosmic-web`) | Mansfield et al. 2019, arXiv:1902.00030 [src: abstract] |
+| Galaxy assembly bias, shuffling | two-point correlations of a SAM on Millennium enhanced by 10% for M_bJ − 5 log h < −17 and suppressed by a similar amount for < −20; fixing formation redshift or concentration as well does not remove it | Croton et al. 2007, arXiv:astro-ph/0605636 [src: abstract] |
 | Mass-only HOD on biased mocks | inferred HOD significantly wrong; sizes in `systematics.md` section 7 | Zentner et al. 2014, arXiv:1311.1818 [src] |
 | Decorated HOD | "minimally expand the parameter space and maximize the independence between traditional and novel HOD parameters" | Hearin et al. 2016, arXiv:1512.03050 [src] |
 | Environment-based terms | concentration alone "cannot capture the full galaxy assembly bias effect"; concentration- and environment-based HOD terms; both kinds present for DESI-like tracers in TNG | Yuan et al. 2021, arXiv:2010.04182; arXiv:2202.12911 [src] |
@@ -425,16 +425,16 @@ scale cuts.
 
 | Code | Purpose | Reference |
 |---|---|---|
-| Colossus | cosmology, peak height, bias, mass function, SO radii and masses, profiles, concentration, splashback; > 40 fitting functions | Diemer 2018, arXiv:1712.04512 [src] |
+| Colossus | cosmology, peak height, bias, mass function, SO radii and masses, profiles, concentration, splashback; > 40 fitting functions | Diemer 2018, arXiv:1712.04512 [src: abstract] |
 | Halotools | open-source package for the galaxy–halo connection; decorated HODs | Hearin et al. 2016, arXiv:1512.03050 [src] |
 | AbacusHOD | forward-models clustering by populating AbacusSummit; used for DESI One-Percent HODs | arXiv:2306.06314 [src] |
 | TabCorr | tabulated halo correlation functions convolved with an HOD; version 1.1.2 in the DESI DR1 lensing analysis | arXiv:2512.15962 [src: Sect. III.2] |
 | Dark Emulator | emulated HMF, halo–matter and halo–halo correlations over wCDM; HOD at equation level | Nishimichi et al. 2019, arXiv:1811.09504 [src] |
 | BNL | beyond-linear halo bias in the halo model | Mead 2021, arXiv:2011.08858 [src] |
-| hmfc | HMF fitting formula from 10⁻⁶ to 10¹⁵·⁵ M_⊙ | Zheng et al. 2026, arXiv:2607.05505 [src] |
+| hmfc | HMF fitting formula from 10⁻⁶ to 10¹⁵·⁵ M_⊙ | Zheng et al. 2026, arXiv:2607.05505 [src: abstract] |
 | Aletheia | HMF emulator with evolution mapping | Fiorilli et al. 2026, arXiv:2609.10665 [src] |
 | UniverseMachine | empirical model; public data release DR1 | Behroozi et al. 2019, arXiv:1806.07893 [src] |
-| Shark | open-source modular SAM (C++11, OpenMP) | Lagos et al. 2018, arXiv:1807.11180 [src] |
+| Shark | open-source modular SAM (C++11, OpenMP) | Lagos et al. 2018, arXiv:1807.11180 [src: abstract] |
 | Basilisk | Bayesian hierarchical satellite-kinematics forward model | Mitra et al. 2024, arXiv:2409.03105 [src] |
 
 ## Not verified

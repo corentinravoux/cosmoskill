@@ -11,8 +11,9 @@ definitions and mass function shared with cosmo-galaxy-halo-connection.
 
 Already in L2, not repeated here: the three families of finders with their
 founding papers, the FoF boundary density of 81.62 times the mean for
-b = 0.2, the Knebe et al. 2011 summary, the halo mass-function papers and
-the requirement of 500 particles per halo for 1% statistics
+b = 0.2 (arXiv:1103.0005 [src: abstract]), the Knebe et al. 2011 summary,
+the halo mass-function papers and the requirement of 500 particles per halo
+for 1% statistics (arXiv:1804.05865 [src: abstract])
 (`physics-and-methods.md#halo-finding-and-halo-definitions`,
 `systematics.md#resolution-and-box-size-effects`). How a concentration is
 measured on a catalogue, the choice of centre for a profile and the
@@ -217,9 +218,9 @@ through the host [src: Fig. 11 caption].
 
 | Finder | Separates by | Unbinding | Cost on one FLAMINGO output | Main stated weakness |
 |---|---|---|---|---|
-| SUBFIND | density peaks and saddle points | iterative | O(10³) CPU-h | blending of massive subhaloes near the host centre |
-| VELOCIraptor | phase-space density peaks | iterative | O(10³) CPU-h | miscentring of some massive centrals |
-| ROCKSTAR | 6D FoF hierarchy | single pass, inclusive membership | O(10) CPU-h | low central bound masses, mass function 10% off |
+| SUBFIND | density peaks and saddle points | iterative | O(10³) CPU-h (arXiv:2502.06932 [src: Sects. 4 and 5]) | blending of massive subhaloes near the host centre |
+| VELOCIraptor | phase-space density peaks | iterative | O(10³) CPU-h (arXiv:2502.06932 [src: Sects. 4 and 5]) | miscentring of some massive centrals |
+| ROCKSTAR | 6D FoF hierarchy | single pass, inclusive membership | O(10) CPU-h (arXiv:2502.06932 [src: Sects. 4 and 5]) | low central bound masses, mass function 10% off [src: Sect. 4.2.1] |
 | HBT-HERONS / HBT+ | history (tracking bound particles) | iterative, subsampled | O(10) CPU-h | needs outputs in time; cadence not tuned in FLAMINGO |
 | CompaSO | competitive SO on a kernel-density FoF | none, cleaning by trees | on the fly | over-splitting at large mass |
 
@@ -247,13 +248,13 @@ What was found when the families were run on the same particles:
   proxy"; the number of well-resolved subhaloes differs by up to 20% near
   R_200c and increasingly towards host centres; most finders do not improve
   with resolution and do worse in hydrodynamical than gravity-only runs
-  [src: abstract].
+  [src: arXiv:2502.06932, abstract].
 - **Clustering.** In bins of V_max, finders agree beyond 1–10 Mpc apart
   from a small ROCKSTAR offset, explained by its lower central bound masses:
   a V_max cut then selects more massive haloes; below about 2 Mpc, where the
   one-halo term dominates, the correlation functions differ significantly,
-  SUBFIND being increasingly suppressed at small separations [src: Sect.
-  4.4].
+  SUBFIND being increasingly suppressed at small separations [src:
+  arXiv:2502.06932, Sect. 4.4].
 - **SUBFIND against HBT+.** On the same runs the final subhalo mass function
   of HBT+ is about 10% above SUBFIND at low mass, and at high mass the
   difference corresponds to a factor 2–3 in subhalo mass or an order of

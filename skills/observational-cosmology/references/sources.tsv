@@ -66,7 +66,6 @@ deJanvry2025	2511.18134	de Janvry	2025	Cosmic Shear constraints from HSC Year 3 
 CHIME2025	2511.19620	CHIME Collaboration	2025	Detection of the Cosmological 21 cm Signal in Auto-correlation at z ~ 1 with the Canadian Hydrogen Intensity Mapping Experiment	results
 Li2025	2511.22512	Li	2025	Robust evidence for dynamical dark energy in light of DESI DR2 and joint ACT, SPT, and Planck data	results
 Siegel2025b	2512.02954	Siegel	2025	The suppression of the matter power spectrum: strong feedback from X-ray gas mass fractions, kSZ effect profiles, and galaxy-galaxy lensing	results
-Bautista2025	2512.03228	Bautista	2025	The DESI DR1 Peculiar Velocity Survey: Mock Catalog	method
 Turner2025	2512.03230	Turner	2025	The DESI DR1 Peculiar Velocity Survey: growth rate measurements from galaxy and momentum correlation functions	results
 SO2025SAT	2512.15833	Simons Observatory Collaboration	2025	The Simons Observatory: forecasted constraints on primordial gravitational waves with the expanded array of Small Aperture Telescopes	forecast
 DES2026Y6	2601.14559	DES Collaboration	2026	Dark Energy Survey Year 6 Results: Cosmological Constraints from Galaxy Clustering and Weak Lensing	results
@@ -91,3 +90,15 @@ Camilleri2026	2609.05053	Camilleri	2026	Supernovae Unite: Combining Pantheon+ an
 Lee2026	2609.05321	Lee	2026	Supernovae Unite: Host-Galaxy Mass Measurements of Type Ia Supernovae and Their Impact on Cosmology	systematics
 Hivon2001	astro-ph/0105302	Hivon	2001	MASTER of the CMB Anisotropy Power Spectrum: A Fast Method for Statistical Analysis of Large and Complex CMB Data Sets	method
 Schneider2002	astro-ph/0206182	Schneider	2002	Analysis of two-point statistics of cosmic shear: I. Estimators and covariances	foundation
+Qu2023	2304.05202	Qu	2023	The Atacama Cosmology Telescope: A Measurement of the DR6 CMB Lensing Power Spectrum and its Implications for Structure Growth	results
+Riess2024JWST	2401.04773	Riess	2024	JWST Observations Reject Unrecognized Crowding of Cepheid Photometry as an Explanation for the Hubble Tension at 8 sigma Confidence	systematics
+Elbers2025	2503.14744	Elbers	2025	Constraints on Neutrino Physics from DESI DR2 BAO and DR1 Full Shape	results
+Sanchez2021	2105.13542	Sánchez	2021	Dark Energy Survey Year 3 Results: Exploiting small-scale information with lensing shear ratios	method
+Lai2025	2512.03229	Lai	2025	The DESI DR1 Peculiar Velocity Survey: growth rate measurements from the maximum likelihood fields method	results
+Qin2025	2512.03231	Qin	2025	The DESI DR1 peculiar velocity survey: growth rate measurements from the galaxy power spectrum	results
+Secrest2020	2009.14826	Secrest	2020	A Test of the Cosmological Principle with Quasars	results
+Smith2020	2001.11294	Smith	2020	First Cosmology Results using Type Ia Supernovae from the Dark Energy Survey: The Effect of Host Galaxy Properties on Supernova Luminosity	systematics
+Ginolin2024	2405.20965	Ginolin	2024	ZTF SN Ia DR2: Environmental dependencies of stretch and luminosity of a volume limited sample of 1,000 Type Ia Supernovae	systematics
+Rubin2026	2601.19854	Rubin	2026	Banana Split: Improved Cosmological Constraints with Two Light-Curve-Shape and Color Populations Using Union3.1+UNITY1.8	results
+Bock2025	2511.02985	Bock	2025	The SPHEREx Satellite Mission	data
+Cai2026	2605.10102	Cai	2026	From Large Telescopes to the MUltiplexed Survey Telescope (MUST)	data

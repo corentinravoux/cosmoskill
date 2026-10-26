@@ -142,10 +142,10 @@ move the answer:
   shift because the volumetric run undersamples a low-`d_L`, high-inclination mode
   [src: abstract]. A prior study must re-sample, not reweight.
 - **H0 prior.** Flat-in-log, `p(H0) ∝ 1/H0`, in LVC 2017 (arXiv:1710.05835) [src: Methods] and
-  in the O2 paper (arXiv:1908.06060); flat in the LVK papers from GWTC-3 (§5). The same event
-  gives 70.0 (+12.0/−8.0) in the first and 68.7 (+17.5/−8.3) in the second [src, abstracts]; the
+  in the O2 paper (arXiv:1908.06060); flat in the LVK papers from GWTC-3 (Sect. 5). The same event
+  gives 70.0 (+12.0/−8.0) in the first and 68.7 (+17.5/−8.3) in the second [src: abstract of each]; the
   two share the prior form, and what else differs between them was not read. A prior flat in `z`
-  instead of `p(d) ∝ d²`: systematics file, §2.
+  instead of `p(d) ∝ d²`: systematics file, Sect. 2.
 - **Summary statistic.** Maximum a posteriori with highest-density interval (LVC 2017, GWTC-3
   era) or median with symmetric interval (GWTC-4.0 onwards). The posteriors are skewed to high
   H0, so the two differ by several km/s/Mpc: 70.0 (+12.0/−8.0) against 74.0 (+16.0/−8.0) for the
@@ -157,30 +157,29 @@ move the answer:
 | Information | How it enters | Reference |
 |---|---|---|
 | VLBI superluminal motion of the jet centroid | prior on viewing angle (about 20°, opening angle < 5°) [src]; the GW posterior `p(d, θ_obs | x_GW)` is the prior of the light-curve and centroid fit, and the resulting `p(d | x_GW, x_VLBI, x_LC)` enters the LVC 2017 velocity likelihood unchanged [src: 1806.10596 Methods §0.2, Eq. 5–7] | arXiv:1806.09693, arXiv:1806.10596 |
-| Afterglow light curve (radio, optical, X-ray, to ~3.5 yr) | joint fit of jet structure and viewing angle | arXiv:2305.19914 |
-| All VLBI data fitted in the visibility plane with hydrodynamical jet models | viewing angle 16.8°–19.2°, `d_L` and H0 fitted directly [src] | arXiv:2605.11437 |
+| Afterglow light curve (radio, optical, X-ray, to ~3.5 yr) | joint fit of jet structure and viewing angle | arXiv:2305.19914 [src: abstract] |
+| All VLBI data fitted in the visibility plane with hydrodynamical jet models | viewing angle 16.8°–19.2°, `d_L` and H0 fitted directly [src: abstract] | arXiv:2605.11437 |
 | Kilonova and gamma-ray burst with a nuclear equation-of-state prior | joint multi-messenger inference | arXiv:2002.11355 |
 | Independent distance to the host (surface-brightness fluctuations) | pins `d`, hence `i ≳ 137°` [src]; no longer a ladder-free H0 | arXiv:1801.06080 |
 
 Every row replaces a GW-only uncertainty by an astrophysical model of the jet or the
-ejecta; a viewing-angle bias above about 10° gives more than 3% on H0
-(arXiv:2006.02779) [src].
+ejecta; a viewing-angle bias above about 10° gives more than 3% on H0 (arXiv:2006.02779) [src: abstract].
 
 ### 2.3 The recession velocity of the host
 <!-- key: the-recession-velocity-of-the-host -->
 
 At 40 Mpc the peculiar velocity is of order 10% of the recession velocity
-(arXiv:1710.05835, Methods) [src], so the velocity model is part of the estimator. The
+(arXiv:1710.05835) [src: Methods, Sect. "Finding the Hubble velocity of NGC 4993"], so the velocity model is part of the estimator. The
 approaches in the literature, in order of appearance:
 
 | Approach | Input | Result for NGC 4993 | Reference |
 |---|---|---|---|
-| Gaussian-kernel average of a direct-distance catalogue | 6dFGSv Fundamental Plane, kernel 8 h⁻¹ Mpc, 10 galaxies within one kernel width [src] | `<v_p>` = 310 ± 69 km/s, error inflated to 150 km/s [sec: arXiv:1909.00587 §3.2] | arXiv:1710.05835 |
+| Gaussian-kernel average of a direct-distance catalogue | 6dFGSv Fundamental Plane, kernel 8 h⁻¹ Mpc, 10 galaxies within one kernel width [src: Methods, Sect. "Finding the Hubble velocity of NGC 4993"] | `<v_p>` = 310 ± 69 km/s, error inflated to 150 km/s [src: same section; sec: arXiv:1909.00587 Sect. 3.2] | arXiv:1710.05835 |
 | Marginalise over the kernel scale | same kind of catalogue | a 200 km/s shift moves H0 by about 4 km/s/Mpc [src: abstract] | arXiv:1909.09609 |
 | Group redshift plus several catalogues, Bayesian model averaging; likelihood written in log-distance ratio | CF3, 2MTF, 6dFGSv; several group catalogues | catalogues disagree by more than their errors | arXiv:1909.00587 |
-| Reconstructed non-linear field plus virial term | BORG on 2M++ | mean 373 km/s, σ ≈ 130 km/s (82 field, 100 virial) [src] | arXiv:1909.08627 |
+| Reconstructed non-linear field plus virial term | BORG on 2M++ | mean 373 km/s, σ ≈ 130 km/s (82 field, about 100 virial for a `10^12 M☉` halo) [src: Sect. 6.1] | arXiv:1909.08627 |
 | Dedicated spectroscopy of the environment | DESI: 39 group members, Fundamental Plane distances | H0 = 70.9 or 73.4 depending on the velocity source [src: abstract] | arXiv:2512.08818 |
-| Full covariance of the velocity field between sirens | simulations | error up to ×2 within 50 Mpc [src] | arXiv:2509.03101 |
+| Full covariance of the velocity field between sirens | simulations | error up to ×2 within 50 Mpc [src: abstract] | arXiv:2509.03101 |
 
 The general Bayesian model of Howlett & Davis 2019 "works more closely with observed
 quantities from redshift and peculiar velocity surveys" (log-distance ratio rather than
@@ -258,8 +257,7 @@ spurious bias.
 | Redshift prior implementation | pre-computed on a pixel grid, or sampled so that host-population parameters can vary | arXiv:2609.04991 |
 
 Two families exist: the LVK pipelines use every event above threshold with a
-completeness correction; the DES/DESI-Legacy/DELVE line (arXiv:1901.01540 to
-arXiv:2603.20195, results file §2.2) multiplies single-event posteriors of the
+completeness correction; the DES/DESI-Legacy/DELVE line (arXiv:1901.01540 to arXiv:2603.20195, results file Sect. 2.2) multiplies single-event posteriors of the
 best-localised events inside a deep photometric footprint.
 
 ## 4. Dark sirens: spectral (population) method
@@ -270,17 +268,15 @@ feature at a known or self-calibrated scale, the observed position of that featu
 function of `d_L` traces `z(d_L)`.
 
 - Origin: Taylor, Gair & Mandel 2011 (arXiv:1108.5161) with the narrow neutron-star mass
-  function; Farr et al. 2019 (arXiv:1908.09084) with the pair-instability cutoff near
-  45 M☉.
+  function; Farr et al. 2019 (arXiv:1908.09084) with the pair-instability cutoff near 45 M☉ [src: abstract].
 - "Spectral sirens": Ezquiaga & Holz 2022 (arXiv:2202.08240) argue for using the whole
   spectrum and list five features (both edges of the pair-instability gap, both edges of
   the neutron-star–black-hole gap, the minimum neutron-star mass) [src].
-- Features seen in data: a peak near 10 M☉ and a change of slope near 35 M☉ in GWTC-5.0
-  (arXiv:2605.27226) [src]; peaks near 9 and 32 M☉ and a roll-off above 46 M☉ in O3, the
-  32 M☉ peak correlating most strongly with H0 (arXiv:2410.07416) [src]; a further scale
-  at 63.3 ± 4.8 M☉ claimed in GWTC-4.0 (arXiv:2601.03257) [src].
+- Features seen in data: a peak near 10 M☉ and a change of slope near 35 M☉ in GWTC-5.0 (arXiv:2605.27226) [src: abstract]; peaks near 9 and 32 M☉ and a roll-off above 46 M☉ in O3, the
+  32 M☉ peak correlating most strongly with H0 (arXiv:2410.07416) [src: abstract]; a further scale
+  at 63.3 ± 4.8 M☉ claimed in GWTC-4.0 (arXiv:2601.03257) [src: abstract].
 - Mass models: parametric families (the LVK fiducial in GWTC-5.0 is called FullPop-4.0,
-  with a three-peak variant and a BBH-only multi-peak model; arXiv:2605.27227 §4.1),
+  with a three-peak variant and a BBH-only multi-peak model; arXiv:2605.27227 [src: Sect. IV.1]),
   non-parametric (arXiv:2404.02210), and normalising flows trained on population-synthesis
   catalogues (arXiv:2603.15332).
 - The three LVK models, all "superpositions of truncated Gaussian and power-law distributions"
@@ -364,15 +360,15 @@ Points specific to sirens:
   framework is given by Colombo et al. 2026 (arXiv:2609.12053), who find that treating
   them as independent does not bias H0 in the next runs but biases the low-mass end of
   the mass spectrum [src].
-- Priors in use for H0: uniform on [20, 140] (DES-line papers), uniform on [10, 220]
-  (arXiv:1807.05667), uniform on (10, 200) (arXiv:2605.27227, Table of §4.1) [src].
+- Priors in use for H0: a narrower uniform range in the DES-line papers (not placed, see Not verified), uniform on [10, 220]
+  (arXiv:1807.05667, abstract), uniform on (10, 200) (arXiv:2605.27227) [src: Sect. IV.1, Table 3].
   Combining posteriors from different papers requires dividing out each prior.
 - Fixed background: the LVK ΛCDM results fix `Ω_m = 0.3065` and `w0 = −1`, because rebuilding
   the catalogue redshift prior for each `Ω_m` is too costly; a spectral-only run with `Ω_m` free
   on U(0, 1) returns the prior and leaves H0 almost unchanged (arXiv:2605.27227) [src: Sect.
   IV.1, Appendix E].
-- Modified-gravity runs use narrower H0 priors, U(10, 120) or U(65, 77), with `Xi_0` on U(0.435,
-  10) and `n` on U(0.1, 10): a wider H0 prior would send sources beyond `z ≈ 10`, outside the
+- Modified-gravity runs use narrower H0 priors, U(10, 120) or U(65, 77), with `Xi_0` on
+  U(0.435, 10) and `n` on U(0.1, 10): a wider H0 prior would send sources beyond `z ≈ 10`, outside the
   redshift priors and the stable range of the selection integral (arXiv:2605.27227) [src: Sect.
   IV.2].
 - Electromagnetic selection is not in the LVK likelihood: "our pipelines fully account for GW
@@ -460,12 +456,11 @@ intersected haloes. Two descriptions are in use:
   et al. 2023, arXiv:2305.07022); `F` is degenerate with H0 [src];
 - distributions measured in hydrodynamical simulations. Konietzka et al. 2025
   (arXiv:2507.07090) show that sparse snapshot sampling in earlier IllustrisTNG work
-  misestimated the standard deviation and higher moments of `p(DM | z)` by more than
-  50% and that the log-normal form is a poor match [src].
+  misestimated the standard deviation and higher moments of `p(DM | z)` by more than 50% and that the log-normal form is a poor match [src: abstract].
 
 `DM_host` is modelled as a distribution, log-normal in most analyses, whose median
 and width are fitted (arXiv:2208.00819). The Milky Way halo term is taken from models:
-50–80 pc cm⁻³ to 200 kpc (Prochaska & Zheng 2019, arXiv:1901.11051) [src].
+50–80 pc cm⁻³ to 200 kpc (Prochaska & Zheng 2019, arXiv:1901.11051) [src: abstract].
 
 The likelihoods as their papers write them:
 
@@ -525,7 +520,7 @@ How the delay becomes H0 in the main analyses:
 
 | Analysis | Step from delay and lens model to H0 | Place read |
 |---|---|---|
-| SN Refsdal | the convergence map `κ` that fits the image positions does not depend on H0, so delays predicted at H0 = 70, Ω_M = 0.3 are rescaled as 1/H0; the measured SX–S1 delay of 376.0 (+5.6/−5.5) days is compared with each model, the likelihood being a Gaussian mixture built on 1000 simulated light curves that include subhaloes and stars. H0 = 73.04 would need 333.8 days | arXiv:2305.06367 [src: main text, Supplementary "Rescaling time-delay predictions"] |
+| SN Refsdal | the convergence map `κ` that fits the image positions does not depend on H0, so delays predicted at H0 = 70, Ω_M = 0.3 are rescaled as 1/H0; the measured SX–S1 delay of 376.0 (+5.6/−5.5) days is compared with each model, the likelihood being a Gaussian mixture built on 1000 simulated light curves that include subhaloes and stars. H0 = 73.04 would need 333.8 days | arXiv:2305.06367 [src: main text; Supplementary, Sect. "Rescaling time-delay predictions"] |
 | SN H0pe | per model, `p(H0 | LC) ∝ P(H0) P(M_l) ∫ P(O | M_l; H0) P(O | LC) dO` (Eq. 4), then a weighted sum over the seven models (Eq. 5), on the assumption that their systematics are not independent; with two delays the models are in effect weighted by how well they match the ratio of the delays, with absolute magnifications by how well they match those | arXiv:2403.18902 [src: Sect. VII.1] |
 | SN Encore | one delay only; each team gives samples of its mass model at a fixed cosmology, delays are rescaled for random H0 draws and weighted by the time-delay likelihood, then each model by the maximum likelihood of the same 23 image positions (Eq. 1); a BIC weighting was tried and dropped | arXiv:2509.12301 [src: Sect. VI.3] |
 | SN 2025wny | galaxy-scale lens model combined with delays; the result depends on the radial profile assumed (systematics file, §8) | arXiv:2608.28427 [src: Sect. VI.2] |
@@ -540,13 +535,13 @@ no cosmological measurement yet.
 
 | Code | Purpose | Reference |
 |---|---|---|
-| `gwcosmo` | LVK pipeline: catalogue and spectral sirens, joint population inference; sampled redshift prior and host-weighting inference in the 2026 version; version 3.0.0 in GWTC-4.0 [src: 2509.04348, software statement]; kernel-density evaluation of the per-event term (§5) | arXiv:1908.06050, arXiv:2308.02281, arXiv:2609.04991 |
+| `gwcosmo` | LVK pipeline: catalogue and spectral sirens, joint population inference; sampled redshift prior and host-weighting inference in the 2026 version; kernel-density evaluation of the per-event term (Sect. 5) | arXiv:1908.06050, arXiv:2308.02281, arXiv:2609.04991 |
 | `icarogw` 2.0 | LVK pipeline: population, cosmology and modified propagation, CPU/GPU; about two orders of magnitude faster above 100 events [src: abstract]; version 2.0.3 in GWTC-4.0 [src: 2509.04348, software statement]; Monte Carlo evaluation (§5) | arXiv:2305.17973 |
 | `CHIMERA` | joint population and catalogue analysis, built for spectroscopic catalogues | arXiv:2312.05302 |
 | `DarkSirensStat` | catalogue method with completeness studies, released with the GWTC-2 analysis | arXiv:2101.12660 |
 | `zDM` (+ PATH) | forward model of `p(z, DM)` with survey selection; probabilistic host association | arXiv:2208.00819, arXiv:2609.04765 |
 | `FRBs` repository | halo and cosmic DM models (`github.com/FRBs`, named in the abstract) | arXiv:1901.11051 |
-| IllustrisTNG DM catalogues | more than 20 public ray-traced DM catalogues [src] | arXiv:2507.07090 |
+| IllustrisTNG DM catalogues | more than 20 public ray-traced DM catalogues [src: abstract] | arXiv:2507.07090 |
 | `flip` | field-level covariance likelihood; `GWDensMesh` density vector for sirens | arXiv:2501.16852 |
 
 ## Conventions and community splits
@@ -558,7 +553,7 @@ no cosmological measurement yet.
   or flat-in-log, ranges in §5) differ between papers.
 - "Dark siren" means catalogue method in some papers and any siren without counterpart
   in others; the GWTC-5.0 paper uses "spectral" and "dark" for the two cases.
-- A fixed-population H0 is not comparable with a marginalised one (arXiv:2605.27227 §4.1).
+- A fixed-population H0 is not comparable with a marginalised one (arXiv:2605.27227) [src: Sect. IV.1].
 - FRB baryon fraction: `f_IGM` (excluding halo gas) or `f_d` (all diffuse ionised gas).
 
 ## Not verified
@@ -569,4 +564,8 @@ no cosmological measurement yet.
 - The equations of the FullPop-4.0 and multi-peak mass models (Appendix A of arXiv:2605.27227,
   Appendix C of arXiv:2509.04348) and their prior ranges; §4 gives their content as described in
   Sect. II.3 only.
+- The uniform H0 prior range of the DES-line dark-siren papers: the range given earlier named no paper and was removed on 2026-10-25.
 - GausSN (named in arXiv:2608.28427) and the cluster-lens modelling codes.
+- Removed on 2026-10-23 (numbers run): the `gwcosmo` version number for GWTC-4.0,
+  attributed to the software statement of arXiv:2509.04348; the rendering cached on
+  2026-10-23 (an earlier version of the paper) does not contain it.

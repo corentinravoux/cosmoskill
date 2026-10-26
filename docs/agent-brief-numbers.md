@@ -1,6 +1,7 @@
 # Brief for a numbers run
 
-Step 5.2 and 5.4 of `docs/plans/2026-10-21-plan.md`. Owner's rule
+Steps 1 and 3 of `docs/plans/2026-10-23-plan.md` (step 5 of the plan of
+2026-10-21). Owner's rule
 (2026-10-23): the package gives only numbers read in a paper, and every
 number names its paper and the place it was read. No number computed by an
 agent. A run takes one skill.
@@ -36,6 +37,15 @@ above a table ("From arXiv:…, Table 2:") covers every row under it.
 - Do not change a verified number to make it match a paper you did not
   read. If the paper gives a different value, quote the paper's value and
   say in "Not verified" what the skill said before.
+- Do not copy a place from a neighbouring statement without checking it.
+  A place given because the same paper and place are named earlier in the
+  section is written only after `fetch_paper.py <id> --grep "<number>"`
+  shows each number of the statement at that place (a gate on 2026-10-23
+  found two of three such places wrong).
+- Do not build a range from several values ("0.117–0.163 eV" from four
+  limits of one paper, "0.69–0.76" from three papers). A range is given only
+  when a paper states it; otherwise give each value with its own condition,
+  paper and place.
 - Do not delete a verified statement for any other reason. Dossiers have no
   length cap.
 - Never write, rename or remove a `<!-- key: ... -->` line by hand.

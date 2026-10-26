@@ -201,7 +201,7 @@ degeneracy that BAO crosses [src: Sects. VII.2.4, VII.4.2, footnote 47].
   Sect. 2.1]; ACT finds identical parameters across its three
   configurations [src: arXiv:2503.14454, Sect. VI.2].
 - For predicted abundances it matters. ACT (arXiv:2503.14454), P-ACT-LB, ΛCDM: predicted
-  Y_p 0.24727, 0.24707, 0.24691 for PRIMAT_2021, PRIMAT_2024 (τ_n = 878.4 s),
+  Y_p 0.24727, 0.24707, 0.24691 for PRIMAT_2021, PRIMAT_2024 (τ_n = 878.4 s [src: Sect. VI.2]),
   PRyMordial, the first shift from τ_n and the second from reaction rates;
   predicted D/H × 10⁵ = 2.415, 2.413 and 2.480, with PRIMAT 2–3σ from the
   PDG average and PRyMordial consistent [src: Eqs. 39, 41]. Joint CMB +

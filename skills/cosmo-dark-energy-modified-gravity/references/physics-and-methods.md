@@ -130,7 +130,7 @@ arXiv:1902.10503 (tests of gravity); Joyce et al. 2014, arXiv:1407.0059
 |---|---|---|---|
 | Binned `w(z)` with PCA of the bins | DR2: consistent with CPL; lowest-redshift bin favours `w > −1` | arXiv:2503.14743, arXiv:2503.14738 | [src] |
 | Gaussian-process regression | DR2: consistent with CPL | arXiv:2503.14743 | [src] |
-| Crossing statistics | DR1: Λ outside the 95% interval over some redshift ranges, significance varying with data set | Calderon et al. 2024, arXiv:2405.04216 | [src] |
+| Crossing statistics | DR1: Λ outside the 95% interval over some redshift ranges, significance varying with data set | Calderon et al. 2024, arXiv:2405.04216 | [src: abstract] |
 | Shape function and correlation prior motivated by Horndeski theory | DR2: `w(z)` varies with redshift at ≈ 3σ | arXiv:2504.06118 | [src] |
 | Reconstruction of `w_DE(a)` and EFT functions together | DR1, DR2: phantom crossing at `z ≲ 1`, non-minimal coupling preferred | arXiv:2407.15832, arXiv:2503.19898 | [src] |
 | SVD of the distance data into measurable modes | DR2: tension concentrated in the `Omega_m h^2` mode | arXiv:2606.30527 | [src] |
@@ -155,7 +155,8 @@ Reference implementation: DESI DR2 (arXiv:2503.14738, section "Cosmological
 Inference") [src].
 
 - Sampler and theory code: Cobaya with CAMB; Metropolis–Hastings MCMC;
-  convergence `R − 1 < 0.01` or an effective sample size ≳ 10^3.
+  convergence `R − 1 < 0.01` or an effective sample size ≳ 10^3
+  (arXiv:2503.14738, Sect. V).
 - Priors on `w0`, `wa`: uniform; the lower bound `wa > −3` is reached by the
   BAO-only and BAO + CMB-prior posteriors [src]. Ranges are those of Table 2
   of arXiv:2404.03002.
@@ -232,8 +233,8 @@ is a constraint at `z ≲ 1` only.
 
 `f(a) ≡ dln D/dln a = Omega_m(a)^gamma`, introduced by Linder
 (arXiv:astro-ph/0507263) with a fitting formula for the linear growth
-"accurate to 0.05–0.2%" [src]. General relativity with flat ΛCDM gives
-`gamma = 0.55` (arXiv:2302.01331) [src]. Linder and Cahn 2007,
+"accurate to 0.05–0.2%" [src: abstract]. General relativity with flat ΛCDM gives
+`gamma = 0.55` (arXiv:2302.01331) [src: abstract]. Linder and Cahn 2007,
 arXiv:astro-ph/0701317, make γ the parameter that separates growth from
 expansion: narrow range for GR dark energy, distinct values beyond GR [src]. `gamma > 0.55` means slower growth
 than GR at the same `Omega_m(a)`. One number, scale-independent by
@@ -280,7 +281,7 @@ construction; it cannot represent `f(R)`-type scale-dependent growth.
 
 GW170817 and GRB 170817A (arXiv:1710.05834) fixed the speed of gravitational
 waves to that of light: `abs(c_g/c − 1) ≤ 5 × 10^-16` (arXiv:1710.05901)
-[src]. Consequences read in the three October 2017 papers:
+[src: abstract]. Consequences read in the three October 2017 papers:
 
 - "A large class of scalar-tensor theories and DE models are highly
   disfavored"; the covariant Galileon is the worked example (arXiv:1710.05901)
@@ -375,7 +376,7 @@ Tsujikawa 2010, arXiv:1002.4928.
 | Mechanism | Principle | Canonical reference | Flag |
 |---|---|---|---|
 | Chameleon | the scalar mass depends on the local matter density: heavy where the density is high, "essentially free" where it is low | Khoury and Weltman 2003, arXiv:astro-ph/0309300 | [src] |
-| `f(R)` (Hu–Sawicki) | a chameleon in disguise; the scalar degree of freedom is locked to the GR value "across more than 25 orders of magnitude in density"; requires the galactic halo to keep the galaxy at high curvature | Hu and Sawicki 2007, arXiv:0705.1158 | [src] |
+| `f(R)` (Hu–Sawicki) | a chameleon in disguise; the scalar degree of freedom is locked to the GR value "across more than 25 orders of magnitude in density"; requires the galactic halo to keep the galaxy at high curvature | Hu and Sawicki 2007, arXiv:0705.1158 | [src: abstract] |
 | Symmetron | in dense regions the field sits at `phi = 0`, where its coupling to matter vanishes (local symmetry restoration) | Hinterbichler and Khoury 2010, arXiv:1001.4525 | [src] |
 | Vainshtein | derivative self-interactions suppress the force inside a radius around a source (Galileons, DGP-like models) | DGP: Dvali, Gabadadze and Porrati 2000, arXiv:hep-th/0005016; Galileon as the 4D effective theory of DGP: Nicolis, Rattazzi and Trincherini 2009, arXiv:0811.2197; review arXiv:1407.0059 | [src] for the two models; mechanism textbook |
 
@@ -441,10 +442,10 @@ Reference predictions: 0.401 ± 0.005 at `z = 0.555` and 0.452 ± 0.005 at `z =
 Facts read this session:
 
 - DESI converts `Delta chi2_MAP` with 2 extra degrees of freedom: −12.5 →
-  3.1σ, −21.0 → 4.2σ (arXiv:2503.14738) [src].
+  3.1σ, −21.0 → 4.2σ (arXiv:2503.14738) [src: Table 6 and its caption].
 - DIC scale used by DESI: at least 2 "not insignificant", up to 5 "positive",
   up to 10 "strong", above 10 "decisive"; for non-nested models DIC ranks but
-  gives no absolute scale (arXiv:2503.14743) [src]. The definition and
+  gives no absolute scale (arXiv:2503.14743) [src: Sect. VI.4]. The definition and
   properties of the information criteria are in Liddle 2007,
   arXiv:astro-ph/0701113, which notes that the DIC, unlike AIC and BIC,
   "allows for parameter degeneracy" [src].

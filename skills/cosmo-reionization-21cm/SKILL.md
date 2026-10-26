@@ -29,18 +29,18 @@ re-verify against the cited paper before a number enters a manuscript.
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
 
-- Planck low-ℓ polarisation gives τ = 0.051–0.063, σ ≈ 0.005–0.009 (arXiv:1807.06209, arXiv:1908.09856, arXiv:2103.14378; lowest, 0.051 ± 0.006 from NPIPE, arXiv:2007.04997, in `cosmo-cmb`). The value 0.090 ± 0.012 is CMB + DESI without low-ℓ EE, not a measurement (arXiv:2504.16932).
-- Reionisation probes in place of low-ℓ EE give τ = 0.067 ± 0.011 (arXiv:2607.26373). τ = 0.09 sits ≈ 2σ from SPT patchy-kSZ limits (arXiv:2505.15899); exotic ionisation adds ≤ 0.008 (arXiv:2608.01919).
-- Reionisation ends late: dark gaps persist to z ≃ 5.3 (arXiv:2109.06295); x_HI = 0.19 ± 0.07 at z = 5.6 (arXiv:2405.12273). Background fluctuations remain an alternative (arXiv:2312.08464).
+- Planck-based τ: 0.054 ± 0.007 (Planck 2018; arXiv:1807.06209, abstract), 0.059 ± 0.006 (SRoll2 maps; arXiv:1908.09856, abstract), 0.051 ± 0.006 (NPIPE; arXiv:2007.04997, abstract; see `cosmo-cmb`); likelihood variants in arXiv:2103.14378, Table 3. The value 0.090 ± 0.012 is CMB + DESI without low-ℓ EE, not a measurement (arXiv:2504.16932, abstract).
+- Reionisation probes in place of low-ℓ EE give τ = 0.067 ± 0.011 (arXiv:2607.26373, abstract). τ = 0.09 sits ≈ 2σ from SPT patchy-kSZ limits (arXiv:2505.15899, abstract); exotic ionisation adds ≤ 0.008 (arXiv:2608.01919, abstract).
+- Reionisation ends late: dark gaps persist to z ≃ 5.3 (arXiv:2109.06295, abstract); x_HI = 0.19 ± 0.07 at z = 5.6 (arXiv:2405.12273, abstract). Background fluctuations remain an alternative (arXiv:2312.08464).
 - The mean free path falls from 9.33 to 0.81 proper Mpc over z = 5.08–5.93 (arXiv:2308.04614, abstract).
-- At z ~ 7 every probe gives x_HI ≈ 0.4–0.65 with errors of 0.2–0.4 (arXiv:1802.06066, arXiv:2504.04683, arXiv:2609.40363).
-- kSZ: SPT-3G D1 finds D_3000 = 1.75 ± 0.86 μK² and Δz(25–75%) < 3.8 (arXiv:2601.20551); ACT gives Δz < 4.4 (arXiv:2506.06274). "Δz = 1.0" is superseded (arXiv:2002.06197).
-- EDGES (78 MHz, 0.5 K; arXiv:1810.05912) is unconfirmed; SARAS 3 rejects its profile at 95.3% (arXiv:2112.06778); its depth moves from 370 to 670 mK with the beam correction (arXiv:1910.03165). EDGES data are public since 2026 (arXiv:2605.16643).
-- No 21 cm power spectrum is detected at z > 6. Deepest 2σ limits: HERA Phase I 457 mK² (z = 7.9, k = 0.34 h/Mpc; arXiv:2210.04912), MWA (23.0 mK)² east–west and (21.7 mK)² = 470 mK² north–south (z = 6.5; arXiv:2508.04164), LOFAR (54.3 mK)² (z = 9.1; arXiv:2503.05576), NenuFAR 4.6 × 10⁵ mK² (z = 20.3; arXiv:2507.10533). HERA Phase II is limited by mutual coupling (arXiv:2511.21289).
-- HI intensity mapping has auto-spectra: CHIME, 12.5σ at z ~ 1 (arXiv:2511.19620); MeerKLASS, S/N 6.2 at z = 0.42 (arXiv:2610.12158). No BAO.
+- Near z ~ 7 the probes give x_HI = 0.48 (+0.26/−0.26) at z = 7.09 (quasar damping wing; arXiv:1802.06066, abstract), 0.65 (+0.27/−0.35) at z ~ 7 (galaxy damping wings; arXiv:2504.04683, abstract) and 0.38 (+0.14/−0.38) at z ~ 7 (Lyα fractions, EW > 25 Å; arXiv:2609.40363, abstract).
+- kSZ: SPT-3G D1 finds D_3000 = 1.75 ± 0.86 μK² and Δz(25–75%) < 3.8 (arXiv:2601.20551, abstract); ACT gives Δz < 4.4 (arXiv:2506.06274, abstract). "Δz = 1.0" is superseded (arXiv:2002.06197, abstract).
+- EDGES (78 MHz, 0.5 K; arXiv:1810.05912, abstract) is unconfirmed; SARAS 3 rejects its profile at 95.3% (arXiv:2112.06778, abstract); its depth moves from 370 to 670 mK with the beam correction (arXiv:1910.03165, Sect. 2.1.3). EDGES data are public since 2026 (arXiv:2605.16643).
+- No 21 cm power spectrum is detected at z > 6. Deepest 2σ limits: HERA Phase I 457 mK² (z = 7.9, k = 0.34 h/Mpc; arXiv:2210.04912, abstract), MWA (23.0 mK)² east–west and (21.7 mK)² = 470 mK² north–south (z = 6.5; arXiv:2508.04164, abstract), LOFAR (54.3 mK)² (z = 9.1; arXiv:2503.05576, abstract), NenuFAR 4.6 × 10⁵ mK² (z = 20.3; arXiv:2507.10533, abstract). HERA Phase II is limited by mutual coupling (arXiv:2511.21289).
+- HI intensity mapping has auto-spectra: CHIME, 12.5σ at z ~ 1 (arXiv:2511.19620, abstract); MeerKLASS, S/N 6.2 at z = 0.42 (arXiv:2610.12158, abstract). No BAO.
 - An amplitude is Ω_HI b_HI r (cross), Ω_HI b_HI (auto) or CHIME's A_HI, never Ω_HI (arXiv:1208.0331, arXiv:2202.01242).
 - No other line is detected on clustering scales: COMAP sets limits (arXiv:2406.07511); COPSS and mmIME see CO shot noise (arXiv:1605.03971, arXiv:2008.08087); mean CO (7σ) and [CII] (3σ) backgrounds come from tomographic cross-correlation (arXiv:2602.02658).
-- JWST: the baryon-limit argument used photometric candidates (arXiv:2208.01611); ΛCDM models fit luminosity functions to z = 14 (arXiv:2604.18683). The photon-budget excess (arXiv:2404.07250) shrinks with mass-complete samples (arXiv:2409.01286).
+- JWST: the baryon-limit argument used photometric candidates (arXiv:2208.01611); ΛCDM models fit luminosity functions to z = 14 (arXiv:2604.18683, abstract). The photon-budget excess (arXiv:2404.07250) shrinks with mass-complete samples (arXiv:2409.01286).
 
 ## Systematics a referee checks
 <!-- key: systematics-a-referee-checks -->
@@ -56,13 +56,13 @@ re-verify against the cited paper before a number enters a manuscript.
 <!-- key: errors-that-recur -->
 
 - Claiming EDGES detected cosmic dawn or HERA detected heating.
-- Quoting τ ≈ 0.09 as measured, or "reionisation ended at z = 6".
+- Quoting τ ≈ 0.09 (arXiv:2504.16932, abstract) as measured, or "reionisation ended at z = 6".
 - Ranking 21 cm limits taken at different k, or mixing mK² with (mK)².
 - Citing PAPER-64 limits from before the 2019 re-analysis (arXiv:1909.02085).
 - Reading a dark trough as a neutral-fraction measurement (arXiv:2510.25829).
 - Stating that 21 cm has only cross-correlation detections.
 - Reading "blind" foreground cleaning as analysis blinding.
-- Comparing the tanh midpoint (z ≈ 8.1) with model-based midpoints (z ≈ 7.2; arXiv:2504.09725).
+- Comparing the tanh midpoint (z_re = 8.14 ± 0.61; arXiv:1908.09856, abstract) with model-based midpoints (z_50 = 7.16 (+0.15/−0.12); arXiv:2504.09725, abstract).
 
 ## Related skills
 <!-- key: related-skills -->
@@ -86,7 +86,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 5k; methods 13k; results 13k; surveys 5k; systematics 11k; deep/eor-cross-correlations 7k; deep/eor-inference-modelling 8k; deep/hi-intensity-mapping 12k; deep/ionising-photon-budget 8k; deep/line-intensity-mapping 11k; deep/lya-emitters 7k.
+Sizes, in thousands of tokens: L1 3k; open 5k; methods 13k; results 14k; surveys 5k; systematics 12k; deep/eor-cross-correlations 7k; deep/eor-inference-modelling 8k; deep/hi-intensity-mapping 12k; deep/ionising-photon-budget 8k; deep/line-intensity-mapping 11k; deep/lya-emitters 7k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

@@ -56,11 +56,11 @@ strongly on which departures from ΛCDM the test is designed to detect" [src: ab
   `Δχ²_MAP ≡ −2Δ ln L` as "twice the difference in the negative log posteriors at the maximum
   posterior points for each model", which "accounts for the contribution of any non-uniform priors"
   (arXiv:2503.14738) [src: Sect. V].
-- The minimiser itself is a source of noise. Karim et al. find that widening the priors moved
+- The minimiser itself is a source of noise. Karim et al. (arXiv:2609.04334) find that widening the priors moved
   `Δχ²_MAP` by 0.45, "comparable to the scatter we obtain between minimizer restarts" [src: Sect.
   IV.1]. Run several restarts per model and quote their spread.
 - Conversion: `k` extra parameters, χ²_k survival function, two-sided Gaussian equivalent (L2). Kim
-  et al. restate the DESI case: `Δχ² = 12.5` on `k = 2` gives `p = 0.0019`, 3.1σ two-sided, and
+  et al. (arXiv:2607.28918) restate the DESI case: `Δχ² = 12.5` on `k = 2` gives `p = 0.0019`, 3.1σ two-sided, and
   `sqrt(Δχ²) ≈ 3.5σ` "holds only for k = 1" [src: App. B.1].
 - When Wilks' conditions are in doubt, calibrate the tail by Monte Carlo under the null with the
   same Gaussian likelihood. Kim et al. did so for their test statistic with `N = 2 × 10^5` draws and
@@ -77,7 +77,7 @@ They split the log evidence [src: App. A, Eq. 21]:
 
 `log Z = ⟨ln L⟩_P − ⟨ln(P/π)⟩_P`
 
-The first term, the posterior average of the log-likelihood, "can be considered the Bayesian
+The first term (arXiv:2503.14743), the posterior average of the log-likelihood, "can be considered the Bayesian
 equivalent of χ²"; the second is the Kullback–Leibler divergence from prior to posterior, the
 prior-dependent Ockham penalty [src: App. A]. Reporting both shows whether a change of `ln B`
 comes from the fit or from the prior: from DR1 to DR2, with Pantheon+, `Δ⟨ln L⟩_P` rose from
@@ -86,7 +86,7 @@ comes from the fit or from the prior: from DR1 to DR2, with Pantheon+, `Δ⟨ln 
 less susceptible to random fluctuations in the data leading to a better fit at a specific point in
 parameter space by chance" [src: App. A].
 
-Run settings used in one external evidence analysis (Karim et al., PolyChord in Cobaya):
+Run settings used in one external evidence analysis (Karim et al., arXiv:2609.04334, PolyChord in Cobaya):
 `nlive = 1000`, `nprior = 1500`, `num_repeats = 3 n_dim` (45 and 51 for 15 and 17 sampled
 dimensions), precision criterion 0.01; the live-point count "exceeds the usual 25 n_dim guidance
 for evidence estimation by a factor of 2.4–2.7"; evidences with `anesthetic` [src: App. A.1]. Nine
@@ -128,7 +128,7 @@ mean `μ̂` and width `σ̂`, with `λ = |μ̂ − ω_⋆|/σ̂` and `β = σ̂/
 `ln B_01 = (1/2) ln(1 + β^-2) − λ²/[2(1 + β²)]`, and for informative data `ln B_01 ≈ I − λ²/2`
 with `I = −ln β` [src: Eq. 9].
 
-Evidence against the simpler model grows as `λ²`; evidence for it only as `I`; "for strong odds
+Evidence against the simpler model grows as `λ²`; evidence for it only as `I` (arXiv:astro-ph/0504022); "for strong odds
 against the simpler model (λ ≫ 1) the prior choice becomes irrelevant unless I ≫ λ", which is the
 Lindley regime [src: Sect. 2.2]. For moderately informative data (`I ≈ 1–2` in base 10) the measured
 mean must lie about 4σ from `ω_⋆` "to robustly disfavor the simpler model" [src: Sect. 3.3].
@@ -172,12 +172,14 @@ with infinite data, while the evidence and the BIC are consistent [src: Liddle, 
   the prior "expanded by a factor of more than 10 times for both w parameters, leading to a greater
   than 100 times expansion in prior volume", which they judge "unphysical and unreasonable"
   (arXiv:2503.14743) [src: App. A].
-- Direct measurement: Karim et al. widen every prior (Table 3: `(w_0, w_a)` area 1.096 against 15.5,
+- Direct measurement: Karim et al. (arXiv:2609.04334) widen every prior (Table 3: `(w_0, w_a)` area 1.096 against 15.5,
   shared parameters also widened) on identical data; `ln B` moves from −0.92 to +2.36 (their sign:
-  positive favours ΛCDM) on posteriors that are "indistinguishable" [src: Sect. IV.1, Table 3]. The
-  logarithm of the `(w_0, w_a)` area ratio is 2.65 `[der: ln(15.5/1.096)]`, against a measured
-  shift of 3.28; the shared parameters cancel between models, so the 0.6 difference is not
-  explained by the text read and is left unresolved (evidence errors for these two rows not read).
+  positive favours ΛCDM) on posteriors that are "indistinguishable" [src: Sect. IV.1; Table 3 in
+  App. A.1].
+- The measured shift of `ln B` is larger than the logarithm of the `(w_0, w_a)` area ratio alone
+  `[der: from the two areas above]`; the shared parameters cancel between models, so the difference
+  is not explained by the text read and is left unresolved (evidence errors for these two rows not
+  read).
 - Posterior-informed priors are not legitimate for an evidence. Karim et al. run their baseline
   with priors spanning at least 5σ of each marginal, legitimate for ELPD, but "not a defensible a
   priori prior for an evidence calculation" [src: Apps. A.1, A.3].
@@ -194,7 +196,7 @@ Karim et al. 2026 (arXiv:2609.04334) [src: Sects. II.1, III, App. A]:
    `p(y_i | y_−i) = ∫ p(y_i | y_−i, θ) p(θ | y_−i) dθ` [src: Eq. 1]; the conditional likelihood
    term handles correlated data, and the posterior from seen data "is what makes log predictive
    density much less sensitive to assumed priors compared to ln B" [src: Sect. II.1].
-2. Choose blocks by redshift, not single points: each DESI BAO tracer bin is one block (`K = 7`
+2. Choose blocks by redshift, not single points (arXiv:2609.04334): each DESI BAO tracer bin is one block (`K = 7`
    blocks, 13 observables); supernovae sorted by `z_cmb` into contiguous equal-count blocks (30 of
    53 for Pantheon+, 31 of 59 for DES-Y5, 35 of 52 for DES-Dovekie; Union3 already binned, `K = 22`)
    [src: Sect. III]. A joint hold-out removes a BAO block with all supernovae in the same redshift
@@ -221,7 +223,7 @@ controls the type-I error at `α` by Markov's inequality, and e-values from inde
 
 `E_mix = ∫ [L(data | θ)/L(data | H_0)] π(θ) dθ`
 
-"is exactly the Bayes factor with prior π", valid because `π` is proper and fixed before the data
+"is exactly the Bayes factor with prior π" (arXiv:2607.28918), valid because `π` is proper and fixed before the data
 [src: Sect. 2]. A maximised likelihood ratio is not an e-value: `E_H0[exp(Δχ²(k)/2)]` diverges for a
 χ²_k variable [src: App. A, Remark 2, Eq. 11]. Default specification: flat on a 30 × 30 grid in
 `[−1.5, −0.5] × [−2, 1]` for `(w_0, w_a)` [src: Sect. 2]. No σ is quoted, because an e-value "has no
@@ -248,7 +250,7 @@ Head-to-head results.
   Stage-IV shear, 39 against 37 parameters, w0waCDM: nested sampling 0.78 ± 0.71, learned harmonic
   mean 1.53 ± 0.07, SDDR 1.75 ± 0.06 with either estimator [src: Table 4]. The SDDR saves the
   sampling of the nested model, "approximately halving the computational cost" [src: Sect. 3.2].
-- **SDDR accuracy against the exact answer** (Trotta 2007, Gaussian benchmark in D = 5, 10, 20):
+- **SDDR accuracy against the exact answer** (Trotta 2007, arXiv:astro-ph/0504022, Gaussian benchmark in D = 5, 10, 20):
   "extremely well for λ ≤ 2", less accurate at λ = 3, "very unpractical" beyond; fewer than 10^5
   samples suffice for λ < 3, and the error grows "only mildly" from D = 5 to 20 [src: App. C, Fig. 5].
 - **DIC against Δχ² on DESI DR2** (arXiv:2503.14743, Table 3): `ΔDIC (Δχ²)` = −6.8 (−10.7), −13.5
@@ -256,14 +258,13 @@ Head-to-head results.
   model gives +0.4 (−1.6), −0.6 (−2.5), −5.8 (−7.1) [src: Table 3]. The mirage class matches w0wa
   (−9.1 to −18.7) [src: same].
 - **Two evidence analyses, same DESI priors, DR2 BAO + CMB + SNe** (sign: positive favours w0wa).
-  Lodha et al. (CMB as in the DESI paper): −0.66 ± 0.44, 3.03 ± 0.44, 4.88 ± 0.44 for Pantheon+,
-  Union3, DESY5 [src: App. A, Table 4]. Ong et al. 2025 (Planck 2018 CamSpec, PolyChord in Cobaya,
+  Lodha et al. (arXiv:2503.14743; CMB as in the DESI paper): −0.66 ± 0.44, 3.03 ± 0.44, 4.88 ± 0.44 for Pantheon+,
+  Union3, DESY5 [src: App. A, Table 4]. Ong et al. 2025 (arXiv:2511.10631; Planck 2018 CamSpec, PolyChord in Cobaya,
   `w_0 ∈ [−3, 1]`, `w_a ∈ [−3, 2]`): −1.70 ± 0.26, +1.37 ± 0.27, +3.32 ± 0.27 [src: Sect. II,
-  Table 1]. The two disagree by 1.0 to 1.7 in `ln B` for every compilation, beyond their quoted
-  errors `[der: differences 1.04, 1.66, 1.56]`; the CMB likelihood and the `θ_MC → H_0` substitution
-  differ, and no paper read reconciles them.
-- **Three statistics, one prior change** (Karim et al., Pantheon+ + DESI + Planck, identical data):
-  `ln B` shifts by 3.28, `Δχ²_MAP` by 0.45, ΔELPD by 0.01, 0.03 and 0.02 (BAO hold-out, SN hold-out,
+  Table 1]. For every compilation the two disagree by more than their quoted errors; the CMB
+  likelihood and the `θ_MC → H_0` substitution differ, and no paper read reconciles them.
+- **Three statistics, one prior change** (Karim et al., arXiv:2609.04334, Pantheon+ + DESI + Planck, identical data):
+  `ln B` shifts from +2.36 to −0.92 (wide to narrow priors), `Δχ²_MAP` moves by 0.45, ΔELPD by 0.01, 0.03 and 0.02 (BAO hold-out, SN hold-out,
   joint) [src: Sect. IV.1].
 - **Where the preference sits.** ELPD: the LRG2 block (z = 0.706) scores between −1.21 and −1.99
   depending on the supernova sample, the supernovae at the same redshift between +0.92 and −0.19, and
@@ -291,7 +292,6 @@ its specification stated.
 | SDDR valid range (Gaussian benchmark) | λ ≲ 3, < 10^5 samples | toy, D = 5–20 | arXiv:astro-ph/0504022 | App. C |
 | Distance needed to disfavour the simpler model, `I ≈ 1–2` | λ ≳ 4 | Gaussian guide | arXiv:astro-ph/0504022 | Sect. 3.3 |
 | DIC scale for nested models | 2 / 5 / 10 | DESI DR2 | arXiv:2503.14743 | Sect. VI.4 |
-| `ΔDIC − Δχ²_MAP`, w0wa, three SN samples | 3.9, 3.9, 3.8 `[der: from Table 3]` | DESI DR2 | arXiv:2503.14743 | Table 3 |
 | Prior expansion needed to reverse `ln B` (DR2 + CMB + DESY5) | > 10 per `w` parameter, > 100 in volume | DESI DR2 | arXiv:2503.14743 | App. A |
 | Ockham penalty `Δ⟨ln(P/π)⟩_P`, DR2 + CMB + SNe | 5.18, 4.75, 4.54 (± 0.43) | DESI DR2 | arXiv:2503.14743 | Table 4 |
 | Fit term `Δ⟨ln L⟩_P`, same | 4.53, 7.78, 9.42 (± 0.16–0.17) | DESI DR2 | arXiv:2503.14743 | Table 4 |
@@ -378,8 +378,8 @@ its specification stated.
   cited by arXiv:2609.04334) and the general non-factorised Gaussian ELPD estimator cited there as [4]
   were not read; the `k̂` reliability threshold is quoted only as arXiv:2609.04334 states it.
 - The source of DESI's DIC scale (reference [183] of arXiv:2503.14743) was not read.
-- The reason for the 1.0–1.7 difference in `ln B` between arXiv:2503.14743 and arXiv:2511.10631 with
-  the same priors was not established; nor the 0.6 gap between the measured `ln B` shift and the
+- The reason for the difference in `ln B` between arXiv:2503.14743 and arXiv:2511.10631 with
+  the same priors was not established; nor the gap between the measured `ln B` shift and the
   logarithm of the prior-area ratio in arXiv:2609.04334.
 - The e-value paper's per-bin and thawing-specification values beyond its abstract, and its DR3
   forecast (Sect. 4.4), were not read.

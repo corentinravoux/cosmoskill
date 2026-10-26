@@ -70,7 +70,7 @@ dn/dM = (ρ̄_m/M) A sqrt(2a/π) [1 + (aν²)^(−p)] ν exp(−aν²/2) |dν/dM
 σ²(M, z) = D²(z) ∫ dk/(2π²) k² P(k) W²(kR), R = (3M/4πρ̄_m)^(1/3),
 
 with A = 0.3222, a = 0.707, p = 0.3, δ_c ≃ 1.686 and W the top-hat window;
-predictions through the `hmf` package [src: Sect. 3.2]. Lovell et al. use
+predictions through the `hmf` package [src: arXiv:2604.13866, Sect. 2 (A, a, p, δ_c); Sect. 3.2]. Lovell et al. use
 the Behroozi et al. 2013 mass functions, calibrated for 2 ≤ z ≤ 8 and
 extrapolated above z = 8 because their parameter evolution "has smoothed
 off"; other forms changed their conclusions little [src: Sect. 2.1].
@@ -209,12 +209,13 @@ Same likelihood, flat ΛCDM: FRESCO gives ε ≳ 0.79 (68%) and ε ≳ 0.63
 (arXiv:2604.13866) [src: Sect. 4.1]. Krishnan & Abazajian find smaller
 systematic errors for spectroscopically confirmed galaxies with several SED
 pipelines and name spectroscopic confirmation as "a potential path to
-tighten the systematic errors" [src: arXiv:2511.13708, Sect. III]. The FRESCO
-bin of Comini et al. includes S1 at its grism redshift [src: Sect. 3.1]; the
-2026 multi-line redshift of S1 is z = 3.2439 (arXiv:2602.03030, in
-`results.md`), so S1 would leave the 5 < z < 6 bin and the highest threshold
-would be empty [der: from the two papers; Comini et al. do not discuss the
-revision in the sections read].
+tighten the systematic errors" [src: arXiv:2511.13708, Sect. III].
+
+The FRESCO bin of Comini et al. includes S1 at its grism redshift
+(arXiv:2604.13866) [src: Sect. 3.1]; with the 2026 multi-line redshift of S1
+(arXiv:2602.03030, in `results.md`) the object would leave that bin and the
+highest threshold would be empty [der: from the two papers; Comini et al. do
+not discuss the revision in the sections read].
 
 ### Correct the data or the model for Eddington bias
 <!-- key: correct-the-data-or-the-model-for-eddington-bias -->
@@ -247,10 +248,11 @@ statement about error bars, not a measured ε.
 The EVS formula assumes independent, identically distributed halos; this
 "will be broken where haloes are significantly clustered", and homogeneity
 is reached above about (100 Mpc)³ (arXiv:2208.10479) [src: Sect. 2]. A JWST
-bin of V ≈ 10⁵ Mpc³ (arXiv:2208.01611, Sect. 3) is a cube of side about 46
-Mpc [der: (10⁵)^(1/3)], below that scale, so clustering of the hosts (the
-large-scale structure noted by Xiao et al.) is outside the EVS null as
-written [der].
+bin of V ≈ 10⁵ Mpc³ (arXiv:2208.01611) [src: Sect. 3] is smaller than that
+volume.
+
+Clustering of the hosts (the large-scale structure noted by Xiao et al.) is
+therefore outside the EVS null as written [der].
 
 ## How cosmology enters
 <!-- key: how-cosmology-enters -->
@@ -368,7 +370,8 @@ and helium [src: arXiv:2607.00764, abstract].
   allowed ε at the highest masses. Test: apply Eq. 13 of arXiv:2208.10479
   or Eq. 11 of arXiv:2511.13708 and report both.
 - Mass errors unpublished. The Eddington correction cannot be done;
-  Lovell et al. had to assume 0.3 dex for CEERS [src: Sect. 3.3].
+  Lovell et al. had to assume 0.3 dex for CEERS (arXiv:2208.10479) [src:
+  Sect. 3.3].
 - SED systematics combined in quadrature. Hides the asymmetry that makes
   the downward systematic dominant (arXiv:2511.13708, Sect. II.4). Test:
   propagate the pipeline spread as a shift.
@@ -386,7 +389,8 @@ and helium [src: arXiv:2607.00764, abstract].
 - IMF assumed Salpeter. A different IMF "could affect the derived stellar
   masses" (arXiv:2208.01611, Sect. 4) [src]; not quantified in the papers
   read.
-- Ages: the formation delay (0.2 Gyr for z_f = 20) and the age cut are
+- Ages: the formation delay (0.2 Gyr for z_f = 20, arXiv:2509.02692 [src:
+  abstract]) and the age cut are
   priors; quote t_U with them. Comparing a t_U bound with the CMB age
   without naming the model of the CMB value repeats the endpoint error of
   the H0 tension.
@@ -423,8 +427,8 @@ and helium [src: arXiv:2607.00764, abstract].
   only. None was read.
 - The Comini et al. limits for wCDM, curved ΛCDM and curved wCDM (Sects.
   4.2–4.4) were read only as summarised in their Sect. 5.
-- Whether any analysis has recomputed the FRESCO density with S1 at z =
-  3.24; the consequence stated above is derived.
+- Whether any analysis has recomputed the FRESCO density with S1 at its
+  multi-line redshift (arXiv:2602.03030); the consequence stated above is derived.
 - The bodies of arXiv:2608.20288, arXiv:2610.08731, arXiv:2503.19481,
   arXiv:2603.04872, arXiv:2509.02692 and arXiv:2607.00764: abstracts only
   (for arXiv:2503.19481 also its introduction); the delay assumed between

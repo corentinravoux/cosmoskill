@@ -23,9 +23,8 @@ the compressed-parameter results and their history, and pivot conventions
 
 Notation: Δ²_p, n_p the amplitude and logarithmic slope of the linear power at
 a pivot in comoving units and at the redshift of the data (LaCE); Δ²_★, n_★
-the same at k_★ = 0.009 s/km and z_★ = 3; A_Lyα, n_Lyα the same at
-k_p = 1 Mpc⁻¹, z_p = 3 (Lyssa); A_P, n_P the primordial amplitude and slope at
-0.78 Mpc⁻¹ (PRIYA); F̄ = exp(−τ_eff) the mean transmission; T_0, γ the
+the same at k_★ = 0.009 s/km and z_★ = 3 (arXiv:2601.21432); A_Lyα, n_Lyα the same at
+k_p = 1 Mpc⁻¹, z_p = 3 (Lyssa); A_P, n_P the primordial amplitude and slope at 0.78 Mpc⁻¹ (PRIYA, arXiv:2309.03943) [src: abstract of each paper]; F̄ = exp(−τ_eff) the mean transmission; T_0, γ the
 temperature–density relation T = T_0 Δ_b^(γ−1); k_F or λ_P the pressure
 smoothing scale; LF/HF low and high fidelity.
 
@@ -35,10 +34,12 @@ smoothing scale; LF/HF low and high fidelity.
 ### Step 1. Design the simulation suite
 <!-- key: step-1-design-the-simulation-suite -->
 
+From arXiv:2601.21432 (Sect. 2.2.1), arXiv:2309.03943 (Sects. 2.1, 2.3) and arXiv:2412.05372 (Sect. 2.2; arXiv:2601.21432, Sect. 2.2.2), one column each in that order, as in the last row:
+
 | Item | LaCE / cup1d (DESI DR1) | PRIYA (eBOSS DR14) | Lyssa / lym1d (eBOSS DR14) |
 |---|---|---|---|
 | Code | MP-Gadget (TreeSPH) | MP-Gadget | Nyx (Eulerian AMR) |
-| Training runs | 30, fixed and paired, same phases | LF + HF multi-fidelity: 600 LF and 30 HF spectra per redshift, "ten times the number of simulations" after mean-flux sampling, i.e. 60 LF and 3 HF runs [der]; the 48 LF of `physics-and-methods.md#emulators-and-their-parameterisations` plus the 12 LF added here | 14 Latin hypercube + 4 refinement runs at low Ω_mh², plus a fiducial |
+| Training runs | 30, fixed and paired, same phases | LF + HF multi-fidelity: 600 LF and 30 HF spectra per redshift, "ten times the number of simulations" after mean-flux sampling; the base suite is the 48 LF + 3 HF runs of arXiv:2306.05471 (`physics-and-methods.md#emulators-and-their-parameterisations`), extended as in the Sampling row | 14 Latin hypercube + 4 refinement runs at low Ω_mh², plus a fiducial |
 | Box, particles or cells | 67.5 Mpc, 2 × 768³ | — (not read) | 120 Mpc, 4096³ cells; ~3× MP-Gadget resolution |
 | Cosmological axes | Δ²_★ ∈ [0.25, 0.45], n_★ ∈ [−2.35, −2.25]; H_0, ω_cdm, ω_b fixed | n_P, A_P, h, Ω_0h² | A_Lyα, n_Lyα, Ω_mh², h; ω_b fixed |
 | Astrophysical axes in the runs | H I reionisation midpoint, two thermal-history parameters | He II start/end and quasar index α_q, z_HI, ε_AGN | UVB scaling A_UVB |
@@ -67,8 +68,7 @@ multiplies the training set cheaply.
   0.238–0.47 [src: Sect. 2.1]. The freedom exists because F̄ is degenerate
   with the UVB amplitude [src: footnote in Sect. 2.1].
 - Lyssa: gimlet rescales gas temperature and τ_eff; a main design of 4 thermal
-  samples per simulation (3800 K < T_0 < 27800 K, 1.0 < γ < 1.9,
-  |F̄ − exp(−0.0025(1+z)^3.7)| < 0.15) and an auxiliary design of 15 per
+  samples per simulation (3800 K < T_0 < 27800 K, 1.0 < γ < 1.9, and |F̄ − exp(−0.0025(1+z)^3.7)| < 0.15) and an auxiliary design of 15 per
   base-suite point, 297 training points per redshift in all
   (arXiv:2412.05372) [src: Sects. 2.2, 2.3].
 - LaCE: P1D extracted from snapshots between z = 2 and 4.5 every Δz = 0.25,
@@ -78,6 +78,8 @@ multiplies the training set cheaply.
 
 ### Step 3. Choose what the emulator takes as input
 <!-- key: step-3-choose-what-the-emulator-takes-as-input -->
+
+Sources by row, as in the line under the table: LaCE, arXiv:2601.21432, Sect. 3.1; PRIYA, arXiv:2309.03943, Sects. 2.1, 2.3; Lyssa, arXiv:2412.05372, Sect. 2.3.
 
 | Pipeline | Inputs | Redshift handling |
 |---|---|---|
@@ -154,8 +156,7 @@ setting it to 0.02 left the posteriors "almost unchanged" (arXiv:2309.03943)
    "making it easier to define meaningful parameter ranges".
 2. Joint fit: vary A_s ∈ [1.0, 3.4] × 10⁻⁹ and n_s ∈ [0.7, 1.3] with H_0 and
    densities fixed to Planck, and rescale (Δ²_★, n_★) from Planck without a
-   Boltzmann call, since the Universe is effectively Einstein–de Sitter at
-   these redshifts.
+   Boltzmann call, since the Universe is effectively Einstein–de Sitter at these redshifts (arXiv:2601.21432) [src: Sects. 5.1–5.2].
 3. IGM parameters at four nodes z = 2.20, 2.73, 3.38, 4.20, linearly
    interpolated (six nodes tested: "excellent agreement"); metal and HCD
    parameters at two nodes (one power law in z); one resolution parameter per
@@ -163,10 +164,9 @@ setting it to 0.02 left the posteriors "almost unchanged" (arXiv:2309.03943)
    HCD, 11 resolution. The "16 metal and 8 HCD parameters" of
    `physics-and-methods.md#cosmological-inference-from-p1d` are those 24: 8
    metal and 4 HCD parameters, each at two nodes; the HCD normalisation is
-   fixed to zero because it is "strongly degenerate with the parameters
-   scaling the mean flux".
+   fixed to zero because it is "strongly degenerate with the parameters scaling the mean flux" (arXiv:2601.21432) [src: Sects. 5.1–5.2].
 4. Sampling: emcee, 11,648 chains of 3000 steps, 1500 burn-in, thinning 20,
-   about one node hour per run.
+   about one node hour per run (arXiv:2601.21432) [src: Sect. 5.3].
 
 **PRIYA** [src: arXiv:2309.03943, Sects. 3.1, 3.4]: Gaussian likelihood
 summed over z = 2.2–4.6 with log det K; Cobaya Metropolis to R − 1 < 0.01;
@@ -190,15 +190,15 @@ arXiv:2601.21432 tests the compression by matching (Δ²_★, n_★) between
 cosmologies and comparing the linear P1D of Eq. 20 [src: App. B]:
 
 - Varying h at fixed physical densities: residuals < 1.0% in P_lin and < 0.3%
-  in linear P1D before matching, halved after matching.
+  in linear P1D before matching, halved after matching (arXiv:2601.21432) [src: App. B].
 - Σm_ν = 0.3 eV at fixed ω_m: residual approaching 0.7% after matching,
-  "which explains the small shift" seen in that robustness variation.
+  "which explains the small shift" seen in that robustness variation (arXiv:2601.21432) [src: App. B].
 - ω_cdm varied by up to 10σ around Planck: matching reduces residuals by
   more than an order of magnitude but extremes stay above 1%; matching also
   the curvature α_★ = d²log P_lin/d log k² at the pivot (Eq. 21) reduces them
   further. α_★ is not used because the MP-Gadget suite varies only A_s and
   n_s, so α_★ is the same in every training simulation; lace-lyssa includes it
-  because Lyssa spans ω_cdm [src: App. C].
+  because Lyssa spans ω_cdm (arXiv:2601.21432) [src: App. B; App. C for the lace-lyssa curvature input].
 
 Pivot: k_★ = 0.009 s/km is kept for continuity; the decorrelation pivot for
 DR1 is 0.019 s/km (r = −0.0011), where Δ̃²_★ = 0.600 (+0.049/−0.052) and

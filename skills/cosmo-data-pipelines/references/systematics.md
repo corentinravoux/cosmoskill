@@ -27,7 +27,7 @@ body read; `[sec]` named secondary source; `[der]` derived here.
   (arXiv:1609.06142) [src].
 - Test. RMS of sky-fibre residuals against the noise model, as a function
   of wavelength; false-positive redshifts on sky fibres, which the DESI
-  archetype refit lowers by 5–40% (arXiv:2405.19288) [src].
+  archetype refit lowers by 5–40% (arXiv:2405.19288) [src: abstract].
 
 ## 2. Redshift failures and catastrophic redshifts
 <!-- key: redshift-failures-and-catastrophic-redshifts -->
@@ -54,8 +54,8 @@ body read; `[sec]` named secondary source; `[der]` derived here.
 - Mechanism. The formal error from photon noise can be wrong in either
   direction.
 - Size. BOSS: underestimated by a factor 1.19–1.34 for galaxies and 2 for
-  quasars (arXiv:1207.7326) [src]; eBOSS redmonster: overestimated by ~54%
-  (arXiv:1607.02432) [src].
+  quasars (arXiv:1207.7326) [src: abstract]; eBOSS redmonster: overestimated
+  by ~54% (arXiv:1607.02432) [src: abstract].
 - Test. Distribution of repeat differences scaled by the quoted errors.
 - Why it matters. Redshift errors smear the line-of-sight clustering and set
   the floor for peculiar-velocity and Lyα work (see `cosmo-galaxy-clustering`
@@ -67,10 +67,10 @@ body read; `[sec]` named secondary source; `[der]` derived here.
 - Mechanism. Overlapping traces of neighbours contaminate each spectrum;
   single-line spectra are ambiguous.
 - Size. Euclid Q1 reaches 89% success at 0.9 < z < 1.8 only with tuned
-  quality cuts (arXiv:2503.15308) [src]; in pixel-level simulations,
+  quality cuts (arXiv:2503.15308) [src: abstract]; in pixel-level simulations,
   contaminants in the same redshift range as the targets cause about 4% of
   the total degradation from cross-contamination
-  (Euclid Collaboration 2026, arXiv:2606.24697) [src].
+  (Euclid Collaboration 2026, arXiv:2606.24697) [src: Sect. 5.2].
 - Mitigation. Contamination modelling from the photometric catalogue in SIR
   (arXiv:2503.15307) [src]; purity-driven cuts; random catalogues built from
   a detection model (see `cosmo-galaxy-clustering`).
@@ -101,7 +101,7 @@ body read; `[sec]` named secondary source; `[der]` derived here.
 - Why it matters. Astrometric scatter between exposures blurs co-adds and
   mimics PSF anisotropy: KiDS-Legacy removed 46.6 deg² with large
   inter-exposure astrometric scatter after a B-mode failure
-  [sec: cosmo-weak-lensing, systematics Sect. 3, KiDS-Legacy row].
+  (arXiv:2503.19441) [src: Sect. 4.3, App. E].
 - Test. Repeatability of pair separations (Rubin AM1,
   arXiv:2603.23786, Sect. V.3) [src]; residual maps against Gaia.
 
@@ -118,7 +118,7 @@ Sect. 2); here the catalogue-level failure.
   number density by ~18%, to at most 39.4 arcmin⁻² in r (Sanchez et al.
   2021, arXiv:2103.02078) [src]. In Rubin DP1, the unrecognised-blend
   fraction against HST/CANDELS is 18.0% for the production catalogue and
-  14.9% for DeepDISC (arXiv:2610.10986) [src]. The HSC deblender fails in
+  14.9% for DeepDISC (arXiv:2610.10986) [src: Sect. V.4, Fig. 9]. The HSC deblender fails in
   most cluster cores (arXiv:1705.06766) [src: Sect. 4.8.3].
 - Mitigation. Multi-band deblenders (SCARLET), blendedness flags,
   undeblended photometry, image simulations with realistic blending
@@ -170,7 +170,7 @@ Sect. 2); here the catalogue-level failure.
 - Size. Template subtraction in its original form is biased; extended mode
   projection is biased; basic mode projection is not; all add variance
   (arXiv:1509.08933) [src]. eBOSS QSO null-test χ²/dof 776/10 before weights,
-  6/8 after (arXiv:2007.09000) [src].
+  6/8 after (arXiv:2007.09000) [src: abstract].
 - Mitigation. Cross-validated regressions (arXiv:1907.11355) [src];
   comparing several methods and carrying their spread as a systematic
   (arXiv:2105.13540) [src]; forward modelling by injection
@@ -188,10 +188,10 @@ Sect. 2); here the catalogue-level failure.
 - Size. In DESI DR2, ELGs in the DES footprint have a higher density, lack
   targets with extreme colours and have a distinct n(z) by colour
   subsample; DES is now treated separately in the catalogue pipeline,
-  "in some cases, imperative" (arXiv:2606.18581) [src]. For photometric
+  "in some cases, imperative" (arXiv:2606.18581) [src: abstract]. For photometric
   samples, using one global n(z) underestimates w(θ) by up to ~10% at small
   scales in the highest bin; for an LSST-like setup (**forecast**) σ8 is biased low by 1.7σ
-  (Zhang et al. 2026, arXiv:2609.15542) [src].
+  (Zhang et al. 2026, arXiv:2609.15542) [src: abstract].
 - Mitigation. Regions treated separately for weights and for the randoms'
   redshifts (arXiv:2405.16593, Sect. 7.2) [src]; north–south resolve at
   targeting (arXiv:2208.08518) [src].

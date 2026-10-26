@@ -33,14 +33,16 @@ re-verify against the cited paper before a number enters a manuscript.
   quality cut; DESI purities are against VI of deep co-adds
   (arXiv:2208.08516, arXiv:2208.08517).
 - DESI DR1 redshift outliers: ≤ 0.3% for galaxies, 0.7% for quasars at
-  z < 2.1, 1.8% above; sky residuals < 1% systematic (arXiv:2503.14745).
+  z < 2.1, 1.8% above; sky residuals < 1% systematic (arXiv:2503.14745)
+  [src: Sect. III.1.2, table].
 - Redrock alone misses quasars: ~86% of VI quasars against ~94% with
-  after-burners (arXiv:2208.08517).
-- Formal redshift errors are miscalibrated: BOSS low by 1.19–2
-  (arXiv:1207.7326), redmonster high by ~54% (arXiv:1607.02432).
+  after-burners (arXiv:2208.08517) [src: abstract].
+- Formal redshift errors are miscalibrated: BOSS errors are low by a factor
+  1.19–1.34 for galaxies and 2 for quasars (arXiv:1207.7326) [src: abstract],
+  redmonster errors high by ~54% (arXiv:1607.02432) [src: abstract].
 - Euclid Q1 gives every H_E < 22.5 source a redshift, but under 10% of
-  spectra allow one; 89% success at 0.9 < z < 1.8 needs tuned cuts
-  (arXiv:2503.15302, arXiv:2503.15308).
+  spectra allow one (arXiv:2503.15302) [src: Sect. 9]; 89% success at
+  0.9 < z < 1.8 needs tuned cuts (arXiv:2503.15308) [src: abstract].
 - DESI DR1 flux-calibration variances are underestimated, up to a factor 5
   at S/N ~ 100 per pixel; use zcatalog v1 (arXiv:2503.14745, Sect. II.2).
 - In DESI, redshifts feed back into targeting, so the selection function
@@ -48,9 +50,10 @@ re-verify against the cited paper before a number enters a manuscript.
 - Random redshifts drawn from the data null radial modes
   (arXiv:2405.16593).
 - Brighter-fatter grows star sizes by up to 2% and must be corrected at
-  pixel level (arXiv:1402.0725, arXiv:1501.02802).
+  pixel level (arXiv:1402.0725 [src: abstract], arXiv:1501.02802).
 - Unrecognised blends are 18.0% of the Rubin DP1 catalogue against HST
-  (arXiv:2610.10986); the HSC deblender fails in cluster cores
+  at 23 < i < 24.5 (arXiv:2610.10986) [src: Sect. V.4, Fig. 9]; the HSC
+  deblender fails in cluster cores
   (arXiv:1705.06766).
 - Injection is now survey-wide: 146 million Balrog injections over DES Y6
   (arXiv:2501.05683, abstract).
@@ -115,7 +118,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 3k; methods 9k; results 4k; surveys 5k; systematics 5k; deep/cmb-mapmaking 8k; deep/extraction-sky 12k; deep/image-detrending 8k; deep/lss-catalogues 7k; deep/redshift-fitting 7k; deep/source-injection 8k.
+Sizes, in thousands of tokens: L1 3k; open 3k; methods 9k; results 5k; surveys 5k; systematics 5k; deep/cmb-mapmaking 8k; deep/extraction-sky 12k; deep/image-detrending 8k; deep/lss-catalogues 7k; deep/redshift-fitting 7k; deep/source-injection 8k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

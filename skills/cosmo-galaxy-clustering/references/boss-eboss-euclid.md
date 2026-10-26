@@ -18,13 +18,16 @@ early LOWZ selections combined into one sample over 0.2 < z < 0.75, cut into
 three overlapping bins. Completeness-weighted area 10,087 deg², of which
 759 deg² vetoed, leaving 9329 deg².
 
+From arXiv:1607.03155, Table 2:
+
 | Bin | N (NGC + SGC) | V_eff [Gpc³] | V [Gpc³] |
 |---|---|---|---|
 | 0.2 < z < 0.5 | 604,001 | 3.7 | 6.4 |
 | 0.4 < z < 0.6 | 686,370 | 4.2 | 7.3 |
 | 0.5 < z < 0.75 | 594,003 | 4.1 | 12.3 |
 
-V_eff uses P_0 = 10⁴ h⁻³ Mpc³ and h = 0.676 [src: Table 2 caption].
+V_eff uses P_0 = 10⁴ h⁻³ Mpc³ and h = 0.676 (arXiv:1607.03155)
+[src: Table 2 caption; h = 0.676 also in Sect. 2.2].
 
 **Weights** (Ross et al. 2017, arXiv:1607.03145) [src: Sects. 4, 4.1]:
 
@@ -37,10 +40,10 @@ V_eff uses P_0 = 10⁴ h⁻³ Mpc³ and h = 0.676 [src: Table 2 caption].
   are also applied to CMASS [src: arXiv:1607.03155, Sect. 2.2].
 - The simulated systematic trends "impart no bias" on BAO and have a minor
   effect on its uncertainty [src: arXiv:1607.03145, abstract]. For growth,
-  four treatments of the stellar-density systematic on 200 mocks each give
-  fσ8 values spread over at most 0.005 (fast model) and 0.011 (Gaussian
-  streaming), against a per-mock error of about 0.065 [src: arXiv:1607.03145, App. D, Table 9;
-  differences derived from the table, der].
+  four treatments of the stellar-density systematic were each applied to 200
+  mocks; the resulting fσ8 values are in arXiv:1607.03145, App. D, Table 9.
+- The spread of fσ8 between those treatments is small compared with the
+  per-mock error in the same table; this comparison is made here [der].
 
 **Mocks and covariance** [src: arXiv:1607.03155, Sect. 4]: 1000 MD-Patchy
 (second-order LPT with stochastic halo biasing) and 1000 QPM (low-resolution
@@ -58,17 +61,19 @@ al. 2014 (arXiv:1312.4841).
 - α (isotropic dilation): 0.003 for measurement and fitting plus 0.003 for
   galaxy-bias astrophysics, in quadrature 0.0042; ε (anisotropic warping):
   0.005, kept at that value because RSD-modelling errors could leak into ε
-  through the broadband AP signal.
+  through the broadband AP signal (arXiv:1607.03155) [src: Sect. 7.4].
 - fσ8: 0.024, 0.015, 0.009 for the low, middle and high bin, the maximum of
   the MD-Patchy bias and the high-resolution mock estimate (method in
-  `rsd-modelling.md`, Sect. 7).
+  `rsd-modelling.md`, Sect. 7) (arXiv:1607.03155) [src: Sects. 7.3–7.4;
+  values as the systematic errors of Table 7].
 - Systematics correlated between redshift bins with coefficient 0.75: a
   common mode carrying 0.87 of the total plus independent parts of 0.50;
   "the variance of the common mode is 10-fold larger than the variance of
-  the two other modes".
+  the two other modes" (arXiv:1607.03155) [src: Sect. 7.4].
 - The baryon–dark-matter relative velocity is excluded from the budget; a
   0.3% rms limit on its BAO shift is cited from the DR12 three-point
-  function, and adding it to the template moves α by at most 0.3σ.
+  function, and adding it to the template moves α by at most 0.3σ
+  (arXiv:1607.03155) [src: Sect. 7.4].
 
 **Consensus values** (BAO+FS, statistical then systematic error;
 r_d,fid = 147.78 Mpc) [src: arXiv:1607.03155, Table 7]:
@@ -80,15 +85,17 @@ r_d,fid = 147.78 Mpc) [src: arXiv:1607.03155, Table 7]:
 | 0.61 | 2283 ± 28 ± 16 | 97.3 ± 1.8 ± 1.1 | 0.436 ± 0.034 ± 0.009 |
 
 - Full-shape-only consensus fσ8: 0.502 ± 0.041 ± 0.024, 0.459 ± 0.037 ±
-  0.015, 0.419 ± 0.036 ± 0.009 [src: Table 7].
+  0.015, 0.419 ± 0.036 ± 0.009 (arXiv:1607.03155) [src: Table 7].
 - D_V(0.38, 0.51, 0.61) = (1477 ± 16, 1877 ± 19, 2140 ± 22) Mpc × (r_d/r_d,fid),
-  i.e. 1.1%, 1.0%, 1.0% [src: Sect. 8.2, Eqs. 21–23].
+  i.e. 1.1%, 1.0%, 1.0% (arXiv:1607.03155) [src: Sect. 8.2, Eqs. 21–23].
 - Aggregate precision across the three bins, systematics included: 1.0% on
-  the transverse scale, 1.6% radial, 0.8% on D_V, 5.7% on fσ8 [src: Sect. 8.2].
+  the transverse scale, 1.6% radial, 0.8% on D_V, 5.7% on fσ8
+  (arXiv:1607.03155) [src: Sect. 8.2].
 - Table 8 gives the 9 × 9 covariance and precision matrices; the on-line
   files carry full precision [src: Table 8 caption].
 - H(0.51) is 90.5 ± 1.7 ± 1.0 in Table 7 but 90.4 in the Table 8 mean
-  column; quote Table 7 and the likelihood files [src: Tables 7–8].
+  column; quote Table 7 and the likelihood files (arXiv:1607.03155)
+  [src: Tables 7–8].
 
 ## 3. eBOSS DR16: samples, weights and the SDSS compilation
 <!-- key: eboss-dr16-samples-weights-and-the-sdss -->
@@ -118,8 +125,8 @@ and i-band PSF; LRGs against stellar density, E(B−V), sky and PSF. The airmass
 trend disappears although airmass is not regressed, because it enters through
 depth.
 
-**Combined SDSS measurements** (eBOSS Collaboration 2021, arXiv:2007.08991)
-[src: Table 3; Gaussian approximations, correlations ignored]:
+**Combined SDSS measurements** (eBOSS Collaboration 2021); Gaussian
+approximations, correlations ignored. From arXiv:2007.08991 [src: Table 3]:
 
 | Sample | z range | N | z_eff | V_eff [Gpc³] | BAO only | fσ8 (RSD only) | BAO+RSD |
 |---|---|---|---|---|---|---|---|
@@ -138,7 +145,8 @@ table belong to `cosmo-lyman-alpha`.
   sample and lowers z_eff slightly [src: arXiv:2007.08991, Sect. III.1].
 - 6dFGS and WiggleZ are left out of the SDSS compilation: 6dFGS adds about
   16% on the MGS result, WiggleZ has under 10% of the CMASS effective volume,
-  and the overlap would complicate the covariance [src: Sect. III.1].
+  and the overlap would complicate the covariance (arXiv:2007.08991)
+  [src: Sect. III.1].
 - Small differences between companion papers: the quasar consensus is
   D_M/r_d = 30.22 ± 0.79, D_H/r_d = 13.26 ± 0.47, fσ8 = 0.464 ± 0.045 in Hou
   et al. (arXiv:2007.08998, abstract) and 30.21 ± 0.79, 13.23 ± 0.47,
@@ -192,12 +200,13 @@ Euclid Collaboration: Mellier et al. 2025 (arXiv:2405.13491):
   the nominal limit 2 × 10⁻¹⁶ erg cm⁻² s⁻¹, from slitless spectroscopy with
   the NISP red grism; the catalogue is selected to maximise number density
   "while keeping the fraction of spurious redshift measurements under
-  control" [src: Sect. 7.7.1]. The red grism range was chosen to be
+  control" (arXiv:2405.13491) [src: Sect. 7.7.1; flux limit in Sect. 4.1]. The red grism range was chosen to be
   complementary to ground-based surveys, DESI targeting mainly lower
   redshifts "with significant overlap" [src: Sect. 2.1].
 - Purity and completeness are measured on the Euclid Deep Fields; blue-grism
   exposures there give a reference sample of at least 120,000 galaxies with
-  99% redshift purity and 99% completeness [src: Sects. 4.3.3, 7.7.1, 3.5.3].
+  99% redshift purity and 99% completeness (arXiv:2405.13491)
+  [src: Sects. 4.3.3, 7.7.1, 3.5.3].
 - Redshifts: the z PDF may use priors favouring the strongest lines or the
   known Hα-emitter redshift distribution; the empirical prior gives the best
   purity and completeness [src: Sect. 7.5.2].
@@ -232,7 +241,7 @@ arXiv:2510.09118) [src: Sects. 4.1–4.2, Eqs. 88–103]:
   factor (q_⊥² q_∥)⁻¹.
 - Redshift errors: P × exp[−k²μ²σ_r²] with σ_r = c σ_err/H and a constant
   σ_err = 0.002, "the expected performance of the NISP spectrograph",
-  computed in the fiducial cosmology.
+  computed in the fiducial cosmology (arXiv:2510.09118) [src: Sect. 4.2].
 - Random outliers (line interlopers and noise interlopers) damp the power by
   (1 − f_out)², f_out = 1 − purity, constant within each bin; interlopers
   with their own clustering are left to "forthcoming work". The interloper
@@ -252,7 +261,7 @@ through f_sky. Euclid's semi-analytic covariance for BAO is in
 
 - The first 500 deg² are analysed unblinded; they are 1/30 of the final
   sample, so with variance scaling as inverse volume their error is 5.5 times
-  larger, "equivalent to blinding the signal at the 5.5σ level"; pipeline
+  larger (arXiv:2405.13491) [src: Sect. 8.2.4], "equivalent to blinding the signal at the 5.5σ level"; pipeline
   revisions are applied retrospectively only to this sample until DR1.
 - For DR1, blinding is applied to derived statistics, not raw data: the
   two-point data products (ξ and P multipoles) are shifted by the expected
@@ -271,9 +280,9 @@ through f_sky. Euclid's semi-analytic covariance for BAO is in
 | Fibre or slit incompleteness | w_cp close-pair weights (arXiv:1607.03145) | w_cp; PIP + angular up-weighting tested (arXiv:2007.09000, arXiv:2007.09005) | θ-cut + window, PIP in tests (`systematics.md` Sect. 4) | slitless: no fibres; detection-probability randoms (arXiv:2405.13491) |
 | Imaging | stellar density and seeing weights for CMASS, seeing for LOWZE3 | linear multi-map regression | linear, SYSNet, random forest; polynomial template | detection limit modulated by observing conditions; randoms forward-modelled from NISP noise (arXiv:2405.13491, Sect. 7.7.1) |
 | Redshift failures | w_noz | S/N- and fibre-ID-dependent weights | success-rate modelling (`systematics.md` Sect. 6) | purity and completeness from Deep Fields; purity parameter in the fit |
-| Model systematic | MD-Patchy bias and high-resolution challenge | N-body challenges with blind mocks | Abacus-based theory and HOD budget | EFT model with k_max = 0.3, scale cuts for projection effects |
-| Covariance | MD-Patchy (997 per cap in the consensus), Percival factor | EZmocks per tracer (not read here) | EZmocks (FS), RascalC (BAO) | analytic Gaussian (SPV) |
-| Blinding | none described | blind mocks only | catalogue-level shifts | unblinded first 500 deg², then data-vector shifts |
+| Model systematic | MD-Patchy bias and high-resolution challenge | N-body challenges with blind mocks | Abacus-based theory and HOD budget | EFT model with k_max = 0.3 (arXiv:2405.13491, Sect. 8.1.1), scale cuts for projection effects |
+| Covariance | MD-Patchy (997 per cap in the consensus; arXiv:1607.03155, Sect. 4), Percival factor | EZmocks per tracer (not read here) | EZmocks (FS), RascalC (BAO) | analytic Gaussian (SPV) |
+| Blinding | none described | blind mocks only | catalogue-level shifts | unblinded first 500 deg², then data-vector shifts (arXiv:2405.13491, Sect. 8.2.4) |
 
 Sources for the BOSS, eBOSS and Euclid columns are Sects. 1–6 of this file;
 the DESI column summarises `systematics.md` and `physics-and-methods.md`.

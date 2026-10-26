@@ -13,7 +13,7 @@ From: Baxter 2022 Snowmass review (arXiv:2203.06795), Sect. I (Fig. 1
 probes); SO science goals 2025 (arXiv:2503.00636), Sect. 3.5 (dusty
 galaxies, CIB).
 
-Already in L2: the first CIB × lensing detections, the f_NL = 43 ± 23 and
+Already in L2: the first CIB × lensing detections, the f_NL = 43 ± 23 (arXiv:2605.03783) [src: abstract] and
 delensing results (`physics-and-methods.md#cosmic-infrared-background`,
 `results.md#cosmic-infrared-background`); the CIB as contaminant of y maps
 and lensing (`systematics.md#cib-dust-and-radio-leakage-in-tsz-cross`,
@@ -170,18 +170,18 @@ parameters are not interpreted [src: Sects. II.3, V].
 <!-- key: step-4-choose-the-data-vector -->
 
 arXiv:2605.03783 [src: Sect. III.4, Eqs. 28–29]:
-- Bin edges 19, 27, 40, 58, 85, 124, 180, 263, 380, 420, 460, 500, 540, 580,
+- Bin edges [src: arXiv:2605.03783, Sect. III.4] 19, 27, 40, 58, 85, 124, 180, 263, 380, 420, 460, 500, 540, 580,
   620: logarithmic at low ℓ, Δℓ = 40 from ℓ = 380.
-- C_ℓ^νκ on both regions with all bins; C_ℓ^νν′ (six frequency pairs of
+- C_ℓ^νκ (arXiv:2605.03783, Sect. III.4) on both regions with all bins; C_ℓ^νν′ (six frequency pairs of
   353, 545, 857 GHz) on the Cleaner region only and only in the last three
   bins, 500 ≤ ℓ < 620. Auto-spectra use half-mission splits to remove noise
   bias.
-- Why so little auto-spectrum: dust left at low ℓ "could be misinterpreted
+- Why so little auto-spectrum (arXiv:2605.03783, Sect. III.4): dust left at low ℓ "could be misinterpreted
   as scale-dependent bias, providing erroneous constraining power on
   f_NL"; the auto-spectra are kept only to break degeneracies between the
   bias, its evolution and the SFRD parameters. The Dustier region still
   shows dust at 500 ≤ ℓ ≤ 600, hence its auto-spectra are dropped.
-- Why C^νκ can go to ℓ_min = 19: Galactic dust adds noise but no bias to a
+- Why C^νκ can go to ℓ_min = 19 (arXiv:2605.03783, Sect. III.4): Galactic dust adds noise but no bias to a
   cross-spectrum with lensing. The leading bias would be a
   ⟨D_low-ℓ D_high-ℓ D_high-ℓ⟩ dust bispectrum through the quadratic
   estimator, expected negligible because dust power is small at the

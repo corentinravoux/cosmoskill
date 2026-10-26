@@ -34,7 +34,7 @@ line of sight; k_max the smallest scale fitted.
 - Abundance: Ω_ν = M_ν / (93.14 h² eV) (Noriega et al. 2022,
   arXiv:2208.02791, Eq. 5).
 - Thermal velocity dispersion after the non-relativistic transition,
-  σ_ν(z) ≃ 1811 (1 + z)(0.1 eV/m_ν) km/s (Eq. 6), which acts as pressure.
+  σ_ν(z) ≃ 1811 (1 + z)(0.1 eV/m_ν) km/s (arXiv:2208.02791, Eq. 6), which acts as pressure.
 - Free-streaming wavenumber, for one species,
   k_FS(z) ≃ 0.0908 [H(z)/H0] (1 + z)⁻² (m_ν/0.1 eV) h/Mpc (Eq. 7); the
   authors state that several definitions exist and that this one is "never
@@ -198,7 +198,7 @@ DESI's construction, on DR1 FS + BAO + BBN + n_s10, in three switches
    θ = X_rsd f(k) δ (Eq. 40), X_rsd marginalised. σ₈ becomes unconstrained
    but the M_ν limit barely moves: the information is not the amplitude.
 3. **Anchor the slope.** Replacing n_s10 by U[0.8, 1.2] degrades the limit
-   "significantly"; a Planck-width n_s prior gives < 0.300 eV (Eq. 41).
+   "significantly"; a Planck-width n_s prior gives < 0.300 eV (arXiv:2503.14744, Eq. 41).
    The free-streaming signal is a change of slope against the large-scale
    spectrum, so it needs an external n_s.
 
@@ -244,7 +244,7 @@ On noiseless synthetic data from velocileptors with DESI covariances
 
 The authors call this "around 14%" more constraining power with fk-kernels
 and find all parameters within 1σ either way; h, ω_cdm, A_s are
-essentially unchanged [src: same]. Settings: one massive and two massless
+essentially unchanged [src: arXiv:2404.07269, same]. Settings: one massive and two massless
 states, M_ν ~ U(0, 5) eV [src: same]. The external analysis keeps EdS
 kernels, with the robustness test of Step 3; it does not quote this
 comparison in the section read.
@@ -259,7 +259,7 @@ Sect. 4.3]. Differences from DESI, as the papers state them:
 | | DESI DR1 FS (arXiv:2411.12022) | External (arXiv:2601.16165) |
 |---|---|---|
 | Statistics | P₀, P₂ | P₀, P₂, P₄; B₀, B₂ at one loop; κg, photometric gg and κg |
-| k range | 0.02–0.20 h/Mpc | P 0.005–0.20, B 0.005–0.16 h/Mpc |
+| k range | 0.02–0.20 h/Mpc (arXiv:2411.12022, Sect. 2.1.2) | P 0.005–0.20, B 0.005–0.16 h/Mpc (arXiv:2601.16165, Sect. 2.4) |
 | Kernels | scale-dependent growth module | EdS + cb |
 | Bias priors | σ₈-scaled; b₃ = 0 | σ₈-, A_AP-, A_amp-scaled; b_Γ3 centred on co-evolution |
 | BAO | DR1, joint covariance | DR2 ("latest DESI BAO") |

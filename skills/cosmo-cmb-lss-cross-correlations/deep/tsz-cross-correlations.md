@@ -57,14 +57,14 @@ Eq. 4); the total thermal pressure is P_th = 1.932 P_e for Y = 0.24
 <!-- key: step-2-measure -->
 
 **Galaxy × y** (arXiv:2210.08633) [src: Sects. 3.2, 4.1, 4.2]:
-- Maps: galaxy overdensity per tomographic bin, HEALPix N_side = 2048, with
+- Maps (arXiv:2210.08633, Sects. 3.2, 4.1, 4.2): galaxy overdensity per tomographic bin, HEALPix N_side = 2048, with
   imaging-systematics weight maps; y maps downgraded to the same N_side.
   SPT-SZ + Planck minimum-variance y in the South (fiducial), Planck MILCA
   (10′ beam, 40% Galactic and point-source masks) in the North.
-- Estimator: NaMaster pseudo-C_ℓ; 14 logarithmic bandpowers with edges 150,
+- Estimator (arXiv:2210.08633, Sects. 3.2, 4.1, 4.2): NaMaster pseudo-C_ℓ; 14 logarithmic bandpowers with edges 150,
   195, 254, 332, 433, 564, 736, 959, 1251, 1631, 2126, 2772, 3614, 4712,
   6142.
-- Covariance: jackknife on 75 (South) and 92 (North) k-means patches, with
+- Covariance (arXiv:2210.08633): jackknife on 75 (South) and 92 (North) k-means patches, with
   the Hartlap factor (N_JK − N_band − 2)/(N_JK − 1) (Eq. 26); it exceeds the
   analytic covariance by up to 20%. Reason: to capture spatial variation
   "beyond the analytical model". Because of the jackknife, ℓ < 150 is cut:
@@ -101,26 +101,26 @@ spectroscopic [src: Sect. V.3.3].
   P^2h = ⟨b_h U⟩⟨b_h V⟩ P_L (Eqs. 4–7); Tinker 2010 mass function.
 - The one-to-two-halo transition is corrected by multiplying by
   R(k) = P_HaloFit/P_HaloModel (Eqs. 8–9).
-- Pressure: GNFW, P_e(r) = P_* p(r/r_500c), p(x) = (c_P x)^−γ
+- Pressure (arXiv:2210.08633): GNFW, P_e(r) = P_* p(r/r_500c), p(x) = (c_P x)^−γ
   [1 + (c_P x)^α]^((γ−β)/α) (Eqs. 15–16), with (α, β, γ, c_P) =
   (1.33, 4.13, 0.31, 1.81) and
   P_* = P_0 (1.65 eV cm⁻³) h_70^(8/3) [h_70 (1 − b_H) M_500c / 3 × 10¹⁴ M_⊙]^0.79,
   P_0 = 6.41 (Eq. 17).
-- Projection: Limber, C_ℓ^AB = ∫ dχ W_A W_B/χ² P_AB(k = (ℓ+½)/χ) (Eq. 22),
+- Projection (arXiv:2210.08633): Limber, C_ℓ^AB = ∫ dχ W_A W_B/χ² P_AB(k = (ℓ+½)/χ) (Eq. 22),
   with W_g = (H/c) n_g(z) and W_y = (σ_T/m_e c²)/(1+z) (Eqs. 20–21),
   justified for ℓ > 150; model spectra multiplied by the HEALPix window and
   by the Gaussian beam of the y map.
 - Photo-z: shift Δz_i and stretch σ_z,i per bin (Eq. 23) with DES Gaussian
   priors.
-- HOD: M_min = M_0 free U(10, 16) in log₁₀, σ_lnM = 0.15 fixed, M'_1 free,
+- HOD (arXiv:2210.08633): M_min = M_0 free U(10, 16) in log₁₀, σ_lnM = 0.15 fixed, M'_1 free,
   α_s U(0, 3), f_c = 1, satellites in an NFW with scale β_g truncated at
   β_max (Table 2, Eq. 14).
 
 **Two regimes, fitted separately** (arXiv:2210.08633, Sect. 4.3) [src]:
-1. Large scales, k_max = 0.7 Mpc⁻¹, ℓ_max,i = k_max χ(z̄_i) − ½ (864 to
-   2320 over the six bins), b_H ~ U(0, 1), GNFW shape fixed to the Planck
+1. Large scales (arXiv:2210.08633, Sect. 4.3), k_max = 0.7 Mpc⁻¹, ℓ_max,i = k_max χ(z̄_i) − ½ (ℓ_max =
+   864, 1259, 1636, 1946, 2171, 2320 for bins 0 to 5), b_H ~ U(0, 1), GNFW shape fixed to the Planck
    values "to make a fair comparison with other studies".
-2. Small scales to k_max = 2.5 Mpc⁻¹, with the HOD fixed from step 1, free
+2. Small scales (arXiv:2210.08633, Sect. 4.3) to k_max = 2.5 Mpc⁻¹, with the HOD fixed from step 1, free
    α ~ U(0.3, 4), β ~ U(0.2, 10), c_P ~ U(0.1, 5), γ = 0.31 fixed because
    the data are insensitive to it.
 Why two: the one-to-two-halo transition of C^gg could not be modelled
@@ -133,13 +133,13 @@ Sect. II.2.1) [src]:
   collisionless matter.
 - ρ_gas(r) ∝ [1 + r/(θ_co r_200c)]^−β_gas [1 + (r/(θ_ej r_200c))^γ_gas]^−((δ_gas−β_gas)/γ_gas)
   (Eq. 1), normalised to f_gas M_tot with f_gas = Ω_b/Ω_m − f_star.
-- Fixed γ_gas = 2.0, δ_gas = 7.0, θ_co = 0.05, "as the parameter space is
+- Fixed (arXiv:2506.07432, Sect. II.2.1) γ_gas = 2.0, δ_gas = 7.0, θ_co = 0.05, "as the parameter space is
   substantially degenerate"; these defaults fit ANTILLES haloes of
   13.0 < log M < 14.5 at 0 < z < 1.
-- θ_ej = θ_ej,0 (M_200c/M_*,ej)^ν_M (1+z)^ν_z with log₁₀ M_*,ej = 16
+- (arXiv:2506.07432) θ_ej = θ_ej,0 (M_200c/M_*,ej)^ν_M (1+z)^ν_z with log₁₀ M_*,ej = 16
   (Eq. 2); β_gas = 3 (M/M_c)^μ_β / [1 + (M/M_c)^μ_β] with log₁₀ M_c = 13.75
   (Eq. 3).
-- Pressure from hydrostatic equilibrium; non-thermal fraction
+- Pressure (arXiv:2506.07432, Sect. II.2.1) from hydrostatic equilibrium; non-thermal fraction
   R_nt = α_nt f(z) (r/r_200c)^n_nt with n_nt = 0.3 (Eq. 4); P_e =
   2(X_H + 1)/(5X_H + 3) P_th with X_H = 0.76.
 - Transition regime: matter spectra multiplied by
@@ -181,7 +181,7 @@ DES Y3 shear + shear × ACT DR6 y (arXiv:2506.07432, Table 1) [src]:
 | Shear calibration | m¹…m⁴ | N(−0.0063, 0.0091), N(−0.0198, 0.0078), N(−0.024, 0.0076), N(−0.037, 0.0076) |
 | Source photo-z | Δ_z¹…Δ_z⁴ | N(0, 0.018), N(0, 0.015), N(0, 0.011), N(0, 0.017) |
 
-The θ_ej,0 prior keeps ejected gas within 6 R_200c for log₁₀ M_200c ~ 16,
+The θ_ej,0 prior (arXiv:2506.07432) keeps ejected gas within 6 R_200c for log₁₀ M_200c ~ 16,
 "expected even in high baryonic feedback simulations"; μ_β > 0 is
 physically expected [src: Sect. II.2.1]. Changing the ranges of the
 unconstrained parameters does not change the cosmological conclusions

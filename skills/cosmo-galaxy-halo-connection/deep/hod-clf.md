@@ -379,10 +379,12 @@ abstract].
   σ forces the satellite and central amplitudes; one-sided terms allow
   incompleteness. Test: rerun with the alternative treatment and report
   f_ic.
-- **Too few jackknife regions for a long data vector.** With 20 regions
-  and 41 statistics (1 + 12 + 28 [der: from Sect. II.3.1]) the matrix is
-  singular; the BGS fit uses a pseudo-
-  inverse and unit-diagonal rescaling [src: arXiv:2309.08675, Sect. IV];
+- **Too few jackknife regions for a long data vector.** The BGS fit has
+  20 jackknife regions for n_gal, w_p in 12 bins and counts-in-cylinders in
+  28 bins [src: arXiv:2309.08675, Sect. II.3.1]; a covariance is singular
+  when the statistics are at least as many as the realisations, and the fit
+  uses a pseudo-inverse and unit-diagonal rescaling [src: arXiv:2309.08675,
+  Sect. IV];
   DES Y3 keeps N_θ/N_JK = 0.2 and applies Hartlap [src: arXiv:2106.08438,
   Sect. 5.2]. Test: report the ratio of data points to regions.
 - **Velocity-bias sign.** α_vel,c is defined non-negative because ± are
@@ -418,7 +420,8 @@ abstract].
   BOSS ξ_0, ξ_2, w_p.
 - Code: Hearin et al. 2017, arXiv:1606.04106 — Halotools.
 - Critique: Hadzhiyska et al. 2020, arXiv:1911.02610 — the mass-only HOD
-  misses 15% of large-scale clustering in TNG300 (see `deep/assembly-bias.md`).
+  misses ~15% of the real-space clustering at 1–20 h⁻¹Mpc in TNG300
+  (abstract) (see `deep/assembly-bias.md`).
 
 ## Not verified
 <!-- key: not-verified -->

@@ -36,7 +36,7 @@ arXiv:2512.06319, Sect. II.2]:
 - SNANA catalogue-level simulation at flat `Omega_M = 0.315`, `w = −1`;
   SALT3 with a NIR extension over 2000–20 000 Å, "linearly extrapolated down
   to zero flux at 500 Å" to avoid classification artefacts from `u`-band
-  dropouts at high z.
+  dropouts at high z [src: arXiv:2512.06319, Sect. II.2].
 - Scatter: BS21 dust model with the P23 stretch and colour populations;
   `alpha_true = 0.15`, `beta_int_true = 2.12`, giving an effective fitted
   `beta ~ 3`, for which "there is no true effective beta value to compare
@@ -45,17 +45,17 @@ arXiv:2512.06319, Sect. II.2]:
   Pan-STARRS galaxies mapped onto a few million CosmoDC2 galaxies, with
   separate libraries for Ia, II, Ibc and peculiar Ia; about half the
   galaxies have no neighbour within 10″. Host photometry at one-year
-  co-added depth, `i ~ 25.4`.
+  co-added depth, `i ~ 25.4` [src: arXiv:2512.06319, Sect. II.2].
 - Peculiar velocities Gaussian with 300 km/s, corrected in the analysis
-  with the true value and a 200 km/s error.
+  with the true value and a 200 km/s error [src: arXiv:2512.06319, Sect. II.2].
 - Trigger: two detections separated by at least 30 minutes; DDF about
-  1.0 mag deeper than WFD.
+  1.0 mag deeper than WFD [src: arXiv:2512.06319, Sect. II.2].
 - Rates (Eqs. 1–2): `R(z) = 2.5 × 10^-5 (1+z)^1.5 yr^-1 Mpc^-3` for
   z < 1 and `9.7 × 10^-5 (1+z)^-0.5` above; 91bg-like at ~12 % of the Ia
   rate; Iax following the star-formation history, normalised to
   `6 × 10^-6 yr^-1 Mpc^-3` at z = 0; core collapse split 0.7 Type II,
   0.3 Ibc. The low-z sample is 4200 generated SNe Ia so that selected
-  events are ~10 % of the high-z Ia sample.
+  events are ~10 % of the high-z Ia sample [src: arXiv:2512.06319, Sect. II.2].
 
 Roman uses a rest-frame range of 2800–25 000 Å in simulation and fit [src:
 arXiv:2506.04402, Sect. IV.1].
@@ -82,12 +82,12 @@ III.2.1, Table 5].
   et al. 2010 formalism].
 - **Band bookkeeping**: after each iteration a passband whose rest-frame
   central wavelength leaves 2800–17 000 Å is dropped (or re-added), and the
-  iteration repeated [src: Sect. III.1].
+  iteration repeated [src: arXiv:2512.06319, Sect. III.1].
 - **Systematic refits**: `chi2_syst = [(p_k − p_k^ref)/sigma_k^ref]^2`
   (Eq. 6) ties each systematic refit to the nominal fit, because "a small
   systematic perturbation ... can lead to an unphysical large change in
   SALT3-fitted values"; this cuts the common-event loss from 12 % to 4 %
-  [src: Sects. III.1, IV.4].
+  [src: arXiv:2512.06319, Sects. III.1, IV.4].
 - **DES implementation on data** (Chen et al. 2024): the host photo-z is a
   prior, not a replacement; full SOMPZ `p(z)` stored as 11 quantiles, or
   Gaussian priors from SOMPZ, DNF and BPZ; extended SALT3 (2000–13 000 Å,
@@ -101,7 +101,7 @@ III.2.1, Table 5].
   arXiv:2506.04402, Sect. IV.1]. Precision after cuts, `sigma_Delta_z`:
   host only 0.119 (WIDE) / 0.090 (DEEP) at `z_true` 0.3–0.6, where Roman
   bands miss the 4000 Å break; host + SN 0.039 / 0.020; at 0.6–3.0, host
-  + SN 0.034 in both tiers [src: Sect. IV.2, Table 5].
+  + SN 0.034 in both tiers [src: arXiv:2506.04402, Sect. IV.2, Table 5].
 
 ### Step 4. Apply cuts and freeze the sample
 <!-- key: step-4-apply-cuts-and-freeze-the-sample -->
@@ -112,10 +112,12 @@ III.2.1, Table 5].
   frame also at `z_phot ± sigma_z_phot`; valid bias correction in all
   variants; no cut on the classifier [src: arXiv:2512.06319, Sect. III.2].
 - The true-Ia fraction goes from 15 % (physical rates) to ~50 % after the
-  trigger and ~90 % after cuts [src].
+  trigger and ~90 % after cuts [src: arXiv:2512.06319, Sect. III.2,
+  Fig. 2].
 - The first eight cuts are applied to the nominal analysis only, and
   variants process the same event list; the band-validity cut still costs
-  3.3 % and the valid-biasCor requirement 0.51 % [src].
+  3.3 % and the valid-biasCor requirement 0.51 % [src: arXiv:2512.06319,
+  Sect. III.2].
 - Roman cuts add SNRSUM > 40 over −15 to +45 rest-frame days and one
   epoch before −5 d and one after +20 d; the selection efficiency is ~1/3
   for SNe Ia and sub-percent for contaminants, largely because fits to
@@ -299,10 +301,11 @@ effort "did not reduce the bias" [src].
   classification "contributes ~1/3 to the total DES-SN5YR systematic",
   citing Table 7 of arXiv:2401.02945 [src: arXiv:2512.06319, Sect. III.2];
   L2 quotes DES-SN5YR itself as less than 10 % (9 %) [src:
-  arXiv:2401.02945, Sect. VII.1.5]. With the L2 Table 7 values, the
-  contamination group is 0.028 against a total systematic 0.076 on
-  `sigma_w`: 0.37 in standard deviation, 0.14 in variance [der]. The two
-  statements may use different measures; unresolved here.
+  arXiv:2401.02945, Sect. VII.1.5]. In that Table 7 the contamination
+  group is 0.028 against a total systematic 0.076 on `sigma_w` [src:
+  arXiv:2401.02945, Table 7]. The two statements may use different
+  measures (a ratio of standard deviations or of variances); unresolved
+  here.
 - **Closure tests that look passed.** A machine-learning audit reports that
   redshift-binned diagnostics explain < 1 % of the residual variance while
   a gradient-boosted model predicts up to 98.2 % in LSST simulations and

@@ -281,8 +281,8 @@ Reading the table.
   bins are self-calibrated, as in the HSC Y3 two-point analyses it cites.
 - The KiDS-Legacy 2+3-point S8 (0.806 +0.025/−0.023) is not tighter in S8
   than the KiDS-Legacy two-point value quoted in `cosmo-weak-lensing`
-  (0.815 +0.016/−0.021 [sec]); the gain is in Ω_m and in the figure of merit,
-  and the two analyses differ in IA and baryon modelling (arXiv:2606.12389).
+  (0.815 +0.016/−0.021, arXiv:2503.19441 [src: abstract]); the gain is in Ω_m and in the figure of merit,
+  and the two analyses differ in IA and baryon modelling (arXiv:2606.12389, abstract).
 
 **Forecast** for Euclid (HOWLS, arXiv:2301.12890): on common non-tomographic
 mocks without systematics, each of ten higher-order statistics beats the
@@ -330,7 +330,7 @@ None of these quotes a cosmological parameter.
 
 | Data | Result | Citation | Flag |
 |---|---|---|---|
-| DESI DR1 LRG, LiFT reconstruction | Errors on α_iso smaller by 13%, 24%, 30% and on α_AP by 5%, 22%, 30% in LRG1, LRG2, LRG3 than the DESI DR1 standard reconstruction; figure of merit × 1.2, 1.7, 2.0; central values consistent with DR1 and DR2 | arXiv:2609.14862 | [src] |
+| DESI DR1 LRG, LiFT reconstruction | Errors on α_iso smaller by 13%, 24%, 30% and on α_AP by 5%, 22%, 30% in LRG1, LRG2, LRG3 than the DESI DR1 standard reconstruction; figure of merit × 1.2, 1.7, 2.0; central values consistent with DR1 and DR2 | arXiv:2609.14862 | [src: abstract] |
 | BOSS CMASS subsample, SimBIG CNN | Ω_m = 0.267 +0.033/−0.029, σ8 = 0.762 +0.036/−0.035, H0 = 64.5 ± 3.8; σ8 2.65 times tighter than P_ℓ | arXiv:2310.15256 | [src: abstract] |
 
 ### 5.4 Gaussian field-level likelihood

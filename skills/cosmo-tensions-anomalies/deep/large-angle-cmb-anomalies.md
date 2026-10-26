@@ -51,7 +51,7 @@ and Eqs. 60–61. TT, TE and EE are combined by inverse-variance weighting
 (Eq. 62), with variances from the scatter of the FFP10 simulations, which
 "agree closely with the Fisher errors" [src: Sect. 7.2].
 
-What it gives [src: Tables 24–25]:
+What it gives (arXiv:1906.02552) [src: Tables 24–25]:
 
 | Data | ℓ range | A | (l, b) |
 |---|---|---|---|
@@ -166,40 +166,42 @@ Profile and polarisation test (Planck 2018) [src: arXiv:1906.02552, Sect.
 6.5]:
 
 1. Define the Cold Spot as a minimum of the map smoothed with a Gaussian of
-   R = 5°; four other large-scale peaks at R = 10°.
+   R = 5°; four other large-scale peaks at R = 10° (arXiv:1906.02552) [src:
+   Sect. 6.5].
 2. Average T and the radial Stokes parameter Q_r over azimuth in 1° rings;
    the profile depends only on the peak height and Laplacian.
 3. Predict the mean profile analytically, conditional on those two
    quantities; for the masked covariance, generate 2000 simulations
    constrained to have a peak at the same position.
 4. Fit an amplitude A = Σ X̂_i C⁻¹_ij X_j / Σ X_i C⁻¹_ij X_j, with σ_A =
-   (Σ X_i C⁻¹_ij X_j)^(−1/2) [src: Eqs. 51–52], to angles up to 60°.
+   (Σ X_i C⁻¹_ij X_j)^(−1/2) [src: arXiv:1906.02552, Eqs. 51–52], to angles up to 60°.
 
 Result: Cold Spot T amplitude 1.005 ± 0.003 in all four maps; Q_r
-amplitudes −0.598 to +0.152 with errors 0.95–1.04, S/N about 1, "the
+amplitudes of the Cold Spot (Peak 5) −0.232 ± 0.951, −0.170 ± 1.035,
+0.152 ± 1.019 and −0.598 ± 1.023 in the four maps, S/N about 1, "the
 polarization signal of the peaks cannot be detected" and all amplitudes are
-consistent with ΛCDM [src: Table 20, Sect. 6.5].
+consistent with ΛCDM [src: arXiv:1906.02552, Table 20, Sect. 6.5].
 
 Supervoid test with lensing (Owusu et al. 2023, arXiv:2211.16139):
 
-- Void model: LTB curvature k(r) = k_0 exp[−½(r/r_V)²] [src: Eq. 5],
+- Void model: LTB curvature k(r) = k_0 exp[−½(r/r_V)²] [src: arXiv:2211.16139, Eq. 5],
   chosen because it fits the Cold Spot temperature profile; potential
   integrated to r_L = 4.2 r_V (99% of the void mass); linear growth for the
   ΛCDM time dependence [src: Sect. 2.1, Eqs. 4–7].
 - Temperature path: Planck 2018 SMICA and NILC rotated to put the spot at
-  the pole, mean ΔT in 12 rings of 2° [src: Sect. 4.2].
+  the pole, mean ΔT in 12 rings of 2° [src: arXiv:2211.16139, Sect. 4.2].
 - Lensing path: off-diagonal ℓ, ℓ + Δℓ correlations; about 53,000
   end-to-end simulations over a grid of 1550 (Θ_0, θ_V) pairs with the void
   painted in, bias removal by random-forest regression, checked on 10,000
   further and 6000 null simulations; repeated for 112 directions within
-  5.5° [src: Sect. 4.2].
+  5.5° [src: arXiv:2211.16139, Sect. 4.2].
 - Priors: θ_V ≤ 10.1° (computational), D_V + 3 r_V ≤ D_SLS, −1 ≤ δ_0 ≤ 0
-  [src: Sect. 5].
+  [src: arXiv:2211.16139, Sect. 5].
 - Result: temperature best fit δ_0 = −0.34, r_V = 806 h⁻¹Mpc, D_V = 6910
   h⁻¹Mpc (z ≳ 1, poorly covered by galaxy catalogues), for which the
   expected lensing S/N is about 12 with ℓ_max = 1600 and Δℓ ≤ 40; lensing is
   consistent with no void, and the 2σ regions of temperature and lensing do
-  not overlap in 3D [src: Sect. 5].
+  not overlap in 3D [src: arXiv:2211.16139, Sect. 5].
 
 The local supervoid (Kovács et al. 2022, arXiv:2112.07699) [src: abstract]:
 DES Y3 redMaGiC confirms the Eridanus supervoid at z < 0.2 in the Cold Spot
@@ -242,7 +244,7 @@ Herold et al. (arXiv:2509.03720) [src: Sect. IV] clean WMAP and Planck at
 70, 94, 100 and 143 GHz with six archival foreground templates fitted with
 free normalisation, which allows a mask of 1% of the sky [src: Sect. II.1];
 their stated advantage is that "the smaller mask maintains approximate
-orthogonality of the a_ℓm of different ℓ" [src: Sect. IV]:
+orthogonality of the a_ℓm of different ℓ" [src: arXiv:2509.03720, Sect. IV]:
 
 | Statistic | Common mask (26%) | 1% mask | Effect |
 |---|---|---|---|
@@ -255,7 +257,7 @@ orthogonality of the a_ℓm of different ℓ" [src: Sect. IV]:
 Cost: a 1% mask relies on the low-resolution cleaning; Commander and SEVEM
 without the common mask, and the 94 GHz map with the 1% mask, give
 local-variance dipoles pointing to the Galactic plane and are excluded as
-foreground-contaminated [src: Sect. III.5]. Their conclusion: an
+foreground-contaminated [src: arXiv:2509.03720, Sect. III.5]. Their conclusion: an
 alternative model would have to explain several anomalies, or another
 measurement, to be "convincingly favored" [src: abstract].
 
@@ -294,7 +296,7 @@ alone prefers ξ > 0; the isotropic isocurvature limit from TT, TE, EE +
 lowE + lensing overlaps it only weakly, and the joint fit shows "no reason
 to prefer this model over base ΛCDM" [src: Sect. 10.1.1, Fig. 48].
 
-Dipolar modulation, adiabatic with a long mode [src: Sect. 10.1.2]: a part
+Dipolar modulation, adiabatic with a long mode [src: arXiv:1807.06211, Sect. 10.1.2]: a part
 of the curvature perturbation is linearly modulated, R̃^lo(x) =
 R^lo(x)(1 + A x·d̂/r_LS) [Eq. 106], which adds δC_ℓℓ′/2 Σ_M ΔX_M ξ^M to the
 covariance [Eqs. 107–109]. Three spectra are tried: a red power law with
@@ -312,7 +314,7 @@ Other routes, as reviewed in arXiv:1510.07929 [src: Sects. 4.4, 4.5]:
   its intrinsic dipole is cancelled by the Doppler dipole it induces; an
   isocurvature gradient could, and would also show in large-scale
   structure, where quasar and galaxy distributions show none.
-- Anisotropic inflation, P(k) = P(k)[1 + g_*(k·d̂)²] [Eq. 12]: a first ∼ 9σ
+- Anisotropic inflation, P(k) = P(k)[1 + g_*(k·d̂)²] [src: arXiv:1510.07929, Eq. 12]: a first ∼ 9σ
   detection came from asymmetric beams; Planck-based g_* = 0.002 ± 0.016
   (68%).
 - Non-Gaussianity of a superhorizon mode can mimic a preferred direction,
@@ -359,7 +361,7 @@ supervoid is excluded by lensing (above); the local Eridanus void supplies
 <!-- key: what-goes-wrong -->
 
 - Quoting the modulation amplitude without ℓ_max. A = 0.07 to ℓ = 64 and
-  0.022 to ℓ = 220 are the same sky; the isotropic expectation falls as
+  0.022 to ℓ = 220 (arXiv:1906.02552) [src: Tables 24–25] are the same sky; the isotropic expectation falls as
   1/ℓ_max. Test: quote ℓ range, the 3% isotropic expectation and the
   scanned p-value with its look-elsewhere correction (see
   `deep/anomaly-significance.md`, Step 4).
@@ -367,7 +369,7 @@ supervoid is excluded by lensing (above); the local Eridanus void supplies
   3σ temperature signal (arXiv:1906.02552, Sect. 7.2). Test: predict E from
   a k-space model fitted to T, as in arXiv:1807.06211, Sect. 10.1.2.
 - Mask-driven significance: S_1/2 and A_LV lose about 1σ when the mask
-  shrinks from 26% to 1% (arXiv:2509.03720). Test: repeat with the smallest
+  shrinks from 26% to 1% (arXiv:2509.03720) [src: Sect. IV]. Test: repeat with the smallest
   mask the cleaning allows, and check that the fitted direction does not
   move to the Galactic plane.
 - Statistic definition: the local variance about the disc mean is

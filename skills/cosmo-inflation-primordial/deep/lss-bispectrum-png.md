@@ -17,7 +17,7 @@ from the bispectrum of tracers; map-level inference of PNG).
 
 Already in L2, not repeated here: the result tables (BOSS, DESI DR1, CMB
 combination) in `results.md#galaxy-bispectrum`; the prior dependence
-940 ± 600 → 260 ± 300 and the simulation-prior DESI + BOSS value in
+of the BOSS equilateral constraint and the simulation-prior DESI + BOSS value in
 `systematics.md#d5-bias-parameters-and-scale-cuts-in-bispectrum`; the
 b_φ debate for scale-dependent bias in `systematics.md#d1-the-response-bphi`
 and `open-questions.md#can-large-scale-structure-overtake-the-cmb-on`; the
@@ -90,7 +90,7 @@ next-to-leading order [src: arXiv:2512.04266, Sect. 3.3, footnote 4].
 
 | Analysis | Shape | PNG bias treatment | Place read |
 |---|---|---|---|
-| BOSS P + B (2022a) | equil., ortho. | b_ζ = 1.686 × (18/5)(b_1 − 1) b̃_ζ with b̃_ζ ~ N(1, 5), "motivated by the peak-background split model" | arXiv:2201.07238, main text |
+| BOSS P + B (2022a) | equil., ortho. | b_ζ = 1.686 × (18/5)(b_1 − 1) b̃_ζ with b̃_ζ ~ N(1, 5), "motivated by the peak-background split model" | arXiv:2201.07238 [src: main text, near Fig. 2] |
 | BOSS P + B (2022b) | local | b_φ = 2δ_c(b_1 − 0.55), b_δφ = 3.85 − 9.49 b_1 + 3.44 b_1² (Eq. 44), fixed; cross-check with universality (Eq. 43) | arXiv:2204.01781, Sect. 2.6 |
 | BOSS P + B (D'Amico et al.) | all three | universality-type relations for b_1^fNL, b_2^fNL (Eq. 54), fixed; widened by 60% and 150% as a test | arXiv:2201.11518, App. A |
 | DESI DR1 P + B | equil., ortho. | b_ψ ~ N(0, 5²) | arXiv:2512.04266, Sect. 3.3 |
@@ -116,9 +116,9 @@ Other groups on the same choice, power spectrum only:
 - **Simulation priors on p.** IllustrisTNG DESI-like quasars give
   p̄ ≃ 1.4 with weak redshift dependence, robust across CAMELS, and
   f_NL = −3.3 ± 9.2 on DESI DR1 (Fondi et al. 2026, arXiv:2602.12357)
-  [src]. Field-level HEFT bias on AbacusSummit LRG- and QSO-like samples
+  [src: abstract]. Field-level HEFT bias on AbacusSummit LRG- and QSO-like samples
   reduces the b_φ uncertainty by 80%, b_∇ being a proxy for concentration
-  (Hadzhiyska & Ferraro 2025, arXiv:2501.14873) [src].
+  (Hadzhiyska & Ferraro 2025, arXiv:2501.14873) [src: abstract].
 
 ### Step 4. Measure P and B without window convolution
 <!-- key: step-4-measure-p-and-b-without-window -->
@@ -273,10 +273,10 @@ arXiv:2401.13036, Sect. 5, Table 2]. Results are in "Numbers".
   variance cancellation and small scales add little; equilateral and
   orthogonal information is mostly in the bispectrum, raised up to ×4 by
   small scales, but f_NL^equil stays degenerate with σ8 and the bias model
-  (Coulton et al. 2022, arXiv:2206.15450) [src]. The local signal
+  (Coulton et al. 2022, arXiv:2206.15450) [src: abstract]. The local signal
   saturates at k ~ 0.2 h Mpc⁻¹; **forecast** Δf_NL = 45 (local), 570
   (equil.), 110 (ortho.) for 1 (h⁻¹ Gpc)³ at z = 1 with k_max = 0.5
-  [src: arXiv:2211.07565].
+  [src: arXiv:2211.07565, abstract].
 
 ### Tree level or one loop for B
 <!-- key: tree-level-or-one-loop-for-b -->
@@ -343,10 +343,7 @@ volume [src: arXiv:2201.11518, App. A, footnote 16].
 <!-- key: same-data-different-pipelines-boss -->
 
 Equilateral: 940 ± 600 (tree B, cosmology varied) against 207 ± 292
-(one-loop B, cosmology fixed); local: −33 ± 28 against 52 ± 34, a shift
-of 2.5 to 3 times either quoted error [der: (52 + 33)/34 ≈ 2.5 and
-(52 + 33)/28 ≈ 3.0, ignoring the correlation between two analyses of the
-same data] [src: arXiv:2201.07238; arXiv:2204.01781, Eq. 48; arXiv:2201.11518,
+(one-loop B, cosmology fixed); local: −33 ± 28 against 52 ± 34 [src: arXiv:2201.07238; arXiv:2204.01781, Eq. 48; arXiv:2201.11518,
 Eqs. 51–53]. The analyses differ in loop order, k ranges, PNG bias
 relations (b_φ with p = 0.55 against universality) and priors, so the
 difference cannot be assigned to one choice from what was read.
@@ -364,14 +361,13 @@ priors fivefold gives similar f_NL^equil [src: same].
 
 | Quantity | Value | Analysis | Source | Place read |
 |---|---|---|---|---|
-| Theory-error bound from Nseries | Δf_NL^equil ≲ 100 (< 0.2σ BOSS) | BOSS tree B | arXiv:2201.07238 | main text |
 | Nseries mean, one-loop B | equil. 162 ± 64, ortho. −32 ± 20, local 3 ± 4 | BOSS one-loop | arXiv:2201.11518 | Eqs. 47–49 |
 | Theory-error bounds, one-loop B | ≲ 0.34σ (equil.), 0.16σ (ortho.), 0.12σ (local) of BOSS | BOSS one-loop | arXiv:2201.11518 | Sect. 4 |
 | Nseries mean, local P + B | −4.9 ± 5.0 | BOSS tree B | arXiv:2204.01781 | Fig. 2 |
 | One-loop B unbiased to | k_max ≈ 0.15 h Mpc⁻¹; Δf_NL^equil ≈ 400 at 0.17 | PT-Challenge | arXiv:2507.22110 | Sect. 5.3 |
 | Tree-level B bias | f_NL^equil = 316 ± 67 at k_max^B = 0.08 (truth 0) | PT-Challenge | arXiv:2507.22110 | Sect. 5.3 |
 | Perturbativity tolerances | X_P = 1/3, X_B = 1/2 | BOSS one-loop | arXiv:2201.11518 | Sect. 3 |
-| Nuisance count | 14 (13 Gaussian bias/counterterms + b_ζ) | BOSS tree B | arXiv:2201.07238 | main text |
+| Nuisance count | 14 (13 Gaussian bias/counterterms + b_ζ) | BOSS tree B | arXiv:2201.07238 | main text, after Eq. 10 |
 | BOSS volume and size | ≈ 1.2 × 10⁶ galaxies, 6 (h⁻¹ Gpc)³, z_eff = 0.38, 0.61 | BOSS DR12 | arXiv:2204.01781 | Sect. 3 |
 | Modes used | ≈ 0.5 × 10⁶ to k_max ≈ 0.23 (V_eff ≈ 2.4 h⁻³ Gpc³) | BOSS one-loop | arXiv:2201.11518 | Sect. 4 |
 | Patchy mocks | 2048 per chunk | BOSS | arXiv:2201.07238; arXiv:2201.11518 | main text; App. B |
@@ -384,7 +380,7 @@ priors fivefold gives similar f_NL^equil [src: same].
 | DESI DR1 P only, local | −3.6 +9.0/−9.1 (QSO merger model); 3.5 +10.7/−7.4 (universality) | DESI DR1 LRG + QSO | arXiv:2411.17623 | abstract |
 | DESI DR1 with TNG prior on p | p̄ ≃ 1.4; f_NL = −3.3 ± 9.2 | DESI DR1 QSO | arXiv:2602.12357 | abstract |
 | BOSS P only, b_φ relation spread | 16 ± 16 to 230 ± 226 | BOSS DR12 | arXiv:2205.05673 | abstract |
-| eBOSS QSO, local | −51 < f_NL < 21 (95%, DR14); −12 ± 21 (DR16) | eBOSS | arXiv:1904.08859; arXiv:2106.13725 | abstracts |
+| eBOSS QSO, local | −51 < f_NL < 21 (95%, DR14); −12 ± 21 (DR16) | eBOSS | arXiv:1904.08859; arXiv:2106.13725 | abstract of each |
 | Skew-spectra BOSS, equil. | −34 +296/−334 (cosmology fixed) | BOSS DR12 | arXiv:2401.13036 | Sect. 5, Eq. 5.1 |
 | Skew-spectra Nseries bias | 0.53σ (equil.), 4.15σ (ortho.) of BOSS | Nseries | arXiv:2401.13036 | Sect. 5, Table 2 |
 | Field level vs P + B (sims) | σ(f_NL^local) ~1.3 times smaller, k_max ≈ 0.1 | Quijote, BORG | arXiv:2603.20855 | abstract |
@@ -477,9 +473,11 @@ priors fivefold gives similar f_NL^equil [src: same].
 ## Not verified
 <!-- key: not-verified -->
 
-- The simulation study cited by arXiv:2512.04266 for Δf_NL^equil ≈ 500 at
-  k_max ≥ 0.17 h Mpc⁻¹ (its reference list was not readable); the PT-
-  Challenge value read here is ≈ 400 at 0.17 (arXiv:2507.22110).
+- The simulation study cited by arXiv:2512.04266 for its k_max-dependent
+  theory bias on f_NL^equil (its reference list was not readable); the PT-
+  Challenge value read here is in the table above (arXiv:2507.22110).
+- The theory-error bound from Nseries quoted for the BOSS tree-level
+  bispectrum (arXiv:2201.07238) was not located in this run's reading.
 - Cabass et al. 2022b, Sect. 6 (direct fits of b_φ f_NL and b_δφ f_NL): not
   read beyond its announcement.
 - The full PNG-bias prior table and the result tables of arXiv:2512.04266
@@ -489,5 +487,5 @@ priors fivefold gives similar f_NL^equil [src: same].
 - The cosmological-collider BOSS analysis (Cabass et al. 2024): title
   seen in a search, not read.
 - The reference list of arXiv:2401.13036: which papers its Refs. [10] and
-  [12] are, and why its 245 ± 293 for [12] differs from the 207 ± 292 read
-  in arXiv:2201.11518.
+  [12] are, and why its value for [12] differs from the one-loop BOSS value
+  read in arXiv:2201.11518.

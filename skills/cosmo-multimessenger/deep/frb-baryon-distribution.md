@@ -37,7 +37,7 @@ The numbers differ between papers partly because the definitions do:
 
 | Analysis | IGM | Halo gas | Place read |
 |---|---|---|---|
-| Connor et al. 2024 (arXiv:2409.16952) | gas outside virialised haloes; `f_IGM ≡ Ω_IGM/Ω_b` | `f_X ≡ Ω_halos/Ω_b` at `z = 0.1`; haloes are cells with dark-matter density ≥ 57 `ρ_c`, the expected density at `R_200` | main text; Methods |
+| Connor et al. 2024 (arXiv:2409.16952) | gas outside virialised haloes; `f_IGM ≡ Ω_IGM/Ω_b` | `f_X ≡ Ω_halos/Ω_b` at `z = 0.1`; haloes are cells with dark-matter density ≥ 57 `ρ_c`, the expected density at `R_200` | [src: main text; Methods] |
 | Khrykin et al. 2024, FLIMFLAM DR1 (arXiv:2402.00505) | gas at `0 ≲ ρ/ρ̄ ≲ 10` | intersections within about the virial radius, `ρ/ρ̄ ≳ 10–100`; `f_d ≡ f_igm + f_cgm + f_icm = 1 − f_* − f_bh − f_ism` (Eq. 18) | Sects. IV, V.2 |
 | Hussaini et al. 2025 (arXiv:2506.04186) | sightlines with no halo at `b_⊥ < r_vir` (`r_vir` at 200 `ρ_c`, from stellar mass via a stellar-to-halo relation) | same 57 `ρ_c` cut in the simulation used for comparison | Sects. IV.3, IV.4 |
 
@@ -51,9 +51,8 @@ arXiv:2402.00505, Sect. IV].
 Connor et al. 2024 [src: arXiv:2409.16952, main text and Methods]:
 
 - Per-burst likelihood `P(DM_ex | z_s, θ)`, `θ = {f_IGM, f_X, μ_host, σ_host}`,
-  product over bursts, MCMC. Host DM log-normal with `μ_host` ~ U(0, 7), so
-  that the median spans 0–1000 pc cm⁻³; `f_IGM`, `f_X` ~ U(0, 1) with
-  `f_IGM + f_X ≤ 1`.
+  product over bursts, MCMC. Host DM log-normal with `μ_host` ~ U(0, 7);
+  `f_IGM`, `f_X` ~ U(0, 1) with `f_IGM + f_X ≤ 1` (arXiv:2409.16952, Methods).
 - Cosmic part: a bivariate log-normal `P_cos(DM_IGM, DM_X | z_s)` fitted to a
   mock survey in TNG300-1 at all redshifts, because the two terms are
   correlated (sightlines through overdensities meet more haloes) and "one
@@ -67,12 +66,13 @@ Connor et al. 2024 [src: arXiv:2409.16952, main text and Methods]:
   beyond `z = 0.1` has `DM_ex/z_s < 800` pc cm⁻³, which a halo-dominated or
   baryons-trace-dark-matter universe would not produce.
 - Model uncertainty from using one simulation: MCMC errors inflated by 30%
-  "based on model mismatch resampling experiments". Cross-check without the
-  partition: `f_d` from the mean cosmic DM, 0.94 ± 0.05.
+  "based on model mismatch resampling experiments" (arXiv:2409.16952, main text).
+  Cross-check without the partition: `f_d` from the mean cosmic DM, 0.94 ± 0.05
+  [src: arXiv:2409.16952, Methods, result shown in Extended Data Fig. 4].
 - Outliers removed from the primary fit: FRB 20190520B (large local DM; it
   "biases our estimates of nuisance parameters μ_host and σ_host but only
   removes noise" from `f_IGM`, `f_X`) and FRB 20220831A (large host DM);
-  reintroduced in jackknife tests.
+  reintroduced in jackknife tests (arXiv:2409.16952) [src: main text and Methods].
 
 ### Step 2b. Foreground route: map each sightline
 <!-- key: step-2b-foreground-route-map-each-sightline -->
@@ -83,7 +83,7 @@ FLIMFLAM DR1, 8 localised bursts [src: arXiv:2402.00505, Sects. IV–V]:
    `DM_cosmic = DM_igm + DM_halos` (Eq. 4).
 2. **Milky Way.** NE2001 for the disc; halo 40 pc cm⁻³ with `σ_MW = 15`,
    called "a sub-dominant error component" for DR1, although published values
-   span 10–111 pc cm⁻³ [src: Sect. IV.1].
+   span 10–111 pc cm⁻³ [src: arXiv:2402.00505, Sect. IV.1].
 3. **IGM from a density reconstruction.** `DM_igm^argo = n̄_e,bar(z̄) Σ_s
    (1 + δ^sm_m,s) l_s (1 + z_s)⁻¹` (Eq. 7), on ARGO reconstructions of the
    foreground from wide-field spectroscopy, smoothed with `R = 0.7 h⁻¹ Mpc`
@@ -91,7 +91,7 @@ FLIMFLAM DR1, 8 localised bursts [src: arXiv:2402.00505, Sects. IV–V]:
    distribution of hydrodynamical runs); `n̄_e,bar` from Eq. 8 with
    `Y_He = 0.243`, `Ω_b = 0.044`; `n̄_e,igm = f_igm n̄_e,bar` (Eq. 9) at a fixed
    `z̄ ≃ 0.20`; median of 61 posterior realisations per field (Eq. 10); 15 pc cm⁻³
-   added for the first 50 `h⁻¹` Mpc, which ARGO excludes [src: Sect. IV.2].
+   added for the first 50 `h⁻¹` Mpc, which ARGO excludes [src: arXiv:2402.00505, Sect. IV.2].
 4. **Haloes from narrow-field spectroscopy.** Each foreground halo gets a
    modified-NFW gas profile, `ρ_b(r) = f_gas (Ω_b/Ω_m) ρ_0(M_halo) / [y^{1−α}
    (y_0 + y)^{2+α}]` with `y = c r/r_200` (Eq. 11), `y_0 = α = 2`, truncated at
@@ -101,10 +101,10 @@ FLIMFLAM DR1, 8 localised bursts [src: arXiv:2402.00505, Sects. IV–V]:
 5. **Likelihood.** Gaussian in `DM_FRB` (Eq. 15) with a per-burst variance
    summing the ARGO, halo, host and Milky Way terms in quadrature (Eq. 16);
    the unknown host part is log-normal with `σ_* = 1.23` (0.53 in log₁₀ units
-   rescaled) (Eq. 17). Free: `f_igm`, `f_gas`, `⟨DM_host^unk⟩` [src: Sect. V.1].
+   rescaled) (Eq. 17). Free: `f_igm`, `f_gas`, `⟨DM_host^unk⟩` [src: arXiv:2402.00505, Sect. V.1].
 6. **Priors** (Table 4): `f_igm` (0, 1]; `f_gas` (0, 1] or "limited" (0, 0.7]
    from SIMBA haloes in the DR1 mass range; `ln⟨DM_host^unk⟩` [0, 6]; `f_d` flat
-   [0.75, 0.95] or N(0.86, 0.02) [src: Sect. V.2].
+   [0.75, 0.95] or N(0.86, 0.02) [src: arXiv:2402.00505, Sect. V.2].
 
 ### Step 2c. Two-point route: DM against foreground galaxies
 <!-- key: step-2c-two-point-route-dm-against-foreground -->
@@ -117,7 +117,8 @@ The maximum-likelihood stacked excess has error
 `σ[Δ̂_DM] ≈ √(σ̄²_DM / (N̄ n_DM))` for `n_DM` sightlines each meeting `N̄` haloes
 in the bin [src: Sect. IV].
 
-Three implementations:
+Three implementations (arXiv:2506.04186, Sects. II, IV; arXiv:2601.21336, Sects. 2.2, 3,
+4; arXiv:2608.11296, Sects. III, IV, V; the last row repeats the places):
 
 | | Hussaini et al. 2025 | Shirasaki et al. 2026 | McCarty et al. 2026 |
 |---|---|---|---|
@@ -164,7 +165,7 @@ two further cuts are ad hoc (one burst at `z ≈ 2`; seven southern bursts with
 - **Baryonification** (McCarty et al.). Free `log₁₀ M_c` ∈ [11, 15], `θ_ej` ∈
   [2, 8], `η` ∈ [0.05, 0.4]; `(μ, γ, δ)` fixed to (1.0, 2.5, 7.0); no free
   two-halo amplitude because it "tends to produce unphysical fits", the two-halo
-  term being set by the well-known BGS bias [src: Sect. V.2]. The resulting
+  term being set by the well-known BGS bias [src: arXiv:2608.11296, Sect. V.2]. The resulting
   power-spectrum suppression is an extrapolation: the measurement fixes the gas
   profile of this galaxy sample and baryonification generalises it to the
   `10¹²–10¹⁵` M☉ range that sets the total suppression [src: Sect. VI.1].
@@ -182,7 +183,7 @@ two further cuts are ad hoc (one burst at `z ≈ 2`; seven southern bursts with
 
 | Route | Needs | Buys | Costs | Place read |
 |---|---|---|---|---|
-| One-point shape | localised bursts, a simulated `P_cos(DM_IGM, DM_X)` | uses every burst; `f_IGM` and `f_X` at once | tied to one simulation's log-variances (30% error inflation); host model enters | arXiv:2409.16952, Methods |
+| One-point shape | localised bursts, a simulated `P_cos(DM_IGM, DM_X)` | uses every burst; `f_IGM` and `f_X` at once | tied to one simulation's log-variances (30% error inflation); host model enters | arXiv:2409.16952 [src: Methods] |
 | Foreground mapping | wide- and narrow-field spectroscopy per field | per-sightline `DM_igm` and `DM_halos`; separates the host (`⟨DM_host^unk⟩ ≈ 70` in every prior case) | 8 sightlines; `f_gas` weakly constrained, degenerate with `f_igm` through the `f_d` prior; halo extent fixed | arXiv:2402.00505, Sects. IV.3, VI |
 | Two-point | many bursts behind a galaxy survey | insensitive to host and Milky Way DM; mass-binned profiles | few pairs at small `R`; DM selection can bias it (below) | arXiv:2601.21336; arXiv:2608.11296, Sect. VI.4 |
 | IGM-only subsample | complete galaxy catalogue to `M_* = 10¹⁰` M☉, cluster catalogues | direct `f_IGM` | a lower limit: halo-free sightlines also cross less IGM | arXiv:2506.04186, Sect. IV.4 |
@@ -224,11 +225,11 @@ Bins are strongly correlated because each burst enters many pairs and bins
 
 | Quantity | Value | Analysis | Source | Place read |
 |---|---|---|---|---|
-| TNG300 reference partition | `f_IGM` = 0.827, `f_X` = 0.138 | Connor | arXiv:2409.16952 | Methods |
-| DM cliff | no burst at `z > 0.1` with `DM_ex/z < 800` pc cm⁻³ | Connor | arXiv:2409.16952 | main text |
-| Host DM | `μ_host` = 4.90 (+0.18/−0.20), `σ_host` = 0.53 (+0.16/−0.14); median 130 (+25/−23) pc cm⁻³ rest frame | Connor | arXiv:2409.16952 | main text |
-| Massive-halo share (X-ray, SZ synthesis) | ICM 3.75 ± 0.5%; groups `10^12.7–10^14` M☉ 5.4 ± 1.0% | Connor | arXiv:2409.16952 | main text |
-| Model-mismatch inflation | 30% on MCMC errors | Connor | arXiv:2409.16952 | main text |
+| TNG300 reference partition | `f_IGM` = 0.827, `f_X` = 0.138 | Connor | arXiv:2409.16952 | [src: Methods] |
+| DM cliff | no burst at `z > 0.1` with `DM_ex/z < 800` pc cm⁻³ | Connor | arXiv:2409.16952 | [src: main text] |
+| Host DM | `μ_host` = 4.90 (+0.18/−0.20), `σ_host` = 0.53 (+0.16/−0.14); median 130 (+25/−23) pc cm⁻³ rest frame | Connor | arXiv:2409.16952 | [src: main text] |
+| Massive-halo share (X-ray, SZ synthesis) | ICM 3.75 ± 0.5%; groups `10^12.7–10^14` M☉ 5.4 ± 1.0% | Connor | arXiv:2409.16952 | [src: main text] |
+| Model-mismatch inflation | 30% on MCMC errors | Connor | arXiv:2409.16952 | [src: main text] |
 | ARGO smoothing; realisations | `R = 0.7 h⁻¹` Mpc; 61 | FLIMFLAM DR1 | arXiv:2402.00505 | Sect. IV.2 |
 | Milky Way halo | 40 ± 15 pc cm⁻³ | FLIMFLAM DR1 | arXiv:2402.00505 | Sect. IV.1 |
 | Halo masses probed | mostly `10^11–10^12.5` M☉ | FLIMFLAM DR1 | arXiv:2402.00505 | Sect. IV.3 |
@@ -287,8 +288,8 @@ Bins are strongly correlated because each burst enters many pairs and bins
   (Connor); flat or Gaussian `f_d` and limited `f_gas` priors (FLIMFLAM);
   `Δz` = 0.05 and 0.1, four DM component separations, boost factor
   (Shirasaki); `N_patch` variation, FLAMINGO amplitude on large scales
-  (McCarty); TNG300 mock with matched sample size (Hussaini) [src: places
-  above].
+  (McCarty); TNG300 mock with matched sample size (Hussaini) [src: the places given
+  above for each paper; for Shirasaki, arXiv:2601.21336, Sects. 2.2, 3, 4].
 
 ## Reading list
 <!-- key: reading-list -->

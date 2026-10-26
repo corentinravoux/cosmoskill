@@ -29,18 +29,18 @@ re-verify against the cited paper before a number enters a manuscript.
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
 
-- Current BAO: DESI DR2, D_H/r_d = 8.632 ± 0.101, D_M/r_d = 38.99 ± 0.53 (stat + sys), ρ = −0.431, z_eff = 2.33 (arXiv:2503.14739).
-- Best distances, DR2 full shape: D_M/D_H = 4.572 ± 0.046, D_H/r_d = 8.600 ± 0.066, D_M/r_d = 39.32 ± 0.33, ρ = +0.225 (arXiv:2607.27410); agree with Planck ΛCDM, ~2σ from CMB + BAO w0waCDM.
-- Non-linear BAO-shift systematic: 0.3% per direction (BAO paper), revised to 0.15% isotropic and 0.8% peak AP (full shape); studies disagree on its sign (arXiv:2412.06892, arXiv:2503.13442).
+- Current BAO: DESI DR2, D_H/r_d = 8.632 ± 0.101, D_M/r_d = 38.99 ± 0.53 (stat + sys), ρ = −0.431, z_eff = 2.33 (arXiv:2503.14739) [src: Sect. VI.2, Eq. 14].
+- Best distances, DR2 full shape: D_M/D_H = 4.572 ± 0.046, D_H/r_d = 8.600 ± 0.066, D_M/r_d = 39.32 ± 0.33, ρ = +0.225 (arXiv:2607.27410) [src: Sect. V.3, Eqs. 25–26]; agree with Planck ΛCDM, ~2σ from CMB + BAO w0waCDM.
+- Non-linear BAO-shift systematic: 0.3% per direction (BAO paper, arXiv:2503.14739) [src: Sect. VI.1], revised to 0.15% isotropic and 0.8% peak AP (full shape, arXiv:2607.27410) [src: Sect. 5.2]; studies disagree on its sign (arXiv:2412.06892, arXiv:2503.13442).
 - Forest fσ8 fails mock validation; excluded in DR1 and DR2 (arXiv:2509.15308, arXiv:2607.27411). β is b_η f / b_δ, not f/b.
-- The continuum fit removes the mean and slope of δ per forest and absorbs F̄(z); models are distorted with the distortion matrix (arXiv:1702.00176, arXiv:2506.15262). It leaks r_∥ < 10 h⁻¹Mpc into all scales: percent-level AP bias unless marginalised (arXiv:2607.27410).
-- DESI DR1 P1D cosmology: Δ²_★ = 0.379 ± 0.032, n_★ = −2.309 ± 0.019 at 0.009 s/km, z = 3, from 62,807 spectra with S/N > 3, consistent with Planck (arXiv:2601.21432).
+- The continuum fit removes the mean and slope of δ per forest and absorbs F̄(z); models are distorted with the distortion matrix (arXiv:1702.00176, arXiv:2506.15262). It leaks r_∥ < 10 h⁻¹Mpc into all scales: percent-level AP bias unless marginalised (arXiv:2607.27410) [src: Sect. 3.3].
+- DESI DR1 P1D cosmology: Δ²_★ = 0.379 ± 0.032, n_★ = −2.309 ± 0.019 at 0.009 s/km, z = 3, from 62,807 spectra with S/N > 3, consistent with Planck (arXiv:2601.21432) [src: abstract; Sect. 2.1 for the sample].
 - DR1 slope error is 3× eBOSS: LLS, Si II–Si II and emulator errors now marginalised.
-- Running: eBOSS-era α_s = −0.010 ± 0.004 (arXiv:1911.09073); DESI DR1 + CMB + BAO: 0.0014 ± 0.0041. "5σ" tension claims use eBOSS likelihoods (arXiv:2311.16377, arXiv:2511.01612).
-- One eBOSS data vector gave σ_8 = 0.733 (PRIYA, arXiv:2309.03943) and 0.841 (EFT, arXiv:2405.13208); amplitude degenerate with mean flux (arXiv:2412.05372).
-- WDM limits: 1.9–5.7 keV, depending on thermal-history priors and k_max (arXiv:1912.09397, arXiv:2309.04533).
+- Running: eBOSS-era α_s = −0.010 ± 0.004 (arXiv:1911.09073); DESI DR1 + CMB + BAO: 0.0014 ± 0.0041 (arXiv:2601.21432) [src: abstract of each paper]. "5σ" tension claims use eBOSS likelihoods (arXiv:2311.16377, arXiv:2511.01612).
+- One eBOSS data vector gave σ_8 = 0.733 (PRIYA, arXiv:2309.03943) and 0.841 (EFT, arXiv:2405.13208) [src: abstract]; amplitude degenerate with mean flux (arXiv:2412.05372).
+- WDM limits depend on thermal-history priors and k_max: > 1.9 keV (95%) when cold histories are allowed (arXiv:1912.09397), > 5.7 keV (95%) from HIRES + UVES at z = 4.2–5.0 (arXiv:2309.04533) [src: abstract of each paper].
 - DESI P1D: FFT and QMLE measured; cosmology uses QMLE (arXiv:2505.09493, arXiv:2505.07974).
-- Tomography regimes: 2–4 h⁻¹Mpc over ≲ 2 deg² with galaxies (CLAMATO, LATIS), 13 h⁻¹Mpc over 220 deg² with quasars (arXiv:2004.01448, abstract).
+- Tomography regimes: with galaxies, 2.5 h⁻¹Mpc (CLAMATO, arXiv:1710.02894) and 4 h⁻¹ cMpc over 1.65 deg² (LATIS, arXiv:2510.08815); with quasars, 13 h⁻¹Mpc over 220 deg² (arXiv:2004.01448) [src: abstract of each paper].
 
 ## Systematics a referee checks
 <!-- key: systematics-a-referee-checks -->
@@ -50,13 +50,13 @@ Continuum distortion and its small-scale leakage; mean-flux prior; DLA finder pu
 ## Errors that recur
 <!-- key: errors-that-recur -->
 
-- Quoting DESI DR1 (2% on H) as the latest Lyα BAO, or a 2.5σ Lyα BAO tension with ΛCDM (BOSS DR11; 1.5σ at eBOSS DR16).
+- Quoting DESI DR1 (2% on H, arXiv:2404.03001) as the latest Lyα BAO, or a 2.5σ Lyα BAO tension with ΛCDM (BOSS DR11, arXiv:1404.1801; 1.5σ at eBOSS DR16, arXiv:2007.08995) [src: abstract of each paper].
 - Quoting a Lyα fσ8, or converting β to f as for galaxies.
 - Comparing compressed P1D parameters across papers without checking pivot units (s/km versus Mpc⁻¹) and definitions: (Δ²_★, n_★), (A_Lyα, n_Lyα), (A_P, n_P) differ.
 - Quoting a WDM or FDM limit without its thermal-history assumption and k_max.
-- Claiming the forest alone constrains Σm_ν (alone ~1 eV); DESI DR1 P1D moves CMB + BAO from 55.1 to 53.7 meV.
+- Claiming the forest alone constrains Σm_ν (alone ~1 eV); DESI DR1 P1D moves CMB + BAO from 55.1 to 53.7 meV (arXiv:2601.21432) [src: Sect. 7, table].
 - Mixing D_A with D_M, or the DR2 BAO-only and full-shape distance pairs (opposite-sign correlations).
-- Confusing DESI P1D sample sizes: >300,000 quasars measured, 62,807 used for cosmology.
+- Confusing DESI P1D sample sizes: >300,000 quasars measured (arXiv:2505.07974) [src: abstract], 62,807 used for cosmology (arXiv:2601.21432) [src: Sect. 2.1].
 - Treating b_α, β_α from BAO fits as measurements (nuisance parameters).
 
 ## Related skills
@@ -82,7 +82,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 7k; methods 14k; results 13k; surveys 7k; systematics 16k; deep/continuum-distortion 7k; deep/p1d-emulators 8k; deep/p1d-estimation 10k; deep/theory-sbi-field-level 9k; deep/tomography-voids 10k; deep/validation-mocks-blinding 7k.
+Sizes, in thousands of tokens: L1 3k; open 8k; methods 15k; results 13k; surveys 7k; systematics 16k; deep/continuum-distortion 7k; deep/p1d-emulators 8k; deep/p1d-estimation 11k; deep/theory-sbi-field-level 9k; deep/tomography-voids 10k; deep/validation-mocks-blinding 7k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

@@ -126,10 +126,11 @@ blinded-data difference falls within the range of 25 Abacus-2 DR2 mocks
 5. Data errors within the mock distribution.
 6. Pre- and post-reconstruction α consistent.
 7. Mock fits unbiased (largest offset 2.46σ, post-reconstruction QSO,
-   below the 3σ detection threshold).
-8. ξ and P(k) consistent within 0.5σ.
+   below the 3σ detection threshold) (arXiv:2503.14742) [src: Table 6].
+8. ξ and P(k) consistent within 0.5σ (arXiv:2503.14742) [src: Table 6].
 9. Systematic budget fixed from DR1 with stated updates.
-10. LRG3 and ELG1 consistent in 0.8 < z < 1.1 (α_iso 0.41σ; α_AP −1.66σ).
+10. LRG3 and ELG1 consistent in 0.8 < z < 1.1 (α_iso 0.41σ; α_AP −1.66σ)
+    (arXiv:2503.14742) [src: Table 6, Sect. VI.4.3].
 
 A systematic counts as detected above 3σ of the test's statistical
 precision [src: Sect. VI.2].

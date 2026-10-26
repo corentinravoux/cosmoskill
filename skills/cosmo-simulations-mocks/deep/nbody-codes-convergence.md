@@ -58,13 +58,13 @@ arXiv:2112.05165, Sect. 8.2 and Fig. 22]:
 
 - the coarse-graining argument, ε ∼ ℓ, which would make haloes of 100
   particles (virial radius ≈ 0.3 ℓ) unresolved, so that large runs use
-  values 30–100 times smaller;
+  values 30–100 times smaller [src: arXiv:2112.05165, Sect. 8.2];
 - collisionality bounds (ε_v from the binding energy of two particles at
   separation ε, ε_acc from the change of acceleration in an encounter,
   ε_90 from large-angle deflections), called "qualitative estimates";
 - two-body relaxation: profiles converge to about 10% where the
   relaxation time of the enclosed particles exceeds the Hubble time
-  (Power et al. 2002, below);
+  (Power et al. 2002, below) [src: arXiv:2112.05165, Sect. 8.2];
 - empirical "optimal" values, compared in the table below.
 
 | Prescription | Form | In units of ℓ | Basis | Place read |
@@ -102,16 +102,16 @@ fixed error budget [sec: arXiv:2110.11392, Sect. III.1].
 The criteria in use [src: arXiv:2112.05165, Sect. 4.2.1, Eqs. 44–47]:
 
 - CFL-like, Δt_i = C Δx/|P_i/M_i|, C ∼ 0.25, or C √(Δx/|A_i|), the latter
-  common in PM codes;
+  common in PM codes [src: arXiv:2112.05165, Sect. 4.2.1];
 - the acceleration criterion Δt_i ≃ η √(ε/|A_i|), "the most common" in
-  large runs, used by PKDGRAV-3 with η = 0.2 and by GADGET;
+  large runs, used by PKDGRAV-3 with η = 0.2 and by GADGET [src: arXiv:2112.05165, Sect. 4.2.1];
 - a tidal criterion Δt_i ≃ η/√‖T‖, with T the tidal tensor, which avoids
   the non-physical scale ε and gives shorter steps in halo centres and
   longer ones outside, at the cost of a noisier estimate;
 - a global cap Δ log a < B, B ∼ 0.01, used in PM and COLA codes and, with
   the others, in high-resolution runs because it "appears to be necessary
   for a precise agreement with linear theory predictions at high
-  redshift".
+  redshift" [src: arXiv:2112.05165, Sect. 4.2.1].
 
 The review states that the choices are "usually heuristically motivated",
 that a factor 4 in CPU time was saved by adjusting steps while keeping
@@ -378,11 +378,11 @@ statement, the first a consistency statement.
 <!-- key: not-verified -->
 
 - Joyce et al. 2020 and Garrison et al. 2021 (scale-free self-similarity
-  and the 0.033 ℓ physical softening): read only as described by the review
-  and the Abacus paper; identifiers not retrieved.
+  and the physical softening they recommend): read only as described by the review
+  and the Abacus paper; identifiers not retrieved, and the softening value was not found in the Abacus code paper in this run.
 - van den Bosch & Ogiya 2018, Green et al. 2021 (artificial subhalo
-  disruption, at most 10–20% on the subhalo mass function according to the
-  review), Smith et al. 2014 and Baldauf et al. 2015 (mesh size): through
+  disruption; its size on the subhalo mass function was not found in
+  the review in this run), Smith et al. 2014 and Baldauf et al. 2015 (mesh size): through
   the review and the GINKAKU paper only.
 - The review states that Schneider et al. (2016, the journal year of
   arXiv:1503.05920) require 10⁹ h⁻¹ M_⊙ for percent-level convergence at

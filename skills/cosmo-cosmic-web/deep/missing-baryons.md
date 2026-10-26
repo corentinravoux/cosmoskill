@@ -113,17 +113,19 @@ coverage, S/N and the rest wavelength. In the COS cluster-pair survey
 - g(z) = Σ_k H(z − z_k^min) H(z_k^max − z) over M sightlines, with H the
   Heaviside function (Eq. 1), and Δz = ∫ g(z) dz (Eq. 2).
 - Masks: flux below 50% of the continuum (against detection on top of
-  strong lines) and ±200 km s⁻¹ around expected Galactic lines.
+  strong lines) and ±200 km s⁻¹ around expected Galactic lines
+  (arXiv:2610.11203) [src: Sect. 3.3].
 - Minimum detectable rest equivalent width per pixel, printed as
-  W_r,min = 3 λ₀R/⟨S/N⟩ with R = 20,000 the COS resolution and ⟨S/N⟩ per
-  resolution element; as the width of a resolution element is λ₀/R, the
-  intended form is presumably 3λ₀/(R ⟨S/N⟩) [der: dimensional check].
+  W_r,min = 3 λ₀R/⟨S/N⟩ with R = 20000 the COS resolution and ⟨S/N⟩ per
+  resolution element (arXiv:2610.11203) [src: Sect. 3.3].
+- As the width of a resolution element is λ₀/R, the intended form of that
+  printed relation is presumably 3λ₀/(R ⟨S/N⟩) [der: dimensional check].
 - dN/dz(Δd, Δv, W_r,min) = N/Δz (Eq. 3), with Poisson errors in the
   Gehrels small-number form σ⁺ ≈ √(N + 3/4) + 1, σ⁻ ≈ √(N − 1/4), which
   the authors find to agree with jackknife variance [src: Sect. 3.4,
   footnote 11].
 - The field reference is dN/dz|field ≈ N_tot/Δz_tot over 0.1 ≤ z ≤ 0.5
-  (Eq. 5), not excluding the cluster-pair windows; excluding them would
+  (arXiv:2610.11203, Eq. 5), not excluding the cluster-pair windows; excluding them would
   lower the field value and raise the excesses [src: Sect. 3.4, footnote
   12].
 
@@ -145,7 +147,7 @@ raise "the statistical significance and the overall credibility" of an
 X-ray counterpart; EAGLE shows O VI and O VII column densities correlated
 [src: Sect. 2.2].
 
-The detection statistic is ΔC = C − C_min, the rise in the Cash statistic
+In the same paper (arXiv:2305.01587), the detection statistic is ΔC = C − C_min, the rise in the Cash statistic
 when the absorber column is fixed at log N = 7 (effectively zero) [src:
 Sect. 4.3.2]. Under the null, ΔC ~ χ²(1) for one free column, with
 critical values 2.7, 6.6 and 8.8 at 90%, 99% and 99.7% [src: Sect. 4.3.2].
@@ -164,15 +166,15 @@ redshift trials (arXiv:2305.01587) [src: Sect. 4.4.1]:
    function, across 23.5–32 Å (z ≥ 0 and above the 21.6–23.5 Å Galactic
    O I–O VI region, below the source redshift) in 10 mÅ steps, reduced by
    25% for unusable detector regions to Δλ = 6.4 Å, and record the
-   maximum Δχ² (≈ ΔC at ≥ 400 counts per bin) in pure-noise spectra.
+   maximum Δχ² (≈ ΔC at ≥ 400 counts per bin) in pure-noise spectra (arXiv:2305.01587) [src: Sect. 4.4.1].
 2. **Binomial approximation.** N = Δλ/σ_λ independent chances, with σ_λ ≈
    50 mÅ (the RGS resolution), gives N ≈ 127; then P ≈ pN when pN ≪ 1, or
    P = Σ_{i=1}^{N} C(N, i) p^i (1 − p)^(N−i) otherwise, p being the
-   single-trial p-value.
+   single-trial p-value (arXiv:2305.01587) [src: Sect. 4.4.1].
 
 Applied to the two 2018 lines towards 1ES 1553+113: z = 0.4339 gives P =
 4 × 10⁻⁵, a 4.1σ two-sided equivalent; z = 0.3551, with single-trial p =
-0.017, gives P = 0.88 (binomial) or ~0.46 (simulation) [src: Sect.
+0.017, gives P = 0.88 (binomial) or ~0.46 (simulation) (arXiv:2305.01587) [src: Sect.
 4.4.1]. The first line's WHIM origin is questioned on other grounds (the
 blazar likely sits in a group at z ≈ 0.433), recorded in L2.
 
@@ -182,19 +184,19 @@ blazar likely sits in a group at z ≈ 0.433), recorded in L2.
 The 51-source X-ray search (arXiv:2507.21719) [src: abstract; Sect. 3.2]:
 
 - 1,224 FUV-prior systems searched; 34 possible O VII or O VIII systems
-  at the 99% level (ΔC ≥ 6.6, p = 0.01, a "2.7σ" equivalent) [src:
+  at the 99% level (ΔC ≥ 6.6, p = 0.01, a "2.7σ" equivalent) (arXiv:2507.21719) [src:
   abstract; Sect. 3.2.5].
 - Vetoes: Galactic lines and absorption intrinsic to the source [src:
   Sect. 3.2.1–3.2.2 titles]; any
   known galaxy within 1 Mpc on the sky and ±1,000 km s⁻¹ (Δz ≈ ±0.0034)
   of the absorber, as a circumgalactic-medium (CGM) test, e.g. galaxies at
-  0.12 Mpc and 50 kpc remove systems [src: Sect. 3.2.3]; low-count spectra
+  0.12 Mpc and 50 kpc remove systems (arXiv:2507.21719) [src: Sect. 3.2.3]; low-count spectra
   where ΔC is unreliable [src: Sect. 3.2.4 title].
 - Survivors: 7 O VII and 8 O VIII systems; the largest ΔC = 17.9 (p = 2.3
-  × 10⁻⁵, "4.2σ") [src: Sect. 3.2.5].
+  × 10⁻⁵, "4.2σ") (arXiv:2507.21719) [src: Sect. 3.2.5].
 - Double counting: two FUV priors at z = 0.18759 and 0.18775 are not
   resolvable in X-rays (dropping one changes Ω by 0.8%); an O VII and an
-  O VIII line at the same z = 0.0902 towards 3C 273 may be one phase [src:
+  O VIII line at the same z = 0.0902 towards 3C 273 may be one phase (arXiv:2507.21719) [src:
   Sect. 4.2.4].
 - Non-detections enter through EAGLE: the probability p_j =
   P(N_OVII > N⁺_OVII | N_OVI) that a sightline with a given O VI (or H I)
@@ -373,7 +375,7 @@ needed to challenge the WHIM hypothesis with upper limits
   be read; its search method, significance and Ω estimate were not read at
   source.
 - Paper I of the 51-source X-ray series (the line search itself) was not
-  read; its selection is as summarised in arXiv:2507.21719.
+  read; its selection is as summarised in arXiv:2507.21719 (abstract).
 - The NewAthena count requirements (arXiv:2605.26907) were not read beyond
   the abstract, which gives no numbers.
 - The results section of arXiv:2610.11203 (the BLA and O VI excesses with

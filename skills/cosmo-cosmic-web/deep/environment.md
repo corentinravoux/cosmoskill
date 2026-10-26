@@ -41,12 +41,12 @@ arXiv:2109.14623) define three distances in TNG [src: Sect. 3.1]:
 The 1 Mpc core is "roughly four times the best-fit scale radius" of the
 generalised NFW filament profile of Galárraga-Espinosa et al. 2020, a
 compromise between that radius and the 27 Mpc extreme extent; thresholds
-of 0.25, 0.5, 1, 10 and 27 Mpc leave the conclusions unchanged [src: Sect.
-3.1].
+of 0.25, 0.5, 1, 10 and 27 Mpc leave the conclusions unchanged
+(arXiv:2109.14623) [src: Sect. 3.1].
 
-**Discrete classes from distances.** The scheme used on SDSS DR18 groups
-(Izzo Dominguez et al. 2025, arXiv:2509.09800, after Galárraga-Espinosa et
-al. 2023) [src: Sect. 2]:
+**Discrete classes from distances.** The scheme used on SDSS DR18 groups,
+after Galárraga-Espinosa et al. 2023 (Izzo Dominguez et al. 2025):
+(arXiv:2509.09800) [src: Sect. 2]:
 
 | Class | Definition |
 |---|---|
@@ -183,7 +183,7 @@ practical choices [src: Sect. 4.1]:
 - To split by α₅ independently of δ₈, take α₅ quantiles at each ten
   percentile of δ₈ and combine them.
 
-Result: the red fraction rises from ~68% at low δ₈ to ~78% at high δ₈,
+Result (arXiv:1801.04878): the red fraction rises from ~68% at low δ₈ to ~78% at high δ₈,
 shows little change with α₅ at fixed δ₈, and the halo-quenching mock
 tracks the colour-split stellar mass functions in all nine (δ₈, α₅)
 cells [src: Sect. 4.2].

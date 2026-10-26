@@ -58,17 +58,17 @@ Hotinli 2026 [src: arXiv:2605.18938, Sects. II, III.1, III.3]:
    ⟨T_ML X_a⟩ ∝ 𝒩 (i ℓ_a) P_gΨ(ℓ/χ_*), 𝒩 = η_⊥ n_g^3d T_CMB L/χ_* (Eq. 13):
    the moving lens appears only in C_ℓ^TG; C_ℓ^TC vanishes by parity and is a
    null test. The authors call it "the kSZ estimator with more indices".
-4. Bin D_ℓ = ℓ² C_ℓ^TG with (2ℓ + 1) weights into 6 logarithmic bins over
+4. Bin (arXiv:2605.18938) D_ℓ = ℓ² C_ℓ^TG with (2ℓ + 1) weights into 6 logarithmic bins over
    2500 ≤ ℓ ≤ 6000 (Eq. 22).
-5. Covariance from the scatter of D_ℓ within ℓ, keeping pairs with
-   |ℓ − ℓ′| ≤ Δℓ ~ 1/f_sky to absorb mask coupling (Eq. 23): f_sky ≈ 0.09
-   (NGC) and 0.19 (SGC) give Δℓ = 11 and 5. A simulation-based covariance
+5. Covariance (arXiv:2605.18938, Sect. III.3) from the scatter of D_ℓ within ℓ, keeping
+   pairs with |ℓ − ℓ′| ≤ Δℓ ~ 1/f_sky to absorb mask coupling (Eq. 23):
+   f_sky ≈ 0.09 (NGC) and 0.19 (SGC) give Δℓ = 11 and 5. A simulation-based covariance
    agrees "excellent[ly]".
 6. Fit one amplitude b_ML to the binned template:
    b̂_ML = tᵀC⁻¹d / tᵀC⁻¹t, σ² = 1/tᵀC⁻¹t (Eq. 25), SNR = b̂_ML/σ (Eq. 26).
    NGC and SGC log-likelihoods are added.
 
-**Why lensing and kSZ do not bias it** [src: Sect. III.4]. Lensing is odd
+**Why lensing and kSZ do not bias it** [src: arXiv:2605.18938, Sect. III.4]. Lensing is odd
 under T_pri → −T_pri with the late-time structure fixed, so its mean
 contribution vanishes; the estimator is linear in T, so its covariance needs
 only C_ℓ^TT. kSZ is odd under v_r → −v_r, exactly in the snapshot geometry
@@ -86,16 +86,16 @@ magnitude above the signal [src: Sect. VI.2].
 
 **Sign estimator** (Coulton 2024) [src: arXiv:2401.13033, Sects. II.1–II.5,
 III, V, VI.1]:
-1. Screening replaces a fraction of line-of-sight photons by the sky mean,
+1. Screening (arXiv:2401.13033) replaces a fraction of line-of-sight photons by the sky mean,
    so it multiplies the primary anisotropy by (1 − δτ); δτ is 10⁻⁵–10⁻³ for
    galaxy and cluster haloes, against τ̄ ~ 5–6% (Sect. II.1).
-2. On small scales the quadratic estimator reduces to a large-scale map
+2. On small scales (arXiv:2401.13033) the quadratic estimator reduces to a large-scale map
    times a small-scale map. Replacing the large-scale map by its **sign**
    costs a variance factor ⟨T²⟩/⟨|T|⟩² = π/2 and suppresses any foreground
    whose sign does not follow the large-scale primary CMB (tSZ, CIB, kSZ);
    the residual ISW correlation is removed by cutting ℓ ≲ 20 or subtracting
    an ISW map (Sect. II.3).
-3. Filters: the low-pass map must keep the large-scale sign (transition
+3. Filters (arXiv:2401.13033): the low-pass map must keep the large-scale sign (transition
    above ℓ ~ 500), the high-pass map is separated from it to avoid
    correlation, both tapered; the beam and pixel window are deconvolved
    first; the output τ map loses all modes ℓ < 1600 and is re-beamed.
@@ -103,20 +103,20 @@ III, V, VI.1]:
    constant wherever the large-scale filter is non-zero (example: |L| > 1600
    with f_s constant for ℓ ≥ 950); the residual is suppressed by the ratio
    of C_ℓ^TT in the two legs (Sects. II.4, II.5).
-4. 20′ × 20′ CEA cutouts with bilinear interpolation, stacked with the sign
+4. (arXiv:2401.13033) 20′ × 20′ CEA cutouts with bilinear interpolation, stacked with the sign
    weight on 34 and 19 million unWISE blue and green galaxies, after removing
    objects within 6′ of SZ clusters and of SNR > 5 point sources, 10′ of map
    edges and 12′ of inpainted sources. Equal numbers of positive and
    negative weights are enforced: with O(10⁴) independent sign regions, an
    unbalanced stack would leave ~1% of the mean foreground (Sect. II.5).
-5. Covariance from 150 Gaussian simulations of the NILC map with a tiled
+5. Covariance (arXiv:2401.13033) from 150 Gaussian simulations of the NILC map with a tiled
    noise model; strong radial correlations from the high-pass filter. Check:
    the per-galaxy scatter gives diagonal elements within ~35% (Sect. V).
-6. Validation: Websky and Agora maps with all foregrounds and no screening
+6. Validation (arXiv:2401.13033): Websky and Agora maps with all foregrounds and no screening
    give zero; with injected screening they return the filtered input; 40
    lensed "backlight" simulations at halo positions give zero, which also
    bounds the mean field (Sects. III.2, III.3).
-7. Significance: χ² against the null; a projected beta profile with β = 0.86
+7. Significance (arXiv:2401.13033): χ² against the null; a projected beta profile with β = 0.86
    fixed because of the θ_0–β degeneracy, beam-convolved and filtered like
    the data; Δχ² = 5 against null; AIC −0.93 (blue) and 4.0 (green); F-test
    p = 0.25 and 1.0. The best fit (τ_0 = 1.9 × 10⁻⁴, θ_0 = 1.2′) differs from
@@ -142,20 +142,20 @@ so the information is in the amplitude.
 <!-- key: step-4-screening-as-a-power-spectrum -->
 
 Kramer 2026 [src: arXiv:2608.27458, Sects. V.1, V.4.2, VI.1, VII.1]:
-- TT quadratic estimator in the Hu–Okamoto form, the pipeline reproducing
+- TT quadratic estimator (arXiv:2608.27458, Sect. V.1) in the Hu–Okamoto form, the pipeline reproducing
   the DR6 lensing bandpowers; polarisation not used because of its noise.
   CMB range 600 ≤ ℓ ≤ 3000: ℓ_min follows the DR6 power-spectrum analysis,
   ℓ_max is where foregrounds overtake the CMB.
-- Bandpowers over 100 < L^τ < 3000; L_min = 100 because of a large mean
+- Bandpowers (arXiv:2608.27458, Sect. VI.1) over 100 < L^τ < 3000; L_min = 100 because of a large mean
   field; above ℓ_CMB,max the N⁰ noise rises sharply.
 - Lensing: no bias hardening; the leakage N_L^{leak,τφ} is computed
   analytically from the response of the τ estimator to the lensing coupling
   ("an inefficient lensing estimator"), agreeing with simulations, and a
   secondary N¹ term is subtracted.
-- Amplitude of an AMBER reionisation template (z_mid = 8, Δz = 4, A_z = 3,
+- Amplitude (arXiv:2608.27458, Sect. VI.1, Fig. 11 caption) of an AMBER reionisation template (z_mid = 8, Δz = 4, A_z = 3,
   M_min = 10⁸ M⊙, l_mfp = 3 Mpc/h): A_τ = 180 ± 157, < 450 at 95%; null PTE
   0.68 for 21 dof; DR6 noise is ~1000 times the fiducial signal.
-- Residual foregrounds from Websky, processed like the data (bispectrum and
+- Residual foregrounds (arXiv:2608.27458, Sect. VII.1) from Websky, processed like the data (bispectrum and
   trispectrum terms): ΔA_τ = 0.33σ for the baseline coadd, 0.24–1.4σ across
   frequency choices, largest at 90 GHz; lowering ℓ_max reduces it at a cost
   in sensitivity.
@@ -171,16 +171,16 @@ Krywonos 2026 [src: arXiv:2607.16071, Sects. 3, 4.1, 5.4, 5.5, 6]:
 2. The amplitude b_q is the ratio of true to model C̄_ℓ^τg, the analogue of
    b_v: b_q = 1 means the gas model is right (Sect. 4.1). The quadrupole
    window W_q is the same as in kSZ velocity reconstruction with that tracer.
-3. Templates of the remote quadrupole from inpainted Commander T and E,
+3. Templates (arXiv:2607.16071, Sect. 5.5) of the remote quadrupole from inpainted Commander T and E,
    ℓ = 2–20, conditioned with ΛCDM spectra (Eq. 29).
-4. Filters: tracer a_ℓm × C̄_ℓ^τg/C_ℓ^gg with a top-hat passband (without it
+4. Filters (arXiv:2607.16071, Sect. 5.5): tracer a_ℓm × C̄_ℓ^τg/C_ℓ^gg with a top-hat passband (without it
    the low-ℓ variance disagrees with the analytic noise N_q); polarisation
    E, B divided by B_ℓ C_ℓ, with a 5′ Gaussian B_ℓ; CIB point-source flux cuts
    (0.035, 0.10, 0.18 MJy/sr at 353, 545, 857 GHz) adjusted until N_q matches
    the reconstruction spectra; reference scale ℓ̄ = 200.
-5. Validation on 1500 noise-only, signal-plus-noise and signal-only
+5. Validation (arXiv:2607.16071, Sect. 5.5) on 1500 noise-only, signal-plus-noise and signal-only
    simulations at N_side = 1024.
-6. Sensitivity peaks at ℓ ~ O(100), the two-halo regime, so pSZ carries
+6. Sensitivity (arXiv:2607.16071) peaks at ℓ ~ O(100), the two-halo regime, so pSZ carries
    little gas-profile information and is less suppressed by feedback than
    kSZ (Sect. 5.4). CIB 353 GHz gives ~4 times lower noise than unWISE;
    ACT 220 GHz ~10 times higher noise, a systematics check (Sect. 6).
@@ -189,21 +189,21 @@ Krywonos 2026 [src: arXiv:2607.16071, Sects. 3, 4.1, 5.4, 5.5, 6]:
 <!-- key: step-6-rotational-ksz -->
 
 Yang 2026 [src: arXiv:2603.14494, Sects. 3.2, 3.3, 5.1, 5.3]:
-1. Groups above a mass threshold in SDSS DR7 (2966 of 291,659) matched to
+1. Groups (arXiv:2603.14494, Sect. 3.3) above a mass threshold in SDSS DR7 (2966 of 291,659) matched to
    haloes of a constrained simulation (2472 matched).
-2. Axis: satellites with M_* < 10^10.5 h⁻¹M⊙ within r_vir and Δz = 0.004
+2. Axis (arXiv:2603.14494, Sects. 3.2, 3.3): satellites with M_* < 10^10.5 h⁻¹M⊙ within r_vir and Δz = 0.004
    (~12 h⁻¹Mpc); for each trial angle a sinusoidal rotation curve is fitted
    to binned velocities; the angle maximising the amplitude defines the
    axis (method of Manolopoulou and Plionis 2017).
-3. Selection fixed in advance: χ²/dof < 1, χ²_r/dof > 1 against a randomised
+3. Selection (arXiv:2603.14494, Sect. 3.3) fixed in advance: χ²/dof < 1, χ²_r/dof > 1 against a randomised
    curve, χ²/χ²_r < 0.4; 134 groups, mean log M_vir 14.19 (data), ⟨z⟩ = 0.066.
    The criteria are kept "unchanged" to avoid a look-elsewhere effect.
-4. Planck map high-passed above 110′ (ℓ ~ 100); 4° × 4° patches rescaled by
+4. Planck map (arXiv:2603.14494, Sects. 5.1, 5.3) high-passed above 110′ (ℓ ~ 100); 4° × 4° patches rescaled by
    r_vir, rotated to the axis, weighted by N_sat v_rot; the Planck common
    mask applied.
-5. Statistic: mean temperature difference between right and left
+5. Statistic (arXiv:2603.14494, Sect. 5.3.2): mean temperature difference between right and left
    half-disks of radius r_vir, ΔT = 25.5 μK (data), 12.8 μK (simulation).
-6. Noise: 10,000 random rotations of the group positions on the real map
+6. Noise (arXiv:2603.14494, Sect. 5.3.1 for the noise level Δ_T and the 10,000 Gaussian maps; Sect. 5.3.2; Fig. 5 caption): 10,000 random rotations of the group positions on the real map
    (σ = 10.7 μK) or 10,000 Gaussian CMB + noise maps with Δ_T = 3.1 μK-arcmin
    (σ = 9.3 μK); 2.3σ or 2.7σ, the authors quoting the conservative 2.3σ.
 

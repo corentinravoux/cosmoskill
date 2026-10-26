@@ -23,6 +23,8 @@ Collaboration 2025, arXiv:2503.14738 [src: Table 6]. `Delta chi2_MAP` is
 `w0` in [−3, 1], `wa` in [−3, 2], with `w0 + wa < 0` (arXiv:2404.03002)
 [src: Table 2]. How each number was computed: `systematics.md` Section 14.1.
 
+From arXiv:2503.14738, Sect. VII.1 (Eqs. 23–28) and Table 6:
+
 | Data combination | `w0` | `wa` | `Delta chi2_MAP` | Significance | `Delta DIC` | Flag |
 |---|---|---|---|---|---|---|
 | DESI BAO alone | −0.48 (+0.35/−0.17) | < −1.34 (68% limit) | −4.7 | 1.7σ | −0.8 | [src] |
@@ -38,38 +40,42 @@ Collaboration 2025, arXiv:2503.14738 [src: Table 6]. `Delta chi2_MAP` is
 | DESI + CMB + Union3 | −0.667 ± 0.088 | −1.09 (+0.31/−0.27) | −17.4 | 3.8σ | −13.5 | [src] |
 | DESI + CMB + DESY5 | −0.752 ± 0.057 | −0.86 (+0.23/−0.20) | −21.0 | 4.2σ | −17.2 | [src] |
 
-Reading notes, all [src] from the same paper (Sections 7.1 and 7.2 unless the
-abstract is named):
+Reading notes, all [src] from arXiv:2503.14738, Sects. VII.1 and VII.2
+unless the abstract is named:
 
 - The DESI-alone posterior is cut off by the priors, so the marginalised mean
-  and limit are prior-dependent; `wa = 0` is not excluded at 95%.
+  and limit are prior-dependent; `wa = 0` is not excluded at 95%
+  (arXiv:2503.14738, Sect. VII.1).
 - The DESI + CMB-priors posterior is still bounded by the `wa > −3` prior at
   the lower end.
 - Going from the three compressed CMB priors to the full CMB changes `Delta
   chi2` from −8.0 to −12.5; the paper attributes the change primarily to CMB
-  lensing, which the compressed priors do not capture.
+  lensing, which the compressed priors do not capture (arXiv:2503.14738,
+  Sect. VII.1).
 - Pivot: for DESI + CMB, `z_p = 0.53` and `w_p = −1.024 ± 0.043`; for DESI +
-  CMB + DESY5, `z_p = 0.31` and `w_p = −0.954 ± 0.024`. At the best-measured
-  redshift the equation of state is within about 2σ of −1; the signal is in
-  the slope.
+  CMB + DESY5, `z_p = 0.31` and `w_p = −0.954 ± 0.024`, "a mild preference
+  for a deviation from w = −1 at the best-measured redshift" (arXiv:2503.14738,
+  Sect. VII.1); the signal is in the slope.
 - In all cases the favoured `w(z)` has `w > −1` at low redshift and crosses to
   `w < −1` above `z ≃ 0.4`.
 - ΛCDM comparison in the same paper: DESI BAO prefers `Omega_m = 0.297`
   against 0.317 for the Planck model; the joint fit gives 0.303. DESI
   distances lie 1–2% below the Planck ΛCDM prediction at `z ≤ 1`. The DESY5
   low-redshift (`z < 0.1`) supernovae sit at `mu − mu_fid ≈ 0.03` mag,
-  Pantheon+ at only 0.01 mag.
+  Pantheon+ at only 0.01 mag (arXiv:2503.14738, Sect. VII.2).
 - The best constant-`w` model for DESI + CMB + DESY5 has `w = −0.971`,
   `Omega_m = 0.310` and does only slightly better than Planck ΛCDM: a constant
   `w` does not absorb the signal.
 - `w0waCDM` gives a lower `H0` than Planck ΛCDM; it does not help the Hubble
   tension.
-- The BAO-versus-CMB tension in ΛCDM is 2.3σ (abstract).
+- The BAO-versus-CMB tension in ΛCDM is 2.3σ (arXiv:2503.14738, abstract).
 - Neutrinos: `Sum m_nu < 0.064 eV` (95%, ΛCDM), `< 0.16 eV` in `w0wa`
-  (abstract).
+  (arXiv:2503.14738, abstract).
 
 ### 1.2 DESI DR1 BAO (April 2024) — superseded by DR2
 <!-- key: desi-dr1-bao-april-2024-superseded-by-dr2 -->
+
+From DESI Collaboration 2024, arXiv:2404.03002, abstract:
 
 | Data combination | Result | Flag |
 |---|---|---|
@@ -90,6 +96,8 @@ Lodha et al. 2025, arXiv:2503.14743, Table 3 of `Delta chi2_MAP` and `Delta DIC`
 values [src: Table 3; Sect. VI.1]. Entries are `Delta DIC (Delta chi2)` relative to ΛCDM for DESI +
 CMB + the named supernova sample. Negative favours the extended model.
 
+From arXiv:2503.14743, Table 3:
+
 | Dark-energy class | + Pantheon+ | + Union3 | + DESY5 |
 |---|---|---|---|
 | Thawing, calibrated | +0.4 (−1.6) | −0.6 (−2.5) | −5.8 (−7.1) |
@@ -100,7 +108,7 @@ CMB + the named supernova sample. Negative favours the extended model.
 
 - The scale the paper uses for nested models: a DIC decrease of at least 2 is
   "not insignificant", up to 5 "positive", up to 10 "strong", beyond 10
-  "decisive" [src].
+  "decisive" (arXiv:2503.14743, Sect. VI.4) [src].
 - The mirage class matches the `w0wa` fit quality because the mirage direction
   lies along the `w0`–`wa` degeneracy [src].
 - Thawing models that respect `w ≥ −1` improve on ΛCDM by `3 ≲ −Delta chi2 ≲
@@ -111,12 +119,12 @@ CMB + the named supernova sample. Negative favours the extended model.
   clear preference for models that feature a phantom crossing; although
   alternatives lacking this feature are disfavored, they cannot yet be ruled
   out"; the evidence is described as robust "particularly at low redshift (z ≲
-  0.3)".
+  0.3)" (arXiv:2503.14743, abstract).
 
 ## 2. The `w0`–`wa` evidence after the 2025–2026 supernova revisions
 <!-- key: the-w0-wa-evidence-after-the-2025-2026 -->
 
-The 4.2σ of Section 1.1 is superseded. The supernova side is treated in depth
+The 4.2σ of Section 1.1 (arXiv:2503.14738, Table 6) is superseded. The supernova side is treated in depth
 in `cosmo-supernovae`; the rows below are the numbers this skill needs.
 
 | Data combination | `w0` | `wa` | Significance | Source | Flag |
@@ -125,23 +133,23 @@ in `cosmo-supernovae`; the rows below are the numbers this skill needs.
 | DESI DR2 + Planck + Union3.1 | −0.719 ± 0.084 | −0.95 (+0.29/−0.26) | 3.4σ (was 3.8σ) | Hoyt et al. 2026, arXiv:2601.19424 | [src: abstract] |
 | DESI DR2 + Planck + DES-Dovekie, as recomputed by Hoyt et al. | — | — | 3.4σ (was 4.2σ) | arXiv:2601.19424 | [src: abstract] |
 | DESI DR2 + Planck + Pantheon+ with corrected host masses | — | — | 3.2σ (was 2.8σ) | arXiv:2601.19424 | [src: abstract] |
-| Unite (2884 SNe) + CMB + DES and DESI BAO | −0.861 (+0.044/−0.042) | −0.60 (+0.17/−0.19) | 3.3σ (MAP), 3.1σ (maximum likelihood); Bayesian evidence "only weak" | Camilleri et al. 2026, arXiv:2609.05053 | [src] |
+| Unite (2884 SNe) + CMB + DES and DESI BAO | −0.861 (+0.044/−0.042) | −0.60 (+0.17/−0.19) | 3.3σ (MAP), 3.1σ (maximum likelihood); Bayesian evidence "only weak" | Camilleri et al. 2026, arXiv:2609.05053 | [src: abstract] |
 | DES Y6 alone: SN + BAO + 3×2pt | −0.84 ± 0.10 | −0.44 (+0.60/−0.55) | 2.2σ | DES Collaboration 2026, arXiv:2605.27221 | [src: abstract] |
 | DES Y6 + DESI DR2 BAO (low redshift only, no CMB) | −0.84 (+0.06/−0.07) | −0.53 (+0.33/−0.28) | 2.3σ | arXiv:2605.27221 | [src: abstract] |
 | DES Y6 + DESI DR2 BAO + primary CMB | −0.82 ± 0.05 | −0.63 (+0.21/−0.18) | 3.0σ | arXiv:2605.27221 | [src: abstract] |
-| Same without supernovae | — | — | 2.6σ | arXiv:2605.27221 | [src] |
+| Same without supernovae | — | — | 2.6σ | arXiv:2605.27221 | [src: abstract] |
 
 - DES-Dovekie is quoted at 3.2σ by its own paper (arXiv:2511.07517) and at
   3.4σ by the Union3.1 paper (arXiv:2601.19424), which reruns the combination
-  "exactly as done by DESI DR2". Both are in print; name the paper when
-  quoting.
+  "exactly as done by DESI DR2" [src: abstract of each]. Both are in print;
+  name the paper when quoting.
 - Unite also gives `Omega_m = 0.305 ± 0.004` in `w0wa` and a dark-energy
   figure of merit of 315, a ~30% smaller `w0`–`wa` area than the DES Y6 + DESI
-  DR2 + CMB combination [src].
+  DR2 + CMB combination (arXiv:2609.05053) [src: abstract].
 - In arXiv:2605.27221, adding 3×2pt to SN + DESI BAO + CMB leaves the
   significance essentially unchanged (3.2σ to 3.0σ) and raises the figure of
   merit by ~10%; dropping any one probe gives 2.3–3.2σ, always with `w0 > −1`,
-  `wa < 0` [src].
+  `wa < 0` [src: abstract].
 - The convergence is the result: three supernova samples that gave 2.8 / 3.8 /
   4.2σ now give 3.2 / 3.4 / 3.4σ (arXiv:2601.19424) [src: abstract].
 
@@ -167,7 +175,7 @@ in `cosmo-supernovae`; the rows below are the numbers this skill needs.
 |---|---|---|
 | Method | reruns the DESI DR2 baseline exactly (Commander, simall, CamSpec NPIPE, Planck + ACT DR6 lensing, DESI DR2 BAO, Cobaya, `R − 1 < 0.01`), so only the SNe change; σ from `Delta chi2` as in DESI | [src: Sect. VII] |
 | `Delta chi2` (σ) | Union3.1 −14.4 (3.4); UNITY1.8 −14.0 (3.3); Pantheon+ corrected −13.2 (3.2); DES-Dovekie −14.3 (3.4); originals −17.4 / −10.7 / −21.0 | [src: Table 4] |
-| SN-only `Omega_m` (flat ΛCDM) | Union3.1 0.344 ± 0.026, Pantheon+ corrected 0.342 (+0.017/−0.020), Dovekie 0.330 ± 0.015; the spread halved | [src: Table 4] |
+| SN-only `Omega_m` (flat ΛCDM) | Union3.1 0.344 ± 0.026 (0.344 (+0.026/−0.025) in the abstract and Sect. VI.1), Pantheon+ corrected 0.342 (+0.017/−0.020), Dovekie 0.330 ± 0.015; the spread halved | [src: Table 4] |
 | Why Dovekie reads 3.4σ here, 3.2σ in its own paper | different CMB data; with its own CMB choices Popovic et al. found 4.0σ for the original DES-SN5YR against DESI's 4.2σ | [src: Table 4, note b] |
 | Overlap | Union and Pantheon+ share over 75% of their SNe | [src: Sect. VII] |
 
@@ -196,12 +204,12 @@ in `cosmo-supernovae`; the rows below are the numbers this skill needs.
 
 | Data | Model | Result | Source | Flag |
 |---|---|---|---|---|
-| DESI DR1 full shape (ShapeFit) + DR2 BAO, BBN and wide `n_s` prior, no CMB | `w0wa` | `wa = −1.52 ± 0.77`; discrepancy with ΛCDM 1.4σ; `w0` printed as "0.49 ± 0.25" in the abstract (the sibling `cosmo-galaxy-clustering` reports that the table gives −0.49) | Forero-Sánchez et al. 2026, arXiv:2602.18761 | [src] for the abstract; [sec] for the sign correction |
+| DESI DR1 full shape (ShapeFit) + DR2 BAO, BBN and wide `n_s` prior, no CMB | `w0wa` | `wa = −1.52 ± 0.77`; discrepancy with ΛCDM 1.4σ; `w0 = −0.49 ± 0.25` in the abstract of the HTML rendering read on 2026-10-25 (an earlier reading of the abstract recorded "0.49 ± 0.25"; the sibling `cosmo-galaxy-clustering` reports that the table gives −0.49) | Forero-Sánchez et al. 2026, arXiv:2602.18761 | [src] for the abstract; [sec] for the sign correction |
 | Same data | ΛCDM | `Omega_m = 0.3035 ± 0.0085`, `h = 0.6876 ± 0.0059`, `sigma8 = 0.822 ± 0.034` | arXiv:2602.18761 | [src] |
 | DESI DR1 P + LRG bispectrum + DR2 BAO, DESI only | `w0wa` | consistent with a cosmological constant within 1σ | Forero-Sánchez et al. 2026, arXiv:2606.23936 | [src] |
-| + CMB | `w0wa` | 2.8σ | arXiv:2606.23936 | [src] |
-| + DES-Dovekie only | `w0wa` | 1.6σ | arXiv:2606.23936 | [src] |
-| + CMB + DES-Dovekie | `w0wa` | 3.1σ, "driven primarily by the CMB" | arXiv:2606.23936 | [src] |
+| + CMB | `w0wa` | 2.8σ | arXiv:2606.23936 | [src: abstract] |
+| + DES-Dovekie only | `w0wa` | 1.6σ | arXiv:2606.23936 | [src: abstract] |
+| + CMB + DES-Dovekie | `w0wa` | 3.1σ, "driven primarily by the CMB" | arXiv:2606.23936 | [src: abstract] |
 | DESI only, P + B | μ0 | `mu0 = 0.12 ± 0.49` | arXiv:2606.23936 | [src] |
 
 The bispectrum "consistently weakens evidence for time-varying dark energy
@@ -216,6 +224,8 @@ wa < 0`, τ in [0.01, 0.8]; CAMB, with `H0` sampled instead of `theta_MC`);
 `ln Z = <ln L>_P − <ln(P/pi)>_P` (Lodha et al. 2025, arXiv:2503.14743) [src:
 App. A, Eq. 21, Table 4; Sect. II, Table 1]. Positive favours `w0wa`. DR1
 values were recomputed with the DR2 priors and pipeline [src: App. A].
+
+From arXiv:2503.14743, App. A, Table 4:
 
 | DESI BAO + CMB + | Pantheon+ | Union3 | DESY5 |
 |---|---|---|---|
@@ -234,16 +244,18 @@ share.
 
 - The paper reads these on the Jeffreys scale as "almost a strong preference
   (≤ 5)" for DESY5, "moderate (≤ 2.5)" for Union3 with DR2, and
-  "inconclusive", on the side of Λ, for Pantheon+ [src].
-- With Pantheon+ the frequentist test gives 2.8σ for `w0wa` while the evidence
-  mildly favours Λ: the same data, two opposite headlines.
+  "inconclusive", on the side of Λ, for Pantheon+ (arXiv:2503.14743)
+  [src: App. A].
+- With Pantheon+ the frequentist test gives 2.8σ for `w0wa` (arXiv:2503.14738,
+  Table 6) while the evidence mildly favours Λ (arXiv:2503.14743, Table 4):
+  the same data, two opposite headlines.
 - To make Λ favoured in the most extreme case (DR2 + CMB + DESY5), the prior
   range on both `w` parameters would have to be widened by more than a factor
-  of 10 each, more than 100 in volume [src].
+  of 10 each, more than 100 in volume (arXiv:2503.14743) [src: App. A].
 - After the supernova revisions: DES-Dovekie + CMB + DESI DR2 gives odds of
   "approximately 5:1", which the authors call "only a weak preference"
-  (arXiv:2511.07517) [src]; that is `ln B ≈ 1.6` [der: natural logarithm of
-  5]. Unite: "only weak preference" (arXiv:2609.05053) [src].
+  (arXiv:2511.07517) [src: abstract]. Unite: "only weak preference"
+  (arXiv:2609.05053) [src: abstract].
 - Gu et al. 2025, arXiv:2504.06118 (DESI DR2, shape-function and
   non-parametric reconstructions with a Horndeski-motivated correlation
   prior): "moderate support" for departures from ΛCDM when several degrees of
@@ -276,7 +288,7 @@ share.
   and bispectrum likelihood to DESI BAO + Planck + Pantheon+ makes the
   preference for dynamical dark energy "disappear"; simulation-based priors
   improve the figure of merit by ≈ 20% and shrink the posterior around Λ
-  [src].
+  [src: abstract].
 - Lu and Simon 2025, arXiv:2511.10616, find the opposite sign of effect with a
   different data vector: BOSS power spectrum and bispectrum plus DESI LRG ×
   Planck PR4 lensing and temperature angular spectra, combined with Planck
@@ -326,10 +338,12 @@ Omega_DE(a)/Omega_DE,0` and the same for Σ (DES and DESI convention; see
   dark-energy sound speed, CMB + DESI DR2 BAO + Pantheon+ show deviations from
   GR at over 95% CL correlated with the dynamical-dark-energy preference; "the
   inclusion of cosmic shear and CMB lensing data significantly shifts the
-  constraints towards GR" [src].
+  constraints towards GR" [src: abstract].
 
 ### Growth index
 <!-- key: growth-index -->
+
+From arXiv:2302.01331, abstract (0.55 is the value "predicted by general relativity in a flat ΛCDM cosmology"):
 
 | `gamma` | Data | Significance against 0.55 | Source | Flag |
 |---|---|---|---|---|
@@ -358,9 +372,9 @@ verified" in `open-questions.md`).
 | `s_0` (power-law index) | 0.996 (+0.54/−0.20) | same | arXiv:2411.12026 | [src: abstract] |
 | `c_M` (α-basis, no braiding) | < 1.14 | DESI DR1 + external | arXiv:2411.12026 | [src: abstract] |
 | `c_B` (α-basis, braiding free) | "mild yet consistent indication for c_B > 0" | DESI DR1 + external | arXiv:2411.12026 | [src] |
-| `alpha_B`, `alpha_M` | compatible with GR at ~2σ; errors reduced by ~40% and ~50% | BOSS P + B, DESI LRG × Planck PR4, Planck PR4, DESI DR2 BAO, DES Y5 | arXiv:2511.10616 | [src] |
+| `alpha_B`, `alpha_M` | compatible with GR at ~2σ; errors reduced by ~40% and ~50% | BOSS P + B, DESI LRG × Planck PR4, Planck PR4, DESI DR2 BAO, DES Y5 | arXiv:2511.10616 | [src: abstract] |
 | Gravitational-wave speed | `abs(c_g/c − 1) ≤ 5 × 10^-16` | GW170817 + GRB 170817A | Ezquiaga and Zumalacárregui 2017, arXiv:1710.05901 | [src: abstract] |
-| Gravitational-wave speed | deviations "smaller than a few × 10^-15" | same event | Creminelli and Vernizzi 2017, arXiv:1710.05877 | [src] |
+| Gravitational-wave speed | deviations "smaller than a few × 10^-15" | same event | Creminelli and Vernizzi 2017, arXiv:1710.05877 | [src: abstract] |
 | `G_cosmo/G_N` ("cosmic glitch") | 0.9920 ± 0.0025 (3.3σ) | Planck + ACT + SPT + DESI DR2 | arXiv:2609.40176 | [src: abstract] |
 
 The chance probability of the GW170817–GRB 170817A coincidence is `5.0 ×
@@ -371,17 +385,18 @@ The chance probability of the GW170817–GRB 170817A coincidence is `5.0 ×
 
 | Model or quantity | Bound | Probe | Source | Flag |
 |---|---|---|---|---|
-| Hu–Sawicki `f(R)`, `n = 1` | `f_R0 < 1.4 × 10^-8` | galaxy morphology (gas–star offsets, disk warps) | Desmond and Ferreira 2020, arXiv:2009.08743 | [src] |
-| Screened fifth force, strength | `Delta G/G_N < 0.8` at `lambda_C = 0.3 Mpc` to `< 3 × 10^-5` at 8 Mpc (1σ) | same | arXiv:2009.08743 | [src] |
+| Hu–Sawicki `f(R)`, `n = 1` | `f_R0 < 1.4 × 10^-8` | galaxy morphology (gas–star offsets, disk warps) | Desmond and Ferreira 2020, arXiv:2009.08743 | [src: abstract; Sect. V] |
+| Screened fifth force, strength | `Delta G/G_N < 0.8` at `lambda_C = 0.3 Mpc` to `< 3 × 10^-5` at 8 Mpc (1σ) | same | arXiv:2009.08743 | [src: abstract] |
 | Hu–Sawicki `f(R)`, `n = 1` | `log10 abs(f_R0) < −4.79` (95.4%); the arXiv abstract prints "4.79" without the sign | X-ray cluster abundance + CMB + lensing | Cataneo et al. 2014, arXiv:1412.0133 | [src] |
-| Hu–Sawicki `f(R)` | `log10 abs(f_R0) < −4.59` (95%); range `lambda < 17.81 Mpc`; mediator mass `m_phi > 3.60 × 10^-31 eV` | DESI DR1 full-shape power spectrum | Gonzalez et al. 2026, arXiv:2604.26915 | [src] |
-| `f(R)` as a chameleon sub-case | `abs(f_R) ≲ (2–5) × 10^-5` (95%) for NFW and Hernquist profiles | lensing + kinematics of nine CLASH clusters | Pizzuti et al. 2026, arXiv:2604.23631 | [src] |
+| Hu–Sawicki `f(R)` | `log10 abs(f_R0) < −4.59` (95%); range `lambda < 17.81 Mpc`; mediator mass `m_phi > 3.60 × 10^-31 eV` | DESI DR1 full-shape power spectrum | Gonzalez et al. 2026, arXiv:2604.26915 | [src: abstract] |
+| `f(R)` as a chameleon sub-case | `abs(f_R) ≲ (2–5) × 10^-5` (95%) for NFW and Hernquist profiles | lensing + kinematics of nine CLASH clusters | Pizzuti et al. 2026, arXiv:2604.23631 | [src: abstract] |
 | Hu–Sawicki `f(R)` | unconstrained | KiDS-1000 cosmic shear, fully non-linear | arXiv:2010.16416 | [src] |
 | Screened fifth force in the distance ladder | consistent with zero; `H0 = 73.1 ± 1.0 km/s/Mpc`, tension retained at > 5σ | SH0ES Cepheid–SN ladder with environment-dependent screening | Högås et al. 2025, arXiv:2512.14814 | [src] |
 
-The cosmological-scale bounds (10^-5) and the galaxy-scale bound (10^-8)
-differ by three orders of magnitude and probe different regimes; quote the one
-that matches the claim.
+The cosmological-scale and cluster bounds (arXiv:2604.26915, arXiv:1412.0133,
+arXiv:2604.23631) and the galaxy-scale bound (arXiv:2009.08743) differ by
+orders of magnitude and probe different regimes [der]; quote the one that
+matches the claim.
 
 ## 8. `E_G` measurements
 <!-- key: eg-measurements -->
@@ -398,10 +413,11 @@ that matches the claim.
 | 0.503 ± 0.054 | 0.38 | KiDS-1000 × BOSS/2dFLenS, no Planck prior | consistent | Zhang et al. 2026, arXiv:2604.24631 | [src: abstract] |
 | 0.444 ± 0.054 | 0.61 | same | consistent | arXiv:2604.24631 | [src: abstract] |
 
-- The Pullen et al. deviation appeared only above 80 Mpc/h [src]; the
-  reanalysis by Wenzl et al. with matched effective redshifts and a calibrated
-  estimator finds agreement and scale independence, with systematic budgets of
-  2% (CMASS) and 3% (LOWZ) [src].
+- The Pullen et al. deviation appeared only above 80 Mpc/h (arXiv:1511.04457)
+  [src: abstract]; the reanalysis by Wenzl et al. with matched effective
+  redshifts and a calibrated estimator finds agreement and scale independence,
+  with systematic budgets of 2% (CMASS) and 3% (LOWZ) (arXiv:2401.12971)
+  [src: abstract].
 - arXiv:2604.24631 also reports the Weyl-potential amplitude `J` for CMASS
   1.50σ below the GR prediction with Planck 2018 priors, LOWZ consistent
   [src: abstract].
@@ -416,32 +432,32 @@ that matches the claim.
 |---|---|---|---|---|---|
 | Apr 2024 | DESI DR1 BAO | 2.5σ | 3.5σ | 3.9σ (DES-SN5YR) | arXiv:2404.03002 [src: abstract] |
 | Mar 2025 | DESI DR2 BAO | 2.8σ | 3.8σ | 4.2σ (DES-SN5YR) | arXiv:2503.14738 [src: Sect. VII] |
-| Nov 2025 | DES-Dovekie recalibration | — | — | 3.2σ | arXiv:2511.07517 [src] |
+| Nov 2025 | DES-Dovekie recalibration | — | — | 3.2σ | arXiv:2511.07517 [src: abstract] |
 | Jan 2026 | Union3.1 and corrected Pantheon+ host masses | 3.2σ | 3.4σ | 3.4σ (Dovekie) | arXiv:2601.19424 [src: abstract] |
-| May 2026 | DES Y6 SN + BAO + 3×2pt + DESI DR2 + CMB | — | — | 3.0σ | arXiv:2605.27221 [src] |
-| Jun 2026 | DESI DR1 P + B + DR2 BAO + CMB + Dovekie | — | — | 3.1σ | arXiv:2606.23936 [src] |
-| Sep 2026 | Unite (Pantheon+ ∪ DES) | 3.3σ (single combined sample) | — | — | arXiv:2609.05053 [src] |
+| May 2026 | DES Y6 SN + BAO + 3×2pt + DESI DR2 + CMB | — | — | 3.0σ | arXiv:2605.27221 [src: abstract] |
+| Jun 2026 | DESI DR1 P + B + DR2 BAO + CMB + Dovekie | — | — | 3.1σ | arXiv:2606.23936 [src: abstract] |
+| Sep 2026 | Unite (Pantheon+ ∪ DES) | 3.3σ (single combined sample) | — | — | arXiv:2609.05053 [src: abstract] |
 
 Superseded at the snapshot: every DR1 significance; the DR2 values 2.8 / 3.8 /
-4.2σ; `Omega_m` and distances of DES-SN5YR before Dovekie; Union3 (by
-Union3.1). Still current: the DR2 BAO-only (1.7σ) and BAO + CMB (3.1σ) values,
-which do not involve supernovae.
+4.2σ (arXiv:2503.14738, Table 6); `Omega_m` and distances of DES-SN5YR before Dovekie; Union3 (by
+Union3.1). Still current: the DR2 BAO-only (1.7σ) and BAO + CMB (3.1σ) values
+(arXiv:2503.14738, Table 6), which do not involve supernovae.
 
 ### 9.2 Without supernovae or without CMB
 <!-- key: without-supernovae-or-without-cmb -->
 
 | Combination | DR1 | DR2 | Source |
 |---|---|---|---|
-| DESI + CMB | 2.6σ | 3.1σ | arXiv:2404.03002, arXiv:2503.14738 [src] |
-| DESI alone | — | 1.7σ | arXiv:2503.14738 [src] |
-| DESI DR1 FS + DR2 BAO, no CMB | — | 1.4σ | arXiv:2602.18761 [src] |
-| DES Y6 all probes + DESI DR2 BAO, no CMB | — | 2.3σ | arXiv:2605.27221 [src] |
+| DESI + CMB | 2.6σ | 3.1σ | arXiv:2404.03002 [src: abstract], arXiv:2503.14738 [src: Table 6] |
+| DESI alone | — | 1.7σ | arXiv:2503.14738 [src: Table 6] |
+| DESI DR1 FS + DR2 BAO, no CMB | — | 1.4σ | arXiv:2602.18761 [src: abstract] |
+| DES Y6 all probes + DESI DR2 BAO, no CMB | — | 2.3σ | arXiv:2605.27221 [src: abstract] |
 
 ### 9.3 Modified gravity
 <!-- key: modified-gravity -->
 
 - `E_G` at CMASS: 0.243 ± 0.060 (2015, 2.6σ low) → 0.36 (+0.06/−0.05) (2024,
-  consistent) (arXiv:1511.04457, arXiv:2401.12971) [src].
+  consistent) (arXiv:1511.04457, arXiv:2401.12971) [src: abstract of each].
 - Planck Σ0: in tension with PR3, consistent with the PR4 likelihoods
   (arXiv:2411.12026) [src].
 - Before the direct detection of the gravitational-wave speed, quartic and

@@ -37,7 +37,6 @@ z_* ≈ 1090 [src] (DESI Collaboration 2024, arXiv:2404.03002, Sect. 2.1). For
 standard early-time physics DESI uses the approximation
 
     r_d = 147.05 (ω_m / 0.1432)^-0.23 (N_eff / 3.04)^-0.1 (ω_b / 0.02236)^-0.13 Mpc
-
 [src] (arXiv:2404.03002, Sect. 2.1, with ω_m = Ω_m h² and ω_b = Ω_b h²). The
 classical fitting formulae for z_d and the transfer function are those of
 Eisenstein & Hu 1998, arXiv:astro-ph/9709112.
@@ -125,9 +124,10 @@ proportional to f_NL b_φ, and b_φ is not measured by the two-point function:
 the common assumption is b_φ = 2 δ_c (b_1 − p), with p = 1 for the universal
 mass function and p = 1.6 for a recent-merger population, the usual choice
 for quasars [src] (Barreira 2022, arXiv:2205.05673; Chaussidon et al. 2024,
-arXiv:2411.17623; Brown et al. 2026, arXiv:2606.24651). Depending on the
-assumed b_φ(b_1) relation, the same BOSS data give σ(f_NL) between 16 and 226
-[src] (arXiv:2205.05673). Detail belongs to `cosmo-inflation-primordial`.
+arXiv:2411.17623, Sect. 2; Brown et al. 2026, arXiv:2606.24651). Depending on
+the assumed b_φ(b_1) relation, the strongest bound from the same BOSS data is
+f_NL = 16 ± 16 and the loosest f_NL = 230 ± 226 (1σ) (arXiv:2205.05673)
+[src: abstract]. Detail belongs to `cosmo-inflation-primordial`.
 
 ## 2. Estimators
 <!-- key: estimators -->
@@ -145,7 +145,7 @@ randoms S enter, ξ = (DD − 2DS + SS) / RR (Padmanabhan et al. 2012,
 arXiv:1202.0090). DESI measures ξ(s, μ) with `pycorr`, a wrapper around a
 modified Corrfunc pair counter, in bins of 4 h⁻¹ Mpc in s and 200 bins in μ
 over [−1, 1], then projects onto Legendre multipoles; the BAO fit uses the
-monopole and quadrupole [src] (arXiv:2503.14738).
+monopole and quadrupole (arXiv:2503.14738) [src: Sect. III.1].
 
 ### 2.2 Fourier space
 <!-- key: fourier-space -->
@@ -234,8 +234,8 @@ arXiv:2605.03446).
 
 Two developments of 2026: explicit field-level inference improves the BAO
 parameters of DESI-like LRG mocks by 26% and a neural augmentation of standard
-reconstruction by 35% relative to standard reconstruction [src] (Bayer et al.
-2026, arXiv:2603.15732, mocks only); and overlapping tracers are merged into
+reconstruction by 35% relative to standard reconstruction (Bayer et al.
+2026, arXiv:2603.15732, mocks only) [src: abstract]; and overlapping tracers are merged into
 one bias-weighted catalogue before reconstruction (Sanders et al. 2026,
 arXiv:2608.27830).
 
@@ -244,7 +244,7 @@ arXiv:2608.27830).
 
 | Model class | What is fitted | Range of validity as used | Reference |
 |---|---|---|---|
-| BAO template fit | α_iso, α_AP on a post-reconstruction ξ_0, ξ_2 with a spline broadband | s > s_min, with s_min = 60 h⁻¹ Mpc in DR2 and 50 in DR1 [src] | Chen et al. 2024, arXiv:2402.14070; arXiv:2503.14738 |
+| BAO template fit | α_iso, α_AP on a post-reconstruction ξ_0, ξ_2 with a spline broadband | s > s_min, with s_min = 60 h⁻¹ Mpc in DR2 and 50 in DR1 [src: arXiv:2503.14742, Sects. IV.3 and V.1] | Chen et al. 2024, arXiv:2402.14070; arXiv:2503.14738 |
 | Standard compression | α_∥, α_⊥, fσ8 with a fixed template | BOSS and eBOSS consensus results | Alam et al. 2017, arXiv:1607.03155 |
 | ShapeFit | α_iso, α_AP, fσ_s8, slope m | same scales as full modelling | Brieden et al. 2021, arXiv:2106.07641 |
 | Full modelling (EFT) | cosmological parameters directly, one-loop EFT with bias, counterterms, stochastic terms | DESI DR1: 0.02 < k < 0.20 h Mpc⁻¹, ℓ = 0, 2 [src: Sect. 4.7] | arXiv:2411.12021 |
@@ -259,14 +259,15 @@ arXiv:2608.27830).
   s(k) = 0 for RecSym. C = (b_1 + f μ² [1 − s(k)])² exp[−k²(μ²Σ_∥² +
   (1 − μ²)Σ_⊥²)/2] (Eq. 10).
 - Broadband D_ℓ(k): cubic-spline basis of width Δ = 2π/r_d ≈ 0.06 h Mpc⁻¹
-  (Eq. 11), replacing the polynomials of SDSS analyses; in ξ, the transformed
+  (arXiv:2404.03000, Sect. 4.3.1, Eq. 11), replacing the polynomials of SDSS analyses; in ξ, the transformed
   spline terms plus b_ℓ,0 + b_ℓ,2 (s k_min/2π)² (Eqs. 14–16).
 - Priors: α_iso, α_AP flat in [0.8, 1.2]; Gaussian on Σ_⊥ (σ = 1), Σ_∥ (σ = 2)
   and Σ_s = 2 ± 2 h⁻¹ Mpc; post-reconstruction centres Σ_⊥ = 3.0 and
-  Σ_∥ = 6.0 (8.0 for BGS); flat b_1 and dβ = f/f_fid ∈ [0.7, 1.3].
+  Σ_∥ = 6.0 (8.0 for BGS); flat b_1 and dβ = f/f_fid ∈ [0.7, 1.3]
+  (arXiv:2404.03000) [src: Tables 5–6].
 - Ranges: 0.02 < k < 0.30 h Mpc⁻¹ in bins of 0.005; 48 < s < 152 h⁻¹ Mpc
-  (bin edges) in bins of 4. Free parameters: 7 (1D) or 13 (2D) in ξ, 15 or 25
-  in P(k).
+  (bin edges) in bins of 4 [src: arXiv:2404.03000, Table 5]. Free
+  parameters: 7 (1D) or 13 (2D) in ξ, 15 or 25 in P(k) [src: arXiv:2404.03000, Sect. 4.4].
 - 2D (ℓ = 0, 2) fits for LRG and ELG2; monopole-only fits for BGS, ELG1 and
   QSO in DR1. Baseline code desilike with emcee; Barry as independent check.
 - DR2 raised s_min to 60 h⁻¹ Mpc after χ² on blinded data exceeded the mock
@@ -292,25 +293,25 @@ Weinberg et al. 2013 (arXiv:1201.2434) for BAO and RSD as dark-energy probes.
   and PyBird (D'Amico et al. 2021, arXiv:2003.07956) as cross-checks;
 - bias basis (1 + b_1) σ8, b_2 σ8², b_s σ8², with b_3 = 0; flat prior on the
   first, wide Gaussian priors on the others; Gaussian priors on counterterms
-  (α_0, α_2) and stochastic terms (SN_0, SN_2). Priors [src: Sect. 4.7,
+  (α_0, α_2) and stochastic terms (SN_0, SN_2). Priors (arXiv:2411.12021) [src: Sect. 4.7,
   Table 4]: (1 + b_1)σ8 ~ U[0, 3]; b_2σ8², b_sσ8² ~ N(0, 5²) (Lagrangian
   basis); α_0, α_2 ~ N(0, 12.5²) h⁻² Mpc², i.e. 50% of the linear signal at
-  k_max; SN_0 ~ N(0, 2²)/n̄_g; SN_2 ~ N(0, 5²) f_sat σ²_1eff/n̄_g. b_s is
+  k_max [src: Sect. 4.5]; SN_0 ~ N(0, 2²)/n̄_g; SN_2 ~ N(0, 5²) f_sat σ²_1eff/n̄_g. b_s is
   kept independent of b_1 (no co-evolution assumed); b_3 is fixed because it
   is degenerate with the counterterms;
-- cosmology priors [src: Table 4]: ω_cdm U[0.01, 0.99], h U[0.2, 1],
+- cosmology priors (arXiv:2411.12021) [src: Table 4]: ω_cdm U[0.01, 0.99], h U[0.2, 1],
   ln(10¹⁰A_s) U[1.61, 3.91], n_s N(0.9649, 0.042²), ω_b N(0.02218,
   0.00055²) (the DESI-alone runs used 0.02198 ± 0.00053); ShapeFit
   parameters α_iso, α_AP U[0.8, 1.2], f/f_fid U[0, 2], m U[−0.8, 0.8];
 - k_min = 0.02 h Mpc⁻¹ is set by trust in the imaging correction; moving
   k_max changes neither peak nor errors, so the mildly non-linear scales add
-  little [src: Sect. 4.7];
+  little (arXiv:2411.12021) [src: Sect. 4.7];
 - sampling: a fourth-order Taylor emulator with NUTS on mocks only; on data,
   no emulator (Cobaya MCMC) or emulator chains re-evaluated with the full
   model at every point [src: Sect. 4.7];
 - monopole and quadrupole only: the hexadecapole was left out because it
   increases prior-weight effects for little gain;
-- covariance from 1000 EZmocks, rescaled (Sect. 4);
+- covariance from 1000 EZmocks, rescaled (arXiv:2411.12021, Sect. 4);
 - cosmological inference by full modelling, not ShapeFit, because projection
   effects bias the interpretation of compressed parameters in weak bins.
 
@@ -344,8 +345,8 @@ only serve for visualization purposes" and that cosmology must use fσ_s8
    respectively [src] (Simon et al. 2023, arXiv:2208.05929).
 2. Bayesian or frequentist. Profile likelihoods are prior-independent; for
    BOSS the posterior mean is shifted from the maximum-likelihood point by up
-   to 1.0σ and frequentist intervals are up to 1.9 times wider [src] (Holm et
-   al. 2023, arXiv:2309.04468). DESI published its own frequentist analysis
+   to 1.0σ and frequentist intervals are up to 1.9 times wider (Holm et
+   al. 2023, arXiv:2309.04468) [src: abstract]. DESI published its own frequentist analysis
    (Morawetz et al. 2025, arXiv:2508.11811).
 3. Informative priors from the galaxy–halo connection: HOD-informed priors
    (Zhang et al. 2025, arXiv:2504.10407) and simulation-based priors
@@ -446,8 +447,8 @@ arXiv:2411.12021, Sect. 2.3].
 A referee expects, before unblinding: fixed scale cuts and priors, a frozen
 systematic budget, mock-recovery tests, and data-split consistency on the
 blinded catalogue. DESI DR2 changed s_min from 50 to 60 h⁻¹ Mpc on blinded
-data after seeing large χ² values, and documented it [src] (arXiv:2503.14738;
-Andrade et al. 2025, arXiv:2503.14742).
+data after seeing large χ² values, and documented it (arXiv:2503.14738;
+Andrade et al. 2025, arXiv:2503.14742) [src: arXiv:2503.14742, Sects. IV.3 and V.1].
 
 ## 6. Public codes and pipelines
 <!-- key: public-codes-and-pipelines -->
@@ -504,10 +505,11 @@ it, at the price of the nuisance parameters discussed in Sect. 3.
 - "DESI" in a DR2-era parameter table means BAO only; "DESI (FS+BAO)" is the
   DR1 full-shape combination. The two are not the same dataset.
 - Sample counts differ between analyses of the same release: DR1 BAO used
-  over 5.7 million redshifts, DR1 full shape over 4.7 million, [src]
-  (arXiv:2404.03000; arXiv:2411.12021). The full-shape fit uses six bins
-  (BGS, LRG1, LRG2, LRG3, ELG2, QSO) and has no 0.8 < z < 1.1 ELG bin [src];
-  that this accounts for the difference in counts is an inference [der].
+  over 5.7 million redshifts (arXiv:2404.03000) [src: abstract], DR1 full
+  shape over 4.7 million (arXiv:2411.12021) [src: abstract]. The full-shape
+  fit uses six bins (BGS, LRG1, LRG2, LRG3, ELG2, QSO): the paper states that
+  it is left with over 4.7 million redshifts after removing the ELG1 bin
+  (arXiv:2411.12021) [src: Sect. 2.2].
 
 ## Not verified
 <!-- key: not-verified -->

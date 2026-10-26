@@ -62,7 +62,7 @@ W^μ(χ) = (5 s_μ − 2) (3/2) Ω_m H_0² (1+z) ∫_z^∞ dz' χ(z) [χ(z') −
 s_μ is the slope of the cumulative number counts at the magnitude limit. The same paper evaluates
 P_gg and P_gm at a single effective redshift per bin,
 z_eff = ∫ dχ z [W^g]²/χ² / ∫ dχ [W^g]²/χ², which it finds accurate to sub-percent for its narrow
-LRG bins; beyond-Limber corrections are dominated by redshift-space distortions at ℓ ≲ 75 [src].
+LRG bins; beyond-Limber corrections are dominated by redshift-space distortions at ℓ ≲ 75 (arXiv:2407.04607, section "From 3D to 2D") [src].
 
 Sizes for the DESI LRG bins: magnification is below 1% of C_ℓ^gg and at most ≃ 10% of C_ℓ^κg, in
 the highest-redshift bin (arXiv:2407.04607) [src: Sect. 4.5]. For broad or high-redshift samples the
@@ -101,7 +101,8 @@ k = 0.6 h/Mpc for haloes of LRG mass [src: Sect. 5.1].
 ### 2.3 What is quoted
 <!-- key: what-is-quoted -->
 
-- S_8 = σ_8(Ω_m/0.3)^0.5, the galaxy-lensing convention.
+- S_8 = σ_8(Ω_m/0.3)^0.5, the galaxy-lensing convention, used for CMB lensing tomography by
+  Krolewski 2021 (arXiv:2105.03421) [src: abstract].
 - S_8^× or S_8^3x2pt = σ_8(Ω_m/0.3)^0.4, the best-constrained combination of the κ–galaxy data
   (arXiv:2407.04606, arXiv:2409.02109) [src: abstract].
 - σ_8, after a BAO prior fixes Ω_m.
@@ -281,7 +282,7 @@ p̂_kSZ(r) = − Σ_{i<j} (ΔT_i − ΔT_j) c_ij / Σ_{i<j} c_ij²,   c_ij = r̂
 V(r,z) = −(2/3) f(z) H(z) r/(1+z) × ξ̄_h(r,z)/[1 + ξ_h(r,z)],   p̂_th = −(T_CMB/c) τ̄ V(r,z)
 ```
 
-ΔT is aperture photometry minus its mean, so the fitted depth is an attenuated τ̄_AP. Bins are
+ΔT (arXiv:2511.23417, Sects. III.2, III.3) is aperture photometry minus its mean, so the fitted depth is an attenuated τ̄_AP. Bins are
 10 Mpc wide from 5 to 145 Mpc plus four wider ones to 355 Mpc; r < 20 Mpc is dropped because
 the linear V fails there; the covariance is a bootstrap with 1000 iterations, the jackknife
 overestimating it.
@@ -462,7 +463,7 @@ arXiv:2401.13040, whose abstract calls the companion result a "first detection")
   normalisation in the covariance [src, section titles]. A cross-covariance between tomographic
   samples that share sky must be included: neglecting it shifted S_8 by 0.3σ in that analysis
   [src, section "Post-unblinding Changes"].
-- Stacking analyses use bootstrap over objects (10,000 resamplings in arXiv:2503.19870) [src].
+- Stacking analyses use bootstrap over objects (10,000 resamplings in arXiv:2503.19870) [src: Sect. IV.2].
   Bootstrap underestimates the velocity-reconstruction noise for dense samples: the fitted noise
   rescalings for DESI LRGs are 1.13 and 1.09 at 90 and 150 GHz, and 1.29 for the cross
   (arXiv:2604.04867, table of LRG fits) [src].
@@ -499,24 +500,26 @@ propagating its error to f_NL [src: Sect. 1 and Sect. 5.4].
 | CosmoBLENDER | halo-model foreground biases to lensing auto, cross and delensing | Baleato Lizancos 2025, arXiv:2507.03859 [src] |
 | Aemulus ν HEFT emulator, velocileptors, CLASS | theory for κ × galaxies | arXiv:2407.04607 [src] |
 | WebSky | extragalactic foreground simulations for bias tests | arXiv:2309.05659 [src] |
-| ACT DR6 lensing maps | κ alm, mask, filter, noise; 400 simulations at NERSC | LAMBDA, `surveys-and-data.md` §2 |
+| ACT DR6 lensing maps | κ alm, mask, filter, noise; simulations at NERSC | LAMBDA, `surveys-and-data.md` §2 |
 | Quaia catalogue and selection function | zenodo.org/records/10403370 | arXiv:2306.17749 [src] |
 
 ## 11. Conventions and where the community is split
 <!-- key: conventions-and-where-the-community-is-split -->
 
-- **Exponent of the amplitude combination**: 0.5, 0.4, 0.25, 0.2 (§2.3, §4). Compare like with
+- **Exponent of the amplitude combination**: 0.5 (arXiv:2105.03421), 0.4 (arXiv:2407.04606,
+  arXiv:2409.02109), 0.25 (arXiv:2304.05203, Sect. I and footnote 2), 0.2 (arXiv:2109.04458)
+  [src: abstract] (Sects. 2.3 and 4). Compare like with
   like or convert with the Ω_m posterior.
 - **Mean or best fit**: the two differed by ~1σ in the first DESI LRG analysis
   (`systematics.md` §6).
 - **Scale cuts or bias model**: linear-only (arXiv:2410.10808) against HEFT to k = 0.6 h/Mpc
   (arXiv:2407.04606); arXiv:2407.04607 reports "excellent agreement" between its HEFT fit and a
   linear-theory fit on a restricted range of scales [src: abstract].
-- **f_NL response p**: 1 or 1.6.
+- **f_NL response p**: 1 or 1.6 (arXiv:2504.20992, arXiv:2512.17865) [src: abstract].
 - **Detection significance**: "S/N" from Δχ² against a best-fit template, "rejection of the null",
   and amplitude over error are three numbers; arXiv:2305.06792 quotes 4.8σ and 5.1σ for the same
   data [src: abstract].
-- **kSZ amplitude names**: τ̄, A_kSZ², A, b_v (§3.2).
+- **kSZ amplitude names**: τ̄, A_kSZ², A, b_v (Sect. 3.2).
 - **"kinetic" and "kinematic"** SZ are the same effect; both spellings appear in titles.
 - **Template amplitudes**: A_ISW, A_κ and b_ML are ratios to a ΛCDM or halo-model template whose
   cosmology and construction must be named; ⟨bP_e⟩ is quoted in meV cm⁻³ (arXiv:2210.08633) [src].

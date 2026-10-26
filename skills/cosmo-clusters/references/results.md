@@ -167,7 +167,7 @@ The tension in one sentence: X-COP gas fractions with the Planck mass calibratio
 | S8 | 0.718 +0.024/−0.021, "clearly inconsistent with other CMB/LSS based cosmology results" | flat ΛCDM, forward model with anisotropic boosts | SDSS redMaPPer abundance + lensing + clustering | Park et al. 2023, arXiv:2112.09059 | [src: abstract] |
 | S8 | 0.816 +0.041/−0.039 | flat ΛCDM, blind, same forward model | SDSS redMaPPer + HSC Y3 lensing | Sunayama et al. 2024, arXiv:2309.13025 | [src: abstract] |
 | S8; Ω_m | 0.864 ± 0.035; 0.265 +0.019/−0.031 | ΛCDM | DES Y3: about 16000 redMaPPer clusters over nearly 5000 deg², cluster-based data vector | DES Collaboration 2025, arXiv:2503.13632 | [src: abstract] |
-| S8; Ω_m | 0.811 +0.022/−0.020; 0.294 +0.022/−0.033; PTE 0.6 against Planck; 24% gain in the Ω_m–S8 figure of merit over 3×2pt alone | ΛCDM | DES Y3 clusters + 3×2pt | arXiv:2503.13632 | [src] |
+| S8; Ω_m | 0.811 +0.022/−0.020; 0.294 +0.022/−0.033; PTE 0.6 against Planck; 24% gain in the Ω_m–S8 figure of merit over 3×2pt alone | ΛCDM | DES Y3 clusters + 3×2pt | arXiv:2503.13632 | [src: abstract] |
 | Σm_ν | < 0.26 eV (95%) | νΛCDM | DES 3×2pt + DES clusters + Planck | arXiv:2503.13632 | [src: abstract] |
 | Ω_m; σ8 | 0.254 +0.026/−0.020; 0.826 +0.030/−0.034; 2.58σ from Planck | flat ΛCDM, simulation-based forward model with counts-in-cylinders selection, miscentring and baryons | DES Y1 redMaPPer abundance + lensing | Salcedo et al. 2025, arXiv:2510.25706 | [src: abstract] |
 
@@ -222,28 +222,28 @@ The table lists the amplitude each analysis quoted, in order of arXiv posting, s
 
 | Year | Sample | Quoted amplitude | Status today | Citation | Flag |
 |---|---|---|---|---|---|
-| 2009 | 238 RASS clusters | σ8 = 0.82 ± 0.05, Ω_m = 0.23 ± 0.04 (flat wCDM) | superseded by the 2014 lensing-calibrated analysis | arXiv:0909.3098 | [src] |
-| 2013 | 15 + 7 ACT clusters + WMAP7 | σ8 = 0.829 ± 0.024 | still the only ACT counts cosmology | arXiv:1301.0816 | [src] |
-| 2013 | Planck PSZ1, 189 clusters | σ8 (Ω_m/0.27)^0.3 = 0.764 ± 0.025; σ8 = 0.75 ± 0.03 | superseded; start of the "Planck cluster tension" | arXiv:1303.5080 | [src] |
-| 2014 | RASS + Weighing the Giants | σ8 (Ω_m/0.3)^0.17 = 0.81 ± 0.03; σ8 = 0.83 ± 0.04 | first lensing-calibrated X-ray counts | arXiv:1407.4516 | [src] |
-| 2015 | Planck PSZ2, 439 clusters | tension with the CMB from just over 1σ to 3.7σ, by (1 − b) prior | superseded by lensing-calibrated reanalyses | arXiv:1502.01597 | [src] |
-| 2018 | SDSS redMaPPer | S8 = 0.79 +0.05/−0.04 | superseded by the 2021 and 2023 reanalyses | arXiv:1810.09456 | [src] |
-| 2018 | SPT-SZ, 343 clusters | σ8 (Ω_m/0.3)^0.2 = 0.766 ± 0.025; σ8 = 0.781 ± 0.037 | superseded by SPT 2024 | arXiv:1812.01679 | [src] |
-| 2019 | Planck MMF3 + CMB lensing | σ8 (Ω_m/0.33)^0.25 = 0.765 ± 0.035 | first Planck counts without a hydrostatic prior | arXiv:1904.07887 | [src] |
-| 2020 | DES Y1 redMaPPer | S8 = 0.65 ± 0.04 | **withdrawn in effect**: attributed to lensing-model systematics | arXiv:2002.11124 | [src] |
-| 2020 | DES Y1 abundances + correlations | σ8 = 0.783 +0.064/−0.054, Ω_m = 0.305 +0.055/−0.038 | superseded by DES Y3 | arXiv:2010.01138 | [src] |
-| 2021 | SDSS redMaPPer, anisotropic boosts | S8 = 0.718 +0.024/−0.021 | superseded by the HSC-lensing version | arXiv:2112.09059 | [src] |
-| 2023 | SDSS redMaPPer + HSC Y3 | S8 = 0.816 +0.041/−0.039 | current for SDSS | arXiv:2309.13025 | [src] |
-| 2024 | SPT 1005 clusters | S8 = 0.795 ± 0.029; σ8 (Ω_m/0.3)^0.25 = 0.805 ± 0.016 | current for SPT | arXiv:2401.02075 | [src] |
-| 2024 | eRASS1 | S8 = 0.86 ± 0.01 | current for eROSITA | arXiv:2402.08458 | [src] |
-| 2024 | Planck + Chandra | S8 = 0.78 ± 0.02, or 0.81 ± 0.02 with fitted evolution | superseded by the DES-shear version | arXiv:2402.04006 | [src] |
-| 2024 | HSC shear-selected | σ8 (Ω_m/0.3)^0.25 = 0.835 +0.041/−0.044 | current | arXiv:2406.11970 | [src] |
-| 2024 | SPT clusters + DES Y3 3×2pt | S8 = 0.796 ± 0.013 | current joint value | arXiv:2412.07765 | [src] |
-| 2025 | DES Y3 redMaPPer | S8 = 0.864 ± 0.035; 0.811 +0.022/−0.020 with 3×2pt | current for DES | arXiv:2503.13632 | [src] |
-| 2025 | KiDS-1000 AMICO | S8 = 0.74 ± 0.03 | current for KiDS | arXiv:2507.14285 | [src] |
-| 2025 | Planck PSZ2 + DES + Chandra | S8 = 0.791 +0.023/−0.021 (constant bias); 0.814 +0.019/−0.020 (mass-dependent) | current for Planck | arXiv:2509.02068 | [src] |
-| 2025 | DES Y1, simulation-based forward model | σ8 = 0.826 +0.030/−0.034, Ω_m = 0.254 +0.026/−0.020 | reanalysis of the 2020 data | arXiv:2510.25706 | [src] |
-| 2026 | XXL C1 + HSC Y3 | S8 = 0.867 ± 0.063 | current for XXL | arXiv:2602.11989 | [src] |
+| 2009 | 238 RASS clusters | σ8 = 0.82 ± 0.05, Ω_m = 0.23 ± 0.04 (flat wCDM) | superseded by the 2014 lensing-calibrated analysis | arXiv:0909.3098 | [src: abstract] |
+| 2013 | 15 + 7 ACT clusters + WMAP7 | σ8 = 0.829 ± 0.024 | still the only ACT counts cosmology | arXiv:1301.0816 | [src: abstract] |
+| 2013 | Planck PSZ1, 189 clusters | σ8 (Ω_m/0.27)^0.3 = 0.764 ± 0.025; σ8 = 0.75 ± 0.03 | superseded; start of the "Planck cluster tension" | arXiv:1303.5080 | [src: abstract] |
+| 2014 | RASS + Weighing the Giants | σ8 (Ω_m/0.3)^0.17 = 0.81 ± 0.03; σ8 = 0.83 ± 0.04 | first lensing-calibrated X-ray counts | arXiv:1407.4516 | [src: abstract] |
+| 2015 | Planck PSZ2, 439 clusters | tension with the CMB from just over 1σ to 3.7σ, by (1 − b) prior | superseded by lensing-calibrated reanalyses | arXiv:1502.01597 | [src: abstract] |
+| 2018 | SDSS redMaPPer | S8 = 0.79 +0.05/−0.04 | superseded by the 2021 and 2023 reanalyses | arXiv:1810.09456 | [src: abstract] |
+| 2018 | SPT-SZ, 343 clusters | σ8 (Ω_m/0.3)^0.2 = 0.766 ± 0.025; σ8 = 0.781 ± 0.037 | superseded by SPT 2024 | arXiv:1812.01679 | [src: abstract] |
+| 2019 | Planck MMF3 + CMB lensing | σ8 (Ω_m/0.33)^0.25 = 0.765 ± 0.035 | first Planck counts without a hydrostatic prior | arXiv:1904.07887 | [src: abstract] |
+| 2020 | DES Y1 redMaPPer | S8 = 0.65 ± 0.04 | **withdrawn in effect**: attributed to lensing-model systematics | arXiv:2002.11124 | [src: abstract] |
+| 2020 | DES Y1 abundances + correlations | σ8 = 0.783 +0.064/−0.054, Ω_m = 0.305 +0.055/−0.038 | superseded by DES Y3 | arXiv:2010.01138 | [src: abstract] |
+| 2021 | SDSS redMaPPer, anisotropic boosts | S8 = 0.718 +0.024/−0.021 | superseded by the HSC-lensing version | arXiv:2112.09059 | [src: abstract] |
+| 2023 | SDSS redMaPPer + HSC Y3 | S8 = 0.816 +0.041/−0.039 | current for SDSS | arXiv:2309.13025 | [src: abstract] |
+| 2024 | SPT 1005 clusters | S8 = 0.795 ± 0.029; σ8 (Ω_m/0.3)^0.25 = 0.805 ± 0.016 | current for SPT | arXiv:2401.02075 | [src: abstract] |
+| 2024 | eRASS1 | S8 = 0.86 ± 0.01 | current for eROSITA | arXiv:2402.08458 | [src: abstract] |
+| 2024 | Planck + Chandra | S8 = 0.78 ± 0.02, or 0.81 ± 0.02 with fitted evolution | superseded by the DES-shear version | arXiv:2402.04006 | [src: abstract] |
+| 2024 | HSC shear-selected | σ8 (Ω_m/0.3)^0.25 = 0.835 +0.041/−0.044 | current | arXiv:2406.11970 | [src: abstract] |
+| 2024 | SPT clusters + DES Y3 3×2pt | S8 = 0.796 ± 0.013 | current joint value | arXiv:2412.07765 | [src: abstract] |
+| 2025 | DES Y3 redMaPPer | S8 = 0.864 ± 0.035; 0.811 +0.022/−0.020 with 3×2pt | current for DES | arXiv:2503.13632 | [src: abstract] |
+| 2025 | KiDS-1000 AMICO | S8 = 0.74 ± 0.03 | current for KiDS | arXiv:2507.14285 | [src: abstract] |
+| 2025 | Planck PSZ2 + DES + Chandra | S8 = 0.791 +0.023/−0.021 (constant bias); 0.814 +0.019/−0.020 (mass-dependent) | current for Planck | arXiv:2509.02068 | [src: abstract] |
+| 2025 | DES Y1, simulation-based forward model | σ8 = 0.826 +0.030/−0.034, Ω_m = 0.254 +0.026/−0.020 | reanalysis of the 2020 data | arXiv:2510.25706 | [src: abstract] |
+| 2026 | XXL C1 + HSC Y3 | S8 = 0.867 ± 0.063 | current for XXL | arXiv:2602.11989 | [src: abstract] |
 
 The value S8 = 0.831 ± 0.020 of arXiv:2111.07491 combines SPT-SZ clusters with the Planck power spectra and is not a cluster-only number. [src: abstract]
 

@@ -84,7 +84,7 @@ for DES Y3 (arXiv:2202.08233, Sect. 5, Table 3) [src]:
 | III, very preliminary only | MultiNest | 250 | 0.1 | — | efficiency 0.3, `constant_efficiency` F | ∼ 6 hours |
 
 Case III gives unreliable evidences and Ω_m and σ8 widths underestimated
-by ∼ 10 % [src: Table 3]. Here n_live is the number of live points, tol
+by ∼ 10 % (arXiv:2202.08233) [src: Sect. 5, on Case III of Table 3]. Here n_live is the number of live points, tol
 the stopping tolerance on the remaining evidence, n_repeats the length of
 PolyChord's slice-sampling chains, efficiency MultiNest's ellipsoid
 enlargement control. The authors warn that the exact settings need
@@ -198,7 +198,7 @@ simulation of the compression is the authority [src: Sect. 1.5].
   and MH benefit from three (arXiv:2606.04895, Sect. 4.2) [src].
 - **Per second.** In wall time the order changes: MALA fastest, then HMC,
   MH, and NUTS with AIES last; "all the methods seem to converge very
-  similarly in terms of wall time" [src: Sect. 4.2]. Throughput on one
+  similarly in terms of wall time" (arXiv:2606.04895) [src: Sect. 4.2]. Throughput on one
   V100 with XLA compilation and 1000 chains is 2932 (MH), 1028 (MALA),
   294 (HMC), 46 (NUTS) and 2901 (AIES) steps per second (Table 1)
   [src: Sect. 3.3].
@@ -208,7 +208,7 @@ simulation of the compression is the authority [src: Sect. 1.5].
   that no single sampler is optimal [src].
 - **On a survey likelihood.** NUTS against Cobaya MH on DES Y1 (25
   parameters): parameter means differ by at most δ ∼ 0.1 (Eq. 30,
-  |μ_1 − μ_2|/√(σ_1² + σ_2²)); effective sample size gain O(10); with a
+  δ = |μ_1 − μ_2|/√(σ_1² + σ_2²)); effective sample size gain O(10); with a
   gradient costing ∼ 4.5 likelihood evaluations in reverse-mode autodiff,
   the net gain is roughly 2 (arXiv:2406.04725, Sects. 4.5, 7) [src]. On
   multivariate Gaussians NUTS is preferable above d ∼ 100
@@ -228,12 +228,14 @@ simulation of the compression is the authority [src: Sect. 1.5].
   2 and GPU NS by more than 4 [src: Sect. 4.1].
 - HMC cannot be parallelised the same way: 500 chains of 20 samples would
   be dominated by warm-up and too short, whereas 10 chains of 1000 give a
-  sound posterior but only 10 parallel evaluations [src: Sect. 4.1].
+  sound posterior but only 10 parallel evaluations (arXiv:2509.13307)
+  [src: Sect. 4.1].
 - **Evidence disagreement.** GPU NS and HMC + learned harmonic mean
   Bayes factors were ∼ 4σ apart for both likelihoods; a difference of 2
   in log B separates "decisive" from "inconclusive", so "models certainly
   cannot be compared across methods … even on identical likelihoods"
-  [src: Sect. 4.2]. HMC also under-represented a secondary peak of a
+  (arXiv:2509.13307) [src: Sect. 4.2].
+ HMC also under-represented a secondary peak of a
   nuisance parameter (A_IA,10) found by few chains [src].
 
 ### Ensemble sampler (emcee/AIES)

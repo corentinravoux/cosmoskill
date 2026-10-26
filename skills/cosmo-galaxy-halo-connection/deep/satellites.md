@@ -8,13 +8,14 @@ how velocity bias is measured from small-scale redshift-space clustering,
 and how fibre collisions are handled in each; what each choice was found to
 cost.
 Snapshot: 2026-10-19.
-From: Wechsler & Tinker 2018, Sect. 3.3, 5.5-5.6, 6.2.
+From: Wechsler & Tinker 2018 (arXiv:1804.03097), Sect. 3.3, Sects. 5.5–5.6
+and Sect. 6.2.
 
 Already in L2, not repeated here: the satellite results (CMASS velocity
-bias 0.22 and 0.86, DESI QSO α_c, DESI ELG strict conformity, DESI DR1 BGS
+bias of centrals and satellites, DESI QSO α_c, DESI ELG strict conformity, DESI DR1 BGS
 satellite slopes and quenched fractions, KiDS-1000 sub-Poisson variance) in
 `results.md#satellites`; the DESI DR1 BGS group catalogue facts (size,
-~0.2 dex mass errors, lost-galaxy redshifts correct ~50% of the time) in
+mass errors, how often lost-galaxy redshifts are correct) in
 `surveys-and-data.md#group-and-cluster-catalogues`; the sizes of the
 satellite-profile, velocity-bias, orphan and disruption systematics,
 including the Basilisk S8 profile test, in
@@ -32,7 +33,7 @@ Symbols. Primary / secondary: a galaxy selected as a central / satellite
 central. Interloper: a secondary that is not in the primary's halo. ΔV:
 line-of-sight velocity difference of a secondary relative to its primary.
 R_p: projected separation. σ_200: satellite velocity dispersion in units of
-200 km/s. β: velocity anisotropy, β = 1 − σ_t²/(2σ_r²) with σ_t, σ_r the
+200 km/s (arXiv:2409.03105, Sect. 2.1). β: velocity anisotropy, β = 1 − σ_t²/(2σ_r²) with σ_t, σ_r the
 tangential and radial dispersions. n_sat(r|M): number-density profile of
 satellites in a halo of mass M. 𝓡 = c_vir/c_sat: ratio of halo to satellite
 concentration. γ: inner logarithmic slope of n_sat. f_sat: satellite
@@ -55,25 +56,28 @@ systems it can use and never assigns a mass to the rest.
 1. Potential centres from a friends-of-friends pass with very small linking
    lengths, ℓ_z = 0.3 along the line of sight and ℓ_p = 0.05 transverse, in
    units of the mean galaxy separation; every unlinked galaxy is also a
-   tentative centre.
+   tentative centre [src: arXiv:0707.4640, Sect. III.1].
 2. A characteristic luminosity L_19.5, the completeness-weighted sum of
    member luminosities brighter than ⁰·¹M_r − 5 log h = −19.5 (Eq. 3),
-   corrected for members lost below the flux limit at z > 0.09 (Eq. 4).
+   corrected for members lost below the flux limit at z > 0.09 (Eq. 4)
+   [src: arXiv:0707.4640, Sect. III.1].
 3. A halo mass from a mass-to-light ratio (500 h M_⊙/L_⊙ at the first
    iteration, then the relation from the previous iteration), and from it
    r_180 (Eq. 5) and a line-of-sight dispersion σ = 397.9 km/s (M_h/10¹⁴
-   h⁻¹M_⊙)^0.3214 (Eq. 6). Haloes are defined at overdensity 180.
+   h⁻¹M_⊙)^0.3214 (Eq. 6). Haloes are defined at overdensity 180 [src:
+   arXiv:0707.4640, Sect. III.1].
 4. Membership from the redshift-space density contrast P_M(R, Δz) = (H₀/c)
    Σ(R)/ρ̄ p(Δz) (Eq. 7), with Σ the projected NFW profile (Eqs. 8–10) and
    p(Δz) a Gaussian of width σ (Eq. 11); a galaxy joins a group if P_M ≥ B
    = 10, the group with the largest P_M if several qualify; two groups
-   merge if all members of one belong to the other.
+   merge if all members of one belong to the other [src: arXiv:0707.4640,
+   Sect. III.1].
 5. Iterate from step 2 until memberships stop changing.
 
 The final masses come from rank-matching L_19.5 (or total stellar mass) to
 a halo mass function in volume-complete group subsamples (three redshift
 limits, Table 2), interpolated for the others, down to 10^11.6 h⁻¹M_⊙ [src:
-Sect. III.5]. The stated reason for not using dynamical masses: most groups
+arXiv:0707.4640, Sect. III.5]. The stated reason for not using dynamical masses: most groups
 have a few members, which makes velocity-dispersion masses "extremely
 unreliable" [src: Sect. III.5]. The background level B was tuned on a mock
 to maximise the mean of f_c(1 − f_i) (definitions in Step 4) [src: Sect.
@@ -87,7 +91,7 @@ skeleton, with three changes [src: Sect. IV.1]:
   L_grp to the halo mass function at z = 0 (Eq. 4), in redshift bins of
   width 0.05 with 1/V_max weighting; w_f(z) = 10^(0.561 (z/0.311)^2.077)
   restores satellite light lost below the flux limit (Eqs. 5–6) and moves
-  masses by only a few per cent.
+  masses by only a few per cent [src: arXiv:2610.20919, Sect. IV.1].
 - Luminosity rather than stellar mass is matched because luminosity has the
   lower uncertainty and the weights can absorb the lower luminosity of
   quiescent galaxies at fixed stellar mass [src: footnote 5].
@@ -96,16 +100,18 @@ skeleton, with three changes [src: Sect. IV.1]:
   P_z a Gaussian in cΔz (Eqs. 8–11). The threshold B_sat,c = β_0,c +
   β_L,c (log L − 9.5) (Eq. 12) and the central weight log w_cen,c, an error
   function of log L (Eq. 13), each take separate quiescent and star-forming
-  parameters: ten in all.
+  parameters: ten in all [src: arXiv:2610.20919, Sect. IV.1].
 
-The ten parameters are calibrated, not tuned by hand [src: Sect. IV.2]:
-run the finder to |Δf_sat| < 0.001 (typically 4–5 iterations), tabulate the
+The ten parameters are calibrated, not tuned by hand [src: arXiv:2610.20919,
+Sect. IV.2]: run the finder to |Δf_sat| < 0.001 (typically 4–5 iterations)
+[src: Sect. IV.1], tabulate the
 mean occupation of volume-limited subsamples, populate the z = 0
 Bolshoi-Planck halo catalogue with Poisson satellites, compute w_p with
 Corrfunc, and add a χ² on the ratio of quiescent to star-forming total
 satellite luminosity L_sat in bins of central luminosity: χ²_tot = Σ over 14
 w_p samples + χ²_Lsat (Eq. 14), explored with emcee for 200 000 iterations.
-The final catalogue runs 10 iterations, converged to |Δf_sat| < 3 × 10⁻⁵.
+The final catalogue runs 10 iterations, converged to |Δf_sat| < 0.00003
+[src: Sect. IV.1].
 The B_sat parameters are constrained by the one-halo-scale clustering, the
 w_cen parameters mostly by L_sat [src: Sect. IV.1].
 
@@ -151,7 +157,7 @@ central's luminosity or stellar mass, and P(ΔV) is fitted by two Gaussians
 plus a constant (the constant absorbs interlopers) (Eq. 4); the dispersion
 is σ² = (a₁σ₁³ + a₂σ₂³)/(a₁σ₁ + a₂σ₂) − σ_err² (Eq. 5), with σ_err = √2 ×
 35 ≈ 49.5 km/s for SDSS redshift errors, and errors from 1000 Poisson
-realisations of the histogram [src: Sect. 3.2]. Two weightings are
+realisations of the histogram [src: arXiv:1003.3203, Sect. 3.2]. Two weightings are
 measured: satellite-weighted (each satellite counts once) and host-weighted
 (weight 1/N_sat). The reason: σ_sat alone cannot separate the mean
 mass–luminosity relation from its scatter, since different relations with
@@ -185,20 +191,20 @@ Sect. 3.3.1]. Basilisk adds:
   anisotropy [src: Sect. 4.2.4];
 - splashback galaxies, by extending the satellite integrals to r_sp = f_sp
   r_vir with f_sp = 2; f_sp ≳ 1.5 recovers β without bias on mocks, f_sp = 1
-  biases β weakly, f_sp = 3 gives indistinguishable posteriors [src: Sect.
-  4.2.5];
+  biases β weakly, f_sp = 3 gives indistinguishable posteriors [src:
+  arXiv:2409.03105, Sect. 4.2.5];
 - interlopers as a background term proportional to the comoving volume of
   each velocity slice of the cone (Eq. 50), which rises with ΔV because the
   back of a cone is larger, plus an infalling Gaussian whose amplitude and
   width are measured per primary from "tertiary" galaxies at 0.6–0.9 σ_200
-  h⁻¹Mpc (Eq. 49) [src: Sect. 4.2.5]. A Kaiser-model infall term was tried
+  h⁻¹Mpc (Eq. 49) [src: arXiv:2409.03105, Sect. 4.2.5]. A Kaiser-model infall term was tried
   and "did not yield sufficiently accurate results"; the uniform interloper
   model of the first Basilisk paper over-estimated satellite numbers and
   biased the satellite CLF parameters in larger samples [src: same].
 
 **Radial profile.** Basilisk pre-computes arrays at fixed (γ, 𝓡), so the
 profile is scanned on a 15 × 15 grid of (γ, log 𝓡) with one chain per node
-and the likelihoods combined [src: App. C]. On SDSS the best fit is (γ, 𝓡)
+and the likelihoods combined [src: arXiv:2409.03105, App. C]. On SDSS the best fit is (γ, 𝓡)
 = (0.94, 1.7), satellites tracing the dark matter, (1, 1), are excluded at
 more than 5σ, and γ and 𝓡 are degenerate along a ridge; the CLF parameters
 are "very robust" to moderate moves along it [src: App. C]. On a mock with
@@ -301,9 +307,11 @@ the virial radius at each mass [src: Sect. 6.4].
 More et al. fix a cored profile (0, 2) [src: arXiv:1003.3203, Sect.
 3.3.1]; Basilisk II fits (0.94, 1.7) on SDSS kinematics [src:
 arXiv:2409.03105, App. C]; the later Basilisk cosmology analysis prefers γ
-= 1, 𝓡 ≈ 2.2 and finds that the profile choice moves (Ω_m, σ8) by up to
-~5σ (`systematics.md#satellite-distribution-velocity-bias-and-orphans`). The
-halo parameters are robust to the profile in Basilisk II, the cosmological
+= 1, 𝓡 ≈ 2.2, and with a subhalo-like profile its cosmology would be ~5σ
+from Planck, with a dark-matter-like one ~2σ [src: arXiv:2512.14889, Sect.
+5.2] (`systematics.md#satellite-distribution-velocity-bias-and-orphans`).
+
+The halo parameters are robust to the profile in Basilisk II, the cosmological
 parameters are not in its successor [der: comparison of App. C of
 arXiv:2409.03105 with the L2 entry on arXiv:2512.14889].
 

@@ -86,9 +86,11 @@ Every skill follows one contract, set out in
 
 - Prose cites `arXiv:<id>` or `doi:<doi>`. Every cited identifier has one row
   in the skill's `sources.tsv`, and every row is cited.
-- Every number carries a flag: `[src]` read in the cited paper when the file
-  was written, `[sec]` taken from a named secondary source, `[der]` derived,
-  with the derivation stated.
+- Only numbers read in a paper are given (owner, 2026-10-23): every number
+  names its paper and the place it was read, `[src: Sect. 4.2]` in the cited
+  paper itself, `[sec: <place>]` in a named secondary source. No number is
+  computed by an agent; `[der]` marks reasoning in words and carries no
+  number. `tools/check_numbers.py` lists the numbers that do not comply yet.
 - `results.md` and `surveys-and-data.md` carry a snapshot date. Superseded
   values stay in a history section, marked as superseded.
 - Forecasts are labelled as forecasts.
@@ -111,10 +113,10 @@ python3 $S/fetch_paper.py 2503.14739 --grep "8.632"    # find a number in its bo
 Every skill answers at the depth the question calls for, and says which:
 
 | Level | Read | For |
-|---|---|---|---|
+|---|---|---|
 | L1 | the skill's `SKILL.md` | what a domain is, where it stands, what to watch for |
 | L2 | one reference file | a value, its source, a referee point |
-| L3 | a specialist dossier | how a result is obtained, which method to choose (none written yet) |
+| L3 | a dossier of `deep/` (six per domain skill) | how a result is obtained, which method to choose |
 | L4 | the cited paper | a number about to enter a manuscript |
 
 The rule is to answer at the lowest level that answers, and to end with a
@@ -203,7 +205,7 @@ Limits of this version in particular:
   neutrino-mass limits appear where cosmology is compared with them.
 
 `docs/specs/` holds the specification; the plan followed now is
-`docs/plans/2026-10-20-plan.md`.
+`docs/plans/2026-10-23-plan.md`.
 
 ## Installing
 

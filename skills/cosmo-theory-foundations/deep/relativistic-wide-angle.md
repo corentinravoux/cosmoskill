@@ -16,7 +16,7 @@ selection effects and the name of each term
 (`physics-and-methods.md#relativistic-and-wide-angle-terms`); the DES Y3
 δ_g,μ = C_g κ_g form; the BOSS DR12 wide-angle sizes
 (`systematics.md#wide-angle-relativistic-and-line-of-sight`); the threshold
-Θ ≳ 30° and the SPHEREx f_NL headline (`results.md#wide-angle-and-relativistic-terms`).
+Θ ≳ 30° (arXiv:2608.19039, abstract) and the SPHEREx f_NL headline (`results.md#wide-angle-and-relativistic-terms`).
 The estimator side of wide-angle terms (line of sight, window, odd multipoles
 through the window) is in `cosmo-galaxy-clustering/deep/estimators-window.md`;
 the magnification term of photometric 3×2pt in modified gravity in
@@ -174,7 +174,7 @@ with ν_ℓ(d) = ∫ (dk/k)(k/H0)³(kη0)^(n_s−1) T²(k) j_ℓ(kd), f = d ln D
 appears [src: Sect. III.1]. Relativistic contributions to even multipoles are
 suppressed by ℋ/k and by d/r; the dipole has no d/r suppression [src].
 
-Contamination and its removal [src: Sect. IV.1–IV.2.1]: standard plus lensing
+Contamination and its removal (arXiv:1309.1321) [src: Sect. IV.1–IV.2.1]: standard plus lensing
 dipoles contaminate the relativistic one by 47% at d = 50 h⁻¹Mpc for z_B =
 0.25, 83% at z_B = 2. The wide-angle part is removed model-independently by
 measuring the quadrupoles of B and F separately: their difference,
@@ -189,7 +189,7 @@ sign, applies to the octupole [src].
 Castorina & White 2018 (arXiv:1709.09730) use the bisector line of sight and
 x ≡ s/d (s pair separation, d distance to the pair) [src: Sect. 2.1, Eq. 12]:
 
-- L_ℓ(cos θ/2) ≃ 1 − x² ℓ(ℓ+1)[1 − μ²]/16 [src: Eq. 14]: geometric
+- L_ℓ(cos θ/2) ≃ 1 − x² ℓ(ℓ+1)[1 − μ²]/16 (arXiv:1709.09730) [src: Eq. 14]: geometric
   corrections start at O(x²); x ≃ 0.045 for a BAO-scale pair at z = 1 [src].
 - Plane-parallel limit, written with f only and with ξ_ℓ^(n)(s, d) =
   ∫ k² dk/(2π²) (kd)^(−n) P(k) j_ℓ(ks) without i^ℓ: ξ_2^pp = ξ_2^(0)(−(4/3)f −
@@ -288,8 +288,8 @@ results" [src: Fig. 5 caption].
   positive in arXiv:1309.1321, Sect. IV.1 ("stronger for faint galaxies behind
   the bright galaxy").
 - **log10 against ln.** s is per magnitude in log10; 𝒬 and α per ln L or per
-  magnitude with 2.5: mixing them changes the lensing amplitude by a factor
-  of order 2.5 [der from the definitions above].
+  magnitude with the factor of the magnitude scale: mixing them changes the
+  lensing amplitude by that factor [der from the definitions above].
 - **Flux-only slope for a complex selection.** DES Balrog C_sample is smaller
   than the flux-only estimate, and negative in redMaGiC bin 2 [src:
   arXiv:2209.09782, Table 2, Sect. 5.4]. Test: an image-simulation response.

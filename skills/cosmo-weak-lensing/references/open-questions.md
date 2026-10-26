@@ -22,9 +22,9 @@ The two final Stage-III analyses disagree about it.
   an S8 tension" (Linke et al. 2026, arXiv:2606.12389) [src].
 - **DES Y6 says a mild difference remains.** Cosmic shear alone is 2.0σ (NLA)
   or 2.3σ (TATT) from the combined CMB in S8 (DES Collaboration 2026,
-  arXiv:2602.10065) [src]; the 3×2pt is 2.6σ in S8 and 1.8σ in the full
+  arXiv:2602.10065) [src: abstract]; the 3×2pt is 2.6σ in S8 and 1.8σ in the full
   parameter space, and the combination of all DES probes is 2.8σ from the CMB
-  (DES Collaboration 2026, arXiv:2601.14559) [src].
+  (DES Collaboration 2026, arXiv:2601.14559) [src: abstract].
 - A 2026 review describes this as a "bifurcation" between DES Y6 (2.4–2.7σ)
   and KiDS-Legacy (<1σ) against a combined-CMB baseline S8 = 0.836
   +0.012/−0.013, and names photometric-redshift calibration,
@@ -49,21 +49,22 @@ Three facts keep this from being a clean contradiction between the two surveys.
    about the 1σ level in the S8–Ωm plane [src: Sect. VII.3.1].
 3. A reanalysis of DES Y3 with externally calibrated IA and baryon models
    moves S8 up by 1.5σ to 0.832 +0.013/−0.017 (Bigwood et al. 2025,
-   arXiv:2512.04209) [src]; the DES Y3 shear × tSZ analysis gives 0.811
-   +0.015/−0.012 (Pandey et al. 2025, arXiv:2506.07432) [src]; the DES Y3 +
+   arXiv:2512.04209) [src: abstract]; the DES Y3 shear × tSZ analysis gives 0.811
+   +0.015/−0.012 (Pandey et al. 2025, arXiv:2506.07432) [src: abstract]; the DES Y3 +
    Planck PR4 6×2pt gives 0.8073 ± 0.0094 (Xu et al. 2025, arXiv:2510.25596)
-   [src].
+   [src: abstract].
 
-A correct one-line statement in October 2026: Stage-III cosmic shear gives S8
-between about 0.78 and 0.82 depending on survey and astrophysical modelling,
-within about 0.7σ to 2.6σ of the CMB depending on the analysis and on which
-CMB combination is the reference; no analysis reaches 3σ on two-point
-statistics alone.
+A correct one-line statement in October 2026: the Stage-III cosmic-shear S8
+values depend on survey and astrophysical modelling, and their distance from
+the CMB depends on the analysis and on which CMB combination is the
+reference; each value with its paper and place is in `results.md`, and none
+of the two-point-only analyses listed there quotes a tension of three sigma
+or more [der: from the values listed there].
 
 Still pulling low: the HSC Y3 two- plus three-point analysis, S8 = 0.736 ±
 0.020, 3.2σ from Planck 2018 in the S8–Ωm plane (Sugiyama et al. 2025,
-arXiv:2508.14019) [src]; the KiDS-1000 clipped-shear analysis, S8 = 0.724 ±
-0.027 in wCDM (Giblin et al. 2026, arXiv:2608.07377) [src]; a tSZ ×
+arXiv:2508.14019) [src: abstract]; the KiDS-1000 clipped-shear analysis, S8 = 0.724 ±
+0.027 in wCDM (Giblin et al. 2026, arXiv:2608.07377) [src: abstract]; a tSZ ×
 cosmic-shear measurement compared with FLAMINGO that "strongly disfavours" the
 Planck S8 independently of feedback strength (Wayland et al. 2026,
 arXiv:2609.31774) [src]. The first two use Stage-III data with the older
@@ -79,13 +80,13 @@ earlier low values:
   its upward shift (arXiv:2503.19441) [src].
 - HSC Y3 moves from 0.769 +0.031/−0.034 to 0.804 +0.019/−0.018 when DESI
   clustering redshifts replace the original calibration of the high-redshift
-  bins (Choppin de Janvry et al. 2025, arXiv:2511.18134) [src].
+  bins (Choppin de Janvry et al. 2025, arXiv:2511.18134) [src: abstract].
 - Replacing lensfit by metacalibration on KiDS-1000 leaves S8 at 0.789
   +0.020/−0.024, still 1.8σ from Planck: "it is not caused by the shear
   measurements" (Yoon et al. 2025, arXiv:2510.01122) [src: abstract].
 - An independent DESI-based recalibration finds differences in the KiDS-1000
   mean redshifts, average shift ΔMean(z) = −0.028 across bins (Blanco et al.
-  2025, arXiv:2512.15964) [src], and attributes KiDS-1000 differences to
+  2025, arXiv:2512.15964) [src: abstract], and attributes KiDS-1000 differences to
   photometric-noise mismatch between the COSMOS field and the wide survey
   (Lange et al. 2025, arXiv:2510.25419) [src].
 
@@ -94,7 +95,7 @@ n(z) "do not significantly change" the growth estimates from cosmic shear, and
 it agrees with the published DES Y3 and HSC Y1 calibrations (arXiv:2510.25419)
 [src]. The HSC shear-ratio calibration gives S8 = 0.773 ± 0.031, consistent
 with the original HSC Y3 value rather than with the clustering-redshift one
-(Rana et al. 2025, arXiv:2508.21681) [src]. So "it was all photo-z" is
+(Rana et al. 2025, arXiv:2508.21681) [src: abstract]. So "it was all photo-z" is
 supported for KiDS by its own analysis and for HSC by clustering redshifts,
 and is not established for DES.
 
@@ -104,10 +105,10 @@ and is not established for DES.
 - **Strong:** kSZ profiles and X-ray gas fractions; the X-ray baryonification
   analysis finds 6% suppression at k = 1 h/Mpc and 23% at k = 5 h/Mpc and
   calls itself consistent with recent kSZ results "hinting at strong feedback"
-  (Bucko et al. 2026, arXiv:2609.09144) [src]. The KiDS-Legacy reconstruction
+  (Bucko et al. 2026, arXiv:2609.09144) [src: abstract]. The KiDS-Legacy reconstruction
   of P_m(k,z) finds a 30% ± 10% ± 4% suppression at k = 3–20 h/Mpc (Broxterman
-  et al. 2025, arXiv:2509.08365) [src]. DES Y3 shear × tSZ prefers stronger
-  suppression than mild-feedback simulations at 2–4σ (arXiv:2506.07432) [src].
+  et al. 2025, arXiv:2509.08365) [src: abstract]. DES Y3 shear × tSZ prefers stronger
+  suppression than mild-feedback simulations at 2–4σ (arXiv:2506.07432) [src: abstract].
 - **Weak:** the DES Y3 + Planck PR4 6×2pt analysis with a gas-fraction prior
   on the first baryon principal component finds Q1 = 0.025 +0.024/−0.029 and
   excludes Illustris-like and OWLS-AGN-T8.7-like feedback at 2.9–3.3σ and
@@ -167,32 +168,32 @@ arXiv:2507.11530) [src], and the DES Y3 blue-sample reanalysis exploits this
 The claim (Leauthaud et al. 2017, arXiv:1611.08606, from CMASS lenses and 250
 deg² of CFHTLenS and CS82 shear) is that galaxy–halo models fitted to BOSS
 clustering over-predict the galaxy–galaxy lensing signal at Planck cosmology,
-by 20–40% [sec: the range as restated in arXiv:2606.23651], and that lowering
-S8 reconciles the two [src]. With DES Y3, HSC Y1 and KiDS-1000 shear around
+by 20–40%, and that lowering S8 reconciles the two [src: abstract; the same
+range is restated in the abstract of arXiv:2606.23651]. With DES Y3, HSC Y1 and KiDS-1000 shear around
 BOSS, the lensing-to-prediction amplitude was A = 0.79 ± 0.03 (DES + KiDS) and
 0.84 ± 0.05 (HSC) at a Planck cosmology with S8 = 0.83, and 0.91 ± 0.04 and
 0.97 ± 0.06 at S8 = 0.76; restricted to R > 5.25 h⁻¹Mpc both cosmologies fit
-(Amon et al. 2023, arXiv:2202.07440) [src]. A blind cross-survey comparison
+(Amon et al. 2023, arXiv:2202.07440) [src: abstract]. A blind cross-survey comparison
 concluded that lensing systematics alone are unlikely to explain the effect at
-z < 0.54 (Leauthaud et al. 2022, arXiv:2111.13805) [src]. Status in 2026: a
+z < 0.54 (Leauthaud et al. 2022, arXiv:2111.13805) [src: abstract]. Status in 2026: a
 UNIONS × BOSS CMASS measurement over about 2650 deg² does "not find a
 significant lensing-is-low effect", while the best joint fits still lower the
 matter amplitude slightly relative to Planck, and stresses that large scales
-carry the constraint (Campbell et al. 2026, arXiv:2606.23651) [src]. The DESI
+carry the constraint (Campbell et al. 2026, arXiv:2606.23651) [src: abstract]. The DESI
 DR1 full-scale analysis gives S8 = 0.797 +0.023/−0.024 (DES + KiDS lensing)
 and 0.791 +0.020/−0.021 (HSC) with other parameters fixed to CMB values (Lange
-et al. 2025, arXiv:2512.15962) [src]. A dynamical-dark-energy background of
+et al. 2025, arXiv:2512.15962) [src: abstract]. A dynamical-dark-energy background of
 the DESI kind would lower the galaxy–galaxy lensing signal by up to 7%
 relative to clustering and cosmic shear by 14%, through the distance
 dependence of the lensing kernel (Heydenreich et al. 2025, arXiv:2508.05746)
-[src].
+[src: abstract].
 
 ## 6. Method debates
 <!-- key: method-debates -->
 
 - **Statistic.** ξ±, COSEBIs, band powers and pseudo-Cℓ weight scales
   differently; UNIONS finds its configuration- and harmonic-space S8 only
-  2.18σ apart on the same catalogue (arXiv:2605.13543) [src], and shows that a
+  2.18σ apart on the same catalogue (arXiv:2605.13543) [src: abstract, Sect. 5.3], and shows that a
   scale cut defined in one statistic does not map onto another, so null tests
   must pass in all (arXiv:2604.03227) [src].
 - **Covariance from data or from theory.** The KiDS-Legacy k-cut analysis
@@ -226,15 +227,15 @@ dependence of the lensing kernel (Heydenreich et al. 2025, arXiv:2508.05746)
 
 | Claim still seen | Status | Correcting paper |
 |---|---|---|
-| "Weak lensing is in 2–3σ tension with Planck (S8 ≈ 0.76)." | Superseded for KiDS by KiDS-Legacy (0.815) and for HSC by the DESI recalibration (0.804). | arXiv:2503.19441, arXiv:2511.18134 |
-| "The S8 tension is resolved." | Overstated: DES Y6 3×2pt is 2.6σ from the combined CMB in S8. | arXiv:2601.14559 |
+| "Weak lensing is in 2–3σ tension with Planck (S8 ≈ 0.76)." | Superseded for KiDS by KiDS-Legacy (0.815) and for HSC by the DESI recalibration (0.804). | arXiv:2503.19441, arXiv:2511.18134 [src: abstract of each] |
+| "The S8 tension is resolved." | Overstated: DES Y6 3×2pt is 2.6σ from the combined CMB in S8. | arXiv:2601.14559 [src: abstract] |
 | "The low S8 came from shear calibration." | Not supported: metacalibration on KiDS-1000 gives the same S8. | arXiv:2510.01122 |
 | "HSC Y3 recalibrated: S8 = 0.805 ± 0.018." | That is the abstract and Table 1 of an earlier version, still served by the ar5iv rendering; the current arXiv abstract gives 0.804 +0.019/−0.018 [src: both read 2026-10-12]. | arXiv:2511.18134 |
 | "Euclid DR1 in late 2026 will settle it." | November 2026 is DR1-Foundation only; lensing products follow in mid-2027. | ESA DR1 timeline (15 June 2026) |
-| "DES Y3 cosmic shear: S8 = 0.772 +0.018/−0.017" quoted as the DES Y3 result. | That is the ΛCDM-optimised scale-cut variant; the fiducial value is 0.759 +0.025/−0.023. | arXiv:2105.13543 |
+| "DES Y3 cosmic shear: S8 = 0.772 +0.018/−0.017" quoted as the DES Y3 result. | That is the ΛCDM-optimised scale-cut variant; the fiducial value is 0.759 +0.025/−0.023. | arXiv:2105.13543 [src: abstract] |
 | "DES Y3 3×2pt: S8 = 0.779 +0.014/−0.015." | The abstract value is 0.776 ± 0.017; the other figure was not found in any abstract read this session. | arXiv:2105.13549 |
 | "Baryons cannot matter for S8 (FLAMINGO)." | True for the 2023 size of the tension; the 2025–2026 values leave a much smaller gap, and gas probes now favour strong feedback. | arXiv:2309.07959, arXiv:2512.04209 |
-| "Lensing prefers dynamical dark energy." | Lensing adds little to w0wa; KiDS-Legacy + CMB lensing gives B = 0.07 for w0waCDM. | arXiv:2512.11041, arXiv:2509.03582 |
+| "Lensing prefers dynamical dark energy." | Lensing adds little to w0wa; KiDS-Legacy + CMB lensing gives B = 0.07 for w0waCDM (arXiv:2512.11041) [src: abstract]. | arXiv:2512.11041, arXiv:2509.03582 |
 
 ## Not verified
 <!-- key: not-verified -->

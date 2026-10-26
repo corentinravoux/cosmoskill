@@ -74,8 +74,9 @@ colour slope of the transformation.
   unmeasured or evolving passbands "until the observed color terms match
   synthetic color terms", synthesising colour terms from the Pickles, NGSL
   v2 and STIS low-resolution libraries and averaging the shifts, which
-  "generally agree to a few angstroms" between libraries [src: Sect.
-  II.1.4]. The table runs from a few Å to −180 Å (LOSS K1 I) [src].
+  "generally agree to a few angstroms" between libraries [src:
+  arXiv:2311.12098, Sect. II.1.4]. The table of that section runs from a
+  few Å to −180 Å (LOSS K1 I) [src: Sect. II.1.4].
 - **Dovekie** regresses, for each filter, the synthetic difference
   `Synth_PS1^b1 − Synth_S^b'` on the synthetic PS1 colour (Eq. 4), and the
   observed difference on the observed colour with up to three 3-sigma
@@ -89,7 +90,7 @@ colour slope of the transformation.
   estimator"; simulated tertiary stars built from the NGSL or CALSPEC
   library (Eq. 10) give the bias `Delta_C` and scatter `varsigma` of the
   slope difference [src: Sect. 3.3, Sect. 3.2.3].
-- **Fit of the shift** (Eq. 9): passbands are shifted, `f_new(lambda) =
+- **Fit of the shift** (arXiv:2506.05471, Eq. 9): passbands are shifted, `f_new(lambda) =
   f_old(lambda − lambda_shift)` (Eq. 7), from −50 to +50 Å; the PS1 and Gaia
   likelihoods are summed with a zero-centred 50 Å prior; Gaia is ignored in
   `g` bands because of known discrepancies between Gaia spectra and PS1 and
@@ -171,7 +172,7 @@ colour slope of the transformation.
   [src: arXiv:2506.05471, Table 2, Sect. 8.1].
 - **Zero points.** Low-z surveys keep a 0.01 mag error floor and are
   "entirely error-floor dominated"; surveys with DA WDs observed improve
-  by a factor 2 [src: Sect. 8.2].
+  by a factor 2 [src: arXiv:2506.05471, Sect. 8.2].
 - **CALSPEC.** Union3 rejects a single slope in wavelength because the
   history of CALSPEC changes "poorly" matches one (as assumed in Betoule et
   al.), and adopts uncertainties relative to 5000–6000 Å of 10 mmag

@@ -6,8 +6,8 @@ mass-parameter implementations, priors, likelihood), how it is diagnosed
 (shuffling, correlated re-ranking, direct HOD splits), and how to choose
 between these forms and read their parameters across papers.
 Snapshot: 2026-10-21.
-From: Wechsler & Tinker 2018, Sect. 5.3–5.4, 6.4, 7.2; Asgari et al. 2023,
-Sect. 5.8.
+From: Wechsler & Tinker 2018 (arXiv:1804.03097), Sects. 5.3–5.4, Sect. 6.4
+and Sect. 7.2; Asgari et al. 2023 (arXiv:2303.08752), Sect. 5.8.
 
 Already in L2, not repeated here: the vocabulary (halo assembly bias, galaxy
 assembly bias, conformity) and the halo-level results (Gao, Wechsler,
@@ -117,9 +117,11 @@ log₁₀M_cut^mod = log₁₀M_cut + A_cent(c^rank − 0.5) + B_cent(δ^rank �
 log₁₀M_1^mod = log₁₀M_1 + A_sat(c^rank − 0.5) + B_sat(δ^rank − 0.5)
 (arXiv:2110.11412, Eqs. 10–11). Reason: galaxy-swap schemes conserve the
 number density "but tend to be computationally expensive"; the analytic mix
-is cheaper [src: Sect. 2.4]. Because ⟨N⟩ is non-linear in log M_cut and log
-M_1, symmetric shifts of ±(rank − 0.5) do not conserve ⟨N|M⟩ exactly [der:
-from Eqs. 10–11 and the erf/power-law baseline]; the fit to the number
+is cheaper [src: Sect. 2.4].
+
+Because ⟨N⟩ is non-linear in log M_cut and log M_1, symmetric rank shifts
+of the two mass scales do not conserve ⟨N|M⟩ exactly [der: from Eqs. 10–11
+of arXiv:2110.11412 and the erf/power-law baseline]; the fit to the number
 density absorbs the difference.
 
 **(d) Density-dependent onset slopes (Yang et al. 2025).** From SIMBA and
@@ -134,10 +136,12 @@ the authors suggest marginalising over C_δ "of order unity" [src: Sect. 6].
 
 The direct DESI measurement uses the form of (c) for satellites: log
 M_1(δ_g) = log M_1* + Q_sat(δ̃_g − 0.5), with δ̃_g set to 0.25 and 0.75 for
-the low- and high-density halves and α fixed to 1 (arXiv:2510.20896, Eq.
-9) [src]. The BGS One-Percent fit writes the central decoration as δN_cen =
-A_cen(0.5 − |0.5 − ⟨N_cen⟩_std|) (arXiv:2309.08675, Eq. 7) [src], equal to
-the min form of (a) [der: 0.5 − |0.5 − x| = min(x, 1 − x)].
+the low- and high-density halves and α fixed to 1 (arXiv:2510.20896,
+Eq. 9) [src: Eq. 9]. The BGS One-Percent fit writes the central decoration
+as δN_cen = A_cen(0.5 − |0.5 − ⟨N_cen⟩_std|) (arXiv:2309.08675, Eq. 7)
+[src: Eq. 7].
+
+This BGS form is the min form of (a) [der: 0.5 − |0.5 − x| = min(x, 1 − x)].
 
 ### Step 3. Fit
 <!-- key: step-3-fit -->
@@ -148,10 +152,12 @@ The SDSS DR7 decorated-HOD analysis is the reference set-up for w_p
 - Data: w_p in eleven logarithmic bins from 0.17 to 16.9 h⁻¹Mpc with the
   published covariance, plus the number density. Two larger-separation
   points were dropped because they "add considerably to the computational
-  expense but alter our results insignificantly".
+  expense but alter our results insignificantly" [src: arXiv:1606.07817,
+  Sect. 2.3].
 - Likelihood: χ² = Δw_p,i [C⁻¹]_ij Δw_p,j + (n_g^mock − n_g^meas)²/σ_n²
   (Eq. 6), σ_n Poisson for both measured and predicted densities.
-- Sampler: emcee; ~3–10 × 10⁶ samples to converge.
+- Sampler: emcee; ~3–10 × 10⁶ samples to converge [src: arXiv:1606.07817,
+  Sect. 2.3].
 - Priors, all uniform (Table 1): log M_min [9, 14], σ_log M [0.01, 1.5],
   log M_0 [9, 14], log M_1 [10.7, 15], α [0, 2], A_cen and A_sat [−1, 1]
   with "strict boundaries". Only log M_0 and σ_log M priors matter to the
@@ -180,12 +186,13 @@ occupation on halo properties other than mass. As run on SIMBA and TNG
 [src: arXiv:2511.01441, Sect. 3.1]:
 
 1. Bin haloes in log mass, width 0.1 dex (modest changes in width do not
-   matter).
+   matter) [src: arXiv:2511.01441, Sect. 3.1].
 2. Move the galaxy content of each halo to a random halo of the same bin;
    centrals keep their offset from the halo's most-bound particle,
    satellites their offset from the central.
 3. Measure w_p (10 log bins, 0.1–20 h⁻¹Mpc, π_max = 30 h⁻¹Mpc) and form
-   w_p / w_p,shuffled − 1, averaged over ten shufflings.
+   w_p / w_p,shuffled − 1, averaged over ten shufflings [src:
+   arXiv:2511.01441, Sect. 3.1].
 4. Errors: jackknife over 5 × 5 sub-boxes in the X–Y plane, plus the
    scatter between shufflings.
 5. Control: randomly rotating each halo's content changes clustering by ≲
@@ -382,7 +389,7 @@ arXiv:2505.03880, abstract].
 | Shuffling assembly bias | ~5% at z = 2; ~10% (TNG), ~0 (SIMBA) at z = 0 | stellar-mass samples | arXiv:2511.01441 | abstract |
 | Orientation control | ≲ 1% | SIMBA, TNG | arXiv:2511.01441 | Sect. 3.1 |
 | Density-slope coupling | C_δ(μ) ~ 2 C_δ(ν); C_δ of order unity | SIMBA, TNG | arXiv:2511.01441 | Sect. 6 |
-| Direct satellite test | Q_sat = 0.05 ± 0.14; −0.01 ± 0.14 with a 5% M_h bias for dense haloes | DESI DR1 BGS, log M_h > 12.9 | arXiv:2510.20896 | Q_sat paragraph |
+| Direct satellite test | Q_sat = 0.05 ± 0.14; −0.01 ± 0.14 with a 5% M_h bias for dense haloes | DESI DR1 BGS, log M_h > 12.9 | arXiv:2510.20896 | abstract (0.05 ± 0.14); main-text paragraph "Galaxy assembly bias constraint" and the one after Fig. 3 (−0.01 ± 0.14, 12.9) |
 | Recovery on mocks | A, A_e within 1σ; κ ~2σ off | CMASS-like mocks | arXiv:2010.04182 | Sect. 6.1 |
 | Constrained-run bound | 𝒬_cen = −0.09 ± 0.05, 𝒬_sat = 0.09 ± 0.10 | SDSS on ELUCID, M_⋆ > 10^10.2 h⁻²M_⊙ | arXiv:2010.04176 | abstract |
 | Central assembly bias with CiC | positive at 99.9% (M_r < −20.0), 99.5% (< −20.5); 94.8% at −21.0, z ~ 0.25 | DESI One-Percent BGS | arXiv:2309.08675 | abstract |

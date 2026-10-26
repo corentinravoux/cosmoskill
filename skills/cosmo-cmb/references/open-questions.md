@@ -288,7 +288,7 @@ arXiv:2510.24669).
 | "Planck favours a closed universe" | PR3 Plik spectra alone; PR4 HiLLiPoP gives −0.012 ± 0.010, and any BAO combination is flat | arXiv:2309.10034, arXiv:2002.06892 [src: abstract] |
 | "ACT and SPT are independent of Planck" | Both are calibrated on Planck and take τ from Planck; only shape information is independent | arXiv:2503.14452, arXiv:2506.20707 |
 | "The CMB gives H₀ = 67.4 ± 0.5" | That is Planck 2018 (arXiv:1807.06209) [src: abstract]. Current: 67.62 ± 0.50 (P-ACT, arXiv:2503.14452, Sect. II), 66.66 ± 0.60 (SPT-3G D1), 67.19 ± 0.38 (CMB-SPA) (arXiv:2506.20707) [src: abstract] | `results.md` |
-| "CMB-SPA gives H₀ = 67.24 ± 0.35" | First-version value; the revised paper gives 67.19 ± 0.38 | arXiv:2506.20707 v2 [src: abstract; Sect. II] |
+| "CMB-SPA gives H₀ = 67.24 ± 0.35" | First-version value (arXiv:2506.20707v1) [src: abstract; Sect. II]; the revised paper gives 67.19 ± 0.38 | arXiv:2506.20707 v2 [src: abstract; Sect. II] |
 | "ACT DR6 gives Σm_ν < 0.082 eV" | First-version abstract; the revised value is < 0.089 eV | arXiv:2503.14454 v2 |
 | "ACT DR6 measures n_s = 0.974" | That is P-ACT-LB (with lensing and DESI); P-ACT alone is 0.9709 ± 0.0038 | arXiv:2503.14452 [src: abstract; Sect. VIII.3] |
 | "CMB lensing confirms a low S₈" | All reconstructions are consistent with the primary-CMB prediction: 1.013 ± 0.023 (ACT DR6), 1.025 ± 0.017 (ACT + SPT + Planck), unity at 2% (SPT-3G D1) | arXiv:2304.05202, arXiv:2504.20038, arXiv:2608.31136 [src: abstract] |

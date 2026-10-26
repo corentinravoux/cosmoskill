@@ -51,11 +51,11 @@ tile and fibre [src: Sect. 5.1].
 
 | Veto | DESI DR1 definition | Area or data lost | Stated reason |
 |---|---|---|---|
-| Bad hardware | ZWARN_MTL flags from the Iron reduction; TSNR2_ELG > 80 (dark), TSNR2_BGS > 1000 (bright); 60 poorly performing fibres | 2.3% (bright), 3.1% (dark); TSNR2 cuts < 1% of data | success "declines dramatically" below the TSNR2 thresholds; flag only points reachable solely by bad hardware, to minimise lost area [src: Sect. 4.1] |
-| Priority | an occurrence is vetoed if the fibre went to a higher-priority class (QSO and strong-lens candidates at priority 4000 in dark time; white dwarfs, 2998, in bright time); LRGs do not veto ELGs | 1666.7 deg², 20% of the DR1 footprint for LRG and ELG | areas where the class could not be observed; LRGs excluded because 10% of ELGs share their priority and they overlap in redshift [src: Sect. 4.2] |
-| Bright objects (targeting) | Legacy Surveys bits 1 (Tycho or Gaia G < 13), 12 (bright galaxy, not for BGS), 13 (globular clusters); g, r, z coverage | — | bright galaxies (mostly z < 0.15) corrupt photometry for the dark tracers but are real BGS targets [src: Sect. 4.3.1] |
-| Extra star masks | MEDIUM star mask (bit 11, G < 16) for BGS, ELG, QSO; WISE W1, W2 bits for QSO; custom WISE and Gaia masks for LRG; ELG custom mask (dwarf satellites, ghosts) | 4.5% (ELG), 5.2% (BGS), 6.3% (QSO), 0.1% (ELG custom) | ELG and QSO densities 10–20% lower inside; QSO success 53% inside against 67% outside; LRG density higher inside (photometry inflated) [src: same] |
-| Imaging-property tails | E(B−V)_SFD < 0.15, Gaia stellar density < 10^4.4, PSF size and galaxy-depth limits per band (Table 5) | 3.4% (QSO, BGS), 3.2% (ELG, LRG) | outliers in property space would drive the regressions; the E(B−V) cut matches SDSS [src: Sect. 4.3.2] |
+| Bad hardware | ZWARN_MTL flags from the Iron reduction; TSNR2_ELG > 80 (dark), TSNR2_BGS > 1000 (bright); 60 poorly performing fibres | 2.3% (bright), 3.1% (dark); TSNR2 cuts < 1% of data | success "declines dramatically" below the TSNR2 thresholds; flag only points reachable solely by bad hardware, to minimise lost area [src: arXiv:2411.12020, Sect. 4.1] |
+| Priority | an occurrence is vetoed if the fibre went to a higher-priority class (QSO and strong-lens candidates at priority 4000 in dark time; white dwarfs, 2998, in bright time); LRGs do not veto ELGs | 1666.7 deg², 20% of the DR1 footprint for LRG and ELG | areas where the class could not be observed; LRGs excluded because 10% of ELGs share their priority and they overlap in redshift [src: arXiv:2411.12020, Sect. 4.2] |
+| Bright objects (targeting) | Legacy Surveys bits 1 (Tycho or Gaia G < 13), 12 (bright galaxy, not for BGS), 13 (globular clusters); g, r, z coverage | — | bright galaxies (mostly z < 0.15) corrupt photometry for the dark tracers but are real BGS targets [src: arXiv:2411.12020, Sect. 4.3.1] |
+| Extra star masks | MEDIUM star mask (bit 11, G < 16) for BGS, ELG, QSO; WISE W1, W2 bits for QSO; custom WISE and Gaia masks for LRG; ELG custom mask (dwarf satellites, ghosts) | 4.5% (ELG), 5.2% (BGS), 6.3% (QSO), 0.1% (ELG custom) | ELG and QSO densities 10–20% lower inside; QSO success 53% inside against 67% outside; LRG density higher inside (photometry inflated) [src: arXiv:2411.12020, Sect. 4.3.1] |
+| Imaging-property tails | E(B−V)_SFD < 0.15, Gaia stellar density < 10^4.4, PSF size and galaxy-depth limits per band (Table 5) | 3.4% (QSO, BGS), 3.2% (ELG, LRG) | outliers in property space would drive the regressions; the E(B−V) cut matches SDSS [src: arXiv:2411.12020, Sect. 4.3.2] |
 
 The priority veto assumes the higher-priority sample is uncorrelated with
 the masked one, which is not strictly true for QSO against LRG and ELG;
@@ -77,7 +77,7 @@ DESI splits assignment incompleteness in two, mimicking SDSS
   sky fibres or, for ELGs, to LRGs, which depend only on random
   subpriorities, so they should be uniform within a t_group [src: same].
 
-Weights [src: Sect. 5.3]: w_comp = 1/f_TLID on the data (Eq. 3); f_tile is
+Weights [src: arXiv:2411.12020, Sect. 5.3]: w_comp = 1/f_TLID on the data (Eq. 3); f_tile is
 applied to the randoms; t_groups present only in randoms get f_tile = 1.
 This is not unbiased for close pairs, hence the θ-cut at 0.05° (pairs below
 it removed and folded into the window). Alternative: 128 altMTL
@@ -116,13 +116,13 @@ require it [src: same].
 
 | Tracer | Bins | Method | Maps regressed |
 |---|---|---|---|
-| BGS | 0.1 < z < 0.4 | linear | r-band depth, stellar density, H I column density [src: Sect. 6.1] |
-| LRG | 0.4–0.6, 0.6–0.8, 0.8–1.1 | linear, per bin | stellar density, H I, z-band galaxy depth, r-band PSF size, W1 PSF depth; one extra map per bin in DECam only [src: Sect. 6.2] |
-| ELG | 0.8–1.1, 1.1–1.6 | SYSNet neural network | all validation maps except E(B−V)_noCIB, judged redundant with H I [src: Sect. 6.4] |
-| QSO | 0.8–1.3, 1.3–2.1, 2.1–3.5 | Regressis random forest; DES and DECaLS fitted separately | all validation maps except E(B−V)_noCIB [src: Sect. 6.3] |
+| BGS | 0.1 < z < 0.4 | linear | r-band depth, stellar density, H I column density [src: arXiv:2411.12020, Sect. 6 list (bins, method); Sect. 6.1 (maps)] |
+| LRG | 0.4–0.6, 0.6–0.8, 0.8–1.1 | linear, per bin | stellar density, H I, z-band galaxy depth, r-band PSF size, W1 PSF depth; one extra map per bin in DECam only [src: arXiv:2411.12020, Sect. 6 list (bins, method); Sect. 6.2 (maps)] |
+| ELG | 0.8–1.1, 1.1–1.6 | SYSNet neural network | all validation maps except E(B−V)_noCIB, judged redundant with H I [src: arXiv:2411.12020, Sect. 6 list (bins, method); Sect. 6.4 (maps)] |
+| QSO | 0.8–1.3, 1.3–2.1, 2.1–3.5 | Regressis random forest; DES and DECaLS fitted separately | all validation maps except E(B−V)_noCIB [src: arXiv:2411.12020, Sect. 6 list (bins, method); Sect. 6.3 (maps)] |
 
 Maps are HEALPix N_side = 256; the inverse of the fitted model per pixel
-and redshift bin is w_imsys [src: Sect. 6]. Maps of the difference between
+and redshift bin is w_imsys [src: arXiv:2411.12020, Sect. 6]. Maps of the difference between
 DESI-star and SFD extinction (ΔEBV) are kept for validation, not
 regression, because they carry CIB contamination that correlates with
 large-scale structure; replacing SFD by a CIB-cleaned map shrinks the
@@ -188,7 +188,7 @@ incomplete regions in the FKP sense [src: same].
 |---|---|---|
 | eBOSS DR16 | w_cp = (N_cp + N_z + N_badclass + N_star)/(N_z + N_badclass + N_star) per collision group (Eq. 2) | unbiased transverse clustering on large scales, radial clustering biased, worse in Fourier space; individual analyses quantify residuals [src: arXiv:2007.09000, Sect. 5.3] |
 | DESI DR1 | 1/f_TLID on data, f_tile on randoms, θ-cut | not unbiased for close pairs [src: arXiv:2411.12020, Sect. 5.3] |
-| DESI DR1 alternative | PIP from 129 realisations | cost and zero-probability pairs [src: same] |
+| DESI DR1 alternative | PIP from 129 realisations | cost and zero-probability pairs [src: arXiv:2411.12020, Sects. 5.2–5.3] |
 
 ### Redshift-failure model
 <!-- key: redshift-failure-model -->
@@ -357,7 +357,7 @@ added [src: Sect. 7.1]. DESI's analogous treatment for full shape is in
 - DESI DR2 catalogue changes (QSO weights moved to linear regression per
   `cosmo-galaxy-clustering`; DES region treated separately per
   arXiv:2606.18581): the DR2 catalogue method was not read here.
-- Ross et al. 2025 Sects. 3.1, 4.3, 7.2–7.3 (sorting to unique TARGETID,
+- Ross et al. 2025 (arXiv:2405.16593) Sects. 3.1, 4.3 and 7.2–7.3 (sorting to unique TARGETID,
   t_group construction) not read in this run.
 - eBOSS ELG catalogue (Raichoor et al. 2021) and its depth-dependent n(z)
   correction not read.

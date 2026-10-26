@@ -84,7 +84,8 @@ uses three schemes, summarised in the (k, τ) plane for `cl_3permille.pre`
   `radiation_streaming_trigger_tau_over_tau_k` and τ_c/τ ≥
   `radiation_streaming_trigger_tau_c_over_tau` [src: Sect. 4.5, Table 4].
   After decoupling the code integrates about four smooth equations, and
-  thanks to the UFA about 30 equations in total before it [src: Sect. 5].
+  thanks to the UFA about 30 equations in total before it (arXiv:1104.2933)
+  [src: Sect. 5].
 
 Integrator: CLASS's stiff `ndf15` is the default; without it "it would
 have been essentially impossible to launch test runs with no approximation
@@ -113,7 +114,7 @@ arXiv:1104.2935) [src: Sect. 4.3; App. B, Table 1]. Two devices cut it:
   25 % speed-up at standard settings; with quadrature, one massive
   neutrino makes CLASS 1.5 times slower instead of 4.5 [src: Sect. 4.3].
 
-Where the fluid approximation fails: harmless on the CMB (0.02 % at
+Where the fluid approximation fails (arXiv:1104.2935): harmless on the CMB (0.02 % at
 ℓ = 2750 for three 1 eV species) but P(k) "wrong by 1 to 3 % for
 k ∈ [0.05; 1] h Mpc⁻¹" with three 1 eV neutrinos; the authors recommend
 it "for any value of the mass when computing CMB anisotropies, and only
@@ -122,13 +123,13 @@ spectrum" [src: Sect. 3.5]; around m = 2 eV the user "should either turn
 off the approximation, or increase the value of the kτ trigger" [src:
 App. B].
 
-Validation tests the authors ran, reusable for any code: CAMB against
+Validation tests the authors of arXiv:1104.2935 ran, reusable for any code: CAMB against
 CLASS with Ω_ν = 0.02 (m ≃ 0.923 eV) agreed to better than 0.1 % in CMB
 and P(k), about six times the massless-case difference; and the massless
 limit, m = 10⁻⁸ eV in CLASS, approached three massless species to 0.03 %
 in C_ℓ and 0.05 % in P(k) [src: Sect. 4.1].
 
-Mass split: normal against inverted hierarchy at equal M_ν = 0.100,
+Mass split (arXiv:1104.2935): normal against inverted hierarchy at equal M_ν = 0.100,
 0.115, 0.130 eV offsets P(k) at large k by 0.03 % to 0.22 % [src:
 Sect. 4.4, Fig. 5].
 
@@ -192,7 +193,7 @@ numerics must remove that first.
   same].
 - **Non-linear onset.** CLASS applies halofit for k > 10⁻⁴ Mpc⁻¹ and CAMB
   for k > 3.3 × 10⁻³ Mpc⁻¹; set `halofit_min_k_nonlinear = 3.3e-3` in
-  CLASS for a like-for-like plot [src: Sect. 6.1].
+  CLASS for a like-for-like plot (arXiv:2303.09451) [src: Sect. 6.1].
 - **Normalisation.** Pass the same A_s, not the same σ8, when absolute
   spectra are compared, to be "insensitive to very small differences in
   the σ8-to-A_s conversion" [src: Sect. 6.1].
@@ -232,7 +233,7 @@ numerics must remove that first.
   one per cent"; smaller ε made finite differences "very noisy", and the
   one significant difference (the neutrino-mass derivative against CLASS)
   was attributed to CLASS run without its fluid approximation at reduced
-  accuracy [src: Sect. 3.3, Eq. 5].
+  accuracy (arXiv:2311.03291) [src: Sect. 3.3, Eq. 5].
 - **Approximation-free codes.** SymBoltz is approximation-free and uses
   Chebyshev interpolation in k and ℓ; its author argues that
   approximation-based codes "switch equations in τ, k and ℓ ... and break
@@ -341,7 +342,8 @@ parameter choices on the performance of the EB solvers" [src: same].
   paper did for second derivatives.
 - **Cross-code differences that are model differences.** Neutrino
   temperature and N_ur, non-linear onset, σ8 normalisation and CLASS
-  optimisations (Step 5) each move spectra at the 10⁻³ level or more.
+  optimisations (Step 5) each move spectra on their own, whatever the
+  numerical precision.
   Test: match them explicitly before attributing a difference to numerics.
 - **Comparing at the edge of a free-streaming-suppressed field.** The
   massive-neutrino perturbations differ by more than 1 % at k ≳ 1 Mpc⁻¹,
@@ -383,12 +385,13 @@ parameter choices on the performance of the EB solvers" [src: same].
   DISCO-EB, not from CAMB's source.
 - CLASS parameter names and defaults are those of the 2011 papers
   (v1.1) and of the 2023 Euclid paper; they were not checked against
-  CLASS 3.4 (classy 3.4.1.0) or its `explanatory.ini`.
+  CLASS 3.4 (classy 3.4.1.0 on PyPI) or its `explanatory.ini`.
 - Whether CAMB's `do_late_rad_truncation` changed between 2011 and the
   version used in arXiv:2303.09451 was not read.
 - The CAMB version used in arXiv:2303.09451 was not read.
 - The CAMB v2 neutrino quadrature (Sect. VI of arXiv:2607.14854) was not
   re-read in this pass; the L2 summary is used.
 - The date-sorted search for 2025–2026 Boltzmann-solver papers was rate
-  limited (HTTP 429) and not repeated; the newest papers used are those
+  limited and not repeated;
+ the newest papers used are those
   already in L2 (arXiv:2607.14854, arXiv:2608.24682).

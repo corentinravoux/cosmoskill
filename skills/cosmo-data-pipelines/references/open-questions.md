@@ -14,9 +14,10 @@ Flags: `[src]` abstract read this session; `[src: Sect. n]` body read;
 ### 1.1 Redshift fitters: fast PCA templates, physical archetypes or networks
 <!-- key: redshift-fitters-fast-pca-templates-physical -->
 
-- Side A, PCA templates. Fast and flexible; DESI Redrock met every
-  survey-validation requirement with purity above 99% for all classes
-  (arXiv:2209.14482) [src].
+- Side A, PCA templates. Fast and flexible; the DESI pipeline summary of
+  survey validation gives purities of 99.5% (BGS), 99.8% (LRG), > 99.4%
+  (ELG) and 99.5 ± 0.4% (QSO, Redrock with after-burners)
+  (arXiv:2209.14482) [src: Sect. IV.13].
 - Side B, physical models. PCA fits have no physical constraint beyond
   positive [O II] and produce false fits on spectra with calibration steps
   [src: arXiv:2209.14482, Sect. IV.13]; archetype refits cut catastrophics by
@@ -45,7 +46,7 @@ Flags: `[src]` abstract read this session; `[src: Sect. n]` body read;
   systematics Sect. 5].
 - A middle route splits the sample: property-dependent linear weights for
   DESI DR2 ELG subsamples help in ~10% of subsamples, the neural-network
-  baseline remaining optimal for the full sample (arXiv:2606.18581) [src].
+  baseline remaining optimal for the full sample (arXiv:2606.18581) [src: abstract].
 
 ### 1.3 Randoms: redshifts from the data or from a model
 <!-- key: randoms-redshifts-from-the-data-or-from-a-model -->
@@ -76,8 +77,9 @@ model detection anyway (arXiv:2511.20856) [src].
 
 SCARLET leads on segmentation and reconstruction, DeepDISC on faint
 recall (arXiv:2607.28475) [src]; BLISS outputs posteriors over the number
-and type of sources (arXiv:2601.03422) [src]. Unrecognised blends remain
-14.9–18.0% in Rubin DP1 against HST (arXiv:2610.10986) [src], and no
+and type of sources (arXiv:2601.03422) [src]. Against HST, the unrecognised-blend fraction is
+18.0% for the Rubin DP1 production catalogue at 23 < i < 24.5 and 14.9% for
+DeepDISC on a held-out footprint (arXiv:2610.10986) [src: Sect. V.4, Fig. 9], and no
 release yet ships a probabilistic catalogue as its main product.
 
 ### 1.6 Fibre-assignment corrections when targets outnumber fibres
@@ -89,7 +91,7 @@ but in deep surveys the per-field fibre limit also erases long modes and
 favours underdense regions, which needs per-field and individual weights
 (arXiv:1912.06583) [src]; individual weights correct galaxy–lensing
 cross-spectra to ~1% but not the auto-spectrum at k ≳ 0.2 h Mpc⁻¹
-(arXiv:2110.04883) [src]. Whether PIP, the θ-cut or a modified statistic
+(arXiv:2110.04883) [src: abstract]. Whether PIP, the θ-cut or a modified statistic
 (arXiv:1611.04635) [src] is the right default for 4MOST and PFS is open; the
 DESI choice is in `cosmo-galaxy-clustering`.
 
@@ -99,7 +101,7 @@ DESI choice is in `cosmo-galaxy-clustering`.
 Every success and purity number for DESI is relative to VI of deep co-adds
 of a few thousand to ten thousand spectra per class (arXiv:2208.08516,
 arXiv:2208.08517) [src]; eBOSS inspected 320,161 quasar spectra
-(arXiv:2007.09001) [src]. VI found spurious pipeline features as well as
+(arXiv:2007.09001) [src: abstract]. VI found spurious pipeline features as well as
 redshift errors (arXiv:2208.08516) [src]. The limits are the size of the
 inspected samples, their depth relative to the main survey, and the
 dependence of new networks on them (arXiv:2608.10080) [src].
@@ -164,7 +166,7 @@ dependence of new networks on them (arXiv:2608.10080) [src].
 | Fibre spectrographs cannot sky-subtract well enough for faint targets | Cross-beam switching and dual stare reach < 1% (arXiv:1609.06142) [src]; PCA reaches the Poisson regime over long integrations (arXiv:1007.0648) [src] |
 | Averaging the samples in each pixel is a good enough CMB map | It generally destroys information for total-power detectors (arXiv:astro-ph/9611130) [src] |
 | End-to-end simulations validate a map-maker | Not if they omit the model error; ACT DR6 converged in simulations and was biased on data (arXiv:2210.02243; arXiv:2503.14451, Sect. V.2) [src] |
-| Pipeline redshift errors can be used as given | BOSS underestimates by 1.19–2 (arXiv:1207.7326) [src]; redmonster overestimates by ~54% (arXiv:1607.02432) [src] |
+| Pipeline redshift errors can be used as given | BOSS underestimates by a factor 1.19–1.34 for galaxies and 2 for quasars (arXiv:1207.7326) [src: abstract]; redmonster overestimates by ~54% (arXiv:1607.02432) [src: abstract] |
 | The Euclid Q1 redshift catalogue is a cosmology sample | Every H_E < 22.5 source gets a redshift; under 10% of spectra allow one [src: arXiv:2503.15302, Sect. 9] |
 | DESI DR1 spectral variances are exact | Flux-calibration variance is underestimated, up to a factor 5 at S/N ~ 100 per pixel [src: arXiv:2503.14745, App. E] |
 | DESI DR1 v0 redshift catalogues are final | FIBERMAP metadata errors (e.g. STD_FIBER_RA wrong for ~17% of targets) are fixed only in zcatalog v1 [src: arXiv:2503.14745, App. E] |

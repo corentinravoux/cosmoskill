@@ -127,7 +127,7 @@ author is in preparation and is not citable.
 
 - "Voids give a 1% AP measurement free of systematic errors": see §2.1.
 - "Void lensing is low": resolved for DESI Legacy LRG voids by matched mocks,
-  A_κ = 1.016 ± 0.054 (arXiv:2412.02761; proceedings summary Sartori 2026,
+  A_κ = 1.016 ± 0.054 (arXiv:2412.02761, abstract; proceedings summary Sartori 2026,
   arXiv:2605.19763).
 - A claimed sign change of the ISW effect in voids at z < 0.03 (Hansen et al.
   2025, arXiv:2506.08832, abstract) is a single-group result with an amplitude an order
@@ -258,11 +258,11 @@ tension, treated in `cosmo-distance-ladder-h0`.
 ### 5.4 Neural BAO reconstruction
 <!-- key: neural-bao-reconstruction -->
 
-LiFT claims an effective-volume gain of 1.2–2.0 on DESI DR1 LRGs
-(arXiv:2609.14862). Open: whether a collaboration will adopt a learned
+LiFT claims a figure-of-merit (effective-volume) gain by factors of 1.2, 1.7 and 2.0 in the three DESI DR1 LRG bins
+(arXiv:2609.14862, abstract). Open: whether a collaboration will adopt a learned
 reconstruction in a blinded BAO analysis, and how its theory-systematic budget
-compares with the 0.1–0.2% of standard reconstruction (figure from
-`cosmo-galaxy-clustering` [sec]).
+compares with the combined theory and modelling systematic of standard reconstruction,
+no more than 0.1% (isotropic) and 0.2% (anisotropic) for DESI (arXiv:2402.14070 [src: abstract]).
 
 ## 6. Simulation-based inference
 <!-- key: simulation-based-inference -->
@@ -346,3 +346,7 @@ None of them should be asserted from this skill.
 - The Lyα forest compressed bispectrum (arXiv:2510.23597) and the DES Y3
   lensing-plus-clustering map-level design paper (arXiv:2511.04681): only the
   first lines of the abstracts were read.
+- (Corrected 2026-10-24.) The Nseries offsets of the BOSS density-split
+  analysis in `systematics.md` were given rounded (Δσ8 = 0.0129,
+  Δn_s = 0.0080, Δfσ8 = 0.0066); arXiv:2309.16541, Sect. 4.4.3, writes
+  0.01288, 0.00801 and 0.00657, now quoted.

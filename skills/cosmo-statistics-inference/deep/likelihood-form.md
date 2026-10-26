@@ -61,14 +61,14 @@ the parameter covariance (Euclid Collaboration 2026, arXiv:2604.01309, Eq. 30).
 1. Estimate the reduced skewness of each element over the mocks [src: arXiv:2604.01309, Eqs. 15–17]:
    `Ŝ_3^i = N_s^-1 Σ_n [X_n^(i) − X̄_i]³ / σ̂_i³`.
 2. Compare with the Gaussian-field expectation (Step 1), not with zero.
-3. Repeat in the whitened basis `y = P x` in which the covariance is the identity [src: Eq. 23].
+3. Repeat in the whitened basis `y = P x` in which the covariance is the identity (arXiv:2604.01309) [src: Eq. 23].
    This basis is the one that enters the likelihood, and it changes the picture: off-diagonal
    cumulants that are large in the original basis "are reduced to a level compatible with the noise
    in the estimator", fluctuating around zero with standard deviation 0.01 [src: Sect. 4]; some
    elements keep a significant one-point skewness [src: same]. Lin et al. 2020 find likewise that the
    PCA rotation "reduces the level of skewness and kurtosis in the principal components
    significantly" [src: Sect. 6].
-4. Lin et al. test each principal component with two-sample Kolmogorov–Smirnov tests in 10-fold
+4. Lin et al. (arXiv:1905.03779) test each principal component with two-sample Kolmogorov–Smirnov tests in 10-fold
    cross-validation: 932 realisations split into 10 subsets, the model built on 9, 90 realisations
    drawn from it and compared with the held-out tenth; `p < 0.05` taken as rejection [src: Sect. 4].
 5. For a compressed data vector, test the compressed summaries, not only the raw bins. Vinciguerra
@@ -93,7 +93,7 @@ the parameter covariance (Euclid Collaboration 2026, arXiv:2604.01309, Eq. 30).
 3. Sum each column to a total contamination `ε_e^tot = Σ_{f≠e} S_e,f` [src: Eq. 8].
 4. Why MISE: the Kullback–Leibler divergence was found "overly sensitive to the tails of the
    distribution for our purposes", and the L1 norm performs similarly to MISE [src: Sect. 2.1].
-5. Calibration before testing: draw `N_s` truly Gaussian data sets with the same covariance, 10 or 20
+5. Calibration before testing (arXiv:1707.04488): draw `N_s` truly Gaussian data sets with the same covariance, 10 or 20
    such runs per setup, choose the number of histogram bins that minimises shot-noise structures,
    then leave the pipeline untouched and run the real mocks; show the calibration matrices next to
    the tested ones [src: Sect. 2.2].
@@ -101,11 +101,11 @@ the parameter covariance (Euclid Collaboration 2026, arXiv:2604.01309, Eq. 30).
 **Multivariate divergence from the Gaussian pseudo-likelihood** (Hahn et al. 2019) [src: Sect. III]:
 
 1. Draw a reference sample `Y_ref` from the Gaussian with the mock mean and covariance, of size
-   comparable to the mocks (2000 and 10 000 in their two analyses).
+   comparable to the mocks (2000 and 10 000 in their two analyses; arXiv:1803.06348) [src: Sect. III].
 2. Estimate the Rényi-α or Kullback–Leibler divergence between mocks and reference with
    `k`-nearest-neighbour estimators [src: Eq. 10], with `k = 10`; results "not significantly
    impacted" for `5 < k < 20`.
-3. Compute the same estimator between two Gaussian samples (`X_ref` against `Y_ref`) as the null, and
+3. Compute the same estimator (arXiv:1803.06348) between two Gaussian samples (`X_ref` against `Y_ref`) as the null, and
    resample `Y_ref` 100 times for both. The shift `ΔD̂` between the two distributions measures the
    non-Gaussianity [src: Sect. III, Fig. 1].
 

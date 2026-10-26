@@ -66,9 +66,9 @@ World Cup baseline [src: arXiv:2607.13283, Sect. IV.1]:
   SRoll2 EE at ℓ < 30; ACT DR6 and SPT-3G D1 "lite" likelihoods in
   `candl`; CamSpec cut to ℓ < 1000 in TT, TE and ℓ < 600 in EE "to avoid
   double-counting" with the ground data. Lensing: SPT-3G 2-yr and ACT DR6
-  (ACT + Planck variant).
-- BAO: DESI DR2, all tracers from 0.1 < z < 4.2.
-- SNe: Pantheon+, uncalibrated, 0.01 < z < 2.3.
+  (ACT + Planck variant) [src: arXiv:2607.13283, Sect. IV.1].
+- BAO: DESI DR2, all tracers from 0.1 < z < 4.2 [src: arXiv:2607.13283, Sect. IV.1].
+- SNe: Pantheon+, uncalibrated, 0.01 < z < 2.3 [src: arXiv:2607.13283, Sect. IV.1].
 - Reference model: ΛCDM with free Σm_ν [src: Sect. IV.2].
 
 Excluded on purpose: transverse (angular) BAO from SDSS, because they "may
@@ -208,13 +208,13 @@ World Cup tests on the finalists [src: arXiv:2607.13283, Sect. V.1]:
 - DES Y5 Dovekie SNe in place of Pantheon+ (no M_B tension computed,
   because the calibration differs [src: Table 10 caption]).
 - S8 = 0.789 ± 0.012 from DES Y6 3×2pt as a Gaussian likelihood on the
-  ΛCDM-derived S8, "for simplicity" [src: Sect. V.6].
+  ΛCDM-derived S8, "for simplicity" [src: arXiv:2607.13283, Sect. V.6].
 - BBN: `PRyMordial` grid in (Ω_b h², ΔN_eff or m_e^early/m_e^late),
   PArthENoPE or PRIMAT rates, against the D/H and Y_p of the Numbers
   table; EMG and thawing gravity excluded (gravity modified at BBN) [src:
   Sects. V.1, V.7].
 - Σm_ν ≥ 58 meV, because lower values are in > 2σ tension with
-  oscillation data even for normal ordering [src: Sect. V.4; Fig. 18
+  oscillation data even for normal ordering [src: arXiv:2607.13283, Sect. V.4; Fig. 18
   caption has "60 eV"].
 - Baryonic feedback: marginalising over T_AGN of HMcode 2020, since the
   lensed damping tail depends on non-linear lensing [src: Sect. V.5].
@@ -256,7 +256,7 @@ Both sides, same model class:
   3.1–3.7σ (Gaussian) to 1.6–2.3σ (DMAP) [src: arXiv:2107.10291, Sect. 2].
   Khalife et al. 2023: EDE Q_MPCL 3.7σ, Q_DMAP 2.7σ [src:
   arXiv:2312.09814, Table 1].
-- 2020 round, BOSS full shape [src: abstracts]. Against: EDE at 3σ with
+- 2020 round, BOSS full shape [src: abstract of each]. Against: EDE at 3σ with
   SH0ES and without most LSS, below 2σ with LSS, weaker with physical
   field priors (Hill et al., arXiv:2003.07355); EFT BOSS gives f_EDE <
   0.072 (95%), H0 = 68.54 (+0.52/−0.95), f_EDE < 0.053 with photometric
@@ -291,7 +291,7 @@ itself" [src: arXiv:2312.09814, Sect. 2, Table 1].
   power at high ℓ": extra radiation lowers the damping tail, EDE raises it,
   varying m_e "sits in between" [src: arXiv:2607.13283, Sect. IV.5].
 - Extended CamSpec: ± 0.4σ at most; extended plik: about −0.5σ almost
-  everywhere, −1.1σ for curved varying m_e [src: Sect. V.2].
+  everywhere, −1.1σ for curved varying m_e [src: arXiv:2607.13283, Sect. V.2].
 - ACT DR6 across all its extended models: 66.1 < H0 < 71.0 (68%), lower
   end from neutrino self-interactions, upper end from EDE [src:
   arXiv:2503.14454, Sect. VIII.2].
@@ -434,12 +434,13 @@ V, Table 2]. The pointwise ≈ 5% freedom in E(z) does not translate into
 5% in H0 because pointwise quantiles do not belong to one realisation
 [src: Sect. V].
 
-Calibration route [src: arXiv:2602.06293, Sect. IV, Table 3]: on DESI DR2
-+ CMB + Pantheon+SH0ES, a step in H at low z gains Δχ² ≈ −2 (z_t =
+Calibration route [src: arXiv:2602.06293, Sect. IV, Table 3]: on DESI
+DR2 + CMB + Pantheon+SH0ES, a step in H at low z gains Δχ² ≈ −2 (z_t =
 0.013), w0wa Δχ² = −5, Ω_K −10; a step in M_B at z_t ≈ 0.013 gains
 Δχ² ≈ −40 but "effectively simply removes the SH0ES measurements"; a
-non-minimally coupled scalar with a smoothly varying M_B gains −27 with H0
-= 71.78. Broken distance duality is "a radical ... departure".
+non-minimally coupled scalar with a smoothly varying M_B gains −27
+[src: Sects. V–VI]; the table of App. A lists H0 = 71.78 for it [src:
+App. A]. Broken distance duality is "a radical ... departure".
 
 ## Numbers
 <!-- key: numbers -->
@@ -546,7 +547,7 @@ non-minimally coupled scalar with a smoothly varying M_B gains −27 with H0
 - The Camarena–Marra paper behind M = −19.243 ± 0.032 (ref. [85] of
   arXiv:2602.06293): not identified or read. [src: App. A]
 - Whether the World Cup corrects the SH0ES–Pantheon+ overlap at 0.01 < z
-  < 0.15: not stated in Sect. IV.1; other sections not searched.
+  < 0.15: not stated in Sect. IV.1 of arXiv:2607.13283; other sections not searched.
 - Olympics Table 1 (rendered as a CSV include) and its Tests C and D;
   World Cup Table 10 and Appendix C (text summaries only).
 - Efstathiou 2026 (arXiv:2607.29562): not reread. Efstathiou 2021 read

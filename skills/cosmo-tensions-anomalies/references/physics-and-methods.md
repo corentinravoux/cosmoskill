@@ -67,7 +67,7 @@ posteriors is in the parameters both constrain [sec: stat].
 - A probability p is quoted as the two-sided Gaussian equivalent n with
   erfc(n / sqrt 2) = p, unless a paper says otherwise. The CatWISE dipole
   result is one-sided: p = 5 × 10⁻⁷ is "4.9σ for a normal distribution,
-  one-sided" (Secrest et al. 2021, arXiv:2009.14826) [src].
+  one-sided" (Secrest et al. 2021, arXiv:2009.14826) [src: abstract].
 - A model-preference significance is not a tension. DESI converts Δχ²_MAP
   between w0waCDM and ΛCDM with two extra degrees of freedom: p = exp(−abs
   Δχ² / 2), so −12.5 gives 3.1σ [sec: stat]; DESI's table states the
@@ -81,10 +81,13 @@ posteriors is in the parameters both constrain [sec: stat].
 ### 1.3 Rules that decide most disputes
 <!-- key: rules-that-decide-most-disputes -->
 
-1. Name the reference. H0: 4.4σ to 7.1σ for the same local value across four
-   early endpoints (`results.md` §1.2). S8: four CMB endpoints from 0.819 to
-   0.836 (`results.md` §2.1). CMB against DESI: 1.6σ to 3.7σ across CMB data
-   sets (`results.md` §4).
+1. Name the reference. H0: the printed significances run from 4.5σ (SH0ES
+   against DESI DR2 BAO + BBN, arXiv:2503.14738 [src: Sect. VI]) to 7.1σ
+   (H0DN against Planck + SPT + ACT, arXiv:2510.23823 [src: abstract]). S8:
+   CMB endpoints from 0.819 (Planck PR4, arXiv:2309.10034 [src: Eq. 17]) to
+   0.836 (arXiv:2601.14559 [src: Table 4]). CMB against DESI: 1.6σ (P-ACT,
+   arXiv:2503.14452 [src: abstract]) to 3.7σ (SPT + ACT, arXiv:2506.20707
+   [src: Sect. VII.3]) across CMB data sets.
 2. Name the subspace. DES Y6 3×2pt against the CMB is 2.6σ projected on S8,
    2.2σ in the S8–Ω_m plane and 1.8σ in the full shared space
    (arXiv:2601.14559) [src: Sect. V.2]. The
@@ -95,8 +98,8 @@ posteriors is in the parameters both constrain [sec: stat].
    discrepancy as "above 5.5σ in the supernova calibration parameter M_B" for
    CMB + BAO + SN because M_B "consistently incorporates the calibration
    information while accounting for the small Ω_m tension emerging between
-   CMB, DESI BAO, and uncalibrated supernova data" (arXiv:2607.13283,
-   conclusions) [src]. See also Efstathiou 2021 (arXiv:2103.08723) [sec: h0].
+   CMB, DESI BAO, and uncalibrated supernova data" (arXiv:2607.13283)
+   [src: Conclusions]. See also Efstathiou 2021 (arXiv:2103.08723) [sec: h0].
 4. Do not use R, S or the convolution form on correlated data. ACT and SPT
    are calibrated on Planck and take τ from it; supernova compilations share
    their low-redshift objects; DESI DR1 and DR2 overlap [sec: cmb, de, stat].
@@ -106,7 +109,7 @@ posteriors is in the parameters both constrain [sec: stat].
    combining data sets (arXiv:2601.14559) [src: Sect. IV.6, Eqs. 17–19].
 6. A posterior mean is not a best fit. In extended models the two differ
    through prior-volume effects, which is why a Bayesian limit and a profile
-   likelihood can disagree on the same data (early dark energy, Section 11).
+   likelihood can disagree on the same data (early dark energy, Sect. 11).
 
 ## 2. H0 tension
 <!-- key: h0-tension -->
@@ -116,16 +119,16 @@ and H0 inferred in flat ΛCDM from data that fix the sound horizon r_d (CMB
 anisotropies, or BAO with a BBN baryon density).
 
 How the local side is built [sec: h0]: geometric anchors (Gaia parallaxes,
-detached eclipsing binaries in the Magellanic Clouds, the NGC 4258 maser)
+detached eclipsing binaries in the Magellanic Clouds, the NGC4258 maser)
 calibrate stellar standard candles (Cepheids, TRGB, JAGB, Miras), which
 calibrate M_B of SNe Ia in common hosts; H0 follows from the intercept of
-the SN Hubble diagram at 0.023 < z < 0.15 with q0 fixed. The tension
-expressed in the measured quantity is 0.176 ± 0.035 mag in 5 log H0 for SH0ES
-2022 against Planck (arXiv:2112.04510) [sec: h0].
+the SN Hubble diagram in the Hubble flow with q0 fixed. SH0ES 2022 reports
+"a 5-sigma difference with H0 predicted by Planck+LCDM" (arXiv:2112.04510)
+[src: abstract].
 
 How the early side is built [sec: cmb, h0]: the CMB fixes the angular
-acoustic scale θ_* to 0.02% and, through the physical densities, r_d (147.00
-± 0.24 Mpc for CMB-SPA, arXiv:2506.20707); H0 follows from the distance to
+acoustic scale θ_* and, through the physical densities, r_d (147.00
+± 0.24 Mpc for CMB-SPA, arXiv:2506.20707 [src: Sect. II]); H0 follows from the distance to
 last scattering in the assumed late-time model. BAO measure D/r_d, so BAO +
 BBN gives H0 without CMB anisotropies (arXiv:2503.14738).
 
@@ -135,14 +138,14 @@ Consequences of the construction.
   ΛCDM, the local calibration and the early data cannot all be right.
 - BAO constrain the product H0 r_d and uncalibrated supernovae the shape
   E(z). A model that keeps r_d must change the shape, and the shape is
-  measured (Section 11).
-- The significance is computed as a Gaussian difference by every
-  collaboration; the tables of `results.md` §1.2 follow that convention.
+  measured (Sect. 11).
+- Most collaborations quote the H0 significance as a Gaussian difference in
+  the one parameter H0 [sec: h0].
 
 ## 3. S8 tension
 <!-- key: s8-tension -->
 
-Definition. S8 ≡ σ8 (Ω_m / 0.3)^0.5 is the combination best constrained by
+Definition. S8 ≡ σ8 sqrt(Ω_m/0.3) is the combination best constrained by
 cosmic shear. The tension is the difference between S8 from a low-redshift
 probe and S8 predicted in flat ΛCDM from the primary CMB.
 
@@ -154,13 +157,16 @@ How each side is computed [sec: wl, x, cl].
   point estimate (mean, mode or MAP) differs between surveys, and the mean
   and MAP of one posterior can differ by more than half an error bar.
 - CMB-lensing tomography: cross-spectra of a lensing map with galaxies; the
-  best-measured combination has an exponent near 0.25 to 0.4, not 0.5.
+  best-measured combination has a smaller exponent of Ω_m, for instance
+  σ8 (Ω_m/0.3)^0.25 in the joint ACT + SPT + Planck lensing analysis
+  (arXiv:2504.20038) [src: abstract].
 - Clusters: counts above a mass-proxy threshold with a lensing mass
-  calibration; the best-measured combination has an exponent of 0.2 to 0.3.
+  calibration; the best-measured combination also has a smaller exponent,
+  σ8 (Ω_m/0.3)^0.25 for SPT clusters (arXiv:2401.02075) [src: abstract].
 - tSZ cross-correlations: the bias-weighted electron pressure ⟨b P_e⟩(z),
   which scales as S8^ε(z) with ε ≈ 3 over 0.1 ≤ z ≤ 1 in the FLAMINGO
   simulations and is boosted by feedback (Salcido et al. 2026,
-  arXiv:2605.11083) [src], and is therefore sensitive to S8 and to the gas
+  arXiv:2605.11083) [src: abstract], and is therefore sensitive to S8 and to the gas
   model in the same measurement.
 
 Conventions that break comparisons: the exponent; the point estimate; the
@@ -222,7 +228,7 @@ parameter whose negative values extrapolate the effect of mass on the
 expansion history and on lensing; three inequivalent definitions are in use
 [sec: nu]. The "tension with oscillations" is the distance of that
 parameter from the minimum allowed by oscillation data (0.059 eV, normal
-ordering). The width of a posterior truncated at zero is not a sensitivity
+ordering; arXiv:2503.14744 [src: Sect. V.3]). The width of a posterior truncated at zero is not a sensitivity
 [sec: nu].
 
 ## 6. Cosmic dipole
@@ -251,7 +257,7 @@ Estimators in use [src, abstracts of the papers in `results.md` §7].
 
 | Estimator | Used by | Remark |
 |---|---|---|
-| Linear and quadratic estimators on a masked sky | arXiv:2010.08366 | a linear estimator on a masked sky has a general bias in direction; a quadratic estimator recovers the direction to better than one degree and the amplitude to better than 10⁻³ for 10⁷ simulated sources (Siewert et al. 2021, arXiv:2010.08366) |
+| Linear and quadratic estimators on a masked sky | arXiv:2010.08366 | a linear estimator on a masked sky has a general bias in direction; a quadratic estimator recovers the direction to better than one degree and the amplitude to better than 10⁻³ for 10⁷ simulated sources (Siewert et al. 2021, arXiv:2010.08366) [src: abstract] |
 | Bayesian evidence comparison of hypotheses for the same counts | arXiv:2212.07733 | the Galactic mask leaks dipole power to higher multipoles |
 | Negative-binomial likelihood | arXiv:2509.16732 | multi-component radio sources overdisperse the counts |
 | Joint kinematic + residual model across catalogues | arXiv:2503.02470 | uses the different D_kin of each catalogue to separate the two |
@@ -291,7 +297,7 @@ simulations. The statistics named in the papers read this session [src]:
 | Quadrupole–octopole alignment | S_QO ≡ (1/3) Σ |w^(2;1,2) · w^(3;i,j)|, with w the cross products of multipole vectors [src: Eq. 12, 13] | arXiv:2310.12859 |
 | Hemispherical power asymmetry, dipolar modulation | variance-asymmetry estimators and ℓ to ℓ ± 1 mode coupling; angular clustering of local bandpower directions | arXiv:1906.02552; arXiv:2504.05597 |
 | Lack of power | lower-tail probability of the low-ℓ variance, in temperature alone or jointly with polarisation | arXiv:2312.09989 |
-| Cold Spot | "an unexpected cold ~10° region with p-value ≲ 0.01 in standard ΛCDM" | arXiv:2211.16139 |
+| Cold Spot | "an unexpected cold ~10° region with p-value ≲ 0.01 in standard ΛCDM" [src: abstract] | arXiv:2211.16139 |
 
 A posteriori status. The Planck collaboration reports p-values for these
 tests as null-hypothesis tests and does not combine them (arXiv:1906.02552)
@@ -305,7 +311,7 @@ tests as null-hypothesis tests and does not combine them (arXiv:1906.02552)
    the same mode couplings (arXiv:1906.02552, conclusions) [src].
 3. The joint probability of four of them, ≤ 3 × 10⁻⁸ (arXiv:2310.12859),
    becomes 3σ if the four smallest p-values were picked from about 16
-   tests and 2σ from about 50 (Guth & Namjoo 2026, arXiv:2602.10178) [src].
+   tests and 2σ from about 50 (Guth & Namjoo 2026, arXiv:2602.10178) [src: abstract of each].
 
 How the look-elsewhere correction of arXiv:2602.10178 works: assume N
 independent tests, select the four smallest p-values, and ask how often
@@ -327,8 +333,8 @@ an ideal window, and compared with the ΛCDM rms expected for that window
 through a χ² with three degrees of freedom [sec: pv]. The amplitude, the
 window, the depth and the error model are all part of the result.
 Definitions, estimators and their equations are in
-`cosmo-peculiar-velocities` `physics-and-methods.md` §6. A bulk flow at
-150–200 h⁻¹Mpc is not the same test as the number-count dipole at Gpc
+`cosmo-peculiar-velocities` `physics-and-methods.md` Sect. 6. A bulk flow at
+150–200 h⁻¹Mpc (arXiv:2302.02028) [src: abstract] is not the same test as the number-count dipole at Gpc
 scales; they are related only if one posits a single coherent flow.
 
 ## 9. JWST high-redshift abundance
@@ -346,8 +352,8 @@ it constrains ε.
 What enters the observed side: photometric or spectroscopic redshift; the
 stellar mass from an SED fit, for which arXiv:2604.18683 names AGN
 contamination, dust attenuation and the lack of JWST/MIRI constraints as the
-systematic uncertainties [src]; the survey volume. Each can move a galaxy across the bound, which is why
-the result depends on spectroscopy (`results.md` §10, `systematics.md` §8).
+systematic uncertainties [src: abstract]; the survey volume. Each can move a galaxy across the bound, which is why
+the result depends on spectroscopy (`results.md` Sect. 10, `systematics.md` Sect. 8).
 The same data constrain the UV luminosity function, where the comparison is
 with a model of star-formation efficiency rather than with a hard bound
 (Prada et al. 2026, arXiv:2604.18683) [src].
@@ -389,11 +395,11 @@ fixed θ_* needs a smaller r_d or a change of the late-time distance integral.
 The no-go arguments against late-time models.
 
 - Calibration argument: the ladder constrains M_B, and any smooth change of
-  H(z) at z > 0.02 is bounded by BAO and uncalibrated supernovae (Efstathiou
+  H(z) at low redshift is bounded by BAO and uncalibrated supernovae (Efstathiou
   2021, arXiv:2103.08723; Efstathiou 2026, arXiv:2607.29562) [sec: h0]. A
   model that fits SH0ES, DESI BAO and supernovae needs a step in M_B at z ~
   0.01 or a violation of distance duality (Bansal & Huterer 2026,
-  arXiv:2602.06293) [sec: h0].
+  arXiv:2602.06293) [src: abstract].
 - Normalisation wall and shape wall: at fixed r_d and θ_s, δH0/H0 ≃ δI/I
   with I = ∫ dz/E(z); a non-parametric reconstruction of E(z) from
   unanchored Pantheon+ supernovae and DESI DR2 BAO allows a fractional

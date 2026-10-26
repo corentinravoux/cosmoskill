@@ -289,7 +289,7 @@ Default Boltzmann precision settings are not sufficient for DR6-class data
 accuracy settings, and emulators are trained on high-precision spectra
 [src] (arXiv:2506.20707). The helium abundance from different BBN codes
 has negligible impact on the primary spectra, but the N_eff assumed in the
-BBN table (3.044 versus 3.046) must be made consistent [src]
+BBN table (3.044 versus 3.046) must be made consistent [src: Sect. III]
 (arXiv:2503.14454).
 
 ## 12. Correlated data and common inputs when combining experiments

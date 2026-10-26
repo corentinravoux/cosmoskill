@@ -33,7 +33,7 @@ LRGs) and clustering redshifts against DESI DR1 before observing
 **Next targets.** DESI's second phase moves to Lyman-break galaxies at
 z ~ 2–4.5, where decontamination from quasars and low-redshift ELGs is done
 after target selection by networks trained on visually inspected spectra
-(Choppin de Janvry et al. 2026, arXiv:2608.10080) [src].
+(Choppin de Janvry et al. 2026, arXiv:2608.10080) [src: abstract].
 
 ## 2. Fibre assignment and survey operations
 <!-- key: fibre-assignment-and-survey-operations -->
@@ -55,22 +55,22 @@ at an efficiency above 90% (Blanton et al. 2003, arXiv:astro-ph/0105535)
 targets reached depends on the assignment scheme. Proposed schemes: a
 "draining" algorithm that maximises targets in the first tiles and a gain of
 3.5–4.5% from small focal-plane rotations (Morales et al. 2011,
-arXiv:1103.0988) [src]; simulated annealing ("Configure") for the ~960 WEAVE
-fibres (Hughes et al. 2022, arXiv:2209.01145) [src]; a two-step
-assign-then-resolve-collisions algorithm that gains 10% in completeness over
-rank ordering in a 150-fibre field (Kwon et al. 2026, arXiv:2601.02795)
-[src].
+arXiv:1103.0988) [src: abstract]; simulated annealing ("Configure") for the ~960 WEAVE
+fibres (Hughes et al. 2022, arXiv:2209.01145) [src: abstract]; a two-step
+assign-then-resolve-collisions algorithm that assigns on average 10% more
+targets than a simple algorithm in a 150-fibre field (Kwon et al. 2026,
+arXiv:2601.02795) [src: Sects. 2.1, 4].
 
 **More targets than fibres.** In deep surveys such as PFS the number of
 galaxies per field is nearly fixed by the number of fibres, which erases
 modes longer than the field and favours underdense regions; weighting by the
 number of targets per field and by individual inverse probability recovers
 the correlation function to better than 1% above 10 h⁻¹ Mpc (Sunayama et al.
-2020, arXiv:1912.06583) [src]. The same assignment correlates structure at
+2020, arXiv:1912.06583) [src: abstract]. The same assignment correlates structure at
 different redshifts and suppresses galaxy–lensing cross-spectra; individual
 inverse-probability weights correct the cross-spectrum to ~1%, while the
 auto-spectrum is not fully corrected at k ≳ 0.2 h Mpc⁻¹ (Makiya et al. 2021,
-arXiv:2110.04883) [src].
+arXiv:2110.04883) [src: abstract].
 
 **Correction families** (detail in `cosmo-galaxy-clustering`):
 pair-inverse-probability (PIP) weights from rerunning the assignment with
@@ -121,9 +121,9 @@ Variants: a 2D background model built before rectification, insensitive to
 cosmic rays, so that sky subtraction can come right after the flat field
 (Kelson 2003, arXiv:astro-ph/0303507) [src]; non-negative matrix
 factorisation in place of PCA, giving about 10 times as many valid
-eigenspectra (Kolganov et al. 2023, arXiv:2312.06761) [src]; LAMOST uses
+eigenspectra (Kolganov et al. 2023, arXiv:2312.06761) [src: abstract]; LAMOST uses
 sky emission lines to correct ~4% fibre-throughput uncertainty, then PCA
-(Bai et al. 2017, arXiv:1705.02079) [src].
+(Bai et al. 2017, arXiv:1705.02079) [src: abstract].
 
 **Flux calibration.** Standard stars fitted with stellar templates per
 exposure; DESI checks the result on DA white dwarfs and corrects for
@@ -208,11 +208,11 @@ correction (Rubin Observatory Team 2026, arXiv:2603.23786)
 - Brighter-fatter: star sizes grow linearly with flux by up to 2% over the
   CCD dynamic range, because accumulated charge shifts pixel boundaries;
   the same physics makes flat-field pixels correlated (Antilogus et al.
-  2014, arXiv:1402.0725) [src]. In DECam the flat-field correlations fall
+  2014, arXiv:1402.0725) [src: abstract]. In DECam the flat-field correlations fall
   as r^−2.5, vary by 20% between chips with silicon resistivity, and bias
   shapes of bright stars beyond lensing requirements unless reverse charge
   shifts are applied at pixel level; residuals in stellar size remain
-  (Gruen et al. 2015, arXiv:1501.02802) [src].
+  (Gruen et al. 2015, arXiv:1501.02802) [src: abstract].
 - Stray electric fields in CCDs, crosstalk, charge-transfer inefficiency,
   vampire pixels, phosphorescence and bleed trails appear as known issues in
   Rubin DP1 [src: arXiv:2603.23786, Sect. V.1 outline].
@@ -317,7 +317,7 @@ arXiv:2405.10239 [src].
 | Family | Idea | Example | Source |
 |---|---|---|---|
 | Destriping | low-frequency noise as a sum of baselines whose amplitudes are fitted by maximum likelihood; Madam adds the noise spectrum as a prior | Planck LFI | Keihänen et al. 2005, arXiv:astro-ph/0412517 [src] |
-| Destriping by Gibbs sampling | noise filtering and binning as two cheap steps; baselines down to one sample; chain gives residual-noise information; CG faster for a single ML map | BeyondPlanck, Planck 30 GHz | Keihänen et al. 2020, arXiv:2011.06024 [src] |
+| Destriping by Gibbs sampling | noise filtering and binning as two cheap steps; baselines down to one sample; chain gives residual-noise information; CG faster for a single ML map | BeyondPlanck, Planck 30 GHz | Keihänen et al. 2020, arXiv:2011.06024 [src: abstract] |
 | Template fitting of instrument effects | ADC non-linearity and polarisation efficiencies fitted from data redundancy | Planck HFI SRoll2 | Delouis et al. 2019, arXiv:1901.11386 [src] |
 | Maximum likelihood with extended data model | d = P m + C c + S s + n, with cut-sample amplitudes c and model-error degrees of freedom s near bright sources; maximum-posterior solution (AᵀN⁻¹A + Π)⁻¹AᵀN⁻¹d, a ~10⁹ × 10⁹ system solved by preconditioned CG | ACT DR6 | arXiv:2503.14451 [src: Sect. III.3, Eqs. 3–5] |
 | Filter and bin | high-pass filter each detector's TOD, then bin; transfer function from simulations | SPT-3G | Quan et al. 2026, arXiv:2603.20163 [src] |
@@ -383,7 +383,7 @@ arXiv:2007.09000) [src].
 | Template subtraction, mode projection | regress or project out template maps in C_ℓ | original template subtraction is biased; basic mode projection unbiased; extended mode projection biased; all add variance | Elsner et al. 2016, arXiv:1509.08933 [src] |
 | Common regression framework | all methods as regressions; extension to multiplicative contamination and cleaned maps | — | Weaverdyck & Huterer 2021, arXiv:2007.14499 [src] |
 | Neural network (SYSNet) | non-linear density model with k-fold cross-validation and feature elimination; beats linear and quadratic fits on eBOSS ELGs | can remove real modes (see `cosmo-galaxy-clustering`) | Rezaie et al. 2020, arXiv:1907.11355 [src] |
-| Iterative and ElasticNet-type decontamination, DES Y3 lenses | several methods, systematic uncertainty from their spread | biases ≤ 0.5σ in (Ω_m, b) on log-normal mocks | Rodríguez-Monroy et al. 2022, arXiv:2105.13540 [src] |
+| Iterative and ElasticNet-type decontamination, DES Y3 lenses | several methods, systematic uncertainty from their spread | biases ≤ 0.5σ in (Ω_m, b) on log-normal mocks | Rodríguez-Monroy et al. 2022, arXiv:2105.13540 [src: abstract] |
 | Forward model by injection (Obiwan, Balrog) | the selection function from the real pipeline | costly; see Sect. 10 | arXiv:2007.08992, arXiv:2012.12825 [src] |
 
 ## 10. Source injection and end-to-end simulation of pipelines

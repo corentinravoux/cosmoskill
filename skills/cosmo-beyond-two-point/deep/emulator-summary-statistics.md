@@ -70,7 +70,7 @@ Other suites, one line each:
   Latin hypercube, halo catalogues at 0 ≤ z ≤ 1.48; Dark Emulator predicts
   halo statistics, not galaxy ones, and the HOD is applied at the equation
   level rather than by populating mocks (Nishimichi et al. 2019,
-  arXiv:1811.09504) [src].
+  arXiv:1811.09504) [src: abstract].
 - **Quijote** (SimBIG). 1 (h⁻¹Gpc)³ boxes with 1024³ particles on a Latin
   hypercube, z = 0.5, Rockstar halos (arXiv:2310.15246) [src: Sect. II.1];
   used without an emulator (Step 5).
@@ -169,15 +169,15 @@ Sect. VIII].
 
 Other statistics and ranges: Aemulus VI emulates w_p, ξ_0, ξ_2, the
 underdensity probability function P_U(s) and the density-marked correlation
-M(s) over 0.1–50 h⁻¹Mpc (arXiv:2210.03203) [src]; Aemulus V w_p, ξ_0, ξ_2 over
-0.1–60 h⁻¹Mpc in three BOSS redshift bins (arXiv:2203.08999) [src]; eBOSS
-LRG 7–60 h⁻¹Mpc baseline and 0.1–60 h⁻¹Mpc extended (arXiv:2106.14961) [src];
+M(s) over 0.1–50 h⁻¹Mpc (arXiv:2210.03203) [src: abstract]; Aemulus V w_p, ξ_0, ξ_2 over
+0.1–60 h⁻¹Mpc in three BOSS redshift bins (arXiv:2203.08999) [src: abstract]; eBOSS
+LRG 7–60 h⁻¹Mpc baseline and 0.1–60 h⁻¹Mpc extended (arXiv:2106.14961) [src: abstract];
 HSC-Y1 + SDSS w_p from 2 and ΔΣ from 3 up to 30 h⁻¹Mpc, excluding the BAO
-(arXiv:2111.02419) [src]; P(k) multipoles ℓ = 0, 2, 4 of four BOSS DR12
+(arXiv:2111.02419) [src: abstract]; P(k) multipoles ℓ = 0, 2, 4 of four BOSS DR12
 samples, 0.2 < z < 0.75, to k_max = 0.25 h Mpc⁻¹ with an emulator of the
-redshift-space halo power spectrum (arXiv:2110.06969) [src]; SimBIG the bispectrum and a CNN summary of the
-field (arXiv:2310.15246) [src]; DES Y3 tomographic shear peaks including
-cross-peaks, with C_ℓ (arXiv:2110.10135) [src].
+redshift-space halo power spectrum (arXiv:2110.06969) [src: abstract]; SimBIG the bispectrum and a CNN summary of the
+field (arXiv:2310.15246) [src: abstract]; DES Y3 tomographic shear peaks including
+cross-peaks, with C_ℓ (arXiv:2110.10135) [src: abstract].
 
 The kNN binning is designed for non-linear and quasi-linear scales and is
 "not sensitive to large-scale features such as the BAO by design"; the k

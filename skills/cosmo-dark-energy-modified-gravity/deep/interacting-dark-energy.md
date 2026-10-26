@@ -239,8 +239,9 @@ arXiv:2601.07361, main text]:
   mimics" CPL while the field's own equation of state stays quintessence-like
   at all redshifts. CQ needs no phantom crossing.
 - **CF.** `beta < 0` and `w < −1`: energy flows from dark energy to dark
-  matter, dark matter dilutes more slowly, and `Omega_m` reaches about 0.6
-  today, compensated in the distances by a strongly phantom `w`; growth is
+  matter, dark matter dilutes more slowly, and `Omega_m` is high today
+  (0.613 ± 0.062 with the `f sigma8` data; arXiv:2601.07361, Supp.
+  Sect. III.4), compensated in the distances by a strongly phantom `w`; growth is
   strongly suppressed (low `sigma8`, `S8`). The authors call this "an
   extreme corner of the IDE parameter space".
 - **Stability, rewritten** [der: Li's CF has `+aQ` in the dark-energy
@@ -351,16 +352,11 @@ arXiv:2601.07361, Conclusion].
 | Dark scattering `A_ds`; `w0`, `wa` | 9.8 (+2.8/−9.5) bn/GeV; −0.79 (+0.05/−0.06), −0.56 (+0.24/−0.15) (CPL alone: −0.76 ± 0.06, −0.77 (+0.23/−0.20)) | DES Y3 3×2pt + DESI DR2 + DESY5 + Planck | arXiv:2512.17684 | abstract |
 | FoM gain from DES Y3 on (`w0`, `wa`) | ~12% CPL, ~25% dark scattering | same vs DESI + SN + CMB | arXiv:2512.17684 | abstract |
 
-Reading the table: the IDE Δχ² values sit within about 2 of CPL with the
-same number of extra parameters (two); the extra fit of CF over CPL is 1.5
-in total χ² for DES-Dovekie [der: −15.64 − (−14.13), Table 2]. The
+Reading the table [der]: the IDE Δχ² values are close to the CPL ones with
+the same number of extra parameters (two). The
 "3–5σ" of the abstract refers to the departure of the marginalised
 parameters from the non-interacting limit, not to a `Delta chi2`
-conversion [src: arXiv:2601.07361, main text]; converted with two degrees
-of freedom as DESI does, a total Δχ² of −13.7 to −15.6 is a 3.3–3.6σ
-preference [der: Wilks with 2 d.o.f.; L2 conversion convention in
-`physics-and-methods.md#model-comparison-practice`], close to the CPL value
-for the same data.
+conversion [src: arXiv:2601.07361, main text].
 
 ## What goes wrong
 <!-- key: what-goes-wrong -->

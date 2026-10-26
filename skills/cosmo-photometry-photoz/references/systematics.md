@@ -20,15 +20,16 @@ covers the mechanisms upstream of those priors.
 **Mechanism.** Errors in per-exposure zero points and in the large-scale
 flat field imprint spatial patterns on magnitudes and therefore on colours,
 photo-z and target densities. Sky flats alone can be wrong by up to 0.13 mag
-peak to valley (arXiv:1111.2058) [src].
+peak to valley (arXiv:1111.2058) [src: abstract].
 **Size after calibration.** About 1% for SDSS ubercal, dominated by
-unmodelled atmosphere (arXiv:astro-ph/0703454) [src]; 7 mmag uniformity for
+unmodelled atmosphere (arXiv:astro-ph/0703454) [src: abstract]; 7 mmag uniformity for
 DES Y3 and below 1.8 mmag RMS for the DES Y6 star catalogue
-(arXiv:1706.01542, arXiv:2305.01695) [src].
+(arXiv:1706.01542, arXiv:2305.01695) [src: abstract].
 **Validation.** Independent standards: stellar colour regression and
-corrected Gaia XP synthetic photometry found position-dependent errors of up
-to 15–23 mmag in survey releases that had passed their internal checks
-(arXiv:2309.11225, arXiv:2309.11533) [src].
+corrected Gaia XP synthetic photometry found errors of up to 15 mmag in the
+stellar-locus calibration of J-PLUS DR3 (arXiv:2309.11225) and
+position-dependent errors of up to 23 mmag in S-PLUS DR4 (arXiv:2309.11533),
+releases that had passed their internal checks [src: abstract].
 **Referee expects:** Padmanabhan et al. 2008, Burke et al. 2018, and an
 external check against Gaia XP or another survey.
 
@@ -39,14 +40,14 @@ external check against Gaia XP or another survey.
 aerosols and focal-plane position, so a colour-independent zero point leaves
 an error that depends on the source SED and, for galaxies, on redshift.
 **Size.** Up to 2% in some DES bands before correction, below 0.3% after
-(arXiv:1601.00117) [src]; filter-edge shifts of several nanometres across the
+(arXiv:1601.00117) [src: abstract]; filter-edge shifts of several nanometres across the
 LSSTCam focal plane (arXiv:2606.31822) [src].
 Off-axis sources in several cameras have their redshifts overestimated
 because interference filters shift with angle of incidence; knowing the mean
 wavelength of each passband per observation is almost sufficient to
 correct it, because that mean is independent of the source SED; in Phosphoros
 on CFHTLS T007 the bias around z = 0.5 falls from Δz ~ 0.04 to ~ 0.02
-(Euclid Collaboration: Paltani et al. 2024, arXiv:2310.14716) [src].
+(Euclid Collaboration: Paltani et al. 2024, arXiv:2310.14716) [src: abstract].
 **Mitigation.** Forward modelling of passbands per exposure with chromatic
 corrections (FGCM, arXiv:1706.01542) [src]; in situ throughput metrology
 (arXiv:astro-ph/0604285, arXiv:2606.31822) [src].
@@ -58,10 +59,11 @@ corrections (FGCM, arXiv:1706.01542) [src]; in situ throughput metrology
 sky; infrared-emission maps also contain the cosmic infrared background, so
 the correction is correlated with the extragalactic structure being
 measured.
-**Size.** SFD normalisation 14% too high (arXiv:1012.4804) [src]; DESI
-stellar reddening differs from SFD by up to 80 mmag in E(B−V)
-(arXiv:2409.05140) [src]; extragalactic imprints at the millimagnitude level
-in nine of ten maps tested (arXiv:1808.03294) [src].
+**Size.** SFD needs a 14% recalibration, E(B−V) = 0.86 E(B−V)_SFD
+(arXiv:1012.4804) [src: abstract, Sect. I]; DESI stellar reddening differs
+from SFD by up to 80 mmag in E(B−V) (arXiv:2409.05140) [src: abstract];
+extragalactic imprints at the millimagnitude level in nine of ten maps
+tested (arXiv:1808.03294) [src: abstract].
 **Mitigation.** Recalibrated coefficients (arXiv:1012.4804), CIB-cleaned maps
 (CSFD, arXiv:2306.03926), stellar reddening maps (arXiv:2409.05140) [src];
 compare clustering results under two maps.
@@ -119,7 +121,7 @@ Tomographic bins selected on photo-z correlate with shear; propagating shear
 responses through the selection (AnaCal) keeps the induced multiplicative
 bias within |m| < 3 × 10⁻³ in all five bins for a template and a
 machine-learning photo-z on LSST Y10-like blended simulations (Li et al.
-2026, arXiv:2610.00999) [src].
+2026, arXiv:2610.00999) [src: abstract].
 
 ## 6. Wrong redshifts in the calibration sample
 <!-- key: wrong-redshifts-in-the-calibration-sample -->
@@ -212,11 +214,12 @@ mimic or distort n(z) (arXiv:2206.13633) [src: Sect. 4.2.6].
   galaxies [src: Sect. 4.2.6]. It must be modelled at Stage-IV precision.
 - *Small scales.* S/N peaks at small separations, but the 1-halo regime
   forces a minimum separation of 1.5 Mpc in the Euclid pipeline
-  (arXiv:2505.10416) [src]; DES Y6 uses 1.5–5 Mpc (arXiv:2510.23565) [src].
-- *Bias evolution.* Mitigated by autocorrelations and self-consistency at
-  |Δz| < 0.006 on KiDS mocks, but the result depends on the n(z) model:
-  replacing the truth by a colour-based n(z) raises biases to |Δz| ~ 0.04
-  (arXiv:2007.01846) [src]. In DES Y6, Cardinal mocks with all
+  (arXiv:2505.10416) [src: abstract]; DES Y6 uses 1.5–5 Mpc
+  (arXiv:2510.23565) [src: abstract].
+- *Bias evolution.* Mitigated by autocorrelations and self-consistency at a
+  level of |Δz| < 0.006 on KiDS mocks, but the result depends on the n(z) model:
+  replacing the truth by a colour-based n(z) raises biases to up to |Δz| ~
+  0.04 (arXiv:2007.01846) [src: abstract]. In DES Y6, Cardinal mocks with all
   systematics make bias evolution the dominant error; it is absorbed by a
   first-order Legendre systematic function per bin, with Gaussian priors set
   by the mock fit, and the 700 deg² of BOSS–eBOSS overlap are too small to
@@ -235,21 +238,21 @@ arXiv:2503.19440) [src]. In KiDS-Legacy, the bin-four CC shift (0.035 ±
 
 Template sets that miss real SEDs bias template photo-z; starbursts were 18%
 of the CFHTLS spectroscopic sample and 54% of its catastrophic errors
-(arXiv:astro-ph/0603217) [src]. Most codes quote 68% intervals that are too
-small and are all significantly biased (CANDELS, arXiv:1308.5353) [src].
+(arXiv:astro-ph/0603217) [src: abstract]. Most codes quote 68% intervals that are too
+small and are all significantly biased (CANDELS, arXiv:1308.5353) [src: abstract].
 Forward models carry the same risk at the population level: GalSBI-SPS with
 literature parameters has mean-n(z) offsets of 0.01–0.08 before fitting
-(arXiv:2505.21610) [src]; the Euclid Q1 pipeline still needs a bias
-correction for cosmology (arXiv:2503.15306) [src].
+(arXiv:2505.21610) [src: abstract]; the Euclid Q1 pipeline still needs a bias
+correction for cosmology (arXiv:2503.15306) [src: abstract].
 
 ## 11. Photo-z errors in photometric clustering
 <!-- key: photo-z-errors-in-photometric-clustering -->
 
 Lens samples need n(z) as much as sources do: in Euclid DR1 the mean of the
-clustering-sample n(z) must be known to 0.004(1+z) (arXiv:2604.00805) [src];
+clustering-sample n(z) must be known to 0.004(1+z) (arXiv:2604.00805) [src: abstract];
 spatially varying n(z) biases w(θ) by up to ~10% at small scales in the
 highest bin and can shift σ8 by 1.7σ in an LSST-like set-up
-(arXiv:2609.15542) [src]. In photometric BAO, typical photo-z uncertainties
+(arXiv:2609.15542) [src: abstract]. In photometric BAO, typical photo-z uncertainties
 shift the measured BAO scale and must be corrected (Saulder et al. 2025,
 arXiv:2501.10759) [src].
 

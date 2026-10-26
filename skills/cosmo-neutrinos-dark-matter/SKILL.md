@@ -30,12 +30,11 @@ re-verify against the cited paper before a number enters a manuscript.
 <!-- key: what-an-expert-holds-in-mind -->
 
 - DESI DR2 BAO + CMB: Σm_ν < 0.0642 eV (95%, ΛCDM), < 0.163 eV
-  (w0waCDM), 0.0691–0.0774 eV with other Planck likelihoods (arXiv:2503.14744).
+  (w0waCDM), < 0.0691 eV (PR3 plik) or < 0.0774 eV (PR4 LoLLiPoP–HiLLiPoP) with other Planck likelihoods (arXiv:2503.14744, abstract; Sect. IV.4).
 - Three widths, one data set: 0.020 eV (truncated posterior), 0.043 eV
-  (profile), 0.053 eV (effective mass); only the last two measure
-  sensitivity (arXiv:2503.14744).
+  (profile), 0.053 eV (effective mass); only the last two measure sensitivity (arXiv:2503.14744, abstract; Sects. V.1, V.2).
 - Effective mass −0.101 (+0.047/−0.056) eV, 3σ below the oscillation
-  minimum (0.059 eV normal, 0.10 eV inverted); none in w0waCDM,
+  minimum (0.059 eV normal, 0.10 eV inverted) (arXiv:2503.14744, abstract; Sects. I, V.2); none in w0waCDM,
   with free lensing amplitudes or τ ≈ 0.09
   (arXiv:2407.10965, arXiv:2511.01967, arXiv:2504.16932).
 - Geometric bound: 0.13 eV with BOSS instead of DESI BAO,
@@ -44,29 +43,29 @@ re-verify against the cited paper before a number enters a manuscript.
 - τ: error doubled 0.10 eV; low-ℓ polarisation removed
   0.19 eV (arXiv:2503.14454, Sect. G.2).
 - Ordering: Bayes factor 10 (DESI); 46.5 or > 460, other priors
-  (arXiv:2407.18047, arXiv:2606.18987); oscillations alone undecided
-  (arXiv:2410.05380); JUNO: normal at ≥ 2.1σ (arXiv:2609.37895).
-- Laboratory: KATRIN m_ν < 0.45 eV, 90% CL (arXiv:2406.13516);
-  KamLAND-Zen m_ββ < 28–122 meV (arXiv:2406.11438). Neither is Σm_ν.
-- N_eff: standard 3.044 (arXiv:2008.01074). CMB-only below
+  (arXiv:2407.18047, abstract; arXiv:2606.18987, abstract); oscillations alone undecided
+  (arXiv:2410.05380); JUNO: normal at ≥ 2.1σ (arXiv:2609.37895, abstract).
+- Laboratory: KATRIN m_ν < 0.45 eV, 90% CL (arXiv:2406.13516, abstract);
+  KamLAND-Zen m_ββ < 28–122 meV (arXiv:2406.11438, abstract). Neither is Σm_ν.
+- N_eff: standard 3.044 (arXiv:2008.01074, abstract). CMB-only below
   (ACT 2.60, CMB-SPA 2.82 ± 0.12), with DESI above (3.23 ± 0.18)
-  (arXiv:2503.14454, arXiv:2506.20707, arXiv:2503.14744). BBN + CMB: 2.925 ± 0.082 (arXiv:2601.22239).
+  (arXiv:2503.14454, Sect. VI.1.1; arXiv:2506.20707, Eq. 73; arXiv:2503.14744, Sect. IV.3). BBN + CMB: 2.925 ± 0.082 (arXiv:2601.22239, abstract).
 - Thermal-relic WDM: Lyα 1.9–5.7 keV by thermal prior
-  (arXiv:1912.09397, arXiv:2309.04533); satellites 6.5 keV
-  (arXiv:2008.00022); JWST lensing 5.6–7.4 keV (Bayes factor 10:1) by data and subhalo
-  prior (arXiv:2511.07765, arXiv:2511.07513); M_hm-to-keV slopes differ
-  (−10/3, −3.564).
-- Fuzzy DM at 10⁻²² eV excluded as all DM; Lyα 1.9 × 10⁻²¹ to 2 × 10⁻²⁰ eV (arXiv:2606.06969,
-  arXiv:2007.12705).
-- Self-interaction: < 0.13–0.47 cm²/g in clusters (arXiv:2012.06611,
-  arXiv:1503.07675); velocity-dependent models survive (arXiv:2006.12515).
+  (arXiv:1912.09397, abstract; arXiv:2309.04533, abstract); satellites 6.5 keV
+  (arXiv:2008.00022, abstract); JWST lensing 5.6–7.4 keV (Bayes factor 10:1) by data and subhalo
+  prior (arXiv:2511.07765, abstract; arXiv:2511.07513, abstract); M_hm-to-keV slopes differ
+  (−10/3 in arXiv:2511.07765 Eq. 10, −3.564 in arXiv:2511.07513 Eq. 18).
+- Fuzzy DM at 10⁻²² eV excluded as all DM; Lyα 1.9 × 10⁻²¹ to 2 × 10⁻²⁰ eV (arXiv:2606.06969, abstract,
+  arXiv:2007.12705, abstract).
+- Self-interaction: < 0.13–0.47 cm²/g in clusters (arXiv:2012.06611, abstract,
+  arXiv:1503.07675, abstract); velocity-dependent models survive (arXiv:2006.12515).
 - Forecasts: SO σ(Σm_ν) = 0.03 eV, 0.015 eV + LiteBIRD, σ(N_eff) =
-  0.045 (arXiv:2503.00636); Euclid + Planck 23 meV (arXiv:2405.06047).
+  0.045 (arXiv:2503.00636, Sect. 4); Euclid + Planck 23 meV (arXiv:2405.06047, abstract).
   CMB-S4 cancelled.
 - Tighter: CMB-SPA + DESI DR2 < 0.055 eV
-  (arXiv:2506.20707); EFT reanalysis 0.049 eV
-  (arXiv:2601.16165); 0.043 eV, many background probes
-  (arXiv:2405.03368).
+  (arXiv:2506.20707, Sect. VII.4.6); EFT reanalysis 0.049 eV
+  (arXiv:2601.16165, abstract); 0.043 eV, many background probes
+  (arXiv:2405.03368, abstract).
 
 ## Systematics a referee checks
 <!-- key: systematics-a-referee-checks -->
@@ -82,17 +81,17 @@ multipoles; shared inputs of combined limits; σ/m velocity.
 ## Errors that recur
 <!-- key: errors-that-recur -->
 
-- Quoting 0.064 eV without "ΛCDM".
-- σ = 0.020 eV read as DESI's sensitivity; the forecast as met.
+- Quoting 0.064 eV without "ΛCDM" (arXiv:2503.14744, abstract).
+- σ = 0.020 eV read as DESI's sensitivity; the forecast as met (arXiv:2503.14744, abstract; arXiv:1308.4164, abstract).
 - Claiming cosmology measured negative mass or settled the ordering.
 - Attributing the bound to growth suppression or BAO alone.
-- KATRIN quoted at 95%, or as a limit on Σm_ν.
-- N_eff = 3.046 as current (3.044; 3.046 is the Planck 2013/2018
-  value); N_ν (baseline 3) mixed with N_eff.
+- KATRIN quoted at 95% (it quotes 90%, arXiv:2406.13516, abstract), or as a limit on Σm_ν.
+- N_eff = 3.046 as current (3.044, arXiv:2008.01074, abstract; 3.046 is the Planck 2013/2018
+  value, arXiv:1807.06209, abstract); N_ν (baseline 3) mixed with N_eff.
 - Citing CMB-S4 targets, or Euclid's 4σ, as upcoming.
-- A WDM limit without thermal prior, k_max, criterion; 9.7 keV as current.
+- A WDM limit without thermal prior, k_max, criterion; 9.7 keV (arXiv:2101.07810, abstract) as current.
 - A thermal-relic mass transferred to sterile neutrinos or scattering.
-- A σ/m limit without velocity; Bullet Cluster 68% limit as 95%.
+- A σ/m limit without velocity; Bullet Cluster 68% limit (arXiv:0704.0261, abstract) as 95%.
 
 ## Related skills
 <!-- key: related-skills -->
@@ -118,7 +117,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 8k; methods 12k; results 12k; surveys 7k; systematics 14k; deep/fuzzy-ultralight-dm 7k; deep/interacting-decaying-dm 8k; deep/neutrino-mass-full-shape 8k; deep/relic-neutrino-background 6k; deep/self-interacting-dm 11k; deep/strong-lensing-substructure 11k.
+Sizes, in thousands of tokens: L1 3k; open 9k; methods 12k; results 13k; surveys 7k; systematics 14k; deep/fuzzy-ultralight-dm 7k; deep/interacting-decaying-dm 8k; deep/neutrino-mass-full-shape 8k; deep/relic-neutrino-background 6k; deep/self-interacting-dm 11k; deep/strong-lensing-substructure 11k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

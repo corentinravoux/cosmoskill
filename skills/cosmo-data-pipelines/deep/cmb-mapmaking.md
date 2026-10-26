@@ -38,15 +38,16 @@ the detector polarisation angle on the sky.
 ACT DR6 cuts whole observations, then detectors, then sample ranges
 (Naess et al. 2025, arXiv:2503.14451) [src: Sect. II.2, App. A].
 
-- **Unit of data.** A "TOD" is ~11 minutes: ~260,000 samples for ~700
-  selected detectors, ~2 × 10⁸ samples [src: Sect. II.2].
+- **Unit of data.** A "TOD" is typically 11 minutes: "around 260k samples
+  each for 700 selected detectors, for a total of around 200 million
+  samples" [src: arXiv:2503.14451, Sect. II.2 and its footnote 4].
 - **Per sample.** Glitches: high-pass at 5 Hz, Gaussian smoothing of
   FWHM ≈ 0.015 s (the typical glitch duration), noise from the
   inter-quartile range, flag at S/N > 10, pad by 200 samples (~0.5 s),
   merge gaps under 30 samples. Bright sources (f090 > 500 mJy) are masked
   within 3′ for glitch finding only, so they are not cut as glitches.
   Scan turnarounds, scan-speed anomalies and Sun or Moon in the far
-  sidelobes are cut [src: App. A.1, Sect. II.2].
+  sidelobes are cut [src: arXiv:2503.14451, App. A.1, Sect. II.2].
 - **Per detector.** A valid bias-step responsivity is required. Eight
   "pathology" statistics are computed per detector and TOD (Table 13):
   gain, corr and norm from an SVD common mode in 0.01–0.1 Hz (atmosphere),
@@ -54,7 +55,7 @@ ACT DR6 cuts whole observations, then detectors, then sample ranges
   and kurtosis in 10–20 Hz after removing the 10 strongest correlated
   modes; a drift error below 0.03 Hz after 3 modes; a mid-frequency error
   in 0.3–1 Hz after 8 modes, a sign of thermal contamination
-  [src: App. A.2]. Outliers are cut against the seasonal distribution per
+  [src: arXiv:2503.14451, App. A.2]. Outliers are cut against the seasonal distribution per
   array and band, with thresholds "determined by manual inspection"; a
   detector is also cut above 20,000 glitches or when > 40% of its samples
   are cut [src: same]. Using the pre-selected well-behaved detectors only
@@ -62,13 +63,13 @@ ACT DR6 cuts whole observations, then detectors, then sample ranges
   (DR4), raises the yield by up to 10% [src: same].
 - **Per TOD.** Rejected below 100 usable detectors, or when
   PWV/sin(el) > 4 mm (PWV the precipitable water vapour, el the elevation)
-  [src: App. A.3], or when the daytime beam deforms too much
+  [src: arXiv:2503.14451, App. A.3], or when the daytime beam deforms too much
   [src: Sect. II.2].
 - **Yield.** About 75% of night and 50% of day TODs pass; ~30% of
   detectors never work, ~80% of the others pass per TOD, for ~55% overall;
   ~1% of samples of selected detectors are cut at night and more by day
   (kept fractions 98.5–99.2% at night, 94.9–97.3% by day)
-  [src: Sect. II.2, Tables 2–3].
+  [src: arXiv:2503.14451, Sect. II.2, Tables 2–3].
 
 Planck HFI selects at the level of pointing periods ("rings"). For 2018
 it stopped at ring 26050 instead of 27005, dropping the end of the
@@ -94,12 +95,12 @@ stood out (Planck Collaboration 2018 III, arXiv:1807.06207)
   cause" of the low-ℓ bias that forces TT below ℓ = 600–1000 to be
   discarded; the authors point to an external calibrator such as the
   Simons Observatory LAT stimulator, provided bandpass mismatches are
-  ≪ 1% [src: Sect. II.4.1].
+  ≪ 1% [src: arXiv:2503.14451, Sect. II.4.1].
 - Detector time constants (median 0.74–1.35 ms in 2017–2019, about
   0.3 ms longer after 2020) would cost 0.1%, 1% and 10% of power at
   ℓ = 2000, 6000 and 19,000; each detector's mean value from Uranus is
   deconvolved, and the later increase is absorbed by the pointing-jitter
-  term of the beam [src: Sect. II.3, Table 4].
+  term of the beam [src: arXiv:2503.14451, Sect. II.3, Table 4].
 - Preparation: divide the gain; gap-fill glitches only, from the
   detector–detector covariance (so extreme values do not enter the noise
   model; gap-filled samples never reach the map); subtract a linear trend
@@ -107,7 +108,7 @@ stood out (Planck Collaboration 2018 III, arXiv:1807.06207)
   discontinuity; deconvolve the anti-aliasing filter and time constants;
   Fourier-downsample for all but the last pass; use 32-bit floats (enough
   for per-sample S/N 10⁷, checked against 64-bit); subtract the polarised
-  sidelobe model from the previous pass [src: Sect. III.1].
+  sidelobe model from the previous pass [src: arXiv:2503.14451, Sect. III.1].
 - Ground pickup is no longer subtracted in the time domain: in DR4 it was
   not effective enough to avoid map-space filtering and needed costly
   time-domain simulations [src: Sect. III.1].
@@ -221,7 +222,7 @@ and the filtering bias is calibrated by simulations (arXiv:2603.20163)
 - **High-pass.** Least-squares removal of Legendre polynomials to order
   30 and sines and cosines up to f_c = (ℓ_x,c/360) v_α cos δ, with
   ℓ_x,c = 300, v_α = 1° s⁻¹ in right ascension and δ the declination,
-  i.e. 0.29–0.62 Hz [src: Sect. III.2.1]. The filtered timestreams are
+  i.e. 0.29–0.62 Hz [src: arXiv:2603.20163, Sect. III.2.1]. The filtered timestreams are
   not white (the atmosphere is flat only above ~1 Hz), but if the
   atmosphere is "frozen" over a scan, binning is close to optimal for the
   modes kept [src: same]. ℓ_x,c was chosen from four runs on 5% of the
@@ -234,11 +235,11 @@ and the filtering bias is calibrated by simulations (arXiv:2603.20163)
   radius where significance × PSF profile falls below one (2′–3′ for the
   faintest, 15′ for the brightest), which removes "filtering wings" but
   leaves oscillatory "filtering artifacts", subtracted as an additive
-  spectrum bias [src: Sect. III.2.2]. The real-space least-squares filter
+  spectrum bias [src: arXiv:2603.20163, Sect. III.2.2]. The real-space least-squares filter
   exists because of this masking [src: Sect. III.2.1].
 - **Low-pass.** F^AA(f) = exp[−(f/f_c)⁶] (Eq. 7) at ℓ_x = 13,000
   (12–27 Hz), applied by FFT without masking; no ringing is seen
-  [src: Sect. III.2.3].
+  [src: arXiv:2603.20163, Sect. III.2.3].
 
 ### Step 6. Products, splits and map-level null tests
 <!-- key: step-6-products-splits-and-map-level-null-tests -->
@@ -265,27 +266,28 @@ the null tests [src: Sect. V.3].
 - Six splits: Sun and Moon above or below the horizon, azimuth within
   ±90° of 153° (three nearby buildings) or not, 2019 against 2020, scan
   direction, and two groups of five wafers ordered by their gain drift
-  (the high-drift group also shows a 1.42 Hz cryocooler line).
+  (the high-drift group also shows a 1.42 Hz cryocooler line)
+  [src: arXiv:2603.20163, Sect. VII.1.1].
 - 25 equal-depth bundles per half; 25 difference bundles; the null
   spectrum is the mean of the 300 cross-spectra between distinct bundles
   (Eq. 39); χ² over 400 ≤ ℓ ≤ 4000 in Δℓ = 50 bins against an expectation
   C_exp (Eq. 40), zero except for scan and wafer splits, where time
   constants and a pointing time-stamp offset leave signal residuals
-  modelled by simulation.
+  modelled by simulation [src: arXiv:2603.20163, Sects. VII.1.2–VII.1.3].
 - Threshold p_sys = 0.05/54 ≈ 0.00093 (Bonferroni over 54 spectra:
-  6 splits × 3 bands × TT, TE, EE). Two variances: σ²_n (scatter of the
+  6 splits × 3 bands × TT, TE, EE) [src: Sect. VII.1.2]. Two variances: σ²_n (scatter of the
   300 cross-spectra) and σ²_{n+s} adding 0.01% of the sample variance.
   Outcomes: pass with σ_n; "detected but negligible" if it passes only with
   σ_{n+s}; investigate otherwise. The 0.01% fraction was scaled down from
   the 1% shown harmless for the 2018 data because the noise is ten times
-  lower [src: Sect. VII.1.4]. No uniformity test of the p-value
+  lower [src: arXiv:2603.20163, Sect. VII.1.4]. No uniformity test of the p-value
   distribution, since the added variance correlates the p-values
   [src: same].
 - Result: a narrowband contamination at ℓ ≈ 600, m ≈ 400 (a ~1.1 Hz
   timestream line, mostly at the field edges and lowest elevations, cause
   unknown) was masked in harmonic space (500 ≤ ℓ ≤ 680, 350 ≤ m ≤ 425);
   afterwards five TT null spectra still fail with σ_n but all 54 pass with
-  σ_{n+s} [src: Sects. VII.3–VII.4, Table 6].
+  σ_{n+s} [src: arXiv:2603.20163, Sects. VII.3–VII.4, Table 6].
 
 **Planck HFI.** Survey, odd–even ring and half-ring null tests on data,
 and end-to-end simulations whose noise is tuned to the odd–even null

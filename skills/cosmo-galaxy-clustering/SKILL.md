@@ -35,41 +35,44 @@ re-verify against the cited paper before a number enters a manuscript.
   (arXiv:2411.12021); "DR1 FS + DR2 BAO" papers mix releases
   (arXiv:2602.18761).
 - BAO measure D/r_d, not H0. DR2 + BBN gives H0 = 68.51 ± 0.58; DR2 alone
-  gives Ω_m = 0.2975 ± 0.0086 (arXiv:2503.14738).
+  gives Ω_m = 0.2975 ± 0.0086 (arXiv:2503.14738) [src: Table 5].
 - DESI DR2 BAO versus CMB in ΛCDM: 2.3σ (arXiv:2503.14738). The 2026 Lyα
-  AP paper: 2.4σ before, 2.2σ after (arXiv:2607.27410).
-- The w0wa preference is 1.7σ for DESI BAO alone, 3.1σ with CMB, 2.8–4.2σ
-  with supernovae, by sample (arXiv:2503.14738); the 2025–2026
-  supernova recalibrations bring the last to 3.2–3.4σ (arXiv:2601.19424).
+  AP paper: 2.4σ before, 2.2σ after (arXiv:2607.27410). [src: abstract of each]
+- The w0wa preference is 1.7σ for DESI BAO alone, 3.1σ with CMB
+  [src: Table 6], 2.8–4.2σ with supernovae, by sample [src: abstract]
+  (arXiv:2503.14738); with the recalibrated samples it is 3.2σ (Pantheon+),
+  3.4σ (Union3.1) and 3.4σ (DES-Dovekie) (arXiv:2601.19424) [src: abstract].
 - DESI clustering beyond BAO has not strengthened it: 1.4σ for DR1 FS + DR2
-  BAO without CMB (arXiv:2602.18761); the bispectrum weakens it
-  (arXiv:2606.23936).
+  BAO without CMB (arXiv:2602.18761) [src: abstract]; the bispectrum weakens
+  it (arXiv:2606.23936).
 - DESI BAO errors are statistics-dominated: systematics add at most 9% to
-  the α_iso error (arXiv:2503.14738); DR1 budget 0.245% and 0.3%
-  (arXiv:2404.03000).
+  the α_iso error (arXiv:2503.14738) [src: Sect. III.1]; DR1 budget 0.245%
+  (α_iso) and 0.3% (α_AP) (arXiv:2404.03000) [src: Sect. 5.5, Table 13].
 - Full-shape posteriors in extended models are prior-dominated: best fit and
-  posterior mean differ by up to 6.6σ in w0waCDM (arXiv:2508.11811); ask for
-  the MAP.
-- σ8 from full shape: BOSS EFT gave 0.69–0.73 (arXiv:1909.05277,
-  arXiv:2112.04515); DESI DR1 gives 0.842 ± 0.034 (arXiv:2411.12022).
-  Simulation-based priors return 0.766 ± 0.015 (arXiv:2602.18554).
+  posterior mean differ by up to 6.6σ in w0waCDM (arXiv:2508.11811)
+  [src: abstract]; ask for the MAP.
+- σ8 from full shape: BOSS EFT gave 0.721 ± 0.043 (arXiv:1909.05277) and
+  0.692 (+0.035/−0.041) (arXiv:2112.04515); DESI DR1 gives 0.842 ± 0.034
+  (arXiv:2411.12022). Simulation-based priors return 0.766 ± 0.015
+  (arXiv:2602.18554). [src: abstract of each]
 - DESI DR1 "fσ8" points are fσ_s8 under r_d = r_d^fid, for display only
   (arXiv:2411.12021).
-- f_NL from scale-dependent bias constrains f_NL·b_φ: DESI DR1 gives −3.6 ± 9
-  or +3.5 by quasar assumption (arXiv:2411.17623); Planck has
-  σ = 5.1 (arXiv:1905.05697).
-- The SDSS–DESI difference at z ≈ 0.7 fell from about 3σ (DR1) to 2.6σ
-  (DR2), under an assumed correlation (arXiv:2503.14738).
-- BOSS DR12 fσ8: 0.497, 0.458, 0.436 at z = 0.38, 0.51, 0.61, systematic up
-  to 0.024 (arXiv:1607.03155); eBOSS LRG systematics exceeded half σ_stat
-  (arXiv:2007.08993).
+- f_NL from scale-dependent bias constrains f_NL·b_φ: DESI DR1 gives
+  −3.6 (+9.0/−9.1) or 3.5 (+10.7/−7.4) by quasar assumption
+  (arXiv:2411.17623); Planck has −0.9 ± 5.1 (arXiv:1905.05697).
+  [src: abstract of each]
+- The SDSS–DESI difference at z ≈ 0.7 fell from 3σ (DR1) to about 2.6σ
+  (DR2), under an assumed correlation (arXiv:2503.14738) [src: Sect. III.3.2].
+- BOSS DR12 fσ8: 0.497, 0.458, 0.436 at z = 0.38, 0.51, 0.61, systematic
+  0.024, 0.015, 0.009 (arXiv:1607.03155) [src: Table 7]; eBOSS LRG
+  systematics exceeded half σ_stat (arXiv:2007.08993).
 - DESI finished its planned survey in April 2026, full-survey results
   due 2027. Euclid DR1 clustering products: mid-2027.
 
 ## Systematics a referee checks
 <!-- key: systematics-a-referee-checks -->
 
-Theory and BAO modelling (0.1%/0.2%, arXiv:2402.14070); galaxy–halo
+Theory and BAO modelling (0.1%/0.2%, arXiv:2402.14070, abstract); galaxy–halo
 connection (arXiv:2404.03008, arXiv:2411.12023); fiducial cosmology
 (arXiv:2406.06085); fibre assignment (arXiv:2406.04804,
 arXiv:2411.12025); imaging weights and integral constraints
@@ -87,8 +90,8 @@ priors; blinding (arXiv:2404.07282). Details:
 - Treating DR1 and DR2 BAO, or DESI and SDSS bins, as independent.
 - Citing a DESI DR2 full-shape or fσ8 result: none exists.
 - w0 = 0.49 in the abstract of arXiv:2602.18761 is −0.49 in its table.
-- Taking the DR1 BAO count (5.7 million) for the full-shape one
-  (4.7 million).
+- Taking the DR1 BAO count (5.7 million, arXiv:2404.03000) for the
+  full-shape one (4.7 million, arXiv:2411.12021) [src: abstract of each].
 - Calling BOSS-era low σ8 a current full-shape result.
 - Giving an f_NL limit without its b_φ assumption.
 
@@ -97,7 +100,7 @@ priors; blinding (arXiv:2404.07282). Details:
 
 - `cosmo-lyman-alpha`: Lyα BAO, AP and P1D.
 - `cosmo-dark-energy-modified-gravity`: w0wa, μ–Σ.
-- `cosmo-peculiar-velocities`: fσ8 at z < 0.1.
+- `cosmo-peculiar-velocities`: low-redshift fσ8 from peculiar velocities.
 - `cosmo-beyond-two-point`: bispectrum, voids, field-level inference.
 - `cosmo-inflation-primordial`: f_NL.
 - `cosmo-neutrinos-dark-matter`, `cosmo-cmb`, `cosmo-distance-ladder-h0`,
@@ -120,7 +123,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; boss-eboss-euclid 6k; open 5k; methods 9k; results 7k; rsd-modelling 6k; surveys 5k; systematics 9k; deep/bao-reconstruction-fitting 7k; deep/blinding 7k; deep/estimators-window 6k; deep/fibre-assignment 6k; deep/full-shape-modelling 7k; deep/spectroscopic-systematics 5k.
+Sizes, in thousands of tokens: L1 3k; boss-eboss-euclid 6k; open 5k; methods 9k; results 8k; rsd-modelling 6k; surveys 6k; systematics 9k; deep/bao-reconstruction-fitting 7k; deep/blinding 7k; deep/estimators-window 6k; deep/fibre-assignment 7k; deep/full-shape-modelling 7k; deep/spectroscopic-systematics 5k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

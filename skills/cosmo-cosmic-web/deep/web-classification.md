@@ -178,7 +178,7 @@ and directional-strength values and vm_t, ds_t the thresholds [src: Sect.
 DESI DR1 (arXiv:2604.02463):
 
 1. Cloud-in-cell assignment of galaxies and randoms, with DESI clustering
-   weights, on a 256³ grid in an 800 Mpc box (3.125 Mpc cells) [src: Sects.
+   weights, on a 256³ grid in an 800 Mpc box (3.125 Mpc cells) (arXiv:2604.02463) [src: Sects.
    3.1–3.2].
 2. ϱ(x) = n_g(x)/(γ n_r(x)) − 1, γ = Σw_g/Σw_r (Eq. 2), n_g and n_r the
    weighted galaxy and random fields; Gaussian smoothing R_s.
@@ -189,12 +189,12 @@ DESI DR1 (arXiv:2604.02463):
 
 R_s = 10 Mpc (BGS), 7 Mpc (LRG), 10 Mpc (ELG) are "representative" values
 of tracer-dependent ranges; no galaxy-bias rescaling or RSD correction is
-described [src: Sect. 3.2].
+described (arXiv:2604.02463) [src: Sect. 3.2].
 
 SDSS (arXiv:1801.04878):
 
 1. Cut the light cone to a box of 195 × 340 × 198 h⁻¹Mpc keeping 98.5% of
-   galaxies (65% of the box filled) [src: Sect. 3.1].
+   galaxies (65% of the box filled) (arXiv:1801.04878) [src: Sect. 3.1].
 2. Density at each galaxy from a Voronoi-type estimate, near masks and
    edges from the count of nearest randoms, which encode the angular and
    radial selection [src: Sect. 3.2].
@@ -204,7 +204,7 @@ SDSS (arXiv:1801.04878):
    T̃_ij^k = k_i k_j δ_g^k/k² (Eq. 4) [src: Sect. 3.3]. The bias drops out
    of the sign pattern of the eigenvalues; RSD are ignored, "reasonable on
    large linear scales" [src: same].
-4. Continuous variables instead of classes: δ₈ (Eq. 5), tidal torque q²_R
+4. Continuous variables instead of classes: δ₈ (arXiv:1801.04878, Eq. 5), tidal torque q²_R
    (Eq. 6), tidal anisotropy α₅ = (q²₅)^(1/2)(1 + δ₅)^(−0.55) (Eq. 7); n =
    0.55 instead of Paranjape et al.'s n = 1, because the δ–α correlation
    depends on smoothing and on the bias of the sample, and a fixed R = 5
@@ -355,7 +355,7 @@ two finders run on one galaxy redshift survey.
   short-length tail of the length function on a mock at the survey's
   density.
 - **Over-pruning.** High persistence loses clusters as nodes (59.1%
-  completeness at S 4σ) [src: same]. Test: same matching, completeness side.
+  completeness at S 4σ) [src: arXiv:2309.08659, Table 2 in App. B]. Test: same matching, completeness side.
 - **Edge-tagged features kept.** Edge contamination rises with smoothing
   (Table 3 of arXiv:2002.01486); bifurcations are never tagged [src: Sect.
   3.2]. Test: compare statistics with and without the edge cut and check

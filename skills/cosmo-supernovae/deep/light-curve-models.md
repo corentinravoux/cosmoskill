@@ -80,7 +80,7 @@ Sect. III.1].
 | | SALT2 | SALT3 | Place read |
 |---|---|---|---|
 | Model range | 2000–9200 Å, −20 to +50 d | 2000–11 000 Å, −20 to +50 d | arXiv:2301.10644, Sect. 2.2 |
-| Flux basis (cubic B-splines) | 14 phase (~5 d) × 100 wavelength (~72 Å) | 20 phase (~3 d) × 127 wavelength (~72 Å) | same |
+| Flux basis (cubic B-splines) | 14 phase (~5 d) × 100 wavelength (~72 Å) | 20 phase (~3 d) × 127 wavelength (~72 Å) | arXiv:2301.10644, Sect. 2.2 |
 | Colour law | polynomial, `N_CL = 4`, fitted 2800–7000 Å | `N_CL = 5`, 2800–8000 Å | arXiv:2301.10644, Table 1 |
 | Outside the polynomial range | linear extrapolation | linear extrapolation | same |
 | In-sample variance | out-of-sample variance scaled by an "error snake" to give `chi2_nu = 1` | fitted separately by maximum likelihood | arXiv:2104.07795, Sect. II.2 |
@@ -109,8 +109,8 @@ arXiv:2104.07795, Sect. II.2]:
   between bands (Eq. 4), "similar to chromatic models of intrinsic scatter
   like those of Guy et al." [src].
 
-Table 2 lists 72 coefficients each for `sigma_M0`, `sigma_M1` and their
-correlation and 4 for the colour scatter [src]; the text gives 8 wavelength
+Table 2 of arXiv:2104.07795 lists 72 coefficients each for `sigma_M0`,
+`sigma_M1` and their correlation and 4 for the colour scatter [src]; the text gives 8 wavelength
 by 12 phase basis functions and Table 1 gives 9 phase by 5 wavelength, an
 internal inconsistency of the paper.
 
@@ -139,9 +139,12 @@ internal inconsistency of the paper.
   held at zero during this stage, since a non-zero value "results in biased
   flux surfaces due to the regularization procedure"; it is fitted last
   with `CL` free. Out-of-sample variance comes from the inverse Hessian
-  with regularisation suppressed by a factor 100 [src: Sect. II.5].
-- Cost on K21: about 25 minutes per iteration, about 25 iterations, and
-  about 4 hours for 80 error-model iterations [src].
+  with regularisation suppressed by a factor 100 [src: arXiv:2104.07795,
+  Sect. II.5].
+- Cost: about three minutes per iteration on the JLA sample, with about 25
+  iterations to converge; about 25 minutes per iteration on K21; the
+  error-model fit on K21 takes about 4 hours for 80 iterations [src:
+  arXiv:2104.07795, Sect. II.5].
 
 ### Step 5. Validate on held-out SNe
 <!-- key: step-5-validate-on-held-out-sne -->
@@ -239,7 +242,7 @@ the RMS by about 10 % [src: Sect. V.2.1].
   and fitting wavelength range [src]. Sensitivity to calibration differs:
   the SALT2.JLA `M0` moves by at least 5 % below about 3000 Å and above
   about 7400 Å across systematic surfaces, the FRAG surfaces by at most
-  about 2.5 % above 3000 Å, SALT3 least [src: Sect. 3.3].
+  about 2.5 % above 3000 Å, SALT3 least [src: arXiv:2301.10644, Sect. 3.3].
 - **On ZTF data**, SALT3 (sncosmo v2.0) describes the second maximum
   slightly better than SALT2 but overestimates early fluxes in all bands
   and underestimates r near peak more strongly [src: arXiv:2406.02073,
@@ -281,7 +284,7 @@ Sect. 6.1]. This is the measured size of "calibration enters twice".
 | Model | `M0`, `M1`, one colour law for dust and intrinsic colour together | log-SED = template + `W0` + `theta_1 W1` + residual GP + `A_V xi(lambda; R_V)` with the Fitzpatrick law (arXiv:2008.07538, Eqs. 9–12) |
 | Population | none in training; distances from `m_B, x1, c` by Tripp | `theta ~ N(0,1)`, `delta M ~ N(0, sigma_0^2)`, `A_V` exponential with mean `tau_A`, one global `R_V ~ U(1,5)` (Sect. 2.5) |
 | Distance | after the fit, from summary statistics | sampled jointly with the latent parameters, marginalised over dust and residuals (Sect. 2.8) |
-| Wavelength | optical | 0.35–1.8 µm in the 2022 model (Sect. 1.1) |
+| Wavelength | optical | 0.35–1.8 µm in the 2022 model (arXiv:2008.07538, Sect. 1.1) |
 | Cosmology in training | none | distance prior from a fiducial cosmology; G26 applies it only at z < 0.08, flat above, to avoid circularity (arXiv:2606.19429, Sect. 2.3) |
 | Calibration | ensemble of retrained surfaces | per-filter `Delta lambda_T` and `Delta m_T` sampled inside the model with Dovekie priors (arXiv:2606.19429, Eqs. 3–5) |
 | Bias corrections | SNANA BBC | not yet in SNANA (arXiv:2606.19429, Sect. 5) |
@@ -392,6 +395,10 @@ is 0.164 mag for G26 against 0.185 for SALT3.Dovekie [src: Sect. 5].
 - Guy et al. 2007 and 2010 (SALT2 training and error snake), Mosher et al.
   2014 (JLA training systematics) and the SALTshaker update cited by
   Dovekie as Kenworthy et al. (2025) and "Whimbrel" (in prep.): not read.
-- The SALT2 basis-function count: Taylor et al. give 14 × 100; Kenworthy et
-  al., Table 1, give 11 × 97 for the JLA training; not resolved.
+- The SALT2 basis-function count: Taylor et al. give 14 × 100
+  (arXiv:2301.10644, Sect. 2.2); Kenworthy et al. give 11 × 97 for the JLA
+  training (arXiv:2104.07795, Table 1); not resolved.
+- The training cost was given before 2026-10-24 as "about 25 iterations" on
+  K21; arXiv:2104.07795, Sect. II.5, states the 25 iterations for the JLA
+  sample and gives only the per-iteration time for K21.
 - SALT3.UNITE training details beyond Unite Sect. 4.2.

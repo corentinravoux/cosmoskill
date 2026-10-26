@@ -9,9 +9,9 @@ From: Turner 2024 review (arXiv:2411.19484), Sect. 5.2; DESI DR1 PV correlation-
 power-spectrum papers (arXiv:2512.03230, arXiv:2512.03231).
 
 Already in L2, not repeated here: the momentum estimator F^p, its shot noise and linear limit,
-the η → v conversion and the DESI DR1 data vector, k ranges and the k^p ≤ 0.1 cut in
+the η → v conversion and the DESI DR1 data vector, k ranges and the k^p cut in
 `physics-and-methods.md#momentum-power-spectrum`; the ψ estimators in η, the α_vv rescaling, the
-24–120 h⁻¹Mpc fit range and its reason in
+fit range and its reason in
 `physics-and-methods.md#velocity-and-momentum-correlation-functions`; priors, likelihoods,
 mock validation and the FP group systematic in
 `systematics.md#desi-dr1-density-and-momentum-power-spectra-qin` and
@@ -64,8 +64,8 @@ are instead chosen by maximising the Fisher information on fσ8 [src: same]. ⟨
 
 Configuration-space weights (Turner et al. 2025) [src: arXiv:2512.03230, Sect. 3.2.2]:
 
-    W_g,i = κ_i/(1 + n_i P_gg),                P_gg = 10⁴ h⁻³Mpc³          (Eq. 21)
-    W_η,i = 1/(σ²_η,i/α_i + α_i n_i P_v),       P_v = 10¹⁰ h⁻³Mpc³ km² s⁻²   (Eq. 22)
+    W_g,i = κ_i/(1 + n_i P_gg),                P_gg = 10⁴ h⁻³Mpc³          (arXiv:2512.03230, Eq. 21)
+    W_η,i = 1/(σ²_η,i/α_i + α_i n_i P_v),       P_v = 10¹⁰ h⁻³Mpc³ km² s⁻²   (arXiv:2512.03230, Eq. 22)
 
 with κ_i the completeness weight and α_i the velocity-to-η conversion factor (their Eq. 20),
 W_η taken from Turner et al. 2023.
@@ -73,7 +73,7 @@ W_η taken from Turner et al. 2023.
 | Constant | Power spectra (Qin 2025) | Correlation functions (Turner 2025) | Place read |
 |---|---|---|---|
 | density P_FKP | 1 600 h⁻³Mpc³ | 10⁴ h⁻³Mpc³ | arXiv:2512.03231 Sect. 3.3; arXiv:2512.03230 Eq. 21 |
-| momentum P_FKP | 5 × 10⁹ h⁻³Mpc³ km² s⁻² | 10¹⁰ h⁻³Mpc³ km² s⁻² | same; Eq. 22 |
+| momentum P_FKP | 5 × 10⁹ h⁻³Mpc³ km² s⁻² | 10¹⁰ h⁻³Mpc³ km² s⁻² | arXiv:2512.03231 Sect. 3.3; arXiv:2512.03230 Eq. 22 |
 
 The two DESI DR1 companion analyses therefore weight the same galaxies differently: a concrete
 case of the "different analysis choices" to which the mock paper attributes the low
@@ -120,7 +120,7 @@ arXiv:2512.03231, Sect. 4.1]:
 Eq. 31 corrects "minor inaccuracies" of the Okumura et al. cross-spectrum expression, following
 Chen et al. 2025, and therefore also of the SDSS PV analysis [src]. The P_mn terms are
 generalised to density and momentum samples from different surveys, with separate biases for
-each (Eqs. 35–43), giving 13 parameters in all [src: Sects. 4.2, 5.1]. The only stated
+each (Eqs. 35–43), giving 13 parameters in all [src: arXiv:2512.03231, Sects. 4.2, 5.1]. The only stated
 assumption of Eqs. 29–31 is the local plane-parallel approximation; they "do not presuppose the
 ΛCDM paradigm" beyond E(z), D(a) and P_L [src: Sect. 4.1].
 
@@ -194,7 +194,7 @@ compensate"; both non-linear and density–velocity terms are negative and each 
 at r = 10–20 h⁻¹Mpc; linear theory is "approximately valid" for r_min ~ 50 h⁻¹Mpc; for a
 (500 h⁻¹Mpc)³ survey the shift is ~10 % at r_min = 20, comparable to the forecast error [src].
 The PT template needs bσ8 (fixed in that study at 0.834 and 1.111) because the density–velocity
-term scales as fσ8 bσ8 [src: Sect. 4]. A gridded, volume-weighted analysis (Adams & Blake 2017b)
+term scales as fσ8 bσ8 [src: arXiv:2309.14457, Sect. 4]. A gridded, volume-weighted analysis (Adams & Blake 2017b)
 avoids the ⟨δv⟩ term at the cost of losing scales below the grid [src: Sect. 5]. DESI DR1 uses
 one-loop spectra for both its two-point analyses (Step 4).
 
@@ -266,7 +266,7 @@ functions, the mock correlation is 29 % (L2).
 - **Non-Gaussian momentum spectra in small volumes.** Biased fσ8 in 2MTF [src: arXiv:1906.02875,
   Sect. 6.3]. Test: skewness and kurtosis of mock P_ℓ per k bin against Gaussian draws (their
   Fig. 12 procedure); transform (Box–Cox) or use a t-likelihood.
-- **Environment-correlated η.** The FP group trend enhances P^p above k ≈ 0.1 h Mpc⁻¹ (L2); test:
+- **Environment-correlated η.** The FP group trend enhances P^p above k ≈ 0.1 h Mpc⁻¹ (arXiv:2512.03231, Sect. 8; L2); test:
   k^p_max scan and split by group richness.
 - **Plane-parallel model at low z.** Eqs. 29–31 assume the local plane-parallel approximation
   [src: arXiv:2512.03231, Sect. 4.1]; wide-angle sizes are in L2.

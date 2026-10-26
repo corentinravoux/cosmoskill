@@ -45,26 +45,24 @@ CLAMATO DR1 (arXiv:1710.02894) [src: Sect. IV]:
   components for quasars) in three absorption-redshift ranges. Every spectrum
   with redshift confidence ≥ 3 and ⟨CNR⟩ ≥ 1.2 in one range is kept: "an
   aggressive choice" justified because the Wiener filter weights by noise and
-  because CLAMATO is in the ⟨d_⊥⟩ ≳ 1.5 h⁻¹Mpc shot-noise-dominated regime.
+  because CLAMATO is in the ⟨d_⊥⟩ ≳ 1.5 h⁻¹Mpc shot-noise-dominated regime (arXiv:1710.02894) [src: Sect. IV].
 - Continua: mean-flux-regulated PCA for quasars over 1041–1185 Å; a fixed
   galaxy template over 1040–1195 Å for galaxies, with ± 7.5 Å (observed)
   masks around N II 1084, N I 1134, C III 1176 and Si II 1190, 1193. ⟨F⟩(z)
-  from Faucher-Giguère et al. Continuum errors ~10% rms at S/N ~ 2 per pixel,
-  ~4% at S/N ~ 10.
+  from Faucher-Giguère et al. Continuum errors ~10% rms at S/N ~ 2 per pixel, ~4% at S/N ~ 10 (arXiv:1710.02894) [src: Sect. IV].
 - Result: 240 spectra; projected density 1455 deg⁻², but the differential
   density averaged over the map is 866 deg⁻² (⟨d_⊥⟩ = 2.35 h⁻¹Mpc), 673 and
   451 deg⁻² at the two redshift ends, peak 1099 deg⁻² at z = 2.32. The
   authors stress that a projected density over all redshifts (quoted as
-  16 deg⁻² for BOSS) overstates the density at one redshift (9 deg⁻² peak for
-  BOSS).
+  16 deg⁻² for BOSS) overstates the density at one redshift (9 deg⁻² peak for BOSS) (arXiv:1710.02894) [src: Sect. IV].
 
 LATIS (arXiv:2002.10676) [src: Sects. VIII.1–VIII.2]:
 
 - Sightlines whose forest overlaps z_Lyα = 2.2–2.8, with high-confidence
   redshifts: 1071 (98% LBGs), 1850 deg⁻²; ⟨d_⊥⟩ = 70.6 n^(−1/2) h⁻¹ cMpc at
-  z = 2.5 for n sightlines per deg², ≃ 2.5 h⁻¹ cMpc over z = 2.2–2.6.
+  z = 2.5 for n sightlines per deg², ≃ 2.5 h⁻¹ cMpc over z = 2.2–2.6 (arXiv:2002.10676) [src: Sects. VIII.1–VIII.2].
 - The map stops at z = 2.8, where ⟨d_⊥⟩ ≈ 4 h⁻¹ cMpc, "the maximum useful
-  value based on the simulations by Stark et al." Median CNR 1.7–2.7 per pixel.
+  value based on the simulations by Stark et al." Median CNR 1.7–2.7 per pixel (arXiv:2002.10676) [src: Sects. VIII.1–VIII.2].
 - σ_δ is random noise and continuum uncertainty in quadrature; the data
   release feeds this σ_tot to the same code (arXiv:2510.08815, Sect. VI.1)
   [src].
@@ -119,20 +117,19 @@ arXiv:2002.10676, Sect. VIII.2].
 |---|---|---|---|---|---|
 | Keck pilot map | 3.5 h⁻¹Mpc (⟨d_⊥⟩ ≈ 2.3) | 2.7 h⁻¹Mpc | written σ_F = 0.8 | — | arXiv:1409.5632, Sect. III |
 | CLAMATO DR1 and DR2 | 2.5 h⁻¹Mpc | 2.0 h⁻¹Mpc | 0.05 | σ_N,i ≥ 0.2 | arXiv:1710.02894, Sect. IV; arXiv:2109.09660, Sect. IV.2 |
-| LATIS | 2.5 h⁻¹ cMpc | σ_∥² = σ_⊥² − σ_inst², σ_inst = 1.4 h⁻¹ cMpc, i.e. σ_∥ ≈ 2.1 [der] | 0.05 | σ_δ > 0.2 | arXiv:2002.10676, Sect. VIII.2 |
+| LATIS | 2.5 h⁻¹ cMpc | σ_∥² = σ_⊥² − σ_inst², σ_inst = 1.4 h⁻¹ cMpc | 0.05 | σ_δ > 0.2 | arXiv:2002.10676, Sect. VIII.2 |
 | eBOSS Stripe 82 | 13 h⁻¹Mpc | 13 h⁻¹Mpc | 0.01 | n_min = 0.1 (6.3% of pixels) | arXiv:2004.01448, Sect. 3 |
 
 Reasons given (places as in the table) [src, except the first]. Caucci et
 al. suggested L_⊥ ≈ ⟨d_⊥⟩, which suppresses structure below the sightline
-separation (as cited by the pilot map and LATIS) [sec]. The pilot map took
-L_⊥ = 3.5 > ⟨d_⊥⟩ as "a conservative choice taking into account the low-S/N"
+separation (as cited by the pilot map and LATIS) [sec]. The pilot map (arXiv:1409.5632) took L_⊥ = 3.5 > ⟨d_⊥⟩ as "a conservative choice taking into account the low-S/N"
 of its spectra, L_∥ as the resolution element, and calls the choice
 "somewhat arbitrary since small changes do not qualitatively change the
-resulting map features". CLAMATO's values were "approximately optimal" on
+resulting map features". CLAMATO's values (arXiv:1710.02894) were "approximately optimal" on
 Stark et al. mocks, with L_∥² ≈ L_⊥² − σ_lsf² to make the kernel isotropic
 after the spectrograph smoothing; LATIS adopts them to compare with CLAMATO
 where they overlap. The 0.2 floor stops a few bright quasars with S/N
-> 10× the mean from dominating. The 13 h⁻¹Mpc map sets L_∥ = L_⊥, a maximal contrast of 1 as in
+> 10× the mean from dominating (arXiv:1710.02894, Sect. IV). The 13 h⁻¹Mpc map (arXiv:2004.01448) sets L_∥ = L_⊥, a maximal contrast of 1 as in
 CLAMATO, and a lower floor against numerical divergence.
 
 Post-smoothing. Krolewski et al. apply no extra smoothing to the CLAMATO map
@@ -166,6 +163,8 @@ excluding voxels within 4 h⁻¹ cMpc of an edge: σ_map = 0.0496, 0.0476,
 
 ### Step 5. Validate on mock surveys built like the data
 <!-- key: step-5-validate-on-mock-surveys-built-like-the -->
+
+Sources by column, as in the last row: CLAMATO: arXiv:1409.5632, Sect. III; arXiv:1710.02612, Sect. IV.1; LATIS: arXiv:2002.10676, Sect. VIII.3; arXiv:2510.08815, Sect. VI.2, Table 3; eBOSS Stripe 82: arXiv:2004.01448, Sects. 4.1–4.2.
 
 | Item | CLAMATO | LATIS | eBOSS Stripe 82 |
 |---|---|---|---|
@@ -211,6 +210,8 @@ maps ... might artificially combine or split watershed regions, whereas the
 spherical average in the SO method will be less affected". Krolewski et al.
 give the same reason for CLAMATO (arXiv:1710.02612, Sect. IV.1) [src].
 
+Sources by column, as in the last row: Mock maps (Stark et al. 2015): arXiv:1504.03290, Sect. 4.2, Table 1; CLAMATO (Krolewski et al. 2018): arXiv:1710.02612, Sect. IV; eBOSS Stripe 82: arXiv:2004.01448, Sect. 5.2.
+
 | Setting | Mock maps (Stark et al. 2015) | CLAMATO (Krolewski et al. 2018) | eBOSS Stripe 82 |
 |---|---|---|---|
 | Map | ⟨d_⊥⟩ = 2.5, 4, 6 h⁻¹Mpc ("hires", "midres", "lores") | 2.5 h⁻¹Mpc, unsmoothed | 13 h⁻¹Mpc |
@@ -239,6 +240,8 @@ descendants; points within 4 h⁻¹Mpc merged, candidate = 4 h⁻¹Mpc sphere on
 the minimum; on the ideal field 68 candidates (~10⁻³ of the volume), almost
 all protoclusters (z = 0 mass > 10¹⁴ h⁻¹M☉), halo counts ~5× the field
 median.
+
+Sources by column, as in the last row: COSMOS map of Lee et al. 2016: arXiv:1509.02833, abstract; LATIS (Newman et al. 2025, after Qezlou et al. 2022): arXiv:2507.10948, Sects. III.1–III.2; arXiv:2112.03930, abstract; eBOSS Stripe 82: arXiv:2004.01448, Sect. 5.1.
 
 | Setting | COSMOS map of Lee et al. 2016 | LATIS (Newman et al. 2025, after Qezlou et al. 2022) | eBOSS Stripe 82 |
 |---|---|---|---|
@@ -287,7 +290,7 @@ evolves the joint reconstruction to z = 0, giving "a rigorous definition of
   filter, "equivalent to 30–40% additional sight-lines"; ~250 s against
   ~8000 s on the same mock, 10–100× faster on GPU. Parameters
   k_1 = 5, k_2 = 0.3, k_3 = 0.025; the Wiener comparison used σ_F² = 0.082 to
-  match the CLAMATO δ_F^rec PDF.
+  match the CLAMATO δ_F^rec PDF (arXiv:2102.12306).
 - **TARDIS** (arXiv:1903.09049) [src: Sects. II–III, App. C]. Solves for the
   initial field s maximising the posterior with χ² = sᵀS⁻¹s +
   (d − R(s))ᵀN⁻¹(d − R(s)) (Eq. 3), R the forward operator: Gaussian field →
@@ -433,7 +436,7 @@ sightline pattern.
 - Method and data: Newman et al. 2025, arXiv:2507.10948 — IGM-selected protocluster catalogue, thresholds, purity and completeness.
 - Method: Horowitz et al. 2019, arXiv:1903.09049 — TARDIS forward-model reconstruction and its comparison with the Wiener filter; applied to CLAMATO DR2 in arXiv:2109.09660.
 - Method: Li et al. 2021, arXiv:2102.12306 — ORCA, a constrained flux reconstruction outperforming the Wiener filter on mocks.
-- Application: Ravoux et al. 2020, arXiv:2004.01448 — the wide-area, quasar-based regime at 13 h⁻¹Mpc.
+- Application: Ravoux et al. 2020, arXiv:2004.01448 [src: abstract] — the wide-area, quasar-based regime at 13 h⁻¹Mpc.
 - Critique: Kooistra et al. 2022, arXiv:2201.10169 — where the FGPA behind the mocks and forward models fails.
 
 ## Not verified

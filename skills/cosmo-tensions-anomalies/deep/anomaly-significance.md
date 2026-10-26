@@ -13,7 +13,7 @@ Schwarz et al. 2016 review (arXiv:1510.07929).
 
 Already in L2, not repeated here: the definitions of S_1/2, R^TT, σ²_16 and
 S_QO and the list of anomalies (`physics-and-methods.md#large-angle-cmb-anomalies`);
-the published p-values, the joint ≤ 3 × 10⁻⁸ and its 2σ–3σ reassessment,
+the published p-values, the joint ≤ 3 × 10⁻⁸ (arXiv:2310.12859) and its 2σ–3σ reassessment (arXiv:2602.10178) [src: abstract of each],
 the PR4 status and the Planck caveats (`results.md#large-angle-cmb-anomalies`);
 mundane explanations with verdicts (`systematics.md#large-angle-cmb-anomalies`);
 the dispute (`open-questions.md#large-angle-cmb-anomalies-evidence-or-flukes`);
@@ -39,19 +39,20 @@ tests considered, n_A the number of most anomalous ones combined.
 Planck FFP10, the reference ensemble of the collaboration [src:
 arXiv:1906.02552, Sect. 4]:
 
-- 1000 Gaussian CMB skies from one fiducial ΛCDM model (Table 2: ω_b =
+- 1000 Gaussian CMB skies from one fiducial ΛCDM model (arXiv:1906.02552, Table 2: ω_b =
   0.022166, ω_c = 0.12029, h = 0.67019, n_s = 0.96369, A_s = 2.1196 × 10⁻⁹,
   τ = 0.06018), with lensing, Rayleigh scattering and Doppler boosting, and
   frequency-specific beams.
 - 300 end-to-end noise-plus-systematics realisations per frequency, from
-  simulated time-ordered data through the map-maker.
+  simulated time-ordered data through the map-maker [src: arXiv:1906.02552,
+  Sect. 4].
 - Signal and noise propagated through each of the four component-
   separation pipelines "using the same weights as derived from the Planck
   full-mission data", then permuted into 999 simulations per method
-  (realisation 970 was corrupted and dropped, footnote 7).
+  (realisation 970 was corrupted and dropped, footnote 7 of arXiv:1906.02552).
 - Known mismatch: the FFP10 τ is above the 2018 value; lowering τ from
   0.060 to 0.052 "reduces the polarization variance by approximately 20%"
-  at N_side = 16 and 32. Simulations underestimate the 100–217 GHz noise
+  at N_side = 16 and 32 [src: arXiv:1906.02552, Sect. 4]. Simulations underestimate the 100–217 GHz noise
   and omit point-source residuals, so half-mission and odd–even difference
   maps are compared with the simulations to define the reliable angular
   scales for each test.
@@ -106,13 +107,13 @@ data's. Temperature: fixed θ = 60° gives > 99.9% for all four maps (Table
 12), the global statistic 98.8–99.0% (Table 13), that is a lower-tail p of
 about 1%.
 
-The same scan for the parity ratio R^TT(ℓ_max) [src: Sect. 6.3, Eqs. 44–45]:
+The same scan for the parity ratio R^TT(ℓ_max) [src: arXiv:1906.02552, Sect. 6.3, Eqs. 44–45]:
 the minimum lower-tail probability with the Lkl-Commander map and its mask
 is 0.2% at ℓ_max = 24; 16 of the 999 simulations reach 0.2% or less for at
 least one ℓ_max in 3–64, so the corrected probability is about 1.6%.
 
 Dipole modulation: letting ℓ_max vary, "small p-values (of order 0.1–1%)
-occur of order 10% of the time" [src: Sect. 7.2].
+occur of order 10% of the time" [src: arXiv:1906.02552, Sect. 7.2].
 
 ### Step 5. Combine several statistics on one sky
 <!-- key: step-5-combine-several-statistics-on-one-sky -->
@@ -144,9 +145,9 @@ Guth & Namjoo 2026 (arXiv:2602.10178, Sects. II–III). Under the null each
 p-value is uniform. For n_T independent tests, the density of x, the
 product of the four smallest p-values, is [src: Eq. 12]
 
-P_4(x) = n_T! / (12 n_d!) · J_nd(x),  J_nd(x) = ∫_{x^{1/4}}^{1} dp (1 − p)^{n_d} p⁻¹ ln²(p⁴/x)  [src: Eq. 8],
+P_4(x) = n_T! / (12 n_d!) · J_nd(x),  J_nd(x) = ∫_{x^{1/4}}^{1} dp (1 − p)^{n_d} p⁻¹ ln²(p⁴/x)  [src: arXiv:2602.10178, Eq. 8],
 
-with n_d = n_T − 4; Eq. 11 gives J in closed form. Generalised to the n_A
+with n_d = n_T − 4; Eq. 11 of arXiv:2602.10178 gives J in closed form. Generalised to the n_A
 smallest p-values [src: Eq. 15]. Dependence is folded in through an
 effective number of combined tests: with the correlation factor C ≡
 x_JCSA/(p_1 p_2 p_3 p_4) ≃ 51 [src: Eq. 13] and the geometric mean p̄ of
@@ -213,20 +214,18 @@ R^TT lower-tail probability about 1% at ℓ_max = 20–30 with the 2018 common
 mask; the 2015 mask on 2018 data gives 0.3% at ℓ_max = 27; the low-ℓ
 likelihood mask gives 0.2% at ℓ_max = 24, and higher-latitude sky
 "diminishes the odd point parity preference" [src: arXiv:1906.02552, Sect.
-6.3]. A mask change alone moves p by a factor of three to five [der: 1%
-against 0.3% and 0.2%].
+6.3].
 
 ### Simulation set
 <!-- key: simulation-set -->
 
-| Ensemble | Size | Content | Resolves p down to | Used by |
-|---|---|---|---|---|
-| FFP10 | 999 per method | signal + end-to-end noise and systematics, component-separated | ≈ 10⁻³ | Planck 2018 VII |
-| Noise-free ΛCDM | 10⁸ | CMB only, Planck best fit | ≈ 10⁻⁸ | Jones et al. 2023 |
-| Signal + noise mix | 10⁴ CMB × 300 noise | combinations "not completely independent" | ≈ 10⁻⁴ | Shi et al. 2022 |
+From arXiv:1906.02552 (Sect. 4), arXiv:2310.12859 (Methods section) and arXiv:2206.05920 (Sect. II.2); the column of resolvable p-values computed here as 1/N was removed on 2026-10-23:
 
-[src: arXiv:1906.02552, Sect. 4; arXiv:2310.12859, Methods;
-arXiv:2206.05920, Sect. II.2; resolution column der: 1/N]
+| Ensemble | Size | Content | Used by |
+|---|---|---|---|
+| FFP10 | 999 per method | signal + end-to-end noise and systematics, component-separated | Planck 2018 VII |
+| Noise-free ΛCDM | 10⁸ | CMB only, Planck best fit | Jones et al. 2023 |
+| Signal + noise mix | 10⁴ CMB × 300 noise | combinations "not completely independent" | Shi et al. 2022 |
 
 ## Independent tests and their power
 <!-- key: independent-tests-and-their-power -->
@@ -252,7 +251,7 @@ a^E_ℓm = (C^TE_ℓ / C^TT_ℓ) a^T,data_ℓm + √(C^EE_ℓ − (C^TE_ℓ)²/C
 
 ζ a complex standard normal. Conditioning shifts the median of log₁₀ S^EE_1/2
 (ideal case) from 0.19 to 0.30, because the E variance acquires the term
-(C^TE)²/C^TT (C^TT,data/C^TT − 1) [src: Eq. C4]; otherwise the
+(C^TE)²/C^TT (C^TT,data/C^TT − 1) [src: arXiv:2206.05920, Eq. C4]; otherwise the
 distributions are "largely consistent" with unconstrained ones.
 
 The Copi et al. 2013 falsification test as applied by Planck [src:
@@ -313,7 +312,7 @@ fluke hypothesis".
 | S^TT_1/2 values | 1142.4–1209.2 μK⁴ over four maps | Planck 2018, N_side 64 | arXiv:1906.02552 | Table 11 |
 | Global p, S^TT(θ, 180°) | 98.8–99.0% (≈ 1% lower tail); 85.5–87.2% without quadrupole | Planck 2018 | arXiv:1906.02552 | Table 13 |
 | Parity scan correction | 16/999 ≈ 1.6% for ℓ_max 3–64 | Planck 2018 | arXiv:1906.02552 | Sect. 6.3 |
-| Jones ensemble | 10⁸ noise-free, ℓ ≤ 200 | Jones et al. | arXiv:2310.12859 | Methods |
+| Jones ensemble | 10⁸ noise-free, ℓ ≤ 200 | Jones et al. | arXiv:2310.12859 | Methods section |
 | Correlation factor (S_1/2, σ²_16) | ≃ 30 | Jones et al. | arXiv:2310.12859 | Table 1 |
 | Correlation factor of p_4 | < 100 (SMICA 64); 51 used in reanalysis | Jones et al.; Guth & Namjoo | arXiv:2310.12859; arXiv:2602.10178 | Table 3; Eq. 13 |
 | Effective combined tests | n_eff ≃ 3.26 | Guth & Namjoo | arXiv:2602.10178 | Eq. 14 |
@@ -327,27 +326,32 @@ fluke hypothesis".
 ## What goes wrong
 <!-- key: what-goes-wrong -->
 
-- Tail sense flipped. A "99.9%" in Planck tables is an anomaly; in
-  Schwarz's table 0.1% is. Test: check the table caption for "at least as
+- Tail sense flipped. A "99.9%" in Planck tables (arXiv:1906.02552,
+  Table 12) is an anomaly; in Schwarz's table 0.1% is (arXiv:1510.07929,
+  Table 1 caption). Test: check the table caption for "at least as
   large" or "at most as large".
-- A p-value below 1/N_sim quoted as a number. With 999 simulations, "<
-  0.1%" is a bound [der: 1/999], and Schwarz sets the Planck floor at 0.2%.
+- A p-value beyond the resolution of the ensemble quoted as a number. The
+  Planck analysis has 999 simulations per method (arXiv:1906.02552) [src:
+  Sect. 4], and Schwarz et al. note that with it "p-values below 0.2%
+  cannot be resolved" (arXiv:1510.07929) [src: Table 1 caption].
 - Multiplying p-values. Jones et al. count joint exceedances; the product
   differs from the joint value by the correlation factor (0.6 to 64 in
-  Tables 1–3). Test: report the factor.
+  Tables 1–3 of arXiv:2310.12859). Test: report the factor.
 - Scanning without a global p. ℓ_max, the angle bound and the mask all
   move p by factors of a few to ten (Steps 4, Choices). Test: repeat the
   scan on every simulation.
 - Mask and estimator as hidden choices. Full-sky reconstruction against
-  cut-sky estimator: 8% against 0.065% on the same WMAP map. Report both.
+  cut-sky estimator: 8% against 0.065% on the same WMAP map (arXiv:0911.5399)
+  [src: Sect. 4.2]. Report both.
 - Counting the four maps as four measurements: one sky, four cleanings.
 - Fiducial mismatch in the simulations: the FFP10 τ biases polarisation
-  variance by about 20%; Chiocchetta et al. fix τ = 0.0591 for their
-  ensemble. State the fiducial.
-- Quadrupole double counting: low variance, S_1/2 and C(180°) all lean on
+  variance by about 20% (arXiv:1906.02552) [src: Sect. 4]; Chiocchetta et
+  al. fix τ = 0.0591 for their ensemble (arXiv:2012.00024) [src: Sect. 5]. State the fiducial.
+- Quadrupole double counting: low variance, S_1/2 and C(θ) at the largest angles all lean on
   C_2 (Choices); a combination must count it once.
-- Claiming a polarisation confirmation from ℓ ≤ 10 E modes without a
-  correction for the ℓ_max choice and with ℓ = 2 systematics open.
+- Claiming a polarisation confirmation from ℓ ≤ 10 E modes (arXiv:2012.00024
+  [src: Sect. 5]) without a correction for the ℓ_max choice and with ℓ = 2
+  systematics open.
 
 ## Reading list
 <!-- key: reading-list -->
@@ -356,7 +360,7 @@ fluke hypothesis".
   (FFP10), Sect. 6.1 (global p-value, Copi test), Sect. 6.3 (ℓ_max scan).
 - Review, one side: Schwarz et al. 2016, arXiv:1510.07929 — Sect. 2.1 (cut
   sky), Sect. 2.7 (atoms), Sect. 5 (tests).
-- Method, combination: Jones et al. 2023, arXiv:2310.12859 — 10⁸
+- Method, combination: Jones et al. 2023, arXiv:2310.12859, Methods section — 10⁸
   realisations and joint counting.
 - Method, look-elsewhere: Guth & Namjoo 2026, arXiv:2602.10178 — Eqs. 8–15.
 - Critique: Efstathiou, Ma & Hanson 2010, arXiv:0911.5399 — full-sky
@@ -373,10 +377,10 @@ fluke hypothesis".
 - The Copi et al. 2013 constrained-realisation paper itself and the
   temperature–polarisation forecasts summarised in Sect. 5.1 of
   arXiv:1510.07929 (its refs. 167–170): not identified or read.
-- The 2015 Planck χ² of C(θ > 60°) tables (cited through Schwarz et al.):
+- The 2015 Planck χ² of C(θ > 60°) tables (cited through Schwarz et al., arXiv:1510.07929):
   not read at source.
-- Chiocchetta et al.: masks, the ℓ_max dependence of the 0.4% and the
-  constrained-case numbers; only the conclusions were read.
+- Chiocchetta et al. (arXiv:2012.00024): masks, the ℓ_max dependence of the 0.4% (read for ℓ_max = 10 only [src: Sect. 5]) and the
+  constrained-case numbers; only the conclusions (Sect. 5) were read.
 - Yoho et al. 2013 and Dou & Zhao 2026: abstracts only.
 - The Abdalla et al. 2022 Sects. VIII.3.7–VIII.3.8 named in `from`: not
   reread this session.

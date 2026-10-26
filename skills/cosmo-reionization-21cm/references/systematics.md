@@ -13,7 +13,7 @@ mitigation, the validation test, and the paper a referee expects. Numbers carry 
 **Large-scale polarisation systematics.** The Planck HFI low-ℓ maps carried residual large-scale
 contamination, dominated at the lowest multipoles by a "dipole distortion" effect that the 2018
 legacy release characterised but did not fully remove; the SRoll2 map-making brings it below the
-noise and shrinks the τ uncertainty by ~40% [src: Pagano et al. 2019, arXiv:1908.09856]. The
+noise and shrinks the τ uncertainty by ~40% [src: Pagano et al. 2019, arXiv:1908.09856, abstract]. The
 first HFI-based τ came with new end-to-end simulations and a cross-check against LFI [src:
 Planck Collaboration 2016, arXiv:1605.02985]. Validation: consistency between detector-set and
 frequency combinations and between three likelihood constructions [src: de Belsunce et al. 2021,
@@ -27,8 +27,8 @@ large-scale Planck data" [src: Sailer et al. 2025, arXiv:2504.16932].
 **Model dependence.** τ inferred from EE depends on the assumed shape of x_e(z) and on how the
 low-ℓ temperature deficit is treated: marginalising over inflationary-feature templates moves
 the Planck 95% upper limit from 0.0696 to 0.075 [src: Jhaveri, Hu & Miranda 2026,
-arXiv:2606.20795]; allowing a high-redshift flash moves the mean by 0.002 [src: Upadhyay et al.
-2026, arXiv:2609.24989]. A claim that the monotonic-history assumption acts as a hidden prior on
+arXiv:2606.20795, abstract]; allowing a high-redshift flash gives τ = 0.061 ± 0.007 against 0.059 ± 0.006 for the tanh
+history in Planck PR4 [src: Upadhyay et al. 2026, arXiv:2609.24989, abstract]. A claim that the monotonic-history assumption acts as a hidden prior on
 σ₈ and Σm_ν is in arXiv:2606.27903.
 
 **Sizes read in the paper bodies.**
@@ -62,17 +62,18 @@ arXiv:2606.20795]; allowing a high-redshift flash moves the mean by 0.002 [src: 
 | SRoll2, momento, low-ℓ TTTEEE | 0.0604 ± 0.0052 | arXiv:2103.14378, Table 3 |
 | SRoll2, momento EE, 100 ds1 × 100 ds2 / 143 ds1 × 143 ds2 | 0.0638 ± 0.0072 / 0.0676 ± 0.0068 | arXiv:2103.14378, Table 4 |
 
-Reading. Three likelihood constructions agree to 0.0007 on the SRoll2 maps and 0.0023 on the
-2018 maps, and the map-making change moves τ by +0.005 to +0.007 in each [der: Table 3
-rows]. Same-frequency detector-set spectra give τ higher than 100 × 143 by 1.4–2σ (143 × 143)
+Reading. The table gives each likelihood construction on each map set, so the spread between
+constructions and the shift from the map-making change can be read row by row [src:
+arXiv:2103.14378, Table 3]. Same-frequency detector-set spectra give τ higher than 100 × 143 by 1.4–2σ (143 × 143)
 and less (100 × 100), "suggestive of correlated residual systematics" that partly cancel
 between frequencies; the net effect on 100 × 143 is "probably at the level of a standard
 deviation or less", which "depends on the fidelity of the noise and systematics simulations";
 synchrotron cleaning lowers the 100 × 100 value by about 1σ [src: de Belsunce et al. 2021,
-arXiv:2103.14378, Sect. 6.2 and Table 4]. On the same maps τ rises by about 0.003, half a σ,
-from EE alone to the full combination [der], because high-ℓ lensing smoothing breaks the A_s
-e^(−2τ) degeneracy and pulls A_s upward [src: arXiv:1908.09856, Sect. 5]. A free-form history
-moves the centre by 0.0015 relative to tanh [der]. The contribution of 15 < z < 30 is τ(15,30)
+arXiv:2103.14378, Sect. 6.2 and Table 4]. On the same maps τ rises from EE alone to the full
+combination, because high-ℓ lensing smoothing breaks the A_s
+e^(−2τ) degeneracy and pulls A_s upward [src: arXiv:1908.09856, Sect. 5]. The TANH history gives a slightly higher optical depth
+than the free-form ones, "primarily driven by the fixed duration of reionization assumed" [src:
+arXiv:1807.06209, Sect. 7.8]. The contribution of 15 < z < 30 is τ(15,30)
 < 0.018 (flat prior on it) or < 0.023 (flat prior on knots) at 95%, the values of a
 corrigendum, about three times those first published [src: arXiv:1807.06209, Eqs. 85a–85b and
 footnote]. Earlier disagreements between reionisation-history analyses came from different,
@@ -89,10 +90,8 @@ in the abstract and is tabulated in `cosmo-cmb`.
 **Continuum reconstruction.** τ_eff = −ln⟨F/F_cont⟩ needs the unabsorbed continuum under an
 almost fully absorbed forest. For XQR-30, tested on 4597 eBOSS quasars: the red-side PCA
 predicts it to 0.8 (+7.8/−7.9)%, against > 13% for power-law extrapolation and 9% for the best
-earlier PCA; with the shorter Keck/ESI coverage, 1.0 (+11.2/−11.3)%, about 50% larger, without
-bias [src: Bosman et al. 2022, arXiv:2108.03699, Sects. 2.3 and 3.2]. A fractional continuum
-error ε shifts τ_eff by ≈ ε [der: δτ_eff = δF_cont/F_cont]: 0.08 per segment, against mean
-τ_eff of 2.1 at z = 5.2 and 4.7 at z = 6.0 [der: −ln of the Table 4 transmissions]. The method
+earlier PCA; with the shorter Keck/ESI coverage, 1.0 (+11.2/−11.3)%, without
+bias [src: Bosman et al. 2022, arXiv:2108.03699, Sects. 2.3 and 3.2]. The method
 matters more than its scatter: an earlier disagreement between two mean-opacity measurements
 is "explained almost entirely" by power-law against linear-PCA continua, whose
 wavelength-dependent biases cannot be corrected afterwards [src: arXiv:2108.03699, Sect.
@@ -143,10 +142,10 @@ post-reionisation forest at z < 5 is a `cosmo-lyman-alpha` topic.
 
 **Quasars.** Error sources: the stochastic distribution of neutral patches, the effect of the
 quasar's own ionising radiation (lifetime), the unknown intrinsic spectrum, and spectral noise
-[src: Hennawi et al. 2024, arXiv:2406.12070]. Size: for single objects the posterior on ⟨x_HI⟩
-is ±0.2–0.26 wide even after marginalising the lifetime over 10³–10⁸ yr [src: Davies et al.
-2018, arXiv:1802.06066]. Sample selection matters: 23 of the 42 XQR-30 quasars survive quality
-control [src: Greig et al. 2024, arXiv:2404.12585]. Validation: coverage of the credible
+[src: Hennawi et al. 2024, arXiv:2406.12070]. Size: for single objects the posteriors are ⟨x_HI⟩(z = 7.09) = 0.48 (+0.26/−0.26) and
+⟨x_HI⟩(z = 7.54) = 0.60 (+0.20/−0.23) after marginalising the lifetime over 10³–10⁸ yr [src:
+Davies et al. 2018, arXiv:1802.06066, abstract]. Sample selection matters: 23 of the 42 XQR-30 quasars survive quality
+control [src: Greig et al. 2024, arXiv:2404.12585, abstract]. Validation: coverage of the credible
 contours on 100 mock spectra [src: arXiv:2406.12070].
 
 Share of the continuum in the error budget. On 1000 mock spectra the median 1σ precision on
@@ -168,9 +167,9 @@ arXiv:astro-ph/9708253.
 Tests with low-redshift spectra degraded to JWST quality recover the absorber column density
 with an rms error of order 1 dex at R ~ 100; x_HI is "poorly constrained" and does not improve
 substantially at R ~ 1000; column densities are underestimated when Lyα emission is present
-[src: Huberty et al. 2025, arXiv:2501.13899]. Mitigation in the measurements: templates from z ~
+[src: Huberty et al. 2025, arXiv:2501.13899, abstract]. Mitigation in the measurements: templates from z ~
 2–5 galaxies that include galactic and circumgalactic absorption and Lyα emission, and stacks
-matched in UV magnitude and slope [src: Umeda et al. 2025, arXiv:2504.04683]. The resulting x_HI
+matched in UV magnitude and slope [src: Umeda et al. 2025, arXiv:2504.04683, abstract]. The resulting x_HI
 intervals are wide (for example 0.65 +0.27/−0.35 at z ~ 7).
 
 **Topology prior.** All x_HI values assume an inside-out topology from a simulation. Bubble
@@ -187,7 +186,7 @@ radii inferred from galaxies exceed analytic cosmic-average expectations by up t
 - Environment. In the DIVER sample strong emitters lie farther from overdensities; near the z ~
   5.2 GOODS-N overdensity fewer than 15% of galaxies show strong Lyα. This is opposite to the
   simplest inside-out expectation and points to circumgalactic or local opacity [src: Zhu et al.
-  2026, arXiv:2608.19311].
+  2026, arXiv:2608.19311, abstract].
 - Field-to-field variance. Four PASSAGE pointings contain {3, 1, 0, 0} emitters [src: Runnholm
   et al. 2025, arXiv:2502.19174].
 - Threshold dependence. The same data give different ⟨x_HI⟩ for EW > 25 Å and EW > 10 Å (0.38
@@ -201,7 +200,7 @@ radii inferred from galaxies exceed analytic cosmic-average expectations by up t
   spectra" [src: Chaubal et al. 2026, arXiv:2601.20551].
 - Late-time kSZ. Duration limits assume a level of homogeneous kSZ; the ACT limit Δz < 4.4 is
   the conservative case of a minimal low-redshift contribution, and other assumptions tighten it
-  [src: Beringue et al. 2025, arXiv:2506.06274].
+  [src: Beringue et al. 2025, arXiv:2506.06274, abstract].
 - Simulation dependence. SPT-3G quotes two limits from two models (semi-analytic and AMBER) with
   two duration definitions [src: arXiv:2601.20551].
 - Sizes in SPT-3G D1, read in the HTML rendering of the first arXiv version, whose headline
@@ -245,8 +244,9 @@ signal-injection tests (LOFAR, arXiv:2503.05576), a bias correction where suppre
 | LOFAR 2025 | flux scale | one calibrator known to 5% | — | arXiv:2503.05576, Sect. 5.1 |
 
 All rows [src]. The withdrawn PAPER-64 limit was (22.4 mK)² at z = 8.4 [src: Ali et al. 2015,
-arXiv:1502.06016] against (200 mK)² at z = 8.37 in the re-analysis, a factor ~80 in power
-[der: (200/22.4)²]. The HERA corrections are flat in k and independent of the signal model.
+arXiv:1502.06016, abstract] against (200 mK)² at z = 8.37 in the re-analysis, whose limits
+"supersede all previous PAPER results" [src: Kolopanis et al. 2019, arXiv:1909.02085,
+abstract]. The HERA corrections are flat in k and independent of the signal model.
 The 9% bias came from a logarithmic linearisation of gain amplitudes on low signal-to-noise
 visibilities and was found during pipeline validation; in 2022 it is below 1% in the gains,
 of opposite sign, and left uncorrected as the conservative choice [src: arXiv:2108.02263,
@@ -305,9 +305,10 @@ foreground. Refraction is handled in direction-dependent calibration on catalogu
 the 1,000 brightest sources only and selects data with an ionospheric-activity metric [src:
 arXiv:2505.09097, Sect. III.3; Trott et al. 2020, arXiv:2002.02575]. No size is quoted here.
 
-**Wedge leakage.** Section 5.1 of `physics-and-methods.md`. A buffer beyond the horizon is
-always added: HERA moved it from 200 ns to 300 ns between its two analyses (section 5.4
-there).
+**Wedge leakage.** See Sect. 5.1 of `physics-and-methods.md`. A buffer beyond the horizon is
+always added: HERA moved it from 200 ns to 300 ns between its two analyses, "to achieve
+roughly the same balance of excluding and admitting modes" [src: HERA Collaboration 2022,
+arXiv:2210.04912, Sect. III.3.3].
 
 ## 7. Global 21 cm signal
 <!-- key: global-21-cm-signal -->
@@ -331,9 +332,9 @@ there).
   target the non-monotonic Cosmic Dawn trough. Thermal noise is not the limit: with ~1 MHz
   channels it falls below the signal in less than a day [sec: arXiv:1907.08211, section XV.2].
 - Dynamic range. A signal of ~10 mK against Galactic synchrotron above 100 K [src: Bowman &
-  Rogers 2010, arXiv:1209.1117]; the 50–100 MHz band constrains the first stars only if
+  Rogers 2010, arXiv:1209.1117, abstract]; the 50–100 MHz band constrains the first stars only if
   "systematic temperature residuals can be controlled to less than 1 mK" and the foregrounds
-  follow low-order polynomials [src: Pritchard & Loeb 2010, arXiv:1005.4057].
+  follow low-order polynomials [src: Pritchard & Loeb 2010, arXiv:1005.4057, abstract].
 - Beam factor, as defined. Each of 72 sidereal-time spectra is divided by G_beam(ν) = ∫ T_sky(Ω,
   ν_ref) B(Ω, ν) dΩ / ∫ T_sky(Ω, ν_ref) B(Ω, ν_ref) dΩ, with ν_ref = 75 MHz, T_sky the 408 MHz
   Haslam map scaled with index −2.5 and B an electromagnetic simulation of the beam. It is
@@ -367,7 +368,7 @@ there).
 more than 50%; a transfer function built by injecting mock signal into the data reconstructs the
 power to sub-percent accuracy in simulations, and mocks wrong by up to ±100% in fiducial
 parameters bias recovered values by less than 5% [src: Cunnington et al. 2023,
-arXiv:2302.07034]. The 2026 MeerKLASS auto-spectrum marginalises the loss in the fit [src:
+arXiv:2302.07034, abstract]. The 2026 MeerKLASS auto-spectrum marginalises the loss in the fit [src:
 MeerKLASS Collaboration 2026, arXiv:2610.12158].
 
 How the correction is built and why it is debated. The transfer function is the ratio of the
@@ -384,10 +385,11 @@ al. 2013, arXiv:1304.3712] and by 10³–10⁵ for CHIME [src: arXiv:2202.01242,
 
 **Mask–gain coupling in interferometers.** A frequency-dependent RFI mask with a 1% gain
 difference between two days makes the average of two smooth spectra non-smooth and leaks
-foregrounds to high delay; CHIME filters each 9.94 s integration before averaging and drops
+foregrounds to high delay; CHIME filters each 9.9404 s integration before averaging and drops
 those with more than 2% of samples missing [src: CHIME Collaboration 2025, arXiv:2511.19620,
-Sect. III.2.3]. Its systematic on A²_HI is ± 0.61 on 3.55, about 17%, against a statistical
-error of +27/−37% [der from src: arXiv:2511.19620, Sect. VI.2.3].
+Sect. III.2.3]. For the full band it finds A²_HI = 3.55 (+0.96/−1.32) (stat.) ± 0.61 (sys.), and the
+constraints "are dominated by statistical uncertainties" [src: arXiv:2511.19620, Sect. VI.2.3
+and Sect. VIII].
 
 **Additive systematics in auto-correlation.** MeerKLASS subset auto-spectra show excess power
 from unresolved systematics; the detection rests on cross-spectra between observationally
@@ -398,7 +400,7 @@ Collaboration 2025, arXiv:2511.19620].
 
 **Foreground residuals in cross-correlation.** They do not bias a cross-correlation but inflate
 its variance: in CHIME × Lyα the residuals are ~6–10 times the thermal noise in the correlation
-function [src: CHIME Collaboration 2023, arXiv:2309.04404].
+function [src: CHIME Collaboration 2023, arXiv:2309.04404, abstract].
 
 **Primary-beam structure.** The MeerKLASS stacked spectrum carries an oscillation at the
 frequency of the MeerKAT primary-beam ripple, fitted at 17.90 (+6.53/−4.27) MHz, and its
@@ -417,7 +419,7 @@ by the beam, and needs forward modelling [src: arXiv:2606.25955, section 3].
 
 - Filtering and transfer functions. Time-domain filtering that removes atmospheric 1/f noise
   also removes large-scale signal: the CCAT filter-and-bin transfer function is below 20% at k ≲
-  0.1 Mpc⁻¹ [src: Dev et al. 2026, arXiv:2607.20404].
+  0.1 Mpc⁻¹ [src: Dev et al. 2026, arXiv:2607.20404, abstract].
 - Form of the correction. COMAP divides the measured spectrum by T(k) = T_f T_b T_p T_ν
   (filter, beam, pixel window, channel window); the filter term comes from simulations, and
   the uncertainty is divided by the same T, "becoming large whenever the transfer function

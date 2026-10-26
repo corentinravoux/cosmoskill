@@ -37,20 +37,20 @@ The CatWISE quasar sample of 2021 [src: arXiv:2009.14826, Sect. II]:
 
 - Selection W1 − W2 ≥ 0.8 (AGN-dominated, power-law emission), W1 and W2
   corrected for Galactic extinction with the Planck dust map "to avoid any
-  potential directional bias from uncorrected Galactic reddening".
+  potential directional bias from uncorrected Galactic reddening" [src: arXiv:2009.14826, Sect. II].
 - Magnitude window 9 < W1 < 16.4 (Vega): fainter than 16.4, "uneven source
   density appears due to overlaps in the ecliptic scanning pattern of WISE";
   the bright bound guards against saturation. Equivalent flux window 77.77 >
-  S_ν > 0.09 mJy.
+  S_ν > 0.09 mJy [src: arXiv:2009.14826, Sect. II].
 - Masks: |b| < 30° (density drops below that latitude), 291 further regions
   (nebulae, Magellanic Clouds and M31 at six times their 2MASS isophotal
   radii, bright stars with log₁₀(r/deg) = −0.134 K − 0.471), and 57 objects
-  with coverage depth w1cov < 80. Final sample 1,355,352 quasars.
+  with coverage depth w1cov < 80. Final sample 1,355,352 quasars [src: arXiv:2009.14826, Sect. II].
 - A residual linear trend of density with absolute ecliptic latitude (slope
   −0.051, intercept 68.89 deg⁻²) is fitted and used "as a correction and
-  weighting function".
+  weighting function" [src: arXiv:2009.14826, Sect. II].
 - Redshifts from a Stripe 82 subsample matched to SDSS spectra: mean z = 1.2,
-  99% at z > 0.1, used to argue that local clustering is small.
+  99% at z > 0.1, used to argue that local clustering is small [src: arXiv:2009.14826, Sect. II].
 
 The 2022 version of the sample, used by most later work, cuts at W1 < 16.5
 (0.078 mJy) and keeps 1,567,586 sources after masking [src:
@@ -86,15 +86,15 @@ sources at W1 ≈ 16.5 is close to a power law within the W1 band, because
 the wide redshift range smears emission lines (same paper, Sect. III.4.3)
 [src].
 
-| Catalogue | Cut | x | α | D_kin for β = 1.23 × 10⁻³ | Place read |
+| Catalogue | Cut | x | α | D_kin for β = 1.23 × 10⁻³ (arXiv:2511.00822, Sect. V) | Place read |
 |---|---|---|---|---|---|
 | CatWISE 2021 | W1 < 16.4 | 1.7 (sample mean) | 1.26 (sample mean, from W1 − W2 via synthetic AB magnitudes) | 0.0072 | arXiv:2009.14826, Sect. II; arXiv:2212.07733, Sect. 2.2; arXiv:2511.00822, Sect. II |
 | CatWISE 2022 | W1 < 16.5 (0.078 mJy) | 1.90 | 1.07 (mean below 0.08 mJy) | 0.73 × 10⁻² | arXiv:2503.02470, Sect. 3.3 |
 | NVSS | 15 mJy | 0.74 | 0.75 (adopted; no spectral indices in NVSS) | 0.41 × 10⁻² | arXiv:2503.02470, Sect. 3.1 |
 | RACS-low | 15 mJy | 0.72 | 0.88 (median from RACS–NVSS comparisons) | 0.41 × 10⁻² | arXiv:2503.02470, Sect. 3.2 |
 
-The two CatWISE choices differ in both inputs yet give the same expectation:
-5.84β and 5.93β [der: 2 + 1.7 × 2.26 and 2 + 1.9 × 2.07]. The 2025 paper
+The two CatWISE choices differ in both inputs yet give nearly the same
+expectation (table). The 2025 paper
 explains its lower α: "spectral indices are generally lower for sources with
 lower flux densities" [src: arXiv:2503.02470, Sect. 3.3]. The neural
 ratio analysis quotes D̃ = 4.31 × 10⁻³ (NVSS), 4.27 × 10⁻³ (RACS-low) and
@@ -164,22 +164,23 @@ arXiv:2009.14826, Sects. III.2, IV].
 space [src: arXiv:2511.00822, Sect. V, Eqs. 17–20]:
 
 1. Kinematic: m_i = δ_i^(2+x(1+α)) N_0 with δ_i = (1 + β cos θ_i)/√(1 − β²),
-   β = 1.23 × 10⁻³, x = 1.7, α = 1.26.
+   β = 1.23 × 10⁻³, x = 1.7, α = 1.26 [src: arXiv:2511.00822, Sect. V].
 2. Shot noise: Poisson draw with mean m_i, keeping only ℓ ≤ 1.
 3. Clustering at ℓ ≥ 2: FLASK lognormal fields in 35 shells over 0 < z < 3.5
    (Δz = 0.1), CLASS spectra, bias b(z) = 1.54 + 0.53z + 0.50z², n(z) ∝
    z^a₁ exp[−(z/a₂)^a₃] with a₁ = 0.86, a₂ = 1.48, a₃ = 2.36, Poisson
    sampled, with ℓ = 0, 1 removed; ℓ_max = 3N_side − 1, with ℓ_max ≈ 64
-   found sufficient.
+   found sufficient [src: arXiv:2511.00822, Sect. V].
 4. Clustering dipole: amplitude 0.81 × 10⁻³ (C_1 = 0.91 × 10⁻⁶) from the
    same bias and n(z), varied with cosmic variance ΔC_1/C_1 = √(2/(3 f_sky))
-   = 118.6% for f_sky = 0.474 (Eq. 14).
+   = 118.6% for f_sky = 0.474 (arXiv:2511.00822, Eq. 14).
 5. Six sets: S0 (2021 assumptions), S1 (no clustering dipole), S2 (random
    direction), S3 (aligned with the CMB dipole), S4 and S5 (clustering
-   dipole at its 2σ value 1.48 × 10⁻³, random or aligned).
+   dipole at its 2σ value 1.48 × 10⁻³, random or aligned) [src:
+   arXiv:2511.00822, Sect. V].
 
 Validation: the shot-noise-subtracted C_ℓ of the data lies within the 2σ
-band of 1000 masked FLASK mocks for ℓ ≥ 5 (NaMaster) [src: Fig. 4]. The
+band of 1000 masked FLASK mocks for ℓ ≥ 5 (NaMaster) [src: arXiv:2511.00822, Fig. 4]. The
 p-value counts mocks whose amplitude "match or exceed D^obs" — amplitude
 only, unlike the 2021 criterion [src: Sect. VI]. The drop from S0 to S1
 "can be attributed to the inclusion of stochastic clustering modes at
@@ -212,12 +213,10 @@ catalogue:
 
 Putting the last two rows on one scale: the 2025 mocks quote D_clus with
 |D|² = 9C_1/4π (arXiv:2511.00822, Eq. 4; 0.91 × 10⁻⁶ gives 0.81 × 10⁻³).
-Applied to the clustering fit, the same relation gives D_clus ≈ 1.3 × 10⁻³,
-and maps the observed Ĉ_1 to D ≈ 0.015, close to the measured amplitude,
-which suggests the two papers share the normalisation [der: assumes the
-convention of arXiv:2511.00822 for the C_1 of arXiv:2510.23769]. If so, the
-two analyses agree on the clustering dipole to a factor below two, and
-their different significances come from the ℓ ≥ 2 power, not from ℓ = 1.
+Whether the two papers share the C_1 normalisation, and hence whether they
+agree on the clustering dipole and differ only through the ℓ ≥ 2 power, is
+not stated in either; the conversion that an earlier version of this file
+made is set aside.
 
 ## Choices and what they cost
 <!-- key: choices-and-what-they-cost -->
@@ -242,7 +241,8 @@ their different significances come from the ℓ ≥ 2 power, not from ℓ = 1.
   IV.2.2]. Not used for current claims.
 - **Gaussian or Poisson noise.** A quadratic estimator is misspecified for
   Poisson counts; the bias becomes noticeable below about 600,000 sources
-  (≲ 15 deg⁻²), slightly for NVSS, not for CatWISE [src: same].
+  (≲ 15 deg⁻²), slightly for NVSS, not for CatWISE [src: arXiv:2505.23526,
+  Sect. IV.2.2].
 - **Poisson or super-Poisson.** The Poisson model is "strongly deviant" from
   the CatWISE one-point distribution; both super-Poisson likelihoods fit it,
   and the dipole stays anomalous with either [src: arXiv:2510.23769, Sects.
@@ -253,9 +253,9 @@ their different significances come from the ℓ ≥ 2 power, not from ℓ = 1.
 
 - Fixed linear correction (2021), as a correction and weight [src:
   arXiv:2009.14826, Sect. II].
-- Free amplitude Υ_ecl: the models with free ecliptic bias have ln Z higher
-  by about 180 than the same models without it (M8 against M4) [der: Table
-  1 of arXiv:2212.07733]; leaving it out "yields an even higher dipole
+- Free amplitude Υ_ecl: the models with free ecliptic bias have a much
+  higher ln Z than the same models without it (M8 against M4,
+  arXiv:2212.07733, Table 1); leaving it out "yields an even higher dipole
   amplitude" [src: arXiv:2503.02470, Sect. 2.1, citing that paper].
 - Forward model of Eddington bias (CatSIM): positions drawn uniformly,
   colours from the CatWISE W1–W2 distribution, aberration and boosting per
@@ -295,9 +295,10 @@ significance. Neither paper reports that comparison in the sections read.
 Random against aligned direction moves S2 → S3 from 3.44σ to 3.27σ; the 2σ
 amplitude with alignment gives 2.93σ [src: arXiv:2511.00822, Table 1, Sect.
 VI]. The aligned case is motivated by NVSS and RACS clustering dipoles that
-appear aligned with the CMB dipole [src: Sect. V]. The bias model matters
-more than the direction: b = 1 gives a dipole 3.4 times smaller than the
-evolving bias [der: 0.81/0.24].
+appear aligned with the CMB dipole [src: Sect. V].
+
+The bias model matters more than the direction: compare the constant-bias
+and the evolving-bias clustering dipoles of the table above [der].
 
 ### Joint catalogues
 <!-- key: joint-catalogues -->
@@ -308,7 +309,8 @@ evolving bias [der: 0.81/0.24].
   4.2]. Hypothesis (iii), kinematic part fixed to the CMB: residual 39° ±
   8° from it, 4.6σ [src: same].
 - Cost: the separation assumes one residual dipole common to all
-  catalogues; a frequency-dependent residual breaks it [src: Sect. 5.1].
+  catalogues; a frequency-dependent residual breaks it [src: arXiv:2503.02470,
+  Sect. 5.1].
   NVSS and RACS-low disagree in direction, which lowers their combined
   amplitude and hence β [src: Sect. 4.2]. Raising the cuts to 20 mJy and
   W1 < 16.4 raises both radio amplitudes [src: same].
@@ -344,7 +346,7 @@ Ellis–Baldwin is a limit (Takeuchi 2026, arXiv:2602.07389); a
 generalisation to arbitrary luminosity distributions and SEDs, after which
 the CatWISE anomaly "persists" (Bonnefous 2026, arXiv:2602.05700); a new
 WISE AGN selection with an adapted formalism, 2.5 times the kinematic
-amplitude at 5.3σ (Lee et al. 2026, arXiv:2608.06458) [src: abstracts].
+amplitude at 5.3σ (Lee et al. 2026, arXiv:2608.06458) [src: abstract of each].
 
 ## Numbers
 <!-- key: numbers -->
@@ -371,7 +373,7 @@ amplitude at 5.3σ (Lee et al. 2026, arXiv:2608.06458) [src: abstracts].
 <!-- key: what-goes-wrong -->
 
 - **Null without large-scale power.** Shows up as a significance that falls
-  when clustering is added (4.82σ → 3.27–3.63σ). Test: mocks whose ℓ ≥ 2
+  when clustering is added (4.82σ → 3.63σ, 3.44σ or 3.27σ). Test: mocks whose ℓ ≥ 2
   power matches the data, checked at ℓ = 2–4 with real-space template fits,
   not only at ℓ ≥ 5 (arXiv:2511.00822 Fig. 4; arXiv:2510.23769 Sect. 5).
 - **Mismatched p-value criteria.** Amplitude-and-direction (2021) against
@@ -426,8 +428,8 @@ amplitude at 5.3σ (Lee et al. 2026, arXiv:2608.06458) [src: abstracts].
 
 - The body of Böhme et al. 2025 (arXiv:2509.16732): no HTML rendering and
   the LaTeX source did not resolve; only the abstract numbers are used.
-- The bias and redshift fits behind D_clus = 0.81 × 10⁻³ ("Tiwari et al.",
-  ref. 48 of arXiv:2511.00822), the 2025 RACS–CatWISE–NVSS tension paper
+- The bias and redshift fits behind D_clus = 0.81 × 10⁻³ (arXiv:2511.00822
+  [src: Sect. V], taken from "Tiwari et al.", one of its references), the 2025 RACS–CatWISE–NVSS tension paper
   ("L25") and the CatSIM paper ("OL26") of arXiv:2607.25703: not identified
   or read here.
 - Whether α = 1.06, the index quoted in Fig. 1 of arXiv:2505.23526 for its

@@ -22,9 +22,9 @@ hardware or strategy choice creates the effect and where to read on.
   Lasker et al. 2024, arXiv:2404.03006) [src].
 - **Size.** In a DESI Bright Galaxy Survey mock, completeness is above 95%
   in low-density regions and below 10% in the centres of massive clusters
-  (Smith et al. 2019, arXiv:1809.07355) [src]. Survey-wide, DESI DR2
-  assignment completeness runs from 53.7% (ELG) to 93.6% (QSO)
-  (arXiv:2503.14738) [sec: GC].
+  (Smith et al. 2019, arXiv:1809.07355) [src: abstract]. Survey-wide, DESI
+  DR2 assignment completeness is 53.7% for ELGs and 93.6% for QSOs
+  (arXiv:2503.14738) [src: Table 2].
 - **Requirement and pointing.** DESI requires that at least 80% of targets
   receive a fibre [src: Table 3, L2.7.1] (Abareshi et al. 2022,
   arXiv:2205.10939). On-sky fibre positioning improved during commissioning
@@ -83,7 +83,7 @@ hardware or strategy choice creates the effect and where to read on.
 - **Size.** An independent radio check exists: stacking CHIME 21 cm maps on
   eBOSS quasars is sensitive to a redshift bias and finds
   Δv = −66 ± 20 km/s for the quasar catalogue (CHIME Collaboration 2022,
-  arXiv:2202.01242) [src].
+  arXiv:2202.01242) [src: abstract].
 - **Where.** `cosmo-galaxy-clustering` (quasar redshift errors in BAO and
   RSD), `cosmo-lyman-alpha` (quasar redshifts in the cross-correlation).
 
@@ -188,7 +188,7 @@ anticipate them (`open-questions.md`, Sect. 1).
 Deeper ground-based imaging loses sources to blending: the LSST **forecast**
 of the effective source density falls from about 37 to about 31 arcmin⁻²
 when seriously blended galaxies are rejected (Chang et al. 2013,
-arXiv:1305.0793) [src]. Blending also biases photometric redshifts and
+arXiv:1305.0793) [src: abstract]. Blending also biases photometric redshifts and
 cluster lensing. Where: `cosmo-weak-lensing`, `cosmo-clusters`.
 
 ## 3. Slitless spectroscopy and spectrophotometry
@@ -209,7 +209,8 @@ cluster lensing. Where: `cosmo-weak-lensing`, `cosmo-clusters`.
   (Scaramella et al. 2022, arXiv:2108.01201) [src].
 - **Status.** No Euclid clustering measurement on data exists; the BAO
   pipeline has been validated on mocks [sec: GC].
-- **SPHEREx.** R = 35–130 spectrophotometry in 6.2″ pixels [sec: GC]:
+- **SPHEREx.** R = 35–130 spectrophotometry in 6.2″ pixels (arXiv:2511.02985)
+  [src: abstract]:
   redshift precision and star–galaxy separation set the usable sample for
   the f_NL measurement.
 - **Where.** `cosmo-galaxy-clustering` (interlopers, purity and
@@ -269,11 +270,12 @@ cluster lensing. Where: `cosmo-weak-lensing`, `cosmo-clusters`.
   non-linearities of a few percent and affects every ZTF light-curve
   release; scene-modelling photometry changes colours by 10 mmag and the
   absolute calibration by 90 mmag relative to forced photometry (Lacroix et
-  al. 2025, arXiv:2509.04073) [sec: SN]. This is why the ZTF SN Ia DR2
+  al. 2025, arXiv:2509.04073) [src: abstract]. This is why the ZTF SN Ia DR2
   (arXiv:2409.04346) is not a cosmology sample [sec: SN].
 - **Cross-survey calibration.** ATLAS photometry showed initial offsets of
-  about 40 mmag against DES stars, reduced to an estimated 5–10 mmag
-  [sec: SN].
+  about 40 mmag against DES stars, reduced to an estimated 5–10 mmag of
+  combined calibration systematics (Marlin et al. 2025, arXiv:2512.21903)
+  [src: abstract].
 - **Cadence and selection.** Detection efficiency depends on cadence,
   filter sequence and depth, and the spectroscopic follow-up adds its own
   selection. For Rubin the choice of footprint, filter pairing and cadence
@@ -290,7 +292,7 @@ cluster lensing. Where: `cosmo-weak-lensing`, `cosmo-clusters`.
   frequency-dependent beam mixes their smooth spectra into the line-of-sight
   modes of the signal. For a cylinder telescope, simulations require the
   per-feed beam width to 0.1% and gains to 1% within a minute (Shaw et al.
-  2015, arXiv:1401.2095) [src].
+  2015, arXiv:1401.2095) [src: abstract].
 - **Delivered stability (CHIME).** Raw per-input gain variations over a
   year are 1% at 400 MHz to 1.8% at 800 MHz, mostly thermal; daily
   recalibration on bright transits brings them to about 1%, and a
@@ -301,7 +303,7 @@ cluster lensing. Where: `cosmo-weak-lensing`, `cosmo-clusters`.
 - **Mechanical tolerances.** For HIRAX, the first 28 dishes have surface
   deviations within requirements, while feed placement "satisfies all
   accuracy criteria but fails precision limits" (Studer et al. 2026,
-  arXiv:2607.26972) [src]: redundancy, on which the calibration relies, is
+  arXiv:2607.26972) [src: abstract]: redundancy, on which the calibration relies, is
   a manufacturing specification.
 - **Polarisation leakage and total-power stability.** Treated by projection
   onto temperature modes in the m-mode analysis (arXiv:1401.2095) [src];

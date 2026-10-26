@@ -12,9 +12,10 @@ secondary source; `[der]` derived here. H0 in km/s/Mpc.
 ## 1. Is the local ladder value 73 or 70?
 <!-- key: is-the-local-ladder-value-73-or-70 -->
 
-**Position A (SH0ES, H0DN).** The Cepheid-SN Ia ladder gives 73.17 ± 0.86
-with four anchors (arXiv:2404.08038), 73.18 ± 0.88 with JWST Cepheids and 35
-TRGB hosts (arXiv:2509.01667), and the community network gives 73.50 ± 0.81
+**Position A (SH0ES, H0DN)** `[src: abstract]`. The Cepheid-SN Ia ladder
+gives 73.17 ± 0.86 with four anchors (arXiv:2404.08038), 73.18 ± 0.88 with
+JWST Cepheids and 35 TRGB hosts (arXiv:2509.01667), and the community network
+gives 73.50 ± 0.81
 with first-rank indicators internally consistent; removing Cepheids or TRGB
 has minimal effect, and replacing SNe Ia by galaxy-based indicators changes
 H0 by less than 0.1 while doubling the error `[src]` (arXiv:2510.23823).
@@ -27,15 +28,17 @@ new JWST data only (10 galaxies hosting 11 SNe Ia, zero point from NGC 4258)
 the same paper gives two separate values: 68.81 ± 1.79 (stat) ± 1.32 (sys)
 for the TRGB and 67.80 ± 2.17 (stat) ± 1.64 (sys) for the JAGB. The abstract
 calls the results "consistent with the current standard LambdaCDM model,
-without the need for the inclusion of additional new physics" `[src]`
-(Freedman et al. 2024, arXiv:2408.06153, abstract re-read 2026-10-08). The
+without the need for the inclusion of additional new physics"
+`[src: abstract]` (Freedman et al. 2024, arXiv:2408.06153, abstract re-read
+2026-10-08). The
 programme also targets Cepheids, but that paper reports the TRGB and JAGB
 only.
 
 **Where the two actually differ.** Not in the stellar distances: TRGB and
 JAGB agree with each other to better than 1% and with SH0ES Cepheid distances
-at just over 1% `[src]` (arXiv:2408.06153); HST Cepheids agree with every
-JWST indicator at about 0.03 mag `[src]` (arXiv:2408.11770). The difference
+at just over 1% `[src: abstract]` (arXiv:2408.06153); HST Cepheids agree
+with every JWST indicator at about 0.03 mag `[src: abstract]`
+(arXiv:2408.11770). The difference
 sits in (i) which SN Ia calibrators are in the sample and (ii) which SN
 compilation and corrections form the Hubble flow.
 
@@ -56,7 +59,7 @@ these (arXiv:2606.26831).
 
 **Newer CCHP lines.** A 2026 reanalysis of Milky Way Cepheids argues that
 Gaia parallax errors, not metallicity, drive the PL residuals and proposes a
-period-luminosity-colour calibration with 0.04 mag scatter `[src]` (Madore &
+period-luminosity-colour calibration with 0.04 mag scatter `[src: abstract]` (Madore &
 Freedman 2026, arXiv:2602.13397). The SH0ES side rejects the associated
 recalibration of Gaia (arXiv:2507.15936). No H0 value from the revised
 calibration was found in this session.
@@ -74,18 +77,18 @@ modelling `[src]`.
   offset: 70.6 ± 1.0, tension reduced from 5 to 2 sigma `[src: abstract]`.
 - Stiskalek et al. (2026, arXiv:2603.09880, with SH0ES co-authors): the same
   prior without the selection function mis-predicts the observed parallax,
-  magnitude and period distributions; with selection, the SH0ES calibration
-  is recovered within 0.5 sigma and the claimed shift is "unjustified"
-  `[src]`.
+  magnitude and period distributions; with selection, the period-luminosity
+  parameters agree with the SH0ES values within 0.5 sigma and the shift in H0
+  is called "unjustified" `[src: abstract]`.
 - Percival (2026, arXiv:2607.22425): a likelihood for truncated selection in
   correlated observables finds 1.3 to 2.3 sigma evidence for residual
   selection in calibrator-galaxy Cepheids and shifts of -1.4, -0.2 and -1.0
   that together "substantially reduce" the tension `[src: abstract]`.
 - Stiskalek et al. (2025, arXiv:2509.09665): a Cepheid-only two-rung ladder
   with explicit selection and a field-level velocity model gives 71.1 ± 1.4;
-  other selection assumptions raise it by up to one sigma `[src]`. It is
-  2.7 sigma from the CMB value `[der]` (against 67.24 ± 0.35; the paper
-  states 2.8).
+  other selection assumptions raise it by up to one statistical standard
+  deviation; the paper puts it 2.8 sigma from the latest CMB results
+  `[src: abstract]`.
 
 **Why it is unresolved.** The SH0ES hosts were chosen over three decades
 without a single documented rule (arXiv:2204.10866), so the selection model
@@ -103,36 +106,39 @@ arXiv:2601.00650).
 
 **Counter-evidence.**
 
-- One-step and SN-free routes that return high values: SBF 73.8 ± 2.4 total
-  (arXiv:2502.15935), SNe II by spectral modelling 74.9 ± 1.9 (stat)
-  (arXiv:2411.04968), megamasers 73.9 ± 3.0 (arXiv:2001.09213, now
-  contested), single-lens TDCOSMO values of 73 to 74 (arXiv:2604.14145,
-  arXiv:2608.27566).
+- One-step and SN-free routes that return high values `[src: abstract]`:
+  SBF 73.8 ± 0.7 (stat) ± 2.3 (sys) (arXiv:2502.15935), SNe II by spectral
+  modelling 74.9 ± 1.9 (stat) (arXiv:2411.04968), megamasers 73.9 ± 3.0
+  (arXiv:2001.09213, now contested), TDCOSMO 73.2 (+4.8/-4.7) for one lens
+  with lambda_int free (arXiv:2604.14145) and 73.5 (+2.7/-2.8) x lambda_int
+  for three lenses with lambda_int fixed (arXiv:2608.27566).
 - Averages of heterogeneous published values inherit their correlations and
   selection; a Bayesian jackknife over 16 measurements finds many grouping
   scenarios with similar evidence and only disfavours "no measurement is
-  biased" `[src]` (Hughes et al. 2025, arXiv:2511.19341).
-- BAO + BBN is 4.5 sigma from SH0ES without any CMB anisotropy data `[src]`
-  (arXiv:2503.14738), and the equality-scale H0 (66.7 to 67.9) is still 2.2
-  to 3.0 sigma from SH0ES `[src]` (arXiv:2411.16677): the low camp does not
-  rest on one probe either.
+  biased" `[src: abstract]` (Hughes et al. 2025, arXiv:2511.19341).
+- BAO + BBN is 4.5 sigma from SH0ES without any CMB anisotropy data
+  `[src: Sect. VI]` (arXiv:2503.14738), and the equality-scale H0 values
+  (66.7, 67.9 and 67.8 with three SN samples) are still in "2.2-3.0 sigma"
+  tension with SH0ES `[src: abstract]` (arXiv:2411.16677): the low camp does
+  not rest on one probe either.
 
-**Honest summary.** Routes with errors below 2 split cleanly (ladder high;
-CMB, BAO + BBN, inverse ladder low). Routes with errors of 3 to 5 (lensing,
-masers, sirens) are compatible with both, and their central values have moved
-with modelling choices.
+**Honest summary.** The routes with the smallest errors split cleanly
+(ladder high; CMB, BAO + BBN, inverse ladder low). Routes with larger errors
+(lensing, masers, sirens) are compatible with both, and their central values
+have moved with modelling choices.
 
 ## 4. Megamasers: 73.9, 71.6 or 67?
 <!-- key: megamasers-73-9-71-6-or-67 -->
 
 The 2020 MCP value of 73.9 ± 3.0 used a fixed 250 km/s velocity noise and no
-flow correction (arXiv:2001.09213). Two 2026 reanalyses with
+flow correction (arXiv:2001.09213, abstract). Two 2026 reanalyses with
 constrained-simulation velocity fields disagree:
 
-- Watkins & Feldman (arXiv:2608.06247): 66.9 ± 2.5 to 68.8 ± 2.6 depending on
-  the assumed velocity noise, consistent with the CMB and more than 2 sigma
-  below the ladder; they argue earlier results were biased by peculiar
-  velocities `[src: Sect. 3]`.
+- Watkins & Feldman (arXiv:2608.06247): 66.9 ± 2.5, 68.4 ± 2.5 and
+  68.8 ± 2.6 for an assumed velocity noise of 50, 100 and 150 km/s
+  `[src: Table 2]`, consistent with the CMB and more than 2 sigma below the
+  ladder; they argue earlier results were biased by peculiar velocities
+  `[src: abstract]`.
 - Stiskalek & Desmond (arXiv:2609.17684): 71.6 ± 3.7 from five galaxies
   refitted at the spot-catalogue level with a distance prior and selection;
   velocity corrections lower H0 by 1.6 to 2.1 `[src: abstract]`.
@@ -146,18 +152,20 @@ analysis.
 <!-- key: time-delay-cosmography-after-the-mass-sheet -->
 
 Kochanek (2020, arXiv:1911.05083) argued that no lensing H0 is more accurate
-than ~10% because the convergence at the Einstein radius is unconstrained.
-TDCOSMO accepted the degeneracy and constrains it with kinematics: 71.6
-(+3.9/-3.3) from 8 lenses, 4.6% with external lenses (arXiv:2506.03023). A
-2026 study lists kinematic systematics of several per cent in sigma^2 from
-the PSF, the anisotropy model and the light-versus-mass profile, each
-comparable to the target precision `[src]` (arXiv:2602.03934).
+than ~10% because the convergence at the Einstein radius is unconstrained
+`[src: abstract]`. TDCOSMO accepted the degeneracy and constrains it with
+kinematics: 71.6 (+3.9/-3.3) from 8 lenses, 4.6% with external lenses
+`[src: abstract]` (arXiv:2506.03023). A 2026 study lists kinematic
+systematics of several per cent in sigma^2 from the PSF, the anisotropy model
+and the light-versus-mass profile, each comparable to the target precision
+`[src: abstract]` (arXiv:2602.03934).
 
 Open points: whether SLACS and SL2S deflectors share the population of the
 time-delay lenses (arXiv:2007.02941); whether lambda_int differs from 1
-(1.12 +0.05/-0.06 in one system, arXiv:2604.14145); the status of cluster
-lenses, where three lensed SNe give 64.8 to 75.7 with errors of 4 to 11
-(arXiv:2305.06367, arXiv:2403.18902, arXiv:2509.12301).
+(1.12 +0.05/-0.06 in one system, arXiv:2604.14145, abstract); the status of
+cluster lenses, where three lensed SNe give `[src: abstract]` 64.8
+(+4.4/-4.3) for SN Refsdal (arXiv:2305.06367), 75.7 (+8.1/-5.5) for SN H0pe
+(arXiv:2403.18902) and 66.9 (+11.2/-8.1) for SN Encore (arXiv:2509.12301).
 
 **Forecast.** 3.3% with resolved kinematics of the 7 original lenses, 2.5%
 adding 50 non-time-delay lenses, 1.5% and 1.2% with 40 time-delay and 200
@@ -171,41 +179,45 @@ The DESI FP relation fixes H0 times D_Coma. With D_Coma = 98.5 ± 2.2 Mpc from
 SNe Ia on the HST ladder, H0 = 76.5 ± 2.2; the Planck value requires
 111.8 ± 1.8 Mpc, 4.6 sigma beyond the direct measures, and independent
 routes (Key Project FP with Cepheids, JWST TRGB, HST SBF) all give less than
-100 Mpc `[src]` (Scolnic et al. 2025, arXiv:2409.14546). The argument recasts
+100 Mpc `[src: abstract]` (Scolnic et al. 2025, arXiv:2409.14546). The argument recasts
 the tension as a statement about one well-studied distance. Weak points a
 referee will raise: every Coma distance quoted traces back to the same
 anchors; the FP zero point from one cluster carries its peculiar velocity and
 the FP's environmental dependence; the DESI DR1 follow-up with a group
-catalogue gives 73.7 ± 1.1 once calibrated on SH0ES SNe (arXiv:2512.03232).
+catalogue gives 73.7 ± 0.06 (stat) ± 1.1 (syst) once calibrated on SH0ES SNe
+(arXiv:2512.03232, abstract).
 
 ## 7. A local void or outflow
 <!-- key: a-local-void-or-outflow -->
 
-**For.** Near-infrared luminosity density rises by ~1.5 beyond z ~ 0.07,
-suggesting a ~300 Mpc under-density (Keenan et al. 2013, arXiv:1304.2884)
-`[src]`. Taken at face value (density contrast 0.46 ± 0.06 between 40 and 300
-Mpc) such a void could account for the tension but is itself in 6.04 sigma
-tension with LCDM, which motivated a MOND-based cosmology (Haslbauer et al.
-2020, arXiv:2009.11292) `[src]`. A 2026 perspective connects the void to
-low-redshift BAO deviations and predicts convergence to the CMB value at
-z > 0.2 (Banik et al. 2026, arXiv:2602.03928) `[src]`.
+**For.** Near-infrared luminosity density rises to ~1.5 times the local value
+beyond z ~ 0.07, suggesting a ~300 Mpc under-density (Keenan et al. 2013,
+arXiv:1304.2884) `[src: abstract and title]`. Taken at face value (density
+contrast 0.46 ± 0.06 between 40 and 300 Mpc) such a void could account for
+the tension but is itself in 6.04 sigma tension with LCDM, which motivated a
+MOND-based cosmology (Haslbauer et al. 2020, arXiv:2009.11292)
+`[src: abstract]`. A 2026 perspective connects the void to low-redshift BAO
+deviations and predicts convergence to the CMB value at z > 0.2 (Banik et al.
+2026, arXiv:2602.03928) `[src: abstract]`.
 
 **Against.** The SN Ia Hubble diagram at 0.023 < z < 0.15 shows no step and
 excludes contrasts above 27% on > 69 Mpc/h scales at 5 sigma
-(arXiv:1901.08681); LCDM sample variance is 0.31 (arXiv:1706.09723); flow
+(arXiv:1901.08681, abstract); LCDM sample variance is 0.31
+(arXiv:1706.09723, abstract); flow
 corrections raise rather than lower H0 (arXiv:2110.03487). Fitting void
 profiles to Cosmicflows-4 Tully-Fisher distances at the field level prefers a
 void smaller than 70 Mpc, under 10% of the proposed size; the profiles give
 local H0 of 72.1 (+0.9/-0.8), 70.4 ± 0.4 or 70.2 (+0.5/-0.4), the first being
 disfavoured by the evidence, and the predicted bulk flows disagree with
-Cosmicflows-4 `[src]` (Stiskalek et al. 2025, arXiv:2506.10518). The
+Cosmicflows-4 `[src: abstract]` (Stiskalek et al. 2025, arXiv:2506.10518). The
 Manticore-Local reconstruction finds no large local under-density `[src]`
 (arXiv:2505.10682). The 2026 decade review states that a local void "has
 long been ruled out as a significant contribution" `[src]` (Cai & Wang 2026,
 arXiv:2606.20434).
 
 **Status.** Minority position, still published. The decisive data are direct
-distances and velocities at 100 to 300 Mpc (DESI PV, WALLABY); see
+distances and velocities on the scale of the proposed void (DESI PV,
+WALLABY); see
 `cosmo-peculiar-velocities`.
 
 ## 8. Theory status (summary; details in sibling skills)
@@ -215,12 +227,13 @@ distances and velocities at 100 to 300 Mpc (DESI PV, WALLABY); see
 any smooth late-time change of H(z) is bounded by BAO + uncalibrated SNe
 (Efstathiou 2021, arXiv:2103.08723). A model that fits SH0ES, DESI BAO and
 SNe needs either a step in M_B at z ~ 0.01 or a violation of distance duality
-`[src]` (Bansal & Huterer 2026, arXiv:2602.06293). The inverse ladder cannot
-be moved to 73 by SN systematics: known systematics shift it by less than
-0.1, and the required d mu / dz = 0.2 mag would give Omega_M = 0.23, 10 sigma
-from other probes `[src]` (Popovic & Sullivan 2026, arXiv:2602.12822). The
-DESI preference for evolving dark energy (2.8 to 4.2 sigma with SNe as
-published in arXiv:2503.14738; revised since by supernova recalibrations, see
+`[src: abstract]` (Bansal & Huterer 2026, arXiv:2602.06293). The inverse
+ladder cannot be moved to the local value by SN systematics: known
+systematics shift it by less than 0.1, and the required d mu / dz = 0.2 mag
+would give Omega_M = 0.23, 10 sigma from other probes `[src: abstract]`
+(Popovic & Sullivan 2026, arXiv:2602.12822). The DESI preference for evolving
+dark energy (2.8 to 4.2 sigma with SNe as published in arXiv:2503.14738,
+abstract; revised since by supernova recalibrations, see
 `cosmo-supernovae`) does not change this (Efstathiou 2026, arXiv:2607.29562)
 `[src]`.
 
@@ -236,7 +249,7 @@ published in arXiv:2503.14738; revised since by supernova recalibrations, see
   al. 2025, arXiv:2507.23355).
 - A profile-likelihood analysis with ACT DR6 + DESI DR2 gives f_EDE = 0.09 ±
   0.03 and H0 = 71.0 ± 1.1, residual tension ~2 sigma, and stresses
-  prior-volume effects in the Bayesian limits `[src]` (Poulin et al. 2025,
+  prior-volume effects in the Bayesian limits `[src: abstract]` (Poulin et al. 2025,
   arXiv:2505.08051). Review of the model class: Poulin et al. 2023,
   arXiv:2302.09032.
 - SPT + ACT + Planck + DESI show mild preferences for modified recombination
@@ -245,7 +258,7 @@ published in arXiv:2503.14738; revised since by supernova recalibrations, see
 - Structural limits: reducing r_d alone conflicts with BAO or weak lensing
   (arXiv:2010.04158); r_d-free H0 estimates stay low (arXiv:2411.16677),
   though with r_d free and newer data one finds 70.0 ± 1.7
-  (arXiv:2509.16202).
+  (arXiv:2509.16202, abstract).
 
 Model catalogues and rankings: arXiv:2107.10291 and arXiv:2504.01669; go to
 `cosmo-tensions-anomalies` and `cosmo-dark-energy-modified-gravity`.
@@ -256,7 +269,7 @@ Model catalogues and rankings: arXiv:2107.10291 and arXiv:2504.01669; go to
 A historical analysis of 163 H0 values from 1976 to 2019 finds a chi^2 of 580
 about the weighted mean and concludes that published errors are generically
 underestimated, recalibrating a nominal 4.4 sigma to 2.1 sigma and
-attributing the attention to "groupthink" `[src]` (Lopez-Corredoira 2024,
+attributing the attention to "groupthink" `[src: abstract]` (Lopez-Corredoira 2024,
 arXiv:2411.13621). The answer of the field is procedural rather than
 rhetorical: JWST cross-checks of the photometry (arXiv:2401.04773),
 leave-one-out variants and an independent community pipeline
@@ -270,32 +283,32 @@ measurement.
 |---|---|---|---|
 | Gaia zero point and the MW anchor | Gaia DR4 | 2 December 2026 | [src] ESA page |
 | Calibrator sample variance; JAGB standardisation | more JWST hosts; spectroscopic purity surveys (arXiv:2609.25412) | ongoing | [src] |
-| Time-delay H0 at ~3% without profile assumptions | TDCOSMO-2026 hierarchical analysis | announced (arXiv:2608.27566) | [src] |
-| Third rung without SNe at 1% | DESI PV calibrated directly on Cepheids / TRGB | later DESI releases (arXiv:2512.03232) | [src] |
+| Time-delay H0 with free lambda_int, toward per cent precision | TDCOSMO-2026 hierarchical analysis | announced (arXiv:2608.27566) | [src: abstract] |
+| Third rung without SNe, toward a per cent measurement | DESI PV calibrated directly on Cepheids / TRGB | later DESI releases (arXiv:2512.03232) | [src: abstract] |
 | Two-rung ladders | TRGB beyond cz ~ 1000 km/s and better local reconstructions (arXiv:2609.29996) | open | [src: abstract] |
-| r_d-free early H0 | completed DESI + SO-like lensing: sigma(H0) ~ 0.67, **forecast** (arXiv:2509.16202) | late 2020s | [src] |
+| r_d-free early H0 | completed DESI + SO-like lensing: sigma(H0) ~ 0.67 with fixed sum m_nu, **forecast** (arXiv:2509.16202) | late 2020s | [src: abstract] |
 
 ## 11. Stale or wrong claims that still circulate
 <!-- key: stale-or-wrong-claims-that-still-circulate -->
 
 | Claim | Why it is wrong or stale | Correcting paper |
 |---|---|---|
-| "Cepheid crowding in HST photometry may explain the tension." | JWST: -0.01 ± 0.03 mag, rejected at 8.2 sigma; no bias in 19 hosts | arXiv:2401.04773; arXiv:2509.01667 |
-| "JWST found H0 = 69, so the tension is gone." | CCHP's result is 70.39 with a total error of 1.94; the distances agree with SH0ES at ~1%; the difference is the SN calibrator subsample | arXiv:2408.06153; arXiv:2408.11770; arXiv:2504.08921 |
-| "The TRGB gives 69.8." | That is the 2021 CCHP HST value; other TRGB analyses give 72 to 73, and none of 108 CATS variants is below 71.6 | arXiv:2106.15656; arXiv:2304.06693; arXiv:2504.08921 |
-| "Lensing gives 73.3 at 2.4%, 5.3 sigma with the ladder." | Assumed power-law or composite profiles; with the mass-sheet degeneracy free the result is 71.6 (+3.9/-3.3) | arXiv:1907.04869; arXiv:2007.02941; arXiv:2506.03023 |
-| "Megamasers independently confirm 73.9." | No flow correction in that value; 2026 reanalyses give 66.9 to 71.6 | arXiv:2608.06247; arXiv:2609.17684 |
-| "The tension is 4.4 sigma" (or "5 sigma") with no qualifier. | 4.4 is the 2019 figure and 5.0 the 2022 one against Planck 2018; today's figure runs from 4.4 to 7.1 for the SH0ES and H0DN values depending on the early-Universe endpoint | arXiv:1903.07603; arXiv:2112.04510; `results.md` Section 5 |
-| "Planck is the outlier." | SPT-3G alone gives 66.66 ± 0.60; BAO + BBN gives 68.51 ± 0.58 with no CMB anisotropies | arXiv:2506.20707; arXiv:2503.14738 |
-| "SH0ES and CCHP are independent measurements." | Same anchor (NGC 4258) for the JWST work, overlapping SN hosts, overlapping low-z SNe | arXiv:2408.11770 |
-| "DESI's 73.7 from peculiar velocities is an independent H0." | Its zero point is the SH0ES / Pantheon+ SN Ia calibration | arXiv:2512.03232 |
+| "Cepheid crowding in HST photometry may explain the tension." | JWST: -0.01 ± 0.03 mag, rejected at 8.2 sigma; no bias in 19 hosts | arXiv:2401.04773; arXiv:2509.01667 (abstract of each) |
+| "JWST found H0 = 69, so the tension is gone." | CCHP's best estimate is 70.39 ± 1.22 (stat) ± 1.33 (sys) ± 0.70 (sigma_SN); the distances agree with SH0ES at just over 1%; the difference is the SN calibrator subsample | arXiv:2408.06153; arXiv:2408.11770; arXiv:2504.08921 (abstract of each) |
+| "The TRGB gives 69.8." | That is the 2021 CCHP HST value; the complete 35-calibrator TRGB sample gives 72.1-73.3 ± 1.8, and no CATS variant is below 71.6 | arXiv:2106.15656; arXiv:2304.06693; arXiv:2504.08921 (abstract of each) |
+| "Lensing gives 73.3 at 2.4%, 5.3 sigma with the ladder." | Assumed power-law or composite profiles; with the mass-sheet degeneracy free the result is 71.6 (+3.9/-3.3) | arXiv:1907.04869; arXiv:2007.02941; arXiv:2506.03023 (abstract of each) |
+| "Megamasers independently confirm 73.9." | No flow correction in that value; 2026 reanalyses give 66.9 ± 2.5, 68.4 ± 2.5 and 68.8 ± 2.6 for velocity noise of 50, 100 and 150 km/s (Table 2), or 71.6 ± 3.7 (abstract) | arXiv:2001.09213 (abstract); arXiv:2608.06247; arXiv:2609.17684 |
+| "The tension is 4.4 sigma" (or "5 sigma") with no qualifier. | 4.4 is the 2019 figure (abstract) and 5.0 the 2022 one (Sect. 5) against Planck; H0DN states 7.1 sigma against Planck+SPT+ACT and 5.0 against BBN + DESI BAO (abstract); the figure depends on the early-Universe endpoint | arXiv:1903.07603; arXiv:2112.04510; arXiv:2510.23823; `results.md#tension-significance-computed-uniformly` |
+| "Planck is the outlier." | SPT-3G alone gives 66.66 ± 0.60 (abstract); BAO + BBN gives 68.51 ± 0.58 with no CMB anisotropies (Eq. 19) | arXiv:2506.20707; arXiv:2503.14738 |
+| "SH0ES and CCHP are independent measurements." | Same anchor (NGC 4258) for the JWST work, overlapping SN hosts, overlapping low-z SNe | arXiv:2408.11770 (abstract) |
+| "DESI's 73.7 from peculiar velocities is an independent H0." | Its zero point is the SH0ES / Pantheon+ SN Ia calibration | arXiv:2512.03232 (abstract) |
 | "Dynamical dark energy (DESI) relieves the H0 tension." | The ladder-CMB mismatch is in M_B and is insensitive to the late expansion history | arXiv:2607.29562; arXiv:2103.08723 |
-| "A late-time transition or phantom dark energy can raise H0." | Requires a step in M_B at z ~ 0.01 or broken distance duality | arXiv:2602.06293 |
-| "We live in a void that explains it." | Direct distances limit the void to < 70 Mpc; SN Hubble diagram shows no step | arXiv:2506.10518; arXiv:1901.08681 |
+| "A late-time transition or phantom dark energy can raise H0." | Requires a step in M_B at z ~ 0.01 or broken distance duality | arXiv:2602.06293 (abstract) |
+| "We live in a void that explains it." | Direct distances limit the void to < 70 Mpc; SN Hubble diagram shows no step | arXiv:2506.10518; arXiv:1901.08681 (abstract of each) |
 | "The Cepheid metallicity term could shift H0 by per cents." | Anchors and hosts have similar metallicity; gamma matters for dwarf-galaxy distances, not for H0 | arXiv:2507.15936 |
-| "A volume prior lowers H0 to 70.6, so the tension is statistical." | Without the selection term the model fails posterior predictive checks; with it the SH0ES zero point is recovered | arXiv:2603.09880 |
+| "A volume prior lowers H0 to 70.6, so the tension is statistical." | Without the selection term the model fails posterior predictive checks; with it the SH0ES zero point is recovered | arXiv:2601.22215; arXiv:2603.09880 (abstract of each) |
 | "Use the SH0ES H0 as a Gaussian prior in a cosmological fit." | Double counts low-z SNe and fixes q0; use the M_B calibration | arXiv:2103.08723 |
-| "Standard sirens already weigh in." | 75.4 (+12.8/-9.1) from GWTC-4.0 | arXiv:2509.04348 |
+| "Standard sirens already weigh in." | 75.4 (+12.8/-9.1) from GWTC-4.0 | arXiv:2509.04348 (abstract) |
 
 ## Not verified
 <!-- key: not-verified -->

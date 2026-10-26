@@ -38,7 +38,7 @@ accuracy with random points; PIT the probability integral transform.
   fiducial nuisance values on the peaks of their informative priors, so that the posterior also
   peaks at the input [src: same].
 - Judge recovery with the MAP, not with the marginal: marginal posteriors are not expected to peak at
-  the input [src: same]. KiDS-1000 recovers all shown parameters with the MAP "to better than 1.7%"
+  the input [src: same]. KiDS-1000 (arXiv:2007.01844) recovers all shown parameters with the MAP "to better than 1.7%"
   [src: Sect. 7, Fig. 21]. Its rule for intervals: M-HPD to compare with earlier measurements,
   PJ-HPD "to assess the recovery of the input S_8" [src: Sect. 7].
 - Intervals are read from a histogram of the samples smoothed by a Gaussian kernel with Silverman's
@@ -86,7 +86,7 @@ DES Y3 (arXiv:2105.13548) [src: Sect. V]:
    noisy for this in degenerate models, even "with repeated numerical optimization using the
    Nelder–Mead method".
 7. Check that the projection effects are stable against noise with 100 noisy data vectors drawn
-   from the data covariance.
+   from the data covariance (arXiv:2105.13548) [src: Sect. V].
 
 KiDS-1000 builds data vectors "that systematically deviate from the ideal model" for each unmodelled
 effect, discussed with that effect [src: arXiv:2007.01844, Sect. 7]; its stated outcome for known
@@ -104,7 +104,7 @@ noiseless case" [src: arXiv:2007.01844, Sect. 7].
 With full mock catalogues, the DESI DR2 Lyα forest BAO validation (Casas et al. 2025, arXiv:2503.14741)
 runs two complementary tests [src: Sects. IV.1–IV.2]:
 
-1. **Stack for bias.** Combine the correlation functions of all mocks (100 Saclay and 300 CoLoRe-QL)
+1. **Stack for bias.** Combine the correlation functions of all mocks (100 Saclay and 300 CoLoRe-QL; arXiv:2503.14741)
    to very high signal-to-noise and fit; requirement: recover `α_⊥ = α_∥ = 1` "within a third of the
    statistical uncertainty from DESI DR2"; biases above it "must be investigated, corrected, or
    incorporated into the systematic errors" [src: Sect. IV.1].
@@ -119,7 +119,7 @@ runs two complementary tests [src: Sects. IV.1–IV.2]:
    started from the best-fit model or from the stacked measurement show that this "arises from the
    model's difficulty in fitting the correlation functions", "not related to the covariance matrix"
    (the DR1 study cited there) [src: Sect. IV.2].
-5. **Compare mock errors with data errors.** Mocks without non-linear broadening of the BAO peak
+5. **Compare mock errors with data errors** (arXiv:2503.14741). Mocks without non-linear broadening of the BAO peak
    (Saclay) give errors 10–20% smaller than the data; mocks that include some of it (CoLoRe-QL) agree
    better [src: Sect. IV.2, Fig. 9]. A mock set whose error distribution misses the data's cannot
    validate the data's error bar.
@@ -146,15 +146,16 @@ omits those results (arXiv:2007.01844) [src: Sect. 7].
 Vinciguerra, Martinet & Gatti 2026 (arXiv:2607.17942) apply the simulation-based-inference
 diagnostics to a Gaussian likelihood with an emulated mean [src: Sect. 6.2, App. C]:
 
-1. Hold out 692 test cosmologies (15% of the simulation set) never used in training or tuning.
+1. Hold out 692 test cosmologies (15% of the simulation set) never used in training or tuning
+   (arXiv:2607.17942) [src: Sect. 6.2].
 2. TARP: for each node the fraction of posterior mass at lower density than the truth; expected
    coverage against credibility over 500 `α` bins, with ±1σ and ±2σ bands from 100 bootstrap
-   resamples of the test set.
+   resamples of the test set (arXiv:2607.17942) [src: Sect. 6.2].
 3. Marginal coverage per parameter, with bootstrap bands.
-4. PIT rank histograms with 10^4 posterior samples per node: U-shaped means overconfident, inverted U
+4. PIT rank histograms with `N_samp` posterior samples per node: U-shaped means overconfident, inverted U
    under-confident.
 5. Posterior-predictive check of medians against truths across nodes.
-6. Realisation-to-realisation test: 20 independent mock observations of the target cosmology; the
+6. Realisation-to-realisation test (arXiv:2607.17942): 20 independent mock observations of the target cosmology; the
    median, mean and MAP biases in units of the posterior width, each shifted by its median over the
    20 [src: Sect. 7.3].
 
@@ -179,12 +180,12 @@ that is rare under noise, and of the sign a modelled contamination predicts, poi
 
 | Choice | Option A | Option B | Who | What was found |
 |---|---|---|---|---|
-| Point used to judge recovery | MAP (with PJ-HPD) | 2D marginal against an uncontaminated twin run | KiDS-1000; DES Y3 | KiDS: MAP within 1.7%; DES: MAP too noisy in degenerate models, marginal-against-twin removes the shared projection |
-| Data vector | noiseless | ensembles with covariance noise | KiDS-1000, DES Y3 | same conclusions (KiDS); projection stable over 100 realisations (DES) |
-| Bias threshold | 0.3 `σ_2D` in a 2D plane | one third of the statistical error per parameter | DES Y3; DESI DR2 Lyα | both set so that the total stays well below the statistical error |
+| Point used to judge recovery | MAP (with PJ-HPD) | 2D marginal against an uncontaminated twin run | KiDS-1000; DES Y3 | KiDS: MAP within 1.7% (arXiv:2007.01844, Sect. 7); DES: MAP too noisy in degenerate models, marginal-against-twin removes the shared projection |
+| Data vector | noiseless | ensembles with covariance noise | KiDS-1000, DES Y3 | same conclusions (KiDS); projection stable over 100 realisations (DES, arXiv:2105.13548, Sect. V) |
+| Bias threshold | 0.3 `σ_2D` in a 2D plane | one third of the statistical error per parameter | DES Y3; DESI DR2 Lyα | both set so that the total stays well below the statistical error (arXiv:2105.13548, Sect. V; arXiv:2503.14741, Sect. IV.1) |
 | Goodness-of-fit guard | residual `Δχ² < 1` after refit | χ² distribution of individual mock fits | DES Y3; DESI DR2 Lyα | DESI's excess traced to the model, not the covariance |
 | Covariance in the validation | analytic | from 5000 mocks, simple or realistic footprint | KiDS-1000 | "no significant impact on any of the marginal parameter constraints" (runs with `δz` fixed and no shear-bias term) [src: arXiv:2007.01844, Sect. 7, Table 5 IDs 9–12] |
-| Amplitude parameter sampled | `ln A_s` | S_8 with a wide flat prior | KiDS-1000 | sampling S_8 widens the 1σ interval by 19%, mostly towards low values [src: Sect. 7] |
+| Amplitude parameter sampled | `ln A_s` | S_8 with a wide flat prior | KiDS-1000 | sampling S_8 widens the 1σ interval by 19%, mostly towards low values (arXiv:2007.01844) [src: Sect. 7] |
 | Code check | model-vector `Δχ²` at one point | full cross-fit | DES Y3 | both used; `Δχ² < 0.2` then sets the floor of "insignificant" changes |
 
 Two readings of a threshold. A 0.3σ_2D bias per effect, with all unmodelled effects combined at their
@@ -236,7 +237,7 @@ in the passages read.
   without the pipeline steps (arXiv:2503.14741) [src: Sect. IV.1].
 - **A χ² excess blamed on the covariance.** In DESI it came from the model at small scales; Monte Carlo
   from the best-fit model separates the two (arXiv:2503.14741) [src: Sect. IV.2].
-- **A sampler that narrows intervals.** MultiNest at the settings used was 12–15% too narrow in S_8
+- **A sampler that narrows intervals.** MultiNest at the settings used gave S_8 intervals 12% (68%) and 15% (95%) too narrow
   (arXiv:2305.17173) [src: App. D]. Test: one run with a second sampler on the final likelihood.
 - **A shift between analysis variants read as a detection of a systematic.** Noise gives ≥ 0.7σ in 23%
   of KiDS-like mocks (arXiv:2305.17173) [src: App. F]. Test: the noise distribution of the shift for

@@ -379,7 +379,7 @@ radii [src: Sect. 5.1]. The review reproduces this comparison as its Fig. 4
 - **Emulated summary statistics.** Lehman et al., Quijote halos: Ω_m and σ8
   recovered to 14.4% and 8.4% from void profiles, σ8 to 6.8% adding the VSF;
   robust to resolution, and posteriors unchanged with Magneticum baryons
-  (arXiv:2502.05262) [src].
+  (arXiv:2502.05262) [src: abstract].
 - **Implicit likelihood on data.** BOSS CMASS NGC with the VSF, the
   void–galaxy cross power spectrum and P_gg: Σm_ν < 0.43 eV (P_gg) and
   < 0.35 eV (all), 95%, k_max = 0.15 h Mpc⁻¹, Planck-inspired ΛCDM prior; void

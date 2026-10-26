@@ -58,7 +58,7 @@ What the analyses state:
 | Andrade et al. 2020, cluster lensing | "scattering transfer cross section"; for a sharp velocity dependence, the velocity-averaged transfer cross section | arXiv:2012.06611, Sect. 6.1 |
 | Sagunski et al. 2020, Jeans | σ defined through Eq. 8; for anisotropic scattering "the appropriate angular moment" | arXiv:2006.12515, Sect. II.1, footnote 1 |
 | Robertson, Massey & Eke 2016, Bullet simulations | isotropic, velocity-independent, dσ/dΩ = σ/4π | arXiv:1605.04307, Sect. 2.1.1 |
-| TNGC-SIDM I 2026, merger simulations | isotropic, velocity-independent σ_T/m = 1 (and 0.5) cm²/g | arXiv:2610.18957 [src] |
+| TNGC-SIDM I 2026, merger simulations | isotropic, velocity-independent σ_T/m = 1 (and 0.5) cm²/g | arXiv:2610.18957 [src: abstract] |
 | Sabarish et al. 2023, merger simulations | velocity-dependent, both rare (isotropic) and frequent (small-angle) scattering | arXiv:2310.07769 [src] |
 | Adhikari et al. 2024, ACT × DES weak lensing | isotropic, elastic σ/m; also dissipative SIDM | arXiv:2401.05788 [src] |
 | Zavala et al. 2013, dwarf spheroidals | σ_T/m, velocity-independent | arXiv:1211.6426 [src] |
@@ -79,10 +79,10 @@ Sect. II.1]. Colquhoun et al. show that the momentum and energy transfer
 rates go as ⟨σ_T v_rel²⟩ and ⟨σ_V v_rel³⟩, not ⟨σ v_rel⟩, and define
 averaged cross sections (Eq. 91)
 
-  σ̄_T = ⟨σ_T v_rel²⟩ / (16√2 v₀²/π),  σ̄_V = ⟨σ_V v_rel³⟩ / (24 v₀³/√π),
+  σ̄_T = ⟨σ_T v_rel²⟩ / (16√2 v₀²/π),  σ̄_V = ⟨σ_V v_rel³⟩ / (24 v₀³/√π)  (arXiv:2011.04679, Eq. 91),
 
 with rates Γ_p = (ρ/m) σ̄_T ⟨v_rel⟩ and Γ_E = (ρ/m) σ̄_V ⟨v_rel⟩ (Eq. 92);
-core formation is expected where Γ_E t₀ > 1 [src: Sect. IV.2]. For a
+core formation is expected where Γ_E t₀ > 1 [src: arXiv:2011.04679, Sect. IV.2]. For a
 velocity-independent cross section σ̄_T ≈ 0.83 σ_T and σ̄_V ≈ 1.34 σ_V
 [src: same]. These weightings favour the faster collisions and stay
 finite for σ ∝ v⁻⁴, unlike ⟨σv⟩ [src: same]. A limit converted to a
@@ -99,13 +99,13 @@ Harvey et al. 2015 (arXiv:1503.07675):
    [src: "Positional offsets between components"].
 2. **Geometry.** The galaxy-to-gas vector δ_SG defines the direction of
    motion; δ_SI is the lensing-mass offset along it from the intersection
-   point I, δ_DI the perpendicular offset, used as a control [src: same].
+   point I, δ_DI the perpendicular offset, used as a control [src: arXiv:1503.07675, Sect. "Positional offsets between components"].
    The lensing position is corrected for the pull of a subdominant
    component, f δ e^(−0.01δ/r_s) for a component holding a fraction f of
    the mass at offset δ [src: same].
 3. **Errors.** The rms of the control δ_DI between systems, 60 kpc, is
    adopted as the error on every δ_DI, δ_SI and δ_SG, because some
-   individual errors were "anomalously low" [src: same].
+   individual errors were "anomalously low" [src: arXiv:1503.07675, Sect. "Positional offsets between components"].
 4. **Statistic.** β = δ_SI/δ_SG, chosen because it removes the dependence
    on the angle of the collision to the line of sight and, under quasi
    steady state, "should be the same for every system" [src:
@@ -117,12 +117,12 @@ Harvey et al. 2015 (arXiv:1503.07675):
    ambient densities of dark matter and gas, conservatively B ≳ 1; σ*/m,
    the cross section at which the halo becomes optically thick, is
    6.5 ± 3 cm²/g for M₂₀₀ = 10^(14±1) M⊙ NFW haloes and is marginalised
-   analytically [src: same]. The prescription follows simulations in which
+   analytically [src: arXiv:1503.07675, same]. The prescription follows simulations in which
    frequent, low-momentum-transfer interactions produce a drag; isotropic
    "billiard ball" scattering instead produces mass loss [src: same].
 6. **Result.** ⟨β⟩ = −0.04 ± 0.07 (68%), σ_DM/m = −0.25 (+0.42/−0.43)
    cm²/g (68%, two-tailed), < 0.47 cm²/g (95%, one-tailed); control
-   ⟨β_⊥⟩ = −0.06 ± 0.07 [src: main text].
+   ⟨β_⊥⟩ = −0.06 ± 0.07 [src: arXiv:1503.07675, main text; abstract for the 95% limit].
 
 Peer on a single system: for the Bullet Cluster, Randall et al. ran SIDM
 N-body simulations of 1E 0657-56 against X-ray, lensing and optical data;
@@ -164,13 +164,13 @@ al. 2020 (arXiv:2012.06611, Sect. 6.1), both following Kaplinghat et al.
    do not search for the second solution [src: arXiv:2012.06611].
 6. **Projection and shape.** Andrade et al. make the halo ellipsoidal
    along the line of sight, κ_e(R) = κ(R)/s, with a prior on s from
-   simulations (Vega-Ferrero et al. 2017 PDF below 0.5, flat above) [src:
+   simulations (Vega-Ferrero et al. 2017 PDF below 0.5, flat above) [src: arXiv:2012.06611, 
    Sect. 6.1]; the data prefer s ≈ 0.5 for all clusters [src: same].
 
 The data side differs. Sagunski et al. fit stellar kinematics, projected
 stellar density, effective Einstein radius and virial mass for the Newman
 et al. groups and clusters, with free Υ⋆ and stellar anisotropy β
-[src: Sect. IV.2, V]. Andrade et al. fit the dark-matter surface density
+[src: arXiv:2006.12515, Sect. IV.2, V]. Andrade et al. (arXiv:2012.06611) fit the dark-matter surface density
 from Qlens strong-lensing models of eight clusters between 10 and 150 kpc
 [src: abstract].
 
@@ -270,7 +270,7 @@ Wittman, Golovich & Dawson 2018 re-examine the 16 highest-weight
 substructures with fuller data and correct "several substantial errors"
 in the offsets [src: arXiv:1701.05877, abstract]. They marginalise σ* =
 3.5–9.5 cm²/g numerically on a grid instead of in quadrature [src:
-Sect. IV]. Results [src: same]:
+Sect. IV]. Results, arXiv:1701.05877 Sect. IV [src: same]:
 
 | Variant | 95% limit |
 |---|---|
@@ -280,7 +280,7 @@ Sect. IV]. Results [src: same]:
 | Prior σ/m ≥ 0 | moves the corrected limits by ≤ 0.15 cm²/g |
 
 Using H15's individual offset errors instead of the uniform 60 kpc shifts
-the peak by about 2σ, in the same direction as the corrections [src:
+the peak by about 2σ, in the same direction as the corrections [src: arXiv:1701.05877, 
 same]. The strict H15 limit "is possible only if the physical prior is
 discarded" [src: same]; many clusters violate the prescription's
 assumptions, so even the revised limit "should be used with caution"
@@ -320,7 +320,7 @@ Sects. 6.1.1, 6.3; Fig. 8 caption].
 | Cluster Einstein radii vs CLASH, BAHAMAS-SIDM | σ/m > 1 cm²/g at ~1000 km/s "likely incompatible"; SIDM cores not reflected in gas, stars or X-ray luminosity | Robertson et al. 2019, arXiv:1810.05649 [src: abstract] |
 | Halo shapes (lensing potentials, X-ray isophotes) | earlier limit of ~0.02 cm²/g "off by more than an order of magnitude"; at least 0.1 cm²/g allowed | Peter et al. 2013, arXiv:1208.3026 [src: abstract] |
 | X-ray ellipticity, 84 relaxed Chandra/ROSAT clusters vs adiabatic zooms | non-cool-core clusters agree better with 0.5–1 cm²/g; CDM and 0.1 cm²/g disfavoured at 68%; missing cooling and feedback could reconcile CDM | Shen et al. 2022, arXiv:2202.00038 [src: abstract] |
-| Weak-lensing profiles, ACT clusters × DES sources | isotropic elastic σ/m < 1 cm²/g (95%) | Adhikari et al. 2024, arXiv:2401.05788 [src] |
+| Weak-lensing profiles, ACT clusters × DES sources | isotropic elastic σ/m < 1 cm²/g (95%) | Adhikari et al. 2024, arXiv:2401.05788 [src: abstract] |
 | Cluster radial acceleration relation vs CLASH | σ/m = 0.3 cm²/g disfavoured at 3.8σ using r > 100 kpc | Tam et al. 2022, arXiv:2207.03506 [src: abstract] |
 | Lensing + BCG kinematics, MACS J0138 | σ/m < 0.613 cm²/g (95%) at ⟨v_pair⟩ < 2090 km/s | O'Donnell et al. 2025, arXiv:2508.20179 [src: abstract] |
 
@@ -328,8 +328,8 @@ O'Donnell et al. judge the routes that do not reconstruct the inner
 profile (merger offsets, BCG offsets, the RAR, ellipticities) "not yet
 competitive" with strong-lensing profile constraints, for observational
 and theoretical reasons [src: arXiv:2508.20179, Sect. I.2]. The range
-preferred by Shen et al. (0.5–1 cm²/g) lies above the 95% limits of the
-BCG-wobble and MACS J0138 analyses [der: values in this table]; each
+preferred by Shen et al. lies above the upper limits of the
+BCG-wobble and MACS J0138 analyses [der: comparison of the values in the table above]; each
 paper states its own caveats, and none compares the routes on common
 clusters.
 
@@ -402,13 +402,13 @@ lower-velocity systems; the claims, both ways:
 
 | Quantity | Value | Analysis | Source | Place read |
 |---|---|---|---|---|
-| Merger offset error | 60 kpc per offset (rms of control) | 72 mergers | arXiv:1503.07675 | "Positional offsets" |
-| Jackknife error | ±0.5 cm²/g | 72 mergers | arXiv:1503.07675 | same |
-| σ*/m | 6.5 ± 3 cm²/g (M₂₀₀ = 10^(14±1) M⊙) | 72 mergers | arXiv:1503.07675 | "Interpreting" |
+| Merger offset error | 60 kpc per offset (rms of control) | 72 mergers | arXiv:1503.07675 | Sect. "Positional offsets" |
+| Jackknife error | ±0.5 cm²/g | 72 mergers | arXiv:1503.07675 | Sect. "Positional offsets" |
+| σ*/m | 6.5 ± 3 cm²/g (M₂₀₀ = 10^(14±1) M⊙) | 72 mergers | arXiv:1503.07675 | Sect. "Interpreting positional offsets" |
 | σ/m vs assumed halo mass | −0.23 ± 0.60 (10¹³ M⊙) to −0.1 ± 0.28 (10¹⁵ M⊙) cm²/g | 72 mergers | arXiv:1503.07675 | Fig. S6 text |
 | Hot / cool gas halves | −0.10 ± 0.58 / −0.50 ± 0.64 cm²/g (T >/< 8 keV) | 72 mergers | arXiv:1503.07675 | Fig. S7 text |
-| Without gas-pull correction | < 0.54 cm²/g (68%, one-tailed) | 72 mergers | arXiv:1503.07675 | "Positional offsets" |
-| Universal baryon ratio assumed | Ω_B/Ω_D = 0.184 | 72 mergers | arXiv:1503.07675 | "Interpreting" |
+| Without gas-pull correction | < 0.54 cm²/g (68%, one-tailed) | 72 mergers | arXiv:1503.07675 | Sect. "Positional offsets" |
+| Universal baryon ratio assumed | Ω_B/Ω_D = 0.184 | 72 mergers | arXiv:1503.07675 | Sect. "Interpreting positional offsets" |
 | Weight concentration | 16 of 72 substructures = 85% | re-analysis | arXiv:1701.05877 | Sect. II |
 | System age | 5 Gyr, prior ±2 Gyr in the combination | Jeans | arXiv:2006.12515 | Sects. II.1, III.2 |
 | Mock recovery, true 1 cm²/g | 1.1 (+0.5/−0.3), 1.7 (+0.8/−0.5), 1.4 (+0.6/−0.4) cm²/g for slit angles 0°, 45°, 90° | Jeans on SIDM + baryon clusters | arXiv:2006.12515 | Eq. 33 |

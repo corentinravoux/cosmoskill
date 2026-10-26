@@ -133,6 +133,8 @@ Table 3]:
 
     λ_int(R_eff/θ_E) = λ_int,0 + α_λ (R_eff/θ_E − 1)
 
+From arXiv:2506.03023, Table 3:
+
 | Parameter | Prior, TDCOSMO 2025 [src: Table 3] |
 |---|---|
 | H0 | U(0, 150) km/s/Mpc |
@@ -257,7 +259,7 @@ chosen to match them [src: arXiv:2506.03023, Sects. 6, 11.2.2]:
 | Lensing dispersion | σ_SIS in [150, 350] km/s | range of the time-delay lenses | Sect. 6.4 |
 | Environment | ζ_1/R < 2.10 (SLACS) | power law + uncorrelated line of sight must hold | Sect. 6.5 |
 
-Effect on the same data [src: Sects. 8.1, 8.2.1, 10.1.2]: TDCOSMO alone
+Effect on the same data [src: arXiv:2506.03023, Sects. 8.1, 8.2.1, 10.1.2]: TDCOSMO alone
 73.7 (+4.7/−4.4) with uniform Ω_m, 71.6 (+3.9/−3.3) with Pantheon+;
 adding SLACS 76.8 (+3.9/−4.6), all three samples 77.8 (+3.7/−4.7) with
 uniform Ω_m, 74.3 (+3.1/−3.7) with Pantheon+. SLACS requires intrinsic
@@ -310,12 +312,13 @@ uniform prior of Wong et al. (2020) [src: same].
 - **Ω_m prior mismatch** in comparisons between analyses: 2.1 km/s/Mpc on
   the same lenses [src: arXiv:2506.03023, Sect. 10.1.1].
 - **External-lens population mismatch.** SLACS pre-selection on noisy
-  high SDSS dispersions; intrinsic scatter in λ_int [src: Sect. 11.2.2].
+  high SDSS dispersions; intrinsic scatter in λ_int [src: arXiv:2506.03023,
+  Sect. 11.2.2].
   Test: report the time-delay-only result and each external sample
   separately, as TDCOSMO 2025 does. The TDCOSMO-IV + SLACS value
-  67.4 (+4.1/−3.2) relied on SDSS dispersions now judged unsuited for
-  cosmography and "should not be considered as valid anymore" [src:
-  Sect. 10.1.2].
+  67.4 (+4.1/−3.2) (arXiv:2007.02941, abstract) relied on SDSS dispersions
+  now judged unsuited for cosmography and "should not be considered as valid
+  anymore" [src: arXiv:2506.03023, Sect. 10.1.2].
 - **κ_ext from random lines of sight.** Lens fields are overdense; a
   population model fitted on lens samples is needed [src: Sect. 7.2.3].
   Test: weak-lensing κ_ext against number counts [src: arXiv:1907.04869,

@@ -108,7 +108,7 @@ Three routes now compete to make full-shape and CMB inference fast.
 
 - Emulate the expensive step: CosmoPower and its descendants (arXiv:2106.03846, arXiv:2303.01591, arXiv:2405.07903), Capse.jl (arXiv:2307.14339), Effort.jl (arXiv:2501.04639), PyBird-JAX with internal emulators (arXiv:2507.20990).
 - Make the exact code differentiable: DISCO-EB (arXiv:2311.03291), SymBoltz (arXiv:2608.24682), `elf` (arXiv:2610.08023), candl (arXiv:2401.13433).
-- Make the exact code fast enough without either: `neckar` claims "up to two orders of magnitude faster than similar existing codes without relying on emulators" (arXiv:2610.03466); CAMB v2 reaches per-mille default accuracy at 1.1 s wall time for ℓ_max = 4000 (arXiv:2607.14854).
+- Make the exact code fast enough without either: `neckar` claims "up to two orders of magnitude faster than similar existing codes without relying on emulators" (arXiv:2610.03466, abstract); CAMB v2 targets 10⁻³ default accuracy (arXiv:2607.14854, Sect. IX) at 1.1 s wall time for ℓ_max = 4000 (arXiv:2607.14854, Sect. XI, Table 1).
 
 What decides between them is the model space: an emulator is tied to its training ranges and precision settings, while an exact code extends to a new model at the price of speed.
 No head-to-head study of the three routes on one likelihood was read this session.
@@ -124,8 +124,8 @@ No head-to-head study of the three routes on one likelihood was read this sessio
 ### 3.3 Eulerian or Lagrangian perturbation theory
 <!-- key: eulerian-or-lagrangian-perturbation-theory -->
 
-The DESI comparison concludes that velocileptors, PyBird and FOLPSν give consistent constraints for 0.02 < k ≲ 0.2 h Mpc⁻¹ once bias freedom and scale cuts are matched, and that remaining differences are of two-loop order (arXiv:2404.07272).
-The open points are practical: no direct mapping of bias parameters exists between all models, priors act differently in each basis, and prior-volume (projection) effects appear when the parameter space is opened beyond ΛCDM (arXiv:2404.07272, conclusion).
+The DESI comparison concludes that velocileptors, PyBird and FOLPSν give consistent constraints for 0.02 < k ≲ 0.2 h Mpc⁻¹ once bias freedom and scale cuts are matched, and that remaining differences are of two-loop order (arXiv:2404.07272, Sect. 6).
+The open points are practical: no direct mapping of bias parameters exists between all models, priors act differently in each basis, and prior-volume (projection) effects appear when the parameter space is opened beyond ΛCDM (arXiv:2404.07272, Sect. 6 "Conclusion").
 The 2026 `neckar` paper reopens the question of numerical accuracy of infrared resummation in existing Eulerian implementations (arXiv:2610.03466).
 
 ### 3.4 Code written with AI agents
@@ -138,7 +138,8 @@ How collaborations will treat such code in their validation requirements is not 
 ### 3.5 What the next releases will decide
 <!-- key: what-the-next-releases-will-decide -->
 
-- Euclid: cloelib "is intended to serve as the reference theory computation infrastructure for Euclid's first cosmological release" (arXiv:2605.23839); CLOE agrees with benchmark codes to better than 0.1 σ (arXiv:2510.09141).
+- Euclid: cloelib "is intended to serve as the reference theory computation infrastructure for Euclid's first cosmological release" (arXiv:2605.23839, Summary); CLOE agrees with benchmark codes to better than 0.1 σ (arXiv:2510.09141, abstract).
+
 - pyccl and CAMB v2: pyccl 3.3.6 pins `AccuracyTarget` to the v1 behaviour; whether and when it adopts the v2 defaults, and by how much its validated predictions then move, is open.
 - Lyα: ForestFlow is presented as enabling "full-scale cosmological analyses of Lyman-α forest measurements from the DESI survey" (arXiv:2409.05682).
 - Which estimator and perturbation-theory codes the DESI DR2 full-shape analysis uses was not read.
@@ -146,8 +147,9 @@ How collaborations will treat such code in their validation requirements is not 
 ## 4. Misconceptions
 <!-- key: misconceptions -->
 
-1. **"CAMB and CLASS agree to 0.01 %."** That figure is for concordance ΛCDM, a shared recombination history and tuned precision in 2011 (arXiv:1104.2934). At default settings and high ℓ the codes and versions differ at the per-cent level: CAMB v1.6.6 defaults are off by 1.5 % in TT at ℓ = 3000, and CLASS lensed spectra move by 1.8 % at ℓ = 4000 depending on the ℓ margin (arXiv:2607.14854).
-2. **"CLASS is faster than CAMB."** True in the 2011 comparison, by a factor of about 2.5 (arXiv:1104.2934); the 2026 CAMB v2 paper measures the opposite for lensed spectra to ℓ_max = 4000 (arXiv:2607.14854). Both statements come from the author of the faster code.
+1. **"CAMB and CLASS agree to 0.01 %."** That figure is for concordance ΛCDM, a shared recombination history and tuned precision in 2011 (arXiv:1104.2934, abstract). At default settings and high ℓ the codes and versions differ at the per-cent level: CAMB v1.6.6 defaults are off by 1.5 % in TT at ℓ = 3000 (arXiv:2607.14854, Sect. IX), and CLASS lensed spectra move by 1.8 × 10⁻² at ℓ = 4000 depending on the ℓ margin (arXiv:2607.14854, Sect. XI).
+2. **"CLASS is faster than CAMB."** True in the 2011 comparison, by a factor of about 2.5 (arXiv:1104.2934, abstract); the 2026 CAMB v2 paper measures the opposite for lensed spectra to ℓ_max = 4000 (arXiv:2607.14854, Sect. XI, Table 1).
+ Both statements come from the author of the faster code.
 3. **"The linear power spectrum is unambiguous."** At k above about 1 Mpc⁻¹ it depends on the reionisation-heating convention (arXiv:2607.14854, App. B), and in massive-neutrino cosmologies on whether the total-matter or the CDM-plus-baryon field is meant.
 4. **"Halofit" names one model.** CAMB 2.0.4 lists eleven `halofit_version` names, including three HMcode generations [src: installed].
 5. **"`FlatLambdaCDM(H0=70, Om0=0.3)` is a realistic cosmology."** Its defaults are `Tcmb0 = 0 K` and `m_nu = 0`, so it has no radiation and no neutrinos [src: astropy 8.0.1 installed].

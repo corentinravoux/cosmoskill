@@ -37,7 +37,7 @@ re-verify against the cited paper before a number enters a manuscript.
 - Density split, wavelet scattering and Minkowski functionals on data all use BOSS CMASS, AbacusSummit and an HOD: σ8 = 0.792 ± 0.034 and 0.783 ± 0.026 (arXiv:2309.16541, abstract; arXiv:2501.01698, abstract). Their agreement is not independent confirmation.
 - The Beyond-2pt challenge tested the bias of the mean on HOD mocks without systematics; it states that it does not validate error bars (arXiv:2405.02252).
 - Third-order shear: KiDS-Legacy S8 = 0.806 +0.025/−0.023 (arXiv:2606.12389, abstract), DES Y3 0.780 ± 0.015 (arXiv:2508.14018, abstract), HSC Y3 0.736 ± 0.020 (arXiv:2508.14019, abstract). The gain is in Ω_m.
-- DES Y3 map-level SBI: S8 = 0.808 ± 0.017 in wCDM, almost three times the two-point figure of merit (arXiv:2606.11309).
+- DES Y3 map-level SBI: S8 = 0.808 ± 0.017 in wCDM, almost three times the two-point figure of merit (arXiv:2606.11309, abstract).
 - "Field-level" means sampled initial conditions, a Gaussian likelihood on the field (developed for peculiar-velocity surveys, arXiv:1404.3799, arXiv:1706.05205, arXiv:2209.04166; flip is one implementation, arXiv:2501.16852), or a neural network. Only the last two were found to have produced parameters from data.
 - BORG on 2M++ (arXiv:1806.11117, arXiv:2505.10682), BOSS (arXiv:1909.06396) and Quaia (arXiv:2602.02363) delivers fields.
 - Field-level gain over P + B: factor 3.5–5.2 on simulated halos (arXiv:2403.03220, abstract) against equivalence with an analytic likelihood (arXiv:2507.05378, arXiv:2509.09673).

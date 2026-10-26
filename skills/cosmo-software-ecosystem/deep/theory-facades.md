@@ -131,7 +131,7 @@ Defaults in pyccl 3.3.6 [src: installed, `pyccl.spline_params`]:
 | `LOGM_SPLINE_MIN`, `_MAX`, `_NM` | 6, 17, 50 | σ(M) spline in log₁₀ M |
 | `ELL_MIN_CORR`, `ELL_MAX_CORR`, `N_ELL_CORR` | 0.01, 60000, 5000 | ℓ grid of the correlation-function transforms (named in the `correlation` docstring) |
 
-What the paper measured: with Δ ln k = 10⁻² and `K_MAX_SPLINE` = 50 Mpc⁻¹,
+What the paper (arXiv:1812.05995) measured: with Δ ln k = 10⁻² and `K_MAX_SPLINE` = 50 Mpc⁻¹,
 ln P converges to an accuracy that surpasses the expected baryonic effect
 at k > 10 Mpc⁻¹; against a run with all spline parameters raised by an
 order of magnitude (ten times the k and a sampling, interpolation ranges
@@ -223,7 +223,7 @@ mass [src: installed, `_get_mass_function`, `_get_halo_bias`,
 `_integrate_over_mf`]. Lowering `log10M_min` changes how much of the
 integral is carried by this correction.
 
-σ(M) and the mass function. dσ⁻¹/dM is obtained from a spline of σ(M)
+σ(M) and the mass function (arXiv:1812.05995). dσ⁻¹/dM is obtained from a spline of σ(M)
 over 10⁶–10¹⁷ M_⊙ with half-step finite differences; accuracy "is reduced
 at the edges of these splines", and extreme mass ranges may need changed
 spline parameters [src: Sect. III.5]. For Tinker, the fit parameters are
@@ -247,7 +247,7 @@ observable.
   is correct", and also plotted per point because a single number hides
   trends in redshift or scale (Euclid Collaboration 2025,
   arXiv:2510.09141) [src: Sect. 4.1, Eq. 2].
-- Observables: the distance dᵢ = |Oᵢ^CLOE − Oᵢ^Bench|/σ_{Oᵢ}, with σ from
+- Observables (arXiv:2510.09141): the distance dᵢ = |Oᵢ^CLOE − Oᵢ^Bench|/σ_{Oᵢ}, with σ from
   the diagonal of a Gaussian covariance built on the benchmark, summarised
   as d_mean and d_max; validation requires d_max < 0.1, "within 10% of the
   observational uncertainty" [src: Sect. 4.2, Eq. 3–5]. Because dᵢ ignores
@@ -260,6 +260,7 @@ observable.
   [src: Sect. 4.2].
 
 The case grid matters as much as the metric. CLOE's photometric
+(arXiv:2510.09141)
 validation has 23 cases (P01–P23) varying ten cosmologies (w0wa and
 non-flat included), three n(z) of increasing irregularity (ISTF, SPV2,
 SPV3, the latter two with 13 bins), four intrinsic-alignment settings,
@@ -320,15 +321,15 @@ read in its Sect. 3.1:
   contributions of massless neutrinos and photon radiation, as well as
   the massive neutrino contribution ... currently neglected" [src: Eq. 1–2];
 - χ(a) linearly interpolated from 256 log-spaced knots over
-  log₁₀ a ∈ [−3, 0], RK4 [src: Sect. 3.1.1];
+  log₁₀ a ∈ [−3, 0], RK4 (arXiv:2302.05163) [src: Sect. 3.1.1];
 - no Boltzmann solver: Eisenstein–Hu transfer function, halofit of
   Takahashi or Smith, without the Bird et al. neutrino correction, no
   baryonic feedback [src: Sect. 3.1.2];
 - first-order Limber only, Simpson's rule on 512 knots; number counts with
   b(z) and no RSD; NLA-type intrinsic alignments with C ≈ 0.0134
-  [src: Sect. 3.1.3, Eq. 8–11].
+  (arXiv:2302.05163) [src: Sect. 3.1.3, Eq. 8–11].
 
-Validated against CCL 2.5.1 at "few 10⁻³ or better"; the differences come
+Validated (arXiv:2302.05163) against CCL 2.5.1 at "few 10⁻³ or better"; the differences come
 from integration methods and quadrature points, and raising them costs
 speed and "increases the XLA compilation memory requirements
 significantly"; the authors state the code "will have to be reviewed to
@@ -348,7 +349,7 @@ cloelib (Bonici et al. 2026, arXiv:2605.23839) separates four layers
 Python protocol (PEP 544), so that any engine meeting the protocol can be
 swapped in; `Background` and `Perturbations` are `@runtime_checkable`,
 and compliance can be asserted at the start of an analysis and in
-continuous integration [src: Software Design; Protocol Compliance]. The
+continuous integration [src: Sect. "Software Design"; Sect. "Protocol Compliance of Interfaces"]. The
 stated reason: extending CLOE "often required intrusive modifications
 across multiple parts of the software, leading to the accumulation of
 technical debt" [src: Statement of need]. `JAXBackground` and the JAX
@@ -372,8 +373,9 @@ backend (Boltzmann solver or emulator) [src: Computational times].
 | NUTS against Cobaya MH, 21-parameter 3×2pt | ε ≈ 50 % at ≥ 2⁵ calls/sample vs ε ≈ 3 % at 1 call | jax-cosmo | arXiv:2302.05163 | Sect. 5.5 |
 | CLOE validation thresholds | d_max < 0.1; χ² < 0.01 N_dof; N_R = 100 realisations | Euclid DR3 specifications | arXiv:2510.09141 | Sect. 4.2, Eq. 5–7 |
 | CLOE photometric case grid | 23 cases, 10 cosmologies, 3 n(z) | CLOE | arXiv:2510.09141 | Sect. 3.1, Table 2 |
-| cloelib 3×2pt timing | ≈ 0.06 s per call for 78 spectra (6 bins, 3000 ℓ, 512 k, 500 z, Limber) after 1 s initialisation; ≈ 0.1 s for 351 spectra (13 bins) | Apple M4 laptop; CAMB background, HMCode2020emu | arXiv:2605.23839 | Computational times |
-| cloelib full-shape multipoles | ≈ 3 ms per redshift bin | comet-emu backend | arXiv:2605.23839 | Computational times |
+| cloelib 3×2pt timing | ≈ 0.06 s per call for 78 spectra (6 bins, 3000 ℓ, 512 k, 500 z, Limber) after 1 s initialisation; ≈ 0.1 s for 351 spectra (13 bins) | Apple M4 laptop; CAMB background, HMCode2020emu | arXiv:2605.23839 | Sect. "Computational times" (under "Usage Examples") |
+| cloelib full-shape multipoles | ≈ 3 ms per redshift bin | comet-emu backend | arXiv:2605.23839 | Sect. Usage Examples, Computational times |
+
 
 ## What goes wrong
 <!-- key: what-goes-wrong -->

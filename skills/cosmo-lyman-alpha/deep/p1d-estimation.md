@@ -17,8 +17,7 @@ Already in L2, not repeated here: the estimator table and the DR1 estimator
 equations, sub-forest length, fiducial power form, bootstrap covariance
 (`physics-and-methods.md#estimators-2`); measurement history, sample sizes
 and k ranges (`results.md#the-one-dimensional-flux-power-spectrum`); the
-per-term systematic budgets of the two DR1 measurements and the "why 30%"
-rule (`systematics.md#g4-desi-dr1-p1d-fft-estimator-arxiv-2505-09493`,
+per-term systematic budgets of the two DR1 measurements and the "why 30%" rule of arXiv:2505.09493, Sect. 6.2 (`systematics.md#g4-desi-dr1-p1d-fft-estimator-arxiv-2505-09493`,
 `systematics.md#g5-desi-dr1-p1d-optimal-qmle-estimator-arxiv`); resolution,
 noise and masking as systematics with their mitigations
 (`systematics.md#c1-spectral-resolution`, `systematics.md#c2-noise-power`,
@@ -28,7 +27,7 @@ Notation: δ_F the flux contrast, s a sub-forest (FFT), q a quasar, k in Å⁻¹
 for the FFT papers and in s/km for the QMLE papers (conversion in
 `physics-and-methods.md#conventions-units-and-where-the-community-is`),
 R_s(k) the Fourier transform of the resolution matrix, R_z = cΔλ/[(1+z)λ_α]
-the pixel width in velocity units with Δλ = 0.8 Å, θ_α the band-power
+the pixel width in velocity units with Δλ = 0.8 Å (arXiv:2601.21432, Sect. 2.1), θ_α the band-power
 deviations from a fiducial, C = S + N the pixel covariance (signal plus noise).
 
 ## How it is done
@@ -41,7 +40,7 @@ deviations from a fiducial, C = S + N the pixel covariance (signal plus noise).
 |---|---|---|---|
 | Per-quasar term | (a_q + b_q λ), linear in λ | (a_q + b_q Λ), Λ ~ log λ_RF | arXiv:2505.09493, Eq. 3; arXiv:2505.07974, Sect. 3.1 |
 | Rest-frame range | 1050–1180 Å | — (forest region) | arXiv:2505.09493, Sect. 3.1 |
-| Mean-continuum binning | 2.67 Å (rest frame) | 0.4 Å (rest frame), converges after 5 iterations | same |
+| Mean-continuum binning | 2.67 Å (rest frame) | 0.4 Å (rest frame), converges after 5 iterations | arXiv:2505.09493, Sect. 3.1; arXiv:2505.07974, Sect. 3.1 |
 | Variance in the fit | pipeline noise normalised by F̄C_q | η σ²_pipe + σ²_LSS (a_q + b_qΛ)² F̄² C̄² (Eq. 2) | same |
 | Selection | mean S/N > 1 per quasar | — | arXiv:2505.09493, Eq. 5 |
 | Final step | stack of all δ set to zero | — | arXiv:2505.09493, Sect. 3.1 |
@@ -129,7 +128,7 @@ noise-including terms average to zero [src: Sect. 4.2]. Choices and reasons
 - Only 35–39% of the catalogue qualifies, so it is the baseline only at
   z = 2.2, 2.4, 2.6, where small-scale and amplifier discrepancies appear;
   above, the α-corrected estimate is kept for its smaller errors. With this,
-  the noise systematic is dropped from the budget.
+  the noise systematic is dropped from the budget (arXiv:2505.09493) [src: Sect. 4.2].
 
 **High resolution.** Walther et al. average the |FFT|² of 100 Gaussian
 realisations of each spectrum's 1σ error vector (arXiv:1709.07354) [src:
@@ -201,7 +200,7 @@ reasons:
   one iteration around a fitted fiducial (`physics-and-methods.md#estimators-2`).
 - **Fisher sparsity.** Keeping the diagonal plus one off-diagonal element in
   k and in z cuts the Fisher computation time per iteration by 95% (64% for
-  the whole iteration) without changing χ² on 800,000 spectra [src: Sect. 4.4].
+  the whole iteration) without changing χ² on 800,000 spectra (arXiv:2008.06421) [src: Sect. 4.4].
 - **Interpolation in z.** Linear rather than top hat, for smoothness; it
   forces each pixel pair into two redshift bins [src: Sect. 2.1].
 
@@ -304,7 +303,7 @@ High resolution, where the sample is small:
 
 | | FFT (picca) | QMLE (lyspeq/qsonic) |
 |---|---|---|
-| Masks | biased; multiplicative corrections from mocks, 30% error (6% for BAL) | handled by construction (large-error pixels) |
+| Masks | biased; multiplicative corrections from mocks, 30% error (6% for BAL) (arXiv:2505.09493, Sect. 6.2) | handled by construction (large-error pixels) |
 | Continuum | bias corrected from mocks | low-k modes marginalised; residual three-point bias corrected from mocks |
 | Weights | per-sub-forest S/N weights; no pixel weights | full pixel covariance per quasar |
 | Redshift correlations | neglected | estimated |
@@ -515,7 +514,7 @@ bin; if χ²_ν is bad, "which is likely to happen", inflate the diagonal until
 - Application, high resolution QMLE: Karaçaylı et al. 2022, arXiv:2108.10870
   — KODIAQ, SQUAD and XQ-100, seeing-corrected resolution, budget,
   correlated-systematics combination.
-- Application, z > 4: Boera et al. 2019, arXiv:1809.06980 — 15 spectra,
+- Application, z > 4: Boera et al. 2019, arXiv:1809.06980 [src: abstract] — 15 spectra,
   smallest scales at 4 ≲ z ≲ 5.2.
 - History: McDonald et al. 2000, arXiv:astro-ph/9911196, and Croft et al.
   2002, arXiv:astro-ph/0012324 — the first high-resolution P1D tables.

@@ -6,12 +6,12 @@ band zero-point recalibration, priors and PDF recalibration, and how to
 choose between template and machine-learning codes, between calibration
 schemes and between configurations when such catalogues serve as a
 reference sample. Several survey families do this, each with its own
-pipeline: COSMOS (30 bands, then COSMOS2020 and COSMOS2025), PAUS (40
-narrow bands), ALHAMBRA (20 medium bands), the Javalambre surveys
-(miniJPAS 60 bands, J-PLUS 12 bands), S-PLUS (12 bands) and SPHEREx
-(102-band spectrophotometry, forecasts only here).
+pipeline: COSMOS (then COSMOS2020 and COSMOS2025), PAUS (narrow bands),
+ALHAMBRA (medium bands), the Javalambre surveys (miniJPAS, J-PLUS),
+S-PLUS and SPHEREx (spectrophotometry, forecasts only here); the band
+counts of each, with paper and place, are in the sections below.
 Snapshot: 2026-10-21.
-From: Newman & Gruen 2022 review, Sect. 2.3, 3.2; PAU and COSMOS survey
+From: Newman & Gruen 2022 review (arXiv:2206.13633), Sect. 2.3 and Sect. 3.2; PAU and COSMOS survey
 programmes (copied from `references/subtopics.tsv`).
 
 Already in L2, not repeated here: survey areas, depths and headline
@@ -80,7 +80,7 @@ Outlier thresholds differ between papers and are given with each number.
   from a joint Bayesian model of eleven colour–colour diagrams against
   the theoretical white-dwarf locus. Errors (numbers table) give 1–2%
   over 1022 deg² with no calibration campaign or atmospheric monitoring;
-  the method is to be adapted to J-PAS [src: arXiv:1907.12939]. Like
+  the method is to be adapted to J-PAS [src: arXiv:1907.12939, abstract]. Like
   PAUS it needs no standards in its own filters; its absolute colour
   scale comes from the white-dwarf locus, not from stellar templates
   fitted to SDSS.
@@ -341,8 +341,9 @@ Other surveys, other answers on their own data:
   trade-offs in redshift performance; template outliers sit on shallow
   likelihoods where the discrete grid gives "artificially confident but
   incorrect" redshifts; an SBI variant matches it at ~200× the
-  throughput [src: arXiv:2603.24668]. On SPHEREx + 7DS mocks six codes
-  all reach σ_NMAD ≲ 0.005 at 13 < i < 18 [src: arXiv:2512.24537].
+  throughput [src: arXiv:2603.24668, abstract]. On SPHEREx + 7DS mocks
+  four template-fitting and two machine-learning codes all reach
+  σ_NMAD ≲ 0.005 at 13 < i < 18 [src: arXiv:2512.24537, abstract].
 
 The PAUS comparison above (template better on the bright G09 sample,
 network better at the faint end) and the S-PLUS and J-PLUS ones (network
@@ -361,8 +362,8 @@ for both systems [src: arXiv:1809.04375, Sect. 5.3].
 <!-- key: fixed-literature-line-ratios-or-measured-ones -->
 
 Measured ratios and a marginalised line amplitude give σ_68(Δ_z) ≈ 0.003
-at i ≈ 18 and 0.009 at i ≈ 23, 3× and 1.66× tighter than COSMOS2015, with
-|median Δ_z| ≤ 0.001 at all redshifts and magnitudes considered [src:
+at i ≈ 18 and 0.009 at i ≈ 23, 3× and 1.66× tighter than COSMOS2015, with an
+absolute median offset |median Δ_z| ≤ 0.001 at all redshifts and magnitudes considered [src:
 arXiv:2007.11132, abstract]. With literature ratios the iterative
 zero-point step produced a large colour trend that lifted short-wavelength
 fluxes and biased photo-z low [src: Sect. 5]. Residuals by template class
@@ -447,7 +448,7 @@ can bias clustering [src: arXiv:1402.3220, Sect. 6].
 | J-PLUS DR4 catalogue | 79.2 million sources to r = 22; LePhare z grid 0–1, Δz = 0.005; QSO outliers ~40% → ~23% with WISE | J-PLUS DR4 | arXiv:2607.06662 | abstract; Sect. 3 |
 | S-PLUS template vs ML | σ_NMAD 0.0308 (BPZ2), 0.0316 (GPz), 0.0249 (DN), 0.0234 (MDN); outliers 2.76%, 0.72%, 0.64%, 0.64% | S-PLUS DR1, 16 < r < 21 | arXiv:2110.13901 | Table 4 |
 | SPHEREx (**forecast**) | 19 million galaxies with σ_z < 0.003(1+z), 445 million < 0.1(1+z), 810 million < 0.2(1+z), 3 × 10⁴ deg² | COSMOS2020 + GAMA mocks | arXiv:2312.04636 | abstract, Sect. V.1.1 |
-| SPHEREx + 7DS (**forecast**) | σ_NMAD ≲ 0.005, bias ≲ 0.005, failures ≲ 0.005 at 13 < i < 18, all six codes | GAMA + COSMOS mocks | arXiv:2512.24537 | abstract |
+| SPHEREx + 7DS (**forecast**) | σ_NMAD ≲ 0.005, bias ≲ 0.005, failures ≲ 0.005 at 13 < i < 18, all four template-fitting and two machine-learning codes | GAMA + COSMOS mocks | arXiv:2512.24537 | abstract |
 
 ## What goes wrong
 <!-- key: what-goes-wrong -->
@@ -519,7 +520,7 @@ can bias clustering [src: arXiv:1402.3220, Sect. 6].
 - Application: Navarro-Gironés et al. 2023, arXiv:2312.07581 — iterative
   zero points without spectra; PDF remapping; BB weighting at the faint end.
 - Method: Alarcon et al. 2020, arXiv:2007.11132 — measured line ratios
-  and Bayesian marginalisation over amplitudes on 66 bands.
+  and Bayesian marginalisation over amplitudes on 66 bands [src: abstract].
 - Application: Weaver et al. 2022, arXiv:2110.13923 — COSMOS2020 LePhare
   and EAZY configurations, offsets, error rescaling.
 - Method: Hernán-Caballero et al. 2021, arXiv:2108.03271 — recalibration
@@ -528,8 +529,8 @@ can bias clustering [src: arXiv:1402.3220, Sect. 6].
 - Critique/comparison: Daza-Perilla et al. 2024, arXiv:2408.16864 — deep
   learning against template fitting on the same PAUS data.
 - Foundation: Ilbert et al. 2008, arXiv:0809.2101 — COSMOS 30-band
-  LePhare: UV-predicted emission lines and iterative band offsets, the
-  template set-up later configurations inherit.
+  LePhare [src: abstract]: UV-predicted emission lines and iterative band
+  offsets, the template set-up later configurations inherit.
 - Data/method: Molino et al. 2013, arXiv:1306.4968 — ALHAMBRA: BPZ2.0,
   zero points from emission-line photo-z. Shuntov et al. 2025,
   arXiv:2506.03243, Sect. 6 — COSMOS2025 LePhare set-up.
@@ -537,7 +538,7 @@ can bias clustering [src: arXiv:1402.3220, Sect. 6].
   white-dwarf loci calibration. Application: Hernán-Caballero et al. 2026,
   arXiv:2607.06662 — J-PLUS DR4, LePhare against a neural pipeline.
 - Comparison: Lima et al. 2021, arXiv:2110.13901 — S-PLUS, machine
-  learning against BPZ2 on 12 bands.
+  learning against BPZ2 on 12 bands [src: abstract].
 - Forecast: Feder et al. 2023, arXiv:2312.04636 (SPHEREx mocks, template
   recovery); arXiv:2603.24668 (autoencoder, SBI); arXiv:2512.24537 (+ 7DS).
 

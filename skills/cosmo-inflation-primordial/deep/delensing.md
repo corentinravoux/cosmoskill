@@ -15,7 +15,7 @@ al.) and the BK14 + SPTpol + Planck σ(r) gain in
 `physics-and-methods.md#delensing`; the BK-SPT sizes of the CIB–φ
 misestimate and polarisation-efficiency tests in
 `systematics.md#b3-lensing-b-modes-and-delensing`; the SO six-SAT σ(r) at
-A_lens = 0.5 and 0.3 in `systematics.md#b11-so-six-sat-forecast-how-sigma-r-moves`.
+the two reduced lensing amplitudes in `systematics.md#b11-so-six-sat-forecast-how-sigma-r-moves`.
 Lensing reconstruction itself (quadratic estimators, mean field, N0/N1) is
 the subject of the `cosmo-cmb` dossier `deep/lensing-reconstruction.md`;
 only what delensing adds to it is here.

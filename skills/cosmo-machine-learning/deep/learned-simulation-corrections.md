@@ -36,7 +36,7 @@ cross-correlation coefficient (arXiv:2111.02441, Eq. 3); LR/HR/SR: low, high and
 | NECOLA, MG-NECOLA | COLA (MG-PICOLA) displacement → Quijote (Quijote-MG) displacement, same seed and particle number | the residual x_f,Nbody − x_f,COLA | arXiv:2111.02441, Sect. II.2.1; arXiv:2604.19613, Eqs. 5–6 |
 | Hybrid physical–neural ODE | particle-mesh forces → CAMELS N-body trajectories | an isotropic Fourier filter on the PM potential | arXiv:2207.05509, Eqs. 2–3 |
 | LNCA | ZA initial field at a = 1/128 → Quijote at z = 3, 2, 1, 0.5, 0 | residual accelerations integrated in time, with latent fields | arXiv:2607.27320, Eqs. 1–3, 7 |
-| Super-resolution GAN | 64³ LR displacement → 512³ HR displacement, same seed | small-scale displacements, with injected noise | arXiv:2010.06608, Physical considerations |
+| Super-resolution GAN | 64³ LR displacement → 512³ HR displacement, same seed | small-scale displacements, with injected noise | arXiv:2010.06608, Sects. Training and Testing, Physical considerations |
 | LDL | FastPM dark matter → TNG300-1 stellar mass, n_e, T maps | displacement layers S = α∇Ô_G (1 + δ)^γ (Eqs. 1–3) with a few parameters | arXiv:2010.02926, Sect. LDL |
 | BIND | projected dark-matter-only halo patch + 35 parameters → projected dark matter, gas, stars | a conditional flow-matching map, per halo of M_200c ≥ 10¹³ M_⊙/h | arXiv:2609.10709, Sect. III.1 |
 
@@ -52,14 +52,14 @@ Considerations]. Working with displacements rather than positions keeps translat
 
 | Model | Training set | Split | Place read |
 |---|---|---|---|
-| D³M | 10 000 ZA/FastPM pairs, effective volume 20 (Gpc/h)³; trained at one cosmology | 80/10/10 | arXiv:1811.06533, Dataset |
-| Styled U-Net | 2000 Quijote Latin-hypercube runs (5 parameters, distinct seeds), 512³ in 1 Gpc/h | 1757/122/121 | arXiv:2206.04594, Setup |
+| D³M | 10 000 ZA/FastPM pairs, effective volume 20 (Gpc/h)³; trained at one cosmology | 80/10/10 | arXiv:1811.06533, Sects. Setup, Dataset |
+| Styled U-Net | 2000 Quijote Latin-hypercube runs (5 parameters, distinct seeds), 512³ in 1 Gpc/h | 1757/122/121 | arXiv:2206.04594, Sect. "Setup" |
 | NECOLA | 100 Quijote fiducial runs with matched COLA runs (30 log-spaced steps from z = 9) | 70/20/10 | arXiv:2111.02441, Sects. II.1.2, II.2.2 |
 | MG-NECOLA | 25 runs from each of four f(R) labels, 100 in all | 70/20/10 | arXiv:2604.19613, Sect. III.3 |
 | Hybrid ODE | CAMELS dark-matter-only runs, 25 h⁻¹Mpc, downsampled from 256³ to 64³; trained at Ω_m = 0.3 | — | arXiv:2207.05509, Sect. 4 |
 | LNCA | Quijote Latin hypercube, five snapshots | — | arXiv:2607.27320, Training Data |
-| SR GAN | 16 LR/HR pairs of (100 h⁻¹Mpc)³ at one cosmology; 1 pair for testing | 16/1 | arXiv:2010.06608, Dataset, Training |
-| LDL | one TNG300-1 box, split spatially ("global cut") into 77.7/13.8/8.5% of a 625³ mesh | sub-boxes | arXiv:2010.02926, Model Training |
+| SR GAN | 16 LR/HR pairs of (100 h⁻¹Mpc)³ at one cosmology; 1 pair for testing | 16/1 | arXiv:2010.06608, Sect. N-body Simulation Dataset |
+| LDL | one TNG300-1 box, split spatially ("global cut") into 77.7/13.8/8.5% of a 625³ mesh | sub-boxes | arXiv:2010.02926, Sect. "Model Training and Loss Function" |
 | BIND | CAMELS SB35, 1024 paired 50 h⁻¹Mpc runs; haloes at 8 redshifts, 10 random rotations each | — | arXiv:2609.10709, Sect. III.1 |
 
 **Crop, pad, augment.** A 3 × 512³ field does not fit a GPU, so it is cut into 128³ crops (250
@@ -103,8 +103,8 @@ by I/O [src: arXiv:2206.04594, Network and Training].
   method [src: arXiv:2207.05509, Sect. 3].
 - **A local recurrent rule.** The LNCA keeps a fixed Lagrangian grid topology, so 3D convolutions
   replace graph operations, carries latent scalars and vectors per node, and is equivariant; about
-  4 × 10³ parameters against ~3 × 10⁶ for the styled U-Net [src: arXiv:2607.27320, Comparison to
-  Existing Emulators].
+  4 × 10³ parameters against ~3 × 10⁶ for the styled U-Net [src: arXiv:2607.27320, Sect. "Comparison to
+  Existing Emulators"].
 - **Noise injection for super-resolution.** White noise with learned amplitude is added after every
   convolution of a StyleGAN2-like generator, because HR small scales are not determined by the LR
   input [src: arXiv:2010.06608, Physical considerations].
@@ -116,8 +116,8 @@ by I/O [src: arXiv:2206.04594, Network and Training].
 |---|---|---|---|
 | NECOLA | Adam 10⁻⁴, halved after 3 epochs without gain; 100 epochs | inference ~125 GPU s per 512³ box | arXiv:2111.02441, Sects. II.2.2, III.3 |
 | MG-NECOLA | Adam 10⁻⁴, halved after 3 stagnant epochs; 100 epochs | inference ~180 s per realisation on one GPU | arXiv:2604.19613, Sects. III.3, IV.4.1 |
-| Styled U-Net | Adam 4 × 10⁻⁴, ÷10 after 3 stagnant epochs; batch 16 | 16 V100 GPUs | arXiv:2206.04594, Network and Training |
-| SR GAN | Adam 10⁻⁵ (β1 = 0, β2 = 0.99); 5 supervised + 150 adversarial epochs; gradient penalty every 16 batches | 5120³ SR field for 1 h⁻¹Gpc in 16 GPU hours | arXiv:2010.06608, Training, Discussion |
+| Styled U-Net | Adam 4 × 10⁻⁴, ÷10 after 3 stagnant epochs; batch 16 | 16 V100 GPUs | arXiv:2206.04594, Sect. "Network and Training" |
+| SR GAN | Adam 10⁻⁵ (β1 = 0, β2 = 0.99); 5 supervised + 150 adversarial epochs; gradient penalty every 16 batches | 5120³ SR field for 1 h⁻¹Gpc in 16 hours on one GPU | arXiv:2010.06608, Sects. Training and Testing, Network architecture and loss function, Discussion |
 | Hybrid ODE | Adam 10⁻²; JAX Dormand–Prince solver | one GPU, 64³ particles | arXiv:2207.05509, Sects. 3–4 |
 | BIND | AdamW, up to 200 epochs, batch 64 per GPU on 8 H100, bfloat16, EMA weights | ~150 GPU hours; a 50 h⁻¹Mpc box with ~45 haloes in ~40 s | arXiv:2609.10709, Sect. III.4 |
 
@@ -168,15 +168,16 @@ The tests read in the bodies, in the order they are usually run:
   arXiv:2206.04594, Conclusion].
 - **Trained at one cosmology, tested at others.** D³M at Ω_m = 0.5 and 0.1 keeps 3.8% and 2.5%
   displacement errors (2LPT: 15.2% and 4.3%), and at A_s = 1.8 A_0 and 0.2 A_0 stays below 4%;
-  at small A_s, 2LPT is better on the largest scales [src: arXiv:1811.06533, Generalizing].
+  at small A_s, 2LPT is better on the largest scales [src: arXiv:1811.06533, Sects. Varying matter
+  density parameter Ω_m, Varying Primordial Amplitude of Scalar Perturbations A_s].
 
 ### One-shot map or integrated dynamics
 <!-- key: one-shot-map-or-integrated-dynamics -->
 
 The LNCA reaches |ΔT/T| < 0.01 and 1 − r < 0.01 to k ~ 0.5 h Mpc⁻¹, against ~1 h Mpc⁻¹ for the
 styled U-Net, with comparable halo recovery and degradation only at the hypercube corners, using
-about four orders of magnitude fewer parameters [src: arXiv:2607.27320, Comparison to Existing
-Emulators]. Integration gives positions and velocities at every step, so light-cones need no
+about four orders of magnitude fewer parameters [src: arXiv:2607.27320, Sect. "Comparison to
+Existing Emulators"]. Integration gives positions and velocities at every step, so light-cones need no
 extra passes, and a local rule scales with surface communication; it claims no wall-clock gain
 over FastPM or pmwd (~10–20 s for 512³ on one A100) [src: same]. Its cost: the finite Lagrangian
 receptive field caps the recoverable inner halo structure, and backpropagation through time limits
@@ -203,7 +204,9 @@ realisations for one large-scale field [src: arXiv:2010.06608, A Survey of Model
 
 On MG-NECOLA's test realisation, the NECOLA log-product loss with λ = 1, 2, 3 gives errors up to
 2.5% larger than the gradient-plus-spectral loss at k > 0.5 h Mpc⁻¹ [src: arXiv:2604.19613,
-Sect. IV.2, Fig. 2]. This is one realisation, and the comparison does not separate the gradient
+Sect. IV.2, Fig. 2].
+
+This is one realisation, and the comparison does not separate the gradient
 from the spectral term [der].
 
 ### Halo painting or full-field painting
@@ -224,16 +227,16 @@ the full field but with the resolution limit above.
 | COLA setting | 30 log-spaced steps from z = 9, ~3 CPU h | NECOLA | arXiv:2111.02441 | Sect. II.1.2 |
 | Cost per box | N-body 10⁶ CPU s, COLA 10⁴ CPU s, network 125 GPU s | NECOLA | arXiv:2111.02441 | Table 1 |
 | Crop and pad | 128³ crops, 20-voxel periodic pad | NECOLA, MG-NECOLA | arXiv:2111.02441; arXiv:2604.19613 | Sects. II.2.2; III.3 |
-| Training split | 1757/122/121 Latin-hypercube cosmologies | styled U-Net | arXiv:2206.04594 | Setup |
-| Low-mass halo bias | +10–20% below 5 × 10¹³ M_⊙/h | styled U-Net | arXiv:2206.04594 | Halos |
+| Training split | 1757/122/121 Latin-hypercube cosmologies | styled U-Net | arXiv:2206.04594 | Sect. "Setup" |
+| Low-mass halo bias | +10–20% below 5 × 10¹³ M_⊙/h | styled U-Net | arXiv:2206.04594 | Sect. "Halos" |
 | Loss weights | (w_lag, w_eul, w_grad) = (1, 3, 2); spectral k_min = 0.3 h Mpc⁻¹ | MG-NECOLA | arXiv:2604.19613 | Eqs. 7–9 |
 | Position error | 0.68 → 0.47 h⁻¹Mpc | MG-NECOLA | arXiv:2604.19613 | Sect. IV.3 |
 | Neutrino transfer | < 1% (0.1 eV), < 2% (0.2 eV), < 4% (0.4 eV) | MG-NECOLA | arXiv:2604.19613 | Fig. 8 |
-| D³M training set | 10 000 ZA/FastPM pairs, 20 (Gpc/h)³ | D³M | arXiv:1811.06533 | Dataset |
+| D³M training set | 10 000 ZA/FastPM pairs, 20 (Gpc/h)³ | D³M | arXiv:1811.06533 | Sect. "Dataset" |
 | Hybrid ODE loss weight | λ = 0.1; 16 B-spline knots | hybrid ODE | arXiv:2207.05509 | Sect. 3 |
-| LNCA accuracy reach | 1% in T and r to k ~ 0.5 h Mpc⁻¹; ~4 × 10³ parameters | LNCA | arXiv:2607.27320 | Comparison |
-| SR training | 16 pairs, 64³ → 512³ in 100 h⁻¹Mpc; mass resolution × 512 | SR GAN | arXiv:2010.06608 | Dataset |
-| SR cost | HR 560 core h vs LR 0.6 core h to z = 2 | SR GAN | arXiv:2010.06608 | Discussion |
+| LNCA accuracy reach | 1% in T and r to k ~ 0.5 h Mpc⁻¹; ~4 × 10³ parameters | LNCA | arXiv:2607.27320 | Sect. "Comparison to Existing Emulators" |
+| SR training | 16 pairs, 64³ → 512³ in 100 h⁻¹Mpc; mass resolution × 512 | SR GAN | arXiv:2010.06608 | Sect. N-body Simulation Dataset; abstract |
+| SR cost | HR 560 core h vs LR 0.6 core h to z = 2 | SR GAN | arXiv:2010.06608 | Sect. "Discussion" |
 | LDL smoothing | Ô_s = 1 + (k/1 h Mpc⁻¹)^{−1} | LDL | arXiv:2010.02926 | Eq. 9 |
 | BIND ceiling | hydro-replace recovers ~65% of 1 − S(k) at k = 10–20 h Mpc⁻¹ | BIND | arXiv:2609.10709 | Sect. VII.1 |
 
@@ -246,8 +249,8 @@ the full field but with the resolution limit above.
   simulation at small scales because the input mesh lacks that information [src: arXiv:2010.02926,
   Discussion; arXiv:2207.05509, Sect. 6]. Test: compare with a same-resolution full simulation
   (TNG300-3 for LDL), not only with the HR target.
-- **Halo abundances.** U-Net emulators over-produce low-mass haloes (+10–20%) while P(k) is at the
-  per-cent level [src: arXiv:2206.04594, Halos]. Test: halo mass function and profiles with the
+- **Halo abundances.** The styled U-Net over-produces low-mass haloes (+10–20%) while P(k) is at
+  the per-cent level [src: arXiv:2206.04594, Sect. "Halos"]. Test: halo mass function and profiles with the
   same halo finder on both outputs.
 - **Untested resolution or volume.** The styled U-Net and LNCA are trained only on 512³ in 1 Gpc/h,
   so transfer to other force resolutions is untested [src: arXiv:2607.27320, Limitations]; BIND

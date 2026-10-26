@@ -71,7 +71,7 @@ mock data sets"; DES Y1 had 18 realistic simulated data sets for pipeline valida
    terms) with exact finite angular-bin averaging, which Y1 had approximated by computing a fine
    binning and re-summing [src: Sect. 2].
 2. Linearise the model in all 28 parameters, so that Bayesian intervals have a frequency
-   interpretation and thousands of simulated analyses cost no MCMC [src: Sect. 2].
+   interpretation and thousands of simulated analyses cost no MCMC (arXiv:2012.08568) [src: Sect. 2].
 3. For each effect left out or approximated (bin averaging, connected four-point function,
    curved sky, non-Limber and RSD, mask geometry, non-Poissonian shot noise, cosmology
    dependence, effective shape noise), compute the change of `⟨χ²⟩`, `σ[χ²]`, `σ[π̂]` and `σ_π`,
@@ -216,7 +216,7 @@ MAP (`surveys-and-data.md#des`); the two statements address different errors.
 | Route | Assumes | Buys | Costs | Used by | Head-to-head result |
 |---|---|---|---|---|---|
 | Mock sample covariance, Gaussian likelihood with Hartlap + `m_1` (or `S'`) | Gaussian data, independent mocks, linear model | survey realism if the mocks have it | noise growing with `n_d/n_s`; mock realism limited to what the mocks match | DESI DR1 full shape (rescaled, below) | reaches nominal coverage in the 450-point shear test with `n_s = 650` (arXiv:2108.10402) [src: Sect. 6] |
-| Mock sample covariance, matching-prior t-posterior | as above | coverage-matched credible intervals, no extra factors | prior depends on `n_s, n_d, n_θ`; not valid for arbitrary non-linear models; compression subtleties | not found in a 2025–2026 collaboration analysis (`open-questions.md#covariance-mocks-analytic-or-neither`) | ≈68%, ≈95% coverage in the same test [src: Sect. 6] |
+| Mock sample covariance, matching-prior t-posterior | as above | coverage-matched credible intervals, no extra factors | prior depends on `n_s, n_d, n_θ`; not valid for arbitrary non-linear models; compression subtleties | not found in a 2025–2026 collaboration analysis (`open-questions.md#covariance-mocks-analytic-or-neither`) | ≈68%, ≈95% coverage in the same test (arXiv:2108.10402) [src: Sect. 6] |
 | Analytic (halo model, Gaussian + connected + super-sample) | correct survey-geometry treatment; trispectrum model; one fiducial cosmology | no noise, cheap to iterate | missing or approximated terms, found only by comparison | DES Y3/Y6, KiDS-1000/Legacy | KiDS-1000: analytic against 5000 mocks, simple and realistic geometry, no significant change of marginal constraints (arXiv:2007.01844) [src: Sect. 7] |
 | Semi-analytic, jackknife-calibrated (RascalC) | non-Gaussianity captured by one shot-noise rescaling per tracer | adapts to the measured clustering; mocks needed only for validation | shot-noise rescaling limited where the four-point term matters (dense samples) | DESI DR1 and DR2 BAO | BAO error bars within 8% of a 1000-mock covariance whose own expected scatter is about 2.4% (arXiv:2404.03007) [src: Sect. 8] |
 | Mock covariance rescaled to a data-tuned semi-analytic one | the semi-analytic matrix carries the data's realism | survey effects of fibre assignment | a rescaling larger than the finite-mock correction | DESI DR1 full shape | see `systematics.md#analytic-covariance-missing-terms-and-cosmology` |
@@ -253,7 +253,7 @@ the mocks perfectly is not necessarily a reasonable goal" [src: Sect. 8].
 | Parameters, of which with Gaussian priors | 28, 13 | DES Y3 3×2pt | arXiv:2012.08568 | Sect. 2 |
 | Expected `⟨χ²⟩` with a perfect covariance; effective parameters | 507.6; ≈ 23.4 | DES Y3 3×2pt | arXiv:2012.08568 | Sect. 2, Table 1 |
 | Excess of `χ²` at maximum posterior from all neglected effects in quadrature | ≈ 4% (Δχ² ≈ 20.3) | DES Y3 3×2pt | arXiv:2012.08568 | Sect. 2 |
-| Neglecting exact angular-bin averaging: `⟨χ²⟩`; posterior width of Ω_m, σ8, w | 402.1 instead of 507.6; +7.4%, +8.3%, +7.4% (scatter +0.8% to +1.0%) | DES Y3 | arXiv:2012.08568 | Table 1 |
+| Neglecting exact angular-bin averaging: `⟨χ²⟩`; posterior width of Ω_m, σ8, w | 402.1 instead of 507.6; +7.4%, +8.3%, +7.4% (scatter +0.8%, +0.8%, +1.0%) | DES Y3 | arXiv:2012.08568 | Table 1 |
 | Connected four-point function: change of posterior width | −0.8% to −0.9% | DES Y3 | arXiv:2012.08568 | Table 1 |
 | Covariance cosmology: extra scatter of the best fit | ≈ 3% (Ω_m, σ8), ≈ 5% (w) | DES Y3 | arXiv:2012.08568 | Sect. 2 |
 | Data-vector length; sampled parameters | 120 and 12 (shear); 310 and 20 (joint) | KiDS-1000 | arXiv:2007.01844 | Sect. 6.3 |
@@ -264,7 +264,7 @@ the mocks perfectly is not necessarily a reasonable goal" [src: Sect. 8].
 | Survey footprint and depth: increase of sqrt(diagonal) | ≈ 20%, falling to ≈ 10% | KiDS-1000 lensing band powers | arXiv:2007.01844 | Sect. 5.3 |
 | Analytic against mock standard deviation at small angular frequency | analytic low by typically 10%; GGL up to +20% on large scales | KiDS-1000 | arXiv:2007.01844 | Sect. 5.3 |
 | Bias of the data vector from covariance differences, `σ_ΔCov/μ` | 4 × 10^-3 to 10^-4 (GGL); < 5 × 10^-5 (shear) | KiDS-1000 | arXiv:2007.01844 | Sect. 5.3, Eq. 42 |
-| S8 1σ interval width, analytic or mock, simple or realistic geometry | 0.054–0.057 (marginal HPD); 0.057–0.072 (PJ-HPD) | KiDS-1000 synthetic | arXiv:2007.01844 | Table 5, IDs 9–12 |
+| S8 1σ interval width, marginal HPD / PJ-HPD: analytic covariance, Buceros 0.054 / 0.072 (ID 9), Egretta 0.056 / 0.062 (ID 10); mock covariance, Buceros 0.054 / 0.057 (ID 11), Egretta 0.057 / 0.066 (ID 12) | as listed | KiDS-1000 synthetic | arXiv:2007.01844 | Table 5, IDs 9–12 |
 | BAO error bars, RascalC against 1000-mock sample covariance | ≤ 8%; ≈ 5% without pre-reconstruction BGS | DESI DR1 mocks | arXiv:2404.03007 | Sect. 8 |
 | Expected scatter of errors from 1000 mocks | ≈ 2.4% | DESI DR1 | arXiv:2404.03007 | Sect. 8 |
 | Monte Carlo chunks for the reference values of the comparison measures | 10 000 | DESI DR1 | arXiv:2404.03007 | Sect. 2.2 |
@@ -292,7 +292,7 @@ the mocks perfectly is not necessarily a reasonable goal" [src: Sect. 8].
   (arXiv:2012.08568) [src: Sect. 2]. Test the covariance with a linearised likelihood, or
   separate prior-volume effects first (`systematics.md#projection-prior-volume-effects`).
 - **Approximate angular-bin averaging.** The largest single effect on `χ²` found for DES Y3,
-  with posterior widths changed by about 7%–8% (arXiv:2012.08568) [src: Table 1]. Test: exact
+  with posterior widths of Ω_m, σ8 and w changed by +7.4%, +8.3% and +7.4% (arXiv:2012.08568) [src: Table 1]. Test: exact
   bin-averaged Gaussian and shot-noise terms.
 - **Mixed noise–sample-variance term without survey geometry.** Up to 20% on large-scale
   galaxy–galaxy lensing in KiDS-1000 (arXiv:2007.01844) [src: Sect. 5.3]. Test: mocks with the
@@ -338,6 +338,9 @@ of the mock covariance, against the 2.4% sampling floor of 1000 mocks [src: Sect
 ## Not verified
 <!-- key: not-verified -->
 
+- The row "Connected four-point function: change of posterior width" gives a span of two values
+  from Table 1 of arXiv:2012.08568; the per-parameter values behind it were not re-read on
+  2026-10-24 (the angular-bin-averaging row was re-read and is given per parameter).
 - The original Friedrich & Eifler 2018 precision-matrix proposal: its identifier was not found
   by the searches of this run; it is described only as summarised in arXiv:2108.10402 [src:
   Sect. 7].

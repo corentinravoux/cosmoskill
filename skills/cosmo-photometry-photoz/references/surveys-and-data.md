@@ -16,7 +16,7 @@ redshifts.
 
 | Resource | Content | Reference |
 |---|---|---|
-| HST CALSPEC | STIS (0.17–1.0 μm) and WFC3 IR grism (0.8–1.7 μm) spectrophotometry of white dwarfs and stars; the absolute scale of most optical surveys | arXiv:1502.01754, arXiv:1903.11985, arXiv:1403.6861 [src] |
+| HST CALSPEC | STIS (0.17–1.0 μm) and WFC3 IR grism (0.8–1.7 μm) spectrophotometry of white dwarfs and stars; the absolute scale of most optical surveys | arXiv:1502.01754, arXiv:1903.11985, arXiv:1403.6861 [src: abstract] |
 | Gaia DR3 XP spectra and GSPC | flux-calibrated 330–1050 nm spectra for ~220 million sources; synthetic photometry in common systems | arXiv:2206.06215 [src: abstract] |
 | DES Y6 FGCM catalogue | grizY for 17 million stars, 16 < i < 21, 5000 deg², 1.8 mmag uniformity | arXiv:2305.01695 [src: abstract] |
 | BEST | > 200 million standards in > 200 passbands, all sky | arXiv:2601.05486 [src: abstract] |
@@ -28,11 +28,12 @@ What each standard has shown:
 - **HST CALSPEC.** The absolute flux scale of most surveys is tied to HST
   STIS spectrophotometry of white-dwarf and stellar standards. Synthetic
   photometry from STIS agrees with ground-based B, V, R, I photometry of
-  eleven CALSPEC stars to better than about 1% (Bohlin & Landolt 2015,
-  arXiv:1502.01754) [src]; WFC3 IR grism spectra extend the scale to 1.7 μm at
-  about 1% (Bohlin & Deustua 2019, arXiv:1903.11985) [src]. Sirius and Vega
-  monochromatic fluxes at 5557.5 Å are given to 0.5% formal uncertainty
-  (Bohlin 2014, arXiv:1403.6861) [src].
+  P177D, P330E and nine other CALSPEC standards to better than about 1%
+  (Bohlin & Landolt 2015, arXiv:1502.01754) [src: abstract]; WFC3 IR grism
+  spectra extend the scale to 1.7 μm at about 1% (Bohlin & Deustua 2019,
+  arXiv:1903.11985) [src: abstract]. Sirius and Vega monochromatic fluxes
+  at 5557.5 Å are given to 0.5% formal uncertainty (Bohlin 2014,
+  arXiv:1403.6861) [src: abstract].
 - **Gaia XP synthetic photometry.** Gaia DR3 provides flux-calibrated
   low-resolution spectra for about 220 million sources over 330–1050 nm, from
   which synthetic photometry can be computed for any passband inside that
@@ -44,10 +45,11 @@ What each standard has shown:
   J-PLUS and S-PLUS it exposed position-dependent zero-point errors of up to
   15 mmag (stellar-locus method) and 23 mmag (S-PLUS DR4), and errors of up to
   10 mmag in uncorrected Gaia XP synthetic photometry; with corrected XP
-  spectra the two routes agree to 1–6 mmag (Xiao et al. 2023,
-  arXiv:2309.11225, arXiv:2309.11533) [src]. The BEST database extends this to
+  spectra the two routes agree to 1–5 mmag for J-PLUS DR3 (Xiao et al.
+  2023, arXiv:2309.11225) and to 1–6 mmag for S-PLUS DR4 (Xiao et al. 2023,
+  arXiv:2309.11533) [src: abstract]. The BEST database extends this to
   more than 200 million standards in over 200 passbands at better than 10
-  mmag (Xiao et al. 2026, arXiv:2601.05486) [src].
+  mmag (Xiao et al. 2026, arXiv:2601.05486) [src: abstract].
 - **Temperature scale.** The infrared flux method applied to over 6000 FGK
   stars finds the SDSS r band well standardised, offsets of a few hundredths
   of a magnitude in i and z, a small one in g, and a u-band offset that
@@ -65,37 +67,37 @@ absolute tie to CALSPEC (arXiv:2305.01695, arXiv:2309.11533) [src].
 | Survey | Photometry | Photo-z product and status | Reference |
 |---|---|---|---|
 | DESI Legacy Imaging Surveys | DECaLS, BASS, MzLS: ~14,000 deg² in g, r, z plus WISE 3.4–22 μm; source shapes and fluxes from probabilistic inference | catalogues and software public, two releases per year planned | Dey et al. 2019, arXiv:1804.08657 [src: abstract] |
-| Legacy Surveys DR8, all-sky photo-z | as above, ~19,400 deg² | sparse Gaussian processes with Gaussian-mixture partitioning and cost-sensitive weights against training-set bias; ≳ 9 × 10⁸ galaxies, 0 < z ≲ 7; less biased at z > 1 than earlier estimates | Duncan 2022, arXiv:2203.01949 [src] |
-| HSC-SSP DR1 / DR2 | grizy | several codes compared and calibrated; σ(Δz/(1+z)) ~ 0.05 and ~15% outliers to i = 25 at 0.2 ≲ z_phot ≲ 1.5, ~0.04 and ~8% at i < 24; some codes mis-estimate PDF widths; point estimates and full PDFs public | Tanaka et al. 2018, arXiv:1704.05988; Nishizawa et al. 2020, arXiv:2003.01511 [src] |
-| DES Y6 MagLim++ lens sample | grizY with deep fields and Balrog injections | SOMPZ with noise-weighted metric, O(10⁸) n(z) realisations importance-sampled with clustering redshifts; mean-z uncertainty 1–2%, 20–30% below Y3; compressed to orthogonal modes | Giannini et al. 2025, arXiv:2509.07964 [src] |
+| Legacy Surveys DR8, all-sky photo-z | as above, ~19,400 deg² | sparse Gaussian processes with Gaussian-mixture partitioning and cost-sensitive weights against training-set bias; ≳ 9 × 10⁸ galaxies, 0 < z ≲ 7; less biased at z > 1 than earlier estimates | Duncan 2022, arXiv:2203.01949 [src: abstract] |
+| HSC-SSP DR1 / DR2 | grizy | several codes compared and calibrated; for DR1, σ(Δz/(1+z)) ~ 0.05 and ~15% outliers to i = 25 at 0.2 ≲ z_phot ≲ 1.5, ~0.04 and ~8% at i < 24; some codes mis-estimate PDF widths; point estimates and full PDFs public | Tanaka et al. 2018, arXiv:1704.05988 [src: abstract]; Nishizawa et al. 2020, arXiv:2003.01511 [src: abstract] |
+| DES Y6 MagLim++ lens sample | grizY with deep fields and Balrog injections | SOMPZ with noise-weighted metric, O(10⁸) n(z) realisations importance-sampled with clustering redshifts; mean-z uncertainty 1–2%, 20–30% below Y3; compressed to orthogonal modes | Giannini et al. 2025, arXiv:2509.07964 [src: abstract] |
 | KiDS DR5 (KiDS-Legacy) | 1347 deg² of lensing imaging plus 27 deg² over spectroscopic fields; VST ugri (i observed twice) and VISTA ZYJHKs, 5σ limits from r = 25.07 to Ks = 22.02 | photo-z cuts z_B define six equipopulated bins over 0.1 < z_B ≤ 2.0, 41 million sources, n_eff = 8.8 arcmin⁻²; n(z) from per-bin SOMs with gold weights, checked by clustering redshifts | Wright et al. 2025, arXiv:2503.19440 [src: Sect. 2, Tables 1, 3] |
 | DES Y6 Gold | 5000 deg² grizY | DNF reference photo-z; WISE-enhanced release | arXiv:2607.07771 [src: abstract] |
-| Rubin LSST DP1 | ComCam ugrizy in ECDFS, griz elsewhere | eight RAIL codes run; σ_NMAD ~ 0.03 | arXiv:2510.07370 [src] |
+| Rubin LSST DP1 | ComCam ugrizy in ECDFS, griz elsewhere | eight RAIL codes run; σ_NMAD ~ 0.03 | arXiv:2510.07370 [src: abstract] |
 | Euclid Q1 | VIS + NISP with ground-based photometry | PHZ pipeline: star/galaxy/QSO classification, photo-z and physical properties; precision compatible with requirements, but a bias correction is needed for cosmology; QSO separation from photometry insufficient | Euclid Collaboration: Tucci et al. 2025, arXiv:2503.15306 [src] |
-| HSC-CLAUDS | multi-field u to y | CNN redshifts with domain adaptation for ~4 million sources at i < 25 | arXiv:2512.11700 [src] |
+| HSC-CLAUDS | multi-field u to y | CNN redshifts with domain adaptation for ~4 million sources at i < 25 | arXiv:2512.11700 [src: abstract] |
 
 ## 3. Many-band and narrow-band calibration fields
 <!-- key: many-band-and-narrow-band-calibration-fields -->
 
 | Survey | Bands | Role | Reference |
 |---|---|---|---|
-| COSMOS2020 | ~2 deg²; 1.7 million sources, ~966,000 with all broad bands; aperture and profile-fitting (The Farmer) photometry, two photo-z codes | sub-percent photo-z at i < 21, 5% at 25 < i < 27; same precision as COSMOS2015 almost one magnitude deeper; the reference truth for many SOM and forward-model calibrations | Weaver et al. 2022, arXiv:2110.13923 [src] |
+| COSMOS2020 | ~2 deg²; 1.7 million sources, ~966,000 with all broad bands; aperture and profile-fitting (The Farmer) photometry, two photo-z codes | sub-percent photo-z at i < 21, 5% at 25 < i < 27; same precision as COSMOS2015 almost one magnitude deeper; the reference truth for many SOM and forward-model calibrations | Weaver et al. 2022, arXiv:2110.13923 [src: abstract] |
 | COSMOS2025 (COSMOS-Web) | JWST NIRCam (4 bands) + MIRI over ~0.54 deg², 37 bands 0.3–8 μm, > 700,000 galaxies | σ_MAD = 0.012 at m_F444W < 28 against spectra to z ~ 9; ~2× better than COSMOS2020 at 26 AB; PDFs released | Shuntov et al. 2025, arXiv:2506.03243 [src: abstract] |
 | PAUS design | 40 narrow bands of 12.5 nm FWHM, 450–850 nm, on the WHT | design goal σ(z)/(1+z) ~ 0.0035 to i_AB < 22.5–23.0 (simulations) | Martí et al. 2014, arXiv:1402.3220 [src: abstract] |
 | PAUS COSMOS | as above + broad bands | σ_68/(1+z) = 0.0037 to i_AB < 22.5 for the best 50% (BCNz2, zCOSMOS DR3); ~0.001 for a bright high-quality selection driven by emission lines | Eriksen et al. 2019, arXiv:1809.04375 [src: abstract] |
 | PAUS wide fields | ~50 deg², ~1.8 million objects to i_AB < 23, overlapping CFHTLenS W1, W3 and KiDS/GAMA G09 | σ_68 ≃ 0.019 for all galaxies, bias < 0.01; zero-point calibration independent of spectroscopic samples | Navarro-Gironés et al. 2023, arXiv:2312.07581 [src: abstract] |
 | miniJPAS (J-PAS demonstration) | ~1 deg² of AEGIS in 60 bands, 54 narrow and 6 broad over 3800–9100 Å | template photo-z (jphotoz pipeline) with odds parameter: 64% of r < 23 galaxies within |Δz| < 0.03, 87% at odds > 0.61; mode carries a systematic offset Δz_sys = (1.4 ± 0.1) × 10⁻³, which also tilts the PIT and is removed by shifting the PDFs | Hernán-Caballero et al. 2021, arXiv:2108.03271 [src: Sect. 4.1, 6.2] |
-| J-PLUS, S-PLUS | 12 broad and medium bands (J-PLUS) | recalibrated with Gaia XP and SCR to 1–6 mmag agreement; illustrate how medium-band surveys depend on external standards | arXiv:2309.11225, arXiv:2309.11533 [src] |
+| J-PLUS, S-PLUS | 12 broad and medium bands (J-PLUS) | recalibrated with Gaia XP and SCR, the two agreeing to 1–5 mmag (J-PLUS DR3) and 1–6 mmag (S-PLUS DR4); illustrate how medium-band surveys depend on external standards | arXiv:2309.11225, arXiv:2309.11533 [src: abstract] |
 | PAUS | 40 optical narrow bands | σ_NMAD/(1+z) = 0.011 for a validation-like mock sample; joint with Euclid forecast to reach 0.011 and < 4% outliers to i < 23.5 for a deeper survey (**forecast**) | arXiv:2606.25812 [src: abstract] |
 
 SPHEREx (NASA Medium-Class Explorer, all-sky 0.75–5 μm low-resolution
 spectral survey) is the space analogue. Simulations based on COSMOS2020 SEDs
 forecast 19 million galaxies with σ_z < 0.003(1+z), 445 million with σ_z <
 0.1(1+z) and 810 million with σ_z < 0.2(1+z) over 30,000 deg² (**forecast**;
-Feder et al. 2023, arXiv:2312.04636) [src]. Spectral confusion from faint
+Feder et al. 2023, arXiv:2312.04636) [src: abstract]. Spectral confusion from faint
 untargeted galaxies (0.8–3.8 μJy, 1σ) is negligible at full-sky depth but
 significant in the deep fields, where it biases redshifts slightly high
-(Huai et al. 2025, arXiv:2510.01410) [src].
+(Huai et al. 2025, arXiv:2510.01410) [src: abstract].
 
 ## 4. Spectroscopic training and calibration samples
 <!-- key: spectroscopic-training-and-calibration-samples -->
@@ -131,7 +133,7 @@ matters here:
 
 - **Rubin LSST.** Photo-z production runs through RAIL (arXiv:2505.02928)
   [src]; the commissioning-camera test reached σ_NMAD ~ 0.03 on DP1
-  (arXiv:2510.07370) [src]; system throughput is being mapped in situ by the
+  (arXiv:2510.07370) [src: abstract]; system throughput is being mapped in situ by the
   Collimated Beam Projector (arXiv:2606.31822) [src].
 - **Euclid.** The PHZ pipeline runs on Q1 and needs a bias correction for
   cosmology (arXiv:2503.15306) [src]; SOM and clustering calibrations are
@@ -142,7 +144,8 @@ matters here:
   wide clustering references including the Lyα forest at 2 < z < 3
   (arXiv:2601.16962, **forecast**) [src].
 - **SPHEREx.** All-sky 0.75–5 μm spectrophotometry, with deep-field confusion
-  as the known systematic (arXiv:2312.04636, arXiv:2510.01410) [src].
+  as the known systematic (arXiv:2312.04636, arXiv:2510.01410) [src:
+  arXiv:2510.01410, abstract].
 - **COSMOS-Web.** COSMOS2025 is the new deep reference catalogue with PDFs
   (arXiv:2506.03243) [src].
 - **Roman.** On HST/CANDELS imaging (F606W, F814W, F125W, F160W) used as a

@@ -40,7 +40,7 @@ CMB and SNe datasets" (arXiv:2503.14738) [src].
 | KiDS-1000 + BOSS + 2dFLenS | 3×2pt extensions: `w`, `Omega_K`, `Sum m_nu`, `f_R0` | `w = −0.99 (+0.11/−0.13)` | Tröster et al. 2020, arXiv:2010.16416 | [src] |
 | DES Y3 3×2pt | extensions: (`w_p`, `wa`), Σ0, μ0, binned `sigma8(z)` | `Sigma0 = 0.6 (+0.4/−0.5)` alone | DES Collaboration 2022, arXiv:2207.05766 | [src] |
 | X-ray cluster samples | `f(R)` from the mass function | `log10 abs(f_R0) < −4.79` | Cataneo et al. 2014, arXiv:1412.0133 | [src] |
-| GW170817 + GRB 170817A (17 August 2017) | speed of gravitational waves | `abs(c_g/c − 1) ≤ 5 × 10^-16` | LIGO Scientific Collaboration et al. 2017, arXiv:1710.05834; arXiv:1710.05901 | [src] |
+| GW170817 + GRB 170817A | speed of gravitational waves | `abs(c_g/c − 1) ≤ 5 × 10^-16` | LIGO Scientific Collaboration et al. 2017, arXiv:1710.05834; arXiv:1710.05901 | [src: abstract of arXiv:1710.05901] |
 | DESI DR1 BAO (2024) | first `w0wa` preference | over 6 million objects, seven redshift bins, `0.1 < z < 4.2` | DESI Collaboration 2024, arXiv:2404.03002 | [src] |
 | DES-SN5YR, Union3 (original releases) | supernova inputs of the 2024–2025 claims | superseded by DES-Dovekie and Union3.1 | arXiv:2511.07517, arXiv:2601.19424 | [src] |
 
@@ -52,7 +52,7 @@ CMB and SNe datasets" (arXiv:2503.14738) [src].
 
 | Data set | Content | Status at snapshot | Source | Flag |
 |---|---|---|---|---|
-| DESI DR2 BAO | more than 14 million galaxies and quasars, three years of operation, plus Lyα forest BAO | the current BAO input of every dark-energy fit | DESI Collaboration 2025, arXiv:2503.14738 | [src] |
+| DESI DR2 BAO | more than 14 million galaxies and quasars, three years of operation, plus Lyα forest BAO | the current BAO input of every dark-energy fit | DESI Collaboration 2025, arXiv:2503.14738 | [src: abstract] |
 | DESI DR2 Lyα BAO and full shape | `z_eff = 2.33` | values and caveats in `cosmo-lyman-alpha` | sibling skill | [sec] |
 | DESI DR1 full shape | power-spectrum multipoles of the DR1 tracers; latest DESI full-shape data | used for μ, Σ, EFT and `f(R)` tests; combined with DR2 BAO through mock cross-covariance | arXiv:2411.12026, arXiv:2602.18761 | [src] |
 | DESI DR1 LRG bispectrum | adds higher-order information | first cosmology in June 2026 | arXiv:2606.23936 | [src] |
@@ -96,7 +96,7 @@ Combination names (P-ACT, CMB-SPA), their differences and the τ input are in
 
 | Data set | Content | Dark-energy / gravity use | Source | Flag |
 |---|---|---|---|---|
-| DES Y6 3×2pt | ~5000 deg²; 140 million source shapes; 9 million lens positions | `wCDM`; with SN + BAO (+ clusters) the first single-survey all-probe `w0wa` result | DES Collaboration 2026, arXiv:2601.14559, arXiv:2605.27221 | [src] |
+| DES Y6 3×2pt | ~5000 deg²; 140 million source shapes; 9 million lens positions | `wCDM`; with SN + BAO (+ clusters) the first single-survey all-probe `w0wa` result | DES Collaboration 2026, arXiv:2601.14559, arXiv:2605.27221 | [src: abstract of each] |
 | KiDS-Legacy | 1347 deg², `z ≤ 2.0` (as described in an external μ–Σ analysis) | `Sigma0` with CMB | Du et al. 2026, arXiv:2602.03110 | [src: abstract] |
 | KiDS-1000, DES Y3, HSC | sources for DESI DR1 and BOSS `E_G` measurements | Rauhut et al. 2025, arXiv:2507.16098 | [src] |
 | DES Y3 3×2pt | still the 3×2pt likelihood in DESI DR2 and DESI DR1 MG combinations | arXiv:2503.14738, arXiv:2411.12026 | [src] |
@@ -111,7 +111,7 @@ arXiv listing].
 
 | Data | Used for | Source | Flag |
 |---|---|---|---|
-| Statistical samples of gas–star offsets and stellar-disk warps | thin-shell-screened fifth forces, Compton wavelength 0.3–8 Mpc | Desmond and Ferreira 2020, arXiv:2009.08743 | [src] |
+| Statistical samples of gas–star offsets and stellar-disk warps | thin-shell-screened fifth forces, Compton wavelength 0.3–8 Mpc | Desmond and Ferreira 2020, arXiv:2009.08743 | [src: abstract] |
 | Nine massive clusters from CLASH and CLASH-VLT | chameleon and `f(R)` from lensing and kinematic mass profiles | Pizzuti et al. 2026, arXiv:2604.23631 | [src] |
 | SH0ES Cepheid–supernova ladder and four TRGB data sets | screened fifth force in distance calibrators | Högås et al. 2025, arXiv:2512.14814 | [src] |
 | DESI DR1 power spectrum, all tracers | scale-dependent growth, `f(R)` | Gonzalez et al. 2026, arXiv:2604.26915 | [src] |
@@ -157,11 +157,7 @@ Forecast statements read this session:
   error ellipse for future low- and high-z SN Ia compilations" (**forecast**;
   arXiv:2409.18668) [src].
 - Caldwell and Linder's target for distinguishing thawing from freezing fields
-  is a resolution `sigma(w') ≈ (1 + w)` (arXiv:astro-ph/0505494) [src]. With
-  `1 + w_p ≈ 0.05` (arXiv:2503.14738), this is `sigma(wa)` of order 0.05,
-  against ~0.2 today [der: `1 + w_p` from the DESI + CMB + DESY5 pivot value
-  −0.954; current `sigma(wa)` from the Unite and Dovekie rows of `results.md`;
-  `w'` and `wa` treated as equal at `a ≈ 1`].
+  is a resolution `sigma(w') ≈ (1 + w)` (arXiv:astro-ph/0505494) [src: abstract].
 
 ## 6. Timeline of releases that changed the dark-energy picture
 <!-- key: timeline-of-releases-that-changed-the-dark -->
@@ -174,9 +170,9 @@ Forecast statements read this session:
 | Nov 2024 | DESI DR1 full shape, modified gravity | GR consistent; PR3 Σ0 tension traced to the likelihood | arXiv:2411.12026 [src] |
 | Mar 2025 | DESI DR2 BAO | 2.8–4.2σ | arXiv:2503.14738 [src: abstract] |
 | Nov 2025 | DES-Dovekie | 4.2σ → 3.2σ | arXiv:2511.07517 [src: abstract] |
-| Jan 2026 | Union3.1; DES Y6 3×2pt | samples converge at 3.2–3.4σ; `w = −1.12 (+0.26/−0.20)` from 3×2pt | arXiv:2601.19424, arXiv:2601.14559 [src] |
-| Feb 2026 | DESI DR1 FS + DR2 BAO | 1.4σ without CMB | arXiv:2602.18761 [src] |
+| Jan 2026 | Union3.1; DES Y6 3×2pt | Union3.1 3.4σ, DES-Dovekie rerun 3.4σ, corrected Pantheon+ 3.2σ; `w = −1.12 (+0.26/−0.20)` from 3×2pt | arXiv:2601.19424, arXiv:2601.14559 [src: abstract of each] |
+| Feb 2026 | DESI DR1 FS + DR2 BAO | 1.4σ without CMB | arXiv:2602.18761 [src: abstract] |
 | Apr 2026 | DESI survey complete; DESI DR1 `f(R)` | `log10 abs(f_R0) < −4.59` | arXiv:2604.26915 [src] |
 | May 2026 | DES Y6 all-probe `w0wa` | 2.2σ alone, 3.0σ with DESI and CMB | arXiv:2605.27221 [src: abstract] |
 | Jun 2026 | DESI DR1 bispectrum + DR2 BAO | weakens the DESI-only preference | arXiv:2606.23936 [src] |
-| Sep 2026 | Unite | 3.3σ, weak Bayesian evidence | arXiv:2609.05053 [src] |
+| Sep 2026 | Unite | 3.3σ, weak Bayesian evidence | arXiv:2609.05053 [src: abstract] |

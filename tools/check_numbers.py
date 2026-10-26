@@ -16,9 +16,12 @@ carries a number is
     none      it holds neither
     derived   it carries a `[der` flag (any of the above)
 
-What is not counted as a number: years, arXiv identifiers and DOIs, section,
-table, equation, figure and step numbers, list numbering, flags in square
-brackets, the `Snapshot:` line, level names (L1 to L4), single digits.
+What is not counted as a number: years, arXiv identifiers and DOIs (also bare
+identifiers in a list), section, table, equation, figure, step, "§" and
+reference numbers, list numbering and numbered bold headings, flags in square
+brackets, the `Snapshot:` line, level names (L1 to L4), single digits, the
+"21" of "21 cm" and of 21cm-named codes. The block written by
+`tools/sync_blocks.py` is skipped.
 
     python3 tools/check_numbers.py                 # one line per skill
     python3 tools/check_numbers.py --skill cosmo-cmb --list
@@ -42,13 +45,20 @@ BASELINE = Path(__file__).resolve().parent / "numbers-baseline.tsv"
 SKIP_PARTS = {"example-layer"}
 
 IDENT = re.compile(r"arXiv:\s?(\d{4}\.\d{4,5}|[a-z\-]+(?:\.[A-Z]{2})?/\d{7})|doi:\s?\S+", re.I)
-PLACE = re.compile(r"\b(Sects?|Sections?|Tables?|Tabs?|Eqs?|Equations?|Figs?|Figures?|Apps?|Appendix|Appendices"
-                   r"|abstract|footnotes?|caption|Conclusions?|Summary)\b", re.I)
+# A place is a locator word followed by its number, letter or quoted name ("Sect. 4.2", "Table 3", "App. B",
+# 'Sect. "Setup"'), the abstract, or a named section inside a flag ("[src: Conclusions]"). A bare word does not
+# count: "figure of merit" or "summary statistics" is not a place (plan of 2026-10-23, step 4.3).
+PLACE = re.compile(r"\b(?:Sects?|Sections?|Tables?|Tabs?|Eqs?|Equations?|Figs?|Figures?|Apps?|Appendix|Appendices"
+                   r"|footnotes?)\.?\s*(?:[\dIVX]|[A-Z](?![a-z])|[\"“])"
+                   r"|\babstract\b"
+                   r"|\[(?:src|sec)[^\]]*\b(?:Conclusions?|Summary|Methods|Results|Introduction|main text)\b", re.I)
 NUMBER = re.compile(r"(?<![\w.#/\-])[−\-–]?\d+(?:[.,]\d+)?")
 NOT_NUMBERS = [
     re.compile(r"arXiv:\S+|doi:\S+", re.I),
+    # Bare arXiv identifiers in a list, before the year rule can eat "1867" of "1401.1867".
+    re.compile(r"\b\d{4}\.\d{5}\b|\b(?:0[7-9]|1\d)(?:0[1-9]|1[0-2])\.\d{4}\b"),
     re.compile(r"\b(?:Sects?|Sections?|Tables?|Tabs?|Eqs?|Equations?|Figs?|Figures?|Apps?|Appendix|Steps?|Chapter|"
-               r"Part|Phase|Run|item|row|column|§)\.?\s*[\dA-Z][\dA-Za-z.\-–,]*(?:\s*(?:and|to|–|-)\s*[\dA-Z][\dA-Za-z.\-–]*)?",
+               r"Part|Phase|Run|item|row|column|§)\b\.?\s*[\dA-Z][\dA-Za-z.\-–,]*(?:\s*(?:and|to|–|-)\s*[\dA-Z][\dA-Za-z.\-–]*)?",
                re.I),
     re.compile(r"\[[^\]]*\]"),
     re.compile(r"\b(?:1[89]|20)\d\d-\d\d(?:-\d\d)?\b"),
@@ -57,7 +67,15 @@ NOT_NUMBERS = [
     re.compile(r"`[^`]*`"),
     re.compile(r"\(\d{1,2}\)"),
     re.compile(r"<!--.*?-->"),
+    # Labels, not values (2026-10-25): "§12" (the word boundary above misses "§"), reference numbers
+    # ("ref. 87"), bare arXiv identifiers in a list ("arXiv:1907.02973, 2007.15994"), the "21" of "21 cm"
+    # and of code names (21cmFAST, 21CMMC), and the file's own numbered bold headings ("**9.3 Validation.**").
+    re.compile(r"§\s*\d[\d.]*"),
+    re.compile(r"\brefs?\.\s*\d+(?:\s*(?:,|and|–|-)\s*\d+)*", re.I),
+    re.compile(r"\b21\s?-?cm\w*", re.I),
+    re.compile(r"^\*\*\d+(?:\.\d+)+(?=\s+[A-Z])"),
 ]
+BLOCK_START, BLOCK_END = "<!-- cosmoskill:block:start", "<!-- cosmoskill:block:end"
 LIST_START = re.compile(r"^(?:[-*+]|\d+[.)])\s+")
 
 
@@ -65,9 +83,15 @@ def statements(text: str):
     """Yield (first line, last line, statement, caption) for the prose, list items and table rows of a file."""
     lines = text.split("\n")
     buffer, start, end, fenced, caption = [], 0, 0, False, ""
-    previous = ""
+    previous, generated = "", False
     for number, raw in enumerate(lines, 1):
         line = raw.strip()
+        # The block written by tools/sync_blocks.py (levels, measured sizes) is generated, not content.
+        if line.startswith(BLOCK_START) or line.startswith(BLOCK_END):
+            generated = line.startswith(BLOCK_START)
+            continue
+        if generated:
+            continue
         if line.startswith("```") or line.startswith("~~~"):
             fenced = not fenced
             continue

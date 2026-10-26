@@ -70,8 +70,7 @@ Table 7].
 ### Step 2. Set the priors on the population
 <!-- key: step-2-set-the-priors-on-the-population -->
 
-GWTC-5.0 priors (U uniform, LU log-uniform) [src: arXiv:2605.27227, Tables
-5–8]:
+GWTC-5.0 priors (U uniform, LU log-uniform) [src: arXiv:2605.27227, Tables 5–8]:
 
 | Model | Parameter | Prior |
 |---|---|---|
@@ -132,7 +131,7 @@ Two parametrisations are in use.
   λ(z) = [1 − S((z − z_λ)/Δz_λ)] λ0 + S((z − z_λ)/Δz_λ) λ∞      (weights stay on the simplex)
   ```
 
-  applied to `α1, α2, m_b, μ1, σ1, μ2, σ2` of a broken power law with two
+  applied (arXiv:2605.20112) to `α1, α2, m_b, μ1, σ1, μ2, σ2` of a broken power law with two
   peaks. Only the primary-mass features evolve, because they are "the most
   robustly identified structure"; `m_min` and `m_max` stay fixed because edge
   parameters "are constrained only by the subset of events close to those
@@ -204,8 +203,8 @@ V.1].
 |---|---|---|---|
 | LVK multi-peak, spectral only (reference for the comparisons below) | 77.1 (+40.8/−26.3) | GWTC-4.0 | arXiv:2605.20112, Sect. III.3, quoting arXiv:2509.04348 |
 | `log m` splines, 10 / 12 / 14 / 16 knots | 64.20 (+18.75/−13.36) / 62.66 (+16.22/−11.24) / 68.40 (+17.57/−12.47) / 50.26 (+16.30/−8.00) | GWTC-4.0 | arXiv:2604.14290, Sect. IV |
-| uniform-knot splines, 10 / 12 | 81.19 (+28.41/−18.39) / 75.93 (+21.13/−15.43) | GWTC-4.0 | same |
-| 18 and 20 `log m` splines | about 180 | GWTC-4.0 | same |
+| uniform-knot splines, 10 / 12 | 81.19 (+28.41/−18.39) / 75.93 (+21.13/−15.43) | GWTC-4.0 | arXiv:2604.14290, Sect. IV |
+| 18 and 20 `log m` splines | about 180 | GWTC-4.0 | arXiv:2604.14290, Sect. IV |
 | 10 M☉ subpopulation only (24 events, median `m1 < 13` M☉), 4 splines / single power law | 58.60 (+26.92/−20.85) / 48.35 (+28.66/−17.16) | GWTC-4.0 | arXiv:2604.14290, Sect. V |
 
 Shifts relative to the LVK multi-peak result collected by Agapito et al.
@@ -261,7 +260,7 @@ On GWTC-4.0 with free `H0` and `Ω_m` (median, 68%; 90% in parentheses)
 | Evolving, tight priors on `μ2`, `σ2` | 65.8 (+20.2/−18.4) | +0.04σ |
 | Evolving, tight priors on all | 66.9 (+20.0/−16.9) | +0.08σ |
 
-The shift is defined as the difference of medians over the quadrature sum of
+The shift (arXiv:2605.20112) is defined as the difference of medians over the quadrature sum of
 the mean 68% half-widths. Fixing the high-mass peak removes it, fixing the
 low-mass peak does not [src: Sect. III.3]. A KL-divergence test between
 `p(m1 | z)` at `z = 0.2` and `z = 1` finds 94% of realisations compatible
@@ -321,8 +320,7 @@ the compression failure mode (splines, above).
   truncating its prior at 7 M☉ [src: Sect. V]. Test: drop the extreme events
   and refit.
 - **Priors on the peaks change the model ranking.** Narrowing the peak
-  priors raises the Bayes factor between two GWTC-4.0 models from
-  `log10 B = 0.30` to 2.3 (`systematics.md`); prior widths differ between
+  priors raises the Bayes factor between two GWTC-4.0 models from `log10 B = 0.30` to 2.3 (arXiv:2509.04348) [src: Sect. IV.1; `systematics.md`]; prior widths differ between
   the two LVK papers read here (Step 2). Test: refit with the other paper's
   priors.
 - **Confirmation bias.** The MDC injected a high H0 deliberately to check

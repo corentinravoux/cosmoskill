@@ -138,7 +138,7 @@ Euclid Q1 is a validation of the cluster workflow, not a cosmological sample. Eu
 | Facility | What is known | Source | Flag |
 |---|---|---|---|
 | Euclid | cluster cosmology expected from DR1; the sibling skill places the DR1 lensing products in mid-2027 and a DR1-Foundation release in November 2026 | `cosmo-weak-lensing` SKILL.md | [sec] |
-| Euclid cluster forecast | figure of merit 291 for (w0, wa) from clusters alone, 802 with Planck (**forecast**, Fisher, 2015) | arXiv:1505.02165 | [src] |
+| Euclid cluster forecast | figure of merit 291 for (w0, wa) from clusters alone, 802 with Planck (**forecast**, Fisher, 2015) | arXiv:1505.02165 | [src: abstract] |
 | Rubin LSST | survey began in June 2026; no cluster catalogue yet | `cosmo-weak-lensing` SKILL.md | [sec] |
 | Roman | launched in August 2026 | `cosmo-weak-lensing` SKILL.md | [sec] |
 | SPT-3G+ | receiver installation planned for early 2029 | arXiv:2608.20236 | [src] |

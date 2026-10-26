@@ -50,12 +50,13 @@ v̄ the dimensionless correlation length and rms velocity of long strings,
 obtained by solving the VOS equations with the exact ΛCDM expansion
 including the temperature dependence of g_*. Deep in radiation domination
 ξ_r ≃ 0.27, v̄_r ≃ 0.66, α ≃ 0.10; with constant g_* the result "agrees very
-well" with Nambu–Goto simulations [src: Sect. V.4].
+well" with Nambu–Goto simulations [src: arXiv:2306.16219, Sect. V.4, "Model
+description", text around Eqs. 43–45].
 
 **Simulation-calibrated distributions (LVK, EPTA, multi-band analyses).**
 
-- Model A (BOS, Blanco-Pillado–Olum–Shlaer): radiation era n = 0.18/[t⁴(ℓ/t
-  + ΓGμ)^(5/2)] for ℓ/t < 0.1, with separate expressions for radiation-era
+- Model A (BOS, Blanco-Pillado–Olum–Shlaer): radiation era
+  n = 0.18/[t⁴(ℓ/t + ΓGμ)^(5/2)] for ℓ/t < 0.1, with separate expressions for radiation-era
   survivors and matter-era loops (Zhang et al. 2026, arXiv:2610.02590)
   [src: Eqs. S-49 to S-51].
 - Model B (LRS, Lorenz–Ringeval–Sakellariadou): power-law loop production
@@ -140,8 +141,9 @@ equality; at ground-based frequencies by loops formed in the radiation era
 - **LVK bursts.** Matched filter with the power-law waveforms, coincidence
   in at least two detectors, ranking by a likelihood ratio; 273.5 days of
   O3 coincident data; background from 300 time shifts (225 yr); loudest-
-  event threshold log₁₀ Λ ≃ 15.0–15.1; efficiencies from injections [src:
-  Sect. III]. The burst limits are weaker than the stochastic ones except
+  event threshold log₁₀ Λ ≃ 15.0 (cusps), 15.1 (kinks) and 15.1 (kink–kink
+  collisions); efficiencies from injections [src: arXiv:2101.12248, Sect.
+  III]. The burst limits are weaker than the stochastic ones except
   for model C-1 with N_k > 70 [src: Sect. V].
 - **PTA.** NANOGrav and EPTA fit the template with per-pulsar noise; EPTA
   uses its hierarchical likelihood on 25 pulsars of DR2new [src:

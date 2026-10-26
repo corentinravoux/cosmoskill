@@ -24,7 +24,7 @@ likelihoods are in `cosmo-statistics-inference`.
 | PyBird-JAX | one-loop EFTofLSS P_ℓ(k) | 1.2 ms per evaluation on CPU, 0.2 ms on GPU; 3–4 orders of magnitude faster than PyBird; validated on large-volume simulations and BOSS, including cosmologies outside the training set | — | arXiv:2507.20990 | [src: abstract] |
 | SPHEREx P_ℓ emulator | EFT multi-tracer multipoles | median Δχ² = 0.069; 1D best-fit shift 0.078σ; error-bar change 0.82%; 900 times faster than the SPHEREx pipeline | realistic parameter range | arXiv:2603.16003 | [src: abstract] |
 | CMBolic | C_ℓ^φφ (symbolic) | mean absolute fractional error 0.27% (ΛCDM), 0.32% (with Σm_ν, w0, wa) for 2 ≤ ℓ ≤ 5500; ACT DR6 + Planck lensing run from 2 weeks to under 3 minutes | — | arXiv:2606.07745 | [src: abstract] |
-| Coyote Universe | non-linear matter P(k) | the required (one per cent) accuracy from 37 models over a CMB-set prior range (wCDM) | — | arXiv:0902.0429 | [src] |
+| Coyote Universe | non-linear matter P(k) | the required (one per cent) accuracy from 37 models over a CMB-set prior range (wCDM) | — | arXiv:0902.0429 | [src: abstract] |
 
 ## 2. Neural summaries and field-level networks
 <!-- key: neural-summaries-and-field-level-networks -->
@@ -36,8 +36,8 @@ method, and the cosmological values belong to `cosmo-weak-lensing` and
 
 | Setting | Gain stated | Data | Citation | Flag |
 |---|---|---|---|---|
-| CNN on noiseless convergence maps, 96 cosmologies, 1 arcmin smoothing | Ω_m–σ8 contour area ≈ 5 times smaller than the power spectrum, ≈ 4 times smaller than peaks | simulations | Gupta et al. 2018, arXiv:1802.01212 | [src] |
-| Loss-function test on a differentiable log-normal LSST-Y10 simulator, HMC ground truth | VMIM summaries reach 100% of the full-field Ω_c–σ8 figure of merit; MSE summaries 81% | simulations | Lanzieri et al. 2024, arXiv:2407.10877 | [src] |
+| CNN on noiseless convergence maps, 96 cosmologies, 1 arcmin smoothing | Ω_m–σ8 contour area ≈ 5 times smaller than the power spectrum, ≈ 4 times smaller than peaks | simulations | Gupta et al. 2018, arXiv:1802.01212 | [src: abstract] |
+| Loss-function test on a differentiable log-normal LSST-Y10 simulator, HMC ground truth | VMIM summaries reach 100% of the full-field Ω_c–σ8 figure of merit; MSE summaries 81% | simulations | Lanzieri et al. 2024, arXiv:2407.10877 | [src: abstract] |
 | IMNN on Gaussian and log-normal fields | saturates the analytically known field information; SBI recovers the field-level posterior nearly losslessly | simulations | Makinen et al. 2021, arXiv:2107.07405 | [src] |
 | CNN on CAMELS total-mass maps, tested on the other sub-grid model | Ω_m to ±4%, σ8 to ±2.5% | simulations, (25 h⁻¹Mpc)² maps | arXiv:2109.10360 | [src: abstract] |
 | KiDS-1000 GCNN versus spherical power spectrum, GPABC | S8 = 0.79 ± 0.05 against 0.78 ± 0.06; 16% improvement; baryons widen S8 by about 10%; almost one million CosmoGrid mocks | data | Fluri et al. 2022, arXiv:2201.07771 | [src: abstract] |
@@ -47,7 +47,7 @@ method, and the cosmological values belong to `cosmo-weak-lensing` and
 | KiDS-1000 GCNN on the mean of 400 CosmoGrid benchmark mocks | network constraints on average only ~10% tighter than the power spectrum, against ~30% in an earlier higher-resolution study; attributed to the scale cut (ℓ_max ~ 1500) and the conservative GPABC scale h = 0.4 | simulations | arXiv:2201.07771 | [src: Sect. V] |
 | HSC Y1 CNN, eight extra architectures (n_block 5–15, n_ch 32–96) | statistical error on S8 0.0349–0.0355 and on Ω_m 0.0756–0.0782 across architectures at 4′ smoothing; 2′ smoothing gives 0.0338 and 0.0696 | mock catalogues | arXiv:2301.01354 | [src: Sect. VII.1, Table 6] |
 | DES Y3 hybrid statistics (VMIM), wCDM | S8 = 0.808 ± 0.017, Ω_m = 0.325 ± 0.024, w < −0.766; FoM(Ω_m, S8, w) = 29 444 against 18 430 for the MSE C_ℓ × CNN and 10 344 for ξ± reanalysed with the same priors | data | Williamson et al. 2026, arXiv:2606.11309 | [src: Table 3] |
-| KiDS-Legacy-like mocks, multi-fidelity field-level SBI | calibrated posteriors from 60 N-body simulations; at least an order of magnitude lower simulation cost | simulations | arXiv:2606.23346 | [src] |
+| KiDS-Legacy-like mocks, multi-fidelity field-level SBI | calibrated posteriors from 60 N-body simulations; at least an order of magnitude lower simulation cost | simulations | arXiv:2606.23346 | [src: abstract] |
 | Same, high-fidelity-only CNN | beyond-two-point information extracted after ~200 Gower Street simulations, FoM 2–3 times the bandpower-only model; acceptable calibration for N ≥ 100 | simulations | arXiv:2606.23346 | [src: Sect. 4.2.1] |
 | VMIM against MSE and MAE summaries | FoM(Ω_c, σ8) × 1.24 and × 1.1; w0 shifted to −1.13 (MSE), −1.16 (MAE), −0.73 (GNLL) against −1.01 for the HMC truth | simulations | arXiv:2407.10877 | [src: Sect. 6.3, Tables 4–5] |
 
@@ -58,9 +58,9 @@ Method-level outcomes; the cosmological values belong to the probe skills.
 
 | Analysis | Estimator | Outcome | Citation | Flag |
 |---|---|---|---|---|
-| KiDS-1000 cosmic shear pseudo-C_ℓ | NLE (DELFI, six-MAF ensemble), 18 000 realisations | S8 = 0.731 ± 0.033; PTE 0.42; neglecting variable depth and PSF anisotropy overestimates S8 by ~5% | von Wietersheim-Kramsta et al. 2024, arXiv:2404.15402 | [src] |
+| KiDS-1000 cosmic shear pseudo-C_ℓ | NLE (DELFI, six-MAF ensemble), 18 000 realisations | S8 = 0.731 ± 0.033; PTE 0.42; neglecting variable depth and PSF anisotropy overestimates S8 by ~5% | von Wietersheim-Kramsta et al. 2024, arXiv:2404.15402 | [src: abstract; ensemble and 18 000: Sect. 5.4] |
 | Same, noiseless mock (truth S8 = 0.756) | NLE against a fixed-covariance Gaussian likelihood | S8 = 0.743 (+0.034/−0.031) against 0.733 (+0.034/−0.024); with noise 0.762 (+0.032/−0.027) against 0.744 (+0.031/−0.022) | arXiv:2404.15402 | [src: Sect. 8] |
-| Stage-IV 3×2pt mock, 50 parameters | marginal NRE | posteriors in excellent agreement with nautilus at two orders of magnitude fewer CPU-hours | arXiv:2609.24946 | [src] |
+| Stage-IV 3×2pt mock, 50 parameters | marginal NRE | posteriors in excellent agreement with nautilus at two orders of magnitude fewer CPU-hours | arXiv:2609.24946 | [src: abstract] |
 | DES 5-year SN Ia population (dust and intrinsic scatter) | NPE for posteriors, NRE for model comparison, seven models | log₁₀ Bayes factor +1.9 against two high-z SN Ia populations; ΔR_V = 0.8; robust to abs(Δw) < 0.10 | Popovic et al. 2026, arXiv:2607.28725 | [src: abstract] |
 | SO-SAT-like B modes, NILC + cross-spectra compression | NPE with flows | r = (1.09 ± 0.27) × 10⁻² for input 0.01, f_sky = 0.21, on the PySM d12 foreground model while trained on a semi-analytic one | Duivenvoorden et al. 2025, arXiv:2512.16869 | [src: abstract] |
 | 100 simulated galaxy-scale strong lenses | NRE with post hoc population-level coverage calibration | median fractional uncertainty 22.8% on w and 2.9% on Ω_m (ΛCDM truth) | Jarugula et al. 2026, arXiv:2608.23534 | [src: abstract] |
@@ -71,8 +71,8 @@ Method-level outcomes; the cosmological values belong to the probe skills.
 | Model | Target | Fidelity stated | Citation | Flag |
 |---|---|---|---|---|
 | GAN, 2D N-body slices | cosmic web, 500 Mpc boxes | P(k) within 1–2% for 0.06 < k < 0.4 | arXiv:1801.09070 | [src: abstract] |
-| Conditional flow matching | lensing convergence maps | < 1% basic, < 5% higher-order statistics (GAN benchmark < 10%, < 20%) | arXiv:2605.23114 | [src] |
-| Cosmo-FOLD latent diffusion | TNG300-2 dark matter and gas temperature | P(k) within 10% for k ≤ 5 h Mpc⁻¹; bispectrum reproduced with positional encodings | arXiv:2601.14377 | [src] |
+| Conditional flow matching | lensing convergence maps | < 1% basic, < 5% higher-order statistics (GAN benchmark < 10%, < 20%) | arXiv:2605.23114 | [src: abstract] |
+| Cosmo-FOLD latent diffusion | TNG300-2 dark matter and gas temperature | P(k) within 10% for k ≤ 5 h Mpc⁻¹; bispectrum reproduced with positional encodings | arXiv:2601.14377 | [src: abstract] |
 | Stochastic interpolants and GLOW, field-level initial conditions | posterior of a 32³ field | mean-field P(k) within 10%; variance-field P(k) off by up to ~30% | arXiv:2606.10023 | [src: Sect. 5.2] |
 
 ## 5. Challenge outcomes and classifier performance
@@ -113,12 +113,12 @@ formation model outside its training range (arXiv:2609.23982) [src].
 
 **Emulator accuracy on the matter power spectrum.**
 - 2009: one-per-cent accuracy from 37 wCDM models (Coyote,
-  arXiv:0902.0429) [src].
+  arXiv:0902.0429) [src: abstract].
 - 2021: 0.4% (99th percentile) for a neural emulator of Boltzmann and
   HMcode output, k ≤ 10 Mpc⁻¹, z ≤ 5, from 1.8 × 10⁵ training spectra
   (CosmoPower, arXiv:2106.03846) [src: Sect. 3.2].
 - 2023: a symbolic expression reaches 0.2% RMS on the linear P(k)
-  (arXiv:2311.15865) [src].
+  (arXiv:2311.15865) [src: abstract].
 - 2025: neural multi-fidelity emulation cuts the mean error by more than
   five relative to the earlier Gaussian process on the same suite
   (arXiv:2507.07184) [src].
@@ -129,27 +129,27 @@ multipoles and field-level outputs) more than the headline per cent.
 
 **Neural summaries of weak-lensing maps.**
 - 2018: ≈ 5 times smaller contour than the power spectrum, noiseless
-  simulations (arXiv:1802.01212) [src].
-- 2022: 16% on S8 on KiDS-1000 data (arXiv:2201.07771) [src].
-- 2023: 5–24% on S8 and 2.5–3 times on Ω_m on HSC Y1 (arXiv:2301.01354)
-  [src].
+  simulations (arXiv:1802.01212) [src: abstract].
+- 2022: 16% on S8 on KiDS-1000 data (arXiv:2201.07771) [src: abstract].
+- 2023: 5–24% on S8 and 2.5–3.0 times on Ω_m on HSC Y1 (arXiv:2301.01354)
+  [src: abstract].
 - 2024: more than a factor of two on (Ω_DE, w) on DES Y3
   (arXiv:2403.02314) [src].
 - 2024: the loss function caps the gain (MSE 81% of the full-field figure
-  of merit, arXiv:2407.10877) [src].
+  of merit, arXiv:2407.10877) [src: abstract].
 - 2026: on the same DES Y3 lensing data and maps, a VMIM hybrid
   compression raises FoM(Ω_m, S8, w) by 60% over the MSE C_ℓ × CNN and by
   almost three over the two-point analysis (arXiv:2606.11309)
   [src: abstract, Table 3].
 - 2025: 2–3 times the Ω_m–S8 figure of merit for DES Y3 lensing +
   clustering maps (**forecast**, arXiv:2511.04681) [src].
-The survey-data gains on the S8 error (16%; 5–24%) are much smaller than
-the noiseless-simulation factor of ≈ 5 in contour area; the quantities
-differ (error against area), so the comparison is qualitative [der].
+The survey-data gains on the S8 error are much smaller than the
+noiseless-simulation factor in contour area; the quantities differ (error
+against area), so the comparison is qualitative [der].
 
 **Simulation budgets for neural density estimation.**
 - 2019: O(10³) simulations or fewer for typical problems
-  (arXiv:1903.00007) [src].
+  (arXiv:1903.00007) [src: abstract].
 - 2024: 18 000 realisations for KiDS-SBI, with the loss converged after
   5000 (arXiv:2404.15402) [src: Sect. 5.4].
 - 2024: over 3000 DES Y3 mocks from 791 full-sky runs (arXiv:2403.02314)
@@ -157,16 +157,19 @@ differ (error against area), so the comparison is qualitative [der].
 - 2025: over one million map-level mocks for the DES Y3 lensing +
   clustering design (arXiv:2511.04681) [src].
 - 2026: 60 high-fidelity N-body runs with multi-fidelity training for a
-  KiDS-Legacy-like field-level analysis (arXiv:2606.23346) [src].
+  KiDS-Legacy-like field-level analysis (arXiv:2606.23346) [src: abstract].
 The sibling `cosmo-statistics-inference` records why the 2019 figure does
 not mean fewer simulations than a covariance matrix.
 
 **Transient classification.**
 - 2018–2019: PLAsTiCC, best flat-weight log-loss 0.468, SN Ia AUC 0.957
   (arXiv:1907.04690) [src: abstract].
-- 2019–2021: RNN and CNN classifiers above 96–99% binary accuracy in
-  distribution (arXiv:1901.06384, arXiv:2106.04370) [src], with
-  degraded out-of-distribution performance.
+- 2019: the SuperNNova RNN reaches SN Ia versus non-Ia accuracies greater
+  than 96.92 ± 0.09% without redshift and up to 99.55 ± 0.06% with it, in
+  distribution (arXiv:1901.06384) [src: abstract].
+- 2021: the SCONE CNN reaches 99.73 ± 0.26% SN Ia test accuracy without
+  redshift in distribution, and its out-of-distribution performance does
+  not match that (arXiv:2106.04370) [src: abstract].
 - 2025: real-time hierarchical classification from 1 day of photometry
   after first detection plus host context, on ELAsTiCC (arXiv:2501.01496)
   [src].
@@ -178,7 +181,7 @@ not mean fewer simulations than a covariance matrix.
   arXiv:2304.06084) [src]; halo and galaxy positions and velocities do
   (arXiv:2209.06843, arXiv:2302.14101) [src].
 - 2026: Lyα P1D shows a ~10% σ8 bias across models (arXiv:2603.13011)
-  [src]; a GNN fails on CAMELS-CROCODILE outside its training range
+  [src: abstract]; a GNN fails on CAMELS-CROCODILE outside its training range
   (arXiv:2609.23982) [src].
 
 ## 8. Not verified

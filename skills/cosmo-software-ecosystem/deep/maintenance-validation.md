@@ -102,9 +102,10 @@ of each model being discussed separately (`physics-and-methods.md#theory-facades
   on the largest scales and explained that "their amplitude approaches
   zero and then the relative difference is artificially boosted"
   (Bellini et al. 2017, arXiv:1709.09135) [src: Sect. IV.1].
-- Above ℓ = 3000, where foregrounds dominate temperature, CAMB plots only
-  |ΔEE|/EE [src: arXiv:2607.14854, Fig. 3 caption].
-- A tolerance in fractional units says nothing about inference. CAMB adds
+- Above ℓ = 3000, where foregrounds dominate temperature, CAMB plots
+  only |ΔEE|/EE [src: arXiv:2607.14854, Fig. 3 caption].
+- A tolerance in fractional units says nothing about inference. CAMB
+  (arXiv:2607.14854) adds
   a likelihood-level proxy: a Gaussian Δχ² between default and boosted
   runs for an SO-like experiment over 2 ≤ ℓ ≤ min(4000, ℓ_max), excluding
   number-count, tensor-only and matter-only files [src: Sect. IX]. Its
@@ -135,7 +136,8 @@ of each model being discussed separately (`physics-and-methods.md#theory-facades
 - Test the joins between approximations. CAMB's grid includes near-flat
   models down to |Ω_K| ∼ 10⁻⁶ on both sides of zero, checking that the
   curved calculation varies continuously into the flat one with no step at
-  the switch [src: Sect. IX].
+  the switch (arXiv:2607.14854) [src: Sect. IX].
+
 - Choose parameter values that make differences visible. The 2017
   comparison used covariant-Galileon models "chosen to be bad fits to
   current CMB and expansion history data", and an f(R) value B₀ = 1,
@@ -326,8 +328,8 @@ sufficient, and the physical review stays with the developer.
 Pinning keeps a published result reproducible; moving gains accuracy.
 For CAMB the gap is quantified: v1.6.6 at its historical lensing cutoff
 reaches 1.5 % in TT by ℓ = 3000 against the boosted reference
-(`results.md#camb-v2-default-accuracy-arxiv-2607-14854`). A facade may
-pin the old behaviour for you: pyccl 3.3.6 sets CAMB `AccuracyTarget = 0`
+(arXiv:2607.14854, Sect. IX; `results.md#camb-v2-default-accuracy-arxiv-2607-14854`).
+A facade may pin the old behaviour for you: pyccl 3.3.6 sets CAMB `AccuracyTarget = 0`
 and `lens_potential_accuracy = 0` (`deep/theory-facades.md`, Step 2).
 Record which one was used (Step 5).
 

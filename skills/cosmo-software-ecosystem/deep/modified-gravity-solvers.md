@@ -60,8 +60,9 @@ Definitions used below.
   −4πG a² Q Σ_i ρ_iΔ_i and k²(Ψ − RΦ) = −12πG a² Q Σ_i ρ_i(1+w_i)σ_i, with
   D ≡ Q(1+R)/2, which avoids the Q–R degeneracy and is what lensing and ISW
   probe; ISiTGR implements both pairs. Σ = D, like Σ = μ(1+γ)/2, holds only
-  for zero anisotropic shear [src: Sect. IV.3]. Note that ISiTGR's Φ is
-  MGCAMB's Ψ in the Poisson equation: check each paper's Eq. before
+  for zero anisotropic shear [src: Sect. IV.3].
+- **Potentials swap names between codes.** ISiTGR's Φ is
+  MGCAMB's Ψ in the Poisson equation: check each paper's equations before
   mapping parameters [der from the two equations as written].
 - **Hybrid binning** (ISiTGR): bins in redshift, and inside each bin a
   function of scale X_1 e^(−k/k_c) + X_2 (1 − e^(−k/k_c)) (Eqs. 32–33),
@@ -255,8 +256,9 @@ than ΛCDM, the approximate ones not significantly more
   the gain is orders of magnitude, and the authors state that without the
   approximation such models "cannot be sensibly studied" [src].
 - **Hard limit.** k ∼ 10⁻³ h Mpc⁻¹ is the largest scale at which the QSA
-  can work in the best case, set by the cosmological horizon [src:
-  Sect. 5.3].
+  can work in the best case, set by the cosmological horizon
+  (arXiv:1909.01828) [src: Sect. 5.3].
+
 - **Sound speed.** As c_s decreases the speed gain disappears and the
   1 %-accurate range shrinks; for c_s² ≲ O(10⁻⁴) no linear scale has
   better than 1 % accuracy in QSA [src: Sect. 5.3]. Sawicki & Bellini

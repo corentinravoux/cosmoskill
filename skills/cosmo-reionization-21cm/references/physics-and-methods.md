@@ -43,9 +43,9 @@ secondary source) or [der] (derived here, derivation stated).
   arXiv:2607.26373]. (iv) tanh plus a transient high-redshift "flash" [src: Upadhyay et al.
   2026, arXiv:2609.24989].
 - τ maps to a midpoint only inside a parametrisation: τ = 0.059 ± 0.006 gives z_re = 8.14 ± 0.61
-  for tanh [src: Pagano et al. 2019, arXiv:1908.09856]; the Planck 2016 models give mean
+  for tanh [src: Pagano et al. 2019, arXiv:1908.09856, abstract]; the Planck 2016 models give mean
   redshifts between 7.8 and 8.8 and an ionised fraction below 10% above z ~ 10 [src:
-  arXiv:1605.03507].
+  arXiv:1605.03507, abstract].
 - Likelihoods for the low-ℓ EE data are not Gaussian and are built from simulations: the
   simulation-based likelihood (SimBaL) of the Planck legacy papers, the maximum-entropy
   "momento" likelihood and a density-estimation scheme give consistent τ on SRoll2 maps [src: de
@@ -72,9 +72,9 @@ secondary source) or [der] (derived here, derivation stated).
   are in section 1.4 of `results.md`.
 - Patchy end. A trough ~110 h⁻¹Mpc long with τ_eff ≳ 7 reaching down to z ≃ 5.5 (ULAS
   J0148+0600) showed that the sightline scatter exceeds a uniform background [src: Becker et al.
-  2015, arXiv:1407.4850]. Radiative-transfer models in which reionisation ends at z = 5.2–5.3
+  2015, arXiv:1407.4850, abstract]. Radiative-transfer models in which reionisation ends at z = 5.2–5.3
   with neutral islands reproduce the scatter and such troughs, with 50% of the volume ionised
-  at z = 7 [src: Kulkarni et al. 2019, arXiv:1809.06374; Keating et al. 2020, arXiv:1905.12640].
+  at z = 7 [src: Kulkarni et al. 2019, arXiv:1809.06374, abstract; Keating et al. 2020, arXiv:1905.12640, abstract].
 - How the XQR-30 opacity measurement is made: 67 sightlines with S/N > 10 per ≤ 15 km/s pixel;
   τ_eff from the mean of F/F_cont over fixed 50 h⁻¹ cMpc intervals; rest wavelengths above 1185
   Å excluded as proximity zone; continuum predicted from the red side by a PCA; segments with
@@ -88,19 +88,19 @@ secondary source) or [der] (derived here, derivation stated).
 - Logic of the dark-pixel fraction: "Any spectral region showing transmission must be highly
   ionized, while dark regions could be ionized or neutral", so the dark fraction is a nearly
   model-independent upper limit on the neutral volume fraction, "modulo choices in binning scale
-  and dark pixel definition" [src: Davies et al. 2025, arXiv:2510.25829]. The 2025 analysis bins
+  and dark pixel definition" [src: Davies et al. 2025, arXiv:2510.25829, abstract]. The 2025 analysis bins
   at 3.3 comoving Mpc and uses the negative-pixel method on Lyα, Lyβ and Lyγ [src:
   arXiv:2510.25829].
 - Lyβ has a lower optical depth than Lyα and is therefore more sensitive to residual neutral gas
   [src: Zhu et al. 2022, arXiv:2205.04569].
 - Dark gaps: contiguous regions where the transmission averaged over 1 h⁻¹Mpc bins falls below
   5%; the statistic F₃₀ is the fraction of sightlines with a gap longer than 30 h⁻¹Mpc [src: Zhu
-  et al. 2021, arXiv:2109.06295].
+  et al. 2021, arXiv:2109.06295, abstract].
 - Effective optical depth τ_eff = −ln⟨F⟩ over a fixed path. Its sightline-to-sightline scatter
   at z > 5.3 is "too strong to be caused by fluctuations in the density field alone" [src:
-  Davies et al. 2023, arXiv:2312.08464]. Two model families fit it: residual neutral islands
+  Davies et al. 2023, arXiv:2312.08464, abstract]. Two model families fit it: residual neutral islands
   from a late end of reionisation, and a fluctuating ionising background with a short, spatially
-  varying mean free path [src: arXiv:2312.08464; Zhu et al. 2021, arXiv:2109.06295].
+  varying mean free path [src: arXiv:2312.08464; Zhu et al. 2021, arXiv:2109.06295, abstract].
 - Inference is by forward modelling. Gaikwad et al. post-process the Sherwood simulations with
   the EX-CITE code to generate photo-ionisation-rate fluctuation models and fit the τ_eff
   distribution for the mean free path, the photo-ionisation rate and the neutral fraction [src:
@@ -136,9 +136,9 @@ secondary source) or [der] (derived here, derivation stated).
   covariance-based reconstruction of Lyα and N V from C IV, Si IV and C III] [src: Greig et al.
   2024, arXiv:2404.12585], or a PCA model trained on 15,559 SDSS/BOSS quasars, for which six
   parameters perform best and machine-learning alternatives give no gain [src: Hennawi et al.
-  2024, arXiv:2406.12070]. The PCA approach started with 12,764 BOSS quasars at z ~ 2–2.5, 10
+  2024, arXiv:2406.12070, abstract]. The PCA approach started with 12,764 BOSS quasars at z ~ 2–2.5, 10
   red-side (1280–2900 Å) and 6 blue-side (1180–1280 Å) components and a projection matrix
-  between them [src: Davies et al. 2018, arXiv:1801.07679].
+  between them [src: Davies et al. 2018, arXiv:1801.07679, abstract].
 - What the XQR-30 damping-wing analysis did: the intrinsic Lyα + N V profile is drawn from a
   covariance matrix of emission-line parameters (three Gaussian components for the blend)
   conditioned on the red side; the wing is fitted on 1218–1230 Å against synthetic wings from
@@ -155,12 +155,12 @@ secondary source) or [der] (derived here, derivation stated).
 <!-- key: lyalpha-emission-from-galaxies -->
 
 - Observable: the fraction X_Lyα of UV-selected galaxies with Lyα equivalent width above a
-  threshold (25 Å or 10 Å in arXiv:2609.40363), or the Lyα luminosity function. Both fall when
+  threshold (25 Å or 10 Å in arXiv:2609.40363, abstract), or the Lyα luminosity function. Both fall when
   the surrounding IGM is neutral.
 - Origin. Lyα luminosity functions at z = 5.7 and 6.5 compared as a reionisation test, with
-  no strong suppression found [src: Malhotra & Rhoads 2004, arXiv:astro-ph/0407408]. The "Lyα
+  no strong suppression found [src: Malhotra & Rhoads 2004, arXiv:astro-ph/0407408, abstract]. The "Lyα
   fraction" among continuum-selected dropouts, calibrated over 3 < z < 6 on more than 600
-  spectra, with a tentative drop at z ~ 7 [src: Stark et al. 2010, arXiv:1003.5244]. The
+  spectra, with a tentative drop at z ~ 7 [src: Stark et al. 2010, arXiv:1003.5244, abstract]. The
   Bayesian framework in use today: reionisation simulations, empirical line profiles (velocity
   offset against UV luminosity) and the full equivalent-width distribution, upper limits
   included [src: Mason et al. 2018, arXiv:1709.05356].
@@ -186,7 +186,7 @@ secondary source) or [der] (derived here, derivation stated).
   subtracting an assumed late-time template [src: Chaubal et al. 2026, arXiv:2601.20551;
   Beringue et al. 2025, arXiv:2506.06274].
 - Duration is defined differently in each paper: Δ⁵⁰z from x_e = 25% to 75% and Δ⁹⁰z from 5% to
-  95% in SPT-3G D1 [src: arXiv:2601.20551].
+  95% in SPT-3G D1 [src: arXiv:2601.20551, abstract].
 - The kSZ trispectrum (a quadratic estimator on two temperature maps that reconstructs the
   large-scale velocity modulation of the small-scale kSZ) is contaminated by CMB lensing and
   foregrounds, which must be simulated and subtracted [src: Raghunathan et al. 2024,
@@ -204,12 +204,12 @@ secondary source) or [der] (derived here, derivation stated).
   1999, arXiv:astro-ph/9809058 [src]. The clumping factor is C = ⟨ρ_b²⟩/⟨ρ_b⟩² over the
   recombining gas; photo-heating lowers it strongly, so that the z = 6 galaxy population can
   keep the IGM ionised if f_esc > 0.2 [src: Pawlik, Schaye & van Scherpenzeel 2009,
-  arXiv:0807.3963]. The pre-JWST reference budget matched τ = 0.066 ± 0.012 with galaxies and a
-  history confined to 6 ≲ z ≲ 10 [src: Robertson et al. 2015, arXiv:1502.02024].
+  arXiv:0807.3963, abstract]. The pre-JWST reference budget matched τ = 0.066 ± 0.012 with galaxies and a
+  history confined to 6 ≲ z ≲ 10 [src: Robertson et al. 2015, arXiv:1502.02024, abstract].
 - JWST values of ξ_ion with low-redshift f_esc calibrations overproduce photons [src: Muñoz et
   al. 2024, arXiv:2404.07250]; later mass-complete samples lower ξ_ion [src: Simmonds et al.
   2024, arXiv:2409.01286]; spectral fitting of f_esc object by object gives an end at z ~ 5.8
-  [src: Giovinazzo et al. 2026, arXiv:2607.22834].
+  [src: Giovinazzo et al. 2026, arXiv:2607.22834, abstract].
 
 ## 2. The 21 cm signal
 <!-- key: the-21-cm-signal -->
@@ -217,12 +217,12 @@ secondary source) or [der] (derived here, derivation stated).
 Equations in this section are quoted from the review of Liu & Shaw 2019, arXiv:1907.08211,
 section 2.1 [sec for the numbers].
 
-- Spin temperature: n₁/n₀ = 3 exp(−h ν₂₁ / k_B T_s), with ν₂₁ ≈ 1420.406 MHz.
+- Spin temperature: n₁/n₀ = 3 exp(−h ν₂₁ / k_B T_s), with ν₂₁ ≈ 1420.406 MHz [sec: arXiv:1907.08211, Sect. II.1].
 - Brightness temperature against the CMB: T_b = [1 − exp(−τ_HI)] (T_s − T_γ)/(1 + z), with 1 + z
   = ν₂₁/ν.
 - Optical depth: τ_HI = (3 ħ c³ A₁₀ / 16 k_B ν₂₁²) x_HI n_H / [(1 + z)(dv_∥/dr_∥) T_s], with A₁₀
   = 2.85 × 10⁻¹⁵ s⁻¹. It is ≲ 4% everywhere of interest, so T_b ∝ x_HI n_H (1 − T_γ/T_s) / [(1 +
-  z)² (dv_∥/dr_∥)].
+  z)² (dv_∥/dr_∥)] [sec: arXiv:1907.08211, Sect. II.1].
 - As Pritchard & Loeb 2012, arXiv:1109.6012, write them [src: Sect. 2.1, Eqs. 3–8]: n₁/n₀ =
   (g₁/g₀) exp(−T⋆/T_S), g₁/g₀ = 3, T⋆ = 0.068 K; τ_ν = ∫ ds [1 − exp(−E₁₀/k_B T_S)] σ₀ φ(ν) n₀,
   n₀ = n_H/4, σ₀ ≡ 3c²A₁₀/8πν²; δT_b = (T_S − T_R)(1 − e^(−τ_ν))/(1 + z) ≈ 27 x_HI (1 + δ_b)
@@ -243,9 +243,9 @@ section 2.1 [sec for the numbers].
   [src]. Reviews: Furlanetto, Oh & Briggs 2006, arXiv:astro-ph/0608032; arXiv:1109.6012.
 - Global signal, origin. A sharp step in the sky spectrum at 70–240 MHz for reionisation at 5
   < z < 20, detectable in principle with a small telescope because the signal fills the sky:
-  Shaver et al. 1999, arXiv:astro-ph/9901320 [src]. The first observational result was an
+  Shaver et al. 1999, arXiv:astro-ph/9901320, abstract [src]. The first observational result was an
   EDGES all-sky spectrum over 100–200 MHz (6 < z < 13) excluding a reionisation faster than
-  Δz < 0.06 at 95% [src: Bowman & Rogers 2010, arXiv:1209.1117].
+  Δz < 0.06 at 95% [src: Bowman & Rogers 2010, arXiv:1209.1117, abstract].
 - Two observables: the global (sky-averaged) spectrum T̄_b(ν), and the fluctuations, summarised
   by the dimensionless power spectrum Δ²₂₁(k) = k³ P(k)/2π² in mK².
 - Frequency coverage: 47–234 MHz corresponds to z = 5.1–29.3 [src: HERA Collaboration 2025,
@@ -285,7 +285,7 @@ section 2.1 [sec for the numbers].
   with galaxies constrains Ω_HI b_HI r [src: Masui et al. 2012, arXiv:1208.0331], and an
   auto-power constrains Ω_HI b_HI [src: MeerKLASS Collaboration 2026, arXiv:2610.12158]. CHIME
   quotes A_HI ≡ 10³ Ω_HI (b_HI + ⟨fμ²⟩) with ⟨fμ²⟩ = 0.552 for stacking [src: CHIME
-  Collaboration 2022, arXiv:2202.01242] and A²_HI ≡ 10⁶ Ω²_HI (b²_HI + ⟨fμ²⟩)² for the
+  Collaboration 2022, arXiv:2202.01242, abstract] and A²_HI ≡ 10⁶ Ω²_HI (b²_HI + ⟨fμ²⟩)² for the
   auto-spectrum [src: CHIME Collaboration 2026, arXiv:2603.25680]. These are different
   combinations; they are not interchangeable.
 - Two observing modes. Single-dish (each dish's auto-correlation, scanned over a wide area)
@@ -362,7 +362,7 @@ section 2.1 [sec for the numbers].
   and Zaldarriaga, Furlanetto & Hernquist 2004, arXiv:astro-ph/0311514 [src]. The wedge first
   appeared in simulations of bright-source subtraction errors, at k_⊥ ≳ 0.05 Mpc⁻¹, with
   requirements of 0.1 arcsec in source position and 0.05% in gain amplitude [src: Datta,
-  Bowman & Carilli 2010, arXiv:1005.4071]; it was explained as mode mixing, with the forecast
+  Bowman & Carilli 2010, arXiv:1005.4071, abstract]; it was explained as mode mixing, with the forecast
   of an "EoR window", by Morales et al. 2012, arXiv:1202.3830 [src]. Per-baseline delay
   transform, confining smooth foregrounds within the maximum geometric delay and relying on
   "spectrally- and spatially-smooth instrumental responses": Parsons et al. 2012,
@@ -395,7 +395,7 @@ section 2.1 [sec for the numbers].
   and dish-wise subsets in MeerKLASS [src: arXiv:2610.12158].
 - Validation practice read in the papers: end-to-end pipeline simulations and statistical tests
   (HERA, arXiv:2210.04912), signal injection (LOFAR, arXiv:2503.05576), 312 difference-map null
-  tests (COMAP, arXiv:2406.07511), null and robustness tests on subset cross-spectra (MeerKLASS,
+  tests (COMAP, arXiv:2406.07511, abstract), null and robustness tests on subset cross-spectra (MeerKLASS,
   arXiv:2610.12158).
 - Global-signal claims are assessed by Bayesian evidence between data models with and without a
   signal and with and without systematic terms [src: Sims & Pober 2019, arXiv:1910.03165], and
@@ -460,14 +460,15 @@ The sibling `cosmo-simulations-mocks` covers the simulation suites themselves;
 ## 7. Conventions and traps specific to the domain
 <!-- key: conventions-and-traps-specific-to-the-domain -->
 
-- Δ² is quoted either in mK² (HERA: 457 mK²) or as a squared temperature (LOFAR: (68.7 mK)²).
+- Δ² is quoted either in mK² (HERA: 457 mK², arXiv:2210.04912, abstract) or as a squared
+  temperature (LOFAR: (68.7 mK)², arXiv:2503.05576, abstract).
   Square or take the root before comparing.
 - Wavenumbers are in h Mpc⁻¹ for 21 cm experiments and in Mpc⁻¹ for COMAP and for CHIME's k_∥
   cut.
 - Neutral fractions are volume-weighted in most quasar work and mass-weighted in some galaxy
   work (for example arXiv:2609.40363); the two differ during patchy reionisation.
 - Mean free paths are in proper Mpc; dark-gap lengths and bin sizes in comoving h⁻¹Mpc.
-- "Duration of reionisation" has at least three definitions (section 1.5).
+- "Duration of reionisation" has at least three definitions (Sect. 1.5).
 - "Detection" in intensity mapping can mean a cross-correlation, a stack, or an auto-spectrum;
   these constrain different parameter combinations.
 

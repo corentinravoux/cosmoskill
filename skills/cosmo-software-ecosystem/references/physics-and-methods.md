@@ -241,7 +241,8 @@ Estimator definitions (Landy–Szalay, FKP, Yamamoto), windows and fibre-collisi
 
 The picca README states that its tools serve both eBOSS and DESI, that "Picca v4.0 was used in du Mas des Bourboux et al. (2020)", and that model computation and fitting are done with Vega; the older `fitter2` remains for some tasks [src: picca README, checkout].
 LaCE and lym1d differ in training simulations and in parameterisation: LaCE emulates as a function of the linear power spectrum at the redshift of interest, which lets it predict extended models not in the training set (arXiv:2011.15127).
-The Lyα BAO pipeline as a whole is validated on 150 synthetic realisations of DESI DR1 in Cuceu et al. 2024, arXiv:2404.03004.
+The Lyα BAO pipeline as a whole is validated on 150 synthetic realisations of DESI DR1 in Cuceu et al. 2024, arXiv:2404.03004 [src: abstract].
+
 
 Read in the bodies:
 
@@ -313,7 +314,8 @@ Emulators of N-body outputs (non-linear P(k), halo statistics, baryonic suppress
 
 - Which cosmoprimo functions are differentiable beyond the two README examples was not read.
 - The units returned by jax-cosmo and cloelib were not read.
-- The Vega README gives its first reference as a DOI (10.1093/mnras/stad1546, "Cuceu et al. 2022"); its identification with arXiv:2209.12931 rests on author, year and subject and was not checked against the journal record.
+- The Vega README gives its first reference as a DOI (`10.1093/mnras/stad1546`,
+ "Cuceu et al. 2022"); its identification with arXiv:2209.12931 rests on author, year and subject and was not checked against the journal record.
 - The Landy–Szalay paper (Landy & Szalay 1993, "Bias and variance of angular correlation functions", title and DOI confirmed on Crossref) could not be read: Crossref holds no abstract and the ADS page was blocked; it is named here only through the Corrfunc paper, and has no row in `sources.tsv`.
 - DISCO-DJ II (arXiv:2510.05206) has no usable HTML rendering; its body was not read.
 - arXiv:2607.14854 was read in an HTML rendering titled "CAMB 2", an earlier version than the current abstract ("CAMB v2"); section and appendix numbers quoted here (Sect. II–XI, App. B–C) may differ in the current version.

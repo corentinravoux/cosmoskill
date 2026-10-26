@@ -45,8 +45,8 @@ use Ã(k) = ∫ d³x/(2π)³ exp(−ik·x) A(x) (Eq. 36) and write
 
 α from the continuity equation, β from the Euler equation, Ω_m the
 time-dependent matter fraction. With that transform the review defines
-⟨δ(k)δ(k')⟩ = δ_D(k + k') P(k) and ξ(r) = ∫ d³k P(k) e^(ik·r) (Eqs. 116,
-119–120), and states that the other "popular choice" puts the (2π)³ in
+⟨δ(k)δ(k')⟩ = δ_D(k + k') P(k) and ξ(r) = ∫ d³k P(k) e^(ik·r) (Eq. 116;
+Eqs. 119–120), and states that the other "popular choice" puts the (2π)³ in
 ⟨δδ⟩ = (2π)³ δ_D P [src: Sect. 3.2.2]. The review's P is therefore
 (2π)⁻³ times the P of CLASS-PT, velocileptors and Ivanov et al. (L2), and
 its loop integrals ∫ d³q become ∫ d³q/(2π)³ in that convention [der].
@@ -82,9 +82,11 @@ the symmetrised kernels F_n^(s) that a code can test [src: Sect. 2.4.2]:
 Spherically averaged vertices ν_n ≡ n! ∫ dΩ_1/4π … F_n and μ_n (same with
 G_n) (Eqs. 48–49) obey a recursion with ᾱ = 1, β̄ = 1/3 (Eqs. 50–51), and
 are pure numbers, printed as ν_2 = 34/21, ν_3 = 682/189, μ_2 = −26/21, μ_3 = 142/63
-[src: Eq. 52, HTML rendering]; they reproduce spherical collapse (Eqs. 53–54).
-Evaluating Eqs. 50–51 exactly gives ν_2 = 34/21, ν_3 = 682/189, μ_3 = 142/63
-and μ_2 = +26/21 [der: rational arithmetic on the printed recursion]. The
+(arXiv:astro-ph/0112551) [src: Eq. 52, HTML rendering]; they reproduce
+spherical collapse (Eqs. 53–54).
+
+Evaluating the printed recursion of Eqs. 50–51 reproduces ν_2, ν_3 and μ_3
+but gives μ_2 the opposite sign [der]. The
 sign of the printed μ_2 may follow from the sign convention for the velocity
 divergence rather than be a slip; this was not resolved at source: check the
 convention of the code or paper you compare with before using either sign.
@@ -130,7 +132,7 @@ P_13(k, τ) ≡ 6 ∫ F_3^(s)(k, q, −q) P_L(k, τ) P_L(q, τ) d³q (Eq. 166).
 P_22 is positive and is mode coupling (if P_L = 0 above k_c, P_22 vanishes
 only above 2k_c); P_13 "is in general negative", proportional to P_L(k), and
 is "the one-loop correction to the propagator" [src]. For scale-free
-spectra P_L = A a² k^n with cut-offs ε and k_c [src: Table 5]:
+spectra P_L = A a² k^n with cut-offs ε and k_c (arXiv:astro-ph/0112551) [src: Table 5]:
 
 | n | P_13/(πA²a⁴) | P_22/(πA²a⁴) |
 |---|---|---|
@@ -177,7 +179,7 @@ light [src: Sect. 1]. The logic [src: Sect. 3.2.3]:
    counterterm parts share it ("we will check this approximation in a
    forthcoming paper").
 
-Result: matching at k_ren. = 0.16 h/Mpc and extrapolating Λ → ∞ gives
+Result (arXiv:1206.2926): matching at k_ren. = 0.16 h/Mpc and extrapolating Λ → ∞ gives
 c²_comb(a0, Λ = ∞) ≃ 6.2 × 10⁻⁷, against a naive virialisation estimate of
 order 10⁻⁵; the one-loop EFT "agrees at percent level with the CAMB non-linear
 fit up to k ≃ 0.24 h/Mpc" for Ω_m = 0.25, Ω_b = 0.04, h = 0.7, n_s = 1
@@ -188,7 +190,9 @@ directly in N-body runs at Λ = 1/3 and 1/6 h/Mpc [src: Sect. 3.2.3, Fig. 3].
 c²_comb > 0 "tends to slow down the collapse of structures" and grows with
 time until a ≃ 0.7 [src: Fig. 2]. The galaxy-survey form −2c_ℓ² k² P_lin of
 Ivanov et al. (L2) is Eq. 57 with the time integral absorbed into a free
-coefficient per redshift bin and multipole [der].
+coefficient per redshift bin and multipole.
+
+That form is Eq. 57 rewritten, not a statement of either paper [der].
 
 ### Step 6. Or work in Lagrangian space
 <!-- key: step-6-or-work-in-lagrangian-space -->
@@ -240,15 +244,15 @@ counterterms".
 | Exact (gauge-transformed) against standard EdS method with ν, real-space one loop | below 0.7% for M_ν < 0.30 eV | Fidler et al. 2026, arXiv:2605.05114 [src: abstract] |
 | Same, one-loop quadrupole | 1.7% at k = 0.3 h/Mpc, z = 0, "with the largest contribution coming from the effect of the cosmological constant on the growth of the velocity field" | arXiv:2605.05114 [src: abstract] |
 
-What exactness costs: Choustikov et al. present a Chebyshev spectral method
+What exactness costs: Choustikov et al. (arXiv:2305.09337) present a Chebyshev spectral method
 "orders of magnitude more efficient than direct numerical solvers", N = 2
 components already reproducing λ_3^(1) to better than 0.03% [src: abstract,
 Sect. IV.1]; Fidler et al. state that their gauge method "does not incur any
 additional computational cost" [src: abstract]. The velocity kernels are the
 ones that depart most, so the quadrupole (and any velocity statistic) is
 where EdS is weakest; a 4% shift of a third-order velocity coefficient is
-not a 4% shift of P_2, and the 1.7% figure is the one measured on the
-spectrum.
+not a 4% shift of P_2, and the 1.7% figure (arXiv:2605.05114) [src: abstract]
+is the one measured on the spectrum.
 
 ### Eulerian or Lagrangian
 <!-- key: eulerian-or-lagrangian -->
@@ -274,16 +278,16 @@ choice becomes a prior choice (sibling dossier, Step 3).
 ### One loop or two
 <!-- key: one-loop-or-two -->
 
-One loop: 7–10 nuisance parameters per sample (L2). Two loops: 49
+One loop: seven to ten nuisance parameters per sample (L2). Two loops: 49
 coefficients, wider k range, no σ8 gain on the sample tested
-(arXiv:2610.13867).
+(arXiv:2610.13867, abstract).
 
 ## Numbers
 <!-- key: numbers -->
 
 | Quantity | Value | Analysis | Source | Place read |
 |---|---|---|---|---|
-| EdS vertices | ν_2 = 34/21, ν_3 = 682/189, μ_2 = −26/21 as printed (+26/21 from the recursion, sign convention unresolved), μ_3 = 142/63 | EdS | arXiv:astro-ph/0112551 | Eq. 52; μ_2 sign [der] from Eqs. 50–51 |
+| EdS vertices | ν_2 = 34/21, ν_3 = 682/189, μ_2 = −26/21 as printed (sign convention unresolved, Step 2), μ_3 = 142/63 | EdS | arXiv:astro-ph/0112551 | Eq. 52 |
 | c²_comb(a0, Λ = ∞) | ≃ 6.2 × 10⁻⁷; naive estimate 10⁻⁵ | Ω_m = 0.25, matched at 0.16 h/Mpc | arXiv:1206.2926 | Sect. 5 |
 | c²_comb peak in time | a ≃ 0.7 | same | arXiv:1206.2926 | Fig. 2 caption |
 | One-loop EFT matter, percent agreement | k ≃ 0.24 h/Mpc, z = 0 | against CAMB non-linear fit | arXiv:1206.2926 | Sect. 5 |
@@ -309,7 +313,7 @@ coefficients, wider k range, no σ8 gain on the sample tested
   where SPT does not apply. Test: vary the UV cut-off Λ; only P_13 + counterterm
   may be cutoff-independent (arXiv:1206.2926, Sect. 3.2.3).
 - **Counterterm amplitude read as a measured property.** c² is matched, and
-  the renormalisation-scale dependence (k_ren. = 0.1 against 0.18 h/Mpc) is
+  the renormalisation-scale dependence (k_ren. = 0.1 against 0.18 h/Mpc; arXiv:1206.2926, Sect. 3.2.3) is
   "a measure of the importance of higher loops".
 - **EdS velocity kernels in a precision RSD fit.** The quadrupole error
   reaches 1.7% at k = 0.3 h/Mpc, z = 0 (arXiv:2605.05114, abstract). Test: rerun with
@@ -346,7 +350,7 @@ coefficients, wider k range, no σ8 gain on the sample tested
 - F_3 explicitly and the UV (k → 0) coefficient of P_13 in units of σ_v²:
   the review defers F_3 to its reference [270]; Carrasco et al. give P_13
   through App. B functions not read.
-- The units in which c²_comb ≃ 6.2 × 10⁻⁷ is quoted (the introduction
+- The units in which c²_comb ≃ 6.2 × 10⁻⁷ (arXiv:1206.2926, Sect. 5) is quoted (the introduction
   writes it with c, the speed of light), and its conversion to the
   c_0² in (Mpc/h)² of galaxy fits.
 - Fidler et al. and Philcox were read in abstract only; method sections,

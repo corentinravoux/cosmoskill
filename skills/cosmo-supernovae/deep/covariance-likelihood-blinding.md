@@ -13,8 +13,8 @@ From: DES-SN5YR methods (arXiv:2401.02945), Sects. III.6 and VII; Union3
 
 Already in L2, not repeated here: the Gaussian likelihood and the Pantheon+
 form of `C_syst` (`physics-and-methods.md#covariance-and-likelihood-practice`),
-the factor ~1.5 gained by unbinning and the Pantheon+ 0.019 / 0.029 values
-(same section), the one-at-a-time budget conventions and the per-analysis
+the gain from unbinning and the Pantheon+ unbinned and binned values of
+`sigma_w` (same section), the one-at-a-time budget conventions and the per-analysis
 budgets (`systematics.md#the-budget-at-a-glance` and its subsections), the
 FoM definitions and the Union3 compressed-product prior issue (same
 `physics-and-methods.md` section), and the list of what each analysis hid
@@ -39,7 +39,7 @@ Notation: `mu_i` is the bias-corrected distance modulus of light curve `i`,
 - Pantheon+ therefore applies light-curve quality cuts on the baseline
   values only, and runs BBC twice: once to find the < 1 % of SNe for which
   no bias correction can be computed in some variant, then on the common
-  set; this gives the 1701 light curves [src: Sect. II.2].
+  set; this gives the 1701 light curves [src: arXiv:2202.04077, Sect. II.2].
 - DES-SN5YR, DES-Dovekie and Unite use the same rule ("common to all
   variants" among their cuts, in L2).
 
@@ -87,10 +87,11 @@ Two forms are in use.
   three P23 dust realisations and for the BS21 parameters, 1/3 for the
   Milky Way colour law, 1/10 for each of 10 host-mass realisations, and
   1/6 for the `Delta z = 10^-4` shift, whose note says the scaling makes
-  `sqrt(1/6) × 10^-4 ≈ 4 × 10^-5` [src: arXiv:2609.05053, Table 4]. The
-  note implies that "Size" is the variance weight `W_S^2` [der]: an
-  ensemble of `n` equally weighted draws then sums to one unit of variance,
-  which is the rule DES-Dovekie restored (`W = 1/sqrt(9)`, L2).
+  `sqrt(1/6) × 10^-4 ≈ 4 × 10^-5` [src: arXiv:2609.05053, Table 4].
+- **Reading of the "Size" column** [der]: the note implies that "Size" is
+  the variance weight `W_S^2`, so that an ensemble of `n` equally weighted
+  draws sums to one unit of variance, which is the rule DES-Dovekie
+  restored (one weight per SALT surface, L2).
 - **Effects that are not smooth**, such as contamination removing an SN
   from the sample: Conley et al. estimate them in redshift bins, then
   reproject onto individual SNe the bin-wide, fully correlated uncertainty
@@ -189,7 +190,7 @@ Two forms are in use.
   arXiv:2511.07517, Sect. 4.3].
 - For the 25 validation simulations DES-Dovekie uses SNANA's `wfit` with a
   CMB `R`-shift prior instead of the full Planck likelihood, "to avoid
-  excessive CPU consumption" [src: Sect. 6.2].
+  excessive CPU consumption" [src: arXiv:2511.07517, Sect. 6.2].
 - Union3's frequentist contours use `Delta chi2` = 2.296, 6.180, 11.829 for
   68.3, 95.4 and 99.7 % in two parameters, profiling the others, with an
   adaptive-refinement contour code [src: arXiv:2311.12098, Sect. V.3].
@@ -356,7 +357,7 @@ Unite's.
 | Evidence priors | `h` (0.55, 0.91); `w0` (−3, −0.4); `w_a` (−3, 2); `Omega_k` (−0.15, 0.15); `Omega_m` (0.1, 0.5) | DES-Dovekie | arXiv:2511.07517 | Sect. 4.3 |
 | Suspiciousness thresholds | strong < −5; moderate −5 to −2.5 | Unite | arXiv:2609.05053 | Sect. 8.1 |
 | Data–simulation reduced `chi2` window | 0.7–3.0 | DES-Dovekie, Unite | arXiv:2511.07517; arXiv:2609.05053 | Sect. 6.3; Sect. 5.2 |
-| Validation simulations | 25 | DES-Dovekie, Unite | same | Sect. 6.2; Sect. 5.2 |
+| Validation simulations | 25 | DES-Dovekie, Unite | arXiv:2511.07517; arXiv:2609.05053 | Sect. 6.2; Sect. 5.2 |
 | Coverage test | 150 realisations, > 95 % agreement | DES-SN5YR | arXiv:2401.02945 | Sect. VII.2 `[sec]` |
 | Effect of fixing α, β in `C_syst` | inner contour ~40 % too small | SNLS3 | arXiv:1104.1443 | Sect. IV.6 |
 | Union3 post-unblinding prior-bound test | `Omega_m` −0.007 (~1/4 sigma) | Union3 | arXiv:2311.12098 | Appendix B |
@@ -439,7 +440,7 @@ Unite's.
 - Goliath et al. 2001, Appendix A.1, not read; the marginalisation formula
   above is the Conley et al. version.
 - The Armstrong et al. coverage paper behind the DES-SN5YR "> 95 %"
-  statement was not identified or read.
+  statement (arXiv:2401.02945, Sect. VII.2) was not identified or read.
 - The chain-shifting blinding formalism cited by Pantheon+ (its
   reference 49) was not identified.
 - Handley & Lemos 2019 (Suspiciousness) and Trotta 2008 (evidence scale)

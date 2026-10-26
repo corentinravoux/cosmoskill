@@ -150,7 +150,7 @@ arXiv:2010.07193, Eq. 27):
 N^(0)_vr(k_L → 0) = (χ_*⁴/K_*²) [ ∫ d²l/(2π)² P_ge(l/χ_*)² / (P_gg(l/χ_*) C_l^tot) ]⁻¹
 ```
 
-It is proportional to C_l^tot on kSZ scales (l ~ 5000), so it falls as the
+It is proportional (arXiv:2010.07193) to C_l^tot on kSZ scales (l ~ 5000), so it falls as the
 CMB noise falls [src: Sect. VI.4]. In 100 Quijote simulations the true noise
 was larger, consistent with a factor 2–3 increase, explained by an
 N^(3/2) term from a six-point halo-model calculation; N^(1) is negligible
@@ -201,7 +201,7 @@ P_3^gv = (2/5) b_v (i f² a H / k) P_lin(k)
 P_0^vv = −(1/5) b_v² (f a H / k)² P_lin(k)
 ```
 
-With primordial non-Gaussianity b_1 → b_1 + b_Φ f_NL / T_Φ→δ(k, z) (Eq. 6),
+With primordial non-Gaussianity (arXiv:2604.04867) b_1 → b_1 + b_Φ f_NL / T_Φ→δ(k, z) (Eq. 6),
 b_Φ = 2δ_c (b_1 − p), δ_c = 1.686, p = 1.0 for LRG and ELG and 1.4 for
 quasars; the authors note that p for LRGs and ELGs needs further study
 [src: Sect. II.3, Eq. 9]. The window is not applied as a matrix: model and
@@ -249,19 +249,19 @@ or 6800 null simulations (arXiv:2410.06229, Sect. 5.3) [src].
 
 In DR2 [src: arXiv:2604.04867, Sects. III.5.2, IV.2, V.1, V.2]:
 
-1. Fit b_fg^90 and b_fg^150 to the P_0^gv monopole, then fix them; their
+1. Fit (arXiv:2604.04867, Sects. III.5.2, IV.2, V.1, V.2) b_fg^90 and b_fg^150 to the P_0^gv monopole, then fix them; their
    leakage into the dipole stays below ~10% of the statistical errors for
    LRGs.
-2. Fit P_11^vv to get the three noise rescalings s_nv^90, s_nv^150,
+2. Fit (arXiv:2604.04867, Sects. III.5.2, IV.2, V.1, V.2) P_11^vv to get the three noise rescalings s_nv^90, s_nv^150,
    s_nv^90×150 (the last models the 90–150 cross-covariance).
-3. Fit the P_1^gv dipoles of both frequencies, alone or with P_11^vv.
+3. Fit (arXiv:2604.04867, Sects. III.5.2, IV.2, V.1, V.2) the P_1^gv dipoles of both frequencies, alone or with P_11^vv.
    Free: f_NL, b_v^90, b_v^150, Σ_v (and Σ_v^vv with P^vv). Fixed: f to its
    fiducial value, b_1 from the separately measured P_gg amplitude, Σ_g = 0.
    The reason: without P_gg, P^gv alone has degeneracies among b_1, f and
    b_v and between Σ_g and Σ_v.
 4. The covariance is evaluated once at the fiducial values of Table 4,
    obtained by iterating on the data, because inversion dominates the cost.
-5. NGC and SGC spectra are combined as P = w_1 P_NGC + (1 − w_1) P_SGC,
+5. NGC and SGC spectra (arXiv:2604.04867, Sects. III.5.2, IV.2, V.1, V.2) are combined as P = w_1 P_NGC + (1 − w_1) P_SGC,
    w_1 the ratio of normalisations (0.57–0.59); NGC carries ~60% of the
    constraining power.
 

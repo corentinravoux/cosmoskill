@@ -12,7 +12,7 @@ Snowmass white paper (arXiv:2203.08056), Sect. 2.2; PLAsTiCC and ELAsTiCC challe
 
 Already in L2, not repeated here: the table of classifiers and their tasks
 (`physics-and-methods.md#classification-of-transients-and-spectra`); the official PLAsTiCC
-scores and the flat-weight 0.468 (`results.md#challenge-outcomes-and-classifier-performance`);
+scores and the flat-weight 0.468 of arXiv:1907.04690 (abstract) (`results.md#challenge-outcomes-and-classifier-performance`);
 SCONE out of distribution, Superphot+ on Rubin DP1, the ELAsTiCC-based w bias and the list of
 mitigations (`systematics.md#non-representative-training-sets-for-classifiers`); challenge
 organisation (`surveys-and-data.md#time-domain-classification-challenges`). How class
@@ -91,10 +91,11 @@ read in full.
    measurement error, not used as intrinsic variation.
 6. Keep only light curves that would be detected.
 7. Draw a photometric redshift from the test set's spectroscopic–photometric mapping.
-8. Repeat: up to 100 versions per object, 591 410 light curves in total.
+8. Repeat: up to 100 versions per object, 591 410 light curves in total (arXiv:1907.04690,
+   Sect. III.4).
 
 The stated reason for not targeting the test-set rates (as the earlier propensity-score method
-STACCATO did) is that SN rates above z = 1 are known only to about 50%; Avocado instead
+STACCATO did) in arXiv:1907.04690 is that SN rates above z = 1 are known only to about 50%; Avocado instead
 simulates every object the same number of times over a range of redshifts and makes the
 classifier independent of the training redshift distribution through the metric of Step 3
 [src: Sect. III.4].
@@ -129,7 +130,7 @@ Eqs. 2–7]:
 - p(C) = Π_{l=0}^{h(C)−1} p(C^(l) ∣ C^(l+1)), the conditional probabilities obtained by summing
   leaf probabilities under each node (Eqs. 2–3);
 - λ(C^(l)) = exp(−α d(C)), d the depth of the node; α = 0 weighs all levels equally, α > 0
-  favours the top of the tree (Eq. 4); ORACLE uses α = 0.5 [src: Table 4];
+  favours the top of the tree (Eq. 4); ORACLE uses α = 0.5 (arXiv:2501.01496) [src: Table 4];
 - W(C^(l)) = N/(N_nodes N_c), N the number of events, N_nodes the number of classes, N_c the
   count of class C (Eq. 6);
 - L_WHXE = −Σ_l W(C^(l)) λ(C^(l)) log p(C^(l) ∣ C^(l+1)) (Eq. 7).
@@ -202,7 +203,7 @@ A probability becomes a sample through a threshold, chosen on the metric the sci
   Bayes-by-backprop RNN 0.0005 ± 0.0004; changing the training-set size or nature changed the
   dispersion by up to 50% [src: Sect. 5.1]. Thresholded samples inherit any miscalibration;
   the remedies named are post-processing recalibration or per-bin reweighting [src: same].
-- **Synthetic out-of-distribution inputs.** SuperNNova feeds time-reversed, shuffled,
+- **Synthetic out-of-distribution inputs.** SuperNNova (arXiv:1901.06384) feeds time-reversed, shuffled,
   random-flux and sinusoidal curves at the survey cadence; these are rarely called SNe Ia
   (≤ 4.8% binary for reversed curves with MC dropout, < 3% with Bayes by backprop), mostly
   core-collapse types [src: Sect. 5.3, Fig. 9]. The entropy gap between OOD and normal test
@@ -348,9 +349,9 @@ fully on it (arXiv:2012.12392) [src: Sect. 3.3].
 - The weighted hierarchical cross-entropy paper of Villar et al. 2023 and the ATAT classifier of
   Cabrera-Vives et al. 2024, both cited by ORACLE: not read; their numbers here are as ORACLE
   quotes them.
-- STACCATO (Revsbech et al.) and the representativeness study cited by Avocado as ref. 32: not
-  read. Avocado quotes the STACCATO AUC without augmentation as 0.92 in its introduction and
-  0.93 in Sect. III.4.
+- STACCATO (Revsbech et al.) and the representativeness study of Lochner et al. cited by Avocado
+  as ref. 32 (arXiv:1907.04690, Sect. I): not read. Avocado quotes the STACCATO AUC without
+  augmentation as 0.92 in its introduction (Sect. I) and 0.93 in Sect. III.4.
 - ParSNIP (Boone 2021): read only as described in arXiv:2602.13036.
 - Calibration and threshold choices of the DESI quasar classification and of the DES-SN5YR
   SuperNNova ensembles: in `cosmo-data-pipelines` and `cosmo-supernovae`, not re-read here.

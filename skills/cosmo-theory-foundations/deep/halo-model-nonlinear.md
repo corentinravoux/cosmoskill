@@ -79,10 +79,10 @@ f(y) = y/4 + y²/8;
 Δ²_H = Δ'²_H/(1 + μ_n y⁻¹ + ν_n y⁻²),
 Δ'²_H = a_n y^(3f1(Ω))/{1 + b_n y^(f2(Ω)) + [c_n f3(Ω) y]^(3−γ_n)};
 
-with σ²(R_G) ≡ ∫ Δ²_L exp(−k²R_G²) d ln k (a **Gaussian** filter),
+with σ²(R_G) ≡ ∫ Δ²_L exp(−k²R_G²) d ln k (a **Gaussian** filter; arXiv:astro-ph/0207664),
 σ(k_σ⁻¹) ≡ 1, 3 + n_eff ≡ −d ln σ²/d ln R|_σ=1 and the curvature
 C ≡ −d² ln σ²/d ln R²|_σ=1. The coefficients a_n … ν_n are polynomials in n
-and C (Eqs. 77–84); f1,2,3 are powers of Ω, with separate open (Eq. 85) and
+and C (Eqs. 77–84); f1, f2, f3 are powers of Ω, with separate open (Eq. 85) and
 flat (Eq. 86) sets and linear interpolation in Λ suggested in between [src].
 Why not the halo model itself: the quasi-linear term was made empirical
 because quasi-linear effects "cannot be cleanly separated from the convolving
@@ -92,11 +92,11 @@ simulations, < 3% against the J98 ΛCDM boxes for z < 3, k < 10 h/Mpc
 [src: App. C].
 
 Takahashi et al. 2012 (arXiv:1208.2701) keep the form and refit every
-coefficient [src: App. A, Eqs. A1–A14]: e.g. log10 a_n = 1.5222 + 2.8553 n_eff
-+ 2.3706 n_eff² + 0.9903 n_eff³ + 0.2250 n_eff⁴ − 0.6038 C + 0.1749 Ω_w(z)(1+w)
+coefficient [src: App. A, Eqs. A1–A14]: e.g. log10 a_n = 1.5222 + 2.8553 n_eff +
+2.3706 n_eff² + 0.9903 n_eff³ + 0.2250 n_eff⁴ − 0.6038 C + 0.1749 Ω_w(z)(1+w)
 (Eq. A6), a w term also in b_n (Eq. A7), μ_n = 0 (Eq. A12), α_n taken in
 absolute value "to avoid divergence" (Eq. A10), and the flat-case
-f1,2,3(Ω_m) = Ω_m^(−0.0307), Ω_m^(−0.0585), Ω_m^(0.0743) at the redshift
+f1, f2, f3(Ω_m) = Ω_m^(−0.0307), Ω_m^(−0.0585), Ω_m^(0.0743) at the redshift
 considered (Eq. A14). The χ² of the fit weights k < 0.3 h/Mpc at z ≤ 3 by
 10, 0.3–10 h/Mpc by 1, z > 3 by 0.2 and k ≥ 10 h/Mpc by 0.1, "so that the
 final fitting formula gives a better accuracy at the BAO scales at low
@@ -112,7 +112,7 @@ W(M, k) = (1/ρ̄) ∫₀^r_v 4πr² [sin(kr)/(kr)] ρ(M, r) dr and M = (4/3)π 
 (3/x³)(sin x − x cos x) in σ²_ij(R) = ∫ Δ²_lin,ij T²(kR) d ln k (Eqs. 8–9),
 the displacement variance σ²_v = (1/3) ∫ Δ²_lin/k² T² d ln k (Eq. 10), and
 n_eff evaluated at R_nl where σ(R_nl) = δ_c (Eq. 11) [src]. The model then
-adds:
+adds (arXiv:2009.01858, Table 2 for the fitted values):
 
 | Element | Equation as written | Eq. | Fitted value (Table 2) |
 |---|---|---|---|
@@ -126,23 +126,23 @@ adds:
 | Transition | Δ²_HM = [(Δ²_2H)^α + (Δ²_1H)^α]^(1/α) | 23 | α = 1.875 × 1.603^(n_eff,cc) |
 
 [src: Sects. 4.1–4.5, 5.1, Table 2, whose caption counts "a total of 12
-fitted parameters", i.e. the coefficients of these seven functions]. At z = 0 in ΛCDM (Ω_m = 0.3, σ8 = 0.8):
+fitted parameters", i.e. the coefficients of these seven functions; arXiv:2009.01858]. At z = 0 in ΛCDM (Ω_m = 0.3, σ8 = 0.8):
 k_d = 0.073, k_* = 0.070 h/Mpc, f = 0.219, η = 0.139, α = 0.719 [src: Table 2].
 
 Why each element, in the authors' words:
-- The full two-halo integral was dropped (set to its k → 0 limit) because
+- The full two-halo integral was dropped (arXiv:2009.01858) (set to its k → 0 limit) because
   the halo-bias choice has "an insignificant effect" on matter power and
   de-wiggled linear theory reduces scatter near k ~ 0.1 h/Mpc; this also
   "approximately halv[es] the computational time" [src: Sect. 3.1].
-- Eq. 17 respects the physical P_1H ∝ k⁴ limit from mass and momentum
+- Eq. 17 of arXiv:2009.01858 respects the physical P_1H ∝ k⁴ limit from mass and momentum
   conservation; without it the one-halo term adds power at
   k ≲ 0.01 h/Mpc where linear theory is "near perfect" [src: Sect. 4.3].
-- f = 0.22 is larger than the expected perturbative damping (≃ 10% at
+- f = 0.22 (arXiv:2009.01858) is larger than the expected perturbative damping (≃ 10% at
   k = 0.1 h/Mpc); α < 1 adds the power back through the transition: the
   two parameters compensate each other [src: Sect. 5.3].
-- η bloats a ν = 3 halo (∼10¹⁵ h⁻¹M_⊙ at z = 0) by ≃ 16%; earlier versions
+- η (arXiv:2009.01858) bloats a ν = 3 halo (∼10¹⁵ h⁻¹M_⊙ at z = 0) by ≃ 16%; earlier versions
   needed η ≃ 0.4 [src: Sect. 5.3].
-- The Dolag-type factor g_Λ(z)/g(z) in Eq. 22 is new, needed for the high-z
+- The Dolag-type factor g_Λ(z)/g(z) in Eq. 22 of arXiv:2009.01858 is new, needed for the high-z
   limit; the 1.5 exponent of HMcode-2016 was dropped [src: Sect. 4.4].
 - Parameters are functions of σ8,cc(z) and n_eff,cc(z), not of h, Ω_m, w,
   because structure formation "is driven by the spectral shape and
@@ -152,7 +152,7 @@ Why each element, in the authors' words:
 <!-- key: step-5-spherical-collapse-inputs-and-halo -->
 
 HMcode-2020 uses the virial definition, the Sheth–Tormen mass function and
-the Mead 2017 fits [src: Sects. 3.2–3.3, App. A]:
+the Mead 2017 fits (arXiv:2009.01858) [src: Sects. 3.2–3.3, App. A]:
 δ_c/[1.686(1 − 0.041 f_ν)] = 1 + Σ_{i=1,2} f_i(g/a, G/a)[log10 Ω_m(a)]^α_i and
 Δ_v/[177.7(1 + 0.763 f_ν)] = 1 + Σ_{i=3,4} f_i(g/a, G/a)[log10 Ω_m(a)]^α_i,
 with f_i(x, y) = p_i,0 + p_i,1(1 − x) + p_i,2(1 − x)² + p_i,3(1 − y), g the
@@ -197,19 +197,19 @@ included [src: App. A]. Choices compared [src: Sects. 3.2–3.4]:
 - Halo-model reaction: Cataneo et al. 2019b predict the total-matter P(k)
   with massive neutrinos to percent level out to k = 10 h/Mpc from standard
   halo mass function and concentration fits, and to better than 1 % with
-  halo properties refined on N-body runs (arXiv:1909.02561) [src].
+  halo properties refined on N-body runs (arXiv:1909.02561) [src: abstract].
 
 ### Step 7. Emulate the simulations instead
 <!-- key: step-7-emulate-the-simulations-instead -->
 
 | Emulator | Training set and method | Range | Stated accuracy | Source |
 |---|---|---|---|---|
-| EuclidEmulator | PKDGRAV3 runs, polynomial chaos expansion of the non-linear correction (NLC), designed on mock emulators built from Takahashi halofit | z ≤ 5 (simulations converged to k ≈ 5 h/Mpc) | NLC ∼ 0.3 % vs N-body; full P(k) ∼ 1 % for k ≲ 1 h/Mpc, z ≲ 3.5 | arXiv:1809.04695 |
-| EuclidEmulator2 | > 250 paired-and-fixed PKDGRAV3 runs, 3000³ particles in 1 (h⁻¹ Gpc)³, linear evolution of ν, photons, DE and metric, N-body gauge, resolution correction | w0waCDM + Σm_ν, 8 parameters, z ≤ 3, 0.01 ≤ k ≤ 10 h/Mpc | NLC 1 % or better; blind test on Flagship v2.0 | arXiv:2010.11288 |
-| Mira-Titan (Cosmic Emu) II | 36 models, one high-resolution run each plus 16 medium-resolution runs and TimeRG perturbation theory | 8 parameters with ν and w0wa; k ∼ 5 Mpc⁻¹, z ≤ 2 | ≈ 4 % | arXiv:1705.03388 |
-| Mira-Titan IV | 111 runs, (2.1 Gpc)³, 3200³ particles, plus 1776 lower-resolution runs and TimeRG | same 8 parameters | 2–3 % | arXiv:2207.12345 |
-| BACCO | cosmology rescaling of a few large runs (L ∼ 2 Gpc, 4320³) to 800 points of an 8-parameter space; neural network | 0 < z < 1.5, 10⁻² < k < 5 h/Mpc | 2 % (ΛCDM), 3 % (w0wa, ν) | arXiv:2004.06245 |
-| Aemulus ν | 150 runs of (1.05 h⁻¹ Gpc)³, neutrinos as particles to 0.5 eV, Zel'dovich control variates | wνCDM, 0 ≤ z ≤ 3 | ≤ 1 % for k ≤ 1, ≤ 2 % for k ≤ 4 h/Mpc | arXiv:2303.09762 |
+| EuclidEmulator | PKDGRAV3 runs, polynomial chaos expansion of the non-linear correction (NLC), designed on mock emulators built from Takahashi halofit | z ≤ 5 (simulations converged to k ≈ 5 h/Mpc) | NLC ∼ 0.3 % vs N-body; full P(k) ∼ 1 % for k ≲ 1 h/Mpc, z ≲ 3.5 | arXiv:1809.04695, abstract |
+| EuclidEmulator2 | > 250 paired-and-fixed PKDGRAV3 runs, 3000³ particles in 1 (h⁻¹ Gpc)³, linear evolution of ν, photons, DE and metric, N-body gauge, resolution correction | w0waCDM + Σm_ν, 8 parameters, z ≤ 3, 0.01 ≤ k ≤ 10 h/Mpc | NLC 1 % or better; blind test on Flagship v2.0 | arXiv:2010.11288, abstract |
+| Mira-Titan (Cosmic Emu) II | 36 models, one high-resolution run each plus 16 medium-resolution runs and TimeRG perturbation theory | 8 parameters with ν and w0wa; k ∼ 5 Mpc⁻¹, z ≤ 2 | ≈ 4 % | arXiv:1705.03388, abstract |
+| Mira-Titan IV | 111 runs, (2.1 Gpc)³, 3200³ particles, plus 1776 lower-resolution runs and TimeRG | same 8 parameters | 2–3 % | arXiv:2207.12345, abstract |
+| BACCO | cosmology rescaling of a few large runs (L ∼ 2 Gpc, 4320³) to 800 points of an 8-parameter space; neural network | 0 < z < 1.5, 10⁻² < k < 5 h/Mpc | 2 % (ΛCDM), 3 % (w0wa, ν) | arXiv:2004.06245, abstract |
+| Aemulus ν | 150 runs of (1.05 h⁻¹ Gpc)³, neutrinos as particles to 0.5 eV, Zel'dovich control variates | wνCDM, 0 ≤ z ≤ 3 | ≤ 1 % for k ≤ 1, ≤ 2 % for k ≤ 4 h/Mpc | arXiv:2303.09762, abstract |
 
 [src: abstracts; BACCO also Sect. 2.1]. BACCO's runs have 6 times better
 mass resolution, 50 % larger volume and twice the spatial resolution of
@@ -239,9 +239,9 @@ error at k ≤ 5 h/Mpc; beyond, the error of ℛ is of the same order
 
 | | halofit (Takahashi) | HMcode-2020 |
 |---|---|---|
-| Structure | 2 fitted terms, coefficients polynomial in n_eff, C, with w terms | halo model + 7 fitted functions (12 fitted numbers), plus a separate baryon model |
+| Structure | 2 fitted terms, coefficients polynomial in n_eff, C, with w terms | halo model + 7 fitted functions (12 fitted numbers; arXiv:2009.01858, Table 2 caption), plus a separate baryon model |
 | Filter for σ | Gaussian | top-hat |
-| Calibration | 6 WMAP-like models fitted, 10 Coyote kept as check (L2) | 37 FrankenEmu nodes, k = 0.01–10 h/Mpc, z = 0, 0.5, 1, 2, equal log-k weight [src: Sect. 5.1] |
+| Calibration | 6 WMAP-like models fitted, 10 Coyote kept as check (arXiv:1208.2701, Sect. II.2) | 37 FrankenEmu nodes (arXiv:2009.01858), k = 0.01–10 h/Mpc, z = 0, 0.5, 1, 2, equal log-k weight [src: Sect. 5.1] |
 | Neutrinos | only via the unpublished CAMB variant | cold-field σ, (1 − f_ν) window, f_ν in δ_c, Δ_v |
 | Baryons | none | built in (sibling dossier) |
 | Other spectra | matter only | matter only [src: arXiv:2303.08752, Sect. 3.7] |
@@ -296,11 +296,11 @@ baryonification route displaces particles of gravity-only runs:
 Schneider et al. 2019 emulate the suppression and find that ignoring
 baryons biases Ω_m and σ8 by more than 5σ in a Euclid-like shear
 analysis, while cutting to large scales removes the bias but enlarges the
-Ω_m–σ8 contour by more than 10 (arXiv:1910.11357) [src]. The BACCO
+Ω_m–σ8 contour by more than 10 (arXiv:1910.11357) [src: abstract]. The BACCO
 baryonification emulator, calibrated on more than 50 000 measurements in
 15 parameters, reaches 1–2 % for 0.01 < k < 5 h/Mpc and 0 < z < 1.5, also
 against 74 hydrodynamical simulations, and finds that one parameter, M_c,
-is enough at a given epoch (Aricò et al. 2020, arXiv:2011.15018) [src].
+is enough at a given epoch (Aricò et al. 2020, arXiv:2011.15018) [src: abstract].
 
 ### Integrating the full halo model or the fitted model
 <!-- key: integrating-the-full-halo-model-or-the-fitted -->
@@ -359,8 +359,9 @@ model with its normalisation fix (Step 2), not HMcode.
   term and an exponential one-halo damping; η ≃ 0.4 there against 0.139 now;
   2016 had an extra 1.5 exponent in the Dolag correction [src:
   arXiv:2009.01858, Sects. 3.1, 4.3, 4.4, 5.3].
-- **Bryan–Norman Δ_v with HMcode-2020.** A 9% different Δ_v (337 against
-  308) changes the halo radii the fit was tuned with [der from App. A].
+- **Bryan–Norman Δ_v with HMcode-2020.** Δ_v ≃ 337 from Bryan & Norman
+  against the ≃ 308 HMcode-2020 uses for Ω_m = 0.3 ΛCDM (arXiv:2009.01858,
+  App. A) changes the halo radii the fit was tuned with.
 - **Total-matter σ in the mass function with neutrinos.** Raises the
   scatter; HMcode uses σ_cc (Sect. 3.5). Same rule as the cb field in L2.
 - **Using HMcode for a galaxy or gas spectrum.** Not designed for it
@@ -419,7 +420,7 @@ model with its normalisation fix (Step 2), not HMcode.
 - Bird, Viel & Haehnelt 2012 (arXiv:1109.4416) correction terms: not read.
 - The Mead et al. 2015 and 2016 parameter tables: not read; version
   differences are given as HMcode-2020 describes them.
-- The Smith et al. coefficients for f1,2,3 in non-flat Λ models: only the
+- The Smith et al. coefficients for f1, f2, f3 in non-flat Λ models: only the
   interpolation advice was read.
 - The baryonic part of HMcode-2020 (Sect. 6): left to the sibling dossier.
 - Whether current CAMB and CLASS releases still default to the halofit

@@ -31,13 +31,13 @@ with their sample sizes in `cosmo-galaxy-clustering`
 
 - **SDSS-I/II design**: imaging of π steradians above Galactic latitude about
   30° in five bands to g′ ≈ 23, and spectra of about one million galaxies and
-  10⁵ quasars [src] (York et al. 2000, arXiv:astro-ph/0006396).
+  10⁵ quasars [src: abstract] (York et al. 2000, arXiv:astro-ph/0006396).
 - **BOSS (SDSS-III) design**: 1.5 million luminous galaxies to i = 19.9 over
   10,000 deg² at z < 0.7 and more than 150,000 quasars (g < 22) for the Lyα
   forest at 2.15 < z < 3.5 [src: abstract] (Dawson et al. 2013, arXiv:1208.0022).
 - **eBOSS (SDSS-IV) design**: more than 250,000 LRGs (median z = 0.72), about
-  195,000 ELGs, more than 500,000 quasars at 0.9 < z < 2.2, and 120,000 Lyα
-  quasars (half new, half re-observed) [src] (Dawson et al. 2016,
+  195,000 ELGs, more than 500,000 quasars at 0.9 < z < 2.2, and, for the Lyα
+  forest at z > 2.1, 60,000 new quasars plus 60,000 BOSS quasars re-observed [src: abstract] (Dawson et al. 2016,
   arXiv:1508.04473). Final BOSS and eBOSS sample counts are in
   `cosmo-galaxy-clustering`. SDSS-IV ran APOGEE-2, MaNGA and eBOSS (with
   SPIDERS and TDSS) from summer 2014, with the du Pont telescope joining in
@@ -73,14 +73,14 @@ with their sample sizes in `cosmo-galaxy-clustering`
 - **Instrument** (as built; Abareshi et al. 2022, arXiv:2205.10939): 3.2°
   diameter prime-focus corrector, 5020 robotic positioners on a 0.812 m
   focal surface, minimum separation 10.4 mm, in ten petals feeding ten
-  three-channel spectrographs over 360–980 nm [src]. Requirements: field
+  three-channel spectrographs over 360–980 nm [src: abstract]. Requirements: field
   ≥ 7.65 deg², fibre density < 700 per deg², R > 1500 (360–555 nm),
-  > 3000 (555–656 nm), > 4000 (656–980 nm) [src: Table 4]; survey of at
+  > 3000 (555–656 nm), > 4000 (656–980 nm) [src: Table 4, Sect. II.3]; survey of at
   least 9000 deg², 14,000 deg² "baseline with margin"; BAO distance scale to
   0.28% at 0 < z < 1.1 and 0.39% at 1.1 < z < 1.9, H(z) to 1.05% at
-  1.9 < z < 3.7 [src: Table 3]. Each positioner reaches a 12 mm diameter
+  1.9 < z < 3.7 [src: Table 3, Sect. II.3]. Each positioner reaches a 12 mm diameter
   patrol disc (plate scale about 70 μm per arcsecond, fibre 107 μm)
-  [src: Sect. V.2, XIII.3]; about 170″ on the sky [der].
+  [src: Sect. V.2, XIII.3].
 - **Survey definition**: the 2016 science, targeting and survey-design
   paper (DESI Collaboration 2016, arXiv:1611.00036) [src: abstract]: LRGs to z = 1.0,
   [O II] ELGs to z = 1.7, quasars as tracers and, at 2.1 < z < 3.5, for the
@@ -101,7 +101,9 @@ with their sample sizes in `cosmo-galaxy-clustering`
   2022), labelled "latest" on the release page fetched 2026-10-09; DR2
   cosmology chains public, **DR2 spectra not public** [src]
   (`data.desi.lbl.gov/doc/releases/`). Papers: arXiv:2306.06308 (EDR),
-  arXiv:2503.14745 (DR1).
+  arXiv:2503.14745 (DR1), which gives high-confidence redshifts for 18.7M
+  objects [src: abstract] from the first 13 months of the main survey, 2021
+  May 14 through 2022 June 13 [src: Sect. I.1].
 - **Status**: the planned five-year survey was declared complete in April
   2026 with more than 47 million galaxies and quasars against a goal of 34
   million; observations continue through 2028 and extend the footprint from
@@ -113,7 +115,7 @@ with their sample sizes in `cosmo-galaxy-clustering`
   2026 DESI papers on Lyman-alpha emitters selected from DECam
   intermediate-band imaging (IBIS) describe themselves as preparation for
   DESI-II; they find a linear bias of 2.31–2.62 for LAEs at 2.26 < z < 3.41
-  [src] (Ebina et al. 2026, arXiv:2606.24852). No DESI-II survey definition
+  [src: abstract] (Ebina et al. 2026, arXiv:2606.24852). No DESI-II survey definition
   paper was found.
 
 ### 1.4 Subaru PFS (8.2 m, Maunakea)
@@ -140,9 +142,9 @@ al. 2014 (arXiv:1206.0737) [sec: GC], which assumed 300 nights in total.
 <!-- key: 4most-4-m-vista-paranal -->
 
 Field of view 4.2 deg²; 1624 fibres feed two low-resolution spectrographs
-(R ≈ 6500) and 812 fibres a high-resolution one (R ≈ 20,000) [src] (de Jong
+(R ≈ 6500) and 812 fibres a high-resolution one (R ≈ 20,000) [src: abstract] (de Jong
 et al. 2019, arXiv:1903.02464), that is 2436 spectra per pointing through
-three spectrographs [src] (Winkler et al. 2026, arXiv:2606.27882). First light 18 October 2025 (ESO
+three spectrographs [src: abstract] (Winkler et al. 2026, arXiv:2606.27882). First light 18 October 2025 (ESO
 announcement) [sec: GC]. The project site, fetched 2026-10-09, still reads
 "currently going through the Verification, Commissioning, and Survey
 Validation Phases" with "an expected start of full science operations in Q2
@@ -180,9 +182,9 @@ the WEAVE surveys. No public data release date was found.
 <!-- key: moons-8-m-class-vlt-paranal -->
 
 About 1000 fibres with individual robotic positioners, simultaneous
-0.64–1.8 μm coverage at low and high resolution [src] (Cirasuolo et al.
+0.64–1.8 μm coverage at low and high resolution [src: abstract] (Cirasuolo et al.
 2020, arXiv:2009.00628); 25-arcminute field, R ≈ 19,700 in the H-band
-high-resolution setting [src] (Gonzalez et al. 2020, arXiv:2009.00635). ESO
+high-resolution setting [src: abstract] (Gonzalez et al. 2020, arXiv:2009.00635). ESO
 announced first observations on 3 September 2026 and expects up to ten
 million objects over a ten-year design lifetime [src] (ESO announcement
 ann26007). No survey start date is given there.
@@ -246,7 +248,7 @@ is in arXiv:2110.01829 [sec: GC]; it predates the committee's definition.
 <!-- key: spherex-space-low-earth-orbit-spectrophotometry -->
 
 Launched 11 March 2025; 102 bands from 0.75 to 5.0 μm at R = 35–130 in 6.2″
-pixels; four all-sky passes in two years (arXiv:2511.02985) [sec: GC]. The
+pixels; four all-sky passes in two years (arXiv:2511.02985) [src: abstract]. The
 first all-sky pass was complete by late 2025, and spectral images are
 released weekly at IRSA ("QR2" since October 2025) [sec: web]. No redshift
 catalogue is public.
@@ -256,10 +258,10 @@ catalogue is public.
 
 | Facility | Design | Status | Source |
 |---|---|---|---|
-| MUST | 6.5 m; more than 20,000 targets over about 5 deg²; eight-year survey in the 2030s, more than 100 million galaxies and quasars to z ≈ 5.5 (**design**) | "currently under construction" | Cai et al. 2026, arXiv:2605.10102 [src] |
-| Spec-S5 | two 4 m telescopes upgraded to 6 m wide-field facilities, 13,000 fibres each (**design**) | concept | arXiv:2608.07927 [sec: GC] |
-| WST | 12 m class; 20,000-fibre MOS over 3 deg² plus a 3′ × 3′ integral-field spectrograph, operating in parallel (**design**) | proposed | Mainieri et al. 2024, arXiv:2403.05398; Lee et al. 2026, arXiv:2607.01150 [src] |
-| MSE | 2018: 11.25 m, 1.52 deg², 4332 spectra per exposure, R = 2500–40,000, replacing the 3.6 m CFHT. 2025: quad-mirror 11.5 m, more than 18,000 fibres, 1.5 deg², R = 7000 from 360 nm through H band and R = 40,000 (**design**) | "proposed to replace the Canada-France-Hawai'i Telescope in the 2040s"; a CFHT Board recommendation of December 2024 to wind down MSE activities is reported by a web summary [sec: web] | Hill et al. 2018, arXiv:1810.08695; Frinchaboy et al. 2025, arXiv:2503.15553 [src] |
+| MUST | 6.5 m; more than 20,000 targets over about 5 deg²; eight-year survey in the 2030s, redshifts for more than 100 million galaxies and quasars [src: abstract], of which up to 40 million at 2 < z < 5.5 [src: Sect. 2.4] (**design**) | "currently under construction" [src: abstract] | Cai et al. 2026, arXiv:2605.10102 |
+| Spec-S5 | two existing 4-m telescopes upgraded to 6-m wide-field observatories, 13,000 spectra simultaneously each (**design**) | concept | arXiv:2608.07927 [src: abstract; Table 1] |
+| WST | 12 m; 20,000 low-resolution fibres over 3 deg² (Sect. 5.1 assumes a "10–12m class facility") plus a 3 × 3 arcmin² integral-field spectrograph, operating in parallel (**design**) | proposed | Mainieri et al. 2024, arXiv:2403.05398 [src: Summary; Sect. 1.2, 5.1]; Lee et al. 2026, arXiv:2607.01150 |
+| MSE | 2018: 11.25 m, 1.52 deg², 4332 spectra per exposure, R = 2500–40,000, replacing CFHT. 2025: quad-mirror 11.5 m, more than 18,000 fibres, 1.5 deg², R = 7000 from 360 nm through H band and R = 40,000 (**design**) | "proposed to replace the Canada-France-Hawai'i Telescope in the 2040s"; a CFHT Board recommendation of December 2024 to wind down MSE activities is reported by a web summary [sec: web] | Hill et al. 2018, arXiv:1810.08695; Frinchaboy et al. 2025, arXiv:2503.15553 [src: abstract of each] |
 
 ## 2. Imaging surveys
 <!-- key: imaging-surveys -->
@@ -267,21 +269,22 @@ catalogue is public.
 | # | Survey | Telescope, camera, site | Footprint and depth | Releases and access | Status / next | Source |
 |---|---|---|---|---|---|---|
 | 2.1 | SDSS imaging | 2.5 m Sloan, Apache Point | π sr in five bands to g′ ≈ 23; "ubercalibration" reaches about 1% relative calibration in griz over 8500 deg² (2% in u), public from DR6 | SDSS DRs (Sect. 1.2) | closed | arXiv:astro-ph/0006396; Padmanabhan et al. 2008, arXiv:astro-ph/0703454 [src] |
-| 2.2 | Pan-STARRS1 3π | PS1 telescope | 3π sr in grizy; stack 5σ depths 23.3, 23.2, 23.1, 22.3, 21.4; photometric calibration systematics 7–12 mmag | MAST (STScI) | closed; the photometric reference of many SN and Legacy-Survey calibrations | Chambers et al. 2016, arXiv:1612.05560 [src] |
+| 2.2 | Pan-STARRS1 3π | PS1 telescope | 3π sr in grizy; stack 5σ depths 23.3, 23.2, 23.1, 22.3, 21.4; photometric calibration systematics 7–12 mmag | MAST (STScI) | closed; the photometric reference of many SN and Legacy-Survey calibrations | Chambers et al. 2016, arXiv:1612.05560 [src: abstract] |
 | 2.3 | DES | 4 m Blanco + DECam (2.2° diameter field, 570 Mpix, 62 science CCDs, 0.263″ per pixel), Cerro Tololo | about 5000 deg² in grizY; design [src: Sect. I, II.1.2]: 5000 deg² wide plus 30 deg² supernova fields in 525 nights (105 nights a year for five years), filters g, r, i, z, Y over 400–1065 nm, 250 μm thick fully depleted red-sensitive CCDs, optics goal 0.27″ FWHM as designed and 0.33″ as built; DR2 coadd depth at S/N = 10 (1.95″ aperture) g 24.7, r 24.4, i 23.8, z 23.1, Y 21.7; median PSF FWHM 0.95″ in r; uniformity better than 3 mmag against Gaia | DR2 (six years; about 691 million objects; paper posted January 2021); the Y6 Gold cosmology photometry is described in `cosmo-weak-lensing` | observations complete; Y6 cosmology published 2026 (see `cosmo-weak-lensing`) | Flaugher et al. 2015, arXiv:1504.02900; DES Collaboration 2021, arXiv:2101.05765 [src] |
 | 2.4 | DESI Legacy Imaging Surveys | DECam on Blanco (DECaLS and other public DECam data), 90Prime on the Bok (BASS), Mosaic-3 on the Mayall (MzLS) | original three surveys: about 14,000 deg² in g, r, z with dynamic exposure times for uniform depth, plus four WISE bands [src] (Dey et al. 2019, arXiv:1804.08657). DESI targeting requirements [src: App. A]: depths g ≥ 24.0, r ≥ 23.4, z ≥ 22.5 (optimal-extraction depth for an exponential galaxy of 0.45″ half-light radius), at least 14,000 deg², ≥ 90% at full depth in all three bands, z-band FWHM < 1.5″, astrometry < 95 mas random and < 30 mas systematic. DR11: about 22,731 deg² covered in all bands jointly; south (Dec ≤ 32.375°) in griz from DECam including the full DES, DELVE and DeROSITAS; north in grz (BASS/MzLS, reprocessed from DR9); about 3.9 billion sources; DECam data through September 2024; astrometry tied to Gaia DR3 | DR9 was the DESI targeting release and DR10.1 the 4MOST CRS selection [sec: GC]; **DR11 is current** on `legacysurvey.org` (page marked 2026, no release day given) | imaging continues to be reprocessed; the site quotes models over about 31,000 deg² in "optical and infrared bands", a looser count than the 22,731 deg² joint coverage | `legacysurvey.org` and its DR11 description page [src] |
-| 2.5 | KiDS | VST + OmegaCAM, Paranal, with VISTA/VIKING near-infrared | final DR5: 1347 deg² in ugri (two i epochs) plus near-infrared, nine bands (design was 1500 deg² [src], de Jong et al. 2012, arXiv:1206.1254). DR5 body [src: Sect. 3.1.1] (Wright et al. 2025): 1347 tiles of 1° × 1° (the OmegaCAM field) in two stripes, 70° × 9° at the south Galactic pole and 85° × 8° on the equator; KiDS started in 2011 and VIKING in 2009; VIKING was stopped at about 90% of its area and KiDS truncated to match; the planned g-band repeat pass became a second i pass | ESO archive, Astro-WISE, `kids.strw.leidenuniv.nl/DR5/` | complete; KiDS-Legacy is the final cosmology | arXiv:2503.19439 [sec: WL] |
+| 2.5 | KiDS | VST + OmegaCAM, Paranal, with VISTA/VIKING near-infrared | final DR5: 1347 deg² in ugri (two i epochs) plus near-infrared, nine bands (design was 1500 deg² [src: abstract], de Jong et al. 2012, arXiv:1206.1254). DR5 body [src: Sect. 3.1.1] (Wright et al. 2025): 1347 tiles of 1° × 1° (the OmegaCAM field) in two stripes, 70° × 9° at the south Galactic pole and 85° × 8° on the equator; KiDS started in 2011 and VIKING in 2009; VIKING was stopped at about 90% of its area and KiDS truncated to match; the planned g-band repeat pass became a second i pass | ESO archive, Astro-WISE, `kids.strw.leidenuniv.nl/DR5/` | complete; KiDS-Legacy is the final cosmology | arXiv:2503.19439 [sec: WL] |
 | 2.6 | HSC-SSP | 8.2 m Subaru + Hyper Suprime-Cam, Maunakea | 300-night programme; Wide 1400 deg² in grizy to r ≈ 26 (5σ point source), Deep 26 deg², UltraDeep 3.5 deg² (**design**) [src] (Aihara et al. 2018, arXiv:1704.05858). Camera [src: Table 1]: 1.5° diameter field, 104 science CCDs, 0.168″ pixels, grizy plus four narrow bands, 20 s readout (about 35 s overhead). Wide-layer design depths g 26.5, r 26.1, i 25.9, z 25.1, y 24.4 for 10–20 min per band; Deep 27.5–25.3 and UltraDeep 28.1–26.3 in grizy [src: Table 2]. PDR3: 278 nights, about 670 deg² at full depth in five bands, 1470 deg² including partial coverage [src] (Aihara et al. 2022, arXiv:2108.13045) | PDR3 at `hsc-release.mtk.nao.ac.jp` (paper posted 30 August 2021) | observations complete; a later public release was not checked | as cited |
 | 2.7 | UNIONS | CFHT, Pan-STARRS and Subaru, Hawaii | core region 6250 deg² in ugriz; 10σ point-source depths (2″ aperture) 23.7, 24.5, 24.2, 23.8, 23.3; median depths against an original goal of 23.6, 24.5, 23.9, 23.6, 23.4, the metric chosen to match Euclid specifications [src: Sect. II.2.2]; CFHT r band taken only in seeing below 1″, median r image quality 0.7″, driven by weak lensing [src: Sect. II.1.2, III.1.1] | no general public release date read; the UNIONS-3500 shear catalogue is described in `cosmo-weak-lensing` | ongoing; northern ground complement of Euclid | Gwyn et al. 2025, arXiv:2503.13783 [src] |
-| 2.8 | DECADE | DECam community and archival imaging outside DES | shear over 5412 deg² (north cap); 13,000 deg² with DES Y3 | catalogues and likelihoods public | complete as a lensing data set | arXiv:2509.03582 [sec: WL] |
-| 2.9 | Rubin LSST | Simonyi Survey Telescope, 8.4 m primary (6.5 m effective), 9.6 deg² field, 3.2 Gpix camera, Cerro Pachón | **design**: 18,000 deg² deep-wide-fast survey visited about 800 times in ugrizy (320–1050 nm) over ten years; single-visit depth r ≈ 24.5, coadd r ≈ 27.5; about 90% of the time in the main survey [src] (Ivezić et al. 2019, arXiv:0805.2366). Baseline design [src: Table 1]: f/1.234, étendue 319 m² deg², 0.2″ pixels; 5σ single-visit design depths ugrizy 23.9, 25.0, 24.7, 24.0, 23.3, 22.1 (minimum specification 23.4, 24.6, 24.3, 23.6, 22.9, 21.7); mean visits 56, 80, 184, 184, 160, 160; idealised coadd depths 26.1, 27.4, 27.5, 26.8, 26.1, 24.9; about 2.45 million visits in ten years [src: Sect. III.1.1] | DP1: about 15 deg², seven fields (arXiv:2603.23786) [sec: WL]; Early DP2 on 27 July 2026: LSSTCam observations from April 2025 to January 2026, coadds over about 3000 deg², single-epoch products over about 15,000 deg², deep-coadd images only but all catalogues; full DP2 "Oct-Dec 2026"; access for data-rights holders on the Rubin Science Platform [src] (`dp2.lsst.io`, last modified 2026-08-13) | ten-year survey began 30 June 2026 [sec: WL]. DR1 "based on the first year of LSST observations" [src] (RTN-011 v9.1, dated 2026-10-01), so it cannot be assembled before mid-2027 [der]; no DR1 date was read | as cited |
+| 2.8 | DECADE | DECam community and archival imaging outside DES | shear over 5412 deg² (north cap) [src: Sect. IV]; 13,000 deg² with DES Y3 [src: abstract] | catalogues and likelihoods public [sec: WL] | complete as a lensing data set | arXiv:2509.03582 |
+| 2.9 | Rubin LSST | Simonyi Survey Telescope, 8.4 m primary (6.5 m effective), 9.6 deg² field, 3.2 Gpix camera, Cerro Pachón | **design**: 18,000 deg² deep-wide-fast survey visited about 800 times in ugrizy (320–1050 nm) over ten years; single-visit depth r ≈ 24.5, coadd r ≈ 27.5; about 90% of the time in the main survey [src: abstract; Sect. II.2.1 for the single-visit depth] (Ivezić et al. 2019, arXiv:0805.2366). Baseline design [src: Table 1]: f/1.234, étendue 319 m² deg², 0.2″ pixels; 5σ single-visit design depths ugrizy 23.9, 25.0, 24.7, 24.0, 23.3, 22.1 (minimum specification 23.4, 24.6, 24.3, 23.6, 22.9, 21.7); mean visits 56, 80, 184, 184, 160, 160; idealised coadd depths 26.1, 27.4, 27.5, 26.8, 26.1, 24.9; about 2.45 million visits in ten years [src: Sect. III.1.1] | DP1: about 15 deg², seven fields (arXiv:2603.23786) [sec: WL]; Early DP2 on 27 July 2026: LSSTCam observations from April 2025 to January 2026, coadds over about 3000 deg², single-epoch products over about 15,000 deg², deep-coadd images only but all catalogues; full DP2 "Oct-Dec 2026"; access for data-rights holders on the Rubin Science Platform [src] (`dp2.lsst.io`, last modified 2026-08-13) | ten-year survey began 30 June 2026 [sec: WL]. DR1 "based on the first year of LSST observations" [src] (RTN-011 v9.1, dated 2026-10-01); no DR1 date was read | as cited |
 | 2.10 | Euclid VIS | ESA Euclid, L2; 1.2 m primary; VIS camera of 609 Mpix (6 × 6 CCDs of 4k × 4k), 0.54 deg² field (0.787° × 0.709°), 0.1″ sampling, resolution 0.18″ [src; Sect. 2.2 for the array and field] | about 14,000 deg² in one broad band I_E (r+i+z; 550–920 nm), m_AB ≥ 24.5 at S/N ≥ 10 required; Deep Survey of more than 50 deg² (**design**); survey of 6 years in a 6.5-year mission [src: Sect. 2.2] | ERO May 2024; Q1 19 March 2025; Q2 24 June 2026 (Galactic bulge, no cosmology product) | launched 1 July 2023; nominal survey began 14 February 2024. Next: DR1-Foundation 12 November 2026; DR1 mid-2027; Q3 2028; DR2 June 2029; Q4 2030; DR3 October 2031, all "tentative" | Euclid Collaboration 2024, arXiv:2405.13492 [src]; ESA timeline page, re-fetched 2026-10-09 and unchanged from the siblings' reading of 2026-10-08 [src] |
 | 2.11 | Roman imaging | 2.4 m, Wide Field Instrument 0.281 deg² | High Latitude Wide Area Survey (imaging and grism) and High Latitude Time Domain Survey (wide tier 18.3 deg², deep tier 6.5 deg² [sec: SN]) | none | launched 30 August 2026, commissioning (Sect. 1.9); first images expected early 2027 [sec: WL, press] | arXiv:1902.05569; arXiv:2505.10574 [src] |
-| 2.12 | CSST | 2 m space telescope co-orbiting with the Chinese space station at about 400 km; survey camera field about 1.1 deg², 0.074″ pixels | **design**: 17,500 deg² wide and 400 deg² deep; seven bands NUV, u, g, r, i, z, y over 255–1000 nm; g ≈ 26 (5σ point source); three slitless bands at R ≥ 200; about seven years of observation in a ten-year orbital life | none | not launched. The 2025 overview says "scheduled to be launched in 2027"; press listings in 2026 give no earlier than 2027 [sec: web] | CSST Collaboration 2025, arXiv:2507.04618 (body text, HTML version) [src] |
+| 2.12 | CSST | 2 m space telescope co-orbiting with the Chinese space station at about 400 km [src: Sect. 1]; survey camera field about 1.1 deg², 0.074″ pixels [src: Sect. 3.3] | **design**: 17,500 deg² wide and 400 deg² deep surveys "in ten years" [src: Sect. 1, 2.1]; seven bands NUV, u, g, r, i, z, y and three slitless bands at R ≥ 200 over 255–1000 nm [src: Sect. 3.3]; g-band limit "not less than 26 mag" [src: Sect. 4.2] | none | not launched. The 2025 overview says "scheduled to be launched in 2027" [src: Sect. 1]; press listings in 2026 give no earlier than 2027 [sec: web] | CSST Collaboration 2025, arXiv:2507.04618 (body text, HTML version) |
 
-Euclid release contents (Q1: 63.1 deg² of the deep fields, about 30 million
-objects; DR1: about 1900 deg², observations from
-14 February 2024 to 21 May 2025) are detailed in `cosmo-galaxy-clustering`
+Euclid release contents: Q1 holds 63.1 deg² of the deep fields and about 30
+million objects (Euclid Collaboration: Aussel et al. 2025, arXiv:2503.15302)
+[src: abstract]; DR1 (about 1900 deg², observations from 14 February 2024
+to 21 May 2025, ESA Euclid pages) is detailed in `cosmo-galaxy-clustering`
 and `cosmo-weak-lensing` [sec: GC, WL].
 
 ## 3. CMB experiments
@@ -295,7 +298,7 @@ skill holds the likelihoods, map depths per band and the data products.
 | Planck | ESA satellite | nine bands 30–857 GHz, all sky; scanned 12 August 2009 to 23 October 2013. 2018 maps [src: Table 4]: effective beam FWHM 32.3′ (30 GHz) to 9.7′, 7.2′, 4.9′ at 100, 143, 217 GHz and 4.2′ at 857 GHz; white-noise temperature levels 1.29, 0.55, 0.78 μK_CMB deg at 100, 143, 217 GHz (polarisation 1.96, 1.17, 1.75). Mission paper (Planck Collaboration 2011, arXiv:1101.2022) [src]: launched 14 May 2009, surveying "since 13 August 2009" (the 2018 overview's 12 August is the date carried from `cosmo-cmb`) | 2013, 2015 (PR2), 2018 (PR3 "legacy"), PR4/NPIPE 2020 | closed; PR4-based likelihoods are current | arXiv:1807.06205 [sec: CMB] |
 | ACT | Atacama | DR6: 98, 150, 220 GHz, 19,000 deg² mapped, median depth 10 μK-arcmin, data 2017–2022. DR6 body [src: Sect. II.1, II.8, Tables 1, 6]: three optics tubes, each a dichroic array with a 0.85° field; 852–1006 detectors per array and band; data 5 May 2017 to 2 July 2022, 46% observing efficiency, 48% of CMB data taken by day; night-time array sensitivity 8.4, 8.9 and 43 μK√s at f090, f150, f220, 6.1 combined; total weight about ten times DR4's. Telescope (Swetz et al. 2011, arXiv:1007.0290) [src]: six-metre off-axis Gregorian on Cerro Toco at 5190 m, commissioned 2007, first receiver three 1000-element arrays at 148, 218, 277 GHz | DR4 2020; DR6 maps and spectra March 2025, on LAMBDA | observations ended 2022; DR6 is the final cosmology release | arXiv:2503.14451 [sec: CMB] |
 | SPT-3G | 10 m, South Pole | 95, 150, 220 GHz; Main field 1500 deg²; full survey about 10,000 deg². D1 (2019–2020) coadded white noise 3.3 μK-arcmin in T and 5.1 in polarisation; per band T 5.4, 4.4, 16.2 μK-arcmin (arXiv:2506.20707) [src: Sect. I, IV.5]. Receiver commissioned early 2017 on the 10 m SPT, multichroic (Sobrin et al. 2018, arXiv:1809.00032) [src] | D1 (2019–2020 Main field): spectra June 2025, maps public March 2026 | operating; SPT-3G+ receiver (24,080 detectors) planned for early 2029 | arXiv:2506.20707; arXiv:2608.20236 [sec: CMB] |
-| BICEP/Keck, BICEP Array | small refractors, South Pole | one deep patch of about 400–600 deg²; BK18 Q/U depth 2.8 μK-arcmin at 95 and 150 GHz | BK18 (data through 2018) is the latest r constraint | next release uses data through 2024, **forecast** σ(r) ≈ 0.005 | arXiv:2110.00483 [sec: CMB] |
+| BICEP/Keck, BICEP Array | small refractors, South Pole | one deep patch, effective area ≈ 600 deg² at 95 GHz and ≈ 400 deg² at 150 and 220 GHz; BK18 Q/U depths 2.8, 2.8 and 8.8 μK-arcmin at 95, 150 and 220 GHz [src: abstract] | BK18 (data through 2018) is the latest r constraint | next release uses data through 2024 [sec: CMB] | arXiv:2110.00483 |
 | Simons Observatory | Cerro Toco, 5200 m; three 0.5 m SATs and one 6 m LAT | 27–280 GHz, 60,000 bolometers (**design**). 2018 **design** [src: Table 1] (5-year survey, 20% of time usable): SATs over f_sky = 0.1 with FWHM 91′ to 9′ and baseline (goal) polarisation noise 2.6 (1.9) and 3.3 (2.1) μK-arcmin at 93 and 145 GHz; LAT over f_sky = 0.4 with FWHM 2.2′, 1.4′, 1.0′ at 93, 145, 225 GHz and 8.0 (5.8), 10 (6.3), 22 (15) μK-arcmin | **no public data release**: a web search on 2026-10-09 found talks and commissioning papers only [sec: web] | SAT observations since late 2023; LAT first image 22 February 2025; six SATs by 2027; LAT upgrade by 2028 | arXiv:1808.07445; arXiv:2609.26938; arXiv:2503.00636 [sec: CMB] |
 | CMB-S4 | was Chile + South Pole | — | — | **cancelled**: DOE and NSF withdrew support on 9 July 2025 | `cmb-s4.org`, read by `cosmo-cmb` on 2026-10-07 [sec: CMB] |
 | LiteBIRD | JAXA satellite, L2 | after the 2024–2026 reformation: one 500 mm reflector, 12 bands 40–402 GHz, three-year survey, δr < 0.002 (**design**). Body [src: Sect. 2.2, 3.3, Table 1]: all-sky polarisation over 2 ≤ ℓ ≤ 200; required combined map noise < 8.0, < 10.0, < 10.0 μK-arcmin (LF, MF, HF) at 2 ≤ ℓ ≤ 29 and < 4.7, < 4.5, < 4.7 at 30 ≤ ℓ ≤ 200, defined from null maps; cross-Dragone telescope at about 5 K, one focal plane at 0.1 K; a rotating half-wave plate is the baseline under study, with a no-plate backup | — | passed Mission Definition Review #2 on 26 June 2026; launch JFY2036 (was "late 2020s") | arXiv:2607.25285 [sec: CMB] |
@@ -308,9 +311,9 @@ compilations) are in `cosmo-supernovae`; this table holds the facilities.
 
 | Survey | Telescope and camera | Strategy | Cosmology-relevant releases | Status / next | Source |
 |---|---|---|---|---|---|
-| ZTF | Palomar 48-inch Schmidt, 47 deg² field, 8 s readout | untargeted, g r i, public alert stream | SN Ia DR2: 3628 spectroscopically classified SNe Ia at z < 0.3 from March 2018 to December 2020, **not usable for cosmological parameters** until the scene-modelling reprocessing ("DR2.5") is out (arXiv:2409.04346) [sec: SN] | operating; NSF added USD 1.6 million in October 2024 for operations in 2025 and 2026; funding after 2026 was not confirmed by the search [sec: web] | Bellm et al. 2019, arXiv:1902.01932 [src] |
-| ATLAS | four small telescopes [sec: SN] | all sky, two-day cadence; finds more bright (m < 19) SN candidates than any other ground survey | TITAN recalibration for SN Ia cosmology (see `cosmo-supernovae`) | operating | Tonry et al. 2018, arXiv:1802.00879 [src] |
-| YSE | Pan-STARRS telescopes | griz, about 750 deg² every three days in 2020 with a plan for 1500 deg²; depth about 21.5 in gri and 20.5 in z; about 5000 SNe per year at full capacity (**forecast**) | low-z anchor sample named as forthcoming by the Unite authors [sec: SN] | cosmology sample size not verified | Jones et al. 2021, arXiv:2010.09724 [src] |
+| ZTF | Palomar 48-inch Schmidt, 47 deg² field, 8 s readout | untargeted, g r i, public alert stream | SN Ia DR2: 3628 spectroscopically classified SNe Ia at z < 0.3 from March 2018 to December 2020, **not usable for cosmological parameters** until the scene-modelling reprocessing ("DR2.5") is out (arXiv:2409.04346) [sec: SN] | operating; NSF added USD 1.6 million in October 2024 for operations in 2025 and 2026; funding after 2026 was not confirmed by the search [sec: web] | Bellm et al. 2019, arXiv:1902.01932 [src: abstract of each] |
+| ATLAS | four small telescopes [sec: SN] | all sky, two-day cadence; finds more bright (m < 19) SN candidates than any other ground survey | TITAN recalibration for SN Ia cosmology (see `cosmo-supernovae`) | operating | Tonry et al. 2018, arXiv:1802.00879 [src: abstract] |
+| YSE | Pan-STARRS telescopes | griz, about 750 deg² every three days in 2020 with a plan for 1500 deg²; depth about 21.5 in gri and 20.5 in z; about 5000 SNe per year at full capacity (**forecast**) | low-z anchor sample named as forthcoming by the Unite authors [sec: SN] | cosmology sample size not verified | Jones et al. 2021, arXiv:2010.09724 [src: abstract] |
 | Rubin LSST | Sect. 2.9 | pairs of visits per night; Wide-Fast-Deep plus Deep Drilling Fields; the footprint, nightly repeat visits in different filters and regular cadence each change the cosmological return across more than 100 simulated strategies | none yet | survey began 30 June 2026 [sec: WL] | arXiv:0805.2366; Lochner et al. 2022, arXiv:2104.05676 [src] |
 | Roman HLTDS | Sect. 1.9 | wide 18.3 deg² and deep 6.5 deg² tiers, filter subsets every five days over about two years [sec: SN] | none | commissioning | arXiv:2505.10574 [src] |
 
@@ -319,13 +322,13 @@ compilations) are in `cosmo-supernovae`; this table holds the facilities.
 
 | Facility | Site and hardware | Survey and cosmology use | Status / next | Source |
 |---|---|---|---|---|
-| CHIME | DRAO, Penticton; four 100 m × 20 m cylinders, 256 dual-polarisation feeds each; 400–800 MHz; drift scan covering 3/4 of the sky daily. Body (arXiv:2201.07869) [src: Sect. II.2, IV.1, Table 1]: f/0.25 parabolas, reflector surface 7.2 mm rms (λ/50 at 800 MHz); first light 7 September 2017, cosmology data from 7 October 2018; time lost to downtime 17%, daytime 50%, rain 20%, 69% in total; 42% of frequency channels lost to RFI | 21 cm intensity mapping at 0.8 < z < 2.5 for BAO; first interferometric detection by stacking on eBOSS tracers at 0.78 < z < 1.43 (102 nights; 7.1σ LRG, 5.7σ ELG, 11.1σ QSO); also FRBs | operating; auto-power spectrum detected at 12.5σ at z ~ 1 from 94 nights (arXiv:2511.19620) [sec: `cosmo-reionization-21cm`, abstract confirmed 2026-10-10] | CHIME Collaboration 2022, arXiv:2201.07869; arXiv:2202.01242 [src] |
+| CHIME | DRAO, Penticton; four 100 m × 20 m cylinders, 256 dual-polarisation feeds each; 400–800 MHz; drift scan covering 3/4 of the sky daily. Body (arXiv:2201.07869) [src: Sect. II.2, IV.1, Table 1]: f/0.25 parabolas, reflector surface 7.2 mm rms (λ/50 at 800 MHz); first light 7 September 2017, cosmology data from 7 October 2018; time lost to downtime 17%, daytime 50%, rain 20%, 69% in total; 42% of frequency channels lost to RFI | 21 cm intensity mapping at 0.8 < z < 2.5 for BAO; first interferometric detection by stacking on eBOSS tracers at 0.78 < z < 1.43 (102 nights; 7.1σ LRG, 5.7σ ELG, 11.1σ QSO); also FRBs | operating; auto-power spectrum detected at z ~ 1 from 94 nights, 12.5σ in the arXiv listing abstract and 12.4σ in the abstract of the v2 text (arXiv:2511.19620) [src: abstract] | CHIME Collaboration 2022, arXiv:2201.07869; arXiv:2202.01242 [src] |
 | CHORD | DRAO; 512 six-metre dishes, 300–1500 MHz, drift scan; two 64-dish outriggers (Hat Creek, Green Bank) | 21 cm cosmology, FRB localisation, HI galaxies | 64-dish pathfinder in commissioning; "the full array will be commissioned in 2028" | CHORD Collaboration 2026, arXiv:2607.09374 [src: abstract] |
 | MeerKAT / MeerKLASS | Karoo, South Africa; 64 dishes; L band and UHF band | single-dish (auto-correlation) HI intensity mapping; proposed as about 4000 deg² in about 4000 hours (**design**), in L band (0 < z < 0.58) or UHF band (0.4 < z < 1.45), with a **forecast** of 0.5–1% on Ω_HI b_HI at z = 0.1–0.5 and 1.1–4.2% at z = 0.6–1.4 [src: Sect. 3.1.1, Table 1]; cross-correlation detections with optical surveys and "continually improving" HI auto-power measurements | operating; the method is the template for SKA-Mid, whose Band 1 (350–1050 MHz) reaches z ≈ 3 | Santos et al. 2017, arXiv:1709.06099; Cunnington et al. 2026, arXiv:2606.25955 [src] |
 | ASKAP / WALLABY | Western Australia; 36 twelve-metre dishes with phased-array feeds, about 30 deg² field at 1.4 GHz | WALLABY: HI over −90° < Dec < +30° to z < 0.26 at about 30″; more than half a million galaxies expected at mean z ≈ 0.05 (**forecast**, 2020). Peculiar-velocity use: `cosmo-peculiar-velocities` | 2025–2026 papers still carry the "pilot survey" label; the full-survey footprint as executed was not verified | Koribalski et al. 2020, arXiv:2002.07311 [src: abstract] |
 | SKA (Phase 1) | SKA-Mid on the MeerKAT site in the Karoo (arXiv:2606.25955); SKA-Low in Australia (site not re-read) | **design** (2018 Red Book) [src: Sect. 2.1, 2.2, Table 2]: SKA1-Mid = MeerKAT's 64 dishes of 13.5 m plus 133 SKA dishes of 15 m, baselines to 150 km (about 0.3″ at 1.4 GHz); funded receivers Bands 1 (0.35–1.05 GHz, HI at 0.35 < z < 3), 2 (0.95–1.75 GHz, 0 < z < 0.5) and 5; MeerKAT's own UHF (580–1015 MHz) and L (900–1670 MHz) bands differ. SKA1-Low = 512 stations of 256 dipoles at 50–350 MHz, 224 in a 1 km core. Surveys: continuum weak lensing and HI galaxy survey over 5000 deg²; continuum and HI intensity mapping over 20,000 deg² at 0.35 < z < 3; deep intensity mapping over 100 deg² at 3 < z < 6 | under construction. SKAO timeline, version of February 2025: AA2 for SKA-Low 2026 Q4 and for SKA-Mid 2027 Q4, science verification from 2027, AA* 2028 Q3, operations readiness review 2029 Q1; a June 2024 table had the SKA-Mid AA2 in May 2027 [sec: web]. No 2026 confirmation that AA2 was reached | SKA Cosmology SWG 2018, arXiv:1811.02743 [src] |
-| HIRAX | SKA site, South Africa; initial 256 six-metre dishes, 400–800 MHz; final 1024 | 21 cm intensity mapping at 0.775 < z < 2.55 over about 15,000 deg² (**design**) | "being deployed"; metrology of the first 28 dishes reported in July 2026 | Crichton et al. 2022, arXiv:2109.13755; Studer et al. 2026, arXiv:2607.26972 [src] |
-| DSA-2000 | 2000 five-metre dishes, 0.7–2 GHz, 3.5″ resolution (**design**) | continuum "radio camera": sky above Dec −30° every four months for five years, more than a billion sources at 500 nJy/beam; about 10,000 localised FRBs per year (**forecast**) | proposed in 2019 "with a view to first light in 2026"; current status not verified | Hallinan et al. 2019, arXiv:1907.07648 [src] |
+| HIRAX | SKA site, South Africa; initial 256 six-metre dishes, 400–800 MHz; final 1024 | 21 cm intensity mapping at 0.775 < z < 2.55 over about 15,000 deg² (**design**) | "being deployed"; metrology of the first 28 dishes reported in July 2026 | Crichton et al. 2022, arXiv:2109.13755 [src: abstract]; Studer et al. 2026, arXiv:2607.26972 [src: abstract] |
+| DSA-2000 | 2000 five-metre dishes, 0.7–2 GHz, 3.5″ resolution (**design**) | continuum "radio camera": sky above Dec −30° every four months for five years, more than a billion sources at 500 nJy/beam; about 10,000 localised FRBs per year (**forecast**) | proposed in 2019 "with a view to first light in 2026"; current status not verified | Hallinan et al. 2019, arXiv:1907.07648 [src: abstract] |
 
 ## 6. X-ray
 <!-- key: x-ray -->
@@ -365,9 +368,9 @@ given in the sections read.
 
 | Facility | Configuration | Data and catalogues | Status / next | Source |
 |---|---|---|---|---|
-| LIGO–Virgo–KAGRA | two LIGO detectors, Virgo, KAGRA. Instrument papers [src]: Advanced LIGO (LIGO Scientific Collaboration 2015, arXiv:1411.4547), two identical 4 km Michelson interferometers with Fabry–Perot arms, power and signal recycling, design strain sensitivity ten times initial LIGO near 100 Hz and band edge moved from 40 to 10 Hz; Advanced Virgo (Acernese et al. 2015, arXiv:1408.3978), aiming at three orders of magnitude more observable galaxies than Virgo | GWTC-4.0: O4a (24 May 2023 to 16 January 2024), 128 new candidates, 218 in total with the 90 of GWTC-3.0. GWTC-5.0 (papers from May 2026): through O4b, 267 mergers in the population analysis, no new source containing a neutron star | O4 ended 18 November 2025 [sec: web, AEI and ICRR pages]. Plan page updated 3 September 2026: detectors "in a period of upgrades and commissioning"; a six-month Intermediate Run 1 planned from "early- to mid-November of 2026"; O5 plans "in discussion", no date | LVK 2025, arXiv:2508.18082; LVK 2026, arXiv:2605.27226; `observing.docs.ligo.org/plan` [src] |
+| LIGO–Virgo–KAGRA | two LIGO detectors, Virgo, KAGRA. Instrument papers [src: abstract of each]: Advanced LIGO (LIGO Scientific Collaboration 2015, arXiv:1411.4547), two identical 4 km Michelson interferometers with Fabry–Perot arms, power and signal recycling, design strain sensitivity ten times initial LIGO near 100 Hz and band edge moved from 40 to 10 Hz; Advanced Virgo (Acernese et al. 2015, arXiv:1408.3978), aiming at three orders of magnitude more observable galaxies than Virgo | GWTC-4.0: O4a (24 May 2023 to 16 January 2024), 128 new candidates, 218 in total with the 90 of GWTC-3.0. GWTC-5.0 (papers from May 2026): through O4b, 267 mergers in the population analysis, no new source containing a neutron star | O4 ended 18 November 2025 [sec: web, AEI and ICRR pages]. Plan page updated 3 September 2026: detectors "in a period of upgrades and commissioning"; a six-month Intermediate Run 1 planned from "early- to mid-November of 2026"; O5 plans "in discussion", no date | LVK 2025, arXiv:2508.18082 [src: abstract]; LVK 2026, arXiv:2605.27226 [src: abstract]; `observing.docs.ligo.org/plan` (plan-page wording and dates; not a paper) |
 | Einstein Telescope | **design**: single-site triangle or two L-shaped detectors | — | candidate sites Sardinia, Euregio Meuse-Rhine, Saxony (Lusatia); site decision expected in 2027; not before 2035 [sec: web] | Abac et al. 2025, arXiv:2503.12263 [src] |
-| Cosmic Explorer | **design**: two L-shaped detectors in the United States, 20 km and 40 km arms | — | "As of 2025, CE is in its design phase, with plans to begin operations in the 2030s" | Datrier et al. 2025, arXiv:2509.05430 [src] |
+| Cosmic Explorer | **design**: two L-shaped detectors in the United States, 20 km and 40 km arms | — | "As of 2025, CE is in its design phase, with plans to begin operations in the 2030s" | Datrier et al. 2025, arXiv:2509.05430 [src: abstract] |
 | LISA | three spacecraft, 0.1 mHz to 1 Hz | — | adopted by ESA on 25 January 2024; launch planned for 2035 [sec: web] | Colpi et al. 2024, arXiv:2402.07571 [src: abstract] |
 
 Standard-siren cosmology with these data is in `cosmo-multimessenger` and
@@ -376,6 +379,17 @@ Standard-siren cosmology with these data is in `cosmo-multimessenger` and
 ## Not verified
 <!-- key: not-verified -->
 
+- Values corrected in the numbers run of 2026-10-24/25 (the paper's value
+  is now quoted): the CHIME auto-spectrum was given as 12.5σ; the arXiv
+  listing abstract says 12.5σ and the abstract of the v2 text 12.4σ
+  (arXiv:2511.19620). The eBOSS Lyα sample was given as "120,000 quasars";
+  the abstract states 60,000 new plus 60,000 re-observed (arXiv:1508.04473).
+  The BICEP/Keck patch was given as "about 400–600 deg²"; the abstract
+  gives ≈ 600 deg² at 95 GHz and ≈ 400 deg² at 150 and 220 GHz
+  (arXiv:2110.00483). MUST was given as "more than 100 million galaxies and
+  quasars to z ≈ 5.5"; the paper gives more than 100 million in total and up
+  to 40 million at 2 < z < 5.5 (arXiv:2605.10102). A BICEP/Keck forecast
+  σ(r) ≈ 0.005 for the next release was removed (no paper and place read).
 - Public release date of the DESI DR2 spectra; the definition, schedule and
   funding status of DESI-II.
 - Whether the 4MOST main survey and the WEAVE multi-object surveys have

@@ -18,32 +18,29 @@ error propagated: `δH0 / H0 ≈ σ_v / (H0 d)`.
 | Statement | Value | Source |
 |---|---|---|
 | Typical peculiar velocity and its share of the recession velocity at 40 Mpc | 300 km/s, about 10% | arXiv:1710.05835 Methods [src: Sect. "Finding the Hubble velocity of NGC 4993"] |
-| LVC 2017 correction for NGC 4993 | 310 ± 69 km/s from 6dFGSv; error inflated to 150 km/s, 250 km/s as a robustness test | [sec: arXiv:1909.00587 §3.2]; confirmed in arXiv:1710.05835 [src: Methods] |
-| Where the 150 km/s comes from | it is the uncertainty of the 2MASS Redshift Survey reconstruction used as a cross-check (Hubble velocity 3047 km/s against 3017 from 6dFGSv), adopted because the 6dFGSv estimate "may represent an imperfect model of the true bulk flow" | arXiv:1710.05835 [src: Methods] |
-| Hubble velocity used | 3017 ± 166 km/s, that is 5.5% [der: 166/3017], against about 15% on the GW distance | arXiv:1710.05835 [src: Methods] |
+| LVC 2017 correction for NGC 4993 | 310 ± 69 km/s from 6dFGSv; error inflated to 150 km/s, 250 km/s as a robustness test | arXiv:1710.05835 [src: Methods, Sect. "Finding the Hubble velocity of NGC 4993" and Sect. "Robustness to prior specification"]; [sec: arXiv:1909.00587 Sect. 3.2] |
+| Where the 150 km/s comes from | it is the uncertainty of the 2MASS Redshift Survey reconstruction used as a cross-check (Hubble velocity 3047 km/s against 3017 from 6dFGSv), adopted because the 6dFGSv estimate "may represent an imperfect model of the true bulk flow" | arXiv:1710.05835 [src: Methods, Sect. "Finding the Hubble velocity of NGC 4993"] |
+| Hubble velocity used | 3017 ± 166 km/s (68.3%), against the "∼15%" uncertainty of the GW distance | arXiv:1710.05835 [src: Methods, Sect. "Finding the Hubble velocity of NGC 4993"; the distance uncertainty in the main text] |
 | Size in H0 of widening the velocity error from 150 to 250 km/s | MAP interval from 70.0 (+12.0/−8.0) to 70.0 (+14.0/−9.0); symmetric interval from 74.0 (+16.0/−8.0) to 74.0 (+16.0/−9.0) | arXiv:1710.05835 [src: Extended Data Table 1] |
-| After a jet prior | the H0 error is "dominated by both the GW data and the peculiar motion of NGC 4993", no longer by the viewing angle | arXiv:1806.10596 [src: main text] |
-| BORG reconstruction on 2M++ | mean 373 km/s, mode 385 km/s; field σ ≈ 82 km/s, virial term ≈ 100 km/s, total ≈ 130 km/s; mean 24% higher and σ 13% smaller than LVC | arXiv:1909.08627 §6.1 [src] |
+| After a jet prior | the H0 error is "dominated by both the GW data and the peculiar motion of NGC 4993", no longer by the viewing angle | arXiv:1806.10596 [src: main text, the paragraph giving the three jet-model values; the HTML rendering files the main text under its abstract heading] |
+| BORG reconstruction on 2M++ | mean 373 km/s, mode 385 km/s; field σ ≈ 82 km/s, virial term ≈ 100 km/s, total ≈ 130 km/s; mean 24% higher and σ 13% smaller than LVC | arXiv:1909.08627 [src: Sect. 6.1] |
 | Sensitivity | 200 km/s on `v_p` ↔ about 4 km/s/Mpc on H0 | arXiv:1909.09609 [src: abstract] |
 | Dependence on the velocity source, same siren data | H0 = 70.9 (+6.4/−8.5) with DESI Fundamental Plane velocities, 73.4 (+3.3/−3.9) with the Cosmicflows-4 SBF velocity | arXiv:2512.08818 [src: abstract] |
-| Catalogue disagreement | 2MTF and CF3/6dFGSv velocities at NGC 4993 differ by more than their errors for kernels of 2–10 h⁻¹ Mpc, traced to a global distance-scale offset between catalogues | arXiv:1909.00587 §3.2 [src] |
-| Correlated errors | H0 error up to ×2 larger when the velocity covariance is included, for GW170817-like sirens within 50 Mpc with 5% distances | arXiv:2509.03101 [src] |
+| Catalogue disagreement | 2MTF and CF3/6dFGSv velocities at NGC 4993 differ by more than their errors for kernels of 2–10 h⁻¹ Mpc, traced to a global distance-scale offset between catalogues | arXiv:1909.00587 [src: Sect. 3.2] |
+| Correlated errors | H0 error up to ×2 larger when the velocity covariance is included, for GW170817-like sirens within 50 Mpc with 5% distances | arXiv:2509.03101 [src: abstract] |
 
-Scaling with distance, for a fixed velocity error and H0 = 70 [der: `σ_v / (H0 d)`]:
-
-| `σ_v` | 40 Mpc | 100 Mpc | 200 Mpc | 400 Mpc |
-|---|---|---|---|---|
-| 150 km/s | 5.4% | 2.1% | 1.1% | 0.5% |
-| 250 km/s | 8.9% | 3.6% | 1.8% | 0.9% |
+For a fixed velocity error the fractional H0 error falls as `1/d` through the formula
+above [der: no number computed here]. A table of agent-computed values was set aside on
+2026-10-23.
 
 **Components to keep apart.**
 
 1. The observed redshift to use: the galaxy, or the centre of mass of its group. LVC
    2017 used the group, assuming all members at the same distance, accurate to 1% for a
-   group radius of about 0.4 Mpc (arXiv:1710.05835 Methods) [src]. Group membership of
+   group radius of about 0.4 Mpc (arXiv:1710.05835) [src: Methods, Sect. "Finding the Hubble velocity of NGC 4993"]. Group membership of
    NGC 4993 was debated until the DESI observations found 39 members and a halo of order
-   `10^13 M☉` (arXiv:2512.08818) [src]. Mukherjee et al. used `10^12 M☉` for the virial
-   term (arXiv:1909.08627 §6.1) [src]; the two masses differ by an order of magnitude,
+   `10^13 M☉` (arXiv:2512.08818) [src: abstract]. Mukherjee et al. used `10^12 M☉` for the virial
+   term (arXiv:1909.08627) [src: Sect. 6.1]; the two masses differ by an order of magnitude,
    and the virial dispersion with them.
 2. The large-scale flow at the host position, from a reconstruction or from smoothed
    direct distances. The smoothing scale is a free choice with a direct effect
@@ -52,14 +49,15 @@ Scaling with distance, for a fixed velocity error and H0 = 70 [der: `σ_v / (H0 
 4. The zero point of the direct-distance catalogue. Velocities from Tully–Fisher or
    Fundamental-Plane distances depend on the distance zero point of the catalogue: a
    small global offset between the 2MTF and CF3 distance scales produces a large
-   difference at NGC 4993 (arXiv:1909.00587 §3.2) [src]. LVC 2017 state that they do not
+   difference at NGC 4993 (arXiv:1909.00587) [src: Sect. 3.2]. LVC 2017 state that they do not
    use a secondary distance indicator for the Hubble-flow velocity of NGC 4993, so that
    H0 stays independent of the electromagnetic distance scale, and correct the group
-   velocity with a peculiar-velocity map instead (arXiv:1710.05835 Methods) [src].
+   velocity with a peculiar-velocity map instead (arXiv:1710.05835) [src: main text;
+   Methods, Sect. "Finding the Hubble velocity of NGC 4993"].
 
-**Does it average down?** Howlett & Davis 2019 state that the error decreases as
+**Does it average down?** Howlett & Davis 2019 (arXiv:1909.00587) state that the error decreases as
 sirens are found at larger distance and as random directions average. Blake & Turner
-2025 show the limit of the second argument: velocities of nearby hosts are correlated
+2025 (arXiv:2509.03101) [src: abstract] show the limit of the second argument: velocities of nearby hosts are correlated
 through bulk flows, so `N` sirens within 50 Mpc do not give `1/√N`. Both statements are
 correct in their regime; the covariance matters for the nearby, well-measured events
 that would otherwise dominate the weight.
@@ -85,30 +83,33 @@ the jet or the ejecta.
 
 **Size.**
 
-- GW170817 alone: 14% on H0; with a jet prior 6–7% (arXiv:2305.19914, arXiv:1806.10596)
-  [src].
+- GW170817 alone: 14% on H0 (arXiv:2305.19914) [src: abstract]; with a jet prior "6–7%"
+  (arXiv:1806.10596) [src: main text, the paragraph giving the three jet-model values; the
+  HTML rendering files the main text under its abstract heading].
 - Budget of the distance in LVC 2017: `d = 43.8 (+2.9/−6.9)` Mpc, "∼15%" from detector
   noise, calibration and the correlation with inclination together, not separated;
   `cos i` in [−1.00, −0.81] (144°–180°) at 68.3%. The degeneracy is called "one of the
-  main sources of uncertainty" on H0 (arXiv:1710.05835) [src: main text].
+  main sources of uncertainty" on H0 (arXiv:1710.05835) [src: main text; the distance also
+  in Extended Data Table 1].
 - The degeneracy read the other way: with H0 fixed to the Planck value the 68.3%
   range of the inclination is 157°–177°, with the SH0ES value 148°–166°
   (arXiv:1710.05835) [src: main text, Extended Data Table 1].
 - Jet-model dependence inside one analysis: 68.9 (+4.6/−4.5), 68.3 (+4.4/−4.3) and
-  68.5 (+4.4/−4.3) for a hydrodynamical, a power-law and a Gaussian jet, a spread of
-  0.6 [der] called "much smaller than 7%"; the GW-only value of that paper is
+  68.5 (+4.4/−4.3) for a hydrodynamical, a power-law and a Gaussian jet, a jet-model
+  dependence called "much smaller than 7%"; the GW-only value of that paper is
   74 (+16/−8), and 78 (+20/−10) against 74 (+15/−8) for the low- and high-spin priors
   of the GW analysis, a dependence that disappears once the jet data are added
-  (arXiv:1806.10596, HTML rendering) [src: main text, Methods §0.2].
-- Spread between jet-informed analyses of the same event: 64.8 to 75.5 (results file,
-  §1) [der].
+  (arXiv:1806.10596, HTML rendering) [src: main text, Methods Sect. 0.2].
+- Spread between jet-informed analyses of the same event: the values of the results
+  file, Sect. 1, differ by more than their quoted errors [der: comparison of the rows].
 - Requirement: a viewing-angle bias above about 10° gives more than 3% on H0
-  (arXiv:2006.02779) [src].
+  (arXiv:2006.02779) [src: abstract].
 - Selection: counterparts are easier to find for some viewing angles, which biases H0
   by 2% or more even for mild selection, and the bias "cannot be properly removed" with
-  the GW inclination measurement (arXiv:2006.02779) [src].
-- Distance prior: volumetric against uniform changes the weighted median by 10
-  km/s/Mpc for the GW-only posterior (arXiv:2606.30504) [src].
+  the GW inclination measurement (arXiv:2006.02779) [src: abstract].
+- Distance prior: volumetric against uniform moves the weighted median from 77.6 to 87.6
+  km/s/Mpc for the GW-only posterior, the MAP staying at 70.5 (arXiv:2606.30504)
+  [src: abstract].
 - Redshift prior in place of the distance prior: LVC 2017 repeat the analysis with a
   prior flat in `z` instead of `p(d) ∝ d²` and find 71.0 (+23.0/−9.0) (MAP) or
   81 (+27/−13) (median), against 70.0 (+12.0/−8.0) and 74.0 (+16.0/−8.0), a change of
@@ -135,9 +136,9 @@ and, for dark sirens, the three-dimensional localisation.
 **Size.**
 
 - LIGO in the first half of O3: below 7% in magnitude and 4° in phase (68%), of which
-  the systematic part is below 2% and 2° (arXiv:2005.02531) [src]. Chen 2020 quotes
+  the systematic part is below 2% and 2° (arXiv:2005.02531) [src: abstract]. Chen 2020 quotes
   "≤ 2%" as the calibration contribution to the standard-siren systematic
-  (arXiv:2006.02779) [src].
+  (arXiv:2006.02779) [src: abstract].
 - With the worst O3 calibration error applied to every event, the true H0 leaves the
   90% interval after about 40 binary neutron stars; with 10% of events affected, it
   stays inside after 100 (arXiv:2204.03614) [src: abstract].
@@ -145,7 +146,7 @@ and, for dark sirens, the three-dimensional localisation.
   `O(ρ⁻²)` with signal-to-noise `ρ`; waveform bias can change the host ranking
   (arXiv:2602.14898) [src].
 - One 2026 analysis carries an explicit calibration term, ±1.56 on 70.5
-  (arXiv:2607.03672) [src].
+  (arXiv:2607.03672) [src: abstract].
 
 - GW170817: calibration enters the "∼15%" distance error without a separate figure;
   tidal terms in the waveform and the data-processing method change H0 and the
@@ -164,8 +165,8 @@ and, for dark sirens, the three-dimensional localisation.
   ignored (arXiv:2111.03604) [src: Sect. V.3].
 
 **Mitigation.** Marginalise over calibration envelopes in parameter estimation;
-compare waveform families (arXiv:2009.14199 does this for GW190521, with H0 moving
-from 43 to 62 between three models [src]).
+compare waveform families (arXiv:2009.14199 does this for GW190521: H0 = 50.4, 62.2
+and 43.1 for three waveform models [src: abstract]).
 
 **Expected citations.** arXiv:2005.02531, arXiv:2204.03614.
 
@@ -217,26 +218,27 @@ with redshift, is absorbed by H0.
 
 | Statement | Source |
 |---|---|
-| GWTC-3 catalogue result "strongly impacted by assumptions about the BBH source mass distribution"; only GW190814 is not | arXiv:2111.03604 [src] |
-| GWTC-5.0: "the main driver of the Hubble constant measurement remains the presence of features in the mass distribution"; H0 "strongly degenerate" with the positions of sharp features; a model lacking high-mass structure shifts redshifts up and H0 higher | arXiv:2605.27227 §4.1 [src] |
-| 2000 events analysed with heuristic mass models when the true spectrum evolves or has unmodelled features: H0 biased by up to 3σ | arXiv:2312.11627 [src] |
+| GWTC-3 catalogue result "strongly impacted by assumptions about the BBH source mass distribution"; only GW190814 is not | arXiv:2111.03604 [src: abstract] |
+| GWTC-5.0: "the main driver of the Hubble constant measurement remains the presence of features in the mass distribution"; H0 "strongly degenerate" with the positions of sharp features; a model lacking high-mass structure shifts redshifts up and H0 higher | arXiv:2605.27227 [src: Sect. IV.1] |
+| 2000 events analysed with heuristic mass models when the true spectrum evolves or has unmodelled features: H0 biased by up to 3σ | arXiv:2312.11627 [src: abstract] |
 | Same study, by model: on a population-synthesis catalogue, H0 lies 2σ from the injected value with the multi-peak model and 3σ with Power Law + Peak (σ of each H0 posterior), although both reproduce the detector-frame spectrum; the bias "disappears when the redshift evolution of the source mass spectrum is removed". Direction: an underestimated source-mass spectrum sends events to higher redshift and H0 up | arXiv:2312.11627 [src: Sect. V] |
-| Blinded mock challenge at O4 sensitivity: a mild unmodelled redshift dependence gives about 1.5σ | arXiv:2412.14244 [src] |
+| Blinded mock challenge at O4 sensitivity: a mild unmodelled redshift dependence gives about 1.5σ | arXiv:2412.14244 [src: abstract] |
 | Second blinded challenge: the metallicity dependence of the spectrum and its interplay with the delay-time distribution must be captured, to better than the statistical error at all relevant redshifts | arXiv:2604.26273 [src] |
 | GWTC-4.0 with evolving mass scales: no compelling evidence for evolution; a modest shift of H0 to lower values that injections reproduce for a non-evolving truth; the systematic from the choice of redshift-independent mass model is larger | arXiv:2605.20112 [src] |
 | GWTC-5.0 with a copula mass–redshift dependence: H0 consistent between models, the independent model favoured | arXiv:2609.25662 [src] |
-| A new mass feature at 63.3 ± 4.8 M☉ tightens H0 by 30–36% | arXiv:2601.03257 [src] |
+| A new mass feature at 63.3 ± 4.8 M☉ improves the H0 uncertainty by about 30.4% (spectral sirens) and 36.2% (dark sirens) | arXiv:2601.03257 [src: abstract] |
 | Population prescriptions from synthesis codes: H0 degenerate with the fraction of dynamically formed binaries | arXiv:2603.15332 [src] |
 | Fixed population parameters in a catalogue analysis bias H0; joint inference is required | arXiv:2103.14663, arXiv:2308.02281 [src] |
 
-Sizes read in the body of the LVK papers (H0 in km s⁻¹ Mpc⁻¹, median and 68.3%
-interval unless stated; dark sirens without GW170817):
+Sizes read in the body of the LVK papers arXiv:2605.27227, arXiv:2509.04348 and
+arXiv:2111.03604 (H0 in km s⁻¹ Mpc⁻¹, median and 68.3% interval unless stated; dark
+sirens without GW170817; the table, section or figure read is in the last column):
 
 | Variation | H0 | Place read |
 |---|---|---|
 | GWTC-5.0, multi-peak BBH-only model (231 events) | 70.6 (+20.3/−16.7) | arXiv:2605.27227 [src: Table 3] |
-| GWTC-5.0, FullPop-4.0, fiducial (235 events) | 68.8 (+14.2/−13.2) | same |
-| GWTC-5.0, FullPop 3 Peaks (235 events) | 71.1 (+12.9/−12.1) | same |
+| GWTC-5.0, FullPop-4.0, fiducial (235 events) | 68.8 (+14.2/−13.2) | arXiv:2605.27227 [src: Table 3] |
+| GWTC-5.0, FullPop 3 Peaks (235 events) | 71.1 (+12.9/−12.1) | arXiv:2605.27227 [src: Table 3] |
 | GWTC-5.0, spectral, BBH-only, Gaussian spin model against Transition spin model | 72.4 (+22.5/−18.3) against 67.0 (+21.9/−17.6); modelling spins widens the error by 8.8% and 5.3% | arXiv:2605.27227 [src: Sect. IV.1, V.2] |
 | GWTC-4.0, single-peak (Power Law + Peak) against multi-peak, BBH only | 124.8 (+45.2/−39.4) against 87.3 (+48.0/−28.2): medians about 47% apart, the first limited by the prior edge at 200 | arXiv:2509.04348 [src: Sect. IV.1] |
 | GWTC-4.0, prior on the peak positions | the Bayes factor between those two models goes from `log10 B = 0.30` to 2.3 when the peak priors are narrowed from U(5, 100) M☉ to U(7, 12) and U(20, 50) M☉ | arXiv:2509.04348 [src: Sect. IV.1] |
@@ -245,10 +247,10 @@ interval unless stated; dark sirens without GW170817):
 The mechanism in the collaboration's words: a model lacking a low-mass peak "prefers
 lower masses to account for the missing first peak, which puts GW sources at higher
 redshifts, therefore leading to higher H0" (arXiv:2509.04348) [src: Sect. IV.1]. Within
-one release the model-to-model shift of the median (about 2 between the three GWTC-5.0
-models [der: Table 3]) is far below the statistical error, but between a model that
-misses a feature and one that has it the shift was about 37 in GWTC-4.0 [der: 124.8 −
-87.3]. Mass-spectrum evolution is not modelled in any LVK result: the GWTC-3 paper
+one release the model-to-model shift of the median between the three GWTC-5.0 models
+of Table 3 is far below the statistical error, while between a model that misses a
+feature and one that has it (GWTC-4.0, table above) the shift is comparable to the
+statistical error [der: comparison of the rows above, no new number]. Mass-spectrum evolution is not modelled in any LVK result: the GWTC-3 paper
 calls mass-model mis-specification "the dominant source of systematic uncertainty" and
 states that "any evolution is degenerate with the cosmological inference"
 (arXiv:2111.03604) [src: Sect. V.3]. The priors on the population parameters are part
@@ -282,9 +284,9 @@ can carry bias.
 
 | Issue | Statement | Source |
 |---|---|---|
-| Depth of the standard catalogue | GLADE+ complete to 47 (+4/−2) Mpc in B-band luminosity | arXiv:2110.06184 [src] |
+| Depth of the standard catalogue | GLADE+ complete to 47 (+4/−2) Mpc in B-band luminosity | arXiv:2110.06184 [src: abstract] |
 | Completion model | homogeneous completion underestimates and multiplicative completion overestimates the structure at low completeness | arXiv:2310.08991 [src] |
-| Gain from modelling the line of sight | 23% better H0 precision at 24% completeness, 37% at 8%, up to 66% (mocks, `z ≤ 0.4`) | arXiv:2608.24992 [src] |
+| Gain from modelling the line of sight | 23% better H0 precision at 24% completeness, 37% at 8%, up to 66% (mocks, `z ≤ 0.4`) | arXiv:2608.24992 [src: abstract] |
 | How shallow is enough | the brightest 1% suffice for well-localised events if faint hosts cluster around bright galaxies; biased without clustering or for large volumes | arXiv:2511.04786 [src] |
 | Features in the photometric `n(z)` | "significant features in the galaxy redshift distribution which can introduce biases"; the DES Y6 analysis cuts to `0.05 < z < 0.50` | arXiv:2602.04766 [src] |
 | Host weighting | a wrong weighting scheme biases H0 through the assumed redshift distribution and through favouring wrong hosts | arXiv:2405.14818 [src] |
@@ -292,7 +294,7 @@ can carry bias.
 | Redshift errors | ignoring photometric-redshift errors gives a bias comparable with other GWTC-3 systematics, still below the statistical error | arXiv:2302.12037 [src] |
 | Photometric against spectroscopic | precision degraded by up to a factor of about 9 (**forecast**, O5, 100 best events) | arXiv:2312.05302 [src: abstract] |
 | Magnitude errors and K-corrections | minor at `z < 0.2` | arXiv:2608.26307 [src] |
-| Pipeline dependence | the two LVK pipelines treat completeness differently and find different gains from the catalogue | arXiv:2605.27227 §4.1 [src] |
+| Pipeline dependence | the two LVK pipelines treat completeness differently and find different gains from the catalogue | arXiv:2605.27227 [src: Sect. IV.1] |
 
 What the catalogue adds, and how much of the sky volume it covers, as read in the LVK
 papers:
@@ -300,7 +302,7 @@ papers:
 | Quantity | Value | Place read |
 |---|---|---|
 | GLADE+ `K_s` selection | 37 201 deg², 9.9 × 10⁵ galaxies, median `z` 0.08, median `σ_z/(1+z)` 0.014; 77% photometric redshifts | arXiv:2605.27227 [src: Table 1, Sect. III.2] |
-| DES Y6 `r` band | 5169 deg², 3.5 × 10⁸ galaxies, median `z` 0.85, median `σ_z/(1+z)` 0.096 | same |
+| DES Y6 `r` band | 5169 deg², 3.5 × 10⁸ galaxies, median `z` 0.85, median `σ_z/(1+z)` 0.096 | arXiv:2605.27227 [src: Table 1, Sect. III.2] |
 | Share of the total GW localisation volume inside the complete part of the catalogue, `f_cov` | GLADE+ 5% (23% for the twenty best-localised events); DES 7% (17%) | arXiv:2605.27227 [src: Table 1] |
 | DES in-catalogue range | `0.05 < z < 0.35`; lower cut for saturated nearby galaxies, upper cut where `n(z)` stops agreeing with uniform-in-comoving-volume within 1σ; 99.9% complete at `z = 0.35` for `m_thr = 23.8`, `M_min = −16.33` | arXiv:2605.27227 [src: Sect. III.2] |
 | Gain in H0 precision over the spectral-only result, GWTC-5.0 | DES 3.5% (2% with `icarogw`, 8% with `gwcosmo`); GLADE+ 2.8% | arXiv:2605.27227 [src: Sect. IV.1] |
@@ -314,7 +316,7 @@ Sizes read in the bodies of the papers of the table above:
 
 | Issue | Size or statement | Place read |
 |---|---|---|
-| Redshift range kept from a photometric catalogue (GWTC-4.0 × DES Y6, `gwcosmo`, dark sirens only) | median H0 from 72.1 (+24.6/−19.9) at `z_max = 0.20` to 65.7 (+26.9/−19.8) at `z_max = 0.50`, lower cut 0.05; without the lower cut 79.5, 77.5 and 79.8 at `z_max` = 0.20, 0.35, 0.50; empty catalogue 74.5 (+27.3/−20.7), GLADE+ 79.6 (+27.3/−18.5). A range of 14 [der] from catalogue cuts alone, inside the statistical error of about 20 | arXiv:2602.04766 [src: Table 2 of the HTML rendering, an earlier version: its fiducial cut is `0.05 < z < 0.35` and 70.9 (+22.3/−18.6), the current abstract gives `0.05 < z < 0.50` and 71.7 (+22.7/−18.3)] |
+| Redshift range kept from a photometric catalogue (GWTC-4.0 × DES Y6, `gwcosmo`, dark sirens only) | median H0 from 72.1 (+24.6/−19.9) at `z_max = 0.20` to 65.7 (+26.9/−19.8) at `z_max = 0.50`, lower cut 0.05; without the lower cut 79.5, 77.5 and 79.8 at `z_max` = 0.20, 0.35, 0.50; empty catalogue 74.5 (+27.3/−20.7), GLADE+ 79.6 (+27.3/−18.5). | arXiv:2602.04766 [src: Table 2 of the HTML rendering, an earlier version: its fiducial cut is `0.05 < z < 0.35` and 70.9 (+22.3/−18.6), the current abstract gives `0.05 < z < 0.50` and 71.7 (+22.7/−18.3)] |
 | Why the cuts move H0 | above `z ≈ 0.4` the `n(z)` departs from uniform in comoving volume and the prior peak sits at the near side of events with support at `z ≳ 0.5`, which lowers H0; removing `z < z_min` de-weights low redshift and raises H0 | arXiv:2602.04766 [src: Sect. 4, same version] |
 | Wrong host weighting, three regimes in the number of galaxies per line of sight `N_GAL` | below about 100: no bias for any weighting; above about 10⁵ ("uninformative"): H0 tends to the value that matches the distance distribution to the wrongly weighted `n(z)`; between: transitional. Mocks are 100% complete | arXiv:2405.14818 [src: Sect. III.1, III.2, V] |
 | Why it does not show in LVK results yet | the catalogue result with `K`-band weighting is about 18% and the fixed-population spectral one about 20%: "dominated by uncertainties associated with the GW population" | arXiv:2405.14818 [src: Sect. V, on GWTC-3] |
@@ -347,16 +349,17 @@ arXiv:2310.08991.
 
 **7.1 Host contribution.** Unknown per burst and broad: mean rest-frame 90 (+29/−19)
 pc cm⁻³ for FLIMFLAM, median 186 (+59/−48) pc cm⁻³ in the ASKAP analysis
-(arXiv:2402.00505, arXiv:2208.00819) [src]. It is degenerate with H0 at low redshift
+(arXiv:2402.00505, arXiv:2208.00819) [src: abstract of each]. It is degenerate with H0 at low redshift
 where `DM_cosmic` is small. Outliers in extreme environments (FRB 20190520B) must be
-treated explicitly (arXiv:2507.18946) [src]. Mitigation: fit the host distribution;
+treated explicitly (arXiv:2507.18946) [src: abstract]. Mitigation: fit the host distribution;
 use per-burst foreground information (arXiv:2506.04186).
 
 **7.2 Milky Way.** The disc model and the halo term (50–80 pc cm⁻³,
-arXiv:1901.11051 [src]) are subtracted from every burst; a common error is a common
+arXiv:1901.11051 [src: abstract]) are subtracted from every burst; a common error is a common
 shift. Xu et al. 2025 list the Galactic electron-density model and the halo
-contribution among the choices that move H0 (arXiv:2507.18946) [src]; the inferred
-diffuse baryon fraction is sensitive to the same choice (arXiv:2506.03536) [src].
+contribution among the choices that move H0 (arXiv:2507.18946) [src: abstract]; the
+inferred diffuse baryon fraction is sensitive to the same choice (arXiv:2506.03536)
+[src: abstract].
 
 **7.3 Cosmic scatter.** `p(DM | z)` is skewed and its width depends on feedback. The
 fluctuation parameter is degenerate with H0 (arXiv:2305.07022) [src]. Simulation-based
@@ -367,35 +370,37 @@ cosmographic parameters, the deceleration parameter in particular (Lemos, Gonça
 Alcaniz 2026, abstract read; not in the source list, which was already over its cap).
 
 **7.4 The `Ω_b f_d`–H0 degeneracy.** Any H0 from the mean relation is conditional on
-`Ω_b h²` and `f_d` (physics file, §7.2). An analysis that fixes `f_d` to a simulation
+`Ω_b h²` and `f_d` (physics file, Sect. 7.2). An analysis that fixes `f_d` to a simulation
 value quotes a statistical error only.
 
 **7.5 Selection.** High-DM bursts are smeared and scattered and are detected less
 often; the telescope beam and the burst width shape the observed `p(z, DM)`. James et
 al. 2022 model these and obtain a larger H0 error than fits that do not
-(arXiv:2208.00819) [src]. CHIME infers a large population with scattering above 10 ms
-at 600 MHz of which it sees a small fraction (arXiv:2106.04352) [src].
+(arXiv:2208.00819) [src: abstract]. CHIME infers a large population with scattering
+above 10 ms at 600 MHz of which it sees a small fraction (arXiv:2106.04352)
+[src: abstract].
 
 **7.6 Host association.** Associations are probabilistic and biased toward bright,
-nearby hosts when ambiguous cases are dropped (arXiv:2609.04765) [src]. FRB hosts are
-a biased tracer of star formation (arXiv:2409.16964) [src].
+nearby hosts when ambiguous cases are dropped (arXiv:2609.04765) [src: abstract]. FRB
+hosts are a biased tracer of star formation (arXiv:2409.16964) [src: abstract].
 
 **7.7 Sizes read in the bodies.** "σ" in the rows from arXiv:2507.18946 is the
-statistical error of that analysis, about 2 km s⁻¹ Mpc⁻¹ on 71.28, for H0 alone.
+statistical error of that analysis, 71.28 (+1.90/−2.08), for H0 alone (arXiv:2507.18946)
+[src: abstract].
 
 | Term | Size or statement | Place read |
 |---|---|---|
 | Host DM model | replacing simulation-based `(μ_host, σ_host)` by a log-normal of median 100 and σ 50 pc cm⁻³ lowers H0 by more than 3σ | arXiv:2507.18946 [src: Sect. IV.4] |
-| Host DM form | log-normal "has limited theoretical motivation"; published per-burst estimates of 30–81 and below 70 pc cm⁻³ | arXiv:2005.13161 [src: Methods §0.5] |
+| Host DM form | log-normal "has limited theoretical motivation"; published per-burst estimates of 30–81 and below 70 pc cm⁻³ | arXiv:2005.13161 [src: Methods Sect. 0.5] |
 | Host outliers | removing FRB 20190520B changes H0 by less than 0.1σ, because the tails of the likelihood are long; one poorly localised burst in the dense part of the sample changes it by about 0.8σ | arXiv:2507.18946 [src: Sect. IV.1] |
 | Galactic disc model | NE2001 against YMW16 without a latitude cut: about 1.6σ; range of H0 over latitude cuts 2.1σ (NE2001), 1.3σ (YMW16); converges after a cut, `|b| > 15°` adopted, which removes 18 of 117 bursts | arXiv:2507.18946 [src: Sect. IV.1, IV.2] |
 | Galactic disc, selection | at `DM_ISM = 500` pc cm⁻³ the detection rate falls by 20% (Parkes) to 50% (ASKAP at 900 MHz) and the mean detected redshift by up to 17% | arXiv:2208.00819 [src: Appendix A.2] |
 | Galactic halo | fixed values in use: 50, 65 or 30 pc cm⁻³; a disc-plus-sphere model gives 30 to 245 across the sky; fixing 50 instead of that model lowers H0 by more than 2.7σ | arXiv:2507.18946 [src: Sect. IV.3] |
 | Galactic halo, earlier practice | 50 pc cm⁻³ assumed, expected range 50–100, "largely degenerate" with the host model | arXiv:2005.13161 [src: main text]; arXiv:2208.00819 [src: Sect. 2.1] |
-| Scatter of the cosmic term and feedback | `σ_DM = F z^(−0.5)`; `F` = 0.09, 0.15, 0.32 in semi-analytic models where haloes below 10¹⁴, 10¹³, 10¹¹ M☉ are evacuated of gas, that is strong to weak feedback (a smaller `F` is a smoother universe) | arXiv:2005.13161 [src: Methods §0.5]; arXiv:2208.00819 [src: Sect. 7.2] |
+| Scatter of the cosmic term and feedback | `σ_DM = F z^(−0.5)`; `F` = 0.09, 0.15, 0.32 in semi-analytic models where haloes below 10¹⁴, 10¹³, 10¹¹ M☉ are evacuated of gas, that is strong to weak feedback (a smaller `F` is a smoother universe) | arXiv:2005.13161 [src: Methods Sect. 0.5]; arXiv:2208.00819 [src: Sect. 7.2] |
 | `F` in H0 | from `F = 10^(−0.75)` to 0.32: H0 up by about 2.9σ; to 0.09: down by about 3.9σ | arXiv:2507.18946 [src: Sect. IV.4] |
 | `F` measured | `log10 F = −0.48 (+0.26/−0.18)`, obtained only with an H0 prior between the CMB and supernova values; "strong degeneracy" with H0; `F = 0.32` in earlier work was "somewhat arbitrarily" adopted and partly absorbed by `σ_host` | arXiv:2305.07022 [src: Sect. IV.1, IV.2]; arXiv:2208.00819 [src: Sect. 7.2] |
-| `f_d` | 30% on the stellar mass density gives 4% on `f_d(z = 0)` and about 2.5% at `z = 1`; H0 scales with the assumed fraction, by 0.93/0.865 between two published values (7.5% [der]) | arXiv:2208.00819 [src: Sect. 7.2]; arXiv:2507.18946 [src: Sect. IV.4] |
+| `f_d` | 30% on the stellar mass density gives 4% on `f_d(z = 0)` and about 2.5% at `z = 1`; H0 scales with the assumed fraction; two published values of that fraction are 0.93 and 0.865 | arXiv:2208.00819 [src: Sect. 7.2]; arXiv:2507.18946 [src: Sect. IV.4] |
 | `Ω_b h²` | fixed; its uncertainty is of order 0.5–1%, "negligible" at present | arXiv:2208.00819 [src: Sect. 2.1, 7.2] |
 | Feedback in the baryon partition | `f_IGM ≈ 0.6` at `z < 1` in SIMBA without feedback, above 85% with AGN feedback, about 80% in IllustrisTNG; halo gas fraction 0.35 (+0.30/−0.25) of `Ω_b/Ω_M` for 10⁹–5 × 10¹² M☉; the authors name over-fitting to one simulation as a risk | arXiv:2409.16952 [src: main text, Methods] |
 | Fixing the nuisance parameters | gives "a biased and artificially too-precise" H0 even at their best-fit values | arXiv:2208.00819 [src: Sect. 5.1] |
@@ -416,35 +421,36 @@ arXiv:2507.07090.
 
 - **Lens-model spread.** Cluster-lensed supernovae use seven or eight independent mass
   models; "the range of admissible H0 values predicted across the lens models limits
-  further precision" (arXiv:2403.18902) [src]. Model weighting changes Refsdal from
-  64.8 to 66.6 (arXiv:2305.06367) [src].
+  further precision" (arXiv:2403.18902) [src: abstract]. Model weighting changes Refsdal
+  from 64.8 (eight models) to 66.6 (two models) (arXiv:2305.06367) [src: abstract].
 - **Mass-sheet degeneracy.** For lensed quasars the treatment of the degeneracy sets the
-  error: the same siren-plus-lens combination gives 13.6% with the TDCOSMO-2025
-  hierarchy and 5.6% with assumed profiles (arXiv:2606.03634) [src]. A lensed Type Ia
+  error: the same siren-plus-lens combination gives a relative precision of 13.58%
+  with the TDCOSMO-2025 hierarchy and 5.57% with the H0LiCOW method (arXiv:2606.03634)
+  [src: abstract]. A lensed Type Ia
   supernova breaks it with its absolute magnification (arXiv:2403.18902).
 - **Microlensing and millilensing.** Simulated as additional systematics on the delay
-  for SN Encore (arXiv:2509.12301) [src]; a time-dependent relative magnification of one
-  image had to be modelled for SN 2025wny (arXiv:2608.28427) [src].
-- **Time-delay precision.** 39.8 (+3.9/−3.3) days for Encore, about 9% [der]; template
-  imaging would improve it (arXiv:2509.12301) [src].
-- **Blinding.** Standard in this subfield (physics file, §8).
+  for SN Encore (arXiv:2509.12301) [src: abstract]; a time-dependent relative magnification
+  of one image had to be modelled for SN 2025wny (arXiv:2608.28427) [src: abstract].
+- **Time-delay precision.** `Δt = −39.8 (+3.9/−3.3)` days for Encore; template imaging
+  would improve the H0 uncertainty significantly (arXiv:2509.12301) [src: abstract].
+- **Blinding.** Standard in this subfield (physics file, Sect. 8).
 
 Sizes read in the bodies (H0 in km s⁻¹ Mpc⁻¹):
 
 | Term | Size or statement | Place read |
 |---|---|---|
-| Lens model, SN Refsdal | two closely related models carry 0.44 and 0.51 of the weight (0.95 together); budget built on one of them: about 5% on H0, the principal dark-matter halo of the cluster being the largest term; image separation alone gives 5.5% and explains about 92% of the delay variance; the same code applied to a simulated cluster recovers delays with a slope of 1.046 ± 0.021 | arXiv:2305.06367 [src: main text, "Systematic uncertainties and error budget", "Analytical expectation"] |
-| Delay against model, SN Refsdal | delay measured to 1.5% [der: 5.6/376]; a 3% delay corresponds to 6% on H0 | same |
-| Matter density, SN Refsdal | varying Ω_M with H0 leaves residuals of about 0.7, "likely to be an upper limit" | arXiv:2305.06367 [src: Supplementary] |
+| Lens model, SN Refsdal | two closely related models carry 0.44 and 0.51 of the weight; budget built on one of them: about 5% on H0, the principal dark-matter halo of the cluster being the largest term; image separation alone gives 5.5% and explains about 92% of the delay variance; the same code applied to a simulated cluster recovers delays with a slope of 1.046 ± 0.021 | arXiv:2305.06367 [src: main text, Sect. "H_0 constraints" (weights), Sect. "Systematic uncertainties and error budget" and Sect. "Analytical expectation for H_0 uncertainty"] |
+| Delay against model, SN Refsdal | SX–S1 delay 376.0 (+5.6/−5.5) days [src: Sect. "H_0 constraints"]; a 3% delay corresponds to 6% on H0 [src: Sect. "Systematic uncertainties and error budget"] | arXiv:2305.06367 |
+| Matter density, SN Refsdal | varying Ω_M with H0 leaves residuals of about 0.7, "likely to be an upper limit" | arXiv:2305.06367 [src: Supplementary, Sect. "Effects of varying Ω_M and Ω_Λ simultaneously with H0"] |
 | Budget, SN H0pe | about 9% in total: two fifths from photometry and spectroscopy (each delay about 8%, 5.6% effective), three fifths from lens modelling, of which one quarter within the dominant model (6.5% on H0 by itself) and three quarters the spread between models | arXiv:2403.18902 [src: Sect. X.5] |
 | Lens model, SN Encore | per-model H0 from 59.5 (+9.8/−6.6) to 106.4 (+31.8/−35.8); two models carry 0.845 and 0.147 of the weight, the others below 0.01 | arXiv:2509.12301 [src: Table 6] |
 | Mass sheet, cluster lenses | reduced by multiple-image systems at several redshifts, not eliminated; magnifications measured to about 25% exclude `|Δλ| ≳ 0.1` each, and `Δλ ≈ 0.05` halves the weight of the best SN H0pe model; several models match the magnification ratios and not the absolute magnifications | arXiv:2403.18902 [src: Sect. X.3] |
-| Mass sheet, galaxy lenses | same quasar data: 74.2 ± 1.6 with `λ_int = 1` imposed (power-law profiles) against 74.5 (+5.6/−6.1) with `λ_int` free, 2% against 8% [der]; 71.6 (+3.9/−3.3) with the 2025 kinematics (velocity dispersions to 4.0% instead of 7.7%); 73.7 (+4.7/−4.4) with a uniform Ω_m prior on [0.05, 0.5] in place of Pantheon+; `κ_ext` of order 10⁻² | arXiv:2506.03023 [src: Sect. 3.1, 10.1.1] |
+| Mass sheet, galaxy lenses | same quasar data: 74.2 ± 1.6 with `λ_int = 1` imposed (power-law profiles) against 74.5 (+5.6/−6.1) with `λ_int` free; 71.6 (+3.9/−3.3) with the 2025 kinematics (velocity dispersions to 4.0% instead of 7.7%); 73.7 (+4.7/−4.4) with a uniform Ω_m prior on [0.05, 0.5] in place of Pantheon+; `κ_ext` of order 10⁻² | arXiv:2506.03023 [src: Sect. 3.1, 10.1.1] |
 | Radial profile, SN 2025wny | 66.7 (+7.6/−6.3) with isothermal profiles, 70.8 (+8.2/−6.1) with free slopes; the constraint is dominated by the spectroscopic A–D delay, measured to about 5% | arXiv:2608.28427 [src: Sect. VI.2] |
 | Microlensing, SN Encore | chromatic, because the data lie after the first three rest-frame weeks; 1000 simulated curves per image; added to the delay distribution, of which most of the width comes from the time of peak of the reference image | arXiv:2509.12301 [src: Sect. V.1] |
 | Microlensing, SN 2025wny | analysis choices move the delays by at most 2.2 and 2.9 days, 0.7σ of the statistical error, the largest for a peak-only fit, attributed to microlensing not captured by the magnification model | arXiv:2608.28427 [src: Sect. VI.1] |
 | Millilensing by subhaloes | 29% added uncertainty on the magnifications of SN Encore for a 5% substructure fraction, against 10% for SN Refsdal; this weakens the standard-candle route to the mass sheet | arXiv:2509.12301 [src: Sect. V.2] |
-| Post-unblinding changes | Refsdal: a sign of the magnification in the weights, and a change of weighting observable worth 0.1 | arXiv:2305.06367 [src: main text] |
+| Post-unblinding changes | Refsdal: a sign of the magnification in the weights, and a change of weighting observable (SX's position instead of the SX–S1 separation) worth 0.1 | arXiv:2305.06367 [src: Sect. "H_0 constraints"] |
 
 Details for lensed quasars and kinematics: `cosmo-distance-ladder-h0`.
 

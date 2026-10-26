@@ -118,17 +118,19 @@ The recipe [src: arXiv:2503.19441, Sect. 2.4.4 and App. B]:
 1. f_r per bin from the bpz template index T_B < 1.9, which includes any
    galaxy with an elliptical-template contribution, validated against the
    red sequence on a KiDS–GAMA matched sample; varying the cut by ±0.1
-   changes f_r by less than 0.02, so f_r is fixed.
+   changes f_r by less than 0.02, so f_r is fixed (arXiv:2503.19441) [src:
+   App. B].
 2. ⟨M_h⟩ per bin from r-band luminosities through a linear relation fitted
    to weak-lensing halo masses of SDSS early types:
    log₁₀M_h = γ[1/(1 + ⟨z⟩) − 1/(1 + z_piv)] + δ log₁₀(⟨L_r⟩/L₀) + ΔM
    (Eq. 28), z_piv = 0.3417, L₀ = 10¹¹ (h/0.7)⁻² L⊙, γ = 1.25 ± 0.33,
-   δ = 1.42 ± 0.16, ΔM = 13.56 ± 0.02.
+   δ = 1.42 ± 0.16, ΔM = 13.56 ± 0.02 (arXiv:2503.19441) [src: App. B].
 3. The uncertainty on log₁₀M_h (about 0.2 in bin 1, 0.1 elsewhere, bins
    correlated above 0.9) enters as a multivariate Gaussian prior of width 0.2
-   in every bin.
+   in every bin (arXiv:2503.19441) [src: App. B].
 4. A_IA and β with a bivariate Gaussian prior from a fit to early-type
-   measurements, pivot 10^13.5 h⁻¹ M⊙.
+   measurements, pivot 10^13.5 h⁻¹ M⊙ (arXiv:2503.19441) [src: Sect.
+   2.4.4].
 5. No central/satellite distinction; the paper argues blue satellites matter
    less because early-type satellite fractions are about twice those of late
    types at fixed mass and redshift.
@@ -189,7 +191,7 @@ Three practices exist:
 | TATT | A₁, A₂, η₁, η₂, b_TA | perturbative expansion to second order | covers NLA; recovers both mock types | weakly constrained terms at large k_min; projection effects (L2) | DES Y3, HSC Y3, DES Y6 (one of two) |
 | TATT with b_TA = 1 | four | density weighting fixed | one fewer parameter | large bias when b_TA ≠ 1 in the truth (below) | DES Y6 |
 | NLA-M | A_IA, β (informed), masses | only red galaxies align; mass power law | ≈ 5% tighter than NLA (L2) | depends on f_r, halo-mass extrapolation, no satellites | KiDS-Legacy |
-| Tailored NLA, blue sample | one amplitude per bin, informed null | blue galaxies do not align | factor 1.7 in σ(S8) (L2) | shot noise from discarding red galaxies | DES Y3 blue (reanalysis) |
+| Tailored NLA, blue sample | one amplitude per bin, informed null | blue galaxies do not align | factor 1.7 in σ(S8) (arXiv:2512.04209) [src: Sect. IV] | shot noise from discarding red galaxies | DES Y3 blue (reanalysis) |
 | Halo model | central and satellite terms | radial satellite alignment, HOD | small-scale IA | depends on satellite fractions and halo exclusion | forecasts, simulation studies |
 
 Stated reasons for fixing b_TA in DES Y6: "guided by simulated tests"
@@ -209,10 +211,11 @@ Flagship) [src: arXiv:2602.16448, Sects. 5.1–6]:
   "virtually" no constraining power relative to NLA [src: Sect. 6].
 - Only zTATT recovers cosmology for both generating models. Redshift-
   independent NLA and TATT bias A₁; most biases above 0.3σ occur in w0waCDM
-  with zTATT data vectors [src: Sect. 5.2].
+  with zTATT data vectors (arXiv:2602.16448) [src: Sect. 5.2].
 - The dangerous region is low Δχ²_ν with high bias, undetectable from the
   fit quality alone: six cases in the S8–Ω_m plane, three of them zTATT with
-  b_TA = 1. A Δχ²_ν of about 0.08 corresponds to a 2% PTE [src: Sect. 5.2].
+  b_TA = 1. A Δχ²_ν of about 0.08 corresponds to a 2% PTE (arXiv:2602.16448)
+  [src: Sect. 5.2].
 - Narrowing the IA priors (two narrower sets listed) leaves the cosmological
   constraints "virtually the same" [src: Sect. 5.1.4]. This contrasts with
   the KiDS-Legacy and DES Y3 blue-sample gains from informed priors (L2),

@@ -60,11 +60,11 @@ re-verify against the cited paper before a number enters a manuscript.
 ## Errors that recur
 <!-- key: errors-that-recur -->
 
-- Quoting 0.784 or 0.73 as lensing-tomography S8.
-- Mixing amplitude exponents 0.5, 0.4, 0.25, 0.2.
+- Quoting the superseded 0.784 (arXiv:2105.03421) or 0.73 (arXiv:2111.09898) as lensing-tomography S8 [src: abstract].
+- Mixing amplitude exponents 0.5, 0.4, 0.25, 0.2 (arXiv:2105.03421, arXiv:2407.04606, arXiv:2304.05203 Sect. I, arXiv:2109.04458) [src: abstract].
 - Calling cross-correlations immune to systematics.
 - Treating ACT + Planck lensing, or DESI LRG analyses, as independent.
-- Reading b_v ≈ 0.3 as missing baryons, or kSZ as growth.
+- Reading b_v = 0.33 ± 0.03 (arXiv:2511.15701) [src: abstract] as missing baryons, or kSZ as growth.
 - Claiming DESI Y1 × ACT kSZ "rules out TNG" (PTE 0.045, free amplitude; arXiv:2503.19870). [src: abstract]
 - Citing 6×2pt (0.792) as cross-correlation; cross-only gave 0.736 (arXiv:2206.10824, arXiv:2203.12440) [src: abstract].
 - Comparing f_NL with different p.
@@ -94,7 +94,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 6k; methods 12k; results 12k; surveys 5k; systematics 11k; deep/_progress 1k; deep/cib-cross-correlations 8k; deep/isw 7k; deep/ksz-gas-profiles 11k; deep/ksz-velocity-reconstruction 8k; deep/other-secondaries 7k; deep/tsz-cross-correlations 7k.
+Sizes, in thousands of tokens: L1 3k; open 7k; methods 12k; results 12k; surveys 6k; systematics 11k; deep/cib-cross-correlations 8k; deep/isw 7k; deep/ksz-gas-profiles 11k; deep/ksz-velocity-reconstruction 8k; deep/other-secondaries 7k; deep/tsz-cross-correlations 7k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

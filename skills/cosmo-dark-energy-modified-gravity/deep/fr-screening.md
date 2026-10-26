@@ -57,7 +57,7 @@ arXiv:1412.0133; Artis et al. 2024, eRASS1, arXiv:2402.08459; Vogt et al.
    the Sheth–Tormen form itself, which only sets the relative enhancement
    [src: arXiv:2512.05819, Sect. III.1].
 2. **Compute the collapse threshold in the modified theory.**
-   - Cataneo et al.: `delta_c = A [1 − B log10(1 + (Omega_m^-1 − 1)/(1 + z)^3)]`
+   - Cataneo et al. (arXiv:1412.0133): `delta_c = A [1 − B log10(1 + (Omega_m^-1 − 1)/(1 + z)^3)]`
      with (A, B) = (1.6865, 0.0123) for GR and (1.7063, 0.0136) for `f(R)`,
      the latter for forces enhanced by 4/3 everywhere (Eq. 12); the
      virial overdensity ratio is fixed to 74/94 (Eq. 13). The 4/3 values
@@ -75,7 +75,7 @@ arXiv:1412.0133; Artis et al. 2024, eRASS1, arXiv:2402.08459; Vogt et al.
      corrected against 49 BRIDGE N-body cosmologies by
      `R_BRIDGE/R_SAM = q~ (1/sqrt(H0 r_c) − 0.1)(z − 0.8) + 1` with
      `q~ = 0.06` (Eq. 19), which cuts the model–simulation variance by 26%
-     [src: Sect. III.1]. The BRIDGE runs have massless neutrinos, so the
+     [src: arXiv:2512.05819, Sect. III.1]. The BRIDGE runs have massless neutrinos, so the
      calibration does not cover neutrino effects [src: same].
 3. **Mass definitions.** HMFs calibrated at `M_200m` or `M_vir` are
    converted to the survey's `M_500c` or `M_200c` with an NFW profile and
@@ -87,7 +87,7 @@ arXiv:1412.0133; Artis et al. 2024, eRASS1, arXiv:2402.08459; Vogt et al.
    `(s ln(M/10^14 M_sun) + q)` with `q ~ N(1, 0.5)`, `s ~ N(0, 0.5)`
    (Eq. 21), because GR HMFs differ by up to 10% between simulations and
    finders and its `f(R)` model differs from that of Cataneo et al. by up
-   to 20% [src: Sect. 3.2].
+   to 20% [src: arXiv:2402.08459, Sect. 3.2].
 5. **Mass calibration from lensing, kept in GR.** All three calibrate the
    observable–mass relation with weak lensing modelled as in GR. Reasons
    read: in `f(R)` the lensing mass equals the GR one up to effects of
@@ -128,18 +128,18 @@ Desmond and Ferreira 2020, arXiv:2009.08743:
    unscreened mass within `4 lambda_C`, from a halo catalogue plus a
    BORG-reconstructed density field. The map reaches 290 Mpc (2M++
    completeness), so with `lambda_C,max = 8 Mpc` test galaxies are kept to
-   250 Mpc [src: Sect. IV.1.4].
+   250 Mpc [src: arXiv:2009.08743, Sect. IV.1.4].
 3. **Likelihood.** For each galaxy and each of 21 `lambda_C` values in
    0.3–8 Mpc, 1000 Monte Carlo realisations of `r_*` and `w_1` at
    `Delta G/G_N = 1` are fitted with a Gaussian mixture (2–25 components,
    chosen by BIC), then rescaled with `Delta G/G_N`; each galaxy enters as
    `(1 − f_i)` screened plus `f_i` unscreened (Eqs. 30–31), with `f_i` the
-   unscreened fraction of realisations [src: Sect. IV.3].
+   unscreened fraction of realisations [src: arXiv:2009.08743, Sect. IV.3].
 4. **Astrophysical noise.** Each term is convolved with a Gaussian of width
    `sigma_i`: proportional to distance for gas–star offsets (angular
    resolution of the Arecibo beam), constant for warps, both free and
    marginalised; chosen by BIC among constant, distance-dependent and both
-   [src: Sect. IV.3]. Only disks with `b/a = 0.15` are used because `w_1`
+   [src: arXiv:2009.08743, Sect. IV.3]. Only disks with `b/a = 0.15` are used because `w_1`
    correlated with axis ratio "in a way that was difficult to model"
    [src: same]. Sampling with emcee, about 30 walkers, chains ≥ 50
    autocorrelation lengths [src: same].
@@ -154,7 +154,7 @@ Additions to the L2 card for Gonzalez et al. 2026, arXiv:2604.26915:
   non-linearities are "well accounted for by the EFT counterterms". Using
   0.2 would tighten the `f_R0` bound by 35%, and "most of the constraining
   power on the fifth-force scale comes from wavenumbers higher than"
-  0.17 [src: Sect. 5, "Consistency and validation"].
+  0.17 [src: arXiv:2604.26915, Sect. 5, "Consistency and validation"].
 - **`n` free.** `n = 1.41 ± 0.52` (full shape), `1.30 ± 0.51` (with BAO),
   supporting `n = 1`; a small degeneracy with `f_R0` relaxes the bound on
   the mediator mass [src: same].
@@ -257,7 +257,6 @@ one-sided parameters near a boundary, quote the prior with the limit.
 | Collapse threshold parameters | GR (1.6865, 0.0123); `f(R)` (1.7063, 0.0136); `Delta_vir` ratio 74/94 | — | arXiv:1412.0133 | Eqs. 12–13 |
 | nDGP HMF correction | `q~ = 0.06`; variance 0.0073 → 0.0058 | 49 BRIDGE cosmologies | arXiv:2512.05819 | Sect. III.1, Eq. 19 |
 | nDGP, Planck PR4 / + SPT clusters | `1/sqrt(H0 r_c) < 1.62` / `< 1.41` (95%) | massive ν for the joint | arXiv:2512.05819 | Eq. 31; abstract |
-| Same in `Omega_rc` | < 0.66 / < 0.50 | — | [der: `Omega_rc = (x/2)^2`] | — |
 | nDGP, BOSS DR12 EFT | `Omega_rc ≲ 0.65` (log prior), `≲ 0.2` (Bayes-factor bound), `A_s` fixed to Planck | — | arXiv:2211.12523 | abstract |
 | SPT nDGP effect on `sigma8` | error +58%, `Omega_m` error +7%, relative to νΛCDM | clusters + WL | arXiv:2512.05819 | Sect. V.1 |
 | Galaxy morphology range | `lambda_C` 0.3–8 Mpc; `chi` 1.3 × 10^-8 to 9.4 × 10^-6 | — | arXiv:2009.08743 | Table 1 |
@@ -266,8 +265,8 @@ one-sided parameters near a boundary, quote the prior with the limit.
 | DESI ν degeneracy | `Sum m_nu < 0.533` (GR), `< 0.589 eV` (MG); `f_R0 < 2.60 × 10^-5` vs `2.52 × 10^-5` | DESI FS + BAO + BBN + `n_s10` | arXiv:2604.26915 | Eqs. 22–24 |
 | Free Hu–Sawicki index | `n = 1.41 ± 0.52` (FS), `1.30 ± 0.51` (FS + BAO) | — | arXiv:2604.26915 | Sect. 5 |
 
-The eRASS1 abstract and Eq. 50 give −4.31 while Table 2 of the same
-version gives −5.12 for the massless case; the sibling `cosmo-clusters`
+The eRASS1 abstract and Eq. 50 (arXiv:2402.08459) give −4.31 while Table 2
+of the same version gives −5.12 for the massless case; the sibling `cosmo-clusters`
 quotes −4.31. Until the discrepancy is resolved at source, quote −4.31
 with the section and note the table value.
 
@@ -319,8 +318,9 @@ background (ΛCDM-matched or not).
 
 - Hagstotz et al. 2019 (the eRASS1 HMF formalism) and Mitchell et al. 2018
   (screening mass): described only as eRASS1 cites them.
-- The source of the eRASS1 Table 2 / text discrepancy (−5.12 against
-  −4.31; 0.39 against 0.44 eV); a later arXiv version may correct one.
+- The source of the eRASS1 Table 2 / text discrepancy (arXiv:2402.08459:
+  −5.12 against −4.31, Table 2 against Eq. 50; 0.39 against 0.44 eV, Table 2
+  against Eq. 52 and the abstract); a later arXiv version may correct one.
 - The BOSS nDGP pipeline body (scale cuts, priors) beyond the abstract.
 - Vainshtein constraints on cubic or quartic Galileons and on other
   named Horndeski models (JBD, K-mouflage) were not read.

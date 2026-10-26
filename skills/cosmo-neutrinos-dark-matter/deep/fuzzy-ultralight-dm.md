@@ -49,7 +49,7 @@ and the codes built on them) follow the scheme of Hlozek et al. 2015
    its perturbation exactly, with the field's energy density in H
    everywhere, including the recombination module and the visibility
    function; choose the initial field value by shooting to the requested
-   Ω_a/Ω_d to 10⁻⁴ [src: Sect. III.4].
+   Ω_a/Ω_d to 10⁻⁴ [src: arXiv:1410.2896, Sect. III.4].
 2. **After oscillation** (m_a ≥ 3H): direct integration becomes
    "computationally prohibitive" once m_a ≫ 3H (already for m_a ≳
    10⁻²⁷ eV), so a WKB average over the oscillation period gives an
@@ -57,11 +57,11 @@ and the codes built on them) follow the scheme of Hlozek et al. 2015
    c_a² = [k²/(4m_a²a²)]/[1 + k²/(4m_a²a²)] (Eq. 32),
    which interpolates between pressureless matter on large scales and a
    cut-off below the Jeans scale; the fluid equations are Eqs. 33–34
-   (synchronous gauge) [src: Sect. III.3].
+   (synchronous gauge) [src: arXiv:1410.2896, Sect. III.3].
 3. **Check the switch.** Results are insensitive to moving the matching
    time by δτ = 10/m; the fluid code agreed with direct integration of
    the perturbed field up to m_a ~ 10⁴ H₀, and the approximation
-   improves with mass [src: Sect. III.3].
+   improves with mass [src: arXiv:1410.2896, Sect. III.3].
 
 ### Step 2. Sample a two-parameter model whose degeneracies change with mass
 <!-- key: step-2-sample-a-two-parameter-model-whose -->
@@ -81,7 +81,7 @@ and the codes built on them) follow the scheme of Hlozek et al. 2015
   limit at the high-mass end is quoted from samples restricted to a mass
   range, because "naively marginalizing over the axion mass ... would
   lead to spurious results" [src: arXiv:2606.06410 Sect. IV.2].
-- **Mass prior.** Uniform in log₁₀ m_a over −33 to −22 in the first CMB
+- **Mass prior.** Uniform in log₁₀ m_a over −33 to −22 (arXiv:1410.2896, Eq. 39) in the first CMB
   + galaxy analysis, called "the most conservative" (a Jeffreys prior)
   and the string-landscape preference; flat priors on Ω_ah² and Ω_ch²
   in 10⁻⁵–0.3 so that fractions down to 10⁻⁴ are reached, rather than a
@@ -167,17 +167,17 @@ The ultra-faint-dwarf limit (Dalal & Kravtsov 2022, arXiv:2203.05750
 3. **Stars.** Test particles with an exponential projected profile and
    isotropic Maxwellian velocities from the Jeans equation, evolved for
    10 Gyr; the initial scale length r₀ is a nuisance parameter standing
-   for star formation and baryonic heating [src: Sect. II].
+   for star formation and baryonic heating [src: arXiv:2203.05750, Sect. II].
 4. **Likelihood.** p_vel from the line-of-sight velocity distribution of
    500 projections against each star's measured velocity (Eq. 2), times
    a Gaussian on the projected half-light radius (Eq. 3), p_tot =
    p_vel × p_size (Eq. 4); stellar positions are not modelled because the
-   spectroscopic selection function is unknown [src: Sect. III].
+   spectroscopic selection function is unknown [src: arXiv:2203.05750, Sect. III].
 5. **Priors.** Uniform r₀ (0–37.5 pc Segue 1, 0–50 pc Segue 2) and v_1/2
    (1–12.5 and 1–5 km/s); the result is not sensitive to them; uniform
    prior on 1/m_FDM, i.e. ∝ m_FDM⁻², which "heavily favours light FDM
    masses and strongly disfavours CDM" and so makes the limit
-   conservative [src: Sects. III–IV].
+   conservative [src: arXiv:2203.05750, Sects. III–IV].
 
 ## Choices and what they cost
 <!-- key: choices-and-what-they-cost -->
@@ -192,20 +192,19 @@ limit of 4.7 keV "translates into a FDM limit which is much weaker than
 the one that would be obtained using the k_1/2 mapping"; k_0.75 (power
 at 75% of ΛCDM) maps better at higher masses, because the cut-off moves
 into more non-linear scales; the conclusion holds for the 1D linear
-power too (arXiv:1703.04683 [src]). The fuzzy cut-off in the flux power
+power too (arXiv:1703.04683 [src: main text, discussion of Fig. 3]). The fuzzy cut-off in the flux power
 shows "no significant degeneracies" with the other parameters [src].
 
 ### Gaussian-process against neural emulator, glass against grid
 <!-- key: gaussian-process-against-neural-emulator-glass -->
 
-The 2026 pure-fuzzy limit (1.9 × 10⁻²¹ eV) is an order of magnitude
-below the 2020 one (2 × 10⁻²⁰ eV) on the same type of data. The 2026
+The 2026 pure-fuzzy limit (1.9 × 10⁻²¹ eV) lies below the 2020 one
+(2 × 10⁻²⁰ eV) on the same type of data. The 2026
 authors give two possible reasons: glass initial conditions for the gas
 in 2020 against offset grids in 2026, and a Gaussian-process emulator
 optimised for the narrow pure-fuzzy posterior against a two-stage
 neural emulator built for the broad mixed posterior [src:
-arXiv:2606.06969 Sect. 4.1]. Both use log-uniform mass priors (above),
-so the prior does not explain that gap [der: from the priors read]. The
+arXiv:2606.06969 Sect. 4.1]. The
 2020 authors attribute their gain over 2017 to k_max = 0.2 instead of
 0.08 s/km, the emulator, a thermal model in which T₀ and γ are tied to
 the heating history through u₀, and the log prior; with k_max = 0.126
@@ -217,7 +216,7 @@ arXiv:2007.12705].
 
 A uniform prior on 1/m weights light masses (∝ m⁻² in m, as stated in
 arXiv:2203.05750 Sect. IV [src]) and gives a conservative lower limit;
-a log-uniform prior weights them as m⁻¹ [der: Jacobian of log m] and is
+a log-uniform prior is
 called less informative in arXiv:2007.12705. A lower limit has to be
 quoted with its prior and its range (−22 to −19 there), because the
 range sets the mass that counts as "indistinguishable from CDM". The
@@ -277,10 +276,10 @@ arXiv:2606.06410 Sect. II.1, IV.1, Appendix B].
 | Fluid switch | m_a = 3H; matching time insensitive to δτ = 10/m | axionCAMB scheme | arXiv:1410.2896 | Sects. III.3–III.4 |
 | Mass prior, CMB + galaxies | −33 < log₁₀(m_a/eV) < −22 | 2015 | arXiv:1410.2896 | Eq. 39 |
 | Quantum-pressure scale vs data | k_J = 64.7 h/Mpc (10⁻²² eV, z = 5.4) vs k_max = 12.7 h/Mpc | Lyα 2017 | arXiv:1703.04683 | main text, footnote 1 |
-| Masses simulated, 2017 | 1, 4, 5.7, 15.7, 30 × 10⁻²² eV | Lyα | arXiv:1703.04683 | Simulations |
+| Masses simulated, 2017 | 1, 4, 5.7, 15.7, 30 × 10⁻²² eV | Lyα | arXiv:1703.04683 | Sect. "Simulations" |
 | k_max and its effect, 2020 | 0.2 s/km; 0.126 → log m > −20.24; 0.08 → −20.64 | Lyα | arXiv:2007.12705 | footnote 4 |
 | Mass prior, 2020 | log(m_a/eV) ∈ [−22, −19] | Lyα | arXiv:2007.12705 | Model |
-| Half-mode mass of the 2020 limit | 7.2 × 10⁷ M⊙ | Lyα | arXiv:2007.12705 | Results |
+| Half-mode mass of the 2020 limit | 7.2 × 10⁷ M⊙ | Lyα | arXiv:2007.12705 | Sect. "Results" |
 | Simulations, 2026 | 10 Mpc/h, 2 × 512³, 10⁴ mock spectra; convergence 10% (15% worst) | Lyα | arXiv:2606.06969 | Sect. 3.1 |
 | Frequentist check, 2026 | > 1.1 × 10⁻²¹ eV (Neyman, profile) vs > 1.9 × 10⁻²¹ eV (Bayesian) | Lyα | arXiv:2606.06969 | Sect. 4.1 |
 | Fraction beyond reach, 2026 | no useful f_FDM limit for log₁₀ m ≳ −20 | Lyα | arXiv:2606.06969 | abstract |

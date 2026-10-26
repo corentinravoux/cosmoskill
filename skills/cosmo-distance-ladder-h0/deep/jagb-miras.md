@@ -22,7 +22,7 @@ shares GLOESS and the NGC 4258 zero point: `deep/trgb.md`.
 Notation. m_JAGB is the apparent JAGB reference magnitude of a field, M_JAGB
 its absolute value; mu_0 a true distance modulus; sigma_s the GLOESS
 smoothing width; P a Mira period in days; a the apparent PL zero point of a
-Mira sample at log P = 2.3 (P = 200 d), a_0 its absolute value; m_B^0 the
+Mira sample at log P = 2.3 (P = 200 d; arXiv:2312.08423, Eq. 2 and Sect. III.5), a_0 its absolute value; m_B^0 the
 standardised SN Ia peak magnitude; a_B the intercept of the SN Hubble
 diagram.
 
@@ -79,16 +79,18 @@ average 0.21 mag brighter inside the cut than outside it in its seven hosts
    Distance Database).
 2. Measure the mode of the innermost 500 stars, then of stars 50 to 550,
    and so on in steps of 50, to the outermost 500. Stated reason for 500:
-   it gives a 1% statistical distance.
+   it gives a 1% statistical distance [src: arXiv:2408.03474, Sect. III.4.1].
 3. Smooth the derivative dm_JAGB/dR over one sixth of the points; the
    first zero crossing is the radial cut.
 4. Guard against noise: beyond the cut, the extreme values of m_JAGB must
    lie within the median ± 2 sigma of the points; otherwise widen the
-   smoothing. This was needed in M101, NGC 2442 and NGC 4258.
+   smoothing. This was needed in M101, NGC 2442 and NGC 4258
+   [src: arXiv:2408.03474, Sect. III.4.1].
 5. Mask spiral arms that block convergence (M101, NGC 2442, NGC 4258,
-   NGC 4639), while blinded; unmasking changes H0 by 0.3%.
+   NGC 4639), while blinded; unmasking changes H0 by 0.3%
+   [src: arXiv:2408.03474, Sect. III.4.1, App. A].
 6. Reject hosts that never converge or keep < 500 stars: NGC 3972,
-   NGC 4038, NGC 4424.
+   NGC 4038, NGC 4424 [src: arXiv:2408.03474, Sects. III.4.1, III.5].
 
 The algorithm replaces an earlier one with eight independent radial bins
 that kept regions agreeing within 0.05 mag with the outermost bin; overlap
@@ -188,14 +190,16 @@ Sect. II.4].
 
 Selection [src: arXiv:2312.08423, Sects. III.1, II.2]:
 
-1. Welch-Stetson index L > 0.75 among sources with at least 10 epochs.
+1. Welch-Stetson index L > 0.75 among sources with at least 10 epochs
+   [src: arXiv:2312.08423, Sect. III.1].
 2. At least 9 F160W epochs; periods by chi^2 on a grid of 100 to 1000 d,
-   sine fit with free amplitude, mean and phase (3960 light curves).
-3. F-test: sinusoid preferred over a first-order polynomial,
-   chi^2_s / chi^2_l < 0.5.
-4. Amplitude 0.4 < Delta F160W < 0.8 mag; initial period 200 < P < 500 d.
+   sine fit with free amplitude, mean and phase (3960 light curves)
+   [src: arXiv:2312.08423, Sect. III.1].
+3. F-test: sinusoid preferred over a first-order polynomial.
+4. Amplitude 0.4 < Delta F160W < 0.8 mag; initial period 200 < P < 500 d
+   [src: arXiv:2312.08423, Sect. III.1, Table 2].
 5. Colour F110W − F160W < 1.3 to drop the reddest, likely carbon-rich
-   stars: 324 candidates.
+   stars: 324 candidates [src: arXiv:2312.08423, Sect. III.1].
 
 Why F110W rather than F125W: wider separation from F160W and broader band
 for signal-to-noise, hence "somewhat better" C/O separation [src:
@@ -240,7 +244,7 @@ The baseline uses 240 < P < 400 d in M101 and 260 < P < 400 d in NGC 1559
 
 The PL has a fixed slope (their Eq. 2):
 
-    m_F160W = a − 3.35 (log P − 2.3)
+    m_F160W = a − 3.35 (log P − 2.3)   (arXiv:2312.08423, Eq. 2)
 
 the H-band slope from LMC data transformed to F160W; a second, LMC-based
 slope gave results within ~0.02 mag in earlier hosts [src:
@@ -279,8 +283,8 @@ M_F160W = −6.27(0.02) − 2.76(0.18)(log P − 2.3) (Eq. 3) [src:
 arXiv:2507.10658, Sect. IV.1]. A global slope over clusters, LMC and
 NGC 4258 (P < 400 d) is −3.29 ± 0.07, and with a metallicity term
 
-    M_F160W = −6.29(0.02) − 3.29(0.07)(log P − 2.3)
-              + 0.09(0.04)([Fe/H] − [Fe/H]_mean),  [Fe/H]_mean = −0.42   (Eq. 4)
+    M_F160W = −6.29(0.02) − 3.29(0.07)(log P − 2.3)   (arXiv:2507.10658, Eq. 4)
+              + 0.09(0.04)([Fe/H] − [Fe/H]_mean),  [Fe/H]_mean = −0.42   (arXiv:2507.10658, Eq. 4, Sect. IV.2)
 
 [src: arXiv:2507.10658, Sect. IV.2, Eq. 4]. Because the anchor
 metallicities are approximations (LMC −0.7 ± 0.1 from age-metallicity
@@ -437,10 +441,13 @@ arXiv:2312.08423, Sect. V.1].
 <!-- key: not-verified -->
 
 - The first JAGB analysis of the SH0ES fields (the paper cited as [28] in
-  arXiv:2502.05259), whose variants JAGB 2.0 adopts, and the CCHP
+  arXiv:2502.05259), whose variants arXiv:2502.05259 adopts, and the CCHP
   photometry paper (Jang et al., in preparation in arXiv:2408.03474).
-- How Li et al. compute the 0.022 mag error of the NGC 4258 field
-  difference.
+- How Li et al. (arXiv:2502.05259) compute the error of the NGC 4258
+  field difference.
+- The threshold of the F-test in the Mira selection of arXiv:2312.08423: the
+  dossier gave chi^2_s / chi^2_l below a fixed ratio, which was not found in
+  the HTML body on 2026-10-24.
 - The Mira analysis of NGC 1559 (cited as [29] in arXiv:2312.08423): its
   surface-brightness cut and period-range test were read only through
   Table 2 and Sect. III.3 of arXiv:2312.08423.

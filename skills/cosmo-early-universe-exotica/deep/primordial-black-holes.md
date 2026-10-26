@@ -59,7 +59,7 @@ Halo models used:
 | Analysis | Milky Way halo | Second halo | Place read |
 |---|---|---|---|
 | HSC (M31) | NFW, M_vir = 10¹² M☉, ρ_c = 4.88 × 10⁶ M☉ kpc⁻³, r_s = 21.5 kpc | M31 NFW, M_vir = 1.6 × 10¹² M☉, ρ_c = 4.96 × 10⁶ M☉ kpc⁻³, r_s = 25 kpc; d_s = 770 kpc | arXiv:1701.02151, Sect. 1.2 |
-| OGLE (LMC, 20 yr) | contracted halo fitted to the Gaia DR2 rotation curve, 0.97 × 10¹² M☉ within 200 kpc; Maxwellian with 1D dispersion V₀(R)/√2 | LMC Hernquist, 1.49 × 10¹¹ M☉, scale 17.1 kpc | arXiv:2403.02386, Methods "Model" |
+| OGLE (LMC, 20 yr) | contracted halo fitted to the Gaia DR2 rotation curve, 0.97 × 10¹² M☉ within 200 kpc; Maxwellian with 1D dispersion V₀(R)/√2 | LMC Hernquist, 1.49 × 10¹¹ M☉, scale 17.1 kpc | arXiv:2403.02386, Methods, sections "Milky Way halo" and "LMC halo" |
 
 HSC chose its NFW parameters because they reproduce the observed rotation
 curves of both galaxies, and ignored any matter between them [src:
@@ -111,9 +111,12 @@ arXiv:2403.02386, Discussion].
   L(f, M) = e^(−N_exp) Π_i [N_s Δt dΓ/dt_E(t_E,i) ε(t_E,i)] (Eq. 1), with
   dΓ/dt_E the sum of f × (Milky Way halo + LMC halo) and the stellar terms
   (Eq. 2) and N_exp from Eq. 3; each event's t_E is averaged over 2 × 10⁵
-  posterior samples because some have > 20% errors (Eq. 6) [src: Methods,
-  "Full limits"]. The best point (log M, log f) = (−1.5, −2.55) is preferred
-  over log f = −4 by only Δχ² ≈ 3.7, driven by one 7-day event [src: same].
+  posterior samples because some have > 20% errors (Eq. 6) [src:
+  arXiv:2403.02386, Methods, section "Full limits on PBHs"]. With one of
+  its two Milky Way disk models the best point (log M, log f) = (−1.5,
+  −2.55) is preferred over log f = −4 by only Δχ² ≈ 3.7; with the other,
+  (−1.8, −2.85) and Δχ² ≈ 1.5; the preference is driven by one 7-day event
+  [src: arXiv:2403.02386, Methods, section "Full limits on PBHs"].
 
 ### Microlensing, step 5: optics corrections at low mass
 <!-- key: microlensing-step-5-optics-corrections-at-low -->
@@ -169,15 +172,17 @@ N_eff,inj > 4 N_obs (Eq. 9) [src: same]. The hyperprior is
 same catalogue [src: Sects. II, IV]:
 
 1. **All events astrophysical**: L ∝ e^(−N), and the 2σ exclusion is the
-   region where N > 3 [src: Sect. II]. This is the f_PBH ≲ 10⁻³ curve quoted
-   in L2.
+   region where N > 3 [src: arXiv:2405.05732, Sect. II]. The abstract's
+   bound, f_PBH ≲ 10⁻³ over 1–200 M☉ "in every scenario", is the one quoted
+   in L2 [src: arXiv:2405.05732, abstract].
 2. **Agnostic**: in each primary-mass band, all events are taken as
    primordial; the combined posterior is the maximum of the individual
    ones — the least restrictive case [src: Sect. II].
 3. **Joint PBH + astrophysical fit**: POWER LAW + PEAK for astrophysical
    binaries, log-normal PBHs (σ = 0.6), nested sampling, priors
    f_PBH ~ LogU(10⁻⁵, 1), m_c ~ LogU(0.1, 10³) M☉ (Table 2), using events
-   with SNR > 11 and inverse false-alarm rate > 4 yr [src: Sect. IV.2].
+   with SNR > 11 and inverse false-alarm rate > 4 yr [src: arXiv:2405.05732,
+   Sect. IV.2, Table 2].
 
 Other likelihoods:
 
@@ -247,7 +252,7 @@ inequality (Eq. 22), unless the f_max,j are proportional [src: same].
   compact haloes put lenses closer (⟨D_l⟩ = 7.6 and 8.5 kpc against 12.5),
   which raises both θ_E and the relative proper motion, effects that
   "nearly cancel", leaving timescales and rates similar [src:
-  arXiv:2403.02386, Discussion].
+  arXiv:2403.02386, Methods, section "Discussion"].
 - **The critique.** Hawkins 2025 argues that OGLE's halo, built on a
   rotation curve with little data beyond 25 kpc, has v_c ≈ 190 km s⁻¹ at
   50 kpc, "virtually the same" as MACHO's heavy-halo Model S, against
@@ -258,7 +263,8 @@ inequality (Eq. 22), unless the f_max,j are proportional [src: same].
 - **Reading.** The two statements concern different quantities: OGLE tests
   how τ moves for its alternative haloes; Hawkins disputes the velocity
   normalisation at the LMC distance. A referee should ask for the limit
-  under a halo matching the Gaia DR3 v_c at 50 kpc.
+  under a halo matching the Gaia DR3 v_c at the LMC distance, which
+  arXiv:2509.05400 (Sect. 3.6) takes as 50 kpc.
 
 ### Null hypothesis or timescale likelihood
 <!-- key: null-hypothesis-or-timescale-likelihood -->
@@ -351,12 +357,17 @@ same].
 ### Merger-rate conventions
 <!-- key: merger-rate-conventions -->
 
-The review writes the same rate with f_PBH^(−21/37) (arXiv:2601.06024,
-Eq. 33) because there ψ is normalised to f_PBH, so ψ(m₁)ψ(m₂) carries
-f_PBH²; with ψ normalised to one (arXiv:2405.05732, Eq. 12) the power is
-53/37 = 2 − 21/37 [der: from the two normalisations stated in
-arXiv:2601.06024, Sect. VI and arXiv:2405.05732, Sect. III.1]. The latter
-paper warns that different conventions are in use (its footnote 3) [src].
+The review writes the rate with f_PBH^(−21/37) (arXiv:2601.06024,
+Eq. 33) [src]; the LVK O3 PBH paper writes it with f_PBH^(53/37)
+(arXiv:2405.05732, Eq. 12) [src].
+
+The two exponents describe the same rate: in the review ψ is normalised
+to f_PBH, so ψ(m₁)ψ(m₂) carries f_PBH squared, while the other paper
+normalises ψ to one [der: from the normalisations stated in
+arXiv:2601.06024, Sect. VI and arXiv:2405.05732, Sect. III.1]. The
+LVK O3 PBH paper warns that different conventions are in use (its
+footnote 3) [src: arXiv:2405.05732, footnote 3].
+
 The rate grows as (1 + z)^(51/37) in matter domination, unlike the
 astrophysical rate that falls above z ≈ 3 [src: arXiv:2601.06024,
 Sect. VII.2].
@@ -366,15 +377,15 @@ Sect. VII.2].
 
 | Quantity | Value | Analysis | Source | Place read |
 |---|---|---|---|---|
-| Optical depth, all-PBH halo | ~10⁻⁶ (M31); 4.4 × 10⁻⁷ (LMC centre, fiducial) | HSC; OGLE | arXiv:1701.02151; arXiv:2403.02386 | Sect. 1.2; Discussion |
+| Optical depth, all-PBH halo | ~10⁻⁶ (M31); 4.4 × 10⁻⁷ (LMC centre, fiducial) | HSC; OGLE | arXiv:1701.02151; arXiv:2403.02386 | Sect. 1.2; Methods section "Discussion" |
 | Poisson 95% bound, one candidate | N_exp ≤ 4.74 | HSC | arXiv:1701.02151 | abstract text |
 | HSC cadence, sensitivity | 2 min, 7 h; 4 min ≲ t_FWHM ≲ 3 h | HSC | arXiv:1701.02151 | Sect. 4.1 |
 | HSC efficiency | 70–60% (m_r 23–24), 30–20% (m_r 25–26) | HSC | arXiv:1701.02151 | abstract text |
-| Mean halo timescale | t_E = 62 d √(M/M☉) | OGLE | arXiv:2403.02386 | Methods |
-| Expected stellar events | 12.7 or 20.4 (observed 13) | OGLE LMC | arXiv:2403.02386 | Methods |
-| Full vs null likelihood | ≤ 0.59 dex weaker (log M = −0.6) | OGLE LMC | arXiv:2403.02386 | Methods |
-| Disk-model effect | ≤ 0.18 dex | OGLE LMC | arXiv:2403.02386 | Methods |
-| Limiting-magnitude effect | ≤ 0.10 dex (I 21.5), ≤ 0.20 dex (I 21) | OGLE LMC | arXiv:2403.02386 | Discussion |
+| Mean halo timescale | t_E = 62 d √(M/M☉) | OGLE | arXiv:2403.02386 | Methods section "Milky Way halo" |
+| Expected stellar events | 12.7 or 20.4 (observed 13) | OGLE LMC | arXiv:2403.02386 | Methods section "Can all microlensing events detected by OGLE be explained by non-dark-matter objects?" |
+| Full vs null likelihood | ≤ 0.59 dex weaker (log M = −0.6) | OGLE LMC | arXiv:2403.02386 | Methods section "Full limits on PBHs" |
+| Disk-model effect | ≤ 0.18 dex (at log M = −0.1) | OGLE LMC | arXiv:2403.02386 | Methods section "Full limits on PBHs" |
+| Limiting-magnitude effect | ≤ 0.10 dex (I 21.5), ≤ 0.20 dex (I 21) | OGLE LMC | arXiv:2403.02386 | Methods section "Discussion" |
 | v_c at 50 kpc | 190 (OGLE model) vs 130 km s⁻¹ (Gaia DR3) | critique | arXiv:2509.05400 | Sect. 3.6 |
 | Merger-rate normalisation | 1.6 × 10⁶ Gpc⁻³ yr⁻¹ | LVK O3 PBH | arXiv:2405.05732 | Eq. 12 |
 | σ_M | ≃ 0.004 | LVK O3 PBH | arXiv:2405.05732 | Eq. 14 |
@@ -383,7 +394,7 @@ Sect. VII.2].
 | Detection threshold | SNR_c = 8; joint fit SNR > 11, IFAR > 4 yr | LVK O3 PBH | arXiv:2405.05732 | Sects. II, IV.2 |
 | Sub-solar limit | f_PBH ≲ 6% (equal mass, 0.2–1.0 M☉, unsuppressed rate) | LVK O3a SSM | arXiv:2109.12197 | Sect. III |
 | SSM rate limit | R₉₀ = 2.3/⟨VT⟩; 9 chirp-mass bins, 0.17–2.39 M☉; pipelines within O(30%) | LVK O3a SSM | arXiv:2109.12197 | Sect. III |
-| SMT fraction needed | 0.34 ± 0.22 | GWTC-2 mixed channels | arXiv:2105.03349 | Discussion |
+| SMT fraction needed | 0.34 ± 0.22 | GWTC-2 mixed channels | arXiv:2105.03349 | abstract |
 | Voyager e± limit | f_PBH < 0.1% for M < 10¹⁶ g | Voyager 1 | arXiv:1807.03075 | abstract |
 | Evaporating today | M ≈ 5 × 10¹⁴ g (non-spinning) | review | arXiv:2601.06024 | Sect. III |
 | Window closure | log-normal σ ≳ 2.5 | review | arXiv:2601.06024 | Sect. VI |
@@ -410,7 +421,7 @@ Sect. VII.2].
   overlap with another survey.
 - **One short event driving a "detection".** OGLE's best point rests on a
   7-day event; without it log f = −4 is disfavoured by < 1.5 in Δχ² [src:
-  arXiv:2403.02386, Methods]. Test: drop-one-event.
+  arXiv:2403.02386, Methods section "Full limits on PBHs"]. Test: drop-one-event.
 - **Source radius.** Giants among the sources make finite-source suppression
   larger [src: arXiv:1701.02151, abstract text]. Test: source-size
   distribution from the luminosity function.

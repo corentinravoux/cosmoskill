@@ -53,7 +53,7 @@ The two distance-independent quantities carry the corrections [src: arXiv:2201.0
 arXiv:2512.03226, Eqs. 10–11]:
 
     s = log σ + α_ap [log θ_e − log(8 θ_ap)]                                     (aperture)
-    i = 0.4 (M_⊙ − m − Q z + k + A) − log(2π θ_e²) + 4 log(1 + z_helio) + 2 log(64800/π)
+    i = 0.4 (M_⊙ − m − Q z + k + A) − log(2π θ_e²) + 4 log(1 + z_helio) + 2 log(64800/π)   (arXiv:2201.03112, Eqs. 4–5)
 
 with θ_ap the fibre aperture radius, Q the luminosity-evolution coefficient, k the k-correction,
 A the Galactic extinction and 4 log(1 + z_helio) the surface-brightness dimming. SDSS PV takes
@@ -80,7 +80,7 @@ arXiv:2512.03226, Sect. 5.2]. With x_n = {r_n, s_n, i_n} and mean x̄:
 
     L = Π_n ( exp[−½ (x_n − x̄) C_n⁻¹ (x_n − x̄)ᵀ] / [(2π)^{3/2} |C_n|^{1/2} f_n] )^{1/S_n}  (Eq. 16 / 12)
     C_n = Σ + E_n                                                                   (Eq. 17)
-    E_n = [[e_r² + ε_r², 0, −e_r e_i], [0, e_s², 0], [−e_r e_i, 0, e_i²]],   ε_r = log(1 + 300/cz_n)
+    E_n = [[e_r² + ε_r², 0, −e_r e_i], [0, e_s², 0], [−e_r e_i, 0, e_i²]],   ε_r = log(1 + 300/cz_n)   (arXiv:2201.03112, Eq. 17)
 
 [src: arXiv:2201.03112, Eqs. 16–17]. Σ is the intrinsic scatter, written through orthogonal
 eigenvectors with scatters σ1, σ2, σ3, with the a-priori assumption that the longest axis lies
@@ -123,7 +123,7 @@ Sects. 4.1, 5, 5.1]:
   with d_L(z_lim,n) = d_L(z_group,n) × 10^{(17 − m_n)/5}. It replaces the full integral of the PDF
   times the selection probability, which is expensive; following Eadie et al. 1971 it "results in
   the same maximum likelihood FP values, but underestimates the variance", acceptable because
-  errors come from mocks [src: Sect. 4, 4.1.1].
+  errors come from mocks [src: arXiv:2201.03112, Sect. 4, 4.1.1].
 - **f_n** renormalises each galaxy's Gaussian over the observable part of parameter space. When
   fitting the plane, SDSS PV uses it only for the s_min = log 70 cut, because modelling the
   magnitude cut that way "requires knowledge of the magnitudes and log-distance ratios of
@@ -140,7 +140,7 @@ the trial distance and must be kept:
 with r_min, r_max the radii corresponding to the bright and faint magnitude limits at the trial
 distance (Eqs. 22–23). Its effect is "to up-weight larger distances" for incompleteness at the
 faint end and for the larger volume — i.e. f_n is the homogeneous Malmquist correction [src:
-Sect. 5.1]. SDSS PV reduces the integral to elementary functions (App. C), all 1 001 trial
+arXiv:2201.03112, Sect. 5.1]. SDSS PV reduces the integral to elementary functions (App. C), all 1 001 trial
 distances for 34 059 galaxies in under a minute; 6dFGSv had evaluated it by Monte Carlo on
 mocks with one correction for all galaxies, inaccurate at large distance "where … the number of
 mock galaxies … quickly goes to zero"; ~95 % of SDSS galaxies share nearly the same curve,
@@ -193,8 +193,8 @@ match the FP [src: Sect. II.2]. Calibration: 4 050 galaxies in 14 bins of Δz = 
     ln L = ½ Σ_i Σ_j [ ln((a² + 1)/s_j²) − (a log(V_j/V0) + b_i − m_r,j)² / s_j² ]   (Eq. 17)
     s_j² = σ² + a² σ²_log V,j + σ²_m,j
 
-with σ the intrinsic scatter along the magnitude axis; 16 free parameters [src: Sect. IV.3]. The
-bins replace cluster calibration because grouping "requires a reliable cluster catalog and
+with σ the intrinsic scatter along the magnitude axis; 16 free parameters [src: arXiv:2512.03227, Sect. IV.3].
+The bins replace cluster calibration because grouping "requires a reliable cluster catalog and
 assumes that the TFR is the same in clusters as in the field"; z ≥ 0.03 avoids galaxies whose
 velocities are a large fraction of z [src: Sect. IV.2]. HyperFit "minimizes the distance
 perpendicular to the best-fit line", a "hybrid of both the TFR and inverse TFR" [src: Sect.
@@ -306,9 +306,9 @@ non-linear velocity that σ_v or σ_u models are meant to absorb.
 | Trial η grid | 1 001 values in [−1.5, 1.5], flat prior | SDSS PV, DESI DR1 | arXiv:2201.03112; arXiv:2512.03226 | Sect. 5; Sect. 5.2.2 |
 | ε_r floor | log(1 + 300/cz) | SDSS PV | arXiv:2201.03112 | Eq. 17 |
 | Aperture correction α_ap | −0.04 (SDSS PV); −0.06 ± 0.03 (DESI DR1); literature −0.066 to −0.033 | — | arXiv:2201.03112; arXiv:2512.03226 | Eq. 5; Sect. 5.1 |
-| Evolution Q | 0.85 (SDSS PV); 1.1 ± 0.4 (DESI DR1) | — | same | Eq. 4; Sect. 5.1 |
-| σ cuts | > 70 km/s (SDSS PV); 50–420 km/s (DESI DR1) | — | same | Sect. 4.1; Sect. 4.1 |
-| Magnitude cuts | 10.0–17.0 (SDSS PV); 10–18 (DESI DR1) | — | same | Sect. 4.1; Sect. 5.2 |
+| Evolution Q | 0.85 (SDSS PV); 1.1 ± 0.4 (DESI DR1) | — | arXiv:2201.03112; arXiv:2512.03226 | Eq. 4; Sect. 5.1 |
+| σ cuts | > 70 km/s (SDSS PV); 50–420 km/s (DESI DR1) | — | arXiv:2201.03112; arXiv:2512.03226 | Sect. 4.1; Sect. 4.1 |
+| Magnitude cuts | 10.0–17.0 (SDSS PV); 10–18 (DESI DR1) | — | arXiv:2201.03112; arXiv:2512.03226 | Sect. 4.1; Sect. 5.2 |
 | DESI σ: sky uniformity / vs SDSS | cell standard deviation 5 % over 1 156 cells, max 16 %; DESI slightly lower than Portsmouth pPXF, within 5 %, on 35 067 galaxies | DESI DR1 | arXiv:2512.03226 | Sects. 4.3–4.4, Figs. 4, 8 |
 | Error from the spurious log(1 + z) term | Δv/v ≈ ln(10) z/(1 + z); < 10 % of the statistical error for 6dFGSv | 6dFGSv | arXiv:2201.03112 | Sect. 2.3, App. D |
 | 6dFGSv zero-point | r̄ = 0.178 ± 0.003 dex on 3 781 equatorial galaxies | 6dFGSv | arXiv:1409.6161 | Sect. 3.2 |

@@ -65,16 +65,19 @@ arXiv:2609.17684, Sect. 3.5]:
 - Warp: i(r) and Ω(r) expanded to second order about a pivot r_ref near
   the median spot radius, "to decorrelate the warp rates from their
   zero-points" (Eqs. 2–3); i is the inclination (90° edge-on), Ω the
-  position angle, r the angular orbital radius in mas [src: Sect. 3.1].
+  position angle, r the angular orbital radius in mas [src: arXiv:2609.17684,
+  Sect. 3.1].
 - Sky positions from the disc coordinates (r, φ) and black-hole position
   (x₀, y₀) (Eqs. 4–5); φ = 0 is the near side, systemic features sit near
   φ = 0, π and high-velocity ones near π/2 and 3π/2 [src: same].
 - Velocity: V_kep = C_v √[(M_BH/M_⊙)/((r/mas)(D_A/Mpc))], C_v ≈ 0.94 km s⁻¹
   (Eq. 6), and V_i = c[(1 + V_rec/c)(1 + z_D)(1 + z_g) − 1] (Eq. 7), with
   relativistic Doppler including the transverse term (Eqs. 8–11) and
-  Schwarzschild gravitational redshift (Eq. 12) [src: same].
+  Schwarzschild gravitational redshift (Eq. 12) [src: arXiv:2609.17684,
+  Sect. 3.1].
 - Acceleration: a_los = C_a M_BH cos φ sin i / (r² D_A²),
-  C_a = 1.872 × 10⁻⁴ km s⁻¹ yr⁻¹ (Eq. 13) [src: same].
+  C_a = 1.872 × 10⁻⁴ km s⁻¹ yr⁻¹ (Eq. 13) [src: arXiv:2609.17684,
+  Sect. 3.1].
 
 Why accelerations matter: velocities constrain only M_BH/D_A, the
 accelerations constrain M_BH/D_A² and break the mass–distance degeneracy
@@ -121,6 +124,8 @@ at residual systematics [src: Sect. 2.5.3].
 
 ### Step 4. Priors and sampling
 <!-- key: step-4-priors-and-sampling -->
+
+From arXiv:2609.17684, Table 2:
 
 | Parameter | Prior (2026 reanalysis) [src: arXiv:2609.17684, Table 2] |
 |---|---|
@@ -169,7 +174,9 @@ share the galaxy's distance and redshift (its relative motion is ≪ 1 km s⁻¹
 expected, at most a few tens measured). The model distance is the flat-ΛCDM
 angular-diameter distance with Ω_m = 0.315; L = L_D L_v, with L_D the
 product of the disc posteriors and L_v a velocity term; flat priors;
-dynesty. Four velocity treatments:
+dynesty. Four velocity treatments.
+
+From arXiv:2001.09213 (section in the last column):
 
 | Treatment | Velocity term | H0 | Place read |
 |---|---|---|---|
@@ -180,7 +187,7 @@ dynesty. Four velocity treatments:
 
 The M2000 outlier comes from Great Attractor infall applied to three hosts
 behind it, which adds 300–600 km s⁻¹ to their recession velocities [src:
-Sect. 3.4].
+arXiv:2001.09213, Sect. 3.4].
 
 Other treatments of the same six MCP distances:
 
@@ -442,7 +449,7 @@ it:
 - Method: Reid et al. 2019, arXiv:1908.05625 — error floors as parameters;
   current anchor distance.
 - Application: Pesce et al. 2020, arXiv:2001.09213 — four velocity
-  treatments and the 73.9 baseline.
+  treatments and the 73.9 baseline (abstract).
 - Application/critique: Watkins & Feldman 2026, arXiv:2608.06247 —
   Manticore correction, σ_v dependence.
 - Application/critique: Stiskalek & Desmond 2026, arXiv:2609.17684 —
@@ -463,8 +470,8 @@ it:
   arXiv:2609.17684, not read; no identifier recorded. Boruah et al. 2021
   (arXiv:2010.01119) read at abstract and Sect. 6.3 only; its Table 3
   values and its uniform-prior 70.1 are as quoted by arXiv:2609.17684.
-- Van der Boom & Kushnir 2026: Sect. 4 results and the cadence study
-  (Sect. 5) not read beyond the abstract; no reply by the NGC 4258 team
+- Van der Boom & Kushnir 2026 (arXiv:2601.14374): Sect. 4 results and the
+  cadence study (Sect. 5) not read beyond the abstract; no reply by the NGC 4258 team
   found.
 - SH0ES 2022 anchor-by-anchor H0 (arXiv:2112.04510): no HTML; not read
   here.

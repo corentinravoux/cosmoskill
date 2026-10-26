@@ -13,15 +13,17 @@ Snapshot: 2026-10-20
 Flags: `[src]` read this session in the cited paper's abstract;
 `[src: <place>]` in its body; `[sec: <source>]` taken from the named
 secondary source; `[der]` derived here, with the assumption stated. Forecasts
-are labelled **forecast**. Field map: CosmoVerse white paper (Di Valentino et
-al. 2025, arXiv:2504.01669) Sects. 2.1.10, 2.1.14–2.1.16; review of the
-emerging probes, Moresco et al. 2022 (arXiv:2201.07241).
+are labelled **forecast**.
+
+Field map: CosmoVerse white paper (Di Valentino et al. 2025, arXiv:2504.01669)
+Sects. 2.1.10 and 2.1.14 to 2.1.16; review of the emerging probes, Moresco et
+al. 2022 (arXiv:2201.07241).
 
 ## 1. What these probes add, and the common caveat
 <!-- key: what-these-probes-add-and-the-common-caveat -->
 
 The SN Ia Hubble diagram stops near z ~ 2 and BAO give a handful of
-redshifts; the CMB sits at z ~ 1100. Quasars, GRBs and HII galaxies are
+redshifts; the CMB sits at last scattering. Quasars, GRBs and HII galaxies are
 bright enough to be seen at z ~ 2–7, so they would test the expansion
 history where no other distance indicator exists. All three are
 *correlations*, not physically standardised candles: a luminosity is
@@ -52,8 +54,10 @@ for both bands gives
     log d_L = [log F_X − β − γ log F_UV] / [2 (γ − 1)] − ½ log 4π
 
 `[der: L = 4π d_L² F in both bands, K-corrections absorbed in the
-monochromatic fluxes]`, so a fit of γ and β across redshift, with an
-intrinsic dispersion δ, yields relative distances. The absolute scale is set
+monochromatic fluxes]`.
+
+A fit of γ and β across redshift, with an intrinsic dispersion δ, yields
+relative distances. The absolute scale is set
 by cross-calibrating the quasar Hubble diagram on SNe Ia in their common
 redshift range; a redshift-independent offset in the UV fluxes is absorbed by
 that cross-calibration (Lusso et al. 2020, arXiv:2008.08586)
@@ -81,12 +85,12 @@ scatter below 0.1 dex `[sec: arXiv:2504.01669, Sect. 2.1.15]`.
 
 **As the Risaliti–Lusso group states it.** The quasar distance modulus agrees
 with SNe and ΛCDM below z ~ 1.4–1.5 and departs from it above, at ~4 sigma
-(arXiv:1811.02590) `[src]`; having minimised the systematic effects and shown
+(arXiv:1811.02590) `[src: abstract]`; having minimised the systematic effects and shown
 the stability of the relation at high redshift, the authors conclude that an
 evolution of the expansion rate "should be considered as a possible
 explanation ... rather than some systematic (redshift-dependent) effect"
-(arXiv:2008.08586) `[src]`. A 2022 proceedings restates "a significant
-tension" above z = 1.5 (Signorini et al. 2024, arXiv:2401.07909) `[src]`.
+(arXiv:2008.08586) `[src: abstract]`. A 2022 proceedings restates "a significant
+tension" above z = 1.5 (Signorini et al. 2024, arXiv:2401.07909) `[src: abstract]`.
 Joint fits with the CMB find that simple dark-energy extensions do not
 reconcile the probes and only interacting dark-sector models do (Benetti et
 al. 2025, arXiv:2506.21477) `[src]`.
@@ -103,19 +107,19 @@ al. 2025, arXiv:2506.21477) `[src]`.
   depend on the cosmological model assumed, so the full set is not
   standardised; only z ≲ 1.5–1.7 subsets behave model-independently, and
   they give weak constraints consistent with BAO and H(z) (Khadka & Ratra
-  2020, arXiv:2012.09291) `[src]`. The SDSS–4XMM sub-sample, about two
-  thirds of the quasars, has relations that depend on cosmology and on
+  2020, arXiv:2012.09291) `[src: abstract]`. The SDSS–4XMM sub-sample, about 2/3
+  of the quasars, has relations that depend on cosmology and on
   redshift and is the main cause; the SDSS–Chandra and XXL sub-samples
   (about 30%) appear standardisable and are consistent with flat ΛCDM
-  (Khadka & Ratra 2021, arXiv:2107.07600) `[src]`. An earlier fit of the
+  (Khadka & Ratra 2021, arXiv:2107.07600) `[src: abstract]`. An earlier fit of the
   2015 compilation (808 quasars) with BAO and H(z) was consistent with flat
-  ΛCDM (Khadka & Ratra 2019, arXiv:1909.01400) `[src]`.
+  ΛCDM (Khadka & Ratra 2019, arXiv:1909.01400) `[src: abstract]`.
 - *Comparison with reverberation distances.* For 58–59 quasars with both
   measurements (z ≤ 1.686), L_X–L_UV distances are shorter than R–L
   (reverberation) distances and than flat-ΛCDM distances, which explains the
   high Ω_m0 preferred by L_X–L_UV data (Khadka et al. 2022,
-  arXiv:2212.10483) `[src]`; dust extinction with E_X−UV = 0.03–0.28 mag can
-  produce such a shift (Zajaček et al. 2023, arXiv:2305.08179) `[src]`.
+  arXiv:2212.10483) `[src: abstract]`; dust extinction with E_X−UV = 0.03–0.28 mag can
+  produce such a shift (Zajaček et al. 2023, arXiv:2305.08179) `[src: abstract]`.
 - *A redshift trend expected in ΛCDM.* The quasars recover Ω_m ≈ 0.3 at
   z ≲ 0.7 and move to Ω_m ≈ 1 at z ≳ 1; the same trend of rising Ω_m with
   effective redshift is argued to be an intrinsic bias of flat-ΛCDM fits
@@ -152,10 +156,10 @@ dex dispersion but stop at z ≈ 1.5–3 and do not yet constrain cosmology
 
 | Correlation | Quantities | Origin and stated scatter | Citation |
 |---|---|---|---|
-| Amati | rest-frame spectral peak energy E_p,i against isotropic energy E_iso (prompt emission) | found in 12 BeppoSAX bursts with redshifts; the authors discuss selection and truncation biases `[src]` | Amati et al. 2002, arXiv:astro-ph/0205230 |
+| Amati | rest-frame spectral peak energy E_p,i against isotropic energy E_iso (prompt emission) | found in 12 BeppoSAX bursts with redshifts; the authors discuss selection and truncation biases `[src: abstract]` | Amati et al. 2002, arXiv:astro-ph/0205230 |
 | Yonetoku | E_p against peak isotropic luminosity | "considerably tighter" than earlier relations `[src]` | Yonetoku et al. 2004, arXiv:astro-ph/0309217 |
-| Dainotti (2D) | X-ray plateau-end luminosity L_X(T_a) against rest-frame time T_a/(1+z) | σ_int = 0.33; slope and scatter almost independent of Ω_M and w `[src]` | Dainotti et al. 2008, arXiv:0809.1389 |
-| Dainotti 3D ("fundamental plane") | adds the prompt peak luminosity | σ_int = 0.18 ± 0.07 for the "platinum" sample after selection and evolution corrections `[src]` | Dainotti et al. 2023, arXiv:2209.08675 |
+| Dainotti (2D) | X-ray plateau-end luminosity L_X(T_a) against rest-frame time T_a/(1+z) | σ_int = 0.33; slope and scatter almost independent of Ω_M and w `[src: abstract]` | Dainotti et al. 2008, arXiv:0809.1389 |
+| Dainotti 3D ("fundamental plane") | adds the prompt peak luminosity | σ_int = 0.18 ± 0.07 for the "platinum" sample after selection and evolution corrections `[src: abstract]` | Dainotti et al. 2023, arXiv:2209.08675 |
 
 CosmoVerse notes that the plateau relations can be tied to physical models
 (magnetar spin-down, forward/reverse shocks), which the prompt-emission
@@ -166,18 +170,18 @@ the independent tests below.
 ### 3.2 Calibration and the circularity problem
 <!-- key: calibration-and-the-circularity-problem -->
 
-Few GRBs lie at z < 0.1, so E_iso or L cannot be computed without a
+Few GRBs lie at low redshift, so E_iso or L cannot be computed without a
 cosmology: fitting a correlation in an assumed model and then using it to
 constrain models is circular. Three answers are in use.
 
 - *Calibration on SNe Ia.* Interpolate the SN Ia distance modulus at each
   GRB redshift in the overlap range, calibrate the relation there, and
   extrapolate; from 42 GRBs at 1.4 < z ≤ 6.6 this gave flat-ΛCDM
-  Ω_M = 0.25 (+0.04/−0.05) (Liang et al. 2008, arXiv:0802.4262) `[src]`. A
+  Ω_M = 0.25 (+0.04/−0.05) (Liang et al. 2008, arXiv:0802.4262) `[src: abstract]`. A
   2025 version calibrates the Amati relation of the A219 sample on
   Pantheon+ with neural networks and, with H(z) data, finds CPL w0 = −1.02
   (+0.67/−0.50), w_a = −0.98 ± 0.58 (Huang et al. 2025, arXiv:2506.08929)
-  `[src]`. The calibrated GRBs then inherit the SN Ia distance scale and its
+  `[src: abstract]`. The calibrated GRBs then inherit the SN Ia distance scale and its
   systematics; they add only the extrapolation in redshift.
 - *Calibration on H(z) or HII galaxies.* Cosmic chronometers or HII galaxies
   replace SNe as the low-z anchor (CosmoVerse cites a chronometer-calibrated
@@ -194,7 +198,7 @@ constrain models is circular. Three answers are in use.
   Amati sample of 118 bursts (A118) is judged reliable; its constraints are
   consistent with flat ΛCDM and "significantly weaker" than BAO + H(z), and
   no reliable "Combo"-correlation sample could be defined (Khadka et al.
-  2021, arXiv:2105.12692) `[src]`.
+  2021, arXiv:2105.12692) `[src: abstract]`.
 
 ### 3.3 Current constraints
 <!-- key: current-constraints -->
@@ -214,11 +218,11 @@ constrain models is circular. Three answers are in use.
   independent of the SN Ia ladder.
 - Redshift evolution of the prompt relations: a 241-burst Swift sample shows
   no systematic or significant evolution of the Amati or Yonetoku relations
-  (Hasan & Azzam 2026, arXiv:2603.08884) `[src]`; the Dainotti relations are
-  corrected for evolution in their own analyses (arXiv:2209.08675) `[src]`.
+  (Hasan & Azzam 2026, arXiv:2603.08884) `[src: abstract]`; the Dainotti relations are
+  corrected for evolution in their own analyses (arXiv:2209.08675) `[src: abstract]`.
 - **Forecast:** about 66 optical plateau GRBs would give σ_w ≈ 0.47 in wCDM,
   comparable to Planck alone (Dainotti et al. 2026, arXiv:2603.18223)
-  `[src]`.
+  `[src: abstract]`.
 
 ### 3.4 What a referee checks
 <!-- key: what-a-referee-checks-2 -->
@@ -230,7 +234,7 @@ constrain models is circular. Three answers are in use.
 - Sample selection (gold/platinum subsets chosen for small scatter) and the
   instrument mix (Swift, Fermi, BeppoSAX thresholds).
 - Whether a "tension with ΛCDM" survives a direct model fit rather than a
-  cosmographic expansion (see §2.3).
+  cosmographic expansion (see the quasar section above).
 
 ## 4. HII galaxies and giant HII regions
 <!-- key: hii-galaxies-and-giant-hii-regions -->
@@ -260,17 +264,18 @@ and beyond with JWST NIRSpec (Hβ and [OIII] to z ~ 9)
 | Analysis | Sample | Result as stated | Citation |
 |---|---|---|---|
 | Fernández-Arenas et al. 2018 | 36 GEHRs in 13 anchor galaxies (incl. NGC 4258) + local HII galaxies | H0 = 71.0 ± 2.8 (random) ± 2.1 (systematic) km/s/Mpc `[src: abstract]` | arXiv:1710.05951 |
-| Chávez et al. 2016 | 25 HII galaxies to z ~ 2.33, with CMB + BAO | 13% improvement of quintessence constraints over BAO + CMB; **forecast:** substantial gain with 500 high-z objects `[src]` | arXiv:1607.06458 |
+| Chávez et al. 2016 | 25 HII galaxies to z ~ 2.33, with CMB + BAO | 13% improvement of quintessence constraints over BAO + CMB; **forecast:** substantial gain with 500 high-z objects `[src: abstract]` | arXiv:1607.06458 |
 | González-Morán et al. 2019 | 15 new Keck/MOSFIRE (1.3 ≤ z ≤ 2.5) + 31 high-z + 107 at z ≤ 0.15 | Ω_m = 0.290 (+0.056/−0.069); flat {Ω_m, w0} = {0.280 (+0.130/−0.100), −1.12 (+0.58/−0.32)} (stat) `[src: abstract]` | arXiv:1906.02195 |
-| Chávez et al. 2024 | 231 GEHRs and HII galaxies to z ≈ 7.5, some JWST | flat {h, Ω_m, w0} = {0.731 ± 0.039, 0.302 (+0.12/−0.069), −1.01 (+0.52/−0.29)} (stat) `[src]` | arXiv:2404.16261 |
+| Chávez et al. 2024 | 231 GEHRs and HII galaxies to z ≈ 7.5, some JWST | flat {h, Ω_m, w0} = {0.731 ± 0.039, 0.302 (+0.12/−0.069), −1.01 (+0.52/−0.29)} (stat) `[src: abstract]` | arXiv:2404.16261 |
 | Chávez et al. 2026 | 243 objects, z ~ 0 to z ~ 14, JWST and ALMA+JWST, lensing magnification modelled | flat ΛCDM h = 0.725 ± 0.040, Ω_m = 0.308 (+0.043/−0.053); CPL w0 = −0.92 (+0.57/−0.34), w_a = −0.48 (+0.60/−1.50); no evidence of evolution of the relation `[src: abstract]` | arXiv:2607.14254 |
 
 CosmoVerse (Table 2) gives, for 195 HII galaxies alone with the slope
 fixed, flat-ΛCDM Ω_m = 0.282 (+0.037/−0.045)
-`[sec: arXiv:2504.01669, Sect. 2.1.10, Table 2]`. The H0 values (71–73) rest
-on Cepheid-distance anchors and so share the first two rungs of the SH0ES
-ladder, not its SNe; an error of 4.0 km/s/Mpc puts 67 and 73 only 1.5 sigma apart
-`[der: (73 − 67)/4.0, error of arXiv:2607.14254]`.
+`[sec: arXiv:2504.01669, Sect. 2.1.10, Table 2]`.
+
+The HII-galaxy H0 values rest on Cepheid-distance anchors and so share the
+first two rungs of the SH0ES ladder, not its SNe; with errors of the size
+quoted in the table they do not separate the early and late values `[der]`.
 
 ### 4.3 Systematics
 <!-- key: systematics -->
@@ -319,14 +324,16 @@ deceleration `[src: arXiv:2201.07241, Sect. 3.11.1]`.
 **Current measurement.** The ESPRESSO experiment, three epochs over ~2 yr on
 one z = 3.962 quasar, finds v̇ = −3.5 ± 3.6 m s⁻¹ yr⁻¹, a null result
 consistent with ΛCDM; systematics are subdominant at that noise
-(Trost et al. 2026, arXiv:2603.02318) `[src]`. The error is about three orders
-of magnitude above the signal `[der: 3.6 m s⁻¹ yr⁻¹ against ~0.4 cm s⁻¹ yr⁻¹]`.
+(Trost et al. 2026, arXiv:2603.02318) `[src: abstract]`.
+
+The measured error is far above the predicted signal of the paragraph above
+`[der]`.
 
 **Forecasts.** A 42-m telescope would detect the drift in ~20 yr with
 4000 h on the Lyα forest at 2 < z < 5 (Liske et al. 2008,
 arXiv:0802.1532) **forecast** `[src]`; ESPRESSO + ANDES would reach a first
-detection before 2080, about 10 yr sooner with low-z HI 21-cm absorption from
-radio facilities (arXiv:2603.02318) **forecast** `[src]`. Radio forecasts:
+detection before 2080, up to ~10 yr sooner with low-z HI 21-cm absorption
+from radio facilities (arXiv:2603.02318) **forecast** `[src: abstract]`. Radio forecasts:
 ~800 HI absorbers from one year of the FAST CRAFTS survey (Jiao et al. 2019,
 arXiv:1905.01184) **forecast** `[src]`; SKA HI 21-cm emission and absorption
 near z ~ 1 (Kang et al. 2025, arXiv:2501.15117) **forecast** `[src]`. A
@@ -357,20 +364,20 @@ D_ls/D_s. From 53 SLACS lenses, flat Ω_Λ = 0.75 ± 0.17 and γ_PPN = 1.01 ±
 0.05, but with the warning that the results are unlikely to become precise
 unless mass profile, velocity anisotropy, light profile and the dispersion
 measurement are constrained far better (Schwab et al. 2010,
-arXiv:0907.4992) `[src]`. A 118-lens catalogue (SLACS, BELLS, LSD, SL2S)
+arXiv:0907.4992) `[src: abstract]`. A 118-lens catalogue (SLACS, BELLS, LSD, SL2S)
 fits w or CPL with a power-law slope γ(z) free to evolve
-(Cao et al. 2015, arXiv:1509.07649) `[src]`. Ignoring the redshift evolution
+(Cao et al. 2015, arXiv:1509.07649) `[src: abstract]`. Ignoring the redshift evolution
 of the mass-density slope biases Ω_m by up to ~10σ in LSST-size mocks;
 modelling it recovers the input, ΔΩ_m ≃ 0.01 and Δw ≃ 0.1 for ~10⁴ lenses
-(Geng et al. 2026, arXiv:2603.04279) **forecast** `[src]`.
+(Geng et al. 2026, arXiv:2603.04279) **forecast** `[src: abstract]`.
 
 **Double-source-plane lenses.** The ratio of the two Einstein radii depends
 only on distance ratios, is independent of H0, and has an Ω_m–w degeneracy
 almost orthogonal to that of the CMB and BAO; a handful of systems would give
-~15% on w (Collett et al. 2012, arXiv:1203.2758) **forecast** `[src]`. Euclid
+~15% on w (Collett et al. 2012, arXiv:1203.2758) **forecast** `[src: abstract]`. Euclid
 Q1 found four candidates in 63 deg², consistent with a LensPop prediction of
 6 ± 3, and the full survey is predicted to find 1700
-(Euclid Collaboration: Li et al. 2025, arXiv:2503.15327) **forecast** `[src]`.
+(Euclid Collaboration: Li et al. 2025, arXiv:2503.15327) **forecast** `[src: abstract]`.
 
 **Lens counts.** The fraction of multiply imaged sources grows with the volume
 to the source, hence with Ω_Λ. CLASS radio lenses gave flat Ω_m = 0.31
@@ -389,13 +396,13 @@ counts are judged unlikely to compete as a dark-energy probe (Weinberg et al.
 
 **Next samples (forecasts).** Euclid Q1 (0.45% of the survey) yielded ~500
 high-quality candidates, supporting the forecast of over 100,000 lenses
-(Lines et al. 2025, arXiv:2508.14624) **forecast** `[src]`. For LSST, a
+(Lines et al. 2025, arXiv:2508.14624) **forecast** `[src: abstract]`. For LSST, a
 photometric sample of 100,000 lenses with up to 50% false positives would give
 σ(Ω_m, Ω_Λ, w) = 0.1, 0.03, 0.15 in wCDM, equivalent to 2500–3500
 spectroscopic systems (Holloway et al. 2026, arXiv:2609.21699)
-**forecast** `[src]`. For CSST, 10,000 lenses with dispersions would give
+**forecast** `[src: abstract]`. For CSST, 10,000 lenses with dispersions would give
 σ(Ω_m) = 0.01 in ΛCDM and σ(w) = 0.04 (Wu et al. 2025, arXiv:2511.08030)
-**forecast** `[src]`.
+**forecast** `[src: abstract]`.
 
 **What a referee checks.** The mass model (SIS or power law; slope evolution
 with redshift); velocity anisotropy and aperture correction of σ; for counts,
@@ -407,11 +414,12 @@ constraint is not H0 (distance ratios only).
 <!-- key: cosmic-chronometers-and-combinations-pointers -->
 
 Chronometers (H(z) from differential ages of passive galaxies) are covered
-in this skill: method in `physics-and-methods.md` §5, data in
-`surveys-and-data.md` §7, values in `results.md`, systematic budget in
-`systematics.md` §15. Joint fits of quasars, GRBs and HII galaxies are
-dominated by the BAO and H(z) data they are combined with (§3.3,
-arXiv:2009.12953) `[src]`; state a claimed departure from ΛCDM above z ~ 2
+in this skill: method in `physics-and-methods.md`, data in
+`surveys-and-data.md#gravitational-waves-and-chronometers-pointers`, values
+in `results.md`, systematic budget in
+`systematics.md#megamasers-sirens-chronometers`. Joint fits of quasars, GRBs
+and HII galaxies are dominated by the BAO and H(z) data they are combined
+with (the GRB constraints above, arXiv:2009.12953, abstract) `[src]`; state a claimed departure from ΛCDM above z ~ 2
 per probe and per calibration. The SN-side reading is in `cosmo-supernovae`
 (`open-questions.md`).
 

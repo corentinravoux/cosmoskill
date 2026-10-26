@@ -338,7 +338,7 @@ shift of filter edges has only an initial measurement [src: Sect. 6].
   linearised chromatic corrections, cycle-wise selection, grey corrections,
   Gaia uniformity test.
 - Application: Rykoff et al. 2023, arXiv:2305.01695 — DES Y6 star
-  selection, changes since Y3, 1.8 mmag Gaia DR3 test.
+  selection, changes since Y3, 1.8 mmag Gaia DR3 test [src: Sect. II].
 - Method/critique: Xiao et al. 2023, arXiv:2309.11225 — SCR and corrected
   Gaia XP standards; errors of the stellar-locus method and of uncorrected
   XP spectra.

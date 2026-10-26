@@ -16,7 +16,7 @@ the accuracy each paper states
 sets of BOSS, eBOSS and DESI with their counts and calibration chains
 (`physics-and-methods.md#what-the-main-suites-ran`,
 `surveys-and-data.md#fast-mock-sets-used-by-surveys`); the comparison of
-seven methods against 300 N-body runs and the DESI DR1 rescaling of the
+seven methods against 300 N-body runs (arXiv:1806.09497 [src: abstract]) and the DESI DR1 rescaling of the
 EZmock covariance (`systematics.md#covariance-from-approximate-mocks`,
 `results.md#accuracy-of-approximate-methods`). The finite-mock corrections
 and the choice between analytic and mock covariances belong to
@@ -115,11 +115,11 @@ Number of steps, as measured against MICE-GC (ICE-COLA, mesh factor 3):
   redshift [src: same].
 - 2% agreement on P(k) at z = 0 up to k ≈ 0.4, 0.6 and 0.8 h/Mpc for 10,
   20 and 40 steps; doubling the steps roughly doubles that wavenumber
-  [src: Sect. 4.1].
+  [src: arXiv:1509.04685, Sect. 4.1].
 - The low-mass end of the mass function converges with 20 steps; the most
-  massive haloes need 40 [src: Sect. 4.1]. The rule drawn: at least 10
-  steps before the redshift of interest, so 20 or more to z = 0 [src:
-  Sect. 4.5].
+  massive haloes need 40 [src: arXiv:1509.04685, Sect. 4.1]. The rule drawn: at least
+  10 steps before the redshift of interest, so 20 or more to z = 0
+  [src: arXiv:1509.04685, Sect. 4.5].
 
 Starting redshift. A first guess is z_i equal to the step width in a
 (z_i = 9 for 10 steps); for 40 steps z_i = 9 leaves percent-level
@@ -167,11 +167,12 @@ physical meaning; what matters is that clustering and covariance match
 
 1. Fit ξ_0, ξ_2 on s ∈ [0, 50] Mpc/h and the number density with a
    diagonal covariance σ_i = 3/s_i² (Eq. 17), on 123 FastPM runs sharing
-   the SLICS initial conditions.
+   the SLICS initial conditions [src: arXiv:2307.14197, Sect. 3.3.1].
 2. Refit with the covariance of the paired differences
    Δ = (FastPM − SLICS) over the 123 pairs (Eqs. 18–20), in P_ℓ for
    k ∈ [0.02, k_max] with k_max = 0.5, 0.4 or 0.3 h/Mpc, or in ξ_ℓ for
-   s ∈ [s_min, 50] with s_min = 0, 5 or 10 Mpc/h (Table 3).
+   s ∈ [s_min, 50] with s_min = 0, 5 or 10 Mpc/h (arXiv:2307.14197, Sect. 3.3.2 and Table 3;
+   the 123 pairs, N_mocks^cov: Sect. 3.3).
 
 The paired-difference covariance is used because shared white noise makes
 the standard covariance of either set "obsolete" for the fit [src:
@@ -203,13 +204,13 @@ The eBOSS version replaces these steps with one bias function (Zhao et al.
   km/s (Eqs. 22–24).
 
 ρ_sat = 10 and λ = 10 are fixed because they are degenerate with the other
-parameters, leaving ρ_c, ρ_exp, b and ν free (Table 1) [src: Sects.
-2.2.2–2.2.6]. Because the final densities are re-ranked, the exact form of
+parameters, leaving ρ_c, ρ_exp, b and ν free (Table 1) [src: arXiv:2007.08997,
+Sects. 2.2.2–2.2.6]. Because the final densities are re-ranked, the exact form of
 the scatter does not matter, only the order of cells [src: Sect. 2.2.3].
 The BAO enhancement of the original recipe is dropped, because only 6, 16
 and 4% of LRGs, ELGs and QSOs land at random positions and the BAO
 strength matters little for covariances compared with the broad-band
-amplitude [src: Sect. 2.2.4].
+amplitude [src: arXiv:2007.08997, Sect. 2.2.4].
 
 ### Step 5. Calibrate
 <!-- key: step-5-calibrate -->
@@ -222,10 +223,10 @@ eBOSS EZmocks [src: arXiv:2007.08997, Sect. 2.5 and Sect. 2.2.6]:
 2. Match ξ_0, ξ_2 on 10–50 Mpc/h, P_0, P_2 on 0.1–0.3 h/Mpc (0.24 for the
    QSO NGC) and one bispectrum configuration (k_1 = 0.1, k_2 = 0.05 h/Mpc,
    all angles), in broad overlapping redshift bins, because the fine bins
-   have too few tracers for precise two- and three-point statistics.
+   have too few tracers for precise two- and three-point statistics [src: arXiv:2007.08997, Sect. 2.5].
 3. Interpolate each parameter in redshift with
    p = c_0 + c_1 z_eff + c_2 z_eff⁽²⁾ (Eq. 36).
-4. Tune by hand on one realisation, validate on 50, then mass-produce.
+4. Tune by hand on one realisation, validate on 50, then mass-produce [src: arXiv:2007.08997, Sect. 2.5].
 
 The parameters must be recalibrated whenever the grid changes at fixed
 volume [src: Sect. 2.2.1]. The 2014 paper found that grids coarser than
@@ -272,7 +273,7 @@ in a way that is cumbersome to compute analytically [src: Sect. II.2.1].
   [src: arXiv:1603.00476, Sects. 3 and 3.2].
 - Haloes after abundance matching: FastPM is nearly a factor 2 closer to
   the reference at N_s = 5; the advantage shrinks with steps and vanishes
-  at 40 [src: Sect. 3.2]. The authors suggest COLA's free parameters may
+  at 40 [src: arXiv:1603.00476, Sect. 3.2]. The authors suggest COLA's free parameters may
   have been tuned for the matter field at the expense of haloes [src:
   same].
 - Memory: COLA stores the 2LPT fields of each particle; FastPM does not
@@ -319,7 +320,7 @@ in a way that is cumbersome to compute analytically [src: Sect. II.2.1].
 - With the k_max = 0.5 fit, standard deviations agree with SLICS within 5%
   for s > 10 Mpc/h and k < 0.35 h/Mpc [src: arXiv:2307.14197, Sect. 5].
 - Across the six fitting choices, the errors on two clustering-amplitude
-  parameters vary by up to 20%, mostly 2–10% [src: abstract].
+  parameters vary by up to 20%, mostly 2–10% [src: arXiv:2307.14197, abstract].
 
 ### More mocks or control variates
 <!-- key: more-mocks-or-control-variates -->
@@ -329,7 +330,7 @@ in a way that is cumbersome to compute analytically [src: Sect. II.2.1].
   redshift-space lognormal mocks resembling DESI LRGs [src:
   arXiv:2605.28817, abstract]; diminishing once the target–Zel'dovich
   correlation vanishes near k ≈ 0.2 h/Mpc [src: Sect. IV, summary].
-- Cost: one Zel'dovich run per mock plus 10,000 for μ, all cheap.
+- Cost: one Zel'dovich run per mock plus 10,000 for μ, all cheap [src: arXiv:2605.28817, Sect. II.2.1].
 - Limit: the test targets are lognormal mocks and the analytic β, ρ assume
   a Gaussian disconnected covariance [src: abstract]; a test with N-body
   or EZmock targets was not read.

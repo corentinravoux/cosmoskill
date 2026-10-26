@@ -7,7 +7,7 @@ simulations, how a supercluster is delimited (percolation, density level,
 future collapse, velocity basins), and how the mass, shape and dynamical
 state of either structure are estimated, with what each choice costs.
 Snapshot: 2026-10-19.
-From: M. Einasto 2025 supercluster review, Sect. 2, 11-13; HSC, LATIS and
+From: M. Einasto 2025 supercluster review (arXiv:2505.22082), Sects. 2 and 11–13; HSC, LATIS and
 Lyα protocluster surveys.
 
 Already in L2, not repeated here: headline objects and the z > 5
@@ -104,7 +104,7 @@ Stated reasons:
 - **Point-cloud clustering.** HDBSCAN, "a minimum cluster size of 15 LAEs
   and the 10th nearest neighbor distance", median surface density > 0.23
   arcmin⁻² [src: Sect. IV.2 of arXiv:2406.08645].
-- **Contamination from random maps.** ODIN draws random subsets of all
+- **Contamination from random maps.** ODIN (arXiv:2406.08645) draws random subsets of all
   continuum and line emitters in the narrowband image, matched in number
   and narrowband magnitude to the LAEs, builds the same maps, and takes
   the ratio of detections in random and real maps as the contamination
@@ -199,7 +199,7 @@ Three definitions are in use (M. Einasto 2025 review, arXiv:2505.22082)
 [src: Sect. 2]:
 
 1. **Percolation or density level before percolation.** Friends-of-friends
-   on groups or clusters with a linking length below percolation; for
+   on groups or clusters (arXiv:2505.22082) with a linking length below percolation; for
    Abell clusters 24 h⁻¹Mpc, close to their Poisson radius R_P = 26
    h⁻¹Mpc, giving largest superclusters of ~100–150 h⁻¹Mpc [src: Sect. 2].
    On a luminosity-density field: smoothing with a B₃ spline of 8 h⁻¹Mpc
@@ -220,8 +220,7 @@ Three definitions are in use (M. Einasto 2025 review, arXiv:2505.22082)
    an attractor (Laniakea and successors); see `cosmo-peculiar-velocities`
    for the velocity data [src: Sect. 2 of arXiv:2505.22082].
 
-The critical values depend on Ω_m (arXiv:1502.04584, Table 1) [src:
-Appendix A]:
+The critical values depend on Ω_m (arXiv:1502.04584) [src: Table 1, in Appendix A]:
 
 | Ω_m | R for future collapse | R at turnaround | Δ_c (future collapse) |
 |---|---|---|---|
@@ -233,12 +232,17 @@ Appendix A]:
 
 Δ_c = (ρ_ov − ρ_c)/ρ_c is the overdensity relative to the critical
 density; R varies with background Ω_m while Δ_c "hardly changes" [src:
-Sect. 2]. The review quotes Δρ_turn = 13.1 and Δρ_FC = 8.73 for ΛCDM
-[src: Sect. 8 of arXiv:2505.22082]; these are the Ω_m = 0.27 row of the
-table above [der: comparison of the two tables], so with a Planck-like
-Ω_m ≈ 0.32 the future-collapse threshold is ~7.4. The review also lists
+Sect. 2].
+
+The review quotes Δρ_turn = 13.1 and Δρ_FC = 8.73 for ΛCDM
+[src: Sect. 8 of arXiv:2505.22082]. The review also lists
 Δρ_ZG = 5.41 (zero gravity) and Δρ = 1 (Einstein–Straus radius, roughly
 the cocoon boundary) [src: Sect. 8].
+
+The review's two thresholds coincide with one of the lower-Ω_m rows of
+the table above, not with its Planck-based row, so check which Ω_m a
+quoted threshold assumes before applying it [der: comparison of the two
+tables].
 
 ### Step 7. Estimate supercluster mass, shape and dynamical state
 <!-- key: step-7-estimate-supercluster-mass-shape-and -->
@@ -268,11 +272,11 @@ the cocoon boundary) [src: Sect. 8].
   C/4π (length), planarity K₁ = (H₂ − H₁)/(H₂ + H₁) and filamentarity K₂ =
   (H₃ − H₂)/(H₃ + H₂) [src: Sect. 3 of arXiv:2505.22082]. The review
   writes "Prolate ellipsoids (pancakes)" for H₁ ≪ H₂ ≈ H₃ and "oblate
-  ellipsoids (filaments)" for H₁ ≈ H₂ ≪ H₃ [src: Sect. 3]; by the usual
-  geometric meaning the labels are swapped (pancakes are oblate,
-  filaments prolate) [der: definition of oblate and prolate], so quote
-  the H inequalities, not the adjectives. Rich superclusters with K₁/K₂ <
-  0.5 are the more elongated [src: Sect. 3].
+  ellipsoids (filaments)" for H₁ ≈ H₂ ≪ H₃ [src: Sect. 3]. Rich
+  superclusters with K₁/K₂ < 0.5 are the more elongated [src: Sect. 3].
+- **Shape labels.** By the usual geometric meaning the review's labels are
+  swapped (pancakes are oblate, filaments prolate) [der: definition of
+  oblate and prolate], so quote the H inequalities, not the adjectives.
 - **Dynamical state.** Mass profile around the most massive cluster of
   each high-density core, compared with Δρ_turn, Δρ_FC and the collapse
   values, then evolved with the spherical model [src: Sect. 8 of
@@ -429,7 +433,7 @@ supercluster are therefore different objects; say which one is meant.
 - Systematics: Baxter et al. 2025, arXiv:2504.03836 — completeness limits and core identification.
 - Review: M. Einasto 2025, arXiv:2505.22082 — supercluster definitions, shapefinders, masses, collapse.
 - Method: Chon et al. 2015, arXiv:1502.04584 — future-collapse criterion and its Ω_m dependence.
-- Application: Lietzen et al. 2016, arXiv:1602.08498 — density level at z ≈ 0.5, two mass routes.
+- Application: Lietzen et al. 2016, arXiv:1602.08498 — density level, a system with mean redshift 0.47 (abstract), two mass routes.
 
 ## Not verified
 <!-- key: not-verified -->

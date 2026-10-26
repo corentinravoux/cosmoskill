@@ -34,15 +34,17 @@ re-verify against the cited paper before a number enters a manuscript.
   10, 0.002(1+z) as the year-1 goal (arXiv:1809.01669, Sect. 5.2), Euclid's
   0.002(1+z) (arXiv:2208.10503).
 - DES Y6 FGCM stars are uniform to < 1.8 mmag RMS, but the absolute scale is
-  known only to ~1% through CALSPEC (arXiv:2305.01695).
-- Gaia XP and stellar colour regression exposed 15–23 mmag zero-point
-  errors in released surveys (arXiv:2309.11225, arXiv:2309.11533).
+  known only to ~1% through CALSPEC (arXiv:2305.01695, abstract).
+- Stellar colour regression exposed zero-point errors of up to 15 mmag in
+  the stellar-locus calibration of J-PLUS DR3 (arXiv:2309.11225, abstract)
+  and up to 23 mmag in S-PLUS DR4 (arXiv:2309.11533, abstract).
 - Chromatic errors reach 2% before correction, < 0.3% after
-  (arXiv:1601.00117); angle-dependent filter shifts bias off-axis photo-z
+  (arXiv:1601.00117, abstract); angle-dependent filter shifts bias off-axis photo-z
   high (arXiv:2310.14716).
-- SFD is 14% too high in normalisation (arXiv:1012.4804) and nine of ten
-  dust maps carry extragalactic structure (arXiv:1808.03294); DESI stellar
-  reddening differs from SFD by up to 80 mmag (arXiv:2409.05140).
+- SFD needs a 14% recalibration, E(B−V) = 0.86 E(B−V)_SFD (arXiv:1012.4804,
+  abstract, Sect. I), and nine of ten dust maps carry extragalactic
+  structure (arXiv:1808.03294, abstract); DESI stellar reddening differs
+  from SFD by up to 80 mmag in E(B−V) (arXiv:2409.05140, abstract).
 - Stacked posteriors are a biased n(z); posteriors under implicit priors
   cannot be used for inference (arXiv:2007.12178).
 - DES Y6 source σ⟨z⟩ = 0.012, 0.008, 0.009, 0.024, dominated by missing
@@ -55,13 +57,14 @@ re-verify against the cited paper before a number enters a manuscript.
 - Two population models change KiDS-1000 edge-bin means by Δz ~ 0.05–0.1
   (arXiv:2602.03935, abstract): forward modelling moves the risk to the prior.
 - DESI calibrates DES, HSC and KiDS together to σ_z̄ ~ 0.01, disagreeing with
-  the KiDS-1000 means (arXiv:2510.25419).
+  the KiDS-1000 means (arXiv:2510.25419, abstract).
 - Euclid mocks: binning on SOM-cell spec-z meets the requirement in no bin,
   on photo-z in eight of ten (arXiv:2508.02779).
 - Several machine-learning codes give good point estimates but useless PDFs
   (arXiv:2009.12112).
-- Rubin DP1: σ_NMAD 0.028–0.055, 12–20% outliers (arXiv:2510.07370); Euclid Q1
-  photo-z still need a bias correction (arXiv:2503.15306).
+- Rubin DP1: σ_NMAD ~ 0.03 and outlier fractions around 10% in the 6-band
+  data (arXiv:2510.07370, abstract); Euclid Q1 photo-z still need a bias
+  correction (arXiv:2503.15306, abstract).
 
 ## Systematics a referee checks
 <!-- key: systematics-a-referee-checks -->
@@ -115,7 +118,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 4k; methods 10k; results 6k; surveys 5k; systematics 5k; deep/chromatic-extinction 7k; deep/clustering-redshifts-shear-ratio 11k; deep/machine-learning-photoz 8k; deep/narrow-many-band-photometry 13k; deep/photometric-calibration 7k; deep/population-forward-models 12k.
+Sizes, in thousands of tokens: L1 3k; open 4k; methods 10k; results 7k; surveys 5k; systematics 5k; deep/chromatic-extinction 7k; deep/clustering-redshifts-shear-ratio 11k; deep/machine-learning-photoz 9k; deep/narrow-many-band-photometry 13k; deep/photometric-calibration 7k; deep/population-forward-models 12k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

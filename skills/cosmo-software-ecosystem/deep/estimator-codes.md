@@ -91,9 +91,7 @@ memory (arXiv:1512.07295, Sect. 5) [src].
   criterion is in L2). The effective tolerance therefore depends on the
   binning. KiDS-Legacy measured ξ± in 1000 logarithmic θ-bins between 2′
   and 300′ with TreeCorr 4.2.3 and `bin_slop` = 1.5 (Wright et al. 2025,
-  arXiv:2503.19441, Sect. 2.5.1) [src]; the logarithmic bin width is
-  ln(150)/1000 ≈ 0.005, so `bin_slop` × bin size ≈ 0.0075
-  [der: from the stated range and bin number]. DES Y3 cosmic shear used
+  arXiv:2503.19441, Sect. 2.5.1) [src]. DES Y3 cosmic shear used
   20 logarithmic bins from 2.5′ to 250′ with TreeCorr (Amon et al. 2021,
   arXiv:2105.13543, Sect. VI.1) [src]; its `bin_slop` was not stated in
   the section read.
@@ -219,7 +217,8 @@ the field (cross-power with direct summation) (arXiv:1512.07295, Sect. 3.2)
   subtraction, and is implemented in the Euclid pipeline [src].
 - Ignoring the parallel-transport phase in pixel averaging gives an r.m.s.
   multiplicative bias ≈ 10⁻⁴ at Euclid-like depth, within Stage-IV
-  requirements for N_side ≥ 128 [src: Sect. 9].
+  requirements for N_side ≥ 128 (arXiv:2501.08718) [src: Sect. 9].
+
 - Interlaced HEALPix grids mitigate aliasing "reasonably well" but depend
   on the input spectrum and catalogue construction; the authors ask for a
   careful study before use on data [src: Sect. 9].

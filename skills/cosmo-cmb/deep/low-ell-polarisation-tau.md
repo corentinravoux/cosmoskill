@@ -177,8 +177,10 @@ CLASS follows the same logic with smoother tools (arXiv:2501.11904,
 Sect. V.4, Eq. 11):
 
 - 600 (τ, A_s) pairs (arXiv:2501.11904, Sect. V.4), τ uniform in 0–0.3, with
-  A_s e^{−2τ} = 1.884 × 10⁻⁹. This value differs from SRoll2's 1.875
-  because each is taken from the Planck best fit the paper cites.
+  A_s e^{−2τ} = 1.884 × 10⁻⁹, the Planck 2018 TTTEEE+lowE best fit taken
+  as fiducial (arXiv:2501.11904) [src: Sect. I]. SRoll2 instead fixes
+  10⁹A_s e^{−2τ} = 1.875 "as in Planck Collaboration Int. XLVI (2016)"
+  (arXiv:1908.09856) [src: Sect. 4].
 - 500 realisations per pair; a kernel density estimate per multipole
   gives the likelihood at the data (arXiv:2501.11904, Sect. V.4).
 - Gaussian-process interpolation in τ, then emcee with a Gaussian prior on
@@ -224,7 +226,7 @@ arXiv:2103.14378, Sects. 4.2–4.3):
 - SRoll2 tests [src: arXiv:1908.09856, Sect. 4]:
   - masks of 20–60% (arXiv:1908.09856, Sect. 4);
   - ℓ_min up to 5, stable;
-  - dropping one multipole: removing ℓ = 5 shifts τ by about 0.5σ,
+  - dropping one multipole: removing ℓ = 5 causes "a roughly half-σ shift" in τ,
     consistent with a 1.2σ fluctuation in simulations (arXiv:1908.09856, Sect. 4);
   - synchrotron tracers WMAP K, Ka or LFI 30 GHz agree (arXiv:1908.09856, Sect. 4);
   - 217 GHz instead of 353 GHz as dust tracer for 100 GHz agrees, with

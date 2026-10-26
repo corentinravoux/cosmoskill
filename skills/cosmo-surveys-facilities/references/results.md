@@ -25,20 +25,20 @@ parameter values: those are in the probe skills.
 | 30 June 2005; 30 June 2006 | SDSS DR4; DR5 | same page | [src] |
 | 30 June 2007 | SDSS DR6, the first release with the "ubercalibration" photometry | same page; arXiv:astro-ph/0703454 | [src] |
 | 31 October 2008 | SDSS DR7, last release of SDSS-I/II | same page | [src] |
-| 14 May 2009; 12 August 2009 | Planck launch; start of scanning | arXiv:1807.06205 | [sec: CMB] |
+| 14 May 2009; 12 August 2009 | Planck launch; start of scanning | arXiv:1807.06205 | [src: abstract] |
 | 11 January 2011 | SDSS DR8, first SDSS-III release | sdss.org | [src] |
 | 31 July 2012 | SDSS DR9; the BOSS overview refers to the DR9 BAO detection | sdss.org; arXiv:1208.0022 | [src] |
 | 30 July 2013 | SDSS DR10 | sdss.org | [src] |
-| 23 October 2013 | End of Planck scanning | arXiv:1807.06205 | [sec: CMB] |
+| 23 October 2013 | End of Planck scanning | arXiv:1807.06205 | [src: abstract] |
 | Summer 2014 | SDSS-IV observations begin at Apache Point | arXiv:1703.00052 | [src] |
 | 6 January 2015 | SDSS DR11 and DR12 (same date on the page) | sdss.org | [src] |
 | 31 July 2016 | SDSS DR13, first SDSS-IV release | sdss.org; arXiv:1703.00052 | [src] |
 | 31 July 2017 | SDSS DR14 | sdss.org | [src] |
 | July 2018 | Planck 2018 "legacy" release (PR3) | arXiv:1807.06205 | [sec: CMB] |
 | 10 December 2018 | SDSS DR15 | sdss.org | [src] |
-| 13 July 2019 | Launch of SRG with eROSITA | arXiv:2010.03477 | [src] |
+| 13 July 2019 | Launch of SRG with eROSITA | arXiv:2010.03477 | [src: abstract] |
 | 9 December 2019 | SDSS DR16, complete eBOSS main sample | sdss.org; arXiv:2112.02026 | [src] |
-| 13 December 2019 | eROSITA all-sky survey begins (the DR2 page gives 12 December as the first day of data) | arXiv:2010.03477; erosita.mpe.mpg.de/dr2 | [src] |
+| 13 December 2019 | eROSITA all-sky survey begins (the DR2 page gives 12 December as the first day of data) | arXiv:2010.03477 [src: abstract]; erosita.mpe.mpg.de/dr2 for 12 December | [src] |
 
 ### 1.2 2020 to 2024
 <!-- key: 2020-to-2024 -->
@@ -56,12 +56,12 @@ parameter values: those are in the probe skills.
 | 6 December 2021 | SDSS DR17, final SDSS-IV release | sdss.org; arXiv:2112.02026 | [src] |
 | 29 September 2022 | WEAVE on-sky commissioning of the large IFU begins | ING WHT page | [src] |
 | 19 January 2023 | SDSS DR18, first SDSS-V release | sdss.org | [src] |
-| 24 May 2023 | Start of LVK O4 (O4a) | arXiv:2508.18082 | [src] |
+| 24 May 2023 | Start of LVK O4 (O4a) | arXiv:2508.18082 | [src: abstract] |
 | 13 June 2023 | DESI Early Data Release | data.desi.lbl.gov release page | [src] |
 | 1 July 2023 | Euclid launch | ESA Euclid timeline | [src] |
 | October 2023 | WEAVE large-IFU surveys and open time begin | ING WHT page | [src] |
 | Late 2023 | Simons Observatory small-aperture telescopes begin commissioning observations | arXiv:2609.26938 | [sec: CMB] |
-| 16 January 2024 | End of O4a | arXiv:2508.18082 | [src] |
+| 16 January 2024 | End of O4a | arXiv:2508.18082 | [src: abstract] |
 | 25 January 2024 | LISA adopted by ESA | press coverage found by web search | [sec: web] |
 | January 2024 | eROSITA-DE DR1 (eRASS1, western Galactic hemisphere) | arXiv:2401.17274 | [src] |
 | 14 February 2024 | Euclid nominal survey begins | ESA Euclid timeline | [src] |
@@ -76,7 +76,7 @@ parameter values: those are in the probe skills.
 |---|---|---|---|
 | 22 February 2025 | Simons Observatory LAT first image | Simons Foundation release | [sec: CMB] |
 | March 2025 | PFS offered to the Subaru community | arXiv:2606.14012 | [sec: GC] |
-| 11 March 2025 | SPHEREx launch | arXiv:2511.02985 | [sec: GC] |
+| 11 March 2025 | SPHEREx launch | arXiv:2511.02985 | [src: abstract] |
 | 18 March 2025 | ACT DR6 maps and spectra | arXiv:2503.14451 | [sec: CMB] |
 | 19 March 2025 | DESI DR1 public (18.7 million spectra) | data.desi.lbl.gov release page | [src] |
 | 19 March 2025 | Euclid Quick Data Release 1 | ESA Euclid timeline | [src] |
@@ -84,7 +84,7 @@ parameter values: those are in the probe skills.
 | 9 July 2025 | DOE and NSF withdraw support for CMB-S4 | cmb-s4.org | [sec: CMB] |
 | 10 July 2025 | SDSS DR19 | sdss.org | [src] |
 | July 2025 | WEAVE stand-down ends | ING WHT page | [src] |
-| August 2025 | GWTC-4.0 (O4a; 128 new candidates) | arXiv:2508.18082 | [src] |
+| August 2025 | GWTC-4.0 (O4a; 128 new candidates) | arXiv:2508.18082 | [src: abstract] |
 | 6 October 2025 | DESI DR2 cosmology products (BAO likelihoods and chains) | DESI announcement | [sec: GC] |
 | October 2025 | SPHEREx "QR2" weekly image releases begin at IRSA | web-search summary | [sec: web] |
 | 18 October 2025 | 4MOST first light (ESO date; the project site news item is dated 21 October) | ESO sciann17735; 4most.eu | [sec: GC]; [src] |
@@ -105,7 +105,7 @@ parameter values: those are in the probe skills.
 | 24 June 2026 | Euclid Quick Data Release 2 (Galactic bulge) | ESA Euclid timeline | [src] |
 | 26 June 2026 | LiteBIRD Mission Definition Review #2 | ISAS/JAXA page | [sec: CMB] |
 | 30 June 2026 | Rubin LSST ten-year survey begins | Rubin announcement | [sec: WL] |
-| July 2026 | CHORD overview: 64-dish pathfinder in commissioning | arXiv:2607.09374 | [src] |
+| July 2026 | CHORD overview: 64-dish pathfinder in commissioning | arXiv:2607.09374 | [src: abstract] |
 | 27 July 2026 | Rubin Early Data Preview 2 | dp2.lsst.io | [src] |
 | 30 July 2026 | SDSS DR20 | sdss.org | [src] |
 | 31 July 2026 | eROSITA-DE DR2 (eRASS:3 catalogues) | erosita.mpe.mpg.de/dr2 news item | [src] |
@@ -183,12 +183,14 @@ parameter values: those are in the probe skills.
   cosmology product [src].
 - "Survey complete" and "data public" are separated by a year or more: DESI
   finished its planned survey in April 2026 [sec: GC] with DR1 (May 2021 to
-  June 2022, the first 13 months [der]) as the newest public spectra [src].
+  June 2022) as the newest public spectra [src].
 - Several numbers describe designs, not delivered data. eROSITA planned eight
-  all-sky passes (arXiv:2010.03477) and its latest release covers three
-  (arXiv:2607.27772) [src]. The Legacy Surveys were designed for 14,000 deg²
-  (arXiv:1804.08657) and DR11 covers about 22,700 deg² jointly in all bands
-  [src]. KiDS was designed for 1500 deg² and ended at 1347 deg² [sec: WL].
+  all-sky passes (arXiv:2010.03477) [src: abstract] and its latest release
+  covers three (arXiv:2607.27772). The Legacy Surveys were designed for
+  14,000 deg² (arXiv:1804.08657) [src: abstract] and DR11 covers about
+  22,700 deg² jointly in all bands (`legacysurvey.org` DR11 page). KiDS was
+  designed for 1500 deg² (arXiv:1206.1254) [src: abstract] and DR5 spans
+  1347 deg² (arXiv:2503.19439) [src: abstract].
 - The SDSS page gives one date for DR11 and DR12. Cite DR12 for final BOSS.
 - An arXiv identifier dates the paper, not the archive: the DESI DR1 paper
   (arXiv:2503.14745) and the archive opening coincide, the HSC PDR3 paper

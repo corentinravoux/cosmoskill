@@ -30,24 +30,28 @@ re-verify against the cited paper before a number enters a manuscript.
 <!-- key: what-an-expert-holds-in-mind -->
 
 - DESI DR2 BAO prefers `w0wa` at 1.7σ alone, 3.1σ with CMB, 2.8 / 3.8 /
-  4.2σ with Pantheon+ / Union3 / DESY5 (arXiv:2503.14738); the last three
-  superseded.
-- After the supernova revisions: 3.2–3.4σ for every sample
-  (arXiv:2511.07517, arXiv:2601.19424); Unite 3.3σ, "weak" Bayesian evidence
-  (arXiv:2609.05053); DES Y6 + DESI + CMB 3.0σ (arXiv:2605.27221).
+  4.2σ with Pantheon+ / Union3 / DESY5 (arXiv:2503.14738, Sect. VII.1,
+  Table 6); the last three superseded.
+- After the supernova revisions: DES-Dovekie 3.2σ (arXiv:2511.07517,
+  abstract); Union3.1 3.4σ, Dovekie rerun 3.4σ, corrected Pantheon+ 3.2σ
+  (arXiv:2601.19424, abstract); Unite 3.3σ, "only weak" Bayesian evidence
+  (arXiv:2609.05053, abstract); DES Y6 + DESI + CMB 3.0σ (arXiv:2605.27221,
+  abstract).
 - No single data set shows it: DESI clustering without CMB gives 1.4σ; the
-  bispectrum weakens it (arXiv:2602.18761, arXiv:2606.23936).
+  bispectrum weakens it (arXiv:2602.18761, arXiv:2606.23936; both abstract).
 - The preference is a slope, not an offset: `w_p = −0.954 ± 0.024` at
-  `z_p = 0.31` (arXiv:2503.14738, arXiv:2404.08056).
-- Statistics can disagree in sign: Pantheon+ with DR2 gives 2.8σ but
-  `ln B = −0.66 ± 0.44` (arXiv:2503.14743).
+  `z_p = 0.31` (arXiv:2503.14738, Sect. VII.1; arXiv:2404.08056).
+- Statistics can disagree in sign: Pantheon+ with DR2 + CMB gives 2.8σ
+  (arXiv:2503.14738, Table 6) but `ln B = −0.66 ± 0.44` (arXiv:2503.14743,
+  App. A, Table 4).
 - Compressed CMB priors give 2.4σ, primary CMB 2.7σ, lensing 3.1σ
-  (arXiv:2503.14738). A `tau = 0.09` prior leaves 1.4σ (arXiv:2504.16932).
+  (arXiv:2503.14738, Table 6). A `tau = 0.09` prior leaves 1.4σ
+  (arXiv:2504.16932, Sect. III.2).
 - The BAO + CMB tension lies in null-energy-condition-violating
   directions (arXiv:2412.13894). Thawing models beat Λ only with supernovae
   and lose to CPL (arXiv:2503.14743, arXiv:2512.20832).
 - Phantom crossing is preferred within CPL, not established: 3.2% of
-  non-crossing mocks imitate it (arXiv:2506.15091).
+  non-crossing mocks imitate it (arXiv:2506.15091, abstract).
 - Negative neutrino mass, interacting dark energy and non-minimal coupling
   absorb the same data mismatch as `w0wa` (arXiv:2407.10965,
   arXiv:2601.07361, arXiv:2503.19898).
@@ -56,11 +60,13 @@ re-verify against the cited paper before a number enters a manuscript.
   artefact (arXiv:2411.12026).
 - GW170817: `abs(c_g/c − 1) ≤ 5 × 10^-16`; only conformally coupled
   Horndeski terms survive (arXiv:1710.05901, arXiv:1710.05877).
-- Hu–Sawicki `f_R0 < 1.4 × 10^-8` from galaxies (arXiv:2009.08743);
-  10^-5-level from DESI clustering (arXiv:2604.26915).
+- Hu–Sawicki `f_R0 < 1.4 × 10^-8` (1σ) from galaxies (arXiv:2009.08743,
+  abstract, Sect. V); `log10 abs(f_R0) < −4.59` (95%) from DESI DR1
+  clustering (arXiv:2604.26915, abstract).
 - `E_G` at z = 0.555, GR value 0.401: 0.36 (+0.06/−0.05) with Planck
-  lensing (arXiv:2401.12971), 0.31 (+0.06/−0.05) with ACT DR6, 0.34 ± 0.05
-  with both (arXiv:2405.12795). The low 2015 value is superseded.
+  lensing (arXiv:2401.12971, abstract), 0.31 (+0.06/−0.05) with ACT DR6,
+  0.34 ± 0.05 with both (arXiv:2405.12795, abstract). The low 2015 value is
+  superseded.
 - `w0waCDM` lowers `H0` (arXiv:2503.14738).
 
 ## Systematics a referee checks
@@ -77,7 +83,8 @@ fits; source of `Omega_m` in `E_G`.
 ## Errors that recur
 <!-- key: errors-that-recur -->
 
-- Quoting 4.2σ, or "DESI alone", for evolving dark energy.
+- Quoting 4.2σ (DESI DR2 + CMB + DESY5 before Dovekie; arXiv:2503.14738,
+  Table 6), or "DESI alone", for evolving dark energy.
 - Presenting a `Delta chi2` significance as Bayesian evidence, or the reverse.
 - Reading the CPL best fit as proof of `w < −1` at high redshift.
 - Saying the data favour quintessence.

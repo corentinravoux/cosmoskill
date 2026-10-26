@@ -34,7 +34,8 @@ A facility's past slips are the best available prior on its next date.
 
 DESI is the counter-example: it finished its planned survey ahead of
 schedule in April 2026 [sec: GC], after running about 7% faster than
-forecast in dark time during its first 1.1 years (arXiv:2306.06309) [src].
+forecast in dark time during its first 1.1 years (arXiv:2306.06309) [src:
+abstract].
 
 ### 1.2 Dates that carry cosmology in the next three years
 <!-- key: dates-that-carry-cosmology-in-the-next-three -->
@@ -77,14 +78,14 @@ forecast in dark time during its first 1.1 years (arXiv:2306.06309) [src].
 | Project | What changed | Consequence for a text | Flag |
 |---|---|---|---|
 | CMB-S4 | DOE and NSF withdrew support on 9 July 2025; orderly shutdown | every "CMB-S4 will measure" is void; the South Pole programme (SPT-3G+, BICEP Array) and the enlarged Simons Observatory are the actual successors | [sec: CMB] |
-| LiteBIRD | reformation 2024–2026: one telescope instead of three, 12 bands instead of 15, requirement δr < 0.002 instead of the earlier 0.001 goal, launch JFY2036 | quote the 2026 overview (arXiv:2607.25285), not the 2022 design | [sec: CMB] |
-| MSE | the 2018 design (11.25 m, 4332 fibres) was replaced by an 11.5 m quad-mirror concept with more than 18,000 fibres, "proposed to replace the Canada-France-Hawai'i Telescope in the 2040s" (arXiv:2503.15553) [src]; a CFHT Board recommendation of December 2024 to wind down MSE activities is reported [sec: web] | not a facility of the 2030s; not funded as far as read | as given |
+| LiteBIRD | reformation 2024–2026: one telescope instead of three, 12 bands [src: Sect. 2.3, 5], total uncertainty δr < 0.002 (68% C.L.) [src: abstract] with a statistical target σ_r < 0.001 [src: Sect. 2.1], target launch Japanese fiscal year 2036 [src: Table 2] | quote the 2026 overview (arXiv:2607.25285), not the 2022 design | as given; reformation history [sec: CMB] |
+| MSE | the 2018 design (11.25 m aperture, 4332 spectra per exposure; Hill et al. 2018, arXiv:1810.08695 [src: abstract]) was replaced by an 11.5 m quad-mirror concept with 18,000+ fibres [src: abstract], "proposed to replace the Canada-France-Hawai'i Telescope in the 2040s" (arXiv:2503.15553) [src]; a CFHT Board recommendation of December 2024 to wind down MSE activities is reported [sec: web] | not a facility of the 2030s; not funded as far as read | as given |
 | eROSITA | fewer all-sky passes than designed (Sect. 1.1); half-sky public data | forecasts based on eight passes (for example cluster counts) do not describe the data | [src] |
-| KiDS | designed for 1500 deg² (de Jong et al. 2012, arXiv:1206.1254), completed at 1347 deg² because ESO stopped the companion VIKING survey at about 90% of its area and KiDS was truncated to match (arXiv:2503.19439) | quote 1347 deg² | [sec: WL]; [src]; [src: Sect. 3.1.1] |
-| HSC-SSP | Deep and UltraDeep layers reached about 80% of the planned integration and "are considered done" (arXiv:2108.13045) | depth of the deep layers is below the 2018 design | [src] |
+| KiDS | designed for 1500 deg² (de Jong et al. 2012, arXiv:1206.1254) [src: abstract], completed at 1347 deg² (DR5 abstract) because ESO stopped the companion VIKING survey at about 90% of its area and KiDS was truncated to match (arXiv:2503.19439) | quote 1347 deg² | [sec: WL]; [src]; [src: Sect. 3.1.1] |
+| HSC-SSP | Deep and UltraDeep layers reached about 80% of the planned integration and "are considered done" (arXiv:2108.13045) | depth of the deep layers is below the 2018 design | [src: abstract] |
 | Roman spectroscopic survey | the 2021 reference survey of 2000 deg² (arXiv:2110.01829) [sec: GC] was superseded by the community-defined High Latitude Wide Area Survey: more than 5000 deg² in total, of which about 2500 deg² with spectroscopy (NASA page) [src] | forecasts based on the 2000 deg² HLSS are for a different survey | as given |
 | DESI | extended, not descoped: more than 47 million redshifts against a goal of 34 million, footprint to about 17,000 deg² by 2028 | the "14,000 deg², 35–40 million" description is the 2016–2022 design | [sec: GC] |
-| Legacy Surveys | grew from the 14,000 deg² design to about 22,700 deg² jointly covered in DR11, with an i band in the south | the footprint used for DESI targeting (DR9) is a subset | [src] |
+| Legacy Surveys | grew from the 14,000 deg² design (arXiv:1804.08657) [src: abstract] to about 22,700 deg² jointly covered in DR11, with an i band in the south (`legacysurvey.org` DR11 page) | the footprint used for DESI targeting (DR9) is a subset | as given |
 
 Not every redefinition is a loss, but each makes older forecasts refer to a
 survey that will not exist. A forecast is tied to the design document it
@@ -104,14 +105,15 @@ or of definition:
 | Rubin survey start | `cosmo-weak-lensing`: 30 June 2026 flagged [src]; `cosmo-supernovae` and `cosmo-clusters`: same date flagged [sec] | not re-fetched; the DP2 page and RTN-011 v9.1 are consistent with a survey under way [src] | same date; the difference is provenance only |
 | Roman launch | all three siblings: 30 August 2026, with different flags | NASA mission page: "Launch: August 30, 2026" [src] | confirmed |
 | Euclid survey area | "about 14,000 deg²" in both siblings | 14,000 deg² in the NISP and VIS papers; 14,500 deg² for the pre-launch reference survey and "roughly 15,000" in the same abstract (arXiv:2108.01201) [src]; the VIS paper body also writes "6 years ... to observe 15 000 deg²" (arXiv:2405.13492) [src: Sect. 2.2] and the NISP body "∼14 000 deg²" (arXiv:2405.13493) [src: Sect. 2] | 14,000 deg² for the mission; the others are pre-launch planning numbers |
-| DESI footprint | `cosmo-galaxy-clustering` quotes both "expected final 14,200 deg²" (arXiv:2404.03002) and "from 14,000 to about 17,000 deg²" (Berkeley Lab) | the Survey Validation and operations papers say 14,000 deg² [src] | 14,000 is the design round number, 14,200 the tiled footprint; no conflict |
+| DESI footprint | `cosmo-galaxy-clustering` quotes both "expected final 14,200 deg²" (arXiv:2404.03002) [src: Sect. 2.2] and "from 14,000 to about 17,000 deg²" (Berkeley Lab) | the Survey Validation and operations papers say 14,000 deg² [src] | 14,000 is the design round number, 14,200 the tiled footprint; no conflict |
 | HSC Y3 shear area | `cosmo-weak-lensing`: 433.48 deg² (paper) and 434 deg² (web summary) | not re-read | rounding |
 | KiDS-Legacy calibration fields | `cosmo-weak-lensing`: 23 deg² in one abstract, 27 deg² in another | not resolved there or here | open; quote each with its paper |
 | Simons Observatory LAT first light | `cosmo-cmb`: first image on 22 February 2025 (Simons Foundation) | a web summary of 2026 status slides says first light "in April of 2025" [sec: web] | unresolved; the two may name different milestones. Quote the foundation's release with its own wording |
 
 Two discrepancies found inside the sources themselves, not between
 siblings: the eROSITA survey start is 13 December 2019 in the instrument
-paper and 12 December 2019 on the DR2 page [src]; the Legacy Surveys site
+paper (arXiv:2010.03477) [src: abstract] and 12 December 2019 on the DR2
+page; the Legacy Surveys site
 gives about 31,000 deg² of modelled sky on its front page and about
 22,731 deg² of joint all-band coverage on the DR11 page [src].
 
@@ -122,8 +124,9 @@ Each line gives the claim, then the correction and where it was read.
 
 1. Any future-tense statement about CMB-S4 measurements. The project lost
    agency support on 9 July 2025 [sec: CMB].
-2. "LiteBIRD launches in the late 2020s and targets δr < 0.001." Launch
-   JFY2036, requirement δr < 0.002 [sec: CMB].
+2. "LiteBIRD launches in the late 2020s and targets δr < 0.001." Target
+   launch Japanese fiscal year 2036 [src: Table 2], total-uncertainty
+   requirement δr < 0.002 [src: abstract] (arXiv:2607.25285).
 3. "DESI will measure 34 (or 40) million redshifts over 14,000 deg² in five
    years." Done ahead of schedule with more than 47 million, extended to
    about 17,000 deg² through 2028 [sec: GC]. The 40 million figure is the
@@ -145,29 +148,35 @@ Each line gives the claim, then the correction and where it was read.
    SDSS release": DR20, 30 July 2026 [src].
 9. "4MOST is in survey operations." First light was in October
    2025 and the main survey had not started on 15 June 2026 [sec: GC],
-   [src]. "4MOST has about 2400 fibres" is right: 1624 + 812 = 2436 [src].
+   [src]. "4MOST has about 2400 fibres" is right: 1624 low-resolution and
+   812 high-resolution fibres (arXiv:1903.02464) [src: abstract], 2436
+   spectra per pointing (arXiv:2606.27882) [src: abstract].
 10. "WEAVE has been surveying since 2023." Only with the large IFU; the
     multi-object surveys were still expected in April 2026 [src].
 11. "eROSITA's eight-pass survey" as the basis of a cluster sample. The
     public catalogues stop at three passes and cluster cosmology uses
     eRASS1 [src], [sec: CL].
 12. "The ZTF SN Ia DR2 sample of 3628 supernovae constrains dark energy."
-    Its overview says the photometry is not yet suited to cosmological
+    The 3628 is the DR2 count (arXiv:2409.04346) [src: abstract]; its
+    overview says the photometry is not yet suited to cosmological
     inference [sec: SN].
-13. "MSE is an 11.25 m facility with 4332 fibres" (the 2018 book). See
-    Sect. 2.
+13. "MSE is an 11.25 m facility with 4332 fibres" (the 2018 book,
+    arXiv:1810.08695 [src: abstract]). See Sect. 2.
 14. "CSST launches in 2023" (or 2025, 2026). 2027 at the earliest [src],
     [sec: web].
-15. "KiDS covers 1500 deg²." 1347 deg² [sec: WL]; [src: Sect. 3.1.1 of
-    arXiv:2503.19439].
+15. "KiDS covers 1500 deg²." 1347 deg² (arXiv:2503.19439) [src: abstract].
 16. "The Legacy Surveys cover 14,000 deg² in grz." That is the original
-    design; DR11 covers about 22,700 deg² and adds i in the south [src].
+    design (arXiv:1804.08657) [src: abstract]; DR11 covers about 22,700 deg²
+    and adds i in the south (`legacysurvey.org` DR11 page).
 17. "The Simons Observatory has three small telescopes and forecasts
-    σ(r) = 0.003." The plan is six by 2027, with a forecast near 10⁻³
-    [sec: CMB].
+    σ(r) = 0.003." The SAT complement is to double "from three to six
+    telescopes" by 2027, with a **forecast** σ_r = 1.2 × 10⁻³
+    (arXiv:2512.15833) [src: abstract].
 18. "O4 is under way and GWTC-3 (90 events) is the current catalogue." O4
-    ended on 18 November 2025 [sec: web]; GWTC-4.0 has 218 candidates and
-    the GWTC-5.0 population analysis 267 mergers [src].
+    ended on 18 November 2025 [sec: web]; GWTC-4.0 has 218 candidates
+    including the 90 of GWTC-3.0 (arXiv:2508.18082) [src: abstract] and the
+    GWTC-5.0 population analysis 267 mergers (arXiv:2605.27226) [src:
+    abstract].
 19. "DSA-2000 first light in 2026" and "SKA science in 2026" come from
     older documents; the SKAO schedule seen puts science verification
     in 2027 and the end of staged delivery in 2029 [sec: web].
@@ -185,7 +194,8 @@ Each line gives the claim, then the correction and where it was read.
   strategies on which the dark-energy forecasts rest (DP2 and DR1):
   `cosmo-weak-lensing`, `cosmo-supernovae`.
 - Whether the South Pole and Atacama programmes reach σ(r) ≈ 10⁻³ without
-  CMB-S4 (**forecast** target, 2030s): `cosmo-inflation-primordial`.
+  CMB-S4 (**forecast** target, 2030s; the SO forecast is σ_r = 1.2 × 10⁻³,
+  arXiv:2512.15833 [src: abstract]): `cosmo-inflation-primordial`.
 - Whether 21 cm intensity mapping moves from cross-correlation detections to
   a BAO measurement (CHIME, CHORD from 2028, HIRAX, MeerKLASS, SKA-Mid):
   `cosmo-reionization-21cm`.
@@ -196,6 +206,11 @@ Each line gives the claim, then the correction and where it was read.
 ## Not verified
 <!-- key: not-verified -->
 
+- LiteBIRD was described as going from "15 bands" and an "earlier 0.001
+  goal" to 12 bands and δr < 0.002; the 2026 overview (arXiv:2607.25285)
+  gives 12 bands [src: Sect. 2.3, 5], δr < 0.002 total [src: abstract] and
+  σ_r < 0.001 statistical [src: Sect. 2.1], and the
+  earlier values were not read in a paper this run, so they were removed.
 - Whether the 4MOST main survey and the WEAVE multi-object surveys have
   started; the Roman survey start; Rubin DR1 date; DESI DR2 release date.
 - The CFHT Board statement on MSE and the Spec-S5 funding status.

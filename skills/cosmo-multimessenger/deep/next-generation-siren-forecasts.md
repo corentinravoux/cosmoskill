@@ -136,12 +136,12 @@ arXiv:2607.20413, grep of the rendering].
 
 | Forecast | Counterpart and instrument | Rule | Place read |
 |---|---|---|---|
-| ET design study, ET+VRO | kilonova, Rubin | follow up all events with `ΔΩ_90 < 40` deg² in its sky, `g` and `i` on the first two nights, 600 s per pointing; pointings = `ΔΩ`/FoV + 1; 60 s overhead per night; 2600 h of Rubin time per year | Table 10, Sect. 4.3 |
-| ET design study, ET+THESEUS | short-GRB prompt emission | short-GRB model normalised to observations; 75 joint detections in 5 yr for 2L-20km | Sect. 6.4.1 |
-| Chen et al. 2024 | kilonova, LSST | `z ≤ 0.5`, `ΔΩ ≤ 100` deg² (≤ 10 pointings), 30 s single exposure, peak brighter than the band limit, then 40% kept for coverage and duty cycles; highest detected `z = 0.28` | Sect. 4.2 |
-| Colombo et al. 2026 | kilonova; GRB prompt | `m_g,lim = 26` (about 180 s with Rubin); GBM fluence `3 × 10⁻⁷` erg cm⁻² (×10 better as a variant) | End Matter VI.1.2 |
+| ET design study (arXiv:2303.15923), ET+VRO | kilonova, Rubin | follow up all events with `ΔΩ_90 < 40` deg² in its sky, `g` and `i` on the first two nights, 600 s per pointing; pointings = `ΔΩ`/FoV + 1; 60 s overhead per night; 2600 h of Rubin time per year | Table 10, Sect. 4.3 |
+| ET design study (arXiv:2303.15923), ET+THESEUS | short-GRB prompt emission | short-GRB model normalised to observations; 75 joint detections in 5 yr for 2L-20km | Sect. 6.4.1 |
+| Chen et al. 2024 (arXiv:2402.03120) | kilonova, LSST | `z ≤ 0.5`, `ΔΩ ≤ 100` deg² (≤ 10 pointings), 30 s single exposure, peak brighter than the band limit, then 40% kept for coverage and duty cycles; highest detected `z = 0.28` | Sect. 4.2 |
+| Colombo et al. 2026 (arXiv:2609.12053) | kilonova; GRB prompt | `m_g,lim = 26` (about 180 s with Rubin); GBM fluence `3 × 10⁻⁷` erg cm⁻² (×10 better as a variant) | End Matter, Sect. VI.1.2 |
 | De Leo et al. 2026 | GRB afterglow, Rubin | equivalent to `ι < 18°` | Sect. 3.2 |
-| LISA, massive black-hole binaries | radio (SKA) localisation, then ELT redshift | about 10–25 bright sirens in five years; about four useful per year | Sects. 2.2.1, 2.3.2 |
+| LISA (arXiv:2204.05434), massive black-hole binaries | radio (SKA) localisation, then ELT redshift | about 10–25 bright sirens in five years; about four useful per year | Sects. 2.2.1, 2.3.2 |
 
 Reasons and caveats stated: kilonova emission is close to isotropic, so the
 selected events are not near face-on and the FIM is better conditioned

@@ -29,26 +29,26 @@ re-verify against the cited paper before a number enters a manuscript.
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
 
-- n_s (ΛCDM): 0.9649 ± 0.0042 (Planck 2018, arXiv:1807.06211), 0.9679 ± 0.0033 (CMB-SPA, arXiv:2506.20707), 0.974 ± 0.003 (P-ACT-LB, with DESI BAO; arXiv:2503.14452).
-- 0.974 partly reflects the CMB–BAO tension (arXiv:2507.12459): with Ω_K or w0wa free, n_s is 0.967–0.972 (arXiv:2607.28445); with α_s, N_eff, Σm_ν free its error doubles (arXiv:2609.35964).
-- Starobinsky: 2σ edge of P-ACT-LB + BK18 for N = 50–60, in ΛCDM (arXiv:2503.14454); refined predictions stay within 2σ for N ≳ 58 (arXiv:2504.20757).
-- Running: 0.0062 ± 0.0052 (arXiv:2503.14454); eBOSS Lyα −0.010 ± 0.004 is superseded (arXiv:2601.21432).
-- r_0.05 < 0.036 at 95%, σ(r) = 0.009 (BK18, arXiv:2110.00483) remains the tightest; SPT-3G alone gives r < 0.25 (arXiv:2505.02827); 0.032 (arXiv:2112.07961) and 0.038 (ACT) reuse it.
-- Forecasts: SO with six SATs, σ(r) = 1.2 (1.4) × 10⁻³ with 70% (50%) delensing (arXiv:2512.15833); LiteBIRD after reformation, δr < 0.002 (arXiv:2607.25285).
-- CMB f_NL: local −0.9 ± 5.1, equilateral −26 ± 47, orthogonal −38 ± 24 (Planck 2018, arXiv:1905.05697); PR4: −0.1 ± 5.0, 6 ± 46, −8 ± 21 (arXiv:2504.00884).
-- Galaxy surveys measure f_NL·b_φ. DESI DR1: −3.6 ± 9 (quasar p = 1.6) or +3.5 (p = 1) (arXiv:2411.17623); one BOSS data vector: σ = 16–226 (arXiv:2205.05673). ±4.1 (CMB + DESI) is an external bispectrum reanalysis (arXiv:2512.04266).
-- SPHEREx launched 11 March 2025; Δf_NL < 0.5 is required, assuming universality (arXiv:2511.02985). Euclid forecasts 2.2 (arXiv:2507.15819).
-- Isocurvature: Planck β_iso(k = 0.002 Mpc⁻¹) < 2.5% for CDI, < 0.1% if fully correlated (arXiv:1807.06211).
-- Ω_K < 0 is closed. Planck-alone −0.044 +0.018/−0.015 is the A_L feature (arXiv:1807.06209); DESI DR2 + CMB: +0.0023 ± 0.0011 (arXiv:2503.14738).
+- n_s (ΛCDM): 0.9649 ± 0.0042 (Planck 2018, arXiv:1807.06211, abstract), 0.9679 ± 0.0033 (CMB-SPA, arXiv:2506.20707, Sect. II), 0.974 ± 0.003 (P-ACT-LB, with DESI BAO; arXiv:2503.14452, abstract) [src: places as given].
+- 0.974 partly reflects the CMB–BAO tension (arXiv:2507.12459): with Ω_K free, n_s = 0.9667 ± 0.0041 (Planck + DESI) or 0.9692 ± 0.0035 (+ ACT, SPT); with w0wa free, 0.9716 ± 0.0032 (arXiv:2607.28445) [src: abstract]; with α_s, N_eff, Σm_ν free, 0.9758 ± 0.0064 (arXiv:2609.35964) [src: abstract].
+- Starobinsky: P-ACT-LB disfavours it at ≳ 2σ for 50 < N < 60, in ΛCDM (arXiv:2503.14454) [src: Sect. IV.4]; refined predictions stay within 2σ for N⋆ ≳ 58 (arXiv:2504.20757) [src: abstract].
+- Running: 0.0062 ± 0.0052 (arXiv:2503.14454) [src: abstract]; eBOSS Lyα −0.010 ± 0.004 (arXiv:1911.09073) [src: abstract] is superseded (arXiv:2601.21432).
+- r_0.05 < 0.036 at 95%, σ(r) = 0.009 (BK18, arXiv:2110.00483) [src: abstract] remains the tightest; SPT-3G alone gives r < 0.25 (arXiv:2505.02827) [src: abstract]; 0.032 (arXiv:2112.07961) [src: abstract] and 0.038 (ACT, arXiv:2503.14454) [src: Sect. IV.4] reuse it.
+- Forecasts: SO with six SATs, σ(r) = 1.2 × 10⁻³ with 70% delensing [src: abstract], 1.4 × 10⁻³ in the paper's most conservative case (50% delensing, pessimistic 1/f, decorrelation) [src: Sect. 3.2] (arXiv:2512.15833); LiteBIRD after reformation, δr < 0.002 (arXiv:2607.25285) [src: abstract].
+- CMB f_NL: local −0.9 ± 5.1, equilateral −26 ± 47, orthogonal −38 ± 24 (Planck 2018, arXiv:1905.05697); PR4: −0.1 ± 5.0, 6 ± 46, −8 ± 21 (arXiv:2504.00884) [src: abstract of each].
+- Galaxy surveys measure f_NL·b_φ. DESI DR1: −3.6 +9.0/−9.1 (quasar p = 1.6) or +3.5 +10.7/−7.4 (p = 1) (arXiv:2411.17623) [src: abstract]; one BOSS data vector gives 16 ± 16 at best and 230 ± 226 at worst, by b_φ choice (arXiv:2205.05673) [src: abstract]. ±4.1 (CMB + DESI) is an external bispectrum reanalysis (arXiv:2512.04266) [src: abstract].
+- SPHEREx launched 11 March 2025 [src: abstract]; Δf_NL < 0.5 is required, assuming universality (arXiv:2511.02985) [src: Sect. III.2]. Euclid forecasts 2.2 (arXiv:2507.15819) [src: abstract].
+- Isocurvature: Planck β_iso(k_low) < 2.5% for generally correlated CDI, much tighter if fully correlated (arXiv:1807.06211) [src: Sect. 9.2].
+- Ω_K < 0 is closed. Planck-alone −0.044 +0.018/−0.015 is the A_L feature (arXiv:1807.06209) [src: Sect. 7.3]; DESI DR2 + CMB: +0.0023 ± 0.0011 (arXiv:2503.14738) [src: Table 5 (Sect. VI), given as 10³Ω_K = 2.3 ± 1.1].
 - Features: amplitudes below 2% (arXiv:2606.28310); a 3σ DESI fixed-cosmology feature vanishes with cosmology free (arXiv:2610.10530).
-- Birefringence: β = 0.342° +0.094/−0.091 (WMAP + Planck, arXiv:2205.13962), 0.215° ± 0.074° (ACT, arXiv:2509.13654), 0.277° ± 0.057° jointly, 4.8σ; no detection claimed (arXiv:2608.06480).
+- Birefringence: β = 0.342° +0.094/−0.091 (WMAP + Planck, arXiv:2205.13962), 0.215° ± 0.074° (ACT, arXiv:2509.13654), 0.277° ± 0.057° jointly, 4.8σ; no detection claimed (arXiv:2608.06480) [src: abstract of each].
 
 ## Systematics a referee checks
 <!-- key: systematics-a-referee-checks -->
 
 - n_s: CMB combination, arXiv version, BAO, model.
-- r: dust complexity (bias up to 0.03, arXiv:2508.00073), beam leakage (10⁻³, arXiv:2608.25016), point sources (1–3 × 10⁻³, arXiv:2110.00483), delensing, ℓ_knee.
-- CMB f_NL: lensing–ISW subtraction (+5 on local), simulations.
+- r: dust complexity (bias up to r ∼ 0.03, arXiv:2508.00073, abstract), beam leakage ((1.12 ± 0.06) × 10⁻³ equivalent r, arXiv:2608.25016, abstract), point sources (1–3 × 10⁻³, arXiv:2110.00483, App. F.2) [src: places as given], delensing, ℓ_knee.
+- CMB f_NL: lensing–ISW subtraction (shifts the local value; `systematics.md`, C1), simulations.
 - Galaxy f_NL: b_φ prior, imaging weights, integral constraints; bispectrum bias priors.
 - Ω_K: likelihood, discordant data, dark-energy model.
 - Features: global significance, varied cosmology.
@@ -57,12 +57,12 @@ re-verify against the cited paper before a number enters a manuscript.
 ## Errors that recur
 <!-- key: errors-that-recur -->
 
-- "ACT measured n_s = 0.974": P-ACT gives 0.9709 ± 0.0038.
+- "ACT measured n_s = 0.974": 0.974 ± 0.003 is P-ACT-LB, with CMB lensing and DESI DR1 BAO added [src: abstract]; P-ACT gives 0.9709 ± 0.0038 (arXiv:2503.14452) [src: Sect. VIII.3].
 - "Starobinsky is excluded", without model, N and data.
-- r < 0.032 taken as newer B-mode data than r < 0.036.
-- r_ect < 0.0077 (causal sources, arXiv:2601.20958) quoted as inflationary.
+- r < 0.032 (arXiv:2112.07961) [src: abstract] taken as newer B-mode data than r < 0.036 (arXiv:2110.00483) [src: abstract].
+- r_ect < 0.0077 (causal sources, arXiv:2601.20958) [src: abstract] quoted as inflationary.
 - Citing CMB-S4 or pre-reformation LiteBIRD targets.
-- f_NL = 0.8 ± 5.0 (2015, preliminary) as Planck's result.
+- f_NL = 0.8 ± 5.0 (2015, preliminary; arXiv:1502.01592) [src: abstract] as Planck's result.
 - Giving a galaxy f_NL without p.
 - "Planck shows a closed universe"; "negative curvature" for Ω_K < 0.
 - "Birefringence detected"; 0.30° ± 0.05° omits the angle systematic (arXiv:2507.16714, abstract).
@@ -91,7 +91,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 7k; methods 11k; results 12k; surveys 5k; systematics 12k; deep/bmode-foreground-separation 7k; deep/cmb-bispectrum 8k; deep/delensing 7k; deep/lss-bispectrum-png 10k; deep/slow-roll-model-comparison 6k; deep/tensor-bmode-likelihood 7k.
+Sizes, in thousands of tokens: L1 3k; open 8k; methods 11k; results 13k; surveys 5k; systematics 12k; deep/bmode-foreground-separation 7k; deep/cmb-bispectrum 8k; deep/delensing 7k; deep/lss-bispectrum-png 10k; deep/slow-roll-model-comparison 6k; deep/tensor-bmode-likelihood 7k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

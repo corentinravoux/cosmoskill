@@ -32,8 +32,7 @@ The common core is a linear least-squares fit of a template basis at each
 trial redshift, giving a χ²(z) curve per class; the global minimum sets the
 class and redshift.
 
-**BOSS idlspec2d** (Bolton et al. 2012, arXiv:1207.7326)
-[src: Sect. III.1]:
+**BOSS idlspec2d** (Bolton et al. 2012, arXiv:1207.7326) [src: Sect. III.1]:
 
 | Class | Basis | Redshift range and step |
 |---|---|---|
@@ -44,7 +43,7 @@ class and redshift.
 
 The polynomial absorbs Galactic and intrinsic extinction and residual
 spectrophotometric calibration errors, "typically at the 10% level"
-[src: same]. χ² is compared in reduced form χ²_r so that classes with
+[src: arXiv:1207.7326, Sect. III.1]. χ² is compared in reduced form χ²_r so that classes with
 different numbers of basis vectors can be ranked; with ~4500 pixels this is
 nearly the same as χ² [src: same]. Minima are refined by a quadratic through
 the five nearest points (11 for quasars); minima closer than 1000 km s⁻¹ are
@@ -108,10 +107,11 @@ DESI galaxy VI procedure (Lan et al. 2023, arXiv:2208.08516)
    artefacts and comments.
 3. Reports merge automatically if all pairs agree within
    dz_VI = |z_i − z_j|/(1 + z_i) < 0.0033 (990 km s⁻¹, Eq. 1), quality
-   within 1, and the same type; final redshift and quality are the means.
+   within 1, and the same type; final redshift and quality are the means
+   [src: arXiv:2208.08516, Sect. II].
 4. Otherwise a merger re-inspects.
 
-Quality scale [src: same]: 4 = two or more secure features; 3 = one secure
+Quality scale [src: arXiv:2208.08516, Sect. II]: 4 = two or more secure features; 3 = one secure
 feature plus continuum or many weak features; 2 = one strong feature of
 uncertain identity; 1 = signal without identified features; 0 = no
 signal. A robust VI redshift has mean quality ≥ 2.5. VI was run on deep
@@ -131,20 +131,19 @@ Lan et al. define, at main-survey depth (Eqs. 4–5) [src:
 arXiv:2208.08516, Sect. IV.2]:
 
 - good-redshift inclusion fraction = N(dz < 0.0033, VI quality ≥ 2.5,
-  passes cut) / N(dz < 0.0033, VI quality ≥ 2.5);
+  passes cut) / N(dz < 0.0033, VI quality ≥ 2.5) [src: arXiv:2208.08516, Eq. 4];
 - good-redshift purity = N(dz < 0.0033, VI quality ≥ 2.5, passes cut) /
-  N(passes cut);
+  N(passes cut) [src: arXiv:2208.08516, Eq. 5];
 
 with dz = |z_VI − z_Redrock|/(1 + z_VI) (Eq. 3), Redrock stars excluded.
 The cut is the point on the inclusion–purity curve the survey accepts.
-The DR1 cuts and stated reasons (DESI 2024 II, arXiv:2411.12020)
-[src: Sect. 3]:
+The DR1 cuts and stated reasons (DESI 2024 II, arXiv:2411.12020) [src: Sect. 3]:
 
 | Tracer | Cut | Reason given |
 |---|---|---|
 | BGS | ZWARN = 0, Δχ² > 40 | purity near 100% for bright and faint [src: arXiv:2208.08516, Sect. IV.2] |
-| LRG | ZWARN = 0, Δχ² > 15 | inclusion and purity > 99% [src: same] |
-| ELG | log₁₀ S_[OII] + 0.2 log₁₀ Δχ² > 0.9, S_[OII] the [O II] doublet S/N | many ELG spectra have only [O II] and no continuum, so low Δχ² but a robust line; a joint cut beats Δχ² alone [src: same] |
+| LRG | ZWARN = 0, Δχ² > 15 | inclusion and purity > 99% [src: arXiv:2208.08516, Sect. IV.2] |
+| ELG | log₁₀ S_[OII] + 0.2 log₁₀ Δχ² > 0.9, S_[OII] the [O II] doublet S/N | many ELG spectra have only [O II] and no continuum, so low Δχ² but a robust line; a joint cut beats Δχ² alone [src: arXiv:2208.08516, Sect. IV.2] |
 | QSO | not rejected by the quasar catalogue: QSO by Redrock, Mg II fit or QuasarNET | only tracer whose success depends on spectral type, which complicates systematics modelling [src: arXiv:2411.12020, Sect. 3] |
 
 For the galaxy tracers the Redrock spectral type does not enter: an LRG
@@ -207,7 +206,7 @@ function of TSNR2 at fixed fibre flux φ_fib, and
 
 w_zfail(S_ratio, φ_fib) = G_z(∞, φ_fib) / G_z(S_ratio, φ_fib) (Eq. 5),
 
-with S_ratio the TSNR2 value [src: same]. For ELGs, success depends on the
+with S_ratio the TSNR2 value [src: arXiv:2411.12020, Sect. 7.1]. For ELGs, success depends on the
 exact redshift because sky lines hide [O II], so a linear relation in
 TSNR2_ELG is fitted at each redshift and normalised to mean one
 [src: same]. Stated reason for the asymptotic form: it corrects only the
@@ -330,7 +329,7 @@ It also found ~0.5% of spectra hit by an unmasked CCD region near 8000 Å
   S/N where template mismatch dominates; BOSS added a relative cut for this
   [src: arXiv:1207.7326, Sect. III.1].
 - **Formal errors taken at face value.** Off by 1.19–1.34 (BOSS) and 0.65
-  (eBOSS) [src: arXiv:1207.7326, Sect. V.2; arXiv:1607.02432, Sect. IV.3].
+  (eBOSS) [src: arXiv:1207.7326, abstract, Sect. V.2; arXiv:1607.02432, Sect. IV.3].
   Test: repeat-difference histogram scaled by quoted errors.
 - **Success depending on conditions.** Up-weighting the absolute failure
   rate over-corrects; DESI weights only the TSNR2 dependence at fixed fibre

@@ -22,7 +22,7 @@ history agrees with the model, the normalisations disagree `[src]`.
 | Route | What is measured | What H0 then depends on |
 |---|---|---|
 | Three-rung ladder | SN Ia absolute magnitude M_B^0, then the Hubble-diagram intercept | geometry of the anchors; low-z kinematics (q0) only |
-| Two-rung ladder | stellar distances + host redshifts at cz of a few 1000 km/s | the peculiar-velocity field and sample selection |
+| Two-rung ladder | stellar distances + host redshifts of nearby hosts | the peculiar-velocity field and sample selection |
 | Megamasers | angular-diameter distance from disc dynamics + redshift | peculiar velocities of a handful of galaxies |
 | Time delays | time-delay distance D_dt | lens mass profile (mass-sheet degeneracy), Omega_m weakly |
 | Standard sirens | GW luminosity distance + redshift | inclination, host velocity, population model |
@@ -60,29 +60,32 @@ Cepheid j in host i, in the NIR Wesenheit system:
 with M^W_H,1 the absolute magnitude at P = 10 d and solar metallicity, b_W the
 period slope and Z_W (called gamma elsewhere) the metallicity term.
 
-Wesenheit magnitude (Section 3.4 of the same paper) `[src]`:
+Wesenheit magnitude (Section 3.4 of arXiv:2112.04510) `[src: Sect. 3.4]`:
 
     m^W_H = m_F160W - R (m_F555W - m_F814W),   R = A_H / (A_V - A_I)   (Eq. 7)
 
 The baseline R is 0.386, from the Fitzpatrick (1999) law with R_V = 3.3
-`[src: Sect. 6.3]`. R is about 0.4 for standard extinction laws; the intrinsic colour-luminosity
-relation at fixed period has a slope of about 0.6 in the same sense, so the
-same combination also narrows the instability-strip scatter `[src]`.
+`[src: Sect. 6.3]` (arXiv:2112.04510). R is about 0.4 for standard extinction
+laws; the intrinsic colour-luminosity relation at fixed period has a slope of
+about 0.6 in the same sense, so the same combination also narrows the
+instability-strip scatter `[src: Sect. 3.4]`.
 
 SN Ia in a Cepheid host: m^0_B,i = mu_0,i + M^0_B (Eq. 3).
 
 Hubble-flow intercept:
 
-    a_B = log{ cz [1 + (1 - q0) z / 2 - (1 - q0 - 3 q0^2 + j0) z^2 / 6] } - 0.2 m^0_B   (Eq. 4)
+    a_B = log{ cz [1 + (1 - q0) z / 2 - (1 - q0 - 3 q0^2 + j0) z^2 / 6] } - 0.2 m^0_B   (Eq. 4 of arXiv:2112.04510)
 
-    log H0 = 0.2 M^0_B + a_B + 5   (Eq. 5)
+    log H0 = 0.2 M^0_B + a_B + 5   (Eq. 5 of arXiv:2112.04510)
 
 In the limit z ~ 0, a_B = log cz - 0.2 m^0_B. In 2016 M^0_B and a_B were
 fitted separately; since 2022 Eqs. 3 and 5 are optimised simultaneously
-because calibrator and Hubble-flow SNe share covariance `[src: Sect. 2.1]`.
+because calibrator and Hubble-flow SNe share covariance `[src: Sect. 2.1]`
+(arXiv:2112.04510).
 
 The measurement is therefore Gaussian in 5 log H0 and slightly skewed in H0:
-5 log H0 = 9.318 ± 0.031, i.e. -0.98 / +1.03 `[src]`.
+5 log H0 = 9.318 ± 0.031, i.e. -0.98 / +1.03 `[src: Sect. 5]`
+(arXiv:2112.04510).
 
 An anchor enters as an external constraint (Eq. 2):
 M^W_H,j = m^W_H,N4258,j - mu_0,N4258 + Delta mu_N4258, with the extra
@@ -102,7 +105,7 @@ crowding-background floor between Cepheids of one host (Eq. 8), the
 metallicity-scale covariance (Eq. 9) and the SN covariance between
 calibrators and Hubble flow `[src: Sect. 2.1]`. The fit is cross-checked with
 MCMC (emcee, 100 walkers, more than 120 million samples to trace the 5 sigma
-tail) `[src]`.
+tail) `[src: Sect. 5.1]` (arXiv:2112.04510).
 
 Samples and cuts of the 2022 baseline (arXiv:2112.04510):
 
@@ -161,11 +164,11 @@ level-2 Hubble-flow probes.
 
 | Anchor | Method | Precision | Citation | Flag |
 |---|---|---|---|---|
-| Milky Way Cepheids | Gaia EDR3 parallaxes + HST photometry of 75 Cepheids | 1.0% | arXiv:2012.08534 | [src] |
+| Milky Way Cepheids | Gaia EDR3 parallaxes + HST photometry of 75 Cepheids | 1.0% | arXiv:2012.08534 | [src: abstract] |
 | Milky Way cluster Cepheids | mean Gaia parallax of > 300 stars per cluster, 17 Cepheids | offset -3 ± 4 microarcsec | arXiv:2208.01045 | [src: abstract] |
 | LMC | 20 late-type detached eclipsing binaries, surface-brightness-colour relation calibrated to 0.8% | 1% | arXiv:1903.08096 | [src: abstract] |
-| SMC | 15 late-type DEBs; core geometry modelled; 88 HST Cepheids | better than 2% | arXiv:2010.08754; arXiv:2404.08038 | [src] |
-| NGC 4258 | VLBI positions, velocities and accelerations of H2O masers in a Keplerian disc | 1.5% | arXiv:1908.05625 | [src] [der] |
+| SMC | 15 late-type DEBs (10 new + 5 published); core geometry modelled; 88 HST Cepheids | better than 2% | arXiv:2010.08754; arXiv:2404.08038 | [src: abstract] |
+| NGC 4258 | VLBI positions, velocities and accelerations of H2O masers in a Keplerian disc | 1.5% as the anchor-distance term of the SH0ES 2022 budget (arXiv:2112.04510, Table 7) | arXiv:1908.05625 | [src: Table 7] |
 
 Gaia parallaxes carry a zero-point bias that depends on magnitude, colour and
 ecliptic latitude; the Gaia team gives tentative correction formulae
@@ -180,8 +183,8 @@ Where each anchor comes from:
 | | Herrnstein et al. 1999, arXiv:astro-ph/9907013 | geometric distance from maser proper motions (31.5 microarcsec/yr) and accelerations in a thin Keplerian disc: 7.2 ± 0.3 Mpc | [src: abstract] |
 | | Humphreys et al. 2013, arXiv:1307.6031 | 18 VLBI epochs, warped disc with eccentric orbits: 7.60 ± 0.17 ± 0.15 Mpc | [src: abstract] |
 | LMC eclipsing binaries | Pietrzyński et al. 2013, arXiv:1303.2063 | late-type giant systems give both linear and angular sizes and avoid the modelling of hot early-type stars; 8 systems, 49.97 ± 0.19 ± 1.11 kpc (2.2%) | [src: abstract] |
-| Gaia parallaxes | Lindegren et al. 2021, arXiv:2012.03380 | EDR3 astrometry: 34 months, five-parameter solutions, or six-parameter ones with a pseudocolour | [src] |
-| | Riess et al. 2018, arXiv:1804.10655 | offset and distance scale fitted together, with DR2: -46 ± 13 microarcsec for Cepheids, a factor 2.5 lost in precision | [src] |
+| Gaia parallaxes | Lindegren et al. 2021, arXiv:2012.03380 | EDR3 astrometry: 34 months, five-parameter solutions, or six-parameter ones with a pseudocolour | [src: abstract] |
+| | Riess et al. 2018, arXiv:1804.10655 | offset and distance scale fitted together, with DR2: -46 ± 13 microarcsec for Cepheids, a factor 2.5 lost in precision | [src: abstract] |
 
 ### 2.4 Primary (stellar) indicators
 <!-- key: primary-stellar-indicators -->
@@ -202,15 +205,16 @@ and model fitting of the RGB + AGB luminosity function (EDD). The apparent tip
 correlates with the "contrast ratio" (stars below versus above the tip), which
 the CATS algorithm uses to standardise fields (Scolnic et al. 2023,
 arXiv:2304.06693) `[src]`. HST reaches about 20 Mpc with the TRGB and JWST at
-least 50 Mpc `[src]` (arXiv:2401.04776). JWST calibrations exist in F090W,
+least 50 Mpc `[src: abstract]` (arXiv:2401.04776). JWST calibrations exist in F090W,
 close to F814W
 (Anand et al. 2024, arXiv:2401.04776), and in F115W with a colour correction
 (Hoyt et al. 2025, arXiv:2503.11769) `[src]`. A Gaia-only calibration through
 globular clusters gives M_I = -3.948 (Cruz Reyes et al. 2026,
-arXiv:2602.15421) `[src]`.
+arXiv:2602.15421) `[src: abstract]`.
 
-**JAGB.** Carbon-rich AGB stars selected in a colour box (1.5 < J - K < 2.0),
-assumed to have a constant J-band luminosity. The statistic (mode, mean,
+**JAGB.** Carbon-rich AGB stars selected in a colour box (1.5 < J - K < 2.0,
+the standard box named in arXiv:2609.25412, abstract), assumed to have a
+constant J-band luminosity. The statistic (mode, mean,
 median, model fit) is not standardised between groups and gives different
 answers when the luminosity function is skewed (Li et al. 2025,
 arXiv:2502.05259) `[src]`.
@@ -227,7 +231,7 @@ Where each indicator comes from, and how the main analyses define it:
 | TRGB | Lee, Freedman & Madore 1993, doi:10.1086/173334 | tip first defined as the maximum response of a one-dimensional Sobel filter {-2, 0, +2} on the I-band luminosity function (arXiv:2503.11769, Sect. IV.1.1) | [sec] |
 | | Da Costa & Armandroff 1990, doi:10.1086/115500 | the colour of the giant branch traces metallicity (arXiv:2408.06153, Sect. VI.1) | [sec] |
 | | arXiv:2408.06153 | physics: core helium flash at a core mass near 0.5 solar masses, for stars below about 2 solar masses | [src: Sect. VI.1] |
-| | Freedman et al. 2019, arXiv:1907.05922; 2020, arXiv:2002.01550 | CCHP zero point on the LMC (DEB modulus 18.477), H0 = 69.8 ± 0.8 ± 1.7; the 2020 paper details the extinction method | [src] |
+| | Freedman et al. 2019, arXiv:1907.05922; 2020, arXiv:2002.01550 | CCHP zero point on the LMC (DEB modulus 18.477), H0 = 69.8 ± 0.8 ± 1.7 (abstract of arXiv:1907.05922); the 2020 paper details the extinction method | [src: abstract] |
 | | Jang et al. 2021, arXiv:2008.04181 | CCHP zero point on NGC 4258: tip at 25.347 ± 0.014 ± 0.042, M_F814W = -4.050 ± 0.028 ± 0.048 mag | [src: abstract] |
 | | arXiv:2503.11769 | infrared tip fitted in two dimensions and standardised by colour: mu_i = m_i + beta (c_i - c_0) - M | [src: Eq. 8] |
 | | arXiv:2304.06693 | CATS: each tip rectified to a contrast ratio R = 4, slope -0.021 ± 0.004 mag per unit R | [src: Sect. III.1] |
@@ -266,15 +270,17 @@ transfer models (Vogl et al. 2025, arXiv:2411.04968) `[src]`.
 ### 2.6 Redshifts and peculiar velocities
 <!-- key: redshifts-and-peculiar-velocities -->
 
-The Hubble-flow sample is cut at z > 0.0233 to limit peculiar-velocity noise.
-Redshifts are replaced by group redshifts where available and corrected with a
-reconstruction of the local flow from 2M++; this lowers the Hubble-residual
-scatter from 0.167 to 0.157 mag and raises H0 by about 0.4 (Peterson et al.
-2022, arXiv:2110.03487) `[src]`. H0DN uses the 2M++ model in its baseline and
-prefers tracers at z > 0.023 `[src]` (arXiv:2510.23823).
+The SH0ES Hubble-flow sample is cut at z > 0.0233 to limit peculiar-velocity
+noise `[src: Sect. 5]` (arXiv:2112.04510). Redshifts are replaced by group
+redshifts where available and corrected with a reconstruction of the local
+flow from 2M++; this lowers the Hubble-residual scatter from 0.167 to 0.157 mag
+and raises H0 by about 0.4 (Peterson et al. 2022, arXiv:2110.03487)
+`[src: abstract]`. H0DN uses the 2M++ model in its baseline and limits its
+analysis to "generally z > 0.01 or z > 0.023" `[src: Sect. II.1.1]`
+(arXiv:2510.23823).
 
-Two-rung ladders and megamasers work at cz of 1000 to 3000 km/s, where the
-velocity field is the dominant term. Two treatments are in use: a linear
+Two-rung ladders and megamasers work at low redshift, where the velocity
+field is the dominant term. Two treatments are in use: a linear
 reconstruction from 2M++, as above (SH0ES, H0DN), and a field-level one
 developed by one collaboration, which conditions on each posterior
 realisation of a constrained simulation (Manticore-Local, BORG applied to
@@ -298,7 +304,7 @@ which each distance is a latent parameter. Two effects appear (Desmond et al.
 
 Applying the prior without the selection term is inconsistent: it shifts the
 Milky Way zero point by about 0.05 mag and fails posterior predictive checks
-(Stiskalek et al. 2026, arXiv:2603.09880) `[src]`. Selection on one observable
+(Stiskalek et al. 2026, arXiv:2603.09880) `[src: abstract]`. Selection on one observable
 while analysing a correlated one also biases the result (Percival 2026,
 arXiv:2607.22425). The SH0ES pipeline corrects through simulation-based bias
 terms rather than through the likelihood. This debate is open; see
@@ -393,7 +399,7 @@ belong to `cosmo-multimessenger`.
 
 Cosmic chronometers (proposed by Jimenez & Loeb 2002,
 arXiv:astro-ph/0106145: the age difference of two ensembles of passively
-evolving galaxies gives dz/dt, hence H0 at z < 0.2 `[src]`; review of the
+evolving galaxies gives dz/dt, hence H0 at z < 0.2 `[src: abstract]`; review of the
 emerging probes: Moresco et al. 2022, arXiv:2201.07241):
 H(z) = -(1 + z)^-1 dz/dt from the differential ages of
 massive passive galaxies; cosmology-independent but dependent on
@@ -411,7 +417,7 @@ The value is model-dependent by construction. See `cosmo-cmb`.
 **BAO.** BAO measure distances in units of the drag-epoch sound horizon, so
 BAO alone give h r_d. DESI uses
 
-    r_d = 147.05 Mpc (omega_b / 0.02236)^-0.13 (omega_bc / 0.1432)^-0.23 (N_eff / 3.04)^-0.1
+    r_d = 147.05 Mpc (omega_b / 0.02236)^-0.13 (omega_bc / 0.1432)^-0.23 (N_eff / 3.04)^-0.1   (arXiv:2503.14738, Eq. 2)
 
 `[src]` (arXiv:2503.14738, Eq. 2). A BBN prior on omega_b then yields H0
 without CMB anisotropies. See `cosmo-galaxy-clustering`.
@@ -424,16 +430,16 @@ al. 2015, arXiv:1411.1074) `[src]`. It returns M_B as well as H0, which makes
 the tension visible as a mismatch of SN absolute magnitudes.
 Earlier forms: BAO + SNe alone measure the ruler as 103.9 ± 2.3 Mpc/h with
 only a smooth expansion history assumed (Heavens et al. 2014,
-arXiv:1409.6217) `[src]`; the same ladder anchored either at z = 0 by the
+arXiv:1409.6217) `[src: abstract]`; the same ladder anchored either at z = 0 by the
 local H0 or by the CMB sound horizon, the "inverse distance ladder" (Cuesta
 et al. 2015, arXiv:1411.1094) `[src]`; r_s and H0 as the two anchors at
 opposite ends, BAO + SNe fixing r_s h (Bernal et al. 2016,
 arXiv:1607.05617) `[src]`. The sound horizon as a scale of the transfer
 function: Eisenstein & Hu (1998, arXiv:astro-ph/9709112). BAO with a
 deuterium prior and no CMB anisotropy: 66.98 ± 1.18 (Addison et al. 2018,
-arXiv:1707.06547) `[src]`; with deuterium and helium, 3.2 sigma from SH0ES
-in LCDM and 2.6 sigma with N_eff free (Schöneberg et al. 2019,
-arXiv:1907.11594) `[src]`.
+arXiv:1707.06547) `[src: abstract]`; with deuterium and helium, 3.2 sigma
+from SH0ES in LCDM and 2.6 sigma with N_eff free (Schöneberg et al. 2019,
+arXiv:1907.11594) `[src: abstract]`.
 
 **Sound-horizon-free.** The matter-radiation equality scale k_eq in the
 full-shape power spectrum, or CMB lensing with r_d marginalised, gives an H0
@@ -442,9 +448,9 @@ that responds differently to pre-recombination physics (Zaborowski et al.
 
 **How the solutions are classified.** Since BAO + SNe fix the shape of the
 low-z expansion, raising H0 requires lowering r_d by a matching fraction.
-With h r_d = 101.54 Mpc, r_d would be 138.1 Mpc for h = 0.735 against 151.0
-Mpc for h = 0.6724, a reduction of 8.5% `[der]` (flat LCDM BAO-only value
-divided by h; ignores the Omega_m dependence). The least unlikely class of
+With the DESI BAO-only product h r_d fixed (arXiv:2503.14738, Sect. VI),
+r_d must fall in the same proportion as H0 rises `[der]` (this ignores the
+Omega_m dependence). The least unlikely class of
 models raises the expansion rate in the decade of scale factor before
 recombination (Knox & Millea 2020, arXiv:1908.03663) `[src]`; reducing r_d
 alone runs into BAO or weak-lensing data (Jedamzik et al. 2021,
@@ -465,7 +471,7 @@ arXiv:2107.10291). Details belong to `cosmo-tensions-anomalies` and
 | SPT-3G D1 | power spectra validated with blind tests | arXiv:2506.20707 | [src] |
 
 The SH0ES Cepheid-SN fit itself is not blinded end to end; its defence is the
-set of about 70 analysis variants (arXiv:2112.04510) `[src]` and, since 2025,
+set of nearly 70 analysis variants (arXiv:2112.04510) `[src: abstract]` and, since 2025,
 the independent H0DN software.
 
 ## 8. Public codes and data products
@@ -488,17 +494,19 @@ in `cosmo-software-ecosystem`; none was verified in this session.
 <!-- key: conventions-and-where-the-community-is-split -->
 
 - H0 in km/s/Mpc; h = H0 / 100. Distances in the ladder are quoted as moduli;
-  1% in distance is 0.0216 mag `[der]`, and the tension is about 0.18 mag
-  `[src]` (arXiv:2112.04510).
+  the tension is 0.176 ± 0.035 mag in 5 log H0 `[src: Sect. 5]`
+  (arXiv:2112.04510), "the 0.18 mag Hubble tension" in arXiv:2408.11770
+  (abstract).
 - Metallicity term: gamma or Z_W, in mag/dex, negative when metal-rich
   Cepheids are brighter. SH0ES uses [O/H]; stellar work uses [Fe/H].
 - "Anchor" means a geometric distance; "calibrator" means an SN Ia with a
-  primary-indicator distance; "Hubble flow" means z > 0.0233 in SH0ES usage.
+  primary-indicator distance; "Hubble flow" means z > 0.0233 in SH0ES usage
+  (arXiv:2112.04510, Sect. 5).
 - TDCOSMO quotes medians with 68% intervals in flat LCDM; LVK quotes medians
   with 68.3% symmetric intervals (older papers: maximum a posteriori).
 - Split 1: frequentist chi^2 with simulation-based bias corrections (SH0ES,
   H0DN) versus hierarchical Bayesian forward models with explicit selection
-  (Section 2.7).
+  (see the statistical-model subsection above).
 - Split 2: prior on H0 versus prior on M_B when the ladder is combined with
   other data; the M_B form is the correct one (arXiv:2103.08723).
 - Split 3: TRGB by edge detection versus luminosity-function fitting; JAGB by

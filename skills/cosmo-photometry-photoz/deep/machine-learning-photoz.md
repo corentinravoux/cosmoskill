@@ -89,7 +89,7 @@ space matches the target's (the Lima et al. idea, `physics-and-methods.md#direct
 
     w_i = [p_full(m̂_i) + ε] / [p_train(m̂_i) + ε]  (arXiv:2203.01949, Eq. 4),
 
-  with ε = 0.001 (against 0.01 in the method paper it follows) and a
+  with ε = 0.001 (arXiv:2203.01949; against 0.01 in the method paper it follows) and a
   maximum weight of 100 (against 20), larger dynamic range being allowed
   by the larger training set; ε stops sparse regions of the training GMM
   from producing extreme weights [src: Sect. 3.2]. The GMM space is g − r,
@@ -97,7 +97,7 @@ space matches the target's (the Lima et al. idea, `physics-and-methods.md#direct
   z − W1 for point sources [src: Sect. 3.1–3.2]. Median weights span more
   than three orders of magnitude across g − r / r − z; colour-selected
   BOSS/eBOSS ELG and LRG samples get very low weights [src: Sect. 3.2].
-- The weights also enter the validation: Duncan 2022 draws 1000 test
+- The weights also enter the validation: Duncan 2022 (arXiv:2203.01949) draws 1000 test
   galaxies with probability proportional to their CSL weight, 100 times,
   to quote "representative" σ_NMAD and η_0.15 [src: Sect. 3.3], and
   weights the credible-interval distribution used to calibrate the errors
@@ -247,7 +247,7 @@ recalibration for later releases [src: arXiv:1704.05988, Sect. 6.2].
 - *CSL weights alone.* Assume the target lies inside the training support;
   improve σ_NMAD and η for all morphologies when the population is not
   divided [src: arXiv:2203.01949, Sect. 3.3, Fig. 6].
-- *GMM-Divide.* Lowers scatter and especially outliers for all
+- *GMM-Divide* (arXiv:2203.01949). Lowers scatter and especially outliers for all
   morphologies; beyond a sufficient N there is no universal gain; for
   z > 3 quasars η_0.15 falls from 0.71 (one model for all PSF sources) to
   0.2 with 10 components, and rises to ≈ 0.32 with 15–20 [src: Sect. 3.3].

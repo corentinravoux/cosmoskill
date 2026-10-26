@@ -10,9 +10,10 @@ Flags: `[src]` read this session in the cited paper; `[sec]` from a named
 secondary source; `[der]` derived here. H0 in km/s/Mpc.
 
 Scale to keep in mind: the SH0ES-Planck difference is 0.176 ± 0.035 mag in
-5 log H0 `[src]` (arXiv:2112.04510, Sec. 5). A single effect must reach about
-0.18 mag, coherently across all hosts, to remove the tension; 1% in H0 is
-0.0216 mag `[der]`.
+5 log H0 `[src: Sect. 5]` (arXiv:2112.04510); Riess et al. 2024 call it the
+0.18 mag "Hubble tension" `[src: abstract]` (arXiv:2408.11770). A single
+effect must reach that size, coherently across all hosts, to remove the
+tension.
 
 ## 1. Cepheid crowding and blending
 <!-- key: cepheid-crowding-and-blending -->
@@ -44,9 +45,9 @@ NGC 4258, no trend with distance (-0.005 ± 0.014 mag per mag)
 
 **Two small biases of the same family.** Light of cluster stars physically
 associated with Cepheids: a 0.23% overestimate of H0 (wide binaries: 0.004%)
-(Anderson, arXiv:1712.01065) `[src]`. Time dilation of periods
+(Anderson, arXiv:1712.01065) `[src: abstract]`. Time dilation of periods
 in SN hosts ("redshift-Leavitt bias"): (0.27 ± 0.01)% on H0 (Anderson 2019,
-arXiv:1909.10847) `[src]`.
+arXiv:1909.10847) `[src: abstract]`.
 
 **Validation test.** HST versus JWST for the same Cepheids, as a function of
 distance and local surface brightness.
@@ -78,7 +79,7 @@ arXiv:2507.15936).
 **The dispute.** Madore & Freedman argue for no measurable metallicity effect:
 their 2026 analysis attributes the achromatic residuals of Milky Way Cepheids
 to parallax errors and finds no significant correlation with metallicity over
--0.2 < [Fe/H] < 0.05 `[src]` (Madore & Freedman 2026, arXiv:2602.13397).
+-0.2 < [Fe/H] < 0.05 `[src: abstract]` (Madore & Freedman 2026, arXiv:2602.13397).
 Breuval et al. (arXiv:2507.15936) reply that the underlying recalibration of
 Gaia parallaxes by a magnitude offset is multiplicative in parallax, unlike
 the additive Gaia-team correction, and, extrapolated, places the Pleiades too
@@ -146,8 +147,9 @@ TRGB scale `[src]`. The JWST tests of Section 1 were designed to look for an
 offset of that size and found none.
 
 **Fragility of the JWST ladders.** Both JWST programmes use NGC 4258 as their
-single anchor; its distance error (1.5%, 0.032 mag `[der]` from
-arXiv:1908.05625) and the measurement error of each indicator in NGC 4258
+single anchor; its distance error (1.5% in the SH0ES 2022 budget,
+arXiv:2112.04510, Table 7; 0.032 mag on the modulus adopted by H0DN,
+arXiv:2510.23823, Table 1) and the measurement error of each indicator in NGC 4258
 enter every JWST H0 fully correlated. Comparisons that neglect the second term
 overstate disagreements `[src]` (arXiv:2408.11770).
 
@@ -155,7 +157,7 @@ overstate disagreements `[src]` (arXiv:2408.11770).
 <!-- key: extinction-law-and-the-wesenheit-colour-term -->
 
 **Mechanism.** The Wesenheit magnitude removes dust with a fixed R tied to a
-Milky-Way-like law (R_V ~ 3.1), while SN Ia colours often prefer R_V ~ 2 in
+Milky-Way-like law, while SN Ia colours often prefer R_V ~ 2 in
 their hosts.
 
 **Size.** Baseline R = 0.386 (Fitzpatrick 1999 law, R_V = 3.3); free, it is
@@ -216,62 +218,66 @@ sample must be matched in host type, survey and light-curve properties, or
 differences in dust and intrinsic colour leak into M_B.
 
 **Size.** SN systematics make up less than one third of the SH0ES error
-budget `[src]` (Brout et al. 2022, arXiv:2202.04077). The dispersions of
-calibrators (0.130 mag) and Hubble-flow SNe (0.135 mag) match `[src]`
-(arXiv:2112.04510). A two-population model with separate dust laws finds an
-R_B ~ 4 for the population that carries distances and H0 = 70.59 ± 1.15, or
-71.45 ± 1.03 with equal priors `[src]` (Wojtak & Hjorth 2025,
-arXiv:2506.22150). A corrected host-mass step changes 52 of 277 Hubble-flow
-magnitudes and moves the H0DN value from 73.50 to 73.26 `[src]`
-(arXiv:2607.24443).
+budget `[src: abstract]` (Brout et al. 2022, arXiv:2202.04077). The
+dispersions of calibrators (0.130 mag) and Hubble-flow SNe (0.135 mag) match
+`[src: Sect. 5]` (arXiv:2112.04510). A two-population model with separate
+dust laws finds an R_B ~ 4 for the population that carries distances and
+H0 = 70.59 ± 1.15, or 71.45 ± 1.03 with equal priors `[src: abstract]`
+(Wojtak & Hjorth 2025, arXiv:2506.22150). A corrected host-mass step changes
+52 of 277 Hubble-flow magnitudes and gives 73.264 ± 0.806 with the H0DN
+covariance `[src: abstract]` (arXiv:2607.24443).
 
 **SN compilation dependence.** SN-related choices account for about 2.0 of
 the difference between TRGB-based H0 values in the literature, a larger share
-than the TRGB calibration itself (~1.4) `[src]` (Scolnic et al. 2023,
-arXiv:2304.06693). In the CCHP JWST analysis, enlarging the calibrator set
-from 11 to 24 raises H0 by 0.8 with CSP-II magnitudes and by 2 with Pantheon+
-`[src]` (Hoyt et al. 2025, arXiv:2503.11769). H0DN reports consistent results
-across four optical compilations and NIR-only magnitudes (H band: 72.459 ±
-1.099; J band: 72.712 ± 1.164) `[src]` (arXiv:2510.23823).
+than the TRGB calibration itself (~1.4) `[src: abstract]` (Scolnic et al.
+2023, arXiv:2304.06693). In the CCHP JWST analysis, enlarging the calibrator
+set from 11 to 24 raises H0 by 0.8 with CSP-II magnitudes and by 2 with
+Pantheon+ `[src: abstract]` (Hoyt et al. 2025, arXiv:2503.11769). H0DN
+reports consistent results across four optical compilations and NIR-only
+magnitudes (H band: 72.459 ± 1.099; J band: 72.712 ± 1.164)
+`[src: Table 4, V25, V26]` (arXiv:2510.23823).
 
 **Validation test.** Replace SNe Ia altogether: without them H0DN gives
-73.434 ± 1.795 `[src]`.
+73.434 ± 1.795 `[src: Table 4, V13]` (arXiv:2510.23823).
 
 Light-curve models, calibration and host corrections: `cosmo-supernovae`.
 
 ## 8. Choice and size of the calibrator sample
 <!-- key: choice-and-size-of-the-calibrator-sample -->
 
-**Mechanism.** With 10 to 20 calibrators the mean SN Ia magnitude fluctuates
-by more than the systematic budget; which hosts were observed first matters.
+**Mechanism.** With small calibrator samples the mean SN Ia magnitude
+fluctuates by more than the systematic budget; which hosts were observed first
+matters.
 
 **Size.** The 2.5 difference between the CCHP JWST subsample and the full HST
-sample is consistent with subsample selection `[src]` (arXiv:2408.11770). The
-11 TRGB hosts absent from the CCHP compilation alone give 74.1, 2 sigma above
-the selected 24; a peculiar-velocity correction adds 0.6 `[src]` (Li et al.
-2025, arXiv:2504.08921).
+sample is consistent with subsample selection `[src: abstract]`
+(arXiv:2408.11770). The 11 TRGB hosts absent from the CCHP compilation alone
+give 74.1, 2 sigma above the selected 24; a peculiar-velocity correction adds
+0.6 `[src: abstract]` (Li et al. 2025, arXiv:2504.08921).
 
 **Validation test.** Compare distances, not H0 values: for hosts in common,
 HST Cepheids agree with JWST Cepheids, TRGB and JAGB at about 0.03 mag
-`[src]` (arXiv:2408.11770).
+`[src: abstract]` (arXiv:2408.11770).
 
 ## 9. Peculiar velocities and the definition of the Hubble flow
 <!-- key: peculiar-velocities-and-the-definition-of-the -->
 
 **Three-rung ladder.** Flow corrections from 2M++ plus group redshifts raise
 H0 by about 0.4 relative to CMB-frame redshifts and leave a systematic of
-0.06 to 0.11 `[src]` (Peterson et al. 2022, arXiv:2110.03487). In the SH0ES
-variants, no flow correction lowers H0 by 0.5 and swapping 2M++ for 2MRS by
-0.05 `[src]` (arXiv:2112.04510, Sec. 6.12). H0DN finds changes of up to 0.8
-with the redshift selection of the SNe `[src]` (arXiv:2510.23823).
+0.06 to 0.11 `[src: abstract]` (Peterson et al. 2022, arXiv:2110.03487). In
+the SH0ES variants, no flow correction lowers H0 by 0.5 and swapping 2M++ for
+2MRS by 0.05 `[src: Sect. 6.12]` (arXiv:2112.04510). H0DN variants V19 to V22
+change the velocity treatment and the redshift selection of the SNe; their
+values are in its Table 4 (arXiv:2510.23823).
 
-**Two-rung ladders and masers.** At cz of 1000 to 3000 km/s velocities
-dominate: SH0ES estimated a 3 to 4% floor for a Cepheid-only H0 `[src]`
-(arXiv:2112.04510, Sec. 6.12). For megamasers, a linear reconstruction lowers
-H0 by 0.8 to 1.4 and the non-linear Manticore field by 1.6 to 2.1 `[src]`
-(arXiv:2609.17684). For 400 TRGB hosts the scatter between posterior
-realisations of the velocity field is 5.2 and a free velocity monopole is
-5.4 ± 3.4 `[src]` (arXiv:2609.29996).
+**Two-rung ladders and masers.** At the redshifts of the Cepheid hosts (mean
+cz = 2000 km/s, many below 1000 km/s) velocities dominate: SH0ES estimated
+that they limit a Cepheid-only H0 to 3% to 4% `[src: Sect. 6.12]`
+(arXiv:2112.04510). For megamasers, a linear reconstruction lowers H0 by 0.8
+to 1.4 and the non-linear Manticore field by 1.6 to 2.1 `[src: abstract]`
+(arXiv:2609.17684). For ~400 TRGB hosts the field-to-field scatter in H0 is
+5.2 and a free velocity monopole moves H0 by 5.4 ± 3.4 `[src: abstract]`
+(arXiv:2609.29996).
 
 **Mitigation.** Correct with a linear 2M++ reconstruction and group
 redshifts (arXiv:2110.03487), or marginalise over posterior realisations of
@@ -283,11 +289,12 @@ Method details: `cosmo-peculiar-velocities`.
 <!-- key: local-structure-and-sample-variance -->
 
 **Size.** Sample variance of the local H0 in LCDM with the actual SN
-distribution is 0.31 `[src]` (Wu & Huterer 2017, arXiv:1706.09723); the
-empirical SN constraint is 0.60% against 0.42% predicted, and density
+distribution is 0.31 `[src: abstract]` (Wu & Huterer 2017, arXiv:1706.09723);
+the empirical SN constraint is 0.60% against 0.42% predicted, and density
 contrasts above 27% on scales larger than 69 Mpc/h are excluded at 5 sigma
-`[src]` (Kenworthy et al. 2019, arXiv:1901.08681). Explaining the tension
-would need delta ~ -0.8 over a radius of ~150 Mpc `[src]` (arXiv:1706.09723).
+`[src: abstract]` (Kenworthy et al. 2019, arXiv:1901.08681). Explaining the
+tension would need delta ~ -0.8 over a radius of ~150 Mpc `[src: abstract]`
+(arXiv:1706.09723).
 
 **Validation test.** Fit H0 in redshift shells; fit a void profile to direct
 distances (arXiv:2506.10518). See `open-questions.md` for the void debate.
@@ -303,14 +310,14 @@ distances (arXiv:2506.10518). See `open-questions.md` for the void debate.
   (arXiv:2008.04181). -4.01 ± 0.04 in F814W on NGC 4258 (arXiv:1908.05625);
   -4.362 ± 0.033 ± 0.045 in JWST F090W (arXiv:2401.04776); -3.948
   (+0.037/-0.034) in I from Gaia globular clusters (arXiv:2602.15421), all
-  `[src]`. These values refer to different filters, populations and anchors;
+  `[src: abstract]`. These values refer to different filters, populations and anchors;
   do not mix them, and do not compare them without the colour and metallicity
   terms of each calibration.
 - **Colour and band.** F115W needs a colour slope; with it, JWST and HST TRGB
-  distances agree to 1% on average and 4% per galaxy `[src]`
+  distances agree to 1% on average and 4% per galaxy `[src: abstract]`
   (arXiv:2503.11769).
-- **Reach.** About 20 Mpc with HST `[src]` (arXiv:2401.04776): the calibrator
-  volume is small and sample fluctuations are large (Section 8).
+- **Reach.** About 20 Mpc with HST `[src: abstract]` (arXiv:2401.04776): the
+  calibrator volume is small and sample fluctuations are large (Section 8).
 
 ## 12. JAGB-specific effects
 <!-- key: jagb-specific-effects -->
@@ -324,11 +331,12 @@ distances (arXiv:2506.10518). See `open-questions.md` for the void debate.
   distances by 0.17 ± 0.04 (stat) ± 0.06 (sys) mag `[src: abstract]` (Anand 2025,
   arXiv:2502.07882).
 - Purity: of 54 Milky Way stars in the standard colour box, only 13 are
-  carbon-rich, a 76 ± 6% oxygen-rich contamination `[src]` (Li et al. 2026,
+  carbon-rich, a 76 ± 6% oxygen-rich contamination `[src: abstract]` (Li et al. 2026,
   arXiv:2609.25412).
 - Incompleteness prevented a measurement in one of two hosts at ~40 Mpc
-  `[src]` (arXiv:2502.05259).
-- Budget terms and the spread between statistics: Section 18.
+  (arXiv:2502.05259; the two hosts at ~40 Mpc are named in its abstract).
+- Budget terms and the spread between statistics: the error-budget section
+  below.
 
 ## 13. Miras, SBF, Tully-Fisher, Fundamental Plane
 <!-- key: miras-sbf-tully-fisher-fundamental-plane -->
@@ -336,19 +344,21 @@ distances (arXiv:2506.10518). See `open-questions.md` for the void debate.
 - **Miras.** Two SN Ia hosts only; the error is dominated by the statistical
   uncertainty of the SN peak magnitude `[src]` (arXiv:2312.08423). Cluster
   Miras show no dependence on iron abundance over -1.7 < [Fe/H] < -0.1
-  `[src]` (arXiv:2507.10658).
-- **SBF.** Statistical error 0.7, zero-point systematic 2.3 to 2.4 `[src]`
-  (arXiv:2101.02221, arXiv:2502.15935). The fluctuation magnitude depends on
+  `[src: abstract]` (arXiv:2507.10658).
+- **SBF** `[src: abstract]`. Statistical error 0.7 and systematic 2.4 in
+  2021 (arXiv:2101.02221); statistical 0.7 and systematic 2.3 with the JWST
+  TRGB tie (arXiv:2502.15935). The fluctuation magnitude depends on
   stellar population through colour; the JWST TRGB tie removes the Cepheid
   dependence but keeps NGC 4258.
 - **Tully-Fisher.** Fitting uncertainty only 0.2; systematic 3.5 from
-  inconsistent zero-point calibrators `[src]` (arXiv:2408.03660). Adding TF
-  to the H0DN network pulls the result up (73.957 ± 0.787, and 73.994 against
-  73.656 with and without TF in the "everything" solution) `[src]`
-  (arXiv:2510.23823).
-- **Fundamental Plane.** DESI DR1: statistical 0.06, calibration 1.1 `[src]`
-  (arXiv:2512.03232). The FP zero point through Coma gives 76.5 ± 2.2, higher
-  than SN-based values `[src]` (arXiv:2409.14546).
+  inconsistent zero-point calibrators `[src: abstract]` (arXiv:2408.03660).
+  Adding TF to the H0DN network pulls the result up (73.957 ± 0.787, and
+  73.994 against 73.656 with and without TF in the "everything" solution)
+  `[src: Table 4, V06, V99, V99A]` (arXiv:2510.23823).
+- **Fundamental Plane.** DESI DR1: statistical 0.06, calibration 1.1
+  `[src: abstract]` (arXiv:2512.03232). The FP zero point through Coma gives
+  76.5 ± 2.2, higher than SN-based values `[src: abstract]`
+  (arXiv:2409.14546).
 
 ## 14. Time-delay cosmography
 <!-- key: time-delay-cosmography -->
@@ -356,18 +366,19 @@ distances (arXiv:2506.10518). See `open-questions.md` for the void debate.
 - **Mass-sheet degeneracy.** H0 scales with 1 - kappa_E; models with few
   parameters (power laws) tie kappa_E to the measured profile curvature and
   return precise but possibly inaccurate values; no time-delay H0 is more
-  accurate than ~10% on that argument `[src]` (Kochanek 2020,
+  accurate than ~10% on that argument `[src: abstract]` (Kochanek 2020,
   arXiv:1911.05083). TDCOSMO's answer is to free lambda_int and constrain it
-  with kinematics: precision went from 2.4% to about 8% for 7 lenses, 5% with
-  SLACS `[src]` (arXiv:2007.02941, arXiv:2008.06157), and 4.6% in 2025 with
-  the external samples `[src]` (arXiv:2506.03023).
+  with kinematics (arXiv:2007.02941): precision went from 2.4% with assumed
+  profiles (arXiv:1907.04869, abstract) to 8% for 7 lenses and 5% with SLACS
+  `[src: abstract]` (arXiv:2008.06157), and 4.6% in 2025 with the external
+  samples `[src: abstract]` (arXiv:2506.03023).
 - **Kinematics.** For a 2% H0 one needs Delta sigma^2 / sigma^2 < 2%.
   Quantified biases: PSF scale and shape 1 to 5% (ground-based); measured
   dispersion versus mean square velocity 2 to 6%; anisotropy model 2 to 18%;
-  mismatch between light profile and stellar mass 1 to 10% `[src]`
+  mismatch between light profile and stellar mass 1 to 10% `[src: abstract]`
   (Forés-Toribio et al. 2026, arXiv:2602.03934).
 - **Population assumption.** lambda_int = 1.12 (+0.05/-0.06), 2 sigma from
-  unity, in SDSSJ1433 `[src]` (arXiv:2604.14145): fixing lambda_int = 1, as
+  unity, in SDSSJ1433 `[src: abstract]` (arXiv:2604.14145): fixing lambda_int = 1, as
   in the three-lens JWST paper (arXiv:2608.27566), does not give a final H0.
 - **Cluster lenses.** The spread between independent cluster mass models sets
   the error for lensed SNe (arXiv:2403.18902, arXiv:2509.12301).
@@ -376,16 +387,18 @@ distances (arXiv:2506.10518). See `open-questions.md` for the void debate.
 <!-- key: megamasers-sirens-chronometers -->
 
 - **Megamasers.** Six galaxies; the result depends on the velocity treatment
-  at the 1 to 2 level and beyond (range 71.8 to 76.9 in 2020,
-  arXiv:2001.09213; 66.9 to 71.6 in 2026, arXiv:2608.06247,
-  arXiv:2609.17684) `[src]`. Disc modelling (warps, eccentricity) is refitted
+  (range 71.8 to 76.9 over the 2020 treatments `[src: abstract]`,
+  arXiv:2001.09213; in 2026, 66.9 ± 2.5, 68.4 ± 2.5 and 68.8 ± 2.6 for
+  velocity noise of 50, 100 and 150 km/s `[src: Table 2]`, arXiv:2608.06247,
+  and 71.6 ± 3.7 `[src: abstract]`, arXiv:2609.17684). Disc modelling (warps, eccentricity) is refitted
   in arXiv:2609.17684, whose fiducial 71.6 (+3.8/-3.5) the paper places 1.1
   sigma above the Planck CMB value and 0.4 sigma below the SH0ES value of
   arXiv:2404.08038, computation not given `[src: Sect. 4.3]`; see Section 18.
 - **Sirens.** Dark-siren results assume a source-frame mass distribution
   `[src]` (arXiv:2509.04348). See `cosmo-multimessenger`.
-- **Chronometers.** Systematic terms of 12 to 17 on H(z) values of 88 to 119
-  `[src]` (arXiv:2511.02730).
+- **Chronometers.** The systematic terms dominate: H(z) = 88.48 ± 0.57 (stat)
+  ± 12.32 (syst), 119.45 ± 6.39 ± 16.64 and 108.28 ± 10.07 ± 15.08 at
+  z = 0.46, 0.67 and 0.83 `[src: abstract]` (arXiv:2511.02730).
 
 ## 16. The early-Universe side
 <!-- key: the-early-universe-side -->
@@ -394,7 +407,7 @@ distances (arXiv:2506.10518). See `open-questions.md` for the void debate.
   (`cosmo-cmb`). Planck spectra prefer more lensing than LCDM predicts at
   over 2 sigma `[src]` (arXiv:1807.06209).
 - CMB and DESI DR2 BAO differ by 2.3 sigma (DESI's statement) or 2.8 sigma
-  (SPT's statement) in LCDM `[src]` (arXiv:2503.14738, arXiv:2506.20707): a
+  (SPT's statement) in LCDM `[src: abstract]` (arXiv:2503.14738, arXiv:2506.20707): a
   BAO + CMB H0 inherits that inconsistency.
 - BBN: the baryon abundance depends on the assumed deuterium burning rates;
   theoretical rates favour lower omega_b than experimental ones `[src]`
@@ -425,85 +438,85 @@ distances (arXiv:2506.10518). See `open-questions.md` for the void debate.
 <!-- key: error-budgets-term-by-term -->
 
 In percent of H0 unless a unit is given; triplets are LMC / MW / NGC 4258;
-an empty first cell continues the analysis above.
+"same" in the first cell continues the analysis above.
 
 | Analysis | Term | Size | Flag |
 |---|---|---|---|
 | SH0ES 2022, arXiv:2112.04510 | anchor distance | 1.2 / 1.0 / 1.5 | [src: Table 7] |
-| | mean of the PL relation in the anchor | 0.4 / none / 1.0 | [src: Table 7] |
-| | photometric zero points, anchor to hosts | 0.1 / 0.1 / 0.0 | [src: Table 7] |
-| | Cepheid metallicity, anchor to hosts | 0.5 / 0.15 / 0.15 | [src: Table 7] |
-| | subtotal per anchor; all anchors combined | 1.4 / 1.0 / 1.8; 0.7 | [src: Table 7] |
-| | mean PL in the SN hosts; PL slope over the anchor-host period difference | 0.4; 0.3 | [src: Table 7] |
-| | mean of the SN Ia calibrators, 42 to 46 SNe (1.3 with 19 SNe in 2016) | 0.9 | [src: Table 7] |
-| | SN Ia magnitude-redshift relation | 0.4 | [src: Table 7] |
-| | statistical error; the covariance already holds metallicity scale, crowding and SN systematics | 1.3 | [src: Table 7] |
-| | analysis systematics: dispersion of the NIR variants (0.3 km/s/Mpc about a 3-sigma-clipped mean); baseline 0.2 below the median variant | 0.3 | [src: Sect. 6.14] |
-| | total | 1.35 | [src: Table 7] |
-| | systematic common to all host distances after the first two rungs | 0.019 mag (0.9% in distance) | [src: Fig. 16] |
+| same, arXiv:2112.04510 | mean of the PL relation in the anchor | 0.4 / none / 1.0 | [src: Table 7] |
+| same, arXiv:2112.04510 | photometric zero points, anchor to hosts | 0.1 / 0.1 / 0.0 | [src: Table 7] |
+| same, arXiv:2112.04510 | Cepheid metallicity, anchor to hosts | 0.5 / 0.15 / 0.15 | [src: Table 7] |
+| same, arXiv:2112.04510 | subtotal per anchor; all anchors combined | 1.4 / 1.0 / 1.8; 0.7 | [src: Table 7] |
+| same, arXiv:2112.04510 | mean PL in the SN hosts; PL slope over the anchor-host period difference | 0.4; 0.3 | [src: Table 7] |
+| same, arXiv:2112.04510 | mean of the SN Ia calibrators, 42 to 46 SNe (1.3 with 19 SNe in 2016) | 0.9 | [src: Table 7] |
+| same, arXiv:2112.04510 | SN Ia magnitude-redshift relation | 0.4 | [src: Table 7] |
+| same, arXiv:2112.04510 | statistical error; the covariance already holds metallicity scale, crowding and SN systematics | 1.3 | [src: Table 7] |
+| same, arXiv:2112.04510 | analysis systematics: dispersion of the NIR variants (0.3 km/s/Mpc about a 3-sigma-clipped mean); baseline 0.2 below the median variant | 0.3 | [src: Sect. 6.14] |
+| same, arXiv:2112.04510 | total | 1.35 | [src: Table 7] |
+| same, arXiv:2112.04510 | systematic common to all host distances after the first two rungs | 0.019 mag (0.9% in distance) | [src: Fig. 16] |
 | SH0ES 2024, arXiv:2404.08038 | SMC: anchor distance, mean PL, zero points, metallicity; subtotal | 1.5, 0.5, 0.1, 0.5; 1.7 | [src: Table 4] |
-| | MW subtotal with cluster Cepheids; first rung without and with the SMC | 0.8; 0.65 and 0.60 | [src: Table 4] |
-| | LMC and SMC distances share a systematic, carried as a covariance | not itemised | [src: Sect. V] |
+| same, arXiv:2404.08038 | MW subtotal with cluster Cepheids; first rung without and with the SMC | 0.8; 0.65 and 0.60 | [src: Table 4] |
+| same, arXiv:2404.08038 | LMC and SMC distances share a systematic, carried as a covariance | not itemised | [src: Sect. V] |
 | Pantheon+ SNe in the ladder, arXiv:2202.04077 | SN part of the H0 error, statistical + systematic; systematic alone; individual systematic shifts in quadrature (H0 = 73.6 ± 1.1 in flat LCDM) | 0.7; 0.29; 0.32 km/s/Mpc | [src: Sect. IV.5] |
 | CCHP 2024, arXiv:2408.06153 | TRGB, JWST, 11 SNe Ia: random, systematic, sigma_SN | 2.6, 1.9, 1 | [src: Table 6] |
-| | JAGB, JWST, 8 SNe Ia | 3.0, 2.4, 1 | [src: Table 6] |
-| | TRGB + JAGB distances combined | 2.4, 1.8, 1 | [src: Table 6] |
-| | TRGB, HST + JWST, 24 SNe Ia | 1.7, 1.9, 1 | [src: Table 6] |
-| | systematic = 1.5% NGC 4258 distance and the indicator's measurement in NGC 4258, uncorrelated between methods | TRGB 0.025, JAGB 0.041, combined 0.021 mag | [src: Sect. VIII] |
-| | sigma_SN: residual SN calibration and peculiar motions; SN photometric zero points | 1%; 0.015 mag | [src: Sect. XIII.1, XIII.2] |
-| | foreground-extinction zero point, E(B-V) = 0.02 mag | A_J = 0.016 mag (0.7%) | [src: Sect. XIII.4] |
-| | separate calibrator scatter sigma_cal in the 8-parameter fit | +1% in H0, error doubled | [src: Sect. X.4] |
-| | TRGB 68.81 ± 1.79 (11 SNe) against 70.39 ± 1.22 (24 SNe, 11 shared), as (70.39 - 68.81) / sqrt(1.8^2 + 0.7^2) | 0.8 sigma | [src: Sect. X.4] |
+| same, arXiv:2408.06153 | JAGB, JWST, 8 SNe Ia | 3.0, 2.4, 1 | [src: Table 6] |
+| same, arXiv:2408.06153 | TRGB + JAGB distances combined | 2.4, 1.8, 1 | [src: Table 6] |
+| same, arXiv:2408.06153 | TRGB, HST + JWST, 24 SNe Ia | 1.7, 1.9, 1 | [src: Table 6] |
+| same, arXiv:2408.06153 | systematic = 1.5% NGC 4258 distance and the indicator's measurement in NGC 4258, uncorrelated between methods | TRGB 0.025, JAGB 0.041, combined 0.021 mag | [src: Sect. VIII] |
+| same, arXiv:2408.06153 | sigma_SN: residual SN calibration and peculiar motions; SN photometric zero points | 1%; 0.015 mag | [src: Sect. XIII.1, XIII.2] |
+| same, arXiv:2408.06153 | foreground-extinction zero point, E(B-V) = 0.02 mag | A_J = 0.016 mag (0.7%) | [src: Sect. XIII.4] |
+| same, arXiv:2408.06153 | separate calibrator scatter sigma_cal in the 8-parameter fit | +1% in H0, error doubled | [src: Sect. X.4] |
+| same, arXiv:2408.06153 | TRGB 68.81 ± 1.79 (11 SNe) against 70.39 ± 1.22 (24 SNe, 11 shared), as (70.39 - 68.81) / sqrt(1.8^2 + 0.7^2) | 0.8 sigma | [src: Sect. X.4] |
 | Hoyt 2025, F115W zero point, arXiv:2503.11769 | tip measurement in NGC 4258, colour systems F356W / F444W / homogenised | 0.030 / 0.019 / 0.016 mag | [src: Table 4] |
-| | photometry; extinction | 0.02; 0.009 mag | [src: Table 4] |
-| | colour correction sigma_beta (c_4258 - c_0): the tip is redder in NGC 4258 than in the hosts | 0.036 / 0.020 / 0.023 mag | [src: Table 4, Eq. 11] |
-| | total, before the 0.032 mag of the maser distance | 0.052 / 0.035 / 0.036 mag | [src: Table 4] |
-| | per host: tip error, slope term, aperture correction, extinction floor | 0.026 to 0.093; sigma_beta (c_i - c_0); 0.02; 0.01 mag in reddening | [src: Eq. 9, Table 2] |
-| | scatter of the three NGC 4258 fields before and after colour correction | 0.071 and 0.030 mag | [src: Sect. IV.4] |
+| same, arXiv:2503.11769 | photometry; extinction | 0.02; 0.009 mag | [src: Table 4] |
+| same, arXiv:2503.11769 | colour correction sigma_beta (c_4258 - c_0): the tip is redder in NGC 4258 than in the hosts | 0.036 / 0.020 / 0.023 mag | [src: Table 4, Eq. 11] |
+| same, arXiv:2503.11769 | total, before the 0.032 mag of the maser distance | 0.052 / 0.035 / 0.036 mag | [src: Table 4] |
+| same, arXiv:2503.11769 | per host: tip error, slope term, aperture correction, extinction floor | 0.026 to 0.093; sigma_beta (c_i - c_0); 0.02; 0.01 mag in reddening | [src: Eq. 9, Table 2] |
+| same, arXiv:2503.11769 | scatter of the three NGC 4258 fields before and after colour correction | 0.071 and 0.030 mag | [src: Sect. IV.4] |
 | CATS TRGB 2023, arXiv:2304.06693 | NGC 4258 distance; tip in NGC 4258; mean SN - tip difference; 5 a_B | 0.032 (1.1); 0.014 (0.5); 0.050 (1.7); 0.006 (0.2) mag (km/s/Mpc) | [src: Sect. III.2.4] |
-| | quadrature total | 0.061 mag, 2.8%, 2.06 | [src: Eq. 9] |
-| | tip against contrast ratio R, slope per unit R; tips rectified to R = 4 (hosts: median 4.2) | -0.021 ± 0.004 mag | [src: Sect. III.1] |
-| | zero point M_I at R = 4, with and without internal extinction; raw mean tip of NGC 4258 fields | -4.030 ± 0.035, -4.018 ± 0.035; 25.40 ± 0.047 mag | [src: Sect. III.2.1] |
-| | algorithm variants: spatial clip, colour-band width, smoothing, threshold (3 x 4 x 3 x 3) | 108 variants | [src: Sect. IV.1] |
+| same, arXiv:2304.06693 | quadrature total | 0.061 mag, 2.8%, 2.06 | [src: Eq. 9] |
+| same, arXiv:2304.06693 | tip against contrast ratio R, slope per unit R; tips rectified to R = 4 (hosts: median 4.2) | -0.021 ± 0.004 mag | [src: Sect. III.1] |
+| same, arXiv:2304.06693 | zero point M_I at R = 4, with and without internal extinction; raw mean tip of NGC 4258 fields | -4.030 ± 0.035, -4.018 ± 0.035; 25.40 ± 0.047 mag | [src: Sect. III.2.1] |
+| same, arXiv:2304.06693 | algorithm variants: spatial clip, colour-band width, smoothing, threshold (3 x 4 x 3 x 3) | 108 variants | [src: Sect. IV.1] |
 | JWST F090W TRGB zero point, arXiv:2401.04776 | tip measurement, m = 25.055: statistical; spread of four techniques | 0.02; 0.02 mag | [src: Table 3] |
-| | intrinsic variation with age and metallicity; colour selection; spatial selection | 0.02; 0.01; 0.01 mag | [src: Table 3] |
-| | PSF model; PSF stability; foreground extinction (half of it plus 0.01) | 0.02; 0.01; 0.014 mag | [src: Table 3] |
-| | NIRCam zero points; photometry set-up (cancel for a like-for-like reduction, not in the total) | 0.02; 0.03 mag | [src: Table 3] |
-| | total on M = -4.362: statistical; systematic including the 0.032 mag maser modulus | 0.033; 0.045 mag | [src: Table 3] |
-| | runs with and without artificial stars | 25.07 against 25.04 mag | [src: Sect. IV.5] |
+| same, arXiv:2401.04776 | intrinsic variation with age and metallicity; colour selection; spatial selection | 0.02; 0.01; 0.01 mag | [src: Table 3] |
+| same, arXiv:2401.04776 | PSF model; PSF stability; foreground extinction (half of it plus 0.01) | 0.02; 0.01; 0.014 mag | [src: Table 3] |
+| same, arXiv:2401.04776 | NIRCam zero points; photometry set-up (cancel for a like-for-like reduction, not in the total) | 0.02; 0.03 mag | [src: Table 3] |
+| same, arXiv:2401.04776 | total on M = -4.362: statistical; systematic including the 0.032 mag maser modulus | 0.033; 0.045 mag | [src: Table 3] |
+| same, arXiv:2401.04776 | runs with and without artificial stars | 25.07 against 25.04 mag | [src: Sect. IV.5] |
 | JAGB 2.0, arXiv:2502.05259 | NGC 4258 distance; SN calibration (M_B^0 = -19.25); intercept a_B | 0.032; 0.03; 0.006 mag, giving ± 1.4 | [src: Sect. IV.1] |
-| | choice of statistic: mode alone against the middle of five statistics | 71.2 against 73.3 | [src: Sect. IV.1] |
-| | mean, median, mode in one field; skew; J-region slope | up to 0.2 mag; 0.07 to 0.48; -0.60 ± 0.13 to 0.36 ± 0.05 mag/mag | [src: Sect. IV.2] |
-| | per host: 15% of the extinction, spread of variants, largest statistical error | in quadrature | [src: Table 5] |
-| | magnitude cut of ± 0.75 mag on a luminosity function of dispersion 0.4 to 0.5 mag | a 1.5 to 2 sigma truncation | [src: Sect. II.4] |
+| same, arXiv:2502.05259 | choice of statistic: mode alone against the middle of five statistics | 71.2 against 73.3 | [src: Sect. IV.1] |
+| same, arXiv:2502.05259 | mean, median, mode in one field; skew; J-region slope | up to 0.2 mag; 0.07 to 0.48; -0.60 ± 0.13 to 0.36 ± 0.05 mag/mag | [src: Sect. IV.2] |
+| same, arXiv:2502.05259 | per host: 15% of the extinction, spread of variants, largest statistical error | in quadrature | [src: Table 5] |
+| same, arXiv:2502.05259 | magnitude cut of ± 0.75 mag on a luminosity function of dispersion 0.4 to 0.5 mag | a 1.5 to 2 sigma truncation | [src: Sect. II.4] |
 | Two-method comparison, arXiv:2408.11770 | Delta mu(a - b) is independent of the maser distance; its variance sums the two host-sample means, the two NGC 4258 measurements and the two external systematics, all taken as independent | Eqs. 3 to 5 | [src: Sect. II.2] |
-| | per-host error of Cepheids, TRGB or JAGB; mean of 10 hosts; the NGC 4258 terms do not average down and limit the comparison | 0.05 to 0.08; 0.02 to 0.03 mag | [src: Sect. II.2] |
+| same, arXiv:2408.11770 | per-host error of Cepheids, TRGB or JAGB; mean of 10 hosts; the NGC 4258 terms do not average down and limit the comparison | 0.05 to 0.08; 0.02 to 0.03 mag | [src: Sect. II.2] |
 | H0DN 2025, arXiv:2510.23823 | how methods are combined: one generalised least-squares system, Gaussian in magnitude, modulus or log H0; each published error is split into anchor, indicator-in-anchor and per-host terms, and the shared terms become off-diagonal covariance | 255 equations, 183 distinct measurements | [src: Sect. II.1.1, B.2] |
-| | singular covariance (72 redundant equations) inverted with the Moore-Penrose pseudo-inverse | equivalent to keeping independent equations | [src: Sect. B.2] |
-| | residual offsets of host-distance groups from the network solution | Cepheids per anchor 0.02 mag or less; TRGB subsets about 0.03 mag | [src: Sect. IV] |
-| | peculiar-velocity model error sigma_v of the linear reconstructions; tracers at z > 0.01, preferably z > 0.023 | 150 to 250 km/s | [src: Sect. B.3.7] |
+| same, arXiv:2510.23823 | singular covariance (72 redundant equations) inverted with the Moore-Penrose pseudo-inverse | equivalent to keeping independent equations | [src: Sect. B.2] |
+| same, arXiv:2510.23823 | residual offsets of host-distance groups from the network solution | Cepheids per anchor 0.02 mag or less; TRGB subsets about 0.03 mag | [src: Sect. IV] |
+| same, arXiv:2510.23823 | peculiar-velocity model error sigma_v of the linear reconstructions; tracers at z > 0.01, preferably z > 0.023 | 150 to 250 km/s | [src: Sect. B.3.7] |
 | Seven-route summary, arXiv:2606.26831 | "fixed-covariance" average of published routes; the geometric scale (LMC DEBs, NGC 4258, Gaia) is one common component, shared anchors and SN samples are covariance terms, not independent evidence | 73.30 ± 0.92 | [src: Sect. 5.4, Table 4] |
-| | propagation Delta H0 / H0 = -0.46 Delta mu: 0.01, 0.03, 0.05 mag; calibrator mean 0.130 / sqrt(42) = 0.020 mag, 0.013 to 0.015 with 80 to 100 calibrators | 0.5, 1.4, 2.3% | [src: Eq. 12, Sect. 5.1] |
+| same, arXiv:2606.26831 | propagation Delta H0 / H0 = -0.46 Delta mu: 0.01, 0.03, 0.05 mag; calibrator mean 0.130 / sqrt(42) = 0.020 mag, 0.013 to 0.015 with 80 to 100 calibrators | 0.5, 1.4, 2.3% | [src: Eq. 12, Sect. 5.1] |
 | TDCOSMO 2025, arXiv:2506.03023; terms "not yet included in our baseline", stated to be random, uncorrelated and far below the 4.6 to 5% total | composite (stars + NFW) against power-law mass model | 0.2% in H0 | [src: Sect. 11.1] |
-| | random error of one lens model (elliptical power law) | 1 to 5% | [src: Sect. 11.1] |
-| | dark-matter substructure, scatter in the time-delay distance | ~1% | [src: Sect. 11.1] |
-| | peculiar velocities of lenses and observer | ~0.25% | [src: Sect. 11.1] |
-| | departure from spherical symmetry after the projection correction (included); triaxiality | 1 to 2% in lambda_int; below 1% | [src: Sect. 11.1] |
-| | time-delay measurement (PyCS3), residual bias | below 1% | [src: Sect. 11.1] |
-| | selection of quads (7 of 8 lenses) | sub-percent on H0 | [src: Sect. 11.2.1] |
-| | external convergence of a generic line of sight | of order 10^-2 | [src: Sect. 3.1] |
+| same, arXiv:2506.03023 | random error of one lens model (elliptical power law) | 1 to 5% | [src: Sect. 11.1] |
+| same, arXiv:2506.03023 | dark-matter substructure, scatter in the time-delay distance | ~1% | [src: Sect. 11.1] |
+| same, arXiv:2506.03023 | peculiar velocities of lenses and observer | ~0.25% | [src: Sect. 11.1] |
+| same, arXiv:2506.03023 | departure from spherical symmetry after the projection correction (included); triaxiality | 1 to 2% in lambda_int; below 1% | [src: Sect. 11.1] |
+| same, arXiv:2506.03023 | time-delay measurement (PyCS3), residual bias | below 1% | [src: Sect. 11.1] |
+| same, arXiv:2506.03023 | selection of quads (7 of 8 lenses) | sub-percent on H0 | [src: Sect. 11.2.1] |
+| same, arXiv:2506.03023 | external convergence of a generic line of sight | of order 10^-2 | [src: Sect. 3.1] |
 | IR SBF 2021, arXiv:2101.02221 | statistical; distance calibration via Cepheids, via TRGB, averaged; velocity scaling; total systematic | 1.0; 4.1, 4.7, 3.1; 1.0; 3.3 (2.41 km/s/Mpc) | [src: Table 2, Sect. IV.4] |
-| | zero point via Cepheids: WFC3/IR-optical SBF tie, SBF-Cepheid tie, Cepheid zero point; TRGB minus Cepheid calibration; 2M++ instead of group velocities | 0.03, 0.08, 0.028, total 0.09 mag; 0.007 ± 0.099 mag; +0.5% | [src: Sect. II.4, IV.4] |
+| same, arXiv:2101.02221 | zero point via Cepheids: WFC3/IR-optical SBF tie, SBF-Cepheid tie, Cepheid zero point; TRGB minus Cepheid calibration; 2M++ instead of group velocities | 0.03, 0.08, 0.028, total 0.09 mag; 0.007 ± 0.099 mag; +0.5% | [src: Sect. II.4, IV.4] |
 | Cosmic chronometers, arXiv:2412.01994 | total covariance = statistical + metallicity + young-population contamination + SPS terms (star-formation history, IMF, stellar library, model); metallicity and SPS dominate | ~5% on H(z) at z ~ 0.5, 10 to 20% at z ~ 2 | [src: Eq. 6, Sect. 5.1] |
 | NGC 4258 maser distance, arXiv:1908.05625 | statistical: 0.075 Mpc from the fit, inflated by sqrt(1.2) for chi^2/dof = 1.2 (483 dof) | 0.082 Mpc | [src: Sect. II] |
-| | systematic: unmodelled spiral structure only; error floors, eccentricity and second-order warp are now fitted | 0.076 Mpc | [src: Sect. II] |
-| | history: 7.2 ± 0.5 (Herrnstein et al. 1999, 4 VLBI epochs), 7.596 ± 0.228 (Humphreys et al. 2013, 18 epochs), 7.576 ± 0.112 | modulus 29.397 ± 0.032 | [src: Table 1] |
+| same, arXiv:1908.05625 | systematic: unmodelled spiral structure only; error floors, eccentricity and second-order warp are now fitted | 0.076 Mpc | [src: Sect. II] |
+| same, arXiv:1908.05625 | history: 7.2 ± 0.5 (Herrnstein et al. 1999, 4 VLBI epochs), 7.596 ± 0.228 (Humphreys et al. 2013, 18 epochs), 7.576 ± 0.112 | modulus 29.397 ± 0.032 | [src: Table 1] |
 | Megamasers 2020, arXiv:2001.09213 | velocity noise added in quadrature (measurement errors are 1 to 2 km/s); fitted instead: 141 (+185/-80) km/s and H0 = 74.4 (+3.9/-3.4) | 250 km/s | [src: Sect. 3.1, 3.2] |
-| | Omega_m fixed to 0.315 in D(z); any value in 0 to 0.5 | below ~1% in distance | [src: Sect. 3] |
+| same, arXiv:2001.09213 | Omega_m fixed to 0.315 in D(z); any value in 0 to 0.5 | below ~1% in distance | [src: Sect. 3] |
 | Megamasers 2026, arXiv:2609.17684 | spread of the eleven modelling variants on one spot table | 2.4 to 2.7 | [src: Sect. 4.3] |
-| | published against updated spot catalogues (NGC 6264, NGC 6323) | 1.8 to 2.1 | [src: Sect. 4.3, 5.2] |
-| | selection threshold on distance or on redshift; no selection term at all | 0.7 to 0.8; -2.2 | [src: Sect. 4.3] |
-| | warp order (linear or quadratic), per-galaxy distance | at most 0.6 sigma | [src: Sect. 5.2] |
+| same, arXiv:2609.17684 | published against updated spot catalogues (NGC 6264, NGC 6323) | 1.8 to 2.1 | [src: Sect. 4.3, 5.2] |
+| same, arXiv:2609.17684 | selection threshold on distance or on redshift; no selection term at all | 0.7 to 0.8; -2.2 | [src: Sect. 4.3] |
+| same, arXiv:2609.17684 | warp order (linear or quadratic), per-galaxy distance | at most 0.6 sigma | [src: Sect. 5.2] |
 
 ## Not verified
 <!-- key: not-verified -->

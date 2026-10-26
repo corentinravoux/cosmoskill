@@ -35,7 +35,7 @@ arXiv:2210.07163). (b) Self-calibrate on the data by measuring the response of
 the estimator to an artificial shear: metacalibration (Huff & Mandelbaum 2017,
 arXiv:1702.02600; Sheldon & Huff 2017, arXiv:1702.02601), used for DES Y1
 (alongside im3shape; 1σ uncertainties on m of 0.013 and 0.025 respectively)
-and Y3 (arXiv:1708.01533, arXiv:2011.03408) [src], and for DECADE
+and Y3 (arXiv:1708.01533, arXiv:2011.03408) [src: abstract], and for DECADE
 (arXiv:2502.17674) [src], and metadetection, which also re-runs
 detection on the sheared images and so removes shear-dependent detection bias
 (Sheldon et al. 2020, arXiv:1911.02505), used for DES Y6 on cell-based coadds
@@ -44,17 +44,17 @@ detection on the sheared images and so removes shear-dependent detection bias
 Mandelbaum 2023, arXiv:2208.10522).
 
 **Size.** Metacalibration removes calibration bias to a few tenths of a per
-cent on the GREAT3 simulations (arXiv:1702.02600) [src]. Without a detection
+cent on the GREAT3 simulations (arXiv:1702.02600) [src: abstract]. Without a detection
 step it leaves a bias of a few per cent at the galaxy densities of current
 surveys, growing with density, which metadetection reduces to at most a few
-tenths of a per cent (arXiv:1911.02505) [src]. The DES Y6 metadetection
+tenths of a per cent (arXiv:1911.02505) [src: abstract]. The DES Y6 metadetection
 catalogue has no detectable multiplicative bias: m = (3.4 ± 6.1) × 10⁻³, the
-uncertainty being quoted at 3σ (arXiv:2501.05665) [src]. The Rubin requirement
-is at the 0.1% level (arXiv:2303.03947) [src]. Metacalibration applied to
+uncertainty being quoted at 3σ (arXiv:2501.05665) [src: abstract]. The Rubin requirement
+is at the 0.1% level (arXiv:2303.03947) [src: abstract]. Metacalibration applied to
 KiDS-1000 and tested on SKiLLS gives |m| < 0.017 in every tomographic bin with
 negligible additive bias, and its calibration is nearly insensitive to galaxy
 properties; the cosmology does not move (S8 = 0.789 +0.020/−0.024 against
-0.776 with lensfit) (Yoon et al. 2025, arXiv:2510.01122) [src].
+0.776 with lensfit) (Yoon et al. 2025, arXiv:2510.01122) [src: abstract].
 
 **Multiplicative and additive bias as used in the main analyses.** One row
 per analysis; the place read is given in each cell.
@@ -98,9 +98,9 @@ changes.
 
 **Size.** In the DES Y3 image simulations blending-related effects are the
 dominant contribution to a mean multiplicative bias of about −2% (MacCrann et
-al. 2022, arXiv:2012.08567) [src], and the blending corrections shift the DES
+al. 2022, arXiv:2012.08567) [src: abstract], and the blending corrections shift the DES
 Y3 best-fit S8 by 0.5σ without a substantial increase in uncertainty (Amon et
-al. 2022, arXiv:2105.13543) [src].
+al. 2022, arXiv:2105.13543) [src: abstract].
 
 **Sizes in the main analyses.**
 
@@ -135,12 +135,12 @@ arXiv:2011.03409; Schutt et al. 2025, arXiv:2501.05781).
 
 **Size.** HSC Y1: fractional PSF size residuals of about 0.003 (requirement
 0.004) and ρ1 < 3×10⁻⁷ at 0.5° (requirement 4×10⁻⁷), "narrowly" meeting
-requirements (Mandelbaum et al. 2018, arXiv:1705.06745) [src]. KiDS-1000
+requirements (Mandelbaum et al. 2018, arXiv:1705.06745) [src: abstract]. KiDS-1000
 verifies that its PSF model induces less than a 0.1σ change in S8 (Giblin et
-al. 2021, arXiv:2007.01845) [src]. DES Y6 improved PIFF with Gaia and infrared
+al. 2021, arXiv:2007.01845) [src: abstract]. DES Y6 improved PIFF with Gaia and infrared
 photometry to purify the star sample (arXiv:2501.05781) [src]. For Rubin,
 simulations put the additive PSF-error contribution well below 30% of the
-cosmic-shear uncertainty (Hébert et al. 2026, arXiv:2608.21688) [src].
+cosmic-shear uncertainty (Hébert et al. 2026, arXiv:2608.21688) [src: abstract].
 
 **Leakage coefficients and null tests in the main analyses.**
 
@@ -156,7 +156,7 @@ cross-correlation; B modes. UNIONS traced initial B-mode failures to galaxy
 size cuts and stellar halo masking, and an oscillatory COSEBI B-mode pattern
 to a repeating additive shear bias at the CCD scale, the same detector-level
 effect seen in CFHTLenS; after cuts all three E/B statistics pass, minimum PTE
-= 0.18 (Daley et al. 2026, arXiv:2604.03227) [src].
+= 0.18 (Daley et al. 2026, arXiv:2604.03227) [src: abstract].
 
 ## 4. Redshift distributions
 <!-- key: redshift-distributions -->
@@ -185,18 +185,18 @@ S8.
    tomographic bins" and lets the relative shear amplitudes across bins
    calibrate them (Li et al. 2023, arXiv:2304.00702) [src]; the HSC Y3 3×2pt
    analysis then finds hints that the true mean redshift at z ≳ 0.75 is higher
-   than the photo-z estimate (Miyatake et al. 2023, arXiv:2304.00704) [src].
+   than the photo-z estimate (Miyatake et al. 2023, arXiv:2304.00704) [src: abstract].
 
 **Size, earlier analyses.** KiDS-1000: SOM-reweighted spectroscopic
 calibration in five bins over 0.1 < z_B ≤ 1.2, residual mean-redshift biases ≲
 0.01 with uncertainties ~0.01, and ~0.01–0.02 for the clustering-redshift
-recalibration (Hildebrandt et al. 2021, arXiv:2007.15635) [src]; on mocks the
-SOM method has a maximal bias Δ⟨z⟩ = 0.013 ± 0.006 (arXiv:1909.09632) [src].
-DES Y3: combined σ⟨z⟩ ~ 0.01 per bin (arXiv:2012.08566) [src]; clustering
+recalibration (Hildebrandt et al. 2021, arXiv:2007.15635) [src: abstract]; on mocks the
+SOM method has a maximal bias Δ⟨z⟩ = 0.013 ± 0.006 (arXiv:1909.09632) [src: abstract].
+DES Y3: combined σ⟨z⟩ ~ 0.01 per bin (arXiv:2012.08566) [src: abstract]; clustering
 redshifts recover the bin means to an RMS of ~0.014 in simulations
-(arXiv:2012.08569) [src]; shear ratios tighten the source-redshift priors by
+(arXiv:2012.08569) [src: abstract]; shear ratios tighten the source-redshift priors by
 up to 38% in some bins and the cosmic-shear S8 constraint by up to 31% (10%
-for 3×2pt) (arXiv:2105.13542) [src].
+for 3×2pt) (arXiv:2105.13542) [src: abstract].
 
 **Size, final analyses.** DES Y6: σ⟨z⟩ = 0.012, 0.008, 0.009, 0.024 for bins
 centred at 0.414, 0.538, 0.846, 1.157; the dominant term is the lack of faint
@@ -212,7 +212,7 @@ replacing the original calibration by DESI clustering redshifts moves S8 from
 DESI-based unified calibration reaches σ_z̄ ~ 0.01 or better for DES, HSC and
 KiDS (Lange et al. 2025, arXiv:2510.25419) [src]; applied to KiDS-1000 it
 finds mean shifts averaging −0.028 and shows that spectroscopic incompleteness
-within SOM cells can alter n(z) (Blanco et al. 2025, arXiv:2512.15964) [src].
+within SOM cells can alter n(z) (Blanco et al. 2025, arXiv:2512.15964) [src: abstract].
 
 **Redshift nuisance parameters of the main analyses.**
 
@@ -252,7 +252,7 @@ tidal field, which gives long-range ellipticity correlations (Catelan et al.
 2001, arXiv:astro-ph/0005470) [src], and in N-body haloes, at about 10⁻⁴ on
 0.1–10′ for a survey of median redshift 1, below the lensing signal there
 but possibly dominant in shallow wide surveys (Heavens et al. 2000,
-arXiv:astro-ph/0005269) [src]. A lensing-only field is curl-free whereas spin
+arXiv:astro-ph/0005269) [src: abstract]. A lensing-only field is curl-free whereas spin
 alignments are not, which is the origin of the B-mode null test (Crittenden
 et al. 2002, arXiv:astro-ph/0012336) [src].
 
@@ -265,25 +265,25 @@ where centrals follow the large-scale potential and satellites point at the
 halo centre [src]; Fortuna et al. 2021, arXiv:2003.02700). The luminosity and
 redshift scalings used as priors come from luminous red galaxies: amplitude ∝
 L^b with b = 1.1 +0.3/−0.2 and an extra (1+z)^n with n = −0.3 ± 0.8 (Joachimi
-et al. 2011, arXiv:1008.3491) [src].
+et al. 2011, arXiv:1008.3491) [src: abstract].
 Reviews: Joachimi et al. 2015, arXiv:1504.05456; Troxel & Ishak 2015,
 arXiv:1407.6990; Lamman et al. 2024, arXiv:2309.08605; Chisari 2025,
 arXiv:2510.15738.
 
 **Why the model matters.** With alignments included, two or more times as many
 tomographic bins are needed to recover 80 per cent of the information
-(arXiv:0705.0166) [src]. The quadratic and cross terms of TATT can be
+(arXiv:0705.0166) [src: abstract]. The quadratic and cross terms of TATT can be
 order-unity corrections to the alignment signal at k ~ 0.1 h/Mpc, and in an
 LSST-like **forecast** NLA cannot absorb them even with a free redshift
-dependence (arXiv:1708.09247) [src]. The halo-model study finds that the model
+dependence (arXiv:1708.09247) [src: abstract]. The halo-model study finds that the model
 refinements it tests give negligible biases for Stage-III surveys, but that
 for Stage IV at least one additional parameter for the redshift dependence is
 essential (arXiv:2003.02700) [src, **forecast**].
 
 **Size.** The NLA/TATT choice moves the DES Y6 cosmic-shear S8 from 0.798 to
-0.783 and the precision from 1.8% to 2.5% (arXiv:2602.10065) [src]. In UNIONS
+0.783 and the precision from 1.8% to 2.5% (arXiv:2602.10065) [src: abstract]. In UNIONS
 the S8–A_IA degeneracy, with A_IA drawn from a direct-measurement prior, is
-one of the largest uncertainties (arXiv:2605.13543) [src].
+one of the largest uncertainties (arXiv:2605.13543) [src: abstract].
 
 **Model, prior and posterior in the main analyses.** Model equations are in
 `physics-and-methods.md` section 5.
@@ -300,7 +300,7 @@ one of the largest uncertainties (arXiv:2605.13543) [src].
 
 KiDS-1000 states that its known modelling systematics bias S8 by no more than
 0.1σ, "with the caveat that no conclusive validation data exist for models of
-intrinsic galaxy alignments" (Joachimi et al. 2021, arXiv:2007.01844) [src].
+intrinsic galaxy alignments" (Joachimi et al. 2021, arXiv:2007.01844) [src: abstract].
 Type dependence was seen from the start: CFHTLenS found a significant
 alignment signal for early-type galaxies and none for late types (Heymans et
 al. 2013, arXiv:1303.1808) [src].
@@ -308,11 +308,11 @@ al. 2013, arXiv:1303.1808) [src].
 **Direct measurements.** DES Y3 redMaGiC, eBOSS LRG and BOSS CMASS: alignments
 detected at 5σ–22σ on 6 < r_p < 70 h⁻¹Mpc; eBOSS emission-line galaxies give a
 null result, A1 = 0.07 +0.32/−0.42 in NLA (Samuroff et al. 2023,
-arXiv:2212.11319) [src]; DESI DR1 with DES, HSC, KiDS and SDSS shapes, over 2
+arXiv:2212.11319) [src: abstract]; DESI DR1 with DES, HSC, KiDS and SDSS shapes, over 2
 million galaxies: the bluest galaxies are consistent with zero alignment, red
 galaxies align more strongly with luminosity, and luminosity and colour
 explain the signal at 0 < z < 1.5 without an explicit redshift dependence
-(Siegel et al. 2025, arXiv:2507.11530) [src].
+(Siegel et al. 2025, arXiv:2507.11530) [src: abstract].
 
 **Mitigation in practice.** Marginalise a model; inform it with direct
 measurements (KiDS-Legacy, arXiv:2503.19441); or select a low-alignment blue
@@ -325,22 +325,22 @@ sample (arXiv:2512.04209).
 the matter power spectrum. The OWLS AGN simulation predicted a decrease
 relative to dark-matter-only, at z = 0, of 1% at k ≈ 0.3 h/Mpc, 10% at k ≈ 1
 h/Mpc and 30% at k ≈ 10 h/Mpc, so that baryons "cannot be ignored" for k > 0.3
-h/Mpc (van Daalen et al. 2011, arXiv:1104.1174) [src]; simulation library: van
+h/Mpc (van Daalen et al. 2011, arXiv:1104.1174) [src: abstract]; simulation library: van
 Daalen et al. 2020, arXiv:1906.00968. In shear, the baryonic correction model
 predicts a 15–25% suppression of the shear power spectrum beyond ℓ ~ 100–600
 and 10–25% effects on ξ+ below 5 arcmin and on ξ− below 50 arcmin (Schneider
-et al. 2019, arXiv:1810.08629) [src]. Most of the effect on the scales of
+et al. 2019, arXiv:1810.08629) [src: abstract]. Most of the effect on the scales of
 cosmic shear comes from group-mass haloes, M ~ 10¹³–10¹⁴ M⊙ (Salcido et al.
-2023, arXiv:2305.09710) [src].
+2023, arXiv:2305.09710) [src: abstract].
 
 **Mitigation.** (a) Scale cuts validated on synthetic data: DES Y3 reports no
 bias above 0.3σ in the S8–Ωm plane from theory-model uncertainty (Secco et al.
 2022, arXiv:2105.13544; strategy in Krause et al. 2021, arXiv:2105.13548; Y6
-in arXiv:2601.14859) [src]. (b) Halo-model parametrisation: HMcode (Mead et
+in arXiv:2601.14859) [src: abstract of arXiv:2105.13544]. (b) Halo-model parametrisation: HMcode (Mead et
 al. 2015, arXiv:1505.07833); HMcode-2020 has a six-parameter feedback model
 and a single-parameter variant, matches the hydrodynamical power-spectrum
 response to better than 1% for z < 1 and k < 20 h/Mpc, and ships with CAMB
-(Mead et al. 2021, arXiv:2009.01858) [src]. (c) Baryonification of N-body
+(Mead et al. 2021, arXiv:2009.01858) [src: abstract]. (c) Baryonification of N-body
 simulations and its emulators (Schneider & Teyssier 2015, arXiv:1510.06034;
 Schneider et al. 2019, arXiv:1810.08629; Giri & Schneider 2021,
 arXiv:2108.08863; Aricò et al. 2021, arXiv:2011.15018). (d) Principal
@@ -354,21 +354,21 @@ arXiv:2407.07152; Ried Guachalla et al. 2025, arXiv:2503.19870).
 
 **Earlier lensing-only constraints.** DES Y3 small scales with
 baryonification: best-fit suppression ~5% at k = 1 h/Mpc and ~15% at k = 5
-h/Mpc, M_c > 10^13.2 h⁻¹M⊙ at 95% (Chen et al. 2023, arXiv:2206.08591) [src];
+h/Mpc, M_c > 10^13.2 h⁻¹M⊙ at 95% (Chen et al. 2023, arXiv:2206.08591) [src: abstract];
 DES Y3 with the BACCO emulator: log M_c = 14.38 +0.60/−0.56 and S8 = 0.799
 +0.023/−0.015, 0.9σ from Planck and 1.4σ above the official DES Y3 value
-because of modelling choices (Aricò et al. 2023, arXiv:2303.05537) [src].
+because of modelling choices (Aricò et al. 2023, arXiv:2303.05537) [src: abstract].
 X-ray gas fractions through the baryonic emulator imply a suppression
 exceeding 1% at k = 0.1–0.4 h/Mpc and peaking at 20–28% near k = 7 h/Mpc
-(arXiv:2108.08863) [src].
+(arXiv:2108.08863) [src: abstract].
 
 **External gas probes.** DES Y3 lensing + ACT DR5 kSZ constrain a mean
 feedback scenario "more extreme than the predictions from most hydrodynamical
 simulations" (arXiv:2404.06098) [src]. Stacked kSZ on DESI imaging galaxies is
 detected at 13σ and disfavours low-feedback models of the IllustrisTNG kind
-(arXiv:2407.07152) [src]. kSZ around DESI Y1 LRGs gives a tentative preference
+(arXiv:2407.07152) [src: abstract]. kSZ around DESI Y1 LRGs gives a tentative preference
 for stronger feedback (Illustris z = 0.5, PTE = 0.37, against IllustrisTNG z =
-0.8, PTE = 0.045) (arXiv:2503.19870) [src]. Detail belongs to
+0.8, PTE = 0.045) (arXiv:2503.19870) [src: abstract]. Detail belongs to
 `cosmo-cmb-lss-cross-correlations`.
 
 **Size.** See `results.md` section 1.5. Current scale cuts leave about 0.3σ
@@ -403,7 +403,7 @@ fitted a one-parameter suppression of the non-linear spectrum to KiDS-1000 and
 argued that lensing and Planck ΛCDM are reconciled if the suppression is
 stronger than assumed [src]. Preston et al. 2023 (arXiv:2305.09827) found that
 the suppression DES Y3 requires is weaker than for KiDS but still more extreme
-than recent simulations, and must reach k ~ 0.2 h/Mpc [src]. The FLAMINGO
+than recent simulations, and must reach k ~ 0.2 h/Mpc [src: abstract]. The FLAMINGO
 simulations (Schaye et al. 2023, arXiv:2306.04024) answered that across their
 feedback variations "baryonic effects are not sufficiently large to remove the
 S8 tension" (McCarthy et al. 2023, arXiv:2309.07959) [src]. With the 2025–2026
@@ -416,13 +416,17 @@ Y6 as far as the searches of this session show.
 
 | Effect | Standard treatment | Reference |
 |---|---|---|
-| Magnification of the lens sample | magnification coefficients per lens bin from Balrog source injection, with Gaussian priors. DES Y6 MagLim++ coefficients are 3.16 ± 0.08 to 4.90 ± 0.29 across six bins; neglecting magnification shifts the 2×2pt S8 by 1.37σ and Ωm by −0.84σ (−0.61σ and −0.71σ with cosmic shear included) [src: arXiv:2601.14833]. The 3×2pt prior table lists the six coefficients as α = 1.58 ± 0.04, 1.38 ± 0.11, 2.04 ± 0.08, 2.21 ± 0.08, 2.45 ± 0.14, 2.42 ± 0.13 (arXiv:2601.14559) [src: Table 3]; the end values are half of those above, so the two papers differ by a factor 2 in the definition of the coefficient [der: 2 × 1.58 = 3.16, 2 × 2.45 = 4.90]. Magnification accounts for under 1% of the 3×2pt S8 width [src: App. D of arXiv:2601.14559] | Elvin-Poole et al. 2023, arXiv:2209.09782; DES Y6: Legnani et al. 2026, arXiv:2601.14833 |
+| Magnification of the lens sample | magnification coefficients per lens bin from Balrog source injection, with Gaussian priors. DES Y6 MagLim++ coefficients, bins 1 to 6, are 3.16 ± 0.08, 2.76 ± 0.21, 4.09 ± 0.15, 4.42 ± 0.16, 4.90 ± 0.29, 4.83 ± 0.25; neglecting magnification shifts the 2×2pt S8 by 1.37σ and Ωm by −0.84σ (−0.61σ and −0.71σ with cosmic shear included) [src: abstract of arXiv:2601.14833]. The 3×2pt prior table lists the six coefficients as α = 1.58 ± 0.04, 1.38 ± 0.11, 2.04 ± 0.08, 2.21 ± 0.08, 2.45 ± 0.14, 2.42 ± 0.13 (arXiv:2601.14559) [src: Table 3]. Magnification accounts for under 1% of the 3×2pt S8 width [src: App. D of arXiv:2601.14559] | Elvin-Poole et al. 2023, arXiv:2209.09782; DES Y6: Legnani et al. 2026, arXiv:2601.14833 |
 | Non-linear galaxy bias and point-mass term in γ_t | scale cuts, or analytic marginalisation of an enclosed-mass term | Prat et al. 2022, arXiv:2105.13541 |
 | Source clustering, reduced shear | modelled explicitly once third-order statistics are used | arXiv:2606.12389 |
 | Limber approximation | extended Limber or exact projection at low ℓ | LoVerde & Afshordi 2008, arXiv:0809.5112; Kilbinger et al. 2017, arXiv:1702.05301 |
 | Covariance errors | analytic halo-model covariance with super-sample term, validated on mocks. DES Y3: the f_sky approximation for finite area is the largest effect, raising χ² by 3.7% (Δχ² ≈ 18.9) and the scatter of best-fit Ωm, σ8 by about 3% [src: arXiv:2012.08568]. KiDS-Legacy: OneCovariance is accurate at the per cent level; ignoring the survey geometry misestimates cosmic-variance terms by about 10% [src: arXiv:2410.06962]; against GLASS mocks the analytic covariance agrees within 10% at large separations and 5% below 0.5°, and keeping only the Gaussian term shrinks the Σ8 error by 12% (band powers) to 19% (COSEBIs) with no shift; iterating the covariance at the best fit converges in two steps [src: Sect. 2.6, 5.2.2, 5.2.3 of arXiv:2503.19441]. DES Y6: the signal uses HMCode2020 but the covariance Halofit, at most 2.5% on individual elements [src: Sect. IV.2 of arXiv:2601.14559]. HSC Y3: 1404 ray-traced mocks at one (WMAP9) cosmology, mock signal rescaled by its ratio 0.81 to theory, Hartlap factor about 0.9 for 140 points [src: Sect. III.2, IV.6 of arXiv:2304.00702]. Sampler: MultiNest underestimates the 68% and 95% widths of S8 by 12% and 15% (arXiv:2305.17173) [src: App. D] | arXiv:2012.08568, arXiv:2410.06962; non-Gaussian term: Cooray & Hu 2001, arXiv:astro-ph/0012087, about 15% on parameter errors for a survey to z ~ 1 [src]; samplers: Lemos et al. 2023, arXiv:2202.08233 |
-| Cross-survey galaxy–galaxy lensing amplitude | blind comparison of ΔΣ around the same BOSS lenses from different shear catalogues: systematics above 15% (25%) excluded at 68% (95%) at z < 0.54; a 3–4σ correlation of amplitude with survey depth for z_L > 0.43 [src: arXiv:2111.13805]. With DESI DR1 lenses a trend with source redshift appears and vanishes once the HSC redshift shifts favoured by its cosmology analysis are applied [src: arXiv:2506.21677] | Leauthaud et al. 2022, arXiv:2111.13805; Heydenreich et al. 2025, arXiv:2506.21677 |
+| Cross-survey galaxy–galaxy lensing amplitude | blind comparison of ΔΣ around the same BOSS lenses from different shear catalogues: systematics above 15% (25%) excluded at 68% (95%) at z < 0.54; a 3–4σ correlation of amplitude with survey depth for z_L > 0.43 [src: abstract of arXiv:2111.13805]. With DESI DR1 lenses a trend with source redshift appears and vanishes once the HSC redshift shifts favoured by its cosmology analysis are applied [src: arXiv:2506.21677] | Leauthaud et al. 2022, arXiv:2111.13805; Heydenreich et al. 2025, arXiv:2506.21677 |
 | Spatially varying depth | lens-sample weights and masks; variable-depth n(z) | Rodríguez-Monroy et al. 2025, arXiv:2509.07943 |
+
+The magnification coefficients of arXiv:2601.14833 and the α values of the
+3×2pt prior table of arXiv:2601.14559 are not on the same scale; check the
+definition in each paper before comparing them [der: from the two lists].
 
 **Which term limits S8.**
 
@@ -431,7 +435,7 @@ Y6 as far as the searches of this session show.
 | KiDS-1000 (arXiv:2007.15633) | observational systematics, separately or jointly, have a small impact [src: Sect. 4.2.3] |
 | DES Y3 (arXiv:2105.13543) | fixing shear and redshift priors gains nothing; fixing the alignment parameters and using all scales gains a factor 1.8 [src: Sect. XII] |
 | KiDS-Legacy (arXiv:2503.19441) | fixing alignment, redshift and shear nuisance parameters tightens Σ8 by 10% (COSEBIs) or 20% (band powers) and moves it by 0.28σ or 0.14σ: "statistics-limited" [src: Sect. 5.2.5] |
-| DES Y6 cosmic shear (arXiv:2602.10065) | gain in σ(S8) with one ingredient made perfect: shear calibration about 1.07 [der: 0.015/0.014], redshifts 1.2, alignments 1.1 (NLA) or 1.3 (TATT), scale cuts 1.6 (NLA) or 1.4 (TATT), all together 2.3–2.6 [src: Sect. VI.3] |
+| DES Y6 cosmic shear (arXiv:2602.10065) | gain in σ(S8) with one ingredient made perfect: shear calibration a minimal change (σ = 0.015 to 0.014 for NLA, 0.017 to 0.016 for TATT), redshifts 1.2, alignments 1.1 (NLA) or 1.3 (TATT), scale cuts 1.6 (NLA) or 1.4 (TATT), all together 2.3–2.6 [src: Sect. VI.3] |
 | DES Y6 3×2pt (arXiv:2601.14559) | cuts and point-mass marginalisation lower the signal-to-noise from 302 to 95; among parametrised effects redshifts weigh about 14%, alignments 3%, magnification under 1% [src: App. D] |
 
 ## 8. What a referee checks in a lensing results section
@@ -440,7 +444,7 @@ Y6 as far as the searches of this session show.
 1. Which CMB data set the "tension" is measured against, and with which metric
    (S8 difference, full-parameter shift, PPD). References: arXiv:2602.12238
    for the CMB reference that each survey uses, arXiv:2601.14559 for two
-   metrics quoted on the same data (2.6σ and 1.8σ).
+   metrics quoted on the same data (2.6σ and 1.8σ) [src: abstract].
 2. The IA model, its priors, and how much S8 moves under the alternative.
 3. The baryon treatment: scale cuts (and the simulation that set them) or a
    model (and its prior), and the residual bias.
@@ -458,7 +462,7 @@ Y6 as far as the searches of this session show.
    (shear-catalogue level, KiDS).
 9. Prior-volume and projection effects on marginal S8 (mean vs MAP),
    especially with TATT or wide Δz priors. References: arXiv:2305.17173
-   (DES Y3 + KiDS-1000: mean 0.790, MAP 0.801); arXiv:2007.01844 (KiDS-1000
+   (DES Y3 + KiDS-1000: mean 0.790, MAP 0.801) [src: abstract]; arXiv:2007.01844 (KiDS-1000
    warning on marginal point estimates).
 10. Internal consistency splits: redshift bins, scales, colour, sky region,
     statistic.

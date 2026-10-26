@@ -13,7 +13,7 @@ Sect. 5.2 (foreground cleaning).
 
 Already in L2, not repeated here: the BK18 eight-parameter model, its
 priors and its foreground budget (`systematics.md#b9-bk18-budget-as-read-in-the-paper-body`);
-the SO bias of up to r ≈ 0.03 from dust complexity and the d10/s5 findings
+the SO bias on r from dust complexity and the d10/s5 findings
 of Liu et al. (`systematics.md#b1-polarised-galactic-dust`); synchrotron in
 BK18 (`systematics.md#b2-synchrotron`); beam chromaticity
 (`systematics.md#b5-beam-chromaticity-and-bandpass`); the six-SAT forecast
@@ -43,12 +43,12 @@ contaminated by atmospheric noise and filtering on real data, smaller ones
 carry no primordial signal [src: same].
 
 Noise bias is removed by cross-correlating data splits rather than by
-subtracting a noise model: S = 4 splits, averaging the S(S−1)/2 = 6
-unequal-split pairs, giving N(N+1)/2 = 21 noise-debiased spectra for N = 6
+subtracting a noise model: S = 4 splits, averaging the S(S−1)/2
+unequal-split pairs, giving N(N+1)/2 noise-debiased spectra for the N
 channels. The stated reason is that a noise model accurate enough may not
 exist on real data; a wrong noise model then only inflates σ(r) through
 the covariance, while the cross-split estimate keeps r unbiased [src:
-same].
+arXiv:2302.04276, Sect. 2.1].
 
 ### Step 2a. Cross-spectrum parametric fit ("pipeline A", BBPower)
 <!-- key: step-2a-cross-spectrum-parametric-fit-pipeline -->
@@ -88,8 +88,7 @@ uses exactly this "minimal" expansion, with the four extra parameters, and
 labels its two cases "no FG decorr." and "with FG decorr." [src:
 arXiv:2512.15833, Sect. 3.1].
 
-Priors of the SO pipeline-A runs [src: arXiv:2302.04276, Table 2]
-(TH top-hat centre ± half-width; G Gaussian centre ± σ):
+Priors of the SO pipeline-A runs (TH top-hat centre ± half-width; G Gaussian centre ± σ) [src: arXiv:2302.04276, Table 2]:
 
 | Parameter | Prior | Parameter | Prior |
 |---|---|---|---|
@@ -110,7 +109,7 @@ Likelihood: Gaussian in the bandpowers. The authors checked that the
 Hamimeche–Lewis form gives the same constraints and give the reason it
 holds: each bandpower averages N_modes ≃ Δℓ f_sky (2ℓ+1) > 61 modes, which
 "would not hold any longer for the smaller BICEP/Keck-like patch sizes"
-[src: same]. Sampling with emcee [src: same].
+[src: arXiv:2302.04276, Sect. 2.1]. Sampling with emcee [src: same].
 
 ### Step 2b. Blind needlet ILC ("pipeline B")
 <!-- key: step-2b-blind-needlet-ilc-pipeline-b -->
@@ -217,7 +216,7 @@ T_d = 20 K, β_s = −3); d1s1 (spatially varying SEDs); dmsm (β_d and T_d
 templates smoothed to 2°, synchrotron index fluctuations multiplied by 1.6
 and small-scale structure added following S-PASS) [src: Sect. 3.3].
 
-10³ × (r ± σ(r)), goal white noise with optimistic 1/f [src: Table 4]:
+10³ × (r ± σ(r)), goal white noise with optimistic 1/f (arXiv:2302.04276) [src: Table 4]:
 
 | Sky | A (C_ℓ fiducial) | A + moments | B (NILC) | C (map parametric) | C + dust marg. |
 |---|---|---|---|---|---|
@@ -230,17 +229,17 @@ and small-scale structure added following S-PASS) [src: Sect. 3.3].
 
 - The nominal pipelines have comparable σ(r), 2.1–3.6 × 10⁻³ across noise
   models; d1s1 gives about 1σ bias, dmsm up to about 2σ, d10s5 10, 8 and 8σ
-  for A, B and C [src: Sects. 4.2, 4.4].
+  for A, B and C [src: arXiv:2302.04276, Sects. 4.2, 4.4].
 - Both extensions bring the bias below 1σ in every case. A + moments costs
   about 25% in σ(r) on average (45% on d10s5); C + dust marginalisation
   costs more (σ(r) 3.0–5.9 × 10⁻³; 95% on d10s5). "This makes A + moments
-  the unbiased method with the lowest statistical error" [src: Sects. 4.2,
-  4.4].
+  the unbiased method with the lowest statistical error" [src:
+  arXiv:2302.04276, Sects. 4.2, 4.4].
 - On the simpler skies the extensions show a small negative bias (≈ 0.1σ
   for A + moments, < 0.5σ for C + dust), attributed to prior-dominated extra
-  parameters weakly degenerate with r [src: Sect. 4.2].
+  parameters weakly degenerate with r [src: arXiv:2302.04276, Sect. 4.2].
 - The channel weights agree between pipelines: 93 and 145 GHz positive,
-  280 GHz negative in all three [src: Sect. 4.3].
+  280 GHz negative in all three [src: arXiv:2302.04276, Sect. 4.3].
 
 ### Parametric or blind
 <!-- key: parametric-or-blind -->
@@ -259,7 +258,7 @@ and small-scale structure added following S-PASS) [src: Sect. 3.3].
   simulations NILC and cMILC still leave r ≈ 1 × 10⁻³ (d1s1) and ≈ 10⁻²
   (d10s5); NILC also biases A_lens [src: arXiv:2603.11026, Sect. 4.2].
   Adding the residual template removes the bias at a cost in σ(r)
-  [src: Sect. 5.2, Table 2]:
+  (arXiv:2603.11026) [src: Sect. 5.2, Table 2]:
 
 | 10³ (r ± σ(r)), baseline-optimistic noise | d1s1 | d10s5 |
 |---|---|---|
@@ -269,8 +268,8 @@ and small-scale structure added following S-PASS) [src: Sect. 3.3].
 | cMILC + template | 0.6 ± 4.2 | 0.6 ± 8.8 |
 
   Fixing A_lens = 1 tightens σ(r) (NILC + template on d10s5: 8.4 → 6.5 ×
-  10⁻³) but loads any residual systematic onto r alone [src: Sect. 5.2,
-  Table 3].
+  10⁻³) but loads any residual systematic onto r alone [src:
+  arXiv:2603.11026, Sect. 5.2, Table 3].
 
 ### Moments or decorrelation parameter
 <!-- key: moments-or-decorrelation-parameter -->
@@ -302,10 +301,11 @@ sets" [src: Sect. 5.2.4].
 
 On d1s1 with SO baseline noise, 50% delensing (A_lens = 0.5) reduced σ(r) by
 25–30% for pipelines A and B, 10–20% for A + moments and 0–33% for
-C + dust marginalisation [src: arXiv:2302.04276, Sect. 4.2, Table 5]. The
-pipelines with extra foreground freedom gain less [der: reading of the
-same numbers], so a delensing gain quoted for a fiducial pipeline does not
-carry over to a debiased one.
+C + dust marginalisation [src: arXiv:2302.04276, Sect. 4.2, Table 5].
+
+The pipelines with extra foreground freedom gain less, so a delensing gain
+quoted for a fiducial pipeline does not carry over to a debiased one [der:
+reading of the table above].
 Delensing itself is in `deep/delensing.md`.
 
 ## Numbers

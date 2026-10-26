@@ -124,7 +124,7 @@ Gaussian whose outer radius is equal to the bulk flow depth" [src: arXiv:1804.05
 
 In linear theory the expected covariance of the estimate is
 
-    R_ij = ⟨u_i u_j⟩ = (H0² Ω_m^1.1 / 2π²) ∫ dk P(k) W²_ij(k)                              (Eq. 32)
+    R_ij = ⟨u_i u_j⟩ = (H0² Ω_m^1.1 / 2π²) ∫ dk P(k) W²_ij(k)          (arXiv:2302.02028, Eq. 32)
 
 independent of H0 when distances are in h⁻¹Mpc; then χ² = Σ u_i R⁻¹_ij u_j over three components,
 and the probability is the χ²(3 dof) tail [src: arXiv:2302.02028, Sect. 6, Eqs. 32–33;
@@ -180,7 +180,7 @@ Sect. 6].
 ### MV against Kaiser MLE on the same data
 <!-- key: mv-against-kaiser-mle-on-the-same-data -->
 
-On CF4 with mock-calibrated errors (Whitford et al. 2023, Table 3, supergalactic components):
+On CF4 with mock-calibrated errors (Whitford et al. 2023, arXiv:2306.11269, Table 3, supergalactic components):
 
 | Estimator | |B| raw → bias-corrected (km/s) | Effective depth | P(>χ²) raw → corrected | Mock ΛCDM ⟨|B|⟩ |
 |---|---|---|---|---|
@@ -188,12 +188,15 @@ On CF4 with mock-calibrated errors (Whitford et al. 2023, Table 3, supergalactic
 | Peery MVE | 357 ± 104 → 428 ± 108 | 173 h⁻¹Mpc | 0.71 % → 0.11 % | 128 ± 59 → 194 ± 86 |
 
 Bracketed values in the paper, without the error rescaling, give 0.06 % (raw) and 0.002 %
-(corrected) for the MVE [src: arXiv:2306.11269, Table 3]. Reading [der]: the Kaiser MLE has an
-error-weighted depth of 49 h⁻¹Mpc whatever data it is given, so it does not test the same scale;
-and the MVE probability moves by a factor ~50 between unscaled and mock-scaled errors.
+(corrected) for the MVE [src: arXiv:2306.11269, Table 3].
 
-The Kaiser MLE is also exposed to a global zero-point: shifting every η by ±0.031 (about 5 km/s/Mpc
-in H0) moves the Kaiser components by "upward of 100 km s⁻¹", most along the SDSS cone, and
+Reading [der]: the Kaiser MLE has a
+much shallower error-weighted depth than the MVE whatever data it is given, so the two do not test
+the same scale; and the MVE probability changes by more than an order of magnitude between unscaled
+and mock-scaled errors.
+
+The Kaiser MLE is also exposed to a global zero-point (Whitford et al. 2023, arXiv:2306.11269):
+shifting every η by ±0.031 (about 5 km/s/Mpc in H0) moves the Kaiser components by "upward of 100 km s⁻¹", most along the SDSS cone, and
 asymmetrically because a constant shift in η is not a constant shift in v; the Peery MVE "remains
 unbiased", as its cz constraint predicts [src: Sect. 4.3.3].
 
@@ -301,7 +304,7 @@ h⁻¹Mpc for the combined sample.
 <!-- key: not-verified -->
 
 - Watkins, Feldman & Hudson 2009 (arXiv:0809.4041) and Feldman et al. 2010 (arXiv:0911.5516)
-  bodies: the original Gaussian ideal window of radius R_I = 50 h⁻¹Mpc and the shear and octupole
+  bodies: the radius of the original Gaussian ideal window and the shear and octupole
   terms were not read here.
 - Nusser 2014 (arXiv:1405.6271) and Nusser 2016 (arXiv:1508.03860) bodies: the Nusser MLE is
   described through arXiv:2306.11269 only. Andersen et al. 2016, Agarwal et al. 2012, Macaulay et

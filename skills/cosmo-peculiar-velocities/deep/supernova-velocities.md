@@ -71,7 +71,7 @@ practice differs on whether p_HD is refitted with the velocities:
 To first order in v/c (Hui & Greene 2006, Eq. 15, as derived in App. A.1),
 
     v̂_i = −(ln10 c/5) [ (1 + z_i) c / (H(z_i) r(z_i)) − 1 ]⁻¹ Δμ_i                       (Eq. 21)
-    σ_v̂ ≃ 1400 (z/0.1)(σ_μ/0.1) km/s                                                   (Eq. 23)
+    σ_v̂ ≃ 1400 (z/0.1)(σ_μ/0.1) km/s                             (arXiv:2303.01198, Eq. 23)
 
 [src: arXiv:2303.01198, Sect. 3.1.2]. z_i should be z_cos; using z_obs is "only a second order
 approximation", biased for nearby fast objects; the paper compares four variants (v̂1–v̂4, the
@@ -106,8 +106,8 @@ v̂ are Gaussian (App. A.4) [src: arXiv:2303.01198, Sect. 3.2.4].
 with the linear C^vv of physics-and-methods §3 and parameters p = {fσ8, σ_v, σ_u}; maximised with
 iminuit (Hesse or Minos errors), checked against emcee [src: Sects. 3.2.4, 3.3]. With estimated
 velocities σ_u is unconstrained and drifts high with fσ8, so a Gaussian prior centred on 15
-h⁻¹Mpc with 50 % width is imposed; with true velocities σ_u = 14.6 ± 0.5 is recovered [src: Sect.
-4.2].
+h⁻¹Mpc with 50 % width is imposed; with true velocities σ_u = 14.6 ± 0.5 is recovered [src: arXiv:2303.01198,
+Sect. 4.2].
 
 **Magnitude space** (Huterer et al. 2017):
 
@@ -179,7 +179,7 @@ the group's own coherent motion, which is the signal.
 | Route | Fits | Assumes | Cost | Analysis |
 |---|---|---|---|---|
 | Velocity covariance | fσ8, σ_v, σ_u (+ p_HD) | linearised Δμ → v, Gaussian v̂ | dense N × N matrix; σ_u needs a prior | arXiv:2303.01198 |
-| Magnitude covariance | A (or σ8, γ, Ω_k with CMB) + σ_v or Δσ_int, ΔM | ΛCDM shape of P(k); no conversion to v | 10⁸ elements for 10⁴ objects; parameters other than fσ8 need a cosmology | arXiv:1611.09862; arXiv:2604.06361 |
+| Magnitude covariance | A (or σ8, γ, Ω_k with CMB) + σ_v or Δσ_int, ΔM | ΛCDM shape of P(k); no conversion to v | 10⁸ elements for 10⁴ objects (arXiv:1611.09862, Sect. 3.1); parameters other than fσ8 need a cosmology | arXiv:1611.09862; arXiv:2604.06361 |
 | Correlation functions (× galaxies) | fσ8 from δm auto and δm–galaxy cross | mock covariance, linear α(z) | needs a galaxy sample on the same sky and mocks | arXiv:2510.07673 |
 | Velocity–density | β (→ fσ8) | a reconstruction and linear theory | reconstruction systematics | arXiv:2606.14962; `deep/velocity-density-comparison.md` |
 
@@ -303,5 +303,5 @@ arXiv:2507.00157, Sect. 5].
 - The Nguyen et al. correlation-function estimators and their fitted scales (Sects. 5, 7): not
   read; only the δm–v relation, the sample and the selection test.
 - The Tsagas et al. 2025 review Sect. 10.1.
-- The reason for 628 against 510 Pantheon+ SNe at z < 0.1 (light curves against unique SNe is a
-  possible but unchecked explanation).
+- The reason why the two papers quote different numbers of Pantheon+ SNe at low redshift (light
+  curves against unique SNe is a possible but unchecked explanation).

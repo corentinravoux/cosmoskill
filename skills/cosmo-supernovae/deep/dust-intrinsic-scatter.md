@@ -42,7 +42,7 @@ The observed colour is split into an intrinsic part and dust,
 `P(E_dust) = tau_E^-1 exp(−E_dust/tau_E)` for `E_dust > 0` (Eq. 12),
 `R_V ~ N(R̄_V, sigma_RV)` with individual values below 0.5 not allowed
 (Eq. 13), and `beta_SN ~ N(β̄_SN, sigma_βSN)` drawn per SN (Eq. 14) [src:
-Sect. III.3]. The magnitude change is
+arXiv:2004.10206, Sect. III.3]. The magnitude change is
 
     Delta m_B = beta_SN c_int + (R_V + 1) E_dust + epsilon_noise   (BS21, Eq. 15)
 
@@ -98,7 +98,8 @@ MCMC [src: Sect. IV.3]:
    the bounding functions gain about `1.3^4 ≈ 4` in efficiency over flat
    ones [src].
 3. The kept sample is downsized to 5000 SNe to limit fluctuations; if it
-   cannot be, the step gets log-likelihood −∞ [src].
+   cannot be, the step gets log-likelihood −∞ [src: arXiv:2112.04456,
+   Sect. IV.3].
 4. The M11 (SALT2mu) fit is run on data and on the weighted simulation;
    `L = −χ²_Tot/2` (Eq. 21) is sampled with emcee [src].
 
@@ -107,7 +108,7 @@ versus colour and residual scatter versus colour, each split into low- and
 high-mass hosts; `beta_SALT2`; `sigma_int` [src: Sect. IV.3]. The colour
 metrics use 6 bins from `c = −0.2` to `0.25`, which hold more than 99 % of
 the sample; scatter is the robust `sigma_r = 1.48 median(|X|)` (Eq. 12)
-with error `sigma_r/sqrt(2N)` (Eq. 14) [src: Sect. IV.1]. What each metric
+with error `sigma_r/sqrt(2N)` (Eq. 14) [src: arXiv:2112.04456, Sect. IV.1]. What each metric
 constrains: `R̄_V` sets the slope of residual versus colour; `sigma_RV` the
 relation for the reddest SNe and the scatter versus colour; the `beta_SN`
 distribution the fitted `beta_SALT2` and the scatter floor [src: Sect. IV.1].
@@ -149,7 +150,7 @@ The fitted model generates the SALT3 parameters of the BBC simulations
   expected to be zero if the scatter model used in the simulations is
   accurate"; this testability is the stated reason for the nominal choice
   over a constant floor, both recovering the input cosmology on 25
-  simulations [src: Sects. III.5, VI.2.2].
+  simulations [src: arXiv:2401.02945, Sects. III.5, VI.2.2].
 
 ### Step 5. Choose variants and test them against the data
 <!-- key: step-5-choose-variants-and-test-them-against -->
@@ -180,17 +181,17 @@ Dust2Dust compares two ways [src: arXiv:2112.04456, Sect. V.3]:
 1. Forward: 400 data-sized simulations with parameters drawn from the chains
    and 400 with the best fit, each through SALT2 fitting, BBC4D and `wfit`
    with a CMB prior; `sigma_w,sys = sqrt(STDEV(w_syst+stat)^2 −
-   STDEV(w_stat)^2)` (Eq. 22) gives 0.014 ± 0.001.
+   STDEV(w_stat)^2)` (arXiv:2112.04456, Eq. 22) gives 0.014 ± 0.001.
 2. Covariance: a nominal bias-correction simulation plus three at
    `Delta chi2 ≈ 10` from the best fit, in the covariance matrix: 0.011 on
-   `w` and 0.145 km/s/Mpc on `H0` (Eqs. 23–24, Table 7).
+   `w` and 0.145 km/s/Mpc on `H0` (arXiv:2112.04456, Eqs. 23–24, Table 7).
 
 The authors call the forward value an upper bound because the covariance
 route was binned for consistency and an unbinned matrix can self-correct
 [src]. These body numbers come from the HTML rendering, which is an earlier
 arXiv version: its own abstract gives an "upper threshold" of 0.014(1) on
 w. The current arXiv abstract gives `sigma_w = 0.005` and 0.145 km/s/Mpc
-on H0 [src: abstract]; the current version's body was not read, so the
+on H0 [src: arXiv:2112.04456, abstract]; the current version's body was not read, so the
 revised method behind 0.005 is under "Not verified". L2 quotes the current
 abstract.
 
@@ -230,6 +231,8 @@ abstract.
 ### Hand-tuned, MCMC-fitted or SBI-fitted parameters
 <!-- key: hand-tuned-mcmc-fitted-or-sbi-fitted-parameters -->
 
+From BS21 (arXiv:2004.10206), Table 1, and DES-SN5YR (arXiv:2401.02945), Table 3:
+
 | Parameter | BS21 (Table 1) | P21(M*) in DES-SN5YR (Table 3) |
 |---|---|---|
 | `c̄` / `sigma_c` | −0.084 ± 0.004 / 0.042 ± 0.002 | −0.07 / 0.053 |
@@ -257,18 +260,19 @@ changes:
 
 - Model comparison by Bayes factor: two-population ("Banana Split") models
   are disfavoured at log10 BF = 1.90 and 3.4 on DES-SN5YR; single-`R_V` is
-  the worst model on the Dust2Dust metrics (χ²/ν about 65) [src: Sect. 8.1].
+  the worst model on the Dust2Dust metrics (χ²/ν about 65) [src:
+  arXiv:2607.28725, Sect. 8.1].
 - Lower `R_V` limit 1.2, following BayeSN, against the "less-realistic"
-  `R_V > 0.4` of Dust2Dust [src: Sect. 1]; with that truncation the
+  `R_V > 0.4` of Dust2Dust [src: arXiv:2607.28725, Sect. 1]; with that truncation the
   expected `R_V` is 2.21 (high mass) and 3.08 (low mass),
   `Delta E(R_V) = 0.8`, and `gamma = 0` corresponds to `Delta E(R_V) = 0.6`
   [src: Sect. 8.2, Eq. 19].
 - Distances move little between models: `d mu/dz < 0.025` on a simulation
-  50 times the DES-SN5YR size [src: Sect. 8.3].
+  50 times the DES-SN5YR size [src: arXiv:2607.28725, Sect. 8.3].
 - Limits stated: `alpha` and `beta` are fixed (0.145, 3.1) when computing
   `mu_RES` and cannot be resampled; `beta_int` and `gamma` depend strongly
   on the assumed cosmology, and `beta_int` and `R_V` shift beyond 1σ for
-  `Delta beta_SALT = 0.2` [src: Sects. 4, 7.3].
+  `Delta beta_SALT = 0.2` [src: arXiv:2607.28725, Sects. 4, 7.3].
 
 ### Host tracer: stellar mass, colour or age
 <!-- key: host-tracer-stellar-mass-colour-or-age -->

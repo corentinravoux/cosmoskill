@@ -193,7 +193,7 @@ cosmic-shear cosmology among the analyses this skill tracks.
 | Metacalibration on existing detections | detection independent of shear | response on the data, little dependence on simulated morphology | misses detection bias in blends (percent level); fixnoise costs S/N; residual m still from simulations | DES Y3, DECADE, UNIONS (L2) |
 | Metadetection on cell coadds | the space between objects is sheared coherently | detection bias removed to a few tenths of a per cent (L2) | no per-object response; every selection repeated on five catalogues; continuous-PSF coadds required | DES Y6; planned for Rubin |
 | Fixed estimator + image simulations | simulations match data in the reweighting variables | estimator choice free; one pipeline for shear and n(z) | m depends on the realism of input morphology and faint galaxies | KiDS (lensfit), HSC (reGauss) |
-| Analytic response | linear response of the basis functions | speed; no external simulation for first-order bias | blends still at −0.3% | tested on HSC-like simulations |
+| Analytic response | linear response of the basis functions | speed; no external simulation for first-order bias | blends still at −0.3% (arXiv:2208.10522) [src: abstract] | tested on HSC-like simulations |
 
 The reasons the papers give for their choice:
 
@@ -294,8 +294,8 @@ its Table 2, which were not read here [src: arXiv:2510.01122, Sect. 4.1].
 
 How the HSC requirement is derived (arXiv:2107.00136, Sect. 4.1–4.2) [src]:
 a systematic residual is allowed at 0.5σ of the integrated signal,
-δξ± < ξ±/(2 SNR) (Eq. 20); δm changes ξ+ by 2δm ξ+ (Eq. 23); hence
-|δm| ≲ 0.25/SNR (Eq. 24). SNR = 27 is the Y1 tomographic SNR averaged over
+δξ± < ξ±/(2 SNR) (Eq. 20); δm changes ξ+ by 2δm ξ+ (Eq. 23); hence |δm|
+≲ 0.25/SNR (Eq. 24). SNR = 27 is the Y1 tomographic SNR averaged over
 the Fourier and real-space analyses and rescaled by the Y3/Y1 galaxy number
 [src: Sect. 4.1]. The same paper notes an error in the Y1 PSF-size
 requirement (its Eq. 19 should read 0.25 σ_ξ+) [src: Sect. 4.1, footnote].

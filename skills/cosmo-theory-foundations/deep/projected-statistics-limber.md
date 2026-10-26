@@ -10,7 +10,7 @@ Snapshot: 2026-10-17.
 From: Huterer 2023 review (arXiv:2212.05003), Sects. 3.2–3.3; DES Y3 3×2pt
 modelling (arXiv:2105.13548), Sect. III.
 
-Already in L2, not repeated here: the LoVerde–Afshordi series, its
+Already in L2, not repeated here: the LoVerde–Afshordi series (arXiv:0809.5112), its
 convergence criteria and the worked case of a σ_z = 0.01 bin; the DES Y3
 non-Limber formula for clustering (Eqs. 29–34) and its Limber Eq. 16
 (`physics-and-methods.md#limber-approximation-and-angular-power-spectra`);
@@ -93,11 +93,11 @@ convergence differs: C^κ = [ℓ(ℓ+1)/((ℓ−1)(ℓ+2))] C^γ, larger by 10% 
 1% at ℓ = 14, < 0.1% for ℓ > 45 [src: Eq. 24]. In flat sky ł(ℓ, 2) is
 replaced by ℓ² (Eq. 29) [src].
 
-Kilbinger et al. combine prefactor p(ℓ) and Limber argument ν(ℓ) in
+Kilbinger et al. (arXiv:1702.05301) combine prefactor p(ℓ) and Limber argument ν(ℓ) in
 P^γ_L1 = p(ℓ) 𝒜² ∫ dχ q_i q_j a⁻² P_m(ν(ℓ)/χ; χ) [src: Eq. 43] and compare
 seven variants with the full spherical projection, CFHTLenS n(z), flat ΛCDM
 (Table 1; "ℓ_0.1" and "ℓ_0.01" are the multipoles beyond which the error is
-below 10% and 1% as the text uses them; the caption prints "ℓ ≤ ℓ_x") [src]:
+below 10% and 1% as the text uses them; the caption prints "ℓ ≤ ℓ_x"; arXiv:1702.05301, Table 1) [src]:
 
 | ID | p(ℓ) | ν(ℓ) | ℓ_0.1 | ℓ_0.01 | Used by (as stated) |
 |---|---|---|---|---|---|
@@ -131,7 +131,7 @@ it makes things worse [src: arXiv:1702.05301, Sect. 4.1].
 
 The three methods of the N5K challenge [src: arXiv:2212.04291, Sect. 4]:
 
-- **matter (FFTLog, two Bessel functions).** Expand P in complex power laws
+- **matter (FFTLog, two Bessel functions; arXiv:2212.04291).** Expand P in complex power laws
   f(x) = Σ c_n x^(ν_n), ν_n = 2πi n/N + η (Eq. 17); integrals of power laws
   times two Bessel functions are hypergeometric functions, tabulated once;
   C_ℓ = Σ_n ∫₀¹ dt I_ℓ(ν_n, t)[f_n(t) + t^(ν_n−2) f_n(1/t)] (Eq. 18);
@@ -174,7 +174,7 @@ lenses, 0.05(1+z) sources) [src: arXiv:2212.04291, Sect. 3.1]:
   [src: Sect. 5.1].
 - Clustering × shear and shear × shear: differences from Limber "a few % of
   the uncertainties at most" [src: Sect. 5.1].
-- Even at 200 ≤ ℓ ≤ 1000 first-order Limber failed the accuracy target for
+- Even at 200 ≤ ℓ ≤ 1000 (arXiv:2212.04291) first-order Limber failed the accuracy target for
   clustering autocorrelations because of their tiny LSST Y10 errors; the
   winning entry used second-order Limber there [src: Sect. 3.3].
 - Broad tracers: for unWISE × ACT DR6 lensing the leading beyond-Limber
@@ -184,6 +184,8 @@ lenses, 0.05(1+z) sources) [src: arXiv:2212.04291, Sect. 3.1]:
 ### Which non-Limber code
 <!-- key: which-non-limber-code -->
 
+From arXiv:2212.04291, Sect. 5.1 (run times) and the sections named in the Source column:
+
 | Method | Time, LSST Y10 3×2pt, 64 cores | Strength | Weakness | Source |
 |---|---|---|---|---|
 | FKEM | 0.437 s | fastest at the target accuracy and across bin numbers | needs a separable linear spectrum: scale-dependent growth or PNG need extra work; parallelises poorly above a fraction of a node; fiducial precision settings failed for narrow bins | arXiv:2212.04291, Sects. 5.1, 5.2.3, 6 |
@@ -191,7 +193,7 @@ lenses, 0.05(1+z) sources) [src: arXiv:2212.04291, Sect. 3.1]:
 | Levin | 4.53 s | no factorisation needed | accuracy degrades "dramatically" at half bin width | same |
 | CCL Limber | 0.0445 s | — | fails the accuracy target | same |
 
-Target accuracy: Δχ² ≈ 0.2 for ℓ < 200, from an original Δχ² ≤ 1 over
+Target accuracy (arXiv:2212.04291): Δχ² ≈ 0.2 for ℓ < 200, from an original Δχ² ≤ 1 over
 2 ≤ ℓ ≤ 2000 chosen because Δχ² = 1 "could in principle correspond to an
 erroneous 1σ detection" [src: Sect. 3.3]. Run times exclude
 cosmology-independent precomputation [src: Sect. 5.1].
@@ -203,7 +205,7 @@ cosmology-independent precomputation [src: Sect. 5.1].
   above ℓ = 100, most to < 0.1%; ExtL2Sph is 15 times faster than the full
   projection (first 18 ℓ) and an order of magnitude below Euclid-like
   cosmic variance at all ℓ [src: arXiv:1702.05301, Sect. 4.1].
-- Correlation function: the flat Hankel transform is accurate to "better than
+- Correlation function (arXiv:1702.05301): the flat Hankel transform is accurate to "better than
   5 (0.2) percent for ξ+ (ξ−)"; ExtL2Sph with the spherical transform is
   "well below one (0.03) percent" for θ < 300 arcmin [src: Sect. 4.2]. The
   abstract summarises the Hankel error as "below two percent"; the body
@@ -215,7 +217,7 @@ cosmology-independent precomputation [src: Sect. 5.1].
 
 Zhang et al. 2026 (arXiv:2606.23781) take non-Limber clustering with RSD and
 EuclidEmulator2 (HMCode beyond k = 10 h/Mpc) as baseline [src: Sect. 2.2.3]
-and switch one approximation at a time (**forecast**) [src: Table 4]:
+and switch one approximation at a time (**forecast**) (arXiv:2606.23781) [src: Table 4]:
 
 | Scenario | Δχ², DES-Y3 | Δχ², Rubin harmonic | Bias in (Ω_m, S8), Roman real / harmonic | Rubin real / harmonic |
 |---|---|---|---|---|
@@ -224,7 +226,7 @@ and switch one approximation at a time (**forecast**) [src: Table 4]:
 | HMCode | 0.93 | 6.03 | 0.61σ / 0.56σ | 0.98σ / 1.24σ |
 | all three | 12.29 | 79.44 | 0.96σ / 1.12σ | 2.76σ / 3.12σ |
 
-The Limber and no-RSD effects are similar because Limber "strongly
+The Limber and no-RSD effects (arXiv:2606.23781) are similar because Limber "strongly
 suppresses" the RSD contribution, so RSD is the dominant one; RSD barely
 affects γ_t, whose k_∥ ≈ 0 under Limber [src: Sect. 5.3]. Limber errors sit
 on large scales that scale cuts keep, hence a larger bias in harmonic space
@@ -265,7 +267,7 @@ Sect. 8.1.2]. Observed spectra: C^gg + 2C^gμ + C^μμ and C^κg + C^κμ [src].
   papers although their analyses used it [src: Sect. 4.1, footnote 4]: read
   the code, not the printed equation.
 - **Convergence for shear.** C^κ is not C^γ at low ℓ (Eq. 24); a code that
-  uses one for the other errs by 10% at ℓ = 4.
+  uses one for the other errs by 10% at ℓ = 4 (arXiv:1702.05301, Eq. 24).
 - **Second-order Limber over a divergent range.** Makes results worse
   (arXiv:2212.04291, Sect. 2.2.1); in the flat hybrid case it worsens an
   overestimate (arXiv:1702.05301, Sect. 4.1).
@@ -317,6 +319,6 @@ Sect. 8.1.2]. Observed spectra: C^gg + 2C^gμ + C^μμ and C^κg + C^κμ [src].
   statements of L2 are available; their exact replacement of the Hankel step
   was not read.
 - Accuracy of Limber for CMB lensing × narrow spectroscopic bins: not found;
-  the < 0.1% statement is for unWISE's broad samples.
+  the < 0.1% statement is for unWISE's broad samples (arXiv:2309.05659, Sect. 8.1.2 footnote).
 - Angpow (CCL's beyond-Limber option): named in arXiv:1812.05995, Sect.
   III.3.2, not read.

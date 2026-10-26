@@ -21,23 +21,23 @@ and real data.
 
 | Test | Outcome | Reference |
 |---|---|---|
-| Lyα P1D NPE on CAMELS, train on one sub-grid model, test on the other | ~10% positive bias on σ8, worse precision; multi-domain training removes the bias | Sinigaglia et al. 2026, arXiv:2603.13011 [src] |
+| Lyα P1D NPE on CAMELS, train on one sub-grid model, test on the other | ~10% positive bias on σ8, worse precision; multi-domain training removes the bias | Sinigaglia et al. 2026, arXiv:2603.13011 [src: abstract] |
 | GNN trained on IllustrisTNG galaxy catalogues, frozen, applied to CAMELS-CROCODILE | fails to recover Ω_m and σ8, overconfident, mainly for simulations with more galaxies than any training one; within the training range Ω_m error 1.5 times the in-distribution value. The network uses galaxy positions and line-of-sight velocities (linking length 2.15 h⁻¹Mpc), the input that earlier tests had found robust | arXiv:2609.23982 [src; inputs from Sect. IV.1] |
-| Ω_m from the properties of one galaxy | ~10% precision within one model; "not robust to changes in subgrid physics" | Villaescusa-Navarro et al. 2022, arXiv:2201.02202 [src] |
+| Ω_m from the properties of one galaxy | ~10% precision within one model; "not robust to changes in subgrid physics" | Villaescusa-Navarro et al. 2022, arXiv:2201.02202 [src: abstract] |
 | Same, tested on IllustrisTNG, SIMBA, Astrid and Magneticum | good on most galaxies, fails "dramatically" on a small fraction; removing outliers restores accuracy | Echeverri et al. 2023, arXiv:2304.06084 [src] |
 | GNN on halo catalogues from Gadget, tested on Abacus, CUBEP³M, Enzo, PKDGrav3, Ramses | Ω_m and σ8 recovered (~6% mean relative error); adding concentration or V_max breaks robustness, probably because codes are not converged on those scales | Shao et al. 2023, arXiv:2209.06843 [src] |
-| GNN on galaxy positions and radial velocities, tested on five hydrodynamic codes | Ω_m at ~12%, robust across IllustrisTNG, SIMBA, Astrid, Magneticum, SWIFT-EAGLE and subhalo finders | de Santi et al. 2023, arXiv:2302.14101 [src] |
-| Same with masks, distance errors and selections | precision and accuracy degrade; the model still works on over 90% of catalogues | de Santi et al. 2023, arXiv:2310.15234 [src] |
+| GNN on galaxy positions and radial velocities, tested on five hydrodynamic codes | Ω_m at ~12%, robust across IllustrisTNG, SIMBA, Astrid, Magneticum, SWIFT-EAGLE and subhalo finders | de Santi et al. 2023, arXiv:2302.14101 [src: abstract] |
+| Same with masks, distance errors and selections | precision and accuracy degrade; the model still works on over 90% of catalogues | de Santi et al. 2023, arXiv:2310.15234 [src: abstract] |
 | CNN on 2D total-mass maps, train TNG test SIMBA and vice versa | correct Ω_m and σ8 in all four combinations | arXiv:2109.10360 [src: Fig. 2] |
-| SimBIG WST, 2000 test simulations with a changed forward model | robust for all parameters except σ8 at k_max = 0.5 h Mpc⁻¹; the data posteriors vary with the flow architecture | Régaldo-Saint Blancard et al. 2024, arXiv:2310.15250 [src] |
+| SimBIG WST, 2000 test simulations with a changed forward model | robust for all parameters except σ8 at k_max = 0.5 h Mpc⁻¹; the data posteriors vary with the flow architecture | Régaldo-Saint Blancard et al. 2024, arXiv:2310.15250 [src: abstract] |
 | Same, test sets read in the body | TEST0: 500 mocks, SimBIG forward model on 100 Quijote runs; TEST1: 500 mocks, friends-of-friends finder and a 6-parameter HOD instead of 9; TEST2: 1000 mocks on AbacusSummit with CompaSO at a slightly different cosmology. The distribution of (μ − θ)/σ agrees across sets for Ω_m, Ω_b, h, n_s; σ8 is inferred low on TEST2 and high on TEST1; discarding WST coefficients with j < 2 (k ≳ 0.3 h Mpc⁻¹) restores agreement without changing the other parameters. SBC shows underconfidence on Ω_m and σ8, and the ensemble removes a slight overconfidence of single models on Ω_b, h, n_s | arXiv:2310.15250 [src: Sect. III.1, Fig. 4, 6, 7] |
 | Halo GNN, mean relative error by input (trained on Gadget) | Ω_m: 10.1% (positions), 17.4% (V only), 5.6% (positions + V), robust across N-body and hydrodynamic codes; σ8: 11.8% and 5.9% (with mass), robust only for haloes of ≳ 300 particles; Ω_m and σ8 with V, c, V_max: 2.7% and 2.2%, not robust. Not robust to redshift (trained at z = 0) or to a SUBFIND instead of Rockstar finder; robust to higher resolution. Training on many number densities per simulation was "a key ingredient" | arXiv:2209.06843 [src: Sect. IV.1.2, IV.3, Table 2] |
 | Galaxy GNN trained on Astrid, positions + v_z, tested on IllustrisTNG, SIMBA, Magneticum, SWIFT-EAGLE, SB28 | in-suite RMSE 0.043, relative error 11.8%, χ² 1.65; across suites RMSE 0.015–0.047, relative error 4.0–13.1%, χ² 0.25–2.38; worst on SB28. Adding stellar mass: in-suite error 9.6%, across suites 10.7–20.7% and χ² up to 14.2. Models trained on IllustrisTNG or SIMBA extrapolated worse than the Astrid one | arXiv:2302.14101 [src: Sect. IV.1, IV.2] |
 | Same CROCODILE test, numbers read in the body (201 L50 Sobol runs, SB35-trained GNN of Genel et al., frozen) | Ω_m RMSE 0.035 in distribution → 0.132 ± 0.019 (mean relative error 24%), σ8 0.093 → 0.124 ± 0.007; R² = −0.43 ± 0.43 and −0.21 ± 0.15; mean χ² 30 ± 8 and 25 ± 6 (truncated; 56 and 265 untruncated). 46 runs have more galaxies than any of the 1024 training graphs; without them the Ω_m RMSE is 0.053 but σ8 stays overconfident (χ² 22 ± 6). At fixed cosmology, raising the galaxy count from 5.1 × 10³ to 9.2 × 10³ moves σ8 from 0.74 to 0.89, about 2.5 predicted σ. The 27 fiducial CV runs are recovered and calibrated (χ² 1.1 and 1.4) | arXiv:2609.23982 [src: Sect. IV.2, Fig. 10] |
 | Lyα P1D NPE, train IllustrisTNG, test SIMBA, k_max = 3 h Mpc⁻¹ | needs the mean flux rescaled first (the models differ by ~5–15% at z ≳ 3; without it the parameters are "severely biased"); then Ω_m roughly unbiased with larger scatter, σ8 biased high by ~10%, posteriors overconfident in coverage and TARP. Multi-domain training on 475 + 475 runs, tested on 25 + 25, recovers both parameters | arXiv:2603.13011 [src: Sect. IV.2, IV.3] |
 | Field-level CNN on matter slices, trained on 1000 Gadget runs, tested on 50 each of Abacus, CUBEP³M, PKDGrav3, Ramses and CAMELS IllustrisTNG | non-AMR codes recovered (R² ~ 1; slightly larger σ8 error on Abacus); Ramses (AMR) above 20% error on Ω_m and σ8 (Ω_m high, σ8 low); tests at twice the resolution biased "in all cases"; the N-body-trained network is biased in σ8 on IllustrisTNG, no worse than on Ramses. A PQMass out-of-distribution test flags Abacus, CUBEP³M and PKDGrav3 although their inference is almost unbiased; smoothing brings the codes into agreement | Bayer et al. 2025, arXiv:2505.13620 [src: Table 1, Sect. III.3; abstract] |
-| Cluster masses from X-ray profiles, trained on Magneticum, tested on IllustrisTNG | the network gains 17% on the training data and loses 40% on the test set; scatter augmentation does not help; a domain-adaptation network (DRRN) aligns the latent spaces but stays worse than the Y_X scaling relation | Ntampaka et al. 2025, arXiv:2510.09748 [src] |
-| Halo masses from synthetic HSC-like galaxy images, IllustrisTNG, EAGLE and SIMBA, trained on one and tested on another | without domain adaptation biased and overconfident; MMD adaptation lowers the normalised residual β by 31% on average, up to 57% | Garuda et al. 2026, arXiv:2603.12380 [src] |
+| Cluster masses from X-ray profiles, trained on Magneticum, tested on IllustrisTNG | the network gains 17% on the training data and loses 40% on the test set; scatter augmentation does not help; a domain-adaptation network (DRRN) aligns the latent spaces but stays worse than the Y_X scaling relation | Ntampaka et al. 2025, arXiv:2510.09748 [src: abstract] |
+| Halo masses from synthetic HSC-like galaxy images, IllustrisTNG, EAGLE and SIMBA, trained on one and tested on another | without domain adaptation biased and overconfident; MMD adaptation lowers the normalised residual β by 31% on average, up to 57% | Garuda et al. 2026, arXiv:2603.12380 [src: abstract] |
 | SIDM cross-section from cluster images, BAHAMAS-SIDM and DARKSKIES | a latent-space clustering flags mock observations unlike either training suite, so their parameter estimates can be discarded | Tregidga et al. 2025, arXiv:2511.09660 [src] |
 | SimBIG WST on BOSS, after discarding the coefficients inconsistent across TEST0/1/2 (TEST2 on AbacusSummit with CompaSO) and mapping the observation back into the training support | σ8 histograms consistent across the three test sets; Ω_m = 0.32 ± 0.02, σ8 = 0.80 ± 0.02, 1.4 and 3.1 times tighter than a perturbation-theory P(k) analysis | Pierre et al. 2025, arXiv:2507.03086 [src: Sect. II.2.3, II.2.4, Fig. 2; abstract] |
 
@@ -45,7 +45,7 @@ and real data.
 arXiv:2603.13011 [src]); unsupervised domain adaptation by maximum mean
 discrepancy, up to 28% better relative error and almost an order of
 magnitude better χ² across CAMELS suites (Roncoli et al. 2023,
-arXiv:2311.01588 [src]); restrict inputs to quantities on which codes are
+arXiv:2311.01588 [src: abstract]); restrict inputs to quantities on which codes are
 converged (arXiv:2209.06843 [src]); remove the scales that fail the
 cross-simulator test (k ≳ 0.3 h Mpc⁻¹ for SimBIG WST, arXiv:2310.15250
 [src]); self-supervised pre-training on a cheap simulator then a frozen
@@ -136,7 +136,9 @@ setting a Gaussian likelihood with a Ledoit–Wolf-regularised covariance
 from 27 cosmic-variance runs and an RBF-interpolated P1D was "severely
 overconfident"; calibration needed the covariance scaled by λ = 2.8, and
 the calibrated MCMC was ~12% and ~40% less precise than SBI on Ω_m and σ8
-(arXiv:2603.13011) [src: Sect. IV.4]. The comparison measures the cost of
+(arXiv:2603.13011) [src: Sect. II.6 for the 27 runs, Sect. IV.4].
+
+The comparison measures the cost of
 a poorly estimated covariance, not an advantage of SBI on the same
 information [der].
 
@@ -172,7 +174,7 @@ Error budgets against held-out simulations or codes, read in the bodies:
 | Emulator | Held-out test | Error stated |
 |---|---|---|
 | PyBird-Emu (one-loop EFTofLSS P_ℓ) | 5000 linear spectra drawn from the COMET parameter space, errors in units of a Stage-IV σ (V_eff = 50 Gpc³, n̄ = 5 × 10⁻⁴ h³ Mpc⁻³) | 95% of residuals below 0.1σ for all multipoles to k_max = 0.2 h Mpc⁻¹; about 0.5σ to 0.3 h Mpc⁻¹ (arXiv:2507.20990) [src: Sect. 2.2, App. B] |
-| Same, end to end | PT-challenge mocks, 566 (h⁻¹Gpc)³ | posteriors of PyBird-Emu and PyBird differ by < 0.06% of the parameter values, ~0.3% for σ8 in the wedge fit to 0.3 h Mpc⁻¹ [src: Sect. 4.1, Fig. 4] |
+| Same, end to end | PT-challenge mocks, 566 (h⁻¹Gpc)³ | posteriors of PyBird-Emu and PyBird differ by < 0.06% of the parameter values, ~0.3% for σ8 in the wedge fit to 0.3 h Mpc⁻¹ (arXiv:2507.20990) [src: Sect. 4.1, Fig. 4] |
 | GokuNEmu (T2N-MusE) | leave-one-out on 21 high-fidelity (1000 h⁻¹Mpc, 3000³) and 564 low-fidelity (250 h⁻¹Mpc, 750³) Goku-W runs, 10 parameters, 6 redshifts × 64 k | mean error more than five times and worst case about eight times lower than the Gaussian process, whose worst case the authors compute at 8.81%; the 2-step architecture alone gains about three (arXiv:2507.07184) [src: Sect. II.1, IV, Table 1] |
 | DarkEmulator2 | 30 independent test cosmologies; mean absolute percentage error per cosmology, averaged over the test set | adding the linear P(k) as input lowers the mean error at z = 0 by about 5.8% (relative) and removes BAO-scale oscillations; errors larger at the edge of the prior volume; unphysical high-k features when the resolution input exceeds N_p^{1/3} = 3100; usable to z ≃ 4 only qualitatively (arXiv:2605.28596) [src: Eq. 13–14, Sect. 4.1, App. D] |
 
@@ -314,7 +316,7 @@ significantly across different normalizing flow architectures"
 (arXiv:2310.15250) [src]; one CNN can be less informative than the power
 spectrum while an ensemble is not (arXiv:2610.19891) [src]. The loss
 function alone moves the attainable figure of merit from 81% to 100%
-(arXiv:2407.10877) [src].
+(arXiv:2407.10877) [src: abstract].
 
 **Practice that the literature now treats as standard.** Release code,
 weights and training data: CosmoPower, CONNECT, Avocado, SCONE, ORACLE,

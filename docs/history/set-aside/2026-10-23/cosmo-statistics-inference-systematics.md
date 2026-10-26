@@ -1,0 +1,11 @@
+# cosmo-statistics-inference — references/systematics.md, Sects. 1, 8 and 15 (agent conversions)
+
+Set aside on 2026-10-24 (numbers run) before the agent-computed values were removed. Verbatim from the working tree (base commit 2b5e381). The percentages of Sect. 1 come from the agent-computed table of results.md Sect. 1.1 (set aside in cosmo-statistics-inference-results.md) or are square roots taken by an agent; the Sect. 8 and Sect. 15 examples were evaluated by an agent.
+
+**Size.** See `results.md` §1.1: for 1000 mocks, the error bar of a posterior built on the raw sample covariance must be widened by 10% (100 data points), 24% (200) and 65% (400); of that, the irreducible scatter of the best fit against a perfectly known covariance is 5%, 11% and 29% `[der]`. Percival et al. 2014 quote about 20% for BOSS with 600 mocks [src].
+
+Worked examples in the papers, two readings kept apart. Dodelson & Schneider 2013 (arXiv:1304.2593) give the "fractional increase in variance" of each parameter from the best-fit scatter term: BOSS, 600 mocks, 41 bins, 7%; DLS, 1000, 60, 6%; CFHTLenS, 184, 24, 13% [src: Table 1, Sect. 3.3]. These are variance factors; on the error bar they are about 3.4%, 2.9% and 6.3% `[der: square root]`. Neither includes the Hartlap bias of the precision matrix, which those analyses corrected separately. Hartlap et al. 2007 show that ignoring that bias makes confidence regions too small without moving the maximum-likelihood point (arXiv:astro-ph/0608064) [src: Sect. 3.1]. A statement "N mocks inflate the errors by x%" must say whether x is on the variance or the error bar, and whether the Hartlap term is included.
+
+**Size.** For two extra parameters, 3σ needs `Δχ² = 11.83`, not 9; quoting `sqrt(12.5) = 3.5σ` for DESI + CMB instead of 3.1σ would be an error of 0.4σ `[der]`.
+
+**Size.** For `N` independent looks, `p_global ≈ N p_local`: a 3σ local excess (p = 2.7e-3) among 20 independent looks has a global p of about 5%, that is 1.9σ `[der]`. Bayer & Seljak 2020 (arXiv:2007.13821) show that the trial factor is the prior-to-posterior volume ratio of the searched parameter [src], so a narrow feature searched over a wide range pays a large factor. In practice the documented cosmological cases are spreads between equally defensible choices (`results.md` §11).

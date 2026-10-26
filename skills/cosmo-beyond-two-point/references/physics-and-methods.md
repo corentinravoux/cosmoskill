@@ -404,7 +404,7 @@ Founding papers (abstracts read):
 | ⟨M_ap³⟩ from the three-point function | Jarvis, Bernstein & Jain 2003, arXiv:astro-ph/0307393 | Skewness and kurtosis of the aperture mass insensitive to masks and variable depth, with a tree code for the three-point function; 2σ skewness in the CTIO survey |
 | Bispectrum tomography | Takada & Jain 2003, arXiv:astro-ph/0310125 | **Forecast**, 50 < ℓ < 3000, three redshift bins: bispectrum constraints comparable to the power spectrum, a factor three better combined [src: abstract] |
 | First 2+3-point data analysis | Fu et al. 2014, arXiv:1404.5469 | CFHTLenS: third moment at 2σ; σ8(Ω_m/0.27)^α improved by 10% over second order; tested for source–lens clustering, IA and baryons [src: abstract] |
-| Modern ⟨M_ap³⟩ pipeline | Heydenreich et al. 2022, arXiv:2208.11686 | Γ^(i) and ⟨M_ap³⟩ from the BiHalofit bispectrum, validated on N-body; on KiDS-1000-like mocks the joint analysis almost doubles the power on S8 and multiplies the Ω_m–σ8 figure of merit by 5.9 [src] (mock, not data) |
+| Modern ⟨M_ap³⟩ pipeline | Heydenreich et al. 2022, arXiv:2208.11686 | Γ^(i) and ⟨M_ap³⟩ from the BiHalofit bispectrum, validated on N-body; on KiDS-1000-like mocks the joint analysis almost doubles the power on S8 and multiplies the Ω_m–σ8 figure of merit by 5.9 [src: abstract] (mock, not data) |
 | Convergence PDF from theory | Barthelemy et al. 2019, arXiv:1909.02615; Boyle et al. 2020, arXiv:2012.07771 | Large-deviation prediction of the convergence PDF, within 5% in the tails at z_s = 1 and 10′ (arXiv:1909.02615, abstract), percent level with nulling; validated against simulations with Σm_ν and w; **forecast** for Euclid-like area better than the 2PCF on M_ν and w0 with a Planck prior |
 | Convergence PDF from simulations | Liu & Madhavacheril 2018, arXiv:1809.10747 | **Forecast**, LSST-like, MassiveNuS: the tomographic PDF alone outperforms the power spectrum on M_ν; combining them tightens it by a further 35% [src: abstract] |
 | First data applications of peaks | Liu et al. 2014, arXiv:1412.0757; Kacprzak et al. 2016, arXiv:1603.05040 | CFHTLenS, 154 deg², emulator on 91 cosmologies accurate to ≤ 5%: peaks + power spectrum halve the area of the (Ω_m, σ8) contour, σ8(Ω_m/0.27)^0.63 = 0.85 ± 0.03 [src: abstract of arXiv:1412.0757]. DES SV, 139 deg², 158 models: σ8(Ω_m/0.3)^0.6 = 0.77 ± 0.07, peaks with S/N > 4 excluded because of IA, blending and cluster-member contamination [src: abstract of arXiv:1603.05040] |
@@ -572,8 +572,8 @@ Founding papers (abstracts read):
 SimBIG forward-models the BOSS CMASS sample from Quijote N-body simulations
 and a flexible halo occupation model with survey geometry and fibre collisions
 (arXiv:2211.00660). The published analyses use a CMASS subsample that spans
-about 10% of the full BOSS volume [src] (Hahn et al.
-2024, arXiv:2310.15246), to k_max = 0.5 h Mpc⁻¹. Statistics analysed: power
+about 10% of the full BOSS volume [src: abstract] (Hahn et al.
+2024, arXiv:2310.15246), to k_max = 0.5 h Mpc⁻¹ [src: App. A.1]. Statistics analysed: power
 spectrum multipoles, bispectrum monopole (Hahn et al. 2024, arXiv:2310.15243),
 CNN field-level summary (arXiv:2310.15256), wavelet scattering transform
 (arXiv:2310.15250), marked power spectrum (Massara et al. 2024,

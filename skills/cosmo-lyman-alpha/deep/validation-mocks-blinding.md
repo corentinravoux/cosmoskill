@@ -25,7 +25,7 @@ are in `cosmo-simulations-mocks/deep/fast-mocks.md`.
 
 Notation. δ_G a Gaussian field; δ = ρ/ρ̄ − 1; τ the optical depth;
 F = e^(−τ); F̄ the mean transmission; τ_0, α the FGPA amplitude and exponent,
-α = 2 − 0.7(γ − 1) with γ the slope of the temperature–density relation;
+α = 2 − 0.7(γ − 1) with γ the slope of the temperature–density relation (arXiv:1912.02763, Sect. 2.2.2);
 η_∥ the line-of-sight velocity gradient; b_Lyα, β_Lyα the forest bias and RSD
 parameter; "raw" mocks are transmission skewers, "cooked" (or contaminated)
 mocks add continua, contaminants and noise.
@@ -41,6 +41,8 @@ CoLoRe-2LPT, or AbacusSummit painted with the FGPA), and a survey stage
 
 ### Step 1. Generate the large-scale field and the quasars
 <!-- key: step-1-generate-the-large-scale-field-and-the -->
+
+Sources by column, as in the last row: LyaCoLoRe (eBOSS, DESI DR1): arXiv:1912.02763, Sects. 2.1–2.2; Saclay (eBOSS, DESI DR1–DR2): arXiv:2310.18996, Sects. 2.1–2.3; CoLoRe-2LPT (DESI DR2 full shape): arXiv:2607.27412, Sects. 2.1, 2.3.2, 2.4.
 
 | Item | LyaCoLoRe (eBOSS, DESI DR1) | Saclay (eBOSS, DESI DR1–DR2) | CoLoRe-2LPT (DESI DR2 full shape) |
 |---|---|---|---|
@@ -102,6 +104,8 @@ noise:
 ### Step 4. Tune the free parameters to measured statistics
 <!-- key: step-4-tune-the-free-parameters-to-measured -->
 
+Sources by column, as in the last row: LyaCoLoRe: arXiv:1912.02763, Sect. 3, Eq. 8; Saclay: arXiv:2310.18996, Sects. 2.6, 4.3; CoLoRe-2LPT: arXiv:2607.27412, Sect. 3.2; AbacusSummit: arXiv:2305.08899, Sect. 3.5, Table 1.
+
 | Item | LyaCoLoRe | Saclay | CoLoRe-2LPT | AbacusSummit |
 |---|---|---|---|---|
 | Free parameters | τ_0(z), σ_ε(z), n, k_1 (α = 1.65 fixed; log τ_0 slope fixed to 4.5); velocity factor a_v | a_GP, b_GP, c_GP and P_s(k) at z_t = 1.8, 2.2, 2.6, 3.0, 3.6, interpolated | n, k_1, σ_ε(z), τ_0(z), a_v (α = 1.65 fixed) | τ_0, σ_ε, γ, n, k_1 |
@@ -155,16 +159,15 @@ quickquasars (arXiv:2401.00303) [src: Sects. 2.2, 3.2] and its DR2 use
 (arXiv:2503.14741, Sect. II.2) [src]:
 
 1. Down-sample the mock quasars to the footprint and n(z); assign r-band
-   magnitudes and numbers of exposures from the observed distributions. DR2
-   adds the ~15% of quasars targeted as ELGs, with one exposure each.
+   magnitudes and numbers of exposures from the observed distributions. DR2 adds the ~15% of quasars targeted as ELGs, with one exposure each (arXiv:2503.14741) [src: Sect. II.2].
 2. Continua from SIMQSO by default: broken power law with slopes tuned in the
    forest to the eBOSS DR16 mean continuum and PCA dispersion (m = −1.5 below
    1100 Å, −0.5 from 1100 to 5700 Å, σ_m = 0.7), and Gaussian emission lines
-   adjusted to the DESI EDR+M2 mean continuum. A PCA option exists.
+   adjusted to the DESI EDR+M2 mean continuum. A PCA option exists (arXiv:2401.00303) [src: Sects. 2.2, 3.2].
 3. Instrument: specsim with fibre-aperture losses, sky, throughput (including
    the EDR blue-collimator dip at 4400 Å), dispersion, shot, dark and read
    noise; the pipeline's 10 Å Gaussian smoothing of the variance is emulated
-   because specsim lacks it.
+   because specsim lacks it (arXiv:2401.00303) [src: Sects. 2.2, 3.2].
 4. Run the data pipeline unchanged: DLA and BAL finders, masking, continuum
    fit, distortion matrix (for CoLoRe-2LPT with the DR2 projection,
    arXiv:2607.27412, Sect. 6) [src].
@@ -203,8 +206,7 @@ that contaminants are correlated with the field only through simple biasing
 
 The DR2 BAO bias in α_∥ on mocks traces to redshift errors smearing the
 mean-continuum emission lines during continuum fitting; the mock
-implementation (σ_z = 400 km/s Gaussian on every quasar) is described by the
-DR2 papers as "the most extreme version of this effect" (L2 G1). A mock
+implementation (σ_z = 400 km/s Gaussian on every quasar; arXiv:2503.14741, Sect. II.2) is described by the DR2 BAO paper as "the most extreme version of this effect" (arXiv:2503.14739, Sect. V.1; L2 G1). A mock
 choice thus sets the size of a systematic that the data may not have.
 
 ## Blinding: the catalogue-level AP scheme
@@ -307,6 +309,6 @@ distortion matrices at the percent level without changing parameters; cost
   Sect. 2.1) and the AbacusSummit Method II prescription.
 - The DR1 mock validation paper's own construction details beyond L2
   (arXiv:2404.03004) and the HCD validation appendix of arXiv:2607.27412.
-- Mock-to-data P1D and bias agreement figures of CoLoRe-2LPT (Sect. 4, only
+- Mock-to-data P1D and bias agreement figures of CoLoRe-2LPT (arXiv:2607.27412, Sect. 4, only
   the stated 10% goal read here).
 - The DESI DR2 BAO blinding method (as already open in L2).

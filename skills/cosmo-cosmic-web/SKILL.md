@@ -30,15 +30,19 @@ re-verify against the cited paper before a number enters a manuscript.
 <!-- key: what-an-expert-holds-in-mind -->
 
 - Web fractions belong to finders: across twelve methods on one
-  simulation, filament mass spans ~10–60%, void volume ~40–90%
-  (arXiv:1705.03021, Sect. 5.3).
-- Hessian thresholds are conventions: λ_th = 0.2 (T-web), 0.44 (V-web), 0
-  (Cosmicflows V-web); a constant-volume threshold is
-  proposed (arXiv:1705.03021, arXiv:2606.13538, arXiv:2412.09531).
-- DESI void volume fractions span ~6–16% (DR1 T-web) to ~59% (EDR ASTRA,
-  tuned to GAMA) (arXiv:2604.02463, arXiv:2604.01456).
+  simulation, filament mass spans ~10% (MSWA) to ~60% (DisPerSE); void
+  volume is ~40% (DisPerSE, Spineweb, T-web), ~70% (NEXUS+, ORIGAMI,
+  V-web, MMF-2, CLASSIC) or ~90% (MSWA) (arXiv:1705.03021, Sect. 5.3).
+- Hessian thresholds are conventions: λ_th = 0.2 (T-web) and 0.44 (V-web)
+  in the finder comparison (arXiv:1705.03021, Sects. 4.4–4.5), 0 for the
+  Cosmicflows V-web (arXiv:2606.13538, Sect. 2.1); a constant-volume
+  threshold is proposed (arXiv:2412.09531).
+- DESI void volume fractions depend on the finder: ~6–16% across DR1
+  tracers with the T-web (arXiv:2604.02463, abstract); ~59% for EDR BGS
+  with ASTRA thresholds tuned to GAMA (arXiv:2604.01456, Sect. "The rank
+  parameter r").
 - Connectivity: ~6.1 neighbours per node in 3D Gaussian fields, rising with
-  peak height and halo mass (arXiv:1803.11477); confirmed over three decades
+  peak height and halo mass (arXiv:1803.11477, abstract); confirmed over three decades
   of mass in MDPL2 (arXiv:2607.14785).
 - At fixed stellar mass, galaxies redden toward filaments (arXiv:1710.02676);
   at fixed local density the SDSS filament–field difference vanishes
@@ -46,21 +50,21 @@ re-verify against the cited paper before a number enters a manuscript.
   (arXiv:1801.04878).
 - Halo spin flip: parallel to filaments at low mass, perpendicular at high
   mass; 5 × 10¹¹ h⁻¹M☉ with NEXUS, scaling with filament diameter
-  (arXiv:1805.00033).
+  (arXiv:1805.00033, abstract).
 - SAMI stellar spin transition at log M* = 10.4–10.9
-  (arXiv:1909.12371), tied to bulge mass (arXiv:2208.10767); the first MaNGA
+  (arXiv:1909.12371, abstract), tied to bulge mass (arXiv:2208.10767); the first MaNGA
   study found none (arXiv:1902.09797).
 - Filament X-ray: 9σ total, 5.4σ WHIM after ~40% contamination, eRASS:4,
   7817 SDSS filaments, log T = 6.84 (arXiv:2406.00105, abstract).
-- Filament tSZ: 5.3σ between LRG pairs (arXiv:1709.05024), 4.4σ along
-  30–100 Mpc filaments (arXiv:1911.09706); oriented ACT DR6 multipoles at
-  8–10σ (arXiv:2409.04535).
+- Filament tSZ: 5.3σ between LRG pairs (arXiv:1709.05024, abstract), 4.4σ
+  along 30–100 Mpc filaments (arXiv:1911.09706, abstract); oriented ACT DR6
+  multipoles at 8–10σ (arXiv:2409.04535, abstract).
 - FRBs give Ω_b h₇₀ = 0.051 ± 0.006 and f_IGM = 0.76 (+0.10/−0.11)
   (arXiv:2409.16952, abstract); the phase partition is statistical.
 - O VII "missing baryons" lines (arXiv:1806.08395) re-analysed: one is
   noise, one possibly intrinsic (arXiv:2305.01587, Sect. 4.4).
 - JWST "too many protoclusters" disappears with consistent mass apertures;
-  64% of candidates are likely proto-groups (arXiv:2605.28930).
+  64% of candidates are likely proto-groups (arXiv:2605.28930, abstract).
 
 ## Systematics a referee checks
 <!-- key: systematics-a-referee-checks -->
@@ -120,7 +124,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 4k; methods 7k; results 9k; surveys 4k; systematics 4k; deep/environment 7k; deep/filament-gas 8k; deep/missing-baryons 6k; deep/protoclusters-superclusters 8k; deep/spin-alignments 8k; deep/web-classification 9k.
+Sizes, in thousands of tokens: L1 3k; open 4k; methods 7k; results 9k; surveys 4k; systematics 4k; deep/environment 7k; deep/filament-gas 8k; deep/missing-baryons 7k; deep/protoclusters-superclusters 8k; deep/spin-alignments 8k; deep/web-classification 9k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

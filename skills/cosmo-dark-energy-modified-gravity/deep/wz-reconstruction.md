@@ -12,7 +12,8 @@ dark-energy paper (arXiv:2503.14743).
 Already in L2, not repeated here: the one-line outcome of each DESI
 reconstruction (binned, GP, crossing, Horndeski correlation prior, joint EFT,
 SVD of distances) in `physics-and-methods.md#non-parametric-and-semi-parametric`;
-why CPL forces a crossing and the 3.2% mock rate for a spurious crossing in
+why CPL forces a crossing and the 3.2% mock rate for a spurious crossing
+(arXiv:2506.15091, abstract) in
 `systematics.md#parameterisation-artefacts`; prior dependence of Bayes factors
 in `systematics.md#priors-on-the-dark-energy-parameters-themselves`.
 

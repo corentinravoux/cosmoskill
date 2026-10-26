@@ -140,7 +140,7 @@ the drag mixes Fourier modes (arXiv:1311.2937 Sect. III.2, Fig. 1
    with V_RMS² = ∫(dk/k) Δ_ξ [(θ_b − θ_c)/k]² (Eq. 17), Δ_ξ ≈ 2.4 × 10⁻⁹.
    The authors call it valid at z > 10⁴, reliable for n ≥ −2 (constrained
    at z ≫ 10⁴ by large-scale structure), and "likely conservative" for
-   n ≤ −3, which the CMB constrains at z < 10⁴ [src: Sect. III.2].
+   n ≤ −3, which the CMB constrains at z < 10⁴ [src: arXiv:1311.2937, Sect. III.2].
 2. **Self-consistent, k-dependent** (2018 "main"): split the variance at
    each mode k* into V_flow²(k*) from k < k* (Eq. 4), which enters as a
    bulk flow through a confluent hypergeometric ₁F₁, and V_RMS²(k*) from
@@ -233,7 +233,7 @@ the drag mixes Fourier modes (arXiv:1311.2937 Sect. III.2, Fig. 1
   for n = −4 [src: arXiv:1808.00001 Sect. IV.2].
 - Reproducing the earlier prescription, the 2018 authors obtain limits a
   factor of about 1.8 weaker for n = −4 and 1.4 stronger for n = −2 than
-  the earlier papers with the same likelihoods [src: footnote 8]. An
+  the earlier papers with the same likelihoods [src: arXiv:1808.00001, footnote 8]. An
   n = −4 or −2 limit therefore carries a prescription and code version.
 - For an interacting sub-component the ΛCDM-velocity prescription
   "overestimates the relative bulk velocity and thus overly suppresses
@@ -272,7 +272,7 @@ Sect. 6]. The dark acoustic oscillations of the linear input are
 | Method | Accuracy stated | Cost stated | Source |
 |---|---|---|---|
 | Full hierarchy, 10⁴ bins, l_max = 17 | reference | 𝒪(10⁸) equations for realistic analyses | arXiv:2008.09615 Sect. II, Appendix A [src] |
-| Fluid on sub-Hubble scales (kτ > 25), 300 bins | CMB TT/EE well below 1%; P(k) a few percent, 2–3% at the smallest scales; S8 0.767 against 0.762 (0.65%) | used for the MCMC | same [src] |
+| Fluid on sub-Hubble scales (kτ > 25), 300 bins | CMB TT/EE well below 1%; P(k) a few percent, 2–3% at the smallest scales; S8 0.767 against 0.762 (0.65%) | used for the MCMC | arXiv:2008.09615 Sect. II, Appendix A [src] |
 | Same fluid approximation, checked in 2026 | "percent-level deviations ... particularly on small scales"; does not capture the oscillations from daughter free streaming | — | arXiv:2607.24910 Appendix C [src] |
 | Integral equations (CLASSIER-DDM) | sub-0.1% convergence in P(k) and C_L^φφ after a modest number of iterations | about 1 min per evaluation | arXiv:2607.24910 abstract [src] |
 
@@ -321,7 +321,7 @@ arXiv:2607.15020 Sect. 5]. Matching the massless-neutrino spectrum to a
 | Non-linear cut, decay to radiation | k ≲ 0.4–0.5 h/Mpc | DCDM → DR | arXiv:1606.02073 | Sect. 4.2.1 |
 | EFT ranges | k_max = 0.2 h/Mpc (BOSS fit), k_nl = 0.7 h/Mpc | DCDM | arXiv:2203.07440 | Appendix B |
 
-The 1.7 × 10⁻⁴¹ cm² and 2.3 × 10⁻³³ cm² values are velocity-dependent
+The 1.7 × 10⁻⁴¹ cm² and 2.3 × 10⁻³³ cm² values (arXiv:1808.00001, Table 1) are velocity-dependent
 coefficients with v in units of c; they are not comparable with the
 velocity-independent limits in `results.md`.
 
@@ -404,7 +404,7 @@ velocity-independent limits in `results.md`.
   Sect. 3), an error ten times larger. The paper does not comment on it;
   whether its τ prior used the printed width was not checked.
 - The numerical value of 𝓕_He used by the 2018 and 2026 analyses was
-  not read; the 2014 value is 0.76.
+  not read; the 2014 value is 0.76 (arXiv:1311.2937, Sect. III.2).
 - The dark-radiation hierarchy equations for ℓ ≥ 2 of arXiv:1606.02073
   (after Eq. 21) were not read.
 - The constraints paper that uses CLASSIER-DDM (companion of

@@ -11,7 +11,7 @@ DESI 2024 IV Lyα BAO (arXiv:2404.03001), Sects. 2.5 and 4.3.
 
 Already in L2, not repeated here: the definition of δ and the DESI continuum
 model (`physics-and-methods.md#definition`); the projector η and the pixel
-weights as written in DESI DR1, with γ_α = 2.9 and η_LSS = 7.5
+weights as written in DESI DR1, with γ_α = 2.9 (arXiv:2506.15262, Eq. 16) and η_LSS = 7.5 (arXiv:2306.06312, Sect. 4.1)
 (`physics-and-methods.md#estimators`); the alternative per-object continuum
 methods (PCA, LyCAN, composites, splines) and their accuracies
 (`physics-and-methods.md#alternative-continuum-methods`); the size, mitigation
@@ -48,13 +48,12 @@ units of the expected flux, η(λ) a correction to the pipeline noise (written
 [src: Sect. 3.3]. The iteration, as listed in the EDR catalogue paper [src:
 Sect. 3.3]:
 
-1. Start from C̄ = 1, η = 1, σ²_LSS = 0.1.
+1. Start from C̄ = 1, η = 1, σ²_LSS = 0.1 (arXiv:2306.06312) [src: Sect. 3.3].
 2. Fit (a_q, b_q) for every forest with Eq. 5.
 3. Compute δ_q(λ).
 4. Fit η(λ) and σ²_LSS(λ): bin δ_q in 20 wavelength bins × 100 bins of
    σ̃_pip (2000 cells), take the variance in each cell, fit Eq. 7 at each
-   wavelength; cells with fewer than 100 pixels are discarded; if a fit fails
-   the previous values are kept.
+   wavelength; cells with fewer than 100 pixels are discarded; if a fit fails the previous values are kept (arXiv:2306.06312).
 5. Recompute C̄(λ_RF) as the weighted mean of the expected fluxes at fixed
    λ_RF.
 6. Repeat; five iterations give stable estimates.
@@ -80,10 +79,10 @@ C III calibration region) (arXiv:2404.03001) [src: Sect. 2.5].
   pixel (arXiv:2404.03001) [src: Sect. 2.5].
 - Forests need at least 150 pixels of 0.8 Å, because short forests produce
   the long tail of large |b_q/a_q| where "fitting the real continuum of the
-  quasar is difficult" (arXiv:2306.06312) [src: Sect. 4.3]. 150 × 0.8 Å =
-  120 Å [der], which is the "forests shorter than 120 Å discarded" of the DR2
-  paper quoted in `physics-and-methods.md#definition`: the same cut in
-  different units.
+  quasar is difficult" (arXiv:2306.06312) [src: Sect. 4.3]. The DR2 BAO
+  paper states the cut as a length in Å instead, "forests shorter than 120 Å
+  discarded" (arXiv:2503.14739) [src: Sect. 2.4], quoted in
+  `physics-and-methods.md#definition`.
 
 ### Step 3. Project the measured field
 <!-- key: step-3-project-the-measured-field -->
@@ -261,7 +260,7 @@ Sects. III.2, IV.5]. DESI keeps this logic with one amplitude a_noise
 | Iterations of the continuum fit | 5 | DESI EDR, eBOSS DR16 | arXiv:2306.06312; arXiv:2007.08995 | Sect. 3.3; Sect. II.4 |
 | Iterations, stability | 10, ~10⁻⁴ | BOSS DR12 | arXiv:1702.00176 | Sect. 4.1 |
 | Variance-fit grid | 20 λ × 100 σ̃_pip bins; cells < 100 pixels dropped | DESI EDR | arXiv:2306.06312 | Sect. 3.3 |
-| Minimum forest length | 150 pixels of 0.8 Å (= 120 Å [der]) | DESI | arXiv:2306.06312 | Sect. 4.3 |
+| Minimum forest length | 150 pixels of 0.8 Å | DESI | arXiv:2306.06312 | Sect. 4.3 |
 | Pixels per forest | N ≈ 600 | DESI | arXiv:2506.15262 | Sect. 2 |
 | rms of mixing term ε | ~0.05 | DESI completed survey | arXiv:2506.15262 | Sect. 2 |
 | Same-forest correlation ε δ^t | ~1% | DESI | arXiv:2506.15262 | Sect. 2 |
@@ -280,7 +279,7 @@ Sects. III.2, IV.5]. DESI keeps this logic with one amplitude a_noise
 | Sky-noise excess at r_∥ = 0 | ≈ 20% of ξ at r_⊥ ≈ 50 h⁻¹Mpc | eBOSS DR16 | arXiv:2007.08995 | Sect. IV.5 |
 | Error inflation from mode marginalisation | ×35, ×7, +30% (see above) | optimal P3D, mocks | arXiv:2503.15619 | Sect. 4.1.3 |
 
-The Busca et al. Table 1 values are means of ten mocks with errors equal to
+The Busca et al. (arXiv:2506.15262) Table 1 values are means of ten mocks with errors equal to
 the dispersion divided by √10, fitted over 10 < r < 180 h⁻¹Mpc with b_Q fixed
 to 4.04 for the cross-correlation [src: Sect. 5]. The "true continuum" column
 uses the true δ^t with D set to unity.

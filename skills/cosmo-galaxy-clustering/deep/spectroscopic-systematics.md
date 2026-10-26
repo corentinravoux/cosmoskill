@@ -43,21 +43,23 @@ count to nσ = −√2 erfc⁻¹(2p) (Eq. 27). Stated reasons:
 
 - Monte Carlo, not the central-limit Gaussian with the variance of a sum of
   binomials (Eq. 26): the Gaussian "dramatically overstates" the number of
-  4σ outliers in the tail, even with N ≈ 600 LRG observations per fibre.
+  4σ outliers in the tail, even with N ≈ 600 LRG observations per fibre
+  (arXiv:2405.17208, Sect. 4).
 - Threshold 4σ: fewer than one of the ~4000 usable fibres should exceed it
-  by chance.
+  by chance (arXiv:2405.17208) [src: Sect. 4].
 - Remove rather than up-weight: the success rate of these fibres "cannot
   be modelled well".
 
 Outcome: 55 fibres flagged across tracers plus 5 neighbours removed by
 hand (fibres 2675–2691 in petal 5), 60 of 4326 fibres with valid spectra,
-1.2% of the redshifts [src: Sects. 4, 7]. A time-variable saturated
+1.2% of the redshifts (arXiv:2405.17208) [src: Sects. 4, 7]. A time-variable saturated
 feature in the 2D spectra was later identified as the cause of the petal-5
 problem [src: Sect. 4, footnote 12].
 
 Per-fibre n(z) inspection also found five petal-2 fibres (1261, 1269,
 1295, 1296, 1307) with a spurious ELG spike at z = 1.5 since 1 October
-2021, equivalent to about 0.1% in catastrophic rate [src: Sect. 4].
+2021, equivalent to about 0.1% in catastrophic rate (arXiv:2405.17208)
+[src: Sect. 4].
 
 ### Step 2. Search the weighted sample for residual trends
 <!-- key: step-2-search-the-weighted-sample-for-residual -->
@@ -93,15 +95,16 @@ degenerate; if χ²_sys ≪ 1 no fit is needed; if χ²_sys ≳ 1, fit BAO and
 full shape with and without the weight to see how much projects onto
 cosmological rather than nuisance parameters [src: same]. Measurement:
 P_0, P_2, P_4 from pypower, 0 < k < 0.4 h Mpc⁻¹, Δk = 0.005, 6 h⁻¹ Mpc
-cells, FKP weights with completeness-dependent n̄ [src: same, Eqs. 10–14].
+cells, FKP weights with completeness-dependent n̄ (arXiv:2405.17208)
+[src: Sect. 2.4, Eqs. 10–14].
 
-Fits behind the decision [src: Sect. 6.1]: blinded data; BAO on
+Fits behind the decision (arXiv:2405.17208) [src: Sect. 6.1]: blinded data; BAO on
 pre-reconstruction P(k) with default settings; full shape with
 velocileptors LPT, σ8-scaled ("physically motivated") bias priors and
 "maximum freedom" bias, ℓ = 0, 2, no θ-cut, ω_b prior 0.02237 ± 0.00037,
 k_min = 0.02 h Mpc⁻¹.
 
-Results [src: Sects. 6, 6.1, Table 3]:
+Results from arXiv:2405.17208 [src: Sects. 6, 6.1, Table 3]:
 
 | Extra weight or cut | Tracer | χ²_sys | Largest parameter shift |
 |---|---|---|---|
@@ -115,7 +118,7 @@ Results [src: Sects. 6, 6.1, Table 3]:
 
 Every other parameter shift is below 10% of its error; BAO α and
 (h, Ω_m, log A_s) all move by at most 30% (table caption) or under 15%
-(conclusions) of the error [src: Sects. 6.1, 7]. Decision: none of the
+(conclusions) of the error (arXiv:2405.17208) [src: Sects. 6.1, 7]. Decision: none of the
 extra weights is used; only w_zfail is in the DR1 LSS catalogues [src:
 Sect. 6.1]. Stated caveat: the trends peak at k < 0.03 h Mpc⁻¹, so
 scale-dependent-bias f_NL, higher-order statistics or small-scale
@@ -252,11 +255,12 @@ and α to 1% and set consensus systematics σ(fσ8) = 0.011,
   5 and a petal-6 amplifier instability [src: arXiv:2405.17208, Sects. 4,
   7]. Test: success rate against date, per petal.
 - **Large-scale leakage.** Residual exposure, speed and focal-plane trends
-  act mostly at k < 0.03 h Mpc⁻¹ [src: Sect. 7]. Test: repeat the χ²_sys
+  act mostly at k < 0.03 h Mpc⁻¹ (arXiv:2405.17208) [src: Sect. 7]. Test: repeat the χ²_sys
   analysis with the k range of the observable at hand (f_NL, low-k
   full shape).
 - **Hemisphere-specific residual.** The QSO exposure-weight effect is in
-  NGC (χ²_sys 2.1) not SGC (0.1) [src: Sect. 6]. Test: per-cap χ²_sys.
+  NGC (χ²_sys 2.1) not SGC (0.1) (arXiv:2405.17208) [src: Sect. 6]. Test:
+  per-cap χ²_sys.
 - **Contamination above design.** Euclid Q1 suggests contamination
   "significantly higher" than the 20% assumed, so the DR1 interloper
   mocks may need to be redone [src: arXiv:2505.04688, Sect. 8].

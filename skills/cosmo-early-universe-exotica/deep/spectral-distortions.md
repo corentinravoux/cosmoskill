@@ -33,7 +33,8 @@ photon production then thermalise it [src: Sect. 4.5]. At leading order
 (Eq. 28) [src]:
 
 - y ≈ ¼ ∫₀^{z_μy} d(Q/ρ_γ)/dz′ dz′,
-- μ ≈ 1.401 ∫_{z_μy}^∞ d(Q/ρ_γ)/dz′ J_μ(z′) dz′,
+- μ ≈ 1.401 ∫_{z_μy}^∞ d(Q/ρ_γ)/dz′ J_μ(z′) dz′ [src: arXiv:2502.05188,
+  Sect. 4.5],
 - ΔT/T ≈ ¼ ∫_{z_μy}^∞ d(Q/ρ_γ)/dz′ [1 − J_μ(z′)] dz′,
 
 with z_μy = 5 × 10⁴ the μ–y transition and the distortion visibility
@@ -62,8 +63,10 @@ The FIRAS paper uses ΔU/U = 0.71 μ (μ era) and ΔU/U = 4y (after it, before
 decoupling) (Fixsen et al. 1996, arXiv:astro-ph/9605054, Sect. 7) [src];
 the 2025 review uses Δρ_γ/ρ_γ = μ/1.401 and 4y, which with the FIRAS
 limits gives |Δρ_γ/ρ_γ| ≲ 6 × 10⁻⁵ (95%) for release at z ≲ 2 × 10⁶
-[src: arXiv:2502.05188, Sect. 4.5 and footnote 15]. The 0.71 and 1/1.401
-are the same coefficient [der: 1/1.401 = 0.714].
+[src: arXiv:2502.05188, Sect. 4.5 and footnote 15].
+
+The FIRAS μ-era coefficient and the review's inverse coefficient are the
+same conversion written two ways [der].
 
 For a decaying particle of lifetime corresponding to z_X, the visibility-
 weighted release is Eq. 39–41 of arXiv:1109.6552: an efficiency integral
@@ -105,7 +108,7 @@ latitude cut is varied to test the Galactic model: changes larger than the
 statistical error flag an inadequate model [src: same].
 
 **Results.** With p = 0, the weighted rms residual is 50 ppm of the peak
-and χ²/dof = 46/40 [src: Sect. 6.1]. μ = (−1 ± 4) × 10⁻⁵ gives |μ| <
+and χ²/dof = 46/40 [src: arXiv:astro-ph/9605054, Sect. 6.1]. μ = (−1 ± 4) × 10⁻⁵ gives |μ| <
 9 × 10⁻⁵ (95%); y = (−1 ± 6) × 10⁻⁶ with an added systematic of 4 × 10⁻⁶
 for Galactic-cut and model dependence gives |y| < 15 × 10⁻⁶ (95%) [src:
 Sects. 6.2–6.3]. y is more strongly coupled to the Galactic residual than μ
@@ -124,7 +127,7 @@ sky spectra pixel by pixel.
   correlated at over 95% according to Fixsen et al.; the non-linear fit
   reduces that degeneracy [src: Sect. III.1, Fig. 3]. y has the shape of
   Eq. 4, with a zero crossing at ≈ 218 GHz against ≈ 125 GHz for μ [src:
-  same].
+  arXiv:2206.02762, Sect. III.1].
 - **Foregrounds** [src: Sect. III.2]: thermal dust as a modified blackbody
   at 353 GHz with T_d = 19.6 K and β_d = 1.6 (Eq. 5); synchrotron power law
   β_s = −3.1 at 23 GHz (Eq. 6); free-free from the Planck Commander
@@ -135,22 +138,25 @@ sky spectra pixel by pixel.
   frequencies above 600 GHz are dropped because the CIB grows there, and
   the free dust index is argued to absorb part of the CIB (through the
   T_d–β_d correlation) and of the CO lines (degenerate with β_d)
-  [src: same].
+  [src: arXiv:2206.02762, Sect. III.2].
 - **Covariance.** Six FIRAS error terms — detector noise (C), bolometer gain
   (JCJ), emissivity gain (PEP), internal-calibrator temperature (PUP,
   U = 180 μK), absolute temperature (PTP, T = 2 mK) and destriper errors
   (β, including map offsets) — assembled in Eqs. 10–12, plus a 0.04² term;
   pixels are treated as uncorrelated, keeping the full frequency–frequency
-  structure [src: Sects. III.3–III.4].
+  structure [src: arXiv:2206.02762, Sects. III.3–III.4].
 - **Inference.** −2 ln L = Δᵀ C⁻¹ Δ per pixel (Eq. 13), emcee with 100
   walkers × 1000 steps, flat priors except β_d ∈ [0, 3]; output a μ map at
-  HEALPix N_side = 16 with per-pixel errors [src: Sect. III.4].
+  HEALPix N_side = 16 with per-pixel errors [src: arXiv:2206.02762, Sect.
+  III.4].
 - **Monopole.** Inverse-covariance-weighted average of the map over the
   mask; the improved foreground model allows 97% of the sky (FDS mask)
-  against 90% (|b| > 5°) in Fixsen et al. [src: Sect. IV.1]. Fiducial mask:
-  |⟨μ⟩| ≲ 47 × 10⁻⁶ (95%), ⟨μ⟩ = (−18.2 ± 14.3) × 10⁻⁶ [src: Table 1].
-  With the FIRAS foreground model and a similar sky fraction they recover
-  ⟨μ⟩ ≲ 90 × 10⁻⁶, consistent with 1996 [src: Sect. IV.1].
+  against 90% (|b| > 5°) in Fixsen et al. [src: arXiv:2206.02762, Sect.
+  IV.1, footnote 7]. Fiducial mask: |⟨μ⟩| ≲ 47 × 10⁻⁶ (95%),
+  ⟨μ⟩ = (−18.2 ± 14.3) × 10⁻⁶ [src: arXiv:2206.02762, Table 1]. With the
+  FIRAS foreground model and a similar sky fraction they recover
+  ⟨μ⟩ ≲ 90 × 10⁻⁶, consistent with 1996 [src: arXiv:2206.02762, Sect.
+  IV.1].
 
 ### Step 5. A foreground-marginalised forecast
 <!-- key: step-5-a-foreground-marginalised-forecast -->
@@ -159,26 +165,27 @@ Abitbol et al. 2017 (arXiv:1705.01534) set the template used for
 PIXIE-class forecasts [src: Sects. 4–5]:
 
 - **Sky model.** CMB parameters (blackbody shift, y, relativistic tSZ
-  temperature kT_eSZ, μ) plus six foregrounds with 12 free parameters:
-  thermal dust and CIB as two modified blackbodies (6 parameters),
+  temperature kT_eSZ, μ) plus six foregrounds, with free parameters per
+  component: thermal dust and CIB as two modified blackbodies (6 parameters),
   synchrotron as a power law with logarithmic curvature (3), free-free (1),
   integrated CO template (1), spinning dust (1). SEDs are taken from Planck
   fluctuation measurements and assumed to describe the monopole [src:
-  Sect. 4].
+  arXiv:1705.01534, Sect. 4].
 - **Why curvature in synchrotron.** Averaging power laws with different
   indices along the line of sight and in the beam generates curvature, which
   cannot be avoided at PIXIE sensitivity [src: Sect. 4].
 - **External information.** A 10% prior on synchrotron amplitude and index,
   standing for Haslam, WMAP, Planck, C-BASS, QUIJOTE or future data [src:
-  Sect. 4].
+  arXiv:1705.01534, Sect. 4 and the foreground table].
 - **Statistics.** Fisher matrix F_ij = Σ ∂ΔI_a/∂p_i C⁻¹_ab ∂ΔI_b/∂p_j
   (Eq. 6) with diagonal noise, and emcee MCMC (≈ 200 walkers) to capture
   non-Gaussian posteriors near threshold and biases from incomplete
-  modelling; A_sync > 0 imposed [src: Sect. 5].
+  modelling; A_sync > 0 imposed [src: arXiv:1705.01534, Sect. 5].
 - **Results (forecast).** Extended PIXIE detects the average non-relativistic
-  and relativistic tSZ at 194σ and 11σ; the ΛCDM μ is not detected;
-  |μ| < 3.6 × 10⁻⁷ (95%) with moderate synchrotron information, 9.4 × 10⁻⁸
-  with optimistic low-frequency information [src: abstract].
+  and relativistic tSZ at 194σ and 11σ; the ΛCDM μ is not detected; the
+  bound |μ| < 3.6 × 10⁻⁷ (95%) with moderate synchrotron information,
+  9.4 × 10⁻⁸ with optimistic low-frequency information [src:
+  arXiv:1705.01534, abstract].
 
 ## Choices and what they cost
 <!-- key: choices-and-what-they-cost -->
@@ -333,7 +340,7 @@ expansion would handle [src: Sect. 4].
 - The Planck μ map of Khatri & Sunyaev (as cited in arXiv:2206.02762) and
   the Wright et al. 1994 interpretation cited by Fixsen et al. were not read;
   no identifiers recorded.
-- The 17-parameter distortion basis (Chluba et al. 2023a, as cited) and the
+- The multi-parameter distortion basis (Chluba et al. 2023a, as cited) and the
   Hu & Silk 1993 estimates were not read.
 - PIXIE 2024 (arXiv:2405.20403) and FOSSIL foreground budgets were not read
   in the bodies.

@@ -32,34 +32,39 @@ re-verify against the cited paper before a number enters a manuscript.
 - GW170817 is still the only bright siren; GWTC-5.0 adds no neutron-star source
   (arXiv:2605.27226).
 - LVK value: H0 = 71.7 (+9.4/−7.5), GWTC-5.0, 236 sources, mass spectrum + DES Y6
-  catalogue + GW170817 (arXiv:2605.27227). About 12% [der]; compatible with
+  catalogue + GW170817 (arXiv:2605.27227) [src: abstract]; compatible with
   both tension endpoints.
-- Mass-spectrum features, not galaxies, drive it (arXiv:2605.27227 §4.1,
+- Mass-spectrum features, not galaxies, drive it (arXiv:2605.27227 [src: Sect. IV.1],
   arXiv:2111.03604).
-- GW170817 alone: 70.0 (+12.0/−8.0) (arXiv:1710.05835). Jet-informed values span
-  64.8–75.5: 68.9 (arXiv:1806.10596), 75.46 (arXiv:2305.19914), 65.5 ± 4.4
-  (arXiv:2605.11437).
-- NGC 4993 velocity: 310 ± 150 km/s (LVC) or 373, σ ≈ 130 (BORG,
-  arXiv:1909.08627); 200 km/s moves H0 by about 4 (arXiv:1909.09609); catalogues
-  disagree beyond errors (arXiv:1909.00587); DESI data give 70.9 or 73.4
-  (arXiv:2512.08818).
-- Velocity covariance can double the H0 error within 50 Mpc (arXiv:2509.03101).
-- GLADE+ is complete to 47 Mpc (arXiv:2110.06184); completion and host
+- GW170817 alone: 70.0 (+12.0/−8.0) (arXiv:1710.05835). Jet-informed values differ
+  by more than their errors: 68.9 (arXiv:1806.10596), 75.46 (arXiv:2305.19914), 65.5 ± 4.4
+  (arXiv:2605.11437) [src: abstract of each].
+- NGC 4993 velocity: 310 ± 150 km/s (LVC, arXiv:1710.05835 [src: Methods]) or 373,
+  σ ≈ 130 (BORG, arXiv:1909.08627 [src: Sect. 6.1]); 200 km/s moves H0 by about 4
+  (arXiv:1909.09609 [src: abstract]); catalogues disagree beyond errors
+  (arXiv:1909.00587); DESI data give 70.9 or 73.4 (arXiv:2512.08818 [src: abstract]).
+- Velocity covariance can double the H0 error within 50 Mpc (arXiv:2509.03101)
+  [src: abstract].
+- GLADE+ is complete to 47 Mpc (arXiv:2110.06184) [src: abstract]; completion and host
   weighting bias H0 (arXiv:2310.08991, arXiv:2405.14818).
 - Unmodelled mass-spectrum evolution: up to 3σ with 2000 events
-  (arXiv:2312.11627), 1.5σ in a blinded challenge (arXiv:2412.14244); not seen
+  (arXiv:2312.11627), 1.5σ in a blinded challenge (arXiv:2412.14244) [src: abstract of each]; not seen
   at current sensitivity (arXiv:2605.20112).
 - Dark-siren H0 is extrapolated from z ≈ 0.44 under a background model
-  (arXiv:2511.11795).
+  (arXiv:2511.11795) [src: abstract].
 - Cross-correlation: first detection at 5.9σ, H0 = 67 (+18/−15)
-  (arXiv:2512.15380).
-- GWTC-5.0: 390 candidates, 267 in population, 236 in cosmology (arXiv:2605.27225).
-  O4 ended 18 November 2025; IR1 planned from November 2026; O5 undated.
+  (arXiv:2512.15380) [src: abstract].
+- GWTC-5.0: 390 candidates (arXiv:2605.27225), 267 in population (arXiv:2605.27226),
+  236 in cosmology (arXiv:2605.27227) [src: abstract of each]. O4 ended 18 November
+  2025; IR1 planned from November 2026; O5 undated (LVK observing-plan page,
+  `references/surveys-and-data.md` Sect. 1.1).
 - FRBs: DM ∝ Ω_b h² f_d / h. Ω_b h70 = 0.051 ± 0.006, f_IGM = 0.76
-  (arXiv:2409.16952). H0 spans 62.3–85.3 (arXiv:2104.04538,
-  arXiv:2305.07022); 71.28 (+1.90/−2.08) is statistical only (arXiv:2507.18946):
+  (arXiv:2409.16952). H0 = 62.3 ± 9.1 (arXiv:2104.04538), 85.3 (+9.4/−8.1)
+  (arXiv:2305.07022); 71.28 (+1.90/−2.08) is statistical only (arXiv:2507.18946)
+  [src: abstract of each]:
   host model, Galactic halo and scatter parameter each move it by about 3σ.
-- Lensed supernovae: Refsdal 64.8–66.6 (arXiv:2305.06367), H0pe 75.7
+- Lensed supernovae [src: abstract of each]: Refsdal 64.8 (eight models) or 66.6 (two
+  best models) (arXiv:2305.06367), H0pe 75.7
   (arXiv:2403.18902), Encore 66.9 (arXiv:2509.12301), SN 2025wny 70.8
   (arXiv:2608.28427).
 - The 2017 forecast of 2% in five years (arXiv:1712.06531) assumed counterparts
@@ -81,18 +86,20 @@ microlensing. Details:
 ## Errors that recur
 <!-- key: errors-that-recur -->
 
-- Quoting 70 (+12/−8), or the fixed-population GWTC-3 value 68 (+8/−6), as the
-  siren H0.
+- Quoting 70 (+12/−8) (arXiv:1710.05835), or the fixed-population GWTC-3 value
+  68 (+8/−6) (arXiv:2111.03604), as the siren H0 [src: abstract of each].
 - Presenting one jet-informed GW170817 value as "the" result.
 - Calling dark sirens free of astrophysics or a cosmological model.
 - Assuming the catalogue covers the detection horizon.
 - Averaging host velocity errors as 1/√N for nearby sirens.
-- Giving "267" as the size of GWTC-5.0, or a date for O5.
+- Giving "267" (the population sample, arXiv:2605.27226 [src: abstract]) as the size
+  of GWTC-5.0, or a date for O5.
 - Using BBH–AGN flare associations (arXiv:2607.03672, arXiv:2009.14199) as
   established bright sirens.
 - Calling an FRB H0 independent of early-universe priors, or quoting its
   statistical error as total.
-- Mixing f_IGM and f_d (0.59, 0.76, > 0.9; arXiv:2402.00505, arXiv:2506.03536).
+- Mixing f_IGM and f_d (0.59, arXiv:2402.00505; 0.76, arXiv:2409.16952; more than
+  90%, arXiv:2506.03536; [src: abstract of each]).
 
 ## Related skills
 <!-- key: related-skills -->
@@ -120,7 +127,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 6k; methods 12k; results 7k; surveys 5k; systematics 13k; deep/frb-baryon-distribution 7k; deep/frb-hubble-constant 8k; deep/gw-lensing 8k; deep/gw-lss-cross-correlation 8k; deep/next-generation-siren-forecasts 7k; deep/spectral-sirens 6k.
+Sizes, in thousands of tokens: L1 3k; open 7k; methods 12k; results 7k; surveys 5k; systematics 14k; deep/frb-baryon-distribution 7k; deep/frb-hubble-constant 8k; deep/gw-lensing 8k; deep/gw-lss-cross-correlation 8k; deep/next-generation-siren-forecasts 7k; deep/spectral-sirens 7k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

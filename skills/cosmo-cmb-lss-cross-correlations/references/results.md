@@ -140,7 +140,7 @@ The kSZ measurements come in three estimator families that Smith 2018 (arXiv:181
 | Simulation preference, free amplitude | Illustris (z = 0.5) PTE = 0.37; IllustrisTNG (z = 0.8) PTE = 0.045; "limited statistical significance" | same | arXiv:2503.19870 | [src: abstract] |
 | Amplitude relative to a halo-model prediction | A = 0.42 ± 0.042 | ACT DR6 × DESI Legacy, velocity reconstruction | arXiv:2506.21684 | [src: abstract] |
 | kSZ velocity bias b_v (an analogous amplitude; defined in `physics-and-methods.md#estimators`) | 0.339 ± 0.034 (cross); 0.26 +0.11/−0.05 (auto); 0.33 ± 0.03 (combined) | ACT DR6 × DESI Legacy LRG | arXiv:2511.15701 | [src: abstract] |
-| kSZ velocity bias b_v, spectroscopic LRGs, joint v–g and v–v fit | 0.229 ± 0.022 (90 GHz); 0.233 ± 0.020 (150 GHz); best fits 0.233 and 0.237 | ACT DR6 × DESI DR2 LRG | arXiv:2604.04867, table of LRG fits | [src] |
+| kSZ velocity bias b_v, spectroscopic LRGs, joint v–g and v–v fit | 0.229 ± 0.022 (90 GHz); 0.233 ± 0.020 (150 GHz); best fits 0.233 and 0.237 | ACT DR6 × DESI DR2 LRG | arXiv:2604.04867 | [src: Sect. V.2, table of LRG fits] |
 | kSZ velocity bias b_v, ELGs (z_eff = 1.170) and quasars (z_eff = 1.667), v–g only | ELG 0.102 ± 0.027 (90 GHz), 0.153 ± 0.026 (150 GHz); QSO 0.252 ± 0.056, 0.206 ± 0.047 | ACT DR6 × DESI DR2 | arXiv:2604.04867 | [src: Sect. 5.3, table] |
 | Mean halo masses, lensing-calibrated | log(M_halo/(M⊙/h)) ≈ 13.18 (Main LRG), 13.03 (Extended LRG), 13.02 (BGS) | DESI samples × ACT DR6 κ | Hadzhiyska 2025, arXiv:2507.14136 | [src: abstract] |
 | Gas fractions against TNG300 | lower at fixed radius by ≳ 4σ; all baryons recovered at 2–3 virial radii | same, with the kSZ profiles | arXiv:2507.14136 | [src] |
@@ -163,7 +163,7 @@ The ACT DR6 × DESI results favour gas that is more extended than in the Battagl
 |---|---|---|---|---|
 | f_NL (local) from v–g | −180 +61/−86 (67%); consistent with zero at 95% | ACT DR6 × DESI Legacy LRG, photometric | arXiv:2511.15701 | [src: abstract] |
 | f_NL (local) from v–g and v–v | 15.9 +34.6/−34.4 (68%) | ACT DR6 × DESI DR2 LRG, ELG, QSO | arXiv:2604.04867 | [src: abstract] |
-| f_NL (local), LRGs only, v–g and v–v | mean 11.7, −43.5/+43.4; best fit 8.5 | ACT DR6 × DESI DR2 LRG | arXiv:2604.04867, table of LRG fits | [src] |
+| f_NL (local), LRGs only, v–g and v–v | mean 11.7, −43.5/+43.4; best fit 8.5 | ACT DR6 × DESI DR2 LRG | arXiv:2604.04867 | [src: Sect. V.2, table of LRG fits] |
 | f_NL (local) per tracer, v–g dipole | ELG 207, −221/+225 (b_φ near zero because b_1 is close to 1); QSO 1.09, −58.4/+57.7 | ACT DR6 × DESI DR2 | arXiv:2604.04867 | [src: Sect. 5.3, table] |
 | Force-law index n in g ∝ 1/rⁿ, 30–230 Mpc | 2.1 ± 0.3 | ACT × SDSS pairwise kSZ | Gallardo 2026, arXiv:2604.14327 | [src: abstract] |
 | Per-mode noise of the kSZ velocity field against the galaxy auto-spectrum | lower at k < 0.004 Mpc⁻¹ | ACT DR6 × DESI DR2 | arXiv:2604.04867 | [src: abstract] |

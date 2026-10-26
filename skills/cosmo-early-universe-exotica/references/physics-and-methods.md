@@ -35,7 +35,7 @@ in timing residuals (arXiv:2306.16213) [src: Sect. I].
   200–1000 for HD over CURN, depending on spectral modelling (arXiv:2306.16213) [src: abstract].
 - **Calibrating the significance.** NANOGrav builds the null distribution of the HD Bayes factor by
   removing inter-pulsar correlations (phase shifts, sky scrambles), giving p = 10⁻³ (about 3σ); the
-  frequentist optimal statistic gives p = 5 × 10⁻⁵ to 1.9 × 10⁻⁴ (3.5–4σ) (arXiv:2306.16213) [src]. PPTA
+  frequentist optimal statistic gives p = 5 × 10⁻⁵ to 1.9 × 10⁻⁴ (3.5–4σ) (arXiv:2306.16213) [src: abstract]. PPTA
   validates its correlations by randomising pulsar positions on the sky (arXiv:2306.16215) [src].
 - **Cosmic variance of HD.** Even with noise-free data the measured correlation at fixed angle scatters
   around the HD curve. Allen 2022 (arXiv:2205.05637) derives the variance for discrete point sources and
@@ -54,7 +54,7 @@ in timing residuals (arXiv:2306.16213) [src: Sect. I].
 LIGO–Virgo–KAGRA (LVK) cross-correlate detector pairs; the optimal cross-correlation method and its
 sensitivity are set out in Allen & Romano 1999 (arXiv:gr-qc/9710117) [src]. Limits are quoted on Ω_GW at a
 reference 25 Hz for power laws Ω_GW ∝ f^α with α = 0 (scale-invariant, typical of cosmological sources),
-2/3 (compact binaries) and 3, each with a log-uniform prior on the amplitude (arXiv:2101.12130) [src].
+2/3 (compact binaries) and 3, each with a log-uniform prior on the amplitude (arXiv:2101.12130) [src: abstract].
 Note the clash of notation: α is the strain index in PTA papers and the Ω_GW index in LVK papers.
 
 ### 1.3 Integrated bounds on a primordial background
@@ -70,16 +70,14 @@ integrated energy density; the CMB bound depends on adiabatic or homogeneous ini
 A first-order phase transition (FOPT) proceeds by nucleation of bubbles of the true vacuum. Gravitational
 waves come from three sources: bubble-wall collisions, sound waves in the plasma and magnetohydrodynamic
 turbulence. The first estimates (Kamionkowski et al. 1994, arXiv:astro-ph/9310044) treated collisions and
-Kolmogorov turbulence and found the minimal-Standard-Model electroweak transition far too weak, Ω ~ 10⁻²²
-at ~4 mHz [src]. The first 3D simulations including the fluid showed that compression waves keep sourcing
+Kolmogorov turbulence and found the minimal-Standard-Model electroweak transition far too weak, Ω ~ 10⁻²² at 4.1 × 10⁻³ Hz [src: abstract]. The first 3D simulations including the fluid showed that compression waves keep sourcing
 GWs long after the bubbles have merged, so for a wide range of models "the main source ... is the sound
 the bubbles make" (Hindmarsh et al. 2014, arXiv:1304.2433) [src].
 
 **The four parameters** (LISA Cosmology WG 2022, arXiv:2204.05434) [src: Sect. 6.2]:
 
 - T_* — the plasma temperature at percolation, when about one third of the comoving volume has converted;
-  for moderately strong transitions T_* ≈ T_n, the nucleation temperature at which the critical action S_c
-  ≈ 140.
+  for moderately strong transitions T_* ≈ T_n, the nucleation temperature at which the critical action S_c ~ 140 [src: arXiv:2204.05434, Sect. 6.2].
 - α — the energy released as a fraction of the radiation energy, α = Δθ/ρ_rad with Δθ = ΔV(T) − (T/4)
   ∂ΔV/∂T [src: Eq. 37]. Several definitions coexist; they map differently onto the bag equation of state.
 - β/H_* = T_* d(S_3/T)/dT at T_* — the inverse duration [src: Eq. 39]; the amplitude falls and the peak
@@ -94,8 +92,7 @@ spectrum carries this theory error.
 model-independent sensitivity to collisions, turbulence and sound waves [src]; its update (Caprini et al.
 2020, arXiv:1910.13125) rests on sound-wave simulations, clarifies "common misconceptions" and introduces
 the PTPlot web tool [src]. The 2024 LISA pipeline (arXiv:2403.03723) builds a template databank for the
-three sources and forecasts ~10% reconstruction of the parameters in part of the space, accounting for
-Galactic and extragalactic foregrounds — a **forecast** [src].
+three sources and forecasts ~10% reconstruction of the parameters in part of the space, accounting for Galactic and extragalactic foregrounds — a **forecast** [src: abstract].
 
 **At nanohertz frequencies.** A transition at T_* ~ MeV–GeV lands in the PTA band. NANOGrav fits two
 templates, pt-bubble (collisions; low-frequency index allowed down to a = 1) and pt-sound (sound waves; a
@@ -112,7 +109,7 @@ constant, Gμ (Gμ/c²).
 
 - **CMB.** Strings source active, incoherent perturbations. Planck added the string power spectrum to ΛCDM
   with an amplitude f₁₀ at ℓ = 10 and modelled both Nambu–Goto and Abelian-Higgs field-theory strings,
-  "spanning the range of theoretical uncertainty" (Planck 2013 XXV, arXiv:1303.5085) [src].
+  "spanning the range of theoretical uncertainty" (Planck 2013 XXV, arXiv:1303.5085) [src: abstract].
 - **Gravitational waves from loops.** Loops oscillate at f = 2k/ℓ for harmonic k; NANOGrav writes
   Ω_GW^cs(f) = (8π/3H0²)(Gμ)² Σ_k P_k I_k(f), summed to k_max = 10⁵ (arXiv:2306.16219) [src: Eq. 40]. The
   loop number density is the dominant modelling uncertainty; the loop distribution calibrated on
@@ -156,8 +153,7 @@ and Solar System ephemerides are proposed tests (arXiv:2601.06024) [src: Sect. V
 
 **Accretion and the CMB.** Massive PBHs accrete and inject energy that alters recombination. With a
 dominant non-PBH dark-matter component, a dark matter halo forms around each PBH and changes the bound;
-the CMB then dominates other limits above 20–50 M☉, the threshold depending on accretion physics (Serpico
-et al. 2020, arXiv:2002.10771) [src].
+the CMB then dominates other limits above 20–50 M☉, the threshold depending on accretion physics (Serpico et al. 2020, arXiv:2002.10771) [src: abstract].
 
 ## 5. Scalar-induced gravitational waves
 <!-- key: scalar-induced-gravitational-waves -->
@@ -199,21 +195,19 @@ arXiv:2503.14454) [src: Sect. V.1]:
 - Phenomenological parameters: f_EDE = 8πG ρ_EDE(z_c)/(3H²(z_c)), the maximum fractional contribution,
   reached at the critical redshift z_c; and θ_i = φ_i/f, the initial displacement [src: Eqs. 11–12]. The
   field is frozen by Hubble friction until H ~ m near z_c.
-- Priors in ACT DR6: f_EDE ∈ [0.001, 0.5], log₁₀ z_c ∈ [3.0, 4.3], θ_i ∈ [0.1, 3.1], uniform [src: Sect.
-  V.1].
+- Priors in ACT DR6: f_EDE ∈ [0.001, 0.5], log₁₀ z_c ∈ [3.0, 4.3], θ_i ∈ [0.1, 3.1], uniform [src:
+  arXiv:2503.14454, Sect. V.1].
 - Signatures: for z_c ~ z_eq, features at ℓ ~ 400–800 and broader imprints at smaller scales; partly
-  absorbed by Ω_c h² and n_s, so high-resolution polarisation breaks the degeneracies [src: Sect. V.1].
+  absorbed by Ω_c h² and n_s, so high-resolution polarisation breaks the degeneracies [src: arXiv:2503.14454, Sect. V.1].
   f_EDE correlates positively with H0, Ω_c h² and S8 [src: Fig. 12 caption].
-- Codes and their accuracy: `systematics.md` §3 and §12 below.
+- Codes and their accuracy: `systematics.md`, Sects. 3 and 12, below.
 
 **Why EDE raises S8.** An EDE fit to CMB and SH0ES gives scale-dependent changes in the matter power
-spectrum, including 10% more power at k = 1 h/Mpc, which aggravates tension with large-scale structure
-(Hill et al. 2020, arXiv:2003.07355) [src].
+spectrum, including 10% more power at k = 1 h/Mpc, which aggravates tension with large-scale structure (Hill et al. 2020, arXiv:2003.07355) [src: abstract].
 
 **Bayesian versus frequentist.** f_EDE = 0 makes z_c and θ_i undefined, so marginalised posteriors carry
 prior-volume effects. A grid and profile likelihood on Planck and BOSS full shape found the allowed f_EDE
-"strongly depends on the particular choice of the other parameters", and gave f_EDE = 0.072 ± 0.036 (68%)
-free of volume effects (Herold et al. 2022, arXiv:2112.12140) [src]. The model class and its theoretical
+"strongly depends on the particular choice of the other parameters", and gave f_EDE = 0.072 ± 0.036 (68%) free of volume effects (Herold et al. 2022, arXiv:2112.12140) [src: abstract]. The model class and its theoretical
 issues (a second coincidence problem, S8, BOSS EFT full shape) are reviewed by Poulin et al. 2023
 (arXiv:2302.09032) [src].
 
@@ -229,10 +223,10 @@ CMB fit, and a time-varying m_e in a curved ΛCDM model was the first concrete e
 
 **Standard phenomenological set-up** (arXiv:2503.14454) [src: Sect. V.2]:
 
-- The constant takes a free value before an instantaneous step at z = 50 and the laboratory value after;
+- The constant takes a free value before an instantaneous step at z = 50 and the laboratory value after (arXiv:2503.14454, Sect. V.2);
   recombination physics through HyRec in class (CosmoRec is "similarly accurate").
 - Flat priors m_e/m_e,0 ∈ [0.3, 1.7], α_EM/α_EM,0 ∈ [0.6, 1.4], Ω_k ∈ [−0.6, 0.6] when curvature is free
-  [src: Sect. V.2.1–V.2.3].
+  [src: arXiv:2503.14454, Sects. V.2.1–V.2.3].
 - The model "is not physical": no field drives the variation. A first-principles implementation, with
   perturbations and energy density of the driving field, can reach "rather different conclusions" [src:
   Sect. V.2].
@@ -249,7 +243,7 @@ to raise H0 resolves the tension with Planck + ACT but not once DESI DR2 BAO are
 H0 by modifying recombination generically lowers Ω_m" (Lee et al. 2026, arXiv:2606.06495) [src].
 
 **Local and intermediate-redshift α.** Quasar absorbers measure Δα/α at z ~ 1–2 (ESPRESSO data in
-`surveys-and-data.md` §6). A CMB bound (z ~ 1100) and an absorber bound (z ~ 1) test different epochs and
+`surveys-and-data.md` §6). A CMB bound (recombination) and an absorber bound (low redshift) test different epochs and
 must not be compared as one number.
 
 ## 8. CMB spectral distortions
@@ -262,8 +256,7 @@ earlier times Compton scattering establishes a Bose–Einstein spectrum with che
 thermalisation problem — double Compton, bremsstrahlung and recombination — is solved with CosmoTherm
 (Chluba et al. 2011, arXiv:1109.6552), which computes the distortions from annihilating dark matter,
 decaying relics, dissipation of acoustic waves and quasi-instantaneous heating; the adiabatic cooling of
-electrons alone gives a negative μ-type distortion of ΔI/I ~ 10⁻⁸ in the GHz band [src]. Distortions probe
-the thermal history at z ≲ 2 × 10⁶ (Cyr et al. 2026, arXiv:2609.16194) [src]. Recent reviews: Chluba 2025
+electrons alone gives a negative μ-type distortion of ΔI/I ~ 10⁻⁸ in the GHz band [src: arXiv:1109.6552, abstract]. Distortions probe the thermal history at z ≲ 2 × 10⁶ (Cyr et al. 2026, arXiv:2609.16194) [src: abstract]. Recent reviews: Chluba 2025
 (arXiv:2502.05188) [src] and Cyr et al. 2026 [src].
 
 **What ΛCDM predicts.** If near scale invariance holds to small scales, the dissipation of acoustic modes
@@ -274,7 +267,7 @@ arXiv:1909.01593) [src: Sect. 2.1]. Distortions therefore link to the primordial
 (`cosmo-inflation-primordial`) and to PBH formation, which needs enhanced small-scale power (§4).
 
 **Anisotropic distortions.** A μ map correlated with CMB temperature and polarisation constrains
-primordial non-Gaussianity on 10 ≲ k ≲ 5 × 10⁴ (Bianchini et al. 2022, arXiv:2206.02762) [src].
+primordial non-Gaussianity on 10 ≲ k ≲ 5 × 10⁴ (Bianchini et al. 2022, arXiv:2206.02762) [src: abstract].
 
 ## 9. Energy injection during recombination and the dark ages
 <!-- key: energy-injection-during-recombination-and-the -->
@@ -299,8 +292,7 @@ backgrounds (Chen et al. 2003, arXiv:astro-ph/0310473) [src: abstract].
   injections, which has a high-energy feature unique to high-energy particles and may be detectable by
   PIXIE-class experiments (**forecast**), and recasts decay bounds on axion-like-particle couplings to
   photons (Liu et al. 2023, arXiv:2303.07370) [src].
-- Energy released before recombination is constrained instead by distortions (§8) and by BBN (`cosmo-bbn`,
-  which holds the decaying-relic limits for lifetimes 0.01 s – 10¹² s). The 21 cm signal of the dark ages
+- Energy released before recombination is constrained instead by distortions (§8) and by BBN (`cosmo-bbn`, which holds the decaying-relic limits). The 21 cm signal of the dark ages
   as a probe of this heating belongs to `cosmo-reionization-21cm`.
 
 ## 10. Primordial magnetic fields
@@ -314,8 +306,7 @@ is Durrer et al. 2013 (arXiv:1303.7121) [src].
 (compensated and passive modes), Faraday rotation of polarisation, the ionisation history (dissipation by
 ambipolar diffusion and decaying MHD turbulence after recombination, Paoletti et al. 2022,
 arXiv:2204.06302 [src]), magnetically induced non-Gaussianity and broken statistical isotropy. Amplitudes
-are quoted as B_1Mpc, the comoving field smoothed on 1 Mpc, or as √⟨B²⟩, with a spectral index n_B (n_B =
-−2.9 is "nearly scale-invariant"); helicity changes the limits.
+are quoted as B_1Mpc, the comoving field smoothed on 1 Mpc, or as √⟨B²⟩, with a spectral index n_B (n_B = −2.9 is "nearly scale-invariant" in arXiv:2501.06299, abstract); helicity changes the limits.
 
 **Baryon clumping at recombination.** Blue-tilted PMFs with kpc correlation lengths drive small-scale
 baryon inhomogeneities after photon decoupling, which accelerate recombination through the quadratic
@@ -358,8 +349,7 @@ EDE is §6 here.
   astrophysical bounds — a **forecast** for future CMB experiments (Baumann et al. 2016, arXiv:1604.08614)
   [src]. Measured N_eff values belong to `cosmo-neutrinos-dark-matter` and `cosmo-bbn`.
 - **Photon–ALP conversion.** In intergalactic magnetic fields photons convert to ALPs; for n_e ≲ 10⁻⁹ cm⁻³
-  this distorts the CMB spectrum too much to explain supernova dimming (Mirizzi et al. 2005,
-  arXiv:astro-ph/0506078) [src]. Decaying light ALPs inject energy and are bounded by CMB anisotropies
+  this distorts the CMB spectrum too much to explain supernova dimming (Mirizzi et al. 2005, arXiv:astro-ph/0506078) [src: abstract]. Decaying light ALPs inject energy and are bounded by CMB anisotropies
   through the ALP–photon coupling (arXiv:2303.07370) [src].
 
 ## 12. Public codes

@@ -87,7 +87,8 @@ j_l(kr) k^{2(p+q)} D_u^n(k, σ_u) (Eq. 4), with the Gaussian finger-of-God D_g e
 their stated reasons [src: same]:
 
 - k_max = 0.20 h Mpc⁻¹, "where our quasi-linear model breaks down"; k_min = 0.0002 h Mpc⁻¹
-  "since the DESI DR1 data may be affected by modes larger than the survey volume".
+  "since the DESI DR1 data may be affected by modes larger than the survey volume" [src:
+  arXiv:2512.03229, Sect. 3.1].
 - Power spectra from standard perturbation theory instead of the RPT of the SDSS PV analysis,
   to match the two companion DESI papers; App. A shows fσ8 is unaffected.
 - p_max = q_max = 3 in the D_g expansion, "equivalent to using a third-order Taylor expansion",
@@ -96,7 +97,7 @@ their stated reasons [src: same]:
 - C_vv has only l = 0 and 2 terms, because the highest combined power of μ1, μ2 is 2 (Eq. 10).
 - The Lai et al. (L22) pipeline was kept rather than flip's RC25 because varying σ_g in RC25
   needs pre-computed covariances on a σ_g grid, "computationally expensive", and the two give
-  consistent covariances at k_max = 0.20.
+  consistent covariances at k_max = 0.20 [src: arXiv:2512.03229, Sect. 3.1].
 
 Other choices of the same step:
 
@@ -148,7 +149,7 @@ or σ_Δμ [src: arXiv:2501.16852, Sect. 3.2].
     C_gg^err = C_gg^grid + σ²_δg δ_D,     σ_δg = 1/sqrt(N_g^r(x))      (Eqs. 26–27)
     C_ηη^err = C_ηη^grid + σ²_η δ_D,
     σ²_η = (σ_η^grid)² + κ(z1)κ(z2) σ_v²                               (Eq. 28)
-    C_gg^add = Σ_pq … b_add² ξ_mm (k from k_max to 1.0 h Mpc⁻¹)          (Eq. 29)
+    C_gg^add = Σ_pq … b_add² ξ_mm (k from k_max to 1.0 h Mpc⁻¹)          (arXiv:2512.03229, Eq. 29)
 
 Eq. 26 is printed with N_g^r, the random count of the cell. The total is
 C = [[C_gg^err + C_gg^add, C_gη^grid], [C_ηg^grid, C_ηη^err]] (Eq. 30). The extra integral comes
@@ -177,10 +178,10 @@ DESI DR1 [src: arXiv:2512.03229, Sect. 3.4]:
 - The SDSS PV analysis approximated the log-likelihood by a second-order Taylor expansion around
   50 points in fσ8, with nuisances at their best fit: more than ten times faster, with posterior
   shifts "much less than the uncertainty". DESI DR1 dropped it because a ~5 % forecast error
-  "could potentially introduce significant systematics".
+  "could potentially introduce significant systematics" [src: arXiv:2512.03229, Sect. 3.4].
 - JAX with Cholesky decomposition: about 1 s per evaluation for an ~11 000 × 11 000 matrix;
   adaptive Metropolis–Hastings in NumPyro; convergence at |R − 1| ≤ 0.01, ~40 000 iterations,
-  within a day; 140 GB of memory at 20 h⁻¹Mpc [src: Sects. 3.4, 4.4.2 footnote 13].
+  within a day; 140 GB of memory at 20 h⁻¹Mpc [src: arXiv:2512.03229, Sects. 3.4, 4.4.2 footnote 13].
 - Only σ_u requires recomputing the covariance; every other parameter rescales a pre-computed
   block, so σ_u is fixed and its effect taken as a finite-difference systematic (Eq. 33) [src:
   Sect. 4.1].
@@ -211,10 +212,10 @@ The other implementations:
   (0.036) is below the scatter of best fits (0.066 before the data cuts, 0.059 after), with
   reduced χ² ≈ 1; the authors' reasons: the grid "will remove all small-scale information below
   20 h⁻¹Mpc, but the true sample variance includes fluctuations on all scales", the k-integral
-  stops at k_max, and σ_u varies between mocks but is fixed [src: Sect. 4.4.2, Table 1]. The
+  stops at k_max, and σ_u varies between mocks but is fixed [src: arXiv:2512.03229, Sect. 4.4.2, Table 1]. The
   data error is rescaled by 0.059/0.036 following Sugiyama et al. 2023 [src].
 - A 30 h⁻¹Mpc grid gives mean fσ8 0.491 against 0.460 at 20, with 9.2 % against 7.8 % mean error
-  [src: Table 1]. A smaller grid was not run: slower MCMC and more memory [src: footnote 13].
+  [src: arXiv:2512.03229, Table 1]. A smaller grid was not run: slower MCMC and more memory [src: footnote 13].
 - Per-object fits avoid the grid window but pay in matrix size and in the non-linear part of the
   model: Huterer et al. use the halofit P(k) for their nearest objects (Step 2). flip's N-body
   validation integrates to k_max = 100 h Mpc⁻¹ "to avoid aliasing in the integration without the
@@ -343,8 +344,8 @@ only some of them estimate growth:
 | b_add from 6dFGS sims | b_add σ8 = 1.306, b_fit σ8 = 1.29; b_add = 0 at Δχ² = 241.27 | GiggleZ | arXiv:1706.05205 | Sect. 4.2 |
 | Velocity gain over density, **forecast** | factor ~2 for k < 0.2 h Mpc⁻¹ | Fisher | arXiv:1312.1022 | abstract |
 | σ_u prior | N(21.5, 10) h⁻¹Mpc | BGS × ZTF sims | arXiv:2609.34508 | Sect. 4.2 |
-| σ_g fixed | 6.0 h⁻¹Mpc | BGS × ZTF sims | same | Sect. 4.3 |
-| SN z_max | 0.07 | ZTF sims | same | Sect. 4.2 |
+| σ_g fixed | 6.0 h⁻¹Mpc | BGS × ZTF sims | arXiv:2609.34508 | Sect. 4.3 |
+| SN z_max | 0.07 | ZTF sims | arXiv:2609.34508 | Sect. 4.2 |
 | Fisher vs volume Fisher | 30 % closer to likelihood errors | ZTF sims | arXiv:2501.16852 | Sect. 5 |
 
 ## What goes wrong

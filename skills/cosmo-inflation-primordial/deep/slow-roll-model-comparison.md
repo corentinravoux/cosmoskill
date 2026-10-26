@@ -13,11 +13,11 @@ From: Planck 2018 X (arXiv:1807.06211), Sects. 4–5; LiteBIRD 2022 review
 
 Already in L2, not repeated here: the parametrisation of P_R and P_t and
 the slow-roll dictionary, first-order Hubble-flow results, the R² range
-49 < N_* < 59 and the ACT η_V value
+of N_* and the ACT η_V value
 (`physics-and-methods.md#slow-roll-dictionary-textbook`); the
 α-attractor and Higgs leading-order formulas and ASPIC as a library
 (`physics-and-methods.md#slow-roll-dictionary-textbook`); the n_s debate,
-the reheating equation-of-state bound ω ≳ 0.462 and the stiff-epoch
+the reheating equation-of-state bound and the stiff-epoch
 gravitational-wave argument (`open-questions.md#has-ns-moved-and-does-it-exclude-starobinsky`);
 the dependence of n_s on data combination and model
 (`systematics.md#a1-dependence-on-the-data-combination`,
@@ -49,12 +49,12 @@ Planck 2018 runs the analysis at increasing levels of model commitment:
    value when k_* = 0.05 Mpc⁻¹ exits the Hubble radius, restricted to the
    observable window and with no assumption on the end of inflation; the
    spectrum comes from full numerical integration of the Fourier modes in
-   the inflationary module of CLASS, without slow roll [src: Sect. 5.1].
+   the inflationary module of CLASS, without slow roll (arXiv:1807.06211) [src: Sect. 5.1].
    The same with a Taylor expansion of H(φ), which also marginalises over
    the initial φ̇ [src: Sect. 5.2].
 4. Taylor expansion of the full V(φ), trusted until inflation ends at
    ε_V = 1, with N_* fixed to 55: CLASS integrates the background to the
-   end of inflation, steps back 55 e-folds and matches k_* there [src:
+   end of inflation, steps back 55 e-folds and matches k_* there (arXiv:1807.06211) [src:
    Sect. 5.3].
 5. Free-form reconstruction: d² ln V/dφ² as a linear spline with N movable
    knots, integrated twice (Eqs. 49–50), the number of knots chosen by
@@ -73,7 +73,6 @@ sharp features [src: Sect. 5.1].
 <!-- key: step-2-tie-n-to-the-post-inflationary-history -->
 
 Planck uses (arXiv:1807.06211, Eq. 47)
-
 N_* ≃ 67 − ln(k_*/a_0H_0) + ¼ ln(V_*²/(M_Pl⁴ ρ_end)) + [(1 − 3w_int)/(12(1 + w_int))] ln(ρ_th/ρ_end) − (1/12) ln g_th,
 
 with ρ_end the energy density at the end of inflation, V_* the potential
@@ -84,7 +83,7 @@ when the potential is ∝ φ^p during the oscillations, or w_int = 0 when the
 potential describes only the inflationary stage; logarithmic prior on ρ_th
 over [(1 TeV)⁴, ρ_end]; spectra to second order in the HFFs, computed with
 modified ASPIC routines; pivot 0.002 Mpc⁻¹ in this section to match the
-(n_s, r) figure [src: Sect. 4.2].
+(n_s, r) figure (arXiv:1807.06211) [src: Sect. 4.2].
 
 The ASPIC Bayesian scan parametrises all reheating histories with one
 number, the rescaled reheating parameter R = R_rad ρ_end^(1/4)/M_Pl, R_rad
@@ -169,10 +168,11 @@ ASPIC's fast route [src: arXiv:1312.3529, Sects. 3.1, 3.3]:
   assuming separable priors (Eq. 20).
 - MultiNest with target accuracy 10⁻⁴ on the evidence and 30,000 live
   points, about one CPU hour per model; numerical errors are not quoted
-  because they are negligible against prior sensitivity.
+  because they are negligible against prior sensitivity (arXiv:1312.3529)
+  [src: Sect. 3.3].
 - Result for Planck 2013: of 193 models, 34% ruled out with very strong
   evidence, 26% favoured (15 potential shapes), 9% if Bayesian complexity
-  is included (9 shapes, all plateau) [src: abstract].
+  is included (9 shapes, all plateau) (arXiv:1312.3529) [src: abstract].
 
 ### Step 5. Place predictions on the r–n_s plane
 <!-- key: step-5-place-predictions-on-the-r-ns-plane -->
@@ -186,12 +186,11 @@ without the large-N expansion give r = (4/3)[3(1 − n_s) + 2 − 2√(3(1 − n
 + 1)] (arXiv:2504.20757, Eq. 13) and N_* as a closed function of t = 1 −
 n_s (Eq. 14), whose expansion is N_* ≃ 2/(1 − n_s) + (3/4) ln(1 − n_s) +
 0.47 (Eq. 15). Inverting it gives the refined approximation
-
 n_s ≃ 1 − 2/[N_* − (3/4) ln(2/N_*)], r ≃ 12/[N_* − (3/4) ln(2/N_*)]² (Eq. 17),
 
 which reduces to the usual n_s ≃ 1 − 2/N_*, r ≃ 12/N_*² (Eq. 18) when the
 term −(3/4) ln(2/N_*) — 2.41 at N_* = 50 and 2.55 at N_* = 60 — is dropped
-[src: Sect. 2]. Their "exact" curve is the first-order slow-roll formulas
+(arXiv:2504.20757) [src: Sect. 2]. Their "exact" curve is the first-order slow-roll formulas
 (Eqs. 6–8) evaluated exactly, not a numerical mode integration [src:
 Sect. 2].
 
@@ -344,7 +343,7 @@ The Bayes factor depends on the prior range of the model parameters
   arXiv:1807.06211, Sect. 4.1, and arXiv:1312.3529, Eq. 16): not read.
 - The H(φ) reconstruction of Planck Sect. 5.2 beyond its first paragraph;
   the free-form reconstruction paper by Handley et al. 2019; the Planck
-  2015 inflation paper (reference 229 there).
+  2015 inflation paper (cited there).
 - ASPIC (arXiv:1303.3787) body and Encyclopaedia priors for individual
   models (App. A of arXiv:1312.3529): not read this session.
 - No post-ACT multi-model Bayesian evidence scan was found in a date-sorted

@@ -189,7 +189,7 @@ body read; `[sec]` named secondary source; `[der]` derived here.
   §7 (arXiv:2401.15054) [src: Sect. 4.1].
 - **Helium.** With all weak-rate corrections, PRIMAT claims "a 10⁻⁴
   accuracy" on Y_P = 0.24709 ± 0.00017, the error coming from the τ_n
-  uncertainty (arXiv:1801.08023) [src: abstract; Sect. V.4]; codes without
+  uncertainty (arXiv:1801.08023) [src: abstract]; codes without
   the corrections differ by more than this.
 - **Mitigation.** Name the code, version and rate set with every BBN prior;
   use a code that marginalises over rates, or quote the spread.

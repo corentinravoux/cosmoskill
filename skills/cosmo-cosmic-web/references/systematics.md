@@ -127,7 +127,7 @@ simulations when stellar velocities are used, vanishes with Hα velocities
 (arXiv:1902.09797) [src]. In the Siena Galaxy Atlas the elliptical signal
 reaches ≈ 13σ and the spiral one ≈ 2.8σ, but "these numbers depend on exactly
 how the significance is measured" and peak at different distances from the
-spine (arXiv:2509.02062) [src]. The flip mass in halo simulations varies by
+spine (arXiv:2509.02062) [src: abstract]. The flip mass in halo simulations varies by
 more than an order of magnitude with filament diameter (arXiv:1805.00033)
 [src].
 

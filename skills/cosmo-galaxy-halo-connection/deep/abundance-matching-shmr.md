@@ -156,7 +156,7 @@ above M* = 10¹¹ h⁻²M_⊙ [src: arXiv:1705.06347, Sect. 2.1.1].
   every redshift with an SMF, with parameters log M_1(z) and N(z) quadratic
   in z and β(z), γ(z) power laws in (1 + z) (arXiv:1205.5807, Eqs. 5–8);
   likelihood ℒ = exp(−χ²_r) with χ²_r the bin-averaged and then
-  redshift-averaged squared deviation of log Φ (Eqs. 4, 10) [src: Sects.
+  redshift-averaged squared deviation of log Φ (Eqs. 4 and 10) [src: Sects.
   3.1–3.2]. This normalisation differs from exp(−χ²/2) summed over bins
   and changes the width of the posterior [der: from Eqs. 4 and 10].
 - **Parametric SHMR inside an HOD, with lensing.** DES Y3 writes the central

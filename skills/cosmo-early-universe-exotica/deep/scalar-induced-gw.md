@@ -76,7 +76,8 @@ During radiation domination and for Gaussian perturbations (arXiv:2306.16219)
 with the kernel
 
 𝒦(u,v) = 3 [4v² − (1+v²−u²)²]² (u²+v²−3)⁴ / (1024 u⁸ v⁸) ×
-{ [ln|(3−(u+v)²)/(3−(u−v)²)| − 4uv/(u²+v²−3)]² + π² Θ(u+v−√3) }.
+{ [ln|(3−(u+v)²)/(3−(u−v)²)| − 4uv/(u²+v²−3)]² + π² Θ(u+v−√3) }
+[src: arXiv:2306.16219, Eq. 28].
 
 u and v are the wavenumbers of the two scalar modes in units of k; Θ is the
 Heaviside function. Ω_GW ∝ 𝒫_ℛ², so the amplitude A enters squared [src:
@@ -106,7 +107,8 @@ evaluated at horizon re-entry of the mode. Franciolini et al. write h²Ω_GW =
 mode–temperature and mode–frequency relations
 
 k = 1.5 × 10⁷ Mpc⁻¹ (g_*/106.75)^(1/2) (g_*,s/106.75)^(−1/3) (T_k/GeV) [src:
-Eq. 4]; f = 1.6 nHz (k/10⁶ Mpc⁻¹) [src: Eq. 5].
+arXiv:2306.17149, Eq. 4]; f = 1.6 nHz (k/10⁶ Mpc⁻¹) [src: arXiv:2306.17149,
+Eq. 5].
 
 EPTA multiplies by 2Ω_r⁰ with the g ratios taken against matter–radiation
 equality [src: arXiv:2306.16227, Eq. 29] and converts to residual power with
@@ -181,17 +183,17 @@ Two prescriptions are in use.
 f_PBH = ∫ (dM/M) f(M) [src: Eq. C4], with
 
 f(M) ≃ γ^(3/2) (β(M)/1.6 × 10⁻⁹) (10.75/g_*(T))^(1/4) (0.12/Ω_DM h²)
-(M_⊙/M)^(1/2) [src: Eq. C5],
+(M_⊙/M)^(1/2) [src: arXiv:2306.16219, Eq. C5],
 
 where γ is the ratio of PBH mass to horizon mass and β(M) the mass fraction
 collapsing at formation; M = γ M_H ≃ γ M_⊙ (g_*/10.75)^(−1/6) (4.2 × 10⁶
-Mpc⁻¹/k)² [src: Eq. C6]. For Gaussian density fluctuations β(M) =
+Mpc⁻¹/k)² [src: arXiv:2306.16219, Eq. C6]. For Gaussian density fluctuations β(M) =
 ∫_{δ_c} dδ/(√(2π)σ) exp(−δ²/2σ²) ≃ σ/(√(2π) δ_c) exp(−δ_c²/2σ²) [src:
 Eq. C7], with σ² = (16/81) ∫ (dq/q)(q/k)⁴ W²(q/k) 𝒯²(q, 1/k) 𝒫_ℛ(q)
 [src: Eq. C8], W the window function and 𝒯 the radiation-era transfer
 function [src: Eq. C9]. Choices: γ = 0.356, δ_c = 0.45 for all three
 templates "for computational reasons", Gaussian window W(x) = e^(−x²/2)
-[src: App. C.2].
+[src: arXiv:2306.16219, App. C.2].
 
 **(b) Threshold statistics on the compaction function (Franciolini et al.).**
 The compaction 𝒞 is twice the local mass excess over the areal radius,
@@ -212,7 +214,8 @@ are taken as functions of horizon mass [src: text after Eq. 18].
 
 Why the threshold depends on the spectrum: narrower spectra raise δ_th by up
 to ~20% because fewer modes take part in the collapse and pressure gradients
-are larger [src: SM Sect. II].
+are larger [src: arXiv:2306.17149, SM Sect. II, which writes "up to
+𝒪(20)%"].
 
 ### Step 6. Report
 <!-- key: step-6-report -->
@@ -317,13 +320,14 @@ arXiv:2306.17149, Eq. 10]. Options:
 
 Effect on the GW side: the leading-order Ω_GW is kept; the next-order
 correction scales as A(3f_NL/5)², and both signs of f_NL raise Ω_GW; the
-perturbative regime holds while A(3f_NL/5)² ≪ 1 [src: text after Eq. 7].
+perturbative regime holds while A(3f_NL/5)² ≪ 1 [src: arXiv:2306.17149,
+text after Eq. 7].
 Effect on the PBH side: quasi-inflection-point non-Gaussianity assists
 collapse and pushes the overproduction limit below the 3σ region of
 NANOGrav; curvaton models with r_dec ≳ 0.9 or f_NL ≈ −2 suppress PBHs and
-relax the tension [src: discussion of Fig. 3]. Two independent bounds on
-local non-Gaussianity at PTA scales, each in its authors' notation:
-|f_nl| ≲ 2.34 at 95% from NANOGrav + EPTA (arXiv:2307.02399) [src:
+relax the tension [src: arXiv:2306.17149, discussion of Fig. 3]. Two independent bounds on
+local non-Gaussianity at PTA scales, each in its authors' notation: the
+bound |f_nl| ≲ 2.34 at 95% from NANOGrav + EPTA (arXiv:2307.02399) [src:
 abstract]; |F_NL| ≲ 13.9 for a log-normal spectrum from NANOGrav + PPTA +
 EPTA, and −13.9 ≲ F_NL ≲ −0.1 to avoid PBH overproduction
 (arXiv:2307.01102) [src: abstract]. NANOGrav, with Gaussian
@@ -392,8 +396,8 @@ the peak reaches ~10⁻² (Chen et al. 2026, arXiv:2608.20219) [src: abstract].
 | SIGW BF vs SMBHB | gSIGW bump 120 (NG15), 15 (EPTA); ngSIGW 66, 8.7 | NG15 + EPTA free spectra | arXiv:2307.02399 | Table 1 text |
 | SIGW BF vs SMBHB | 0.9 (inflation-model spectrum) | PPTA DR3, 15 bins | arXiv:2412.09755 | Sect. IV |
 | SIGW best fit | k_* = 10^7.7 Mpc⁻¹, A = 0.06, Δ = 0.21; ΔBIC −2.1 | NG15, Ellis et al. | arXiv:2308.08546 | Table 1 |
-| Joint free spectrum | 66 bins, 1.28–49.1 nHz (NG15 14, PPTA 28, EPTA 24) | three arrays | arXiv:2307.01102 | main text |
-| Local NG bounds | abs(f_nl) ≲ 2.34 (95%); abs(F_NL) ≲ 13.9, −13.9 ≲ F_NL ≲ −0.1 without PBH overproduction | NG15+EPTA; NG15+PPTA+EPTA | arXiv:2307.02399; arXiv:2307.01102 | abstracts |
+| Joint free spectrum | 66 bins, 1.28–49.1 nHz (NG15 14, PPTA 28, EPTA 24) | three arrays | arXiv:2307.01102 | main text, paragraph introducing Fig. 1 |
+| Local NG bounds | abs(f_nl) ≲ 2.34 (95%); abs(F_NL) ≲ 13.9, −13.9 ≲ F_NL ≲ −0.1 without PBH overproduction | NG15+EPTA; NG15+PPTA+EPTA | arXiv:2307.02399; arXiv:2307.01102 | abstract; abstract |
 | QCD tail versus f³ | log₁₀ B = 1.0 (NG15), 0.8 (IPTA DR2) | causality tail | arXiv:2306.17136 | Table 1 |
 | CMB-driven limit on a QCD-epoch tail | new data sets: excluded at 3σ only for f_CT ≳ 100 nHz, affected for ≳ 50 nHz; IPTA DR2 decisively disfavours f_CT ≳ 32 nHz | causality tail + ΔN_eff | arXiv:2306.17136 | Sect. IV |
 
@@ -454,7 +458,7 @@ the peak reaches ~10⁻² (Chen et al. 2026, arXiv:2608.20219) [src: abstract].
 - Application: Figueroa et al. 2023, arXiv:2307.02399 — NANOGrav + EPTA,
   many sources, Bayes factors and AIC, bin smoothing.
 - Comparison: Ellis et al. 2023, arXiv:2308.08546 — multi-model BIC ranking
-  on NANOGrav 15 yr.
+  on the NANOGrav data.
 - Application: Cai et al. 2023, arXiv:2306.17822; Bian et al. 2023,
   arXiv:2307.02376 — broken-power-law and multi-source fits (abstracts).
 - Critique: Chen et al. 2026, arXiv:2608.20219 — lattice versus

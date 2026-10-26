@@ -67,7 +67,7 @@ clustering; "6×2pt" adds CMB lensing and its two cross-correlations (DES Y3 ×
 SPT/Planck: arXiv:2203.12440, arXiv:2206.10824; DES Y3 × Planck PR4:
 arXiv:2510.25596). Foundations: the first detection of galaxy–galaxy lensing,
 a mean tangential polarisation of 0.011 ± 0.006 for 3202 lens–source pairs
-(Brainerd, Blandford & Smail 1996, arXiv:astro-ph/9503073) [src]; the joint
+(Brainerd, Blandford & Smail 1996, arXiv:astro-ph/9503073) [src: abstract]; the joint
 use of galaxy–galaxy, galaxy–shear and shear–shear correlations between all
 redshift bins to constrain dark energy together with the galaxy–halo relation
 (Hu & Jain 2004, arXiv:astro-ph/0312395) [src]; a single two-point framework
@@ -259,7 +259,7 @@ Stage-III analyses use an analytic covariance with three terms: Gaussian
 measures, tomography included, are in Joachimi, Schneider & Eifler 2008
 (arXiv:0708.0387) [src]; the connected term was first computed with the halo
 model, where it raises parameter errors by about 15% for a survey to z ~ 1
-(Cooray & Hu 2001, arXiv:astro-ph/0012087) [src]. Implementations: CosmoLike (Krause & Eifler 2017,
+(Cooray & Hu 2001, arXiv:astro-ph/0012087) [src: abstract]. Implementations: CosmoLike (Krause & Eifler 2017,
 arXiv:1601.05779), the DES Y3 covariance (Friedrich et al. 2021,
 arXiv:2012.08568), KiDS-1000 (arXiv:2007.01844), and OneCovariance for
 KiDS-Legacy (Reischke et al. 2024, arXiv:2410.06962). When a covariance is

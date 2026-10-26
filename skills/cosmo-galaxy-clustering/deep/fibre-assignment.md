@@ -50,7 +50,8 @@ alternative-MTL (altMTL) pipeline therefore replays the survey
    new random numbers seeded by HEALPix pixel, realisation number and a
    user seed (the SV3 run omitted the pixel from the seed) [src: Sect. 4.3].
 2. Re-draw the random promotions: 20% of BGS_FAINT to the higher-priority
-   class, and in the main survey 10% of ELGs to ELG_HIP [src: same].
+   class, and in the main survey 10% of ELGs to ELG_HIP (arXiv:2404.03006)
+   [src: Sect. 4.3].
 3. Process tiles date by date in survey order, with the same sky fibres,
    standards, secondary targets and hardware state as the real run
    [src: Sect. 4.4].
@@ -59,7 +60,7 @@ alternative-MTL (altMTL) pipeline therefore replays the survey
    bad-hardware flags enter automatically. The outcome can come from
    another target class; the fraction of observations whose primary target
    information changes is 6.7% (SV3) and 13.0% (Y1) of dark-time
-   observations [src: Sect. 4.4]. For quasars, whose redshift sets the
+   observations (arXiv:2404.03006) [src: Sect. 4.4]. For quasars, whose redshift sets the
    number of further visits, this is "not exactly correct"; a "twin fibre"
    scheme and, for the final sample, substitution of final QSO redshifts
    are planned [src: same].
@@ -70,11 +71,12 @@ Validation of the pipeline: with randomisation switched off, one
 realisation reproduces SV3 and Y1 exactly; the promotions are
 statistically equivalent [src: Sect. 4.6].
 
-Number of realisations [src: Sect. 4.3, Table 4, Figs. 3–4]: 128 for data
+Number of realisations (arXiv:2404.03006) [src: Sect. 4.3, Table 4,
+Figs. 3–4]: 128 for data
 and 256 for SV3 mocks, chosen from the convergence of the zero-probability
-fraction. After 128 realisations the zero-probability fraction is 0 to
-3 × 10⁻³ % in SV3 but 0.17% to 0.28% in Y1 (ELG 0.17%, BGS_BRIGHT 0.21%,
-LRG 0.22%, QSO 0.28%), and the Y1 trend shows it would be "prohibitive"
+fraction. After 128 realisations the zero-probability fraction reaches at
+most 3 × 10⁻³ % in SV3 but is 0.17% (ELG), 0.21% (BGS_BRIGHT), 0.22% (LRG)
+and 0.28% (QSO) in Y1, and the Y1 trend shows it would be "prohibitive"
 to remove them by more realisations. DR1 used K = 128 replicas plus the
 real one, for data and for one Abacus mock only (mock 11), because
 `fiberassign` is expensive [src: arXiv:2411.12025, Sect. 7].
@@ -100,7 +102,8 @@ Sect. 3.2]:
   values, learnt from a reference run of `fiberassign` (trained on the real
   data for DR1).
 - Sampling: each galaxy is drawn assigned in N_bit replicas with
-  probability F (N_bit should be at least O(100)).
+  probability F (N_bit should be at least O(100)) (arXiv:2411.12025)
+  [src: Sect. 3.2].
 - Anticorrelation: within each FOF group, bits are permuted to maximise
   the anticorrelation of assigned pairs while conserving each galaxy's
   count; a fraction f_anti of bits is then swapped at random to tune it.
@@ -108,7 +111,7 @@ Sect. 3.2]:
   mocks are less dense than the data.
 - DR1 settings: θ_LL = 0.02°, f_anti = 0.1; one tracer at a time; K = 256
   replicas for each of 25 Abacus mocks; IIP weights w = (c + 1)/(K + 1)
-  as written in Sect. 3.2 [src: Sects. 3.2, 7].
+  as written in Sect. 3.2 (arXiv:2411.12025) [src: Sects. 3.2, 7].
 
 Stated reason for a shallow model rather than a neural network: few,
 interpretable parameters and less sensitivity to a small training set
@@ -184,7 +187,7 @@ arXiv:1703.02070, Sect. 6.1]. Two corrections:
   used in Fourier space without up-weighting at large θ.
   (w_comp, f_tile) and (w_IIP, f_NTMP) play analogous roles [src: same].
 
-Settings used in DR1 measurements [src: Sect. 7]: up-weighting below
+Settings used in DR1 measurements (arXiv:2411.12025) [src: Sect. 7]: up-weighting below
 θ_max = 0.2° for ξ and PIP plus up-weighting below 0.25° for P(k); "thanks
 to w_NTMP weights" the choice does not affect results as long as θ_max
 exceeds the collision window.
@@ -219,6 +222,8 @@ completeness (fiducial), IIP, PIP, PIP + angular up-weighting.
 
 ## Choices and what they cost
 <!-- key: choices-and-what-they-cost -->
+
+From arXiv:2411.12025 (Sects. 4–8), arXiv:2406.04804 (Sect. 2.3; θ-cut also in arXiv:2411.12025, Sect. 6.1) and arXiv:2007.09005 (Sects. 4.3–4.4, 7) [src]:
 
 | Scheme | Assumes | Buys | Costs | Used by |
 |---|---|---|---|---|
@@ -261,7 +266,8 @@ size in `systematics.md#covariance`].
 
 **Number of realisations.** More replicas reduce zero-probability objects
 but cannot remove them in DESI-like multi-pass tiling with priority
-conflicts (0.17–0.28% after 128 in Y1) [src: arXiv:2404.03006, Table 4];
+conflicts (after 128 realisations in Y1: 0.17% ELG, 0.21% BGS_BRIGHT,
+0.22% LRG, 0.28% QSO) [src: arXiv:2404.03006, Table 4];
 the efficient estimator and g_K (Eqs. 8–11) are the DESI answer to finite
 K [src: arXiv:2411.12025, Sect. 5.2].
 
@@ -333,7 +339,7 @@ isolates the assignment loss from photometric and redshift-failure effects
   efficient PIP estimator with g_K, full-sample up-weighting, w_NTMP and
   the four-way comparison.
 - Alternative: Pinon et al. 2024, arXiv:2406.04804 — choice of the 0.05°
-  θ-cut and its window.
+  θ-cut and its window [src: Sect. 2.3].
 - Application: Mohammad et al. 2020, arXiv:2007.09005 — eBOSS PIP +
   angular up-weighting, its limits from tiling design.
 - Application: Andrade et al. 2025, arXiv:2503.14742 — how DR2 BAO

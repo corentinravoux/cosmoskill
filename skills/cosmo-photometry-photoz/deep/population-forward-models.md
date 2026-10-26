@@ -13,8 +13,8 @@ of deep-field galaxies (DES Balrog) or catalogue-level deep-to-wide
 transfer (Euclid) inside SOM calibrations, and sensitivity studies of
 population and SPS choices.
 Snapshot: 2026-10-21.
-From: Newman & Gruen 2022 review, Sect. 2.4, 4.1.3, 5.1; Tortorelli & Grün
-2026 review, Sect. 3.0.2–3.0.3 (copied from `references/subtopics.tsv`).
+From: Newman & Gruen 2022 review (arXiv:2206.13633), Sect. 2.4, Sect. 4.1.3
+and Sect. 5.1; Tortorelli & Grün 2026 review (arXiv:2605.06790), Sect. 3.0.2–3.0.3 (copied from `references/subtopics.tsv`).
 
 Already in L2, not repeated here: why stacking per-galaxy posteriors is
 biased and the CHIPPR argument
@@ -136,7 +136,7 @@ validation in LSST DESC [src: arXiv:2405.04740].
 ### Step 3. Build the data model
 <!-- key: step-3-build-the-data-model -->
 
-- **Analytic (Alsing 2023).** Student-t with two degrees of freedom,
+- **Analytic (Alsing 2023, arXiv:2207.05819).** Student-t with two degrees of freedom,
   P(d | f, σ, η) ∝ Π_b [1 + ½((d_b − α_zp,b f_b)/Σ_b)²]^(−3/2) (Eq. 16),
   Σ_b² = σ_b² + (β_b α_zp,b f_b)² (Eq. 17); zero points α_zp fixed to the
   published values and error floors β = 0.03 in all bands for GAMA and
@@ -548,8 +548,8 @@ beyond comparison with the Stage-III and LSST requirements
 <!-- key: not-verified -->
 
 - The MCCL comparison value 0.596 for the fiducial n(z) (arXiv:1906.01018):
-  ⟨z̄⟩ = 0.598 ± 0.024 was found in the text on 2026-10-21, 0.596 was not
-  (it may sit in a figure or table the HTML does not render).
+  closed on 2026-10-25: the paper states the mean of the fiducial n(z),
+  z̄ = 0.596, next to ⟨z̄⟩ = 0.598 ± 0.024 [src: Sect. IV.2].
 - The Thorp et al. pop-cosmos updates (the IRAC-selected model used for
   KiDS) and the companion validation paper with QQ/PP plots: cited in
   arXiv:2602.03935 and arXiv:2402.00935, not read; no identifier recorded.

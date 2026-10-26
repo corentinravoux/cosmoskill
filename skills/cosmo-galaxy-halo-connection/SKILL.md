@@ -30,28 +30,34 @@ re-verify against the cited paper before a number enters a manuscript.
 <!-- key: what-an-expert-holds-in-mind -->
 
 - Formation efficiency peaks near M_h ~ 10¹² M_⊙ with < 20% of baryons in
-  stars; M* scatter at fixed M_h is < 0.2 dex above it (arXiv:1804.03097).
+  stars; M* scatter at fixed M_h is < 0.2 dex above it (arXiv:1804.03097,
+  abstract).
 - An occupation parameter needs its mass definition, finder and cosmology;
   FoF halo bias is ~10% below Δ = 200 (arXiv:1001.3162, abstract).
-- The HMF is not universal at 5%; amplitude falls 20–50% to z = 2.5
-  (arXiv:0803.2706).
-- DESI One-Percent LRGs: f_sat = 11–14%, log M_h = 13.2–13.4; QSOs 12.65;
-  ELGs ~11.9, with conformity (arXiv:2306.06314, arXiv:2306.06319).
-- Assembly bias is predicted (> 5× at 10¹¹ M_⊙/h, arXiv:astro-ph/0506510)
+- The HMF is not universal at its ≲ 5% calibration accuracy; amplitude falls
+  ≈ 20–50% from z = 0 to 2.5 (arXiv:0803.2706, abstract).
+- DESI One-Percent LRGs: f_sat = 11 ± 1% and log M_h = 13.40 at
+  0.4 < z < 0.6, 14 ± 1% and 13.24 at 0.6 < z < 0.8; QSOs log M_h = 12.65
+  (arXiv:2306.06314, abstract); ELGs ~11.9, with conformity
+  (arXiv:2306.06319, abstract).
+- Assembly bias is predicted (> 5× at 10¹¹ h⁻¹M_⊙, arXiv:astro-ph/0506510,
+  abstract)
   but galaxy-level detections split: yes in SDSS and CMASS
   (arXiv:1606.07817, arXiv:2010.04182), Q_sat = 0.05 ± 0.14 in DESI DR1
-  (arXiv:2510.20896).
+  (arXiv:2510.20896, abstract).
 - The redMaPPer halo assembly-bias detection (arXiv:1506.06135) reflects
-  projection effects: ratio 1.02 ± 0.14 (arXiv:1611.00366).
-- Lensing is low: 20–40% at Planck for CMASS (arXiv:1611.08606); A = 0.79 ±
-  0.03 at Planck, consistent with 1 at S8 = 0.76 (arXiv:2202.07440).
+  projection effects: ratio 1.02 ± 0.14 (arXiv:1611.00366, abstract).
+- Lensing is low: 20–40% at Planck for CMASS (arXiv:1611.08606, abstract);
+  A = 0.79 ± 0.03 at Planck, consistent with 1 at S8 = 0.76
+  (arXiv:2202.07440, abstract).
 - Galaxy–halo explanations: assembly bias, satellite segregation, baryons
   (arXiv:2211.01744), SHAMe (arXiv:2305.09637); UNIONS sees no significant
   effect (arXiv:2606.23651).
-- Joint clustering + lensing fits give S8 ≈ 0.74–0.81: DESI DR1 0.797
-  (arXiv:2512.15962), KiDS-1000 0.773 (arXiv:2210.03110), HSC-Y3 0.763
-  (arXiv:2304.00704), UNIONS 0.743 (arXiv:2606.23651), satellite kinematics
-  0.81 ± 0.05 (arXiv:2512.14889).
+- Joint clustering + lensing fits give S8: DESI DR1 0.797
+  (arXiv:2512.15962, abstract), KiDS-1000 0.773 (arXiv:2210.03110,
+  abstract), HSC-Y3 0.763 (arXiv:2304.00704, abstract), UNIONS 0.743
+  (arXiv:2606.23651, Sect. 7.2), satellite kinematics 0.81 ± 0.05
+  (arXiv:2512.14889, abstract).
 - BOSS centrals move at 0.22 and satellites at 0.86 of the dark-matter
   velocity dispersion (arXiv:1407.4811, abstract).
 - Dwarf SHMR in DESI DR1 BGS: slope 2.08 ± 0.21, scatter up to 0.68 dex
@@ -59,11 +65,11 @@ re-verify against the cited paper before a number enters a manuscript.
 - BCG stellar masses from standard photometry are low by ~2–4
   (arXiv:1401.7329).
 - The analytic halo model needs non-linear bias and exclusion: ignoring them
-  costs > 40% at ~1 h⁻¹Mpc (arXiv:1206.6890).
+  costs > 40% at ~1 h⁻¹Mpc (arXiv:1206.6890, abstract).
 - Satellite assumptions are cosmology-level: DM-tracing or subhalo-like
   profiles put satellite kinematics ~2σ and ~5σ from Planck
-  (arXiv:2512.14889); Poisson satellites move KiDS-1000 S8 from 0.773 to
-  0.951 (arXiv:2210.03110).
+  (arXiv:2512.14889, Sect. 5.2); Poisson satellites move KiDS-1000 S8 from
+  0.773 to 0.951 (arXiv:2210.03110, abstract and Sect. 4.4).
 
 ## Systematics a referee checks
 <!-- key: systematics-a-referee-checks -->
@@ -121,7 +127,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 4k; methods 11k; results 8k; surveys 4k; systematics 6k; deep/abundance-matching-shmr 7k; deep/assembly-bias 9k; deep/empirical-sam-hydro 9k; deep/hod-clf 9k; deep/profiles-concentration 6k; deep/satellites 9k.
+Sizes, in thousands of tokens: L1 3k; open 4k; methods 12k; results 8k; surveys 4k; systematics 6k; deep/abundance-matching-shmr 7k; deep/assembly-bias 9k; deep/empirical-sam-hydro 10k; deep/hod-clf 9k; deep/profiles-concentration 6k; deep/satellites 9k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

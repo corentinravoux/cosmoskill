@@ -54,10 +54,10 @@ From arXiv:2506.20707, Table 1 (Sect. II):
 
 Notes on this table.
 
-- The CMB-SPA column changed between arXiv versions. The LaTeX source of v2
-  carries both values: H₀ went from 67.24 ± 0.35 to 67.19 ± 0.38 and n_s
-  from 0.9684 ± 0.0030 to 0.9679 ± 0.0033 (arXiv:2506.20707, Sect. II, v2
-  LaTeX source). Quote the v2 values and say so.
+- The CMB-SPA column changed between arXiv versions: H₀ went from
+  67.24 ± 0.35 (v1) to 67.19 ± 0.38 (v2) and n_s from 0.9684 ± 0.0030 (v1)
+  to 0.9679 ± 0.0033 (v2) (arXiv:2506.20707v1 and v2) [src: Sect. II of
+  each version]. Quote the v2 values and say so.
 - The τ row is a posterior under a common prior, not six measurements.
 - SPT-3G D1 alone is 6.2σ from the SH0ES value used by the paper; CMB-SPA
   is 6.4σ (arXiv:2506.20707) [src: Sect. II]. The paper prints the n_s = 1
@@ -186,7 +186,7 @@ Dark-energy conclusions belong to `cosmo-dark-energy-modified-gravity`.
 | A_lens = 1.08 (+0.10/−0.12), 1.24 (+0.18/−0.22), 0.89 (+0.10/−0.23) | ACT DR6 TT, TE, EE separately | ΛCDM+A_lens | arXiv:2503.14452 | [src: Sect. VIII.5] |
 | A_lens = 1.043 ± 0.049 | W-ACT | ΛCDM+A_lens | arXiv:2503.14452 | [src: Sect. VIII.5] |
 | A_lens = 1.081 ± 0.043 | P-ACT | ΛCDM+A_lens | arXiv:2503.14452 | [src: Sect. VIII.5] |
-| A_lens = 1.016 (+0.048/−0.054) | SPT+ACT T&E | ΛCDM+A_lens | arXiv:2506.20707 summary | [src] |
+| A_lens = 1.016 (+0.048/−0.054) | SPT+ACT T&E | ΛCDM+A_lens | arXiv:2506.20707 | [src: Sect. II] |
 | A_2pt = 0.986 (+0.078/−0.097), A_recon = 0.974 (+0.081/−0.11) | SPT-3G D1 | ΛCDM+A_2pt+A_recon | arXiv:2506.20707 | [src: Sect. VII.2.3] |
 | A_2pt = 1.026 ± 0.048, A_recon = 0.990 ± 0.050 | SPT+ACT | same | arXiv:2506.20707 | [src: Sect. VII.2.3] |
 | A_2pt = 1.079 ± 0.038, A_recon = 1.041 ± 0.031 | CMB-SPA | same | arXiv:2506.20707 | [src: Sect. VII.2.3] |
@@ -418,6 +418,8 @@ What superseded what:
   Sect. II) was read only as quoted by ACT DR6 (73.17 ± 0.86 km/s/Mpc,
   arXiv:2503.14452) [sec: Sect. VIII.4]; see `cosmo-distance-ladder-h0`.
 - The Planck (SPT rerun) N_eff of 2.87 ± 0.19, tabulated here before
-  2026-10-23, was not found in the text of arXiv:2506.20707 (Sect. VII.2.4
-  and Table 5 give SPT-3G D1, SPT+ACT, CMB-SPA and CMB-SPA + DESI only);
-  the row was removed.
+  2026-10-23, is not a Planck (SPT rerun) result: Sect. VII.2.4 of
+  arXiv:2506.20707 quotes N_eff = 2.87 ± 0.19 as "the Planck constraint",
+  with a citation (its reference 35), and Table 5 gives SPT-3G D1, SPT+ACT,
+  CMB-SPA and SPT-3G D1 + DESI only (read 2026-10-24); the row stays
+  removed.

@@ -17,8 +17,8 @@ galaxy–halo connection; observational effects are not detected. For full
 shape the budget is quoted in units of the statistical error and is dominated
 by the galaxy–halo connection, priors, imaging and fibre assignment.
 
-**DESI DR1 BAO budget** (DESI Collaboration 2024, arXiv:2404.03000,
-Sect. 5.5) [src]:
+**DESI DR1 BAO budget** (DESI Collaboration 2024).
+From arXiv:2404.03000, Sect. 5.5 and Table 13 [src]:
 
 | Source | α_iso [%] | α_AP [%] | Comment |
 |---|---|---|---|
@@ -34,7 +34,7 @@ Body detail (arXiv:2404.03000) [src: Sect. 5.5, Tables 12–13, Eqs. 17–20]:
 
 | Item | What the paper states |
 |---|---|
-| Per-space totals before the worst case | ξ: 0.245% (α_iso) and 0.3% (α_AP, LRG/ELG); P(k): 0.18% to 0.245% (α_iso) because the P(k) HOD term is 0.1–0.12% for LRG, ELG, QSO |
+| Per-space totals before the worst case | ξ: 0.245% (α_iso) and 0.3% (α_AP, LRG/ELG); P(k): α_iso totals of 0.245, 0.18, 0.245 and 0.19 in the tracer columns of Table 13, lower than in ξ where the P(k) HOD term of Table 12 is 0.1, 0.1 and 0.12 (0.2 in its first column) |
 | Imaging | largest change 0.3% (ELG1), 0.1% for the rest, tested on data; "not detected" |
 | Fiducial D_A(z) | < 0.1%, upper limit set by mock precision |
 | How it enters | terms added in quadrature, C_sys = diag(0.245², 0.3²) in (α_iso, α_AP), in per cent, assumed uncorrelated; projected to (α_⊥, α_∥) as 0.265% and 0.316% with correlation +0.478; added to the statistical covariance of each bin |
@@ -53,8 +53,8 @@ a theory systematic of 0.3% on α_∥ and α_⊥ is added to the statistical
 covariance, degrading the isotropic precision to 0.7% [src:
 arXiv:2503.14738, Sect. III.2].
 
-**DESI DR2 BAO budget per tracer** (Andrade et al. 2025, arXiv:2503.14742)
-[src: Table 5, Sect. V.2], in per cent, terms added in quadrature:
+**DESI DR2 BAO budget per tracer** (Andrade et al. 2025), in per cent,
+terms added in quadrature, from arXiv:2503.14742 [src: Table 5, Sect. V.2]:
 
 | Tracer | α_iso: theory, HOD, fiducial → total | α_AP: theory, HOD, fiducial → total |
 |---|---|---|
@@ -64,24 +64,25 @@ arXiv:2503.14738, Sect. III.2].
 | ELG1, ELG2 | 0.1, 0.17, 0.1 → 0.221 | 0.2, none, 0.1 → 0.224 |
 | QSO | 0.1, 0.17, 0.1 → 0.221 | 0.2, 0.19, 0.18 → 0.329 |
 
-- The text gives the α_AP total as rising "from 0.3% to 0.335%"; the table
-  prints 0.329 [src].
+- The text gives the α_AP total as rising "from 0.3% to 0.335%"
+  (arXiv:2503.14742) [src: Sect. V.2]; the table prints 0.329 [src: Table 5].
 - QSO, newly fitted in 2D, takes the whole LRG3+ELG1 budget for want of a 2D
   HOD test; LRG3 takes the combined-bin budget because its n(z) and bias
   evolve across the bin [src: Sect. V.2].
 - Theory terms were not re-evaluated (DR1 precision 0.01–0.1%), nor were
   reconstruction, fibre-assignment and spectroscopic terms; fibre assignment
-  is tested only through unbiased recovery on realistic mocks [src: Sect. V.2].
+  is tested only through unbiased recovery on realistic mocks
+  (arXiv:2503.14742) [src: Sect. V.2].
 - Baseline: systematics uncorrelated across bins. Post-unblinding test with
   theory terms fully or half correlated (covariance ½(0.1%)² on α_iso,
   ½(0.2%)² on α_AP between all bins): negligible shift of the DESI + CMB +
-  DESY5 w0wa best fit [src: Sect. VII.1].
+  DESY5 w0wa best fit (arXiv:2503.14742) [src: Sect. VII.1].
 - Redshifts are used in the solar-barycentre frame, not the CMB frame; the
   angle-averaged offset in the nearest BGS bin is 0.0002 in z, negligible
-  [src: Sect. V.2].
+  (arXiv:2503.14742) [src: Sect. V.2].
 
-**DESI DR1 full-shape budget** (Adame et al. 2024, arXiv:2411.12021,
-Sect. 5.8) [src], in units of σ_DR1:
+**DESI DR1 full-shape budget** (Adame et al. 2024), in units of σ_DR1.
+From arXiv:2411.12021, Sect. 5.8 (total also in its Table 7) [src]:
 
 | Source | Size | Treatment |
 |---|---|---|
@@ -120,7 +121,8 @@ subdominant except for QSO, and is still counted.
 
 **Mechanism.** Mode coupling shifts and damps the acoustic feature; galaxy
 bias and RSD add anisotropic terms. Before reconstruction the shift of the
-BAO scale is below 0.3% [src] (DESI Collaboration 2024, arXiv:2404.03002).
+BAO scale is below 0.3% (DESI Collaboration 2024, arXiv:2404.03002)
+[src: Sect. 2.3].
 
 **Size.** After reconstruction, no more than 0.1% on the isotropic and 0.2%
 on the anisotropic distance [src] (Chen et al. 2024, arXiv:2402.14070).
@@ -165,8 +167,8 @@ arXiv:2404.03000, Table 8]: BGS 0.19% / 0.20%; LRG 0.066% / 0.074%; ELG
 
 **Size, full shape.** Shifts across HOD variants are often above 0.2 σ_DR1,
 strongest for ELG and QSO, and appear mainly in the growth parameter in the
-ShapeFit basis [src] (Findlay et al. 2024, arXiv:2411.12023;
-arXiv:2411.12021).
+ShapeFit basis (Findlay et al. 2024, arXiv:2411.12023; arXiv:2411.12021)
+[src: arXiv:2411.12021, Sect. 5.2, for the 0.2 σ_DR1].
 
 **Mitigation.** A systematic covariance added to the data covariance
 (arXiv:2411.12023). Alternatively, priors informed by the HOD (Zhang et al.
@@ -190,11 +192,12 @@ reconstruction with a fiducial growth rate and bias, and compressed analyses
 use a fiducial template. BAO are insensitive to this at leading order unless
 the fiducial is far from the truth.
 
-**Size.** BAO: 0.1% in DR1; α_AP raised to 0.18% in DR2 (Pérez-Fernández et
-al. 2024, arXiv:2406.06085; arXiv:2503.14738) [src]. Full modelling: maximum
+**Size.** BAO: 0.1% in DR1 (Pérez-Fernández et al. 2024, arXiv:2406.06085)
+[src: abstract]; α_AP raised to 0.18% in DR2 (arXiv:2503.14742)
+[src: Table 5]. Full modelling: maximum
 shift 0.22 σ_DR1 in ΛCDM and 0.12σ with supernova mock data in w0waCDM;
 ShapeFit compressed parameters below 0.45 σ_DR1, the slope m being the most
-affected [src] (Gsponer et al. 2025, arXiv:2509.08057).
+affected (Gsponer et al. 2025, arXiv:2509.08057) [src: abstract].
 
 **Validation.** Rerun mocks with the four secondary AbacusSummit cosmologies
 (low Ω_m, thawing dark energy, high N_eff, low σ8), iterating grid, template
@@ -213,20 +216,21 @@ full-shape systematics paper.
 <!-- key: fibre-assignment-and-fibre-collisions -->
 
 **Mechanism.** A fibre positioner cannot serve two close targets in one pass.
-In SDSS the limit is a 62″ collision radius [src] (Mohammad et al. 2020,
-arXiv:2007.09005). In DESI each robotic positioner has a finite patrol
+In SDSS the limit is a 62″ collision radius (Mohammad et al. 2020,
+arXiv:2007.09005) [src: abstract]. In DESI each robotic positioner has a finite patrol
 radius, and target classes have different priorities, so incompleteness is
 correlated with density and with the number of overlapping tiles; the
 clustering amplitude is suppressed in a scale-dependent way (Bianchi et al.
 2024, arXiv:2411.12025).
 
 **Size.** DESI assignment completeness in DR1: BGS 61.6%, LRG 69.2%, ELG 35%,
-QSO 87.6% [src] (arXiv:2404.03002); in DR2: BGS 75.5%, LRG 82.6%, ELG 53.7%,
-QSO 93.6% [src] (arXiv:2503.14738). On BAO the effect is not detected: the
+QSO 87.6% (arXiv:2404.03002) [src: Sect. 2.2, sample paragraphs]; in DR2:
+BGS 75.5%, LRG 82.6%, ELG 53.7%, QSO 93.6% (arXiv:2503.14738)
+[src: Table 2]. On BAO the effect is not detected: the
 mean shift between complete and fibre-assigned mocks is
 Δα_iso = 0.00149 ± 0.00077, just under 2σ, flagged for a closer look in
-future analyses [src] (arXiv:2404.03000). On full shape about 0.2 σ_DR1
-[src] (arXiv:2411.12021).
+future analyses (arXiv:2404.03000) [src: Sect. 5.3]. On full shape about
+0.2 σ_DR1 [src] (arXiv:2411.12021).
 
 **Mitigation.**
 
@@ -260,7 +264,7 @@ future analyses [src] (arXiv:2404.03000). On full shape about 0.2 σ_DR1
   in the 0.46 total; in the data-vector budget it enters only through the
   window-rotation marginalisation [src: Sect. 5.8].
 - On BAO scales, nearest-neighbour up-weighting was adequate for eBOSS at
-  s > 20 h⁻¹ Mpc [src] (arXiv:2007.09005).
+  s > 20 h⁻¹ Mpc (arXiv:2007.09005) [src: abstract].
 
 **Validation.** Mocks with the real fibre-assignment code run on alternative
 target ledgers ("altmtl") against "complete" mocks.
@@ -335,13 +339,14 @@ fibre; catastrophic redshifts displace a small fraction of objects radially;
 redshift errors smear the line-of-sight clustering.
 
 **Size.** Success-rate fluctuations of up to 3% with effective spectroscopic
-signal-to-noise for LRG, BGS, QSO [src] (Krolewski et al. 2024,
-arXiv:2405.17208). For ELGs, 0.26% catastrophic redshifts in DR1 and a
-redshift uncertainty of 8.5 km/s; the effect on RSD parameters is below 0.2σ
-[src] (Yu et al. 2024, arXiv:2405.16657). DR2 redshift success: BGS 98.8%,
-LRG 99.0%, ELG 73.9%, QSO 68.0% [src] (arXiv:2503.14738). eBOSS for
-comparison: 98% success for LRGs with under 1% catastrophic failures; 95% and
-2% for quasars [src] (Ross et al. 2020, arXiv:2007.09000).
+signal-to-noise for LRG, BGS, QSO (Krolewski et al. 2024,
+arXiv:2405.17208) [src: abstract]. For ELGs, 0.26% catastrophic redshifts in
+DR1 and a redshift uncertainty of 8.5 km/s; the effect on RSD parameters is
+below 0.2σ (Yu et al. 2024, arXiv:2405.16657) [src: abstract]. DR2 redshift
+success: BGS 98.8%, LRG 99.0%, ELG 73.9%, QSO 68.0% (arXiv:2503.14738)
+[src: Table 2]. eBOSS for comparison: 98% success for LRGs with under 1%
+catastrophic failures; 95% and 2% for quasars (Ross et al. 2020,
+arXiv:2007.09000) [src: abstract].
 
 **Mitigation.** Redshift-failure weights and removal of badly performing
 fibres.
@@ -372,8 +377,7 @@ arXiv:1904.08851).
 assigned as in the data; odd multipoles as a null test of the wide-angle
 model.
 
-**Relevance.** Negligible for BAO; small for RSD at k > 0.02 h Mpc⁻¹;
-decisive for f_NL.
+**Relevance.** Negligible for BAO; small for RSD; decisive for f_NL.
 
 ## 8. Covariance
 <!-- key: covariance -->
@@ -411,10 +415,11 @@ inference, not of the data, but it changes quoted parameters.
 
 **Size.** BOSS: posterior mean versus best fit up to 1σ or 2σ depending on
 the prior set [src] (Simon et al. 2023, arXiv:2208.05929); frequentist
-intervals up to 1.9 times wider [src] (Holm et al. 2023, arXiv:2309.04468).
-DESI DR1 in w0waCDM: shifts of 2.1σ to 6.6σ between maximum likelihood and
-posterior mean for full shape + BAO without supernovae [src] (Morawetz et al.
-2025, arXiv:2508.11811).
+intervals up to 1.9 times wider (Holm et al. 2023, arXiv:2309.04468)
+[src: abstract]. DESI DR1 in w0waCDM: shifts of 2.1σ, 4.1σ, 6.5σ, 6.3σ and
+6.6σ in σ8, H0, Ω_m, w0 and wa between maximum likelihood and posterior mean
+for full shape + BBN + n_s prior, without supernovae (Morawetz et al. 2025,
+arXiv:2508.11811) [src: abstract; Sect. 4.2 for the parameter order].
 
 **Mitigation.** Scaling bias parameters with σ8, dropping the hexadecapole
 (DESI DR1 baseline); HOD-informed priors (arXiv:2504.10407); ShapeFit
@@ -446,10 +451,11 @@ separately [src: arXiv:2404.03000, Sect. 5.5].
 
 Overlapping samples are correlated. DESI estimates the correlation between
 power-spectrum estimates from overlapping samples with an effective-volume
-formula: C ≈ 0.57 between DR2 LRG2 and eBOSS LRG, 0.21 for DR1 [src]
-(arXiv:2503.14738); C = sqrt(N_DR1/N_DR2) between releases for galaxies and
-C = 0.61 for Lyα [src]. QSO versus ELG in 1.1 < z < 1.6 has C < 0.1 and is
-ignored [src] (arXiv:2404.03002). Combining DR1 full shape with DR2 BAO
+formula: C ≈ 0.57 between DR2 LRG2 and eBOSS LRG, 0.21 for DR1
+(arXiv:2503.14738) [src: Sect. III.3.2]; C = sqrt(N_DR1/N_DR2) between
+releases for galaxies and C = 0.61 for Lyα [src: Sect. III.3.1 and its
+footnote 12]. QSO versus ELG in 1.1 < z < 1.6 has C < 0.1 and is
+ignored (arXiv:2404.03002) [src: Sect. 2.3.2]. Combining DR1 full shape with DR2 BAO
 requires a joint mock covariance (arXiv:2602.18761).
 
 ## 12. Confirmation bias

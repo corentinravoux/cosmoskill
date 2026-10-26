@@ -96,13 +96,14 @@ B → 4, M_b → 0, f_* → 0 [src: Sect. 6.4].
 
 The single-parameter model fits all six linearly in θ = log₁₀(T_AGN/10^7.8 K)
 to three BAHAMAS runs (7.6, 7.8, 8.0), with β = 2 fixed (Table 5); it
-follows the simulated response to "within a couple of per cent" [src: Sect.
-6.3]. Two facts a practitioner must hold [src: Sects. 6.3–6.4]:
+follows the simulated response to "within a couple of per cent"
+(arXiv:2009.01858) [src: Sect. 6.3, Fig. 5]. Two facts a practitioner must hold [src: Sects. 6.3–6.4]:
 
 - It "has no limit in which the 'gravity only' result is recovered".
 - The recommended prior is 7.6 < log₁₀T_AGN < 8.0 (the BAHAMAS range that
-  reproduces observed halo gas fractions), or 7.6–8.3 to include cosmo-OWLS;
-  cosmo-OWLS AGN 8.7 is matched by an effective 8.3.
+  reproduces observed halo gas fractions), or 7.6–8.3 to include cosmo-OWLS
+  (arXiv:2009.01858) [src: Sect. 6.4]; cosmo-OWLS AGN 8.7 is matched by an
+  effective 8.3 [src: Sect. 6.3].
 
 The priors analyses use extend beyond the fitted range: KiDS-Legacy
 [7.3, 8.3] (L2), described in its model section as T_AGN ∈ [7.1, 8.3]
@@ -187,8 +188,8 @@ arXiv:2305.09710) [src: Abstract].
 | Route | Assumes | Buys | Costs | Who |
 |---|---|---|---|---|
 | Scale cuts with one-sided contamination | the chosen simulation bounds reality | no extra parameters | result tied to the bounding simulation; information discarded | DES Y3, HSC Y3 (L2) |
-| Two-sided cuts around a fixed moderate model | the truth lies between gravity-only and BAHAMAS-8 | keeps slightly smaller scales | 0.7σ (Illustris-1) to ≈ 1.5σ ("more extreme") bias if feedback is stronger | DES Y6 |
-| HMcode-2020 T_AGN free | BAHAMAS-like feedback family | marginalises with one parameter | no gravity-only limit; priors extrapolate beyond 7.6–8.0 | KiDS-Legacy, joint DES + KiDS |
+| Two-sided cuts around a fixed moderate model | the truth lies between gravity-only and BAHAMAS-8 | keeps slightly smaller scales | bias if feedback is stronger: 0.7σ in S8 for Illustris-1 (arXiv:2602.10065) [src: Sect. IV.3]; at most ≈ 1.5σ for "more extreme scenarios" (arXiv:2601.14859) [src: Sect. III.1] | DES Y6 |
+| HMcode-2020 T_AGN free | BAHAMAS-like feedback family | marginalises with one parameter | no gravity-only limit; priors extrapolate beyond 7.6–8.0 (arXiv:2009.01858) [src: Sect. 6.4] | KiDS-Legacy, joint DES + KiDS |
 | Baryonification emulator | profile parametrisation, emulator range | links to gas observables | 5–7 parameters, or 1 with 5% error; cosmology range restrictions | DES Y3 reanalyses |
 | A_mod | one shape for the suppression | model-agnostic test | no physical meaning; degenerate with S8 | robustness tests |
 | COSEBIs / BNT | the kernel localises scales | small-scale information or targeted nulling | BNT result depends on covariance prescription | KiDS |
@@ -303,7 +304,8 @@ dark-matter-only). Three items not there:
 <!-- key: not-verified -->
 
 - Which simulations the DES Y6 framework calls "more extreme scenarios"
-  (the ≈ 1.5σ statement): not named in the paragraph read.
+  (the statement on their maximum S8 shift, arXiv:2601.14859): not named in
+  the paragraph read.
 - The BCemu and BACCO emulator accuracies in their test sets (Sects.
   2.2.3 and 3.4): not read.
 - FLAMINGO and SP(k) emulators as used in a lensing likelihood: no analysis

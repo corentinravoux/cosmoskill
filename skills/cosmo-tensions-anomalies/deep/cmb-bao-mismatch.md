@@ -53,11 +53,13 @@ CMB side, DESI's baseline ("CMB" in all DESI DR2 papers) [src:
 arXiv:2503.14738, Sect. IV.2]:
 
 - Planck simall and Commander for ℓ < 30, CamSpec (NPIPE PR4) for ℓ ≥ 30,
-  plus the Planck + ACT DR6 lensing likelihood, version 1.2.
+  plus the Planck + ACT DR6 lensing likelihood, version 1.2 [src:
+  arXiv:2503.14738, Sect. IV.2].
 - Reason for CamSpec over HiLLiPoP/LoLLiPoP: "the speed of evaluation of
   the likelihood code"; both PR4 likelihoods reduce the A_L anomaly and use
   more sky than Plik.
-- Its ΛCDM result: Ω_m = 0.3169 ± 0.0065, H0 = 67.14 ± 0.47 [src: Table 5].
+- Its ΛCDM result: Ω_m = 0.3169 ± 0.0065, H0 = 67.14 ± 0.47 [src:
+  arXiv:2503.14738, Table 5].
 
 CMB side, SPT-3G D1 paper [src: arXiv:2506.20707, Sect. VII.1, Table 3]:
 "Planck" there means PR3 Plik high-ℓ T&E + low-ℓ TT + PR4 lensing, and every
@@ -107,11 +109,14 @@ correlations between the two parameters" and translates it "to equivalent
 statistical significances for a one-dimensional Gaussian distribution"
 [src: arXiv:2506.20707, Sect. VII.3].
 
-Conversion check [der: two degrees of freedom, PTE = exp(−χ²/2), then the
-two-tailed Gaussian quantile]: Sailer et al. obtain χ² = 6.55 and 2.07 for
-τ priors 0.06 and 0.09 and quote 2.1σ and 0.9σ [src: arXiv:2504.16932,
-Sect. III]; exp(−3.275) = 0.038 gives 2.08σ and exp(−1.035) = 0.355 gives
-0.93σ: the quoted σ is the two-dimensional PTE, not √χ². DESI and SPT
+Sailer et al. obtain χ² = 6.55 and 2.07 for τ priors 0.06 and 0.09 and
+quote 2.1σ and 0.9σ [src: arXiv:2504.16932, Sect. III].
+
+Converting those χ² values through the probability to exceed for two
+degrees of freedom reproduces the quoted σ, which is therefore not the
+square root of χ² [der].
+
+DESI and SPT
 use posterior means; Sailer et al. use "the best fit (Ω_m, H0 r_d) values"
 [src: arXiv:2504.16932, Sect. III].
 
@@ -139,11 +144,13 @@ use posterior means; Sailer et al. use "the best fit (Ω_m, H0 r_d) values"
 
 - DR1 against DR2, assuming perfect correlation as the conservative
   choice: joint error σ = √(σ²_DR2 + σ²_DR1 − 2Cσ_DR1) with C = √(N_DR1/N_DR2)
-  for galaxies and quasars and C = 0.61 for Lyα (footnote 12). Largest
+  for galaxies and quasars and C = 0.61 for Lyα (footnote 12 of
+  arXiv:2503.14738). Largest
   shifts 1.56σ in α_iso (LRG3 + ELG1) and 1.93σ in α_AP (LRG2);
   Kolmogorov–Smirnov statistic 0.25 for 12 points, p = 0.40.
 - Each redshift bin fitted in ΛCDM separately: largest difference 1.8σ
-  (LRG1 against LRG3 + ELG1); joint fit χ²/dof = 10.2/(13 − 2).
+  (LRG1 against LRG3 + ELG1); joint fit χ²/dof = 10.2/(13 − 2)
+  (arXiv:2503.14738) [src: Sect. III.3.1].
 
 ### Step 6. Localise the mismatch
 <!-- key: step-6-localise-the-mismatch -->
@@ -162,7 +169,7 @@ so "there is no need to consider nuisance parameters, priors and other
 complexities"; D^perp is marginalised over D^par in the Gaussian
 approximation [src: Eq. 5]. D^par is read conditionally on D^perp fixed at
 the Planck value [src: Eq. 6] and mapped linearly to ω_m, ω_m = 0.14205 +
-β(D^par − D^par_Planck) [src: Eq. 7]. Results in Numbers below.
+β(D^par − D^par_Planck) [src: arXiv:2505.02658, Eq. 7]. Results in Numbers below.
 
 (b) SVD modes of the distance data (Zaldarriaga 2026, arXiv:2606.30527,
 Sect. II.3). Whiten the DESI ratios (and, separately, the supernova
@@ -175,7 +182,7 @@ a_α the data projection, ⟨c_α⟩ and σ_cα the mean and spread of the chain
 projections, "1" the unit measurement variance after whitening. Gaussianity
 of c_α checked by Kolmogorov–Smirnov tests [src: Sect. II.3.5]. The CMB
 reference is ACT DR6 TT/TE/EE + Planck 2018 low-ℓ, without lensing, 2000
-samples drawn from 755,302 [src: Sect. II.1.3]; 5000 samples shift the BAO
+samples drawn from 755,302 [src: arXiv:2606.30527, Sect. II.1.3]; 5000 samples shift the BAO
 tension by < 0.1σ (footnote 5).
 
 (c) One parameter at a time with an "update difference in means": Jhaveri
@@ -189,6 +196,8 @@ independent data sets.
 
 ### Which CMB data
 <!-- key: which-cmb-data -->
+
+From arXiv:2506.20707, Sect. VII.3:
 
 | CMB set (SPT's definitions) | 100 Ω_m | h r_d [Mpc] | Distance to DESI | Place read |
 |---|---|---|---|---|
@@ -218,6 +227,8 @@ Why they differ, as the authors state it:
 ### τ treatment
 <!-- key: tau-treatment -->
 
+From arXiv:2506.20707, App. I, Fig. 47:
+
 | ACT DR6 variant | Distance to DESI | Place read |
 |---|---|---|
 | ACT lensing, NPIPE τ prior | 3.1σ | arXiv:2506.20707, App. I, Fig. 47 |
@@ -234,10 +245,11 @@ Shifting the τ prior instead of changing its source [src: arXiv:2504.16932,
 Sects. II–III]: Planck PR4 CamSpec high-ℓ + PR4 and ACT DR6 lensing, low-ℓ
 data replaced by a Gaussian τ prior of width 0.006; the distance falls from
 2.1σ (τ = 0.06) to 0.9σ (τ = 0.09). The CMB degeneracy is approximately
-Ω_m(τ) = 0.349 − 0.505τ [src: Fig. 1 caption]; raising τ by 0.03 lowers
-the CMB Ω_m by about 0.015 [der: slope × 0.03], comparable with the gap
-between DESI's CMB and DESI BAO, 0.3169 − 0.2975 = 0.019 [der: Table 5 of
-arXiv:2503.14738].
+Ω_m(τ) = 0.349 − 0.505τ [src: Fig. 1 caption].
+
+Along this degeneracy a
+higher τ lowers the CMB Ω_m towards the DESI value, which is how a high τ
+absorbs the mismatch [der].
 
 With τ free (uniform 0.02–0.20) and no low-ℓ data, high-ℓ CMB + lensing +
 DESI give τ = 0.090 ± 0.012 in ΛCDM and 0.095 ± 0.014 with Σm_ν ≥ 0.06 eV
@@ -275,8 +287,8 @@ implies a lensing-only Ω_m h² constraint of 1.2–1.9%, comparable with the
 | Leading SVD mode c₀ (≈ Ω_m h²) | DESI vs ACT DR6 without lensing | +2.2σ | arXiv:2606.30527, Sect. IV.4 |
 | Bin-averaged ω_m from D^par | DESI vs Planck TTTEEE | 2.1σ (DR1 1.9σ) | arXiv:2505.02658, Sect. 2 |
 
-Same data family, five statistics, 2.1–2.5σ. Quote the statistic with the
-number.
+Same data family, five statistics, five values (table above). Quote the
+statistic with the number.
 
 ## Is it carried by one redshift bin?
 <!-- key: is-it-carried-by-one-redshift-bin -->
@@ -352,11 +364,13 @@ MUSE lensing [src: Sect. II].
    | w0wa | — | 4.7 (1.7σ) | 11.6 (3.0σ) |
    | ModRec | 8.5 (1.1σ) | — | 13.2 (1.8σ), no lensing |
 
-   In ΛCDM the joint fit costs the CMB 3.0 and DESI 4.3 in χ² against their
-   separate best fits (603.7 → 606.7; 10.3 → 14.6) [der: Table 7]; in w0wa the joint DESI
-   χ² drops to 7.4 and the CMB χ² to 602.3. A gain that appears mainly in
-   the joint fit is the signature of a model that reconciles two data sets
-   rather than one that fits a feature of either [der: reading of Table 7].
+   In ΛCDM the CMB χ² is 603.7 in the separate fit and 606.7 in the joint
+   fit, and the DESI χ² 10.3 and 14.6; in w0wa the joint DESI χ² drops to
+   7.4 and the CMB χ² to 602.3 (arXiv:2506.20707) [src: Table 7].
+
+   A gain that appears mainly in the joint fit is the signature of a model
+   that reconciles two data sets rather than one that fits a feature of
+   either [der: reading of Table 7].
    SPT's own wording: "differences between CMB and DESI data lead to sizeable
    shifts from the CMB-preferred values in joint constraints and moderate
    departures from ΛCDM" [src: Fig. 26 caption].
@@ -416,12 +430,13 @@ arXiv:2506.20707, Sect. VII.3].
 ## What goes wrong
 <!-- key: what-goes-wrong -->
 
-- "The CMB–DESI tension is 2.3σ" without the CMB set: the same BAO are
-  2.0σ from SPT's Planck and 3.7σ from SPT + ACT (Choices). Test: name
+- "The CMB–DESI tension is 2.3σ" (arXiv:2503.14738 [src: Sect. VI]) without
+  the CMB set: the same BAO are 2.0σ from SPT's Planck and 3.7σ from SPT +
+  ACT (arXiv:2506.20707 [src: Sect. VII.3]). Test: name
   the likelihood, the lensing set and the τ treatment.
 - Comparing numbers across statistics (2D PTE with means or best fits, 1D
-  update difference, SVD mode, bin average, multi-set Q_DM): they differ by
-  up to about 0.4σ on the same data family (Subspace table), and the
+  update difference, SVD mode, bin average, multi-set Q_DM): they differ on
+  the same data family (Subspace table), and the
   multi-set value in `deep/tension-metrics.md` of the statistics skill is
   lower still. Test: recompute with Eq. 18 on the two posteriors.
 - Applying Eq. 18 to extension chains. The Gaussian form is a ΛCDM
@@ -460,8 +475,9 @@ arXiv:2506.20707, Sect. VII.3].
 
 - The mock study of ΛCDM bias under dynamical dark energy cited as
   "Tang et al." (ref. 160 of arXiv:2506.20707): not identified or read. [src: Sect. VII.3]
-- The "update difference in means" statistic of Jhaveri et al. (their
-  Eq. 53 of ref. 49): reference not identified; formula not read.
+- The "update difference in means" statistic of Jhaveri et al.
+  (arXiv:2504.21813, taken from one of their references): reference not
+  identified; formula not read.
 - The DESI DR2 distance with Plik or HiLLiPoP in place of CamSpec in ΛCDM:
   not found in arXiv:2503.14738.
 - The 2026 SPT-3G D1 lensing reconstruction (arXiv:2608.31136) values of

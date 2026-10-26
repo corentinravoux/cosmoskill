@@ -56,7 +56,7 @@ arXiv:2606.26223) [src: abstract].
 | Planck CIB maps, dust-cleaned | lensing tracer; f_NL | — | Hertig 2025, arXiv:2511.21949; Thornton 2026, arXiv:2605.03783 | [src] |
 
 The ACT DR6 lensing map and the ACT DR6 temperature maps do not have the same footprint (9400
-against 19,000 deg² as quoted above) [src]: a kSZ analysis and a lensing analysis "with ACT DR6"
+against 19,000 deg² as quoted above; arXiv:2304.05203 and arXiv:2511.23417) [src: abstract]: a kSZ analysis and a lensing analysis "with ACT DR6"
 do not use the same sky.
 
 ACT and Planck lensing maps are combined in most analyses. They overlap on the sky and share the
@@ -69,7 +69,7 @@ themselves.
 
 | Experiment | Status | Source | Flag |
 |---|---|---|---|
-| Simons Observatory | Large Aperture Telescope first light in February 2025 with ~30,000 detectors in bands centred at 90, 150, 220 and 280 GHz; early observations of the 680 deg² Deep56 patch; further LAT upgrades expected to be complete by 2028 | APS April 2026 meeting abstract "The Simons Observatory: Early Maps and Status of the Large Aperture Telescope" and collaboration talks, read through a web search summary on 2026-10-09 | [sec] |
+| Simons Observatory | Large Aperture Telescope upgrades "expected to be complete by 2028", doubling the mapping speed with 30,000 new detectors (arXiv:2503.00636) [src: abstract]; the six new optics tubes have bands centred at 93 and 145 GHz (mid-frequency) and 225 and 280 GHz (ultra-high-frequency), for roughly 60,000 detectors in the full receiver (arXiv:2503.00636) [src: Sect. 2]. First light in February 2025 and early observations of the Deep56 patch: APS April 2026 meeting abstract "The Simons Observatory: Early Maps and Status of the Large Aperture Telescope", read through a web search summary on 2026-10-09 [sec] | arXiv:2503.00636; APS abstract | [src]; [sec] |
 | Simons Observatory data release for cross-correlations | no schedule found | same search | not verified |
 | CMB-S4 | lost DOE and NSF support on 9 July 2025 | `cosmo-cmb` SKILL.md | [sec] |
 

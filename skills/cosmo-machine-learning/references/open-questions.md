@@ -10,15 +10,21 @@ Flags: as in `physics-and-methods.md`.
 
 **The gain depends on the comparison and on noise.** On noiseless
 simulated maps a CNN gave a ≈ 5 times smaller contour than the power
-spectrum (arXiv:1802.01212) [src]; on survey data the gains on S8 are 16%
-(KiDS-1000, arXiv:2201.07771) and 5–24% (HSC Y1, arXiv:2301.01354) [src],
+spectrum (arXiv:1802.01212) [src: abstract]; on survey data the gains on S8 are 16%
+(KiDS-1000, arXiv:2201.07771) [src: abstract] and 5–24% (HSC Y1, arXiv:2301.01354) [src: abstract],
 with larger gains on Ω_m or w. A claimed factor must name the baseline
 statistic, the noise level and the scale cut.
 
 **The loss function sets the ceiling.** MSE or MAE regression returns the
 posterior mean or median, which is not a sufficient statistic; on a
 controlled test it reaches 81% of the attainable figure of merit against
-100% for VMIM (arXiv:2407.10877) [src]. Several published analyses
+100% for VMIM (arXiv:2407.10877) [src: abstract]. The DES Y3 case is now
+measured: on the same lensing maps a VMIM hybrid compression gives a 60%
+larger FoM(Ω_m, S8, w) than the earlier MSE-trained CNN result
+(arXiv:2606.11309) [src: abstract, Sect. 8.1], though the architecture
+changed at the same time [src: Sect. 6.2].
+
+Several published analyses
 trained with MSE or MAE: arXiv:2407.10877 lists them in its Sect. 3
 [src: Sect. 3], and its MSE list includes a 2023 analysis by Lu et al.,
 which by author and year matches the HSC Y1 paper arXiv:2301.01354 [der].
@@ -26,11 +32,7 @@ The HSC Y1 paper itself states an MSE loss (arXiv:2301.01354)
 [src: Eq. 32], and so does the DES Y3 C_ℓ × CNN analysis
 (arXiv:2403.02314) [src: Sect. 6.2, 6.3]. Their quoted gains are then
 lower bounds on what a sufficiency-trained network could extract, not the
-information content of the data [der]. The DES Y3 case is now measured:
-on the same lensing maps a VMIM hybrid compression gives a 60% larger
-FoM(Ω_m, S8, w) than the MSE compression (arXiv:2606.11309)
-[src: Table 3], though the architecture changed at the same time
-[src: Sect. 6.2].
+information content of the data [der].
 
 **A single network is not a statistic.** Sáez-Casares et al. 2026 find that
 one CNN can be less informative than the power spectrum and that an
@@ -70,7 +72,7 @@ authors read as misspecification (arXiv:2310.15250) [src]. All these tests
 compare simulators with one another, and the spread of simulators is a
 lower bound on the distance to the real Universe: CAMELS-CROCODILE
 suppresses P(k) by a few per cent against up to ~27% for IllustrisTNG
-(arXiv:2609.23982) [src].
+at z = 0 (arXiv:2609.23982) [src: abstract].
 
 **What would settle it.** A blind test on data from a simulator built by a
 group outside the training collaboration, with the out-of-distribution
@@ -90,13 +92,15 @@ answers are being developed: networks whose summaries are physically
 parametrised and so readable (neural marks, arXiv:2606.11295) [src], and
 symbolic replacement of networks, which generalised out of distribution
 better than the GNN it was distilled from (arXiv:2006.11287) [src].
-Symbolic emulators of P_L(k) (0.2%) and C_ℓ^φφ (0.27–0.32%) match neural
-ones on smooth targets (arXiv:2311.15865, arXiv:2606.07745) [src]; whether
+Symbolic emulators of P_L(k) (0.2% RMS fractional error, arXiv:2311.15865,
+abstract) and C_ℓ^φφ (mean absolute fractional error 0.27% in the ΛCDM
+subspace and 0.32% over the extended parameter space, arXiv:2606.07745,
+abstract) match neural ones on smooth targets; whether
 the approach scales to high-dimensional or field-level targets is open.
 
 **Symbolic regression as model discovery.** Exhaustive symbolic regression
 finds ~40 functions describing H(z) from chronometers and Pantheon+ more
-economically than the Friedmann equation (arXiv:2211.11461) [src]. The
+economically than the Friedmann equation (arXiv:2211.11461) [src: abstract]. The
 authors' reading is that the low-z data do not uniquely prefer the
 standard expansion history; it is not evidence against ΛCDM.
 
@@ -106,11 +110,11 @@ standard expansion history; it is not evidence against ΛCDM.
 **The claim.** A large encoder pre-trained without labels on cheap
 simulations or survey data gives summaries that transfer across simulators
 and tasks. SKATR, a Vision Transformer pre-trained with a joint-embedding
-objective on 67 000 semi-numerical 21cmFAST light-cones, is applied frozen
+objective on 67 325 semi-numerical 21cmFAST light-cones [src: Sect. 2.1], is applied frozen
 to hydrodynamical Loreli II light-cones and gives the most precise and
 best-calibrated posteriors of the comparison while needing 2.6 times fewer
 radiative-transfer simulations than the supervised in-domain baseline
-(arXiv:2608.26354) [src].
+(arXiv:2608.26354) [src: abstract].
 
 **The caution.** The DESC white paper accepts foundation models and
 LLM-driven agents only "coupled with rigorous evaluation and governance"
@@ -121,7 +125,7 @@ obtained through a foundation-model encoder was found in this session.
 <!-- key: emulators-neural-gaussian-process-or-symbolic -->
 
 Early emulators interpolated tens of simulations (37 for the Coyote
-Universe, arXiv:0902.0429) [src]. Gaussian processes "struggle with scalability in
+Universe, arXiv:0902.0429) [src: abstract]. Gaussian processes "struggle with scalability in
 sample size and dimensionality", and a neural multi-fidelity emulator beat
 the earlier Gaussian process by more than five in mean error on the same
 suite (arXiv:2507.07184) [src]. Symbolic emulators are competitive for
@@ -139,11 +143,11 @@ this as unchecked for the gravity-only emulators.
 
 - **DES Y3 map-level weak lensing + clustering SBI.** The analysis design
   forecasts 2–3 times the Ω_m–S8 figure of merit of its two-point baseline
-  (**forecast**, arXiv:2511.04681) [src]; the data analysis is announced as
+  (**forecast**, arXiv:2511.04681) [src: abstract]; the data analysis is announced as
   forthcoming in that paper. A date-sorted arXiv search from November 2025
   (run 2026-10-16) returned no combined-probe data paper, but a DES Y3
   lensing-only map-level analysis with VMIM hybrid statistics appeared in
-  June 2026, S8 = 0.808 ± 0.017 in wCDM, with DES Y6 announced next
+  June 2026, S8 = 0.808 ± 0.017 in wCDM (arXiv:2606.11309, abstract), with DES Y6 announced next
   (arXiv:2606.11309) [src].
 - **FAIR Universe challenge results.** The challenge tests inference with
   a limited training set and out-of-distribution detection on HSC-like
@@ -182,14 +186,14 @@ this as unchecked for the gravity-only emulators.
 
 | Claim | Correction | Reference |
 |---|---|---|
-| "A neural summary extracts all the information." | Only if trained for sufficiency; MSE summaries reached 81% of the attainable figure of merit in a controlled test | arXiv:2407.10877 |
-| "A CNN gives 5 times tighter lensing constraints than the power spectrum." | Noiseless simulated maps; on survey data the S8 gains are 16% (KiDS-1000) and 5–24% (HSC Y1) | arXiv:1802.01212, arXiv:2201.07771, arXiv:2301.01354 |
-| "The emulator is accurate to 0.4%, so the model is accurate to 0.4%." | The figure is the residual against the training code (HMcode, CLASS); physics absent from it is not covered | arXiv:2106.03846 |
+| "A neural summary extracts all the information." | Only if trained for sufficiency; MSE summaries reached 81% of the attainable figure of merit in a controlled test | arXiv:2407.10877, abstract |
+| "A CNN gives 5 times tighter lensing constraints than the power spectrum." | Noiseless simulated maps; on survey data the S8 gains are 16% (KiDS-1000) and 5–24% (HSC Y1) | arXiv:1802.01212, arXiv:2201.07771, arXiv:2301.01354, each abstract |
+| "The emulator is accurate to 0.4%, so the model is accurate to 0.4%." | The figure is the residual against the training code (HMcode, CLASS); physics absent from it is not covered | arXiv:2106.03846, abstract, Sect. 3.2 |
 | "Neural posteriors are calibrated if the network is trained well." | All benchmarked SBI algorithms can be overconfident; finite budgets are the critical problem | arXiv:2110.06581, arXiv:2605.10719 |
 | "A network robust to two CAMELS sub-grid models is robust to the real Universe." | Robustness is input-dependent and fails on a new model outside the training range | arXiv:2609.23982, arXiv:2201.02202 |
-| "Cosmology from a single galaxy measures Ω_m to 10%." | Within one simulation model; not robust to the sub-grid physics, with dramatic failures on a fraction of galaxies across codes | arXiv:2201.02202, arXiv:2304.06084 |
-| "Generative models reproduce the posterior if they match mean and power spectrum." | The variance-field power spectrum can be ~30% off while the mean matches | arXiv:2606.10023 |
-| "PLAsTiCC log-loss 0.468 was the winning score." | That is the flat-weight metric of the Avocado paper; the official weighted metric of the winner was 0.685 | arXiv:1907.04690, arXiv:2012.12392 |
+| "Cosmology from a single galaxy measures Ω_m to 10%." | Within one simulation model; not robust to the sub-grid physics, with dramatic failures on a fraction of galaxies across codes | arXiv:2201.02202 (abstract), arXiv:2304.06084 |
+| "Generative models reproduce the posterior if they match mean and power spectrum." | The variance-field power spectrum can be up to ~30% off while the mean matches | arXiv:2606.10023, Sects. 5.2, 6.1 |
+| "PLAsTiCC log-loss 0.468 was the winning score." | That is the flat-weight metric of the Avocado paper; the official weighted metric of the winner was 0.685 | arXiv:1907.04690 (abstract), arXiv:2012.12392 (Fig. 7 caption) |
 | "ESR shows the data disfavour the Friedmann equation." | It shows the data do not uniquely prefer it | arXiv:2211.11461 |
 
 ## 6. Not verified

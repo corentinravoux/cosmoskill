@@ -20,9 +20,9 @@ specific to the galaxy–halo connection.
 
 - Mechanism. Mass and radius depend on Δ, on the reference density and on the
   finder; SO masses correlate with each other much better than with FoF masses
-  (arXiv:astro-ph/0011495) [src]; FoF (b = 0.2) halo bias is ~10% below that of
-  Δ = 200 haloes (arXiv:1001.3162) [src]; SO masses pseudo-evolve
-  (arXiv:1207.0816) [src].
+  (arXiv:astro-ph/0011495) [src: abstract]; FoF (b = 0.2) halo bias is ~10% below that of
+  Δ = 200 haloes (arXiv:1001.3162) [src: abstract]; SO masses pseudo-evolve
+  (arXiv:1207.0816) [src: abstract].
 - Size. In the Euclid mass-function calibration the halo finder is the one
   calibration term that "could lead to biased cosmological inference"; the
   other terms are largely subdominant (arXiv:2208.02174) [src]. Counting only
@@ -42,13 +42,14 @@ specific to the galaxy–halo connection.
 <!-- key: halo-mass-function-and-bias-calibration -->
 
 - Mechanism. Fitting functions are not universal at the per-cent level
-  (arXiv:0803.2706) [src]; baryons lower halo masses (arXiv:1502.07357) [src];
+  (arXiv:0803.2706) [src: abstract]; baryons lower halo masses (arXiv:1502.07357) [src: abstract];
   the peak-background split leaves ~20% residuals in bias (arXiv:1001.3162)
-  [src].
-- Size. Tinker 2008 calibration ≲ 5% for 10¹¹–10¹⁵ M_⊙/h; Tinker 2010 bias
-  scatter ~6% [src]; emulators reach ~1% (arXiv:1804.05866) [src]. A
+  [src: abstract].
+- Size. Tinker 2008 calibration ≲ 5% for 10¹¹–10¹⁵ h⁻¹M_⊙ (arXiv:0803.2706)
+  [src: abstract]; Tinker 2010 bias scatter ~6% (arXiv:1001.3162) [src:
+  abstract]; emulators reach ~1% (arXiv:1804.05866) [src: abstract]. A
   Planck-like cluster sample moves by Δσ8 ≃ 0.02 between the Magneticum and
-  Tinker 2008 functions (arXiv:1502.07357) [src].
+  Tinker 2008 functions (arXiv:1502.07357) [src: abstract].
 - Mitigation. Emulators of halo statistics over cosmology (Aemulus, Dark
   Emulator) or direct forward modelling on simulations (section 8 of
   `physics-and-methods.md`), with an emulator-error term in the covariance.
@@ -95,7 +96,7 @@ specific to the galaxy–halo connection.
   by as much as stellar-mass errors (arXiv:1001.0015) [src].
 - Mitigation. Add clustering, lensing, groups or satellite kinematics; the iHOD
   breaks the degeneracy "without the need to assume a strong prior on the
-  scatter" by modelling ~80% more galaxies (arXiv:1505.02781) [src].
+  scatter" by modelling ~80% more galaxies (arXiv:1505.02781) [src: abstract].
 
 - Group-based masses. DESI DR1 group masses have ~0.2 dex typical errors
   (arXiv:2610.20919) [src: Sect. VI.2], and the Yang et al. DESI groups carry
@@ -123,9 +124,9 @@ specific to the galaxy–halo connection.
   arXiv:2303.08752]. Mass-dependent non-Poisson satellite statistics can bias
   cosmology if ignored (same section) [src].
 - Size. KiDS-1000 strongly prefers sub-Poisson satellite variance, improving
-  the reduced χ² by 0.18 (arXiv:2210.03110) [src]; allowing non-Poisson
+  the reduced χ² by 0.18 (arXiv:2210.03110) [src: abstract]; allowing non-Poisson
   satellites lowers the SDSS CLF σ8 from 0.763 to 0.744 (arXiv:1207.0503)
-  [src].
+  [src: abstract].
 - Size, KiDS-1000. Forcing Poisson satellites (𝒫 ≡ ⟨N_s(N_s−1)⟩/⟨N_s⟩² = 1)
   moves the halo-model result to S8 = 0.951 (+0.037, −0.036), Ω_m = 0.330 ±
   0.019, against 0.773 fiducial; the full fit stays formally acceptable (p =
@@ -278,10 +279,10 @@ specific to the galaxy–halo connection.
 
 - Residual RSD in w_p with a finite π_max cause errors > 20% at r_p ≳ 10 h⁻¹Mpc
   if ignored; scale-dependent halo bias and exclusion errors exceed 40% at ~1
-  h⁻¹Mpc if ignored (arXiv:1206.6890) [src].
+  h⁻¹Mpc if ignored (arXiv:1206.6890) [src: abstract].
 - The transition region between one- and two-halo terms is under-predicted by
   linear halo bias, by up to a factor ~2 in the two-halo term at k ~ 0.7 h/Mpc
-  (arXiv:2011.08858) [src].
+  (arXiv:2011.08858) [src: abstract].
 - Scale cuts are the main control of baryons and assembly bias; their values
   differ by a factor of several between analyses (0.4 vs 2 h⁻¹Mpc for
   clustering, 2.5 vs 3 vs 5.25 h⁻¹Mpc for lensing in arXiv:2512.15962,

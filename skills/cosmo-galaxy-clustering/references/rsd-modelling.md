@@ -46,7 +46,8 @@ Weinberg et al. 2013 (arXiv:1201.2434), Sect. 7.2 [src: Sect. 7.2]:
 
 - The linear formula "is an inadequate approximation even on scales of
   50 h⁻¹ Mpc or more", because of non-linear effects including the fingers of
-  God, opposite in sign to the linear distortion.
+  God, opposite in sign to the linear distortion (arXiv:1201.2434)
+  [src: Sect. 7.2].
 - The common fix, an incoherent small-scale velocity dispersion added to the
   linear distortion, is "physically incomplete" and "typically leaves 5-10 %
   systematic errors in β estimates" (the review cites Hatton & Cole 1998 for
@@ -71,9 +72,9 @@ factor √2 between single-galaxy and pairwise dispersion) are in
 | Survey | z_eff | Result | Model | Citation | Flag |
 |---|---|---|---|---|---|
 | VVDS | 0.8 | β = 0.70 ± 0.26, f = 0.91 ± 0.36; > 10,000 galaxies | anisotropic ξ | Guzzo et al. 2008, arXiv:0802.1944 | [src: abstract] |
-| 6dFGS | 0.067 | fσ8 = 0.423 ± 0.055; 81,971 galaxies over 17,000 deg²; insensitive to the non-linear RSD model | ξ(r_p, π) | Beutler et al. 2012, arXiv:1204.4725 | [src] |
+| 6dFGS | 0.067 | fσ8 = 0.423 ± 0.055; 81,971 galaxies over 17,000 deg²; insensitive to the non-linear RSD model | ξ(r_p, π) | Beutler et al. 2012, arXiv:1204.4725 | [src: abstract] |
 | BOSS DR9 CMASS | 0.57 | fσ8 = 0.43 ± 0.069; 0.415 ± 0.034 assuming a ΛCDM expansion history; 264,283 galaxies | ξ_0, ξ_2 with BAO and AP | Reid et al. 2012, arXiv:1203.6641 | [src: abstract] |
-| WiggleZ | 0.44, 0.6, 0.73 | D_A = 1205 ± 114, 1380 ± 95, 1534 ± 107 Mpc; H = 82.6 ± 7.8, 87.9 ± 6.1, 97.3 ± 7.0 km/s/Mpc (BAO + AP, joint) | — | Blake et al. 2012, arXiv:1204.3674 | [src] |
+| WiggleZ | 0.44, 0.6, 0.73 | D_A = 1205 ± 114, 1380 ± 95, 1534 ± 107 Mpc; H = 82.6 ± 7.8, 87.9 ± 6.1, 97.3 ± 7.0 km/s/Mpc (BAO + AP, joint) | — | Blake et al. 2012, arXiv:1204.3674 | [src: abstract] |
 | GAMA | 0.18, 0.38 | fσ8 = 0.36 ± 0.09, 0.44 ± 0.06; first multi-tracer RSD analysis, 10–20% gain over one tracer | P(k) multi-tracer | Blake et al. 2013, arXiv:1309.5556 | [src: abstract] |
 | SDSS DR7 MGS | 0.15 | fσ8 = 0.49 (+0.15, −0.14) without AP; 63,163 galaxies | ξ_0, ξ_2 | Howlett et al. 2015, arXiv:1409.3238 | [src: abstract] |
 | FastSound | ≈ 1.4 | fσ8 = 0.482 ± 0.116 (σ_v = 0), 0.494 (+0.126, −0.120) with σ_v free; 2783 emission-line galaxies, 4.2σ RSD detection | ξ above 8 h⁻¹ Mpc | Okumura et al. 2016, arXiv:1511.08083 | [src: abstract] |
@@ -170,7 +171,7 @@ pre-reconstruction clustering [src: Sect. 6, Table 4]:
   than the multipole analyses, in both configuration space and Fourier
   space" [src: arXiv:1607.03155, Sect. 6].
 - The pairwise differences between methods on the data are typical of those
-  on the 84 high-resolution cut-sky mocks [src: Sect. 7.2, Fig. 10].
+  on the 84 high-resolution cut-sky mocks (arXiv:1607.03155) [src: Sect. 7.2, Fig. 10].
 - Beutler et al. find the fσ8 at z_eff = 0.61 about 1.4σ below Planck ΛCDM
   [src: arXiv:1607.03150]. [src: abstract]
 - Consensus: the posteriors are combined as correlated Gaussians with
@@ -181,6 +182,8 @@ pre-reconstruction clustering [src: Sect. 6, Table 4]:
 
 ## 6. eBOSS DR16: two models per tracer
 <!-- key: eboss-dr16-two-models-per-tracer -->
+
+Redshift ranges from the abstract of arXiv:2007.09000 (LRG), of arXiv:2007.09009 (ELG) and of arXiv:2007.08998 (QSO):
 
 | Tracer | Configuration space | Fourier space | Mock challenge |
 |---|---|---|---|
@@ -226,7 +229,7 @@ compression step" for DESI and Euclid [src: App. A].
 |---|---|---|---|
 | BOSS DR12 consensus | high-resolution mocks: bias 0.0037 (standard error of 84 mocks), HOD spread 0.008 → 0.009 rms | σ_sys(fσ8) = 0.024, 0.015, 0.009 at z_eff = 0.38, 0.51, 0.61 (maximum of MD-Patchy bias and high-resolution estimate) | arXiv:1607.03155, Sects. 7.2, 7.4 |
 | BOSS DR12, MD-Patchy | consensus fσ8 bias −0.024, −0.016, −0.003 (up to 0.6σ of the mock scatter) | — | arXiv:1607.03155, Table 6 |
-| eBOSS LRG, ξ | modelling 0.010 (CLPT-GS), 0.009 (TNS) on fσ8 | 0.024 (CLPT-GS), 0.023 (TNS), 0.024 (P_ℓ) on fσ8; 54–58% of σ_stat | arXiv:2007.08993, Table 10 |
+| eBOSS LRG, ξ | modelling 0.010 (CLPT-GS), 0.009 (TNS) on fσ8 | 0.024 (CLPT-GS), 0.023 (TNS), 0.024 (P_ℓ) on fσ8; the σ_syst/σ_stat row gives 0.54 (CLPT-GS), 0.58 (TNS) and 0.58 (P_ℓ) in its last column | arXiv:2007.08993, Table 10 |
 | eBOSS QSO | modelling from the blind N-body challenge | systematics "amount to 1/3 of the statistical error" | arXiv:2007.08999, abstract |
 | eBOSS ELG | 3.3% on fσ8 | negligible against σ_stat | arXiv:2007.09004, abstract |
 

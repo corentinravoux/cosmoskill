@@ -5,7 +5,7 @@ Snapshot: 2026-10-15
 ## 1. h⁻¹Mpc units and σ8 versus σ12
 <!-- key: h-1mpc-units-and-sigma8-versus-sigma12 -->
 
-**The proposal.** Sánchez 2020, arXiv:2002.07829, proposes "to abandon the traditional h⁻¹Mpc units in the analysis of new surveys" and to replace σ8 by σ12, the linear rms fluctuation in spheres of 12 Mpc. His own demonstration (ΛCDM, the same wide priors for all three data sets) [src]:
+**The proposal.** Sánchez 2020, arXiv:2002.07829, proposes "to abandon the traditional h⁻¹Mpc units in the analysis of new surveys" and to replace σ8 by σ12, the linear rms fluctuation in spheres of 12 Mpc [src: abstract]. His own demonstration (ΛCDM, the same wide priors for all three data sets) [src: Sect. IV]:
 
 | Combination | Planck | DES 3×2pt | BOSS |
 |---|---|---|---|
@@ -29,7 +29,7 @@ In (ω_m, σ12) "the constraints inferred from DES and Planck are in excellent a
 - Bonici et al. 2026 (arXiv:2607.02498) reanalyse the DESI DR1 multipoles: with baseline priors, DESI + BBN + n_s constraint shows "multi-σ projection in the Hubble parameter H0 and dark energy equation of state parameters w0 and wa"; a Jeffreys prior over all EFT coefficients "recenters these posteriors to enclose the maximum a posteriori estimate within the 68% credible regions"; a hybrid Jeffreys + Gaussian configuration is their preferred choice, and the result agrees with HOD-informed priors and with frequentist profile likelihoods "in both central values and degeneracy directions in the w0–wa plane" [src, abstract].
 - The size of the effect in extended models (best fit against posterior mean) and the simulation-based-prior results are tabulated in `cosmo-galaxy-clustering`; the statistical side (profile likelihood, prior-volume effects) in `cosmo-statistics-inference`.
 
-**The two early BOSS analyses already showed the dependence.** With n_s and Ω_b/Ω_c fixed, D'Amico et al. 2020 (arXiv:1909.05271) found ln(10¹⁰A_s) = 2.72 ± 0.13, Ω_m = 0.309 ± 0.010, H0 = 68.5 ± 2.2; with a BBN prior on ω_b, fixed tilt and neutrino masses varied in a tight range, Ivanov, Simonović & Zaldarriaga 2020 (arXiv:1909.05277) found H0 = 67.9 ± 1.1, Ω_m = 0.295 ± 0.010, σ8 = 0.721 ± 0.043 [src, abstracts]. Same data, same theory order, different priors and codes; the low σ8 of that generation is treated as superseded in `cosmo-galaxy-clustering`.
+**The two early BOSS analyses already showed the dependence.** With n_s and Ω_b/Ω_c fixed, D'Amico et al. 2020 (arXiv:1909.05271) found ln(10¹⁰A_s) = 2.72 ± 0.13, Ω_m = 0.309 ± 0.010, H0 = 68.5 ± 2.2; with a BBN prior on ω_b, fixed tilt and neutrino masses varied in a tight range, Ivanov, Simonović & Zaldarriaga 2020 (arXiv:1909.05277) found H0 = 67.9 ± 1.1, Ω_m = 0.295 ± 0.010, σ8 = 0.721 ± 0.043 [src: abstract of each]. Same data, same theory order, different priors and codes; the low σ8 of that generation is treated as superseded in `cosmo-galaxy-clustering`.
 
 **Bias bases.** The second-order non-local term can be written with s_ij s_ji or equivalently with θ − δ (McDonald & Roy 2009, arXiv:0902.0991), with the Galileon operators of Assassi et al. 2014 (arXiv:1402.5916), or with a Lagrangian shear bias b_s (velocileptors). The numerical values of "b2" and "the tidal bias" are not comparable between papers without the conversion, which this session did not read at source (see "Not verified" in `physics-and-methods.md`).
 
@@ -64,25 +64,25 @@ The two Stage-III lensing collaborations did not use the same non-linear matter 
 - KiDS-Legacy: HMCode2020 (Mead et al. 2021, arXiv:2009.01858) with a free feedback parameter (Wright et al. 2025, arXiv:2503.19441).
 - KiDS-Legacy's own statement of the consequence: halofit "tends to overestimate power for lower values of S8, resulting in an underestimated S8 value", and HMCode2020 gives "a slightly higher S8" than HMCode2015 [src, arXiv:2503.19441 Sect. 2.2].
 
-The quoted accuracies are of different kinds and should not be compared as if they were one number: revised halofit, 5% at k ≤ 1 h/Mpc and 10% at 1–10 h/Mpc against its own 16 WMAP-like simulations (arXiv:1208.2701); HMcode-2015, ≃5% at k ≤ 10 h/Mpc, z ≤ 2 (arXiv:1505.07833); HMcode-2020, RMS 2.5% at k < 10 h/Mpc, z < 2 with worst cases up to 16% (arXiv:2009.01858). Each is a fit error against a simulation set of limited cosmological range, not an error against the truth; the emulator and N-body floor is in `cosmo-simulations-mocks`, and the disputed strength of baryonic feedback, which dominates at k ≳ 1 h/Mpc, in `cosmo-weak-lensing`.
+The quoted accuracies are of different kinds and should not be compared as if they were one number: revised halofit, 5% at k ≤ 1 h/Mpc and 10% at 1–10 h/Mpc against its own 16 WMAP-like simulations (arXiv:1208.2701, abstract); HMcode-2015, ≃5% at k ≤ 10 h/Mpc, z ≤ 2 (arXiv:1505.07833, abstract); HMcode-2020, RMS 2.5% at k < 10 h/Mpc, z < 2 with worst cases up to 16% (arXiv:2009.01858, abstract). Each is a fit error against a simulation set of limited cosmological range, not an error against the truth; the emulator and N-body floor is in `cosmo-simulations-mocks`, and the disputed strength of baryonic feedback, which dominates at k ≳ 1 h/Mpc, in `cosmo-weak-lensing`.
 
-The halo model itself remains a calibrated description, not a derivation. Its ingredients carry their own errors: the mass function is known to ≲5% at z = 0 and is not universal (its amplitude falls 20–50% from z = 0 to 2.5, Tinker et al. 2008, arXiv:0803.2706); the bias fit has ~6% scatter and depends on the halo definition at the 10% level (Tinker et al. 2010, arXiv:1001.3162); the transition between the one- and two-halo terms is the long-standing weak point, for which a model with haloes defined by orbiting particles reports ≈2% accuracy on the halo–mass correlation over 0.1–50 h⁻¹Mpc (Salazar et al. 2024, arXiv:2406.04054) [src, abstracts].
+The halo model itself remains a calibrated description, not a derivation. Its ingredients carry their own errors: the mass function is known to ≲5% at z = 0 and is not universal (its amplitude falls 20–50% from z = 0 to 2.5, Tinker et al. 2008, arXiv:0803.2706); the bias fit has ~6% scatter and depends on the halo definition at the 10% level (Tinker et al. 2010, arXiv:1001.3162); the transition between the one- and two-halo terms is the long-standing weak point, for which a model with haloes defined by orbiting particles reports ≈2% accuracy on the halo–mass correlation over 0.1–50 h⁻¹Mpc (Salazar et al. 2024, arXiv:2406.04054) [src: abstract of each].
 
 ## 5. Neutrino treatment
 <!-- key: neutrino-treatment -->
 
 Analyses that are combined routinely do not treat neutrinos alike (each read at source, `surveys-and-data.md`):
 
-| Choice | Who |
-|---|---|
-| One massive state of 0.06 eV, two massless, N_eff = 3.046 | Planck 2013 and 2018 |
-| 0.06 eV in one massive state | ACT DR6; DESI DR2 when Σm_ν is fixed |
-| Three degenerate states | DESI DR2 when Σm_ν is varied |
-| Σm_ν fixed to 0.06 eV | KiDS-Legacy |
-| Σm_ν varied in the baseline | DES Y3 [sec: implied by DESI DR2 Sect. 5] |
-| N_eff = 3.044 | DESI DR1 full shape and DR2 |
+| Choice | Who | Source and place |
+|---|---|---|
+| One massive state of 0.06 eV, two massless, N_eff = 3.046 | Planck 2013 and 2018 | arXiv:1303.5076, Sect. 2.1.1; arXiv:1807.06209, Sect. 2.1 |
+| 0.06 eV in one massive state | ACT DR6; DESI DR2 when Σm_ν is fixed | arXiv:2503.14452, Sect. 7.1; arXiv:2503.14738, Sect. V |
+| Three degenerate states | DESI DR2 when Σm_ν is varied | arXiv:2503.14738, Sect. V |
+| Σm_ν fixed to 0.06 eV | KiDS-Legacy | arXiv:2503.19441, Sects. 2.2 and 5.1 |
+| Σm_ν varied in the baseline | DES Y3 | arXiv:2105.13549, Sect. IV.2 and Table 1 |
+| N_eff = 3.044 | DESI DR1 full shape and DR2 | arXiv:2411.12021, Sect. 4.7; arXiv:2503.14738, Sect. IV.1 |
 
-- **Does it matter?** For r_d the N_eff difference is 0.013% [der]. For S8 the choice between fixing and marginalising Σm_ν moves the marginal posterior: the DES Y3 modelling paper shows (Ω_m, S8) posteriors from noiseless synthetic data "assuming massless neutrinos" and "marginalizing over neutrino mass", with different offsets from the input (Krause et al. 2021, arXiv:2105.13548, Fig. 2 caption) [src]. A comparison of a KiDS S8 (fixed mass) with a DES S8 (marginalised mass) contains this difference; it is a prior effect, not a physical disagreement.
+- **Does it matter?** For r_d, no paper giving the effect of 3.044 against 3.046 was read. For S8 the choice between fixing and marginalising Σm_ν moves the marginal posterior: the DES Y3 modelling paper shows (Ω_m, S8) posteriors from noiseless synthetic data "assuming massless neutrinos" and "marginalizing over neutrino mass", with different offsets from the input (Krause et al. 2021, arXiv:2105.13548, Fig. 2 caption) [src]. A comparison of a KiDS S8 (fixed mass) with a DES S8 (marginalised mass) contains this difference; it is a prior effect, not a physical disagreement.
 - **Which field.** Simulations settle that bias and the mass function are universal in the cb field (arXiv:1311.1212; arXiv:1311.0866). What is not uniform is the reported amplitude: Planck's σ8 is total matter, DESI's "excluding neutrinos" (arXiv:2411.12021). No paper read here converts between the two explicitly.
 - **Growth.** With massive neutrinos the growth rate is scale-dependent at the 0.3–2% level (arXiv:1708.01154), so "f(z)" and a single growth index are approximations; the definition of fσ8 through velocity–density correlations (arXiv:1807.06209, Eq. 27) survives, the product f × σ8 does not.
 - The bounds on Σm_ν, the effective (negative) mass and the role of τ are in `cosmo-neutrinos-dark-matter`.
@@ -114,7 +114,7 @@ They call these "the tightest sound-horizon free H0 constraints from LSS data to
 - **Stage-IV precision removes the slack.** Approximations that were harmless at Stage III are not: Limber, neglected RSD in angular clustering and a poorer non-linear spectrum each bias Roman and Rubin 3×2pt by 1σ or more (arXiv:2606.23781, **forecast**); priors in Mpc/h shift full-shape posteriors by several σ on Stage-IV synthetic data (arXiv:2610.08751, **forecast** setting); relativistic and wide-angle terms shift f_NL by about 1σ for SPHEREx (arXiv:2608.18334, **forecast**).
 - **Amplitude parameter.** Euclid's preparation papers work with fσ12 (arXiv:2603.13148) and a σ12-based emulator exists (arXiv:2511.13826); DESI uses σ_s8. Whether the first Stage-IV cosmology releases quote σ8, σ12 or both will decide if compilations need a conversion layer. The release calendar is in `cosmo-surveys-facilities` and `cosmo-galaxy-clustering`.
 - **Compression.** eBOSS already judged that its compression "might not be the best approach for future surveys including DESI and Euclid" (arXiv:2007.08991); DESI took full modelling to its cosmology paper. If full-survey DESI and Euclid results are published only as full-modelling posteriors, model-independent fσ8-type points will stop being produced, and growth compilations will end at the DR1-era points.
-- **Halo-model and non-linear theory.** HMcode-2020's 2.5% and the emulators' ~1% (`cosmo-simulations-mocks`) are above what Stage-IV shear needs on k ~ 1 h/Mpc; baryonic feedback is the limiting uncertainty (`cosmo-weak-lensing`).
+- **Halo-model and non-linear theory.** HMcode-2020's 2.5% (arXiv:2009.01858, abstract) and the emulators' ~1% (`cosmo-simulations-mocks`) are above what Stage-IV shear needs on k ~ 1 h/Mpc; baryonic feedback is the limiting uncertainty (`cosmo-weak-lensing`).
 
 ## 9. Misconceptions and stale claims
 <!-- key: misconceptions-and-stale-claims -->
@@ -124,30 +124,30 @@ Each line gives the claim, then what the source read this session says.
 | Claim that circulates | Correction | Source |
 |---|---|---|
 | "γ = 0.55 is the prediction of general relativity" | it is the ΛCDM value; γ = 0.55 + 0.05[1 + w(z=1)] | arXiv:astro-ph/0507263, Eq. 17 |
-| "f = Ω_m^0.6" | pre-2005 convention; 6% from Ω_m^0.55 at Ω_m = 0.3 [der] | arXiv:astro-ph/9708102; arXiv:astro-ph/0507263 |
+| "f = Ω_m^0.6" | pre-2005 convention; "a needless 6% error in β" against Ω_m^0.55 (arXiv:astro-ph/0701317, Sect. III) | arXiv:astro-ph/9708102; arXiv:astro-ph/0507263; arXiv:astro-ph/0701317 |
 | "BAO measure H0" | BAO alone measure Ω_m and h r_d; H0 needs r_d from BBN or the CMB and standard pre-recombination physics | arXiv:2503.14738 |
-| "The sound horizon is 147 Mpc" (for the CMB) | r_drag = 147.09 Mpc, r_* = 144.43 Mpc; the Eisenstein–Hu value is another 2.75% higher | arXiv:1807.06209; arXiv:1303.5076 |
-| "θ_MC is the acoustic angle" | "an approximation to θ_*"; 100θ differs by 0.00018 | arXiv:1303.5076; arXiv:1807.06209 |
-| "σ8 is the fluctuation at 8 Mpc" | 8 h⁻¹Mpc: 11.9 Mpc for h = 0.674 [der] | arXiv:1303.5076; arXiv:2002.07829 |
+| "The sound horizon is 147 Mpc" (for the CMB) | r_drag = 147.09 Mpc, r_* = 144.43 Mpc (arXiv:1807.06209, Table 2); the Eisenstein–Hu value is higher by the factor 1.0275 (arXiv:1303.5076, Sect. 5.2) | arXiv:1807.06209; arXiv:1303.5076 |
+| "θ_MC is the acoustic angle" | "an approximation to θ_*"; 100θ_MC = 1.04092 ± 0.00031 against 100θ_* = 1.04110 ± 0.00031 (arXiv:1807.06209, Table 2) | arXiv:1303.5076; arXiv:1807.06209 |
+| "σ8 is the fluctuation at 8 Mpc" | 8 h⁻¹Mpc, a radius in Mpc that depends on h; σ12 uses spheres of 12 Mpc (arXiv:2002.07829, abstract) | arXiv:1303.5076; arXiv:2002.07829 |
 | "σ8 means the same thing in Planck and DESI" | total matter against "excluding neutrinos" | arXiv:1303.5076; arXiv:2411.12021 |
 | "fσ8 is model-independent" | exact only at first order; depends on the fixed h and template; DESI's quantity is fσ_s8 | arXiv:2002.07829; arXiv:2411.12021 |
 | "Working in h⁻¹Mpc loses or adds information" | constraints are identical if h is carried through; what changes is σ8, fixed-template fits, and priors | arXiv:2002.07829; arXiv:2610.08751 |
 | "Ω_k > 0 is a closed universe" | open, in the Hogg and DESI sign convention (sinh branch) | arXiv:astro-ph/9905116; arXiv:2503.14738 |
 | "D_H is c/H0" in a BAO table | D_H(z) = c/H(z) | arXiv:2503.14738; arXiv:1411.1074 |
 | "Limber is safe above ℓ of a few tens" | true for shear; for tomographic clustering it biases Stage-IV analyses, and ℓ + 1/2 is required | arXiv:0809.5112; arXiv:1911.11947; arXiv:2606.23781 |
-| "Eisenstein–Hu gives the BAO wiggles" | 10% accuracy, "order unity residuals" in the oscillation phase at small scales | arXiv:astro-ph/9709112 |
-| "halofit is accurate at the per-cent level" | 5% to k = 1 h/Mpc, 10% to 10 h/Mpc; biases S8 low | arXiv:1208.2701; arXiv:2503.19441 |
+| "Eisenstein–Hu gives the BAO wiggles" | 10% accuracy (abstract), "order unity residuals" in the oscillation phase at small scales (Sect. 3.3) | arXiv:astro-ph/9709112 |
+| "halofit is accurate at the per-cent level" | 5% to k = 1 h/Mpc, 10% to 10 h/Mpc (arXiv:1208.2701, abstract); biases S8 low (arXiv:2503.19441, Sect. 2.2) | arXiv:1208.2701; arXiv:2503.19441 |
 | "The fingers-of-God σ is the galaxy velocity dispersion" | a pairwise dispersion, √2 larger; and the damping form is phenomenological | arXiv:astro-ph/9708102; arXiv:2609.35757 |
 | "EFT counterterms are measurable small-scale physics" | "the true amplitude (and even the sign) … cannot be predicted" | arXiv:1909.05277 |
-| "One-loop EFT is valid to k = 0.3 h/Mpc" | stated for real space and BOSS volume; DESI fits to 0.20 h/Mpc in redshift space | arXiv:1909.05277; arXiv:2411.12021 |
+| "One-loop EFT is valid to k = 0.3 h/Mpc" | stated for real space and BOSS volume (arXiv:1909.05277, Sect. 3.1); DESI fits to 0.20 h/Mpc in redshift space (arXiv:2411.12021, Sect. 4.7) | arXiv:1909.05277; arXiv:2411.12021 |
 | "Bias parameters can be compared across papers" | tidal bias differs by a factor 2 and b1 by 1 between bases | arXiv:2404.07272 |
-| "Halo bias depends on mass only" | at fixed mass the oldest 10% of 10^11 M_⊙/h haloes are over 5 times more correlated than the youngest | arXiv:astro-ph/0506510 |
-| "Neutrinos suppress P(k) by 8 f_ν" | only on small linear scales, at fixed ω_m, for f_ν < 0.07 | arXiv:astro-ph/0603494 |
+| "Halo bias depends on mass only" | at fixed mass the oldest 10% of 10^11 M_⊙/h haloes are over 5 times more correlated than the youngest | arXiv:astro-ph/0506510, abstract |
+| "Neutrinos suppress P(k) by 8 f_ν" | only on small linear scales, at fixed ω_m, for f_ν < 0.07 | arXiv:astro-ph/0603494, Sect. 4.5.6 |
 | "Projection effects are a bias in the data" | a property of marginal posteriors under given priors; the MAP is unaffected | arXiv:2105.13548; arXiv:2607.02498 |
 | "A measured dipole of P(k) is a relativistic signal" | the end-point line of sight generates odd multipoles through wide-angle and window terms | arXiv:1810.05051 |
-| "N_eff = 3.046 is simply wrong" | 3.044 is the current standard (`cosmo-neutrinos-dark-matter`), but Planck 2013 and 2018 chains were run with 3.046: describing them requires that number | arXiv:1303.5076; arXiv:1807.06209 |
+| "N_eff = 3.046 is simply wrong" | 3.044 is the current standard (`cosmo-neutrinos-dark-matter`), but Planck 2013 and 2018 chains were run with 3.046: describing them requires that number | arXiv:1303.5076, abstract; arXiv:1807.06209, abstract |
 
-Stale values to recognise: the S12 numbers of Sánchez 2020 (2018–2019 data); r_d = 147.49 ± 0.59 Mpc (Planck 2013, arXiv:1411.1074); the low σ8 of the first BOSS EFT fits (arXiv:1909.05277), superseded as described in `cosmo-galaxy-clustering`; β values with exponent 0.6 (arXiv:astro-ph/9708102).
+Stale values to recognise: the S12 numbers of Sánchez 2020 (2018–2019 data); r_d = 147.49 ± 0.59 Mpc (Planck 2013, arXiv:1411.1074, Sect. II.2); the low σ8 of the first BOSS EFT fits (arXiv:1909.05277), superseded as described in `cosmo-galaxy-clustering`; β values with exponent 0.6 (arXiv:astro-ph/9708102).
 
 ## Not verified
 <!-- key: not-verified -->
@@ -156,5 +156,4 @@ Stale values to recognise: the S12 numbers of Sánchez 2020 (2018–2019 data); 
 - The size of the DES Y3 S8 shift between fixed and marginalised Σm_ν: only the figure caption was read, not the numbers. The prior itself is now read: flat 10³ Ω_ν h² ∈ (0.60, 6.44) (arXiv:2105.13549, Table 1) [src]; `surveys-and-data.md` section 6.
 - Whether the Pezzotta et al. Mpc-prior result holds on DESI data: the paper uses synthetic data, and no application to data was found.
 - Independent confirmations of the Brieden et al. equality-scale H0 with DESI data: found among recent titles by the second pass of this build but not read, and not cited here.
-- The 11.9 Mpc in the misconception table uses h = 0.674 [der: 8/0.674]; any other h gives another radius, which is the point.
 - Community positions on bias-basis standardisation (a common basis for DESI, Euclid and Rubin codes): no paper proposing one was read.

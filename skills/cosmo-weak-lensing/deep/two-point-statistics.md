@@ -196,7 +196,7 @@ the observed one.
 | Statistic | Assumes | Buys | Costs | Used by |
 |---|---|---|---|---|
 | ξ± | none beyond the estimator | simplest; no mask correction; in KiDS-1000 mocks the smallest bias of the marginal S8 but also the tightest distribution, so a similar bias relative to its width [src: arXiv:2007.15633, App. B.1] | E/B mixed; substantial sensitivity to ℓ > 1500; ξ+ reaches ℓ < 10, where the large-θ ξ± distribution "deviates from a Gaussian" in Salmo mocks [src: arXiv:2007.15633, Sect. 2.4] | DES, HSC, UNIONS |
-| COSEBIs (log) | finite [θ_min, θ_max] defines the modes | exact E/B split within the range; 5–6 numbers per pair; Gaussian-like distribution [src: Sect. 2.4] | fine ξ± binning; the S8 exponent 0.5 is "not perpendicular" to the COSEBI degeneracy, widening its S8 distribution [src: App. B.1] | KiDS-1000, KiDS-Legacy |
+| COSEBIs (log) | finite [θ_min, θ_max] defines the modes | exact E/B split within the range; 5–6 numbers per pair; Gaussian-like distribution (arXiv:2007.15633) [src: Sect. 2.4] | fine ξ± binning; the choice of the exponent α in S8 is "not perpendicular" to the COSEBI degeneracy, widening its S8 distribution [src: App. B.1] | KiDS-1000, KiDS-Legacy |
 | Band powers | apodisation acceptable | control of the ℓ range | E/B leakage; widest S8 distribution of the three in KiDS-1000 mocks [src: App. B.1] | KiDS-1000, KiDS-Legacy |
 | Pseudo-Cℓ | mask coupling computed exactly; flat sky per field (HSC) | direct link to the theory spectrum; cuts in ℓ | noise-bias subtraction; window functions with negative lobes; no purification | HSC Y3, DES Y3, UNIONS, KiDS-Legacy BNT |
 
@@ -321,5 +321,8 @@ What comparisons on one catalogue found:
   pseudo-Cℓ for HSC: cited through the papers above, not read.
 - The DES Y1 harmonic-space compatibility study (Camacho et al. 2021) was
   seen only in a search listing; its numbers are not used.
-- Whether the UNIONS 2.18σ uses the posterior mean or another point
-  estimate.
+- Whether the UNIONS 2.18σ (arXiv:2605.13543, Sect. 5.3) uses the
+  posterior mean or another point estimate.
+- The value of the S8 exponent in the COSEBI row: App. B.1 of
+  arXiv:2007.15633 speaks of "the choice of α for S8" without the number
+  at that place, so the number was removed from the row (2026-10-25).

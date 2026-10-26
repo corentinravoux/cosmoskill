@@ -12,7 +12,7 @@ From: DESI DR1 E_G paper (arXiv:2507.16098); ACT DR6 E_G paper (arXiv:2405.12795
 Already in L2, not repeated here: the definition after Zhang et al. 2007,
 the GR prediction `E_G = Omega_m,0/f(z)` and its modified-gravity form
 `Omega_m,0 Sigma/f`, the reference values 0.401 and 0.452 at `z = 0.555`
-and 0.316 (`physics-and-methods.md#the-eg-statistic`); the measured values
+and 0.316 (arXiv:2401.12971, abstract; `physics-and-methods.md#the-eg-statistic`); the measured values
 and their history (`results.md#eg-measurements`); the headline systematic
 budgets of 2% (CMASS) and 3% (LOWZ) and the Pullen et al. low value
 (`systematics.md#modified-gravity-non-linear-scales-bias-and`); the
@@ -87,7 +87,7 @@ PR4 × BOSS CMASS and LOWZ), reused unchanged for ACT DR6 by Wenzl et al.
    edges [48, 59, 71, 87, 106, 129, 157, 191, 233, 283, 345, 420]; `ell_max`
    set by `k = 0.2 Mpc^-1` (≈ 30 Mpc comoving): 420 for CMASS, 233 for LOWZ
    (first 8 bins); `ell_min = 48` to avoid galaxy-map foregrounds
-   correlating with lensing [src: Sect. VI.1].
+   correlating with lensing [src: arXiv:2401.12971, Sect. VI.1].
 7. **Covariance.** Sample covariance of 480 correlated simulated
    realisations of the lensing map and of the galaxy map with and without
    the cross-correlation weight (Eq. 52), Hartlap-corrected; checked
@@ -122,7 +122,7 @@ et al. 2010.
    tangential shear (dsigma; DESI and mocks: 15 log bins in
    `0.08 < R < 80 h^-1 Mpc`; BOSS: 10 log bins in 0.5–50 for comparison
    with earlier work) and projected clustering `w_p(R) = ∫ xi_gg(R, Pi) dPi`
-   (Corrfunc) [src: Sects. 4.2, 4.5; Eq. 17].
+   (Corrfunc) [src: arXiv:2507.16098, Sects. 4.2, 4.5; Eq. 17].
 2. **Annular statistics.** To remove one-halo scales below `R_0`:
    `Upsilon_gm(R, R_0) = (2/R^2) ∫_{R_0}^{R} R' Sigma dR' − Sigma(R) + (R_0^2/R^2) Sigma(R_0)`
    (Eq. 18), in practice `Upsilon_gm = Delta Sigma(R) − (R_0/R)^2 Delta Sigma(R_0)`
@@ -133,7 +133,7 @@ et al. 2010.
 3. **Direct estimator.** `E_G(R, z) = Upsilon_gm/(beta Upsilon_gg)`
    (Eqs. 23, 43); linear bias and `sigma8` cancel since
    `beta ∝ 1/b`, `Upsilon_gm ∝ b sigma8^2`, `Upsilon_gg ∝ b^2 sigma8^2`,
-   but `Omega_m` does not [src: Sect. 2.5]. Fractional errors add in
+   but `Omega_m` does not [src: arXiv:2507.16098, Sect. 2.5]. Fractional errors add in
    quadrature (Eq. 44), the three pieces assumed uncorrelated because the
    lensing overlap is a small part of the clustering area; the `R` bins
    are then compressed to one value per lens bin with optimal weights
@@ -159,7 +159,7 @@ et al. 2010.
 7. **Astrophysical terms.** `Delta Sigma = Delta Sigma_GGL + Delta Sigma_IA + Delta Sigma_mag`
    (Eq. 30), IA from NLA with `A_IA = 0.5`, `eta = 0`, lens magnification
    with `alpha_l = 2`; switching both off moves `E_G(z)` by 0.1σ on
-   average [src: Sect. 2.6].
+   average [src: arXiv:2507.16098, Sect. 2.6].
 8. **Scale dependence.** `E_G(R, z_i) = A_i [1 + alpha log10 R]` (Eq. 47),
    GR at `alpha = 0`, after Blake et al. 2020 [src: Sect. 4.9].
 
@@ -366,8 +366,9 @@ survey named when several give different values.
   2014 harmonic-space estimator paper (cited in the sibling
   `cosmo-cmb-lss-cross-correlations`); their methods are described here
   only as Rauhut et al. and Wenzl et al. report them.
-- The full systematic budget of arXiv:2401.12971 summing to 2% and 3%: only
-  the components above (0.3%, bias evolution, magnification) were read;
+- The full systematic budget of arXiv:2401.12971 summing to 2% and 3%
+  (abstract): only the components above (0.3%, Sect. V.3.1; bias evolution,
+  magnification) were read;
   the remaining items were not traced.
 - The historical values in arXiv:2604.24631, Table 1 (Blake 2016, Amon
   2018, Alam 2016) were not read in their own papers.

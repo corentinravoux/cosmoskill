@@ -175,15 +175,15 @@ arXiv:2008.04926, Sect. 2.1].
 
 The Manticore-Local configuration [src: arXiv:2505.10682, Sects. 2.2–2.3]:
 
-- Inference in a 1000 Mpc parent box (681 h⁻¹ Mpc for h = 0.681) on a 256³
-  grid, L_WNF ≈ 3.9 Mpc, with the observer at the centre and constraints out
-  to about 200 Mpc; 32 galaxy subcatalogues of 2M++, each with its own bias
-  parameters; fixed DES Y3 "3×2pt + All Ext." ΛCDM cosmology, chosen to
-  match FLAMINGO (Table 1).
+- Inference in a 1000 Mpc parent box on a 256³ grid, L_WNF ≈ 3.9 Mpc [src: arXiv:2505.10682,
+  Sect. 2.3], with the observer at the centre and constraints out to about 200
+  Mpc, where the signal-to-noise stays above unity [src: App. D, Fig. 24]; 32 galaxy
+  subcatalogues of 2M++, each with its own bias parameters; fixed DES Y3
+  "3×2pt + All Ext." ΛCDM cosmology with h = 0.681, chosen to match FLAMINGO [src: Sect. 2.2 and Table 1].
 - Fifty posterior samples are resimulated. monofonIC places 1024³ particles
   (m_p = 3.7 × 10¹⁰ M_⊙) on the 256³ constrained field and injects Gaussian
   random modes beyond the Nyquist frequency of the inference grid; 2LPT at
-  z = 69; SWIFT to z = 0; the same cosmology as the inference.
+  z = 69; SWIFT to z = 0; the same cosmology as the inference [src: arXiv:2505.10682, Sect. 2.3].
 - The posterior spread then mixes constrained-mode uncertainty and the
   random small-scale completion; separating them "would require sampling
   many small-scale realizations per posterior sample", judged
@@ -191,11 +191,11 @@ The Manticore-Local configuration [src: arXiv:2505.10682, Sects. 2.2–2.3]:
 - Haloes with HBT+, at least 20 bound particles, analysis restricted to
   M_200c ≥ 10¹³ M_⊙ (> 200 particles), positions and velocities from the
   most-bound particle; literature M_500c converted to M_200c with a
-  concentration–mass relation [src: Sect. 2.3.1].
+  concentration–mass relation [src: arXiv:2505.10682, Sect. 2.3.1].
 - Ten control runs with random phases and the same box, resolution and
   pipeline [src: Sect. 2.3.2].
 - The z = 0 snapshot is used instead of a light-cone, assuming negligible
-  evolution for 0 < z < 0.045 [src: Sect. 2.3].
+  evolution for 0 < z < 0.045 [src: arXiv:2505.10682, Sect. 2.3].
 
 Manticore-Deep makes a different choice for the completion: the injected
 small-scale modes "are held fixed across all 15 posterior samples, ensuring
@@ -316,15 +316,15 @@ the reassembled field and evolves continuously [src: Table 1 and Sect.
 Three matching schemes are in use [src: arXiv:2505.10682, Sect. 3.4.1]:
 
 - the most massive halo within a fixed radius, typically ≈ 30 Mpc (earlier
-  BORG and SIBELIUS-DARK work), which becomes ambiguous in superclusters;
+  BORG and SIBELIUS-DARK work), which becomes ambiguous in superclusters [src: arXiv:2505.10682, Sect. 3.4.1];
 - a hierarchical selection that matches clusters to group catalogues and
   searches out to 65 Mpc, with X-ray temperature, luminosity and dynamical
-  state as tie-breakers (SLOW);
+  state as tie-breakers (SLOW) [src: arXiv:2505.10682, Sect. 3.4.1];
 - the LUM: for each observed–simulated pair the probability
   p(r, M_200c) of finding a halo of that mass at that separation from a
   random point in an unconstrained simulation, evaluated for all haloes
   above 10¹⁴ h⁻¹ M_⊙, followed by a one-to-one assignment with the Hungarian
-  algorithm that minimises the summed probabilities. Manticore adopts it.
+  algorithm that minimises the summed probabilities. Manticore adopts it [src: arXiv:2505.10682, Sect. 3.4.1].
 
 The detection significance is 1 − p, and the "detection rate" is the
 fraction of posterior resimulations in which a counterpart exceeds a given
@@ -343,9 +343,9 @@ radius above a lower mass cut are taken, the radius being enlarged up to
 typically 45 h⁻¹ Mpc if needed (median replica distance ≈ 25 h⁻¹ Mpc);
 temperature, luminosity, dynamical state and, in superclusters such as
 Hydra–Centaurus or Shapley, the geometry of the surrounding filaments break
-ties [src: arXiv:2402.01834, Sect. 3.3]; 45 h⁻¹ Mpc is about 66 Mpc for
-h = 0.678, consistent with the 65 Mpc quoted by Manticore-Local [der:
-45/0.6777, SLOW cosmology of arXiv:2402.01834, Sect. 2.1]. Hamlet-PM uses the LUM and adds
+ties [src: arXiv:2402.01834, Sect. 3.3]. SLOW states its search radius in
+h⁻¹ Mpc and Manticore-Local in Mpc, so the two radii are compared only after
+a conversion with the Hubble constant of each paper. Hamlet-PM uses the LUM and adds
 an "opt-LUM" that moves each target iteratively to the mass-weighted centre
 of its matched haloes (converging in fewer than 10 iterations), to separate
 a systematic offset of a tight halo cloud from random scatter; its
@@ -439,7 +439,7 @@ the two "perform roughly equally well" below about 40 h⁻¹ Mpc, Hamlet does
 slightly better between 40 and 120 h⁻¹ Mpc, and beyond 120 h⁻¹ Mpc Hamlet
 has "better and tighter correlations" but "a somewhat biased
 reconstruction", biases "missing from the BGc/WF reconstruction" [src:
-Valade et al. 2022b, arXiv:2209.05846].
+Valade et al. 2022b, arXiv:2209.05846, abstract].
 
 The Hamlet-PM paper makes the comparison from the velocity side. On the
 velocity-field and LUM metrics both its linear and non-linear results rank
@@ -522,13 +522,13 @@ of 300 constrained simulations, 146 contain a LG obeying isolation, mass
 and separation criteria, 51 also the orbital angular momentum and energy,
 6 also the phase of the orbit; the authors conclude that the LG "is likely
 a robust outcome" of ΛCDM under the CF2 constraints [src: Carlesi et al.
-2016, arXiv:1602.03919]. A third answer replaces random completion by
+2016, arXiv:1602.03919, abstract]. A third answer replaces random completion by
 paired fixed fields (fixed amplitudes, exactly out of phase): constrained
 in that way, "only 20% of the power spectrum on large scales (> tens of
 megaparsecs) is purely random", and the two members of one pair give an
 unbiased average, "the equivalent of hundreds of constrained simulations",
 their difference giving the uncertainty [src: Sorce 2020,
-arXiv:2006.01838].
+arXiv:2006.01838, abstract].
 
 ### How many resimulations
 <!-- key: how-many-resimulations -->
@@ -640,7 +640,7 @@ and writes snapshots (Step 3) [src: arXiv:1608.01763, Sects. II.4–II.5].
   where BGc/WF shows no such bias (arXiv:2209.05846).
 - **Neglected displacements.** CR without RZA shifts recovered haloes by
   about 10 h⁻¹ Mpc and recovers only the most massive ones
-  (arXiv:1212.2810).
+  (arXiv:1212.2810) [src: abstract].
 - **Box too small for the named cluster.** HESTIA's Virgo, 3–4 × 10¹⁴ M_⊙
   in 100 h⁻¹ Mpc boxes, is possibly below the observed mass; larger
   constrained boxes give more massive Virgo clusters (arXiv:2008.04926,
@@ -689,8 +689,8 @@ and writes snapshots (Step 3) [src: arXiv:1608.01763, Sects. II.4–II.5].
   random fraction and the uncertainty.
 - Application: Dolag et al. 2023, arXiv:2302.10960, and Hernández-Martínez
   et al. 2024, arXiv:2402.01834 — SLOW: CLONES ICs, hydrodynamical set,
-  replica search for 46 clusters, mass comparison with CORUSCANT and
-  SIBELIUS.
+  replica search for 46 clusters [src: abstract of arXiv:2402.01834], mass
+  comparison with CORUSCANT and SIBELIUS.
 - Method: Valade et al. 2022, arXiv:2203.02369 — Hamlet, HMC from
   peculiar velocities; arXiv:2209.05846 — Hamlet against BGc/WF on mocks.
 - Application: Valade et al. 2026, arXiv:2602.03699 (in L2) — Hamlet-PM on

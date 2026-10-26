@@ -29,37 +29,45 @@ Facts flagged `[sec: GC|WL|CMB|SN|CL]` come from the named sibling skill.
 ## What an expert holds in mind
 <!-- key: what-an-expert-holds-in-mind -->
 
-- DESI finished its planned survey in April 2026 and observes through 2028;
-  public spectra stop at DR1 (19 March 2025), DR2 being BAO likelihoods only
-  (arXiv:2205.10939, arXiv:2503.14745).
+- DESI finished its planned survey in April 2026 and observes through 2028
+  (Berkeley Lab release of 15 April 2026); public spectra stop at DR1
+  (19 March 2025, `data.desi.lbl.gov` release page; DR1 paper
+  arXiv:2503.14745), DR2 being BAO likelihoods only.
 - Euclid has three public releases and no cosmology product. DR1-Foundation
   is due 12 November 2026, DR1 mid-2027, DR2 June 2029, DR3 October 2031,
-  all tentative (arXiv:2405.13493, arXiv:2405.13492).
-- Rubin's ten-year survey began 30 June 2026; Early DP2 came on 27 July
-  2026; DR1 will use the first year of data (arXiv:0805.2366).
-- Roman launched 30 August 2026 and is in commissioning; its surveys are
-  the community-defined ones, not the 2021 reference (arXiv:2505.10574).
-- SDSS DR20 (30 July 2026) is current. SDSS-V has no clustering programme;
+  all "tentative" (ESA Euclid timeline page, read 2026-10-09).
+- Rubin's ten-year survey began 30 June 2026 (Rubin announcement, via
+  `cosmo-weak-lensing`); Early DP2 came on 27 July 2026 (`dp2.lsst.io`); DR1
+  will be "based on the first year of LSST observations" (RTN-011 v9.1).
+- Roman launched 30 August 2026 and is in commissioning (NASA mission
+  page); its surveys are the community-defined ones, not the 2021 reference
+  (arXiv:2505.10574).
+- SDSS DR20 (30 July 2026, `sdss.org/dr20`) is current. SDSS-V has no clustering programme;
   eBOSS closed in DR16 (arXiv:2507.06989, arXiv:2112.02026).
-- 4MOST (first light 18 October 2025, 2436 fibres), WEAVE and MOONS (first
-  observations announced 3 September 2026) are on sky without a confirmed
+- 4MOST (first light 18 October 2025 per ESO; 2436 spectra per pointing,
+  arXiv:2606.27882 [src: abstract]), WEAVE and MOONS (first observations
+  announced 3 September 2026, ESO ann26007) are on sky without a confirmed
   main-survey start (arXiv:1903.02464, arXiv:2212.03981, arXiv:2009.00628).
-- CMB-S4 was cancelled on 9 July 2025. LiteBIRD is now one telescope, launch
-  JFY2036 (arXiv:2607.25285). The Simons Observatory has no public data.
-- eROSITA DR2 (31 July 2026) holds catalogues of three all-sky passes of
-  the German half; eight were planned (arXiv:2607.27772, arXiv:2010.03477).
-- Legacy Surveys DR11 covers about 22,700 deg²; the 14,000 deg² figure is
-  the design (arXiv:1804.08657).
+- CMB-S4 was cancelled on 9 July 2025 (`cmb-s4.org`, via `cosmo-cmb`).
+  LiteBIRD is now one telescope, target launch "Japanese fiscal year 2036"
+  (arXiv:2607.25285) [src: Table 2]. The Simons Observatory has no public data.
+- eROSITA DR2 (31 July 2026, `erosita.mpe.mpg.de/dr2`) holds catalogues of
+  three all-sky passes of the German half (arXiv:2607.27772); eight were
+  planned "by the end of 2023" (arXiv:2010.03477) [src: abstract].
+- Legacy Surveys DR11 covers about 22,700 deg² (`legacysurvey.org` DR11
+  page); the 14,000 deg² figure is the design (arXiv:1804.08657).
 - Stage-V spectroscopy: MUST reports construction (arXiv:2605.10102);
   Spec-S5, WST and MSE are designs (arXiv:2608.07927, arXiv:2403.05398,
   arXiv:2503.15553).
 - 21 cm cosmology had only cross-correlation detections (arXiv:2202.01242,
-  arXiv:2606.25955) until the CHIME auto-spectrum, 12.5σ at z ~ 1
-  (arXiv:2511.19620; `cosmo-reionization-21cm`); CHORD's full array is due
-  in 2028 (arXiv:2607.09374).
-- LVK's O4 ended 18 November 2025; GWTC-5.0 has 267 mergers in its
-  population analysis (arXiv:2605.27226) and 236 sources in its cosmology
-  analysis (arXiv:2605.27227; `cosmo-multimessenger`); O5 has no date.
+  arXiv:2606.25955) until the CHIME auto-spectrum at z ~ 1, 12.5σ in
+  the arXiv listing abstract and 12.4σ in the v2 text (arXiv:2511.19620)
+  [src: abstract]; CHORD's full array "will be
+  commissioned in 2028" (arXiv:2607.09374) [src: abstract].
+- LVK's O4 ended 18 November 2025 (AEI and ICRR pages, via web search);
+  GWTC-5.0 has 267 mergers in its population analysis (arXiv:2605.27226)
+  [src: abstract] and 236 sources in its cosmology analysis
+  (arXiv:2605.27227) [src: abstract]; O5 has no date.
 - A design number is not a delivered number: check release, area and
   passes before quoting.
 
@@ -69,7 +77,8 @@ Facts flagged `[sec: GC|WL|CMB|SN|CL]` come from the named sibling skill.
 - Fibre-assignment incompleteness and its correction (PIP weights, θ-cut):
   arXiv:1703.02070, arXiv:2411.12025.
 - Redshift success by tracer and its focal-plane dependence, against the
-  design requirement (DESI: > 90–95% per pointing, arXiv:2205.10939).
+  design requirement (DESI: redshift completeness > 95% for each pointing,
+  arXiv:2205.10939 [src: Table 3]).
 - Imaging depth variations and the north/south photometric boundary of the
   targeting imaging.
 - Photometric calibration uniformity (arXiv:astro-ph/0703454,
@@ -115,7 +124,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 5k; methods 7k; results 5k; surveys 13k; systematics 7k; deep/cadence-time-domain 7k; deep/cmb-survey-design 11k; deep/cross-survey-coordination 8k; deep/footprint-tiling-depth 8k; deep/requirements-flowdown 10k; deep/survey-forecasts 6k.
+Sizes, in thousands of tokens: L1 3k; open 6k; methods 8k; results 5k; surveys 14k; systematics 7k; deep/cadence-time-domain 8k; deep/cmb-survey-design 11k; deep/cross-survey-coordination 8k; deep/footprint-tiling-depth 8k; deep/requirements-flowdown 11k; deep/survey-forecasts 6k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

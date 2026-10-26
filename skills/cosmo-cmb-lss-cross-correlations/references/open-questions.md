@@ -69,8 +69,10 @@ tracers. None was found in a date-sorted search on 2026-10-09.
 - Matter power suppression of 10 ± 2% at k = 1 h/Mpc from kSZ + eROSITA (Siegel 2025,
   arXiv:2512.02954); shear × tSZ prefers stronger suppression than mild-feedback simulations at
   2–4σ (Pandey 2025, arXiv:2506.07432) [src: abstract].
-- Velocity-reconstruction amplitudes of 0.2–0.4 relative to a Battaglia-profile halo model
-  (`systematics.md` §8) [src].
+- Velocity-reconstruction amplitudes well below one relative to a Battaglia-profile halo model:
+  b_v = 0.229 ± 0.022 (90 GHz) and 0.233 ± 0.020 (150 GHz) for DESI DR2 LRGs (arXiv:2604.04867,
+  Sect. V.2 table), 0.33 ± 0.03 for photometric LRGs (arXiv:2511.15701, abstract)
+  (`systematics.md#ksz-the-optical-depth-degeneracy`) [src].
 
 **Against, or for caution.**
 - DES Y3 + Planck PR4 6×2pt with a gas-fraction prior finds weak feedback, in 2.9–3.3σ tension
@@ -293,7 +295,9 @@ the blue sample (Coulton); reconstruction signal-to-noise raised by almost 20% (
 - arXiv:2204.13436, Bahr-Kalus et al., ISW with the RACS radio survey:
   A_ISW = 0.94 +0.42/−0.41 [src: abstract].
 - arXiv:2209.07395, Carron et al., Planck ISW–lensing likelihood: abstract read.
-- 2503.00636 and 1808.07445, Simons Observatory science goals and forecasts: titles only.
+- arXiv:2503.00636, Simons Observatory enhanced-LAT science goals: abstract and Sect. 2 read on
+  2026-10-23 for the LAT upgrade (`surveys-and-data.md`), the rest not read; 1808.07445, Simons
+  Observatory science goals and forecasts: title only.
 - 2609.04133 (moving-lens modelling), 2506.17217 (bias-hardened screening estimators),
   2510.20715 (Iskay2 pairwise pipeline),
   2507.07346 (CLASS_SZ II), 2608.04868 (kSZ × CMB lensing for reionisation), 2609.09144
@@ -302,7 +306,8 @@ the blue sample (Coulton); reconstruction signal-to-noise raised by almost 20% (
 Not verified at all:
 
 - Closed on 2026-10-13: the kSZ velocity bias and f_NL of DESI ELGs and quasars
-  (`results.md` §2.2, §2.3); the first CIB × CMB lensing detections (`results.md` §7.5).
+  (`results.md`, Sects. 2.2 and 2.3); the first CIB × CMB lensing detections (`results.md`,
+  Sect. 7.5).
 - The value of the tSZ–CIB correlation coefficient, and the bodies of the Planck y-map and
   tSZ–CIB papers (abstracts only).
 - Whether any DES Y6, Euclid, HSC or KiDS-Legacy × CMB lensing cosmology exists outside arXiv

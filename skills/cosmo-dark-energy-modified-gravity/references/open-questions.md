@@ -72,13 +72,15 @@ below gives the objection, the reply, and the status at the snapshot.
 <!-- key: does-the-signal-survive-without-supernovae -->
 
 - DESI DR2 + CMB alone: 3.1σ; with only compressed early-universe CMB priors:
-  2.4σ; DESI alone: 1.7σ (arXiv:2503.14738) [src].
+  2.4σ; DESI alone: 1.7σ (arXiv:2503.14738) [src: Table 6].
 - DES Y6 all probes + DESI DR2 BAO + CMB without supernovae: 2.6σ
-  (arXiv:2605.27221) [src].
+  (arXiv:2605.27221) [src: abstract].
 - Without the CMB: DESI DR2 + DES Y6 (low redshift only) 2.3σ
   (arXiv:2605.27221); DESI DR1 full shape + DR2 BAO 1.4σ (arXiv:2602.18761);
-  with the bispectrum, within 1σ (arXiv:2606.23936) [src].
-- **Reading.** No single data set shows the signal above about 2σ. The
+  with the bispectrum, within 1σ (arXiv:2606.23936) [src: abstract of each].
+- **Reading.** No single data set shows the signal at high significance
+  (DESI BAO alone 1.7σ, arXiv:2503.14738, Table 6; DES Y6 alone 2.2σ,
+  arXiv:2605.27221, abstract). The
   preference above 3σ is a property of combinations and can equally be
   described as a ΛCDM inconsistency between data sets: a mismatch in the
   matter density (`Omega_m` 0.297 from DESI against 0.317 from Planck,
@@ -103,20 +105,21 @@ fitted.
   from the CMB lensing constraints on the calibration of the sound horizon"
   and relies on the large-angle polarisation measurement of τ; dropping these
   constraints gives `tau = 0.091 ± 0.011` in ΛCDM and brings the `w0`–`wa`
-  preference below 95% CL [src].
+  preference below 95% CL [src: abstract].
 - Sailer et al. 2025, arXiv:2504.16932: DESI versus CMB is 2.2σ in ΛCDM; `tau
   ~ 0.09` reduces the evolving-dark-energy preference from ≃3σ to ≃1.5σ
   (body: 2.8σ at `tau = 0.06`, 1.4σ at 0.09, [src: Sect. III.2]);
   DESI + high-ℓ CMB + lensing gives `tau = 0.090 ± 0.012`, in ≃3–5σ tension
   with Planck low-ℓ polarisation; τ from Planck is a "single-point failure"
-  for analyses that include the CMB [src].
+  for analyses that include the CMB [src: abstract].
 - Counter-evidence for a high τ lives in `cosmo-cmb` and
   `cosmo-reionization-21cm` (the siblings report that reionisation data side
   with the low value).
-- The CMB data set matters. The sibling `cosmo-cmb` reports the ΛCDM distance
-  between CMB and DESI DR2 as 1.6σ (P-ACT), 2.8σ (CMB-SPA) or 3.7σ (SPT+ACT)
-  [sec]; a `w0wa` significance inherits this spread and must name the CMB
-  likelihood.
+- The CMB data set matters. The ΛCDM distance between CMB and DESI DR2 is
+  1.6σ for P-ACT (arXiv:2503.14452, abstract), 2.8σ for CMB-SPA and 3.7σ for
+  SPT+ACT (arXiv:2506.20707, Sect. VII.3; the paper gives "2.0 - 3.7σ for CMB
+  data sets", Fig. 25 caption) [src]; a `w0wa` significance inherits this
+  spread and must name the CMB likelihood.
 - **Status.** Open. A τ measurement independent of Planck low-ℓ EE would close
   one of the three doors.
 
@@ -162,10 +165,10 @@ Section 5).
 <!-- key: physical-versus-effective-models-phantom -->
 
 - **The claim.** In CPL the best fit crosses `w = −1` near `z ≃ 0.4`
-  (arXiv:2503.14738) [src]. Rippentrop, Ishak and Gonzalez 2026,
+  (arXiv:2503.14738) [src: Sect. VII.1]. Rippentrop, Ishak and Gonzalez 2026,
   arXiv:2608.25278, choose the redshift that maximises the departure from −1
   and obtain 3.01–3.22σ for `w < −1` before the crossing and 3.30–3.55σ for
-  `w > −1` after it, within CPL [src].
+  `w > −1` after it, within CPL [src: abstract].
 - **The constraint from theory.** Lewis and Chamberlain 2024,
   arXiv:2412.13894: the null energy condition imposes inequalities on `D_H`,
   `D_M`, `D_V` and `F_AP` relative to ΛCDM once `theta_*` is fixed; the DESI
@@ -177,15 +180,15 @@ Section 5).
 - **Can a non-crossing model fake it?** Keeley, Shafieloo and Matthewson 2025,
   arXiv:2506.15091: in 1,000 mocks drawn from an algebraic-quintessence
   fiducial, CPL with a phantom crossing beats the real-data `chi2` improvement
-  in 3.2% of cases [src: abstract]. Roughly a 2σ statement: the crossing is preferred,
-  not established.
-- **Thawing quintessence.** DESI's own test gives `Delta chi2` of −2.9 to
-  −13.2 for algebraic thawing against −10.7 to −21.0 for `w0wa`
-  (arXiv:2503.14743) [src]. Shlivko 2025, arXiv:2512.20832, finds thawing
+  in 3.2% of cases [src: abstract]: the crossing is preferred, not
+  established.
+- **Thawing quintessence.** DESI's own test gives `Delta chi2` of −2.9, −6.9
+  and −13.2 (with Pantheon+, Union3, DESY5) for algebraic thawing against
+  −10.7, −17.4 and −21.0 for `w0wa` (arXiv:2503.14743) [src: Table 3]. Shlivko 2025, arXiv:2512.20832, finds thawing
   quintessence "consistently preferred over a cosmological constant" for DESI
   DR2 + Planck + ACT with any supernova compilation including DES-Dovekie, not
   sensitive to the prior but "contingent on the inclusion of supernovae"
-  [src]. The two statements are compatible: thawing beats Λ when supernovae
+  [src: abstract]. The two statements are compatible: thawing beats Λ when supernovae
   are included, and CPL beats thawing.
 - **Modified gravity reading.** Ye et al. 2024, arXiv:2407.15832: a
   non-parametric reconstruction in Horndeski gravity implies that "gravity
@@ -194,13 +197,12 @@ Section 5).
   coupling" from DESI DR2 + CMB + SN in an EFT reconstruction [src]. Wen et
   al. 2026, arXiv:2609.40176: a one-parameter "cosmic glitch" model gives
   `G_cosmo/G_N = 0.9920 ± 0.0025` (3.3σ) from Planck + ACT + SPT + DESI DR2
-  [src]. These are re-descriptions of the same background mismatch; none adds
+  [src: abstract]. These are re-descriptions of the same background mismatch; none adds
   independent data. The perturbation-level tests that could separate them are
   in `results.md` Section 6 and do not show a departure from general
   relativity.
 - **Status.** Open. The crossing is a feature of the best-fit CPL line; its
-  significance as a physical statement is about 2–3.5σ depending on the test,
-  and it disappears if the low-redshift supernova offset or the CMB lensing/τ
+  significance as a physical statement depends on the test, and it disappears if the low-redshift supernova offset or the CMB lensing/τ
   inputs move.
 
 ### 1.7 Statistics of repeated looks
@@ -230,7 +232,7 @@ snapshot.
   KiDS-Legacy and Planck + ACT + SPT (Du et al. 2026, arXiv:2602.03110);
   growth index `gamma = 0.633 (+0.025/−0.024)` (3.7σ) (Nguyen, Huterer and Wen
   2023, arXiv:2302.01331); a "mild yet consistent indication for c_B > 0" in
-  DESI's own α-basis fit (arXiv:2411.12026) [src].
+  DESI's own α-basis fit (arXiv:2411.12026) [src: abstract of each].
 - **Common thread.** Each positive result leans on the CMB lensing amplitude:
   the Σ0 result is attributed by its authors to large-scale CMB lensing; the
   Planck part of the γ result trades against curvature, as the PR3 smoothing
@@ -247,20 +249,20 @@ snapshot.
 - **For.** A stable phantom crossing needs more than a minimally coupled
   scalar; non-minimal coupling provides it (Ye et al. 2024, arXiv:2407.15832;
   Pan and Ye 2025, arXiv:2503.19898, "3σ evidence for non-minimal coupling")
-  [src]. In DR1 the Horndeski fit was as good as CPL: 2.4σ against 2.5σ from
-  ΛCDM (Chudaykin and Kunz 2024, arXiv:2407.02558) [src].
+  [src: abstract]. In DR1 the Horndeski fit was as good as CPL: 2.4σ against
+  2.5σ from ΛCDM (Chudaykin and Kunz 2024, arXiv:2407.02558) [src: abstract].
 - **Against.** These fits use the same background data and reach the same
   significance as CPL; the perturbation data that would distinguish them pull
   back to GR: "the inclusion of cosmic shear and CMB lensing data
   significantly shifts the constraints towards GR" (Rebouças et al. 2026,
-  arXiv:2606.00411) [src]; DESI finds `mu0`, `Sigma0` consistent with GR in a
+  arXiv:2606.00411) [src: abstract]; DESI finds `mu0`, `Sigma0` consistent with GR in a
   `w0wa` background while still preferring `w0 > −1`, `wa < 0`
   (arXiv:2411.12026) [src].
 - **Competing re-descriptions.** Interacting dark energy at 3–5σ, robust to
   DES-Dovekie, matching or exceeding CPL with the same number of parameters
-  (Li et al. 2026, arXiv:2601.07361) [src]; a cosmological gravitational
-  constant 0.8% below Newton's at 3.3σ (Wen et al. 2026, arXiv:2609.40176)
-  [src]. The review of Li et al. 2026, arXiv:2606.21826, lists interacting
+  (Li et al. 2026, arXiv:2601.07361) [src: abstract]; a weaker cosmological
+  gravitational coupling, `G_cosmo/G_N = 0.9920 ± 0.0025`, at 3.3σ (Wen et al.
+  2026, arXiv:2609.40176) [src: abstract]. The review of Li et al. 2026, arXiv:2606.21826, lists interacting
   dark energy, non-minimally coupled gravity and non-standard dark matter as
   producing the same effective departure from `w = −1` at the background level
   [src].
@@ -296,8 +298,8 @@ this session; see "Not verified").
 Desmond and Ferreira state that their bound forces "practically all
 astrophysical" objects to be screened (the abstract was read up to that
 point), and their title calls astrophysically relevant Hu–Sawicki `f(R)` ruled
-out [src]. Cosmological analyses keep quoting 10^-5-level bounds because they
-are independent of galaxy-formation modelling. Both are correct statements
+out [src]. Cosmological and cluster analyses keep quoting their weaker bounds
+(table above) because they are independent of galaxy-formation modelling. Both are correct statements
 about different assumptions; a paper should say which it relies on.
 
 ### 2.5 Is `E_G` still worth measuring?
@@ -330,8 +332,9 @@ same data with a proper likelihood. Current practice is to publish both
   analyses differ in priors, compression and supernova sample; no
   like-for-like comparison was found.
 - **Compressed versus full CMB.** Compression isolates the early-universe
-  anchor and removes lensing; the significance is lower by 0.7σ in DESI DR2
-  (2.4σ against 3.1σ, arXiv:2503.14738) [src]. Which is "the" BAO + CMB number
+  anchor and removes lensing; in DESI DR2 the significance is 2.4σ with the
+  compressed priors against 3.1σ with the full CMB (arXiv:2503.14738)
+  [src: Table 6]. Which is "the" BAO + CMB number
   depends on whether CMB lensing is trusted at that level.
 - **One sample or three.** With Unite available, quoting three supernova
   variants is no longer necessary; but Unite inherits the anchor of both
@@ -347,7 +350,7 @@ same data with a proper likelihood. Current practice is to publish both
 | Is the CMB side a τ or lensing problem? | independent τ; lensing from ACT/SPT/SO | see `cosmo-cmb` | [sec] |
 | Does growth agree with the `w0wa` background in GR? | DESI DR2 full shape; Euclid DR1 | 2027 | [sec] |
 | Is `Sigma0 > 0` a CMB-lensing artefact? | Euclid and Rubin lensing without CMB lensing | 2027 onward | — |
-| Thawing versus phantom crossing | `sigma(wa)` several times smaller than today | Stage-IV combination | [der] `surveys-and-data.md` Section 5 |
+| Thawing versus phantom crossing | the resolution `sigma(w') ≈ (1 + w)` that Caldwell and Linder set for telling thawing from freezing fields | Stage-IV combination | arXiv:astro-ph/0505494, abstract; `surveys-and-data.md` Section 5 |
 
 Forecasts (all labelled **forecast**): Euclid figure of merit raised by at
 least a factor of three by probe cross-correlations (arXiv:1910.09273); LSST ×
@@ -360,23 +363,23 @@ compilations (Dhawan, Popovic and Goobar 2024, arXiv:2409.18668) [src].
 
 | Claim still in circulation | Why it is wrong or stale | Corrected by |
 |---|---|---|
-| "DESI finds evolving dark energy at 4.2σ" | Value with DES-SN5YR before recalibration; now 3.2–3.4σ | arXiv:2511.07517, arXiv:2601.19424 |
-| "DESI alone shows dynamical dark energy" | DESI BAO alone: 1.7σ, prior-limited | arXiv:2503.14738 |
-| "The signal depends on which supernova sample is used" | True in 2024–2025; the three samples now agree at 3.2–3.4σ | arXiv:2601.19424 |
-| "Pantheon+ shows no preference" | Not after the host-mass correction (3.2σ) | arXiv:2601.19424 |
+| "DESI finds evolving dark energy at 4.2σ" | Value with DES-SN5YR before recalibration (arXiv:2503.14738, Table 6); with DES-Dovekie 3.2σ (arXiv:2511.07517) or 3.4σ as rerun by arXiv:2601.19424 | arXiv:2511.07517, arXiv:2601.19424, abstract of each |
+| "DESI alone shows dynamical dark energy" | DESI BAO alone: 1.7σ, prior-limited | arXiv:2503.14738, Sect. VII.1, Table 6 |
+| "The signal depends on which supernova sample is used" | True in 2024–2025; now Union3.1 3.4σ, DES-Dovekie 3.4σ, corrected Pantheon+ 3.2σ, "a significantly improved consistency between SN analyses" | arXiv:2601.19424, abstract |
+| "Pantheon+ shows no preference" | Not after the host-mass correction (3.2σ) | arXiv:2601.19424, abstract |
 | "Three supernova samples confirm it independently" | They share most low-redshift supernovae | arXiv:2501.06664, arXiv:2411.11685 |
-| "The data prefer `w` different from −1" | `w_p` is within 2σ of −1; the preference is for a slope | arXiv:2404.08056, arXiv:2503.14738 |
+| "The data prefer `w` different from −1" | `w_p = −1.024 ± 0.043` (DESI + CMB) and `−0.954 ± 0.024` (+ DESY5), "a mild preference for a deviation from w = −1 at the best-measured redshift"; the preference is for a slope | arXiv:2404.08056; arXiv:2503.14738, Sect. VII.1 |
 | "The data prefer thawing quintessence" | `w ≥ −1` models fit worse than CPL; the BAO + CMB tension lies in NEC-violating directions | arXiv:2503.14743, arXiv:2412.13894 |
-| "Phantom crossing is detected" | Preferred within CPL; 3.2% of non-crossing mocks imitate it | arXiv:2506.15091 |
-| "Evolving dark energy eases the Hubble tension" | `w0waCDM` lowers `H0` | arXiv:2503.14738 |
-| "The Bayesian evidence is strong" | `ln B` from −0.66 to 4.88 by sample in DR2; "weak" after the supernova revisions | arXiv:2503.14743, arXiv:2511.07517, arXiv:2609.05053 |
-| "Full-shape clustering confirms it" | DESI DR1 FS + DR2 BAO: 1.4σ; bispectrum weakens it | arXiv:2602.18761, arXiv:2606.23936 |
+| "Phantom crossing is detected" | Preferred within CPL; 3.2% of non-crossing mocks imitate it | arXiv:2506.15091, abstract |
+| "Evolving dark energy eases the Hubble tension" | `w0waCDM` lowers `H0` | arXiv:2503.14738, Sect. VII.1 |
+| "The Bayesian evidence is strong" | DR2 `ln B` −0.66 (Pantheon+), 3.03 (Union3), 4.88 (DESY5) (arXiv:2503.14743, Table 4); "weak" after the supernova revisions (abstracts) | arXiv:2503.14743, arXiv:2511.07517, arXiv:2609.05053 |
+| "Full-shape clustering confirms it" | DESI DR1 FS + DR2 BAO: 1.4σ; bispectrum weakens it | arXiv:2602.18761, arXiv:2606.23936, abstract of each |
 | "Planck shows Σ0 > 0 / modified gravity" | PR3 artefact; gone with PR4 likelihoods | arXiv:2411.12026 |
 | "E_G is low at large scales" | 2015 CMASS value; calibrated estimator agrees with GR | arXiv:2401.12971 |
 | "GW170817 killed modified gravity" | It removed non-conformal Horndeski couplings; conformal coupling and screening models remain | arXiv:1710.05877 |
-| "f(R) is constrained to 10^-5" (as the best bound) | Galaxy-scale bound is 1.4 × 10^-8 | arXiv:2009.08743 |
+| "f(R) is constrained to 10^-5" (as the best bound) | Galaxy-scale bound is 1.4 × 10^-8 (1σ) | arXiv:2009.08743, abstract |
 | "Negative neutrino mass is a separate anomaly" | Same CMB–BAO mismatch as `w0wa`; `w0wa` restores positive mass | arXiv:2407.10965 |
-| "Interacting dark energy / non-minimal coupling is detected at 3–5σ" | Re-description of the same background mismatch; lensing data pull to GR | arXiv:2606.00411 |
+| "Interacting dark energy / non-minimal coupling is detected at 3–5σ" | Re-description of the same background mismatch; lensing data pull to GR | arXiv:2606.00411, abstract; the "3 - 5σ" is from arXiv:2601.07361, abstract |
 
 ## 6. Not verified this session
 <!-- key: not-verified-this-session -->
@@ -384,7 +387,7 @@ compilations (Dhawan, Popovic and Goobar 2024, arXiv:2409.18668) [src].
 - The DESI DR1 full-shape value of the growth index γ, and any post-PR4 update
   of the Nguyen et al. growth-suppression result.
 - Thresholds of the Jeffreys scale as used by each paper; only the DESI
-  wording ("moderate ≤ 2.5", "strong ≤ 5") was read.
+  wording ("moderate ≤ 2.5", "strong ≤ 5"; arXiv:2503.14743, App. A) was read.
 - Which named Horndeski models survive GW170817 (the LIGO-frequency caveat is
   now read: arXiv:1806.09417, `physics-and-methods.md` Section 4.4).
 - Vainshtein-screened model constraints (nDGP, Galileons): no number was read.

@@ -73,21 +73,23 @@ Three routes [src: Simmonds et al. 2024, arXiv:2409.01286, Sect. 5.1]:
 
 1. Hα. Correct the flux for dust (an SMC curve, for example), assume case B,
    f_esc = 0 and no dust absorption of Lyman-continuum photons; then
-   ṅ_ion = 7.28 × 10¹¹ L(Hα) (s⁻¹, L in erg s⁻¹) and ξ_ion = ṅ_ion/L_UV at
-   1500 Å. The paper names its weak points: "a great dependence on the
+      ṅ_ion = 7.28 × 10¹¹ L(Hα) (s⁻¹, L in erg s⁻¹) and ξ_ion = ṅ_ion/L_UV at
+   1500 Å (arXiv:2409.01286, Sect. 5.1). The paper names its weak points: "a great dependence on the
    chosen attenuation curve", and case B "cannot always be assumed".
 2. [O III] λ5007 equivalent width as a measure of the ionisation field, which
    also depends on metallicity and nebular conditions.
 3. Full SED fit (Prospector) with f_esc = 0. On 677 emission-line galaxies at
-   z ~ 4–9 the line-based and Prospector values agreed tightly, which is why
+   z ~ 4–9 (arXiv:2409.01286, Sect. 5.1) the line-based and Prospector values agreed tightly, which is why
    the mass-complete analysis uses the SED fit for every galaxy, lines
    detected or not. The output is ξ_ion,0 = ξ_ion (1 − f_esc) (Eq. 3).
 
 Giovinazzo et al. use the equivalent Leitherer & Heckman conversion
 L(Hα) = 1.36 × 10⁻¹² N(H⁰) erg s⁻¹, and recover the intrinsic rate as
 Ṅ_ion,int = N(H⁰)/(1 − f_esc) [src: arXiv:2607.22834, Sect. 2.3, Eqs. 2–3].
-The two coefficients agree to 1% [der: 1/1.36 × 10⁻¹² = 7.35 × 10¹¹ against
-7.28 × 10¹¹].
+
+The two conversions are the same case-B relation written in opposite
+directions, one as a rate per unit luminosity and one as a luminosity per
+unit rate [der].
 
 ### Step 4. Assign f_esc
 <!-- key: step-4-assign-fesc -->
@@ -159,7 +161,9 @@ the escaping photons [src: arXiv:2404.07250, Sect. 2]. Prescriptions in use:
 A relation fitted in log space must be converted to a linear mean before it
 enters Eq. 3: ⟨Ṅ_ion,esc⟩ = 10^(½ ln10 σ²) Ṅ_ion,esc, with σ = 0.725 dex
 taken from the simulated scatter [src: arXiv:2606.14671, Sect. 4.1, Eq. 8].
-For σ = 0.725 the factor is 4.0 [der: 10^(0.5 × 2.303 × 0.526)].
+The correction matters: varying the assumed scatter from 0.000 to 1.000 dex
+moves the redshift at which reionisation completes from 3.8 to 7.3
+[src: arXiv:2606.14671, Sect. 4.5].
 
 ### Step 6. Choose the sinks
 <!-- key: step-6-choose-the-sinks -->
@@ -317,7 +321,7 @@ arXiv:2511.09364, abstract].
 | Hα vs SED intrinsic rate | median offset 0.05 dex (Hα lower) | NIRSpec prism | arXiv:2607.22834 | Sect. 2.5 |
 | f_esc distribution | approximately exponential, mean 10% | NIRSpec prism | arXiv:2607.22834 | Sect. 2.3 |
 | f_esc recovery | robust for high f_esc at all S/N; at S/N = 3 all inputs < 30% are consistent with 0; Bayes factor > 100 as the confidence threshold | injection on bagpipes models through the JWST ETC, S/N 3, 5, 10, 20 | arXiv:2507.01096 | Sect. 4 |
-| Lognormal mean correction | σ = 0.725 dex → factor 4.0 [der] | THESAN-ZOOM | arXiv:2606.14671 | Sect. 4.1, Eq. 8 |
+| Lognormal mean correction | σ = 0.725 dex, entered through the lognormal correction factor of Eq. 8 | THESAN-ZOOM | arXiv:2606.14671 | Sect. 4.1, Eq. 8 |
 | Clumping fit | C = 9.25 − 7.21 log₁₀(1 + z) | Madau 2024 / Wu 2025 model | arXiv:2606.14671 | Sect. 4.3 |
 | Observational C | ≈ 12 (z = 5–6); ≈ 3 photons per baryon | Γ_HI and λ_mfp | arXiv:2406.18186 | Sect. III.2; abstract |
 | Forest Γ_HI error budget | statistical ± 0.04–0.07 dex; γ = 1.2–1.6 gives ± 0.06–0.09 dex | z = 2.4–4.75 | arXiv:1307.2259 | Table 1 |
@@ -353,7 +357,7 @@ arXiv:2511.09364, abstract].
   arXiv:2601.19995, abstract].
 - Wrong balance equation. The static criterion predicts the wrong completion
   epoch; the volume-filling form biases τ by > 20% in a simulation test [src:
-  arXiv:1311.2152; arXiv:2004.07854, abstracts].
+  arXiv:1311.2152; arXiv:2004.07854, abstract of each].
 - AGN left out. The simulation-calibrated budget neglects them [src:
   arXiv:2606.14671, Sect. 4.3]; broad-line objects distort Hα-based ξ_ion
   [src: arXiv:2607.22834, Sect. 2.5].
@@ -400,5 +404,5 @@ that give the same τ [src: arXiv:2404.07250, Sect. 4].
 - The Γ_HI measurements at z > 5 (Davies et al., cited by arXiv:2406.18186)
   and the emissivity curves of Gaikwad et al. 2023 were not read here.
 - The AGN contribution to the budget was not researched.
-- The redshift of completion in Giovinazzo et al. (z ~ 5.8) is taken from
-  L2; its section 5.2 was not read.
+- The redshift of completion in Giovinazzo et al. (z ~ 5.8) was read in the abstract only
+  (arXiv:2607.22834, abstract); its section 5.2 was not read.

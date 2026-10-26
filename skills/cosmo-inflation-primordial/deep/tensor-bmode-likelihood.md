@@ -16,12 +16,12 @@ Already in L2 or in other dossiers, not repeated here: the BK18 parameter
 list, priors and foreground budget
 (`systematics.md#b9-bk18-budget-as-read-in-the-paper-body`), the SPT-3G
 foreground model and dust fits
-(`systematics.md#b10-spt-3g-2019-2020-bb-budget-as-read`), the 66-spectrum,
-nine-bandpower, 499-simulation summary and the χ² = 541.6 goodness of fit
+(`systematics.md#b10-spt-3g-2019-2020-bb-budget-as-read`), the spectrum,
+bandpower and simulation counts and the goodness of fit
 (`physics-and-methods.md#bicep-keck-style-likelihood`), Bayesian against
 Feldman–Cousins limits (`physics-and-methods.md#quoting-a-limit`). The SO
 pseudo-C_ℓ set-up (NaMaster purification, cross-split debiasing, Gaussian
-against Hamimeche–Lewis likelihood at f_sky ≈ 10%) and the foreground
+against Hamimeche–Lewis likelihood on the SO patch) and the foreground
 pipelines are in `deep/bmode-foreground-separation.md`; the lensing
 template as an extra spectral channel is in `deep/delensing.md`; low-ℓ
 satellite-style likelihoods for τ are the `cosmo-cmb` dossier
@@ -60,7 +60,7 @@ arXiv:1603.05976):
   the largest quarter of eigenmodes spans pure B (the smallest quarter pure
   E), "adequate for preserving power up to ℓ ∼ 700"; the projector
   Π_B = Σ b_i b_iᵀ is applied to each map (Eqs. 73–74). The 1/ℓ² choice and
-  the quarter cut are described as arbitrary [src: Sect. VI.1].
+  the quarter cut are described as arbitrary (arXiv:1603.05976) [src: Sect. VI.1].
 - Stated reason: partial coverage, timestream filtering including
   deprojection, and the map projection plus Fourier estimator all leak E
   into B; without purification "the sample variance of E/B leakage in the
@@ -146,7 +146,8 @@ BICEP/Keck [src: arXiv:1810.05216, App. H; arXiv:2110.00483, main text]:
 
 - 499 lensed- and unlensed-ΛCDM realisations made by resampling timestreams
   from simulated input maps through the full pipeline; the unlensed set
-  measures the purity achieved by matrix purification.
+  measures the purity achieved by matrix purification (499 signal-and-noise
+  simulations for the covariance: arXiv:2110.00483) [src: main text, Fig. 3 discussion].
 - Gaussian power-law dust maps with the observed amplitude, also through
   the pipeline, used where the fluctuations of the real data must be
   matched (spectral-stability tests, the PTE of the data χ²).
@@ -250,6 +251,8 @@ low ℓ from filtering and purification [src: main text, Fig. 3].
 ### E/B separation
 <!-- key: e-b-separation -->
 
+From arXiv:1603.05976 [src: Sect. VII.2], 200 noiseless unlensed-ΛCDM simulations:
+
 | Method | Handles | Cost | Measured on the same simulations |
 |---|---|---|---|
 | Fourier E/B on apodised maps ("normal") | nothing beyond apodisation | leakage variance | noiseless r = 0 sims: r < 0.17 (95%) from leakage alone |
@@ -284,7 +287,7 @@ interact with leakage deprojection filtering" (`systematics.md#b9-bk18-budget-as
   only on the cut sky [src: arXiv:0801.0554, Sect. III.5].
 - Gaussian in bandpowers: SO checked that HL gives the same result when
   each bandpower averages more than 61 modes, and states this "would not
-  hold" for BK-sized patches (`deep/bmode-foreground-separation.md`).
+  hold" for BK-sized patches (arXiv:2302.04276) [src: Sect. 2.1].
 - Pixel-based at the largest scales: for LiteBIRD-like simulations
   (20,000 end-to-end, MC-NILC cleaning), the offset-HL 68% upper bound on r
   is 19–29% larger than the pixel-based benchmark over ℓ ≤ 128 (13.5–26.6%
@@ -389,7 +392,7 @@ by its ℓ_knee (L2, `systematics.md#b6-low-frequency-noise-and-filtering`).
 ## Not verified
 <!-- key: not-verified -->
 
-- How BICEP/Keck turns the r posterior into its 95% limit and whether it
+- How BICEP/Keck turns the r posterior into its upper limit and whether it
   blinds; the BKP paper (arXiv:1502.00612) where the multi-spectrum
   likelihood was introduced was not read for this.
 - "Appendix B of Ref. [28]" cited by BK18 for covariance details; the

@@ -53,8 +53,8 @@ next-to-leading-order redshift-space counterterm to absorb short-scale
 velocity effects instead of a phenomenological fingers-of-God factor [src:
 Sect. 3.1].
 
-The four DESI DR1 pipelines differ as follows [src: arXiv:2411.12021,
-Sects. 4.3.1–4.3.4]:
+The four DESI DR1 pipelines differ as follows.
+From arXiv:2411.12021 [src: Sects. 4.3.1–4.3.4]:
 
 | Code | Theory | Bias | Extra terms |
 |---|---|---|---|
@@ -241,7 +241,7 @@ arXiv:2404.07272, Sect. 3.6].
 | BOSS, East coast | 0.25 | 0, 2 | mocks; residual model error plus projection ≤ 1σ per 1D marginal | arXiv:1909.05277, Sects. 2, 3.2 |
 | BOSS, West coast | 0.23 | 0, 2 | theory error σ_sys from the distance of the truth to the 68% region on Challenge boxes about 16 times the BOSS volume | arXiv:1909.05271, Sects. 3.5, 4.1–4.2 |
 | PyBird DESI tests | 0.20 | 0, 2 (4 optional) | single-box covariance ≈ DESI Y5 volume; beyond 0.20 little gain, slightly more bias | arXiv:2404.07283, Sect. 8 |
-| DESI DR1 baseline | 0.20 | 0, 2 | see L2 | arXiv:2411.12021 |
+| DESI DR1 baseline | 0.20 | 0, 2 | see L2 | arXiv:2411.12021, Sect. 4.7 |
 
 The hexadecapole does not help ΛCDM but notably improves wCDM and oCDM and
 reduces systematic bias in the PyBird tests, which recommend it for

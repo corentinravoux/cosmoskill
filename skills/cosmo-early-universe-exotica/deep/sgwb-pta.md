@@ -6,7 +6,7 @@ Bayes factor and optimal statistic for Hellings–Downs correlations, null
 distributions and their p-values), how the arrays' noise and frequency choices
 differ and what each costs, and how the LVK cross-correlation limit is built.
 Snapshot: 2026-10-22.
-From: LISA Cosmology WG 2022 review, Sect. 5 (5.1–5.3); NANOGrav,
+From: LISA Cosmology WG 2022 review (arXiv:2204.05434), Sects. 5.1 to 5.3; NANOGrav,
 EPTA/InPTA, PPTA, CPTA, MPTA and IPTA data releases; LVK stochastic-background
 searches.
 
@@ -20,8 +20,8 @@ origin debate (`open-questions.md#astrophysical-or-cosmological-origin-of-the-pt
 ## How it is done
 <!-- key: how-it-is-done -->
 
-The notation follows NANOGrav 15 yr (Agazie et al. 2023, arXiv:2306.16213),
-whose paper sets out the most complete pipeline; the other arrays' choices are
+The notation follows NANOGrav 15 yr (Agazie et al. 2023, arXiv:2306.16213,
+Sect. II "The 15-year Data Set and Data Model"), whose paper sets out the most complete pipeline; the other arrays' choices are
 given step by step beside it.
 δt is the vector of timing residuals of one pulsar; a, b index pulsars; i, j
 index Fourier frequencies f_i = i/T, with T the span from first to last
@@ -228,7 +228,7 @@ arXiv:2306.16213, Sect. III, App. F; arXiv:2306.16214, Sect. 4.3]:
   Scrambled overlap reduction functions must be nearly orthogonal to the true
   one and to each other, by the match M̄ = Σ Γ_ab Γ′_ab / √(Σ Γ² Σ Γ′²)
   (Eq. F1); NANOGrav uses M̄ < 0.1 against the true ORF and < 0.17 between
-  scrambles.
+  scrambles [src: arXiv:2306.16213, App. F].
 
 Model-based alternatives are simulations of CURN data and the analytic
 generalised χ² distribution of Hazboun et al. 2023 (as cited) [src:
@@ -250,11 +250,11 @@ different conclusions [src: same].
 - Binned ρ_ab (15 bins of equal pair number) with χ² = 8.1 against HD,
   p = 0.75 from HD simulations; error bars include the ⟨ρ_ab ρ_cd⟩ covariance
   induced by the signal, without which spreads are 20–40% smaller [src:
-  Sect. IV].
+  arXiv:2306.16213, Sect. IV].
 - Dropout factors per pulsar; leave-one-out posterior predictive likelihood
   (Eq. 13) giving a pseudo Bayes factor of 1400 for HD13/3 over CURN13/3;
   S/N growth with time slices and pulsar number; Arecibo-only and GBT-only
-  data sets [src: Sect. V.4].
+  data sets [src: arXiv:2306.16213, Sect. V.4].
 - Alternative DM model (Sect. V.1); ephemeris model BayesEphem (EPTA, Sect. 4.4.2).
 
 ### LVK: the cross-correlation route
@@ -513,7 +513,7 @@ removed more than half of the 192 s segments [src: Sects. III.2–III.3].
 - Comparison: IPTA 2023, arXiv:2309.00693 — the arrays' noise and frequency
   choices side by side; standardised re-analysis.
 - Application: Xu et al. 2023, arXiv:2306.16216 — CPTA single-frequency
-  correlation statistic, 16-model noise selection, scramble tails.
+  correlation statistic, 16-model noise selection (Sect. 2), scramble tails.
 - Application: Miles et al. 2025, arXiv:2412.01153 — MPTA noise-model
   dependence of HD significance; amplitudes of all arrays compared.
 - Application: Tahbildar et al. 2026, arXiv:2608.02808 — InPTA DR2 upper limit.

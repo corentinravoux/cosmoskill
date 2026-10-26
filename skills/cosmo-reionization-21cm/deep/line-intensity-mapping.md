@@ -95,7 +95,7 @@ COMAP Season 2 (Stutzer et al. 2024, arXiv:2406.07511, Sect. 2) [src]:
 - Maps are made per feed group (feeds sharing a first down-conversion local
   oscillator; 4 groups from 19 feeds) and per elevation half; only
   cross-spectra that cross both feed group and elevation are averaged with
-  inverse-variance weights [src: Eqs. 7–8]. Reason: systematics found in
+  inverse-variance weights [src: arXiv:2406.07511, Eqs. 7–8]. Reason: systematics found in
   Season 2 are common to a feed group, so feed–feed crosses within a group
   would not cancel them; elevation split targets ground sidelobe pickup.
   Cost: Eq. 6 predicts ~12% sensitivity loss against feed–feed crosses,
@@ -108,7 +108,7 @@ COMAP Season 2 (Stutzer et al. 2024, arXiv:2406.07511, Sect. 2) [src]:
   white-noise simulations (used in Early Science) miss correlated noise, and
   time-stream simulations through the pipeline were too expensive.
 - The spectrum is divided by the transfer function per k bin (L2); limits
-  are 95% per bin with a positivity prior [src: Sect. 5.4].
+  are 95% per bin with a positivity prior [src: arXiv:2406.07511, Sect. 5.4].
 
 Peers for this step:
 
@@ -146,8 +146,8 @@ line width v_eff (fitting functions from Chung et al. 2022) to include RSD
 and line-broadening suppression. ⟨T⟩ is bounded only through b > 2, which
 the authors call "a fairly conservative lower bound" from prior modelling.
 The likelihood is Gaussian and independent between k bins, justified by
-≲ 10% bin-to-bin correlation in the Season 2 spectrum [src: Sect. 2.3.2,
-footnote to Eq. 12].
+≲ 10% bin-to-bin correlation in the Season 2 spectrum [src: arXiv:2406.07512,
+Sect. 2.3.2, footnote to Eq. 12].
 
 ### Step 4. Fit the halo–line connection with external priors
 <!-- key: step-4-fit-the-halo-line-connection-with -->
@@ -155,18 +155,21 @@ footnote to Eq. 12].
 Five-parameter analysis [src: arXiv:2406.07512, Sect. 2.3.1]:
 
 - L′_CO(M_h) = C / [(M_h/M)^A + (M_h/M)^B] [Eq. 6], with log-normal
-  scatter σ (dex); L_CO/L_⊙ = 4.9 × 10⁻⁵ L′_CO for CO(1–0) [Eq. 7].
+  scatter σ (dex); L_CO/L_⊙ = 4.9 × 10⁻⁵ L′_CO for CO(1–0) [src: arXiv:2406.07512,
+  Sect. 2.3.1, Eq. 7].
 - "UM" priors loosely from UniverseMachine: A = −1.66 ± 2.33, B = 0.04 ±
   1.26, log C = 10.25 ± 5.29, log(M/M_⊙) = 12.41 ± 1.77 [Eqs. 8–11];
-  σ = 0.4 ± 0.2 dex, centred on Li et al. 2016 and broadened.
+  σ = 0.4 ± 0.2 dex, centred on Li et al. 2016 and broadened [src: arXiv:2406.07512,
+  Sect. 2.3.1].
 - Narrowed by the COLDz CO luminosity function at z ~ 2.4: each MCMC step
   paints peak-patch haloes (161 realisations of 0.16 Gpc³, Tinker 2008 mass
   function), fits a Schechter function, and compares with the COLDz
   Schechter posterior through a kernel density estimate; 250 walkers, 4242
   steps, 1000 burn-in. Reason for replacing Bolshoi–Planck: its cosmology
-  is "slightly discrepant" with the fiducial one.
+  is "slightly discrepant" with the fiducial one [src: arXiv:2406.07512, Sect. 2.3.1].
 - The LIM data then enter as an additive Gaussian log-likelihood
-  [Eq. 12] at z ~ 2.8, without positivity priors (the model is positive).
+  [Eq. 12] at z ~ 2.8, without positivity priors (the model is positive) [src:
+  arXiv:2406.07512, Sect. 2.3.2].
 
 The model chain these priors descend from (Li et al. 2016,
 arXiv:1503.08833, Sect. II.2) [src]: halo → mean SFR(M, z) from Behroozi
@@ -217,7 +220,7 @@ COMAP × eBOSS/DESI quasars (Dunne et al. 2025, arXiv:2510.23568, Sect. 4)
 - Convert T_b to L′_CO per voxel [Eqs. 13–14]; cut 31 × 31 × 81-voxel
   cubelets (113 × 113 × 337 cMpc) around each quasar, "much larger than the
   expected extent" to include clustering; co-add with inverse-variance
-  weights per field.
+  weights per field [src: arXiv:2510.23568, Sect. 4.1].
 - Inject simulated signal into time-ordered data to get a pipeline-processed
   template t and an unprocessed one r; amplitude a = (tᵀt)⁻¹ tᵀ s by
   matched filter [Eq. 15]; ⟨L′_CO⟩ = a × sum of r over the central 5 × 5
@@ -225,9 +228,9 @@ COMAP × eBOSS/DESI quasars (Dunne et al. 2025, arXiv:2510.23568, Sect. 4)
   voxels with most signal and corrects pipeline signal loss at once; 5 × 5
   rather than 3 × 3 because clustering broadens the stack.
 - Errors from 10 000 stacks on catalogues offset by 1–10 spaxels or
-  channels [src: Sect. 4.3]; this captures correlated noise but not sample
+  channels [src: arXiv:2510.23568, Sect. 4.3]; this captures correlated noise but not sample
   variance, which is assigned to the model side.
-- Attenuation and variance factors applied to models [src: Sect. 6]:
+- Attenuation and variance factors applied to models [src: arXiv:2510.23568, Sects. 6.2–6.3]:
   redshift scatter 1669 km/s gives f_VI = 1.21; pointing 1.05; template
   model dependence d_MD = 1.069; interloper scatter d_LI = 1.038.
 
@@ -292,7 +295,7 @@ No VID or CVID measurement on real LIM data was found (one search,
 ### Step 8. Cross-spectra with galaxies or with another line
 <!-- key: step-8-cross-spectra-with-galaxies-or-with -->
 
-- Galaxy cross-power (Kramer et al. 2026, Sect. 3.3) [src]: δ_I = Î − Ī
+- Galaxy cross-power (Kramer et al. 2026, arXiv:2603.13218, Sect. 3.3) [src]: δ_I = Î − Ī
   against δ_QSO = (N − N̄)/N̄ [Eqs. 16–17], computed in 3° × 2.5° patches to
   avoid large-scale 1/f correlations; S/N² = Pᵀ C⁻¹ P with C from 1000
   simulations [Eq. 18].
@@ -308,7 +311,7 @@ No VID or CVID measurement on real LIM data was found (one search,
 
 **Auto-spectrum versus stack versus CVID versus cross-power.** Compared on
 the same EXCLAIM-like [CII] simulations with BOSS/eBOSS quasars (Kramer et
-al. 2026) [src]: mean S/N 8.42 (cross-power), 4.47 (stack), 3.92 (CVID)
+al. 2026, arXiv:2603.13218) [src]: mean S/N 8.42 (cross-power), 4.47 (stack), 3.92 (CVID)
 [Sects. 4.1–4.3]; yet each constrains a single amplitude A of L_[CII] to
 about 50%, two together to 33%, all three to 27% (A = 0 rejected at ~4σ,
 ~6σ, ~7.3σ) [Sect. 4.4]. Stack and CVID share information through the
@@ -524,7 +527,7 @@ therefore not the same quantity, as HETDEX itself discusses.
   the VID error.
 - COMAP Early Science V (Chung et al. 2022): fitting functions for b and
   v_eff not read.
-- The paper behind COMAP's "~30%" CO(2–1) interloper estimate (Chung et
+- The paper behind the "~30%" CO(2–1) interloper estimate quoted by arXiv:2510.23568 (Sect. 6.3.3) (Chung et
   al. 2024a) was not identified or read.
 - Clarke et al. 2026 masking numbers beyond the abstract; the spectral-line
   de-confusion method of Cheng et al. 2016 and the ancillary-tracer removal

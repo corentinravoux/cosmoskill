@@ -141,9 +141,11 @@ Nelder–Mead and GP Bayesian optimisation less practical [src: arXiv:2605.28596
 - **Galaxy multipoles.** PyBird-Emu quotes residuals in units of a Stage-IV σ for
   V_eff = 50 Gpc³ and n̄ = 5 × 10⁻⁴ h³ Mpc⁻³: 95% below 0.1σ to k_max = 0.2 h Mpc⁻¹, ~0.5σ at
   0.3 h Mpc⁻¹, and notes the volume per redshift bin is usually below 10 Gpc³ [src:
-  arXiv:2507.20990, Sect. 2.2], so the per-bin requirement is looser [der]. SPHEREx requires the median
+  arXiv:2507.20990, Sect. 2.2]. SPHEREx requires the median
   Δχ²_tot < 1, "the criterion used by both the DES collaboration, and other cosmological
   emulators", and obtains 0.069 [src: arXiv:2603.16003, Sect. IV.2].
+- **Per-bin requirement.** A redshift bin holds less volume than the total survey volume used for
+  the PyBird-Emu units, so the requirement per bin is looser than the quoted one [der].
 - **Why a per-cent residual is not a requirement.** "It is the inference pipeline that dictates
   the accuracy threshold"; emulators that performed well for Stage III failed on a simulated
   Stage IV survey [src: arXiv:2106.03846, Sect. 5.2].
@@ -158,8 +160,12 @@ Nelder–Mead and GP Bayesian optimisation less practical [src: arXiv:2605.28596
 | SPHEREx emulator against ps_1loop, nautilus | one tracer and bin (12 parameters): mean cosmology best-fit shift 0.091σ, width change 1.38%; two tracers and bins: 0.145σ, 1.44%; Δlog Z = −0.06 and 0.78 against log Z = −33.03 and −86.28 | arXiv:2603.16003, Sect. V, Table 3 |
 | Effort against PyBird, PT challenge (566 (h⁻¹Gpc)³, k_max = 0.12) and BOSS (k_max 0.23 CMASS, 0.20 LOWZ) | agreement "consistent with Montecarlo noise"; ~10 minutes on a laptop with NUTS and MCHMC | arXiv:2501.04639, Sect. 4.2 |
 
-The SPHEREx abstract figures carried in L2 (0.078σ, 0.82%) are not the rows of Table 3 read here;
-which average or configuration they summarise was not identified.
+The SPHEREx abstract figures carried in L2 (0.078σ, 0.82%) are not single rows of Table 3:
+Sect. V.1 gives them as the average 1D best-fit shift and the mean absolute uncertainty
+difference over the parameters of Table 3, and Sect. VI assigns them to the multi-tracer analysis
+with the stochastic and counterterm parameters fixed; the more ambitious run of Sect. V.1 has the
+same 0.078σ average shift but a 3.26% uncertainty difference (arXiv:2603.16003, abstract,
+Sects. V.1, VI).
 
 **Map the error over parameter space.** SPHEREx plots the median Δχ²_tot in every 2D projection,
 marginalising the other parameters (arXiv:2603.16003, Eq. 12): stable except along edges, so no
@@ -199,8 +205,8 @@ arXiv:2607.17942, App. A].
   at MAPE ≃ 0.4% (Eqs. 13–14) for N_MF ≃ 40–50 [src: same, Figs. 9–10]. Storage and compute are
   7.2% and 4.2% of an all-HF suite of equal coverage [src: Table 5]. No independent HF test set
   exists yet [src: Sect. 4.2].
-- **Cosmic variance.** DarkEmulator2 conditions on a white-noise input W and calibrates the
-  single-call prediction at W = 1 to the mean over 500 noise draws, a ~0.1% correction with
+- **Cosmic variance.** DarkEmulator2 (arXiv:2605.28596) conditions on a white-noise input W and
+  calibrates the single-call prediction at W = 1 to the mean over 500 noise draws, a ~0.1% correction with
   cosmology scatter of a few 10⁻⁴ (Eqs. 22–24) [src: Sect. 4.3.4].
 - **A GP on simulation summaries.** 250 of 4609 Latin-hypercube nodes, one GP per compressed bin,
   constant × Matérn-5/2 with one length scale per parameter plus white noise (Eq. 11), 10 restarts
@@ -362,4 +368,3 @@ that adopted the propagation (`cosmo-statistics-inference`, open-questions, Sect
   read.
 - Capse.jl (the CMB emulator of the Effort authors) and its factor-of-three gain from rescaling by
   A_s: cited inside arXiv:2501.04639, not read.
-- Which configuration the SPHEREx abstract's 0.078σ and 0.82% summarise.

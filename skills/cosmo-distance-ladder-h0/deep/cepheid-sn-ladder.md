@@ -24,7 +24,7 @@ budget in `systematics.md#error-budgets-term-by-term`. Anchors are in
 Notation. P: pulsation period in days; m^W_H: NIR Wesenheit magnitude
 (F160W, or F150W with JWST, minus R times an optical colour); Z_W: the
 metallicity coefficient in mag/dex; [O/H]: oxygen abundance relative to
-solar, 12 + log(O/H) = 8.69 for the Sun; bkgd: the change of a Cepheid's
+solar, 12 + log(O/H) = 8.69 for the Sun (arXiv:2112.04510, Table 3 note); bkgd: the change of a Cepheid's
 magnitude from adding the mean unresolved background measured with
 artificial stars; SD: standard deviation of PL residuals.
 
@@ -83,7 +83,8 @@ arXiv:2112.04510, Sect. 3.2].
   arXiv:2112.04510, Sect. 3.4, item 5].
 
 The 20% background floor that becomes the within-host covariance is
-SH0ES Eq. 8 (`systematics.md#cepheid-crowding-and-blending`).
+SH0ES Eq. 8 [src: arXiv:2112.04510, Eq. 8]
+(`systematics.md#cepheid-crowding-and-blending`).
 
 ### Step 3. Cut the sample
 <!-- key: step-3-cut-the-sample -->
@@ -138,22 +139,27 @@ App. C].
 
 - Two epochs 15–16 days apart in F090W, F150W, F277W; one short-wavelength
   module on the host, the other on a halo field. JWST wavefront monitoring
-  bounds PSF-core changes between epochs below 0.005 mag.
+  bounds PSF-core changes between epochs below 0.005 mag [src:
+  arXiv:2401.04773, Sect. II].
 - DOLPHOT with its NIRCam module; Cepheids matched to the HST optical
-  lists within 0.7 SW pixel (0.02"), typically 0.01".
+  lists within 0.7 SW pixel (0.02"), typically 0.01" [src:
+  arXiv:2401.04773, Sect. II].
 - Quality: DOLPHOT chi^2 below 1.4 per degree of freedom, allowed to rise
   linearly to 1.7 with log P because bright long-period Cepheids expose PSF
   imperfections (removes ~7%); colour 0.3 < F090W − F150W < 1.15, i.e.
   0.5 < V − I < 1.7 (removes ~5%, mostly blends with red giants); the range
-  is shifted redward for a host with E(V − I) = 0.21.
+  is shifted redward for a host with E(V − I) = 0.21 [src:
+  arXiv:2401.04773, Sect. II].
 - 200 artificial stars bracketing the Cepheid magnitudes; mean crowding
   corrections 0.04, 0.07, 0.09 mag in F090W, F150W, F277W, about seven
-  times smaller than HST F160W.
+  times smaller than HST F160W [src: arXiv:2401.04773, Sect. II.1].
 - Wesenheit systems: baseline F150W − 0.41 (F555W − F814W), keeping the
   HST optical colour; JWST-only F150W − 0.72 (F090W − F150W) and F277W −
-  0.30 (F090W − F150W); R from Fitzpatrick with R_V = 3.3.
+  0.30 (F090W − F150W); R from Fitzpatrick with R_V = 3.3 [src:
+  arXiv:2401.04773, Sect. III.1].
 - PL slope fixed at −3.25 (JWST mean −3.21 ± 0.03, HST −3.26 ± 0.05),
-  0.05 mag/dex propagated, with −3.20 and −3.30 as variants.
+  0.05 mag/dex propagated, with −3.20 and −3.30 as variants [src:
+  arXiv:2401.04773, Sect. III.1].
 - Phase: the magnitudes "are phase corrected" (their Table 2 note); the
   epoch-to-epoch difference, compared with template light curves,
   constrains the phase (their Fig. 5).
@@ -245,8 +251,8 @@ One epoch gives SD = 0.224 mag; two phase-corrected epochs 0.178 mag plus
 ~100 single-epoch Cepheids, worth a 70% larger sample; with perfect
 photometry, one random phase gives ~0.15 mag, two ~0.11 and two
 phase-corrected ~0.075 mag [src: arXiv:2401.04773, Sect. III.3]. Dropping
-the phase correction changes JWST − HST by 0.004 mag [der: −0.007 against
-−0.011] [src: arXiv:2401.04773, Table 4].
+the phase correction gives JWST − HST = −0.007 mag against −0.011 for the
+baseline [src: arXiv:2401.04773, Table 4].
 
 ## Numbers
 <!-- key: numbers -->
@@ -311,8 +317,8 @@ the phase correction changes JWST − HST by 0.004 mag [der: −0.007 against
   rendering, read through the LaTeX source.
 - Riess et al. 2024, arXiv:2401.04773 (method, JWST): quality cuts,
   crowding corrections, Wesenheit systems, phase, Table 4 variants.
-- Riess et al. 2025, arXiv:2509.01667 (test): 19 JWST hosts, background-
-  free host (summarised in L2).
+- Riess et al. 2025, arXiv:2509.01667 (test): 19 JWST hosts (abstract),
+  background-free host (summarised in L2).
 - Breuval et al. 2024, arXiv:2404.08038 (method): SMC anchor and the
   metallicity coefficient on [Fe/H] and [O/H] (summarised in L2).
 - Freedman et al. 2024, arXiv:2408.06153 (critique): App. B on photometry
@@ -336,5 +342,5 @@ the phase correction changes JWST − HST by 0.004 mag [der: −0.007 against
 - SH0ES Appendix D on the use and misuse of Wesenheit magnitudes, and the
   body of arXiv:2105.11461 (abstract only).
 - The Milky Way recalibration of arXiv:2412.07840 (their Sect. V) and the
-  value of their Eq. 24, which the quoted shifts imply is 72.67 [der].
+  value of their Eq. 24, not read.
 - The CCHP JWST Cepheid analysis of NGC 7250 (cited in arXiv:2408.06153). [src: Sect. III]

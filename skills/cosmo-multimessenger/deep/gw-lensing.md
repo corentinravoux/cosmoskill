@@ -99,8 +99,7 @@ P(μ, z | θ) = C p(μ, z | θ) dN(μ, z)/dz ,   dN/dz = ∫_{ρ_lim/√μ}^∞ 
 ```
 
 with `ρ` the signal-to-noise ratio and `ρ_lim` its threshold. The authors'
-reason for cutting at `μ ≤ 1.75`: "poorly understood small-scale physics
-significantly impacts the high-magnification tail" [src: Sect. IV.1]. Their
+reason for cutting at `μ ≤ 1.75`: "poorly understood small-scale physics significantly impacts the high-magnification tail" (arXiv:2402.19476) [src: Sect. IV.1]. Their
 bias test (Sect. II): for each catalogue realisation, magnify every merger,
 redraw distances and redshifts with the same random numbers in the lensed and
 unlensed cases, fit `d_L(z)` by MCMC with `emcee`, measure the bias with the
@@ -152,35 +151,30 @@ III.1.1, IV.1]:
 
 1. **Data.** 84 new O4a binary-black-hole candidates with false-alarm rate
    below 1 yr⁻¹; earlier runs are not paired with O4a, for cost and because
-   the gap between runs is longer than expected galaxy-lens delays [src:
-   Sect. II].
+   the gap between runs is longer than expected galaxy-lens delays [src: arXiv:2512.16347, Sect. II].
 2. **Tier 1** on all 3486 pairs: Posterior Overlap (consistency of
    detector-frame masses, spins and sky position, `B_U^L`, times a prior
    ratio `R_U^L` from the expected galaxy-lens delay distribution) and
    Phazap (phase of the `ℓ = m = 2` mode at 40 Hz, arrival times between
    detectors, phase evolution). A false-positive probability (FPP) is the
    fraction of unlensed background pairs with a higher ranking statistic;
-   FPP < 1% in either method passes. 105 pairs passed (5 in both, 33 Posterior
-   Overlap only, 67 Phazap only).
+   FPP < 1% in either method passes. 105 pairs passed (5 in both, 33 Posterior Overlap only, 67 Phazap only) [src: arXiv:2512.16347, Sect. III.1.1, IV.1].
 3. **Tier 2**, Fast-GOLUM: joint likelihood built from the first image's
    samples, with priors U(0.1, 50) on relative magnification,
    `[t_ij − 0.2, t_ij + 0.2]` s on the delay and {0, 0.5, 1, 1.5} on the Morse
    difference, "chosen to cover a broad range of astrophysical lensing
    scenarios"; pass if `log10 C_U^L > 0`, `C_U^L = p(d1, d2 | L) / [p(d1 | U)
-   p(d2 | U)]`. 55 of 105 discarded, 50 kept.
+   p(d2 | U)]`. 55 of 105 discarded, 50 kept [src: arXiv:2512.16347, Sect. III.1.1, IV.1].
 4. **Tier 3**, Hanabi: full joint parameter estimation, the evidence
    reweighted by the GWTC-4.0 population, a singular-isothermal-sphere (SIS)
    lens population and selection effects, giving the strong-lensing Bayes
    factor. No pair prefers lensing, for three merger-rate models
-   (Madau–Dickinson, `R_min(z)`, `R_max(z)`); all 50 pairs have
-   `p_astro^pair > 0.9` [src: Sect. IV.1.3].
+   (Madau–Dickinson, `R_min(z)`, `R_max(z)`); all 50 pairs have `p_astro^pair > 0.9` [src: arXiv:2512.16347, Sect. IV.1.3].
 5. **Sub-threshold counterparts**: PyCBC with a single template (aligned-spin
    projection of the maximum-posterior waveform) and TESLA-X on GstLAL with a
-   targeted bank, both with SEOBNRv4, vetoing triggers whose 90% sky area does
-   not overlap the target [src: Sect. III.1.2].
+   targeted bank, both with SEOBNRv4, vetoing triggers whose 90% sky area does not overlap the target [src: arXiv:2512.16347, Sect. III.1.2].
 6. **Background**: 254 unlensed injections into real O4a data, because lensed
-   models "have extra degrees of freedom" and can win on non-Gaussian noise
-   [src: Sect. III.3].
+   models "have extra degrees of freedom" and can win on non-Gaussian noise [src: arXiv:2512.16347, Sect. III.3].
 
 The full O3 search used the same families (sub-threshold searches, parameter
 overlap, spectrogram similarity, joint Bayesian analysis with selection and
@@ -219,8 +213,7 @@ line of sight (1% level) [src: same]. Two routes exist:
   of the host without the transient constrains the lens. Liao et al. find a
   Fermat-potential error of about 0.6% against about 3% for lensed quasars,
   and 0.37% on H0 from 10 systems with `Ω_M = 0.3` fixed, against 1.5% for
-  the same number of lensed quasars; 0.68% for flat ΛCDM in the abstract
-  [src: Results; abstract]. **forecast**.
+  the same number of lensed quasars; 0.68% for flat ΛCDM in the abstract (arXiv:1703.04151) [src: Results; abstract]. **forecast**.
 - **Dark lensed siren.** A quadruple image localises the host among the
   lensed galaxies in the GW area. Hannuksela et al. 2020 rank candidate lenses
   by GW and electromagnetic consistency, model the 11 best with `lenstronomy`

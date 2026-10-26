@@ -13,8 +13,8 @@ bispectrum); SO science goals (arXiv:1808.07445), Sect. VI; Planck 2018 IX
 
 Already in L2, not repeated here: the template definitions (Eqs. 1–3 of
 Planck 2018 IX) in `physics-and-methods.md#definitions-textbook`; the
-Planck 2018 data set-up (maps, masks with f_sky = 0.779/0.781, ℓ ranges,
-300 FFP10 realisations, CAMB templates) in
+Planck 2018 data set-up (maps, masks and their sky fractions, ℓ ranges,
+FFP10 realisations, CAMB templates) in
 `physics-and-methods.md#cmb-bispectrum-estimators`; the lensing–ISW sizes,
 the joint lensing fit and the per-estimator Table 5 values in
 `systematics.md#c1-lensing-isw-bispectrum`; the result tables and the PR4
@@ -160,12 +160,12 @@ Planck 2018 runs two modal pipelines [src: Sect. 3.2.2]:
   in separable form and implements Eq. 27 directly; basis: 600 polynomial
   modes plus radial modes from the KSW expansion of the three standard
   templates "to speed up convergence for these shapes". Used for the three
-  standard shapes and most validation tests.
+  standard shapes and most validation tests (arXiv:1905.05697) [src: Sect. 3.2.2].
 - Modal 2 first orthogonalises T and E into uncorrelated coefficients and
   constrains the resulting bispectra independently; it cannot estimate EEE
   directly. Basis: 2000 polynomial modes plus a Sachs–Wolfe local template
   "to improve efficiency in the squeezed limit". Used for shapes with large
-  parameter spaces such as oscillatory bispectra.
+  parameter spaces such as oscillatory bispectra (arXiv:1905.05697) [src: Sect. 3.2.2].
 
 High-frequency oscillatory shapes beyond the reach of the modal and binned
 bases use two dedicated estimators [src: same].
@@ -243,7 +243,7 @@ The Planck sequence, in the order the papers run it:
    lensing–ISW, with beam, noise and mask: all four estimators recover the
    input, errors "very close to the Fisher errors" (Fisher local: 5.8 T,
    26 E, 5.0 T+E) except Modal 1 E-only, which had too few maps in the
-   linear term [src: Sect. 5.2, Table 8].
+   linear term (arXiv:1502.01592) [src: Sect. 5.2, Table 8].
 3. Component-separation pairs on data: for each of six method pairs and
    each shape, Δf_NL on data divided by σ_Δ, the scatter of the same
    difference over 160 foreground-free FFP10 simulations processed by each
@@ -263,10 +263,10 @@ The Planck sequence, in the order the papers run it:
    Sect. 6.2].
 6. Mask: union of the 2018 and 2015 masks (f_sky = 0.72) and polarisation
    masks grown by 20 or 40 pixels, with differences judged against the
-   scatter of 150 simulations analysed with both masks [src: Sect. 6.4,
+   scatter of 150 simulations analysed with both masks (arXiv:1905.05697) [src: Sect. 6.4,
    Tables 22–23].
 7. ℓ_min and ℓ_max scans with the binned estimator: T stable by ℓ = 2000,
-   E by ℓ = 1500, which justifies the lower ℓ_max of KSW and modal [src:
+   E by ℓ = 1500, which justifies the lower ℓ_max of KSW and modal (arXiv:1905.05697) [src:
    Sect. 6.5].
 8. Thermal dust and tSZ tests [src: Sect. 6.3, summarised in Sect. 6.6].
 
@@ -317,8 +317,9 @@ Planck analyses" [src: arXiv:2511.19179, Sect. V.3].
 - E from ℓ = 4: with ℓ = 2, 3 the simulations showed a small local bias,
   larger errors and larger inter-estimator discrepancies, attributed to
   non-Gaussian polarisation noise at very low ℓ; the cut was made "a
-  priori, before looking at the data" [src: same]. In 2015 the polarisation
-  ℓ_min was 40 [src: Sect. 6.5].
+  priori, before looking at the data" (arXiv:1905.05697) [src: same]. In
+  2015 the polarisation ℓ_min was 40 (arXiv:1905.05697) [src: abstract;
+  Sect. 6.5].
 - Binned only: TEE configurations with the temperature mode in [2, 3] are
   removed because with them the errors are "much larger than the optimal
   Fisher errors"; why only this estimator needs it is "not clear" [src:
@@ -376,9 +377,10 @@ that set-up is 4.3 [src: same, figure caption].
 ## What goes wrong
 <!-- key: what-goes-wrong -->
 
-- **Unsubtracted lensing–ISW.** Biases local f_NL by about 5 (L2). Test:
+- **Unsubtracted lensing–ISW.** Biases local f_NL (sizes in L2, `systematics.md`, C1). Test:
   detect the lensing amplitude in the same run and check it against 1; the
-  PR4 simulations themselves miss it by 6–10% (above), so check the data
+  PR4 simulations themselves have a systematically low lensing bispectrum
+  (arXiv:2504.00884) [src: abstract], so check the data
   with both theory and simulation-average subtraction.
 - **Linear term from too few or mismatched simulations.** Shows up as
   errors above Fisher: Modal 1 E-only in 2015 [src: arXiv:1502.01592, Sect.

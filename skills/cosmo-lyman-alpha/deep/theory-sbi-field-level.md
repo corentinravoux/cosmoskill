@@ -128,16 +128,14 @@ Material) [src throughout]:
 1. **Data cut.** SDSS DR14 P1D restricted to 3.4 ≤ z ≤ 4.2 (6 bins). Lower
    bins dropped because they need "an accurate calibration of the bias
    parameters that is not possible with publicly available simulations"; the
-   two highest dropped to avoid inhomogeneous reionisation. The public
-   covariance with its diagonal systematic terms is used.
+   two highest dropped to avoid inhomogeneous reionisation. The public covariance with its diagonal systematic terms is used (arXiv:2405.13208) [src: main-text data section].
 2. **Model.** One-loop 3D EFT (11 non-linear biases) integrated to
    k_max = 3 h/Mpc, plus C_0 + C_2 k_∥² (13 parameters per bin before priors).
    Si III oscillation as a multiplicative factor
    κ = 1 + 2a cos(v k_∥) + a², a = f_SiIII/(1 − F̄_fid), f_SiIII = 8.7 × 10⁻³,
    v = 2π/0.0028 km/s, F̄_fid = exp(−0.0025(1+z)^3.7); thermal broadening as
-   exp(−(k_∥/k_s)²) with k_s = 0.11 s/km. Results stated insensitive to these
-   choices.
-3. **Priors (the decisive step).** A Fisher study at z = 3.2 shows σ_8 is
+   exp(−(k_∥/k_s)²) with k_s = 0.11 s/km. Results stated insensitive to these choices (arXiv:2405.13208) [src: Supplemental Material, Eqs. S7, S9].
+3. **Priors (the decisive step).** In arXiv:2405.13208, a Fisher study at z = 3.2 shows σ_8 is
    lost "almost entirely" if non-linear biases vary, and that even with only
    (σ_8, b_1, b_η) free the error goes from 0.1% (unmarginalised) to 3%. So
    b_1, b_η are free per redshift bin (12 parameters; per-bin preferred over
@@ -146,20 +144,19 @@ Material) [src throughout]:
    (Supplemental Table; e.g. A, B = −0.32, −0.52 for δ²; 4.4, 0.063 for δη),
    with flat errors of 1 imposed on cubic biases "to be conservative and
    avoid overfitting". Reason for priors as functions of b_1: such relations
-   "are more robust than the bias parameter values themselves".
+   "are more robust than the bias parameter values themselves" [src: Supplemental Material, discussion of Fig. S1 and the Supplemental Table].
 4. **Recalibration of C_n.** Sherwood P1D does not match SDSS; mean-flux
    renormalisation removes most of the difference; the remainder is absorbed
    by recalibrating C_0(b_1), C_2(b_1) on synthetic P1D from the LaCE neural
    emulator varying only two thermal parameters (reduced χ² 1.2–1.4 per
-   redshift). The other LaCE parameters were not tuned "to avoid double
-   counting of information".
+   redshift). The other LaCE parameters were not tuned "to avoid double counting of information" (arXiv:2405.13208) [src: Supplemental Material section on synthetic LaCE data].
 5. **Validation and result.** On LaCE mocks σ_8 is recovered to 0.3%, ≈ 15%
    of the statistical error. Data: σ_8 = 0.841 ± 0.017, χ² = 170 for 197
    degrees of freedom, with all other parameters fixed to a Planck-like
    cosmology. With b_O(b_1) scatter marginalised ("conservative"):
    σ_8 = 0.69 (0.75) ± 0.05 for the mean (best fit), "subject to significant
    prior effects"; Σm_ν < 0.08 eV (Planck + BOSS DR12 BAO) becomes < 0.15 eV.
-   Freeing n_s gives a σ_8–n_s correlation of −0.99 at one redshift.
+   Freeing n_s gives a σ_8–n_s correlation of −0.99 at one redshift (arXiv:2405.13208) [src: main-text results section; the −0.99 correlation in the Supplemental Material section on the Fisher analysis].
 
 ### Route A″ — analytic compression of the EFT nuisance space for DESI P1D
 <!-- key: route-a-analytic-compression-of-the-eft -->
@@ -170,7 +167,7 @@ controlled relaxation [src: Sects. 3–4]:
 1. Fit all 15 P_3D biases on ACCEL² (baseline) and Sherwood (alternative) at
    five snapshots with iminuit, priors N(0, 4) on the ten one-loop biases and
    N(0, 1) on the three counterterms (rescaled by 10 h⁻¹Mpc), none on
-   b_1, b_η; errors from 200 jittered Monte Carlo fits (Sect. 3.1, Table 1).
+   b_1, b_η; errors from 200 jittered Monte Carlo fits (arXiv:2604.09407, Sect. 3.1, Table 1).
    b_O(z) follows A_O[(1+z)/4]^γ_O; for b_1, A = −0.179 ± 0.002 and
    γ = 3.25 ± 0.08, offered as data priors. The two simulations agree on
    b_O(b_1) within errors "with a minor indication of a systematic
@@ -178,12 +175,12 @@ controlled relaxation [src: Sects. 3–4]:
 2. Integrate P_3D^EFT to k_max = 3 h/Mpc, chosen so that k³P_lin/2π² ≲ 1, and
    fit the residual P1D with C_0, C_2, C_4, each a quadratic in b_1. The
    non-stochastic EFT part is > 70% of ACCEL² P1D at the lowest k, ~40% at
-   2 h/Mpc and 0 at 3 h/Mpc (z = 2.6) (Sect. 3.1.1).
+   2 h/Mpc and 0 at 3 h/Mpc (z = 2.6) (arXiv:2604.09407, Sect. 3.1.1).
 3. Per redshift bin, build the Fisher matrix of P1D in the 15-dimensional
    bias space, project out the direction m of the fiducial b_O(b_1) relation
    (F* = Π F Π, Π = I − vvᵀ/|v|², v = F m), and keep the leading eigenvectors
    q_n of F*: λ_1/λ_0 = 3.4%, λ_2/λ_0 = 0.2%; three vectors reconstruct F to
-   10⁻⁵ relative Frobenius distance (Sect. 3.2).
+   10⁻⁵ relative Frobenius distance (arXiv:2604.09407, Sect. 3.2).
 4. Linearise in the q_n amplitudes and in C_n and marginalise them
    analytically: φ_MAP = Σ_MAP β_MAP, Σ_MAP⁻¹ = KᵀC⁻¹K + S⁻¹, and
    ln L_marg = −½(χ² + ln det Σ_MAP⁻¹) (Eqs. 8–13); the authors prefer this to
@@ -193,8 +190,7 @@ controlled relaxation [src: Sects. 3–4]:
 Stated limits of this route: like any emulator it depends on its training
 simulations through b_O(b_1), and "it cannot eliminate the degeneracy between
 the forest bias and the amplitude of the linear matter power spectrum"; the
-fiducial b_O(b_1) direction responds almost like ln(10¹⁰A_s) (Sects. 3.2–3.3)
-[src]. The forecast it yields is in `open-questions.md#forecasts-all-labelled`.
+fiducial b_O(b_1) direction responds almost like ln(10¹⁰A_s) (arXiv:2604.09407, Sects. 3.2–3.3) [src]. The forecast it yields is in `open-questions.md#forecasts-all-labelled`.
 
 ### Route B — EFT forward model at the field level
 <!-- key: route-b-eft-forward-model-at-the-field-level -->
@@ -203,13 +199,11 @@ arXiv:2507.00284 and arXiv:2606.26234 [src: body of the first, read in LaTeX;
 abstract and Sects. IV, VII of the second]:
 
 1. Take the initial linear field δ_1 of the simulation to be modelled
-   (Sherwood 160 h⁻¹Mpc, 2048³, z = 2.8, grid 1024² × 2048 along the line of
-   sight; AbacusSummit boxes with an FGPA-painted forest in the second paper).
+   (Sherwood 160 h⁻¹Mpc, 2048³, z = 2.8, grid 1024² × 2048 along the line of sight, arXiv:2507.00284 [src: Data section]; AbacusSummit boxes with an FGPA-painted forest in the second paper, arXiv:2606.26234 [src: Sect. IV]).
 2. Build the operators to second order (δ_1, the shifted η combination
    δ_Z − (3/7) f μ² G̃_2, δ_1², G_2, δη, η², (KK)∥), orthogonalise them by
    Gram–Schmidt, and shift them by Zel'dovich displacements for IR
-   resummation; Π[2]∥ is dropped as fully degenerate (2507.00284, the
-   transfer-function model equation and its footnotes). With k-dependent transfer functions this
+   resummation; Π[2]∥ is dropped as fully degenerate (arXiv:2507.00284, the transfer-function model equation and its footnotes). With k-dependent transfer functions this
    second-order set reproduces the one-loop power and tree-level bispectrum.
 3. Fit each transfer function β_i(k, μ) as the cross-spectrum with the truth
    divided by the operator auto-spectrum (written out for β_1), i.e. the
@@ -220,9 +214,9 @@ abstract and Sects. IV, VII of the second]:
 
 Reason for working at the field level: matching a realisation requires all
 amplitudes and phases to be right, "a more stringent accuracy test than
-comparing summary statistics" [src: 2507.00284, Introduction]. A model built as
+comparing summary statistics" [src: arXiv:2507.00284, Introduction]. A model built as
 (P_F/P_lin)^(1/2) δ_1 matches the power spectrum by construction but fails at
-the field level beyond 0.04 h/Mpc [src: 2507.00284, Results].
+the field level beyond 0.04 h/Mpc [src: arXiv:2507.00284, Data section and Fig. 1].
 
 ### Route B′ — hybrid EFT (HEFT)
 <!-- key: route-b-hybrid-eft-heft -->
@@ -246,22 +240,22 @@ arXiv:2603.13011, the first full SBI on P1D [src: Sects. II, III, IV]:
    SIMBA (GIZMO) runs, 25 h⁻¹Mpc boxes with 256³ dark-matter and 256³ gas
    elements, Latin hypercube in Ω_m ∈ [0.1, 0.5], σ_8 ∈ [0.6, 1.0] and four
    feedback amplitudes; skewers at eight redshifts 2.00–3.49. No variation of
-   thermal or reionisation history (Sect. II).
+   thermal or reionisation history (arXiv:2603.13011, Sect. II).
 2. **Parameters.** Ω_m and σ_8, not (Δ²_★, n_★), because the suite varies
    only those two and the network does not need a minimal basis; the
    Einstein–de Sitter argument for the compression "may no longer hold" with
    dynamical dark energy (Sect. II.3).
 3. **Scale and redshift cuts.** k_max = 3 h/Mpc and z < 3.5, because CAMELS
    resolution is below that of current emulator training sets and resolution
-   corrections are still ~10% to 3 h/Mpc in this range (Sect. II.7).
+   corrections are still ~10% to 3 h/Mpc in this range (arXiv:2603.13011, Sect. II.7).
 4. **Estimator.** Neural posterior estimation with a masked autoregressive
    flow (10 transforms, 100 hidden units, batch 64, Adam with learning rate
    5 × 10⁻⁴, early stopping after 20 epochs) via sbi/LtU-ILI; input is the
    concatenated P1D at the eight redshifts; 950 training (90/10 split for
-   validation) and 50 test simulations (Sect. III).
+   validation) and 50 test simulations (arXiv:2603.13011, Sect. III).
 5. **Calibration tests.** Univariate coverage and TARP; mean flux of each
    model rescaled before mixing models, because a 5–15% mean-flux difference
-   between TNG and SIMBA at z ≳ 3 is degenerate with cosmology (Sect. IV.2).
+   between TNG and SIMBA at z ≳ 3 is degenerate with cosmology (arXiv:2603.13011, Sect. IV.2).
 
 ## Choices and what they cost
 <!-- key: choices-and-what-they-cost -->
@@ -366,9 +360,9 @@ a field-level failure and an unbiased two-point fit are compatible.
 | ACCEL² default fit | k_max = 2 h/Mpc, 203 data points, χ²_ν = 1.19–1.31 (z = 2.0–3.0) | ACCEL² | arXiv:2412.06892 | Table 2 |
 | ACCEL² b_1 | −0.0805 ± 0.0033 (z = 2.0), −0.1521 ± 0.0065 (2.6), −0.2108 (+0.0098/−0.0087) (3.0) | ACCEL², no stochastic terms | arXiv:2412.06892 | Table 2 |
 | b_1(z) power law | A = −0.179 ± 0.002, γ = 3.25 ± 0.08, in A[(1+z)/4]^γ | ACCEL² | arXiv:2604.09407 | Sect. 3.1 |
-| EFT P1D data cut (eBOSS) | 3.4 ≤ z ≤ 4.2, 6 bins, 12 free parameters | SDSS DR14 | arXiv:2405.13208 | Data, Analysis details |
-| Loop cost | 135 integrals in ≈ 1 s on one core | CLASS-PT module | arXiv:2405.13208 | Supplemental |
-| Mock recovery of σ_8 | 0.3%, ≈ 15% of σ | LaCE mocks, 3.2 ≤ z ≤ 4.2 | arXiv:2405.13208 | Results |
+| EFT P1D data cut (eBOSS) | 3.4 ≤ z ≤ 4.2, 6 bins, 12 free parameters | SDSS DR14 | arXiv:2405.13208 | Data and Analysis-details sections |
+| Loop cost | 135 integrals in ≈ 1 s on one core | CLASS-PT module | arXiv:2405.13208 | Supplemental Material section |
+| Mock recovery of σ_8 | 0.3%, ≈ 15% of σ | LaCE mocks, 3.2 ≤ z ≤ 4.2 | arXiv:2405.13208 | Results section |
 | Compression spectrum | λ_1/λ_0 = 3.4%, λ_2/λ_0 = 0.2%; 3 vectors → 10⁻⁵ | DESI DR1 P1D bins, z = 3.0 | arXiv:2604.09407 | Sect. 3.2 |
 | Lyα "shot noise" n_0 | ≈ 0.18 (h⁻¹Mpc)³; α_1 ≈ −0.25, α_2 ≈ 0.51 (h⁻¹Mpc)² | field-level fit, Sherwood z = 2.8 | arXiv:2507.00284 | Model error section |
 | Onset of P_err scale dependence | k ≈ 0.4–0.6 h/Mpc | Sherwood and Abacus | arXiv:2606.26234 | Sect. IV.3 |
@@ -376,12 +370,11 @@ a field-level failure and an unbiased two-point fit are compatible.
 | CAMELS training set | 2 × 1000 runs, 25 h⁻¹Mpc, 256³ + 256³, z = 2.00–3.49 (8 snapshots) | SBI | arXiv:2603.13011 | Sect. II |
 | Cross-model bias | σ_8 high by ~10%, posteriors overconfident (train TNG, test SIMBA) | SBI | arXiv:2603.13011 | Sect. IV.2 |
 
-The DESI DR1 P1D upper limit, 0.0318 s/km at z = 3
-(`results.md#the-one-dimensional-flux-power-spectrum`), is about 3.6 h/Mpc
-[der: k[h/Mpc] = k[s/km] × H(z)/((1+z) h), with H(3)/(4h) ≈ 113 km/s per
-h⁻¹Mpc for flat Ω_m = 0.31]. The highest P1D bins therefore lie beyond the
-3 h/Mpc integration cut of the 3D EFT, which is why the 1D stochastic
-counterterms carry the small-scale signal.
+Converted from velocity to comoving units, the highest DESI DR1 P1D bins
+(upper limit in `results.md#the-one-dimensional-flux-power-spectrum`) appear
+to lie beyond the integration cut of the 3D EFT given in the steps above,
+which would explain why the 1D stochastic counterterms carry the small-scale
+signal [der].
 
 ## What goes wrong
 <!-- key: what-goes-wrong -->
@@ -414,7 +407,7 @@ counterterms carry the small-scale signal.
   simulation resolution, less after splicing (arXiv:2608.21226, Sect. 5) [src].
 - **Stochasticity beyond the gradient expansion.** P_err flattens near
   0.6 h/Mpc, where the power-law expansion of the noise breaks
-  (arXiv:2507.00284) [src]; HEFT is the proposed remedy (arXiv:2512.13681)
+  (arXiv:2507.00284) [src: Model error section]; HEFT is the proposed remedy (arXiv:2512.13681)
   [src].
 - **Truth built on FGPA.** HEFT and the Abacus tests use an FGPA forest
   painted on N-body particles as truth; the authors note the templates "use a
@@ -445,7 +438,7 @@ counterterms carry the small-scale signal.
 
 - The DESI P1D collaboration's assessment of EFT likelihoods (not found).
 - SBI on Voigt-profile distributions, neural spectral compressions and CNN
-  IGM inference: seen only through the review (arXiv:2605.22489, 0.6.3–0.6.4).
+  IGM inference: seen only through the review (arXiv:2605.22489, Sects. 0.6.3–0.6.4).
 - The compressed 3D bispectrum and Lyα × halo EFT papers (not read); the
   appendix tables of arXiv:2608.21226 (not read).
-- ACCEL² EFT parameters at z = 3.6 and 4.0 (table cut in the passage read).
+- ACCEL² EFT parameters at z = 3.6 and 4.0 (arXiv:2412.06892; the snapshot redshifts are listed in Sect. 2; the parameter table of Sect. 6.1 was cut in the passage read).

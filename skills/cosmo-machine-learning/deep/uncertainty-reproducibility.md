@@ -112,8 +112,9 @@ entropy (aleatoric) and the mutual information MI(y; θ ∣ x) (epistemic, membe
   Σ → LΣLᵀ with L lower triangular; beta calibration fits β(x; a, b, c) = 1/(1 + (e^c
   x^a/(1 − x)^b)⁻¹) to the reliability curve (arXiv:1911.08508) [src: Eq. 20, Sect. VIII.5].
   The CMB study argues that temperature scaling acts on the aleatoric part only, and refits the
-  last layer instead; all variants still gave 77–80% at 1σ against 68.3% nominal
-  [src: Sect. VIII.5, Table 8].
+  last layer instead; all variants stayed above the 68.3% nominal 1σ coverage, at 79.1% and 79.1% (last layer,
+  LL_S and LL_T), 80.0% and 79.6% (last layer, mean only, LL-loc_S and LL-loc_T) and 79.0% and
+  77.2% (temperature scaling, TS_S and TS_T) [src: Sect. VIII.5, Table 8].
 - **Distribution-free, after training: conformal prediction.** With a calibration set of n pairs
   and a nonconformity score s, the p-value of a new point is (number of calibration scores
   ≥ s(x*) + 1)/(n + 1); Mondrian conformal prediction applies it within each predicted class

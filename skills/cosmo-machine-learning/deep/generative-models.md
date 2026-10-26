@@ -313,11 +313,11 @@ with y, which hurts interpolation between training labels [src: same].
 
 | | Prior + DPS (DES Y3 mass maps) | Amortised joint posterior (JADE) |
 |---|---|---|
-| Trained on | 50 full-sky maps at one cosmology | 10⁵ (θ, κ, γ_obs) triplets across the prior |
+| Trained on | 50 full-sky maps at one cosmology (arXiv:2511.14667, Sect. 2.2) | 100 000 (θ, κ, γ_obs) draws across the prior (arXiv:2606.31988, Sect. 4) |
 | Survey changes (mask, noise model) | no retraining | retraining |
 | Cosmology | fixed in the prior; not inferred | inferred jointly |
 | Tuning | A(t) hyperparameters tuned on TARP | none reported |
-| Cost per sample | ~1 min (A40) | ~0.2 s |
+| Cost per sample | ~1 min (A40) (arXiv:2511.14667, Sect. 3.1) | ~0.2 s (arXiv:2606.31988, Sects. 4, 6) |
 | Place read | arXiv:2511.14667, Sects. 2.1–2.2, 3.1, 4 | arXiv:2606.31988, Sects. 4, 6 |
 
 JADE needed 10⁵ simulations against 4.36 × 10⁶ simulator calls for the ten NUTS chains on
@@ -378,10 +378,13 @@ marginalized" and exact agreement is not expected [src: arXiv:2311.17141, Sect. 
 <!-- key: what-goes-wrong -->
 
 - **Loss converged, samples not.** The noise-prediction loss does not track sample quality;
-  checkpoints differ by ~10–15% in P(k). Test: generate from several late checkpoints and
-  select on statistics against a held-out reference [src: arXiv:2211.12444, Sect. 3;
-  arXiv:2405.05255, Sect. II]. Selecting on the very statistic later used for validation
-  makes that validation optimistic; hold one statistic out [der].
+  across the last 10 checkpoints the mean absolute fractional difference in P(k) is typically
+  around 10% for the 64 × 64 model and 15% for the 128 × 128 model (arXiv:2211.12444)
+  [src: Sect. Summary Statistics]. Test: generate from several late checkpoints and select on
+  statistics against a held-out reference [src: arXiv:2211.12444, Sect. 3; arXiv:2405.05255,
+  Sect. II].
+- **Selecting on the validation statistic.** Selecting on the very statistic later used for
+  validation makes that validation optimistic; hold one statistic out [der].
 - **Too little diversity at fixed θ.** With continuous conditioning, a sample with too much
   or too little power can resemble another cosmology, so the model may trade diversity for
   parameter discrimination; seen as a slightly low standard deviation of P(k) [src:
@@ -445,8 +448,9 @@ marginalized" and exact agreement is not expected [src: arXiv:2311.17141, Sect. 
 ## Not verified
 <!-- key: not-verified -->
 
-- The GAN emulator used as baseline by arXiv:2605.23114 (its reference 16) and the origin of
-  its 57-cosmology data set: not identified.
+- The GAN emulator used as baseline by arXiv:2605.23114 (its reference 16) and its 57-cosmology
+  data set, which Sect. 3.2 says was introduced in its references 35 and 16: not identified or
+  read.
 - The MIRA calibration score (Sharief et al. 2026) and the flow-matching foundation paper
   (Lipman et al. 2022): cited inside arXiv:2606.31988 and arXiv:2605.23114, not read.
 - The training details of the DES Y3 diffusion network (its reference 4, read only as

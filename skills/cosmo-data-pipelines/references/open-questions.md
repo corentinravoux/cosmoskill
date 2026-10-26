@@ -3,7 +3,7 @@
 Scope: live method debates in pipelines, known limitations, what the next
 data will decide, forecasts (labelled), and stale claims with the paper that
 corrects them.
-Snapshot: 2026-10-16
+Snapshot: 2026-10-26
 
 Flags: `[src]` abstract read this session; `[src: Sect. n]` body read;
 `[sec]` named secondary source; `[der]` derived here.
@@ -137,6 +137,13 @@ dependence of new networks on them (arXiv:2608.10080) [src].
 - DESI fibre assignment (**forecast**, mocks): after three or more passes
   the BAO errors match those of a randomly sampled survey
   (arXiv:1805.00951) [src].
+- Euclid Wide spectroscopic sample (**forecast**, Bypass end-to-end
+  simulations): the baseline selection gives a redshift purity of 74% and a
+  completeness of 45%, both improved with Euclid photometric colours; a
+  forward-modelled random catalogue recovers the monopole and quadrupole on
+  the DR1 footprint; contamination from overlapping spectra is not yet in
+  the noise model and is to be revisited with DR1 data (Euclid
+  Collaboration 2026, arXiv:2610.26990) [src: abstract].
 
 ## 2. What the next data will decide
 <!-- key: what-the-next-data-will-decide -->

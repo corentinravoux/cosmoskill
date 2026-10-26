@@ -1,7 +1,7 @@
 # Statistics and inference — live method debates and misconceptions
 
 Scope: the method debates that are open in 2025–2026, with both sides cited, what would settle them, and the misconceptions that still circulate.
-Snapshot: 2026-10-14
+Snapshot: 2026-10-26
 
 Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named secondary source; `[der]` a derivation stated in words, with no number of its own (owner's rule of 2026-10-23: every number is read in a paper).
 
@@ -27,7 +27,7 @@ Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named 
 
 **Side A: the evidence is the consistent Bayesian answer.** The Ockham factor penalises parameters the data do not need; where the evidence does favour w0wa (with the original DES-SN5YR, `ln B = +3.32 ± 0.27`), a tension analysis traces it to a 2.95σ conflict between DESI and that supernova sample inside ΛCDM, and the preference vanishes with the recalibrated sample (`ln B = −0.30 ± 0.19`) (arXiv:2511.10631) [src: abstract]. On this reading the signal is an inter-data-set tension that two extra parameters absorb.
 
-**Side B: the evidence is only as meaningful as the prior on w0, wa.** The CPL parameters have no physical prior; the flat ranges are conventions, and the Bayes factor moves linearly with their volume. Efstathiou 2008 (arXiv:0802.3185) argued exactly this for dark energy: for nested, poorly motivated models, parameter estimation is more informative than the evidence [src]. A `Δχ²` has a calibrated frequentist meaning that does not depend on the prior, provided Wilks' conditions hold.
+**Side B: the evidence is only as meaningful as the prior on w0, wa.** The CPL parameters have no physical prior; the flat ranges are conventions, and the Bayes factor moves linearly with their volume. Efstathiou 2008 (arXiv:0802.3185) argued exactly this for dark energy: for nested, poorly motivated models, parameter estimation is more informative than the evidence [src]. A `Δχ²` has a calibrated frequentist meaning that does not depend on the prior, provided Wilks' conditions hold. Layton, Hall & Robertson 2026 (arXiv:2610.26493) tested this side directly: replacing the uniform priors by a truncated Jeffreys prior leaves the `w0`–`wa` posteriors nearly unchanged but turns every DESI DR2 + Planck (+ supernova) combination into a preference for ΛCDM, including DES-SN5YR (`ln B` from +3.65 ± 0.21 to −5.52 ± 0.21) [src: Table 4]; they state that this does not establish the Jeffreys prior as uniquely favoured [src: Sect. 4.2].
 
 **Side C: neither in-sample statistic is the right question.** Karim, Speagle & Hložek 2026 (arXiv:2609.04334) score the models on held-out redshift blocks: a modest preference for w0waCDM, supplied entirely by one BAO block (LRG2, z = 0.706), with every supernova sample consistent with zero [src: abstract]. This disagrees with Side A on which data set drives the preference, and the two analyses have not been reconciled.
 

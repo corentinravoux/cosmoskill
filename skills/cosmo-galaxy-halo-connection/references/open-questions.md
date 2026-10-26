@@ -2,7 +2,7 @@
 
 Scope: live controversies with both sides cited, method debates, what coming
 data will decide, and the misconceptions and stale claims that still circulate.
-Snapshot: 2026-10-16
+Snapshot: 2026-10-26
 
 Flags: `[src]` abstract read this session; `[src: Sect. n]` body read; `[sec]`
 named secondary source; `[der]` derived here. Forecasts are labelled.
@@ -36,6 +36,12 @@ With DES Y3, HSC Y1 and KiDS-1000 the lensing/clustering ratio is A = 0.79 ±
   HOD over-predicts ΔΣ by only ~7% after shear-bias correction, yet its joint
   fits sit at S8 = 0.743, set by the large-scale GGL [src: Sect. 7.1; Sect. 7.2,
   Table 3; Sect. 7.3].
+- Replacing the SDSS sources of the LOWZ test (arXiv:2011.02377) with DECADE
+  leaves the small-scale deficit mostly unchanged but reduces the large-scale
+  one; the observed-to-predicted ratio rises with r_p in all nine samples
+  (slopes up to m ~ 0.14, 1.3σ to 3.8σ), which favours a scale-dependent and
+  so at least partly astrophysical effect, although large scales still tend to
+  fall below the prediction (arXiv:2610.23828) [src: abstract; Sect. III].
 
 **Cosmology side.** Lower S8 reconciles the measurements (arXiv:1611.08606,
 arXiv:2202.07440) [src]; but above 5.25 h⁻¹Mpc the Planck and Lensing
@@ -71,6 +77,7 @@ arXiv:2502.09404) [src: abstract].
 | BOSS CMASS redshift-space 2PCF prefers positive environment-based assembly bias at 3–5σ and rejects the standard HOD (arXiv:2010.04182) [src: abstract] | DESI DR1 BGS direct HOD vs density: Q_sat = 0.05 ± 0.14, "in tension with many empirical galaxy formation models" (arXiv:2510.20896) [src: abstract] |
 | GAMA × KiDS-1000 SHAMe finds strong central and satellite assembly bias (arXiv:2507.01601) [src: Sect. 5.3]; DESI DR2 LRG multiplets are fitted only with environment-based secondary bias (arXiv:2511.15354) [src: Sect. 6.2] | HSC-Y3 × SDSS: S8 unchanged between (2, 3) and (8, 12) h⁻¹Mpc cuts, no assembly-bias signature (arXiv:2304.00704) [src: Sect. VI.2] |
 | Hydrodynamical simulations predict it for DESI-like tracers (arXiv:2202.12911) [src] | Basilisk is designed to be insensitive to it rather than to measure it (arXiv:2409.03105) [src] |
+| Clusters split by internal velocity anisotropy β (91 eROSITA + DESI clusters): isotropic ones cluster more at matched mass, S_Δ = 5.30 for the β_OM quartile split but 1.67 (β_C) and 1.51 (β_T) for the other profiles, and 1.71 for the intersection sample (arXiv:2609.31852) [src: Sect. 4] | eRASS1 clusters split by temperature at matched L_X: Δb = 0.8 ± 1.1, no signal at 1σ, but not excluding the FLAMINGO-level effect (arXiv:2609.15375) [src: abstract] |
 
 Part of the split is statistical: the DESI One-Percent LRG sample is ~10
 times smaller than CMASS, which would reduce the CMASS assembly-bias signal
@@ -100,9 +107,13 @@ the redMaPPer number density); a membership-distance split retains ~60% less,
 ## 3. Conformity and whether halo mass alone sets quenching
 <!-- key: conformity-and-whether-halo-mass-alone-sets -->
 
-- One-halo conformity is established since Weinmann et al. 2006
+- One-halo conformity is reported since Weinmann et al. 2006
   (arXiv:astro-ph/0509147) [src] and detected at > 3σ in eBOSS
-  (arXiv:1910.05095) [src].
+  (arXiv:1910.05095) [src]. It is now disputed at its root: in SDSS,
+  abundance-matching halo masses give +0.38 ± 0.04 and +0.23 ± 0.04 dex
+  (~10σ, ~6σ), but a halo mass whose SHMRs agree with weak lensing gives
+  +0.00 ± 0.03 dex, so the AM signal is attributed largely to halo-mass
+  estimation biases (arXiv:2609.11313) [src: abstract].
 - Two-halo (large-scale) conformity: SDSS signal beyond 4 Mpc for low-mass
   centrals that SAM mocks do not reproduce (arXiv:1209.3306) [src], against
   only an upper limit in eBOSS (arXiv:1910.05095) [src].
@@ -185,6 +196,7 @@ the redMaPPer number density); a membership-distance split retains ~60% less,
 | "Lensing is low proves low S8." | Galaxy–halo models with assembly bias, satellite segregation or selection reproduce the signal at Planck cosmology (arXiv:2211.01744, arXiv:2305.09637, arXiv:2502.09404) [src]; current joint fits give S8 ≈ 0.74–0.81, depending on model, scales and source survey (section 1). |
 | "Halo assembly bias was detected in SDSS clusters (Miyatake et al. 2016)." | Projection effects explain the split (arXiv:1611.00366, arXiv:1905.07557, arXiv:1702.01682) [src]. |
 | "The halo mass function is universal." | Not at its ≲ 5% calibration accuracy; amplitude decreases by ≈ 20–50% from z = 0 to 2.5 (arXiv:0803.2706) [src: abstract]; universality depends on the mass definition (arXiv:1507.05627, arXiv:2512.05847) [src]. |
+| "One-halo conformity is an established fact at fixed halo mass." | In SDSS the signal is +0.38 ± 0.04 dex with abundance-matching halo masses but +0.00 ± 0.03 dex with lensing-consistent halo masses (arXiv:2609.11313) [src: abstract]; a conformity claim needs its halo-mass estimator. |
 | "Satellites are Poisson." | Sub-Poisson preferred in KiDS-1000 (arXiv:2210.03110) [src]; the central condition alone breaks Poisson statistics [src: Sect. 4.1 of arXiv:2303.08752]. |
 | "NFW concentration relations are interchangeable." | WMAP5 concentrations at z = 0 are below Millennium ones by 23% at 10¹¹ to 16% at 10¹⁴ h⁻¹M_⊙ (arXiv:0804.2486) [src: abstract]; baryons alter c(M) (arXiv:2610.03544) [src]. |
 | "A halo's mass grows as M_vir(z) says." | Much of the apparent growth since z = 1 is pseudo-evolution (arXiv:1207.0816) [src]. |
@@ -198,4 +210,6 @@ the redMaPPer number density); a membership-distance split retains ~60% less,
   arXiv:1611.00366, Sect. 4.)
 - Searched 2026-10-16: HSC Y3 × SDSS halo-model cosmology exists
   (arXiv:2304.00704, `results.md` section 5) but is not framed as a
-  lensing-is-low test; no DESI DR2 lensing-is-low analysis was found.
+  lensing-is-low test; no DESI DR2 lensing-is-low analysis was found
+  (re-searched 2026-10-26: still none; the newest test is DECADE × BOSS
+  LOWZ, arXiv:2610.23828).

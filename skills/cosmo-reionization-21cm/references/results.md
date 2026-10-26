@@ -1,7 +1,7 @@
 # Results — reionisation, 21 cm, line-intensity mapping
 
 Scope: current headline measurements and the history of the key numbers.
-Snapshot: 2026-10-13
+Snapshot: 2026-10-26
 
 ## 1. Reionisation history
 <!-- key: reionisation-history -->
@@ -48,6 +48,8 @@ arXiv:2504.16932]. Adding reionisation-era astrophysical data in place of the lo
 | Low-ℓ power deficit read as an inflationary feature | Planck 95% upper limit rises from 0.0696 to 0.075, and to 0.082 with all CMB + BAO | arXiv:2606.20795 | [src: abstract] |
 | Prior τ = 0.11 ± 0.006 imposed by hand | Σm_ν = 0.10 (+0.04/−0.05) eV in ΛCDM; a concordance exercise, not a measurement | Sullivan, de Belsunce & Ivanov 2026, arXiv:2606.30903 | [src: abstract] |
 | Non-monotonic history with a z ≳ 12 component | claimed necessary to fit Planck τ, patchy-kSZ limits and the Lyα endpoint together; relaxes Σm_ν < 0.39 eV (95%) | Wang & Shan 2026, arXiv:2606.27903 | [src: abstract] |
+| Redshift-localised burst from early-collapsing small-scale overdensities (z ~ 100) | ~2–2.5σ preference for a new contribution, Δτ_burst ~ 0.012 (0.001 < Δτ_burst < 0.022 at 95%), total τ ~ 0.073, with PR3 (SRoll2 + plik) or PR4 (LoLLiPoP + CamSpec/HiLLiPoP); the burst redshift depends on the high-ℓ likelihood (z ~ 45, 100 or 165) | Weiner et al. 2026, arXiv:2610.12552 | [src: abstract] |
+| Axion-like-particle birefringence larger during reionisation, suppressing the EE reionisation bump | with energy injection at 10 ≲ z ≲ 100, parameter regions with τ ≃ 0.08–0.10 are compatible with Planck low-ℓ EE, BB and EB | Sirletti, Namikawa & Sherwin 2026, arXiv:2610.29764 | [src: abstract] |
 
 ### 1.3 Neutral fraction against redshift
 <!-- key: neutral-fraction-against-redshift -->
@@ -120,6 +122,14 @@ Lyα-visibility values depend on a reionisation-topology model and on the assume
 - An ionising-photon budget built from 1428 JWST/NIRSpec spectra at 5 < z < 10 gives reionisation ending at z ∼ 5.8,
   with about 20% of sources (those with f_esc > 10%) producing about 87% of the ionising photons [src: Giovinazzo et
   al. 2026, arXiv:2607.22834]. [src: abstract]
+- Planck PR4 low-ℓ EE (LoLLiPoP) + PR3 TT and high-ℓ likelihoods combined with dark-pixel upper limits at 4.9 ≲ z ≲
+  6.9 and the damping-wing-like lower limit at z = 5.8 give z₅₀ = 7.7 (+0.7/−0.8) and Δz₉₀ < 11.4 (95%) with FlexKnots,
+  and z₅₀ = 7.5 (+0.5/−0.9), Δz₉₀ < 11.5 with a parametric (Weibull) history; the forest data do not shift τ
+  significantly but redistribute it in redshift [src: Lopez, D'Aloisio & Cain 2026, arXiv:2610.28765, Sect. 5 and
+  Sect. 2.2.1]. Adding Lyα-forest photoionisation-rate measurements with a semi-analytic model (fixed cosmology and
+  IGM opacity) gives z₅₀ = 7.4 (+0.2/−0.3), Δz₉₀ = 6.0 (+0.8/−1.0) and asymmetry A_z = 2.4 (+0.3/−0.7), and favours an
+  ionising emissivity that declines after z ≈ 7–8; the authors call these constraints model-dependent [src:
+  arXiv:2610.28765, abstract and Sect. 5].
 - The Lumina radiation-hydrodynamic simulation (500 cMpc box, 2 × 6000³ elements) predicts a late, stellar-driven
   reionisation with the median sub-volume ionised by z ≈ 5.2 and residual neutral patches to z ≈ 4.75, with τ in
   agreement with Planck [src: Zier et al. 2026, arXiv:2605.15310]. [src: abstract]
@@ -185,7 +195,7 @@ full calibration and analysis pipeline as open source, together with the raw dat
 describes the question as an "ongoing debate" [src: Murray et al. 2026, arXiv:2605.16643]. A Bayesian framework from
 the EDGES group (beam-factor chromaticity correction with null-test validation, "BaNTER") is demonstrated on
 simulations only [src: Sims et al. 2025, arXiv:2506.20042]. No new sky measurement from REACH, MIST, PRIZM, LEDA or
-EDGES-3 was returned by the date-sorted search of 2026-10-10.
+EDGES-3 was returned by the date-sorted searches of 2026-10-10 and 2026-10-26.
 
 ## 3. 21 cm power-spectrum upper limits at z > 6
 <!-- key: 21-cm-power-spectrum-upper-limits-at-z-6 -->
@@ -350,7 +360,9 @@ abundance; both 2026 models above reproduce the z > 10 luminosity functions insi
 efficiency or burstiness. The photon-budget problem is a tension between galaxy observables and the reionisation
 history (τ, section 1.1; the Lyα endpoint, section 1.4), not with cosmological parameters. The absence of a strong
 damping wing in MoM-z14 is reported as tentative evidence of local ionisation at a redshift where models predict a
-neutral IGM [src: arXiv:2505.11263].
+neutral IGM [src: arXiv:2505.11263]. A review of the z > 10 UV luminosity function posted in October 2026 states that z = 14.44 is
+the redshift of the most distant galaxy currently known and that, despite ongoing efforts, no candidate beyond it has
+been confirmed [src: Fontana et al. 2026, arXiv:2610.12121, abstract].
 
 ## 7. History of the key numbers
 <!-- key: history-of-the-key-numbers -->

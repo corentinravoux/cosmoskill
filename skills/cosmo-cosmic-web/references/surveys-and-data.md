@@ -3,7 +3,7 @@
 Scope: the galaxy surveys, filament and void catalogues, reconstructions,
 X-ray, SZ, radio and FRB data sets, protocluster samples and simulations used
 to study the cosmic web, past, current and planned.
-Snapshot: 2026-10-16
+Snapshot: 2026-10-26
 
 Flags: `[src]` abstract read this session; `[src: Sect. n]`, `[src: Eq. n]`,
 `[src: Table n]` body read; `[sec]` named secondary source; `[der]` derived
@@ -16,6 +16,8 @@ here.
 |---|---|---|---|---|---|
 | SDSS Bisous filament catalogue | public filament spines, radius ~0.5 h⁻¹Mpc | longest 60 h⁻¹Mpc | public | Tempel et al. 2014, arXiv:1308.2533 | [src: abstract] |
 | GAMA large-scale structure catalogue | filaments, tendrils, isolated void galaxies from an adapted MST | 45,542 galaxies and 6,000 groups at z ≤ 0.213; 643 filaments | published | Alpaslan et al. 2014, arXiv:1311.1211 | [src: abstract] |
+| COSMOS-Web DR1 filament catalogue | 2D DisPerSE filaments in tomographic slices, with photo-z PDFs propagated through multiple realisations stacked into filament probability maps; parameters tuned on TNG mocks | 12,523 filaments (136,210 segments) at 0.5 < z < 3.5 | released: filament and segment catalogues, probability maps per slice | Hao et al. 2026, arXiv:2610.31168 | [src: abstract] |
+| DESI DR1 AVISM void catalogues | voids found with AVISM after RSD correction and velocity-field reconstruction, in a 1400³ cMpc³ cube | 1114 BGS voids (0.1 < z < 0.3) and 216 LRG voids (0.4 < z < 0.8), sizes up to ~65 cMpc; mean linear bias inside r < R_e 1.31 ± 0.02 (BGS) and 2.14 ± 0.04 (LRG) | publicly released | Monllor-Berbegal et al. 2026, arXiv:2610.18348 | [src: abstract] |
 | CAVITY (Calar Alto Void Integral-field Treasury surveY) | integral-field spectroscopy of void galaxies, PMAS/PPAK V500, 3745–7500 Å at 6 Å FWHM | DR1 (2024, arXiv:2410.08265); DR2: 200 data cubes in 15 voids at 0.005 ≤ z ≤ 0.050 | DR2 public, cavity.caha.es | Bidaran et al. 2026, arXiv:2609.24726 | [src: abstract] |
 
 Integral-field and imaging samples used against these skeletons: SAMI

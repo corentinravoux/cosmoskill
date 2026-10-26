@@ -85,8 +85,9 @@ specialist dossiers under `deep/`, each of which carries its own snapshot
 date.
 
 1. **Read the snapshot date** at the top of the domain's `results.md`.
-   `python3 tools/refresh_status.py --due 90` lists, per skill, the files
-   older than 90 days and the `[doc]` facts that go stale within 90 days.
+   `python3 tools/refresh_status.py --due <days>` lists, per skill, the
+   files older than that many days and the `[doc]` facts that go stale
+   within them.
 2. **Find what appeared since.** For each section of `results.md`, a
    date-sorted arXiv search from the snapshot date on, by any means
    available: the arXiv listing or search, INSPIRE, or an arXiv tool server

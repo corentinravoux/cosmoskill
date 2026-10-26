@@ -4,7 +4,7 @@ Scope: measured occupation of haloes by tracer, the stellar-to-halo mass
 relation and its scatter, satellite fractions, assembly-bias detections, the
 lensing-is-low amplitude and cosmology from clustering plus lensing, with which
 values are superseded.
-Snapshot: 2026-10-16
+Snapshot: 2026-10-26
 
 Flags: `[src]` read this session in the abstract of the cited paper; `[src:
 Sect. n]`, `[src: Table n]` read in the body; `[sec]` from a named secondary
@@ -110,6 +110,8 @@ and 2.
 | No assembly bias for DESI One-Percent LRG/QSO/ELG | redshift-space 2PCF, AbacusHOD | "no evidence" at current precision (LRG, QSO); "no significant change" with concentration or environment (ELG) | consistent with zero | arXiv:2306.06314, arXiv:2306.06319 [src]. The LRG AIC comparison prefers the 8-parameter baseline over concentration (A), environment (B) or satellite-profile (s) extensions; with ~10 times fewer galaxies than CMASS (~600 000) the errors are ~3 times larger, so the CMASS signal of Yuan et al. 2021 would be < 1σ [src: Sect. 6.1, Table 1 of arXiv:2306.06314] |
 | Direct HOD vs large-scale density | DESI DR1 BGS groups + lensing, 0.05 < z < 0.2 | satellite assembly-bias parameter Q_sat = 0.05 ± 0.14 | consistent with zero, "in tension with many empirical galaxy formation models" | Shao et al. 2025, arXiv:2510.20896 [src: abstract]. Method: Yang et al. DESI groups (> 90% complete and pure above 10¹³ h⁻¹M_⊙ at z < 0.5, not colour-biased), binned by abundance-matched mass; N_gal from group–galaxy cross-correlation, M_h from lensing; δ_g counted in a 5–15 h⁻¹Mpc cylindrical shell of height 3000 km/s along the line of sight and rank-ordered; centrals all above 0.4 L*, so only N_sat tests assembly bias; a "galaxy occupation bias" q absorbs miscentring and the ~0.2 dex scatter of M_h^AM [src: main-text paragraphs on the group catalogue, δ_g, q and Q_sat; the letter has no numbered sections] |
 | Secondary bias of groups | SDSS group catalogue, w_p at fixed mass | b_relative ~ 1.2 (15% reddest centrals) to ~0.8 (bluest); ~1.4 (densest 15% environments) to ~0.7 (least dense) | detection of halo-level secondary bias using groups as halo proxies | Rodriguez et al. 2025, arXiv:2511.19607 [src: abstract] |
+| Velocity-anisotropy assembly bias in clusters | 91 eROSITA + DESI clusters, β from Jeans modelling (MAMPOSSt, three anisotropy profiles), w_p with SDSS DR18 centrals, b_relative averaged over 5–20 h⁻¹Mpc | isotropic clusters more clustered than radially anisotropic ones at no significant mass difference [src: abstract]; quartile splits S_Δ = 5.30 (β_OM), 1.67 (β_C), 1.51 (β_T); intersection sample (30 isotropic, 27 radial) Δb_rel = 0.418 ± 0.244, S_Δ = 1.71 [src: Sect. 4] | first observational evidence claimed for this halo property; significance depends on the anisotropy profile | Rodriguez et al. 2026, arXiv:2609.31852 |
+| Temperature-split assembly bias in X-ray clusters | eRASS1 volume-limited clusters split by temperature at matched L_X, redshift and exposure; cluster–galaxy pair-count ratio over 4–10 h⁻¹Mpc | b_g = 1.610 (+0.018, −0.019); Δb = 0.8 ± 1.1; DES Y3 lensing gives log(M_200m/h⁻¹M_⊙) = 14.33 ± 0.07 and 14.33 (+0.10, −0.09), Δlog M_200m = −0.01 ± 0.12 | no significant signal at 1σ, consistent with the FLAMINGO prediction for analogous haloes | Joshi et al. 2026, arXiv:2609.15375 [src: abstract] |
 | Halo assembly bias in clusters | SDSS redMaPPer, 8648 clusters, 0.1 < z < 0.33, split by member separation | equal M200m ≃ 1.9 × 10¹⁴ h⁻¹M_⊙; bias ratio ~1.5; same-bias hypothesis excluded at 2.5σ (lensing) and 4.4σ (clustering) | **disputed**: attributed to projection effects (rows below) | Miyatake et al. 2016, arXiv:1506.06135 [src: abstract] |
 | Re-analysis of the above | SDSS redMaPPer, projection-robust R̃_mem | lensing bias ratio 1.02 ± 0.14; mock prediction < 1.10, vs 1.24 maximum for a concentration split | consistent with ΛCDM halo assembly bias | Zu et al. 2017, arXiv:1611.00366 [src: abstract] |
 | Mock re-analyses | Millennium-based mocks | the split produces bias differences even with assembly bias erased, from line-of-sight interlopers; the apparent signal "is not reflected in the three-dimensional distribution of matter" | methodology cannot claim detection | Sunayama et al. 2019, arXiv:1905.07557; Busch et al. 2017, arXiv:1702.01682 [src] |
@@ -118,6 +120,7 @@ and 2.
 | Quiescent vs star-forming at matched halo mass | COSMOS-Web, z = 0–5 | quiescent galaxies more clustered by at least 0.5–1 dex after matching halo mass with UniverseMachine; one-halo conformity to z ≃ 2 | contrasts with the SDSS central result above (different estimator and sample) | Paquereau et al. 2026, arXiv:2606.31978 [src: abstract] |
 | Galactic conformity, one-halo | SDSS group catalogue | early-type satellite fraction higher around early-type centrals at fixed halo mass, in all masses | foundation of the term | Weinmann et al. 2006, arXiv:astro-ph/0509147 [src] |
 | Conformity, large scale | SDSS DR7, z < 0.03 | for centrals below 10¹⁰ M_⊙ conformity extends beyond 4 Mpc; semi-analytic mocks give much weaker effects | two-halo conformity disputed | Kauffmann et al. 2013, arXiv:1209.3306 [src: abstract] |
+| One-halo conformity vs halo-mass estimator | SDSS, five stellar-mass-complete samples; difference in median log sSFR of satellites of star-forming vs quenched centrals | halo-level statistic +0.38 ± 0.04 dex and +0.23 ± 0.04 dex (luminosity- and mass-ranking abundance matching, ~10σ and ~6σ) vs +0.00 ± 0.03 dex with an ML halo mass whose SHMRs agree with weak lensing | the strong AM-based signal is attributed largely to halo-mass estimation biases | Zhao et al. 2026, arXiv:2609.11313 [src: abstract] |
 | One-halo conformity in eBOSS | MTHOD, z = 0.7–1.1 | one-halo conformity at more than 3σ; upper limit on two-halo conformity | — | arXiv:1910.05095 [src: abstract] |
 
 ## 5. Clustering plus lensing: lensing is low, and cosmology
@@ -129,6 +132,7 @@ and 2.
 |---|---|---|---|
 | BOSS CMASS × CFHTLenS + CS82, r < 10 h⁻¹Mpc | predicted ΔΣ from clustering-trained mocks exceeds the measurement | 20–40% too high at Planck 2015 | Leauthaud et al. 2017, arXiv:1611.08606 [src: abstract] |
 | BOSS LOWZ, M_halo ~ 10^13.3–10^13.9 h⁻¹M_⊙, r = 0.1–60 h⁻¹Mpc | amplitude mismatch, independent of halo mass and radial scale | ~35% at Planck CMB cosmology | Lange et al. 2021, arXiv:2011.02377 [src: abstract] |
+| same LOWZ samples (0.2 ≤ z ≤ 0.35; three stellar-mass bins × three mass estimates = nine samples) with DECADE sources (NGC, two highest-redshift bins) instead of SDSS | small-scale deficit mostly unchanged, large-scale tension reduced; observed/predicted ratio fitted as r = b + m log₁₀ r_p above r_p = 0.25 h⁻¹Mpc | positive slopes up to m ~ 0.14 in all nine samples, 1.3σ to 3.8σ; a scale-dependent effect favoured, large scales still tending below the prediction | Queen et al. 2026, arXiv:2610.23828 [src: abstract; Sect. II; Sect. III] |
 | BOSS × DES Y3, HSC Y1, KiDS-1000, 0.15 < R < 60 h⁻¹Mpc, Dark Emulator | lensing/clustering scaling A at Planck (S8 = 0.83) | A = 0.79 ± 0.03 (DES+KiDS), 0.84 ± 0.05 (HSC) | Amon et al. 2023, arXiv:2202.07440 [src: abstract] |
 | same, at "Lensing" cosmology (S8 = 0.76) | A | 0.91 ± 0.04 (DES+KiDS), 0.97 ± 0.06 (HSC); both cosmologies acceptable for R > 5.25 h⁻¹Mpc | arXiv:2202.07440 [src: abstract] |
 | BOSS LOWZ + CMASS, HOD with halo-mass-dependent selection | small-scale lensing | discrepancy below 1 h⁻¹Mpc "fully resolved"; above 1 h⁻¹Mpc lensing still below prediction | Zu 2021, arXiv:2010.01143 [src] |
@@ -158,6 +162,7 @@ of each row in its second column).**
 | HSC-Y3 × SDSS, 4 tomographic source bins, ΔΣ from 2 to 70 h⁻¹Mpc | point-mass correction (not an occupation model), flat ΛCDM | S8 = 0.780 (+0.029, −0.030); wCDM 0.756 (+0.038, −0.036) | Zhang et al. 2025, arXiv:2507.01386 [src: abstract] |
 | DESI DR1 full-shape P(k) + BAO + BBN | perturbative EFT with HOD-informed priors on nuisance parameters, ΛCDM | Ω_m = 0.2994 ± 0.0090, σ8 = 0.836 (+0.024, −0.027): ~4% and 23% tighter than Gaussian priors; projection shifts in w0wa removed | Zhang et al. 2025, arXiv:2504.10407 [src: abstract] |
 | DESI BGS + LRG × DES Y3, harmonic space | Lagrangian EFT / hybrid EFT bias, IA marginalised (perturbative, not an occupation model) | S8 = 0.850 (+0.042, −0.050) | Chen et al. 2024, arXiv:2407.04795 [src: abstract] |
+| DESI One-Percent ELG, 3D clustering only (no lensing) | SHAMe-SF on MillenniumTNG-validated pipeline, down to 0.3 h⁻¹Mpc; scales below 0.8 h⁻¹Mpc needed to avoid projection effects on σ8 | σ8 = 0.81 (+0.05, −0.06), Ω_m h² = 0.146 ± 0.009 | Ortega-Martinez et al. 2026, arXiv:2604.19449 [src: abstract] |
 | SDSS DR7, satellite kinematics + luminosity function | Basilisk with baryonification | Ω_m = 0.324 ± 0.012, σ8 = 0.775 ± 0.063, S8 = 0.81 ± 0.05; σ8(Ω_m/0.3)² = 0.91 ± 0.05 | Mitra et al. 2025, arXiv:2512.14889 [src: abstract] |
 
 Goodness of fit of the DESI DR1 analysis: χ² = 48.5 for 54 points (DES/KiDS)
@@ -191,6 +196,7 @@ question for DESI lenses.
 | Lensing-is-low amplitude | 20–40% (arXiv:1611.08606, abstract) | A = 0.79 ± 0.03 (DES + KiDS) and 0.84 ± 0.05 (HSC) at Planck (arXiv:2202.07440, abstract); no significant effect with UNIONS (arXiv:2606.23651) [src: abstract] | more lensing data, broader models |
 | First DESI HODs | eBOSS LRG/ELG/QSO HODs (arXiv:1607.05383, arXiv:1910.05095) | DESI One-Percent (arXiv:2306.06314, arXiv:2306.06319), then DESI DR1 BGS groups and SHMR (arXiv:2610.20919, arXiv:2609.04351) [src] | new survey |
 | High-mass SHMR | abundance matching on standard SDSS photometry | relations from improved photometry, BCG masses higher by ~2–4 (arXiv:1401.7329) [src] | sky subtraction and outer profiles |
+| Lensing-is-low scale dependence (BOSS LOWZ) | independent of radial scale, 0.1–60 h⁻¹Mpc, with SDSS sources (arXiv:2011.02377, abstract) | with DECADE sources the large-scale deficit shrinks and a scale-dependent ratio is favoured, slopes significant at 1.3σ to 3.8σ (arXiv:2610.23828) [src: abstract; Sect. III] | deeper source catalogue on the same lenses |
 | SDSS clustering + lensing S8 | σ8 = 0.763 at WMAP7 priors (arXiv:1207.0503, abstract) | simulation-based DESI DR1 S8 = 0.797 (DES + KiDS) and 0.791 (HSC) (arXiv:2512.15962) [src: abstract] | different parameterisation: compare only after converting |
 
 
@@ -200,8 +206,9 @@ question for DESI lenses.
 - Velocity-bias and satellite-fraction values of the DESI DR1 BGS and LRG
   samples in the full-scale analysis (arXiv:2512.15962) were not read in its
   results tables.
-- Searched 2026-10-16: the only DESI DR2 galaxy–halo result found is the
-  multiplet test (arXiv:2511.15354); no DR2 HOD fit was found. No Euclid Q1,
+- Searched 2026-10-16 and again 2026-10-26: the only DESI DR2 galaxy–halo
+  result found is the multiplet test (arXiv:2511.15354); no DR2 HOD fit was
+  found. No Euclid Q1,
   KiDS-Legacy or Rubin DP1 HOD or SHMR paper was found; DES Y6 lensing keeps R
   ≥ 4–6 h⁻¹Mpc and fits no occupation model (arXiv:2601.15175) [src: Sect.
   III, Scale cuts].

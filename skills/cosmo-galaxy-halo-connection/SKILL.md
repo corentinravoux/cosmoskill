@@ -5,7 +5,7 @@ description: Use when reviewing, planning or fact-checking how galaxies occupy d
 
 # Galaxy–halo connection — expert reference
 
-Snapshot 2026-10-16. Numbers carry provenance flags ([src] / [sec] / [der]);
+Snapshot 2026-10-26. Numbers carry provenance flags ([src] / [sec] / [der]);
 re-verify against the cited paper before a number enters a manuscript.
 
 ## File map
@@ -52,7 +52,9 @@ re-verify against the cited paper before a number enters a manuscript.
   (arXiv:2202.07440, abstract).
 - Galaxy–halo explanations: assembly bias, satellite segregation, baryons
   (arXiv:2211.01744), SHAMe (arXiv:2305.09637); UNIONS sees no significant
-  effect (arXiv:2606.23651).
+  effect (arXiv:2606.23651); DECADE sources around LOWZ shrink the
+  large-scale deficit and favour a scale-dependent effect (arXiv:2610.23828,
+  Sect. III).
 - Joint clustering + lensing fits give S8: DESI DR1 0.797
   (arXiv:2512.15962, abstract), KiDS-1000 0.773 (arXiv:2210.03110,
   abstract), HSC-Y3 0.763 (arXiv:2304.00704, abstract), UNIONS 0.743
@@ -127,7 +129,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 4k; methods 12k; results 8k; surveys 4k; systematics 6k; deep/abundance-matching-shmr 7k; deep/assembly-bias 9k; deep/empirical-sam-hydro 10k; deep/hod-clf 9k; deep/profiles-concentration 6k; deep/satellites 9k.
+Sizes, in thousands of tokens: L1 3k; open 5k; methods 12k; results 9k; surveys 4k; systematics 6k; deep/abundance-matching-shmr 7k; deep/assembly-bias 9k; deep/empirical-sam-hydro 10k; deep/hod-clf 9k; deep/profiles-concentration 6k; deep/satellites 9k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

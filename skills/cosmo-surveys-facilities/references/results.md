@@ -1,7 +1,7 @@
 # Surveys and facilities — dated milestones
 
 Scope: chronology of data releases and facility milestones, a table of what is public today, and the calendar of announced milestones.
-Snapshot: 2026-10-07 (web pages fetched 2026-10-09 unless another date is given)
+Snapshot: 2026-10-26 (each official-page fact carries its read date in its `[doc]` flag)
 
 Flags as in `surveys-and-data.md`: `[doc: <URL>, <date>]` re-read on that
 official page on that date; `[src]` read on the cited paper; `[sec: GC|WL|CMB|SN|CL]` carried over from the named
@@ -110,6 +110,8 @@ parameter values: those are in the probe skills.
 | 3 September 2026 | ESO announces MOONS first observations | ESO ann26007 | [doc: https://www.eso.org/public/announcements/ann26007/, 2026-10-26] |
 | 15 and 30 September 2026 | Roman primary instrument activated; guidance system checked (NASA blog posts of those dates) | NASA Roman blog | [doc: https://science.nasa.gov/blogs/roman/, 2026-10-26] |
 | 30 September 2026 | 4MOST passes its third Operations Readiness Review with ESO; survey operations expected "in the coming month" (news item of 12 October 2026) | 4most.eu | [doc: https://www.4most.eu/cms/news/2026/ORR3/, 2026-10-26] |
+| October 2026 | MeerKLASS reports a 21 cm auto-spectrum on cosmological scales, 0.095 < k < 0.245 h Mpc⁻¹ at z = 0.42, from the 2021 campaign over about 236 deg², detection at S/N 6.2 (paper posted 8 October 2026) | arXiv:2610.12158 | [src: abstract] |
+| 22 October 2026 | Simons Observatory "completely online and conducting science operations" with three Small Aperture Telescopes and the Large Aperture Telescope, "98,000 in total" detectors | Simons Foundation news item of 22 October 2026 | [doc: https://www.simonsfoundation.org/news/now-fully-online-simons-observatory-begins-probe-of-universes-birth/, 2026-10-26] |
 | 22 October 2026 | Roman "has now entered the science commissioning phase" | NASA Roman blog | [doc: https://science.nasa.gov/blogs/roman/, 2026-10-26] |
 | 2026 (day not given) | Legacy Surveys DR11 current | legacysurvey.org | [src] |
 
@@ -135,7 +137,7 @@ parameter values: those are in the probe skills.
 | ACT | DR6 | March 2025 | NASA LAMBDA | — | [sec: CMB] |
 | SPT-3G | D1 band powers, likelihood, maps | June 2025; March 2026 | `pole.uchicago.edu/public/data/camphuis25/` | later seasons and the wide fields | [sec: CMB] |
 | BICEP/Keck | BK18 | October 2021 | — | data after 2018 | [sec: CMB] |
-| Simons Observatory | none mentioned on the project front page | — | — | everything | [doc: https://simonsobservatory.org/, 2026-10-26] |
+| Simons Observatory | none; in science operations since the news item of 22 October 2026, which says the observatory "will regularly release datasets" and mentions "the first data release" without a date | — | — | everything | [doc: https://simonsobservatory.org/, 2026-10-26]; [doc: https://www.simonsfoundation.org/news/now-fully-online-simons-observatory-begins-probe-of-universes-birth/, 2026-10-26] |
 | ZTF | SN Ia DR2 light curves and spectra; public alert stream | see `cosmo-supernovae` | see `cosmo-supernovae` | scene-modelling "DR2.5" | [sec: SN] |
 | eROSITA (German half) | DR1 (eRASS1 events, catalogues, maps); DR2 (eRASS:3 catalogues only) | January 2024 (arXiv:2401.17274); 31 July 2026 | `erosita.mpe.mpg.de/dr2` (DR1 address not checked) | events after eRASS1; the other hemisphere | [doc: https://erosita.mpe.mpg.de/dr2/, 2026-10-26] |
 | CHIME | 21 cm stacking detection (paper); no cosmology data release identified | 2022 | — | — | [src] |
@@ -155,7 +157,7 @@ parameter values: those are in the probe skills.
 | 2027 | CSST launch (earliest) | arXiv:2507.04618 | [src] |
 | By 2027 | Einstein Telescope site decision by the Board of Governmental Representatives ("expected by 2027") | INFN page of 1 September 2026 | [doc: https://www.infn.it/en/towards-einstein-telescope/, 2026-10-26] |
 | 2027 | DESI dark-energy results from the completed survey | DESI news post | [doc: https://www.desi.lbl.gov/2026/04/15/desi-reaches-mapping-milestone-surpassing-expectations/, 2026-10-26] |
-| By 2027 | Simons Observatory at six small-aperture telescopes | `cosmo-cmb` | [sec: CMB] |
+| By 2027 | Simons Observatory at six small-aperture telescopes; on 22 October 2026 the Simons Foundation wrote that three SATs funded by the United Kingdom and Japan are "due to arrive in the coming year" | `cosmo-cmb`; Simons Foundation news item | [sec: CMB]; [doc: https://www.simonsfoundation.org/news/now-fully-online-simons-observatory-begins-probe-of-universes-birth/, 2026-10-26] |
 | Mid 2027 | Euclid DR1 with clustering and lensing products | ESA Euclid timeline | [doc: https://www.cosmos.esa.int/web/euclid/timeline, 2026-10-26] |
 | After the first survey year | Rubin DR1, "based on the first year of LSST observations"; no date given | RTN-011 v9.1, dated 2026-10-01 | [doc: https://rtn-011.lsst.io/, 2026-10-26] |
 | Through 2028 | DESI extension "from 14,000 square degrees to 17,000 square degrees" | DESI news post | [doc: https://www.desi.lbl.gov/2026/04/15/desi-reaches-mapping-milestone-surpassing-expectations/, 2026-10-26] |

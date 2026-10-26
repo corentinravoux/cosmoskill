@@ -3,7 +3,7 @@
 Scope: headline parameter constraints from Planck, ACT and SPT-3G spectra and
 lensing, alone and combined, with the model stated for each; then the history
 of the key numbers so that superseded values can be recognised.
-Snapshot: 2026-10-14
+Snapshot: 2026-10-26
 
 Flags: `[src: <place>]` read in the cited paper at that place; `[sec: <place>]`
 taken from the named secondary source at that place. Errors are 68% and
@@ -340,10 +340,11 @@ abstract; Sect. VI.1.1, Eq. 33]. The INSPIRE record still showed 0.082 on
 | Lensing B modes | 7.0σ | BICEP2/Keck + Planck | arXiv:1502.00612 | [src: abstract] |
 | Residual lensing BB after template delensing | A_lens^res ≃ 0.48 over 20 ≤ ℓ ≤ 200 | SPT-3G D1 + Planck CIB template | Nakato et al. 2026, arXiv:2608.06343 | [src: abstract] |
 | Birefringence angle β | 0.215° ± 0.074° (2.9σ) | ACT DR6 EB and TB | Diego-Palazuelos & Komatsu 2025, arXiv:2509.13654 | [src: abstract] |
+| Time-dependent birefringence, ALP–photon coupling g_φγ | < 1.1 × 10⁻¹¹ (m_φ/10⁻²¹ eV) GeV⁻¹ (95%), for 2.5 × 10⁻²³ < m_φ < 4.8 × 10⁻²⁰ eV; no signal; assumes ALPs are all the dark matter with a stochastic field amplitude | ACT 2017–2022 time-sliced "depth-1" polarisation maps, EB estimator | Huber et al. 2026, arXiv:2610.19049 | [src: abstract] |
 
 BK18 remains the most constraining published B-mode data set at the
 snapshot date; no BICEP/Keck result with data after 2018 was found in the
-searches run on 2026-10-07. Inflation-model implications belong to
+searches run on 2026-10-07 and 2026-10-26. Inflation-model implications belong to
 `cosmo-inflation-primordial`.
 
 ## 9. Secondary anisotropy numbers quoted in primary-CMB papers

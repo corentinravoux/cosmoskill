@@ -5,7 +5,7 @@ description: Use when reviewing, planning or fact-checking non-standard early-Un
 
 # Early-Universe exotica — expert reference
 
-Snapshot 2026-10-16. Numbers carry provenance flags ([src] / [sec] / [der]);
+Snapshot 2026-10-26. Numbers carry provenance flags ([src] / [sec] / [der]);
 re-verify against the cited paper before a number enters a manuscript.
 
 ## File map
@@ -32,9 +32,9 @@ re-verify against the cited paper before a number enters a manuscript.
 - NANOGrav 15 yr: A = 2.4 (+0.7/−0.6) × 10⁻¹⁵ at γ = 13/3; HD p = 10⁻³ (Bayes-factor null), 5 × 10⁻⁵ – 1.9 × 10⁻⁴ (frequentist) (arXiv:2306.16213, abstract); free fit γ = 3.2 ± 0.6 (5–95%) (Sect. I).
 - No PTA reaches 5σ: EPTA ≳ 3σ (10.3 yr subset), PPTA ~2σ, MPTA 3–3.4σ, noise-model dependent, five arrays combined below 5σ (arXiv:2306.16214, arXiv:2306.16215, arXiv:2412.01153, arXiv:2512.08666; abstract of each).
 - New-physics Bayes factors of 10–100 depend on the SMBHB prior and "should not be regarded as evidence for new physics"; stable strings alone give factors < 1 (arXiv:2306.16219, abstract).
-- The PTA amplitude exceeds the local-SMBH prediction (arXiv:2312.06756).
+- The PTA amplitude exceeds the local-SMBH prediction (arXiv:2312.06756), but part of the excess may be a prior-volume effect of log-uniform red-noise priors; other priors or the profile likelihood bring NANOGrav into agreement with SMBHBs (arXiv:2610.28739, abstract).
 - LVK: Ω_GW(25 Hz) ≤ 2.8 × 10⁻⁹ (flat), ≤ 2.0 × 10⁻⁹ (α = 2/3), against predicted compact-binary 6.3 × 10⁻¹⁰ (arXiv:2608.23477, abstract).
-- PBHs: the asteroid window, ~10⁻¹⁷–10⁻¹⁰ M☉, is the only unconstrained range (arXiv:2601.06024, Sect. V); LVK O3 gives f_PBH ≲ 10⁻³ over 1–200 M☉ (arXiv:2405.05732, abstract); OGLE's < 1% limits (arXiv:2403.02386, abstract) are disputed (arXiv:2509.05400).
+- PBHs: the asteroid window, ~10⁻¹⁷–10⁻¹⁰ M☉, is the only unconstrained range (arXiv:2601.06024, Sect. V); LVK O3 gives f_PBH ≲ 10⁻³ over 1–200 M☉ (arXiv:2405.05732, abstract); OGLE's < 1% limits (arXiv:2403.02386, abstract) are disputed (arXiv:2509.05400) and weaken by up to a factor ≃ 6 under other Galactic and LMC models (arXiv:2610.30510, abstract); LIGO O4a + O4b sub-solar search: f̃_PBH < 0.6% at 0.8 M☉ (arXiv:2610.19329, abstract).
 - Gaussian SIGW fits to the PTA signal overproduce PBHs at 2σ (arXiv:2306.17149).
 - EDE: ACT DR6 f_EDE < 0.088, no H0 shift, the DR4 hint gone (arXiv:2503.14454, Sect. V.1); SPT+ACT+Planck < 0.070, with DESI 0.055 (+0.024/−0.047) (arXiv:2507.23355, abstract); profile 0.09 ± 0.03 (arXiv:2505.08051, abstract).
 - Constants at recombination (P-ACT-LB): m_e/m_e,0 = 1.0096 ± 0.0060 (arXiv:2503.14454, Sect. V.2.1), α_EM/α_EM,0 = 1.0043 ± 0.0017 (Sect. V.2.3, Eq. 24), both step models, no driving field.
@@ -90,7 +90,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 3k; methods 9k; results 8k; surveys 3k; systematics 5k; deep/cosmic-defects 6k; deep/phase-transitions 8k; deep/primordial-black-holes 8k; deep/scalar-induced-gw 9k; deep/sgwb-pta 10k; deep/spectral-distortions 6k.
+Sizes, in thousands of tokens: L1 3k; open 3k; methods 9k; results 9k; surveys 3k; systematics 5k; deep/cosmic-defects 6k; deep/phase-transitions 8k; deep/primordial-black-holes 8k; deep/scalar-induced-gw 9k; deep/sgwb-pta 10k; deep/spectral-distortions 6k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

@@ -124,3 +124,7 @@ Almeida2023	2301.07688	Almeida	2023	The Eighteenth Data Release of the Sloan Dig
 Cornachione2019	1911.04985	Cornachione	2019	A Full Implementation of Spectro-Perfectionism for Precise Radial Velocity Exoplanet Detection: A Test Case With the MINERVA Reduction Pipeline	method
 Chiba2026	2604.09875	Chiba	2026	Galactic Archaeology with the Subaru `Ōnohi`ula Prime Focus Spectrograph Strategic Program	data
 WrightLegacy2025	2503.19441	Wright	2025	KiDS-Legacy: Cosmological constraints from cosmic shear with the complete Kilo-Degree Survey	systematics
+EuclidBypass2026	2610.26990	Euclid Collaboration	2026	Euclid Bypass end-to-end simulations for spectroscopic galaxy clustering performance assessment	forecast
+Paine2026	2610.03882	Paine	2026	The Nancy Grace Roman Space Telescope Wide Field Instrument: Characterization of the Brighter-Fatter Effect in a Roman H4RG-10 Detector using the Talbot Effect	systematics
+PlazasMalagon2026	2610.20746	Plazas Malagón	2026	Multi-Method Machine Learning Classification of Astronomical Sources with Rubin Data Previews: a Spectroscopy-Free Approach with DP1 and DP2	results
+RubinPipelines2026	2610.22613	Rubin Observatory Science Pipelines Developers	2026	The LSST Science Pipelines Software: Optical Survey Pipeline Reduction and Analysis Environment	code

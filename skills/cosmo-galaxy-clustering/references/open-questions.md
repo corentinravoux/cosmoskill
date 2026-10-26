@@ -2,7 +2,7 @@
 
 Scope: live controversies, internal tensions, method debates, what the next
 data will decide, forecasts, and stale claims that still circulate.
-Snapshot: 2026-10-07.
+Snapshot: 2026-10-26.
 
 Flags: `[src]` read this session in the cited paper; `[sec]` from a named
 secondary source; `[der]` derived here. Forecasts are labelled.
@@ -114,6 +114,13 @@ arXiv:2508.11811) [src: abstract].
   together [src].
 - Use simulation-based priors (arXiv:2602.18554): large gains, explicit HOD
   dependence.
+- Change units: on synthetic Stage-IV data vectors the effect is largely
+  driven by priors on parameters defined in Mpc/h units, which correlate with
+  h; writing the model in Mpc units brings the shifts from several standard
+  deviations to well within 1σ, even in w0waCDM, comparable to invariant
+  priors or to a reparametrisation in growth and geometry amplitudes, for
+  which σ12 works better than σ8 (Pezzotta et al. 2026, arXiv:2610.08751)
+  [src: abstract]. Tested on synthetic data only.
 
 **What decides.** Data volume. Simon et al. 2023 (arXiv:2208.05929) and Holm
 et al. 2023 both show that the effect shrinks with larger volumes or with CMB

@@ -3,7 +3,7 @@
 Scope: the galaxy samples, group catalogues, lensing source catalogues and
 simulation suites on which galaxy–halo measurements are made, with what each
 contributed, in the order past, current, next.
-Snapshot: 2026-10-16
+Snapshot: 2026-10-26
 
 Flags: `[src]` abstract read this session; `[src: Sect. n]` body read; `[sec]`
 named secondary source; `[der]` derived here.
@@ -79,6 +79,7 @@ in the cited papers.
 | DES, KiDS, HSC around DESI DR1 | — | DESI DR1 full-scale analysis | arXiv:2512.15962 [src] |
 | DES Y3 around DESI BGS and LRG | — | perturbative 2×2-point | arXiv:2407.04795 [src] |
 | UNIONS around BOSS CMASS | ~2650 deg² overlap | lensing-is-low revisited | Campbell et al. 2026, arXiv:2606.23651 [src: abstract] |
+| DECADE (cosmology selection, Northern Galactic Cap, two highest-redshift tomographic bins) around BOSS LOWZ, 0.2 ≤ z ≤ 0.35 | — | mass and scale dependence of lensing is low, replacing the SDSS sources of arXiv:2011.02377 | Queen et al. 2026, arXiv:2610.23828 [src: Sect. II] |
 | SDSS DR7 re-Gaussianization shear (Reyes et al.) around DESI DR1 BGS | ~5400 deg² overlap; chosen over HSC Y3 and DECADE (consistent) for its lensing kernel for dwarfs and homogeneity | dwarf-to-massive SHMR; stellar masses from CIGALE rescaled to MPA/JHU with 23 127 common galaxies | arXiv:2609.04351 [src: Sect. II.1.2, II.3] |
 
 Shear and n(z) calibration of these catalogues: `cosmo-weak-lensing`,
@@ -157,7 +158,8 @@ data type pins down, in the analyses read:
 ## Not verified
 <!-- key: not-verified -->
 
-- Searched 2026-10-16: no Euclid Q1, Rubin DP1 or KiDS-Legacy HOD or SHMR
-  paper was found; DESI DR2 has only the multiplet test above.
+- Searched 2026-10-16 and again 2026-10-26: no Euclid Q1, Rubin DP1 or
+  KiDS-Legacy HOD or SHMR paper was found; DESI DR2 has only the multiplet
+  test above.
 - GAMA, HSC and KiDS sample sizes and areas for the galaxy–halo papers were not
   read in the bodies.

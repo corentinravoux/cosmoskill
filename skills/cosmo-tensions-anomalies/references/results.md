@@ -2,7 +2,7 @@
 
 Scope: one table per tension or anomaly: current size, data sets, metric, reference endpoint, what moved it and when.
 
-Snapshot: 2026-10-16
+Snapshot: 2026-10-26
 
 Flags. `[src]`: read this session in the cited paper. `[sec: X]`: taken from the reference files of the sibling skill X, where the number is flagged `[src]` against the same arXiv ID; the sibling is the secondary source. `[der]`: a derivation in words, without a number (owner's rule of 2026-10-23: no number computed here). Sibling abbreviations: `h0` = `cosmo-distance-ladder-h0`, `wl` = `cosmo-weak-lensing`, `cmb` = `cosmo-cmb`, `de` = `cosmo-dark-energy-modified-gravity`, `cl` = `cosmo-clusters`, `x` = `cosmo-cmb-lss-cross-correlations`, `nu` = `cosmo-neutrinos-dark-matter`, `pv` = `cosmo-peculiar-velocities`, `inf` = `cosmo-inflation-primordial`, `stat` = `cosmo-statistics-inference`, `b2p` = `cosmo-beyond-two-point`. Sect. 1–6, Sect. 8, Sect. 11 are a synthesis of those siblings; Sect. 7, Sect. 9, Sect. 10 were researched for this skill. H0 is in km/s/Mpc, the model is flat ΛCDM unless a row says otherwise, and S8 ≡ σ8 sqrt(Ω_m/0.3).
 
@@ -13,14 +13,14 @@ Every significance below is the one the cited paper prints, with its metric wher
 
 | Tension or anomaly | Current size | Depends most on | Section |
 |---|---|---|---|
-| H0, ladder against early Universe | 4.5σ (SH0ES against DESI DR2 BAO + BBN, arXiv:2503.14738 [src: Sect. VI]) to 7.1σ (H0DN against Planck + SPT + ACT, arXiv:2510.23823 [src: abstract]); CCHP TRGB "consistent with the current standard ΛCDM model" (arXiv:2408.06153) [src: abstract] | which local team and which early endpoint | Sect. 1 |
+| H0, ladder against early Universe | 4.5σ (SH0ES against DESI DR2 BAO + BBN, arXiv:2503.14738 [src: Sect. VI]) to 7.1σ (H0DN against Planck + SPT + ACT, arXiv:2510.23823 [src: abstract]); CCHP TRGB "consistent with the current standard ΛCDM model" (arXiv:2408.06153) [src: abstract]; without the ladder, late-universe probes combined around TDCOSMO-2026 remain 2.7σ from Planck, 3.7σ without supernovae (arXiv:2610.14881) [src: abstract] | which local team and which early endpoint | Sect. 1 |
 | S8, lensing against CMB | 0.73σ (KiDS-Legacy against Planck Legacy, arXiv:2503.19441 [src: abstract]) to 2.6σ projected on S8 and 1.8σ in full space (DES Y6 3×2pt against Planck + ACT + SPT primary CMB, arXiv:2601.14559 [src: abstract]) | survey, metric, CMB reference | Sect. 2 |
 | S8, spread among low-redshift probes | 0.72 ± 0.03 (tSZ × galaxies, arXiv:2605.11083) to 0.86 ± 0.01 (eRASS1 clusters, arXiv:2402.08458) [src: abstract of each] | probe and astrophysical model | Sect. 2 |
 | A_L (peak smoothing) | 2.7σ in Planck PR3 Plik (arXiv:1807.06209 [src: Sect. 2.2.1]); A_L = 1.039 ± 0.052 in PR4 HiLLiPoP (arXiv:2309.10034 [src: abstract]); "no evidence for excess lensing" in P-ACT (arXiv:2503.14452 [src: abstract]); 1.6σ in the (A_2pt, A_recon) plane for CMB-SPA (arXiv:2506.20707 [src: Sect. VII.2.3]) | the oscillatory Planck TT residual at 1000 < ℓ < 2000 (arXiv:2503.14452) [src: Sect. VIII.5] | Sect. 3 |
 | τ, BAO-preferred against measured | 0.090 ± 0.012 (DESI BAO + high-ℓ CMB + lensing, arXiv:2504.16932 [src: abstract]) against 0.058 ± 0.006 (Planck PR4, arXiv:2309.10034 [src: Eq. 14]) | whether low-ℓ EE is dropped | Sect. 3 |
 | CMB against DESI DR2 BAO in ΛCDM | 1.6σ (P-ACT, arXiv:2503.14452 [src: abstract]) to 3.7σ (SPT + ACT, arXiv:2506.20707 [src: Sect. VII.3]) in the Ω_m–h r_d plane | CMB data set, τ | Sect. 4 |
-| w0wa preference | 1.7σ BAO alone, 3.1σ + CMB, 2.7σ without CMB lensing (arXiv:2503.14738 [src: Table 6]); 1.4σ with a τ prior of 0.09 (arXiv:2504.16932 [src: Sect. III.2]); 3.0σ (DES Y6 all probes, arXiv:2605.27221) to 3.4σ (arXiv:2601.19424) with recalibrated supernovae [src: abstract of each] | SN sample, CMB lensing, τ, statistic | Sect. 5 |
-| Effective neutrino mass below the oscillation minimum | 3σ in ΛCDM (arXiv:2503.14744 [src: abstract]); 2.7σ (goodness of fit), 3.0σ (probability to exceed) and 4.0σ (parameter shift) [src: Sect. V.3, Table 4]; absent in w0waCDM (arXiv:2407.10965 [src: abstract]) or with free lensing amplitudes (arXiv:2511.01967 [src: abstract]) | model, τ, lensing, metric | Sect. 6 |
+| w0wa preference | 1.7σ BAO alone, 3.1σ + CMB, 2.7σ without CMB lensing (arXiv:2503.14738 [src: Table 6]); 1.4σ with a τ prior of 0.09 (arXiv:2504.16932 [src: Sect. III.2]); 3.0σ (DES Y6 all probes, arXiv:2605.27221) to 3.4σ (arXiv:2601.19424) with recalibrated supernovae [src: abstract of each]; a Jeffreys prior turns every ln B for DESI DR2 + Planck 2018 (± SNe) negative (arXiv:2610.26493) [src: Sect. 4.2, Table 4] | SN sample, CMB lensing, τ, statistic, prior | Sect. 5 |
+| Effective neutrino mass below the oscillation minimum | 3σ in ΛCDM (arXiv:2503.14744 [src: abstract]); 2.7σ (goodness of fit), 3.0σ (probability to exceed) and 4.0σ (parameter shift) [src: Sect. V.3, Table 4]; absent in w0waCDM (arXiv:2407.10965 [src: abstract]) or with free lensing amplitudes (arXiv:2511.01967 [src: abstract]); geometry and growth channels both negative and mutually consistent at 0.4σ (arXiv:2610.20977) [src: abstract] | model, τ, lensing, metric | Sect. 6 |
 | Number-count dipole against the CMB kinematic expectation | CatWISE quasars: 3.63σ (no clustering dipole), 3.44σ (random) or 3.27σ (aligned) with clustering-aware mocks (arXiv:2511.00822 [src: abstract]), 5.7σ (arXiv:2212.07733 [src: abstract]), ≈ 6.7σ with a forward-modelled Eddington bias (arXiv:2607.25703 [src: abstract]); 5.4σ for three radio surveys (arXiv:2509.16732 [src: abstract]); the DESI redshift dipole agrees with the CMB velocity (arXiv:2608.30914 [src: abstract]) | catalogue, null model, source evolution | Sect. 7 |
 | CF4 bulk flow at 150–200 h⁻¹Mpc (arXiv:2302.02028 [src: abstract]) | 0.11% probability with mock-calibrated errors (arXiv:2306.11269 [src: abstract]); dipole deviation 2.29σ over the full range in a shell analysis (arXiv:2608.14265 [src: abstract]) | error model, window, 6dFGS | Sect. 8 |
 | Large-angle CMB anomalies | individual p-values "in the per mille to per cent level" (arXiv:1510.07929 [src: abstract]); a claimed joint ≤ 3 × 10⁻⁸ (arXiv:2310.12859 [src: abstract]) becomes 3σ if chosen from about 16 tests and 2σ from about 50 (arXiv:2602.10178 [src: abstract]); nothing in polarisation (arXiv:1906.02552) | choice and number of statistics, mask | Sect. 9 |
@@ -41,7 +41,10 @@ Every significance below is the one the cited paper prints, with its metric wher
 | Local | 73.18 ± 0.88 | SH0ES: HST + JWST Cepheids + 35 TRGB calibrations, 55 SN Ia calibrators; "∼6σ above the ΛCDM + CMB expectation" | Riess et al. 2025, arXiv:2509.01667 | [src: abstract] |
 | Local | 73.04 ± 1.04 | SH0ES HST-only baseline, 42 calibrators | Riess et al. 2022, arXiv:2112.04510 | [src: abstract] |
 | Local | 70.39 ± 1.22 (stat) ± 1.33 (sys) ± 0.70 (σ_SN) | CCHP TRGB, 24 SN Ia calibrators, anchor NGC 4258 | Freedman et al. 2024, arXiv:2408.06153 | [src: abstract; Sect. I, Fig. 1] |
-| Local, one-step | 71.6 (+3.9/−3.3) | TDCOSMO-2025, 8 lensed quasars, mass-sheet degeneracy free | TDCOSMO Collaboration 2025, arXiv:2506.03023 | [src: abstract] |
+| Local, one-step | 71.1 (+2.4/−2.3), 3.3% "that accounts for the mass-sheet degeneracy"; 3.0% with SLACS and SL2S added; DESI DR2 BAO in place of the DES-Dovekie Ω_m prior "yields fully consistent results" | TDCOSMO-2026, 11 lensed quasars, spatially resolved kinematics for nine, Ω_m prior from DES-Dovekie supernovae; supersedes TDCOSMO-2025 (Sect. 12.1) | TDCOSMO Collaboration 2026, arXiv:2610.14781; companion arXiv:2610.14881 | [src: abstract of each] |
+| Local, one-step | 65.0 (+2.0/−1.8), Ω_m = 0.30 (+0.08/−0.09) | SN Refsdal time delays with the host surface brightness (77,000 HST pixels) in MACS J1149.5+2223; cluster total-mass parametrisation held fixed to the earlier point-like model, so its systematics are not in the error | Schuldt et al. 2026, arXiv:2610.12595 | [src: abstract] |
+| Local, one-step | 71.7 (+9.4/−7.5), median and 68% interval | GWTC-5.0, 236 sources: mass-spectrum features, GW170817 with its counterpart, DES Y6 galaxy catalogue; 22.0% smaller error than GWTC-4.0 | LVK 2026, arXiv:2605.27227 | [src: abstract] |
+| Inverse ladder, r_d fixed to 147.05 ± 0.30 Mpc | 76.25 ± 2.87 with DES-Dovekie SNe only; 67.98 ± 0.69 adding the legacy low-redshift SNe | DESI DR2 BAO + uncalibrated SNe, cosmographic H(a) (fourth-order polynomial in 1 − a) | Nájera, Banik & Desmond 2026, arXiv:2610.23657 | [src: abstract] |
 | Early | 67.4 ± 0.5 (67.36 ± 0.54 in the table) | Planck 2018 TT,TE,EE + lowE + lensing | Planck Collaboration 2018, arXiv:1807.06209 | [src: Table 2] |
 | Early | 67.64 ± 0.52 | Planck PR4 HiLLiPoP + LoLLiPoP | Tristram et al. 2023, arXiv:2309.10034 | [src: Sect. 6, Eq. 15] |
 | Early | 66.66 ± 0.60 | SPT-3G D1 TT/TE/EE + lensing | Camphuis et al. 2025, arXiv:2506.20707 | [src: abstract] |
@@ -58,6 +61,8 @@ The table of Gaussian differences that stood here was computed by this skill and
 
 Significances the papers themselves print, all in the one parameter H0 and without a named metric beyond "statistical significance" or "tension": 5.0σ for SH0ES 2022 against Planck, computed as 0.176 ± 0.035 mag in 5 log H0 (arXiv:2112.04510) [sec: h0]; for H0DN, 7.1σ against the flat-ΛCDM CMB value 67.24 ± 0.35 (Planck + SPT + ACT, Eq. 54 of the first version of arXiv:2506.20707) and 5.0σ against DESI DR2 BAO + BBN, 68.51 ± 0.58 (arXiv:2510.23823) [src: abstract, Sect. IV]; for SPT, against SH0ES taken as 73.17 ± 0.86: 6.2σ from SPT-3G D1 alone, 6.4σ from CMB-SPA, 4.9σ from the SPT TE/EE spectra alone (66.1 ± 1.2) (arXiv:2506.20707) [src: Sect. VII.2.2]; 4.5σ between DESI + BBN and SH0ES "independent of the CMB", which still assumes standard pre-recombination physics for r_d (arXiv:2503.14738) [src: Sect. VI].
 
+Without the ladder or without supernovae (TDCOSMO Collaboration 2026, arXiv:2610.14881): combining TDCOSMO-2026 with other independent late-universe probes of 5% precision or better, a "no-SN" combination (the DES-Dovekie Ω_m prior replaced by DESI BAO) is 3.7σ from Planck, and a combination with no distance ladder at all is 2.7σ from Planck [src: abstract]; the latter is TDCOSMO-2026 + SLACS + SL2S with megamasers and globular-cluster ages, and every one of the five leave-one-method-out combinations is at 2.7σ or more [src: Sect. IV.2]. In the inverse ladder, DES-Dovekie supernovae alone give an H0 3.1σ above the CMB-calibrated ΛCDM prediction and 1.0σ from SH0ES, and with the legacy low-redshift supernovae 4.7σ below SH0ES; the drop between the two is reached by 1.24% of 10⁴ ΛCDM mocks, which the authors read as a systematic tension between the DES and legacy samples (arXiv:2610.23657) [src: abstract].
+
 The H0DN paper adopts 67.24 ± 0.35 for Planck + SPT + ACT (arXiv:2510.23823) [src: Sect. IV], the value of the first arXiv version of the CMB-SPA paper; the current version of arXiv:2506.20707 reads 67.19 ± 0.38 [src: abstract]. The 7.1σ of H0DN is computed against the first.
 
 ### 1.3 What moved it and when
@@ -70,9 +75,12 @@ The H0DN paper adopts 67.24 ± 0.35 for Planck + SPT + ACT (arXiv:2510.23823) [s
 | 2025 | SH0ES + JWST Cepheids in 19 hosts + 35 TRGB | 73.18 ± 0.88; "~6σ" | arXiv:2509.01667 | [src: abstract] |
 | 2025 | SPT-3G D1 and ACT DR6: ground-based CMB as tight as Planck and lower in H0 | early endpoint moves down and tightens: 67.4 ± 0.5 (Planck 2018, arXiv:1807.06209) to 67.19 ± 0.38 (CMB-SPA) | arXiv:2506.20707, arXiv:2503.14452 | [src: abstract of arXiv:1807.06209 and of arXiv:2506.20707] |
 | 2025 | DESI DR2 BAO + BBN | 4.5σ from SH0ES with no CMB anisotropy data | arXiv:2503.14738 | [src: Sect. VI] |
-| 2025 | TDCOSMO with the mass-sheet degeneracy free | lensing no longer sides with the ladder at high precision: 71.6 (+3.9/−3.3) | arXiv:2506.03023 | [src: abstract] |
+| 2025 | TDCOSMO with the mass-sheet degeneracy free | lensing no longer sides with the ladder at high precision: 71.6 (+3.9/−3.3) (superseded, Sect. 12.1) | arXiv:2506.03023 | [src: abstract] |
 | 2025 | H0DN community combination | 73.50 ± 0.81, the highest quoted significance (7.1σ) | arXiv:2510.23823 | [src: Sect. IV] |
 | 2026 | Statistical reanalyses of the SH0ES likelihood | 70.6 ± 1.0 with volume priors and no selection term; SH0ES calibration recovered within 0.5σ once Milky Way selection is modelled | Högås & Mörtsell 2026, arXiv:2601.22215; Stiskalek et al. 2026, arXiv:2603.09880 | [src: abstract of each] |
+| 2026 | GWTC-5.0 sirens | 71.7 (+9.4/−7.5), compatible with both sides | arXiv:2605.27227 | [src: abstract] |
+| Oct 2026 | TDCOSMO-2026, 11 lenses | 71.1 (+2.4/−2.3); the late-universe tension with Planck survives at 3.7σ without supernovae and at 2.7σ without the ladder | arXiv:2610.14781; arXiv:2610.14881 | [src: abstract of each] |
+| Oct 2026 | Inverse ladder split by supernova sample | 76.25 ± 2.87 (DES only) against 67.98 ± 0.69 (DES + legacy); late-time solutions "are thus viable with the homogeneous DES catalogue, but not with the legacy SNIa as published" | arXiv:2610.23657 | [src: abstract] |
 
 The SH0ES central value moved little between 2022 (73.04 ± 1.04, arXiv:2112.04510) and 2025 (73.18 ± 0.88, arXiv:2509.01667) [src: abstract of each] while its error shrank; the printed significance grew from "5-sigma" (arXiv:2112.04510) to 7.1σ (H0DN, arXiv:2510.23823) [src: abstract of each] with the smaller local error and the tighter, lower CMB endpoint.
 
@@ -105,6 +113,7 @@ The two columns of Gaussian differences against fixed CMB endpoints that stood i
 | DES Y6 cosmic shear, TATT | 0.783 (+0.019/−0.015) | same metric: 2.3σ in S8, 1.7σ full space (p = 0.09); suspiciousness 1.4σ | arXiv:2602.10065 | [src: abstract (S8); Sect. VI.2.1] |
 | DES Y6 3×2pt | 0.789 ± 0.012 | parameter shift against Planck + ACT + SPT primary: 2.6σ in S8, 2.2σ in S8–Ω_m, 1.8σ full space (1.5σ in Y3); 1.0σ full space against Planck 2018 alone | DES Collaboration 2026, arXiv:2601.14559 | [src: Sect. V.2, Table 4] |
 | HSC Y3 shear, DESI clustering redshifts | 0.804 (+0.019/−0.018) | "towards Planck" | Choppin de Janvry et al. 2025, arXiv:2511.18134 | [src: abstract] |
+| HSC Y3 photometric 3×2pt (one shape catalogue, pseudo-C_ℓ) | 68% interval 0.76 ≤ S8 ≤ 0.81 | none printed; consistent with the HSC Y3 shear analyses, about 25% tighter | Hamana et al. 2026, arXiv:2608.05530 | [src: abstract] |
 | DES Y3 shear, external IA and baryon calibration | 0.832 (+0.013/−0.017) | posterior moves up by 1.5σ | Bigwood et al. 2025, arXiv:2512.04209 | [src: abstract] |
 | unWISE × ACT DR6 + Planck lensing | 0.810 ± 0.015 | consistent with the primary CMB | Farren et al. 2023, arXiv:2309.05659 | [src: abstract] |
 | DESI LRG × ACT DR6 + Planck PR4 lensing | 0.775 (+0.019/−0.022) | consistent with Planck primary CMB "at the ≃ 1.6–2.2σ level", amplitude lower | Sailer et al. 2024, arXiv:2407.04607 | [src: abstract] |
@@ -113,6 +122,7 @@ The two columns of Gaussian differences against fixed CMB endpoints that stood i
 | SPT clusters + DES and HST lensing | 0.795 ± 0.029 | 1.1σ from Planck 2018 | Bocquet et al. 2024, arXiv:2401.02075 | [src: abstract] |
 | Planck PSZ2 + DES shear + Chandra | 0.791 (+0.023/−0.021) | 1.6σ from the CMB; 2.9σ from eROSITA clusters | Aymerich et al. 2025, arXiv:2509.02068 | [src: abstract] |
 | KiDS-1000 AMICO clusters | 0.74 ± 0.03 | 2.8σ from Planck | Lesci et al. 2025, arXiv:2507.14285 | [src: abstract] |
+| KiDS-1000 AMICO cluster clustering (9049 clusters, 3D correlation multipoles) | 0.77 (+0.10/−0.08); Ω_m = 0.24 ± 0.02 | S8 in 1σ agreement with the AMICO counts; "a 2σ tension is reported in Ω_m" with Planck 2018 and AMICO KiDS-DR3 w(θ) | Romanello et al. 2026, arXiv:2610.31767 | [src: abstract (values); Sect. 5 (tension)] |
 
 Further S8 values are held, with their identifiers and places, by the siblings: DES Y3 redMaPPer and XXL clusters (`cosmo-clusters`); DES Y3 shear × tSZ and DESI DR1 quasars × Planck lensing (`cosmo-cmb-lss-cross-correlations`); third-order shear from KiDS-Legacy, DES Y3 and HSC Y3 (`cosmo-beyond-two-point`, `cosmo-weak-lensing`); DESI DR1 full shape against BOSS EFT analyses (`cosmo-galaxy-clustering`); Tully–Fisher and SN velocities (`cosmo-peculiar-velocities`).
 
@@ -176,8 +186,10 @@ Rows without a place [sec: cmb, `results.md` §5 and `open-questions.md` §1].
 | 0.090 ± 0.012 | DESI BAO + high-ℓ CMB + CMB lensing, no low-ℓ EE | Sailer et al. 2025, arXiv:2504.16932 [src: abstract] |
 | 0.091 ± 0.011 | CMB without low-ℓ EE and lensing constraints, Σm_ν = 0.06 eV | Jhaveri et al. 2025, arXiv:2504.21813 [src: abstract] |
 | 0.0552 (+0.0019/−0.0026 stat) (+0.0075/−0.0049 sys) | Planck without low-ℓ EE + reionisation history from Lyα forest and damping wings; leaves 2.4σ with DESI DR2 BAO | Kageura et al. 2026, arXiv:2601.09644 [src: abstract] |
+| total τ ~ 0.073 with a dark-ages contribution Δτ_burst ~ 0.012 (0.001 < Δτ_burst < 0.022 at 95%), preferred at about 2–2.5σ, for PR3 and PR4 likelihoods alike | a redshift-localised early reionisation burst (z ~ 45 to ~ 165 depending on the high-ℓ likelihood), which adds less to low-ℓ polarisation than late sources | Weiner et al. 2026, arXiv:2610.12552 [src: abstract] |
+| τ ≃ 0.08–0.10 "compatible with the data" | Planck low-ℓ EE, BB, EB with ALP birefringence much larger at reionisation than at recombination, energy injected at 10 ≲ z ≲ 100 | Sirletti, Namikawa & Sherwin 2026, arXiv:2610.29764 [src: abstract] |
 
-Size: the BAO-preferred value is in "≃ 3–5σ tension with Planck low-ℓ polarization data when taken at face value": about 5σ at face value, about 3.8σ "when accounting for the prior width", one parameter (arXiv:2504.16932) [src: abstract, note 72]. Every Planck reprocessing from 2018 to 2023 lies in 0.051–0.063 [sec: cmb], with uncertainties that depend on the likelihood and data combination (0.0086 for lowE alone, 0.0073 with TT,TE,EE and lensing, 0.006 for PR4) [src: Eq. 2 and Table 2 of arXiv:1807.06209; Eq. 14 of arXiv:2309.10034]. The τ question is not an anomaly in a measurement; it is the statement that one parameter, measured by one instrument, would absorb the CMB–BAO mismatch if it were wrong; the authors call it a "single-point failure" (arXiv:2504.16932) [src: abstract].
+Size: the BAO-preferred value is in "≃ 3–5σ tension with Planck low-ℓ polarization data when taken at face value": about 5σ at face value, about 3.8σ "when accounting for the prior width", one parameter (arXiv:2504.16932) [src: abstract, note 72]. Every Planck reprocessing from 2018 to 2023 lies in 0.051–0.063 [sec: cmb], with uncertainties that depend on the likelihood and data combination (0.0086 for lowE alone, 0.0073 with TT,TE,EE and lensing, 0.006 for PR4) [src: Eq. 2 and Table 2 of arXiv:1807.06209; Eq. 14 of arXiv:2309.10034]. The τ question is not an anomaly in a measurement; it is the statement that one parameter, measured by one instrument, would absorb the CMB–BAO mismatch if it were wrong; the authors call it a "single-point failure" (arXiv:2504.16932) [src: abstract]. Two 2026 models keep the Planck low-ℓ data and still allow a higher τ, by hiding part of it from the EE reionisation bump: an early burst of ionisation (arXiv:2610.12552) and a reionisation-era birefringence rotation that suppresses EE (arXiv:2610.29764) [src: abstract of each]; both are model fits, not measurements of τ.
 
 ## 4. CMB-DESI discrepancy within LCDM
 <!-- key: cmb-desi-discrepancy-within-lcdm -->
@@ -225,6 +237,7 @@ A model preference, not a tension: Δχ²_MAP of w0waCDM against ΛCDM converted
 | DES Y6 + DESI DR2 BAO + primary CMB | 3.0σ; 2.6σ without SNe; 3.4σ with Σm_ν free (through the Σm_ν–wa degeneracy) | current | arXiv:2605.27221 | [src: abstract] |
 | DESI DR1 P + B + DR2 BAO + CMB; + DES-Dovekie | 2.8σ; 3.1σ, "driven primarily by the CMB"; DESI + DES-Dovekie without CMB 1.6σ | current | Forero-Sánchez et al. 2026, arXiv:2606.23936 | [src] |
 | DESI DR1 P + B + DR2 BAO, DESI only | within 1σ of Λ | current | arXiv:2606.23936 | [src] |
+| TDCOSMO-2026 + SLACS + SL2S + DESI DR2 + DES-Dovekie | w = −1 disfavoured at 2.3–2.5σ in wCDM, w0waCDM and w_φCDM; w0 = −0.85 (+0.07/−0.06), w_a = −0.48 (+0.46/−0.44) in w0waCDM | current | arXiv:2610.14781 | [src: abstract] |
 
 Pivot: for DESI + CMB + DESY5, w_p = −0.954 ± 0.024 at z_p = 0.31; the signal is a slope, not an offset [sec: de], and "allowing w(z) to vary does not help resolve the so-called Hubble tension": the w0waCDM H0 is below the Planck ΛCDM value (arXiv:2503.14738) [src: Sect. VII.1].
 
@@ -243,8 +256,10 @@ ln B = ln Z(w0wa) − ln Z(Λ); positive favours w0wa.
 | DESI DR2 + CMB + DES-Dovekie | −0.30 ± 0.19 | arXiv:2511.10631 | [src: Table 1] |
 | DESI DR2 + CMB + DES-Dovekie | odds "approximately 5:1" in favour of w0waCDM, stated as equivalent to the 3.2σ | arXiv:2511.07517 | [src: abstract] |
 | Unite + CMB + BAO | "only weak preference" | arXiv:2609.05053 | [src: abstract] |
+| DESI DR2 + Planck 2018 (no CMB lensing), uniform prior: BAO + CMB; + DESY5; + DES-Dovekie; + Union3; + Pantheon+ | −0.06 ± 0.18; 3.65 ± 0.21; 0.33 ± 0.21; 2.34 ± 0.19; −1.05 ± 0.21 | Layton, Hall & Robertson 2026, arXiv:2610.26493 | [src: Sect. 4.2, Table 4] |
+| Same combinations, Jeffreys prior on the parameters | −11.54 ± 0.18; −5.52 ± 0.21; −9.18 ± 0.21; −10.68 ± 0.19; −10.57 ± 0.21: "all combinations strongly support ΛCDM" | arXiv:2610.26493 | [src: Sect. 4.2, Table 4] |
 
-The two evidence analyses differ for every supernova sample (DESY5: 4.88 against 3.32; Union3: 3.03 against 1.37; Pantheon+: −0.66 against −1.70; DES-Dovekie: odds of about 5:1 for w0wa in arXiv:2511.07517 against −0.30 in arXiv:2511.10631). Both use PolyChord and DESI's w0, wa priors; DESI substitutes H0 for θ_MC as a sampled parameter (arXiv:2503.14743) [src: App. A], and Ong et al. use Planck 2018 with CamSpec and convert ln B to an upper bound on the significance through B ≤ −1/(e p ln p) and σ = Φ⁻¹(1 − p/2) (arXiv:2511.10631) [src: Sect. II, Eqs. 1, 2]. Neither paper states the cause of the difference, and this file does not reconcile it. Quote the paper, not "the Bayes factor". DESI's own caution: a wider prior on w0, wa favours ΛCDM, but reversing the DESY5 ranking would need a prior range more than ten times wider in both parameters (arXiv:2503.14743) [src: App. A].
+The two evidence analyses differ for every supernova sample (DESY5: 4.88 against 3.32; Union3: 3.03 against 1.37; Pantheon+: −0.66 against −1.70; DES-Dovekie: odds of about 5:1 for w0wa in arXiv:2511.07517 against −0.30 in arXiv:2511.10631). Both use PolyChord and DESI's w0, wa priors; DESI substitutes H0 for θ_MC as a sampled parameter (arXiv:2503.14743) [src: App. A], and Ong et al. use Planck 2018 with CamSpec and convert ln B to an upper bound on the significance through B ≤ −1/(e p ln p) and σ = Φ⁻¹(1 − p/2) (arXiv:2511.10631) [src: Sect. II, Eqs. 1, 2]. Neither paper states the cause of the difference, and this file does not reconcile it. Quote the paper, not "the Bayes factor". DESI's own caution: a wider prior on w0, wa favours ΛCDM, but reversing the DESY5 ranking would need a prior range more than ten times wider in both parameters (arXiv:2503.14743) [src: App. A]. A Jeffreys prior does reverse it: the w0, wa posteriors barely move, but the larger Occam penalty turns every combination to ΛCDM; the authors state that this does not show evolving dark energy excluded, only that the evidence "should not be interpreted independently of the prior specification" (arXiv:2610.26493) [src: abstract; Sect. 4.2].
 
 Where the Bayesian preference comes from according to arXiv:2511.10631: a 2.95 ± 0.04σ tension between DESI DR2 and DES-SN5YR within ΛCDM, above the authors' 2.88σ look-elsewhere threshold and the only pair with a negative evidence ratio (log R ≈ −0.17) [src: abstract, Sect. III]; reduced to 1.96 ± 0.04σ with DES-Dovekie [sec: stat].
 
@@ -260,6 +275,7 @@ Where the Bayesian preference comes from according to arXiv:2511.10631: a 2.95 �
 | May 2026 | DES Y6 all probes + DESI DR2 + CMB | 3.0σ | arXiv:2605.27221 | [src: abstract] |
 | Jun 2026 | DESI DR1 bispectrum | weakens the preference | arXiv:2606.23936 | [sec: de] |
 | Sep 2026 | Unite | 3.3σ | arXiv:2609.05053 | [src: abstract] |
+| Oct 2026 | Jeffreys prior on the evidence | ln B negative for every supernova sample | arXiv:2610.26493 | [src: Table 4] |
 
 The spread between supernova samples has narrowed, from 2.8σ to 4.2σ in March 2025 (arXiv:2503.14738) to 3.2σ (Pantheon+), 3.4σ (Union3.1) and 3.4σ (DES-Dovekie) after the recalibrations, "a significantly improved consistency between SN analyses" (arXiv:2601.19424) [src: abstract of each].
 
@@ -278,6 +294,7 @@ Rows without a place [sec: nu, `results.md` §1.4 and `open-questions.md` §1.1]
 | Effective mass with two lensing amplitudes free | −0.018 (+0.085/−0.089) eV [src: abstract] | Planck, Planck + ACT lensing, DESI | Cozzumbo et al. 2025, arXiv:2511.01967 |
 | Tension with τ fixed at 0.067 or 0.074 (2σ or 3σ above 0.054 ± 0.007) | 2.3σ or 1.7σ [src: Sect. V.2.1] | DESI DR2 BAO + CMB | arXiv:2503.14744 |
 | Effective mass with a τ prior 0.06 or 0.09 replacing Planck low-ℓ | −0.08 (+0.05/−0.06) eV, about 2.4σ; 0.01 ± 0.06 eV, about 0.9σ [src: Sect. III.1] | DESI BAO + high-ℓ CMB + lensing | arXiv:2504.16932 |
+| Mass split into a geometry channel (H(z) for distances) and a growth channel (H(z) for perturbations), both allowed negative | Σm_ν^geo = −0.07 ± 0.10 eV, Σm_ν^growth = −0.13 (+0.10/−0.12) eV (68%); their difference, a null test of ΛCDM, passed at 0.4σ [src: abstract] | Planck primary CMB + Planck, ACT and SPT lensing + DESI BAO | Ge et al. 2026, arXiv:2610.20977 |
 
 The tension vanishes in w0waCDM, where the mass returns to 0.06 (+0.15/−0.10) eV (arXiv:2407.10965), with free lensing amplitudes, or with τ ≈ 0.09 (arXiv:2504.16932, arXiv:2504.21813) [sec: nu, de]. What moved it: DESI DR1 (2024) created it; DR2 kept it at 3σ; no data release has removed it. It is not an independent anomaly (Section 4).
 
@@ -401,7 +418,7 @@ Reading. The Planck-alone closed-universe preference (Di Valentino, Melchiorri &
 
 | Tension | Peak quoted size | When | Size now | What moved it |
 |---|---|---|---|---|
-| H0 | 7.1σ (arXiv:2510.23823 [src: abstract]) | 2025 | 4.5σ (arXiv:2503.14738 [src: Sect. VI]) to 7.1σ; CCHP "consistent with" ΛCDM (arXiv:2408.06153 [src: abstract]) | smaller local errors; lower, tighter CMB endpoint; no route has closed the gap |
+| H0 | 7.1σ (arXiv:2510.23823 [src: abstract]) | 2025 | 4.5σ (arXiv:2503.14738 [src: Sect. VI]) to 7.1σ; CCHP "consistent with" ΛCDM (arXiv:2408.06153 [src: abstract]); 2.7σ with no ladder (arXiv:2610.14881 [src: abstract]) | smaller local errors; lower, tighter CMB endpoint; no route has closed the gap |
 | S8, cosmic shear | about 3σ | 2020–2021 | 0.73σ (arXiv:2503.19441) to 2.6σ (arXiv:2601.14559) [src: abstract of each] | redshift calibration (KiDS, HSC); Planck PR4 |
 | S8, CMB-lensing tomography | earlier DESI LRG × Planck results, more discrepant | 2021 | 0.775 (+0.019/−0.022) (arXiv:2407.04607 [src: abstract]) | neutrino consistency, projection effects, lensing normalisation |
 | S8, Planck clusters | 2015 analyses (`cosmo-clusters`) | 2015 | 1.6σ (arXiv:2509.02068 [src: abstract]) | lensing mass calibration |
@@ -416,6 +433,13 @@ Reading. The Planck-alone closed-universe preference (Di Valentino, Melchiorri &
 | JWST massive candidates | "at the very edge" of the ΛCDM limit | 2022 | no tension in spectroscopic samples | spectroscopy; one grism redshift revised |
 
 Sizes and dates in this table are from the sections above, each with its paper and place.
+
+### 12.1 Superseded values
+<!-- key: superseded-values -->
+
+| Quantity | Superseded value | Data | Citation | Superseded by | Flag |
+|---|---|---|---|---|---|
+| H0 from time-delay lenses (Sect. 1.1) | 71.6 (+3.9/−3.3), mass-sheet degeneracy free | TDCOSMO-2025, 8 lensed quasars | TDCOSMO Collaboration 2025, arXiv:2506.03023 | TDCOSMO-2026, 71.1 (+2.4/−2.3), 11 lenses (arXiv:2610.14781), on 2026-10-26 | [src: abstract of each] |
 
 ## Not verified
 <!-- key: not-verified -->

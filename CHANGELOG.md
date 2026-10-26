@@ -26,8 +26,18 @@ balanced across domains and brought under a mechanical rule for numbers.
   owner's research; content that was specific to the owner's work moved to
   the owner's personal layer.
 - Light literature refresh to 2026-10-26: one date-sorted search per
-  section of every `results.md` since its snapshot; dossiers keep their own
-  snapshot dates.
+  section of every `results.md` since its snapshot, and citation checks on
+  the papers behind the headline values; about 95 paper additions over the 28
+  skills (some papers enter several), each run gated with statements
+  compared at source. Headline
+  values that moved: H0 from time delays (TDCOSMO-2026, arXiv:2610.14781,
+  superseding TDCOSMO-2025) and from standard sirens (GWTC-5.0,
+  arXiv:2605.27227, superseding GWTC-4.0); the scale independence of
+  "lensing is low" (now scale-dependent with DECADE, arXiv:2610.23828); the
+  LVK sub-solar PBH limit (O4, arXiv:2610.19329). The other reference files
+  and the dossiers keep their own snapshot dates.
+- `releases/1.0.0.tsv`: the section keys added, changed, moved or retired
+  since 0.3.0, for `sync_layers.py`.
 
 ### The numbers rule
 

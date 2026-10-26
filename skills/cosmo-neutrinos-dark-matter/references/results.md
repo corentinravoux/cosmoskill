@@ -1,7 +1,7 @@
 # Results — neutrino mass, light relics and dark-matter properties from cosmological data
 
 Scope: current headline constraints with dataset, model and provenance, then the history of each key number.
-Snapshot: 2026-10-16
+Snapshot: 2026-10-26
 
 Flags: `[src]` read in the cited paper this session; `[sec]` taken from a named secondary source; `[der]` derived here, derivation stated.
 
@@ -23,7 +23,9 @@ All Σm_ν upper limits are 95% credible or confidence limits unless stated. "CM
 | KATRIN status, January 2026 review | "about to reach its target sensitivity of the neutrino mass of less than 300 meV"; next a keV sterile-neutrino search, then KATRIN++ with an atomic tritium source | Drexlin & Weinheimer 2026, arXiv:2601.00248 abstract | [src] |
 | JUNO reactor oscillation parameters, 207.2 live days, 8,294 inverse-beta-decay candidates, mean baseline 52.5 km | Δm²_31 = +2.509 (+0.027/−0.025) × 10⁻³ eV² (normal) or −2.482 (+0.025/−0.026) × 10⁻³ eV² (inverted); sin²θ_12 = 0.3036 ± 0.0064; Δm²_21 = (7.388 ± 0.078) × 10⁻⁵ eV² | JUNO Collaboration 2026, arXiv:2609.37895 abstract | [src] |
 | Mass ordering from JUNO + long-baseline accelerator Δm²_31 | normal ordering favoured at ≥ 2.1σ (one-sided) for all CP phases; Bayes factor 10.18 | arXiv:2609.37895 abstract | [src] |
+| Mass ordering from Super-Kamiokande (pre-gadolinium) + IceCube-DeepCore + KM3NeT/ORCA-6 atmospheric data (external combination, not a collaboration result) | normal ordering preferred with Δχ² = 11.0; inverted ordering excluded at 99.95% CL (3.3σ) after calibration with pseudo-experiments; Δχ² = 15.1 (3.9σ) adding 207 days of JUNO data; Δm²_31 = 2.44 (+0.06/−0.04) × 10⁻³ eV² | Jin et al. 2026, arXiv:2610.12208 | [src: abstract] |
 | Neutrinoless double beta decay, ¹³⁶Xe, complete KamLAND-Zen data (2.1 ton yr) | T_1/2 > 3.8 × 10²⁶ yr (90% CL); effective Majorana mass m_ββ < 28–122 meV depending on the nuclear matrix element | Abe et al. 2024, arXiv:2406.11438 abstract | [src] |
+| Neutrinoless double beta decay, ⁷⁶Ge, LEGEND-200 first year (142.5 kg of detectors), conference proceedings | T_1/2 > 0.5 × 10²⁶ yr (90% CL); GERDA + MAJORANA Demonstrator + LEGEND-200 jointly T_1/2 > 1.9 × 10²⁶ yr (90% CL); no m_ββ is quoted in the abstract | Saleh 2026, arXiv:2603.12884 | [src: abstract] |
 | Lowest m_ββ in the inverted ordering, the target for next-generation searches | 18 meV | arXiv:2503.14454 Sect. 6.1.1 | [sec] |
 
 The three laboratory observables are different combinations of the masses: oscillations give splittings, KATRIN an incoherent sum weighted by electron-flavour mixing, double beta decay a coherent sum that exists only for Majorana neutrinos. None of them is Σm_ν. The KATRIN best-fit m_ν² is itself negative; this is a statistical statement about an endpoint fit, unrelated to the cosmological "negative mass" discussed below.
@@ -94,6 +96,7 @@ Independent analyses in extended dark-energy models:
 | Same parameter | DESI DR2 BAO + CMB | Σm_ν,eff = −0.101 (+0.047/−0.056) eV; σ = 0.053 eV, 2.6 times the baseline Bayesian σ | 3σ with the oscillation lower limit | arXiv:2503.14744 | [src: Sect. V.2; abstract for 3σ] |
 | Same, w0waCDM and mirage dark energy | Planck + ACT + DESI DR1 | Σm_ν,eff = 0.06 (+0.15/−0.10) eV and 0.04 (+0.15/−0.11) eV | none | arXiv:2407.10965 | [src: abstract] |
 | Effective mass plus two lensing parameters (peak smoothing and lensing-potential amplitude) | Planck, Planck + ACT lensing, DESI | Σm̃_ν = −0.018 (+0.085/−0.089) eV | none | Cozzumbo et al. 2025, arXiv:2511.01967 | [src: abstract] |
+| Σm_ν split into a geometry parameter (sets H(z) for distances) and a growth parameter (sets H(z) for perturbations), both extended to negative values | Planck primary CMB + Planck, ACT and SPT lensing + DESI BAO | Σm_ν^geo = −0.07 ± 0.10 eV; Σm_ν^growth = −0.13 (+0.10/−0.12) eV; their difference, a null test of ΛCDM, passed at 0.4σ | — | Ge et al. 2026, arXiv:2610.20977 | [src: abstract] |
 | Range across dataset combinations and tension metrics | CMB + DESI DR1 + background probes | — | 2.5σ to 5σ | Jiang et al. 2024, arXiv:2407.18047 | [src: abstract] |
 
 ### 1.5 The optical-depth route
@@ -159,6 +162,7 @@ The reference value used by DESI, ACT and SPT is 3.044 (arXiv:2503.14744, arXiv:
 | DESI DR2 BAO + CMB (Planck CamSpec + lensing) | 3.23 ± 0.18 (68%); 3.23 (+0.35/−0.34) (95%) | arXiv:2503.14744 | [src: abstract; Sect. IV.2; table in Sect. IV.3] |
 | DESI DR2 BAO + CMB, Σm_ν free | 3.16 ± 0.17, Σm_ν < 0.0741 eV; correlation ρ = 0.18 | arXiv:2503.14744 | [src: Sect. IV.2; table in Sect. IV.3] |
 | DESI DR2 BAO + CMB + DESY5, w0waCDM | 3.01 ± 0.19 | arXiv:2503.14744 Table 2 | [src] |
+| Planck 2018 + DESI DR2 BAO + DESI DR1 Lyα P1D (external analysis) | N_eff < 3.41 (95%); no significant evidence for extra radiation | Silva et al. 2026, arXiv:2609.22581 | [src: abstract] |
 | Self-interacting dark radiation | N_idr < 0.134 (95%) | arXiv:2503.14454 abstract | [src] |
 | Self-interacting dark radiation with running and running-of-running free; Planck + ACT DR6 + DESI DR2 + uncalibrated Pantheon+ | ΔN_eff < 0.58 (95%); < 0.68 with dark-radiation–matter decoupling | Garny, Niedermann & Sloth 2026, arXiv:2604.26541 | [src: abstract] |
 
@@ -302,6 +306,7 @@ The CMB limits and the satellite limits on the same cross section differ by orde
 | Relaxed groups, Jeans analysis | σ/m = 0.5 ± 0.2 cm²/g | Sagunski et al. 2020, arXiv:2006.12515 | [src: abstract] |
 | Relaxed clusters, Jeans analysis | σ/m = 0.19 ± 0.09 cm²/g; < 0.35 cm²/g (95%) | arXiv:2006.12515 | [src: abstract] |
 | 8 clusters, strong lensing, mean relative velocity 1458 (+80/−81) km/s | σ/m = 0.082 (+0.027/−0.021) cm²/g; < 0.13 cm²/g (95%) | Andrade et al. 2020, arXiv:2012.06611 | [src: abstract] |
+| 29 quadruply imaged quasars (JWST), population of core-collapsed haloes and subhaloes, 10⁶–10^10.7 M⊙ | strong preference for core-collapsed haloes; Bayes factors disfavouring CDM relative to SIDM from 8:1 to 24:1, depending on the SIDM subhalo abundance and the inner structure of collapsed haloes; without core collapse the data need both more globular clusters than expected and more subhaloes than N-body simulations predict | Gilman et al. 2026, arXiv:2609.35974 | [src: abstract] |
 | Dwarfs to clusters, combined fit | about 2 cm²/g on galaxy scales falling to about 0.1 cm²/g on cluster scales | Kaplinghat, Tulin & Yu 2015, arXiv:1508.03339 | [src: abstract] |
 | SPARC rotation curves, isothermal Jeans model with core collapse | L-shaped degeneracy: σ0 ≈ 2 cm²/g with ω ≳ 500 km/s, or σ0 ≈ 100 cm²/g with ω ≈ 60 km/s; best fit under the core-growth reading σ0 ≃ 5 cm²/g, ω ≃ 250 km/s; about 1/6 of galaxies admit both a core-growth and a core-collapse solution | Jia et al. 2026, arXiv:2601.17118 | [src: abstract] |
 
@@ -319,8 +324,10 @@ Reading rule: a velocity-independent cross section of order 1 cm²/g, the value 
 | Decaying dark matter as a way to relax Σm_ν | background data alone allow Σm_ν of order 1 eV; full Planck likelihood with lensing restores Σm_ν ≲ 0.079 eV | BAO + SNe + CMB | Montandon et al. 2026, arXiv:2603.03284 | [src: abstract] |
 | Self-interacting neutrinos, strongly interacting mode (2019) | H0 = 72.3 ± 1.4, σ8 = 0.786 ± 0.020, N_eff = 4.02 ± 0.29 | Planck 2015-era data | Kreisch, Cyr-Racine & Doré 2019, arXiv:1902.00534 | [src: abstract] |
 | Neutrino self-interactions, 2025 | no evidence | ACT DR6 + Planck | arXiv:2503.14454 | [src] |
+| Neutrino self-interactions mediated by a heavy particle, 2026 | strongly interacting mode disfavoured, most strongly (odds 5:100000) with DESI DR1 full shape + BAO + CMB-SPA; CMB-SPA disfavours it more than Planck alone; with the Lyα P1D a sharp intermediate mode near G_eff ≃ 10⁻³ MeV⁻² is not penalised against the standard-like mode | DESI DR1 full shape, BAO, Lyα P1D; CMB-SPA | Noriega et al. 2026, arXiv:2610.26654 | [src: abstract] |
 | Wess–Zumino (stepped) dark radiation; atomic dark matter with coupled dark radiation | ACT DR6 closes most of the parameter space that had allowed higher H0 | ACT DR6 | Cvetko, Joseph & Marques-Tavares 2025, arXiv:2512.19633 | [src] |
 | Light sterile neutrino, fully thermalised | strongly disfavoured without a local H0 prior; partially populated (Dodelson–Widrow-like or cooler) cases remain viable | Planck + DESI DR2 BAO + SNe | Ladeira et al. 2026, arXiv:2606.21518 | [src] |
+| Thermal sterile relic at a different temperature from the standard neutrinos | m_s^eff < 0.061 eV; no evidence for a sterile component | Planck 2018 + DESI DR2 BAO + DESI DR1 Lyα P1D | Silva et al. 2026, arXiv:2609.22581 | [src: abstract] |
 
 ## 8. History of the key numbers
 <!-- key: history-of-the-key-numbers -->
@@ -372,10 +379,10 @@ The limit fell between 2018 and 2025 (0.12 eV, arXiv:1807.06209, abstract; 0.064
 <!-- key: not-verified -->
 
 - The first JUNO oscillation paper was seen only through citing abstracts; its arXiv ID was not retrieved. The paper on 207.2 live days (arXiv:2609.37895, abstract) supersedes it.
-- LEGEND-200 first results on ⁷⁶Ge exist as 2025 conference proceedings found in a search; they were not read and no number is quoted.
-- No KATRIN neutrino-mass result later than the 259-day analysis (arXiv:2406.13516, abstract) was found in an arXiv title search from June 2025; whether the final-data-set result has appeared elsewhere was not checked.
+- LEGEND-200 first results on ⁷⁶Ge were read only in 2026 conference proceedings (arXiv:2603.12884, abstract); no collaboration journal paper was found in an arXiv title search on 2026-10-26.
+- No KATRIN neutrino-mass result later than the 259-day analysis (arXiv:2406.13516, abstract) was found in an arXiv title search from June 2025; the search was repeated on 2026-10-26 and still found none; whether the final-data-set result has appeared outside arXiv was not checked.
 - The hub file `observational-cosmology/references/field-state-2026.md` quotes a positive Σm_ν in w0waCDM from a joint analysis with DES data; that paper was not read here and is not cited.
-- No DESI Collaboration warm- or fuzzy-dark-matter limit from the DR1 or DR2 P1D was found in the searches run this session; absence of a result is not established.
+- No DESI Collaboration warm- or fuzzy-dark-matter limit from the DR1 or DR2 P1D was found in the searches run this session, nor among the papers citing the DESI DR2 neutrino paper on 2026-10-26; an external DR1 P1D analysis of light relics exists (arXiv:2609.22581). Absence of a result is not established.
 - The Σm_ν limit from the eBOSS final cosmology paper was not found in its abstract and is omitted.
 - Project 8 and KATRIN++ sensitivities are quoted only from secondary abstracts.
 - (2026-10-24.) The reading rule under the limits table gave a spread among the CMB + DESI rows that no paper states, and its lower end is not in arXiv:2503.14744, so the numbers were removed and the rule kept in words.

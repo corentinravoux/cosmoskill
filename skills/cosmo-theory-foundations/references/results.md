@@ -1,6 +1,6 @@
 # Theory foundations — quantified accuracy of the standard approximations
 
-Snapshot: 2026-10-15
+Snapshot: 2026-10-26
 
 Every number is the size of an approximation, a correction or a convention difference, with the range in which the cited paper states it. Flags: [src] read in the cited paper, [der] derived here with the derivation given. Cosmological parameter values belong to the sibling skills.
 
@@ -175,6 +175,8 @@ The sibling clustering skill does not list wide-angle terms among the BAO or RSD
 | Gaussian streaming model with PT inputs | s > 40 Mpc/h, b = 1.4–2.8 | 2% | arXiv:1105.4165, abstract |
 | Kaiser × damping templates against TNS | BAO scales | 1–2% on D_A, H; ~5% on f | Taruya, Nishimichi & Saito 2010, arXiv:1006.0699 |
 | First BOSS EFT analysis | BOSS DR12 | ln(10^10 A_s), Ω_m, H0 to 13%, 3.2%, 3.2% with fixed n_s and Ω_b/Ω_c | D'Amico et al. 2020, arXiv:1909.05271, abstract |
+| Two-loop EFT, redshift-space galaxy P(k) | k_max 0.2 → 0.34 h/Mpc, LRG sample at z = 0.5 | 49 free coefficients; "constraints on σ8 are not significantly enhanced by the inclusion of two-loop terms" | Philcox 2026, arXiv:2610.13867 [src: abstract] |
+| Shape template held fixed against shape parameters varied (emulated hybrid PT + N-body model), DESI DR1 LRG2 | α_⊥, α_∥, fσ8 | with a tight Planck prior the constraints differ "by less than a twentieth of their own uncertainties" | Song et al. 2026, arXiv:2610.21235 [src: abstract] |
 | Priors in Mpc/h against Mpc, Stage-IV synthetic data (**forecast**) | ΛCDM to w0waCDM | shifts from marginalisation fall "from several standard deviations to well within 1σ" | Pezzotta et al. 2026, arXiv:2610.08751 |
 
 A k_max is not a property of the theory alone: it depends on the tracer's bias and density, the redshift, the multipoles fitted and the nuisance priors.
@@ -223,4 +225,4 @@ What replaced what, so that a stale convention can be recognised.
 - The size of the difference between cb and total-matter σ8 from a Boltzmann code: not read in a paper.
 - The accuracy of θ_MC as an approximation of θ_* beyond the one Planck 2018 pair of values.
 - A remark of Planck 2018 on a systematic uncertainty, reported by the second pass of this build, could not be located again and is not used.
-- Accuracy of the Limber approximation for CMB lensing cross-correlations; not searched.
+- Accuracy of the Limber approximation for CMB lensing cross-correlations: searched on 2026-10-26, no paper quantifying it found beyond the non-Limber codes (arXiv:2609.01855).

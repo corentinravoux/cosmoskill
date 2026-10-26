@@ -3,7 +3,7 @@
 Scope: current headline measurements from SN Ia Hubble diagrams, alone and in
 combination, then the history of the key numbers so that superseded values can
 be recognised.
-Snapshot: 2026-10-13
+Snapshot: 2026-10-26
 
 Flags: `[src]` read in the cited paper this session (abstract unless a table
 or section is named); `[sec]` from a named secondary source; `[der]`
@@ -213,6 +213,7 @@ Detail belongs to `cosmo-distance-ladder-h0`. The SN-side numbers:
 | Corrected Pantheon+ (revised host-mass correction: 114 of 1701 rows changed, 52 of 277 Hubble-flow rows, no calibrators) | 73.264 ± 0.806 | Against a "H0 Distance Network" baseline of 73.499 ± 0.809 | Roy Choudhury 2026, arXiv:2607.24443 | `[src: abstract]` |
 | DES-Dovekie low-z (220 SNe at 0.025 <= z <= 0.151, tied through 196 overlaps) | 73.267 ± 0.828 | First ladder use of DES-Dovekie | arXiv:2607.24443 | `[src: abstract]` |
 | Two-population remodelling of Pantheon+ / SH0ES | 70.59 ± 1.15, or 71.45 ± 1.03 with equal priors | Contested; depends on assigning calibrators to a population | Wojtak & Hjorth 2025, arXiv:2506.22150 | `[src: abstract]` |
+| Inverse distance ladder, DES-Dovekie + DESI DR2 BAO with `r_d = 147.05 ± 0.30` Mpc, fourth-order cosmographic `H(a)` (not a ladder value) | 76.25 ± 2.87 with DES SNe only; 67.98 ± 0.69 with the legacy low-z SNe added | The 8.27 km/s/Mpc drop occurs in 1.24 % of 10^4 LCDM mocks; a free legacy offset gives `Delta M_legacy = 0.0646 ± 0.0391` mag and `H0 = 71.03 ± 1.99` | Nájera, Banik & Desmond 2026, arXiv:2610.23657 | `[src: abstract]` |
 | DES-Dovekie + CMB, flat LCDM (not a ladder value) | 67.29 ± 0.34 | CMB-driven; shown only to mark the contrast | arXiv:2511.07517 | `[src: Sect. 10.6, table]` |
 
 The 2025–2026 recalibration and host-mass corrections that moved the

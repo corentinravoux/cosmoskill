@@ -3,7 +3,7 @@
 Scope: the experiments and data releases that matter for primary CMB
 anisotropies, lensing and B-mode status — instrument, sky, depth, release,
 public location, status on the snapshot date and what comes next.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-26
 
 Flags: `[src]` read in the cited paper; `[doc: <page>, <date>]` read on an official page on that date;
 `[sec]` from a named secondary source; `[der]` derived here. Forecasts are
@@ -158,10 +158,12 @@ arXiv:2609.26938).
 | LAT | first celestial image (Mars) on 2025-02-22 | Simons Foundation press release of 2025-03-17 [src] |
 | SAT expansion | six SATs by 2027, 48,160 detectors at 93 and 145 GHz, survey to 2035 | SO Collaboration 2025, arXiv:2512.15833 [src: abstract] |
 | LAT upgrade | complete by 2028: doubled mapping speed with 30,000 new detectors; survey of about 60% of the sky | SO Collaboration 2025, arXiv:2503.00636 [src: abstract] |
+| LAT readout | 63,000 detectors in the LAT receiver; nearly 100,000 optically coupled bolometers deployed across the four telescopes; 81.4% of the LAT's optically coupled bolometers read out in an early phase of operation | Satterthwaite et al. 2026, arXiv:2609.39100 [src: abstract] |
+| Science operations | "completely online and conducting science operations" with four telescopes, three SATs and the LAT, and "98,000" detectors in total; "The observatory's second phase will add three SATs funded by the United Kingdom and Japan, due to arrive in the coming year"; a first data release is mentioned without a date | Simons Foundation news of 2026-10-22 [doc: https://www.simonsfoundation.org/news/now-fully-online-simons-observatory-begins-probe-of-universes-birth/, 2026-10-26] |
 
 No SO cosmological power spectrum, lensing map or public data release was
-found in the searches of 2026-10-07; the 2026 SO papers found are
-instrument and commissioning papers.
+found in the searches of 2026-10-07 and 2026-10-26; the 2026 SO papers
+found are instrument and commissioning papers.
 
 ## 3. Planned, and cancelled
 <!-- key: planned-and-cancelled -->
@@ -242,6 +244,7 @@ target; it predates the reformation and was not traced to a paper on
 | 2026-03 | SPT-3G D1 maps public | arXiv:2603.20163 |
 | 2026-06-26 | LiteBIRD Mission Definition Review #2 | ISAS/JAXA |
 | 2026-08-31 | SPT-3G D1 quadratic-estimator lensing | arXiv:2608.31136 |
+| 2026-10-22 | Simons Observatory announced fully online and in science operations | Simons Foundation [doc: https://www.simonsfoundation.org/news/now-fully-online-simons-observatory-begins-probe-of-universes-birth/, 2026-10-26] |
 
 ## Not verified
 <!-- key: not-verified -->
@@ -259,7 +262,8 @@ target; it predates the reformation and was not traced to a paper on
   the number of Main-field seasons already taken were not tabulated from a
   cited source here.
 - A first Simons Observatory data release was described as targeted for
-  autumn 2026 in a conference talk found by web search; no official
-  release page was read, and no release is asserted.
+  autumn 2026 in a conference talk found by web search; the Simons
+  Foundation news of 2026-10-22 mentions a first data release without a
+  date, and no release is asserted.
 - Other operating or planned experiments (POLARBEAR/Simons Array, SPIDER,
   QUBIC, AliCPT, GroundBIRD, Taurus, PICO, CMB-HD) were not researched.

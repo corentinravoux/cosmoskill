@@ -1,7 +1,7 @@
 # Galaxy-cluster cosmology — surveys and data
 
 Scope: cluster catalogues and the lensing data used to calibrate them, past, current and planned.
-Snapshot: 2026-10-14
+Snapshot: 2026-10-26
 
 ## eROSITA on SRG (X-ray, 0.2–2.3 keV detection band)
 <!-- key: erosita-on-srg-x-ray-0-2-2-3-kev-detection-band -->
@@ -67,7 +67,8 @@ PSZ2 revealed "a population of low-redshift X-ray under-luminous clusters", almo
 | SDSS redMaPPer (cosmology sample) | λ ≥ 20, 0.1 < z < 0.3 | arXiv:1810.09456 | [src: Sect. 2.1] |
 | DES Y1 redMaPPer | counts + stacked lensing with the Y1 shear catalogues; 1005 clusters with λ > 40 in the SPT-SZ overlap | arXiv:2002.11124, arXiv:2101.04984 | [src: abstract] |
 | DES Y3 redMaPPer | about 16000 clusters over nearly 5000 deg²; flux-limited 8865, volume-limited 5391, volume-and-redshift-limited 4450 clusters in the SPT-3G overlap used for CMB lensing | arXiv:2503.13632, arXiv:2404.02153 | [src: abstract] |
-| DES Y6 | model for clusters + 3×2pt validated on Cardinal mocks; no Y6 cluster cosmology found as of 2026-10-07 | To et al. 2025, arXiv:2503.13631 | [src] |
+| DES Y6 | model for clusters + 3×2pt validated on Cardinal mocks; no Y6 cluster cosmology found as of 2026-10-26 | To et al. 2025, arXiv:2503.13631 | [src] |
+| DECADE redMaPPer | over 40000 clusters from 13000 deg² of DECam imaging, 0.2 < z < 0.9, M200c ≳ 1e14 M_sun/h; photometric-redshift precision σ_z/(1 + z) ≤ 0.008 below z = 0.65 and ≤ 0.011 at 0.65 < z < 0.9, outlier rate < 0.2%; cross-matched to millimetre-wave and X-ray catalogues, with per-cluster lensing profiles and a cylindrical richness; all products public; a catalogue paper, without a cosmology analysis | Anbajagane et al. 2026, arXiv:2610.24104 | [src: abstract] |
 
 ## KiDS, HSC, XXL, UNIONS, Euclid
 <!-- key: kids-hsc-xxl-unions-euclid -->

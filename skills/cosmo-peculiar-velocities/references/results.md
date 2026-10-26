@@ -3,7 +3,7 @@
 Scope: every published fσ8 from peculiar velocities with its provenance (§0) and the history of
 that compilation (§7); the non-fσ8 output of the DESI DR1 peculiar-velocity release; the growth,
 gravity and flow results found in date-sorted searches from mid-2025 to the snapshot; and the
-bulk-flow record with its estimators. Snapshot: 2026-10-14
+bulk-flow record with its estimators. Snapshot: 2026-10-26
 
 Flags: `[src]` read this session in the cited paper (abstract unless a section is named); `[sec]`
 from a named secondary source; `[der]` derived, derivation stated. §0 and §7 use the flags of the
@@ -258,6 +258,7 @@ complete in one place, with the model each assumes.
 | "BAO" scale in the same paper | 132 ± 8 h⁻¹Mpc (real space), 139 ± 7 h⁻¹Mpc (redshift space) | same | empirical fit | arXiv:2605.00450 | [src: abstract] |
 | Great Attractor infall from SBF | flow over ~1 sr peaking at ~1000 km/s, converging to zero at D ≈ 70 Mpc; 66 galaxies, 5 % distances | Magellan/FourStar H-band SBF, 2000 < V < 5000 km/s | kinematic | Dressler & Monson 2026, arXiv:2604.02470 | [src: abstract] |
 | Vela supercluster mass | 33.8 × 10¹⁶ M_⊙, radius 70 h⁻¹Mpc, distance 189 h⁻¹Mpc | 65 518 CF4++ distances + 8 283 new ZoA redshifts (2 176 MeerKAT HI) | hybrid redshift + velocity reconstruction | Hollinger et al. 2026, arXiv:2603.09339 | [src: abstract] |
+| H0 from the infall around Virgo, simulation-calibrated | 74.4 ± 2.9 (minor infall) and 73.4 ± 3.9 (major infall) km/s/Mpc (stat); 81.6 ± 7.8 and 87.3 ± 8.8 (stat+sys) after the bias correction calibrated on TNG halos | TRGB distances around the Virgo Cluster | infall-velocity model of the cluster halo, simulation-based inference calibrated on IllustrisTNG | Carreres et al. 2026, arXiv:2610.10779 | [src: abstract] |
 | H0 from GW170817 with DESI FP group velocities | 70.9 +6.4/−8.5 km/s/Mpc (FP); 73.4 +3.3/−3.9 (CF4 SBF velocity of NGC 4993) | 39 group galaxies | standard siren + group peculiar velocity | Amsellem et al. 2025, arXiv:2512.08818 | [src: abstract] |
 
 Reading notes.
@@ -270,6 +271,12 @@ Reading notes.
   field does not carry the variance of the density field, which dominates the error of Stiskalek
   2025 ("uncertainty dominated by the variance of the 2M++ galaxy field") [src: arXiv:2512.03168,
   arXiv:2509.20235].
+- Cluster-infall H0: on IllustrisTNG halos, "widely used fitting functions systematically underestimate
+  H0, whereas the full analytical solution reduces but does not eliminate these biases"; the statistical
+  error is dominated by the residual velocity scatter around the infall model and the systematic by
+  the transformation to the structure's comoving frame and halo population variance [src:
+  arXiv:2610.10779, abstract]. The paper presents this as explaining "trends in previous H0
+  inferences" [src: arXiv:2610.10779, abstract]; the H0 side belongs to `cosmo-distance-ladder-h0`.
 - Crisman et al. quote σ8 and γ, never fσ8; a conversion would assume Ω_m and the background model.
   Leave it out of an fσ8 plot [src: arXiv:2604.06361].
 
@@ -520,7 +527,8 @@ appropriately" [src: arXiv:1611.09862, abstract] — indicator given as SN, now 
 - Amplitude of the Duangchan et al. 2025 bulk flow (arXiv:2507.22236: the abstract gives only a 3σ
   tension at ~140 and 240 h⁻¹Mpc); the Peery et al. 2018 amplitude is now in §3a.
 - The estimator behind the Courtois et al. 2025 bulk flow (abstract only).
-- Any DESI DR2 peculiar-velocity result: none found up to 2026-10-08.
+- Any DESI DR2 peculiar-velocity result: none found up to 2026-10-26 (arXiv searches and the papers
+  citing the DR1 growth-rate papers on INSPIRE).
 - §0 and §0a–c were re-read on 2026-10-23 (the place is in each row or sentence); the z_eff values
   of the compilation that the papers do not state were removed (Howlett 2017, Lilow & Nusser 2021,
   Carrick 2015, Davis 2011, Hollinger & Hudson 2024, Boruah 2020, Nusser 2017, Adams & Blake 2020,

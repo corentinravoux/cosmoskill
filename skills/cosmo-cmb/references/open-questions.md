@@ -3,7 +3,7 @@
 Scope: the live controversies in primary-CMB and CMB-lensing cosmology with
 both sides cited, the tensions between analyses, what the next data decide,
 forecasts, and the claims that still circulate after being corrected.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-26
 
 Flags: `[src]` read this session in the cited paper; `[sec]` from a named
 secondary source; `[der]` derived here. Forecasts are labelled **forecast**.
@@ -178,6 +178,17 @@ et al. 2025, arXiv:2503.14744: 3σ tension with the oscillation limit)
 analysis relaxes the bound to 0.072 eV because its lensing agrees better
 with DESI [src] (arXiv:2608.31136). In w₀w_a CDM the limit relaxes to
 0.16 eV [src] (arXiv:2503.14738).
+
+Where the negative preference comes from: splitting Σm_ν at the
+Boltzmann-code level into a geometry parameter (H(z) for distances) and a
+growth parameter (H(z) for perturbations), Planck primary CMB +
+Planck+ACT+SPT CMB lensing + DESI BAO give Σm_ν^geo = −0.07 ± 0.10 eV and
+Σm_ν^growth = −0.13 (+0.10/−0.12) eV (68%), a similar negative preference
+from both channels; their difference, a null test of ΛCDM, is passed at
+0.4σ (Ge et al. 2026, arXiv:2610.20977) [src: abstract]. The same paper
+forecasts that an underestimated τ would show up mainly in the growth
+channel and an incorrect dark-energy model mainly in the geometry channel
+(**forecast**) [src: abstract].
 
 ## 6. SPT-3G polarised beams
 <!-- key: spt-3g-polarised-beams -->

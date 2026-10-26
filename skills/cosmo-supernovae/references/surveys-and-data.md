@@ -3,7 +3,7 @@
 Scope: every SN survey, compilation and data release that matters for the
 Hubble diagram, in the order past, current, planned; plus the non-Ia and
 lensed cross-check samples.
-Snapshot: 2026-10-13
+Snapshot: 2026-10-26
 
 Flags: `[src]` read in the cited paper this session; `[sec]` from a named
 secondary source; `[der]` reasoning in words, without a new number. Forecast rows say **forecast**.
@@ -177,6 +177,7 @@ the interpretation belongs to `cosmo-distance-ladder-h0`.
 | SN Refsdal | Cluster-lensed core-collapse SN | `64.8 (+4.4/-4.3)` from eight lens models; `66.6 (+4.1/-3.3)` from the two best `[src]` | Kelly et al. 2023, arXiv:2305.06367 |
 | SN H0pe | SN Ia, z = 1.78, cluster lens, JWST | `75.7 (+8.1/-5.5)` using the SN Ia magnification to weight lens models; `71.8 (+9.2/-8.1)` without `[src: abstract]` | Pascale et al. 2024, arXiv:2403.18902 |
 | SN Encore | SN Ia, z = 1.95, cluster lens, JWST | `66.9 (+11.2/-8.1)` `[src: abstract]`; a second lensed SN ("Requiem") in the same host has a further image expected within a few years | Pierel et al. 2025, arXiv:2509.12301 |
+| SN Refsdal (2026 reanalysis) | Same system; cluster mass model plus the extended surface brightness of the host (77,000 HST pixels), cluster total-mass parametrisation held fixed to the earlier point-like model | `65.0 (+2.0/-1.8)`, flat LCDM, with `Omega_m = 0.30 (+0.08/-0.09)`; 3.0 % precision, error halved by the host pixels; lens-mass and time-delay errors now comparable `[src: abstract]` | Schuldt et al. 2026, arXiv:2610.12595 |
 | SN 2025wny | Superluminous SN-I, z = 2.015, galaxy-scale lens | `66.7 (+7.6/-6.3)` for isothermal profiles; `70.8 (+8.2/-6.1)` with free density slopes `[src: abstract]` | Mörtsell et al. 2026, arXiv:2608.28430 |
 
 Discovery papers: four images of one supernova around a z = 0.54 galaxy of
@@ -186,7 +187,7 @@ arXiv:1411.6009, which credits the idea to Refsdal 1964,
 doi:10.1093/mnras/128.4.307 `[sec]`); iPTF16geu, a multiply imaged SN Ia
 at z = 0.409, four images, magnified more than fifty times by a galaxy
 (Goobar et al. 2017, arXiv:1611.00014) `[src: abstract of each]`.
-Review: Suyu et al. 2024 (arXiv:2301.07729). All four values assume flat LCDM-like distance ratios and are dominated by lens-model uncertainty; none discriminates between the Planck and SH0ES values of `H0`. Detail in `cosmo-distance-ladder-h0` and
+Review: Suyu et al. 2024 (arXiv:2301.07729). All these values assume flat LCDM-like distance ratios and are dominated by lens-model uncertainty. The 2026 Refsdal value reaches 3.0 % only with the cluster total-mass parametrisation held fixed, which its authors name as one of the main possible systematics `[src: abstract]` (arXiv:2610.12595); the earlier four do not discriminate between the Planck and SH0ES values of `H0`. Detail in `cosmo-distance-ladder-h0` and
 `cosmo-multimessenger`.
 
 ### 7.3 Siblings
@@ -207,6 +208,16 @@ objects, and an `alpha` higher than the cosmological-sample value by 2.5–3.5
 sigma, driven by low-stretch pairs `[src: abstract]` (Dhawan et al. 2024,
 arXiv:2406.01434). The two results pull in different directions on how much
 scatter is host-driven; the samples are small.
+
+"Cousins" extend the test to SNe Ia in different galaxies of one group.
+TITAN (ATLAS), 1086 spectroscopically confirmed SNe Ia at 0.01 < z < 0.05:
+314 are group-associated, including 80 cousins in 32 groups; group-averaged
+redshifts do not reduce the Hubble scatter (0.184 (+0.017/-0.009) mag with
+host redshifts, 0.200 (+0.016/-0.015) mag with group redshifts), while
+cousins show ~30-40 % lower scatter than the full sample at 2.3-2.8 sigma in
+the variants that limit line-of-sight distance differences, tentatively
+driven by the youngest groups `[src: abstract]` (Blum et al. 2026,
+arXiv:2609.13525).
 
 ## Not verified
 <!-- key: not-verified -->

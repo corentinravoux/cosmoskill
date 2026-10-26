@@ -118,7 +118,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 3k; methods 9k; results 5k; surveys 5k; systematics 5k; deep/cmb-mapmaking 8k; deep/extraction-sky 12k; deep/image-detrending 8k; deep/lss-catalogues 7k; deep/redshift-fitting 7k; deep/source-injection 8k.
+Sizes, in thousands of tokens: L1 3k; open 4k; methods 9k; results 5k; surveys 5k; systematics 5k; deep/cmb-mapmaking 8k; deep/extraction-sky 12k; deep/image-detrending 8k; deep/lss-catalogues 7k; deep/redshift-fitting 7k; deep/source-injection 8k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

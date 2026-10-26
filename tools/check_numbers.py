@@ -217,6 +217,8 @@ def classify(statement: str, caption: str, today: date | None = None) -> str:
         return "old-src"
     if MARKER in statement:
         return "marked"
+    # A flag quoted in a code span is a mention (a legend, an instruction), not a flag.
+    statement, caption = re.sub(r"`[^`]*`", " ", statement), re.sub(r"`[^`]*`", " ", caption)
     if DOC_FLAG.search(statement) or DOC_FLAG.search(caption):
         flags = len(DOC_FLAG.findall(statement)) or len(DOC_FLAG.findall(caption))
         valid = len(doc_dates(statement)) or len(doc_dates(caption))

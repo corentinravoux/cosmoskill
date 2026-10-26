@@ -2,7 +2,7 @@
 
 Scope: the core catalogue of the cosmology software an analyst meets: what each code computes, its reference paper, repository, language and interface, licence, last release or activity read at the repository, and who uses it.
 
-Snapshot: 2026-10-11
+Snapshot: 2026-10-26
 
 ## How to read the tables
 <!-- key: how-to-read-the-tables -->
@@ -54,6 +54,7 @@ Snapshot: 2026-10-11
 | MontePython | Parameter inference code interfaced with CLASS; version 3 adds jumping-factor adaptation and a Fisher-matrix proposal | Audren et al. 2012, arXiv:1210.7183; Brinckmann & Lesgourgues 2018, arXiv:1804.07261 | `brinckmann/montepython_public` | Python | MIT | not on PyPI; last push 2024-06-20 | — |
 | CosmoSIS | Modular parameter-estimation framework: a pipeline of interchangeable modules (CAMB, Planck likelihoods, cosmic-shear calculations) and a suite of samplers | Zuntz et al. 2014, arXiv:1409.3409 | `cosmosis-developers/cosmosis` (the older `joezuntz/cosmosis` redirects to it; the Bitbucket URL in the paper abstract is historical) | Python core, modules in C, Fortran or Python | custom | cosmosis 3.26, 2026-09-03; last push 2026-09-24 | DES: the Y3 sampler study uses the full DES Y1 likelihood (arXiv:2202.08233) |
 | desilike | "Cosmological Inference Framework Used by the Dark Energy Spectroscopic Instrument (DESI)" [doc: https://api.github.com/repos/cosmodesi/desilike, 2026-10-26]: likelihoods for BAO and RSD analyses, wrappers of velocileptors, pybird and FOLPS-nu, Taylor-expansion and MLP emulators, ShapeFit, samplers and profile-likelihood tools, bindings to Cobaya, CosmoSIS and MontePython [doc: https://raw.githubusercontent.com/cosmodesi/desilike/main/README.md, 2026-10-26] | no paper and no citation request in the README; cite the repository | `cosmodesi/desilike` | Python, optional JAX | BSD-3-Clause | not on PyPI (`pip install git+https://github.com/cosmodesi/desilike`); no tagged release; last push 2026-10-22 | DESI |
+| cloelike | Modular Gaussian likelihood classes for the Euclid large-scale-structure observables: harmonic angular power spectra and real-space two-point correlation functions for weak lensing, photometric clustering and galaxy–galaxy lensing (3x2pt, 2x2pt), spectroscopic full-shape power-spectrum multipoles and BAO; a core component of the CLOE ecosystem, taking predictions from cloelib and data from euclidlib (arXiv:2605.23841) [src: abstract] | Bonici et al. 2026, arXiv:2605.23841 | `cloe-org/cloelike` | Python | MIT | cloelike 0.3, 2026-10-16; last push 2026-10-23 [doc: https://pypi.org/pypi/cloelike/json; https://api.github.com/repos/cloe-org/cloelike, 2026-10-26] | "actively used in internal Euclid Consortium analyses" (arXiv:2605.23841) [src: abstract] |
 
 ### 3.2 Samplers
 <!-- key: samplers -->

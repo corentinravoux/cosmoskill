@@ -3,7 +3,7 @@
 Scope: photometric standards and reference catalogues, imaging surveys and
 their photo-z products, many-band calibration fields, and the spectroscopic
 samples used to train and calibrate photo-z.
-Snapshot: 2026-10-16
+Snapshot: 2026-10-26
 
 Flags: `[src]` read this session in the abstract of the cited paper;
 `[src: Sect. n]` read in the body; `[sec]` from a named secondary source.
@@ -97,7 +97,12 @@ forecast 19 million galaxies with σ_z < 0.003(1+z), 445 million with σ_z <
 Feder et al. 2023, arXiv:2312.04636) [src: abstract]. Spectral confusion from faint
 untargeted galaxies (0.8–3.8 μJy, 1σ) is negligible at full-sky depth but
 significant in the deep fields, where it biases redshifts slightly high
-(Huai et al. 2025, arXiv:2510.01410) [src: abstract].
+(Huai et al. 2025, arXiv:2510.01410) [src: abstract]. On observed SPHEREx
+data in nine fields, forced photometry of a reference catalogue cut at
+m_z < 21 gives σ_NMAD = 0.0080 for the 2253 spectroscopic sources detected
+at S/N > 5 in at least half of the 102 channels; fitting deeper catalogues
+or adding external flux priors costs either sources or redshift accuracy
+(Bahk & Hwang 2026, arXiv:2610.16007) [src: Sect. IV.3, abstract].
 
 ## 4. Spectroscopic training and calibration samples
 <!-- key: spectroscopic-training-and-calibration-samples -->
@@ -154,7 +159,18 @@ matters here:
   by 34%, σ_NMAD by 14% and outliers by 17% against a photometry-only
   network to m_F160W < 25; faint-source photo-z will stay label-limited
   (**forecast**; Khederlarian et al. 2026, arXiv:2602.10207)
-  [src: Sect. II.1, IV.1.2].
+  [src: Sect. II.1, IV.1.2]. For n(z), standard SOMPZ on simulated LSST Y4
+  and Roman HLIS photometry (Cardinal) gives overlapping bins and biased
+  n(z) because spectra do not cover the source colour space; Roman-SOMPZ,
+  with per-galaxy photo-z references and a UMAP-flow estimator for
+  unrepresented phenotypes, lowers the absolute mean-redshift bias in eight
+  of nine bins; existing spectroscopy suffices for early weak-lensing
+  analyses in the Roman deep fields, not for full medium-tier cosmology
+  (**forecast**; Zhen et al. 2026, arXiv:2610.24066) [src: abstract]. Joint
+  Rubin–Roman forced photometry on simulated images gives unbiased colours,
+  but a 7–8% bright-end flux floor for Roman bands, and flux errors
+  underestimated by a factor ~4 when the correlated pixel noise of IMCOM
+  coadds is ignored (Shin et al. 2026, arXiv:2610.22547) [src: abstract].
 - **CSST.** The 2 m China Space Station Telescope plans a ~17,500 deg²
   NUV-to-NIR survey with its Survey Camera; its Multi-Channel Imager adds
   medium bands for deep fields. On COSMOS-based mocks, LePhare on MCI + SC

@@ -4,7 +4,7 @@ Scope: measured pipeline performance — redshift success rates, purities,
 catastrophic-failure fractions, sky-subtraction residuals, astrometric and PSF
 residuals, deblending and completeness figures, map-making transfer
 functions — with the dataset and citation for each, and what superseded what.
-Snapshot: 2026-10-16
+Snapshot: 2026-10-26
 
 Flags: `[src]` abstract read this session; `[src: Sect. n]`, `[src: Table n]`
 body read; `[sec]` named secondary source; `[der]` derived here.
@@ -29,6 +29,7 @@ body read; `[sec]` named secondary source; `[der]` derived here.
 | DESI DR1 summary | — | outliers ≤ 0.3% BGS/LRG/ELG; 0.7% QSO z < 2.1; 1.8% QSO z > 2.1 | 10 km/s BGS, ELG; 50 km/s LRG; 20–125 km/s QSO | arXiv:2503.14745 [src: Table 6] |
 | DESI archetype refit vs Redrock | 0.5–0.8% higher success and purity for galaxies | catastrophics −10 to −30% on SV tiles; false positives on sky fibres −5 to −40% | — | arXiv:2405.19288 [src: abstract] |
 | Euclid Q1 SPE (0.9 < z < 1.8, tuned cuts) | 89% | bias < 3×10⁻⁵ in Δz/(1+z) vs DESI | ~10⁻³ | arXiv:2503.15308 [src: abstract] |
+| Euclid Wide, Bypass end-to-end simulations (**forecast**; baseline selection, no overlap contamination in the noise model) | sample completeness 45% | redshift purity 74%; [O III] 5008 and [S III] 9530 taken for Hα contribute a few to ten per cent depending on redshift | Gaussian core σ_z = 9.4×10⁻⁴, no significant trend over 0.9 < z < 1.8 | Euclid Collaboration: Granett et al. 2026, arXiv:2610.26990 [src: abstract] |
 
 DESI DR1 also lists wavelength precision 0.025 Å, sky-subtraction
 systematics < 1% and spectrophotometric calibration 6–10%
@@ -72,6 +73,7 @@ for the next tracers are trained on such VI samples (arXiv:2608.10080) [src].
 | KiDS DR4 | 5σ 2″ depth u, g, r, i; r seeing | 24.23, 25.12, 25.02, 23.68; 0.70″ | arXiv:1902.11265 [src: abstract] |
 | KiDS DR5 | area; median r depth | 1347 deg²; 24.8 (5σ), seeing 0.7″ | arXiv:2503.19439 [src: abstract] |
 | DECam brighter-fatter | size growth with flux | up to 2% over full dynamic range | arXiv:1402.0725 [src] |
+| Roman WFI, non-flight H4RG-10 (lab, Talbot illuminator) | brighter-fatter: change of effective pixel area per electron of charge contrast; flat-field-based correction | (−2.18 ± 0.04)×10⁻⁶ per electron; correction reduces the effect by about a factor 25, with residual nonlinearity | Paine et al. 2026, arXiv:2610.03882 [src: abstract] |
 
 ## 3b. Target composition, detection and classification
 <!-- key: target-composition-detection-and-classification -->
@@ -87,6 +89,7 @@ for the next tracers are trained on such VI samples (arXiv:2608.10080) [src].
 | DES Y6 Gold | star–galaxy efficiency, contamination (17.5 < i < 22.5) | 98.6%, 0.8% | arXiv:2501.05739 [src: abstract] |
 | DeepDISC on Rubin DP1, after fine-tuning | galaxy and star completeness, class-aware matching | 84.2% and 49.1% (from 40.2% and 13%) | arXiv:2610.10986 [src: abstract] |
 | DeepDISC vs production random forest | classification accuracy on a common sample | 97.4% vs 98.5% | arXiv:2610.10986 [src: abstract] |
+| Six ML classifiers on Rubin DP2 (ECDFS, COSMOS, EDFS, ELAIS-S1), point-like vs extended, colours and morphology | test macro-F1 of the best method; agreement between methods | 0.83 to 0.88 across the four fields; 77 to 86% of each catalogue; about 0.97 in ECDFS DP2 when per-band photometric uncertainties are added | Plazas Malagón et al. 2026, arXiv:2610.20746 [src: abstract] |
 
 ## 4. CMB map-making performance
 <!-- key: cmb-map-making-performance -->

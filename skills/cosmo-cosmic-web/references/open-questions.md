@@ -3,7 +3,7 @@
 Scope: live controversies, method debates, what the next data will decide,
 forecasts (labelled), and stale claims about the cosmic web with the paper
 that corrects each.
-Snapshot: 2026-10-16
+Snapshot: 2026-10-26
 
 Flags: `[src]` abstract read this session; `[src: Sect. n]`, `[src: Eq. n]`,
 `[src: Table n]` body read; `[sec]` named secondary source; `[der]` derived
@@ -48,7 +48,11 @@ node distance, interpreted as anisotropic assembly bias (arXiv:1710.02676)
 asymmetric gas discs at fixed stellar and halo mass, and late infallers
 undergo "cosmic web stripping" (arXiv:2605.23457) [src]. Splicing experiments
 show that filament proximity leaves halo mass unchanged but changes spin
-orientation by up to 80% (arXiv:2409.13010) [src: abstract].
+orientation by up to 80% (arXiv:2409.13010) [src: abstract]. Around DES Y3 clusters at z < 1,
+clusters of fixed mass with a higher fraction of red (elliptical) members are
+more strongly connected to the web, with hints of pre-processing in filaments
+(Gouin et al. 2026, arXiv:2610.31800) [src: abstract]; the trend is stated at
+fixed cluster mass only, on a 2D photometric skeleton.
 
 **Side B: mostly not, once density and halo mass are controlled.** In SDSS, a
 halo-mass-only mock reproduces clustering and quenching trends in δ₈ and α₅,

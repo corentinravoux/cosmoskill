@@ -4,7 +4,7 @@ Scope: live controversies about the dynamical-dark-energy signal and about
 tests of gravity, with both sides cited; what the next data decide; stale
 claims.
 
-Snapshot: 2026-10-14
+Snapshot: 2026-10-26
 
 Flags: `[src]` read this session in the cited paper; `[sec]` from a named
 secondary source; `[der]` derived here.
@@ -65,6 +65,13 @@ below gives the objection, the reply, and the status at the snapshot.
   data-selection robustness) [src]. For Unite the same cut removes 687 SNe
   (24%) and moves the best fit by ~2σ, the only cut that does
   (arXiv:2609.05053) [src: Sect. 9.1].
+- Watkins et al. 2026, arXiv:2606.18374, within flat ΛCDM: the high-redshift
+  DES supernovae are well described by the standard model, while the current
+  low-redshift anchor sample "exhibits a systematic offset of ∼ 0.05 mag that
+  drives much of the apparent preference for evolving dark energy";
+  preliminary DEBASS data "do not show this offset" [src: abstract]. The
+  DEBASS data are described as preliminary; no dark-energy fit with them is
+  given in the abstract.
 - **Status.** Open. No dark-energy analysis at the snapshot uses a modern,
   homogeneous low-redshift anchor; see `cosmo-supernovae` for DEBASS and ZTF.
 
@@ -140,6 +147,14 @@ fitted.
   normalising flow from two quintessence models reduce the Planck + DESI
   tension with Λ from ~3.1σ to ~1.3σ; "uniform priors ... can actually bias
   inferences toward unphysical parameter regions" [src: abstract].
+- Layton, Hall and Robertson 2026, arXiv:2610.26493: replacing the uniform
+  prior on (`w0`, `wa`) by the Jeffreys prior "reverses the model-selection
+  preference in dataset combinations that favour dynamical dark energy under
+  the uniform prior", while the parameter constraints "remain robust to prior
+  choice" [src: abstract]; the `ln B` values are in `results.md` Section 4.
+  With the Jeffreys prior, shrinking the truncation bounds changes `ln Z` by
+  0.01 and 0.1, against 0.81 and 1.36 with the uniform prior, for DESI DR2
+  + Planck 2018 + DESY5 (arXiv:2610.26493) [src: Sect. 4.2].
 - **Reply.** Herold and Karwal 2025, arXiv:2506.12004: profile-likelihood
   (frequentist) constraints on `w0`, `wa` are "in excellent agreement with the
   Bayesian constraints" for DESI + Planck + lensing + Pantheon+ or DESY5; the
@@ -266,6 +281,13 @@ snapshot.
   dark energy, non-minimally coupled gravity and non-standard dark matter as
   producing the same effective departure from `w = −1` at the background level
   [src].
+- **Against interacting dark energy, from galaxies.** A dark-matter-only fifth
+  force offsets halo and stellar-disk centres and warps the disk; warps of
+  4 × 10^3 edge-on SDSS disks show no such signal, giving `Delta G/G_N <
+  7.7 × 10^-4` (95%) for ranges of 8 Mpc and above, which "disfavours at
+  2-3σ the couplings preferred by recent fits of interacting dark energy to
+  cosmological data unless gravitational screening is invoked" (Desmond and
+  Ferreira 2026, arXiv:2610.24618) [src: abstract].
 - **What would decide.** A perturbation-level prediction that differs between
   models: scale-dependent growth, `Sigma ≠ 1`, a specific ISW or lensing
   signature. Li et al. (arXiv:2601.07361) say so explicitly: future

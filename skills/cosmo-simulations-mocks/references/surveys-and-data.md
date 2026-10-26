@@ -1,7 +1,7 @@
 # Simulation suites and mock data sets
 
 Scope: one table row per simulation suite or mock set — code, box, particle number or resolution, cosmologies, use, public location — read at source.
-Snapshot: 2026-10-13
+Snapshot: 2026-10-26
 
 ## 1. Gravity-only suites
 <!-- key: gravity-only-suites -->
@@ -26,6 +26,7 @@ Units are those of the source: h⁻¹ where the paper uses it, none where it doe
 | Aemulus ν | n/a | 1.05 Gpc/h | 3.51 × 10¹⁰ (Ω_cb/0.3) M_⊙/h; 150 boxes | wνCDM, neutrino mass up to 0.5 eV as a second particle species, wide σ_8 range | hybrid-EFT and matter-power surrogates | released with the paper | DeRose et al. 2023, arXiv:2303.09762 [src] |
 | Dark Quest | n/a | n/a | 2048³ | 101 flat wCDM models (sliced Latin hypercube) | Dark Emulator: halo mass function, halo–matter and halo–halo correlations, z = 0–1.48 | n/a | Nishimichi et al. 2018, arXiv:1811.09504 [src] |
 | Dark Quest II (first runs) | GINKAKU | up to 4 Gpc/h | 3000³ | eight models so far, with massive neutrinos and clustering dark energy | next-generation emulators | n/a | Nishimichi et al. 2026, arXiv:2605.28581 [src] |
+| GION | GINKAKU, TreePM, on-the-fly light-cones | 1.5 Gpc/h | 6144³; 1.28 × 10⁹ M_⊙/h; haloes resolved down to 10¹¹ M_⊙/h | one; 10 full-sky light-cones to z = 5 | multi-wavelength Stage-IV mocks: halo catalogues, mock galaxies, lensing convergence, tSZ and kSZ maps on the same light-cone; P(k), halo P(k), mass function and angular spectra validated against theory | announced as public (location n/a) | Osato et al. 2026, arXiv:2610.32388 [src: abstract] |
 | Mira-Titan | n/a | 2.1 Gpc | 3200³; 111 simulations, plus 1776 lower-resolution runs | {ω_m, ω_b, σ_8, h, n_s, w_0, w_a, ω_ν} | Mira-Titan power-spectrum emulator | released with the paper | Heitmann et al. 2015, arXiv:1508.02654; Moran et al. 2022, arXiv:2207.12345 [src] |
 | EuclidEmulator2 training set | PKDGRAV3 (arXiv:2010.11288, Sect. 8.2.1) | 1 Gpc/h | 3000³; over 250 simulations, paired and fixed | w0waCDM + Σm_ν, eight parameters | non-linear boost emulator | github.com/miknab/EuclidEmulator2 | Euclid Collaboration 2020, arXiv:2010.11288 [src] |
 | BACCO | n/a | about 2 Gpc | 4320³ | 800 points in eight dimensions reached by cosmology rescaling of a few boxes | matter, galaxy and gas emulators | dipc.org/bacco | Angulo et al. 2020, arXiv:2004.06245 [src] |
@@ -83,6 +84,8 @@ Synthetic-spectrum sets for BAO (LyaCoLoRe, arXiv:1912.02763) are described in t
 | DESI DR2 Lyα full shape | CoLoRe-2LPT | 2LPT quasars and Lyα skewers with HCDs and metals | count n/a | DESI Lyα measurements; quasars calibrated on AbacusSummit | validation of the Lyα BAO and full-shape analyses | Ruiz-Herrera Bernal et al. 2026, arXiv:2607.27412 [src] |
 | Euclid | Flagship 2 galaxy mock | N-body + HOD and abundance matching | one light-cone: box 3600 Mpc/h, 16,000³ particles, m_p = 10⁹ M_⊙/h, softening 4.5 kpc/h, PKDGRAV3; full-sky particle light-cone to z = 3 by box replication (31 trillion particle outputs, about 125 billion ROCKSTAR haloes, lensing maps at HEALPix N_side = 8192); galaxies in one octant | observed luminosity functions and clustering | science-pipeline preparation; designed for the DR1 footprint of about 2500 deg² | Euclid Collaboration 2024, arXiv:2405.13495, section 2.1 [src] |
 
+Euclid also uses "Bypass" end-to-end simulations of the spectroscopic chain (FastSpec for slitless spectra, Pypelid for detection probabilities) in place of pixel-level simulations. On the Wide Survey the baseline selection gives a redshift purity of 74% and a completeness of 45%, and a Gaussian redshift-error core of width σ_z = 9.4 × 10⁻⁴ over 0.9 < z < 1.8; on the DR1 footprint a forward-modelled random catalogue recovers the monopole and quadrupole of the correlation function. The noise model omits contamination from overlapping spectra, to be revisited with DR1 data (Euclid Collaboration: Granett et al. 2026, arXiv:2610.26990 [src: abstract]).
+
 The Flagship 2 run started from 1LPT (Zel'dovich) initial conditions at z = 99, with linear radiation, neutrino and metric terms applied as a corrective particle-mesh force in the N-body gauge [src] (arXiv:2405.13495, section 2.1). This is worth knowing next to the transient results of `systematics.md` §2.
 
 The BOSS mock sets (600 PTHalos mocks for DR9, arXiv:1203.6609; 12,288 MultiDark-Patchy light-cones for DR12, arXiv:1509.06400) and the WiggleZ COLA mocks (arXiv:1507.05329 [src: abstract of each]) are in `physics-and-methods.md` §12. DESI DR2 reference mocks built with subhalo abundance matching on Uchuu, and the DES and Euclid covariance mocks, are listed under "Not verified".
@@ -116,6 +119,7 @@ Earlier field-level projects now in the source list (`physics-and-methods.md` §
 | MillenniumTNG flagship N-body | 1.1 trillion dark-matter particles with massive neutrinos in (3000 Mpc)³ | arXiv:2210.10059 [src: abstract] |
 | Dark Quest II | massive neutrinos and clustering dark energy by linear response; eight models so far | arXiv:2605.28581 [src] |
 | Euclid neutrino code comparison | 11 N-body implementations, 2 approximate schemes, 4 predictors or emulators on common initial data | arXiv:2211.12457 [src: abstract] |
+| DDELenS | 128 w0waCDM cosmologies with massive neutrinos (Sobol sequence over Ω_m ∈ [0.28, 0.35], σ_8 ∈ [0.74, 0.90], w_0 ∈ [−1.0, −0.5], w_a ∈ [−1.5, 0.0]); 1024³ particles in 512 Mpc/h boxes; PKDGRAV3 in the N-body gauge; 10,000 ray-traced convergence maps per cosmology at six source redshifts including z_s = 1100; 100,000 realisations at the fiducial cosmology for the covariance | Chen et al. 2026, arXiv:2610.27088 [src: abstract] |
 | Modified-gravity code comparison | f(R), DGP and symmetron runs from common initial conditions | arXiv:1506.06384 [src] |
 | HalfDome | one run with local primordial non-Gaussianity, f_NL = 20 | arXiv:2407.17462 [src: abstract] |
 
@@ -140,6 +144,7 @@ Earlier field-level projects now in the source list (`physics-and-methods.md` §
 - DESI: DR1 analyses used the mock sets of §4; reference mocks for DR2 built with abundance matching on Uchuu and 2LPT Lyα mocks appeared in 2025–2026 (arXiv:2607.27412; the Uchuu papers are outside the source list).
 - Euclid: Flagship 2 is the reference mock; no Euclid cosmological analysis is published (the sibling skills give mid-2027 for DR1 lensing and clustering products).
 - Dark Quest II: first eight cosmologies run (arXiv:2605.28581).
+- GION: ten GINKAKU full-sky light-cones presented in October 2026, announced as public (arXiv:2610.32388 [src: abstract]).
 - Constrained simulations: survey-depth reconstructions exist since 2026 (arXiv:2606.10020).
 
 **Expected next (statements in the papers, not forecasts of ours).**

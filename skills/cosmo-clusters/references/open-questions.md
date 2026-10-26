@@ -1,7 +1,7 @@
 # Galaxy-cluster cosmology — open questions
 
 Scope: live disagreements, method debates, forecasts and stale claims.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-26
 
 ## 1. Do clusters see a low S8, a high S8, or neither?
 <!-- key: do-clusters-see-a-low-s8-a-high-s8-or-neither -->
@@ -53,6 +53,7 @@ Still open: X-COP gas fractions exclude the low bias "at high significance, unle
 
 - Evidence that it has: DES Y3, with a cluster-based multiprobe data vector, finds S8 = 0.864 ± 0.035 and, with 3×2pt, 0.811 +0.022/−0.020 with a probability-to-exceed of 0.6 against Planck [src: abstract, arXiv:2503.13632]. The simulation-based reanalysis of DES Y1 gives Ω_m = 0.254 +0.026/−0.020 and σ8 = 0.826 +0.030/−0.034 [src: abstract, arXiv:2510.25706], where the original DES Y1 analysis had Ω_m = 0.179 +0.031/−0.038 [src: abstract, arXiv:2002.11124]. SDSS redMaPPer with HSC Y3 lensing gives 0.816 [src: abstract, arXiv:2309.13025].
 - Evidence that it has not: KiDS-1000 AMICO finds S8 = 0.74 ± 0.03 and Ω_m = 0.22 ± 0.02, 2.8σ from Planck [src: abstract, arXiv:2507.14285], with an explicit projection-effect term. The reanalysed DES Y1 is still 2.58σ from Planck, now through a low Ω_m [src: abstract, arXiv:2510.25706]. DES Y3 × SPT cross-matching finds redshift trends that the projection-effect simulations do not capture (arXiv:2502.12914). The same anisotropic-boost model gave 0.718 with SDSS lensing and 0.816 with HSC lensing (arXiv:2112.09059, arXiv:2309.13025, abstract of each).
+- An X-ray census at high richness: in an eRASS1 region of about 2.5 times the mean exposure, 45 of 57 DES Y3 redMaPPer clusters with λ > 50 at 0.2 < z < 0.65 match an eRASS1 cluster; XMM, ACT or SPT data detect 5 of the 12 unmatched ones, which lie at higher redshift and lower richness, and the authors find no physical reason for their missing X-ray emission [src: abstract] (Giles et al. 2026, arXiv:2610.16742). The sample is small: the authors say that deeper eRASS releases or dedicated X-ray follow-up are needed to explore differences in the luminosity–richness relation.
 - The position of the two camps: one calibrates richness by lensing with a forward model of the finder; the other holds that low-richness optical clusters need a multi-wavelength anchor, because the richness–mass slope from SZ cross-calibration is B ≈ 1 against B ≈ 0.75 from optical-only calibration [src: abstract, arXiv:2101.04984].
 - What decides it: DES Y6 clusters with 3×2pt (strategy in arXiv:2503.13631), Euclid DR1 with its CosmoPostProcess correction (arXiv:2605.02723), and SZ cross-matches at lower richness from SPT-3G.
 

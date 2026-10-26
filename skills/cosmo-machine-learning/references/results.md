@@ -1,7 +1,7 @@
 # Machine learning in cosmology — results
 
 Scope: quantified performance of machine-learning methods in cosmology — emulator accuracy, information gains of neural summaries, challenge outcomes, robustness across simulators — with the history of the key numbers.
-Snapshot: 2026-10-17
+Snapshot: 2026-10-26
 
 Flags: as in `physics-and-methods.md`.
 
@@ -198,5 +198,5 @@ not mean fewer simulations than a covariance matrix.
 - FAIR Universe organisers' results paper (only the baselines,
   arXiv:2604.14451, and the winning entry, arXiv:2604.09621, were read).
 - ELAsTiCC challenge-level results: an INSPIRE search for "ELAsTiCC"
-  (2026-10-17) returned eight papers that use the data and none that
-  describes the challenge itself.
+  (2026-10-17, repeated 2026-10-26) returned eight papers that use the data
+  and none that describes the challenge itself.

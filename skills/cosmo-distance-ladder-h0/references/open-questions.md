@@ -4,7 +4,7 @@ Scope: the debates about the value of H0 that are unresolved in October 2026,
 with both sides cited; what the next data will decide; forecasts (labelled);
 and the misconceptions that still circulate, each with the paper that
 corrects it.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-26
 
 Flags: `[src]` read this session in the cited paper; `[sec]` from a named
 secondary source; `[der]` derived here. H0 in km/s/Mpc.
@@ -116,6 +116,15 @@ arXiv:2601.00650).
   selection; a Bayesian jackknife over 16 measurements finds many grouping
   scenarios with similar evidence and only disfavours "no measurement is
   biased" `[src: abstract]` (Hughes et al. 2025, arXiv:2511.19341).
+- TDCOSMO-2026 finds that the tension with Planck survives the removal of
+  any one of the SN Ia, Cepheid or TRGB routes: a "no-SN" late-Universe
+  combination is 3.7 sigma from Planck, and 2.7 sigma remains once the whole
+  local distance ladder is excluded `[src: abstract]` (arXiv:2610.14881).
+- The inverse-ladder verdict depends on the low-z SN sample: DES-Dovekie
+  SNe alone with DESI DR2 BAO give 76.25 ± 2.87, and 67.98 ± 0.69 once the
+  legacy SNe are added; with DES SNe alone a late-time H(z) enhancement stays
+  viable, and the authors point to a systematic tension between the DES and
+  legacy samples `[src: abstract]` (Nájera et al. 2026, arXiv:2610.23657).
 - BAO + BBN is 4.5 sigma from SH0ES without any CMB anisotropy data
   `[src: Sect. VI]` (arXiv:2503.14738), and the equality-scale H0 values
   (66.7, 67.9 and 67.8 with three SN samples) are still in "2.2-3.0 sigma"
@@ -155,7 +164,12 @@ Kochanek (2020, arXiv:1911.05083) argued that no lensing H0 is more accurate
 than ~10% because the convergence at the Einstein radius is unconstrained
 `[src: abstract]`. TDCOSMO accepted the degeneracy and constrains it with
 kinematics: 71.6 (+3.9/-3.3) from 8 lenses, 4.6% with external lenses
-`[src: abstract]` (arXiv:2506.03023). A 2026 study lists kinematic
+`[src: abstract]` (arXiv:2506.03023), now superseded by 71.1 (+2.4/-2.3), a
+3.3% result from 11 lenses that accounts for the mass-sheet degeneracy
+`[src: abstract]` (arXiv:2610.14781). The same paper now detects a non-zero
+intrinsic scatter of lambda_int among the time-delay lenses,
+0.093 (+0.038/-0.026), which "sets a floor" on the population mean from
+eleven lenses `[src: Sect. VIII.1]` (arXiv:2610.14781). A 2026 study lists kinematic
 systematics of several per cent in sigma^2 from the PSF, the anisotropy model
 and the light-versus-mass profile, each comparable to the target precision
 `[src: abstract]` (arXiv:2602.03934).
@@ -166,6 +180,10 @@ time-delay lenses (arXiv:2007.02941); whether lambda_int differs from 1
 cluster lenses, where three lensed SNe give `[src: abstract]` 64.8
 (+4.4/-4.3) for SN Refsdal (arXiv:2305.06367), 75.7 (+8.1/-5.5) for SN H0pe
 (arXiv:2403.18902) and 66.9 (+11.2/-8.1) for SN Encore (arXiv:2509.12301).
+Two 2026 additions `[src: abstract]`: SN Refsdal at 65.0 (+2.0/-1.8) once the
+host surface brightness enters a cluster model whose mass parametrisation is
+held fixed (arXiv:2610.12595), and 70.8 (+8.2/-6.1) from SN 2025wny, the first
+lensed superluminous SN (arXiv:2608.28427).
 
 **Forecast.** 3.3% with resolved kinematics of the 7 original lenses, 2.5%
 adding 50 non-time-delay lenses, 1.5% and 1.2% with 40 time-delay and 200
@@ -283,7 +301,7 @@ measurement.
 |---|---|---|---|
 | Gaia zero point and the MW anchor | Gaia DR4 | 2 December 2026 | [doc: https://www.cosmos.esa.int/web/gaia/release, 2026-10-26] |
 | Calibrator sample variance; JAGB standardisation | more JWST hosts; spectroscopic purity surveys (arXiv:2609.25412) | ongoing | [src] |
-| Time-delay H0 with free lambda_int, toward per cent precision | TDCOSMO-2026 hierarchical analysis | announced (arXiv:2608.27566) | [src: abstract] |
+| Time-delay H0 with free lambda_int, toward per cent precision | after TDCOSMO-2026 (3.3%, arXiv:2610.14781): a stated path to 1.5% | stated goal (arXiv:2610.14881) | [src: abstract] |
 | Third rung without SNe, toward a per cent measurement | DESI PV calibrated directly on Cepheids / TRGB | later DESI releases (arXiv:2512.03232) | [src: abstract] |
 | Two-rung ladders | TRGB beyond cz ~ 1000 km/s and better local reconstructions (arXiv:2609.29996) | open | [src: abstract] |
 | r_d-free early H0 | completed DESI + SO-like lensing: sigma(H0) ~ 0.67 with fixed sum m_nu, **forecast** (arXiv:2509.16202) | late 2020s | [src: abstract] |
@@ -296,7 +314,7 @@ measurement.
 | "Cepheid crowding in HST photometry may explain the tension." | JWST: -0.01 ± 0.03 mag, rejected at 8.2 sigma; no bias in 19 hosts | arXiv:2401.04773; arXiv:2509.01667 (abstract of each) |
 | "JWST found H0 = 69, so the tension is gone." | CCHP's best estimate is 70.39 ± 1.22 (stat) ± 1.33 (sys) ± 0.70 (sigma_SN); the distances agree with SH0ES at just over 1%; the difference is the SN calibrator subsample | arXiv:2408.06153; arXiv:2408.11770; arXiv:2504.08921 (abstract of each) |
 | "The TRGB gives 69.8." | That is the 2021 CCHP HST value; the complete 35-calibrator TRGB sample gives 72.1-73.3 ± 1.8, and no CATS variant is below 71.6 | arXiv:2106.15656; arXiv:2304.06693; arXiv:2504.08921 (abstract of each) |
-| "Lensing gives 73.3 at 2.4%, 5.3 sigma with the ladder." | Assumed power-law or composite profiles; with the mass-sheet degeneracy free the result is 71.6 (+3.9/-3.3) | arXiv:1907.04869; arXiv:2007.02941; arXiv:2506.03023 (abstract of each) |
+| "Lensing gives 73.3 at 2.4%, 5.3 sigma with the ladder." | Assumed power-law or composite profiles; with the mass-sheet degeneracy free the result is 71.6 (+3.9/-3.3) in 2025 and 71.1 (+2.4/-2.3) in 2026 | arXiv:1907.04869; arXiv:2007.02941; arXiv:2506.03023; arXiv:2610.14781 (abstract of each) |
 | "Megamasers independently confirm 73.9." | No flow correction in that value; 2026 reanalyses give 66.9 ± 2.5, 68.4 ± 2.5 and 68.8 ± 2.6 for velocity noise of 50, 100 and 150 km/s (Table 2), or 71.6 ± 3.7 (abstract) | arXiv:2001.09213 (abstract); arXiv:2608.06247; arXiv:2609.17684 |
 | "The tension is 4.4 sigma" (or "5 sigma") with no qualifier. | 4.4 is the 2019 figure (abstract) and 5.0 the 2022 one (Sect. 5) against Planck; H0DN states 7.1 sigma against Planck+SPT+ACT and 5.0 against BBN + DESI BAO (abstract); the figure depends on the early-Universe endpoint | arXiv:1903.07603; arXiv:2112.04510; arXiv:2510.23823; `results.md#tension-significance-computed-uniformly` |
 | "Planck is the outlier." | SPT-3G alone gives 66.66 ± 0.60 (abstract); BAO + BBN gives 68.51 ± 0.58 with no CMB anisotropies (Eq. 19) | arXiv:2506.20707; arXiv:2503.14738 |
@@ -308,7 +326,7 @@ measurement.
 | "The Cepheid metallicity term could shift H0 by per cents." | Anchors and hosts have similar metallicity; gamma matters for dwarf-galaxy distances, not for H0 | arXiv:2507.15936 |
 | "A volume prior lowers H0 to 70.6, so the tension is statistical." | Without the selection term the model fails posterior predictive checks; with it the SH0ES zero point is recovered | arXiv:2601.22215; arXiv:2603.09880 (abstract of each) |
 | "Use the SH0ES H0 as a Gaussian prior in a cosmological fit." | Double counts low-z SNe and fixes q0; use the M_B calibration | arXiv:2103.08723 |
-| "Standard sirens already weigh in." | 75.4 (+12.8/-9.1) from GWTC-4.0 | arXiv:2509.04348 (abstract) |
+| "Standard sirens already weigh in." | 71.7 (+9.4/-7.5) from GWTC-5.0, after 75.4 (+12.8/-9.1) from GWTC-4.0: too wide to arbitrate | arXiv:2605.27227; arXiv:2509.04348 (abstract of each) |
 
 ## Not verified
 <!-- key: not-verified -->
@@ -326,5 +344,7 @@ measurement.
   them, read this session, is not in `sources.tsv`).
 - Claims of anisotropy or redshift evolution ("running") of H0: several 2025-
   2026 preprints were seen in searches and not read.
-- Whether a TDCOSMO-2026 or SH0ES-2026 milestone paper has appeared after
-  1 October 2026.
+- A SH0ES-2026 milestone paper: none was found in date-sorted arXiv searches
+  (abstract words "Hubble constant", Cepheid, SH0ES; 2026-10-10 to
+  2026-10-26) nor among the INSPIRE citations of arXiv:2509.01667 since
+  2026-10-01. TDCOSMO-2026 has appeared (arXiv:2610.14781).

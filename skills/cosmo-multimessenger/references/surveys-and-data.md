@@ -1,7 +1,7 @@
 # Surveys and data — gravitational-wave detectors and catalogues, galaxy catalogues, FRB facilities, lensed-transient samples
 
 Scope: every detector run, catalogue and sample that enters multi-messenger cosmology, past to planned, with status at the snapshot date.
-Snapshot: 2026-10-13 (deepening pass, 12–13 October; first build 2026-10-07, searches 2026-10-10)
+Snapshot: 2026-10-26 (light refresh, searches 2026-10-26 from 2026-10-08 on; deepening pass 12–13 October; first build 2026-10-07)
 
 Provenance flags as in the other files. Instrument descriptions of LIGO–Virgo–KAGRA,
 CHIME, MeerKAT and SKA are in `cosmo-surveys-facilities`; this file holds what a
@@ -85,7 +85,7 @@ cosmology papers) was not read this session; see "Not verified".
 | DES Y3 photo-z | photometric | — | GW170814 | arXiv:1901.01540 |
 | DES Y6 Gold | photometric; restricted to `0.05 < z < 0.50` to keep the galaxy distribution consistent with uniform in comoving volume [src] | — | GWTC-4.0 external analysis; fiducial catalogue of GWTC-5.0 with luminosity weighting [src] | arXiv:2602.04766, arXiv:2605.27227 |
 | DESI Legacy Imaging Survey | photometric, photo-z PDFs from a deep-learning model [src] | magnitude-limited; incompleteness modelled in the 2026 analysis [src] | 8, 15, then 17 well-localised dark sirens [src: abstract of each] | arXiv:2111.06445, arXiv:2404.16092, arXiv:2603.20195 |
-| DELVE | photometric (DECam) | — | GW190924_021846, GW200202_154313 | arXiv:2310.13695 |
+| DELVE | photometric (DECam); DR3 used with `15.5 < m_r < 20` and de-biasing by survey depth and photo-z precision [src: abstract of arXiv:2610.25909] | — | GW190924_021846, GW200202_154313; GWTC-5.0 dark sirens (2026) | arXiv:2310.13695, arXiv:2610.25909 |
 | 2MPZ, WISE×SuperCOSMOS | photometric, all-sky | — | GWTC-3 cross-correlation | arXiv:2203.03643 |
 | DESI spectroscopy around NGC 4993 | spectroscopic, dedicated | 39 group galaxies, five times more than before [src: abstract] | GW170817 host environment | arXiv:2512.08818 |
 | HETDEX internal release 5 (VIRUS) | spectroscopic, integral-field | "exquisite completeness within z = 0.2" [src: abstract] | **forecast** for follow-up of golden and silver sirens | arXiv:2512.21729 |
@@ -169,12 +169,13 @@ population model is part of the cosmological likelihood through `DM_host`.
 
 | Object | Type, source redshift | Lens | Delay data | H0 paper |
 |---|---|---|---|---|
-| SN Refsdal | multiply imaged supernova; reappearance observed in 2015 as predicted [src] | massive galaxy cluster, MACS J1149 [src: arXiv:2305.06367, Supplementary] | reappearance delay | arXiv:2305.06367, arXiv:2509.09979 |
+| SN Refsdal | multiply imaged supernova; reappearance observed in 2015 as predicted [src] | massive galaxy cluster, MACS J1149 [src: arXiv:2305.06367, Supplementary] | reappearance delay | arXiv:2305.06367, arXiv:2509.09979, arXiv:2610.12595 |
 | SN H0pe | Type Ia, `z = 1.78`, three images [src: abstract] | cluster PLCK G165.7+67.0, `z = 0.35` [src] | JWST photometry and spectroscopy, two relative delays [src] | arXiv:2403.18902 |
 | SN Encore | Type Ia, `z = 1.95` [src: abstract] | cluster MACS J0138.0−2155 [src] | `Δt = −39.8 (+3.9/−3.3)` days [src] | arXiv:2509.12301 |
 | SN Requiem | sibling of Encore in the same host; a fourth image is expected within a few years [src] | same cluster | pending | arXiv:2509.12301 |
 | SN 2025wny | Type I superluminous, `z = 2.015`, first of its class to be strongly lensed; four deblended images [src: abstract] | galaxy-scale lens | `Δt_AB = −10.6 (+2.2/−2.5)` days photometric [src] | arXiv:2608.28427 |
-| TDCOSMO-2025 | 8 lensed quasars, with 11 SLACS and 4 SL2S non-time-delay lenses [src: abstract] | galaxy-scale lenses | long-term monitoring | arXiv:2506.03023 |
+| TDCOSMO-2025 | 8 lensed quasars, with 11 SLACS and 4 SL2S non-time-delay lenses [src: abstract]; superseded by TDCOSMO-2026 | galaxy-scale lenses | long-term monitoring | arXiv:2506.03023 |
+| TDCOSMO-2026 | 11 lensed quasars, HST and JWST imaging, dynamics from JWST-NIRSpec, VLT-MUSE and Keck-KCWI [src: abstract] | galaxy-scale lenses | time delays | arXiv:2610.14881 |
 
 Three lensed supernovae had given H0 by September 2025 (Refsdal, H0pe, Encore;
 arXiv:2509.12301) [src: abstract]; SN 2025wny is the fourth, and the only galaxy-scale system

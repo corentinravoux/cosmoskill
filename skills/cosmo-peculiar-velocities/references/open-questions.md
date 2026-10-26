@@ -2,7 +2,7 @@
 
 Scope: live controversies with both sides cited, internal tensions between analyses of the same
 data, method debates, forecasts (labelled), what the next data decide, and the stale claims that
-still circulate. Snapshot: 2026-10-14
+still circulate. Snapshot: 2026-10-26
 
 The two controversies of the 2026-08 compilation (FP against TF and SNe; the contested bulk flow)
 are merged into §1 and §3; its reading of the fσ8 table and its open gaps are in §4 and the last section. Flags
@@ -184,6 +184,10 @@ Related internal inconsistency: the Planck ΛCDM value at z = 0.07 is quoted as 
   less than 70 Mpc", under 10 % of the size required, with a predicted local H0 of 70.2–72.1
   km/s/Mpc depending on the profile (Stiskalek, Desmond & Banik 2025, arXiv:2506.10518) [src: abstract]. This
   belongs to `cosmo-distance-ladder-h0` and `cosmo-tensions-anomalies`.
+- On the density side, a hierarchical forward model of the luminosity density of 2MRS, 6dFGS and
+  GAMA over 0.005 < z < 0.065 finds "no evidence for a large coherent underdensity" within that
+  volume; the exception is the nearest shell at z ≃ 0.01, about 0.12 dex (about 25 %) below the smooth
+  global model, a −2.6σ underdensity (Bansal et al. 2026, arXiv:2609.36462) [src: abstract].
 
 ---
 

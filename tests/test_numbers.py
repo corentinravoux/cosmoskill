@@ -91,6 +91,7 @@ class NumbersTest(unittest.TestCase):
                                   today=date(2026, 10, 26)), "stale-doc")
         self.assertEqual(check_numbers.stale_limit(date(2028, 2, 29)), date(2026, 2, 28))
         self.assertNotIn("stale-doc", check_numbers.PASSING)
+        self.assertEqual(classify("lists the `[doc]` facts by read date; `[doc: <page>, <date>]` is the form", ""), "none")
 
     def test_old_src(self):
         """A [src]/[sec] flag that names a code or web source must become [doc] (owner, 2026-10-26)."""

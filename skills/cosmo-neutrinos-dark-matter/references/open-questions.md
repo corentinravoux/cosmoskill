@@ -1,7 +1,7 @@
 # Open questions — neutrino mass, light relics and dark-matter properties from structure
 
 Scope: the live controversies with both sides cited, tensions between analyses, method debates, what the next data decide, labelled forecasts, and the stale claims that still circulate.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-26
 
 Flags: `[src]` read in the cited paper this session; `[sec]` taken from a named secondary source; `[der]` derived here. Forecasts are labelled **forecast**. Numbers without a flag in this file are repeated from `results.md`, where they carry one.
 
@@ -28,6 +28,7 @@ Flags: `[src]` read in the cited paper this session; `[sec]` taken from a named 
 - Changing the neutrino abundance does not help: the limit moves by at most 0.004 eV, and a lower neutrino temperature makes the tension worse (Figueroa, Sobotka & Erickcek 2026, arXiv:2609.15970 [src: abstract]).
 - Decaying dark matter relaxes the bound only if lensing and perturbation data are ignored (Montandon et al. 2026, arXiv:2603.03284).
 - An external full-shape + bispectrum analysis tightens the limit to 0.049 eV (Ivanov et al. 2026, arXiv:2601.16165, abstract).
+- Geometry and growth agree. Splitting Σm_ν into a parameter that sets distances and one that sets perturbation growth gives −0.07 ± 0.10 eV and −0.13 (+0.10/−0.12) eV, with similar sensitivity, and the difference passes a ΛCDM null test at 0.4σ (Ge et al. 2026, arXiv:2610.20977 [src: abstract]). The same paper argues (Fisher **forecast**) that a wrong dark-energy model would mostly shift the geometric parameter and an underestimated τ the growth one, so the split can tell the two explanations of §1.2 apart.
 
 **Where it stands.** The tension is 3σ at most, in one model (ΛCDM), with one τ. It is the same anomaly as the w0wa preference seen from another parameter, not an independent one; `cosmo-dark-energy-modified-gravity` holds the dark-energy side. Nothing in the data requires a statement about neutrinos beyond "Σm_ν is small in ΛCDM".
 
@@ -55,6 +56,7 @@ Qu et al. 2026 (arXiv:2607.24742) obtain Σm_ν < 0.152 eV with (w0, wa) margina
 - **Cosmology says "moderately" to "decisively", depending on the prior.** K = 10 (DESI DR2 + CMB + NuFIT 6.0; 6 with L-H, 8 with plik), Δχ² = 4.6 (arXiv:2503.14744, Sects. IV.3, V.1); 46.5 with more data and another prior (arXiv:2407.18047, abstract); above 460 in ΛCDM and above 40 in extensions (Jimenez et al. 2026, arXiv:2606.18987, abstract), with a stated factor of about 10 from the prior measure alone; 3.5σ (ΛCDM) or 2.4σ (w0waCDM) in the EFT reanalysis (arXiv:2601.16165, abstract); "∼98% confidence" from P-ACT-LB (arXiv:2503.14454 [src: Sect. VI.1.1]).
 - **Oscillations alone do not.** NuFIT 6.0 finds both orderings fit almost equally well; Δχ² = 6.1 for normal ordering only with the Super-Kamiokande atmospheric table (Esteban et al. 2024, arXiv:2410.05380, abstract).
 - **JUNO has started to.** With 207.2 live days and accelerator constraints on Δm²_31, normal ordering is favoured at ≥ 2.1σ, Bayes factor 10.18 (JUNO Collaboration 2026, arXiv:2609.37895 [src: abstract]).
+- **Atmospheric data now favour it too.** An external combination of Super-Kamiokande, IceCube-DeepCore and KM3NeT/ORCA-6 excludes the inverted ordering at 3.3σ, and at 3.9σ when 207 days of JUNO data are added (Jin et al. 2026, arXiv:2610.12208 [src: abstract]). It is not a collaboration result and has not yet entered a global fit such as NuFIT.
 - **The caveats.** The cosmological preference exists only where the upper limit lies between 0.059 and 0.10 eV (arXiv:2503.14744, Sect. I), which holds in ΛCDM and wCDM and fails in w0waCDM (< 0.163 eV, arXiv:2503.14744, abstract; < 0.117, 0.139 or 0.129 eV with Pantheon+, Union3 or DESY5, arXiv:2503.14744, Sect. IV.5). ACT notes that it depends on the use of DESI BAO. A text may say that cosmology in ΛCDM and JUNO point the same way; it may not multiply the two Bayes factors without stating the model assumption.
 
 ### 1.5 Bayesian or frequentist?
@@ -85,7 +87,7 @@ If KATRIN or a double-beta experiment measured a mass above the cosmological lim
 - **Low or high?** CMB-only values lie below 3.044 (ACT 2.60 +0.21/−0.29, P-ACT 2.73 ± 0.14, CMB-SPA 2.82 ± 0.12), values with DESI BAO lie above (3.23 ± 0.18 with Planck, 3.53 ± 0.23 with SPT-3G D1) (arXiv:2503.14454, Sect. VI.1.1; Camphuis et al. 2025, arXiv:2506.20707, Eqs. 73, 86; arXiv:2503.14744, Sect. IV.3). The upward pull is the same BAO–CMB mismatch as in §1.
 - **Is the ACT damping-tail preference real?** ACT prefers less damping than the Planck best fit; SPT-3G D1 alone gives 3.18 (+0.29/−0.33) (arXiv:2506.20707, Eq. 71). Late photon heating cannot produce a low N_eff without violating FIRAS (`systematics.md` §9). SPT-3G wide fields and SO decide [sec: `cosmo-cmb`].
 - **What BBN adds.** N_ν = 2.925 ± 0.082 from the LBT helium measurement with D/H and the CMB (Yeh et al. 2026, arXiv:2601.22239, abstract), also below 3 by about 1σ; light elements alone give ΔN_eff = −0.14 ± 0.21 with rates marginalised (Schöneberg 2024, arXiv:2401.15054, abstract). Whether the rate uncertainty or the helium systematics dominate the BBN side is not settled between those two treatments.
-- **How much dark radiation is allowed?** ΔN_eff < 0.17 (P-ACT-LB, free-streaming) and N_idr < 0.134 (fluid) (arXiv:2503.14454, Sect. VI.1.1; abstract), but < 0.58 if the primordial spectrum is not a pure power law (Garny, Niedermann & Sloth 2026, arXiv:2604.26541, abstract). ACT DR6 closes most of the room that stepped and interacting dark-radiation models used to raise H0 (Cvetko, Joseph & Marques-Tavares 2025, arXiv:2512.19633); the strongly self-interacting neutrino mode of Kreisch, Cyr-Racine & Doré 2019 (arXiv:1902.00534) finds no support in ACT DR6 + Planck.
+- **How much dark radiation is allowed?** ΔN_eff < 0.17 (P-ACT-LB, free-streaming) and N_idr < 0.134 (fluid) (arXiv:2503.14454, Sect. VI.1.1; abstract), but < 0.58 if the primordial spectrum is not a pure power law (Garny, Niedermann & Sloth 2026, arXiv:2604.26541, abstract). ACT DR6 closes most of the room that stepped and interacting dark-radiation models used to raise H0 (Cvetko, Joseph & Marques-Tavares 2025, arXiv:2512.19633); the strongly self-interacting neutrino mode of Kreisch, Cyr-Racine & Doré 2019 (arXiv:1902.00534) finds no support in ACT DR6 + Planck, and DESI DR1 full shape + BAO + CMB-SPA disfavour it with odds of 5:100000 (Noriega et al. 2026, arXiv:2610.26654 [src: abstract]). Adding the DESI DR1 Lyα P1D to Planck and DESI DR2 BAO gives N_eff < 3.41 (95%) (Silva et al. 2026, arXiv:2609.22581 [src: abstract]).
 - **Phase shift.** 2.6σ evidence for β_φ > 0 in DESI DR2 BAO, up from 1.6σ in DR1 (arXiv:2503.14744, Sect. IV.2). It is the model-independent signature of free streaming (Bashinsky & Seljak 2003, arXiv:astro-ph/0310198), not yet a constraint on N_eff.
 - **Forecasts.** σ(N_eff) = 0.045 for the enhanced SO LAT (**forecast**, arXiv:2503.00636 [src]); ΔN_eff < 0.144 (95%) for Euclid + Planck (**forecast**, arXiv:2405.06047 [src]). The thresholds they are measured against: the minimum contribution of one additional thermalised species is 0.027 for a scalar and 0.095 for a spin-3/2 fermion (arXiv:2503.14454 Sect. 6.1.1 [src]).
 
@@ -128,7 +130,7 @@ The line was reported in a stack of 73 clusters (Bulbul et al. 2014, arXiv:1402.
 
 - **Constant cross section.** The value of order 1 cm²/g proposed for dwarf cores (Spergel & Steinhardt 1999, arXiv:astro-ph/9909386) is excluded on cluster scales: < 0.47 cm²/g from 72 mergers (Harvey et al. 2015, arXiv:1503.07675), < 0.35 cm²/g from relaxed clusters (Sagunski et al. 2020, arXiv:2006.12515), < 0.13 cm²/g from cluster strong lensing (Andrade et al. 2020, arXiv:2012.06611).
 - **Velocity dependence.** About 2 cm²/g on galaxy scales falling to 0.1 cm²/g in clusters fits dwarfs to clusters (Kaplinghat, Tulin & Yu 2015, arXiv:1508.03339, abstract); groups give 0.5 ± 0.2 cm²/g (arXiv:2006.12515, abstract). This is a consistent picture, not a detection: the galaxy-scale value rests on Jeans modelling with baryons.
-- **Core collapse.** With gravothermal collapse included, rotation curves admit a second solution near 100 cm²/g with a velocity scale of about 60 km/s (Jia et al. 2026, arXiv:2601.17118, abstract). Whether dense dwarfs and lensing perturbers are core-collapsed haloes is the active question of the field; reviews: Tulin & Yu 2017 (arXiv:1705.02358), Adhikari et al. 2022 (arXiv:2207.10638).
+- **Core collapse.** With gravothermal collapse included, rotation curves admit a second solution near 100 cm²/g with a velocity scale of about 60 km/s (Jia et al. 2026, arXiv:2601.17118, abstract). Whether dense dwarfs and lensing perturbers are core-collapsed haloes is the active question of the field. It moved in September–October 2026: the 29-quad JWST sample prefers core-collapsed haloes, with Bayes factors from 8:1 to 24:1 against CDM, unless globular clusters and subhaloes are both more abundant than expected (Gilman et al. 2026, arXiv:2609.35974 [src: abstract]); none of more than 5000 subhaloes in a CDM zoom-in of a Milky Way analogue is dense enough to match the observed compact perturbers (Zhang et al. 2026, arXiv:2610.27236 [src: abstract]); a semi-analytic model reproduces the three gravitational-imaging perturbers (PJ011646, SDSS J0946+1006, JVAS B1938+666) more often in SIDM than in CDM for σ0/m_χ = 147.1 cm²/g and w = 120 km/s (Tekverk et al. 2026, arXiv:2610.31881 [src: abstract]). The PJ011646 subhalo itself, M200 = 2.78 (+0.43/−0.66) × 10¹⁰ M⊙ with c200 = 30 (+5/−7) at about 5.8σ, is stated by its discoverers to be consistent with a typical tidally stripped NFW subhalo (Amvrosiadis et al. 2026, arXiv:2605.21212 [src: abstract]), so the perturber evidence is not uniform. Reviews: Tulin & Yu 2017 (arXiv:1705.02358), Adhikari et al. 2022 (arXiv:2207.10638).
 - **The Bullet Cluster number.** σ/m < 1.25 cm²/g is a 68% limit (Randall et al. 2007, arXiv:0704.0261, abstract), and resimulation shows the offset method was overinterpreted (Robertson, Massey & Eke 2016, arXiv:1605.04307).
 
 ## 6. Interacting and decaying dark matter
@@ -162,7 +164,7 @@ The line was reported in a stack of 73 clusters (Bulbul et al. 2014, arXiv:1402.
 | "BAO constrain the neutrino mass" | BAO alone do not; they constrain Ω_m | arXiv:2503.14744 Sect. 3.1 |
 | "The Lyα forest tightens the neutrino limit" | DESI DR1 P1D does not significantly tighten it | Chaves-Montero et al. 2026, arXiv:2601.21432 |
 | "Cosmology has established the normal ordering" | K from 10 to above 460 with the prior; valid in ΛCDM only | arXiv:2606.18987, abstract; arXiv:2503.14744 |
-| "Oscillation data alone establish the normal ordering" | NuFIT 6.0: almost equal without the Super-Kamiokande table; JUNO-based ≥ 2.1σ | arXiv:2410.05380; arXiv:2609.37895 (abstract of each) |
+| "Oscillation data alone establish the normal ordering" | NuFIT 6.0: almost equal without the Super-Kamiokande table; JUNO-based ≥ 2.1σ; an external atmospheric + JUNO combination 3.9σ, not yet in a global fit | arXiv:2410.05380; arXiv:2609.37895; arXiv:2610.12208 (abstract of each) |
 | A KATRIN limit quoted at 95%, or read as a limit on Σm_ν | < 0.45 eV at 90% CL (259 days) on the effective electron-neutrino mass; a limit on Σm_ν follows only for nearly degenerate masses | Aker et al. 2024, arXiv:2406.13516, abstract |
 | "N_eff = 3.046 in the Standard Model" | 3.044 | Froustey, Pitrou & Volpe 2020, arXiv:2008.01074, abstract; Bennett et al. 2019, arXiv:1911.04504, abstract |
 | "CMB-S4 will measure N_eff and detect the neutrino mass in the 2030s" | CMB-S4 lost its agency support in July 2025; SO forecasts 0.045 and 0.03 eV | [sec: `cosmo-cmb`]; arXiv:2503.00636, Sect. 4 |
@@ -173,7 +175,7 @@ The line was reported in a stack of 73 clusters (Bulbul et al. 2014, arXiv:1402.
 | "A 6 keV thermal-relic limit excludes a 6 keV sterile neutrino" | the mapping depends on production; the same data gave 550 eV and 2.0 keV | Viel et al. 2005, arXiv:astro-ph/0501562, abstract |
 | "Fuzzy dark matter of 10⁻²² eV solves small-scale problems" | excluded as all of the dark matter by Lyα, satellites, streams, lensing and dwarfs | arXiv:2007.12705, abstract; arXiv:2008.00022, abstract; Banik et al. 2019, arXiv:1911.02663, abstract; Powell et al. 2023, arXiv:2302.10941, abstract |
 | "The Bullet Cluster requires σ/m < 1 cm²/g" quoted as a 95% limit | 1.25 cm²/g at 68%; method criticised | arXiv:0704.0261, abstract; arXiv:1605.04307 |
-| "Self-interacting neutrinos solve the Hubble tension" | no evidence in ACT DR6 + Planck | arXiv:2503.14454 |
+| "Self-interacting neutrinos solve the Hubble tension" | no evidence in ACT DR6 + Planck; strongly interacting mode disfavoured at odds of 5:100000 with DESI + CMB-SPA | arXiv:2503.14454; arXiv:2610.26654, abstract |
 | "The 3.5 keV line is excluded" or "is dark matter" | both contested; the exclusion depends on background modelling | arXiv:1812.06976, abstract; arXiv:2004.06601, abstract |
 | "Joint lensing + satellite limit" quoted as current | not redone with the JWST lenses | Gilman et al. 2019, arXiv:1908.06983; Gilman et al. 2026, arXiv:2606.05277 |
 
@@ -182,7 +184,7 @@ Supporting references for rows above: the standard review of neutrino cosmology 
 ## 9. Not verified
 <!-- key: not-verified -->
 
-- Whether a KATRIN result from the complete data set, or a published LEGEND-200 limit, exists at the snapshot.
+- Whether a KATRIN result from the complete data set exists at the snapshot (none on arXiv in a title search, 2026-10-26). LEGEND-200 limits exist only in conference proceedings (arXiv:2603.12884, abstract; `results.md` §1.1).
 - The positive Σm_ν in w0waCDM reported in the hub file from a joint DESI + CMB + DES analysis was not read here.
 - Whether thermal relics above 6 keV still alter any small-scale structure observable.
 - The status of the 3.5 keV line in microcalorimeter data. <!-- num: not a value -->

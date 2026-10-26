@@ -3,7 +3,7 @@
 Scope: measured calibration precision, photo-z performance and n(z)
 characterisation accuracy of surveys and methods, challenge results, and
 which numbers are superseded.
-Snapshot: 2026-10-16
+Snapshot: 2026-10-26
 
 Flags: `[src]` read this session in the abstract of the cited paper;
 `[src: Sect. n]`, `[src: Table n]` read in the body; `[sec]` from a named
@@ -57,6 +57,7 @@ pattern, supernova distances to the absolute and inter-band scale
 | PAUS wide fields | i_AB < 23 | σ_68 ≃ 0.019 (0.003–0.02 for z_b ~ 0.1–0.75) | bias < 0.01 | arXiv:2312.07581 [src: abstract] |
 | KiDS-1000, pop-cosmos | DESI BGS / LRG matches | σ_MAD = 0.03 / 0.05 | 3.2% / 1.0% | arXiv:2602.03930 [src: abstract] |
 | PAUS 40 narrow bands, Flagship 2 simulation | like the spectroscopic validation sample / complete to i ≲ 23 | σ_NMAD/(1+z) = 0.011 / 0.028 | < 10% | arXiv:2606.25812 [src: abstract] |
+| SPHEREx 102 channels, TractorJAX forced photometry, nine fields | m_z < 21 sources with spectra (7781, mostly COSMOS and Coma), 2253 with S/N > 5 in at least half of the channels | σ_NMAD = 0.0080 | — | arXiv:2610.16007 [src: Sect. II.2, IV.3] |
 
 Rubin DP1 is the first photo-z test on LSST Commissioning Camera data; the
 bias and scatter of its machine-learning photo-z meet the LSST Y1
@@ -72,12 +73,26 @@ inherit the training-set redshift distribution [src: Sect. 4.2, 4.4].
 Assigning five equipopulated bins from the mode is right for 59–78% of
 galaxies [src: Table 2].
 
+A test of the 102-channel photo-z on SPHEREx observed data shows, on a
+bright comparison sample, that the cost of forced photometry depends
+on the depth of the fitted catalogue. Fitting the full Legacy Surveys DR10
+catalogue instead of m_z < 21 leaves 1357 reliable sources against 2253,
+and on sources reliable at both depths σ_NMAD is 1.17 times larger; external
+flux priors recover the sample but add 0.0015 to σ_NMAD (Bahk & Hwang 2026,
+arXiv:2610.16007) [src: abstract, Sect. IV.3–IV.4]. The comparison sample is
+brighter than the survey population and concentrated in two fields
+[src: Sect. V.2].
+
 Adding bands. Infrared bands help mainly at high redshift: for DES Y6 Gold, adding WISE
 W1 and W2 to DNF improves scatter, bias and outlier fraction, adding VHS at
 the available depth gives no further gain at z < 1.5, and infrared data with
 S/N < 10 add nothing (Puebla et al. 2026, arXiv:2607.07771) [src: abstract]. Euclid
 near-infrared photometry improves Rubin DP1 photo-z at z > 1.2 (Zhang et al.
-2025, arXiv:2510.07370) [src: abstract].
+2025, arXiv:2510.07370) [src: abstract]. In simulated Rubin and Roman images
+processed with the LSST Science Pipelines, Roman photometry matters above
+z ~ 1.5 and adding Rubin photometry improves Roman photo-z at all redshifts,
+while extra photometric systematics degrade photo-z most at high redshift
+(**forecast**; Shin et al. 2026, arXiv:2610.22547) [src: abstract].
 
 ## 3. Ensemble n(z) characterisation
 <!-- key: ensemble-n-z-characterisation -->
@@ -260,8 +275,8 @@ year-1 LSS goals (arXiv:2510.07370) [src: Sect. 4.2].
 <!-- key: not-verified -->
 
 - No published Rubin LSST or Euclid DR1 n(z) calibration on wide-survey data
-  was found; the Rubin and Euclid numbers above are from commissioning data,
-  Q1 or mocks.
+  was found (searched again on 2026-10-26); the Rubin and Euclid numbers
+  above are from commissioning data, Q1 or mocks.
 - The DESC SRD requirements, formerly quoted through the Newman & Gruen
   review, were read in the SRD body this session (§6 above).
 - The outlier threshold of the PAUS entries was not read in the bodies

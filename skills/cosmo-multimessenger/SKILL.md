@@ -5,7 +5,7 @@ description: Use when reviewing, planning or fact-checking multi-messenger cosmo
 
 # Multi-messenger cosmology — expert reference
 
-Snapshot 2026-10-13. Numbers carry provenance flags ([src] / [sec] / [der]);
+Snapshot 2026-10-26. Numbers carry provenance flags ([src] / [sec] / [der]);
 re-verify against the cited paper before a number enters a manuscript.
 
 ## File map
@@ -63,8 +63,11 @@ re-verify against the cited paper before a number enters a manuscript.
   (arXiv:2305.07022); 71.28 (+1.90/−2.08) is statistical only (arXiv:2507.18946)
   [src: abstract of each]:
   host model, Galactic halo and scatter parameter each move it by about 3σ.
+  With DESI DR2 BAO in place of a BBN prior, 71.4 (+2.2/−2.5) from 120 localised
+  bursts (arXiv:2610.15536) [src: abstract].
 - Lensed supernovae [src: abstract of each]: Refsdal 64.8 (eight models) or 66.6 (two
-  best models) (arXiv:2305.06367), H0pe 75.7
+  best models) (arXiv:2305.06367), 65.0 with the cluster mass parametrisation held fixed
+  (arXiv:2610.12595), H0pe 75.7
   (arXiv:2403.18902), Encore 66.9 (arXiv:2509.12301), SN 2025wny 70.8
   (arXiv:2608.28427).
 - The 2017 forecast of 2% in five years (arXiv:1712.06531) assumed counterparts
@@ -127,7 +130,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 7k; methods 12k; results 7k; surveys 5k; systematics 14k; deep/frb-baryon-distribution 7k; deep/frb-hubble-constant 8k; deep/gw-lensing 8k; deep/gw-lss-cross-correlation 8k; deep/next-generation-siren-forecasts 7k; deep/spectral-sirens 7k.
+Sizes, in thousands of tokens: L1 3k; open 7k; methods 12k; results 8k; surveys 5k; systematics 14k; deep/frb-baryon-distribution 7k; deep/frb-hubble-constant 8k; deep/gw-lensing 8k; deep/gw-lss-cross-correlation 8k; deep/next-generation-siren-forecasts 7k; deep/spectral-sirens 7k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

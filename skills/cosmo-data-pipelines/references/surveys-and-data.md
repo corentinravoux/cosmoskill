@@ -3,7 +3,7 @@
 Scope: which pipeline each survey runs, what its releases contain at catalogue
 and map level, and where the products live. Instrument facts and release
 dates are in `cosmo-surveys-facilities`.
-Snapshot: 2026-10-16
+Snapshot: 2026-10-26
 
 Flags: `[src]` abstract read this session; `[src: Sect. n]`, `[src: Table n]`
 body read; `[sec]` named secondary source; `[der]` derived here.
@@ -145,6 +145,7 @@ this table keeps catalogue- and map-level content.
 | Legacy Surveys | g, r, z over a ~14,000 deg² design footprint plus WISE forced photometry; Tractor catalogue; software released with data | arXiv:1804.08657 [src: abstract] |
 | Euclid Q1 | 63.1 deg² at wide-survey depth; ~30M objects; ~3M validated red-grism spectra; early pipeline versions; masks | arXiv:2503.15302, arXiv:2503.15307 [src: abstract of each] |
 | Rubin DP1 | 1792 LSSTComCam exposures over 48 nights; ~15 deg² in seven fields; images, co-adds, difference images, catalogues, survey-property maps; ~2.3M objects; ~3.5 TB on the Rubin Science Platform | arXiv:2603.23786 [src: abstract] |
+| Rubin DP2 | early LSSTCam observations from April 2025 to January 2026, processed with Science Pipelines v30; co-added images and catalogues over ~3000 deg², single-epoch images and catalogues over ~15,000 deg²; Early DP2 released Monday July 27 2026 with deep co-adds only but all catalogues, including measurements on processed visit and difference images; full DP2 expected Nov–Dec 2026 | [doc: https://dp2.lsst.io/, 2026-10-26] |
 | Planck NPIPE | frequency maps, raw and processed TOD, software, 600 end-to-end simulations | arXiv:2007.04997 [src: abstract] |
 | ACT DR6 | maps at 98, 150, 220 GHz over 19,000 deg², null-test splits, depth-1 maps, matched-filtered and ILC maps; on LAMBDA | arXiv:2503.14451 [src: abstract] |
 | SPT-3G D1 | Main-field maps at 95, 150, 220 GHz from 2019–2020 over 4% of the sky, public | arXiv:2603.20163 [src: abstract] |
@@ -158,7 +159,7 @@ Versions, maintenance and installation are in `cosmo-software-ecosystem`.
 |---|---|
 | Targeting, fibre assignment, LSS catalogues | desitarget (arXiv:2208.08518); altMTL realisations (arXiv:2404.03006); DESI LSS pipeline (arXiv:2405.16593); MKSAMPLE (arXiv:1509.06529); mangle (arXiv:0711.4352) |
 | Spectroscopic reduction and redshifts | DESI spectroscopic pipeline and Redrock (arXiv:2209.14482); redmonster (arXiv:1607.02432); autoz (arXiv:1404.2626); QuasarNET (arXiv:1808.09955); Euclid SIR and SPE (arXiv:2503.15307, arXiv:2503.15308) |
-| Imaging reduction | LSST Science Pipelines (arXiv:1512.07914, arXiv:2603.23786); HSC pipeline (arXiv:1705.06766); DESDM (arXiv:1801.03177); Astro-WISE and THELI (arXiv:1902.11265); Euclid VIS (arXiv:2503.15303) |
+| Imaging reduction | LSST Science Pipelines (arXiv:1512.07914, arXiv:2603.23786, arXiv:2610.22613); HSC pipeline (arXiv:1705.06766); DESDM (arXiv:1801.03177); Astro-WISE and THELI (arXiv:1902.11265); Euclid VIS (arXiv:2503.15303) |
 | Detection, deblending, photometry | SExtractor (doi:10.1051/aas:1996164); SCARLET (arXiv:1802.10157); Tractor (arXiv:1804.08657); DeepDISC (arXiv:2610.10986); BLISS (arXiv:2601.03422) |
 | PSF | Piff (arXiv:2011.03409, arXiv:2501.05781); PSFEx as used in HSC (arXiv:1705.06766) |
 | Imaging-systematics weights | SYSNet (arXiv:1907.11355) |
@@ -175,7 +176,11 @@ Versions, maintenance and installation are in `cosmo-software-ecosystem`.
   brought only modest gains there because of the short baseline and small
   ComCam distortions, and is expected to matter more for LSSTCam
   [src: arXiv:2603.23786, Sect. V.3]. Piff is the planned default PSF code
-  (arXiv:2501.05781) [src].
+  (arXiv:2501.05781) [src]. The LSST Science Pipelines software, used for the
+  data releases and for nightly prompt processing and alert production, now
+  has an overview paper describing its components and their integration,
+  without algorithm or data-product detail (Rubin Observatory Science
+  Pipelines Developers 2026, arXiv:2610.22613) [src: abstract].
 - **Euclid.** Q1 used early versions of every processing function, with
   improvements planned for DR1 and later releases, and the reliability of
   automated NISP redshifts is the stated main challenge, harder when DR1

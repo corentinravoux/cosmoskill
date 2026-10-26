@@ -1,6 +1,6 @@
 # surveys-and-data — cosmo-inflation-primordial
 
-Snapshot: 2026-10-07
+Snapshot: 2026-10-26
 
 Scope: the experiments and data releases behind primordial-physics constraints — B-mode polarimeters, the CMB temperature and polarisation data that fix n_s, the CMB and galaxy data used for non-Gaussianity, curvature, features and birefringence — past, current and planned.
 
@@ -25,7 +25,7 @@ General CMB instrument descriptions (Planck, ACT, SPT-3G, their likelihoods and 
 <!-- key: current -->
 
 - **BICEP3 and BICEP Array (South Pole).** The collaboration is preparing a "BK24" release covering data from 2016 through 2024. For BICEP3 at 95 GHz over 2016–2024 the residual temperature-to-polarisation leakage after extended deprojection is equivalent to r = (1.12 ± 0.06) × 10⁻³, down from (4.5 ± 0.7) × 10⁻³ with the standard deprojection (arXiv:2608.25016) [src: abstract]; the paper calls these results preliminary. Further BICEP Array receivers were characterised in the 2026 season and another (BA4) is in integration, according to the titles of the August 2026 instrument papers returned by the arXiv search (not cited here individually).
-- **Simons Observatory (Atacama).** The original plan was three Small Aperture Telescopes (SATs) observing about 10% of the sky to 2 μK·arcmin, plus a Large Aperture Telescope on about 40% of the sky at 6 μK·arcmin, in six bands at 27, 39, 93, 145, 225 and 280 GHz with 60,000 bolometers, for a **forecast** σ(r) = 0.003 (Simons Observatory 2019, arXiv:1808.07445) [src: abstract]. The plan was enlarged: by 2027 six SATs, with 48,160 detectors in the 93 and 145 GHz channels, and a survey extended to 2035 (Simons Observatory 2025, arXiv:2512.15833) [src: abstract]. No SO measurement of r was found in the searches of 2026-10-09.
+- **Simons Observatory (Atacama).** The original plan was three Small Aperture Telescopes (SATs) observing about 10% of the sky to 2 μK·arcmin, plus a Large Aperture Telescope on about 40% of the sky at 6 μK·arcmin, in six bands at 27, 39, 93, 145, 225 and 280 GHz with 60,000 bolometers, for a **forecast** σ(r) = 0.003 (Simons Observatory 2019, arXiv:1808.07445) [src: abstract]. The plan was enlarged: by 2027 six SATs, with 48,160 detectors in the 93 and 145 GHz channels, and a survey extended to 2035 (Simons Observatory 2025, arXiv:2512.15833) [src: abstract]. No SO measurement of r was found in the searches of 2026-10-09 and 2026-10-26.
 - **SPT-3G (South Pole).** Besides the BB analysis above, SPT-3G supplies the delensing template for BICEP/Keck. A successor receiver, SPT-3G+, is planned for installation in early 2029 with 6,020 dichroic pixels (Natoli et al. 2026, arXiv:2608.20236; from the abstract snippet) [src].
 
 ### Planned
@@ -81,7 +81,7 @@ The 1D flux power spectrum reaches k of order 1 Mpc⁻¹ and is the long lever a
 | Planck PR4 | T and E; binned and integrated-bispectrum estimators; 600 simulations | f_NL^local = −0.1 ± 5.0 | arXiv:2504.00884 | [src: abstract] |
 | ACT DR6 SZ cluster catalogue | 1,201 clusters, 10,347 deg² Legacy region | f_NL = 55 ± 125 from counts | arXiv:2602.03917 | [src: abstract] |
 
-No ground-based primary-CMB bispectrum measurement of f_NL (ACT, SPT) was found in the searches of 2026-10-09.
+No ground-based primary-CMB bispectrum measurement of f_NL (ACT, SPT) was found in the searches of 2026-10-09 and 2026-10-26.
 
 ### Galaxy and quasar surveys
 <!-- key: galaxy-and-quasar-surveys -->
@@ -100,7 +100,7 @@ No ground-based primary-CMB bispectrum measurement of f_NL (ACT, SPT) was found 
 | Quaia (Gaia–unWISE quasars) | two tomographic bins | angular auto-spectra and CMB-lensing cross-spectra | arXiv:2504.20992 | [src] |
 | DESI Legacy Imaging LRGs × ACT DR5 | northern Galactic hemisphere | kSZ velocity reconstruction, 11.7σ detection | arXiv:2506.21657 | [src: abstract] |
 
-DESI DR2 BAO uses more than 14 million galaxies and quasars from three years of operation (arXiv:2503.14738) [src: abstract]; no DR2 f_NL analysis was found. According to the `cosmo-galaxy-clustering` skill, DESI completed its planned survey in April 2026 and full-survey results are expected in 2027 [sec].
+DESI DR2 BAO uses more than 14 million galaxies and quasars from three years of operation (arXiv:2503.14738) [src: abstract]; no DR2 f_NL analysis was found (searches of 2026-10-09 and 2026-10-26). According to the `cosmo-galaxy-clustering` skill, DESI completed its planned survey in April 2026 and full-survey results are expected in 2027 [sec].
 
 ## 5. SPHEREx and Euclid
 <!-- key: spherex-and-euclid -->
@@ -124,7 +124,7 @@ SPHEREx is the only running experiment whose primary cosmology requirement is f_
 | Sample | several hundred million galaxies over the full sky |
 | Data | spectral images released rapidly to the public; specialised catalogues later in the mission |
 
-The forecast behind Δf_NL < 0.5 assumes the universality relation for b_φ and leaves out the non-Gaussian part of the covariance and the power spectrum–bispectrum covariance; the mission paper states that these effects "might reduce the f_NL sensitivity by tens of percent" and that a multi-tracer analysis may improve it (arXiv:2511.02985) [src: Sect. III.2]. The original proposal described R = 40 spectra over 0.75 < λ < 4.1 μm and R = 150 over 4.1 < λ < 4.8 μm (Doré et al. 2014, arXiv:1412.4872) [src: abstract]; the flown instrument differs, so the 2014 numbers are superseded. No SPHEREx cosmology result was found in the searches of 2026-10-09.
+The forecast behind Δf_NL < 0.5 assumes the universality relation for b_φ and leaves out the non-Gaussian part of the covariance and the power spectrum–bispectrum covariance; the mission paper states that these effects "might reduce the f_NL sensitivity by tens of percent" and that a multi-tracer analysis may improve it (arXiv:2511.02985) [src: Sect. III.2]. The original proposal described R = 40 spectra over 0.75 < λ < 4.1 μm and R = 150 over 4.1 < λ < 4.8 μm (Doré et al. 2014, arXiv:1412.4872) [src: abstract]; the flown instrument differs, so the 2014 numbers are superseded. No SPHEREx cosmology result was found in the searches of 2026-10-09 and 2026-10-26.
 
 ### Euclid
 <!-- key: euclid -->

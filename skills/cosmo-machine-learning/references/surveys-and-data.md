@@ -1,7 +1,7 @@
 # Machine learning in cosmology — training sets, benchmarks and challenges
 
 Scope: the simulation suites used as training sets, the benchmark suites and data challenges, and the survey applications of machine learning.
-Snapshot: 2026-10-17
+Snapshot: 2026-10-26
 
 Flags: as in `physics-and-methods.md`.
 
@@ -23,6 +23,7 @@ what makes each a training set.
 | CosmoGridV1 | PkdGrav3 light-cones; 2500 Sobol grid points in wCDM (Ω_m, σ8, w0, H0, n_s, Ω_b), 7 runs each, 69 particle shells at n_side = 2048 to z = 3.5; 200 fiducial runs with stencil derivatives; 28 benchmark runs with larger boxes and resolution; map-level baryon correction | map-level inference for Stage-III photometric surveys; the benchmark runs test sensitivity to simulation choices | Kacprzak et al. 2023, arXiv:2209.04662 [src: abstract] |
 | CAMELS second generation | 1192 IllustrisTNG-model runs in (50 h⁻¹Mpc)³ over 35 cosmological, astrophysical and numerical parameters, eight times the volume of the first generation | MLPs, CNNs, GNNs and Gaussian processes on P(k), maps, galaxy graphs and halo thermodynamics; constraints tighten with volume but more weakly than the square root of the volume | Genel et al. 2026, arXiv:2606.10038 [src: abstract] |
 | Gower Street | 791 full-sky PKDGRAV runs with parameters chosen by mixed active learning; more than 3000 DES Y3 mocks | DES Y3 neural-compression SBI | arXiv:2403.02314 [src: abstract] |
+| DDELenS | 128 PKDGRAV3 runs (N-body gauge) in w0waCDM with massive neutrinos, 1024³ particles in 512 h⁻¹Mpc, Sobol-sampled over Ω_m ∈ [0.28, 0.35], σ8 ∈ [0.74, 0.90], w0 ∈ [−1.0, −0.5], wa ∈ [−1.5, 0.0]; 10 000 ray-traced convergence maps per cosmology at z_s ∈ {0.5, 1.0, 1.5, 2.0, 2.5, 1100}; 100 000 fiducial realisations for the covariance; halo catalogues and projected halo fields | parameter ranges motivated by DESI; built for SBI of dynamical dark energy from galaxy and CMB lensing, field-level and non-Gaussian statistics | Chen et al. 2026, arXiv:2610.27088 [src: abstract] |
 
 ## 2. Benchmark suites and data challenges
 <!-- key: benchmark-suites-and-data-challenges -->
@@ -147,6 +148,8 @@ to `cosmo-software-ecosystem`.
   (arXiv:2604.14451) [src]; CAMELS second generation and
   CAMELS-CROCODILE (arXiv:2606.10038, arXiv:2609.23982) [src]; LSST DESC
   AI/ML white paper (arXiv:2601.14235) [src].
+- 2026: DDELenS, 128 w0waCDM lensing simulations built for SBI of
+  dynamical dark energy (arXiv:2610.27088) [src: abstract].
 
 **Planned or announced.**
 - DES Y3 map-level weak lensing + clustering on data (announced in
@@ -159,11 +162,12 @@ to `cosmo-software-ecosystem`.
 
 - Dates and organisation of ELAsTiCC itself (no ELAsTiCC description paper
   was read; facts come from papers that used it). An INSPIRE search
-  (2026-10-17) found eight ELAsTiCC-using papers and no description paper.
+  (2026-10-17, repeated 2026-10-26) found eight ELAsTiCC-using papers and no
+  description paper.
 - FAIR Universe challenge timeline and the organisers' results paper
   (announced for NeurIPS 2026, arXiv:2604.09621, Sect. 4 [src]); the winning
   entry is in `results.md` §5.
 - Release status of the DES Y3 map-level clustering + lensing data
   analysis after its design paper: no data paper found by a date-sorted
-  arXiv search from November 2025 (2026-10-16); the lensing-only DES Y3
-  hybrid-statistics analysis appeared (arXiv:2606.11309) [src].
+  arXiv search from November 2025 (2026-10-16, repeated 2026-10-26); the
+  lensing-only DES Y3 hybrid-statistics analysis appeared (arXiv:2606.11309) [src].

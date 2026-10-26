@@ -1,7 +1,7 @@
 # Surveys and data — CMB × LSS cross-correlations
 
 Scope: the CMB maps and the large-scale-structure tracers that enter published cross-correlations, with areas, sample sizes, redshift ranges, public locations and status; then what comes next.
-Snapshot: 2026-10-13
+Snapshot: 2026-10-26
 
 Flags: `[src]` read this session in the cited paper; `[sec]` from a named secondary source;
 `[der]` derived here. Instrument descriptions of the CMB experiments and their release history are
@@ -182,7 +182,7 @@ Results inside one of these groups are correlated and cannot be averaged as inde
   statistical precision with BGS DR2 (arXiv:2510.14135) [src: abstract, **forecast**]. Stacked kSZ with ACT,
   DESI Y3 and Rubin is forecast at S/N ~ 50 (arXiv:2503.19870) [src: abstract, **forecast**].
 - **CMB lensing × DESI spectroscopic clustering.** No collaboration measurement of κ × DESI DR2
-  galaxies was found in a date-sorted search on 2026-10-09; the DR1 quasar analyses
+  galaxies was found in date-sorted searches on 2026-10-09 and 2026-10-26; the DR1 quasar analyses
   (arXiv:2506.22416, arXiv:2512.17865) and an external DR1 reanalysis (Ivanov 2026,
   arXiv:2601.16165) are the latest [src].
 - **DES Y6, Euclid, Rubin × CMB lensing.** No cosmological cross-correlation result with DES Y6,

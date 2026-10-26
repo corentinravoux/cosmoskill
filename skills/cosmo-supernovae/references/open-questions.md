@@ -3,7 +3,7 @@
 Scope: live controversies with both sides cited, internal tensions between
 analyses, method debates, what the next data will decide (forecasts labelled),
 and the misconceptions that still circulate with the paper that corrects each.
-Snapshot: 2026-10-20
+Snapshot: 2026-10-26
 
 Flags: `[src]` read in the cited paper this session; `[sec]` from a named
 secondary source; `[der]` reasoning in words, without a new number.
@@ -81,9 +81,24 @@ arXiv:2609.05053) `[src: abstract]`. What remains open:
   (24 %) is the only cut that shifts the Unite best fit substantially, by
   ~2 sigma (arXiv:2609.05053) `[src: Sect. 9.1]`. No analysis has yet
   replaced the historical anchor by a modern one.
+  In an inverse distance ladder with DESI DR2 BAO, DES-Dovekie SNe alone
+  give `H0 = 76.25 ± 2.87` km/s/Mpc and DES plus the legacy low-z SNe give
+  `67.98 ± 0.69`; a drop that large occurs in 1.24 % of LCDM mocks, which
+  the authors read as "a systematic tension between DES and legacy SNIa
+  datasets", with a fitted legacy offset `Delta M_legacy = 0.0646 ± 0.0391`
+  mag `[src: abstract]` (Nájera, Banik & Desmond 2026, arXiv:2610.23657).
 - **Frequentist 3 sigma vs "weak" Bayesian evidence** on the same data. The
   DES-Dovekie paper argues the two statements are consistent: with a 5 sigma
   threshold neither rejects LCDM `[src]`.
+  The Bayesian side also depends on the prior: with DESI DR2 BAO and Planck
+  2018 (no CMB lensing), the log Bayes factor for `w0waCDM` is 3.65 ± 0.21
+  (DES-SN5YR), 0.33 ± 0.21 (DES-Dovekie), 2.34 ± 0.19 (Union3) and
+  −1.05 ± 0.21 (Pantheon+) with uniform priors, and −5.52 ± 0.21,
+  −9.18 ± 0.21, −10.68 ± 0.19 and −10.57 ± 0.21 with the Jeffreys prior, which
+  favours LCDM in every combination; the `w0`–`w_a` posteriors barely move
+  `[src: Sect. 4.2, Table 4; abstract]` (Layton, Hall & Robertson 2026,
+  arXiv:2610.26493). The authors do not claim the Jeffreys prior is the
+  right one, only that the evidence cannot be read apart from the prior.
 - **Systematic errors are not statistical.** The Unite authors caution that
   about half of each SN error bar is systematic, including model choices,
   and that converting it to a Gaussian significance "is prone to over
@@ -91,8 +106,9 @@ arXiv:2609.05053) `[src: abstract]`. What remains open:
 - **Ormondroyd et al.** find that Dovekie "partially alleviates" the
   DES–DESI tension "but does not eliminate it" `[src]`.
 - No independent group has yet published a critique of Unite or of the
-  Union3.1 host-mass correction that this session's date-sorted searches
-  found; absence of critique after one month is not confirmation.
+  Union3.1 host-mass correction: none was found by date-sorted arXiv
+  searches and in the INSPIRE lists of papers citing either, re-checked on
+  2026-10-26. Absence of critique after a few weeks is not confirmation.
 
 ## 2. Is the host step dust, intrinsic, or a symptom of two populations?
 <!-- key: is-the-host-step-dust-intrinsic-or-a-symptom-of -->

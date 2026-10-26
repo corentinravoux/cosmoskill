@@ -1,7 +1,7 @@
 # Open questions and misconceptions — cosmological simulations and mocks
 
 Scope: live debates, internal tensions between suites, and stale claims with the paper that corrects each.
-Snapshot: 2026-10-16
+Snapshot: 2026-10-26
 
 ## 1. Live debates
 <!-- key: live-debates -->
@@ -18,6 +18,7 @@ Snapshot: 2026-10-16
 **Against, or for caution.**
 - A model-independent ratio of kSZ to galaxy–galaxy lensing for DESI DR2 galaxies is tracked most closely by fiducial FLAMINGO, with a mild north–south discrepancy in one bin that may indicate residual systematics (arXiv:2609.22466).
 - The X-ray sample that the fiducial simulations were calibrated to prefers 5 ± 4% at k = 1 h/Mpc (arXiv:2512.02954).
+- Satellites and feedback are degenerate in stacked kSZ profiles: in FLAMINGO with DESI-like samples, satellites are 20–30% of each sample but 50–80% of the signal, and neglecting them at the precision of current DESI × ACT data biases inferred gas fractions low by up to a factor of two and overestimates feedback, most for LRG and BGS; a robust constraint needs the satellite fraction to better than 10% (Ondaro-Mallea et al. 2026, arXiv:2610.17200 [src: abstract]). This bears on the kSZ arguments for strong feedback above, which differ in how they model satellites.
 - The FLAMINGO team notes that its strongest-feedback response is compatible with lensing-plus-external-data analyses and in strong tension with the X-ray gas fractions used for calibration (arXiv:2410.17109). The disagreement is therefore between gas observables as much as between simulations and data.
 
 **What it means for a reader.** "FLAMINGO" or "BAHAMAS" is not one prediction; the variant must be named. A cosmic-shear analysis that marginalises a baryon model with a simulation-based prior inherits the calibration data of that simulation. The lensing-side view of this debate, with the DES 6×2pt result that favours weak feedback, is in `cosmo-weak-lensing` and `cosmo-cmb-lss-cross-correlations`.

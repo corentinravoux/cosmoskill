@@ -1,7 +1,7 @@
 # Early-Universe exotica — open questions
 
 Scope: live controversies with both sides cited, method debates, what the next data decide, forecasts (labelled), and stale claims that still circulate.
-Snapshot: 2026-10-16
+Snapshot: 2026-10-26
 
 Flags as in `physics-and-methods.md`.
 
@@ -23,6 +23,17 @@ SMBH abundance (local scaling relations) is "significantly smaller" than
 measured; changes of merger history cannot close the gap, and preserving the
 Soltan-argument mass density requires typical contributing masses of at
 least ~3 × 10¹⁰ M☉, about ten times larger than predicted [src: abstract].
+The measured side of the gap has since been questioned: Dai, Zaldarriaga
+and Ali-Haïmoud (arXiv:2610.28739) find that "a substantial part of this
+excess arises from a prior volume effect" of the log-uniform red-noise
+priors in NANOGrav 15 yr data, pulling the amplitude more than 2σ above the
+maximum-likelihood estimate; with the profile likelihood, a
+cross-correlation-only estimator or power-uniform and population-informed
+priors, the amplitude agrees with SMBHBs, the spectrum steepens toward the
+SMBHB prediction and the preference for new-physics sources over SMBHBs
+weakens [src: abstract]. No PTA collaboration has yet responded in a paper
+read here; the amplitude problem is therefore open on both the prediction
+and the inference side.
 
 **The cosmological side.** In NANOGrav's new-physics search, inflation,
 scalar-induced GWs, first-order phase transitions, metastable or
@@ -67,7 +78,17 @@ rates.
   OGLE constrains nothing [src]. The Carr et al. review flags that "the
   validity of the recent analysis by the OGLE collaboration has been
   challenged" (arXiv:2601.06024) [src: Sect. IV.2.1]. Both sides are
-  cited here; neither has conceded.
+  cited here; neither has conceded. A third, model-based critique keeps
+  the OGLE events and efficiencies but changes the Milky Way halo, the
+  stellar lens populations and the LMC halo: the strict 20-year bound
+  weakens by up to a factor ≃ 6, by over an order of magnitude in an extreme
+  stress test, and primordial clustering weakens the planetary-mass bound by
+  a factor 3.4–6; the authors recommend quoting compact-object limits with
+  their modelling assumptions (Morales-Zapien et al. 2026,
+  arXiv:2610.30510) [src: abstract]. In the sub-solar range a GW route now
+  competes: the O4a + O4b search gives f̃_PBH < 0.6% at 0.8 M☉, 2–7 times
+  below OGLE for M_PBH ≥ 0.6 M☉ under its own model assumptions
+  (arXiv:2610.19329) [src: abstract].
 - **Ultrashort bulge events.** The Earth-mass PBH reading (arXiv:1901.07120)
   [src] is ruled out by the OGLE Magellanic Cloud high-cadence survey, which
   attributes the events to free-floating or wide-orbit planets
@@ -137,6 +158,12 @@ The status of these models as H0 resolutions is the business of
 - **Duty-cycle dependence of the γ-ray lower bound** (arXiv:2306.05132)
   [src] leaves the lower edge of the allowed window uncertain by two orders
   of magnitude.
+- **A first IGMF value from a pair echo?** Neronov et al. read the LST-1
+  signal of GRB 221009A 1.33 days after the burst as a pair echo, giving
+  log(B/G) = −16.2 ± 0.7 for correlation lengths above 20 kpc
+  (arXiv:2610.06633) [src: abstract]. It rests on one burst and on the
+  echo interpretation of the late signal; an independent confirmation is
+  what would move it from interpretation to measurement.
 
 ## 6. Forecasts
 <!-- key: forecasts -->

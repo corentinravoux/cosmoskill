@@ -3,7 +3,7 @@
 Scope: instruments, samples, anchors, release dates and status of the data
 sets used to measure the Hubble constant locally, through one-step routes, and
 through the early Universe; past, current and planned, in that order.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-26
 
 Flags: `[src]` read in the cited paper; `[doc: <page>, <date>]` read on an official page on that date
 named; `[sec]` from a named secondary source; `[der]` derived here.
@@ -109,7 +109,8 @@ H0, with a statistical error of 0.06 against a calibration systematic of 1.1
 
 | Sample | Content | Citation | Flag |
 |---|---|---|---|
-| TDCOSMO-2025 | 8 lensed quasars; integrated JWST kinematics for 5, VLT-MUSE for 2, resolved Keck + JWST kinematics for RXJ1131-1231 | arXiv:2506.03023 | [src: abstract] |
+| TDCOSMO-2026 | 11 lensed quasars; spatially resolved kinematics for nine, six of them with JWST-NIRSpec (one in 2025); JWST-NIRCam images replace HST for three lens models; line-of-sight convergence from the Euclid Flagship simulations; 15 SLACS and 8 SL2S external lenses | arXiv:2610.14781 | [src: abstract, Fig. 6 caption] |
+| TDCOSMO-2025 (superseded by TDCOSMO-2026) | 8 lensed quasars; integrated JWST kinematics for 5, VLT-MUSE for 2, resolved Keck + JWST kinematics for RXJ1131-1231 | arXiv:2506.03023 | [src: abstract] |
 | External lenses | 11 SLACS lenses with Keck-KCWI resolved kinematics; 4 SL2S lenses | arXiv:2506.03023 | [src: abstract] |
 | Earlier external set | 33 SLACS lenses, 9 with resolved kinematics | arXiv:2007.02941 | [src: abstract] |
 | JWST imaging models | WFI2033-4723, HE0435-1223, PG1115+080 with NIRCam F115W; 16 more NIRCam targets forthcoming | arXiv:2608.27566 | [src: abstract] |
@@ -117,10 +118,11 @@ H0, with a statistical error of 0.06 against a calibration systematic of 1.1
 | SN Refsdal | cluster-lensed SN, appeared 2014, reappeared 2015; 8 cluster models | arXiv:2305.06367 | [src] |
 | SN H0pe | SN Ia at z = 1.78 behind PLCK G165.7+67.0 (z = 0.35), three images, JWST | arXiv:2403.18902 | [src: abstract] |
 | SN Encore | SN Ia at z = 1.95 behind MACS J0138.0-2155; delay -39.8 (+3.9/-3.3) d; sibling SN Requiem in the same host | arXiv:2509.12301 | [src: abstract] |
+| SN 2025wny | first strongly lensed Type I superluminous SN, z = 2.015; four images deblended, grizJ light curves | arXiv:2608.28427 | [src: abstract] |
 
-A "TDCOSMO-2026 milestone" hierarchical analysis with free lambda_int is
-announced as the next step `[src]` (arXiv:2608.27566); it had not appeared
-when this file was written.
+The "TDCOSMO-2026 milestone" announced in arXiv:2608.27566 has appeared as
+two papers, the analysis (arXiv:2610.14781) and a discussion
+of the tension (arXiv:2610.14881); its values are in `results.md`.
 
 ## 7. Gravitational waves and chronometers (pointers)
 <!-- key: gravitational-waves-and-chronometers-pointers -->
@@ -128,13 +130,14 @@ when this file was written.
 | Data | Content | Citation | Flag |
 |---|---|---|---|
 | GW170817 | the only bright siren with a secure counterpart used for H0 | arXiv:1710.05835 | [src] |
+| GWTC-5.0 | adds O4b (2024 April 10 to 2025 January 28): 161 new candidates; cumulative catalogue of 390 transients with p_astro >= 0.5 | arXiv:2605.27225 | [src: abstract] |
+| GWTC-5.0 cosmology | 236 sources; mass-spectrum and DES-Y6 galaxy-catalogue redshifts, with GW170817 | arXiv:2605.27227 | [src: abstract] |
 | GWTC-4.0 | 142 of 218 sources used; events through O4a; GLADE+ catalogue | arXiv:2509.04348 | [src: abstract] |
 | DESI DR1 cosmic chronometers | 360,000 massive passive galaxies, 0.3 < z < 1.0 | arXiv:2511.02730 | [src: abstract] |
 
-Papers using a "GWTC-5" catalogue appeared on arXiv from June 2026 (seen in a
-title search this session); no LVK GWTC-5 cosmology paper was found. Treat the
-GWTC-4.0 value as the latest collaboration result and check
-`cosmo-multimessenger`.
+The LVK GWTC-5.0 cosmology paper (arXiv:2605.27227) supersedes GWTC-4.0 as
+the latest collaboration result; an earlier version of this file, which said
+no such paper had been found, was wrong. Details in `cosmo-multimessenger`.
 
 ## 8. Early-Universe data
 <!-- key: early-universe-data -->
@@ -173,7 +176,7 @@ Survey descriptions and later releases are in `cosmo-cmb`,
 |---|---|---|---|---|
 | Gaia DR4 | 2 December 2026 | better parallaxes and epoch data for MW Cepheids, cluster and globular-cluster anchors | ESA release page; arXiv:2602.15421 | [src] |
 | JWST Cepheid, TRGB, JAGB hosts | ongoing cycles | larger calibrator samples; second-rung cross-checks out to ~40 Mpc | arXiv:2502.05259 (abstract); arXiv:2606.26831 | [src: abstract] |
-| TDCOSMO-2026 | announced | hierarchical H0 with JWST imaging and resolved kinematics | arXiv:2608.27566 | [src] |
+| TDCOSMO beyond 2026 | stated goal | path to 1.5% precision with time delays, described in the TDCOSMO-2026 tension paper | arXiv:2610.14881 | [src: abstract] |
 | SN Requiem fourth image | "within a few years" | decade-long time-delay baseline in MACS J0138 | arXiv:2509.12301 | [src] |
 | DESI PV, later releases | planned | direct Cepheid / TRGB calibration of FP and TF, towards a percent-level H0 without SNe | arXiv:2512.03232 | [src] |
 | WALLABY | planned use | large Tully-Fisher samples for the joint TF + velocity estimator | arXiv:2408.03660 | [src] |

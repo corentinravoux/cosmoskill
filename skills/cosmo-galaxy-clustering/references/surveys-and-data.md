@@ -2,7 +2,7 @@
 
 Scope: the spectroscopic redshift surveys used for BAO, RSD and full-shape
 cosmology: instrument, area, samples, releases, public data, status, next
-steps. Past, current, planned. Snapshot: 2026-10-07.
+steps. Past, current, planned. Snapshot: 2026-10-26.
 
 Flags: `[src]` read this session in the cited paper or on the named official
 page; `[sec]` from a named secondary source; `[der]` derived here. Facility

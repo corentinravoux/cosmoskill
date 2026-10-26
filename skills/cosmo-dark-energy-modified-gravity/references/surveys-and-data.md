@@ -5,7 +5,7 @@ what each contributes to the combination, their status and what comes next.
 Instrument and survey details live in the probe skills; this file records what
 a dark-energy analysis needs to know about each input.
 
-Snapshot: 2026-10-07
+Snapshot: 2026-10-26
 
 Flags: `[src]` read this session in the cited paper; `[sec]` from a named
 secondary source (a sibling skill or an official web page); `[der]` derived
@@ -137,7 +137,7 @@ arXiv listing].
 | Data | When | What it decides | Source | Flag |
 |---|---|---|---|---|
 | DESI full five-year survey: BAO, then full shape | first dark-energy results expected in 2027 | whether the BAO + CMB preference grows as `sqrt(volume)` or stalls; DR2 full shape for μ, Σ | DESI announcement, 15 April 2026 | [doc: https://www.desi.lbl.gov/2026/04/15/desi-reaches-mapping-milestone-surpassing-expectations/, 2026-10-26] |
-| Euclid DR1 | "DR1-Foundation" (raw and calibrated images, catalogues, spectra, about 1900 deg²) in November 2026; complete DR1 with clustering and weak-lensing science products in mid-2027 | independent BAO, RSD and lensing; first Euclid `w0wa` and μ–Σ | ESA Euclid "DR1 Timeline" page, www.cosmos.esa.int/web/euclid/dr1-timeline, as returned by a web search on 2026-10-08 | [sec] |
+| Euclid DR1 | "DR1-Foundation" (raw and calibrated images, catalogues, spectra, about 1900 deg²) in November 2026; complete DR1 with clustering and weak-lensing science products in mid-2027 | independent BAO, RSD and lensing; first Euclid `w0wa` and μ–Σ | ESA Euclid "DR1 Timeline" page; exact release dates "will be communicated at a later stage" | [doc: https://www.cosmos.esa.int/web/euclid/dr1-timeline, 2026-10-26] |
 | Modern low-redshift supernova anchors (DEBASS, ZTF) | pending | the low-redshift half of the supernova signal | `cosmo-supernovae` | [sec] |
 | Rubin LSST lensing with DESI lenses | full survey | `E_G` able to reject GR for some modified-gravity scenarios (**forecast**) | Leonard et al. 2025, arXiv:2511.19194 | [src] |
 | Independent τ (large-scale CMB polarisation, reionisation probes) | see `cosmo-cmb` | whether the CMB side of the mismatch is a τ problem | arXiv:2504.16932 | [src] |

@@ -1,7 +1,7 @@
 # Statistics and inference — how each collaboration does it
 
 Scope: the statistical practice (likelihood, covariance, blinding, sampler, point estimate, tension metric, model comparison) of the major collaborations in their latest analyses, with citations. The measurements themselves are in the probe skills.
-Snapshot: 2026-10-14
+Snapshot: 2026-10-26
 
 Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named secondary source; `[der]` a derivation stated in words, with no number of its own (owner's rule of 2026-10-23: every number is read in a paper). Unless a row says otherwise, every entry of §1 is `[src]` from the paper named in its last column.
 

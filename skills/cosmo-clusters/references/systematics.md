@@ -1,7 +1,7 @@
 # Galaxy-cluster cosmology — systematics
 
 Scope: the systematic effects that limit cluster cosmology, their measured size, mitigation and the reference a referee expects.
-Snapshot: 2026-10-14
+Snapshot: 2026-10-26
 
 Cluster counts are limited by systematics, not by statistics, in every current sample. The three families are the absolute mass scale (Sects. 1–4), the selection (Sects. 5–8) and the theory and inference machinery (Sects. 9–11). Each subsection gives the mechanism, the size where a paper quantifies it, the usual mitigation, the validation test and the reference.
 
@@ -39,6 +39,7 @@ Cluster counts are limited by systematics, not by statistics, in every current s
 - Size from simulations. Median hydrostatic bias of about −0.1 at group scale to −0.2 at cluster scale in FLAMINGO, with scatter of about 0.1 at M500c ~ 1e14 M_sun [src: abstract] (Braspenning et al. 2025, arXiv:2409.07849). For M500c > 7.5e14 M_sun at z = 0 the bias is 0.22 ± 0.01 with X-ray spectroscopic-like temperatures and −0.05 ± 0.01 with SZ y-weighted temperatures [src: abstract] (Kay et al. 2024, arXiv:2404.08539): much of the "hydrostatic" bias is a temperature-weighting effect.
 - Size from data. Non-thermal pressure of about 6% at R500 and 10% at R200 in X-COP; the universal gas fraction with the Planck mass calibration implies 1 − b = 0.85 ± 0.05 [src: abstract] (Eckert et al. 2019, arXiv:1805.00034).
 - Instrument calibration. The same lensing data give 1 − b = 0.89 ± 0.04 against a Chandra-calibrated Y_SZ–M relation and 0.76 ± 0.04 against the XMM one [src: abstract] (arXiv:2402.04006). The cosmology from the counts is identical; only the label "bias" moves.
+- eROSITA against XMM. For 114 DES Y3 redMaPPer clusters detected by both XMM and eRASS1, XMM temperatures are 28 ± 7% higher on average than eROSITA ones; the L_X,soft–λ relations of the two instruments barely differ, while the T_X–λ relations show a clear normalisation offset, largest for the richest systems [src: abstract] (Pilling et al. 2026, arXiv:2610.16741). A temperature-based scaling relation or hydrostatic mass therefore cannot be carried from one instrument to the other without this cross-calibration.
 - Mass and redshift dependence. Weighing the Giants found evidence at 95% confidence for a mass dependence of M_Planck/M_WtG [src: abstract] (arXiv:1402.2670); a Planck + SPT fit finds the bias increasing towards high redshift and low mass (arXiv:2112.03606); ACT × DES Y3 finds (1 − b) decreasing with redshift with power-law index −1.8 +0.5/−0.6 [src: abstract] (arXiv:2512.18935); gas-fraction data give 3.8σ evidence for redshift dependence that is "entirely dependent on the cluster sample" [src: abstract] (Wicker et al. 2023, arXiv:2204.12823).
 - Mitigation. Calibrate the mass scale with lensing and treat X-ray quantities as low-scatter proxies only; free mass and redshift trends of the relation.
 - Validation. Relaxed clusters at r2500, where lensing and hydrostatic masses agree: 0.96 ± 9% (stat) ± 9% (sys) [src: abstract] (Applegate et al. 2016, arXiv:1509.02162).

@@ -62,7 +62,7 @@ at the end.
 ```bash
 python3 tools/assign_keys.py
 python3 skills/observational-cosmology/scripts/verify_sources.py skills/<skill>
-python3 tools/check_keys.py --against 6bf5495
+python3 tools/check_keys.py --against d088847
 python3 tools/check_numbers.py --skill <skill>
 ```
 

@@ -2,7 +2,7 @@
 
 Scope: the samples and releases behind every result in this skill, with the counts actually used by
 the analyses, where the data are public, the status on the snapshot date, and what comes next.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-26
 
 The survey descriptions of the 2026-08 compilation (why three indicators, what each survey is, the
 Cosmicflows-4 composition, the SN samples, the planned surveys) are folded into §0, §1, §4, §5 and §6;

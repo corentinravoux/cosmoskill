@@ -5,7 +5,8 @@ were corrected or added on that date from the sources named. Rebalanced
 **2026-10-20** to the field's weights: the sections on BAO and full shape,
 supernovae, clusters, CMB × LSS, inflation and reionisation were added from
 the `SKILL.md` and `references/` of their domain skills, and the
-peculiar-velocity and Lyman-α sections cut to pointers. **The `cosmo-*`
+peculiar-velocity and Lyman-α sections cut to pointers. Lines marked *(2026-10-26)* were added in the
+release-1.0 refresh, each read at its source. **The `cosmo-*`
 skills supersede this file for their domain**: each holds dated tables with
 provenance flags, and where this digest and a `cosmo-*/references/results.md`
 differ, the sub-skill is right. **Verify before citing**: every number here
@@ -40,6 +41,13 @@ without a source below were not verified and must not be quoted.
   [src: abstract].
 - **Significance depends on which local anchor is used.** Quoting a σ value
   without naming both endpoints is the most common error in tension prose.
+- Time-delay cosmography: TDCOSMO-2026, 11 lensed quasars, **H₀ = 71.1
+  (+2.4/−2.3)** (arXiv:2610.14781) [src: abstract]; combined with other
+  late-universe probes, a combination without supernovae is **3.7σ** from
+  Planck and one without the distance ladder **2.7σ** (arXiv:2610.14881)
+  [src: abstract] *(2026-10-26)*. Standard sirens: GWTC-5.0, **71.7
+  (+9.4/−7.5)** (arXiv:2605.27227) [src: abstract] *(2026-10-26)*. Detail:
+  `cosmo-distance-ladder-h0`, `cosmo-tensions-anomalies`.
 
 ## Dark energy
 <!-- key: dark-energy -->
@@ -60,6 +68,13 @@ without a source below were not verified and must not be quoted.
   compilation and its version next to the σ. Detail: `cosmo-supernovae`.
 - The evidence is **geometric** (BAO + SN + CMB). Weak lensing does not drive
   it — which is what makes the growth-side cross-check informative.
+- Bayesian evidence depends on the prior: replacing uniform priors with the
+  Jeffreys prior "reverses the model-selection preference" in the DESI DR2 +
+  Planck + SN combinations that favour dynamical dark energy, while the w₀
+  and w_a constraints stay robust (arXiv:2610.26493) [src: abstract]
+  *(2026-10-26)*. Quote the prior
+  with any ln B. Detail: `cosmo-dark-energy-modified-gravity`,
+  `cosmo-statistics-inference`.
 
 ## BAO and full-shape clustering
 <!-- key: bao-and-full-shape-clustering -->
@@ -287,16 +302,16 @@ without a source below were not verified and must not be quoted.
   twice as large at 4.9σ (arXiv:2009.14826) [src: abstract of each]. Contested
   on ecliptic-latitude selection grounds (arXiv:2511.00822).
 
-## Facility timeline (verified 2026-08)
+## Facility timeline (verified 2026-08; rows with `[doc]` re-read 2026-10-26)
 <!-- key: facility-timeline-verified-2026-08 -->
 
 | Facility | Status |
 |---|---|
 | **CMB-S4** | **cancelled** — DOE and NSF withdrew support 9 July 2025 |
-| Simons Observatory | commissioning / early observing |
+| Simons Observatory | "completely online and conducting science operations", three SATs and the LAT, 98,000 detectors; first data release undated (Simons Foundation news of 22 Oct 2026 [doc: https://www.simonsfoundation.org/news/now-fully-online-simons-observatory-begins-probe-of-universes-birth/, 2026-10-26]) |
 | LiteBIRD | JAXA L-class; reformed after the 2024 Mission Definition Review to a single telescope with 12 bands, δr < 0.002 (arXiv:2607.25285) [src: abstract] *(2026-10-08)*; launch under revision JFY2032 → JFY2036 (ISAS/JAXA page, via `cosmo-surveys-facilities`) |
 | Rubin LSST | survey began **29 June 2026** (Rubin survey-strategy progress page [doc: https://survey-strategy.lsst.io/progress/index.html, 2026-10-26]; Rubin release of 30 June 2026 [doc: https://rubinobservatory.org/news/action-rubin-lsst-begins, 2026-10-26]) |
-| Roman | launch **30 Aug 2026** (NASA release [doc: https://www.nasa.gov/news-release/nasas-dark-universe-seeking-nancy-grace-roman-space-telescope-launches/, 2026-10-26]), first images expected by early 2027 |
+| Roman | launch **30 Aug 2026** (NASA release [doc: https://www.nasa.gov/news-release/nasas-dark-universe-seeking-nancy-grace-roman-space-telescope-launches/, 2026-10-26]), first images expected by early 2027; science commissioning phase since 22 Oct 2026 (NASA Roman blog [doc: https://science.nasa.gov/blogs/roman/2026/10/22/nasas-roman-space-telescope-enters-final-commissioning-phase/, 2026-10-26]) |
 | Euclid | Q1 (March 2025) and Q2 released; DR1-Foundation planned 12 Nov 2026, dates "tentative"; full DR1 with clustering and lensing products mid-2027 (ESA Euclid timeline [doc: https://www.cosmos.esa.int/web/euclid/timeline, 2026-10-26]) |
 | 4MOST | first light **18 Oct 2025** (ESO announcement [doc: https://www.eso.org/sci/publications/announcements/sciann17735.html, 2026-10-26]) |
 | Subaru PFS | SSP under way; first-light date not verified |

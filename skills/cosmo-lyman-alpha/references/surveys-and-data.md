@@ -1,7 +1,7 @@
 # Lyman-alpha forest — surveys, samples and data releases
 
 Scope: every data set that matters for Lyα forest cosmology and IGM physics — survey-grade samples (SDSS/BOSS/eBOSS, DESI), high-resolution samples, tomography surveys, simulations and mock suites treated as data products, and what is planned.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-26
 
 Flags: `[src]` read this session in the cited paper; `[der]` derived here; `[sec]` from a named secondary source. Forecasts are labelled.
 

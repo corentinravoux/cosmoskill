@@ -2,7 +2,7 @@
 
 Scope: which data sets enter each tension and what is shared between them.
 
-Snapshot: 2026-10-16
+Snapshot: 2026-10-26
 
 Flags as in `results.md`: `[src]` read this session in the cited paper;
 `[sec: X]` taken from the reference files of sibling skill X; `[der]`
@@ -23,7 +23,9 @@ This file answers one question per tension: are the inputs independent?
 | Planck PR3/PR4 | early endpoint; calibration and τ for ACT and SPT | every CMB-based endpoint | [sec: cmb] |
 | ACT DR6, SPT-3G D1 | early endpoint | shape parameters independent of Planck; amplitude and τ not | [sec: cmb] |
 | DESI DR2 BAO + BBN baryon density | early endpoint with no CMB anisotropies | BAO also enter the inverse ladder and every r_d-free H0 | [sec: h0] |
-| Time-delay lenses (8 in TDCOSMO-2025) | one-step local value | Ω_m prior from supernovae | [sec: h0] |
+| Time-delay lenses (11 in TDCOSMO-2026, arXiv:2610.14781; 8 in TDCOSMO-2025) | one-step local value; the no-SN and no-ladder late-universe combinations of arXiv:2610.14881 | Ω_m prior from DES-Dovekie supernovae in the baseline, DESI DR2 BAO in the alternative and in the no-SN combination | [src: abstract of each] |
+| GWTC-5.0 sirens (236 sources) | ladder-free local value | DES Y6 galaxy catalogue for the host association; GW170817 counterpart | LVK 2026, arXiv:2605.27227 [src: abstract] |
+| Legacy low-redshift supernovae | SH0ES and H0DN Hubble flow; inverse ladder with DES-Dovekie | removing them moves the inverse-ladder H0 from 67.98 ± 0.69 to 76.25 ± 2.87 (arXiv:2610.23657) | [src: abstract] |
 
 Independence, in one sentence each.
 

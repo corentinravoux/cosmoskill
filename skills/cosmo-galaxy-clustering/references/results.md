@@ -2,14 +2,14 @@
 
 Scope: headline BAO, RSD, full-shape and scale-dependent-bias measurements
 from spectroscopic surveys, with the history of the key numbers.
-Snapshot: 2026-10-20.
+Snapshot: 2026-10-26.
 
 Flags: `[src]` read this session in the cited paper; `[sec]` taken from the
 named secondary source; `[der]` derived here. Errors are 1σ unless stated.
 "DESI" without qualifier in a DR2-era row means DESI DR2 BAO (galaxies,
 quasars and Lyα). The latest DESI BAO release is DR2 (March 2025); the latest
 DESI full-shape data are still DR1 (November 2024). No DESI DR2 galaxy
-full-shape key paper was found in date-sorted searches up to 2026-10-07.
+full-shape key paper was found in date-sorted searches up to 2026-10-26.
 
 ## 1. BAO distance ladder
 <!-- key: bao-distance-ladder -->
@@ -233,6 +233,13 @@ snapshot.
 | eBOSS ELG (consensus) | 0.85 | 0.315 ± 0.095 | arXiv:2007.09008; arXiv:2007.09009 | [src: abstract of each] |
 | SDSS MGS | 0.15 | 0.53 ± 0.16 | arXiv:2007.08991 | [src: Table 3] |
 
+HETDEX (October 2026): the monopole and quadrupole power spectra of
+[O II]-emitting galaxies of the HETDEX Public Data Release 1 at z ≤ 0.48,
+fitted with a simulation-based model up to k_max = 0.7 h/Mpc, give the
+growth index γ = 0.55 ± 0.05 with the Alcock–Paczynski parameters fixed and
+γ = 0.60 ± 0.07 with them free (Moon et al. 2026, arXiv:2610.29591)
+[src: abstract]. The abstract quotes γ, not fσ8.
+
 The SDSS cosmology paper combines six fσ8 measurements [src]
 (arXiv:2007.08991). Per-method BOSS values, the pre-BOSS measurements (VVDS,
 6dFGS, GAMA, VIPERS, FastSound, BOSS DR9) and the full SDSS compilation table
@@ -274,6 +281,14 @@ recalibration of DES-SN5YR (was 4.2σ) [src]. The DR2 paper's range of
 replaced by these three values. What changed in each sample
 (host-galaxy masses, the Dovekie calibration) is in the `cosmo-supernovae`
 skill; quote the 2025 numbers only as "as published".
+
+Supernovae Unite (September 2026), the combined Pantheon+ and DES-SN5YR
+sample of 2884 likely SNe Ia, with CMB and with both DES and DESI BAO:
+(Ω_m, w0, wa) = (0.305 ± 0.004, −0.861 (+0.044/−0.042), −0.60 (+0.17/−0.19));
+the frequentist preference over flat ΛCDM is 3.3σ from the MAP and 3.1σ from
+the maximum likelihood, while the Bayesian evidence indicates only a weak
+preference (Camilleri et al. 2026, arXiv:2609.05053) [src: abstract]. Its BAO
+input adds DES to DESI, so it is not the combination of the table above.
 
 DR2 posteriors as published (arXiv:2503.14738) [src: Table 5]: DESI + CMB,
 w0 = −0.42 ± 0.21, wa = −1.75 ± 0.58; with Pantheon+, w0 = −0.838 ± 0.055,

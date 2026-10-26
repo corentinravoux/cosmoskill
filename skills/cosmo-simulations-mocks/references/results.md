@@ -1,7 +1,7 @@
 # Quantified results — cosmological simulations and mocks
 
 Scope: the numbers a referee needs — code-comparison agreement, emulator and fast-method accuracy with k and z range, baryonic suppression of P(k) per suite, mock counts used by surveys.
-Snapshot: 2026-10-13
+Snapshot: 2026-10-26
 
 ## 1. Code-comparison agreement levels
 <!-- key: code-comparison-agreement-levels -->
@@ -71,6 +71,7 @@ The gravity-only emulators are quoted at 1% (EuclidEmulator2, arXiv:2010.11288) 
 | Seven approximate methods, correlation-function covariance | parameter errors | within 5% (lower mass threshold), 10% (higher); up to 20% depending on how the halo sample is matched | z = 1 | Lippich et al. 2018, arXiv:1806.09477 [src: abstract] |
 | Same, power-spectrum covariance, body | parameter errors | 5% for most methods on cosmological parameters; 10% for all but lognormal; test resolution 4–5% | periodic boxes, z = 1, 300 mocks per method | arXiv:1806.09497 [src: Sect. 6] |
 | Same, bispectrum covariance | errors on bias parameters | within 10% except methods calibrated on two-point statistics only | — | Colavincenzo et al. 2018, arXiv:1806.09499 [src: abstract] |
+| sCOLA light-cones, tiled with an LPT buffer and second-order boundary potential, against GADGET-4 (3.84 Gpc/h box, 3840³ particles) | matter P(k); velocity-divergence P(k); equilateral bispectrum | 1%; 1.5%; 2%; no visible discontinuity at tile boundaries; 1300 CPU hours, a factor 2600 below the GADGET-4 run | up to k ≃ 0.4 h/Mpc | Aubin et al. 2026, arXiv:2610.26639 [src: abstract] |
 | DESI DR1 EZmock covariance against a data-tuned analytic one | variance | too small by 10–40% depending on the sample; corrected by rescaling | configuration space | arXiv:2411.12027 [src: Sect. 4] |
 
 The 10% on parameter errors (arXiv:1806.09497 [src: abstract]) is the number to quote when a referee asks how well an approximate-mock covariance is known in a periodic box; on a real survey the one measured case, DESI DR1, needed a rescaling of 10 to 40% (arXiv:2411.12027 [src: Sect. 4]; last row). It must be stated together with the finite-mock correction to the error bar, whose size is in `cosmo-statistics-inference`.

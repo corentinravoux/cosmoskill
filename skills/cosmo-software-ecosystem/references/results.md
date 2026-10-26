@@ -2,7 +2,7 @@
 
 Scope: documented agreement between codes (Boltzmann solvers, perturbation-theory codes, estimators, samplers), accuracies the reference papers state, and benchmark timings where a paper gives them.
 
-Snapshot: 2026-10-14
+Snapshot: 2026-10-26
 
 Flags: `[src]` read this session in the cited paper (abstract unless a section is named), in an installed package or at a repository; `[sec]` taken from a secondary source that is named; `[der]` derived, with the derivation stated.
 Every accuracy below holds for the configuration its paper tested (model, scales, precision settings). None is a property of "the code" in general.

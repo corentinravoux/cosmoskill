@@ -5,7 +5,7 @@ description: Use when reviewing, planning or fact-checking cross-correlations of
 
 # CMB × LSS cross-correlations — expert reference
 
-Snapshot 2026-10-13. Numbers carry provenance flags ([src] / [sec] / [der]);
+Snapshot 2026-10-26. Numbers carry provenance flags ([src] / [sec] / [der]);
 re-verify against the cited paper before a number enters a manuscript.
 
 ## File map
@@ -36,7 +36,7 @@ re-verify against the cited paper before a number enters a manuscript.
 - Quaia "contamination" of Planck lensing: not confirmed with ACT DR6 (arXiv:2507.08798); DESI DR1 quasars: high σ8 = 0.929 +0.059/−0.074 (arXiv:2506.22416) [src: abstract].
 - kSZ estimators: one ⟨ggT⟩ bispectrum, two observables P_ge, P_gv (arXiv:1810.13423). DESI DR2 × ACT DR6: stacking 18σ (arXiv:2604.19744), velocity reconstruction 20.8σ (arXiv:2604.04867) [src: abstract].
 - kSZ measures τ × v. b_v = 0.233 ± 0.020 at 150 GHz (DR2 LRG, arXiv:2604.04867, Sect. V.2 table) or 0.33 ± 0.03 (arXiv:2511.15701, abstract), relative to fiducial gas-plus-HOD. No kSZ fσ8 exists.
-- Feedback disputed. Strong: > 8σ from fiducial FLAMINGO (arXiv:2509.10455); 10 ± 2% suppression, k = 1 h/Mpc (arXiv:2512.02954). Weak: 6×2pt (arXiv:2510.25596); lensing/kSZ ratio tracks fiducial FLAMINGO (arXiv:2609.22466). Non-linear velocities: 10–20% stack bias (arXiv:2607.23339) [src: abstract].
+- Feedback disputed. Strong: > 8σ from fiducial FLAMINGO (arXiv:2509.10455); 10 ± 2% suppression, k = 1 h/Mpc (arXiv:2512.02954). Weak: 6×2pt (arXiv:2510.25596); lensing/kSZ ratio tracks fiducial FLAMINGO (arXiv:2609.22466). Non-linear velocities: 10–20% stack bias (arXiv:2607.23339); neglected satellites bias gas fractions low by up to a factor of two (arXiv:2610.17200) [src: abstract].
 - tSZ-based S8 values disagree: 0.811 +0.015/−0.012 (arXiv:2506.07432), 0.72 ± 0.03 (arXiv:2605.11083) [src: abstract].
 - ISW: A = 0.96 ± 0.30 (unWISE, arXiv:2110.13959), 1.69 ± 0.61 (Quaia, arXiv:2607.22461). Supervoid excess (arXiv:1811.07812): not reproduced with matched mocks (arXiv:2105.11936) [src: abstract].
 - f_NL: Quaia −20.5 +19.0/−18.1 for p = 1 (arXiv:2504.20992), CIB × κ 43 ± 23 (arXiv:2605.03783), kSZ 15.9 +34.6/−34.4 (arXiv:2604.04867) [src: abstract].
@@ -94,7 +94,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 7k; methods 12k; results 12k; surveys 6k; systematics 11k; deep/cib-cross-correlations 8k; deep/isw 7k; deep/ksz-gas-profiles 11k; deep/ksz-velocity-reconstruction 8k; deep/other-secondaries 7k; deep/tsz-cross-correlations 7k.
+Sizes, in thousands of tokens: L1 3k; open 7k; methods 12k; results 13k; surveys 6k; systematics 12k; deep/cib-cross-correlations 8k; deep/isw 7k; deep/ksz-gas-profiles 11k; deep/ksz-velocity-reconstruction 8k; deep/other-secondaries 7k; deep/tsz-cross-correlations 7k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

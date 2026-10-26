@@ -1,7 +1,7 @@
 # Surveys and facilities — open questions, schedule risks and stale claims
 
 Scope: schedule risks with the evidence for each slip, cancelled or descoped projects, the points where sibling skills differ and how each was settled at source, and the stale facility claims that still circulate.
-Snapshot: 2026-10-14 (web pages fetched 2026-10-09 unless another date is given)
+Snapshot: 2026-10-26 (each official-page fact carries its read date in its `[doc]` flag)
 
 Flags as in `surveys-and-data.md`: `[src]`, `[sec: GC|WL|CMB|SN|CL]` (carried
 over from the named sibling skill), `[doc: <URL>, <date>]` (read on that
@@ -56,7 +56,11 @@ abstract].
   sky between 2022 and 2026 and none had a confirmed start of its main
   survey on the pages read. Their first cosmology (4MOST CRS, WEAVE-QSO)
   should not be dated in a text without a fresh check.
-- **Simons Observatory.** The project front page mentions no public data
+- **Simons Observatory.** "Completely online and conducting science
+  operations" since the Simons Foundation news item of 22 October 2026,
+  which mentions "the first data release" without a date
+  [doc: https://www.simonsfoundation.org/news/now-fully-online-simons-observatory-begins-probe-of-universes-birth/, 2026-10-26].
+  The project front page mentions no public data
   release [doc: https://simonsobservatory.org/, 2026-10-26] and no
   cosmological result was found [sec: CMB]; six small-aperture telescopes by 2027 and the
   large-aperture upgrade by 2028 are plans [sec: CMB].
@@ -200,9 +204,12 @@ Each line gives the claim, then the correction and where it was read.
 - Whether the South Pole and Atacama programmes reach σ(r) ≈ 10⁻³ without
   CMB-S4 (**forecast** target, 2030s; the SO forecast is σ_r = 1.2 × 10⁻³,
   arXiv:2512.15833 [src: abstract]): `cosmo-inflation-primordial`.
-- Whether 21 cm intensity mapping moves from cross-correlation detections to
-  a BAO measurement (CHIME, CHORD from 2028, HIRAX, MeerKLASS, SKA-Mid):
-  `cosmo-reionization-21cm`.
+- Whether 21 cm intensity mapping moves from detections to a BAO
+  measurement (CHIME, CHORD from 2028, HIRAX, MeerKLASS, SKA-Mid):
+  `cosmo-reionization-21cm`. Auto-spectrum detections now exist from CHIME
+  at z ~ 1 (arXiv:2511.19620) and from MeerKLASS at z = 0.42, S/N 6.2, the
+  latter from cross-spectra of independent subsets because the subsets'
+  auto-spectra still show excess power (arXiv:2610.12158) [src: abstract].
 - Which Stage-V spectroscopic facility is built: MUST reports construction
   under way (arXiv:2605.10102) [src]; Spec-S5, WST and MSE are designs or
   proposals [sec: GC], [src].

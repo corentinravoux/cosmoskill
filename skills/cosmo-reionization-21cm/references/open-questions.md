@@ -1,7 +1,7 @@
 # Open questions — reionisation, 21 cm, line-intensity mapping
 
 Scope: live controversies, method debates, forecasts and stale claims.
-Snapshot: 2026-10-13
+Snapshot: 2026-10-26
 
 Numbers carry [src], [sec] or [der]. Forecasts are labelled.
 
@@ -19,6 +19,12 @@ neutrino mass [src: Sullivan, de Belsunce & Ivanov 2026, arXiv:2606.30903, abstr
 inflation, rises to 0.075 if the low-ℓ temperature deficit is a physical feature, and to 0.082 with
 all CMB+BAO data [src:
 Jhaveri, Hu & Miranda 2026, arXiv:2606.20795, abstract].
+Two October 2026 proposals raise τ by acting at z ≳ 10: a redshift-localised ionisation burst
+from early-collapsing small-scale overdensities is preferred at ~2–2.5σ, with Δτ_burst ~ 0.012
+and a total τ ~ 0.073 in both Planck PR3 and PR4 reprocessings [src: Weiner et al. 2026,
+arXiv:2610.12552, abstract]; axion-like-particle birefringence that is larger during reionisation
+suppresses the EE reionisation signal and makes τ ≃ 0.08–0.10 compatible with Planck low-ℓ EE, BB
+and EB [src: Sirletti, Namikawa & Sherwin 2026, arXiv:2610.29764, abstract].
 
 The case against.
 
@@ -31,6 +37,9 @@ The case against.
   most 0.008 [src: Sierra et al. 2026, arXiv:2608.01919, abstract]; decaying dark matter gives 0.064 →
   0.072 [src: Wang et al. 2026, arXiv:2609.39923, abstract]; a flash at z = 20–25 leaves the total
   unchanged in Planck PR4 [src: Upadhyay et al. 2026, arXiv:2609.24989, abstract].
+- Adding dark-pixel and damping-wing-like forest limits to the full Planck likelihoods produces no
+  significant shift in τ; the forest redistributes the optical depth in redshift [src: Lopez,
+  D'Aloisio & Cain 2026, arXiv:2610.28765, abstract].
 - A counter-example exists: weakly clustered Pop III.1 sources give τ = 0.087 while passing the
   most conservative 2σ kSZ limit [src: Aggarwal et al. 2026, arXiv:2606.19459, abstract].
 
@@ -71,6 +80,8 @@ and BAO data [der]. The sibling skills `cosmo-cmb`, `cosmo-neutrinos-dark-matter
 | tanh midpoint from τ | z_re = 8.14 ± 0.61 | Pagano et al. 2019, arXiv:1908.09856 | [src: abstract] |
 | joint 21 cm limits + Lyman-line x_HI + CMB | z₅₀ = 7.16 (+0.15/−0.12), Δz < 1.8 (95%) | Sims et al. 2025, arXiv:2504.09725 | [src: abstract] |
 | mean-free-path emulator | z_re = 6.58 ± 1.2 | arXiv:2602.03923 | [src: abstract] |
+| Planck PR4 low-ℓ EE + dark pixels + damping-wing-like limit, FlexKnots | z₅₀ = 7.7 (+0.7/−0.8), Δz₉₀ < 11.4 (95%) | Lopez, D'Aloisio & Cain 2026, arXiv:2610.28765 | [src: abstract] |
+| same + Lyα-forest Γ_HI, semi-analytic model (model-dependent) | z₅₀ = 7.4 (+0.2/−0.3), Δz₉₀ = 6.0 (+0.8/−1.0), A_z = 2.4 (+0.3/−0.7) | arXiv:2610.28765 | [src: abstract] |
 | JWST galaxy damping wings | x_HI from 0.25 at z ~ 6 to 1.00 at z ~ 9: "a rapid transition around z ∼ 7–8" | Umeda et al. 2025, arXiv:2504.04683 | [src: abstract] |
 | JWST Lyα fractions | mass-weighted x_HI = 0.38 (+0.14/−0.38) at z ~ 7 | Kundu et al. 2026, arXiv:2609.40363 | [src: abstract] |
 | kSZ | Δ⁵⁰z < 3.8 (SPT-3G), Δz < 4.4 (ACT) | arXiv:2601.20551, arXiv:2506.06274 | [src: abstract] |

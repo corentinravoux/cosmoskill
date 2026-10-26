@@ -1,7 +1,7 @@
 # Lyman-alpha forest — open questions, tensions and stale claims
 
 Scope: live controversies with both sides cited, internal tensions between analyses, method debates, what the next data decide, labelled forecasts, and the misconceptions that still circulate.
-Snapshot: 2026-10-14
+Snapshot: 2026-10-26
 
 Flags: `[src]` read this session in the cited paper (abstract unless a section is named); `[der]` derived here; `[sec]` secondary.
 
@@ -90,7 +90,7 @@ Estimators: cross-spectrum P×(k_∥, θ) (arXiv:1710.11036); weighted FFT estim
 
 - T_0(z) from different statistics agrees on a peak near z ≈ 3 (arXiv:2009.00016) but the peak redshift and height differ between P1D-based (peak 14 000 K at z ~ 3.4, arXiv:1808.04367) and multi-statistic analyses (14 750 ± 1322 K at z ≈ 3) [src: abstract of each paper].
 - Late end of hydrogen reionisation (z ≤ 5.3, arXiv:2108.03699) [src: abstract] means relic temperature fluctuations at z = 4–5, exactly where WDM limits are derived (arXiv:2109.06897) [src].
-- The forest alone gives τ_e = 0.040 (+0.042/−0.018) (95%) (arXiv:2510.00107) [src: abstract]. This is relevant to the CMB τ question raised by DESI-era fits, which belongs to `cosmo-cmb` and `cosmo-reionization-21cm`.
+- The forest alone gives τ_e = 0.040 (+0.042/−0.018) (95%) (arXiv:2510.00107) [src: abstract]. This is relevant to the CMB τ question raised by DESI-era fits, which belongs to `cosmo-cmb` and `cosmo-reionization-21cm`. Combined with full Planck likelihoods, forest limits on the end of reionisation (dark pixels, damping-wing-like features) do not significantly shift τ_es or the other cosmological parameters for any reionisation model or forest data combination tried; they redistribute τ_es in redshift (arXiv:2610.28765) [src: abstract].
 - JWST faint quasars as He II reionisation sources are constrained by the high-z P1D (arXiv:2609.16992) [src].
 
 - Dynamical dark energy consistent with the DESI constraints would tilt the flux power spectrum and raise IGM temperatures in hydrodynamical simulations (arXiv:2601.00767) [src]; the DESI DR1 P1D paper judges its own posterior too broad to measure the dark-energy equation of state (arXiv:2601.21432, Sect. 7) [src].

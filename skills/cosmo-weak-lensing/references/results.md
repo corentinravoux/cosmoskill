@@ -2,7 +2,7 @@
 
 Scope: headline cosmic-shear, galaxy–galaxy-lensing, 3×2pt and 6×2pt
 measurements, with the model assumed, and the history of the S8 number.
-Snapshot: 2026-10-16
+Snapshot: 2026-10-26
 
 Flags: `[src]` read this session in the abstract or body of the cited paper;
 `[sec]` taken from a named secondary source; `[der]` a derivation in words,
@@ -87,6 +87,8 @@ to 1σ (arXiv:2602.10065) [src].
 | DES Y3 + Planck PR4 6×2pt, all ξ± scales to 2.5′, baryon PCA with a gas-fraction prior | S8 = 0.8073 ± 0.0094 | flat ΛCDM | Xu et al. 2025, arXiv:2510.25596 | [src: abstract] |
 | DESI DR1 BGS+LRG clustering + DES and KiDS lensing, simulation-based, scales to 0.4 h⁻¹Mpc (clustering) and 2.5 h⁻¹Mpc (lensing) | S8 = 0.797 +0.023/−0.024; Ωm = 0.292 ± 0.011 | other parameters fixed to CMB-preferred values | Lange et al. 2025, arXiv:2512.15962 | [src: abstract] |
 | same with HSC lensing | S8 = 0.791 +0.020/−0.021; Ωm = 0.300 ± 0.009 | HSC photo-z offset fixed to the HSC best fit | arXiv:2512.15962 | [src: abstract] |
+| HSC Y3 photometric 3×2pt (pseudo-Cℓ, lenses and sources from the HSC Y3 shape catalogue) | 68% interval 0.76 ≤ S8 ≤ 0.81, about 25% tighter than the HSC Y3 cosmic-shear analyses | flat ΛCDM; IA, galaxy bias, magnification, baryon feedback and n(z) shifts marginalised | Hamana et al. 2026, arXiv:2608.05530 | [src: abstract, Sect. 6.2] |
+| HSC Y1 3×2pt in harmonic space with the LSST-DESC pipelines | S8 = 0.821 +0.018/−0.021; Ωm = 0.249 +0.061/−0.051; σ8 = 0.904 +0.098/−0.091 | flat ΛCDM | Sanchez-Cid et al. 2026, arXiv:2609.39603 | [src: abstract] |
 
 Read in the body of the DES Y6 3×2pt paper (arXiv:2601.14559): the 3×2pt MAP
 is S8 = 0.793; with non-linear galaxy bias the mean is 0.789 ± 0.011; galaxy
@@ -98,6 +100,17 @@ alone the full-parameter difference is 1.0σ, down from 1.5σ in Y3; the
 best-constrained combination σ8(Ωm/0.3)^0.617 = 0.799 +0.011/−0.010 is 2.5σ
 from the CMB [src: Sect. V.2]. The fiducial run uses TATT, linear galaxy bias
 and no lens bin 2 [src: App. D, Sect. IV.8].
+
+Two HSC 3×2pt analyses on photometric lenses appeared in 2026. The HSC Y3
+one compares itself with HSC Y3 cosmic shear only, not with the CMB, and
+expects the tension with Planck 2018 to have grown since its constraint is
+tighter (arXiv:2608.05530) [src: Sect. 7]; its text does not cite the DESI
+clustering-redshift recalibration of arXiv:2511.18134 [der: a search of the
+paper text for its first author's name found nothing]. The HSC Y1 one is a validation of the
+LSST-DESC infrastructure, run unblinded with modelling choices adjusted to
+reproduce the HSC Y1 cosmic-shear results, so its constraining power is not
+directly comparable with that of the Stage-III analyses (arXiv:2609.39603)
+[src: Sect. 7.2, Sect. 8].
 
 Earlier CMB-lensing combinations, for the history: DES Y3 3×2pt plus
 cross-correlations with SPT + Planck CMB lensing gave S8 = 0.773 ± 0.016 and
@@ -164,6 +177,7 @@ two abstracts; the HSC abstract does not mention the recalibration].
 | X-ray gas fractions (CHEX-MATE + eFEDS) through baryonification | f_gas = 0.029 ± 0.006 at M500c = 3×10¹³ M⊙; 0.078 ± 0.004 at 3×10¹⁴ M⊙; suppression 6% at k = 1 h/Mpc and 23% at k = 5 h/Mpc | Bucko et al. 2026, arXiv:2609.09144 | [src: abstract] |
 | DES Y3 + Planck PR4 6×2pt | first baryon principal component Q1 = 0.025 +0.024/−0.029; 2.9–3.3σ below Illustris, 4.7–5.9σ below OWLS-AGN T8.7, i.e. weak feedback | arXiv:2510.25596 | [src: abstract] |
 | DES Y3 shear × ACT tSZ | 2–4σ preference for stronger suppression than mild-feedback simulations | arXiv:2506.07432 | [src] |
+| Radial gas fraction from the ratio of ΔΣ-filtered kSZ (ACT DR6) to galaxy–galaxy lensing (HSC Y3) around DESI DR2 BGS and LRG | baryon depletion relative to the cosmic mean detected at S/N = 17.2 (BGS) and 13.8 (LRG bin 1); the fiducial FLAMINGO run tracks the data most closely among six simulations, with Illustris-1 and TNG300-1 bracketing it at small radii | Liu et al. 2026, arXiv:2609.22466 | [src: abstract] |
 
 The 6×2pt result (weak feedback) and the tSZ, kSZ, X-ray and KiDS P_m(k)
 results (strong feedback) are in open disagreement; see `open-questions.md`.
@@ -288,4 +302,4 @@ arXiv:1809.09148 and of arXiv:1906.06041].
 - Whether the later version of arXiv:2511.18134 changed the values of its
   Table 1 along with its abstract.
 - Published cosmological results from Euclid, Rubin or Roman lensing: none
-  found in date-sorted searches to 2026-10-07.
+  found in date-sorted searches to 2026-10-26.

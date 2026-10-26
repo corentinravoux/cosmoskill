@@ -5,7 +5,7 @@ description: Use when reviewing, planning or fact-checking cosmological neutrino
 
 # Neutrinos, light relics and dark-matter properties — expert reference
 
-Snapshot 2026-10-14. Numbers carry provenance flags ([src] / [sec] / [der]);
+Snapshot 2026-10-26. Numbers carry provenance flags ([src] / [sec] / [der]);
 re-verify against the cited paper before a number enters a manuscript.
 
 ## File map
@@ -44,7 +44,8 @@ re-verify against the cited paper before a number enters a manuscript.
   0.19 eV (arXiv:2503.14454, Sect. G.2).
 - Ordering: Bayes factor 10 (DESI); 46.5 or > 460, other priors
   (arXiv:2407.18047, abstract; arXiv:2606.18987, abstract); oscillations alone undecided
-  (arXiv:2410.05380); JUNO: normal at ≥ 2.1σ (arXiv:2609.37895, abstract).
+  (arXiv:2410.05380); JUNO: normal at ≥ 2.1σ (arXiv:2609.37895, abstract);
+  atmospheric + JUNO, external: 3.9σ (arXiv:2610.12208, abstract).
 - Laboratory: KATRIN m_ν < 0.45 eV, 90% CL (arXiv:2406.13516, abstract);
   KamLAND-Zen m_ββ < 28–122 meV (arXiv:2406.11438, abstract). Neither is Σm_ν.
 - N_eff: standard 3.044 (arXiv:2008.01074, abstract). CMB-only below
@@ -58,7 +59,8 @@ re-verify against the cited paper before a number enters a manuscript.
 - Fuzzy DM at 10⁻²² eV excluded as all DM; Lyα 1.9 × 10⁻²¹ to 2 × 10⁻²⁰ eV (arXiv:2606.06969, abstract,
   arXiv:2007.12705, abstract).
 - Self-interaction: < 0.13–0.47 cm²/g in clusters (arXiv:2012.06611, abstract,
-  arXiv:1503.07675, abstract); velocity-dependent models survive (arXiv:2006.12515).
+  arXiv:1503.07675, abstract); velocity-dependent models survive (arXiv:2006.12515);
+  JWST quads favour core collapse, Bayes factors 8:1 to 24:1 against CDM (arXiv:2609.35974, abstract).
 - Forecasts: SO σ(Σm_ν) = 0.03 eV, 0.015 eV + LiteBIRD, σ(N_eff) =
   0.045 (arXiv:2503.00636, Sect. 4); Euclid + Planck 23 meV (arXiv:2405.06047, abstract).
   CMB-S4 cancelled.
@@ -117,7 +119,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; open 9k; methods 12k; results 13k; surveys 7k; systematics 14k; deep/fuzzy-ultralight-dm 7k; deep/interacting-decaying-dm 8k; deep/neutrino-mass-full-shape 8k; deep/relic-neutrino-background 6k; deep/self-interacting-dm 11k; deep/strong-lensing-substructure 11k.
+Sizes, in thousands of tokens: L1 3k; open 9k; methods 12k; results 14k; surveys 8k; systematics 14k; deep/fuzzy-ultralight-dm 7k; deep/interacting-decaying-dm 8k; deep/neutrino-mass-full-shape 8k; deep/relic-neutrino-background 6k; deep/self-interacting-dm 11k; deep/strong-lensing-substructure 11k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

@@ -1,7 +1,7 @@
 # Open questions — multi-messenger cosmology
 
 Scope: live controversies with both sides cited, method debates, what the next data decide, forecasts (labelled), and the stale claims that still circulate.
-Snapshot: 2026-10-07 (suite date; literature searches run 2026-10-10)
+Snapshot: 2026-10-26 (light refresh of §1.7, §1.8 and the table of recurring errors; suite date 2026-10-07, literature searches run 2026-10-10)
 
 Provenance flags as in the other files; all H0 values in km s⁻¹ Mpc⁻¹.
 
@@ -119,7 +119,11 @@ is not the total error, by the authors' own list of systematics. The structural 
 the degeneracy with `Ω_b h² f_d` (physics file, Sect. 7.2): an FRB H0 is
 an inverse-distance-ladder-like statement conditional on the baryon density, and is
 not independent of early-universe physics unless something breaks the degeneracy
-(gravitational-wave distances, arXiv:2508.14434, **forecast**).
+(gravitational-wave distances, arXiv:2508.14434, **forecast**). BAO break it in data:
+120 localised bursts with DESI DR2 BAO give H0 = 71.4 (+2.2/−2.5) and
+`Ω_b` = 0.0503 (+0.0025/−0.0021) without a CMB or BBN prior, and 68.8 ± 1.0 when the DM
+distributions follow IllustrisTNG with the diffuse-gas fraction fixed; the authors name
+extragalactic DM modelling as the dominant systematic (arXiv:2610.15536) [src: abstract].
 
 ### 1.8 Lensed supernovae: low or high?
 <!-- key: lensed-supernovae-low-or-high -->
@@ -127,7 +131,9 @@ not independent of early-universe physics unless something breaks the degeneracy
 Refsdal gives 64.8 (eight models) or 66.6 (two models) (arXiv:2305.06367) and 66.0 ± 4.3
 on re-modelling (arXiv:2509.09979); Encore 66.9 (+11.2/−8.1) (arXiv:2509.12301); H0pe
 75.7 (+8.1/−5.5) (arXiv:2403.18902); SN 2025wny 70.8 (+8.2/−6.1) (arXiv:2608.28427)
-[src: abstract of each].
+[src: abstract of each]. Adding the host surface brightness to the Refsdal cluster model
+gives 65.0 (+2.0/−1.8), a 3.0% uncertainty "given our cluster total mass
+parameterization", which is held fixed (arXiv:2610.12595) [src: abstract].
 
 They are consistent with each other and with both ends of the tension [der: comparison
 of the values above]. The open question is whether
@@ -256,7 +262,7 @@ read at abstract level only and no cosmological number is taken from it.
 | "`f_IGM ≈ 0.8` is measured." | 0.59, 0.76, ≥ 0.69 and "more than 90%" under different definitions and samples. | arXiv:2402.00505, arXiv:2409.16952, arXiv:2506.04186, arXiv:2506.03536 [src: abstract of each] |
 | "The DM scatter at fixed redshift is log-normal." | Not a good match to ray-traced simulations. | arXiv:2507.07090 |
 | "Only two lensed supernovae have given H0." | Four by August 2026: Refsdal, H0pe, Encore (the third, arXiv:2509.12301), SN 2025wny (arXiv:2608.28427). | arXiv:2509.12301, arXiv:2608.28427 [src: abstract of each] |
-| "Time-delay cosmography gives 73.3 with 2.4%." | That is H0LiCOW with assumed lens profiles (arXiv:1907.04869); with the mass-sheet degeneracy free, 71.6 (+3.9/−3.3). | arXiv:1907.04869, arXiv:2506.03023 [src: abstract of each]; `cosmo-distance-ladder-h0` |
+| "Time-delay cosmography gives 73.3 with 2.4%." | That is H0LiCOW with assumed lens profiles (arXiv:1907.04869); with the mass-sheet degeneracy free, 71.6 (+3.9/−3.3) for TDCOSMO-2025 and 71.1 (+2.4/−2.3) for TDCOSMO-2026, which supersedes it. | arXiv:1907.04869, arXiv:2506.03023, arXiv:2610.14881 [src: abstract of each]; `cosmo-distance-ladder-h0` |
 | "Modified GW propagation is excluded." | `Xi_0 = 1.4 (+1.0/−0.4)` in GWTC-4.0: consistent with 1, weakly constrained. | arXiv:2509.04348 |
 
 ## Not verified

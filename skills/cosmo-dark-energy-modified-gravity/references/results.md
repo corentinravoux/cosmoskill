@@ -3,7 +3,7 @@
 Scope: current headline constraints on the dark-energy equation of state and
 on modified-gravity parameters, with the history of the key numbers.
 
-Snapshot: 2026-10-14
+Snapshot: 2026-10-26
 
 Flags: `[src]` read this session in the cited paper; `[sec]` taken from a
 named secondary source; `[der]` derived here, derivation stated.
@@ -214,6 +214,12 @@ in `cosmo-supernovae`; the rows below are the numbers this skill needs.
 
 The bispectrum "consistently weakens evidence for time-varying dark energy
 relative to power-spectrum-only analyses" (arXiv:2606.23936, abstract) [src].
+An independent joint DESI DR1 power-spectrum and bispectrum analysis of three
+LRG redshift bins and the quasar sample (Guandalin et al. 2026,
+arXiv:2610.01836) finds that in `w0waCDM` "the bispectrum produces only a mild
+change in the allowed dark-energy parameter region, which remains sensitive to
+the adopted prior ranges" [src: abstract]; its abstract gives no `w0wa`
+significance.
 
 ## 4. Bayesian evidence for `w0wa` against Λ
 <!-- key: bayesian-evidence-for-w0wa-against-lambda -->
@@ -260,6 +266,25 @@ share.
   non-parametric reconstructions with a Horndeski-motivated correlation
   prior): "moderate support" for departures from ΛCDM when several degrees of
   freedom in `w(z)` are allowed, corresponding to "≈ 3σ" [src].
+- Prior choice reverses the sign. Layton, Hall and Robertson 2026,
+  arXiv:2610.26493, recompute `ln B` (positive favours `w0wa`) for DESI DR2
+  BAO + Planck 2018 CMB without CMB lensing, with a uniform prior and with the
+  Jeffreys prior [src: Sect. 4.2, Table 4]. The `w0`, `wa` posteriors "remain
+  robust to prior choice"; the reversal is driven by "the significantly larger
+  Occam penalty applied by the Jeffreys prior" (arXiv:2610.26493)
+  [src: abstract]. The authors state that their analysis "does not establish
+  that the Jeffreys prior is uniquely favoured, nor does it demonstrate that
+  evolving dark energy is excluded by the data" [src: Sect. 4.2].
+
+From arXiv:2610.26493, Table 4:
+
+| DESI DR2 BAO + Planck 2018 + | `ln B`, uniform prior | `ln B`, Jeffreys prior |
+|---|---|---|
+| (no supernovae) | −0.06 ± 0.18 | −11.54 ± 0.18 |
+| DESY5 | 3.65 ± 0.21 | −5.52 ± 0.21 |
+| DES-Dovekie | 0.33 ± 0.21 | −9.18 ± 0.21 |
+| Union3 | 2.34 ± 0.19 | −10.68 ± 0.19 |
+| Pantheon+ | −1.05 ± 0.21 | −10.57 ± 0.21 |
 
 ## 5. Constant `w` and pre-DESI dynamical dark energy
 <!-- key: constant-w-and-pre-desi-dynamical-dark-energy -->
@@ -387,6 +412,7 @@ The chance probability of the GW170817–GRB 170817A coincidence is `5.0 ×
 |---|---|---|---|---|
 | Hu–Sawicki `f(R)`, `n = 1` | `f_R0 < 1.4 × 10^-8` | galaxy morphology (gas–star offsets, disk warps) | Desmond and Ferreira 2020, arXiv:2009.08743 | [src: abstract; Sect. V] |
 | Screened fifth force, strength | `Delta G/G_N < 0.8` at `lambda_C = 0.3 Mpc` to `< 3 × 10^-5` at 8 Mpc (1σ) | same | arXiv:2009.08743 | [src: abstract] |
+| Fifth force acting on dark matter only (equivalence-principle violation in the dark sector, as in interacting dark energy) | `Delta G/G_N < 7.7 × 10^-4` (95% credibility), `< 1.7 × 10^-3` with systematic uncertainties, for force ranges of 8 Mpc and above | warps of 4 × 10^3 edge-on SDSS disks | Desmond and Ferreira 2026, arXiv:2610.24618 | [src: abstract] |
 | Hu–Sawicki `f(R)`, `n = 1` | `log10 abs(f_R0) < −4.79` (95.4%); the arXiv abstract prints "4.79" without the sign | X-ray cluster abundance + CMB + lensing | Cataneo et al. 2014, arXiv:1412.0133 | [src] |
 | Hu–Sawicki `f(R)` | `log10 abs(f_R0) < −4.59` (95%); range `lambda < 17.81 Mpc`; mediator mass `m_phi > 3.60 × 10^-31 eV` | DESI DR1 full-shape power spectrum | Gonzalez et al. 2026, arXiv:2604.26915 | [src: abstract] |
 | `f(R)` as a chameleon sub-case | `abs(f_R) ≲ (2–5) × 10^-5` (95%) for NFW and Hernquist profiles | lensing + kinematics of nine CLASH clusters | Pizzuti et al. 2026, arXiv:2604.23631 | [src: abstract] |

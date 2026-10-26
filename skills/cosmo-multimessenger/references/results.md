@@ -1,7 +1,7 @@
 # Results — headline measurements
 
 Scope: current values of H0 and related parameters from standard sirens, fast radio bursts and lensed transients, the model each assumes, and the history that tells which values are superseded.
-Snapshot: 2026-10-13 (deepening pass, 12–13 October; first build 2026-10-07, searches 2026-10-10)
+Snapshot: 2026-10-26 (light refresh, searches 2026-10-26 from 2026-10-08 on; deepening pass 12–13 October; first build 2026-10-07)
 
 All H0 values are in km s⁻¹ Mpc⁻¹. Every value below was read this session in the
 abstract of the cited paper unless a section is named. "MAP" is maximum a posteriori
@@ -139,6 +139,7 @@ Notes.
 | GWTC-4.0 | normalising-flow population trained on synthetic catalogues | "H0 ∼ 70" for flat ΛCDM with Ω_m = 0.308 [src: abstract]; tighter than the LVK GWTC-4.0 value because the population is fixed to the synthetic catalogue with one free mixture fraction [src: Sect. 3.3] | arXiv:2603.15332 |
 | GWTC-5.0 (235 BBH) | spectral, independent mass and redshift | 74.3 (+13.7/−19.6) | arXiv:2609.25662 [src: abstract] |
 | GWTC-5.0 subset | `gwcosmo` with host weighting inferred | 71.9 (+9.1/−7.5) (median) | arXiv:2609.04991 [src: abstract] |
+| GWTC-5.0 + DELVE DR3 | catalogue, `15.5 < m_r < 20`, evolving luminosity function, depth- and photo-z-dependent de-biasing | 67.4 (+13.0/−11.2) dark only; with GW170817 70.6 (+8.7/−7.0) | arXiv:2610.25909 [src: abstract] |
 | GWTC-4.0 (137 dark sirens) | non-parametric `H(z)` | `H(0.44)` = 92.3 (+29.9/−36.6) | arXiv:2511.11795 [src: abstract] |
 | GWTC-4.0 (142) + TDCOSMO-2025 | distance sum rule | 83.78 (+12.53/−10.23); 75.42 (+3.74/−4.66) with the H0LiCOW lens treatment | arXiv:2606.03634 [src: abstract] |
 
@@ -174,7 +175,8 @@ How to read the tight rows.
 | same, adding GW170817 without its redshift | H0 = 67 (+18/−15); `b_gw < 4.3` at 95% | arXiv:2512.15380 [src: abstract] |
 
 No cross-correlation analysis of GWTC-4.0 or GWTC-5.0 was found in the date-sorted
-search of 2026-10-10.
+searches of 2026-10-10 and 2026-10-26 (the latter from September 2025 on); the papers of
+that period apply the method to simulated O4 events (arXiv:2510.22187) [src: abstract].
 
 ## 4. Fast radio bursts: baryons and H0
 <!-- key: fast-radio-bursts-baryons-and-h0 -->
@@ -225,12 +227,17 @@ feedback.
 | 85.3 (+9.4/−8.1) | 21 localised + 57 unlocalised | as above, with `F` free | arXiv:2305.07022 | [src: abstract] |
 | 71.28 (+1.90/−2.08) | 95 of 117 localised | `p(DM | z)`, statistical error only | arXiv:2507.18946 | [src: abstract] |
 | 69 (+17/−15) | 2124 unlocalised (CHIME Catalog 2) | DM distribution only | arXiv:2604.03769 | [src: abstract] |
+| 71.4 (+2.2/−2.5), with `Ω_b` = 0.0503 (+0.0025/−0.0021) | 120 localised + DESI DR2 BAO | joint fit of H0 and `Ω_b` without CMB or BBN prior, flat ΛCDM | arXiv:2610.15536 | [src: abstract] |
+| 68.8 ± 1.0 | same | as above with IllustrisTNG-based DM distributions and the diffuse-gas baryon fraction fixed | arXiv:2610.15536 | [src: abstract] |
 
 Each needs an external baryon density (physics file, Sect. 7.2); the prior used is not in
 every abstract. The values scatter between analyses by more than the smallest quoted
 error [der: comparison of the rows, no new number]: the scatter between analyses measures the modelling
 systematics (host and halo DM, scatter model, selection), which Xu et al. 2025 list
-themselves (arXiv:2507.18946) [src: abstract]. No FRB H0 is at present a competitive or independent arbiter of the
+themselves (arXiv:2507.18946) [src: abstract]. Zhang et al. 2026 break the `Ω_b` degeneracy with BAO
+instead of a BBN prior; the shift of their value when the DM distributions are fixed to
+IllustrisTNG leads them to name extragalactic DM modelling as "the dominant systematic
+uncertainty" (arXiv:2610.15536) [src: abstract]. No FRB H0 is at present a competitive or independent arbiter of the
 tension.
 
 ## 5. Lensed transients and time delays (pointer)
@@ -241,18 +248,21 @@ tension.
 | SN Refsdal | 64.8 (+4.4/−4.3) | eight cluster models, blinded | arXiv:2305.06367 | [src: abstract] |
 | SN Refsdal | 66.6 (+4.1/−3.3) | the two models most consistent with the observations | arXiv:2305.06367 | [src: abstract] |
 | SN Refsdal, re-modelled | 66.0 ± 4.3 | four mass models, new MUSE and JWST redshifts | arXiv:2509.09979 | [src: abstract] |
+| SN Refsdal, host surface brightness | 65.0 (+2.0/−1.8), with Ω_m = 0.30 (+0.08/−0.09) | image-position cluster model extended with 77,000 HST pixels of the host; four weighting variants; the cluster mass parametrisation is held fixed, and the authors do not include mass-modelling details or the residual mass-sheet degeneracy in the error [src: Sect. 4] | arXiv:2610.12595 | [src: abstract] |
 | SN H0pe | 71.8 (+9.2/−8.1) | seven lens models, time delays only (arXiv abstract) | arXiv:2403.18902 | [src] |
 | SN H0pe | 75.7 (+8.1/−5.5) | models weighted by the absolute magnifications (arXiv abstract) | arXiv:2403.18902 | [src] |
 | SN Encore | 66.9 (+11.2/−8.1) | seven lens models, double-blind | arXiv:2509.12301 | [src: abstract] |
 | SN 2025wny | 80.5 (+26.4/−16.7) | photometric delays only | arXiv:2608.28427 | [src: abstract] |
 | SN 2025wny | 70.8 (+8.2/−6.1) | photometric + spectroscopic delays | arXiv:2608.28427 | [src: abstract] |
-| TDCOSMO-2025 (8 lensed quasars) | 71.6 (+3.9/−3.3) | flat ΛCDM, Ω_m from Pantheon+, mass-sheet degeneracy free, blinded | arXiv:2506.03023 | [src: abstract] |
+| TDCOSMO-2026 (11 lensed quasars) | 71.1 (+2.4/−2.3) | flat ΛCDM, Ω_m from DES-Dovekie SNe, mass-sheet degeneracy accounted for, blind hierarchical analysis; HST and JWST imaging with JWST-NIRSpec, VLT-MUSE and Keck-KCWI dynamics | arXiv:2610.14881 | [src: abstract] |
 
-The TDCOSMO value agrees with the one in `cosmo-distance-ladder-h0`, where the history
-of lensed-quasar results is kept. All lensed-supernova values assume flat ΛCDM with
+TDCOSMO-2026 supersedes TDCOSMO-2025 (§6.5). The same TDCOSMO-2026 value is in
+`cosmo-distance-ladder-h0`, where the history of lensed-quasar results is kept. All lensed-supernova values assume flat ΛCDM with
 fixed or weakly varied matter density (not stated in every abstract; check the paper).
 The four supernovae are mutually consistent within their errors [der: comparison of the
-rows].
+rows]; this comparison predates the 2026 Refsdal value, whose authors find it "in agreement
+with previous analyses of SN Refsdal and with recent results from other strongly lensed
+supernovae" (arXiv:2610.12595) [src: abstract].
 
 ## 6. History of the key numbers
 <!-- key: history-of-the-key-numbers -->
@@ -294,12 +304,20 @@ not move; the two intervals are at different confidence levels and are not compa
 ### 6.4 Agreement with sibling skills
 <!-- key: agreement-with-sibling-skills -->
 
-- `cosmo-distance-ladder-h0`: TDCOSMO-2025 71.6 (+3.9/−3.3) (arXiv:2506.03023)
-  [src: abstract] — same value read here.
+- `cosmo-distance-ladder-h0`: TDCOSMO-2026 71.1 (+2.4/−2.3) (arXiv:2610.14881)
+  [src: abstract] — same value read here; that skill cites the companion paper.
 - `cosmo-surveys-facilities`: O4 ended 18 November 2025 — confirmed by the LVK
   announcement; "GWTC-5.0 has 267 mergers" — 267 is the population-analysis sample (arXiv:2605.27226) [src: abstract], the
   catalogue holds 390 candidates (arXiv:2605.27225) [src: abstract; surveys file, Sect. 1.2]; "O5 has no date" — confirmed, with
   the addition that a six-month run IR1 targets a mid-January 2027 start [doc: https://www.aei.mpg.de/gwastronomy, 2026-10-26].
+
+### 6.5 Lensed-quasar H0 from TDCOSMO
+<!-- key: lensed-quasar-h0-from-tdcosmo -->
+
+| Year | Value | Status |
+|---|---|---|
+| 2025 | 71.6 (+3.9/−3.3), TDCOSMO-2025, 8 lensed quasars, Ω_m from Pantheon+ (arXiv:2506.03023) [src: abstract] | superseded by TDCOSMO-2026 |
+| 2026 | 71.1 (+2.4/−2.3), TDCOSMO-2026, 11 lensed quasars, Ω_m from DES-Dovekie (arXiv:2610.14881) [src: abstract] | current |
 
 ## Not verified
 <!-- key: not-verified -->
@@ -320,4 +338,5 @@ not move; the two intervals are at different confidence levels and are not compa
   SN Refsdal only: delays predicted at H0 = 70 and Ω_M = 0.3 and rescaled, with an
   effect of varying Ω_M of at most about 0.7 (arXiv:2305.06367, Sect. "Effects of varying \Omega_{\rm M} and \O") [src: Supplementary].
 - The Ω_m and `w0` constraints from sirens beyond those in the GW190521 rows.
-- H0 values from SN Zwicky or iPTF16geu, if any exist.
+- H0 values from SN Zwicky or iPTF16geu, if any exist. None was found in a title and
+  abstract search of arXiv on 2026-10-26.

@@ -1,7 +1,7 @@
 # Open questions — CMB × LSS cross-correlations
 
 Scope: live disagreements with both sides cited, tensions between analyses of the same data, method debates, what the next data decide, forecasts, stale claims, and what was not verified.
-Snapshot: 2026-10-13
+Snapshot: 2026-10-26
 
 Flags: `[src]` read this session in the cited paper; `[sec]` from a named secondary source;
 `[der]` derived here. Forecasts are marked **forecast**.
@@ -86,6 +86,12 @@ tracers. None was found in a date-sorted search on 2026-10-09. <!-- num: not a v
   profile (Ried Guachalla 2025, arXiv:2503.19870) [src].
 - Non-linear velocity terms suppress the stacked signal by 10–20% in a way that mimics missing
   gas when the prediction uses ideal velocities (Ondaro-Mallea 2026, arXiv:2607.23339) [src: abstract].
+- Satellites and feedback are degenerate in the stacked kSZ: in FLAMINGO with DESI-like LRG, BGS and
+  ELG samples, satellites are 20–30% of each sample but carry 50–80% of the signal, and neglecting
+  them at the precision of current DESI × ACT data biases the inferred gas fractions low by up to a
+  factor of two and overestimates the feedback strength, mostly for LRGs and BGS; a robust
+  constraint needs the satellite fraction to better than 10% (Ondaro-Mallea 2026, arXiv:2610.17200)
+  [src: abstract].
 - The gas fractions calibrated on pre-eROSITA X-ray groups (HSC-XXL) prefer 5 ± 4% suppression,
   half the kSZ + eROSITA value (arXiv:2512.02954) [src].
 - Stronger feedback that fits the kSZ worsens the agreement with X-ray group gas fractions and is

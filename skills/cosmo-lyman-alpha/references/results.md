@@ -1,7 +1,7 @@
 # Lyman-alpha forest — current measurements and their history
 
 Scope: headline numbers from the Lyα forest (BAO, Alcock–Paczynski, P1D compressed parameters, dark-matter and neutrino bounds, IGM thermal state, tomography), with what supersedes what.
-Snapshot: 2026-10-14
+Snapshot: 2026-10-26
 
 Flags: `[src]` read this session in the cited paper (abstract unless a section is named); `[der]` derived here, derivation given; `[sec]` from a named secondary source. Every parameter constraint states its model.
 
@@ -224,6 +224,7 @@ Reading of the table above. The eBOSS DR14 analyses disagree with each other on 
 | n_P (pivot 0.78 Mpc⁻¹) | 1.009 (+0.027/−0.018); with IGM temperature data 0.983 ± 0.020 and σ_8 = 0.703 (+0.023/−0.027) | same | ΛCDM | arXiv:2309.03943 | [src: abstract] |
 | f_EDE | < 0.03 (95%), down from 0.07 without Lyα; H_0 = 67.9 ± 0.4 | Planck + BAO + eBOSS P1D | axion-like early dark energy | arXiv:2303.00746 | [src: abstract] |
 | log10(G_eff MeV²) | −5.57 (+0.98/−0.58) (Planck + EFT Lyα); −5.16 (+1.12/−0.67) (Planck + PRIYA Lyα) | Planck + eBOSS P1D | neutrino self-interaction | arXiv:2503.15592 | [src: abstract] |
+| log10(G_eff MeV²) | bimodal in the moderately interacting regime: < −4.39 (95%, weakly interacting mode) and −3.04 (+0.11/−0.078) (68%, intermediate mode, split at −3.735); strongly interacting mode −0.26 ± 0.39; the authors state it "remains unclear" whether the bimodality survives other treatments of non-linear and IGM physics | DESI DR1 full shape + BAO + DESI DR1 P1D (compressed likelihood) + BBN + weak n_s prior, no CMB | neutrino self-interaction | arXiv:2610.26654 | [src: Sect. IV.3, Table 2] |
 
 The full table of the DESI DR1 P1D paper (arXiv:2601.21432, Sect. 7) [src], all one-parameter extensions of ΛCDM unless stated. "Planck T&E" is Planck 2018 Plik high-ℓ T&E + Commander low-ℓ TT + SimAll low-ℓ EE; "CMB-SPA" is Planck + ACT DR6 + SPT-3G D1 temperature, polarisation and lensing; "DESI BAO" is DESI DR2 BAO including Lyα. The combination is done by importance sampling with the P1D result modelled as a Gaussian in (Δ²_★, n_★) with σ = 0.032, 0.019 and r = −0.1738.
 
@@ -306,6 +307,7 @@ Forecast: reionisation-relic imprints on large scales would allow DESI-like Lyα
 | Pressure smoothing scale λ_p | > 33.78 ckpc (1σ); 32.36 ± 8.35 ckpc; 31.27 ± 18.28 ckpc | z = 4.2, 4.6, 5.0 | acoustic feature in the small-scale P1D | arXiv:2607.19938 | [src: abstract] |
 | τ_e (Thomson) | 0.040 (+0.042/−0.018) (95%), end-point-matched models; 0.041 (+0.028/−0.017) for fixed duration | — | Lyα forest thermal state alone, CMB-independent | arXiv:2510.00107 | [src: abstract] |
 | End of hydrogen reionisation | fluctuations persist to at least z = 5.3; homogeneous-UVB models excluded at z ≥ 5.4 (> 3.5σ) | 4.9 < z < 6.1 | 67 sightlines incl. XQR-30 | arXiv:2108.03699 | [src: abstract] |
+| Reionisation midpoint and duration | z_50 = 7.7 (+0.7/−0.8), Δz_90 < 11.4 (95%), asymmetry A_z not well constrained; with a semi-analytic model using the forest Γ_HI (model-dependent): z_50 = 7.4 (+0.2/−0.3), Δz_90 = 6.0 (+0.8/−1.0), A_z = 2.4 (+0.3/−0.7) | — | Planck low-ℓ EE (full likelihoods) + dark-pixel upper limits on x_HI at 4.9 ≲ z ≲ 6.9 + damping-wing-like lower limit at z = 5.8; forest constraints do not shift τ_es significantly, they redistribute it in redshift | arXiv:2610.28765 | [src: abstract] |
 | τ_eff(z) = τ_0 (1+z)^γ | τ_0 = (2.46 ± 0.14) × 10⁻³, γ = 3.62 ± 0.04 | 2.1 ≤ z ≤ 4.2 (QSO redshift range) | 83,635 DESI Y1 spectra, LyCAN continuum | arXiv:2405.06743 | [src: abstract] |
 | Mean transmitted flux | smooth evolution, no feature at z ~ 3.2 | 2 < z < 5 | 6065 SDSS DR7 spectra, composites, normalised to arXiv:0710.4522 at z < 2.5 | arXiv:1208.2584 | [src: abstract] |
 | Continuum bias of spline fits on high-resolution spectra | < 1% at z = 2, 4% at z = 3, 12% at z = 4 | — | 86 ESI/HIRES/MIKE spectra, mocks | arXiv:0710.4522 | [src: abstract] |

@@ -1,7 +1,7 @@
 # Early-Universe exotica — results
 
 Scope: headline measurements and limits for each exotic ingredient, with the model and data set behind every number, and what superseded what.
-Snapshot: 2026-10-16
+Snapshot: 2026-10-26
 
 Flags as in `physics-and-methods.md`.
 
@@ -36,6 +36,15 @@ is fitted to the residual spectrum. Intervals are as each paper states them.
   between arrays, agreement within 1σ (arXiv:2309.00693) [src].
 - No array has claimed a 5σ detection as of the snapshot; the combined
   five-array analysis remains below 5σ (arXiv:2512.08666) [src].
+- The amplitudes above depend on the red-noise prior. Dai, Zaldarriaga and
+  Ali-Haïmoud (2026, arXiv:2610.28739) find in NANOGrav 15 yr data that the
+  standard log-uniform intrinsic red-noise priors introduce a prior-volume
+  term that pulls the inferred amplitude more than 2σ above the
+  maximum-likelihood estimate; the profile likelihood, a
+  cross-correlation-only estimator, and power-uniform or population-informed
+  priors lower the amplitude into agreement with SMBHBs, steepen the
+  spectrum toward the SMBHB prediction and strengthen the HD evidence
+  [src: abstract].
 
 ## 2. Ground-based stochastic-background limits
 <!-- key: ground-based-stochastic-background-limits -->
@@ -122,6 +131,7 @@ Individual limits:
 | OGLE LMC, 20 yr | 1.8 × 10⁻⁴ – 6.3 M☉; 1.3 × 10⁻⁵ – 860 M☉ | < 1%; < 10% | ~80 million stars, no events with t_E > 1 yr | Mróz et al. 2024, arXiv:2403.02386 | [src: abstract] |
 | EROS-2 (+ EROS-1), Magellanic Clouds | 0.6 × 10⁻⁷ – 15 M☉ | excluded as the primary halo component; τ_LMC < 0.36 × 10⁻⁷ (95%), < 8% of the halo at ~0.4 M☉ | 7 × 10⁶ bright stars, 6.7 yr; one candidate where ~39 expected | Tisserand et al. 2006, arXiv:astro-ph/0607207 | [src: abstract] |
 | LVK O3a sub-solar search | one component 0.2–1.0 M☉, q ≥ 0.1 | f_PBH ≲ 6% (equal-mass isotropic PBHs); merger rate < 220–24200 Gpc⁻³ yr⁻¹ | no candidates; loudest trigger FAR 0.14 yr⁻¹ | LVK 2021, arXiv:2109.12197 | [src: abstract] |
+| Advanced LIGO O4a + O4b sub-solar search | primary 0.1–2 M☉, secondary 0.1–1 M☉ | effective local fraction f̃_PBH < 0.6% at M_PBH = 0.8 M☉; merger rate R_90 < 5.2 × 10² Gpc⁻³ yr⁻¹ at chirp mass 0.5 M☉ (90%), a factor 2.2 below the earlier O1–O4a searches; 2–7 times below OGLE for M_PBH ≥ 0.6 M☉ under the paper's model assumptions | no significant candidates | Kacanja et al. 2026, arXiv:2610.19329 | [src: abstract] |
 | LVK O3 events, hierarchical | 1–200 M☉ | f_PBH ≲ 10⁻³ in every scenario | early-Universe binaries; several mass functions incl. QCD-epoch critical collapse with non-Gaussianity | Andrés-Carcasona et al. 2024, arXiv:2405.05732 | [src: abstract] |
 | CMB, accretion with DM halo | ≳ 20–50 M☉ upward | f_PBH < 3 × 10⁻⁹ around 10⁴ M☉ | Planck 2018 | Serpico et al. 2020, arXiv:2002.10771 | [src: abstract] |
 | Review summary (microlensing) | 10⁻¹⁰–10³ M☉ | "claimed" exclusion above 1% of the halo | MACHO, EROS, Kepler, HSC, OGLE | Carr et al. 2026, arXiv:2601.06024 | [src: Sect. IV.2.1] |
@@ -130,7 +140,13 @@ Individual limits:
 The OGLE LMC paper concludes that PBHs in its mass range "cannot
 simultaneously explain a significant fraction of dark matter and
 gravitational wave events" (arXiv:2403.02386) [src]; this conclusion is
-disputed (open-questions.md §2).
+disputed (open-questions.md §2). Holding the OGLE events and efficiencies
+fixed, Morales-Zapien, Brown and Profumo (2026, arXiv:2610.30510) find that
+data-motivated changes to the Milky Way halo, the stellar lens populations
+and the LMC halo weaken the strict 20-year bound by up to a factor ≃ 6, and
+primordial clustering weakens the planetary-mass bound by a factor 3.4–6
+[src: abstract]; the Magellanic microlensing limits above should be quoted
+with their halo and lens models.
 
 ## 6. Scalar-induced gravitational waves
 <!-- key: scalar-induced-gravitational-waves -->
@@ -254,6 +270,7 @@ caption]; whether the CMB excludes them is read on that figure, not here.
 | Lyα forest | B < 0.30 nG for n_B = −2.9 (k_peak > 30 Mpc⁻¹, 3σ, conservative noise model); a hint of extra power fitted by B ~ 0.2 nG at k_peak ~ 20 Mpc⁻¹ | hydrodynamic simulations; 234,000 models of the 1D flux power spectrum for each of three redshift bins | Pavičević et al. 2025, arXiv:2501.06299 | [src: abstract for the limits; main-text section "Hydrodynamic Simulations" for the model count] |
 | IGMF lower bound | B ≥ 3 × 10⁻¹⁶ G | Fermi, TeV blazars | Neronov et al. 2010, arXiv:1006.3504 | [src: abstract] |
 | IGMF lower bound | B > 7.1 × 10⁻¹⁶ G for 1 Mpc coherence and a 10 yr duty cycle; > 1.8 × 10⁻¹⁴ G (10⁴ yr), > 3.9 × 10⁻¹⁴ G (10⁷ yr) | Fermi-LAT + H.E.S.S. | H.E.S.S. & Fermi-LAT 2023, arXiv:2306.05132 | [src: abstract] |
+| IGMF strength, pair-echo interpretation of one burst | log(B/G) = −16.2 ± 0.7 if λ_B > 20 kpc (higher by √(20 kpc/λ_B) for shorter λ_B); 10⁻¹⁴–10⁻¹² G for a short-correlation-length relic of a cosmological phase transition; stated consistent with the AGN lower bounds | LHAASO + CTAO/LST-1 on GRB 221009A, LST-1 signal 1.33 d after the burst read as a pair echo; a model interpretation, not a detection claim by the observatories | Neronov et al. 2026, arXiv:2610.06633 | [src: abstract] |
 
 The window between the γ-ray lower bounds and the CMB and Lyα upper
 bounds in the rows above is where a primordial field would have to lie
@@ -267,6 +284,7 @@ normalisation of B].
 |---|---|---|---|---|
 | Ω_ax/(Ω_ax + Ω_c), m_ax = 10⁻²⁶ eV | < 0.070 (Planck), < 0.052 (P-ACT) (95%) | primary CMB | arXiv:2503.14454 | [src: Eq. 51] |
 | same, m_ax = 10⁻²⁷ eV | ≈ 4.5% for both Planck and P-ACT (95%) | primary CMB | arXiv:2503.14454 | [src: Sect. VI.3] |
+| ALP–photon coupling g_φγ, 2.5 × 10⁻²³ < m_φ < 4.8 × 10⁻²⁰ eV | < 1.1 × 10⁻¹¹ (m_φ/10⁻²¹ eV) GeV⁻¹ (95%); no signal; assumes ALPs are all the dark matter with a stochastic field amplitude, more conservative than the deterministic-field assumption | ACT DR6 time-dependent birefringence, 2017–2022 "depth-1" maps, EB estimator | Huber et al. 2026, arXiv:2610.19049 | [src: abstract] |
 
 Part of the improvement comes from the degeneracy between the axion density
 and n_s (arXiv:2503.14454) [src: Sect. VI.3]. ACT DR6 summarises: "only a
@@ -289,6 +307,7 @@ small fraction allowed as axion-like particles" [src].
 | IGMF lower bound | B ≥ 3 × 10⁻¹⁶ G | B > 7.1 × 10⁻¹⁶ G (1 Mpc, 10 yr duty cycle) | combined Fermi-LAT + H.E.S.S. | arXiv:1006.3504 → arXiv:2306.05132 | [src: abstract of each] |
 | Planetary-mass PBHs | per-cent f_PBH fits the OGLE ultrashort events | ≤ 1% for 1.4 × 10⁻⁸ – 0.013 M☉ | high-cadence Magellanic Cloud survey | arXiv:1901.07120 → arXiv:2410.06251 | [src: abstract of each] |
 | Stellar-mass PBHs from LVK | PBH dark matter consistent with GW150914 rates (2016) | f_PBH ≲ 10⁻³ over 1–200 M☉ (O3) | population analyses | arXiv:1603.00464, arXiv:1603.08338 → arXiv:2405.05732 | [src: abstract of each] |
+| Sub-solar PBH binaries from LIGO | f_PBH ≲ 6% (O3a, equal-mass isotropic PBHs, 0.2–1.0 M☉), superseded as the tightest sub-solar search | f̃_PBH < 0.6% at 0.8 M☉ (O4a + O4b, effective local fraction; different definition) | more data, wider mass coverage | arXiv:2109.12197 → arXiv:2610.19329 | [src: abstract of each] |
 
 The PIXIE quoted in older papers (2011) was a B-mode polarimeter; the 2024
 design is a spectrum and polarisation mission with different sensitivities

@@ -1,6 +1,6 @@
 # Theory foundations — which convention each major analysis adopts, read at source
 
-Snapshot: 2026-10-15
+Snapshot: 2026-10-26
 
 ## 1. Summary table
 <!-- key: summary-table -->

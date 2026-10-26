@@ -6,7 +6,7 @@ the homogeneity scale from galaxy and quasar surveys; isotropy as a pointer
 to the dipole and CMB material of this skill; inhomogeneous alternatives to
 dark energy (LTB void models, backreaction, timescape); and the local-void
 (KBC) explanation of the Hubble tension with its critiques.
-Snapshot: 2026-10-22
+Snapshot: 2026-10-26
 
 Flags as in `results.md`: `[src]` read this session in the cited paper's
 abstract; `[src: <place>]` in its body; `[sec: X]` taken from the named
@@ -269,6 +269,11 @@ Independent support for an underdensity, smaller in effect:
 - The Manticore-Local BORG reconstruction of 2M++ finds "no evidence for a
   large local underdensity" (McAlpine et al. 2025, arXiv:2505.10682)
   `[src]`.
+- A hierarchical forward model of the luminosity density from 2MRS, 6dFGS
+  and GAMA at 0.005 < z < 0.065 finds "no evidence for a large coherent
+  underdensity"; the only exception is the nearest shell, z ≃ 0.01, about
+  0.12 dex (≃ 25%) below the smooth model, a −2.6σ underdensity (Bansal et
+  al. 2026, arXiv:2609.36462) `[src: abstract]`.
 - Note on attribution: Stiskalek et al. 2025 is co-authored by Banik, and
   the 2026 proponents' perspective by Desmond; the critiques below are
   from other groups.

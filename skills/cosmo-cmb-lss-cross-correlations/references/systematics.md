@@ -1,7 +1,7 @@
 # Systematics — CMB × LSS cross-correlations
 
 Scope: the systematic effects that have moved published results in this domain, one subsection each (mechanism, size, mitigation, validation, reference), then the referee checklist.
-Snapshot: 2026-10-13
+Snapshot: 2026-10-26
 
 Flags: `[src]` read this session in the cited paper; `[sec]` from a named secondary source;
 `[der]` derived here. "σ" shifts are in units of the statistical error of the analysis that
@@ -424,6 +424,14 @@ simulation; at fixed mean halo mass a centrals-only selection gives a larger kSZ
 FLAMINGO, SIMBA, BAHAMAS and FABLE; shifting the filter centre by up to the 0.5′ ACT pixel has a
 negligible effect on the inner profile [src: Sect. 3.5, 3.6]. No number for the change of the
 profile under miscentring was read.
+
+In FLAMINGO with DESI-like LRG, BGS and ELG samples, satellites and feedback both suppress the
+small-scale stacked kSZ signal: satellites are 20–30% of each sample but 50–80% of the signal, and
+neglecting them at current DESI × ACT precision biases the inferred gas fractions low by up to a
+factor of two. Leaving the satellite population free removes the bias at a cost in constraining
+power; the paper asks for the satellite fraction to better than 10%, for instance from lensing and
+clustering of the same samples. The anisotropic gas around host haloes traced by satellites adds
+10% of the signal (Ondaro-Mallea 2026, arXiv:2610.17200) [src: abstract].
 
 **Why it matters.** The same DESI × ACT data are read as disfavouring fiducial FLAMINGO at > 8σ
 (Siegel 2025, arXiv:2509.10455) and as tracked most closely by fiducial FLAMINGO (arXiv:2609.22466)

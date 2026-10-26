@@ -1,7 +1,7 @@
 # Statistics and inference — quantified facts a referee needs
 
 Scope: sizes of covariance corrections, documented projection-effect shifts, documented differences between tension metrics and model-comparison statistics on the same data, emulator error budgets, sampler and coverage-test outcomes.
-Snapshot: 2026-10-16
+Snapshot: 2026-10-26
 
 Flags: `[src]` read this session in the cited paper; `[sec]` taken from a named secondary source; `[der]` a derivation stated in words, with no number of its own (owner's rule of 2026-10-23: every number is read in a paper).
 
@@ -45,6 +45,7 @@ Two different questions must be kept apart when the cost of a finite mock set is
 | PCA compression of the shear data vector in the same work | dimension reduced by a factor ~5 with most of the information kept | arXiv:1905.03779 | [src] |
 | Parameter-dependent covariance in 3×2pt, survey under 1% of the sky | bias up to O(10%) of the statistical error | Kodwani et al. 2019, arXiv:1811.11584 | [src: abstract] |
 | CMB: validity of the Hamimeche–Lewis approximation | ℓ ≳ 30 | Hamimeche & Lewis 2008, arXiv:0801.0554 | [src: abstract] |
+| LiteBIRD B modes, 20 000 end-to-end simulations: offset Hamimeche–Lewis likelihood over ℓ ≤ 128 against a benchmark (pixel-based likelihood at ℓ ≤ 32, harmonic above) | 68% upper bound on r larger by 19–29%, depending on the beam window function; the number of simulations used for the covariance and the beam window function are "the most critical factors" | LiteBIRD Collaboration, Galloni et al. 2026, arXiv:2610.18036 | [src: abstract] |
 
 ## 2. Projection (prior-volume) effects — documented shifts
 <!-- key: projection-prior-volume-effects-documented -->
@@ -64,6 +65,7 @@ Shifts are between the posterior mean and the best fit (maximum likelihood or MA
 | DES Y3 + KiDS-1000 cosmic shear, ΛCDM, S8 | mean 0.790 (+0.018/−0.014) against MAP 0.801 | 1.7σ from Planck | DES & KiDS 2023, arXiv:2305.17173 | [src: abstract] |
 | BOSS full shape, wCDM, CMB-free | w = −1.17 (+0.12/−0.11); nuisance priors "informative", broadening them shifts the contours | — | Carrilho et al. 2023, arXiv:2207.14784 | [src: abstract] |
 | LSS only (BOSS DR12 full shape + BAO + DES Y3 3×2pt), w0waCDM, reparameterised | w0 = −0.72 ± 0.21, wa = −0.91 (+0.78/−0.64) | MAP inside the marginal interval | Tsedrik et al. 2025, arXiv:2509.09562 | [src: abstract] |
+| NANOGrav 15-year pulsar timing array, gravitational-wave background amplitude, standard log-uniform intrinsic red-noise priors | posterior pulled "more than 2σ above the maximum-likelihood estimate" | the profile likelihood, a cross-correlation-only estimator, and priors uniform in power or informed by the pulsar population avoid or reduce the effect and bring the amplitude into agreement with supermassive-black-hole-binary predictions | Dai, Zaldarriaga & Ali-Haïmoud 2026, arXiv:2610.28739 | [src: abstract] |
 
 DES Y6 3×2pt measured its own projection effects with a noiseless data vector at the MAP, analysed with the data pipeline and covariance (arXiv:2601.14559) [src: App. B "Prior-volume effects"]. Pulls are (truth − mean)/σ.
 
@@ -132,9 +134,12 @@ Checks `[der]`: the significance column follows from `Δχ²_MAP` by the two-deg
 | + DES-SN5YR (original calibration) | 4.2σ | `ln B = +3.32 ± 0.27`, quoted as 3.07 ± 0.10σ | arXiv:2511.10631; arXiv:2603.05472 | [src: abstract of arXiv:2603.05472, which gives all three numbers] |
 | + DES-Dovekie (recalibrated) | (see `cosmo-dark-energy-modified-gravity`) | `ln B = −0.30 ± 0.19` | arXiv:2511.10631 | [src: abstract] |
 | + Pantheon+ | 2.8σ | `ln B = −0.66 ± 0.44` | DESI extended dark-energy paper, Lodha et al. 2025, arXiv:2503.14743 | [sec: `cosmo-dark-energy-modified-gravity` SKILL.md; the abstract of arXiv:2503.14743 does not give it] |
+| DESI DR2 BAO + Planck 2018 (no CMB lensing); + DES-SN5YR; + DES-Dovekie; + Union3; + Pantheon+ — uniform priors against a Jeffreys prior on all uniformly sampled parameters, truncated at the emulator training bounds (`w0 ∈ [−2, 0]`, `wa ∈ [−2, 2]`) [src: Sect. 3.3, Table 1] | — | uniform: `ln B` = −0.06 ± 0.18; +3.65 ± 0.21; +0.33 ± 0.21; +2.34 ± 0.19; −1.05 ± 0.21. Jeffreys: −11.54 ± 0.18; −5.52 ± 0.21; −9.18 ± 0.21; −10.68 ± 0.19; −10.57 ± 0.21 (positive favours w0waCDM) | Layton, Hall & Robertson 2026, arXiv:2610.26493 | [src: Table 4] |
 | Out-of-sample score, DESI DR2 BAO + CMB + supernovae | — | "modest preferences" for w0waCDM in ΔELPD, supplied entirely by one BAO block, LRG2 at z = 0.706; all supernova samples consistent with zero | Karim et al. 2026, arXiv:2609.04334 | [src: abstract] |
 
 Where the Bayesian preference comes from, according to arXiv:2511.10631 [src: Sect. III]: a 2.95 ± 0.04σ tension between DESI DR2 and DES-SN5YR within ΛCDM, reduced to 1.96 ± 0.04σ with DES-Dovekie. The extended model is preferred "precisely because its additional parameters act to resolve this specific dataset conflict".
+
+The prior can reverse the sign of the Bayesian preference without moving the posterior. With a truncated Jeffreys prior every combination above favours ΛCDM, while the marginal `w0`–`wa` constraints show "only minor shifts" towards the MAP in the less constraining combinations (arXiv:2610.26493) [src: abstract]. The authors attribute the swing to the larger Occam penalty of the Jeffreys prior, and show that under the uniform prior the evidence for DESI + CMB + DES-SN5YR changes by `|Δ ln Z|` = 1.36 when the `w0`–`wa` bounds are shrunk to `w0 ∈ [−1, 0]`, `wa ∈ [−1, 1]`, against 0.1 under the Jeffreys prior [src: Sect. 4.2]. They state that the analysis "does not establish that the Jeffreys prior is uniquely favoured" nor that evolving dark energy is excluded [src: Sect. 4.2].
 
 The lesson for a referee: for DESI + CMB the three in-sample statistics read 3.1σ, `Δ(DIC) = −8.7` ("strong" on DESI's own scale) (arXiv:2503.14738, Table 6) and `ln B = −0.57` (mildly against) (arXiv:2511.10631, abstract). None of them is an error; they answer different questions with different treatment of the prior volume of `w0`, `wa`.
 
@@ -215,6 +220,7 @@ The KiDS-SBI value of S8 belongs to the KiDS-1000 data and calibration, supersed
 | Probes including structure growth (weak lensing), same study | contours agree; errors change at the 5% level | arXiv:1205.3984 | [src: abstract] |
 | Euclid, cross-correlations between probes (forecast) | may increase the dark-energy figure of merit "by at least a factor of three" | Euclid Collaboration 2020, arXiv:1910.09273 | [src], forecast |
 | Compression: MOPED with parameter-dependent noise | errors increase "by a very modest factor" | Heavens et al. 2000, arXiv:astro-ph/9911102 | [src] |
+| Compression: CMB likelihood compressed in ΛCDM, used beyond ΛCDM, against the full Planck likelihood | accurate for late-time dark-energy extensions that preserve the dark-matter background evolution; fails when the dark-matter evolution is modified, even at late times, with differences in marginalised constraints "reaching nearly an order of magnitude in some of the cases studied" | Pedrotti et al. 2026, arXiv:2610.08728 | [src: abstract] |
 
 The first line is the relevant one for w0wa from BAO and supernovae: the posterior is strongly non-elliptical along the `w0`–`wa` degeneracy, so a Fisher forecast of the figure of merit for geometrical probes alone is optimistic by a large factor.
 
@@ -270,6 +276,7 @@ A text that says "we apply the Hartlap correction" and nothing else is using the
 | November 2025 | DESI DR2 BAO + Planck | Bayes factor | `ln B = −0.57 ± 0.26` | arXiv:2511.10631 |
 | November 2025 | + DES-SN5YR / DES-Dovekie | Bayes factor | `+3.32 ± 0.27` / `−0.30 ± 0.19` | arXiv:2511.10631 |
 | September 2026 | DESI DR2 BAO + CMB + supernovae | out-of-sample ΔELPD | modest, from one BAO block | arXiv:2609.04334 |
+| October 2026 | DESI DR2 BAO + Planck 2018 (no lensing); + DES-SN5YR | Bayes factor, truncated Jeffreys prior | `ln B = −11.54 ± 0.18`; `−5.52 ± 0.21` | arXiv:2610.26493, Table 4 |
 
 The later frequentist values with recalibrated supernovae are in `cosmo-dark-energy-modified-gravity`; this table tracks the statistic, not the data.
 

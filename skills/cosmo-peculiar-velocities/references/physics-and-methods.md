@@ -2,7 +2,7 @@
 
 Scope: the observables, estimators, covariance models and likelihoods used in direct
 peculiar-velocity cosmology, with the equations as the cited papers write them, their range of
-validity, and the public codes. Snapshot: 2026-10-22
+validity, and the public codes. Snapshot: 2026-10-26
 
 Indicators and surveys: `surveys-and-data.md` §0–1; published fσ8 by family: `results.md` §0.
 Equations are transcribed from the LaTeX source of the cited paper, read this session, in that
@@ -389,7 +389,8 @@ reconstruction of 2MRS with an unbinned Poisson likelihood, tested on CF4 groups
 Lavaux 2019, arXiv:1806.11117) and Manticore-Local (McAlpine et al. 2025, arXiv:2505.10682: BORG
 with a nonlinear gravitational solver on 2M++, Bayesian evidence comparisons) on the density side
 [src: abstract of each, titles]. None quotes fσ8: **no published fσ8 comes from a particle-evolving forward
-model** (`open-questions.md` §9). The quotations and this check (2026-08-14) were folded on
+model** (`open-questions.md` §9; re-checked in date-sorted arXiv searches on 2026-10-26, still none
+found). The quotations and this check (2026-08-14) were folded on
 2026-10-20 from the compilation of 2026-08-12/14, in which `src` meant "traced to the paper" and
 `der` "relabelled or derived, the paper does not quote fσ8".
 

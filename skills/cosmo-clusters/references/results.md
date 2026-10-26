@@ -1,7 +1,7 @@
 # Galaxy-cluster cosmology — results
 
 Scope: headline cosmological constraints from cluster samples, with model and provenance, and the history of the cluster S8.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-26
 
 ## eROSITA eRASS1 (X-ray selected, weak-lensing calibrated)
 <!-- key: erosita-erass1-x-ray-selected-weak-lensing -->
@@ -60,7 +60,7 @@ Note the exponent: SPT quotes σ8 (Ω_m/0.3)^0.2 in 2019 (arXiv:1812.01679) and 
 ## Atacama Cosmology Telescope (SZ selected)
 <!-- key: atacama-cosmology-telescope-sz-selected -->
 
-No cosmological analysis of the ACT DR5 or DR6 cluster number counts with ΛCDM parameters as output was found as of 2026-10-07. What exists:
+No cosmological analysis of the ACT DR5 or DR6 cluster number counts with ΛCDM parameters as output was found as of 2026-10-26. What exists:
 
 | Quantity | Value | Model | Data | Citation | Flag |
 |---|---|---|---|---|---|
@@ -192,8 +192,7 @@ The mechanism: a richness-selected sample preferentially contains haloes embedde
 |---|---|---|---|---|---|
 | Ω_m; σ8; S8 | 0.22 ± 0.02; 0.86 ± 0.03; **0.74 ± 0.03**, 2.8σ from Planck | flat ΛCDM, blinded through the sample completeness | about 8000 AMICO clusters in KiDS-1000, 839 deg², z < 0.8, counts + stacked lensing | Lesci et al. 2025, arXiv:2507.14285 | [src: abstract] |
 | mass precision; intrinsic scatter of log λ*–log M200 | 8% on average; 0.05 ± 0.02 | same | same | arXiv:2507.14285 | [src: App. B] |
-| Ω_m; σ8; S8 | 0.32 +0.05/−0.04; 0.77 +0.13/−0.09; 0.80 +0.08/−0.06 | ΛCDM, priors on mass–richness from counts + lensing | angular correlation function of 5162 AMICO KiDS-DR3 clusters, λ* ≥ 15, 0.1 < z < 0.6 | Romanello et al. 2024, arXiv:2310.12224 | [src: abstract] |
-| Ω_m; S8 | 0.24 +0.05/−0.04; 0.93 +0.11/−0.12 | same | angular power spectrum, same sample | arXiv:2310.12224 | [src: abstract] |
+| Ω_m; σ8; S8 | 0.24 ± 0.02; 0.86 +0.13/−0.10; 0.77 +0.10/−0.08, 1σ agreement with the KiDS-1000 AMICO counts; 2σ tension in Ω_m with Planck 2018 | ΛCDM, Gaussian priors on the mass–richness relation from the counts + lensing analysis, uniform cosmological priors | multipoles of the 3D two-point correlation function, 5–150 Mpc/h, of 9049 AMICO KiDS-1000 clusters at S/N ≥ 3.5, 0.1 ≤ z < 0.8, 838.78 deg² | Romanello et al. 2026, arXiv:2610.31767 | [src: abstract; Sect. 5] |
 | Ω_m; σ8; σ8 (Ω_m/0.3)^0.25; σ8 (Ω_m/0.3)^0.5 | 0.50 +0.28/−0.24; 0.685 +0.161/−0.088; 0.835 +0.041/−0.044; 0.993 +0.084/−0.126 | flat ΛCDM, blind | 129 shear-selected clusters at ν ≥ 4.7 in HSC Y3 mass maps, about 500 deg², z ≲ 0.7 | Chiu et al. 2024, arXiv:2406.11970 | [src: abstract] |
 | S8 | 0.867 ± 0.063, plus 3% systematic from neural-network stochasticity | ΛCDM, simulation-based inference (DELFI), 12 parameters | 171 XXL C1 clusters; HSC Y3 lensing for 86 | Tam et al. 2026, arXiv:2602.11989 | [src: abstract] |
 | Ω_m; σ8 | 0.34 ± 0.06; 0.77 ± 0.04 | comparison of the mean infall-region lensing profile with a simulation suite | DESI Legacy Imaging Survey clusters with a preliminary UNIONS shape catalogue | Mpetha et al. 2025, arXiv:2501.09147 | [src: abstract] |
@@ -234,6 +233,7 @@ The table lists the amplitude each analysis quoted, in order of arXiv posting, s
 | 2020 | DES Y1 abundances + correlations | σ8 = 0.783 +0.064/−0.054, Ω_m = 0.305 +0.055/−0.038 | superseded by DES Y3 | arXiv:2010.01138 | [src: abstract] |
 | 2021 | SDSS redMaPPer, anisotropic boosts | S8 = 0.718 +0.024/−0.021 | superseded by the HSC-lensing version | arXiv:2112.09059 | [src: abstract] |
 | 2023 | SDSS redMaPPer + HSC Y3 | S8 = 0.816 +0.041/−0.039 | current for SDSS | arXiv:2309.13025 | [src: abstract] |
+| 2023 | AMICO KiDS-DR3, 5162 clusters, angular clustering | Ω_m = 0.32 +0.05/−0.04, σ8 = 0.77 +0.13/−0.09, S8 = 0.80 +0.08/−0.06 (correlation function); Ω_m = 0.24 +0.05/−0.04, S8 = 0.93 +0.11/−0.12 (power spectrum) | superseded by the KiDS-1000 clustering analysis (arXiv:2610.31767) | Romanello et al. 2024, arXiv:2310.12224 | [src: abstract] |
 | 2024 | SPT 1005 clusters | S8 = 0.795 ± 0.029; σ8 (Ω_m/0.3)^0.25 = 0.805 ± 0.016 | current for SPT | arXiv:2401.02075 | [src: abstract] |
 | 2024 | eRASS1 | S8 = 0.86 ± 0.01 | current for eROSITA | arXiv:2402.08458 | [src: abstract] |
 | 2024 | Planck + Chandra | S8 = 0.78 ± 0.02, or 0.81 ± 0.02 with fitted evolution | superseded by the DES-shear version | arXiv:2402.04006 | [src: abstract] |
@@ -244,6 +244,7 @@ The table lists the amplitude each analysis quoted, in order of arXiv posting, s
 | 2025 | Planck PSZ2 + DES + Chandra | S8 = 0.791 +0.023/−0.021 (constant bias); 0.814 +0.019/−0.020 (mass-dependent) | current for Planck | arXiv:2509.02068 | [src: abstract] |
 | 2025 | DES Y1, simulation-based forward model | σ8 = 0.826 +0.030/−0.034, Ω_m = 0.254 +0.026/−0.020 | reanalysis of the 2020 data | arXiv:2510.25706 | [src: abstract] |
 | 2026 | XXL C1 + HSC Y3 | S8 = 0.867 ± 0.063 | current for XXL | arXiv:2602.11989 | [src: abstract] |
+| 2026 | AMICO KiDS-1000, 9049 clusters, 3D clustering | S8 = 0.77 +0.10/−0.08, σ8 = 0.86 +0.13/−0.10, Ω_m = 0.24 ± 0.02 | current for cluster clustering in KiDS | arXiv:2610.31767 | [src: abstract] |
 
 The value S8 = 0.831 ± 0.020 of arXiv:2111.07491 combines SPT-SZ clusters with the Planck power spectra and is not a cluster-only number. [src: abstract]
 
@@ -262,7 +263,7 @@ Third, the two smallest errors today, those of eRASS1 and of SPT + DES 3×2pt in
 <!-- key: not-verified -->
 
 - The σ8 or S8 of the 2009 Chandra Cluster Cosmology Project analysis (arXiv:0812.2720): only its dark-energy and neutrino results were read.
-- Cosmology from the ACT DR5 or DR6 counts, from SPT-3G five-year counts, from DES Y6 clusters and from Euclid DR1: searched for, not found as of 2026-10-07.
+- Cosmology from the ACT DR5 or DR6 counts, from SPT-3G five-year counts, from DES Y6 clusters and from Euclid DR1: searched for, not found as of 2026-10-26.
 - Results from the nDGP, interacting-dark-sector and ultralight-axion analyses of SPT and eRASS1 counts exist; they were removed from this file to keep the source list within its limit and belong to `cosmo-dark-energy-modified-gravity` and `cosmo-neutrinos-dark-matter`.
 - The 2022 forward-model analysis of the XXL C1 sample, superseded here by the 2026 simulation-based analysis, is not listed.
 - Stacked ACT × HSC Y3 lensing masses and the HSC lensing of eRASS1 clusters by a second team are not listed, for the same reason.

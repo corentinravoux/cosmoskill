@@ -5,7 +5,7 @@ description: Use when checking, citing or planning around a survey or facility f
 
 # Surveys and facilities — expert reference
 
-Snapshot 2026-10-14. Numbers carry provenance flags ([src] / [sec] / [der]);
+Snapshot 2026-10-26. Numbers carry provenance flags ([src] / [sec] / [der]);
 re-verify against the cited paper before a number enters a manuscript.
 Facts flagged `[sec: GC|WL|CMB|SN|CL]` come from the named sibling skill.
 
@@ -52,7 +52,9 @@ Facts flagged `[sec: GC|WL|CMB|SN|CL]` come from the named sibling skill.
   main-survey start (arXiv:1903.02464, arXiv:2212.03981, arXiv:2009.00628).
 - CMB-S4 was cancelled on 9 July 2025 (`cmb-s4.org`, via `cosmo-cmb`).
   LiteBIRD is now one telescope, target launch "Japanese fiscal year 2036"
-  (arXiv:2607.25285) [src: Table 2]. The Simons Observatory has no public data.
+  (arXiv:2607.25285) [src: Table 2]. The Simons Observatory is "completely
+  online and conducting science operations" (Simons Foundation, 22 October
+  2026) [doc: https://www.simonsfoundation.org/news/now-fully-online-simons-observatory-begins-probe-of-universes-birth/, 2026-10-26] and has no public data.
 - eROSITA DR2 (31 July 2026, `erosita.mpe.mpg.de/dr2`
   [doc: https://erosita.mpe.mpg.de/dr2/, 2026-10-26]) holds catalogues of
   three all-sky passes of the German half (arXiv:2607.27772); eight were
@@ -65,7 +67,8 @@ Facts flagged `[sec: GC|WL|CMB|SN|CL]` come from the named sibling skill.
 - 21 cm cosmology had only cross-correlation detections (arXiv:2202.01242,
   arXiv:2606.25955) until the CHIME auto-spectrum at z ~ 1, 12.5σ in
   the arXiv listing abstract and 12.4σ in the v2 text (arXiv:2511.19620)
-  [src: abstract]; CHORD's full array "will be
+  [src: abstract], then the MeerKLASS single-dish auto-spectrum at
+  z = 0.42, S/N 6.2 (arXiv:2610.12158) [src: abstract]; CHORD's full array "will be
   commissioned in 2028" (arXiv:2607.09374) [src: abstract].
 - LVK's O4 ended 18 November 2025 (AEI and ICRR pages, via web search);
   GWTC-5.0 has 267 mergers in its population analysis (arXiv:2605.27226)

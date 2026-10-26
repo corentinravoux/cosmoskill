@@ -1,6 +1,6 @@
 # open-questions — cosmo-inflation-primordial
 
-Snapshot: 2026-10-07
+Snapshot: 2026-10-26
 
 Scope: the live controversies in observational primordial physics with both sides cited, internal tensions between analyses, method debates, what the next data will decide (forecasts labelled), and the misconceptions and stale claims that still circulate, each with the paper that corrects it.
 
@@ -32,7 +32,7 @@ Flags as in the other files. Numbers are repeated here only when the argument ne
 ## 3. Tensor modes: how far can r be pushed, and by whom?
 <!-- key: tensor-modes-how-far-can-r-be-pushed-and-by-whom -->
 
-- **Current floor.** r < 0.036 from BK18, σ(r) = 0.009 (arXiv:2110.00483) [src: abstract]. No newer B-mode limit on inflationary r exists at the snapshot (search of 2026-10-09). SPT-3G's independent r < 0.25 confirms the method, not the depth (arXiv:2505.02827) [src: abstract].
+- **Current floor.** r < 0.036 from BK18, σ(r) = 0.009 (arXiv:2110.00483) [src: abstract]. No newer B-mode limit on inflationary r exists at the snapshot (searches of 2026-10-09 and 2026-10-26). SPT-3G's independent r < 0.25 confirms the method, not the depth (arXiv:2505.02827) [src: abstract].
 - **The target.** Starobinsky-type models predict r falling as 1/N², far below the current limit; reaching it needs σ(r) well below the BK18 value [der, textbook formula].
 - **Who gets there (all forecasts).** SO with six SATs to 2035: σ(r) = 1.2 × 10⁻³ for ℓ_knee = 50, moderately complex foregrounds and 70% delensing; 7 × 10⁻⁴ in the optimistic case (arXiv:2512.15833) [src: abstract]. LiteBIRD after reformation: total δr < 0.002 at 68% (arXiv:2607.25285) [src: abstract], weaker than the pre-reformation target. CMB-S4 lost agency support in July 2025 (per `cosmo-cmb`).
 - **What limits it.** Dust complexity can bias r by up to r ∼ 0.03 with a low-order moment expansion in the most extreme case considered, σ(β_d) ≃ 0.3 (arXiv:2508.00073) [src: abstract], far above the statistical target, so the forecast is conditional on the foreground model; residual beam leakage in BICEP3 at 95 GHz is equivalent to r = (1.12 ± 0.06) × 10⁻³ after the extended deprojection (arXiv:2608.25016) [src: abstract], comparable to the next-generation σ(r).

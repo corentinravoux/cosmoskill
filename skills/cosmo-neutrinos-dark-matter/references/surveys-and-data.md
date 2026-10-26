@@ -1,7 +1,7 @@
 # Surveys and data — neutrino mass, light relics and dark-matter properties from structure
 
 Scope: the experiments, samples and data releases behind the constraints in `results.md`, past, current and planned, with what each contributes and where its description lives.
-Snapshot: 2026-10-07
+Snapshot: 2026-10-26
 
 Flags: `[src]` read in the cited paper this session; `[sec]` taken from a named secondary source (often a sibling skill, which holds the primary citation); `[der]` derived here. Forecasts are labelled **forecast**.
 
@@ -47,6 +47,8 @@ This domain owns almost no data set of its own. The cosmological inputs are desc
 
 | KATRIN, status in the January 2026 review | — | "about to reach its target sensitivity of the neutrino mass of less than 300 meV"; the experiment then turns to a keV sterile-neutrino search and later to KATRIN++ (quantum read-out, atomic tritium source) | Drexlin & Weinheimer 2026, arXiv:2601.00248 | [src: abstract] |
 | JUNO | reactor antineutrinos at a mean baseline of 52.5 km | 207.2 live days, 8,294 inverse-beta-decay candidates; Δm²_31 to about 1%, sin²θ_12 to 2.1%, Δm²_21 to 1.1%; with long-baseline accelerator constraints, normal ordering at ≥ 2.1σ (one-sided), Bayes factor 10.18 | JUNO Collaboration 2026, arXiv:2609.37895 | [src: abstract] |
+| Atmospheric combination (Super-Kamiokande pre-gadolinium, IceCube-DeepCore, KM3NeT/ORCA-6), external analysis | Δm²_31, θ_23, δ_CP, ordering | inverted ordering excluded at 3.3σ; 3.9σ with 207 days of JUNO data | Jin et al. 2026, arXiv:2610.12208 | [src: abstract] |
+| LEGEND-200 | neutrinoless double beta decay of ⁷⁶Ge, 142.5 kg of enriched detectors, about one year of physics data | T_1/2 > 0.5 × 10²⁶ yr (90% CL); with GERDA and MAJORANA Demonstrator > 1.9 × 10²⁶ yr; aim of 1000 kg yr exposure and 3σ discovery sensitivity at 10²⁷ yr; read in conference proceedings | Saleh 2026, arXiv:2603.12884 | [src: abstract] |
 | KamLAND-Zen 800, complete data set | neutrinoless double beta decay of ¹³⁶Xe, 745 kg of enriched xenon, 2.1 ton yr | T_1/2 > 3.8 × 10²⁶ yr (90% CL); m_ββ < 28–122 meV | Abe et al. 2024, arXiv:2406.11438 | [src: abstract] |
 
 Reading notes.
@@ -56,7 +58,7 @@ Reading notes.
 - KATRIN quotes 90% CL (arXiv:2406.13516, abstract), cosmology 95%. KATRIN's target sensitivity is less than 300 meV on the neutrino mass (arXiv:2601.00248, abstract).
 - For nearly degenerate masses Σm_ν is three times the effective electron-neutrino mass, so the KATRIN target lies far above the cosmological limit, and a laboratory confirmation of a cosmological Σm_ν near the oscillation minimum is not within reach of the running experiment [der: from the two values above].
 - The double-beta-decay limit applies only if neutrinos are Majorana particles, and its mass range reflects nuclear matrix elements. ACT states that KamLAND-Zen excludes almost all of the inverted-ordering band and gives 18 meV as the lowest inverted-ordering m_ββ, the target for next-generation searches (arXiv:2503.14454 Sect. 6.1.1 [src]).
-- No KATRIN mass result later than the 259-day analysis (arXiv:2406.13516, abstract), and no published LEGEND-200 limit, was read this session (see "Not verified").
+- No KATRIN mass result later than the 259-day analysis (arXiv:2406.13516, abstract) was found in an arXiv title search on 2026-10-26; LEGEND-200 limits were read only in conference proceedings (arXiv:2603.12884, abstract) (see "Not verified").
 
 ### 3.2 CMB and large-scale structure inputs (described in sibling skills)
 <!-- key: cmb-and-large-scale-structure-inputs-described -->
@@ -175,7 +177,7 @@ The general simulation landscape is in `cosmo-simulations-mocks`; the Lyα emula
 | CMB-S4 | was the light-relic and neutrino-mass experiment of the 2030s | lost DOE and NSF support on 9 July 2025; shutting down | `cosmo-cmb` | [sec] |
 | Euclid | 3×2pt and spectroscopic clustering: σ(Σm_ν) = 56 meV alone, 23 meV with Planck (at least 2.6σ evidence for non-zero mass); 4σ only with LiteBIRD and CMB Stage-IV; ΔN_eff < 0.144 (95%) with Planck, < 0.063 with future CMB; sensitivity to Σm_ν degrades by at most a factor of two in w0waCDM (**forecast**) | first cosmology release (DR1) planned for mid-2027 [sec: `cosmo-galaxy-clustering`] | Euclid Collaboration 2024, arXiv:2405.06047 | [src: abstract] |
 | Rubin LSST | fainter and more complete Milky Way satellite census, more streams, more lensed quasars | survey began in June 2026 [sec: hub `field-state-2026.md`]; no dark-matter forecast was read here | — | [sec] |
-| JWST Lensed Quasar Dark Matter Survey | the 31-lens flux-ratio sample and the 28-quad arc analysis are published | joint re-analysis with Milky Way satellites not found | arXiv:2511.07765, abstract; arXiv:2511.07513, abstract | [src] |
+| JWST Lensed Quasar Dark Matter Survey | the 31-lens flux-ratio sample, the 28-quad arc analysis and a 29-quad SIDM core-collapse analysis (Bayes factors 8:1 to 24:1 against CDM, arXiv:2609.35974, abstract) are published | joint re-analysis with Milky Way satellites not found among the papers citing paper IV on 2026-10-26 | arXiv:2511.07765, abstract; arXiv:2511.07513, abstract | [src] |
 | KATRIN complete data set; KATRIN++ | target sensitivity less than 300 meV; later an atomic-tritium source with quantum read-out | data set nearly complete at the January 2026 review | arXiv:2601.00248 | [src: abstract] |
 | JUNO | mass ordering from reactor data alone with more exposure | 207.2 live days analysed | arXiv:2609.37895 | [src: abstract] |
 | Next-generation double beta decay | m_ββ down to the 18 meV floor of the inverted ordering | proposed (nEXO) or running first phase (LEGEND-200); not researched | arXiv:2503.14454 for the target | [src: Sect. VI.1.1] |
@@ -202,6 +204,8 @@ Set against the normal-ordering minimum, only the Simons Observatory error with 
 | April 2026 | DESI planned survey complete | — | `cosmo-galaxy-clustering` [sec] |
 | August 2026 | SPT-3G D1 lensing | Σm_ν < 0.072 eV | arXiv:2608.31136 [src: abstract] |
 | September 2026 | JUNO analysis of 207.2 live days | normal ordering at ≥ 2.1σ from the laboratory | arXiv:2609.37895 [src: abstract] |
+| September 2026 | JWST lensed-quasar paper V | Bayes factors 8:1 to 24:1 for SIDM core collapse over CDM | arXiv:2609.35974 [src: abstract] |
+| October 2026 | atmospheric + JUNO combination (external) | inverted ordering excluded at 3.9σ | arXiv:2610.12208 [src: abstract] |
 
 The months are the arXiv submission months of the cited papers.
 
@@ -210,6 +214,6 @@ The months are the arXiv submission months of the cited papers.
 
 - Sample sizes, survey areas and satellite counts of the DES + Pan-STARRS1 census were not read this session.
 - No public-data location was read for any of the small-scale dark-matter samples.
-- The KATRIN final data set, Project 8, LEGEND-200, CUORE and nEXO were not researched beyond what is quoted in §3.1; their numbers are not given.
+- The KATRIN final data set, Project 8, CUORE and nEXO were not researched beyond what is quoted in §3.1; their numbers are not given. LEGEND-200 is quoted from conference proceedings only.
 - Rubin, Roman and Euclid forecasts for satellite counts, streams or lensed-quasar samples were not read.
 - The Simons Observatory forecast assumptions (which large-scale-structure data enter the 0.03 eV figure) were read only in the paper's summary section (arXiv:2503.00636).

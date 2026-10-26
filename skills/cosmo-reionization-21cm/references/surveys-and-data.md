@@ -1,7 +1,7 @@
 # Surveys and data — reionisation, 21 cm, line-intensity mapping
 
 Scope: experiments and data releases, past, current and planned.
-Snapshot: 2026-10-13
+Snapshot: 2026-10-26
 
 Instrument facts here are those stated in the cited papers. Apertures, element counts and sites
 that were not read at source are left out and listed under "Not verified". General facility
@@ -16,7 +16,7 @@ facts for CHIME, MeerKAT, SKA and SPHEREx also live in `cosmo-surveys-facilities
 | EDGES low-band | profile at 78 MHz | claimed absorption profile (2018) | raw data of earlier papers and the full calibration pipeline made public in May 2026 | Bowman et al. 2018, arXiv:1810.05912; Murray et al. 2026, arXiv:2605.16643 | [src: abstract] |
 | SARAS 3 | 55–85 MHz radiometer | non-detection; rejects the EDGES best-fit profile at 95.3% | the only direct test of EDGES | Singh et al. 2021, arXiv:2112.06778 | [src: abstract] |
 | LEDA, BIGHORNS, SARAS (earlier generations) | — | have published global-signal data | — | listed in HERA Collaboration 2025, arXiv:2511.21289, introduction | [sec] |
-| REACH, RHINO, MIST, PRIZM | — | described as "upcoming" in November 2025 | no sky result found in the date-sorted search of 2026-10-10 | arXiv:2511.21289, introduction | [sec] |
+| REACH, RHINO, MIST, PRIZM | — | described as "upcoming" in November 2025 | no sky result found in the date-sorted searches of 2026-10-10 and 2026-10-26 | arXiv:2511.21289, introduction | [sec] |
 
 The HERA collaboration summarises the SARAS 3 result as a non-detection "with a confidence level
 of 2σ" [src: arXiv:2511.21289, introduction]; the SARAS paper's own wording is 95.3% [src:

@@ -1,10 +1,10 @@
 # results — cosmo-inflation-primordial
 
-Snapshot: 2026-10-14
+Snapshot: 2026-10-26
 
 Scope: current measurements of the primordial scalar spectrum (n_s, running, binned P(k)), the tensor-to-scalar ratio, primordial non-Gaussianity, isocurvature, spatial curvature, primordial features and cosmic birefringence, with the history of each number.
 
-Flags: `[src]` read this session in the cited paper; `[sec]` read in a secondary source, which is named; `[der]` derived here. All searches were run on 2026-10-09.
+Flags: `[src]` read this session in the cited paper; `[sec]` read in a secondary source, which is named; `[der]` derived here. All searches were run on 2026-10-09; a refresh search covering 2026-10-07 to 2026-10-26 was run on 2026-10-26 and added no value.
 
 ## 1. Scalar spectral index n_s
 <!-- key: scalar-spectral-index-ns -->
@@ -130,7 +130,7 @@ Reading the table.
 - The lensing–ISW bispectrum is detected by Planck 2018 at 3.5σ (arXiv:1905.05697) [src: abstract]. It is a contaminant of f_NL^local that has to be subtracted, and its detection is a check of the pipeline.
 - The PR4 analysis found that its 600 simulations have a systematically low lensing bispectrum and showed that this does not move the primordial results (arXiv:2504.00884) [src: abstract].
 - Single-field models: the equilateral and orthogonal limits translate into a lower bound on the inflaton sound speed. WMAP 5-year gave c_s > 0.011 (95%) (arXiv:0905.3746) [src]; Planck 2018 gives c_s ≥ 0.021 (95%), the same number for temperature only and for T + E, after marginalising over the second cubic coefficient (arXiv:1905.05697, section 8) [src].
-- No ACT DR6 or SPT-3G primary-CMB bispectrum measurement of f_NL was found in the date-sorted search of 2026-10-09. ACT's published f_NL result is from cluster counts: f_NL = 55 ± 125 from 1,201 SZ clusters over 10,347 deg², probing 5–10 h⁻¹Mpc scales (Sarieddine et al. 2026, arXiv:2602.03917) [src: abstract].
+- No ACT DR6 or SPT-3G primary-CMB bispectrum measurement of f_NL was found in the date-sorted searches of 2026-10-09 and 2026-10-26. ACT's published f_NL result is from cluster counts: f_NL = 55 ± 125 from 1,201 SZ clusters over 10,347 deg², probing 5–10 h⁻¹Mpc scales (Sarieddine et al. 2026, arXiv:2602.03917) [src: abstract].
 - Beyond the three templates: a scan of "cosmological collider" templates, orthogonalised against the single-field shapes, in Planck data with the Modal pipeline peaks at 2.4σ for spin 0 after the look-elsewhere correction, and near 2σ for spins 1 and 2 (Suman et al. 2025, arXiv:2511.17500) [src: abstract]. A neural separable-basis method applied to Planck PR4 finds no detection for two strongly mixed collider models (Philcox, Zhong and Sirletti 2025, arXiv:2511.19179) [src].
 
 ## 6. Primordial non-Gaussianity from large-scale structure
@@ -157,7 +157,7 @@ Every entry constrains the product f_NL · b_φ. The column "p" gives the assume
 | 2.1 +8.8/−8.3 | DESI DR1 LRG and QSO auto- and cross-spectra | (not in abstract) | Rosado-Marín et al. 2026, arXiv:2604.05213 | [src] |
 | −3 ± 12 (LRG alone −3 +22/−21; QSO alone 0 +17/−16) | DESI DR1, configuration-space 2PCF, simulation-based model | Gaussian priors 1.0 ± 0.1 (LRG), 1.6 ± 0.1 (QSO) | Brown et al. 2026, arXiv:2606.24651 | [src: abstract] |
 
-The DESI DR1 result is 2.3 times more precise than the eBOSS one (arXiv:2411.17623) [src: abstract]. Adding the LRG × QSO cross-spectrum improves the DR1 error by about 9%; adding ELGs brings no clear gain (arXiv:2604.05213) [src]. No DESI DR2 f_NL measurement was found in the search of 2026-10-09.
+The DESI DR1 result is 2.3 times more precise than the eBOSS one (arXiv:2411.17623) [src: abstract]. Adding the LRG × QSO cross-spectrum improves the DR1 error by about 9%; adding ELGs brings no clear gain (arXiv:2604.05213) [src]. No DESI DR2 f_NL measurement was found in the searches of 2026-10-09 and 2026-10-26.
 
 ### 6.2 Cross-correlations and other large-scale probes
 <!-- key: cross-correlations-and-other-large-scale-probes -->

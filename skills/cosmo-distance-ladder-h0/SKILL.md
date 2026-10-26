@@ -5,7 +5,7 @@ description: Use when reviewing, planning or fact-checking Hubble-constant work 
 
 # Distance ladder and H0 — expert reference
 
-Snapshot 2026-10-20. Numbers carry provenance flags ([src] / [sec] / [der]);
+Snapshot 2026-10-26. Numbers carry provenance flags ([src] / [sec] / [der]);
 re-verify against the cited paper before a number enters a manuscript.
 
 ## File map
@@ -55,7 +55,8 @@ re-verify against the cited paper before a number enters a manuscript.
   (arXiv:2506.20707, abstract).
 - Time delays [src: abstract]: 73.3 (+1.7/−1.8) assumed mass profiles
   (arXiv:1907.04869); with the mass-sheet degeneracy free, 71.6 (+3.9/−3.3)
-  (arXiv:2506.03023).
+  from 8 lenses in 2025 (arXiv:2506.03023), superseded by 71.1 (+2.4/−2.3),
+  3.3%, from 11 lenses in TDCOSMO-2026 (arXiv:2610.14781).
 - Megamasers: 73.9 ± 3.0 had no flow correction (arXiv:2001.09213,
   abstract). 2026 reanalyses: 66.9 ± 2.5 (velocity noise 50 km/s) and
   68.8 ± 2.6 (150 km/s) with the Manticore flow model (arXiv:2608.06247,
@@ -119,7 +120,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; alternative-distance-probes 8k; open 7k; methods 10k; results 7k; surveys 5k; systematics 12k; deep/cepheid-sn-ladder 6k; deep/inverse-ladder 6k; deep/jagb-miras 8k; deep/megamasers 9k; deep/time-delay-cosmography 6k; deep/trgb 6k.
+Sizes, in thousands of tokens: L1 3k; alternative-distance-probes 8k; open 7k; methods 10k; results 8k; surveys 5k; systematics 12k; deep/cepheid-sn-ladder 6k; deep/inverse-ladder 6k; deep/jagb-miras 8k; deep/megamasers 9k; deep/time-delay-cosmography 6k; deep/trgb 6k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

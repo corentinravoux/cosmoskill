@@ -1,7 +1,7 @@
 # Early-Universe exotica — surveys and data
 
 Scope: the pulsar-timing arrays and their data releases, ground-based and planned gravitational-wave detectors as stochastic-background probes, microlensing surveys behind primordial-black-hole limits, absolute-spectrum CMB instruments, and the CMB and gamma-ray data used for the other limits. Past, current, planned.
-Snapshot: 2026-10-16
+Snapshot: 2026-10-26
 
 Flags as in `physics-and-methods.md`.
 

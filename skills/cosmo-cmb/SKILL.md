@@ -126,7 +126,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 3k; history-of-measurements 4k; open 6k; methods 11k; primary-anisotropies 7k; results 8k; surveys 5k; systematics 11k; deep/beams-calibration-polarisation 9k; deep/component-separation 6k; deep/damping-tail-light-relics 6k; deep/high-ell-likelihoods 8k; deep/lensing-reconstruction 9k; deep/low-ell-polarisation-tau 8k.
+Sizes, in thousands of tokens: L1 3k; history-of-measurements 4k; open 6k; methods 11k; primary-anisotropies 7k; results 9k; surveys 5k; systematics 11k; deep/beams-calibration-polarisation 9k; deep/component-separation 6k; deep/damping-tail-light-relics 6k; deep/high-ell-likelihoods 8k; deep/lensing-reconstruction 9k; deep/low-ell-polarisation-tau 8k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

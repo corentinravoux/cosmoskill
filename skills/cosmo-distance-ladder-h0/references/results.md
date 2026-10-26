@@ -3,7 +3,7 @@
 Scope: headline values of the Hubble constant from the local distance ladder,
 from ladder-independent routes, and from the early-Universe / inverse-ladder
 side, plus derived tension significances.
-Snapshot: 2026-10-19
+Snapshot: 2026-10-26
 
 All H0 values are in km/s/Mpc. Flags: `[src]` read this session in the cited
 paper (abstract unless a section is named); `[sec]` taken from a secondary
@@ -75,13 +75,18 @@ it cannot yet arbitrate the tension.
 
 | Value | Dataset / route | Model | Citation | Flag |
 |---|---|---|---|---|
-| 71.6 (+3.9/-3.3) | TDCOSMO-2025: 8 lensed quasars, JWST/Keck/VLT kinematics, mass-sheet degeneracy free; Omega_m from Pantheon+ | flat LCDM | TDCOSMO Collaboration 2025, arXiv:2506.03023 | [src: abstract] |
+| 71.1 (+2.4/-2.3) | TDCOSMO-2026 baseline: 11 lensed quasars, spatially resolved kinematics for nine (six with JWST-NIRSpec), axisymmetric Jeans models, mass-sheet degeneracy free, blind; Omega_m from DES-Dovekie | flat LCDM | TDCOSMO Collaboration 2026, arXiv:2610.14781 | [src: abstract, Eq. 18] |
+| 71.3 (+2.2/-2.1) | TDCOSMO-2026 + SLACS + SL2S lenses, DES-Dovekie Omega_m | flat LCDM | arXiv:2610.14781 | [src: Eq. 19, Table 4] |
+| 71.7 (+2.5/-2.3); 72.2 (+2.2/-2.2) | TDCOSMO-2026 with DESI DR2 BAO in place of DES-Dovekie, without / with SLACS + SL2S; r_d free, inferred as 140.7 ± 4.3 Mpc | flat LCDM | arXiv:2610.14781 | [src: Eqs. 20-21, Sect. V] |
+| 70.6 (+3.9/-3.1) | TDCOSMO-2026 lenses alone, uniform Omega_m prior: independent of SNe, BAO, CMB and the ladder | flat LCDM | arXiv:2610.14781 | [src: Eq. 22, Table 4] |
 | 73.2 (+4.8/-4.7) | single lens SDSSJ1433+6007, resolved kinematics, lambda_int free (1.12 +0.05/-0.06) | flat LCDM, Omega_m prior from DESI DR2 | Sheu et al. 2026, arXiv:2604.14145 | [src: abstract] |
 | 73.5 (+2.7/-2.8) x lambda_int | three lenses with JWST imaging, lambda_int fixed to 1 (not a final H0) | flat LCDM | Williams et al. 2026, arXiv:2608.27566 | [src: abstract] |
 | 74.5 (+5.6/-6.1) | TDCOSMO 7 lenses, kinematics-only MST constraint | flat LCDM | Birrer et al. 2020, arXiv:2007.02941 | [src: abstract] |
 | 67.4 (+4.1/-3.2) | TDCOSMO + 33 SLACS lenses, same-population assumption; withdrawn: TDCOSMO 2025 finds the SDSS-SLACS dispersions unsuited for cosmography and says this result "should not be considered as valid anymore" (arXiv:2506.03023, Sect. 10.1.2) | flat LCDM | arXiv:2007.02941 | [src] |
 | 73.3 (+1.7/-1.8) | H0LiCOW 6 lenses, power-law or composite profiles assumed | flat LCDM | Wong et al. 2020, arXiv:1907.04869 | [src: abstract] |
 | 64.8 (+4.4/-4.3); 66.6 (+4.1/-3.3) | SN Refsdal, 8 cluster models; 2 best models | flat LCDM | Kelly et al. 2023, arXiv:2305.06367 | [src: abstract] |
+| 65.0 (+2.0/-1.8) | SN Refsdal, an image-position cluster model of MACS J1149.5+2223 extended with the host surface brightness (77,000 HST pixels); cluster mass parametrisation held fixed, so the 3.0% is "given our cluster total mass parameterization" | flat LCDM | Schuldt et al. 2026, arXiv:2610.12595 | [src: abstract] |
+| 70.8 (+8.2/-6.1) | SN 2025wny, first strongly lensed superluminous SN (SLSN-I, z = 2.015), photometric + spectroscopic delays with the lens model of Mörtsell et al. (2026); photometric delays alone 80.5 (+26.4/-16.7) | flat LCDM | Townsend et al. 2026, arXiv:2608.28427 | [src: abstract] |
 | 75.7 (+8.1/-5.5) | SN H0pe (lensed SN Ia), models weighted by magnifications | flat LCDM | Pascale et al. 2025, arXiv:2403.18902 | [src: abstract] |
 | 66.9 (+11.2/-8.1) | SN Encore (lensed SN Ia, z = 1.95), 7 lens models | flat LCDM | Pierel et al. 2025, arXiv:2509.12301 | [src: abstract] |
 | 73.9 ± 3.0 | Megamaser Cosmology Project, 6 galaxies, fixed 250 km/s velocity uncertainty, no flow correction; range 71.8 to 76.9 over flow treatments | none | Pesce et al. 2020, arXiv:2001.09213 | [src: abstract] |
@@ -89,7 +94,7 @@ it cannot yet arbitrate the tension.
 | 66.9 ± 2.5 (sigma_v = 50 km/s); 68.4 ± 2.5 (100 km/s); 68.8 ± 2.6 (150 km/s) | megamasers, 6 galaxies, Manticore-based (M25) flow correction, three values of the velocity noise | none | Watkins & Feldman 2026, arXiv:2608.06247 | [src: Table 2] |
 | 74.9 ± 1.9 (stat) | 10 SNe II at 0.01 < z < 0.04, tailored expanding-photosphere method | none | Vogl et al. 2025, arXiv:2411.04968 | [src: abstract] |
 | 70.0 (+12.0/-8.0) | GW170817 bright siren | none | Abbott et al. 2017, arXiv:1710.05835 | [src: abstract] |
-| 75.4 (+12.8/-9.1) | GWTC-4.0: 142 sources, spectral + GLADE+ catalogue method, combined with GW170817 | population model assumed | LVK 2025, arXiv:2509.04348 | [src: abstract] |
+| 71.7 (+9.4/-7.5) | GWTC-5.0: 236 sources, source-frame mass spectrum + DES-Y6 galaxy catalogue, combined with GW170817; uncertainty 22.0% smaller than GWTC-4.0 | population model assumed | LVK 2026, arXiv:2605.27227 | [src: abstract] |
 
 Megamasers now give two incompatible readings of the same Megamaser
 Cosmology Project sample (six galaxies in one analysis, five in the other). With
@@ -122,9 +127,16 @@ about 5% at z ~ 0.5 `[src: abstract]` (Moresco 2024, arXiv:2412.01994).
 | h r_d = 101.54 ± 0.73 Mpc, Omega_m = 0.2975 ± 0.0086 | DESI DR2 BAO alone | flat LCDM | arXiv:2503.14738, Sec. VI | [src: Sect. VI] |
 | 67.19 (+0.66/-0.64) | inverse ladder: 1829 DES SNe anchored to DESI BAO, 4th-order cosmography | r_d from early Universe; no dark-energy model | Camilleri et al. 2024, arXiv:2406.05049 | [src: abstract] |
 | 67.3 ± 1.1 | inverse ladder: BOSS BAO + SNe | standard pre-recombination physics | Aubourg et al. 2015, arXiv:1411.1074 | [src: abstract] |
+| 76.25 ± 2.87 | inverse ladder: DES-Dovekie SNe only + DESI DR2 BAO, fourth-order cosmography in 1 - a | r_d = 147.05 ± 0.30 Mpc assumed; no dark-energy model | Nájera et al. 2026, arXiv:2610.23657 | [src: abstract] |
+| 67.98 ± 0.69 | same with the legacy low-z SNe added to DES-Dovekie | same | arXiv:2610.23657 | [src: abstract] |
 | 66.7 (+1.7/-1.9), 67.9 (+1.9/-2.1), 67.8 (+2.0/-2.2) | sound-horizon-free: DESI DR1 full shape + CMB lensing + uncalibrated SNe (DESY5, Pantheon+, Union3) | flat LCDM, equality scale | Zaborowski et al. 2025, arXiv:2411.16677 | [src: abstract] |
 | 70.0 ± 1.7 | r_d free: DESI DR2 BAO + CMB lensing + theta_* + DES Y3 3x2pt + Pantheon+ | flat LCDM, sum m_nu = 0.06 eV | García Escudero et al. 2025, arXiv:2509.16202 | [src: abstract] |
 | 70.03 ± 0.97 | same with an informative prior on A_s | same | arXiv:2509.16202 | [src: abstract] |
+
+The inverse ladder depends on the low-redshift SN sample: adding the legacy
+SNe to DES-Dovekie lowers H0 by 8.27, a shift that only 1.24% of 10^4 ΛCDM
+mocks reproduce, and the authors read it as a systematic tension between the
+DES and legacy SN samples `[src: abstract]` (arXiv:2610.23657).
 
 The BBN baryon density that feeds BAO + BBN is Omega_b h^2 = 0.02218 ± 0.00055
 `[src: abstract]` (Schöneberg 2024, arXiv:2401.15054).
@@ -149,6 +161,10 @@ with its endpoints. Published values:
   `[src: abstract]` (arXiv:2509.01667).
 - 5.6 sigma above Planck for the seven-route summary 73.30 ± 0.92
   `[src: abstract]` (arXiv:2606.26831).
+- 3.7 sigma with Planck for a "no-SN" late-Universe combination built on
+  TDCOSMO-2026 with DESI BAO for Omega_m, and 2.7 sigma with Planck after
+  excluding the whole local distance ladder `[src: abstract]`
+  (TDCOSMO Collaboration 2026, arXiv:2610.14881).
 
 Significances that do not follow the Gaussian rule: a historical recalibration
 that treats the scatter of 163 published values (1976 to 2019) as the true
@@ -203,9 +219,20 @@ verify the version before quoting an older CCHP JWST value.
 
 Time-delay cosmography `[src: abstract]`: 73.3 (+1.7/-1.8) with assumed
 profiles in 2019 (arXiv:1907.04869), 74.5 (+5.6/-6.1) once the mass-sheet
-degeneracy was freed in 2020 (arXiv:2007.02941), 71.6 (+3.9/-3.3) in 2025
-(arXiv:2506.03023). The 2.4% H0LiCOW number (arXiv:1907.04869, abstract) is
-superseded as a precision claim, not as a central value.
+degeneracy was freed in 2020 (arXiv:2007.02941), 71.6 (+3.9/-3.3) from the 8
+TDCOSMO-2025 lenses with a Pantheon+ Omega_m in 2025 (arXiv:2506.03023),
+**superseded** by 71.1 (+2.4/-2.3) from the 11 TDCOSMO-2026 lenses with a
+DES-Dovekie Omega_m (arXiv:2610.14781). TDCOSMO-2026 itself gives the
+TDCOSMO-2025 numbers it replaces: 5.0% to 3.3% for the lenses alone with SNe,
+4.6% (74.3 +3.1/-3.7) to 3.0% (71.3 +2.2/-2.1) with SLACS + SL2S
+`[src: Sect. VIII.1]` (arXiv:2610.14781). The 2.4% H0LiCOW number
+(arXiv:1907.04869, abstract) is superseded as a precision claim, not as a
+central value.
+
+Standard sirens (LVK): 75.4 (+12.8/-9.1) from 142 GWTC-4.0 sources with
+GLADE+ and GW170817 (LVK 2025, arXiv:2509.04348, abstract), **superseded** by
+71.7 (+9.4/-7.5) from 236 GWTC-5.0 sources with DES-Y6 and GW170817 (LVK 2026,
+arXiv:2605.27227, abstract).
 
 CMB: 67.4 ± 0.5 (Planck 2018, arXiv:1807.06209, abstract) to 67.19 ± 0.38
 (SPT + ACT + Planck 2025, arXiv:2506.20707, abstract). The ground-based SPT-3G

@@ -3,7 +3,7 @@
 Scope: live controversies in cosmic shear and galaxy–galaxy lensing, with both
 sides cited; what the next data decide; claims that still circulate and the
 papers that correct them.
-Snapshot: 2026-10-16
+Snapshot: 2026-10-26
 
 Flags: `[src]` read this session in the cited paper; `[sec]` from a named
 secondary source; `[der]` derived here. A flag that names a place, as in
@@ -122,6 +122,11 @@ and is not established for DES.
   amplitude at 2.075 +0.243/−0.128, at the end of its prior [2, 3.13]
   farthest from the dark-matter-only value 3.13 (arXiv:2511.18134) [src:
   Table 1 of the ar5iv rendering].
+- **In between:** a model-independent gas fraction from the ratio of
+  ΔΣ-filtered kSZ to galaxy–galaxy lensing around DESI DR2 galaxies finds the
+  fiducial FLAMINGO run closest to the data, with Illustris-1 and TNG300-1
+  bracketing it at small radii (Liu et al. 2026, arXiv:2609.22466) [src:
+  abstract].
 
 The dispute matters for Stage IV because the scale-cut strategy saturates:
 DECADE finds a residual 0.3σ bias in (S8, Ωm) from current scale cuts and
@@ -182,7 +187,12 @@ matter amplitude slightly relative to Planck, and stresses that large scales
 carry the constraint (Campbell et al. 2026, arXiv:2606.23651) [src: abstract]. The DESI
 DR1 full-scale analysis gives S8 = 0.797 +0.023/−0.024 (DES + KiDS lensing)
 and 0.791 +0.020/−0.021 (HSC) with other parameters fixed to CMB values (Lange
-et al. 2025, arXiv:2512.15962) [src: abstract]. A dynamical-dark-energy background of
+et al. 2025, arXiv:2512.15962) [src: abstract]. An earlier BOSS-lens, SDSS-shear
+analysis had the deficit extending to large scales, where astrophysical
+explanations are disfavoured; redone with DECADE shear, the large-scale
+tension is reduced while the small scales are mostly unchanged, and the
+result favours a scale dependence of the effect (Queen et al. 2026,
+arXiv:2610.23828) [src: abstract]. A dynamical-dark-energy background of
 the DESI kind would lower the galaxy–galaxy lensing signal by up to 7%
 relative to clustering and cosmic shear by 14%, through the distance
 dependence of the lensing kernel (Heydenreich et al. 2025, arXiv:2508.05746)
@@ -248,4 +258,6 @@ Roman: launched 30 August 2026 [doc: https://www.nasa.gov/news-release/nasas-dar
   0.743 ± 0.023 while cosmic shear gives 0.783 (arXiv:2601.14559, Table 4):
   the internal-consistency discussion of that paper was not read.
 - Any HSC full-survey (beyond Y3) cosmic-shear cosmology: none found in the
-  date-sorted searches.
+  date-sorted searches to 2026-10-26; an HSC Y3 paper of August 2026 states
+  that the HSC team is carrying out its cosmic-shear analyses on the final
+  data (arXiv:2608.05530) [src: Sect. 1].

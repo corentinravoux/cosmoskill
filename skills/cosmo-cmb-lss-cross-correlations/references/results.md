@@ -1,7 +1,7 @@
 # Results — CMB × LSS cross-correlations
 
 Scope: current headline measurements from CMB lensing × galaxies and quasars, kSZ, tSZ × LSS, ISW, CIB and the other secondaries, then the history of the key numbers.
-Snapshot: 2026-10-13
+Snapshot: 2026-10-26
 
 Flags: `[src]` read this session in the cited paper (its abstract unless a section is named); `[sec]` from a named secondary source; `[der]` derived here, derivation stated. Every constraint assumes flat ΛCDM unless the row says otherwise. Years next to author names are arXiv submission years.
 
@@ -198,6 +198,7 @@ The paper states that the inferred SZ powers depend on the modelling of the tSZ�
 | S_8 from the compiled ⟨bP_e⟩(z) measurements | 0.72 ± 0.03, with a group-mass baryon fraction f_b(10¹³ M⊙, z = 0.1)/(Ω_b/Ω_m) = 0.10 +0.09/−0.05 | SDSS, BOSS, eBOSS, DES, DESI tracers × Planck y, fitted with FLAMINGO | arXiv:2605.11083 | [src: abstract] |
 | Radio emission in the unWISE × multi-frequency spectra | model with radio preferred at 9.5σ (Low-z, z̄ = 0.14) and 11σ (Mid-z, z̄ = 0.23) | unWISE × Planck PR4 nine bands and ACT DR6 | Zhao 2026, arXiv:2606.28099 | [src: abstract] |
 | Stacked tSZ, ~2′ disk | S/N > 38 (DESI DR1 LRG), 27 (BGS), 39 (eROMaPPer clusters) at 90 GHz | ACT DR6 + Planck | Moore 2026, arXiv:2609.08939 | [src: abstract] |
+| Stacked tSZ one-halo term around galaxies and groups, M_200c = 10^12–10^14 M⊙, z ≤ 1, split by mass and richness | detected down to 10^12.2 M⊙ at 5.8σ; thermal energy–mass slope consistent with self-similarity in the intragroup medium but below it by 7.3σ in the circumgalactic medium | 7 million DESI Legacy Survey galaxies and groups × ACT + Planck | Das 2026, arXiv:2610.21628 | [src: abstract] |
 
 ### 3.2 tSZ × lensing
 <!-- key: tsz-x-lensing-2 -->
@@ -255,6 +256,7 @@ The CIB appears in this domain in three roles: a high-redshift matter tracer cor
 | Variance reduction of κ power and κ cross-correlations when a third tracer (CIB or LRGs) removes structure from κ | 10–20% | Planck + DESI Legacy Surveys | Baleato Lizancos 2023, arXiv:2301.10242 | [src: abstract] |
 | ⟨bρ_SFR⟩(z) to z ~ 1, fitted jointly with ⟨bP_e⟩ | broadly compatible with fiducial FLAMINGO | photometric galaxies × multi-frequency CMB maps | arXiv:2603.04269 | [src] |
 | Effective CIB dust parameters correlated with low-z unWISE galaxies | β_0 = 1.79 ± 0.29, T_0 = 22.0 ± 5.1 K (z̄ = 0.14); β_0 = 1.41 ± 0.13, T_0 = 28.0 ± 4.2 K (z̄ = 0.23) | unWISE × Planck PR4 | arXiv:2606.28099 | [src: abstract] |
+| FLAMINGO variants against DES Y3 shear × CIB | strong stellar-feedback (M*−σ) and strong jet-AGN (Jet f_gas−4σ) models predict a cross-correlation ~25% lower in amplitude and are disfavoured at the 3.5σ level; fiducial FLAMINGO and the f_gas ± Nσ variants agree with the data | DES Y3 shear × CIB measurements, compared with FLAMINGO | Maleubre 2026, arXiv:2610.08436 | [src: Table 1 caption, Sect. 4.4] |
 
 ## 6. Other secondaries (status)
 <!-- key: other-secondaries-status -->

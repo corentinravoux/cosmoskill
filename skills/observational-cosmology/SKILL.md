@@ -66,6 +66,10 @@ step: `references/suite-conventions.md`. Design documents and test logs are in t
 - `references/review-checklists.md`: six worked systematics checklists, one
   per large probe family, for reviewing a results section. Every domain skill carries its own list under
   "Systematics a referee checks".
+
+In the lines below, `${CLAUDE_SKILL_DIR}` is the folder of this file; if it
+reaches you unexpanded, write that folder's path in its place.
+
 - `${CLAUDE_SKILL_DIR}/scripts/verify_sources.py <skill directory>`: checks
   every cited arXiv identifier of a skill against arXiv.
 - `${CLAUDE_SKILL_DIR}/scripts/fetch_paper.py <arXiv id>`: reads a cited
@@ -100,9 +104,12 @@ can answer, and go deeper only when it cannot.
 - **L4 is mandatory** before endorsing a number for a manuscript, a proposal
   or a referee report. Read the paper with
   `${CLAUDE_SKILL_DIR}/scripts/fetch_paper.py <arXiv id>` (abstract, outline,
-  one section, or the paragraphs containing a term), or with any tool that
-  gives the paper. If it cannot be read, say that L4 was required and not
-  done; a skill file is never the verification.
+  one section, or the paragraphs containing a term). If the script cannot
+  run, or reports that arXiv cannot be reached, do not run it again: read
+  `https://arxiv.org/abs/<id>` or `https://arxiv.org/html/<id>` with a web
+  tool if you have one. If the paper cannot be read, say that L4 was required
+  and not done; never give its content from memory. A skill file is never the
+  verification.
 - **Applying a formula.** With no dossier, a derivation is answered at L2
   with the formula and its source. Working it out for the asker's numbers is
   allowed and is labelled as derived.
@@ -156,10 +163,14 @@ Sizes, in thousands of tokens: L1 5k; conventions 1k; field-state-2026 6k; revie
   before reading, and read only the passage.
 - L4 starts from the L2 entry: its citation and flag say where to look. Read
   the paper with
-  `python3 "${CLAUDE_SKILL_DIR}/../observational-cosmology/scripts/fetch_paper.py" <arXiv id>`
-  (`--abstract`, `--outline`, `--section`, `--grep`), or with any tool that
-  gives the paper. If it cannot be read, say that L4 was required and not
-  done.
+  `python3 "${CLAUDE_SKILL_DIR}"/../*observational-cosmology/scripts/fetch_paper.py <arXiv id>`
+  (`--abstract`, `--outline`, `--section`, `--grep`). `${CLAUDE_SKILL_DIR}` is
+  the folder of this file; if it reaches you unexpanded, write that folder's
+  path in its place. If the script cannot run, or reports that arXiv cannot
+  be reached, do not run it again: read `https://arxiv.org/abs/<id>` or
+  `https://arxiv.org/html/<id>` with a web tool if you have one. If the paper
+  cannot be read, say that L4 was required and not done; never give its
+  content from memory.
 - Quote a number only with its paper and the place it was read, or, for a
   code or facility fact, its `[doc]` page and read date, as the skill gives
   them; the skill holds no number of its own making. A formula
@@ -168,7 +179,7 @@ Sizes, in thousands of tokens: L1 5k; conventions 1k; field-state-2026 6k; revie
 Local layers: if a directory `.cosmoskill/` exists in the working directory,
 in one of its parents, or in the home directory, or if `COSMOSKILL_HOME` is
 set, run
-`python3 "${CLAUDE_SKILL_DIR}/../observational-cosmology/scripts/layers.py" observational-cosmology`
+`python3 "${CLAUDE_SKILL_DIR}"/../*observational-cosmology/scripts/layers.py observational-cosmology`
 and read what it prints before answering. A note applies when its subject is
 the question's; you need not open the section it is attached to. An
 override replaces its base section for this researcher: use it, and quote

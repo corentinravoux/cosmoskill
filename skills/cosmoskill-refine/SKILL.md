@@ -11,7 +11,7 @@ personal layer (`~/.cosmoskill/`, or `COSMOSKILL_HOME`) or a project layer
 `docs/layers.md` and `docs/layers-v1.md`. Every command below is run, not
 imitated: the scripts refuse what cannot be attached or sourced. Below,
 `layers.py ...` stands for
-`python3 "${CLAUDE_SKILL_DIR}/../observational-cosmology/scripts/layers.py" ...`,
+`python3 "${CLAUDE_SKILL_DIR}"/../*observational-cosmology/scripts/layers.py ...`,
 and the same for `sync_layers.py` and `promote.py`.
 
 Add `--project` to any writing command when the researcher says "for this

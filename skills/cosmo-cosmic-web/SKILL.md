@@ -130,10 +130,14 @@ Sizes, in thousands of tokens: L1 3k; open 4k; methods 7k; results 10k; surveys 
   before reading, and read only the passage.
 - L4 starts from the L2 entry: its citation and flag say where to look. Read
   the paper with
-  `python3 "${CLAUDE_SKILL_DIR}/../observational-cosmology/scripts/fetch_paper.py" <arXiv id>`
-  (`--abstract`, `--outline`, `--section`, `--grep`), or with any tool that
-  gives the paper. If it cannot be read, say that L4 was required and not
-  done.
+  `python3 "${CLAUDE_SKILL_DIR}"/../*observational-cosmology/scripts/fetch_paper.py <arXiv id>`
+  (`--abstract`, `--outline`, `--section`, `--grep`). `${CLAUDE_SKILL_DIR}` is
+  the folder of this file; if it reaches you unexpanded, write that folder's
+  path in its place. If the script cannot run, or reports that arXiv cannot
+  be reached, do not run it again: read `https://arxiv.org/abs/<id>` or
+  `https://arxiv.org/html/<id>` with a web tool if you have one. If the paper
+  cannot be read, say that L4 was required and not done; never give its
+  content from memory.
 - Quote a number only with its paper and the place it was read, or, for a
   code or facility fact, its `[doc]` page and read date, as the skill gives
   them; the skill holds no number of its own making. A formula
@@ -142,7 +146,7 @@ Sizes, in thousands of tokens: L1 3k; open 4k; methods 7k; results 10k; surveys 
 Local layers: if a directory `.cosmoskill/` exists in the working directory,
 in one of its parents, or in the home directory, or if `COSMOSKILL_HOME` is
 set, run
-`python3 "${CLAUDE_SKILL_DIR}/../observational-cosmology/scripts/layers.py" cosmo-cosmic-web`
+`python3 "${CLAUDE_SKILL_DIR}"/../*observational-cosmology/scripts/layers.py cosmo-cosmic-web`
 and read what it prints before answering. A note applies when its subject is
 the question's; you need not open the section it is attached to. An
 override replaces its base section for this researcher: use it, and quote

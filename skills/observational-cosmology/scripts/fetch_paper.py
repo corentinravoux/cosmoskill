@@ -40,6 +40,9 @@ import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from verify_sources import unreachable  # noqa: E402
+
 SOURCES = ["https://arxiv.org/html/{id}", "https://ar5iv.labs.arxiv.org/html/{id}"]
 API = "https://export.arxiv.org/api/query"
 ATOM = {"a": "http://www.w3.org/2005/Atom"}
@@ -114,11 +117,18 @@ def parse(document: str) -> list[tuple[str, int, str]]:
     return parser.blocks
 
 
+def no_route(ident: str, error) -> None:
+    print(f"arXiv cannot be reached from this machine ({error}); do not retry. "
+          f"Read https://arxiv.org/abs/{ident} with a web tool if you have one; "
+          "otherwise say that L4 was required and not done.", file=sys.stderr)
+
+
 def download(ident: str, refresh: bool) -> tuple[str, str]:
     cached = CACHE / (ident.replace("/", "_") + ".html")
     if cached.is_file() and not refresh:
         return cached.read_text(encoding="utf-8"), "cache"
     last = ""
+    blocked = 0
     for template in SOURCES:
         url = template.format(id=ident)
         for attempt in range(ATTEMPTS):
@@ -137,13 +147,20 @@ def download(ident: str, refresh: bool) -> tuple[str, str]:
                 return document, url
             except urllib.error.HTTPError as error:
                 last = f"{url}: HTTP {error.code}"
+                blocked += unreachable(error)
                 if error.code in (429, 503):
                     time.sleep(15 * (attempt + 1))
                     continue
                 break
             except (urllib.error.URLError, TimeoutError) as error:
                 last = f"{url}: {error}"
+                if unreachable(error):
+                    blocked += 1
+                    break
                 time.sleep(5 * (attempt + 1))
+    if blocked == len(SOURCES):
+        no_route(ident, last)
+        raise SystemExit(3)
     raise SystemExit(f"no HTML rendering could be read for {ident} ({last}); "
                      "use --abstract, or the PDF")
 
@@ -159,6 +176,10 @@ def abstracts(idents: list[str]) -> int:
                 payload = response.read()
             break
         except (urllib.error.URLError, TimeoutError) as error:
+            if unreachable(error):
+                for ident in idents:
+                    no_route(ident, error)
+                return 3
             print(f"arXiv API: {error}; retry in {20 * (attempt + 1)} s", file=sys.stderr)
             time.sleep(20 * (attempt + 1))
     if payload is None:

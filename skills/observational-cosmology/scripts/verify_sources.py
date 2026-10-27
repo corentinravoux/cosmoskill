@@ -20,9 +20,11 @@ from __future__ import annotations
 import argparse
 import csv
 import difflib
+import errno
 import json
 import os
 import re
+import socket
 import sys
 import time
 import unicodedata
@@ -130,6 +132,23 @@ def save_cache(cache: dict[str, dict]) -> None:
         print(f"  cache not written: {error}", file=sys.stderr)
 
 
+def unreachable(error: BaseException) -> bool:
+    """True when this machine has no route to arXiv, as opposed to a slow or busy arXiv.
+
+    A failed name lookup, a refused connection, an unreachable network, or the
+    403 an egress proxy answers for a blocked host. A sandbox that allows only
+    some domains (the Claude app's) fails this way; retrying cannot help.
+    """
+    if isinstance(error, urllib.error.HTTPError):
+        return error.code == 403
+    if not isinstance(error, urllib.error.URLError):
+        return False
+    reason = error.reason
+    if isinstance(reason, (socket.gaierror, ConnectionRefusedError)):
+        return True
+    return isinstance(reason, OSError) and reason.errno in (errno.ENETUNREACH, errno.EHOSTUNREACH)
+
+
 def query(chunk: list[str]) -> bytes:
     """One arXiv API request, with backoff on rate limiting and network errors."""
     url = f"{API}?{urllib.parse.urlencode({'id_list': ','.join(chunk), 'max_results': len(chunk)})}"
@@ -139,6 +158,10 @@ def query(chunk: list[str]) -> bytes:
             with urllib.request.urlopen(request, timeout=60) as response:
                 return response.read()
         except (urllib.error.URLError, TimeoutError) as error:
+            if unreachable(error):
+                print(f"arXiv cannot be reached from this machine ({error}); do not retry. "
+                      "Use --offline for the local checks only.", file=sys.stderr)
+                raise SystemExit(3)
             wait = min(15 * 2 ** attempt, 240)
             retry_after = getattr(error, "headers", None) and error.headers.get("Retry-After")
             if retry_after and retry_after.isdigit():

@@ -253,6 +253,8 @@ def main() -> int:
     try:
         document, origin = download(args.paper, args.refresh)
     except SystemExit as failure:
+        if failure.code == 3:
+            return 3
         print(failure, file=sys.stderr)
         return 2
     blocks = parse(document)

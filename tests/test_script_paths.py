@@ -33,6 +33,11 @@ class ScriptPathTest(unittest.TestCase):
             with self.subTest(path=path.relative_to(ROOT)):
                 self.assertNotIn("/../observational-cosmology/", path.read_text(encoding="utf-8"))
 
+    def test_hub_scripts_are_run_with_python3(self):
+        # the scripts are not executable (mode 644): a bare path gives "Permission denied"
+        text = (SKILLS / "observational-cosmology" / "SKILL.md").read_text(encoding="utf-8")
+        self.assertNotIn("`${CLAUDE_SKILL_DIR}/scripts/", text)
+
     def test_every_block_states_the_unexpanded_rule(self):
         blocks = 0
         for path in SKILLS.glob("*/SKILL.md"):

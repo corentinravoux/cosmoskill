@@ -70,11 +70,11 @@ step: `references/suite-conventions.md`. Design documents and test logs are in t
 In the lines below, `${CLAUDE_SKILL_DIR}` is the folder of this file; if it
 reaches you unexpanded, write that folder's path in its place.
 
-- `${CLAUDE_SKILL_DIR}/scripts/verify_sources.py <skill directory>`: checks
+- `python3 "${CLAUDE_SKILL_DIR}"/scripts/verify_sources.py <skill directory>`: checks
   every cited arXiv identifier of a skill against arXiv.
-- `${CLAUDE_SKILL_DIR}/scripts/fetch_paper.py <arXiv id>`: reads a cited
+- `python3 "${CLAUDE_SKILL_DIR}"/scripts/fetch_paper.py <arXiv id>`: reads a cited
   paper: `--abstract`, `--outline`, `--section <title>`, `--grep <text>`.
-- `${CLAUDE_SKILL_DIR}/scripts/layers.py <skill>`: prints a researcher's
+- `python3 "${CLAUDE_SKILL_DIR}"/scripts/layers.py <skill>`: prints a researcher's
   personal and project notes, papers and dossiers for a skill. To record
   something for the researcher, when asked: `layers.py note <skill>
   <file>#<key> <text>`, `layers.py source <skill> <arXiv id> --role <role>`,
@@ -103,7 +103,7 @@ can answer, and go deeper only when it cannot.
   files; the `SKILL.md` bullets carry citations only.
 - **L4 is mandatory** before endorsing a number for a manuscript, a proposal
   or a referee report. Read the paper with
-  `${CLAUDE_SKILL_DIR}/scripts/fetch_paper.py <arXiv id>` (abstract, outline,
+  `python3 "${CLAUDE_SKILL_DIR}"/scripts/fetch_paper.py <arXiv id>` (abstract, outline,
   one section, or the paragraphs containing a term). If the script cannot
   run, or reports that arXiv cannot be reached, do not run it again: read
   `https://arxiv.org/abs/<id>` or `https://arxiv.org/html/<id>` with a web

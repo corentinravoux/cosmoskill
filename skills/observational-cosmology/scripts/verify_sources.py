@@ -146,7 +146,11 @@ def unreachable(error: BaseException) -> bool:
     reason = error.reason
     if isinstance(reason, (socket.gaierror, ConnectionRefusedError)):
         return True
-    return isinstance(reason, OSError) and reason.errno in (errno.ENETUNREACH, errno.EHOSTUNREACH)
+    if not isinstance(reason, OSError):
+        return False
+    # over HTTPS a proxy's refusal arrives as "Tunnel connection failed: 403 Forbidden"
+    return reason.errno in (errno.ENETUNREACH, errno.EHOSTUNREACH) or str(reason).startswith(
+        "Tunnel connection failed: 4")
 
 
 def query(chunk: list[str]) -> bytes:

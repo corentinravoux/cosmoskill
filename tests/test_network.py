@@ -49,6 +49,19 @@ class NetworkTest(unittest.TestCase):
     def test_proxy_403_is_unreachable(self):
         self.assertTrue(self.verify.unreachable(urllib.error.HTTPError("u", 403, "Forbidden", {}, None)))
 
+    def test_https_proxy_403_is_unreachable(self):
+        # what urllib raises when a CONNECT proxy refuses the host
+        tunnel = urllib.error.URLError(OSError("Tunnel connection failed: 403 Forbidden"))
+        self.assertTrue(self.verify.unreachable(tunnel))
+
+    def test_main_exits_3_when_the_body_cannot_be_read(self):
+        self.fail_with(self.fetch, DNS)
+        with mock.patch.object(sys, "argv", ["fetch_paper.py", "1807.06209", "--outline", "--refresh"]), \
+                contextlib.redirect_stderr(self.stderr):
+            self.assertEqual(self.fetch.main(), 3)
+        self.assertEqual(self.sleeps, [])
+        self.assertNotIn("\n3\n", self.stderr.getvalue())
+
     def test_timeout_is_not_unreachable(self):
         self.assertFalse(self.verify.unreachable(TimeoutError()))
         self.assertFalse(self.verify.unreachable(urllib.error.URLError(TimeoutError())))

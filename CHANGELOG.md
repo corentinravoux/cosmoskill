@@ -11,9 +11,10 @@ Claude app support. The same repository installs as a plugin in Claude Code
 and in the Claude app (web, Desktop, Cowork); content unchanged. Plan:
 `docs/plans/2026-10-27-claude-app.md`.
 
-- **Route D** in the README: install from the app's plugin menu, what to
-  switch on, how L4 reaches arXiv there, and how not to load the skills twice
-  when Claude Code syncs the account's plugins.
+- **README rewritten** around the two hosts: install in the app and in
+  Claude Code, a table of what each host can do, how L4 reaches arXiv in the
+  app, and how not to load the skills twice when Claude Code syncs the
+  account's plugins. Shorter: 199 lines instead of 318.
 - **Script paths.** Every skill calls the hub's scripts as
   `"${CLAUDE_SKILL_DIR}"/../*observational-cosmology/scripts/…`: the glob
   finds the hub whether or not its folder carries the app's plugin prefix
@@ -24,8 +25,10 @@ and in the Claude app (web, Desktop, Cowork); content unchanged. Plan:
   paper's content from memory.
 - **Scripts:** `fetch_paper.py` and `verify_sources.py` stop at once, with
   exit code 3 and that advice, when the machine has no route to arXiv (failed
-  name lookup, refused connection, unreachable network, proxy 403). Timeouts
-  and rate limits are retried as before. 11 tests added (94).
+  name lookup, refused connection, unreachable network, a proxy's 403 over
+  HTTP or HTTPS). Timeouts and rate limits are retried as before. The hub's
+  script lines now start with `python3` (the scripts are not executable).
+  14 tests added (97).
 - `cosmoskill-refine` is marked Claude Code only.
 - **For layer users:** `levels-and-layers` changed in every skill, and the
   hub's `hub-files` and `choosing-the-level`; `sync_layers.py` reports entries

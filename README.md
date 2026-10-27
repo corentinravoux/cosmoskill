@@ -1,6 +1,6 @@
 # cosmoskill
 
-Skills for [Claude Code](https://claude.com/claude-code) that give it a
+Skills for [Claude Code](https://claude.com/claude-code) and the Claude app that give it a
 working, citable knowledge of observational cosmology: one hub skill and
 twenty-eight domain skills, each built from the literature, with a bibliography
 checked against arXiv.
@@ -222,7 +222,8 @@ graded by people, is planned for a later release; the level tests in
 
 ## Installing
 
-Three routes. Use one only: two routes at once list every skill twice.
+Four routes: A to C for Claude Code, D for the Claude app. Use one only per
+account: two routes at once list every skill twice.
 
 **A. As a plugin, from the marketplace in this repository.** In Claude Code:
 
@@ -252,6 +253,30 @@ done
 ```
 
 Update with `git pull`. Names are plain: `cosmo-cmb`.
+
+**D. In the Claude app (web, Desktop, Cowork), on a paid plan.** Personnaliser
+(Customize) → Plugins → Ajouter (Add) → Ajouter une place de marché (Add
+marketplace) → Ajouter à partir d'un référentiel (Add from a repository), enter
+`corentinravoux/cosmoskill`, then install `cosmoskill`. Skills need code
+execution: Paramètres → Capacités → « Créer et modifier des fichiers »
+(Settings → Capabilities → Create and edit files). On a Team or Enterprise
+account the owner enables it, under Organization settings → Plugins & skills →
+Policy.
+
+What differs in the app:
+
+- **L4.** The app's sandbox cannot reach arXiv by default, so `fetch_paper.py`
+  stops at once. Either turn on web search in the chat, and Claude reads
+  `arxiv.org/abs/<id>` itself, or have `arxiv.org`, `export.arxiv.org` and
+  `ar5iv.labs.arxiv.org` added to the allowed domains, and the script works.
+  With neither, the skills answer at L1 to L3 and say when L4 was required.
+- **No layers.** The sandbox starts empty in every chat, so personal and
+  project layers and `cosmoskill-refine` work in Claude Code only.
+
+Both hosts on one account: Claude Code 2.1.273 and later also loads the
+plugins of the Claude account it is signed in with. Use route D or route A,
+not both; or keep route A and set `"syncClaudeAiSkills": false` in Claude
+Code's settings.
 
 The scripts need Python 3.9 or later and nothing outside the standard
 library.

@@ -3,7 +3,7 @@
   "owner": {
     "name": "Corentin Ravoux"
   },
-  "description": "Observational-cosmology reference skills for Claude Code: a hub and 28 literature-grounded domain skills, every number sourced to a paper and the place it was read.",
+  "description": "Observational-cosmology reference skills for Claude Code and the Claude app: a hub and 28 literature-grounded domain skills, every number sourced to a paper and the place it was read.",
   "plugins": [
     {
       "name": "cosmoskill",

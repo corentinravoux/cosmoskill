@@ -5,6 +5,32 @@ with the checks run and the statements compared at source, is in
 `docs/history/tests/gate-log.md`; the plans that set each step are in
 `docs/plans/`.
 
+## 1.0.1 — 2026-10-27
+
+Claude app support. The same repository installs as a plugin in Claude Code
+and in the Claude app (web, Desktop, Cowork); content unchanged. Plan:
+`docs/plans/2026-10-27-claude-app.md`.
+
+- **Route D** in the README: install from the app's plugin menu, what to
+  switch on, how L4 reaches arXiv there, and how not to load the skills twice
+  when Claude Code syncs the account's plugins.
+- **Script paths.** Every skill calls the hub's scripts as
+  `"${CLAUDE_SKILL_DIR}"/../*observational-cosmology/scripts/…`: the glob
+  finds the hub whether or not its folder carries the app's plugin prefix
+  (`cosmoskill:observational-cosmology`), and the skill says what
+  `${CLAUDE_SKILL_DIR}` means when it reaches the model unexpanded.
+- **L4 fallback order:** the script; a web tool on `arxiv.org/abs/<id>` when
+  the script cannot reach arXiv; otherwise "L4 required, not done", never the
+  paper's content from memory.
+- **Scripts:** `fetch_paper.py` and `verify_sources.py` stop at once, with
+  exit code 3 and that advice, when the machine has no route to arXiv (failed
+  name lookup, refused connection, unreachable network, proxy 403). Timeouts
+  and rate limits are retried as before. 11 tests added (94).
+- `cosmoskill-refine` is marked Claude Code only.
+- **For layer users:** `levels-and-layers` changed in every skill, and the
+  hub's `hub-files` and `choosing-the-level`; `sync_layers.py` reports entries
+  attached to them (`releases/1.0.1.tsv`).
+
 ## 1.0.0 — 2026-10-26
 
 First stable release. The content is the same shape as 0.3.0, but grown,

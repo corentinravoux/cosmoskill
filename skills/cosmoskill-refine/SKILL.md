@@ -1,6 +1,6 @@
 ---
 name: cosmoskill-refine
-description: Use when the researcher asks to note something for their own work, add a paper to their layer, start or fill a dossier, override or hide a section of a cosmo-* skill, or promote a layer entry to the package, and after an update of the package, to check that the entries of their personal or project layer still attach to the sections they were written against.
+description: Use when the researcher asks to note something for their own work, add a paper to their layer, start or fill a dossier, override or hide a section of a cosmo-* skill, or promote a layer entry to the package, and after an update of the package, to check that the entries of their personal or project layer still attach to the sections they were written against. Claude Code only: needs a persistent home directory.
 ---
 
 # Refining the cosmo-* skills with a local layer

@@ -134,7 +134,7 @@ def checks(skill: str) -> str:
     return ("checks to run from the package root, then review and commit by hand:\n"
             "  python3 tools/assign_keys.py\n"
             "  python3 tools/sync_blocks.py\n"
-            f"  python3 skills/observational-cosmology/scripts/verify_sources.py skills/{skill}\n"
+            f"  python3 plugin/skills/observational-cosmology/scripts/verify_sources.py plugin/skills/{skill}\n"
             "  python3 tools/check_keys.py\n"
             "  python3 -m unittest discover -s tests")
 

@@ -37,8 +37,10 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from layout import SKILLS  # noqa: E402
 sys.path.insert(0, str(ROOT / "tools"))
-sys.path.insert(0, str(ROOT / "skills" / "observational-cosmology" / "scripts"))
+sys.path.insert(0, str(ROOT / SKILLS / "observational-cosmology" / "scripts"))
 import check_numbers  # noqa: E402
 import fetch_paper  # noqa: E402
 
@@ -198,7 +200,7 @@ def main() -> int:
     parser.add_argument("--pause", type=float, default=1.0, help="seconds between downloads of uncached papers")
     args = parser.parse_args()
     store = json.loads(ABSTRACTS.read_text(encoding="utf-8")) if ABSTRACTS.is_file() else {}
-    proposals = propose(ROOT / "skills" / args.skill, store, args.pause)
+    proposals = propose(ROOT / SKILLS / args.skill, store, args.pause)
     ABSTRACTS.parent.mkdir(parents=True, exist_ok=True)
     ABSTRACTS.write_text(json.dumps(store), encoding="utf-8")
     OUT.mkdir(parents=True, exist_ok=True)

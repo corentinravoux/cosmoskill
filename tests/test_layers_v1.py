@@ -196,7 +196,7 @@ class SyncTest(unittest.TestCase):
 
 class RefineSkillTest(unittest.TestCase):
     def test_workflow_skill_is_short_and_has_no_references(self):
-        skill = ROOT / "skills" / "cosmoskill-refine"
+        skill = ROOT / "plugin" / "skills" / "cosmoskill-refine"
         text = (skill / "SKILL.md").read_text(encoding="utf-8")
         self.assertTrue(text.startswith("---\nname: cosmoskill-refine\n"))
         description = re.search(r"^description: (.+)$", text, re.M).group(1)

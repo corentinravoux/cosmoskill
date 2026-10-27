@@ -17,7 +17,7 @@ stale two years after its read date (owner, 2026-10-26; see
 With `--due <days>`, it lists every file whose snapshot is older than that
 many days, and every `[doc]` statement that goes stale within that many
 days, so a refresh run knows where to start. The refresh procedure itself is
-in `skills/observational-cosmology/references/suite-conventions.md`,
+in `plugin/skills/observational-cosmology/references/suite-conventions.md`,
 "Refreshing a domain". Standard library only.
 """
 
@@ -31,6 +31,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import check_numbers  # noqa: E402
+from layout import SKILLS  # noqa: E402
 
 ROOT = check_numbers.ROOT
 SNAPSHOT = re.compile(r"\bSnapshot:\s*\**\s*(20\d\d-[01]\d-[0-3]\d)", re.I)
@@ -89,8 +90,8 @@ def main() -> int:
     parser.add_argument("--due", type=int, help="list files older than, and [doc] facts stale within, this many days")
     parser.add_argument("--today", type=date.fromisoformat, default=date.today(), help=argparse.SUPPRESS)
     args = parser.parse_args()
-    skills = [ROOT / "skills" / args.skill] if args.skill else sorted(
-        path for path in (ROOT / "skills").iterdir() if (path / "references").is_dir())
+    skills = [ROOT / SKILLS / args.skill] if args.skill else sorted(
+        path for path in (ROOT / SKILLS).iterdir() if (path / "references").is_dir())
     for skill in skills:
         line, details = status(skill, args.today, args.due)
         print(line)

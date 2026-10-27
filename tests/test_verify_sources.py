@@ -9,7 +9,7 @@ import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-CHECKER = ROOT / "skills" / "observational-cosmology" / "scripts" / "verify_sources.py"
+CHECKER = ROOT / "plugin" / "skills" / "observational-cosmology" / "scripts" / "verify_sources.py"
 HEADER = "key\tid\tfirst_author\tyear\ttitle\trole\n"
 PAPER_A = ("2501.16852", "Ravoux", "2025",
            "Generalized framework for likelihood-based field-level inference of growth rate from velocity and density fields")

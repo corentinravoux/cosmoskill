@@ -12,7 +12,7 @@ import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SKILLS = ROOT / "skills"
+SKILLS = ROOT / "plugin" / "skills"
 START = "<!-- cosmoskill:block:start"
 COMMAND = re.compile(r"`python3 ([^`]*fetch_paper\.py\"?)")
 

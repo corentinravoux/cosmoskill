@@ -12,7 +12,7 @@ from pathlib import Path
 from unittest import mock
 
 ROOT = Path(__file__).resolve().parent.parent
-SCRIPTS = ROOT / "skills" / "observational-cosmology" / "scripts"
+SCRIPTS = ROOT / "plugin" / "skills" / "observational-cosmology" / "scripts"
 DNS = urllib.error.URLError(socket.gaierror(-2, "Name or service not known"))
 
 

@@ -46,7 +46,7 @@ class KeysTest(unittest.TestCase):
 
     def test_missing_and_repeated_keys_are_reported(self):
         with tempfile.TemporaryDirectory() as tmp:
-            skill = Path(tmp) / "skills" / "cosmo-x"
+            skill = Path(tmp) / "plugin" / "skills" / "cosmo-x"
             skill.mkdir(parents=True)
             (skill / "SKILL.md").write_text("## A\n<!-- key: a -->\n\n## B\n\n## C\n<!-- key: a -->\n", encoding="utf-8")
             problems = "\n".join(self.check.check_tree(Path(tmp)))
@@ -56,7 +56,7 @@ class KeysTest(unittest.TestCase):
     def test_a_removed_key_is_reported_unless_retired(self):
         with tempfile.TemporaryDirectory() as tmp:
             repo = Path(tmp)
-            skill = repo / "skills" / "cosmo-x" / "references"
+            skill = repo / "plugin" / "skills" / "cosmo-x" / "references"
             skill.mkdir(parents=True)
             (skill / "results.md").write_text("## A\n<!-- key: a -->\n\n## B\n<!-- key: b -->\n", encoding="utf-8")
             git = ["git", "-C", str(repo), "-c", "user.name=t", "-c", "user.email=t@example.org"]
@@ -72,6 +72,23 @@ class KeysTest(unittest.TestCase):
             self.assertEqual(self.check.check_against("HEAD", repo), [])
 
 
+    def test_check_keys_against_pre_move_ref(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            repo = Path(tmp)
+            old = repo / "skills" / "cosmo-x" / "references"
+            old.mkdir(parents=True)
+            (old / "results.md").write_text("## A\n<!-- key: a -->\n\n## B\n<!-- key: b -->\n", encoding="utf-8")
+            git = ["git", "-C", str(repo), "-c", "user.name=t", "-c", "user.email=t@example.org"]
+            subprocess.run(git + ["init", "-q"], check=True)
+            subprocess.run(git + ["add", "-A"], check=True)
+            subprocess.run(git + ["commit", "-q", "-m", "before the move"], check=True)
+            (repo / "plugin").mkdir()
+            subprocess.run(git + ["mv", "skills", "plugin/skills"], check=True)
+            subprocess.run(git + ["commit", "-q", "-m", "the move"], check=True)
+            self.assertEqual(self.check.check_against("HEAD~1", repo), [])
+            self.assertEqual(self.check.check_tree(repo), [])
+
+
 class BlocksTest(unittest.TestCase):
     def test_blocks_are_current(self):
         result = subprocess.run([sys.executable, str(TOOLS / "sync_blocks.py"), "--check"], capture_output=True, text=True)
@@ -81,7 +98,7 @@ class BlocksTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             copy = Path(tmp) / "package"
             shutil.copytree(ROOT, copy, ignore=shutil.ignore_patterns(".git", "__pycache__", "docs"))
-            target = copy / "skills" / "cosmo-cmb" / "SKILL.md"
+            target = copy / "plugin" / "skills" / "cosmo-cmb" / "SKILL.md"
             target.write_text(target.read_text(encoding="utf-8").replace("then stop.", "then carry on."), encoding="utf-8")
             tool = copy / "tools" / "sync_blocks.py"
             stale = subprocess.run([sys.executable, str(tool), "--check"], capture_output=True, text=True)

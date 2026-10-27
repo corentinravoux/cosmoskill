@@ -12,7 +12,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SCRIPTS = ROOT / "skills" / "observational-cosmology" / "scripts"
+SCRIPTS = ROOT / "plugin" / "skills" / "observational-cosmology" / "scripts"
 FIXTURES = ROOT / "tests" / "fixtures"
 
 

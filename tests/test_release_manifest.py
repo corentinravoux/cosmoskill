@@ -16,13 +16,13 @@ class ManifestTest(unittest.TestCase):
     def test_manifest_between_the_fixture_bases(self):
         with tempfile.TemporaryDirectory() as tmp:
             repo = Path(tmp) / "repo"
-            shutil.copytree(base(tmp, "before"), repo / "skills")
+            shutil.copytree(base(tmp, "before"), repo / "plugin" / "skills")
             git = ["git", "-C", str(repo), "-c", "user.name=t", "-c", "user.email=t@example.org"]
             subprocess.run(git + ["init", "-q"], check=True)
             subprocess.run(git + ["add", "-A"], check=True)
             subprocess.run(git + ["commit", "-q", "-m", "before"], check=True)
-            shutil.rmtree(repo / "skills")
-            shutil.copytree(base(tmp, "after"), repo / "skills")
+            shutil.rmtree(repo / "plugin" / "skills")
+            shutil.copytree(base(tmp, "after"), repo / "plugin" / "skills")
 
             def make(*options):
                 return subprocess.run([sys.executable, str(TOOL), "--repo", str(repo), "--from", "HEAD", *options],
@@ -53,6 +53,24 @@ class ManifestTest(unittest.TestCase):
                                     "--version", "9.9.9", "--force"], capture_output=True, text=True)
             self.assertEqual((repo / "releases" / "9.9.9.tsv").read_text(encoding="utf-8").splitlines(), lines)
             self.assertEqual(again.returncode, 0, again.stderr)
+
+
+    def test_manifest_across_the_move(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            repo = Path(tmp) / "repo"
+            shutil.copytree(base(tmp, "before"), repo / "skills")
+            git = ["git", "-C", str(repo), "-c", "user.name=t", "-c", "user.email=t@example.org"]
+            subprocess.run(git + ["init", "-q"], check=True)
+            subprocess.run(git + ["add", "-A"], check=True)
+            subprocess.run(git + ["commit", "-q", "-m", "before the move"], check=True)
+            (repo / "plugin").mkdir()
+            subprocess.run(git + ["mv", "skills", "plugin/skills"], check=True)
+            subprocess.run(git + ["commit", "-q", "-m", "the move"], check=True)
+            for to in ([], ["--to", "HEAD"]):
+                result = subprocess.run([sys.executable, str(TOOL), "--repo", str(repo), "--from", "HEAD~1", *to,
+                                         "--version", "9.9.9", "--force"], capture_output=True, text=True)
+                self.assertEqual(result.returncode, 0, result.stderr)
+                self.assertIn("0 added, 0 changed, 0 moved, 0 retired", result.stdout)
 
 
 if __name__ == "__main__":

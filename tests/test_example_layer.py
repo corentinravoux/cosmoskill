@@ -10,7 +10,7 @@ from pathlib import Path
 
 from layer_fixtures import ROOT, SCRIPTS, run
 
-EXAMPLE = ROOT / "skills" / "cosmoskill-refine" / "example-layer"
+EXAMPLE = ROOT / "plugin" / "skills" / "cosmoskill-refine" / "example-layer"
 BROKEN = ("missing", "retired", "moved", "malformed")
 
 

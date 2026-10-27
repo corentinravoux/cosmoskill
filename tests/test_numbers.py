@@ -21,7 +21,7 @@ class NumbersTest(unittest.TestCase):
     def test_every_number_has_its_source(self):
         """Plan of 2026-10-26, step 8: no statement without paper and place, and no derived number, in any skill.
         `doc` and `marked` statements pass; they are counted, not limited."""
-        skills = sorted(path for path in (ROOT / "skills").iterdir() if (path / "references").is_dir())
+        skills = sorted(path for path in (ROOT / "plugin" / "skills").iterdir() if (path / "references").is_dir())
         failing = [f"{record['file']}:{record['line']}: {record['status']}" for skill in skills
                    for record in check_numbers.scan(skill)
                    if record["status"] not in check_numbers.PASSING or record["derived"]]

@@ -30,7 +30,10 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(ROOT / "skills" / "observational-cosmology" / "scripts"))
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from layout import SKILLS, skills_dir_at  # noqa: E402
+
+sys.path.insert(0, str(ROOT / SKILLS / "observational-cosmology" / "scripts"))
 import layers  # noqa: E402
 
 COLUMNS = ["skill", "file", "key", "change", "replaced_by", "fingerprint"]
@@ -49,19 +52,26 @@ def stem_of(path: str) -> str:
 
 
 def read_tree(repo: Path, ref: str | None) -> dict[str, str]:
-    """Return {path under skills/: text} at a git ref, or in the working tree when ref is None."""
+    """Return {"skills/<skill>/...": text} at a git ref, or in the working tree when ref is None.
+
+    The keys start with "skills/" whatever the layout, so that a ref from
+    before the move to plugin/ compares with the current tree.
+    """
     if ref is None:
-        return {path.relative_to(repo).as_posix(): path.read_text(encoding="utf-8")
-                for path in sorted((repo / "skills").rglob("*")) if path.is_file()
-                and (tracked(path.relative_to(repo).as_posix()) or path.name == layers.RETIRED)}
-    listing = subprocess.run(["git", "-C", str(repo), "ls-tree", "-r", "--name-only", ref, "skills"],
+        top = repo / SKILLS
+        return {"skills/" + path.relative_to(top).as_posix(): path.read_text(encoding="utf-8")
+                for path in sorted(top.rglob("*")) if path.is_file()
+                and (tracked("skills/" + path.relative_to(top).as_posix()) or path.name == layers.RETIRED)}
+    old_dir = skills_dir_at(repo, ref)
+    listing = subprocess.run(["git", "-C", str(repo), "ls-tree", "-r", "--name-only", ref, old_dir],
                              capture_output=True, text=True)
     if listing.returncode != 0:
         raise SystemExit(f"git cannot read {ref!r}: {listing.stderr.strip()}")
     files = {}
-    for name in listing.stdout.splitlines():
+    for old_name in listing.stdout.splitlines():
+        name = "skills/" + old_name[len(old_dir) + 1:]
         if tracked(name) or name.endswith("/references/" + layers.RETIRED):
-            shown = subprocess.run(["git", "-C", str(repo), "show", f"{ref}:{name}"], capture_output=True, text=True)
+            shown = subprocess.run(["git", "-C", str(repo), "show", f"{ref}:{old_name}"], capture_output=True, text=True)
             files[name] = shown.stdout
     return files
 

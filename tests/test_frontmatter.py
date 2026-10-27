@@ -14,7 +14,7 @@ except ImportError:  # PyYAML is optional for the rest of the suite
     yaml = None
 
 ROOT = Path(__file__).resolve().parent.parent
-SKILLS = sorted((ROOT / "skills").glob("*/SKILL.md"))
+SKILLS = sorted((ROOT / "plugin" / "skills").glob("*/SKILL.md"))
 
 
 def front_matter(path):

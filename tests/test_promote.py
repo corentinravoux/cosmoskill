@@ -71,7 +71,7 @@ class PromoteTest(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertEqual(self.table.read_text(encoding="utf-8").splitlines()[-1].split("\t"),
                          ["Fixture2099", "9999.00011", "Fixture", "2099", "A fixture layer paper", "method"])
-        self.assertIn("verify_sources.py skills/cosmo-fixture", result.stdout)
+        self.assertIn("verify_sources.py plugin/skills/cosmo-fixture", result.stdout)
         self.assert_refused("source", "9999.00011", reason="already in")
         self.assertTrue((self.home / "cosmo-fixture" / "sources.tsv").read_text(encoding="utf-8").count("9999.00011"))
 

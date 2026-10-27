@@ -11,7 +11,7 @@ a skill a section is `<file-stem>#<key>`; across skills,
 `<skill>/<file-stem>#<key>`. A key is derived from the heading once and then
 frozen: rewording the heading later does not change it.
 
-    python3 tools/assign_keys.py            # add missing keys under skills/
+    python3 tools/assign_keys.py            # add missing keys under plugin/skills/
     python3 tools/assign_keys.py --dry-run  # say what would be added
 
 Idempotent: an existing key is never changed. Standard library only.
@@ -26,6 +26,8 @@ import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from layout import SKILLS  # noqa: E402
 HEADING = re.compile(r"^(#{2,3}) +(.+?)\s*$")
 KEY_LINE = re.compile(r"^<!-- key: ([a-z0-9][a-z0-9\-]*) -->$")
 FENCE = re.compile(r"^\s*(```|~~~)")
@@ -91,7 +93,7 @@ def assign(path: Path, dry_run: bool) -> int:
 
 def skill_files(root: Path) -> list[Path]:
     files = []
-    for skill in sorted(p for p in (root / "skills").iterdir() if p.is_dir()):
+    for skill in sorted(p for p in (root / SKILLS).iterdir() if p.is_dir()):
         files += [skill / "SKILL.md"] if (skill / "SKILL.md").is_file() else []
         for folder in ("references", "deep"):
             files += sorted((skill / folder).glob("*.md")) if (skill / folder).is_dir() else []

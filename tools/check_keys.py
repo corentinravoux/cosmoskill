@@ -25,6 +25,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from assign_keys import ROOT, headings, skill_files  # noqa: E402
+from layout import SKILLS, skills_dir_at  # noqa: E402
 
 RETIRED_COLUMNS = ["file", "key", "retired_on", "replaced_by", "reason"]
 
@@ -56,7 +57,7 @@ def check_tree(root: Path = ROOT) -> list[str]:
 
 
 def retired(root: Path, skill: str) -> set[tuple[str, str]]:
-    path = root / "skills" / skill / "references" / "retired-keys.tsv"
+    path = root / SKILLS / skill / "references" / "retired-keys.tsv"
     if not path.is_file():
         return set()
     lines = path.read_text(encoding="utf-8").splitlines()
@@ -66,20 +67,23 @@ def retired(root: Path, skill: str) -> set[tuple[str, str]]:
 
 
 def check_against(ref: str, root: Path = ROOT) -> list[str]:
-    listing = subprocess.run(["git", "-C", str(root), "ls-tree", "-r", "--name-only", ref, "skills"],
+    old_dir = skills_dir_at(root, ref)  # "skills" at a ref from before the move to plugin/
+    listing = subprocess.run(["git", "-C", str(root), "ls-tree", "-r", "--name-only", ref, old_dir],
                              capture_output=True, text=True)
     if listing.returncode != 0:
         raise SystemExit(f"git cannot read {ref!r}: {listing.stderr.strip()}")
     problems = []
-    for name in listing.stdout.splitlines():
-        parts = name.split("/")
-        if not name.endswith(".md") or len(parts) < 3:
+    for old_name in listing.stdout.splitlines():
+        relative = old_name[len(old_dir) + 1:]
+        parts = relative.split("/")
+        if not relative.endswith(".md") or len(parts) < 2:
             continue
-        skill, stem = parts[1], Path(name).stem
-        old_text = subprocess.run(["git", "-C", str(root), "show", f"{ref}:{name}"], capture_output=True, text=True).stdout
+        skill, stem = parts[0], Path(relative).stem
+        old_text = subprocess.run(["git", "-C", str(root), "show", f"{ref}:{old_name}"], capture_output=True, text=True).stdout
         old_keys, _ = keys_of(old_text)
         if not old_keys:
             continue
+        name = f"{SKILLS}/{relative}"
         current = root / name
         new_keys = set(keys_of(current.read_text(encoding="utf-8"))[0]) if current.is_file() else set()
         gone = retired(root, skill)

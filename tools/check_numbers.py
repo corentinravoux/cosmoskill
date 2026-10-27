@@ -64,6 +64,8 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from layout import SKILLS  # noqa: E402
 BASELINE = Path(__file__).resolve().parent / "numbers-baseline.tsv"
 SKIP_PARTS = {"example-layer"}
 
@@ -279,8 +281,8 @@ def main() -> int:
     parser.add_argument("--write-baseline", action="store_true")
     args = parser.parse_args()
 
-    skills = [ROOT / "skills" / args.skill] if args.skill else sorted(
-        path for path in (ROOT / "skills").iterdir() if (path / "references").is_dir())
+    skills = [ROOT / SKILLS / args.skill] if args.skill else sorted(
+        path for path in (ROOT / SKILLS).iterdir() if (path / "references").is_dir())
     baseline, rows, worse, listed = read_baseline(), [], [], []
     passed = {"doc": 0, "marked": 0}
     for skill in skills:

@@ -9,7 +9,7 @@ import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SCRIPT = ROOT / "skills" / "observational-cosmology" / "scripts" / "layers.py"
+SCRIPT = ROOT / "plugin" / "skills" / "observational-cosmology" / "scripts" / "layers.py"
 FIXTURES = ROOT / "tests" / "fixtures" / "layers"
 
 
@@ -132,7 +132,7 @@ class LayersTest(unittest.TestCase):
             again = source("cosmo-lyman-alpha", "9999.00002", "--role", "method")
             self.assertIn("nothing written", again.stdout)
             self.assertEqual(len(table.read_text(encoding="utf-8").splitlines()), 2)
-            listed = (ROOT / "skills" / "cosmo-lyman-alpha" / "references" / "sources.tsv").read_text(
+            listed = (ROOT / "plugin" / "skills" / "cosmo-lyman-alpha" / "references" / "sources.tsv").read_text(
                 encoding="utf-8").splitlines()[1:]
             base = next(row.split("\t")[1] for row in listed if not row.split("\t")[1].startswith("doi:"))
             in_base = source("cosmo-lyman-alpha", base, "--role", "method")

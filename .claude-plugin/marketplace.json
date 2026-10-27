@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "cosmoskill",
-      "source": "./",
+      "source": "./plugin",
       "description": "Observational-cosmology reference skills: a hub and 28 literature-grounded domain skills."
     }
   ]

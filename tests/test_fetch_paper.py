@@ -6,7 +6,7 @@ import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SCRIPT = ROOT / "skills" / "observational-cosmology" / "scripts" / "fetch_paper.py"
+SCRIPT = ROOT / "plugin" / "skills" / "observational-cosmology" / "scripts" / "fetch_paper.py"
 
 DOCUMENT = """<html><head><style>p {color: red}</style></head><body>
 <nav>Menu that must not appear</nav>

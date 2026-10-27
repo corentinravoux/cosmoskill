@@ -24,12 +24,12 @@ class RefreshStatusTest(unittest.TestCase):
             self.assertIsNone(refresh_status.snapshot(path))
 
     def test_every_domain_has_snapshot_dates(self):
-        skills = [p for p in (ROOT / "skills").iterdir() if (p / "references").is_dir()]
+        skills = [p for p in (ROOT / "plugin" / "skills").iterdir() if (p / "references").is_dir()]
         missing = [p.name for p in skills if not refresh_status.files_with_snapshot(p)]
         self.assertEqual(missing, [])
 
     def test_due_lists_stale_docs(self):
-        skill = ROOT / "skills" / "cosmo-software-ecosystem"
+        skill = ROOT / "plugin" / "skills" / "cosmo-software-ecosystem"
         line, details = refresh_status.status(skill, date(2028, 10, 1), 60)
         self.assertIn("stale within 60 days", line)
         self.assertTrue(any(d.startswith("  [doc] read") for d in details))

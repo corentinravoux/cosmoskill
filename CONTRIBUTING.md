@@ -10,7 +10,7 @@ a change must pass; the tests check most of them.
 - To add to the package for your own work only, use a layer instead
   (`docs/layers.md`): notes, overrides and your own dossiers live in
   `~/.cosmoskill/` and never need a pull request. An entry that would serve
-  others can be promoted later (`skills/observational-cosmology/scripts/promote.py`).
+  others can be promoted later (`plugin/skills/observational-cosmology/scripts/promote.py`).
 - For a change to the package, open an issue first when it adds a domain,
   a dossier or a new kind of file.
 
@@ -46,7 +46,7 @@ a change must pass; the tests check most of them.
 8. **Plain technical English**, complete sentences.
 
 The citation format and file layout are in
-`skills/observational-cosmology/references/suite-conventions.md`; the full
+`plugin/skills/observational-cosmology/references/suite-conventions.md`; the full
 brief that the package's own research runs follow is `docs/agent-brief.md`,
 with `docs/agent-brief-numbers.md` for numbers.
 
@@ -57,7 +57,7 @@ From the repository root, before opening a pull request:
 ```bash
 python3 tools/assign_keys.py
 python3 tools/sync_blocks.py
-python3 skills/observational-cosmology/scripts/verify_sources.py skills/<skill>
+python3 plugin/skills/observational-cosmology/scripts/verify_sources.py plugin/skills/<skill>
 python3 tools/check_keys.py --against <last release tag>
 python3 tools/check_numbers.py --skill <skill> --list
 python3 -m unittest discover -s tests

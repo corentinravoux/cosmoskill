@@ -1,6 +1,7 @@
 """The plugin folder holds only what Anthropic's directory should scan, within its limits."""
 
 import json
+import re
 import subprocess
 import unittest
 from pathlib import Path
@@ -42,6 +43,33 @@ class PluginFolderTest(unittest.TestCase):
 
     def test_license_copies_identical(self):
         self.assertEqual((PLUGIN / "LICENSE").read_bytes(), (ROOT / "LICENSE").read_bytes())
+
+
+class PluginReadmeTest(unittest.TestCase):
+    def readme(self):
+        return (PLUGIN / "README.md").read_text(encoding="utf-8")
+
+    def test_plugin_readme_exists(self):
+        self.assertIn("plugin/README.md", plugin_files())
+
+    def test_plugin_readme_long_enough(self):
+        prose = re.sub(r"```.*?```", "", self.readme(), flags=re.S)
+        self.assertGreaterEqual(len(prose.split()), 40)
+
+    def test_plugin_readme_discloses_network(self):
+        text = self.readme()
+        for needle in ("export.arxiv.org", "arxiv.org", "ar5iv.labs.arxiv.org", "~/.cache/cosmo-skill-verify"):
+            self.assertIn(needle, text)
+
+    def test_plugin_readme_has_no_launcher(self):
+        text = self.readme()
+        for launcher in ("npx ", "uvx ", "pipx ", "pip install", "curl "):
+            self.assertNotIn(launcher, text)
+
+    def test_root_readme_links_plugin_skills(self):
+        text = (ROOT / "README.md").read_text(encoding="utf-8")
+        self.assertIn("cosmoskill/plugin/skills/*/", text)
+        self.assertNotIn("cosmoskill/skills/*/", text)
 
 
 if __name__ == "__main__":

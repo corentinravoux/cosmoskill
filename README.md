@@ -43,24 +43,19 @@ Paid plan (Pro, Max, Team, Enterprise).
 Update with `claude plugin update cosmoskill@cosmoskill`.
 
 <details>
-<summary>Without the plugin system: clone or link</summary>
+<summary>Without the plugin system: link the skills</summary>
 
-Clone into the skills directory (skills named `cosmoskill:cosmo-cmb`):
-
-```bash
-git clone https://github.com/corentinravoux/cosmoskill ~/.claude/skills/cosmoskill
-```
-
-Or link each skill (skills named `cosmo-cmb`):
+Link each skill (skills named `cosmo-cmb`):
 
 ```bash
 git clone https://github.com/corentinravoux/cosmoskill
-for d in cosmoskill/skills/*/; do
+for d in cosmoskill/plugin/skills/*/; do
     ln -s "$(realpath "$d")" ~/.claude/skills/"$(basename "$d")"
 done
 ```
 
-Update either with `git pull`.
+Update with `git pull`. Linked before 1.0.3, when the skills were in
+`skills/`? The links break on `git pull`: remove them and run the loop again.
 </details>
 
 ### In other agents (Codex, Gemini CLI, Cursor, Copilot, …)
@@ -89,21 +84,10 @@ when a question needed level 4.
 
 ### What it runs and contacts
 
-The skills are text. The scripts in `skills/observational-cosmology/scripts/`
-(Python standard library only) run only when Claude calls them:
-
-- `fetch_paper.py` downloads a cited paper's abstract or text from
-  `export.arxiv.org`, `arxiv.org` and `ar5iv.labs.arxiv.org`, and caches it
-  in `~/.cache/cosmo-skill-verify/papers/`.
-- `verify_sources.py` asks `export.arxiv.org` for the title and first author
-  of arXiv identifiers, cached in `~/.cache/cosmo-skill-verify/arxiv.json`;
-  `--offline` contacts nothing.
-- `layers.py`, `sync_layers.py` and `promote.py` read and write layer files in
-  `~/.cosmoskill/` (or `$COSMOSKILL_HOME`) and `.cosmoskill/`; adding a paper
-  to a layer asks `export.arxiv.org` for its title and author.
-
-Only arXiv identifiers are sent. No personal data, credentials or usage data
-leave the machine.
+The skills are text; the scripts run only when Claude calls them, use the
+Python standard library only, and send arXiv identifiers to arXiv, nothing
+else. The full list of hosts and cache paths is in
+[`plugin/README.md`](plugin/README.md#what-it-runs-and-contacts).
 
 ### Both hosts on one account
 
@@ -198,7 +182,7 @@ paper to my layer", "for me, use this value instead"; the `cosmoskill-refine`
 skill runs the commands. By hand:
 
 ```bash
-S=skills/observational-cosmology/scripts
+S=plugin/skills/observational-cosmology/scripts
 python3 $S/layers.py init
 python3 $S/layers.py note cosmo-weak-lensing results#the-cmb-reference-values "quote S8 differences against both CMB references"
 python3 $S/sync_layers.py        # after an update: entries whose section changed
@@ -209,13 +193,13 @@ Format: `docs/layers.md`; specification: `docs/layers-v1.md`.
 ## Maintaining
 
 Refresh a domain every few months, never from memory: the procedure is in
-`skills/observational-cosmology/references/suite-conventions.md`, and asking
+`plugin/skills/observational-cosmology/references/suite-conventions.md`, and asking
 Claude to update a domain loads it. `python3 tools/refresh_status.py --due 90`
 lists what is due. After editing:
 
 ```bash
 python3 tools/assign_keys.py && python3 tools/sync_blocks.py
-python3 skills/observational-cosmology/scripts/verify_sources.py skills/cosmo-<domain>
+python3 plugin/skills/observational-cosmology/scripts/verify_sources.py plugin/skills/cosmo-<domain>
 python3 tools/check_keys.py --against <last release>
 python3 tools/check_numbers.py --skill cosmo-<domain> --list   # must print nothing
 python3 -m pytest -q
@@ -224,6 +208,11 @@ python3 -m pytest -q
 At a release, `tools/make_release_manifest.py` writes `releases/<version>.tsv`,
 the sections added, changed, moved or retired. Contributions follow
 `CONTRIBUTING.md`. Scripts need Python 3.9+ and the standard library only.
+
+## Repository layout
+
+The plugin is in `plugin/` (manifest, skills, licence); the rest of the
+repository (docs, tests, tools, release manifests) is for maintainers.
 
 ## Licence
 

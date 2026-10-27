@@ -5,6 +5,20 @@ with the checks run and the statements compared at source, is in
 `docs/history/tests/gate-log.md`; the plans that set each step are in
 `docs/plans/`.
 
+## 1.0.2 — 2026-10-27
+
+Publishing beyond the plugin marketplace; content unchanged.
+
+- **Fix:** the front matter of `cosmoskill-refine` was not valid YAML (an
+  unquoted `: ` added in 1.0.1). Claude Code read it, but strict parsers skip
+  the skill: the `skills` command behind skills.sh installed 29 skills of 30,
+  and Anthropic's directory refuses such front matter. `tests/test_frontmatter.py`
+  parses every `SKILL.md` (98 tests).
+- **README:** install in other agents with `npx skills add
+  corentinravoux/cosmoskill --skill '*'`, and a section on what the scripts
+  run and contact (arXiv only), which the directory's review asks for.
+- **For layer users:** no section changed (`releases/1.0.2.tsv` is empty).
+
 ## 1.0.1 — 2026-10-27
 
 Claude app support. The same repository installs as a plugin in Claude Code

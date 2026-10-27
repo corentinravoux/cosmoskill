@@ -1,6 +1,6 @@
 {
   "name": "cosmoskill",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Observational-cosmology reference skills: a hub and 28 literature-grounded domain skills (cosmo-*), each with dated results, provenance flags and a bibliography checked against arXiv.",
   "author": {
     "name": "Corentin Ravoux"

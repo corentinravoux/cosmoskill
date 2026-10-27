@@ -10,7 +10,7 @@ and the place it was read: when it matters, Claude reads the paper again
 rather than trusting the skill.
 
 One hub skill and 28 domain skills · 5,062 sources checked against arXiv ·
-168 specialist dossiers · literature snapshot 26 October 2026 · version 1.0.1
+168 specialist dossiers · literature snapshot 26 October 2026 · version 1.0.2
 (`CHANGELOG.md`).
 
 ## Install
@@ -63,6 +63,19 @@ done
 Update either with `git pull`.
 </details>
 
+### In other agents (Codex, Gemini CLI, Cursor, Copilot, …)
+
+The skills follow the open [Agent Skills](https://agentskills.io) format and
+install with the [skills](https://skills.sh) command:
+
+```
+npx skills add corentinravoux/cosmoskill --skill '*'
+```
+
+Install all of them: every domain skill calls the hub's scripts in
+`observational-cosmology`. Update with `npx skills update`. Layers and
+`cosmoskill-refine` need a persistent home directory.
+
 ### What each host can do
 
 | | Claude Code | Claude app |
@@ -73,6 +86,24 @@ Update either with `git pull`.
 
 Without access to papers, the skills still answer from levels 1 to 3, and say
 when a question needed level 4.
+
+### What it runs and contacts
+
+The skills are text. The scripts in `skills/observational-cosmology/scripts/`
+(Python standard library only) run only when Claude calls them:
+
+- `fetch_paper.py` downloads a cited paper's abstract or text from
+  `export.arxiv.org`, `arxiv.org` and `ar5iv.labs.arxiv.org`, and caches it
+  in `~/.cache/cosmo-skill-verify/papers/`.
+- `verify_sources.py` asks `export.arxiv.org` for the title and first author
+  of arXiv identifiers, cached in `~/.cache/cosmo-skill-verify/arxiv.json`;
+  `--offline` contacts nothing.
+- `layers.py`, `sync_layers.py` and `promote.py` read and write layer files in
+  `~/.cosmoskill/` (or `$COSMOSKILL_HOME`) and `.cosmoskill/`; adding a paper
+  to a layer asks `export.arxiv.org` for its title and author.
+
+Only arXiv identifiers are sent. No personal data, credentials or usage data
+leave the machine.
 
 ### Both hosts on one account
 

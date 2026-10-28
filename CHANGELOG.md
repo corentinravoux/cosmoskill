@@ -5,6 +5,32 @@ with the checks run and the statements compared at source, is in
 `docs/history/tests/gate-log.md`; the plans that set each step are in
 `docs/plans/`.
 
+## 1.0.3 — 2026-10-28
+
+Layout for Anthropic's plugin directory; content unchanged. Plan:
+`docs/plans/2026-10-27-directory.md`.
+
+- **The plugin moves to `plugin/`** (manifest, `skills/`, `README.md`,
+  `LICENSE`, icon). The directory scans the folder that holds
+  `.claude-plugin/plugin.json`, which was the repository root: `docs/`,
+  `tests/`, `tools/` and `releases/` were scanned with the skills (578 files,
+  two over 256 KiB, and the four warnings of the validation report). They
+  stay at the root, outside the scan. The marketplace points to
+  `./plugin`; installs update in place and keep the skill names
+  (`cosmoskill:cosmo-cmb`, …).
+- **If you linked the skills by hand**, the links break on `git pull`:
+  remove them and link `cosmoskill/plugin/skills/*/` again (README). The
+  variant that cloned the repository into `~/.claude/skills/` is dropped.
+- **`plugin/README.md`**, the page the directory shows: what the skills do,
+  install without a launcher, what each host can do, and the hosts and
+  cache paths the scripts contact.
+- **Icon**: the ACCEL2 density field in a white ring
+  (`plugin/.claude-plugin/icon.png`, drawn by `tools/make_icon.py`).
+- **Tools:** `tools/layout.py` names the skills folder; `check_keys.py
+  --against` and `make_release_manifest.py --from` read a ref from before
+  the move. `tests/test_layout.py` checks the directory's limits (110 tests).
+- **For layer users:** no section changed (`releases/1.0.3.tsv` is empty).
+
 ## 1.0.2 — 2026-10-27
 
 Publishing beyond the plugin marketplace; content unchanged.

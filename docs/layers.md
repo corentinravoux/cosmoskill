@@ -15,8 +15,8 @@ in two places:
 Create one with the hub's script, here written from the repository root:
 
 ```bash
-python3 skills/observational-cosmology/scripts/layers.py init            # personal
-python3 skills/observational-cosmology/scripts/layers.py init --project  # in the current directory
+python3 plugin/skills/observational-cosmology/scripts/layers.py init            # personal
+python3 plugin/skills/observational-cosmology/scripts/layers.py init --project  # in the current directory
 ```
 
 ## What a layer holds
@@ -90,7 +90,7 @@ package's bibliography (`key, id, first_author, year, title, role`). A row is
 added from arXiv, never typed from memory:
 
 ```bash
-python3 skills/observational-cosmology/scripts/layers.py source cosmo-supernovae <arXiv id> --role method
+python3 plugin/skills/observational-cosmology/scripts/layers.py source cosmo-supernovae <arXiv id> --role method
 ```
 
 The script takes the title and the first author from arXiv, derives a key,
@@ -104,7 +104,7 @@ than the package holds, written once so that the assistant does not have to
 be told again. Start one from the template:
 
 ```bash
-python3 skills/observational-cosmology/scripts/layers.py dossier cosmo-clusters richness-mass-calibration
+python3 plugin/skills/observational-cosmology/scripts/layers.py dossier cosmo-clusters richness-mass-calibration
 ```
 
 The template has a scope line, then sections for the method, the choices and
@@ -186,11 +186,11 @@ the layer: `[cosmoskill L3 · personal · cosmo-clusters/deep/richness-mass-cali
 for a dossier.
 
 ```bash
-python3 skills/observational-cosmology/scripts/layers.py cosmo-weak-lensing
-python3 skills/observational-cosmology/scripts/layers.py cosmo-weak-lensing --json
-python3 skills/observational-cosmology/scripts/layers.py resolve cosmo-cmb results#optical-depth-tau
-python3 skills/observational-cosmology/scripts/layers.py check
-python3 skills/observational-cosmology/scripts/layers.py check --online
+python3 plugin/skills/observational-cosmology/scripts/layers.py cosmo-weak-lensing
+python3 plugin/skills/observational-cosmology/scripts/layers.py cosmo-weak-lensing --json
+python3 plugin/skills/observational-cosmology/scripts/layers.py resolve cosmo-cmb results#optical-depth-tau
+python3 plugin/skills/observational-cosmology/scripts/layers.py check
+python3 plugin/skills/observational-cosmology/scripts/layers.py check --online
 ```
 
 `resolve` prints a file of the package, or one section, with every entry
@@ -208,10 +208,10 @@ compares the title and first author of every row with arXiv.
 ## After updating the package
 
 ```bash
-python3 skills/observational-cosmology/scripts/sync_layers.py
-python3 skills/observational-cosmology/scripts/sync_layers.py --follow
-python3 skills/observational-cosmology/scripts/sync_layers.py --stamp cosmo-cmb/results#optical-depth-tau
-python3 skills/observational-cosmology/scripts/sync_layers.py --stamp-all
+python3 plugin/skills/observational-cosmology/scripts/sync_layers.py
+python3 plugin/skills/observational-cosmology/scripts/sync_layers.py --follow
+python3 plugin/skills/observational-cosmology/scripts/sync_layers.py --stamp cosmo-cmb/results#optical-depth-tau
+python3 plugin/skills/observational-cosmology/scripts/sync_layers.py --stamp-all
 ```
 
 `sync_layers.py` gives each entry a status: `ok`, `unstamped` (a note

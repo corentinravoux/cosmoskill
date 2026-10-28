@@ -7,7 +7,7 @@ with the checks run and the statements compared at source, is in
 
 ## 1.0.3 — 2026-10-28
 
-Layout for Anthropic's plugin directory; content unchanged. Plan:
+Layout for Anthropic's plugin directory; content unchanged except paths. Plan:
 `docs/plans/2026-10-27-directory.md`.
 
 - **The plugin moves to `plugin/`** (manifest, `skills/`, `README.md`,
@@ -19,8 +19,11 @@ Layout for Anthropic's plugin directory; content unchanged. Plan:
   `./plugin`; installs update in place and keep the skill names
   (`cosmoskill:cosmo-cmb`, …).
 - **If you linked the skills by hand**, the links break on `git pull`:
-  remove them and link `cosmoskill/plugin/skills/*/` again (README). The
-  variant that cloned the repository into `~/.claude/skills/` is dropped.
+  remove them and link `cosmoskill/plugin/skills/*/` again (README). If you
+  cloned the repository into `~/.claude/skills/cosmoskill`, the skills move
+  one level deeper on `git pull` and stop loading: delete that clone and
+  install the plugin, or link the skills as in the README. That clone
+  variant is dropped.
 - **`plugin/README.md`**, the page the directory shows: what the skills do,
   install without a launcher, what each host can do, and the hosts and
   cache paths the scripts contact.
@@ -28,8 +31,13 @@ Layout for Anthropic's plugin directory; content unchanged. Plan:
   (`plugin/.claude-plugin/icon.png`, drawn by `tools/make_icon.py`).
 - **Tools:** `tools/layout.py` names the skills folder; `check_keys.py
   --against` and `make_release_manifest.py --from` read a ref from before
-  the move. `tests/test_layout.py` checks the directory's limits (110 tests).
-- **For layer users:** no section changed (`releases/1.0.3.tsv` is empty).
+  the move. `tests/test_layout.py` checks the directory's limits (114 tests).
+- **Paths:** the maintainer commands in the hub's `suite-conventions`, in
+  `docs/layers.md` and in the agent briefs name `plugin/skills/`; `promote.py
+  note` still writes its proposals to the repository's `docs/proposals/`.
+- **For layer users:** two sections changed, both only in their paths:
+  `observational-cosmology/suite-conventions#checking-a-skill` and
+  `#refreshing-a-domain` (`releases/1.0.3.tsv`).
 
 ## 1.0.2 — 2026-10-27
 

@@ -53,12 +53,12 @@ which question. Load one reference at a time.
 ## Checking a skill
 <!-- key: checking-a-skill -->
 
-From the repository root, which is two levels above the hub skill's
-directory:
+From the repository root, which is three levels above the hub skill's
+directory (the skills are in `plugin/skills/`):
 
 ```bash
-python3 skills/observational-cosmology/scripts/verify_sources.py skills/cosmo-<domain>
-python3 skills/observational-cosmology/scripts/verify_sources.py --offline skills/*/
+python3 plugin/skills/observational-cosmology/scripts/verify_sources.py plugin/skills/cosmo-<domain>
+python3 plugin/skills/observational-cosmology/scripts/verify_sources.py --offline plugin/skills/*/
 ```
 
 The checker asks arXiv for every cited paper (existence, title, first
@@ -70,9 +70,9 @@ It does not check that a number is the one the paper gives. That is done by
 reading the paper, when the number is needed:
 
 ```bash
-python3 skills/observational-cosmology/scripts/fetch_paper.py 2503.14739 --abstract
-python3 skills/observational-cosmology/scripts/fetch_paper.py 2503.14739 --outline
-python3 skills/observational-cosmology/scripts/fetch_paper.py 2503.14739 --grep "8.632" --context 1
+python3 plugin/skills/observational-cosmology/scripts/fetch_paper.py 2503.14739 --abstract
+python3 plugin/skills/observational-cosmology/scripts/fetch_paper.py 2503.14739 --outline
+python3 plugin/skills/observational-cosmology/scripts/fetch_paper.py 2503.14739 --grep "8.632" --context 1
 ```
 
 ## Refreshing a domain
@@ -115,7 +115,7 @@ date.
    ```bash
    python3 tools/assign_keys.py                 # keys for new sections
    python3 tools/sync_blocks.py                 # level block and sizes of each SKILL.md
-   python3 skills/observational-cosmology/scripts/verify_sources.py skills/cosmo-<domain>
+   python3 plugin/skills/observational-cosmology/scripts/verify_sources.py plugin/skills/cosmo-<domain>
    python3 tools/check_keys.py --against <last release tag or commit>
    python3 -m unittest discover -s tests
    ```
@@ -127,7 +127,7 @@ date.
    changed, which were superseded.
 
 A researcher with local layers then runs
-`python3 skills/observational-cosmology/scripts/layers.py check`, which lists
+`python3 plugin/skills/observational-cosmology/scripts/layers.py check`, which lists
 notes attached to a section the update retired.
 
 Never refresh from memory. A value remembered and a value read differ often

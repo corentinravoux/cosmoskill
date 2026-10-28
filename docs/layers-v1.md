@@ -125,7 +125,7 @@ Writes into the package's working tree; never commits.
 - `source <id>`: the row must have a public identifier (arXiv or DOI) and
   match arXiv when online; it is appended to the skill's
   `references/sources.tsv`.
-- `dossier <name>`: copied to `skills/<skill>/deep/<name>.md`. Refused when
+- `dossier <name>`: copied to `plugin/skills/<skill>/deep/<name>.md`. Refused when
   the dossier is private, when a cited identifier has no row in the base
   (unless `--with-sources` promotes the layer's rows with it), when a
   dossier of that name exists, or when `Scope:` or `Snapshot:` is missing.

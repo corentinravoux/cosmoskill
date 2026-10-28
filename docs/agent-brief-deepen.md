@@ -46,7 +46,7 @@ how a result is obtained, what limits it, how large each systematic is.
 From the repository root:
 
 ```bash
-S=skills/observational-cosmology/scripts
+S=plugin/skills/observational-cosmology/scripts
 python3 $S/fetch_paper.py <arXiv id> --outline
 python3 $S/fetch_paper.py <arXiv id> --section "<part of a title>"
 python3 $S/fetch_paper.py <arXiv id> --grep "<text>" --context 1
@@ -92,7 +92,7 @@ From the repository root:
 ```bash
 python3 tools/assign_keys.py
 python3 tools/sync_blocks.py
-python3 skills/observational-cosmology/scripts/verify_sources.py skills/<skill>
+python3 plugin/skills/observational-cosmology/scripts/verify_sources.py plugin/skills/<skill>
 python3 tools/check_keys.py --against <commit given in your prompt>
 python3 -m unittest discover -s tests
 ```

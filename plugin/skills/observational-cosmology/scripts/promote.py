@@ -42,7 +42,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import layers  # noqa: E402
 import verify_sources as bibliography  # noqa: E402
 
-PACKAGE = layers.SKILLS.parent
+# the repository root: the skills are in plugin/skills/ since 1.0.3, in skills/ before
+PACKAGE = layers.SKILLS.parent.parent if layers.SKILLS.parent.name == "plugin" else layers.SKILLS.parent
+SKILLS_PATH = layers.SKILLS.relative_to(PACKAGE).as_posix()
 
 
 def refuse(message: str) -> SystemExit:
@@ -249,11 +251,11 @@ def promote_note(skill: str, kind: str, layer: Path, target: str, remove: bool) 
              f"Written by promote.py on {datetime.date.today().isoformat()} from the {kind} layer. "
              "Fold it into the file by hand, keep the key line, run the checks below, then delete this file.", ""]
     if general:
-        parts += ["## Base", "", f"The skill as a whole: `skills/{skill}/SKILL.md`.", ""]
+        parts += ["## Base", "", f"The skill as a whole: `{SKILLS_PATH}/{skill}/SKILL.md`.", ""]
     else:
         section = keyed[stem][key]
         place = layers.base_file(skill, stem).relative_to(layers.SKILLS)
-        parts += ["## Base section", "", f"`skills/{place.as_posix()}`, key `{key}`, fingerprint "
+        parts += ["## Base section", "", f"`{SKILLS_PATH}/{place.as_posix()}`, key `{key}`, fingerprint "
                   f"`{layers.fingerprint(section)}`:", "", block(section["line"] + "\n\n" + section["full"]), ""]
     for number, entry in enumerate(shared, start=1):
         state = layers.entry_status(entry, keyed, retired)["status"]

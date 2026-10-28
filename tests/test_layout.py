@@ -1,9 +1,11 @@
 """The plugin folder holds only what Anthropic's directory should scan, within its limits."""
 
 import json
+import os
 import re
 import struct
 import subprocess
+import sys
 import unittest
 from pathlib import Path
 
@@ -84,6 +86,36 @@ class IconTest(unittest.TestCase):
         self.assertGreaterEqual(width, 512)
         self.assertLessEqual(width, 2048)
         self.assertLess(len(data), 2_000_000)
+
+
+OLD_PATH = re.compile(r"(?<![\w./~-])skills/(observational-cosmology|cosmo-|\*|<)")
+
+
+class MaintainedPathsTest(unittest.TestCase):
+    def test_no_maintained_text_points_to_the_old_skills_folder(self):
+        files = [ROOT / "README.md", ROOT / "CONTRIBUTING.md", *sorted((ROOT / "docs").glob("*.md")),
+                 *sorted(PLUGIN.rglob("*.md"))]
+        found = [f"{path.relative_to(ROOT)}:{number}: {line.strip()[:80]}"
+                 for path in files for number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1)
+                 if OLD_PATH.search(line)]
+        self.assertEqual(found, [])
+
+    def test_suite_conventions_counts_three_levels_to_the_root(self):
+        text = (PLUGIN / "skills" / "observational-cosmology" / "references" / "suite-conventions.md").read_text(
+            encoding="utf-8")
+        self.assertNotIn("two levels above the hub", text)
+
+    def test_promote_writes_proposals_at_the_repository_root(self):
+        scripts = PLUGIN / "skills" / "observational-cosmology" / "scripts"
+        environment = {key: value for key, value in os.environ.items() if key != "COSMOSKILL_BASE"}
+        result = subprocess.run([sys.executable, "-c", "import promote; print(promote.PACKAGE)"], cwd=scripts,
+                                env=environment, capture_output=True, text=True, check=True)
+        self.assertEqual(Path(result.stdout.strip()), ROOT)
+
+    def test_changelog_tells_clone_users_what_to_do(self):
+        text = (ROOT / "CHANGELOG.md").read_text(encoding="utf-8")
+        section = text.split("## 1.0.3", 1)[1].split("\n## ", 1)[0]
+        self.assertIn("~/.claude/skills/cosmoskill", section)
 
 
 if __name__ == "__main__":

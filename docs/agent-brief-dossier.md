@@ -1,7 +1,7 @@
 # Brief for writing specialist dossiers (level 3)
 
 You write **dossiers** for one skill of the cosmoskill package: one file per
-subtopic, under `skills/<skill>/deep/<subtopic>.md`. The skill and the
+subtopic, under `plugin/skills/<skill>/deep/<subtopic>.md`. The skill and the
 subtopics are in the prompt that sent you here.
 
 The rules of `docs/agent-brief.md` hold, sections 1, 1b and the citation
@@ -29,7 +29,7 @@ section of the two or three analyses that set current practice, the paper
 that introduced the method, and one paper that tests or criticises it.
 
 ```bash
-S=skills/observational-cosmology/scripts
+S=plugin/skills/observational-cosmology/scripts
 python3 $S/fetch_paper.py <arXiv id> --outline
 python3 $S/fetch_paper.py <arXiv id> --section "<part of a title>"
 python3 $S/fetch_paper.py <arXiv id> --grep "<text>" --context 1
@@ -124,7 +124,7 @@ From the repository root; all must pass. Do not commit.
 ```bash
 python3 tools/assign_keys.py
 python3 tools/sync_blocks.py
-python3 skills/observational-cosmology/scripts/verify_sources.py skills/<skill>
+python3 plugin/skills/observational-cosmology/scripts/verify_sources.py plugin/skills/<skill>
 python3 tools/check_keys.py --against <commit given in your prompt>
 python3 -m unittest discover -s tests
 ```

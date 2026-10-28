@@ -101,7 +101,7 @@ the checker; they need nothing.
 ## Budget
 
 At most 150 research calls per run (`--grep` on a cached paper counts).
-Keep `skills/<skill>/deep/_progress.md` (calls used, worklist count before,
+Keep `plugin/skills/<skill>/deep/_progress.md` (calls used, worklist count before,
 files done) and delete it at the end. If the budget runs out, stop, run the
 checks, and report how many items remain.
 
@@ -110,7 +110,7 @@ checks, and report how many items remain.
 ```bash
 python3 tools/assign_keys.py
 python3 tools/sync_blocks.py
-python3 skills/observational-cosmology/scripts/verify_sources.py skills/<skill>
+python3 plugin/skills/observational-cosmology/scripts/verify_sources.py plugin/skills/<skill>
 python3 tools/check_keys.py --against 43eace2
 python3 tools/check_numbers.py --skill <skill>
 python3 -m unittest discover -s tests

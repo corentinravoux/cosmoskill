@@ -66,10 +66,10 @@ and report the row count before and after.
 
 ## Reading and budget
 
-`python3 skills/observational-cosmology/scripts/fetch_paper.py <id> --abstract | --outline | --section "<title part>" | --grep "<text>" --context 1`.
+`python3 plugin/skills/observational-cosmology/scripts/fetch_paper.py <id> --abstract | --outline | --section "<title part>" | --grep "<text>" --context 1`.
 If a paper has no HTML, use the arXiv tool server if available, otherwise
 list it under "Not verified". At most 60 research calls per run. Keep
-`skills/<skill>/deep/_progress.md` (calls used, counts before, targets done)
+`plugin/skills/<skill>/deep/_progress.md` (calls used, counts before, targets done)
 and delete it at the end.
 
 ## Before you finish
@@ -79,7 +79,7 @@ From the repository root; all must pass:
 ```bash
 python3 tools/assign_keys.py
 python3 tools/sync_blocks.py
-python3 skills/observational-cosmology/scripts/verify_sources.py skills/<skill>
+python3 plugin/skills/observational-cosmology/scripts/verify_sources.py plugin/skills/<skill>
 python3 tools/check_keys.py --against 43eace2
 python3 -m unittest discover -s tests
 ```

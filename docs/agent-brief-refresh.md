@@ -33,9 +33,9 @@ an agent; no range built from several values.
    is a valid result.
 4. **Read each kept paper at source**: the abstract, and the section or
    table that holds the number when the abstract does not
-   (`python3 skills/observational-cosmology/scripts/fetch_paper.py <id>
+   (`python3 plugin/skills/observational-cosmology/scripts/fetch_paper.py <id>
    --abstract`, `--outline`, `--section`, `--grep`).
-5. **Edit**, following `skills/observational-cosmology/references/suite-conventions.md`,
+5. **Edit**, following `plugin/skills/observational-cosmology/references/suite-conventions.md`,
    section "Refreshing a domain", step 4:
    - `results.md`: add the row; a value it supersedes moves to the history
      section, marked as superseded, never deleted.
@@ -53,7 +53,7 @@ an agent; no range built from several values.
 
 ## Budget
 
-At most 60 research calls. Keep `skills/<skill>/deep/_progress.md`
+At most 60 research calls. Keep `plugin/skills/<skill>/deep/_progress.md`
 (snapshot dates, sections searched, papers kept, calls used) and delete it
 at the end.
 
@@ -61,7 +61,7 @@ at the end.
 
 ```bash
 python3 tools/assign_keys.py
-python3 skills/observational-cosmology/scripts/verify_sources.py skills/<skill>
+python3 plugin/skills/observational-cosmology/scripts/verify_sources.py plugin/skills/<skill>
 python3 tools/check_keys.py --against d088847
 python3 tools/check_numbers.py --skill <skill>
 ```

@@ -73,7 +73,7 @@ convenience; all are public:
   `astro-ph.CO` (add `astro-ph.GA`, `astro-ph.IM`, `astro-ph.HE`, `gr-qc` when
   relevant), with title, abstract and author prefixes and quoted phrases.
 - **The scripts of this package**:
-  `python3 skills/observational-cosmology/scripts/fetch_paper.py <id>` prints
+  `python3 plugin/skills/observational-cosmology/scripts/fetch_paper.py <id>` prints
   a paper's abstract (`--abstract`, several identifiers allowed), its outline,
   one section, or the paragraphs containing a term.
 - **Plain web access**: `https://arxiv.org/abs/<id>` for an abstract,
@@ -138,7 +138,7 @@ files that cover the subtopic; `status` is `covered`, `thin` or `missing`.
 
 ## 3. What to write
 
-Directory, relative to the repository root: `skills/cosmo-<domain>/`
+Directory, relative to the repository root: `plugin/skills/cosmo-<domain>/`
 
 ```
 SKILL.md
@@ -287,7 +287,7 @@ yourself.
 ```bash
 python3 tools/assign_keys.py
 python3 tools/sync_blocks.py
-python3 skills/observational-cosmology/scripts/verify_sources.py skills/cosmo-<domain>
+python3 plugin/skills/observational-cosmology/scripts/verify_sources.py plugin/skills/cosmo-<domain>
 python3 -m unittest discover -s tests
 ```
 

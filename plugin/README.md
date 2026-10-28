@@ -45,7 +45,7 @@ In Claude Code:
 
 ## What it runs and contacts
 
-The skills are text. The scripts in `skills/observational-cosmology/scripts/`
+The skills are text. The scripts in the hub skill's `observational-cosmology/scripts/`
 (Python standard library only, readable source, nothing downloaded at install)
 run only when Claude calls them:
 

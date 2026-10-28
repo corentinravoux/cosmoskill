@@ -2,6 +2,7 @@
 
 import json
 import re
+import struct
 import subprocess
 import unittest
 from pathlib import Path
@@ -70,6 +71,19 @@ class PluginReadmeTest(unittest.TestCase):
         text = (ROOT / "README.md").read_text(encoding="utf-8")
         self.assertIn("cosmoskill/plugin/skills/*/", text)
         self.assertNotIn("cosmoskill/skills/*/", text)
+
+
+class IconTest(unittest.TestCase):
+    def test_icon_meets_directory_rules(self):
+        icon = PLUGIN / ".claude-plugin" / "icon.png"
+        data = icon.read_bytes()
+        self.assertEqual(data[:8], b"\x89PNG\r\n\x1a\n")
+        self.assertEqual(data[12:16], b"IHDR")
+        width, height = struct.unpack(">II", data[16:24])
+        self.assertEqual(width, height)
+        self.assertGreaterEqual(width, 512)
+        self.assertLessEqual(width, 2048)
+        self.assertLess(len(data), 2_000_000)
 
 
 if __name__ == "__main__":

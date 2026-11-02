@@ -47,9 +47,13 @@ its numbers supersede the digest in this hub.
 Theoretical cosmology (derivations, perturbative kernels, bias bases as
 formalism, inflation, dark-energy and modified-gravity models and their
 consistency) has its home in the companion suite thcosmoskill
-(`thcosmo-*` skills, hub `theoretical-cosmology`), when it is installed:
-route a formalism or model question there, and keep here what each survey
-analysis adopts and measures.
+(`thcosmo-*` skills, hub `theoretical-cosmology`). Route a formalism or
+model question there only when a `thcosmo-*` skill appears in your list of
+available skills, and keep here what each survey analysis adopts and
+measures. When no `thcosmo-*` skill is listed, thcosmoskill is not
+installed: answer from these skills alone, and do not mention thcosmoskill,
+its skills or its sections to the user. The same rule applies to every
+pointer to thcosmoskill in the `cosmo-*` skills.
 
 Topics shared by several skills have one home; the other skills point to it.
 Voids as a cosmological probe (finders, size function, void–galaxy AP and

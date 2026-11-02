@@ -28,10 +28,11 @@ Notation: δ density contrast, θ ≡ ∇·v velocity divergence, ℋ = aH the
 conformal Hubble rate, τ conformal time, D_1 (or D) the linear growth factor,
 f ≡ d ln D_1/d ln a, P_L the linear spectrum, k_12 ≡ k_1 + k_2.
 
-The perturbation-theory formalism (kernels, loops, counterterms, bias
-bases, redshift space) has its home in the companion suite thcosmoskill,
-`thcosmo-lss-perturbation-theory`, when it is installed; this dossier keeps
-the derivation as used in survey analyses. <!-- num: not a value -->
+Only if a `thcosmo-*` skill is in your list of available skills: the
+perturbation-theory formalism (kernels, loops, counterterms, bias bases,
+redshift space) has its home in `thcosmo-lss-perturbation-theory`. If none
+is listed, skip this sentence and do not mention thcosmoskill. This dossier
+keeps the derivation as used in survey analyses. <!-- num: not a value -->
 
 ## How it is done
 <!-- key: how-it-is-done -->

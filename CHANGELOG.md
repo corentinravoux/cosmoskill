@@ -12,14 +12,17 @@ Pointers to the companion theory suite; content otherwise unchanged.
 - **thcosmoskill** (`corentinravoux/thcosmoskill`, `thcosmo-*` skills) holds
   theoretical cosmology: derivations, perturbative kernels, bias bases as
   formalism, theory models and their consistency. The hub routes formalism
-  and model questions there when it is installed, and keeps here what
-  survey analyses adopt and measure.
+  and model questions there only when a `thcosmo-*` skill is in Claude's
+  list of available skills, and keeps here what survey analyses adopt and
+  measure. Without thcosmoskill installed the bridge is inert and silent:
+  Claude answers from cosmoskill alone and does not mention thcosmoskill.
 - **`cosmo-theory-foundations`**: one sentence each in
   `physics-and-methods#redshift-space-distortions-kaiser-fingers-of`,
   `#perturbation-theory-and-eftoflss-ingredients` and `#bias-expansions`,
   and at the top of `deep/eft-perturbation-theory`, naming the home
-  section in `thcosmo-lss-perturbation-theory`. The existing text stays,
-  so the package still answers without thcosmoskill.
+  section in `thcosmo-lss-perturbation-theory`, under the same condition.
+  The existing text stays, so the package still answers without
+  thcosmoskill.
 - **For layer users:** the sections listed above changed only by the
   added sentence (`releases/1.0.4.tsv`); `sync_layers.py` reports them as
   changed.

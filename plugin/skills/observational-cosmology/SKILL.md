@@ -44,6 +44,13 @@ its numbers supersede the digest in this hub.
 | Cosmic web as an object: T-web/V-web/NEXUS/DisPerSE classification, filaments, walls, nodes, voids as structures, environment dependence of galaxies, spin and shape alignments, filament gas and missing baryons (X-ray, tSZ, FRBs), protoclusters, web reconstructions | `cosmo-cosmic-web` |
 | Early-Universe physics beyond the standard history: PTA and LVK stochastic backgrounds, primordial black holes, cosmic strings and defects, phase transitions, early dark energy and modified recombination (physics and limits), varying constants, primordial magnetic fields, axion-like particles, CMB spectral distortions, dark-ages energy injection | `cosmo-early-universe-exotica` |
 
+Theoretical cosmology (derivations, perturbative kernels, bias bases as
+formalism, inflation, dark-energy and modified-gravity models and their
+consistency) has its home in the companion suite thcosmoskill
+(`thcosmo-*` skills, hub `theoretical-cosmology`), when it is installed:
+route a formalism or model question there, and keep here what each survey
+analysis adopts and measures.
+
 Topics shared by several skills have one home; the other skills point to it.
 Voids as a cosmological probe (finders, size function, void–galaxy AP and
 RSD, void lensing): `cosmo-beyond-two-point`; voids as structures of the web:

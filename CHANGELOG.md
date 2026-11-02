@@ -5,6 +5,25 @@ with the checks run and the statements compared at source, is in
 `docs/history/tests/gate-log.md`; the plans that set each step are in
 `docs/plans/`.
 
+## 1.0.4 — 2026-10-31
+
+Pointers to the companion theory suite; content otherwise unchanged.
+
+- **thcosmoskill** (`corentinravoux/thcosmoskill`, `thcosmo-*` skills) holds
+  theoretical cosmology: derivations, perturbative kernels, bias bases as
+  formalism, theory models and their consistency. The hub routes formalism
+  and model questions there when it is installed, and keeps here what
+  survey analyses adopt and measure.
+- **`cosmo-theory-foundations`**: one sentence each in
+  `physics-and-methods#redshift-space-distortions-kaiser-fingers-of`,
+  `#perturbation-theory-and-eftoflss-ingredients` and `#bias-expansions`,
+  and at the top of `deep/eft-perturbation-theory`, naming the home
+  section in `thcosmo-lss-perturbation-theory`. The existing text stays,
+  so the package still answers without thcosmoskill.
+- **For layer users:** the sections listed above changed only by the
+  added sentence (`releases/1.0.4.tsv`); `sync_layers.py` reports them as
+  changed.
+
 ## 1.0.3 — 2026-10-28
 
 Layout for Anthropic's plugin directory; content unchanged except paths. Plan:

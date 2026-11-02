@@ -203,6 +203,8 @@ The reference that writes out the whole chain is Hamilton 1998, arXiv:astro-ph/9
 ## 8. Redshift-space distortions: Kaiser, fingers of God, streaming models
 <!-- key: redshift-space-distortions-kaiser-fingers-of -->
 
+The redshift-space models as theory (from Kaiser to the EFT, TNS) have their home in thcosmoskill, `thcosmo-lss-perturbation-theory` (`formalism#redshift-space-distortions`, `models#tns-model`), when installed; this section keeps what survey analyses adopt. <!-- num: not a value -->
+
 ### 8.1 Linear theory (Kaiser)
 <!-- key: linear-theory-kaiser -->
 
@@ -246,6 +248,8 @@ Its linear expansion (arXiv:1105.4165) [src: Eq. 16] is ξ^s_g = ξ^r_g(s) − d
 ## 9. Perturbation theory and EFTofLSS ingredients
 <!-- key: perturbation-theory-and-eftoflss-ingredients -->
 
+The derivations (SPT kernels, EFT counterterms and power counting, IR resummation) have their home in thcosmoskill, `thcosmo-lss-perturbation-theory` (`formalism#standard-perturbation-theory-equations-and`, `#effective-field-theory-stress-tensor`, `#infrared-resummation`), when installed; this section keeps the ingredients as survey analyses use them, the AP mapping and the code-level differences. <!-- num: not a value -->
+
 Read in Ivanov, Simonović & Zaldarriaga 2020, arXiv:1909.05277, Sect. 3.1 and appendix "Theory Model" [src]; equation numbers re-read in the HTML rendering on 2026-10-15 [src: Eqs. 3.1–3.10, A.1–A.12]; this model became CLASS-PT (Chudaykin et al. 2020, arXiv:2004.10607).
 
 - Structure: P_g,ℓ(k) = P^tree + P^1-loop + P^noise + P^ctr, per multipole [src: Eq. 3.1]; tree level (b1 + f μ²)² P_lin [src: Eq. 3.3].
@@ -272,6 +276,8 @@ Read in Ivanov, Simonović & Zaldarriaga 2020, arXiv:1909.05277, Sect. 3.1 and a
 
 ## 10. Bias expansions
 <!-- key: bias-expansions -->
+
+The bias bases and their relations as formalism have their home in thcosmoskill, `thcosmo-lss-perturbation-theory` (`formalism#bias-expansion`), when installed; this section keeps the conversions used between survey codes. <!-- num: not a value -->
 
 **Eulerian basis of the first EFT analysis** (arXiv:1909.05277, Sect. 3.1): δ_g = b1 δ + (b2/2) δ² + b_G2 G2 [src: Eq. 3.4], with G2(k) = ∫ d³p/(2π)³ [(p·(k − p))²/(p² abs(k − p)²) − 1] δ_lin(p) δ_lin(k − p) [src: Eq. 3.5]. One more operator, b_Γ3, enters the one-loop spectrum; operators non-local in time appear "only at fourth order".
 

@@ -1,6 +1,6 @@
 ---
 name: observational-cosmology
-description: Use when reviewing, planning, or fact-checking observational-cosmology content that spans several probes or whose probe is not yet clear — a manuscript chapter, a proposal, a tensions overview — and for notation and unit conventions, cross-probe field state, to find which cosmo-* skill covers a topic, or to update the cosmo-* skills from the recent literature.
+description: Use when reviewing, planning, or fact-checking observational-cosmology content that spans several probes or whose probe is not yet clear — a manuscript chapter, a proposal, a tensions overview — and for notation and unit conventions, cross-probe field state, to find which cosmo-* skill covers a topic, or to update the cosmo-* skills from the recent literature, and when asked which tools or adapters cosmoskill can use (its status).
 ---
 
 # Observational cosmology working knowledge

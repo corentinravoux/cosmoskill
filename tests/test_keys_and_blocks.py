@@ -1,6 +1,7 @@
 """Keys: assignment is idempotent and the checks fail on each defect. Blocks: a hand edit is detected."""
 
 import importlib.util
+import re
 import shutil
 import subprocess
 import sys
@@ -107,6 +108,57 @@ class BlocksTest(unittest.TestCase):
             subprocess.run([sys.executable, str(tool)], capture_output=True, text=True, check=True)
             again = subprocess.run([sys.executable, str(tool), "--check"], capture_output=True, text=True)
             self.assertEqual(again.returncode, 0)
+
+
+def blocks():
+    """{skill: block text with whitespace collapsed} of every SKILL.md that has one."""
+    found = {}
+    for path in sorted((ROOT / "plugin" / "skills").glob("*/SKILL.md")):
+        text = path.read_text(encoding="utf-8")
+        if "cosmoskill:block:start" in text:
+            found[path.parent.name] = " ".join(text.split("cosmoskill:block:start", 1)[1].split())
+    return found
+
+
+class AdapterBlockTest(unittest.TestCase):
+    def setUp(self):
+        self.sync = load("sync_blocks")
+
+    def test_sweep_line_with_and_without_record(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            table = Path(tmp) / "sweeps.tsv"
+            table.write_text("skill\tswept_to\tadapters\trecorded\ncosmo-cmb\t2026-11-10\tvalency,arxiv-mcp\t2026-11-10\n",
+                             encoding="utf-8")
+            self.assertEqual(self.sync.sweep_line("cosmo-cmb", table),
+                             "Swept for newer papers up to 2026-11-10 (valency, arxiv-mcp).")
+            not_swept = "Not swept for newer papers since the snapshot at the top of this file."
+            self.assertEqual(self.sync.sweep_line("cosmo-bbn", table), not_swept)
+            self.assertEqual(self.sync.sweep_line("cosmo-cmb", Path(tmp) / "absent.tsv"), not_swept)
+
+    def test_every_block_has_its_sweep_line(self):
+        for skill, text in blocks().items():
+            self.assertTrue("Swept for newer papers up to" in text or "Not swept for newer papers" in text, skill)
+
+    def test_block_names_mcp_reader_conditionally(self):
+        found = blocks()
+        self.assertGreater(len(found), 20)
+        for skill, text in found.items():
+            sentences = [sentence for sentence in text.split(". ") if "get_paper_latex" in sentence]
+            self.assertTrue(sentences, skill)
+            for sentence in sentences:
+                self.assertIn("if ", sentence.lower(), skill)
+                self.assertIn("among your tools", sentence, skill)
+
+    def test_block_points_outward_tasks_to_adapters(self):
+        for skill, text in blocks().items():
+            self.assertIn("references/adapters.md", text, skill)
+            self.assertIn("Never name a tool that is not among your tools", text, skill)
+
+    def test_block_never_names_valency(self):
+        # the sweep line is a record and may list the adapters a sweep used; no instruction names Valency
+        for skill, text in blocks().items():
+            instructions = re.sub(r"Swept for newer papers up to [^)]*\)\.", "", text)
+            self.assertNotIn("valency", instructions.lower(), skill)
 
 
 if __name__ == "__main__":

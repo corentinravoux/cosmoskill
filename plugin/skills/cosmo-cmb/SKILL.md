@@ -128,6 +128,8 @@ Answer at the lowest level that answers the question, then stop.
 
 Sizes, in thousands of tokens: L1 3k; history-of-measurements 4k; open 6k; methods 11k; primary-anisotropies 7k; results 9k; surveys 5k; systematics 11k; deep/beams-calibration-polarisation 9k; deep/component-separation 6k; deep/damping-tail-light-relics 6k; deep/high-ell-likelihoods 8k; deep/lensing-reconstruction 9k; deep/low-ell-polarisation-tau 8k.
 
+Not swept for newer papers since the snapshot at the top of this file.
+
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.
 - L4 starts from the L2 entry: its citation and flag say where to look. Read
@@ -135,11 +137,18 @@ Sizes, in thousands of tokens: L1 3k; history-of-measurements 4k; open 6k; metho
   `python3 "${CLAUDE_SKILL_DIR}"/../*observational-cosmology/scripts/fetch_paper.py <arXiv id>`
   (`--abstract`, `--outline`, `--section`, `--grep`). `${CLAUDE_SKILL_DIR}` is
   the folder of this file; if it reaches you unexpanded, write that folder's
-  path in its place. If the script cannot run, or reports that arXiv cannot
-  be reached, do not run it again: read `https://arxiv.org/abs/<id>` or
+  path in its place. If the script reports that the paper has no HTML
+  rendering, and a tool named `get_paper_latex` or `read_paper` is among
+  your tools (loaded or deferred), read the paper with that tool. Otherwise,
+  if the script cannot run, or reports that arXiv cannot be reached, do not
+  run it again: read `https://arxiv.org/abs/<id>` or
   `https://arxiv.org/html/<id>` with a web tool if you have one. If the paper
   cannot be read, say that L4 was required and not done; never give its
   content from memory.
+- Papers newer than the sweep date above, papers that cite a given paper,
+  and papers not on arXiv are outward tasks. Only when the question asks for
+  them, follow `references/adapters.md` of the hub `observational-cosmology`.
+  Never name a tool that is not among your tools.
 - Quote a number only with its paper and the place it was read, or, for a
   code or facility fact, its `[doc]` page and read date, as the skill gives
   them; the skill holds no number of its own making. A formula

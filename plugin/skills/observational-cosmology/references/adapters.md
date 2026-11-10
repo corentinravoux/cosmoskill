@@ -86,6 +86,9 @@ authentication error, a server that is down.
   `SEMANTIC_SCHOLAR_API_KEY` in the server's environment it reaches the rate
   limit quickly and answers `status=rate_limited`. That is expected: treat
   it as a refusal, not as an error to report.
+- A paper that arXiv holds only as PDF has no LaTeX source, and arXiv MCP
+  reads it only when the server was installed with its PDF extra
+  (`arxiv-mcp-server[pdf]`); its error says so. Treat it as a refusal.
 
 ## Day-to-day budget
 <!-- key: day-to-day-budget -->

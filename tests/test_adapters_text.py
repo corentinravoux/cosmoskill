@@ -71,6 +71,11 @@ class AdaptersTextTest(unittest.TestCase):
         description = re.search(r"^description: (.+)$", hub, re.M).group(1)
         self.assertIn("which tools or adapters cosmoskill can use", description)
 
+    def test_pdf_only_papers_need_the_pdf_extra(self):
+        # scenario C: arXiv MCP reads a PDF-only paper only with its [pdf] extra
+        for path in (ADAPTERS, ROOT / "README.md", ROOT / "plugin" / "README.md"):
+            self.assertIn("arxiv-mcp-server[pdf]", path.read_text(encoding="utf-8"), path)
+
     def test_hub_file_map_lists_adapters(self):
         hub = (HUB / "SKILL.md").read_text(encoding="utf-8")
         self.assertIn("references/adapters.md", section(hub, "## Hub files"))

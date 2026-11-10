@@ -115,7 +115,9 @@ missing one. Ask "cosmoskill status" to see which ones it can use.
   `claude plugin install arxiv-mcp-server@arxiv-mcp`; in any other MCP host,
   the stdio server `uvx arxiv-mcp-server` (both read from its README on
   2026-11-10). It needs `uv`, and does not run in the Claude app, which takes
-  no local server. Its citation graph uses Semantic Scholar: a free
+  no local server. A paper that arXiv holds only as PDF is read only with the
+  server's PDF extra, `arxiv-mcp-server[pdf]` (for example
+  `uvx --from "arxiv-mcp-server[pdf]" arxiv-mcp-server`). Its citation graph uses Semantic Scholar: a free
   `SEMANTIC_SCHOLAR_API_KEY` (https://www.semanticscholar.org/product/api#api-key),
   set in the server's environment, is recommended for heavy use of
   `cosmoskill-refine`, optional otherwise. Keep the key out of any git

@@ -54,7 +54,8 @@ mentions them. Ask "cosmoskill status" to see which ones it can use.
   `claude plugin marketplace add blazickjp/arxiv-mcp-server`, then
   `claude plugin install arxiv-mcp-server@arxiv-mcp`; other MCP hosts: the
   stdio server `arxiv-mcp-server`, as its README describes
-  (https://github.com/blazickjp/arxiv-mcp-server). Not in the Claude app. An optional free
+  (https://github.com/blazickjp/arxiv-mcp-server); papers held only as PDF
+  need its PDF extra, `arxiv-mcp-server[pdf]`. Not in the Claude app. An optional free
   `SEMANTIC_SCHOLAR_API_KEY` helps heavy `cosmoskill-refine` use.
 - **Valency — optional.** Coverage after the snapshot across arXiv and
   journals, citing papers, broad sweeps; needs a Valency account. Claude

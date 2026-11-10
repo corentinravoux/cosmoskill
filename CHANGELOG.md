@@ -5,6 +5,58 @@ with the checks run and the statements compared at source, is in
 `docs/history/tests/gate-log.md`; the plans that set each step are in
 `docs/plans/`.
 
+## 1.1.0 — 2026-11-10
+
+Optional MCP adapters and extension runs, cut from `b3898fe` (manifest
+`releases/1.1.0.tsv`: 9 sections added, 32 changed, none moved or retired).
+
+- **Adapters.** arXiv MCP (`arxiv-mcp-server`, suggested) and Valency
+  (optional) are used when their tools are among Claude's tools, in a fixed
+  order per task, and switch off silently when absent: no answer mentions a
+  missing adapter, and with neither installed the suite behaves as 1.0.4
+  (no new web searches). Nothing is bundled. The hub's new
+  `references/adapters.md` holds the routes, the day-to-day budget, the
+  refusal rules, the silence rule, the status check ("cosmoskill status")
+  and what each adapter sends; it is read only for an outward task (newer
+  papers, citing papers, papers not on arXiv, a paper `fetch_paper.py`
+  cannot read, an extension run, a status request), so day-to-day answers
+  cost the same.
+- **Level block.** At L4, a paper without an HTML rendering is read with
+  arXiv MCP when it is among the tools, before the web-tool fallback. Each
+  block gains its sweep line ("Swept for newer papers up to ..." or "Not
+  swept for newer papers since the snapshot ...") and one sentence routing
+  outward tasks to `adapters.md`.
+- **Extension run** in `cosmoskill-refine`, on request only: announces itself,
+  gathers candidates after the skill's sweep date (topic-scoped
+  `check_alerts`, never `watch_topic` without agreement, Valency search and
+  citing papers), reads them (arXiv MCP first), proposes one entry at a
+  time with its provenance, stops and resumes when a step has no working
+  tool, and ends with a sweep record.
+- **Sweep records.** The base keeps one row per skill in the hub's
+  `references/sweeps.tsv` (empty in this release), written by
+  `promote.py <skill> sweep` and rendered by `tools/sync_blocks.py`;
+  `sources.tsv` columns are unchanged. The owner's route for strengthening
+  the base is in `suite-conventions.md`, "Strengthening the base with an
+  extension run".
+- **Layer additions** (`docs/layers-v1.md`, section 7): `--via
+  valency|arxiv-mcp|web` and a `via:` meta line; `<skill>/found-via.tsv` and
+  `layers.py found`; `<skill>/_progress.md` and `layers.py progress`;
+  `<skill>/sweeps.tsv` and `layers.py sweep`. `verify_sources.cited_ids`
+  skips `_`-prefixed files.
+- **READMEs**: "Suggested companions" (install lines read 2026-11-10, the
+  `[pdf]` extra for PDF-only papers, the optional Semantic Scholar key), a
+  host-table row, and what each adapter sends.
+- **Checks**: 157 tests. Adapter scenarios in
+  `docs/history/tests/2026-11-adapters-scenarios.md`: no adapter, status,
+  arXiv MCP reading and a forced refusal with resume pass; the run with
+  Valency was not run headless, and the extension run's opening
+  announcement is still open.
+
+For layer users: every block's `levels-and-layers` section changed (sweep
+line, L4 step, outward-task sentence), so `sync_layers.py` reports the
+entries attached to it as `changed`; the hub's `hub-files` and
+`choosing-the-level` and `suite-conventions#refreshing-a-domain` changed too.
+
 ## 1.0.4 — 2026-10-31
 
 Pointers to the companion theory suite; content otherwise unchanged.

@@ -10,7 +10,7 @@ and the place it was read: when it matters, Claude reads the paper again
 rather than trusting the skill.
 
 One hub skill and 28 domain skills · 5,062 sources checked against arXiv ·
-168 specialist dossiers · literature snapshot 26 October 2026 · version 1.0.4
+168 specialist dossiers · literature snapshot 26 October 2026 · version 1.1.0
 (`CHANGELOG.md`).
 
 ## Install

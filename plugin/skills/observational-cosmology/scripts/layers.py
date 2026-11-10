@@ -47,6 +47,13 @@ Writing, in the personal layer unless --project is given:
                                     cosmoskill-refine, in <skill>/_progress.md:
                                     created when absent, printed when a run
                                     is paused, deleted with --clear
+  layers.py sweep <skill> [--json]  how far the skill was swept for newer
+                                    papers: its snapshot, the package's sweep
+                                    record, each layer's, and the date an
+                                    extension run starts from
+  layers.py sweep <skill> --record --to <YYYY-MM-DD> --adapters <list>
+                                    record in the layer that the skill was
+                                    swept up to that date with those adapters
 
 `--via valency|arxiv-mcp|web` on `note`, `override`, `suppress` and `source`
 records how the paper behind an entry was found: a `via:` line in the entry,
@@ -94,6 +101,10 @@ VIA = ("valency", "arxiv-mcp", "web")
 FOUND_VIA = "found-via.tsv"
 FOUND_VIA_COLUMNS = ["id", "via", "found"]
 PROGRESS = "_progress.md"
+SWEEPS = "sweeps.tsv"
+SWEEP_COLUMNS = ["skill", "swept_to", "adapters", "recorded"]
+HUB = "observational-cosmology"
+SNAPSHOT = re.compile(r"Snapshot (\d{4}-\d{2}-\d{2})")
 ISO_DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 RETIRED_COLUMNS = ["file", "key", "retired_on", "replaced_by", "reason"]
 STAMP = re.compile(r"^[0-9a-f]{12}$")
@@ -856,9 +867,119 @@ def add_found(skill: str, ident: str, via: str, project: bool) -> int:
     return 0
 
 
+def skill_snapshot(skill: str) -> str | None:
+    """The first `Snapshot <date>` of a skill's SKILL.md."""
+    path = SKILLS / skill / "SKILL.md"
+    found = SNAPSHOT.search(path.read_text(encoding="utf-8")) if path.is_file() else None
+    return found.group(1) if found else None
+
+
+def read_sweeps(path: Path) -> tuple[list[dict], list[str]]:
+    """Return (rows, problems) of a sweep table; `adapters` becomes a list."""
+    if not path.is_file():
+        return [], []
+    lines = path.read_text(encoding="utf-8").splitlines()
+    if not lines or lines[0].split("\t") != SWEEP_COLUMNS:
+        return [], [f"{path}: header must be {', '.join(SWEEP_COLUMNS)}"]
+    rows, problems = [], []
+    for number, line in enumerate(lines[1:], start=2):
+        if not line.strip():
+            continue
+        fields = [field.strip() for field in line.split("\t")]
+        if len(fields) != len(SWEEP_COLUMNS):
+            problems.append(f"{path}:{number}: {len(fields)} columns, expected {len(SWEEP_COLUMNS)}")
+            continue
+        row = dict(zip(SWEEP_COLUMNS, fields))
+        row["adapters"] = [name for name in row["adapters"].split(",") if name]
+        for name in ("swept_to", "recorded"):
+            if not ISO_DATE.match(row[name]):
+                problems.append(f"{path}:{number}: {name} '{row[name]}' is not a YYYY-MM-DD date")
+        wrong = [name for name in row["adapters"] if name not in VIA]
+        if wrong or not row["adapters"]:
+            problems.append(f"{path}:{number}: adapters '{','.join(row['adapters'])}' must be a comma-separated "
+                            f"subset of {', '.join(VIA)}")
+        rows.append(row)
+    return rows, problems
+
+
+def latest(rows: list[dict], skill: str) -> dict | None:
+    rows = [row for row in rows if row["skill"] == skill and ISO_DATE.match(row["swept_to"])]
+    return max(rows, key=lambda row: row["swept_to"]) if rows else None
+
+
+def base_sweep(skill: str) -> dict | None:
+    """The package's sweep record for a skill, None when the hub's table is absent or has no row."""
+    rows, _ = read_sweeps(SKILLS / HUB / "references" / SWEEPS)
+    return latest(rows, skill)
+
+
+def layer_sweep(layer: Path, skill: str) -> dict | None:
+    """The latest sweep a layer recorded for a skill."""
+    rows, _ = read_sweeps(layer / skill / SWEEPS)
+    return latest(rows, skill)
+
+
 def sweep_start(skill: str) -> str:
-    """The date an extension run of a skill starts from (completed with the sweep records)."""
-    return "unknown"
+    """The date an extension run of a skill starts from: the latest of its snapshot and every sweep record."""
+    dates = [skill_snapshot(skill)] + [(record or {}).get("swept_to") for record in
+                                       [base_sweep(skill)] + [layer_sweep(layer, skill) for _, layer in layers()]]
+    dates = [date for date in dates if date]
+    return max(dates) if dates else "unknown"
+
+
+def describe(record: dict | None) -> str:
+    return f"{record['swept_to']} ({', '.join(record['adapters'])})" if record else "none"
+
+
+def sweep(skill: str, as_json: bool) -> int:
+    skill = known_skill(skill)
+    snapshot_date, base_record = skill_snapshot(skill), base_sweep(skill)
+    found = [(kind, layer_sweep(layer, skill)) for kind, layer in layers()]
+    start = sweep_start(skill)
+    if as_json:
+        print(json.dumps({"skill": skill, "snapshot": snapshot_date, "base": base_record,
+                          "layers": [dict(record or {}, layer=kind) for kind, record in found],
+                          "start": start}, ensure_ascii=False, indent=2))
+        return 0
+    print(f"snapshot: {snapshot_date or 'unknown'}")
+    print(f"base: {describe(base_record)}")
+    for kind, record in found:
+        print(f"{kind}: {describe(record)}")
+    print(f"start: {start}")
+    return 0
+
+
+def record_sweep(skill: str, to: str | None, adapters: str | None, project: bool) -> int:
+    """Append a sweep record to the layer; refuse a future date, a date before the start, an unknown adapter."""
+    skill = known_skill(skill)
+    if not to or not ISO_DATE.match(to):
+        print("--record needs --to YYYY-MM-DD; nothing written", file=sys.stderr)
+        return 1
+    names = [name.strip() for name in (adapters or "").split(",") if name.strip()]
+    wrong = [name for name in names if name not in VIA]
+    if wrong or not names:
+        print(f"--adapters must be a comma-separated subset of {', '.join(VIA)}; nothing written", file=sys.stderr)
+        return 1
+    if to > datetime.date.today().isoformat():
+        print(f"--to {to} is after today; nothing written", file=sys.stderr)
+        return 1
+    start = sweep_start(skill)
+    if start != "unknown" and to < start:
+        print(f"--to {to} is before the date {skill} is already swept to ({start}); nothing written", file=sys.stderr)
+        return 1
+    kind, layer = target_layer(project)
+    path = layer / skill / SWEEPS
+    _, problems = read_sweeps(path)
+    if problems:
+        print("\n".join(problems) + "\nrepair it first; nothing written", file=sys.stderr)
+        return 1
+    path.parent.mkdir(parents=True, exist_ok=True)
+    if not path.is_file():
+        path.write_text("\t".join(SWEEP_COLUMNS) + "\n", encoding="utf-8")
+    with path.open("a", encoding="utf-8") as handle:
+        handle.write("\t".join([skill, to, ",".join(names), datetime.date.today().isoformat()]) + "\n")
+    print(f"{kind}: {skill} swept up to {to} with {', '.join(names)}, recorded in {path}")
+    return 0
 
 
 def progress(skill: str, clear: bool, project: bool) -> int:
@@ -902,7 +1023,7 @@ def add_dossier(skill: str, name: str, project: bool) -> int:
 
 def holds_content(folder: Path) -> bool:
     return any((place / NOTES).is_file() or (place / SOURCES).is_file() or (place / DEEP).is_dir()
-               or (place / FOUND_VIA).is_file()
+               or (place / FOUND_VIA).is_file() or (place / SWEEPS).is_file()
                for place in (folder, folder / PRIVATE))
 
 
@@ -945,6 +1066,9 @@ def check(online: bool) -> int:
             known = set(base_ids(skill)) | {row["id"].lower() for row in rows}
             found, issues = read_found_via(layer, skill)
             problems += issues
+            sweeps, issues = read_sweeps(folder / SWEEPS)
+            problems += issues + [f"{folder / SWEEPS}: row for '{row['skill']}' in the folder of {skill}"
+                                  for row in sweeps if row["skill"] != skill]
             for row in found:
                 if row["id"] not in known:
                     problems.append(f"{row['_path']}:{row['_line']}: {row['id']} has no row in {SOURCES}, "
@@ -978,7 +1102,7 @@ def via_value(value: str) -> str:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("target", help="a skill name, or one of: init, check, note, override, suppress, resolve, "
-                                       "source, found, dossier, progress")
+                                       "source, found, dossier, progress, sweep")
     parser.add_argument("rest", nargs="*", help="arguments of the command")
     parser.add_argument("--json", action="store_true")
     parser.add_argument("--project", action="store_true", help="write to the project layer instead of the personal one")
@@ -986,6 +1110,9 @@ def main() -> int:
     parser.add_argument("--key", help="with source: the bibliography key, instead of <Author><year>")
     parser.add_argument("--online", action="store_true", help="with check: compare the layer's papers with arXiv")
     parser.add_argument("--clear", action="store_true", help="with progress: delete the state of the run")
+    parser.add_argument("--record", action="store_true", help="with sweep: record a sweep in the layer")
+    parser.add_argument("--to", help="with sweep --record: the date up to which the skill was swept")
+    parser.add_argument("--adapters", help=f"with sweep --record: comma-separated, from {', '.join(VIA)}")
     parser.add_argument("--via", type=via_value, default=None,
                         help=f"with note, override, suppress, source, found: how the paper was found ({', '.join(VIA)})")
     args = parser.parse_args()
@@ -1019,6 +1146,12 @@ def main() -> int:
         if len(args.rest) != 1:
             raise SystemExit("usage: layers.py progress <skill> [--clear]")
         return progress(args.rest[0], args.clear, args.project)
+    if args.target == "sweep":
+        if len(args.rest) != 1:
+            raise SystemExit("usage: layers.py sweep <skill> [--json] | --record --to <date> --adapters <list>")
+        if args.record:
+            return record_sweep(args.rest[0], args.to, args.adapters, args.project)
+        return sweep(args.rest[0], args.json)
     if args.target == "dossier":
         if len(args.rest) != 2:
             raise SystemExit("usage: layers.py dossier <skill> <name>")

@@ -214,5 +214,89 @@ class ProgressTest(unittest.TestCase):
         self.assertNotIn("paused", shown.stdout)
 
 
+SWEEP_HEADER = "skill\tswept_to\tadapters\trecorded"
+
+
+class SweepTest(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.skills = base(self.tmp.name, "before")
+        self.skill_file = self.skills / "cosmo-fixture" / "SKILL.md"
+        self.untouched = self.skill_file.read_text(encoding="utf-8")
+        self.skill_file.write_text(self.untouched + "\nSnapshot 2026-10-14.\n", encoding="utf-8")
+        self.home = Path(self.tmp.name) / "fresh"
+        self.paper = Path(self.tmp.name) / "paper"
+        (self.paper / ".cosmoskill").mkdir(parents=True)
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def layers(self, *arguments, cwd=None):
+        return run("layers.py", *arguments, home=self.home, skills=self.skills, cwd=cwd)
+
+    def lines(self, result):
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        return result.stdout.splitlines()
+
+    def test_start_falls_back_to_snapshot_without_hub(self):
+        lines = self.lines(self.layers("sweep", "cosmo-fixture"))
+        self.assertIn("snapshot: 2026-10-14", lines)
+        self.assertIn("base: none", lines)
+        self.assertIn("start: 2026-10-14", lines)
+
+    def test_no_snapshot_reports_unknown(self):
+        self.skill_file.write_text(self.untouched, encoding="utf-8")
+        lines = self.lines(self.layers("sweep", "cosmo-fixture"))
+        self.assertIn("snapshot: unknown", lines)
+        self.assertIn("start: unknown", lines)
+
+    def test_record_then_start_moves(self):
+        recorded = self.layers("sweep", "cosmo-fixture", "--record", "--to", "2026-11-01", "--adapters",
+                               "valency,arxiv-mcp")
+        self.assertEqual(recorded.returncode, 0, recorded.stderr)
+        rows = (self.home / "cosmo-fixture" / "sweeps.tsv").read_text(encoding="utf-8").splitlines()
+        self.assertEqual(rows, [SWEEP_HEADER, f"cosmo-fixture\t2026-11-01\tvalency,arxiv-mcp\t{TODAY}"])
+        lines = self.lines(self.layers("sweep", "cosmo-fixture"))
+        self.assertIn("personal: 2026-11-01 (valency, arxiv-mcp)", lines)
+        self.assertIn("start: 2026-11-01", lines)
+        report = json.loads(self.layers("sweep", "cosmo-fixture", "--json").stdout)
+        self.assertEqual(report["start"], "2026-11-01")
+        self.assertEqual(report["layers"][0]["adapters"], ["valency", "arxiv-mcp"])
+        checked = self.layers("check")
+        self.assertEqual(checked.returncode, 0, checked.stdout + checked.stderr)
+
+    def test_project_and_personal_take_the_latest(self):
+        self.lines(self.layers("sweep", "cosmo-fixture", "--record", "--to", "2026-11-01", "--adapters", "valency"))
+        self.lines(self.layers("sweep", "cosmo-fixture", "--record", "--to", "2026-11-05", "--adapters", "arxiv-mcp",
+                               "--project", cwd=self.paper))
+        self.assertTrue((self.paper / ".cosmoskill" / "cosmo-fixture" / "sweeps.tsv").is_file())
+        lines = self.lines(self.layers("sweep", "cosmo-fixture", cwd=self.paper))
+        self.assertIn("project: 2026-11-05 (arxiv-mcp)", lines)
+        self.assertIn("personal: 2026-11-01 (valency)", lines)
+        self.assertIn("start: 2026-11-05", lines)
+
+    def test_base_record_is_read(self):
+        table = self.skills / "observational-cosmology" / "references" / "sweeps.tsv"
+        table.parent.mkdir(parents=True)
+        table.write_text(SWEEP_HEADER + "\ncosmo-fixture\t2026-11-03\tvalency,arxiv-mcp\t2026-11-04\n",
+                         encoding="utf-8")
+        lines = self.lines(self.layers("sweep", "cosmo-fixture"))
+        self.assertIn("base: 2026-11-03 (valency, arxiv-mcp)", lines)
+        self.assertIn("start: 2026-11-03", lines)
+
+    def test_progress_start_date_comes_from_sweep(self):
+        self.lines(self.layers("sweep", "cosmo-fixture", "--record", "--to", "2026-11-01", "--adapters", "valency"))
+        self.assertIn("Start date: 2026-11-01", self.lines(self.layers("progress", "cosmo-fixture")))
+
+    def test_record_refuses_future_past_and_bad_adapter(self):
+        self.lines(self.layers("sweep", "cosmo-fixture", "--record", "--to", "2026-11-01", "--adapters", "valency"))
+        before = snapshot(self.home)
+        future = (datetime.date.today() + datetime.timedelta(days=2)).isoformat()
+        for to, adapters in ((future, "valency"), ("2026-10-20", "valency"), ("2026-11-02", "valency,inspire")):
+            refused = self.layers("sweep", "cosmo-fixture", "--record", "--to", to, "--adapters", adapters)
+            self.assertEqual(refused.returncode, 1, (to, adapters, refused.stdout, refused.stderr))
+            self.assertEqual(snapshot(self.home), before)
+
+
 if __name__ == "__main__":
     unittest.main()

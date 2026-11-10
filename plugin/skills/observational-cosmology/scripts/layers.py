@@ -40,7 +40,14 @@ Writing, in the personal layer unless --project is given:
   layers.py override <skill> <file>#<key> <text>
   layers.py suppress <skill> <file>#<key> <reason>
   layers.py source <skill> <arXiv id> --role <role> [--key <key>]
+  layers.py found <skill> <doi:...|arXiv id> --via <via>
   layers.py dossier <skill> <name>
+
+`--via valency|arxiv-mcp|web` on `note`, `override`, `suppress` and `source`
+records how the paper behind an entry was found: a `via:` line in the entry,
+and for `source` a row of `<layer>/<skill>/found-via.tsv` (columns id, via,
+found). `found` records it for a row already in the layer's `sources.tsv`,
+such as a `doi:` row written by hand.
 
 `source` takes title and first author from arXiv and writes nothing when
 arXiv cannot be reached: a bibliography row is never written from memory.
@@ -78,6 +85,10 @@ DEEP = "deep"
 PRIVATE = "private"
 MODES = ("add", "override", "suppress")
 RETIRED = "retired-keys.tsv"
+VIA = ("valency", "arxiv-mcp", "web")
+FOUND_VIA = "found-via.tsv"
+FOUND_VIA_COLUMNS = ["id", "via", "found"]
+ISO_DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 RETIRED_COLUMNS = ["file", "key", "retired_on", "replaced_by", "reason"]
 STAMP = re.compile(r"^[0-9a-f]{12}$")
 MAX_PROFILE_LINES = 60
@@ -89,7 +100,7 @@ KEY_LINE = re.compile(r"^<!-- key: ([a-z0-9][a-z0-9\-]*) -->$")
 NOTE_HEADING = re.compile(r"^## +(.+?)\s*$")
 ANY_HEADING = re.compile(r"^(#{1,6}) +(.+?)\s*$")
 FENCE = re.compile(r"^\s*(```|~~~)")
-META = re.compile(r"^(mode|base|private):\s*(.*?)\s*$", re.IGNORECASE)
+META = re.compile(r"^(mode|base|private|via):\s*(.*?)\s*$", re.IGNORECASE)
 ATTACH = re.compile(r"^(?:([A-Za-z0-9\-]+)#)?([a-z0-9][a-z0-9\-]*)$")
 SLUG = re.compile(r"^[a-z0-9][a-z0-9\-]*$")
 
@@ -129,6 +140,10 @@ the package. `## general` attaches to the skill as a whole.
 on that the package does not cite. Same columns as the package's
 bibliography. Add a row with `layers.py source <skill> <arXiv id> --role
 <role>`: title and author then come from arXiv.
+
+**Provenance**, in `<skill>/found-via.tsv`: how each paper you added was
+found (`valency`, `arxiv-mcp` or `web`), written by `--via` on `source` or
+by `layers.py found`. A note written with `--via` carries a `via:` line.
 
 **Dossiers**, in `<skill>/deep/<name>.md`: a subject you know in more depth
 than the package holds. Start one with `layers.py dossier <skill> <name>`.
@@ -230,7 +245,7 @@ def parse_entries(path: Path, private: bool = False) -> list[dict]:
     for number, line in enumerate(path.read_text(encoding="utf-8").splitlines()):
         heading = NOTE_HEADING.match(line)
         if heading:
-            current = {"attach": heading.group(1), "mode": "add", "base": "", "private": private,
+            current = {"attach": heading.group(1), "mode": "add", "base": "", "via": "", "private": private,
                        "path": str(path), "line": number, "text": [], "in_meta": True}
             entries.append(current)
             continue
@@ -243,7 +258,9 @@ def parse_entries(path: Path, private: bool = False) -> list[dict]:
                 current["mode"] = value.lower()
             elif name == "base":
                 current["base"] = value.lower()
-            else:
+            elif name == "via":
+                current["via"] = value.lower()
+            elif name == "private":
                 current["private"] = current["private"] or value.lower() in ("yes", "true")
             continue
         current["in_meta"] = False
@@ -273,6 +290,43 @@ def read_sources(layer: Path, skill: str) -> tuple[list[dict], list[str]]:
             rows += found
             problems += issues
     return rows, problems
+
+
+def read_found_via(layer: Path, skill: str) -> tuple[list[dict], list[str]]:
+    """Return (rows, problems) of a layer's `found-via.tsv` for a skill; ids are lower-cased."""
+    rows, problems = [], []
+    for folder, private in skill_folders(layer, skill):
+        path = folder / FOUND_VIA
+        if not path.is_file():
+            continue
+        lines = path.read_text(encoding="utf-8").splitlines()
+        if not lines or lines[0].split("\t") != FOUND_VIA_COLUMNS:
+            problems.append(f"{path}: header must be {', '.join(FOUND_VIA_COLUMNS)}")
+            continue
+        for number, line in enumerate(lines[1:], start=2):
+            if not line.strip():
+                continue
+            fields = [field.strip() for field in line.split("\t")]
+            if len(fields) != len(FOUND_VIA_COLUMNS):
+                problems.append(f"{path}:{number}: {len(fields)} columns, expected {len(FOUND_VIA_COLUMNS)}")
+                continue
+            row = dict(zip(FOUND_VIA_COLUMNS, fields))
+            row["id"], row["_path"], row["_line"], row["_private"] = row["id"].lower(), str(path), number, private
+            if row["via"] not in VIA:
+                problems.append(f"{path}:{number}: via '{row['via']}' is not one of {', '.join(VIA)}")
+            if not ISO_DATE.match(row["found"]):
+                problems.append(f"{path}:{number}: found '{row['found']}' is not a YYYY-MM-DD date")
+            rows.append(row)
+    return rows, problems
+
+
+def record_found(path: Path, ident: str, via: str) -> None:
+    """Append one provenance row, writing the header when the file is new."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    if not path.is_file():
+        path.write_text("\t".join(FOUND_VIA_COLUMNS) + "\n", encoding="utf-8")
+    with path.open("a", encoding="utf-8") as handle:
+        handle.write("\t".join([ident, via, datetime.date.today().isoformat()]) + "\n")
 
 
 def read_dossiers(layer: Path, skill: str) -> list[dict]:
@@ -515,6 +569,7 @@ def show(skill: str, as_json: bool) -> int:
                     print(f"... {len(lines) - MAX_PROFILE_LINES} more lines in the file")
         for note in entry["notes"]:
             flag = "" if note["known_key"] else "  (this key is not in the package: the note may be out of date)"
+            flag += f" (found via {note['via']})" if note["via"] else ""
             if note["mode"] == "override":
                 print(f"--- {kind} override of {skill}/{note['attach']}{flag}: replaces that section for this "
                       f"researcher; quote the package's value beside it, both labelled")
@@ -557,7 +612,7 @@ def init(project: bool) -> int:
     return 0
 
 
-def add_note(skill: str, attach: str, text: str, project: bool, mode: str = "add") -> int:
+def add_note(skill: str, attach: str, text: str, project: bool, mode: str = "add", via: str = "") -> int:
     skill = known_skill(skill)
     keys = base_keys(skill)
     stamp = ""
@@ -581,7 +636,8 @@ def add_note(skill: str, attach: str, text: str, project: bool, mode: str = "add
     path.parent.mkdir(parents=True, exist_ok=True)
     before = path.read_text(encoding="utf-8") if path.is_file() else ""
     gap = "" if not before else ("\n" if before.endswith("\n") else "\n\n")
-    meta = (f"mode: {mode}\n" if mode != "add" else "") + (f"base: {stamp}\n" if stamp else "")
+    meta = ((f"mode: {mode}\n" if mode != "add" else "") + (f"base: {stamp}\n" if stamp else "")
+            + (f"via: {via}\n" if via else ""))
     path.write_text(f"{before}{gap}## {attach}\n{meta}{text.strip()} (noted {datetime.date.today().isoformat()})\n",
                     encoding="utf-8")
     print(f"{kind} {'note on' if mode == 'add' else mode + ' of'} {skill}/{attach} written to {path}")
@@ -699,7 +755,7 @@ def year_of(ident: str) -> str:
     return str((1900 if "/" in ident and digits >= 91 else 2000) + digits)
 
 
-def add_source(skill: str, ident: str, role: str | None, key: str | None, project: bool) -> int:
+def add_source(skill: str, ident: str, role: str | None, key: str | None, project: bool, via: str = "") -> int:
     skill = known_skill(skill)
     ident = re.sub(r"^arxiv:", "", ident.strip(), flags=re.IGNORECASE)
     ident = re.sub(r"v\d+$", "", ident)
@@ -739,6 +795,31 @@ def add_source(skill: str, ident: str, role: str | None, key: str | None, projec
     with path.open("a", encoding="utf-8") as handle:
         handle.write("\t".join([key, ident, author, year, title, role]) + "\n")
     print(f"{kind} paper {key} | arXiv:{ident} | {author} {year} | {title}\nwritten to {path}")
+    if via:
+        found, _ = read_found_via(layer, skill)
+        if not any(row["id"] == ident.lower() for row in found):
+            record_found(path.parent / FOUND_VIA, ident, via)
+            print(f"found via {via}, recorded in {path.parent / FOUND_VIA}")
+    return 0
+
+
+def add_found(skill: str, ident: str, via: str, project: bool) -> int:
+    """Record how a paper already in the layer's bibliography was found."""
+    skill = known_skill(skill)
+    ident = ident.strip()
+    if not ident.lower().startswith("doi:"):
+        ident = re.sub(r"v\d+$", "", re.sub(r"^arxiv:", "", ident, flags=re.IGNORECASE))
+    kind, layer = target_layer(project)
+    rows, problems = read_sources(layer, skill)
+    found, issues = read_found_via(layer, skill)
+    if problems or issues:
+        raise SystemExit("\n".join(problems + issues) + "\nrepair them first; nothing written")
+    if not any(row["id"].lower() == ident.lower() for row in rows if not row["_private"]):
+        raise SystemExit(f"{ident} has no row in {layer / skill / SOURCES}; add the row first; nothing written")
+    if any(row["id"] == ident.lower() for row in found):
+        raise SystemExit(f"{ident} is already in {layer / skill / FOUND_VIA}; nothing written")
+    record_found(layer / skill / FOUND_VIA, ident, via)
+    print(f"{kind}: {ident} found via {via}, recorded in {layer / skill / FOUND_VIA}")
     return 0
 
 
@@ -760,6 +841,7 @@ def add_dossier(skill: str, name: str, project: bool) -> int:
 
 def holds_content(folder: Path) -> bool:
     return any((place / NOTES).is_file() or (place / SOURCES).is_file() or (place / DEEP).is_dir()
+               or (place / FOUND_VIA).is_file()
                for place in (folder, folder / PRIVATE))
 
 
@@ -800,6 +882,12 @@ def check(online: bool) -> int:
                       f"in {skill}: attach each to the most specific section instead")
                 warnings += 1
             known = set(base_ids(skill)) | {row["id"].lower() for row in rows}
+            found, issues = read_found_via(layer, skill)
+            problems += issues
+            for row in found:
+                if row["id"] not in known:
+                    problems.append(f"{row['_path']}:{row['_line']}: {row['id']} has no row in {SOURCES}, "
+                                    f"here or in the package")
             cited_arxiv, cited_doi = bibliography.cited_ids(folder)
             for ident, files in sorted(cited_arxiv.items()):
                 if ident not in known:
@@ -820,17 +908,26 @@ def check(online: bool) -> int:
     return 1 if orphans or faults else 0
 
 
+def via_value(value: str) -> str:
+    if value not in VIA:
+        raise argparse.ArgumentTypeError(f"'{value}' is not one of: {', '.join(VIA)}")
+    return value
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("target", help="a skill name, or one of: init, check, note, override, suppress, resolve, "
-                                       "source, dossier")
+                                       "source, found, dossier")
     parser.add_argument("rest", nargs="*", help="arguments of the command")
     parser.add_argument("--json", action="store_true")
     parser.add_argument("--project", action="store_true", help="write to the project layer instead of the personal one")
     parser.add_argument("--role", help="with source: the role of the paper")
     parser.add_argument("--key", help="with source: the bibliography key, instead of <Author><year>")
     parser.add_argument("--online", action="store_true", help="with check: compare the layer's papers with arXiv")
+    parser.add_argument("--via", type=via_value, default=None,
+                        help=f"with note, override, suppress, source, found: how the paper was found ({', '.join(VIA)})")
     args = parser.parse_args()
+    args.via = args.via or ""
     if args.target == "init":
         return init(args.project)
     if args.target == "check":
@@ -838,11 +935,12 @@ def main() -> int:
     if args.target == "note":
         if len(args.rest) < 3:
             raise SystemExit("usage: layers.py note <skill> <file>#<key>|general <text>")
-        return add_note(args.rest[0], args.rest[1], " ".join(args.rest[2:]), args.project)
+        return add_note(args.rest[0], args.rest[1], " ".join(args.rest[2:]), args.project, via=args.via)
     if args.target in ("override", "suppress"):
         if len(args.rest) < 3:
             raise SystemExit(f"usage: layers.py {args.target} <skill> <file>#<key> <text>")
-        return add_note(args.rest[0], args.rest[1], " ".join(args.rest[2:]), args.project, mode=args.target)
+        return add_note(args.rest[0], args.rest[1], " ".join(args.rest[2:]), args.project, mode=args.target,
+                        via=args.via)
     if args.target == "resolve":
         if len(args.rest) != 2:
             raise SystemExit("usage: layers.py resolve <skill> <file>[#<key>]")
@@ -850,7 +948,11 @@ def main() -> int:
     if args.target == "source":
         if len(args.rest) != 2:
             raise SystemExit("usage: layers.py source <skill> <arXiv id> --role <role>")
-        return add_source(args.rest[0], args.rest[1], args.role, args.key, args.project)
+        return add_source(args.rest[0], args.rest[1], args.role, args.key, args.project, via=args.via)
+    if args.target == "found":
+        if len(args.rest) != 2 or not args.via:
+            raise SystemExit("usage: layers.py found <skill> <doi:...|arXiv id> --via <via>")
+        return add_found(args.rest[0], args.rest[1], args.via, args.project)
     if args.target == "dossier":
         if len(args.rest) != 2:
             raise SystemExit("usage: layers.py dossier <skill> <name>")

@@ -42,6 +42,11 @@ Writing, in the personal layer unless --project is given:
   layers.py source <skill> <arXiv id> --role <role> [--key <key>]
   layers.py found <skill> <doi:...|arXiv id> --via <via>
   layers.py dossier <skill> <name>
+  layers.py progress <skill> [--clear]
+                                    the state of an extension run of
+                                    cosmoskill-refine, in <skill>/_progress.md:
+                                    created when absent, printed when a run
+                                    is paused, deleted with --clear
 
 `--via valency|arxiv-mcp|web` on `note`, `override`, `suppress` and `source`
 records how the paper behind an entry was found: a `via:` line in the entry,
@@ -88,6 +93,7 @@ RETIRED = "retired-keys.tsv"
 VIA = ("valency", "arxiv-mcp", "web")
 FOUND_VIA = "found-via.tsv"
 FOUND_VIA_COLUMNS = ["id", "via", "found"]
+PROGRESS = "_progress.md"
 ISO_DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 RETIRED_COLUMNS = ["file", "key", "retired_on", "replaced_by", "reason"]
 STAMP = re.compile(r"^[0-9a-f]{12}$")
@@ -182,6 +188,33 @@ Papers by role, each cited as `arXiv:<id>` with a row in `../sources.tsv`.
 ## Not verified
 
 What is written here from experience and not from a paper.
+"""
+
+
+PROGRESS_TEMPLATE = """# Extension run: {skill}
+
+Started: {started}
+Start date: {start}
+Adapters:
+Stopped:
+
+The state of an extension run of cosmoskill-refine. A paused run resumes
+from here. This file is not read by `layers.py check`, by answers or by
+`promote.py`; `layers.py progress {skill} --clear` deletes it at the end.
+
+## Candidates
+
+| Paper | Title | Found via | Status | Note |
+|---|---|---|---|---|
+
+Status: one of `found`, `read`, `proposed`, `accepted`, `rejected`, `skipped`.
+
+## Alerts read
+
+Papers returned by `check_alerts`, written here as soon as they arrive.
+
+## Left to do
+
 """
 
 
@@ -823,6 +856,34 @@ def add_found(skill: str, ident: str, via: str, project: bool) -> int:
     return 0
 
 
+def sweep_start(skill: str) -> str:
+    """The date an extension run of a skill starts from (completed with the sweep records)."""
+    return "unknown"
+
+
+def progress(skill: str, clear: bool, project: bool) -> int:
+    """Create, print or delete the state file of an extension run."""
+    skill = known_skill(skill)
+    kind, layer = target_layer(project)
+    path = layer / skill / PROGRESS
+    if clear:
+        if path.is_file():
+            path.unlink()
+            print(f"cleared {path}")
+        else:
+            print(f"no paused run: {path} is absent")
+        return 0
+    if path.is_file():
+        print(f"paused run: {path}")
+    else:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(PROGRESS_TEMPLATE.format(skill=skill, started=datetime.date.today().isoformat(),
+                                                 start=sweep_start(skill)), encoding="utf-8")
+        print(f"created {path}")
+    print(path.read_text(encoding="utf-8"), end="")
+    return 0
+
+
 def add_dossier(skill: str, name: str, project: bool) -> int:
     skill = known_skill(skill)
     if not SLUG.match(name):
@@ -917,13 +978,14 @@ def via_value(value: str) -> str:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("target", help="a skill name, or one of: init, check, note, override, suppress, resolve, "
-                                       "source, found, dossier")
+                                       "source, found, dossier, progress")
     parser.add_argument("rest", nargs="*", help="arguments of the command")
     parser.add_argument("--json", action="store_true")
     parser.add_argument("--project", action="store_true", help="write to the project layer instead of the personal one")
     parser.add_argument("--role", help="with source: the role of the paper")
     parser.add_argument("--key", help="with source: the bibliography key, instead of <Author><year>")
     parser.add_argument("--online", action="store_true", help="with check: compare the layer's papers with arXiv")
+    parser.add_argument("--clear", action="store_true", help="with progress: delete the state of the run")
     parser.add_argument("--via", type=via_value, default=None,
                         help=f"with note, override, suppress, source, found: how the paper was found ({', '.join(VIA)})")
     args = parser.parse_args()
@@ -953,6 +1015,10 @@ def main() -> int:
         if len(args.rest) != 2 or not args.via:
             raise SystemExit("usage: layers.py found <skill> <doi:...|arXiv id> --via <via>")
         return add_found(args.rest[0], args.rest[1], args.via, args.project)
+    if args.target == "progress":
+        if len(args.rest) != 1:
+            raise SystemExit("usage: layers.py progress <skill> [--clear]")
+        return progress(args.rest[0], args.clear, args.project)
     if args.target == "dossier":
         if len(args.rest) != 2:
             raise SystemExit("usage: layers.py dossier <skill> <name>")

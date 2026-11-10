@@ -156,5 +156,63 @@ class ProvenanceTest(unittest.TestCase):
         self.assertEqual(self.check().returncode, 0)
 
 
+class ProgressTest(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.skills = base(self.tmp.name, "before")
+        self.home = Path(self.tmp.name) / "fresh"
+        self.path = self.home / "cosmo-fixture" / "_progress.md"
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def layers(self, *arguments):
+        return run("layers.py", *arguments, home=self.home, skills=self.skills)
+
+    def test_progress_creates_from_template_then_reports_paused(self):
+        first = self.layers("progress", "cosmo-fixture")
+        self.assertEqual(first.returncode, 0, first.stderr)
+        self.assertIn(f"created {self.path}", first.stdout)
+        text = self.path.read_text(encoding="utf-8")
+        for heading in ("# Extension run: cosmo-fixture", "Started: ", "Start date: ", "Adapters:", "Stopped:",
+                        "## Candidates", "| Paper | Title | Found via | Status | Note |", "## Alerts read",
+                        "## Left to do"):
+            self.assertIn(heading, text)
+        self.assertLess(text.index("## Candidates"), text.index("## Alerts read"))
+        self.assertLess(text.index("## Alerts read"), text.index("## Left to do"))
+        self.assertIn("`found`, `read`, `proposed`, `accepted`, `rejected`, `skipped`", text)
+        self.assertIn(text.strip(), first.stdout)
+        self.path.write_text(text + "| arXiv:9999.00009 | A candidate | valency | found | |\n", encoding="utf-8")
+        second = self.layers("progress", "cosmo-fixture")
+        self.assertEqual(second.returncode, 0, second.stderr)
+        self.assertIn(f"paused run: {self.path}", second.stdout)
+        self.assertIn("arXiv:9999.00009", second.stdout)
+
+    def test_progress_clear_removes_the_file(self):
+        self.layers("progress", "cosmo-fixture")
+        cleared = self.layers("progress", "cosmo-fixture", "--clear")
+        self.assertEqual(cleared.returncode, 0, cleared.stderr)
+        self.assertIn(f"cleared {self.path}", cleared.stdout)
+        self.assertFalse(self.path.exists())
+        self.assertEqual(self.layers("progress", "cosmo-fixture", "--clear").returncode, 0)
+
+    def test_check_ignores_ids_in_progress(self):
+        self.layers("note", "cosmo-fixture", "general", "FIXTURE-PROGRESS-NOTE")
+        self.layers("progress", "cosmo-fixture")
+        with self.path.open("a", encoding="utf-8") as handle:
+            handle.write("| arXiv:9999.00009 | A candidate | valency | found | |\n")
+        checked = self.layers("check")
+        self.assertEqual(checked.returncode, 0, checked.stdout + checked.stderr)
+
+    def test_show_does_not_mention_progress(self):
+        self.layers("note", "cosmo-fixture", "general", "FIXTURE-PROGRESS-NOTE")
+        self.layers("progress", "cosmo-fixture")
+        shown = self.layers("cosmo-fixture")
+        self.assertEqual(shown.returncode, 0, shown.stderr)
+        self.assertIn("FIXTURE-PROGRESS-NOTE", shown.stdout)
+        self.assertNotIn("_progress", shown.stdout)
+        self.assertNotIn("paused", shown.stdout)
+
+
 if __name__ == "__main__":
     unittest.main()

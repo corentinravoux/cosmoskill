@@ -106,6 +106,9 @@ def cited_ids(skill: Path) -> tuple[dict[str, set[str]], dict[str, set[str]]]:
     arxiv: dict[str, set[str]] = {}
     doi: dict[str, set[str]] = {}
     for md in sorted(skill.rglob("*.md")) + sorted(skill.glob("references/subtopics.tsv")):
+        # `_`-prefixed files are working state (an extension run's candidates), not citations
+        if any(part.startswith("_") for part in md.relative_to(skill).parts):
+            continue
         text = md.read_text(encoding="utf-8")
         name = str(md.relative_to(skill))
         for match in ARXIV_CITE.finditer(text):

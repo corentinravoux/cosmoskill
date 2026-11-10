@@ -77,6 +77,9 @@ step: `references/suite-conventions.md`. Design documents and test logs are in t
 - `references/review-checklists.md`: six worked systematics checklists, one
   per large probe family, for reviewing a results section. Every domain skill carries its own list under
   "Systematics a referee checks".
+- `references/adapters.md`: tools beyond the skills, when they are among
+  your tools: what to use when a question asks for newer papers, for the
+  papers that cite a paper or for papers not on arXiv, and the status check.
 
 In the lines below, `${CLAUDE_SKILL_DIR}` is the folder of this file; if it
 reaches you unexpanded, write that folder's path in its place.
@@ -115,8 +118,11 @@ can answer, and go deeper only when it cannot.
 - **L4 is mandatory** before endorsing a number for a manuscript, a proposal
   or a referee report. Read the paper with
   `python3 "${CLAUDE_SKILL_DIR}"/scripts/fetch_paper.py <arXiv id>` (abstract, outline,
-  one section, or the paragraphs containing a term). If the script cannot
-  run, or reports that arXiv cannot be reached, do not run it again: read
+  one section, or the paragraphs containing a term). If the script reports
+  that the paper has no HTML rendering, and a tool named `get_paper_latex`
+  or `read_paper` is among your tools (loaded or deferred), read the paper
+  with that tool. Otherwise, if the script cannot run, or reports that arXiv
+  cannot be reached, do not run it again: read
   `https://arxiv.org/abs/<id>` or `https://arxiv.org/html/<id>` with a web
   tool if you have one. If the paper cannot be read, say that L4 was required
   and not done; never give its content from memory. A skill file is never the
@@ -168,7 +174,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 5k; conventions 1k; field-state-2026 6k; review-checklists 1k; review-rubric 1k; suite-conventions 2k.
+Sizes, in thousands of tokens: L1 5k; adapters 2k; conventions 1k; field-state-2026 6k; review-checklists 1k; review-rubric 1k; suite-conventions 2k.
 
 Not swept for newer papers since the snapshot of the suite.
 

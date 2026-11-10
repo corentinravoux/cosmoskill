@@ -93,7 +93,9 @@ date.
    available: the arXiv listing or search, INSPIRE, or an arXiv tool server
    with topic alerts where one is installed. Look also at what cites the
    papers behind the headline values: that is where a superseding result
-   shows up.
+   shows up. When arXiv MCP or Valency is among your tools, find and read
+   through an extension run instead: see "Strengthening the base with an
+   extension run" below.
 3. **Read each new result at source**: the abstract, and the section that
    holds the number when the abstract does not. Nothing is written from
    memory.
@@ -129,6 +131,31 @@ date.
 A researcher with local layers then runs
 `python3 plugin/skills/observational-cosmology/scripts/layers.py check`, which lists
 notes attached to a section the update retired.
+
+### Strengthening the base with an extension run
+<!-- key: strengthening-the-base-with-an-extension-run -->
+
+The owner strengthens the base through the same flow as any researcher:
+an extension run of `cosmoskill-refine` on the owner's personal layer, then
+promotion. Only this flow uses the adapters (`references/adapters.md`); the
+steps above are unchanged when no adapter is present.
+
+1. Run the extension run on the domain (`cosmoskill-refine`, "Extension
+   run"). It writes accepted entries to the personal layer, each with how
+   its paper was found (`via:` lines and `found-via.tsv`), and ends with a
+   sweep record in the layer (`layers.py sweep <skill> --record ...`).
+2. Promote: `promote.py <skill> source <id>` for each paper, `promote.py
+   <skill> dossier <name>`, `promote.py <skill> note <file>#<key>` (a
+   proposal under `docs/proposals/`), and `promote.py <skill> sweep`, which
+   copies the layer's sweep record into this hub's `references/sweeps.tsv`.
+3. Fold the proposals in by hand through steps 3 to 9 above.
+4. Run `python3 tools/sync_blocks.py`: it renders the new sweep line
+   ("Swept for newer papers up to ...") into the skill's block, and the
+   release fingerprints cover it.
+
+The base keeps one sweep row per skill and no per-paper provenance: the
+columns of `sources.tsv` do not change, and how each paper was found stays
+in the owner's layer.
 
 Never refresh from memory. A value remembered and a value read differ often
 enough, and in ways plausible enough, that the difference is only visible to

@@ -228,6 +228,12 @@ entries are left to you. A release of the package can ship
 which lists the keys added, changed, moved or retired, so you can see what
 `sync_layers.py` will report before updating.
 
+## Additions in 1.1
+
+Provenance of entries (`via:`, `found-via.tsv`), the state of an extension
+run (`_progress.md`) and sweep records (`sweeps.tsv`): `docs/layers-v1.md`,
+section 7.
+
 ## Promoting to the package
 
 The package's owner can move an entry into the package with

@@ -182,3 +182,63 @@ On fixture layers in `tests/fixtures/layers/` and a fixture base in
 
 Plus one answering test with an override (as in
 `docs/history/tests/levels/run-2026-10-17-layers.md`).
+
+## 7. Additions in 1.1
+
+All additions are optional; a layer without them reads as before.
+
+**Provenance of an entry.** `note`, `override`, `suppress` and `source` take
+`--via valency|arxiv-mcp|web`, how the paper behind the entry was found. A
+note gains one meta line, after `mode:` and `base:`:
+
+```markdown
+## results#shear-calibration
+base: 703b13a73b6d
+via: valency
+Quote the multiplicative-bias prior with the image simulations it comes from.
+```
+
+`sync_layers.py` keeps the line when it restamps. `layers.py <skill>` prints
+`(found via <via>)` after the heading of the entry, and `--json` carries
+`"via"` (empty when absent). `promote.py ... note` writes `Found via: <via>.`
+in the proposal.
+
+**`<skill>/found-via.tsv`**, columns `id`, `via`, `found` (ISO date). `source
+--via` appends the row, with the identifier stored without its version
+(`2501.16852v2` becomes `2501.16852`); nothing is written when the row is
+refused or already present. `layers.py found <skill> <doi:...|arXiv id> --via
+<via>` records it for a row already in the layer's `sources.tsv`, such as a
+`doi:` row written by hand; it refuses when the row is absent or already
+recorded. `check` validates the header, the `via` values and dates, and that
+every identifier has a row in the layer or in the package.
+
+**`<skill>/_progress.md`**, the state of an extension run, from
+`layers.py progress <skill>`: created from a template when absent, printed
+with `paused run:` when present, deleted with `--clear`. Its headings, in
+order: `# Extension run: <skill>`, the lines `Started:`, `Start date:`,
+`Adapters:`, `Stopped:`, then `## Candidates` (a table `Paper | Title | Found
+via | Status | Note`, statuses `found`, `read`, `proposed`, `accepted`,
+`rejected`, `skipped`), `## Alerts read` and `## Left to do`. Files whose
+name starts with `_` are ignored by `check`, by `layers.py <skill>` and by
+`promote.py`: an identifier listed there needs no row.
+
+**`<skill>/sweeps.tsv`**, columns `skill`, `swept_to`, `adapters`
+(comma-joined, from `valency`, `arxiv-mcp`, `web`), `recorded`: how far the
+researcher swept the skill for newer papers. `layers.py sweep <skill>` prints
+the skill's snapshot, the package's record, each layer's, and `start:`, the
+latest of them, from which an extension run searches. `layers.py sweep
+<skill> --record --to <YYYY-MM-DD> --adapters <list>` appends a row; it
+refuses a date after today, a date before the current start, and an unknown
+adapter.
+
+**The package's sweep record** is
+`plugin/skills/observational-cosmology/references/sweeps.tsv`, same columns, one row
+per skill. `promote.py <skill> sweep` replaces the skill's row with the
+layer's latest record; it refuses when the layer has none or when it is not
+later than the package's. `tools/sync_blocks.py` renders the row into the
+skill's block as "Swept for newer papers up to <date> (<adapters>)."; a skill
+without a row says that it was not swept since its snapshot.
+
+**Compatibility.** A 1.0.4 script reads a `via:` line as the first line of
+the entry's text, which is harmless, and ignores `found-via.tsv`,
+`_progress.md` and `sweeps.tsv`.

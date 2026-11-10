@@ -174,7 +174,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 5k; adapters 2k; conventions 1k; field-state-2026 6k; review-checklists 1k; review-rubric 1k; suite-conventions 2k.
+Sizes, in thousands of tokens: L1 5k; adapters 2k; conventions 1k; field-state-2026 6k; review-checklists 1k; review-rubric 1k; suite-conventions 3k.
 
 Not swept for newer papers since the snapshot of the suite.
 

@@ -1,6 +1,6 @@
 ---
 name: cosmoskill-refine
-description: Use when the researcher asks to note something for their own work, add a paper to their layer, start or fill a dossier, override or hide a section of a cosmo-* skill, or promote a layer entry to the package, and after an update of the package, to check that the entries of their personal or project layer still attach to the sections they were written against. Works in Claude Code only, because it needs a persistent home directory.
+description: Use when the researcher asks to note something for their own work, add a paper to their layer, start or fill a dossier, override or hide a section of a cosmo-* skill, extend their layer from the recent literature (an extension run), or promote a layer entry to the package, and after a package update, to check that their layer's entries still attach to their sections. Works in Claude Code only, because it needs a persistent home directory.
 ---
 
 # Refining the cosmo-* skills with a local layer
@@ -81,6 +81,68 @@ package's template that points to the package's sections rather than
 copying them, and the researcher's own practice under "Not verified". Copy
 the pattern, not the content. Then run `layers.py check` and
 `sync_layers.py`.
+
+## Extension run
+<!-- key: extension-run -->
+
+An extension run searches the literature after a skill's sweep date, reads
+what it finds, and proposes entries for the researcher's layer. It costs
+many tokens. It starts only when the researcher asks (for example "refine
+my peculiar-velocities layer from the recent literature", "look for what
+appeared since the snapshot"). Never start one on your own, and never
+because an alert arrived. The tools and their order are in
+`references/adapters.md` of the hub
+(`"${CLAUDE_SKILL_DIR}"/../*observational-cosmology/references/adapters.md`);
+read it first.
+
+1. **Announce it.** Say that this is an extension run, give the status line
+   of `adapters.md`, and give the start date printed by
+   `layers.py sweep <skill>` (the latest of the skill's snapshot, the
+   package's sweep record and the layer's own).
+2. **Resume or start.** Run `layers.py progress <skill>`. If it prints
+   `paused run:`, resume from that file: do not search again for what its
+   candidates already hold. Otherwise it creates the file; fill `Adapters:`.
+3. **Gather candidates** newer than the start date. If the researcher has
+   arXiv MCP watches, call `check_alerts` only with the topics of this
+   skill, and write what it returns under "Alerts read" of the progress
+   file at once. Never call `watch_topic` without the researcher's
+   agreement in this conversation. With Valency, search the skill's
+   subjects and call `get_citing_papers` on its key sources (the papers
+   cited in the bullets of "What an expert holds in mind"). Write every
+   candidate to the "Candidates" table with its `Found via` (`valency`,
+   `arxiv-mcp` or `web`) and the status `found`.
+4. **Rank** the candidates against the skill's dossiers and reference
+   sections, and drop those that add nothing (status `skipped`, with the
+   reason).
+5. **Read** the relevant ones with the extension reading row of
+   `adapters.md` (arXiv MCP first, then `fetch_paper.py`); set the status
+   to `read`. A Valency abstract is a lead; follow the abstract rule of
+   `adapters.md`.
+6. **Propose one entry at a time** and wait for the researcher's answer
+   (status `proposed`, then `accepted` or `rejected`). Any kind may be
+   proposed: a `source`, a `note`, dossier content, an `override`. Show an
+   override beside the base value it replaces, with both sources. Write an
+   accepted entry with the usual commands and `--via <how it was found>`:
+   `layers.py source <skill> <id> --role <role> --via valency`,
+   `layers.py note ... --via arxiv-mcp`. A paper with no arXiv identifier
+   goes into the layer's `sources.tsv` by hand with `doi:<doi>`, then
+   `layers.py found <skill> doi:<doi> --via <v>` records how it was found.
+   Every statement carries its `[src: <place>]`.
+7. **Refusals.** When a tool refuses, try the next tool of its row. When a
+   step has no working tool left (for example, no reader can open a
+   candidate), stop: write `Stopped:` (the service that refused, the time,
+   when to retry) and the list under `## Left to do` in the progress file,
+   tell the researcher, and end the run. Write no entry from a partial
+   check. The next run on the same skill resumes from the file.
+8. **Finish.** Run `layers.py sweep <skill> --record --to <today>
+   --adapters <the ones used>`, then `layers.py check`, then
+   `layers.py progress <skill> --clear`.
+
+For the package's owner, this same run on the owner's personal layer is how
+the base is strengthened: then `promote.py <skill> source`, `dossier`,
+`note` and `sweep`, and the proposals are folded in by hand. The cycle is
+in the hub's `references/suite-conventions.md`, "Strengthening the base with
+an extension run".
 
 ## After an update of the package
 <!-- key: after-an-update-of-the-package -->

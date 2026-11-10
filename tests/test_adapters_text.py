@@ -73,5 +73,38 @@ class AdaptersTextTest(unittest.TestCase):
         self.assertIn("among your tools", level)
 
 
+class RefineTextTest(unittest.TestCase):
+    def setUp(self):
+        self.text = REFINE.read_text(encoding="utf-8")
+
+    def extension(self):
+        return section(self.text, "## Extension run")
+
+    def test_extension_section_present_and_keyed(self):
+        lines = self.text.splitlines()
+        self.assertIn("## Extension run", lines)
+        self.assertRegex(lines[lines.index("## Extension run") + 1], KEY)
+        self.assertLess(self.text.index("## Building a specialised part of a skill"), self.text.index("## Extension run"))
+
+    def test_steps_name_the_commands(self):
+        run = self.extension()
+        for command in ("layers.py progress", "layers.py sweep", "--record", "--via", "layers.py found", "promote.py",
+                        "--clear", "references/adapters.md", "suite-conventions.md"):
+            self.assertIn(command, run)
+
+    def test_on_request_only(self):
+        run = " ".join(self.extension().split())
+        self.assertIn("only when the researcher asks", run)
+        self.assertIn("watch_topic", run)
+        self.assertIn("agreement", run)
+        self.assertIn("Stopped:", run)
+        self.assertIn("## Left to do", run)
+
+    def test_description_mentions_extension(self):
+        description = self.text.split("\n---", 1)[0]
+        self.assertIn("extension run", description)
+        self.assertLessEqual(len(description.split("description:", 1)[1].strip()), 1024)
+
+
 if __name__ == "__main__":
     unittest.main()

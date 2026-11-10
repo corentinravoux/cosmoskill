@@ -1002,6 +1002,8 @@ def progress(skill: str, clear: bool, project: bool) -> int:
                                                  start=sweep_start(skill)), encoding="utf-8")
         print(f"created {path}")
     print(path.read_text(encoding="utf-8"), end="")
+    print(f"\nTell the researcher, before any search: Extension run on {skill}. <status line of adapters.md>. "
+          f"Start date: {sweep_start(skill)}.")
     return 0
 
 

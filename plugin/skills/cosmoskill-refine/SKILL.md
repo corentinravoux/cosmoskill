@@ -95,10 +95,13 @@ because an alert arrived. The tools and their order are in
 (`"${CLAUDE_SKILL_DIR}"/../*observational-cosmology/references/adapters.md`);
 read it first.
 
-1. **Announce it.** Say that this is an extension run, give the status line
-   of `adapters.md`, and give the start date printed by
-   `layers.py sweep <skill>` (the latest of the skill's snapshot, the
-   package's sweep record and the layer's own).
+1. **Announce it**, before any search, in your reply to the researcher (not
+   only in a file), with one line:
+   `Extension run on <skill>. <status line>. Start date: <date>.`
+   The status line is that of `adapters.md`; the start date is the one
+   `layers.py sweep <skill>` prints (the latest of the skill's snapshot, the
+   package's sweep record and the layer's own). If you send no message
+   before the search, put this line at the top of your first reply.
 2. **Resume or start.** Run `layers.py progress <skill>`. If it prints
    `paused run:`, resume from that file: do not search again for what its
    candidates already hold. Otherwise it creates the file; fill `Adapters:`.
@@ -118,8 +121,9 @@ read it first.
    `adapters.md` (arXiv MCP first, then `fetch_paper.py`); set the status
    to `read`. A Valency abstract is a lead; follow the abstract rule of
    `adapters.md`.
-6. **Propose one entry at a time** and wait for the researcher's answer
-   (status `proposed`, then `accepted` or `rejected`). Any kind may be
+6. **Propose one entry at a time** and wait for the researcher's answer:
+   set its status to `proposed` in the progress file before you ask, then
+   `accepted` or `rejected` when the researcher answers. Any kind may be
    proposed: a `source`, a `note`, dossier content, an `override`. Show an
    override beside the base value it replaces, with both sources. Write an
    accepted entry with the usual commands and `--via <how it was found>`:

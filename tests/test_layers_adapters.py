@@ -188,6 +188,12 @@ class ProgressTest(unittest.TestCase):
         self.assertIn(f"paused run: {self.path}", second.stdout)
         self.assertIn("arXiv:9999.00009", second.stdout)
 
+    def test_progress_prints_the_announcement_to_give(self):
+        # scenario E: the run did not announce itself; the script now hands over the line to give
+        for result in (self.layers("progress", "cosmo-fixture"), self.layers("progress", "cosmo-fixture")):
+            self.assertIn("Tell the researcher, before any search: Extension run on cosmo-fixture. "
+                          "<status line of adapters.md>. Start date: unknown.", result.stdout)
+
     def test_progress_clear_removes_the_file(self):
         self.layers("progress", "cosmo-fixture")
         cleared = self.layers("progress", "cosmo-fixture", "--clear")

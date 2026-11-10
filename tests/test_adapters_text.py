@@ -106,6 +106,14 @@ class RefineTextTest(unittest.TestCase):
         self.assertIn("Stopped:", run)
         self.assertIn("## Left to do", run)
 
+    def test_announcement_comes_first_and_proposals_are_marked(self):
+        # scenario E: the run started searching without announcing itself, and left a proposal marked `read`
+        run = " ".join(self.extension().split())
+        self.assertIn("before any search", run)
+        self.assertIn("in your reply", run)
+        self.assertIn("`Extension run on <skill>. <status line>. Start date: <date>.`", run)
+        self.assertIn("set its status to `proposed` in the progress file before", run)
+
     def test_description_mentions_extension(self):
         description = self.text.split("\n---", 1)[0]
         self.assertIn("extension run", description)

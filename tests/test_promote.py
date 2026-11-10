@@ -1,5 +1,6 @@
 """promote.py (docs/layers-v1.md, section 2): writes into the working tree, refuses private or unsourced entries."""
 
+import datetime
 import json
 import tempfile
 import unittest
@@ -112,6 +113,65 @@ class PromoteTest(unittest.TestCase):
 
     def test_note_on_a_section_the_base_lacks_is_refused(self):
         self.assert_refused("note", "results#no-such-key", reason="has no section")
+
+
+SWEEP_HEADER = "skill\tswept_to\tadapters\trecorded"
+TODAY = datetime.date.today().isoformat()
+
+
+class PromoteSweepTest(unittest.TestCase):
+    setUp_package = PromoteTest.setUp
+    tearDown = PromoteTest.tearDown
+    promote = PromoteTest.promote
+    assert_refused = PromoteTest.assert_refused
+
+    def setUp(self):
+        self.setUp_package()
+        self.base_sweeps = self.skills / "observational-cosmology" / "references" / "sweeps.tsv"
+
+    def record(self, to, adapters="valency,arxiv-mcp"):
+        result = run("layers.py", "sweep", "cosmo-fixture", "--record", "--to", to, "--adapters", adapters,
+                     home=self.home, skills=self.skills)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
+    def write_base(self, *rows):
+        self.base_sweeps.parent.mkdir(parents=True, exist_ok=True)
+        self.base_sweeps.write_text("\n".join((SWEEP_HEADER,) + rows) + "\n", encoding="utf-8")
+
+    def test_sweep_promotes_latest_layer_record(self):
+        self.record("2026-11-01")
+        self.record("2026-11-04", "arxiv-mcp")
+        result = self.promote("sweep")
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual(self.base_sweeps.read_text(encoding="utf-8").splitlines(),
+                         [SWEEP_HEADER, f"cosmo-fixture\t2026-11-04\tarxiv-mcp\t{TODAY}"])
+        self.assertIn("tools/sync_blocks.py", result.stdout)
+        self.assertIn("unittest", result.stdout)
+
+    def test_sweep_replaces_older_base_row(self):
+        self.write_base("cosmo-other\t2026-10-30\tvalency\t2026-10-30", "cosmo-fixture\t2026-10-28\tvalency\t2026-10-28")
+        self.record("2026-11-02")
+        result = self.promote("sweep")
+        self.assertEqual(result.returncode, 0, result.stderr)
+        rows = self.base_sweeps.read_text(encoding="utf-8").splitlines()
+        self.assertEqual([row for row in rows if row.startswith("cosmo-fixture\t")],
+                         [f"cosmo-fixture\t2026-11-02\tvalency,arxiv-mcp\t{TODAY}"])
+        self.assertIn("cosmo-other\t2026-10-30\tvalency\t2026-10-30", rows)
+
+    def test_sweep_refuses_older_or_missing_record(self):
+        self.assert_refused("sweep", reason="no sweep record")
+        self.record("2026-11-01")
+        self.write_base("cosmo-fixture\t2026-11-03\tvalency\t2026-11-03")
+        self.assert_refused("sweep", reason="not later")
+
+    def test_note_proposal_names_provenance(self):
+        written = run("layers.py", "note", "cosmo-fixture", "results#low-ell-likelihoods", "FIXTURE-VIA-3",
+                      "--via", "valency", home=self.home, skills=self.skills)
+        self.assertEqual(written.returncode, 0, written.stderr)
+        result = self.promote("note", "results#low-ell-likelihoods")
+        self.assertEqual(result.returncode, 0, result.stderr)
+        proposal = next((self.package / "docs" / "proposals").glob("*_cosmo-fixture_results_low-ell-likelihoods.md"))
+        self.assertIn("Found via: valency.", proposal.read_text(encoding="utf-8"))
 
 
 if __name__ == "__main__":

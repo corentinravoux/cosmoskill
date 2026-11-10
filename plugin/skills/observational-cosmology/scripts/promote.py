@@ -4,6 +4,7 @@
     promote.py <skill> source <arXiv id | doi:... | key> [--offline]
     promote.py <skill> dossier <name> [--with-sources] [--offline]
     promote.py <skill> note <file>#<key> | general
+    promote.py <skill> sweep
 
 The entry is read from the personal layer, or from the project layer with
 `--project`. What is promoted goes to the package the layers are read
@@ -22,7 +23,13 @@ against (its own `skills/`, or COSMOSKILL_BASE):
   note      a note cannot be merged into prose automatically: it is written
             as a proposal, `docs/proposals/<date>_<skill>_<file>_<key>.md`,
             holding the base section, the entry and its mode, for the owner
-            to fold in by hand.
+            to fold in by hand. An entry written with `--via` names how its
+            paper was found.
+  sweep     the layer's latest sweep record of the skill replaces the
+            skill's row in the hub's `references/sweeps.tsv`, which
+            `tools/sync_blocks.py` renders into the skill's block. Refused
+            when the layer has no record or its date is not later than the
+            package's.
 
 Entries under a `private/` folder of the layer, or marked `private: yes`,
 are never promoted. Every refusal exits 1 and writes nothing. Nothing is
@@ -262,7 +269,8 @@ def promote_note(skill: str, kind: str, layer: Path, target: str, remove: bool) 
         against = {"ok": "the base section has not changed since", "changed": "the base section changed since: "
                    "check the entry against the text above"}.get(state, "no stamp to compare")
         parts += [f"## Entry {number}", "", f"Mode: `{entry['mode']}`. Written against fingerprint "
-                  f"`{entry['base'] or 'none'}` ({against}).", "", block(entry["text"]), ""]
+                  f"`{entry['base'] or 'none'}` ({against})." + (f" Found via: {entry['via']}." if entry["via"] else ""),
+                  "", block(entry["text"]), ""]
         lacking = sorted({match.group(1).lower() for match in bibliography.ARXIV_CITE.finditer(entry["text"])} - known)
         if lacking:
             parts += ["Cited without a row in the package: " + ", ".join(f"arXiv:{ident}" for ident in lacking)
@@ -281,11 +289,38 @@ def promote_note(skill: str, kind: str, layer: Path, target: str, remove: bool) 
     return 0
 
 
+def promote_sweep(skill: str, layer: Path) -> int:
+    """Replace (or add) the skill's row of the package's sweep table with the layer's latest record."""
+    record = layers.layer_sweep(layer, skill)
+    if record is None:
+        raise refuse(f"no sweep record for {skill} in the layer; write one with: layers.py sweep {skill} --record ...")
+    current = layers.base_sweep(skill)
+    if current is not None and record["swept_to"] <= current["swept_to"]:
+        raise refuse(f"the layer's sweep of {skill} ({record['swept_to']}) is not later than the package's "
+                     f"({current['swept_to']})")
+    path = layers.SKILLS / layers.HUB / "references" / layers.SWEEPS
+    rows, problems = layers.read_sweeps(path)
+    if problems:
+        raise refuse("\n".join(problems))
+    row = {"skill": skill, "swept_to": record["swept_to"], "adapters": record["adapters"],
+           "recorded": datetime.date.today().isoformat()}
+    rows = [kept for kept in rows if kept["skill"] != skill] + [row]
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text("\n".join(["\t".join(layers.SWEEP_COLUMNS)] + [
+        "\t".join([kept["skill"], kept["swept_to"], ",".join(kept["adapters"]), kept["recorded"]]) for kept in rows])
+        + "\n", encoding="utf-8")
+    print(f"{path}: {skill}\t{row['swept_to']}\t{','.join(row['adapters'])}\t{row['recorded']}")
+    print("checks to run from the package root, then review and commit by hand:\n"
+          "  python3 tools/sync_blocks.py\n"
+          "  python3 -m unittest discover -s tests")
+    return 0
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("skill")
-    parser.add_argument("kind", choices=("source", "dossier", "note"))
-    parser.add_argument("name", help="the identifier or key of a row, a dossier name, or <file>#<key> / general")
+    parser.add_argument("kind", choices=("source", "dossier", "note", "sweep"))
+    parser.add_argument("name", nargs="?", default="", help="the identifier or key of a row, a dossier name, or <file>#<key> / general")
     parser.add_argument("--project", action="store_true", help="take the entry from the project layer")
     parser.add_argument("--with-sources", action="store_true", help="with dossier: promote the layer rows it cites")
     parser.add_argument("--offline", action="store_true", help="do not compare promoted rows with arXiv")
@@ -295,6 +330,10 @@ def main() -> int:
     kind, layer = layers.target_layer(args.project)
     if not layer.is_dir():
         raise refuse(f"no {kind} layer at {layer}")
+    if args.kind == "sweep":
+        return promote_sweep(skill, layer)
+    if not args.name:
+        raise refuse(f"promote.py {skill} {args.kind} needs a name")
     if args.kind == "source":
         return promote_source(skill, layer, args.name, args.offline, args.remove)
     if args.kind == "dossier":

@@ -121,7 +121,7 @@ Then, for each adapter that is off, its install line:
 
 - arXiv MCP, in Claude Code: `claude plugin marketplace add blazickjp/arxiv-mcp-server`,
   then `claude plugin install arxiv-mcp-server@arxiv-mcp`; in any other MCP
-  host, the stdio server `uvx arxiv-mcp-server`. It does not run in the
+  host, the stdio server `arxiv-mcp-server`, as its README describes. It does not run in the
   Claude app, which takes no local server. [doc: github.com/blazickjp/arxiv-mcp-server README, 2026-11-10]
 - Valency: a Valency account, then, in Claude Code,
   `claude plugin marketplace add valency-oss/valency-connectors --scope user`,

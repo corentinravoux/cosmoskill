@@ -78,6 +78,7 @@ Install all of them: every domain skill calls the hub's scripts in
 | Skills, reference files, dossiers (levels 1–3) | yes | yes |
 | Read the cited paper (level 4) | yes, with `fetch_paper.py` | with web search on; or `fetch_paper.py` if `arxiv.org`, `export.arxiv.org` and `ar5iv.labs.arxiv.org` are allowed domains |
 | Personal and project layers, `cosmoskill-refine` | yes | no: the app starts each chat with an empty disk |
+| Adapters: arXiv MCP, Valency (optional) | both | Valency only (arXiv MCP is a local server) |
 
 Without access to papers, the skills still answer from levels 1 to 3, and say
 when a question needed level 4.
@@ -86,7 +87,11 @@ when a question needed level 4.
 
 The skills are text; the scripts run only when Claude calls them, use the
 Python standard library only, and send arXiv identifiers to arXiv, nothing
-else. The full list of hosts and cache paths is in
+else. That holds for the scripts, not for the optional adapters below: with
+arXiv MCP, search queries and paper identifiers go to arXiv, and its
+`citation_graph` sends paper identifiers to Semantic Scholar; with Valency,
+search queries and paper identifiers go to Valency, under your account. The
+full list of hosts and cache paths is in
 [`plugin/README.md`](plugin/README.md#what-it-runs-and-contacts).
 
 ### Both hosts on one account
@@ -95,6 +100,42 @@ Claude Code 2.1.273 and later also loads the plugins of the Claude account it
 is signed in with. If you install in the app, do not also install in Claude
 Code (every skill would load twice), or set `"syncClaudeAiSkills": false` in
 Claude Code's settings.
+
+## Suggested companions
+
+Two MCP servers extend what cosmoskill reaches beyond its snapshot. Both are
+optional: without them cosmoskill works as before, and it never mentions a
+missing one. Ask "cosmoskill status" to see which ones it can use.
+
+- **arXiv MCP ([arxiv-mcp-server](https://github.com/blazickjp/arxiv-mcp-server)) — suggested.**
+  Live arXiv search, reading papers that have no HTML rendering (PDF and
+  LaTeX source), search inside a paper, topic alerts and a citation graph.
+  In Claude Code:
+  `claude plugin marketplace add blazickjp/arxiv-mcp-server`, then
+  `claude plugin install arxiv-mcp-server@arxiv-mcp`; in any other MCP host,
+  the stdio server `uvx arxiv-mcp-server` (both read from its README on
+  2026-11-10). It needs `uv`, and does not run in the Claude app, which takes
+  no local server. Its citation graph uses Semantic Scholar: a free
+  `SEMANTIC_SCHOLAR_API_KEY` (https://www.semanticscholar.org/product/api#api-key),
+  set in the server's environment, is recommended for heavy use of
+  `cosmoskill-refine`, optional otherwise. Keep the key out of any git
+  repository.
+- **Valency ([valency.io/bond](https://www.valency.io/bond/)) — optional.**
+  Coverage after the snapshot across arXiv and journals, the papers that
+  cite a given paper, and broad semantic sweeps. It needs a Valency account.
+  In Claude Code:
+  `claude plugin marketplace add valency-oss/valency-connectors --scope user`,
+  `claude plugin install valency@valency-claude-plugin --scope user`, then
+  `claude mcp login plugin:valency:valency` (read from
+  [valency-connectors](https://github.com/valency-oss/valency-connectors) on
+  2026-11-10); in the Claude app, connect Valency as an MCP connector of your
+  Claude account.
+
+Day-to-day answers cost the same with or without them: the adapters are
+used for a question that asks for newer papers, for citing papers or for
+papers not on arXiv, for a paper `fetch_paper.py` cannot read, and in an
+extension run of `cosmoskill-refine`, which grows a layer from the recent
+literature, only when you ask for one.
 
 ## How it answers
 

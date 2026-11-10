@@ -42,6 +42,26 @@ In Claude Code:
 | Skills, reference files, dossiers (levels 1–3) | yes | yes |
 | Read the cited paper (level 4) | yes, with `fetch_paper.py` | with web search on; or `fetch_paper.py` if `arxiv.org`, `export.arxiv.org` and `ar5iv.labs.arxiv.org` are allowed domains |
 | Personal and project layers, `cosmoskill-refine` | yes | no: the app starts each chat with an empty disk |
+| Adapters: arXiv MCP, Valency (optional) | both | Valency only (arXiv MCP is a local server) |
+
+## Suggested companions
+
+Optional MCP servers; without them cosmoskill works as before and never
+mentions them. Ask "cosmoskill status" to see which ones it can use.
+
+- **arXiv MCP — suggested.** Live arXiv search, papers without an HTML
+  rendering, LaTeX source, alerts, citation graph. Claude Code:
+  `claude plugin marketplace add blazickjp/arxiv-mcp-server`, then
+  `claude plugin install arxiv-mcp-server@arxiv-mcp`; other MCP hosts: the
+  stdio server `arxiv-mcp-server`, as its README describes
+  (https://github.com/blazickjp/arxiv-mcp-server). Not in the Claude app. An optional free
+  `SEMANTIC_SCHOLAR_API_KEY` helps heavy `cosmoskill-refine` use.
+- **Valency — optional.** Coverage after the snapshot across arXiv and
+  journals, citing papers, broad sweeps; needs a Valency account. Claude
+  Code: `claude plugin marketplace add valency-oss/valency-connectors --scope user`,
+  `claude plugin install valency@valency-claude-plugin --scope user`,
+  `claude mcp login plugin:valency:valency`; Claude app: connect Valency as
+  an MCP connector of your Claude account.
 
 ## What it runs and contacts
 
@@ -59,8 +79,14 @@ run only when Claude calls them:
   `~/.cosmoskill/` (or `$COSMOSKILL_HOME`) and `.cosmoskill/`; adding a paper
   to a layer asks `export.arxiv.org` for its title and author.
 
-Only arXiv identifiers are sent. No personal data, credentials or usage data
-leave the machine.
+The scripts send only arXiv identifiers. No personal data, credentials or
+usage data leave the machine through them. The optional adapters, when you
+install them, send more, each to its own service:
+
+- arXiv MCP: search queries and paper identifiers to arXiv; its
+  `citation_graph` sends paper identifiers to Semantic Scholar.
+- Valency: search queries and paper identifiers to Valency, under your
+  account.
 
 ## More
 

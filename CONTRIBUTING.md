@@ -46,9 +46,7 @@ a change must pass; the tests check most of them.
 8. **Plain technical English**, complete sentences.
 
 The citation format and file layout are in
-`plugin/skills/observational-cosmology/references/suite-conventions.md`; the full
-brief that the package's own research runs follow is `docs/agent-brief.md`,
-with `docs/agent-brief-numbers.md` for numbers.
+`plugin/skills/observational-cosmology/references/suite-conventions.md`.
 
 ## Checks to run
 

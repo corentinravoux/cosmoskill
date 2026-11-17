@@ -64,8 +64,8 @@ Field-level inference as a method: `cosmo-beyond-two-point`
 forest are in `cosmo-peculiar-velocities` and `cosmo-lyman-alpha`.
 
 How the suite is built, checked and updated, with the update cycle step by
-step: `references/suite-conventions.md`. Design documents and test logs are in the
-`docs/` directory of the package repository.
+step: `references/suite-conventions.md`. Design documents, agent briefs and test
+logs are kept by the maintainers outside the package.
 
 ## Hub files
 <!-- key: hub-files -->

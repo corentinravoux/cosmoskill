@@ -35,7 +35,7 @@ brightness, wavelength, detector efficiency and duty cycle.
 
 No étendue is computed here (owner's rule of 2026-10-23); the agent-computed
 products of an earlier version are set aside in
-`docs/history/set-aside/2026-10-23/cosmo-surveys-facilities-physics-and-methods.md`.
+the maintainers' archive.
 What the papers themselves state about survey speed:
 
 - LSST: the effective étendue "will be greater than 300 m2 deg2, which is

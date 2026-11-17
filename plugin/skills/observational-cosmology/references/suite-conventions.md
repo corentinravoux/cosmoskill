@@ -1,8 +1,8 @@
 # Suite conventions — how the cosmo-* skills are built and kept current
 
 Scope: the rules every `cosmo-<domain>` skill follows, how to check one, and
-how to refresh one. The design documents are in the `docs/` directory of the
-package repository.
+how to refresh one. Design documents and agent briefs are kept by the
+maintainers outside the package.
 
 ## File contract
 <!-- key: file-contract -->
@@ -164,8 +164,8 @@ someone holding the paper.
 ## Adding a domain
 <!-- key: adding-a-domain -->
 
-Copy the shape of an existing `cosmo-*` skill, follow `docs/agent-brief.md`
-of the package repository, add the skill's row to the router table in the hub
+Copy the shape of an existing `cosmo-*` skill, follow the file contract and
+citation rules of this file, add the skill's row to the router table in the hub
 `SKILL.md`, and run the upkeep tools of the update cycle. How the new skill
 becomes visible depends on how the package was installed; the README gives
 the routes.

@@ -249,7 +249,7 @@ they differ; no paper giving the size was read.
   sizes of the cb-against-total gaps in σ8 and f: not read in a paper. The
   CAMB and ODE checks that stood here before 2026-10-23 were agent
   computations and are set aside in
-  `docs/history/set-aside/2026-10-23/cosmo-theory-foundations-linear-growth.md`.
+  the maintainers' archive.
 - The error of f = Ω_m(z)^γ on f itself (Linder states it on g).
 - Table II of arXiv:0709.0253 (A, B, C as functions of k): not read.
 - Huterer Sect. 4.1 (parametrised growth constraints) was not read; measured

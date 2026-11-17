@@ -165,7 +165,7 @@ the section used.
   identifier's title and first author with arXiv, and flags citations without
   a bibliography row and rows never cited.
 - **Values were compared with their papers by sample**, not exhaustively
-  (`docs/history/tests/gate-log.md`). Re-read the paper before a number goes
+  (in the maintainers' gate log). Re-read the paper before a number goes
   into a manuscript: that is what L4 is for.
 - **Each file lists what could not be verified**, under "Not verified".
 - **The field moves monthly**; the snapshot is October 2026.
@@ -174,7 +174,7 @@ the section used.
 
 The skills were written by Claude research agents in October 2026, never from
 model memory, and each domain was gated by a second session. The level tests
-in `docs/history/tests/levels/` are self-tests, not evidence of quality; a
+run during the build were self-tests, not evidence of quality; a
 benchmark with outside questions graded by people is planned.
 
 ## Domains

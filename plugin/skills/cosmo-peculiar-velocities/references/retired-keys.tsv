@@ -7,7 +7,7 @@ pv-surveys	method-families	2026-10-20	physics-and-methods#method-families	file f
 pv-surveys	published-fsigma8-measurements-from-peculiar	2026-10-20	results#published-fsigma8-from-peculiar-velocities	file folded; merged with the compilation table
 pv-surveys	systematics-by-indicator	2026-10-20	systematics#systematics-by-indicator-the-qualitative-list	file folded into the standard five (plan A.4)
 pv-surveys	two-live-controversies	2026-10-20	open-questions#which-distance-indicator-can-be-trusted	file folded; bulk-flow half in open-questions#is-the-bulk-flow-at-150-250-h-1mpc-anomalous
-pv-surveys	writing-rules-for-pv-sections	2026-10-20		manuscript writing advice; set aside in docs/history/set-aside/2026-10-20/A4-pv-not-folded.md
+pv-surveys	writing-rules-for-pv-sections	2026-10-20		manuscript writing advice; set aside in the maintainers' archive
 fsigma8-pv-compilation	provenance-code-read-this-before-quoting	2026-10-20	results#published-fsigma8-from-peculiar-velocities	file folded; codes stated in the receiving section
 fsigma8-pv-compilation	measurements-from-data	2026-10-20	results#published-fsigma8-from-peculiar-velocities	file folded; merged with the pv-surveys table
 fsigma8-pv-compilation	effective-redshift-genuinely-absent-verified-in	2026-10-20	results#effective-redshift-genuinely-absent	file folded; Stiskalek FP shifts in systematics#malmquist-bias-and-the-distance-prior

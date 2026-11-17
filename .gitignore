@@ -2,3 +2,8 @@ __pycache__/
 *.pyc
 .DS_Store
 _progress.md
+
+# agent files live in claude_config/projects/cosmoskill/
+CLAUDE.md
+.claude/
+.superpowers/

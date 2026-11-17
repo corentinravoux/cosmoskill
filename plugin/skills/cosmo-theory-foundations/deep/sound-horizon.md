@@ -311,7 +311,7 @@ Sect. III.2].
   passages read.
 - The response of r_d to Y_He: not read in a paper. The CAMB accuracy tables
   that stood here before 2026-10-23 were agent computations and are set aside
-  in `docs/history/set-aside/2026-10-23/cosmo-theory-foundations-sound-horizon.md`.
+  in the maintainers' archive.
 - The CosmoMC/CAMB implementation of θ_MC was not read in source (the
   compiled routine is not shipped as text); the Hu–Sugiyama attribution is
   Planck's and DESI's.

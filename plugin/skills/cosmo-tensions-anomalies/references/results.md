@@ -6,7 +6,7 @@ Snapshot: 2026-10-26
 
 Flags. `[src]`: read this session in the cited paper. `[sec: X]`: taken from the reference files of the sibling skill X, where the number is flagged `[src]` against the same arXiv ID; the sibling is the secondary source. `[der]`: a derivation in words, without a number (owner's rule of 2026-10-23: no number computed here). Sibling abbreviations: `h0` = `cosmo-distance-ladder-h0`, `wl` = `cosmo-weak-lensing`, `cmb` = `cosmo-cmb`, `de` = `cosmo-dark-energy-modified-gravity`, `cl` = `cosmo-clusters`, `x` = `cosmo-cmb-lss-cross-correlations`, `nu` = `cosmo-neutrinos-dark-matter`, `pv` = `cosmo-peculiar-velocities`, `inf` = `cosmo-inflation-primordial`, `stat` = `cosmo-statistics-inference`, `b2p` = `cosmo-beyond-two-point`. Sect. 1–6, Sect. 8, Sect. 11 are a synthesis of those siblings; Sect. 7, Sect. 9, Sect. 10 were researched for this skill. H0 is in km/s/Mpc, the model is flat ΛCDM unless a row says otherwise, and S8 ≡ σ8 sqrt(Ω_m/0.3).
 
-Every significance below is the one the cited paper prints, with its metric where the paper names it. The Gaussian-difference tables of earlier versions (one definition applied by this skill to every pair) were computed here and were removed on 2026-10-23; they are kept in `docs/history/set-aside/2026-10-23/cosmo-tensions-anomalies-results.md`.
+Every significance below is the one the cited paper prints, with its metric where the paper names it. The Gaussian-difference tables of earlier versions (one definition applied by this skill to every pair) were computed here and were removed on 2026-10-23; they are kept in the maintainers' archive.
 
 ## 0. Summary of sizes at the snapshot
 <!-- key: summary-of-sizes-at-the-snapshot -->
@@ -57,7 +57,7 @@ Every significance below is the one the cited paper prints, with its metric wher
 ### 1.2 Size, one definition for every cell
 <!-- key: size-one-definition-for-every-cell -->
 
-The table of Gaussian differences that stood here was computed by this skill and was removed on 2026-10-23 (set aside in `docs/history/set-aside/2026-10-23/cosmo-tensions-anomalies-results.md`). Only the significances the papers print are given.
+The table of Gaussian differences that stood here was computed by this skill and was removed on 2026-10-23 (set aside in the maintainers' archive). Only the significances the papers print are given.
 
 Significances the papers themselves print, all in the one parameter H0 and without a named metric beyond "statistical significance" or "tension": 5.0σ for SH0ES 2022 against Planck, computed as 0.176 ± 0.035 mag in 5 log H0 (arXiv:2112.04510) [sec: h0]; for H0DN, 7.1σ against the flat-ΛCDM CMB value 67.24 ± 0.35 (Planck + SPT + ACT, Eq. 54 of the first version of arXiv:2506.20707) and 5.0σ against DESI DR2 BAO + BBN, 68.51 ± 0.58 (arXiv:2510.23823) [src: abstract, Sect. IV]; for SPT, against SH0ES taken as 73.17 ± 0.86: 6.2σ from SPT-3G D1 alone, 6.4σ from CMB-SPA, 4.9σ from the SPT TE/EE spectra alone (66.1 ± 1.2) (arXiv:2506.20707) [src: Sect. VII.2.2]; 4.5σ between DESI + BBN and SH0ES "independent of the CMB", which still assumes standard pre-recombination physics for r_d (arXiv:2503.14738) [src: Sect. VI].
 
@@ -104,7 +104,7 @@ The four S8 endpoints span 0.819 to 0.836, a range larger than the error of the 
 ### 2.2 S8 by probe, with one common derived difference
 <!-- key: s8-by-probe-with-one-common-derived-difference -->
 
-The two columns of Gaussian differences against fixed CMB endpoints that stood in this table were computed by this skill and were removed on 2026-10-23 (set aside in `docs/history/set-aside/2026-10-23/cosmo-tensions-anomalies-results.md`). The tension column is the paper's own.
+The two columns of Gaussian differences against fixed CMB endpoints that stood in this table were computed by this skill and were removed on 2026-10-23 (set aside in the maintainers' archive). The tension column is the paper's own.
 
 | Probe | S8 | Tension as printed by the paper | Citation | Flag |
 |---|---|---|---|---|
@@ -129,7 +129,7 @@ Further S8 values are held, with their identifiers and places, by the siblings: 
 ### 2.3 The internal spread is larger than the CMB tension
 <!-- key: the-internal-spread-is-larger-than-the-cmb -->
 
-The table of pairwise Gaussian differences that stood here was computed by this skill and was removed on 2026-10-23 (set aside in `docs/history/set-aside/2026-10-23/cosmo-tensions-anomalies-results.md`). What the papers state: eRASS1 clusters give S8 = 0.86 ± 0.01 (arXiv:2402.08458), KiDS-1000 AMICO clusters 0.74 ± 0.03 (arXiv:2507.14285), and the tSZ cross-correlation compilation 0.72 ± 0.03 (arXiv:2605.11083) [src: abstract of each]; the Planck PSZ2 cluster analysis finds itself "in significant tension with results from eROSITA clusters (2.9σ)" and in "very mild tension" (1.6σ) with the CMB (arXiv:2509.02068) [src: abstract]. Among cosmic-shear and 3×2pt results the largest printed distance from the CMB is 2.6σ projected on S8 (DES Y6 3×2pt, arXiv:2601.14559) [src: abstract].
+The table of pairwise Gaussian differences that stood here was computed by this skill and was removed on 2026-10-23 (set aside in the maintainers' archive). What the papers state: eRASS1 clusters give S8 = 0.86 ± 0.01 (arXiv:2402.08458), KiDS-1000 AMICO clusters 0.74 ± 0.03 (arXiv:2507.14285), and the tSZ cross-correlation compilation 0.72 ± 0.03 (arXiv:2605.11083) [src: abstract of each]; the Planck PSZ2 cluster analysis finds itself "in significant tension with results from eROSITA clusters (2.9σ)" and in "very mild tension" (1.6σ) with the CMB (arXiv:2509.02068) [src: abstract]. Among cosmic-shear and 3×2pt results the largest printed distance from the CMB is 2.6σ projected on S8 (DES Y6 3×2pt, arXiv:2601.14559) [src: abstract].
 
 "The S8 tension" in 2026 is therefore better described as a disagreement among low-redshift amplitude measurements with strong astrophysical modelling than as a lensing–CMB discrepancy.
 

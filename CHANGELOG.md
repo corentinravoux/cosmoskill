@@ -1,9 +1,17 @@
 # Changelog
 
-Each release names the commit it was cut from. The detail of every step,
-with the checks run and the statements compared at source, is in
-`docs/history/tests/gate-log.md`; the plans that set each step are in
-`docs/plans/`.
+Each release names the commit it was cut from. The gate log (checks run,
+statements compared at source) and the plans that set each step are kept
+by the maintainers outside the repository since 2026-11-17; paths under
+`docs/` in the entries below refer to the repository before that move.
+
+## Unreleased
+
+- Maintainer files moved out of the repository: plans, specs, agent briefs,
+  gate log, test logs, level-test questions and set-aside copies (all of
+  `docs/` except `layers.md` and `layers-v1.md`). Skill text that pointed to
+  a set-aside file now says "the maintainers' archive". `.gitignore` excludes
+  `CLAUDE.md`, `.claude/` and `.superpowers/`.
 
 ## 1.1.0 — 2026-11-10
 

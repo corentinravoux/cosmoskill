@@ -66,7 +66,7 @@ class AdaptersTextTest(unittest.TestCase):
         self.assertIn("SEMANTIC_SCHOLAR_API_KEY", self.text)
 
     def test_hub_description_routes_the_status_check(self):
-        # scenario B (docs/history/tests/2026-11-adapters-scenarios.md): without this, no skill loads for "status"
+        # scenario B (adapter scenarios, maintainers' test log): without this, no skill loads for "status"
         hub = (HUB / "SKILL.md").read_text(encoding="utf-8")
         description = re.search(r"^description: (.+)$", hub, re.M).group(1)
         self.assertIn("which tools or adapters cosmoskill can use", description)

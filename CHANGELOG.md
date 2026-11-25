@@ -5,19 +5,8 @@ statements compared at source) and the plans that set each step are kept
 by the maintainers outside the repository since 2026-11-17; paths under
 `docs/` in the entries below refer to the repository before that move.
 
-## 1.1.1 — 2026-11-22 (not yet released)
+## Unreleased
 
-Manifest `releases/1.1.1.tsv`, against `b3898fe`: 41 sections changed, none
-added, moved or retired.
-
-- fix: a paper missing from the skills is no evidence about it. The model
-  reads it first (`fetch_paper.py` or a web tool). If it cannot be read,
-  and the question is not a manuscript, a proposal or a referee report, the
-  model answers from its own knowledge, labelled `model knowledge, not in
-  cosmoskill`. The L4 stop with no memory content is kept for those three
-  cases. It never confirms from memory that an arXiv ID is a given paper.
-  Changed in the fixed block (all skills) and the hub's L4 bullet; test
-  `tests/test_fixed_block_text.py`.
 - Maintainer files moved out of the repository: plans, specs, agent briefs,
   gate log, test logs, level-test questions and set-aside copies (all of
   `docs/` except `layers.md` and `layers-v1.md`). Skill text that pointed to

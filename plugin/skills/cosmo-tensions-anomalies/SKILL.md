@@ -86,7 +86,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 4k; cosmological-principle 7k; open 9k; methods 9k; results 21k; surveys 6k; systematics 11k; deep/anomaly-significance 7k; deep/cmb-bao-mismatch 8k; deep/cosmic-dipoles 8k; deep/high-redshift-galaxies 8k; deep/large-angle-cmb-anomalies 8k; deep/theoretical-resolutions 10k.
+Sizes, in thousands of tokens: L1 3k; cosmological-principle 7k; open 9k; methods 9k; results 21k; surveys 6k; systematics 11k; deep/anomaly-significance 7k; deep/cmb-bao-mismatch 8k; deep/cosmic-dipoles 8k; deep/high-redshift-galaxies 8k; deep/large-angle-cmb-anomalies 8k; deep/theoretical-resolutions 10k.
 
 Not swept for newer papers since the snapshot at the top of this file.
 
@@ -103,15 +103,8 @@ Not swept for newer papers since the snapshot at the top of this file.
   if the script cannot run, or reports that arXiv cannot be reached, do not
   run it again: read `https://arxiv.org/abs/<id>` or
   `https://arxiv.org/html/<id>` with a web tool if you have one. If the paper
-  cannot be read, say that L4 was not done. For a manuscript, a proposal or
-  a referee report, stop there: give no content from memory.
-- The skills hold a selection of papers. A paper or a result missing from
-  them is no evidence about it. Read it first, as for L4 above. If it cannot
-  be read, and the question is not one of the L4 cases above, answer from
-  your own knowledge as you would without the skills, with your usual
-  confidence, and label it `model knowledge, not in cosmoskill`. Never
-  confirm from memory that an arXiv ID is a given paper: without the paper
-  or a skill entry giving that ID, the link is "cannot verify".
+  cannot be read, say that L4 was required and not done; never give its
+  content from memory.
 - Papers newer than the sweep date above, papers that cite a given paper,
   and papers not on arXiv are outward tasks. Only when the question asks for
   them, follow `references/adapters.md` of the hub `observational-cosmology`.
@@ -138,6 +131,5 @@ name of the reference file without extension:
 `[cosmoskill L<level> · <base, personal, project, or several joined by +> · cosmo-tensions-anomalies/<file>#<key>]`
 The key is the comment under the heading of the section used; leave `#<key>`
 out if you did not read that heading. At L4, put the paper and the place
-read instead: `arXiv:<id>, <abstract or section>`. For an answer from model
-knowledge, write `[cosmoskill — not in the skills; model knowledge]`.
+read instead: `arXiv:<id>, <abstract or section>`.
 <!-- cosmoskill:block:end -->
